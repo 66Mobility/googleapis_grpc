@@ -1,39 +1,91 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# googleapis_grpc
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages). 
+Auto-generated gRPC Google apis.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages). 
--->
+It is almost the same as [googleapis](https://pub.dev/packages/googleapis). Key differences:
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+- gRPC instead of REST api
+- More APIs available. (ex: google maps routing v2)
 
-## Features
+Caveats:
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- The package is quite heavy: 240mb uncompressed, 40 mb compressed. Because it includes so much code.
+- Due to this, Dart autocompletion and formatting take
+  longer to start when you include this package.
+- But the resulting binary (iOS, Android, etc) **isn't** heavier than before this package is installed.
+
+## Installing
+
+```sh
+# Dart
+dart pub add googleapis_grpc
+
+# Flutter
+flutter pub add googleapis_grpc
+```
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Each google API is in its own library. You can find them all in `lib/`.
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Example if you want to use Google Maps Routing V2 API. You can find this example in the folder `example/`.
 
 ```dart
-const like = 'sample';
+import 'dart:io' show exit;
+
+// Import the API you need
+import 'package:googleapis_grpc/google_maps_routing_v2.dart';
+
+// Install the `grpc` package to make the queries over network.
+import 'package:grpc/grpc.dart';
+
+void main() async {
+  final channel = ClientChannel(
+    'routes.googleapis.com',
+    options: const ChannelOptions(credentials: ChannelCredentials.secure()),
+  );
+
+  final client = RoutesClient(
+    channel,
+    options: CallOptions(
+      metadata: {
+        'X-Goog-Api-Key': 'YOUR_API_KEY',
+        'X-Goog-FieldMask': '*',
+      },
+    ),
+  );
+
+  final request = ComputeRoutesRequest(
+    origin: Waypoint(
+      address: 'Tour eiffel Paris',
+    ),
+    destination: Waypoint(
+      address: 'Montmartre Paris',
+    ),
+  );
+
+  final data = await client.computeRoutes(request);
+  print(data);
+
+  exit(0);
+}
 ```
 
-## Additional information
+## How it works
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+All the generation tooling is in the `Makefile`. Run `make` to regenerate the repository.
+
+Auto-generation takes ~20 minutes. Be patient!
+
+**You must have `protoc` from `protobuf` installed from `brew`. [Official guide of installation](https://grpc.io/docs/protoc-installation/)**
+
+If you install `protobuf` without `brew`, you must edit the Makefile. It is simple to do. (The Makefile is barely 30 lines).
+
+How it works:
+
+1. Globally install the dart plugin [protoc_plugin](https://pub.dev/packages/protoc_plugin)
+2. Git clone the [googleapis](https://github.com/googleapis/googleapis) repository. It contains all the `proto` definitions.
+3. Copy some official Google types from `protobuf` installation folder to the cloned repository.
+4. Run `protoc` from `protobuf` with the dart `protoc_plugin` to generate the
+   thousands of dart files.
+5. Generate all the libraries in `lib/` with a custom script.
