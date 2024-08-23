@@ -9,10 +9,9 @@ It is almost the same as [googleapis](https://pub.dev/packages/googleapis). Key 
 
 Caveats:
 
-- The package is quite heavy: 240mb uncompressed, 40 mb compressed. Because it includes so much code.
-- Due to this, Dart autocompletion and formatting take
-  longer to start when you include this package.
+- The package is quite heavy: 240mb uncompressed, 25 mb compressed. Because it includes so much generated code.
 - But the resulting binary (iOS, Android, etc) **isn't** heavier than before this package is installed.
+- I don't know how it will affect web.
 
 ## Installing
 
