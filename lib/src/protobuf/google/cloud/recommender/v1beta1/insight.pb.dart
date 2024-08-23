@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'insight.pbenum.dart';
 
 export 'insight.pbenum.dart';
@@ -79,9 +79,9 @@ class Insight extends $pb.GeneratedMessage {
   factory Insight({
     $core.String? name,
     $core.String? description,
-    $1734.Struct? content,
-    $1775.Timestamp? lastRefreshTime,
-    $1737.Duration? observationPeriod,
+    $1735.Struct? content,
+    $1776.Timestamp? lastRefreshTime,
+    $1738.Duration? observationPeriod,
     InsightStateInfo? stateInfo,
     Insight_Category? category,
     $core.Iterable<Insight_RecommendationReference>? associatedRecommendations,
@@ -136,9 +136,9 @@ class Insight extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Insight', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'content', subBuilder: $1734.Struct.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'lastRefreshTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'observationPeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'content', subBuilder: $1735.Struct.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'lastRefreshTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'observationPeriod', subBuilder: $1738.Duration.create)
     ..aOM<InsightStateInfo>(6, _omitFieldNames ? '' : 'stateInfo', subBuilder: InsightStateInfo.create)
     ..e<Insight_Category>(7, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: Insight_Category.CATEGORY_UNSPECIFIED, valueOf: Insight_Category.valueOf, enumValues: Insight_Category.values)
     ..pc<Insight_RecommendationReference>(8, _omitFieldNames ? '' : 'associatedRecommendations', $pb.PbFieldType.PM, subBuilder: Insight_RecommendationReference.create)
@@ -194,41 +194,41 @@ class Insight extends $pb.GeneratedMessage {
   /// A struct of custom fields to explain the insight.
   /// Example: "grantedPermissionsCount": "1000"
   @$pb.TagNumber(3)
-  $1734.Struct get content => $_getN(2);
+  $1735.Struct get content => $_getN(2);
   @$pb.TagNumber(3)
-  set content($1734.Struct v) { setField(3, v); }
+  set content($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasContent() => $_has(2);
   @$pb.TagNumber(3)
   void clearContent() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureContent() => $_ensure(2);
+  $1735.Struct ensureContent() => $_ensure(2);
 
   /// Timestamp of the latest data used to generate the insight.
   @$pb.TagNumber(4)
-  $1775.Timestamp get lastRefreshTime => $_getN(3);
+  $1776.Timestamp get lastRefreshTime => $_getN(3);
   @$pb.TagNumber(4)
-  set lastRefreshTime($1775.Timestamp v) { setField(4, v); }
+  set lastRefreshTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastRefreshTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastRefreshTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureLastRefreshTime() => $_ensure(3);
+  $1776.Timestamp ensureLastRefreshTime() => $_ensure(3);
 
   /// Observation period that led to the insight. The source data used to
   /// generate the insight ends at last_refresh_time and begins at
   /// (last_refresh_time - observation_period).
   @$pb.TagNumber(5)
-  $1737.Duration get observationPeriod => $_getN(4);
+  $1738.Duration get observationPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set observationPeriod($1737.Duration v) { setField(5, v); }
+  set observationPeriod($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasObservationPeriod() => $_has(4);
   @$pb.TagNumber(5)
   void clearObservationPeriod() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureObservationPeriod() => $_ensure(4);
+  $1738.Duration ensureObservationPeriod() => $_ensure(4);
 
   /// Information state and metadata.
   @$pb.TagNumber(6)

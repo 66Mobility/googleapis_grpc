@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../protobuf/struct.pb.dart' as $1735;
 
 /// Represents an intent.
 class Intent extends $pb.GeneratedMessage {
@@ -99,7 +99,7 @@ class Intent extends $pb.GeneratedMessage {
 class IntentParameterValue extends $pb.GeneratedMessage {
   factory IntentParameterValue({
     $core.String? original,
-    $1734.Value? resolved,
+    $1735.Value? resolved,
   }) {
     final $result = create();
     if (original != null) {
@@ -116,7 +116,7 @@ class IntentParameterValue extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IntentParameterValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'original')
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'resolved', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'resolved', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -156,15 +156,15 @@ class IntentParameterValue extends $pb.GeneratedMessage {
   /// intent and the value of the parameter could be identified during intent
   /// matching.
   @$pb.TagNumber(2)
-  $1734.Value get resolved => $_getN(1);
+  $1735.Value get resolved => $_getN(1);
   @$pb.TagNumber(2)
-  set resolved($1734.Value v) { setField(2, v); }
+  set resolved($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResolved() => $_has(1);
   @$pb.TagNumber(2)
   void clearResolved() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureResolved() => $_ensure(1);
+  $1735.Value ensureResolved() => $_ensure(1);
 }
 
 

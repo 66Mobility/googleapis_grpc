@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'abuse_event.pbenum.dart';
 
 export 'abuse_event.pbenum.dart';
@@ -230,8 +230,8 @@ class AbuseEvent extends $pb.GeneratedMessage {
 class CryptoMiningEvent extends $pb.GeneratedMessage {
   factory CryptoMiningEvent({
     $core.Iterable<$core.String>? vmResource,
-    $1775.Timestamp? detectedMiningStartTime,
-    $1775.Timestamp? detectedMiningEndTime,
+    $1776.Timestamp? detectedMiningStartTime,
+    $1776.Timestamp? detectedMiningEndTime,
   }) {
     final $result = create();
     if (vmResource != null) {
@@ -251,8 +251,8 @@ class CryptoMiningEvent extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CryptoMiningEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.abuseevent.logging.v1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'vmResource')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'detectedMiningStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'detectedMiningEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'detectedMiningStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'detectedMiningEndTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -284,27 +284,27 @@ class CryptoMiningEvent extends $pb.GeneratedMessage {
 
   /// Detected start time of the cryptocurrency mining.
   @$pb.TagNumber(2)
-  $1775.Timestamp get detectedMiningStartTime => $_getN(1);
+  $1776.Timestamp get detectedMiningStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set detectedMiningStartTime($1775.Timestamp v) { setField(2, v); }
+  set detectedMiningStartTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDetectedMiningStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearDetectedMiningStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureDetectedMiningStartTime() => $_ensure(1);
+  $1776.Timestamp ensureDetectedMiningStartTime() => $_ensure(1);
 
   /// Detected end time of the cryptocurrency mining.
   @$pb.TagNumber(3)
-  $1775.Timestamp get detectedMiningEndTime => $_getN(2);
+  $1776.Timestamp get detectedMiningEndTime => $_getN(2);
   @$pb.TagNumber(3)
-  set detectedMiningEndTime($1775.Timestamp v) { setField(3, v); }
+  set detectedMiningEndTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDetectedMiningEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDetectedMiningEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureDetectedMiningEndTime() => $_ensure(2);
+  $1776.Timestamp ensureDetectedMiningEndTime() => $_ensure(2);
 }
 
 enum LeakedCredentialEvent_CredentialType {

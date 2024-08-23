@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../common/policy.pb.dart' as $2525;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/asset_group_signal.pb.dart' as $3076;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../common/policy.pb.dart' as $2526;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/asset_group_signal.pb.dart' as $3077;
 
 /// Request message for
 /// [AssetGroupSignalService.MutateAssetGroupSignals][google.ads.googleads.v16.services.AssetGroupSignalService.MutateAssetGroupSignals].
@@ -26,7 +26,7 @@ class MutateAssetGroupSignalsRequest extends $pb.GeneratedMessage {
     $core.Iterable<AssetGroupSignalOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateAssetGroupSignalsRequest extends $pb.GeneratedMessage {
     ..pc<AssetGroupSignalOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: AssetGroupSignalOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -122,9 +122,9 @@ class MutateAssetGroupSignalsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,9 +140,9 @@ enum AssetGroupSignalOperation_Operation {
 /// A single operation (create, remove) on an asset group signal.
 class AssetGroupSignalOperation extends $pb.GeneratedMessage {
   factory AssetGroupSignalOperation({
-    $3076.AssetGroupSignal? create_1,
+    $3077.AssetGroupSignal? create_1,
     $core.String? remove,
-    $core.Iterable<$2525.PolicyViolationKey>? exemptPolicyViolationKeys,
+    $core.Iterable<$2526.PolicyViolationKey>? exemptPolicyViolationKeys,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -167,9 +167,9 @@ class AssetGroupSignalOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetGroupSignalOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3076.AssetGroupSignal>(1, _omitFieldNames ? '' : 'create', subBuilder: $3076.AssetGroupSignal.create)
+    ..aOM<$3077.AssetGroupSignal>(1, _omitFieldNames ? '' : 'create', subBuilder: $3077.AssetGroupSignal.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
-    ..pc<$2525.PolicyViolationKey>(3, _omitFieldNames ? '' : 'exemptPolicyViolationKeys', $pb.PbFieldType.PM, subBuilder: $2525.PolicyViolationKey.create)
+    ..pc<$2526.PolicyViolationKey>(3, _omitFieldNames ? '' : 'exemptPolicyViolationKeys', $pb.PbFieldType.PM, subBuilder: $2526.PolicyViolationKey.create)
     ..hasRequiredFields = false
   ;
 
@@ -200,15 +200,15 @@ class AssetGroupSignalOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new asset group
   /// signal.
   @$pb.TagNumber(1)
-  $3076.AssetGroupSignal get create_1 => $_getN(0);
+  $3077.AssetGroupSignal get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3076.AssetGroupSignal v) { setField(1, v); }
+  set create_1($3077.AssetGroupSignal v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3076.AssetGroupSignal ensureCreate_1() => $_ensure(0);
+  $3077.AssetGroupSignal ensureCreate_1() => $_ensure(0);
 
   /// Remove operation: A resource name for the removed asset group signal is
   /// expected, in this format:
@@ -232,14 +232,14 @@ class AssetGroupSignalOperation extends $pb.GeneratedMessage {
   ///  policies, re-review of the resource, or a change in advertiser
   ///  certificates.
   @$pb.TagNumber(3)
-  $core.List<$2525.PolicyViolationKey> get exemptPolicyViolationKeys => $_getList(2);
+  $core.List<$2526.PolicyViolationKey> get exemptPolicyViolationKeys => $_getList(2);
 }
 
 /// Response message for an asset group signal mutate.
 class MutateAssetGroupSignalsResponse extends $pb.GeneratedMessage {
   factory MutateAssetGroupSignalsResponse({
     $core.Iterable<MutateAssetGroupSignalResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -256,7 +256,7 @@ class MutateAssetGroupSignalsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAssetGroupSignalsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateAssetGroupSignalResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAssetGroupSignalResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -290,22 +290,22 @@ class MutateAssetGroupSignalsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the asset group signal mutate.
 class MutateAssetGroupSignalResult extends $pb.GeneratedMessage {
   factory MutateAssetGroupSignalResult({
     $core.String? resourceName,
-    $3076.AssetGroupSignal? assetGroupSignal,
+    $3077.AssetGroupSignal? assetGroupSignal,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -322,7 +322,7 @@ class MutateAssetGroupSignalResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAssetGroupSignalResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3076.AssetGroupSignal>(2, _omitFieldNames ? '' : 'assetGroupSignal', subBuilder: $3076.AssetGroupSignal.create)
+    ..aOM<$3077.AssetGroupSignal>(2, _omitFieldNames ? '' : 'assetGroupSignal', subBuilder: $3077.AssetGroupSignal.create)
     ..hasRequiredFields = false
   ;
 
@@ -361,15 +361,15 @@ class MutateAssetGroupSignalResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3076.AssetGroupSignal get assetGroupSignal => $_getN(1);
+  $3077.AssetGroupSignal get assetGroupSignal => $_getN(1);
   @$pb.TagNumber(2)
-  set assetGroupSignal($3076.AssetGroupSignal v) { setField(2, v); }
+  set assetGroupSignal($3077.AssetGroupSignal v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAssetGroupSignal() => $_has(1);
   @$pb.TagNumber(2)
   void clearAssetGroupSignal() => clearField(2);
   @$pb.TagNumber(2)
-  $3076.AssetGroupSignal ensureAssetGroupSignal() => $_ensure(1);
+  $3077.AssetGroupSignal ensureAssetGroupSignal() => $_ensure(1);
 }
 
 

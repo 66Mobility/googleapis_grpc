@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'generator.pbenum.dart';
 
 export 'generator.pbenum.dart';
@@ -369,7 +369,7 @@ class DeleteGeneratorRequest extends $pb.GeneratedMessage {
 class UpdateGeneratorRequest extends $pb.GeneratedMessage {
   factory UpdateGeneratorRequest({
     Generator? generator,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (generator != null) {
@@ -386,7 +386,7 @@ class UpdateGeneratorRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGeneratorRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOM<Generator>(1, _omitFieldNames ? '' : 'generator', subBuilder: Generator.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -426,15 +426,15 @@ class UpdateGeneratorRequest extends $pb.GeneratedMessage {
 
   /// Optional. The list of fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Represents a message entry of a conversation.
@@ -443,7 +443,7 @@ class MessageEntry extends $pb.GeneratedMessage {
     MessageEntry_Role? role,
     $core.String? text,
     $core.String? languageCode,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (role != null) {
@@ -468,7 +468,7 @@ class MessageEntry extends $pb.GeneratedMessage {
     ..e<MessageEntry_Role>(1, _omitFieldNames ? '' : 'role', $pb.PbFieldType.OE, defaultOrMaker: MessageEntry_Role.ROLE_UNSPECIFIED, valueOf: MessageEntry_Role.valueOf, enumValues: MessageEntry_Role.values)
     ..aOS(2, _omitFieldNames ? '' : 'text')
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -527,15 +527,15 @@ class MessageEntry extends $pb.GeneratedMessage {
 
   /// Optional. Create time of the message entry.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 }
 
 /// Context of the conversation, including transcripts.
@@ -1042,8 +1042,8 @@ class Generator extends $pb.GeneratedMessage {
     $core.String? description,
     InferenceParameter? inferenceParameter,
     TriggerEvent? triggerEvent,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     SummarizationContext? summarizationContext,
   }) {
     final $result = create();
@@ -1084,8 +1084,8 @@ class Generator extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<InferenceParameter>(4, _omitFieldNames ? '' : 'inferenceParameter', subBuilder: InferenceParameter.create)
     ..e<TriggerEvent>(5, _omitFieldNames ? '' : 'triggerEvent', $pb.PbFieldType.OE, defaultOrMaker: TriggerEvent.TRIGGER_EVENT_UNSPECIFIED, valueOf: TriggerEvent.valueOf, enumValues: TriggerEvent.values)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SummarizationContext>(13, _omitFieldNames ? '' : 'summarizationContext', subBuilder: SummarizationContext.create)
     ..hasRequiredFields = false
   ;
@@ -1160,27 +1160,27 @@ class Generator extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this generator.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Update time of this generator.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Input of prebuilt Summarization feature.
   @$pb.TagNumber(13)

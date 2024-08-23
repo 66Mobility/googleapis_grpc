@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'folder.pb.dart' as $4613;
+import 'folder.pb.dart' as $4615;
 import 'resource.pbenum.dart';
 
 export 'resource.pbenum.dart';
@@ -33,7 +33,7 @@ class Resource extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? parentDisplayName,
     $core.String? type,
-    $core.Iterable<$4613.Folder>? folders,
+    $core.Iterable<$4615.Folder>? folders,
     $core.String? displayName,
     CloudProvider? cloudProvider,
     $core.String? organization,
@@ -112,7 +112,7 @@ class Resource extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'parent')
     ..aOS(5, _omitFieldNames ? '' : 'parentDisplayName')
     ..aOS(6, _omitFieldNames ? '' : 'type')
-    ..pc<$4613.Folder>(7, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4613.Folder.create)
+    ..pc<$4615.Folder>(7, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4615.Folder.create)
     ..aOS(8, _omitFieldNames ? '' : 'displayName')
     ..e<CloudProvider>(9, _omitFieldNames ? '' : 'cloudProvider', $pb.PbFieldType.OE, defaultOrMaker: CloudProvider.CLOUD_PROVIDER_UNSPECIFIED, valueOf: CloudProvider.valueOf, enumValues: CloudProvider.values)
     ..aOS(10, _omitFieldNames ? '' : 'organization')
@@ -214,7 +214,7 @@ class Resource extends $pb.GeneratedMessage {
   /// ancestry. The first folder is the deepest nested folder, and the last
   /// folder is the folder directly under the Organization.
   @$pb.TagNumber(7)
-  $core.List<$4613.Folder> get folders => $_getList(6);
+  $core.List<$4615.Folder> get folders => $_getList(6);
 
   /// The human readable name of the resource.
   @$pb.TagNumber(8)

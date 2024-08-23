@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common_fields.pb.dart' as $4588;
-import 'common_fields.pbenum.dart' as $4588;
+import 'common_fields.pb.dart' as $4590;
+import 'common_fields.pbenum.dart' as $4590;
 import 'rules.pbenum.dart';
 
 export 'rules.pbenum.dart';
@@ -26,8 +26,8 @@ class Rule extends $pb.GeneratedMessage {
   factory Rule({
     $core.String? name,
     $core.String? ruleDescription,
-    $4588.ApiType? apiType,
-    $4588.TransactionType? transactionType,
+    $4590.ApiType? apiType,
+    $4590.TransactionType? transactionType,
   }) {
     final $result = create();
     if (name != null) {
@@ -51,8 +51,8 @@ class Rule extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Rule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'ruleDescription')
-    ..e<$4588.ApiType>(3, _omitFieldNames ? '' : 'apiType', $pb.PbFieldType.OE, defaultOrMaker: $4588.ApiType.API_TYPE_UNSPECIFIED, valueOf: $4588.ApiType.valueOf, enumValues: $4588.ApiType.values)
-    ..e<$4588.TransactionType>(4, _omitFieldNames ? '' : 'transactionType', $pb.PbFieldType.OE, defaultOrMaker: $4588.TransactionType.TRANSACTION_TYPE_UNSPECIFIED, valueOf: $4588.TransactionType.valueOf, enumValues: $4588.TransactionType.values)
+    ..e<$4590.ApiType>(3, _omitFieldNames ? '' : 'apiType', $pb.PbFieldType.OE, defaultOrMaker: $4590.ApiType.API_TYPE_UNSPECIFIED, valueOf: $4590.ApiType.valueOf, enumValues: $4590.ApiType.values)
+    ..e<$4590.TransactionType>(4, _omitFieldNames ? '' : 'transactionType', $pb.PbFieldType.OE, defaultOrMaker: $4590.TransactionType.TRANSACTION_TYPE_UNSPECIFIED, valueOf: $4590.TransactionType.valueOf, enumValues: $4590.TransactionType.values)
     ..hasRequiredFields = false
   ;
 
@@ -102,9 +102,9 @@ class Rule extends $pb.GeneratedMessage {
   /// `API_TYPE_UNSPECIFIED` indicates that the rule is executed for all API
   /// transactions.
   @$pb.TagNumber(3)
-  $4588.ApiType get apiType => $_getN(2);
+  $4590.ApiType get apiType => $_getN(2);
   @$pb.TagNumber(3)
-  set apiType($4588.ApiType v) { setField(3, v); }
+  set apiType($4590.ApiType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApiType() => $_has(2);
   @$pb.TagNumber(3)
@@ -114,9 +114,9 @@ class Rule extends $pb.GeneratedMessage {
   /// `TRANSACTION_TYPE_UNSPECIFIED` indicates that the rule is executed for
   /// all transaction types.
   @$pb.TagNumber(4)
-  $4588.TransactionType get transactionType => $_getN(3);
+  $4590.TransactionType get transactionType => $_getN(3);
   @$pb.TagNumber(4)
-  set transactionType($4588.TransactionType v) { setField(4, v); }
+  set transactionType($4590.TransactionType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTransactionType() => $_has(3);
   @$pb.TagNumber(4)
@@ -218,7 +218,7 @@ class RuleMetadataValue extends $pb.GeneratedMessage {
   factory RuleMetadataValue({
     $core.String? name,
     $core.String? id,
-    $4588.AccountReference? accountReference,
+    $4590.AccountReference? accountReference,
   }) {
     final $result = create();
     if (name != null) {
@@ -245,7 +245,7 @@ class RuleMetadataValue extends $pb.GeneratedMessage {
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<$4588.AccountReference>(3, _omitFieldNames ? '' : 'accountReference', subBuilder: $4588.AccountReference.create)
+    ..aOM<$4590.AccountReference>(3, _omitFieldNames ? '' : 'accountReference', subBuilder: $4590.AccountReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -296,15 +296,15 @@ class RuleMetadataValue extends $pb.GeneratedMessage {
 
   /// The value for account reference metadata.
   @$pb.TagNumber(3)
-  $4588.AccountReference get accountReference => $_getN(2);
+  $4590.AccountReference get accountReference => $_getN(2);
   @$pb.TagNumber(3)
-  set accountReference($4588.AccountReference v) { setField(3, v); }
+  set accountReference($4590.AccountReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAccountReference() => $_has(2);
   @$pb.TagNumber(3)
   void clearAccountReference() => clearField(3);
   @$pb.TagNumber(3)
-  $4588.AccountReference ensureAccountReference() => $_ensure(2);
+  $4590.AccountReference ensureAccountReference() => $_ensure(2);
 }
 
 /// Request body for the `ListRules` method.

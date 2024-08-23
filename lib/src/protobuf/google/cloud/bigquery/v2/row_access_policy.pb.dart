@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'row_access_policy_reference.pb.dart' as $4411;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'row_access_policy_reference.pb.dart' as $4412;
 
 /// Request message for the ListRowAccessPolicies method.
 class ListRowAccessPoliciesRequest extends $pb.GeneratedMessage {
@@ -197,10 +197,10 @@ class ListRowAccessPoliciesResponse extends $pb.GeneratedMessage {
 class RowAccessPolicy extends $pb.GeneratedMessage {
   factory RowAccessPolicy({
     $core.String? etag,
-    $4411.RowAccessPolicyReference? rowAccessPolicyReference,
+    $4412.RowAccessPolicyReference? rowAccessPolicyReference,
     $core.String? filterPredicate,
-    $1775.Timestamp? creationTime,
-    $1775.Timestamp? lastModifiedTime,
+    $1776.Timestamp? creationTime,
+    $1776.Timestamp? lastModifiedTime,
   }) {
     final $result = create();
     if (etag != null) {
@@ -226,10 +226,10 @@ class RowAccessPolicy extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RowAccessPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'etag')
-    ..aOM<$4411.RowAccessPolicyReference>(2, _omitFieldNames ? '' : 'rowAccessPolicyReference', subBuilder: $4411.RowAccessPolicyReference.create)
+    ..aOM<$4412.RowAccessPolicyReference>(2, _omitFieldNames ? '' : 'rowAccessPolicyReference', subBuilder: $4412.RowAccessPolicyReference.create)
     ..aOS(3, _omitFieldNames ? '' : 'filterPredicate')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'creationTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'creationTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -266,15 +266,15 @@ class RowAccessPolicy extends $pb.GeneratedMessage {
 
   /// Required. Reference describing the ID of this row access policy.
   @$pb.TagNumber(2)
-  $4411.RowAccessPolicyReference get rowAccessPolicyReference => $_getN(1);
+  $4412.RowAccessPolicyReference get rowAccessPolicyReference => $_getN(1);
   @$pb.TagNumber(2)
-  set rowAccessPolicyReference($4411.RowAccessPolicyReference v) { setField(2, v); }
+  set rowAccessPolicyReference($4412.RowAccessPolicyReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRowAccessPolicyReference() => $_has(1);
   @$pb.TagNumber(2)
   void clearRowAccessPolicyReference() => clearField(2);
   @$pb.TagNumber(2)
-  $4411.RowAccessPolicyReference ensureRowAccessPolicyReference() => $_ensure(1);
+  $4412.RowAccessPolicyReference ensureRowAccessPolicyReference() => $_ensure(1);
 
   ///  Required. A SQL boolean expression that represents the rows defined by this
   ///  row access policy, similar to the boolean expression in a WHERE clause of a
@@ -298,28 +298,28 @@ class RowAccessPolicy extends $pb.GeneratedMessage {
   /// Output only. The time when this row access policy was created, in
   /// milliseconds since the epoch.
   @$pb.TagNumber(4)
-  $1775.Timestamp get creationTime => $_getN(3);
+  $1776.Timestamp get creationTime => $_getN(3);
   @$pb.TagNumber(4)
-  set creationTime($1775.Timestamp v) { setField(4, v); }
+  set creationTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreationTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreationTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreationTime() => $_ensure(3);
+  $1776.Timestamp ensureCreationTime() => $_ensure(3);
 
   /// Output only. The time when this row access policy was last modified, in
   /// milliseconds since the epoch.
   @$pb.TagNumber(5)
-  $1775.Timestamp get lastModifiedTime => $_getN(4);
+  $1776.Timestamp get lastModifiedTime => $_getN(4);
   @$pb.TagNumber(5)
-  set lastModifiedTime($1775.Timestamp v) { setField(5, v); }
+  set lastModifiedTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLastModifiedTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearLastModifiedTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureLastModifiedTime() => $_ensure(4);
+  $1776.Timestamp ensureLastModifiedTime() => $_ensure(4);
 }
 
 

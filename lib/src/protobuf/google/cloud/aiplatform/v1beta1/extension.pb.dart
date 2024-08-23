@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'extension.pbenum.dart';
-import 'tool.pb.dart' as $4292;
+import 'tool.pb.dart' as $4293;
 
 export 'extension.pbenum.dart';
 
@@ -27,13 +27,13 @@ class Extension extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     ExtensionManifest? manifest,
     $core.Iterable<ExtensionOperation>? extensionOperations,
     RuntimeConfig? runtimeConfig,
-    $core.Iterable<$4292.ToolUseExample>? toolUseExamples,
+    $core.Iterable<$4293.ToolUseExample>? toolUseExamples,
     ExtensionPrivateServiceConnectConfig? privateServiceConnectConfig,
   }) {
     final $result = create();
@@ -80,13 +80,13 @@ class Extension extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'etag')
     ..aOM<ExtensionManifest>(9, _omitFieldNames ? '' : 'manifest', subBuilder: ExtensionManifest.create)
     ..pc<ExtensionOperation>(11, _omitFieldNames ? '' : 'extensionOperations', $pb.PbFieldType.PM, subBuilder: ExtensionOperation.create)
     ..aOM<RuntimeConfig>(13, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: RuntimeConfig.create)
-    ..pc<$4292.ToolUseExample>(15, _omitFieldNames ? '' : 'toolUseExamples', $pb.PbFieldType.PM, subBuilder: $4292.ToolUseExample.create)
+    ..pc<$4293.ToolUseExample>(15, _omitFieldNames ? '' : 'toolUseExamples', $pb.PbFieldType.PM, subBuilder: $4293.ToolUseExample.create)
     ..aOM<ExtensionPrivateServiceConnectConfig>(16, _omitFieldNames ? '' : 'privateServiceConnectConfig', subBuilder: ExtensionPrivateServiceConnectConfig.create)
     ..hasRequiredFields = false
   ;
@@ -146,27 +146,27 @@ class Extension extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Extension was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Timestamp when this Extension was most recently updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. Used to perform consistent read-modify-write updates. If not set,
   /// a blind "overwrite" update happens.
@@ -210,7 +210,7 @@ class Extension extends $pb.GeneratedMessage {
 
   /// Optional. Examples to illustrate the usage of the extension as a tool.
   @$pb.TagNumber(15)
-  $core.List<$4292.ToolUseExample> get toolUseExamples => $_getList(9);
+  $core.List<$4293.ToolUseExample> get toolUseExamples => $_getList(9);
 
   ///  Optional. The PrivateServiceConnect config for the extension.
   ///  If specified, the service endpoints associated with the
@@ -424,7 +424,7 @@ class ExtensionManifest extends $pb.GeneratedMessage {
 class ExtensionOperation extends $pb.GeneratedMessage {
   factory ExtensionOperation({
     $core.String? operationId,
-    $4292.FunctionDeclaration? functionDeclaration,
+    $4293.FunctionDeclaration? functionDeclaration,
   }) {
     final $result = create();
     if (operationId != null) {
@@ -441,7 +441,7 @@ class ExtensionOperation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExtensionOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
-    ..aOM<$4292.FunctionDeclaration>(3, _omitFieldNames ? '' : 'functionDeclaration', subBuilder: $4292.FunctionDeclaration.create)
+    ..aOM<$4293.FunctionDeclaration>(3, _omitFieldNames ? '' : 'functionDeclaration', subBuilder: $4293.FunctionDeclaration.create)
     ..hasRequiredFields = false
   ;
 
@@ -483,15 +483,15 @@ class ExtensionOperation extends $pb.GeneratedMessage {
   /// Output only. Structured representation of a function declaration as defined
   /// by the OpenAPI Spec.
   @$pb.TagNumber(3)
-  $4292.FunctionDeclaration get functionDeclaration => $_getN(1);
+  $4293.FunctionDeclaration get functionDeclaration => $_getN(1);
   @$pb.TagNumber(3)
-  set functionDeclaration($4292.FunctionDeclaration v) { setField(3, v); }
+  set functionDeclaration($4293.FunctionDeclaration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFunctionDeclaration() => $_has(1);
   @$pb.TagNumber(3)
   void clearFunctionDeclaration() => clearField(3);
   @$pb.TagNumber(3)
-  $4292.FunctionDeclaration ensureFunctionDeclaration() => $_ensure(1);
+  $4293.FunctionDeclaration ensureFunctionDeclaration() => $_ensure(1);
 }
 
 /// Config for authentication with API key.
@@ -1205,7 +1205,7 @@ enum RuntimeConfig_GoogleFirstPartyExtensionConfig {
 class RuntimeConfig extends $pb.GeneratedMessage {
   factory RuntimeConfig({
     RuntimeConfig_CodeInterpreterRuntimeConfig? codeInterpreterRuntimeConfig,
-    $1734.Struct? defaultParams,
+    $1735.Struct? defaultParams,
     RuntimeConfig_VertexAISearchRuntimeConfig? vertexAiSearchRuntimeConfig,
   }) {
     final $result = create();
@@ -1232,7 +1232,7 @@ class RuntimeConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RuntimeConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 6])
     ..aOM<RuntimeConfig_CodeInterpreterRuntimeConfig>(2, _omitFieldNames ? '' : 'codeInterpreterRuntimeConfig', subBuilder: RuntimeConfig_CodeInterpreterRuntimeConfig.create)
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'defaultParams', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'defaultParams', subBuilder: $1735.Struct.create)
     ..aOM<RuntimeConfig_VertexAISearchRuntimeConfig>(6, _omitFieldNames ? '' : 'vertexAiSearchRuntimeConfig', subBuilder: RuntimeConfig_VertexAISearchRuntimeConfig.create)
     ..hasRequiredFields = false
   ;
@@ -1282,15 +1282,15 @@ class RuntimeConfig extends $pb.GeneratedMessage {
   ///  E.g. If this operation requires a param "name" to be set to "abc". you can
   ///  set this to something like {"name": "abc"}.
   @$pb.TagNumber(4)
-  $1734.Struct get defaultParams => $_getN(1);
+  $1735.Struct get defaultParams => $_getN(1);
   @$pb.TagNumber(4)
-  set defaultParams($1734.Struct v) { setField(4, v); }
+  set defaultParams($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDefaultParams() => $_has(1);
   @$pb.TagNumber(4)
   void clearDefaultParams() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureDefaultParams() => $_ensure(1);
+  $1735.Struct ensureDefaultParams() => $_ensure(1);
 
   /// Runtime configuration for Vertex AI Search extension.
   @$pb.TagNumber(6)

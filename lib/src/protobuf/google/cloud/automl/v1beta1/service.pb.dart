@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'column_spec.pb.dart' as $680;
 import 'dataset.pb.dart' as $677;
-import 'image.pb.dart' as $4355;
-import 'io.pb.dart' as $4345;
+import 'image.pb.dart' as $4356;
+import 'io.pb.dart' as $4346;
 import 'model.pb.dart' as $681;
 import 'model_evaluation.pb.dart' as $682;
 import 'table_spec.pb.dart' as $679;
@@ -317,7 +317,7 @@ class ListDatasetsResponse extends $pb.GeneratedMessage {
 class UpdateDatasetRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetRequest({
     $677.Dataset? dataset,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -334,7 +334,7 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatasetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOM<$677.Dataset>(1, _omitFieldNames ? '' : 'dataset', subBuilder: $677.Dataset.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -373,15 +373,15 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
 
   /// The update mask applies to the resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.DeleteDataset][google.cloud.automl.v1beta1.AutoMl.DeleteDataset].
@@ -440,7 +440,7 @@ class DeleteDatasetRequest extends $pb.GeneratedMessage {
 class ImportDataRequest extends $pb.GeneratedMessage {
   factory ImportDataRequest({
     $core.String? name,
-    $4345.InputConfig? inputConfig,
+    $4346.InputConfig? inputConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -457,7 +457,7 @@ class ImportDataRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDataRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4345.InputConfig>(3, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4345.InputConfig.create)
+    ..aOM<$4346.InputConfig>(3, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4346.InputConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -496,22 +496,22 @@ class ImportDataRequest extends $pb.GeneratedMessage {
   /// Required. The desired input location and its domain specific semantics,
   /// if any.
   @$pb.TagNumber(3)
-  $4345.InputConfig get inputConfig => $_getN(1);
+  $4346.InputConfig get inputConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set inputConfig($4345.InputConfig v) { setField(3, v); }
+  set inputConfig($4346.InputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInputConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearInputConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4345.InputConfig ensureInputConfig() => $_ensure(1);
+  $4346.InputConfig ensureInputConfig() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.ExportData][google.cloud.automl.v1beta1.AutoMl.ExportData].
 class ExportDataRequest extends $pb.GeneratedMessage {
   factory ExportDataRequest({
     $core.String? name,
-    $4345.OutputConfig? outputConfig,
+    $4346.OutputConfig? outputConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -528,7 +528,7 @@ class ExportDataRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDataRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4345.OutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4345.OutputConfig.create)
+    ..aOM<$4346.OutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4346.OutputConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -565,15 +565,15 @@ class ExportDataRequest extends $pb.GeneratedMessage {
 
   /// Required. The desired output location.
   @$pb.TagNumber(3)
-  $4345.OutputConfig get outputConfig => $_getN(1);
+  $4346.OutputConfig get outputConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set outputConfig($4345.OutputConfig v) { setField(3, v); }
+  set outputConfig($4346.OutputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOutputConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearOutputConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4345.OutputConfig ensureOutputConfig() => $_ensure(1);
+  $4346.OutputConfig ensureOutputConfig() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.GetAnnotationSpec][google.cloud.automl.v1beta1.AutoMl.GetAnnotationSpec].
@@ -632,7 +632,7 @@ class GetAnnotationSpecRequest extends $pb.GeneratedMessage {
 class GetTableSpecRequest extends $pb.GeneratedMessage {
   factory GetTableSpecRequest({
     $core.String? name,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -649,7 +649,7 @@ class GetTableSpecRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetTableSpecRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -686,22 +686,22 @@ class GetTableSpecRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(2)
-  $2209.FieldMask get fieldMask => $_getN(1);
+  $2210.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($2209.FieldMask v) { setField(2, v); }
+  set fieldMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureFieldMask() => $_ensure(1);
+  $2210.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.ListTableSpecs][google.cloud.automl.v1beta1.AutoMl.ListTableSpecs].
 class ListTableSpecsRequest extends $pb.GeneratedMessage {
   factory ListTableSpecsRequest({
     $core.String? parent,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
@@ -730,7 +730,7 @@ class ListTableSpecsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTableSpecsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'pageToken')
@@ -770,15 +770,15 @@ class ListTableSpecsRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(2)
-  $2209.FieldMask get fieldMask => $_getN(1);
+  $2210.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($2209.FieldMask v) { setField(2, v); }
+  set fieldMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureFieldMask() => $_ensure(1);
+  $2210.FieldMask ensureFieldMask() => $_ensure(1);
 
   /// Filter expression, see go/filtering.
   @$pb.TagNumber(3)
@@ -881,7 +881,7 @@ class ListTableSpecsResponse extends $pb.GeneratedMessage {
 class UpdateTableSpecRequest extends $pb.GeneratedMessage {
   factory UpdateTableSpecRequest({
     $679.TableSpec? tableSpec,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (tableSpec != null) {
@@ -898,7 +898,7 @@ class UpdateTableSpecRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTableSpecRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOM<$679.TableSpec>(1, _omitFieldNames ? '' : 'tableSpec', subBuilder: $679.TableSpec.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -937,22 +937,22 @@ class UpdateTableSpecRequest extends $pb.GeneratedMessage {
 
   /// The update mask applies to the resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.GetColumnSpec][google.cloud.automl.v1beta1.AutoMl.GetColumnSpec].
 class GetColumnSpecRequest extends $pb.GeneratedMessage {
   factory GetColumnSpecRequest({
     $core.String? name,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -969,7 +969,7 @@ class GetColumnSpecRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetColumnSpecRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1006,22 +1006,22 @@ class GetColumnSpecRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(2)
-  $2209.FieldMask get fieldMask => $_getN(1);
+  $2210.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($2209.FieldMask v) { setField(2, v); }
+  set fieldMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureFieldMask() => $_ensure(1);
+  $2210.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.ListColumnSpecs][google.cloud.automl.v1beta1.AutoMl.ListColumnSpecs].
 class ListColumnSpecsRequest extends $pb.GeneratedMessage {
   factory ListColumnSpecsRequest({
     $core.String? parent,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
@@ -1050,7 +1050,7 @@ class ListColumnSpecsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListColumnSpecsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'pageToken')
@@ -1090,15 +1090,15 @@ class ListColumnSpecsRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(2)
-  $2209.FieldMask get fieldMask => $_getN(1);
+  $2210.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($2209.FieldMask v) { setField(2, v); }
+  set fieldMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureFieldMask() => $_ensure(1);
+  $2210.FieldMask ensureFieldMask() => $_ensure(1);
 
   /// Filter expression, see go/filtering.
   @$pb.TagNumber(3)
@@ -1201,7 +1201,7 @@ class ListColumnSpecsResponse extends $pb.GeneratedMessage {
 class UpdateColumnSpecRequest extends $pb.GeneratedMessage {
   factory UpdateColumnSpecRequest({
     $680.ColumnSpec? columnSpec,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (columnSpec != null) {
@@ -1218,7 +1218,7 @@ class UpdateColumnSpecRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateColumnSpecRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOM<$680.ColumnSpec>(1, _omitFieldNames ? '' : 'columnSpec', subBuilder: $680.ColumnSpec.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1257,15 +1257,15 @@ class UpdateColumnSpecRequest extends $pb.GeneratedMessage {
 
   /// The update mask applies to the resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.CreateModel][google.cloud.automl.v1beta1.AutoMl.CreateModel].
@@ -1621,8 +1621,8 @@ enum DeployModelRequest_ModelDeploymentMetadata {
 class DeployModelRequest extends $pb.GeneratedMessage {
   factory DeployModelRequest({
     $core.String? name,
-    $4355.ImageObjectDetectionModelDeploymentMetadata? imageObjectDetectionModelDeploymentMetadata,
-    $4355.ImageClassificationModelDeploymentMetadata? imageClassificationModelDeploymentMetadata,
+    $4356.ImageObjectDetectionModelDeploymentMetadata? imageObjectDetectionModelDeploymentMetadata,
+    $4356.ImageClassificationModelDeploymentMetadata? imageClassificationModelDeploymentMetadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -1648,8 +1648,8 @@ class DeployModelRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeployModelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4355.ImageObjectDetectionModelDeploymentMetadata>(2, _omitFieldNames ? '' : 'imageObjectDetectionModelDeploymentMetadata', subBuilder: $4355.ImageObjectDetectionModelDeploymentMetadata.create)
-    ..aOM<$4355.ImageClassificationModelDeploymentMetadata>(4, _omitFieldNames ? '' : 'imageClassificationModelDeploymentMetadata', subBuilder: $4355.ImageClassificationModelDeploymentMetadata.create)
+    ..aOM<$4356.ImageObjectDetectionModelDeploymentMetadata>(2, _omitFieldNames ? '' : 'imageObjectDetectionModelDeploymentMetadata', subBuilder: $4356.ImageObjectDetectionModelDeploymentMetadata.create)
+    ..aOM<$4356.ImageClassificationModelDeploymentMetadata>(4, _omitFieldNames ? '' : 'imageClassificationModelDeploymentMetadata', subBuilder: $4356.ImageClassificationModelDeploymentMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1689,27 +1689,27 @@ class DeployModelRequest extends $pb.GeneratedMessage {
 
   /// Model deployment metadata specific to Image Object Detection.
   @$pb.TagNumber(2)
-  $4355.ImageObjectDetectionModelDeploymentMetadata get imageObjectDetectionModelDeploymentMetadata => $_getN(1);
+  $4356.ImageObjectDetectionModelDeploymentMetadata get imageObjectDetectionModelDeploymentMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set imageObjectDetectionModelDeploymentMetadata($4355.ImageObjectDetectionModelDeploymentMetadata v) { setField(2, v); }
+  set imageObjectDetectionModelDeploymentMetadata($4356.ImageObjectDetectionModelDeploymentMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasImageObjectDetectionModelDeploymentMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearImageObjectDetectionModelDeploymentMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4355.ImageObjectDetectionModelDeploymentMetadata ensureImageObjectDetectionModelDeploymentMetadata() => $_ensure(1);
+  $4356.ImageObjectDetectionModelDeploymentMetadata ensureImageObjectDetectionModelDeploymentMetadata() => $_ensure(1);
 
   /// Model deployment metadata specific to Image Classification.
   @$pb.TagNumber(4)
-  $4355.ImageClassificationModelDeploymentMetadata get imageClassificationModelDeploymentMetadata => $_getN(2);
+  $4356.ImageClassificationModelDeploymentMetadata get imageClassificationModelDeploymentMetadata => $_getN(2);
   @$pb.TagNumber(4)
-  set imageClassificationModelDeploymentMetadata($4355.ImageClassificationModelDeploymentMetadata v) { setField(4, v); }
+  set imageClassificationModelDeploymentMetadata($4356.ImageClassificationModelDeploymentMetadata v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImageClassificationModelDeploymentMetadata() => $_has(2);
   @$pb.TagNumber(4)
   void clearImageClassificationModelDeploymentMetadata() => clearField(4);
   @$pb.TagNumber(4)
-  $4355.ImageClassificationModelDeploymentMetadata ensureImageClassificationModelDeploymentMetadata() => $_ensure(2);
+  $4356.ImageClassificationModelDeploymentMetadata ensureImageClassificationModelDeploymentMetadata() => $_ensure(2);
 }
 
 /// Request message for [AutoMl.UndeployModel][google.cloud.automl.v1beta1.AutoMl.UndeployModel].
@@ -1770,7 +1770,7 @@ class UndeployModelRequest extends $pb.GeneratedMessage {
 class ExportModelRequest extends $pb.GeneratedMessage {
   factory ExportModelRequest({
     $core.String? name,
-    $4345.ModelExportOutputConfig? outputConfig,
+    $4346.ModelExportOutputConfig? outputConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -1787,7 +1787,7 @@ class ExportModelRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportModelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4345.ModelExportOutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4345.ModelExportOutputConfig.create)
+    ..aOM<$4346.ModelExportOutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4346.ModelExportOutputConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1824,22 +1824,22 @@ class ExportModelRequest extends $pb.GeneratedMessage {
 
   /// Required. The desired output location and configuration.
   @$pb.TagNumber(3)
-  $4345.ModelExportOutputConfig get outputConfig => $_getN(1);
+  $4346.ModelExportOutputConfig get outputConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set outputConfig($4345.ModelExportOutputConfig v) { setField(3, v); }
+  set outputConfig($4346.ModelExportOutputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOutputConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearOutputConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4345.ModelExportOutputConfig ensureOutputConfig() => $_ensure(1);
+  $4346.ModelExportOutputConfig ensureOutputConfig() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.ExportEvaluatedExamples][google.cloud.automl.v1beta1.AutoMl.ExportEvaluatedExamples].
 class ExportEvaluatedExamplesRequest extends $pb.GeneratedMessage {
   factory ExportEvaluatedExamplesRequest({
     $core.String? name,
-    $4345.ExportEvaluatedExamplesOutputConfig? outputConfig,
+    $4346.ExportEvaluatedExamplesOutputConfig? outputConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -1856,7 +1856,7 @@ class ExportEvaluatedExamplesRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportEvaluatedExamplesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4345.ExportEvaluatedExamplesOutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4345.ExportEvaluatedExamplesOutputConfig.create)
+    ..aOM<$4346.ExportEvaluatedExamplesOutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4346.ExportEvaluatedExamplesOutputConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1894,15 +1894,15 @@ class ExportEvaluatedExamplesRequest extends $pb.GeneratedMessage {
 
   /// Required. The desired output location and configuration.
   @$pb.TagNumber(3)
-  $4345.ExportEvaluatedExamplesOutputConfig get outputConfig => $_getN(1);
+  $4346.ExportEvaluatedExamplesOutputConfig get outputConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set outputConfig($4345.ExportEvaluatedExamplesOutputConfig v) { setField(3, v); }
+  set outputConfig($4346.ExportEvaluatedExamplesOutputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOutputConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearOutputConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4345.ExportEvaluatedExamplesOutputConfig ensureOutputConfig() => $_ensure(1);
+  $4346.ExportEvaluatedExamplesOutputConfig ensureOutputConfig() => $_ensure(1);
 }
 
 /// Request message for [AutoMl.GetModelEvaluation][google.cloud.automl.v1beta1.AutoMl.GetModelEvaluation].

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'catalog.pb.dart' as $1224;
 import 'user_event.pb.dart' as $1229;
 
@@ -556,9 +556,9 @@ class ImportMetadata extends $pb.GeneratedMessage {
     $fixnum.Int64? successCount,
     $fixnum.Int64? failureCount,
     $core.String? requestId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? operationName,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (successCount != null) {
@@ -589,9 +589,9 @@ class ImportMetadata extends $pb.GeneratedMessage {
     ..aInt64(1, _omitFieldNames ? '' : 'successCount')
     ..aInt64(2, _omitFieldNames ? '' : 'failureCount')
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'operationName')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -649,15 +649,15 @@ class ImportMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Name of the operation.
   @$pb.TagNumber(5)
@@ -672,15 +672,15 @@ class ImportMetadata extends $pb.GeneratedMessage {
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 /// Response of the ImportCatalogItemsRequest. If the long running
@@ -688,7 +688,7 @@ class ImportMetadata extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ImportCatalogItemsResponse extends $pb.GeneratedMessage {
   factory ImportCatalogItemsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorsConfig? errorsConfig,
   }) {
     final $result = create();
@@ -705,7 +705,7 @@ class ImportCatalogItemsResponse extends $pb.GeneratedMessage {
   factory ImportCatalogItemsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportCatalogItemsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommendationengine.v1beta1'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorsConfig>(2, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ImportErrorsConfig.create)
     ..hasRequiredFields = false
   ;
@@ -733,7 +733,7 @@ class ImportCatalogItemsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Echoes the destination for the complete errors in the request if set.
   @$pb.TagNumber(2)
@@ -753,7 +753,7 @@ class ImportCatalogItemsResponse extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ImportUserEventsResponse extends $pb.GeneratedMessage {
   factory ImportUserEventsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorsConfig? errorsConfig,
     UserEventImportSummary? importSummary,
   }) {
@@ -774,7 +774,7 @@ class ImportUserEventsResponse extends $pb.GeneratedMessage {
   factory ImportUserEventsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportUserEventsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommendationengine.v1beta1'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorsConfig>(2, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ImportErrorsConfig.create)
     ..aOM<UserEventImportSummary>(3, _omitFieldNames ? '' : 'importSummary', subBuilder: UserEventImportSummary.create)
     ..hasRequiredFields = false
@@ -803,7 +803,7 @@ class ImportUserEventsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Echoes the destination for the complete errors if this field was set in
   /// the request.

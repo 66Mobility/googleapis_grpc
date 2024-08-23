@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_types.pb.dart' as $2137;
-import '../common/custom_parameter.pb.dart' as $1888;
-import '../common/policy.pb.dart' as $1824;
-import '../enums/asset_field_type.pbenum.dart' as $2113;
-import '../enums/asset_source.pbenum.dart' as $2118;
-import '../enums/asset_type.pbenum.dart' as $2138;
-import '../enums/policy_approval_status.pbenum.dart' as $1826;
-import '../enums/policy_review_status.pbenum.dart' as $1825;
+import '../common/asset_types.pb.dart' as $2138;
+import '../common/custom_parameter.pb.dart' as $1889;
+import '../common/policy.pb.dart' as $1825;
+import '../enums/asset_field_type.pbenum.dart' as $2114;
+import '../enums/asset_source.pbenum.dart' as $2119;
+import '../enums/asset_type.pbenum.dart' as $2139;
+import '../enums/policy_approval_status.pbenum.dart' as $1827;
+import '../enums/policy_review_status.pbenum.dart' as $1826;
 
 enum Asset_AssetData {
   youtubeVideoAsset, 
@@ -61,44 +61,44 @@ enum Asset_AssetData {
 class Asset extends $pb.GeneratedMessage {
   factory Asset({
     $core.String? resourceName,
-    $2138.AssetTypeEnum_AssetType? type,
-    $2137.YoutubeVideoAsset? youtubeVideoAsset,
-    $2137.MediaBundleAsset? mediaBundleAsset,
-    $2137.ImageAsset? imageAsset,
-    $2137.TextAsset? textAsset,
-    $2137.LeadFormAsset? leadFormAsset,
-    $2137.BookOnGoogleAsset? bookOnGoogleAsset,
+    $2139.AssetTypeEnum_AssetType? type,
+    $2138.YoutubeVideoAsset? youtubeVideoAsset,
+    $2138.MediaBundleAsset? mediaBundleAsset,
+    $2138.ImageAsset? imageAsset,
+    $2138.TextAsset? textAsset,
+    $2138.LeadFormAsset? leadFormAsset,
+    $2138.BookOnGoogleAsset? bookOnGoogleAsset,
     $fixnum.Int64? id,
     $core.String? name,
     AssetPolicySummary? policySummary,
     $core.Iterable<$core.String>? finalUrls,
-    $2137.PromotionAsset? promotionAsset,
+    $2138.PromotionAsset? promotionAsset,
     $core.Iterable<$core.String>? finalMobileUrls,
     $core.String? trackingUrlTemplate,
-    $core.Iterable<$1888.CustomParameter>? urlCustomParameters,
+    $core.Iterable<$1889.CustomParameter>? urlCustomParameters,
     $core.String? finalUrlSuffix,
-    $2137.CalloutAsset? calloutAsset,
-    $2137.StructuredSnippetAsset? structuredSnippetAsset,
-    $2137.SitelinkAsset? sitelinkAsset,
-    $2137.PageFeedAsset? pageFeedAsset,
-    $2137.DynamicEducationAsset? dynamicEducationAsset,
-    $2137.MobileAppAsset? mobileAppAsset,
-    $2137.HotelCalloutAsset? hotelCalloutAsset,
-    $2137.CallAsset? callAsset,
-    $2137.PriceAsset? priceAsset,
-    $2137.CallToActionAsset? callToActionAsset,
-    $2137.DynamicRealEstateAsset? dynamicRealEstateAsset,
-    $2137.DynamicCustomAsset? dynamicCustomAsset,
-    $2137.DynamicHotelsAndRentalsAsset? dynamicHotelsAndRentalsAsset,
-    $2137.DynamicFlightsAsset? dynamicFlightsAsset,
-    $2137.DiscoveryCarouselCardAsset? discoveryCarouselCardAsset,
-    $2137.DynamicTravelAsset? dynamicTravelAsset,
-    $2137.DynamicLocalAsset? dynamicLocalAsset,
-    $2137.DynamicJobsAsset? dynamicJobsAsset,
-    $2118.AssetSourceEnum_AssetSource? source,
-    $2137.LocationAsset? locationAsset,
+    $2138.CalloutAsset? calloutAsset,
+    $2138.StructuredSnippetAsset? structuredSnippetAsset,
+    $2138.SitelinkAsset? sitelinkAsset,
+    $2138.PageFeedAsset? pageFeedAsset,
+    $2138.DynamicEducationAsset? dynamicEducationAsset,
+    $2138.MobileAppAsset? mobileAppAsset,
+    $2138.HotelCalloutAsset? hotelCalloutAsset,
+    $2138.CallAsset? callAsset,
+    $2138.PriceAsset? priceAsset,
+    $2138.CallToActionAsset? callToActionAsset,
+    $2138.DynamicRealEstateAsset? dynamicRealEstateAsset,
+    $2138.DynamicCustomAsset? dynamicCustomAsset,
+    $2138.DynamicHotelsAndRentalsAsset? dynamicHotelsAndRentalsAsset,
+    $2138.DynamicFlightsAsset? dynamicFlightsAsset,
+    $2138.DiscoveryCarouselCardAsset? discoveryCarouselCardAsset,
+    $2138.DynamicTravelAsset? dynamicTravelAsset,
+    $2138.DynamicLocalAsset? dynamicLocalAsset,
+    $2138.DynamicJobsAsset? dynamicJobsAsset,
+    $2119.AssetSourceEnum_AssetSource? source,
+    $2138.LocationAsset? locationAsset,
     $core.Iterable<AssetFieldTypePolicySummary>? fieldTypePolicySummaries,
-    $2137.HotelPropertyAsset? hotelPropertyAsset,
+    $2138.HotelPropertyAsset? hotelPropertyAsset,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -257,44 +257,44 @@ class Asset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..oo(0, [5, 6, 7, 8, 9, 10, 15, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, 41])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2138.AssetTypeEnum_AssetType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2138.AssetTypeEnum_AssetType.UNSPECIFIED, valueOf: $2138.AssetTypeEnum_AssetType.valueOf, enumValues: $2138.AssetTypeEnum_AssetType.values)
-    ..aOM<$2137.YoutubeVideoAsset>(5, _omitFieldNames ? '' : 'youtubeVideoAsset', subBuilder: $2137.YoutubeVideoAsset.create)
-    ..aOM<$2137.MediaBundleAsset>(6, _omitFieldNames ? '' : 'mediaBundleAsset', subBuilder: $2137.MediaBundleAsset.create)
-    ..aOM<$2137.ImageAsset>(7, _omitFieldNames ? '' : 'imageAsset', subBuilder: $2137.ImageAsset.create)
-    ..aOM<$2137.TextAsset>(8, _omitFieldNames ? '' : 'textAsset', subBuilder: $2137.TextAsset.create)
-    ..aOM<$2137.LeadFormAsset>(9, _omitFieldNames ? '' : 'leadFormAsset', subBuilder: $2137.LeadFormAsset.create)
-    ..aOM<$2137.BookOnGoogleAsset>(10, _omitFieldNames ? '' : 'bookOnGoogleAsset', subBuilder: $2137.BookOnGoogleAsset.create)
+    ..e<$2139.AssetTypeEnum_AssetType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2139.AssetTypeEnum_AssetType.UNSPECIFIED, valueOf: $2139.AssetTypeEnum_AssetType.valueOf, enumValues: $2139.AssetTypeEnum_AssetType.values)
+    ..aOM<$2138.YoutubeVideoAsset>(5, _omitFieldNames ? '' : 'youtubeVideoAsset', subBuilder: $2138.YoutubeVideoAsset.create)
+    ..aOM<$2138.MediaBundleAsset>(6, _omitFieldNames ? '' : 'mediaBundleAsset', subBuilder: $2138.MediaBundleAsset.create)
+    ..aOM<$2138.ImageAsset>(7, _omitFieldNames ? '' : 'imageAsset', subBuilder: $2138.ImageAsset.create)
+    ..aOM<$2138.TextAsset>(8, _omitFieldNames ? '' : 'textAsset', subBuilder: $2138.TextAsset.create)
+    ..aOM<$2138.LeadFormAsset>(9, _omitFieldNames ? '' : 'leadFormAsset', subBuilder: $2138.LeadFormAsset.create)
+    ..aOM<$2138.BookOnGoogleAsset>(10, _omitFieldNames ? '' : 'bookOnGoogleAsset', subBuilder: $2138.BookOnGoogleAsset.create)
     ..aInt64(11, _omitFieldNames ? '' : 'id')
     ..aOS(12, _omitFieldNames ? '' : 'name')
     ..aOM<AssetPolicySummary>(13, _omitFieldNames ? '' : 'policySummary', subBuilder: AssetPolicySummary.create)
     ..pPS(14, _omitFieldNames ? '' : 'finalUrls')
-    ..aOM<$2137.PromotionAsset>(15, _omitFieldNames ? '' : 'promotionAsset', subBuilder: $2137.PromotionAsset.create)
+    ..aOM<$2138.PromotionAsset>(15, _omitFieldNames ? '' : 'promotionAsset', subBuilder: $2138.PromotionAsset.create)
     ..pPS(16, _omitFieldNames ? '' : 'finalMobileUrls')
     ..aOS(17, _omitFieldNames ? '' : 'trackingUrlTemplate')
-    ..pc<$1888.CustomParameter>(18, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1888.CustomParameter.create)
+    ..pc<$1889.CustomParameter>(18, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1889.CustomParameter.create)
     ..aOS(19, _omitFieldNames ? '' : 'finalUrlSuffix')
-    ..aOM<$2137.CalloutAsset>(20, _omitFieldNames ? '' : 'calloutAsset', subBuilder: $2137.CalloutAsset.create)
-    ..aOM<$2137.StructuredSnippetAsset>(21, _omitFieldNames ? '' : 'structuredSnippetAsset', subBuilder: $2137.StructuredSnippetAsset.create)
-    ..aOM<$2137.SitelinkAsset>(22, _omitFieldNames ? '' : 'sitelinkAsset', subBuilder: $2137.SitelinkAsset.create)
-    ..aOM<$2137.PageFeedAsset>(23, _omitFieldNames ? '' : 'pageFeedAsset', subBuilder: $2137.PageFeedAsset.create)
-    ..aOM<$2137.DynamicEducationAsset>(24, _omitFieldNames ? '' : 'dynamicEducationAsset', subBuilder: $2137.DynamicEducationAsset.create)
-    ..aOM<$2137.MobileAppAsset>(25, _omitFieldNames ? '' : 'mobileAppAsset', subBuilder: $2137.MobileAppAsset.create)
-    ..aOM<$2137.HotelCalloutAsset>(26, _omitFieldNames ? '' : 'hotelCalloutAsset', subBuilder: $2137.HotelCalloutAsset.create)
-    ..aOM<$2137.CallAsset>(27, _omitFieldNames ? '' : 'callAsset', subBuilder: $2137.CallAsset.create)
-    ..aOM<$2137.PriceAsset>(28, _omitFieldNames ? '' : 'priceAsset', subBuilder: $2137.PriceAsset.create)
-    ..aOM<$2137.CallToActionAsset>(29, _omitFieldNames ? '' : 'callToActionAsset', subBuilder: $2137.CallToActionAsset.create)
-    ..aOM<$2137.DynamicRealEstateAsset>(30, _omitFieldNames ? '' : 'dynamicRealEstateAsset', subBuilder: $2137.DynamicRealEstateAsset.create)
-    ..aOM<$2137.DynamicCustomAsset>(31, _omitFieldNames ? '' : 'dynamicCustomAsset', subBuilder: $2137.DynamicCustomAsset.create)
-    ..aOM<$2137.DynamicHotelsAndRentalsAsset>(32, _omitFieldNames ? '' : 'dynamicHotelsAndRentalsAsset', subBuilder: $2137.DynamicHotelsAndRentalsAsset.create)
-    ..aOM<$2137.DynamicFlightsAsset>(33, _omitFieldNames ? '' : 'dynamicFlightsAsset', subBuilder: $2137.DynamicFlightsAsset.create)
-    ..aOM<$2137.DiscoveryCarouselCardAsset>(34, _omitFieldNames ? '' : 'discoveryCarouselCardAsset', subBuilder: $2137.DiscoveryCarouselCardAsset.create)
-    ..aOM<$2137.DynamicTravelAsset>(35, _omitFieldNames ? '' : 'dynamicTravelAsset', subBuilder: $2137.DynamicTravelAsset.create)
-    ..aOM<$2137.DynamicLocalAsset>(36, _omitFieldNames ? '' : 'dynamicLocalAsset', subBuilder: $2137.DynamicLocalAsset.create)
-    ..aOM<$2137.DynamicJobsAsset>(37, _omitFieldNames ? '' : 'dynamicJobsAsset', subBuilder: $2137.DynamicJobsAsset.create)
-    ..e<$2118.AssetSourceEnum_AssetSource>(38, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2118.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2118.AssetSourceEnum_AssetSource.valueOf, enumValues: $2118.AssetSourceEnum_AssetSource.values)
-    ..aOM<$2137.LocationAsset>(39, _omitFieldNames ? '' : 'locationAsset', subBuilder: $2137.LocationAsset.create)
+    ..aOM<$2138.CalloutAsset>(20, _omitFieldNames ? '' : 'calloutAsset', subBuilder: $2138.CalloutAsset.create)
+    ..aOM<$2138.StructuredSnippetAsset>(21, _omitFieldNames ? '' : 'structuredSnippetAsset', subBuilder: $2138.StructuredSnippetAsset.create)
+    ..aOM<$2138.SitelinkAsset>(22, _omitFieldNames ? '' : 'sitelinkAsset', subBuilder: $2138.SitelinkAsset.create)
+    ..aOM<$2138.PageFeedAsset>(23, _omitFieldNames ? '' : 'pageFeedAsset', subBuilder: $2138.PageFeedAsset.create)
+    ..aOM<$2138.DynamicEducationAsset>(24, _omitFieldNames ? '' : 'dynamicEducationAsset', subBuilder: $2138.DynamicEducationAsset.create)
+    ..aOM<$2138.MobileAppAsset>(25, _omitFieldNames ? '' : 'mobileAppAsset', subBuilder: $2138.MobileAppAsset.create)
+    ..aOM<$2138.HotelCalloutAsset>(26, _omitFieldNames ? '' : 'hotelCalloutAsset', subBuilder: $2138.HotelCalloutAsset.create)
+    ..aOM<$2138.CallAsset>(27, _omitFieldNames ? '' : 'callAsset', subBuilder: $2138.CallAsset.create)
+    ..aOM<$2138.PriceAsset>(28, _omitFieldNames ? '' : 'priceAsset', subBuilder: $2138.PriceAsset.create)
+    ..aOM<$2138.CallToActionAsset>(29, _omitFieldNames ? '' : 'callToActionAsset', subBuilder: $2138.CallToActionAsset.create)
+    ..aOM<$2138.DynamicRealEstateAsset>(30, _omitFieldNames ? '' : 'dynamicRealEstateAsset', subBuilder: $2138.DynamicRealEstateAsset.create)
+    ..aOM<$2138.DynamicCustomAsset>(31, _omitFieldNames ? '' : 'dynamicCustomAsset', subBuilder: $2138.DynamicCustomAsset.create)
+    ..aOM<$2138.DynamicHotelsAndRentalsAsset>(32, _omitFieldNames ? '' : 'dynamicHotelsAndRentalsAsset', subBuilder: $2138.DynamicHotelsAndRentalsAsset.create)
+    ..aOM<$2138.DynamicFlightsAsset>(33, _omitFieldNames ? '' : 'dynamicFlightsAsset', subBuilder: $2138.DynamicFlightsAsset.create)
+    ..aOM<$2138.DiscoveryCarouselCardAsset>(34, _omitFieldNames ? '' : 'discoveryCarouselCardAsset', subBuilder: $2138.DiscoveryCarouselCardAsset.create)
+    ..aOM<$2138.DynamicTravelAsset>(35, _omitFieldNames ? '' : 'dynamicTravelAsset', subBuilder: $2138.DynamicTravelAsset.create)
+    ..aOM<$2138.DynamicLocalAsset>(36, _omitFieldNames ? '' : 'dynamicLocalAsset', subBuilder: $2138.DynamicLocalAsset.create)
+    ..aOM<$2138.DynamicJobsAsset>(37, _omitFieldNames ? '' : 'dynamicJobsAsset', subBuilder: $2138.DynamicJobsAsset.create)
+    ..e<$2119.AssetSourceEnum_AssetSource>(38, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2119.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2119.AssetSourceEnum_AssetSource.valueOf, enumValues: $2119.AssetSourceEnum_AssetSource.values)
+    ..aOM<$2138.LocationAsset>(39, _omitFieldNames ? '' : 'locationAsset', subBuilder: $2138.LocationAsset.create)
     ..pc<AssetFieldTypePolicySummary>(40, _omitFieldNames ? '' : 'fieldTypePolicySummaries', $pb.PbFieldType.PM, subBuilder: AssetFieldTypePolicySummary.create)
-    ..aOM<$2137.HotelPropertyAsset>(41, _omitFieldNames ? '' : 'hotelPropertyAsset', subBuilder: $2137.HotelPropertyAsset.create)
+    ..aOM<$2138.HotelPropertyAsset>(41, _omitFieldNames ? '' : 'hotelPropertyAsset', subBuilder: $2138.HotelPropertyAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -337,9 +337,9 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Output only. Type of the asset.
   @$pb.TagNumber(4)
-  $2138.AssetTypeEnum_AssetType get type => $_getN(1);
+  $2139.AssetTypeEnum_AssetType get type => $_getN(1);
   @$pb.TagNumber(4)
-  set type($2138.AssetTypeEnum_AssetType v) { setField(4, v); }
+  set type($2139.AssetTypeEnum_AssetType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(4)
@@ -347,75 +347,75 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Immutable. A YouTube video asset.
   @$pb.TagNumber(5)
-  $2137.YoutubeVideoAsset get youtubeVideoAsset => $_getN(2);
+  $2138.YoutubeVideoAsset get youtubeVideoAsset => $_getN(2);
   @$pb.TagNumber(5)
-  set youtubeVideoAsset($2137.YoutubeVideoAsset v) { setField(5, v); }
+  set youtubeVideoAsset($2138.YoutubeVideoAsset v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasYoutubeVideoAsset() => $_has(2);
   @$pb.TagNumber(5)
   void clearYoutubeVideoAsset() => clearField(5);
   @$pb.TagNumber(5)
-  $2137.YoutubeVideoAsset ensureYoutubeVideoAsset() => $_ensure(2);
+  $2138.YoutubeVideoAsset ensureYoutubeVideoAsset() => $_ensure(2);
 
   /// Immutable. A media bundle asset.
   @$pb.TagNumber(6)
-  $2137.MediaBundleAsset get mediaBundleAsset => $_getN(3);
+  $2138.MediaBundleAsset get mediaBundleAsset => $_getN(3);
   @$pb.TagNumber(6)
-  set mediaBundleAsset($2137.MediaBundleAsset v) { setField(6, v); }
+  set mediaBundleAsset($2138.MediaBundleAsset v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMediaBundleAsset() => $_has(3);
   @$pb.TagNumber(6)
   void clearMediaBundleAsset() => clearField(6);
   @$pb.TagNumber(6)
-  $2137.MediaBundleAsset ensureMediaBundleAsset() => $_ensure(3);
+  $2138.MediaBundleAsset ensureMediaBundleAsset() => $_ensure(3);
 
   /// Output only. An image asset.
   @$pb.TagNumber(7)
-  $2137.ImageAsset get imageAsset => $_getN(4);
+  $2138.ImageAsset get imageAsset => $_getN(4);
   @$pb.TagNumber(7)
-  set imageAsset($2137.ImageAsset v) { setField(7, v); }
+  set imageAsset($2138.ImageAsset v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasImageAsset() => $_has(4);
   @$pb.TagNumber(7)
   void clearImageAsset() => clearField(7);
   @$pb.TagNumber(7)
-  $2137.ImageAsset ensureImageAsset() => $_ensure(4);
+  $2138.ImageAsset ensureImageAsset() => $_ensure(4);
 
   /// Immutable. A text asset.
   @$pb.TagNumber(8)
-  $2137.TextAsset get textAsset => $_getN(5);
+  $2138.TextAsset get textAsset => $_getN(5);
   @$pb.TagNumber(8)
-  set textAsset($2137.TextAsset v) { setField(8, v); }
+  set textAsset($2138.TextAsset v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTextAsset() => $_has(5);
   @$pb.TagNumber(8)
   void clearTextAsset() => clearField(8);
   @$pb.TagNumber(8)
-  $2137.TextAsset ensureTextAsset() => $_ensure(5);
+  $2138.TextAsset ensureTextAsset() => $_ensure(5);
 
   /// A lead form asset.
   @$pb.TagNumber(9)
-  $2137.LeadFormAsset get leadFormAsset => $_getN(6);
+  $2138.LeadFormAsset get leadFormAsset => $_getN(6);
   @$pb.TagNumber(9)
-  set leadFormAsset($2137.LeadFormAsset v) { setField(9, v); }
+  set leadFormAsset($2138.LeadFormAsset v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasLeadFormAsset() => $_has(6);
   @$pb.TagNumber(9)
   void clearLeadFormAsset() => clearField(9);
   @$pb.TagNumber(9)
-  $2137.LeadFormAsset ensureLeadFormAsset() => $_ensure(6);
+  $2138.LeadFormAsset ensureLeadFormAsset() => $_ensure(6);
 
   /// A book on google asset.
   @$pb.TagNumber(10)
-  $2137.BookOnGoogleAsset get bookOnGoogleAsset => $_getN(7);
+  $2138.BookOnGoogleAsset get bookOnGoogleAsset => $_getN(7);
   @$pb.TagNumber(10)
-  set bookOnGoogleAsset($2137.BookOnGoogleAsset v) { setField(10, v); }
+  set bookOnGoogleAsset($2138.BookOnGoogleAsset v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBookOnGoogleAsset() => $_has(7);
   @$pb.TagNumber(10)
   void clearBookOnGoogleAsset() => clearField(10);
   @$pb.TagNumber(10)
-  $2137.BookOnGoogleAsset ensureBookOnGoogleAsset() => $_ensure(7);
+  $2138.BookOnGoogleAsset ensureBookOnGoogleAsset() => $_ensure(7);
 
   /// Output only. The ID of the asset.
   @$pb.TagNumber(11)
@@ -455,15 +455,15 @@ class Asset extends $pb.GeneratedMessage {
 
   /// A promotion asset.
   @$pb.TagNumber(15)
-  $2137.PromotionAsset get promotionAsset => $_getN(12);
+  $2138.PromotionAsset get promotionAsset => $_getN(12);
   @$pb.TagNumber(15)
-  set promotionAsset($2137.PromotionAsset v) { setField(15, v); }
+  set promotionAsset($2138.PromotionAsset v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasPromotionAsset() => $_has(12);
   @$pb.TagNumber(15)
   void clearPromotionAsset() => clearField(15);
   @$pb.TagNumber(15)
-  $2137.PromotionAsset ensurePromotionAsset() => $_ensure(12);
+  $2138.PromotionAsset ensurePromotionAsset() => $_ensure(12);
 
   /// A list of possible final mobile URLs after all cross domain redirects.
   @$pb.TagNumber(16)
@@ -482,7 +482,7 @@ class Asset extends $pb.GeneratedMessage {
   /// A list of mappings to be used for substituting URL custom parameter tags in
   /// the tracking_url_template, final_urls, and/or final_mobile_urls.
   @$pb.TagNumber(18)
-  $core.List<$1888.CustomParameter> get urlCustomParameters => $_getList(15);
+  $core.List<$1889.CustomParameter> get urlCustomParameters => $_getList(15);
 
   /// URL template for appending params to landing page URLs served with parallel
   /// tracking.
@@ -497,225 +497,225 @@ class Asset extends $pb.GeneratedMessage {
 
   /// A callout asset.
   @$pb.TagNumber(20)
-  $2137.CalloutAsset get calloutAsset => $_getN(17);
+  $2138.CalloutAsset get calloutAsset => $_getN(17);
   @$pb.TagNumber(20)
-  set calloutAsset($2137.CalloutAsset v) { setField(20, v); }
+  set calloutAsset($2138.CalloutAsset v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasCalloutAsset() => $_has(17);
   @$pb.TagNumber(20)
   void clearCalloutAsset() => clearField(20);
   @$pb.TagNumber(20)
-  $2137.CalloutAsset ensureCalloutAsset() => $_ensure(17);
+  $2138.CalloutAsset ensureCalloutAsset() => $_ensure(17);
 
   /// A structured snippet asset.
   @$pb.TagNumber(21)
-  $2137.StructuredSnippetAsset get structuredSnippetAsset => $_getN(18);
+  $2138.StructuredSnippetAsset get structuredSnippetAsset => $_getN(18);
   @$pb.TagNumber(21)
-  set structuredSnippetAsset($2137.StructuredSnippetAsset v) { setField(21, v); }
+  set structuredSnippetAsset($2138.StructuredSnippetAsset v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasStructuredSnippetAsset() => $_has(18);
   @$pb.TagNumber(21)
   void clearStructuredSnippetAsset() => clearField(21);
   @$pb.TagNumber(21)
-  $2137.StructuredSnippetAsset ensureStructuredSnippetAsset() => $_ensure(18);
+  $2138.StructuredSnippetAsset ensureStructuredSnippetAsset() => $_ensure(18);
 
   /// A sitelink asset.
   @$pb.TagNumber(22)
-  $2137.SitelinkAsset get sitelinkAsset => $_getN(19);
+  $2138.SitelinkAsset get sitelinkAsset => $_getN(19);
   @$pb.TagNumber(22)
-  set sitelinkAsset($2137.SitelinkAsset v) { setField(22, v); }
+  set sitelinkAsset($2138.SitelinkAsset v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasSitelinkAsset() => $_has(19);
   @$pb.TagNumber(22)
   void clearSitelinkAsset() => clearField(22);
   @$pb.TagNumber(22)
-  $2137.SitelinkAsset ensureSitelinkAsset() => $_ensure(19);
+  $2138.SitelinkAsset ensureSitelinkAsset() => $_ensure(19);
 
   /// A page feed asset.
   @$pb.TagNumber(23)
-  $2137.PageFeedAsset get pageFeedAsset => $_getN(20);
+  $2138.PageFeedAsset get pageFeedAsset => $_getN(20);
   @$pb.TagNumber(23)
-  set pageFeedAsset($2137.PageFeedAsset v) { setField(23, v); }
+  set pageFeedAsset($2138.PageFeedAsset v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasPageFeedAsset() => $_has(20);
   @$pb.TagNumber(23)
   void clearPageFeedAsset() => clearField(23);
   @$pb.TagNumber(23)
-  $2137.PageFeedAsset ensurePageFeedAsset() => $_ensure(20);
+  $2138.PageFeedAsset ensurePageFeedAsset() => $_ensure(20);
 
   /// A dynamic education asset.
   @$pb.TagNumber(24)
-  $2137.DynamicEducationAsset get dynamicEducationAsset => $_getN(21);
+  $2138.DynamicEducationAsset get dynamicEducationAsset => $_getN(21);
   @$pb.TagNumber(24)
-  set dynamicEducationAsset($2137.DynamicEducationAsset v) { setField(24, v); }
+  set dynamicEducationAsset($2138.DynamicEducationAsset v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasDynamicEducationAsset() => $_has(21);
   @$pb.TagNumber(24)
   void clearDynamicEducationAsset() => clearField(24);
   @$pb.TagNumber(24)
-  $2137.DynamicEducationAsset ensureDynamicEducationAsset() => $_ensure(21);
+  $2138.DynamicEducationAsset ensureDynamicEducationAsset() => $_ensure(21);
 
   /// A mobile app asset.
   @$pb.TagNumber(25)
-  $2137.MobileAppAsset get mobileAppAsset => $_getN(22);
+  $2138.MobileAppAsset get mobileAppAsset => $_getN(22);
   @$pb.TagNumber(25)
-  set mobileAppAsset($2137.MobileAppAsset v) { setField(25, v); }
+  set mobileAppAsset($2138.MobileAppAsset v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasMobileAppAsset() => $_has(22);
   @$pb.TagNumber(25)
   void clearMobileAppAsset() => clearField(25);
   @$pb.TagNumber(25)
-  $2137.MobileAppAsset ensureMobileAppAsset() => $_ensure(22);
+  $2138.MobileAppAsset ensureMobileAppAsset() => $_ensure(22);
 
   /// A hotel callout asset.
   @$pb.TagNumber(26)
-  $2137.HotelCalloutAsset get hotelCalloutAsset => $_getN(23);
+  $2138.HotelCalloutAsset get hotelCalloutAsset => $_getN(23);
   @$pb.TagNumber(26)
-  set hotelCalloutAsset($2137.HotelCalloutAsset v) { setField(26, v); }
+  set hotelCalloutAsset($2138.HotelCalloutAsset v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasHotelCalloutAsset() => $_has(23);
   @$pb.TagNumber(26)
   void clearHotelCalloutAsset() => clearField(26);
   @$pb.TagNumber(26)
-  $2137.HotelCalloutAsset ensureHotelCalloutAsset() => $_ensure(23);
+  $2138.HotelCalloutAsset ensureHotelCalloutAsset() => $_ensure(23);
 
   /// A call asset.
   @$pb.TagNumber(27)
-  $2137.CallAsset get callAsset => $_getN(24);
+  $2138.CallAsset get callAsset => $_getN(24);
   @$pb.TagNumber(27)
-  set callAsset($2137.CallAsset v) { setField(27, v); }
+  set callAsset($2138.CallAsset v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasCallAsset() => $_has(24);
   @$pb.TagNumber(27)
   void clearCallAsset() => clearField(27);
   @$pb.TagNumber(27)
-  $2137.CallAsset ensureCallAsset() => $_ensure(24);
+  $2138.CallAsset ensureCallAsset() => $_ensure(24);
 
   /// A price asset.
   @$pb.TagNumber(28)
-  $2137.PriceAsset get priceAsset => $_getN(25);
+  $2138.PriceAsset get priceAsset => $_getN(25);
   @$pb.TagNumber(28)
-  set priceAsset($2137.PriceAsset v) { setField(28, v); }
+  set priceAsset($2138.PriceAsset v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasPriceAsset() => $_has(25);
   @$pb.TagNumber(28)
   void clearPriceAsset() => clearField(28);
   @$pb.TagNumber(28)
-  $2137.PriceAsset ensurePriceAsset() => $_ensure(25);
+  $2138.PriceAsset ensurePriceAsset() => $_ensure(25);
 
   /// Immutable. A call to action asset.
   @$pb.TagNumber(29)
-  $2137.CallToActionAsset get callToActionAsset => $_getN(26);
+  $2138.CallToActionAsset get callToActionAsset => $_getN(26);
   @$pb.TagNumber(29)
-  set callToActionAsset($2137.CallToActionAsset v) { setField(29, v); }
+  set callToActionAsset($2138.CallToActionAsset v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasCallToActionAsset() => $_has(26);
   @$pb.TagNumber(29)
   void clearCallToActionAsset() => clearField(29);
   @$pb.TagNumber(29)
-  $2137.CallToActionAsset ensureCallToActionAsset() => $_ensure(26);
+  $2138.CallToActionAsset ensureCallToActionAsset() => $_ensure(26);
 
   /// A dynamic real estate asset.
   @$pb.TagNumber(30)
-  $2137.DynamicRealEstateAsset get dynamicRealEstateAsset => $_getN(27);
+  $2138.DynamicRealEstateAsset get dynamicRealEstateAsset => $_getN(27);
   @$pb.TagNumber(30)
-  set dynamicRealEstateAsset($2137.DynamicRealEstateAsset v) { setField(30, v); }
+  set dynamicRealEstateAsset($2138.DynamicRealEstateAsset v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasDynamicRealEstateAsset() => $_has(27);
   @$pb.TagNumber(30)
   void clearDynamicRealEstateAsset() => clearField(30);
   @$pb.TagNumber(30)
-  $2137.DynamicRealEstateAsset ensureDynamicRealEstateAsset() => $_ensure(27);
+  $2138.DynamicRealEstateAsset ensureDynamicRealEstateAsset() => $_ensure(27);
 
   /// A dynamic custom asset.
   @$pb.TagNumber(31)
-  $2137.DynamicCustomAsset get dynamicCustomAsset => $_getN(28);
+  $2138.DynamicCustomAsset get dynamicCustomAsset => $_getN(28);
   @$pb.TagNumber(31)
-  set dynamicCustomAsset($2137.DynamicCustomAsset v) { setField(31, v); }
+  set dynamicCustomAsset($2138.DynamicCustomAsset v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasDynamicCustomAsset() => $_has(28);
   @$pb.TagNumber(31)
   void clearDynamicCustomAsset() => clearField(31);
   @$pb.TagNumber(31)
-  $2137.DynamicCustomAsset ensureDynamicCustomAsset() => $_ensure(28);
+  $2138.DynamicCustomAsset ensureDynamicCustomAsset() => $_ensure(28);
 
   /// A dynamic hotels and rentals asset.
   @$pb.TagNumber(32)
-  $2137.DynamicHotelsAndRentalsAsset get dynamicHotelsAndRentalsAsset => $_getN(29);
+  $2138.DynamicHotelsAndRentalsAsset get dynamicHotelsAndRentalsAsset => $_getN(29);
   @$pb.TagNumber(32)
-  set dynamicHotelsAndRentalsAsset($2137.DynamicHotelsAndRentalsAsset v) { setField(32, v); }
+  set dynamicHotelsAndRentalsAsset($2138.DynamicHotelsAndRentalsAsset v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasDynamicHotelsAndRentalsAsset() => $_has(29);
   @$pb.TagNumber(32)
   void clearDynamicHotelsAndRentalsAsset() => clearField(32);
   @$pb.TagNumber(32)
-  $2137.DynamicHotelsAndRentalsAsset ensureDynamicHotelsAndRentalsAsset() => $_ensure(29);
+  $2138.DynamicHotelsAndRentalsAsset ensureDynamicHotelsAndRentalsAsset() => $_ensure(29);
 
   /// A dynamic flights asset.
   @$pb.TagNumber(33)
-  $2137.DynamicFlightsAsset get dynamicFlightsAsset => $_getN(30);
+  $2138.DynamicFlightsAsset get dynamicFlightsAsset => $_getN(30);
   @$pb.TagNumber(33)
-  set dynamicFlightsAsset($2137.DynamicFlightsAsset v) { setField(33, v); }
+  set dynamicFlightsAsset($2138.DynamicFlightsAsset v) { setField(33, v); }
   @$pb.TagNumber(33)
   $core.bool hasDynamicFlightsAsset() => $_has(30);
   @$pb.TagNumber(33)
   void clearDynamicFlightsAsset() => clearField(33);
   @$pb.TagNumber(33)
-  $2137.DynamicFlightsAsset ensureDynamicFlightsAsset() => $_ensure(30);
+  $2138.DynamicFlightsAsset ensureDynamicFlightsAsset() => $_ensure(30);
 
   /// Immutable. A discovery carousel card asset.
   @$pb.TagNumber(34)
-  $2137.DiscoveryCarouselCardAsset get discoveryCarouselCardAsset => $_getN(31);
+  $2138.DiscoveryCarouselCardAsset get discoveryCarouselCardAsset => $_getN(31);
   @$pb.TagNumber(34)
-  set discoveryCarouselCardAsset($2137.DiscoveryCarouselCardAsset v) { setField(34, v); }
+  set discoveryCarouselCardAsset($2138.DiscoveryCarouselCardAsset v) { setField(34, v); }
   @$pb.TagNumber(34)
   $core.bool hasDiscoveryCarouselCardAsset() => $_has(31);
   @$pb.TagNumber(34)
   void clearDiscoveryCarouselCardAsset() => clearField(34);
   @$pb.TagNumber(34)
-  $2137.DiscoveryCarouselCardAsset ensureDiscoveryCarouselCardAsset() => $_ensure(31);
+  $2138.DiscoveryCarouselCardAsset ensureDiscoveryCarouselCardAsset() => $_ensure(31);
 
   /// A dynamic travel asset.
   @$pb.TagNumber(35)
-  $2137.DynamicTravelAsset get dynamicTravelAsset => $_getN(32);
+  $2138.DynamicTravelAsset get dynamicTravelAsset => $_getN(32);
   @$pb.TagNumber(35)
-  set dynamicTravelAsset($2137.DynamicTravelAsset v) { setField(35, v); }
+  set dynamicTravelAsset($2138.DynamicTravelAsset v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasDynamicTravelAsset() => $_has(32);
   @$pb.TagNumber(35)
   void clearDynamicTravelAsset() => clearField(35);
   @$pb.TagNumber(35)
-  $2137.DynamicTravelAsset ensureDynamicTravelAsset() => $_ensure(32);
+  $2138.DynamicTravelAsset ensureDynamicTravelAsset() => $_ensure(32);
 
   /// A dynamic local asset.
   @$pb.TagNumber(36)
-  $2137.DynamicLocalAsset get dynamicLocalAsset => $_getN(33);
+  $2138.DynamicLocalAsset get dynamicLocalAsset => $_getN(33);
   @$pb.TagNumber(36)
-  set dynamicLocalAsset($2137.DynamicLocalAsset v) { setField(36, v); }
+  set dynamicLocalAsset($2138.DynamicLocalAsset v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasDynamicLocalAsset() => $_has(33);
   @$pb.TagNumber(36)
   void clearDynamicLocalAsset() => clearField(36);
   @$pb.TagNumber(36)
-  $2137.DynamicLocalAsset ensureDynamicLocalAsset() => $_ensure(33);
+  $2138.DynamicLocalAsset ensureDynamicLocalAsset() => $_ensure(33);
 
   /// A dynamic jobs asset.
   @$pb.TagNumber(37)
-  $2137.DynamicJobsAsset get dynamicJobsAsset => $_getN(34);
+  $2138.DynamicJobsAsset get dynamicJobsAsset => $_getN(34);
   @$pb.TagNumber(37)
-  set dynamicJobsAsset($2137.DynamicJobsAsset v) { setField(37, v); }
+  set dynamicJobsAsset($2138.DynamicJobsAsset v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasDynamicJobsAsset() => $_has(34);
   @$pb.TagNumber(37)
   void clearDynamicJobsAsset() => clearField(37);
   @$pb.TagNumber(37)
-  $2137.DynamicJobsAsset ensureDynamicJobsAsset() => $_ensure(34);
+  $2138.DynamicJobsAsset ensureDynamicJobsAsset() => $_ensure(34);
 
   /// Output only. Source of the asset.
   @$pb.TagNumber(38)
-  $2118.AssetSourceEnum_AssetSource get source => $_getN(35);
+  $2119.AssetSourceEnum_AssetSource get source => $_getN(35);
   @$pb.TagNumber(38)
-  set source($2118.AssetSourceEnum_AssetSource v) { setField(38, v); }
+  set source($2119.AssetSourceEnum_AssetSource v) { setField(38, v); }
   @$pb.TagNumber(38)
   $core.bool hasSource() => $_has(35);
   @$pb.TagNumber(38)
@@ -723,15 +723,15 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Output only. A location asset.
   @$pb.TagNumber(39)
-  $2137.LocationAsset get locationAsset => $_getN(36);
+  $2138.LocationAsset get locationAsset => $_getN(36);
   @$pb.TagNumber(39)
-  set locationAsset($2137.LocationAsset v) { setField(39, v); }
+  set locationAsset($2138.LocationAsset v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasLocationAsset() => $_has(36);
   @$pb.TagNumber(39)
   void clearLocationAsset() => clearField(39);
   @$pb.TagNumber(39)
-  $2137.LocationAsset ensureLocationAsset() => $_ensure(36);
+  $2138.LocationAsset ensureLocationAsset() => $_ensure(36);
 
   /// Output only. Policy information for the asset for each FieldType.
   @$pb.TagNumber(40)
@@ -739,22 +739,22 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Immutable. A hotel property asset.
   @$pb.TagNumber(41)
-  $2137.HotelPropertyAsset get hotelPropertyAsset => $_getN(38);
+  $2138.HotelPropertyAsset get hotelPropertyAsset => $_getN(38);
   @$pb.TagNumber(41)
-  set hotelPropertyAsset($2137.HotelPropertyAsset v) { setField(41, v); }
+  set hotelPropertyAsset($2138.HotelPropertyAsset v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasHotelPropertyAsset() => $_has(38);
   @$pb.TagNumber(41)
   void clearHotelPropertyAsset() => clearField(41);
   @$pb.TagNumber(41)
-  $2137.HotelPropertyAsset ensureHotelPropertyAsset() => $_ensure(38);
+  $2138.HotelPropertyAsset ensureHotelPropertyAsset() => $_ensure(38);
 }
 
 /// Contains policy information for an asset under AssetFieldType context.
 class AssetFieldTypePolicySummary extends $pb.GeneratedMessage {
   factory AssetFieldTypePolicySummary({
-    $2113.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
-    $2118.AssetSourceEnum_AssetSource? assetSource,
+    $2114.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
+    $2119.AssetSourceEnum_AssetSource? assetSource,
     AssetPolicySummary? policySummaryInfo,
   }) {
     final $result = create();
@@ -774,8 +774,8 @@ class AssetFieldTypePolicySummary extends $pb.GeneratedMessage {
   factory AssetFieldTypePolicySummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetFieldTypePolicySummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
-    ..e<$2113.AssetFieldTypeEnum_AssetFieldType>(1, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $2113.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2113.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2113.AssetFieldTypeEnum_AssetFieldType.values)
-    ..e<$2118.AssetSourceEnum_AssetSource>(2, _omitFieldNames ? '' : 'assetSource', $pb.PbFieldType.OE, defaultOrMaker: $2118.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2118.AssetSourceEnum_AssetSource.valueOf, enumValues: $2118.AssetSourceEnum_AssetSource.values)
+    ..e<$2114.AssetFieldTypeEnum_AssetFieldType>(1, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $2114.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2114.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2114.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$2119.AssetSourceEnum_AssetSource>(2, _omitFieldNames ? '' : 'assetSource', $pb.PbFieldType.OE, defaultOrMaker: $2119.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2119.AssetSourceEnum_AssetSource.valueOf, enumValues: $2119.AssetSourceEnum_AssetSource.values)
     ..aOM<AssetPolicySummary>(3, _omitFieldNames ? '' : 'policySummaryInfo', subBuilder: AssetPolicySummary.create)
     ..hasRequiredFields = false
   ;
@@ -803,9 +803,9 @@ class AssetFieldTypePolicySummary extends $pb.GeneratedMessage {
 
   /// Output only. FieldType of this asset.
   @$pb.TagNumber(1)
-  $2113.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(0);
+  $2114.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(0);
   @$pb.TagNumber(1)
-  set assetFieldType($2113.AssetFieldTypeEnum_AssetFieldType v) { setField(1, v); }
+  set assetFieldType($2114.AssetFieldTypeEnum_AssetFieldType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAssetFieldType() => $_has(0);
   @$pb.TagNumber(1)
@@ -813,9 +813,9 @@ class AssetFieldTypePolicySummary extends $pb.GeneratedMessage {
 
   /// Output only. Source of this asset.
   @$pb.TagNumber(2)
-  $2118.AssetSourceEnum_AssetSource get assetSource => $_getN(1);
+  $2119.AssetSourceEnum_AssetSource get assetSource => $_getN(1);
   @$pb.TagNumber(2)
-  set assetSource($2118.AssetSourceEnum_AssetSource v) { setField(2, v); }
+  set assetSource($2119.AssetSourceEnum_AssetSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAssetSource() => $_has(1);
   @$pb.TagNumber(2)
@@ -837,9 +837,9 @@ class AssetFieldTypePolicySummary extends $pb.GeneratedMessage {
 /// Contains policy information for an asset.
 class AssetPolicySummary extends $pb.GeneratedMessage {
   factory AssetPolicySummary({
-    $core.Iterable<$1824.PolicyTopicEntry>? policyTopicEntries,
-    $1825.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
-    $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
+    $core.Iterable<$1825.PolicyTopicEntry>? policyTopicEntries,
+    $1826.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
+    $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
   }) {
     final $result = create();
     if (policyTopicEntries != null) {
@@ -858,9 +858,9 @@ class AssetPolicySummary extends $pb.GeneratedMessage {
   factory AssetPolicySummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetPolicySummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
-    ..pc<$1824.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $1824.PolicyTopicEntry.create)
-    ..e<$1825.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $1825.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $1825.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $1825.PolicyReviewStatusEnum_PolicyReviewStatus.values)
-    ..e<$1826.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
+    ..pc<$1825.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $1825.PolicyTopicEntry.create)
+    ..e<$1826.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $1826.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $1826.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $1826.PolicyReviewStatusEnum_PolicyReviewStatus.values)
+    ..e<$1827.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -887,13 +887,13 @@ class AssetPolicySummary extends $pb.GeneratedMessage {
 
   /// Output only. The list of policy findings for this asset.
   @$pb.TagNumber(1)
-  $core.List<$1824.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
+  $core.List<$1825.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
 
   /// Output only. Where in the review process this asset is.
   @$pb.TagNumber(2)
-  $1825.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
+  $1826.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set reviewStatus($1825.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
+  set reviewStatus($1826.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReviewStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -902,9 +902,9 @@ class AssetPolicySummary extends $pb.GeneratedMessage {
   /// Output only. The overall approval status of this asset, calculated based on
   /// the status of its individual policy topic entries.
   @$pb.TagNumber(3)
-  $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
+  $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set approvalStatus($1826.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
+  set approvalStatus($1827.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApprovalStatus() => $_has(2);
   @$pb.TagNumber(3)

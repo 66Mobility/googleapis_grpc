@@ -14,63 +14,63 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/ad_destination_type.pbenum.dart' as $1920;
-import '../enums/ad_network_type.pbenum.dart' as $1908;
-import '../enums/budget_campaign_association_status.pbenum.dart' as $1929;
-import '../enums/click_type.pbenum.dart' as $1912;
-import '../enums/conversion_action_category.pbenum.dart' as $1915;
-import '../enums/conversion_attribution_event_type.pbenum.dart' as $1907;
-import '../enums/conversion_lag_bucket.pbenum.dart' as $1913;
-import '../enums/conversion_or_adjustment_lag_bucket.pbenum.dart' as $1914;
-import '../enums/conversion_value_rule_primary_dimension.pbenum.dart' as $1921;
-import '../enums/converting_user_prior_engagement_type_and_ltv_bucket.pbenum.dart' as $1928;
-import '../enums/day_of_week.pbenum.dart' as $1853;
-import '../enums/device.pbenum.dart' as $1844;
-import '../enums/external_conversion_source.pbenum.dart' as $1916;
-import '../enums/hotel_date_selection_type.pbenum.dart' as $1852;
-import '../enums/hotel_price_bucket.pbenum.dart' as $1919;
-import '../enums/hotel_rate_type.pbenum.dart' as $1918;
-import '../enums/month_of_year.pbenum.dart' as $1887;
-import '../enums/placeholder_type.pbenum.dart' as $1909;
-import '../enums/product_channel.pbenum.dart' as $1847;
-import '../enums/product_channel_exclusivity.pbenum.dart' as $1848;
-import '../enums/product_condition.pbenum.dart' as $1849;
-import '../enums/recommendation_type.pbenum.dart' as $1922;
-import '../enums/search_engine_results_page_type.pbenum.dart' as $1917;
-import '../enums/search_term_match_type.pbenum.dart' as $1910;
-import '../enums/sk_ad_network_ad_event_type.pbenum.dart' as $1924;
-import '../enums/sk_ad_network_attribution_credit.pbenum.dart' as $1925;
-import '../enums/sk_ad_network_coarse_conversion_value.pbenum.dart' as $1926;
-import '../enums/sk_ad_network_source_type.pbenum.dart' as $1927;
-import '../enums/sk_ad_network_user_type.pbenum.dart' as $1923;
-import '../enums/slot.pbenum.dart' as $1911;
-import 'criteria.pb.dart' as $1867;
+import '../enums/ad_destination_type.pbenum.dart' as $1921;
+import '../enums/ad_network_type.pbenum.dart' as $1909;
+import '../enums/budget_campaign_association_status.pbenum.dart' as $1930;
+import '../enums/click_type.pbenum.dart' as $1913;
+import '../enums/conversion_action_category.pbenum.dart' as $1916;
+import '../enums/conversion_attribution_event_type.pbenum.dart' as $1908;
+import '../enums/conversion_lag_bucket.pbenum.dart' as $1914;
+import '../enums/conversion_or_adjustment_lag_bucket.pbenum.dart' as $1915;
+import '../enums/conversion_value_rule_primary_dimension.pbenum.dart' as $1922;
+import '../enums/converting_user_prior_engagement_type_and_ltv_bucket.pbenum.dart' as $1929;
+import '../enums/day_of_week.pbenum.dart' as $1854;
+import '../enums/device.pbenum.dart' as $1845;
+import '../enums/external_conversion_source.pbenum.dart' as $1917;
+import '../enums/hotel_date_selection_type.pbenum.dart' as $1853;
+import '../enums/hotel_price_bucket.pbenum.dart' as $1920;
+import '../enums/hotel_rate_type.pbenum.dart' as $1919;
+import '../enums/month_of_year.pbenum.dart' as $1888;
+import '../enums/placeholder_type.pbenum.dart' as $1910;
+import '../enums/product_channel.pbenum.dart' as $1848;
+import '../enums/product_channel_exclusivity.pbenum.dart' as $1849;
+import '../enums/product_condition.pbenum.dart' as $1850;
+import '../enums/recommendation_type.pbenum.dart' as $1923;
+import '../enums/search_engine_results_page_type.pbenum.dart' as $1918;
+import '../enums/search_term_match_type.pbenum.dart' as $1911;
+import '../enums/sk_ad_network_ad_event_type.pbenum.dart' as $1925;
+import '../enums/sk_ad_network_attribution_credit.pbenum.dart' as $1926;
+import '../enums/sk_ad_network_coarse_conversion_value.pbenum.dart' as $1927;
+import '../enums/sk_ad_network_source_type.pbenum.dart' as $1928;
+import '../enums/sk_ad_network_user_type.pbenum.dart' as $1924;
+import '../enums/slot.pbenum.dart' as $1912;
+import 'criteria.pb.dart' as $1868;
 
 /// Segment only fields.
 class Segments extends $pb.GeneratedMessage {
   factory Segments({
-    $1844.DeviceEnum_Device? device,
-    $1907.ConversionAttributionEventTypeEnum_ConversionAttributionEventType? conversionAttributionEventType,
-    $1908.AdNetworkTypeEnum_AdNetworkType? adNetworkType,
-    $1853.DayOfWeekEnum_DayOfWeek? dayOfWeek,
-    $1853.DayOfWeekEnum_DayOfWeek? hotelCheckInDayOfWeek,
-    $1852.HotelDateSelectionTypeEnum_HotelDateSelectionType? hotelDateSelectionType,
-    $1887.MonthOfYearEnum_MonthOfYear? monthOfYear,
-    $1909.PlaceholderTypeEnum_PlaceholderType? placeholderType,
-    $1910.SearchTermMatchTypeEnum_SearchTermMatchType? searchTermMatchType,
-    $1911.SlotEnum_Slot? slot,
-    $1912.ClickTypeEnum_ClickType? clickType,
-    $1847.ProductChannelEnum_ProductChannel? productChannel,
-    $1848.ProductChannelExclusivityEnum_ProductChannelExclusivity? productChannelExclusivity,
-    $1849.ProductConditionEnum_ProductCondition? productCondition,
-    $1913.ConversionLagBucketEnum_ConversionLagBucket? conversionLagBucket,
-    $1914.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket? conversionOrAdjustmentLagBucket,
-    $1915.ConversionActionCategoryEnum_ConversionActionCategory? conversionActionCategory,
-    $1916.ExternalConversionSourceEnum_ExternalConversionSource? externalConversionSource,
+    $1845.DeviceEnum_Device? device,
+    $1908.ConversionAttributionEventTypeEnum_ConversionAttributionEventType? conversionAttributionEventType,
+    $1909.AdNetworkTypeEnum_AdNetworkType? adNetworkType,
+    $1854.DayOfWeekEnum_DayOfWeek? dayOfWeek,
+    $1854.DayOfWeekEnum_DayOfWeek? hotelCheckInDayOfWeek,
+    $1853.HotelDateSelectionTypeEnum_HotelDateSelectionType? hotelDateSelectionType,
+    $1888.MonthOfYearEnum_MonthOfYear? monthOfYear,
+    $1910.PlaceholderTypeEnum_PlaceholderType? placeholderType,
+    $1911.SearchTermMatchTypeEnum_SearchTermMatchType? searchTermMatchType,
+    $1912.SlotEnum_Slot? slot,
+    $1913.ClickTypeEnum_ClickType? clickType,
+    $1848.ProductChannelEnum_ProductChannel? productChannel,
+    $1849.ProductChannelExclusivityEnum_ProductChannelExclusivity? productChannelExclusivity,
+    $1850.ProductConditionEnum_ProductCondition? productCondition,
+    $1914.ConversionLagBucketEnum_ConversionLagBucket? conversionLagBucket,
+    $1915.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket? conversionOrAdjustmentLagBucket,
+    $1916.ConversionActionCategoryEnum_ConversionActionCategory? conversionActionCategory,
+    $1917.ExternalConversionSourceEnum_ExternalConversionSource? externalConversionSource,
     Keyword? keyword,
-    $1917.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType? searchEngineResultsPageType,
-    $1918.HotelRateTypeEnum_HotelRateType? hotelRateType,
-    $1919.HotelPriceBucketEnum_HotelPriceBucket? hotelPriceBucket,
+    $1918.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType? searchEngineResultsPageType,
+    $1919.HotelRateTypeEnum_HotelRateType? hotelRateType,
+    $1920.HotelPriceBucketEnum_HotelPriceBucket? hotelPriceBucket,
     $core.String? date,
     $fixnum.Int64? hotelCenterId,
     $core.String? hotelCheckInDate,
@@ -123,30 +123,30 @@ class Segments extends $pb.GeneratedMessage {
     $fixnum.Int64? productMerchantId,
     BudgetCampaignAssociationStatus? budgetCampaignAssociationStatus,
     $fixnum.Int64? hotelBookingWindowDays,
-    $1920.AdDestinationTypeEnum_AdDestinationType? adDestinationType,
+    $1921.AdDestinationTypeEnum_AdDestinationType? adDestinationType,
     $fixnum.Int64? skAdNetworkConversionValue,
-    $1921.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension? conversionValueRulePrimaryDimension,
+    $1922.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension? conversionValueRulePrimaryDimension,
     AssetInteractionTarget? assetInteractionTarget,
-    $1922.RecommendationTypeEnum_RecommendationType? recommendationType,
-    $1923.SkAdNetworkUserTypeEnum_SkAdNetworkUserType? skAdNetworkUserType,
-    $1924.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType? skAdNetworkAdEventType,
+    $1923.RecommendationTypeEnum_RecommendationType? recommendationType,
+    $1924.SkAdNetworkUserTypeEnum_SkAdNetworkUserType? skAdNetworkUserType,
+    $1925.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType? skAdNetworkAdEventType,
     SkAdNetworkSourceApp? skAdNetworkSourceApp,
-    $1925.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit? skAdNetworkAttributionCredit,
+    $1926.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit? skAdNetworkAttributionCredit,
     $core.String? auctionInsightDomain,
     $core.String? productFeedLabel,
     $fixnum.Int64? activityAccountId,
     $fixnum.Int64? activityRating,
     $core.String? externalActivityId,
-    $1926.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue? skAdNetworkCoarseConversionValue,
+    $1927.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue? skAdNetworkCoarseConversionValue,
     $core.String? skAdNetworkSourceDomain,
-    $1927.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType? skAdNetworkSourceType,
+    $1928.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType? skAdNetworkSourceType,
     $fixnum.Int64? skAdNetworkPostbackSequenceIndex,
     $core.String? searchSubcategory,
     $core.String? searchTerm,
     $core.String? campaign,
     $core.String? adGroup,
     $core.String? assetGroup,
-    $1928.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket? newVersusReturningCustomers,
+    $1929.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket? newVersusReturningCustomers,
     $core.String? productCategoryLevel1,
     $core.String? productCategoryLevel2,
     $core.String? productCategoryLevel3,
@@ -470,28 +470,28 @@ class Segments extends $pb.GeneratedMessage {
   factory Segments.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Segments', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1844.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $1844.DeviceEnum_Device.UNSPECIFIED, valueOf: $1844.DeviceEnum_Device.valueOf, enumValues: $1844.DeviceEnum_Device.values)
-    ..e<$1907.ConversionAttributionEventTypeEnum_ConversionAttributionEventType>(2, _omitFieldNames ? '' : 'conversionAttributionEventType', $pb.PbFieldType.OE, defaultOrMaker: $1907.ConversionAttributionEventTypeEnum_ConversionAttributionEventType.UNSPECIFIED, valueOf: $1907.ConversionAttributionEventTypeEnum_ConversionAttributionEventType.valueOf, enumValues: $1907.ConversionAttributionEventTypeEnum_ConversionAttributionEventType.values)
-    ..e<$1908.AdNetworkTypeEnum_AdNetworkType>(3, _omitFieldNames ? '' : 'adNetworkType', $pb.PbFieldType.OE, defaultOrMaker: $1908.AdNetworkTypeEnum_AdNetworkType.UNSPECIFIED, valueOf: $1908.AdNetworkTypeEnum_AdNetworkType.valueOf, enumValues: $1908.AdNetworkTypeEnum_AdNetworkType.values)
-    ..e<$1853.DayOfWeekEnum_DayOfWeek>(5, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $1853.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $1853.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $1853.DayOfWeekEnum_DayOfWeek.values)
-    ..e<$1853.DayOfWeekEnum_DayOfWeek>(9, _omitFieldNames ? '' : 'hotelCheckInDayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $1853.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $1853.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $1853.DayOfWeekEnum_DayOfWeek.values)
-    ..e<$1852.HotelDateSelectionTypeEnum_HotelDateSelectionType>(13, _omitFieldNames ? '' : 'hotelDateSelectionType', $pb.PbFieldType.OE, defaultOrMaker: $1852.HotelDateSelectionTypeEnum_HotelDateSelectionType.UNSPECIFIED, valueOf: $1852.HotelDateSelectionTypeEnum_HotelDateSelectionType.valueOf, enumValues: $1852.HotelDateSelectionTypeEnum_HotelDateSelectionType.values)
-    ..e<$1887.MonthOfYearEnum_MonthOfYear>(18, _omitFieldNames ? '' : 'monthOfYear', $pb.PbFieldType.OE, defaultOrMaker: $1887.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $1887.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $1887.MonthOfYearEnum_MonthOfYear.values)
-    ..e<$1909.PlaceholderTypeEnum_PlaceholderType>(20, _omitFieldNames ? '' : 'placeholderType', $pb.PbFieldType.OE, defaultOrMaker: $1909.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $1909.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $1909.PlaceholderTypeEnum_PlaceholderType.values)
-    ..e<$1910.SearchTermMatchTypeEnum_SearchTermMatchType>(22, _omitFieldNames ? '' : 'searchTermMatchType', $pb.PbFieldType.OE, defaultOrMaker: $1910.SearchTermMatchTypeEnum_SearchTermMatchType.UNSPECIFIED, valueOf: $1910.SearchTermMatchTypeEnum_SearchTermMatchType.valueOf, enumValues: $1910.SearchTermMatchTypeEnum_SearchTermMatchType.values)
-    ..e<$1911.SlotEnum_Slot>(23, _omitFieldNames ? '' : 'slot', $pb.PbFieldType.OE, defaultOrMaker: $1911.SlotEnum_Slot.UNSPECIFIED, valueOf: $1911.SlotEnum_Slot.valueOf, enumValues: $1911.SlotEnum_Slot.values)
-    ..e<$1912.ClickTypeEnum_ClickType>(26, _omitFieldNames ? '' : 'clickType', $pb.PbFieldType.OE, defaultOrMaker: $1912.ClickTypeEnum_ClickType.UNSPECIFIED, valueOf: $1912.ClickTypeEnum_ClickType.valueOf, enumValues: $1912.ClickTypeEnum_ClickType.values)
-    ..e<$1847.ProductChannelEnum_ProductChannel>(30, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $1847.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $1847.ProductChannelEnum_ProductChannel.valueOf, enumValues: $1847.ProductChannelEnum_ProductChannel.values)
-    ..e<$1848.ProductChannelExclusivityEnum_ProductChannelExclusivity>(31, _omitFieldNames ? '' : 'productChannelExclusivity', $pb.PbFieldType.OE, defaultOrMaker: $1848.ProductChannelExclusivityEnum_ProductChannelExclusivity.UNSPECIFIED, valueOf: $1848.ProductChannelExclusivityEnum_ProductChannelExclusivity.valueOf, enumValues: $1848.ProductChannelExclusivityEnum_ProductChannelExclusivity.values)
-    ..e<$1849.ProductConditionEnum_ProductCondition>(32, _omitFieldNames ? '' : 'productCondition', $pb.PbFieldType.OE, defaultOrMaker: $1849.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $1849.ProductConditionEnum_ProductCondition.valueOf, enumValues: $1849.ProductConditionEnum_ProductCondition.values)
-    ..e<$1913.ConversionLagBucketEnum_ConversionLagBucket>(50, _omitFieldNames ? '' : 'conversionLagBucket', $pb.PbFieldType.OE, defaultOrMaker: $1913.ConversionLagBucketEnum_ConversionLagBucket.UNSPECIFIED, valueOf: $1913.ConversionLagBucketEnum_ConversionLagBucket.valueOf, enumValues: $1913.ConversionLagBucketEnum_ConversionLagBucket.values)
-    ..e<$1914.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket>(51, _omitFieldNames ? '' : 'conversionOrAdjustmentLagBucket', $pb.PbFieldType.OE, defaultOrMaker: $1914.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket.UNSPECIFIED, valueOf: $1914.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket.valueOf, enumValues: $1914.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket.values)
-    ..e<$1915.ConversionActionCategoryEnum_ConversionActionCategory>(53, _omitFieldNames ? '' : 'conversionActionCategory', $pb.PbFieldType.OE, defaultOrMaker: $1915.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $1915.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $1915.ConversionActionCategoryEnum_ConversionActionCategory.values)
-    ..e<$1916.ExternalConversionSourceEnum_ExternalConversionSource>(55, _omitFieldNames ? '' : 'externalConversionSource', $pb.PbFieldType.OE, defaultOrMaker: $1916.ExternalConversionSourceEnum_ExternalConversionSource.UNSPECIFIED, valueOf: $1916.ExternalConversionSourceEnum_ExternalConversionSource.valueOf, enumValues: $1916.ExternalConversionSourceEnum_ExternalConversionSource.values)
+    ..e<$1845.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $1845.DeviceEnum_Device.UNSPECIFIED, valueOf: $1845.DeviceEnum_Device.valueOf, enumValues: $1845.DeviceEnum_Device.values)
+    ..e<$1908.ConversionAttributionEventTypeEnum_ConversionAttributionEventType>(2, _omitFieldNames ? '' : 'conversionAttributionEventType', $pb.PbFieldType.OE, defaultOrMaker: $1908.ConversionAttributionEventTypeEnum_ConversionAttributionEventType.UNSPECIFIED, valueOf: $1908.ConversionAttributionEventTypeEnum_ConversionAttributionEventType.valueOf, enumValues: $1908.ConversionAttributionEventTypeEnum_ConversionAttributionEventType.values)
+    ..e<$1909.AdNetworkTypeEnum_AdNetworkType>(3, _omitFieldNames ? '' : 'adNetworkType', $pb.PbFieldType.OE, defaultOrMaker: $1909.AdNetworkTypeEnum_AdNetworkType.UNSPECIFIED, valueOf: $1909.AdNetworkTypeEnum_AdNetworkType.valueOf, enumValues: $1909.AdNetworkTypeEnum_AdNetworkType.values)
+    ..e<$1854.DayOfWeekEnum_DayOfWeek>(5, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $1854.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $1854.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $1854.DayOfWeekEnum_DayOfWeek.values)
+    ..e<$1854.DayOfWeekEnum_DayOfWeek>(9, _omitFieldNames ? '' : 'hotelCheckInDayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $1854.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $1854.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $1854.DayOfWeekEnum_DayOfWeek.values)
+    ..e<$1853.HotelDateSelectionTypeEnum_HotelDateSelectionType>(13, _omitFieldNames ? '' : 'hotelDateSelectionType', $pb.PbFieldType.OE, defaultOrMaker: $1853.HotelDateSelectionTypeEnum_HotelDateSelectionType.UNSPECIFIED, valueOf: $1853.HotelDateSelectionTypeEnum_HotelDateSelectionType.valueOf, enumValues: $1853.HotelDateSelectionTypeEnum_HotelDateSelectionType.values)
+    ..e<$1888.MonthOfYearEnum_MonthOfYear>(18, _omitFieldNames ? '' : 'monthOfYear', $pb.PbFieldType.OE, defaultOrMaker: $1888.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $1888.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $1888.MonthOfYearEnum_MonthOfYear.values)
+    ..e<$1910.PlaceholderTypeEnum_PlaceholderType>(20, _omitFieldNames ? '' : 'placeholderType', $pb.PbFieldType.OE, defaultOrMaker: $1910.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $1910.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $1910.PlaceholderTypeEnum_PlaceholderType.values)
+    ..e<$1911.SearchTermMatchTypeEnum_SearchTermMatchType>(22, _omitFieldNames ? '' : 'searchTermMatchType', $pb.PbFieldType.OE, defaultOrMaker: $1911.SearchTermMatchTypeEnum_SearchTermMatchType.UNSPECIFIED, valueOf: $1911.SearchTermMatchTypeEnum_SearchTermMatchType.valueOf, enumValues: $1911.SearchTermMatchTypeEnum_SearchTermMatchType.values)
+    ..e<$1912.SlotEnum_Slot>(23, _omitFieldNames ? '' : 'slot', $pb.PbFieldType.OE, defaultOrMaker: $1912.SlotEnum_Slot.UNSPECIFIED, valueOf: $1912.SlotEnum_Slot.valueOf, enumValues: $1912.SlotEnum_Slot.values)
+    ..e<$1913.ClickTypeEnum_ClickType>(26, _omitFieldNames ? '' : 'clickType', $pb.PbFieldType.OE, defaultOrMaker: $1913.ClickTypeEnum_ClickType.UNSPECIFIED, valueOf: $1913.ClickTypeEnum_ClickType.valueOf, enumValues: $1913.ClickTypeEnum_ClickType.values)
+    ..e<$1848.ProductChannelEnum_ProductChannel>(30, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $1848.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $1848.ProductChannelEnum_ProductChannel.valueOf, enumValues: $1848.ProductChannelEnum_ProductChannel.values)
+    ..e<$1849.ProductChannelExclusivityEnum_ProductChannelExclusivity>(31, _omitFieldNames ? '' : 'productChannelExclusivity', $pb.PbFieldType.OE, defaultOrMaker: $1849.ProductChannelExclusivityEnum_ProductChannelExclusivity.UNSPECIFIED, valueOf: $1849.ProductChannelExclusivityEnum_ProductChannelExclusivity.valueOf, enumValues: $1849.ProductChannelExclusivityEnum_ProductChannelExclusivity.values)
+    ..e<$1850.ProductConditionEnum_ProductCondition>(32, _omitFieldNames ? '' : 'productCondition', $pb.PbFieldType.OE, defaultOrMaker: $1850.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $1850.ProductConditionEnum_ProductCondition.valueOf, enumValues: $1850.ProductConditionEnum_ProductCondition.values)
+    ..e<$1914.ConversionLagBucketEnum_ConversionLagBucket>(50, _omitFieldNames ? '' : 'conversionLagBucket', $pb.PbFieldType.OE, defaultOrMaker: $1914.ConversionLagBucketEnum_ConversionLagBucket.UNSPECIFIED, valueOf: $1914.ConversionLagBucketEnum_ConversionLagBucket.valueOf, enumValues: $1914.ConversionLagBucketEnum_ConversionLagBucket.values)
+    ..e<$1915.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket>(51, _omitFieldNames ? '' : 'conversionOrAdjustmentLagBucket', $pb.PbFieldType.OE, defaultOrMaker: $1915.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket.UNSPECIFIED, valueOf: $1915.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket.valueOf, enumValues: $1915.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket.values)
+    ..e<$1916.ConversionActionCategoryEnum_ConversionActionCategory>(53, _omitFieldNames ? '' : 'conversionActionCategory', $pb.PbFieldType.OE, defaultOrMaker: $1916.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $1916.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $1916.ConversionActionCategoryEnum_ConversionActionCategory.values)
+    ..e<$1917.ExternalConversionSourceEnum_ExternalConversionSource>(55, _omitFieldNames ? '' : 'externalConversionSource', $pb.PbFieldType.OE, defaultOrMaker: $1917.ExternalConversionSourceEnum_ExternalConversionSource.UNSPECIFIED, valueOf: $1917.ExternalConversionSourceEnum_ExternalConversionSource.valueOf, enumValues: $1917.ExternalConversionSourceEnum_ExternalConversionSource.values)
     ..aOM<Keyword>(61, _omitFieldNames ? '' : 'keyword', subBuilder: Keyword.create)
-    ..e<$1917.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType>(70, _omitFieldNames ? '' : 'searchEngineResultsPageType', $pb.PbFieldType.OE, defaultOrMaker: $1917.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType.UNSPECIFIED, valueOf: $1917.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType.valueOf, enumValues: $1917.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType.values)
-    ..e<$1918.HotelRateTypeEnum_HotelRateType>(74, _omitFieldNames ? '' : 'hotelRateType', $pb.PbFieldType.OE, defaultOrMaker: $1918.HotelRateTypeEnum_HotelRateType.UNSPECIFIED, valueOf: $1918.HotelRateTypeEnum_HotelRateType.valueOf, enumValues: $1918.HotelRateTypeEnum_HotelRateType.values)
-    ..e<$1919.HotelPriceBucketEnum_HotelPriceBucket>(78, _omitFieldNames ? '' : 'hotelPriceBucket', $pb.PbFieldType.OE, defaultOrMaker: $1919.HotelPriceBucketEnum_HotelPriceBucket.UNSPECIFIED, valueOf: $1919.HotelPriceBucketEnum_HotelPriceBucket.valueOf, enumValues: $1919.HotelPriceBucketEnum_HotelPriceBucket.values)
+    ..e<$1918.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType>(70, _omitFieldNames ? '' : 'searchEngineResultsPageType', $pb.PbFieldType.OE, defaultOrMaker: $1918.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType.UNSPECIFIED, valueOf: $1918.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType.valueOf, enumValues: $1918.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType.values)
+    ..e<$1919.HotelRateTypeEnum_HotelRateType>(74, _omitFieldNames ? '' : 'hotelRateType', $pb.PbFieldType.OE, defaultOrMaker: $1919.HotelRateTypeEnum_HotelRateType.UNSPECIFIED, valueOf: $1919.HotelRateTypeEnum_HotelRateType.valueOf, enumValues: $1919.HotelRateTypeEnum_HotelRateType.values)
+    ..e<$1920.HotelPriceBucketEnum_HotelPriceBucket>(78, _omitFieldNames ? '' : 'hotelPriceBucket', $pb.PbFieldType.OE, defaultOrMaker: $1920.HotelPriceBucketEnum_HotelPriceBucket.UNSPECIFIED, valueOf: $1920.HotelPriceBucketEnum_HotelPriceBucket.valueOf, enumValues: $1920.HotelPriceBucketEnum_HotelPriceBucket.values)
     ..aOS(79, _omitFieldNames ? '' : 'date')
     ..aInt64(80, _omitFieldNames ? '' : 'hotelCenterId')
     ..aOS(81, _omitFieldNames ? '' : 'hotelCheckInDate')
@@ -544,30 +544,30 @@ class Segments extends $pb.GeneratedMessage {
     ..aInt64(133, _omitFieldNames ? '' : 'productMerchantId')
     ..aOM<BudgetCampaignAssociationStatus>(134, _omitFieldNames ? '' : 'budgetCampaignAssociationStatus', subBuilder: BudgetCampaignAssociationStatus.create)
     ..aInt64(135, _omitFieldNames ? '' : 'hotelBookingWindowDays')
-    ..e<$1920.AdDestinationTypeEnum_AdDestinationType>(136, _omitFieldNames ? '' : 'adDestinationType', $pb.PbFieldType.OE, defaultOrMaker: $1920.AdDestinationTypeEnum_AdDestinationType.UNSPECIFIED, valueOf: $1920.AdDestinationTypeEnum_AdDestinationType.valueOf, enumValues: $1920.AdDestinationTypeEnum_AdDestinationType.values)
+    ..e<$1921.AdDestinationTypeEnum_AdDestinationType>(136, _omitFieldNames ? '' : 'adDestinationType', $pb.PbFieldType.OE, defaultOrMaker: $1921.AdDestinationTypeEnum_AdDestinationType.UNSPECIFIED, valueOf: $1921.AdDestinationTypeEnum_AdDestinationType.valueOf, enumValues: $1921.AdDestinationTypeEnum_AdDestinationType.values)
     ..aInt64(137, _omitFieldNames ? '' : 'skAdNetworkConversionValue')
-    ..e<$1921.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension>(138, _omitFieldNames ? '' : 'conversionValueRulePrimaryDimension', $pb.PbFieldType.OE, defaultOrMaker: $1921.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension.UNSPECIFIED, valueOf: $1921.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension.valueOf, enumValues: $1921.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension.values)
+    ..e<$1922.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension>(138, _omitFieldNames ? '' : 'conversionValueRulePrimaryDimension', $pb.PbFieldType.OE, defaultOrMaker: $1922.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension.UNSPECIFIED, valueOf: $1922.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension.valueOf, enumValues: $1922.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension.values)
     ..aOM<AssetInteractionTarget>(139, _omitFieldNames ? '' : 'assetInteractionTarget', subBuilder: AssetInteractionTarget.create)
-    ..e<$1922.RecommendationTypeEnum_RecommendationType>(140, _omitFieldNames ? '' : 'recommendationType', $pb.PbFieldType.OE, defaultOrMaker: $1922.RecommendationTypeEnum_RecommendationType.UNSPECIFIED, valueOf: $1922.RecommendationTypeEnum_RecommendationType.valueOf, enumValues: $1922.RecommendationTypeEnum_RecommendationType.values)
-    ..e<$1923.SkAdNetworkUserTypeEnum_SkAdNetworkUserType>(141, _omitFieldNames ? '' : 'skAdNetworkUserType', $pb.PbFieldType.OE, defaultOrMaker: $1923.SkAdNetworkUserTypeEnum_SkAdNetworkUserType.UNSPECIFIED, valueOf: $1923.SkAdNetworkUserTypeEnum_SkAdNetworkUserType.valueOf, enumValues: $1923.SkAdNetworkUserTypeEnum_SkAdNetworkUserType.values)
-    ..e<$1924.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType>(142, _omitFieldNames ? '' : 'skAdNetworkAdEventType', $pb.PbFieldType.OE, defaultOrMaker: $1924.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType.UNSPECIFIED, valueOf: $1924.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType.valueOf, enumValues: $1924.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType.values)
+    ..e<$1923.RecommendationTypeEnum_RecommendationType>(140, _omitFieldNames ? '' : 'recommendationType', $pb.PbFieldType.OE, defaultOrMaker: $1923.RecommendationTypeEnum_RecommendationType.UNSPECIFIED, valueOf: $1923.RecommendationTypeEnum_RecommendationType.valueOf, enumValues: $1923.RecommendationTypeEnum_RecommendationType.values)
+    ..e<$1924.SkAdNetworkUserTypeEnum_SkAdNetworkUserType>(141, _omitFieldNames ? '' : 'skAdNetworkUserType', $pb.PbFieldType.OE, defaultOrMaker: $1924.SkAdNetworkUserTypeEnum_SkAdNetworkUserType.UNSPECIFIED, valueOf: $1924.SkAdNetworkUserTypeEnum_SkAdNetworkUserType.valueOf, enumValues: $1924.SkAdNetworkUserTypeEnum_SkAdNetworkUserType.values)
+    ..e<$1925.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType>(142, _omitFieldNames ? '' : 'skAdNetworkAdEventType', $pb.PbFieldType.OE, defaultOrMaker: $1925.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType.UNSPECIFIED, valueOf: $1925.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType.valueOf, enumValues: $1925.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType.values)
     ..aOM<SkAdNetworkSourceApp>(143, _omitFieldNames ? '' : 'skAdNetworkSourceApp', subBuilder: SkAdNetworkSourceApp.create)
-    ..e<$1925.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit>(144, _omitFieldNames ? '' : 'skAdNetworkAttributionCredit', $pb.PbFieldType.OE, defaultOrMaker: $1925.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit.UNSPECIFIED, valueOf: $1925.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit.valueOf, enumValues: $1925.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit.values)
+    ..e<$1926.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit>(144, _omitFieldNames ? '' : 'skAdNetworkAttributionCredit', $pb.PbFieldType.OE, defaultOrMaker: $1926.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit.UNSPECIFIED, valueOf: $1926.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit.valueOf, enumValues: $1926.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit.values)
     ..aOS(145, _omitFieldNames ? '' : 'auctionInsightDomain')
     ..aOS(147, _omitFieldNames ? '' : 'productFeedLabel')
     ..aInt64(148, _omitFieldNames ? '' : 'activityAccountId')
     ..aInt64(149, _omitFieldNames ? '' : 'activityRating')
     ..aOS(150, _omitFieldNames ? '' : 'externalActivityId')
-    ..e<$1926.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue>(151, _omitFieldNames ? '' : 'skAdNetworkCoarseConversionValue', $pb.PbFieldType.OE, defaultOrMaker: $1926.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.UNSPECIFIED, valueOf: $1926.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.valueOf, enumValues: $1926.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.values)
+    ..e<$1927.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue>(151, _omitFieldNames ? '' : 'skAdNetworkCoarseConversionValue', $pb.PbFieldType.OE, defaultOrMaker: $1927.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.UNSPECIFIED, valueOf: $1927.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.valueOf, enumValues: $1927.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.values)
     ..aOS(152, _omitFieldNames ? '' : 'skAdNetworkSourceDomain')
-    ..e<$1927.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType>(153, _omitFieldNames ? '' : 'skAdNetworkSourceType', $pb.PbFieldType.OE, defaultOrMaker: $1927.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType.UNSPECIFIED, valueOf: $1927.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType.valueOf, enumValues: $1927.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType.values)
+    ..e<$1928.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType>(153, _omitFieldNames ? '' : 'skAdNetworkSourceType', $pb.PbFieldType.OE, defaultOrMaker: $1928.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType.UNSPECIFIED, valueOf: $1928.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType.valueOf, enumValues: $1928.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType.values)
     ..aInt64(154, _omitFieldNames ? '' : 'skAdNetworkPostbackSequenceIndex')
     ..aOS(155, _omitFieldNames ? '' : 'searchSubcategory')
     ..aOS(156, _omitFieldNames ? '' : 'searchTerm')
     ..aOS(157, _omitFieldNames ? '' : 'campaign')
     ..aOS(158, _omitFieldNames ? '' : 'adGroup')
     ..aOS(159, _omitFieldNames ? '' : 'assetGroup')
-    ..e<$1928.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket>(160, _omitFieldNames ? '' : 'newVersusReturningCustomers', $pb.PbFieldType.OE, defaultOrMaker: $1928.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket.UNSPECIFIED, valueOf: $1928.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket.valueOf, enumValues: $1928.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket.values)
+    ..e<$1929.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket>(160, _omitFieldNames ? '' : 'newVersusReturningCustomers', $pb.PbFieldType.OE, defaultOrMaker: $1929.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket.UNSPECIFIED, valueOf: $1929.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket.valueOf, enumValues: $1929.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket.values)
     ..aOS(161, _omitFieldNames ? '' : 'productCategoryLevel1')
     ..aOS(162, _omitFieldNames ? '' : 'productCategoryLevel2')
     ..aOS(163, _omitFieldNames ? '' : 'productCategoryLevel3')
@@ -599,9 +599,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Device to which metrics apply.
   @$pb.TagNumber(1)
-  $1844.DeviceEnum_Device get device => $_getN(0);
+  $1845.DeviceEnum_Device get device => $_getN(0);
   @$pb.TagNumber(1)
-  set device($1844.DeviceEnum_Device v) { setField(1, v); }
+  set device($1845.DeviceEnum_Device v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDevice() => $_has(0);
   @$pb.TagNumber(1)
@@ -609,9 +609,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Conversion attribution event type.
   @$pb.TagNumber(2)
-  $1907.ConversionAttributionEventTypeEnum_ConversionAttributionEventType get conversionAttributionEventType => $_getN(1);
+  $1908.ConversionAttributionEventTypeEnum_ConversionAttributionEventType get conversionAttributionEventType => $_getN(1);
   @$pb.TagNumber(2)
-  set conversionAttributionEventType($1907.ConversionAttributionEventTypeEnum_ConversionAttributionEventType v) { setField(2, v); }
+  set conversionAttributionEventType($1908.ConversionAttributionEventTypeEnum_ConversionAttributionEventType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConversionAttributionEventType() => $_has(1);
   @$pb.TagNumber(2)
@@ -619,9 +619,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Ad network type.
   @$pb.TagNumber(3)
-  $1908.AdNetworkTypeEnum_AdNetworkType get adNetworkType => $_getN(2);
+  $1909.AdNetworkTypeEnum_AdNetworkType get adNetworkType => $_getN(2);
   @$pb.TagNumber(3)
-  set adNetworkType($1908.AdNetworkTypeEnum_AdNetworkType v) { setField(3, v); }
+  set adNetworkType($1909.AdNetworkTypeEnum_AdNetworkType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAdNetworkType() => $_has(2);
   @$pb.TagNumber(3)
@@ -629,9 +629,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Day of the week, for example, MONDAY.
   @$pb.TagNumber(5)
-  $1853.DayOfWeekEnum_DayOfWeek get dayOfWeek => $_getN(3);
+  $1854.DayOfWeekEnum_DayOfWeek get dayOfWeek => $_getN(3);
   @$pb.TagNumber(5)
-  set dayOfWeek($1853.DayOfWeekEnum_DayOfWeek v) { setField(5, v); }
+  set dayOfWeek($1854.DayOfWeekEnum_DayOfWeek v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDayOfWeek() => $_has(3);
   @$pb.TagNumber(5)
@@ -639,9 +639,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Hotel check-in day of week.
   @$pb.TagNumber(9)
-  $1853.DayOfWeekEnum_DayOfWeek get hotelCheckInDayOfWeek => $_getN(4);
+  $1854.DayOfWeekEnum_DayOfWeek get hotelCheckInDayOfWeek => $_getN(4);
   @$pb.TagNumber(9)
-  set hotelCheckInDayOfWeek($1853.DayOfWeekEnum_DayOfWeek v) { setField(9, v); }
+  set hotelCheckInDayOfWeek($1854.DayOfWeekEnum_DayOfWeek v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasHotelCheckInDayOfWeek() => $_has(4);
   @$pb.TagNumber(9)
@@ -649,9 +649,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Hotel date selection type.
   @$pb.TagNumber(13)
-  $1852.HotelDateSelectionTypeEnum_HotelDateSelectionType get hotelDateSelectionType => $_getN(5);
+  $1853.HotelDateSelectionTypeEnum_HotelDateSelectionType get hotelDateSelectionType => $_getN(5);
   @$pb.TagNumber(13)
-  set hotelDateSelectionType($1852.HotelDateSelectionTypeEnum_HotelDateSelectionType v) { setField(13, v); }
+  set hotelDateSelectionType($1853.HotelDateSelectionTypeEnum_HotelDateSelectionType v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasHotelDateSelectionType() => $_has(5);
   @$pb.TagNumber(13)
@@ -659,9 +659,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Month of the year, for example, January.
   @$pb.TagNumber(18)
-  $1887.MonthOfYearEnum_MonthOfYear get monthOfYear => $_getN(6);
+  $1888.MonthOfYearEnum_MonthOfYear get monthOfYear => $_getN(6);
   @$pb.TagNumber(18)
-  set monthOfYear($1887.MonthOfYearEnum_MonthOfYear v) { setField(18, v); }
+  set monthOfYear($1888.MonthOfYearEnum_MonthOfYear v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasMonthOfYear() => $_has(6);
   @$pb.TagNumber(18)
@@ -669,9 +669,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Placeholder type. This is only used with feed item metrics.
   @$pb.TagNumber(20)
-  $1909.PlaceholderTypeEnum_PlaceholderType get placeholderType => $_getN(7);
+  $1910.PlaceholderTypeEnum_PlaceholderType get placeholderType => $_getN(7);
   @$pb.TagNumber(20)
-  set placeholderType($1909.PlaceholderTypeEnum_PlaceholderType v) { setField(20, v); }
+  set placeholderType($1910.PlaceholderTypeEnum_PlaceholderType v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasPlaceholderType() => $_has(7);
   @$pb.TagNumber(20)
@@ -679,9 +679,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Match type of the keyword that triggered the ad, including variants.
   @$pb.TagNumber(22)
-  $1910.SearchTermMatchTypeEnum_SearchTermMatchType get searchTermMatchType => $_getN(8);
+  $1911.SearchTermMatchTypeEnum_SearchTermMatchType get searchTermMatchType => $_getN(8);
   @$pb.TagNumber(22)
-  set searchTermMatchType($1910.SearchTermMatchTypeEnum_SearchTermMatchType v) { setField(22, v); }
+  set searchTermMatchType($1911.SearchTermMatchTypeEnum_SearchTermMatchType v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasSearchTermMatchType() => $_has(8);
   @$pb.TagNumber(22)
@@ -689,9 +689,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Position of the ad.
   @$pb.TagNumber(23)
-  $1911.SlotEnum_Slot get slot => $_getN(9);
+  $1912.SlotEnum_Slot get slot => $_getN(9);
   @$pb.TagNumber(23)
-  set slot($1911.SlotEnum_Slot v) { setField(23, v); }
+  set slot($1912.SlotEnum_Slot v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasSlot() => $_has(9);
   @$pb.TagNumber(23)
@@ -699,9 +699,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Click type.
   @$pb.TagNumber(26)
-  $1912.ClickTypeEnum_ClickType get clickType => $_getN(10);
+  $1913.ClickTypeEnum_ClickType get clickType => $_getN(10);
   @$pb.TagNumber(26)
-  set clickType($1912.ClickTypeEnum_ClickType v) { setField(26, v); }
+  set clickType($1913.ClickTypeEnum_ClickType v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasClickType() => $_has(10);
   @$pb.TagNumber(26)
@@ -709,9 +709,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Channel of the product.
   @$pb.TagNumber(30)
-  $1847.ProductChannelEnum_ProductChannel get productChannel => $_getN(11);
+  $1848.ProductChannelEnum_ProductChannel get productChannel => $_getN(11);
   @$pb.TagNumber(30)
-  set productChannel($1847.ProductChannelEnum_ProductChannel v) { setField(30, v); }
+  set productChannel($1848.ProductChannelEnum_ProductChannel v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasProductChannel() => $_has(11);
   @$pb.TagNumber(30)
@@ -719,9 +719,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Channel exclusivity of the product.
   @$pb.TagNumber(31)
-  $1848.ProductChannelExclusivityEnum_ProductChannelExclusivity get productChannelExclusivity => $_getN(12);
+  $1849.ProductChannelExclusivityEnum_ProductChannelExclusivity get productChannelExclusivity => $_getN(12);
   @$pb.TagNumber(31)
-  set productChannelExclusivity($1848.ProductChannelExclusivityEnum_ProductChannelExclusivity v) { setField(31, v); }
+  set productChannelExclusivity($1849.ProductChannelExclusivityEnum_ProductChannelExclusivity v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasProductChannelExclusivity() => $_has(12);
   @$pb.TagNumber(31)
@@ -729,9 +729,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Condition of the product.
   @$pb.TagNumber(32)
-  $1849.ProductConditionEnum_ProductCondition get productCondition => $_getN(13);
+  $1850.ProductConditionEnum_ProductCondition get productCondition => $_getN(13);
   @$pb.TagNumber(32)
-  set productCondition($1849.ProductConditionEnum_ProductCondition v) { setField(32, v); }
+  set productCondition($1850.ProductConditionEnum_ProductCondition v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasProductCondition() => $_has(13);
   @$pb.TagNumber(32)
@@ -740,9 +740,9 @@ class Segments extends $pb.GeneratedMessage {
   /// An enum value representing the number of days between the impression and
   /// the conversion.
   @$pb.TagNumber(50)
-  $1913.ConversionLagBucketEnum_ConversionLagBucket get conversionLagBucket => $_getN(14);
+  $1914.ConversionLagBucketEnum_ConversionLagBucket get conversionLagBucket => $_getN(14);
   @$pb.TagNumber(50)
-  set conversionLagBucket($1913.ConversionLagBucketEnum_ConversionLagBucket v) { setField(50, v); }
+  set conversionLagBucket($1914.ConversionLagBucketEnum_ConversionLagBucket v) { setField(50, v); }
   @$pb.TagNumber(50)
   $core.bool hasConversionLagBucket() => $_has(14);
   @$pb.TagNumber(50)
@@ -751,9 +751,9 @@ class Segments extends $pb.GeneratedMessage {
   /// An enum value representing the number of days between the impression and
   /// the conversion or between the impression and adjustments to the conversion.
   @$pb.TagNumber(51)
-  $1914.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket get conversionOrAdjustmentLagBucket => $_getN(15);
+  $1915.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket get conversionOrAdjustmentLagBucket => $_getN(15);
   @$pb.TagNumber(51)
-  set conversionOrAdjustmentLagBucket($1914.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket v) { setField(51, v); }
+  set conversionOrAdjustmentLagBucket($1915.ConversionOrAdjustmentLagBucketEnum_ConversionOrAdjustmentLagBucket v) { setField(51, v); }
   @$pb.TagNumber(51)
   $core.bool hasConversionOrAdjustmentLagBucket() => $_has(15);
   @$pb.TagNumber(51)
@@ -761,9 +761,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Conversion action category.
   @$pb.TagNumber(53)
-  $1915.ConversionActionCategoryEnum_ConversionActionCategory get conversionActionCategory => $_getN(16);
+  $1916.ConversionActionCategoryEnum_ConversionActionCategory get conversionActionCategory => $_getN(16);
   @$pb.TagNumber(53)
-  set conversionActionCategory($1915.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(53, v); }
+  set conversionActionCategory($1916.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(53, v); }
   @$pb.TagNumber(53)
   $core.bool hasConversionActionCategory() => $_has(16);
   @$pb.TagNumber(53)
@@ -771,9 +771,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// External conversion source.
   @$pb.TagNumber(55)
-  $1916.ExternalConversionSourceEnum_ExternalConversionSource get externalConversionSource => $_getN(17);
+  $1917.ExternalConversionSourceEnum_ExternalConversionSource get externalConversionSource => $_getN(17);
   @$pb.TagNumber(55)
-  set externalConversionSource($1916.ExternalConversionSourceEnum_ExternalConversionSource v) { setField(55, v); }
+  set externalConversionSource($1917.ExternalConversionSourceEnum_ExternalConversionSource v) { setField(55, v); }
   @$pb.TagNumber(55)
   $core.bool hasExternalConversionSource() => $_has(17);
   @$pb.TagNumber(55)
@@ -793,9 +793,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Type of the search engine results page.
   @$pb.TagNumber(70)
-  $1917.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType get searchEngineResultsPageType => $_getN(19);
+  $1918.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType get searchEngineResultsPageType => $_getN(19);
   @$pb.TagNumber(70)
-  set searchEngineResultsPageType($1917.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType v) { setField(70, v); }
+  set searchEngineResultsPageType($1918.SearchEngineResultsPageTypeEnum_SearchEngineResultsPageType v) { setField(70, v); }
   @$pb.TagNumber(70)
   $core.bool hasSearchEngineResultsPageType() => $_has(19);
   @$pb.TagNumber(70)
@@ -803,9 +803,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Hotel rate type.
   @$pb.TagNumber(74)
-  $1918.HotelRateTypeEnum_HotelRateType get hotelRateType => $_getN(20);
+  $1919.HotelRateTypeEnum_HotelRateType get hotelRateType => $_getN(20);
   @$pb.TagNumber(74)
-  set hotelRateType($1918.HotelRateTypeEnum_HotelRateType v) { setField(74, v); }
+  set hotelRateType($1919.HotelRateTypeEnum_HotelRateType v) { setField(74, v); }
   @$pb.TagNumber(74)
   $core.bool hasHotelRateType() => $_has(20);
   @$pb.TagNumber(74)
@@ -813,9 +813,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Hotel price bucket.
   @$pb.TagNumber(78)
-  $1919.HotelPriceBucketEnum_HotelPriceBucket get hotelPriceBucket => $_getN(21);
+  $1920.HotelPriceBucketEnum_HotelPriceBucket get hotelPriceBucket => $_getN(21);
   @$pb.TagNumber(78)
-  set hotelPriceBucket($1919.HotelPriceBucketEnum_HotelPriceBucket v) { setField(78, v); }
+  set hotelPriceBucket($1920.HotelPriceBucketEnum_HotelPriceBucket v) { setField(78, v); }
   @$pb.TagNumber(78)
   $core.bool hasHotelPriceBucket() => $_has(21);
   @$pb.TagNumber(78)
@@ -1358,9 +1358,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Ad Destination type.
   @$pb.TagNumber(136)
-  $1920.AdDestinationTypeEnum_AdDestinationType get adDestinationType => $_getN(74);
+  $1921.AdDestinationTypeEnum_AdDestinationType get adDestinationType => $_getN(74);
   @$pb.TagNumber(136)
-  set adDestinationType($1920.AdDestinationTypeEnum_AdDestinationType v) { setField(136, v); }
+  set adDestinationType($1921.AdDestinationTypeEnum_AdDestinationType v) { setField(136, v); }
   @$pb.TagNumber(136)
   $core.bool hasAdDestinationType() => $_has(74);
   @$pb.TagNumber(136)
@@ -1386,9 +1386,9 @@ class Segments extends $pb.GeneratedMessage {
   /// GEO_LOCATION, DEVICE, AUDIENCE show the net adjustment after value
   /// rules were applied.
   @$pb.TagNumber(138)
-  $1921.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension get conversionValueRulePrimaryDimension => $_getN(76);
+  $1922.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension get conversionValueRulePrimaryDimension => $_getN(76);
   @$pb.TagNumber(138)
-  set conversionValueRulePrimaryDimension($1921.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension v) { setField(138, v); }
+  set conversionValueRulePrimaryDimension($1922.ConversionValueRulePrimaryDimensionEnum_ConversionValueRulePrimaryDimension v) { setField(138, v); }
   @$pb.TagNumber(138)
   $core.bool hasConversionValueRulePrimaryDimension() => $_has(76);
   @$pb.TagNumber(138)
@@ -1417,9 +1417,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Recommendation type.
   @$pb.TagNumber(140)
-  $1922.RecommendationTypeEnum_RecommendationType get recommendationType => $_getN(78);
+  $1923.RecommendationTypeEnum_RecommendationType get recommendationType => $_getN(78);
   @$pb.TagNumber(140)
-  set recommendationType($1922.RecommendationTypeEnum_RecommendationType v) { setField(140, v); }
+  set recommendationType($1923.RecommendationTypeEnum_RecommendationType v) { setField(140, v); }
   @$pb.TagNumber(140)
   $core.bool hasRecommendationType() => $_has(78);
   @$pb.TagNumber(140)
@@ -1427,9 +1427,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// iOS Store Kit Ad Network user type.
   @$pb.TagNumber(141)
-  $1923.SkAdNetworkUserTypeEnum_SkAdNetworkUserType get skAdNetworkUserType => $_getN(79);
+  $1924.SkAdNetworkUserTypeEnum_SkAdNetworkUserType get skAdNetworkUserType => $_getN(79);
   @$pb.TagNumber(141)
-  set skAdNetworkUserType($1923.SkAdNetworkUserTypeEnum_SkAdNetworkUserType v) { setField(141, v); }
+  set skAdNetworkUserType($1924.SkAdNetworkUserTypeEnum_SkAdNetworkUserType v) { setField(141, v); }
   @$pb.TagNumber(141)
   $core.bool hasSkAdNetworkUserType() => $_has(79);
   @$pb.TagNumber(141)
@@ -1437,9 +1437,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// iOS Store Kit Ad Network ad event type.
   @$pb.TagNumber(142)
-  $1924.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType get skAdNetworkAdEventType => $_getN(80);
+  $1925.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType get skAdNetworkAdEventType => $_getN(80);
   @$pb.TagNumber(142)
-  set skAdNetworkAdEventType($1924.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType v) { setField(142, v); }
+  set skAdNetworkAdEventType($1925.SkAdNetworkAdEventTypeEnum_SkAdNetworkAdEventType v) { setField(142, v); }
   @$pb.TagNumber(142)
   $core.bool hasSkAdNetworkAdEventType() => $_has(80);
   @$pb.TagNumber(142)
@@ -1461,9 +1461,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// iOS Store Kit Ad Network attribution credit
   @$pb.TagNumber(144)
-  $1925.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit get skAdNetworkAttributionCredit => $_getN(82);
+  $1926.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit get skAdNetworkAttributionCredit => $_getN(82);
   @$pb.TagNumber(144)
-  set skAdNetworkAttributionCredit($1925.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit v) { setField(144, v); }
+  set skAdNetworkAttributionCredit($1926.SkAdNetworkAttributionCreditEnum_SkAdNetworkAttributionCredit v) { setField(144, v); }
   @$pb.TagNumber(144)
   $core.bool hasSkAdNetworkAttributionCredit() => $_has(82);
   @$pb.TagNumber(144)
@@ -1521,9 +1521,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// iOS Store Kit Ad Network coarse conversion value.
   @$pb.TagNumber(151)
-  $1926.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue get skAdNetworkCoarseConversionValue => $_getN(88);
+  $1927.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue get skAdNetworkCoarseConversionValue => $_getN(88);
   @$pb.TagNumber(151)
-  set skAdNetworkCoarseConversionValue($1926.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue v) { setField(151, v); }
+  set skAdNetworkCoarseConversionValue($1927.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue v) { setField(151, v); }
   @$pb.TagNumber(151)
   $core.bool hasSkAdNetworkCoarseConversionValue() => $_has(88);
   @$pb.TagNumber(151)
@@ -1546,9 +1546,9 @@ class Segments extends $pb.GeneratedMessage {
   /// example, non-iOS campaign, or neither source domain nor source app were
   /// present in any postbacks sent by Apple.
   @$pb.TagNumber(153)
-  $1927.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType get skAdNetworkSourceType => $_getN(90);
+  $1928.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType get skAdNetworkSourceType => $_getN(90);
   @$pb.TagNumber(153)
-  set skAdNetworkSourceType($1927.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType v) { setField(153, v); }
+  set skAdNetworkSourceType($1928.SkAdNetworkSourceTypeEnum_SkAdNetworkSourceType v) { setField(153, v); }
   @$pb.TagNumber(153)
   $core.bool hasSkAdNetworkSourceType() => $_has(90);
   @$pb.TagNumber(153)
@@ -1619,9 +1619,9 @@ class Segments extends $pb.GeneratedMessage {
   /// or a returning customer. This segmentation is typically used to measure
   /// the impact of customer acquisition goal.
   @$pb.TagNumber(160)
-  $1928.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket get newVersusReturningCustomers => $_getN(97);
+  $1929.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket get newVersusReturningCustomers => $_getN(97);
   @$pb.TagNumber(160)
-  set newVersusReturningCustomers($1928.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket v) { setField(160, v); }
+  set newVersusReturningCustomers($1929.ConvertingUserPriorEngagementTypeAndLtvBucketEnum_ConvertingUserPriorEngagementTypeAndLtvBucket v) { setField(160, v); }
   @$pb.TagNumber(160)
   $core.bool hasNewVersusReturningCustomers() => $_has(97);
   @$pb.TagNumber(160)
@@ -1681,7 +1681,7 @@ class Segments extends $pb.GeneratedMessage {
 /// A Keyword criterion segment.
 class Keyword extends $pb.GeneratedMessage {
   factory Keyword({
-    $1867.KeywordInfo? info,
+    $1868.KeywordInfo? info,
     $core.String? adGroupCriterion,
   }) {
     final $result = create();
@@ -1698,7 +1698,7 @@ class Keyword extends $pb.GeneratedMessage {
   factory Keyword.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Keyword', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..aOM<$1867.KeywordInfo>(2, _omitFieldNames ? '' : 'info', subBuilder: $1867.KeywordInfo.create)
+    ..aOM<$1868.KeywordInfo>(2, _omitFieldNames ? '' : 'info', subBuilder: $1868.KeywordInfo.create)
     ..aOS(3, _omitFieldNames ? '' : 'adGroupCriterion')
     ..hasRequiredFields = false
   ;
@@ -1726,15 +1726,15 @@ class Keyword extends $pb.GeneratedMessage {
 
   /// Keyword info.
   @$pb.TagNumber(2)
-  $1867.KeywordInfo get info => $_getN(0);
+  $1868.KeywordInfo get info => $_getN(0);
   @$pb.TagNumber(2)
-  set info($1867.KeywordInfo v) { setField(2, v); }
+  set info($1868.KeywordInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInfo() => $_has(0);
   @$pb.TagNumber(2)
   void clearInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $1867.KeywordInfo ensureInfo() => $_ensure(0);
+  $1868.KeywordInfo ensureInfo() => $_ensure(0);
 
   /// The AdGroupCriterion resource name.
   @$pb.TagNumber(3)
@@ -1751,7 +1751,7 @@ class Keyword extends $pb.GeneratedMessage {
 class BudgetCampaignAssociationStatus extends $pb.GeneratedMessage {
   factory BudgetCampaignAssociationStatus({
     $core.String? campaign,
-    $1929.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus? status,
+    $1930.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus? status,
   }) {
     final $result = create();
     if (campaign != null) {
@@ -1768,7 +1768,7 @@ class BudgetCampaignAssociationStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BudgetCampaignAssociationStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'campaign')
-    ..e<$1929.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1929.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus.UNSPECIFIED, valueOf: $1929.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus.valueOf, enumValues: $1929.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus.values)
+    ..e<$1930.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1930.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus.UNSPECIFIED, valueOf: $1930.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus.valueOf, enumValues: $1930.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -1805,9 +1805,9 @@ class BudgetCampaignAssociationStatus extends $pb.GeneratedMessage {
 
   /// Budget campaign association status.
   @$pb.TagNumber(2)
-  $1929.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus get status => $_getN(1);
+  $1930.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1929.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus v) { setField(2, v); }
+  set status($1930.BudgetCampaignAssociationStatusEnum_BudgetCampaignAssociationStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)

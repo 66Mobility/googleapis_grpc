@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'membership.pbenum.dart';
 
 export 'membership.pbenum.dart';
@@ -33,12 +33,12 @@ class Membership extends $pb.GeneratedMessage {
     $core.String? description,
     MembershipEndpoint? endpoint,
     MembershipState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     Authority? authority,
     $core.String? externalId,
-    $1775.Timestamp? lastConnectionTime,
+    $1776.Timestamp? lastConnectionTime,
     $core.String? uniqueId,
     Membership_InfrastructureType? infrastructureType,
     MonitoringConfig? monitoringConfig,
@@ -103,12 +103,12 @@ class Membership extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<MembershipEndpoint>(4, _omitFieldNames ? '' : 'endpoint', subBuilder: MembershipEndpoint.create)
     ..aOM<MembershipState>(5, _omitFieldNames ? '' : 'state', subBuilder: MembershipState.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Authority>(9, _omitFieldNames ? '' : 'authority', subBuilder: Authority.create)
     ..aOS(10, _omitFieldNames ? '' : 'externalId')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'lastConnectionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'lastConnectionTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'uniqueId')
     ..e<Membership_InfrastructureType>(13, _omitFieldNames ? '' : 'infrastructureType', $pb.PbFieldType.OE, defaultOrMaker: Membership_InfrastructureType.INFRASTRUCTURE_TYPE_UNSPECIFIED, valueOf: Membership_InfrastructureType.valueOf, enumValues: Membership_InfrastructureType.values)
     ..aOM<MonitoringConfig>(14, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: MonitoringConfig.create)
@@ -201,39 +201,39 @@ class Membership extends $pb.GeneratedMessage {
 
   /// Output only. When the Membership was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. When the Membership was last updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. When the Membership was deleted.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Optional. How to identify workloads from this Membership.
   /// See the documentation on Workload Identity for more details:
@@ -273,15 +273,15 @@ class Membership extends $pb.GeneratedMessage {
   /// Connect, or that have never connected successfully, this field will be
   /// unset.
   @$pb.TagNumber(11)
-  $1775.Timestamp get lastConnectionTime => $_getN(10);
+  $1776.Timestamp get lastConnectionTime => $_getN(10);
   @$pb.TagNumber(11)
-  set lastConnectionTime($1775.Timestamp v) { setField(11, v); }
+  set lastConnectionTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasLastConnectionTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearLastConnectionTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureLastConnectionTime() => $_ensure(10);
+  $1776.Timestamp ensureLastConnectionTime() => $_ensure(10);
 
   /// Output only. Google-generated UUID for this resource. This is unique across
   /// all Membership resources. If a Membership resource is deleted and another
@@ -1143,7 +1143,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
     $core.int? nodeCount,
     $core.int? vcpuCount,
     $core.int? memoryMb,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (kubernetesApiServerVersion != null) {
@@ -1176,7 +1176,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'vcpuCount', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'memoryMb', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(100, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(100, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1260,15 +1260,15 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   /// update_time is different from the Membership-level update_time since
   /// EndpointDetails are updated internally for API consumers.
   @$pb.TagNumber(100)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(100)
-  set updateTime($1775.Timestamp v) { setField(100, v); }
+  set updateTime($1776.Timestamp v) { setField(100, v); }
   @$pb.TagNumber(100)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(100)
   void clearUpdateTime() => clearField(100);
   @$pb.TagNumber(100)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 /// Authority encodes how Google will recognize identities from this Membership.
@@ -1520,7 +1520,7 @@ class MembershipState extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
     $core.String? description,
   @$core.Deprecated('This field is deprecated.')
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (code != null) {
@@ -1543,7 +1543,7 @@ class MembershipState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta1'), createEmptyInstance: create)
     ..e<MembershipState_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: MembershipState_Code.CODE_UNSPECIFIED, valueOf: MembershipState_Code.valueOf, enumValues: MembershipState_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1595,10 +1595,10 @@ class MembershipState extends $pb.GeneratedMessage {
   /// This field is never set by the Hub Service.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
@@ -1607,7 +1607,7 @@ class MembershipState extends $pb.GeneratedMessage {
   void clearUpdateTime() => clearField(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// Request message for `GkeHubMembershipService.ListMemberships` method.
@@ -2094,7 +2094,7 @@ class DeleteMembershipRequest extends $pb.GeneratedMessage {
 class UpdateMembershipRequest extends $pb.GeneratedMessage {
   factory UpdateMembershipRequest({
     $core.String? name,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Membership? resource,
     $core.String? requestId,
   }) {
@@ -2119,7 +2119,7 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Membership>(3, _omitFieldNames ? '' : 'resource', subBuilder: Membership.create)
     ..aOS(4, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -2160,15 +2160,15 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   /// Required. Mask of fields to update. At least one field path must be
   /// specified in this mask.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Required. Only fields specified in update_mask are updated.
   /// If you specify a field in the update_mask but don't specify its value here
@@ -2719,7 +2719,7 @@ class ValidateExclusivityRequest extends $pb.GeneratedMessage {
 /// The response of exclusivity artifacts validation result status.
 class ValidateExclusivityResponse extends $pb.GeneratedMessage {
   factory ValidateExclusivityResponse({
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (status != null) {
@@ -2732,7 +2732,7 @@ class ValidateExclusivityResponse extends $pb.GeneratedMessage {
   factory ValidateExclusivityResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidateExclusivityResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2764,15 +2764,15 @@ class ValidateExclusivityResponse extends $pb.GeneratedMessage {
   ///  * `ALREADY_EXISTS` means that the Membership CRD is already owned by
   ///     another Hub. See `status.message` for more information.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 }
 
 /// The request to generate the manifests for exclusivity artifacts.
@@ -2934,8 +2934,8 @@ class GenerateExclusivityManifestResponse extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusDetail,
@@ -2971,8 +2971,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusDetail')
@@ -3004,27 +3004,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

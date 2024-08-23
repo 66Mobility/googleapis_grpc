@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/money.pb.dart' as $1814;
+import '../../../type/money.pb.dart' as $1815;
 
 /// Encapsulates toll information on a [`Route`][google.maps.routing.v2.Route] or
 /// on a [`RouteLeg`][google.maps.routing.v2.RouteLeg].
 class TollInfo extends $pb.GeneratedMessage {
   factory TollInfo({
-    $core.Iterable<$1814.Money>? estimatedPrice,
+    $core.Iterable<$1815.Money>? estimatedPrice,
   }) {
     final $result = create();
     if (estimatedPrice != null) {
@@ -32,7 +32,7 @@ class TollInfo extends $pb.GeneratedMessage {
   factory TollInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TollInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..pc<$1814.Money>(1, _omitFieldNames ? '' : 'estimatedPrice', $pb.PbFieldType.PM, subBuilder: $1814.Money.create)
+    ..pc<$1815.Money>(1, _omitFieldNames ? '' : 'estimatedPrice', $pb.PbFieldType.PM, subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -65,7 +65,7 @@ class TollInfo extends $pb.GeneratedMessage {
   /// tolls in one currency. For international trips, this list may contain
   /// multiple items to reflect tolls in different currencies.
   @$pb.TagNumber(1)
-  $core.List<$1814.Money> get estimatedPrice => $_getList(0);
+  $core.List<$1815.Money> get estimatedPrice => $_getList(0);
 }
 
 

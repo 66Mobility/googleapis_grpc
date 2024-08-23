@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 
 ///
 ///  This is used for defining User Defined Function (UDF) resources only when
@@ -25,8 +25,8 @@ import '../../../protobuf/wrappers.pb.dart' as $1780;
 ///  https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql#differences_in_user-defined_javascript_functions
 class UserDefinedFunctionResource extends $pb.GeneratedMessage {
   factory UserDefinedFunctionResource({
-    $1780.StringValue? resourceUri,
-    $1780.StringValue? inlineCode,
+    $1781.StringValue? resourceUri,
+    $1781.StringValue? inlineCode,
   }) {
     final $result = create();
     if (resourceUri != null) {
@@ -42,8 +42,8 @@ class UserDefinedFunctionResource extends $pb.GeneratedMessage {
   factory UserDefinedFunctionResource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserDefinedFunctionResource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(1, _omitFieldNames ? '' : 'resourceUri', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.StringValue>(2, _omitFieldNames ? '' : 'inlineCode', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(1, _omitFieldNames ? '' : 'resourceUri', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.StringValue>(2, _omitFieldNames ? '' : 'inlineCode', subBuilder: $1781.StringValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -71,29 +71,29 @@ class UserDefinedFunctionResource extends $pb.GeneratedMessage {
   /// [Pick one] A code resource to load from a Google Cloud Storage URI
   /// (gs://bucket/path).
   @$pb.TagNumber(1)
-  $1780.StringValue get resourceUri => $_getN(0);
+  $1781.StringValue get resourceUri => $_getN(0);
   @$pb.TagNumber(1)
-  set resourceUri($1780.StringValue v) { setField(1, v); }
+  set resourceUri($1781.StringValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResourceUri() => $_has(0);
   @$pb.TagNumber(1)
   void clearResourceUri() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.StringValue ensureResourceUri() => $_ensure(0);
+  $1781.StringValue ensureResourceUri() => $_ensure(0);
 
   /// [Pick one] An inline resource that contains code for a user-defined
   /// function (UDF). Providing a inline code resource is equivalent to providing
   /// a URI for a file containing the same code.
   @$pb.TagNumber(2)
-  $1780.StringValue get inlineCode => $_getN(1);
+  $1781.StringValue get inlineCode => $_getN(1);
   @$pb.TagNumber(2)
-  set inlineCode($1780.StringValue v) { setField(2, v); }
+  set inlineCode($1781.StringValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInlineCode() => $_has(1);
   @$pb.TagNumber(2)
   void clearInlineCode() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.StringValue ensureInlineCode() => $_ensure(1);
+  $1781.StringValue ensureInlineCode() => $_ensure(1);
 }
 
 

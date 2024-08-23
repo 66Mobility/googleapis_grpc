@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Detailed counts on the entry's usage.
 /// Caveats:
@@ -123,7 +123,7 @@ class UsageStats extends $pb.GeneratedMessage {
 /// The set of all usage signals that we store in Data Catalog.
 class UsageSignal extends $pb.GeneratedMessage {
   factory UsageSignal({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, UsageStats>? usageWithinTimeRange,
   }) {
     final $result = create();
@@ -140,7 +140,7 @@ class UsageSignal extends $pb.GeneratedMessage {
   factory UsageSignal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageSignal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, UsageStats>(2, _omitFieldNames ? '' : 'usageWithinTimeRange', entryClassName: 'UsageSignal.UsageWithinTimeRangeEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: UsageStats.create, valueDefaultOrMaker: UsageStats.getDefault, packageName: const $pb.PackageName('google.cloud.datacatalog.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -168,15 +168,15 @@ class UsageSignal extends $pb.GeneratedMessage {
 
   /// The timestamp of the end of the usage statistics duration.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// Usage statistics over each of the pre-defined time ranges, supported
   /// strings for time ranges are {"24H", "7D", "30D"}.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'authorization_policy.pbenum.dart';
 
 export 'authorization_policy.pbenum.dart';
@@ -331,8 +331,8 @@ class AuthorizationPolicy extends $pb.GeneratedMessage {
   factory AuthorizationPolicy({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     AuthorizationPolicy_Action? action,
     $core.Iterable<AuthorizationPolicy_Rule>? rules,
@@ -368,8 +368,8 @@ class AuthorizationPolicy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthorizationPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networksecurity.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'AuthorizationPolicy.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networksecurity.v1'))
     ..e<AuthorizationPolicy_Action>(6, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE, defaultOrMaker: AuthorizationPolicy_Action.ACTION_UNSPECIFIED, valueOf: AuthorizationPolicy_Action.valueOf, enumValues: AuthorizationPolicy_Action.values)
     ..pc<AuthorizationPolicy_Rule>(7, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: AuthorizationPolicy_Rule.create)
@@ -420,27 +420,27 @@ class AuthorizationPolicy extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. Set of label tags associated with the AuthorizationPolicy resource.
   @$pb.TagNumber(5)
@@ -759,7 +759,7 @@ class CreateAuthorizationPolicyRequest extends $pb.GeneratedMessage {
 /// Request used by the UpdateAuthorizationPolicy method.
 class UpdateAuthorizationPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateAuthorizationPolicyRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     AuthorizationPolicy? authorizationPolicy,
   }) {
     final $result = create();
@@ -776,7 +776,7 @@ class UpdateAuthorizationPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateAuthorizationPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAuthorizationPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networksecurity.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<AuthorizationPolicy>(2, _omitFieldNames ? '' : 'authorizationPolicy', subBuilder: AuthorizationPolicy.create)
     ..hasRequiredFields = false
   ;
@@ -808,15 +808,15 @@ class UpdateAuthorizationPolicyRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Updated AuthorizationPolicy resource.
   @$pb.TagNumber(2)

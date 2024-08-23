@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4504;
+import 'common.pb.dart' as $4506;
 
 /// Access Control Configuration.
 class AclConfig extends $pb.GeneratedMessage {
   factory AclConfig({
     $core.String? name,
-    $4504.IdpConfig? idpConfig,
+    $4506.IdpConfig? idpConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -36,7 +36,7 @@ class AclConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AclConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4504.IdpConfig>(2, _omitFieldNames ? '' : 'idpConfig', subBuilder: $4504.IdpConfig.create)
+    ..aOM<$4506.IdpConfig>(2, _omitFieldNames ? '' : 'idpConfig', subBuilder: $4506.IdpConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -78,15 +78,15 @@ class AclConfig extends $pb.GeneratedMessage {
 
   /// Identity provider config.
   @$pb.TagNumber(2)
-  $4504.IdpConfig get idpConfig => $_getN(1);
+  $4506.IdpConfig get idpConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set idpConfig($4504.IdpConfig v) { setField(2, v); }
+  set idpConfig($4506.IdpConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIdpConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearIdpConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4504.IdpConfig ensureIdpConfig() => $_ensure(1);
+  $4506.IdpConfig ensureIdpConfig() => $_ensure(1);
 }
 
 

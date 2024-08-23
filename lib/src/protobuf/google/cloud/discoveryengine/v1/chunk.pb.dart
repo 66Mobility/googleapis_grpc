@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 
 /// Document metadata contains the information of the document of the current
 /// chunk.
@@ -21,7 +21,7 @@ class Chunk_DocumentMetadata extends $pb.GeneratedMessage {
   factory Chunk_DocumentMetadata({
     $core.String? uri,
     $core.String? title,
-    $1734.Struct? structData,
+    $1735.Struct? structData,
   }) {
     final $result = create();
     if (uri != null) {
@@ -42,7 +42,7 @@ class Chunk_DocumentMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Chunk.DocumentMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'structData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'structData', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -92,15 +92,15 @@ class Chunk_DocumentMetadata extends $pb.GeneratedMessage {
   /// registered [Schema][google.cloud.discoveryengine.v1.Schema] or an
   /// `INVALID_ARGUMENT` error is thrown.
   @$pb.TagNumber(3)
-  $1734.Struct get structData => $_getN(2);
+  $1735.Struct get structData => $_getN(2);
   @$pb.TagNumber(3)
-  set structData($1734.Struct v) { setField(3, v); }
+  set structData($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStructData() => $_has(2);
   @$pb.TagNumber(3)
   void clearStructData() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureStructData() => $_ensure(2);
+  $1735.Struct ensureStructData() => $_ensure(2);
 }
 
 /// Page span of the chunk.
@@ -242,7 +242,7 @@ class Chunk extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? id,
     $core.String? content,
-    $1734.Struct? derivedStructData,
+    $1735.Struct? derivedStructData,
     Chunk_DocumentMetadata? documentMetadata,
     Chunk_PageSpan? pageSpan,
     Chunk_ChunkMetadata? chunkMetadata,
@@ -283,7 +283,7 @@ class Chunk extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'content')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'derivedStructData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'derivedStructData', subBuilder: $1735.Struct.create)
     ..aOM<Chunk_DocumentMetadata>(5, _omitFieldNames ? '' : 'documentMetadata', subBuilder: Chunk_DocumentMetadata.create)
     ..aOM<Chunk_PageSpan>(6, _omitFieldNames ? '' : 'pageSpan', subBuilder: Chunk_PageSpan.create)
     ..aOM<Chunk_ChunkMetadata>(7, _omitFieldNames ? '' : 'chunkMetadata', subBuilder: Chunk_ChunkMetadata.create)
@@ -350,15 +350,15 @@ class Chunk extends $pb.GeneratedMessage {
   /// Output only. This field is OUTPUT_ONLY.
   /// It contains derived data that are not in the original input document.
   @$pb.TagNumber(4)
-  $1734.Struct get derivedStructData => $_getN(3);
+  $1735.Struct get derivedStructData => $_getN(3);
   @$pb.TagNumber(4)
-  set derivedStructData($1734.Struct v) { setField(4, v); }
+  set derivedStructData($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDerivedStructData() => $_has(3);
   @$pb.TagNumber(4)
   void clearDerivedStructData() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureDerivedStructData() => $_ensure(3);
+  $1735.Struct ensureDerivedStructData() => $_ensure(3);
 
   /// Metadata of the document from the current chunk.
   @$pb.TagNumber(5)

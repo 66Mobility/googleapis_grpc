@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../grafeas/v1/severity.pbenum.dart' as $4756;
+import '../../../../grafeas/v1/severity.pbenum.dart' as $4758;
 
 /// Request to get a vulnerability summary for some set of occurrences.
 class GetVulnerabilityOccurrencesSummaryRequest extends $pb.GeneratedMessage {
@@ -88,7 +88,7 @@ class GetVulnerabilityOccurrencesSummaryRequest extends $pb.GeneratedMessage {
 class VulnerabilityOccurrencesSummary_FixableTotalByDigest extends $pb.GeneratedMessage {
   factory VulnerabilityOccurrencesSummary_FixableTotalByDigest({
     $core.String? resourceUri,
-    $4756.Severity? severity,
+    $4758.Severity? severity,
     $fixnum.Int64? fixableCount,
     $fixnum.Int64? totalCount,
   }) {
@@ -113,7 +113,7 @@ class VulnerabilityOccurrencesSummary_FixableTotalByDigest extends $pb.Generated
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VulnerabilityOccurrencesSummary.FixableTotalByDigest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.containeranalysis.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceUri')
-    ..e<$4756.Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $4756.Severity.SEVERITY_UNSPECIFIED, valueOf: $4756.Severity.valueOf, enumValues: $4756.Severity.values)
+    ..e<$4758.Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $4758.Severity.SEVERITY_UNSPECIFIED, valueOf: $4758.Severity.valueOf, enumValues: $4758.Severity.values)
     ..aInt64(3, _omitFieldNames ? '' : 'fixableCount')
     ..aInt64(4, _omitFieldNames ? '' : 'totalCount')
     ..hasRequiredFields = false
@@ -153,9 +153,9 @@ class VulnerabilityOccurrencesSummary_FixableTotalByDigest extends $pb.Generated
   /// The severity for this count. SEVERITY_UNSPECIFIED indicates total across
   /// all severities.
   @$pb.TagNumber(2)
-  $4756.Severity get severity => $_getN(1);
+  $4758.Severity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity($4756.Severity v) { setField(2, v); }
+  set severity($4758.Severity v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSeverity() => $_has(1);
   @$pb.TagNumber(2)

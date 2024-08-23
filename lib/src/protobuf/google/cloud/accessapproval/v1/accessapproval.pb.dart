@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'accessapproval.pbenum.dart';
 
 export 'accessapproval.pbenum.dart';
@@ -280,9 +280,9 @@ class SignatureInfo extends $pb.GeneratedMessage {
 /// A decision that has been made to approve access to a resource.
 class ApproveDecision extends $pb.GeneratedMessage {
   factory ApproveDecision({
-    $1775.Timestamp? approveTime,
-    $1775.Timestamp? expireTime,
-    $1775.Timestamp? invalidateTime,
+    $1776.Timestamp? approveTime,
+    $1776.Timestamp? expireTime,
+    $1776.Timestamp? invalidateTime,
     SignatureInfo? signatureInfo,
     $core.bool? autoApproved,
   }) {
@@ -309,9 +309,9 @@ class ApproveDecision extends $pb.GeneratedMessage {
   factory ApproveDecision.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApproveDecision', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.accessapproval.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'approveTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'invalidateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'approveTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'invalidateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SignatureInfo>(4, _omitFieldNames ? '' : 'signatureInfo', subBuilder: SignatureInfo.create)
     ..aOB(5, _omitFieldNames ? '' : 'autoApproved')
     ..hasRequiredFields = false
@@ -340,39 +340,39 @@ class ApproveDecision extends $pb.GeneratedMessage {
 
   /// The time at which approval was granted.
   @$pb.TagNumber(1)
-  $1775.Timestamp get approveTime => $_getN(0);
+  $1776.Timestamp get approveTime => $_getN(0);
   @$pb.TagNumber(1)
-  set approveTime($1775.Timestamp v) { setField(1, v); }
+  set approveTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasApproveTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearApproveTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureApproveTime() => $_ensure(0);
+  $1776.Timestamp ensureApproveTime() => $_ensure(0);
 
   /// The time at which the approval expires.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 
   /// If set, denotes the timestamp at which the approval is invalidated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get invalidateTime => $_getN(2);
+  $1776.Timestamp get invalidateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set invalidateTime($1775.Timestamp v) { setField(3, v); }
+  set invalidateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInvalidateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearInvalidateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureInvalidateTime() => $_ensure(2);
+  $1776.Timestamp ensureInvalidateTime() => $_ensure(2);
 
   /// The signature for the ApprovalRequest and details on how it was signed.
   @$pb.TagNumber(4)
@@ -400,7 +400,7 @@ class ApproveDecision extends $pb.GeneratedMessage {
 /// A decision that has been made to dismiss an approval request.
 class DismissDecision extends $pb.GeneratedMessage {
   factory DismissDecision({
-    $1775.Timestamp? dismissTime,
+    $1776.Timestamp? dismissTime,
     $core.bool? implicit,
   }) {
     final $result = create();
@@ -417,7 +417,7 @@ class DismissDecision extends $pb.GeneratedMessage {
   factory DismissDecision.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DismissDecision', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.accessapproval.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'dismissTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'dismissTime', subBuilder: $1776.Timestamp.create)
     ..aOB(2, _omitFieldNames ? '' : 'implicit')
     ..hasRequiredFields = false
   ;
@@ -445,15 +445,15 @@ class DismissDecision extends $pb.GeneratedMessage {
 
   /// The time at which the approval request was dismissed.
   @$pb.TagNumber(1)
-  $1775.Timestamp get dismissTime => $_getN(0);
+  $1776.Timestamp get dismissTime => $_getN(0);
   @$pb.TagNumber(1)
-  set dismissTime($1775.Timestamp v) { setField(1, v); }
+  set dismissTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDismissTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearDismissTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureDismissTime() => $_ensure(0);
+  $1776.Timestamp ensureDismissTime() => $_ensure(0);
 
   /// This field will be true if the ApprovalRequest was implicitly dismissed due
   /// to inaction by the access approval approvers (the request is not acted
@@ -534,8 +534,8 @@ class ApprovalRequest extends $pb.GeneratedMessage {
     $core.String? requestedResourceName,
     AccessReason? requestedReason,
     AccessLocations? requestedLocations,
-    $1775.Timestamp? requestTime,
-    $1775.Timestamp? requestedExpiration,
+    $1776.Timestamp? requestTime,
+    $1776.Timestamp? requestedExpiration,
     ApproveDecision? approve,
     DismissDecision? dismiss,
     ResourceProperties? requestedResourceProperties,
@@ -585,8 +585,8 @@ class ApprovalRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'requestedResourceName')
     ..aOM<AccessReason>(3, _omitFieldNames ? '' : 'requestedReason', subBuilder: AccessReason.create)
     ..aOM<AccessLocations>(4, _omitFieldNames ? '' : 'requestedLocations', subBuilder: AccessLocations.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'requestedExpiration', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'requestedExpiration', subBuilder: $1776.Timestamp.create)
     ..aOM<ApproveDecision>(7, _omitFieldNames ? '' : 'approve', subBuilder: ApproveDecision.create)
     ..aOM<DismissDecision>(8, _omitFieldNames ? '' : 'dismiss', subBuilder: DismissDecision.create)
     ..aOM<ResourceProperties>(9, _omitFieldNames ? '' : 'requestedResourceProperties', subBuilder: ResourceProperties.create)
@@ -670,28 +670,28 @@ class ApprovalRequest extends $pb.GeneratedMessage {
 
   /// The time at which approval was requested.
   @$pb.TagNumber(5)
-  $1775.Timestamp get requestTime => $_getN(4);
+  $1776.Timestamp get requestTime => $_getN(4);
   @$pb.TagNumber(5)
-  set requestTime($1775.Timestamp v) { setField(5, v); }
+  set requestTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRequestTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearRequestTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureRequestTime() => $_ensure(4);
+  $1776.Timestamp ensureRequestTime() => $_ensure(4);
 
   /// The requested expiration for the approval. If the request is approved,
   /// access will be granted from the time of approval until the expiration time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get requestedExpiration => $_getN(5);
+  $1776.Timestamp get requestedExpiration => $_getN(5);
   @$pb.TagNumber(6)
-  set requestedExpiration($1775.Timestamp v) { setField(6, v); }
+  set requestedExpiration($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRequestedExpiration() => $_has(5);
   @$pb.TagNumber(6)
   void clearRequestedExpiration() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureRequestedExpiration() => $_ensure(5);
+  $1776.Timestamp ensureRequestedExpiration() => $_ensure(5);
 
   /// Access was approved.
   @$pb.TagNumber(7)
@@ -1320,7 +1320,7 @@ class GetApprovalRequestMessage extends $pb.GeneratedMessage {
 class ApproveApprovalRequestMessage extends $pb.GeneratedMessage {
   factory ApproveApprovalRequestMessage({
     $core.String? name,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1337,7 +1337,7 @@ class ApproveApprovalRequestMessage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApproveApprovalRequestMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.accessapproval.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1374,15 +1374,15 @@ class ApproveApprovalRequestMessage extends $pb.GeneratedMessage {
 
   /// The expiration time of this approval.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 }
 
 /// Request to dismiss an approval request.
@@ -1546,7 +1546,7 @@ class GetAccessApprovalSettingsMessage extends $pb.GeneratedMessage {
 class UpdateAccessApprovalSettingsMessage extends $pb.GeneratedMessage {
   factory UpdateAccessApprovalSettingsMessage({
     AccessApprovalSettings? settings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (settings != null) {
@@ -1563,7 +1563,7 @@ class UpdateAccessApprovalSettingsMessage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccessApprovalSettingsMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.accessapproval.v1'), createEmptyInstance: create)
     ..aOM<AccessApprovalSettings>(1, _omitFieldNames ? '' : 'settings', subBuilder: AccessApprovalSettings.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1611,15 +1611,15 @@ class UpdateAccessApprovalSettingsMessage extends $pb.GeneratedMessage {
   ///  If this field is left unset, only the notification_emails field will be
   ///  updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete access approval settings.

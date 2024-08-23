@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -80,7 +80,7 @@ class Lake_MetastoreStatus extends $pb.GeneratedMessage {
   factory Lake_MetastoreStatus({
     Lake_MetastoreStatus_State? state,
     $core.String? message,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? endpoint,
   }) {
     final $result = create();
@@ -105,7 +105,7 @@ class Lake_MetastoreStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Lake.MetastoreStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..e<Lake_MetastoreStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Lake_MetastoreStatus_State.STATE_UNSPECIFIED, valueOf: Lake_MetastoreStatus_State.valueOf, enumValues: Lake_MetastoreStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'endpoint')
     ..hasRequiredFields = false
   ;
@@ -153,15 +153,15 @@ class Lake_MetastoreStatus extends $pb.GeneratedMessage {
 
   /// Last update time of the metastore status of the lake.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The URI of the endpoint used to access the Metastore service.
   @$pb.TagNumber(4)
@@ -187,8 +187,8 @@ class Lake extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     State? state,
@@ -244,8 +244,8 @@ class Lake extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Lake.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..e<State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: State.STATE_UNSPECIFIED, valueOf: State.valueOf, enumValues: State.values)
@@ -311,27 +311,27 @@ class Lake extends $pb.GeneratedMessage {
 
   /// Output only. The time when the lake was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time when the lake was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User-defined labels for the lake.
   @$pb.TagNumber(6)
@@ -410,7 +410,7 @@ class Lake extends $pb.GeneratedMessage {
 /// Aggregated status of the underlying assets of a lake or zone.
 class AssetStatus extends $pb.GeneratedMessage {
   factory AssetStatus({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.int? activeAssets,
     $core.int? securityPolicyApplyingAssets,
   }) {
@@ -431,7 +431,7 @@ class AssetStatus extends $pb.GeneratedMessage {
   factory AssetStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'activeAssets', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'securityPolicyApplyingAssets', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -460,15 +460,15 @@ class AssetStatus extends $pb.GeneratedMessage {
 
   /// Last update time of the status.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// Number of active assets.
   @$pb.TagNumber(2)
@@ -869,8 +869,8 @@ class Zone extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     State? state,
@@ -926,8 +926,8 @@ class Zone extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Zone.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..e<State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: State.STATE_UNSPECIFIED, valueOf: State.valueOf, enumValues: State.values)
@@ -993,27 +993,27 @@ class Zone extends $pb.GeneratedMessage {
 
   /// Output only. The time when the zone was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time when the zone was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User defined labels for the zone.
   @$pb.TagNumber(6)
@@ -1533,7 +1533,7 @@ class Action extends $pb.GeneratedMessage {
   factory Action({
     Action_Category? category,
     $core.String? issue,
-    $1775.Timestamp? detectTime,
+    $1776.Timestamp? detectTime,
     $core.String? name,
     $core.String? lake,
     $core.String? zone,
@@ -1618,7 +1618,7 @@ class Action extends $pb.GeneratedMessage {
     ..oo(0, [10, 11, 12, 13, 14, 15, 21, 22])
     ..e<Action_Category>(1, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: Action_Category.CATEGORY_UNSPECIFIED, valueOf: Action_Category.valueOf, enumValues: Action_Category.values)
     ..aOS(2, _omitFieldNames ? '' : 'issue')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'detectTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'detectTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'name')
     ..aOS(6, _omitFieldNames ? '' : 'lake')
     ..aOS(7, _omitFieldNames ? '' : 'zone')
@@ -1681,15 +1681,15 @@ class Action extends $pb.GeneratedMessage {
 
   /// The time that the issue was detected.
   @$pb.TagNumber(4)
-  $1775.Timestamp get detectTime => $_getN(2);
+  $1776.Timestamp get detectTime => $_getN(2);
   @$pb.TagNumber(4)
-  set detectTime($1775.Timestamp v) { setField(4, v); }
+  set detectTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDetectTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearDetectTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDetectTime() => $_ensure(2);
+  $1776.Timestamp ensureDetectTime() => $_ensure(2);
 
   /// Output only. The relative resource name of the action, of the form:
   /// `projects/{project}/locations/{location}/lakes/{lake}/actions/{action}`
@@ -1850,7 +1850,7 @@ class Asset_SecurityStatus extends $pb.GeneratedMessage {
   factory Asset_SecurityStatus({
     Asset_SecurityStatus_State? state,
     $core.String? message,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -1871,7 +1871,7 @@ class Asset_SecurityStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset.SecurityStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..e<Asset_SecurityStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Asset_SecurityStatus_State.STATE_UNSPECIFIED, valueOf: Asset_SecurityStatus_State.valueOf, enumValues: Asset_SecurityStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1919,15 +1919,15 @@ class Asset_SecurityStatus extends $pb.GeneratedMessage {
 
   /// Last update time of the status.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// Describe CSV and similar semi-structured data formats.
@@ -2336,7 +2336,7 @@ class Asset_ResourceStatus extends $pb.GeneratedMessage {
   factory Asset_ResourceStatus({
     Asset_ResourceStatus_State? state,
     $core.String? message,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? managedAccessIdentity,
   }) {
     final $result = create();
@@ -2361,7 +2361,7 @@ class Asset_ResourceStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset.ResourceStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..e<Asset_ResourceStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Asset_ResourceStatus_State.STATE_UNSPECIFIED, valueOf: Asset_ResourceStatus_State.valueOf, enumValues: Asset_ResourceStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'managedAccessIdentity')
     ..hasRequiredFields = false
   ;
@@ -2409,15 +2409,15 @@ class Asset_ResourceStatus extends $pb.GeneratedMessage {
 
   /// Last update time of the status.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. Service account associated with the BigQuery Connection.
   @$pb.TagNumber(4)
@@ -2532,10 +2532,10 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
   factory Asset_DiscoveryStatus({
     Asset_DiscoveryStatus_State? state,
     $core.String? message,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? lastRunTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? lastRunTime,
     Asset_DiscoveryStatus_Stats? stats,
-    $1737.Duration? lastRunDuration,
+    $1738.Duration? lastRunDuration,
   }) {
     final $result = create();
     if (state != null) {
@@ -2565,10 +2565,10 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset.DiscoveryStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..e<Asset_DiscoveryStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Asset_DiscoveryStatus_State.STATE_UNSPECIFIED, valueOf: Asset_DiscoveryStatus_State.valueOf, enumValues: Asset_DiscoveryStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'lastRunTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'lastRunTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Asset_DiscoveryStatus_Stats>(6, _omitFieldNames ? '' : 'stats', subBuilder: Asset_DiscoveryStatus_Stats.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'lastRunDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'lastRunDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2615,27 +2615,27 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
 
   /// Last update time of the status.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The start time of the last discovery run.
   @$pb.TagNumber(4)
-  $1775.Timestamp get lastRunTime => $_getN(3);
+  $1776.Timestamp get lastRunTime => $_getN(3);
   @$pb.TagNumber(4)
-  set lastRunTime($1775.Timestamp v) { setField(4, v); }
+  set lastRunTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastRunTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastRunTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureLastRunTime() => $_ensure(3);
+  $1776.Timestamp ensureLastRunTime() => $_ensure(3);
 
   /// Data Stats of the asset reported by discovery.
   @$pb.TagNumber(6)
@@ -2651,15 +2651,15 @@ class Asset_DiscoveryStatus extends $pb.GeneratedMessage {
 
   /// The duration of the last discovery run.
   @$pb.TagNumber(7)
-  $1737.Duration get lastRunDuration => $_getN(5);
+  $1738.Duration get lastRunDuration => $_getN(5);
   @$pb.TagNumber(7)
-  set lastRunDuration($1737.Duration v) { setField(7, v); }
+  set lastRunDuration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLastRunDuration() => $_has(5);
   @$pb.TagNumber(7)
   void clearLastRunDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureLastRunDuration() => $_ensure(5);
+  $1738.Duration ensureLastRunDuration() => $_ensure(5);
 }
 
 /// An asset represents a cloud resource that is being managed within a lake as a
@@ -2669,8 +2669,8 @@ class Asset extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     State? state,
@@ -2730,8 +2730,8 @@ class Asset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Asset.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..e<State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: State.STATE_UNSPECIFIED, valueOf: State.valueOf, enumValues: State.values)
@@ -2799,27 +2799,27 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Output only. The time when the asset was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time when the asset was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User defined labels for the asset.
   @$pb.TagNumber(6)

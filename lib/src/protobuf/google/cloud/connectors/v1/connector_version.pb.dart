@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'authconfig.pb.dart' as $4435;
-import 'common.pb.dart' as $4434;
-import 'common.pbenum.dart' as $4434;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'authconfig.pb.dart' as $4437;
+import 'common.pb.dart' as $4436;
+import 'common.pbenum.dart' as $4436;
 import 'connector_version.pbenum.dart';
-import 'ssl_config.pb.dart' as $4437;
+import 'ssl_config.pb.dart' as $4439;
 
 export 'connector_version.pbenum.dart';
 
@@ -26,19 +26,19 @@ export 'connector_version.pbenum.dart';
 class ConnectorVersion extends $pb.GeneratedMessage {
   factory ConnectorVersion({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
-    $4434.LaunchStage? launchStage,
+    $4436.LaunchStage? launchStage,
     $core.String? releaseVersion,
-    $core.Iterable<$4435.AuthConfigTemplate>? authConfigTemplates,
-    $core.Iterable<$4434.ConfigVariableTemplate>? configVariableTemplates,
+    $core.Iterable<$4437.AuthConfigTemplate>? authConfigTemplates,
+    $core.Iterable<$4436.ConfigVariableTemplate>? configVariableTemplates,
     SupportedRuntimeFeatures? supportedRuntimeFeatures,
     $core.String? displayName,
     EgressControlConfig? egressControlConfig,
-    $core.Iterable<$4434.RoleGrant>? roleGrants,
-    $4434.RoleGrant? roleGrant,
-    $4437.SslConfigTemplate? sslConfigTemplate,
+    $core.Iterable<$4436.RoleGrant>? roleGrants,
+    $4436.RoleGrant? roleGrant,
+    $4439.SslConfigTemplate? sslConfigTemplate,
   }) {
     final $result = create();
     if (name != null) {
@@ -91,19 +91,19 @@ class ConnectorVersion extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConnectorVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'ConnectorVersion.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.connectors.v1'))
-    ..e<$4434.LaunchStage>(6, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $4434.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $4434.LaunchStage.valueOf, enumValues: $4434.LaunchStage.values)
+    ..e<$4436.LaunchStage>(6, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $4436.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $4436.LaunchStage.valueOf, enumValues: $4436.LaunchStage.values)
     ..aOS(7, _omitFieldNames ? '' : 'releaseVersion')
-    ..pc<$4435.AuthConfigTemplate>(8, _omitFieldNames ? '' : 'authConfigTemplates', $pb.PbFieldType.PM, subBuilder: $4435.AuthConfigTemplate.create)
-    ..pc<$4434.ConfigVariableTemplate>(9, _omitFieldNames ? '' : 'configVariableTemplates', $pb.PbFieldType.PM, subBuilder: $4434.ConfigVariableTemplate.create)
+    ..pc<$4437.AuthConfigTemplate>(8, _omitFieldNames ? '' : 'authConfigTemplates', $pb.PbFieldType.PM, subBuilder: $4437.AuthConfigTemplate.create)
+    ..pc<$4436.ConfigVariableTemplate>(9, _omitFieldNames ? '' : 'configVariableTemplates', $pb.PbFieldType.PM, subBuilder: $4436.ConfigVariableTemplate.create)
     ..aOM<SupportedRuntimeFeatures>(10, _omitFieldNames ? '' : 'supportedRuntimeFeatures', subBuilder: SupportedRuntimeFeatures.create)
     ..aOS(11, _omitFieldNames ? '' : 'displayName')
     ..aOM<EgressControlConfig>(12, _omitFieldNames ? '' : 'egressControlConfig', subBuilder: EgressControlConfig.create)
-    ..pc<$4434.RoleGrant>(14, _omitFieldNames ? '' : 'roleGrants', $pb.PbFieldType.PM, subBuilder: $4434.RoleGrant.create)
-    ..aOM<$4434.RoleGrant>(15, _omitFieldNames ? '' : 'roleGrant', subBuilder: $4434.RoleGrant.create)
-    ..aOM<$4437.SslConfigTemplate>(17, _omitFieldNames ? '' : 'sslConfigTemplate', subBuilder: $4437.SslConfigTemplate.create)
+    ..pc<$4436.RoleGrant>(14, _omitFieldNames ? '' : 'roleGrants', $pb.PbFieldType.PM, subBuilder: $4436.RoleGrant.create)
+    ..aOM<$4436.RoleGrant>(15, _omitFieldNames ? '' : 'roleGrant', subBuilder: $4436.RoleGrant.create)
+    ..aOM<$4439.SslConfigTemplate>(17, _omitFieldNames ? '' : 'sslConfigTemplate', subBuilder: $4439.SslConfigTemplate.create)
     ..hasRequiredFields = false
   ;
 
@@ -143,27 +143,27 @@ class ConnectorVersion extends $pb.GeneratedMessage {
 
   /// Output only. Created time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Updated time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. Resource labels to represent user-provided metadata.
   /// Refer to cloud documentation on labels for more details.
@@ -173,9 +173,9 @@ class ConnectorVersion extends $pb.GeneratedMessage {
 
   /// Output only. Flag to mark the version indicating the launch stage.
   @$pb.TagNumber(6)
-  $4434.LaunchStage get launchStage => $_getN(4);
+  $4436.LaunchStage get launchStage => $_getN(4);
   @$pb.TagNumber(6)
-  set launchStage($4434.LaunchStage v) { setField(6, v); }
+  set launchStage($4436.LaunchStage v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLaunchStage() => $_has(4);
   @$pb.TagNumber(6)
@@ -193,11 +193,11 @@ class ConnectorVersion extends $pb.GeneratedMessage {
 
   /// Output only. List of auth configs supported by the Connector Version.
   @$pb.TagNumber(8)
-  $core.List<$4435.AuthConfigTemplate> get authConfigTemplates => $_getList(6);
+  $core.List<$4437.AuthConfigTemplate> get authConfigTemplates => $_getList(6);
 
   /// Output only. List of config variables needed to create a connection.
   @$pb.TagNumber(9)
-  $core.List<$4434.ConfigVariableTemplate> get configVariableTemplates => $_getList(7);
+  $core.List<$4436.ConfigVariableTemplate> get configVariableTemplates => $_getList(7);
 
   /// Output only. Information about the runtime features supported by the
   /// Connector.
@@ -236,32 +236,32 @@ class ConnectorVersion extends $pb.GeneratedMessage {
 
   /// Output only. Role grant configurations for this connector version.
   @$pb.TagNumber(14)
-  $core.List<$4434.RoleGrant> get roleGrants => $_getList(11);
+  $core.List<$4436.RoleGrant> get roleGrants => $_getList(11);
 
   /// Output only. Role grant configuration for this config variable. It will be
   /// DEPRECATED soon.
   @$pb.TagNumber(15)
-  $4434.RoleGrant get roleGrant => $_getN(12);
+  $4436.RoleGrant get roleGrant => $_getN(12);
   @$pb.TagNumber(15)
-  set roleGrant($4434.RoleGrant v) { setField(15, v); }
+  set roleGrant($4436.RoleGrant v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasRoleGrant() => $_has(12);
   @$pb.TagNumber(15)
   void clearRoleGrant() => clearField(15);
   @$pb.TagNumber(15)
-  $4434.RoleGrant ensureRoleGrant() => $_ensure(12);
+  $4436.RoleGrant ensureRoleGrant() => $_ensure(12);
 
   /// Output only. Ssl configuration supported by the Connector.
   @$pb.TagNumber(17)
-  $4437.SslConfigTemplate get sslConfigTemplate => $_getN(13);
+  $4439.SslConfigTemplate get sslConfigTemplate => $_getN(13);
   @$pb.TagNumber(17)
-  set sslConfigTemplate($4437.SslConfigTemplate v) { setField(17, v); }
+  set sslConfigTemplate($4439.SslConfigTemplate v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasSslConfigTemplate() => $_has(13);
   @$pb.TagNumber(17)
   void clearSslConfigTemplate() => clearField(17);
   @$pb.TagNumber(17)
-  $4437.SslConfigTemplate ensureSslConfigTemplate() => $_ensure(13);
+  $4439.SslConfigTemplate ensureSslConfigTemplate() => $_ensure(13);
 }
 
 /// Request message for Connectors.GetConnectorVersion.

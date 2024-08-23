@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/error_details.pb.dart' as $4365;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/error_details.pb.dart' as $4366;
 import 'migration_entities.pbenum.dart';
-import 'migration_error_details.pb.dart' as $4368;
-import 'migration_metrics.pb.dart' as $4369;
-import 'translation_config.pb.dart' as $4366;
-import 'translation_details.pb.dart' as $4367;
-import 'translation_usability.pb.dart' as $4370;
+import 'migration_error_details.pb.dart' as $4369;
+import 'migration_metrics.pb.dart' as $4370;
+import 'translation_config.pb.dart' as $4367;
+import 'translation_details.pb.dart' as $4368;
+import 'translation_usability.pb.dart' as $4371;
 
 export 'migration_entities.pbenum.dart';
 
@@ -31,8 +31,8 @@ class MigrationWorkflow extends $pb.GeneratedMessage {
     $core.String? name,
     $core.Map<$core.String, MigrationTask>? tasks,
     MigrationWorkflow_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? lastUpdateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? lastUpdateTime,
     $core.String? displayName,
   }) {
     final $result = create();
@@ -64,8 +64,8 @@ class MigrationWorkflow extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..m<$core.String, MigrationTask>(2, _omitFieldNames ? '' : 'tasks', entryClassName: 'MigrationWorkflow.TasksEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: MigrationTask.create, valueDefaultOrMaker: MigrationTask.getDefault, packageName: const $pb.PackageName('google.cloud.bigquery.migration.v2'))
     ..e<MigrationWorkflow_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MigrationWorkflow_State.STATE_UNSPECIFIED, valueOf: MigrationWorkflow_State.valueOf, enumValues: MigrationWorkflow_State.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
   ;
@@ -122,27 +122,27 @@ class MigrationWorkflow extends $pb.GeneratedMessage {
 
   /// Time when the workflow was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Time when the workflow was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get lastUpdateTime => $_getN(4);
+  $1776.Timestamp get lastUpdateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set lastUpdateTime($1775.Timestamp v) { setField(5, v); }
+  set lastUpdateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLastUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearLastUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureLastUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureLastUpdateTime() => $_ensure(4);
 
   /// The display name of the workflow. This can be set to give a workflow
   /// a descriptive name. There is no guarantee or enforcement of uniqueness.
@@ -169,14 +169,14 @@ class MigrationTask extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? type,
     MigrationTask_State? state,
-    $4365.ErrorInfo? processingError,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? lastUpdateTime,
-    $4366.TranslationConfigDetails? translationConfigDetails,
-    $4367.TranslationDetails? translationDetails,
-    $core.Iterable<$4368.ResourceErrorDetail>? resourceErrorDetails,
+    $4366.ErrorInfo? processingError,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? lastUpdateTime,
+    $4367.TranslationConfigDetails? translationConfigDetails,
+    $4368.TranslationDetails? translationDetails,
+    $core.Iterable<$4369.ResourceErrorDetail>? resourceErrorDetails,
     $core.int? resourceErrorCount,
-    $core.Iterable<$4369.TimeSeries>? metrics,
+    $core.Iterable<$4370.TimeSeries>? metrics,
     MigrationTaskResult? taskResult,
     $core.int? totalProcessingErrorCount,
     $core.int? totalResourceErrorCount,
@@ -240,14 +240,14 @@ class MigrationTask extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..e<MigrationTask_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MigrationTask_State.STATE_UNSPECIFIED, valueOf: MigrationTask_State.valueOf, enumValues: MigrationTask_State.values)
-    ..aOM<$4365.ErrorInfo>(5, _omitFieldNames ? '' : 'processingError', subBuilder: $4365.ErrorInfo.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4366.TranslationConfigDetails>(14, _omitFieldNames ? '' : 'translationConfigDetails', subBuilder: $4366.TranslationConfigDetails.create)
-    ..aOM<$4367.TranslationDetails>(16, _omitFieldNames ? '' : 'translationDetails', subBuilder: $4367.TranslationDetails.create)
-    ..pc<$4368.ResourceErrorDetail>(17, _omitFieldNames ? '' : 'resourceErrorDetails', $pb.PbFieldType.PM, subBuilder: $4368.ResourceErrorDetail.create)
+    ..aOM<$4366.ErrorInfo>(5, _omitFieldNames ? '' : 'processingError', subBuilder: $4366.ErrorInfo.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4367.TranslationConfigDetails>(14, _omitFieldNames ? '' : 'translationConfigDetails', subBuilder: $4367.TranslationConfigDetails.create)
+    ..aOM<$4368.TranslationDetails>(16, _omitFieldNames ? '' : 'translationDetails', subBuilder: $4368.TranslationDetails.create)
+    ..pc<$4369.ResourceErrorDetail>(17, _omitFieldNames ? '' : 'resourceErrorDetails', $pb.PbFieldType.PM, subBuilder: $4369.ResourceErrorDetail.create)
     ..a<$core.int>(18, _omitFieldNames ? '' : 'resourceErrorCount', $pb.PbFieldType.O3)
-    ..pc<$4369.TimeSeries>(19, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4369.TimeSeries.create)
+    ..pc<$4370.TimeSeries>(19, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4370.TimeSeries.create)
     ..aOM<MigrationTaskResult>(20, _omitFieldNames ? '' : 'taskResult', subBuilder: MigrationTaskResult.create)
     ..a<$core.int>(21, _omitFieldNames ? '' : 'totalProcessingErrorCount', $pb.PbFieldType.O3)
     ..a<$core.int>(22, _omitFieldNames ? '' : 'totalResourceErrorCount', $pb.PbFieldType.O3)
@@ -318,69 +318,69 @@ class MigrationTask extends $pb.GeneratedMessage {
   /// Output only. An explanation that may be populated when the task is in
   /// FAILED state.
   @$pb.TagNumber(5)
-  $4365.ErrorInfo get processingError => $_getN(3);
+  $4366.ErrorInfo get processingError => $_getN(3);
   @$pb.TagNumber(5)
-  set processingError($4365.ErrorInfo v) { setField(5, v); }
+  set processingError($4366.ErrorInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasProcessingError() => $_has(3);
   @$pb.TagNumber(5)
   void clearProcessingError() => clearField(5);
   @$pb.TagNumber(5)
-  $4365.ErrorInfo ensureProcessingError() => $_ensure(3);
+  $4366.ErrorInfo ensureProcessingError() => $_ensure(3);
 
   /// Time when the task was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Time when the task was last updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get lastUpdateTime => $_getN(5);
+  $1776.Timestamp get lastUpdateTime => $_getN(5);
   @$pb.TagNumber(7)
-  set lastUpdateTime($1775.Timestamp v) { setField(7, v); }
+  set lastUpdateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLastUpdateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearLastUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureLastUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureLastUpdateTime() => $_ensure(5);
 
   /// Task configuration for CW Batch/Offline SQL Translation.
   @$pb.TagNumber(14)
-  $4366.TranslationConfigDetails get translationConfigDetails => $_getN(6);
+  $4367.TranslationConfigDetails get translationConfigDetails => $_getN(6);
   @$pb.TagNumber(14)
-  set translationConfigDetails($4366.TranslationConfigDetails v) { setField(14, v); }
+  set translationConfigDetails($4367.TranslationConfigDetails v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTranslationConfigDetails() => $_has(6);
   @$pb.TagNumber(14)
   void clearTranslationConfigDetails() => clearField(14);
   @$pb.TagNumber(14)
-  $4366.TranslationConfigDetails ensureTranslationConfigDetails() => $_ensure(6);
+  $4367.TranslationConfigDetails ensureTranslationConfigDetails() => $_ensure(6);
 
   /// Task details for unified SQL Translation.
   @$pb.TagNumber(16)
-  $4367.TranslationDetails get translationDetails => $_getN(7);
+  $4368.TranslationDetails get translationDetails => $_getN(7);
   @$pb.TagNumber(16)
-  set translationDetails($4367.TranslationDetails v) { setField(16, v); }
+  set translationDetails($4368.TranslationDetails v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasTranslationDetails() => $_has(7);
   @$pb.TagNumber(16)
   void clearTranslationDetails() => clearField(16);
   @$pb.TagNumber(16)
-  $4367.TranslationDetails ensureTranslationDetails() => $_ensure(7);
+  $4368.TranslationDetails ensureTranslationDetails() => $_ensure(7);
 
   /// Output only. Provides details to errors and issues encountered while
   /// processing the task. Presence of error details does not mean that the task
   /// failed.
   @$pb.TagNumber(17)
-  $core.List<$4368.ResourceErrorDetail> get resourceErrorDetails => $_getList(8);
+  $core.List<$4369.ResourceErrorDetail> get resourceErrorDetails => $_getList(8);
 
   /// The number or resources with errors. Note: This is not the total
   /// number of errors as each resource can have more than one error.
@@ -397,7 +397,7 @@ class MigrationTask extends $pb.GeneratedMessage {
 
   /// The metrics for the task.
   @$pb.TagNumber(19)
-  $core.List<$4369.TimeSeries> get metrics => $_getList(10);
+  $core.List<$4370.TimeSeries> get metrics => $_getList(10);
 
   /// Output only. The result of the task.
   @$pb.TagNumber(20)
@@ -441,11 +441,11 @@ class MigrationSubtask extends $pb.GeneratedMessage {
     $core.String? taskId,
     $core.String? type,
     MigrationSubtask_State? state,
-    $4365.ErrorInfo? processingError,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? lastUpdateTime,
-    $core.Iterable<$4369.TimeSeries>? metrics,
-    $core.Iterable<$4368.ResourceErrorDetail>? resourceErrorDetails,
+    $4366.ErrorInfo? processingError,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? lastUpdateTime,
+    $core.Iterable<$4370.TimeSeries>? metrics,
+    $core.Iterable<$4369.ResourceErrorDetail>? resourceErrorDetails,
     $core.int? resourceErrorCount,
   }) {
     final $result = create();
@@ -490,11 +490,11 @@ class MigrationSubtask extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'taskId')
     ..aOS(3, _omitFieldNames ? '' : 'type')
     ..e<MigrationSubtask_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MigrationSubtask_State.STATE_UNSPECIFIED, valueOf: MigrationSubtask_State.valueOf, enumValues: MigrationSubtask_State.values)
-    ..aOM<$4365.ErrorInfo>(6, _omitFieldNames ? '' : 'processingError', subBuilder: $4365.ErrorInfo.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$4369.TimeSeries>(11, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4369.TimeSeries.create)
-    ..pc<$4368.ResourceErrorDetail>(12, _omitFieldNames ? '' : 'resourceErrorDetails', $pb.PbFieldType.PM, subBuilder: $4368.ResourceErrorDetail.create)
+    ..aOM<$4366.ErrorInfo>(6, _omitFieldNames ? '' : 'processingError', subBuilder: $4366.ErrorInfo.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$4370.TimeSeries>(11, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4370.TimeSeries.create)
+    ..pc<$4369.ResourceErrorDetail>(12, _omitFieldNames ? '' : 'resourceErrorDetails', $pb.PbFieldType.PM, subBuilder: $4369.ResourceErrorDetail.create)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'resourceErrorCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -569,49 +569,49 @@ class MigrationSubtask extends $pb.GeneratedMessage {
   /// Output only. An explanation that may be populated when the task is in
   /// FAILED state.
   @$pb.TagNumber(6)
-  $4365.ErrorInfo get processingError => $_getN(4);
+  $4366.ErrorInfo get processingError => $_getN(4);
   @$pb.TagNumber(6)
-  set processingError($4365.ErrorInfo v) { setField(6, v); }
+  set processingError($4366.ErrorInfo v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasProcessingError() => $_has(4);
   @$pb.TagNumber(6)
   void clearProcessingError() => clearField(6);
   @$pb.TagNumber(6)
-  $4365.ErrorInfo ensureProcessingError() => $_ensure(4);
+  $4366.ErrorInfo ensureProcessingError() => $_ensure(4);
 
   /// Time when the subtask was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Time when the subtask was last updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get lastUpdateTime => $_getN(6);
+  $1776.Timestamp get lastUpdateTime => $_getN(6);
   @$pb.TagNumber(8)
-  set lastUpdateTime($1775.Timestamp v) { setField(8, v); }
+  set lastUpdateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasLastUpdateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearLastUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureLastUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureLastUpdateTime() => $_ensure(6);
 
   /// The metrics for the subtask.
   @$pb.TagNumber(11)
-  $core.List<$4369.TimeSeries> get metrics => $_getList(7);
+  $core.List<$4370.TimeSeries> get metrics => $_getList(7);
 
   /// Output only. Provides details to errors and issues encountered while
   /// processing the subtask. Presence of error details does not mean that the
   /// subtask failed.
   @$pb.TagNumber(12)
-  $core.List<$4368.ResourceErrorDetail> get resourceErrorDetails => $_getList(8);
+  $core.List<$4369.ResourceErrorDetail> get resourceErrorDetails => $_getList(8);
 
   /// The number or resources with errors. Note: This is not the total
   /// number of errors as each resource can have more than one error.
@@ -697,8 +697,8 @@ class MigrationTaskResult extends $pb.GeneratedMessage {
 /// Translation specific result details from the migration task.
 class TranslationTaskResult extends $pb.GeneratedMessage {
   factory TranslationTaskResult({
-    $core.Iterable<$4367.Literal>? translatedLiterals,
-    $core.Iterable<$4370.GcsReportLogMessage>? reportLogMessages,
+    $core.Iterable<$4368.Literal>? translatedLiterals,
+    $core.Iterable<$4371.GcsReportLogMessage>? reportLogMessages,
   }) {
     final $result = create();
     if (translatedLiterals != null) {
@@ -714,8 +714,8 @@ class TranslationTaskResult extends $pb.GeneratedMessage {
   factory TranslationTaskResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TranslationTaskResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2'), createEmptyInstance: create)
-    ..pc<$4367.Literal>(1, _omitFieldNames ? '' : 'translatedLiterals', $pb.PbFieldType.PM, subBuilder: $4367.Literal.create)
-    ..pc<$4370.GcsReportLogMessage>(2, _omitFieldNames ? '' : 'reportLogMessages', $pb.PbFieldType.PM, subBuilder: $4370.GcsReportLogMessage.create)
+    ..pc<$4368.Literal>(1, _omitFieldNames ? '' : 'translatedLiterals', $pb.PbFieldType.PM, subBuilder: $4368.Literal.create)
+    ..pc<$4371.GcsReportLogMessage>(2, _omitFieldNames ? '' : 'reportLogMessages', $pb.PbFieldType.PM, subBuilder: $4371.GcsReportLogMessage.create)
     ..hasRequiredFields = false
   ;
 
@@ -742,11 +742,11 @@ class TranslationTaskResult extends $pb.GeneratedMessage {
 
   /// The list of the translated literals.
   @$pb.TagNumber(1)
-  $core.List<$4367.Literal> get translatedLiterals => $_getList(0);
+  $core.List<$4368.Literal> get translatedLiterals => $_getList(0);
 
   /// The records from the aggregate CSV report for a migration workflow.
   @$pb.TagNumber(2)
-  $core.List<$4370.GcsReportLogMessage> get reportLogMessages => $_getList(1);
+  $core.List<$4371.GcsReportLogMessage> get reportLogMessages => $_getList(1);
 }
 
 

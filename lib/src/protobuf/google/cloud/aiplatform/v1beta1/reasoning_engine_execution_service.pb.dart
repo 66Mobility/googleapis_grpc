@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 
 /// Request message for [ReasoningEngineExecutionService.Query][].
 class QueryReasoningEngineRequest extends $pb.GeneratedMessage {
   factory QueryReasoningEngineRequest({
     $core.String? name,
-    $1734.Struct? input,
+    $1735.Struct? input,
   }) {
     final $result = create();
     if (name != null) {
@@ -36,7 +36,7 @@ class QueryReasoningEngineRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryReasoningEngineRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'input', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'input', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,21 +76,21 @@ class QueryReasoningEngineRequest extends $pb.GeneratedMessage {
   /// Optional. Input content provided by users in JSON object format. Examples
   /// include text query, function calling parameters, media bytes, etc.
   @$pb.TagNumber(2)
-  $1734.Struct get input => $_getN(1);
+  $1735.Struct get input => $_getN(1);
   @$pb.TagNumber(2)
-  set input($1734.Struct v) { setField(2, v); }
+  set input($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInput() => $_has(1);
   @$pb.TagNumber(2)
   void clearInput() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureInput() => $_ensure(1);
+  $1735.Struct ensureInput() => $_ensure(1);
 }
 
 /// Response message for [ReasoningEngineExecutionService.Query][]
 class QueryReasoningEngineResponse extends $pb.GeneratedMessage {
   factory QueryReasoningEngineResponse({
-    $1734.Value? output,
+    $1735.Value? output,
   }) {
     final $result = create();
     if (output != null) {
@@ -103,7 +103,7 @@ class QueryReasoningEngineResponse extends $pb.GeneratedMessage {
   factory QueryReasoningEngineResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryReasoningEngineResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'output', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'output', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -130,15 +130,15 @@ class QueryReasoningEngineResponse extends $pb.GeneratedMessage {
 
   /// Response provided by users in JSON object format.
   @$pb.TagNumber(1)
-  $1734.Value get output => $_getN(0);
+  $1735.Value get output => $_getN(0);
   @$pb.TagNumber(1)
-  set output($1734.Value v) { setField(1, v); }
+  set output($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOutput() => $_has(0);
   @$pb.TagNumber(1)
   void clearOutput() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureOutput() => $_ensure(0);
+  $1735.Value ensureOutput() => $_ensure(0);
 }
 
 

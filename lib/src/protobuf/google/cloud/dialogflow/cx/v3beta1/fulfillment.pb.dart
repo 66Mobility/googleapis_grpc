@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import 'advanced_settings.pb.dart' as $4486;
-import 'response_message.pb.dart' as $4485;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import 'advanced_settings.pb.dart' as $4488;
+import 'response_message.pb.dart' as $4487;
 
 /// Setting a parameter value.
 class Fulfillment_SetParameterAction extends $pb.GeneratedMessage {
   factory Fulfillment_SetParameterAction({
     $core.String? parameter,
-    $1734.Value? value,
+    $1735.Value? value,
   }) {
     final $result = create();
     if (parameter != null) {
@@ -38,7 +38,7 @@ class Fulfillment_SetParameterAction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Fulfillment.SetParameterAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parameter')
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -75,15 +75,15 @@ class Fulfillment_SetParameterAction extends $pb.GeneratedMessage {
 
   /// The new value of the parameter. A null value clears the parameter.
   @$pb.TagNumber(2)
-  $1734.Value get value => $_getN(1);
+  $1735.Value get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($1734.Value v) { setField(2, v); }
+  set value($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureValue() => $_ensure(1);
+  $1735.Value ensureValue() => $_ensure(1);
 }
 
 enum Fulfillment_ConditionalCases_Case_CaseContent_CasesOrMessage {
@@ -95,7 +95,7 @@ enum Fulfillment_ConditionalCases_Case_CaseContent_CasesOrMessage {
 /// The list of messages or conditional cases to activate for this case.
 class Fulfillment_ConditionalCases_Case_CaseContent extends $pb.GeneratedMessage {
   factory Fulfillment_ConditionalCases_Case_CaseContent({
-    $4485.ResponseMessage? message,
+    $4487.ResponseMessage? message,
     Fulfillment_ConditionalCases? additionalCases,
   }) {
     final $result = create();
@@ -118,7 +118,7 @@ class Fulfillment_ConditionalCases_Case_CaseContent extends $pb.GeneratedMessage
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Fulfillment.ConditionalCases.Case.CaseContent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$4485.ResponseMessage>(1, _omitFieldNames ? '' : 'message', subBuilder: $4485.ResponseMessage.create)
+    ..aOM<$4487.ResponseMessage>(1, _omitFieldNames ? '' : 'message', subBuilder: $4487.ResponseMessage.create)
     ..aOM<Fulfillment_ConditionalCases>(2, _omitFieldNames ? '' : 'additionalCases', subBuilder: Fulfillment_ConditionalCases.create)
     ..hasRequiredFields = false
   ;
@@ -149,15 +149,15 @@ class Fulfillment_ConditionalCases_Case_CaseContent extends $pb.GeneratedMessage
 
   /// Returned message.
   @$pb.TagNumber(1)
-  $4485.ResponseMessage get message => $_getN(0);
+  $4487.ResponseMessage get message => $_getN(0);
   @$pb.TagNumber(1)
-  set message($4485.ResponseMessage v) { setField(1, v); }
+  set message($4487.ResponseMessage v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
   void clearMessage() => clearField(1);
   @$pb.TagNumber(1)
-  $4485.ResponseMessage ensureMessage() => $_ensure(0);
+  $4487.ResponseMessage ensureMessage() => $_ensure(0);
 
   /// Additional cases to be evaluated.
   @$pb.TagNumber(2)
@@ -306,12 +306,12 @@ class Fulfillment_ConditionalCases extends $pb.GeneratedMessage {
 ///  call the webhook (for example, to load user data from a database), or both.
 class Fulfillment extends $pb.GeneratedMessage {
   factory Fulfillment({
-    $core.Iterable<$4485.ResponseMessage>? messages,
+    $core.Iterable<$4487.ResponseMessage>? messages,
     $core.String? webhook,
     $core.String? tag,
     $core.Iterable<Fulfillment_SetParameterAction>? setParameterActions,
     $core.Iterable<Fulfillment_ConditionalCases>? conditionalCases,
-    $4486.AdvancedSettings? advancedSettings,
+    $4488.AdvancedSettings? advancedSettings,
     $core.bool? returnPartialResponses,
     $core.bool? enableGenerativeFallback,
   }) {
@@ -347,12 +347,12 @@ class Fulfillment extends $pb.GeneratedMessage {
   factory Fulfillment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Fulfillment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..pc<$4485.ResponseMessage>(1, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM, subBuilder: $4485.ResponseMessage.create)
+    ..pc<$4487.ResponseMessage>(1, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM, subBuilder: $4487.ResponseMessage.create)
     ..aOS(2, _omitFieldNames ? '' : 'webhook')
     ..aOS(3, _omitFieldNames ? '' : 'tag')
     ..pc<Fulfillment_SetParameterAction>(4, _omitFieldNames ? '' : 'setParameterActions', $pb.PbFieldType.PM, subBuilder: Fulfillment_SetParameterAction.create)
     ..pc<Fulfillment_ConditionalCases>(5, _omitFieldNames ? '' : 'conditionalCases', $pb.PbFieldType.PM, subBuilder: Fulfillment_ConditionalCases.create)
-    ..aOM<$4486.AdvancedSettings>(7, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4486.AdvancedSettings.create)
+    ..aOM<$4488.AdvancedSettings>(7, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4488.AdvancedSettings.create)
     ..aOB(8, _omitFieldNames ? '' : 'returnPartialResponses')
     ..aOB(12, _omitFieldNames ? '' : 'enableGenerativeFallback')
     ..hasRequiredFields = false
@@ -381,7 +381,7 @@ class Fulfillment extends $pb.GeneratedMessage {
 
   /// The list of rich message responses to present to the user.
   @$pb.TagNumber(1)
-  $core.List<$4485.ResponseMessage> get messages => $_getList(0);
+  $core.List<$4487.ResponseMessage> get messages => $_getList(0);
 
   /// The webhook to call.
   /// Format: `projects/<Project ID>/locations/<Location ID>/agents/<Agent
@@ -422,15 +422,15 @@ class Fulfillment extends $pb.GeneratedMessage {
   /// Hierarchical advanced settings for this fulfillment. The settings exposed
   /// at the lower level overrides the settings exposed at the higher level.
   @$pb.TagNumber(7)
-  $4486.AdvancedSettings get advancedSettings => $_getN(5);
+  $4488.AdvancedSettings get advancedSettings => $_getN(5);
   @$pb.TagNumber(7)
-  set advancedSettings($4486.AdvancedSettings v) { setField(7, v); }
+  set advancedSettings($4488.AdvancedSettings v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAdvancedSettings() => $_has(5);
   @$pb.TagNumber(7)
   void clearAdvancedSettings() => clearField(7);
   @$pb.TagNumber(7)
-  $4486.AdvancedSettings ensureAdvancedSettings() => $_ensure(5);
+  $4488.AdvancedSettings ensureAdvancedSettings() => $_ensure(5);
 
   /// Whether Dialogflow should return currently queued fulfillment response
   /// messages in streaming APIs. If a webhook is specified, it happens before

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'task_template.pb.dart' as $4602;
+import 'task_template.pb.dart' as $4604;
 
 /// ExecutionTemplate describes the data an execution should have when created
 /// from a template.
@@ -23,7 +23,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? annotations,
     $core.int? parallelism,
     $core.int? taskCount,
-    $4602.TaskTemplate? template,
+    $4604.TaskTemplate? template,
   }) {
     final $result = create();
     if (labels != null) {
@@ -52,7 +52,7 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'annotations', entryClassName: 'ExecutionTemplate.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
     ..a<$core.int>(3, _omitFieldNames ? '' : 'parallelism', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'taskCount', $pb.PbFieldType.O3)
-    ..aOM<$4602.TaskTemplate>(5, _omitFieldNames ? '' : 'template', subBuilder: $4602.TaskTemplate.create)
+    ..aOM<$4604.TaskTemplate>(5, _omitFieldNames ? '' : 'template', subBuilder: $4604.TaskTemplate.create)
     ..hasRequiredFields = false
   ;
 
@@ -137,15 +137,15 @@ class ExecutionTemplate extends $pb.GeneratedMessage {
   /// Required. Describes the task(s) that will be created when executing an
   /// execution.
   @$pb.TagNumber(5)
-  $4602.TaskTemplate get template => $_getN(4);
+  $4604.TaskTemplate get template => $_getN(4);
   @$pb.TagNumber(5)
-  set template($4602.TaskTemplate v) { setField(5, v); }
+  set template($4604.TaskTemplate v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTemplate() => $_has(4);
   @$pb.TagNumber(5)
   void clearTemplate() => clearField(5);
   @$pb.TagNumber(5)
-  $4602.TaskTemplate ensureTemplate() => $_ensure(4);
+  $4604.TaskTemplate ensureTemplate() => $_ensure(4);
 }
 
 

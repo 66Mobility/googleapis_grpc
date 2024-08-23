@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import 'k8s.min.pb.dart' as $4600;
-import 'vendor_settings.pb.dart' as $4601;
-import 'vendor_settings.pbenum.dart' as $4601;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import 'k8s.min.pb.dart' as $4602;
+import 'vendor_settings.pb.dart' as $4603;
+import 'vendor_settings.pbenum.dart' as $4603;
 
 /// RevisionTemplate describes the data a revision should have when created from
 /// a template.
@@ -25,13 +25,13 @@ class RevisionTemplate extends $pb.GeneratedMessage {
     $core.String? revision,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? annotations,
-    $4601.RevisionScaling? scaling,
-    $4601.VpcAccess? vpcAccess,
-    $1737.Duration? timeout,
+    $4603.RevisionScaling? scaling,
+    $4603.VpcAccess? vpcAccess,
+    $1738.Duration? timeout,
     $core.String? serviceAccount,
-    $core.Iterable<$4600.Container>? containers,
-    $core.Iterable<$4600.Volume>? volumes,
-    $4601.ExecutionEnvironment? executionEnvironment,
+    $core.Iterable<$4602.Container>? containers,
+    $core.Iterable<$4602.Volume>? volumes,
+    $4603.ExecutionEnvironment? executionEnvironment,
     $core.String? encryptionKey,
     $core.int? maxInstanceRequestConcurrency,
     $core.bool? sessionAffinity,
@@ -90,13 +90,13 @@ class RevisionTemplate extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'revision')
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'RevisionTemplate.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'annotations', entryClassName: 'RevisionTemplate.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
-    ..aOM<$4601.RevisionScaling>(4, _omitFieldNames ? '' : 'scaling', subBuilder: $4601.RevisionScaling.create)
-    ..aOM<$4601.VpcAccess>(6, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4601.VpcAccess.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$4603.RevisionScaling>(4, _omitFieldNames ? '' : 'scaling', subBuilder: $4603.RevisionScaling.create)
+    ..aOM<$4603.VpcAccess>(6, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4603.VpcAccess.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOS(9, _omitFieldNames ? '' : 'serviceAccount')
-    ..pc<$4600.Container>(10, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4600.Container.create)
-    ..pc<$4600.Volume>(11, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4600.Volume.create)
-    ..e<$4601.ExecutionEnvironment>(13, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4601.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4601.ExecutionEnvironment.valueOf, enumValues: $4601.ExecutionEnvironment.values)
+    ..pc<$4602.Container>(10, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4602.Container.create)
+    ..pc<$4602.Volume>(11, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4602.Volume.create)
+    ..e<$4603.ExecutionEnvironment>(13, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4603.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4603.ExecutionEnvironment.valueOf, enumValues: $4603.ExecutionEnvironment.values)
     ..aOS(14, _omitFieldNames ? '' : 'encryptionKey')
     ..a<$core.int>(15, _omitFieldNames ? '' : 'maxInstanceRequestConcurrency', $pb.PbFieldType.O3)
     ..aOB(19, _omitFieldNames ? '' : 'sessionAffinity')
@@ -166,41 +166,41 @@ class RevisionTemplate extends $pb.GeneratedMessage {
 
   /// Optional. Scaling settings for this Revision.
   @$pb.TagNumber(4)
-  $4601.RevisionScaling get scaling => $_getN(3);
+  $4603.RevisionScaling get scaling => $_getN(3);
   @$pb.TagNumber(4)
-  set scaling($4601.RevisionScaling v) { setField(4, v); }
+  set scaling($4603.RevisionScaling v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasScaling() => $_has(3);
   @$pb.TagNumber(4)
   void clearScaling() => clearField(4);
   @$pb.TagNumber(4)
-  $4601.RevisionScaling ensureScaling() => $_ensure(3);
+  $4603.RevisionScaling ensureScaling() => $_ensure(3);
 
   /// Optional. VPC Access configuration to use for this Revision. For more
   /// information, visit
   /// https://cloud.google.com/run/docs/configuring/connecting-vpc.
   @$pb.TagNumber(6)
-  $4601.VpcAccess get vpcAccess => $_getN(4);
+  $4603.VpcAccess get vpcAccess => $_getN(4);
   @$pb.TagNumber(6)
-  set vpcAccess($4601.VpcAccess v) { setField(6, v); }
+  set vpcAccess($4603.VpcAccess v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasVpcAccess() => $_has(4);
   @$pb.TagNumber(6)
   void clearVpcAccess() => clearField(6);
   @$pb.TagNumber(6)
-  $4601.VpcAccess ensureVpcAccess() => $_ensure(4);
+  $4603.VpcAccess ensureVpcAccess() => $_ensure(4);
 
   /// Optional. Max allowed time for an instance to respond to a request.
   @$pb.TagNumber(8)
-  $1737.Duration get timeout => $_getN(5);
+  $1738.Duration get timeout => $_getN(5);
   @$pb.TagNumber(8)
-  set timeout($1737.Duration v) { setField(8, v); }
+  set timeout($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(5);
   @$pb.TagNumber(8)
   void clearTimeout() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureTimeout() => $_ensure(5);
+  $1738.Duration ensureTimeout() => $_ensure(5);
 
   /// Optional. Email address of the IAM service account associated with the
   /// revision of the service. The service account represents the identity of the
@@ -218,17 +218,17 @@ class RevisionTemplate extends $pb.GeneratedMessage {
   /// Holds the single container that defines the unit of execution for this
   /// Revision.
   @$pb.TagNumber(10)
-  $core.List<$4600.Container> get containers => $_getList(7);
+  $core.List<$4602.Container> get containers => $_getList(7);
 
   /// Optional. A list of Volumes to make available to containers.
   @$pb.TagNumber(11)
-  $core.List<$4600.Volume> get volumes => $_getList(8);
+  $core.List<$4602.Volume> get volumes => $_getList(8);
 
   /// Optional. The sandbox environment to host this Revision.
   @$pb.TagNumber(13)
-  $4601.ExecutionEnvironment get executionEnvironment => $_getN(9);
+  $4603.ExecutionEnvironment get executionEnvironment => $_getN(9);
   @$pb.TagNumber(13)
-  set executionEnvironment($4601.ExecutionEnvironment v) { setField(13, v); }
+  set executionEnvironment($4603.ExecutionEnvironment v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasExecutionEnvironment() => $_has(9);
   @$pb.TagNumber(13)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'apt_artifact.pbenum.dart';
 
 export 'apt_artifact.pbenum.dart';
@@ -299,7 +299,7 @@ enum ImportAptArtifactsErrorInfo_Source {
 class ImportAptArtifactsErrorInfo extends $pb.GeneratedMessage {
   factory ImportAptArtifactsErrorInfo({
     ImportAptArtifactsGcsSource? gcsSource,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (gcsSource != null) {
@@ -321,7 +321,7 @@ class ImportAptArtifactsErrorInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportAptArtifactsErrorInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.artifactregistry.v1'), createEmptyInstance: create)
     ..oo(0, [1])
     ..aOM<ImportAptArtifactsGcsSource>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: ImportAptArtifactsGcsSource.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -363,15 +363,15 @@ class ImportAptArtifactsErrorInfo extends $pb.GeneratedMessage {
 
   /// The detailed error status.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 }
 
 /// The response message from importing APT artifacts.

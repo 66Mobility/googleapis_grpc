@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/lifecycle_goals.pb.dart' as $2197;
-import '../enums/customer_acquisition_optimization_mode.pbenum.dart' as $2198;
+import '../common/lifecycle_goals.pb.dart' as $2198;
+import '../enums/customer_acquisition_optimization_mode.pbenum.dart' as $2199;
 
 /// Campaign level customer lifecycle goal settings.
 class CampaignLifecycleGoal extends $pb.GeneratedMessage {
@@ -107,8 +107,8 @@ class CampaignLifecycleGoal extends $pb.GeneratedMessage {
 /// The customer acquisition goal settings for the campaign.
 class CustomerAcquisitionGoalSettings extends $pb.GeneratedMessage {
   factory CustomerAcquisitionGoalSettings({
-    $2198.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode? optimizationMode,
-    $2197.LifecycleGoalValueSettings? valueSettings,
+    $2199.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode? optimizationMode,
+    $2198.LifecycleGoalValueSettings? valueSettings,
   }) {
     final $result = create();
     if (optimizationMode != null) {
@@ -124,8 +124,8 @@ class CustomerAcquisitionGoalSettings extends $pb.GeneratedMessage {
   factory CustomerAcquisitionGoalSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerAcquisitionGoalSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
-    ..e<$2198.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode>(1, _omitFieldNames ? '' : 'optimizationMode', $pb.PbFieldType.OE, defaultOrMaker: $2198.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode.UNSPECIFIED, valueOf: $2198.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode.valueOf, enumValues: $2198.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode.values)
-    ..aOM<$2197.LifecycleGoalValueSettings>(2, _omitFieldNames ? '' : 'valueSettings', subBuilder: $2197.LifecycleGoalValueSettings.create)
+    ..e<$2199.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode>(1, _omitFieldNames ? '' : 'optimizationMode', $pb.PbFieldType.OE, defaultOrMaker: $2199.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode.UNSPECIFIED, valueOf: $2199.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode.valueOf, enumValues: $2199.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode.values)
+    ..aOM<$2198.LifecycleGoalValueSettings>(2, _omitFieldNames ? '' : 'valueSettings', subBuilder: $2198.LifecycleGoalValueSettings.create)
     ..hasRequiredFields = false
   ;
 
@@ -152,9 +152,9 @@ class CustomerAcquisitionGoalSettings extends $pb.GeneratedMessage {
 
   /// Output only. Customer acquisition optimization mode of this campaign.
   @$pb.TagNumber(1)
-  $2198.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode get optimizationMode => $_getN(0);
+  $2199.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode get optimizationMode => $_getN(0);
   @$pb.TagNumber(1)
-  set optimizationMode($2198.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode v) { setField(1, v); }
+  set optimizationMode($2199.CustomerAcquisitionOptimizationModeEnum_CustomerAcquisitionOptimizationMode v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOptimizationMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -162,15 +162,15 @@ class CustomerAcquisitionGoalSettings extends $pb.GeneratedMessage {
 
   /// Output only. Campaign specific values for the customer acquisition goal.
   @$pb.TagNumber(2)
-  $2197.LifecycleGoalValueSettings get valueSettings => $_getN(1);
+  $2198.LifecycleGoalValueSettings get valueSettings => $_getN(1);
   @$pb.TagNumber(2)
-  set valueSettings($2197.LifecycleGoalValueSettings v) { setField(2, v); }
+  set valueSettings($2198.LifecycleGoalValueSettings v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValueSettings() => $_has(1);
   @$pb.TagNumber(2)
   void clearValueSettings() => clearField(2);
   @$pb.TagNumber(2)
-  $2197.LifecycleGoalValueSettings ensureValueSettings() => $_ensure(1);
+  $2198.LifecycleGoalValueSettings ensureValueSettings() => $_ensure(1);
 }
 
 

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'io.pb.dart' as $4332;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'io.pb.dart' as $4333;
 
 enum OperationMetadata_Details {
   deleteDetails, 
@@ -33,9 +33,9 @@ enum OperationMetadata_Details {
 /// Metadata used across all long running operations returned by AutoML API.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $core.Iterable<$1795.Status>? partialFailures,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $core.Iterable<$1796.Status>? partialFailures,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     DeleteOperationMetadata? deleteDetails,
     CreateModelOperationMetadata? createModelDetails,
     $core.int? progressPercent,
@@ -107,9 +107,9 @@ class OperationMetadata extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1'), createEmptyInstance: create)
     ..oo(0, [8, 10, 15, 16, 21, 22, 24, 25, 30])
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<DeleteOperationMetadata>(8, _omitFieldNames ? '' : 'deleteDetails', subBuilder: DeleteOperationMetadata.create)
     ..aOM<CreateModelOperationMetadata>(10, _omitFieldNames ? '' : 'createModelDetails', subBuilder: CreateModelOperationMetadata.create)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
@@ -152,31 +152,31 @@ class OperationMetadata extends $pb.GeneratedMessage {
   /// This field should never exceed 20 entries.
   /// Status details field will contain standard GCP error details.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get partialFailures => $_getList(0);
+  $core.List<$1796.Status> get partialFailures => $_getList(0);
 
   /// Output only. Time when the operation was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when the operation was updated for the last time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Details of a Delete operation.
   @$pb.TagNumber(8)
@@ -689,7 +689,7 @@ class BatchPredictOperationMetadata_BatchPredictOutputInfo extends $pb.Generated
 /// Details of BatchPredict operation.
 class BatchPredictOperationMetadata extends $pb.GeneratedMessage {
   factory BatchPredictOperationMetadata({
-    $4332.BatchPredictInputConfig? inputConfig,
+    $4333.BatchPredictInputConfig? inputConfig,
     BatchPredictOperationMetadata_BatchPredictOutputInfo? outputInfo,
   }) {
     final $result = create();
@@ -706,7 +706,7 @@ class BatchPredictOperationMetadata extends $pb.GeneratedMessage {
   factory BatchPredictOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchPredictOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1'), createEmptyInstance: create)
-    ..aOM<$4332.BatchPredictInputConfig>(1, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4332.BatchPredictInputConfig.create)
+    ..aOM<$4333.BatchPredictInputConfig>(1, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4333.BatchPredictInputConfig.create)
     ..aOM<BatchPredictOperationMetadata_BatchPredictOutputInfo>(2, _omitFieldNames ? '' : 'outputInfo', subBuilder: BatchPredictOperationMetadata_BatchPredictOutputInfo.create)
     ..hasRequiredFields = false
   ;
@@ -735,15 +735,15 @@ class BatchPredictOperationMetadata extends $pb.GeneratedMessage {
   /// Output only. The input config that was given upon starting this
   /// batch predict operation.
   @$pb.TagNumber(1)
-  $4332.BatchPredictInputConfig get inputConfig => $_getN(0);
+  $4333.BatchPredictInputConfig get inputConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set inputConfig($4332.BatchPredictInputConfig v) { setField(1, v); }
+  set inputConfig($4333.BatchPredictInputConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInputConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearInputConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4332.BatchPredictInputConfig ensureInputConfig() => $_ensure(0);
+  $4333.BatchPredictInputConfig ensureInputConfig() => $_ensure(0);
 
   /// Output only. Information further describing this batch predict's output.
   @$pb.TagNumber(2)

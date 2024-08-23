@@ -13,24 +13,24 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'encryption_spec.pb.dart' as $4240;
-import 'feature_monitoring_stats.pb.dart' as $4255;
-import 'io.pb.dart' as $4235;
-import 'job_state.pbenum.dart' as $4246;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'encryption_spec.pb.dart' as $4241;
+import 'feature_monitoring_stats.pb.dart' as $4256;
+import 'io.pb.dart' as $4236;
+import 'job_state.pbenum.dart' as $4247;
 import 'model_deployment_monitoring_job.pbenum.dart';
-import 'model_monitoring.pb.dart' as $4261;
+import 'model_monitoring.pb.dart' as $4262;
 
 export 'model_deployment_monitoring_job.pbenum.dart';
 
 /// All metadata of most recent monitoring pipelines.
 class ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata extends $pb.GeneratedMessage {
   factory ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata({
-    $1775.Timestamp? runTime,
-    $1795.Status? status,
+    $1776.Timestamp? runTime,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (runTime != null) {
@@ -46,8 +46,8 @@ class ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata extends $pb.
   factory ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelDeploymentMonitoringJob.LatestMonitoringPipelineMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'runTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'runTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -75,27 +75,27 @@ class ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata extends $pb.
   /// The time that most recent monitoring pipelines that is related to this
   /// run.
   @$pb.TagNumber(1)
-  $1775.Timestamp get runTime => $_getN(0);
+  $1776.Timestamp get runTime => $_getN(0);
   @$pb.TagNumber(1)
-  set runTime($1775.Timestamp v) { setField(1, v); }
+  set runTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRunTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearRunTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureRunTime() => $_ensure(0);
+  $1776.Timestamp ensureRunTime() => $_ensure(0);
 
   /// The status of the most recent monitoring pipeline.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 }
 
 /// Represents a job that runs periodically to monitor the deployed models in an
@@ -106,25 +106,25 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? endpoint,
-    $4246.JobState? state,
+    $4247.JobState? state,
     ModelDeploymentMonitoringJob_MonitoringScheduleState? scheduleState,
     $core.Iterable<ModelDeploymentMonitoringObjectiveConfig>? modelDeploymentMonitoringObjectiveConfigs,
     ModelDeploymentMonitoringScheduleConfig? modelDeploymentMonitoringScheduleConfig,
-    $4261.SamplingStrategy? loggingSamplingStrategy,
+    $4262.SamplingStrategy? loggingSamplingStrategy,
     $core.String? predictInstanceSchemaUri,
     $core.Iterable<ModelDeploymentMonitoringBigQueryTable>? bigqueryTables,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? nextScheduleTime,
-    $4261.ModelMonitoringAlertConfig? modelMonitoringAlertConfig,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? nextScheduleTime,
+    $4262.ModelMonitoringAlertConfig? modelMonitoringAlertConfig,
     $core.String? analysisInstanceSchemaUri,
-    $1737.Duration? logTtl,
-    $1734.Value? samplePredictInstance,
-    $4235.GcsDestination? statsAnomaliesBaseDirectory,
-    $4240.EncryptionSpec? encryptionSpec,
+    $1738.Duration? logTtl,
+    $1735.Value? samplePredictInstance,
+    $4236.GcsDestination? statsAnomaliesBaseDirectory,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.bool? enableMonitoringPipelineLogs,
-    $1795.Status? error,
+    $1796.Status? error,
     ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata? latestMonitoringPipelineMetadata,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -215,25 +215,25 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'endpoint')
-    ..e<$4246.JobState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4246.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4246.JobState.valueOf, enumValues: $4246.JobState.values)
+    ..e<$4247.JobState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4247.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4247.JobState.valueOf, enumValues: $4247.JobState.values)
     ..e<ModelDeploymentMonitoringJob_MonitoringScheduleState>(5, _omitFieldNames ? '' : 'scheduleState', $pb.PbFieldType.OE, defaultOrMaker: ModelDeploymentMonitoringJob_MonitoringScheduleState.MONITORING_SCHEDULE_STATE_UNSPECIFIED, valueOf: ModelDeploymentMonitoringJob_MonitoringScheduleState.valueOf, enumValues: ModelDeploymentMonitoringJob_MonitoringScheduleState.values)
     ..pc<ModelDeploymentMonitoringObjectiveConfig>(6, _omitFieldNames ? '' : 'modelDeploymentMonitoringObjectiveConfigs', $pb.PbFieldType.PM, subBuilder: ModelDeploymentMonitoringObjectiveConfig.create)
     ..aOM<ModelDeploymentMonitoringScheduleConfig>(7, _omitFieldNames ? '' : 'modelDeploymentMonitoringScheduleConfig', subBuilder: ModelDeploymentMonitoringScheduleConfig.create)
-    ..aOM<$4261.SamplingStrategy>(8, _omitFieldNames ? '' : 'loggingSamplingStrategy', subBuilder: $4261.SamplingStrategy.create)
+    ..aOM<$4262.SamplingStrategy>(8, _omitFieldNames ? '' : 'loggingSamplingStrategy', subBuilder: $4262.SamplingStrategy.create)
     ..aOS(9, _omitFieldNames ? '' : 'predictInstanceSchemaUri')
     ..pc<ModelDeploymentMonitoringBigQueryTable>(10, _omitFieldNames ? '' : 'bigqueryTables', $pb.PbFieldType.PM, subBuilder: ModelDeploymentMonitoringBigQueryTable.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'ModelDeploymentMonitoringJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'nextScheduleTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4261.ModelMonitoringAlertConfig>(15, _omitFieldNames ? '' : 'modelMonitoringAlertConfig', subBuilder: $4261.ModelMonitoringAlertConfig.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'nextScheduleTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4262.ModelMonitoringAlertConfig>(15, _omitFieldNames ? '' : 'modelMonitoringAlertConfig', subBuilder: $4262.ModelMonitoringAlertConfig.create)
     ..aOS(16, _omitFieldNames ? '' : 'analysisInstanceSchemaUri')
-    ..aOM<$1737.Duration>(17, _omitFieldNames ? '' : 'logTtl', subBuilder: $1737.Duration.create)
-    ..aOM<$1734.Value>(19, _omitFieldNames ? '' : 'samplePredictInstance', subBuilder: $1734.Value.create)
-    ..aOM<$4235.GcsDestination>(20, _omitFieldNames ? '' : 'statsAnomaliesBaseDirectory', subBuilder: $4235.GcsDestination.create)
-    ..aOM<$4240.EncryptionSpec>(21, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$1738.Duration>(17, _omitFieldNames ? '' : 'logTtl', subBuilder: $1738.Duration.create)
+    ..aOM<$1735.Value>(19, _omitFieldNames ? '' : 'samplePredictInstance', subBuilder: $1735.Value.create)
+    ..aOM<$4236.GcsDestination>(20, _omitFieldNames ? '' : 'statsAnomaliesBaseDirectory', subBuilder: $4236.GcsDestination.create)
+    ..aOM<$4241.EncryptionSpec>(21, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOB(22, _omitFieldNames ? '' : 'enableMonitoringPipelineLogs')
-    ..aOM<$1795.Status>(23, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(23, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata>(25, _omitFieldNames ? '' : 'latestMonitoringPipelineMetadata', subBuilder: ModelDeploymentMonitoringJob_LatestMonitoringPipelineMetadata.create)
     ..aOB(26, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(27, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -301,9 +301,9 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
   /// Pause the job, the state will be 'PAUSED'.
   /// Resume the job, the state will return to 'RUNNING'.
   @$pb.TagNumber(4)
-  $4246.JobState get state => $_getN(3);
+  $4247.JobState get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state($4246.JobState v) { setField(4, v); }
+  set state($4247.JobState v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -338,15 +338,15 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
 
   /// Required. Sample Strategy for logging.
   @$pb.TagNumber(8)
-  $4261.SamplingStrategy get loggingSamplingStrategy => $_getN(7);
+  $4262.SamplingStrategy get loggingSamplingStrategy => $_getN(7);
   @$pb.TagNumber(8)
-  set loggingSamplingStrategy($4261.SamplingStrategy v) { setField(8, v); }
+  set loggingSamplingStrategy($4262.SamplingStrategy v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasLoggingSamplingStrategy() => $_has(7);
   @$pb.TagNumber(8)
   void clearLoggingSamplingStrategy() => clearField(8);
   @$pb.TagNumber(8)
-  $4261.SamplingStrategy ensureLoggingSamplingStrategy() => $_ensure(7);
+  $4262.SamplingStrategy ensureLoggingSamplingStrategy() => $_ensure(7);
 
   /// YAML schema file uri describing the format of a single instance,
   /// which are given to format this Endpoint's prediction (and explanation).
@@ -382,53 +382,53 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this ModelDeploymentMonitoringJob was created.
   @$pb.TagNumber(12)
-  $1775.Timestamp get createTime => $_getN(11);
+  $1776.Timestamp get createTime => $_getN(11);
   @$pb.TagNumber(12)
-  set createTime($1775.Timestamp v) { setField(12, v); }
+  set createTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCreateTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearCreateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureCreateTime() => $_ensure(11);
+  $1776.Timestamp ensureCreateTime() => $_ensure(11);
 
   /// Output only. Timestamp when this ModelDeploymentMonitoringJob was updated
   /// most recently.
   @$pb.TagNumber(13)
-  $1775.Timestamp get updateTime => $_getN(12);
+  $1776.Timestamp get updateTime => $_getN(12);
   @$pb.TagNumber(13)
-  set updateTime($1775.Timestamp v) { setField(13, v); }
+  set updateTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasUpdateTime() => $_has(12);
   @$pb.TagNumber(13)
   void clearUpdateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(12);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(12);
 
   /// Output only. Timestamp when this monitoring pipeline will be scheduled to
   /// run for the next round.
   @$pb.TagNumber(14)
-  $1775.Timestamp get nextScheduleTime => $_getN(13);
+  $1776.Timestamp get nextScheduleTime => $_getN(13);
   @$pb.TagNumber(14)
-  set nextScheduleTime($1775.Timestamp v) { setField(14, v); }
+  set nextScheduleTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasNextScheduleTime() => $_has(13);
   @$pb.TagNumber(14)
   void clearNextScheduleTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureNextScheduleTime() => $_ensure(13);
+  $1776.Timestamp ensureNextScheduleTime() => $_ensure(13);
 
   /// Alert config for model monitoring.
   @$pb.TagNumber(15)
-  $4261.ModelMonitoringAlertConfig get modelMonitoringAlertConfig => $_getN(14);
+  $4262.ModelMonitoringAlertConfig get modelMonitoringAlertConfig => $_getN(14);
   @$pb.TagNumber(15)
-  set modelMonitoringAlertConfig($4261.ModelMonitoringAlertConfig v) { setField(15, v); }
+  set modelMonitoringAlertConfig($4262.ModelMonitoringAlertConfig v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasModelMonitoringAlertConfig() => $_has(14);
   @$pb.TagNumber(15)
   void clearModelMonitoringAlertConfig() => clearField(15);
   @$pb.TagNumber(15)
-  $4261.ModelMonitoringAlertConfig ensureModelMonitoringAlertConfig() => $_ensure(14);
+  $4262.ModelMonitoringAlertConfig ensureModelMonitoringAlertConfig() => $_ensure(14);
 
   ///  YAML schema file uri describing the format of a single instance that you
   ///  want Tensorflow Data Validation (TFDV) to analyze.
@@ -454,15 +454,15 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
   /// A day is the basic unit of the TTL and we take the ceil of TTL/86400(a
   /// day). e.g. { second: 3600} indicates ttl = 1 day.
   @$pb.TagNumber(17)
-  $1737.Duration get logTtl => $_getN(16);
+  $1738.Duration get logTtl => $_getN(16);
   @$pb.TagNumber(17)
-  set logTtl($1737.Duration v) { setField(17, v); }
+  set logTtl($1738.Duration v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasLogTtl() => $_has(16);
   @$pb.TagNumber(17)
   void clearLogTtl() => clearField(17);
   @$pb.TagNumber(17)
-  $1737.Duration ensureLogTtl() => $_ensure(16);
+  $1738.Duration ensureLogTtl() => $_ensure(16);
 
   /// Sample Predict instance, same format as
   /// [PredictRequest.instances][google.cloud.aiplatform.v1.PredictRequest.instances],
@@ -471,41 +471,41 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
   /// If not set, we will generate predict schema from collected predict
   /// requests.
   @$pb.TagNumber(19)
-  $1734.Value get samplePredictInstance => $_getN(17);
+  $1735.Value get samplePredictInstance => $_getN(17);
   @$pb.TagNumber(19)
-  set samplePredictInstance($1734.Value v) { setField(19, v); }
+  set samplePredictInstance($1735.Value v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasSamplePredictInstance() => $_has(17);
   @$pb.TagNumber(19)
   void clearSamplePredictInstance() => clearField(19);
   @$pb.TagNumber(19)
-  $1734.Value ensureSamplePredictInstance() => $_ensure(17);
+  $1735.Value ensureSamplePredictInstance() => $_ensure(17);
 
   /// Stats anomalies base folder path.
   @$pb.TagNumber(20)
-  $4235.GcsDestination get statsAnomaliesBaseDirectory => $_getN(18);
+  $4236.GcsDestination get statsAnomaliesBaseDirectory => $_getN(18);
   @$pb.TagNumber(20)
-  set statsAnomaliesBaseDirectory($4235.GcsDestination v) { setField(20, v); }
+  set statsAnomaliesBaseDirectory($4236.GcsDestination v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasStatsAnomaliesBaseDirectory() => $_has(18);
   @$pb.TagNumber(20)
   void clearStatsAnomaliesBaseDirectory() => clearField(20);
   @$pb.TagNumber(20)
-  $4235.GcsDestination ensureStatsAnomaliesBaseDirectory() => $_ensure(18);
+  $4236.GcsDestination ensureStatsAnomaliesBaseDirectory() => $_ensure(18);
 
   /// Customer-managed encryption key spec for a ModelDeploymentMonitoringJob. If
   /// set, this ModelDeploymentMonitoringJob and all sub-resources of this
   /// ModelDeploymentMonitoringJob will be secured by this key.
   @$pb.TagNumber(21)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(19);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(19);
   @$pb.TagNumber(21)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(21, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasEncryptionSpec() => $_has(19);
   @$pb.TagNumber(21)
   void clearEncryptionSpec() => clearField(21);
   @$pb.TagNumber(21)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(19);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(19);
 
   /// If true, the scheduled monitoring pipeline logs are sent to
   /// Google Cloud Logging, including pipeline status and anomalies detected.
@@ -523,15 +523,15 @@ class ModelDeploymentMonitoringJob extends $pb.GeneratedMessage {
   /// Output only. Only populated when the job's state is `JOB_STATE_FAILED` or
   /// `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(23)
-  $1795.Status get error => $_getN(21);
+  $1796.Status get error => $_getN(21);
   @$pb.TagNumber(23)
-  set error($1795.Status v) { setField(23, v); }
+  set error($1796.Status v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasError() => $_has(21);
   @$pb.TagNumber(23)
   void clearError() => clearField(23);
   @$pb.TagNumber(23)
-  $1795.Status ensureError() => $_ensure(21);
+  $1796.Status ensureError() => $_ensure(21);
 
   /// Output only. Latest triggered monitoring pipeline metadata.
   @$pb.TagNumber(25)
@@ -672,7 +672,7 @@ class ModelDeploymentMonitoringBigQueryTable extends $pb.GeneratedMessage {
 class ModelDeploymentMonitoringObjectiveConfig extends $pb.GeneratedMessage {
   factory ModelDeploymentMonitoringObjectiveConfig({
     $core.String? deployedModelId,
-    $4261.ModelMonitoringObjectiveConfig? objectiveConfig,
+    $4262.ModelMonitoringObjectiveConfig? objectiveConfig,
   }) {
     final $result = create();
     if (deployedModelId != null) {
@@ -689,7 +689,7 @@ class ModelDeploymentMonitoringObjectiveConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelDeploymentMonitoringObjectiveConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deployedModelId')
-    ..aOM<$4261.ModelMonitoringObjectiveConfig>(2, _omitFieldNames ? '' : 'objectiveConfig', subBuilder: $4261.ModelMonitoringObjectiveConfig.create)
+    ..aOM<$4262.ModelMonitoringObjectiveConfig>(2, _omitFieldNames ? '' : 'objectiveConfig', subBuilder: $4262.ModelMonitoringObjectiveConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -726,22 +726,22 @@ class ModelDeploymentMonitoringObjectiveConfig extends $pb.GeneratedMessage {
 
   /// The objective config of for the modelmonitoring job of this deployed model.
   @$pb.TagNumber(2)
-  $4261.ModelMonitoringObjectiveConfig get objectiveConfig => $_getN(1);
+  $4262.ModelMonitoringObjectiveConfig get objectiveConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set objectiveConfig($4261.ModelMonitoringObjectiveConfig v) { setField(2, v); }
+  set objectiveConfig($4262.ModelMonitoringObjectiveConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasObjectiveConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearObjectiveConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4261.ModelMonitoringObjectiveConfig ensureObjectiveConfig() => $_ensure(1);
+  $4262.ModelMonitoringObjectiveConfig ensureObjectiveConfig() => $_ensure(1);
 }
 
 /// The config for scheduling monitoring job.
 class ModelDeploymentMonitoringScheduleConfig extends $pb.GeneratedMessage {
   factory ModelDeploymentMonitoringScheduleConfig({
-    $1737.Duration? monitorInterval,
-    $1737.Duration? monitorWindow,
+    $1738.Duration? monitorInterval,
+    $1738.Duration? monitorWindow,
   }) {
     final $result = create();
     if (monitorInterval != null) {
@@ -757,8 +757,8 @@ class ModelDeploymentMonitoringScheduleConfig extends $pb.GeneratedMessage {
   factory ModelDeploymentMonitoringScheduleConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelDeploymentMonitoringScheduleConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'monitorInterval', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'monitorWindow', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'monitorInterval', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'monitorWindow', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -787,15 +787,15 @@ class ModelDeploymentMonitoringScheduleConfig extends $pb.GeneratedMessage {
   /// up to next full hour. This defines how often the monitoring jobs are
   /// triggered.
   @$pb.TagNumber(1)
-  $1737.Duration get monitorInterval => $_getN(0);
+  $1738.Duration get monitorInterval => $_getN(0);
   @$pb.TagNumber(1)
-  set monitorInterval($1737.Duration v) { setField(1, v); }
+  set monitorInterval($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMonitorInterval() => $_has(0);
   @$pb.TagNumber(1)
   void clearMonitorInterval() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMonitorInterval() => $_ensure(0);
+  $1738.Duration ensureMonitorInterval() => $_ensure(0);
 
   /// The time window of the prediction data being included in each prediction
   /// dataset. This window specifies how long the data should be collected from
@@ -806,24 +806,24 @@ class ModelDeploymentMonitoringScheduleConfig extends $pb.GeneratedMessage {
   /// 2022-01-08 14:30:00 will be retrieved and aggregated to calculate the
   /// monitoring statistics.
   @$pb.TagNumber(2)
-  $1737.Duration get monitorWindow => $_getN(1);
+  $1738.Duration get monitorWindow => $_getN(1);
   @$pb.TagNumber(2)
-  set monitorWindow($1737.Duration v) { setField(2, v); }
+  set monitorWindow($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMonitorWindow() => $_has(1);
   @$pb.TagNumber(2)
   void clearMonitorWindow() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMonitorWindow() => $_ensure(1);
+  $1738.Duration ensureMonitorWindow() => $_ensure(1);
 }
 
 /// Historical Stats (and Anomalies) for a specific Feature.
 class ModelMonitoringStatsAnomalies_FeatureHistoricStatsAnomalies extends $pb.GeneratedMessage {
   factory ModelMonitoringStatsAnomalies_FeatureHistoricStatsAnomalies({
     $core.String? featureDisplayName,
-    $4261.ThresholdConfig? threshold,
-    $4255.FeatureStatsAnomaly? trainingStats,
-    $core.Iterable<$4255.FeatureStatsAnomaly>? predictionStats,
+    $4262.ThresholdConfig? threshold,
+    $4256.FeatureStatsAnomaly? trainingStats,
+    $core.Iterable<$4256.FeatureStatsAnomaly>? predictionStats,
   }) {
     final $result = create();
     if (featureDisplayName != null) {
@@ -846,9 +846,9 @@ class ModelMonitoringStatsAnomalies_FeatureHistoricStatsAnomalies extends $pb.Ge
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringStatsAnomalies.FeatureHistoricStatsAnomalies', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'featureDisplayName')
-    ..aOM<$4261.ThresholdConfig>(3, _omitFieldNames ? '' : 'threshold', subBuilder: $4261.ThresholdConfig.create)
-    ..aOM<$4255.FeatureStatsAnomaly>(4, _omitFieldNames ? '' : 'trainingStats', subBuilder: $4255.FeatureStatsAnomaly.create)
-    ..pc<$4255.FeatureStatsAnomaly>(5, _omitFieldNames ? '' : 'predictionStats', $pb.PbFieldType.PM, subBuilder: $4255.FeatureStatsAnomaly.create)
+    ..aOM<$4262.ThresholdConfig>(3, _omitFieldNames ? '' : 'threshold', subBuilder: $4262.ThresholdConfig.create)
+    ..aOM<$4256.FeatureStatsAnomaly>(4, _omitFieldNames ? '' : 'trainingStats', subBuilder: $4256.FeatureStatsAnomaly.create)
+    ..pc<$4256.FeatureStatsAnomaly>(5, _omitFieldNames ? '' : 'predictionStats', $pb.PbFieldType.PM, subBuilder: $4256.FeatureStatsAnomaly.create)
     ..hasRequiredFields = false
   ;
 
@@ -885,32 +885,32 @@ class ModelMonitoringStatsAnomalies_FeatureHistoricStatsAnomalies extends $pb.Ge
 
   /// Threshold for anomaly detection.
   @$pb.TagNumber(3)
-  $4261.ThresholdConfig get threshold => $_getN(1);
+  $4262.ThresholdConfig get threshold => $_getN(1);
   @$pb.TagNumber(3)
-  set threshold($4261.ThresholdConfig v) { setField(3, v); }
+  set threshold($4262.ThresholdConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasThreshold() => $_has(1);
   @$pb.TagNumber(3)
   void clearThreshold() => clearField(3);
   @$pb.TagNumber(3)
-  $4261.ThresholdConfig ensureThreshold() => $_ensure(1);
+  $4262.ThresholdConfig ensureThreshold() => $_ensure(1);
 
   /// Stats calculated for the Training Dataset.
   @$pb.TagNumber(4)
-  $4255.FeatureStatsAnomaly get trainingStats => $_getN(2);
+  $4256.FeatureStatsAnomaly get trainingStats => $_getN(2);
   @$pb.TagNumber(4)
-  set trainingStats($4255.FeatureStatsAnomaly v) { setField(4, v); }
+  set trainingStats($4256.FeatureStatsAnomaly v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTrainingStats() => $_has(2);
   @$pb.TagNumber(4)
   void clearTrainingStats() => clearField(4);
   @$pb.TagNumber(4)
-  $4255.FeatureStatsAnomaly ensureTrainingStats() => $_ensure(2);
+  $4256.FeatureStatsAnomaly ensureTrainingStats() => $_ensure(2);
 
   /// A list of historical stats generated by different time window's
   /// Prediction Dataset.
   @$pb.TagNumber(5)
-  $core.List<$4255.FeatureStatsAnomaly> get predictionStats => $_getList(3);
+  $core.List<$4256.FeatureStatsAnomaly> get predictionStats => $_getList(3);
 }
 
 /// Statistics and anomalies generated by Model Monitoring.

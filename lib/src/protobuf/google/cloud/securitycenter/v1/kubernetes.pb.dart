@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'container.pb.dart' as $4616;
+import 'container.pb.dart' as $4618;
 import 'kubernetes.pbenum.dart';
-import 'label.pb.dart' as $4614;
+import 'label.pb.dart' as $4616;
 
 export 'kubernetes.pbenum.dart';
 
@@ -24,8 +24,8 @@ class Kubernetes_Pod extends $pb.GeneratedMessage {
   factory Kubernetes_Pod({
     $core.String? ns,
     $core.String? name,
-    $core.Iterable<$4614.Label>? labels,
-    $core.Iterable<$4616.Container>? containers,
+    $core.Iterable<$4616.Label>? labels,
+    $core.Iterable<$4618.Container>? containers,
   }) {
     final $result = create();
     if (ns != null) {
@@ -49,8 +49,8 @@ class Kubernetes_Pod extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Kubernetes.Pod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'ns')
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..pc<$4614.Label>(3, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $4614.Label.create)
-    ..pc<$4616.Container>(4, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4616.Container.create)
+    ..pc<$4616.Label>(3, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $4616.Label.create)
+    ..pc<$4618.Container>(4, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4618.Container.create)
     ..hasRequiredFields = false
   ;
 
@@ -98,11 +98,11 @@ class Kubernetes_Pod extends $pb.GeneratedMessage {
   /// Pod labels.  For Kubernetes containers, these are applied to the
   /// container.
   @$pb.TagNumber(3)
-  $core.List<$4614.Label> get labels => $_getList(2);
+  $core.List<$4616.Label> get labels => $_getList(2);
 
   /// Pod containers associated with this finding, if any.
   @$pb.TagNumber(4)
-  $core.List<$4616.Container> get containers => $_getList(3);
+  $core.List<$4618.Container> get containers => $_getList(3);
 }
 
 /// Kubernetes nodes associated with the finding.
@@ -634,7 +634,7 @@ class Kubernetes_Object extends $pb.GeneratedMessage {
     $core.String? kind,
     $core.String? ns,
     $core.String? name,
-    $core.Iterable<$4616.Container>? containers,
+    $core.Iterable<$4618.Container>? containers,
   }) {
     final $result = create();
     if (group != null) {
@@ -663,7 +663,7 @@ class Kubernetes_Object extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'kind')
     ..aOS(3, _omitFieldNames ? '' : 'ns')
     ..aOS(4, _omitFieldNames ? '' : 'name')
-    ..pc<$4616.Container>(5, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4616.Container.create)
+    ..pc<$4618.Container>(5, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4618.Container.create)
     ..hasRequiredFields = false
   ;
 
@@ -733,7 +733,7 @@ class Kubernetes_Object extends $pb.GeneratedMessage {
 
   /// Pod containers associated with this finding, if any.
   @$pb.TagNumber(5)
-  $core.List<$4616.Container> get containers => $_getList(4);
+  $core.List<$4618.Container> get containers => $_getList(4);
 }
 
 /// Kubernetes-related attributes.

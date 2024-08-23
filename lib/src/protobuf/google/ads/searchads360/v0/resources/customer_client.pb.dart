@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/customer_status.pbenum.dart' as $4075;
+import '../enums/customer_status.pbenum.dart' as $4076;
 
 /// A link between the given customer and a client customer. CustomerClients only
 /// exist for manager customers. All direct and indirect client customers are
@@ -32,7 +32,7 @@ class CustomerClient extends $pb.GeneratedMessage {
     $core.String? currencyCode,
     $fixnum.Int64? id,
     $core.Iterable<$core.String>? appliedLabels,
-    $4075.CustomerStatusEnum_CustomerStatus? status,
+    $4076.CustomerStatusEnum_CustomerStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -89,7 +89,7 @@ class CustomerClient extends $pb.GeneratedMessage {
     ..aOS(19, _omitFieldNames ? '' : 'currencyCode')
     ..aInt64(20, _omitFieldNames ? '' : 'id')
     ..pPS(21, _omitFieldNames ? '' : 'appliedLabels')
-    ..e<$4075.CustomerStatusEnum_CustomerStatus>(22, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4075.CustomerStatusEnum_CustomerStatus.UNSPECIFIED, valueOf: $4075.CustomerStatusEnum_CustomerStatus.valueOf, enumValues: $4075.CustomerStatusEnum_CustomerStatus.values)
+    ..e<$4076.CustomerStatusEnum_CustomerStatus>(22, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4076.CustomerStatusEnum_CustomerStatus.UNSPECIFIED, valueOf: $4076.CustomerStatusEnum_CustomerStatus.valueOf, enumValues: $4076.CustomerStatusEnum_CustomerStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -232,9 +232,9 @@ class CustomerClient extends $pb.GeneratedMessage {
 
   /// Output only. The status of the client customer. Read only.
   @$pb.TagNumber(22)
-  $4075.CustomerStatusEnum_CustomerStatus get status => $_getN(11);
+  $4076.CustomerStatusEnum_CustomerStatus get status => $_getN(11);
   @$pb.TagNumber(22)
-  set status($4075.CustomerStatusEnum_CustomerStatus v) { setField(22, v); }
+  set status($4076.CustomerStatusEnum_CustomerStatus v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasStatus() => $_has(11);
   @$pb.TagNumber(22)

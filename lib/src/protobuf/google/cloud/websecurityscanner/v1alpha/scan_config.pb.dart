@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'scan_config.pbenum.dart';
 import 'scan_run.pb.dart' as $1517;
 
@@ -259,7 +259,7 @@ class ScanConfig_Authentication extends $pb.GeneratedMessage {
 /// Scan schedule configuration.
 class ScanConfig_Schedule extends $pb.GeneratedMessage {
   factory ScanConfig_Schedule({
-    $1775.Timestamp? scheduleTime,
+    $1776.Timestamp? scheduleTime,
     $core.int? intervalDurationDays,
   }) {
     final $result = create();
@@ -276,7 +276,7 @@ class ScanConfig_Schedule extends $pb.GeneratedMessage {
   factory ScanConfig_Schedule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScanConfig.Schedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.websecurityscanner.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'intervalDurationDays', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -307,15 +307,15 @@ class ScanConfig_Schedule extends $pb.GeneratedMessage {
   /// to current server time, which means the scan will be scheduled to start
   /// immediately.
   @$pb.TagNumber(1)
-  $1775.Timestamp get scheduleTime => $_getN(0);
+  $1776.Timestamp get scheduleTime => $_getN(0);
   @$pb.TagNumber(1)
-  set scheduleTime($1775.Timestamp v) { setField(1, v); }
+  set scheduleTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasScheduleTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearScheduleTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(0);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(0);
 
   /// Required. The duration of time between executions in days.
   @$pb.TagNumber(2)

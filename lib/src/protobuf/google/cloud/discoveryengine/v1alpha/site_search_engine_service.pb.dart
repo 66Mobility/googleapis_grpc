@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'site_search_engine.pb.dart' as $989;
 import 'site_search_engine_service.pbenum.dart';
 
@@ -161,8 +161,8 @@ class CreateTargetSiteRequest extends $pb.GeneratedMessage {
 /// field.
 class CreateTargetSiteMetadata extends $pb.GeneratedMessage {
   factory CreateTargetSiteMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -178,8 +178,8 @@ class CreateTargetSiteMetadata extends $pb.GeneratedMessage {
   factory CreateTargetSiteMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTargetSiteMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -206,28 +206,28 @@ class CreateTargetSiteMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -429,8 +429,8 @@ class UpdateTargetSiteRequest extends $pb.GeneratedMessage {
 /// field.
 class UpdateTargetSiteMetadata extends $pb.GeneratedMessage {
   factory UpdateTargetSiteMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -446,8 +446,8 @@ class UpdateTargetSiteMetadata extends $pb.GeneratedMessage {
   factory UpdateTargetSiteMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTargetSiteMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -474,28 +474,28 @@ class UpdateTargetSiteMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -568,8 +568,8 @@ class DeleteTargetSiteRequest extends $pb.GeneratedMessage {
 /// field.
 class DeleteTargetSiteMetadata extends $pb.GeneratedMessage {
   factory DeleteTargetSiteMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -585,8 +585,8 @@ class DeleteTargetSiteMetadata extends $pb.GeneratedMessage {
   factory DeleteTargetSiteMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteTargetSiteMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -613,28 +613,28 @@ class DeleteTargetSiteMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -821,8 +821,8 @@ class ListTargetSitesResponse extends $pb.GeneratedMessage {
 /// field.
 class BatchCreateTargetSiteMetadata extends $pb.GeneratedMessage {
   factory BatchCreateTargetSiteMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -838,8 +838,8 @@ class BatchCreateTargetSiteMetadata extends $pb.GeneratedMessage {
   factory BatchCreateTargetSiteMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateTargetSiteMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -866,28 +866,28 @@ class BatchCreateTargetSiteMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Response message for
@@ -1036,8 +1036,8 @@ class EnableAdvancedSiteSearchResponse extends $pb.GeneratedMessage {
 /// field.
 class EnableAdvancedSiteSearchMetadata extends $pb.GeneratedMessage {
   factory EnableAdvancedSiteSearchMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -1053,8 +1053,8 @@ class EnableAdvancedSiteSearchMetadata extends $pb.GeneratedMessage {
   factory EnableAdvancedSiteSearchMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnableAdvancedSiteSearchMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1081,28 +1081,28 @@ class EnableAdvancedSiteSearchMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -1203,8 +1203,8 @@ class DisableAdvancedSiteSearchResponse extends $pb.GeneratedMessage {
 /// field.
 class DisableAdvancedSiteSearchMetadata extends $pb.GeneratedMessage {
   factory DisableAdvancedSiteSearchMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -1220,8 +1220,8 @@ class DisableAdvancedSiteSearchMetadata extends $pb.GeneratedMessage {
   factory DisableAdvancedSiteSearchMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DisableAdvancedSiteSearchMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1248,28 +1248,28 @@ class DisableAdvancedSiteSearchMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -1534,8 +1534,8 @@ class RecrawlUrisResponse extends $pb.GeneratedMessage {
 /// field.
 class RecrawlUrisMetadata extends $pb.GeneratedMessage {
   factory RecrawlUrisMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$core.String>? invalidUris,
     $core.int? validUrisCount,
     $core.int? successCount,
@@ -1571,8 +1571,8 @@ class RecrawlUrisMetadata extends $pb.GeneratedMessage {
   factory RecrawlUrisMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecrawlUrisMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pPS(3, _omitFieldNames ? '' : 'invalidUris')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'validUrisCount', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'successCount', $pb.PbFieldType.O3)
@@ -1604,28 +1604,28 @@ class RecrawlUrisMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Unique URIs in the request that don't match any TargetSite in the
   /// DataStore, only match TargetSites that haven't been fully indexed, or match
@@ -1771,8 +1771,8 @@ class BatchVerifyTargetSitesResponse extends $pb.GeneratedMessage {
 /// field.
 class BatchVerifyTargetSitesMetadata extends $pb.GeneratedMessage {
   factory BatchVerifyTargetSitesMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -1788,8 +1788,8 @@ class BatchVerifyTargetSitesMetadata extends $pb.GeneratedMessage {
   factory BatchVerifyTargetSitesMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchVerifyTargetSitesMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1816,28 +1816,28 @@ class BatchVerifyTargetSitesMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -2021,8 +2021,8 @@ class FetchDomainVerificationStatusResponse extends $pb.GeneratedMessage {
 class SetUriPatternDocumentDataRequest extends $pb.GeneratedMessage {
   factory SetUriPatternDocumentDataRequest({
     $core.String? siteSearchEngine,
-    $core.Map<$core.String, $1734.Struct>? documentDataMap,
-    $1734.Struct? schema,
+    $core.Map<$core.String, $1735.Struct>? documentDataMap,
+    $1735.Struct? schema,
     $core.bool? emptyDocumentDataMap,
   }) {
     final $result = create();
@@ -2046,8 +2046,8 @@ class SetUriPatternDocumentDataRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetUriPatternDocumentDataRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'siteSearchEngine')
-    ..m<$core.String, $1734.Struct>(2, _omitFieldNames ? '' : 'documentDataMap', entryClassName: 'SetUriPatternDocumentDataRequest.DocumentDataMapEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Struct.create, valueDefaultOrMaker: $1734.Struct.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'schema', subBuilder: $1734.Struct.create)
+    ..m<$core.String, $1735.Struct>(2, _omitFieldNames ? '' : 'documentDataMap', entryClassName: 'SetUriPatternDocumentDataRequest.DocumentDataMapEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Struct.create, valueDefaultOrMaker: $1735.Struct.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'schema', subBuilder: $1735.Struct.create)
     ..aOB(4, _omitFieldNames ? '' : 'emptyDocumentDataMap')
     ..hasRequiredFields = false
   ;
@@ -2109,7 +2109,7 @@ class SetUriPatternDocumentDataRequest extends $pb.GeneratedMessage {
   ///    }
   ///  }
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1734.Struct> get documentDataMap => $_getMap(1);
+  $core.Map<$core.String, $1735.Struct> get documentDataMap => $_getMap(1);
 
   /// Optional. If not provided, the current
   /// [Schema][google.cloud.discoveryengine.v1alpha.Schema] is used. If provided,
@@ -2117,15 +2117,15 @@ class SetUriPatternDocumentDataRequest extends $pb.GeneratedMessage {
   /// [Schema][google.cloud.discoveryengine.v1alpha.Schema]. If validation fails,
   /// an error is returned.
   @$pb.TagNumber(3)
-  $1734.Struct get schema => $_getN(2);
+  $1735.Struct get schema => $_getN(2);
   @$pb.TagNumber(3)
-  set schema($1734.Struct v) { setField(3, v); }
+  set schema($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSchema() => $_has(2);
   @$pb.TagNumber(3)
   void clearSchema() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureSchema() => $_ensure(2);
+  $1735.Struct ensureSchema() => $_ensure(2);
 
   /// If true, clears the document data map. If true,
   /// [SetUriPatternDocumentDataRequest.document_data_map][google.cloud.discoveryengine.v1alpha.SetUriPatternDocumentDataRequest.document_data_map]
@@ -2181,8 +2181,8 @@ class SetUriPatternDocumentDataResponse extends $pb.GeneratedMessage {
 /// field.
 class SetUriPatternDocumentDataMetadata extends $pb.GeneratedMessage {
   factory SetUriPatternDocumentDataMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -2198,8 +2198,8 @@ class SetUriPatternDocumentDataMetadata extends $pb.GeneratedMessage {
   factory SetUriPatternDocumentDataMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetUriPatternDocumentDataMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2226,28 +2226,28 @@ class SetUriPatternDocumentDataMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -2312,7 +2312,7 @@ class GetUriPatternDocumentDataRequest extends $pb.GeneratedMessage {
 /// method.
 class GetUriPatternDocumentDataResponse extends $pb.GeneratedMessage {
   factory GetUriPatternDocumentDataResponse({
-    $core.Map<$core.String, $1734.Struct>? documentDataMap,
+    $core.Map<$core.String, $1735.Struct>? documentDataMap,
   }) {
     final $result = create();
     if (documentDataMap != null) {
@@ -2325,7 +2325,7 @@ class GetUriPatternDocumentDataResponse extends $pb.GeneratedMessage {
   factory GetUriPatternDocumentDataResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetUriPatternDocumentDataResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..m<$core.String, $1734.Struct>(1, _omitFieldNames ? '' : 'documentDataMap', entryClassName: 'GetUriPatternDocumentDataResponse.DocumentDataMapEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Struct.create, valueDefaultOrMaker: $1734.Struct.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
+    ..m<$core.String, $1735.Struct>(1, _omitFieldNames ? '' : 'documentDataMap', entryClassName: 'GetUriPatternDocumentDataResponse.DocumentDataMapEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Struct.create, valueDefaultOrMaker: $1735.Struct.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
     ..hasRequiredFields = false
   ;
 
@@ -2360,7 +2360,7 @@ class GetUriPatternDocumentDataResponse extends $pb.GeneratedMessage {
   ///   }
   /// }
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $1734.Struct> get documentDataMap => $_getMap(0);
+  $core.Map<$core.String, $1735.Struct> get documentDataMap => $_getMap(0);
 }
 
 

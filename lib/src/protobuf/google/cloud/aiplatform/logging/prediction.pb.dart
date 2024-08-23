@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// The access log entry definition of online prediction.
 class OnlinePredictionLogEntry extends $pb.GeneratedMessage {
@@ -23,7 +23,7 @@ class OnlinePredictionLogEntry extends $pb.GeneratedMessage {
     $core.String? deployedModelId,
     $fixnum.Int64? instanceCount,
     $fixnum.Int64? predictionCount,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -52,7 +52,7 @@ class OnlinePredictionLogEntry extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'deployedModelId')
     ..aInt64(3, _omitFieldNames ? '' : 'instanceCount')
     ..aInt64(4, _omitFieldNames ? '' : 'predictionCount')
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -122,15 +122,15 @@ class OnlinePredictionLogEntry extends $pb.GeneratedMessage {
   /// The error code and message.
   /// Populated when prediction fails.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 }
 
 

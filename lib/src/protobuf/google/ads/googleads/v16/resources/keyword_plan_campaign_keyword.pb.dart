@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/keyword_match_type.pbenum.dart' as $2544;
+import '../enums/keyword_match_type.pbenum.dart' as $2545;
 
 /// A Keyword Plan Campaign keyword.
 /// Only negative keywords are supported for Campaign Keyword.
 class KeywordPlanCampaignKeyword extends $pb.GeneratedMessage {
   factory KeywordPlanCampaignKeyword({
     $core.String? resourceName,
-    $2544.KeywordMatchTypeEnum_KeywordMatchType? matchType,
+    $2545.KeywordMatchTypeEnum_KeywordMatchType? matchType,
     $core.String? keywordPlanCampaign,
     $fixnum.Int64? id,
     $core.String? text,
@@ -54,7 +54,7 @@ class KeywordPlanCampaignKeyword extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanCampaignKeyword', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2544.KeywordMatchTypeEnum_KeywordMatchType>(5, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $2544.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $2544.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $2544.KeywordMatchTypeEnum_KeywordMatchType.values)
+    ..e<$2545.KeywordMatchTypeEnum_KeywordMatchType>(5, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $2545.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $2545.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $2545.KeywordMatchTypeEnum_KeywordMatchType.values)
     ..aOS(8, _omitFieldNames ? '' : 'keywordPlanCampaign')
     ..aInt64(9, _omitFieldNames ? '' : 'id')
     ..aOS(10, _omitFieldNames ? '' : 'text')
@@ -98,9 +98,9 @@ class KeywordPlanCampaignKeyword extends $pb.GeneratedMessage {
 
   /// The keyword match type.
   @$pb.TagNumber(5)
-  $2544.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(1);
+  $2545.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(1);
   @$pb.TagNumber(5)
-  set matchType($2544.KeywordMatchTypeEnum_KeywordMatchType v) { setField(5, v); }
+  set matchType($2545.KeywordMatchTypeEnum_KeywordMatchType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMatchType() => $_has(1);
   @$pb.TagNumber(5)

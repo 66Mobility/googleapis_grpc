@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4769;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4771;
 
 /// The download metadata for an invocation
 class DownloadMetadata extends $pb.GeneratedMessage {
   factory DownloadMetadata({
     $core.String? name,
-    $4769.UploadStatus? uploadStatus,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? finalizeTime,
-    $1775.Timestamp? immutableTime,
+    $4771.UploadStatus? uploadStatus,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? finalizeTime,
+    $1776.Timestamp? immutableTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -49,10 +49,10 @@ class DownloadMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DownloadMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<$4769.UploadStatus>(2, _omitFieldNames ? '' : 'uploadStatus', $pb.PbFieldType.OE, defaultOrMaker: $4769.UploadStatus.UPLOAD_STATUS_UNSPECIFIED, valueOf: $4769.UploadStatus.valueOf, enumValues: $4769.UploadStatus.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'finalizeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'immutableTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4771.UploadStatus>(2, _omitFieldNames ? '' : 'uploadStatus', $pb.PbFieldType.OE, defaultOrMaker: $4771.UploadStatus.UPLOAD_STATUS_UNSPECIFIED, valueOf: $4771.UploadStatus.valueOf, enumValues: $4771.UploadStatus.values)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'finalizeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'immutableTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -91,9 +91,9 @@ class DownloadMetadata extends $pb.GeneratedMessage {
   /// Indicates the upload status of the invocation, whether it is
   /// post-processing, or immutable, etc.
   @$pb.TagNumber(2)
-  $4769.UploadStatus get uploadStatus => $_getN(1);
+  $4771.UploadStatus get uploadStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set uploadStatus($4769.UploadStatus v) { setField(2, v); }
+  set uploadStatus($4771.UploadStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUploadStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -103,43 +103,43 @@ class DownloadMetadata extends $pb.GeneratedMessage {
   /// This does not necessarily line up with the start time of the invocation.
   /// Please use invocation.timing.start_time for that purpose.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// If populated, the time when FinalizeInvocation is called or when invocation
   /// is automatically finalized. This field is populated when upload_status
   /// becomes POST_PROCESSING.
   @$pb.TagNumber(4)
-  $1775.Timestamp get finalizeTime => $_getN(3);
+  $1776.Timestamp get finalizeTime => $_getN(3);
   @$pb.TagNumber(4)
-  set finalizeTime($1775.Timestamp v) { setField(4, v); }
+  set finalizeTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFinalizeTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearFinalizeTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureFinalizeTime() => $_ensure(3);
+  $1776.Timestamp ensureFinalizeTime() => $_ensure(3);
 
   /// If populated, the time when all post processing is done and the invocation
   /// is marked as immutable. This field is populated when upload_status becomes
   /// IMMUTABLE.
   @$pb.TagNumber(5)
-  $1775.Timestamp get immutableTime => $_getN(4);
+  $1776.Timestamp get immutableTime => $_getN(4);
   @$pb.TagNumber(5)
-  set immutableTime($1775.Timestamp v) { setField(5, v); }
+  set immutableTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasImmutableTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearImmutableTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureImmutableTime() => $_ensure(4);
+  $1776.Timestamp ensureImmutableTime() => $_ensure(4);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'entity_type.pbenum.dart';
 
 export 'entity_type.pbenum.dart';
@@ -581,7 +581,7 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
   factory UpdateEntityTypeRequest({
     EntityType? entityType,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (entityType != null) {
@@ -602,7 +602,7 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEntityTypeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<EntityType>(1, _omitFieldNames ? '' : 'entityType', subBuilder: EntityType.create)
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -655,15 +655,15 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
 
   /// Optional. The mask to control which fields get updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The request message for
@@ -737,7 +737,7 @@ class BatchUpdateEntityTypesRequest extends $pb.GeneratedMessage {
     $core.String? entityTypeBatchUri,
     EntityTypeBatch? entityTypeBatchInline,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -772,7 +772,7 @@ class BatchUpdateEntityTypesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'entityTypeBatchUri')
     ..aOM<EntityTypeBatch>(3, _omitFieldNames ? '' : 'entityTypeBatchInline', subBuilder: EntityTypeBatch.create)
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -854,15 +854,15 @@ class BatchUpdateEntityTypesRequest extends $pb.GeneratedMessage {
 
   /// Optional. The mask to control which fields get updated.
   @$pb.TagNumber(5)
-  $2209.FieldMask get updateMask => $_getN(4);
+  $2210.FieldMask get updateMask => $_getN(4);
   @$pb.TagNumber(5)
-  set updateMask($2209.FieldMask v) { setField(5, v); }
+  set updateMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(4);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(4);
 }
 
 /// The response message for
@@ -1070,7 +1070,7 @@ class BatchUpdateEntitiesRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.Iterable<EntityType_Entity>? entities,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1095,7 +1095,7 @@ class BatchUpdateEntitiesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..pc<EntityType_Entity>(2, _omitFieldNames ? '' : 'entities', $pb.PbFieldType.PM, subBuilder: EntityType_Entity.create)
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1154,15 +1154,15 @@ class BatchUpdateEntitiesRequest extends $pb.GeneratedMessage {
 
   /// Optional. The mask to control which fields get updated.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// The request message for

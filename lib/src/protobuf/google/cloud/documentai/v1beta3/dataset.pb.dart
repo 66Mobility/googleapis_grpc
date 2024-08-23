@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'dataset.pbenum.dart';
-import 'document.pb.dart' as $4523;
-import 'document_io.pb.dart' as $4522;
-import 'document_schema.pb.dart' as $4524;
+import 'document.pb.dart' as $4525;
+import 'document_io.pb.dart' as $4524;
+import 'document_schema.pb.dart' as $4526;
 
 export 'dataset.pbenum.dart';
 
 /// Configuration specific to the Cloud Storage-based implementation.
 class Dataset_GCSManagedConfig extends $pb.GeneratedMessage {
   factory Dataset_GCSManagedConfig({
-    $4522.GcsPrefix? gcsPrefix,
+    $4524.GcsPrefix? gcsPrefix,
   }) {
     final $result = create();
     if (gcsPrefix != null) {
@@ -36,7 +36,7 @@ class Dataset_GCSManagedConfig extends $pb.GeneratedMessage {
   factory Dataset_GCSManagedConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Dataset.GCSManagedConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
-    ..aOM<$4522.GcsPrefix>(1, _omitFieldNames ? '' : 'gcsPrefix', subBuilder: $4522.GcsPrefix.create)
+    ..aOM<$4524.GcsPrefix>(1, _omitFieldNames ? '' : 'gcsPrefix', subBuilder: $4524.GcsPrefix.create)
     ..hasRequiredFields = false
   ;
 
@@ -64,15 +64,15 @@ class Dataset_GCSManagedConfig extends $pb.GeneratedMessage {
   /// Required. The Cloud Storage URI (a directory) where the documents
   /// belonging to the dataset must be stored.
   @$pb.TagNumber(1)
-  $4522.GcsPrefix get gcsPrefix => $_getN(0);
+  $4524.GcsPrefix get gcsPrefix => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsPrefix($4522.GcsPrefix v) { setField(1, v); }
+  set gcsPrefix($4524.GcsPrefix v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGcsPrefix() => $_has(0);
   @$pb.TagNumber(1)
   void clearGcsPrefix() => clearField(1);
   @$pb.TagNumber(1)
-  $4522.GcsPrefix ensureGcsPrefix() => $_ensure(0);
+  $4524.GcsPrefix ensureGcsPrefix() => $_ensure(0);
 }
 
 /// Configuration specific to the Document AI Warehouse-based implementation.
@@ -560,7 +560,7 @@ enum DocumentId_Type {
 class DocumentId extends $pb.GeneratedMessage {
   factory DocumentId({
     DocumentId_GCSManagedDocumentId? gcsManagedDocId,
-    $4523.RevisionRef? revisionRef,
+    $4525.RevisionRef? revisionRef,
     DocumentId_UnmanagedDocumentId? unmanagedDocId,
   }) {
     final $result = create();
@@ -587,7 +587,7 @@ class DocumentId extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DocumentId', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..oo(0, [1, 4])
     ..aOM<DocumentId_GCSManagedDocumentId>(1, _omitFieldNames ? '' : 'gcsManagedDocId', subBuilder: DocumentId_GCSManagedDocumentId.create)
-    ..aOM<$4523.RevisionRef>(3, _omitFieldNames ? '' : 'revisionRef', subBuilder: $4523.RevisionRef.create)
+    ..aOM<$4525.RevisionRef>(3, _omitFieldNames ? '' : 'revisionRef', subBuilder: $4525.RevisionRef.create)
     ..aOM<DocumentId_UnmanagedDocumentId>(4, _omitFieldNames ? '' : 'unmanagedDocId', subBuilder: DocumentId_UnmanagedDocumentId.create)
     ..hasRequiredFields = false
   ;
@@ -630,15 +630,15 @@ class DocumentId extends $pb.GeneratedMessage {
 
   /// Points to a specific revision of the document if set.
   @$pb.TagNumber(3)
-  $4523.RevisionRef get revisionRef => $_getN(1);
+  $4525.RevisionRef get revisionRef => $_getN(1);
   @$pb.TagNumber(3)
-  set revisionRef($4523.RevisionRef v) { setField(3, v); }
+  set revisionRef($4525.RevisionRef v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRevisionRef() => $_has(1);
   @$pb.TagNumber(3)
   void clearRevisionRef() => clearField(3);
   @$pb.TagNumber(3)
-  $4523.RevisionRef ensureRevisionRef() => $_ensure(1);
+  $4525.RevisionRef ensureRevisionRef() => $_ensure(1);
 
   /// A document id within unmanaged dataset.
   @$pb.TagNumber(4)
@@ -657,7 +657,7 @@ class DocumentId extends $pb.GeneratedMessage {
 class DatasetSchema extends $pb.GeneratedMessage {
   factory DatasetSchema({
     $core.String? name,
-    $4524.DocumentSchema? documentSchema,
+    $4526.DocumentSchema? documentSchema,
   }) {
     final $result = create();
     if (name != null) {
@@ -674,7 +674,7 @@ class DatasetSchema extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatasetSchema', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4524.DocumentSchema>(3, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4524.DocumentSchema.create)
+    ..aOM<$4526.DocumentSchema>(3, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4526.DocumentSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -713,15 +713,15 @@ class DatasetSchema extends $pb.GeneratedMessage {
 
   /// Optional. Schema of the dataset.
   @$pb.TagNumber(3)
-  $4524.DocumentSchema get documentSchema => $_getN(1);
+  $4526.DocumentSchema get documentSchema => $_getN(1);
   @$pb.TagNumber(3)
-  set documentSchema($4524.DocumentSchema v) { setField(3, v); }
+  set documentSchema($4526.DocumentSchema v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDocumentSchema() => $_has(1);
   @$pb.TagNumber(3)
   void clearDocumentSchema() => clearField(3);
   @$pb.TagNumber(3)
-  $4524.DocumentSchema ensureDocumentSchema() => $_ensure(1);
+  $4526.DocumentSchema ensureDocumentSchema() => $_ensure(1);
 }
 
 /// List of individual DocumentIds.

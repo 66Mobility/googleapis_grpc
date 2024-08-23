@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -381,8 +381,8 @@ class QuotaPreference extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? dimensions,
     QuotaConfig? quotaConfig,
     $core.String? etag,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? service,
     $core.String? quotaId,
     $core.bool? reconciling,
@@ -434,8 +434,8 @@ class QuotaPreference extends $pb.GeneratedMessage {
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'dimensions', entryClassName: 'QuotaPreference.DimensionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.cloudquotas.v1'))
     ..aOM<QuotaConfig>(3, _omitFieldNames ? '' : 'quotaConfig', subBuilder: QuotaConfig.create)
     ..aOS(4, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'service')
     ..aOS(8, _omitFieldNames ? '' : 'quotaId')
     ..aOB(10, _omitFieldNames ? '' : 'reconciling')
@@ -523,27 +523,27 @@ class QuotaPreference extends $pb.GeneratedMessage {
 
   /// Output only. Create time stamp
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Update time stamp
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Required. The name of the service to which the quota preference is applied.
   @$pb.TagNumber(7)
@@ -611,7 +611,7 @@ class QuotaConfig extends $pb.GeneratedMessage {
   factory QuotaConfig({
     $fixnum.Int64? preferredValue,
     $core.String? stateDetail,
-    $1780.Int64Value? grantedValue,
+    $1781.Int64Value? grantedValue,
     $core.String? traceId,
     $core.Map<$core.String, $core.String>? annotations,
     QuotaConfig_Origin? requestOrigin,
@@ -644,7 +644,7 @@ class QuotaConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QuotaConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.cloudquotas.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'preferredValue')
     ..aOS(2, _omitFieldNames ? '' : 'stateDetail')
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'grantedValue', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'grantedValue', subBuilder: $1781.Int64Value.create)
     ..aOS(4, _omitFieldNames ? '' : 'traceId')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'QuotaConfig.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.cloudquotas.v1'))
     ..e<QuotaConfig_Origin>(6, _omitFieldNames ? '' : 'requestOrigin', $pb.PbFieldType.OE, defaultOrMaker: QuotaConfig_Origin.ORIGIN_UNSPECIFIED, valueOf: QuotaConfig_Origin.valueOf, enumValues: QuotaConfig_Origin.values)
@@ -695,15 +695,15 @@ class QuotaConfig extends $pb.GeneratedMessage {
 
   /// Output only. Granted quota value.
   @$pb.TagNumber(3)
-  $1780.Int64Value get grantedValue => $_getN(2);
+  $1781.Int64Value get grantedValue => $_getN(2);
   @$pb.TagNumber(3)
-  set grantedValue($1780.Int64Value v) { setField(3, v); }
+  set grantedValue($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGrantedValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearGrantedValue() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureGrantedValue() => $_ensure(2);
+  $1781.Int64Value ensureGrantedValue() => $_ensure(2);
 
   /// Output only. The trace id that the Google Cloud uses to provision the
   /// requested quota. This trace id may be used by the client to contact Cloud

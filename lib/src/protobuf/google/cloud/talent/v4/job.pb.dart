@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4691;
-import 'common.pbenum.dart' as $4691;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4693;
+import 'common.pbenum.dart' as $4693;
 
 /// Application related details of a job posting.
 class Job_ApplicationInfo extends $pb.GeneratedMessage {
@@ -102,8 +102,8 @@ class Job_ApplicationInfo extends $pb.GeneratedMessage {
 /// Derived details about the job posting.
 class Job_DerivedInfo extends $pb.GeneratedMessage {
   factory Job_DerivedInfo({
-    $core.Iterable<$4691.Location>? locations,
-    $core.Iterable<$4691.JobCategory>? jobCategories,
+    $core.Iterable<$4693.Location>? locations,
+    $core.Iterable<$4693.JobCategory>? jobCategories,
   }) {
     final $result = create();
     if (locations != null) {
@@ -119,8 +119,8 @@ class Job_DerivedInfo extends $pb.GeneratedMessage {
   factory Job_DerivedInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Job.DerivedInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4'), createEmptyInstance: create)
-    ..pc<$4691.Location>(1, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: $4691.Location.create)
-    ..pc<$4691.JobCategory>(3, _omitFieldNames ? '' : 'jobCategories', $pb.PbFieldType.KE, valueOf: $4691.JobCategory.valueOf, enumValues: $4691.JobCategory.values, defaultEnumValue: $4691.JobCategory.JOB_CATEGORY_UNSPECIFIED)
+    ..pc<$4693.Location>(1, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: $4693.Location.create)
+    ..pc<$4693.JobCategory>(3, _omitFieldNames ? '' : 'jobCategories', $pb.PbFieldType.KE, valueOf: $4693.JobCategory.valueOf, enumValues: $4693.JobCategory.values, defaultEnumValue: $4693.JobCategory.JOB_CATEGORY_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -152,19 +152,19 @@ class Job_DerivedInfo extends $pb.GeneratedMessage {
   ///  matched to [Job.addresses][google.cloud.talent.v4.Job.addresses] in the
   ///  same order.
   @$pb.TagNumber(1)
-  $core.List<$4691.Location> get locations => $_getList(0);
+  $core.List<$4693.Location> get locations => $_getList(0);
 
   /// Job categories derived from [Job.title][google.cloud.talent.v4.Job.title]
   /// and [Job.description][google.cloud.talent.v4.Job.description].
   @$pb.TagNumber(3)
-  $core.List<$4691.JobCategory> get jobCategories => $_getList(1);
+  $core.List<$4693.JobCategory> get jobCategories => $_getList(1);
 }
 
 /// Options for job processing.
 class Job_ProcessingOptions extends $pb.GeneratedMessage {
   factory Job_ProcessingOptions({
     $core.bool? disableStreetAddressResolution,
-    $4691.HtmlSanitization? htmlSanitization,
+    $4693.HtmlSanitization? htmlSanitization,
   }) {
     final $result = create();
     if (disableStreetAddressResolution != null) {
@@ -181,7 +181,7 @@ class Job_ProcessingOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Job.ProcessingOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'disableStreetAddressResolution')
-    ..e<$4691.HtmlSanitization>(2, _omitFieldNames ? '' : 'htmlSanitization', $pb.PbFieldType.OE, defaultOrMaker: $4691.HtmlSanitization.HTML_SANITIZATION_UNSPECIFIED, valueOf: $4691.HtmlSanitization.valueOf, enumValues: $4691.HtmlSanitization.values)
+    ..e<$4693.HtmlSanitization>(2, _omitFieldNames ? '' : 'htmlSanitization', $pb.PbFieldType.OE, defaultOrMaker: $4693.HtmlSanitization.HTML_SANITIZATION_UNSPECIFIED, valueOf: $4693.HtmlSanitization.valueOf, enumValues: $4693.HtmlSanitization.values)
     ..hasRequiredFields = false
   ;
 
@@ -231,9 +231,9 @@ class Job_ProcessingOptions extends $pb.GeneratedMessage {
   ///  Defaults to
   ///  [HtmlSanitization.SIMPLE_FORMATTING_ONLY][google.cloud.talent.v4.HtmlSanitization.SIMPLE_FORMATTING_ONLY].
   @$pb.TagNumber(2)
-  $4691.HtmlSanitization get htmlSanitization => $_getN(1);
+  $4693.HtmlSanitization get htmlSanitization => $_getN(1);
   @$pb.TagNumber(2)
-  set htmlSanitization($4691.HtmlSanitization v) { setField(2, v); }
+  set htmlSanitization($4693.HtmlSanitization v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasHtmlSanitization() => $_has(1);
   @$pb.TagNumber(2)
@@ -253,27 +253,27 @@ class Job extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Iterable<$core.String>? addresses,
     Job_ApplicationInfo? applicationInfo,
-    $core.Iterable<$4691.JobBenefit>? jobBenefits,
-    $4691.CompensationInfo? compensationInfo,
-    $core.Map<$core.String, $4691.CustomAttribute>? customAttributes,
-    $core.Iterable<$4691.DegreeType>? degreeTypes,
+    $core.Iterable<$4693.JobBenefit>? jobBenefits,
+    $4693.CompensationInfo? compensationInfo,
+    $core.Map<$core.String, $4693.CustomAttribute>? customAttributes,
+    $core.Iterable<$4693.DegreeType>? degreeTypes,
     $core.String? department,
-    $core.Iterable<$4691.EmploymentType>? employmentTypes,
+    $core.Iterable<$4693.EmploymentType>? employmentTypes,
     $core.String? incentives,
     $core.String? languageCode,
-    $4691.JobLevel? jobLevel,
+    $4693.JobLevel? jobLevel,
     $core.int? promotionValue,
     $core.String? qualifications,
     $core.String? responsibilities,
-    $4691.PostingRegion? postingRegion,
+    $4693.PostingRegion? postingRegion,
   @$core.Deprecated('This field is deprecated.')
-    $4691.Visibility? visibility,
-    $1775.Timestamp? jobStartTime,
-    $1775.Timestamp? jobEndTime,
-    $1775.Timestamp? postingPublishTime,
-    $1775.Timestamp? postingExpireTime,
-    $1775.Timestamp? postingCreateTime,
-    $1775.Timestamp? postingUpdateTime,
+    $4693.Visibility? visibility,
+    $1776.Timestamp? jobStartTime,
+    $1776.Timestamp? jobEndTime,
+    $1776.Timestamp? postingPublishTime,
+    $1776.Timestamp? postingExpireTime,
+    $1776.Timestamp? postingCreateTime,
+    $1776.Timestamp? postingUpdateTime,
     $core.String? companyDisplayName,
     Job_DerivedInfo? derivedInfo,
     Job_ProcessingOptions? processingOptions,
@@ -384,26 +384,26 @@ class Job extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..pPS(6, _omitFieldNames ? '' : 'addresses')
     ..aOM<Job_ApplicationInfo>(7, _omitFieldNames ? '' : 'applicationInfo', subBuilder: Job_ApplicationInfo.create)
-    ..pc<$4691.JobBenefit>(8, _omitFieldNames ? '' : 'jobBenefits', $pb.PbFieldType.KE, valueOf: $4691.JobBenefit.valueOf, enumValues: $4691.JobBenefit.values, defaultEnumValue: $4691.JobBenefit.JOB_BENEFIT_UNSPECIFIED)
-    ..aOM<$4691.CompensationInfo>(9, _omitFieldNames ? '' : 'compensationInfo', subBuilder: $4691.CompensationInfo.create)
-    ..m<$core.String, $4691.CustomAttribute>(10, _omitFieldNames ? '' : 'customAttributes', entryClassName: 'Job.CustomAttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4691.CustomAttribute.create, valueDefaultOrMaker: $4691.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.talent.v4'))
-    ..pc<$4691.DegreeType>(11, _omitFieldNames ? '' : 'degreeTypes', $pb.PbFieldType.KE, valueOf: $4691.DegreeType.valueOf, enumValues: $4691.DegreeType.values, defaultEnumValue: $4691.DegreeType.DEGREE_TYPE_UNSPECIFIED)
+    ..pc<$4693.JobBenefit>(8, _omitFieldNames ? '' : 'jobBenefits', $pb.PbFieldType.KE, valueOf: $4693.JobBenefit.valueOf, enumValues: $4693.JobBenefit.values, defaultEnumValue: $4693.JobBenefit.JOB_BENEFIT_UNSPECIFIED)
+    ..aOM<$4693.CompensationInfo>(9, _omitFieldNames ? '' : 'compensationInfo', subBuilder: $4693.CompensationInfo.create)
+    ..m<$core.String, $4693.CustomAttribute>(10, _omitFieldNames ? '' : 'customAttributes', entryClassName: 'Job.CustomAttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4693.CustomAttribute.create, valueDefaultOrMaker: $4693.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.talent.v4'))
+    ..pc<$4693.DegreeType>(11, _omitFieldNames ? '' : 'degreeTypes', $pb.PbFieldType.KE, valueOf: $4693.DegreeType.valueOf, enumValues: $4693.DegreeType.values, defaultEnumValue: $4693.DegreeType.DEGREE_TYPE_UNSPECIFIED)
     ..aOS(12, _omitFieldNames ? '' : 'department')
-    ..pc<$4691.EmploymentType>(13, _omitFieldNames ? '' : 'employmentTypes', $pb.PbFieldType.KE, valueOf: $4691.EmploymentType.valueOf, enumValues: $4691.EmploymentType.values, defaultEnumValue: $4691.EmploymentType.EMPLOYMENT_TYPE_UNSPECIFIED)
+    ..pc<$4693.EmploymentType>(13, _omitFieldNames ? '' : 'employmentTypes', $pb.PbFieldType.KE, valueOf: $4693.EmploymentType.valueOf, enumValues: $4693.EmploymentType.values, defaultEnumValue: $4693.EmploymentType.EMPLOYMENT_TYPE_UNSPECIFIED)
     ..aOS(14, _omitFieldNames ? '' : 'incentives')
     ..aOS(15, _omitFieldNames ? '' : 'languageCode')
-    ..e<$4691.JobLevel>(16, _omitFieldNames ? '' : 'jobLevel', $pb.PbFieldType.OE, defaultOrMaker: $4691.JobLevel.JOB_LEVEL_UNSPECIFIED, valueOf: $4691.JobLevel.valueOf, enumValues: $4691.JobLevel.values)
+    ..e<$4693.JobLevel>(16, _omitFieldNames ? '' : 'jobLevel', $pb.PbFieldType.OE, defaultOrMaker: $4693.JobLevel.JOB_LEVEL_UNSPECIFIED, valueOf: $4693.JobLevel.valueOf, enumValues: $4693.JobLevel.values)
     ..a<$core.int>(17, _omitFieldNames ? '' : 'promotionValue', $pb.PbFieldType.O3)
     ..aOS(18, _omitFieldNames ? '' : 'qualifications')
     ..aOS(19, _omitFieldNames ? '' : 'responsibilities')
-    ..e<$4691.PostingRegion>(20, _omitFieldNames ? '' : 'postingRegion', $pb.PbFieldType.OE, defaultOrMaker: $4691.PostingRegion.POSTING_REGION_UNSPECIFIED, valueOf: $4691.PostingRegion.valueOf, enumValues: $4691.PostingRegion.values)
-    ..e<$4691.Visibility>(21, _omitFieldNames ? '' : 'visibility', $pb.PbFieldType.OE, defaultOrMaker: $4691.Visibility.VISIBILITY_UNSPECIFIED, valueOf: $4691.Visibility.valueOf, enumValues: $4691.Visibility.values)
-    ..aOM<$1775.Timestamp>(22, _omitFieldNames ? '' : 'jobStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(23, _omitFieldNames ? '' : 'jobEndTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(24, _omitFieldNames ? '' : 'postingPublishTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(25, _omitFieldNames ? '' : 'postingExpireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(26, _omitFieldNames ? '' : 'postingCreateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(27, _omitFieldNames ? '' : 'postingUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4693.PostingRegion>(20, _omitFieldNames ? '' : 'postingRegion', $pb.PbFieldType.OE, defaultOrMaker: $4693.PostingRegion.POSTING_REGION_UNSPECIFIED, valueOf: $4693.PostingRegion.valueOf, enumValues: $4693.PostingRegion.values)
+    ..e<$4693.Visibility>(21, _omitFieldNames ? '' : 'visibility', $pb.PbFieldType.OE, defaultOrMaker: $4693.Visibility.VISIBILITY_UNSPECIFIED, valueOf: $4693.Visibility.valueOf, enumValues: $4693.Visibility.values)
+    ..aOM<$1776.Timestamp>(22, _omitFieldNames ? '' : 'jobStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(23, _omitFieldNames ? '' : 'jobEndTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(24, _omitFieldNames ? '' : 'postingPublishTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(25, _omitFieldNames ? '' : 'postingExpireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(26, _omitFieldNames ? '' : 'postingCreateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(27, _omitFieldNames ? '' : 'postingUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(28, _omitFieldNames ? '' : 'companyDisplayName')
     ..aOM<Job_DerivedInfo>(29, _omitFieldNames ? '' : 'derivedInfo', subBuilder: Job_DerivedInfo.create)
     ..aOM<Job_ProcessingOptions>(30, _omitFieldNames ? '' : 'processingOptions', subBuilder: Job_ProcessingOptions.create)
@@ -563,20 +563,20 @@ class Job extends $pb.GeneratedMessage {
 
   /// The benefits included with the job.
   @$pb.TagNumber(8)
-  $core.List<$4691.JobBenefit> get jobBenefits => $_getList(7);
+  $core.List<$4693.JobBenefit> get jobBenefits => $_getList(7);
 
   /// Job compensation information (a.k.a. "pay rate") i.e., the compensation
   /// that will paid to the employee.
   @$pb.TagNumber(9)
-  $4691.CompensationInfo get compensationInfo => $_getN(8);
+  $4693.CompensationInfo get compensationInfo => $_getN(8);
   @$pb.TagNumber(9)
-  set compensationInfo($4691.CompensationInfo v) { setField(9, v); }
+  set compensationInfo($4693.CompensationInfo v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCompensationInfo() => $_has(8);
   @$pb.TagNumber(9)
   void clearCompensationInfo() => clearField(9);
   @$pb.TagNumber(9)
-  $4691.CompensationInfo ensureCompensationInfo() => $_ensure(8);
+  $4693.CompensationInfo ensureCompensationInfo() => $_ensure(8);
 
   ///  A map of fields to hold both filterable and non-filterable custom job
   ///  attributes that are not covered by the provided structured fields.
@@ -591,11 +591,11 @@ class Job extends $pb.GeneratedMessage {
   ///  `string_values`, the maximum total size of `string_values` across all keys
   ///  is 50KB.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $4691.CustomAttribute> get customAttributes => $_getMap(9);
+  $core.Map<$core.String, $4693.CustomAttribute> get customAttributes => $_getMap(9);
 
   /// The desired education degrees for the job, such as Bachelors, Masters.
   @$pb.TagNumber(11)
-  $core.List<$4691.DegreeType> get degreeTypes => $_getList(10);
+  $core.List<$4693.DegreeType> get degreeTypes => $_getList(10);
 
   ///  The department or functional area within the company with the open
   ///  position.
@@ -614,7 +614,7 @@ class Job extends $pb.GeneratedMessage {
   /// [full time][google.cloud.talent.v4.EmploymentType.FULL_TIME] or
   /// [part time][google.cloud.talent.v4.EmploymentType.PART_TIME].
   @$pb.TagNumber(13)
-  $core.List<$4691.EmploymentType> get employmentTypes => $_getList(12);
+  $core.List<$4693.EmploymentType> get employmentTypes => $_getList(12);
 
   ///  A description of bonus, commission, and other compensation
   ///  incentives associated with the job not including salary or pay.
@@ -653,9 +653,9 @@ class Job extends $pb.GeneratedMessage {
 
   /// The experience level associated with the job, such as "Entry Level".
   @$pb.TagNumber(16)
-  $4691.JobLevel get jobLevel => $_getN(15);
+  $4693.JobLevel get jobLevel => $_getN(15);
   @$pb.TagNumber(16)
-  set jobLevel($4691.JobLevel v) { setField(16, v); }
+  set jobLevel($4693.JobLevel v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasJobLevel() => $_has(15);
   @$pb.TagNumber(16)
@@ -722,9 +722,9 @@ class Job extends $pb.GeneratedMessage {
   /// setting job [Job.addresses][google.cloud.talent.v4.Job.addresses] to the
   /// same location level as this field is strongly recommended.
   @$pb.TagNumber(20)
-  $4691.PostingRegion get postingRegion => $_getN(19);
+  $4693.PostingRegion get postingRegion => $_getN(19);
   @$pb.TagNumber(20)
-  set postingRegion($4691.PostingRegion v) { setField(20, v); }
+  set postingRegion($4693.PostingRegion v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasPostingRegion() => $_has(19);
   @$pb.TagNumber(20)
@@ -739,10 +739,10 @@ class Job extends $pb.GeneratedMessage {
   ///  if not specified.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(21)
-  $4691.Visibility get visibility => $_getN(20);
+  $4693.Visibility get visibility => $_getN(20);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(21)
-  set visibility($4691.Visibility v) { setField(21, v); }
+  set visibility($4693.Visibility v) { setField(21, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(21)
   $core.bool hasVisibility() => $_has(20);
@@ -753,42 +753,42 @@ class Job extends $pb.GeneratedMessage {
   /// The start timestamp of the job in UTC time zone. Typically this field
   /// is used for contracting engagements. Invalid timestamps are ignored.
   @$pb.TagNumber(22)
-  $1775.Timestamp get jobStartTime => $_getN(21);
+  $1776.Timestamp get jobStartTime => $_getN(21);
   @$pb.TagNumber(22)
-  set jobStartTime($1775.Timestamp v) { setField(22, v); }
+  set jobStartTime($1776.Timestamp v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasJobStartTime() => $_has(21);
   @$pb.TagNumber(22)
   void clearJobStartTime() => clearField(22);
   @$pb.TagNumber(22)
-  $1775.Timestamp ensureJobStartTime() => $_ensure(21);
+  $1776.Timestamp ensureJobStartTime() => $_ensure(21);
 
   /// The end timestamp of the job. Typically this field is used for contracting
   /// engagements. Invalid timestamps are ignored.
   @$pb.TagNumber(23)
-  $1775.Timestamp get jobEndTime => $_getN(22);
+  $1776.Timestamp get jobEndTime => $_getN(22);
   @$pb.TagNumber(23)
-  set jobEndTime($1775.Timestamp v) { setField(23, v); }
+  set jobEndTime($1776.Timestamp v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasJobEndTime() => $_has(22);
   @$pb.TagNumber(23)
   void clearJobEndTime() => clearField(23);
   @$pb.TagNumber(23)
-  $1775.Timestamp ensureJobEndTime() => $_ensure(22);
+  $1776.Timestamp ensureJobEndTime() => $_ensure(22);
 
   /// The timestamp this job posting was most recently published. The default
   /// value is the time the request arrives at the server. Invalid timestamps are
   /// ignored.
   @$pb.TagNumber(24)
-  $1775.Timestamp get postingPublishTime => $_getN(23);
+  $1776.Timestamp get postingPublishTime => $_getN(23);
   @$pb.TagNumber(24)
-  set postingPublishTime($1775.Timestamp v) { setField(24, v); }
+  set postingPublishTime($1776.Timestamp v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasPostingPublishTime() => $_has(23);
   @$pb.TagNumber(24)
   void clearPostingPublishTime() => clearField(24);
   @$pb.TagNumber(24)
-  $1775.Timestamp ensurePostingPublishTime() => $_ensure(23);
+  $1776.Timestamp ensurePostingPublishTime() => $_ensure(23);
 
   ///  Strongly recommended for the best service experience.
   ///
@@ -840,39 +840,39 @@ class Job extends $pb.GeneratedMessage {
   ///  days from the job's last update time. Otherwise the expiration date isn't
   ///  updated.
   @$pb.TagNumber(25)
-  $1775.Timestamp get postingExpireTime => $_getN(24);
+  $1776.Timestamp get postingExpireTime => $_getN(24);
   @$pb.TagNumber(25)
-  set postingExpireTime($1775.Timestamp v) { setField(25, v); }
+  set postingExpireTime($1776.Timestamp v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasPostingExpireTime() => $_has(24);
   @$pb.TagNumber(25)
   void clearPostingExpireTime() => clearField(25);
   @$pb.TagNumber(25)
-  $1775.Timestamp ensurePostingExpireTime() => $_ensure(24);
+  $1776.Timestamp ensurePostingExpireTime() => $_ensure(24);
 
   /// Output only. The timestamp when this job posting was created.
   @$pb.TagNumber(26)
-  $1775.Timestamp get postingCreateTime => $_getN(25);
+  $1776.Timestamp get postingCreateTime => $_getN(25);
   @$pb.TagNumber(26)
-  set postingCreateTime($1775.Timestamp v) { setField(26, v); }
+  set postingCreateTime($1776.Timestamp v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasPostingCreateTime() => $_has(25);
   @$pb.TagNumber(26)
   void clearPostingCreateTime() => clearField(26);
   @$pb.TagNumber(26)
-  $1775.Timestamp ensurePostingCreateTime() => $_ensure(25);
+  $1776.Timestamp ensurePostingCreateTime() => $_ensure(25);
 
   /// Output only. The timestamp when this job posting was last updated.
   @$pb.TagNumber(27)
-  $1775.Timestamp get postingUpdateTime => $_getN(26);
+  $1776.Timestamp get postingUpdateTime => $_getN(26);
   @$pb.TagNumber(27)
-  set postingUpdateTime($1775.Timestamp v) { setField(27, v); }
+  set postingUpdateTime($1776.Timestamp v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasPostingUpdateTime() => $_has(26);
   @$pb.TagNumber(27)
   void clearPostingUpdateTime() => clearField(27);
   @$pb.TagNumber(27)
-  $1775.Timestamp ensurePostingUpdateTime() => $_ensure(26);
+  $1776.Timestamp ensurePostingUpdateTime() => $_ensure(26);
 
   /// Output only. Display name of the company listing the job.
   @$pb.TagNumber(28)

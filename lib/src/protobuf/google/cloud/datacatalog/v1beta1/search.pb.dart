@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'search.pbenum.dart';
 
 export 'search.pbenum.dart';
@@ -26,7 +26,7 @@ class SearchCatalogResult extends $pb.GeneratedMessage {
     $core.String? searchResultSubtype,
     $core.String? relativeResourceName,
     $core.String? linkedResource,
-    $1775.Timestamp? modifyTime,
+    $1776.Timestamp? modifyTime,
   }) {
     final $result = create();
     if (searchResultType != null) {
@@ -55,7 +55,7 @@ class SearchCatalogResult extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'searchResultSubtype')
     ..aOS(3, _omitFieldNames ? '' : 'relativeResourceName')
     ..aOS(4, _omitFieldNames ? '' : 'linkedResource')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'modifyTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'modifyTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -134,15 +134,15 @@ class SearchCatalogResult extends $pb.GeneratedMessage {
 
   /// Last-modified timestamp of the entry from the managing system.
   @$pb.TagNumber(7)
-  $1775.Timestamp get modifyTime => $_getN(4);
+  $1776.Timestamp get modifyTime => $_getN(4);
   @$pb.TagNumber(7)
-  set modifyTime($1775.Timestamp v) { setField(7, v); }
+  set modifyTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasModifyTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearModifyTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureModifyTime() => $_ensure(4);
+  $1776.Timestamp ensureModifyTime() => $_ensure(4);
 }
 
 

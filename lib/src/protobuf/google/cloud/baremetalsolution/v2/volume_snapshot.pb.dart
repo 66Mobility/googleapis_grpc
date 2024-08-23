@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'volume_snapshot.pbenum.dart';
 
 export 'volume_snapshot.pbenum.dart';
@@ -23,7 +23,7 @@ class VolumeSnapshot extends $pb.GeneratedMessage {
   factory VolumeSnapshot({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? storageVolume,
     $core.String? id,
     VolumeSnapshot_SnapshotType? type,
@@ -56,7 +56,7 @@ class VolumeSnapshot extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VolumeSnapshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.baremetalsolution.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'storageVolume')
     ..aOS(6, _omitFieldNames ? '' : 'id')
     ..e<VolumeSnapshot_SnapshotType>(7, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: VolumeSnapshot_SnapshotType.SNAPSHOT_TYPE_UNSPECIFIED, valueOf: VolumeSnapshot_SnapshotType.valueOf, enumValues: VolumeSnapshot_SnapshotType.values)
@@ -106,15 +106,15 @@ class VolumeSnapshot extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the snapshot.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The name of the volume which this snapshot belongs to.
   @$pb.TagNumber(5)

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/policy_topic_entry_type.pbenum.dart' as $2521;
-import '../enums/policy_topic_evidence_destination_mismatch_url_type.pbenum.dart' as $2522;
-import '../enums/policy_topic_evidence_destination_not_working_device.pbenum.dart' as $2524;
-import '../enums/policy_topic_evidence_destination_not_working_dns_error_type.pbenum.dart' as $2523;
+import '../enums/policy_topic_entry_type.pbenum.dart' as $2522;
+import '../enums/policy_topic_evidence_destination_mismatch_url_type.pbenum.dart' as $2523;
+import '../enums/policy_topic_evidence_destination_not_working_device.pbenum.dart' as $2525;
+import '../enums/policy_topic_evidence_destination_not_working_dns_error_type.pbenum.dart' as $2524;
 
 /// Key of the violation. The key is used for referring to a violation
 /// when filing an exemption request.
@@ -171,7 +171,7 @@ class PolicyValidationParameter extends $pb.GeneratedMessage {
 ///  that provide details about how serving may be restricted.
 class PolicyTopicEntry extends $pb.GeneratedMessage {
   factory PolicyTopicEntry({
-    $2521.PolicyTopicEntryTypeEnum_PolicyTopicEntryType? type,
+    $2522.PolicyTopicEntryTypeEnum_PolicyTopicEntryType? type,
     $core.Iterable<PolicyTopicEvidence>? evidences,
     $core.Iterable<PolicyTopicConstraint>? constraints,
     $core.String? topic,
@@ -196,7 +196,7 @@ class PolicyTopicEntry extends $pb.GeneratedMessage {
   factory PolicyTopicEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PolicyTopicEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2521.PolicyTopicEntryTypeEnum_PolicyTopicEntryType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2521.PolicyTopicEntryTypeEnum_PolicyTopicEntryType.UNSPECIFIED, valueOf: $2521.PolicyTopicEntryTypeEnum_PolicyTopicEntryType.valueOf, enumValues: $2521.PolicyTopicEntryTypeEnum_PolicyTopicEntryType.values)
+    ..e<$2522.PolicyTopicEntryTypeEnum_PolicyTopicEntryType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2522.PolicyTopicEntryTypeEnum_PolicyTopicEntryType.UNSPECIFIED, valueOf: $2522.PolicyTopicEntryTypeEnum_PolicyTopicEntryType.valueOf, enumValues: $2522.PolicyTopicEntryTypeEnum_PolicyTopicEntryType.values)
     ..pc<PolicyTopicEvidence>(3, _omitFieldNames ? '' : 'evidences', $pb.PbFieldType.PM, subBuilder: PolicyTopicEvidence.create)
     ..pc<PolicyTopicConstraint>(4, _omitFieldNames ? '' : 'constraints', $pb.PbFieldType.PM, subBuilder: PolicyTopicConstraint.create)
     ..aOS(5, _omitFieldNames ? '' : 'topic')
@@ -226,9 +226,9 @@ class PolicyTopicEntry extends $pb.GeneratedMessage {
 
   /// Describes the negative or positive effect this policy will have on serving.
   @$pb.TagNumber(2)
-  $2521.PolicyTopicEntryTypeEnum_PolicyTopicEntryType get type => $_getN(0);
+  $2522.PolicyTopicEntryTypeEnum_PolicyTopicEntryType get type => $_getN(0);
   @$pb.TagNumber(2)
-  set type($2521.PolicyTopicEntryTypeEnum_PolicyTopicEntryType v) { setField(2, v); }
+  set type($2522.PolicyTopicEntryTypeEnum_PolicyTopicEntryType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(2)
@@ -403,7 +403,7 @@ class PolicyTopicEvidence_DestinationTextList extends $pb.GeneratedMessage {
 /// Evidence of mismatches between the URLs of a resource.
 class PolicyTopicEvidence_DestinationMismatch extends $pb.GeneratedMessage {
   factory PolicyTopicEvidence_DestinationMismatch({
-    $core.Iterable<$2522.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType>? urlTypes,
+    $core.Iterable<$2523.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType>? urlTypes,
   }) {
     final $result = create();
     if (urlTypes != null) {
@@ -416,7 +416,7 @@ class PolicyTopicEvidence_DestinationMismatch extends $pb.GeneratedMessage {
   factory PolicyTopicEvidence_DestinationMismatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PolicyTopicEvidence.DestinationMismatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..pc<$2522.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType>(1, _omitFieldNames ? '' : 'urlTypes', $pb.PbFieldType.KE, valueOf: $2522.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType.valueOf, enumValues: $2522.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType.values, defaultEnumValue: $2522.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType.UNSPECIFIED)
+    ..pc<$2523.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType>(1, _omitFieldNames ? '' : 'urlTypes', $pb.PbFieldType.KE, valueOf: $2523.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType.valueOf, enumValues: $2523.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType.values, defaultEnumValue: $2523.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -443,7 +443,7 @@ class PolicyTopicEvidence_DestinationMismatch extends $pb.GeneratedMessage {
 
   /// The set of URLs that did not match each other.
   @$pb.TagNumber(1)
-  $core.List<$2522.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType> get urlTypes => $_getList(0);
+  $core.List<$2523.PolicyTopicEvidenceDestinationMismatchUrlTypeEnum_PolicyTopicEvidenceDestinationMismatchUrlType> get urlTypes => $_getList(0);
 }
 
 enum PolicyTopicEvidence_DestinationNotWorking_Reason {
@@ -456,8 +456,8 @@ enum PolicyTopicEvidence_DestinationNotWorking_Reason {
 /// code or isn't functional in all locations for commonly used devices.
 class PolicyTopicEvidence_DestinationNotWorking extends $pb.GeneratedMessage {
   factory PolicyTopicEvidence_DestinationNotWorking({
-    $2523.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType? dnsErrorType,
-    $2524.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice? device,
+    $2524.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType? dnsErrorType,
+    $2525.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice? device,
     $fixnum.Int64? httpErrorCode,
     $core.String? expandedUrl,
     $core.String? lastCheckedDateTime,
@@ -491,8 +491,8 @@ class PolicyTopicEvidence_DestinationNotWorking extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PolicyTopicEvidence.DestinationNotWorking', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
     ..oo(0, [1, 6])
-    ..e<$2523.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType>(1, _omitFieldNames ? '' : 'dnsErrorType', $pb.PbFieldType.OE, defaultOrMaker: $2523.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType.UNSPECIFIED, valueOf: $2523.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType.valueOf, enumValues: $2523.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType.values)
-    ..e<$2524.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice>(4, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2524.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice.UNSPECIFIED, valueOf: $2524.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice.valueOf, enumValues: $2524.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice.values)
+    ..e<$2524.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType>(1, _omitFieldNames ? '' : 'dnsErrorType', $pb.PbFieldType.OE, defaultOrMaker: $2524.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType.UNSPECIFIED, valueOf: $2524.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType.valueOf, enumValues: $2524.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType.values)
+    ..e<$2525.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice>(4, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2525.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice.UNSPECIFIED, valueOf: $2525.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice.valueOf, enumValues: $2525.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice.values)
     ..aInt64(6, _omitFieldNames ? '' : 'httpErrorCode')
     ..aOS(7, _omitFieldNames ? '' : 'expandedUrl')
     ..aOS(8, _omitFieldNames ? '' : 'lastCheckedDateTime')
@@ -525,9 +525,9 @@ class PolicyTopicEvidence_DestinationNotWorking extends $pb.GeneratedMessage {
 
   /// The type of DNS error.
   @$pb.TagNumber(1)
-  $2523.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType get dnsErrorType => $_getN(0);
+  $2524.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType get dnsErrorType => $_getN(0);
   @$pb.TagNumber(1)
-  set dnsErrorType($2523.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType v) { setField(1, v); }
+  set dnsErrorType($2524.PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum_PolicyTopicEvidenceDestinationNotWorkingDnsErrorType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDnsErrorType() => $_has(0);
   @$pb.TagNumber(1)
@@ -535,9 +535,9 @@ class PolicyTopicEvidence_DestinationNotWorking extends $pb.GeneratedMessage {
 
   /// The type of device that failed to load the URL.
   @$pb.TagNumber(4)
-  $2524.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice get device => $_getN(1);
+  $2525.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice get device => $_getN(1);
   @$pb.TagNumber(4)
-  set device($2524.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice v) { setField(4, v); }
+  set device($2525.PolicyTopicEvidenceDestinationNotWorkingDeviceEnum_PolicyTopicEvidenceDestinationNotWorkingDevice v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDevice() => $_has(1);
   @$pb.TagNumber(4)

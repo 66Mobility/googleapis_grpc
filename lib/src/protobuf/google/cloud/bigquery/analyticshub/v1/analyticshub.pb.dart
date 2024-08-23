@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
 import 'analyticshub.pbenum.dart';
 
 export 'analyticshub.pbenum.dart';
@@ -616,8 +616,8 @@ class DestinationDatasetReference extends $pb.GeneratedMessage {
 class DestinationDataset extends $pb.GeneratedMessage {
   factory DestinationDataset({
     DestinationDatasetReference? datasetReference,
-    $1780.StringValue? friendlyName,
-    $1780.StringValue? description,
+    $1781.StringValue? friendlyName,
+    $1781.StringValue? description,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? location,
   }) {
@@ -645,8 +645,8 @@ class DestinationDataset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DestinationDataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.analyticshub.v1'), createEmptyInstance: create)
     ..aOM<DestinationDatasetReference>(1, _omitFieldNames ? '' : 'datasetReference', subBuilder: DestinationDatasetReference.create)
-    ..aOM<$1780.StringValue>(2, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.StringValue>(3, _omitFieldNames ? '' : 'description', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(2, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.StringValue>(3, _omitFieldNames ? '' : 'description', subBuilder: $1781.StringValue.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'DestinationDataset.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.analyticshub.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false
@@ -687,27 +687,27 @@ class DestinationDataset extends $pb.GeneratedMessage {
 
   /// Optional. A descriptive name for the dataset.
   @$pb.TagNumber(2)
-  $1780.StringValue get friendlyName => $_getN(1);
+  $1781.StringValue get friendlyName => $_getN(1);
   @$pb.TagNumber(2)
-  set friendlyName($1780.StringValue v) { setField(2, v); }
+  set friendlyName($1781.StringValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFriendlyName() => $_has(1);
   @$pb.TagNumber(2)
   void clearFriendlyName() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.StringValue ensureFriendlyName() => $_ensure(1);
+  $1781.StringValue ensureFriendlyName() => $_ensure(1);
 
   /// Optional. A user-friendly description of the dataset.
   @$pb.TagNumber(3)
-  $1780.StringValue get description => $_getN(2);
+  $1781.StringValue get description => $_getN(2);
   @$pb.TagNumber(3)
-  set description($1780.StringValue v) { setField(3, v); }
+  set description($1781.StringValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
   void clearDescription() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.StringValue ensureDescription() => $_ensure(2);
+  $1781.StringValue ensureDescription() => $_ensure(2);
 
   /// Optional. The labels associated with this dataset. You can use these
   /// to organize and group your datasets.
@@ -802,9 +802,9 @@ class Listing_BigQueryDatasetSource_SelectedResource extends $pb.GeneratedMessag
 /// dataset.
 class Listing_BigQueryDatasetSource_RestrictedExportPolicy extends $pb.GeneratedMessage {
   factory Listing_BigQueryDatasetSource_RestrictedExportPolicy({
-    $1780.BoolValue? enabled,
-    $1780.BoolValue? restrictDirectTableAccess,
-    $1780.BoolValue? restrictQueryResult,
+    $1781.BoolValue? enabled,
+    $1781.BoolValue? restrictDirectTableAccess,
+    $1781.BoolValue? restrictQueryResult,
   }) {
     final $result = create();
     if (enabled != null) {
@@ -823,9 +823,9 @@ class Listing_BigQueryDatasetSource_RestrictedExportPolicy extends $pb.Generated
   factory Listing_BigQueryDatasetSource_RestrictedExportPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Listing.BigQueryDatasetSource.RestrictedExportPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.analyticshub.v1'), createEmptyInstance: create)
-    ..aOM<$1780.BoolValue>(1, _omitFieldNames ? '' : 'enabled', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(2, _omitFieldNames ? '' : 'restrictDirectTableAccess', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'restrictQueryResult', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'enabled', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(2, _omitFieldNames ? '' : 'restrictDirectTableAccess', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'restrictQueryResult', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -852,41 +852,41 @@ class Listing_BigQueryDatasetSource_RestrictedExportPolicy extends $pb.Generated
 
   /// Optional. If true, enable restricted export.
   @$pb.TagNumber(1)
-  $1780.BoolValue get enabled => $_getN(0);
+  $1781.BoolValue get enabled => $_getN(0);
   @$pb.TagNumber(1)
-  set enabled($1780.BoolValue v) { setField(1, v); }
+  set enabled($1781.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
   void clearEnabled() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BoolValue ensureEnabled() => $_ensure(0);
+  $1781.BoolValue ensureEnabled() => $_ensure(0);
 
   /// Optional. If true, restrict direct table access (read
   /// api/tabledata.list) on linked table.
   @$pb.TagNumber(2)
-  $1780.BoolValue get restrictDirectTableAccess => $_getN(1);
+  $1781.BoolValue get restrictDirectTableAccess => $_getN(1);
   @$pb.TagNumber(2)
-  set restrictDirectTableAccess($1780.BoolValue v) { setField(2, v); }
+  set restrictDirectTableAccess($1781.BoolValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRestrictDirectTableAccess() => $_has(1);
   @$pb.TagNumber(2)
   void clearRestrictDirectTableAccess() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.BoolValue ensureRestrictDirectTableAccess() => $_ensure(1);
+  $1781.BoolValue ensureRestrictDirectTableAccess() => $_ensure(1);
 
   /// Optional. If true, restrict export of query result derived from
   /// restricted linked dataset table.
   @$pb.TagNumber(3)
-  $1780.BoolValue get restrictQueryResult => $_getN(2);
+  $1781.BoolValue get restrictQueryResult => $_getN(2);
   @$pb.TagNumber(3)
-  set restrictQueryResult($1780.BoolValue v) { setField(3, v); }
+  set restrictQueryResult($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRestrictQueryResult() => $_has(2);
   @$pb.TagNumber(3)
   void clearRestrictQueryResult() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureRestrictQueryResult() => $_ensure(2);
+  $1781.BoolValue ensureRestrictQueryResult() => $_ensure(2);
 }
 
 /// A reference to a shared dataset. It is an existing BigQuery dataset with a
@@ -1421,8 +1421,8 @@ enum Subscription_ResourceName {
 class Subscription extends $pb.GeneratedMessage {
   factory Subscription({
     $core.String? name,
-    $1775.Timestamp? creationTime,
-    $1775.Timestamp? lastModifyTime,
+    $1776.Timestamp? creationTime,
+    $1776.Timestamp? lastModifyTime,
     $core.String? organizationId,
     $core.String? listing,
     $core.String? dataExchange,
@@ -1476,8 +1476,8 @@ class Subscription extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Subscription', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.analyticshub.v1'), createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'creationTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'lastModifyTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'creationTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'lastModifyTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'organizationId')
     ..aOS(5, _omitFieldNames ? '' : 'listing')
     ..aOS(6, _omitFieldNames ? '' : 'dataExchange')
@@ -1525,27 +1525,27 @@ class Subscription extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the subscription was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get creationTime => $_getN(1);
+  $1776.Timestamp get creationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set creationTime($1775.Timestamp v) { setField(2, v); }
+  set creationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreationTime() => $_ensure(1);
+  $1776.Timestamp ensureCreationTime() => $_ensure(1);
 
   /// Output only. Timestamp when the subscription was last modified.
   @$pb.TagNumber(3)
-  $1775.Timestamp get lastModifyTime => $_getN(2);
+  $1776.Timestamp get lastModifyTime => $_getN(2);
   @$pb.TagNumber(3)
-  set lastModifyTime($1775.Timestamp v) { setField(3, v); }
+  set lastModifyTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLastModifyTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearLastModifyTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureLastModifyTime() => $_ensure(2);
+  $1776.Timestamp ensureLastModifyTime() => $_ensure(2);
 
   /// Output only. Organization of the project this subscription belongs to.
   @$pb.TagNumber(4)
@@ -2059,7 +2059,7 @@ class CreateDataExchangeRequest extends $pb.GeneratedMessage {
 /// Message for updating a data exchange.
 class UpdateDataExchangeRequest extends $pb.GeneratedMessage {
   factory UpdateDataExchangeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     DataExchange? dataExchange,
   }) {
     final $result = create();
@@ -2076,7 +2076,7 @@ class UpdateDataExchangeRequest extends $pb.GeneratedMessage {
   factory UpdateDataExchangeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataExchangeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.analyticshub.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DataExchange>(2, _omitFieldNames ? '' : 'dataExchange', subBuilder: DataExchange.create)
     ..hasRequiredFields = false
   ;
@@ -2106,15 +2106,15 @@ class UpdateDataExchangeRequest extends $pb.GeneratedMessage {
   /// resource. The fields specified in the
   /// `updateMask` are relative to the resource and are not a full request.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The data exchange to update.
   @$pb.TagNumber(2)
@@ -2473,7 +2473,7 @@ class CreateListingRequest extends $pb.GeneratedMessage {
 /// Message for updating a Listing.
 class UpdateListingRequest extends $pb.GeneratedMessage {
   factory UpdateListingRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Listing? listing,
   }) {
     final $result = create();
@@ -2490,7 +2490,7 @@ class UpdateListingRequest extends $pb.GeneratedMessage {
   factory UpdateListingRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateListingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.analyticshub.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Listing>(2, _omitFieldNames ? '' : 'listing', subBuilder: Listing.create)
     ..hasRequiredFields = false
   ;
@@ -2520,15 +2520,15 @@ class UpdateListingRequest extends $pb.GeneratedMessage {
   /// resource. The fields specified in the `updateMask` are relative to the
   /// resource and are not a full request.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The listing to update.
   @$pb.TagNumber(2)
@@ -3524,8 +3524,8 @@ class DeleteSubscriptionRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of a long-running operation in Analytics Hub.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -3561,8 +3561,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.analyticshub.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -3594,27 +3594,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

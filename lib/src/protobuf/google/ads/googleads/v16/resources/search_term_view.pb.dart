@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/search_term_targeting_status.pbenum.dart' as $3051;
+import '../enums/search_term_targeting_status.pbenum.dart' as $3052;
 
 /// A search term view with metrics aggregated by search term at the ad group
 /// level.
 class SearchTermView extends $pb.GeneratedMessage {
   factory SearchTermView({
     $core.String? resourceName,
-    $3051.SearchTermTargetingStatusEnum_SearchTermTargetingStatus? status,
+    $3052.SearchTermTargetingStatusEnum_SearchTermTargetingStatus? status,
     $core.String? searchTerm,
     $core.String? adGroup,
   }) {
@@ -45,7 +45,7 @@ class SearchTermView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchTermView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3051.SearchTermTargetingStatusEnum_SearchTermTargetingStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3051.SearchTermTargetingStatusEnum_SearchTermTargetingStatus.UNSPECIFIED, valueOf: $3051.SearchTermTargetingStatusEnum_SearchTermTargetingStatus.valueOf, enumValues: $3051.SearchTermTargetingStatusEnum_SearchTermTargetingStatus.values)
+    ..e<$3052.SearchTermTargetingStatusEnum_SearchTermTargetingStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3052.SearchTermTargetingStatusEnum_SearchTermTargetingStatus.UNSPECIFIED, valueOf: $3052.SearchTermTargetingStatusEnum_SearchTermTargetingStatus.valueOf, enumValues: $3052.SearchTermTargetingStatusEnum_SearchTermTargetingStatus.values)
     ..aOS(5, _omitFieldNames ? '' : 'searchTerm')
     ..aOS(6, _omitFieldNames ? '' : 'adGroup')
     ..hasRequiredFields = false
@@ -88,9 +88,9 @@ class SearchTermView extends $pb.GeneratedMessage {
   /// Output only. Indicates whether the search term is currently one of your
   /// targeted or excluded keywords.
   @$pb.TagNumber(4)
-  $3051.SearchTermTargetingStatusEnum_SearchTermTargetingStatus get status => $_getN(1);
+  $3052.SearchTermTargetingStatusEnum_SearchTermTargetingStatus get status => $_getN(1);
   @$pb.TagNumber(4)
-  set status($3051.SearchTermTargetingStatusEnum_SearchTermTargetingStatus v) { setField(4, v); }
+  set status($3052.SearchTermTargetingStatusEnum_SearchTermTargetingStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(4)

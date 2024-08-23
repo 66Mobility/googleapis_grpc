@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_set_link_status.pbenum.dart' as $3552;
+import '../enums/asset_set_link_status.pbenum.dart' as $3553;
 
 /// CampaignAssetSet is the linkage between a campaign and an asset set.
 /// Adding a CampaignAssetSet links an asset set with a campaign.
@@ -22,7 +22,7 @@ class CampaignAssetSet extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? campaign,
     $core.String? assetSet,
-    $3552.AssetSetLinkStatusEnum_AssetSetLinkStatus? status,
+    $3553.AssetSetLinkStatusEnum_AssetSetLinkStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -47,7 +47,7 @@ class CampaignAssetSet extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'campaign')
     ..aOS(3, _omitFieldNames ? '' : 'assetSet')
-    ..e<$3552.AssetSetLinkStatusEnum_AssetSetLinkStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3552.AssetSetLinkStatusEnum_AssetSetLinkStatus.UNSPECIFIED, valueOf: $3552.AssetSetLinkStatusEnum_AssetSetLinkStatus.valueOf, enumValues: $3552.AssetSetLinkStatusEnum_AssetSetLinkStatus.values)
+    ..e<$3553.AssetSetLinkStatusEnum_AssetSetLinkStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3553.AssetSetLinkStatusEnum_AssetSetLinkStatus.UNSPECIFIED, valueOf: $3553.AssetSetLinkStatusEnum_AssetSetLinkStatus.valueOf, enumValues: $3553.AssetSetLinkStatusEnum_AssetSetLinkStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -107,9 +107,9 @@ class CampaignAssetSet extends $pb.GeneratedMessage {
 
   /// Output only. The status of the campaign asset set asset. Read-only.
   @$pb.TagNumber(4)
-  $3552.AssetSetLinkStatusEnum_AssetSetLinkStatus get status => $_getN(3);
+  $3553.AssetSetLinkStatusEnum_AssetSetLinkStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($3552.AssetSetLinkStatusEnum_AssetSetLinkStatus v) { setField(4, v); }
+  set status($3553.AssetSetLinkStatusEnum_AssetSetLinkStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)

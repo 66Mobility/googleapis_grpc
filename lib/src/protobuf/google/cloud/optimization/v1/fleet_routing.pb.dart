@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/latlng.pb.dart' as $1798;
-import 'async_model.pb.dart' as $4574;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/latlng.pb.dart' as $1799;
+import 'async_model.pb.dart' as $4576;
 import 'fleet_routing.pbenum.dart';
 
 export 'fleet_routing.pbenum.dart';
@@ -27,7 +27,7 @@ export 'fleet_routing.pbenum.dart';
 class OptimizeToursRequest extends $pb.GeneratedMessage {
   factory OptimizeToursRequest({
     $core.String? parent,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     ShipmentModel? model,
     OptimizeToursRequest_SolvingMode? solvingMode,
     $core.int? maxValidationErrors,
@@ -110,7 +110,7 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeToursRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOM<ShipmentModel>(3, _omitFieldNames ? '' : 'model', subBuilder: ShipmentModel.create)
     ..e<OptimizeToursRequest_SolvingMode>(4, _omitFieldNames ? '' : 'solvingMode', $pb.PbFieldType.OE, defaultOrMaker: OptimizeToursRequest_SolvingMode.DEFAULT_SOLVE, valueOf: OptimizeToursRequest_SolvingMode.valueOf, enumValues: OptimizeToursRequest_SolvingMode.values)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'maxValidationErrors', $pb.PbFieldType.O3)
@@ -172,15 +172,15 @@ class OptimizeToursRequest extends $pb.GeneratedMessage {
   ///  For asynchronous requests, the server will generate a solution (if
   ///  possible) before the timeout has elapsed.
   @$pb.TagNumber(2)
-  $1737.Duration get timeout => $_getN(1);
+  $1738.Duration get timeout => $_getN(1);
   @$pb.TagNumber(2)
-  set timeout($1737.Duration v) { setField(2, v); }
+  set timeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeout() => $_ensure(1);
+  $1738.Duration ensureTimeout() => $_ensure(1);
 
   /// Shipment model to solve.
   @$pb.TagNumber(3)
@@ -489,8 +489,8 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
     AggregatedMetrics? aggregatedRouteMetrics,
     $core.int? skippedMandatoryShipmentCount,
     $core.int? usedVehicleCount,
-    $1775.Timestamp? earliestVehicleStartTime,
-    $1775.Timestamp? latestVehicleEndTime,
+    $1776.Timestamp? earliestVehicleStartTime,
+    $1776.Timestamp? latestVehicleEndTime,
     $core.double? totalCost,
     $core.Map<$core.String, $core.double>? costs,
   }) {
@@ -526,8 +526,8 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
     ..aOM<AggregatedMetrics>(1, _omitFieldNames ? '' : 'aggregatedRouteMetrics', subBuilder: AggregatedMetrics.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'skippedMandatoryShipmentCount', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'usedVehicleCount', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'earliestVehicleStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'latestVehicleEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'earliestVehicleStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'latestVehicleEndTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'totalCost', $pb.PbFieldType.OD)
     ..m<$core.String, $core.double>(10, _omitFieldNames ? '' : 'costs', entryClassName: 'OptimizeToursResponse.Metrics.CostsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.cloud.optimization.v1'))
     ..hasRequiredFields = false
@@ -595,29 +595,29 @@ class OptimizeToursResponse_Metrics extends $pb.GeneratedMessage {
   /// all used vehicles of
   /// [ShipmentRoute.vehicle_start_time][google.cloud.optimization.v1.ShipmentRoute.vehicle_start_time].
   @$pb.TagNumber(4)
-  $1775.Timestamp get earliestVehicleStartTime => $_getN(3);
+  $1776.Timestamp get earliestVehicleStartTime => $_getN(3);
   @$pb.TagNumber(4)
-  set earliestVehicleStartTime($1775.Timestamp v) { setField(4, v); }
+  set earliestVehicleStartTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEarliestVehicleStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEarliestVehicleStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEarliestVehicleStartTime() => $_ensure(3);
+  $1776.Timestamp ensureEarliestVehicleStartTime() => $_ensure(3);
 
   /// The latest end time for a used vehicle, computed as the maximum over all
   /// used vehicles of
   /// [ShipmentRoute.vehicle_end_time][google.cloud.optimization.v1.ShipmentRoute.vehicle_end_time].
   @$pb.TagNumber(5)
-  $1775.Timestamp get latestVehicleEndTime => $_getN(4);
+  $1776.Timestamp get latestVehicleEndTime => $_getN(4);
   @$pb.TagNumber(5)
-  set latestVehicleEndTime($1775.Timestamp v) { setField(5, v); }
+  set latestVehicleEndTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLatestVehicleEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearLatestVehicleEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureLatestVehicleEndTime() => $_ensure(4);
+  $1776.Timestamp ensureLatestVehicleEndTime() => $_ensure(4);
 
   /// Total cost of the solution. The sum of all values in the costs map.
   @$pb.TagNumber(6)
@@ -775,8 +775,8 @@ class OptimizeToursResponse extends $pb.GeneratedMessage {
 class BatchOptimizeToursRequest_AsyncModelConfig extends $pb.GeneratedMessage {
   factory BatchOptimizeToursRequest_AsyncModelConfig({
     $core.String? displayName,
-    $4574.InputConfig? inputConfig,
-    $4574.OutputConfig? outputConfig,
+    $4576.InputConfig? inputConfig,
+    $4576.OutputConfig? outputConfig,
     $core.bool? enableCheckpoints,
   }) {
     final $result = create();
@@ -800,8 +800,8 @@ class BatchOptimizeToursRequest_AsyncModelConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchOptimizeToursRequest.AsyncModelConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4574.InputConfig>(2, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4574.InputConfig.create)
-    ..aOM<$4574.OutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4574.OutputConfig.create)
+    ..aOM<$4576.InputConfig>(2, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4576.InputConfig.create)
+    ..aOM<$4576.OutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4576.OutputConfig.create)
     ..aOB(4, _omitFieldNames ? '' : 'enableCheckpoints')
     ..hasRequiredFields = false
   ;
@@ -840,27 +840,27 @@ class BatchOptimizeToursRequest_AsyncModelConfig extends $pb.GeneratedMessage {
 
   /// Required. Information about the input model.
   @$pb.TagNumber(2)
-  $4574.InputConfig get inputConfig => $_getN(1);
+  $4576.InputConfig get inputConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set inputConfig($4574.InputConfig v) { setField(2, v); }
+  set inputConfig($4576.InputConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInputConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearInputConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4574.InputConfig ensureInputConfig() => $_ensure(1);
+  $4576.InputConfig ensureInputConfig() => $_ensure(1);
 
   /// Required. The desired output location information.
   @$pb.TagNumber(3)
-  $4574.OutputConfig get outputConfig => $_getN(2);
+  $4576.OutputConfig get outputConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set outputConfig($4574.OutputConfig v) { setField(3, v); }
+  set outputConfig($4576.OutputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOutputConfig() => $_has(2);
   @$pb.TagNumber(3)
   void clearOutputConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4574.OutputConfig ensureOutputConfig() => $_ensure(2);
+  $4576.OutputConfig ensureOutputConfig() => $_ensure(2);
 
   /// If this is set, the model will be solved in the checkpoint mode. In this
   /// mode, the input model can have a deadline longer than 30 mins without the
@@ -987,7 +987,7 @@ class BatchOptimizeToursResponse extends $pb.GeneratedMessage {
 /// Specifies a row of the duration and distance matrix.
 class ShipmentModel_DurationDistanceMatrix_Row extends $pb.GeneratedMessage {
   factory ShipmentModel_DurationDistanceMatrix_Row({
-    $core.Iterable<$1737.Duration>? durations,
+    $core.Iterable<$1738.Duration>? durations,
     $core.Iterable<$core.double>? meters,
   }) {
     final $result = create();
@@ -1004,7 +1004,7 @@ class ShipmentModel_DurationDistanceMatrix_Row extends $pb.GeneratedMessage {
   factory ShipmentModel_DurationDistanceMatrix_Row.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentModel.DurationDistanceMatrix.Row', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..pc<$1737.Duration>(1, _omitFieldNames ? '' : 'durations', $pb.PbFieldType.PM, subBuilder: $1737.Duration.create)
+    ..pc<$1738.Duration>(1, _omitFieldNames ? '' : 'durations', $pb.PbFieldType.PM, subBuilder: $1738.Duration.create)
     ..p<$core.double>(2, _omitFieldNames ? '' : 'meters', $pb.PbFieldType.KD)
     ..hasRequiredFields = false
   ;
@@ -1033,7 +1033,7 @@ class ShipmentModel_DurationDistanceMatrix_Row extends $pb.GeneratedMessage {
   /// Duration values for a given row. It must have as many elements as
   /// [ShipmentModel.duration_distance_matrix_dst_tags][google.cloud.optimization.v1.ShipmentModel.duration_distance_matrix_dst_tags].
   @$pb.TagNumber(1)
-  $core.List<$1737.Duration> get durations => $_getList(0);
+  $core.List<$1738.Duration> get durations => $_getList(0);
 
   /// Distance values for a given row. If no costs or constraints refer to
   /// distances in the model, this can be left empty; otherwise it must have
@@ -1130,7 +1130,7 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
     $core.int? secondIndex,
     $core.bool? firstIsDelivery,
     $core.bool? secondIsDelivery,
-    $1737.Duration? offsetDuration,
+    $1738.Duration? offsetDuration,
   }) {
     final $result = create();
     if (firstIndex != null) {
@@ -1159,7 +1159,7 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'secondIndex', $pb.PbFieldType.O3)
     ..aOB(3, _omitFieldNames ? '' : 'firstIsDelivery')
     ..aOB(4, _omitFieldNames ? '' : 'secondIsDelivery')
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'offsetDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'offsetDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1226,15 +1226,15 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
 
   /// The offset between the "first" and "second" event. It can be negative.
   @$pb.TagNumber(5)
-  $1737.Duration get offsetDuration => $_getN(4);
+  $1738.Duration get offsetDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set offsetDuration($1737.Duration v) { setField(5, v); }
+  set offsetDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOffsetDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearOffsetDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureOffsetDuration() => $_ensure(4);
+  $1738.Duration ensureOffsetDuration() => $_ensure(4);
 }
 
 /// The sequence of breaks (i.e. their number and order) that apply to each
@@ -1244,9 +1244,9 @@ class ShipmentModel_PrecedenceRule extends $pb.GeneratedMessage {
 /// be compatible with the order (this is checked).
 class ShipmentModel_BreakRule_BreakRequest extends $pb.GeneratedMessage {
   factory ShipmentModel_BreakRule_BreakRequest({
-    $1775.Timestamp? earliestStartTime,
-    $1775.Timestamp? latestStartTime,
-    $1737.Duration? minDuration,
+    $1776.Timestamp? earliestStartTime,
+    $1776.Timestamp? latestStartTime,
+    $1738.Duration? minDuration,
   }) {
     final $result = create();
     if (earliestStartTime != null) {
@@ -1265,9 +1265,9 @@ class ShipmentModel_BreakRule_BreakRequest extends $pb.GeneratedMessage {
   factory ShipmentModel_BreakRule_BreakRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentModel.BreakRule.BreakRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'earliestStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'latestStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'minDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'earliestStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'latestStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'minDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1294,39 +1294,39 @@ class ShipmentModel_BreakRule_BreakRequest extends $pb.GeneratedMessage {
 
   /// Required. Lower bound (inclusive) on the start of the break.
   @$pb.TagNumber(1)
-  $1775.Timestamp get earliestStartTime => $_getN(0);
+  $1776.Timestamp get earliestStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set earliestStartTime($1775.Timestamp v) { setField(1, v); }
+  set earliestStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEarliestStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEarliestStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEarliestStartTime() => $_ensure(0);
+  $1776.Timestamp ensureEarliestStartTime() => $_ensure(0);
 
   /// Required. Upper bound (inclusive) on the start of the break.
   @$pb.TagNumber(2)
-  $1775.Timestamp get latestStartTime => $_getN(1);
+  $1776.Timestamp get latestStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set latestStartTime($1775.Timestamp v) { setField(2, v); }
+  set latestStartTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLatestStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLatestStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLatestStartTime() => $_ensure(1);
+  $1776.Timestamp ensureLatestStartTime() => $_ensure(1);
 
   /// Required. Minimum duration of the break. Must be positive.
   @$pb.TagNumber(3)
-  $1737.Duration get minDuration => $_getN(2);
+  $1738.Duration get minDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set minDuration($1737.Duration v) { setField(3, v); }
+  set minDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureMinDuration() => $_ensure(2);
+  $1738.Duration ensureMinDuration() => $_ensure(2);
 }
 
 ///  One may further constrain the frequency and duration of the breaks
@@ -1364,8 +1364,8 @@ class ShipmentModel_BreakRule_BreakRequest extends $pb.GeneratedMessage {
 ///  ```
 class ShipmentModel_BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   factory ShipmentModel_BreakRule_FrequencyConstraint({
-    $1737.Duration? minBreakDuration,
-    $1737.Duration? maxInterBreakDuration,
+    $1738.Duration? minBreakDuration,
+    $1738.Duration? maxInterBreakDuration,
   }) {
     final $result = create();
     if (minBreakDuration != null) {
@@ -1381,8 +1381,8 @@ class ShipmentModel_BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   factory ShipmentModel_BreakRule_FrequencyConstraint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentModel.BreakRule.FrequencyConstraint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'minBreakDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'maxInterBreakDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'minBreakDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'maxInterBreakDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1410,29 +1410,29 @@ class ShipmentModel_BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   /// Required. Minimum break duration for this constraint. Nonnegative.
   /// See description of `FrequencyConstraint`.
   @$pb.TagNumber(1)
-  $1737.Duration get minBreakDuration => $_getN(0);
+  $1738.Duration get minBreakDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set minBreakDuration($1737.Duration v) { setField(1, v); }
+  set minBreakDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinBreakDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinBreakDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMinBreakDuration() => $_ensure(0);
+  $1738.Duration ensureMinBreakDuration() => $_ensure(0);
 
   /// Required. Maximum allowed span of any interval of time in the route
   /// that does not include at least partially a break of `duration >=
   /// min_break_duration`. Must be positive.
   @$pb.TagNumber(2)
-  $1737.Duration get maxInterBreakDuration => $_getN(1);
+  $1738.Duration get maxInterBreakDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set maxInterBreakDuration($1737.Duration v) { setField(2, v); }
+  set maxInterBreakDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxInterBreakDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxInterBreakDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMaxInterBreakDuration() => $_ensure(1);
+  $1738.Duration ensureMaxInterBreakDuration() => $_ensure(1);
 }
 
 ///  Deprecated: Use top level
@@ -1515,8 +1515,8 @@ class ShipmentModel extends $pb.GeneratedMessage {
     $core.Iterable<Shipment>? shipments,
     $core.Iterable<Vehicle>? vehicles,
     $core.int? maxActiveVehicles,
-    $1775.Timestamp? globalStartTime,
-    $1775.Timestamp? globalEndTime,
+    $1776.Timestamp? globalStartTime,
+    $1776.Timestamp? globalEndTime,
     $core.double? globalDurationCostPerHour,
     $core.Iterable<ShipmentModel_DurationDistanceMatrix>? durationDistanceMatrices,
     $core.Iterable<$core.String>? durationDistanceMatrixSrcTags,
@@ -1582,8 +1582,8 @@ class ShipmentModel extends $pb.GeneratedMessage {
     ..pc<Shipment>(1, _omitFieldNames ? '' : 'shipments', $pb.PbFieldType.PM, subBuilder: Shipment.create)
     ..pc<Vehicle>(2, _omitFieldNames ? '' : 'vehicles', $pb.PbFieldType.PM, subBuilder: Vehicle.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'maxActiveVehicles', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'globalStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'globalEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'globalStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'globalEndTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'globalDurationCostPerHour', $pb.PbFieldType.OD)
     ..pc<ShipmentModel_DurationDistanceMatrix>(8, _omitFieldNames ? '' : 'durationDistanceMatrices', $pb.PbFieldType.PM, subBuilder: ShipmentModel_DurationDistanceMatrix.create)
     ..pPS(9, _omitFieldNames ? '' : 'durationDistanceMatrixSrcTags')
@@ -1652,28 +1652,28 @@ class ShipmentModel extends $pb.GeneratedMessage {
   ///  If unset, 00:00:00 UTC, January 1, 1970 (i.e. seconds: 0, nanos: 0) is used
   ///  as default.
   @$pb.TagNumber(5)
-  $1775.Timestamp get globalStartTime => $_getN(3);
+  $1776.Timestamp get globalStartTime => $_getN(3);
   @$pb.TagNumber(5)
-  set globalStartTime($1775.Timestamp v) { setField(5, v); }
+  set globalStartTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasGlobalStartTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearGlobalStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureGlobalStartTime() => $_ensure(3);
+  $1776.Timestamp ensureGlobalStartTime() => $_ensure(3);
 
   /// If unset, 00:00:00 UTC, January 1, 1971 (i.e. seconds: 31536000, nanos: 0)
   /// is used as default.
   @$pb.TagNumber(6)
-  $1775.Timestamp get globalEndTime => $_getN(4);
+  $1776.Timestamp get globalEndTime => $_getN(4);
   @$pb.TagNumber(6)
-  set globalEndTime($1775.Timestamp v) { setField(6, v); }
+  set globalEndTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasGlobalEndTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearGlobalEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureGlobalEndTime() => $_ensure(4);
+  $1776.Timestamp ensureGlobalEndTime() => $_ensure(4);
 
   /// The "global duration" of the overall plan is the difference between the
   /// earliest effective start time and the latest effective end time of
@@ -1846,13 +1846,13 @@ class ShipmentModel extends $pb.GeneratedMessage {
 /// to pickup or drop off goods).
 class Shipment_VisitRequest extends $pb.GeneratedMessage {
   factory Shipment_VisitRequest({
-    $1798.LatLng? arrivalLocation,
+    $1799.LatLng? arrivalLocation,
     Waypoint? arrivalWaypoint,
-    $1798.LatLng? departureLocation,
+    $1799.LatLng? departureLocation,
     Waypoint? departureWaypoint,
     $core.Iterable<$core.String>? tags,
     $core.Iterable<TimeWindow>? timeWindows,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $core.double? cost,
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<CapacityQuantity>? demands,
@@ -1905,13 +1905,13 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   factory Shipment_VisitRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Shipment.VisitRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'arrivalLocation', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'arrivalLocation', subBuilder: $1799.LatLng.create)
     ..aOM<Waypoint>(2, _omitFieldNames ? '' : 'arrivalWaypoint', subBuilder: Waypoint.create)
-    ..aOM<$1798.LatLng>(3, _omitFieldNames ? '' : 'departureLocation', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(3, _omitFieldNames ? '' : 'departureLocation', subBuilder: $1799.LatLng.create)
     ..aOM<Waypoint>(4, _omitFieldNames ? '' : 'departureWaypoint', subBuilder: Waypoint.create)
     ..pPS(5, _omitFieldNames ? '' : 'tags')
     ..pc<TimeWindow>(6, _omitFieldNames ? '' : 'timeWindows', $pb.PbFieldType.PM, subBuilder: TimeWindow.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OD)
     ..pc<CapacityQuantity>(9, _omitFieldNames ? '' : 'demands', $pb.PbFieldType.PM, subBuilder: CapacityQuantity.create)
     ..pPS(10, _omitFieldNames ? '' : 'visitTypes')
@@ -1945,15 +1945,15 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   /// `VisitRequest`. If the shipment model has duration distance matrices,
   /// `arrival_location` must not be specified.
   @$pb.TagNumber(1)
-  $1798.LatLng get arrivalLocation => $_getN(0);
+  $1799.LatLng get arrivalLocation => $_getN(0);
   @$pb.TagNumber(1)
-  set arrivalLocation($1798.LatLng v) { setField(1, v); }
+  set arrivalLocation($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasArrivalLocation() => $_has(0);
   @$pb.TagNumber(1)
   void clearArrivalLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureArrivalLocation() => $_ensure(0);
+  $1799.LatLng ensureArrivalLocation() => $_ensure(0);
 
   /// The waypoint where the vehicle arrives when performing this
   /// `VisitRequest`. If the shipment model has duration distance matrices,
@@ -1974,15 +1974,15 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   /// If the shipment model has duration distance matrices,
   /// `departure_location` must not be specified.
   @$pb.TagNumber(3)
-  $1798.LatLng get departureLocation => $_getN(2);
+  $1799.LatLng get departureLocation => $_getN(2);
   @$pb.TagNumber(3)
-  set departureLocation($1798.LatLng v) { setField(3, v); }
+  set departureLocation($1799.LatLng v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDepartureLocation() => $_has(2);
   @$pb.TagNumber(3)
   void clearDepartureLocation() => clearField(3);
   @$pb.TagNumber(3)
-  $1798.LatLng ensureDepartureLocation() => $_ensure(2);
+  $1799.LatLng ensureDepartureLocation() => $_ensure(2);
 
   /// The waypoint where the vehicle departs after completing this
   /// `VisitRequest`. Can be omitted if it is the same as `arrival_waypoint`.
@@ -2025,15 +2025,15 @@ class Shipment_VisitRequest extends $pb.GeneratedMessage {
   /// and departure (to be added to the possible waiting time; see
   /// `time_windows`).
   @$pb.TagNumber(7)
-  $1737.Duration get duration => $_getN(6);
+  $1738.Duration get duration => $_getN(6);
   @$pb.TagNumber(7)
-  set duration($1737.Duration v) { setField(7, v); }
+  set duration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDuration() => $_has(6);
   @$pb.TagNumber(7)
   void clearDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureDuration() => $_ensure(6);
+  $1738.Duration ensureDuration() => $_ensure(6);
 
   /// Cost to service this visit request on a vehicle route. This can be used
   /// to pay different costs for each alternative pickup or delivery of a
@@ -2159,8 +2159,8 @@ class Shipment extends $pb.GeneratedMessage {
     $core.Iterable<$core.double>? costsPerVehicle,
     $core.Iterable<$core.int>? costsPerVehicleIndices,
     $core.double? pickupToDeliveryRelativeDetourLimit,
-    $1737.Duration? pickupToDeliveryAbsoluteDetourLimit,
-    $1737.Duration? pickupToDeliveryTimeLimit,
+    $1738.Duration? pickupToDeliveryAbsoluteDetourLimit,
+    $1738.Duration? pickupToDeliveryTimeLimit,
     $core.String? shipmentType,
     $core.String? label,
     $core.bool? ignore,
@@ -2225,8 +2225,8 @@ class Shipment extends $pb.GeneratedMessage {
     ..p<$core.double>(6, _omitFieldNames ? '' : 'costsPerVehicle', $pb.PbFieldType.KD)
     ..p<$core.int>(7, _omitFieldNames ? '' : 'costsPerVehicleIndices', $pb.PbFieldType.K3)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pickupToDeliveryRelativeDetourLimit', $pb.PbFieldType.OD)
-    ..aOM<$1737.Duration>(9, _omitFieldNames ? '' : 'pickupToDeliveryAbsoluteDetourLimit', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'pickupToDeliveryTimeLimit', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(9, _omitFieldNames ? '' : 'pickupToDeliveryAbsoluteDetourLimit', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'pickupToDeliveryTimeLimit', subBuilder: $1738.Duration.create)
     ..aOS(11, _omitFieldNames ? '' : 'shipmentType')
     ..aOS(12, _omitFieldNames ? '' : 'label')
     ..aOB(13, _omitFieldNames ? '' : 'ignore')
@@ -2360,15 +2360,15 @@ class Shipment extends $pb.GeneratedMessage {
   ///  As of 2017/10, detours are only supported when travel durations do not
   ///  depend on vehicles.
   @$pb.TagNumber(9)
-  $1737.Duration get pickupToDeliveryAbsoluteDetourLimit => $_getN(8);
+  $1738.Duration get pickupToDeliveryAbsoluteDetourLimit => $_getN(8);
   @$pb.TagNumber(9)
-  set pickupToDeliveryAbsoluteDetourLimit($1737.Duration v) { setField(9, v); }
+  set pickupToDeliveryAbsoluteDetourLimit($1738.Duration v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasPickupToDeliveryAbsoluteDetourLimit() => $_has(8);
   @$pb.TagNumber(9)
   void clearPickupToDeliveryAbsoluteDetourLimit() => clearField(9);
   @$pb.TagNumber(9)
-  $1737.Duration ensurePickupToDeliveryAbsoluteDetourLimit() => $_ensure(8);
+  $1738.Duration ensurePickupToDeliveryAbsoluteDetourLimit() => $_ensure(8);
 
   /// Specifies the maximum duration from start of pickup to start of delivery of
   /// a shipment. If specified, it must be nonnegative, and the shipment must
@@ -2377,15 +2377,15 @@ class Shipment extends $pb.GeneratedMessage {
   /// This can be specified alongside maximum detour constraints: the solution
   /// will respect both specifications.
   @$pb.TagNumber(10)
-  $1737.Duration get pickupToDeliveryTimeLimit => $_getN(9);
+  $1738.Duration get pickupToDeliveryTimeLimit => $_getN(9);
   @$pb.TagNumber(10)
-  set pickupToDeliveryTimeLimit($1737.Duration v) { setField(10, v); }
+  set pickupToDeliveryTimeLimit($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasPickupToDeliveryTimeLimit() => $_has(9);
   @$pb.TagNumber(10)
   void clearPickupToDeliveryTimeLimit() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensurePickupToDeliveryTimeLimit() => $_ensure(9);
+  $1738.Duration ensurePickupToDeliveryTimeLimit() => $_ensure(9);
 
   ///  Non-empty string specifying a "type" for this shipment.
   ///  This feature can be used to define incompatibilities or requirements
@@ -2902,10 +2902,10 @@ class Vehicle_LoadLimit extends $pb.GeneratedMessage {
 ///  associated cost must be defined together.
 class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   factory Vehicle_DurationLimit({
-    $1737.Duration? maxDuration,
-    $1737.Duration? softMaxDuration,
+    $1738.Duration? maxDuration,
+    $1738.Duration? softMaxDuration,
     $core.double? costPerHourAfterSoftMax,
-    $1737.Duration? quadraticSoftMaxDuration,
+    $1738.Duration? quadraticSoftMaxDuration,
     $core.double? costPerSquareHourAfterQuadraticSoftMax,
   }) {
     final $result = create();
@@ -2931,10 +2931,10 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   factory Vehicle_DurationLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle.DurationLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'maxDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'softMaxDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'maxDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'softMaxDuration', subBuilder: $1738.Duration.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'costPerHourAfterSoftMax', $pb.PbFieldType.OD)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'quadraticSoftMaxDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'quadraticSoftMaxDuration', subBuilder: $1738.Duration.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'costPerSquareHourAfterQuadraticSoftMax', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -2962,15 +2962,15 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
 
   /// A hard limit constraining the duration to be at most max_duration.
   @$pb.TagNumber(1)
-  $1737.Duration get maxDuration => $_getN(0);
+  $1738.Duration get maxDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set maxDuration($1737.Duration v) { setField(1, v); }
+  set maxDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaxDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaxDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMaxDuration() => $_ensure(0);
+  $1738.Duration ensureMaxDuration() => $_ensure(0);
 
   ///  A soft limit not enforcing a maximum duration limit, but when violated
   ///  makes the route incur a cost. This cost adds up to other costs defined in
@@ -2979,15 +2979,15 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   ///  If defined, `soft_max_duration` must be nonnegative. If max_duration is
   ///  also defined, `soft_max_duration` must be less than max_duration.
   @$pb.TagNumber(2)
-  $1737.Duration get softMaxDuration => $_getN(1);
+  $1738.Duration get softMaxDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set softMaxDuration($1737.Duration v) { setField(2, v); }
+  set softMaxDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSoftMaxDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearSoftMaxDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureSoftMaxDuration() => $_ensure(1);
+  $1738.Duration ensureSoftMaxDuration() => $_ensure(1);
 
   /// Cost per hour incurred if the `soft_max_duration` threshold is violated.
   /// The additional cost is 0 if the duration is under the threshold,
@@ -3016,15 +3016,15 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
   ///
   ///     `max_duration - quadratic_soft_max_duration <= 86400 seconds`
   @$pb.TagNumber(4)
-  $1737.Duration get quadraticSoftMaxDuration => $_getN(3);
+  $1738.Duration get quadraticSoftMaxDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set quadraticSoftMaxDuration($1737.Duration v) { setField(4, v); }
+  set quadraticSoftMaxDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasQuadraticSoftMaxDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearQuadraticSoftMaxDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureQuadraticSoftMaxDuration() => $_ensure(3);
+  $1738.Duration ensureQuadraticSoftMaxDuration() => $_ensure(3);
 
   ///  Cost per square hour incurred if the
   ///  `quadratic_soft_max_duration` threshold is violated.
@@ -3055,9 +3055,9 @@ class Vehicle extends $pb.GeneratedMessage {
   factory Vehicle({
     Vehicle_TravelMode? travelMode,
     RouteModifiers? routeModifiers,
-    $1798.LatLng? startLocation,
+    $1799.LatLng? startLocation,
     Waypoint? startWaypoint,
-    $1798.LatLng? endLocation,
+    $1799.LatLng? endLocation,
     Waypoint? endWaypoint,
     $core.Iterable<$core.String>? startTags,
     $core.Iterable<$core.String>? endTags,
@@ -3079,7 +3079,7 @@ class Vehicle extends $pb.GeneratedMessage {
     Vehicle_DurationLimit? routeDurationLimit,
     Vehicle_DurationLimit? travelDurationLimit,
     DistanceLimit? routeDistanceLimit,
-    $core.Map<$core.String, $1737.Duration>? extraVisitDurationForVisitType,
+    $core.Map<$core.String, $1738.Duration>? extraVisitDurationForVisitType,
     BreakRule? breakRule,
     $core.String? label,
     $core.bool? ignore,
@@ -3188,9 +3188,9 @@ class Vehicle extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
     ..e<Vehicle_TravelMode>(1, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: Vehicle_TravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: Vehicle_TravelMode.valueOf, enumValues: Vehicle_TravelMode.values)
     ..aOM<RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers', subBuilder: RouteModifiers.create)
-    ..aOM<$1798.LatLng>(3, _omitFieldNames ? '' : 'startLocation', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(3, _omitFieldNames ? '' : 'startLocation', subBuilder: $1799.LatLng.create)
     ..aOM<Waypoint>(4, _omitFieldNames ? '' : 'startWaypoint', subBuilder: Waypoint.create)
-    ..aOM<$1798.LatLng>(5, _omitFieldNames ? '' : 'endLocation', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(5, _omitFieldNames ? '' : 'endLocation', subBuilder: $1799.LatLng.create)
     ..aOM<Waypoint>(6, _omitFieldNames ? '' : 'endWaypoint', subBuilder: Waypoint.create)
     ..pPS(7, _omitFieldNames ? '' : 'startTags')
     ..pPS(8, _omitFieldNames ? '' : 'endTags')
@@ -3209,7 +3209,7 @@ class Vehicle extends $pb.GeneratedMessage {
     ..aOM<Vehicle_DurationLimit>(21, _omitFieldNames ? '' : 'routeDurationLimit', subBuilder: Vehicle_DurationLimit.create)
     ..aOM<Vehicle_DurationLimit>(22, _omitFieldNames ? '' : 'travelDurationLimit', subBuilder: Vehicle_DurationLimit.create)
     ..aOM<DistanceLimit>(23, _omitFieldNames ? '' : 'routeDistanceLimit', subBuilder: DistanceLimit.create)
-    ..m<$core.String, $1737.Duration>(24, _omitFieldNames ? '' : 'extraVisitDurationForVisitType', entryClassName: 'Vehicle.ExtraVisitDurationForVisitTypeEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1737.Duration.create, valueDefaultOrMaker: $1737.Duration.getDefault, packageName: const $pb.PackageName('google.cloud.optimization.v1'))
+    ..m<$core.String, $1738.Duration>(24, _omitFieldNames ? '' : 'extraVisitDurationForVisitType', entryClassName: 'Vehicle.ExtraVisitDurationForVisitTypeEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1738.Duration.create, valueDefaultOrMaker: $1738.Duration.getDefault, packageName: const $pb.PackageName('google.cloud.optimization.v1'))
     ..aOM<BreakRule>(25, _omitFieldNames ? '' : 'breakRule', subBuilder: BreakRule.create)
     ..aOS(27, _omitFieldNames ? '' : 'label')
     ..aOB(28, _omitFieldNames ? '' : 'ignore')
@@ -3268,15 +3268,15 @@ class Vehicle extends $pb.GeneratedMessage {
   /// If the shipment model has duration and distance matrices, `start_location`
   /// must not be specified.
   @$pb.TagNumber(3)
-  $1798.LatLng get startLocation => $_getN(2);
+  $1799.LatLng get startLocation => $_getN(2);
   @$pb.TagNumber(3)
-  set startLocation($1798.LatLng v) { setField(3, v); }
+  set startLocation($1799.LatLng v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartLocation() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartLocation() => clearField(3);
   @$pb.TagNumber(3)
-  $1798.LatLng ensureStartLocation() => $_ensure(2);
+  $1799.LatLng ensureStartLocation() => $_ensure(2);
 
   /// Waypoint representing a geographic location where the vehicle starts before
   /// picking up any shipments. If neither `start_waypoint` nor `start_location`
@@ -3300,15 +3300,15 @@ class Vehicle extends $pb.GeneratedMessage {
   /// If the shipment model has duration and distance matrices, `end_location`
   /// must not be specified.
   @$pb.TagNumber(5)
-  $1798.LatLng get endLocation => $_getN(4);
+  $1799.LatLng get endLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set endLocation($1798.LatLng v) { setField(5, v); }
+  set endLocation($1799.LatLng v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndLocation() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndLocation() => clearField(5);
   @$pb.TagNumber(5)
-  $1798.LatLng ensureEndLocation() => $_ensure(4);
+  $1799.LatLng ensureEndLocation() => $_ensure(4);
 
   /// Waypoint representing a geographic location where the vehicle ends after
   /// it has completed its last `VisitRequest`. If neither `end_waypoint` nor
@@ -3548,7 +3548,7 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  If a visit request has multiple types, a duration will be added for each
   ///  type in the map.
   @$pb.TagNumber(24)
-  $core.Map<$core.String, $1737.Duration> get extraVisitDurationForVisitType => $_getMap(23);
+  $core.Map<$core.String, $1738.Duration> get extraVisitDurationForVisitType => $_getMap(23);
 
   /// Describes the break schedule to be enforced on this vehicle.
   /// If empty, no breaks will be scheduled for this vehicle.
@@ -3640,10 +3640,10 @@ class Vehicle extends $pb.GeneratedMessage {
 ///  ```
 class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? softStartTime,
-    $1775.Timestamp? softEndTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? softStartTime,
+    $1776.Timestamp? softEndTime,
     $core.double? costPerHourBeforeSoftStartTime,
     $core.double? costPerHourAfterSoftEndTime,
   }) {
@@ -3673,10 +3673,10 @@ class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'softStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'softEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'softStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'softEndTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'costPerHourBeforeSoftStartTime', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'costPerHourAfterSoftEndTime', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -3706,52 +3706,52 @@ class TimeWindow extends $pb.GeneratedMessage {
   /// The hard time window start time. If unspecified it will be set to
   /// `ShipmentModel.global_start_time`.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The hard time window end time. If unspecified it will be set to
   /// `ShipmentModel.global_end_time`.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The soft start time of the time window.
   @$pb.TagNumber(3)
-  $1775.Timestamp get softStartTime => $_getN(2);
+  $1776.Timestamp get softStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set softStartTime($1775.Timestamp v) { setField(3, v); }
+  set softStartTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSoftStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearSoftStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureSoftStartTime() => $_ensure(2);
+  $1776.Timestamp ensureSoftStartTime() => $_ensure(2);
 
   /// The soft end time of the time window.
   @$pb.TagNumber(4)
-  $1775.Timestamp get softEndTime => $_getN(3);
+  $1776.Timestamp get softEndTime => $_getN(3);
   @$pb.TagNumber(4)
-  set softEndTime($1775.Timestamp v) { setField(4, v); }
+  set softEndTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSoftEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearSoftEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureSoftEndTime() => $_ensure(3);
+  $1776.Timestamp ensureSoftEndTime() => $_ensure(3);
 
   ///  A cost per hour added to other costs in the model if the event occurs
   ///  before soft_start_time, computed as:
@@ -4075,7 +4075,7 @@ class TransitionAttributes extends $pb.GeneratedMessage {
     $core.double? cost,
     $core.double? costPerKilometer,
     DistanceLimit? distanceLimit,
-    $1737.Duration? delay,
+    $1738.Duration? delay,
   }) {
     final $result = create();
     if (srcTag != null) {
@@ -4116,7 +4116,7 @@ class TransitionAttributes extends $pb.GeneratedMessage {
     ..a<$core.double>(5, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'costPerKilometer', $pb.PbFieldType.OD)
     ..aOM<DistanceLimit>(7, _omitFieldNames ? '' : 'distanceLimit', subBuilder: DistanceLimit.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'delay', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'delay', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4238,15 +4238,15 @@ class TransitionAttributes extends $pb.GeneratedMessage {
   ///  This delay always occurs *after* finishing the source visit and *before*
   ///  starting the destination visit.
   @$pb.TagNumber(8)
-  $1737.Duration get delay => $_getN(7);
+  $1738.Duration get delay => $_getN(7);
   @$pb.TagNumber(8)
-  set delay($1737.Duration v) { setField(8, v); }
+  set delay($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDelay() => $_has(7);
   @$pb.TagNumber(8)
   void clearDelay() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureDelay() => $_ensure(7);
+  $1738.Duration ensureDelay() => $_ensure(7);
 }
 
 enum Waypoint_LocationType {
@@ -4358,7 +4358,7 @@ class Waypoint extends $pb.GeneratedMessage {
 /// Encapsulates a location (a geographic point, and an optional heading).
 class Location extends $pb.GeneratedMessage {
   factory Location({
-    $1798.LatLng? latLng,
+    $1799.LatLng? latLng,
     $core.int? heading,
   }) {
     final $result = create();
@@ -4375,7 +4375,7 @@ class Location extends $pb.GeneratedMessage {
   factory Location.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Location', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1799.LatLng.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'heading', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -4403,15 +4403,15 @@ class Location extends $pb.GeneratedMessage {
 
   /// The waypoint's geographic coordinates.
   @$pb.TagNumber(1)
-  $1798.LatLng get latLng => $_getN(0);
+  $1799.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($1798.LatLng v) { setField(1, v); }
+  set latLng($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
   void clearLatLng() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureLatLng() => $_ensure(0);
+  $1799.LatLng ensureLatLng() => $_ensure(0);
 
   /// The compass heading associated with the direction of the flow of traffic.
   /// This value is used to specify the side of the road to use for pickup and
@@ -4434,9 +4434,9 @@ class Location extends $pb.GeneratedMessage {
 /// be compatible with the order (this is checked).
 class BreakRule_BreakRequest extends $pb.GeneratedMessage {
   factory BreakRule_BreakRequest({
-    $1775.Timestamp? earliestStartTime,
-    $1775.Timestamp? latestStartTime,
-    $1737.Duration? minDuration,
+    $1776.Timestamp? earliestStartTime,
+    $1776.Timestamp? latestStartTime,
+    $1738.Duration? minDuration,
   }) {
     final $result = create();
     if (earliestStartTime != null) {
@@ -4455,9 +4455,9 @@ class BreakRule_BreakRequest extends $pb.GeneratedMessage {
   factory BreakRule_BreakRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BreakRule.BreakRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'earliestStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'latestStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'minDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'earliestStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'latestStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'minDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4484,39 +4484,39 @@ class BreakRule_BreakRequest extends $pb.GeneratedMessage {
 
   /// Required. Lower bound (inclusive) on the start of the break.
   @$pb.TagNumber(1)
-  $1775.Timestamp get earliestStartTime => $_getN(0);
+  $1776.Timestamp get earliestStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set earliestStartTime($1775.Timestamp v) { setField(1, v); }
+  set earliestStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEarliestStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEarliestStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEarliestStartTime() => $_ensure(0);
+  $1776.Timestamp ensureEarliestStartTime() => $_ensure(0);
 
   /// Required. Upper bound (inclusive) on the start of the break.
   @$pb.TagNumber(2)
-  $1775.Timestamp get latestStartTime => $_getN(1);
+  $1776.Timestamp get latestStartTime => $_getN(1);
   @$pb.TagNumber(2)
-  set latestStartTime($1775.Timestamp v) { setField(2, v); }
+  set latestStartTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLatestStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLatestStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLatestStartTime() => $_ensure(1);
+  $1776.Timestamp ensureLatestStartTime() => $_ensure(1);
 
   /// Required. Minimum duration of the break. Must be positive.
   @$pb.TagNumber(3)
-  $1737.Duration get minDuration => $_getN(2);
+  $1738.Duration get minDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set minDuration($1737.Duration v) { setField(3, v); }
+  set minDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureMinDuration() => $_ensure(2);
+  $1738.Duration ensureMinDuration() => $_ensure(2);
 }
 
 ///  One may further constrain the frequency and duration of the breaks
@@ -4554,8 +4554,8 @@ class BreakRule_BreakRequest extends $pb.GeneratedMessage {
 ///  ```
 class BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   factory BreakRule_FrequencyConstraint({
-    $1737.Duration? minBreakDuration,
-    $1737.Duration? maxInterBreakDuration,
+    $1738.Duration? minBreakDuration,
+    $1738.Duration? maxInterBreakDuration,
   }) {
     final $result = create();
     if (minBreakDuration != null) {
@@ -4571,8 +4571,8 @@ class BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   factory BreakRule_FrequencyConstraint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BreakRule.FrequencyConstraint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'minBreakDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'maxInterBreakDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'minBreakDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'maxInterBreakDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4600,29 +4600,29 @@ class BreakRule_FrequencyConstraint extends $pb.GeneratedMessage {
   /// Required. Minimum break duration for this constraint. Nonnegative.
   /// See description of `FrequencyConstraint`.
   @$pb.TagNumber(1)
-  $1737.Duration get minBreakDuration => $_getN(0);
+  $1738.Duration get minBreakDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set minBreakDuration($1737.Duration v) { setField(1, v); }
+  set minBreakDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinBreakDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinBreakDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMinBreakDuration() => $_ensure(0);
+  $1738.Duration ensureMinBreakDuration() => $_ensure(0);
 
   /// Required. Maximum allowed span of any interval of time in the route that
   /// does not include at least partially a break of `duration >=
   /// min_break_duration`. Must be positive.
   @$pb.TagNumber(2)
-  $1737.Duration get maxInterBreakDuration => $_getN(1);
+  $1738.Duration get maxInterBreakDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set maxInterBreakDuration($1737.Duration v) { setField(2, v); }
+  set maxInterBreakDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxInterBreakDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxInterBreakDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMaxInterBreakDuration() => $_ensure(1);
+  $1738.Duration ensureMaxInterBreakDuration() => $_ensure(1);
 }
 
 ///  Rules to generate time breaks for a vehicle (e.g. lunch breaks). A break
@@ -4696,8 +4696,8 @@ class BreakRule extends $pb.GeneratedMessage {
 /// [TransitionAttributes.delay][google.cloud.optimization.v1.TransitionAttributes.delay].
 class ShipmentRoute_Delay extends $pb.GeneratedMessage {
   factory ShipmentRoute_Delay({
-    $1775.Timestamp? startTime,
-    $1737.Duration? duration,
+    $1776.Timestamp? startTime,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -4713,8 +4713,8 @@ class ShipmentRoute_Delay extends $pb.GeneratedMessage {
   factory ShipmentRoute_Delay.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.Delay', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4741,27 +4741,27 @@ class ShipmentRoute_Delay extends $pb.GeneratedMessage {
 
   /// Start of the delay.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Duration of the delay.
   @$pb.TagNumber(2)
-  $1737.Duration get duration => $_getN(1);
+  $1738.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($1737.Duration v) { setField(2, v); }
+  set duration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureDuration() => $_ensure(1);
+  $1738.Duration ensureDuration() => $_ensure(1);
 }
 
 /// A visit performed during a route. This visit corresponds to a pickup or a
@@ -4771,10 +4771,10 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
     $core.int? shipmentIndex,
     $core.bool? isPickup,
     $core.int? visitRequestIndex,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<CapacityQuantity>? demands,
-    $1737.Duration? detour,
+    $1738.Duration? detour,
     $core.String? shipmentLabel,
     $core.String? visitLabel,
   @$core.Deprecated('This field is deprecated.')
@@ -4830,9 +4830,9 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'shipmentIndex', $pb.PbFieldType.O3)
     ..aOB(2, _omitFieldNames ? '' : 'isPickup')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'visitRequestIndex', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..pc<CapacityQuantity>(5, _omitFieldNames ? '' : 'demands', $pb.PbFieldType.PM, subBuilder: CapacityQuantity.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'detour', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'detour', subBuilder: $1738.Duration.create)
     ..aOS(7, _omitFieldNames ? '' : 'shipmentLabel')
     ..aOS(8, _omitFieldNames ? '' : 'visitLabel')
     ..pc<CapacityQuantity>(9, _omitFieldNames ? '' : 'arrivalLoads', $pb.PbFieldType.PM, subBuilder: CapacityQuantity.create)
@@ -4899,15 +4899,15 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   /// than this at the visit location. Times are consistent with the
   /// `ShipmentModel`.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Deprecated: Use
   /// [Visit.load_demands][google.cloud.optimization.v1.ShipmentRoute.Visit.load_demands]
@@ -4932,15 +4932,15 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
   /// the vehicle's `start_location` to the visit.
   /// ```
   @$pb.TagNumber(6)
-  $1737.Duration get detour => $_getN(5);
+  $1738.Duration get detour => $_getN(5);
   @$pb.TagNumber(6)
-  set detour($1737.Duration v) { setField(6, v); }
+  set detour($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDetour() => $_has(5);
   @$pb.TagNumber(6)
   void clearDetour() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureDetour() => $_ensure(5);
+  $1738.Duration ensureDetour() => $_ensure(5);
 
   /// Copy of the corresponding `Shipment.label`, if specified in the
   /// `Shipment`.
@@ -5013,14 +5013,14 @@ class ShipmentRoute_Visit extends $pb.GeneratedMessage {
 ///  corresponding travel metrics are 0.
 class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   factory ShipmentRoute_Transition({
-    $1737.Duration? travelDuration,
+    $1738.Duration? travelDuration,
     $core.double? travelDistanceMeters,
     $core.bool? trafficInfoUnavailable,
-    $1737.Duration? delayDuration,
-    $1737.Duration? breakDuration,
-    $1737.Duration? waitDuration,
-    $1737.Duration? totalDuration,
-    $1775.Timestamp? startTime,
+    $1738.Duration? delayDuration,
+    $1738.Duration? breakDuration,
+    $1738.Duration? waitDuration,
+    $1738.Duration? totalDuration,
+    $1776.Timestamp? startTime,
     ShipmentRoute_EncodedPolyline? routePolyline,
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<CapacityQuantity>? loads,
@@ -5068,14 +5068,14 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   factory ShipmentRoute_Transition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.Transition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'travelDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'travelDuration', subBuilder: $1738.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'travelDistanceMeters', $pb.PbFieldType.OD)
     ..aOB(3, _omitFieldNames ? '' : 'trafficInfoUnavailable')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'delayDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'breakDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'totalDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'delayDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'breakDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'totalDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ShipmentRoute_EncodedPolyline>(9, _omitFieldNames ? '' : 'routePolyline', subBuilder: ShipmentRoute_EncodedPolyline.create)
     ..pc<CapacityQuantity>(10, _omitFieldNames ? '' : 'loads', $pb.PbFieldType.PM, subBuilder: CapacityQuantity.create)
     ..m<$core.String, ShipmentRoute_VehicleLoad>(11, _omitFieldNames ? '' : 'vehicleLoads', entryClassName: 'ShipmentRoute.Transition.VehicleLoadsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ShipmentRoute_VehicleLoad.create, valueDefaultOrMaker: ShipmentRoute_VehicleLoad.getDefault, packageName: const $pb.PackageName('google.cloud.optimization.v1'))
@@ -5105,15 +5105,15 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
 
   /// Travel duration during this transition.
   @$pb.TagNumber(1)
-  $1737.Duration get travelDuration => $_getN(0);
+  $1738.Duration get travelDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set travelDuration($1737.Duration v) { setField(1, v); }
+  set travelDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTravelDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearTravelDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTravelDuration() => $_ensure(0);
+  $1738.Duration ensureTravelDuration() => $_ensure(0);
 
   /// Distance traveled during the transition.
   @$pb.TagNumber(2)
@@ -5145,43 +5145,43 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   /// vehicle end). See
   /// [TransitionAttributes.delay][google.cloud.optimization.v1.TransitionAttributes.delay].
   @$pb.TagNumber(4)
-  $1737.Duration get delayDuration => $_getN(3);
+  $1738.Duration get delayDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set delayDuration($1737.Duration v) { setField(4, v); }
+  set delayDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDelayDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearDelayDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureDelayDuration() => $_ensure(3);
+  $1738.Duration ensureDelayDuration() => $_ensure(3);
 
   /// Sum of the duration of the breaks occurring during this transition, if
   /// any. Details about each break's start time and duration are stored in
   /// [ShipmentRoute.breaks][google.cloud.optimization.v1.ShipmentRoute.breaks].
   @$pb.TagNumber(5)
-  $1737.Duration get breakDuration => $_getN(4);
+  $1738.Duration get breakDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set breakDuration($1737.Duration v) { setField(5, v); }
+  set breakDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBreakDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearBreakDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureBreakDuration() => $_ensure(4);
+  $1738.Duration ensureBreakDuration() => $_ensure(4);
 
   /// Time spent waiting during this transition. Wait duration corresponds to
   /// idle time and does not include break time. Also note that this wait time
   /// may be split into several non-contiguous intervals.
   @$pb.TagNumber(6)
-  $1737.Duration get waitDuration => $_getN(5);
+  $1738.Duration get waitDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set waitDuration($1737.Duration v) { setField(6, v); }
+  set waitDuration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasWaitDuration() => $_has(5);
   @$pb.TagNumber(6)
   void clearWaitDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureWaitDuration() => $_ensure(5);
+  $1738.Duration ensureWaitDuration() => $_ensure(5);
 
   ///  Total duration of the transition, provided for convenience. It is equal
   ///  to:
@@ -5192,27 +5192,27 @@ class ShipmentRoute_Transition extends $pb.GeneratedMessage {
   ///  additionally holds: `total_duration = travel_duration + delay_duration
   ///  + break_duration + wait_duration`.
   @$pb.TagNumber(7)
-  $1737.Duration get totalDuration => $_getN(6);
+  $1738.Duration get totalDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set totalDuration($1737.Duration v) { setField(7, v); }
+  set totalDuration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTotalDuration() => $_has(6);
   @$pb.TagNumber(7)
   void clearTotalDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureTotalDuration() => $_ensure(6);
+  $1738.Duration ensureTotalDuration() => $_ensure(6);
 
   /// Start time of this transition.
   @$pb.TagNumber(8)
-  $1775.Timestamp get startTime => $_getN(7);
+  $1776.Timestamp get startTime => $_getN(7);
   @$pb.TagNumber(8)
-  set startTime($1775.Timestamp v) { setField(8, v); }
+  set startTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearStartTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureStartTime() => $_ensure(7);
+  $1776.Timestamp ensureStartTime() => $_ensure(7);
 
   /// The encoded polyline representation of the route followed during the
   /// transition.
@@ -5366,8 +5366,8 @@ class ShipmentRoute_EncodedPolyline extends $pb.GeneratedMessage {
 /// Data representing the execution of a break.
 class ShipmentRoute_Break extends $pb.GeneratedMessage {
   factory ShipmentRoute_Break({
-    $1775.Timestamp? startTime,
-    $1737.Duration? duration,
+    $1776.Timestamp? startTime,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -5383,8 +5383,8 @@ class ShipmentRoute_Break extends $pb.GeneratedMessage {
   factory ShipmentRoute_Break.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.Break', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -5411,27 +5411,27 @@ class ShipmentRoute_Break extends $pb.GeneratedMessage {
 
   /// Start time of a break.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Duration of a break.
   @$pb.TagNumber(2)
-  $1737.Duration get duration => $_getN(1);
+  $1738.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($1737.Duration v) { setField(2, v); }
+  set duration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureDuration() => $_ensure(1);
+  $1738.Duration ensureDuration() => $_ensure(1);
 }
 
 ///  Deprecated: Use
@@ -5450,7 +5450,7 @@ class ShipmentRoute_Break extends $pb.GeneratedMessage {
 ///  corresponding travel metrics are 0 and/or empty.
 class ShipmentRoute_TravelStep extends $pb.GeneratedMessage {
   factory ShipmentRoute_TravelStep({
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $core.double? distanceMeters,
     $core.bool? trafficInfoUnavailable,
     ShipmentRoute_EncodedPolyline? routePolyline,
@@ -5475,7 +5475,7 @@ class ShipmentRoute_TravelStep extends $pb.GeneratedMessage {
   factory ShipmentRoute_TravelStep.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute.TravelStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.OD)
     ..aOB(3, _omitFieldNames ? '' : 'trafficInfoUnavailable')
     ..aOM<ShipmentRoute_EncodedPolyline>(4, _omitFieldNames ? '' : 'routePolyline', subBuilder: ShipmentRoute_EncodedPolyline.create)
@@ -5505,15 +5505,15 @@ class ShipmentRoute_TravelStep extends $pb.GeneratedMessage {
 
   /// Duration of the travel step.
   @$pb.TagNumber(1)
-  $1737.Duration get duration => $_getN(0);
+  $1738.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($1737.Duration v) { setField(1, v); }
+  set duration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDuration() => $_ensure(0);
+  $1738.Duration ensureDuration() => $_ensure(0);
 
   /// Distance traveled during the step.
   @$pb.TagNumber(2)
@@ -5645,8 +5645,8 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   factory ShipmentRoute({
     $core.int? vehicleIndex,
     $core.String? vehicleLabel,
-    $1775.Timestamp? vehicleStartTime,
-    $1775.Timestamp? vehicleEndTime,
+    $1776.Timestamp? vehicleStartTime,
+    $1776.Timestamp? vehicleEndTime,
     $core.Iterable<ShipmentRoute_Visit>? visits,
     $core.Iterable<ShipmentRoute_Transition>? transitions,
     $core.bool? hasTrafficInfeasibilities,
@@ -5658,7 +5658,7 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<ShipmentRoute_TravelStep>? travelSteps,
   @$core.Deprecated('This field is deprecated.')
-    $1737.Duration? vehicleDetour,
+    $1738.Duration? vehicleDetour,
   @$core.Deprecated('This field is deprecated.')
     ShipmentRoute_Delay? delayBeforeVehicleEnd,
     $core.Map<$core.String, $core.double>? routeCosts,
@@ -5726,8 +5726,8 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShipmentRoute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'vehicleIndex', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'vehicleLabel')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'vehicleStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'vehicleEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'vehicleStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'vehicleEndTime', subBuilder: $1776.Timestamp.create)
     ..pc<ShipmentRoute_Visit>(7, _omitFieldNames ? '' : 'visits', $pb.PbFieldType.PM, subBuilder: ShipmentRoute_Visit.create)
     ..pc<ShipmentRoute_Transition>(8, _omitFieldNames ? '' : 'transitions', $pb.PbFieldType.PM, subBuilder: ShipmentRoute_Transition.create)
     ..aOB(9, _omitFieldNames ? '' : 'hasTrafficInfeasibilities')
@@ -5736,7 +5736,7 @@ class ShipmentRoute extends $pb.GeneratedMessage {
     ..aOM<AggregatedMetrics>(12, _omitFieldNames ? '' : 'metrics', subBuilder: AggregatedMetrics.create)
     ..pc<CapacityQuantity>(13, _omitFieldNames ? '' : 'endLoads', $pb.PbFieldType.PM, subBuilder: CapacityQuantity.create)
     ..pc<ShipmentRoute_TravelStep>(14, _omitFieldNames ? '' : 'travelSteps', $pb.PbFieldType.PM, subBuilder: ShipmentRoute_TravelStep.create)
-    ..aOM<$1737.Duration>(15, _omitFieldNames ? '' : 'vehicleDetour', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(15, _omitFieldNames ? '' : 'vehicleDetour', subBuilder: $1738.Duration.create)
     ..aOM<ShipmentRoute_Delay>(16, _omitFieldNames ? '' : 'delayBeforeVehicleEnd', subBuilder: ShipmentRoute_Delay.create)
     ..m<$core.String, $core.double>(17, _omitFieldNames ? '' : 'routeCosts', entryClassName: 'ShipmentRoute.RouteCostsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.cloud.optimization.v1'))
     ..a<$core.double>(18, _omitFieldNames ? '' : 'routeTotalCost', $pb.PbFieldType.OD)
@@ -5788,27 +5788,27 @@ class ShipmentRoute extends $pb.GeneratedMessage {
 
   /// Time at which the vehicle starts its route.
   @$pb.TagNumber(5)
-  $1775.Timestamp get vehicleStartTime => $_getN(2);
+  $1776.Timestamp get vehicleStartTime => $_getN(2);
   @$pb.TagNumber(5)
-  set vehicleStartTime($1775.Timestamp v) { setField(5, v); }
+  set vehicleStartTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasVehicleStartTime() => $_has(2);
   @$pb.TagNumber(5)
   void clearVehicleStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureVehicleStartTime() => $_ensure(2);
+  $1776.Timestamp ensureVehicleStartTime() => $_ensure(2);
 
   /// Time at which the vehicle finishes its route.
   @$pb.TagNumber(6)
-  $1775.Timestamp get vehicleEndTime => $_getN(3);
+  $1776.Timestamp get vehicleEndTime => $_getN(3);
   @$pb.TagNumber(6)
-  set vehicleEndTime($1775.Timestamp v) { setField(6, v); }
+  set vehicleEndTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasVehicleEndTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearVehicleEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureVehicleEndTime() => $_ensure(3);
+  $1776.Timestamp ensureVehicleEndTime() => $_ensure(3);
 
   /// Ordered sequence of visits representing a route.
   /// visits[i] is the i-th visit in the route.
@@ -5917,10 +5917,10 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   ///  from the vehicle's start_location to its `end_location`.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  $1737.Duration get vehicleDetour => $_getN(12);
+  $1738.Duration get vehicleDetour => $_getN(12);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  set vehicleDetour($1737.Duration v) { setField(15, v); }
+  set vehicleDetour($1738.Duration v) { setField(15, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
   $core.bool hasVehicleDetour() => $_has(12);
@@ -5929,7 +5929,7 @@ class ShipmentRoute extends $pb.GeneratedMessage {
   void clearVehicleDetour() => clearField(15);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  $1737.Duration ensureVehicleDetour() => $_ensure(12);
+  $1738.Duration ensureVehicleDetour() => $_ensure(12);
 
   /// Deprecated: Delay occurring before the vehicle end. See
   /// [TransitionAttributes.delay][google.cloud.optimization.v1.TransitionAttributes.delay].
@@ -6171,12 +6171,12 @@ class SkippedShipment extends $pb.GeneratedMessage {
 class AggregatedMetrics extends $pb.GeneratedMessage {
   factory AggregatedMetrics({
     $core.int? performedShipmentCount,
-    $1737.Duration? travelDuration,
-    $1737.Duration? waitDuration,
-    $1737.Duration? delayDuration,
-    $1737.Duration? breakDuration,
-    $1737.Duration? visitDuration,
-    $1737.Duration? totalDuration,
+    $1738.Duration? travelDuration,
+    $1738.Duration? waitDuration,
+    $1738.Duration? delayDuration,
+    $1738.Duration? breakDuration,
+    $1738.Duration? visitDuration,
+    $1738.Duration? totalDuration,
     $core.double? travelDistanceMeters,
     $core.Map<$core.String, ShipmentRoute_VehicleLoad>? maxLoads,
   @$core.Deprecated('This field is deprecated.')
@@ -6228,12 +6228,12 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregatedMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'performedShipmentCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'travelDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'delayDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'breakDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'visitDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'totalDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'travelDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'delayDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'breakDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'visitDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'totalDuration', subBuilder: $1738.Duration.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'travelDistanceMeters', $pb.PbFieldType.OD)
     ..m<$core.String, ShipmentRoute_VehicleLoad>(9, _omitFieldNames ? '' : 'maxLoads', entryClassName: 'AggregatedMetrics.MaxLoadsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ShipmentRoute_VehicleLoad.create, valueDefaultOrMaker: ShipmentRoute_VehicleLoad.getDefault, packageName: const $pb.PackageName('google.cloud.optimization.v1'))
     ..m<$core.String, $core.double>(10, _omitFieldNames ? '' : 'costs', entryClassName: 'AggregatedMetrics.CostsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.cloud.optimization.v1'))
@@ -6275,63 +6275,63 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
 
   /// Total travel duration for a route or a solution.
   @$pb.TagNumber(2)
-  $1737.Duration get travelDuration => $_getN(1);
+  $1738.Duration get travelDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set travelDuration($1737.Duration v) { setField(2, v); }
+  set travelDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTravelDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearTravelDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTravelDuration() => $_ensure(1);
+  $1738.Duration ensureTravelDuration() => $_ensure(1);
 
   /// Total wait duration for a route or a solution.
   @$pb.TagNumber(3)
-  $1737.Duration get waitDuration => $_getN(2);
+  $1738.Duration get waitDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set waitDuration($1737.Duration v) { setField(3, v); }
+  set waitDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasWaitDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearWaitDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureWaitDuration() => $_ensure(2);
+  $1738.Duration ensureWaitDuration() => $_ensure(2);
 
   /// Total delay duration for a route or a solution.
   @$pb.TagNumber(4)
-  $1737.Duration get delayDuration => $_getN(3);
+  $1738.Duration get delayDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set delayDuration($1737.Duration v) { setField(4, v); }
+  set delayDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDelayDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearDelayDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureDelayDuration() => $_ensure(3);
+  $1738.Duration ensureDelayDuration() => $_ensure(3);
 
   /// Total break duration for a route or a solution.
   @$pb.TagNumber(5)
-  $1737.Duration get breakDuration => $_getN(4);
+  $1738.Duration get breakDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set breakDuration($1737.Duration v) { setField(5, v); }
+  set breakDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBreakDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearBreakDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureBreakDuration() => $_ensure(4);
+  $1738.Duration ensureBreakDuration() => $_ensure(4);
 
   /// Total visit duration for a route or a solution.
   @$pb.TagNumber(6)
-  $1737.Duration get visitDuration => $_getN(5);
+  $1738.Duration get visitDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set visitDuration($1737.Duration v) { setField(6, v); }
+  set visitDuration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasVisitDuration() => $_has(5);
   @$pb.TagNumber(6)
   void clearVisitDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureVisitDuration() => $_ensure(5);
+  $1738.Duration ensureVisitDuration() => $_ensure(5);
 
   /// The total duration should be equal to the sum of all durations above.
   /// For routes, it also corresponds to:
@@ -6339,15 +6339,15 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
   /// `-`
   /// [ShipmentRoute.vehicle_start_time][google.cloud.optimization.v1.ShipmentRoute.vehicle_start_time]
   @$pb.TagNumber(7)
-  $1737.Duration get totalDuration => $_getN(6);
+  $1738.Duration get totalDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set totalDuration($1737.Duration v) { setField(7, v); }
+  set totalDuration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTotalDuration() => $_has(6);
   @$pb.TagNumber(7)
   void clearTotalDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureTotalDuration() => $_ensure(6);
+  $1738.Duration ensureTotalDuration() => $_ensure(6);
 
   /// Total travel distance for a route or a solution.
   @$pb.TagNumber(8)
@@ -6434,7 +6434,7 @@ class AggregatedMetrics extends $pb.GeneratedMessage {
 class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.GeneratedMessage {
   factory InjectedSolutionConstraint_ConstraintRelaxation_Relaxation({
     InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level? level,
-    $1775.Timestamp? thresholdTime,
+    $1776.Timestamp? thresholdTime,
     $core.int? thresholdVisitCount,
   }) {
     final $result = create();
@@ -6455,7 +6455,7 @@ class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.Gen
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InjectedSolutionConstraint.ConstraintRelaxation.Relaxation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.optimization.v1'), createEmptyInstance: create)
     ..e<InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level>(1, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level.LEVEL_UNSPECIFIED, valueOf: InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level.valueOf, enumValues: InjectedSolutionConstraint_ConstraintRelaxation_Relaxation_Level.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'thresholdTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'thresholdTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'thresholdVisitCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -6495,15 +6495,15 @@ class InjectedSolutionConstraint_ConstraintRelaxation_Relaxation extends $pb.Gen
 
   /// The time at or after which the relaxation `level` may be applied.
   @$pb.TagNumber(2)
-  $1775.Timestamp get thresholdTime => $_getN(1);
+  $1776.Timestamp get thresholdTime => $_getN(1);
   @$pb.TagNumber(2)
-  set thresholdTime($1775.Timestamp v) { setField(2, v); }
+  set thresholdTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasThresholdTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearThresholdTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureThresholdTime() => $_ensure(1);
+  $1776.Timestamp ensureThresholdTime() => $_ensure(1);
 
   ///  The number of visits at or after which the relaxation `level` may be
   ///  applied. If `threshold_visit_count` is 0 (or unset), the `level` may be

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4504;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4506;
 
 enum Document_Content_Content {
   rawBytes, 
@@ -192,7 +192,7 @@ class Document_Content extends $pb.GeneratedMessage {
 ///  }
 class Document_AclInfo_AccessRestriction extends $pb.GeneratedMessage {
   factory Document_AclInfo_AccessRestriction({
-    $core.Iterable<$4504.Principal>? principals,
+    $core.Iterable<$4506.Principal>? principals,
     $core.bool? idpWide,
   }) {
     final $result = create();
@@ -209,7 +209,7 @@ class Document_AclInfo_AccessRestriction extends $pb.GeneratedMessage {
   factory Document_AclInfo_AccessRestriction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.AclInfo.AccessRestriction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..pc<$4504.Principal>(1, _omitFieldNames ? '' : 'principals', $pb.PbFieldType.PM, subBuilder: $4504.Principal.create)
+    ..pc<$4506.Principal>(1, _omitFieldNames ? '' : 'principals', $pb.PbFieldType.PM, subBuilder: $4506.Principal.create)
     ..aOB(2, _omitFieldNames ? '' : 'idpWide')
     ..hasRequiredFields = false
   ;
@@ -237,7 +237,7 @@ class Document_AclInfo_AccessRestriction extends $pb.GeneratedMessage {
 
   /// List of principals.
   @$pb.TagNumber(1)
-  $core.List<$4504.Principal> get principals => $_getList(0);
+  $core.List<$4506.Principal> get principals => $_getList(0);
 
   /// All users within the Identity Provider.
   @$pb.TagNumber(2)
@@ -309,13 +309,13 @@ class Document extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? id,
     $core.String? schemaId,
-    $1734.Struct? structData,
+    $1735.Struct? structData,
     $core.String? jsonData,
-    $1734.Struct? derivedStructData,
+    $1735.Struct? derivedStructData,
     $core.String? parentDocumentId,
     Document_Content? content,
     Document_AclInfo? aclInfo,
-    $1775.Timestamp? indexTime,
+    $1776.Timestamp? indexTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -364,13 +364,13 @@ class Document extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'schemaId')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'structData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'structData', subBuilder: $1735.Struct.create)
     ..aOS(5, _omitFieldNames ? '' : 'jsonData')
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'derivedStructData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'derivedStructData', subBuilder: $1735.Struct.create)
     ..aOS(7, _omitFieldNames ? '' : 'parentDocumentId')
     ..aOM<Document_Content>(10, _omitFieldNames ? '' : 'content', subBuilder: Document_Content.create)
     ..aOM<Document_AclInfo>(11, _omitFieldNames ? '' : 'aclInfo', subBuilder: Document_AclInfo.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'indexTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'indexTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -440,15 +440,15 @@ class Document extends $pb.GeneratedMessage {
   /// registered [Schema][google.cloud.discoveryengine.v1alpha.Schema] or an
   /// `INVALID_ARGUMENT` error is thrown.
   @$pb.TagNumber(4)
-  $1734.Struct get structData => $_getN(3);
+  $1735.Struct get structData => $_getN(3);
   @$pb.TagNumber(4)
-  set structData($1734.Struct v) { setField(4, v); }
+  set structData($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStructData() => $_has(3);
   @$pb.TagNumber(4)
   void clearStructData() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureStructData() => $_ensure(3);
+  $1735.Struct ensureStructData() => $_ensure(3);
 
   /// The JSON string representation of the document. It should conform to the
   /// registered [Schema][google.cloud.discoveryengine.v1alpha.Schema] or an
@@ -465,15 +465,15 @@ class Document extends $pb.GeneratedMessage {
   /// Output only. This field is OUTPUT_ONLY.
   /// It contains derived data that are not in the original input document.
   @$pb.TagNumber(6)
-  $1734.Struct get derivedStructData => $_getN(5);
+  $1735.Struct get derivedStructData => $_getN(5);
   @$pb.TagNumber(6)
-  set derivedStructData($1734.Struct v) { setField(6, v); }
+  set derivedStructData($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDerivedStructData() => $_has(5);
   @$pb.TagNumber(6)
   void clearDerivedStructData() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureDerivedStructData() => $_ensure(5);
+  $1735.Struct ensureDerivedStructData() => $_ensure(5);
 
   ///  The identifier of the parent document. Currently supports at most two level
   ///  document hierarchy.
@@ -521,15 +521,15 @@ class Document extends $pb.GeneratedMessage {
   ///  This field is OUTPUT_ONLY. If this field is not populated, it means the
   ///  document has never been indexed.
   @$pb.TagNumber(13)
-  $1775.Timestamp get indexTime => $_getN(9);
+  $1776.Timestamp get indexTime => $_getN(9);
   @$pb.TagNumber(13)
-  set indexTime($1775.Timestamp v) { setField(13, v); }
+  set indexTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasIndexTime() => $_has(9);
   @$pb.TagNumber(13)
   void clearIndexTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureIndexTime() => $_ensure(9);
+  $1776.Timestamp ensureIndexTime() => $_ensure(9);
 }
 
 enum ProcessedDocument_ProcessedDataFormat {

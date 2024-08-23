@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'access_approval_requests.pbenum.dart';
 
 export 'access_approval_requests.pbenum.dart';
@@ -22,9 +22,9 @@ export 'access_approval_requests.pbenum.dart';
 class AccessApprovalRequest extends $pb.GeneratedMessage {
   factory AccessApprovalRequest({
     $core.String? name,
-    $1775.Timestamp? requestTime,
+    $1776.Timestamp? requestTime,
     AccessReason? requestedReason,
-    $1775.Timestamp? requestedExpirationTime,
+    $1776.Timestamp? requestedExpirationTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -47,9 +47,9 @@ class AccessApprovalRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccessApprovalRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.cloudcontrolspartner.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
     ..aOM<AccessReason>(3, _omitFieldNames ? '' : 'requestedReason', subBuilder: AccessReason.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'requestedExpirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'requestedExpirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -87,15 +87,15 @@ class AccessApprovalRequest extends $pb.GeneratedMessage {
 
   /// The time at which approval was requested.
   @$pb.TagNumber(2)
-  $1775.Timestamp get requestTime => $_getN(1);
+  $1776.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($1775.Timestamp v) { setField(2, v); }
+  set requestTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRequestTime() => $_ensure(1);
+  $1776.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The justification for which approval is being requested.
   @$pb.TagNumber(3)
@@ -112,15 +112,15 @@ class AccessApprovalRequest extends $pb.GeneratedMessage {
   /// The requested expiration for the approval. If the request is approved,
   /// access will be granted from the time of approval until the expiration time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get requestedExpirationTime => $_getN(3);
+  $1776.Timestamp get requestedExpirationTime => $_getN(3);
   @$pb.TagNumber(4)
-  set requestedExpirationTime($1775.Timestamp v) { setField(4, v); }
+  set requestedExpirationTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRequestedExpirationTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearRequestedExpirationTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureRequestedExpirationTime() => $_ensure(3);
+  $1776.Timestamp ensureRequestedExpirationTime() => $_ensure(3);
 }
 
 /// Request for getting the access requests associated with a workload.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'executions_system.pbenum.dart';
 
 export 'executions_system.pbenum.dart';
@@ -202,7 +202,7 @@ enum ExecutionsSystemLog_Details {
 class ExecutionsSystemLog extends $pb.GeneratedMessage {
   factory ExecutionsSystemLog({
     $core.String? message,
-    $1775.Timestamp? activityTime,
+    $1776.Timestamp? activityTime,
     ExecutionsSystemLog_State? state,
     ExecutionsSystemLog_Start? start,
     ExecutionsSystemLog_Success? success,
@@ -242,7 +242,7 @@ class ExecutionsSystemLog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecutionsSystemLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workflows.type'), createEmptyInstance: create)
     ..oo(0, [4, 5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'message')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'activityTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'activityTime', subBuilder: $1776.Timestamp.create)
     ..e<ExecutionsSystemLog_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ExecutionsSystemLog_State.STATE_UNSPECIFIED, valueOf: ExecutionsSystemLog_State.valueOf, enumValues: ExecutionsSystemLog_State.values)
     ..aOM<ExecutionsSystemLog_Start>(4, _omitFieldNames ? '' : 'start', subBuilder: ExecutionsSystemLog_Start.create)
     ..aOM<ExecutionsSystemLog_Success>(5, _omitFieldNames ? '' : 'success', subBuilder: ExecutionsSystemLog_Success.create)
@@ -286,15 +286,15 @@ class ExecutionsSystemLog extends $pb.GeneratedMessage {
 
   /// The absolute point in time when the activity happened.
   @$pb.TagNumber(2)
-  $1775.Timestamp get activityTime => $_getN(1);
+  $1776.Timestamp get activityTime => $_getN(1);
   @$pb.TagNumber(2)
-  set activityTime($1775.Timestamp v) { setField(2, v); }
+  set activityTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasActivityTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearActivityTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureActivityTime() => $_ensure(1);
+  $1776.Timestamp ensureActivityTime() => $_ensure(1);
 
   /// State of the execution when the log was created.
   @$pb.TagNumber(3)

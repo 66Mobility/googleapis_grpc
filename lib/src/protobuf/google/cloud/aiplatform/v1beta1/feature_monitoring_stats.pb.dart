@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Stats and Anomaly generated at specific timestamp for specific Feature.
 /// The start_time and end_time are used to define the time range of the dataset
@@ -30,8 +30,8 @@ class FeatureStatsAnomaly extends $pb.GeneratedMessage {
     $core.String? statsUri,
     $core.String? anomalyUri,
     $core.double? distributionDeviation,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.double? anomalyDetectionThreshold,
   }) {
     final $result = create();
@@ -67,8 +67,8 @@ class FeatureStatsAnomaly extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'statsUri')
     ..aOS(4, _omitFieldNames ? '' : 'anomalyUri')
     ..a<$core.double>(5, _omitFieldNames ? '' : 'distributionDeviation', $pb.PbFieldType.OD)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'anomalyDetectionThreshold', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -159,30 +159,30 @@ class FeatureStatsAnomaly extends $pb.GeneratedMessage {
   /// Snapshot Monitoring), start_time is only used to indicate the monitoring
   /// intervals, so it always equals to (end_time - monitoring_interval).
   @$pb.TagNumber(7)
-  $1775.Timestamp get startTime => $_getN(4);
+  $1776.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(7)
-  set startTime($1775.Timestamp v) { setField(7, v); }
+  set startTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureStartTime() => $_ensure(4);
+  $1776.Timestamp ensureStartTime() => $_ensure(4);
 
   /// The end timestamp of window where stats were generated.
   /// For objectives where time window doesn't make sense (e.g. Featurestore
   /// Snapshot Monitoring), end_time indicates the timestamp of the data used to
   /// generate stats (e.g. timestamp we take snapshots for feature values).
   @$pb.TagNumber(8)
-  $1775.Timestamp get endTime => $_getN(5);
+  $1776.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(8)
-  set endTime($1775.Timestamp v) { setField(8, v); }
+  set endTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(8)
   void clearEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEndTime() => $_ensure(5);
+  $1776.Timestamp ensureEndTime() => $_ensure(5);
 
   /// This is the threshold used when detecting anomalies.
   /// The threshold can be changed by user, so this one might be different from

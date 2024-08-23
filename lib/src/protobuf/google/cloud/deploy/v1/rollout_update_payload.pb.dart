@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'log_enums.pbenum.dart' as $4472;
+import 'log_enums.pbenum.dart' as $4474;
 import 'rollout_update_payload.pbenum.dart';
 
 export 'rollout_update_payload.pbenum.dart';
@@ -28,7 +28,7 @@ class RolloutUpdateEvent extends $pb.GeneratedMessage {
     $core.String? targetId,
     RolloutUpdateEvent_RolloutUpdateType? rolloutUpdateType,
     $core.String? message,
-    $4472.Type? type,
+    $4474.Type? type,
     $core.String? release,
   }) {
     final $result = create();
@@ -69,7 +69,7 @@ class RolloutUpdateEvent extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'targetId')
     ..e<RolloutUpdateEvent_RolloutUpdateType>(5, _omitFieldNames ? '' : 'rolloutUpdateType', $pb.PbFieldType.OE, defaultOrMaker: RolloutUpdateEvent_RolloutUpdateType.ROLLOUT_UPDATE_TYPE_UNSPECIFIED, valueOf: RolloutUpdateEvent_RolloutUpdateType.valueOf, enumValues: RolloutUpdateEvent_RolloutUpdateType.values)
     ..aOS(6, _omitFieldNames ? '' : 'message')
-    ..e<$4472.Type>(7, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4472.Type.TYPE_UNSPECIFIED, valueOf: $4472.Type.valueOf, enumValues: $4472.Type.values)
+    ..e<$4474.Type>(7, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4474.Type.TYPE_UNSPECIFIED, valueOf: $4474.Type.valueOf, enumValues: $4474.Type.values)
     ..aOS(8, _omitFieldNames ? '' : 'release')
     ..hasRequiredFields = false
   ;
@@ -159,9 +159,9 @@ class RolloutUpdateEvent extends $pb.GeneratedMessage {
 
   /// Type of this notification, e.g. for a rollout update event.
   @$pb.TagNumber(7)
-  $4472.Type get type => $_getN(6);
+  $4474.Type get type => $_getN(6);
   @$pb.TagNumber(7)
-  set type($4472.Type v) { setField(7, v); }
+  set type($4474.Type v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasType() => $_has(6);
   @$pb.TagNumber(7)

@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/device.pbenum.dart' as $2545;
-import '../enums/keyword_plan_aggregate_metric_type.pbenum.dart' as $2600;
-import '../enums/keyword_plan_competition_level.pbenum.dart' as $2599;
-import '../enums/keyword_plan_concept_group_type.pbenum.dart' as $2601;
-import '../enums/month_of_year.pbenum.dart' as $2590;
-import 'dates.pb.dart' as $2598;
+import '../enums/device.pbenum.dart' as $2546;
+import '../enums/keyword_plan_aggregate_metric_type.pbenum.dart' as $2601;
+import '../enums/keyword_plan_competition_level.pbenum.dart' as $2600;
+import '../enums/keyword_plan_concept_group_type.pbenum.dart' as $2602;
+import '../enums/month_of_year.pbenum.dart' as $2591;
+import 'dates.pb.dart' as $2599;
 
 /// Historical metrics specific to the targeting options selected.
 /// Targeting options include geographies, network, and so on.
@@ -27,7 +27,7 @@ import 'dates.pb.dart' as $2598;
 /// details.
 class KeywordPlanHistoricalMetrics extends $pb.GeneratedMessage {
   factory KeywordPlanHistoricalMetrics({
-    $2599.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel? competition,
+    $2600.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel? competition,
     $core.Iterable<MonthlySearchVolume>? monthlySearchVolumes,
     $fixnum.Int64? avgMonthlySearches,
     $fixnum.Int64? competitionIndex,
@@ -64,7 +64,7 @@ class KeywordPlanHistoricalMetrics extends $pb.GeneratedMessage {
   factory KeywordPlanHistoricalMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanHistoricalMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2599.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel>(2, _omitFieldNames ? '' : 'competition', $pb.PbFieldType.OE, defaultOrMaker: $2599.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel.UNSPECIFIED, valueOf: $2599.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel.valueOf, enumValues: $2599.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel.values)
+    ..e<$2600.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel>(2, _omitFieldNames ? '' : 'competition', $pb.PbFieldType.OE, defaultOrMaker: $2600.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel.UNSPECIFIED, valueOf: $2600.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel.valueOf, enumValues: $2600.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel.values)
     ..pc<MonthlySearchVolume>(6, _omitFieldNames ? '' : 'monthlySearchVolumes', $pb.PbFieldType.PM, subBuilder: MonthlySearchVolume.create)
     ..aInt64(7, _omitFieldNames ? '' : 'avgMonthlySearches')
     ..aInt64(8, _omitFieldNames ? '' : 'competitionIndex')
@@ -97,9 +97,9 @@ class KeywordPlanHistoricalMetrics extends $pb.GeneratedMessage {
 
   /// The competition level for the query.
   @$pb.TagNumber(2)
-  $2599.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel get competition => $_getN(0);
+  $2600.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel get competition => $_getN(0);
   @$pb.TagNumber(2)
-  set competition($2599.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel v) { setField(2, v); }
+  set competition($2600.KeywordPlanCompetitionLevelEnum_KeywordPlanCompetitionLevel v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCompetition() => $_has(0);
   @$pb.TagNumber(2)
@@ -168,7 +168,7 @@ class KeywordPlanHistoricalMetrics extends $pb.GeneratedMessage {
 /// Historical metrics options.
 class HistoricalMetricsOptions extends $pb.GeneratedMessage {
   factory HistoricalMetricsOptions({
-    $2598.YearMonthRange? yearMonthRange,
+    $2599.YearMonthRange? yearMonthRange,
     $core.bool? includeAverageCpc,
   }) {
     final $result = create();
@@ -185,7 +185,7 @@ class HistoricalMetricsOptions extends $pb.GeneratedMessage {
   factory HistoricalMetricsOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HistoricalMetricsOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..aOM<$2598.YearMonthRange>(1, _omitFieldNames ? '' : 'yearMonthRange', subBuilder: $2598.YearMonthRange.create)
+    ..aOM<$2599.YearMonthRange>(1, _omitFieldNames ? '' : 'yearMonthRange', subBuilder: $2599.YearMonthRange.create)
     ..aOB(2, _omitFieldNames ? '' : 'includeAverageCpc')
     ..hasRequiredFields = false
   ;
@@ -217,15 +217,15 @@ class HistoricalMetricsOptions extends $pb.GeneratedMessage {
   /// not available for the entire year_month_range provided, the subset of the
   /// year month range for which search volume is available are returned.
   @$pb.TagNumber(1)
-  $2598.YearMonthRange get yearMonthRange => $_getN(0);
+  $2599.YearMonthRange get yearMonthRange => $_getN(0);
   @$pb.TagNumber(1)
-  set yearMonthRange($2598.YearMonthRange v) { setField(1, v); }
+  set yearMonthRange($2599.YearMonthRange v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasYearMonthRange() => $_has(0);
   @$pb.TagNumber(1)
   void clearYearMonthRange() => clearField(1);
   @$pb.TagNumber(1)
-  $2598.YearMonthRange ensureYearMonthRange() => $_ensure(0);
+  $2599.YearMonthRange ensureYearMonthRange() => $_ensure(0);
 
   /// Indicates whether to include average cost per click value.
   /// Average CPC is provided only for legacy support.
@@ -242,7 +242,7 @@ class HistoricalMetricsOptions extends $pb.GeneratedMessage {
 /// Monthly search volume.
 class MonthlySearchVolume extends $pb.GeneratedMessage {
   factory MonthlySearchVolume({
-    $2590.MonthOfYearEnum_MonthOfYear? month,
+    $2591.MonthOfYearEnum_MonthOfYear? month,
     $fixnum.Int64? year,
     $fixnum.Int64? monthlySearches,
   }) {
@@ -263,7 +263,7 @@ class MonthlySearchVolume extends $pb.GeneratedMessage {
   factory MonthlySearchVolume.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MonthlySearchVolume', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2590.MonthOfYearEnum_MonthOfYear>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.OE, defaultOrMaker: $2590.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $2590.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $2590.MonthOfYearEnum_MonthOfYear.values)
+    ..e<$2591.MonthOfYearEnum_MonthOfYear>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.OE, defaultOrMaker: $2591.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $2591.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $2591.MonthOfYearEnum_MonthOfYear.values)
     ..aInt64(4, _omitFieldNames ? '' : 'year')
     ..aInt64(5, _omitFieldNames ? '' : 'monthlySearches')
     ..hasRequiredFields = false
@@ -292,9 +292,9 @@ class MonthlySearchVolume extends $pb.GeneratedMessage {
 
   /// The month of the search volume.
   @$pb.TagNumber(2)
-  $2590.MonthOfYearEnum_MonthOfYear get month => $_getN(0);
+  $2591.MonthOfYearEnum_MonthOfYear get month => $_getN(0);
   @$pb.TagNumber(2)
-  set month($2590.MonthOfYearEnum_MonthOfYear v) { setField(2, v); }
+  set month($2591.MonthOfYearEnum_MonthOfYear v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMonth() => $_has(0);
   @$pb.TagNumber(2)
@@ -326,7 +326,7 @@ class MonthlySearchVolume extends $pb.GeneratedMessage {
 /// The aggregate metrics specification of the request.
 class KeywordPlanAggregateMetrics extends $pb.GeneratedMessage {
   factory KeywordPlanAggregateMetrics({
-    $core.Iterable<$2600.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType>? aggregateMetricTypes,
+    $core.Iterable<$2601.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType>? aggregateMetricTypes,
   }) {
     final $result = create();
     if (aggregateMetricTypes != null) {
@@ -339,7 +339,7 @@ class KeywordPlanAggregateMetrics extends $pb.GeneratedMessage {
   factory KeywordPlanAggregateMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanAggregateMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..pc<$2600.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType>(1, _omitFieldNames ? '' : 'aggregateMetricTypes', $pb.PbFieldType.KE, valueOf: $2600.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType.valueOf, enumValues: $2600.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType.values, defaultEnumValue: $2600.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType.UNSPECIFIED)
+    ..pc<$2601.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType>(1, _omitFieldNames ? '' : 'aggregateMetricTypes', $pb.PbFieldType.KE, valueOf: $2601.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType.valueOf, enumValues: $2601.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType.values, defaultEnumValue: $2601.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -366,7 +366,7 @@ class KeywordPlanAggregateMetrics extends $pb.GeneratedMessage {
 
   /// The list of aggregate metrics to fetch data.
   @$pb.TagNumber(1)
-  $core.List<$2600.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType> get aggregateMetricTypes => $_getList(0);
+  $core.List<$2601.KeywordPlanAggregateMetricTypeEnum_KeywordPlanAggregateMetricType> get aggregateMetricTypes => $_getList(0);
 }
 
 /// The aggregated historical metrics for keyword plan keywords.
@@ -423,7 +423,7 @@ class KeywordPlanAggregateMetricResults extends $pb.GeneratedMessage {
 /// The total searches for the device type during the specified time period.
 class KeywordPlanDeviceSearches extends $pb.GeneratedMessage {
   factory KeywordPlanDeviceSearches({
-    $2545.DeviceEnum_Device? device,
+    $2546.DeviceEnum_Device? device,
     $fixnum.Int64? searchCount,
   }) {
     final $result = create();
@@ -440,7 +440,7 @@ class KeywordPlanDeviceSearches extends $pb.GeneratedMessage {
   factory KeywordPlanDeviceSearches.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanDeviceSearches', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2545.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2545.DeviceEnum_Device.UNSPECIFIED, valueOf: $2545.DeviceEnum_Device.valueOf, enumValues: $2545.DeviceEnum_Device.values)
+    ..e<$2546.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2546.DeviceEnum_Device.UNSPECIFIED, valueOf: $2546.DeviceEnum_Device.valueOf, enumValues: $2546.DeviceEnum_Device.values)
     ..aInt64(2, _omitFieldNames ? '' : 'searchCount')
     ..hasRequiredFields = false
   ;
@@ -468,9 +468,9 @@ class KeywordPlanDeviceSearches extends $pb.GeneratedMessage {
 
   /// The device type.
   @$pb.TagNumber(1)
-  $2545.DeviceEnum_Device get device => $_getN(0);
+  $2546.DeviceEnum_Device get device => $_getN(0);
   @$pb.TagNumber(1)
-  set device($2545.DeviceEnum_Device v) { setField(1, v); }
+  set device($2546.DeviceEnum_Device v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDevice() => $_has(0);
   @$pb.TagNumber(1)
@@ -606,7 +606,7 @@ class KeywordConcept extends $pb.GeneratedMessage {
 class ConceptGroup extends $pb.GeneratedMessage {
   factory ConceptGroup({
     $core.String? name,
-    $2601.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType? type,
+    $2602.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType? type,
   }) {
     final $result = create();
     if (name != null) {
@@ -623,7 +623,7 @@ class ConceptGroup extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConceptGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<$2601.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2601.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType.UNSPECIFIED, valueOf: $2601.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType.valueOf, enumValues: $2601.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType.values)
+    ..e<$2602.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2602.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType.UNSPECIFIED, valueOf: $2602.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType.valueOf, enumValues: $2602.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType.values)
     ..hasRequiredFields = false
   ;
 
@@ -660,9 +660,9 @@ class ConceptGroup extends $pb.GeneratedMessage {
 
   /// The concept group type.
   @$pb.TagNumber(2)
-  $2601.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType get type => $_getN(1);
+  $2602.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($2601.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType v) { setField(2, v); }
+  set type($2602.KeywordPlanConceptGroupTypeEnum_KeywordPlanConceptGroupType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)

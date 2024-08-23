@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'asset_service.pbenum.dart';
-import 'assets.pb.dart' as $4327;
+import 'assets.pb.dart' as $4328;
 
 export 'asset_service.pbenum.dart';
 
@@ -27,7 +27,7 @@ export 'asset_service.pbenum.dart';
 /// field.
 class ExportAssetsResponse extends $pb.GeneratedMessage {
   factory ExportAssetsResponse({
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     OutputConfig? outputConfig,
   }) {
     final $result = create();
@@ -44,7 +44,7 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
   factory ExportAssetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p2beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOM<OutputConfig>(2, _omitFieldNames ? '' : 'outputConfig', subBuilder: OutputConfig.create)
     ..hasRequiredFields = false
   ;
@@ -72,15 +72,15 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
 
   /// Time the snapshot was taken.
   @$pb.TagNumber(1)
-  $1775.Timestamp get readTime => $_getN(0);
+  $1776.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(1)
-  set readTime($1775.Timestamp v) { setField(1, v); }
+  set readTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReadTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReadTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReadTime() => $_ensure(0);
+  $1776.Timestamp ensureReadTime() => $_ensure(0);
 
   /// Output configuration indicating where the results were output to.
   @$pb.TagNumber(2)
@@ -98,7 +98,7 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
 /// Batch get assets history response.
 class BatchGetAssetsHistoryResponse extends $pb.GeneratedMessage {
   factory BatchGetAssetsHistoryResponse({
-    $core.Iterable<$4327.TemporalAsset>? assets,
+    $core.Iterable<$4328.TemporalAsset>? assets,
   }) {
     final $result = create();
     if (assets != null) {
@@ -111,7 +111,7 @@ class BatchGetAssetsHistoryResponse extends $pb.GeneratedMessage {
   factory BatchGetAssetsHistoryResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchGetAssetsHistoryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p2beta1'), createEmptyInstance: create)
-    ..pc<$4327.TemporalAsset>(1, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4327.TemporalAsset.create)
+    ..pc<$4328.TemporalAsset>(1, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4328.TemporalAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -138,7 +138,7 @@ class BatchGetAssetsHistoryResponse extends $pb.GeneratedMessage {
 
   /// A list of assets with valid time windows.
   @$pb.TagNumber(1)
-  $core.List<$4327.TemporalAsset> get assets => $_getList(0);
+  $core.List<$4328.TemporalAsset> get assets => $_getList(0);
 }
 
 /// Create asset feed request.
@@ -391,7 +391,7 @@ class ListFeedsResponse extends $pb.GeneratedMessage {
 class UpdateFeedRequest extends $pb.GeneratedMessage {
   factory UpdateFeedRequest({
     Feed? feed,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (feed != null) {
@@ -408,7 +408,7 @@ class UpdateFeedRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeedRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p2beta1'), createEmptyInstance: create)
     ..aOM<Feed>(1, _omitFieldNames ? '' : 'feed', subBuilder: Feed.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -453,15 +453,15 @@ class UpdateFeedRequest extends $pb.GeneratedMessage {
   /// The field mask must not be empty, and it must not contain fields that
   /// are immutable or only set by the server.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 class DeleteFeedRequest extends $pb.GeneratedMessage {

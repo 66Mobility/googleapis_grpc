@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// A representation of the ChannelConnection resource.
 /// A ChannelConnection is a resource which event providers create during the
@@ -24,8 +24,8 @@ class ChannelConnection extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? uid,
     $core.String? channel,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? activationToken,
   }) {
     final $result = create();
@@ -57,8 +57,8 @@ class ChannelConnection extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aOS(5, _omitFieldNames ? '' : 'channel')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'activationToken')
     ..hasRequiredFields = false
   ;
@@ -120,27 +120,27 @@ class ChannelConnection extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The last-modified time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Input only. Activation token for the channel. The token will be used
   /// during the creation of ChannelConnection to bind the channel with the

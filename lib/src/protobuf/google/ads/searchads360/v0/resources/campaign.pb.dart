@@ -14,21 +14,21 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/bidding.pb.dart' as $4044;
-import '../common/custom_parameter.pb.dart' as $4046;
-import '../common/frequency_cap.pb.dart' as $4048;
-import '../common/real_time_bidding_setting.pb.dart' as $4047;
-import '../enums/ad_serving_optimization_status.pbenum.dart' as $4050;
-import '../enums/advertising_channel_sub_type.pbenum.dart' as $4052;
-import '../enums/advertising_channel_type.pbenum.dart' as $4051;
-import '../enums/asset_field_type.pbenum.dart' as $4034;
-import '../enums/bidding_strategy_system_status.pbenum.dart' as $4054;
-import '../enums/bidding_strategy_type.pbenum.dart' as $4012;
-import '../enums/campaign_serving_status.pbenum.dart' as $4053;
-import '../enums/campaign_status.pbenum.dart' as $4049;
-import '../enums/negative_geo_target_type.pbenum.dart' as $4056;
-import '../enums/optimization_goal_type.pbenum.dart' as $4057;
-import '../enums/positive_geo_target_type.pbenum.dart' as $4055;
+import '../common/bidding.pb.dart' as $4045;
+import '../common/custom_parameter.pb.dart' as $4047;
+import '../common/frequency_cap.pb.dart' as $4049;
+import '../common/real_time_bidding_setting.pb.dart' as $4048;
+import '../enums/ad_serving_optimization_status.pbenum.dart' as $4051;
+import '../enums/advertising_channel_sub_type.pbenum.dart' as $4053;
+import '../enums/advertising_channel_type.pbenum.dart' as $4052;
+import '../enums/asset_field_type.pbenum.dart' as $4035;
+import '../enums/bidding_strategy_system_status.pbenum.dart' as $4055;
+import '../enums/bidding_strategy_type.pbenum.dart' as $4013;
+import '../enums/campaign_serving_status.pbenum.dart' as $4054;
+import '../enums/campaign_status.pbenum.dart' as $4050;
+import '../enums/negative_geo_target_type.pbenum.dart' as $4057;
+import '../enums/optimization_goal_type.pbenum.dart' as $4058;
+import '../enums/positive_geo_target_type.pbenum.dart' as $4056;
 
 /// The network settings for the campaign.
 class Campaign_NetworkSettings extends $pb.GeneratedMessage {
@@ -410,8 +410,8 @@ class Campaign_TrackingSetting extends $pb.GeneratedMessage {
 /// Represents a collection of settings related to ads geotargeting.
 class Campaign_GeoTargetTypeSetting extends $pb.GeneratedMessage {
   factory Campaign_GeoTargetTypeSetting({
-    $4055.PositiveGeoTargetTypeEnum_PositiveGeoTargetType? positiveGeoTargetType,
-    $4056.NegativeGeoTargetTypeEnum_NegativeGeoTargetType? negativeGeoTargetType,
+    $4056.PositiveGeoTargetTypeEnum_PositiveGeoTargetType? positiveGeoTargetType,
+    $4057.NegativeGeoTargetTypeEnum_NegativeGeoTargetType? negativeGeoTargetType,
   }) {
     final $result = create();
     if (positiveGeoTargetType != null) {
@@ -427,8 +427,8 @@ class Campaign_GeoTargetTypeSetting extends $pb.GeneratedMessage {
   factory Campaign_GeoTargetTypeSetting.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Campaign.GeoTargetTypeSetting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
-    ..e<$4055.PositiveGeoTargetTypeEnum_PositiveGeoTargetType>(1, _omitFieldNames ? '' : 'positiveGeoTargetType', $pb.PbFieldType.OE, defaultOrMaker: $4055.PositiveGeoTargetTypeEnum_PositiveGeoTargetType.UNSPECIFIED, valueOf: $4055.PositiveGeoTargetTypeEnum_PositiveGeoTargetType.valueOf, enumValues: $4055.PositiveGeoTargetTypeEnum_PositiveGeoTargetType.values)
-    ..e<$4056.NegativeGeoTargetTypeEnum_NegativeGeoTargetType>(2, _omitFieldNames ? '' : 'negativeGeoTargetType', $pb.PbFieldType.OE, defaultOrMaker: $4056.NegativeGeoTargetTypeEnum_NegativeGeoTargetType.UNSPECIFIED, valueOf: $4056.NegativeGeoTargetTypeEnum_NegativeGeoTargetType.valueOf, enumValues: $4056.NegativeGeoTargetTypeEnum_NegativeGeoTargetType.values)
+    ..e<$4056.PositiveGeoTargetTypeEnum_PositiveGeoTargetType>(1, _omitFieldNames ? '' : 'positiveGeoTargetType', $pb.PbFieldType.OE, defaultOrMaker: $4056.PositiveGeoTargetTypeEnum_PositiveGeoTargetType.UNSPECIFIED, valueOf: $4056.PositiveGeoTargetTypeEnum_PositiveGeoTargetType.valueOf, enumValues: $4056.PositiveGeoTargetTypeEnum_PositiveGeoTargetType.values)
+    ..e<$4057.NegativeGeoTargetTypeEnum_NegativeGeoTargetType>(2, _omitFieldNames ? '' : 'negativeGeoTargetType', $pb.PbFieldType.OE, defaultOrMaker: $4057.NegativeGeoTargetTypeEnum_NegativeGeoTargetType.UNSPECIFIED, valueOf: $4057.NegativeGeoTargetTypeEnum_NegativeGeoTargetType.valueOf, enumValues: $4057.NegativeGeoTargetTypeEnum_NegativeGeoTargetType.values)
     ..hasRequiredFields = false
   ;
 
@@ -455,9 +455,9 @@ class Campaign_GeoTargetTypeSetting extends $pb.GeneratedMessage {
 
   /// The setting used for positive geotargeting in this particular campaign.
   @$pb.TagNumber(1)
-  $4055.PositiveGeoTargetTypeEnum_PositiveGeoTargetType get positiveGeoTargetType => $_getN(0);
+  $4056.PositiveGeoTargetTypeEnum_PositiveGeoTargetType get positiveGeoTargetType => $_getN(0);
   @$pb.TagNumber(1)
-  set positiveGeoTargetType($4055.PositiveGeoTargetTypeEnum_PositiveGeoTargetType v) { setField(1, v); }
+  set positiveGeoTargetType($4056.PositiveGeoTargetTypeEnum_PositiveGeoTargetType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPositiveGeoTargetType() => $_has(0);
   @$pb.TagNumber(1)
@@ -465,9 +465,9 @@ class Campaign_GeoTargetTypeSetting extends $pb.GeneratedMessage {
 
   /// The setting used for negative geotargeting in this particular campaign.
   @$pb.TagNumber(2)
-  $4056.NegativeGeoTargetTypeEnum_NegativeGeoTargetType get negativeGeoTargetType => $_getN(1);
+  $4057.NegativeGeoTargetTypeEnum_NegativeGeoTargetType get negativeGeoTargetType => $_getN(1);
   @$pb.TagNumber(2)
-  set negativeGeoTargetType($4056.NegativeGeoTargetTypeEnum_NegativeGeoTargetType v) { setField(2, v); }
+  set negativeGeoTargetType($4057.NegativeGeoTargetTypeEnum_NegativeGeoTargetType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasNegativeGeoTargetType() => $_has(1);
   @$pb.TagNumber(2)
@@ -528,7 +528,7 @@ class Campaign_SelectiveOptimization extends $pb.GeneratedMessage {
 /// optimization goal types.
 class Campaign_OptimizationGoalSetting extends $pb.GeneratedMessage {
   factory Campaign_OptimizationGoalSetting({
-    $core.Iterable<$4057.OptimizationGoalTypeEnum_OptimizationGoalType>? optimizationGoalTypes,
+    $core.Iterable<$4058.OptimizationGoalTypeEnum_OptimizationGoalType>? optimizationGoalTypes,
   }) {
     final $result = create();
     if (optimizationGoalTypes != null) {
@@ -541,7 +541,7 @@ class Campaign_OptimizationGoalSetting extends $pb.GeneratedMessage {
   factory Campaign_OptimizationGoalSetting.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Campaign.OptimizationGoalSetting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
-    ..pc<$4057.OptimizationGoalTypeEnum_OptimizationGoalType>(1, _omitFieldNames ? '' : 'optimizationGoalTypes', $pb.PbFieldType.KE, valueOf: $4057.OptimizationGoalTypeEnum_OptimizationGoalType.valueOf, enumValues: $4057.OptimizationGoalTypeEnum_OptimizationGoalType.values, defaultEnumValue: $4057.OptimizationGoalTypeEnum_OptimizationGoalType.UNSPECIFIED)
+    ..pc<$4058.OptimizationGoalTypeEnum_OptimizationGoalType>(1, _omitFieldNames ? '' : 'optimizationGoalTypes', $pb.PbFieldType.KE, valueOf: $4058.OptimizationGoalTypeEnum_OptimizationGoalType.valueOf, enumValues: $4058.OptimizationGoalTypeEnum_OptimizationGoalType.values, defaultEnumValue: $4058.OptimizationGoalTypeEnum_OptimizationGoalType.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -568,7 +568,7 @@ class Campaign_OptimizationGoalSetting extends $pb.GeneratedMessage {
 
   /// The list of optimization goal types.
   @$pb.TagNumber(1)
-  $core.List<$4057.OptimizationGoalTypeEnum_OptimizationGoalType> get optimizationGoalTypes => $_getList(0);
+  $core.List<$4058.OptimizationGoalTypeEnum_OptimizationGoalType> get optimizationGoalTypes => $_getList(0);
 }
 
 enum Campaign_CampaignBiddingStrategy {
@@ -591,31 +591,31 @@ enum Campaign_CampaignBiddingStrategy {
 class Campaign extends $pb.GeneratedMessage {
   factory Campaign({
     $core.String? resourceName,
-    $4049.CampaignStatusEnum_CampaignStatus? status,
-    $4050.AdServingOptimizationStatusEnum_AdServingOptimizationStatus? adServingOptimizationStatus,
-    $4051.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
-    $4052.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType? advertisingChannelSubType,
-    $core.Iterable<$4046.CustomParameter>? urlCustomParameters,
+    $4050.CampaignStatusEnum_CampaignStatus? status,
+    $4051.AdServingOptimizationStatusEnum_AdServingOptimizationStatus? adServingOptimizationStatus,
+    $4052.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
+    $4053.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType? advertisingChannelSubType,
+    $core.Iterable<$4047.CustomParameter>? urlCustomParameters,
     Campaign_NetworkSettings? networkSettings,
-    $4053.CampaignServingStatusEnum_CampaignServingStatus? servingStatus,
-    $4012.BiddingStrategyTypeEnum_BiddingStrategyType? biddingStrategyType,
-    $4044.ManualCpc? manualCpc,
-    $4044.ManualCpm? manualCpm,
-    $4044.TargetCpa? targetCpa,
-    $4044.TargetSpend? targetSpend,
-    $4044.TargetRoas? targetRoas,
-    $4044.MaximizeConversions? maximizeConversions,
-    $4044.MaximizeConversionValue? maximizeConversionValue,
+    $4054.CampaignServingStatusEnum_CampaignServingStatus? servingStatus,
+    $4013.BiddingStrategyTypeEnum_BiddingStrategyType? biddingStrategyType,
+    $4045.ManualCpc? manualCpc,
+    $4045.ManualCpm? manualCpm,
+    $4045.TargetCpa? targetCpa,
+    $4045.TargetSpend? targetSpend,
+    $4045.TargetRoas? targetRoas,
+    $4045.MaximizeConversions? maximizeConversions,
+    $4045.MaximizeConversionValue? maximizeConversionValue,
     Campaign_DynamicSearchAdsSetting? dynamicSearchAdsSetting,
-    $4044.PercentCpc? percentCpc,
+    $4045.PercentCpc? percentCpc,
     Campaign_ShoppingSetting? shoppingSetting,
-    $4047.RealTimeBiddingSetting? realTimeBiddingSetting,
-    $core.Iterable<$4048.FrequencyCapEntry>? frequencyCaps,
-    $4044.TargetCpm? targetCpm,
+    $4048.RealTimeBiddingSetting? realTimeBiddingSetting,
+    $core.Iterable<$4049.FrequencyCapEntry>? frequencyCaps,
+    $4045.TargetCpm? targetCpm,
     Campaign_SelectiveOptimization? selectiveOptimization,
     Campaign_TrackingSetting? trackingSetting,
     Campaign_GeoTargetTypeSetting? geoTargetTypeSetting,
-    $4044.TargetImpressionShare? targetImpressionShare,
+    $4045.TargetImpressionShare? targetImpressionShare,
     Campaign_OptimizationGoalSetting? optimizationGoalSetting,
     $core.String? name,
     $fixnum.Int64? id,
@@ -627,12 +627,12 @@ class Campaign extends $pb.GeneratedMessage {
     $core.String? finalUrlSuffix,
     $core.String? biddingStrategy,
     $core.String? engineId,
-    $core.Iterable<$4034.AssetFieldTypeEnum_AssetFieldType>? excludedParentAssetFieldTypes,
+    $core.Iterable<$4035.AssetFieldTypeEnum_AssetFieldType>? excludedParentAssetFieldTypes,
     $core.String? lastModifiedTime,
     $core.String? accessibleBiddingStrategy,
     $core.bool? urlExpansionOptOut,
-    $4044.ManualCpa? manualCpa,
-    $4054.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus? biddingStrategySystemStatus,
+    $4045.ManualCpa? manualCpa,
+    $4055.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus? biddingStrategySystemStatus,
     $core.String? createTime,
     $core.String? creationTime,
   }) {
@@ -796,31 +796,31 @@ class Campaign extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Campaign', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..oo(0, [24, 25, 26, 27, 29, 30, 31, 34, 41, 48, 67, 74])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4049.CampaignStatusEnum_CampaignStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4049.CampaignStatusEnum_CampaignStatus.UNSPECIFIED, valueOf: $4049.CampaignStatusEnum_CampaignStatus.valueOf, enumValues: $4049.CampaignStatusEnum_CampaignStatus.values)
-    ..e<$4050.AdServingOptimizationStatusEnum_AdServingOptimizationStatus>(8, _omitFieldNames ? '' : 'adServingOptimizationStatus', $pb.PbFieldType.OE, defaultOrMaker: $4050.AdServingOptimizationStatusEnum_AdServingOptimizationStatus.UNSPECIFIED, valueOf: $4050.AdServingOptimizationStatusEnum_AdServingOptimizationStatus.valueOf, enumValues: $4050.AdServingOptimizationStatusEnum_AdServingOptimizationStatus.values)
-    ..e<$4051.AdvertisingChannelTypeEnum_AdvertisingChannelType>(9, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $4051.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $4051.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $4051.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
-    ..e<$4052.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType>(10, _omitFieldNames ? '' : 'advertisingChannelSubType', $pb.PbFieldType.OE, defaultOrMaker: $4052.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.UNSPECIFIED, valueOf: $4052.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.valueOf, enumValues: $4052.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.values)
-    ..pc<$4046.CustomParameter>(12, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $4046.CustomParameter.create)
+    ..e<$4050.CampaignStatusEnum_CampaignStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4050.CampaignStatusEnum_CampaignStatus.UNSPECIFIED, valueOf: $4050.CampaignStatusEnum_CampaignStatus.valueOf, enumValues: $4050.CampaignStatusEnum_CampaignStatus.values)
+    ..e<$4051.AdServingOptimizationStatusEnum_AdServingOptimizationStatus>(8, _omitFieldNames ? '' : 'adServingOptimizationStatus', $pb.PbFieldType.OE, defaultOrMaker: $4051.AdServingOptimizationStatusEnum_AdServingOptimizationStatus.UNSPECIFIED, valueOf: $4051.AdServingOptimizationStatusEnum_AdServingOptimizationStatus.valueOf, enumValues: $4051.AdServingOptimizationStatusEnum_AdServingOptimizationStatus.values)
+    ..e<$4052.AdvertisingChannelTypeEnum_AdvertisingChannelType>(9, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $4052.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $4052.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $4052.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
+    ..e<$4053.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType>(10, _omitFieldNames ? '' : 'advertisingChannelSubType', $pb.PbFieldType.OE, defaultOrMaker: $4053.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.UNSPECIFIED, valueOf: $4053.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.valueOf, enumValues: $4053.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.values)
+    ..pc<$4047.CustomParameter>(12, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $4047.CustomParameter.create)
     ..aOM<Campaign_NetworkSettings>(14, _omitFieldNames ? '' : 'networkSettings', subBuilder: Campaign_NetworkSettings.create)
-    ..e<$4053.CampaignServingStatusEnum_CampaignServingStatus>(21, _omitFieldNames ? '' : 'servingStatus', $pb.PbFieldType.OE, defaultOrMaker: $4053.CampaignServingStatusEnum_CampaignServingStatus.UNSPECIFIED, valueOf: $4053.CampaignServingStatusEnum_CampaignServingStatus.valueOf, enumValues: $4053.CampaignServingStatusEnum_CampaignServingStatus.values)
-    ..e<$4012.BiddingStrategyTypeEnum_BiddingStrategyType>(22, _omitFieldNames ? '' : 'biddingStrategyType', $pb.PbFieldType.OE, defaultOrMaker: $4012.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $4012.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $4012.BiddingStrategyTypeEnum_BiddingStrategyType.values)
-    ..aOM<$4044.ManualCpc>(24, _omitFieldNames ? '' : 'manualCpc', subBuilder: $4044.ManualCpc.create)
-    ..aOM<$4044.ManualCpm>(25, _omitFieldNames ? '' : 'manualCpm', subBuilder: $4044.ManualCpm.create)
-    ..aOM<$4044.TargetCpa>(26, _omitFieldNames ? '' : 'targetCpa', subBuilder: $4044.TargetCpa.create)
-    ..aOM<$4044.TargetSpend>(27, _omitFieldNames ? '' : 'targetSpend', subBuilder: $4044.TargetSpend.create)
-    ..aOM<$4044.TargetRoas>(29, _omitFieldNames ? '' : 'targetRoas', subBuilder: $4044.TargetRoas.create)
-    ..aOM<$4044.MaximizeConversions>(30, _omitFieldNames ? '' : 'maximizeConversions', subBuilder: $4044.MaximizeConversions.create)
-    ..aOM<$4044.MaximizeConversionValue>(31, _omitFieldNames ? '' : 'maximizeConversionValue', subBuilder: $4044.MaximizeConversionValue.create)
+    ..e<$4054.CampaignServingStatusEnum_CampaignServingStatus>(21, _omitFieldNames ? '' : 'servingStatus', $pb.PbFieldType.OE, defaultOrMaker: $4054.CampaignServingStatusEnum_CampaignServingStatus.UNSPECIFIED, valueOf: $4054.CampaignServingStatusEnum_CampaignServingStatus.valueOf, enumValues: $4054.CampaignServingStatusEnum_CampaignServingStatus.values)
+    ..e<$4013.BiddingStrategyTypeEnum_BiddingStrategyType>(22, _omitFieldNames ? '' : 'biddingStrategyType', $pb.PbFieldType.OE, defaultOrMaker: $4013.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $4013.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $4013.BiddingStrategyTypeEnum_BiddingStrategyType.values)
+    ..aOM<$4045.ManualCpc>(24, _omitFieldNames ? '' : 'manualCpc', subBuilder: $4045.ManualCpc.create)
+    ..aOM<$4045.ManualCpm>(25, _omitFieldNames ? '' : 'manualCpm', subBuilder: $4045.ManualCpm.create)
+    ..aOM<$4045.TargetCpa>(26, _omitFieldNames ? '' : 'targetCpa', subBuilder: $4045.TargetCpa.create)
+    ..aOM<$4045.TargetSpend>(27, _omitFieldNames ? '' : 'targetSpend', subBuilder: $4045.TargetSpend.create)
+    ..aOM<$4045.TargetRoas>(29, _omitFieldNames ? '' : 'targetRoas', subBuilder: $4045.TargetRoas.create)
+    ..aOM<$4045.MaximizeConversions>(30, _omitFieldNames ? '' : 'maximizeConversions', subBuilder: $4045.MaximizeConversions.create)
+    ..aOM<$4045.MaximizeConversionValue>(31, _omitFieldNames ? '' : 'maximizeConversionValue', subBuilder: $4045.MaximizeConversionValue.create)
     ..aOM<Campaign_DynamicSearchAdsSetting>(33, _omitFieldNames ? '' : 'dynamicSearchAdsSetting', subBuilder: Campaign_DynamicSearchAdsSetting.create)
-    ..aOM<$4044.PercentCpc>(34, _omitFieldNames ? '' : 'percentCpc', subBuilder: $4044.PercentCpc.create)
+    ..aOM<$4045.PercentCpc>(34, _omitFieldNames ? '' : 'percentCpc', subBuilder: $4045.PercentCpc.create)
     ..aOM<Campaign_ShoppingSetting>(36, _omitFieldNames ? '' : 'shoppingSetting', subBuilder: Campaign_ShoppingSetting.create)
-    ..aOM<$4047.RealTimeBiddingSetting>(39, _omitFieldNames ? '' : 'realTimeBiddingSetting', subBuilder: $4047.RealTimeBiddingSetting.create)
-    ..pc<$4048.FrequencyCapEntry>(40, _omitFieldNames ? '' : 'frequencyCaps', $pb.PbFieldType.PM, subBuilder: $4048.FrequencyCapEntry.create)
-    ..aOM<$4044.TargetCpm>(41, _omitFieldNames ? '' : 'targetCpm', subBuilder: $4044.TargetCpm.create)
+    ..aOM<$4048.RealTimeBiddingSetting>(39, _omitFieldNames ? '' : 'realTimeBiddingSetting', subBuilder: $4048.RealTimeBiddingSetting.create)
+    ..pc<$4049.FrequencyCapEntry>(40, _omitFieldNames ? '' : 'frequencyCaps', $pb.PbFieldType.PM, subBuilder: $4049.FrequencyCapEntry.create)
+    ..aOM<$4045.TargetCpm>(41, _omitFieldNames ? '' : 'targetCpm', subBuilder: $4045.TargetCpm.create)
     ..aOM<Campaign_SelectiveOptimization>(45, _omitFieldNames ? '' : 'selectiveOptimization', subBuilder: Campaign_SelectiveOptimization.create)
     ..aOM<Campaign_TrackingSetting>(46, _omitFieldNames ? '' : 'trackingSetting', subBuilder: Campaign_TrackingSetting.create)
     ..aOM<Campaign_GeoTargetTypeSetting>(47, _omitFieldNames ? '' : 'geoTargetTypeSetting', subBuilder: Campaign_GeoTargetTypeSetting.create)
-    ..aOM<$4044.TargetImpressionShare>(48, _omitFieldNames ? '' : 'targetImpressionShare', subBuilder: $4044.TargetImpressionShare.create)
+    ..aOM<$4045.TargetImpressionShare>(48, _omitFieldNames ? '' : 'targetImpressionShare', subBuilder: $4045.TargetImpressionShare.create)
     ..aOM<Campaign_OptimizationGoalSetting>(54, _omitFieldNames ? '' : 'optimizationGoalSetting', subBuilder: Campaign_OptimizationGoalSetting.create)
     ..aOS(58, _omitFieldNames ? '' : 'name')
     ..aInt64(59, _omitFieldNames ? '' : 'id')
@@ -832,12 +832,12 @@ class Campaign extends $pb.GeneratedMessage {
     ..aOS(65, _omitFieldNames ? '' : 'finalUrlSuffix')
     ..aOS(67, _omitFieldNames ? '' : 'biddingStrategy')
     ..aOS(68, _omitFieldNames ? '' : 'engineId')
-    ..pc<$4034.AssetFieldTypeEnum_AssetFieldType>(69, _omitFieldNames ? '' : 'excludedParentAssetFieldTypes', $pb.PbFieldType.KE, valueOf: $4034.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4034.AssetFieldTypeEnum_AssetFieldType.values, defaultEnumValue: $4034.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED)
+    ..pc<$4035.AssetFieldTypeEnum_AssetFieldType>(69, _omitFieldNames ? '' : 'excludedParentAssetFieldTypes', $pb.PbFieldType.KE, valueOf: $4035.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4035.AssetFieldTypeEnum_AssetFieldType.values, defaultEnumValue: $4035.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED)
     ..aOS(70, _omitFieldNames ? '' : 'lastModifiedTime')
     ..aOS(71, _omitFieldNames ? '' : 'accessibleBiddingStrategy')
     ..aOB(72, _omitFieldNames ? '' : 'urlExpansionOptOut')
-    ..aOM<$4044.ManualCpa>(74, _omitFieldNames ? '' : 'manualCpa', subBuilder: $4044.ManualCpa.create)
-    ..e<$4054.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus>(78, _omitFieldNames ? '' : 'biddingStrategySystemStatus', $pb.PbFieldType.OE, defaultOrMaker: $4054.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus.UNSPECIFIED, valueOf: $4054.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus.valueOf, enumValues: $4054.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus.values)
+    ..aOM<$4045.ManualCpa>(74, _omitFieldNames ? '' : 'manualCpa', subBuilder: $4045.ManualCpa.create)
+    ..e<$4055.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus>(78, _omitFieldNames ? '' : 'biddingStrategySystemStatus', $pb.PbFieldType.OE, defaultOrMaker: $4055.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus.UNSPECIFIED, valueOf: $4055.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus.valueOf, enumValues: $4055.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus.values)
     ..aOS(79, _omitFieldNames ? '' : 'createTime')
     ..aOS(84, _omitFieldNames ? '' : 'creationTime')
     ..hasRequiredFields = false
@@ -884,9 +884,9 @@ class Campaign extends $pb.GeneratedMessage {
   ///
   ///  When a new campaign is added, the status defaults to ENABLED.
   @$pb.TagNumber(5)
-  $4049.CampaignStatusEnum_CampaignStatus get status => $_getN(1);
+  $4050.CampaignStatusEnum_CampaignStatus get status => $_getN(1);
   @$pb.TagNumber(5)
-  set status($4049.CampaignStatusEnum_CampaignStatus v) { setField(5, v); }
+  set status($4050.CampaignStatusEnum_CampaignStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(5)
@@ -894,9 +894,9 @@ class Campaign extends $pb.GeneratedMessage {
 
   /// The ad serving optimization status of the campaign.
   @$pb.TagNumber(8)
-  $4050.AdServingOptimizationStatusEnum_AdServingOptimizationStatus get adServingOptimizationStatus => $_getN(2);
+  $4051.AdServingOptimizationStatusEnum_AdServingOptimizationStatus get adServingOptimizationStatus => $_getN(2);
   @$pb.TagNumber(8)
-  set adServingOptimizationStatus($4050.AdServingOptimizationStatusEnum_AdServingOptimizationStatus v) { setField(8, v); }
+  set adServingOptimizationStatus($4051.AdServingOptimizationStatusEnum_AdServingOptimizationStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAdServingOptimizationStatus() => $_has(2);
   @$pb.TagNumber(8)
@@ -911,9 +911,9 @@ class Campaign extends $pb.GeneratedMessage {
   ///  Can be set only when creating campaigns.
   ///  After the campaign is created, the field can not be changed.
   @$pb.TagNumber(9)
-  $4051.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(3);
+  $4052.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(3);
   @$pb.TagNumber(9)
-  set advertisingChannelType($4051.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(9, v); }
+  set advertisingChannelType($4052.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasAdvertisingChannelType() => $_has(3);
   @$pb.TagNumber(9)
@@ -925,9 +925,9 @@ class Campaign extends $pb.GeneratedMessage {
   ///  Can be set only when creating campaigns.
   ///  After campaign is created, the field can not be changed.
   @$pb.TagNumber(10)
-  $4052.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType get advertisingChannelSubType => $_getN(4);
+  $4053.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType get advertisingChannelSubType => $_getN(4);
   @$pb.TagNumber(10)
-  set advertisingChannelSubType($4052.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType v) { setField(10, v); }
+  set advertisingChannelSubType($4053.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasAdvertisingChannelSubType() => $_has(4);
   @$pb.TagNumber(10)
@@ -936,7 +936,7 @@ class Campaign extends $pb.GeneratedMessage {
   /// The list of mappings used to substitute custom parameter tags in a
   /// `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
   @$pb.TagNumber(12)
-  $core.List<$4046.CustomParameter> get urlCustomParameters => $_getList(5);
+  $core.List<$4047.CustomParameter> get urlCustomParameters => $_getList(5);
 
   /// The network settings for the campaign.
   @$pb.TagNumber(14)
@@ -952,9 +952,9 @@ class Campaign extends $pb.GeneratedMessage {
 
   /// Output only. The ad serving status of the campaign.
   @$pb.TagNumber(21)
-  $4053.CampaignServingStatusEnum_CampaignServingStatus get servingStatus => $_getN(7);
+  $4054.CampaignServingStatusEnum_CampaignServingStatus get servingStatus => $_getN(7);
   @$pb.TagNumber(21)
-  set servingStatus($4053.CampaignServingStatusEnum_CampaignServingStatus v) { setField(21, v); }
+  set servingStatus($4054.CampaignServingStatusEnum_CampaignServingStatus v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasServingStatus() => $_has(7);
   @$pb.TagNumber(21)
@@ -968,9 +968,9 @@ class Campaign extends $pb.GeneratedMessage {
   ///
   ///  This field is read-only.
   @$pb.TagNumber(22)
-  $4012.BiddingStrategyTypeEnum_BiddingStrategyType get biddingStrategyType => $_getN(8);
+  $4013.BiddingStrategyTypeEnum_BiddingStrategyType get biddingStrategyType => $_getN(8);
   @$pb.TagNumber(22)
-  set biddingStrategyType($4012.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(22, v); }
+  set biddingStrategyType($4013.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasBiddingStrategyType() => $_has(8);
   @$pb.TagNumber(22)
@@ -979,95 +979,95 @@ class Campaign extends $pb.GeneratedMessage {
   /// Standard Manual CPC bidding strategy.
   /// Manual click-based bidding where user pays per click.
   @$pb.TagNumber(24)
-  $4044.ManualCpc get manualCpc => $_getN(9);
+  $4045.ManualCpc get manualCpc => $_getN(9);
   @$pb.TagNumber(24)
-  set manualCpc($4044.ManualCpc v) { setField(24, v); }
+  set manualCpc($4045.ManualCpc v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasManualCpc() => $_has(9);
   @$pb.TagNumber(24)
   void clearManualCpc() => clearField(24);
   @$pb.TagNumber(24)
-  $4044.ManualCpc ensureManualCpc() => $_ensure(9);
+  $4045.ManualCpc ensureManualCpc() => $_ensure(9);
 
   /// Standard Manual CPM bidding strategy.
   /// Manual impression-based bidding where user pays per thousand
   /// impressions.
   @$pb.TagNumber(25)
-  $4044.ManualCpm get manualCpm => $_getN(10);
+  $4045.ManualCpm get manualCpm => $_getN(10);
   @$pb.TagNumber(25)
-  set manualCpm($4044.ManualCpm v) { setField(25, v); }
+  set manualCpm($4045.ManualCpm v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasManualCpm() => $_has(10);
   @$pb.TagNumber(25)
   void clearManualCpm() => clearField(25);
   @$pb.TagNumber(25)
-  $4044.ManualCpm ensureManualCpm() => $_ensure(10);
+  $4045.ManualCpm ensureManualCpm() => $_ensure(10);
 
   /// Standard Target CPA bidding strategy that automatically sets bids to
   /// help get as many conversions as possible at the target
   /// cost-per-acquisition (CPA) you set.
   @$pb.TagNumber(26)
-  $4044.TargetCpa get targetCpa => $_getN(11);
+  $4045.TargetCpa get targetCpa => $_getN(11);
   @$pb.TagNumber(26)
-  set targetCpa($4044.TargetCpa v) { setField(26, v); }
+  set targetCpa($4045.TargetCpa v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasTargetCpa() => $_has(11);
   @$pb.TagNumber(26)
   void clearTargetCpa() => clearField(26);
   @$pb.TagNumber(26)
-  $4044.TargetCpa ensureTargetCpa() => $_ensure(11);
+  $4045.TargetCpa ensureTargetCpa() => $_ensure(11);
 
   /// Standard Target Spend bidding strategy that automatically sets your bids
   /// to help get as many clicks as possible within your budget.
   @$pb.TagNumber(27)
-  $4044.TargetSpend get targetSpend => $_getN(12);
+  $4045.TargetSpend get targetSpend => $_getN(12);
   @$pb.TagNumber(27)
-  set targetSpend($4044.TargetSpend v) { setField(27, v); }
+  set targetSpend($4045.TargetSpend v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasTargetSpend() => $_has(12);
   @$pb.TagNumber(27)
   void clearTargetSpend() => clearField(27);
   @$pb.TagNumber(27)
-  $4044.TargetSpend ensureTargetSpend() => $_ensure(12);
+  $4045.TargetSpend ensureTargetSpend() => $_ensure(12);
 
   /// Standard Target ROAS bidding strategy that automatically maximizes
   /// revenue while averaging a specific target return on ad spend (ROAS).
   @$pb.TagNumber(29)
-  $4044.TargetRoas get targetRoas => $_getN(13);
+  $4045.TargetRoas get targetRoas => $_getN(13);
   @$pb.TagNumber(29)
-  set targetRoas($4044.TargetRoas v) { setField(29, v); }
+  set targetRoas($4045.TargetRoas v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasTargetRoas() => $_has(13);
   @$pb.TagNumber(29)
   void clearTargetRoas() => clearField(29);
   @$pb.TagNumber(29)
-  $4044.TargetRoas ensureTargetRoas() => $_ensure(13);
+  $4045.TargetRoas ensureTargetRoas() => $_ensure(13);
 
   /// Standard Maximize Conversions bidding strategy that automatically
   /// maximizes number of conversions while spending your budget.
   @$pb.TagNumber(30)
-  $4044.MaximizeConversions get maximizeConversions => $_getN(14);
+  $4045.MaximizeConversions get maximizeConversions => $_getN(14);
   @$pb.TagNumber(30)
-  set maximizeConversions($4044.MaximizeConversions v) { setField(30, v); }
+  set maximizeConversions($4045.MaximizeConversions v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasMaximizeConversions() => $_has(14);
   @$pb.TagNumber(30)
   void clearMaximizeConversions() => clearField(30);
   @$pb.TagNumber(30)
-  $4044.MaximizeConversions ensureMaximizeConversions() => $_ensure(14);
+  $4045.MaximizeConversions ensureMaximizeConversions() => $_ensure(14);
 
   /// Standard Maximize Conversion Value bidding strategy that automatically
   /// sets bids to maximize revenue while spending your budget.
   @$pb.TagNumber(31)
-  $4044.MaximizeConversionValue get maximizeConversionValue => $_getN(15);
+  $4045.MaximizeConversionValue get maximizeConversionValue => $_getN(15);
   @$pb.TagNumber(31)
-  set maximizeConversionValue($4044.MaximizeConversionValue v) { setField(31, v); }
+  set maximizeConversionValue($4045.MaximizeConversionValue v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasMaximizeConversionValue() => $_has(15);
   @$pb.TagNumber(31)
   void clearMaximizeConversionValue() => clearField(31);
   @$pb.TagNumber(31)
-  $4044.MaximizeConversionValue ensureMaximizeConversionValue() => $_ensure(15);
+  $4045.MaximizeConversionValue ensureMaximizeConversionValue() => $_ensure(15);
 
   /// The setting for controlling Dynamic Search Ads (DSA).
   @$pb.TagNumber(33)
@@ -1084,15 +1084,15 @@ class Campaign extends $pb.GeneratedMessage {
   /// Standard Percent Cpc bidding strategy where bids are a fraction of the
   /// advertised price for some good or service.
   @$pb.TagNumber(34)
-  $4044.PercentCpc get percentCpc => $_getN(17);
+  $4045.PercentCpc get percentCpc => $_getN(17);
   @$pb.TagNumber(34)
-  set percentCpc($4044.PercentCpc v) { setField(34, v); }
+  set percentCpc($4045.PercentCpc v) { setField(34, v); }
   @$pb.TagNumber(34)
   $core.bool hasPercentCpc() => $_has(17);
   @$pb.TagNumber(34)
   void clearPercentCpc() => clearField(34);
   @$pb.TagNumber(34)
-  $4044.PercentCpc ensurePercentCpc() => $_ensure(17);
+  $4045.PercentCpc ensurePercentCpc() => $_ensure(17);
 
   /// The setting for controlling Shopping campaigns.
   @$pb.TagNumber(36)
@@ -1109,32 +1109,32 @@ class Campaign extends $pb.GeneratedMessage {
   /// Settings for Real-Time Bidding, a feature only available for campaigns
   /// targeting the Ad Exchange network.
   @$pb.TagNumber(39)
-  $4047.RealTimeBiddingSetting get realTimeBiddingSetting => $_getN(19);
+  $4048.RealTimeBiddingSetting get realTimeBiddingSetting => $_getN(19);
   @$pb.TagNumber(39)
-  set realTimeBiddingSetting($4047.RealTimeBiddingSetting v) { setField(39, v); }
+  set realTimeBiddingSetting($4048.RealTimeBiddingSetting v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasRealTimeBiddingSetting() => $_has(19);
   @$pb.TagNumber(39)
   void clearRealTimeBiddingSetting() => clearField(39);
   @$pb.TagNumber(39)
-  $4047.RealTimeBiddingSetting ensureRealTimeBiddingSetting() => $_ensure(19);
+  $4048.RealTimeBiddingSetting ensureRealTimeBiddingSetting() => $_ensure(19);
 
   /// A list that limits how often each user will see this campaign's ads.
   @$pb.TagNumber(40)
-  $core.List<$4048.FrequencyCapEntry> get frequencyCaps => $_getList(20);
+  $core.List<$4049.FrequencyCapEntry> get frequencyCaps => $_getList(20);
 
   /// A bidding strategy that automatically optimizes cost per thousand
   /// impressions.
   @$pb.TagNumber(41)
-  $4044.TargetCpm get targetCpm => $_getN(21);
+  $4045.TargetCpm get targetCpm => $_getN(21);
   @$pb.TagNumber(41)
-  set targetCpm($4044.TargetCpm v) { setField(41, v); }
+  set targetCpm($4045.TargetCpm v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasTargetCpm() => $_has(21);
   @$pb.TagNumber(41)
   void clearTargetCpm() => clearField(41);
   @$pb.TagNumber(41)
-  $4044.TargetCpm ensureTargetCpm() => $_ensure(21);
+  $4045.TargetCpm ensureTargetCpm() => $_ensure(21);
 
   /// Selective optimization setting for this campaign, which includes a set of
   /// conversion actions to optimize this campaign towards.
@@ -1179,15 +1179,15 @@ class Campaign extends $pb.GeneratedMessage {
   /// Target Impression Share bidding strategy. An automated bidding strategy
   /// that sets bids to achieve a chosen percentage of impressions.
   @$pb.TagNumber(48)
-  $4044.TargetImpressionShare get targetImpressionShare => $_getN(25);
+  $4045.TargetImpressionShare get targetImpressionShare => $_getN(25);
   @$pb.TagNumber(48)
-  set targetImpressionShare($4044.TargetImpressionShare v) { setField(48, v); }
+  set targetImpressionShare($4045.TargetImpressionShare v) { setField(48, v); }
   @$pb.TagNumber(48)
   $core.bool hasTargetImpressionShare() => $_has(25);
   @$pb.TagNumber(48)
   void clearTargetImpressionShare() => clearField(48);
   @$pb.TagNumber(48)
-  $4044.TargetImpressionShare ensureTargetImpressionShare() => $_ensure(25);
+  $4045.TargetImpressionShare ensureTargetImpressionShare() => $_ensure(25);
 
   /// Optimization goal setting for this campaign, which includes a set of
   /// optimization goal types.
@@ -1313,7 +1313,7 @@ class Campaign extends $pb.GeneratedMessage {
   /// links with these field types will not be inherited by this campaign from
   /// the upper level.
   @$pb.TagNumber(69)
-  $core.List<$4034.AssetFieldTypeEnum_AssetFieldType> get excludedParentAssetFieldTypes => $_getList(37);
+  $core.List<$4035.AssetFieldTypeEnum_AssetFieldType> get excludedParentAssetFieldTypes => $_getList(37);
 
   /// Output only. The datetime when this campaign was last modified. The
   /// datetime is in the customer's time zone and in "yyyy-MM-dd HH:mm:ss.ssssss"
@@ -1363,21 +1363,21 @@ class Campaign extends $pb.GeneratedMessage {
   /// Manual bidding strategy that allows advertiser to set the bid per
   /// advertiser-specified action. Supported only for Local Services campaigns.
   @$pb.TagNumber(74)
-  $4044.ManualCpa get manualCpa => $_getN(41);
+  $4045.ManualCpa get manualCpa => $_getN(41);
   @$pb.TagNumber(74)
-  set manualCpa($4044.ManualCpa v) { setField(74, v); }
+  set manualCpa($4045.ManualCpa v) { setField(74, v); }
   @$pb.TagNumber(74)
   $core.bool hasManualCpa() => $_has(41);
   @$pb.TagNumber(74)
   void clearManualCpa() => clearField(74);
   @$pb.TagNumber(74)
-  $4044.ManualCpa ensureManualCpa() => $_ensure(41);
+  $4045.ManualCpa ensureManualCpa() => $_ensure(41);
 
   /// Output only. The system status of the campaign's bidding strategy.
   @$pb.TagNumber(78)
-  $4054.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus get biddingStrategySystemStatus => $_getN(42);
+  $4055.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus get biddingStrategySystemStatus => $_getN(42);
   @$pb.TagNumber(78)
-  set biddingStrategySystemStatus($4054.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus v) { setField(78, v); }
+  set biddingStrategySystemStatus($4055.BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus v) { setField(78, v); }
   @$pb.TagNumber(78)
   $core.bool hasBiddingStrategySystemStatus() => $_has(42);
   @$pb.TagNumber(78)

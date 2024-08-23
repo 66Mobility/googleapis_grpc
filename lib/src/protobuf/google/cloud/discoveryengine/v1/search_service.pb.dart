@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'chunk.pb.dart' as $4501;
-import 'common.pb.dart' as $4499;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'chunk.pb.dart' as $4503;
+import 'common.pb.dart' as $4501;
 import 'document.pb.dart' as $937;
 import 'search_service.pbenum.dart';
 
@@ -148,7 +148,7 @@ class SearchRequest_DataStoreSpec extends $pb.GeneratedMessage {
 class SearchRequest_FacetSpec_FacetKey extends $pb.GeneratedMessage {
   factory SearchRequest_FacetSpec_FacetKey({
     $core.String? key,
-    $core.Iterable<$4499.Interval>? intervals,
+    $core.Iterable<$4501.Interval>? intervals,
     $core.Iterable<$core.String>? restrictedValues,
     $core.Iterable<$core.String>? prefixes,
     $core.Iterable<$core.String>? contains,
@@ -185,7 +185,7 @@ class SearchRequest_FacetSpec_FacetKey extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchRequest.FacetSpec.FacetKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..pc<$4499.Interval>(2, _omitFieldNames ? '' : 'intervals', $pb.PbFieldType.PM, subBuilder: $4499.Interval.create)
+    ..pc<$4501.Interval>(2, _omitFieldNames ? '' : 'intervals', $pb.PbFieldType.PM, subBuilder: $4501.Interval.create)
     ..pPS(3, _omitFieldNames ? '' : 'restrictedValues')
     ..pPS(4, _omitFieldNames ? '' : 'prefixes')
     ..pPS(5, _omitFieldNames ? '' : 'contains')
@@ -231,7 +231,7 @@ class SearchRequest_FacetSpec_FacetKey extends $pb.GeneratedMessage {
   /// for facets with numerical values. Must not be set for facet with text
   /// values. Maximum number of intervals is 30.
   @$pb.TagNumber(2)
-  $core.List<$4499.Interval> get intervals => $_getList(1);
+  $core.List<$4501.Interval> get intervals => $_getList(1);
 
   /// Only get facet for the given restricted values. Only supported on
   /// textual fields. For example, suppose "category" has three values
@@ -1672,13 +1672,13 @@ class SearchRequest extends $pb.GeneratedMessage {
     $core.String? orderBy,
     $core.Iterable<SearchRequest_FacetSpec>? facetSpecs,
     SearchRequest_BoostSpec? boostSpec,
-    $core.Map<$core.String, $1734.Value>? params,
+    $core.Map<$core.String, $1735.Value>? params,
     SearchRequest_QueryExpansionSpec? queryExpansionSpec,
     SearchRequest_SpellCorrectionSpec? spellCorrectionSpec,
     $core.String? userPseudoId,
     SearchRequest_ImageQuery? imageQuery,
     $core.bool? safeSearch,
-    $4499.UserInfo? userInfo,
+    $4501.UserInfo? userInfo,
     $core.Map<$core.String, $core.String>? userLabels,
     SearchRequest_ContentSearchSpec? contentSearchSpec,
     $core.String? canonicalFilter,
@@ -1781,13 +1781,13 @@ class SearchRequest extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'orderBy')
     ..pc<SearchRequest_FacetSpec>(9, _omitFieldNames ? '' : 'facetSpecs', $pb.PbFieldType.PM, subBuilder: SearchRequest_FacetSpec.create)
     ..aOM<SearchRequest_BoostSpec>(10, _omitFieldNames ? '' : 'boostSpec', subBuilder: SearchRequest_BoostSpec.create)
-    ..m<$core.String, $1734.Value>(11, _omitFieldNames ? '' : 'params', entryClassName: 'SearchRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1'))
+    ..m<$core.String, $1735.Value>(11, _omitFieldNames ? '' : 'params', entryClassName: 'SearchRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1'))
     ..aOM<SearchRequest_QueryExpansionSpec>(13, _omitFieldNames ? '' : 'queryExpansionSpec', subBuilder: SearchRequest_QueryExpansionSpec.create)
     ..aOM<SearchRequest_SpellCorrectionSpec>(14, _omitFieldNames ? '' : 'spellCorrectionSpec', subBuilder: SearchRequest_SpellCorrectionSpec.create)
     ..aOS(15, _omitFieldNames ? '' : 'userPseudoId')
     ..aOM<SearchRequest_ImageQuery>(19, _omitFieldNames ? '' : 'imageQuery', subBuilder: SearchRequest_ImageQuery.create)
     ..aOB(20, _omitFieldNames ? '' : 'safeSearch')
-    ..aOM<$4499.UserInfo>(21, _omitFieldNames ? '' : 'userInfo', subBuilder: $4499.UserInfo.create)
+    ..aOM<$4501.UserInfo>(21, _omitFieldNames ? '' : 'userInfo', subBuilder: $4501.UserInfo.create)
     ..m<$core.String, $core.String>(22, _omitFieldNames ? '' : 'userLabels', entryClassName: 'SearchRequest.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1'))
     ..aOM<SearchRequest_ContentSearchSpec>(24, _omitFieldNames ? '' : 'contentSearchSpec', subBuilder: SearchRequest_ContentSearchSpec.create)
     ..aOS(29, _omitFieldNames ? '' : 'canonicalFilter')
@@ -1990,7 +1990,7 @@ class SearchRequest extends $pb.GeneratedMessage {
   ///     which enables image searching.
   ///     For example, `search_type: 1`
   @$pb.TagNumber(11)
-  $core.Map<$core.String, $1734.Value> get params => $_getMap(10);
+  $core.Map<$core.String, $1735.Value> get params => $_getMap(10);
 
   /// The query expansion specification that specifies the conditions under which
   /// query expansion occurs.
@@ -2069,15 +2069,15 @@ class SearchRequest extends $pb.GeneratedMessage {
   /// [UserInfo.user_agent][google.cloud.discoveryengine.v1.UserInfo.user_agent]
   /// is used to deduce `device_type` for analytics.
   @$pb.TagNumber(21)
-  $4499.UserInfo get userInfo => $_getN(16);
+  $4501.UserInfo get userInfo => $_getN(16);
   @$pb.TagNumber(21)
-  set userInfo($4499.UserInfo v) { setField(21, v); }
+  set userInfo($4501.UserInfo v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasUserInfo() => $_has(16);
   @$pb.TagNumber(21)
   void clearUserInfo() => clearField(21);
   @$pb.TagNumber(21)
-  $4499.UserInfo ensureUserInfo() => $_ensure(16);
+  $4501.UserInfo ensureUserInfo() => $_ensure(16);
 
   ///  The user labels applied to a resource must meet the following requirements:
   ///
@@ -2222,7 +2222,7 @@ class SearchResponse_SearchResult extends $pb.GeneratedMessage {
   factory SearchResponse_SearchResult({
     $core.String? id,
     $937.Document? document,
-    $4501.Chunk? chunk,
+    $4503.Chunk? chunk,
   }) {
     final $result = create();
     if (id != null) {
@@ -2243,7 +2243,7 @@ class SearchResponse_SearchResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchResponse.SearchResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOM<$937.Document>(2, _omitFieldNames ? '' : 'document', subBuilder: $937.Document.create)
-    ..aOM<$4501.Chunk>(18, _omitFieldNames ? '' : 'chunk', subBuilder: $4501.Chunk.create)
+    ..aOM<$4503.Chunk>(18, _omitFieldNames ? '' : 'chunk', subBuilder: $4503.Chunk.create)
     ..hasRequiredFields = false
   ;
 
@@ -2297,15 +2297,15 @@ class SearchResponse_SearchResult extends $pb.GeneratedMessage {
   /// is set to
   /// [CHUNKS][google.cloud.discoveryengine.v1.SearchRequest.ContentSearchSpec.SearchResultMode.CHUNKS].
   @$pb.TagNumber(18)
-  $4501.Chunk get chunk => $_getN(2);
+  $4503.Chunk get chunk => $_getN(2);
   @$pb.TagNumber(18)
-  set chunk($4501.Chunk v) { setField(18, v); }
+  set chunk($4503.Chunk v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasChunk() => $_has(2);
   @$pb.TagNumber(18)
   void clearChunk() => clearField(18);
   @$pb.TagNumber(18)
-  $4501.Chunk ensureChunk() => $_ensure(2);
+  $4503.Chunk ensureChunk() => $_ensure(2);
 }
 
 enum SearchResponse_Facet_FacetValue_FacetValue {
@@ -2318,7 +2318,7 @@ enum SearchResponse_Facet_FacetValue_FacetValue {
 class SearchResponse_Facet_FacetValue extends $pb.GeneratedMessage {
   factory SearchResponse_Facet_FacetValue({
     $core.String? value,
-    $4499.Interval? interval,
+    $4501.Interval? interval,
     $fixnum.Int64? count,
   }) {
     final $result = create();
@@ -2345,7 +2345,7 @@ class SearchResponse_Facet_FacetValue extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchResponse.Facet.FacetValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'value')
-    ..aOM<$4499.Interval>(2, _omitFieldNames ? '' : 'interval', subBuilder: $4499.Interval.create)
+    ..aOM<$4501.Interval>(2, _omitFieldNames ? '' : 'interval', subBuilder: $4501.Interval.create)
     ..aInt64(3, _omitFieldNames ? '' : 'count')
     ..hasRequiredFields = false
   ;
@@ -2388,15 +2388,15 @@ class SearchResponse_Facet_FacetValue extends $pb.GeneratedMessage {
   /// matches
   /// [SearchRequest.FacetSpec.FacetKey.intervals][google.cloud.discoveryengine.v1.SearchRequest.FacetSpec.FacetKey.intervals].
   @$pb.TagNumber(2)
-  $4499.Interval get interval => $_getN(1);
+  $4501.Interval get interval => $_getN(1);
   @$pb.TagNumber(2)
-  set interval($4499.Interval v) { setField(2, v); }
+  set interval($4501.Interval v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInterval() => $_has(1);
   @$pb.TagNumber(2)
   void clearInterval() => clearField(2);
   @$pb.TagNumber(2)
-  $4499.Interval ensureInterval() => $_ensure(1);
+  $4501.Interval ensureInterval() => $_ensure(1);
 
   /// Number of items that have this facet value.
   @$pb.TagNumber(3)

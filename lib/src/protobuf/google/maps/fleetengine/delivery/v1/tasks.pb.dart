@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4798;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4800;
 import 'delivery_vehicles.pb.dart' as $1638;
 import 'tasks.pbenum.dart';
 
@@ -25,7 +25,7 @@ export 'tasks.pbenum.dart';
 class Task_JourneySharingInfo extends $pb.GeneratedMessage {
   factory Task_JourneySharingInfo({
     $core.Iterable<$1638.VehicleJourneySegment>? remainingVehicleJourneySegments,
-    $4798.DeliveryVehicleLocation? lastLocation,
+    $4800.DeliveryVehicleLocation? lastLocation,
     $core.bool? lastLocationSnappable,
   }) {
     final $result = create();
@@ -46,7 +46,7 @@ class Task_JourneySharingInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Task.JourneySharingInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
     ..pc<$1638.VehicleJourneySegment>(1, _omitFieldNames ? '' : 'remainingVehicleJourneySegments', $pb.PbFieldType.PM, subBuilder: $1638.VehicleJourneySegment.create)
-    ..aOM<$4798.DeliveryVehicleLocation>(2, _omitFieldNames ? '' : 'lastLocation', subBuilder: $4798.DeliveryVehicleLocation.create)
+    ..aOM<$4800.DeliveryVehicleLocation>(2, _omitFieldNames ? '' : 'lastLocation', subBuilder: $4800.DeliveryVehicleLocation.create)
     ..aOB(3, _omitFieldNames ? '' : 'lastLocationSnappable')
     ..hasRequiredFields = false
   ;
@@ -93,15 +93,15 @@ class Task_JourneySharingInfo extends $pb.GeneratedMessage {
 
   /// Indicates the vehicle's last reported location of the assigned vehicle.
   @$pb.TagNumber(2)
-  $4798.DeliveryVehicleLocation get lastLocation => $_getN(1);
+  $4800.DeliveryVehicleLocation get lastLocation => $_getN(1);
   @$pb.TagNumber(2)
-  set lastLocation($4798.DeliveryVehicleLocation v) { setField(2, v); }
+  set lastLocation($4800.DeliveryVehicleLocation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLastLocation() => $_has(1);
   @$pb.TagNumber(2)
   void clearLastLocation() => clearField(2);
   @$pb.TagNumber(2)
-  $4798.DeliveryVehicleLocation ensureLastLocation() => $_ensure(1);
+  $4800.DeliveryVehicleLocation ensureLastLocation() => $_ensure(1);
 
   /// Indicates whether the vehicle's lastLocation can be snapped to
   /// the `current_route_segment`. This value is False if either
@@ -138,15 +138,15 @@ class Task extends $pb.GeneratedMessage {
     $core.String? trackingId,
     $core.String? deliveryVehicleId,
     $1638.LocationInfo? plannedLocation,
-    $1737.Duration? taskDuration,
+    $1738.Duration? taskDuration,
     Task_JourneySharingInfo? journeySharingInfo,
     Task_TaskOutcome? taskOutcome,
-    $1775.Timestamp? taskOutcomeTime,
+    $1776.Timestamp? taskOutcomeTime,
     $1638.LocationInfo? taskOutcomeLocation,
     Task_TaskOutcomeLocationSource? taskOutcomeLocationSource,
     TaskTrackingViewConfig? taskTrackingViewConfig,
-    $4798.TimeWindow? targetTimeWindow,
-    $core.Iterable<$4798.TaskAttribute>? attributes,
+    $4800.TimeWindow? targetTimeWindow,
+    $core.Iterable<$4800.TaskAttribute>? attributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -207,15 +207,15 @@ class Task extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'trackingId')
     ..aOS(5, _omitFieldNames ? '' : 'deliveryVehicleId')
     ..aOM<$1638.LocationInfo>(6, _omitFieldNames ? '' : 'plannedLocation', subBuilder: $1638.LocationInfo.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'taskDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'taskDuration', subBuilder: $1738.Duration.create)
     ..aOM<Task_JourneySharingInfo>(8, _omitFieldNames ? '' : 'journeySharingInfo', subBuilder: Task_JourneySharingInfo.create)
     ..e<Task_TaskOutcome>(9, _omitFieldNames ? '' : 'taskOutcome', $pb.PbFieldType.OE, defaultOrMaker: Task_TaskOutcome.TASK_OUTCOME_UNSPECIFIED, valueOf: Task_TaskOutcome.valueOf, enumValues: Task_TaskOutcome.values)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'taskOutcomeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'taskOutcomeTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$1638.LocationInfo>(11, _omitFieldNames ? '' : 'taskOutcomeLocation', subBuilder: $1638.LocationInfo.create)
     ..e<Task_TaskOutcomeLocationSource>(12, _omitFieldNames ? '' : 'taskOutcomeLocationSource', $pb.PbFieldType.OE, defaultOrMaker: Task_TaskOutcomeLocationSource.TASK_OUTCOME_LOCATION_SOURCE_UNSPECIFIED, valueOf: Task_TaskOutcomeLocationSource.valueOf, enumValues: Task_TaskOutcomeLocationSource.values)
     ..aOM<TaskTrackingViewConfig>(13, _omitFieldNames ? '' : 'taskTrackingViewConfig', subBuilder: TaskTrackingViewConfig.create)
-    ..aOM<$4798.TimeWindow>(14, _omitFieldNames ? '' : 'targetTimeWindow', subBuilder: $4798.TimeWindow.create)
-    ..pc<$4798.TaskAttribute>(15, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4798.TaskAttribute.create)
+    ..aOM<$4800.TimeWindow>(14, _omitFieldNames ? '' : 'targetTimeWindow', subBuilder: $4800.TimeWindow.create)
+    ..pc<$4800.TaskAttribute>(15, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4800.TaskAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -324,15 +324,15 @@ class Task extends $pb.GeneratedMessage {
 
   /// Required. Immutable. The time needed to execute a Task at this location.
   @$pb.TagNumber(7)
-  $1737.Duration get taskDuration => $_getN(6);
+  $1738.Duration get taskDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set taskDuration($1737.Duration v) { setField(7, v); }
+  set taskDuration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTaskDuration() => $_has(6);
   @$pb.TagNumber(7)
   void clearTaskDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureTaskDuration() => $_ensure(6);
+  $1738.Duration ensureTaskDuration() => $_ensure(6);
 
   /// Output only. Journey sharing-specific fields. Not populated when state is
   /// `CLOSED`.
@@ -360,15 +360,15 @@ class Task extends $pb.GeneratedMessage {
   /// The timestamp that indicates when the `Task`'s outcome was set by the
   /// provider.
   @$pb.TagNumber(10)
-  $1775.Timestamp get taskOutcomeTime => $_getN(9);
+  $1776.Timestamp get taskOutcomeTime => $_getN(9);
   @$pb.TagNumber(10)
-  set taskOutcomeTime($1775.Timestamp v) { setField(10, v); }
+  set taskOutcomeTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTaskOutcomeTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearTaskOutcomeTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureTaskOutcomeTime() => $_ensure(9);
+  $1776.Timestamp ensureTaskOutcomeTime() => $_ensure(9);
 
   /// The location where the `Task`'s outcome was set. This value is updated as
   /// part of `UpdateTask`. If this value isn't explicitly updated by the
@@ -410,19 +410,19 @@ class Task extends $pb.GeneratedMessage {
 
   /// The time window during which the task should be completed.
   @$pb.TagNumber(14)
-  $4798.TimeWindow get targetTimeWindow => $_getN(13);
+  $4800.TimeWindow get targetTimeWindow => $_getN(13);
   @$pb.TagNumber(14)
-  set targetTimeWindow($4798.TimeWindow v) { setField(14, v); }
+  set targetTimeWindow($4800.TimeWindow v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTargetTimeWindow() => $_has(13);
   @$pb.TagNumber(14)
   void clearTargetTimeWindow() => clearField(14);
   @$pb.TagNumber(14)
-  $4798.TimeWindow ensureTargetTimeWindow() => $_ensure(13);
+  $4800.TimeWindow ensureTargetTimeWindow() => $_ensure(13);
 
   /// A list of custom Task attributes. Each attribute must have a unique key.
   @$pb.TagNumber(15)
-  $core.List<$4798.TaskAttribute> get attributes => $_getList(14);
+  $core.List<$4800.TaskAttribute> get attributes => $_getList(14);
 }
 
 enum TaskTrackingViewConfig_VisibilityOption_VisibilityOption {
@@ -439,7 +439,7 @@ enum TaskTrackingViewConfig_VisibilityOption_VisibilityOption {
 class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   factory TaskTrackingViewConfig_VisibilityOption({
     $core.int? remainingStopCountThreshold,
-    $1737.Duration? durationUntilEstimatedArrivalTimeThreshold,
+    $1738.Duration? durationUntilEstimatedArrivalTimeThreshold,
     $core.int? remainingDrivingDistanceMetersThreshold,
     $core.bool? always,
     $core.bool? never,
@@ -477,7 +477,7 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskTrackingViewConfig.VisibilityOption', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'remainingStopCountThreshold', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'durationUntilEstimatedArrivalTimeThreshold', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'durationUntilEstimatedArrivalTimeThreshold', subBuilder: $1738.Duration.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'remainingDrivingDistanceMetersThreshold', $pb.PbFieldType.O3)
     ..aOB(4, _omitFieldNames ? '' : 'always')
     ..aOB(5, _omitFieldNames ? '' : 'never')
@@ -522,15 +522,15 @@ class TaskTrackingViewConfig_VisibilityOption extends $pb.GeneratedMessage {
   /// This data element is visible to the end users if the ETA to the stop
   /// <= duration_until_estimated_arrival_time_threshold.
   @$pb.TagNumber(2)
-  $1737.Duration get durationUntilEstimatedArrivalTimeThreshold => $_getN(1);
+  $1738.Duration get durationUntilEstimatedArrivalTimeThreshold => $_getN(1);
   @$pb.TagNumber(2)
-  set durationUntilEstimatedArrivalTimeThreshold($1737.Duration v) { setField(2, v); }
+  set durationUntilEstimatedArrivalTimeThreshold($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDurationUntilEstimatedArrivalTimeThreshold() => $_has(1);
   @$pb.TagNumber(2)
   void clearDurationUntilEstimatedArrivalTimeThreshold() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureDurationUntilEstimatedArrivalTimeThreshold() => $_ensure(1);
+  $1738.Duration ensureDurationUntilEstimatedArrivalTimeThreshold() => $_ensure(1);
 
   /// This data element is visible to the end users if the remaining
   /// driving distance in meters <=

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/ad_strength.pbenum.dart' as $3546;
-import '../enums/asset_group_primary_status.pbenum.dart' as $3574;
-import '../enums/asset_group_primary_status_reason.pbenum.dart' as $3575;
-import '../enums/asset_group_status.pbenum.dart' as $3573;
+import '../enums/ad_strength.pbenum.dart' as $3547;
+import '../enums/asset_group_primary_status.pbenum.dart' as $3575;
+import '../enums/asset_group_primary_status_reason.pbenum.dart' as $3576;
+import '../enums/asset_group_status.pbenum.dart' as $3574;
 
 /// An asset group.
 /// AssetGroupAsset is used to link an asset to the asset group.
@@ -29,13 +29,13 @@ class AssetGroup extends $pb.GeneratedMessage {
     $core.String? name,
     $core.Iterable<$core.String>? finalUrls,
     $core.Iterable<$core.String>? finalMobileUrls,
-    $3573.AssetGroupStatusEnum_AssetGroupStatus? status,
+    $3574.AssetGroupStatusEnum_AssetGroupStatus? status,
     $core.String? path1,
     $core.String? path2,
     $fixnum.Int64? id,
-    $3546.AdStrengthEnum_AdStrength? adStrength,
-    $3574.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus? primaryStatus,
-    $core.Iterable<$3575.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason>? primaryStatusReasons,
+    $3547.AdStrengthEnum_AdStrength? adStrength,
+    $3575.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus? primaryStatus,
+    $core.Iterable<$3576.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason>? primaryStatusReasons,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -86,13 +86,13 @@ class AssetGroup extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..pPS(4, _omitFieldNames ? '' : 'finalUrls')
     ..pPS(5, _omitFieldNames ? '' : 'finalMobileUrls')
-    ..e<$3573.AssetGroupStatusEnum_AssetGroupStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3573.AssetGroupStatusEnum_AssetGroupStatus.UNSPECIFIED, valueOf: $3573.AssetGroupStatusEnum_AssetGroupStatus.valueOf, enumValues: $3573.AssetGroupStatusEnum_AssetGroupStatus.values)
+    ..e<$3574.AssetGroupStatusEnum_AssetGroupStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3574.AssetGroupStatusEnum_AssetGroupStatus.UNSPECIFIED, valueOf: $3574.AssetGroupStatusEnum_AssetGroupStatus.valueOf, enumValues: $3574.AssetGroupStatusEnum_AssetGroupStatus.values)
     ..aOS(7, _omitFieldNames ? '' : 'path1')
     ..aOS(8, _omitFieldNames ? '' : 'path2')
     ..aInt64(9, _omitFieldNames ? '' : 'id')
-    ..e<$3546.AdStrengthEnum_AdStrength>(10, _omitFieldNames ? '' : 'adStrength', $pb.PbFieldType.OE, defaultOrMaker: $3546.AdStrengthEnum_AdStrength.UNSPECIFIED, valueOf: $3546.AdStrengthEnum_AdStrength.valueOf, enumValues: $3546.AdStrengthEnum_AdStrength.values)
-    ..e<$3574.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus>(11, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $3574.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus.UNSPECIFIED, valueOf: $3574.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus.valueOf, enumValues: $3574.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus.values)
-    ..pc<$3575.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason>(12, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $3575.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason.valueOf, enumValues: $3575.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason.values, defaultEnumValue: $3575.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason.UNSPECIFIED)
+    ..e<$3547.AdStrengthEnum_AdStrength>(10, _omitFieldNames ? '' : 'adStrength', $pb.PbFieldType.OE, defaultOrMaker: $3547.AdStrengthEnum_AdStrength.UNSPECIFIED, valueOf: $3547.AdStrengthEnum_AdStrength.valueOf, enumValues: $3547.AdStrengthEnum_AdStrength.values)
+    ..e<$3575.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus>(11, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $3575.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus.UNSPECIFIED, valueOf: $3575.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus.valueOf, enumValues: $3575.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus.values)
+    ..pc<$3576.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason>(12, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $3576.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason.valueOf, enumValues: $3576.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason.values, defaultEnumValue: $3576.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -165,9 +165,9 @@ class AssetGroup extends $pb.GeneratedMessage {
 
   /// The status of the asset group.
   @$pb.TagNumber(6)
-  $3573.AssetGroupStatusEnum_AssetGroupStatus get status => $_getN(5);
+  $3574.AssetGroupStatusEnum_AssetGroupStatus get status => $_getN(5);
   @$pb.TagNumber(6)
-  set status($3573.AssetGroupStatusEnum_AssetGroupStatus v) { setField(6, v); }
+  set status($3574.AssetGroupStatusEnum_AssetGroupStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -207,9 +207,9 @@ class AssetGroup extends $pb.GeneratedMessage {
 
   /// Output only. Overall ad strength of this asset group.
   @$pb.TagNumber(10)
-  $3546.AdStrengthEnum_AdStrength get adStrength => $_getN(9);
+  $3547.AdStrengthEnum_AdStrength get adStrength => $_getN(9);
   @$pb.TagNumber(10)
-  set adStrength($3546.AdStrengthEnum_AdStrength v) { setField(10, v); }
+  set adStrength($3547.AdStrengthEnum_AdStrength v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasAdStrength() => $_has(9);
   @$pb.TagNumber(10)
@@ -218,9 +218,9 @@ class AssetGroup extends $pb.GeneratedMessage {
   /// Output only. The primary status of the asset group. Provides insights into
   /// why an asset group is not serving or not serving optimally.
   @$pb.TagNumber(11)
-  $3574.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus get primaryStatus => $_getN(10);
+  $3575.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus get primaryStatus => $_getN(10);
   @$pb.TagNumber(11)
-  set primaryStatus($3574.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus v) { setField(11, v); }
+  set primaryStatus($3575.AssetGroupPrimaryStatusEnum_AssetGroupPrimaryStatus v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasPrimaryStatus() => $_has(10);
   @$pb.TagNumber(11)
@@ -230,7 +230,7 @@ class AssetGroup extends $pb.GeneratedMessage {
   /// serving optimally. It will be empty when the asset group is serving without
   /// issues.
   @$pb.TagNumber(12)
-  $core.List<$3575.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason> get primaryStatusReasons => $_getList(11);
+  $core.List<$3576.AssetGroupPrimaryStatusReasonEnum_AssetGroupPrimaryStatusReason> get primaryStatusReasons => $_getList(11);
 }
 
 

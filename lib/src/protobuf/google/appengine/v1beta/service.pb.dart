@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'network_settings.pb.dart' as $4197;
+import 'network_settings.pb.dart' as $4198;
 import 'service.pbenum.dart';
 
 export 'service.pbenum.dart';
@@ -30,7 +30,7 @@ class Service extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? id,
     TrafficSplit? split,
-    $4197.NetworkSettings? networkSettings,
+    $4198.NetworkSettings? networkSettings,
   }) {
     final $result = create();
     if (name != null) {
@@ -55,7 +55,7 @@ class Service extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOM<TrafficSplit>(3, _omitFieldNames ? '' : 'split', subBuilder: TrafficSplit.create)
-    ..aOM<$4197.NetworkSettings>(6, _omitFieldNames ? '' : 'networkSettings', subBuilder: $4197.NetworkSettings.create)
+    ..aOM<$4198.NetworkSettings>(6, _omitFieldNames ? '' : 'networkSettings', subBuilder: $4198.NetworkSettings.create)
     ..hasRequiredFields = false
   ;
 
@@ -121,15 +121,15 @@ class Service extends $pb.GeneratedMessage {
 
   /// Ingress settings for this service. Will apply to all versions.
   @$pb.TagNumber(6)
-  $4197.NetworkSettings get networkSettings => $_getN(3);
+  $4198.NetworkSettings get networkSettings => $_getN(3);
   @$pb.TagNumber(6)
-  set networkSettings($4197.NetworkSettings v) { setField(6, v); }
+  set networkSettings($4198.NetworkSettings v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasNetworkSettings() => $_has(3);
   @$pb.TagNumber(6)
   void clearNetworkSettings() => clearField(6);
   @$pb.TagNumber(6)
-  $4197.NetworkSettings ensureNetworkSettings() => $_ensure(3);
+  $4198.NetworkSettings ensureNetworkSettings() => $_ensure(3);
 }
 
 /// Traffic routing configuration for versions within a single service. Traffic

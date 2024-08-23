@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../api/httpbody.pb.dart' as $518;
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'queue.pb.dart' as $1443;
 import 'task.pb.dart' as $1444;
 import 'task.pbenum.dart' as $1444;
@@ -29,7 +29,7 @@ class ListQueuesRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -58,7 +58,7 @@ class ListQueuesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -153,15 +153,15 @@ class ListQueuesRequest extends $pb.GeneratedMessage {
   /// [Queue.stats]. [Queue.stats] will be returned only if it was  explicitly
   /// specified in the mask.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -240,7 +240,7 @@ class ListQueuesResponse extends $pb.GeneratedMessage {
 class GetQueueRequest extends $pb.GeneratedMessage {
   factory GetQueueRequest({
     $core.String? name,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -257,7 +257,7 @@ class GetQueueRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetQueueRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -298,15 +298,15 @@ class GetQueueRequest extends $pb.GeneratedMessage {
   /// [Queue.stats]. [Queue.stats] will be returned only if it was  explicitly
   /// specified in the mask.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -392,7 +392,7 @@ class CreateQueueRequest extends $pb.GeneratedMessage {
 class UpdateQueueRequest extends $pb.GeneratedMessage {
   factory UpdateQueueRequest({
     $1443.Queue? queue,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (queue != null) {
@@ -409,7 +409,7 @@ class UpdateQueueRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateQueueRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
     ..aOM<$1443.Queue>(1, _omitFieldNames ? '' : 'queue', subBuilder: $1443.Queue.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -458,15 +458,15 @@ class UpdateQueueRequest extends $pb.GeneratedMessage {
   ///
   ///  If empty, then all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -1225,7 +1225,7 @@ class LeaseTasksRequest extends $pb.GeneratedMessage {
   factory LeaseTasksRequest({
     $core.String? parent,
     $core.int? maxTasks,
-    $1737.Duration? leaseDuration,
+    $1738.Duration? leaseDuration,
     $1444.Task_View? responseView,
     $core.String? filter,
   }) {
@@ -1254,7 +1254,7 @@ class LeaseTasksRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LeaseTasksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxTasks', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'leaseDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'leaseDuration', subBuilder: $1738.Duration.create)
     ..e<$1444.Task_View>(4, _omitFieldNames ? '' : 'responseView', $pb.PbFieldType.OE, defaultOrMaker: $1444.Task_View.VIEW_UNSPECIFIED, valueOf: $1444.Task_View.valueOf, enumValues: $1444.Task_View.values)
     ..aOS(5, _omitFieldNames ? '' : 'filter')
     ..hasRequiredFields = false
@@ -1335,15 +1335,15 @@ class LeaseTasksRequest extends $pb.GeneratedMessage {
   ///  The maximum lease duration is 1 week.
   ///  `lease_duration` will be truncated to the nearest second.
   @$pb.TagNumber(3)
-  $1737.Duration get leaseDuration => $_getN(2);
+  $1738.Duration get leaseDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set leaseDuration($1737.Duration v) { setField(3, v); }
+  set leaseDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLeaseDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearLeaseDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureLeaseDuration() => $_ensure(2);
+  $1738.Duration ensureLeaseDuration() => $_ensure(2);
 
   ///  The response_view specifies which subset of the
   ///  [Task][google.cloud.tasks.v2beta2.Task] will be returned.
@@ -1460,7 +1460,7 @@ class LeaseTasksResponse extends $pb.GeneratedMessage {
 class AcknowledgeTaskRequest extends $pb.GeneratedMessage {
   factory AcknowledgeTaskRequest({
     $core.String? name,
-    $1775.Timestamp? scheduleTime,
+    $1776.Timestamp? scheduleTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1477,7 +1477,7 @@ class AcknowledgeTaskRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AcknowledgeTaskRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1519,15 +1519,15 @@ class AcknowledgeTaskRequest extends $pb.GeneratedMessage {
   /// [RenewLease][google.cloud.tasks.v2beta2.CloudTasks.RenewLease] response.
   /// This restriction is to ensure that your worker currently holds the lease.
   @$pb.TagNumber(2)
-  $1775.Timestamp get scheduleTime => $_getN(1);
+  $1776.Timestamp get scheduleTime => $_getN(1);
   @$pb.TagNumber(2)
-  set scheduleTime($1775.Timestamp v) { setField(2, v); }
+  set scheduleTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasScheduleTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearScheduleTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(1);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(1);
 }
 
 /// Request message for renewing a lease using
@@ -1535,8 +1535,8 @@ class AcknowledgeTaskRequest extends $pb.GeneratedMessage {
 class RenewLeaseRequest extends $pb.GeneratedMessage {
   factory RenewLeaseRequest({
     $core.String? name,
-    $1775.Timestamp? scheduleTime,
-    $1737.Duration? leaseDuration,
+    $1776.Timestamp? scheduleTime,
+    $1738.Duration? leaseDuration,
     $1444.Task_View? responseView,
   }) {
     final $result = create();
@@ -1560,8 +1560,8 @@ class RenewLeaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RenewLeaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'leaseDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'leaseDuration', subBuilder: $1738.Duration.create)
     ..e<$1444.Task_View>(4, _omitFieldNames ? '' : 'responseView', $pb.PbFieldType.OE, defaultOrMaker: $1444.Task_View.VIEW_UNSPECIFIED, valueOf: $1444.Task_View.valueOf, enumValues: $1444.Task_View.values)
     ..hasRequiredFields = false
   ;
@@ -1604,15 +1604,15 @@ class RenewLeaseRequest extends $pb.GeneratedMessage {
   /// [RenewLease][google.cloud.tasks.v2beta2.CloudTasks.RenewLease] response.
   /// This restriction is to ensure that your worker currently holds the lease.
   @$pb.TagNumber(2)
-  $1775.Timestamp get scheduleTime => $_getN(1);
+  $1776.Timestamp get scheduleTime => $_getN(1);
   @$pb.TagNumber(2)
-  set scheduleTime($1775.Timestamp v) { setField(2, v); }
+  set scheduleTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasScheduleTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearScheduleTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(1);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(1);
 
   ///  Required. The desired new lease duration, starting from now.
   ///
@@ -1620,15 +1620,15 @@ class RenewLeaseRequest extends $pb.GeneratedMessage {
   ///  The maximum lease duration is 1 week.
   ///  `lease_duration` will be truncated to the nearest second.
   @$pb.TagNumber(3)
-  $1737.Duration get leaseDuration => $_getN(2);
+  $1738.Duration get leaseDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set leaseDuration($1737.Duration v) { setField(3, v); }
+  set leaseDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLeaseDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearLeaseDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureLeaseDuration() => $_ensure(2);
+  $1738.Duration ensureLeaseDuration() => $_ensure(2);
 
   ///  The response_view specifies which subset of the
   ///  [Task][google.cloud.tasks.v2beta2.Task] will be returned.
@@ -1658,7 +1658,7 @@ class RenewLeaseRequest extends $pb.GeneratedMessage {
 class CancelLeaseRequest extends $pb.GeneratedMessage {
   factory CancelLeaseRequest({
     $core.String? name,
-    $1775.Timestamp? scheduleTime,
+    $1776.Timestamp? scheduleTime,
     $1444.Task_View? responseView,
   }) {
     final $result = create();
@@ -1679,7 +1679,7 @@ class CancelLeaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CancelLeaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
     ..e<$1444.Task_View>(3, _omitFieldNames ? '' : 'responseView', $pb.PbFieldType.OE, defaultOrMaker: $1444.Task_View.VIEW_UNSPECIFIED, valueOf: $1444.Task_View.valueOf, enumValues: $1444.Task_View.values)
     ..hasRequiredFields = false
   ;
@@ -1722,15 +1722,15 @@ class CancelLeaseRequest extends $pb.GeneratedMessage {
   /// [RenewLease][google.cloud.tasks.v2beta2.CloudTasks.RenewLease] response.
   /// This restriction is to ensure that your worker currently holds the lease.
   @$pb.TagNumber(2)
-  $1775.Timestamp get scheduleTime => $_getN(1);
+  $1776.Timestamp get scheduleTime => $_getN(1);
   @$pb.TagNumber(2)
-  set scheduleTime($1775.Timestamp v) { setField(2, v); }
+  set scheduleTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasScheduleTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearScheduleTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(1);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(1);
 
   ///  The response_view specifies which subset of the
   ///  [Task][google.cloud.tasks.v2beta2.Task] will be returned.

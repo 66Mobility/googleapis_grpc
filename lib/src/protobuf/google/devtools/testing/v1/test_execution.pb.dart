@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'test_execution.pbenum.dart';
 
 export 'test_execution.pbenum.dart';
@@ -31,7 +31,7 @@ class TestMatrix extends $pb.GeneratedMessage {
     ResultStorage? resultStorage,
     $core.String? projectId,
     TestState? state,
-    $1775.Timestamp? timestamp,
+    $1776.Timestamp? timestamp,
     ClientInfo? clientInfo,
     InvalidMatrixDetails? invalidMatrixDetails,
     $core.int? flakyTestAttempts,
@@ -96,7 +96,7 @@ class TestMatrix extends $pb.GeneratedMessage {
     ..aOM<ResultStorage>(6, _omitFieldNames ? '' : 'resultStorage', subBuilder: ResultStorage.create)
     ..aOS(7, _omitFieldNames ? '' : 'projectId')
     ..e<TestState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: TestState.TEST_STATE_UNSPECIFIED, valueOf: TestState.valueOf, enumValues: TestState.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'timestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'timestamp', subBuilder: $1776.Timestamp.create)
     ..aOM<ClientInfo>(10, _omitFieldNames ? '' : 'clientInfo', subBuilder: ClientInfo.create)
     ..e<InvalidMatrixDetails>(11, _omitFieldNames ? '' : 'invalidMatrixDetails', $pb.PbFieldType.OE, defaultOrMaker: InvalidMatrixDetails.INVALID_MATRIX_DETAILS_UNSPECIFIED, valueOf: InvalidMatrixDetails.valueOf, enumValues: InvalidMatrixDetails.values)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'flakyTestAttempts', $pb.PbFieldType.O3)
@@ -200,15 +200,15 @@ class TestMatrix extends $pb.GeneratedMessage {
 
   /// Output only. The time this test matrix was initially created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get timestamp => $_getN(7);
+  $1776.Timestamp get timestamp => $_getN(7);
   @$pb.TagNumber(9)
-  set timestamp($1775.Timestamp v) { setField(9, v); }
+  set timestamp($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTimestamp() => $_has(7);
   @$pb.TagNumber(9)
   void clearTimestamp() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureTimestamp() => $_ensure(7);
+  $1776.Timestamp ensureTimestamp() => $_ensure(7);
 
   /// Information about the client which invoked the test.
   @$pb.TagNumber(10)
@@ -360,7 +360,7 @@ class TestExecution extends $pb.GeneratedMessage {
     TestSpecification? testSpecification,
     Environment? environment,
     TestState? state,
-    $1775.Timestamp? timestamp,
+    $1776.Timestamp? timestamp,
     TestDetails? testDetails,
     $core.String? matrixId,
     $core.String? projectId,
@@ -409,7 +409,7 @@ class TestExecution extends $pb.GeneratedMessage {
     ..aOM<TestSpecification>(3, _omitFieldNames ? '' : 'testSpecification', subBuilder: TestSpecification.create)
     ..aOM<Environment>(4, _omitFieldNames ? '' : 'environment', subBuilder: Environment.create)
     ..e<TestState>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: TestState.TEST_STATE_UNSPECIFIED, valueOf: TestState.valueOf, enumValues: TestState.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'timestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'timestamp', subBuilder: $1776.Timestamp.create)
     ..aOM<TestDetails>(8, _omitFieldNames ? '' : 'testDetails', subBuilder: TestDetails.create)
     ..aOS(9, _omitFieldNames ? '' : 'matrixId')
     ..aOS(10, _omitFieldNames ? '' : 'projectId')
@@ -486,15 +486,15 @@ class TestExecution extends $pb.GeneratedMessage {
 
   /// Output only. The time this test execution was initially created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get timestamp => $_getN(4);
+  $1776.Timestamp get timestamp => $_getN(4);
   @$pb.TagNumber(7)
-  set timestamp($1775.Timestamp v) { setField(7, v); }
+  set timestamp($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTimestamp() => $_has(4);
   @$pb.TagNumber(7)
   void clearTimestamp() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureTimestamp() => $_ensure(4);
+  $1776.Timestamp ensureTimestamp() => $_ensure(4);
 
   /// Output only. Additional details about the running test.
   @$pb.TagNumber(8)
@@ -572,7 +572,7 @@ enum TestSpecification_Test {
 /// A description of how to run the test.
 class TestSpecification extends $pb.GeneratedMessage {
   factory TestSpecification({
-    $1737.Duration? testTimeout,
+    $1738.Duration? testTimeout,
     AndroidInstrumentationTest? androidInstrumentationTest,
     AndroidRoboTest? androidRoboTest,
     TestSetup? testSetup,
@@ -641,7 +641,7 @@ class TestSpecification extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestSpecification', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
     ..oo(0, [6, 14])
     ..oo(1, [2, 3, 9, 13, 15, 17])
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'testTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'testTimeout', subBuilder: $1738.Duration.create)
     ..aOM<AndroidInstrumentationTest>(2, _omitFieldNames ? '' : 'androidInstrumentationTest', subBuilder: AndroidInstrumentationTest.create)
     ..aOM<AndroidRoboTest>(3, _omitFieldNames ? '' : 'androidRoboTest', subBuilder: AndroidRoboTest.create)
     ..aOM<TestSetup>(6, _omitFieldNames ? '' : 'testSetup', subBuilder: TestSetup.create)
@@ -686,15 +686,15 @@ class TestSpecification extends $pb.GeneratedMessage {
   /// automatically cancelled.
   /// The default value is 5 min.
   @$pb.TagNumber(1)
-  $1737.Duration get testTimeout => $_getN(0);
+  $1738.Duration get testTimeout => $_getN(0);
   @$pb.TagNumber(1)
-  set testTimeout($1737.Duration v) { setField(1, v); }
+  set testTimeout($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTestTimeout() => $_has(0);
   @$pb.TagNumber(1)
   void clearTestTimeout() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTestTimeout() => $_ensure(0);
+  $1738.Duration ensureTestTimeout() => $_ensure(0);
 
   /// An Android instrumentation test.
   @$pb.TagNumber(2)
@@ -2749,7 +2749,7 @@ class RoboStartingIntent extends $pb.GeneratedMessage {
   factory RoboStartingIntent({
     LauncherActivityIntent? launcherActivity,
     StartActivityIntent? startActivity,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     NoActivityIntent? noActivity,
   }) {
     final $result = create();
@@ -2781,7 +2781,7 @@ class RoboStartingIntent extends $pb.GeneratedMessage {
     ..oo(0, [1, 2, 4])
     ..aOM<LauncherActivityIntent>(1, _omitFieldNames ? '' : 'launcherActivity', subBuilder: LauncherActivityIntent.create)
     ..aOM<StartActivityIntent>(2, _omitFieldNames ? '' : 'startActivity', subBuilder: StartActivityIntent.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOM<NoActivityIntent>(4, _omitFieldNames ? '' : 'noActivity', subBuilder: NoActivityIntent.create)
     ..hasRequiredFields = false
   ;
@@ -2836,15 +2836,15 @@ class RoboStartingIntent extends $pb.GeneratedMessage {
 
   /// Timeout in seconds for each intent.
   @$pb.TagNumber(3)
-  $1737.Duration get timeout => $_getN(2);
+  $1738.Duration get timeout => $_getN(2);
   @$pb.TagNumber(3)
-  set timeout($1737.Duration v) { setField(3, v); }
+  set timeout($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(3)
   void clearTimeout() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTimeout() => $_ensure(2);
+  $1738.Duration ensureTimeout() => $_ensure(2);
 
   /// Skips the starting activity
   @$pb.TagNumber(4)
@@ -4573,7 +4573,7 @@ class TestTargetsForShard extends $pb.GeneratedMessage {
 /// Shards test based on previous test case timing records.
 class SmartSharding extends $pb.GeneratedMessage {
   factory SmartSharding({
-    $1737.Duration? targetedShardDuration,
+    $1738.Duration? targetedShardDuration,
   }) {
     final $result = create();
     if (targetedShardDuration != null) {
@@ -4586,7 +4586,7 @@ class SmartSharding extends $pb.GeneratedMessage {
   factory SmartSharding.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SmartSharding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'targetedShardDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'targetedShardDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4651,15 +4651,15 @@ class SmartSharding extends $pb.GeneratedMessage {
   ///  case for per shard, the number of shards will not exceed the number of test
   ///  cases. Each shard created counts toward daily test quota.
   @$pb.TagNumber(1)
-  $1737.Duration get targetedShardDuration => $_getN(0);
+  $1738.Duration get targetedShardDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set targetedShardDuration($1737.Duration v) { setField(1, v); }
+  set targetedShardDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTargetedShardDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearTargetedShardDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTargetedShardDuration() => $_ensure(0);
+  $1738.Duration ensureTargetedShardDuration() => $_ensure(0);
 }
 
 /// Output only. Details about the shard.
@@ -4668,7 +4668,7 @@ class Shard extends $pb.GeneratedMessage {
     $core.int? shardIndex,
     $core.int? numShards,
     TestTargetsForShard? testTargetsForShard,
-    $1737.Duration? estimatedShardDuration,
+    $1738.Duration? estimatedShardDuration,
   }) {
     final $result = create();
     if (shardIndex != null) {
@@ -4693,7 +4693,7 @@ class Shard extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'shardIndex', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'numShards', $pb.PbFieldType.O3)
     ..aOM<TestTargetsForShard>(3, _omitFieldNames ? '' : 'testTargetsForShard', subBuilder: TestTargetsForShard.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'estimatedShardDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'estimatedShardDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4753,15 +4753,15 @@ class Shard extends $pb.GeneratedMessage {
   /// Output only. The estimated shard duration based on previous test case
   /// timing records, if available.
   @$pb.TagNumber(4)
-  $1737.Duration get estimatedShardDuration => $_getN(3);
+  $1738.Duration get estimatedShardDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set estimatedShardDuration($1737.Duration v) { setField(4, v); }
+  set estimatedShardDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEstimatedShardDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearEstimatedShardDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureEstimatedShardDuration() => $_ensure(3);
+  $1738.Duration ensureEstimatedShardDuration() => $_ensure(3);
 }
 
 /// Request to submit a matrix of tests for execution.

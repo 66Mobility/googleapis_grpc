@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'mfa_info.pb.dart' as $4554;
+import 'mfa_info.pb.dart' as $4556;
 
 enum FinalizeMfaEnrollmentRequest_VerificationInfo {
   phoneVerificationInfo, 
@@ -25,7 +25,7 @@ class FinalizeMfaEnrollmentRequest extends $pb.GeneratedMessage {
   factory FinalizeMfaEnrollmentRequest({
     $core.String? idToken,
     $core.String? displayName,
-    $4554.FinalizeMfaPhoneRequestInfo? phoneVerificationInfo,
+    $4556.FinalizeMfaPhoneRequestInfo? phoneVerificationInfo,
     $core.String? tenantId,
   }) {
     final $result = create();
@@ -55,7 +55,7 @@ class FinalizeMfaEnrollmentRequest extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'idToken')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4554.FinalizeMfaPhoneRequestInfo>(4, _omitFieldNames ? '' : 'phoneVerificationInfo', subBuilder: $4554.FinalizeMfaPhoneRequestInfo.create)
+    ..aOM<$4556.FinalizeMfaPhoneRequestInfo>(4, _omitFieldNames ? '' : 'phoneVerificationInfo', subBuilder: $4556.FinalizeMfaPhoneRequestInfo.create)
     ..aOS(5, _omitFieldNames ? '' : 'tenantId')
     ..hasRequiredFields = false
   ;
@@ -107,15 +107,15 @@ class FinalizeMfaEnrollmentRequest extends $pb.GeneratedMessage {
 
   /// Verification info to authorize sending an SMS for phone verification.
   @$pb.TagNumber(4)
-  $4554.FinalizeMfaPhoneRequestInfo get phoneVerificationInfo => $_getN(2);
+  $4556.FinalizeMfaPhoneRequestInfo get phoneVerificationInfo => $_getN(2);
   @$pb.TagNumber(4)
-  set phoneVerificationInfo($4554.FinalizeMfaPhoneRequestInfo v) { setField(4, v); }
+  set phoneVerificationInfo($4556.FinalizeMfaPhoneRequestInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPhoneVerificationInfo() => $_has(2);
   @$pb.TagNumber(4)
   void clearPhoneVerificationInfo() => clearField(4);
   @$pb.TagNumber(4)
-  $4554.FinalizeMfaPhoneRequestInfo ensurePhoneVerificationInfo() => $_ensure(2);
+  $4556.FinalizeMfaPhoneRequestInfo ensurePhoneVerificationInfo() => $_ensure(2);
 
   /// The ID of the Identity Platform tenant that the user enrolling MFA belongs
   /// to. If not set, the user belongs to the default Identity Platform project.
@@ -139,7 +139,7 @@ class FinalizeMfaEnrollmentResponse extends $pb.GeneratedMessage {
   factory FinalizeMfaEnrollmentResponse({
     $core.String? idToken,
     $core.String? refreshToken,
-    $4554.FinalizeMfaPhoneResponseInfo? phoneAuthInfo,
+    $4556.FinalizeMfaPhoneResponseInfo? phoneAuthInfo,
   }) {
     final $result = create();
     if (idToken != null) {
@@ -165,7 +165,7 @@ class FinalizeMfaEnrollmentResponse extends $pb.GeneratedMessage {
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'idToken')
     ..aOS(2, _omitFieldNames ? '' : 'refreshToken')
-    ..aOM<$4554.FinalizeMfaPhoneResponseInfo>(3, _omitFieldNames ? '' : 'phoneAuthInfo', subBuilder: $4554.FinalizeMfaPhoneResponseInfo.create)
+    ..aOM<$4556.FinalizeMfaPhoneResponseInfo>(3, _omitFieldNames ? '' : 'phoneAuthInfo', subBuilder: $4556.FinalizeMfaPhoneResponseInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -215,15 +215,15 @@ class FinalizeMfaEnrollmentResponse extends $pb.GeneratedMessage {
 
   /// Auxiliary auth info specific to phone auth.
   @$pb.TagNumber(3)
-  $4554.FinalizeMfaPhoneResponseInfo get phoneAuthInfo => $_getN(2);
+  $4556.FinalizeMfaPhoneResponseInfo get phoneAuthInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set phoneAuthInfo($4554.FinalizeMfaPhoneResponseInfo v) { setField(3, v); }
+  set phoneAuthInfo($4556.FinalizeMfaPhoneResponseInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPhoneAuthInfo() => $_has(2);
   @$pb.TagNumber(3)
   void clearPhoneAuthInfo() => clearField(3);
   @$pb.TagNumber(3)
-  $4554.FinalizeMfaPhoneResponseInfo ensurePhoneAuthInfo() => $_ensure(2);
+  $4556.FinalizeMfaPhoneResponseInfo ensurePhoneAuthInfo() => $_ensure(2);
 }
 
 enum StartMfaEnrollmentRequest_EnrollmentInfo {
@@ -235,7 +235,7 @@ enum StartMfaEnrollmentRequest_EnrollmentInfo {
 class StartMfaEnrollmentRequest extends $pb.GeneratedMessage {
   factory StartMfaEnrollmentRequest({
     $core.String? idToken,
-    $4554.StartMfaPhoneRequestInfo? phoneEnrollmentInfo,
+    $4556.StartMfaPhoneRequestInfo? phoneEnrollmentInfo,
     $core.String? tenantId,
   }) {
     final $result = create();
@@ -261,7 +261,7 @@ class StartMfaEnrollmentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartMfaEnrollmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.identitytoolkit.v2'), createEmptyInstance: create)
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'idToken')
-    ..aOM<$4554.StartMfaPhoneRequestInfo>(3, _omitFieldNames ? '' : 'phoneEnrollmentInfo', subBuilder: $4554.StartMfaPhoneRequestInfo.create)
+    ..aOM<$4556.StartMfaPhoneRequestInfo>(3, _omitFieldNames ? '' : 'phoneEnrollmentInfo', subBuilder: $4556.StartMfaPhoneRequestInfo.create)
     ..aOS(4, _omitFieldNames ? '' : 'tenantId')
     ..hasRequiredFields = false
   ;
@@ -302,15 +302,15 @@ class StartMfaEnrollmentRequest extends $pb.GeneratedMessage {
 
   /// Verification info to authorize sending an SMS for phone verification.
   @$pb.TagNumber(3)
-  $4554.StartMfaPhoneRequestInfo get phoneEnrollmentInfo => $_getN(1);
+  $4556.StartMfaPhoneRequestInfo get phoneEnrollmentInfo => $_getN(1);
   @$pb.TagNumber(3)
-  set phoneEnrollmentInfo($4554.StartMfaPhoneRequestInfo v) { setField(3, v); }
+  set phoneEnrollmentInfo($4556.StartMfaPhoneRequestInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPhoneEnrollmentInfo() => $_has(1);
   @$pb.TagNumber(3)
   void clearPhoneEnrollmentInfo() => clearField(3);
   @$pb.TagNumber(3)
-  $4554.StartMfaPhoneRequestInfo ensurePhoneEnrollmentInfo() => $_ensure(1);
+  $4556.StartMfaPhoneRequestInfo ensurePhoneEnrollmentInfo() => $_ensure(1);
 
   /// The ID of the Identity Platform tenant that the user enrolling MFA belongs
   /// to. If not set, the user belongs to the default Identity Platform project.
@@ -332,7 +332,7 @@ enum StartMfaEnrollmentResponse_EnrollmentResponse {
 /// StartMfaEnrollment response.
 class StartMfaEnrollmentResponse extends $pb.GeneratedMessage {
   factory StartMfaEnrollmentResponse({
-    $4554.StartMfaPhoneResponseInfo? phoneSessionInfo,
+    $4556.StartMfaPhoneResponseInfo? phoneSessionInfo,
   }) {
     final $result = create();
     if (phoneSessionInfo != null) {
@@ -350,7 +350,7 @@ class StartMfaEnrollmentResponse extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartMfaEnrollmentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.identitytoolkit.v2'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$4554.StartMfaPhoneResponseInfo>(1, _omitFieldNames ? '' : 'phoneSessionInfo', subBuilder: $4554.StartMfaPhoneResponseInfo.create)
+    ..aOM<$4556.StartMfaPhoneResponseInfo>(1, _omitFieldNames ? '' : 'phoneSessionInfo', subBuilder: $4556.StartMfaPhoneResponseInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -380,15 +380,15 @@ class StartMfaEnrollmentResponse extends $pb.GeneratedMessage {
 
   /// Verification info to authorize sending an SMS for phone verification.
   @$pb.TagNumber(1)
-  $4554.StartMfaPhoneResponseInfo get phoneSessionInfo => $_getN(0);
+  $4556.StartMfaPhoneResponseInfo get phoneSessionInfo => $_getN(0);
   @$pb.TagNumber(1)
-  set phoneSessionInfo($4554.StartMfaPhoneResponseInfo v) { setField(1, v); }
+  set phoneSessionInfo($4556.StartMfaPhoneResponseInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPhoneSessionInfo() => $_has(0);
   @$pb.TagNumber(1)
   void clearPhoneSessionInfo() => clearField(1);
   @$pb.TagNumber(1)
-  $4554.StartMfaPhoneResponseInfo ensurePhoneSessionInfo() => $_ensure(0);
+  $4556.StartMfaPhoneResponseInfo ensurePhoneSessionInfo() => $_ensure(0);
 }
 
 /// Withdraws MFA.

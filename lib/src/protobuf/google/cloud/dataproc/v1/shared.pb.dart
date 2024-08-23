@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'shared.pbenum.dart';
 
 export 'shared.pbenum.dart';
@@ -233,8 +233,8 @@ class ExecutionConfig extends $pb.GeneratedMessage {
     $core.String? subnetworkUri,
     $core.Iterable<$core.String>? networkTags,
     $core.String? kmsKey,
-    $1737.Duration? idleTtl,
-    $1737.Duration? ttl,
+    $1738.Duration? idleTtl,
+    $1738.Duration? ttl,
     $core.String? stagingBucket,
   }) {
     final $result = create();
@@ -280,8 +280,8 @@ class ExecutionConfig extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'subnetworkUri')
     ..pPS(6, _omitFieldNames ? '' : 'networkTags')
     ..aOS(7, _omitFieldNames ? '' : 'kmsKey')
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'idleTtl', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(9, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'idleTtl', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(9, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..aOS(10, _omitFieldNames ? '' : 'stagingBucket')
     ..hasRequiredFields = false
   ;
@@ -365,15 +365,15 @@ class ExecutionConfig extends $pb.GeneratedMessage {
   /// terminated when it has been idle for `idle_ttl` or when `ttl` has been
   /// exceeded, whichever occurs first.
   @$pb.TagNumber(8)
-  $1737.Duration get idleTtl => $_getN(5);
+  $1738.Duration get idleTtl => $_getN(5);
   @$pb.TagNumber(8)
-  set idleTtl($1737.Duration v) { setField(8, v); }
+  set idleTtl($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasIdleTtl() => $_has(5);
   @$pb.TagNumber(8)
   void clearIdleTtl() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureIdleTtl() => $_ensure(5);
+  $1738.Duration ensureIdleTtl() => $_ensure(5);
 
   /// Optional. The duration after which the workload will be terminated,
   /// specified as the JSON representation for
@@ -390,15 +390,15 @@ class ExecutionConfig extends $pb.GeneratedMessage {
   /// been idle for `idle_ttl` or when `ttl` has been exceeded, whichever occurs
   /// first.
   @$pb.TagNumber(9)
-  $1737.Duration get ttl => $_getN(6);
+  $1738.Duration get ttl => $_getN(6);
   @$pb.TagNumber(9)
-  set ttl($1737.Duration v) { setField(9, v); }
+  set ttl($1738.Duration v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTtl() => $_has(6);
   @$pb.TagNumber(9)
   void clearTtl() => clearField(9);
   @$pb.TagNumber(9)
-  $1737.Duration ensureTtl() => $_ensure(6);
+  $1738.Duration ensureTtl() => $_ensure(6);
 
   /// Optional. A Cloud Storage bucket used to stage workload dependencies,
   /// config files, and store workload output and other ephemeral data, such as
@@ -779,7 +779,7 @@ class UsageSnapshot extends $pb.GeneratedMessage {
   factory UsageSnapshot({
     $fixnum.Int64? milliDcu,
     $fixnum.Int64? shuffleStorageGb,
-    $1775.Timestamp? snapshotTime,
+    $1776.Timestamp? snapshotTime,
     $fixnum.Int64? milliDcuPremium,
     $fixnum.Int64? shuffleStorageGbPremium,
     $fixnum.Int64? milliAccelerator,
@@ -816,7 +816,7 @@ class UsageSnapshot extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageSnapshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'milliDcu')
     ..aInt64(2, _omitFieldNames ? '' : 'shuffleStorageGb')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(4, _omitFieldNames ? '' : 'milliDcuPremium')
     ..aInt64(5, _omitFieldNames ? '' : 'shuffleStorageGbPremium')
     ..aInt64(6, _omitFieldNames ? '' : 'milliAccelerator')
@@ -870,15 +870,15 @@ class UsageSnapshot extends $pb.GeneratedMessage {
 
   /// Optional. The timestamp of the usage snapshot.
   @$pb.TagNumber(3)
-  $1775.Timestamp get snapshotTime => $_getN(2);
+  $1776.Timestamp get snapshotTime => $_getN(2);
   @$pb.TagNumber(3)
-  set snapshotTime($1775.Timestamp v) { setField(3, v); }
+  set snapshotTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSnapshotTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearSnapshotTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureSnapshotTime() => $_ensure(2);
+  $1776.Timestamp ensureSnapshotTime() => $_ensure(2);
 
   /// Optional. Milli (one-thousandth) Dataproc Compute Units (DCUs) charged at
   /// premium tier (see [Dataproc Serverless pricing]

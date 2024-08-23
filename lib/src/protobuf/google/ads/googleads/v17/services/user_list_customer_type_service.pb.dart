@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/user_list_customer_type.pb.dart' as $3954;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/user_list_customer_type.pb.dart' as $3955;
 
 /// Request message for
 /// [UserListCustomerTypeService.MutateUserListCustomerTypes][google.ads.googleads.v17.services.UserListCustomerTypeService.MutateUserListCustomerTypes].
@@ -123,7 +123,7 @@ enum UserListCustomerTypeOperation_Operation {
 /// A single mutate operation on the user list customer type.
 class UserListCustomerTypeOperation extends $pb.GeneratedMessage {
   factory UserListCustomerTypeOperation({
-    $3954.UserListCustomerType? create_1,
+    $3955.UserListCustomerType? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -146,7 +146,7 @@ class UserListCustomerTypeOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserListCustomerTypeOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3954.UserListCustomerType>(1, _omitFieldNames ? '' : 'create', subBuilder: $3954.UserListCustomerType.create)
+    ..aOM<$3955.UserListCustomerType>(1, _omitFieldNames ? '' : 'create', subBuilder: $3955.UserListCustomerType.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -178,15 +178,15 @@ class UserListCustomerTypeOperation extends $pb.GeneratedMessage {
   /// Attach a user list customer type to a user list.
   /// No resource name is expected for the new user list customer type.
   @$pb.TagNumber(1)
-  $3954.UserListCustomerType get create_1 => $_getN(0);
+  $3955.UserListCustomerType get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3954.UserListCustomerType v) { setField(1, v); }
+  set create_1($3955.UserListCustomerType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3954.UserListCustomerType ensureCreate_1() => $_ensure(0);
+  $3955.UserListCustomerType ensureCreate_1() => $_ensure(0);
 
   ///  Remove an existing user list customer type.
   ///  A resource name for the removed user list customer type is
@@ -206,7 +206,7 @@ class UserListCustomerTypeOperation extends $pb.GeneratedMessage {
 /// Response message for a user list customer type mutate.
 class MutateUserListCustomerTypesResponse extends $pb.GeneratedMessage {
   factory MutateUserListCustomerTypesResponse({
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     $core.Iterable<MutateUserListCustomerTypeResult>? results,
   }) {
     final $result = create();
@@ -223,7 +223,7 @@ class MutateUserListCustomerTypesResponse extends $pb.GeneratedMessage {
   factory MutateUserListCustomerTypesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateUserListCustomerTypesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..pc<MutateUserListCustomerTypeResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateUserListCustomerTypeResult.create)
     ..hasRequiredFields = false
   ;
@@ -254,15 +254,15 @@ class MutateUserListCustomerTypesResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// All results for the mutate.
   @$pb.TagNumber(2)

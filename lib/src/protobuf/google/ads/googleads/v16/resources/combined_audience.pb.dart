@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/combined_audience_status.pbenum.dart' as $2942;
+import '../enums/combined_audience_status.pbenum.dart' as $2943;
 
 /// Describe a resource for combined audiences which includes different
 /// audiences.
@@ -22,7 +22,7 @@ class CombinedAudience extends $pb.GeneratedMessage {
   factory CombinedAudience({
     $core.String? resourceName,
     $fixnum.Int64? id,
-    $2942.CombinedAudienceStatusEnum_CombinedAudienceStatus? status,
+    $2943.CombinedAudienceStatusEnum_CombinedAudienceStatus? status,
     $core.String? name,
     $core.String? description,
   }) {
@@ -51,7 +51,7 @@ class CombinedAudience extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CombinedAudience', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
-    ..e<$2942.CombinedAudienceStatusEnum_CombinedAudienceStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2942.CombinedAudienceStatusEnum_CombinedAudienceStatus.UNSPECIFIED, valueOf: $2942.CombinedAudienceStatusEnum_CombinedAudienceStatus.valueOf, enumValues: $2942.CombinedAudienceStatusEnum_CombinedAudienceStatus.values)
+    ..e<$2943.CombinedAudienceStatusEnum_CombinedAudienceStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2943.CombinedAudienceStatusEnum_CombinedAudienceStatus.UNSPECIFIED, valueOf: $2943.CombinedAudienceStatusEnum_CombinedAudienceStatus.valueOf, enumValues: $2943.CombinedAudienceStatusEnum_CombinedAudienceStatus.values)
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
@@ -104,9 +104,9 @@ class CombinedAudience extends $pb.GeneratedMessage {
   /// Output only. Status of this combined audience. Indicates whether the
   /// combined audience is enabled or removed.
   @$pb.TagNumber(3)
-  $2942.CombinedAudienceStatusEnum_CombinedAudienceStatus get status => $_getN(2);
+  $2943.CombinedAudienceStatusEnum_CombinedAudienceStatus get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($2942.CombinedAudienceStatusEnum_CombinedAudienceStatus v) { setField(3, v); }
+  set status($2943.CombinedAudienceStatusEnum_CombinedAudienceStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)

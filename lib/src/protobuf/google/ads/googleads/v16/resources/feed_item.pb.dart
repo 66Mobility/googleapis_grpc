@@ -14,27 +14,27 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/custom_parameter.pb.dart' as $2591;
-import '../common/feed_common.pb.dart' as $2569;
-import '../common/policy.pb.dart' as $2525;
-import '../enums/feed_item_quality_approval_status.pbenum.dart' as $2916;
-import '../enums/feed_item_quality_disapproval_reason.pbenum.dart' as $2917;
-import '../enums/feed_item_status.pbenum.dart' as $2914;
-import '../enums/feed_item_validation_status.pbenum.dart' as $2915;
-import '../enums/geo_targeting_restriction.pbenum.dart' as $2913;
-import '../enums/placeholder_type.pbenum.dart' as $2612;
-import '../enums/policy_approval_status.pbenum.dart' as $2527;
-import '../enums/policy_review_status.pbenum.dart' as $2526;
-import '../errors/feed_item_validation_error.pbenum.dart' as $2730;
+import '../common/custom_parameter.pb.dart' as $2592;
+import '../common/feed_common.pb.dart' as $2570;
+import '../common/policy.pb.dart' as $2526;
+import '../enums/feed_item_quality_approval_status.pbenum.dart' as $2917;
+import '../enums/feed_item_quality_disapproval_reason.pbenum.dart' as $2918;
+import '../enums/feed_item_status.pbenum.dart' as $2915;
+import '../enums/feed_item_validation_status.pbenum.dart' as $2916;
+import '../enums/geo_targeting_restriction.pbenum.dart' as $2914;
+import '../enums/placeholder_type.pbenum.dart' as $2613;
+import '../enums/policy_approval_status.pbenum.dart' as $2528;
+import '../enums/policy_review_status.pbenum.dart' as $2527;
+import '../errors/feed_item_validation_error.pbenum.dart' as $2731;
 
 /// A feed item.
 class FeedItem extends $pb.GeneratedMessage {
   factory FeedItem({
     $core.String? resourceName,
     $core.Iterable<FeedItemAttributeValue>? attributeValues,
-    $2913.GeoTargetingRestrictionEnum_GeoTargetingRestriction? geoTargetingRestriction,
-    $core.Iterable<$2591.CustomParameter>? urlCustomParameters,
-    $2914.FeedItemStatusEnum_FeedItemStatus? status,
+    $2914.GeoTargetingRestrictionEnum_GeoTargetingRestriction? geoTargetingRestriction,
+    $core.Iterable<$2592.CustomParameter>? urlCustomParameters,
+    $2915.FeedItemStatusEnum_FeedItemStatus? status,
     $core.Iterable<FeedItemPlaceholderPolicyInfo>? policyInfos,
     $core.String? feed,
     $fixnum.Int64? id,
@@ -81,9 +81,9 @@ class FeedItem extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..pc<FeedItemAttributeValue>(6, _omitFieldNames ? '' : 'attributeValues', $pb.PbFieldType.PM, subBuilder: FeedItemAttributeValue.create)
-    ..e<$2913.GeoTargetingRestrictionEnum_GeoTargetingRestriction>(7, _omitFieldNames ? '' : 'geoTargetingRestriction', $pb.PbFieldType.OE, defaultOrMaker: $2913.GeoTargetingRestrictionEnum_GeoTargetingRestriction.UNSPECIFIED, valueOf: $2913.GeoTargetingRestrictionEnum_GeoTargetingRestriction.valueOf, enumValues: $2913.GeoTargetingRestrictionEnum_GeoTargetingRestriction.values)
-    ..pc<$2591.CustomParameter>(8, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $2591.CustomParameter.create)
-    ..e<$2914.FeedItemStatusEnum_FeedItemStatus>(9, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2914.FeedItemStatusEnum_FeedItemStatus.UNSPECIFIED, valueOf: $2914.FeedItemStatusEnum_FeedItemStatus.valueOf, enumValues: $2914.FeedItemStatusEnum_FeedItemStatus.values)
+    ..e<$2914.GeoTargetingRestrictionEnum_GeoTargetingRestriction>(7, _omitFieldNames ? '' : 'geoTargetingRestriction', $pb.PbFieldType.OE, defaultOrMaker: $2914.GeoTargetingRestrictionEnum_GeoTargetingRestriction.UNSPECIFIED, valueOf: $2914.GeoTargetingRestrictionEnum_GeoTargetingRestriction.valueOf, enumValues: $2914.GeoTargetingRestrictionEnum_GeoTargetingRestriction.values)
+    ..pc<$2592.CustomParameter>(8, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $2592.CustomParameter.create)
+    ..e<$2915.FeedItemStatusEnum_FeedItemStatus>(9, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2915.FeedItemStatusEnum_FeedItemStatus.UNSPECIFIED, valueOf: $2915.FeedItemStatusEnum_FeedItemStatus.valueOf, enumValues: $2915.FeedItemStatusEnum_FeedItemStatus.values)
     ..pc<FeedItemPlaceholderPolicyInfo>(10, _omitFieldNames ? '' : 'policyInfos', $pb.PbFieldType.PM, subBuilder: FeedItemPlaceholderPolicyInfo.create)
     ..aOS(11, _omitFieldNames ? '' : 'feed')
     ..aInt64(12, _omitFieldNames ? '' : 'id')
@@ -133,9 +133,9 @@ class FeedItem extends $pb.GeneratedMessage {
   /// Geo targeting restriction specifies the type of location that can be used
   /// for targeting.
   @$pb.TagNumber(7)
-  $2913.GeoTargetingRestrictionEnum_GeoTargetingRestriction get geoTargetingRestriction => $_getN(2);
+  $2914.GeoTargetingRestrictionEnum_GeoTargetingRestriction get geoTargetingRestriction => $_getN(2);
   @$pb.TagNumber(7)
-  set geoTargetingRestriction($2913.GeoTargetingRestrictionEnum_GeoTargetingRestriction v) { setField(7, v); }
+  set geoTargetingRestriction($2914.GeoTargetingRestrictionEnum_GeoTargetingRestriction v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGeoTargetingRestriction() => $_has(2);
   @$pb.TagNumber(7)
@@ -144,14 +144,14 @@ class FeedItem extends $pb.GeneratedMessage {
   /// The list of mappings used to substitute custom parameter tags in a
   /// `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
   @$pb.TagNumber(8)
-  $core.List<$2591.CustomParameter> get urlCustomParameters => $_getList(3);
+  $core.List<$2592.CustomParameter> get urlCustomParameters => $_getList(3);
 
   /// Output only. Status of the feed item.
   /// This field is read-only.
   @$pb.TagNumber(9)
-  $2914.FeedItemStatusEnum_FeedItemStatus get status => $_getN(4);
+  $2915.FeedItemStatusEnum_FeedItemStatus get status => $_getN(4);
   @$pb.TagNumber(9)
-  set status($2914.FeedItemStatusEnum_FeedItemStatus v) { setField(9, v); }
+  set status($2915.FeedItemStatusEnum_FeedItemStatus v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(9)
@@ -216,7 +216,7 @@ class FeedItem extends $pb.GeneratedMessage {
 /// A feed item attribute value.
 class FeedItemAttributeValue extends $pb.GeneratedMessage {
   factory FeedItemAttributeValue({
-    $2569.Money? priceValue,
+    $2570.Money? priceValue,
     $fixnum.Int64? feedAttributeId,
     $fixnum.Int64? integerValue,
     $core.bool? booleanValue,
@@ -265,7 +265,7 @@ class FeedItemAttributeValue extends $pb.GeneratedMessage {
   factory FeedItemAttributeValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItemAttributeValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..aOM<$2569.Money>(6, _omitFieldNames ? '' : 'priceValue', subBuilder: $2569.Money.create)
+    ..aOM<$2570.Money>(6, _omitFieldNames ? '' : 'priceValue', subBuilder: $2570.Money.create)
     ..aInt64(11, _omitFieldNames ? '' : 'feedAttributeId')
     ..aInt64(12, _omitFieldNames ? '' : 'integerValue')
     ..aOB(13, _omitFieldNames ? '' : 'booleanValue')
@@ -302,15 +302,15 @@ class FeedItemAttributeValue extends $pb.GeneratedMessage {
   /// Price value. Should be set if feed_attribute_id refers to a feed attribute
   /// of type PRICE.
   @$pb.TagNumber(6)
-  $2569.Money get priceValue => $_getN(0);
+  $2570.Money get priceValue => $_getN(0);
   @$pb.TagNumber(6)
-  set priceValue($2569.Money v) { setField(6, v); }
+  set priceValue($2570.Money v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPriceValue() => $_has(0);
   @$pb.TagNumber(6)
   void clearPriceValue() => clearField(6);
   @$pb.TagNumber(6)
-  $2569.Money ensurePriceValue() => $_ensure(0);
+  $2570.Money ensurePriceValue() => $_ensure(0);
 
   /// Id of the feed attribute for which the value is associated with.
   @$pb.TagNumber(11)
@@ -401,14 +401,14 @@ class FeedItemAttributeValue extends $pb.GeneratedMessage {
 /// specified placeholder type.
 class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
   factory FeedItemPlaceholderPolicyInfo({
-    $2526.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
-    $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
-    $core.Iterable<$2525.PolicyTopicEntry>? policyTopicEntries,
-    $2915.FeedItemValidationStatusEnum_FeedItemValidationStatus? validationStatus,
+    $2527.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
+    $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
+    $core.Iterable<$2526.PolicyTopicEntry>? policyTopicEntries,
+    $2916.FeedItemValidationStatusEnum_FeedItemValidationStatus? validationStatus,
     $core.Iterable<FeedItemValidationError>? validationErrors,
-    $2916.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus? qualityApprovalStatus,
-    $core.Iterable<$2917.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason>? qualityDisapprovalReasons,
-    $2612.PlaceholderTypeEnum_PlaceholderType? placeholderTypeEnum,
+    $2917.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus? qualityApprovalStatus,
+    $core.Iterable<$2918.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason>? qualityDisapprovalReasons,
+    $2613.PlaceholderTypeEnum_PlaceholderType? placeholderTypeEnum,
     $core.String? feedMappingResourceName,
   }) {
     final $result = create();
@@ -446,14 +446,14 @@ class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
   factory FeedItemPlaceholderPolicyInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItemPlaceholderPolicyInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..e<$2526.PolicyReviewStatusEnum_PolicyReviewStatus>(3, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.values)
-    ..e<$2527.PolicyApprovalStatusEnum_PolicyApprovalStatus>(4, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
-    ..pc<$2525.PolicyTopicEntry>(5, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $2525.PolicyTopicEntry.create)
-    ..e<$2915.FeedItemValidationStatusEnum_FeedItemValidationStatus>(6, _omitFieldNames ? '' : 'validationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2915.FeedItemValidationStatusEnum_FeedItemValidationStatus.UNSPECIFIED, valueOf: $2915.FeedItemValidationStatusEnum_FeedItemValidationStatus.valueOf, enumValues: $2915.FeedItemValidationStatusEnum_FeedItemValidationStatus.values)
+    ..e<$2527.PolicyReviewStatusEnum_PolicyReviewStatus>(3, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.values)
+    ..e<$2528.PolicyApprovalStatusEnum_PolicyApprovalStatus>(4, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
+    ..pc<$2526.PolicyTopicEntry>(5, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $2526.PolicyTopicEntry.create)
+    ..e<$2916.FeedItemValidationStatusEnum_FeedItemValidationStatus>(6, _omitFieldNames ? '' : 'validationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2916.FeedItemValidationStatusEnum_FeedItemValidationStatus.UNSPECIFIED, valueOf: $2916.FeedItemValidationStatusEnum_FeedItemValidationStatus.valueOf, enumValues: $2916.FeedItemValidationStatusEnum_FeedItemValidationStatus.values)
     ..pc<FeedItemValidationError>(7, _omitFieldNames ? '' : 'validationErrors', $pb.PbFieldType.PM, subBuilder: FeedItemValidationError.create)
-    ..e<$2916.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus>(8, _omitFieldNames ? '' : 'qualityApprovalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2916.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus.UNSPECIFIED, valueOf: $2916.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus.valueOf, enumValues: $2916.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus.values)
-    ..pc<$2917.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason>(9, _omitFieldNames ? '' : 'qualityDisapprovalReasons', $pb.PbFieldType.KE, valueOf: $2917.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason.valueOf, enumValues: $2917.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason.values, defaultEnumValue: $2917.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason.UNSPECIFIED)
-    ..e<$2612.PlaceholderTypeEnum_PlaceholderType>(10, _omitFieldNames ? '' : 'placeholderTypeEnum', $pb.PbFieldType.OE, defaultOrMaker: $2612.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $2612.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $2612.PlaceholderTypeEnum_PlaceholderType.values)
+    ..e<$2917.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus>(8, _omitFieldNames ? '' : 'qualityApprovalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2917.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus.UNSPECIFIED, valueOf: $2917.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus.valueOf, enumValues: $2917.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus.values)
+    ..pc<$2918.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason>(9, _omitFieldNames ? '' : 'qualityDisapprovalReasons', $pb.PbFieldType.KE, valueOf: $2918.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason.valueOf, enumValues: $2918.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason.values, defaultEnumValue: $2918.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason.UNSPECIFIED)
+    ..e<$2613.PlaceholderTypeEnum_PlaceholderType>(10, _omitFieldNames ? '' : 'placeholderTypeEnum', $pb.PbFieldType.OE, defaultOrMaker: $2613.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $2613.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $2613.PlaceholderTypeEnum_PlaceholderType.values)
     ..aOS(11, _omitFieldNames ? '' : 'feedMappingResourceName')
     ..hasRequiredFields = false
   ;
@@ -481,9 +481,9 @@ class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
 
   /// Output only. Where the placeholder type is in the review process.
   @$pb.TagNumber(3)
-  $2526.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(0);
+  $2527.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(0);
   @$pb.TagNumber(3)
-  set reviewStatus($2526.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(3, v); }
+  set reviewStatus($2527.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReviewStatus() => $_has(0);
   @$pb.TagNumber(3)
@@ -492,9 +492,9 @@ class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
   /// Output only. The overall approval status of the placeholder type,
   /// calculated based on the status of its individual policy topic entries.
   @$pb.TagNumber(4)
-  $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(1);
+  $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(1);
   @$pb.TagNumber(4)
-  set approvalStatus($2527.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(4, v); }
+  set approvalStatus($2528.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasApprovalStatus() => $_has(1);
   @$pb.TagNumber(4)
@@ -502,13 +502,13 @@ class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
 
   /// Output only. The list of policy findings for the placeholder type.
   @$pb.TagNumber(5)
-  $core.List<$2525.PolicyTopicEntry> get policyTopicEntries => $_getList(2);
+  $core.List<$2526.PolicyTopicEntry> get policyTopicEntries => $_getList(2);
 
   /// Output only. The validation status of the placeholder type.
   @$pb.TagNumber(6)
-  $2915.FeedItemValidationStatusEnum_FeedItemValidationStatus get validationStatus => $_getN(3);
+  $2916.FeedItemValidationStatusEnum_FeedItemValidationStatus get validationStatus => $_getN(3);
   @$pb.TagNumber(6)
-  set validationStatus($2915.FeedItemValidationStatusEnum_FeedItemValidationStatus v) { setField(6, v); }
+  set validationStatus($2916.FeedItemValidationStatusEnum_FeedItemValidationStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasValidationStatus() => $_has(3);
   @$pb.TagNumber(6)
@@ -520,9 +520,9 @@ class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
 
   /// Output only. Placeholder type quality evaluation approval status.
   @$pb.TagNumber(8)
-  $2916.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus get qualityApprovalStatus => $_getN(5);
+  $2917.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus get qualityApprovalStatus => $_getN(5);
   @$pb.TagNumber(8)
-  set qualityApprovalStatus($2916.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus v) { setField(8, v); }
+  set qualityApprovalStatus($2917.FeedItemQualityApprovalStatusEnum_FeedItemQualityApprovalStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasQualityApprovalStatus() => $_has(5);
   @$pb.TagNumber(8)
@@ -531,13 +531,13 @@ class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
   /// Output only. List of placeholder type quality evaluation disapproval
   /// reasons.
   @$pb.TagNumber(9)
-  $core.List<$2917.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason> get qualityDisapprovalReasons => $_getList(6);
+  $core.List<$2918.FeedItemQualityDisapprovalReasonEnum_FeedItemQualityDisapprovalReason> get qualityDisapprovalReasons => $_getList(6);
 
   /// Output only. The placeholder type.
   @$pb.TagNumber(10)
-  $2612.PlaceholderTypeEnum_PlaceholderType get placeholderTypeEnum => $_getN(7);
+  $2613.PlaceholderTypeEnum_PlaceholderType get placeholderTypeEnum => $_getN(7);
   @$pb.TagNumber(10)
-  set placeholderTypeEnum($2612.PlaceholderTypeEnum_PlaceholderType v) { setField(10, v); }
+  set placeholderTypeEnum($2613.PlaceholderTypeEnum_PlaceholderType v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasPlaceholderTypeEnum() => $_has(7);
   @$pb.TagNumber(10)
@@ -558,7 +558,7 @@ class FeedItemPlaceholderPolicyInfo extends $pb.GeneratedMessage {
 /// together are responsible for causing a feed item validation error.
 class FeedItemValidationError extends $pb.GeneratedMessage {
   factory FeedItemValidationError({
-    $2730.FeedItemValidationErrorEnum_FeedItemValidationError? validationError,
+    $2731.FeedItemValidationErrorEnum_FeedItemValidationError? validationError,
     $core.String? description,
     $core.Iterable<$fixnum.Int64>? feedAttributeIds,
     $core.String? extraInfo,
@@ -583,7 +583,7 @@ class FeedItemValidationError extends $pb.GeneratedMessage {
   factory FeedItemValidationError.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItemValidationError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..e<$2730.FeedItemValidationErrorEnum_FeedItemValidationError>(1, _omitFieldNames ? '' : 'validationError', $pb.PbFieldType.OE, defaultOrMaker: $2730.FeedItemValidationErrorEnum_FeedItemValidationError.UNSPECIFIED, valueOf: $2730.FeedItemValidationErrorEnum_FeedItemValidationError.valueOf, enumValues: $2730.FeedItemValidationErrorEnum_FeedItemValidationError.values)
+    ..e<$2731.FeedItemValidationErrorEnum_FeedItemValidationError>(1, _omitFieldNames ? '' : 'validationError', $pb.PbFieldType.OE, defaultOrMaker: $2731.FeedItemValidationErrorEnum_FeedItemValidationError.UNSPECIFIED, valueOf: $2731.FeedItemValidationErrorEnum_FeedItemValidationError.valueOf, enumValues: $2731.FeedItemValidationErrorEnum_FeedItemValidationError.values)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..p<$fixnum.Int64>(7, _omitFieldNames ? '' : 'feedAttributeIds', $pb.PbFieldType.K6)
     ..aOS(8, _omitFieldNames ? '' : 'extraInfo')
@@ -614,9 +614,9 @@ class FeedItemValidationError extends $pb.GeneratedMessage {
   /// Output only. Error code indicating what validation error was triggered. The
   /// description of the error can be found in the 'description' field.
   @$pb.TagNumber(1)
-  $2730.FeedItemValidationErrorEnum_FeedItemValidationError get validationError => $_getN(0);
+  $2731.FeedItemValidationErrorEnum_FeedItemValidationError get validationError => $_getN(0);
   @$pb.TagNumber(1)
-  set validationError($2730.FeedItemValidationErrorEnum_FeedItemValidationError v) { setField(1, v); }
+  set validationError($2731.FeedItemValidationErrorEnum_FeedItemValidationError v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasValidationError() => $_has(0);
   @$pb.TagNumber(1)

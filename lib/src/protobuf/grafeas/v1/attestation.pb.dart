@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $2;
+import 'common.pb.dart' as $4426;
 
 /// This submessage provides human-readable hints about the purpose of the
 /// authority. Because the name of a note acts as its resource reference, it is
@@ -199,7 +199,7 @@ class Jwt extends $pb.GeneratedMessage {
 class AttestationOccurrence extends $pb.GeneratedMessage {
   factory AttestationOccurrence({
     $core.List<$core.int>? serializedPayload,
-    $core.Iterable<$2.Signature>? signatures,
+    $core.Iterable<$4426.Signature>? signatures,
     $core.Iterable<Jwt>? jwts,
   }) {
     final $result = create();
@@ -220,7 +220,7 @@ class AttestationOccurrence extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttestationOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'serializedPayload', $pb.PbFieldType.OY)
-    ..pc<$2.Signature>(2, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $2.Signature.create)
+    ..pc<$4426.Signature>(2, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $4426.Signature.create)
     ..pc<Jwt>(3, _omitFieldNames ? '' : 'jwts', $pb.PbFieldType.PM, subBuilder: Jwt.create)
     ..hasRequiredFields = false
   ;
@@ -262,7 +262,7 @@ class AttestationOccurrence extends $pb.GeneratedMessage {
   /// `signature` verifies `serialized_payload`.  See `Signature` in common.proto
   /// for more details on signature structure and verification.
   @$pb.TagNumber(2)
-  $core.List<$2.Signature> get signatures => $_getList(1);
+  $core.List<$4426.Signature> get signatures => $_getList(1);
 
   /// One or more JWTs encoding a self-contained attestation.
   /// Each JWT encodes the payload that it verifies within the JWT itself.

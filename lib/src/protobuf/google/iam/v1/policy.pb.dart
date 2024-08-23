@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/expr.pb.dart' as $4213;
+import '../../type/expr.pb.dart' as $4214;
 import 'policy.pbenum.dart';
 
 export 'policy.pbenum.dart';
@@ -224,7 +224,7 @@ class Binding extends $pb.GeneratedMessage {
   factory Binding({
     $core.String? role,
     $core.Iterable<$core.String>? members,
-    $4213.Expr? condition,
+    $4214.Expr? condition,
   }) {
     final $result = create();
     if (role != null) {
@@ -245,7 +245,7 @@ class Binding extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Binding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'role')
     ..pPS(2, _omitFieldNames ? '' : 'members')
-    ..aOM<$4213.Expr>(3, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(3, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -339,15 +339,15 @@ class Binding extends $pb.GeneratedMessage {
   ///  [IAM
   ///  documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
   @$pb.TagNumber(3)
-  $4213.Expr get condition => $_getN(2);
+  $4214.Expr get condition => $_getN(2);
   @$pb.TagNumber(3)
-  set condition($4213.Expr v) { setField(3, v); }
+  set condition($4214.Expr v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCondition() => $_has(2);
   @$pb.TagNumber(3)
   void clearCondition() => clearField(3);
   @$pb.TagNumber(3)
-  $4213.Expr ensureCondition() => $_ensure(2);
+  $4214.Expr ensureCondition() => $_ensure(2);
 }
 
 ///  Specifies the audit configuration for a service.
@@ -607,7 +607,7 @@ class BindingDelta extends $pb.GeneratedMessage {
     BindingDelta_Action? action,
     $core.String? role,
     $core.String? member,
-    $4213.Expr? condition,
+    $4214.Expr? condition,
   }) {
     final $result = create();
     if (action != null) {
@@ -632,7 +632,7 @@ class BindingDelta extends $pb.GeneratedMessage {
     ..e<BindingDelta_Action>(1, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE, defaultOrMaker: BindingDelta_Action.ACTION_UNSPECIFIED, valueOf: BindingDelta_Action.valueOf, enumValues: BindingDelta_Action.values)
     ..aOS(2, _omitFieldNames ? '' : 'role')
     ..aOS(3, _omitFieldNames ? '' : 'member')
-    ..aOM<$4213.Expr>(4, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(4, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -694,15 +694,15 @@ class BindingDelta extends $pb.GeneratedMessage {
 
   /// The condition that is associated with this binding.
   @$pb.TagNumber(4)
-  $4213.Expr get condition => $_getN(3);
+  $4214.Expr get condition => $_getN(3);
   @$pb.TagNumber(4)
-  set condition($4213.Expr v) { setField(4, v); }
+  set condition($4214.Expr v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCondition() => $_has(3);
   @$pb.TagNumber(4)
   void clearCondition() => clearField(4);
   @$pb.TagNumber(4)
-  $4213.Expr ensureCondition() => $_ensure(3);
+  $4214.Expr ensureCondition() => $_ensure(3);
 }
 
 /// One delta entry for AuditConfig. Each individual change (only one

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/bidding_seasonality_adjustment.pb.dart' as $3080;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/bidding_seasonality_adjustment.pb.dart' as $3081;
 
 /// Request message for
 /// [BiddingSeasonalityAdjustmentService.MutateBiddingSeasonalityAdjustments][google.ads.googleads.v16.services.BiddingSeasonalityAdjustmentService.MutateBiddingSeasonalityAdjustments].
@@ -26,7 +26,7 @@ class MutateBiddingSeasonalityAdjustmentsRequest extends $pb.GeneratedMessage {
     $core.Iterable<BiddingSeasonalityAdjustmentOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateBiddingSeasonalityAdjustmentsRequest extends $pb.GeneratedMessage {
     ..pc<BiddingSeasonalityAdjustmentOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: BiddingSeasonalityAdjustmentOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -123,9 +123,9 @@ class MutateBiddingSeasonalityAdjustmentsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -142,10 +142,10 @@ enum BiddingSeasonalityAdjustmentOperation_Operation {
 /// A single operation (create, remove, update) on a seasonality adjustment.
 class BiddingSeasonalityAdjustmentOperation extends $pb.GeneratedMessage {
   factory BiddingSeasonalityAdjustmentOperation({
-    $3080.BiddingSeasonalityAdjustment? create_1,
-    $3080.BiddingSeasonalityAdjustment? update,
+    $3081.BiddingSeasonalityAdjustment? create_1,
+    $3081.BiddingSeasonalityAdjustment? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -174,10 +174,10 @@ class BiddingSeasonalityAdjustmentOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BiddingSeasonalityAdjustmentOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3080.BiddingSeasonalityAdjustment>(1, _omitFieldNames ? '' : 'create', subBuilder: $3080.BiddingSeasonalityAdjustment.create)
-    ..aOM<$3080.BiddingSeasonalityAdjustment>(2, _omitFieldNames ? '' : 'update', subBuilder: $3080.BiddingSeasonalityAdjustment.create)
+    ..aOM<$3081.BiddingSeasonalityAdjustment>(1, _omitFieldNames ? '' : 'create', subBuilder: $3081.BiddingSeasonalityAdjustment.create)
+    ..aOM<$3081.BiddingSeasonalityAdjustment>(2, _omitFieldNames ? '' : 'update', subBuilder: $3081.BiddingSeasonalityAdjustment.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -208,28 +208,28 @@ class BiddingSeasonalityAdjustmentOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new seasonality
   /// adjustment.
   @$pb.TagNumber(1)
-  $3080.BiddingSeasonalityAdjustment get create_1 => $_getN(0);
+  $3081.BiddingSeasonalityAdjustment get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3080.BiddingSeasonalityAdjustment v) { setField(1, v); }
+  set create_1($3081.BiddingSeasonalityAdjustment v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3080.BiddingSeasonalityAdjustment ensureCreate_1() => $_ensure(0);
+  $3081.BiddingSeasonalityAdjustment ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The seasonality adjustment is expected to have a valid
   /// resource name.
   @$pb.TagNumber(2)
-  $3080.BiddingSeasonalityAdjustment get update => $_getN(1);
+  $3081.BiddingSeasonalityAdjustment get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3080.BiddingSeasonalityAdjustment v) { setField(2, v); }
+  set update($3081.BiddingSeasonalityAdjustment v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3080.BiddingSeasonalityAdjustment ensureUpdate() => $_ensure(1);
+  $3081.BiddingSeasonalityAdjustment ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed seasonality adjustment
   ///  is expected, in this format:
@@ -246,22 +246,22 @@ class BiddingSeasonalityAdjustmentOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for seasonality adjustments mutate.
 class MutateBiddingSeasonalityAdjustmentsResponse extends $pb.GeneratedMessage {
   factory MutateBiddingSeasonalityAdjustmentsResponse({
     $core.Iterable<MutateBiddingSeasonalityAdjustmentsResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -278,7 +278,7 @@ class MutateBiddingSeasonalityAdjustmentsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateBiddingSeasonalityAdjustmentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateBiddingSeasonalityAdjustmentsResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateBiddingSeasonalityAdjustmentsResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -312,22 +312,22 @@ class MutateBiddingSeasonalityAdjustmentsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the seasonality adjustment mutate.
 class MutateBiddingSeasonalityAdjustmentsResult extends $pb.GeneratedMessage {
   factory MutateBiddingSeasonalityAdjustmentsResult({
     $core.String? resourceName,
-    $3080.BiddingSeasonalityAdjustment? biddingSeasonalityAdjustment,
+    $3081.BiddingSeasonalityAdjustment? biddingSeasonalityAdjustment,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -344,7 +344,7 @@ class MutateBiddingSeasonalityAdjustmentsResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateBiddingSeasonalityAdjustmentsResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3080.BiddingSeasonalityAdjustment>(2, _omitFieldNames ? '' : 'biddingSeasonalityAdjustment', subBuilder: $3080.BiddingSeasonalityAdjustment.create)
+    ..aOM<$3081.BiddingSeasonalityAdjustment>(2, _omitFieldNames ? '' : 'biddingSeasonalityAdjustment', subBuilder: $3081.BiddingSeasonalityAdjustment.create)
     ..hasRequiredFields = false
   ;
 
@@ -383,15 +383,15 @@ class MutateBiddingSeasonalityAdjustmentsResult extends $pb.GeneratedMessage {
   /// mutate. The field will only be returned when response_content_type is set
   /// to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3080.BiddingSeasonalityAdjustment get biddingSeasonalityAdjustment => $_getN(1);
+  $3081.BiddingSeasonalityAdjustment get biddingSeasonalityAdjustment => $_getN(1);
   @$pb.TagNumber(2)
-  set biddingSeasonalityAdjustment($3080.BiddingSeasonalityAdjustment v) { setField(2, v); }
+  set biddingSeasonalityAdjustment($3081.BiddingSeasonalityAdjustment v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBiddingSeasonalityAdjustment() => $_has(1);
   @$pb.TagNumber(2)
   void clearBiddingSeasonalityAdjustment() => clearField(2);
   @$pb.TagNumber(2)
-  $3080.BiddingSeasonalityAdjustment ensureBiddingSeasonalityAdjustment() => $_ensure(1);
+  $3081.BiddingSeasonalityAdjustment ensureBiddingSeasonalityAdjustment() => $_ensure(1);
 }
 
 

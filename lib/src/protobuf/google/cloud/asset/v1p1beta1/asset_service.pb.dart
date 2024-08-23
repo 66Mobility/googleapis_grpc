@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'assets.pb.dart' as $4326;
+import 'assets.pb.dart' as $4327;
 
 /// Search all resources request.
 class SearchAllResourcesRequest extends $pb.GeneratedMessage {
@@ -156,7 +156,7 @@ class SearchAllResourcesRequest extends $pb.GeneratedMessage {
 /// Search all resources response.
 class SearchAllResourcesResponse extends $pb.GeneratedMessage {
   factory SearchAllResourcesResponse({
-    $core.Iterable<$4326.StandardResourceMetadata>? results,
+    $core.Iterable<$4327.StandardResourceMetadata>? results,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -173,7 +173,7 @@ class SearchAllResourcesResponse extends $pb.GeneratedMessage {
   factory SearchAllResourcesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchAllResourcesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p1beta1'), createEmptyInstance: create)
-    ..pc<$4326.StandardResourceMetadata>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4326.StandardResourceMetadata.create)
+    ..pc<$4327.StandardResourceMetadata>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4327.StandardResourceMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -201,7 +201,7 @@ class SearchAllResourcesResponse extends $pb.GeneratedMessage {
 
   /// A list of resource that match the search query.
   @$pb.TagNumber(1)
-  $core.List<$4326.StandardResourceMetadata> get results => $_getList(0);
+  $core.List<$4327.StandardResourceMetadata> get results => $_getList(0);
 
   /// If there are more results than those appearing in this response, then
   /// `next_page_token` is included.  To get the next set of results, call this
@@ -332,7 +332,7 @@ class SearchAllIamPoliciesRequest extends $pb.GeneratedMessage {
 /// Search all IAM policies response.
 class SearchAllIamPoliciesResponse extends $pb.GeneratedMessage {
   factory SearchAllIamPoliciesResponse({
-    $core.Iterable<$4326.IamPolicySearchResult>? results,
+    $core.Iterable<$4327.IamPolicySearchResult>? results,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -349,7 +349,7 @@ class SearchAllIamPoliciesResponse extends $pb.GeneratedMessage {
   factory SearchAllIamPoliciesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchAllIamPoliciesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p1beta1'), createEmptyInstance: create)
-    ..pc<$4326.IamPolicySearchResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4326.IamPolicySearchResult.create)
+    ..pc<$4327.IamPolicySearchResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4327.IamPolicySearchResult.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -378,7 +378,7 @@ class SearchAllIamPoliciesResponse extends $pb.GeneratedMessage {
   /// A list of IAM policies that match the search query. Related information
   /// such as the associated resource is returned along with the policy.
   @$pb.TagNumber(1)
-  $core.List<$4326.IamPolicySearchResult> get results => $_getList(0);
+  $core.List<$4327.IamPolicySearchResult> get results => $_getList(0);
 
   /// Set if there are more results than those appearing in this response; to get
   /// the next set of results, call this method again, using this value as the

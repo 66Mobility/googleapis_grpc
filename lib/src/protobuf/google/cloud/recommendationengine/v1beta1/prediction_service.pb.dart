@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'user_event.pb.dart' as $1229;
 
 /// Request message for Predict method.
@@ -23,7 +23,7 @@ class PredictRequest extends $pb.GeneratedMessage {
     $1229.UserEvent? userEvent,
     $core.String? filter,
     $core.bool? dryRun,
-    $core.Map<$core.String, $1734.Value>? params,
+    $core.Map<$core.String, $1735.Value>? params,
     $core.int? pageSize,
     $core.String? pageToken,
     $core.Map<$core.String, $core.String>? labels,
@@ -64,7 +64,7 @@ class PredictRequest extends $pb.GeneratedMessage {
     ..aOM<$1229.UserEvent>(2, _omitFieldNames ? '' : 'userEvent', subBuilder: $1229.UserEvent.create)
     ..aOS(3, _omitFieldNames ? '' : 'filter')
     ..aOB(4, _omitFieldNames ? '' : 'dryRun')
-    ..m<$core.String, $1734.Value>(6, _omitFieldNames ? '' : 'params', entryClassName: 'PredictRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommendationengine.v1beta1'))
+    ..m<$core.String, $1735.Value>(6, _omitFieldNames ? '' : 'params', entryClassName: 'PredictRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommendationengine.v1beta1'))
     ..a<$core.int>(7, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'pageToken')
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'PredictRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.recommendationengine.v1beta1'))
@@ -199,7 +199,7 @@ class PredictRequest extends $pb.GeneratedMessage {
   ///     probability of an item being clicked/purchased given the user's context
   ///     and history.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $1734.Value> get params => $_getMap(4);
+  $core.Map<$core.String, $1735.Value> get params => $_getMap(4);
 
   /// Optional. Maximum number of results to return per page. Set this property
   /// to the number of prediction results required. If zero, the service will
@@ -240,7 +240,7 @@ class PredictRequest extends $pb.GeneratedMessage {
 class PredictResponse_PredictionResult extends $pb.GeneratedMessage {
   factory PredictResponse_PredictionResult({
     $core.String? id,
-    $core.Map<$core.String, $1734.Value>? itemMetadata,
+    $core.Map<$core.String, $1735.Value>? itemMetadata,
   }) {
     final $result = create();
     if (id != null) {
@@ -257,7 +257,7 @@ class PredictResponse_PredictionResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictResponse.PredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommendationengine.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..m<$core.String, $1734.Value>(2, _omitFieldNames ? '' : 'itemMetadata', entryClassName: 'PredictResponse.PredictionResult.ItemMetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommendationengine.v1beta1'))
+    ..m<$core.String, $1735.Value>(2, _omitFieldNames ? '' : 'itemMetadata', entryClassName: 'PredictResponse.PredictionResult.ItemMetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommendationengine.v1beta1'))
     ..hasRequiredFields = false
   ;
 
@@ -301,7 +301,7 @@ class PredictResponse_PredictionResult extends $pb.GeneratedMessage {
   ///  * `score`: Prediction score in double value. Will be set if
   ///    `returnItemScore` is set to true in `PredictRequest.params`.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1734.Value> get itemMetadata => $_getMap(1);
+  $core.Map<$core.String, $1735.Value> get itemMetadata => $_getMap(1);
 }
 
 /// Response message for predict method.
@@ -311,7 +311,7 @@ class PredictResponse extends $pb.GeneratedMessage {
     $core.String? recommendationToken,
     $core.Iterable<$core.String>? itemsMissingInCatalog,
     $core.bool? dryRun,
-    $core.Map<$core.String, $1734.Value>? metadata,
+    $core.Map<$core.String, $1735.Value>? metadata,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -344,7 +344,7 @@ class PredictResponse extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'recommendationToken')
     ..pPS(3, _omitFieldNames ? '' : 'itemsMissingInCatalog')
     ..aOB(4, _omitFieldNames ? '' : 'dryRun')
-    ..m<$core.String, $1734.Value>(5, _omitFieldNames ? '' : 'metadata', entryClassName: 'PredictResponse.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommendationengine.v1beta1'))
+    ..m<$core.String, $1735.Value>(5, _omitFieldNames ? '' : 'metadata', entryClassName: 'PredictResponse.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommendationengine.v1beta1'))
     ..aOS(6, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -403,7 +403,7 @@ class PredictResponse extends $pb.GeneratedMessage {
 
   /// Additional domain specific prediction response metadata.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $1734.Value> get metadata => $_getMap(4);
+  $core.Map<$core.String, $1735.Value> get metadata => $_getMap(4);
 
   /// If empty, the list is complete. If nonempty, the token to pass to the next
   /// request's PredictRequest.page_token.

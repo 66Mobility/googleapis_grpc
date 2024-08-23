@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4593;
+import 'common.pb.dart' as $4595;
 
 /// Autocomplete parameters.
 class CompleteQueryRequest extends $pb.GeneratedMessage {
@@ -243,7 +243,7 @@ class CompleteQueryRequest extends $pb.GeneratedMessage {
 class CompleteQueryResponse_CompletionResult extends $pb.GeneratedMessage {
   factory CompleteQueryResponse_CompletionResult({
     $core.String? suggestion,
-    $core.Map<$core.String, $4593.CustomAttribute>? attributes,
+    $core.Map<$core.String, $4595.CustomAttribute>? attributes,
   }) {
     final $result = create();
     if (suggestion != null) {
@@ -260,7 +260,7 @@ class CompleteQueryResponse_CompletionResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompleteQueryResponse.CompletionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'suggestion')
-    ..m<$core.String, $4593.CustomAttribute>(2, _omitFieldNames ? '' : 'attributes', entryClassName: 'CompleteQueryResponse.CompletionResult.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4593.CustomAttribute.create, valueDefaultOrMaker: $4593.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2'))
+    ..m<$core.String, $4595.CustomAttribute>(2, _omitFieldNames ? '' : 'attributes', entryClassName: 'CompleteQueryResponse.CompletionResult.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4595.CustomAttribute.create, valueDefaultOrMaker: $4595.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2'))
     ..hasRequiredFields = false
   ;
 
@@ -305,7 +305,7 @@ class CompleteQueryResponse_CompletionResult extends $pb.GeneratedMessage {
   ///  [UserEvent.product_details][google.cloud.retail.v2.UserEvent.product_details]
   ///  is imported properly.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $4593.CustomAttribute> get attributes => $_getMap(1);
+  $core.Map<$core.String, $4595.CustomAttribute> get attributes => $_getMap(1);
 }
 
 /// Deprecated: Recent search of this user.

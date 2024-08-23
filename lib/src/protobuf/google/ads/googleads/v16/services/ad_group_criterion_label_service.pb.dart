@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/ad_group_criterion_label.pb.dart' as $3068;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/ad_group_criterion_label.pb.dart' as $3069;
 
 /// Request message for
 /// [AdGroupCriterionLabelService.MutateAdGroupCriterionLabels][google.ads.googleads.v16.services.AdGroupCriterionLabelService.MutateAdGroupCriterionLabels].
@@ -122,7 +122,7 @@ enum AdGroupCriterionLabelOperation_Operation {
 /// A single operation (create, remove) on an ad group criterion label.
 class AdGroupCriterionLabelOperation extends $pb.GeneratedMessage {
   factory AdGroupCriterionLabelOperation({
-    $3068.AdGroupCriterionLabel? create_1,
+    $3069.AdGroupCriterionLabel? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -145,7 +145,7 @@ class AdGroupCriterionLabelOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupCriterionLabelOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3068.AdGroupCriterionLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3068.AdGroupCriterionLabel.create)
+    ..aOM<$3069.AdGroupCriterionLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3069.AdGroupCriterionLabel.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -177,15 +177,15 @@ class AdGroupCriterionLabelOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new ad group
   /// label.
   @$pb.TagNumber(1)
-  $3068.AdGroupCriterionLabel get create_1 => $_getN(0);
+  $3069.AdGroupCriterionLabel get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3068.AdGroupCriterionLabel v) { setField(1, v); }
+  set create_1($3069.AdGroupCriterionLabel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3068.AdGroupCriterionLabel ensureCreate_1() => $_ensure(0);
+  $3069.AdGroupCriterionLabel ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the ad group criterion label
   ///  being removed, in this format:
@@ -205,7 +205,7 @@ class AdGroupCriterionLabelOperation extends $pb.GeneratedMessage {
 class MutateAdGroupCriterionLabelsResponse extends $pb.GeneratedMessage {
   factory MutateAdGroupCriterionLabelsResponse({
     $core.Iterable<MutateAdGroupCriterionLabelResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -222,7 +222,7 @@ class MutateAdGroupCriterionLabelsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupCriterionLabelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateAdGroupCriterionLabelResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAdGroupCriterionLabelResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -256,15 +256,15 @@ class MutateAdGroupCriterionLabelsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for an ad group criterion label mutate.

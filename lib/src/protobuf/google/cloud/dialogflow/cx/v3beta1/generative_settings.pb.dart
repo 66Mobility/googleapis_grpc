@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'safety_settings.pb.dart' as $4491;
+import 'safety_settings.pb.dart' as $4493;
 
 /// Prompt template.
 class GenerativeSettings_FallbackSettings_PromptTemplate extends $pb.GeneratedMessage {
@@ -301,7 +301,7 @@ class GenerativeSettings_KnowledgeConnectorSettings extends $pb.GeneratedMessage
 class GenerativeSettings extends $pb.GeneratedMessage {
   factory GenerativeSettings({
     GenerativeSettings_FallbackSettings? fallbackSettings,
-    $4491.SafetySettings? generativeSafetySettings,
+    $4493.SafetySettings? generativeSafetySettings,
     $core.String? languageCode,
     $core.String? name,
     GenerativeSettings_KnowledgeConnectorSettings? knowledgeConnectorSettings,
@@ -334,7 +334,7 @@ class GenerativeSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerativeSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<GenerativeSettings_FallbackSettings>(1, _omitFieldNames ? '' : 'fallbackSettings', subBuilder: GenerativeSettings_FallbackSettings.create)
-    ..aOM<$4491.SafetySettings>(3, _omitFieldNames ? '' : 'generativeSafetySettings', subBuilder: $4491.SafetySettings.create)
+    ..aOM<$4493.SafetySettings>(3, _omitFieldNames ? '' : 'generativeSafetySettings', subBuilder: $4493.SafetySettings.create)
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
     ..aOS(5, _omitFieldNames ? '' : 'name')
     ..aOM<GenerativeSettings_KnowledgeConnectorSettings>(7, _omitFieldNames ? '' : 'knowledgeConnectorSettings', subBuilder: GenerativeSettings_KnowledgeConnectorSettings.create)
@@ -377,15 +377,15 @@ class GenerativeSettings extends $pb.GeneratedMessage {
 
   /// Settings for Generative Safety.
   @$pb.TagNumber(3)
-  $4491.SafetySettings get generativeSafetySettings => $_getN(1);
+  $4493.SafetySettings get generativeSafetySettings => $_getN(1);
   @$pb.TagNumber(3)
-  set generativeSafetySettings($4491.SafetySettings v) { setField(3, v); }
+  set generativeSafetySettings($4493.SafetySettings v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGenerativeSafetySettings() => $_has(1);
   @$pb.TagNumber(3)
   void clearGenerativeSafetySettings() => clearField(3);
   @$pb.TagNumber(3)
-  $4491.SafetySettings ensureGenerativeSafetySettings() => $_ensure(1);
+  $4493.SafetySettings ensureGenerativeSafetySettings() => $_ensure(1);
 
   /// Language for this settings.
   @$pb.TagNumber(4)

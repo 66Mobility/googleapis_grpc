@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'restore.pb.dart' as $1069;
 import 'restore_plan.pbenum.dart';
 
@@ -25,8 +25,8 @@ class RestorePlan extends $pb.GeneratedMessage {
   factory RestorePlan({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? backupPlan,
     $core.String? cluster,
@@ -82,8 +82,8 @@ class RestorePlan extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestorePlan', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'backupPlan')
     ..aOS(7, _omitFieldNames ? '' : 'cluster')
@@ -141,28 +141,28 @@ class RestorePlan extends $pb.GeneratedMessage {
   /// Output only. The timestamp when this RestorePlan resource was
   /// created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this RestorePlan resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. User specified descriptive string for this RestorePlan.
   @$pb.TagNumber(5)

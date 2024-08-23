@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'event_threat_detection_custom_module.pbenum.dart';
 
 export 'event_threat_detection_custom_module.pbenum.dart';
@@ -27,13 +27,13 @@ export 'event_threat_detection_custom_module.pbenum.dart';
 class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
   factory EventThreatDetectionCustomModule({
     $core.String? name,
-    $1734.Struct? config,
+    $1735.Struct? config,
     $core.String? ancestorModule,
     EventThreatDetectionCustomModule_EnablementState? enablementState,
     $core.String? type,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? lastEditor,
   }) {
     final $result = create();
@@ -72,13 +72,13 @@ class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventThreatDetectionCustomModule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1735.Struct.create)
     ..aOS(3, _omitFieldNames ? '' : 'ancestorModule')
     ..e<EventThreatDetectionCustomModule_EnablementState>(4, _omitFieldNames ? '' : 'enablementState', $pb.PbFieldType.OE, defaultOrMaker: EventThreatDetectionCustomModule_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: EventThreatDetectionCustomModule_EnablementState.valueOf, enumValues: EventThreatDetectionCustomModule_EnablementState.values)
     ..aOS(5, _omitFieldNames ? '' : 'type')
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..aOS(7, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'lastEditor')
     ..hasRequiredFields = false
   ;
@@ -124,15 +124,15 @@ class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
   /// at this level. For the inherited module, its config value is inherited from
   /// the ancestor module.
   @$pb.TagNumber(2)
-  $1734.Struct get config => $_getN(1);
+  $1735.Struct get config => $_getN(1);
   @$pb.TagNumber(2)
-  set config($1734.Struct v) { setField(2, v); }
+  set config($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureConfig() => $_ensure(1);
+  $1735.Struct ensureConfig() => $_ensure(1);
 
   /// Output only. The closest ancestor module that this module inherits the
   /// enablement state from. The format is the same as the
@@ -188,15 +188,15 @@ class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   /// Output only. The time the module was last updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The editor the module was last updated by.
   @$pb.TagNumber(9)

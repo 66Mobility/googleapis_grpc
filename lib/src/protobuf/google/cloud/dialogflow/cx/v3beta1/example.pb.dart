@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'example.pbenum.dart';
 
 export 'example.pbenum.dart';
@@ -378,7 +378,7 @@ class GetExampleRequest extends $pb.GeneratedMessage {
 class UpdateExampleRequest extends $pb.GeneratedMessage {
   factory UpdateExampleRequest({
     Example? example,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (example != null) {
@@ -395,7 +395,7 @@ class UpdateExampleRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateExampleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<Example>(1, _omitFieldNames ? '' : 'example', subBuilder: Example.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -435,15 +435,15 @@ class UpdateExampleRequest extends $pb.GeneratedMessage {
   /// Optional. The mask to control which fields get updated. If the mask is not
   /// present, all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 ///  Example represents a sample execution of the playbook in the conversation.
@@ -459,8 +459,8 @@ class Example extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $fixnum.Int64? tokenCount,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     OutputState? conversationState,
     $core.String? languageCode,
   }) {
@@ -512,8 +512,8 @@ class Example extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..aOS(8, _omitFieldNames ? '' : 'description')
     ..aInt64(9, _omitFieldNames ? '' : 'tokenCount')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<OutputState>(12, _omitFieldNames ? '' : 'conversationState', $pb.PbFieldType.OE, defaultOrMaker: OutputState.OUTPUT_STATE_UNSPECIFIED, valueOf: OutputState.valueOf, enumValues: OutputState.values)
     ..aOS(13, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
@@ -615,27 +615,27 @@ class Example extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp of initial example creation.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Last time the example was updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Required. Example's output state.
   @$pb.TagNumber(12)
@@ -664,7 +664,7 @@ class Example extends $pb.GeneratedMessage {
 class PlaybookInput extends $pb.GeneratedMessage {
   factory PlaybookInput({
     $core.String? precedingConversationSummary,
-    $1734.Struct? actionParameters,
+    $1735.Struct? actionParameters,
   }) {
     final $result = create();
     if (precedingConversationSummary != null) {
@@ -681,7 +681,7 @@ class PlaybookInput extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlaybookInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'precedingConversationSummary')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'actionParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'actionParameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -719,22 +719,22 @@ class PlaybookInput extends $pb.GeneratedMessage {
 
   /// Optional. A list of input parameters for the action.
   @$pb.TagNumber(3)
-  $1734.Struct get actionParameters => $_getN(1);
+  $1735.Struct get actionParameters => $_getN(1);
   @$pb.TagNumber(3)
-  set actionParameters($1734.Struct v) { setField(3, v); }
+  set actionParameters($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasActionParameters() => $_has(1);
   @$pb.TagNumber(3)
   void clearActionParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureActionParameters() => $_ensure(1);
+  $1735.Struct ensureActionParameters() => $_ensure(1);
 }
 
 /// Output of the playbook.
 class PlaybookOutput extends $pb.GeneratedMessage {
   factory PlaybookOutput({
     $core.String? executionSummary,
-    $1734.Struct? actionParameters,
+    $1735.Struct? actionParameters,
   }) {
     final $result = create();
     if (executionSummary != null) {
@@ -751,7 +751,7 @@ class PlaybookOutput extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlaybookOutput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'executionSummary')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'actionParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'actionParameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -788,15 +788,15 @@ class PlaybookOutput extends $pb.GeneratedMessage {
 
   /// Optional. A Struct object of output parameters for the action.
   @$pb.TagNumber(4)
-  $1734.Struct get actionParameters => $_getN(1);
+  $1735.Struct get actionParameters => $_getN(1);
   @$pb.TagNumber(4)
-  set actionParameters($1734.Struct v) { setField(4, v); }
+  set actionParameters($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasActionParameters() => $_has(1);
   @$pb.TagNumber(4)
   void clearActionParameters() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureActionParameters() => $_ensure(1);
+  $1735.Struct ensureActionParameters() => $_ensure(1);
 }
 
 enum Action_Action {
@@ -1053,8 +1053,8 @@ class ToolUse extends $pb.GeneratedMessage {
   factory ToolUse({
     $core.String? tool,
     $core.String? action,
-    $1734.Struct? inputActionParameters,
-    $1734.Struct? outputActionParameters,
+    $1735.Struct? inputActionParameters,
+    $1735.Struct? outputActionParameters,
   }) {
     final $result = create();
     if (tool != null) {
@@ -1078,8 +1078,8 @@ class ToolUse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ToolUse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tool')
     ..aOS(2, _omitFieldNames ? '' : 'action')
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'inputActionParameters', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'outputActionParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'inputActionParameters', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'outputActionParameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1128,27 +1128,27 @@ class ToolUse extends $pb.GeneratedMessage {
 
   /// Optional. A list of input parameters for the action.
   @$pb.TagNumber(5)
-  $1734.Struct get inputActionParameters => $_getN(2);
+  $1735.Struct get inputActionParameters => $_getN(2);
   @$pb.TagNumber(5)
-  set inputActionParameters($1734.Struct v) { setField(5, v); }
+  set inputActionParameters($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInputActionParameters() => $_has(2);
   @$pb.TagNumber(5)
   void clearInputActionParameters() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureInputActionParameters() => $_ensure(2);
+  $1735.Struct ensureInputActionParameters() => $_ensure(2);
 
   /// Optional. A list of output parameters generated by the action.
   @$pb.TagNumber(6)
-  $1734.Struct get outputActionParameters => $_getN(3);
+  $1735.Struct get outputActionParameters => $_getN(3);
   @$pb.TagNumber(6)
-  set outputActionParameters($1734.Struct v) { setField(6, v); }
+  set outputActionParameters($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOutputActionParameters() => $_has(3);
   @$pb.TagNumber(6)
   void clearOutputActionParameters() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureOutputActionParameters() => $_ensure(3);
+  $1735.Struct ensureOutputActionParameters() => $_ensure(3);
 }
 
 /// Stores metadata of the invocation of a child playbook.
@@ -1261,8 +1261,8 @@ class FlowInvocation extends $pb.GeneratedMessage {
   factory FlowInvocation({
     $core.String? flow,
     OutputState? flowState,
-    $1734.Struct? inputActionParameters,
-    $1734.Struct? outputActionParameters,
+    $1735.Struct? inputActionParameters,
+    $1735.Struct? outputActionParameters,
   }) {
     final $result = create();
     if (flow != null) {
@@ -1286,8 +1286,8 @@ class FlowInvocation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlowInvocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'flow')
     ..e<OutputState>(4, _omitFieldNames ? '' : 'flowState', $pb.PbFieldType.OE, defaultOrMaker: OutputState.OUTPUT_STATE_UNSPECIFIED, valueOf: OutputState.valueOf, enumValues: OutputState.values)
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'inputActionParameters', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'outputActionParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'inputActionParameters', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'outputActionParameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1336,27 +1336,27 @@ class FlowInvocation extends $pb.GeneratedMessage {
 
   /// Optional. A list of input parameters for the flow.
   @$pb.TagNumber(5)
-  $1734.Struct get inputActionParameters => $_getN(2);
+  $1735.Struct get inputActionParameters => $_getN(2);
   @$pb.TagNumber(5)
-  set inputActionParameters($1734.Struct v) { setField(5, v); }
+  set inputActionParameters($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInputActionParameters() => $_has(2);
   @$pb.TagNumber(5)
   void clearInputActionParameters() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureInputActionParameters() => $_ensure(2);
+  $1735.Struct ensureInputActionParameters() => $_ensure(2);
 
   /// Optional. A list of output parameters generated by the flow invocation.
   @$pb.TagNumber(6)
-  $1734.Struct get outputActionParameters => $_getN(3);
+  $1735.Struct get outputActionParameters => $_getN(3);
   @$pb.TagNumber(6)
-  set outputActionParameters($1734.Struct v) { setField(6, v); }
+  set outputActionParameters($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOutputActionParameters() => $_has(3);
   @$pb.TagNumber(6)
   void clearOutputActionParameters() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureOutputActionParameters() => $_ensure(3);
+  $1735.Struct ensureOutputActionParameters() => $_ensure(3);
 }
 
 

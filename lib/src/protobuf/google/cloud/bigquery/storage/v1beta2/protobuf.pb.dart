@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/descriptor.pb.dart' as $4375;
+import '../../../../protobuf/descriptor.pb.dart' as $4376;
 
 /// ProtoSchema describes the schema of the serialized protocol buffer data rows.
 class ProtoSchema extends $pb.GeneratedMessage {
   factory ProtoSchema({
-    $4375.DescriptorProto? protoDescriptor,
+    $4376.DescriptorProto? protoDescriptor,
   }) {
     final $result = create();
     if (protoDescriptor != null) {
@@ -31,7 +31,7 @@ class ProtoSchema extends $pb.GeneratedMessage {
   factory ProtoSchema.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoSchema', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
-    ..aOM<$4375.DescriptorProto>(1, _omitFieldNames ? '' : 'protoDescriptor', subBuilder: $4375.DescriptorProto.create)
+    ..aOM<$4376.DescriptorProto>(1, _omitFieldNames ? '' : 'protoDescriptor', subBuilder: $4376.DescriptorProto.create)
   ;
 
   @$core.Deprecated(
@@ -59,15 +59,15 @@ class ProtoSchema extends $pb.GeneratedMessage {
   /// including all the nested types, excepted for proto buffer well known types
   /// (https://developers.google.com/protocol-buffers/docs/reference/google.protobuf).
   @$pb.TagNumber(1)
-  $4375.DescriptorProto get protoDescriptor => $_getN(0);
+  $4376.DescriptorProto get protoDescriptor => $_getN(0);
   @$pb.TagNumber(1)
-  set protoDescriptor($4375.DescriptorProto v) { setField(1, v); }
+  set protoDescriptor($4376.DescriptorProto v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasProtoDescriptor() => $_has(0);
   @$pb.TagNumber(1)
   void clearProtoDescriptor() => clearField(1);
   @$pb.TagNumber(1)
-  $4375.DescriptorProto ensureProtoDescriptor() => $_ensure(0);
+  $4376.DescriptorProto ensureProtoDescriptor() => $_ensure(0);
 }
 
 class ProtoRows extends $pb.GeneratedMessage {

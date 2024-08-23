@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -23,8 +23,8 @@ export 'resources.pbenum.dart';
 class Zone extends $pb.GeneratedMessage {
   factory Zone({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   @$core.Deprecated('This field is deprecated.')
     $core.Map<$core.String, $core.String>? labels,
   @$core.Deprecated('This field is deprecated.')
@@ -56,8 +56,8 @@ class Zone extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Zone', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Zone.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgenetwork.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'layoutName')
     ..hasRequiredFields = false
@@ -96,27 +96,27 @@ class Zone extends $pb.GeneratedMessage {
 
   /// Output only. The time when the zone was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the zone was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Deprecated: not implemented.
   /// Labels as key value pairs.
@@ -144,8 +144,8 @@ class Zone extends $pb.GeneratedMessage {
 class Network extends $pb.GeneratedMessage {
   factory Network({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $core.int? mtu,
@@ -177,8 +177,8 @@ class Network extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Network', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Network.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgenetwork.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'mtu', $pb.PbFieldType.O3)
@@ -218,27 +218,27 @@ class Network extends $pb.GeneratedMessage {
 
   /// Output only. The time when the network was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the network was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -272,8 +272,8 @@ class Network extends $pb.GeneratedMessage {
 class Subnet extends $pb.GeneratedMessage {
   factory Subnet({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $core.String? network,
@@ -325,8 +325,8 @@ class Subnet extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Subnet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Subnet.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgenetwork.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'network')
@@ -371,27 +371,27 @@ class Subnet extends $pb.GeneratedMessage {
 
   /// Output only. The time when the subnet was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the subnet was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -466,8 +466,8 @@ class Subnet extends $pb.GeneratedMessage {
 class Interconnect extends $pb.GeneratedMessage {
   factory Interconnect({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     Interconnect_InterconnectType? interconnectType,
@@ -511,8 +511,8 @@ class Interconnect extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Interconnect', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Interconnect.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgenetwork.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..e<Interconnect_InterconnectType>(6, _omitFieldNames ? '' : 'interconnectType', $pb.PbFieldType.OE, defaultOrMaker: Interconnect_InterconnectType.INTERCONNECT_TYPE_UNSPECIFIED, valueOf: Interconnect_InterconnectType.valueOf, enumValues: Interconnect_InterconnectType.values)
@@ -555,27 +555,27 @@ class Interconnect extends $pb.GeneratedMessage {
 
   /// Output only. The time when the subnet was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the subnet was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -633,8 +633,8 @@ class Interconnect extends $pb.GeneratedMessage {
 class InterconnectAttachment extends $pb.GeneratedMessage {
   factory InterconnectAttachment({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $core.String? interconnect,
@@ -682,8 +682,8 @@ class InterconnectAttachment extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InterconnectAttachment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'InterconnectAttachment.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgenetwork.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'interconnect')
@@ -727,27 +727,27 @@ class InterconnectAttachment extends $pb.GeneratedMessage {
 
   /// Output only. The time when the interconnect attachment was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the interconnect attachment was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -1177,8 +1177,8 @@ class Router_Bgp extends $pb.GeneratedMessage {
 class Router extends $pb.GeneratedMessage {
   factory Router({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $core.String? network,
@@ -1230,8 +1230,8 @@ class Router extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Router', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Router.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgenetwork.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'network')
@@ -1276,27 +1276,27 @@ class Router extends $pb.GeneratedMessage {
 
   /// Output only. The time when the router was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the router was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)

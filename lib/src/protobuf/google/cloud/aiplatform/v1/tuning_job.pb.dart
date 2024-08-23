@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'content.pb.dart' as $4259;
-import 'encryption_spec.pb.dart' as $4240;
-import 'job_state.pbenum.dart' as $4246;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'content.pb.dart' as $4260;
+import 'encryption_spec.pb.dart' as $4241;
+import 'job_state.pbenum.dart' as $4247;
 import 'tuning_job.pbenum.dart';
 
 export 'tuning_job.pbenum.dart';
@@ -41,17 +41,17 @@ class TuningJob extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? baseModel,
     SupervisedTuningSpec? supervisedTuningSpec,
-    $4246.JobState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
-    $1795.Status? error,
+    $4247.JobState? state,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
+    $1796.Status? error,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? experiment,
     TunedModel? tunedModel,
     TuningDataStats? tuningDataStats,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
   }) {
     final $result = create();
     if (name != null) {
@@ -124,17 +124,17 @@ class TuningJob extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'baseModel')
     ..aOM<SupervisedTuningSpec>(5, _omitFieldNames ? '' : 'supervisedTuningSpec', subBuilder: SupervisedTuningSpec.create)
-    ..e<$4246.JobState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4246.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4246.JobState.valueOf, enumValues: $4246.JobState.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..e<$4247.JobState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4247.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4247.JobState.valueOf, enumValues: $4247.JobState.values)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'labels', entryClassName: 'TuningJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..aOS(13, _omitFieldNames ? '' : 'experiment')
     ..aOM<TunedModel>(14, _omitFieldNames ? '' : 'tunedModel', subBuilder: TunedModel.create)
     ..aOM<TuningDataStats>(15, _omitFieldNames ? '' : 'tuningDataStats', subBuilder: TuningDataStats.create)
-    ..aOM<$4240.EncryptionSpec>(16, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(16, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -223,9 +223,9 @@ class TuningJob extends $pb.GeneratedMessage {
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(6)
-  $4246.JobState get state => $_getN(5);
+  $4247.JobState get state => $_getN(5);
   @$pb.TagNumber(6)
-  set state($4246.JobState v) { setField(6, v); }
+  set state($4247.JobState v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
@@ -234,70 +234,70 @@ class TuningJob extends $pb.GeneratedMessage {
   /// Output only. Time when the
   /// [TuningJob][google.cloud.aiplatform.v1.TuningJob] was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Time when the
   /// [TuningJob][google.cloud.aiplatform.v1.TuningJob] for the first time
   /// entered the `JOB_STATE_RUNNING` state.
   @$pb.TagNumber(8)
-  $1775.Timestamp get startTime => $_getN(7);
+  $1776.Timestamp get startTime => $_getN(7);
   @$pb.TagNumber(8)
-  set startTime($1775.Timestamp v) { setField(8, v); }
+  set startTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearStartTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureStartTime() => $_ensure(7);
+  $1776.Timestamp ensureStartTime() => $_ensure(7);
 
   /// Output only. Time when the TuningJob entered any of the following
   /// [JobStates][google.cloud.aiplatform.v1.JobState]: `JOB_STATE_SUCCEEDED`,
   /// `JOB_STATE_FAILED`, `JOB_STATE_CANCELLED`, `JOB_STATE_EXPIRED`.
   @$pb.TagNumber(9)
-  $1775.Timestamp get endTime => $_getN(8);
+  $1776.Timestamp get endTime => $_getN(8);
   @$pb.TagNumber(9)
-  set endTime($1775.Timestamp v) { setField(9, v); }
+  set endTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasEndTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearEndTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureEndTime() => $_ensure(8);
+  $1776.Timestamp ensureEndTime() => $_ensure(8);
 
   /// Output only. Time when the
   /// [TuningJob][google.cloud.aiplatform.v1.TuningJob] was most recently
   /// updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Output only. Only populated when job's state is `JOB_STATE_FAILED` or
   /// `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(11)
-  $1795.Status get error => $_getN(10);
+  $1796.Status get error => $_getN(10);
   @$pb.TagNumber(11)
-  set error($1795.Status v) { setField(11, v); }
+  set error($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasError() => $_has(10);
   @$pb.TagNumber(11)
   void clearError() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureError() => $_ensure(10);
+  $1796.Status ensureError() => $_ensure(10);
 
   ///  Optional. The labels with user-defined metadata to organize
   ///  [TuningJob][google.cloud.aiplatform.v1.TuningJob] and generated resources
@@ -353,15 +353,15 @@ class TuningJob extends $pb.GeneratedMessage {
   /// then all resources created by the TuningJob will be encrypted with the
   /// provided encryption key.
   @$pb.TagNumber(16)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(15);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(15);
   @$pb.TagNumber(16)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(16, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasEncryptionSpec() => $_has(15);
   @$pb.TagNumber(16)
   void clearEncryptionSpec() => clearField(16);
   @$pb.TagNumber(16)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(15);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(15);
 }
 
 /// The Model Registry Model and Online Prediction Endpoint assiociated with
@@ -694,7 +694,7 @@ class SupervisedTuningDataStats extends $pb.GeneratedMessage {
     SupervisedTuningDatasetDistribution? userInputTokenDistribution,
     SupervisedTuningDatasetDistribution? userOutputTokenDistribution,
     SupervisedTuningDatasetDistribution? userMessagePerExampleDistribution,
-    $core.Iterable<$4259.Content>? userDatasetExamples,
+    $core.Iterable<$4260.Content>? userDatasetExamples,
     $fixnum.Int64? totalBillableTokenCount,
     $fixnum.Int64? totalTruncatedExampleCount,
     $core.Iterable<$fixnum.Int64>? truncatedExampleIndices,
@@ -748,7 +748,7 @@ class SupervisedTuningDataStats extends $pb.GeneratedMessage {
     ..aOM<SupervisedTuningDatasetDistribution>(5, _omitFieldNames ? '' : 'userInputTokenDistribution', subBuilder: SupervisedTuningDatasetDistribution.create)
     ..aOM<SupervisedTuningDatasetDistribution>(6, _omitFieldNames ? '' : 'userOutputTokenDistribution', subBuilder: SupervisedTuningDatasetDistribution.create)
     ..aOM<SupervisedTuningDatasetDistribution>(7, _omitFieldNames ? '' : 'userMessagePerExampleDistribution', subBuilder: SupervisedTuningDatasetDistribution.create)
-    ..pc<$4259.Content>(8, _omitFieldNames ? '' : 'userDatasetExamples', $pb.PbFieldType.PM, subBuilder: $4259.Content.create)
+    ..pc<$4260.Content>(8, _omitFieldNames ? '' : 'userDatasetExamples', $pb.PbFieldType.PM, subBuilder: $4260.Content.create)
     ..aInt64(9, _omitFieldNames ? '' : 'totalBillableTokenCount')
     ..aInt64(10, _omitFieldNames ? '' : 'totalTruncatedExampleCount')
     ..p<$fixnum.Int64>(11, _omitFieldNames ? '' : 'truncatedExampleIndices', $pb.PbFieldType.K6)
@@ -858,7 +858,7 @@ class SupervisedTuningDataStats extends $pb.GeneratedMessage {
 
   /// Output only. Sample user messages in the training dataset uri.
   @$pb.TagNumber(8)
-  $core.List<$4259.Content> get userDatasetExamples => $_getList(7);
+  $core.List<$4260.Content> get userDatasetExamples => $_getList(7);
 
   /// Output only. Number of billable tokens in the tuning dataset.
   @$pb.TagNumber(9)

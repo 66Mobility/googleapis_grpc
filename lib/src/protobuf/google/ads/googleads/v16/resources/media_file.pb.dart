@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/media_type.pbenum.dart' as $3034;
-import '../enums/mime_type.pbenum.dart' as $2535;
+import '../enums/media_type.pbenum.dart' as $3035;
+import '../enums/mime_type.pbenum.dart' as $2536;
 
 enum MediaFile_Mediatype {
   image, 
@@ -31,8 +31,8 @@ class MediaFile extends $pb.GeneratedMessage {
     $core.String? resourceName,
     MediaImage? image,
     MediaBundle? mediaBundle,
-    $3034.MediaTypeEnum_MediaType? type,
-    $2535.MimeTypeEnum_MimeType? mimeType,
+    $3035.MediaTypeEnum_MediaType? type,
+    $2536.MimeTypeEnum_MimeType? mimeType,
     MediaAudio? audio,
     MediaVideo? video,
     $fixnum.Int64? id,
@@ -92,8 +92,8 @@ class MediaFile extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOM<MediaImage>(3, _omitFieldNames ? '' : 'image', subBuilder: MediaImage.create)
     ..aOM<MediaBundle>(4, _omitFieldNames ? '' : 'mediaBundle', subBuilder: MediaBundle.create)
-    ..e<$3034.MediaTypeEnum_MediaType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3034.MediaTypeEnum_MediaType.UNSPECIFIED, valueOf: $3034.MediaTypeEnum_MediaType.valueOf, enumValues: $3034.MediaTypeEnum_MediaType.values)
-    ..e<$2535.MimeTypeEnum_MimeType>(6, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $2535.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $2535.MimeTypeEnum_MimeType.valueOf, enumValues: $2535.MimeTypeEnum_MimeType.values)
+    ..e<$3035.MediaTypeEnum_MediaType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3035.MediaTypeEnum_MediaType.UNSPECIFIED, valueOf: $3035.MediaTypeEnum_MediaType.valueOf, enumValues: $3035.MediaTypeEnum_MediaType.values)
+    ..e<$2536.MimeTypeEnum_MimeType>(6, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $2536.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $2536.MimeTypeEnum_MimeType.valueOf, enumValues: $2536.MimeTypeEnum_MimeType.values)
     ..aOM<MediaAudio>(10, _omitFieldNames ? '' : 'audio', subBuilder: MediaAudio.create)
     ..aOM<MediaVideo>(11, _omitFieldNames ? '' : 'video', subBuilder: MediaVideo.create)
     ..aInt64(12, _omitFieldNames ? '' : 'id')
@@ -167,9 +167,9 @@ class MediaFile extends $pb.GeneratedMessage {
 
   /// Immutable. Type of the media file.
   @$pb.TagNumber(5)
-  $3034.MediaTypeEnum_MediaType get type => $_getN(3);
+  $3035.MediaTypeEnum_MediaType get type => $_getN(3);
   @$pb.TagNumber(5)
-  set type($3034.MediaTypeEnum_MediaType v) { setField(5, v); }
+  set type($3035.MediaTypeEnum_MediaType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(5)
@@ -177,9 +177,9 @@ class MediaFile extends $pb.GeneratedMessage {
 
   /// Output only. The mime type of the media file.
   @$pb.TagNumber(6)
-  $2535.MimeTypeEnum_MimeType get mimeType => $_getN(4);
+  $2536.MimeTypeEnum_MimeType get mimeType => $_getN(4);
   @$pb.TagNumber(6)
-  set mimeType($2535.MimeTypeEnum_MimeType v) { setField(6, v); }
+  set mimeType($2536.MimeTypeEnum_MimeType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMimeType() => $_has(4);
   @$pb.TagNumber(6)

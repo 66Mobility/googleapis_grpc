@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'logs.pbenum.dart';
 
 export 'logs.pbenum.dart';
@@ -504,8 +504,8 @@ class JobEvent extends $pb.GeneratedMessage {
   factory JobEvent({
     $core.String? message,
     $core.String? jobId,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     JobEvent_State? state,
     $core.int? retries,
     JobEvent_Type? type,
@@ -553,8 +553,8 @@ class JobEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'message')
     ..aOS(2, _omitFieldNames ? '' : 'jobId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<JobEvent_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: JobEvent_State.STATE_UNSPECIFIED, valueOf: JobEvent_State.valueOf, enumValues: JobEvent_State.values)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'retries', $pb.PbFieldType.O3)
     ..e<JobEvent_Type>(7, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: JobEvent_Type.TYPE_UNSPECIFIED, valueOf: JobEvent_Type.valueOf, enumValues: JobEvent_Type.values)
@@ -607,27 +607,27 @@ class JobEvent extends $pb.GeneratedMessage {
 
   /// The time when the job started running.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The time when the job ended running.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 
   /// The job state on completion.
   @$pb.TagNumber(5)
@@ -696,7 +696,7 @@ class SessionEvent_QueryDetail extends $pb.GeneratedMessage {
     $core.String? queryId,
     $core.String? queryText,
     SessionEvent_QueryDetail_Engine? engine,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $fixnum.Int64? resultSizeBytes,
     $fixnum.Int64? dataProcessedBytes,
   }) {
@@ -729,7 +729,7 @@ class SessionEvent_QueryDetail extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'queryId')
     ..aOS(2, _omitFieldNames ? '' : 'queryText')
     ..e<SessionEvent_QueryDetail_Engine>(3, _omitFieldNames ? '' : 'engine', $pb.PbFieldType.OE, defaultOrMaker: SessionEvent_QueryDetail_Engine.ENGINE_UNSPECIFIED, valueOf: SessionEvent_QueryDetail_Engine.valueOf, enumValues: SessionEvent_QueryDetail_Engine.values)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aInt64(5, _omitFieldNames ? '' : 'resultSizeBytes')
     ..aInt64(6, _omitFieldNames ? '' : 'dataProcessedBytes')
     ..hasRequiredFields = false
@@ -788,15 +788,15 @@ class SessionEvent_QueryDetail extends $pb.GeneratedMessage {
 
   /// Time taken for execution of the query.
   @$pb.TagNumber(4)
-  $1737.Duration get duration => $_getN(3);
+  $1738.Duration get duration => $_getN(3);
   @$pb.TagNumber(4)
-  set duration($1737.Duration v) { setField(4, v); }
+  set duration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureDuration() => $_ensure(3);
+  $1738.Duration ensureDuration() => $_ensure(3);
 
   /// The size of results the query produced.
   @$pb.TagNumber(5)
@@ -835,7 +835,7 @@ class SessionEvent extends $pb.GeneratedMessage {
     SessionEvent_QueryDetail? query,
     $core.bool? eventSucceeded,
     $core.bool? fastStartupEnabled,
-    $1737.Duration? unassignedDuration,
+    $1738.Duration? unassignedDuration,
   }) {
     final $result = create();
     if (message != null) {
@@ -881,7 +881,7 @@ class SessionEvent extends $pb.GeneratedMessage {
     ..aOM<SessionEvent_QueryDetail>(5, _omitFieldNames ? '' : 'query', subBuilder: SessionEvent_QueryDetail.create)
     ..aOB(6, _omitFieldNames ? '' : 'eventSucceeded')
     ..aOB(7, _omitFieldNames ? '' : 'fastStartupEnabled')
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'unassignedDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'unassignedDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -985,15 +985,15 @@ class SessionEvent extends $pb.GeneratedMessage {
 
   /// The idle duration of a warm pooled session before it is assigned to user.
   @$pb.TagNumber(8)
-  $1737.Duration get unassignedDuration => $_getN(7);
+  $1738.Duration get unassignedDuration => $_getN(7);
   @$pb.TagNumber(8)
-  set unassignedDuration($1737.Duration v) { setField(8, v); }
+  set unassignedDuration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUnassignedDuration() => $_has(7);
   @$pb.TagNumber(8)
   void clearUnassignedDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureUnassignedDuration() => $_ensure(7);
+  $1738.Duration ensureUnassignedDuration() => $_ensure(7);
 }
 
 /// Information about Entity resource that the log event is associated with.
@@ -1623,8 +1623,8 @@ class DataScanEvent extends $pb.GeneratedMessage {
   factory DataScanEvent({
     $core.String? dataSource,
     $core.String? jobId,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     DataScanEvent_ScanType? type,
     DataScanEvent_State? state,
     $core.String? message,
@@ -1632,7 +1632,7 @@ class DataScanEvent extends $pb.GeneratedMessage {
     DataScanEvent_Trigger? trigger,
     DataScanEvent_Scope? scope,
     DataScanEvent_PostScanActionsResult? postScanActionsResult,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     DataScanEvent_DataProfileResult? dataProfile,
     DataScanEvent_DataQualityResult? dataQuality,
     DataScanEvent_DataProfileAppliedConfigs? dataProfileConfigs,
@@ -1708,8 +1708,8 @@ class DataScanEvent extends $pb.GeneratedMessage {
     ..oo(1, [201, 202])
     ..aOS(1, _omitFieldNames ? '' : 'dataSource')
     ..aOS(2, _omitFieldNames ? '' : 'jobId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<DataScanEvent_ScanType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: DataScanEvent_ScanType.SCAN_TYPE_UNSPECIFIED, valueOf: DataScanEvent_ScanType.valueOf, enumValues: DataScanEvent_ScanType.values)
     ..e<DataScanEvent_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: DataScanEvent_State.STATE_UNSPECIFIED, valueOf: DataScanEvent_State.valueOf, enumValues: DataScanEvent_State.values)
     ..aOS(7, _omitFieldNames ? '' : 'message')
@@ -1717,7 +1717,7 @@ class DataScanEvent extends $pb.GeneratedMessage {
     ..e<DataScanEvent_Trigger>(9, _omitFieldNames ? '' : 'trigger', $pb.PbFieldType.OE, defaultOrMaker: DataScanEvent_Trigger.TRIGGER_UNSPECIFIED, valueOf: DataScanEvent_Trigger.valueOf, enumValues: DataScanEvent_Trigger.values)
     ..e<DataScanEvent_Scope>(10, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: DataScanEvent_Scope.SCOPE_UNSPECIFIED, valueOf: DataScanEvent_Scope.valueOf, enumValues: DataScanEvent_Scope.values)
     ..aOM<DataScanEvent_PostScanActionsResult>(11, _omitFieldNames ? '' : 'postScanActionsResult', subBuilder: DataScanEvent_PostScanActionsResult.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<DataScanEvent_DataProfileResult>(101, _omitFieldNames ? '' : 'dataProfile', subBuilder: DataScanEvent_DataProfileResult.create)
     ..aOM<DataScanEvent_DataQualityResult>(102, _omitFieldNames ? '' : 'dataQuality', subBuilder: DataScanEvent_DataQualityResult.create)
     ..aOM<DataScanEvent_DataProfileAppliedConfigs>(201, _omitFieldNames ? '' : 'dataProfileConfigs', subBuilder: DataScanEvent_DataProfileAppliedConfigs.create)
@@ -1774,27 +1774,27 @@ class DataScanEvent extends $pb.GeneratedMessage {
 
   /// The time when the data scan job started to run.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The time when the data scan job finished.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 
   /// The type of the data scan.
   @$pb.TagNumber(5)
@@ -1870,15 +1870,15 @@ class DataScanEvent extends $pb.GeneratedMessage {
 
   /// The time when the data scan job was created.
   @$pb.TagNumber(12)
-  $1775.Timestamp get createTime => $_getN(11);
+  $1776.Timestamp get createTime => $_getN(11);
   @$pb.TagNumber(12)
-  set createTime($1775.Timestamp v) { setField(12, v); }
+  set createTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCreateTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearCreateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureCreateTime() => $_ensure(11);
+  $1776.Timestamp ensureCreateTime() => $_ensure(11);
 
   /// Data profile result for data profile type data scan.
   @$pb.TagNumber(101)

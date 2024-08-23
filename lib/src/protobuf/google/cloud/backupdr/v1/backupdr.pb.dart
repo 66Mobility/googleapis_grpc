@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'backupdr.pbenum.dart';
 
 export 'backupdr.pbenum.dart';
@@ -293,8 +293,8 @@ class WorkforceIdentityBasedOAuth2ClientID extends $pb.GeneratedMessage {
 class ManagementServer extends $pb.GeneratedMessage {
   factory ManagementServer({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     ManagementServer_InstanceState? state,
     $core.Iterable<NetworkConfig>? networks,
@@ -306,7 +306,7 @@ class ManagementServer extends $pb.GeneratedMessage {
     WorkforceIdentityBasedManagementURI? workforceIdentityBasedManagementUri,
     WorkforceIdentityBasedOAuth2ClientID? workforceIdentityBasedOauth2ClientId,
     $core.Iterable<$core.String>? baProxyUri,
-    $1780.BoolValue? satisfiesPzs,
+    $1781.BoolValue? satisfiesPzs,
     $core.bool? satisfiesPzi,
   }) {
     final $result = create();
@@ -366,8 +366,8 @@ class ManagementServer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ManagementServer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.backupdr.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'ManagementServer.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.backupdr.v1'))
     ..e<ManagementServer_InstanceState>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ManagementServer_InstanceState.INSTANCE_STATE_UNSPECIFIED, valueOf: ManagementServer_InstanceState.valueOf, enumValues: ManagementServer_InstanceState.values)
     ..pc<NetworkConfig>(8, _omitFieldNames ? '' : 'networks', $pb.PbFieldType.PM, subBuilder: NetworkConfig.create)
@@ -379,7 +379,7 @@ class ManagementServer extends $pb.GeneratedMessage {
     ..aOM<WorkforceIdentityBasedManagementURI>(16, _omitFieldNames ? '' : 'workforceIdentityBasedManagementUri', subBuilder: WorkforceIdentityBasedManagementURI.create)
     ..aOM<WorkforceIdentityBasedOAuth2ClientID>(17, _omitFieldNames ? '' : 'workforceIdentityBasedOauth2ClientId', subBuilder: WorkforceIdentityBasedOAuth2ClientID.create)
     ..pPS(18, _omitFieldNames ? '' : 'baProxyUri')
-    ..aOM<$1780.BoolValue>(19, _omitFieldNames ? '' : 'satisfiesPzs', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(19, _omitFieldNames ? '' : 'satisfiesPzs', subBuilder: $1781.BoolValue.create)
     ..aOB(20, _omitFieldNames ? '' : 'satisfiesPzi')
     ..hasRequiredFields = false
   ;
@@ -417,27 +417,27 @@ class ManagementServer extends $pb.GeneratedMessage {
 
   /// Output only. The time when the instance was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the instance was updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Resource labels to represent user provided metadata.
   /// Labels currently defined:
@@ -552,15 +552,15 @@ class ManagementServer extends $pb.GeneratedMessage {
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(19)
-  $1780.BoolValue get satisfiesPzs => $_getN(14);
+  $1781.BoolValue get satisfiesPzs => $_getN(14);
   @$pb.TagNumber(19)
-  set satisfiesPzs($1780.BoolValue v) { setField(19, v); }
+  set satisfiesPzs($1781.BoolValue v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasSatisfiesPzs() => $_has(14);
   @$pb.TagNumber(19)
   void clearSatisfiesPzs() => clearField(19);
   @$pb.TagNumber(19)
-  $1780.BoolValue ensureSatisfiesPzs() => $_ensure(14);
+  $1781.BoolValue ensureSatisfiesPzs() => $_ensure(14);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(20)
@@ -1017,8 +1017,8 @@ class DeleteManagementServerRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -1058,8 +1058,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.backupdr.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -1092,27 +1092,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

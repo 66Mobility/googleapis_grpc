@@ -15,9 +15,9 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../iam/v1/policy.pb.dart' as $463;
-import '../../protobuf/duration.pb.dart' as $1737;
-import '../../protobuf/timestamp.pb.dart' as $1775;
-import '../../rpc/status.pb.dart' as $1795;
+import '../../protobuf/duration.pb.dart' as $1738;
+import '../../protobuf/timestamp.pb.dart' as $1776;
+import '../../rpc/status.pb.dart' as $1796;
 import 'bigquery_audit_metadata.pbenum.dart';
 
 export 'bigquery_audit_metadata.pbenum.dart';
@@ -2531,7 +2531,7 @@ class BigQueryAuditMetadata_JobConfig_TableCopy extends $pb.GeneratedMessage {
     BigQueryAuditMetadata_EncryptionInfo? destinationTableEncryption,
     $core.bool? sourceTablesTruncated,
     BigQueryAuditMetadata_OperationType? operationType,
-    $1775.Timestamp? destinationExpirationTime,
+    $1776.Timestamp? destinationExpirationTime,
   }) {
     final $result = create();
     if (sourceTables != null) {
@@ -2572,7 +2572,7 @@ class BigQueryAuditMetadata_JobConfig_TableCopy extends $pb.GeneratedMessage {
     ..aOM<BigQueryAuditMetadata_EncryptionInfo>(5, _omitFieldNames ? '' : 'destinationTableEncryption', subBuilder: BigQueryAuditMetadata_EncryptionInfo.create)
     ..aOB(6, _omitFieldNames ? '' : 'sourceTablesTruncated')
     ..e<BigQueryAuditMetadata_OperationType>(7, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: BigQueryAuditMetadata_OperationType.OPERATION_TYPE_UNSPECIFIED, valueOf: BigQueryAuditMetadata_OperationType.valueOf, enumValues: BigQueryAuditMetadata_OperationType.values)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'destinationExpirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'destinationExpirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2667,15 +2667,15 @@ class BigQueryAuditMetadata_JobConfig_TableCopy extends $pb.GeneratedMessage {
   /// Expiration time set on the destination table. Expired tables will be
   /// deleted and their storage reclaimed.
   @$pb.TagNumber(8)
-  $1775.Timestamp get destinationExpirationTime => $_getN(7);
+  $1776.Timestamp get destinationExpirationTime => $_getN(7);
   @$pb.TagNumber(8)
-  set destinationExpirationTime($1775.Timestamp v) { setField(8, v); }
+  set destinationExpirationTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDestinationExpirationTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDestinationExpirationTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDestinationExpirationTime() => $_ensure(7);
+  $1776.Timestamp ensureDestinationExpirationTime() => $_ensure(7);
 }
 
 enum BigQueryAuditMetadata_JobConfig_Config {
@@ -2893,8 +2893,8 @@ class BigQueryAuditMetadata_TableDefinition extends $pb.GeneratedMessage {
 class BigQueryAuditMetadata_JobStatus extends $pb.GeneratedMessage {
   factory BigQueryAuditMetadata_JobStatus({
     BigQueryAuditMetadata_JobState? jobState,
-    $1795.Status? errorResult,
-    $core.Iterable<$1795.Status>? errors,
+    $1796.Status? errorResult,
+    $core.Iterable<$1796.Status>? errors,
   }) {
     final $result = create();
     if (jobState != null) {
@@ -2914,8 +2914,8 @@ class BigQueryAuditMetadata_JobStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigQueryAuditMetadata.JobStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
     ..e<BigQueryAuditMetadata_JobState>(1, _omitFieldNames ? '' : 'jobState', $pb.PbFieldType.OE, defaultOrMaker: BigQueryAuditMetadata_JobState.JOB_STATE_UNSPECIFIED, valueOf: BigQueryAuditMetadata_JobState.valueOf, enumValues: BigQueryAuditMetadata_JobState.values)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'errorResult', subBuilder: $1795.Status.create)
-    ..pc<$1795.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'errorResult', subBuilder: $1796.Status.create)
+    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2952,20 +2952,20 @@ class BigQueryAuditMetadata_JobStatus extends $pb.GeneratedMessage {
 
   /// Job error, if the job failed.
   @$pb.TagNumber(2)
-  $1795.Status get errorResult => $_getN(1);
+  $1796.Status get errorResult => $_getN(1);
   @$pb.TagNumber(2)
-  set errorResult($1795.Status v) { setField(2, v); }
+  set errorResult($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasErrorResult() => $_has(1);
   @$pb.TagNumber(2)
   void clearErrorResult() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureErrorResult() => $_ensure(1);
+  $1796.Status ensureErrorResult() => $_ensure(1);
 
   /// Errors encountered during the running of the job. Does not necessarily
   /// mean that the job has completed or was unsuccessful.
   @$pb.TagNumber(3)
-  $core.List<$1795.Status> get errors => $_getList(2);
+  $core.List<$1796.Status> get errors => $_getList(2);
 }
 
 /// Query job statistics.
@@ -3288,9 +3288,9 @@ enum BigQueryAuditMetadata_JobStats_Extended {
 /// Job statistics.
 class BigQueryAuditMetadata_JobStats extends $pb.GeneratedMessage {
   factory BigQueryAuditMetadata_JobStats({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     BigQueryAuditMetadata_JobStats_Query? queryStats,
     BigQueryAuditMetadata_JobStats_Load? loadStats,
     $fixnum.Int64? totalSlotMs,
@@ -3346,9 +3346,9 @@ class BigQueryAuditMetadata_JobStats extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigQueryAuditMetadata.JobStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
     ..oo(0, [8, 9, 13])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<BigQueryAuditMetadata_JobStats_Query>(8, _omitFieldNames ? '' : 'queryStats', subBuilder: BigQueryAuditMetadata_JobStats_Query.create)
     ..aOM<BigQueryAuditMetadata_JobStats_Load>(9, _omitFieldNames ? '' : 'loadStats', subBuilder: BigQueryAuditMetadata_JobStats_Load.create)
     ..aInt64(10, _omitFieldNames ? '' : 'totalSlotMs')
@@ -3385,39 +3385,39 @@ class BigQueryAuditMetadata_JobStats extends $pb.GeneratedMessage {
 
   /// Job creation time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Job execution start time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Job completion time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Query job statistics.
   @$pb.TagNumber(8)
@@ -3500,10 +3500,10 @@ class BigQueryAuditMetadata_Table extends $pb.GeneratedMessage {
     $core.String? tableName,
     $core.String? schemaJson,
     BigQueryAuditMetadata_TableViewDefinition? view,
-    $1775.Timestamp? expireTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? truncateTime,
+    $1776.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? truncateTime,
     BigQueryAuditMetadata_EncryptionInfo? encryption,
     BigQueryAuditMetadata_EntityInfo? tableInfo,
     $core.bool? schemaJsonTruncated,
@@ -3549,10 +3549,10 @@ class BigQueryAuditMetadata_Table extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'tableName')
     ..aOS(3, _omitFieldNames ? '' : 'schemaJson')
     ..aOM<BigQueryAuditMetadata_TableViewDefinition>(4, _omitFieldNames ? '' : 'view', subBuilder: BigQueryAuditMetadata_TableViewDefinition.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'truncateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'truncateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<BigQueryAuditMetadata_EncryptionInfo>(9, _omitFieldNames ? '' : 'encryption', subBuilder: BigQueryAuditMetadata_EncryptionInfo.create)
     ..aOM<BigQueryAuditMetadata_EntityInfo>(10, _omitFieldNames ? '' : 'tableInfo', subBuilder: BigQueryAuditMetadata_EntityInfo.create)
     ..aOB(11, _omitFieldNames ? '' : 'schemaJsonTruncated')
@@ -3617,51 +3617,51 @@ class BigQueryAuditMetadata_Table extends $pb.GeneratedMessage {
 
   /// Table expiration time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// The table creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// The last time metadata update time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// The last table truncation time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get truncateTime => $_getN(6);
+  $1776.Timestamp get truncateTime => $_getN(6);
   @$pb.TagNumber(8)
-  set truncateTime($1775.Timestamp v) { setField(8, v); }
+  set truncateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTruncateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearTruncateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureTruncateTime() => $_ensure(6);
+  $1776.Timestamp ensureTruncateTime() => $_ensure(6);
 
   /// Table encryption information. Set when non-default encryption is used.
   @$pb.TagNumber(9)
@@ -3703,9 +3703,9 @@ class BigQueryAuditMetadata_Model extends $pb.GeneratedMessage {
   factory BigQueryAuditMetadata_Model({
     $core.String? modelName,
     BigQueryAuditMetadata_EntityInfo? modelInfo,
-    $1775.Timestamp? expireTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     BigQueryAuditMetadata_EncryptionInfo? encryption,
   }) {
     final $result = create();
@@ -3736,9 +3736,9 @@ class BigQueryAuditMetadata_Model extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigQueryAuditMetadata.Model', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'modelName')
     ..aOM<BigQueryAuditMetadata_EntityInfo>(2, _omitFieldNames ? '' : 'modelInfo', subBuilder: BigQueryAuditMetadata_EntityInfo.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<BigQueryAuditMetadata_EncryptionInfo>(8, _omitFieldNames ? '' : 'encryption', subBuilder: BigQueryAuditMetadata_EncryptionInfo.create)
     ..hasRequiredFields = false
   ;
@@ -3790,39 +3790,39 @@ class BigQueryAuditMetadata_Model extends $pb.GeneratedMessage {
 
   /// Model expiration time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(2);
+  $1776.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(2);
+  $1776.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// Model creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Model last update time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Model encryption information. Set when non-default encryption is used.
   @$pb.TagNumber(8)
@@ -3841,8 +3841,8 @@ class BigQueryAuditMetadata_Model extends $pb.GeneratedMessage {
 class BigQueryAuditMetadata_Routine extends $pb.GeneratedMessage {
   factory BigQueryAuditMetadata_Routine({
     $core.String? routineName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (routineName != null) {
@@ -3862,8 +3862,8 @@ class BigQueryAuditMetadata_Routine extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigQueryAuditMetadata.Routine', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'routineName')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3903,27 +3903,27 @@ class BigQueryAuditMetadata_Routine extends $pb.GeneratedMessage {
 
   /// Routine creation time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Routine last update time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// User-provided metadata for an entity, for e.g. dataset, table or model.
@@ -4073,10 +4073,10 @@ class BigQueryAuditMetadata_TableViewDefinition extends $pb.GeneratedMessage {
 class BigQueryAuditMetadata_Dataset extends $pb.GeneratedMessage {
   factory BigQueryAuditMetadata_Dataset({
     $core.String? datasetName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     BigQueryAuditMetadata_BigQueryAcl? acl,
-    $1737.Duration? defaultTableExpireDuration,
+    $1738.Duration? defaultTableExpireDuration,
     BigQueryAuditMetadata_EntityInfo? datasetInfo,
     BigQueryAuditMetadata_EncryptionInfo? defaultEncryption,
     $core.String? defaultCollation,
@@ -4114,10 +4114,10 @@ class BigQueryAuditMetadata_Dataset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigQueryAuditMetadata.Dataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'datasetName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<BigQueryAuditMetadata_BigQueryAcl>(5, _omitFieldNames ? '' : 'acl', subBuilder: BigQueryAuditMetadata_BigQueryAcl.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'defaultTableExpireDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'defaultTableExpireDuration', subBuilder: $1738.Duration.create)
     ..aOM<BigQueryAuditMetadata_EntityInfo>(7, _omitFieldNames ? '' : 'datasetInfo', subBuilder: BigQueryAuditMetadata_EntityInfo.create)
     ..aOM<BigQueryAuditMetadata_EncryptionInfo>(8, _omitFieldNames ? '' : 'defaultEncryption', subBuilder: BigQueryAuditMetadata_EncryptionInfo.create)
     ..aOS(9, _omitFieldNames ? '' : 'defaultCollation')
@@ -4159,27 +4159,27 @@ class BigQueryAuditMetadata_Dataset extends $pb.GeneratedMessage {
 
   /// Dataset creation time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Dataset metadata last update time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The access control list for the dataset.
   @$pb.TagNumber(5)
@@ -4195,15 +4195,15 @@ class BigQueryAuditMetadata_Dataset extends $pb.GeneratedMessage {
 
   /// Default expiration time for tables in the dataset.
   @$pb.TagNumber(6)
-  $1737.Duration get defaultTableExpireDuration => $_getN(4);
+  $1738.Duration get defaultTableExpireDuration => $_getN(4);
   @$pb.TagNumber(6)
-  set defaultTableExpireDuration($1737.Duration v) { setField(6, v); }
+  set defaultTableExpireDuration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDefaultTableExpireDuration() => $_has(4);
   @$pb.TagNumber(6)
   void clearDefaultTableExpireDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureDefaultTableExpireDuration() => $_ensure(4);
+  $1738.Duration ensureDefaultTableExpireDuration() => $_ensure(4);
 
   /// User-provided metadata for the dataset.
   @$pb.TagNumber(7)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// Describes a running service that sends errors.
 class ServiceContext extends $pb.GeneratedMessage {
@@ -403,9 +403,9 @@ class ErrorLog extends $pb.GeneratedMessage {
     ServiceContext? serviceContext,
     ErrorContext? context,
     $core.String? message,
-    $1795.Status? status,
-    $1734.Struct? requestPayload,
-    $1734.Struct? responsePayload,
+    $1796.Status? status,
+    $1735.Struct? requestPayload,
+    $1735.Struct? responsePayload,
     ImportErrorContext? importPayload,
   }) {
     final $result = create();
@@ -440,9 +440,9 @@ class ErrorLog extends $pb.GeneratedMessage {
     ..aOM<ServiceContext>(1, _omitFieldNames ? '' : 'serviceContext', subBuilder: ServiceContext.create)
     ..aOM<ErrorContext>(2, _omitFieldNames ? '' : 'context', subBuilder: ErrorContext.create)
     ..aOS(3, _omitFieldNames ? '' : 'message')
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'requestPayload', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'responsePayload', subBuilder: $1734.Struct.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'requestPayload', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'responsePayload', subBuilder: $1735.Struct.create)
     ..aOM<ImportErrorContext>(7, _omitFieldNames ? '' : 'importPayload', subBuilder: ImportErrorContext.create)
     ..hasRequiredFields = false
   ;
@@ -504,15 +504,15 @@ class ErrorLog extends $pb.GeneratedMessage {
 
   /// The RPC status associated with the error log.
   @$pb.TagNumber(4)
-  $1795.Status get status => $_getN(3);
+  $1796.Status get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($1795.Status v) { setField(4, v); }
+  set status($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
   void clearStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureStatus() => $_ensure(3);
+  $1796.Status ensureStatus() => $_ensure(3);
 
   ///  The API request payload, represented as a protocol buffer.
   ///
@@ -521,15 +521,15 @@ class ErrorLog extends $pb.GeneratedMessage {
   ///    "type.googleapis.com/google.cloud.retail.v2.ProductService.CreateProductRequest"
   ///    "type.googleapis.com/google.cloud.retail.v2.UserEventService.WriteUserEventRequest"
   @$pb.TagNumber(5)
-  $1734.Struct get requestPayload => $_getN(4);
+  $1735.Struct get requestPayload => $_getN(4);
   @$pb.TagNumber(5)
-  set requestPayload($1734.Struct v) { setField(5, v); }
+  set requestPayload($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRequestPayload() => $_has(4);
   @$pb.TagNumber(5)
   void clearRequestPayload() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureRequestPayload() => $_ensure(4);
+  $1735.Struct ensureRequestPayload() => $_ensure(4);
 
   ///  The API response payload, represented as a protocol buffer.
   ///
@@ -541,15 +541,15 @@ class ErrorLog extends $pb.GeneratedMessage {
   ///    "google.cloud.retail.v2.UserEventService.WriteUserEvent"
   ///    "google.cloud.retail.v2.UserEventService.CollectUserEvent"
   @$pb.TagNumber(6)
-  $1734.Struct get responsePayload => $_getN(5);
+  $1735.Struct get responsePayload => $_getN(5);
   @$pb.TagNumber(6)
-  set responsePayload($1734.Struct v) { setField(6, v); }
+  set responsePayload($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasResponsePayload() => $_has(5);
   @$pb.TagNumber(6)
   void clearResponsePayload() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureResponsePayload() => $_ensure(5);
+  $1735.Struct ensureResponsePayload() => $_ensure(5);
 
   /// The error payload that is populated on LRO import APIs.
   @$pb.TagNumber(7)

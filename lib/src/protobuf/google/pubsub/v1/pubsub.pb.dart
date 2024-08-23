@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $1737;
-import '../../protobuf/field_mask.pb.dart' as $2209;
-import '../../protobuf/timestamp.pb.dart' as $1775;
+import '../../protobuf/duration.pb.dart' as $1738;
+import '../../protobuf/field_mask.pb.dart' as $2210;
+import '../../protobuf/timestamp.pb.dart' as $1776;
 import 'pubsub.pbenum.dart';
 import 'schema.pbenum.dart' as $1684;
 
@@ -391,7 +391,7 @@ class Topic extends $pb.GeneratedMessage {
     $core.String? kmsKeyName,
     SchemaSettings? schemaSettings,
     $core.bool? satisfiesPzs,
-    $1737.Duration? messageRetentionDuration,
+    $1738.Duration? messageRetentionDuration,
     Topic_State? state,
     IngestionDataSourceSettings? ingestionDataSourceSettings,
   }) {
@@ -436,7 +436,7 @@ class Topic extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOM<SchemaSettings>(6, _omitFieldNames ? '' : 'schemaSettings', subBuilder: SchemaSettings.create)
     ..aOB(7, _omitFieldNames ? '' : 'satisfiesPzs')
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $1738.Duration.create)
     ..e<Topic_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Topic_State.STATE_UNSPECIFIED, valueOf: Topic_State.valueOf, enumValues: Topic_State.values)
     ..aOM<IngestionDataSourceSettings>(10, _omitFieldNames ? '' : 'ingestionDataSourceSettings', subBuilder: IngestionDataSourceSettings.create)
     ..hasRequiredFields = false
@@ -543,15 +543,15 @@ class Topic extends $pb.GeneratedMessage {
   /// not set, message retention is controlled by settings on individual
   /// subscriptions. Cannot be more than 31 days or less than 10 minutes.
   @$pb.TagNumber(8)
-  $1737.Duration get messageRetentionDuration => $_getN(6);
+  $1738.Duration get messageRetentionDuration => $_getN(6);
   @$pb.TagNumber(8)
-  set messageRetentionDuration($1737.Duration v) { setField(8, v); }
+  set messageRetentionDuration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMessageRetentionDuration() => $_has(6);
   @$pb.TagNumber(8)
   void clearMessageRetentionDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureMessageRetentionDuration() => $_ensure(6);
+  $1738.Duration ensureMessageRetentionDuration() => $_ensure(6);
 
   /// Output only. An output-only field indicating the state of the topic.
   @$pb.TagNumber(9)
@@ -589,7 +589,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
     $core.List<$core.int>? data,
     $core.Map<$core.String, $core.String>? attributes,
     $core.String? messageId,
-    $1775.Timestamp? publishTime,
+    $1776.Timestamp? publishTime,
     $core.String? orderingKey,
   }) {
     final $result = create();
@@ -618,7 +618,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'attributes', entryClassName: 'PubsubMessage.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.pubsub.v1'))
     ..aOS(3, _omitFieldNames ? '' : 'messageId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'publishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'publishTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'orderingKey')
     ..hasRequiredFields = false
   ;
@@ -678,15 +678,15 @@ class PubsubMessage extends $pb.GeneratedMessage {
   /// it receives the `Publish` call. It must not be populated by the
   /// publisher in a `Publish` call.
   @$pb.TagNumber(4)
-  $1775.Timestamp get publishTime => $_getN(3);
+  $1776.Timestamp get publishTime => $_getN(3);
   @$pb.TagNumber(4)
-  set publishTime($1775.Timestamp v) { setField(4, v); }
+  set publishTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPublishTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearPublishTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensurePublishTime() => $_ensure(3);
+  $1776.Timestamp ensurePublishTime() => $_ensure(3);
 
   /// Optional. If non-empty, identifies related messages for which publish order
   /// should be respected. If a `Subscription` has `enable_message_ordering` set
@@ -763,7 +763,7 @@ class GetTopicRequest extends $pb.GeneratedMessage {
 class UpdateTopicRequest extends $pb.GeneratedMessage {
   factory UpdateTopicRequest({
     Topic? topic,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (topic != null) {
@@ -780,7 +780,7 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTopicRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOM<Topic>(1, _omitFieldNames ? '' : 'topic', subBuilder: Topic.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -823,15 +823,15 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
   /// the `topic` provided above, then the updated value is determined by the
   /// policy configured at the project or organization level.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the Publish method.
@@ -1538,7 +1538,7 @@ class Subscription extends $pb.GeneratedMessage {
     PushConfig? pushConfig,
     $core.int? ackDeadlineSeconds,
     $core.bool? retainAckedMessages,
-    $1737.Duration? messageRetentionDuration,
+    $1738.Duration? messageRetentionDuration,
     $core.Map<$core.String, $core.String>? labels,
     $core.bool? enableMessageOrdering,
     ExpirationPolicy? expirationPolicy,
@@ -1547,7 +1547,7 @@ class Subscription extends $pb.GeneratedMessage {
     RetryPolicy? retryPolicy,
     $core.bool? detached,
     $core.bool? enableExactlyOnceDelivery,
-    $1737.Duration? topicMessageRetentionDuration,
+    $1738.Duration? topicMessageRetentionDuration,
     BigQueryConfig? bigqueryConfig,
     Subscription_State? state,
     CloudStorageConfig? cloudStorageConfig,
@@ -1619,7 +1619,7 @@ class Subscription extends $pb.GeneratedMessage {
     ..aOM<PushConfig>(4, _omitFieldNames ? '' : 'pushConfig', subBuilder: PushConfig.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'ackDeadlineSeconds', $pb.PbFieldType.O3)
     ..aOB(7, _omitFieldNames ? '' : 'retainAckedMessages')
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $1738.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Subscription.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.pubsub.v1'))
     ..aOB(10, _omitFieldNames ? '' : 'enableMessageOrdering')
     ..aOM<ExpirationPolicy>(11, _omitFieldNames ? '' : 'expirationPolicy', subBuilder: ExpirationPolicy.create)
@@ -1628,7 +1628,7 @@ class Subscription extends $pb.GeneratedMessage {
     ..aOM<RetryPolicy>(14, _omitFieldNames ? '' : 'retryPolicy', subBuilder: RetryPolicy.create)
     ..aOB(15, _omitFieldNames ? '' : 'detached')
     ..aOB(16, _omitFieldNames ? '' : 'enableExactlyOnceDelivery')
-    ..aOM<$1737.Duration>(17, _omitFieldNames ? '' : 'topicMessageRetentionDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(17, _omitFieldNames ? '' : 'topicMessageRetentionDuration', subBuilder: $1738.Duration.create)
     ..aOM<BigQueryConfig>(18, _omitFieldNames ? '' : 'bigqueryConfig', subBuilder: BigQueryConfig.create)
     ..e<Subscription_State>(19, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Subscription_State.STATE_UNSPECIFIED, valueOf: Subscription_State.valueOf, enumValues: Subscription_State.values)
     ..aOM<CloudStorageConfig>(22, _omitFieldNames ? '' : 'cloudStorageConfig', subBuilder: CloudStorageConfig.create)
@@ -1746,15 +1746,15 @@ class Subscription extends $pb.GeneratedMessage {
   /// and thus configures how far back in time a `Seek` can be done. Defaults to
   /// 7 days. Cannot be more than 7 days or less than 10 minutes.
   @$pb.TagNumber(8)
-  $1737.Duration get messageRetentionDuration => $_getN(5);
+  $1738.Duration get messageRetentionDuration => $_getN(5);
   @$pb.TagNumber(8)
-  set messageRetentionDuration($1737.Duration v) { setField(8, v); }
+  set messageRetentionDuration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMessageRetentionDuration() => $_has(5);
   @$pb.TagNumber(8)
   void clearMessageRetentionDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureMessageRetentionDuration() => $_ensure(5);
+  $1738.Duration ensureMessageRetentionDuration() => $_ensure(5);
 
   /// Optional. See [Creating and managing
   /// labels](https://cloud.google.com/pubsub/docs/labels).
@@ -1885,15 +1885,15 @@ class Subscription extends $pb.GeneratedMessage {
   /// the `message_retention_duration` field in `Topic`. This field is set only
   /// in responses from the server; it is ignored if it is set in any requests.
   @$pb.TagNumber(17)
-  $1737.Duration get topicMessageRetentionDuration => $_getN(14);
+  $1738.Duration get topicMessageRetentionDuration => $_getN(14);
   @$pb.TagNumber(17)
-  set topicMessageRetentionDuration($1737.Duration v) { setField(17, v); }
+  set topicMessageRetentionDuration($1738.Duration v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasTopicMessageRetentionDuration() => $_has(14);
   @$pb.TagNumber(17)
   void clearTopicMessageRetentionDuration() => clearField(17);
   @$pb.TagNumber(17)
-  $1737.Duration ensureTopicMessageRetentionDuration() => $_ensure(14);
+  $1738.Duration ensureTopicMessageRetentionDuration() => $_ensure(14);
 
   /// Optional. If delivery to BigQuery is used with this subscription, this
   /// field is used to configure it.
@@ -1946,8 +1946,8 @@ class Subscription extends $pb.GeneratedMessage {
 ///  delay can be more or less than configured backoff.
 class RetryPolicy extends $pb.GeneratedMessage {
   factory RetryPolicy({
-    $1737.Duration? minimumBackoff,
-    $1737.Duration? maximumBackoff,
+    $1738.Duration? minimumBackoff,
+    $1738.Duration? maximumBackoff,
   }) {
     final $result = create();
     if (minimumBackoff != null) {
@@ -1963,8 +1963,8 @@ class RetryPolicy extends $pb.GeneratedMessage {
   factory RetryPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetryPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'minimumBackoff', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'maximumBackoff', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'minimumBackoff', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'maximumBackoff', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1992,29 +1992,29 @@ class RetryPolicy extends $pb.GeneratedMessage {
   /// Optional. The minimum delay between consecutive deliveries of a given
   /// message. Value should be between 0 and 600 seconds. Defaults to 10 seconds.
   @$pb.TagNumber(1)
-  $1737.Duration get minimumBackoff => $_getN(0);
+  $1738.Duration get minimumBackoff => $_getN(0);
   @$pb.TagNumber(1)
-  set minimumBackoff($1737.Duration v) { setField(1, v); }
+  set minimumBackoff($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinimumBackoff() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinimumBackoff() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMinimumBackoff() => $_ensure(0);
+  $1738.Duration ensureMinimumBackoff() => $_ensure(0);
 
   /// Optional. The maximum delay between consecutive deliveries of a given
   /// message. Value should be between 0 and 600 seconds. Defaults to 600
   /// seconds.
   @$pb.TagNumber(2)
-  $1737.Duration get maximumBackoff => $_getN(1);
+  $1738.Duration get maximumBackoff => $_getN(1);
   @$pb.TagNumber(2)
-  set maximumBackoff($1737.Duration v) { setField(2, v); }
+  set maximumBackoff($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaximumBackoff() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaximumBackoff() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMaximumBackoff() => $_ensure(1);
+  $1738.Duration ensureMaximumBackoff() => $_ensure(1);
 }
 
 ///  Dead lettering is done on a best effort basis. The same message might be
@@ -2112,7 +2112,7 @@ class DeadLetterPolicy extends $pb.GeneratedMessage {
 /// automatic resource deletion).
 class ExpirationPolicy extends $pb.GeneratedMessage {
   factory ExpirationPolicy({
-    $1737.Duration? ttl,
+    $1738.Duration? ttl,
   }) {
     final $result = create();
     if (ttl != null) {
@@ -2125,7 +2125,7 @@ class ExpirationPolicy extends $pb.GeneratedMessage {
   factory ExpirationPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExpirationPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2157,15 +2157,15 @@ class ExpirationPolicy extends $pb.GeneratedMessage {
   /// associated resource, as well. If `ttl` is not set, the associated resource
   /// never expires.
   @$pb.TagNumber(1)
-  $1737.Duration get ttl => $_getN(0);
+  $1738.Duration get ttl => $_getN(0);
   @$pb.TagNumber(1)
-  set ttl($1737.Duration v) { setField(1, v); }
+  set ttl($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTtl() => $_has(0);
   @$pb.TagNumber(1)
   void clearTtl() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTtl() => $_ensure(0);
+  $1738.Duration ensureTtl() => $_ensure(0);
 }
 
 /// Contains information needed for generating an
@@ -2785,7 +2785,7 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
     $core.String? filenameSuffix,
     CloudStorageConfig_TextConfig? textConfig,
     CloudStorageConfig_AvroConfig? avroConfig,
-    $1737.Duration? maxDuration,
+    $1738.Duration? maxDuration,
     $fixnum.Int64? maxBytes,
     $fixnum.Int64? maxMessages,
     CloudStorageConfig_State? state,
@@ -2844,7 +2844,7 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'filenameSuffix')
     ..aOM<CloudStorageConfig_TextConfig>(4, _omitFieldNames ? '' : 'textConfig', subBuilder: CloudStorageConfig_TextConfig.create)
     ..aOM<CloudStorageConfig_AvroConfig>(5, _omitFieldNames ? '' : 'avroConfig', subBuilder: CloudStorageConfig_AvroConfig.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'maxDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'maxDuration', subBuilder: $1738.Duration.create)
     ..aInt64(7, _omitFieldNames ? '' : 'maxBytes')
     ..aInt64(8, _omitFieldNames ? '' : 'maxMessages')
     ..e<CloudStorageConfig_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CloudStorageConfig_State.STATE_UNSPECIFIED, valueOf: CloudStorageConfig_State.valueOf, enumValues: CloudStorageConfig_State.values)
@@ -2943,15 +2943,15 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
   /// file is created. Min 1 minute, max 10 minutes, default 5 minutes. May not
   /// exceed the subscription's acknowledgement deadline.
   @$pb.TagNumber(6)
-  $1737.Duration get maxDuration => $_getN(5);
+  $1738.Duration get maxDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set maxDuration($1737.Duration v) { setField(6, v); }
+  set maxDuration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMaxDuration() => $_has(5);
   @$pb.TagNumber(6)
   void clearMaxDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureMaxDuration() => $_ensure(5);
+  $1738.Duration ensureMaxDuration() => $_ensure(5);
 
   /// Optional. The maximum bytes that can be written to a Cloud Storage file
   /// before a new file is created. Min 1 KB, max 10 GiB. The max_bytes limit may
@@ -3171,7 +3171,7 @@ class GetSubscriptionRequest extends $pb.GeneratedMessage {
 class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   factory UpdateSubscriptionRequest({
     Subscription? subscription,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (subscription != null) {
@@ -3188,7 +3188,7 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSubscriptionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOM<Subscription>(1, _omitFieldNames ? '' : 'subscription', subBuilder: Subscription.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3228,15 +3228,15 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   /// Required. Indicates which fields in the provided subscription to update.
   /// Must be specified and non-empty.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the `ListSubscriptions` method.
@@ -4403,7 +4403,7 @@ class CreateSnapshotRequest extends $pb.GeneratedMessage {
 class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   factory UpdateSnapshotRequest({
     Snapshot? snapshot,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (snapshot != null) {
@@ -4420,7 +4420,7 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSnapshotRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOM<Snapshot>(1, _omitFieldNames ? '' : 'snapshot', subBuilder: Snapshot.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4460,15 +4460,15 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   /// Required. Indicates which fields in the provided snapshot to update.
   /// Must be specified and non-empty.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A snapshot resource. Snapshots are used in
@@ -4480,7 +4480,7 @@ class Snapshot extends $pb.GeneratedMessage {
   factory Snapshot({
     $core.String? name,
     $core.String? topic,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -4505,7 +4505,7 @@ class Snapshot extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Snapshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'topic')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Snapshot.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.pubsub.v1'))
     ..hasRequiredFields = false
   ;
@@ -4563,15 +4563,15 @@ class Snapshot extends $pb.GeneratedMessage {
   /// exists -- will expire in 4 days. The service will refuse to create a
   /// snapshot that would expire in less than 1 hour after creation.
   @$pb.TagNumber(3)
-  $1775.Timestamp get expireTime => $_getN(2);
+  $1776.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($1775.Timestamp v) { setField(3, v); }
+  set expireTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureExpireTime() => $_ensure(2);
+  $1776.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// Optional. See [Creating and managing labels]
   /// (https://cloud.google.com/pubsub/docs/labels).
@@ -4843,7 +4843,7 @@ enum SeekRequest_Target {
 class SeekRequest extends $pb.GeneratedMessage {
   factory SeekRequest({
     $core.String? subscription,
-    $1775.Timestamp? time,
+    $1776.Timestamp? time,
     $core.String? snapshot,
   }) {
     final $result = create();
@@ -4870,7 +4870,7 @@ class SeekRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SeekRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'subscription')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'time', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'time', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'snapshot')
     ..hasRequiredFields = false
   ;
@@ -4921,15 +4921,15 @@ class SeekRequest extends $pb.GeneratedMessage {
   /// creation time), only retained messages will be marked as unacknowledged,
   /// and already-expunged messages will not be restored.
   @$pb.TagNumber(2)
-  $1775.Timestamp get time => $_getN(1);
+  $1776.Timestamp get time => $_getN(1);
   @$pb.TagNumber(2)
-  set time($1775.Timestamp v) { setField(2, v); }
+  set time($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureTime() => $_ensure(1);
+  $1776.Timestamp ensureTime() => $_ensure(1);
 
   /// Optional. The snapshot to seek to. The snapshot's topic must be the same
   /// as that of the provided subscription. Format is

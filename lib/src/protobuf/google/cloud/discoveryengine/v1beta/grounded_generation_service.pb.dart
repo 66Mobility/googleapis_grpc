@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'grounding.pb.dart' as $4512;
+import 'grounding.pb.dart' as $4514;
 
 /// Specification for the grounding check.
 class CheckGroundingSpec extends $pb.GeneratedMessage {
@@ -78,7 +78,7 @@ class CheckGroundingRequest extends $pb.GeneratedMessage {
   factory CheckGroundingRequest({
     $core.String? groundingConfig,
     $core.String? answerCandidate,
-    $core.Iterable<$4512.GroundingFact>? facts,
+    $core.Iterable<$4514.GroundingFact>? facts,
     CheckGroundingSpec? groundingSpec,
     $core.Map<$core.String, $core.String>? userLabels,
   }) {
@@ -107,7 +107,7 @@ class CheckGroundingRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckGroundingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'groundingConfig')
     ..aOS(2, _omitFieldNames ? '' : 'answerCandidate')
-    ..pc<$4512.GroundingFact>(3, _omitFieldNames ? '' : 'facts', $pb.PbFieldType.PM, subBuilder: $4512.GroundingFact.create)
+    ..pc<$4514.GroundingFact>(3, _omitFieldNames ? '' : 'facts', $pb.PbFieldType.PM, subBuilder: $4514.GroundingFact.create)
     ..aOM<CheckGroundingSpec>(4, _omitFieldNames ? '' : 'groundingSpec', subBuilder: CheckGroundingSpec.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'userLabels', entryClassName: 'CheckGroundingRequest.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1beta'))
     ..hasRequiredFields = false
@@ -158,7 +158,7 @@ class CheckGroundingRequest extends $pb.GeneratedMessage {
   /// List of facts for the grounding check.
   /// We support up to 200 facts.
   @$pb.TagNumber(3)
-  $core.List<$4512.GroundingFact> get facts => $_getList(2);
+  $core.List<$4514.GroundingFact> get facts => $_getList(2);
 
   /// Configuration of the grounding check.
   @$pb.TagNumber(4)
@@ -319,7 +319,7 @@ class CheckGroundingResponse_Claim extends $pb.GeneratedMessage {
 class CheckGroundingResponse extends $pb.GeneratedMessage {
   factory CheckGroundingResponse({
     $core.double? supportScore,
-    $core.Iterable<$4512.FactChunk>? citedChunks,
+    $core.Iterable<$4514.FactChunk>? citedChunks,
     $core.Iterable<CheckGroundingResponse_Claim>? claims,
   }) {
     final $result = create();
@@ -340,7 +340,7 @@ class CheckGroundingResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckGroundingResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'supportScore', $pb.PbFieldType.OF)
-    ..pc<$4512.FactChunk>(3, _omitFieldNames ? '' : 'citedChunks', $pb.PbFieldType.PM, subBuilder: $4512.FactChunk.create)
+    ..pc<$4514.FactChunk>(3, _omitFieldNames ? '' : 'citedChunks', $pb.PbFieldType.PM, subBuilder: $4514.FactChunk.create)
     ..pc<CheckGroundingResponse_Claim>(4, _omitFieldNames ? '' : 'claims', $pb.PbFieldType.PM, subBuilder: CheckGroundingResponse_Claim.create)
     ..hasRequiredFields = false
   ;
@@ -381,7 +381,7 @@ class CheckGroundingResponse extends $pb.GeneratedMessage {
   /// List of facts cited across all claims in the answer candidate.
   /// These are derived from the facts supplied in the request.
   @$pb.TagNumber(3)
-  $core.List<$4512.FactChunk> get citedChunks => $_getList(1);
+  $core.List<$4514.FactChunk> get citedChunks => $_getList(1);
 
   /// Claim texts and citation info across all claims in the answer candidate.
   @$pb.TagNumber(4)

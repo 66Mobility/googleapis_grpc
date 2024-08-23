@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'sessions.pb.dart' as $833;
-import 'shared.pb.dart' as $4470;
+import 'shared.pb.dart' as $4472;
 
 /// A request to create a session template.
 class CreateSessionTemplateRequest extends $pb.GeneratedMessage {
@@ -417,14 +417,14 @@ enum SessionTemplate_SessionConfig {
 class SessionTemplate extends $pb.GeneratedMessage {
   factory SessionTemplate({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $833.JupyterConfig? jupyterSession,
     $core.String? creator,
     $core.Map<$core.String, $core.String>? labels,
-    $4470.RuntimeConfig? runtimeConfig,
-    $4470.EnvironmentConfig? environmentConfig,
+    $4472.RuntimeConfig? runtimeConfig,
+    $4472.EnvironmentConfig? environmentConfig,
     $core.String? description,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? uuid,
   }) {
     final $result = create();
@@ -471,14 +471,14 @@ class SessionTemplate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SessionTemplate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$833.JupyterConfig>(3, _omitFieldNames ? '' : 'jupyterSession', subBuilder: $833.JupyterConfig.create)
     ..aOS(5, _omitFieldNames ? '' : 'creator')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'SessionTemplate.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
-    ..aOM<$4470.RuntimeConfig>(7, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: $4470.RuntimeConfig.create)
-    ..aOM<$4470.EnvironmentConfig>(8, _omitFieldNames ? '' : 'environmentConfig', subBuilder: $4470.EnvironmentConfig.create)
+    ..aOM<$4472.RuntimeConfig>(7, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: $4472.RuntimeConfig.create)
+    ..aOM<$4472.EnvironmentConfig>(8, _omitFieldNames ? '' : 'environmentConfig', subBuilder: $4472.EnvironmentConfig.create)
     ..aOS(9, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'uuid')
     ..hasRequiredFields = false
   ;
@@ -519,15 +519,15 @@ class SessionTemplate extends $pb.GeneratedMessage {
 
   /// Output only. The time when the template was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Optional. Jupyter session config.
   @$pb.TagNumber(3)
@@ -563,27 +563,27 @@ class SessionTemplate extends $pb.GeneratedMessage {
 
   /// Optional. Runtime configuration for session execution.
   @$pb.TagNumber(7)
-  $4470.RuntimeConfig get runtimeConfig => $_getN(5);
+  $4472.RuntimeConfig get runtimeConfig => $_getN(5);
   @$pb.TagNumber(7)
-  set runtimeConfig($4470.RuntimeConfig v) { setField(7, v); }
+  set runtimeConfig($4472.RuntimeConfig v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRuntimeConfig() => $_has(5);
   @$pb.TagNumber(7)
   void clearRuntimeConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $4470.RuntimeConfig ensureRuntimeConfig() => $_ensure(5);
+  $4472.RuntimeConfig ensureRuntimeConfig() => $_ensure(5);
 
   /// Optional. Environment configuration for session execution.
   @$pb.TagNumber(8)
-  $4470.EnvironmentConfig get environmentConfig => $_getN(6);
+  $4472.EnvironmentConfig get environmentConfig => $_getN(6);
   @$pb.TagNumber(8)
-  set environmentConfig($4470.EnvironmentConfig v) { setField(8, v); }
+  set environmentConfig($4472.EnvironmentConfig v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEnvironmentConfig() => $_has(6);
   @$pb.TagNumber(8)
   void clearEnvironmentConfig() => clearField(8);
   @$pb.TagNumber(8)
-  $4470.EnvironmentConfig ensureEnvironmentConfig() => $_ensure(6);
+  $4472.EnvironmentConfig ensureEnvironmentConfig() => $_ensure(6);
 
   /// Optional. Brief description of the template.
   @$pb.TagNumber(9)
@@ -597,15 +597,15 @@ class SessionTemplate extends $pb.GeneratedMessage {
 
   /// Output only. The time the template was last updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. A session template UUID (Unique Universal Identifier). The
   /// service generates this value when it creates the session template.

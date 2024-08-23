@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4281;
-import 'machine_resources.pb.dart' as $4287;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4282;
+import 'machine_resources.pb.dart' as $4288;
 
 /// A description of resources that can be shared by multiple DeployedModels,
 /// whose underlying specification consists of a DedicatedResources.
 class DeploymentResourcePool extends $pb.GeneratedMessage {
   factory DeploymentResourcePool({
     $core.String? name,
-    $4287.DedicatedResources? dedicatedResources,
-    $1775.Timestamp? createTime,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4288.DedicatedResources? dedicatedResources,
+    $1776.Timestamp? createTime,
+    $4282.EncryptionSpec? encryptionSpec,
     $core.String? serviceAccount,
     $core.bool? disableContainerLogging,
     $core.bool? satisfiesPzs,
@@ -63,9 +63,9 @@ class DeploymentResourcePool extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeploymentResourcePool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4287.DedicatedResources>(2, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4287.DedicatedResources.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4281.EncryptionSpec>(5, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4288.DedicatedResources>(2, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4288.DedicatedResources.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4282.EncryptionSpec>(5, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOS(6, _omitFieldNames ? '' : 'serviceAccount')
     ..aOB(7, _omitFieldNames ? '' : 'disableContainerLogging')
     ..aOB(8, _omitFieldNames ? '' : 'satisfiesPzs')
@@ -109,41 +109,41 @@ class DeploymentResourcePool extends $pb.GeneratedMessage {
   /// Required. The underlying DedicatedResources that the DeploymentResourcePool
   /// uses.
   @$pb.TagNumber(2)
-  $4287.DedicatedResources get dedicatedResources => $_getN(1);
+  $4288.DedicatedResources get dedicatedResources => $_getN(1);
   @$pb.TagNumber(2)
-  set dedicatedResources($4287.DedicatedResources v) { setField(2, v); }
+  set dedicatedResources($4288.DedicatedResources v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDedicatedResources() => $_has(1);
   @$pb.TagNumber(2)
   void clearDedicatedResources() => clearField(2);
   @$pb.TagNumber(2)
-  $4287.DedicatedResources ensureDedicatedResources() => $_ensure(1);
+  $4288.DedicatedResources ensureDedicatedResources() => $_ensure(1);
 
   /// Output only. Timestamp when this DeploymentResourcePool was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Customer-managed encryption key spec for a DeploymentResourcePool. If set,
   /// this DeploymentResourcePool will be secured by this key. Endpoints and the
   /// DeploymentResourcePool they deploy in need to have the same EncryptionSpec.
   @$pb.TagNumber(5)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(3);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(3);
   @$pb.TagNumber(5)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(5, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEncryptionSpec() => $_has(3);
   @$pb.TagNumber(5)
   void clearEncryptionSpec() => clearField(5);
   @$pb.TagNumber(5)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(3);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(3);
 
   ///  The service account that the DeploymentResourcePool's container(s) run as.
   ///  Specify the email address of the service account. If this service account

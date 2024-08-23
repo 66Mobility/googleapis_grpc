@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'operations.pbenum.dart';
 
 export 'operations.pbenum.dart';
@@ -25,9 +25,9 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
   factory OperationMetadataV1({
     $core.String? target,
     OperationType? type,
-    $1794.Any? request,
+    $1795.Any? request,
     $fixnum.Int64? versionId,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? buildId,
     $core.String? sourceToken,
     $core.String? buildName,
@@ -66,9 +66,9 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadataV1', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.functions.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'target')
     ..e<OperationType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: OperationType.OPERATION_UNSPECIFIED, valueOf: OperationType.valueOf, enumValues: OperationType.values)
-    ..aOM<$1794.Any>(3, _omitFieldNames ? '' : 'request', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(3, _omitFieldNames ? '' : 'request', subBuilder: $1795.Any.create)
     ..aInt64(4, _omitFieldNames ? '' : 'versionId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'buildId')
     ..aOS(7, _omitFieldNames ? '' : 'sourceToken')
     ..aOS(8, _omitFieldNames ? '' : 'buildName')
@@ -119,15 +119,15 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
 
   /// The original request that started the operation.
   @$pb.TagNumber(3)
-  $1794.Any get request => $_getN(2);
+  $1795.Any get request => $_getN(2);
   @$pb.TagNumber(3)
-  set request($1794.Any v) { setField(3, v); }
+  set request($1795.Any v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRequest() => $_has(2);
   @$pb.TagNumber(3)
   void clearRequest() => clearField(3);
   @$pb.TagNumber(3)
-  $1794.Any ensureRequest() => $_ensure(2);
+  $1795.Any ensureRequest() => $_ensure(2);
 
   /// Version id of the function created or updated by an API call.
   /// This field is only populated for Create and Update operations.
@@ -142,15 +142,15 @@ class OperationMetadataV1 extends $pb.GeneratedMessage {
 
   /// The last update timestamp of the operation.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// The Cloud Build ID of the function created or updated by an API call.
   /// This field is only populated for Create and Update operations.

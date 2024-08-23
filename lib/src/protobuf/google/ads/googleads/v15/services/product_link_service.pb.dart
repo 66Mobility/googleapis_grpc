@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../resources/product_link.pb.dart' as $2487;
+import '../resources/product_link.pb.dart' as $2488;
 
 /// Request message for
 /// [ProductLinkService.CreateProductLink][google.ads.googleads.v15.services.ProductLinkService.CreateProductLink].
 class CreateProductLinkRequest extends $pb.GeneratedMessage {
   factory CreateProductLinkRequest({
     $core.String? customerId,
-    $2487.ProductLink? productLink,
+    $2488.ProductLink? productLink,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -37,7 +37,7 @@ class CreateProductLinkRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateProductLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..aOM<$2487.ProductLink>(2, _omitFieldNames ? '' : 'productLink', subBuilder: $2487.ProductLink.create)
+    ..aOM<$2488.ProductLink>(2, _omitFieldNames ? '' : 'productLink', subBuilder: $2488.ProductLink.create)
     ..hasRequiredFields = false
   ;
 
@@ -74,15 +74,15 @@ class CreateProductLinkRequest extends $pb.GeneratedMessage {
 
   /// Required. The product link to be created.
   @$pb.TagNumber(2)
-  $2487.ProductLink get productLink => $_getN(1);
+  $2488.ProductLink get productLink => $_getN(1);
   @$pb.TagNumber(2)
-  set productLink($2487.ProductLink v) { setField(2, v); }
+  set productLink($2488.ProductLink v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProductLink() => $_has(1);
   @$pb.TagNumber(2)
   void clearProductLink() => clearField(2);
   @$pb.TagNumber(2)
-  $2487.ProductLink ensureProductLink() => $_ensure(1);
+  $2488.ProductLink ensureProductLink() => $_ensure(1);
 }
 
 /// Response message for

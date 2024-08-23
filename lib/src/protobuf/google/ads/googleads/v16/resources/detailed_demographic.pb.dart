@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criterion_category_availability.pb.dart' as $2974;
+import '../common/criterion_category_availability.pb.dart' as $2975;
 
 /// A detailed demographic: a particular interest-based vertical to be targeted
 /// to reach users based on long-term life facts.
@@ -25,7 +25,7 @@ class DetailedDemographic extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? parent,
     $core.bool? launchedToAll,
-    $core.Iterable<$2974.CriterionCategoryAvailability>? availabilities,
+    $core.Iterable<$2975.CriterionCategoryAvailability>? availabilities,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -58,7 +58,7 @@ class DetailedDemographic extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'parent')
     ..aOB(5, _omitFieldNames ? '' : 'launchedToAll')
-    ..pc<$2974.CriterionCategoryAvailability>(6, _omitFieldNames ? '' : 'availabilities', $pb.PbFieldType.PM, subBuilder: $2974.CriterionCategoryAvailability.create)
+    ..pc<$2975.CriterionCategoryAvailability>(6, _omitFieldNames ? '' : 'availabilities', $pb.PbFieldType.PM, subBuilder: $2975.CriterionCategoryAvailability.create)
     ..hasRequiredFields = false
   ;
 
@@ -140,7 +140,7 @@ class DetailedDemographic extends $pb.GeneratedMessage {
 
   /// Output only. Availability information of the detailed demographic.
   @$pb.TagNumber(6)
-  $core.List<$2974.CriterionCategoryAvailability> get availabilities => $_getList(5);
+  $core.List<$2975.CriterionCategoryAvailability> get availabilities => $_getList(5);
 }
 
 

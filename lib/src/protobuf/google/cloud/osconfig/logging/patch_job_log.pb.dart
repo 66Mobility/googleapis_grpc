@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'patch_job_log.pbenum.dart';
 
 export 'patch_job_log.pbenum.dart';
@@ -276,8 +276,8 @@ class PatchJobCompletedLog extends $pb.GeneratedMessage {
     PatchJobCompletedLog_InstanceDetailsSummary? instanceDetailsSummary,
     $core.bool? dryRun,
     $core.String? errorMessage,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (patchJob != null) {
@@ -313,8 +313,8 @@ class PatchJobCompletedLog extends $pb.GeneratedMessage {
     ..aOM<PatchJobCompletedLog_InstanceDetailsSummary>(3, _omitFieldNames ? '' : 'instanceDetailsSummary', subBuilder: PatchJobCompletedLog_InstanceDetailsSummary.create)
     ..aOB(4, _omitFieldNames ? '' : 'dryRun')
     ..aOS(5, _omitFieldNames ? '' : 'errorMessage')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -396,27 +396,27 @@ class PatchJobCompletedLog extends $pb.GeneratedMessage {
 
   /// Time this PatchJob was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Last time this PatchJob was updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 }
 
 

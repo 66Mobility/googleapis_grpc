@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../common/common.pbenum.dart' as $4757;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../common/common.pbenum.dart' as $4759;
 import 'discovery.pbenum.dart';
 
 export 'discovery.pbenum.dart';
@@ -25,7 +25,7 @@ export 'discovery.pbenum.dart';
 /// consumer's project at the start of analysis.
 class Discovery extends $pb.GeneratedMessage {
   factory Discovery({
-    $4757.NoteKind? analysisKind,
+    $4759.NoteKind? analysisKind,
   }) {
     final $result = create();
     if (analysisKind != null) {
@@ -38,7 +38,7 @@ class Discovery extends $pb.GeneratedMessage {
   factory Discovery.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Discovery', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1beta1.discovery'), createEmptyInstance: create)
-    ..e<$4757.NoteKind>(1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE, defaultOrMaker: $4757.NoteKind.NOTE_KIND_UNSPECIFIED, valueOf: $4757.NoteKind.valueOf, enumValues: $4757.NoteKind.values)
+    ..e<$4759.NoteKind>(1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE, defaultOrMaker: $4759.NoteKind.NOTE_KIND_UNSPECIFIED, valueOf: $4759.NoteKind.valueOf, enumValues: $4759.NoteKind.values)
     ..hasRequiredFields = false
   ;
 
@@ -66,9 +66,9 @@ class Discovery extends $pb.GeneratedMessage {
   /// Required. Immutable. The kind of analysis that is handled by this
   /// discovery.
   @$pb.TagNumber(1)
-  $4757.NoteKind get analysisKind => $_getN(0);
+  $4759.NoteKind get analysisKind => $_getN(0);
   @$pb.TagNumber(1)
-  set analysisKind($4757.NoteKind v) { setField(1, v); }
+  set analysisKind($4759.NoteKind v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAnalysisKind() => $_has(0);
   @$pb.TagNumber(1)
@@ -133,9 +133,9 @@ class Details extends $pb.GeneratedMessage {
 class Discovered extends $pb.GeneratedMessage {
   factory Discovered({
     Discovered_ContinuousAnalysis? continuousAnalysis,
-    $1775.Timestamp? lastAnalysisTime,
+    $1776.Timestamp? lastAnalysisTime,
     Discovered_AnalysisStatus? analysisStatus,
-    $1795.Status? analysisStatusError,
+    $1796.Status? analysisStatusError,
   }) {
     final $result = create();
     if (continuousAnalysis != null) {
@@ -158,9 +158,9 @@ class Discovered extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Discovered', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1beta1.discovery'), createEmptyInstance: create)
     ..e<Discovered_ContinuousAnalysis>(1, _omitFieldNames ? '' : 'continuousAnalysis', $pb.PbFieldType.OE, defaultOrMaker: Discovered_ContinuousAnalysis.CONTINUOUS_ANALYSIS_UNSPECIFIED, valueOf: Discovered_ContinuousAnalysis.valueOf, enumValues: Discovered_ContinuousAnalysis.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'lastAnalysisTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'lastAnalysisTime', subBuilder: $1776.Timestamp.create)
     ..e<Discovered_AnalysisStatus>(3, _omitFieldNames ? '' : 'analysisStatus', $pb.PbFieldType.OE, defaultOrMaker: Discovered_AnalysisStatus.ANALYSIS_STATUS_UNSPECIFIED, valueOf: Discovered_AnalysisStatus.valueOf, enumValues: Discovered_AnalysisStatus.values)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'analysisStatusError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'analysisStatusError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -197,15 +197,15 @@ class Discovered extends $pb.GeneratedMessage {
 
   /// The last time continuous analysis was done for this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get lastAnalysisTime => $_getN(1);
+  $1776.Timestamp get lastAnalysisTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lastAnalysisTime($1775.Timestamp v) { setField(2, v); }
+  set lastAnalysisTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLastAnalysisTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLastAnalysisTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLastAnalysisTime() => $_ensure(1);
+  $1776.Timestamp ensureLastAnalysisTime() => $_ensure(1);
 
   /// The status of discovery for the resource.
   @$pb.TagNumber(3)
@@ -221,15 +221,15 @@ class Discovered extends $pb.GeneratedMessage {
   /// details to show to the user. The LocalizedMessage is output only and
   /// populated by the API.
   @$pb.TagNumber(4)
-  $1795.Status get analysisStatusError => $_getN(3);
+  $1796.Status get analysisStatusError => $_getN(3);
   @$pb.TagNumber(4)
-  set analysisStatusError($1795.Status v) { setField(4, v); }
+  set analysisStatusError($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAnalysisStatusError() => $_has(3);
   @$pb.TagNumber(4)
   void clearAnalysisStatusError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureAnalysisStatusError() => $_ensure(3);
+  $1796.Status ensureAnalysisStatusError() => $_ensure(3);
 }
 
 

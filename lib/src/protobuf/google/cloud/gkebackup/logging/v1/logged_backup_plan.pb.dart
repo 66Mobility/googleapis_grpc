@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'logged_common.pb.dart' as $4529;
+import 'logged_common.pb.dart' as $4531;
 
 /// RentionPolicy is an inner message type to define:
 /// 1. When to automatically delete Backups created under this BackupPlan
@@ -186,11 +186,11 @@ enum LoggedBackupPlan_BackupConfig_BackupScope {
 class LoggedBackupPlan_BackupConfig extends $pb.GeneratedMessage {
   factory LoggedBackupPlan_BackupConfig({
     $core.bool? allNamespaces,
-    $4529.Namespaces? selectedNamespaces,
-    $4529.NamespacedNames? selectedApplications,
+    $4531.Namespaces? selectedNamespaces,
+    $4531.NamespacedNames? selectedApplications,
     $core.bool? includeVolumeData,
     $core.bool? includeSecrets,
-    $4529.EncryptionKey? encryptionKey,
+    $4531.EncryptionKey? encryptionKey,
   }) {
     final $result = create();
     if (allNamespaces != null) {
@@ -226,11 +226,11 @@ class LoggedBackupPlan_BackupConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LoggedBackupPlan.BackupConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.logging.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
     ..aOB(1, _omitFieldNames ? '' : 'allNamespaces')
-    ..aOM<$4529.Namespaces>(2, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4529.Namespaces.create)
-    ..aOM<$4529.NamespacedNames>(3, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4529.NamespacedNames.create)
+    ..aOM<$4531.Namespaces>(2, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4531.Namespaces.create)
+    ..aOM<$4531.NamespacedNames>(3, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4531.NamespacedNames.create)
     ..aOB(4, _omitFieldNames ? '' : 'includeVolumeData')
     ..aOB(5, _omitFieldNames ? '' : 'includeSecrets')
-    ..aOM<$4529.EncryptionKey>(6, _omitFieldNames ? '' : 'encryptionKey', subBuilder: $4529.EncryptionKey.create)
+    ..aOM<$4531.EncryptionKey>(6, _omitFieldNames ? '' : 'encryptionKey', subBuilder: $4531.EncryptionKey.create)
     ..hasRequiredFields = false
   ;
 
@@ -270,27 +270,27 @@ class LoggedBackupPlan_BackupConfig extends $pb.GeneratedMessage {
 
   /// If set, backup the list of namespaces
   @$pb.TagNumber(2)
-  $4529.Namespaces get selectedNamespaces => $_getN(1);
+  $4531.Namespaces get selectedNamespaces => $_getN(1);
   @$pb.TagNumber(2)
-  set selectedNamespaces($4529.Namespaces v) { setField(2, v); }
+  set selectedNamespaces($4531.Namespaces v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSelectedNamespaces() => $_has(1);
   @$pb.TagNumber(2)
   void clearSelectedNamespaces() => clearField(2);
   @$pb.TagNumber(2)
-  $4529.Namespaces ensureSelectedNamespaces() => $_ensure(1);
+  $4531.Namespaces ensureSelectedNamespaces() => $_ensure(1);
 
   /// If set, backup the list of applications
   @$pb.TagNumber(3)
-  $4529.NamespacedNames get selectedApplications => $_getN(2);
+  $4531.NamespacedNames get selectedApplications => $_getN(2);
   @$pb.TagNumber(3)
-  set selectedApplications($4529.NamespacedNames v) { setField(3, v); }
+  set selectedApplications($4531.NamespacedNames v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSelectedApplications() => $_has(2);
   @$pb.TagNumber(3)
   void clearSelectedApplications() => clearField(3);
   @$pb.TagNumber(3)
-  $4529.NamespacedNames ensureSelectedApplications() => $_ensure(2);
+  $4531.NamespacedNames ensureSelectedApplications() => $_ensure(2);
 
   /// A boolean flag specifies whether volume data should be backed up
   @$pb.TagNumber(4)
@@ -315,15 +315,15 @@ class LoggedBackupPlan_BackupConfig extends $pb.GeneratedMessage {
   /// Custom encryption key. For preview, support GCP KMS only.
   /// This only contains the key metadata, and no key material.
   @$pb.TagNumber(6)
-  $4529.EncryptionKey get encryptionKey => $_getN(5);
+  $4531.EncryptionKey get encryptionKey => $_getN(5);
   @$pb.TagNumber(6)
-  set encryptionKey($4529.EncryptionKey v) { setField(6, v); }
+  set encryptionKey($4531.EncryptionKey v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEncryptionKey() => $_has(5);
   @$pb.TagNumber(6)
   void clearEncryptionKey() => clearField(6);
   @$pb.TagNumber(6)
-  $4529.EncryptionKey ensureEncryptionKey() => $_ensure(5);
+  $4531.EncryptionKey ensureEncryptionKey() => $_ensure(5);
 }
 
 /// BackupPlan as stored in Platform log. It's used to log the details of

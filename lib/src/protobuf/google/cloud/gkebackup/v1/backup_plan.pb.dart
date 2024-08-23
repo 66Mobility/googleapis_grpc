@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
-import '../../../type/dayofweek.pbenum.dart' as $4321;
-import '../../../type/timeofday.pb.dart' as $4320;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
+import '../../../type/dayofweek.pbenum.dart' as $4322;
+import '../../../type/timeofday.pb.dart' as $4321;
 import 'backup_plan.pbenum.dart';
-import 'common.pb.dart' as $4534;
+import 'common.pb.dart' as $4536;
 
 export 'backup_plan.pbenum.dart';
 
@@ -142,7 +142,7 @@ class BackupPlan_Schedule extends $pb.GeneratedMessage {
     $core.String? cronSchedule,
     $core.bool? paused,
     RpoConfig? rpoConfig,
-    $1775.Timestamp? nextScheduledBackupTime,
+    $1776.Timestamp? nextScheduledBackupTime,
   }) {
     final $result = create();
     if (cronSchedule != null) {
@@ -167,7 +167,7 @@ class BackupPlan_Schedule extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'cronSchedule')
     ..aOB(2, _omitFieldNames ? '' : 'paused')
     ..aOM<RpoConfig>(3, _omitFieldNames ? '' : 'rpoConfig', subBuilder: RpoConfig.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'nextScheduledBackupTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'nextScheduledBackupTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -247,15 +247,15 @@ class BackupPlan_Schedule extends $pb.GeneratedMessage {
   /// Output only. Start time of next scheduled backup under this BackupPlan by
   /// either cron_schedule or rpo config.
   @$pb.TagNumber(4)
-  $1775.Timestamp get nextScheduledBackupTime => $_getN(3);
+  $1776.Timestamp get nextScheduledBackupTime => $_getN(3);
   @$pb.TagNumber(4)
-  set nextScheduledBackupTime($1775.Timestamp v) { setField(4, v); }
+  set nextScheduledBackupTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasNextScheduledBackupTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearNextScheduledBackupTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureNextScheduledBackupTime() => $_ensure(3);
+  $1776.Timestamp ensureNextScheduledBackupTime() => $_ensure(3);
 }
 
 enum BackupPlan_BackupConfig_BackupScope {
@@ -270,11 +270,11 @@ enum BackupPlan_BackupConfig_BackupScope {
 class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   factory BackupPlan_BackupConfig({
     $core.bool? allNamespaces,
-    $4534.Namespaces? selectedNamespaces,
-    $4534.NamespacedNames? selectedApplications,
+    $4536.Namespaces? selectedNamespaces,
+    $4536.NamespacedNames? selectedApplications,
     $core.bool? includeVolumeData,
     $core.bool? includeSecrets,
-    $4534.EncryptionKey? encryptionKey,
+    $4536.EncryptionKey? encryptionKey,
     $core.bool? permissiveMode,
   }) {
     final $result = create();
@@ -314,11 +314,11 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupPlan.BackupConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
     ..aOB(1, _omitFieldNames ? '' : 'allNamespaces')
-    ..aOM<$4534.Namespaces>(2, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4534.Namespaces.create)
-    ..aOM<$4534.NamespacedNames>(3, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4534.NamespacedNames.create)
+    ..aOM<$4536.Namespaces>(2, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4536.Namespaces.create)
+    ..aOM<$4536.NamespacedNames>(3, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4536.NamespacedNames.create)
     ..aOB(4, _omitFieldNames ? '' : 'includeVolumeData')
     ..aOB(5, _omitFieldNames ? '' : 'includeSecrets')
-    ..aOM<$4534.EncryptionKey>(6, _omitFieldNames ? '' : 'encryptionKey', subBuilder: $4534.EncryptionKey.create)
+    ..aOM<$4536.EncryptionKey>(6, _omitFieldNames ? '' : 'encryptionKey', subBuilder: $4536.EncryptionKey.create)
     ..aOB(7, _omitFieldNames ? '' : 'permissiveMode')
     ..hasRequiredFields = false
   ;
@@ -359,28 +359,28 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
 
   /// If set, include just the resources in the listed namespaces.
   @$pb.TagNumber(2)
-  $4534.Namespaces get selectedNamespaces => $_getN(1);
+  $4536.Namespaces get selectedNamespaces => $_getN(1);
   @$pb.TagNumber(2)
-  set selectedNamespaces($4534.Namespaces v) { setField(2, v); }
+  set selectedNamespaces($4536.Namespaces v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSelectedNamespaces() => $_has(1);
   @$pb.TagNumber(2)
   void clearSelectedNamespaces() => clearField(2);
   @$pb.TagNumber(2)
-  $4534.Namespaces ensureSelectedNamespaces() => $_ensure(1);
+  $4536.Namespaces ensureSelectedNamespaces() => $_ensure(1);
 
   /// If set, include just the resources referenced by the listed
   /// ProtectedApplications.
   @$pb.TagNumber(3)
-  $4534.NamespacedNames get selectedApplications => $_getN(2);
+  $4536.NamespacedNames get selectedApplications => $_getN(2);
   @$pb.TagNumber(3)
-  set selectedApplications($4534.NamespacedNames v) { setField(3, v); }
+  set selectedApplications($4536.NamespacedNames v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSelectedApplications() => $_has(2);
   @$pb.TagNumber(3)
   void clearSelectedApplications() => clearField(3);
   @$pb.TagNumber(3)
-  $4534.NamespacedNames ensureSelectedApplications() => $_ensure(2);
+  $4536.NamespacedNames ensureSelectedApplications() => $_ensure(2);
 
   ///  Optional. This flag specifies whether volume data should be backed up
   ///  when PVCs are included in the scope of a Backup.
@@ -414,15 +414,15 @@ class BackupPlan_BackupConfig extends $pb.GeneratedMessage {
   ///
   ///  Default (empty): Config backup artifacts will not be encrypted.
   @$pb.TagNumber(6)
-  $4534.EncryptionKey get encryptionKey => $_getN(5);
+  $4536.EncryptionKey get encryptionKey => $_getN(5);
   @$pb.TagNumber(6)
-  set encryptionKey($4534.EncryptionKey v) { setField(6, v); }
+  set encryptionKey($4536.EncryptionKey v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEncryptionKey() => $_has(5);
   @$pb.TagNumber(6)
   void clearEncryptionKey() => clearField(6);
   @$pb.TagNumber(6)
-  $4534.EncryptionKey ensureEncryptionKey() => $_ensure(5);
+  $4536.EncryptionKey ensureEncryptionKey() => $_ensure(5);
 
   ///  Optional. If false, Backups will fail when Backup for GKE detects
   ///  Kubernetes configuration that is non-standard or
@@ -444,8 +444,8 @@ class BackupPlan extends $pb.GeneratedMessage {
   factory BackupPlan({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? cluster,
     BackupPlan_RetentionPolicy? retentionPolicy,
@@ -521,8 +521,8 @@ class BackupPlan extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupPlan', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'cluster')
     ..aOM<BackupPlan_RetentionPolicy>(7, _omitFieldNames ? '' : 'retentionPolicy', subBuilder: BackupPlan_RetentionPolicy.create)
@@ -584,28 +584,28 @@ class BackupPlan extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this BackupPlan resource was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this BackupPlan resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. User specified descriptive string for this BackupPlan.
   @$pb.TagNumber(5)
@@ -842,7 +842,7 @@ class RpoConfig extends $pb.GeneratedMessage {
 /// Holds repeated DaysOfWeek values as a container.
 class ExclusionWindow_DayOfWeekList extends $pb.GeneratedMessage {
   factory ExclusionWindow_DayOfWeekList({
-    $core.Iterable<$4321.DayOfWeek>? daysOfWeek,
+    $core.Iterable<$4322.DayOfWeek>? daysOfWeek,
   }) {
     final $result = create();
     if (daysOfWeek != null) {
@@ -855,7 +855,7 @@ class ExclusionWindow_DayOfWeekList extends $pb.GeneratedMessage {
   factory ExclusionWindow_DayOfWeekList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExclusionWindow.DayOfWeekList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
-    ..pc<$4321.DayOfWeek>(1, _omitFieldNames ? '' : 'daysOfWeek', $pb.PbFieldType.KE, valueOf: $4321.DayOfWeek.valueOf, enumValues: $4321.DayOfWeek.values, defaultEnumValue: $4321.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED)
+    ..pc<$4322.DayOfWeek>(1, _omitFieldNames ? '' : 'daysOfWeek', $pb.PbFieldType.KE, valueOf: $4322.DayOfWeek.valueOf, enumValues: $4322.DayOfWeek.values, defaultEnumValue: $4322.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -882,7 +882,7 @@ class ExclusionWindow_DayOfWeekList extends $pb.GeneratedMessage {
 
   /// Optional. A list of days of week.
   @$pb.TagNumber(1)
-  $core.List<$4321.DayOfWeek> get daysOfWeek => $_getList(0);
+  $core.List<$4322.DayOfWeek> get daysOfWeek => $_getList(0);
 }
 
 enum ExclusionWindow_Recurrence {
@@ -896,9 +896,9 @@ enum ExclusionWindow_Recurrence {
 /// happen. All time and date are in UTC.
 class ExclusionWindow extends $pb.GeneratedMessage {
   factory ExclusionWindow({
-    $4320.TimeOfDay? startTime,
-    $1737.Duration? duration,
-    $1800.Date? singleOccurrenceDate,
+    $4321.TimeOfDay? startTime,
+    $1738.Duration? duration,
+    $1801.Date? singleOccurrenceDate,
     $core.bool? daily,
     ExclusionWindow_DayOfWeekList? daysOfWeek,
   }) {
@@ -932,9 +932,9 @@ class ExclusionWindow extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExclusionWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5])
-    ..aOM<$4320.TimeOfDay>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $4320.TimeOfDay.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
-    ..aOM<$1800.Date>(3, _omitFieldNames ? '' : 'singleOccurrenceDate', subBuilder: $1800.Date.create)
+    ..aOM<$4321.TimeOfDay>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $4321.TimeOfDay.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
+    ..aOM<$1801.Date>(3, _omitFieldNames ? '' : 'singleOccurrenceDate', subBuilder: $1801.Date.create)
     ..aOB(4, _omitFieldNames ? '' : 'daily')
     ..aOM<ExclusionWindow_DayOfWeekList>(5, _omitFieldNames ? '' : 'daysOfWeek', subBuilder: ExclusionWindow_DayOfWeekList.create)
     ..hasRequiredFields = false
@@ -967,15 +967,15 @@ class ExclusionWindow extends $pb.GeneratedMessage {
   /// Required. Specifies the start time of the window using time of the day in
   /// UTC.
   @$pb.TagNumber(1)
-  $4320.TimeOfDay get startTime => $_getN(0);
+  $4321.TimeOfDay get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($4320.TimeOfDay v) { setField(1, v); }
+  set startTime($4321.TimeOfDay v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $4320.TimeOfDay ensureStartTime() => $_ensure(0);
+  $4321.TimeOfDay ensureStartTime() => $_ensure(0);
 
   /// Required. Specifies duration of the window.
   /// Duration must be >= 5 minutes and < (target RPO - 20 minutes).
@@ -988,28 +988,28 @@ class ExclusionWindow extends $pb.GeneratedMessage {
   ///   - days of week includes all seven days of a week: duration < 24 hours
   ///   - all other weekly window: duration < 168 hours (i.e., 24 * 7 hours)
   @$pb.TagNumber(2)
-  $1737.Duration get duration => $_getN(1);
+  $1738.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($1737.Duration v) { setField(2, v); }
+  set duration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureDuration() => $_ensure(1);
+  $1738.Duration ensureDuration() => $_ensure(1);
 
   /// No recurrence. The exclusion window occurs only once and on this
   /// date in UTC.
   @$pb.TagNumber(3)
-  $1800.Date get singleOccurrenceDate => $_getN(2);
+  $1801.Date get singleOccurrenceDate => $_getN(2);
   @$pb.TagNumber(3)
-  set singleOccurrenceDate($1800.Date v) { setField(3, v); }
+  set singleOccurrenceDate($1801.Date v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSingleOccurrenceDate() => $_has(2);
   @$pb.TagNumber(3)
   void clearSingleOccurrenceDate() => clearField(3);
   @$pb.TagNumber(3)
-  $1800.Date ensureSingleOccurrenceDate() => $_ensure(2);
+  $1801.Date ensureSingleOccurrenceDate() => $_ensure(2);
 
   /// The exclusion window occurs every day if set to "True".
   /// Specifying this field to "False" is an error.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'featurestore_monitoring.pbenum.dart';
 
 export 'featurestore_monitoring.pbenum.dart';
@@ -26,7 +26,7 @@ class FeaturestoreMonitoringConfig_SnapshotAnalysis extends $pb.GeneratedMessage
   factory FeaturestoreMonitoringConfig_SnapshotAnalysis({
     $core.bool? disabled,
   @$core.Deprecated('This field is deprecated.')
-    $1737.Duration? monitoringInterval,
+    $1738.Duration? monitoringInterval,
     $core.int? monitoringIntervalDays,
     $core.int? stalenessDays,
   }) {
@@ -52,7 +52,7 @@ class FeaturestoreMonitoringConfig_SnapshotAnalysis extends $pb.GeneratedMessage
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeaturestoreMonitoringConfig.SnapshotAnalysis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'disabled')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'monitoringInterval', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'monitoringInterval', subBuilder: $1738.Duration.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'monitoringIntervalDays', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'stalenessDays', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -109,10 +109,10 @@ class FeaturestoreMonitoringConfig_SnapshotAnalysis extends $pb.GeneratedMessage
   /// will be used.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  $1737.Duration get monitoringInterval => $_getN(1);
+  $1738.Duration get monitoringInterval => $_getN(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set monitoringInterval($1737.Duration v) { setField(2, v); }
+  set monitoringInterval($1738.Duration v) { setField(2, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasMonitoringInterval() => $_has(1);
@@ -121,7 +121,7 @@ class FeaturestoreMonitoringConfig_SnapshotAnalysis extends $pb.GeneratedMessage
   void clearMonitoringInterval() => clearField(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  $1737.Duration ensureMonitoringInterval() => $_ensure(1);
+  $1738.Duration ensureMonitoringInterval() => $_ensure(1);
 
   /// Configuration of the snapshot analysis based monitoring pipeline
   /// running interval. The value indicates number of days.

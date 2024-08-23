@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'coordinate.pb.dart' as $4556;
-import 'event_parameter.pb.dart' as $4557;
-import 'json_validation.pbenum.dart' as $4558;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'coordinate.pb.dart' as $4558;
+import 'event_parameter.pb.dart' as $4559;
+import 'json_validation.pbenum.dart' as $4560;
 import 'task_config.pbenum.dart';
 
 export 'task_config.pbenum.dart';
@@ -27,7 +27,7 @@ class TaskConfig extends $pb.GeneratedMessage {
   factory TaskConfig({
     $core.String? task,
     $core.String? taskId,
-    $core.Map<$core.String, $4557.EventParameter>? parameters,
+    $core.Map<$core.String, $4559.EventParameter>? parameters,
     FailurePolicy? failurePolicy,
     FailurePolicy? synchronousCallFailurePolicy,
     $core.Iterable<NextTask>? nextTasks,
@@ -35,11 +35,11 @@ class TaskConfig extends $pb.GeneratedMessage {
     TaskConfig_TaskExecutionStrategy? taskExecutionStrategy,
     $core.String? displayName,
     SuccessPolicy? successPolicy,
-    $4558.JsonValidationOption? jsonValidationOption,
+    $4560.JsonValidationOption? jsonValidationOption,
     $core.String? description,
     $core.String? taskTemplate,
     TaskConfig_ExternalTaskType? externalTaskType,
-    $4556.Coordinate? position,
+    $4558.Coordinate? position,
     $core.String? errorCatcherId,
   }) {
     final $result = create();
@@ -100,7 +100,7 @@ class TaskConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.integrations.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'task')
     ..aOS(2, _omitFieldNames ? '' : 'taskId')
-    ..m<$core.String, $4557.EventParameter>(3, _omitFieldNames ? '' : 'parameters', entryClassName: 'TaskConfig.ParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4557.EventParameter.create, valueDefaultOrMaker: $4557.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
+    ..m<$core.String, $4559.EventParameter>(3, _omitFieldNames ? '' : 'parameters', entryClassName: 'TaskConfig.ParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4559.EventParameter.create, valueDefaultOrMaker: $4559.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
     ..aOM<FailurePolicy>(4, _omitFieldNames ? '' : 'failurePolicy', subBuilder: FailurePolicy.create)
     ..aOM<FailurePolicy>(5, _omitFieldNames ? '' : 'synchronousCallFailurePolicy', subBuilder: FailurePolicy.create)
     ..pc<NextTask>(6, _omitFieldNames ? '' : 'nextTasks', $pb.PbFieldType.PM, subBuilder: NextTask.create)
@@ -108,11 +108,11 @@ class TaskConfig extends $pb.GeneratedMessage {
     ..e<TaskConfig_TaskExecutionStrategy>(8, _omitFieldNames ? '' : 'taskExecutionStrategy', $pb.PbFieldType.OE, defaultOrMaker: TaskConfig_TaskExecutionStrategy.TASK_EXECUTION_STRATEGY_UNSPECIFIED, valueOf: TaskConfig_TaskExecutionStrategy.valueOf, enumValues: TaskConfig_TaskExecutionStrategy.values)
     ..aOS(9, _omitFieldNames ? '' : 'displayName')
     ..aOM<SuccessPolicy>(10, _omitFieldNames ? '' : 'successPolicy', subBuilder: SuccessPolicy.create)
-    ..e<$4558.JsonValidationOption>(11, _omitFieldNames ? '' : 'jsonValidationOption', $pb.PbFieldType.OE, defaultOrMaker: $4558.JsonValidationOption.JSON_VALIDATION_OPTION_UNSPECIFIED, valueOf: $4558.JsonValidationOption.valueOf, enumValues: $4558.JsonValidationOption.values)
+    ..e<$4560.JsonValidationOption>(11, _omitFieldNames ? '' : 'jsonValidationOption', $pb.PbFieldType.OE, defaultOrMaker: $4560.JsonValidationOption.JSON_VALIDATION_OPTION_UNSPECIFIED, valueOf: $4560.JsonValidationOption.valueOf, enumValues: $4560.JsonValidationOption.values)
     ..aOS(12, _omitFieldNames ? '' : 'description')
     ..aOS(13, _omitFieldNames ? '' : 'taskTemplate')
     ..e<TaskConfig_ExternalTaskType>(15, _omitFieldNames ? '' : 'externalTaskType', $pb.PbFieldType.OE, defaultOrMaker: TaskConfig_ExternalTaskType.EXTERNAL_TASK_TYPE_UNSPECIFIED, valueOf: TaskConfig_ExternalTaskType.valueOf, enumValues: TaskConfig_ExternalTaskType.values)
-    ..aOM<$4556.Coordinate>(16, _omitFieldNames ? '' : 'position', subBuilder: $4556.Coordinate.create)
+    ..aOM<$4558.Coordinate>(16, _omitFieldNames ? '' : 'position', subBuilder: $4558.Coordinate.create)
     ..aOS(17, _omitFieldNames ? '' : 'errorCatcherId')
     ..hasRequiredFields = false
   ;
@@ -163,7 +163,7 @@ class TaskConfig extends $pb.GeneratedMessage {
 
   /// Optional. The customized parameters the user can pass to this task.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $4557.EventParameter> get parameters => $_getMap(2);
+  $core.Map<$core.String, $4559.EventParameter> get parameters => $_getMap(2);
 
   /// Optional. Determines the number of times the
   /// task will be retried on failure and with what retry strategy.
@@ -248,9 +248,9 @@ class TaskConfig extends $pb.GeneratedMessage {
   /// Optional. If set, overrides the option configured in the Task
   /// implementation class.
   @$pb.TagNumber(11)
-  $4558.JsonValidationOption get jsonValidationOption => $_getN(10);
+  $4560.JsonValidationOption get jsonValidationOption => $_getN(10);
   @$pb.TagNumber(11)
-  set jsonValidationOption($4558.JsonValidationOption v) { setField(11, v); }
+  set jsonValidationOption($4560.JsonValidationOption v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasJsonValidationOption() => $_has(10);
   @$pb.TagNumber(11)
@@ -291,15 +291,15 @@ class TaskConfig extends $pb.GeneratedMessage {
   /// Optional. Informs the front-end application where to draw this error
   /// catcher config on the UI.
   @$pb.TagNumber(16)
-  $4556.Coordinate get position => $_getN(14);
+  $4558.Coordinate get position => $_getN(14);
   @$pb.TagNumber(16)
-  set position($4556.Coordinate v) { setField(16, v); }
+  set position($4558.Coordinate v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasPosition() => $_has(14);
   @$pb.TagNumber(16)
   void clearPosition() => clearField(16);
   @$pb.TagNumber(16)
-  $4556.Coordinate ensurePosition() => $_ensure(14);
+  $4558.Coordinate ensurePosition() => $_ensure(14);
 
   /// Optional. Optional
   /// Error catcher id of the error catch flow which will be executed when
@@ -375,7 +375,7 @@ class FailurePolicy extends $pb.GeneratedMessage {
   factory FailurePolicy({
     FailurePolicy_RetryStrategy? retryStrategy,
     $core.int? maxRetries,
-    $1775.Timestamp? intervalTime,
+    $1776.Timestamp? intervalTime,
   }) {
     final $result = create();
     if (retryStrategy != null) {
@@ -396,7 +396,7 @@ class FailurePolicy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FailurePolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.integrations.v1alpha'), createEmptyInstance: create)
     ..e<FailurePolicy_RetryStrategy>(1, _omitFieldNames ? '' : 'retryStrategy', $pb.PbFieldType.OE, defaultOrMaker: FailurePolicy_RetryStrategy.RETRY_STRATEGY_UNSPECIFIED, valueOf: FailurePolicy_RetryStrategy.valueOf, enumValues: FailurePolicy_RetryStrategy.values)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxRetries', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'intervalTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'intervalTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -447,15 +447,15 @@ class FailurePolicy extends $pb.GeneratedMessage {
   /// LINEAR/EXPONENTIAL_BACKOFF/RESTART_INTEGRATION_WITH_BACKOFF. Defines the
   /// initial interval in seconds for backoff.
   @$pb.TagNumber(3)
-  $1775.Timestamp get intervalTime => $_getN(2);
+  $1776.Timestamp get intervalTime => $_getN(2);
   @$pb.TagNumber(3)
-  set intervalTime($1775.Timestamp v) { setField(3, v); }
+  set intervalTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIntervalTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearIntervalTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureIntervalTime() => $_ensure(2);
+  $1776.Timestamp ensureIntervalTime() => $_ensure(2);
 }
 
 /// The task that is next in line to be executed, if the

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'cloud_tts.pb.dart' as $1452;
 
 /// The top-level message sent by the client for the
@@ -175,9 +175,9 @@ class SynthesizeLongAudioResponse extends $pb.GeneratedMessage {
 /// Metadata for response returned by the `SynthesizeLongAudio` method.
 class SynthesizeLongAudioMetadata extends $pb.GeneratedMessage {
   factory SynthesizeLongAudioMetadata({
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   @$core.Deprecated('This field is deprecated.')
-    $1775.Timestamp? lastUpdateTime,
+    $1776.Timestamp? lastUpdateTime,
     $core.double? progressPercentage,
   }) {
     final $result = create();
@@ -198,8 +198,8 @@ class SynthesizeLongAudioMetadata extends $pb.GeneratedMessage {
   factory SynthesizeLongAudioMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SynthesizeLongAudioMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.texttospeech.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'progressPercentage', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -227,23 +227,23 @@ class SynthesizeLongAudioMetadata extends $pb.GeneratedMessage {
 
   /// Time when the request was received.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Deprecated. Do not use.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  $1775.Timestamp get lastUpdateTime => $_getN(1);
+  $1776.Timestamp get lastUpdateTime => $_getN(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  set lastUpdateTime($1775.Timestamp v) { setField(2, v); }
+  set lastUpdateTime($1776.Timestamp v) { setField(2, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
   $core.bool hasLastUpdateTime() => $_has(1);
@@ -252,7 +252,7 @@ class SynthesizeLongAudioMetadata extends $pb.GeneratedMessage {
   void clearLastUpdateTime() => clearField(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLastUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureLastUpdateTime() => $_ensure(1);
 
   /// The progress of the most recent processing update in percentage, ie. 70.0%.
   @$pb.TagNumber(3)

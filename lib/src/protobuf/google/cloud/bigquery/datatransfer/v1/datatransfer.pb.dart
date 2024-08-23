@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
 import 'datatransfer.pbenum.dart';
 import 'transfer.pb.dart' as $714;
 import 'transfer.pbenum.dart' as $714;
@@ -34,8 +34,8 @@ class DataSourceParameter extends $pb.GeneratedMessage {
     $core.bool? repeated,
     $core.String? validationRegex,
     $core.Iterable<$core.String>? allowedValues,
-    $1780.DoubleValue? minValue,
-    $1780.DoubleValue? maxValue,
+    $1781.DoubleValue? minValue,
+    $1781.DoubleValue? maxValue,
     $core.Iterable<DataSourceParameter>? fields,
     $core.String? validationDescription,
     $core.String? validationHelpUrl,
@@ -107,8 +107,8 @@ class DataSourceParameter extends $pb.GeneratedMessage {
     ..aOB(6, _omitFieldNames ? '' : 'repeated')
     ..aOS(7, _omitFieldNames ? '' : 'validationRegex')
     ..pPS(8, _omitFieldNames ? '' : 'allowedValues')
-    ..aOM<$1780.DoubleValue>(9, _omitFieldNames ? '' : 'minValue', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(10, _omitFieldNames ? '' : 'maxValue', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(9, _omitFieldNames ? '' : 'minValue', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(10, _omitFieldNames ? '' : 'maxValue', subBuilder: $1781.DoubleValue.create)
     ..pc<DataSourceParameter>(11, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: DataSourceParameter.create)
     ..aOS(12, _omitFieldNames ? '' : 'validationDescription')
     ..aOS(13, _omitFieldNames ? '' : 'validationHelpUrl')
@@ -215,27 +215,27 @@ class DataSourceParameter extends $pb.GeneratedMessage {
 
   /// For integer and double values specifies minimum allowed value.
   @$pb.TagNumber(9)
-  $1780.DoubleValue get minValue => $_getN(8);
+  $1781.DoubleValue get minValue => $_getN(8);
   @$pb.TagNumber(9)
-  set minValue($1780.DoubleValue v) { setField(9, v); }
+  set minValue($1781.DoubleValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasMinValue() => $_has(8);
   @$pb.TagNumber(9)
   void clearMinValue() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.DoubleValue ensureMinValue() => $_ensure(8);
+  $1781.DoubleValue ensureMinValue() => $_ensure(8);
 
   /// For integer and double values specifies maximum allowed value.
   @$pb.TagNumber(10)
-  $1780.DoubleValue get maxValue => $_getN(9);
+  $1781.DoubleValue get maxValue => $_getN(9);
   @$pb.TagNumber(10)
-  set maxValue($1780.DoubleValue v) { setField(10, v); }
+  set maxValue($1781.DoubleValue v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMaxValue() => $_has(9);
   @$pb.TagNumber(10)
   void clearMaxValue() => clearField(10);
   @$pb.TagNumber(10)
-  $1780.DoubleValue ensureMaxValue() => $_ensure(9);
+  $1781.DoubleValue ensureMaxValue() => $_ensure(9);
 
   /// Deprecated. This field has no effect.
   @$pb.TagNumber(11)
@@ -316,7 +316,7 @@ class DataSource extends $pb.GeneratedMessage {
     DataSource_DataRefreshType? dataRefreshType,
     $core.int? defaultDataRefreshWindowDays,
     $core.bool? manualRunsDisabled,
-    $1737.Duration? minimumScheduleInterval,
+    $1738.Duration? minimumScheduleInterval,
   }) {
     final $result = create();
     if (name != null) {
@@ -399,7 +399,7 @@ class DataSource extends $pb.GeneratedMessage {
     ..e<DataSource_DataRefreshType>(15, _omitFieldNames ? '' : 'dataRefreshType', $pb.PbFieldType.OE, defaultOrMaker: DataSource_DataRefreshType.DATA_REFRESH_TYPE_UNSPECIFIED, valueOf: DataSource_DataRefreshType.valueOf, enumValues: DataSource_DataRefreshType.values)
     ..a<$core.int>(16, _omitFieldNames ? '' : 'defaultDataRefreshWindowDays', $pb.PbFieldType.O3)
     ..aOB(17, _omitFieldNames ? '' : 'manualRunsDisabled')
-    ..aOM<$1737.Duration>(18, _omitFieldNames ? '' : 'minimumScheduleInterval', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(18, _omitFieldNames ? '' : 'minimumScheduleInterval', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -606,15 +606,15 @@ class DataSource extends $pb.GeneratedMessage {
 
   /// The minimum interval for scheduler to schedule runs.
   @$pb.TagNumber(18)
-  $1737.Duration get minimumScheduleInterval => $_getN(17);
+  $1738.Duration get minimumScheduleInterval => $_getN(17);
   @$pb.TagNumber(18)
-  set minimumScheduleInterval($1737.Duration v) { setField(18, v); }
+  set minimumScheduleInterval($1738.Duration v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasMinimumScheduleInterval() => $_has(17);
   @$pb.TagNumber(18)
   void clearMinimumScheduleInterval() => clearField(18);
   @$pb.TagNumber(18)
-  $1737.Duration ensureMinimumScheduleInterval() => $_ensure(17);
+  $1738.Duration ensureMinimumScheduleInterval() => $_ensure(17);
 }
 
 /// A request to get data source info.
@@ -998,7 +998,7 @@ class UpdateTransferConfigRequest extends $pb.GeneratedMessage {
     $714.TransferConfig? transferConfig,
   @$core.Deprecated('This field is deprecated.')
     $core.String? authorizationCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? versionInfo,
     $core.String? serviceAccountName,
   }) {
@@ -1028,7 +1028,7 @@ class UpdateTransferConfigRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTransferConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.datatransfer.v1'), createEmptyInstance: create)
     ..aOM<$714.TransferConfig>(1, _omitFieldNames ? '' : 'transferConfig', subBuilder: $714.TransferConfig.create)
     ..aOS(3, _omitFieldNames ? '' : 'authorizationCode')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(5, _omitFieldNames ? '' : 'versionInfo')
     ..aOS(6, _omitFieldNames ? '' : 'serviceAccountName')
     ..hasRequiredFields = false
@@ -1100,15 +1100,15 @@ class UpdateTransferConfigRequest extends $pb.GeneratedMessage {
 
   /// Required. Required list of fields to be updated in this request.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 
   ///  Optional version info. This parameter replaces `authorization_code` which
   ///  is no longer used in any data sources. This is required only if
@@ -1987,8 +1987,8 @@ class CheckValidCredsResponse extends $pb.GeneratedMessage {
 class ScheduleTransferRunsRequest extends $pb.GeneratedMessage {
   factory ScheduleTransferRunsRequest({
     $core.String? parent,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (parent != null) {
@@ -2008,8 +2008,8 @@ class ScheduleTransferRunsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScheduleTransferRunsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.datatransfer.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2049,28 +2049,28 @@ class ScheduleTransferRunsRequest extends $pb.GeneratedMessage {
   /// Required. Start time of the range of transfer runs. For example,
   /// `"2017-05-25T00:00:00+00:00"`.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Required. End time of the range of transfer runs. For example,
   /// `"2017-05-30T00:00:00+00:00"`.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// A response to schedule transfer runs for a time range.
@@ -2123,8 +2123,8 @@ class ScheduleTransferRunsResponse extends $pb.GeneratedMessage {
 /// run_time between start_time (inclusive) and end_time (exclusive).
 class StartManualTransferRunsRequest_TimeRange extends $pb.GeneratedMessage {
   factory StartManualTransferRunsRequest_TimeRange({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -2140,8 +2140,8 @@ class StartManualTransferRunsRequest_TimeRange extends $pb.GeneratedMessage {
   factory StartManualTransferRunsRequest_TimeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartManualTransferRunsRequest.TimeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.datatransfer.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2171,30 +2171,30 @@ class StartManualTransferRunsRequest_TimeRange extends $pb.GeneratedMessage {
   /// the end_time. Creates transfer runs where run_time is in the range
   /// between start_time (inclusive) and end_time (exclusive).
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// End time of the range of transfer runs. For example,
   /// `"2017-05-30T00:00:00+00:00"`. The end_time must not be in the future.
   /// Creates transfer runs where run_time is in the range between start_time
   /// (inclusive) and end_time (exclusive).
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 enum StartManualTransferRunsRequest_Time {
@@ -2208,7 +2208,7 @@ class StartManualTransferRunsRequest extends $pb.GeneratedMessage {
   factory StartManualTransferRunsRequest({
     $core.String? parent,
     StartManualTransferRunsRequest_TimeRange? requestedTimeRange,
-    $1775.Timestamp? requestedRunTime,
+    $1776.Timestamp? requestedRunTime,
   }) {
     final $result = create();
     if (parent != null) {
@@ -2235,7 +2235,7 @@ class StartManualTransferRunsRequest extends $pb.GeneratedMessage {
     ..oo(0, [3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<StartManualTransferRunsRequest_TimeRange>(3, _omitFieldNames ? '' : 'requestedTimeRange', subBuilder: StartManualTransferRunsRequest_TimeRange.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'requestedRunTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'requestedRunTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2295,15 +2295,15 @@ class StartManualTransferRunsRequest extends $pb.GeneratedMessage {
   /// requested_run_time must be a past time and cannot include future time
   /// values.
   @$pb.TagNumber(4)
-  $1775.Timestamp get requestedRunTime => $_getN(2);
+  $1776.Timestamp get requestedRunTime => $_getN(2);
   @$pb.TagNumber(4)
-  set requestedRunTime($1775.Timestamp v) { setField(4, v); }
+  set requestedRunTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRequestedRunTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearRequestedRunTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureRequestedRunTime() => $_ensure(2);
+  $1776.Timestamp ensureRequestedRunTime() => $_ensure(2);
 }
 
 /// A response to start manual transfer runs.

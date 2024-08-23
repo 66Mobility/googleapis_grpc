@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'common.pbenum.dart' as $4595;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'common.pbenum.dart' as $4597;
 import 'project.pb.dart' as $1289;
 
 /// Request for GetProject method.
@@ -127,7 +127,7 @@ class AcceptTermsRequest extends $pb.GeneratedMessage {
 class EnrollSolutionRequest extends $pb.GeneratedMessage {
   factory EnrollSolutionRequest({
     $core.String? project,
-    $4595.SolutionType? solution,
+    $4597.SolutionType? solution,
   }) {
     final $result = create();
     if (project != null) {
@@ -144,7 +144,7 @@ class EnrollSolutionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnrollSolutionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'project')
-    ..e<$4595.SolutionType>(2, _omitFieldNames ? '' : 'solution', $pb.PbFieldType.OE, defaultOrMaker: $4595.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4595.SolutionType.valueOf, enumValues: $4595.SolutionType.values)
+    ..e<$4597.SolutionType>(2, _omitFieldNames ? '' : 'solution', $pb.PbFieldType.OE, defaultOrMaker: $4597.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4597.SolutionType.valueOf, enumValues: $4597.SolutionType.values)
     ..hasRequiredFields = false
   ;
 
@@ -182,9 +182,9 @@ class EnrollSolutionRequest extends $pb.GeneratedMessage {
 
   /// Required. Solution to enroll.
   @$pb.TagNumber(2)
-  $4595.SolutionType get solution => $_getN(1);
+  $4597.SolutionType get solution => $_getN(1);
   @$pb.TagNumber(2)
-  set solution($4595.SolutionType v) { setField(2, v); }
+  set solution($4597.SolutionType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSolution() => $_has(1);
   @$pb.TagNumber(2)
@@ -194,7 +194,7 @@ class EnrollSolutionRequest extends $pb.GeneratedMessage {
 /// Response for EnrollSolution method.
 class EnrollSolutionResponse extends $pb.GeneratedMessage {
   factory EnrollSolutionResponse({
-    $4595.SolutionType? enrolledSolution,
+    $4597.SolutionType? enrolledSolution,
   }) {
     final $result = create();
     if (enrolledSolution != null) {
@@ -207,7 +207,7 @@ class EnrollSolutionResponse extends $pb.GeneratedMessage {
   factory EnrollSolutionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnrollSolutionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
-    ..e<$4595.SolutionType>(1, _omitFieldNames ? '' : 'enrolledSolution', $pb.PbFieldType.OE, defaultOrMaker: $4595.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4595.SolutionType.valueOf, enumValues: $4595.SolutionType.values)
+    ..e<$4597.SolutionType>(1, _omitFieldNames ? '' : 'enrolledSolution', $pb.PbFieldType.OE, defaultOrMaker: $4597.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4597.SolutionType.valueOf, enumValues: $4597.SolutionType.values)
     ..hasRequiredFields = false
   ;
 
@@ -234,9 +234,9 @@ class EnrollSolutionResponse extends $pb.GeneratedMessage {
 
   /// Retail API solution that the project has enrolled.
   @$pb.TagNumber(1)
-  $4595.SolutionType get enrolledSolution => $_getN(0);
+  $4597.SolutionType get enrolledSolution => $_getN(0);
   @$pb.TagNumber(1)
-  set enrolledSolution($4595.SolutionType v) { setField(1, v); }
+  set enrolledSolution($4597.SolutionType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEnrolledSolution() => $_has(0);
   @$pb.TagNumber(1)
@@ -333,7 +333,7 @@ class ListEnrolledSolutionsRequest extends $pb.GeneratedMessage {
 /// Response for ListEnrolledSolutions method.
 class ListEnrolledSolutionsResponse extends $pb.GeneratedMessage {
   factory ListEnrolledSolutionsResponse({
-    $core.Iterable<$4595.SolutionType>? enrolledSolutions,
+    $core.Iterable<$4597.SolutionType>? enrolledSolutions,
   }) {
     final $result = create();
     if (enrolledSolutions != null) {
@@ -346,7 +346,7 @@ class ListEnrolledSolutionsResponse extends $pb.GeneratedMessage {
   factory ListEnrolledSolutionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListEnrolledSolutionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
-    ..pc<$4595.SolutionType>(1, _omitFieldNames ? '' : 'enrolledSolutions', $pb.PbFieldType.KE, valueOf: $4595.SolutionType.valueOf, enumValues: $4595.SolutionType.values, defaultEnumValue: $4595.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
+    ..pc<$4597.SolutionType>(1, _omitFieldNames ? '' : 'enrolledSolutions', $pb.PbFieldType.KE, valueOf: $4597.SolutionType.valueOf, enumValues: $4597.SolutionType.values, defaultEnumValue: $4597.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -373,7 +373,7 @@ class ListEnrolledSolutionsResponse extends $pb.GeneratedMessage {
 
   /// Retail API solutions that the project has enrolled.
   @$pb.TagNumber(1)
-  $core.List<$4595.SolutionType> get enrolledSolutions => $_getList(0);
+  $core.List<$4597.SolutionType> get enrolledSolutions => $_getList(0);
 }
 
 /// Request for
@@ -437,7 +437,7 @@ class GetLoggingConfigRequest extends $pb.GeneratedMessage {
 class UpdateLoggingConfigRequest extends $pb.GeneratedMessage {
   factory UpdateLoggingConfigRequest({
     $1289.LoggingConfig? loggingConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (loggingConfig != null) {
@@ -454,7 +454,7 @@ class UpdateLoggingConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateLoggingConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
     ..aOM<$1289.LoggingConfig>(1, _omitFieldNames ? '' : 'loggingConfig', subBuilder: $1289.LoggingConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -508,15 +508,15 @@ class UpdateLoggingConfigRequest extends $pb.GeneratedMessage {
   ///
   ///  If not set, all supported fields are updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for
@@ -580,7 +580,7 @@ class GetAlertConfigRequest extends $pb.GeneratedMessage {
 class UpdateAlertConfigRequest extends $pb.GeneratedMessage {
   factory UpdateAlertConfigRequest({
     $1289.AlertConfig? alertConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (alertConfig != null) {
@@ -597,7 +597,7 @@ class UpdateAlertConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAlertConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
     ..aOM<$1289.AlertConfig>(1, _omitFieldNames ? '' : 'alertConfig', subBuilder: $1289.AlertConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -646,15 +646,15 @@ class UpdateAlertConfigRequest extends $pb.GeneratedMessage {
   /// [AlertConfig][google.cloud.retail.v2alpha.AlertConfig] to update. If not
   /// set, all supported fields are updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

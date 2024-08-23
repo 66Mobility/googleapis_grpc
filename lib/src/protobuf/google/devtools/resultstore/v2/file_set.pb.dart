@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'file.pb.dart' as $4770;
+import 'file.pb.dart' as $4772;
 
 /// The resource ID components that identify the FileSet.
 class FileSet_Id extends $pb.GeneratedMessage {
@@ -100,7 +100,7 @@ class FileSet extends $pb.GeneratedMessage {
     $core.String? name,
     FileSet_Id? id,
     $core.Iterable<$core.String>? fileSets,
-    $core.Iterable<$4770.File>? files,
+    $core.Iterable<$4772.File>? files,
   }) {
     final $result = create();
     if (name != null) {
@@ -125,7 +125,7 @@ class FileSet extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<FileSet_Id>(2, _omitFieldNames ? '' : 'id', subBuilder: FileSet_Id.create)
     ..pPS(3, _omitFieldNames ? '' : 'fileSets')
-    ..pc<$4770.File>(4, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4770.File.create)
+    ..pc<$4772.File>(4, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4772.File.create)
     ..hasRequiredFields = false
   ;
 
@@ -183,7 +183,7 @@ class FileSet extends $pb.GeneratedMessage {
   /// Files that are contained within this file set.
   /// The uid field in the file should be unique for the Invocation.
   @$pb.TagNumber(4)
-  $core.List<$4770.File> get files => $_getList(3);
+  $core.List<$4772.File> get files => $_getList(3);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'ekm_service.pbenum.dart';
 
 export 'ekm_service.pbenum.dart';
@@ -375,7 +375,7 @@ class CreateEkmConnectionRequest extends $pb.GeneratedMessage {
 class UpdateEkmConnectionRequest extends $pb.GeneratedMessage {
   factory UpdateEkmConnectionRequest({
     EkmConnection? ekmConnection,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (ekmConnection != null) {
@@ -392,7 +392,7 @@ class UpdateEkmConnectionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEkmConnectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOM<EkmConnection>(1, _omitFieldNames ? '' : 'ekmConnection', subBuilder: EkmConnection.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -432,15 +432,15 @@ class UpdateEkmConnectionRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -502,7 +502,7 @@ class GetEkmConfigRequest extends $pb.GeneratedMessage {
 class UpdateEkmConfigRequest extends $pb.GeneratedMessage {
   factory UpdateEkmConfigRequest({
     EkmConfig? ekmConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (ekmConfig != null) {
@@ -519,7 +519,7 @@ class UpdateEkmConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEkmConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOM<EkmConfig>(1, _omitFieldNames ? '' : 'ekmConfig', subBuilder: EkmConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -558,15 +558,15 @@ class UpdateEkmConfigRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A [Certificate][google.cloud.kms.v1.Certificate] represents an X.509
@@ -578,8 +578,8 @@ class Certificate extends $pb.GeneratedMessage {
     $core.String? issuer,
     $core.String? subject,
     $core.Iterable<$core.String>? subjectAlternativeDnsNames,
-    $1775.Timestamp? notBeforeTime,
-    $1775.Timestamp? notAfterTime,
+    $1776.Timestamp? notBeforeTime,
+    $1776.Timestamp? notAfterTime,
     $core.String? serialNumber,
     $core.String? sha256Fingerprint,
   }) {
@@ -623,8 +623,8 @@ class Certificate extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'issuer')
     ..aOS(4, _omitFieldNames ? '' : 'subject')
     ..pPS(5, _omitFieldNames ? '' : 'subjectAlternativeDnsNames')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'notBeforeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'notAfterTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'notBeforeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'notAfterTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'serialNumber')
     ..aOS(9, _omitFieldNames ? '' : 'sha256Fingerprint')
     ..hasRequiredFields = false
@@ -701,28 +701,28 @@ class Certificate extends $pb.GeneratedMessage {
   /// Output only. The certificate is not valid before this time. Only present if
   /// [parsed][google.cloud.kms.v1.Certificate.parsed] is true.
   @$pb.TagNumber(6)
-  $1775.Timestamp get notBeforeTime => $_getN(5);
+  $1776.Timestamp get notBeforeTime => $_getN(5);
   @$pb.TagNumber(6)
-  set notBeforeTime($1775.Timestamp v) { setField(6, v); }
+  set notBeforeTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasNotBeforeTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearNotBeforeTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureNotBeforeTime() => $_ensure(5);
+  $1776.Timestamp ensureNotBeforeTime() => $_ensure(5);
 
   /// Output only. The certificate is not valid after this time. Only present if
   /// [parsed][google.cloud.kms.v1.Certificate.parsed] is true.
   @$pb.TagNumber(7)
-  $1775.Timestamp get notAfterTime => $_getN(6);
+  $1776.Timestamp get notAfterTime => $_getN(6);
   @$pb.TagNumber(7)
-  set notAfterTime($1775.Timestamp v) { setField(7, v); }
+  set notAfterTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasNotAfterTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearNotAfterTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureNotAfterTime() => $_ensure(6);
+  $1776.Timestamp ensureNotAfterTime() => $_ensure(6);
 
   /// Output only. The certificate serial number as a hex string. Only present if
   /// [parsed][google.cloud.kms.v1.Certificate.parsed] is true.
@@ -860,7 +860,7 @@ class EkmConnection_ServiceResolver extends $pb.GeneratedMessage {
 class EkmConnection extends $pb.GeneratedMessage {
   factory EkmConnection({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Iterable<EkmConnection_ServiceResolver>? serviceResolvers,
     $core.String? etag,
     EkmConnection_KeyManagementMode? keyManagementMode,
@@ -893,7 +893,7 @@ class EkmConnection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EkmConnection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..pc<EkmConnection_ServiceResolver>(3, _omitFieldNames ? '' : 'serviceResolvers', $pb.PbFieldType.PM, subBuilder: EkmConnection_ServiceResolver.create)
     ..aOS(5, _omitFieldNames ? '' : 'etag')
     ..e<EkmConnection_KeyManagementMode>(6, _omitFieldNames ? '' : 'keyManagementMode', $pb.PbFieldType.OE, defaultOrMaker: EkmConnection_KeyManagementMode.KEY_MANAGEMENT_MODE_UNSPECIFIED, valueOf: EkmConnection_KeyManagementMode.valueOf, enumValues: EkmConnection_KeyManagementMode.values)
@@ -937,15 +937,15 @@ class EkmConnection extends $pb.GeneratedMessage {
   /// Output only. The time at which the
   /// [EkmConnection][google.cloud.kms.v1.EkmConnection] was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// A list of
   /// [ServiceResolvers][google.cloud.kms.v1.EkmConnection.ServiceResolver] where

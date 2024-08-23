@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'diagnostic_config.pb.dart' as $4570;
-import 'event.pb.dart' as $4569;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'diagnostic_config.pb.dart' as $4572;
+import 'event.pb.dart' as $4571;
 import 'runtime.pb.dart' as $1159;
 
 /// Request for listing Managed Notebook Runtimes.
@@ -776,7 +776,7 @@ class ReportRuntimeEventRequest extends $pb.GeneratedMessage {
   factory ReportRuntimeEventRequest({
     $core.String? name,
     $core.String? vmId,
-    $4569.Event? event,
+    $4571.Event? event,
   }) {
     final $result = create();
     if (name != null) {
@@ -797,7 +797,7 @@ class ReportRuntimeEventRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportRuntimeEventRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'vmId')
-    ..aOM<$4569.Event>(3, _omitFieldNames ? '' : 'event', subBuilder: $4569.Event.create)
+    ..aOM<$4571.Event>(3, _omitFieldNames ? '' : 'event', subBuilder: $4571.Event.create)
     ..hasRequiredFields = false
   ;
 
@@ -846,22 +846,22 @@ class ReportRuntimeEventRequest extends $pb.GeneratedMessage {
 
   /// Required. The Event to be reported.
   @$pb.TagNumber(3)
-  $4569.Event get event => $_getN(2);
+  $4571.Event get event => $_getN(2);
   @$pb.TagNumber(3)
-  set event($4569.Event v) { setField(3, v); }
+  set event($4571.Event v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEvent() => $_has(2);
   @$pb.TagNumber(3)
   void clearEvent() => clearField(3);
   @$pb.TagNumber(3)
-  $4569.Event ensureEvent() => $_ensure(2);
+  $4571.Event ensureEvent() => $_ensure(2);
 }
 
 /// Request for updating a Managed Notebook configuration.
 class UpdateRuntimeRequest extends $pb.GeneratedMessage {
   factory UpdateRuntimeRequest({
     $1159.Runtime? runtime,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -882,7 +882,7 @@ class UpdateRuntimeRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRuntimeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
     ..aOM<$1159.Runtime>(1, _omitFieldNames ? '' : 'runtime', subBuilder: $1159.Runtime.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -944,15 +944,15 @@ class UpdateRuntimeRequest extends $pb.GeneratedMessage {
   ///  - `software_config.idle_shutdown_timeout`
   ///  - `software_config.disable_terminal`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Idempotent request UUID.
   @$pb.TagNumber(3)
@@ -1038,7 +1038,7 @@ class RefreshRuntimeTokenInternalRequest extends $pb.GeneratedMessage {
 class RefreshRuntimeTokenInternalResponse extends $pb.GeneratedMessage {
   factory RefreshRuntimeTokenInternalResponse({
     $core.String? accessToken,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (accessToken != null) {
@@ -1055,7 +1055,7 @@ class RefreshRuntimeTokenInternalResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RefreshRuntimeTokenInternalResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accessToken')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1092,22 +1092,22 @@ class RefreshRuntimeTokenInternalResponse extends $pb.GeneratedMessage {
 
   /// Output only. Token expiration time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 }
 
 /// Request for creating a notebook instance diagnostic file.
 class DiagnoseRuntimeRequest extends $pb.GeneratedMessage {
   factory DiagnoseRuntimeRequest({
     $core.String? name,
-    $4570.DiagnosticConfig? diagnosticConfig,
+    $4572.DiagnosticConfig? diagnosticConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -1124,7 +1124,7 @@ class DiagnoseRuntimeRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiagnoseRuntimeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4570.DiagnosticConfig>(2, _omitFieldNames ? '' : 'diagnosticConfig', subBuilder: $4570.DiagnosticConfig.create)
+    ..aOM<$4572.DiagnosticConfig>(2, _omitFieldNames ? '' : 'diagnosticConfig', subBuilder: $4572.DiagnosticConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1162,15 +1162,15 @@ class DiagnoseRuntimeRequest extends $pb.GeneratedMessage {
 
   /// Required. Defines flags that are used to run the diagnostic tool
   @$pb.TagNumber(2)
-  $4570.DiagnosticConfig get diagnosticConfig => $_getN(1);
+  $4572.DiagnosticConfig get diagnosticConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set diagnosticConfig($4570.DiagnosticConfig v) { setField(2, v); }
+  set diagnosticConfig($4572.DiagnosticConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDiagnosticConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearDiagnosticConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4570.DiagnosticConfig ensureDiagnosticConfig() => $_ensure(1);
+  $4572.DiagnosticConfig ensureDiagnosticConfig() => $_ensure(1);
 }
 
 

@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import 'annotation_spec_color.pb.dart' as $4316;
-import 'geometry.pb.dart' as $4317;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import 'annotation_spec_color.pb.dart' as $4317;
+import 'geometry.pb.dart' as $4318;
 
 /// Annotation details specific to image classification.
 class ImageClassificationAnnotation extends $pb.GeneratedMessage {
@@ -216,7 +216,7 @@ class ImageBoundingBoxAnnotation extends $pb.GeneratedMessage {
 class ImageSegmentationAnnotation_MaskAnnotation extends $pb.GeneratedMessage {
   factory ImageSegmentationAnnotation_MaskAnnotation({
     $core.String? maskGcsUri,
-    $core.Iterable<$4316.AnnotationSpecColor>? annotationSpecColors,
+    $core.Iterable<$4317.AnnotationSpecColor>? annotationSpecColors,
   }) {
     final $result = create();
     if (maskGcsUri != null) {
@@ -233,7 +233,7 @@ class ImageSegmentationAnnotation_MaskAnnotation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageSegmentationAnnotation.MaskAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'maskGcsUri')
-    ..pc<$4316.AnnotationSpecColor>(2, _omitFieldNames ? '' : 'annotationSpecColors', $pb.PbFieldType.PM, subBuilder: $4316.AnnotationSpecColor.create)
+    ..pc<$4317.AnnotationSpecColor>(2, _omitFieldNames ? '' : 'annotationSpecColors', $pb.PbFieldType.PM, subBuilder: $4317.AnnotationSpecColor.create)
     ..hasRequiredFields = false
   ;
 
@@ -274,13 +274,13 @@ class ImageSegmentationAnnotation_MaskAnnotation extends $pb.GeneratedMessage {
 
   /// The mapping between color and AnnotationSpec for this Annotation.
   @$pb.TagNumber(2)
-  $core.List<$4316.AnnotationSpecColor> get annotationSpecColors => $_getList(1);
+  $core.List<$4317.AnnotationSpecColor> get annotationSpecColors => $_getList(1);
 }
 
 /// Represents a polygon in image.
 class ImageSegmentationAnnotation_PolygonAnnotation extends $pb.GeneratedMessage {
   factory ImageSegmentationAnnotation_PolygonAnnotation({
-    $core.Iterable<$4317.Vertex>? vertexes,
+    $core.Iterable<$4318.Vertex>? vertexes,
     $core.String? annotationSpecId,
     $core.String? displayName,
   }) {
@@ -301,7 +301,7 @@ class ImageSegmentationAnnotation_PolygonAnnotation extends $pb.GeneratedMessage
   factory ImageSegmentationAnnotation_PolygonAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageSegmentationAnnotation.PolygonAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
-    ..pc<$4317.Vertex>(1, _omitFieldNames ? '' : 'vertexes', $pb.PbFieldType.PM, subBuilder: $4317.Vertex.create)
+    ..pc<$4318.Vertex>(1, _omitFieldNames ? '' : 'vertexes', $pb.PbFieldType.PM, subBuilder: $4318.Vertex.create)
     ..aOS(2, _omitFieldNames ? '' : 'annotationSpecId')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
@@ -331,7 +331,7 @@ class ImageSegmentationAnnotation_PolygonAnnotation extends $pb.GeneratedMessage
   /// The vertexes are connected one by one and the last vertex is connected to
   /// the first one to represent a polygon.
   @$pb.TagNumber(1)
-  $core.List<$4317.Vertex> get vertexes => $_getList(0);
+  $core.List<$4318.Vertex> get vertexes => $_getList(0);
 
   /// The resource Id of the AnnotationSpec that this Annotation pertains to.
   @$pb.TagNumber(2)
@@ -357,7 +357,7 @@ class ImageSegmentationAnnotation_PolygonAnnotation extends $pb.GeneratedMessage
 /// Represents a polyline in image.
 class ImageSegmentationAnnotation_PolylineAnnotation extends $pb.GeneratedMessage {
   factory ImageSegmentationAnnotation_PolylineAnnotation({
-    $core.Iterable<$4317.Vertex>? vertexes,
+    $core.Iterable<$4318.Vertex>? vertexes,
     $core.String? annotationSpecId,
     $core.String? displayName,
   }) {
@@ -378,7 +378,7 @@ class ImageSegmentationAnnotation_PolylineAnnotation extends $pb.GeneratedMessag
   factory ImageSegmentationAnnotation_PolylineAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageSegmentationAnnotation.PolylineAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
-    ..pc<$4317.Vertex>(1, _omitFieldNames ? '' : 'vertexes', $pb.PbFieldType.PM, subBuilder: $4317.Vertex.create)
+    ..pc<$4318.Vertex>(1, _omitFieldNames ? '' : 'vertexes', $pb.PbFieldType.PM, subBuilder: $4318.Vertex.create)
     ..aOS(2, _omitFieldNames ? '' : 'annotationSpecId')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
@@ -408,7 +408,7 @@ class ImageSegmentationAnnotation_PolylineAnnotation extends $pb.GeneratedMessag
   /// The vertexes are connected one by one and the last vertex in not
   /// connected to the first one.
   @$pb.TagNumber(1)
-  $core.List<$4317.Vertex> get vertexes => $_getList(0);
+  $core.List<$4318.Vertex> get vertexes => $_getList(0);
 
   /// The resource Id of the AnnotationSpec that this Annotation pertains to.
   @$pb.TagNumber(2)
@@ -958,8 +958,8 @@ class VideoClassificationAnnotation extends $pb.GeneratedMessage {
 /// A time period inside of a DataItem that has a time dimension (e.g. video).
 class TimeSegment extends $pb.GeneratedMessage {
   factory TimeSegment({
-    $1737.Duration? startTimeOffset,
-    $1737.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
   }) {
     final $result = create();
     if (startTimeOffset != null) {
@@ -975,8 +975,8 @@ class TimeSegment extends $pb.GeneratedMessage {
   factory TimeSegment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSegment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1004,34 +1004,34 @@ class TimeSegment extends $pb.GeneratedMessage {
   /// Start of the time segment (inclusive), represented as the duration since
   /// the start of the DataItem.
   @$pb.TagNumber(1)
-  $1737.Duration get startTimeOffset => $_getN(0);
+  $1738.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($1737.Duration v) { setField(1, v); }
+  set startTimeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(0);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(0);
 
   /// End of the time segment (exclusive), represented as the duration since the
   /// start of the DataItem.
   @$pb.TagNumber(2)
-  $1737.Duration get endTimeOffset => $_getN(1);
+  $1738.Duration get endTimeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endTimeOffset($1737.Duration v) { setField(2, v); }
+  set endTimeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(1);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(1);
 }
 
 /// Annotation details specific to video object tracking.
 class VideoObjectTrackingAnnotation extends $pb.GeneratedMessage {
   factory VideoObjectTrackingAnnotation({
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
     $core.double? xMin,
     $core.double? xMax,
     $core.double? yMin,
@@ -1072,7 +1072,7 @@ class VideoObjectTrackingAnnotation extends $pb.GeneratedMessage {
   factory VideoObjectTrackingAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoObjectTrackingAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'xMin', $pb.PbFieldType.OD)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'xMax', $pb.PbFieldType.OD)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'yMin', $pb.PbFieldType.OD)
@@ -1107,15 +1107,15 @@ class VideoObjectTrackingAnnotation extends $pb.GeneratedMessage {
   /// A time (frame) of a video to which this annotation pertains.
   /// Represented as the duration since the video's start.
   @$pb.TagNumber(1)
-  $1737.Duration get timeOffset => $_getN(0);
+  $1738.Duration get timeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set timeOffset($1737.Duration v) { setField(1, v); }
+  set timeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTimeOffset() => $_ensure(0);
+  $1738.Duration ensureTimeOffset() => $_ensure(0);
 
   /// The leftmost coordinate of the bounding box.
   @$pb.TagNumber(2)

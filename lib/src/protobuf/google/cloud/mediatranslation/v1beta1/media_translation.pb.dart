@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'media_translation.pbenum.dart';
 
 export 'media_translation.pbenum.dart';
@@ -494,7 +494,7 @@ class StreamingTranslateSpeechResult extends $pb.GeneratedMessage {
 /// the audio currently processed.
 class StreamingTranslateSpeechResponse extends $pb.GeneratedMessage {
   factory StreamingTranslateSpeechResponse({
-    $1795.Status? error,
+    $1796.Status? error,
     StreamingTranslateSpeechResult? result,
     StreamingTranslateSpeechResponse_SpeechEventType? speechEventType,
   }) {
@@ -515,7 +515,7 @@ class StreamingTranslateSpeechResponse extends $pb.GeneratedMessage {
   factory StreamingTranslateSpeechResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingTranslateSpeechResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.mediatranslation.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<StreamingTranslateSpeechResult>(2, _omitFieldNames ? '' : 'result', subBuilder: StreamingTranslateSpeechResult.create)
     ..e<StreamingTranslateSpeechResponse_SpeechEventType>(3, _omitFieldNames ? '' : 'speechEventType', $pb.PbFieldType.OE, defaultOrMaker: StreamingTranslateSpeechResponse_SpeechEventType.SPEECH_EVENT_TYPE_UNSPECIFIED, valueOf: StreamingTranslateSpeechResponse_SpeechEventType.valueOf, enumValues: StreamingTranslateSpeechResponse_SpeechEventType.values)
     ..hasRequiredFields = false
@@ -545,15 +545,15 @@ class StreamingTranslateSpeechResponse extends $pb.GeneratedMessage {
   /// Output only. If set, returns a [google.rpc.Status][google.rpc.Status] message that
   /// specifies the error for the operation.
   @$pb.TagNumber(1)
-  $1795.Status get error => $_getN(0);
+  $1796.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($1795.Status v) { setField(1, v); }
+  set error($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureError() => $_ensure(0);
+  $1796.Status ensureError() => $_ensure(0);
 
   /// Output only. The translation result that is currently being processed (is_final could be
   /// true or false).

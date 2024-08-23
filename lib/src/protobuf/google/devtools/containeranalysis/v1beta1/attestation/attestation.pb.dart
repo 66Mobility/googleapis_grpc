@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/common.pb.dart' as $4757;
+import '../common/common.pb.dart' as $4759;
 import 'attestation.pbenum.dart';
 
 export 'attestation.pbenum.dart';
@@ -149,7 +149,7 @@ class GenericSignedAttestation extends $pb.GeneratedMessage {
   factory GenericSignedAttestation({
     GenericSignedAttestation_ContentType? contentType,
     $core.List<$core.int>? serializedPayload,
-    $core.Iterable<$4757.Signature>? signatures,
+    $core.Iterable<$4759.Signature>? signatures,
   }) {
     final $result = create();
     if (contentType != null) {
@@ -170,7 +170,7 @@ class GenericSignedAttestation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenericSignedAttestation', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1beta1.attestation'), createEmptyInstance: create)
     ..e<GenericSignedAttestation_ContentType>(1, _omitFieldNames ? '' : 'contentType', $pb.PbFieldType.OE, defaultOrMaker: GenericSignedAttestation_ContentType.CONTENT_TYPE_UNSPECIFIED, valueOf: GenericSignedAttestation_ContentType.valueOf, enumValues: GenericSignedAttestation_ContentType.values)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'serializedPayload', $pb.PbFieldType.OY)
-    ..pc<$4757.Signature>(3, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $4757.Signature.create)
+    ..pc<$4759.Signature>(3, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $4759.Signature.create)
     ..hasRequiredFields = false
   ;
 
@@ -225,7 +225,7 @@ class GenericSignedAttestation extends $pb.GeneratedMessage {
   /// `signature` verifies `serialized_payload`.  See `Signature` in common.proto
   /// for more details on signature structure and verification.
   @$pb.TagNumber(3)
-  $core.List<$4757.Signature> get signatures => $_getList(2);
+  $core.List<$4759.Signature> get signatures => $_getList(2);
 }
 
 /// This submessage provides human-readable hints about the purpose of the

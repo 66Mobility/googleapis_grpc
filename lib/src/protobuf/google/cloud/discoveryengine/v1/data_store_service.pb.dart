@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'data_store.pb.dart' as $935;
 
 /// Request for
@@ -200,8 +200,8 @@ class GetDataStoreRequest extends $pb.GeneratedMessage {
 /// field.
 class CreateDataStoreMetadata extends $pb.GeneratedMessage {
   factory CreateDataStoreMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -217,8 +217,8 @@ class CreateDataStoreMetadata extends $pb.GeneratedMessage {
   factory CreateDataStoreMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDataStoreMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -245,28 +245,28 @@ class CreateDataStoreMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Request message for
@@ -523,7 +523,7 @@ class DeleteDataStoreRequest extends $pb.GeneratedMessage {
 class UpdateDataStoreRequest extends $pb.GeneratedMessage {
   factory UpdateDataStoreRequest({
     $935.DataStore? dataStore,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataStore != null) {
@@ -540,7 +540,7 @@ class UpdateDataStoreRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataStoreRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
     ..aOM<$935.DataStore>(1, _omitFieldNames ? '' : 'dataStore', subBuilder: $935.DataStore.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -591,15 +591,15 @@ class UpdateDataStoreRequest extends $pb.GeneratedMessage {
   ///  If an unsupported or unknown field is provided, an INVALID_ARGUMENT error
   ///  is returned.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Metadata related to the progress of the
@@ -608,8 +608,8 @@ class UpdateDataStoreRequest extends $pb.GeneratedMessage {
 /// field.
 class DeleteDataStoreMetadata extends $pb.GeneratedMessage {
   factory DeleteDataStoreMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -625,8 +625,8 @@ class DeleteDataStoreMetadata extends $pb.GeneratedMessage {
   factory DeleteDataStoreMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteDataStoreMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -653,28 +653,28 @@ class DeleteDataStoreMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 

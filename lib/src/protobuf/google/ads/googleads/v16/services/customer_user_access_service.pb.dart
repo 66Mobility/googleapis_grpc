@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/customer_user_access.pb.dart' as $3182;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/customer_user_access.pb.dart' as $3183;
 
 /// Mutate Request for
 /// [CustomerUserAccessService.MutateCustomerUserAccess][google.ads.googleads.v16.services.CustomerUserAccessService.MutateCustomerUserAccess].
@@ -95,9 +95,9 @@ enum CustomerUserAccessOperation_Operation {
 /// A single operation (update, remove) on customer user access.
 class CustomerUserAccessOperation extends $pb.GeneratedMessage {
   factory CustomerUserAccessOperation({
-    $3182.CustomerUserAccess? update,
+    $3183.CustomerUserAccess? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (update != null) {
@@ -122,9 +122,9 @@ class CustomerUserAccessOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerUserAccessOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3182.CustomerUserAccess>(1, _omitFieldNames ? '' : 'update', subBuilder: $3182.CustomerUserAccess.create)
+    ..aOM<$3183.CustomerUserAccess>(1, _omitFieldNames ? '' : 'update', subBuilder: $3183.CustomerUserAccess.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -155,15 +155,15 @@ class CustomerUserAccessOperation extends $pb.GeneratedMessage {
   /// Update operation: The customer user access is expected to have a valid
   /// resource name.
   @$pb.TagNumber(1)
-  $3182.CustomerUserAccess get update => $_getN(0);
+  $3183.CustomerUserAccess get update => $_getN(0);
   @$pb.TagNumber(1)
-  set update($3182.CustomerUserAccess v) { setField(1, v); }
+  set update($3183.CustomerUserAccess v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdate() => clearField(1);
   @$pb.TagNumber(1)
-  $3182.CustomerUserAccess ensureUpdate() => $_ensure(0);
+  $3183.CustomerUserAccess ensureUpdate() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed access is
   ///  expected, in this format:
@@ -180,15 +180,15 @@ class CustomerUserAccessOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Response message for customer user access mutate.

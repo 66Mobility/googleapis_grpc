@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 
 enum AutoscalingPolicy_Algorithm {
   basicAlgorithm, 
@@ -182,7 +182,7 @@ enum BasicAutoscalingAlgorithm_Config {
 class BasicAutoscalingAlgorithm extends $pb.GeneratedMessage {
   factory BasicAutoscalingAlgorithm({
     BasicYarnAutoscalingConfig? yarnConfig,
-    $1737.Duration? cooldownPeriod,
+    $1738.Duration? cooldownPeriod,
   }) {
     final $result = create();
     if (yarnConfig != null) {
@@ -204,7 +204,7 @@ class BasicAutoscalingAlgorithm extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BasicAutoscalingAlgorithm', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..oo(0, [1])
     ..aOM<BasicYarnAutoscalingConfig>(1, _omitFieldNames ? '' : 'yarnConfig', subBuilder: BasicYarnAutoscalingConfig.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'cooldownPeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'cooldownPeriod', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -249,15 +249,15 @@ class BasicAutoscalingAlgorithm extends $pb.GeneratedMessage {
   ///
   ///  Bounds: [2m, 1d]. Default: 2m.
   @$pb.TagNumber(2)
-  $1737.Duration get cooldownPeriod => $_getN(1);
+  $1738.Duration get cooldownPeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set cooldownPeriod($1737.Duration v) { setField(2, v); }
+  set cooldownPeriod($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCooldownPeriod() => $_has(1);
   @$pb.TagNumber(2)
   void clearCooldownPeriod() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureCooldownPeriod() => $_ensure(1);
+  $1738.Duration ensureCooldownPeriod() => $_ensure(1);
 }
 
 /// Basic autoscaling configurations for YARN.
@@ -267,7 +267,7 @@ class BasicYarnAutoscalingConfig extends $pb.GeneratedMessage {
     $core.double? scaleDownFactor,
     $core.double? scaleUpMinWorkerFraction,
     $core.double? scaleDownMinWorkerFraction,
-    $1737.Duration? gracefulDecommissionTimeout,
+    $1738.Duration? gracefulDecommissionTimeout,
   }) {
     final $result = create();
     if (scaleUpFactor != null) {
@@ -296,7 +296,7 @@ class BasicYarnAutoscalingConfig extends $pb.GeneratedMessage {
     ..a<$core.double>(2, _omitFieldNames ? '' : 'scaleDownFactor', $pb.PbFieldType.OD)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'scaleUpMinWorkerFraction', $pb.PbFieldType.OD)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'scaleDownMinWorkerFraction', $pb.PbFieldType.OD)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -398,15 +398,15 @@ class BasicYarnAutoscalingConfig extends $pb.GeneratedMessage {
   ///
   ///  Bounds: [0s, 1d].
   @$pb.TagNumber(5)
-  $1737.Duration get gracefulDecommissionTimeout => $_getN(4);
+  $1738.Duration get gracefulDecommissionTimeout => $_getN(4);
   @$pb.TagNumber(5)
-  set gracefulDecommissionTimeout($1737.Duration v) { setField(5, v); }
+  set gracefulDecommissionTimeout($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasGracefulDecommissionTimeout() => $_has(4);
   @$pb.TagNumber(5)
   void clearGracefulDecommissionTimeout() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureGracefulDecommissionTimeout() => $_ensure(4);
+  $1738.Duration ensureGracefulDecommissionTimeout() => $_ensure(4);
 }
 
 /// Configuration for the size bounds of an instance group, including its

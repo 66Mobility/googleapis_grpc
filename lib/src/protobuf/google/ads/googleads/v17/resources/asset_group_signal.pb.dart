@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3285;
-import '../enums/asset_group_signal_approval_status.pbenum.dart' as $3584;
+import '../common/criteria.pb.dart' as $3286;
+import '../enums/asset_group_signal_approval_status.pbenum.dart' as $3585;
 
 enum AssetGroupSignal_Signal {
   audience, 
@@ -30,9 +30,9 @@ class AssetGroupSignal extends $pb.GeneratedMessage {
   factory AssetGroupSignal({
     $core.String? resourceName,
     $core.String? assetGroup,
-    $3285.AudienceInfo? audience,
-    $3285.SearchThemeInfo? searchTheme,
-    $3584.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus? approvalStatus,
+    $3286.AudienceInfo? audience,
+    $3286.SearchThemeInfo? searchTheme,
+    $3585.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus? approvalStatus,
     $core.Iterable<$core.String>? disapprovalReasons,
   }) {
     final $result = create();
@@ -69,9 +69,9 @@ class AssetGroupSignal extends $pb.GeneratedMessage {
     ..oo(0, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'assetGroup')
-    ..aOM<$3285.AudienceInfo>(4, _omitFieldNames ? '' : 'audience', subBuilder: $3285.AudienceInfo.create)
-    ..aOM<$3285.SearchThemeInfo>(5, _omitFieldNames ? '' : 'searchTheme', subBuilder: $3285.SearchThemeInfo.create)
-    ..e<$3584.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus>(6, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $3584.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus.UNSPECIFIED, valueOf: $3584.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus.valueOf, enumValues: $3584.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus.values)
+    ..aOM<$3286.AudienceInfo>(4, _omitFieldNames ? '' : 'audience', subBuilder: $3286.AudienceInfo.create)
+    ..aOM<$3286.SearchThemeInfo>(5, _omitFieldNames ? '' : 'searchTheme', subBuilder: $3286.SearchThemeInfo.create)
+    ..e<$3585.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus>(6, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $3585.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus.UNSPECIFIED, valueOf: $3585.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus.valueOf, enumValues: $3585.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus.values)
     ..pPS(7, _omitFieldNames ? '' : 'disapprovalReasons')
     ..hasRequiredFields = false
   ;
@@ -126,15 +126,15 @@ class AssetGroupSignal extends $pb.GeneratedMessage {
   /// Immutable. The audience signal to be used by the performance max
   /// campaign.
   @$pb.TagNumber(4)
-  $3285.AudienceInfo get audience => $_getN(2);
+  $3286.AudienceInfo get audience => $_getN(2);
   @$pb.TagNumber(4)
-  set audience($3285.AudienceInfo v) { setField(4, v); }
+  set audience($3286.AudienceInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAudience() => $_has(2);
   @$pb.TagNumber(4)
   void clearAudience() => clearField(4);
   @$pb.TagNumber(4)
-  $3285.AudienceInfo ensureAudience() => $_ensure(2);
+  $3286.AudienceInfo ensureAudience() => $_ensure(2);
 
   /// Immutable. The search_theme signal to be used by the performance max
   /// campaign.
@@ -148,23 +148,23 @@ class AssetGroupSignal extends $pb.GeneratedMessage {
   /// StringLengthError.TOO_LONG
   /// ResourceCountLimitExceededError.RESOURCE_LIMIT
   @$pb.TagNumber(5)
-  $3285.SearchThemeInfo get searchTheme => $_getN(3);
+  $3286.SearchThemeInfo get searchTheme => $_getN(3);
   @$pb.TagNumber(5)
-  set searchTheme($3285.SearchThemeInfo v) { setField(5, v); }
+  set searchTheme($3286.SearchThemeInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSearchTheme() => $_has(3);
   @$pb.TagNumber(5)
   void clearSearchTheme() => clearField(5);
   @$pb.TagNumber(5)
-  $3285.SearchThemeInfo ensureSearchTheme() => $_ensure(3);
+  $3286.SearchThemeInfo ensureSearchTheme() => $_ensure(3);
 
   /// Output only. Approval status is the output value for search theme signal
   /// after Google ads policy review. When using Audience signal, this field is
   /// not used and will be absent.
   @$pb.TagNumber(6)
-  $3584.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus get approvalStatus => $_getN(4);
+  $3585.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus get approvalStatus => $_getN(4);
   @$pb.TagNumber(6)
-  set approvalStatus($3584.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus v) { setField(6, v); }
+  set approvalStatus($3585.AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasApprovalStatus() => $_has(4);
   @$pb.TagNumber(6)

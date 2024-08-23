@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 export 'common.pbenum.dart';
 
@@ -21,7 +21,7 @@ export 'common.pbenum.dart';
 class PersonalDetails extends $pb.GeneratedMessage {
   factory PersonalDetails({
     $core.bool? starred,
-    $1775.Timestamp? starTime,
+    $1776.Timestamp? starTime,
   }) {
     final $result = create();
     if (starred != null) {
@@ -38,7 +38,7 @@ class PersonalDetails extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PersonalDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'starred')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'starTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'starTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -75,15 +75,15 @@ class PersonalDetails extends $pb.GeneratedMessage {
 
   /// Set if the entry is starred; unset otherwise.
   @$pb.TagNumber(2)
-  $1775.Timestamp get starTime => $_getN(1);
+  $1776.Timestamp get starTime => $_getN(1);
   @$pb.TagNumber(2)
-  set starTime($1775.Timestamp v) { setField(2, v); }
+  set starTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStarTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStarTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStarTime() => $_ensure(1);
+  $1776.Timestamp ensureStarTime() => $_ensure(1);
 }
 
 

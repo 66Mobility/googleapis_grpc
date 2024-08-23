@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'cloud_speech.pbenum.dart';
 
 export 'cloud_speech.pbenum.dart';
@@ -153,8 +153,8 @@ enum OperationMetadata_Metadata {
 /// Represents the metadata of a long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? resource,
     $core.String? method,
     $core.String? kmsKeyName,
@@ -275,8 +275,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..oo(0, [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21])
     ..oo(1, [23])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'resource')
     ..aOS(4, _omitFieldNames ? '' : 'method')
     ..aOS(6, _omitFieldNames ? '' : 'kmsKeyName')
@@ -329,27 +329,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// The time the operation was last updated.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// The resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -825,7 +825,7 @@ class GetRecognizerRequest extends $pb.GeneratedMessage {
 class UpdateRecognizerRequest extends $pb.GeneratedMessage {
   factory UpdateRecognizerRequest({
     Recognizer? recognizer,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -846,7 +846,7 @@ class UpdateRecognizerRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRecognizerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..aOM<Recognizer>(1, _omitFieldNames ? '' : 'recognizer', subBuilder: Recognizer.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -890,15 +890,15 @@ class UpdateRecognizerRequest extends $pb.GeneratedMessage {
   /// The list of fields to update. If empty, all non-default valued fields are
   /// considered for update. Use `*` to update the entire Recognizer resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set, validate the request and preview the updated Recognizer, but do not
   /// actually update it.
@@ -1114,12 +1114,12 @@ class Recognizer extends $pb.GeneratedMessage {
     RecognitionConfig? defaultRecognitionConfig,
     $core.Map<$core.String, $core.String>? annotations,
     Recognizer_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? etag,
     $core.bool? reconciling,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.String? kmsKeyName,
     $core.String? kmsKeyVersionName,
   @$core.Deprecated('This field is deprecated.')
@@ -1190,12 +1190,12 @@ class Recognizer extends $pb.GeneratedMessage {
     ..aOM<RecognitionConfig>(6, _omitFieldNames ? '' : 'defaultRecognitionConfig', subBuilder: RecognitionConfig.create)
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'annotations', entryClassName: 'Recognizer.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.speech.v2'))
     ..e<Recognizer_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Recognizer_State.STATE_UNSPECIFIED, valueOf: Recognizer_State.valueOf, enumValues: Recognizer_State.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'etag')
     ..aOB(13, _omitFieldNames ? '' : 'reconciling')
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(15, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOS(16, _omitFieldNames ? '' : 'kmsKeyVersionName')
     ..pPS(17, _omitFieldNames ? '' : 'languageCodes')
@@ -1314,39 +1314,39 @@ class Recognizer extends $pb.GeneratedMessage {
 
   /// Output only. Creation time.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The most recent time this Recognizer was modified.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. The time at which this Recognizer was requested for deletion.
   @$pb.TagNumber(11)
-  $1775.Timestamp get deleteTime => $_getN(9);
+  $1776.Timestamp get deleteTime => $_getN(9);
   @$pb.TagNumber(11)
-  set deleteTime($1775.Timestamp v) { setField(11, v); }
+  set deleteTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDeleteTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearDeleteTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(9);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(9);
 
   /// Output only. This checksum is computed by the server based on the value of
   /// other fields. This may be sent on update, undelete, and delete requests to
@@ -1373,15 +1373,15 @@ class Recognizer extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this Recognizer will be purged.
   @$pb.TagNumber(14)
-  $1775.Timestamp get expireTime => $_getN(12);
+  $1776.Timestamp get expireTime => $_getN(12);
   @$pb.TagNumber(14)
-  set expireTime($1775.Timestamp v) { setField(14, v); }
+  set expireTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasExpireTime() => $_has(12);
   @$pb.TagNumber(14)
   void clearExpireTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureExpireTime() => $_ensure(12);
+  $1776.Timestamp ensureExpireTime() => $_ensure(12);
 
   /// Output only. The [KMS key
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#keys) with which
@@ -2417,7 +2417,7 @@ class RecognizeRequest extends $pb.GeneratedMessage {
     $core.String? recognizer,
     $core.List<$core.int>? content,
     $core.String? uri,
-    $2209.FieldMask? configMask,
+    $2210.FieldMask? configMask,
   }) {
     final $result = create();
     if (config != null) {
@@ -2452,7 +2452,7 @@ class RecognizeRequest extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'recognizer')
     ..a<$core.List<$core.int>>(5, _omitFieldNames ? '' : 'content', $pb.PbFieldType.OY)
     ..aOS(6, _omitFieldNames ? '' : 'uri')
-    ..aOM<$2209.FieldMask>(8, _omitFieldNames ? '' : 'configMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(8, _omitFieldNames ? '' : 'configMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2554,21 +2554,21 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   /// overrides and replaces the config in the recognizer for this recognition
   /// request.
   @$pb.TagNumber(8)
-  $2209.FieldMask get configMask => $_getN(4);
+  $2210.FieldMask get configMask => $_getN(4);
   @$pb.TagNumber(8)
-  set configMask($2209.FieldMask v) { setField(8, v); }
+  set configMask($2210.FieldMask v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasConfigMask() => $_has(4);
   @$pb.TagNumber(8)
   void clearConfigMask() => clearField(8);
   @$pb.TagNumber(8)
-  $2209.FieldMask ensureConfigMask() => $_ensure(4);
+  $2210.FieldMask ensureConfigMask() => $_ensure(4);
 }
 
 /// Metadata about the recognition request and response.
 class RecognitionResponseMetadata extends $pb.GeneratedMessage {
   factory RecognitionResponseMetadata({
-    $1737.Duration? totalBilledDuration,
+    $1738.Duration? totalBilledDuration,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -2585,7 +2585,7 @@ class RecognitionResponseMetadata extends $pb.GeneratedMessage {
   factory RecognitionResponseMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecognitionResponseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'totalBilledDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'totalBilledDuration', subBuilder: $1738.Duration.create)
     ..aOS(9, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -2613,15 +2613,15 @@ class RecognitionResponseMetadata extends $pb.GeneratedMessage {
 
   /// When available, billed audio seconds for the corresponding request.
   @$pb.TagNumber(6)
-  $1737.Duration get totalBilledDuration => $_getN(0);
+  $1738.Duration get totalBilledDuration => $_getN(0);
   @$pb.TagNumber(6)
-  set totalBilledDuration($1737.Duration v) { setField(6, v); }
+  set totalBilledDuration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTotalBilledDuration() => $_has(0);
   @$pb.TagNumber(6)
   void clearTotalBilledDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureTotalBilledDuration() => $_ensure(0);
+  $1738.Duration ensureTotalBilledDuration() => $_ensure(0);
 
   /// Global request identifier auto-generated by the API.
   @$pb.TagNumber(9)
@@ -2723,8 +2723,8 @@ class SpeechRecognitionAlternative extends $pb.GeneratedMessage {
 /// Word-specific information for recognized words.
 class WordInfo extends $pb.GeneratedMessage {
   factory WordInfo({
-    $1737.Duration? startOffset,
-    $1737.Duration? endOffset,
+    $1738.Duration? startOffset,
+    $1738.Duration? endOffset,
     $core.String? word,
     $core.double? confidence,
     $core.String? speakerLabel,
@@ -2752,8 +2752,8 @@ class WordInfo extends $pb.GeneratedMessage {
   factory WordInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WordInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'word')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..aOS(6, _omitFieldNames ? '' : 'speakerLabel')
@@ -2788,15 +2788,15 @@ class WordInfo extends $pb.GeneratedMessage {
   /// is `true` and only in the top hypothesis. This is an experimental feature
   /// and the accuracy of the time offset can vary.
   @$pb.TagNumber(1)
-  $1737.Duration get startOffset => $_getN(0);
+  $1738.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startOffset($1737.Duration v) { setField(1, v); }
+  set startOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartOffset() => $_ensure(0);
+  $1738.Duration ensureStartOffset() => $_ensure(0);
 
   /// Time offset relative to the beginning of the audio,
   /// and corresponding to the end of the spoken word.
@@ -2805,15 +2805,15 @@ class WordInfo extends $pb.GeneratedMessage {
   /// is `true` and only in the top hypothesis. This is an experimental feature
   /// and the accuracy of the time offset can vary.
   @$pb.TagNumber(2)
-  $1737.Duration get endOffset => $_getN(1);
+  $1738.Duration get endOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endOffset($1737.Duration v) { setField(2, v); }
+  set endOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndOffset() => $_ensure(1);
+  $1738.Duration ensureEndOffset() => $_ensure(1);
 
   /// The word corresponding to this set of information.
   @$pb.TagNumber(3)
@@ -2862,7 +2862,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   factory SpeechRecognitionResult({
     $core.Iterable<SpeechRecognitionAlternative>? alternatives,
     $core.int? channelTag,
-    $1737.Duration? resultEndOffset,
+    $1738.Duration? resultEndOffset,
     $core.String? languageCode,
   }) {
     final $result = create();
@@ -2887,7 +2887,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpeechRecognitionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..pc<SpeechRecognitionAlternative>(1, _omitFieldNames ? '' : 'alternatives', $pb.PbFieldType.PM, subBuilder: SpeechRecognitionAlternative.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'channelTag', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'resultEndOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'resultEndOffset', subBuilder: $1738.Duration.create)
     ..aOS(5, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
   ;
@@ -2935,15 +2935,15 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   /// Time offset of the end of this result relative to the beginning of the
   /// audio.
   @$pb.TagNumber(4)
-  $1737.Duration get resultEndOffset => $_getN(2);
+  $1738.Duration get resultEndOffset => $_getN(2);
   @$pb.TagNumber(4)
-  set resultEndOffset($1737.Duration v) { setField(4, v); }
+  set resultEndOffset($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResultEndOffset() => $_has(2);
   @$pb.TagNumber(4)
   void clearResultEndOffset() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureResultEndOffset() => $_ensure(2);
+  $1738.Duration ensureResultEndOffset() => $_ensure(2);
 
   /// Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
   /// language tag of the language in this result. This language code was
@@ -3026,8 +3026,8 @@ class RecognizeResponse extends $pb.GeneratedMessage {
 /// Events that a timeout can be set on for voice activity.
 class StreamingRecognitionFeatures_VoiceActivityTimeout extends $pb.GeneratedMessage {
   factory StreamingRecognitionFeatures_VoiceActivityTimeout({
-    $1737.Duration? speechStartTimeout,
-    $1737.Duration? speechEndTimeout,
+    $1738.Duration? speechStartTimeout,
+    $1738.Duration? speechEndTimeout,
   }) {
     final $result = create();
     if (speechStartTimeout != null) {
@@ -3043,8 +3043,8 @@ class StreamingRecognitionFeatures_VoiceActivityTimeout extends $pb.GeneratedMes
   factory StreamingRecognitionFeatures_VoiceActivityTimeout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingRecognitionFeatures.VoiceActivityTimeout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'speechStartTimeout', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'speechEndTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'speechStartTimeout', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'speechEndTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -3073,29 +3073,29 @@ class StreamingRecognitionFeatures_VoiceActivityTimeout extends $pb.GeneratedMes
   /// no speech is detected in this duration at the start of the stream, the
   /// server will close the stream.
   @$pb.TagNumber(1)
-  $1737.Duration get speechStartTimeout => $_getN(0);
+  $1738.Duration get speechStartTimeout => $_getN(0);
   @$pb.TagNumber(1)
-  set speechStartTimeout($1737.Duration v) { setField(1, v); }
+  set speechStartTimeout($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpeechStartTimeout() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpeechStartTimeout() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureSpeechStartTimeout() => $_ensure(0);
+  $1738.Duration ensureSpeechStartTimeout() => $_ensure(0);
 
   /// Duration to timeout the stream after speech ends. If this is set and no
   /// speech is detected in this duration after speech was detected, the server
   /// will close the stream.
   @$pb.TagNumber(2)
-  $1737.Duration get speechEndTimeout => $_getN(1);
+  $1738.Duration get speechEndTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set speechEndTimeout($1737.Duration v) { setField(2, v); }
+  set speechEndTimeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpeechEndTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpeechEndTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureSpeechEndTimeout() => $_ensure(1);
+  $1738.Duration ensureSpeechEndTimeout() => $_ensure(1);
 }
 
 /// Available recognition features specific to streaming recognition requests.
@@ -3192,7 +3192,7 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   factory StreamingRecognitionConfig({
     RecognitionConfig? config,
     StreamingRecognitionFeatures? streamingFeatures,
-    $2209.FieldMask? configMask,
+    $2210.FieldMask? configMask,
   }) {
     final $result = create();
     if (config != null) {
@@ -3213,7 +3213,7 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingRecognitionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..aOM<RecognitionConfig>(1, _omitFieldNames ? '' : 'config', subBuilder: RecognitionConfig.create)
     ..aOM<StreamingRecognitionFeatures>(2, _omitFieldNames ? '' : 'streamingFeatures', subBuilder: StreamingRecognitionFeatures.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'configMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'configMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3282,15 +3282,15 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   /// completely overrides and replaces the config in the recognizer for this
   /// recognition request.
   @$pb.TagNumber(3)
-  $2209.FieldMask get configMask => $_getN(2);
+  $2210.FieldMask get configMask => $_getN(2);
   @$pb.TagNumber(3)
-  set configMask($2209.FieldMask v) { setField(3, v); }
+  set configMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasConfigMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearConfigMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureConfigMask() => $_ensure(2);
+  $2210.FieldMask ensureConfigMask() => $_ensure(2);
 }
 
 enum StreamingRecognizeRequest_StreamingRequest {
@@ -3425,7 +3425,7 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
     $core.String? recognizer,
     $core.Iterable<BatchRecognizeFileMetadata>? files,
     RecognitionConfig? config,
-    $2209.FieldMask? configMask,
+    $2210.FieldMask? configMask,
     RecognitionOutputConfig? recognitionOutputConfig,
     BatchRecognizeRequest_ProcessingStrategy? processingStrategy,
   }) {
@@ -3458,7 +3458,7 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'recognizer')
     ..pc<BatchRecognizeFileMetadata>(3, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: BatchRecognizeFileMetadata.create)
     ..aOM<RecognitionConfig>(4, _omitFieldNames ? '' : 'config', subBuilder: RecognitionConfig.create)
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'configMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'configMask', subBuilder: $2210.FieldMask.create)
     ..aOM<RecognitionOutputConfig>(6, _omitFieldNames ? '' : 'recognitionOutputConfig', subBuilder: RecognitionOutputConfig.create)
     ..e<BatchRecognizeRequest_ProcessingStrategy>(7, _omitFieldNames ? '' : 'processingStrategy', $pb.PbFieldType.OE, defaultOrMaker: BatchRecognizeRequest_ProcessingStrategy.PROCESSING_STRATEGY_UNSPECIFIED, valueOf: BatchRecognizeRequest_ProcessingStrategy.valueOf, enumValues: BatchRecognizeRequest_ProcessingStrategy.values)
     ..hasRequiredFields = false
@@ -3534,15 +3534,15 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
   /// overrides and replaces the config in the recognizer for this recognition
   /// request.
   @$pb.TagNumber(5)
-  $2209.FieldMask get configMask => $_getN(3);
+  $2210.FieldMask get configMask => $_getN(3);
   @$pb.TagNumber(5)
-  set configMask($2209.FieldMask v) { setField(5, v); }
+  set configMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasConfigMask() => $_has(3);
   @$pb.TagNumber(5)
   void clearConfigMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureConfigMask() => $_ensure(3);
+  $2210.FieldMask ensureConfigMask() => $_ensure(3);
 
   /// Configuration options for where to output the transcripts of each file.
   @$pb.TagNumber(6)
@@ -3962,7 +3962,7 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
 class BatchRecognizeResponse extends $pb.GeneratedMessage {
   factory BatchRecognizeResponse({
     $core.Map<$core.String, BatchRecognizeFileResult>? results,
-    $1737.Duration? totalBilledDuration,
+    $1738.Duration? totalBilledDuration,
   }) {
     final $result = create();
     if (results != null) {
@@ -3979,7 +3979,7 @@ class BatchRecognizeResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchRecognizeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..m<$core.String, BatchRecognizeFileResult>(1, _omitFieldNames ? '' : 'results', entryClassName: 'BatchRecognizeResponse.ResultsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: BatchRecognizeFileResult.create, valueDefaultOrMaker: BatchRecognizeFileResult.getDefault, packageName: const $pb.PackageName('google.cloud.speech.v2'))
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'totalBilledDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'totalBilledDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4010,15 +4010,15 @@ class BatchRecognizeResponse extends $pb.GeneratedMessage {
 
   /// When available, billed audio seconds for the corresponding request.
   @$pb.TagNumber(2)
-  $1737.Duration get totalBilledDuration => $_getN(1);
+  $1738.Duration get totalBilledDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set totalBilledDuration($1737.Duration v) { setField(2, v); }
+  set totalBilledDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTotalBilledDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearTotalBilledDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTotalBilledDuration() => $_ensure(1);
+  $1738.Duration ensureTotalBilledDuration() => $_ensure(1);
 }
 
 /// Output type for Cloud Storage of BatchRecognize transcripts. Though this
@@ -4268,7 +4268,7 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
   factory BatchRecognizeFileResult({
   @$core.Deprecated('This field is deprecated.')
     $core.String? uri,
-    $1795.Status? error,
+    $1796.Status? error,
     RecognitionResponseMetadata? metadata,
   @$core.Deprecated('This field is deprecated.')
     BatchRecognizeResults? transcript,
@@ -4310,7 +4310,7 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchRecognizeFileResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'uri')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<RecognitionResponseMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: RecognitionResponseMetadata.create)
     ..aOM<BatchRecognizeResults>(4, _omitFieldNames ? '' : 'transcript', subBuilder: BatchRecognizeResults.create)
     ..aOM<CloudStorageResult>(5, _omitFieldNames ? '' : 'cloudStorageResult', subBuilder: CloudStorageResult.create)
@@ -4358,15 +4358,15 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
 
   /// Error if one was encountered.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 
   @$pb.TagNumber(3)
   RecognitionResponseMetadata get metadata => $_getN(2);
@@ -4433,7 +4433,7 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
 class BatchRecognizeTranscriptionMetadata extends $pb.GeneratedMessage {
   factory BatchRecognizeTranscriptionMetadata({
     $core.int? progressPercent,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.String? uri,
   }) {
     final $result = create();
@@ -4454,7 +4454,7 @@ class BatchRecognizeTranscriptionMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchRecognizeTranscriptionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOS(3, _omitFieldNames ? '' : 'uri')
     ..hasRequiredFields = false
   ;
@@ -4492,15 +4492,15 @@ class BatchRecognizeTranscriptionMetadata extends $pb.GeneratedMessage {
 
   /// Error if one was encountered.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 
   /// The Cloud Storage URI to which recognition results will be written.
   @$pb.TagNumber(3)
@@ -4570,7 +4570,7 @@ class BatchRecognizeFileMetadata extends $pb.GeneratedMessage {
   factory BatchRecognizeFileMetadata({
     $core.String? uri,
     RecognitionConfig? config,
-    $2209.FieldMask? configMask,
+    $2210.FieldMask? configMask,
   }) {
     final $result = create();
     if (uri != null) {
@@ -4596,7 +4596,7 @@ class BatchRecognizeFileMetadata extends $pb.GeneratedMessage {
     ..oo(0, [1])
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..aOM<RecognitionConfig>(4, _omitFieldNames ? '' : 'config', subBuilder: RecognitionConfig.create)
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'configMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'configMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4667,15 +4667,15 @@ class BatchRecognizeFileMetadata extends $pb.GeneratedMessage {
   /// completely overrides and replaces the config in the recognizer for this
   /// recognition request.
   @$pb.TagNumber(5)
-  $2209.FieldMask get configMask => $_getN(2);
+  $2210.FieldMask get configMask => $_getN(2);
   @$pb.TagNumber(5)
-  set configMask($2209.FieldMask v) { setField(5, v); }
+  set configMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasConfigMask() => $_has(2);
   @$pb.TagNumber(5)
   void clearConfigMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureConfigMask() => $_ensure(2);
+  $2210.FieldMask ensureConfigMask() => $_ensure(2);
 }
 
 /// A streaming speech recognition result corresponding to a portion of the audio
@@ -4685,7 +4685,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
     $core.Iterable<SpeechRecognitionAlternative>? alternatives,
     $core.bool? isFinal,
     $core.double? stability,
-    $1737.Duration? resultEndOffset,
+    $1738.Duration? resultEndOffset,
     $core.int? channelTag,
     $core.String? languageCode,
   }) {
@@ -4718,7 +4718,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
     ..pc<SpeechRecognitionAlternative>(1, _omitFieldNames ? '' : 'alternatives', $pb.PbFieldType.PM, subBuilder: SpeechRecognitionAlternative.create)
     ..aOB(2, _omitFieldNames ? '' : 'isFinal')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'stability', $pb.PbFieldType.OF)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'resultEndOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'resultEndOffset', subBuilder: $1738.Duration.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'channelTag', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
@@ -4784,15 +4784,15 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   /// Time offset of the end of this result relative to the beginning of the
   /// audio.
   @$pb.TagNumber(4)
-  $1737.Duration get resultEndOffset => $_getN(3);
+  $1738.Duration get resultEndOffset => $_getN(3);
   @$pb.TagNumber(4)
-  set resultEndOffset($1737.Duration v) { setField(4, v); }
+  set resultEndOffset($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResultEndOffset() => $_has(3);
   @$pb.TagNumber(4)
   void clearResultEndOffset() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureResultEndOffset() => $_ensure(3);
+  $1738.Duration ensureResultEndOffset() => $_ensure(3);
 
   /// For multi-channel audio, this is the channel number corresponding to the
   /// recognized result for the audio from that channel.
@@ -4873,7 +4873,7 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
     StreamingRecognizeResponse_SpeechEventType? speechEventType,
     RecognitionResponseMetadata? metadata,
     $core.Iterable<StreamingRecognitionResult>? results,
-    $1737.Duration? speechEventOffset,
+    $1738.Duration? speechEventOffset,
   }) {
     final $result = create();
     if (speechEventType != null) {
@@ -4898,7 +4898,7 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
     ..e<StreamingRecognizeResponse_SpeechEventType>(3, _omitFieldNames ? '' : 'speechEventType', $pb.PbFieldType.OE, defaultOrMaker: StreamingRecognizeResponse_SpeechEventType.SPEECH_EVENT_TYPE_UNSPECIFIED, valueOf: StreamingRecognizeResponse_SpeechEventType.valueOf, enumValues: StreamingRecognizeResponse_SpeechEventType.values)
     ..aOM<RecognitionResponseMetadata>(5, _omitFieldNames ? '' : 'metadata', subBuilder: RecognitionResponseMetadata.create)
     ..pc<StreamingRecognitionResult>(6, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: StreamingRecognitionResult.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'speechEventOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'speechEventOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4957,15 +4957,15 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
 
   /// Time offset between the beginning of the audio and event emission.
   @$pb.TagNumber(7)
-  $1737.Duration get speechEventOffset => $_getN(3);
+  $1738.Duration get speechEventOffset => $_getN(3);
   @$pb.TagNumber(7)
-  set speechEventOffset($1737.Duration v) { setField(7, v); }
+  set speechEventOffset($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSpeechEventOffset() => $_has(3);
   @$pb.TagNumber(7)
   void clearSpeechEventOffset() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureSpeechEventOffset() => $_ensure(3);
+  $1738.Duration ensureSpeechEventOffset() => $_ensure(3);
 }
 
 /// Message representing the config for the Speech-to-Text API. This includes an
@@ -4975,7 +4975,7 @@ class Config extends $pb.GeneratedMessage {
   factory Config({
     $core.String? name,
     $core.String? kmsKeyName,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -4996,7 +4996,7 @@ class Config extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Config', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -5050,15 +5050,15 @@ class Config extends $pb.GeneratedMessage {
 
   /// Output only. The most recent time this resource was modified.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// Request message for the
@@ -5121,7 +5121,7 @@ class GetConfigRequest extends $pb.GeneratedMessage {
 class UpdateConfigRequest extends $pb.GeneratedMessage {
   factory UpdateConfigRequest({
     Config? config,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (config != null) {
@@ -5138,7 +5138,7 @@ class UpdateConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..aOM<Config>(1, _omitFieldNames ? '' : 'config', subBuilder: Config.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -5180,15 +5180,15 @@ class UpdateConfigRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// An item of the class.
@@ -5252,10 +5252,10 @@ class CustomClass extends $pb.GeneratedMessage {
     $core.String? uid,
     $core.String? displayName,
     $core.Iterable<CustomClass_ClassItem>? items,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     $core.Map<$core.String, $core.String>? annotations,
     $core.String? etag,
     $core.bool? reconciling,
@@ -5317,10 +5317,10 @@ class CustomClass extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..pc<CustomClass_ClassItem>(5, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: CustomClass_ClassItem.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'annotations', entryClassName: 'CustomClass.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.speech.v2'))
     ..aOS(11, _omitFieldNames ? '' : 'etag')
     ..aOB(12, _omitFieldNames ? '' : 'reconciling')
@@ -5390,51 +5390,51 @@ class CustomClass extends $pb.GeneratedMessage {
 
   /// Output only. Creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The most recent time this resource was modified.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. The time at which this resource was requested for deletion.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(6);
+  $1776.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(6);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(6);
 
   /// Output only. The time at which this resource will be purged.
   @$pb.TagNumber(9)
-  $1775.Timestamp get expireTime => $_getN(7);
+  $1776.Timestamp get expireTime => $_getN(7);
   @$pb.TagNumber(9)
-  set expireTime($1775.Timestamp v) { setField(9, v); }
+  set expireTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpireTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearExpireTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureExpireTime() => $_ensure(7);
+  $1776.Timestamp ensureExpireTime() => $_ensure(7);
 
   /// Optional. Allows users to store small amounts of arbitrary data.
   /// Both the key and the value must be 63 characters or less each.
@@ -5595,10 +5595,10 @@ class PhraseSet extends $pb.GeneratedMessage {
     $core.Iterable<PhraseSet_Phrase>? phrases,
     $core.double? boost,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     $core.Map<$core.String, $core.String>? annotations,
     $core.String? etag,
     $core.bool? reconciling,
@@ -5664,10 +5664,10 @@ class PhraseSet extends $pb.GeneratedMessage {
     ..pc<PhraseSet_Phrase>(3, _omitFieldNames ? '' : 'phrases', $pb.PbFieldType.PM, subBuilder: PhraseSet_Phrase.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'boost', $pb.PbFieldType.OF)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'annotations', entryClassName: 'PhraseSet.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.speech.v2'))
     ..aOS(11, _omitFieldNames ? '' : 'etag')
     ..aOB(12, _omitFieldNames ? '' : 'reconciling')
@@ -5751,51 +5751,51 @@ class PhraseSet extends $pb.GeneratedMessage {
 
   /// Output only. Creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The most recent time this resource was modified.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. The time at which this resource was requested for deletion.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Output only. The time at which this resource will be purged.
   @$pb.TagNumber(9)
-  $1775.Timestamp get expireTime => $_getN(8);
+  $1776.Timestamp get expireTime => $_getN(8);
   @$pb.TagNumber(9)
-  set expireTime($1775.Timestamp v) { setField(9, v); }
+  set expireTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpireTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearExpireTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureExpireTime() => $_ensure(8);
+  $1776.Timestamp ensureExpireTime() => $_ensure(8);
 
   /// Allows users to store small amounts of arbitrary data.
   /// Both the key and the value must be 63 characters or less each.
@@ -6201,7 +6201,7 @@ class GetCustomClassRequest extends $pb.GeneratedMessage {
 class UpdateCustomClassRequest extends $pb.GeneratedMessage {
   factory UpdateCustomClassRequest({
     CustomClass? customClass,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -6222,7 +6222,7 @@ class UpdateCustomClassRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCustomClassRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..aOM<CustomClass>(1, _omitFieldNames ? '' : 'customClass', subBuilder: CustomClass.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -6267,15 +6267,15 @@ class UpdateCustomClassRequest extends $pb.GeneratedMessage {
   /// The list of fields to be updated. If empty, all fields are considered for
   /// update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set, validate the request and preview the updated CustomClass, but do
   /// not actually update it.
@@ -6819,7 +6819,7 @@ class GetPhraseSetRequest extends $pb.GeneratedMessage {
 class UpdatePhraseSetRequest extends $pb.GeneratedMessage {
   factory UpdatePhraseSetRequest({
     PhraseSet? phraseSet,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -6840,7 +6840,7 @@ class UpdatePhraseSetRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePhraseSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v2'), createEmptyInstance: create)
     ..aOM<PhraseSet>(1, _omitFieldNames ? '' : 'phraseSet', subBuilder: PhraseSet.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -6884,15 +6884,15 @@ class UpdatePhraseSetRequest extends $pb.GeneratedMessage {
   /// The list of fields to update. If empty, all non-default valued fields are
   /// considered for update. Use `*` to update the entire PhraseSet resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set, validate the request and preview the updated PhraseSet, but do not
   /// actually update it.

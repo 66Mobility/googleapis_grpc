@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'context.pb.dart' as $908;
 import 'intent.pb.dart' as $909;
 import 'session.pb.dart' as $912;
@@ -162,7 +162,7 @@ class WebhookResponse extends $pb.GeneratedMessage {
     $core.String? fulfillmentText,
     $core.Iterable<$909.Intent_Message>? fulfillmentMessages,
     $core.String? source,
-    $1734.Struct? payload,
+    $1735.Struct? payload,
     $core.Iterable<$908.Context>? outputContexts,
     $912.EventInput? followupEventInput,
     $core.bool? liveAgentHandoff,
@@ -207,7 +207,7 @@ class WebhookResponse extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'fulfillmentText')
     ..pc<$909.Intent_Message>(2, _omitFieldNames ? '' : 'fulfillmentMessages', $pb.PbFieldType.PM, subBuilder: $909.Intent_Message.create)
     ..aOS(3, _omitFieldNames ? '' : 'source')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Struct.create)
     ..pc<$908.Context>(5, _omitFieldNames ? '' : 'outputContexts', $pb.PbFieldType.PM, subBuilder: $908.Context.create)
     ..aOM<$912.EventInput>(6, _omitFieldNames ? '' : 'followupEventInput', subBuilder: $912.EventInput.create)
     ..aOB(7, _omitFieldNames ? '' : 'liveAgentHandoff')
@@ -283,15 +283,15 @@ class WebhookResponse extends $pb.GeneratedMessage {
   /// See the format definition at [Google Assistant Dialogflow webhook
   /// format](https://developers.google.com/assistant/actions/build/json/dialogflow-webhook-json)
   @$pb.TagNumber(4)
-  $1734.Struct get payload => $_getN(3);
+  $1735.Struct get payload => $_getN(3);
   @$pb.TagNumber(4)
-  set payload($1734.Struct v) { setField(4, v); }
+  set payload($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPayload() => $_has(3);
   @$pb.TagNumber(4)
   void clearPayload() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensurePayload() => $_ensure(3);
+  $1735.Struct ensurePayload() => $_ensure(3);
 
   /// Optional. The collection of output contexts that will overwrite currently
   /// active contexts for the session and reset their lifespans.
@@ -357,7 +357,7 @@ class OriginalDetectIntentRequest extends $pb.GeneratedMessage {
   factory OriginalDetectIntentRequest({
     $core.String? source,
     $core.String? version,
-    $1734.Struct? payload,
+    $1735.Struct? payload,
   }) {
     final $result = create();
     if (source != null) {
@@ -378,7 +378,7 @@ class OriginalDetectIntentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OriginalDetectIntentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'source')
     ..aOS(2, _omitFieldNames ? '' : 'version')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -440,15 +440,15 @@ class OriginalDetectIntentRequest extends $pb.GeneratedMessage {
   ///  Edition agents and populated with the caller ID in [E.164
   ///  format](https://en.wikipedia.org/wiki/E.164) for Essentials Edition agents.
   @$pb.TagNumber(3)
-  $1734.Struct get payload => $_getN(2);
+  $1735.Struct get payload => $_getN(2);
   @$pb.TagNumber(3)
-  set payload($1734.Struct v) { setField(3, v); }
+  set payload($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPayload() => $_has(2);
   @$pb.TagNumber(3)
   void clearPayload() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensurePayload() => $_ensure(2);
+  $1735.Struct ensurePayload() => $_ensure(2);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 
 /// Container of information about an image.
 class ImagePayload extends $pb.GeneratedMessage {
@@ -168,7 +168,7 @@ class TextPayload extends $pb.GeneratedMessage {
 class VideoThumbnail extends $pb.GeneratedMessage {
   factory VideoThumbnail({
     $core.List<$core.int>? thumbnail,
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
   }) {
     final $result = create();
     if (thumbnail != null) {
@@ -185,7 +185,7 @@ class VideoThumbnail extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoThumbnail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'thumbnail', $pb.PbFieldType.OY)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -223,15 +223,15 @@ class VideoThumbnail extends $pb.GeneratedMessage {
   /// Time offset relative to the beginning of the video, corresponding to the
   /// video frame where the thumbnail has been extracted from.
   @$pb.TagNumber(2)
-  $1737.Duration get timeOffset => $_getN(1);
+  $1738.Duration get timeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set timeOffset($1737.Duration v) { setField(2, v); }
+  set timeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeOffset() => $_ensure(1);
+  $1738.Duration ensureTimeOffset() => $_ensure(1);
 }
 
 /// Container of information of a video.

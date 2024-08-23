@@ -14,25 +14,25 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/offline_conversion_diagnostic_status_enum.pbenum.dart' as $3763;
-import '../enums/offline_event_upload_client_enum.pbenum.dart' as $3762;
-import '../errors/collection_size_error.pbenum.dart' as $3387;
-import '../errors/conversion_adjustment_upload_error.pbenum.dart' as $3458;
-import '../errors/conversion_upload_error.pbenum.dart' as $3455;
-import '../errors/date_error.pbenum.dart' as $3389;
-import '../errors/distinct_error.pbenum.dart' as $3391;
-import '../errors/field_error.pbenum.dart' as $3414;
-import '../errors/mutate_error.pbenum.dart' as $3370;
-import '../errors/not_allowlisted_error.pbenum.dart' as $3479;
-import '../errors/string_format_error.pbenum.dart' as $3406;
-import '../errors/string_length_error.pbenum.dart' as $3407;
+import '../enums/offline_conversion_diagnostic_status_enum.pbenum.dart' as $3764;
+import '../enums/offline_event_upload_client_enum.pbenum.dart' as $3763;
+import '../errors/collection_size_error.pbenum.dart' as $3388;
+import '../errors/conversion_adjustment_upload_error.pbenum.dart' as $3459;
+import '../errors/conversion_upload_error.pbenum.dart' as $3456;
+import '../errors/date_error.pbenum.dart' as $3390;
+import '../errors/distinct_error.pbenum.dart' as $3392;
+import '../errors/field_error.pbenum.dart' as $3415;
+import '../errors/mutate_error.pbenum.dart' as $3371;
+import '../errors/not_allowlisted_error.pbenum.dart' as $3480;
+import '../errors/string_format_error.pbenum.dart' as $3407;
+import '../errors/string_length_error.pbenum.dart' as $3408;
 
 /// Offline conversion upload summary at customer level.
 class OfflineConversionUploadClientSummary extends $pb.GeneratedMessage {
   factory OfflineConversionUploadClientSummary({
     $core.String? resourceName,
-    $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient? client,
-    $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus? status,
+    $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient? client,
+    $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus? status,
     $fixnum.Int64? totalEventCount,
     $fixnum.Int64? successfulEventCount,
     $core.double? successRate,
@@ -88,8 +88,8 @@ class OfflineConversionUploadClientSummary extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OfflineConversionUploadClientSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3762.OfflineEventUploadClientEnum_OfflineEventUploadClient>(2, _omitFieldNames ? '' : 'client', $pb.PbFieldType.OE, defaultOrMaker: $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient.UNSPECIFIED, valueOf: $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient.valueOf, enumValues: $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient.values)
-    ..e<$3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.UNSPECIFIED, valueOf: $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.valueOf, enumValues: $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.values)
+    ..e<$3763.OfflineEventUploadClientEnum_OfflineEventUploadClient>(2, _omitFieldNames ? '' : 'client', $pb.PbFieldType.OE, defaultOrMaker: $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient.UNSPECIFIED, valueOf: $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient.valueOf, enumValues: $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient.values)
+    ..e<$3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.UNSPECIFIED, valueOf: $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.valueOf, enumValues: $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.values)
     ..aInt64(4, _omitFieldNames ? '' : 'totalEventCount')
     ..aInt64(5, _omitFieldNames ? '' : 'successfulEventCount')
     ..a<$core.double>(6, _omitFieldNames ? '' : 'successRate', $pb.PbFieldType.OD)
@@ -139,9 +139,9 @@ class OfflineConversionUploadClientSummary extends $pb.GeneratedMessage {
 
   /// Output only. Client type of the upload event.
   @$pb.TagNumber(2)
-  $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient get client => $_getN(1);
+  $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient get client => $_getN(1);
   @$pb.TagNumber(2)
-  set client($3762.OfflineEventUploadClientEnum_OfflineEventUploadClient v) { setField(2, v); }
+  set client($3763.OfflineEventUploadClientEnum_OfflineEventUploadClient v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasClient() => $_has(1);
   @$pb.TagNumber(2)
@@ -150,9 +150,9 @@ class OfflineConversionUploadClientSummary extends $pb.GeneratedMessage {
   /// Output only. Overall status for offline conversion client summary. Status
   /// is generated from most recent calendar day with upload stats.
   @$pb.TagNumber(3)
-  $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus get status => $_getN(2);
+  $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus v) { setField(3, v); }
+  set status($3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -447,16 +447,16 @@ enum OfflineConversionError_ErrorCode {
 /// Possible errors for offline conversion client summary.
 class OfflineConversionError extends $pb.GeneratedMessage {
   factory OfflineConversionError({
-    $3387.CollectionSizeErrorEnum_CollectionSizeError? collectionSizeError,
-    $3458.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError? conversionAdjustmentUploadError,
-    $3455.ConversionUploadErrorEnum_ConversionUploadError? conversionUploadError,
-    $3389.DateErrorEnum_DateError? dateError,
-    $3391.DistinctErrorEnum_DistinctError? distinctError,
-    $3414.FieldErrorEnum_FieldError? fieldError,
-    $3370.MutateErrorEnum_MutateError? mutateError,
-    $3479.NotAllowlistedErrorEnum_NotAllowlistedError? notAllowlistedError,
-    $3406.StringFormatErrorEnum_StringFormatError? stringFormatError,
-    $3407.StringLengthErrorEnum_StringLengthError? stringLengthError,
+    $3388.CollectionSizeErrorEnum_CollectionSizeError? collectionSizeError,
+    $3459.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError? conversionAdjustmentUploadError,
+    $3456.ConversionUploadErrorEnum_ConversionUploadError? conversionUploadError,
+    $3390.DateErrorEnum_DateError? dateError,
+    $3392.DistinctErrorEnum_DistinctError? distinctError,
+    $3415.FieldErrorEnum_FieldError? fieldError,
+    $3371.MutateErrorEnum_MutateError? mutateError,
+    $3480.NotAllowlistedErrorEnum_NotAllowlistedError? notAllowlistedError,
+    $3407.StringFormatErrorEnum_StringFormatError? stringFormatError,
+    $3408.StringLengthErrorEnum_StringLengthError? stringLengthError,
   }) {
     final $result = create();
     if (collectionSizeError != null) {
@@ -510,16 +510,16 @@ class OfflineConversionError extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OfflineConversionError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-    ..e<$3387.CollectionSizeErrorEnum_CollectionSizeError>(1, _omitFieldNames ? '' : 'collectionSizeError', $pb.PbFieldType.OE, defaultOrMaker: $3387.CollectionSizeErrorEnum_CollectionSizeError.UNSPECIFIED, valueOf: $3387.CollectionSizeErrorEnum_CollectionSizeError.valueOf, enumValues: $3387.CollectionSizeErrorEnum_CollectionSizeError.values)
-    ..e<$3458.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError>(2, _omitFieldNames ? '' : 'conversionAdjustmentUploadError', $pb.PbFieldType.OE, defaultOrMaker: $3458.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError.UNSPECIFIED, valueOf: $3458.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError.valueOf, enumValues: $3458.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError.values)
-    ..e<$3455.ConversionUploadErrorEnum_ConversionUploadError>(3, _omitFieldNames ? '' : 'conversionUploadError', $pb.PbFieldType.OE, defaultOrMaker: $3455.ConversionUploadErrorEnum_ConversionUploadError.UNSPECIFIED, valueOf: $3455.ConversionUploadErrorEnum_ConversionUploadError.valueOf, enumValues: $3455.ConversionUploadErrorEnum_ConversionUploadError.values)
-    ..e<$3389.DateErrorEnum_DateError>(4, _omitFieldNames ? '' : 'dateError', $pb.PbFieldType.OE, defaultOrMaker: $3389.DateErrorEnum_DateError.UNSPECIFIED, valueOf: $3389.DateErrorEnum_DateError.valueOf, enumValues: $3389.DateErrorEnum_DateError.values)
-    ..e<$3391.DistinctErrorEnum_DistinctError>(5, _omitFieldNames ? '' : 'distinctError', $pb.PbFieldType.OE, defaultOrMaker: $3391.DistinctErrorEnum_DistinctError.UNSPECIFIED, valueOf: $3391.DistinctErrorEnum_DistinctError.valueOf, enumValues: $3391.DistinctErrorEnum_DistinctError.values)
-    ..e<$3414.FieldErrorEnum_FieldError>(6, _omitFieldNames ? '' : 'fieldError', $pb.PbFieldType.OE, defaultOrMaker: $3414.FieldErrorEnum_FieldError.UNSPECIFIED, valueOf: $3414.FieldErrorEnum_FieldError.valueOf, enumValues: $3414.FieldErrorEnum_FieldError.values)
-    ..e<$3370.MutateErrorEnum_MutateError>(7, _omitFieldNames ? '' : 'mutateError', $pb.PbFieldType.OE, defaultOrMaker: $3370.MutateErrorEnum_MutateError.UNSPECIFIED, valueOf: $3370.MutateErrorEnum_MutateError.valueOf, enumValues: $3370.MutateErrorEnum_MutateError.values)
-    ..e<$3479.NotAllowlistedErrorEnum_NotAllowlistedError>(8, _omitFieldNames ? '' : 'notAllowlistedError', $pb.PbFieldType.OE, defaultOrMaker: $3479.NotAllowlistedErrorEnum_NotAllowlistedError.UNSPECIFIED, valueOf: $3479.NotAllowlistedErrorEnum_NotAllowlistedError.valueOf, enumValues: $3479.NotAllowlistedErrorEnum_NotAllowlistedError.values)
-    ..e<$3406.StringFormatErrorEnum_StringFormatError>(9, _omitFieldNames ? '' : 'stringFormatError', $pb.PbFieldType.OE, defaultOrMaker: $3406.StringFormatErrorEnum_StringFormatError.UNSPECIFIED, valueOf: $3406.StringFormatErrorEnum_StringFormatError.valueOf, enumValues: $3406.StringFormatErrorEnum_StringFormatError.values)
-    ..e<$3407.StringLengthErrorEnum_StringLengthError>(10, _omitFieldNames ? '' : 'stringLengthError', $pb.PbFieldType.OE, defaultOrMaker: $3407.StringLengthErrorEnum_StringLengthError.UNSPECIFIED, valueOf: $3407.StringLengthErrorEnum_StringLengthError.valueOf, enumValues: $3407.StringLengthErrorEnum_StringLengthError.values)
+    ..e<$3388.CollectionSizeErrorEnum_CollectionSizeError>(1, _omitFieldNames ? '' : 'collectionSizeError', $pb.PbFieldType.OE, defaultOrMaker: $3388.CollectionSizeErrorEnum_CollectionSizeError.UNSPECIFIED, valueOf: $3388.CollectionSizeErrorEnum_CollectionSizeError.valueOf, enumValues: $3388.CollectionSizeErrorEnum_CollectionSizeError.values)
+    ..e<$3459.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError>(2, _omitFieldNames ? '' : 'conversionAdjustmentUploadError', $pb.PbFieldType.OE, defaultOrMaker: $3459.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError.UNSPECIFIED, valueOf: $3459.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError.valueOf, enumValues: $3459.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError.values)
+    ..e<$3456.ConversionUploadErrorEnum_ConversionUploadError>(3, _omitFieldNames ? '' : 'conversionUploadError', $pb.PbFieldType.OE, defaultOrMaker: $3456.ConversionUploadErrorEnum_ConversionUploadError.UNSPECIFIED, valueOf: $3456.ConversionUploadErrorEnum_ConversionUploadError.valueOf, enumValues: $3456.ConversionUploadErrorEnum_ConversionUploadError.values)
+    ..e<$3390.DateErrorEnum_DateError>(4, _omitFieldNames ? '' : 'dateError', $pb.PbFieldType.OE, defaultOrMaker: $3390.DateErrorEnum_DateError.UNSPECIFIED, valueOf: $3390.DateErrorEnum_DateError.valueOf, enumValues: $3390.DateErrorEnum_DateError.values)
+    ..e<$3392.DistinctErrorEnum_DistinctError>(5, _omitFieldNames ? '' : 'distinctError', $pb.PbFieldType.OE, defaultOrMaker: $3392.DistinctErrorEnum_DistinctError.UNSPECIFIED, valueOf: $3392.DistinctErrorEnum_DistinctError.valueOf, enumValues: $3392.DistinctErrorEnum_DistinctError.values)
+    ..e<$3415.FieldErrorEnum_FieldError>(6, _omitFieldNames ? '' : 'fieldError', $pb.PbFieldType.OE, defaultOrMaker: $3415.FieldErrorEnum_FieldError.UNSPECIFIED, valueOf: $3415.FieldErrorEnum_FieldError.valueOf, enumValues: $3415.FieldErrorEnum_FieldError.values)
+    ..e<$3371.MutateErrorEnum_MutateError>(7, _omitFieldNames ? '' : 'mutateError', $pb.PbFieldType.OE, defaultOrMaker: $3371.MutateErrorEnum_MutateError.UNSPECIFIED, valueOf: $3371.MutateErrorEnum_MutateError.valueOf, enumValues: $3371.MutateErrorEnum_MutateError.values)
+    ..e<$3480.NotAllowlistedErrorEnum_NotAllowlistedError>(8, _omitFieldNames ? '' : 'notAllowlistedError', $pb.PbFieldType.OE, defaultOrMaker: $3480.NotAllowlistedErrorEnum_NotAllowlistedError.UNSPECIFIED, valueOf: $3480.NotAllowlistedErrorEnum_NotAllowlistedError.valueOf, enumValues: $3480.NotAllowlistedErrorEnum_NotAllowlistedError.values)
+    ..e<$3407.StringFormatErrorEnum_StringFormatError>(9, _omitFieldNames ? '' : 'stringFormatError', $pb.PbFieldType.OE, defaultOrMaker: $3407.StringFormatErrorEnum_StringFormatError.UNSPECIFIED, valueOf: $3407.StringFormatErrorEnum_StringFormatError.valueOf, enumValues: $3407.StringFormatErrorEnum_StringFormatError.values)
+    ..e<$3408.StringLengthErrorEnum_StringLengthError>(10, _omitFieldNames ? '' : 'stringLengthError', $pb.PbFieldType.OE, defaultOrMaker: $3408.StringLengthErrorEnum_StringLengthError.UNSPECIFIED, valueOf: $3408.StringLengthErrorEnum_StringLengthError.valueOf, enumValues: $3408.StringLengthErrorEnum_StringLengthError.values)
     ..hasRequiredFields = false
   ;
 
@@ -549,9 +549,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Collection size error.
   @$pb.TagNumber(1)
-  $3387.CollectionSizeErrorEnum_CollectionSizeError get collectionSizeError => $_getN(0);
+  $3388.CollectionSizeErrorEnum_CollectionSizeError get collectionSizeError => $_getN(0);
   @$pb.TagNumber(1)
-  set collectionSizeError($3387.CollectionSizeErrorEnum_CollectionSizeError v) { setField(1, v); }
+  set collectionSizeError($3388.CollectionSizeErrorEnum_CollectionSizeError v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCollectionSizeError() => $_has(0);
   @$pb.TagNumber(1)
@@ -559,9 +559,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Conversion adjustment upload error.
   @$pb.TagNumber(2)
-  $3458.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError get conversionAdjustmentUploadError => $_getN(1);
+  $3459.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError get conversionAdjustmentUploadError => $_getN(1);
   @$pb.TagNumber(2)
-  set conversionAdjustmentUploadError($3458.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError v) { setField(2, v); }
+  set conversionAdjustmentUploadError($3459.ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConversionAdjustmentUploadError() => $_has(1);
   @$pb.TagNumber(2)
@@ -569,9 +569,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Conversion upload error.
   @$pb.TagNumber(3)
-  $3455.ConversionUploadErrorEnum_ConversionUploadError get conversionUploadError => $_getN(2);
+  $3456.ConversionUploadErrorEnum_ConversionUploadError get conversionUploadError => $_getN(2);
   @$pb.TagNumber(3)
-  set conversionUploadError($3455.ConversionUploadErrorEnum_ConversionUploadError v) { setField(3, v); }
+  set conversionUploadError($3456.ConversionUploadErrorEnum_ConversionUploadError v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasConversionUploadError() => $_has(2);
   @$pb.TagNumber(3)
@@ -579,9 +579,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Date error.
   @$pb.TagNumber(4)
-  $3389.DateErrorEnum_DateError get dateError => $_getN(3);
+  $3390.DateErrorEnum_DateError get dateError => $_getN(3);
   @$pb.TagNumber(4)
-  set dateError($3389.DateErrorEnum_DateError v) { setField(4, v); }
+  set dateError($3390.DateErrorEnum_DateError v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDateError() => $_has(3);
   @$pb.TagNumber(4)
@@ -589,9 +589,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Distinct error.
   @$pb.TagNumber(5)
-  $3391.DistinctErrorEnum_DistinctError get distinctError => $_getN(4);
+  $3392.DistinctErrorEnum_DistinctError get distinctError => $_getN(4);
   @$pb.TagNumber(5)
-  set distinctError($3391.DistinctErrorEnum_DistinctError v) { setField(5, v); }
+  set distinctError($3392.DistinctErrorEnum_DistinctError v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDistinctError() => $_has(4);
   @$pb.TagNumber(5)
@@ -599,9 +599,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Field error.
   @$pb.TagNumber(6)
-  $3414.FieldErrorEnum_FieldError get fieldError => $_getN(5);
+  $3415.FieldErrorEnum_FieldError get fieldError => $_getN(5);
   @$pb.TagNumber(6)
-  set fieldError($3414.FieldErrorEnum_FieldError v) { setField(6, v); }
+  set fieldError($3415.FieldErrorEnum_FieldError v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFieldError() => $_has(5);
   @$pb.TagNumber(6)
@@ -609,9 +609,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Mutate error.
   @$pb.TagNumber(7)
-  $3370.MutateErrorEnum_MutateError get mutateError => $_getN(6);
+  $3371.MutateErrorEnum_MutateError get mutateError => $_getN(6);
   @$pb.TagNumber(7)
-  set mutateError($3370.MutateErrorEnum_MutateError v) { setField(7, v); }
+  set mutateError($3371.MutateErrorEnum_MutateError v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasMutateError() => $_has(6);
   @$pb.TagNumber(7)
@@ -619,9 +619,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. Not allowlisted error.
   @$pb.TagNumber(8)
-  $3479.NotAllowlistedErrorEnum_NotAllowlistedError get notAllowlistedError => $_getN(7);
+  $3480.NotAllowlistedErrorEnum_NotAllowlistedError get notAllowlistedError => $_getN(7);
   @$pb.TagNumber(8)
-  set notAllowlistedError($3479.NotAllowlistedErrorEnum_NotAllowlistedError v) { setField(8, v); }
+  set notAllowlistedError($3480.NotAllowlistedErrorEnum_NotAllowlistedError v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasNotAllowlistedError() => $_has(7);
   @$pb.TagNumber(8)
@@ -629,9 +629,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. String format error.
   @$pb.TagNumber(9)
-  $3406.StringFormatErrorEnum_StringFormatError get stringFormatError => $_getN(8);
+  $3407.StringFormatErrorEnum_StringFormatError get stringFormatError => $_getN(8);
   @$pb.TagNumber(9)
-  set stringFormatError($3406.StringFormatErrorEnum_StringFormatError v) { setField(9, v); }
+  set stringFormatError($3407.StringFormatErrorEnum_StringFormatError v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasStringFormatError() => $_has(8);
   @$pb.TagNumber(9)
@@ -639,9 +639,9 @@ class OfflineConversionError extends $pb.GeneratedMessage {
 
   /// Output only. String length error.
   @$pb.TagNumber(10)
-  $3407.StringLengthErrorEnum_StringLengthError get stringLengthError => $_getN(9);
+  $3408.StringLengthErrorEnum_StringLengthError get stringLengthError => $_getN(9);
   @$pb.TagNumber(10)
-  set stringLengthError($3407.StringLengthErrorEnum_StringLengthError v) { setField(10, v); }
+  set stringLengthError($3408.StringLengthErrorEnum_StringLengthError v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasStringLengthError() => $_has(9);
   @$pb.TagNumber(10)

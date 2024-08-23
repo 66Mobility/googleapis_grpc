@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'projects.pbenum.dart';
 
 export 'projects.pbenum.dart';
@@ -29,9 +29,9 @@ class Project extends $pb.GeneratedMessage {
     $core.String? projectId,
     Project_State? state,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
   }) {
@@ -78,9 +78,9 @@ class Project extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'projectId')
     ..e<Project_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Project_State.STATE_UNSPECIFIED, valueOf: Project_State.valueOf, enumValues: Project_State.values)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'Project.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.resourcemanager.v3'))
     ..hasRequiredFields = false
@@ -173,39 +173,39 @@ class Project extends $pb.GeneratedMessage {
 
   /// Output only. Creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The most recent time this resource was modified.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. The time at which this resource was requested for deletion.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Output only. A checksum computed by the server based on the current value
   /// of the Project resource. This may be sent on update and delete requests to
@@ -747,7 +747,7 @@ class CreateProjectRequest extends $pb.GeneratedMessage {
 /// Project creation have completed.
 class CreateProjectMetadata extends $pb.GeneratedMessage {
   factory CreateProjectMetadata({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.bool? gettable,
     $core.bool? ready,
   }) {
@@ -768,7 +768,7 @@ class CreateProjectMetadata extends $pb.GeneratedMessage {
   factory CreateProjectMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateProjectMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.resourcemanager.v3'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOB(2, _omitFieldNames ? '' : 'gettable')
     ..aOB(3, _omitFieldNames ? '' : 'ready')
     ..hasRequiredFields = false
@@ -797,15 +797,15 @@ class CreateProjectMetadata extends $pb.GeneratedMessage {
 
   /// Creation time of the project creation workflow.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// True if the project can be retrieved using `GetProject`. No other
   /// operations on the project are guaranteed to work until the project creation
@@ -840,7 +840,7 @@ class CreateProjectMetadata extends $pb.GeneratedMessage {
 class UpdateProjectRequest extends $pb.GeneratedMessage {
   factory UpdateProjectRequest({
     Project? project,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (project != null) {
@@ -857,7 +857,7 @@ class UpdateProjectRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProjectRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.resourcemanager.v3'), createEmptyInstance: create)
     ..aOM<Project>(1, _omitFieldNames ? '' : 'project', subBuilder: Project.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -896,15 +896,15 @@ class UpdateProjectRequest extends $pb.GeneratedMessage {
 
   /// Optional. An update mask to selectively update fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A status object which is used as the `metadata` field for the Operation

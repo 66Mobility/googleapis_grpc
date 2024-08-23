@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/account_budget_proposal.pb.dart' as $3062;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/account_budget_proposal.pb.dart' as $3063;
 
 /// Request message for
 /// [AccountBudgetProposalService.MutateAccountBudgetProposal][google.ads.googleads.v16.services.AccountBudgetProposalService.MutateAccountBudgetProposal].
@@ -114,8 +114,8 @@ enum AccountBudgetProposalOperation_Operation {
 class AccountBudgetProposalOperation extends $pb.GeneratedMessage {
   factory AccountBudgetProposalOperation({
     $core.String? remove,
-    $3062.AccountBudgetProposal? create_2,
-    $2209.FieldMask? updateMask,
+    $3063.AccountBudgetProposal? create_2,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (remove != null) {
@@ -141,8 +141,8 @@ class AccountBudgetProposalOperation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountBudgetProposalOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'remove')
-    ..aOM<$3062.AccountBudgetProposal>(2, _omitFieldNames ? '' : 'create', subBuilder: $3062.AccountBudgetProposal.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$3063.AccountBudgetProposal>(2, _omitFieldNames ? '' : 'create', subBuilder: $3063.AccountBudgetProposal.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -189,15 +189,15 @@ class AccountBudgetProposalOperation extends $pb.GeneratedMessage {
   /// budget scheduled to start in the future.
   /// No resource name is expected for the new proposal.
   @$pb.TagNumber(2)
-  $3062.AccountBudgetProposal get create_2 => $_getN(1);
+  $3063.AccountBudgetProposal get create_2 => $_getN(1);
   @$pb.TagNumber(2)
-  set create_2($3062.AccountBudgetProposal v) { setField(2, v); }
+  set create_2($3063.AccountBudgetProposal v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreate_2() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreate_2() => clearField(2);
   @$pb.TagNumber(2)
-  $3062.AccountBudgetProposal ensureCreate_2() => $_ensure(1);
+  $3063.AccountBudgetProposal ensureCreate_2() => $_ensure(1);
 
   ///  FieldMask that determines which budget fields are modified.  While budgets
   ///  may be modified, proposals that propose such modifications are final.
@@ -206,15 +206,15 @@ class AccountBudgetProposalOperation extends $pb.GeneratedMessage {
   ///  Proposals that modify budgets have the 'update' proposal type.  Specifying
   ///  a mask for any other proposal type is considered an error.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Response message for account-level budget mutate operations.

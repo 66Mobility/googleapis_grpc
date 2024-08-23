@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'applied_label.pb.dart' as $1805;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'applied_label.pb.dart' as $1806;
 import 'order_service.pbenum.dart';
 
 export 'order_service.pbenum.dart';
@@ -34,21 +34,21 @@ class Order extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? appliedTeams,
     $core.String? creator,
     $core.String? currencyCode,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? endTime,
     $fixnum.Int64? externalOrderId,
     $core.bool? archived,
     $core.String? lastModifiedByApp,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? notes,
     $core.String? poNumber,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
     Order_Status? status,
     $core.String? salesperson,
     $core.Iterable<$core.String>? secondarySalespeople,
     $core.String? trafficker,
     $core.Iterable<$core.String>? secondaryTraffickers,
-    $core.Iterable<$1805.AppliedLabel>? appliedLabels,
-    $core.Iterable<$1805.AppliedLabel>? effectiveAppliedLabels,
+    $core.Iterable<$1806.AppliedLabel>? appliedLabels,
+    $core.Iterable<$1806.AppliedLabel>? effectiveAppliedLabels,
     $core.Iterable<$core.String>? effectiveTeams,
   }) {
     final $result = create();
@@ -151,21 +151,21 @@ class Order extends $pb.GeneratedMessage {
     ..pPS(9, _omitFieldNames ? '' : 'appliedTeams')
     ..aOS(10, _omitFieldNames ? '' : 'creator')
     ..aOS(11, _omitFieldNames ? '' : 'currencyCode')
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(13, _omitFieldNames ? '' : 'externalOrderId')
     ..aOB(14, _omitFieldNames ? '' : 'archived')
     ..aOS(15, _omitFieldNames ? '' : 'lastModifiedByApp')
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(17, _omitFieldNames ? '' : 'notes')
     ..aOS(18, _omitFieldNames ? '' : 'poNumber')
-    ..aOM<$1775.Timestamp>(19, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(19, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..e<Order_Status>(20, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: Order_Status.STATUS_UNSPECIFIED, valueOf: Order_Status.valueOf, enumValues: Order_Status.values)
     ..aOS(21, _omitFieldNames ? '' : 'salesperson')
     ..pPS(22, _omitFieldNames ? '' : 'secondarySalespeople')
     ..aOS(23, _omitFieldNames ? '' : 'trafficker')
     ..pPS(24, _omitFieldNames ? '' : 'secondaryTraffickers')
-    ..pc<$1805.AppliedLabel>(25, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1805.AppliedLabel.create)
-    ..pc<$1805.AppliedLabel>(26, _omitFieldNames ? '' : 'effectiveAppliedLabels', $pb.PbFieldType.PM, subBuilder: $1805.AppliedLabel.create)
+    ..pc<$1806.AppliedLabel>(25, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1806.AppliedLabel.create)
+    ..pc<$1806.AppliedLabel>(26, _omitFieldNames ? '' : 'effectiveAppliedLabels', $pb.PbFieldType.PM, subBuilder: $1806.AppliedLabel.create)
     ..pPS(28, _omitFieldNames ? '' : 'effectiveTeams')
     ..hasRequiredFields = false
   ;
@@ -299,15 +299,15 @@ class Order extends $pb.GeneratedMessage {
   /// stop being served. This attribute is derived from the line item of the
   /// order that has the latest LineItem.end_time.
   @$pb.TagNumber(12)
-  $1775.Timestamp get endTime => $_getN(11);
+  $1776.Timestamp get endTime => $_getN(11);
   @$pb.TagNumber(12)
-  set endTime($1775.Timestamp v) { setField(12, v); }
+  set endTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasEndTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearEndTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureEndTime() => $_ensure(11);
+  $1776.Timestamp ensureEndTime() => $_ensure(11);
 
   /// Optional. An arbitrary ID to associate to the Order, which can be used as a
   /// key to an external system.
@@ -343,15 +343,15 @@ class Order extends $pb.GeneratedMessage {
 
   /// Output only. The instant this Order was last modified.
   @$pb.TagNumber(16)
-  $1775.Timestamp get updateTime => $_getN(15);
+  $1776.Timestamp get updateTime => $_getN(15);
   @$pb.TagNumber(16)
-  set updateTime($1775.Timestamp v) { setField(16, v); }
+  set updateTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasUpdateTime() => $_has(15);
   @$pb.TagNumber(16)
   void clearUpdateTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(15);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(15);
 
   /// Optional. Provides any additional notes that may annotate the Order. This
   /// attribute has a maximum length of 65,535 characters.
@@ -379,15 +379,15 @@ class Order extends $pb.GeneratedMessage {
   /// are eligible to begin serving. This attribute is derived from the line item
   /// of the order that has the earliest LineItem.start_time.
   @$pb.TagNumber(19)
-  $1775.Timestamp get startTime => $_getN(18);
+  $1776.Timestamp get startTime => $_getN(18);
   @$pb.TagNumber(19)
-  set startTime($1775.Timestamp v) { setField(19, v); }
+  set startTime($1776.Timestamp v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasStartTime() => $_has(18);
   @$pb.TagNumber(19)
   void clearStartTime() => clearField(19);
   @$pb.TagNumber(19)
-  $1775.Timestamp ensureStartTime() => $_ensure(18);
+  $1776.Timestamp ensureStartTime() => $_ensure(18);
 
   /// Output only. The status of the Order.
   @$pb.TagNumber(20)
@@ -433,14 +433,14 @@ class Order extends $pb.GeneratedMessage {
 
   /// Optional. The set of labels applied directly to this order.
   @$pb.TagNumber(25)
-  $core.List<$1805.AppliedLabel> get appliedLabels => $_getList(24);
+  $core.List<$1806.AppliedLabel> get appliedLabels => $_getList(24);
 
   /// Output only. Contains the set of labels applied directly to the order as
   /// well as those inherited from the company that owns the order. If a label
   /// has been negated, only the negated label is returned. This field is
   /// assigned by Google.
   @$pb.TagNumber(26)
-  $core.List<$1805.AppliedLabel> get effectiveAppliedLabels => $_getList(25);
+  $core.List<$1806.AppliedLabel> get effectiveAppliedLabels => $_getList(25);
 
   /// Output only. The resource names of Teams applied to this Order including
   /// inherited values. Format: "networks/{network_code}/teams/{team_id}"

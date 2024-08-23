@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'build_events.pbenum.dart';
-import 'build_status.pb.dart' as $4752;
+import 'build_status.pb.dart' as $4754;
 
 export 'build_events.pbenum.dart';
 
@@ -25,7 +25,7 @@ export 'build_events.pbenum.dart';
 class BuildEvent_InvocationAttemptStarted extends $pb.GeneratedMessage {
   factory BuildEvent_InvocationAttemptStarted({
     $fixnum.Int64? attemptNumber,
-    $1794.Any? details,
+    $1795.Any? details,
   }) {
     final $result = create();
     if (attemptNumber != null) {
@@ -42,7 +42,7 @@ class BuildEvent_InvocationAttemptStarted extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildEvent.InvocationAttemptStarted', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'attemptNumber')
-    ..aOM<$1794.Any>(2, _omitFieldNames ? '' : 'details', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(2, _omitFieldNames ? '' : 'details', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -81,22 +81,22 @@ class BuildEvent_InvocationAttemptStarted extends $pb.GeneratedMessage {
 
   /// Arbitrary details about the invocation attempt.
   @$pb.TagNumber(2)
-  $1794.Any get details => $_getN(1);
+  $1795.Any get details => $_getN(1);
   @$pb.TagNumber(2)
-  set details($1794.Any v) { setField(2, v); }
+  set details($1795.Any v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $1794.Any ensureDetails() => $_ensure(1);
+  $1795.Any ensureDetails() => $_ensure(1);
 }
 
 /// Notification that an invocation attempt has finished.
 class BuildEvent_InvocationAttemptFinished extends $pb.GeneratedMessage {
   factory BuildEvent_InvocationAttemptFinished({
-    $4752.BuildStatus? invocationStatus,
-    $1794.Any? details,
+    $4754.BuildStatus? invocationStatus,
+    $1795.Any? details,
   }) {
     final $result = create();
     if (invocationStatus != null) {
@@ -112,8 +112,8 @@ class BuildEvent_InvocationAttemptFinished extends $pb.GeneratedMessage {
   factory BuildEvent_InvocationAttemptFinished.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildEvent.InvocationAttemptFinished', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
-    ..aOM<$4752.BuildStatus>(3, _omitFieldNames ? '' : 'invocationStatus', subBuilder: $4752.BuildStatus.create)
-    ..aOM<$1794.Any>(4, _omitFieldNames ? '' : 'details', subBuilder: $1794.Any.create)
+    ..aOM<$4754.BuildStatus>(3, _omitFieldNames ? '' : 'invocationStatus', subBuilder: $4754.BuildStatus.create)
+    ..aOM<$1795.Any>(4, _omitFieldNames ? '' : 'details', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -140,33 +140,33 @@ class BuildEvent_InvocationAttemptFinished extends $pb.GeneratedMessage {
 
   /// Final status of the invocation.
   @$pb.TagNumber(3)
-  $4752.BuildStatus get invocationStatus => $_getN(0);
+  $4754.BuildStatus get invocationStatus => $_getN(0);
   @$pb.TagNumber(3)
-  set invocationStatus($4752.BuildStatus v) { setField(3, v); }
+  set invocationStatus($4754.BuildStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInvocationStatus() => $_has(0);
   @$pb.TagNumber(3)
   void clearInvocationStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $4752.BuildStatus ensureInvocationStatus() => $_ensure(0);
+  $4754.BuildStatus ensureInvocationStatus() => $_ensure(0);
 
   /// Arbitrary details about the invocation attempt.
   @$pb.TagNumber(4)
-  $1794.Any get details => $_getN(1);
+  $1795.Any get details => $_getN(1);
   @$pb.TagNumber(4)
-  set details($1794.Any v) { setField(4, v); }
+  set details($1795.Any v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDetails() => $_has(1);
   @$pb.TagNumber(4)
   void clearDetails() => clearField(4);
   @$pb.TagNumber(4)
-  $1794.Any ensureDetails() => $_ensure(1);
+  $1795.Any ensureDetails() => $_ensure(1);
 }
 
 /// Notification that the build request is enqueued.
 class BuildEvent_BuildEnqueued extends $pb.GeneratedMessage {
   factory BuildEvent_BuildEnqueued({
-    $1794.Any? details,
+    $1795.Any? details,
   }) {
     final $result = create();
     if (details != null) {
@@ -179,7 +179,7 @@ class BuildEvent_BuildEnqueued extends $pb.GeneratedMessage {
   factory BuildEvent_BuildEnqueued.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildEvent.BuildEnqueued', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
-    ..aOM<$1794.Any>(1, _omitFieldNames ? '' : 'details', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(1, _omitFieldNames ? '' : 'details', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -206,15 +206,15 @@ class BuildEvent_BuildEnqueued extends $pb.GeneratedMessage {
 
   /// Additional details about the Build.
   @$pb.TagNumber(1)
-  $1794.Any get details => $_getN(0);
+  $1795.Any get details => $_getN(0);
   @$pb.TagNumber(1)
-  set details($1794.Any v) { setField(1, v); }
+  set details($1795.Any v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $1794.Any ensureDetails() => $_ensure(0);
+  $1795.Any ensureDetails() => $_ensure(0);
 }
 
 /// Notification that the build request has finished, and no further
@@ -222,8 +222,8 @@ class BuildEvent_BuildEnqueued extends $pb.GeneratedMessage {
 /// Individual invocations trigger InvocationFinished when they finish.
 class BuildEvent_BuildFinished extends $pb.GeneratedMessage {
   factory BuildEvent_BuildFinished({
-    $4752.BuildStatus? status,
-    $1794.Any? details,
+    $4754.BuildStatus? status,
+    $1795.Any? details,
   }) {
     final $result = create();
     if (status != null) {
@@ -239,8 +239,8 @@ class BuildEvent_BuildFinished extends $pb.GeneratedMessage {
   factory BuildEvent_BuildFinished.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildEvent.BuildFinished', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
-    ..aOM<$4752.BuildStatus>(1, _omitFieldNames ? '' : 'status', subBuilder: $4752.BuildStatus.create)
-    ..aOM<$1794.Any>(2, _omitFieldNames ? '' : 'details', subBuilder: $1794.Any.create)
+    ..aOM<$4754.BuildStatus>(1, _omitFieldNames ? '' : 'status', subBuilder: $4754.BuildStatus.create)
+    ..aOM<$1795.Any>(2, _omitFieldNames ? '' : 'details', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -267,27 +267,27 @@ class BuildEvent_BuildFinished extends $pb.GeneratedMessage {
 
   /// Final status of the build.
   @$pb.TagNumber(1)
-  $4752.BuildStatus get status => $_getN(0);
+  $4754.BuildStatus get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($4752.BuildStatus v) { setField(1, v); }
+  set status($4754.BuildStatus v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $4752.BuildStatus ensureStatus() => $_ensure(0);
+  $4754.BuildStatus ensureStatus() => $_ensure(0);
 
   /// Additional details about the Build.
   @$pb.TagNumber(2)
-  $1794.Any get details => $_getN(1);
+  $1795.Any get details => $_getN(1);
   @$pb.TagNumber(2)
-  set details($1794.Any v) { setField(2, v); }
+  set details($1795.Any v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $1794.Any ensureDetails() => $_ensure(1);
+  $1795.Any ensureDetails() => $_ensure(1);
 }
 
 enum BuildEvent_ConsoleOutput_Output {
@@ -457,16 +457,16 @@ enum BuildEvent_Event {
 /// message does not include field for uniquely identifying an event.
 class BuildEvent extends $pb.GeneratedMessage {
   factory BuildEvent({
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     BuildEvent_InvocationAttemptStarted? invocationAttemptStarted,
     BuildEvent_InvocationAttemptFinished? invocationAttemptFinished,
     BuildEvent_BuildEnqueued? buildEnqueued,
     BuildEvent_BuildFinished? buildFinished,
     BuildEvent_ConsoleOutput? consoleOutput,
     BuildEvent_BuildComponentStreamFinished? componentStreamFinished,
-    $1794.Any? bazelEvent,
-    $1794.Any? buildExecutionEvent,
-    $1794.Any? sourceFetchEvent,
+    $1795.Any? bazelEvent,
+    $1795.Any? buildExecutionEvent,
+    $1795.Any? sourceFetchEvent,
   }) {
     final $result = create();
     if (eventTime != null) {
@@ -519,16 +519,16 @@ class BuildEvent extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
     ..oo(0, [51, 52, 53, 55, 56, 59, 60, 61, 62])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOM<BuildEvent_InvocationAttemptStarted>(51, _omitFieldNames ? '' : 'invocationAttemptStarted', subBuilder: BuildEvent_InvocationAttemptStarted.create)
     ..aOM<BuildEvent_InvocationAttemptFinished>(52, _omitFieldNames ? '' : 'invocationAttemptFinished', subBuilder: BuildEvent_InvocationAttemptFinished.create)
     ..aOM<BuildEvent_BuildEnqueued>(53, _omitFieldNames ? '' : 'buildEnqueued', subBuilder: BuildEvent_BuildEnqueued.create)
     ..aOM<BuildEvent_BuildFinished>(55, _omitFieldNames ? '' : 'buildFinished', subBuilder: BuildEvent_BuildFinished.create)
     ..aOM<BuildEvent_ConsoleOutput>(56, _omitFieldNames ? '' : 'consoleOutput', subBuilder: BuildEvent_ConsoleOutput.create)
     ..aOM<BuildEvent_BuildComponentStreamFinished>(59, _omitFieldNames ? '' : 'componentStreamFinished', subBuilder: BuildEvent_BuildComponentStreamFinished.create)
-    ..aOM<$1794.Any>(60, _omitFieldNames ? '' : 'bazelEvent', subBuilder: $1794.Any.create)
-    ..aOM<$1794.Any>(61, _omitFieldNames ? '' : 'buildExecutionEvent', subBuilder: $1794.Any.create)
-    ..aOM<$1794.Any>(62, _omitFieldNames ? '' : 'sourceFetchEvent', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(60, _omitFieldNames ? '' : 'bazelEvent', subBuilder: $1795.Any.create)
+    ..aOM<$1795.Any>(61, _omitFieldNames ? '' : 'buildExecutionEvent', subBuilder: $1795.Any.create)
+    ..aOM<$1795.Any>(62, _omitFieldNames ? '' : 'sourceFetchEvent', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -559,15 +559,15 @@ class BuildEvent extends $pb.GeneratedMessage {
   /// This should be precisely the time when this event happened, and not when
   /// the event proto was created or sent.
   @$pb.TagNumber(1)
-  $1775.Timestamp get eventTime => $_getN(0);
+  $1776.Timestamp get eventTime => $_getN(0);
   @$pb.TagNumber(1)
-  set eventTime($1775.Timestamp v) { setField(1, v); }
+  set eventTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEventTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEventTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEventTime() => $_ensure(0);
+  $1776.Timestamp ensureEventTime() => $_ensure(0);
 
   /// An invocation attempt has started.
   @$pb.TagNumber(51)
@@ -645,41 +645,41 @@ class BuildEvent extends $pb.GeneratedMessage {
 
   /// Structured build event generated by Bazel about its execution progress.
   @$pb.TagNumber(60)
-  $1794.Any get bazelEvent => $_getN(7);
+  $1795.Any get bazelEvent => $_getN(7);
   @$pb.TagNumber(60)
-  set bazelEvent($1794.Any v) { setField(60, v); }
+  set bazelEvent($1795.Any v) { setField(60, v); }
   @$pb.TagNumber(60)
   $core.bool hasBazelEvent() => $_has(7);
   @$pb.TagNumber(60)
   void clearBazelEvent() => clearField(60);
   @$pb.TagNumber(60)
-  $1794.Any ensureBazelEvent() => $_ensure(7);
+  $1795.Any ensureBazelEvent() => $_ensure(7);
 
   /// An event that contains supplemental tool-specific information about
   /// build execution.
   @$pb.TagNumber(61)
-  $1794.Any get buildExecutionEvent => $_getN(8);
+  $1795.Any get buildExecutionEvent => $_getN(8);
   @$pb.TagNumber(61)
-  set buildExecutionEvent($1794.Any v) { setField(61, v); }
+  set buildExecutionEvent($1795.Any v) { setField(61, v); }
   @$pb.TagNumber(61)
   $core.bool hasBuildExecutionEvent() => $_has(8);
   @$pb.TagNumber(61)
   void clearBuildExecutionEvent() => clearField(61);
   @$pb.TagNumber(61)
-  $1794.Any ensureBuildExecutionEvent() => $_ensure(8);
+  $1795.Any ensureBuildExecutionEvent() => $_ensure(8);
 
   /// An event that contains supplemental tool-specific information about
   /// source fetching.
   @$pb.TagNumber(62)
-  $1794.Any get sourceFetchEvent => $_getN(9);
+  $1795.Any get sourceFetchEvent => $_getN(9);
   @$pb.TagNumber(62)
-  set sourceFetchEvent($1794.Any v) { setField(62, v); }
+  set sourceFetchEvent($1795.Any v) { setField(62, v); }
   @$pb.TagNumber(62)
   $core.bool hasSourceFetchEvent() => $_has(9);
   @$pb.TagNumber(62)
   void clearSourceFetchEvent() => clearField(62);
   @$pb.TagNumber(62)
-  $1794.Any ensureSourceFetchEvent() => $_ensure(9);
+  $1795.Any ensureSourceFetchEvent() => $_ensure(9);
 }
 
 /// Unique identifier for a build event stream.

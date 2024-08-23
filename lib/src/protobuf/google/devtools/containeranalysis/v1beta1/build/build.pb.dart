@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../provenance/provenance.pb.dart' as $4759;
+import '../provenance/provenance.pb.dart' as $4761;
 import 'build.pbenum.dart';
 
 export 'build.pbenum.dart';
@@ -206,7 +206,7 @@ class BuildSignature extends $pb.GeneratedMessage {
 /// Details of a build occurrence.
 class Details extends $pb.GeneratedMessage {
   factory Details({
-    $4759.BuildProvenance? provenance,
+    $4761.BuildProvenance? provenance,
     $core.String? provenanceBytes,
   }) {
     final $result = create();
@@ -223,7 +223,7 @@ class Details extends $pb.GeneratedMessage {
   factory Details.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Details', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1beta1.build'), createEmptyInstance: create)
-    ..aOM<$4759.BuildProvenance>(1, _omitFieldNames ? '' : 'provenance', subBuilder: $4759.BuildProvenance.create)
+    ..aOM<$4761.BuildProvenance>(1, _omitFieldNames ? '' : 'provenance', subBuilder: $4761.BuildProvenance.create)
     ..aOS(2, _omitFieldNames ? '' : 'provenanceBytes')
     ..hasRequiredFields = false
   ;
@@ -251,15 +251,15 @@ class Details extends $pb.GeneratedMessage {
 
   /// Required. The actual provenance for the build.
   @$pb.TagNumber(1)
-  $4759.BuildProvenance get provenance => $_getN(0);
+  $4761.BuildProvenance get provenance => $_getN(0);
   @$pb.TagNumber(1)
-  set provenance($4759.BuildProvenance v) { setField(1, v); }
+  set provenance($4761.BuildProvenance v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasProvenance() => $_has(0);
   @$pb.TagNumber(1)
   void clearProvenance() => clearField(1);
   @$pb.TagNumber(1)
-  $4759.BuildProvenance ensureProvenance() => $_ensure(0);
+  $4761.BuildProvenance ensureProvenance() => $_ensure(0);
 
   ///  Serialized JSON representation of the provenance, used in generating the
   ///  build signature in the corresponding build note. After verifying the

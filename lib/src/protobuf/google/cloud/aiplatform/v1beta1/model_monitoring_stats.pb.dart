@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 enum ModelMonitoringStats_Stats {
   tabularStats, 
@@ -86,7 +86,7 @@ class ModelMonitoringStats extends $pb.GeneratedMessage {
 /// Summary statistics for a population of values.
 class ModelMonitoringStatsDataPoint_TypedValue_DistributionDataValue extends $pb.GeneratedMessage {
   factory ModelMonitoringStatsDataPoint_TypedValue_DistributionDataValue({
-    $1734.Value? distribution,
+    $1735.Value? distribution,
     $core.double? distributionDeviation,
   }) {
     final $result = create();
@@ -103,7 +103,7 @@ class ModelMonitoringStatsDataPoint_TypedValue_DistributionDataValue extends $pb
   factory ModelMonitoringStatsDataPoint_TypedValue_DistributionDataValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringStatsDataPoint.TypedValue.DistributionDataValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'distribution', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'distribution', subBuilder: $1735.Value.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'distributionDeviation', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -132,15 +132,15 @@ class ModelMonitoringStatsDataPoint_TypedValue_DistributionDataValue extends $pb
   /// Predictive monitoring drift distribution in
   /// `tensorflow.metadata.v0.DatasetFeatureStatistics` format.
   @$pb.TagNumber(1)
-  $1734.Value get distribution => $_getN(0);
+  $1735.Value get distribution => $_getN(0);
   @$pb.TagNumber(1)
-  set distribution($1734.Value v) { setField(1, v); }
+  set distribution($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDistribution() => $_has(0);
   @$pb.TagNumber(1)
   void clearDistribution() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureDistribution() => $_ensure(0);
+  $1735.Value ensureDistribution() => $_ensure(0);
 
   /// Distribution distance deviation from the current dataset's statistics
   /// to baseline dataset's statistics.
@@ -251,7 +251,7 @@ class ModelMonitoringStatsDataPoint extends $pb.GeneratedMessage {
     $core.bool? hasAnomaly,
     $core.String? modelMonitoringJob,
     $core.String? schedule,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? algorithm,
   }) {
     final $result = create();
@@ -292,7 +292,7 @@ class ModelMonitoringStatsDataPoint extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'hasAnomaly')
     ..aOS(5, _omitFieldNames ? '' : 'modelMonitoringJob')
     ..aOS(6, _omitFieldNames ? '' : 'schedule')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'algorithm')
     ..hasRequiredFields = false
   ;
@@ -384,15 +384,15 @@ class ModelMonitoringStatsDataPoint extends $pb.GeneratedMessage {
 
   /// Statistics create time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Algorithm used to calculated the metrics, eg: jensen_shannon_divergence,
   /// l_infinity.

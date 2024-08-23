@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'conversation.pbenum.dart';
 import 'conversation_profile.pb.dart' as $895;
 import 'generator.pb.dart' as $896;
@@ -33,8 +33,8 @@ class Conversation extends $pb.GeneratedMessage {
     Conversation_LifecycleState? lifecycleState,
     $core.String? conversationProfile,
     ConversationPhoneNumber? phoneNumber,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     Conversation_ConversationStage? conversationStage,
   }) {
     final $result = create();
@@ -70,8 +70,8 @@ class Conversation extends $pb.GeneratedMessage {
     ..e<Conversation_LifecycleState>(2, _omitFieldNames ? '' : 'lifecycleState', $pb.PbFieldType.OE, defaultOrMaker: Conversation_LifecycleState.LIFECYCLE_STATE_UNSPECIFIED, valueOf: Conversation_LifecycleState.valueOf, enumValues: Conversation_LifecycleState.values)
     ..aOS(3, _omitFieldNames ? '' : 'conversationProfile')
     ..aOM<ConversationPhoneNumber>(4, _omitFieldNames ? '' : 'phoneNumber', subBuilder: ConversationPhoneNumber.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<Conversation_ConversationStage>(7, _omitFieldNames ? '' : 'conversationStage', $pb.PbFieldType.OE, defaultOrMaker: Conversation_ConversationStage.CONVERSATION_STAGE_UNSPECIFIED, valueOf: Conversation_ConversationStage.valueOf, enumValues: Conversation_ConversationStage.values)
     ..hasRequiredFields = false
   ;
@@ -147,27 +147,27 @@ class Conversation extends $pb.GeneratedMessage {
 
   /// Output only. The time the conversation was started.
   @$pb.TagNumber(5)
-  $1775.Timestamp get startTime => $_getN(4);
+  $1776.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(5)
-  set startTime($1775.Timestamp v) { setField(5, v); }
+  set startTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureStartTime() => $_ensure(4);
+  $1776.Timestamp ensureStartTime() => $_ensure(4);
 
   /// Output only. The time the conversation was finished.
   @$pb.TagNumber(6)
-  $1775.Timestamp get endTime => $_getN(5);
+  $1776.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($1775.Timestamp v) { setField(6, v); }
+  set endTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEndTime() => $_ensure(5);
+  $1776.Timestamp ensureEndTime() => $_ensure(5);
 
   ///  Optional. The stage of a conversation. It indicates whether the virtual
   ///  agent or a human agent is handling the conversation.

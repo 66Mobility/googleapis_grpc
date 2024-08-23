@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'merchant_center_account_link.pbenum.dart';
 
 export 'merchant_center_account_link.pbenum.dart';
@@ -303,8 +303,8 @@ class MerchantCenterAccountLink extends $pb.GeneratedMessage {
 /// Common metadata related to the progress of the operations.
 class CreateMerchantCenterAccountLinkMetadata extends $pb.GeneratedMessage {
   factory CreateMerchantCenterAccountLinkMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -320,8 +320,8 @@ class CreateMerchantCenterAccountLinkMetadata extends $pb.GeneratedMessage {
   factory CreateMerchantCenterAccountLinkMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateMerchantCenterAccountLinkMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -348,28 +348,28 @@ class CreateMerchantCenterAccountLinkMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 

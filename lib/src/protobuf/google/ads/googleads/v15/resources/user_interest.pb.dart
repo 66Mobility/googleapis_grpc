@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criterion_category_availability.pb.dart' as $2266;
-import '../enums/user_interest_taxonomy_type.pbenum.dart' as $2341;
+import '../common/criterion_category_availability.pb.dart' as $2267;
+import '../enums/user_interest_taxonomy_type.pbenum.dart' as $2342;
 
 /// A user interest: a particular interest-based vertical to be targeted.
 class UserInterest extends $pb.GeneratedMessage {
   factory UserInterest({
     $core.String? resourceName,
-    $2341.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType? taxonomyType,
-    $core.Iterable<$2266.CriterionCategoryAvailability>? availabilities,
+    $2342.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType? taxonomyType,
+    $core.Iterable<$2267.CriterionCategoryAvailability>? availabilities,
     $fixnum.Int64? userInterestId,
     $core.String? name,
     $core.String? userInterestParent,
@@ -58,8 +58,8 @@ class UserInterest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserInterest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2341.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType>(2, _omitFieldNames ? '' : 'taxonomyType', $pb.PbFieldType.OE, defaultOrMaker: $2341.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType.UNSPECIFIED, valueOf: $2341.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType.valueOf, enumValues: $2341.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType.values)
-    ..pc<$2266.CriterionCategoryAvailability>(7, _omitFieldNames ? '' : 'availabilities', $pb.PbFieldType.PM, subBuilder: $2266.CriterionCategoryAvailability.create)
+    ..e<$2342.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType>(2, _omitFieldNames ? '' : 'taxonomyType', $pb.PbFieldType.OE, defaultOrMaker: $2342.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType.UNSPECIFIED, valueOf: $2342.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType.valueOf, enumValues: $2342.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType.values)
+    ..pc<$2267.CriterionCategoryAvailability>(7, _omitFieldNames ? '' : 'availabilities', $pb.PbFieldType.PM, subBuilder: $2267.CriterionCategoryAvailability.create)
     ..aInt64(8, _omitFieldNames ? '' : 'userInterestId')
     ..aOS(9, _omitFieldNames ? '' : 'name')
     ..aOS(10, _omitFieldNames ? '' : 'userInterestParent')
@@ -103,9 +103,9 @@ class UserInterest extends $pb.GeneratedMessage {
 
   /// Output only. Taxonomy type of the user interest.
   @$pb.TagNumber(2)
-  $2341.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType get taxonomyType => $_getN(1);
+  $2342.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType get taxonomyType => $_getN(1);
   @$pb.TagNumber(2)
-  set taxonomyType($2341.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType v) { setField(2, v); }
+  set taxonomyType($2342.UserInterestTaxonomyTypeEnum_UserInterestTaxonomyType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTaxonomyType() => $_has(1);
   @$pb.TagNumber(2)
@@ -113,7 +113,7 @@ class UserInterest extends $pb.GeneratedMessage {
 
   /// Output only. Availability information of the user interest.
   @$pb.TagNumber(7)
-  $core.List<$2266.CriterionCategoryAvailability> get availabilities => $_getList(2);
+  $core.List<$2267.CriterionCategoryAvailability> get availabilities => $_getList(2);
 
   /// Output only. The ID of the user interest.
   @$pb.TagNumber(8)

@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/interaction_event_type.pbenum.dart' as $2607;
-import '../enums/quality_score_bucket.pbenum.dart' as $2606;
+import '../enums/interaction_event_type.pbenum.dart' as $2608;
+import '../enums/quality_score_bucket.pbenum.dart' as $2607;
 
 /// Metrics data.
 class Metrics extends $pb.GeneratedMessage {
   factory Metrics({
-    $2606.QualityScoreBucketEnum_QualityScoreBucket? historicalCreativeQualityScore,
-    $2606.QualityScoreBucketEnum_QualityScoreBucket? historicalLandingPageQualityScore,
-    $2606.QualityScoreBucketEnum_QualityScoreBucket? historicalSearchPredictedCtr,
-    $core.Iterable<$2607.InteractionEventTypeEnum_InteractionEventType>? interactionEventTypes,
+    $2607.QualityScoreBucketEnum_QualityScoreBucket? historicalCreativeQualityScore,
+    $2607.QualityScoreBucketEnum_QualityScoreBucket? historicalLandingPageQualityScore,
+    $2607.QualityScoreBucketEnum_QualityScoreBucket? historicalSearchPredictedCtr,
+    $core.Iterable<$2608.InteractionEventTypeEnum_InteractionEventType>? interactionEventTypes,
     $fixnum.Int64? clicks,
     $core.double? videoQuartileP100Rate,
     $core.double? videoQuartileP25Rate,
@@ -725,10 +725,10 @@ class Metrics extends $pb.GeneratedMessage {
   factory Metrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Metrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2606.QualityScoreBucketEnum_QualityScoreBucket>(80, _omitFieldNames ? '' : 'historicalCreativeQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2606.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2606.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2606.QualityScoreBucketEnum_QualityScoreBucket.values)
-    ..e<$2606.QualityScoreBucketEnum_QualityScoreBucket>(81, _omitFieldNames ? '' : 'historicalLandingPageQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2606.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2606.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2606.QualityScoreBucketEnum_QualityScoreBucket.values)
-    ..e<$2606.QualityScoreBucketEnum_QualityScoreBucket>(83, _omitFieldNames ? '' : 'historicalSearchPredictedCtr', $pb.PbFieldType.OE, defaultOrMaker: $2606.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2606.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2606.QualityScoreBucketEnum_QualityScoreBucket.values)
-    ..pc<$2607.InteractionEventTypeEnum_InteractionEventType>(100, _omitFieldNames ? '' : 'interactionEventTypes', $pb.PbFieldType.KE, valueOf: $2607.InteractionEventTypeEnum_InteractionEventType.valueOf, enumValues: $2607.InteractionEventTypeEnum_InteractionEventType.values, defaultEnumValue: $2607.InteractionEventTypeEnum_InteractionEventType.UNSPECIFIED)
+    ..e<$2607.QualityScoreBucketEnum_QualityScoreBucket>(80, _omitFieldNames ? '' : 'historicalCreativeQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2607.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2607.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2607.QualityScoreBucketEnum_QualityScoreBucket.values)
+    ..e<$2607.QualityScoreBucketEnum_QualityScoreBucket>(81, _omitFieldNames ? '' : 'historicalLandingPageQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2607.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2607.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2607.QualityScoreBucketEnum_QualityScoreBucket.values)
+    ..e<$2607.QualityScoreBucketEnum_QualityScoreBucket>(83, _omitFieldNames ? '' : 'historicalSearchPredictedCtr', $pb.PbFieldType.OE, defaultOrMaker: $2607.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2607.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2607.QualityScoreBucketEnum_QualityScoreBucket.values)
+    ..pc<$2608.InteractionEventTypeEnum_InteractionEventType>(100, _omitFieldNames ? '' : 'interactionEventTypes', $pb.PbFieldType.KE, valueOf: $2608.InteractionEventTypeEnum_InteractionEventType.valueOf, enumValues: $2608.InteractionEventTypeEnum_InteractionEventType.values, defaultEnumValue: $2608.InteractionEventTypeEnum_InteractionEventType.UNSPECIFIED)
     ..aInt64(131, _omitFieldNames ? '' : 'clicks')
     ..a<$core.double>(132, _omitFieldNames ? '' : 'videoQuartileP100Rate', $pb.PbFieldType.OD)
     ..a<$core.double>(133, _omitFieldNames ? '' : 'videoQuartileP25Rate', $pb.PbFieldType.OD)
@@ -925,9 +925,9 @@ class Metrics extends $pb.GeneratedMessage {
 
   /// The creative historical quality score.
   @$pb.TagNumber(80)
-  $2606.QualityScoreBucketEnum_QualityScoreBucket get historicalCreativeQualityScore => $_getN(0);
+  $2607.QualityScoreBucketEnum_QualityScoreBucket get historicalCreativeQualityScore => $_getN(0);
   @$pb.TagNumber(80)
-  set historicalCreativeQualityScore($2606.QualityScoreBucketEnum_QualityScoreBucket v) { setField(80, v); }
+  set historicalCreativeQualityScore($2607.QualityScoreBucketEnum_QualityScoreBucket v) { setField(80, v); }
   @$pb.TagNumber(80)
   $core.bool hasHistoricalCreativeQualityScore() => $_has(0);
   @$pb.TagNumber(80)
@@ -935,9 +935,9 @@ class Metrics extends $pb.GeneratedMessage {
 
   /// The quality of historical landing page experience.
   @$pb.TagNumber(81)
-  $2606.QualityScoreBucketEnum_QualityScoreBucket get historicalLandingPageQualityScore => $_getN(1);
+  $2607.QualityScoreBucketEnum_QualityScoreBucket get historicalLandingPageQualityScore => $_getN(1);
   @$pb.TagNumber(81)
-  set historicalLandingPageQualityScore($2606.QualityScoreBucketEnum_QualityScoreBucket v) { setField(81, v); }
+  set historicalLandingPageQualityScore($2607.QualityScoreBucketEnum_QualityScoreBucket v) { setField(81, v); }
   @$pb.TagNumber(81)
   $core.bool hasHistoricalLandingPageQualityScore() => $_has(1);
   @$pb.TagNumber(81)
@@ -945,9 +945,9 @@ class Metrics extends $pb.GeneratedMessage {
 
   /// The historical search predicted click through rate (CTR).
   @$pb.TagNumber(83)
-  $2606.QualityScoreBucketEnum_QualityScoreBucket get historicalSearchPredictedCtr => $_getN(2);
+  $2607.QualityScoreBucketEnum_QualityScoreBucket get historicalSearchPredictedCtr => $_getN(2);
   @$pb.TagNumber(83)
-  set historicalSearchPredictedCtr($2606.QualityScoreBucketEnum_QualityScoreBucket v) { setField(83, v); }
+  set historicalSearchPredictedCtr($2607.QualityScoreBucketEnum_QualityScoreBucket v) { setField(83, v); }
   @$pb.TagNumber(83)
   $core.bool hasHistoricalSearchPredictedCtr() => $_has(2);
   @$pb.TagNumber(83)
@@ -955,7 +955,7 @@ class Metrics extends $pb.GeneratedMessage {
 
   /// The types of payable and free interactions.
   @$pb.TagNumber(100)
-  $core.List<$2607.InteractionEventTypeEnum_InteractionEventType> get interactionEventTypes => $_getList(3);
+  $core.List<$2608.InteractionEventTypeEnum_InteractionEventType> get interactionEventTypes => $_getList(3);
 
   /// The number of clicks.
   @$pb.TagNumber(131)

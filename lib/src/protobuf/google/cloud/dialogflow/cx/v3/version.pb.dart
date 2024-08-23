@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'flow.pb.dart' as $847;
 import 'version.pbenum.dart';
 
@@ -82,7 +82,7 @@ class Version extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $847.NluSettings? nluSettings,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Version_State? state,
   }) {
     final $result = create();
@@ -115,7 +115,7 @@ class Version extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<$847.NluSettings>(4, _omitFieldNames ? '' : 'nluSettings', subBuilder: $847.NluSettings.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Version_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Version_State.STATE_UNSPECIFIED, valueOf: Version_State.valueOf, enumValues: Version_State.values)
     ..hasRequiredFields = false
   ;
@@ -188,15 +188,15 @@ class Version extends $pb.GeneratedMessage {
 
   /// Output only. Create time of the version.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The state of this version. This field is read-only and cannot
   /// be set by create and update methods.
@@ -494,7 +494,7 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
 class UpdateVersionRequest extends $pb.GeneratedMessage {
   factory UpdateVersionRequest({
     Version? version,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (version != null) {
@@ -511,7 +511,7 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVersionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3'), createEmptyInstance: create)
     ..aOM<Version>(1, _omitFieldNames ? '' : 'version', subBuilder: Version.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -551,15 +551,15 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
   /// Required. The mask to control which fields get updated. Currently only
   /// `description` and `display_name` can be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for
@@ -792,7 +792,7 @@ class CompareVersionsResponse extends $pb.GeneratedMessage {
   factory CompareVersionsResponse({
     $core.String? baseVersionContentJson,
     $core.String? targetVersionContentJson,
-    $1775.Timestamp? compareTime,
+    $1776.Timestamp? compareTime,
   }) {
     final $result = create();
     if (baseVersionContentJson != null) {
@@ -813,7 +813,7 @@ class CompareVersionsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompareVersionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'baseVersionContentJson')
     ..aOS(2, _omitFieldNames ? '' : 'targetVersionContentJson')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'compareTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'compareTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -860,15 +860,15 @@ class CompareVersionsResponse extends $pb.GeneratedMessage {
 
   /// The timestamp when the two version compares.
   @$pb.TagNumber(3)
-  $1775.Timestamp get compareTime => $_getN(2);
+  $1776.Timestamp get compareTime => $_getN(2);
   @$pb.TagNumber(3)
-  set compareTime($1775.Timestamp v) { setField(3, v); }
+  set compareTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCompareTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCompareTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCompareTime() => $_ensure(2);
+  $1776.Timestamp ensureCompareTime() => $_ensure(2);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Configures how to deliver Findings to BigQuery Instance.
 class BigQueryExport extends $pb.GeneratedMessage {
@@ -22,8 +22,8 @@ class BigQueryExport extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? filter,
     $core.String? dataset,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? mostRecentEditor,
     $core.String? principal,
   }) {
@@ -63,8 +63,8 @@ class BigQueryExport extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'filter')
     ..aOS(4, _omitFieldNames ? '' : 'dataset')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'mostRecentEditor')
     ..aOS(8, _omitFieldNames ? '' : 'principal')
     ..hasRequiredFields = false
@@ -164,29 +164,29 @@ class BigQueryExport extends $pb.GeneratedMessage {
   /// This field is set by the server and will be ignored if provided on export
   /// on creation.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The most recent time at which the BigQuery export was updated.
   /// This field is set by the server and will be ignored if provided on export
   /// creation or update.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. Email address of the user who last edited the BigQuery export.
   /// This field is set by the server and will be ignored if provided on export

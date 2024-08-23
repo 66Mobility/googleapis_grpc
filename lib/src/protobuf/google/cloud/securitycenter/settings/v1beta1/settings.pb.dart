@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import 'billing_settings.pb.dart' as $4610;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import 'billing_settings.pb.dart' as $4612;
 import 'component_settings.pb.dart' as $1340;
 import 'component_settings.pbenum.dart' as $1340;
 import 'settings.pbenum.dart';
-import 'sink_settings.pb.dart' as $4611;
+import 'sink_settings.pb.dart' as $4613;
 
 export 'settings.pbenum.dart';
 
@@ -78,14 +78,14 @@ class Settings_DetectorGroupSettings extends $pb.GeneratedMessage {
 class Settings extends $pb.GeneratedMessage {
   factory Settings({
     $core.String? name,
-    $4610.BillingSettings? billingSettings,
+    $4612.BillingSettings? billingSettings,
     Settings_OnboardingState? state,
     $core.String? orgServiceAccount,
-    $4611.SinkSettings? sinkSettings,
+    $4613.SinkSettings? sinkSettings,
     $core.Map<$core.String, $1340.ComponentSettings>? componentSettings,
     $core.Map<$core.String, Settings_DetectorGroupSettings>? detectorGroupSettings,
     $core.String? etag,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -123,14 +123,14 @@ class Settings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Settings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.settings.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4610.BillingSettings>(2, _omitFieldNames ? '' : 'billingSettings', subBuilder: $4610.BillingSettings.create)
+    ..aOM<$4612.BillingSettings>(2, _omitFieldNames ? '' : 'billingSettings', subBuilder: $4612.BillingSettings.create)
     ..e<Settings_OnboardingState>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Settings_OnboardingState.ONBOARDING_STATE_UNSPECIFIED, valueOf: Settings_OnboardingState.valueOf, enumValues: Settings_OnboardingState.values)
     ..aOS(5, _omitFieldNames ? '' : 'orgServiceAccount')
-    ..aOM<$4611.SinkSettings>(6, _omitFieldNames ? '' : 'sinkSettings', subBuilder: $4611.SinkSettings.create)
+    ..aOM<$4613.SinkSettings>(6, _omitFieldNames ? '' : 'sinkSettings', subBuilder: $4613.SinkSettings.create)
     ..m<$core.String, $1340.ComponentSettings>(7, _omitFieldNames ? '' : 'componentSettings', entryClassName: 'Settings.ComponentSettingsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1340.ComponentSettings.create, valueDefaultOrMaker: $1340.ComponentSettings.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.settings.v1beta1'))
     ..m<$core.String, Settings_DetectorGroupSettings>(8, _omitFieldNames ? '' : 'detectorGroupSettings', entryClassName: 'Settings.DetectorGroupSettingsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Settings_DetectorGroupSettings.create, valueDefaultOrMaker: Settings_DetectorGroupSettings.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.settings.v1beta1'))
     ..aOS(9, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -174,15 +174,15 @@ class Settings extends $pb.GeneratedMessage {
 
   /// Billing settings
   @$pb.TagNumber(2)
-  $4610.BillingSettings get billingSettings => $_getN(1);
+  $4612.BillingSettings get billingSettings => $_getN(1);
   @$pb.TagNumber(2)
-  set billingSettings($4610.BillingSettings v) { setField(2, v); }
+  set billingSettings($4612.BillingSettings v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBillingSettings() => $_has(1);
   @$pb.TagNumber(2)
   void clearBillingSettings() => clearField(2);
   @$pb.TagNumber(2)
-  $4610.BillingSettings ensureBillingSettings() => $_ensure(1);
+  $4612.BillingSettings ensureBillingSettings() => $_ensure(1);
 
   /// An enum representing the current on boarding state of SCC.
   @$pb.TagNumber(3)
@@ -208,15 +208,15 @@ class Settings extends $pb.GeneratedMessage {
 
   /// Sink settings.
   @$pb.TagNumber(6)
-  $4611.SinkSettings get sinkSettings => $_getN(4);
+  $4613.SinkSettings get sinkSettings => $_getN(4);
   @$pb.TagNumber(6)
-  set sinkSettings($4611.SinkSettings v) { setField(6, v); }
+  set sinkSettings($4613.SinkSettings v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSinkSettings() => $_has(4);
   @$pb.TagNumber(6)
   void clearSinkSettings() => clearField(6);
   @$pb.TagNumber(6)
-  $4611.SinkSettings ensureSinkSettings() => $_ensure(4);
+  $4613.SinkSettings ensureSinkSettings() => $_ensure(4);
 
   /// The settings for detectors and/or scanners.
   @$pb.TagNumber(7)
@@ -241,15 +241,15 @@ class Settings extends $pb.GeneratedMessage {
 
   /// Output only. The time these settings were last updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 }
 
 

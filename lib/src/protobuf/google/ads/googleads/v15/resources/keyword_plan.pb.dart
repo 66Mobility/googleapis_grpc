@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/dates.pb.dart' as $1895;
-import '../enums/keyword_plan_forecast_interval.pbenum.dart' as $2308;
+import '../common/dates.pb.dart' as $1896;
+import '../enums/keyword_plan_forecast_interval.pbenum.dart' as $2309;
 
 /// A Keyword Planner plan.
 /// Max number of saved keyword plans: 10000.
@@ -133,8 +133,8 @@ enum KeywordPlanForecastPeriod_Interval {
 /// The forecasting period associated with the keyword plan.
 class KeywordPlanForecastPeriod extends $pb.GeneratedMessage {
   factory KeywordPlanForecastPeriod({
-    $2308.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval? dateInterval,
-    $1895.DateRange? dateRange,
+    $2309.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval? dateInterval,
+    $1896.DateRange? dateRange,
   }) {
     final $result = create();
     if (dateInterval != null) {
@@ -156,8 +156,8 @@ class KeywordPlanForecastPeriod extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanForecastPeriod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..e<$2308.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval>(1, _omitFieldNames ? '' : 'dateInterval', $pb.PbFieldType.OE, defaultOrMaker: $2308.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval.UNSPECIFIED, valueOf: $2308.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval.valueOf, enumValues: $2308.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval.values)
-    ..aOM<$1895.DateRange>(2, _omitFieldNames ? '' : 'dateRange', subBuilder: $1895.DateRange.create)
+    ..e<$2309.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval>(1, _omitFieldNames ? '' : 'dateInterval', $pb.PbFieldType.OE, defaultOrMaker: $2309.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval.UNSPECIFIED, valueOf: $2309.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval.valueOf, enumValues: $2309.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval.values)
+    ..aOM<$1896.DateRange>(2, _omitFieldNames ? '' : 'dateRange', subBuilder: $1896.DateRange.create)
     ..hasRequiredFields = false
   ;
 
@@ -187,9 +187,9 @@ class KeywordPlanForecastPeriod extends $pb.GeneratedMessage {
 
   /// A future date range relative to the current date used for forecasting.
   @$pb.TagNumber(1)
-  $2308.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval get dateInterval => $_getN(0);
+  $2309.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval get dateInterval => $_getN(0);
   @$pb.TagNumber(1)
-  set dateInterval($2308.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval v) { setField(1, v); }
+  set dateInterval($2309.KeywordPlanForecastIntervalEnum_KeywordPlanForecastInterval v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDateInterval() => $_has(0);
   @$pb.TagNumber(1)
@@ -201,15 +201,15 @@ class KeywordPlanForecastPeriod extends $pb.GeneratedMessage {
   /// be returned when the forecasting action is performed.
   /// The start and end dates are inclusive.
   @$pb.TagNumber(2)
-  $1895.DateRange get dateRange => $_getN(1);
+  $1896.DateRange get dateRange => $_getN(1);
   @$pb.TagNumber(2)
-  set dateRange($1895.DateRange v) { setField(2, v); }
+  set dateRange($1896.DateRange v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDateRange() => $_has(1);
   @$pb.TagNumber(2)
   void clearDateRange() => clearField(2);
   @$pb.TagNumber(2)
-  $1895.DateRange ensureDateRange() => $_ensure(1);
+  $1896.DateRange ensureDateRange() => $_ensure(1);
 }
 
 

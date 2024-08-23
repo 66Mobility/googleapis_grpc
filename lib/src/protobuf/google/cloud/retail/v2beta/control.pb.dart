@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4598;
-import 'common.pbenum.dart' as $4598;
+import 'common.pb.dart' as $4600;
+import 'common.pbenum.dart' as $4600;
 import 'search_service.pb.dart' as $1299;
 
 enum Control_Control {
@@ -32,10 +32,10 @@ class Control extends $pb.GeneratedMessage {
     $core.String? displayName,
   @$core.Deprecated('This field is deprecated.')
     $1299.SearchRequest_FacetSpec? facetSpec,
-    $4598.Rule? rule,
+    $4600.Rule? rule,
     $core.Iterable<$core.String>? associatedServingConfigIds,
-    $core.Iterable<$4598.SolutionType>? solutionTypes,
-    $core.Iterable<$4598.SearchSolutionUseCase>? searchSolutionUseCase,
+    $core.Iterable<$4600.SolutionType>? solutionTypes,
+    $core.Iterable<$4600.SearchSolutionUseCase>? searchSolutionUseCase,
   }) {
     final $result = create();
     if (name != null) {
@@ -76,10 +76,10 @@ class Control extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<$1299.SearchRequest_FacetSpec>(3, _omitFieldNames ? '' : 'facetSpec', subBuilder: $1299.SearchRequest_FacetSpec.create)
-    ..aOM<$4598.Rule>(4, _omitFieldNames ? '' : 'rule', subBuilder: $4598.Rule.create)
+    ..aOM<$4600.Rule>(4, _omitFieldNames ? '' : 'rule', subBuilder: $4600.Rule.create)
     ..pPS(5, _omitFieldNames ? '' : 'associatedServingConfigIds')
-    ..pc<$4598.SolutionType>(6, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4598.SolutionType.valueOf, enumValues: $4598.SolutionType.values, defaultEnumValue: $4598.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
-    ..pc<$4598.SearchSolutionUseCase>(7, _omitFieldNames ? '' : 'searchSolutionUseCase', $pb.PbFieldType.KE, valueOf: $4598.SearchSolutionUseCase.valueOf, enumValues: $4598.SearchSolutionUseCase.values, defaultEnumValue: $4598.SearchSolutionUseCase.SEARCH_SOLUTION_USE_CASE_UNSPECIFIED)
+    ..pc<$4600.SolutionType>(6, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4600.SolutionType.valueOf, enumValues: $4600.SolutionType.values, defaultEnumValue: $4600.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
+    ..pc<$4600.SearchSolutionUseCase>(7, _omitFieldNames ? '' : 'searchSolutionUseCase', $pb.PbFieldType.KE, valueOf: $4600.SearchSolutionUseCase.valueOf, enumValues: $4600.SearchSolutionUseCase.values, defaultEnumValue: $4600.SearchSolutionUseCase.SEARCH_SOLUTION_USE_CASE_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -155,15 +155,15 @@ class Control extends $pb.GeneratedMessage {
   /// Enacts a set action when the condition is triggered.
   /// For example: Boost "gShoe" when query full matches "Running Shoes".
   @$pb.TagNumber(4)
-  $4598.Rule get rule => $_getN(3);
+  $4600.Rule get rule => $_getN(3);
   @$pb.TagNumber(4)
-  set rule($4598.Rule v) { setField(4, v); }
+  set rule($4600.Rule v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRule() => $_has(3);
   @$pb.TagNumber(4)
   void clearRule() => clearField(4);
   @$pb.TagNumber(4)
-  $4598.Rule ensureRule() => $_ensure(3);
+  $4600.Rule ensureRule() => $_ensure(3);
 
   ///  Output only. List of [serving
   ///  config][google.cloud.retail.v2beta.ServingConfig] ids that are associated
@@ -183,7 +183,7 @@ class Control extends $pb.GeneratedMessage {
   ///  If no solution type is provided at creation time, will default to
   ///  [SOLUTION_TYPE_SEARCH][google.cloud.retail.v2beta.SolutionType.SOLUTION_TYPE_SEARCH].
   @$pb.TagNumber(6)
-  $core.List<$4598.SolutionType> get solutionTypes => $_getList(5);
+  $core.List<$4600.SolutionType> get solutionTypes => $_getList(5);
 
   /// Specifies the use case for the control.
   /// Affects what condition fields can be set.
@@ -193,7 +193,7 @@ class Control extends $pb.GeneratedMessage {
   /// if not specified. Currently only allow one search_solution_use_case per
   /// control.
   @$pb.TagNumber(7)
-  $core.List<$4598.SearchSolutionUseCase> get searchSolutionUseCase => $_getList(6);
+  $core.List<$4600.SearchSolutionUseCase> get searchSolutionUseCase => $_getList(6);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pbenum.dart' as $820;
 import 'tasks.pbenum.dart';
 
@@ -406,7 +406,7 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
   factory Task_TriggerSpec({
     $core.bool? disabled,
     Task_TriggerSpec_Type? type,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
     $core.int? maxRetries,
     $core.String? schedule,
   }) {
@@ -440,7 +440,7 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
     ..oo(0, [100])
     ..aOB(4, _omitFieldNames ? '' : 'disabled')
     ..e<Task_TriggerSpec_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Task_TriggerSpec_Type.TYPE_UNSPECIFIED, valueOf: Task_TriggerSpec_Type.valueOf, enumValues: Task_TriggerSpec_Type.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'maxRetries', $pb.PbFieldType.O3)
     ..aOS(100, _omitFieldNames ? '' : 'schedule')
     ..hasRequiredFields = false
@@ -496,15 +496,15 @@ class Task_TriggerSpec extends $pb.GeneratedMessage {
   /// If not specified, the task will run shortly after being submitted if
   /// ON_DEMAND and based on the schedule if RECURRING.
   @$pb.TagNumber(6)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(6)
-  set startTime($1775.Timestamp v) { setField(6, v); }
+  set startTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Optional. Number of retry attempts before aborting.
   /// Set to zero to never attempt to retry a failed task.
@@ -540,7 +540,7 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? args,
     $core.String? serviceAccount,
     $core.String? project,
-    $1737.Duration? maxJobExecutionLifetime,
+    $1738.Duration? maxJobExecutionLifetime,
     $core.String? kmsKey,
   }) {
     final $result = create();
@@ -569,7 +569,7 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'args', entryClassName: 'Task.ExecutionSpec.ArgsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(7, _omitFieldNames ? '' : 'project')
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'maxJobExecutionLifetime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'maxJobExecutionLifetime', subBuilder: $1738.Duration.create)
     ..aOS(9, _omitFieldNames ? '' : 'kmsKey')
     ..hasRequiredFields = false
   ;
@@ -637,15 +637,15 @@ class Task_ExecutionSpec extends $pb.GeneratedMessage {
 
   /// Optional. The maximum duration after which the job execution is expired.
   @$pb.TagNumber(8)
-  $1737.Duration get maxJobExecutionLifetime => $_getN(3);
+  $1738.Duration get maxJobExecutionLifetime => $_getN(3);
   @$pb.TagNumber(8)
-  set maxJobExecutionLifetime($1737.Duration v) { setField(8, v); }
+  set maxJobExecutionLifetime($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMaxJobExecutionLifetime() => $_has(3);
   @$pb.TagNumber(8)
   void clearMaxJobExecutionLifetime() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureMaxJobExecutionLifetime() => $_ensure(3);
+  $1738.Duration ensureMaxJobExecutionLifetime() => $_ensure(3);
 
   /// Optional. The Cloud KMS key to use for encryption, of the form:
   /// `projects/{project_number}/locations/{location_id}/keyRings/{key-ring-name}/cryptoKeys/{key-name}`.
@@ -939,7 +939,7 @@ class Task_NotebookTaskConfig extends $pb.GeneratedMessage {
 /// Status of the task execution (e.g. Jobs).
 class Task_ExecutionStatus extends $pb.GeneratedMessage {
   factory Task_ExecutionStatus({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     Job? latestJob,
   }) {
     final $result = create();
@@ -956,7 +956,7 @@ class Task_ExecutionStatus extends $pb.GeneratedMessage {
   factory Task_ExecutionStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Task.ExecutionStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Job>(9, _omitFieldNames ? '' : 'latestJob', subBuilder: Job.create)
     ..hasRequiredFields = false
   ;
@@ -984,15 +984,15 @@ class Task_ExecutionStatus extends $pb.GeneratedMessage {
 
   /// Output only. Last update time of the status.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// Output only. latest job execution
   @$pb.TagNumber(9)
@@ -1018,8 +1018,8 @@ class Task extends $pb.GeneratedMessage {
   factory Task({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
     $820.State? state,
@@ -1085,8 +1085,8 @@ class Task extends $pb.GeneratedMessage {
     ..oo(0, [300, 302])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..e<$820.State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $820.State.STATE_UNSPECIFIED, valueOf: $820.State.valueOf, enumValues: $820.State.values)
@@ -1148,27 +1148,27 @@ class Task extends $pb.GeneratedMessage {
 
   /// Output only. The time when the task was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The time when the task was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. Description of the task.
   @$pb.TagNumber(5)
@@ -1270,8 +1270,8 @@ class Job extends $pb.GeneratedMessage {
   factory Job({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     Job_State? state,
     $core.int? retryCount,
     Job_Service? service,
@@ -1327,8 +1327,8 @@ class Job extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Job', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<Job_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Job_State.STATE_UNSPECIFIED, valueOf: Job_State.valueOf, enumValues: Job_State.values)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'retryCount', $pb.PbFieldType.OU3)
     ..e<Job_Service>(7, _omitFieldNames ? '' : 'service', $pb.PbFieldType.OE, defaultOrMaker: Job_Service.SERVICE_UNSPECIFIED, valueOf: Job_Service.valueOf, enumValues: Job_Service.values)
@@ -1384,27 +1384,27 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. The time when the job was started.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Output only. The time when the job ended.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 
   /// Output only. Execution state for the job.
   @$pb.TagNumber(5)

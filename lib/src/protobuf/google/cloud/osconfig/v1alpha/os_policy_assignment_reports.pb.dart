@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'os_policy_assignment_reports.pbenum.dart';
 
 export 'os_policy_assignment_reports.pbenum.dart';
@@ -636,7 +636,7 @@ class OSPolicyAssignmentReport extends $pb.GeneratedMessage {
     $core.String? instance,
     $core.String? osPolicyAssignment,
     $core.Iterable<OSPolicyAssignmentReport_OSPolicyCompliance>? osPolicyCompliances,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? lastRunId,
   }) {
     final $result = create();
@@ -669,7 +669,7 @@ class OSPolicyAssignmentReport extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'instance')
     ..aOS(3, _omitFieldNames ? '' : 'osPolicyAssignment')
     ..pc<OSPolicyAssignmentReport_OSPolicyCompliance>(4, _omitFieldNames ? '' : 'osPolicyCompliances', $pb.PbFieldType.PM, subBuilder: OSPolicyAssignmentReport_OSPolicyCompliance.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'lastRunId')
     ..hasRequiredFields = false
   ;
@@ -738,15 +738,15 @@ class OSPolicyAssignmentReport extends $pb.GeneratedMessage {
 
   /// Timestamp for when the report was last generated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   ///  Unique identifier of the last attempted run to apply the OS policies
   ///  associated with this assignment on the VM.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'certificate_issuance_config.pbenum.dart';
 
 export 'certificate_issuance_config.pbenum.dart';
@@ -526,12 +526,12 @@ class CertificateIssuanceConfig_CertificateAuthorityConfig extends $pb.Generated
 class CertificateIssuanceConfig extends $pb.GeneratedMessage {
   factory CertificateIssuanceConfig({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     CertificateIssuanceConfig_CertificateAuthorityConfig? certificateAuthorityConfig,
-    $1737.Duration? lifetime,
+    $1738.Duration? lifetime,
     $core.int? rotationWindowPercentage,
     CertificateIssuanceConfig_KeyAlgorithm? keyAlgorithm,
   }) {
@@ -571,12 +571,12 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CertificateIssuanceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.certificatemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'CertificateIssuanceConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.certificatemanager.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOM<CertificateIssuanceConfig_CertificateAuthorityConfig>(6, _omitFieldNames ? '' : 'certificateAuthorityConfig', subBuilder: CertificateIssuanceConfig_CertificateAuthorityConfig.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'lifetime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'lifetime', subBuilder: $1738.Duration.create)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'rotationWindowPercentage', $pb.PbFieldType.O3)
     ..e<CertificateIssuanceConfig_KeyAlgorithm>(9, _omitFieldNames ? '' : 'keyAlgorithm', $pb.PbFieldType.OE, defaultOrMaker: CertificateIssuanceConfig_KeyAlgorithm.KEY_ALGORITHM_UNSPECIFIED, valueOf: CertificateIssuanceConfig_KeyAlgorithm.valueOf, enumValues: CertificateIssuanceConfig_KeyAlgorithm.values)
     ..hasRequiredFields = false
@@ -617,27 +617,27 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of a CertificateIssuanceConfig.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last update timestamp of a CertificateIssuanceConfig.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Set of labels associated with a CertificateIssuanceConfig.
   @$pb.TagNumber(4)
@@ -668,15 +668,15 @@ class CertificateIssuanceConfig extends $pb.GeneratedMessage {
 
   /// Required. Workload certificate lifetime requested.
   @$pb.TagNumber(7)
-  $1737.Duration get lifetime => $_getN(6);
+  $1738.Duration get lifetime => $_getN(6);
   @$pb.TagNumber(7)
-  set lifetime($1737.Duration v) { setField(7, v); }
+  set lifetime($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLifetime() => $_has(6);
   @$pb.TagNumber(7)
   void clearLifetime() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureLifetime() => $_ensure(6);
+  $1738.Duration ensureLifetime() => $_ensure(6);
 
   /// Required. Specifies the percentage of elapsed time of the certificate
   /// lifetime to wait before renewing the certificate. Must be a number between

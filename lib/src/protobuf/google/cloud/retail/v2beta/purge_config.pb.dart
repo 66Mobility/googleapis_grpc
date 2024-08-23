@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Metadata related to the progress of the Purge operation.
 /// This will be returned by the google.longrunning.Operation.metadata field.
@@ -54,8 +54,8 @@ class PurgeMetadata extends $pb.GeneratedMessage {
 /// This will be returned by the google.longrunning.Operation.metadata field.
 class PurgeProductsMetadata extends $pb.GeneratedMessage {
   factory PurgeProductsMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? successCount,
     $fixnum.Int64? failureCount,
   }) {
@@ -79,8 +79,8 @@ class PurgeProductsMetadata extends $pb.GeneratedMessage {
   factory PurgeProductsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PurgeProductsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'successCount')
     ..aInt64(4, _omitFieldNames ? '' : 'failureCount')
     ..hasRequiredFields = false
@@ -109,28 +109,28 @@ class PurgeProductsMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Count of entries that were deleted successfully.
   @$pb.TagNumber(3)

@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../type/interval.pb.dart' as $4257;
 import 'model_monitor.pb.dart' as $606;
-import 'model_monitoring_alert.pb.dart' as $4305;
+import 'model_monitoring_alert.pb.dart' as $4306;
 import 'model_monitoring_job.pb.dart' as $607;
-import 'model_monitoring_stats.pb.dart' as $4307;
-import 'operation.pb.dart' as $4295;
+import 'model_monitoring_stats.pb.dart' as $4308;
+import 'operation.pb.dart' as $4296;
 
 /// Request message for
 /// [ModelMonitoringService.CreateModelMonitor][google.cloud.aiplatform.v1beta1.ModelMonitoringService.CreateModelMonitor].
@@ -116,7 +116,7 @@ class CreateModelMonitorRequest extends $pb.GeneratedMessage {
 /// [ModelMonitoringService.CreateModelMonitor][google.cloud.aiplatform.v1beta1.ModelMonitoringService.CreateModelMonitor].
 class CreateModelMonitorOperationMetadata extends $pb.GeneratedMessage {
   factory CreateModelMonitorOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -129,7 +129,7 @@ class CreateModelMonitorOperationMetadata extends $pb.GeneratedMessage {
   factory CreateModelMonitorOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateModelMonitorOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -156,15 +156,15 @@ class CreateModelMonitorOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -172,7 +172,7 @@ class CreateModelMonitorOperationMetadata extends $pb.GeneratedMessage {
 class UpdateModelMonitorRequest extends $pb.GeneratedMessage {
   factory UpdateModelMonitorRequest({
     $606.ModelMonitor? modelMonitor,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (modelMonitor != null) {
@@ -189,7 +189,7 @@ class UpdateModelMonitorRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateModelMonitorRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOM<$606.ModelMonitor>(1, _omitFieldNames ? '' : 'modelMonitor', subBuilder: $606.ModelMonitor.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -229,22 +229,22 @@ class UpdateModelMonitorRequest extends $pb.GeneratedMessage {
 
   /// Required. Mask specifying which fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Runtime operation information for
 /// [ModelMonitoringService.UpdateModelMonitor][google.cloud.aiplatform.v1beta1.ModelMonitoringService.UpdateModelMonitor].
 class UpdateModelMonitorOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateModelMonitorOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -257,7 +257,7 @@ class UpdateModelMonitorOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateModelMonitorOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateModelMonitorOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -284,15 +284,15 @@ class UpdateModelMonitorOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -358,7 +358,7 @@ class ListModelMonitorsRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -387,7 +387,7 @@ class ListModelMonitorsRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -456,15 +456,15 @@ class ListModelMonitorsRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -756,7 +756,7 @@ class ListModelMonitoringJobsRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -785,7 +785,7 @@ class ListModelMonitoringJobsRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -855,15 +855,15 @@ class ListModelMonitoringJobsRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -989,8 +989,8 @@ class DeleteModelMonitoringJobRequest extends $pb.GeneratedMessage {
 class SearchModelMonitoringStatsRequest extends $pb.GeneratedMessage {
   factory SearchModelMonitoringStatsRequest({
     $core.String? modelMonitor,
-    $4307.SearchModelMonitoringStatsFilter? statsFilter,
-    $4256.Interval? timeInterval,
+    $4308.SearchModelMonitoringStatsFilter? statsFilter,
+    $4257.Interval? timeInterval,
     $core.int? pageSize,
     $core.String? pageToken,
   }) {
@@ -1018,8 +1018,8 @@ class SearchModelMonitoringStatsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchModelMonitoringStatsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'modelMonitor')
-    ..aOM<$4307.SearchModelMonitoringStatsFilter>(2, _omitFieldNames ? '' : 'statsFilter', subBuilder: $4307.SearchModelMonitoringStatsFilter.create)
-    ..aOM<$4256.Interval>(3, _omitFieldNames ? '' : 'timeInterval', subBuilder: $4256.Interval.create)
+    ..aOM<$4308.SearchModelMonitoringStatsFilter>(2, _omitFieldNames ? '' : 'statsFilter', subBuilder: $4308.SearchModelMonitoringStatsFilter.create)
+    ..aOM<$4257.Interval>(3, _omitFieldNames ? '' : 'timeInterval', subBuilder: $4257.Interval.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false
@@ -1060,27 +1060,27 @@ class SearchModelMonitoringStatsRequest extends $pb.GeneratedMessage {
 
   /// Filter for search different stats.
   @$pb.TagNumber(2)
-  $4307.SearchModelMonitoringStatsFilter get statsFilter => $_getN(1);
+  $4308.SearchModelMonitoringStatsFilter get statsFilter => $_getN(1);
   @$pb.TagNumber(2)
-  set statsFilter($4307.SearchModelMonitoringStatsFilter v) { setField(2, v); }
+  set statsFilter($4308.SearchModelMonitoringStatsFilter v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatsFilter() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatsFilter() => clearField(2);
   @$pb.TagNumber(2)
-  $4307.SearchModelMonitoringStatsFilter ensureStatsFilter() => $_ensure(1);
+  $4308.SearchModelMonitoringStatsFilter ensureStatsFilter() => $_ensure(1);
 
   /// The time interval for which results should be returned.
   @$pb.TagNumber(3)
-  $4256.Interval get timeInterval => $_getN(2);
+  $4257.Interval get timeInterval => $_getN(2);
   @$pb.TagNumber(3)
-  set timeInterval($4256.Interval v) { setField(3, v); }
+  set timeInterval($4257.Interval v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTimeInterval() => $_has(2);
   @$pb.TagNumber(3)
   void clearTimeInterval() => clearField(3);
   @$pb.TagNumber(3)
-  $4256.Interval ensureTimeInterval() => $_ensure(2);
+  $4257.Interval ensureTimeInterval() => $_ensure(2);
 
   /// The standard list page size.
   @$pb.TagNumber(4)
@@ -1109,7 +1109,7 @@ class SearchModelMonitoringStatsRequest extends $pb.GeneratedMessage {
 /// [ModelMonitoringService.SearchModelMonitoringStats][google.cloud.aiplatform.v1beta1.ModelMonitoringService.SearchModelMonitoringStats].
 class SearchModelMonitoringStatsResponse extends $pb.GeneratedMessage {
   factory SearchModelMonitoringStatsResponse({
-    $core.Iterable<$4307.ModelMonitoringStats>? monitoringStats,
+    $core.Iterable<$4308.ModelMonitoringStats>? monitoringStats,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1126,7 +1126,7 @@ class SearchModelMonitoringStatsResponse extends $pb.GeneratedMessage {
   factory SearchModelMonitoringStatsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchModelMonitoringStatsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..pc<$4307.ModelMonitoringStats>(1, _omitFieldNames ? '' : 'monitoringStats', $pb.PbFieldType.PM, subBuilder: $4307.ModelMonitoringStats.create)
+    ..pc<$4308.ModelMonitoringStats>(1, _omitFieldNames ? '' : 'monitoringStats', $pb.PbFieldType.PM, subBuilder: $4308.ModelMonitoringStats.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1154,7 +1154,7 @@ class SearchModelMonitoringStatsResponse extends $pb.GeneratedMessage {
 
   /// Stats retrieved for requested objectives.
   @$pb.TagNumber(1)
-  $core.List<$4307.ModelMonitoringStats> get monitoringStats => $_getList(0);
+  $core.List<$4308.ModelMonitoringStats> get monitoringStats => $_getList(0);
 
   /// The page token that can be used by the next
   /// [ModelMonitoringService.SearchModelMonitoringStats][google.cloud.aiplatform.v1beta1.ModelMonitoringService.SearchModelMonitoringStats]
@@ -1175,7 +1175,7 @@ class SearchModelMonitoringAlertsRequest extends $pb.GeneratedMessage {
   factory SearchModelMonitoringAlertsRequest({
     $core.String? modelMonitor,
     $core.String? modelMonitoringJob,
-    $4256.Interval? alertTimeInterval,
+    $4257.Interval? alertTimeInterval,
     $core.String? statsName,
     $core.String? objectiveType,
     $core.int? pageSize,
@@ -1212,7 +1212,7 @@ class SearchModelMonitoringAlertsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchModelMonitoringAlertsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'modelMonitor')
     ..aOS(2, _omitFieldNames ? '' : 'modelMonitoringJob')
-    ..aOM<$4256.Interval>(3, _omitFieldNames ? '' : 'alertTimeInterval', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(3, _omitFieldNames ? '' : 'alertTimeInterval', subBuilder: $4257.Interval.create)
     ..aOS(4, _omitFieldNames ? '' : 'statsName')
     ..aOS(5, _omitFieldNames ? '' : 'objectiveType')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
@@ -1265,15 +1265,15 @@ class SearchModelMonitoringAlertsRequest extends $pb.GeneratedMessage {
 
   /// If non-empty, returns the alerts in this time interval.
   @$pb.TagNumber(3)
-  $4256.Interval get alertTimeInterval => $_getN(2);
+  $4257.Interval get alertTimeInterval => $_getN(2);
   @$pb.TagNumber(3)
-  set alertTimeInterval($4256.Interval v) { setField(3, v); }
+  set alertTimeInterval($4257.Interval v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAlertTimeInterval() => $_has(2);
   @$pb.TagNumber(3)
   void clearAlertTimeInterval() => clearField(3);
   @$pb.TagNumber(3)
-  $4256.Interval ensureAlertTimeInterval() => $_ensure(2);
+  $4257.Interval ensureAlertTimeInterval() => $_ensure(2);
 
   /// If non-empty, returns the alerts of this stats_name.
   @$pb.TagNumber(4)
@@ -1326,7 +1326,7 @@ class SearchModelMonitoringAlertsRequest extends $pb.GeneratedMessage {
 /// [ModelMonitoringService.SearchModelMonitoringAlerts][google.cloud.aiplatform.v1beta1.ModelMonitoringService.SearchModelMonitoringAlerts].
 class SearchModelMonitoringAlertsResponse extends $pb.GeneratedMessage {
   factory SearchModelMonitoringAlertsResponse({
-    $core.Iterable<$4305.ModelMonitoringAlert>? modelMonitoringAlerts,
+    $core.Iterable<$4306.ModelMonitoringAlert>? modelMonitoringAlerts,
     $fixnum.Int64? totalNumberAlerts,
     $core.String? nextPageToken,
   }) {
@@ -1347,7 +1347,7 @@ class SearchModelMonitoringAlertsResponse extends $pb.GeneratedMessage {
   factory SearchModelMonitoringAlertsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchModelMonitoringAlertsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..pc<$4305.ModelMonitoringAlert>(1, _omitFieldNames ? '' : 'modelMonitoringAlerts', $pb.PbFieldType.PM, subBuilder: $4305.ModelMonitoringAlert.create)
+    ..pc<$4306.ModelMonitoringAlert>(1, _omitFieldNames ? '' : 'modelMonitoringAlerts', $pb.PbFieldType.PM, subBuilder: $4306.ModelMonitoringAlert.create)
     ..aInt64(2, _omitFieldNames ? '' : 'totalNumberAlerts')
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
@@ -1377,7 +1377,7 @@ class SearchModelMonitoringAlertsResponse extends $pb.GeneratedMessage {
   /// Alerts retrieved for the requested objectives. Sorted by alert time
   /// descendingly.
   @$pb.TagNumber(1)
-  $core.List<$4305.ModelMonitoringAlert> get modelMonitoringAlerts => $_getList(0);
+  $core.List<$4306.ModelMonitoringAlert> get modelMonitoringAlerts => $_getList(0);
 
   /// The total number of alerts retrieved by the requested objectives.
   @$pb.TagNumber(2)

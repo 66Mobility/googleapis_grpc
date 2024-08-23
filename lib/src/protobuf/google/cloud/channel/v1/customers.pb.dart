@@ -13,24 +13,24 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/postal_address.pb.dart' as $4427;
-import 'common.pb.dart' as $4426;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/postal_address.pb.dart' as $4429;
+import 'common.pb.dart' as $4428;
 
 /// Entity representing a customer of a reseller or distributor.
 class Customer extends $pb.GeneratedMessage {
   factory Customer({
     $core.String? name,
     $core.String? orgDisplayName,
-    $4427.PostalAddress? orgPostalAddress,
+    $4429.PostalAddress? orgPostalAddress,
     ContactInfo? primaryContactInfo,
     $core.String? alternateEmail,
     $core.String? domain,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? cloudIdentityId,
     $core.String? languageCode,
-    $4426.CloudIdentityInfo? cloudIdentityInfo,
+    $4428.CloudIdentityInfo? cloudIdentityInfo,
     $core.String? channelPartnerId,
     $core.String? correlationId,
   }) {
@@ -83,15 +83,15 @@ class Customer extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Customer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'orgDisplayName')
-    ..aOM<$4427.PostalAddress>(3, _omitFieldNames ? '' : 'orgPostalAddress', subBuilder: $4427.PostalAddress.create)
+    ..aOM<$4429.PostalAddress>(3, _omitFieldNames ? '' : 'orgPostalAddress', subBuilder: $4429.PostalAddress.create)
     ..aOM<ContactInfo>(4, _omitFieldNames ? '' : 'primaryContactInfo', subBuilder: ContactInfo.create)
     ..aOS(5, _omitFieldNames ? '' : 'alternateEmail')
     ..aOS(6, _omitFieldNames ? '' : 'domain')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'cloudIdentityId')
     ..aOS(10, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$4426.CloudIdentityInfo>(12, _omitFieldNames ? '' : 'cloudIdentityInfo', subBuilder: $4426.CloudIdentityInfo.create)
+    ..aOM<$4428.CloudIdentityInfo>(12, _omitFieldNames ? '' : 'cloudIdentityInfo', subBuilder: $4428.CloudIdentityInfo.create)
     ..aOS(13, _omitFieldNames ? '' : 'channelPartnerId')
     ..aOS(14, _omitFieldNames ? '' : 'correlationId')
     ..hasRequiredFields = false
@@ -144,15 +144,15 @@ class Customer extends $pb.GeneratedMessage {
   /// provide valid addresses for every customer. To set the customer's
   /// language, use the Customer-level language code.
   @$pb.TagNumber(3)
-  $4427.PostalAddress get orgPostalAddress => $_getN(2);
+  $4429.PostalAddress get orgPostalAddress => $_getN(2);
   @$pb.TagNumber(3)
-  set orgPostalAddress($4427.PostalAddress v) { setField(3, v); }
+  set orgPostalAddress($4429.PostalAddress v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOrgPostalAddress() => $_has(2);
   @$pb.TagNumber(3)
   void clearOrgPostalAddress() => clearField(3);
   @$pb.TagNumber(3)
-  $4427.PostalAddress ensureOrgPostalAddress() => $_ensure(2);
+  $4429.PostalAddress ensureOrgPostalAddress() => $_ensure(2);
 
   /// Primary contact info.
   @$pb.TagNumber(4)
@@ -193,27 +193,27 @@ class Customer extends $pb.GeneratedMessage {
 
   /// Output only. Time when the customer was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Time when the customer was updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The customer's Cloud Identity ID if the customer has a Cloud
   /// Identity resource.
@@ -241,15 +241,15 @@ class Customer extends $pb.GeneratedMessage {
   /// Output only. Cloud Identity information for the customer.
   /// Populated only if a Cloud Identity account exists for this customer.
   @$pb.TagNumber(12)
-  $4426.CloudIdentityInfo get cloudIdentityInfo => $_getN(10);
+  $4428.CloudIdentityInfo get cloudIdentityInfo => $_getN(10);
   @$pb.TagNumber(12)
-  set cloudIdentityInfo($4426.CloudIdentityInfo v) { setField(12, v); }
+  set cloudIdentityInfo($4428.CloudIdentityInfo v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCloudIdentityInfo() => $_has(10);
   @$pb.TagNumber(12)
   void clearCloudIdentityInfo() => clearField(12);
   @$pb.TagNumber(12)
-  $4426.CloudIdentityInfo ensureCloudIdentityInfo() => $_ensure(10);
+  $4428.CloudIdentityInfo ensureCloudIdentityInfo() => $_ensure(10);
 
   /// Cloud Identity ID of the customer's channel partner.
   /// Populated only if a channel partner exists for this customer.

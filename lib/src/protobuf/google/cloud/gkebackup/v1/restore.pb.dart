@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4534;
-import 'common.pbenum.dart' as $4534;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4536;
+import 'common.pbenum.dart' as $4536;
 import 'restore.pbenum.dart';
 
 export 'restore.pbenum.dart';
@@ -90,8 +90,8 @@ class Restore extends $pb.GeneratedMessage {
   factory Restore({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? backup,
     $core.String? cluster,
@@ -99,7 +99,7 @@ class Restore extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? labels,
     Restore_State? state,
     $core.String? stateReason,
-    $1775.Timestamp? completeTime,
+    $1776.Timestamp? completeTime,
     $core.int? resourcesRestoredCount,
     $core.int? resourcesExcludedCount,
     $core.int? resourcesFailedCount,
@@ -175,8 +175,8 @@ class Restore extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Restore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'backup')
     ..aOS(7, _omitFieldNames ? '' : 'cluster')
@@ -184,7 +184,7 @@ class Restore extends $pb.GeneratedMessage {
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Restore.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkebackup.v1'))
     ..e<Restore_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Restore_State.STATE_UNSPECIFIED, valueOf: Restore_State.valueOf, enumValues: Restore_State.values)
     ..aOS(11, _omitFieldNames ? '' : 'stateReason')
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'completeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'completeTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'resourcesRestoredCount', $pb.PbFieldType.O3)
     ..a<$core.int>(14, _omitFieldNames ? '' : 'resourcesExcludedCount', $pb.PbFieldType.O3)
     ..a<$core.int>(15, _omitFieldNames ? '' : 'resourcesFailedCount', $pb.PbFieldType.O3)
@@ -240,28 +240,28 @@ class Restore extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this Restore resource was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this Restore resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// User specified descriptive string for this Restore.
   @$pb.TagNumber(5)
@@ -346,15 +346,15 @@ class Restore extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp of when the restore operation completed.
   @$pb.TagNumber(12)
-  $1775.Timestamp get completeTime => $_getN(11);
+  $1776.Timestamp get completeTime => $_getN(11);
   @$pb.TagNumber(12)
-  set completeTime($1775.Timestamp v) { setField(12, v); }
+  set completeTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCompleteTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearCompleteTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureCompleteTime() => $_ensure(11);
+  $1776.Timestamp ensureCompleteTime() => $_ensure(11);
 
   /// Output only. Number of resources restored during the restore execution.
   @$pb.TagNumber(13)
@@ -1031,7 +1031,7 @@ enum RestoreConfig_VolumeDataRestorePolicyBinding_Scope {
 class RestoreConfig_VolumeDataRestorePolicyBinding extends $pb.GeneratedMessage {
   factory RestoreConfig_VolumeDataRestorePolicyBinding({
     RestoreConfig_VolumeDataRestorePolicy? policy,
-    $4534.VolumeTypeEnum_VolumeType? volumeType,
+    $4536.VolumeTypeEnum_VolumeType? volumeType,
   }) {
     final $result = create();
     if (policy != null) {
@@ -1053,7 +1053,7 @@ class RestoreConfig_VolumeDataRestorePolicyBinding extends $pb.GeneratedMessage 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestoreConfig.VolumeDataRestorePolicyBinding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..oo(0, [2])
     ..e<RestoreConfig_VolumeDataRestorePolicy>(1, _omitFieldNames ? '' : 'policy', $pb.PbFieldType.OE, defaultOrMaker: RestoreConfig_VolumeDataRestorePolicy.VOLUME_DATA_RESTORE_POLICY_UNSPECIFIED, valueOf: RestoreConfig_VolumeDataRestorePolicy.valueOf, enumValues: RestoreConfig_VolumeDataRestorePolicy.values)
-    ..e<$4534.VolumeTypeEnum_VolumeType>(2, _omitFieldNames ? '' : 'volumeType', $pb.PbFieldType.OE, defaultOrMaker: $4534.VolumeTypeEnum_VolumeType.VOLUME_TYPE_UNSPECIFIED, valueOf: $4534.VolumeTypeEnum_VolumeType.valueOf, enumValues: $4534.VolumeTypeEnum_VolumeType.values)
+    ..e<$4536.VolumeTypeEnum_VolumeType>(2, _omitFieldNames ? '' : 'volumeType', $pb.PbFieldType.OE, defaultOrMaker: $4536.VolumeTypeEnum_VolumeType.VOLUME_TYPE_UNSPECIFIED, valueOf: $4536.VolumeTypeEnum_VolumeType.valueOf, enumValues: $4536.VolumeTypeEnum_VolumeType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1095,9 +1095,9 @@ class RestoreConfig_VolumeDataRestorePolicyBinding extends $pb.GeneratedMessage 
   /// The volume type, as determined by the PVC's bound PV,
   /// to apply the policy to.
   @$pb.TagNumber(2)
-  $4534.VolumeTypeEnum_VolumeType get volumeType => $_getN(1);
+  $4536.VolumeTypeEnum_VolumeType get volumeType => $_getN(1);
   @$pb.TagNumber(2)
-  set volumeType($4534.VolumeTypeEnum_VolumeType v) { setField(2, v); }
+  set volumeType($4536.VolumeTypeEnum_VolumeType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVolumeType() => $_has(1);
   @$pb.TagNumber(2)
@@ -1243,11 +1243,11 @@ class RestoreConfig extends $pb.GeneratedMessage {
     RestoreConfig_NamespacedResourceRestoreMode? namespacedResourceRestoreMode,
     RestoreConfig_ClusterResourceRestoreScope? clusterResourceRestoreScope,
     $core.bool? allNamespaces,
-    $4534.Namespaces? selectedNamespaces,
-    $4534.NamespacedNames? selectedApplications,
+    $4536.Namespaces? selectedNamespaces,
+    $4536.NamespacedNames? selectedApplications,
     $core.Iterable<RestoreConfig_SubstitutionRule>? substitutionRules,
     $core.bool? noNamespaces,
-    $4534.Namespaces? excludedNamespaces,
+    $4536.Namespaces? excludedNamespaces,
     $core.Iterable<RestoreConfig_TransformationRule>? transformationRules,
     $core.Iterable<RestoreConfig_VolumeDataRestorePolicyBinding>? volumeDataRestorePolicyBindings,
     RestoreConfig_RestoreOrder? restoreOrder,
@@ -1313,11 +1313,11 @@ class RestoreConfig extends $pb.GeneratedMessage {
     ..e<RestoreConfig_NamespacedResourceRestoreMode>(3, _omitFieldNames ? '' : 'namespacedResourceRestoreMode', $pb.PbFieldType.OE, defaultOrMaker: RestoreConfig_NamespacedResourceRestoreMode.NAMESPACED_RESOURCE_RESTORE_MODE_UNSPECIFIED, valueOf: RestoreConfig_NamespacedResourceRestoreMode.valueOf, enumValues: RestoreConfig_NamespacedResourceRestoreMode.values)
     ..aOM<RestoreConfig_ClusterResourceRestoreScope>(4, _omitFieldNames ? '' : 'clusterResourceRestoreScope', subBuilder: RestoreConfig_ClusterResourceRestoreScope.create)
     ..aOB(5, _omitFieldNames ? '' : 'allNamespaces')
-    ..aOM<$4534.Namespaces>(6, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4534.Namespaces.create)
-    ..aOM<$4534.NamespacedNames>(7, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4534.NamespacedNames.create)
+    ..aOM<$4536.Namespaces>(6, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4536.Namespaces.create)
+    ..aOM<$4536.NamespacedNames>(7, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4536.NamespacedNames.create)
     ..pc<RestoreConfig_SubstitutionRule>(8, _omitFieldNames ? '' : 'substitutionRules', $pb.PbFieldType.PM, subBuilder: RestoreConfig_SubstitutionRule.create)
     ..aOB(9, _omitFieldNames ? '' : 'noNamespaces')
-    ..aOM<$4534.Namespaces>(10, _omitFieldNames ? '' : 'excludedNamespaces', subBuilder: $4534.Namespaces.create)
+    ..aOM<$4536.Namespaces>(10, _omitFieldNames ? '' : 'excludedNamespaces', subBuilder: $4536.Namespaces.create)
     ..pc<RestoreConfig_TransformationRule>(11, _omitFieldNames ? '' : 'transformationRules', $pb.PbFieldType.PM, subBuilder: RestoreConfig_TransformationRule.create)
     ..pc<RestoreConfig_VolumeDataRestorePolicyBinding>(12, _omitFieldNames ? '' : 'volumeDataRestorePolicyBindings', $pb.PbFieldType.PM, subBuilder: RestoreConfig_VolumeDataRestorePolicyBinding.create)
     ..aOM<RestoreConfig_RestoreOrder>(13, _omitFieldNames ? '' : 'restoreOrder', subBuilder: RestoreConfig_RestoreOrder.create)
@@ -1415,29 +1415,29 @@ class RestoreConfig extends $pb.GeneratedMessage {
   /// A list of selected Namespaces to restore from the Backup. The listed
   /// Namespaces and all resources contained in them will be restored.
   @$pb.TagNumber(6)
-  $4534.Namespaces get selectedNamespaces => $_getN(5);
+  $4536.Namespaces get selectedNamespaces => $_getN(5);
   @$pb.TagNumber(6)
-  set selectedNamespaces($4534.Namespaces v) { setField(6, v); }
+  set selectedNamespaces($4536.Namespaces v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSelectedNamespaces() => $_has(5);
   @$pb.TagNumber(6)
   void clearSelectedNamespaces() => clearField(6);
   @$pb.TagNumber(6)
-  $4534.Namespaces ensureSelectedNamespaces() => $_ensure(5);
+  $4536.Namespaces ensureSelectedNamespaces() => $_ensure(5);
 
   /// A list of selected ProtectedApplications to restore. The listed
   /// ProtectedApplications and all the resources to which they refer will be
   /// restored.
   @$pb.TagNumber(7)
-  $4534.NamespacedNames get selectedApplications => $_getN(6);
+  $4536.NamespacedNames get selectedApplications => $_getN(6);
   @$pb.TagNumber(7)
-  set selectedApplications($4534.NamespacedNames v) { setField(7, v); }
+  set selectedApplications($4536.NamespacedNames v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSelectedApplications() => $_has(6);
   @$pb.TagNumber(7)
   void clearSelectedApplications() => clearField(7);
   @$pb.TagNumber(7)
-  $4534.NamespacedNames ensureSelectedApplications() => $_ensure(6);
+  $4536.NamespacedNames ensureSelectedApplications() => $_ensure(6);
 
   /// Optional. A list of transformation rules to be applied against Kubernetes
   /// resources as they are selected for restoration from a Backup. Rules are
@@ -1461,15 +1461,15 @@ class RestoreConfig extends $pb.GeneratedMessage {
   /// A list of selected namespaces excluded from restoration. All
   /// namespaces except those in this list will be restored.
   @$pb.TagNumber(10)
-  $4534.Namespaces get excludedNamespaces => $_getN(9);
+  $4536.Namespaces get excludedNamespaces => $_getN(9);
   @$pb.TagNumber(10)
-  set excludedNamespaces($4534.Namespaces v) { setField(10, v); }
+  set excludedNamespaces($4536.Namespaces v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasExcludedNamespaces() => $_has(9);
   @$pb.TagNumber(10)
   void clearExcludedNamespaces() => clearField(10);
   @$pb.TagNumber(10)
-  $4534.Namespaces ensureExcludedNamespaces() => $_ensure(9);
+  $4536.Namespaces ensureExcludedNamespaces() => $_ensure(9);
 
   /// Optional. A list of transformation rules to be applied against Kubernetes
   /// resources as they are selected for restoration from a Backup. Rules are
@@ -1617,7 +1617,7 @@ enum VolumeDataRestorePolicyOverride_Scope {
 class VolumeDataRestorePolicyOverride extends $pb.GeneratedMessage {
   factory VolumeDataRestorePolicyOverride({
     RestoreConfig_VolumeDataRestorePolicy? policy,
-    $4534.NamespacedNames? selectedPvcs,
+    $4536.NamespacedNames? selectedPvcs,
   }) {
     final $result = create();
     if (policy != null) {
@@ -1639,7 +1639,7 @@ class VolumeDataRestorePolicyOverride extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VolumeDataRestorePolicyOverride', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..oo(0, [2])
     ..e<RestoreConfig_VolumeDataRestorePolicy>(1, _omitFieldNames ? '' : 'policy', $pb.PbFieldType.OE, defaultOrMaker: RestoreConfig_VolumeDataRestorePolicy.VOLUME_DATA_RESTORE_POLICY_UNSPECIFIED, valueOf: RestoreConfig_VolumeDataRestorePolicy.valueOf, enumValues: RestoreConfig_VolumeDataRestorePolicy.values)
-    ..aOM<$4534.NamespacedNames>(2, _omitFieldNames ? '' : 'selectedPvcs', subBuilder: $4534.NamespacedNames.create)
+    ..aOM<$4536.NamespacedNames>(2, _omitFieldNames ? '' : 'selectedPvcs', subBuilder: $4536.NamespacedNames.create)
     ..hasRequiredFields = false
   ;
 
@@ -1680,15 +1680,15 @@ class VolumeDataRestorePolicyOverride extends $pb.GeneratedMessage {
 
   /// A list of PVCs to apply the policy override to.
   @$pb.TagNumber(2)
-  $4534.NamespacedNames get selectedPvcs => $_getN(1);
+  $4536.NamespacedNames get selectedPvcs => $_getN(1);
   @$pb.TagNumber(2)
-  set selectedPvcs($4534.NamespacedNames v) { setField(2, v); }
+  set selectedPvcs($4536.NamespacedNames v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSelectedPvcs() => $_has(1);
   @$pb.TagNumber(2)
   void clearSelectedPvcs() => clearField(2);
   @$pb.TagNumber(2)
-  $4534.NamespacedNames ensureSelectedPvcs() => $_ensure(1);
+  $4536.NamespacedNames ensureSelectedPvcs() => $_ensure(1);
 }
 
 

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data.pb.dart' as $4755;
+import 'data.pb.dart' as $4757;
 
 /// Request to register a debuggee.
 class RegisterDebuggeeRequest extends $pb.GeneratedMessage {
   factory RegisterDebuggeeRequest({
-    $4755.Debuggee? debuggee,
+    $4757.Debuggee? debuggee,
   }) {
     final $result = create();
     if (debuggee != null) {
@@ -31,7 +31,7 @@ class RegisterDebuggeeRequest extends $pb.GeneratedMessage {
   factory RegisterDebuggeeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegisterDebuggeeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouddebugger.v2'), createEmptyInstance: create)
-    ..aOM<$4755.Debuggee>(1, _omitFieldNames ? '' : 'debuggee', subBuilder: $4755.Debuggee.create)
+    ..aOM<$4757.Debuggee>(1, _omitFieldNames ? '' : 'debuggee', subBuilder: $4757.Debuggee.create)
     ..hasRequiredFields = false
   ;
 
@@ -60,21 +60,21 @@ class RegisterDebuggeeRequest extends $pb.GeneratedMessage {
   /// The fields `project`, `uniquifier`, `description` and `agent_version`
   /// of the debuggee must be set.
   @$pb.TagNumber(1)
-  $4755.Debuggee get debuggee => $_getN(0);
+  $4757.Debuggee get debuggee => $_getN(0);
   @$pb.TagNumber(1)
-  set debuggee($4755.Debuggee v) { setField(1, v); }
+  set debuggee($4757.Debuggee v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDebuggee() => $_has(0);
   @$pb.TagNumber(1)
   void clearDebuggee() => clearField(1);
   @$pb.TagNumber(1)
-  $4755.Debuggee ensureDebuggee() => $_ensure(0);
+  $4757.Debuggee ensureDebuggee() => $_ensure(0);
 }
 
 /// Response for registering a debuggee.
 class RegisterDebuggeeResponse extends $pb.GeneratedMessage {
   factory RegisterDebuggeeResponse({
-    $4755.Debuggee? debuggee,
+    $4757.Debuggee? debuggee,
   }) {
     final $result = create();
     if (debuggee != null) {
@@ -87,7 +87,7 @@ class RegisterDebuggeeResponse extends $pb.GeneratedMessage {
   factory RegisterDebuggeeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegisterDebuggeeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouddebugger.v2'), createEmptyInstance: create)
-    ..aOM<$4755.Debuggee>(1, _omitFieldNames ? '' : 'debuggee', subBuilder: $4755.Debuggee.create)
+    ..aOM<$4757.Debuggee>(1, _omitFieldNames ? '' : 'debuggee', subBuilder: $4757.Debuggee.create)
     ..hasRequiredFields = false
   ;
 
@@ -118,15 +118,15 @@ class RegisterDebuggeeResponse extends $pb.GeneratedMessage {
   /// itself by removing all breakpoints and detaching from the application.
   /// It should however continue to poll `RegisterDebuggee` until reenabled.
   @$pb.TagNumber(1)
-  $4755.Debuggee get debuggee => $_getN(0);
+  $4757.Debuggee get debuggee => $_getN(0);
   @$pb.TagNumber(1)
-  set debuggee($4755.Debuggee v) { setField(1, v); }
+  set debuggee($4757.Debuggee v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDebuggee() => $_has(0);
   @$pb.TagNumber(1)
   void clearDebuggee() => clearField(1);
   @$pb.TagNumber(1)
-  $4755.Debuggee ensureDebuggee() => $_ensure(0);
+  $4757.Debuggee ensureDebuggee() => $_ensure(0);
 }
 
 /// Request to list active breakpoints.
@@ -222,7 +222,7 @@ class ListActiveBreakpointsRequest extends $pb.GeneratedMessage {
 /// Response for listing active breakpoints.
 class ListActiveBreakpointsResponse extends $pb.GeneratedMessage {
   factory ListActiveBreakpointsResponse({
-    $core.Iterable<$4755.Breakpoint>? breakpoints,
+    $core.Iterable<$4757.Breakpoint>? breakpoints,
     $core.String? nextWaitToken,
     $core.bool? waitExpired,
   }) {
@@ -243,7 +243,7 @@ class ListActiveBreakpointsResponse extends $pb.GeneratedMessage {
   factory ListActiveBreakpointsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListActiveBreakpointsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouddebugger.v2'), createEmptyInstance: create)
-    ..pc<$4755.Breakpoint>(1, _omitFieldNames ? '' : 'breakpoints', $pb.PbFieldType.PM, subBuilder: $4755.Breakpoint.create)
+    ..pc<$4757.Breakpoint>(1, _omitFieldNames ? '' : 'breakpoints', $pb.PbFieldType.PM, subBuilder: $4757.Breakpoint.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextWaitToken')
     ..aOB(3, _omitFieldNames ? '' : 'waitExpired')
     ..hasRequiredFields = false
@@ -273,7 +273,7 @@ class ListActiveBreakpointsResponse extends $pb.GeneratedMessage {
   /// List of all active breakpoints.
   /// The fields `id` and `location` are guaranteed to be set on each breakpoint.
   @$pb.TagNumber(1)
-  $core.List<$4755.Breakpoint> get breakpoints => $_getList(0);
+  $core.List<$4757.Breakpoint> get breakpoints => $_getList(0);
 
   /// A token that can be used in the next method call to block until
   /// the list of breakpoints changes.
@@ -303,7 +303,7 @@ class ListActiveBreakpointsResponse extends $pb.GeneratedMessage {
 class UpdateActiveBreakpointRequest extends $pb.GeneratedMessage {
   factory UpdateActiveBreakpointRequest({
     $core.String? debuggeeId,
-    $4755.Breakpoint? breakpoint,
+    $4757.Breakpoint? breakpoint,
   }) {
     final $result = create();
     if (debuggeeId != null) {
@@ -320,7 +320,7 @@ class UpdateActiveBreakpointRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateActiveBreakpointRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouddebugger.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'debuggeeId')
-    ..aOM<$4755.Breakpoint>(2, _omitFieldNames ? '' : 'breakpoint', subBuilder: $4755.Breakpoint.create)
+    ..aOM<$4757.Breakpoint>(2, _omitFieldNames ? '' : 'breakpoint', subBuilder: $4757.Breakpoint.create)
     ..hasRequiredFields = false
   ;
 
@@ -359,15 +359,15 @@ class UpdateActiveBreakpointRequest extends $pb.GeneratedMessage {
   /// The field `id` must be set.
   /// The agent must echo all Breakpoint specification fields in the update.
   @$pb.TagNumber(2)
-  $4755.Breakpoint get breakpoint => $_getN(1);
+  $4757.Breakpoint get breakpoint => $_getN(1);
   @$pb.TagNumber(2)
-  set breakpoint($4755.Breakpoint v) { setField(2, v); }
+  set breakpoint($4757.Breakpoint v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBreakpoint() => $_has(1);
   @$pb.TagNumber(2)
   void clearBreakpoint() => clearField(2);
   @$pb.TagNumber(2)
-  $4755.Breakpoint ensureBreakpoint() => $_ensure(1);
+  $4757.Breakpoint ensureBreakpoint() => $_ensure(1);
 }
 
 /// Response for updating an active breakpoint.

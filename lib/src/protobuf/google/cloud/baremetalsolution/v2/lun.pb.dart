@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'lun.pbenum.dart';
 
 export 'lun.pbenum.dart';
@@ -32,7 +32,7 @@ class Lun extends $pb.GeneratedMessage {
     Lun_StorageType? storageType,
     $core.String? wwid,
     $core.String? id,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.Iterable<$core.String>? instances,
   }) {
     final $result = create();
@@ -89,7 +89,7 @@ class Lun extends $pb.GeneratedMessage {
     ..e<Lun_StorageType>(8, _omitFieldNames ? '' : 'storageType', $pb.PbFieldType.OE, defaultOrMaker: Lun_StorageType.STORAGE_TYPE_UNSPECIFIED, valueOf: Lun_StorageType.valueOf, enumValues: Lun_StorageType.values)
     ..aOS(9, _omitFieldNames ? '' : 'wwid')
     ..aOS(10, _omitFieldNames ? '' : 'id')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..pPS(12, _omitFieldNames ? '' : 'instances')
     ..hasRequiredFields = false
   ;
@@ -219,15 +219,15 @@ class Lun extends $pb.GeneratedMessage {
   /// Output only. Time after which LUN will be fully deleted.
   /// It is filled only for LUNs in COOL_OFF state.
   @$pb.TagNumber(11)
-  $1775.Timestamp get expireTime => $_getN(10);
+  $1776.Timestamp get expireTime => $_getN(10);
   @$pb.TagNumber(11)
-  set expireTime($1775.Timestamp v) { setField(11, v); }
+  set expireTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasExpireTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearExpireTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureExpireTime() => $_ensure(10);
+  $1776.Timestamp ensureExpireTime() => $_ensure(10);
 
   /// Output only. Instances this Lun is attached to.
   @$pb.TagNumber(12)

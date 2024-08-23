@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../type/date.pb.dart' as $1800;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../type/date.pb.dart' as $1801;
 
 /// Operating system information for the VM.
 class Inventory_OsInfo extends $pb.GeneratedMessage {
@@ -757,7 +757,7 @@ class Inventory_WindowsUpdatePackage extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? moreInfoUrls,
     $core.String? updateId,
     $core.int? revisionNumber,
-    $1775.Timestamp? lastDeploymentChangeTime,
+    $1776.Timestamp? lastDeploymentChangeTime,
   }) {
     final $result = create();
     if (title != null) {
@@ -802,7 +802,7 @@ class Inventory_WindowsUpdatePackage extends $pb.GeneratedMessage {
     ..pPS(6, _omitFieldNames ? '' : 'moreInfoUrls')
     ..aOS(7, _omitFieldNames ? '' : 'updateId')
     ..a<$core.int>(8, _omitFieldNames ? '' : 'revisionNumber', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'lastDeploymentChangeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'lastDeploymentChangeTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -894,15 +894,15 @@ class Inventory_WindowsUpdatePackage extends $pb.GeneratedMessage {
 
   /// The last published date of the update, in (UTC) date and time.
   @$pb.TagNumber(9)
-  $1775.Timestamp get lastDeploymentChangeTime => $_getN(8);
+  $1776.Timestamp get lastDeploymentChangeTime => $_getN(8);
   @$pb.TagNumber(9)
-  set lastDeploymentChangeTime($1775.Timestamp v) { setField(9, v); }
+  set lastDeploymentChangeTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasLastDeploymentChangeTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearLastDeploymentChangeTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureLastDeploymentChangeTime() => $_ensure(8);
+  $1776.Timestamp ensureLastDeploymentChangeTime() => $_ensure(8);
 }
 
 /// Information related to a Quick Fix Engineering package.
@@ -914,7 +914,7 @@ class Inventory_WindowsQuickFixEngineeringPackage extends $pb.GeneratedMessage {
     $core.String? caption,
     $core.String? description,
     $core.String? hotFixId,
-    $1775.Timestamp? installTime,
+    $1776.Timestamp? installTime,
   }) {
     final $result = create();
     if (caption != null) {
@@ -939,7 +939,7 @@ class Inventory_WindowsQuickFixEngineeringPackage extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'caption')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'hotFixId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'installTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'installTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -996,15 +996,15 @@ class Inventory_WindowsQuickFixEngineeringPackage extends $pb.GeneratedMessage {
 
   /// Date that the QFE update was installed.  Mapped from installed_on field.
   @$pb.TagNumber(4)
-  $1775.Timestamp get installTime => $_getN(3);
+  $1776.Timestamp get installTime => $_getN(3);
   @$pb.TagNumber(4)
-  set installTime($1775.Timestamp v) { setField(4, v); }
+  set installTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInstallTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearInstallTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureInstallTime() => $_ensure(3);
+  $1776.Timestamp ensureInstallTime() => $_ensure(3);
 }
 
 /// Details about Windows Application - based on Windows Registry.
@@ -1015,7 +1015,7 @@ class Inventory_WindowsApplication extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? displayVersion,
     $core.String? publisher,
-    $1800.Date? installDate,
+    $1801.Date? installDate,
     $core.String? helpLink,
   }) {
     final $result = create();
@@ -1044,7 +1044,7 @@ class Inventory_WindowsApplication extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
     ..aOS(2, _omitFieldNames ? '' : 'displayVersion')
     ..aOS(3, _omitFieldNames ? '' : 'publisher')
-    ..aOM<$1800.Date>(4, _omitFieldNames ? '' : 'installDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(4, _omitFieldNames ? '' : 'installDate', subBuilder: $1801.Date.create)
     ..aOS(5, _omitFieldNames ? '' : 'helpLink')
     ..hasRequiredFields = false
   ;
@@ -1102,15 +1102,15 @@ class Inventory_WindowsApplication extends $pb.GeneratedMessage {
 
   /// Installation date field from Windows Registry.
   @$pb.TagNumber(4)
-  $1800.Date get installDate => $_getN(3);
+  $1801.Date get installDate => $_getN(3);
   @$pb.TagNumber(4)
-  set installDate($1800.Date v) { setField(4, v); }
+  set installDate($1801.Date v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInstallDate() => $_has(3);
   @$pb.TagNumber(4)
   void clearInstallDate() => clearField(4);
   @$pb.TagNumber(4)
-  $1800.Date ensureInstallDate() => $_ensure(3);
+  $1801.Date ensureInstallDate() => $_ensure(3);
 
   /// HelpLink field from Windows Registry.
   @$pb.TagNumber(5)

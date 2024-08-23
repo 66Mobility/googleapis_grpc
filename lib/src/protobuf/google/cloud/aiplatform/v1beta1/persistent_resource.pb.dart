@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'encryption_spec.pb.dart' as $4281;
-import 'machine_resources.pb.dart' as $4287;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'encryption_spec.pb.dart' as $4282;
+import 'machine_resources.pb.dart' as $4288;
 import 'persistent_resource.pbenum.dart';
-import 'service_networking.pb.dart' as $4298;
+import 'service_networking.pb.dart' as $4299;
 
 export 'persistent_resource.pbenum.dart';
 
@@ -33,17 +33,17 @@ class PersistentResource extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.Iterable<ResourcePool>? resourcePools,
     PersistentResource_State? state,
-    $1795.Status? error,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? updateTime,
+    $1796.Status? error,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? network,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4282.EncryptionSpec? encryptionSpec,
     ResourceRuntimeSpec? resourceRuntimeSpec,
     ResourceRuntime? resourceRuntime,
     $core.Iterable<$core.String>? reservedIpRanges,
-    $4298.PscInterfaceConfig? pscInterfaceConfig,
+    $4299.PscInterfaceConfig? pscInterfaceConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -102,17 +102,17 @@ class PersistentResource extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..pc<ResourcePool>(4, _omitFieldNames ? '' : 'resourcePools', $pb.PbFieldType.PM, subBuilder: ResourcePool.create)
     ..e<PersistentResource_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PersistentResource_State.STATE_UNSPECIFIED, valueOf: PersistentResource_State.valueOf, enumValues: PersistentResource_State.values)
-    ..aOM<$1795.Status>(6, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1796.Status>(6, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'PersistentResource.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..aOS(11, _omitFieldNames ? '' : 'network')
-    ..aOM<$4281.EncryptionSpec>(12, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4282.EncryptionSpec>(12, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOM<ResourceRuntimeSpec>(13, _omitFieldNames ? '' : 'resourceRuntimeSpec', subBuilder: ResourceRuntimeSpec.create)
     ..aOM<ResourceRuntime>(14, _omitFieldNames ? '' : 'resourceRuntime', subBuilder: ResourceRuntime.create)
     ..pPS(15, _omitFieldNames ? '' : 'reservedIpRanges')
-    ..aOM<$4298.PscInterfaceConfig>(17, _omitFieldNames ? '' : 'pscInterfaceConfig', subBuilder: $4298.PscInterfaceConfig.create)
+    ..aOM<$4299.PscInterfaceConfig>(17, _omitFieldNames ? '' : 'pscInterfaceConfig', subBuilder: $4299.PscInterfaceConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -176,52 +176,52 @@ class PersistentResource extends $pb.GeneratedMessage {
   /// Output only. Only populated when persistent resource's state is `STOPPING`
   /// or `ERROR`.
   @$pb.TagNumber(6)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(6)
-  set error($1795.Status v) { setField(6, v); }
+  set error($1796.Status v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(6)
   void clearError() => clearField(6);
   @$pb.TagNumber(6)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 
   /// Output only. Time when the PersistentResource was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time when the PersistentResource for the first time entered
   /// the `RUNNING` state.
   @$pb.TagNumber(8)
-  $1775.Timestamp get startTime => $_getN(6);
+  $1776.Timestamp get startTime => $_getN(6);
   @$pb.TagNumber(8)
-  set startTime($1775.Timestamp v) { setField(8, v); }
+  set startTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearStartTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureStartTime() => $_ensure(6);
+  $1776.Timestamp ensureStartTime() => $_ensure(6);
 
   /// Output only. Time when the PersistentResource was most recently updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   ///  Optional. The labels with user-defined metadata to organize
   ///  PersistentResource.
@@ -262,15 +262,15 @@ class PersistentResource extends $pb.GeneratedMessage {
   /// If set, this PersistentResource and all sub-resources of this
   /// PersistentResource will be secured by this key.
   @$pb.TagNumber(12)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(10);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(10);
   @$pb.TagNumber(12)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(12, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasEncryptionSpec() => $_has(10);
   @$pb.TagNumber(12)
   void clearEncryptionSpec() => clearField(12);
   @$pb.TagNumber(12)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(10);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(10);
 
   /// Optional. Persistent Resource runtime spec.
   /// For example, used for Ray cluster configuration.
@@ -310,15 +310,15 @@ class PersistentResource extends $pb.GeneratedMessage {
 
   /// Optional. Configuration for PSC-I for PersistentResource.
   @$pb.TagNumber(17)
-  $4298.PscInterfaceConfig get pscInterfaceConfig => $_getN(14);
+  $4299.PscInterfaceConfig get pscInterfaceConfig => $_getN(14);
   @$pb.TagNumber(17)
-  set pscInterfaceConfig($4298.PscInterfaceConfig v) { setField(17, v); }
+  set pscInterfaceConfig($4299.PscInterfaceConfig v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasPscInterfaceConfig() => $_has(14);
   @$pb.TagNumber(17)
   void clearPscInterfaceConfig() => clearField(17);
   @$pb.TagNumber(17)
-  $4298.PscInterfaceConfig ensurePscInterfaceConfig() => $_ensure(14);
+  $4299.PscInterfaceConfig ensurePscInterfaceConfig() => $_ensure(14);
 }
 
 /// The min/max number of replicas allowed if enabling autoscaling
@@ -401,9 +401,9 @@ class ResourcePool_AutoscalingSpec extends $pb.GeneratedMessage {
 class ResourcePool extends $pb.GeneratedMessage {
   factory ResourcePool({
     $core.String? id,
-    $4287.MachineSpec? machineSpec,
+    $4288.MachineSpec? machineSpec,
     $fixnum.Int64? replicaCount,
-    $4287.DiskSpec? diskSpec,
+    $4288.DiskSpec? diskSpec,
     $fixnum.Int64? usedReplicaCount,
     ResourcePool_AutoscalingSpec? autoscalingSpec,
   }) {
@@ -434,9 +434,9 @@ class ResourcePool extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResourcePool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..aOM<$4287.MachineSpec>(2, _omitFieldNames ? '' : 'machineSpec', subBuilder: $4287.MachineSpec.create)
+    ..aOM<$4288.MachineSpec>(2, _omitFieldNames ? '' : 'machineSpec', subBuilder: $4288.MachineSpec.create)
     ..aInt64(3, _omitFieldNames ? '' : 'replicaCount')
-    ..aOM<$4287.DiskSpec>(4, _omitFieldNames ? '' : 'diskSpec', subBuilder: $4287.DiskSpec.create)
+    ..aOM<$4288.DiskSpec>(4, _omitFieldNames ? '' : 'diskSpec', subBuilder: $4288.DiskSpec.create)
     ..aInt64(6, _omitFieldNames ? '' : 'usedReplicaCount')
     ..aOM<ResourcePool_AutoscalingSpec>(7, _omitFieldNames ? '' : 'autoscalingSpec', subBuilder: ResourcePool_AutoscalingSpec.create)
     ..hasRequiredFields = false
@@ -477,15 +477,15 @@ class ResourcePool extends $pb.GeneratedMessage {
 
   /// Required. Immutable. The specification of a single machine.
   @$pb.TagNumber(2)
-  $4287.MachineSpec get machineSpec => $_getN(1);
+  $4288.MachineSpec get machineSpec => $_getN(1);
   @$pb.TagNumber(2)
-  set machineSpec($4287.MachineSpec v) { setField(2, v); }
+  set machineSpec($4288.MachineSpec v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMachineSpec() => $_has(1);
   @$pb.TagNumber(2)
   void clearMachineSpec() => clearField(2);
   @$pb.TagNumber(2)
-  $4287.MachineSpec ensureMachineSpec() => $_ensure(1);
+  $4288.MachineSpec ensureMachineSpec() => $_ensure(1);
 
   /// Optional. The total number of machines to use for this resource pool.
   @$pb.TagNumber(3)
@@ -499,15 +499,15 @@ class ResourcePool extends $pb.GeneratedMessage {
 
   /// Optional. Disk spec for the machine in this node pool.
   @$pb.TagNumber(4)
-  $4287.DiskSpec get diskSpec => $_getN(3);
+  $4288.DiskSpec get diskSpec => $_getN(3);
   @$pb.TagNumber(4)
-  set diskSpec($4287.DiskSpec v) { setField(4, v); }
+  set diskSpec($4288.DiskSpec v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDiskSpec() => $_has(3);
   @$pb.TagNumber(4)
   void clearDiskSpec() => clearField(4);
   @$pb.TagNumber(4)
-  $4287.DiskSpec ensureDiskSpec() => $_ensure(3);
+  $4288.DiskSpec ensureDiskSpec() => $_ensure(3);
 
   /// Output only. The number of machines currently in use by training jobs for
   /// this resource pool. Will replace idle_replica_count.

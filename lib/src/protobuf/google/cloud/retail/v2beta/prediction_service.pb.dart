@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'user_event.pb.dart' as $1311;
 
 /// Request message for Predict method.
@@ -26,7 +26,7 @@ class PredictRequest extends $pb.GeneratedMessage {
     $core.String? pageToken,
     $core.String? filter,
     $core.bool? validateOnly,
-    $core.Map<$core.String, $1734.Value>? params,
+    $core.Map<$core.String, $1735.Value>? params,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -68,7 +68,7 @@ class PredictRequest extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'filter')
     ..aOB(6, _omitFieldNames ? '' : 'validateOnly')
-    ..m<$core.String, $1734.Value>(7, _omitFieldNames ? '' : 'params', entryClassName: 'PredictRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
+    ..m<$core.String, $1735.Value>(7, _omitFieldNames ? '' : 'params', entryClassName: 'PredictRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'PredictRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
     ..hasRequiredFields = false
   ;
@@ -258,7 +258,7 @@ class PredictRequest extends $pb.GeneratedMessage {
   ///  * `filterSyntaxV2`: Boolean. False by default. If set to true, the `filter`
   ///    field is interpreteted according to the new, attribute-based syntax.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $1734.Value> get params => $_getMap(6);
+  $core.Map<$core.String, $1735.Value> get params => $_getMap(6);
 
   ///  The labels applied to a resource must meet the following requirements:
   ///
@@ -285,7 +285,7 @@ class PredictRequest extends $pb.GeneratedMessage {
 class PredictResponse_PredictionResult extends $pb.GeneratedMessage {
   factory PredictResponse_PredictionResult({
     $core.String? id,
-    $core.Map<$core.String, $1734.Value>? metadata,
+    $core.Map<$core.String, $1735.Value>? metadata,
   }) {
     final $result = create();
     if (id != null) {
@@ -302,7 +302,7 @@ class PredictResponse_PredictionResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictResponse.PredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..m<$core.String, $1734.Value>(2, _omitFieldNames ? '' : 'metadata', entryClassName: 'PredictResponse.PredictionResult.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
+    ..m<$core.String, $1735.Value>(2, _omitFieldNames ? '' : 'metadata', entryClassName: 'PredictResponse.PredictionResult.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
     ..hasRequiredFields = false
   ;
 
@@ -346,7 +346,7 @@ class PredictResponse_PredictionResult extends $pb.GeneratedMessage {
   ///  * `score`: Prediction score in double value. Is set if
   ///    `returnScore` is set to true in `PredictRequest.params`.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1734.Value> get metadata => $_getMap(1);
+  $core.Map<$core.String, $1735.Value> get metadata => $_getMap(1);
 }
 
 /// Response message for predict method.

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'privilegedaccessmanager.pbenum.dart';
 
 export 'privilegedaccessmanager.pbenum.dart';
@@ -478,12 +478,12 @@ class Entitlement_AdditionalNotificationTargets extends $pb.GeneratedMessage {
 class Entitlement extends $pb.GeneratedMessage {
   factory Entitlement({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<AccessControlEntry>? eligibleUsers,
     ApprovalWorkflow? approvalWorkflow,
     PrivilegedAccess? privilegedAccess,
-    $1737.Duration? maxRequestDuration,
+    $1738.Duration? maxRequestDuration,
     Entitlement_State? state,
     Entitlement_RequesterJustificationConfig? requesterJustificationConfig,
     Entitlement_AdditionalNotificationTargets? additionalNotificationTargets,
@@ -531,12 +531,12 @@ class Entitlement extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Entitlement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pc<AccessControlEntry>(5, _omitFieldNames ? '' : 'eligibleUsers', $pb.PbFieldType.PM, subBuilder: AccessControlEntry.create)
     ..aOM<ApprovalWorkflow>(6, _omitFieldNames ? '' : 'approvalWorkflow', subBuilder: ApprovalWorkflow.create)
     ..aOM<PrivilegedAccess>(7, _omitFieldNames ? '' : 'privilegedAccess', subBuilder: PrivilegedAccess.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'maxRequestDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'maxRequestDuration', subBuilder: $1738.Duration.create)
     ..e<Entitlement_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Entitlement_State.STATE_UNSPECIFIED, valueOf: Entitlement_State.valueOf, enumValues: Entitlement_State.values)
     ..aOM<Entitlement_RequesterJustificationConfig>(10, _omitFieldNames ? '' : 'requesterJustificationConfig', subBuilder: Entitlement_RequesterJustificationConfig.create)
     ..aOM<Entitlement_AdditionalNotificationTargets>(11, _omitFieldNames ? '' : 'additionalNotificationTargets', subBuilder: Entitlement_AdditionalNotificationTargets.create)
@@ -582,27 +582,27 @@ class Entitlement extends $pb.GeneratedMessage {
 
   /// Output only. Create time stamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Update time stamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Who can create grants using this entitlement. This list should
   /// contain at most one entry.
@@ -637,15 +637,15 @@ class Entitlement extends $pb.GeneratedMessage {
   /// Required. The maximum amount of time that access is granted for a request.
   /// A requester can ask for a duration less than this, but never more.
   @$pb.TagNumber(8)
-  $1737.Duration get maxRequestDuration => $_getN(6);
+  $1738.Duration get maxRequestDuration => $_getN(6);
   @$pb.TagNumber(8)
-  set maxRequestDuration($1737.Duration v) { setField(8, v); }
+  set maxRequestDuration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMaxRequestDuration() => $_has(6);
   @$pb.TagNumber(8)
   void clearMaxRequestDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureMaxRequestDuration() => $_ensure(6);
+  $1738.Duration ensureMaxRequestDuration() => $_ensure(6);
 
   /// Output only. Current state of this entitlement.
   @$pb.TagNumber(9)
@@ -1821,7 +1821,7 @@ class DeleteEntitlementRequest extends $pb.GeneratedMessage {
 class UpdateEntitlementRequest extends $pb.GeneratedMessage {
   factory UpdateEntitlementRequest({
     Entitlement? entitlement,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (entitlement != null) {
@@ -1838,7 +1838,7 @@ class UpdateEntitlementRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEntitlementRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
     ..aOM<Entitlement>(1, _omitFieldNames ? '' : 'entitlement', subBuilder: Entitlement.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1885,21 +1885,21 @@ class UpdateEntitlementRequest extends $pb.GeneratedMessage {
   /// (e.g. `MaxRequestDuration`; *not* `entitlement.MaxRequestDuration`)
   /// A value of '*' for this field refers to full replacement of the resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// An event representing that a grant was requested.
 class Grant_Timeline_Event_Requested extends $pb.GeneratedMessage {
   factory Grant_Timeline_Event_Requested({
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (expireTime != null) {
@@ -1912,7 +1912,7 @@ class Grant_Timeline_Event_Requested extends $pb.GeneratedMessage {
   factory Grant_Timeline_Event_Requested.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grant.Timeline.Event.Requested', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1940,15 +1940,15 @@ class Grant_Timeline_Event_Requested extends $pb.GeneratedMessage {
   /// Output only. The time at which this grant expires unless the approval
   /// workflow completes. If omitted, then the request never expires.
   @$pb.TagNumber(1)
-  $1775.Timestamp get expireTime => $_getN(0);
+  $1776.Timestamp get expireTime => $_getN(0);
   @$pb.TagNumber(1)
-  set expireTime($1775.Timestamp v) { setField(1, v); }
+  set expireTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasExpireTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearExpireTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureExpireTime() => $_ensure(0);
+  $1776.Timestamp ensureExpireTime() => $_ensure(0);
 }
 
 /// An event representing that the grant was approved.
@@ -2158,7 +2158,7 @@ class Grant_Timeline_Event_Revoked extends $pb.GeneratedMessage {
 /// activated later.
 class Grant_Timeline_Event_Scheduled extends $pb.GeneratedMessage {
   factory Grant_Timeline_Event_Scheduled({
-    $1775.Timestamp? scheduledActivationTime,
+    $1776.Timestamp? scheduledActivationTime,
   }) {
     final $result = create();
     if (scheduledActivationTime != null) {
@@ -2171,7 +2171,7 @@ class Grant_Timeline_Event_Scheduled extends $pb.GeneratedMessage {
   factory Grant_Timeline_Event_Scheduled.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grant.Timeline.Event.Scheduled', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'scheduledActivationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'scheduledActivationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2198,15 +2198,15 @@ class Grant_Timeline_Event_Scheduled extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the access is granted.
   @$pb.TagNumber(1)
-  $1775.Timestamp get scheduledActivationTime => $_getN(0);
+  $1776.Timestamp get scheduledActivationTime => $_getN(0);
   @$pb.TagNumber(1)
-  set scheduledActivationTime($1775.Timestamp v) { setField(1, v); }
+  set scheduledActivationTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasScheduledActivationTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearScheduledActivationTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureScheduledActivationTime() => $_ensure(0);
+  $1776.Timestamp ensureScheduledActivationTime() => $_ensure(0);
 }
 
 /// An event representing that the grant was successfully
@@ -2246,7 +2246,7 @@ class Grant_Timeline_Event_Activated extends $pb.GeneratedMessage {
 /// An event representing that the grant activation failed.
 class Grant_Timeline_Event_ActivationFailed extends $pb.GeneratedMessage {
   factory Grant_Timeline_Event_ActivationFailed({
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (error != null) {
@@ -2259,7 +2259,7 @@ class Grant_Timeline_Event_ActivationFailed extends $pb.GeneratedMessage {
   factory Grant_Timeline_Event_ActivationFailed.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grant.Timeline.Event.ActivationFailed', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2286,15 +2286,15 @@ class Grant_Timeline_Event_ActivationFailed extends $pb.GeneratedMessage {
 
   /// Output only. The error that occurred while activating the grant.
   @$pb.TagNumber(1)
-  $1795.Status get error => $_getN(0);
+  $1796.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($1795.Status v) { setField(1, v); }
+  set error($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureError() => $_ensure(0);
+  $1796.Status ensureError() => $_ensure(0);
 }
 
 /// An event representing that the grant was expired.
@@ -2414,7 +2414,7 @@ enum Grant_Timeline_Event_Event {
 /// A single operation on the grant.
 class Grant_Timeline_Event extends $pb.GeneratedMessage {
   factory Grant_Timeline_Event({
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     Grant_Timeline_Event_Requested? requested,
     Grant_Timeline_Event_Approved? approved,
     Grant_Timeline_Event_Denied? denied,
@@ -2481,7 +2481,7 @@ class Grant_Timeline_Event extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grant.Timeline.Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5, 6, 7, 8, 10, 11, 12])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Grant_Timeline_Event_Requested>(2, _omitFieldNames ? '' : 'requested', subBuilder: Grant_Timeline_Event_Requested.create)
     ..aOM<Grant_Timeline_Event_Approved>(3, _omitFieldNames ? '' : 'approved', subBuilder: Grant_Timeline_Event_Approved.create)
     ..aOM<Grant_Timeline_Event_Denied>(4, _omitFieldNames ? '' : 'denied', subBuilder: Grant_Timeline_Event_Denied.create)
@@ -2521,15 +2521,15 @@ class Grant_Timeline_Event extends $pb.GeneratedMessage {
 
   /// Output only. The time (as recorded at server) when this event occurred.
   @$pb.TagNumber(1)
-  $1775.Timestamp get eventTime => $_getN(0);
+  $1776.Timestamp get eventTime => $_getN(0);
   @$pb.TagNumber(1)
-  set eventTime($1775.Timestamp v) { setField(1, v); }
+  set eventTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEventTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEventTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEventTime() => $_ensure(0);
+  $1776.Timestamp ensureEventTime() => $_ensure(0);
 
   /// The grant was requested.
   @$pb.TagNumber(2)
@@ -2706,8 +2706,8 @@ class Grant_Timeline extends $pb.GeneratedMessage {
 /// Audit trail for the access provided by this grant.
 class Grant_AuditTrail extends $pb.GeneratedMessage {
   factory Grant_AuditTrail({
-    $1775.Timestamp? accessGrantTime,
-    $1775.Timestamp? accessRemoveTime,
+    $1776.Timestamp? accessGrantTime,
+    $1776.Timestamp? accessRemoveTime,
   }) {
     final $result = create();
     if (accessGrantTime != null) {
@@ -2723,8 +2723,8 @@ class Grant_AuditTrail extends $pb.GeneratedMessage {
   factory Grant_AuditTrail.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grant.AuditTrail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'accessGrantTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'accessRemoveTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'accessGrantTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'accessRemoveTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2751,30 +2751,30 @@ class Grant_AuditTrail extends $pb.GeneratedMessage {
 
   /// Output only. The time at which access was given.
   @$pb.TagNumber(1)
-  $1775.Timestamp get accessGrantTime => $_getN(0);
+  $1776.Timestamp get accessGrantTime => $_getN(0);
   @$pb.TagNumber(1)
-  set accessGrantTime($1775.Timestamp v) { setField(1, v); }
+  set accessGrantTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessGrantTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessGrantTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureAccessGrantTime() => $_ensure(0);
+  $1776.Timestamp ensureAccessGrantTime() => $_ensure(0);
 
   ///  Output only. The time at which the system removed access. This could be
   ///  because of an automatic expiry or because of a revocation.
   ///
   ///  If unspecified, then access hasn't been removed yet.
   @$pb.TagNumber(2)
-  $1775.Timestamp get accessRemoveTime => $_getN(1);
+  $1776.Timestamp get accessRemoveTime => $_getN(1);
   @$pb.TagNumber(2)
-  set accessRemoveTime($1775.Timestamp v) { setField(2, v); }
+  set accessRemoveTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccessRemoveTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccessRemoveTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureAccessRemoveTime() => $_ensure(1);
+  $1776.Timestamp ensureAccessRemoveTime() => $_ensure(1);
 }
 
 /// This is to ensure that the `Grants` and `ProducerGrants` proto are byte
@@ -2784,10 +2784,10 @@ class Grant_AuditTrail extends $pb.GeneratedMessage {
 class Grant extends $pb.GeneratedMessage {
   factory Grant({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? requester,
-    $1737.Duration? requestedDuration,
+    $1738.Duration? requestedDuration,
     Justification? justification,
     Grant_State? state,
     Grant_Timeline? timeline,
@@ -2841,10 +2841,10 @@ class Grant extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Grant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'requester')
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'requestedDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'requestedDuration', subBuilder: $1738.Duration.create)
     ..aOM<Justification>(6, _omitFieldNames ? '' : 'justification', subBuilder: Justification.create)
     ..e<Grant_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Grant_State.STATE_UNSPECIFIED, valueOf: Grant_State.valueOf, enumValues: Grant_State.values)
     ..aOM<Grant_Timeline>(8, _omitFieldNames ? '' : 'timeline', subBuilder: Grant_Timeline.create)
@@ -2895,27 +2895,27 @@ class Grant extends $pb.GeneratedMessage {
 
   /// Output only. Create time stamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Update time stamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. Username of the user who created this grant.
   @$pb.TagNumber(4)
@@ -2930,15 +2930,15 @@ class Grant extends $pb.GeneratedMessage {
   /// Required. The amount of time access is needed for. This value should be
   /// less than the `max_request_duration` value of the entitlement.
   @$pb.TagNumber(5)
-  $1737.Duration get requestedDuration => $_getN(4);
+  $1738.Duration get requestedDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set requestedDuration($1737.Duration v) { setField(5, v); }
+  set requestedDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRequestedDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearRequestedDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureRequestedDuration() => $_ensure(4);
+  $1738.Duration ensureRequestedDuration() => $_ensure(4);
 
   /// Optional. Justification of why this access is needed.
   @$pb.TagNumber(6)
@@ -3801,8 +3801,8 @@ class CreateGrantRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -3838,8 +3838,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privilegedaccessmanager.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -3871,27 +3871,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

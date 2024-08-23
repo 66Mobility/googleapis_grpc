@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'trace.pbenum.dart';
 
 export 'trace.pbenum.dart';
@@ -273,7 +273,7 @@ enum Span_TimeEvent_Value {
 /// A time-stamped annotation or message event in the Span.
 class Span_TimeEvent extends $pb.GeneratedMessage {
   factory Span_TimeEvent({
-    $1775.Timestamp? time,
+    $1776.Timestamp? time,
     Span_TimeEvent_Annotation? annotation,
     Span_TimeEvent_MessageEvent? messageEvent,
   }) {
@@ -300,7 +300,7 @@ class Span_TimeEvent extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Span.TimeEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.cloudtrace.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'time', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'time', subBuilder: $1776.Timestamp.create)
     ..aOM<Span_TimeEvent_Annotation>(2, _omitFieldNames ? '' : 'annotation', subBuilder: Span_TimeEvent_Annotation.create)
     ..aOM<Span_TimeEvent_MessageEvent>(3, _omitFieldNames ? '' : 'messageEvent', subBuilder: Span_TimeEvent_MessageEvent.create)
     ..hasRequiredFields = false
@@ -332,15 +332,15 @@ class Span_TimeEvent extends $pb.GeneratedMessage {
 
   /// The timestamp indicating the time the event occurred.
   @$pb.TagNumber(1)
-  $1775.Timestamp get time => $_getN(0);
+  $1776.Timestamp get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($1775.Timestamp v) { setField(1, v); }
+  set time($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureTime() => $_ensure(0);
+  $1776.Timestamp ensureTime() => $_ensure(0);
 
   /// Text annotation with a set of attributes.
   @$pb.TagNumber(2)
@@ -627,15 +627,15 @@ class Span extends $pb.GeneratedMessage {
     $core.String? spanId,
     $core.String? parentSpanId,
     TruncatableString? displayName,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     Span_Attributes? attributes,
     StackTrace? stackTrace,
     Span_TimeEvents? timeEvents,
     Span_Links? links,
-    $1795.Status? status,
-    $1780.BoolValue? sameProcessAsParentSpan,
-    $1780.Int32Value? childSpanCount,
+    $1796.Status? status,
+    $1781.BoolValue? sameProcessAsParentSpan,
+    $1781.Int32Value? childSpanCount,
     Span_SpanKind? spanKind,
   }) {
     final $result = create();
@@ -692,15 +692,15 @@ class Span extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'spanId')
     ..aOS(3, _omitFieldNames ? '' : 'parentSpanId')
     ..aOM<TruncatableString>(4, _omitFieldNames ? '' : 'displayName', subBuilder: TruncatableString.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Span_Attributes>(7, _omitFieldNames ? '' : 'attributes', subBuilder: Span_Attributes.create)
     ..aOM<StackTrace>(8, _omitFieldNames ? '' : 'stackTrace', subBuilder: StackTrace.create)
     ..aOM<Span_TimeEvents>(9, _omitFieldNames ? '' : 'timeEvents', subBuilder: Span_TimeEvents.create)
     ..aOM<Span_Links>(10, _omitFieldNames ? '' : 'links', subBuilder: Span_Links.create)
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$1780.BoolValue>(12, _omitFieldNames ? '' : 'sameProcessAsParentSpan', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.Int32Value>(13, _omitFieldNames ? '' : 'childSpanCount', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$1781.BoolValue>(12, _omitFieldNames ? '' : 'sameProcessAsParentSpan', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.Int32Value>(13, _omitFieldNames ? '' : 'childSpanCount', subBuilder: $1781.Int32Value.create)
     ..e<Span_SpanKind>(14, _omitFieldNames ? '' : 'spanKind', $pb.PbFieldType.OE, defaultOrMaker: Span_SpanKind.SPAN_KIND_UNSPECIFIED, valueOf: Span_SpanKind.valueOf, enumValues: Span_SpanKind.values)
     ..hasRequiredFields = false
   ;
@@ -791,29 +791,29 @@ class Span extends $pb.GeneratedMessage {
   /// side, this is the time when the server's application handler starts
   /// running.
   @$pb.TagNumber(5)
-  $1775.Timestamp get startTime => $_getN(4);
+  $1776.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(5)
-  set startTime($1775.Timestamp v) { setField(5, v); }
+  set startTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureStartTime() => $_ensure(4);
+  $1776.Timestamp ensureStartTime() => $_ensure(4);
 
   /// Required. The end time of the span. On the client side, this is the time
   /// kept by the local machine where the span execution ends. On the server
   /// side, this is the time when the server application handler stops running.
   @$pb.TagNumber(6)
-  $1775.Timestamp get endTime => $_getN(5);
+  $1776.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($1775.Timestamp v) { setField(6, v); }
+  set endTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEndTime() => $_ensure(5);
+  $1776.Timestamp ensureEndTime() => $_ensure(5);
 
   /// A set of attributes on the span. You can have up to 32 attributes per
   /// span.
@@ -867,42 +867,42 @@ class Span extends $pb.GeneratedMessage {
 
   /// Optional. The final status for this span.
   @$pb.TagNumber(11)
-  $1795.Status get status => $_getN(10);
+  $1796.Status get status => $_getN(10);
   @$pb.TagNumber(11)
-  set status($1795.Status v) { setField(11, v); }
+  set status($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStatus() => $_has(10);
   @$pb.TagNumber(11)
   void clearStatus() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureStatus() => $_ensure(10);
+  $1796.Status ensureStatus() => $_ensure(10);
 
   /// Optional. Set this parameter to indicate whether this span is in
   /// the same process as its parent. If you do not set this parameter,
   /// Trace is unable to take advantage of this helpful information.
   @$pb.TagNumber(12)
-  $1780.BoolValue get sameProcessAsParentSpan => $_getN(11);
+  $1781.BoolValue get sameProcessAsParentSpan => $_getN(11);
   @$pb.TagNumber(12)
-  set sameProcessAsParentSpan($1780.BoolValue v) { setField(12, v); }
+  set sameProcessAsParentSpan($1781.BoolValue v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSameProcessAsParentSpan() => $_has(11);
   @$pb.TagNumber(12)
   void clearSameProcessAsParentSpan() => clearField(12);
   @$pb.TagNumber(12)
-  $1780.BoolValue ensureSameProcessAsParentSpan() => $_ensure(11);
+  $1781.BoolValue ensureSameProcessAsParentSpan() => $_ensure(11);
 
   /// Optional. The number of child spans that were generated while this span
   /// was active. If set, allows implementation to detect missing child spans.
   @$pb.TagNumber(13)
-  $1780.Int32Value get childSpanCount => $_getN(12);
+  $1781.Int32Value get childSpanCount => $_getN(12);
   @$pb.TagNumber(13)
-  set childSpanCount($1780.Int32Value v) { setField(13, v); }
+  set childSpanCount($1781.Int32Value v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasChildSpanCount() => $_has(12);
   @$pb.TagNumber(13)
   void clearChildSpanCount() => clearField(13);
   @$pb.TagNumber(13)
-  $1780.Int32Value ensureChildSpanCount() => $_ensure(12);
+  $1781.Int32Value ensureChildSpanCount() => $_ensure(12);
 
   /// Optional. Distinguishes between spans generated in a particular context.
   /// For example, two spans with the same name may be distinguished using

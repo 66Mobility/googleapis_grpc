@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'datastream_resources.pbenum.dart';
 
 export 'datastream_resources.pbenum.dart';
@@ -588,8 +588,8 @@ class VpcPeeringConfig extends $pb.GeneratedMessage {
 class PrivateConnection extends $pb.GeneratedMessage {
   factory PrivateConnection({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     PrivateConnection_State? state,
@@ -629,8 +629,8 @@ class PrivateConnection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivateConnection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datastream.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'PrivateConnection.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.datastream.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..e<PrivateConnection_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PrivateConnection_State.STATE_UNSPECIFIED, valueOf: PrivateConnection_State.valueOf, enumValues: PrivateConnection_State.values)
@@ -672,27 +672,27 @@ class PrivateConnection extends $pb.GeneratedMessage {
 
   /// Output only. The create time of the resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time of the resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
@@ -799,8 +799,8 @@ class PrivateConnectivity extends $pb.GeneratedMessage {
 class Route extends $pb.GeneratedMessage {
   factory Route({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     $core.String? destinationAddress,
@@ -836,8 +836,8 @@ class Route extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Route', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datastream.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Route.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.datastream.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'destinationAddress')
@@ -878,27 +878,27 @@ class Route extends $pb.GeneratedMessage {
 
   /// Output only. The create time of the resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time of the resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
@@ -1085,8 +1085,8 @@ enum ConnectionProfile_Connectivity {
 class ConnectionProfile extends $pb.GeneratedMessage {
   factory ConnectionProfile({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     OracleProfile? oracleProfile,
@@ -1157,8 +1157,8 @@ class ConnectionProfile extends $pb.GeneratedMessage {
     ..oo(0, [100, 101, 102])
     ..oo(1, [200, 201, 202, 203])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'ConnectionProfile.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.datastream.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOM<OracleProfile>(100, _omitFieldNames ? '' : 'oracleProfile', subBuilder: OracleProfile.create)
@@ -1210,27 +1210,27 @@ class ConnectionProfile extends $pb.GeneratedMessage {
 
   /// Output only. The create time of the resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time of the resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
@@ -2342,7 +2342,7 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
     GcsFileFormat? gcsFileFormat,
     $core.int? fileRotationMb,
-    $1737.Duration? fileRotationInterval,
+    $1738.Duration? fileRotationInterval,
     AvroFileFormat? avroFileFormat,
     JsonFileFormat? jsonFileFormat,
   }) {
@@ -2382,7 +2382,7 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'path')
     ..e<GcsFileFormat>(2, _omitFieldNames ? '' : 'gcsFileFormat', $pb.PbFieldType.OE, defaultOrMaker: GcsFileFormat.GCS_FILE_FORMAT_UNSPECIFIED, valueOf: GcsFileFormat.valueOf, enumValues: GcsFileFormat.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'fileRotationMb', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'fileRotationInterval', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'fileRotationInterval', subBuilder: $1738.Duration.create)
     ..aOM<AvroFileFormat>(100, _omitFieldNames ? '' : 'avroFileFormat', subBuilder: AvroFileFormat.create)
     ..aOM<JsonFileFormat>(101, _omitFieldNames ? '' : 'jsonFileFormat', subBuilder: JsonFileFormat.create)
     ..hasRequiredFields = false
@@ -2450,15 +2450,15 @@ class GcsDestinationConfig extends $pb.GeneratedMessage {
   /// The maximum duration for which new events are added before a file is
   /// closed and a new file is created.
   @$pb.TagNumber(4)
-  $1737.Duration get fileRotationInterval => $_getN(3);
+  $1738.Duration get fileRotationInterval => $_getN(3);
   @$pb.TagNumber(4)
-  set fileRotationInterval($1737.Duration v) { setField(4, v); }
+  set fileRotationInterval($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFileRotationInterval() => $_has(3);
   @$pb.TagNumber(4)
   void clearFileRotationInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureFileRotationInterval() => $_ensure(3);
+  $1738.Duration ensureFileRotationInterval() => $_ensure(3);
 
   /// AVRO file format configuration.
   @$pb.TagNumber(100)
@@ -2695,8 +2695,8 @@ enum Stream_BackfillStrategy {
 class Stream extends $pb.GeneratedMessage {
   factory Stream({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     SourceConfig? sourceConfig,
@@ -2754,8 +2754,8 @@ class Stream extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Stream', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datastream.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [101, 102])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Stream.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.datastream.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOM<SourceConfig>(6, _omitFieldNames ? '' : 'sourceConfig', subBuilder: SourceConfig.create)
@@ -2803,27 +2803,27 @@ class Stream extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the stream.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last update time of the stream.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels.
   @$pb.TagNumber(4)
@@ -2909,7 +2909,7 @@ class Error extends $pb.GeneratedMessage {
     $core.String? reason,
     $core.String? errorUuid,
     $core.String? message,
-    $1775.Timestamp? errorTime,
+    $1776.Timestamp? errorTime,
     $core.Map<$core.String, $core.String>? details,
   }) {
     final $result = create();
@@ -2938,7 +2938,7 @@ class Error extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'reason')
     ..aOS(2, _omitFieldNames ? '' : 'errorUuid')
     ..aOS(3, _omitFieldNames ? '' : 'message')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'errorTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'errorTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'details', entryClassName: 'Error.DetailsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.datastream.v1alpha1'))
     ..hasRequiredFields = false
   ;
@@ -2997,15 +2997,15 @@ class Error extends $pb.GeneratedMessage {
 
   /// The time when the error occurred.
   @$pb.TagNumber(4)
-  $1775.Timestamp get errorTime => $_getN(3);
+  $1776.Timestamp get errorTime => $_getN(3);
   @$pb.TagNumber(4)
-  set errorTime($1775.Timestamp v) { setField(4, v); }
+  set errorTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasErrorTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearErrorTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureErrorTime() => $_ensure(3);
+  $1776.Timestamp ensureErrorTime() => $_ensure(3);
 
   /// Additional information about the error.
   @$pb.TagNumber(5)

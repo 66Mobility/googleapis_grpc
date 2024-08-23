@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
 import 'clouddms_platform_logs.pbenum.dart';
 
 export 'clouddms_platform_logs.pbenum.dart';
@@ -100,10 +100,10 @@ class LoggedMigrationJob extends $pb.GeneratedMessage {
     $core.String? dumpPath,
     $core.String? source,
     $core.String? destination,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     LoggedMigrationJob_ConnectivityType? connectivityType,
-    $1795.Status? error,
-    $1775.Timestamp? endTime,
+    $1796.Status? error,
+    $1776.Timestamp? endTime,
     DatabaseType? sourceDatabase,
     DatabaseType? destinationDatabase,
   }) {
@@ -169,10 +169,10 @@ class LoggedMigrationJob extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'dumpPath')
     ..aOS(8, _omitFieldNames ? '' : 'source')
     ..aOS(9, _omitFieldNames ? '' : 'destination')
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..e<LoggedMigrationJob_ConnectivityType>(11, _omitFieldNames ? '' : 'connectivityType', $pb.PbFieldType.OE, defaultOrMaker: LoggedMigrationJob_ConnectivityType.CONNECTIVITY_TYPE_UNSPECIFIED, valueOf: LoggedMigrationJob_ConnectivityType.valueOf, enumValues: LoggedMigrationJob_ConnectivityType.values)
-    ..aOM<$1795.Status>(12, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1796.Status>(12, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<DatabaseType>(14, _omitFieldNames ? '' : 'sourceDatabase', subBuilder: DatabaseType.create)
     ..aOM<DatabaseType>(15, _omitFieldNames ? '' : 'destinationDatabase', subBuilder: DatabaseType.create)
     ..hasRequiredFields = false
@@ -285,15 +285,15 @@ class LoggedMigrationJob extends $pb.GeneratedMessage {
 
   /// Required. the migration job duration in seconds.
   @$pb.TagNumber(10)
-  $1737.Duration get duration => $_getN(9);
+  $1738.Duration get duration => $_getN(9);
   @$pb.TagNumber(10)
-  set duration($1737.Duration v) { setField(10, v); }
+  set duration($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDuration() => $_has(9);
   @$pb.TagNumber(10)
   void clearDuration() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureDuration() => $_ensure(9);
+  $1738.Duration ensureDuration() => $_ensure(9);
 
   /// Required. Type of connectivity to source database.
   @$pb.TagNumber(11)
@@ -307,28 +307,28 @@ class LoggedMigrationJob extends $pb.GeneratedMessage {
 
   /// Required. The error details in case of state FAILED.
   @$pb.TagNumber(12)
-  $1795.Status get error => $_getN(11);
+  $1796.Status get error => $_getN(11);
   @$pb.TagNumber(12)
-  set error($1795.Status v) { setField(12, v); }
+  set error($1796.Status v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasError() => $_has(11);
   @$pb.TagNumber(12)
   void clearError() => clearField(12);
   @$pb.TagNumber(12)
-  $1795.Status ensureError() => $_ensure(11);
+  $1796.Status ensureError() => $_ensure(11);
 
   /// Required. The time when this migration job was completed. Should only be set when the
   /// phase of the migration job is COMPLETED.
   @$pb.TagNumber(13)
-  $1775.Timestamp get endTime => $_getN(12);
+  $1776.Timestamp get endTime => $_getN(12);
   @$pb.TagNumber(13)
-  set endTime($1775.Timestamp v) { setField(13, v); }
+  set endTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasEndTime() => $_has(12);
   @$pb.TagNumber(13)
   void clearEndTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureEndTime() => $_ensure(12);
+  $1776.Timestamp ensureEndTime() => $_ensure(12);
 
   /// Required. The indicative source database.
   @$pb.TagNumber(14)
@@ -609,7 +609,7 @@ class LoggedConnectionProfile extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? labels,
     LoggedConnectionProfile_State? state,
     $core.String? displayName,
-    $1795.Status? error,
+    $1796.Status? error,
     DatabaseProvider? provider,
     MySqlConnectionProfile? mysql,
     PostgreSqlConnectionProfile? postgresql,
@@ -666,7 +666,7 @@ class LoggedConnectionProfile extends $pb.GeneratedMessage {
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'LoggedConnectionProfile.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.clouddms.logging.v1'))
     ..e<LoggedConnectionProfile_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: LoggedConnectionProfile_State.STATE_UNSPECIFIED, valueOf: LoggedConnectionProfile_State.valueOf, enumValues: LoggedConnectionProfile_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..e<DatabaseProvider>(6, _omitFieldNames ? '' : 'provider', $pb.PbFieldType.OE, defaultOrMaker: DatabaseProvider.DATABASE_PROVIDER_UNSPECIFIED, valueOf: DatabaseProvider.valueOf, enumValues: DatabaseProvider.values)
     ..aOM<MySqlConnectionProfile>(100, _omitFieldNames ? '' : 'mysql', subBuilder: MySqlConnectionProfile.create)
     ..aOM<PostgreSqlConnectionProfile>(101, _omitFieldNames ? '' : 'postgresql', subBuilder: PostgreSqlConnectionProfile.create)
@@ -735,15 +735,15 @@ class LoggedConnectionProfile extends $pb.GeneratedMessage {
 
   /// The error details in case of state FAILED.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 
   /// The database provider.
   @$pb.TagNumber(6)
@@ -814,7 +814,7 @@ enum MigrationJobEventLog_OriginalCause {
 class MigrationJobEventLog extends $pb.GeneratedMessage {
   factory MigrationJobEventLog({
     LoggedMigrationJob? migrationJob,
-    $1775.Timestamp? occurrenceTimestamp,
+    $1776.Timestamp? occurrenceTimestamp,
     $core.int? code,
     $core.String? textMessage,
     $core.int? originalCode,
@@ -853,7 +853,7 @@ class MigrationJobEventLog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MigrationJobEventLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.logging.v1'), createEmptyInstance: create)
     ..oo(0, [200, 201])
     ..aOM<LoggedMigrationJob>(1, _omitFieldNames ? '' : 'migrationJob', subBuilder: LoggedMigrationJob.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'occurrenceTimestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'occurrenceTimestamp', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'code', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'textMessage')
     ..a<$core.int>(200, _omitFieldNames ? '' : 'originalCode', $pb.PbFieldType.O3)
@@ -899,15 +899,15 @@ class MigrationJobEventLog extends $pb.GeneratedMessage {
 
   /// Timestamp of the event
   @$pb.TagNumber(2)
-  $1775.Timestamp get occurrenceTimestamp => $_getN(1);
+  $1776.Timestamp get occurrenceTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set occurrenceTimestamp($1775.Timestamp v) { setField(2, v); }
+  set occurrenceTimestamp($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOccurrenceTimestamp() => $_has(1);
   @$pb.TagNumber(2)
   void clearOccurrenceTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureOccurrenceTimestamp() => $_ensure(1);
+  $1776.Timestamp ensureOccurrenceTimestamp() => $_ensure(1);
 
   /// Event code
   @$pb.TagNumber(3)
@@ -960,7 +960,7 @@ enum ConnectionProfileEventLog_OriginalCause {
 class ConnectionProfileEventLog extends $pb.GeneratedMessage {
   factory ConnectionProfileEventLog({
     LoggedConnectionProfile? connectionProfile,
-    $1775.Timestamp? occurrenceTimestamp,
+    $1776.Timestamp? occurrenceTimestamp,
     $core.int? code,
     $core.String? textMessage,
     $core.int? originalCode,
@@ -999,7 +999,7 @@ class ConnectionProfileEventLog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConnectionProfileEventLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.logging.v1'), createEmptyInstance: create)
     ..oo(0, [200, 201])
     ..aOM<LoggedConnectionProfile>(1, _omitFieldNames ? '' : 'connectionProfile', subBuilder: LoggedConnectionProfile.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'occurrenceTimestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'occurrenceTimestamp', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'code', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'textMessage')
     ..a<$core.int>(200, _omitFieldNames ? '' : 'originalCode', $pb.PbFieldType.O3)
@@ -1045,15 +1045,15 @@ class ConnectionProfileEventLog extends $pb.GeneratedMessage {
 
   /// Timestamp of the event
   @$pb.TagNumber(2)
-  $1775.Timestamp get occurrenceTimestamp => $_getN(1);
+  $1776.Timestamp get occurrenceTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set occurrenceTimestamp($1775.Timestamp v) { setField(2, v); }
+  set occurrenceTimestamp($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOccurrenceTimestamp() => $_has(1);
   @$pb.TagNumber(2)
   void clearOccurrenceTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureOccurrenceTimestamp() => $_ensure(1);
+  $1776.Timestamp ensureOccurrenceTimestamp() => $_ensure(1);
 
   /// Event code
   @$pb.TagNumber(3)
@@ -1104,7 +1104,7 @@ class LoggedPrivateConnection extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     LoggedPrivateConnection_State? state,
-    $1795.Status? error,
+    $1796.Status? error,
     VpcPeeringConfig? vpcPeeringConfig,
   }) {
     final $result = create();
@@ -1137,7 +1137,7 @@ class LoggedPrivateConnection extends $pb.GeneratedMessage {
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'LoggedPrivateConnection.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.clouddms.logging.v1'))
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..e<LoggedPrivateConnection_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: LoggedPrivateConnection_State.STATE_UNSPECIFIED, valueOf: LoggedPrivateConnection_State.valueOf, enumValues: LoggedPrivateConnection_State.values)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<VpcPeeringConfig>(100, _omitFieldNames ? '' : 'vpcPeeringConfig', subBuilder: VpcPeeringConfig.create)
     ..hasRequiredFields = false
   ;
@@ -1199,15 +1199,15 @@ class LoggedPrivateConnection extends $pb.GeneratedMessage {
 
   /// The error details in case of state FAILED.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 
   /// VPC Peering Config.
   @$pb.TagNumber(100)
@@ -1300,7 +1300,7 @@ enum PrivateConnectionEventLog_OriginalCause {
 class PrivateConnectionEventLog extends $pb.GeneratedMessage {
   factory PrivateConnectionEventLog({
     LoggedPrivateConnection? privateConnection,
-    $1775.Timestamp? occurrenceTimestamp,
+    $1776.Timestamp? occurrenceTimestamp,
     $core.int? code,
     $core.String? textMessage,
     $core.int? originalCode,
@@ -1339,7 +1339,7 @@ class PrivateConnectionEventLog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivateConnectionEventLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.logging.v1'), createEmptyInstance: create)
     ..oo(0, [200, 201])
     ..aOM<LoggedPrivateConnection>(1, _omitFieldNames ? '' : 'privateConnection', subBuilder: LoggedPrivateConnection.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'occurrenceTimestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'occurrenceTimestamp', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'code', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'textMessage')
     ..a<$core.int>(200, _omitFieldNames ? '' : 'originalCode', $pb.PbFieldType.O3)
@@ -1385,15 +1385,15 @@ class PrivateConnectionEventLog extends $pb.GeneratedMessage {
 
   /// Timestamp of the event.
   @$pb.TagNumber(2)
-  $1775.Timestamp get occurrenceTimestamp => $_getN(1);
+  $1776.Timestamp get occurrenceTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set occurrenceTimestamp($1775.Timestamp v) { setField(2, v); }
+  set occurrenceTimestamp($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOccurrenceTimestamp() => $_has(1);
   @$pb.TagNumber(2)
   void clearOccurrenceTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureOccurrenceTimestamp() => $_ensure(1);
+  $1776.Timestamp ensureOccurrenceTimestamp() => $_ensure(1);
 
   /// Event code.
   @$pb.TagNumber(3)

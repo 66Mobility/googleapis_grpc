@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../protobuf/struct.pb.dart' as $1735;
 import 'device.pb.dart' as $1619;
 import 'site.pb.dart' as $1620;
 
@@ -238,7 +238,7 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandRequest({
     $core.String? name,
     $core.String? command,
-    $1734.Struct? params,
+    $1735.Struct? params,
   }) {
     final $result = create();
     if (name != null) {
@@ -259,7 +259,7 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteDeviceCommandRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'command')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'params', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'params', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -308,21 +308,21 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
 
   /// The command message to execute, represented as a Struct.
   @$pb.TagNumber(3)
-  $1734.Struct get params => $_getN(2);
+  $1735.Struct get params => $_getN(2);
   @$pb.TagNumber(3)
-  set params($1734.Struct v) { setField(3, v); }
+  set params($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParams() => $_has(2);
   @$pb.TagNumber(3)
   void clearParams() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureParams() => $_ensure(2);
+  $1735.Struct ensureParams() => $_ensure(2);
 }
 
 /// Response message for SmartDeviceManagementService.ExecuteDeviceCommand
 class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandResponse({
-    $1734.Struct? results,
+    $1735.Struct? results,
   }) {
     final $result = create();
     if (results != null) {
@@ -335,7 +335,7 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteDeviceCommandResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'results', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'results', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -362,15 +362,15 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
 
   /// The results of executing the command.
   @$pb.TagNumber(1)
-  $1734.Struct get results => $_getN(0);
+  $1735.Struct get results => $_getN(0);
   @$pb.TagNumber(1)
-  set results($1734.Struct v) { setField(1, v); }
+  set results($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResults() => $_has(0);
   @$pb.TagNumber(1)
   void clearResults() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureResults() => $_ensure(0);
+  $1735.Struct ensureResults() => $_ensure(0);
 }
 
 /// Request message for SmartDeviceManagementService.GetStructure

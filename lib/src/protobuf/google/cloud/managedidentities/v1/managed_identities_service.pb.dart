@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resource.pb.dart' as $1107;
 
 /// Represents the metadata of the long-running operation.
 class OpMetadata extends $pb.GeneratedMessage {
   factory OpMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.bool? requestedCancellation,
@@ -53,8 +53,8 @@ class OpMetadata extends $pb.GeneratedMessage {
   factory OpMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OpMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.managedidentities.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOB(5, _omitFieldNames ? '' : 'requestedCancellation')
@@ -85,27 +85,27 @@ class OpMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -608,7 +608,7 @@ class GetDomainRequest extends $pb.GeneratedMessage {
 /// [UpdateDomain][google.cloud.managedidentities.v1.UpdateDomain]
 class UpdateDomainRequest extends $pb.GeneratedMessage {
   factory UpdateDomainRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1107.Domain? domain,
   }) {
     final $result = create();
@@ -625,7 +625,7 @@ class UpdateDomainRequest extends $pb.GeneratedMessage {
   factory UpdateDomainRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDomainRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.managedidentities.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1107.Domain>(2, _omitFieldNames ? '' : 'domain', subBuilder: $1107.Domain.create)
     ..hasRequiredFields = false
   ;
@@ -658,15 +658,15 @@ class UpdateDomainRequest extends $pb.GeneratedMessage {
   ///  * `locations`
   ///  * `authorized_networks`
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Domain message with updated fields. Only supported fields specified in
   /// update_mask are updated.

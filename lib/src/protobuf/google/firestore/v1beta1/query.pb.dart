@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/wrappers.pb.dart' as $1780;
+import '../../protobuf/wrappers.pb.dart' as $1781;
 import 'document.pb.dart' as $1610;
 import 'query.pbenum.dart';
 
@@ -600,7 +600,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     $core.Iterable<StructuredQuery_CollectionSelector>? from,
     StructuredQuery_Filter? where,
     $core.Iterable<StructuredQuery_Order>? orderBy,
-    $1780.Int32Value? limit,
+    $1781.Int32Value? limit,
     $core.int? offset,
     Cursor? startAt,
     Cursor? endAt,
@@ -641,7 +641,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     ..pc<StructuredQuery_CollectionSelector>(2, _omitFieldNames ? '' : 'from', $pb.PbFieldType.PM, subBuilder: StructuredQuery_CollectionSelector.create)
     ..aOM<StructuredQuery_Filter>(3, _omitFieldNames ? '' : 'where', subBuilder: StructuredQuery_Filter.create)
     ..pc<StructuredQuery_Order>(4, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.PM, subBuilder: StructuredQuery_Order.create)
-    ..aOM<$1780.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $1781.Int32Value.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
     ..aOM<Cursor>(7, _omitFieldNames ? '' : 'startAt', subBuilder: Cursor.create)
     ..aOM<Cursor>(8, _omitFieldNames ? '' : 'endAt', subBuilder: Cursor.create)
@@ -723,15 +723,15 @@ class StructuredQuery extends $pb.GeneratedMessage {
   ///  Applies after all other constraints.
   ///  Must be >= 0 if specified.
   @$pb.TagNumber(5)
-  $1780.Int32Value get limit => $_getN(4);
+  $1781.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(5)
-  set limit($1780.Int32Value v) { setField(5, v); }
+  set limit($1781.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLimit() => $_has(4);
   @$pb.TagNumber(5)
   void clearLimit() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int32Value ensureLimit() => $_ensure(4);
+  $1781.Int32Value ensureLimit() => $_ensure(4);
 
   ///  The number of results to skip.
   ///

@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'conversation/intent.pb.dart' as $1797;
-import 'conversation/prompt/prompt.pb.dart' as $1793;
-import 'conversation/scene.pb.dart' as $1796;
-import 'conversation/scene.pbenum.dart' as $1796;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'conversation/intent.pb.dart' as $1798;
+import 'conversation/prompt/prompt.pb.dart' as $1794;
+import 'conversation/scene.pb.dart' as $1797;
+import 'conversation/scene.pbenum.dart' as $1797;
 
 enum ExecutionEvent_EventData {
   userInput, 
@@ -44,9 +44,9 @@ enum ExecutionEvent_EventData {
 /// https://developers.google.com/assistant/conversational/actions.
 class ExecutionEvent extends $pb.GeneratedMessage {
   factory ExecutionEvent({
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     ExecutionState? executionState,
-    $1795.Status? status,
+    $1796.Status? status,
     UserConversationInput? userInput,
     IntentMatch? intentMatch,
     ConditionsEvaluated? conditionsEvaluated,
@@ -138,9 +138,9 @@ class ExecutionEvent extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecutionEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..oo(0, [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ExecutionState>(2, _omitFieldNames ? '' : 'executionState', subBuilder: ExecutionState.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOM<UserConversationInput>(4, _omitFieldNames ? '' : 'userInput', subBuilder: UserConversationInput.create)
     ..aOM<IntentMatch>(5, _omitFieldNames ? '' : 'intentMatch', subBuilder: IntentMatch.create)
     ..aOM<ConditionsEvaluated>(6, _omitFieldNames ? '' : 'conditionsEvaluated', subBuilder: ConditionsEvaluated.create)
@@ -184,15 +184,15 @@ class ExecutionEvent extends $pb.GeneratedMessage {
 
   /// Timestamp when the event happened.
   @$pb.TagNumber(1)
-  $1775.Timestamp get eventTime => $_getN(0);
+  $1776.Timestamp get eventTime => $_getN(0);
   @$pb.TagNumber(1)
-  set eventTime($1775.Timestamp v) { setField(1, v); }
+  set eventTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEventTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEventTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEventTime() => $_ensure(0);
+  $1776.Timestamp ensureEventTime() => $_ensure(0);
 
   /// State of the execution during this event.
   @$pb.TagNumber(2)
@@ -208,15 +208,15 @@ class ExecutionEvent extends $pb.GeneratedMessage {
 
   /// Resulting status of particular execution step.
   @$pb.TagNumber(3)
-  $1795.Status get status => $_getN(2);
+  $1796.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($1795.Status v) { setField(3, v); }
+  set status($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureStatus() => $_ensure(2);
+  $1796.Status ensureStatus() => $_ensure(2);
 
   /// User input handling event.
   @$pb.TagNumber(4)
@@ -388,11 +388,11 @@ class ExecutionEvent extends $pb.GeneratedMessage {
 class ExecutionState extends $pb.GeneratedMessage {
   factory ExecutionState({
     $core.String? currentSceneId,
-    $1734.Struct? sessionStorage,
+    $1735.Struct? sessionStorage,
     Slots? slots,
-    $1734.Struct? userStorage,
-    $core.Iterable<$1793.Prompt>? promptQueue,
-    $1734.Struct? householdStorage,
+    $1735.Struct? userStorage,
+    $core.Iterable<$1794.Prompt>? promptQueue,
+    $1735.Struct? householdStorage,
   }) {
     final $result = create();
     if (currentSceneId != null) {
@@ -421,11 +421,11 @@ class ExecutionState extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecutionState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'currentSceneId')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'sessionStorage', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'sessionStorage', subBuilder: $1735.Struct.create)
     ..aOM<Slots>(5, _omitFieldNames ? '' : 'slots', subBuilder: Slots.create)
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'userStorage', subBuilder: $1734.Struct.create)
-    ..pc<$1793.Prompt>(7, _omitFieldNames ? '' : 'promptQueue', $pb.PbFieldType.PM, subBuilder: $1793.Prompt.create)
-    ..aOM<$1734.Struct>(8, _omitFieldNames ? '' : 'householdStorage', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'userStorage', subBuilder: $1735.Struct.create)
+    ..pc<$1794.Prompt>(7, _omitFieldNames ? '' : 'promptQueue', $pb.PbFieldType.PM, subBuilder: $1794.Prompt.create)
+    ..aOM<$1735.Struct>(8, _omitFieldNames ? '' : 'householdStorage', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -463,15 +463,15 @@ class ExecutionState extends $pb.GeneratedMessage {
   /// State of the session storage:
   /// https://developers.google.com/assistant/conversational/storage-session
   @$pb.TagNumber(2)
-  $1734.Struct get sessionStorage => $_getN(1);
+  $1735.Struct get sessionStorage => $_getN(1);
   @$pb.TagNumber(2)
-  set sessionStorage($1734.Struct v) { setField(2, v); }
+  set sessionStorage($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSessionStorage() => $_has(1);
   @$pb.TagNumber(2)
   void clearSessionStorage() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureSessionStorage() => $_ensure(1);
+  $1735.Struct ensureSessionStorage() => $_ensure(1);
 
   /// State of the slots filling, if applicable:
   /// https://developers.google.com/assistant/conversational/scenes#slot_filling
@@ -489,40 +489,40 @@ class ExecutionState extends $pb.GeneratedMessage {
   /// State of the user storage:
   /// https://developers.google.com/assistant/conversational/storage-user
   @$pb.TagNumber(6)
-  $1734.Struct get userStorage => $_getN(3);
+  $1735.Struct get userStorage => $_getN(3);
   @$pb.TagNumber(6)
-  set userStorage($1734.Struct v) { setField(6, v); }
+  set userStorage($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUserStorage() => $_has(3);
   @$pb.TagNumber(6)
   void clearUserStorage() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureUserStorage() => $_ensure(3);
+  $1735.Struct ensureUserStorage() => $_ensure(3);
 
   /// Prompt queue:
   /// https://developers.google.com/assistant/conversational/prompts
   @$pb.TagNumber(7)
-  $core.List<$1793.Prompt> get promptQueue => $_getList(4);
+  $core.List<$1794.Prompt> get promptQueue => $_getList(4);
 
   /// State of the home storage:
   /// https://developers.google.com/assistant/conversational/storage-home
   @$pb.TagNumber(8)
-  $1734.Struct get householdStorage => $_getN(5);
+  $1735.Struct get householdStorage => $_getN(5);
   @$pb.TagNumber(8)
-  set householdStorage($1734.Struct v) { setField(8, v); }
+  set householdStorage($1735.Struct v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasHouseholdStorage() => $_has(5);
   @$pb.TagNumber(8)
   void clearHouseholdStorage() => clearField(8);
   @$pb.TagNumber(8)
-  $1734.Struct ensureHouseholdStorage() => $_ensure(5);
+  $1735.Struct ensureHouseholdStorage() => $_ensure(5);
 }
 
 /// Represents the current state of a the scene's slots.
 class Slots extends $pb.GeneratedMessage {
   factory Slots({
-    $1796.SlotFillingStatus? status,
-    $core.Map<$core.String, $1796.Slot>? slots,
+    $1797.SlotFillingStatus? status,
+    $core.Map<$core.String, $1797.Slot>? slots,
   }) {
     final $result = create();
     if (status != null) {
@@ -538,8 +538,8 @@ class Slots extends $pb.GeneratedMessage {
   factory Slots.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Slots', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..e<$1796.SlotFillingStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1796.SlotFillingStatus.UNSPECIFIED, valueOf: $1796.SlotFillingStatus.valueOf, enumValues: $1796.SlotFillingStatus.values)
-    ..m<$core.String, $1796.Slot>(3, _omitFieldNames ? '' : 'slots', entryClassName: 'Slots.SlotsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1796.Slot.create, valueDefaultOrMaker: $1796.Slot.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2'))
+    ..e<$1797.SlotFillingStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1797.SlotFillingStatus.UNSPECIFIED, valueOf: $1797.SlotFillingStatus.valueOf, enumValues: $1797.SlotFillingStatus.values)
+    ..m<$core.String, $1797.Slot>(3, _omitFieldNames ? '' : 'slots', entryClassName: 'Slots.SlotsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1797.Slot.create, valueDefaultOrMaker: $1797.Slot.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2'))
     ..hasRequiredFields = false
   ;
 
@@ -566,9 +566,9 @@ class Slots extends $pb.GeneratedMessage {
 
   /// The current status of slot filling.
   @$pb.TagNumber(2)
-  $1796.SlotFillingStatus get status => $_getN(0);
+  $1797.SlotFillingStatus get status => $_getN(0);
   @$pb.TagNumber(2)
-  set status($1796.SlotFillingStatus v) { setField(2, v); }
+  set status($1797.SlotFillingStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(2)
@@ -576,7 +576,7 @@ class Slots extends $pb.GeneratedMessage {
 
   /// The slots associated with the current scene.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $1796.Slot> get slots => $_getMap(1);
+  $core.Map<$core.String, $1797.Slot> get slots => $_getMap(1);
 }
 
 /// Information related to user input.
@@ -653,7 +653,7 @@ class IntentMatch extends $pb.GeneratedMessage {
     $core.String? intentId,
     $core.String? handler,
     $core.String? nextSceneId,
-    $core.Map<$core.String, $1797.IntentParameterValue>? intentParameters,
+    $core.Map<$core.String, $1798.IntentParameterValue>? intentParameters,
   }) {
     final $result = create();
     if (intentId != null) {
@@ -678,7 +678,7 @@ class IntentMatch extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'intentId')
     ..aOS(3, _omitFieldNames ? '' : 'handler')
     ..aOS(4, _omitFieldNames ? '' : 'nextSceneId')
-    ..m<$core.String, $1797.IntentParameterValue>(5, _omitFieldNames ? '' : 'intentParameters', entryClassName: 'IntentMatch.IntentParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1797.IntentParameterValue.create, valueDefaultOrMaker: $1797.IntentParameterValue.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2'))
+    ..m<$core.String, $1798.IntentParameterValue>(5, _omitFieldNames ? '' : 'intentParameters', entryClassName: 'IntentMatch.IntentParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1798.IntentParameterValue.create, valueDefaultOrMaker: $1798.IntentParameterValue.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2'))
     ..hasRequiredFields = false
   ;
 
@@ -735,7 +735,7 @@ class IntentMatch extends $pb.GeneratedMessage {
 
   /// Parameters of intent which triggered this interaction.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $1797.IntentParameterValue> get intentParameters => $_getMap(3);
+  $core.Map<$core.String, $1798.IntentParameterValue> get intentParameters => $_getMap(3);
 }
 
 /// Results of conditions evaluation:
@@ -1100,7 +1100,7 @@ class WebhookResponse extends $pb.GeneratedMessage {
 /// https://developers.google.com/assistant/conversational/scenes#slot_filling
 class SlotMatch extends $pb.GeneratedMessage {
   factory SlotMatch({
-    $core.Map<$core.String, $1797.IntentParameterValue>? nluParameters,
+    $core.Map<$core.String, $1798.IntentParameterValue>? nluParameters,
   }) {
     final $result = create();
     if (nluParameters != null) {
@@ -1113,7 +1113,7 @@ class SlotMatch extends $pb.GeneratedMessage {
   factory SlotMatch.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlotMatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..m<$core.String, $1797.IntentParameterValue>(2, _omitFieldNames ? '' : 'nluParameters', entryClassName: 'SlotMatch.NluParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1797.IntentParameterValue.create, valueDefaultOrMaker: $1797.IntentParameterValue.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2'))
+    ..m<$core.String, $1798.IntentParameterValue>(2, _omitFieldNames ? '' : 'nluParameters', entryClassName: 'SlotMatch.NluParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1798.IntentParameterValue.create, valueDefaultOrMaker: $1798.IntentParameterValue.getDefault, packageName: const $pb.PackageName('google.actions.sdk.v2'))
     ..hasRequiredFields = false
   ;
 
@@ -1140,7 +1140,7 @@ class SlotMatch extends $pb.GeneratedMessage {
 
   /// Parameters extracted by NLU from user input.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1797.IntentParameterValue> get nluParameters => $_getMap(0);
+  $core.Map<$core.String, $1798.IntentParameterValue> get nluParameters => $_getMap(0);
 }
 
 /// Information about currently requested slot:
@@ -1148,7 +1148,7 @@ class SlotMatch extends $pb.GeneratedMessage {
 class SlotRequested extends $pb.GeneratedMessage {
   factory SlotRequested({
     $core.String? slot,
-    $1793.Prompt? prompt,
+    $1794.Prompt? prompt,
   }) {
     final $result = create();
     if (slot != null) {
@@ -1165,7 +1165,7 @@ class SlotRequested extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlotRequested', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'slot')
-    ..aOM<$1793.Prompt>(3, _omitFieldNames ? '' : 'prompt', subBuilder: $1793.Prompt.create)
+    ..aOM<$1794.Prompt>(3, _omitFieldNames ? '' : 'prompt', subBuilder: $1794.Prompt.create)
     ..hasRequiredFields = false
   ;
 
@@ -1202,15 +1202,15 @@ class SlotRequested extends $pb.GeneratedMessage {
 
   /// Slot prompt.
   @$pb.TagNumber(3)
-  $1793.Prompt get prompt => $_getN(1);
+  $1794.Prompt get prompt => $_getN(1);
   @$pb.TagNumber(3)
-  set prompt($1793.Prompt v) { setField(3, v); }
+  set prompt($1794.Prompt v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPrompt() => $_has(1);
   @$pb.TagNumber(3)
   void clearPrompt() => clearField(3);
   @$pb.TagNumber(3)
-  $1793.Prompt ensurePrompt() => $_ensure(1);
+  $1794.Prompt ensurePrompt() => $_ensure(1);
 }
 
 /// Event which happens after webhook validation was finished for slot(s):

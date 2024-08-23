@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3285;
-import '../enums/criterion_type.pbenum.dart' as $3555;
+import '../common/criteria.pb.dart' as $3286;
+import '../enums/criterion_type.pbenum.dart' as $3556;
 
 enum CustomerNegativeCriterion_Criterion {
   contentLabel, 
@@ -33,16 +33,16 @@ enum CustomerNegativeCriterion_Criterion {
 class CustomerNegativeCriterion extends $pb.GeneratedMessage {
   factory CustomerNegativeCriterion({
     $core.String? resourceName,
-    $3555.CriterionTypeEnum_CriterionType? type,
-    $3285.ContentLabelInfo? contentLabel,
-    $3285.MobileApplicationInfo? mobileApplication,
-    $3285.MobileAppCategoryInfo? mobileAppCategory,
-    $3285.PlacementInfo? placement,
-    $3285.YouTubeVideoInfo? youtubeVideo,
-    $3285.YouTubeChannelInfo? youtubeChannel,
+    $3556.CriterionTypeEnum_CriterionType? type,
+    $3286.ContentLabelInfo? contentLabel,
+    $3286.MobileApplicationInfo? mobileApplication,
+    $3286.MobileAppCategoryInfo? mobileAppCategory,
+    $3286.PlacementInfo? placement,
+    $3286.YouTubeVideoInfo? youtubeVideo,
+    $3286.YouTubeChannelInfo? youtubeChannel,
     $fixnum.Int64? id,
-    $3285.NegativeKeywordListInfo? negativeKeywordList,
-    $3285.IpBlockInfo? ipBlock,
+    $3286.NegativeKeywordListInfo? negativeKeywordList,
+    $3286.IpBlockInfo? ipBlock,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -98,16 +98,16 @@ class CustomerNegativeCriterion extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerNegativeCriterion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [4, 5, 6, 7, 8, 9, 11, 12])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3555.CriterionTypeEnum_CriterionType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3555.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $3555.CriterionTypeEnum_CriterionType.valueOf, enumValues: $3555.CriterionTypeEnum_CriterionType.values)
-    ..aOM<$3285.ContentLabelInfo>(4, _omitFieldNames ? '' : 'contentLabel', subBuilder: $3285.ContentLabelInfo.create)
-    ..aOM<$3285.MobileApplicationInfo>(5, _omitFieldNames ? '' : 'mobileApplication', subBuilder: $3285.MobileApplicationInfo.create)
-    ..aOM<$3285.MobileAppCategoryInfo>(6, _omitFieldNames ? '' : 'mobileAppCategory', subBuilder: $3285.MobileAppCategoryInfo.create)
-    ..aOM<$3285.PlacementInfo>(7, _omitFieldNames ? '' : 'placement', subBuilder: $3285.PlacementInfo.create)
-    ..aOM<$3285.YouTubeVideoInfo>(8, _omitFieldNames ? '' : 'youtubeVideo', subBuilder: $3285.YouTubeVideoInfo.create)
-    ..aOM<$3285.YouTubeChannelInfo>(9, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3285.YouTubeChannelInfo.create)
+    ..e<$3556.CriterionTypeEnum_CriterionType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3556.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $3556.CriterionTypeEnum_CriterionType.valueOf, enumValues: $3556.CriterionTypeEnum_CriterionType.values)
+    ..aOM<$3286.ContentLabelInfo>(4, _omitFieldNames ? '' : 'contentLabel', subBuilder: $3286.ContentLabelInfo.create)
+    ..aOM<$3286.MobileApplicationInfo>(5, _omitFieldNames ? '' : 'mobileApplication', subBuilder: $3286.MobileApplicationInfo.create)
+    ..aOM<$3286.MobileAppCategoryInfo>(6, _omitFieldNames ? '' : 'mobileAppCategory', subBuilder: $3286.MobileAppCategoryInfo.create)
+    ..aOM<$3286.PlacementInfo>(7, _omitFieldNames ? '' : 'placement', subBuilder: $3286.PlacementInfo.create)
+    ..aOM<$3286.YouTubeVideoInfo>(8, _omitFieldNames ? '' : 'youtubeVideo', subBuilder: $3286.YouTubeVideoInfo.create)
+    ..aOM<$3286.YouTubeChannelInfo>(9, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3286.YouTubeChannelInfo.create)
     ..aInt64(10, _omitFieldNames ? '' : 'id')
-    ..aOM<$3285.NegativeKeywordListInfo>(11, _omitFieldNames ? '' : 'negativeKeywordList', subBuilder: $3285.NegativeKeywordListInfo.create)
-    ..aOM<$3285.IpBlockInfo>(12, _omitFieldNames ? '' : 'ipBlock', subBuilder: $3285.IpBlockInfo.create)
+    ..aOM<$3286.NegativeKeywordListInfo>(11, _omitFieldNames ? '' : 'negativeKeywordList', subBuilder: $3286.NegativeKeywordListInfo.create)
+    ..aOM<$3286.IpBlockInfo>(12, _omitFieldNames ? '' : 'ipBlock', subBuilder: $3286.IpBlockInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -150,9 +150,9 @@ class CustomerNegativeCriterion extends $pb.GeneratedMessage {
 
   /// Output only. The type of the criterion.
   @$pb.TagNumber(3)
-  $3555.CriterionTypeEnum_CriterionType get type => $_getN(1);
+  $3556.CriterionTypeEnum_CriterionType get type => $_getN(1);
   @$pb.TagNumber(3)
-  set type($3555.CriterionTypeEnum_CriterionType v) { setField(3, v); }
+  set type($3556.CriterionTypeEnum_CriterionType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(3)
@@ -160,75 +160,75 @@ class CustomerNegativeCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. ContentLabel.
   @$pb.TagNumber(4)
-  $3285.ContentLabelInfo get contentLabel => $_getN(2);
+  $3286.ContentLabelInfo get contentLabel => $_getN(2);
   @$pb.TagNumber(4)
-  set contentLabel($3285.ContentLabelInfo v) { setField(4, v); }
+  set contentLabel($3286.ContentLabelInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasContentLabel() => $_has(2);
   @$pb.TagNumber(4)
   void clearContentLabel() => clearField(4);
   @$pb.TagNumber(4)
-  $3285.ContentLabelInfo ensureContentLabel() => $_ensure(2);
+  $3286.ContentLabelInfo ensureContentLabel() => $_ensure(2);
 
   /// Immutable. MobileApplication.
   @$pb.TagNumber(5)
-  $3285.MobileApplicationInfo get mobileApplication => $_getN(3);
+  $3286.MobileApplicationInfo get mobileApplication => $_getN(3);
   @$pb.TagNumber(5)
-  set mobileApplication($3285.MobileApplicationInfo v) { setField(5, v); }
+  set mobileApplication($3286.MobileApplicationInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMobileApplication() => $_has(3);
   @$pb.TagNumber(5)
   void clearMobileApplication() => clearField(5);
   @$pb.TagNumber(5)
-  $3285.MobileApplicationInfo ensureMobileApplication() => $_ensure(3);
+  $3286.MobileApplicationInfo ensureMobileApplication() => $_ensure(3);
 
   /// Immutable. MobileAppCategory.
   @$pb.TagNumber(6)
-  $3285.MobileAppCategoryInfo get mobileAppCategory => $_getN(4);
+  $3286.MobileAppCategoryInfo get mobileAppCategory => $_getN(4);
   @$pb.TagNumber(6)
-  set mobileAppCategory($3285.MobileAppCategoryInfo v) { setField(6, v); }
+  set mobileAppCategory($3286.MobileAppCategoryInfo v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMobileAppCategory() => $_has(4);
   @$pb.TagNumber(6)
   void clearMobileAppCategory() => clearField(6);
   @$pb.TagNumber(6)
-  $3285.MobileAppCategoryInfo ensureMobileAppCategory() => $_ensure(4);
+  $3286.MobileAppCategoryInfo ensureMobileAppCategory() => $_ensure(4);
 
   /// Immutable. Placement.
   @$pb.TagNumber(7)
-  $3285.PlacementInfo get placement => $_getN(5);
+  $3286.PlacementInfo get placement => $_getN(5);
   @$pb.TagNumber(7)
-  set placement($3285.PlacementInfo v) { setField(7, v); }
+  set placement($3286.PlacementInfo v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPlacement() => $_has(5);
   @$pb.TagNumber(7)
   void clearPlacement() => clearField(7);
   @$pb.TagNumber(7)
-  $3285.PlacementInfo ensurePlacement() => $_ensure(5);
+  $3286.PlacementInfo ensurePlacement() => $_ensure(5);
 
   /// Immutable. YouTube Video.
   @$pb.TagNumber(8)
-  $3285.YouTubeVideoInfo get youtubeVideo => $_getN(6);
+  $3286.YouTubeVideoInfo get youtubeVideo => $_getN(6);
   @$pb.TagNumber(8)
-  set youtubeVideo($3285.YouTubeVideoInfo v) { setField(8, v); }
+  set youtubeVideo($3286.YouTubeVideoInfo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasYoutubeVideo() => $_has(6);
   @$pb.TagNumber(8)
   void clearYoutubeVideo() => clearField(8);
   @$pb.TagNumber(8)
-  $3285.YouTubeVideoInfo ensureYoutubeVideo() => $_ensure(6);
+  $3286.YouTubeVideoInfo ensureYoutubeVideo() => $_ensure(6);
 
   /// Immutable. YouTube Channel.
   @$pb.TagNumber(9)
-  $3285.YouTubeChannelInfo get youtubeChannel => $_getN(7);
+  $3286.YouTubeChannelInfo get youtubeChannel => $_getN(7);
   @$pb.TagNumber(9)
-  set youtubeChannel($3285.YouTubeChannelInfo v) { setField(9, v); }
+  set youtubeChannel($3286.YouTubeChannelInfo v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasYoutubeChannel() => $_has(7);
   @$pb.TagNumber(9)
   void clearYoutubeChannel() => clearField(9);
   @$pb.TagNumber(9)
-  $3285.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(7);
+  $3286.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(7);
 
   /// Output only. The ID of the criterion.
   @$pb.TagNumber(10)
@@ -242,27 +242,27 @@ class CustomerNegativeCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. NegativeKeywordList.
   @$pb.TagNumber(11)
-  $3285.NegativeKeywordListInfo get negativeKeywordList => $_getN(9);
+  $3286.NegativeKeywordListInfo get negativeKeywordList => $_getN(9);
   @$pb.TagNumber(11)
-  set negativeKeywordList($3285.NegativeKeywordListInfo v) { setField(11, v); }
+  set negativeKeywordList($3286.NegativeKeywordListInfo v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasNegativeKeywordList() => $_has(9);
   @$pb.TagNumber(11)
   void clearNegativeKeywordList() => clearField(11);
   @$pb.TagNumber(11)
-  $3285.NegativeKeywordListInfo ensureNegativeKeywordList() => $_ensure(9);
+  $3286.NegativeKeywordListInfo ensureNegativeKeywordList() => $_ensure(9);
 
   /// Immutable. IPBLock
   @$pb.TagNumber(12)
-  $3285.IpBlockInfo get ipBlock => $_getN(10);
+  $3286.IpBlockInfo get ipBlock => $_getN(10);
   @$pb.TagNumber(12)
-  set ipBlock($3285.IpBlockInfo v) { setField(12, v); }
+  set ipBlock($3286.IpBlockInfo v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasIpBlock() => $_has(10);
   @$pb.TagNumber(12)
   void clearIpBlock() => clearField(12);
   @$pb.TagNumber(12)
-  $3285.IpBlockInfo ensureIpBlock() => $_ensure(10);
+  $3286.IpBlockInfo ensureIpBlock() => $_ensure(10);
 }
 
 

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import 'logged_backup.pb.dart' as $4531;
-import 'logged_backup_plan.pb.dart' as $4530;
-import 'logged_restore.pb.dart' as $4533;
-import 'logged_restore_plan.pb.dart' as $4532;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import 'logged_backup.pb.dart' as $4533;
+import 'logged_backup_plan.pb.dart' as $4532;
+import 'logged_restore.pb.dart' as $4535;
+import 'logged_restore_plan.pb.dart' as $4534;
 import 'logging.pbenum.dart';
 
 export 'logging.pbenum.dart';
@@ -30,9 +30,9 @@ class BackupPlanChange extends $pb.GeneratedMessage {
   factory BackupPlanChange({
     $core.String? backupPlan,
     ChangeType? changeType,
-    $2209.FieldMask? updateMask,
-    $4530.LoggedBackupPlan? inputBackupPlan,
-    $1795.Status? error,
+    $2210.FieldMask? updateMask,
+    $4532.LoggedBackupPlan? inputBackupPlan,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (backupPlan != null) {
@@ -59,9 +59,9 @@ class BackupPlanChange extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupPlanChange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'backupPlan')
     ..e<ChangeType>(2, _omitFieldNames ? '' : 'changeType', $pb.PbFieldType.OE, defaultOrMaker: ChangeType.CHANGE_TYPE_UNSPECIFIED, valueOf: ChangeType.valueOf, enumValues: ChangeType.values)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$4530.LoggedBackupPlan>(4, _omitFieldNames ? '' : 'inputBackupPlan', subBuilder: $4530.LoggedBackupPlan.create)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$4532.LoggedBackupPlan>(4, _omitFieldNames ? '' : 'inputBackupPlan', subBuilder: $4532.LoggedBackupPlan.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -110,40 +110,40 @@ class BackupPlanChange extends $pb.GeneratedMessage {
 
   /// Modification details.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 
   /// The input BackupPlan resource with the updated fields populated to update
   /// the source BackupPlan to.
   @$pb.TagNumber(4)
-  $4530.LoggedBackupPlan get inputBackupPlan => $_getN(3);
+  $4532.LoggedBackupPlan get inputBackupPlan => $_getN(3);
   @$pb.TagNumber(4)
-  set inputBackupPlan($4530.LoggedBackupPlan v) { setField(4, v); }
+  set inputBackupPlan($4532.LoggedBackupPlan v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInputBackupPlan() => $_has(3);
   @$pb.TagNumber(4)
   void clearInputBackupPlan() => clearField(4);
   @$pb.TagNumber(4)
-  $4530.LoggedBackupPlan ensureInputBackupPlan() => $_ensure(3);
+  $4532.LoggedBackupPlan ensureInputBackupPlan() => $_ensure(3);
 
   /// The error code and message.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 }
 
 /// use case 2
@@ -154,9 +154,9 @@ class BackupChange extends $pb.GeneratedMessage {
     $core.String? backup,
     ChangeType? changeType,
     $core.bool? scheduled,
-    $2209.FieldMask? updateMask,
-    $4531.LoggedBackup? inputBackup,
-    $1795.Status? error,
+    $2210.FieldMask? updateMask,
+    $4533.LoggedBackup? inputBackup,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (backup != null) {
@@ -187,9 +187,9 @@ class BackupChange extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'backup')
     ..e<ChangeType>(2, _omitFieldNames ? '' : 'changeType', $pb.PbFieldType.OE, defaultOrMaker: ChangeType.CHANGE_TYPE_UNSPECIFIED, valueOf: ChangeType.valueOf, enumValues: ChangeType.values)
     ..aOB(3, _omitFieldNames ? '' : 'scheduled')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$4531.LoggedBackup>(5, _omitFieldNames ? '' : 'inputBackup', subBuilder: $4531.LoggedBackup.create)
-    ..aOM<$1795.Status>(6, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$4533.LoggedBackup>(5, _omitFieldNames ? '' : 'inputBackup', subBuilder: $4533.LoggedBackup.create)
+    ..aOM<$1796.Status>(6, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -248,41 +248,41 @@ class BackupChange extends $pb.GeneratedMessage {
 
   /// Modification details.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The input Backup resource with the updated fields populated to update
   /// the source Backup to, or the backup created automatically from retention
   /// policy.
   @$pb.TagNumber(5)
-  $4531.LoggedBackup get inputBackup => $_getN(4);
+  $4533.LoggedBackup get inputBackup => $_getN(4);
   @$pb.TagNumber(5)
-  set inputBackup($4531.LoggedBackup v) { setField(5, v); }
+  set inputBackup($4533.LoggedBackup v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInputBackup() => $_has(4);
   @$pb.TagNumber(5)
   void clearInputBackup() => clearField(5);
   @$pb.TagNumber(5)
-  $4531.LoggedBackup ensureInputBackup() => $_ensure(4);
+  $4533.LoggedBackup ensureInputBackup() => $_ensure(4);
 
   /// The error code and message.
   @$pb.TagNumber(6)
-  $1795.Status get error => $_getN(5);
+  $1796.Status get error => $_getN(5);
   @$pb.TagNumber(6)
-  set error($1795.Status v) { setField(6, v); }
+  set error($1796.Status v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasError() => $_has(5);
   @$pb.TagNumber(6)
   void clearError() => clearField(6);
   @$pb.TagNumber(6)
-  $1795.Status ensureError() => $_ensure(5);
+  $1796.Status ensureError() => $_ensure(5);
 }
 
 /// use case 3
@@ -292,9 +292,9 @@ class RestorePlanChange extends $pb.GeneratedMessage {
   factory RestorePlanChange({
     $core.String? restorePlan,
     ChangeType? changeType,
-    $2209.FieldMask? updateMask,
-    $4532.LoggedRestorePlan? inputRestorePlan,
-    $1795.Status? error,
+    $2210.FieldMask? updateMask,
+    $4534.LoggedRestorePlan? inputRestorePlan,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (restorePlan != null) {
@@ -321,9 +321,9 @@ class RestorePlanChange extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestorePlanChange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'restorePlan')
     ..e<ChangeType>(2, _omitFieldNames ? '' : 'changeType', $pb.PbFieldType.OE, defaultOrMaker: ChangeType.CHANGE_TYPE_UNSPECIFIED, valueOf: ChangeType.valueOf, enumValues: ChangeType.values)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$4532.LoggedRestorePlan>(4, _omitFieldNames ? '' : 'inputRestorePlan', subBuilder: $4532.LoggedRestorePlan.create)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$4534.LoggedRestorePlan>(4, _omitFieldNames ? '' : 'inputRestorePlan', subBuilder: $4534.LoggedRestorePlan.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -372,40 +372,40 @@ class RestorePlanChange extends $pb.GeneratedMessage {
 
   /// Modification details.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 
   /// The input RestorePlan resource with the updated fields populated to update
   /// the source RestorePlan to.
   @$pb.TagNumber(4)
-  $4532.LoggedRestorePlan get inputRestorePlan => $_getN(3);
+  $4534.LoggedRestorePlan get inputRestorePlan => $_getN(3);
   @$pb.TagNumber(4)
-  set inputRestorePlan($4532.LoggedRestorePlan v) { setField(4, v); }
+  set inputRestorePlan($4534.LoggedRestorePlan v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInputRestorePlan() => $_has(3);
   @$pb.TagNumber(4)
   void clearInputRestorePlan() => clearField(4);
   @$pb.TagNumber(4)
-  $4532.LoggedRestorePlan ensureInputRestorePlan() => $_ensure(3);
+  $4534.LoggedRestorePlan ensureInputRestorePlan() => $_ensure(3);
 
   /// The error code and message.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 }
 
 /// use case 4
@@ -415,9 +415,9 @@ class RestoreChange extends $pb.GeneratedMessage {
   factory RestoreChange({
     $core.String? restore,
     ChangeType? changeType,
-    $2209.FieldMask? updateMask,
-    $4533.LoggedRestore? inputRestore,
-    $1795.Status? error,
+    $2210.FieldMask? updateMask,
+    $4535.LoggedRestore? inputRestore,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (restore != null) {
@@ -444,9 +444,9 @@ class RestoreChange extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestoreChange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'restore')
     ..e<ChangeType>(2, _omitFieldNames ? '' : 'changeType', $pb.PbFieldType.OE, defaultOrMaker: ChangeType.CHANGE_TYPE_UNSPECIFIED, valueOf: ChangeType.valueOf, enumValues: ChangeType.values)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$4533.LoggedRestore>(4, _omitFieldNames ? '' : 'inputRestore', subBuilder: $4533.LoggedRestore.create)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$4535.LoggedRestore>(4, _omitFieldNames ? '' : 'inputRestore', subBuilder: $4535.LoggedRestore.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -495,40 +495,40 @@ class RestoreChange extends $pb.GeneratedMessage {
 
   /// Modification details.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 
   /// The input Restore resource with the updated fields populated to update
   /// the source Restore to.
   @$pb.TagNumber(4)
-  $4533.LoggedRestore get inputRestore => $_getN(3);
+  $4535.LoggedRestore get inputRestore => $_getN(3);
   @$pb.TagNumber(4)
-  set inputRestore($4533.LoggedRestore v) { setField(4, v); }
+  set inputRestore($4535.LoggedRestore v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInputRestore() => $_has(3);
   @$pb.TagNumber(4)
   void clearInputRestore() => clearField(4);
   @$pb.TagNumber(4)
-  $4533.LoggedRestore ensureInputRestore() => $_ensure(3);
+  $4535.LoggedRestore ensureInputRestore() => $_ensure(3);
 
   /// The error code and message.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 }
 
 

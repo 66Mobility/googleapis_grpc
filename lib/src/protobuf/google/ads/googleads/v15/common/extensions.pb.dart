@@ -14,21 +14,21 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/app_store.pbenum.dart' as $1889;
-import '../enums/call_conversion_reporting_state.pbenum.dart' as $1839;
-import '../enums/price_extension_price_qualifier.pbenum.dart' as $1876;
-import '../enums/price_extension_price_unit.pbenum.dart' as $1877;
-import '../enums/price_extension_type.pbenum.dart' as $1875;
-import '../enums/promotion_extension_discount_modifier.pbenum.dart' as $1872;
-import '../enums/promotion_extension_occasion.pbenum.dart' as $1873;
-import 'custom_parameter.pb.dart' as $1888;
-import 'feed_common.pb.dart' as $1866;
+import '../enums/app_store.pbenum.dart' as $1890;
+import '../enums/call_conversion_reporting_state.pbenum.dart' as $1840;
+import '../enums/price_extension_price_qualifier.pbenum.dart' as $1877;
+import '../enums/price_extension_price_unit.pbenum.dart' as $1878;
+import '../enums/price_extension_type.pbenum.dart' as $1876;
+import '../enums/promotion_extension_discount_modifier.pbenum.dart' as $1873;
+import '../enums/promotion_extension_occasion.pbenum.dart' as $1874;
+import 'custom_parameter.pb.dart' as $1889;
+import 'feed_common.pb.dart' as $1867;
 
 /// Represents an App extension.
 class AppFeedItem extends $pb.GeneratedMessage {
   factory AppFeedItem({
-    $1889.AppStoreEnum_AppStore? appStore,
-    $core.Iterable<$1888.CustomParameter>? urlCustomParameters,
+    $1890.AppStoreEnum_AppStore? appStore,
+    $core.Iterable<$1889.CustomParameter>? urlCustomParameters,
     $core.String? linkText,
     $core.String? appId,
     $core.Iterable<$core.String>? finalUrls,
@@ -68,8 +68,8 @@ class AppFeedItem extends $pb.GeneratedMessage {
   factory AppFeedItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppFeedItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1889.AppStoreEnum_AppStore>(3, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $1889.AppStoreEnum_AppStore.UNSPECIFIED, valueOf: $1889.AppStoreEnum_AppStore.valueOf, enumValues: $1889.AppStoreEnum_AppStore.values)
-    ..pc<$1888.CustomParameter>(7, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1888.CustomParameter.create)
+    ..e<$1890.AppStoreEnum_AppStore>(3, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $1890.AppStoreEnum_AppStore.UNSPECIFIED, valueOf: $1890.AppStoreEnum_AppStore.valueOf, enumValues: $1890.AppStoreEnum_AppStore.values)
+    ..pc<$1889.CustomParameter>(7, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1889.CustomParameter.create)
     ..aOS(9, _omitFieldNames ? '' : 'linkText')
     ..aOS(10, _omitFieldNames ? '' : 'appId')
     ..pPS(11, _omitFieldNames ? '' : 'finalUrls')
@@ -103,9 +103,9 @@ class AppFeedItem extends $pb.GeneratedMessage {
   /// The application store that the target application belongs to.
   /// This field is required.
   @$pb.TagNumber(3)
-  $1889.AppStoreEnum_AppStore get appStore => $_getN(0);
+  $1890.AppStoreEnum_AppStore get appStore => $_getN(0);
   @$pb.TagNumber(3)
-  set appStore($1889.AppStoreEnum_AppStore v) { setField(3, v); }
+  set appStore($1890.AppStoreEnum_AppStore v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAppStore() => $_has(0);
   @$pb.TagNumber(3)
@@ -114,7 +114,7 @@ class AppFeedItem extends $pb.GeneratedMessage {
   /// A list of mappings to be used for substituting URL custom parameter tags in
   /// the tracking_url_template, final_urls, and/or final_mobile_urls.
   @$pb.TagNumber(7)
-  $core.List<$1888.CustomParameter> get urlCustomParameters => $_getList(1);
+  $core.List<$1889.CustomParameter> get urlCustomParameters => $_getList(1);
 
   /// The visible text displayed when the link is rendered in an ad.
   /// This string must not be empty, and the length of this string should
@@ -173,7 +173,7 @@ class AppFeedItem extends $pb.GeneratedMessage {
 /// Represents a Call extension.
 class CallFeedItem extends $pb.GeneratedMessage {
   factory CallFeedItem({
-    $1839.CallConversionReportingStateEnum_CallConversionReportingState? callConversionReportingState,
+    $1840.CallConversionReportingStateEnum_CallConversionReportingState? callConversionReportingState,
     $core.String? phoneNumber,
     $core.String? countryCode,
     $core.bool? callTrackingEnabled,
@@ -206,7 +206,7 @@ class CallFeedItem extends $pb.GeneratedMessage {
   factory CallFeedItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CallFeedItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1839.CallConversionReportingStateEnum_CallConversionReportingState>(6, _omitFieldNames ? '' : 'callConversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $1839.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $1839.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $1839.CallConversionReportingStateEnum_CallConversionReportingState.values)
+    ..e<$1840.CallConversionReportingStateEnum_CallConversionReportingState>(6, _omitFieldNames ? '' : 'callConversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $1840.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $1840.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $1840.CallConversionReportingStateEnum_CallConversionReportingState.values)
     ..aOS(7, _omitFieldNames ? '' : 'phoneNumber')
     ..aOS(8, _omitFieldNames ? '' : 'countryCode')
     ..aOB(9, _omitFieldNames ? '' : 'callTrackingEnabled')
@@ -240,9 +240,9 @@ class CallFeedItem extends $pb.GeneratedMessage {
   /// conversion setting (or just have call conversion disabled), or following
   /// the account level setting.
   @$pb.TagNumber(6)
-  $1839.CallConversionReportingStateEnum_CallConversionReportingState get callConversionReportingState => $_getN(0);
+  $1840.CallConversionReportingStateEnum_CallConversionReportingState get callConversionReportingState => $_getN(0);
   @$pb.TagNumber(6)
-  set callConversionReportingState($1839.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(6, v); }
+  set callConversionReportingState($1840.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCallConversionReportingState() => $_has(0);
   @$pb.TagNumber(6)
@@ -821,8 +821,8 @@ class TextMessageFeedItem extends $pb.GeneratedMessage {
 /// Represents a Price extension.
 class PriceFeedItem extends $pb.GeneratedMessage {
   factory PriceFeedItem({
-    $1875.PriceExtensionTypeEnum_PriceExtensionType? type,
-    $1876.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier? priceQualifier,
+    $1876.PriceExtensionTypeEnum_PriceExtensionType? type,
+    $1877.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier? priceQualifier,
     $core.Iterable<PriceOffer>? priceOfferings,
     $core.String? trackingUrlTemplate,
     $core.String? languageCode,
@@ -854,8 +854,8 @@ class PriceFeedItem extends $pb.GeneratedMessage {
   factory PriceFeedItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PriceFeedItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1875.PriceExtensionTypeEnum_PriceExtensionType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1875.PriceExtensionTypeEnum_PriceExtensionType.UNSPECIFIED, valueOf: $1875.PriceExtensionTypeEnum_PriceExtensionType.valueOf, enumValues: $1875.PriceExtensionTypeEnum_PriceExtensionType.values)
-    ..e<$1876.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier>(2, _omitFieldNames ? '' : 'priceQualifier', $pb.PbFieldType.OE, defaultOrMaker: $1876.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.UNSPECIFIED, valueOf: $1876.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.valueOf, enumValues: $1876.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.values)
+    ..e<$1876.PriceExtensionTypeEnum_PriceExtensionType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1876.PriceExtensionTypeEnum_PriceExtensionType.UNSPECIFIED, valueOf: $1876.PriceExtensionTypeEnum_PriceExtensionType.valueOf, enumValues: $1876.PriceExtensionTypeEnum_PriceExtensionType.values)
+    ..e<$1877.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier>(2, _omitFieldNames ? '' : 'priceQualifier', $pb.PbFieldType.OE, defaultOrMaker: $1877.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.UNSPECIFIED, valueOf: $1877.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.valueOf, enumValues: $1877.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.values)
     ..pc<PriceOffer>(5, _omitFieldNames ? '' : 'priceOfferings', $pb.PbFieldType.PM, subBuilder: PriceOffer.create)
     ..aOS(7, _omitFieldNames ? '' : 'trackingUrlTemplate')
     ..aOS(8, _omitFieldNames ? '' : 'languageCode')
@@ -886,9 +886,9 @@ class PriceFeedItem extends $pb.GeneratedMessage {
 
   /// Price extension type of this extension.
   @$pb.TagNumber(1)
-  $1875.PriceExtensionTypeEnum_PriceExtensionType get type => $_getN(0);
+  $1876.PriceExtensionTypeEnum_PriceExtensionType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($1875.PriceExtensionTypeEnum_PriceExtensionType v) { setField(1, v); }
+  set type($1876.PriceExtensionTypeEnum_PriceExtensionType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -896,9 +896,9 @@ class PriceFeedItem extends $pb.GeneratedMessage {
 
   /// Price qualifier for all offers of this price extension.
   @$pb.TagNumber(2)
-  $1876.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier get priceQualifier => $_getN(1);
+  $1877.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier get priceQualifier => $_getN(1);
   @$pb.TagNumber(2)
-  set priceQualifier($1876.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier v) { setField(2, v); }
+  set priceQualifier($1877.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPriceQualifier() => $_has(1);
   @$pb.TagNumber(2)
@@ -942,8 +942,8 @@ class PriceFeedItem extends $pb.GeneratedMessage {
 /// Represents one price offer in a price extension.
 class PriceOffer extends $pb.GeneratedMessage {
   factory PriceOffer({
-    $1866.Money? price,
-    $1877.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit? unit,
+    $1867.Money? price,
+    $1878.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit? unit,
     $core.String? header,
     $core.String? description,
     $core.Iterable<$core.String>? finalUrls,
@@ -975,8 +975,8 @@ class PriceOffer extends $pb.GeneratedMessage {
   factory PriceOffer.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PriceOffer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..aOM<$1866.Money>(3, _omitFieldNames ? '' : 'price', subBuilder: $1866.Money.create)
-    ..e<$1877.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit>(4, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE, defaultOrMaker: $1877.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.UNSPECIFIED, valueOf: $1877.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.valueOf, enumValues: $1877.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.values)
+    ..aOM<$1867.Money>(3, _omitFieldNames ? '' : 'price', subBuilder: $1867.Money.create)
+    ..e<$1878.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit>(4, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE, defaultOrMaker: $1878.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.UNSPECIFIED, valueOf: $1878.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.valueOf, enumValues: $1878.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.values)
     ..aOS(7, _omitFieldNames ? '' : 'header')
     ..aOS(8, _omitFieldNames ? '' : 'description')
     ..pPS(9, _omitFieldNames ? '' : 'finalUrls')
@@ -1007,21 +1007,21 @@ class PriceOffer extends $pb.GeneratedMessage {
 
   /// Price value of this offer.
   @$pb.TagNumber(3)
-  $1866.Money get price => $_getN(0);
+  $1867.Money get price => $_getN(0);
   @$pb.TagNumber(3)
-  set price($1866.Money v) { setField(3, v); }
+  set price($1867.Money v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPrice() => $_has(0);
   @$pb.TagNumber(3)
   void clearPrice() => clearField(3);
   @$pb.TagNumber(3)
-  $1866.Money ensurePrice() => $_ensure(0);
+  $1867.Money ensurePrice() => $_ensure(0);
 
   /// Price unit for this offer.
   @$pb.TagNumber(4)
-  $1877.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit get unit => $_getN(1);
+  $1878.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit get unit => $_getN(1);
   @$pb.TagNumber(4)
-  set unit($1877.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit v) { setField(4, v); }
+  set unit($1878.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUnit() => $_has(1);
   @$pb.TagNumber(4)
@@ -1071,11 +1071,11 @@ enum PromotionFeedItem_PromotionTrigger {
 /// Represents a Promotion extension.
 class PromotionFeedItem extends $pb.GeneratedMessage {
   factory PromotionFeedItem({
-    $1872.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier? discountModifier,
-    $1866.Money? moneyAmountOff,
-    $1866.Money? ordersOverAmount,
-    $1873.PromotionExtensionOccasionEnum_PromotionExtensionOccasion? occasion,
-    $core.Iterable<$1888.CustomParameter>? urlCustomParameters,
+    $1873.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier? discountModifier,
+    $1867.Money? moneyAmountOff,
+    $1867.Money? ordersOverAmount,
+    $1874.PromotionExtensionOccasionEnum_PromotionExtensionOccasion? occasion,
+    $core.Iterable<$1889.CustomParameter>? urlCustomParameters,
     $core.String? promotionTarget,
     $fixnum.Int64? percentOff,
     $core.String? promotionCode,
@@ -1152,11 +1152,11 @@ class PromotionFeedItem extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PromotionFeedItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..oo(0, [4, 17])
     ..oo(1, [6, 18])
-    ..e<$1872.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier>(2, _omitFieldNames ? '' : 'discountModifier', $pb.PbFieldType.OE, defaultOrMaker: $1872.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.UNSPECIFIED, valueOf: $1872.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.valueOf, enumValues: $1872.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.values)
-    ..aOM<$1866.Money>(4, _omitFieldNames ? '' : 'moneyAmountOff', subBuilder: $1866.Money.create)
-    ..aOM<$1866.Money>(6, _omitFieldNames ? '' : 'ordersOverAmount', subBuilder: $1866.Money.create)
-    ..e<$1873.PromotionExtensionOccasionEnum_PromotionExtensionOccasion>(9, _omitFieldNames ? '' : 'occasion', $pb.PbFieldType.OE, defaultOrMaker: $1873.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.UNSPECIFIED, valueOf: $1873.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.valueOf, enumValues: $1873.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.values)
-    ..pc<$1888.CustomParameter>(13, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1888.CustomParameter.create)
+    ..e<$1873.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier>(2, _omitFieldNames ? '' : 'discountModifier', $pb.PbFieldType.OE, defaultOrMaker: $1873.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.UNSPECIFIED, valueOf: $1873.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.valueOf, enumValues: $1873.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.values)
+    ..aOM<$1867.Money>(4, _omitFieldNames ? '' : 'moneyAmountOff', subBuilder: $1867.Money.create)
+    ..aOM<$1867.Money>(6, _omitFieldNames ? '' : 'ordersOverAmount', subBuilder: $1867.Money.create)
+    ..e<$1874.PromotionExtensionOccasionEnum_PromotionExtensionOccasion>(9, _omitFieldNames ? '' : 'occasion', $pb.PbFieldType.OE, defaultOrMaker: $1874.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.UNSPECIFIED, valueOf: $1874.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.valueOf, enumValues: $1874.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.values)
+    ..pc<$1889.CustomParameter>(13, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1889.CustomParameter.create)
     ..aOS(16, _omitFieldNames ? '' : 'promotionTarget')
     ..aInt64(17, _omitFieldNames ? '' : 'percentOff')
     ..aOS(18, _omitFieldNames ? '' : 'promotionCode')
@@ -1199,9 +1199,9 @@ class PromotionFeedItem extends $pb.GeneratedMessage {
 
   /// Enum that modifies the qualification of the discount.
   @$pb.TagNumber(2)
-  $1872.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier get discountModifier => $_getN(0);
+  $1873.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier get discountModifier => $_getN(0);
   @$pb.TagNumber(2)
-  set discountModifier($1872.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier v) { setField(2, v); }
+  set discountModifier($1873.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDiscountModifier() => $_has(0);
   @$pb.TagNumber(2)
@@ -1210,36 +1210,36 @@ class PromotionFeedItem extends $pb.GeneratedMessage {
   /// Money amount off for discount in the promotion.
   /// Either this or percent_off is required.
   @$pb.TagNumber(4)
-  $1866.Money get moneyAmountOff => $_getN(1);
+  $1867.Money get moneyAmountOff => $_getN(1);
   @$pb.TagNumber(4)
-  set moneyAmountOff($1866.Money v) { setField(4, v); }
+  set moneyAmountOff($1867.Money v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMoneyAmountOff() => $_has(1);
   @$pb.TagNumber(4)
   void clearMoneyAmountOff() => clearField(4);
   @$pb.TagNumber(4)
-  $1866.Money ensureMoneyAmountOff() => $_ensure(1);
+  $1867.Money ensureMoneyAmountOff() => $_ensure(1);
 
   /// The amount the total order needs to be for the user to be eligible for
   /// the promotion.
   @$pb.TagNumber(6)
-  $1866.Money get ordersOverAmount => $_getN(2);
+  $1867.Money get ordersOverAmount => $_getN(2);
   @$pb.TagNumber(6)
-  set ordersOverAmount($1866.Money v) { setField(6, v); }
+  set ordersOverAmount($1867.Money v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOrdersOverAmount() => $_has(2);
   @$pb.TagNumber(6)
   void clearOrdersOverAmount() => clearField(6);
   @$pb.TagNumber(6)
-  $1866.Money ensureOrdersOverAmount() => $_ensure(2);
+  $1867.Money ensureOrdersOverAmount() => $_ensure(2);
 
   /// The occasion the promotion was intended for.
   /// If an occasion is set, the redemption window will need to fall within
   /// the date range associated with the occasion.
   @$pb.TagNumber(9)
-  $1873.PromotionExtensionOccasionEnum_PromotionExtensionOccasion get occasion => $_getN(3);
+  $1874.PromotionExtensionOccasionEnum_PromotionExtensionOccasion get occasion => $_getN(3);
   @$pb.TagNumber(9)
-  set occasion($1873.PromotionExtensionOccasionEnum_PromotionExtensionOccasion v) { setField(9, v); }
+  set occasion($1874.PromotionExtensionOccasionEnum_PromotionExtensionOccasion v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasOccasion() => $_has(3);
   @$pb.TagNumber(9)
@@ -1248,7 +1248,7 @@ class PromotionFeedItem extends $pb.GeneratedMessage {
   /// A list of mappings to be used for substituting URL custom parameter tags in
   /// the tracking_url_template, final_urls, and/or final_mobile_urls.
   @$pb.TagNumber(13)
-  $core.List<$1888.CustomParameter> get urlCustomParameters => $_getList(4);
+  $core.List<$1889.CustomParameter> get urlCustomParameters => $_getList(4);
 
   /// A freeform description of what the promotion is targeting.
   /// This field is required.
@@ -1411,7 +1411,7 @@ class StructuredSnippetFeedItem extends $pb.GeneratedMessage {
 /// Represents a sitelink.
 class SitelinkFeedItem extends $pb.GeneratedMessage {
   factory SitelinkFeedItem({
-    $core.Iterable<$1888.CustomParameter>? urlCustomParameters,
+    $core.Iterable<$1889.CustomParameter>? urlCustomParameters,
     $core.String? linkText,
     $core.String? line1,
     $core.String? line2,
@@ -1452,7 +1452,7 @@ class SitelinkFeedItem extends $pb.GeneratedMessage {
   factory SitelinkFeedItem.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SitelinkFeedItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1888.CustomParameter>(7, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1888.CustomParameter.create)
+    ..pc<$1889.CustomParameter>(7, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $1889.CustomParameter.create)
     ..aOS(9, _omitFieldNames ? '' : 'linkText')
     ..aOS(10, _omitFieldNames ? '' : 'line1')
     ..aOS(11, _omitFieldNames ? '' : 'line2')
@@ -1487,7 +1487,7 @@ class SitelinkFeedItem extends $pb.GeneratedMessage {
   /// A list of mappings to be used for substituting URL custom parameter tags in
   /// the tracking_url_template, final_urls, and/or final_mobile_urls.
   @$pb.TagNumber(7)
-  $core.List<$1888.CustomParameter> get urlCustomParameters => $_getList(0);
+  $core.List<$1889.CustomParameter> get urlCustomParameters => $_getList(0);
 
   /// URL display text for the sitelink.
   /// The length of this string should be between 1 and 25, inclusive.

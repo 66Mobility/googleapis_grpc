@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'operations.pbenum.dart';
 
 export 'operations.pbenum.dart';
@@ -25,8 +25,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
     OperationMetadata_Type? operationType,
     $core.String? resource,
     $core.String? resourceUuid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -58,8 +58,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
     ..e<OperationMetadata_Type>(2, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: OperationMetadata_Type.TYPE_UNSPECIFIED, valueOf: OperationMetadata_Type.valueOf, enumValues: OperationMetadata_Type.values)
     ..aOS(3, _omitFieldNames ? '' : 'resource')
     ..aOS(4, _omitFieldNames ? '' : 'resourceUuid')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -127,28 +127,28 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was submitted to the server.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The time when the operation terminated, regardless of its
   /// success. This field is unset if the operation is still ongoing.
   @$pb.TagNumber(6)
-  $1775.Timestamp get endTime => $_getN(5);
+  $1776.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($1775.Timestamp v) { setField(6, v); }
+  set endTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEndTime() => $_ensure(5);
+  $1776.Timestamp ensureEndTime() => $_ensure(5);
 }
 
 

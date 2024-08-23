@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4281;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4282;
 
 /// Represents state information for a MetadataStore.
 class MetadataStore_MetadataStoreState extends $pb.GeneratedMessage {
@@ -127,9 +127,9 @@ class MetadataStore_DataplexConfig extends $pb.GeneratedMessage {
 class MetadataStore extends $pb.GeneratedMessage {
   factory MetadataStore({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4281.EncryptionSpec? encryptionSpec,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4282.EncryptionSpec? encryptionSpec,
     $core.String? description,
     MetadataStore_MetadataStoreState? state,
     MetadataStore_DataplexConfig? dataplexConfig,
@@ -164,9 +164,9 @@ class MetadataStore extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataStore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4281.EncryptionSpec>(5, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4282.EncryptionSpec>(5, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOM<MetadataStore_MetadataStoreState>(7, _omitFieldNames ? '' : 'state', subBuilder: MetadataStore_MetadataStoreState.create)
     ..aOM<MetadataStore_DataplexConfig>(8, _omitFieldNames ? '' : 'dataplexConfig', subBuilder: MetadataStore_DataplexConfig.create)
@@ -206,41 +206,41 @@ class MetadataStore extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this MetadataStore was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Timestamp when this MetadataStore was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Customer-managed encryption key spec for a Metadata Store. If set, this
   /// Metadata Store and all sub-resources of this Metadata Store are secured
   /// using this key.
   @$pb.TagNumber(5)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(3);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(3);
   @$pb.TagNumber(5)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(5, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEncryptionSpec() => $_has(3);
   @$pb.TagNumber(5)
   void clearEncryptionSpec() => clearField(5);
   @$pb.TagNumber(5)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(3);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(3);
 
   /// Description of the MetadataStore.
   @$pb.TagNumber(6)

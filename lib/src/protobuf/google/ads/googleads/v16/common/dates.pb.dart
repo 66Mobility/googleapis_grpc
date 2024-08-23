@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/month_of_year.pbenum.dart' as $2590;
+import '../enums/month_of_year.pbenum.dart' as $2591;
 
 /// A date range.
 class DateRange extends $pb.GeneratedMessage {
@@ -159,7 +159,7 @@ class YearMonthRange extends $pb.GeneratedMessage {
 class YearMonth extends $pb.GeneratedMessage {
   factory YearMonth({
     $fixnum.Int64? year,
-    $2590.MonthOfYearEnum_MonthOfYear? month,
+    $2591.MonthOfYearEnum_MonthOfYear? month,
   }) {
     final $result = create();
     if (year != null) {
@@ -176,7 +176,7 @@ class YearMonth extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'YearMonth', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'year')
-    ..e<$2590.MonthOfYearEnum_MonthOfYear>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.OE, defaultOrMaker: $2590.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $2590.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $2590.MonthOfYearEnum_MonthOfYear.values)
+    ..e<$2591.MonthOfYearEnum_MonthOfYear>(2, _omitFieldNames ? '' : 'month', $pb.PbFieldType.OE, defaultOrMaker: $2591.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $2591.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $2591.MonthOfYearEnum_MonthOfYear.values)
     ..hasRequiredFields = false
   ;
 
@@ -213,9 +213,9 @@ class YearMonth extends $pb.GeneratedMessage {
 
   /// The month of the year. (for example, FEBRUARY).
   @$pb.TagNumber(2)
-  $2590.MonthOfYearEnum_MonthOfYear get month => $_getN(1);
+  $2591.MonthOfYearEnum_MonthOfYear get month => $_getN(1);
   @$pb.TagNumber(2)
-  set month($2590.MonthOfYearEnum_MonthOfYear v) { setField(2, v); }
+  set month($2591.MonthOfYearEnum_MonthOfYear v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMonth() => $_has(1);
   @$pb.TagNumber(2)

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'export_evaluated_data_items_config.pb.dart' as $4318;
+import 'export_evaluated_data_items_config.pb.dart' as $4319;
 
 /// A TrainingJob that trains and uploads an AutoML Forecasting Model.
 class AutoMlForecasting extends $pb.GeneratedMessage {
@@ -644,7 +644,7 @@ class AutoMlForecastingInputs extends $pb.GeneratedMessage {
     $core.String? optimizationObjective,
     $fixnum.Int64? trainBudgetMilliNodeHours,
     $core.String? weightColumn,
-    $4318.ExportEvaluatedDataItemsConfig? exportEvaluatedDataItemsConfig,
+    $4319.ExportEvaluatedDataItemsConfig? exportEvaluatedDataItemsConfig,
     $core.Iterable<$core.double>? quantiles,
     $core.String? validationOptions,
     $core.Iterable<$core.String>? timeSeriesAttributeColumns,
@@ -721,7 +721,7 @@ class AutoMlForecastingInputs extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'optimizationObjective')
     ..aInt64(6, _omitFieldNames ? '' : 'trainBudgetMilliNodeHours')
     ..aOS(7, _omitFieldNames ? '' : 'weightColumn')
-    ..aOM<$4318.ExportEvaluatedDataItemsConfig>(15, _omitFieldNames ? '' : 'exportEvaluatedDataItemsConfig', subBuilder: $4318.ExportEvaluatedDataItemsConfig.create)
+    ..aOM<$4319.ExportEvaluatedDataItemsConfig>(15, _omitFieldNames ? '' : 'exportEvaluatedDataItemsConfig', subBuilder: $4319.ExportEvaluatedDataItemsConfig.create)
     ..p<$core.double>(16, _omitFieldNames ? '' : 'quantiles', $pb.PbFieldType.KD)
     ..aOS(17, _omitFieldNames ? '' : 'validationOptions')
     ..pPS(19, _omitFieldNames ? '' : 'timeSeriesAttributeColumns')
@@ -861,15 +861,15 @@ class AutoMlForecastingInputs extends $pb.GeneratedMessage {
   /// Configuration for exporting test set predictions to a BigQuery table. If
   /// this configuration is absent, then the export is not performed.
   @$pb.TagNumber(15)
-  $4318.ExportEvaluatedDataItemsConfig get exportEvaluatedDataItemsConfig => $_getN(7);
+  $4319.ExportEvaluatedDataItemsConfig get exportEvaluatedDataItemsConfig => $_getN(7);
   @$pb.TagNumber(15)
-  set exportEvaluatedDataItemsConfig($4318.ExportEvaluatedDataItemsConfig v) { setField(15, v); }
+  set exportEvaluatedDataItemsConfig($4319.ExportEvaluatedDataItemsConfig v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasExportEvaluatedDataItemsConfig() => $_has(7);
   @$pb.TagNumber(15)
   void clearExportEvaluatedDataItemsConfig() => clearField(15);
   @$pb.TagNumber(15)
-  $4318.ExportEvaluatedDataItemsConfig ensureExportEvaluatedDataItemsConfig() => $_ensure(7);
+  $4319.ExportEvaluatedDataItemsConfig ensureExportEvaluatedDataItemsConfig() => $_ensure(7);
 
   /// Quantiles to use for minimize-quantile-loss `optimization_objective`. Up to
   /// 5 quantiles are allowed of values between 0 and 1, exclusive. Required if

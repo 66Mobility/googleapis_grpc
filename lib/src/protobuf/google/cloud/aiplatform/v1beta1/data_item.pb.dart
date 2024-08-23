@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// A piece of data in a Dataset. Could be an image, a video, a document or plain
 /// text.
 class DataItem extends $pb.GeneratedMessage {
   factory DataItem({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
-    $1734.Value? payload,
-    $1775.Timestamp? updateTime,
+    $1735.Value? payload,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -62,10 +62,10 @@ class DataItem extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'DataItem.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$1734.Value>(4, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Value.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1735.Value>(4, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Value.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'etag')
     ..aOB(10, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(11, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -105,15 +105,15 @@ class DataItem extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this DataItem was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   ///  Optional. The labels with user-defined metadata to organize your DataItems.
   ///
@@ -135,27 +135,27 @@ class DataItem extends $pb.GeneratedMessage {
   /// schema's][google.cloud.aiplatform.v1beta1.Dataset.metadata_schema_uri]
   /// dataItemSchemaUri field.
   @$pb.TagNumber(4)
-  $1734.Value get payload => $_getN(3);
+  $1735.Value get payload => $_getN(3);
   @$pb.TagNumber(4)
-  set payload($1734.Value v) { setField(4, v); }
+  set payload($1735.Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPayload() => $_has(3);
   @$pb.TagNumber(4)
   void clearPayload() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Value ensurePayload() => $_ensure(3);
+  $1735.Value ensurePayload() => $_ensure(3);
 
   /// Output only. Timestamp when this DataItem was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. Used to perform consistent read-modify-write updates. If not set,
   /// a blind "overwrite" update happens.

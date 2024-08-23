@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/app_url_operating_system_type.pbenum.dart' as $2594;
+import '../enums/app_url_operating_system_type.pbenum.dart' as $2595;
 
 /// A URL for deep linking into an app for the given operating system.
 class FinalAppUrl extends $pb.GeneratedMessage {
   factory FinalAppUrl({
-    $2594.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType? osType,
+    $2595.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType? osType,
     $core.String? url,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class FinalAppUrl extends $pb.GeneratedMessage {
   factory FinalAppUrl.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FinalAppUrl', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2594.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType>(1, _omitFieldNames ? '' : 'osType', $pb.PbFieldType.OE, defaultOrMaker: $2594.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType.UNSPECIFIED, valueOf: $2594.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType.valueOf, enumValues: $2594.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType.values)
+    ..e<$2595.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType>(1, _omitFieldNames ? '' : 'osType', $pb.PbFieldType.OE, defaultOrMaker: $2595.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType.UNSPECIFIED, valueOf: $2595.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType.valueOf, enumValues: $2595.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType.values)
     ..aOS(3, _omitFieldNames ? '' : 'url')
     ..hasRequiredFields = false
   ;
@@ -63,9 +63,9 @@ class FinalAppUrl extends $pb.GeneratedMessage {
 
   /// The operating system targeted by this URL. Required.
   @$pb.TagNumber(1)
-  $2594.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType get osType => $_getN(0);
+  $2595.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType get osType => $_getN(0);
   @$pb.TagNumber(1)
-  set osType($2594.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType v) { setField(1, v); }
+  set osType($2595.AppUrlOperatingSystemTypeEnum_AppUrlOperatingSystemType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOsType() => $_has(0);
   @$pb.TagNumber(1)

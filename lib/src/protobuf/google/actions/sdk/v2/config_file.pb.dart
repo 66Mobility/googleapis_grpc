@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'account_linking_secret.pb.dart' as $1771;
-import 'action.pb.dart' as $1764;
-import 'interactionmodel/entity_set.pb.dart' as $1772;
-import 'interactionmodel/global_intent_event.pb.dart' as $1769;
-import 'interactionmodel/intent.pb.dart' as $1767;
-import 'interactionmodel/prompt/static_prompt.pb.dart' as $1749;
-import 'interactionmodel/scene.pb.dart' as $1770;
-import 'interactionmodel/type/type.pb.dart' as $1768;
-import 'manifest.pb.dart' as $1763;
-import 'settings.pb.dart' as $1765;
-import 'webhook.pb.dart' as $1766;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'account_linking_secret.pb.dart' as $1772;
+import 'action.pb.dart' as $1765;
+import 'interactionmodel/entity_set.pb.dart' as $1773;
+import 'interactionmodel/global_intent_event.pb.dart' as $1770;
+import 'interactionmodel/intent.pb.dart' as $1768;
+import 'interactionmodel/prompt/static_prompt.pb.dart' as $1750;
+import 'interactionmodel/scene.pb.dart' as $1771;
+import 'interactionmodel/type/type.pb.dart' as $1769;
+import 'manifest.pb.dart' as $1764;
+import 'settings.pb.dart' as $1766;
+import 'webhook.pb.dart' as $1767;
 
 /// Wrapper for repeated config files. Repeated fields cannot exist in a oneof.
 class ConfigFiles extends $pb.GeneratedMessage {
@@ -94,18 +94,18 @@ enum ConfigFile_File {
 class ConfigFile extends $pb.GeneratedMessage {
   factory ConfigFile({
     $core.String? filePath,
-    $1763.Manifest? manifest,
-    $1764.Actions? actions,
-    $1765.Settings? settings,
-    $1766.Webhook? webhook,
-    $1767.Intent? intent,
-    $1768.Type? type,
-    $1769.GlobalIntentEvent? globalIntentEvent,
-    $1770.Scene? scene,
-    $1749.StaticPrompt? staticPrompt,
-    $1734.Struct? resourceBundle,
-    $1771.AccountLinkingSecret? accountLinkingSecret,
-    $1772.EntitySet? entitySet,
+    $1764.Manifest? manifest,
+    $1765.Actions? actions,
+    $1766.Settings? settings,
+    $1767.Webhook? webhook,
+    $1768.Intent? intent,
+    $1769.Type? type,
+    $1770.GlobalIntentEvent? globalIntentEvent,
+    $1771.Scene? scene,
+    $1750.StaticPrompt? staticPrompt,
+    $1735.Struct? resourceBundle,
+    $1772.AccountLinkingSecret? accountLinkingSecret,
+    $1773.EntitySet? entitySet,
   }) {
     final $result = create();
     if (filePath != null) {
@@ -171,18 +171,18 @@ class ConfigFile extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfigFile', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 15])
     ..aOS(1, _omitFieldNames ? '' : 'filePath')
-    ..aOM<$1763.Manifest>(2, _omitFieldNames ? '' : 'manifest', subBuilder: $1763.Manifest.create)
-    ..aOM<$1764.Actions>(3, _omitFieldNames ? '' : 'actions', subBuilder: $1764.Actions.create)
-    ..aOM<$1765.Settings>(4, _omitFieldNames ? '' : 'settings', subBuilder: $1765.Settings.create)
-    ..aOM<$1766.Webhook>(6, _omitFieldNames ? '' : 'webhook', subBuilder: $1766.Webhook.create)
-    ..aOM<$1767.Intent>(7, _omitFieldNames ? '' : 'intent', subBuilder: $1767.Intent.create)
-    ..aOM<$1768.Type>(8, _omitFieldNames ? '' : 'type', subBuilder: $1768.Type.create)
-    ..aOM<$1769.GlobalIntentEvent>(9, _omitFieldNames ? '' : 'globalIntentEvent', subBuilder: $1769.GlobalIntentEvent.create)
-    ..aOM<$1770.Scene>(10, _omitFieldNames ? '' : 'scene', subBuilder: $1770.Scene.create)
-    ..aOM<$1749.StaticPrompt>(11, _omitFieldNames ? '' : 'staticPrompt', subBuilder: $1749.StaticPrompt.create)
-    ..aOM<$1734.Struct>(12, _omitFieldNames ? '' : 'resourceBundle', subBuilder: $1734.Struct.create)
-    ..aOM<$1771.AccountLinkingSecret>(13, _omitFieldNames ? '' : 'accountLinkingSecret', subBuilder: $1771.AccountLinkingSecret.create)
-    ..aOM<$1772.EntitySet>(15, _omitFieldNames ? '' : 'entitySet', subBuilder: $1772.EntitySet.create)
+    ..aOM<$1764.Manifest>(2, _omitFieldNames ? '' : 'manifest', subBuilder: $1764.Manifest.create)
+    ..aOM<$1765.Actions>(3, _omitFieldNames ? '' : 'actions', subBuilder: $1765.Actions.create)
+    ..aOM<$1766.Settings>(4, _omitFieldNames ? '' : 'settings', subBuilder: $1766.Settings.create)
+    ..aOM<$1767.Webhook>(6, _omitFieldNames ? '' : 'webhook', subBuilder: $1767.Webhook.create)
+    ..aOM<$1768.Intent>(7, _omitFieldNames ? '' : 'intent', subBuilder: $1768.Intent.create)
+    ..aOM<$1769.Type>(8, _omitFieldNames ? '' : 'type', subBuilder: $1769.Type.create)
+    ..aOM<$1770.GlobalIntentEvent>(9, _omitFieldNames ? '' : 'globalIntentEvent', subBuilder: $1770.GlobalIntentEvent.create)
+    ..aOM<$1771.Scene>(10, _omitFieldNames ? '' : 'scene', subBuilder: $1771.Scene.create)
+    ..aOM<$1750.StaticPrompt>(11, _omitFieldNames ? '' : 'staticPrompt', subBuilder: $1750.StaticPrompt.create)
+    ..aOM<$1735.Struct>(12, _omitFieldNames ? '' : 'resourceBundle', subBuilder: $1735.Struct.create)
+    ..aOM<$1772.AccountLinkingSecret>(13, _omitFieldNames ? '' : 'accountLinkingSecret', subBuilder: $1772.AccountLinkingSecret.create)
+    ..aOM<$1773.EntitySet>(15, _omitFieldNames ? '' : 'entitySet', subBuilder: $1773.EntitySet.create)
     ..hasRequiredFields = false
   ;
 
@@ -225,28 +225,28 @@ class ConfigFile extends $pb.GeneratedMessage {
   /// Single manifest file.
   /// Allowed file path: `manifest.yaml`
   @$pb.TagNumber(2)
-  $1763.Manifest get manifest => $_getN(1);
+  $1764.Manifest get manifest => $_getN(1);
   @$pb.TagNumber(2)
-  set manifest($1763.Manifest v) { setField(2, v); }
+  set manifest($1764.Manifest v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasManifest() => $_has(1);
   @$pb.TagNumber(2)
   void clearManifest() => clearField(2);
   @$pb.TagNumber(2)
-  $1763.Manifest ensureManifest() => $_ensure(1);
+  $1764.Manifest ensureManifest() => $_ensure(1);
 
   /// Single actions file with all the actions defined.
   /// Allowed file paths: `actions/{language}?/actions.yaml`
   @$pb.TagNumber(3)
-  $1764.Actions get actions => $_getN(2);
+  $1765.Actions get actions => $_getN(2);
   @$pb.TagNumber(3)
-  set actions($1764.Actions v) { setField(3, v); }
+  set actions($1765.Actions v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasActions() => $_has(2);
   @$pb.TagNumber(3)
   void clearActions() => clearField(3);
   @$pb.TagNumber(3)
-  $1764.Actions ensureActions() => $_ensure(2);
+  $1765.Actions ensureActions() => $_ensure(2);
 
   /// Single settings config which includes non-localizable settings and
   /// settings for the project's default locale (if specified).
@@ -256,95 +256,95 @@ class ConfigFile extends $pb.GeneratedMessage {
   /// Note that the non-localized settings file `settings/settings.yaml` must
   /// be present in the write flow requests.
   @$pb.TagNumber(4)
-  $1765.Settings get settings => $_getN(3);
+  $1766.Settings get settings => $_getN(3);
   @$pb.TagNumber(4)
-  set settings($1765.Settings v) { setField(4, v); }
+  set settings($1766.Settings v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSettings() => $_has(3);
   @$pb.TagNumber(4)
   void clearSettings() => clearField(4);
   @$pb.TagNumber(4)
-  $1765.Settings ensureSettings() => $_ensure(3);
+  $1766.Settings ensureSettings() => $_ensure(3);
 
   /// Single webhook definition.
   /// Allowed file path: `webhooks/{WebhookName}.yaml`
   @$pb.TagNumber(6)
-  $1766.Webhook get webhook => $_getN(4);
+  $1767.Webhook get webhook => $_getN(4);
   @$pb.TagNumber(6)
-  set webhook($1766.Webhook v) { setField(6, v); }
+  set webhook($1767.Webhook v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasWebhook() => $_has(4);
   @$pb.TagNumber(6)
   void clearWebhook() => clearField(6);
   @$pb.TagNumber(6)
-  $1766.Webhook ensureWebhook() => $_ensure(4);
+  $1767.Webhook ensureWebhook() => $_ensure(4);
 
   /// Single intent definition.
   /// Allowed file paths: `custom/intents/{language}?/{IntentName}.yaml`
   @$pb.TagNumber(7)
-  $1767.Intent get intent => $_getN(5);
+  $1768.Intent get intent => $_getN(5);
   @$pb.TagNumber(7)
-  set intent($1767.Intent v) { setField(7, v); }
+  set intent($1768.Intent v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasIntent() => $_has(5);
   @$pb.TagNumber(7)
   void clearIntent() => clearField(7);
   @$pb.TagNumber(7)
-  $1767.Intent ensureIntent() => $_ensure(5);
+  $1768.Intent ensureIntent() => $_ensure(5);
 
   /// Single type definition.
   /// Allowed file paths: `custom/types/{language}?/{TypeName}.yaml`
   @$pb.TagNumber(8)
-  $1768.Type get type => $_getN(6);
+  $1769.Type get type => $_getN(6);
   @$pb.TagNumber(8)
-  set type($1768.Type v) { setField(8, v); }
+  set type($1769.Type v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasType() => $_has(6);
   @$pb.TagNumber(8)
   void clearType() => clearField(8);
   @$pb.TagNumber(8)
-  $1768.Type ensureType() => $_ensure(6);
+  $1769.Type ensureType() => $_ensure(6);
 
   /// Single global intent event definition.
   /// Allowed file paths: `custom/global/{GlobalIntentEventName}.yaml`
   /// The file name (GlobalIntentEventName) should be the name of the intent
   /// that this global intent event corresponds to.
   @$pb.TagNumber(9)
-  $1769.GlobalIntentEvent get globalIntentEvent => $_getN(7);
+  $1770.GlobalIntentEvent get globalIntentEvent => $_getN(7);
   @$pb.TagNumber(9)
-  set globalIntentEvent($1769.GlobalIntentEvent v) { setField(9, v); }
+  set globalIntentEvent($1770.GlobalIntentEvent v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasGlobalIntentEvent() => $_has(7);
   @$pb.TagNumber(9)
   void clearGlobalIntentEvent() => clearField(9);
   @$pb.TagNumber(9)
-  $1769.GlobalIntentEvent ensureGlobalIntentEvent() => $_ensure(7);
+  $1770.GlobalIntentEvent ensureGlobalIntentEvent() => $_ensure(7);
 
   /// Single scene definition.
   /// Allowed file paths: `custom/scenes/{SceneName}.yaml`
   @$pb.TagNumber(10)
-  $1770.Scene get scene => $_getN(8);
+  $1771.Scene get scene => $_getN(8);
   @$pb.TagNumber(10)
-  set scene($1770.Scene v) { setField(10, v); }
+  set scene($1771.Scene v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasScene() => $_has(8);
   @$pb.TagNumber(10)
   void clearScene() => clearField(10);
   @$pb.TagNumber(10)
-  $1770.Scene ensureScene() => $_ensure(8);
+  $1771.Scene ensureScene() => $_ensure(8);
 
   /// Single static prompt definition.
   /// Allowed file paths: `custom/prompts/{language}?/{StaticPromptName}.yaml`
   @$pb.TagNumber(11)
-  $1749.StaticPrompt get staticPrompt => $_getN(9);
+  $1750.StaticPrompt get staticPrompt => $_getN(9);
   @$pb.TagNumber(11)
-  set staticPrompt($1749.StaticPrompt v) { setField(11, v); }
+  set staticPrompt($1750.StaticPrompt v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStaticPrompt() => $_has(9);
   @$pb.TagNumber(11)
   void clearStaticPrompt() => clearField(11);
   @$pb.TagNumber(11)
-  $1749.StaticPrompt ensureStaticPrompt() => $_ensure(9);
+  $1750.StaticPrompt ensureStaticPrompt() => $_ensure(9);
 
   /// Single resource bundle, which is a map from a string to a string or list
   /// of strings. Resource bundles could be used for localizing strings in
@@ -352,41 +352,41 @@ class ConfigFile extends $pb.GeneratedMessage {
   /// Allowed file paths: `resources/strings/{language}?/{multiple
   /// directories}?/{BundleName}.yaml`
   @$pb.TagNumber(12)
-  $1734.Struct get resourceBundle => $_getN(10);
+  $1735.Struct get resourceBundle => $_getN(10);
   @$pb.TagNumber(12)
-  set resourceBundle($1734.Struct v) { setField(12, v); }
+  set resourceBundle($1735.Struct v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasResourceBundle() => $_has(10);
   @$pb.TagNumber(12)
   void clearResourceBundle() => clearField(12);
   @$pb.TagNumber(12)
-  $1734.Struct ensureResourceBundle() => $_ensure(10);
+  $1735.Struct ensureResourceBundle() => $_ensure(10);
 
   /// Metadata corresponding to the client secret used in account linking.
   /// Allowed file path: `settings/accountLinkingSecret.yaml`
   @$pb.TagNumber(13)
-  $1771.AccountLinkingSecret get accountLinkingSecret => $_getN(11);
+  $1772.AccountLinkingSecret get accountLinkingSecret => $_getN(11);
   @$pb.TagNumber(13)
-  set accountLinkingSecret($1771.AccountLinkingSecret v) { setField(13, v); }
+  set accountLinkingSecret($1772.AccountLinkingSecret v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasAccountLinkingSecret() => $_has(11);
   @$pb.TagNumber(13)
   void clearAccountLinkingSecret() => clearField(13);
   @$pb.TagNumber(13)
-  $1771.AccountLinkingSecret ensureAccountLinkingSecret() => $_ensure(11);
+  $1772.AccountLinkingSecret ensureAccountLinkingSecret() => $_ensure(11);
 
   /// Single entity set definition.
   /// Allowed file paths: `custom/entitySets/{language}?/{EntitySetName}.yaml`
   @$pb.TagNumber(15)
-  $1772.EntitySet get entitySet => $_getN(12);
+  $1773.EntitySet get entitySet => $_getN(12);
   @$pb.TagNumber(15)
-  set entitySet($1772.EntitySet v) { setField(15, v); }
+  set entitySet($1773.EntitySet v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasEntitySet() => $_has(12);
   @$pb.TagNumber(15)
   void clearEntitySet() => clearField(15);
   @$pb.TagNumber(15)
-  $1772.EntitySet ensureEntitySet() => $_ensure(12);
+  $1773.EntitySet ensureEntitySet() => $_ensure(12);
 }
 
 

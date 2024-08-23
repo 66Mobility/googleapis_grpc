@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'annotations.pbenum.dart';
 
 export 'annotations.pbenum.dart';
@@ -643,7 +643,7 @@ class PersonalProtectiveEquipmentDetectionOutput_DetectedPerson extends $pb.Gene
 /// Output format for Personal Protective Equipment Detection Operator.
 class PersonalProtectiveEquipmentDetectionOutput extends $pb.GeneratedMessage {
   factory PersonalProtectiveEquipmentDetectionOutput({
-    $1775.Timestamp? currentTime,
+    $1776.Timestamp? currentTime,
     $core.Iterable<PersonalProtectiveEquipmentDetectionOutput_DetectedPerson>? detectedPersons,
   }) {
     final $result = create();
@@ -660,7 +660,7 @@ class PersonalProtectiveEquipmentDetectionOutput extends $pb.GeneratedMessage {
   factory PersonalProtectiveEquipmentDetectionOutput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PersonalProtectiveEquipmentDetectionOutput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'currentTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'currentTime', subBuilder: $1776.Timestamp.create)
     ..pc<PersonalProtectiveEquipmentDetectionOutput_DetectedPerson>(2, _omitFieldNames ? '' : 'detectedPersons', $pb.PbFieldType.PM, subBuilder: PersonalProtectiveEquipmentDetectionOutput_DetectedPerson.create)
     ..hasRequiredFields = false
   ;
@@ -688,15 +688,15 @@ class PersonalProtectiveEquipmentDetectionOutput extends $pb.GeneratedMessage {
 
   /// Current timestamp.
   @$pb.TagNumber(1)
-  $1775.Timestamp get currentTime => $_getN(0);
+  $1776.Timestamp get currentTime => $_getN(0);
   @$pb.TagNumber(1)
-  set currentTime($1775.Timestamp v) { setField(1, v); }
+  set currentTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCurrentTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCurrentTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCurrentTime() => $_ensure(0);
+  $1776.Timestamp ensureCurrentTime() => $_ensure(0);
 
   /// A list of DetectedPersons.
   @$pb.TagNumber(2)
@@ -971,7 +971,7 @@ class ObjectDetectionPredictionResult_IdentifiedBox extends $pb.GeneratedMessage
 /// Prediction output format for Generic Object Detection.
 class ObjectDetectionPredictionResult extends $pb.GeneratedMessage {
   factory ObjectDetectionPredictionResult({
-    $1775.Timestamp? currentTime,
+    $1776.Timestamp? currentTime,
     $core.Iterable<ObjectDetectionPredictionResult_IdentifiedBox>? identifiedBoxes,
   }) {
     final $result = create();
@@ -988,7 +988,7 @@ class ObjectDetectionPredictionResult extends $pb.GeneratedMessage {
   factory ObjectDetectionPredictionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ObjectDetectionPredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'currentTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'currentTime', subBuilder: $1776.Timestamp.create)
     ..pc<ObjectDetectionPredictionResult_IdentifiedBox>(2, _omitFieldNames ? '' : 'identifiedBoxes', $pb.PbFieldType.PM, subBuilder: ObjectDetectionPredictionResult_IdentifiedBox.create)
     ..hasRequiredFields = false
   ;
@@ -1016,15 +1016,15 @@ class ObjectDetectionPredictionResult extends $pb.GeneratedMessage {
 
   /// Current timestamp.
   @$pb.TagNumber(1)
-  $1775.Timestamp get currentTime => $_getN(0);
+  $1776.Timestamp get currentTime => $_getN(0);
   @$pb.TagNumber(1)
-  set currentTime($1775.Timestamp v) { setField(1, v); }
+  set currentTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCurrentTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCurrentTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCurrentTime() => $_ensure(0);
+  $1776.Timestamp ensureCurrentTime() => $_ensure(0);
 
   /// A list of identified boxes.
   @$pb.TagNumber(2)
@@ -1037,7 +1037,7 @@ class ImageObjectDetectionPredictionResult extends $pb.GeneratedMessage {
     $core.Iterable<$fixnum.Int64>? ids,
     $core.Iterable<$core.String>? displayNames,
     $core.Iterable<$core.double>? confidences,
-    $core.Iterable<$1734.ListValue>? bboxes,
+    $core.Iterable<$1735.ListValue>? bboxes,
   }) {
     final $result = create();
     if (ids != null) {
@@ -1062,7 +1062,7 @@ class ImageObjectDetectionPredictionResult extends $pb.GeneratedMessage {
     ..p<$fixnum.Int64>(1, _omitFieldNames ? '' : 'ids', $pb.PbFieldType.K6)
     ..pPS(2, _omitFieldNames ? '' : 'displayNames')
     ..p<$core.double>(3, _omitFieldNames ? '' : 'confidences', $pb.PbFieldType.KF)
-    ..pc<$1734.ListValue>(4, _omitFieldNames ? '' : 'bboxes', $pb.PbFieldType.PM, subBuilder: $1734.ListValue.create)
+    ..pc<$1735.ListValue>(4, _omitFieldNames ? '' : 'bboxes', $pb.PbFieldType.PM, subBuilder: $1735.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1110,7 +1110,7 @@ class ImageObjectDetectionPredictionResult extends $pb.GeneratedMessage {
   /// relative to the image size, and the point 0,0 is in the top left
   /// of the image.
   @$pb.TagNumber(4)
-  $core.List<$1734.ListValue> get bboxes => $_getList(3);
+  $core.List<$1735.ListValue> get bboxes => $_getList(3);
 }
 
 /// Prediction output format for Image and Text Classification.
@@ -1343,8 +1343,8 @@ class VideoActionRecognitionPredictionResult_IdentifiedAction extends $pb.Genera
 /// Prediction output format for Video Action Recognition.
 class VideoActionRecognitionPredictionResult extends $pb.GeneratedMessage {
   factory VideoActionRecognitionPredictionResult({
-    $1775.Timestamp? segmentStartTime,
-    $1775.Timestamp? segmentEndTime,
+    $1776.Timestamp? segmentStartTime,
+    $1776.Timestamp? segmentEndTime,
     $core.Iterable<VideoActionRecognitionPredictionResult_IdentifiedAction>? actions,
   }) {
     final $result = create();
@@ -1364,8 +1364,8 @@ class VideoActionRecognitionPredictionResult extends $pb.GeneratedMessage {
   factory VideoActionRecognitionPredictionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoActionRecognitionPredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'segmentStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'segmentEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'segmentStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'segmentEndTime', subBuilder: $1776.Timestamp.create)
     ..pc<VideoActionRecognitionPredictionResult_IdentifiedAction>(3, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: VideoActionRecognitionPredictionResult_IdentifiedAction.create)
     ..hasRequiredFields = false
   ;
@@ -1394,29 +1394,29 @@ class VideoActionRecognitionPredictionResult extends $pb.GeneratedMessage {
   /// The beginning, inclusive, of the video's time segment in which the
   /// actions have been identified.
   @$pb.TagNumber(1)
-  $1775.Timestamp get segmentStartTime => $_getN(0);
+  $1776.Timestamp get segmentStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set segmentStartTime($1775.Timestamp v) { setField(1, v); }
+  set segmentStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSegmentStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearSegmentStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureSegmentStartTime() => $_ensure(0);
+  $1776.Timestamp ensureSegmentStartTime() => $_ensure(0);
 
   /// The end, inclusive, of the video's time segment in which the actions have
   /// been identified. Particularly, if the end is the same as the start, it
   /// means the identification happens on a specific video frame.
   @$pb.TagNumber(2)
-  $1775.Timestamp get segmentEndTime => $_getN(1);
+  $1776.Timestamp get segmentEndTime => $_getN(1);
   @$pb.TagNumber(2)
-  set segmentEndTime($1775.Timestamp v) { setField(2, v); }
+  set segmentEndTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSegmentEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSegmentEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSegmentEndTime() => $_ensure(1);
+  $1776.Timestamp ensureSegmentEndTime() => $_ensure(1);
 
   /// All of the actions identified in the time range.
   @$pb.TagNumber(3)
@@ -1645,8 +1645,8 @@ class VideoObjectTrackingPredictionResult_DetectedObject extends $pb.GeneratedMe
 /// Prediction output format for Video Object Tracking.
 class VideoObjectTrackingPredictionResult extends $pb.GeneratedMessage {
   factory VideoObjectTrackingPredictionResult({
-    $1775.Timestamp? segmentStartTime,
-    $1775.Timestamp? segmentEndTime,
+    $1776.Timestamp? segmentStartTime,
+    $1776.Timestamp? segmentEndTime,
     $core.Iterable<VideoObjectTrackingPredictionResult_DetectedObject>? objects,
   }) {
     final $result = create();
@@ -1666,8 +1666,8 @@ class VideoObjectTrackingPredictionResult extends $pb.GeneratedMessage {
   factory VideoObjectTrackingPredictionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoObjectTrackingPredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'segmentStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'segmentEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'segmentStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'segmentEndTime', subBuilder: $1776.Timestamp.create)
     ..pc<VideoObjectTrackingPredictionResult_DetectedObject>(3, _omitFieldNames ? '' : 'objects', $pb.PbFieldType.PM, subBuilder: VideoObjectTrackingPredictionResult_DetectedObject.create)
     ..hasRequiredFields = false
   ;
@@ -1696,29 +1696,29 @@ class VideoObjectTrackingPredictionResult extends $pb.GeneratedMessage {
   /// The beginning, inclusive, of the video's time segment in which the
   /// current identifications happens.
   @$pb.TagNumber(1)
-  $1775.Timestamp get segmentStartTime => $_getN(0);
+  $1776.Timestamp get segmentStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set segmentStartTime($1775.Timestamp v) { setField(1, v); }
+  set segmentStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSegmentStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearSegmentStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureSegmentStartTime() => $_ensure(0);
+  $1776.Timestamp ensureSegmentStartTime() => $_ensure(0);
 
   /// The end, inclusive, of the video's time segment in which the current
   /// identifications happen. Particularly, if the end is the same as the start,
   /// it means the identifications happen on a specific video frame.
   @$pb.TagNumber(2)
-  $1775.Timestamp get segmentEndTime => $_getN(1);
+  $1776.Timestamp get segmentEndTime => $_getN(1);
   @$pb.TagNumber(2)
-  set segmentEndTime($1775.Timestamp v) { setField(2, v); }
+  set segmentEndTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSegmentEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSegmentEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSegmentEndTime() => $_ensure(1);
+  $1776.Timestamp ensureSegmentEndTime() => $_ensure(1);
 
   /// All of the objects detected in the specified time range.
   @$pb.TagNumber(3)
@@ -1813,8 +1813,8 @@ class VideoClassificationPredictionResult_IdentifiedClassification extends $pb.G
 /// Prediction output format for Video Classification.
 class VideoClassificationPredictionResult extends $pb.GeneratedMessage {
   factory VideoClassificationPredictionResult({
-    $1775.Timestamp? segmentStartTime,
-    $1775.Timestamp? segmentEndTime,
+    $1776.Timestamp? segmentStartTime,
+    $1776.Timestamp? segmentEndTime,
     $core.Iterable<VideoClassificationPredictionResult_IdentifiedClassification>? classifications,
   }) {
     final $result = create();
@@ -1834,8 +1834,8 @@ class VideoClassificationPredictionResult extends $pb.GeneratedMessage {
   factory VideoClassificationPredictionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoClassificationPredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'segmentStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'segmentEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'segmentStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'segmentEndTime', subBuilder: $1776.Timestamp.create)
     ..pc<VideoClassificationPredictionResult_IdentifiedClassification>(3, _omitFieldNames ? '' : 'classifications', $pb.PbFieldType.PM, subBuilder: VideoClassificationPredictionResult_IdentifiedClassification.create)
     ..hasRequiredFields = false
   ;
@@ -1864,30 +1864,30 @@ class VideoClassificationPredictionResult extends $pb.GeneratedMessage {
   /// The beginning, inclusive, of the video's time segment in which the
   /// classifications have been identified.
   @$pb.TagNumber(1)
-  $1775.Timestamp get segmentStartTime => $_getN(0);
+  $1776.Timestamp get segmentStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set segmentStartTime($1775.Timestamp v) { setField(1, v); }
+  set segmentStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSegmentStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearSegmentStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureSegmentStartTime() => $_ensure(0);
+  $1776.Timestamp ensureSegmentStartTime() => $_ensure(0);
 
   /// The end, inclusive, of the video's time segment in which the
   /// classifications have been identified. Particularly, if the end is the same
   /// as the start, it means the identification happens on a specific video
   /// frame.
   @$pb.TagNumber(2)
-  $1775.Timestamp get segmentEndTime => $_getN(1);
+  $1776.Timestamp get segmentEndTime => $_getN(1);
   @$pb.TagNumber(2)
-  set segmentEndTime($1775.Timestamp v) { setField(2, v); }
+  set segmentEndTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSegmentEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSegmentEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSegmentEndTime() => $_ensure(1);
+  $1776.Timestamp ensureSegmentEndTime() => $_ensure(1);
 
   /// All of the classifications identified in the time range.
   @$pb.TagNumber(3)
@@ -2249,7 +2249,7 @@ class OccupancyCountingPredictionResult_Stats_ObjectCount extends $pb.GeneratedM
 /// counting operator.
 class OccupancyCountingPredictionResult_Stats_AccumulatedObjectCount extends $pb.GeneratedMessage {
   factory OccupancyCountingPredictionResult_Stats_AccumulatedObjectCount({
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
     OccupancyCountingPredictionResult_Stats_ObjectCount? objectCount,
   }) {
     final $result = create();
@@ -2266,7 +2266,7 @@ class OccupancyCountingPredictionResult_Stats_AccumulatedObjectCount extends $pb
   factory OccupancyCountingPredictionResult_Stats_AccumulatedObjectCount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OccupancyCountingPredictionResult.Stats.AccumulatedObjectCount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..aOM<OccupancyCountingPredictionResult_Stats_ObjectCount>(2, _omitFieldNames ? '' : 'objectCount', subBuilder: OccupancyCountingPredictionResult_Stats_ObjectCount.create)
     ..hasRequiredFields = false
   ;
@@ -2294,15 +2294,15 @@ class OccupancyCountingPredictionResult_Stats_AccumulatedObjectCount extends $pb
 
   /// The start time of the accumulated count.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The object count for the accumulated count.
   @$pb.TagNumber(2)
@@ -2538,7 +2538,7 @@ class OccupancyCountingPredictionResult_Stats extends $pb.GeneratedMessage {
 class OccupancyCountingPredictionResult_TrackInfo extends $pb.GeneratedMessage {
   factory OccupancyCountingPredictionResult_TrackInfo({
     $core.String? trackId,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (trackId != null) {
@@ -2555,7 +2555,7 @@ class OccupancyCountingPredictionResult_TrackInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OccupancyCountingPredictionResult.TrackInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'trackId')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2592,15 +2592,15 @@ class OccupancyCountingPredictionResult_TrackInfo extends $pb.GeneratedMessage {
 
   /// Start timestamp of this track.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 }
 
 /// The dwell time info for annotations from occupancy counting operator.
@@ -2608,8 +2608,8 @@ class OccupancyCountingPredictionResult_DwellTimeInfo extends $pb.GeneratedMessa
   factory OccupancyCountingPredictionResult_DwellTimeInfo({
     $core.String? trackId,
     $core.String? zoneId,
-    $1775.Timestamp? dwellStartTime,
-    $1775.Timestamp? dwellEndTime,
+    $1776.Timestamp? dwellStartTime,
+    $1776.Timestamp? dwellEndTime,
   }) {
     final $result = create();
     if (trackId != null) {
@@ -2633,8 +2633,8 @@ class OccupancyCountingPredictionResult_DwellTimeInfo extends $pb.GeneratedMessa
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OccupancyCountingPredictionResult.DwellTimeInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'trackId')
     ..aOS(2, _omitFieldNames ? '' : 'zoneId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'dwellStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'dwellEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'dwellStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'dwellEndTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2681,33 +2681,33 @@ class OccupancyCountingPredictionResult_DwellTimeInfo extends $pb.GeneratedMessa
 
   /// The beginning time when a dwelling object has been identified in a zone.
   @$pb.TagNumber(3)
-  $1775.Timestamp get dwellStartTime => $_getN(2);
+  $1776.Timestamp get dwellStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set dwellStartTime($1775.Timestamp v) { setField(3, v); }
+  set dwellStartTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDwellStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDwellStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureDwellStartTime() => $_ensure(2);
+  $1776.Timestamp ensureDwellStartTime() => $_ensure(2);
 
   /// The end time when a dwelling object has exited in a zone.
   @$pb.TagNumber(4)
-  $1775.Timestamp get dwellEndTime => $_getN(3);
+  $1776.Timestamp get dwellEndTime => $_getN(3);
   @$pb.TagNumber(4)
-  set dwellEndTime($1775.Timestamp v) { setField(4, v); }
+  set dwellEndTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDwellEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDwellEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDwellEndTime() => $_ensure(3);
+  $1776.Timestamp ensureDwellEndTime() => $_ensure(3);
 }
 
 /// The prediction result proto for occupancy counting.
 class OccupancyCountingPredictionResult extends $pb.GeneratedMessage {
   factory OccupancyCountingPredictionResult({
-    $1775.Timestamp? currentTime,
+    $1776.Timestamp? currentTime,
     $core.Iterable<OccupancyCountingPredictionResult_IdentifiedBox>? identifiedBoxes,
     OccupancyCountingPredictionResult_Stats? stats,
     $core.Iterable<OccupancyCountingPredictionResult_TrackInfo>? trackInfo,
@@ -2736,7 +2736,7 @@ class OccupancyCountingPredictionResult extends $pb.GeneratedMessage {
   factory OccupancyCountingPredictionResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OccupancyCountingPredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'currentTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'currentTime', subBuilder: $1776.Timestamp.create)
     ..pc<OccupancyCountingPredictionResult_IdentifiedBox>(2, _omitFieldNames ? '' : 'identifiedBoxes', $pb.PbFieldType.PM, subBuilder: OccupancyCountingPredictionResult_IdentifiedBox.create)
     ..aOM<OccupancyCountingPredictionResult_Stats>(3, _omitFieldNames ? '' : 'stats', subBuilder: OccupancyCountingPredictionResult_Stats.create)
     ..pc<OccupancyCountingPredictionResult_TrackInfo>(4, _omitFieldNames ? '' : 'trackInfo', $pb.PbFieldType.PM, subBuilder: OccupancyCountingPredictionResult_TrackInfo.create)
@@ -2767,15 +2767,15 @@ class OccupancyCountingPredictionResult extends $pb.GeneratedMessage {
 
   /// Current timestamp.
   @$pb.TagNumber(1)
-  $1775.Timestamp get currentTime => $_getN(0);
+  $1776.Timestamp get currentTime => $_getN(0);
   @$pb.TagNumber(1)
-  set currentTime($1775.Timestamp v) { setField(1, v); }
+  set currentTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCurrentTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCurrentTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCurrentTime() => $_ensure(0);
+  $1776.Timestamp ensureCurrentTime() => $_ensure(0);
 
   /// A list of identified boxes.
   @$pb.TagNumber(2)
@@ -3266,7 +3266,7 @@ class AppPlatformMetadata extends $pb.GeneratedMessage {
 class AppPlatformCloudFunctionRequest_StructedInputAnnotation extends $pb.GeneratedMessage {
   factory AppPlatformCloudFunctionRequest_StructedInputAnnotation({
     $fixnum.Int64? ingestionTimeMicros,
-    $1734.Struct? annotation,
+    $1735.Struct? annotation,
   }) {
     final $result = create();
     if (ingestionTimeMicros != null) {
@@ -3283,7 +3283,7 @@ class AppPlatformCloudFunctionRequest_StructedInputAnnotation extends $pb.Genera
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppPlatformCloudFunctionRequest.StructedInputAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'ingestionTimeMicros')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'annotation', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'annotation', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -3320,15 +3320,15 @@ class AppPlatformCloudFunctionRequest_StructedInputAnnotation extends $pb.Genera
 
   /// The struct format of the actual annotation.
   @$pb.TagNumber(2)
-  $1734.Struct get annotation => $_getN(1);
+  $1735.Struct get annotation => $_getN(1);
   @$pb.TagNumber(2)
-  set annotation($1734.Struct v) { setField(2, v); }
+  set annotation($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAnnotation() => $_has(1);
   @$pb.TagNumber(2)
   void clearAnnotation() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureAnnotation() => $_ensure(1);
+  $1735.Struct ensureAnnotation() => $_ensure(1);
 }
 
 /// For any cloud function based customer processing logic, customer's cloud
@@ -3402,7 +3402,7 @@ class AppPlatformCloudFunctionRequest extends $pb.GeneratedMessage {
 /// concrete annotation protobufs.
 class AppPlatformCloudFunctionResponse_StructedOutputAnnotation extends $pb.GeneratedMessage {
   factory AppPlatformCloudFunctionResponse_StructedOutputAnnotation({
-    $1734.Struct? annotation,
+    $1735.Struct? annotation,
   }) {
     final $result = create();
     if (annotation != null) {
@@ -3415,7 +3415,7 @@ class AppPlatformCloudFunctionResponse_StructedOutputAnnotation extends $pb.Gene
   factory AppPlatformCloudFunctionResponse_StructedOutputAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppPlatformCloudFunctionResponse.StructedOutputAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'annotation', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'annotation', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -3442,15 +3442,15 @@ class AppPlatformCloudFunctionResponse_StructedOutputAnnotation extends $pb.Gene
 
   /// The struct format of the actual annotation.
   @$pb.TagNumber(1)
-  $1734.Struct get annotation => $_getN(0);
+  $1735.Struct get annotation => $_getN(0);
   @$pb.TagNumber(1)
-  set annotation($1734.Struct v) { setField(1, v); }
+  set annotation($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAnnotation() => $_has(0);
   @$pb.TagNumber(1)
   void clearAnnotation() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureAnnotation() => $_ensure(0);
+  $1735.Struct ensureAnnotation() => $_ensure(0);
 }
 
 /// Message of the response from customer's Cloud Function to AppPlatform.
@@ -3532,7 +3532,7 @@ class AppPlatformCloudFunctionResponse extends $pb.GeneratedMessage {
 class AppPlatformEventBody extends $pb.GeneratedMessage {
   factory AppPlatformEventBody({
     $core.String? eventMessage,
-    $1734.Struct? payload,
+    $1735.Struct? payload,
     $core.String? eventId,
   }) {
     final $result = create();
@@ -3553,7 +3553,7 @@ class AppPlatformEventBody extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppPlatformEventBody', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'eventMessage')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Struct.create)
     ..aOS(3, _omitFieldNames ? '' : 'eventId')
     ..hasRequiredFields = false
   ;
@@ -3593,15 +3593,15 @@ class AppPlatformEventBody extends $pb.GeneratedMessage {
   /// For the case of Pub/Sub, it will be stored in the message attributes.
   /// ​​pubsub.proto
   @$pb.TagNumber(2)
-  $1734.Struct get payload => $_getN(1);
+  $1735.Struct get payload => $_getN(1);
   @$pb.TagNumber(2)
-  set payload($1734.Struct v) { setField(2, v); }
+  set payload($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPayload() => $_has(1);
   @$pb.TagNumber(2)
   void clearPayload() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensurePayload() => $_ensure(1);
+  $1735.Struct ensurePayload() => $_ensure(1);
 
   /// User defined Event Id, used to classify event, within a delivery interval,
   /// events from the same application instance with the same id will be

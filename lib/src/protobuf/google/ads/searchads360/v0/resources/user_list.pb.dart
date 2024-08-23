@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/user_list_type.pbenum.dart' as $4085;
+import '../enums/user_list_type.pbenum.dart' as $4086;
 
 /// A user list. This is a list of users a customer may target.
 class UserList extends $pb.GeneratedMessage {
   factory UserList({
     $core.String? resourceName,
-    $4085.UserListTypeEnum_UserListType? type,
+    $4086.UserListTypeEnum_UserListType? type,
     $fixnum.Int64? id,
     $core.String? name,
   }) {
@@ -45,7 +45,7 @@ class UserList extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4085.UserListTypeEnum_UserListType>(13, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4085.UserListTypeEnum_UserListType.UNSPECIFIED, valueOf: $4085.UserListTypeEnum_UserListType.valueOf, enumValues: $4085.UserListTypeEnum_UserListType.values)
+    ..e<$4086.UserListTypeEnum_UserListType>(13, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4086.UserListTypeEnum_UserListType.UNSPECIFIED, valueOf: $4086.UserListTypeEnum_UserListType.valueOf, enumValues: $4086.UserListTypeEnum_UserListType.values)
     ..aInt64(25, _omitFieldNames ? '' : 'id')
     ..aOS(27, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
@@ -89,9 +89,9 @@ class UserList extends $pb.GeneratedMessage {
   ///
   ///  This field is read-only.
   @$pb.TagNumber(13)
-  $4085.UserListTypeEnum_UserListType get type => $_getN(1);
+  $4086.UserListTypeEnum_UserListType get type => $_getN(1);
   @$pb.TagNumber(13)
-  set type($4085.UserListTypeEnum_UserListType v) { setField(13, v); }
+  set type($4086.UserListTypeEnum_UserListType v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(13)

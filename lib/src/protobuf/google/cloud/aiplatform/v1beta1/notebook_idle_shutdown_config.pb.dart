@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 
 /// The idle shutdown configuration of NotebookRuntimeTemplate, which contains
 /// the idle_timeout as required field.
 class NotebookIdleShutdownConfig extends $pb.GeneratedMessage {
   factory NotebookIdleShutdownConfig({
-    $1737.Duration? idleTimeout,
+    $1738.Duration? idleTimeout,
     $core.bool? idleShutdownDisabled,
   }) {
     final $result = create();
@@ -36,7 +36,7 @@ class NotebookIdleShutdownConfig extends $pb.GeneratedMessage {
   factory NotebookIdleShutdownConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotebookIdleShutdownConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'idleTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'idleTimeout', subBuilder: $1738.Duration.create)
     ..aOB(2, _omitFieldNames ? '' : 'idleShutdownDisabled')
     ..hasRequiredFields = false
   ;
@@ -66,15 +66,15 @@ class NotebookIdleShutdownConfig extends $pb.GeneratedMessage {
   /// accurate to minute so the range of idle_timeout (second) is: 10 * 60 ~ 1440
   /// * 60.
   @$pb.TagNumber(1)
-  $1737.Duration get idleTimeout => $_getN(0);
+  $1738.Duration get idleTimeout => $_getN(0);
   @$pb.TagNumber(1)
-  set idleTimeout($1737.Duration v) { setField(1, v); }
+  set idleTimeout($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIdleTimeout() => $_has(0);
   @$pb.TagNumber(1)
   void clearIdleTimeout() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureIdleTimeout() => $_ensure(0);
+  $1738.Duration ensureIdleTimeout() => $_ensure(0);
 
   /// Whether Idle Shutdown is disabled in this NotebookRuntimeTemplate.
   @$pb.TagNumber(2)

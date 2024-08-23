@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/ad_strength.pbenum.dart' as $4033;
-import '../enums/asset_group_status.pbenum.dart' as $4032;
+import '../enums/ad_strength.pbenum.dart' as $4034;
+import '../enums/asset_group_status.pbenum.dart' as $4033;
 
 /// An asset group.
 /// AssetGroupAsset is used to link an asset to the asset group.
@@ -27,11 +27,11 @@ class AssetGroup extends $pb.GeneratedMessage {
     $core.String? name,
     $core.Iterable<$core.String>? finalUrls,
     $core.Iterable<$core.String>? finalMobileUrls,
-    $4032.AssetGroupStatusEnum_AssetGroupStatus? status,
+    $4033.AssetGroupStatusEnum_AssetGroupStatus? status,
     $core.String? path1,
     $core.String? path2,
     $fixnum.Int64? id,
-    $4033.AdStrengthEnum_AdStrength? adStrength,
+    $4034.AdStrengthEnum_AdStrength? adStrength,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -76,11 +76,11 @@ class AssetGroup extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..pPS(4, _omitFieldNames ? '' : 'finalUrls')
     ..pPS(5, _omitFieldNames ? '' : 'finalMobileUrls')
-    ..e<$4032.AssetGroupStatusEnum_AssetGroupStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4032.AssetGroupStatusEnum_AssetGroupStatus.UNSPECIFIED, valueOf: $4032.AssetGroupStatusEnum_AssetGroupStatus.valueOf, enumValues: $4032.AssetGroupStatusEnum_AssetGroupStatus.values)
+    ..e<$4033.AssetGroupStatusEnum_AssetGroupStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4033.AssetGroupStatusEnum_AssetGroupStatus.UNSPECIFIED, valueOf: $4033.AssetGroupStatusEnum_AssetGroupStatus.valueOf, enumValues: $4033.AssetGroupStatusEnum_AssetGroupStatus.values)
     ..aOS(7, _omitFieldNames ? '' : 'path1')
     ..aOS(8, _omitFieldNames ? '' : 'path2')
     ..aInt64(9, _omitFieldNames ? '' : 'id')
-    ..e<$4033.AdStrengthEnum_AdStrength>(10, _omitFieldNames ? '' : 'adStrength', $pb.PbFieldType.OE, defaultOrMaker: $4033.AdStrengthEnum_AdStrength.UNSPECIFIED, valueOf: $4033.AdStrengthEnum_AdStrength.valueOf, enumValues: $4033.AdStrengthEnum_AdStrength.values)
+    ..e<$4034.AdStrengthEnum_AdStrength>(10, _omitFieldNames ? '' : 'adStrength', $pb.PbFieldType.OE, defaultOrMaker: $4034.AdStrengthEnum_AdStrength.UNSPECIFIED, valueOf: $4034.AdStrengthEnum_AdStrength.valueOf, enumValues: $4034.AdStrengthEnum_AdStrength.values)
     ..hasRequiredFields = false
   ;
 
@@ -153,9 +153,9 @@ class AssetGroup extends $pb.GeneratedMessage {
 
   /// The status of the asset group.
   @$pb.TagNumber(6)
-  $4032.AssetGroupStatusEnum_AssetGroupStatus get status => $_getN(5);
+  $4033.AssetGroupStatusEnum_AssetGroupStatus get status => $_getN(5);
   @$pb.TagNumber(6)
-  set status($4032.AssetGroupStatusEnum_AssetGroupStatus v) { setField(6, v); }
+  set status($4033.AssetGroupStatusEnum_AssetGroupStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -195,9 +195,9 @@ class AssetGroup extends $pb.GeneratedMessage {
 
   /// Output only. Overall ad strength of this asset group.
   @$pb.TagNumber(10)
-  $4033.AdStrengthEnum_AdStrength get adStrength => $_getN(9);
+  $4034.AdStrengthEnum_AdStrength get adStrength => $_getN(9);
   @$pb.TagNumber(10)
-  set adStrength($4033.AdStrengthEnum_AdStrength v) { setField(10, v); }
+  set adStrength($4034.AdStrengthEnum_AdStrength v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasAdStrength() => $_has(9);
   @$pb.TagNumber(10)

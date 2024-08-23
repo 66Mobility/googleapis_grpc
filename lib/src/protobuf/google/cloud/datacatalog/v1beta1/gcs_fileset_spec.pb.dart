@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'timestamps.pb.dart' as $4456;
+import 'timestamps.pb.dart' as $4458;
 
 /// Describes a Cloud Storage fileset entry.
 class GcsFilesetSpec extends $pb.GeneratedMessage {
@@ -103,7 +103,7 @@ class GcsFilesetSpec extends $pb.GeneratedMessage {
 class GcsFileSpec extends $pb.GeneratedMessage {
   factory GcsFileSpec({
     $core.String? filePath,
-    $4456.SystemTimestamps? gcsTimestamps,
+    $4458.SystemTimestamps? gcsTimestamps,
     $fixnum.Int64? sizeBytes,
   }) {
     final $result = create();
@@ -124,7 +124,7 @@ class GcsFileSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcsFileSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filePath')
-    ..aOM<$4456.SystemTimestamps>(2, _omitFieldNames ? '' : 'gcsTimestamps', subBuilder: $4456.SystemTimestamps.create)
+    ..aOM<$4458.SystemTimestamps>(2, _omitFieldNames ? '' : 'gcsTimestamps', subBuilder: $4458.SystemTimestamps.create)
     ..aInt64(4, _omitFieldNames ? '' : 'sizeBytes')
     ..hasRequiredFields = false
   ;
@@ -162,15 +162,15 @@ class GcsFileSpec extends $pb.GeneratedMessage {
 
   /// Output only. Timestamps about the Cloud Storage file.
   @$pb.TagNumber(2)
-  $4456.SystemTimestamps get gcsTimestamps => $_getN(1);
+  $4458.SystemTimestamps get gcsTimestamps => $_getN(1);
   @$pb.TagNumber(2)
-  set gcsTimestamps($4456.SystemTimestamps v) { setField(2, v); }
+  set gcsTimestamps($4458.SystemTimestamps v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcsTimestamps() => $_has(1);
   @$pb.TagNumber(2)
   void clearGcsTimestamps() => clearField(2);
   @$pb.TagNumber(2)
-  $4456.SystemTimestamps ensureGcsTimestamps() => $_ensure(1);
+  $4458.SystemTimestamps ensureGcsTimestamps() => $_ensure(1);
 
   /// Output only. The size of the file, in bytes.
   @$pb.TagNumber(4)

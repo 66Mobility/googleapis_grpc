@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
 import 'reservation.pbenum.dart';
 
 export 'reservation.pbenum.dart';
@@ -96,8 +96,8 @@ class Reservation extends $pb.GeneratedMessage {
     $fixnum.Int64? slotCapacity,
     $core.bool? ignoreIdleSlots,
     Reservation_Autoscale? autoscale,
-    $1775.Timestamp? creationTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? creationTime,
+    $1776.Timestamp? updateTime,
     $core.bool? multiRegionAuxiliary,
     $fixnum.Int64? concurrency,
     Edition? edition,
@@ -141,8 +141,8 @@ class Reservation extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'slotCapacity')
     ..aOB(4, _omitFieldNames ? '' : 'ignoreIdleSlots')
     ..aOM<Reservation_Autoscale>(7, _omitFieldNames ? '' : 'autoscale', subBuilder: Reservation_Autoscale.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'creationTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'creationTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOB(14, _omitFieldNames ? '' : 'multiRegionAuxiliary')
     ..aInt64(16, _omitFieldNames ? '' : 'concurrency')
     ..e<Edition>(17, _omitFieldNames ? '' : 'edition', $pb.PbFieldType.OE, defaultOrMaker: Edition.EDITION_UNSPECIFIED, valueOf: Edition.valueOf, enumValues: Edition.values)
@@ -235,27 +235,27 @@ class Reservation extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of the reservation.
   @$pb.TagNumber(8)
-  $1775.Timestamp get creationTime => $_getN(4);
+  $1776.Timestamp get creationTime => $_getN(4);
   @$pb.TagNumber(8)
-  set creationTime($1775.Timestamp v) { setField(8, v); }
+  set creationTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreationTime() => $_has(4);
   @$pb.TagNumber(8)
   void clearCreationTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreationTime() => $_ensure(4);
+  $1776.Timestamp ensureCreationTime() => $_ensure(4);
 
   /// Output only. Last update time of the reservation.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   ///  Applicable only for reservations located within one of the BigQuery
   ///  multi-regions (US or EU).
@@ -319,10 +319,10 @@ class CapacityCommitment extends $pb.GeneratedMessage {
     $fixnum.Int64? slotCount,
     CapacityCommitment_CommitmentPlan? plan,
     CapacityCommitment_State? state,
-    $1775.Timestamp? commitmentEndTime,
-    $1795.Status? failureStatus,
+    $1776.Timestamp? commitmentEndTime,
+    $1796.Status? failureStatus,
     CapacityCommitment_CommitmentPlan? renewalPlan,
-    $1775.Timestamp? commitmentStartTime,
+    $1776.Timestamp? commitmentStartTime,
     $core.bool? multiRegionAuxiliary,
     Edition? edition,
   }) {
@@ -368,10 +368,10 @@ class CapacityCommitment extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'slotCount')
     ..e<CapacityCommitment_CommitmentPlan>(3, _omitFieldNames ? '' : 'plan', $pb.PbFieldType.OE, defaultOrMaker: CapacityCommitment_CommitmentPlan.COMMITMENT_PLAN_UNSPECIFIED, valueOf: CapacityCommitment_CommitmentPlan.valueOf, enumValues: CapacityCommitment_CommitmentPlan.values)
     ..e<CapacityCommitment_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CapacityCommitment_State.STATE_UNSPECIFIED, valueOf: CapacityCommitment_State.valueOf, enumValues: CapacityCommitment_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'commitmentEndTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(7, _omitFieldNames ? '' : 'failureStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'commitmentEndTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(7, _omitFieldNames ? '' : 'failureStatus', subBuilder: $1796.Status.create)
     ..e<CapacityCommitment_CommitmentPlan>(8, _omitFieldNames ? '' : 'renewalPlan', $pb.PbFieldType.OE, defaultOrMaker: CapacityCommitment_CommitmentPlan.COMMITMENT_PLAN_UNSPECIFIED, valueOf: CapacityCommitment_CommitmentPlan.valueOf, enumValues: CapacityCommitment_CommitmentPlan.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'commitmentStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'commitmentStartTime', subBuilder: $1776.Timestamp.create)
     ..aOB(10, _omitFieldNames ? '' : 'multiRegionAuxiliary')
     ..e<Edition>(12, _omitFieldNames ? '' : 'edition', $pb.PbFieldType.OE, defaultOrMaker: Edition.EDITION_UNSPECIFIED, valueOf: Edition.valueOf, enumValues: Edition.values)
     ..hasRequiredFields = false
@@ -445,27 +445,27 @@ class CapacityCommitment extends $pb.GeneratedMessage {
   /// Output only. The end of the current commitment period. It is applicable
   /// only for ACTIVE capacity commitments.
   @$pb.TagNumber(5)
-  $1775.Timestamp get commitmentEndTime => $_getN(4);
+  $1776.Timestamp get commitmentEndTime => $_getN(4);
   @$pb.TagNumber(5)
-  set commitmentEndTime($1775.Timestamp v) { setField(5, v); }
+  set commitmentEndTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCommitmentEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCommitmentEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCommitmentEndTime() => $_ensure(4);
+  $1776.Timestamp ensureCommitmentEndTime() => $_ensure(4);
 
   /// Output only. For FAILED commitment plan, provides the reason of failure.
   @$pb.TagNumber(7)
-  $1795.Status get failureStatus => $_getN(5);
+  $1796.Status get failureStatus => $_getN(5);
   @$pb.TagNumber(7)
-  set failureStatus($1795.Status v) { setField(7, v); }
+  set failureStatus($1796.Status v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFailureStatus() => $_has(5);
   @$pb.TagNumber(7)
   void clearFailureStatus() => clearField(7);
   @$pb.TagNumber(7)
-  $1795.Status ensureFailureStatus() => $_ensure(5);
+  $1796.Status ensureFailureStatus() => $_ensure(5);
 
   /// The plan this capacity commitment is converted to after commitment_end_time
   /// passes. Once the plan is changed, committed period is extended according to
@@ -482,15 +482,15 @@ class CapacityCommitment extends $pb.GeneratedMessage {
   /// Output only. The start of the current commitment period. It is applicable
   /// only for ACTIVE capacity commitments.
   @$pb.TagNumber(9)
-  $1775.Timestamp get commitmentStartTime => $_getN(7);
+  $1776.Timestamp get commitmentStartTime => $_getN(7);
   @$pb.TagNumber(9)
-  set commitmentStartTime($1775.Timestamp v) { setField(9, v); }
+  set commitmentStartTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCommitmentStartTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearCommitmentStartTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCommitmentStartTime() => $_ensure(7);
+  $1776.Timestamp ensureCommitmentStartTime() => $_ensure(7);
 
   ///  Applicable only for commitments located within one of the BigQuery
   ///  multi-regions (US or EU).
@@ -869,7 +869,7 @@ class DeleteReservationRequest extends $pb.GeneratedMessage {
 class UpdateReservationRequest extends $pb.GeneratedMessage {
   factory UpdateReservationRequest({
     Reservation? reservation,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (reservation != null) {
@@ -886,7 +886,7 @@ class UpdateReservationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateReservationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.reservation.v1'), createEmptyInstance: create)
     ..aOM<Reservation>(1, _omitFieldNames ? '' : 'reservation', subBuilder: Reservation.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -925,15 +925,15 @@ class UpdateReservationRequest extends $pb.GeneratedMessage {
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for
@@ -1319,7 +1319,7 @@ class DeleteCapacityCommitmentRequest extends $pb.GeneratedMessage {
 class UpdateCapacityCommitmentRequest extends $pb.GeneratedMessage {
   factory UpdateCapacityCommitmentRequest({
     CapacityCommitment? capacityCommitment,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (capacityCommitment != null) {
@@ -1336,7 +1336,7 @@ class UpdateCapacityCommitmentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCapacityCommitmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.reservation.v1'), createEmptyInstance: create)
     ..aOM<CapacityCommitment>(1, _omitFieldNames ? '' : 'capacityCommitment', subBuilder: CapacityCommitment.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1375,15 +1375,15 @@ class UpdateCapacityCommitmentRequest extends $pb.GeneratedMessage {
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for
@@ -2439,7 +2439,7 @@ class MoveAssignmentRequest extends $pb.GeneratedMessage {
 class UpdateAssignmentRequest extends $pb.GeneratedMessage {
   factory UpdateAssignmentRequest({
     Assignment? assignment,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (assignment != null) {
@@ -2456,7 +2456,7 @@ class UpdateAssignmentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAssignmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.reservation.v1'), createEmptyInstance: create)
     ..aOM<Assignment>(1, _omitFieldNames ? '' : 'assignment', subBuilder: Assignment.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2495,15 +2495,15 @@ class UpdateAssignmentRequest extends $pb.GeneratedMessage {
 
   /// Standard field mask for the set of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Fully qualified reference to BigQuery table.
@@ -2593,7 +2593,7 @@ class TableReference extends $pb.GeneratedMessage {
 class BiReservation extends $pb.GeneratedMessage {
   factory BiReservation({
     $core.String? name,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? size,
     $core.Iterable<TableReference>? preferredTables,
   }) {
@@ -2618,7 +2618,7 @@ class BiReservation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BiReservation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.reservation.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(4, _omitFieldNames ? '' : 'size')
     ..pc<TableReference>(5, _omitFieldNames ? '' : 'preferredTables', $pb.PbFieldType.PM, subBuilder: TableReference.create)
     ..hasRequiredFields = false
@@ -2659,15 +2659,15 @@ class BiReservation extends $pb.GeneratedMessage {
 
   /// Output only. The last update timestamp of a reservation.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Size of a reservation, in bytes.
   @$pb.TagNumber(4)
@@ -2741,7 +2741,7 @@ class GetBiReservationRequest extends $pb.GeneratedMessage {
 class UpdateBiReservationRequest extends $pb.GeneratedMessage {
   factory UpdateBiReservationRequest({
     BiReservation? biReservation,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (biReservation != null) {
@@ -2758,7 +2758,7 @@ class UpdateBiReservationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBiReservationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.reservation.v1'), createEmptyInstance: create)
     ..aOM<BiReservation>(1, _omitFieldNames ? '' : 'biReservation', subBuilder: BiReservation.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2797,15 +2797,15 @@ class UpdateBiReservationRequest extends $pb.GeneratedMessage {
 
   /// A list of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

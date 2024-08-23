@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'text_segment.pb.dart' as $4330;
+import 'text_segment.pb.dart' as $4331;
 
 enum TextExtractionAnnotation_Annotation {
   textSegment, 
@@ -24,7 +24,7 @@ enum TextExtractionAnnotation_Annotation {
 class TextExtractionAnnotation extends $pb.GeneratedMessage {
   factory TextExtractionAnnotation({
     $core.double? score,
-    $4330.TextSegment? textSegment,
+    $4331.TextSegment? textSegment,
   }) {
     final $result = create();
     if (score != null) {
@@ -46,7 +46,7 @@ class TextExtractionAnnotation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextExtractionAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1'), createEmptyInstance: create)
     ..oo(0, [3])
     ..a<$core.double>(1, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
-    ..aOM<$4330.TextSegment>(3, _omitFieldNames ? '' : 'textSegment', subBuilder: $4330.TextSegment.create)
+    ..aOM<$4331.TextSegment>(3, _omitFieldNames ? '' : 'textSegment', subBuilder: $4331.TextSegment.create)
     ..hasRequiredFields = false
   ;
 
@@ -88,15 +88,15 @@ class TextExtractionAnnotation extends $pb.GeneratedMessage {
   /// An entity annotation will set this, which is the part of the original
   /// text to which the annotation pertains.
   @$pb.TagNumber(3)
-  $4330.TextSegment get textSegment => $_getN(1);
+  $4331.TextSegment get textSegment => $_getN(1);
   @$pb.TagNumber(3)
-  set textSegment($4330.TextSegment v) { setField(3, v); }
+  set textSegment($4331.TextSegment v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTextSegment() => $_has(1);
   @$pb.TagNumber(3)
   void clearTextSegment() => clearField(3);
   @$pb.TagNumber(3)
-  $4330.TextSegment ensureTextSegment() => $_ensure(1);
+  $4331.TextSegment ensureTextSegment() => $_ensure(1);
 }
 
 /// Metrics for a single confidence threshold.

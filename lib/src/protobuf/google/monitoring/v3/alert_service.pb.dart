@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $2209;
+import '../../protobuf/field_mask.pb.dart' as $2210;
 import 'alert.pb.dart' as $1668;
 
 /// The protocol for the `CreateAlertPolicy` request.
@@ -368,7 +368,7 @@ class ListAlertPoliciesResponse extends $pb.GeneratedMessage {
 /// The protocol for the `UpdateAlertPolicy` request.
 class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateAlertPolicyRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1668.AlertPolicy? alertPolicy,
   }) {
     final $result = create();
@@ -385,7 +385,7 @@ class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateAlertPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAlertPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1668.AlertPolicy>(3, _omitFieldNames ? '' : 'alertPolicy', subBuilder: $1668.AlertPolicy.create)
     ..hasRequiredFields = false
   ;
@@ -433,15 +433,15 @@ class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   ///      `[CONDITION_ID]`. If the supplied condition omits the `name` field,
   ///      then a new `[CONDITION_ID]` is created.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The updated alerting policy or the updated values for the
   /// fields listed in `update_mask`.

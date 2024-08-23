@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'common.pb.dart' as $1566;
 import 'error_stats_service.pbenum.dart';
 
@@ -28,9 +28,9 @@ class ListGroupStatsRequest extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? groupId,
     ServiceContextFilter? serviceFilter,
     QueryTimeRange? timeRange,
-    $1737.Duration? timedCountDuration,
+    $1738.Duration? timedCountDuration,
     TimedCountAlignment? alignment,
-    $1775.Timestamp? alignmentTime,
+    $1776.Timestamp? alignmentTime,
     ErrorGroupOrder? order,
     $core.int? pageSize,
     $core.String? pageToken,
@@ -77,9 +77,9 @@ class ListGroupStatsRequest extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'groupId')
     ..aOM<ServiceContextFilter>(3, _omitFieldNames ? '' : 'serviceFilter', subBuilder: ServiceContextFilter.create)
     ..aOM<QueryTimeRange>(5, _omitFieldNames ? '' : 'timeRange', subBuilder: QueryTimeRange.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'timedCountDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'timedCountDuration', subBuilder: $1738.Duration.create)
     ..e<TimedCountAlignment>(7, _omitFieldNames ? '' : 'alignment', $pb.PbFieldType.OE, defaultOrMaker: TimedCountAlignment.ERROR_COUNT_ALIGNMENT_UNSPECIFIED, valueOf: TimedCountAlignment.valueOf, enumValues: TimedCountAlignment.values)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'alignmentTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'alignmentTime', subBuilder: $1776.Timestamp.create)
     ..e<ErrorGroupOrder>(9, _omitFieldNames ? '' : 'order', $pb.PbFieldType.OE, defaultOrMaker: ErrorGroupOrder.GROUP_ORDER_UNSPECIFIED, valueOf: ErrorGroupOrder.valueOf, enumValues: ErrorGroupOrder.values)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(12, _omitFieldNames ? '' : 'pageToken')
@@ -187,15 +187,15 @@ class ListGroupStatsRequest extends $pb.GeneratedMessage {
   /// [google.devtools.clouderrorreporting.v1beta1.TimedCount]. If not set, no
   /// timed counts are returned.
   @$pb.TagNumber(6)
-  $1737.Duration get timedCountDuration => $_getN(4);
+  $1738.Duration get timedCountDuration => $_getN(4);
   @$pb.TagNumber(6)
-  set timedCountDuration($1737.Duration v) { setField(6, v); }
+  set timedCountDuration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimedCountDuration() => $_has(4);
   @$pb.TagNumber(6)
   void clearTimedCountDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureTimedCountDuration() => $_ensure(4);
+  $1738.Duration ensureTimedCountDuration() => $_ensure(4);
 
   /// Optional. The alignment of the timed counts to be returned.
   /// Default is `ALIGNMENT_EQUAL_AT_END`.
@@ -211,15 +211,15 @@ class ListGroupStatsRequest extends $pb.GeneratedMessage {
   /// Optional. Time where the timed counts shall be aligned if rounded
   /// alignment is chosen. Default is 00:00 UTC.
   @$pb.TagNumber(8)
-  $1775.Timestamp get alignmentTime => $_getN(6);
+  $1776.Timestamp get alignmentTime => $_getN(6);
   @$pb.TagNumber(8)
-  set alignmentTime($1775.Timestamp v) { setField(8, v); }
+  set alignmentTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAlignmentTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearAlignmentTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureAlignmentTime() => $_ensure(6);
+  $1776.Timestamp ensureAlignmentTime() => $_ensure(6);
 
   /// Optional. The sort order in which the results are returned.
   /// Default is `COUNT_DESC`.
@@ -262,7 +262,7 @@ class ListGroupStatsResponse extends $pb.GeneratedMessage {
   factory ListGroupStatsResponse({
     $core.Iterable<ErrorGroupStats>? errorGroupStats,
     $core.String? nextPageToken,
-    $1775.Timestamp? timeRangeBegin,
+    $1776.Timestamp? timeRangeBegin,
   }) {
     final $result = create();
     if (errorGroupStats != null) {
@@ -283,7 +283,7 @@ class ListGroupStatsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListGroupStatsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouderrorreporting.v1beta1'), createEmptyInstance: create)
     ..pc<ErrorGroupStats>(1, _omitFieldNames ? '' : 'errorGroupStats', $pb.PbFieldType.PM, subBuilder: ErrorGroupStats.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'timeRangeBegin', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'timeRangeBegin', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -329,15 +329,15 @@ class ListGroupStatsResponse extends $pb.GeneratedMessage {
   /// to a later time if a project has exceeded the storage quota and older data
   /// has been deleted.
   @$pb.TagNumber(4)
-  $1775.Timestamp get timeRangeBegin => $_getN(2);
+  $1776.Timestamp get timeRangeBegin => $_getN(2);
   @$pb.TagNumber(4)
-  set timeRangeBegin($1775.Timestamp v) { setField(4, v); }
+  set timeRangeBegin($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeRangeBegin() => $_has(2);
   @$pb.TagNumber(4)
   void clearTimeRangeBegin() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureTimeRangeBegin() => $_ensure(2);
+  $1776.Timestamp ensureTimeRangeBegin() => $_ensure(2);
 }
 
 /// Data extracted for a specific group based on certain filter criteria,
@@ -348,8 +348,8 @@ class ErrorGroupStats extends $pb.GeneratedMessage {
     $fixnum.Int64? count,
     $fixnum.Int64? affectedUsersCount,
     $core.Iterable<TimedCount>? timedCounts,
-    $1775.Timestamp? firstSeenTime,
-    $1775.Timestamp? lastSeenTime,
+    $1776.Timestamp? firstSeenTime,
+    $1776.Timestamp? lastSeenTime,
     $core.Iterable<$1566.ServiceContext>? affectedServices,
     $core.int? numAffectedServices,
     $1566.ErrorEvent? representative,
@@ -393,8 +393,8 @@ class ErrorGroupStats extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'count')
     ..aInt64(3, _omitFieldNames ? '' : 'affectedUsersCount')
     ..pc<TimedCount>(4, _omitFieldNames ? '' : 'timedCounts', $pb.PbFieldType.PM, subBuilder: TimedCount.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'firstSeenTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'lastSeenTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'firstSeenTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'lastSeenTime', subBuilder: $1776.Timestamp.create)
     ..pc<$1566.ServiceContext>(7, _omitFieldNames ? '' : 'affectedServices', $pb.PbFieldType.PM, subBuilder: $1566.ServiceContext.create)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'numAffectedServices', $pb.PbFieldType.O3)
     ..aOM<$1566.ErrorEvent>(9, _omitFieldNames ? '' : 'representative', subBuilder: $1566.ErrorEvent.create)
@@ -480,29 +480,29 @@ class ErrorGroupStats extends $pb.GeneratedMessage {
   /// and which matches the given filter criteria, ignoring the
   /// time_range that was specified in the request.
   @$pb.TagNumber(5)
-  $1775.Timestamp get firstSeenTime => $_getN(4);
+  $1776.Timestamp get firstSeenTime => $_getN(4);
   @$pb.TagNumber(5)
-  set firstSeenTime($1775.Timestamp v) { setField(5, v); }
+  set firstSeenTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFirstSeenTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearFirstSeenTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureFirstSeenTime() => $_ensure(4);
+  $1776.Timestamp ensureFirstSeenTime() => $_ensure(4);
 
   /// Approximate last occurrence that was ever seen for this group and
   /// which matches the given filter criteria, ignoring the time_range
   /// that was specified in the request.
   @$pb.TagNumber(6)
-  $1775.Timestamp get lastSeenTime => $_getN(5);
+  $1776.Timestamp get lastSeenTime => $_getN(5);
   @$pb.TagNumber(6)
-  set lastSeenTime($1775.Timestamp v) { setField(6, v); }
+  set lastSeenTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLastSeenTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearLastSeenTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureLastSeenTime() => $_ensure(5);
+  $1776.Timestamp ensureLastSeenTime() => $_ensure(5);
 
   /// Service contexts with a non-zero error count for the given filter
   /// criteria. This list can be truncated if multiple services are affected.
@@ -544,8 +544,8 @@ class ErrorGroupStats extends $pb.GeneratedMessage {
 class TimedCount extends $pb.GeneratedMessage {
   factory TimedCount({
     $fixnum.Int64? count,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (count != null) {
@@ -565,8 +565,8 @@ class TimedCount extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimedCount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouderrorreporting.v1beta1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'count')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -603,27 +603,27 @@ class TimedCount extends $pb.GeneratedMessage {
 
   /// Start of the time period to which `count` refers (included).
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// End of the time period to which `count` refers (excluded).
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// Specifies a set of error events to return.
@@ -782,7 +782,7 @@ class ListEventsResponse extends $pb.GeneratedMessage {
   factory ListEventsResponse({
     $core.Iterable<$1566.ErrorEvent>? errorEvents,
     $core.String? nextPageToken,
-    $1775.Timestamp? timeRangeBegin,
+    $1776.Timestamp? timeRangeBegin,
   }) {
     final $result = create();
     if (errorEvents != null) {
@@ -803,7 +803,7 @@ class ListEventsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListEventsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouderrorreporting.v1beta1'), createEmptyInstance: create)
     ..pc<$1566.ErrorEvent>(1, _omitFieldNames ? '' : 'errorEvents', $pb.PbFieldType.PM, subBuilder: $1566.ErrorEvent.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'timeRangeBegin', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'timeRangeBegin', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -846,15 +846,15 @@ class ListEventsResponse extends $pb.GeneratedMessage {
 
   /// The timestamp specifies the start time to which the request was restricted.
   @$pb.TagNumber(4)
-  $1775.Timestamp get timeRangeBegin => $_getN(2);
+  $1776.Timestamp get timeRangeBegin => $_getN(2);
   @$pb.TagNumber(4)
-  set timeRangeBegin($1775.Timestamp v) { setField(4, v); }
+  set timeRangeBegin($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeRangeBegin() => $_has(2);
   @$pb.TagNumber(4)
   void clearTimeRangeBegin() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureTimeRangeBegin() => $_ensure(2);
+  $1776.Timestamp ensureTimeRangeBegin() => $_ensure(2);
 }
 
 ///  A time range for which error group data shall be displayed.

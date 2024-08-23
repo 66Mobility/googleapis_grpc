@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Represents one model Version in ml.googleapis.com.
 class MigratableResource_MlEngineModelVersion extends $pb.GeneratedMessage {
@@ -392,8 +392,8 @@ class MigratableResource extends $pb.GeneratedMessage {
     MigratableResource_AutomlModel? automlModel,
     MigratableResource_AutomlDataset? automlDataset,
     MigratableResource_DataLabelingDataset? dataLabelingDataset,
-    $1775.Timestamp? lastMigrateTime,
-    $1775.Timestamp? lastUpdateTime,
+    $1776.Timestamp? lastMigrateTime,
+    $1776.Timestamp? lastUpdateTime,
   }) {
     final $result = create();
     if (mlEngineModelVersion != null) {
@@ -433,8 +433,8 @@ class MigratableResource extends $pb.GeneratedMessage {
     ..aOM<MigratableResource_AutomlModel>(2, _omitFieldNames ? '' : 'automlModel', subBuilder: MigratableResource_AutomlModel.create)
     ..aOM<MigratableResource_AutomlDataset>(3, _omitFieldNames ? '' : 'automlDataset', subBuilder: MigratableResource_AutomlDataset.create)
     ..aOM<MigratableResource_DataLabelingDataset>(4, _omitFieldNames ? '' : 'dataLabelingDataset', subBuilder: MigratableResource_DataLabelingDataset.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'lastMigrateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'lastMigrateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -514,27 +514,27 @@ class MigratableResource extends $pb.GeneratedMessage {
   /// MigratableResource started. Will not be set if there's no migration attempt
   /// on this MigratableResource.
   @$pb.TagNumber(5)
-  $1775.Timestamp get lastMigrateTime => $_getN(4);
+  $1776.Timestamp get lastMigrateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set lastMigrateTime($1775.Timestamp v) { setField(5, v); }
+  set lastMigrateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLastMigrateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearLastMigrateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureLastMigrateTime() => $_ensure(4);
+  $1776.Timestamp ensureLastMigrateTime() => $_ensure(4);
 
   /// Output only. Timestamp when this MigratableResource was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get lastUpdateTime => $_getN(5);
+  $1776.Timestamp get lastUpdateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set lastUpdateTime($1775.Timestamp v) { setField(6, v); }
+  set lastUpdateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLastUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearLastUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureLastUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureLastUpdateTime() => $_ensure(5);
 }
 
 

@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../geo/type/viewport.pb.dart' as $4793;
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../type/latlng.pb.dart' as $1798;
-import 'fleetengine.pb.dart' as $4801;
-import 'fleetengine.pbenum.dart' as $4801;
-import 'header.pb.dart' as $4802;
+import '../../../geo/type/viewport.pb.dart' as $4795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../type/latlng.pb.dart' as $1799;
+import 'fleetengine.pb.dart' as $4803;
+import 'fleetengine.pbenum.dart' as $4803;
+import 'header.pb.dart' as $4804;
 import 'vehicle_api.pbenum.dart';
 import 'vehicles.pb.dart' as $1644;
 import 'vehicles.pbenum.dart' as $1644;
@@ -32,7 +32,7 @@ export 'vehicle_api.pbenum.dart';
 /// `CreateVehicle` request message.
 class CreateVehicleRequest extends $pb.GeneratedMessage {
   factory CreateVehicleRequest({
-    $4802.RequestHeader? header,
+    $4804.RequestHeader? header,
     $core.String? parent,
     $core.String? vehicleId,
     $1644.Vehicle? vehicle,
@@ -57,7 +57,7 @@ class CreateVehicleRequest extends $pb.GeneratedMessage {
   factory CreateVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$4802.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4802.RequestHeader.create)
+    ..aOM<$4804.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4804.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'vehicleId')
     ..aOM<$1644.Vehicle>(5, _omitFieldNames ? '' : 'vehicle', subBuilder: $1644.Vehicle.create)
@@ -87,15 +87,15 @@ class CreateVehicleRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $4802.RequestHeader get header => $_getN(0);
+  $4804.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($4802.RequestHeader v) { setField(1, v); }
+  set header($4804.RequestHeader v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $4802.RequestHeader ensureHeader() => $_ensure(0);
+  $4804.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`.
   /// The provider must be the Project ID (for example, `sample-cloud-project`)
@@ -169,10 +169,10 @@ class CreateVehicleRequest extends $pb.GeneratedMessage {
 /// `GetVehicle` request message.
 class GetVehicleRequest extends $pb.GeneratedMessage {
   factory GetVehicleRequest({
-    $4802.RequestHeader? header,
+    $4804.RequestHeader? header,
     $core.String? name,
-    $1775.Timestamp? currentRouteSegmentVersion,
-    $1775.Timestamp? waypointsVersion,
+    $1776.Timestamp? currentRouteSegmentVersion,
+    $1776.Timestamp? waypointsVersion,
   }) {
     final $result = create();
     if (header != null) {
@@ -194,10 +194,10 @@ class GetVehicleRequest extends $pb.GeneratedMessage {
   factory GetVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$4802.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4802.RequestHeader.create)
+    ..aOM<$4804.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4804.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'currentRouteSegmentVersion', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'waypointsVersion', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'currentRouteSegmentVersion', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'waypointsVersion', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -224,15 +224,15 @@ class GetVehicleRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $4802.RequestHeader get header => $_getN(0);
+  $4804.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($4802.RequestHeader v) { setField(1, v); }
+  set header($4804.RequestHeader v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $4802.RequestHeader ensureHeader() => $_ensure(0);
+  $4804.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format
   /// `providers/{provider}/vehicles/{vehicle}`.
@@ -254,39 +254,39 @@ class GetVehicleRequest extends $pb.GeneratedMessage {
   /// field is not set in the response. If a minimum is unspecified, the
   /// `current_route_segment` is always retrieved.
   @$pb.TagNumber(4)
-  $1775.Timestamp get currentRouteSegmentVersion => $_getN(2);
+  $1776.Timestamp get currentRouteSegmentVersion => $_getN(2);
   @$pb.TagNumber(4)
-  set currentRouteSegmentVersion($1775.Timestamp v) { setField(4, v); }
+  set currentRouteSegmentVersion($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCurrentRouteSegmentVersion() => $_has(2);
   @$pb.TagNumber(4)
   void clearCurrentRouteSegmentVersion() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(2);
+  $1776.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(2);
 
   /// Indicates the minimum timestamp (exclusive) for which `Vehicle.waypoints`
   /// data is retrieved. If the waypoints are unchanged since this timestamp, the
   /// `vehicle.waypoints` data is not set in the response. If this field is
   /// unspecified, `vehicle.waypoints` is always retrieved.
   @$pb.TagNumber(5)
-  $1775.Timestamp get waypointsVersion => $_getN(3);
+  $1776.Timestamp get waypointsVersion => $_getN(3);
   @$pb.TagNumber(5)
-  set waypointsVersion($1775.Timestamp v) { setField(5, v); }
+  set waypointsVersion($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasWaypointsVersion() => $_has(3);
   @$pb.TagNumber(5)
   void clearWaypointsVersion() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureWaypointsVersion() => $_ensure(3);
+  $1776.Timestamp ensureWaypointsVersion() => $_ensure(3);
 }
 
 /// `UpdateVehicle request message.
 class UpdateVehicleRequest extends $pb.GeneratedMessage {
   factory UpdateVehicleRequest({
-    $4802.RequestHeader? header,
+    $4804.RequestHeader? header,
     $core.String? name,
     $1644.Vehicle? vehicle,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (header != null) {
@@ -308,10 +308,10 @@ class UpdateVehicleRequest extends $pb.GeneratedMessage {
   factory UpdateVehicleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVehicleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$4802.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4802.RequestHeader.create)
+    ..aOM<$4804.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4804.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOM<$1644.Vehicle>(4, _omitFieldNames ? '' : 'vehicle', subBuilder: $1644.Vehicle.create)
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -338,15 +338,15 @@ class UpdateVehicleRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $4802.RequestHeader get header => $_getN(0);
+  $4804.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($4802.RequestHeader v) { setField(1, v); }
+  set header($4804.RequestHeader v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $4802.RequestHeader ensureHeader() => $_ensure(0);
+  $4804.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format
   /// `providers/{provider}/vehicles/{vehicle}`.
@@ -392,23 +392,23 @@ class UpdateVehicleRequest extends $pb.GeneratedMessage {
   /// Required. A field mask indicating which fields of the `Vehicle` to update.
   /// At least one field name must be provided.
   @$pb.TagNumber(5)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(5)
-  set updateMask($2209.FieldMask v) { setField(5, v); }
+  set updateMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// `UpdateVehicleAttributes` request message.
 class UpdateVehicleAttributesRequest extends $pb.GeneratedMessage {
   factory UpdateVehicleAttributesRequest({
-    $4802.RequestHeader? header,
+    $4804.RequestHeader? header,
     $core.String? name,
-    $core.Iterable<$4801.VehicleAttribute>? attributes,
+    $core.Iterable<$4803.VehicleAttribute>? attributes,
   }) {
     final $result = create();
     if (header != null) {
@@ -427,9 +427,9 @@ class UpdateVehicleAttributesRequest extends $pb.GeneratedMessage {
   factory UpdateVehicleAttributesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVehicleAttributesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$4802.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4802.RequestHeader.create)
+    ..aOM<$4804.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4804.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..pc<$4801.VehicleAttribute>(4, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4801.VehicleAttribute.create)
+    ..pc<$4803.VehicleAttribute>(4, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4803.VehicleAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -456,15 +456,15 @@ class UpdateVehicleAttributesRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $4802.RequestHeader get header => $_getN(0);
+  $4804.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($4802.RequestHeader v) { setField(1, v); }
+  set header($4804.RequestHeader v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $4802.RequestHeader ensureHeader() => $_ensure(0);
+  $4804.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}/vehicles/{vehicle}`.
   /// The provider must be the Project ID (for example, `sample-cloud-project`)
@@ -482,13 +482,13 @@ class UpdateVehicleAttributesRequest extends $pb.GeneratedMessage {
   /// Required. The vehicle attributes to update. Unmentioned attributes are not
   /// altered or removed.
   @$pb.TagNumber(4)
-  $core.List<$4801.VehicleAttribute> get attributes => $_getList(2);
+  $core.List<$4803.VehicleAttribute> get attributes => $_getList(2);
 }
 
 /// `UpdateVehicleAttributes` response message.
 class UpdateVehicleAttributesResponse extends $pb.GeneratedMessage {
   factory UpdateVehicleAttributesResponse({
-    $core.Iterable<$4801.VehicleAttribute>? attributes,
+    $core.Iterable<$4803.VehicleAttribute>? attributes,
   }) {
     final $result = create();
     if (attributes != null) {
@@ -501,7 +501,7 @@ class UpdateVehicleAttributesResponse extends $pb.GeneratedMessage {
   factory UpdateVehicleAttributesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVehicleAttributesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<$4801.VehicleAttribute>(1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4801.VehicleAttribute.create)
+    ..pc<$4803.VehicleAttribute>(1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4803.VehicleAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -529,22 +529,22 @@ class UpdateVehicleAttributesResponse extends $pb.GeneratedMessage {
   /// Required. The updated full list of vehicle attributes, including new,
   /// altered, and untouched attributes.
   @$pb.TagNumber(1)
-  $core.List<$4801.VehicleAttribute> get attributes => $_getList(0);
+  $core.List<$4803.VehicleAttribute> get attributes => $_getList(0);
 }
 
 /// `SearchVehicles` request message.
 class SearchVehiclesRequest extends $pb.GeneratedMessage {
   factory SearchVehiclesRequest({
-    $4802.RequestHeader? header,
+    $4804.RequestHeader? header,
     $core.String? parent,
-    $4801.TerminalLocation? pickupPoint,
-    $4801.TerminalLocation? dropoffPoint,
+    $4803.TerminalLocation? pickupPoint,
+    $4803.TerminalLocation? dropoffPoint,
     $core.int? pickupRadiusMeters,
     $core.int? count,
     $core.int? minimumCapacity,
-    $core.Iterable<$4801.TripType>? tripTypes,
-    $1737.Duration? maximumStaleness,
-    $core.Iterable<$4801.VehicleAttribute>? requiredAttributes,
+    $core.Iterable<$4803.TripType>? tripTypes,
+    $1738.Duration? maximumStaleness,
+    $core.Iterable<$4803.VehicleAttribute>? requiredAttributes,
     SearchVehiclesRequest_VehicleMatchOrder? orderBy,
     $core.Iterable<$1644.Vehicle_VehicleType>? vehicleTypes,
     $core.Iterable<VehicleAttributeList>? requiredOneOfAttributes,
@@ -616,16 +616,16 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   factory SearchVehiclesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchVehiclesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$4802.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4802.RequestHeader.create)
+    ..aOM<$4804.RequestHeader>(1, _omitFieldNames ? '' : 'header', subBuilder: $4804.RequestHeader.create)
     ..aOS(3, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4801.TerminalLocation>(4, _omitFieldNames ? '' : 'pickupPoint', subBuilder: $4801.TerminalLocation.create)
-    ..aOM<$4801.TerminalLocation>(5, _omitFieldNames ? '' : 'dropoffPoint', subBuilder: $4801.TerminalLocation.create)
+    ..aOM<$4803.TerminalLocation>(4, _omitFieldNames ? '' : 'pickupPoint', subBuilder: $4803.TerminalLocation.create)
+    ..aOM<$4803.TerminalLocation>(5, _omitFieldNames ? '' : 'dropoffPoint', subBuilder: $4803.TerminalLocation.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'pickupRadiusMeters', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'minimumCapacity', $pb.PbFieldType.O3)
-    ..pc<$4801.TripType>(9, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE, valueOf: $4801.TripType.valueOf, enumValues: $4801.TripType.values, defaultEnumValue: $4801.TripType.UNKNOWN_TRIP_TYPE)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'maximumStaleness', subBuilder: $1737.Duration.create)
-    ..pc<$4801.VehicleAttribute>(12, _omitFieldNames ? '' : 'requiredAttributes', $pb.PbFieldType.PM, subBuilder: $4801.VehicleAttribute.create)
+    ..pc<$4803.TripType>(9, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE, valueOf: $4803.TripType.valueOf, enumValues: $4803.TripType.values, defaultEnumValue: $4803.TripType.UNKNOWN_TRIP_TYPE)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'maximumStaleness', subBuilder: $1738.Duration.create)
+    ..pc<$4803.VehicleAttribute>(12, _omitFieldNames ? '' : 'requiredAttributes', $pb.PbFieldType.PM, subBuilder: $4803.VehicleAttribute.create)
     ..e<SearchVehiclesRequest_VehicleMatchOrder>(13, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.OE, defaultOrMaker: SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER, valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf, enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
     ..pc<$1644.Vehicle_VehicleType>(14, _omitFieldNames ? '' : 'vehicleTypes', $pb.PbFieldType.PM, subBuilder: $1644.Vehicle_VehicleType.create)
     ..pc<VehicleAttributeList>(15, _omitFieldNames ? '' : 'requiredOneOfAttributes', $pb.PbFieldType.PM, subBuilder: VehicleAttributeList.create)
@@ -660,15 +660,15 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(1)
-  $4802.RequestHeader get header => $_getN(0);
+  $4804.RequestHeader get header => $_getN(0);
   @$pb.TagNumber(1)
-  set header($4802.RequestHeader v) { setField(1, v); }
+  set header($4804.RequestHeader v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeader() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeader() => clearField(1);
   @$pb.TagNumber(1)
-  $4802.RequestHeader ensureHeader() => $_ensure(0);
+  $4804.RequestHeader ensureHeader() => $_ensure(0);
 
   /// Required. Must be in the format `providers/{provider}`.
   /// The provider must be the Project ID (for example, `sample-cloud-project`)
@@ -685,28 +685,28 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
 
   /// Required. The pickup point to search near.
   @$pb.TagNumber(4)
-  $4801.TerminalLocation get pickupPoint => $_getN(2);
+  $4803.TerminalLocation get pickupPoint => $_getN(2);
   @$pb.TagNumber(4)
-  set pickupPoint($4801.TerminalLocation v) { setField(4, v); }
+  set pickupPoint($4803.TerminalLocation v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPickupPoint() => $_has(2);
   @$pb.TagNumber(4)
   void clearPickupPoint() => clearField(4);
   @$pb.TagNumber(4)
-  $4801.TerminalLocation ensurePickupPoint() => $_ensure(2);
+  $4803.TerminalLocation ensurePickupPoint() => $_ensure(2);
 
   /// The customer's intended dropoff location. The field is required if
   /// `trip_types` contains `TripType.SHARED`.
   @$pb.TagNumber(5)
-  $4801.TerminalLocation get dropoffPoint => $_getN(3);
+  $4803.TerminalLocation get dropoffPoint => $_getN(3);
   @$pb.TagNumber(5)
-  set dropoffPoint($4801.TerminalLocation v) { setField(5, v); }
+  set dropoffPoint($4803.TerminalLocation v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDropoffPoint() => $_has(3);
   @$pb.TagNumber(5)
   void clearDropoffPoint() => clearField(5);
   @$pb.TagNumber(5)
-  $4801.TerminalLocation ensureDropoffPoint() => $_ensure(3);
+  $4803.TerminalLocation ensureDropoffPoint() => $_ensure(3);
 
   /// Required. Defines the vehicle search radius around the pickup point. Only
   /// vehicles within the search radius will be returned. Value must be between
@@ -747,22 +747,22 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   /// type. `UNKNOWN_TRIP_TYPE` is not allowed. Restricts the search to only
   /// those vehicles that can support that trip type.
   @$pb.TagNumber(9)
-  $core.List<$4801.TripType> get tripTypes => $_getList(7);
+  $core.List<$4803.TripType> get tripTypes => $_getList(7);
 
   /// Restricts the search to only those vehicles that have sent location updates
   /// to Fleet Engine within the specified duration. Stationary vehicles still
   /// transmitting their locations are not considered stale. If this field is not
   /// set, the server uses five minutes as the default value.
   @$pb.TagNumber(10)
-  $1737.Duration get maximumStaleness => $_getN(8);
+  $1738.Duration get maximumStaleness => $_getN(8);
   @$pb.TagNumber(10)
-  set maximumStaleness($1737.Duration v) { setField(10, v); }
+  set maximumStaleness($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMaximumStaleness() => $_has(8);
   @$pb.TagNumber(10)
   void clearMaximumStaleness() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureMaximumStaleness() => $_ensure(8);
+  $1738.Duration ensureMaximumStaleness() => $_ensure(8);
 
   ///  Callers can form complex logical operations using any combination of the
   ///  `required_attributes`, `required_one_of_attributes`, and
@@ -787,7 +787,7 @@ class SearchVehiclesRequest extends $pb.GeneratedMessage {
   ///  is allowed. This matches the maximum number of attributes allowed on a
   ///  vehicle.
   @$pb.TagNumber(12)
-  $core.List<$4801.VehicleAttribute> get requiredAttributes => $_getList(9);
+  $core.List<$4803.VehicleAttribute> get requiredAttributes => $_getList(9);
 
   /// Required. Specifies the desired ordering criterion for results.
   @$pb.TagNumber(13)
@@ -967,18 +967,18 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
-    $1780.Int32Value? minimumCapacity,
-    $core.Iterable<$4801.TripType>? tripTypes,
-    $1737.Duration? maximumStaleness,
+    $1781.Int32Value? minimumCapacity,
+    $core.Iterable<$4803.TripType>? tripTypes,
+    $1738.Duration? maximumStaleness,
     $core.Iterable<$1644.Vehicle_VehicleType_Category>? vehicleTypeCategories,
     $core.Iterable<$core.String>? requiredAttributes,
     $1644.VehicleState? vehicleState,
-    $4802.RequestHeader? header,
+    $4804.RequestHeader? header,
     $core.Iterable<$core.String>? requiredOneOfAttributes,
     $core.bool? onTripOnly,
     $core.Iterable<$core.String>? requiredOneOfAttributeSets,
     $core.String? filter,
-    $4793.Viewport? viewport,
+    $4795.Viewport? viewport,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1036,18 +1036,18 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$1780.Int32Value>(6, _omitFieldNames ? '' : 'minimumCapacity', subBuilder: $1780.Int32Value.create)
-    ..pc<$4801.TripType>(7, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE, valueOf: $4801.TripType.valueOf, enumValues: $4801.TripType.values, defaultEnumValue: $4801.TripType.UNKNOWN_TRIP_TYPE)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'maximumStaleness', subBuilder: $1737.Duration.create)
+    ..aOM<$1781.Int32Value>(6, _omitFieldNames ? '' : 'minimumCapacity', subBuilder: $1781.Int32Value.create)
+    ..pc<$4803.TripType>(7, _omitFieldNames ? '' : 'tripTypes', $pb.PbFieldType.KE, valueOf: $4803.TripType.valueOf, enumValues: $4803.TripType.values, defaultEnumValue: $4803.TripType.UNKNOWN_TRIP_TYPE)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'maximumStaleness', subBuilder: $1738.Duration.create)
     ..pc<$1644.Vehicle_VehicleType_Category>(9, _omitFieldNames ? '' : 'vehicleTypeCategories', $pb.PbFieldType.KE, valueOf: $1644.Vehicle_VehicleType_Category.valueOf, enumValues: $1644.Vehicle_VehicleType_Category.values, defaultEnumValue: $1644.Vehicle_VehicleType_Category.UNKNOWN)
     ..pPS(10, _omitFieldNames ? '' : 'requiredAttributes')
     ..e<$1644.VehicleState>(11, _omitFieldNames ? '' : 'vehicleState', $pb.PbFieldType.OE, defaultOrMaker: $1644.VehicleState.UNKNOWN_VEHICLE_STATE, valueOf: $1644.VehicleState.valueOf, enumValues: $1644.VehicleState.values)
-    ..aOM<$4802.RequestHeader>(12, _omitFieldNames ? '' : 'header', subBuilder: $4802.RequestHeader.create)
+    ..aOM<$4804.RequestHeader>(12, _omitFieldNames ? '' : 'header', subBuilder: $4804.RequestHeader.create)
     ..pPS(13, _omitFieldNames ? '' : 'requiredOneOfAttributes')
     ..aOB(14, _omitFieldNames ? '' : 'onTripOnly')
     ..pPS(15, _omitFieldNames ? '' : 'requiredOneOfAttributeSets')
     ..aOS(16, _omitFieldNames ? '' : 'filter')
-    ..aOM<$4793.Viewport>(17, _omitFieldNames ? '' : 'viewport', subBuilder: $4793.Viewport.create)
+    ..aOM<$4795.Viewport>(17, _omitFieldNames ? '' : 'viewport', subBuilder: $4795.Viewport.create)
     ..hasRequiredFields = false
   ;
 
@@ -1113,35 +1113,35 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   /// returned will have a `maximum_capacity` greater than or equal to this
   /// value. If set, must be greater or equal to 0.
   @$pb.TagNumber(6)
-  $1780.Int32Value get minimumCapacity => $_getN(3);
+  $1781.Int32Value get minimumCapacity => $_getN(3);
   @$pb.TagNumber(6)
-  set minimumCapacity($1780.Int32Value v) { setField(6, v); }
+  set minimumCapacity($1781.Int32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMinimumCapacity() => $_has(3);
   @$pb.TagNumber(6)
   void clearMinimumCapacity() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int32Value ensureMinimumCapacity() => $_ensure(3);
+  $1781.Int32Value ensureMinimumCapacity() => $_ensure(3);
 
   /// Restricts the response to vehicles that support at least one of the
   /// specified trip types.
   @$pb.TagNumber(7)
-  $core.List<$4801.TripType> get tripTypes => $_getList(4);
+  $core.List<$4803.TripType> get tripTypes => $_getList(4);
 
   /// Restricts the response to vehicles that have sent location updates to Fleet
   /// Engine within the specified duration. Stationary vehicles still
   /// transmitting their locations are not considered stale. If present, must be
   /// a valid positive duration.
   @$pb.TagNumber(8)
-  $1737.Duration get maximumStaleness => $_getN(5);
+  $1738.Duration get maximumStaleness => $_getN(5);
   @$pb.TagNumber(8)
-  set maximumStaleness($1737.Duration v) { setField(8, v); }
+  set maximumStaleness($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMaximumStaleness() => $_has(5);
   @$pb.TagNumber(8)
   void clearMaximumStaleness() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureMaximumStaleness() => $_ensure(5);
+  $1738.Duration ensureMaximumStaleness() => $_ensure(5);
 
   /// Required. Restricts the response to vehicles with one of the specified type
   /// categories. `UNKNOWN` is not allowed.
@@ -1185,15 +1185,15 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
 
   /// The standard Fleet Engine request header.
   @$pb.TagNumber(12)
-  $4802.RequestHeader get header => $_getN(9);
+  $4804.RequestHeader get header => $_getN(9);
   @$pb.TagNumber(12)
-  set header($4802.RequestHeader v) { setField(12, v); }
+  set header($4804.RequestHeader v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasHeader() => $_has(9);
   @$pb.TagNumber(12)
   void clearHeader() => clearField(12);
   @$pb.TagNumber(12)
-  $4802.RequestHeader ensureHeader() => $_ensure(9);
+  $4804.RequestHeader ensureHeader() => $_ensure(9);
 
   /// Restricts the response to vehicles with at least one of the specified
   /// attributes in each `VehicleAttributeList`. Within each list, a vehicle must
@@ -1278,15 +1278,15 @@ class ListVehiclesRequest extends $pb.GeneratedMessage {
   /// Optional. A filter that limits the vehicles returned to those whose last
   /// known location was in the rectangular area defined by the viewport.
   @$pb.TagNumber(17)
-  $4793.Viewport get viewport => $_getN(14);
+  $4795.Viewport get viewport => $_getN(14);
   @$pb.TagNumber(17)
-  set viewport($4793.Viewport v) { setField(17, v); }
+  set viewport($4795.Viewport v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasViewport() => $_has(14);
   @$pb.TagNumber(17)
   void clearViewport() => clearField(17);
   @$pb.TagNumber(17)
-  $4793.Viewport ensureViewport() => $_ensure(14);
+  $4795.Viewport ensureViewport() => $_ensure(14);
 }
 
 /// `ListVehicles` response message.
@@ -1374,8 +1374,8 @@ class ListVehiclesResponse extends $pb.GeneratedMessage {
 /// all other endpoints.
 class Waypoint extends $pb.GeneratedMessage {
   factory Waypoint({
-    $1798.LatLng? latLng,
-    $1775.Timestamp? eta,
+    $1799.LatLng? latLng,
+    $1776.Timestamp? eta,
   }) {
     final $result = create();
     if (latLng != null) {
@@ -1391,8 +1391,8 @@ class Waypoint extends $pb.GeneratedMessage {
   factory Waypoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Waypoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1798.LatLng.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'eta', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1799.LatLng.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'eta', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1419,27 +1419,27 @@ class Waypoint extends $pb.GeneratedMessage {
 
   /// The location of this waypoint.
   @$pb.TagNumber(1)
-  $1798.LatLng get latLng => $_getN(0);
+  $1799.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($1798.LatLng v) { setField(1, v); }
+  set latLng($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
   void clearLatLng() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureLatLng() => $_ensure(0);
+  $1799.LatLng ensureLatLng() => $_ensure(0);
 
   /// The estimated time that the vehicle will arrive at this waypoint.
   @$pb.TagNumber(2)
-  $1775.Timestamp get eta => $_getN(1);
+  $1776.Timestamp get eta => $_getN(1);
   @$pb.TagNumber(2)
-  set eta($1775.Timestamp v) { setField(2, v); }
+  set eta($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEta() => $_has(1);
   @$pb.TagNumber(2)
   void clearEta() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEta() => $_ensure(1);
+  $1776.Timestamp ensureEta() => $_ensure(1);
 }
 
 /// Contains the vehicle and related estimates for a vehicle that match the
@@ -1447,16 +1447,16 @@ class Waypoint extends $pb.GeneratedMessage {
 class VehicleMatch extends $pb.GeneratedMessage {
   factory VehicleMatch({
     $1644.Vehicle? vehicle,
-    $1775.Timestamp? vehiclePickupEta,
-    $1780.Int32Value? vehiclePickupDistanceMeters,
-    $1775.Timestamp? vehicleDropoffEta,
-    $1780.Int32Value? vehiclePickupToDropoffDistanceMeters,
-    $4801.TripType? tripType,
+    $1776.Timestamp? vehiclePickupEta,
+    $1781.Int32Value? vehiclePickupDistanceMeters,
+    $1776.Timestamp? vehicleDropoffEta,
+    $1781.Int32Value? vehiclePickupToDropoffDistanceMeters,
+    $4803.TripType? tripType,
     $core.Iterable<Waypoint>? vehicleTripsWaypoints,
     VehicleMatch_VehicleMatchType? vehicleMatchType,
     SearchVehiclesRequest_VehicleMatchOrder? requestedOrderedBy,
     SearchVehiclesRequest_VehicleMatchOrder? orderedBy,
-    $1780.Int32Value? vehiclePickupStraightLineDistanceMeters,
+    $1781.Int32Value? vehiclePickupStraightLineDistanceMeters,
   }) {
     final $result = create();
     if (vehicle != null) {
@@ -1500,16 +1500,16 @@ class VehicleMatch extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleMatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
     ..aOM<$1644.Vehicle>(1, _omitFieldNames ? '' : 'vehicle', subBuilder: $1644.Vehicle.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'vehiclePickupEta', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1780.Int32Value>(3, _omitFieldNames ? '' : 'vehiclePickupDistanceMeters', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'vehicleDropoffEta', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1780.Int32Value>(5, _omitFieldNames ? '' : 'vehiclePickupToDropoffDistanceMeters', subBuilder: $1780.Int32Value.create)
-    ..e<$4801.TripType>(6, _omitFieldNames ? '' : 'tripType', $pb.PbFieldType.OE, defaultOrMaker: $4801.TripType.UNKNOWN_TRIP_TYPE, valueOf: $4801.TripType.valueOf, enumValues: $4801.TripType.values)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'vehiclePickupEta', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1781.Int32Value>(3, _omitFieldNames ? '' : 'vehiclePickupDistanceMeters', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'vehicleDropoffEta', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1781.Int32Value>(5, _omitFieldNames ? '' : 'vehiclePickupToDropoffDistanceMeters', subBuilder: $1781.Int32Value.create)
+    ..e<$4803.TripType>(6, _omitFieldNames ? '' : 'tripType', $pb.PbFieldType.OE, defaultOrMaker: $4803.TripType.UNKNOWN_TRIP_TYPE, valueOf: $4803.TripType.valueOf, enumValues: $4803.TripType.values)
     ..pc<Waypoint>(7, _omitFieldNames ? '' : 'vehicleTripsWaypoints', $pb.PbFieldType.PM, subBuilder: Waypoint.create)
     ..e<VehicleMatch_VehicleMatchType>(8, _omitFieldNames ? '' : 'vehicleMatchType', $pb.PbFieldType.OE, defaultOrMaker: VehicleMatch_VehicleMatchType.UNKNOWN, valueOf: VehicleMatch_VehicleMatchType.valueOf, enumValues: VehicleMatch_VehicleMatchType.values)
     ..e<SearchVehiclesRequest_VehicleMatchOrder>(9, _omitFieldNames ? '' : 'requestedOrderedBy', $pb.PbFieldType.OE, defaultOrMaker: SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER, valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf, enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
     ..e<SearchVehiclesRequest_VehicleMatchOrder>(10, _omitFieldNames ? '' : 'orderedBy', $pb.PbFieldType.OE, defaultOrMaker: SearchVehiclesRequest_VehicleMatchOrder.UNKNOWN_VEHICLE_MATCH_ORDER, valueOf: SearchVehiclesRequest_VehicleMatchOrder.valueOf, enumValues: SearchVehiclesRequest_VehicleMatchOrder.values)
-    ..aOM<$1780.Int32Value>(11, _omitFieldNames ? '' : 'vehiclePickupStraightLineDistanceMeters', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(11, _omitFieldNames ? '' : 'vehiclePickupStraightLineDistanceMeters', subBuilder: $1781.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1552,15 +1552,15 @@ class VehicleMatch extends $pb.GeneratedMessage {
   /// this vehicle has an active trip, `vehicle_pickup_eta` includes the time
   /// required to complete the current active trip.
   @$pb.TagNumber(2)
-  $1775.Timestamp get vehiclePickupEta => $_getN(1);
+  $1776.Timestamp get vehiclePickupEta => $_getN(1);
   @$pb.TagNumber(2)
-  set vehiclePickupEta($1775.Timestamp v) { setField(2, v); }
+  set vehiclePickupEta($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVehiclePickupEta() => $_has(1);
   @$pb.TagNumber(2)
   void clearVehiclePickupEta() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureVehiclePickupEta() => $_ensure(1);
+  $1776.Timestamp ensureVehiclePickupEta() => $_ensure(1);
 
   /// The distance from the Vehicle's current location to the pickup point
   /// specified in the request, including any intermediate pickup or dropoff
@@ -1570,15 +1570,15 @@ class VehicleMatch extends $pb.GeneratedMessage {
   /// navigation end point and the requested pickup point is typically small.) An
   /// empty value indicates an error in calculating the distance.
   @$pb.TagNumber(3)
-  $1780.Int32Value get vehiclePickupDistanceMeters => $_getN(2);
+  $1781.Int32Value get vehiclePickupDistanceMeters => $_getN(2);
   @$pb.TagNumber(3)
-  set vehiclePickupDistanceMeters($1780.Int32Value v) { setField(3, v); }
+  set vehiclePickupDistanceMeters($1781.Int32Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasVehiclePickupDistanceMeters() => $_has(2);
   @$pb.TagNumber(3)
   void clearVehiclePickupDistanceMeters() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int32Value ensureVehiclePickupDistanceMeters() => $_ensure(2);
+  $1781.Int32Value ensureVehiclePickupDistanceMeters() => $_ensure(2);
 
   /// The complete vehicle's driving ETA to the drop off point specified in the
   /// request. The ETA includes stopping at any waypoints before the
@@ -1586,15 +1586,15 @@ class VehicleMatch extends $pb.GeneratedMessage {
   /// when a drop off point is specified in the request. An empty value indicates
   /// an error calculating the ETA.
   @$pb.TagNumber(4)
-  $1775.Timestamp get vehicleDropoffEta => $_getN(3);
+  $1776.Timestamp get vehicleDropoffEta => $_getN(3);
   @$pb.TagNumber(4)
-  set vehicleDropoffEta($1775.Timestamp v) { setField(4, v); }
+  set vehicleDropoffEta($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasVehicleDropoffEta() => $_has(3);
   @$pb.TagNumber(4)
   void clearVehicleDropoffEta() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureVehicleDropoffEta() => $_ensure(3);
+  $1776.Timestamp ensureVehicleDropoffEta() => $_ensure(3);
 
   /// The vehicle's driving distance (in meters) from the pickup point
   /// to the drop off point specified in the request. The distance is only
@@ -1605,22 +1605,22 @@ class VehicleMatch extends $pb.GeneratedMessage {
   /// a failure in calculating the distance from the pickup to
   /// drop off point specified in the request.
   @$pb.TagNumber(5)
-  $1780.Int32Value get vehiclePickupToDropoffDistanceMeters => $_getN(4);
+  $1781.Int32Value get vehiclePickupToDropoffDistanceMeters => $_getN(4);
   @$pb.TagNumber(5)
-  set vehiclePickupToDropoffDistanceMeters($1780.Int32Value v) { setField(5, v); }
+  set vehiclePickupToDropoffDistanceMeters($1781.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasVehiclePickupToDropoffDistanceMeters() => $_has(4);
   @$pb.TagNumber(5)
   void clearVehiclePickupToDropoffDistanceMeters() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int32Value ensureVehiclePickupToDropoffDistanceMeters() => $_ensure(4);
+  $1781.Int32Value ensureVehiclePickupToDropoffDistanceMeters() => $_ensure(4);
 
   /// Required. The trip type of the request that was used to calculate the ETA
   /// to the pickup point.
   @$pb.TagNumber(6)
-  $4801.TripType get tripType => $_getN(5);
+  $4803.TripType get tripType => $_getN(5);
   @$pb.TagNumber(6)
-  set tripType($4801.TripType v) { setField(6, v); }
+  set tripType($4803.TripType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTripType() => $_has(5);
   @$pb.TagNumber(6)
@@ -1670,21 +1670,21 @@ class VehicleMatch extends $pb.GeneratedMessage {
   /// Required. The straight-line distance between the vehicle and the pickup
   /// point specified in the request.
   @$pb.TagNumber(11)
-  $1780.Int32Value get vehiclePickupStraightLineDistanceMeters => $_getN(10);
+  $1781.Int32Value get vehiclePickupStraightLineDistanceMeters => $_getN(10);
   @$pb.TagNumber(11)
-  set vehiclePickupStraightLineDistanceMeters($1780.Int32Value v) { setField(11, v); }
+  set vehiclePickupStraightLineDistanceMeters($1781.Int32Value v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasVehiclePickupStraightLineDistanceMeters() => $_has(10);
   @$pb.TagNumber(11)
   void clearVehiclePickupStraightLineDistanceMeters() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.Int32Value ensureVehiclePickupStraightLineDistanceMeters() => $_ensure(10);
+  $1781.Int32Value ensureVehiclePickupStraightLineDistanceMeters() => $_ensure(10);
 }
 
 /// A list-of-lists datatype for vehicle attributes.
 class VehicleAttributeList extends $pb.GeneratedMessage {
   factory VehicleAttributeList({
-    $core.Iterable<$4801.VehicleAttribute>? attributes,
+    $core.Iterable<$4803.VehicleAttribute>? attributes,
   }) {
     final $result = create();
     if (attributes != null) {
@@ -1697,7 +1697,7 @@ class VehicleAttributeList extends $pb.GeneratedMessage {
   factory VehicleAttributeList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleAttributeList', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..pc<$4801.VehicleAttribute>(1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4801.VehicleAttribute.create)
+    ..pc<$4803.VehicleAttribute>(1, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4803.VehicleAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -1724,7 +1724,7 @@ class VehicleAttributeList extends $pb.GeneratedMessage {
 
   /// A list of attributes in this collection.
   @$pb.TagNumber(1)
-  $core.List<$4801.VehicleAttribute> get attributes => $_getList(0);
+  $core.List<$4803.VehicleAttribute> get attributes => $_getList(0);
 }
 
 

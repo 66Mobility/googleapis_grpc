@@ -13,28 +13,28 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/policy.pb.dart' as $3240;
-import '../enums/ad_group_ad_primary_status.pbenum.dart' as $3547;
-import '../enums/ad_group_ad_primary_status_reason.pbenum.dart' as $3548;
-import '../enums/ad_group_ad_status.pbenum.dart' as $3545;
-import '../enums/ad_strength.pbenum.dart' as $3546;
-import '../enums/policy_approval_status.pbenum.dart' as $3242;
-import '../enums/policy_review_status.pbenum.dart' as $3241;
-import 'ad.pb.dart' as $3544;
+import '../common/policy.pb.dart' as $3241;
+import '../enums/ad_group_ad_primary_status.pbenum.dart' as $3548;
+import '../enums/ad_group_ad_primary_status_reason.pbenum.dart' as $3549;
+import '../enums/ad_group_ad_status.pbenum.dart' as $3546;
+import '../enums/ad_strength.pbenum.dart' as $3547;
+import '../enums/policy_approval_status.pbenum.dart' as $3243;
+import '../enums/policy_review_status.pbenum.dart' as $3242;
+import 'ad.pb.dart' as $3545;
 
 /// An ad group ad.
 class AdGroupAd extends $pb.GeneratedMessage {
   factory AdGroupAd({
     $core.String? resourceName,
-    $3545.AdGroupAdStatusEnum_AdGroupAdStatus? status,
-    $3544.Ad? ad,
+    $3546.AdGroupAdStatusEnum_AdGroupAdStatus? status,
+    $3545.Ad? ad,
     AdGroupAdPolicySummary? policySummary,
-    $3546.AdStrengthEnum_AdStrength? adStrength,
+    $3547.AdStrengthEnum_AdStrength? adStrength,
     $core.String? adGroup,
     $core.Iterable<$core.String>? labels,
     $core.Iterable<$core.String>? actionItems,
-    $3547.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus? primaryStatus,
-    $core.Iterable<$3548.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason>? primaryStatusReasons,
+    $3548.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus? primaryStatus,
+    $core.Iterable<$3549.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason>? primaryStatusReasons,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -75,15 +75,15 @@ class AdGroupAd extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupAd', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3545.AdGroupAdStatusEnum_AdGroupAdStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3545.AdGroupAdStatusEnum_AdGroupAdStatus.UNSPECIFIED, valueOf: $3545.AdGroupAdStatusEnum_AdGroupAdStatus.valueOf, enumValues: $3545.AdGroupAdStatusEnum_AdGroupAdStatus.values)
-    ..aOM<$3544.Ad>(5, _omitFieldNames ? '' : 'ad', subBuilder: $3544.Ad.create)
+    ..e<$3546.AdGroupAdStatusEnum_AdGroupAdStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3546.AdGroupAdStatusEnum_AdGroupAdStatus.UNSPECIFIED, valueOf: $3546.AdGroupAdStatusEnum_AdGroupAdStatus.valueOf, enumValues: $3546.AdGroupAdStatusEnum_AdGroupAdStatus.values)
+    ..aOM<$3545.Ad>(5, _omitFieldNames ? '' : 'ad', subBuilder: $3545.Ad.create)
     ..aOM<AdGroupAdPolicySummary>(6, _omitFieldNames ? '' : 'policySummary', subBuilder: AdGroupAdPolicySummary.create)
-    ..e<$3546.AdStrengthEnum_AdStrength>(7, _omitFieldNames ? '' : 'adStrength', $pb.PbFieldType.OE, defaultOrMaker: $3546.AdStrengthEnum_AdStrength.UNSPECIFIED, valueOf: $3546.AdStrengthEnum_AdStrength.valueOf, enumValues: $3546.AdStrengthEnum_AdStrength.values)
+    ..e<$3547.AdStrengthEnum_AdStrength>(7, _omitFieldNames ? '' : 'adStrength', $pb.PbFieldType.OE, defaultOrMaker: $3547.AdStrengthEnum_AdStrength.UNSPECIFIED, valueOf: $3547.AdStrengthEnum_AdStrength.valueOf, enumValues: $3547.AdStrengthEnum_AdStrength.values)
     ..aOS(9, _omitFieldNames ? '' : 'adGroup')
     ..pPS(10, _omitFieldNames ? '' : 'labels')
     ..pPS(13, _omitFieldNames ? '' : 'actionItems')
-    ..e<$3547.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus>(16, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $3547.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus.UNSPECIFIED, valueOf: $3547.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus.valueOf, enumValues: $3547.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus.values)
-    ..pc<$3548.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason>(17, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $3548.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason.valueOf, enumValues: $3548.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason.values, defaultEnumValue: $3548.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason.UNSPECIFIED)
+    ..e<$3548.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus>(16, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $3548.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus.UNSPECIFIED, valueOf: $3548.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus.valueOf, enumValues: $3548.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus.values)
+    ..pc<$3549.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason>(17, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $3549.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason.valueOf, enumValues: $3549.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason.values, defaultEnumValue: $3549.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -123,9 +123,9 @@ class AdGroupAd extends $pb.GeneratedMessage {
 
   /// The status of the ad.
   @$pb.TagNumber(3)
-  $3545.AdGroupAdStatusEnum_AdGroupAdStatus get status => $_getN(1);
+  $3546.AdGroupAdStatusEnum_AdGroupAdStatus get status => $_getN(1);
   @$pb.TagNumber(3)
-  set status($3545.AdGroupAdStatusEnum_AdGroupAdStatus v) { setField(3, v); }
+  set status($3546.AdGroupAdStatusEnum_AdGroupAdStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(3)
@@ -133,15 +133,15 @@ class AdGroupAd extends $pb.GeneratedMessage {
 
   /// Immutable. The ad.
   @$pb.TagNumber(5)
-  $3544.Ad get ad => $_getN(2);
+  $3545.Ad get ad => $_getN(2);
   @$pb.TagNumber(5)
-  set ad($3544.Ad v) { setField(5, v); }
+  set ad($3545.Ad v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAd() => $_has(2);
   @$pb.TagNumber(5)
   void clearAd() => clearField(5);
   @$pb.TagNumber(5)
-  $3544.Ad ensureAd() => $_ensure(2);
+  $3545.Ad ensureAd() => $_ensure(2);
 
   /// Output only. Policy information for the ad.
   @$pb.TagNumber(6)
@@ -157,9 +157,9 @@ class AdGroupAd extends $pb.GeneratedMessage {
 
   /// Output only. Overall ad strength for this ad group ad.
   @$pb.TagNumber(7)
-  $3546.AdStrengthEnum_AdStrength get adStrength => $_getN(4);
+  $3547.AdStrengthEnum_AdStrength get adStrength => $_getN(4);
   @$pb.TagNumber(7)
-  set adStrength($3546.AdStrengthEnum_AdStrength v) { setField(7, v); }
+  set adStrength($3547.AdStrengthEnum_AdStrength v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAdStrength() => $_has(4);
   @$pb.TagNumber(7)
@@ -188,9 +188,9 @@ class AdGroupAd extends $pb.GeneratedMessage {
   /// Output only. Provides aggregated view into why an ad group ad is not
   /// serving or not serving optimally.
   @$pb.TagNumber(16)
-  $3547.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus get primaryStatus => $_getN(8);
+  $3548.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus get primaryStatus => $_getN(8);
   @$pb.TagNumber(16)
-  set primaryStatus($3547.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus v) { setField(16, v); }
+  set primaryStatus($3548.AdGroupAdPrimaryStatusEnum_AdGroupAdPrimaryStatus v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasPrimaryStatus() => $_has(8);
   @$pb.TagNumber(16)
@@ -199,15 +199,15 @@ class AdGroupAd extends $pb.GeneratedMessage {
   /// Output only. Provides reasons for why an ad group ad is not serving or not
   /// serving optimally.
   @$pb.TagNumber(17)
-  $core.List<$3548.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason> get primaryStatusReasons => $_getList(9);
+  $core.List<$3549.AdGroupAdPrimaryStatusReasonEnum_AdGroupAdPrimaryStatusReason> get primaryStatusReasons => $_getList(9);
 }
 
 /// Contains policy information for an ad.
 class AdGroupAdPolicySummary extends $pb.GeneratedMessage {
   factory AdGroupAdPolicySummary({
-    $core.Iterable<$3240.PolicyTopicEntry>? policyTopicEntries,
-    $3241.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
-    $3242.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
+    $core.Iterable<$3241.PolicyTopicEntry>? policyTopicEntries,
+    $3242.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
+    $3243.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
   }) {
     final $result = create();
     if (policyTopicEntries != null) {
@@ -226,9 +226,9 @@ class AdGroupAdPolicySummary extends $pb.GeneratedMessage {
   factory AdGroupAdPolicySummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupAdPolicySummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..pc<$3240.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $3240.PolicyTopicEntry.create)
-    ..e<$3241.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $3241.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $3241.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $3241.PolicyReviewStatusEnum_PolicyReviewStatus.values)
-    ..e<$3242.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $3242.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $3242.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $3242.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
+    ..pc<$3241.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $3241.PolicyTopicEntry.create)
+    ..e<$3242.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $3242.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $3242.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $3242.PolicyReviewStatusEnum_PolicyReviewStatus.values)
+    ..e<$3243.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $3243.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $3243.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $3243.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -255,13 +255,13 @@ class AdGroupAdPolicySummary extends $pb.GeneratedMessage {
 
   /// Output only. The list of policy findings for this ad.
   @$pb.TagNumber(1)
-  $core.List<$3240.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
+  $core.List<$3241.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
 
   /// Output only. Where in the review process this ad is.
   @$pb.TagNumber(2)
-  $3241.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
+  $3242.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set reviewStatus($3241.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
+  set reviewStatus($3242.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReviewStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -270,9 +270,9 @@ class AdGroupAdPolicySummary extends $pb.GeneratedMessage {
   /// Output only. The overall approval status of this ad, calculated based on
   /// the status of its individual policy topic entries.
   @$pb.TagNumber(3)
-  $3242.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
+  $3243.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set approvalStatus($3242.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
+  set approvalStatus($3243.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApprovalStatus() => $_has(2);
   @$pb.TagNumber(3)

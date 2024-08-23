@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import 'inline.pb.dart' as $4482;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import 'inline.pb.dart' as $4484;
 import 'intent.pbenum.dart';
 
 export 'intent.pbenum.dart';
@@ -835,7 +835,7 @@ class UpdateIntentRequest extends $pb.GeneratedMessage {
   factory UpdateIntentRequest({
     Intent? intent,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (intent != null) {
@@ -856,7 +856,7 @@ class UpdateIntentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateIntentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3'), createEmptyInstance: create)
     ..aOM<Intent>(1, _omitFieldNames ? '' : 'intent', subBuilder: Intent.create)
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -914,15 +914,15 @@ class UpdateIntentRequest extends $pb.GeneratedMessage {
   /// The mask to control which fields get updated. If the mask is not present,
   /// all fields will be updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The request message for
@@ -992,7 +992,7 @@ class ImportIntentsRequest extends $pb.GeneratedMessage {
   factory ImportIntentsRequest({
     $core.String? parent,
     $core.String? intentsUri,
-    $4482.InlineSource? intentsContent,
+    $4484.InlineSource? intentsContent,
     ImportIntentsRequest_MergeOption? mergeOption,
   }) {
     final $result = create();
@@ -1023,7 +1023,7 @@ class ImportIntentsRequest extends $pb.GeneratedMessage {
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'intentsUri')
-    ..aOM<$4482.InlineSource>(3, _omitFieldNames ? '' : 'intentsContent', subBuilder: $4482.InlineSource.create)
+    ..aOM<$4484.InlineSource>(3, _omitFieldNames ? '' : 'intentsContent', subBuilder: $4484.InlineSource.create)
     ..e<ImportIntentsRequest_MergeOption>(4, _omitFieldNames ? '' : 'mergeOption', $pb.PbFieldType.OE, defaultOrMaker: ImportIntentsRequest_MergeOption.MERGE_OPTION_UNSPECIFIED, valueOf: ImportIntentsRequest_MergeOption.valueOf, enumValues: ImportIntentsRequest_MergeOption.values)
     ..hasRequiredFields = false
   ;
@@ -1083,15 +1083,15 @@ class ImportIntentsRequest extends $pb.GeneratedMessage {
 
   /// Uncompressed byte content of intents.
   @$pb.TagNumber(3)
-  $4482.InlineSource get intentsContent => $_getN(2);
+  $4484.InlineSource get intentsContent => $_getN(2);
   @$pb.TagNumber(3)
-  set intentsContent($4482.InlineSource v) { setField(3, v); }
+  set intentsContent($4484.InlineSource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIntentsContent() => $_has(2);
   @$pb.TagNumber(3)
   void clearIntentsContent() => clearField(3);
   @$pb.TagNumber(3)
-  $4482.InlineSource ensureIntentsContent() => $_ensure(2);
+  $4484.InlineSource ensureIntentsContent() => $_ensure(2);
 
   /// Merge option for importing intents. If not specified, `REJECT` is assumed.
   @$pb.TagNumber(4)
@@ -1411,7 +1411,7 @@ enum ExportIntentsResponse_Intents {
 class ExportIntentsResponse extends $pb.GeneratedMessage {
   factory ExportIntentsResponse({
     $core.String? intentsUri,
-    $4482.InlineDestination? intentsContent,
+    $4484.InlineDestination? intentsContent,
   }) {
     final $result = create();
     if (intentsUri != null) {
@@ -1434,7 +1434,7 @@ class ExportIntentsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportIntentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'intentsUri')
-    ..aOM<$4482.InlineDestination>(2, _omitFieldNames ? '' : 'intentsContent', subBuilder: $4482.InlineDestination.create)
+    ..aOM<$4484.InlineDestination>(2, _omitFieldNames ? '' : 'intentsContent', subBuilder: $4484.InlineDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -1478,15 +1478,15 @@ class ExportIntentsResponse extends $pb.GeneratedMessage {
   /// `intents_content_inline` is set to true in
   /// [ExportIntentsRequest][google.cloud.dialogflow.cx.v3.ExportIntentsRequest].
   @$pb.TagNumber(2)
-  $4482.InlineDestination get intentsContent => $_getN(1);
+  $4484.InlineDestination get intentsContent => $_getN(1);
   @$pb.TagNumber(2)
-  set intentsContent($4482.InlineDestination v) { setField(2, v); }
+  set intentsContent($4484.InlineDestination v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIntentsContent() => $_has(1);
   @$pb.TagNumber(2)
   void clearIntentsContent() => clearField(2);
   @$pb.TagNumber(2)
-  $4482.InlineDestination ensureIntentsContent() => $_ensure(1);
+  $4484.InlineDestination ensureIntentsContent() => $_ensure(1);
 }
 
 /// Metadata returned for the

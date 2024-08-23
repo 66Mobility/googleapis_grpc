@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/money.pb.dart' as $1814;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/money.pb.dart' as $1815;
 import 'cloud_catalog.pbenum.dart';
 
 export 'cloud_catalog.pbenum.dart';
@@ -377,7 +377,7 @@ class Category extends $pb.GeneratedMessage {
 /// Represents the pricing information for a SKU at a single point of time.
 class PricingInfo extends $pb.GeneratedMessage {
   factory PricingInfo({
-    $1775.Timestamp? effectiveTime,
+    $1776.Timestamp? effectiveTime,
     $core.String? summary,
     PricingExpression? pricingExpression,
     AggregationInfo? aggregationInfo,
@@ -406,7 +406,7 @@ class PricingInfo extends $pb.GeneratedMessage {
   factory PricingInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PricingInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.billing.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'effectiveTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'effectiveTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'summary')
     ..aOM<PricingExpression>(3, _omitFieldNames ? '' : 'pricingExpression', subBuilder: PricingExpression.create)
     ..aOM<AggregationInfo>(4, _omitFieldNames ? '' : 'aggregationInfo', subBuilder: AggregationInfo.create)
@@ -442,15 +442,15 @@ class PricingInfo extends $pb.GeneratedMessage {
   /// be equivalent to a time within the last 12 hours, indicating the latest
   /// pricing info.
   @$pb.TagNumber(1)
-  $1775.Timestamp get effectiveTime => $_getN(0);
+  $1776.Timestamp get effectiveTime => $_getN(0);
   @$pb.TagNumber(1)
-  set effectiveTime($1775.Timestamp v) { setField(1, v); }
+  set effectiveTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEffectiveTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEffectiveTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEffectiveTime() => $_ensure(0);
+  $1776.Timestamp ensureEffectiveTime() => $_ensure(0);
 
   /// An optional human readable summary of the pricing information, has a
   /// maximum length of 256 characters.
@@ -507,7 +507,7 @@ class PricingInfo extends $pb.GeneratedMessage {
 class PricingExpression_TierRate extends $pb.GeneratedMessage {
   factory PricingExpression_TierRate({
     $core.double? startUsageAmount,
-    $1814.Money? unitPrice,
+    $1815.Money? unitPrice,
   }) {
     final $result = create();
     if (startUsageAmount != null) {
@@ -524,7 +524,7 @@ class PricingExpression_TierRate extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PricingExpression.TierRate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.billing.v1'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'startUsageAmount', $pb.PbFieldType.OD)
-    ..aOM<$1814.Money>(2, _omitFieldNames ? '' : 'unitPrice', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(2, _omitFieldNames ? '' : 'unitPrice', subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -564,15 +564,15 @@ class PricingExpression_TierRate extends $pb.GeneratedMessage {
   /// The price per unit of usage.
   /// Example: unit_price of amount $10 indicates that each unit will cost $10.
   @$pb.TagNumber(2)
-  $1814.Money get unitPrice => $_getN(1);
+  $1815.Money get unitPrice => $_getN(1);
   @$pb.TagNumber(2)
-  set unitPrice($1814.Money v) { setField(2, v); }
+  set unitPrice($1815.Money v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUnitPrice() => $_has(1);
   @$pb.TagNumber(2)
   void clearUnitPrice() => clearField(2);
   @$pb.TagNumber(2)
-  $1814.Money ensureUnitPrice() => $_ensure(1);
+  $1815.Money ensureUnitPrice() => $_ensure(1);
 }
 
 ///  Expresses a mathematical pricing formula. For Example:-
@@ -1017,8 +1017,8 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 class ListSkusRequest extends $pb.GeneratedMessage {
   factory ListSkusRequest({
     $core.String? parent,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? currencyCode,
     $core.int? pageSize,
     $core.String? pageToken,
@@ -1050,8 +1050,8 @@ class ListSkusRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSkusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.billing.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'currencyCode')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'pageToken')
@@ -1097,15 +1097,15 @@ class ListSkusRequest extends $pb.GeneratedMessage {
   /// specified, the latest pricing will be returned (up to 12 hours old at
   /// most).
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Optional exclusive end time of the time range for which the pricing
   /// versions will be returned. Timestamps in the future are not allowed.
@@ -1114,15 +1114,15 @@ class ListSkusRequest extends $pb.GeneratedMessage {
   /// specified, the latest pricing will be returned (up to 12 hours old at
   /// most).
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// The ISO 4217 currency code for the pricing info in the response proto.
   /// Will use the conversion rate as of start_time.

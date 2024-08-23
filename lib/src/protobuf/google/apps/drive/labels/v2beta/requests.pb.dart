@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import 'common.pb.dart' as $4207;
-import 'field.pb.dart' as $4208;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import 'common.pb.dart' as $4208;
+import 'field.pb.dart' as $4209;
 import 'label.pb.dart' as $450;
 import 'label.pbenum.dart' as $450;
-import 'label_lock.pb.dart' as $4209;
+import 'label_lock.pb.dart' as $4210;
 import 'label_permission.pb.dart' as $452;
 import 'label_permission.pbenum.dart' as $452;
 import 'requests.pbenum.dart';
@@ -637,7 +637,7 @@ class DeltaUpdateLabelRequest_Request extends $pb.GeneratedMessage {
 /// Updates basic properties of a Label.
 class DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $450.Label_Properties? properties,
   }) {
     final $result = create();
@@ -654,7 +654,7 @@ class DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest extends $pb.Generated
   factory DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.UpdateLabelPropertiesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$450.Label_Properties>(2, _omitFieldNames ? '' : 'properties', subBuilder: $450.Label_Properties.create)
     ..hasRequiredFields = false
   ;
@@ -684,15 +684,15 @@ class DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest extends $pb.Generated
   /// The root `label_properties` is implied and should not be specified. A
   /// single `*` can be used as short-hand for updating every field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Label properties to update.
   @$pb.TagNumber(2)
@@ -710,9 +710,9 @@ class DeltaUpdateLabelRequest_UpdateLabelPropertiesRequest extends $pb.Generated
 /// Request to disable the Field.
 class DeltaUpdateLabelRequest_DisableFieldRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_DisableFieldRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? id,
-    $4207.Lifecycle_DisabledPolicy? disabledPolicy,
+    $4208.Lifecycle_DisabledPolicy? disabledPolicy,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -731,9 +731,9 @@ class DeltaUpdateLabelRequest_DisableFieldRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_DisableFieldRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.DisableFieldRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<$4207.Lifecycle_DisabledPolicy>(3, _omitFieldNames ? '' : 'disabledPolicy', subBuilder: $4207.Lifecycle_DisabledPolicy.create)
+    ..aOM<$4208.Lifecycle_DisabledPolicy>(3, _omitFieldNames ? '' : 'disabledPolicy', subBuilder: $4208.Lifecycle_DisabledPolicy.create)
     ..hasRequiredFields = false
   ;
 
@@ -762,15 +762,15 @@ class DeltaUpdateLabelRequest_DisableFieldRequest extends $pb.GeneratedMessage {
   /// The root `disabled_policy` is implied and should not be specified. A
   /// single `*` can be used as short-hand for updating every field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Key of the Field to disable.
   @$pb.TagNumber(2)
@@ -784,15 +784,15 @@ class DeltaUpdateLabelRequest_DisableFieldRequest extends $pb.GeneratedMessage {
 
   /// Required. Field Disabled Policy.
   @$pb.TagNumber(3)
-  $4207.Lifecycle_DisabledPolicy get disabledPolicy => $_getN(2);
+  $4208.Lifecycle_DisabledPolicy get disabledPolicy => $_getN(2);
   @$pb.TagNumber(3)
-  set disabledPolicy($4207.Lifecycle_DisabledPolicy v) { setField(3, v); }
+  set disabledPolicy($4208.Lifecycle_DisabledPolicy v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDisabledPolicy() => $_has(2);
   @$pb.TagNumber(3)
   void clearDisabledPolicy() => clearField(3);
   @$pb.TagNumber(3)
-  $4207.Lifecycle_DisabledPolicy ensureDisabledPolicy() => $_ensure(2);
+  $4208.Lifecycle_DisabledPolicy ensureDisabledPolicy() => $_ensure(2);
 }
 
 /// Request to enable the Field.
@@ -902,7 +902,7 @@ class DeltaUpdateLabelRequest_DeleteFieldRequest extends $pb.GeneratedMessage {
 /// Request to create a Field within a Label.
 class DeltaUpdateLabelRequest_CreateFieldRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_CreateFieldRequest({
-    $4208.Field? field_1,
+    $4209.Field? field_1,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -915,7 +915,7 @@ class DeltaUpdateLabelRequest_CreateFieldRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_CreateFieldRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.CreateFieldRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$4208.Field>(1, _omitFieldNames ? '' : 'field', subBuilder: $4208.Field.create)
+    ..aOM<$4209.Field>(1, _omitFieldNames ? '' : 'field', subBuilder: $4209.Field.create)
     ..hasRequiredFields = false
   ;
 
@@ -942,23 +942,23 @@ class DeltaUpdateLabelRequest_CreateFieldRequest extends $pb.GeneratedMessage {
 
   /// Required. Field to create.
   @$pb.TagNumber(1)
-  $4208.Field get field_1 => $_getN(0);
+  $4209.Field get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($4208.Field v) { setField(1, v); }
+  set field_1($4209.Field v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $4208.Field ensureField_1() => $_ensure(0);
+  $4209.Field ensureField_1() => $_ensure(0);
 }
 
 /// Request to update Field properties.
 class DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? id,
-    $4208.Field_Properties? properties,
+    $4209.Field_Properties? properties,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -977,9 +977,9 @@ class DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest extends $pb.Generated
   factory DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.UpdateFieldPropertiesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<$4208.Field_Properties>(3, _omitFieldNames ? '' : 'properties', subBuilder: $4208.Field_Properties.create)
+    ..aOM<$4209.Field_Properties>(3, _omitFieldNames ? '' : 'properties', subBuilder: $4209.Field_Properties.create)
     ..hasRequiredFields = false
   ;
 
@@ -1008,15 +1008,15 @@ class DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest extends $pb.Generated
   /// The root `properties` is implied and should not be specified. A single
   /// `*` can be used as short-hand for updating every field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The Field to update.
   @$pb.TagNumber(2)
@@ -1030,15 +1030,15 @@ class DeltaUpdateLabelRequest_UpdateFieldPropertiesRequest extends $pb.Generated
 
   /// Required. Basic Field properties.
   @$pb.TagNumber(3)
-  $4208.Field_Properties get properties => $_getN(2);
+  $4209.Field_Properties get properties => $_getN(2);
   @$pb.TagNumber(3)
-  set properties($4208.Field_Properties v) { setField(3, v); }
+  set properties($4209.Field_Properties v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasProperties() => $_has(2);
   @$pb.TagNumber(3)
   void clearProperties() => clearField(3);
   @$pb.TagNumber(3)
-  $4208.Field_Properties ensureProperties() => $_ensure(2);
+  $4209.Field_Properties ensureProperties() => $_ensure(2);
 }
 
 enum DeltaUpdateLabelRequest_UpdateFieldTypeRequest_TypeOptions {
@@ -1053,13 +1053,13 @@ enum DeltaUpdateLabelRequest_UpdateFieldTypeRequest_TypeOptions {
 /// Request to change the type of a Field.
 class DeltaUpdateLabelRequest_UpdateFieldTypeRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_UpdateFieldTypeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? id,
-    $4208.Field_TextOptions? textOptions,
-    $4208.Field_IntegerOptions? integerOptions,
-    $4208.Field_DateOptions? dateOptions,
-    $4208.Field_SelectionOptions? selectionOptions,
-    $4208.Field_UserOptions? userOptions,
+    $4209.Field_TextOptions? textOptions,
+    $4209.Field_IntegerOptions? integerOptions,
+    $4209.Field_DateOptions? dateOptions,
+    $4209.Field_SelectionOptions? selectionOptions,
+    $4209.Field_UserOptions? userOptions,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -1099,13 +1099,13 @@ class DeltaUpdateLabelRequest_UpdateFieldTypeRequest extends $pb.GeneratedMessag
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.UpdateFieldTypeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
     ..oo(0, [3, 5, 6, 7, 8])
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<$4208.Field_TextOptions>(3, _omitFieldNames ? '' : 'textOptions', subBuilder: $4208.Field_TextOptions.create)
-    ..aOM<$4208.Field_IntegerOptions>(5, _omitFieldNames ? '' : 'integerOptions', subBuilder: $4208.Field_IntegerOptions.create)
-    ..aOM<$4208.Field_DateOptions>(6, _omitFieldNames ? '' : 'dateOptions', subBuilder: $4208.Field_DateOptions.create)
-    ..aOM<$4208.Field_SelectionOptions>(7, _omitFieldNames ? '' : 'selectionOptions', subBuilder: $4208.Field_SelectionOptions.create)
-    ..aOM<$4208.Field_UserOptions>(8, _omitFieldNames ? '' : 'userOptions', subBuilder: $4208.Field_UserOptions.create)
+    ..aOM<$4209.Field_TextOptions>(3, _omitFieldNames ? '' : 'textOptions', subBuilder: $4209.Field_TextOptions.create)
+    ..aOM<$4209.Field_IntegerOptions>(5, _omitFieldNames ? '' : 'integerOptions', subBuilder: $4209.Field_IntegerOptions.create)
+    ..aOM<$4209.Field_DateOptions>(6, _omitFieldNames ? '' : 'dateOptions', subBuilder: $4209.Field_DateOptions.create)
+    ..aOM<$4209.Field_SelectionOptions>(7, _omitFieldNames ? '' : 'selectionOptions', subBuilder: $4209.Field_SelectionOptions.create)
+    ..aOM<$4209.Field_UserOptions>(8, _omitFieldNames ? '' : 'userOptions', subBuilder: $4209.Field_UserOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -1137,15 +1137,15 @@ class DeltaUpdateLabelRequest_UpdateFieldTypeRequest extends $pb.GeneratedMessag
   /// The root of `type_options` is implied and should not be specified. A
   /// single `*` can be used as short-hand for updating every field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The Field to update.
   @$pb.TagNumber(2)
@@ -1159,70 +1159,70 @@ class DeltaUpdateLabelRequest_UpdateFieldTypeRequest extends $pb.GeneratedMessag
 
   /// Update field to Text.
   @$pb.TagNumber(3)
-  $4208.Field_TextOptions get textOptions => $_getN(2);
+  $4209.Field_TextOptions get textOptions => $_getN(2);
   @$pb.TagNumber(3)
-  set textOptions($4208.Field_TextOptions v) { setField(3, v); }
+  set textOptions($4209.Field_TextOptions v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTextOptions() => $_has(2);
   @$pb.TagNumber(3)
   void clearTextOptions() => clearField(3);
   @$pb.TagNumber(3)
-  $4208.Field_TextOptions ensureTextOptions() => $_ensure(2);
+  $4209.Field_TextOptions ensureTextOptions() => $_ensure(2);
 
   /// Update field to Integer.
   @$pb.TagNumber(5)
-  $4208.Field_IntegerOptions get integerOptions => $_getN(3);
+  $4209.Field_IntegerOptions get integerOptions => $_getN(3);
   @$pb.TagNumber(5)
-  set integerOptions($4208.Field_IntegerOptions v) { setField(5, v); }
+  set integerOptions($4209.Field_IntegerOptions v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasIntegerOptions() => $_has(3);
   @$pb.TagNumber(5)
   void clearIntegerOptions() => clearField(5);
   @$pb.TagNumber(5)
-  $4208.Field_IntegerOptions ensureIntegerOptions() => $_ensure(3);
+  $4209.Field_IntegerOptions ensureIntegerOptions() => $_ensure(3);
 
   /// Update field to Date.
   @$pb.TagNumber(6)
-  $4208.Field_DateOptions get dateOptions => $_getN(4);
+  $4209.Field_DateOptions get dateOptions => $_getN(4);
   @$pb.TagNumber(6)
-  set dateOptions($4208.Field_DateOptions v) { setField(6, v); }
+  set dateOptions($4209.Field_DateOptions v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDateOptions() => $_has(4);
   @$pb.TagNumber(6)
   void clearDateOptions() => clearField(6);
   @$pb.TagNumber(6)
-  $4208.Field_DateOptions ensureDateOptions() => $_ensure(4);
+  $4209.Field_DateOptions ensureDateOptions() => $_ensure(4);
 
   /// Update field to Selection.
   @$pb.TagNumber(7)
-  $4208.Field_SelectionOptions get selectionOptions => $_getN(5);
+  $4209.Field_SelectionOptions get selectionOptions => $_getN(5);
   @$pb.TagNumber(7)
-  set selectionOptions($4208.Field_SelectionOptions v) { setField(7, v); }
+  set selectionOptions($4209.Field_SelectionOptions v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSelectionOptions() => $_has(5);
   @$pb.TagNumber(7)
   void clearSelectionOptions() => clearField(7);
   @$pb.TagNumber(7)
-  $4208.Field_SelectionOptions ensureSelectionOptions() => $_ensure(5);
+  $4209.Field_SelectionOptions ensureSelectionOptions() => $_ensure(5);
 
   /// Update field to User.
   @$pb.TagNumber(8)
-  $4208.Field_UserOptions get userOptions => $_getN(6);
+  $4209.Field_UserOptions get userOptions => $_getN(6);
   @$pb.TagNumber(8)
-  set userOptions($4208.Field_UserOptions v) { setField(8, v); }
+  set userOptions($4209.Field_UserOptions v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUserOptions() => $_has(6);
   @$pb.TagNumber(8)
   void clearUserOptions() => clearField(8);
   @$pb.TagNumber(8)
-  $4208.Field_UserOptions ensureUserOptions() => $_ensure(6);
+  $4209.Field_UserOptions ensureUserOptions() => $_ensure(6);
 }
 
 /// Request to create a Selection Choice.
 class DeltaUpdateLabelRequest_CreateSelectionChoiceRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_CreateSelectionChoiceRequest({
     $core.String? fieldId,
-    $4208.Field_SelectionOptions_Choice? choice,
+    $4209.Field_SelectionOptions_Choice? choice,
   }) {
     final $result = create();
     if (fieldId != null) {
@@ -1239,7 +1239,7 @@ class DeltaUpdateLabelRequest_CreateSelectionChoiceRequest extends $pb.Generated
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.CreateSelectionChoiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'fieldId')
-    ..aOM<$4208.Field_SelectionOptions_Choice>(2, _omitFieldNames ? '' : 'choice', subBuilder: $4208.Field_SelectionOptions_Choice.create)
+    ..aOM<$4209.Field_SelectionOptions_Choice>(2, _omitFieldNames ? '' : 'choice', subBuilder: $4209.Field_SelectionOptions_Choice.create)
     ..hasRequiredFields = false
   ;
 
@@ -1276,24 +1276,24 @@ class DeltaUpdateLabelRequest_CreateSelectionChoiceRequest extends $pb.Generated
 
   /// Required. The Choice to create.
   @$pb.TagNumber(2)
-  $4208.Field_SelectionOptions_Choice get choice => $_getN(1);
+  $4209.Field_SelectionOptions_Choice get choice => $_getN(1);
   @$pb.TagNumber(2)
-  set choice($4208.Field_SelectionOptions_Choice v) { setField(2, v); }
+  set choice($4209.Field_SelectionOptions_Choice v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasChoice() => $_has(1);
   @$pb.TagNumber(2)
   void clearChoice() => clearField(2);
   @$pb.TagNumber(2)
-  $4208.Field_SelectionOptions_Choice ensureChoice() => $_ensure(1);
+  $4209.Field_SelectionOptions_Choice ensureChoice() => $_ensure(1);
 }
 
 /// Request to update a Choice properties.
 class DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? fieldId,
     $core.String? id,
-    $4208.Field_SelectionOptions_Choice_Properties? properties,
+    $4209.Field_SelectionOptions_Choice_Properties? properties,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -1315,10 +1315,10 @@ class DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest extends $pb
   factory DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.UpdateSelectionChoicePropertiesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(2, _omitFieldNames ? '' : 'fieldId')
     ..aOS(3, _omitFieldNames ? '' : 'id')
-    ..aOM<$4208.Field_SelectionOptions_Choice_Properties>(4, _omitFieldNames ? '' : 'properties', subBuilder: $4208.Field_SelectionOptions_Choice_Properties.create)
+    ..aOM<$4209.Field_SelectionOptions_Choice_Properties>(4, _omitFieldNames ? '' : 'properties', subBuilder: $4209.Field_SelectionOptions_Choice_Properties.create)
     ..hasRequiredFields = false
   ;
 
@@ -1347,15 +1347,15 @@ class DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest extends $pb
   /// The root `properties` is implied and should not be specified. A single
   /// `*` can be used as short-hand for updating every field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The Selection Field to update.
   @$pb.TagNumber(2)
@@ -1379,15 +1379,15 @@ class DeltaUpdateLabelRequest_UpdateSelectionChoicePropertiesRequest extends $pb
 
   /// Required. The Choice properties to update.
   @$pb.TagNumber(4)
-  $4208.Field_SelectionOptions_Choice_Properties get properties => $_getN(3);
+  $4209.Field_SelectionOptions_Choice_Properties get properties => $_getN(3);
   @$pb.TagNumber(4)
-  set properties($4208.Field_SelectionOptions_Choice_Properties v) { setField(4, v); }
+  set properties($4209.Field_SelectionOptions_Choice_Properties v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasProperties() => $_has(3);
   @$pb.TagNumber(4)
   void clearProperties() => clearField(4);
   @$pb.TagNumber(4)
-  $4208.Field_SelectionOptions_Choice_Properties ensureProperties() => $_ensure(3);
+  $4209.Field_SelectionOptions_Choice_Properties ensureProperties() => $_ensure(3);
 }
 
 /// Request to delete a Choice.
@@ -1460,10 +1460,10 @@ class DeltaUpdateLabelRequest_DeleteSelectionChoiceRequest extends $pb.Generated
 /// Request to disable a Choice.
 class DeltaUpdateLabelRequest_DisableSelectionChoiceRequest extends $pb.GeneratedMessage {
   factory DeltaUpdateLabelRequest_DisableSelectionChoiceRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? fieldId,
     $core.String? id,
-    $4207.Lifecycle_DisabledPolicy? disabledPolicy,
+    $4208.Lifecycle_DisabledPolicy? disabledPolicy,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -1485,10 +1485,10 @@ class DeltaUpdateLabelRequest_DisableSelectionChoiceRequest extends $pb.Generate
   factory DeltaUpdateLabelRequest_DisableSelectionChoiceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeltaUpdateLabelRequest.DisableSelectionChoiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(2, _omitFieldNames ? '' : 'fieldId')
     ..aOS(3, _omitFieldNames ? '' : 'id')
-    ..aOM<$4207.Lifecycle_DisabledPolicy>(4, _omitFieldNames ? '' : 'disabledPolicy', subBuilder: $4207.Lifecycle_DisabledPolicy.create)
+    ..aOM<$4208.Lifecycle_DisabledPolicy>(4, _omitFieldNames ? '' : 'disabledPolicy', subBuilder: $4208.Lifecycle_DisabledPolicy.create)
     ..hasRequiredFields = false
   ;
 
@@ -1517,15 +1517,15 @@ class DeltaUpdateLabelRequest_DisableSelectionChoiceRequest extends $pb.Generate
   /// The root `disabled_policy` is implied and should not be specified. A
   /// single `*` can be used as short-hand for updating every field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The Selection Field in which a Choice will be disabled.
   @$pb.TagNumber(2)
@@ -1549,15 +1549,15 @@ class DeltaUpdateLabelRequest_DisableSelectionChoiceRequest extends $pb.Generate
 
   /// Required. The disabled policy to update.
   @$pb.TagNumber(4)
-  $4207.Lifecycle_DisabledPolicy get disabledPolicy => $_getN(3);
+  $4208.Lifecycle_DisabledPolicy get disabledPolicy => $_getN(3);
   @$pb.TagNumber(4)
-  set disabledPolicy($4207.Lifecycle_DisabledPolicy v) { setField(4, v); }
+  set disabledPolicy($4208.Lifecycle_DisabledPolicy v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDisabledPolicy() => $_has(3);
   @$pb.TagNumber(4)
   void clearDisabledPolicy() => clearField(4);
   @$pb.TagNumber(4)
-  $4207.Lifecycle_DisabledPolicy ensureDisabledPolicy() => $_ensure(3);
+  $4208.Lifecycle_DisabledPolicy ensureDisabledPolicy() => $_ensure(3);
 }
 
 /// Request to enable a Choice.
@@ -3638,11 +3638,11 @@ class BatchDeleteLabelPermissionsRequest extends $pb.GeneratedMessage {
 /// Request to deprecate a published Label.
 class DisableLabelRequest extends $pb.GeneratedMessage {
   factory DisableLabelRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? name,
     $core.bool? useAdminAccess,
     WriteControl? writeControl,
-    $4207.Lifecycle_DisabledPolicy? disabledPolicy,
+    $4208.Lifecycle_DisabledPolicy? disabledPolicy,
     $core.String? languageCode,
   }) {
     final $result = create();
@@ -3671,11 +3671,11 @@ class DisableLabelRequest extends $pb.GeneratedMessage {
   factory DisableLabelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DisableLabelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..aOM<WriteControl>(4, _omitFieldNames ? '' : 'writeControl', subBuilder: WriteControl.create)
-    ..aOM<$4207.Lifecycle_DisabledPolicy>(5, _omitFieldNames ? '' : 'disabledPolicy', subBuilder: $4207.Lifecycle_DisabledPolicy.create)
+    ..aOM<$4208.Lifecycle_DisabledPolicy>(5, _omitFieldNames ? '' : 'disabledPolicy', subBuilder: $4208.Lifecycle_DisabledPolicy.create)
     ..aOS(6, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
   ;
@@ -3705,15 +3705,15 @@ class DisableLabelRequest extends $pb.GeneratedMessage {
   /// The root `disabled_policy` is implied and should not be specified. A
   /// single `*` can be used as short-hand for updating every field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Label resource name.
   @$pb.TagNumber(2)
@@ -3751,15 +3751,15 @@ class DisableLabelRequest extends $pb.GeneratedMessage {
 
   /// Disabled policy to use.
   @$pb.TagNumber(5)
-  $4207.Lifecycle_DisabledPolicy get disabledPolicy => $_getN(4);
+  $4208.Lifecycle_DisabledPolicy get disabledPolicy => $_getN(4);
   @$pb.TagNumber(5)
-  set disabledPolicy($4207.Lifecycle_DisabledPolicy v) { setField(5, v); }
+  set disabledPolicy($4208.Lifecycle_DisabledPolicy v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDisabledPolicy() => $_has(4);
   @$pb.TagNumber(5)
   void clearDisabledPolicy() => clearField(5);
   @$pb.TagNumber(5)
-  $4207.Lifecycle_DisabledPolicy ensureDisabledPolicy() => $_ensure(4);
+  $4208.Lifecycle_DisabledPolicy ensureDisabledPolicy() => $_ensure(4);
 
   /// The BCP-47 language code to use for evaluating localized field labels.
   /// When not specified, values in the default configured language will be used.
@@ -4149,7 +4149,7 @@ class ListLabelLocksRequest extends $pb.GeneratedMessage {
 /// The response to a ListLabelLocksRequest.
 class ListLabelLocksResponse extends $pb.GeneratedMessage {
   factory ListLabelLocksResponse({
-    $core.Iterable<$4209.LabelLock>? labelLocks,
+    $core.Iterable<$4210.LabelLock>? labelLocks,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -4166,7 +4166,7 @@ class ListLabelLocksResponse extends $pb.GeneratedMessage {
   factory ListLabelLocksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLabelLocksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2beta'), createEmptyInstance: create)
-    ..pc<$4209.LabelLock>(1, _omitFieldNames ? '' : 'labelLocks', $pb.PbFieldType.PM, subBuilder: $4209.LabelLock.create)
+    ..pc<$4210.LabelLock>(1, _omitFieldNames ? '' : 'labelLocks', $pb.PbFieldType.PM, subBuilder: $4210.LabelLock.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -4194,7 +4194,7 @@ class ListLabelLocksResponse extends $pb.GeneratedMessage {
 
   /// LabelLocks.
   @$pb.TagNumber(1)
-  $core.List<$4209.LabelLock> get labelLocks => $_getList(0);
+  $core.List<$4210.LabelLock> get labelLocks => $_getList(0);
 
   /// The token of the next page in the response.
   @$pb.TagNumber(2)

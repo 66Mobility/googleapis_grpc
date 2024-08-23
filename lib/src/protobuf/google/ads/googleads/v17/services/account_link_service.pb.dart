@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/account_link.pb.dart' as $3794;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/account_link.pb.dart' as $3795;
 
 /// Request message for
 /// [AccountLinkService.CreateAccountLink][google.ads.googleads.v17.services.AccountLinkService.CreateAccountLink].
 class CreateAccountLinkRequest extends $pb.GeneratedMessage {
   factory CreateAccountLinkRequest({
     $core.String? customerId,
-    $3794.AccountLink? accountLink,
+    $3795.AccountLink? accountLink,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -39,7 +39,7 @@ class CreateAccountLinkRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAccountLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..aOM<$3794.AccountLink>(2, _omitFieldNames ? '' : 'accountLink', subBuilder: $3794.AccountLink.create)
+    ..aOM<$3795.AccountLink>(2, _omitFieldNames ? '' : 'accountLink', subBuilder: $3795.AccountLink.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,15 +76,15 @@ class CreateAccountLinkRequest extends $pb.GeneratedMessage {
 
   /// Required. The account link to be created.
   @$pb.TagNumber(2)
-  $3794.AccountLink get accountLink => $_getN(1);
+  $3795.AccountLink get accountLink => $_getN(1);
   @$pb.TagNumber(2)
-  set accountLink($3794.AccountLink v) { setField(2, v); }
+  set accountLink($3795.AccountLink v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountLink() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountLink() => clearField(2);
   @$pb.TagNumber(2)
-  $3794.AccountLink ensureAccountLink() => $_ensure(1);
+  $3795.AccountLink ensureAccountLink() => $_ensure(1);
 }
 
 /// Response message for
@@ -253,9 +253,9 @@ enum AccountLinkOperation_Operation {
 /// A single update on an account link.
 class AccountLinkOperation extends $pb.GeneratedMessage {
   factory AccountLinkOperation({
-    $3794.AccountLink? update,
+    $3795.AccountLink? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (update != null) {
@@ -280,9 +280,9 @@ class AccountLinkOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountLinkOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$3794.AccountLink>(2, _omitFieldNames ? '' : 'update', subBuilder: $3794.AccountLink.create)
+    ..aOM<$3795.AccountLink>(2, _omitFieldNames ? '' : 'update', subBuilder: $3795.AccountLink.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -313,15 +313,15 @@ class AccountLinkOperation extends $pb.GeneratedMessage {
   /// Update operation: The account link is expected to have
   /// a valid resource name.
   @$pb.TagNumber(2)
-  $3794.AccountLink get update => $_getN(0);
+  $3795.AccountLink get update => $_getN(0);
   @$pb.TagNumber(2)
-  set update($3794.AccountLink v) { setField(2, v); }
+  set update($3795.AccountLink v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3794.AccountLink ensureUpdate() => $_ensure(0);
+  $3795.AccountLink ensureUpdate() => $_ensure(0);
 
   ///  Remove operation: A resource name for the account link to remove is
   ///  expected, in this format:
@@ -338,22 +338,22 @@ class AccountLinkOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Response message for account link mutate.
 class MutateAccountLinkResponse extends $pb.GeneratedMessage {
   factory MutateAccountLinkResponse({
     MutateAccountLinkResult? result,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (result != null) {
@@ -370,7 +370,7 @@ class MutateAccountLinkResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAccountLinkResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOM<MutateAccountLinkResult>(1, _omitFieldNames ? '' : 'result', subBuilder: MutateAccountLinkResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -412,15 +412,15 @@ class MutateAccountLinkResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the account link mutate.

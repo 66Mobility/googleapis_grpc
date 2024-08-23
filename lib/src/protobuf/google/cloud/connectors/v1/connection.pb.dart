@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'authconfig.pb.dart' as $4435;
-import 'common.pb.dart' as $4434;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'authconfig.pb.dart' as $4437;
+import 'common.pb.dart' as $4436;
 import 'connection.pbenum.dart';
-import 'destination_config.pb.dart' as $4436;
-import 'ssl_config.pb.dart' as $4437;
+import 'destination_config.pb.dart' as $4438;
+import 'ssl_config.pb.dart' as $4439;
 
 export 'connection.pbenum.dart';
 
@@ -28,23 +28,23 @@ export 'connection.pbenum.dart';
 class Connection extends $pb.GeneratedMessage {
   factory Connection({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $core.String? connectorVersion,
     ConnectionStatus? status,
-    $core.Iterable<$4434.ConfigVariable>? configVariables,
-    $4435.AuthConfig? authConfig,
+    $core.Iterable<$4436.ConfigVariable>? configVariables,
+    $4437.AuthConfig? authConfig,
     LockConfig? lockConfig,
     $core.String? imageLocation,
     $core.String? serviceAccount,
     $core.String? serviceDirectory,
     $core.String? envoyImageLocation,
     $core.bool? suspended,
-    $core.Iterable<$4436.DestinationConfig>? destinationConfigs,
+    $core.Iterable<$4438.DestinationConfig>? destinationConfigs,
     NodeConfig? nodeConfig,
-    $4437.SslConfig? sslConfig,
+    $4439.SslConfig? sslConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -109,23 +109,23 @@ class Connection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Connection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Connection.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.connectors.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'connectorVersion')
     ..aOM<ConnectionStatus>(7, _omitFieldNames ? '' : 'status', subBuilder: ConnectionStatus.create)
-    ..pc<$4434.ConfigVariable>(8, _omitFieldNames ? '' : 'configVariables', $pb.PbFieldType.PM, subBuilder: $4434.ConfigVariable.create)
-    ..aOM<$4435.AuthConfig>(9, _omitFieldNames ? '' : 'authConfig', subBuilder: $4435.AuthConfig.create)
+    ..pc<$4436.ConfigVariable>(8, _omitFieldNames ? '' : 'configVariables', $pb.PbFieldType.PM, subBuilder: $4436.ConfigVariable.create)
+    ..aOM<$4437.AuthConfig>(9, _omitFieldNames ? '' : 'authConfig', subBuilder: $4437.AuthConfig.create)
     ..aOM<LockConfig>(10, _omitFieldNames ? '' : 'lockConfig', subBuilder: LockConfig.create)
     ..aOS(11, _omitFieldNames ? '' : 'imageLocation')
     ..aOS(12, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(13, _omitFieldNames ? '' : 'serviceDirectory')
     ..aOS(15, _omitFieldNames ? '' : 'envoyImageLocation')
     ..aOB(17, _omitFieldNames ? '' : 'suspended')
-    ..pc<$4436.DestinationConfig>(18, _omitFieldNames ? '' : 'destinationConfigs', $pb.PbFieldType.PM, subBuilder: $4436.DestinationConfig.create)
+    ..pc<$4438.DestinationConfig>(18, _omitFieldNames ? '' : 'destinationConfigs', $pb.PbFieldType.PM, subBuilder: $4438.DestinationConfig.create)
     ..aOM<NodeConfig>(19, _omitFieldNames ? '' : 'nodeConfig', subBuilder: NodeConfig.create)
-    ..aOM<$4437.SslConfig>(21, _omitFieldNames ? '' : 'sslConfig', subBuilder: $4437.SslConfig.create)
+    ..aOM<$4439.SslConfig>(21, _omitFieldNames ? '' : 'sslConfig', subBuilder: $4439.SslConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -163,27 +163,27 @@ class Connection extends $pb.GeneratedMessage {
 
   /// Output only. Created time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Updated time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Resource labels to represent user-provided metadata.
   /// Refer to cloud documentation on labels for more details.
@@ -229,20 +229,20 @@ class Connection extends $pb.GeneratedMessage {
   /// Optional. Configuration for configuring the connection with an external
   /// system.
   @$pb.TagNumber(8)
-  $core.List<$4434.ConfigVariable> get configVariables => $_getList(7);
+  $core.List<$4436.ConfigVariable> get configVariables => $_getList(7);
 
   /// Optional. Configuration for establishing the connection's authentication
   /// with an external system.
   @$pb.TagNumber(9)
-  $4435.AuthConfig get authConfig => $_getN(8);
+  $4437.AuthConfig get authConfig => $_getN(8);
   @$pb.TagNumber(9)
-  set authConfig($4435.AuthConfig v) { setField(9, v); }
+  set authConfig($4437.AuthConfig v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasAuthConfig() => $_has(8);
   @$pb.TagNumber(9)
   void clearAuthConfig() => clearField(9);
   @$pb.TagNumber(9)
-  $4435.AuthConfig ensureAuthConfig() => $_ensure(8);
+  $4437.AuthConfig ensureAuthConfig() => $_ensure(8);
 
   /// Optional. Configuration that indicates whether or not the Connection can be
   /// edited.
@@ -315,7 +315,7 @@ class Connection extends $pb.GeneratedMessage {
   /// Optional. Configuration of the Connector's destination. Only accepted for
   /// Connectors that accepts user defined destination(s).
   @$pb.TagNumber(18)
-  $core.List<$4436.DestinationConfig> get destinationConfigs => $_getList(15);
+  $core.List<$4438.DestinationConfig> get destinationConfigs => $_getList(15);
 
   /// Optional. Node configuration for the connection.
   @$pb.TagNumber(19)
@@ -331,15 +331,15 @@ class Connection extends $pb.GeneratedMessage {
 
   /// Optional. Ssl config of a connection
   @$pb.TagNumber(21)
-  $4437.SslConfig get sslConfig => $_getN(17);
+  $4439.SslConfig get sslConfig => $_getN(17);
   @$pb.TagNumber(21)
-  set sslConfig($4437.SslConfig v) { setField(21, v); }
+  set sslConfig($4439.SslConfig v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasSslConfig() => $_has(17);
   @$pb.TagNumber(21)
   void clearSslConfig() => clearField(21);
   @$pb.TagNumber(21)
-  $4437.SslConfig ensureSslConfig() => $_ensure(17);
+  $4439.SslConfig ensureSslConfig() => $_ensure(17);
 }
 
 /// Node configuration for the connection.
@@ -417,8 +417,8 @@ class ConnectionSchemaMetadata extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? entities,
     $core.Iterable<$core.String>? actions,
     $core.String? name,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? refreshTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? refreshTime,
     ConnectionSchemaMetadata_State? state,
   }) {
     final $result = create();
@@ -450,8 +450,8 @@ class ConnectionSchemaMetadata extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'entities')
     ..pPS(2, _omitFieldNames ? '' : 'actions')
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'refreshTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'refreshTime', subBuilder: $1776.Timestamp.create)
     ..e<ConnectionSchemaMetadata_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ConnectionSchemaMetadata_State.STATE_UNSPECIFIED, valueOf: ConnectionSchemaMetadata_State.valueOf, enumValues: ConnectionSchemaMetadata_State.values)
     ..hasRequiredFields = false
   ;
@@ -499,28 +499,28 @@ class ConnectionSchemaMetadata extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the connection runtime schema was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Timestamp when the connection runtime schema refresh was
   /// triggered.
   @$pb.TagNumber(5)
-  $1775.Timestamp get refreshTime => $_getN(4);
+  $1776.Timestamp get refreshTime => $_getN(4);
   @$pb.TagNumber(5)
-  set refreshTime($1775.Timestamp v) { setField(5, v); }
+  set refreshTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRefreshTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearRefreshTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureRefreshTime() => $_ensure(4);
+  $1776.Timestamp ensureRefreshTime() => $_ensure(4);
 
   /// Output only. The current state of runtime schema.
   @$pb.TagNumber(6)
@@ -542,8 +542,8 @@ class RuntimeEntitySchema_Field extends $pb.GeneratedMessage {
     $core.bool? key,
     $core.bool? readonly,
     $core.bool? nullable,
-    $1734.Value? defaultValue,
-    $1734.Struct? additionalDetails,
+    $1735.Value? defaultValue,
+    $1735.Struct? additionalDetails,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -583,8 +583,8 @@ class RuntimeEntitySchema_Field extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'key')
     ..aOB(5, _omitFieldNames ? '' : 'readonly')
     ..aOB(6, _omitFieldNames ? '' : 'nullable')
-    ..aOM<$1734.Value>(7, _omitFieldNames ? '' : 'defaultValue', subBuilder: $1734.Value.create)
-    ..aOM<$1734.Struct>(8, _omitFieldNames ? '' : 'additionalDetails', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Value>(7, _omitFieldNames ? '' : 'defaultValue', subBuilder: $1735.Value.create)
+    ..aOM<$1735.Struct>(8, _omitFieldNames ? '' : 'additionalDetails', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -673,29 +673,29 @@ class RuntimeEntitySchema_Field extends $pb.GeneratedMessage {
   /// The following field specifies the default value of the Field provided
   /// by the external system if a value is not provided.
   @$pb.TagNumber(7)
-  $1734.Value get defaultValue => $_getN(6);
+  $1735.Value get defaultValue => $_getN(6);
   @$pb.TagNumber(7)
-  set defaultValue($1734.Value v) { setField(7, v); }
+  set defaultValue($1735.Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDefaultValue() => $_has(6);
   @$pb.TagNumber(7)
   void clearDefaultValue() => clearField(7);
   @$pb.TagNumber(7)
-  $1734.Value ensureDefaultValue() => $_ensure(6);
+  $1735.Value ensureDefaultValue() => $_ensure(6);
 
   /// The following map contains fields that are not explicitly mentioned
   /// above,this give connectors the flexibility to add new metadata
   /// fields.
   @$pb.TagNumber(8)
-  $1734.Struct get additionalDetails => $_getN(7);
+  $1735.Struct get additionalDetails => $_getN(7);
   @$pb.TagNumber(8)
-  set additionalDetails($1734.Struct v) { setField(8, v); }
+  set additionalDetails($1735.Struct v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAdditionalDetails() => $_has(7);
   @$pb.TagNumber(8)
   void clearAdditionalDetails() => clearField(8);
   @$pb.TagNumber(8)
-  $1734.Struct ensureAdditionalDetails() => $_ensure(7);
+  $1735.Struct ensureAdditionalDetails() => $_ensure(7);
 }
 
 /// Schema of a runtime entity.
@@ -766,7 +766,7 @@ class RuntimeActionSchema_InputParameter extends $pb.GeneratedMessage {
     $core.String? description,
     DataType? dataType,
     $core.bool? nullable,
-    $1734.Value? defaultValue,
+    $1735.Value? defaultValue,
   }) {
     final $result = create();
     if (parameter != null) {
@@ -795,7 +795,7 @@ class RuntimeActionSchema_InputParameter extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..e<DataType>(3, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: DataType.DATA_TYPE_UNSPECIFIED, valueOf: DataType.valueOf, enumValues: DataType.values)
     ..aOB(4, _omitFieldNames ? '' : 'nullable')
-    ..aOM<$1734.Value>(5, _omitFieldNames ? '' : 'defaultValue', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(5, _omitFieldNames ? '' : 'defaultValue', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -863,15 +863,15 @@ class RuntimeActionSchema_InputParameter extends $pb.GeneratedMessage {
   /// The following field specifies the default value of the Parameter
   /// provided by the external system if a value is not provided.
   @$pb.TagNumber(5)
-  $1734.Value get defaultValue => $_getN(4);
+  $1735.Value get defaultValue => $_getN(4);
   @$pb.TagNumber(5)
-  set defaultValue($1734.Value v) { setField(5, v); }
+  set defaultValue($1735.Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDefaultValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearDefaultValue() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Value ensureDefaultValue() => $_ensure(4);
+  $1735.Value ensureDefaultValue() => $_ensure(4);
 }
 
 /// Metadata of result field.
@@ -1452,7 +1452,7 @@ class CreateConnectionRequest extends $pb.GeneratedMessage {
 class UpdateConnectionRequest extends $pb.GeneratedMessage {
   factory UpdateConnectionRequest({
     Connection? connection,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (connection != null) {
@@ -1469,7 +1469,7 @@ class UpdateConnectionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConnectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..aOM<Connection>(1, _omitFieldNames ? '' : 'connection', subBuilder: Connection.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1523,15 +1523,15 @@ class UpdateConnectionRequest extends $pb.GeneratedMessage {
   ///  * `destination_configs`
   ///  * `node_config`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ConnectorsService.DeleteConnection.

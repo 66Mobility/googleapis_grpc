@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'custom_job.pb.dart' as $587;
-import 'encryption_spec.pb.dart' as $4281;
-import 'job_state.pbenum.dart' as $4283;
+import 'encryption_spec.pb.dart' as $4282;
+import 'job_state.pbenum.dart' as $4284;
 import 'study.pb.dart' as $637;
 
 /// Represents a HyperparameterTuningJob. A HyperparameterTuningJob
@@ -33,14 +33,14 @@ class HyperparameterTuningJob extends $pb.GeneratedMessage {
     $core.int? maxFailedTrialCount,
     $587.CustomJobSpec? trialJobSpec,
     $core.Iterable<$637.Trial>? trials,
-    $4283.JobState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
-    $1795.Status? error,
+    $4284.JobState? state,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
+    $1796.Status? error,
     $core.Map<$core.String, $core.String>? labels,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4282.EncryptionSpec? encryptionSpec,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
   }) {
@@ -114,14 +114,14 @@ class HyperparameterTuningJob extends $pb.GeneratedMessage {
     ..a<$core.int>(7, _omitFieldNames ? '' : 'maxFailedTrialCount', $pb.PbFieldType.O3)
     ..aOM<$587.CustomJobSpec>(8, _omitFieldNames ? '' : 'trialJobSpec', subBuilder: $587.CustomJobSpec.create)
     ..pc<$637.Trial>(9, _omitFieldNames ? '' : 'trials', $pb.PbFieldType.PM, subBuilder: $637.Trial.create)
-    ..e<$4283.JobState>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4283.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4283.JobState.valueOf, enumValues: $4283.JobState.values)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(15, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..e<$4284.JobState>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4284.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4284.JobState.valueOf, enumValues: $4284.JobState.values)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(15, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'labels', entryClassName: 'HyperparameterTuningJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$4281.EncryptionSpec>(17, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4282.EncryptionSpec>(17, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOB(19, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(20, _omitFieldNames ? '' : 'satisfiesPzi')
     ..hasRequiredFields = false
@@ -235,9 +235,9 @@ class HyperparameterTuningJob extends $pb.GeneratedMessage {
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(10)
-  $4283.JobState get state => $_getN(8);
+  $4284.JobState get state => $_getN(8);
   @$pb.TagNumber(10)
-  set state($4283.JobState v) { setField(10, v); }
+  set state($4284.JobState v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(8);
   @$pb.TagNumber(10)
@@ -245,68 +245,68 @@ class HyperparameterTuningJob extends $pb.GeneratedMessage {
 
   /// Output only. Time when the HyperparameterTuningJob was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(9);
+  $1776.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCreateTime() => $_ensure(9);
 
   /// Output only. Time when the HyperparameterTuningJob for the first time
   /// entered the `JOB_STATE_RUNNING` state.
   @$pb.TagNumber(12)
-  $1775.Timestamp get startTime => $_getN(10);
+  $1776.Timestamp get startTime => $_getN(10);
   @$pb.TagNumber(12)
-  set startTime($1775.Timestamp v) { setField(12, v); }
+  set startTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasStartTime() => $_has(10);
   @$pb.TagNumber(12)
   void clearStartTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureStartTime() => $_ensure(10);
+  $1776.Timestamp ensureStartTime() => $_ensure(10);
 
   /// Output only. Time when the HyperparameterTuningJob entered any of the
   /// following states: `JOB_STATE_SUCCEEDED`, `JOB_STATE_FAILED`,
   /// `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(13)
-  $1775.Timestamp get endTime => $_getN(11);
+  $1776.Timestamp get endTime => $_getN(11);
   @$pb.TagNumber(13)
-  set endTime($1775.Timestamp v) { setField(13, v); }
+  set endTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasEndTime() => $_has(11);
   @$pb.TagNumber(13)
   void clearEndTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureEndTime() => $_ensure(11);
+  $1776.Timestamp ensureEndTime() => $_ensure(11);
 
   /// Output only. Time when the HyperparameterTuningJob was most recently
   /// updated.
   @$pb.TagNumber(14)
-  $1775.Timestamp get updateTime => $_getN(12);
+  $1776.Timestamp get updateTime => $_getN(12);
   @$pb.TagNumber(14)
-  set updateTime($1775.Timestamp v) { setField(14, v); }
+  set updateTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasUpdateTime() => $_has(12);
   @$pb.TagNumber(14)
   void clearUpdateTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(12);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(12);
 
   /// Output only. Only populated when job's state is JOB_STATE_FAILED or
   /// JOB_STATE_CANCELLED.
   @$pb.TagNumber(15)
-  $1795.Status get error => $_getN(13);
+  $1796.Status get error => $_getN(13);
   @$pb.TagNumber(15)
-  set error($1795.Status v) { setField(15, v); }
+  set error($1796.Status v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasError() => $_has(13);
   @$pb.TagNumber(15)
   void clearError() => clearField(15);
   @$pb.TagNumber(15)
-  $1795.Status ensureError() => $_ensure(13);
+  $1796.Status ensureError() => $_ensure(13);
 
   ///  The labels with user-defined metadata to organize HyperparameterTuningJobs.
   ///
@@ -322,15 +322,15 @@ class HyperparameterTuningJob extends $pb.GeneratedMessage {
   /// If this is set, then all resources created by the HyperparameterTuningJob
   /// will be encrypted with the provided encryption key.
   @$pb.TagNumber(17)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(15);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(15);
   @$pb.TagNumber(17)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(17, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasEncryptionSpec() => $_has(15);
   @$pb.TagNumber(17)
   void clearEncryptionSpec() => clearField(17);
   @$pb.TagNumber(17)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(15);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(15);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(19)

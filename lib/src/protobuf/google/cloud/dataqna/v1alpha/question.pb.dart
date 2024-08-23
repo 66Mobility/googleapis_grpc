@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'annotated_string.pb.dart' as $4471;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'annotated_string.pb.dart' as $4473;
 import 'question.pbenum.dart';
 
 export 'question.pbenum.dart';
@@ -33,10 +33,10 @@ class Question extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? dataSourceAnnotations,
     InterpretError? interpretError,
     $core.Iterable<Interpretation>? interpretations,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? userEmail,
     DebugFlags? debugFlags,
-    $1794.Any? debugInfo,
+    $1795.Any? debugInfo,
   }) {
     final $result = create();
     if (name != null) {
@@ -82,10 +82,10 @@ class Question extends $pb.GeneratedMessage {
     ..pPS(4, _omitFieldNames ? '' : 'dataSourceAnnotations')
     ..aOM<InterpretError>(5, _omitFieldNames ? '' : 'interpretError', subBuilder: InterpretError.create)
     ..pc<Interpretation>(6, _omitFieldNames ? '' : 'interpretations', $pb.PbFieldType.PM, subBuilder: Interpretation.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'userEmail')
     ..aOM<DebugFlags>(9, _omitFieldNames ? '' : 'debugFlags', subBuilder: DebugFlags.create)
-    ..aOM<$1794.Any>(10, _omitFieldNames ? '' : 'debugInfo', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(10, _omitFieldNames ? '' : 'debugInfo', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -171,15 +171,15 @@ class Question extends $pb.GeneratedMessage {
 
   /// Time when the question was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The e-mail address of the user that created this question.
   @$pb.TagNumber(8)
@@ -208,15 +208,15 @@ class Question extends $pb.GeneratedMessage {
   /// Using Any so clients don't need to pull in anything
   /// inside the debug message.
   @$pb.TagNumber(10)
-  $1794.Any get debugInfo => $_getN(9);
+  $1795.Any get debugInfo => $_getN(9);
   @$pb.TagNumber(10)
-  set debugInfo($1794.Any v) { setField(10, v); }
+  set debugInfo($1795.Any v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDebugInfo() => $_has(9);
   @$pb.TagNumber(10)
   void clearDebugInfo() => clearField(10);
   @$pb.TagNumber(10)
-  $1794.Any ensureDebugInfo() => $_ensure(9);
+  $1795.Any ensureDebugInfo() => $_ensure(9);
 }
 
 /// Details on interpretation failure.
@@ -529,9 +529,9 @@ class InterpretError extends $pb.GeneratedMessage {
 /// Information about the backend status (such as BigQuery) of the execution.
 class ExecutionInfo extends $pb.GeneratedMessage {
   factory ExecutionInfo({
-    $1795.Status? jobCreationStatus,
+    $1796.Status? jobCreationStatus,
     ExecutionInfo_JobExecutionState? jobExecutionState,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     BigQueryJob? bigqueryJob,
   }) {
     final $result = create();
@@ -554,9 +554,9 @@ class ExecutionInfo extends $pb.GeneratedMessage {
   factory ExecutionInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecutionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataqna.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'jobCreationStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'jobCreationStatus', subBuilder: $1796.Status.create)
     ..e<ExecutionInfo_JobExecutionState>(2, _omitFieldNames ? '' : 'jobExecutionState', $pb.PbFieldType.OE, defaultOrMaker: ExecutionInfo_JobExecutionState.JOB_EXECUTION_STATE_UNSPECIFIED, valueOf: ExecutionInfo_JobExecutionState.valueOf, enumValues: ExecutionInfo_JobExecutionState.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<BigQueryJob>(4, _omitFieldNames ? '' : 'bigqueryJob', subBuilder: BigQueryJob.create)
     ..hasRequiredFields = false
   ;
@@ -584,15 +584,15 @@ class ExecutionInfo extends $pb.GeneratedMessage {
 
   /// Status returned by the backend when the job was created.
   @$pb.TagNumber(1)
-  $1795.Status get jobCreationStatus => $_getN(0);
+  $1796.Status get jobCreationStatus => $_getN(0);
   @$pb.TagNumber(1)
-  set jobCreationStatus($1795.Status v) { setField(1, v); }
+  set jobCreationStatus($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasJobCreationStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearJobCreationStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureJobCreationStatus() => $_ensure(0);
+  $1796.Status ensureJobCreationStatus() => $_ensure(0);
 
   /// Status of the job execution.
   @$pb.TagNumber(2)
@@ -606,15 +606,15 @@ class ExecutionInfo extends $pb.GeneratedMessage {
 
   /// Time when the execution was triggered.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// BigQuery job information.
   /// Future versions will have different backends. Hence, clients must make sure
@@ -918,8 +918,8 @@ class DataQuery extends $pb.GeneratedMessage {
 /// Human readable interpretation.
 class HumanReadable extends $pb.GeneratedMessage {
   factory HumanReadable({
-    $4471.AnnotatedString? generatedInterpretation,
-    $4471.AnnotatedString? originalQuestion,
+    $4473.AnnotatedString? generatedInterpretation,
+    $4473.AnnotatedString? originalQuestion,
   }) {
     final $result = create();
     if (generatedInterpretation != null) {
@@ -935,8 +935,8 @@ class HumanReadable extends $pb.GeneratedMessage {
   factory HumanReadable.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HumanReadable', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataqna.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4471.AnnotatedString>(1, _omitFieldNames ? '' : 'generatedInterpretation', subBuilder: $4471.AnnotatedString.create)
-    ..aOM<$4471.AnnotatedString>(2, _omitFieldNames ? '' : 'originalQuestion', subBuilder: $4471.AnnotatedString.create)
+    ..aOM<$4473.AnnotatedString>(1, _omitFieldNames ? '' : 'generatedInterpretation', subBuilder: $4473.AnnotatedString.create)
+    ..aOM<$4473.AnnotatedString>(2, _omitFieldNames ? '' : 'originalQuestion', subBuilder: $4473.AnnotatedString.create)
     ..hasRequiredFields = false
   ;
 
@@ -963,27 +963,27 @@ class HumanReadable extends $pb.GeneratedMessage {
 
   /// Generated query explaining the interpretation.
   @$pb.TagNumber(1)
-  $4471.AnnotatedString get generatedInterpretation => $_getN(0);
+  $4473.AnnotatedString get generatedInterpretation => $_getN(0);
   @$pb.TagNumber(1)
-  set generatedInterpretation($4471.AnnotatedString v) { setField(1, v); }
+  set generatedInterpretation($4473.AnnotatedString v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGeneratedInterpretation() => $_has(0);
   @$pb.TagNumber(1)
   void clearGeneratedInterpretation() => clearField(1);
   @$pb.TagNumber(1)
-  $4471.AnnotatedString ensureGeneratedInterpretation() => $_ensure(0);
+  $4473.AnnotatedString ensureGeneratedInterpretation() => $_ensure(0);
 
   /// Annotations on the original query.
   @$pb.TagNumber(2)
-  $4471.AnnotatedString get originalQuestion => $_getN(1);
+  $4473.AnnotatedString get originalQuestion => $_getN(1);
   @$pb.TagNumber(2)
-  set originalQuestion($4471.AnnotatedString v) { setField(2, v); }
+  set originalQuestion($4473.AnnotatedString v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOriginalQuestion() => $_has(1);
   @$pb.TagNumber(2)
   void clearOriginalQuestion() => clearField(2);
   @$pb.TagNumber(2)
-  $4471.AnnotatedString ensureOriginalQuestion() => $_ensure(1);
+  $4473.AnnotatedString ensureOriginalQuestion() => $_ensure(1);
 }
 
 /// Information about a column.

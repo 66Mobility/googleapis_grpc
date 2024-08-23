@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../resources/customer_user_access_invitation.pb.dart' as $3916;
+import '../resources/customer_user_access_invitation.pb.dart' as $3917;
 
 /// Request message for
 /// [CustomerUserAccessInvitationService.MutateCustomerUserAccessInvitation][google.ads.googleads.v17.services.CustomerUserAccessInvitationService.MutateCustomerUserAccessInvitation]
@@ -94,7 +94,7 @@ enum CustomerUserAccessInvitationOperation_Operation {
 /// A single operation (create or remove) on customer user access invitation.
 class CustomerUserAccessInvitationOperation extends $pb.GeneratedMessage {
   factory CustomerUserAccessInvitationOperation({
-    $3916.CustomerUserAccessInvitation? create_1,
+    $3917.CustomerUserAccessInvitation? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -117,7 +117,7 @@ class CustomerUserAccessInvitationOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerUserAccessInvitationOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3916.CustomerUserAccessInvitation>(1, _omitFieldNames ? '' : 'create', subBuilder: $3916.CustomerUserAccessInvitation.create)
+    ..aOM<$3917.CustomerUserAccessInvitation>(1, _omitFieldNames ? '' : 'create', subBuilder: $3917.CustomerUserAccessInvitation.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -149,15 +149,15 @@ class CustomerUserAccessInvitationOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new access
   /// invitation.
   @$pb.TagNumber(1)
-  $3916.CustomerUserAccessInvitation get create_1 => $_getN(0);
+  $3917.CustomerUserAccessInvitation get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3916.CustomerUserAccessInvitation v) { setField(1, v); }
+  set create_1($3917.CustomerUserAccessInvitation v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3916.CustomerUserAccessInvitation ensureCreate_1() => $_ensure(0);
+  $3917.CustomerUserAccessInvitation ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the revoke invitation is
   ///  expected, in this format:

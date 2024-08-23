@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/batch_job.pb.dart' as $3179;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/batch_job.pb.dart' as $3180;
 import 'google_ads_service.pb.dart' as $216;
 
 /// Request message for
@@ -98,7 +98,7 @@ enum BatchJobOperation_Operation {
 /// A single operation on a batch job.
 class BatchJobOperation extends $pb.GeneratedMessage {
   factory BatchJobOperation({
-    $3179.BatchJob? create_1,
+    $3180.BatchJob? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -121,7 +121,7 @@ class BatchJobOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchJobOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 4])
-    ..aOM<$3179.BatchJob>(1, _omitFieldNames ? '' : 'create', subBuilder: $3179.BatchJob.create)
+    ..aOM<$3180.BatchJob>(1, _omitFieldNames ? '' : 'create', subBuilder: $3180.BatchJob.create)
     ..aOS(4, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -152,15 +152,15 @@ class BatchJobOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new batch job.
   @$pb.TagNumber(1)
-  $3179.BatchJob get create_1 => $_getN(0);
+  $3180.BatchJob get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3179.BatchJob v) { setField(1, v); }
+  set create_1($3180.BatchJob v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3179.BatchJob ensureCreate_1() => $_ensure(0);
+  $3180.BatchJob ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: The batch job must not have been run. A resource name
   ///  for the removed batch job is expected, in this format:
@@ -503,7 +503,7 @@ class ListBatchJobResultsRequest extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? pageToken,
     $core.int? pageSize,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -528,7 +528,7 @@ class ListBatchJobResultsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(4, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(4, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -592,9 +592,9 @@ class ListBatchJobResultsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned.
   @$pb.TagNumber(4)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
   @$pb.TagNumber(4)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(4, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResponseContentType() => $_has(3);
   @$pb.TagNumber(4)
@@ -671,7 +671,7 @@ class BatchJobResult extends $pb.GeneratedMessage {
   factory BatchJobResult({
     $fixnum.Int64? operationIndex,
     $216.MutateOperationResponse? mutateOperationResponse,
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (operationIndex != null) {
@@ -692,7 +692,7 @@ class BatchJobResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchJobResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'operationIndex')
     ..aOM<$216.MutateOperationResponse>(2, _omitFieldNames ? '' : 'mutateOperationResponse', subBuilder: $216.MutateOperationResponse.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -742,15 +742,15 @@ class BatchJobResult extends $pb.GeneratedMessage {
 
   /// Details of the errors when processing the operation.
   @$pb.TagNumber(3)
-  $1795.Status get status => $_getN(2);
+  $1796.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($1795.Status v) { setField(3, v); }
+  set status($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureStatus() => $_ensure(2);
+  $1796.Status ensureStatus() => $_ensure(2);
 }
 
 

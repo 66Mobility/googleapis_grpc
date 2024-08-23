@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4508;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4510;
 import 'data_store.pbenum.dart';
-import 'document_processing_config.pb.dart' as $4511;
+import 'document_processing_config.pb.dart' as $4513;
 import 'schema.pb.dart' as $1019;
 
 export 'data_store.pbenum.dart';
@@ -26,13 +26,13 @@ class DataStore extends $pb.GeneratedMessage {
   factory DataStore({
     $core.String? name,
     $core.String? displayName,
-    $4508.IndustryVertical? industryVertical,
-    $1775.Timestamp? createTime,
-    $core.Iterable<$4508.SolutionType>? solutionTypes,
+    $4510.IndustryVertical? industryVertical,
+    $1776.Timestamp? createTime,
+    $core.Iterable<$4510.SolutionType>? solutionTypes,
     DataStore_ContentConfig? contentConfig,
     $core.String? defaultSchemaId,
     LanguageInfo? languageInfo,
-    $4511.DocumentProcessingConfig? documentProcessingConfig,
+    $4513.DocumentProcessingConfig? documentProcessingConfig,
     $1019.Schema? startingSchema,
   }) {
     final $result = create();
@@ -75,13 +75,13 @@ class DataStore extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataStore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<$4508.IndustryVertical>(3, _omitFieldNames ? '' : 'industryVertical', $pb.PbFieldType.OE, defaultOrMaker: $4508.IndustryVertical.INDUSTRY_VERTICAL_UNSPECIFIED, valueOf: $4508.IndustryVertical.valueOf, enumValues: $4508.IndustryVertical.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$4508.SolutionType>(5, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4508.SolutionType.valueOf, enumValues: $4508.SolutionType.values, defaultEnumValue: $4508.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
+    ..e<$4510.IndustryVertical>(3, _omitFieldNames ? '' : 'industryVertical', $pb.PbFieldType.OE, defaultOrMaker: $4510.IndustryVertical.INDUSTRY_VERTICAL_UNSPECIFIED, valueOf: $4510.IndustryVertical.valueOf, enumValues: $4510.IndustryVertical.values)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$4510.SolutionType>(5, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4510.SolutionType.valueOf, enumValues: $4510.SolutionType.values, defaultEnumValue: $4510.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
     ..e<DataStore_ContentConfig>(6, _omitFieldNames ? '' : 'contentConfig', $pb.PbFieldType.OE, defaultOrMaker: DataStore_ContentConfig.CONTENT_CONFIG_UNSPECIFIED, valueOf: DataStore_ContentConfig.valueOf, enumValues: DataStore_ContentConfig.values)
     ..aOS(7, _omitFieldNames ? '' : 'defaultSchemaId')
     ..aOM<LanguageInfo>(14, _omitFieldNames ? '' : 'languageInfo', subBuilder: LanguageInfo.create)
-    ..aOM<$4511.DocumentProcessingConfig>(27, _omitFieldNames ? '' : 'documentProcessingConfig', subBuilder: $4511.DocumentProcessingConfig.create)
+    ..aOM<$4513.DocumentProcessingConfig>(27, _omitFieldNames ? '' : 'documentProcessingConfig', subBuilder: $4513.DocumentProcessingConfig.create)
     ..aOM<$1019.Schema>(28, _omitFieldNames ? '' : 'startingSchema', subBuilder: $1019.Schema.create)
     ..hasRequiredFields = false
   ;
@@ -137,9 +137,9 @@ class DataStore extends $pb.GeneratedMessage {
 
   /// Immutable. The industry vertical that the data store registers.
   @$pb.TagNumber(3)
-  $4508.IndustryVertical get industryVertical => $_getN(2);
+  $4510.IndustryVertical get industryVertical => $_getN(2);
   @$pb.TagNumber(3)
-  set industryVertical($4508.IndustryVertical v) { setField(3, v); }
+  set industryVertical($4510.IndustryVertical v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIndustryVertical() => $_has(2);
   @$pb.TagNumber(3)
@@ -148,15 +148,15 @@ class DataStore extends $pb.GeneratedMessage {
   /// Output only. Timestamp the
   /// [DataStore][google.cloud.discoveryengine.v1beta.DataStore] was created at.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   ///  The solutions that the data store enrolls. Available solutions for each
   ///  [industry_vertical][google.cloud.discoveryengine.v1beta.DataStore.industry_vertical]:
@@ -165,7 +165,7 @@ class DataStore extends $pb.GeneratedMessage {
   ///  * `SITE_SEARCH`: `SOLUTION_TYPE_SEARCH` is automatically enrolled. Other
   ///    solutions cannot be enrolled.
   @$pb.TagNumber(5)
-  $core.List<$4508.SolutionType> get solutionTypes => $_getList(4);
+  $core.List<$4510.SolutionType> get solutionTypes => $_getList(4);
 
   /// Immutable. The content config of the data store. If this field is unset,
   /// the server behavior defaults to
@@ -205,15 +205,15 @@ class DataStore extends $pb.GeneratedMessage {
 
   /// Configuration for Document understanding and enrichment.
   @$pb.TagNumber(27)
-  $4511.DocumentProcessingConfig get documentProcessingConfig => $_getN(8);
+  $4513.DocumentProcessingConfig get documentProcessingConfig => $_getN(8);
   @$pb.TagNumber(27)
-  set documentProcessingConfig($4511.DocumentProcessingConfig v) { setField(27, v); }
+  set documentProcessingConfig($4513.DocumentProcessingConfig v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasDocumentProcessingConfig() => $_has(8);
   @$pb.TagNumber(27)
   void clearDocumentProcessingConfig() => clearField(27);
   @$pb.TagNumber(27)
-  $4511.DocumentProcessingConfig ensureDocumentProcessingConfig() => $_ensure(8);
+  $4513.DocumentProcessingConfig ensureDocumentProcessingConfig() => $_ensure(8);
 
   ///  The start schema to use for this
   ///  [DataStore][google.cloud.discoveryengine.v1beta.DataStore] when

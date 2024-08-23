@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Represents a Jupyter notebook IPYNB file, such as a [Colab Enterprise
 /// notebook](https://cloud.google.com/colab/docs/introduction) file, that is
@@ -23,7 +23,7 @@ class Notebook extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? service,
     $core.String? lastAuthor,
-    $1775.Timestamp? notebookUpdateTime,
+    $1776.Timestamp? notebookUpdateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -48,7 +48,7 @@ class Notebook extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'service')
     ..aOS(3, _omitFieldNames ? '' : 'lastAuthor')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'notebookUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'notebookUpdateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -105,15 +105,15 @@ class Notebook extends $pb.GeneratedMessage {
 
   /// The most recent time the notebook was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get notebookUpdateTime => $_getN(3);
+  $1776.Timestamp get notebookUpdateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set notebookUpdateTime($1775.Timestamp v) { setField(4, v); }
+  set notebookUpdateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasNotebookUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearNotebookUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureNotebookUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureNotebookUpdateTime() => $_ensure(3);
 }
 
 

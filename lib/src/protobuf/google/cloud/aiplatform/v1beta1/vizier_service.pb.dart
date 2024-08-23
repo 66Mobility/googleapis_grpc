@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'operation.pb.dart' as $4295;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'operation.pb.dart' as $4296;
 import 'study.pb.dart' as $637;
 import 'study.pbenum.dart' as $637;
 
@@ -554,8 +554,8 @@ class SuggestTrialsResponse extends $pb.GeneratedMessage {
   factory SuggestTrialsResponse({
     $core.Iterable<$637.Trial>? trials,
     $637.Study_State? studyState,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (trials != null) {
@@ -579,8 +579,8 @@ class SuggestTrialsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestTrialsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..pc<$637.Trial>(1, _omitFieldNames ? '' : 'trials', $pb.PbFieldType.PM, subBuilder: $637.Trial.create)
     ..e<$637.Study_State>(2, _omitFieldNames ? '' : 'studyState', $pb.PbFieldType.OE, defaultOrMaker: $637.Study_State.STATE_UNSPECIFIED, valueOf: $637.Study_State.valueOf, enumValues: $637.Study_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -621,33 +621,33 @@ class SuggestTrialsResponse extends $pb.GeneratedMessage {
 
   /// The time at which the operation was started.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The time at which operation processing completed.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 }
 
 /// Details of operations that perform Trials suggestion.
 class SuggestTrialsMetadata extends $pb.GeneratedMessage {
   factory SuggestTrialsMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
     $core.String? clientId,
   }) {
     final $result = create();
@@ -664,7 +664,7 @@ class SuggestTrialsMetadata extends $pb.GeneratedMessage {
   factory SuggestTrialsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestTrialsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'clientId')
     ..hasRequiredFields = false
   ;
@@ -692,15 +692,15 @@ class SuggestTrialsMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for suggesting Trials.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   ///  The identifier of the client that is requesting the suggestion.
   ///
@@ -1339,7 +1339,7 @@ class CheckTrialEarlyStoppingStateResponse extends $pb.GeneratedMessage {
 /// request.
 class CheckTrialEarlyStoppingStateMetatdata extends $pb.GeneratedMessage {
   factory CheckTrialEarlyStoppingStateMetatdata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
     $core.String? study,
     $core.String? trial,
   }) {
@@ -1360,7 +1360,7 @@ class CheckTrialEarlyStoppingStateMetatdata extends $pb.GeneratedMessage {
   factory CheckTrialEarlyStoppingStateMetatdata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckTrialEarlyStoppingStateMetatdata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'study')
     ..aOS(3, _omitFieldNames ? '' : 'trial')
     ..hasRequiredFields = false
@@ -1389,15 +1389,15 @@ class CheckTrialEarlyStoppingStateMetatdata extends $pb.GeneratedMessage {
 
   /// Operation metadata for suggesting Trials.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// The name of the Study that the Trial belongs to.
   @$pb.TagNumber(2)

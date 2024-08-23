@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/local_services_employee_status.pbenum.dart' as $3746;
-import '../enums/local_services_employee_type.pbenum.dart' as $3747;
+import '../enums/local_services_employee_status.pbenum.dart' as $3747;
+import '../enums/local_services_employee_type.pbenum.dart' as $3748;
 
 /// A local services employee resource.
 class LocalServicesEmployee extends $pb.GeneratedMessage {
@@ -23,8 +23,8 @@ class LocalServicesEmployee extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? id,
     $core.String? creationDateTime,
-    $3746.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus? status,
-    $3747.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType? type,
+    $3747.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus? status,
+    $3748.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType? type,
     $core.Iterable<UniversityDegree>? universityDegrees,
     $core.Iterable<Residency>? residencies,
     $core.Iterable<Fellowship>? fellowships,
@@ -100,8 +100,8 @@ class LocalServicesEmployee extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'creationDateTime')
-    ..e<$3746.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3746.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus.UNSPECIFIED, valueOf: $3746.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus.valueOf, enumValues: $3746.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus.values)
-    ..e<$3747.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3747.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType.UNSPECIFIED, valueOf: $3747.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType.valueOf, enumValues: $3747.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType.values)
+    ..e<$3747.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3747.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus.UNSPECIFIED, valueOf: $3747.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus.valueOf, enumValues: $3747.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus.values)
+    ..e<$3748.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3748.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType.UNSPECIFIED, valueOf: $3748.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType.valueOf, enumValues: $3748.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType.values)
     ..pc<UniversityDegree>(6, _omitFieldNames ? '' : 'universityDegrees', $pb.PbFieldType.PM, subBuilder: UniversityDegree.create)
     ..pc<Residency>(7, _omitFieldNames ? '' : 'residencies', $pb.PbFieldType.PM, subBuilder: Residency.create)
     ..pc<Fellowship>(8, _omitFieldNames ? '' : 'fellowships', $pb.PbFieldType.PM, subBuilder: Fellowship.create)
@@ -175,9 +175,9 @@ class LocalServicesEmployee extends $pb.GeneratedMessage {
 
   /// Output only. Employee status, such as DELETED or ENABLED.
   @$pb.TagNumber(4)
-  $3746.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus get status => $_getN(3);
+  $3747.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($3746.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus v) { setField(4, v); }
+  set status($3747.LocalServicesEmployeeStatusEnum_LocalServicesEmployeeStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -185,9 +185,9 @@ class LocalServicesEmployee extends $pb.GeneratedMessage {
 
   /// Output only. Employee type.
   @$pb.TagNumber(5)
-  $3747.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType get type => $_getN(4);
+  $3748.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type($3747.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType v) { setField(5, v); }
+  set type($3748.LocalServicesEmployeeTypeEnum_LocalServicesEmployeeType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)

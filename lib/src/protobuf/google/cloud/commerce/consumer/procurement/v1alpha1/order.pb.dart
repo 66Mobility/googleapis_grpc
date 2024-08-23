@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'order.pbenum.dart';
 
 export 'order.pbenum.dart';
@@ -34,8 +34,8 @@ class Order extends $pb.GeneratedMessage {
     $core.String? name,
     $core.Iterable<LineItem>? lineItems,
     $core.Iterable<LineItem>? cancelledLineItems,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? displayName,
     $core.String? etag,
   }) {
@@ -71,8 +71,8 @@ class Order extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pc<LineItem>(6, _omitFieldNames ? '' : 'lineItems', $pb.PbFieldType.PM, subBuilder: LineItem.create)
     ..pc<LineItem>(7, _omitFieldNames ? '' : 'cancelledLineItems', $pb.PbFieldType.PM, subBuilder: LineItem.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'displayName')
     ..aOS(11, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
@@ -121,27 +121,27 @@ class Order extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The last update timestamp.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Required. The user-specified name of the order.
   @$pb.TagNumber(10)
@@ -274,9 +274,9 @@ class LineItemChange extends $pb.GeneratedMessage {
     LineItemInfo? newLineItemInfo,
     LineItemChangeState? changeState,
     $core.String? stateReason,
-    $1775.Timestamp? changeEffectiveTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? changeEffectiveTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     LineItemChangeStateReasonType? changeStateReasonType,
   }) {
     final $result = create();
@@ -323,9 +323,9 @@ class LineItemChange extends $pb.GeneratedMessage {
     ..aOM<LineItemInfo>(4, _omitFieldNames ? '' : 'newLineItemInfo', subBuilder: LineItemInfo.create)
     ..e<LineItemChangeState>(5, _omitFieldNames ? '' : 'changeState', $pb.PbFieldType.OE, defaultOrMaker: LineItemChangeState.LINE_ITEM_CHANGE_STATE_UNSPECIFIED, valueOf: LineItemChangeState.valueOf, enumValues: LineItemChangeState.values)
     ..aOS(6, _omitFieldNames ? '' : 'stateReason')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'changeEffectiveTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'changeEffectiveTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<LineItemChangeStateReasonType>(10, _omitFieldNames ? '' : 'changeStateReasonType', $pb.PbFieldType.OE, defaultOrMaker: LineItemChangeStateReasonType.LINE_ITEM_CHANGE_STATE_REASON_TYPE_UNSPECIFIED, valueOf: LineItemChangeStateReasonType.valueOf, enumValues: LineItemChangeStateReasonType.values)
     ..hasRequiredFields = false
   ;
@@ -422,40 +422,40 @@ class LineItemChange extends $pb.GeneratedMessage {
   /// Output only. A time at which the change became or will become (in case of
   /// pending change) effective.
   @$pb.TagNumber(7)
-  $1775.Timestamp get changeEffectiveTime => $_getN(6);
+  $1776.Timestamp get changeEffectiveTime => $_getN(6);
   @$pb.TagNumber(7)
-  set changeEffectiveTime($1775.Timestamp v) { setField(7, v); }
+  set changeEffectiveTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasChangeEffectiveTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearChangeEffectiveTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureChangeEffectiveTime() => $_ensure(6);
+  $1776.Timestamp ensureChangeEffectiveTime() => $_ensure(6);
 
   /// Output only. The time when change was initiated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The time when change was updated, e.g. approved/rejected by
   /// partners or cancelled by the user.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. Predefined enum types for why this line item change is in
   /// current state. For example, a line item change's state could be
@@ -722,9 +722,9 @@ class Parameter extends $pb.GeneratedMessage {
 /// Subscription information.
 class Subscription extends $pb.GeneratedMessage {
   factory Subscription({
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? endTime,
     $core.bool? autoRenewalEnabled,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (endTime != null) {
@@ -743,9 +743,9 @@ class Subscription extends $pb.GeneratedMessage {
   factory Subscription.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Subscription', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.commerce.consumer.procurement.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOB(2, _omitFieldNames ? '' : 'autoRenewalEnabled')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -772,15 +772,15 @@ class Subscription extends $pb.GeneratedMessage {
 
   /// The timestamp when the subscription ends, if applicable.
   @$pb.TagNumber(1)
-  $1775.Timestamp get endTime => $_getN(0);
+  $1776.Timestamp get endTime => $_getN(0);
   @$pb.TagNumber(1)
-  set endTime($1775.Timestamp v) { setField(1, v); }
+  set endTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEndTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEndTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEndTime() => $_ensure(0);
+  $1776.Timestamp ensureEndTime() => $_ensure(0);
 
   /// Whether auto renewal is enabled by user choice on current subscription.
   /// This field indicates order/subscription status after pending plan change is
@@ -796,15 +796,15 @@ class Subscription extends $pb.GeneratedMessage {
 
   /// The timestamp when the subscription begins, if applicable.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 }
 
 

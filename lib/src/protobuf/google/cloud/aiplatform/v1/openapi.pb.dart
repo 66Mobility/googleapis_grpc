@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'openapi.pbenum.dart';
 
 export 'openapi.pbenum.dart';
@@ -28,7 +28,7 @@ class Schema extends $pb.GeneratedMessage {
     Type? type,
     Schema? items,
     $core.Map<$core.String, Schema>? properties,
-    $1734.Value? example,
+    $1735.Value? example,
     $core.Iterable<$core.String>? required,
     $core.bool? nullable,
     $core.String? format,
@@ -43,7 +43,7 @@ class Schema extends $pb.GeneratedMessage {
     $core.String? pattern,
     $fixnum.Int64? minItems,
     $fixnum.Int64? maxItems,
-    $1734.Value? default_23,
+    $1735.Value? default_23,
     $core.String? title,
   }) {
     final $result = create();
@@ -117,7 +117,7 @@ class Schema extends $pb.GeneratedMessage {
     ..e<Type>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Type.TYPE_UNSPECIFIED, valueOf: Type.valueOf, enumValues: Type.values)
     ..aOM<Schema>(2, _omitFieldNames ? '' : 'items', subBuilder: Schema.create)
     ..m<$core.String, Schema>(3, _omitFieldNames ? '' : 'properties', entryClassName: 'Schema.PropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Schema.create, valueDefaultOrMaker: Schema.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$1734.Value>(4, _omitFieldNames ? '' : 'example', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(4, _omitFieldNames ? '' : 'example', subBuilder: $1735.Value.create)
     ..pPS(5, _omitFieldNames ? '' : 'required')
     ..aOB(6, _omitFieldNames ? '' : 'nullable')
     ..aOS(7, _omitFieldNames ? '' : 'format')
@@ -132,7 +132,7 @@ class Schema extends $pb.GeneratedMessage {
     ..aOS(20, _omitFieldNames ? '' : 'pattern')
     ..aInt64(21, _omitFieldNames ? '' : 'minItems')
     ..aInt64(22, _omitFieldNames ? '' : 'maxItems')
-    ..aOM<$1734.Value>(23, _omitFieldNames ? '' : 'default', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(23, _omitFieldNames ? '' : 'default', subBuilder: $1735.Value.create)
     ..aOS(24, _omitFieldNames ? '' : 'title')
     ..hasRequiredFields = false
   ;
@@ -189,15 +189,15 @@ class Schema extends $pb.GeneratedMessage {
   /// Optional. Example of the object. Will only populated when the object is the
   /// root.
   @$pb.TagNumber(4)
-  $1734.Value get example => $_getN(3);
+  $1735.Value get example => $_getN(3);
   @$pb.TagNumber(4)
-  set example($1734.Value v) { setField(4, v); }
+  set example($1735.Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasExample() => $_has(3);
   @$pb.TagNumber(4)
   void clearExample() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Value ensureExample() => $_ensure(3);
+  $1735.Value ensureExample() => $_ensure(3);
 
   /// Optional. Required properties of Type.OBJECT.
   @$pb.TagNumber(5)
@@ -338,15 +338,15 @@ class Schema extends $pb.GeneratedMessage {
 
   /// Optional. Default value of the data.
   @$pb.TagNumber(23)
-  $1734.Value get default_23 => $_getN(18);
+  $1735.Value get default_23 => $_getN(18);
   @$pb.TagNumber(23)
-  set default_23($1734.Value v) { setField(23, v); }
+  set default_23($1735.Value v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasDefault_23() => $_has(18);
   @$pb.TagNumber(23)
   void clearDefault_23() => clearField(23);
   @$pb.TagNumber(23)
-  $1734.Value ensureDefault_23() => $_ensure(18);
+  $1735.Value ensureDefault_23() => $_ensure(18);
 
   /// Optional. The title of the Schema.
   @$pb.TagNumber(24)

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'workstations.pbenum.dart';
 
 export 'workstations.pbenum.dart';
@@ -133,15 +133,15 @@ class WorkstationCluster extends $pb.GeneratedMessage {
     $core.String? uid,
     $core.bool? reconciling,
     $core.Map<$core.String, $core.String>? annotations,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? etag,
     $core.String? network,
     $core.String? subnetwork,
     WorkstationCluster_PrivateClusterConfig? privateClusterConfig,
     $core.bool? degraded,
-    $core.Iterable<$1795.Status>? conditions,
+    $core.Iterable<$1796.Status>? conditions,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? controlPlaneIp,
   }) {
@@ -206,15 +206,15 @@ class WorkstationCluster extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'uid')
     ..aOB(4, _omitFieldNames ? '' : 'reconciling')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'WorkstationCluster.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workstations.v1beta'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..aOS(10, _omitFieldNames ? '' : 'network')
     ..aOS(11, _omitFieldNames ? '' : 'subnetwork')
     ..aOM<WorkstationCluster_PrivateClusterConfig>(12, _omitFieldNames ? '' : 'privateClusterConfig', subBuilder: WorkstationCluster_PrivateClusterConfig.create)
     ..aOB(13, _omitFieldNames ? '' : 'degraded')
-    ..pc<$1795.Status>(14, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(14, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(15, _omitFieldNames ? '' : 'labels', entryClassName: 'WorkstationCluster.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workstations.v1beta'))
     ..aOS(16, _omitFieldNames ? '' : 'controlPlaneIp')
     ..hasRequiredFields = false
@@ -289,39 +289,39 @@ class WorkstationCluster extends $pb.GeneratedMessage {
 
   /// Output only. Time when this workstation cluster was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time when this workstation cluster was most recently updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. Time when this workstation cluster was soft-deleted.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Optional. Checksum computed by the server. May be sent on update and delete
   /// requests to make sure that the client has an up-to-date value before
@@ -386,7 +386,7 @@ class WorkstationCluster extends $pb.GeneratedMessage {
   /// Output only. Status conditions describing the workstation cluster's current
   /// state.
   @$pb.TagNumber(14)
-  $core.List<$1795.Status> get conditions => $_getList(13);
+  $core.List<$1796.Status> get conditions => $_getList(13);
 
   /// Optional.
   /// [Labels](https://cloud.google.com/workstations/docs/label-resources) that
@@ -1661,17 +1661,17 @@ class WorkstationConfig extends $pb.GeneratedMessage {
     $core.String? uid,
     $core.bool? reconciling,
     $core.Map<$core.String, $core.String>? annotations,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? etag,
-    $1737.Duration? idleTimeout,
-    $1737.Duration? runningTimeout,
+    $1738.Duration? idleTimeout,
+    $1738.Duration? runningTimeout,
     WorkstationConfig_Host? host,
     $core.Iterable<WorkstationConfig_PersistentDirectory>? persistentDirectories,
     WorkstationConfig_Container? container,
     $core.bool? degraded,
-    $core.Iterable<$1795.Status>? conditions,
+    $core.Iterable<$1796.Status>? conditions,
     WorkstationConfig_CustomerEncryptionKey? encryptionKey,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<WorkstationConfig_ReadinessCheck>? readinessChecks,
@@ -1758,17 +1758,17 @@ class WorkstationConfig extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'uid')
     ..aOB(4, _omitFieldNames ? '' : 'reconciling')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'WorkstationConfig.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workstations.v1beta'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'idleTimeout', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(11, _omitFieldNames ? '' : 'runningTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'idleTimeout', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(11, _omitFieldNames ? '' : 'runningTimeout', subBuilder: $1738.Duration.create)
     ..aOM<WorkstationConfig_Host>(12, _omitFieldNames ? '' : 'host', subBuilder: WorkstationConfig_Host.create)
     ..pc<WorkstationConfig_PersistentDirectory>(13, _omitFieldNames ? '' : 'persistentDirectories', $pb.PbFieldType.PM, subBuilder: WorkstationConfig_PersistentDirectory.create)
     ..aOM<WorkstationConfig_Container>(14, _omitFieldNames ? '' : 'container', subBuilder: WorkstationConfig_Container.create)
     ..aOB(15, _omitFieldNames ? '' : 'degraded')
-    ..pc<$1795.Status>(16, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(16, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<WorkstationConfig_CustomerEncryptionKey>(17, _omitFieldNames ? '' : 'encryptionKey', subBuilder: WorkstationConfig_CustomerEncryptionKey.create)
     ..m<$core.String, $core.String>(18, _omitFieldNames ? '' : 'labels', entryClassName: 'WorkstationConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workstations.v1beta'))
     ..pc<WorkstationConfig_ReadinessCheck>(19, _omitFieldNames ? '' : 'readinessChecks', $pb.PbFieldType.PM, subBuilder: WorkstationConfig_ReadinessCheck.create)
@@ -1847,40 +1847,40 @@ class WorkstationConfig extends $pb.GeneratedMessage {
 
   /// Output only. Time when this workstation configuration was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time when this workstation configuration was most recently
   /// updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. Time when this workstation configuration was soft-deleted.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Optional. Checksum computed by the server. May be sent on update and delete
   /// requests to make sure that the client has an up-to-date value before
@@ -1904,15 +1904,15 @@ class WorkstationConfig extends $pb.GeneratedMessage {
   ///  terminated by `s` for seconds—for example, `"7200s"` (2 hours).
   ///  The default is `"1200s"` (20 minutes).
   @$pb.TagNumber(10)
-  $1737.Duration get idleTimeout => $_getN(9);
+  $1738.Duration get idleTimeout => $_getN(9);
   @$pb.TagNumber(10)
-  set idleTimeout($1737.Duration v) { setField(10, v); }
+  set idleTimeout($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasIdleTimeout() => $_has(9);
   @$pb.TagNumber(10)
   void clearIdleTimeout() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureIdleTimeout() => $_ensure(9);
+  $1738.Duration ensureIdleTimeout() => $_ensure(9);
 
   ///  Optional. Number of seconds that a workstation can run until it is
   ///  automatically shut down. We recommend that workstations be shut down daily
@@ -1937,15 +1937,15 @@ class WorkstationConfig extends $pb.GeneratedMessage {
   ///  with this configuration have no maximum running time. This is strongly
   ///  discouraged because you incur costs and will not pick up security updates.
   @$pb.TagNumber(11)
-  $1737.Duration get runningTimeout => $_getN(10);
+  $1738.Duration get runningTimeout => $_getN(10);
   @$pb.TagNumber(11)
-  set runningTimeout($1737.Duration v) { setField(11, v); }
+  set runningTimeout($1738.Duration v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasRunningTimeout() => $_has(10);
   @$pb.TagNumber(11)
   void clearRunningTimeout() => clearField(11);
   @$pb.TagNumber(11)
-  $1737.Duration ensureRunningTimeout() => $_ensure(10);
+  $1738.Duration ensureRunningTimeout() => $_ensure(10);
 
   /// Optional. Runtime host for the workstation.
   @$pb.TagNumber(12)
@@ -1991,7 +1991,7 @@ class WorkstationConfig extends $pb.GeneratedMessage {
 
   /// Output only. Status conditions describing the current resource state.
   @$pb.TagNumber(16)
-  $core.List<$1795.Status> get conditions => $_getList(15);
+  $core.List<$1796.Status> get conditions => $_getList(15);
 
   ///  Immutable. Encrypts resources of this workstation configuration using a
   ///  customer-managed encryption key (CMEK).
@@ -2073,15 +2073,15 @@ class Workstation extends $pb.GeneratedMessage {
     $core.String? uid,
     $core.bool? reconciling,
     $core.Map<$core.String, $core.String>? annotations,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? etag,
     Workstation_State? state,
     $core.String? host,
     $core.Map<$core.String, $core.String>? env,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -2138,15 +2138,15 @@ class Workstation extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'uid')
     ..aOB(4, _omitFieldNames ? '' : 'reconciling')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Workstation.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workstations.v1beta'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..e<Workstation_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Workstation_State.STATE_UNSPECIFIED, valueOf: Workstation_State.valueOf, enumValues: Workstation_State.values)
     ..aOS(11, _omitFieldNames ? '' : 'host')
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'env', entryClassName: 'Workstation.EnvEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workstations.v1beta'))
     ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'labels', entryClassName: 'Workstation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workstations.v1beta'))
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2218,39 +2218,39 @@ class Workstation extends $pb.GeneratedMessage {
 
   /// Output only. Time when this workstation was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time when this workstation was most recently updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. Time when this workstation was soft-deleted.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Optional. Checksum computed by the server. May be sent on update and delete
   /// requests to make sure that the client has an up-to-date value before
@@ -2303,15 +2303,15 @@ class Workstation extends $pb.GeneratedMessage {
   /// Output only. Time when this workstation was most recently successfully
   /// started, regardless of the workstation's initial state.
   @$pb.TagNumber(14)
-  $1775.Timestamp get startTime => $_getN(13);
+  $1776.Timestamp get startTime => $_getN(13);
   @$pb.TagNumber(14)
-  set startTime($1775.Timestamp v) { setField(14, v); }
+  set startTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasStartTime() => $_has(13);
   @$pb.TagNumber(14)
   void clearStartTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureStartTime() => $_ensure(13);
+  $1776.Timestamp ensureStartTime() => $_ensure(13);
 }
 
 /// Request message for GetWorkstationCluster.
@@ -2624,7 +2624,7 @@ class CreateWorkstationClusterRequest extends $pb.GeneratedMessage {
 class UpdateWorkstationClusterRequest extends $pb.GeneratedMessage {
   factory UpdateWorkstationClusterRequest({
     WorkstationCluster? workstationCluster,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
     $core.bool? allowMissing,
   }) {
@@ -2649,7 +2649,7 @@ class UpdateWorkstationClusterRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkstationClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workstations.v1beta'), createEmptyInstance: create)
     ..aOM<WorkstationCluster>(1, _omitFieldNames ? '' : 'workstationCluster', subBuilder: WorkstationCluster.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
@@ -2691,15 +2691,15 @@ class UpdateWorkstationClusterRequest extends $pb.GeneratedMessage {
   /// Required. Mask that specifies which fields in the workstation cluster
   /// should be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. If set, validate the request and preview the review, but do not
   /// actually apply it.
@@ -3290,7 +3290,7 @@ class CreateWorkstationConfigRequest extends $pb.GeneratedMessage {
 class UpdateWorkstationConfigRequest extends $pb.GeneratedMessage {
   factory UpdateWorkstationConfigRequest({
     WorkstationConfig? workstationConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
     $core.bool? allowMissing,
   }) {
@@ -3315,7 +3315,7 @@ class UpdateWorkstationConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkstationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workstations.v1beta'), createEmptyInstance: create)
     ..aOM<WorkstationConfig>(1, _omitFieldNames ? '' : 'workstationConfig', subBuilder: WorkstationConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
@@ -3357,15 +3357,15 @@ class UpdateWorkstationConfigRequest extends $pb.GeneratedMessage {
   /// Required. Mask specifying which fields in the workstation configuration
   /// should be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. If set, validate the request and preview the review, but do not
   /// actually apply it.
@@ -3956,7 +3956,7 @@ class CreateWorkstationRequest extends $pb.GeneratedMessage {
 class UpdateWorkstationRequest extends $pb.GeneratedMessage {
   factory UpdateWorkstationRequest({
     Workstation? workstation,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
     $core.bool? allowMissing,
   }) {
@@ -3981,7 +3981,7 @@ class UpdateWorkstationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkstationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workstations.v1beta'), createEmptyInstance: create)
     ..aOM<Workstation>(1, _omitFieldNames ? '' : 'workstation', subBuilder: Workstation.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
@@ -4023,15 +4023,15 @@ class UpdateWorkstationRequest extends $pb.GeneratedMessage {
   /// Required. Mask specifying which fields in the workstation configuration
   /// should be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. If set, validate the request and preview the review, but do not
   /// actually apply it.
@@ -4319,8 +4319,8 @@ enum GenerateAccessTokenRequest_Expiration {
 class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
   factory GenerateAccessTokenRequest({
     $core.String? workstation,
-    $1775.Timestamp? expireTime,
-    $1737.Duration? ttl,
+    $1776.Timestamp? expireTime,
+    $1738.Duration? ttl,
   }) {
     final $result = create();
     if (workstation != null) {
@@ -4346,8 +4346,8 @@ class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateAccessTokenRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workstations.v1beta'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'workstation')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -4391,36 +4391,36 @@ class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
   /// token's expiration time will be set to a default value of 1 hour in the
   /// future.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 
   /// Desired lifetime duration of the access token. This value must
   /// be at most 24 hours. If a value is not specified, the token's lifetime
   /// will be set to a default value of 1 hour.
   @$pb.TagNumber(3)
-  $1737.Duration get ttl => $_getN(2);
+  $1738.Duration get ttl => $_getN(2);
   @$pb.TagNumber(3)
-  set ttl($1737.Duration v) { setField(3, v); }
+  set ttl($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTtl() => $_has(2);
   @$pb.TagNumber(3)
   void clearTtl() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTtl() => $_ensure(2);
+  $1738.Duration ensureTtl() => $_ensure(2);
 }
 
 /// Response message for GenerateAccessToken.
 class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
   factory GenerateAccessTokenResponse({
     $core.String? accessToken,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (accessToken != null) {
@@ -4437,7 +4437,7 @@ class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateAccessTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workstations.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accessToken')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4477,22 +4477,22 @@ class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
 
   /// Time at which the generated token will expire.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 }
 
 /// Metadata for long-running operations.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -4528,8 +4528,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workstations.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -4561,27 +4561,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. Time that the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. Time that the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

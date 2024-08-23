@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'cloud_logging_details.pb.dart' as $4560;
-import 'event_parameter.pb.dart' as $4557;
-import 'integration_state.pbenum.dart' as $4561;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'cloud_logging_details.pb.dart' as $4562;
+import 'event_parameter.pb.dart' as $4559;
+import 'integration_state.pbenum.dart' as $4563;
 import 'log_entries.pbenum.dart';
-import 'task_config.pb.dart' as $4559;
+import 'task_config.pb.dart' as $4561;
 
 export 'log_entries.pbenum.dart';
 
@@ -30,15 +30,15 @@ class ExecutionInfo extends $pb.GeneratedMessage {
     $core.String? integration,
     $core.String? projectId,
     $core.String? triggerId,
-    $core.Map<$core.String, $4557.EventParameter>? requestParams,
-    $core.Map<$core.String, $4557.EventParameter>? responseParams,
+    $core.Map<$core.String, $4559.EventParameter>? requestParams,
+    $core.Map<$core.String, $4559.EventParameter>? responseParams,
     $core.Iterable<ErrorDetail>? errors,
-    $core.Iterable<$4559.TaskConfig>? taskConfigs,
+    $core.Iterable<$4561.TaskConfig>? taskConfigs,
     $core.String? integrationVersionNumber,
     $core.String? executionId,
-    $4561.IntegrationState? integrationVersionState,
+    $4563.IntegrationState? integrationVersionState,
     $core.bool? enableDatabasePersistence,
-    $4560.CloudLoggingDetails? cloudLoggingDetails,
+    $4562.CloudLoggingDetails? cloudLoggingDetails,
     IntegrationExecutionDetails? integrationExecutionDetails,
     ExecutionType? executionType,
     ExecutionInfo_ExecutionMethod? executionMethod,
@@ -103,15 +103,15 @@ class ExecutionInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'integration')
     ..aOS(4, _omitFieldNames ? '' : 'projectId')
     ..aOS(5, _omitFieldNames ? '' : 'triggerId')
-    ..m<$core.String, $4557.EventParameter>(6, _omitFieldNames ? '' : 'requestParams', entryClassName: 'ExecutionInfo.RequestParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4557.EventParameter.create, valueDefaultOrMaker: $4557.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
-    ..m<$core.String, $4557.EventParameter>(7, _omitFieldNames ? '' : 'responseParams', entryClassName: 'ExecutionInfo.ResponseParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4557.EventParameter.create, valueDefaultOrMaker: $4557.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
+    ..m<$core.String, $4559.EventParameter>(6, _omitFieldNames ? '' : 'requestParams', entryClassName: 'ExecutionInfo.RequestParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4559.EventParameter.create, valueDefaultOrMaker: $4559.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
+    ..m<$core.String, $4559.EventParameter>(7, _omitFieldNames ? '' : 'responseParams', entryClassName: 'ExecutionInfo.ResponseParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4559.EventParameter.create, valueDefaultOrMaker: $4559.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
     ..pc<ErrorDetail>(10, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: ErrorDetail.create)
-    ..pc<$4559.TaskConfig>(13, _omitFieldNames ? '' : 'taskConfigs', $pb.PbFieldType.PM, subBuilder: $4559.TaskConfig.create)
+    ..pc<$4561.TaskConfig>(13, _omitFieldNames ? '' : 'taskConfigs', $pb.PbFieldType.PM, subBuilder: $4561.TaskConfig.create)
     ..aOS(14, _omitFieldNames ? '' : 'integrationVersionNumber')
     ..aOS(15, _omitFieldNames ? '' : 'executionId')
-    ..e<$4561.IntegrationState>(16, _omitFieldNames ? '' : 'integrationVersionState', $pb.PbFieldType.OE, defaultOrMaker: $4561.IntegrationState.INTEGRATION_STATE_UNSPECIFIED, valueOf: $4561.IntegrationState.valueOf, enumValues: $4561.IntegrationState.values)
+    ..e<$4563.IntegrationState>(16, _omitFieldNames ? '' : 'integrationVersionState', $pb.PbFieldType.OE, defaultOrMaker: $4563.IntegrationState.INTEGRATION_STATE_UNSPECIFIED, valueOf: $4563.IntegrationState.valueOf, enumValues: $4563.IntegrationState.values)
     ..aOB(17, _omitFieldNames ? '' : 'enableDatabasePersistence')
-    ..aOM<$4560.CloudLoggingDetails>(18, _omitFieldNames ? '' : 'cloudLoggingDetails', subBuilder: $4560.CloudLoggingDetails.create)
+    ..aOM<$4562.CloudLoggingDetails>(18, _omitFieldNames ? '' : 'cloudLoggingDetails', subBuilder: $4562.CloudLoggingDetails.create)
     ..aOM<IntegrationExecutionDetails>(19, _omitFieldNames ? '' : 'integrationExecutionDetails', subBuilder: IntegrationExecutionDetails.create)
     ..e<ExecutionType>(20, _omitFieldNames ? '' : 'executionType', $pb.PbFieldType.OE, defaultOrMaker: ExecutionType.EXECUTION_TYPE_UNSPECIFIED, valueOf: ExecutionType.valueOf, enumValues: ExecutionType.values)
     ..e<ExecutionInfo_ExecutionMethod>(21, _omitFieldNames ? '' : 'executionMethod', $pb.PbFieldType.OE, defaultOrMaker: ExecutionInfo_ExecutionMethod.EXECUTION_METHOD_UNSPECIFIED, valueOf: ExecutionInfo_ExecutionMethod.valueOf, enumValues: ExecutionInfo_ExecutionMethod.values)
@@ -175,11 +175,11 @@ class ExecutionInfo extends $pb.GeneratedMessage {
 
   /// Execution parameters come in as part of the request.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $4557.EventParameter> get requestParams => $_getMap(3);
+  $core.Map<$core.String, $4559.EventParameter> get requestParams => $_getMap(3);
 
   /// Execution parameters come out as part of the response.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $4557.EventParameter> get responseParams => $_getMap(4);
+  $core.Map<$core.String, $4559.EventParameter> get responseParams => $_getMap(4);
 
   /// Errors, warnings, and informationals associated with the workflow/task.
   /// The order in which the errors were added by the workflow/task is
@@ -189,7 +189,7 @@ class ExecutionInfo extends $pb.GeneratedMessage {
 
   /// The configuration details for a task.
   @$pb.TagNumber(13)
-  $core.List<$4559.TaskConfig> get taskConfigs => $_getList(6);
+  $core.List<$4561.TaskConfig> get taskConfigs => $_getList(6);
 
   /// Pointer to the active version it is executing.
   @$pb.TagNumber(14)
@@ -213,9 +213,9 @@ class ExecutionInfo extends $pb.GeneratedMessage {
 
   /// Output only. State of the integration version
   @$pb.TagNumber(16)
-  $4561.IntegrationState get integrationVersionState => $_getN(9);
+  $4563.IntegrationState get integrationVersionState => $_getN(9);
   @$pb.TagNumber(16)
-  set integrationVersionState($4561.IntegrationState v) { setField(16, v); }
+  set integrationVersionState($4563.IntegrationState v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasIntegrationVersionState() => $_has(9);
   @$pb.TagNumber(16)
@@ -233,15 +233,15 @@ class ExecutionInfo extends $pb.GeneratedMessage {
 
   /// Cloud Logging details for execution info
   @$pb.TagNumber(18)
-  $4560.CloudLoggingDetails get cloudLoggingDetails => $_getN(11);
+  $4562.CloudLoggingDetails get cloudLoggingDetails => $_getN(11);
   @$pb.TagNumber(18)
-  set cloudLoggingDetails($4560.CloudLoggingDetails v) { setField(18, v); }
+  set cloudLoggingDetails($4562.CloudLoggingDetails v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasCloudLoggingDetails() => $_has(11);
   @$pb.TagNumber(18)
   void clearCloudLoggingDetails() => clearField(18);
   @$pb.TagNumber(18)
-  $4560.CloudLoggingDetails ensureCloudLoggingDetails() => $_ensure(11);
+  $4562.CloudLoggingDetails ensureCloudLoggingDetails() => $_ensure(11);
 
   /// The details about this integration execution.
   @$pb.TagNumber(19)
@@ -295,7 +295,7 @@ class IntegrationExecutionDetails extends $pb.GeneratedMessage {
     IntegrationExecutionDetails_IntegrationExecutionState? integrationExecutionState,
     $core.Iterable<IntegrationExecutionSnapshot>? integrationExecutionSnapshot,
     $core.Iterable<AttemptStats>? executionAttemptStats,
-    $1775.Timestamp? nextExecutionTime,
+    $1776.Timestamp? nextExecutionTime,
     $core.int? executionRetriesCount,
   }) {
     final $result = create();
@@ -324,7 +324,7 @@ class IntegrationExecutionDetails extends $pb.GeneratedMessage {
     ..e<IntegrationExecutionDetails_IntegrationExecutionState>(1, _omitFieldNames ? '' : 'integrationExecutionState', $pb.PbFieldType.OE, defaultOrMaker: IntegrationExecutionDetails_IntegrationExecutionState.INTEGRATION_EXECUTION_STATE_UNSPECIFIED, valueOf: IntegrationExecutionDetails_IntegrationExecutionState.valueOf, enumValues: IntegrationExecutionDetails_IntegrationExecutionState.values)
     ..pc<IntegrationExecutionSnapshot>(2, _omitFieldNames ? '' : 'integrationExecutionSnapshot', $pb.PbFieldType.PM, subBuilder: IntegrationExecutionSnapshot.create)
     ..pc<AttemptStats>(3, _omitFieldNames ? '' : 'executionAttemptStats', $pb.PbFieldType.PM, subBuilder: AttemptStats.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'nextExecutionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'nextExecutionTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'executionRetriesCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -371,15 +371,15 @@ class IntegrationExecutionDetails extends $pb.GeneratedMessage {
   /// Next scheduled execution time in case the execution status was
   /// RETRY_ON_HOLD.
   @$pb.TagNumber(4)
-  $1775.Timestamp get nextExecutionTime => $_getN(3);
+  $1776.Timestamp get nextExecutionTime => $_getN(3);
   @$pb.TagNumber(4)
-  set nextExecutionTime($1775.Timestamp v) { setField(4, v); }
+  set nextExecutionTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasNextExecutionTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearNextExecutionTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureNextExecutionTime() => $_ensure(3);
+  $1776.Timestamp ensureNextExecutionTime() => $_ensure(3);
 
   /// Indicates the number of times the execution has restarted from the
   /// beginning.
@@ -544,11 +544,11 @@ class IntegrationExecutionSnapshot_IntegrationExecutionSnapshotMetadata extends 
 class IntegrationExecutionSnapshot extends $pb.GeneratedMessage {
   factory IntegrationExecutionSnapshot({
     $core.String? checkpointTaskNumber,
-    $1775.Timestamp? snapshotTime,
+    $1776.Timestamp? snapshotTime,
     IntegrationExecutionSnapshot_IntegrationExecutionSnapshotMetadata? integrationExecutionSnapshotMetadata,
     $core.Iterable<TaskExecutionDetails>? taskExecutionDetails,
     $core.Iterable<ConditionResult>? conditionResults,
-    $core.Map<$core.String, $4557.EventParameter>? executionParams,
+    $core.Map<$core.String, $4559.EventParameter>? executionParams,
   }) {
     final $result = create();
     if (checkpointTaskNumber != null) {
@@ -577,11 +577,11 @@ class IntegrationExecutionSnapshot extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IntegrationExecutionSnapshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.integrations.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'checkpointTaskNumber')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1776.Timestamp.create)
     ..aOM<IntegrationExecutionSnapshot_IntegrationExecutionSnapshotMetadata>(3, _omitFieldNames ? '' : 'integrationExecutionSnapshotMetadata', subBuilder: IntegrationExecutionSnapshot_IntegrationExecutionSnapshotMetadata.create)
     ..pc<TaskExecutionDetails>(4, _omitFieldNames ? '' : 'taskExecutionDetails', $pb.PbFieldType.PM, subBuilder: TaskExecutionDetails.create)
     ..pc<ConditionResult>(5, _omitFieldNames ? '' : 'conditionResults', $pb.PbFieldType.PM, subBuilder: ConditionResult.create)
-    ..m<$core.String, $4557.EventParameter>(6, _omitFieldNames ? '' : 'executionParams', entryClassName: 'IntegrationExecutionSnapshot.ExecutionParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4557.EventParameter.create, valueDefaultOrMaker: $4557.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
+    ..m<$core.String, $4559.EventParameter>(6, _omitFieldNames ? '' : 'executionParams', entryClassName: 'IntegrationExecutionSnapshot.ExecutionParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4559.EventParameter.create, valueDefaultOrMaker: $4559.EventParameter.getDefault, packageName: const $pb.PackageName('google.cloud.integrations.v1alpha'))
     ..hasRequiredFields = false
   ;
 
@@ -619,15 +619,15 @@ class IntegrationExecutionSnapshot extends $pb.GeneratedMessage {
 
   /// Indicates when this snapshot is taken.
   @$pb.TagNumber(2)
-  $1775.Timestamp get snapshotTime => $_getN(1);
+  $1776.Timestamp get snapshotTime => $_getN(1);
   @$pb.TagNumber(2)
-  set snapshotTime($1775.Timestamp v) { setField(2, v); }
+  set snapshotTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSnapshotTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSnapshotTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSnapshotTime() => $_ensure(1);
+  $1776.Timestamp ensureSnapshotTime() => $_ensure(1);
 
   /// Snapshot metadata.
   @$pb.TagNumber(3)
@@ -651,7 +651,7 @@ class IntegrationExecutionSnapshot extends $pb.GeneratedMessage {
 
   /// The parameters in Event object.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $4557.EventParameter> get executionParams => $_getMap(5);
+  $core.Map<$core.String, $4559.EventParameter> get executionParams => $_getMap(5);
 }
 
 /// Contains the details of the execution of this task.
@@ -733,8 +733,8 @@ class TaskExecutionDetails extends $pb.GeneratedMessage {
 /// Status for the execution attempt.
 class AttemptStats extends $pb.GeneratedMessage {
   factory AttemptStats({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -750,8 +750,8 @@ class AttemptStats extends $pb.GeneratedMessage {
   factory AttemptStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttemptStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.integrations.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -779,27 +779,27 @@ class AttemptStats extends $pb.GeneratedMessage {
   /// The start time of the integration execution for current attempt. This could
   /// be in the future if it's been scheduled.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The end time of the integration execution for current attempt.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// An error, warning, or information message associated with an integration.

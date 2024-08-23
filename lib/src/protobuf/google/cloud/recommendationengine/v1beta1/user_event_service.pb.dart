@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'user_event.pb.dart' as $1229;
 
 /// Request message for PurgeUserEvents method.
@@ -125,7 +125,7 @@ class PurgeUserEventsRequest extends $pb.GeneratedMessage {
 class PurgeUserEventsMetadata extends $pb.GeneratedMessage {
   factory PurgeUserEventsMetadata({
     $core.String? operationName,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (operationName != null) {
@@ -142,7 +142,7 @@ class PurgeUserEventsMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PurgeUserEventsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommendationengine.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationName')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -179,15 +179,15 @@ class PurgeUserEventsMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 }
 
 /// Response of the PurgeUserEventsRequest. If the long running operation is

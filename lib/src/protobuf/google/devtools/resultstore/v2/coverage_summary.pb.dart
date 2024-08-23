@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pbenum.dart' as $4769;
+import 'common.pbenum.dart' as $4771;
 
 /// Summary of line coverage
 class LineCoverageSummary extends $pb.GeneratedMessage {
@@ -175,7 +175,7 @@ class BranchCoverageSummary extends $pb.GeneratedMessage {
 /// Summary of coverage in each language
 class LanguageCoverageSummary extends $pb.GeneratedMessage {
   factory LanguageCoverageSummary({
-    $4769.Language? language,
+    $4771.Language? language,
     LineCoverageSummary? lineSummary,
     BranchCoverageSummary? branchSummary,
   }) {
@@ -196,7 +196,7 @@ class LanguageCoverageSummary extends $pb.GeneratedMessage {
   factory LanguageCoverageSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LanguageCoverageSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
-    ..e<$4769.Language>(1, _omitFieldNames ? '' : 'language', $pb.PbFieldType.OE, defaultOrMaker: $4769.Language.LANGUAGE_UNSPECIFIED, valueOf: $4769.Language.valueOf, enumValues: $4769.Language.values)
+    ..e<$4771.Language>(1, _omitFieldNames ? '' : 'language', $pb.PbFieldType.OE, defaultOrMaker: $4771.Language.LANGUAGE_UNSPECIFIED, valueOf: $4771.Language.valueOf, enumValues: $4771.Language.values)
     ..aOM<LineCoverageSummary>(2, _omitFieldNames ? '' : 'lineSummary', subBuilder: LineCoverageSummary.create)
     ..aOM<BranchCoverageSummary>(3, _omitFieldNames ? '' : 'branchSummary', subBuilder: BranchCoverageSummary.create)
     ..hasRequiredFields = false
@@ -225,9 +225,9 @@ class LanguageCoverageSummary extends $pb.GeneratedMessage {
 
   /// This summary is for all files written in this programming language.
   @$pb.TagNumber(1)
-  $4769.Language get language => $_getN(0);
+  $4771.Language get language => $_getN(0);
   @$pb.TagNumber(1)
-  set language($4769.Language v) { setField(1, v); }
+  set language($4771.Language v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLanguage() => $_has(0);
   @$pb.TagNumber(1)

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// A log entry for a FHIR import long-running operation.
 class ImportFhirLogEntry extends $pb.GeneratedMessage {
   factory ImportFhirLogEntry({
     $core.String? source,
     $core.String? resourceId,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (source != null) {
@@ -41,7 +41,7 @@ class ImportFhirLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportFhirLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'source')
     ..aOS(2, _omitFieldNames ? '' : 'resourceId')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -90,15 +90,15 @@ class ImportFhirLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// A log entry for a FHIR export long-running operation.
@@ -106,7 +106,7 @@ class ExportFhirLogEntry extends $pb.GeneratedMessage {
   factory ExportFhirLogEntry({
     $core.String? destination,
     $core.String? resourceName,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (destination != null) {
@@ -127,7 +127,7 @@ class ExportFhirLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportFhirLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'destination')
     ..aOS(3, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -177,22 +177,22 @@ class ExportFhirLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(4)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(4)
-  set error($1795.Status v) { setField(4, v); }
+  set error($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(4)
   void clearError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// A log entry for a FHIR configure search long-running operation
 class FhirConfigureSearchLogEntry extends $pb.GeneratedMessage {
   factory FhirConfigureSearchLogEntry({
     $core.String? resourceId,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (resourceId != null) {
@@ -209,7 +209,7 @@ class FhirConfigureSearchLogEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FhirConfigureSearchLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceId')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -246,15 +246,15 @@ class FhirConfigureSearchLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 }
 
 /// A log entry for a FHIR store Pub/Sub notification.
@@ -262,7 +262,7 @@ class FhirNotificationLogEntry extends $pb.GeneratedMessage {
   factory FhirNotificationLogEntry({
     $core.String? resourceName,
     $core.String? pubsubTopic,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -283,7 +283,7 @@ class FhirNotificationLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FhirNotificationLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'pubsubTopic')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -331,15 +331,15 @@ class FhirNotificationLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// A log entry for a FHIR streaming export notification.
@@ -347,7 +347,7 @@ class FhirStreamLogEntry extends $pb.GeneratedMessage {
   factory FhirStreamLogEntry({
     $core.String? resourceName,
     $core.String? destination,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -368,7 +368,7 @@ class FhirStreamLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FhirStreamLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'destination')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -417,15 +417,15 @@ class FhirStreamLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// A log entry for a FHIR streaming deidentification notification.
@@ -433,7 +433,7 @@ class FhirDeidentifyStreamToStoreLogEntry extends $pb.GeneratedMessage {
   factory FhirDeidentifyStreamToStoreLogEntry({
     $core.String? resourceName,
     $core.String? destination,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -454,7 +454,7 @@ class FhirDeidentifyStreamToStoreLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FhirDeidentifyStreamToStoreLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'destination')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -503,15 +503,15 @@ class FhirDeidentifyStreamToStoreLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 

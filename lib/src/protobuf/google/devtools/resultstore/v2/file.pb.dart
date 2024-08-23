@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'file.pbenum.dart';
 
 export 'file.pbenum.dart';
@@ -23,7 +23,7 @@ class File extends $pb.GeneratedMessage {
   factory File({
     $core.String? uid,
     $core.String? uri,
-    $1780.Int64Value? length,
+    $1781.Int64Value? length,
     $core.String? contentType,
     ArchiveEntry? archiveEntry,
     $core.String? contentViewer,
@@ -72,7 +72,7 @@ class File extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'File', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uid')
     ..aOS(2, _omitFieldNames ? '' : 'uri')
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'length', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'length', subBuilder: $1781.Int64Value.create)
     ..aOS(4, _omitFieldNames ? '' : 'contentType')
     ..aOM<ArchiveEntry>(5, _omitFieldNames ? '' : 'archiveEntry', subBuilder: ArchiveEntry.create)
     ..aOS(6, _omitFieldNames ? '' : 'contentViewer')
@@ -135,15 +135,15 @@ class File extends $pb.GeneratedMessage {
   /// UI.  Omit if file is still being written or length is not known.  This
   /// could also be the length of an entire archive.
   @$pb.TagNumber(3)
-  $1780.Int64Value get length => $_getN(2);
+  $1781.Int64Value get length => $_getN(2);
   @$pb.TagNumber(3)
-  set length($1780.Int64Value v) { setField(3, v); }
+  set length($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLength() => $_has(2);
   @$pb.TagNumber(3)
   void clearLength() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureLength() => $_ensure(2);
+  $1781.Int64Value ensureLength() => $_ensure(2);
 
   /// The content-type (aka MIME-type) of the file.  This is sent to the web
   /// browser so it knows how to handle the file. (e.g. text/plain, image/jpeg,
@@ -230,7 +230,7 @@ class File extends $pb.GeneratedMessage {
 class ArchiveEntry extends $pb.GeneratedMessage {
   factory ArchiveEntry({
     $core.String? path,
-    $1780.Int64Value? length,
+    $1781.Int64Value? length,
     $core.String? contentType,
   }) {
     final $result = create();
@@ -251,7 +251,7 @@ class ArchiveEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ArchiveEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'length', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'length', subBuilder: $1781.Int64Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'contentType')
     ..hasRequiredFields = false
   ;
@@ -290,15 +290,15 @@ class ArchiveEntry extends $pb.GeneratedMessage {
   /// The uncompressed length of the archive entry in bytes.  Allows the entry
   /// size to be shown in the UI.  Omit if the length is not known.
   @$pb.TagNumber(2)
-  $1780.Int64Value get length => $_getN(1);
+  $1781.Int64Value get length => $_getN(1);
   @$pb.TagNumber(2)
-  set length($1780.Int64Value v) { setField(2, v); }
+  set length($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLength() => $_has(1);
   @$pb.TagNumber(2)
   void clearLength() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureLength() => $_ensure(1);
+  $1781.Int64Value ensureLength() => $_ensure(1);
 
   /// The content-type (aka MIME-type) of the archive entry. (e.g. text/plain,
   /// image/jpeg, text/html, etc). This is sent to the web browser so it knows

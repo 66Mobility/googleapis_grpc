@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'attachment.pb.dart' as $4689;
+import 'attachment.pb.dart' as $4691;
 
 /// The request message for the ListAttachments endpoint.
 class ListAttachmentsRequest extends $pb.GeneratedMessage {
@@ -104,7 +104,7 @@ class ListAttachmentsRequest extends $pb.GeneratedMessage {
 /// The response message for the ListAttachments endpoint.
 class ListAttachmentsResponse extends $pb.GeneratedMessage {
   factory ListAttachmentsResponse({
-    $core.Iterable<$4689.Attachment>? attachments,
+    $core.Iterable<$4691.Attachment>? attachments,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -121,7 +121,7 @@ class ListAttachmentsResponse extends $pb.GeneratedMessage {
   factory ListAttachmentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAttachmentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.support.v2'), createEmptyInstance: create)
-    ..pc<$4689.Attachment>(1, _omitFieldNames ? '' : 'attachments', $pb.PbFieldType.PM, subBuilder: $4689.Attachment.create)
+    ..pc<$4691.Attachment>(1, _omitFieldNames ? '' : 'attachments', $pb.PbFieldType.PM, subBuilder: $4691.Attachment.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -149,7 +149,7 @@ class ListAttachmentsResponse extends $pb.GeneratedMessage {
 
   /// The list of attachments associated with the given case.
   @$pb.TagNumber(1)
-  $core.List<$4689.Attachment> get attachments => $_getList(0);
+  $core.List<$4691.Attachment> get attachments => $_getList(0);
 
   /// A token to retrieve the next page of results. This should be set in the
   /// `page_token` field of subsequent `cases.attachments.list` requests. If

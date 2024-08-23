@@ -13,20 +13,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'dataset.pb.dart' as $1039;
-import 'document.pb.dart' as $4523;
-import 'document_io.pb.dart' as $4522;
+import 'document.pb.dart' as $4525;
+import 'document_io.pb.dart' as $4524;
 import 'document_service.pbenum.dart';
-import 'operation_metadata.pb.dart' as $4525;
+import 'operation_metadata.pb.dart' as $4527;
 
 export 'document_service.pbenum.dart';
 
 class UpdateDatasetRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetRequest({
     $1039.Dataset? dataset,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -43,7 +43,7 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatasetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOM<$1039.Dataset>(1, _omitFieldNames ? '' : 'dataset', subBuilder: $1039.Dataset.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -83,20 +83,20 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
 
   /// The update mask applies to the resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 class UpdateDatasetOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateDatasetOperationMetadata({
-    $4525.CommonOperationMetadata? commonMetadata,
+    $4527.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -109,7 +109,7 @@ class UpdateDatasetOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateDatasetOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatasetOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
-    ..aOM<$4525.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4525.CommonOperationMetadata.create)
+    ..aOM<$4527.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4527.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -136,15 +136,15 @@ class UpdateDatasetOperationMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4525.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4527.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4525.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4527.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4525.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4527.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// The config for auto-split.
@@ -209,7 +209,7 @@ enum ImportDocumentsRequest_BatchDocumentsImportConfig_SplitTypeConfig {
 /// Each batch can have its own dataset split type.
 class ImportDocumentsRequest_BatchDocumentsImportConfig extends $pb.GeneratedMessage {
   factory ImportDocumentsRequest_BatchDocumentsImportConfig({
-    $4522.BatchDocumentsInputConfig? batchInputConfig,
+    $4524.BatchDocumentsInputConfig? batchInputConfig,
     DatasetSplitType? datasetSplit,
     ImportDocumentsRequest_BatchDocumentsImportConfig_AutoSplitConfig? autoSplitConfig,
   }) {
@@ -236,7 +236,7 @@ class ImportDocumentsRequest_BatchDocumentsImportConfig extends $pb.GeneratedMes
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsRequest.BatchDocumentsImportConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$4522.BatchDocumentsInputConfig>(1, _omitFieldNames ? '' : 'batchInputConfig', subBuilder: $4522.BatchDocumentsInputConfig.create)
+    ..aOM<$4524.BatchDocumentsInputConfig>(1, _omitFieldNames ? '' : 'batchInputConfig', subBuilder: $4524.BatchDocumentsInputConfig.create)
     ..e<DatasetSplitType>(2, _omitFieldNames ? '' : 'datasetSplit', $pb.PbFieldType.OE, defaultOrMaker: DatasetSplitType.DATASET_SPLIT_TYPE_UNSPECIFIED, valueOf: DatasetSplitType.valueOf, enumValues: DatasetSplitType.values)
     ..aOM<ImportDocumentsRequest_BatchDocumentsImportConfig_AutoSplitConfig>(3, _omitFieldNames ? '' : 'autoSplitConfig', subBuilder: ImportDocumentsRequest_BatchDocumentsImportConfig_AutoSplitConfig.create)
     ..hasRequiredFields = false
@@ -268,15 +268,15 @@ class ImportDocumentsRequest_BatchDocumentsImportConfig extends $pb.GeneratedMes
 
   /// The common config to specify a set of documents used as input.
   @$pb.TagNumber(1)
-  $4522.BatchDocumentsInputConfig get batchInputConfig => $_getN(0);
+  $4524.BatchDocumentsInputConfig get batchInputConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set batchInputConfig($4522.BatchDocumentsInputConfig v) { setField(1, v); }
+  set batchInputConfig($4524.BatchDocumentsInputConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBatchInputConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBatchInputConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4522.BatchDocumentsInputConfig ensureBatchInputConfig() => $_ensure(0);
+  $4524.BatchDocumentsInputConfig ensureBatchInputConfig() => $_ensure(0);
 
   /// Target dataset split where the documents must be stored.
   @$pb.TagNumber(2)
@@ -402,7 +402,7 @@ class ImportDocumentsResponse extends $pb.GeneratedMessage {
 class ImportDocumentsMetadata_IndividualImportStatus extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata_IndividualImportStatus({
     $core.String? inputGcsSource,
-    $1795.Status? status,
+    $1796.Status? status,
     $1039.DocumentId? outputDocumentId,
   }) {
     final $result = create();
@@ -423,7 +423,7 @@ class ImportDocumentsMetadata_IndividualImportStatus extends $pb.GeneratedMessag
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsMetadata.IndividualImportStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'inputGcsSource')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOM<$1039.DocumentId>(4, _omitFieldNames ? '' : 'outputDocumentId', subBuilder: $1039.DocumentId.create)
     ..hasRequiredFields = false
   ;
@@ -461,15 +461,15 @@ class ImportDocumentsMetadata_IndividualImportStatus extends $pb.GeneratedMessag
 
   /// The status of the importing of the document.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 
   /// The document id of imported document if it was successful, otherwise
   /// empty.
@@ -491,7 +491,7 @@ class ImportDocumentsMetadata_IndividualImportStatus extends $pb.GeneratedMessag
 class ImportDocumentsMetadata_ImportConfigValidationResult extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata_ImportConfigValidationResult({
     $core.String? inputGcsSource,
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (inputGcsSource != null) {
@@ -508,7 +508,7 @@ class ImportDocumentsMetadata_ImportConfigValidationResult extends $pb.Generated
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsMetadata.ImportConfigValidationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'inputGcsSource')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -545,21 +545,21 @@ class ImportDocumentsMetadata_ImportConfigValidationResult extends $pb.Generated
 
   /// The validation status of import config.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 }
 
 /// Metadata of the import document operation.
 class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata({
-    $4525.CommonOperationMetadata? commonMetadata,
+    $4527.CommonOperationMetadata? commonMetadata,
     $core.Iterable<ImportDocumentsMetadata_IndividualImportStatus>? individualImportStatuses,
     $core.int? totalDocumentCount,
     $core.Iterable<ImportDocumentsMetadata_ImportConfigValidationResult>? importConfigValidationResults,
@@ -584,7 +584,7 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
-    ..aOM<$4525.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4525.CommonOperationMetadata.create)
+    ..aOM<$4527.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4527.CommonOperationMetadata.create)
     ..pc<ImportDocumentsMetadata_IndividualImportStatus>(2, _omitFieldNames ? '' : 'individualImportStatuses', $pb.PbFieldType.PM, subBuilder: ImportDocumentsMetadata_IndividualImportStatus.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalDocumentCount', $pb.PbFieldType.O3)
     ..pc<ImportDocumentsMetadata_ImportConfigValidationResult>(4, _omitFieldNames ? '' : 'importConfigValidationResults', $pb.PbFieldType.PM, subBuilder: ImportDocumentsMetadata_ImportConfigValidationResult.create)
@@ -614,15 +614,15 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4525.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4527.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4525.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4527.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4525.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4527.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 
   /// The list of response details of each document.
   @$pb.TagNumber(2)
@@ -647,7 +647,7 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
   factory GetDocumentRequest({
     $core.String? dataset,
     $1039.DocumentId? documentId,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
     DocumentPageRange? pageRange,
   }) {
     final $result = create();
@@ -672,7 +672,7 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'dataset')
     ..aOM<$1039.DocumentId>(2, _omitFieldNames ? '' : 'documentId', subBuilder: $1039.DocumentId.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DocumentPageRange>(4, _omitFieldNames ? '' : 'pageRange', subBuilder: DocumentPageRange.create)
     ..hasRequiredFields = false
   ;
@@ -725,15 +725,15 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
   /// If set, only fields listed here will be returned. Otherwise, all fields
   /// will be returned by default.
   @$pb.TagNumber(3)
-  $2209.FieldMask get readMask => $_getN(2);
+  $2210.FieldMask get readMask => $_getN(2);
   @$pb.TagNumber(3)
-  set readMask($2209.FieldMask v) { setField(3, v); }
+  set readMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReadMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearReadMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureReadMask() => $_ensure(2);
+  $2210.FieldMask ensureReadMask() => $_ensure(2);
 
   /// List of pages for which the fields specified in the `read_mask` must
   /// be served.
@@ -751,7 +751,7 @@ class GetDocumentRequest extends $pb.GeneratedMessage {
 
 class GetDocumentResponse extends $pb.GeneratedMessage {
   factory GetDocumentResponse({
-    $4523.Document? document,
+    $4525.Document? document,
   }) {
     final $result = create();
     if (document != null) {
@@ -764,7 +764,7 @@ class GetDocumentResponse extends $pb.GeneratedMessage {
   factory GetDocumentResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDocumentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
-    ..aOM<$4523.Document>(1, _omitFieldNames ? '' : 'document', subBuilder: $4523.Document.create)
+    ..aOM<$4525.Document>(1, _omitFieldNames ? '' : 'document', subBuilder: $4525.Document.create)
     ..hasRequiredFields = false
   ;
 
@@ -790,15 +790,15 @@ class GetDocumentResponse extends $pb.GeneratedMessage {
   static GetDocumentResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $4523.Document get document => $_getN(0);
+  $4525.Document get document => $_getN(0);
   @$pb.TagNumber(1)
-  set document($4523.Document v) { setField(1, v); }
+  set document($4525.Document v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDocument() => $_has(0);
   @$pb.TagNumber(1)
   void clearDocument() => clearField(1);
   @$pb.TagNumber(1)
-  $4523.Document ensureDocument() => $_ensure(0);
+  $4525.Document ensureDocument() => $_ensure(0);
 }
 
 class ListDocumentsRequest extends $pb.GeneratedMessage {
@@ -1154,7 +1154,7 @@ class BatchDeleteDocumentsResponse extends $pb.GeneratedMessage {
 class BatchDeleteDocumentsMetadata_IndividualBatchDeleteStatus extends $pb.GeneratedMessage {
   factory BatchDeleteDocumentsMetadata_IndividualBatchDeleteStatus({
     $1039.DocumentId? documentId,
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (documentId != null) {
@@ -1171,7 +1171,7 @@ class BatchDeleteDocumentsMetadata_IndividualBatchDeleteStatus extends $pb.Gener
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchDeleteDocumentsMetadata.IndividualBatchDeleteStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOM<$1039.DocumentId>(1, _omitFieldNames ? '' : 'documentId', subBuilder: $1039.DocumentId.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1210,20 +1210,20 @@ class BatchDeleteDocumentsMetadata_IndividualBatchDeleteStatus extends $pb.Gener
 
   /// The status of deleting the document in storage.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 }
 
 class BatchDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   factory BatchDeleteDocumentsMetadata({
-    $4525.CommonOperationMetadata? commonMetadata,
+    $4527.CommonOperationMetadata? commonMetadata,
     $core.Iterable<BatchDeleteDocumentsMetadata_IndividualBatchDeleteStatus>? individualBatchDeleteStatuses,
     $core.int? totalDocumentCount,
     $core.int? errorDocumentCount,
@@ -1248,7 +1248,7 @@ class BatchDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   factory BatchDeleteDocumentsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchDeleteDocumentsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
-    ..aOM<$4525.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4525.CommonOperationMetadata.create)
+    ..aOM<$4527.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4527.CommonOperationMetadata.create)
     ..pc<BatchDeleteDocumentsMetadata_IndividualBatchDeleteStatus>(2, _omitFieldNames ? '' : 'individualBatchDeleteStatuses', $pb.PbFieldType.PM, subBuilder: BatchDeleteDocumentsMetadata_IndividualBatchDeleteStatus.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalDocumentCount', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'errorDocumentCount', $pb.PbFieldType.O3)
@@ -1278,15 +1278,15 @@ class BatchDeleteDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4525.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4527.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4525.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4527.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4525.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4527.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 
   /// The list of response details of each document.
   @$pb.TagNumber(2)
@@ -1386,7 +1386,7 @@ class GetDatasetSchemaRequest extends $pb.GeneratedMessage {
 class UpdateDatasetSchemaRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetSchemaRequest({
     $1039.DatasetSchema? datasetSchema,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (datasetSchema != null) {
@@ -1403,7 +1403,7 @@ class UpdateDatasetSchemaRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatasetSchemaRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOM<$1039.DatasetSchema>(1, _omitFieldNames ? '' : 'datasetSchema', subBuilder: $1039.DatasetSchema.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1443,15 +1443,15 @@ class UpdateDatasetSchemaRequest extends $pb.GeneratedMessage {
 
   /// The update mask applies to the resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Range of pages present in a document.

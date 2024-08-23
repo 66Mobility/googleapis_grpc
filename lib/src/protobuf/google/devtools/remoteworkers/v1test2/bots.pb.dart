@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'bots.pbenum.dart';
-import 'worker.pb.dart' as $4768;
+import 'worker.pb.dart' as $4770;
 
 export 'bots.pbenum.dart';
 
@@ -34,9 +34,9 @@ class BotSession extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? botId,
     BotStatus? status,
-    $4768.Worker? worker,
+    $4770.Worker? worker,
     $core.Iterable<Lease>? leases,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.String? version,
   }) {
     final $result = create();
@@ -71,9 +71,9 @@ class BotSession extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'botId')
     ..e<BotStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: BotStatus.BOT_STATUS_UNSPECIFIED, valueOf: BotStatus.valueOf, enumValues: BotStatus.values)
-    ..aOM<$4768.Worker>(4, _omitFieldNames ? '' : 'worker', subBuilder: $4768.Worker.create)
+    ..aOM<$4770.Worker>(4, _omitFieldNames ? '' : 'worker', subBuilder: $4770.Worker.create)
     ..pc<Lease>(5, _omitFieldNames ? '' : 'leases', $pb.PbFieldType.PM, subBuilder: Lease.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'version')
     ..hasRequiredFields = false
   ;
@@ -153,15 +153,15 @@ class BotSession extends $pb.GeneratedMessage {
   ///  to the worker's `server_properties` field (see that field for more
   ///  information). Otherwise, this field is input-only.
   @$pb.TagNumber(4)
-  $4768.Worker get worker => $_getN(3);
+  $4770.Worker get worker => $_getN(3);
   @$pb.TagNumber(4)
-  set worker($4768.Worker v) { setField(4, v); }
+  set worker($4770.Worker v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasWorker() => $_has(3);
   @$pb.TagNumber(4)
   void clearWorker() => clearField(4);
   @$pb.TagNumber(4)
-  $4768.Worker ensureWorker() => $_ensure(3);
+  $4770.Worker ensureWorker() => $_ensure(3);
 
   /// A list of all leases that are a part of this session. See the Lease message
   /// for details.
@@ -171,15 +171,15 @@ class BotSession extends $pb.GeneratedMessage {
   /// The time at which this bot session will expire, unless the bot calls
   /// UpdateBotSession again. Output only.
   @$pb.TagNumber(6)
-  $1775.Timestamp get expireTime => $_getN(5);
+  $1776.Timestamp get expireTime => $_getN(5);
   @$pb.TagNumber(6)
-  set expireTime($1775.Timestamp v) { setField(6, v); }
+  set expireTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExpireTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearExpireTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureExpireTime() => $_ensure(5);
+  $1776.Timestamp ensureExpireTime() => $_ensure(5);
 
   /// The version of the bot code currently running. The server may use this
   /// information to issue an admin action to tell the bot to update itself.
@@ -216,14 +216,14 @@ class Lease extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
     $core.String? assignment,
     LeaseState? state,
-    $1795.Status? status,
-    $4768.Worker? requirements,
-    $1775.Timestamp? expireTime,
+    $1796.Status? status,
+    $4770.Worker? requirements,
+    $1776.Timestamp? expireTime,
   @$core.Deprecated('This field is deprecated.')
-    $1794.Any? inlineAssignment,
+    $1795.Any? inlineAssignment,
     $core.String? id,
-    $1794.Any? payload,
-    $1794.Any? result,
+    $1795.Any? payload,
+    $1795.Any? result,
   }) {
     final $result = create();
     if (assignment != null) {
@@ -264,13 +264,13 @@ class Lease extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Lease', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.remoteworkers.v1test2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'assignment')
     ..e<LeaseState>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: LeaseState.LEASE_STATE_UNSPECIFIED, valueOf: LeaseState.valueOf, enumValues: LeaseState.values)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$4768.Worker>(4, _omitFieldNames ? '' : 'requirements', subBuilder: $4768.Worker.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1794.Any>(6, _omitFieldNames ? '' : 'inlineAssignment', subBuilder: $1794.Any.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$4770.Worker>(4, _omitFieldNames ? '' : 'requirements', subBuilder: $4770.Worker.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1795.Any>(6, _omitFieldNames ? '' : 'inlineAssignment', subBuilder: $1795.Any.create)
     ..aOS(7, _omitFieldNames ? '' : 'id')
-    ..aOM<$1794.Any>(8, _omitFieldNames ? '' : 'payload', subBuilder: $1794.Any.create)
-    ..aOM<$1794.Any>(9, _omitFieldNames ? '' : 'result', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(8, _omitFieldNames ? '' : 'payload', subBuilder: $1795.Any.create)
+    ..aOM<$1795.Any>(9, _omitFieldNames ? '' : 'result', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -330,50 +330,50 @@ class Lease extends $pb.GeneratedMessage {
   /// correctly, this field will be `OK` while the failure of the assignment must
   /// communicated via the `result` field.
   @$pb.TagNumber(3)
-  $1795.Status get status => $_getN(2);
+  $1796.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($1795.Status v) { setField(3, v); }
+  set status($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureStatus() => $_ensure(2);
+  $1796.Status ensureStatus() => $_ensure(2);
 
   /// The requirements that are being claimed by this lease. This field may be
   /// omitted by the server if the lease is not pending.
   @$pb.TagNumber(4)
-  $4768.Worker get requirements => $_getN(3);
+  $4770.Worker get requirements => $_getN(3);
   @$pb.TagNumber(4)
-  set requirements($4768.Worker v) { setField(4, v); }
+  set requirements($4770.Worker v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRequirements() => $_has(3);
   @$pb.TagNumber(4)
   void clearRequirements() => clearField(4);
   @$pb.TagNumber(4)
-  $4768.Worker ensureRequirements() => $_ensure(3);
+  $4770.Worker ensureRequirements() => $_ensure(3);
 
   /// The time at which this lease expires. The server *may* extend this over
   /// time, but due to race conditions, the bot is not *required* to respect any
   /// expiry date except the first one.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(4);
+  $1776.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(4);
+  $1776.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// DEPRECATED. Use `payload` instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  $1794.Any get inlineAssignment => $_getN(5);
+  $1795.Any get inlineAssignment => $_getN(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  set inlineAssignment($1794.Any v) { setField(6, v); }
+  set inlineAssignment($1795.Any v) { setField(6, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
   $core.bool hasInlineAssignment() => $_has(5);
@@ -382,7 +382,7 @@ class Lease extends $pb.GeneratedMessage {
   void clearInlineAssignment() => clearField(6);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  $1794.Any ensureInlineAssignment() => $_ensure(5);
+  $1795.Any ensureInlineAssignment() => $_ensure(5);
 
   /// A short string uniquely identifing the lease within this bot session.
   @$pb.TagNumber(7)
@@ -398,30 +398,30 @@ class Lease extends $pb.GeneratedMessage {
   /// the lease is not in the `PENDING` state. The message must be meaningful to
   /// the bot. Output only (must only be set by the server).
   @$pb.TagNumber(8)
-  $1794.Any get payload => $_getN(7);
+  $1795.Any get payload => $_getN(7);
   @$pb.TagNumber(8)
-  set payload($1794.Any v) { setField(8, v); }
+  set payload($1795.Any v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPayload() => $_has(7);
   @$pb.TagNumber(8)
   void clearPayload() => clearField(8);
   @$pb.TagNumber(8)
-  $1794.Any ensurePayload() => $_ensure(7);
+  $1795.Any ensurePayload() => $_ensure(7);
 
   /// Any result the bot wishes to provide about the lease. Must not be changed
   /// after the first call with the lease in the `COMPLETED` or `CANCELLED`
   /// state. Input only (must only be set by the bot, will not be echoed by the
   /// server).
   @$pb.TagNumber(9)
-  $1794.Any get result => $_getN(8);
+  $1795.Any get result => $_getN(8);
   @$pb.TagNumber(9)
-  set result($1794.Any v) { setField(9, v); }
+  set result($1795.Any v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasResult() => $_has(8);
   @$pb.TagNumber(9)
   void clearResult() => clearField(9);
   @$pb.TagNumber(9)
-  $1794.Any ensureResult() => $_ensure(8);
+  $1795.Any ensureResult() => $_ensure(8);
 }
 
 ///  AdminTemp is a prelimiary set of administration tasks. It's called "Temp"
@@ -577,7 +577,7 @@ class UpdateBotSessionRequest extends $pb.GeneratedMessage {
   factory UpdateBotSessionRequest({
     $core.String? name,
     BotSession? botSession,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -598,7 +598,7 @@ class UpdateBotSessionRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBotSessionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.remoteworkers.v1test2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<BotSession>(2, _omitFieldNames ? '' : 'botSession', subBuilder: BotSession.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -648,15 +648,15 @@ class UpdateBotSessionRequest extends $pb.GeneratedMessage {
   /// Required. The fields on the bot that should be updated. See the BotSession
   /// resource for which fields are updatable by which caller.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 

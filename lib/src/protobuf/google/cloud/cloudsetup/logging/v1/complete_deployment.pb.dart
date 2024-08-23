@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../rpc/status.pb.dart' as $1796;
 import 'complete_deployment.pbenum.dart';
 
 export 'complete_deployment.pbenum.dart';
@@ -38,7 +38,7 @@ enum CompleteDeploymentEvent_Result {
 class CompleteDeploymentEvent extends $pb.GeneratedMessage {
   factory CompleteDeploymentEvent({
     CompleteDeploymentResult? value,
-    $1795.Status? error,
+    $1796.Status? error,
     CompleteDeploymentEvent_State? state,
     $core.bool? previewOnly,
   }) {
@@ -69,7 +69,7 @@ class CompleteDeploymentEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompleteDeploymentEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.cloudsetup.logging.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOM<CompleteDeploymentResult>(1, _omitFieldNames ? '' : 'value', subBuilder: CompleteDeploymentResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..e<CompleteDeploymentEvent_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CompleteDeploymentEvent_State.STATE_UNSPECIFIED, valueOf: CompleteDeploymentEvent_State.valueOf, enumValues: CompleteDeploymentEvent_State.values)
     ..aOB(4, _omitFieldNames ? '' : 'previewOnly')
     ..hasRequiredFields = false
@@ -113,15 +113,15 @@ class CompleteDeploymentEvent extends $pb.GeneratedMessage {
 
   /// Result of the Deployment if the `Operation` results in an error.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 
   /// The `state` of this deployment completion event.
   @$pb.TagNumber(3)

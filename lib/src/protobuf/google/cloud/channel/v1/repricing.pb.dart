@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
-import '../../../type/decimal.pb.dart' as $4429;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
+import '../../../type/decimal.pb.dart' as $4431;
 import 'repricing.pbenum.dart';
 
 export 'repricing.pbenum.dart';
@@ -25,7 +25,7 @@ class CustomerRepricingConfig extends $pb.GeneratedMessage {
   factory CustomerRepricingConfig({
     $core.String? name,
     RepricingConfig? repricingConfig,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -46,7 +46,7 @@ class CustomerRepricingConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerRepricingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<RepricingConfig>(2, _omitFieldNames ? '' : 'repricingConfig', subBuilder: RepricingConfig.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -101,15 +101,15 @@ class CustomerRepricingConfig extends $pb.GeneratedMessage {
   /// [RepricingConfig.effective_invoice_month][google.cloud.channel.v1.RepricingConfig.effective_invoice_month]
   /// then it indicates this was set mid-month.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// Configuration for how a distributor will rebill a channel partner
@@ -118,7 +118,7 @@ class ChannelPartnerRepricingConfig extends $pb.GeneratedMessage {
   factory ChannelPartnerRepricingConfig({
     $core.String? name,
     RepricingConfig? repricingConfig,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -139,7 +139,7 @@ class ChannelPartnerRepricingConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChannelPartnerRepricingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<RepricingConfig>(2, _omitFieldNames ? '' : 'repricingConfig', subBuilder: RepricingConfig.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -194,15 +194,15 @@ class ChannelPartnerRepricingConfig extends $pb.GeneratedMessage {
   /// [RepricingConfig.effective_invoice_month][google.cloud.channel.v1.RepricingConfig.effective_invoice_month]
   /// then it indicates this was set mid-month.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// Applies the repricing configuration at the entitlement level.
@@ -306,7 +306,7 @@ enum RepricingConfig_Granularity {
 /// Configuration for repricing a Google bill over a period of time.
 class RepricingConfig extends $pb.GeneratedMessage {
   factory RepricingConfig({
-    $1800.Date? effectiveInvoiceMonth,
+    $1801.Date? effectiveInvoiceMonth,
     RepricingAdjustment? adjustment,
     RebillingBasis? rebillingBasis,
     RepricingConfig_EntitlementGranularity? entitlementGranularity,
@@ -347,7 +347,7 @@ class RepricingConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RepricingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..oo(0, [4, 5])
-    ..aOM<$1800.Date>(1, _omitFieldNames ? '' : 'effectiveInvoiceMonth', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(1, _omitFieldNames ? '' : 'effectiveInvoiceMonth', subBuilder: $1801.Date.create)
     ..aOM<RepricingAdjustment>(2, _omitFieldNames ? '' : 'adjustment', subBuilder: RepricingAdjustment.create)
     ..e<RebillingBasis>(3, _omitFieldNames ? '' : 'rebillingBasis', $pb.PbFieldType.OE, defaultOrMaker: RebillingBasis.REBILLING_BASIS_UNSPECIFIED, valueOf: RebillingBasis.valueOf, enumValues: RebillingBasis.values)
     ..aOM<RepricingConfig_EntitlementGranularity>(4, _omitFieldNames ? '' : 'entitlementGranularity', subBuilder: RepricingConfig_EntitlementGranularity.create)
@@ -383,15 +383,15 @@ class RepricingConfig extends $pb.GeneratedMessage {
   /// Required. The YearMonth when these adjustments activate. The Day field
   /// needs to be "0" since we only accept YearMonth repricing boundaries.
   @$pb.TagNumber(1)
-  $1800.Date get effectiveInvoiceMonth => $_getN(0);
+  $1801.Date get effectiveInvoiceMonth => $_getN(0);
   @$pb.TagNumber(1)
-  set effectiveInvoiceMonth($1800.Date v) { setField(1, v); }
+  set effectiveInvoiceMonth($1801.Date v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEffectiveInvoiceMonth() => $_has(0);
   @$pb.TagNumber(1)
   void clearEffectiveInvoiceMonth() => clearField(1);
   @$pb.TagNumber(1)
-  $1800.Date ensureEffectiveInvoiceMonth() => $_ensure(0);
+  $1801.Date ensureEffectiveInvoiceMonth() => $_ensure(0);
 
   /// Required. Information about the adjustment.
   @$pb.TagNumber(2)
@@ -541,7 +541,7 @@ class RepricingAdjustment extends $pb.GeneratedMessage {
 /// An adjustment that applies a flat markup or markdown to an entire bill.
 class PercentageAdjustment extends $pb.GeneratedMessage {
   factory PercentageAdjustment({
-    $4429.Decimal? percentage,
+    $4431.Decimal? percentage,
   }) {
     final $result = create();
     if (percentage != null) {
@@ -554,7 +554,7 @@ class PercentageAdjustment extends $pb.GeneratedMessage {
   factory PercentageAdjustment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PercentageAdjustment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..aOM<$4429.Decimal>(2, _omitFieldNames ? '' : 'percentage', subBuilder: $4429.Decimal.create)
+    ..aOM<$4431.Decimal>(2, _omitFieldNames ? '' : 'percentage', subBuilder: $4431.Decimal.create)
     ..hasRequiredFields = false
   ;
 
@@ -585,15 +585,15 @@ class PercentageAdjustment extends $pb.GeneratedMessage {
   /// Mark up by 1%   => "1.00"
   /// Pass-Through    => "0.00"
   @$pb.TagNumber(2)
-  $4429.Decimal get percentage => $_getN(0);
+  $4431.Decimal get percentage => $_getN(0);
   @$pb.TagNumber(2)
-  set percentage($4429.Decimal v) { setField(2, v); }
+  set percentage($4431.Decimal v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPercentage() => $_has(0);
   @$pb.TagNumber(2)
   void clearPercentage() => clearField(2);
   @$pb.TagNumber(2)
-  $4429.Decimal ensurePercentage() => $_ensure(0);
+  $4431.Decimal ensurePercentage() => $_ensure(0);
 }
 
 /// Specifies the override to conditionally apply.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'content.pb.dart' as $4293;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'content.pb.dart' as $4294;
 import 'extension.pb.dart' as $565;
 
 /// Request message for
@@ -23,7 +23,7 @@ class ExecuteExtensionRequest extends $pb.GeneratedMessage {
   factory ExecuteExtensionRequest({
     $core.String? name,
     $core.String? operationId,
-    $1734.Struct? operationParams,
+    $1735.Struct? operationParams,
     $565.AuthConfig? runtimeAuthConfig,
   }) {
     final $result = create();
@@ -48,7 +48,7 @@ class ExecuteExtensionRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteExtensionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'operationId')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'operationParams', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'operationParams', subBuilder: $1735.Struct.create)
     ..aOM<$565.AuthConfig>(4, _omitFieldNames ? '' : 'runtimeAuthConfig', subBuilder: $565.AuthConfig.create)
     ..hasRequiredFields = false
   ;
@@ -106,15 +106,15 @@ class ExecuteExtensionRequest extends $pb.GeneratedMessage {
   ///  E.g. If this operation requires a param "name" to be set to "abc". you can
   ///  set this to something like {"name": "abc"}.
   @$pb.TagNumber(3)
-  $1734.Struct get operationParams => $_getN(2);
+  $1735.Struct get operationParams => $_getN(2);
   @$pb.TagNumber(3)
-  set operationParams($1734.Struct v) { setField(3, v); }
+  set operationParams($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOperationParams() => $_has(2);
   @$pb.TagNumber(3)
   void clearOperationParams() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureOperationParams() => $_ensure(2);
+  $1735.Struct ensureOperationParams() => $_ensure(2);
 
   /// Optional. Auth config provided at runtime to override the default value in
   /// [Extension.manifest.auth_config][].
@@ -191,7 +191,7 @@ class ExecuteExtensionResponse extends $pb.GeneratedMessage {
 class QueryExtensionRequest extends $pb.GeneratedMessage {
   factory QueryExtensionRequest({
     $core.String? name,
-    $core.Iterable<$4293.Content>? contents,
+    $core.Iterable<$4294.Content>? contents,
   }) {
     final $result = create();
     if (name != null) {
@@ -208,7 +208,7 @@ class QueryExtensionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryExtensionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$4293.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4293.Content.create)
+    ..pc<$4294.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4294.Content.create)
     ..hasRequiredFields = false
   ;
 
@@ -251,14 +251,14 @@ class QueryExtensionRequest extends $pb.GeneratedMessage {
   ///  this is a repeated field that contains conversation history + latest
   ///  request.
   @$pb.TagNumber(2)
-  $core.List<$4293.Content> get contents => $_getList(1);
+  $core.List<$4294.Content> get contents => $_getList(1);
 }
 
 /// Response message for
 /// [ExtensionExecutionService.QueryExtension][google.cloud.aiplatform.v1beta1.ExtensionExecutionService.QueryExtension].
 class QueryExtensionResponse extends $pb.GeneratedMessage {
   factory QueryExtensionResponse({
-    $core.Iterable<$4293.Content>? steps,
+    $core.Iterable<$4294.Content>? steps,
     $core.String? failureMessage,
   }) {
     final $result = create();
@@ -275,7 +275,7 @@ class QueryExtensionResponse extends $pb.GeneratedMessage {
   factory QueryExtensionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryExtensionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..pc<$4293.Content>(1, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: $4293.Content.create)
+    ..pc<$4294.Content>(1, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: $4294.Content.create)
     ..aOS(2, _omitFieldNames ? '' : 'failureMessage')
     ..hasRequiredFields = false
   ;
@@ -305,7 +305,7 @@ class QueryExtensionResponse extends $pb.GeneratedMessage {
   /// function response, or text response. The last step contains the final
   /// response to the query.
   @$pb.TagNumber(1)
-  $core.List<$4293.Content> get steps => $_getList(0);
+  $core.List<$4294.Content> get steps => $_getList(0);
 
   /// Failure message if any.
   @$pb.TagNumber(2)

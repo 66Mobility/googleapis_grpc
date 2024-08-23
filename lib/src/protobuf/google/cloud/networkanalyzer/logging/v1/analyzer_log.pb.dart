@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'analyzer_log.pbenum.dart';
 
 export 'analyzer_log.pbenum.dart';
@@ -172,7 +172,7 @@ class Report extends $pb.GeneratedMessage {
     Report_Priority? priority,
     Report_Type? type,
     Report_ReportStatus? status,
-    $1775.Timestamp? firstReportTime,
+    $1776.Timestamp? firstReportTime,
     ReportCauseCode? causeCode,
     $core.String? resourceName,
     $core.String? location,
@@ -230,7 +230,7 @@ class Report extends $pb.GeneratedMessage {
     ..e<Report_Priority>(2, _omitFieldNames ? '' : 'priority', $pb.PbFieldType.OE, defaultOrMaker: Report_Priority.SEVERITY_UNSPECIFIED, valueOf: Report_Priority.valueOf, enumValues: Report_Priority.values)
     ..e<Report_Type>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Report_Type.REPORT_TYPE_UNSPECIFIED, valueOf: Report_Type.valueOf, enumValues: Report_Type.values)
     ..e<Report_ReportStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: Report_ReportStatus.REPORT_STATUS_UNSPECIFIED, valueOf: Report_ReportStatus.valueOf, enumValues: Report_ReportStatus.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'firstReportTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'firstReportTime', subBuilder: $1776.Timestamp.create)
     ..e<ReportCauseCode>(12, _omitFieldNames ? '' : 'causeCode', $pb.PbFieldType.OE, defaultOrMaker: ReportCauseCode.REPORT_CAUSE_CODE_UNSPECIFIED, valueOf: ReportCauseCode.valueOf, enumValues: ReportCauseCode.values)
     ..aOS(15, _omitFieldNames ? '' : 'resourceName')
     ..aOS(16, _omitFieldNames ? '' : 'location')
@@ -306,15 +306,15 @@ class Report extends $pb.GeneratedMessage {
 
   /// The timestamp when the report was first discovered by Network Analyzer.
   @$pb.TagNumber(9)
-  $1775.Timestamp get firstReportTime => $_getN(4);
+  $1776.Timestamp get firstReportTime => $_getN(4);
   @$pb.TagNumber(9)
-  set firstReportTime($1775.Timestamp v) { setField(9, v); }
+  set firstReportTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFirstReportTime() => $_has(4);
   @$pb.TagNumber(9)
   void clearFirstReportTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureFirstReportTime() => $_ensure(4);
+  $1776.Timestamp ensureFirstReportTime() => $_ensure(4);
 
   /// Cause code of the report.
   @$pb.TagNumber(12)

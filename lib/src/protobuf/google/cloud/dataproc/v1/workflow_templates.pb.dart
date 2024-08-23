@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'clusters.pb.dart' as $830;
 import 'jobs.pb.dart' as $831;
 import 'workflow_templates.pbenum.dart';
@@ -27,13 +27,13 @@ class WorkflowTemplate extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? id,
     $core.int? version,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     WorkflowTemplatePlacement? placement,
     $core.Iterable<OrderedJob>? jobs,
     $core.Iterable<TemplateParameter>? parameters,
-    $1737.Duration? dagTimeout,
+    $1738.Duration? dagTimeout,
   }) {
     final $result = create();
     if (name != null) {
@@ -76,13 +76,13 @@ class WorkflowTemplate extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'version', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'WorkflowTemplate.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
     ..aOM<WorkflowTemplatePlacement>(7, _omitFieldNames ? '' : 'placement', subBuilder: WorkflowTemplatePlacement.create)
     ..pc<OrderedJob>(8, _omitFieldNames ? '' : 'jobs', $pb.PbFieldType.PM, subBuilder: OrderedJob.create)
     ..pc<TemplateParameter>(9, _omitFieldNames ? '' : 'parameters', $pb.PbFieldType.PM, subBuilder: TemplateParameter.create)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'dagTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'dagTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -155,27 +155,27 @@ class WorkflowTemplate extends $pb.GeneratedMessage {
 
   /// Output only. The time template was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time template was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   ///  Optional. The labels to associate with this template. These labels
   ///  will be propagated to all jobs and clusters created by the workflow
@@ -225,15 +225,15 @@ class WorkflowTemplate extends $pb.GeneratedMessage {
   /// cluster](/dataproc/docs/concepts/workflows/using-workflows#configuring_or_selecting_a_cluster),
   /// the cluster is deleted.
   @$pb.TagNumber(10)
-  $1737.Duration get dagTimeout => $_getN(9);
+  $1738.Duration get dagTimeout => $_getN(9);
   @$pb.TagNumber(10)
-  set dagTimeout($1737.Duration v) { setField(10, v); }
+  set dagTimeout($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDagTimeout() => $_has(9);
   @$pb.TagNumber(10)
   void clearDagTimeout() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureDagTimeout() => $_ensure(9);
+  $1738.Duration ensureDagTimeout() => $_ensure(9);
 }
 
 enum WorkflowTemplatePlacement_Placement {
@@ -1097,12 +1097,12 @@ class WorkflowMetadata extends $pb.GeneratedMessage {
     WorkflowMetadata_State? state,
     $core.String? clusterName,
     $core.Map<$core.String, $core.String>? parameters,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? clusterUuid,
-    $1737.Duration? dagTimeout,
-    $1775.Timestamp? dagStartTime,
-    $1775.Timestamp? dagEndTime,
+    $1738.Duration? dagTimeout,
+    $1776.Timestamp? dagStartTime,
+    $1776.Timestamp? dagEndTime,
   }) {
     final $result = create();
     if (template != null) {
@@ -1162,12 +1162,12 @@ class WorkflowMetadata extends $pb.GeneratedMessage {
     ..e<WorkflowMetadata_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: WorkflowMetadata_State.UNKNOWN, valueOf: WorkflowMetadata_State.valueOf, enumValues: WorkflowMetadata_State.values)
     ..aOS(7, _omitFieldNames ? '' : 'clusterName')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'parameters', entryClassName: 'WorkflowMetadata.ParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'clusterUuid')
-    ..aOM<$1737.Duration>(12, _omitFieldNames ? '' : 'dagTimeout', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'dagStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'dagEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(12, _omitFieldNames ? '' : 'dagTimeout', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'dagStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'dagEndTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1284,27 +1284,27 @@ class WorkflowMetadata extends $pb.GeneratedMessage {
 
   /// Output only. Workflow start time.
   @$pb.TagNumber(9)
-  $1775.Timestamp get startTime => $_getN(8);
+  $1776.Timestamp get startTime => $_getN(8);
   @$pb.TagNumber(9)
-  set startTime($1775.Timestamp v) { setField(9, v); }
+  set startTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasStartTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearStartTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureStartTime() => $_ensure(8);
+  $1776.Timestamp ensureStartTime() => $_ensure(8);
 
   /// Output only. Workflow end time.
   @$pb.TagNumber(10)
-  $1775.Timestamp get endTime => $_getN(9);
+  $1776.Timestamp get endTime => $_getN(9);
   @$pb.TagNumber(10)
-  set endTime($1775.Timestamp v) { setField(10, v); }
+  set endTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasEndTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearEndTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureEndTime() => $_ensure(9);
+  $1776.Timestamp ensureEndTime() => $_ensure(9);
 
   /// Output only. The UUID of target cluster.
   @$pb.TagNumber(11)
@@ -1320,43 +1320,43 @@ class WorkflowMetadata extends $pb.GeneratedMessage {
   /// (see [JSON representation of
   /// duration](https://developers.google.com/protocol-buffers/docs/proto3#json)).
   @$pb.TagNumber(12)
-  $1737.Duration get dagTimeout => $_getN(11);
+  $1738.Duration get dagTimeout => $_getN(11);
   @$pb.TagNumber(12)
-  set dagTimeout($1737.Duration v) { setField(12, v); }
+  set dagTimeout($1738.Duration v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDagTimeout() => $_has(11);
   @$pb.TagNumber(12)
   void clearDagTimeout() => clearField(12);
   @$pb.TagNumber(12)
-  $1737.Duration ensureDagTimeout() => $_ensure(11);
+  $1738.Duration ensureDagTimeout() => $_ensure(11);
 
   /// Output only. DAG start time, only set for workflows with
   /// [dag_timeout][google.cloud.dataproc.v1.WorkflowMetadata.dag_timeout] when
   /// DAG begins.
   @$pb.TagNumber(13)
-  $1775.Timestamp get dagStartTime => $_getN(12);
+  $1776.Timestamp get dagStartTime => $_getN(12);
   @$pb.TagNumber(13)
-  set dagStartTime($1775.Timestamp v) { setField(13, v); }
+  set dagStartTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDagStartTime() => $_has(12);
   @$pb.TagNumber(13)
   void clearDagStartTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureDagStartTime() => $_ensure(12);
+  $1776.Timestamp ensureDagStartTime() => $_ensure(12);
 
   /// Output only. DAG end time, only set for workflows with
   /// [dag_timeout][google.cloud.dataproc.v1.WorkflowMetadata.dag_timeout] when
   /// DAG ends.
   @$pb.TagNumber(14)
-  $1775.Timestamp get dagEndTime => $_getN(13);
+  $1776.Timestamp get dagEndTime => $_getN(13);
   @$pb.TagNumber(14)
-  set dagEndTime($1775.Timestamp v) { setField(14, v); }
+  set dagEndTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasDagEndTime() => $_has(13);
   @$pb.TagNumber(14)
   void clearDagEndTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureDagEndTime() => $_ensure(13);
+  $1776.Timestamp ensureDagEndTime() => $_ensure(13);
 }
 
 /// The cluster operation triggered by a workflow.

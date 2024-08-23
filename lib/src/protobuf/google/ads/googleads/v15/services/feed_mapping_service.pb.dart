@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $2352;
-import '../resources/feed_mapping.pb.dart' as $2397;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $2353;
+import '../resources/feed_mapping.pb.dart' as $2398;
 
 /// Request message for
 /// [FeedMappingService.MutateFeedMappings][google.ads.googleads.v15.services.FeedMappingService.MutateFeedMappings].
@@ -25,7 +25,7 @@ class MutateFeedMappingsRequest extends $pb.GeneratedMessage {
     $core.Iterable<FeedMappingOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $2352.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $2353.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateFeedMappingsRequest extends $pb.GeneratedMessage {
     ..pc<FeedMappingOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: FeedMappingOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$2352.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2352.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2352.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2352.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$2353.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2353.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2353.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2353.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -120,9 +120,9 @@ class MutateFeedMappingsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $2352.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $2353.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($2352.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($2353.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -138,7 +138,7 @@ enum FeedMappingOperation_Operation {
 /// A single operation (create, remove) on a feed mapping.
 class FeedMappingOperation extends $pb.GeneratedMessage {
   factory FeedMappingOperation({
-    $2397.FeedMapping? create_1,
+    $2398.FeedMapping? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -161,7 +161,7 @@ class FeedMappingOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedMappingOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 3])
-    ..aOM<$2397.FeedMapping>(1, _omitFieldNames ? '' : 'create', subBuilder: $2397.FeedMapping.create)
+    ..aOM<$2398.FeedMapping>(1, _omitFieldNames ? '' : 'create', subBuilder: $2398.FeedMapping.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -192,15 +192,15 @@ class FeedMappingOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new feed mapping.
   @$pb.TagNumber(1)
-  $2397.FeedMapping get create_1 => $_getN(0);
+  $2398.FeedMapping get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2397.FeedMapping v) { setField(1, v); }
+  set create_1($2398.FeedMapping v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2397.FeedMapping ensureCreate_1() => $_ensure(0);
+  $2398.FeedMapping ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed feed mapping is
   ///  expected, in this format:
@@ -220,7 +220,7 @@ class FeedMappingOperation extends $pb.GeneratedMessage {
 class MutateFeedMappingsResponse extends $pb.GeneratedMessage {
   factory MutateFeedMappingsResponse({
     $core.Iterable<MutateFeedMappingResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -237,7 +237,7 @@ class MutateFeedMappingsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateFeedMappingsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<MutateFeedMappingResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateFeedMappingResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -271,22 +271,22 @@ class MutateFeedMappingsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the feed mapping mutate.
 class MutateFeedMappingResult extends $pb.GeneratedMessage {
   factory MutateFeedMappingResult({
     $core.String? resourceName,
-    $2397.FeedMapping? feedMapping,
+    $2398.FeedMapping? feedMapping,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -303,7 +303,7 @@ class MutateFeedMappingResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateFeedMappingResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2397.FeedMapping>(2, _omitFieldNames ? '' : 'feedMapping', subBuilder: $2397.FeedMapping.create)
+    ..aOM<$2398.FeedMapping>(2, _omitFieldNames ? '' : 'feedMapping', subBuilder: $2398.FeedMapping.create)
     ..hasRequiredFields = false
   ;
 
@@ -342,15 +342,15 @@ class MutateFeedMappingResult extends $pb.GeneratedMessage {
   /// will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $2397.FeedMapping get feedMapping => $_getN(1);
+  $2398.FeedMapping get feedMapping => $_getN(1);
   @$pb.TagNumber(2)
-  set feedMapping($2397.FeedMapping v) { setField(2, v); }
+  set feedMapping($2398.FeedMapping v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFeedMapping() => $_has(1);
   @$pb.TagNumber(2)
   void clearFeedMapping() => clearField(2);
   @$pb.TagNumber(2)
-  $2397.FeedMapping ensureFeedMapping() => $_ensure(1);
+  $2398.FeedMapping ensureFeedMapping() => $_ensure(1);
 }
 
 

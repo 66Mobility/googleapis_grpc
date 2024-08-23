@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_field_type.pbenum.dart' as $4034;
-import '../enums/asset_link_status.pbenum.dart' as $4023;
+import '../enums/asset_field_type.pbenum.dart' as $4035;
+import '../enums/asset_link_status.pbenum.dart' as $4024;
 
 /// AssetGroupAsset is the link between an asset and an asset group.
 /// Adding an AssetGroupAsset links an asset with an asset group.
@@ -23,8 +23,8 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? assetGroup,
     $core.String? asset,
-    $4034.AssetFieldTypeEnum_AssetFieldType? fieldType,
-    $4023.AssetLinkStatusEnum_AssetLinkStatus? status,
+    $4035.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $4024.AssetLinkStatusEnum_AssetLinkStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -52,8 +52,8 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'assetGroup')
     ..aOS(3, _omitFieldNames ? '' : 'asset')
-    ..e<$4034.AssetFieldTypeEnum_AssetFieldType>(4, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $4034.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $4034.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4034.AssetFieldTypeEnum_AssetFieldType.values)
-    ..e<$4023.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4023.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4023.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4023.AssetLinkStatusEnum_AssetLinkStatus.values)
+    ..e<$4035.AssetFieldTypeEnum_AssetFieldType>(4, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $4035.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $4035.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4035.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$4024.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4024.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4024.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4024.AssetLinkStatusEnum_AssetLinkStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -114,9 +114,9 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
   /// The description of the placement of the asset within the asset group. For
   /// example: HEADLINE, YOUTUBE_VIDEO etc
   @$pb.TagNumber(4)
-  $4034.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(3);
+  $4035.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(3);
   @$pb.TagNumber(4)
-  set fieldType($4034.AssetFieldTypeEnum_AssetFieldType v) { setField(4, v); }
+  set fieldType($4035.AssetFieldTypeEnum_AssetFieldType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFieldType() => $_has(3);
   @$pb.TagNumber(4)
@@ -124,9 +124,9 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
 
   /// The status of the link between an asset and asset group.
   @$pb.TagNumber(5)
-  $4023.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(4);
+  $4024.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($4023.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
+  set status($4024.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)

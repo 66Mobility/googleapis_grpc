@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $1737;
-import '../../protobuf/timestamp.pb.dart' as $1775;
-import '../../rpc/code.pbenum.dart' as $4219;
+import '../../protobuf/duration.pb.dart' as $1738;
+import '../../protobuf/timestamp.pb.dart' as $1776;
+import '../../rpc/code.pbenum.dart' as $4220;
 import 'pipelines.pbenum.dart';
 
 export 'pipelines.pbenum.dart';
@@ -414,7 +414,7 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
     $core.String? clientId,
     PipelineResources? resources,
     LoggingOptions? logging,
-    $1737.Duration? keepVmAliveOnFailureDuration,
+    $1738.Duration? keepVmAliveOnFailureDuration,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -459,7 +459,7 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'clientId')
     ..aOM<PipelineResources>(6, _omitFieldNames ? '' : 'resources', subBuilder: PipelineResources.create)
     ..aOM<LoggingOptions>(7, _omitFieldNames ? '' : 'logging', subBuilder: LoggingOptions.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'keepVmAliveOnFailureDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'keepVmAliveOnFailureDuration', subBuilder: $1738.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'RunPipelineArgs.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.genomics.v1alpha2'))
     ..hasRequiredFields = false
   ;
@@ -565,15 +565,15 @@ class RunPipelineArgs extends $pb.GeneratedMessage {
   /// failed, copying input or output files failed, etc). While the VM is up, one
   /// can ssh into the VM to debug. Default is 0; maximum allowed value is 1 day.
   @$pb.TagNumber(8)
-  $1737.Duration get keepVmAliveOnFailureDuration => $_getN(7);
+  $1738.Duration get keepVmAliveOnFailureDuration => $_getN(7);
   @$pb.TagNumber(8)
-  set keepVmAliveOnFailureDuration($1737.Duration v) { setField(8, v); }
+  set keepVmAliveOnFailureDuration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasKeepVmAliveOnFailureDuration() => $_has(7);
   @$pb.TagNumber(8)
   void clearKeepVmAliveOnFailureDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureKeepVmAliveOnFailureDuration() => $_ensure(7);
+  $1738.Duration ensureKeepVmAliveOnFailureDuration() => $_ensure(7);
 
   /// Labels to apply to this pipeline run. Labels will also be applied to
   /// compute resources (VM, disks) created by this pipeline run. When listing
@@ -1219,7 +1219,7 @@ class ControllerConfig extends $pb.GeneratedMessage {
 class TimestampEvent extends $pb.GeneratedMessage {
   factory TimestampEvent({
     $core.String? description,
-    $1775.Timestamp? timestamp,
+    $1776.Timestamp? timestamp,
   }) {
     final $result = create();
     if (description != null) {
@@ -1236,7 +1236,7 @@ class TimestampEvent extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimestampEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'timestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'timestamp', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1273,15 +1273,15 @@ class TimestampEvent extends $pb.GeneratedMessage {
 
   /// The time this event occured.
   @$pb.TagNumber(2)
-  $1775.Timestamp get timestamp => $_getN(1);
+  $1776.Timestamp get timestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set timestamp($1775.Timestamp v) { setField(2, v); }
+  set timestamp($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimestamp() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureTimestamp() => $_ensure(1);
+  $1776.Timestamp ensureTimestamp() => $_ensure(1);
 }
 
 /// Request to set operation status. Should only be used by VMs
@@ -1290,7 +1290,7 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   factory SetOperationStatusRequest({
     $core.String? operationId,
     $core.Iterable<TimestampEvent>? timestampEvents,
-    $4219.Code? errorCode,
+    $4220.Code? errorCode,
     $core.String? errorMessage,
     $fixnum.Int64? validationToken,
   }) {
@@ -1319,7 +1319,7 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetOperationStatusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1alpha2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
     ..pc<TimestampEvent>(2, _omitFieldNames ? '' : 'timestampEvents', $pb.PbFieldType.PM, subBuilder: TimestampEvent.create)
-    ..e<$4219.Code>(3, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE, defaultOrMaker: $4219.Code.OK, valueOf: $4219.Code.valueOf, enumValues: $4219.Code.values)
+    ..e<$4220.Code>(3, _omitFieldNames ? '' : 'errorCode', $pb.PbFieldType.OE, defaultOrMaker: $4220.Code.OK, valueOf: $4220.Code.valueOf, enumValues: $4220.Code.values)
     ..aOS(4, _omitFieldNames ? '' : 'errorMessage')
     ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'validationToken', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..hasRequiredFields = false
@@ -1359,9 +1359,9 @@ class SetOperationStatusRequest extends $pb.GeneratedMessage {
   $core.List<TimestampEvent> get timestampEvents => $_getList(1);
 
   @$pb.TagNumber(3)
-  $4219.Code get errorCode => $_getN(2);
+  $4220.Code get errorCode => $_getN(2);
   @$pb.TagNumber(3)
-  set errorCode($4219.Code v) { setField(3, v); }
+  set errorCode($4220.Code v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasErrorCode() => $_has(2);
   @$pb.TagNumber(3)

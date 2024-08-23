@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../../type/latlng.pb.dart' as $1798;
-import 'common.pb.dart' as $4798;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../../type/latlng.pb.dart' as $1799;
+import 'common.pb.dart' as $4800;
 import 'delivery_vehicles.pb.dart' as $1638;
 import 'tasks.pbenum.dart' as $1639;
 
@@ -28,18 +28,18 @@ class TaskTrackingInfo extends $pb.GeneratedMessage {
   factory TaskTrackingInfo({
     $core.String? name,
     $core.String? trackingId,
-    $4798.DeliveryVehicleLocation? vehicleLocation,
-    $core.Iterable<$1798.LatLng>? routePolylinePoints,
-    $1780.Int32Value? remainingStopCount,
-    $1780.Int32Value? remainingDrivingDistanceMeters,
-    $1775.Timestamp? estimatedArrivalTime,
-    $1775.Timestamp? estimatedTaskCompletionTime,
+    $4800.DeliveryVehicleLocation? vehicleLocation,
+    $core.Iterable<$1799.LatLng>? routePolylinePoints,
+    $1781.Int32Value? remainingStopCount,
+    $1781.Int32Value? remainingDrivingDistanceMeters,
+    $1776.Timestamp? estimatedArrivalTime,
+    $1776.Timestamp? estimatedTaskCompletionTime,
     $1639.Task_TaskOutcome? taskOutcome,
     $1638.LocationInfo? plannedLocation,
     $1639.Task_State? state,
-    $1775.Timestamp? taskOutcomeTime,
-    $4798.TimeWindow? targetTimeWindow,
-    $core.Iterable<$4798.TaskAttribute>? attributes,
+    $1776.Timestamp? taskOutcomeTime,
+    $4800.TimeWindow? targetTimeWindow,
+    $core.Iterable<$4800.TaskAttribute>? attributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -93,18 +93,18 @@ class TaskTrackingInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskTrackingInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'trackingId')
-    ..aOM<$4798.DeliveryVehicleLocation>(3, _omitFieldNames ? '' : 'vehicleLocation', subBuilder: $4798.DeliveryVehicleLocation.create)
-    ..pc<$1798.LatLng>(4, _omitFieldNames ? '' : 'routePolylinePoints', $pb.PbFieldType.PM, subBuilder: $1798.LatLng.create)
-    ..aOM<$1780.Int32Value>(5, _omitFieldNames ? '' : 'remainingStopCount', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1780.Int32Value>(6, _omitFieldNames ? '' : 'remainingDrivingDistanceMeters', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'estimatedArrivalTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'estimatedTaskCompletionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4800.DeliveryVehicleLocation>(3, _omitFieldNames ? '' : 'vehicleLocation', subBuilder: $4800.DeliveryVehicleLocation.create)
+    ..pc<$1799.LatLng>(4, _omitFieldNames ? '' : 'routePolylinePoints', $pb.PbFieldType.PM, subBuilder: $1799.LatLng.create)
+    ..aOM<$1781.Int32Value>(5, _omitFieldNames ? '' : 'remainingStopCount', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1781.Int32Value>(6, _omitFieldNames ? '' : 'remainingDrivingDistanceMeters', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'estimatedArrivalTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'estimatedTaskCompletionTime', subBuilder: $1776.Timestamp.create)
     ..e<$1639.Task_TaskOutcome>(9, _omitFieldNames ? '' : 'taskOutcome', $pb.PbFieldType.OE, defaultOrMaker: $1639.Task_TaskOutcome.TASK_OUTCOME_UNSPECIFIED, valueOf: $1639.Task_TaskOutcome.valueOf, enumValues: $1639.Task_TaskOutcome.values)
     ..aOM<$1638.LocationInfo>(10, _omitFieldNames ? '' : 'plannedLocation', subBuilder: $1638.LocationInfo.create)
     ..e<$1639.Task_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $1639.Task_State.STATE_UNSPECIFIED, valueOf: $1639.Task_State.valueOf, enumValues: $1639.Task_State.values)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'taskOutcomeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4798.TimeWindow>(13, _omitFieldNames ? '' : 'targetTimeWindow', subBuilder: $4798.TimeWindow.create)
-    ..pc<$4798.TaskAttribute>(14, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4798.TaskAttribute.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'taskOutcomeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4800.TimeWindow>(13, _omitFieldNames ? '' : 'targetTimeWindow', subBuilder: $4800.TimeWindow.create)
+    ..pc<$4800.TaskAttribute>(14, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4800.TaskAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -158,71 +158,71 @@ class TaskTrackingInfo extends $pb.GeneratedMessage {
 
   /// The vehicle's last location.
   @$pb.TagNumber(3)
-  $4798.DeliveryVehicleLocation get vehicleLocation => $_getN(2);
+  $4800.DeliveryVehicleLocation get vehicleLocation => $_getN(2);
   @$pb.TagNumber(3)
-  set vehicleLocation($4798.DeliveryVehicleLocation v) { setField(3, v); }
+  set vehicleLocation($4800.DeliveryVehicleLocation v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasVehicleLocation() => $_has(2);
   @$pb.TagNumber(3)
   void clearVehicleLocation() => clearField(3);
   @$pb.TagNumber(3)
-  $4798.DeliveryVehicleLocation ensureVehicleLocation() => $_ensure(2);
+  $4800.DeliveryVehicleLocation ensureVehicleLocation() => $_ensure(2);
 
   /// A list of points which when connected forms a polyline of the vehicle's
   /// expected route to the location of this task.
   @$pb.TagNumber(4)
-  $core.List<$1798.LatLng> get routePolylinePoints => $_getList(3);
+  $core.List<$1799.LatLng> get routePolylinePoints => $_getList(3);
 
   /// Indicates the number of stops the vehicle remaining until the task stop is
   /// reached, including the task stop. For example, if the vehicle's next stop
   /// is the task stop, the value will be 1.
   @$pb.TagNumber(5)
-  $1780.Int32Value get remainingStopCount => $_getN(4);
+  $1781.Int32Value get remainingStopCount => $_getN(4);
   @$pb.TagNumber(5)
-  set remainingStopCount($1780.Int32Value v) { setField(5, v); }
+  set remainingStopCount($1781.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRemainingStopCount() => $_has(4);
   @$pb.TagNumber(5)
   void clearRemainingStopCount() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int32Value ensureRemainingStopCount() => $_ensure(4);
+  $1781.Int32Value ensureRemainingStopCount() => $_ensure(4);
 
   /// The total remaining distance in meters to the `VehicleStop` of interest.
   @$pb.TagNumber(6)
-  $1780.Int32Value get remainingDrivingDistanceMeters => $_getN(5);
+  $1781.Int32Value get remainingDrivingDistanceMeters => $_getN(5);
   @$pb.TagNumber(6)
-  set remainingDrivingDistanceMeters($1780.Int32Value v) { setField(6, v); }
+  set remainingDrivingDistanceMeters($1781.Int32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRemainingDrivingDistanceMeters() => $_has(5);
   @$pb.TagNumber(6)
   void clearRemainingDrivingDistanceMeters() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int32Value ensureRemainingDrivingDistanceMeters() => $_ensure(5);
+  $1781.Int32Value ensureRemainingDrivingDistanceMeters() => $_ensure(5);
 
   /// The timestamp that indicates the estimated arrival time to the stop
   /// location.
   @$pb.TagNumber(7)
-  $1775.Timestamp get estimatedArrivalTime => $_getN(6);
+  $1776.Timestamp get estimatedArrivalTime => $_getN(6);
   @$pb.TagNumber(7)
-  set estimatedArrivalTime($1775.Timestamp v) { setField(7, v); }
+  set estimatedArrivalTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEstimatedArrivalTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEstimatedArrivalTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureEstimatedArrivalTime() => $_ensure(6);
+  $1776.Timestamp ensureEstimatedArrivalTime() => $_ensure(6);
 
   /// The timestamp that indicates the estimated completion time of a Task.
   @$pb.TagNumber(8)
-  $1775.Timestamp get estimatedTaskCompletionTime => $_getN(7);
+  $1776.Timestamp get estimatedTaskCompletionTime => $_getN(7);
   @$pb.TagNumber(8)
-  set estimatedTaskCompletionTime($1775.Timestamp v) { setField(8, v); }
+  set estimatedTaskCompletionTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEstimatedTaskCompletionTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearEstimatedTaskCompletionTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEstimatedTaskCompletionTime() => $_ensure(7);
+  $1776.Timestamp ensureEstimatedTaskCompletionTime() => $_ensure(7);
 
   /// The outcome of attempting to execute a Task.
   @$pb.TagNumber(9)
@@ -259,31 +259,31 @@ class TaskTrackingInfo extends $pb.GeneratedMessage {
   /// The timestamp that indicates when the Task's outcome was set by the
   /// provider.
   @$pb.TagNumber(12)
-  $1775.Timestamp get taskOutcomeTime => $_getN(11);
+  $1776.Timestamp get taskOutcomeTime => $_getN(11);
   @$pb.TagNumber(12)
-  set taskOutcomeTime($1775.Timestamp v) { setField(12, v); }
+  set taskOutcomeTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasTaskOutcomeTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearTaskOutcomeTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureTaskOutcomeTime() => $_ensure(11);
+  $1776.Timestamp ensureTaskOutcomeTime() => $_ensure(11);
 
   /// The time window during which the task should be completed.
   @$pb.TagNumber(13)
-  $4798.TimeWindow get targetTimeWindow => $_getN(12);
+  $4800.TimeWindow get targetTimeWindow => $_getN(12);
   @$pb.TagNumber(13)
-  set targetTimeWindow($4798.TimeWindow v) { setField(13, v); }
+  set targetTimeWindow($4800.TimeWindow v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasTargetTimeWindow() => $_has(12);
   @$pb.TagNumber(13)
   void clearTargetTimeWindow() => clearField(13);
   @$pb.TagNumber(13)
-  $4798.TimeWindow ensureTargetTimeWindow() => $_ensure(12);
+  $4800.TimeWindow ensureTargetTimeWindow() => $_ensure(12);
 
   /// The custom attributes set on the task.
   @$pb.TagNumber(14)
-  $core.List<$4798.TaskAttribute> get attributes => $_getList(13);
+  $core.List<$4800.TaskAttribute> get attributes => $_getList(13);
 }
 
 

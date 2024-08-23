@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/linked_product_type.pbenum.dart' as $3772;
+import '../enums/linked_product_type.pbenum.dart' as $3773;
 
 enum ProductLink_LinkedProduct {
   dataPartner, 
@@ -30,7 +30,7 @@ class ProductLink extends $pb.GeneratedMessage {
   factory ProductLink({
     $core.String? resourceName,
     $fixnum.Int64? productLinkId,
-    $3772.LinkedProductTypeEnum_LinkedProductType? type,
+    $3773.LinkedProductTypeEnum_LinkedProductType? type,
     DataPartnerIdentifier? dataPartner,
     GoogleAdsIdentifier? googleAds,
     MerchantCenterIdentifier? merchantCenter,
@@ -75,7 +75,7 @@ class ProductLink extends $pb.GeneratedMessage {
     ..oo(0, [4, 5, 12, 13])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'productLinkId')
-    ..e<$3772.LinkedProductTypeEnum_LinkedProductType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3772.LinkedProductTypeEnum_LinkedProductType.UNSPECIFIED, valueOf: $3772.LinkedProductTypeEnum_LinkedProductType.valueOf, enumValues: $3772.LinkedProductTypeEnum_LinkedProductType.values)
+    ..e<$3773.LinkedProductTypeEnum_LinkedProductType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3773.LinkedProductTypeEnum_LinkedProductType.UNSPECIFIED, valueOf: $3773.LinkedProductTypeEnum_LinkedProductType.valueOf, enumValues: $3773.LinkedProductTypeEnum_LinkedProductType.values)
     ..aOM<DataPartnerIdentifier>(4, _omitFieldNames ? '' : 'dataPartner', subBuilder: DataPartnerIdentifier.create)
     ..aOM<GoogleAdsIdentifier>(5, _omitFieldNames ? '' : 'googleAds', subBuilder: GoogleAdsIdentifier.create)
     ..aOM<MerchantCenterIdentifier>(12, _omitFieldNames ? '' : 'merchantCenter', subBuilder: MerchantCenterIdentifier.create)
@@ -133,9 +133,9 @@ class ProductLink extends $pb.GeneratedMessage {
 
   /// Output only. The type of the linked product.
   @$pb.TagNumber(3)
-  $3772.LinkedProductTypeEnum_LinkedProductType get type => $_getN(2);
+  $3773.LinkedProductTypeEnum_LinkedProductType get type => $_getN(2);
   @$pb.TagNumber(3)
-  set type($3772.LinkedProductTypeEnum_LinkedProductType v) { setField(3, v); }
+  set type($3773.LinkedProductTypeEnum_LinkedProductType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)

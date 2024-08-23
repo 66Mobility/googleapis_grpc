@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 
 /// Options for configuring hive partitioning detect.
 class HivePartitioningOptions extends $pb.GeneratedMessage {
   factory HivePartitioningOptions({
     $core.String? mode,
     $core.String? sourceUriPrefix,
-    $1780.BoolValue? requirePartitionFilter,
+    $1781.BoolValue? requirePartitionFilter,
     $core.Iterable<$core.String>? fields,
   }) {
     final $result = create();
@@ -45,7 +45,7 @@ class HivePartitioningOptions extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HivePartitioningOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'mode')
     ..aOS(2, _omitFieldNames ? '' : 'sourceUriPrefix')
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'requirePartitionFilter', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'requirePartitionFilter', subBuilder: $1781.BoolValue.create)
     ..pPS(4, _omitFieldNames ? '' : 'fields')
     ..hasRequiredFields = false
   ;
@@ -134,15 +134,15 @@ class HivePartitioningOptions extends $pb.GeneratedMessage {
   ///  Hive-partitioned loads with require_partition_filter explicitly set to
   ///  true will fail.
   @$pb.TagNumber(3)
-  $1780.BoolValue get requirePartitionFilter => $_getN(2);
+  $1781.BoolValue get requirePartitionFilter => $_getN(2);
   @$pb.TagNumber(3)
-  set requirePartitionFilter($1780.BoolValue v) { setField(3, v); }
+  set requirePartitionFilter($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRequirePartitionFilter() => $_has(2);
   @$pb.TagNumber(3)
   void clearRequirePartitionFilter() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureRequirePartitionFilter() => $_ensure(2);
+  $1781.BoolValue ensureRequirePartitionFilter() => $_ensure(2);
 
   /// Output only. For permanent external tables, this field is populated with
   /// the hive partition keys in the order they were inferred. The types of the

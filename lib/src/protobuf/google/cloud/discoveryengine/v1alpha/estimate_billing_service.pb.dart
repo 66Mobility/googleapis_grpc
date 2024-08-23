@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'import_config.pb.dart' as $955;
 
 /// URI patterns that we use to crawl.
@@ -412,7 +412,7 @@ class EstimateDataSizeResponse extends $pb.GeneratedMessage {
 /// returned by the google.longrunning.Operation.metadata field.
 class EstimateDataSizeMetadata extends $pb.GeneratedMessage {
   factory EstimateDataSizeMetadata({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -425,7 +425,7 @@ class EstimateDataSizeMetadata extends $pb.GeneratedMessage {
   factory EstimateDataSizeMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EstimateDataSizeMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -452,15 +452,15 @@ class EstimateDataSizeMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 }
 
 

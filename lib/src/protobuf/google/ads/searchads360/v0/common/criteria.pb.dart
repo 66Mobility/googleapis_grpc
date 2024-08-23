@@ -14,21 +14,21 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/age_range_type.pbenum.dart' as $3977;
-import '../enums/day_of_week.pbenum.dart' as $3976;
-import '../enums/device.pbenum.dart' as $3973;
-import '../enums/gender_type.pbenum.dart' as $3978;
-import '../enums/keyword_match_type.pbenum.dart' as $3972;
-import '../enums/listing_group_type.pbenum.dart' as $3974;
-import '../enums/location_group_radius_units.pbenum.dart' as $3981;
-import '../enums/minute_of_hour.pbenum.dart' as $3975;
-import '../enums/webpage_condition_operand.pbenum.dart' as $3979;
-import '../enums/webpage_condition_operator.pbenum.dart' as $3980;
+import '../enums/age_range_type.pbenum.dart' as $3978;
+import '../enums/day_of_week.pbenum.dart' as $3977;
+import '../enums/device.pbenum.dart' as $3974;
+import '../enums/gender_type.pbenum.dart' as $3979;
+import '../enums/keyword_match_type.pbenum.dart' as $3973;
+import '../enums/listing_group_type.pbenum.dart' as $3975;
+import '../enums/location_group_radius_units.pbenum.dart' as $3982;
+import '../enums/minute_of_hour.pbenum.dart' as $3976;
+import '../enums/webpage_condition_operand.pbenum.dart' as $3980;
+import '../enums/webpage_condition_operator.pbenum.dart' as $3981;
 
 /// A keyword criterion.
 class KeywordInfo extends $pb.GeneratedMessage {
   factory KeywordInfo({
-    $3972.KeywordMatchTypeEnum_KeywordMatchType? matchType,
+    $3973.KeywordMatchTypeEnum_KeywordMatchType? matchType,
     $core.String? text,
   }) {
     final $result = create();
@@ -45,7 +45,7 @@ class KeywordInfo extends $pb.GeneratedMessage {
   factory KeywordInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3972.KeywordMatchTypeEnum_KeywordMatchType>(2, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $3972.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $3972.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $3972.KeywordMatchTypeEnum_KeywordMatchType.values)
+    ..e<$3973.KeywordMatchTypeEnum_KeywordMatchType>(2, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $3973.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $3973.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $3973.KeywordMatchTypeEnum_KeywordMatchType.values)
     ..aOS(3, _omitFieldNames ? '' : 'text')
     ..hasRequiredFields = false
   ;
@@ -73,9 +73,9 @@ class KeywordInfo extends $pb.GeneratedMessage {
 
   /// The match type of the keyword.
   @$pb.TagNumber(2)
-  $3972.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(0);
+  $3973.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(0);
   @$pb.TagNumber(2)
-  set matchType($3972.KeywordMatchTypeEnum_KeywordMatchType v) { setField(2, v); }
+  set matchType($3973.KeywordMatchTypeEnum_KeywordMatchType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMatchType() => $_has(0);
   @$pb.TagNumber(2)
@@ -147,7 +147,7 @@ class LocationInfo extends $pb.GeneratedMessage {
 /// A device criterion.
 class DeviceInfo extends $pb.GeneratedMessage {
   factory DeviceInfo({
-    $3973.DeviceEnum_Device? type,
+    $3974.DeviceEnum_Device? type,
   }) {
     final $result = create();
     if (type != null) {
@@ -160,7 +160,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
   factory DeviceInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3973.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3973.DeviceEnum_Device.UNSPECIFIED, valueOf: $3973.DeviceEnum_Device.valueOf, enumValues: $3973.DeviceEnum_Device.values)
+    ..e<$3974.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3974.DeviceEnum_Device.UNSPECIFIED, valueOf: $3974.DeviceEnum_Device.valueOf, enumValues: $3974.DeviceEnum_Device.values)
     ..hasRequiredFields = false
   ;
 
@@ -187,9 +187,9 @@ class DeviceInfo extends $pb.GeneratedMessage {
 
   /// Type of the device.
   @$pb.TagNumber(1)
-  $3973.DeviceEnum_Device get type => $_getN(0);
+  $3974.DeviceEnum_Device get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($3973.DeviceEnum_Device v) { setField(1, v); }
+  set type($3974.DeviceEnum_Device v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -199,7 +199,7 @@ class DeviceInfo extends $pb.GeneratedMessage {
 /// A listing group criterion.
 class ListingGroupInfo extends $pb.GeneratedMessage {
   factory ListingGroupInfo({
-    $3974.ListingGroupTypeEnum_ListingGroupType? type,
+    $3975.ListingGroupTypeEnum_ListingGroupType? type,
   }) {
     final $result = create();
     if (type != null) {
@@ -212,7 +212,7 @@ class ListingGroupInfo extends $pb.GeneratedMessage {
   factory ListingGroupInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListingGroupInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3974.ListingGroupTypeEnum_ListingGroupType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3974.ListingGroupTypeEnum_ListingGroupType.UNSPECIFIED, valueOf: $3974.ListingGroupTypeEnum_ListingGroupType.valueOf, enumValues: $3974.ListingGroupTypeEnum_ListingGroupType.values)
+    ..e<$3975.ListingGroupTypeEnum_ListingGroupType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3975.ListingGroupTypeEnum_ListingGroupType.UNSPECIFIED, valueOf: $3975.ListingGroupTypeEnum_ListingGroupType.valueOf, enumValues: $3975.ListingGroupTypeEnum_ListingGroupType.values)
     ..hasRequiredFields = false
   ;
 
@@ -239,9 +239,9 @@ class ListingGroupInfo extends $pb.GeneratedMessage {
 
   /// Type of the listing group.
   @$pb.TagNumber(1)
-  $3974.ListingGroupTypeEnum_ListingGroupType get type => $_getN(0);
+  $3975.ListingGroupTypeEnum_ListingGroupType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($3974.ListingGroupTypeEnum_ListingGroupType v) { setField(1, v); }
+  set type($3975.ListingGroupTypeEnum_ListingGroupType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -256,9 +256,9 @@ class ListingGroupInfo extends $pb.GeneratedMessage {
 ///  No more than six AdSchedules can be added for the same day.
 class AdScheduleInfo extends $pb.GeneratedMessage {
   factory AdScheduleInfo({
-    $3975.MinuteOfHourEnum_MinuteOfHour? startMinute,
-    $3975.MinuteOfHourEnum_MinuteOfHour? endMinute,
-    $3976.DayOfWeekEnum_DayOfWeek? dayOfWeek,
+    $3976.MinuteOfHourEnum_MinuteOfHour? startMinute,
+    $3976.MinuteOfHourEnum_MinuteOfHour? endMinute,
+    $3977.DayOfWeekEnum_DayOfWeek? dayOfWeek,
     $core.int? startHour,
     $core.int? endHour,
   }) {
@@ -285,9 +285,9 @@ class AdScheduleInfo extends $pb.GeneratedMessage {
   factory AdScheduleInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdScheduleInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3975.MinuteOfHourEnum_MinuteOfHour>(1, _omitFieldNames ? '' : 'startMinute', $pb.PbFieldType.OE, defaultOrMaker: $3975.MinuteOfHourEnum_MinuteOfHour.UNSPECIFIED, valueOf: $3975.MinuteOfHourEnum_MinuteOfHour.valueOf, enumValues: $3975.MinuteOfHourEnum_MinuteOfHour.values)
-    ..e<$3975.MinuteOfHourEnum_MinuteOfHour>(2, _omitFieldNames ? '' : 'endMinute', $pb.PbFieldType.OE, defaultOrMaker: $3975.MinuteOfHourEnum_MinuteOfHour.UNSPECIFIED, valueOf: $3975.MinuteOfHourEnum_MinuteOfHour.valueOf, enumValues: $3975.MinuteOfHourEnum_MinuteOfHour.values)
-    ..e<$3976.DayOfWeekEnum_DayOfWeek>(5, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $3976.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $3976.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $3976.DayOfWeekEnum_DayOfWeek.values)
+    ..e<$3976.MinuteOfHourEnum_MinuteOfHour>(1, _omitFieldNames ? '' : 'startMinute', $pb.PbFieldType.OE, defaultOrMaker: $3976.MinuteOfHourEnum_MinuteOfHour.UNSPECIFIED, valueOf: $3976.MinuteOfHourEnum_MinuteOfHour.valueOf, enumValues: $3976.MinuteOfHourEnum_MinuteOfHour.values)
+    ..e<$3976.MinuteOfHourEnum_MinuteOfHour>(2, _omitFieldNames ? '' : 'endMinute', $pb.PbFieldType.OE, defaultOrMaker: $3976.MinuteOfHourEnum_MinuteOfHour.UNSPECIFIED, valueOf: $3976.MinuteOfHourEnum_MinuteOfHour.valueOf, enumValues: $3976.MinuteOfHourEnum_MinuteOfHour.values)
+    ..e<$3977.DayOfWeekEnum_DayOfWeek>(5, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $3977.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $3977.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $3977.DayOfWeekEnum_DayOfWeek.values)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'startHour', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'endHour', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -319,9 +319,9 @@ class AdScheduleInfo extends $pb.GeneratedMessage {
   ///  This field is required for CREATE operations and is prohibited on UPDATE
   ///  operations.
   @$pb.TagNumber(1)
-  $3975.MinuteOfHourEnum_MinuteOfHour get startMinute => $_getN(0);
+  $3976.MinuteOfHourEnum_MinuteOfHour get startMinute => $_getN(0);
   @$pb.TagNumber(1)
-  set startMinute($3975.MinuteOfHourEnum_MinuteOfHour v) { setField(1, v); }
+  set startMinute($3976.MinuteOfHourEnum_MinuteOfHour v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartMinute() => $_has(0);
   @$pb.TagNumber(1)
@@ -333,9 +333,9 @@ class AdScheduleInfo extends $pb.GeneratedMessage {
   ///  This field is required for CREATE operations and is prohibited on UPDATE
   ///  operations.
   @$pb.TagNumber(2)
-  $3975.MinuteOfHourEnum_MinuteOfHour get endMinute => $_getN(1);
+  $3976.MinuteOfHourEnum_MinuteOfHour get endMinute => $_getN(1);
   @$pb.TagNumber(2)
-  set endMinute($3975.MinuteOfHourEnum_MinuteOfHour v) { setField(2, v); }
+  set endMinute($3976.MinuteOfHourEnum_MinuteOfHour v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndMinute() => $_has(1);
   @$pb.TagNumber(2)
@@ -346,9 +346,9 @@ class AdScheduleInfo extends $pb.GeneratedMessage {
   ///  This field is required for CREATE operations and is prohibited on UPDATE
   ///  operations.
   @$pb.TagNumber(5)
-  $3976.DayOfWeekEnum_DayOfWeek get dayOfWeek => $_getN(2);
+  $3977.DayOfWeekEnum_DayOfWeek get dayOfWeek => $_getN(2);
   @$pb.TagNumber(5)
-  set dayOfWeek($3976.DayOfWeekEnum_DayOfWeek v) { setField(5, v); }
+  set dayOfWeek($3977.DayOfWeekEnum_DayOfWeek v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDayOfWeek() => $_has(2);
   @$pb.TagNumber(5)
@@ -386,7 +386,7 @@ class AdScheduleInfo extends $pb.GeneratedMessage {
 /// An age range criterion.
 class AgeRangeInfo extends $pb.GeneratedMessage {
   factory AgeRangeInfo({
-    $3977.AgeRangeTypeEnum_AgeRangeType? type,
+    $3978.AgeRangeTypeEnum_AgeRangeType? type,
   }) {
     final $result = create();
     if (type != null) {
@@ -399,7 +399,7 @@ class AgeRangeInfo extends $pb.GeneratedMessage {
   factory AgeRangeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgeRangeInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3977.AgeRangeTypeEnum_AgeRangeType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3977.AgeRangeTypeEnum_AgeRangeType.UNSPECIFIED, valueOf: $3977.AgeRangeTypeEnum_AgeRangeType.valueOf, enumValues: $3977.AgeRangeTypeEnum_AgeRangeType.values)
+    ..e<$3978.AgeRangeTypeEnum_AgeRangeType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3978.AgeRangeTypeEnum_AgeRangeType.UNSPECIFIED, valueOf: $3978.AgeRangeTypeEnum_AgeRangeType.valueOf, enumValues: $3978.AgeRangeTypeEnum_AgeRangeType.values)
     ..hasRequiredFields = false
   ;
 
@@ -426,9 +426,9 @@ class AgeRangeInfo extends $pb.GeneratedMessage {
 
   /// Type of the age range.
   @$pb.TagNumber(1)
-  $3977.AgeRangeTypeEnum_AgeRangeType get type => $_getN(0);
+  $3978.AgeRangeTypeEnum_AgeRangeType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($3977.AgeRangeTypeEnum_AgeRangeType v) { setField(1, v); }
+  set type($3978.AgeRangeTypeEnum_AgeRangeType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -438,7 +438,7 @@ class AgeRangeInfo extends $pb.GeneratedMessage {
 /// A gender criterion.
 class GenderInfo extends $pb.GeneratedMessage {
   factory GenderInfo({
-    $3978.GenderTypeEnum_GenderType? type,
+    $3979.GenderTypeEnum_GenderType? type,
   }) {
     final $result = create();
     if (type != null) {
@@ -451,7 +451,7 @@ class GenderInfo extends $pb.GeneratedMessage {
   factory GenderInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenderInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3978.GenderTypeEnum_GenderType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3978.GenderTypeEnum_GenderType.UNSPECIFIED, valueOf: $3978.GenderTypeEnum_GenderType.valueOf, enumValues: $3978.GenderTypeEnum_GenderType.values)
+    ..e<$3979.GenderTypeEnum_GenderType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3979.GenderTypeEnum_GenderType.UNSPECIFIED, valueOf: $3979.GenderTypeEnum_GenderType.valueOf, enumValues: $3979.GenderTypeEnum_GenderType.values)
     ..hasRequiredFields = false
   ;
 
@@ -478,9 +478,9 @@ class GenderInfo extends $pb.GeneratedMessage {
 
   /// Type of the gender.
   @$pb.TagNumber(1)
-  $3978.GenderTypeEnum_GenderType get type => $_getN(0);
+  $3979.GenderTypeEnum_GenderType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($3978.GenderTypeEnum_GenderType v) { setField(1, v); }
+  set type($3979.GenderTypeEnum_GenderType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -686,8 +686,8 @@ class WebpageInfo extends $pb.GeneratedMessage {
 /// Logical expression for targeting webpages of an advertiser's website.
 class WebpageConditionInfo extends $pb.GeneratedMessage {
   factory WebpageConditionInfo({
-    $3979.WebpageConditionOperandEnum_WebpageConditionOperand? operand,
-    $3980.WebpageConditionOperatorEnum_WebpageConditionOperator? operator,
+    $3980.WebpageConditionOperandEnum_WebpageConditionOperand? operand,
+    $3981.WebpageConditionOperatorEnum_WebpageConditionOperator? operator,
     $core.String? argument,
   }) {
     final $result = create();
@@ -707,8 +707,8 @@ class WebpageConditionInfo extends $pb.GeneratedMessage {
   factory WebpageConditionInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WebpageConditionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3979.WebpageConditionOperandEnum_WebpageConditionOperand>(1, _omitFieldNames ? '' : 'operand', $pb.PbFieldType.OE, defaultOrMaker: $3979.WebpageConditionOperandEnum_WebpageConditionOperand.UNSPECIFIED, valueOf: $3979.WebpageConditionOperandEnum_WebpageConditionOperand.valueOf, enumValues: $3979.WebpageConditionOperandEnum_WebpageConditionOperand.values)
-    ..e<$3980.WebpageConditionOperatorEnum_WebpageConditionOperator>(2, _omitFieldNames ? '' : 'operator', $pb.PbFieldType.OE, defaultOrMaker: $3980.WebpageConditionOperatorEnum_WebpageConditionOperator.UNSPECIFIED, valueOf: $3980.WebpageConditionOperatorEnum_WebpageConditionOperator.valueOf, enumValues: $3980.WebpageConditionOperatorEnum_WebpageConditionOperator.values)
+    ..e<$3980.WebpageConditionOperandEnum_WebpageConditionOperand>(1, _omitFieldNames ? '' : 'operand', $pb.PbFieldType.OE, defaultOrMaker: $3980.WebpageConditionOperandEnum_WebpageConditionOperand.UNSPECIFIED, valueOf: $3980.WebpageConditionOperandEnum_WebpageConditionOperand.valueOf, enumValues: $3980.WebpageConditionOperandEnum_WebpageConditionOperand.values)
+    ..e<$3981.WebpageConditionOperatorEnum_WebpageConditionOperator>(2, _omitFieldNames ? '' : 'operator', $pb.PbFieldType.OE, defaultOrMaker: $3981.WebpageConditionOperatorEnum_WebpageConditionOperator.UNSPECIFIED, valueOf: $3981.WebpageConditionOperatorEnum_WebpageConditionOperator.valueOf, enumValues: $3981.WebpageConditionOperatorEnum_WebpageConditionOperator.values)
     ..aOS(4, _omitFieldNames ? '' : 'argument')
     ..hasRequiredFields = false
   ;
@@ -736,9 +736,9 @@ class WebpageConditionInfo extends $pb.GeneratedMessage {
 
   /// Operand of webpage targeting condition.
   @$pb.TagNumber(1)
-  $3979.WebpageConditionOperandEnum_WebpageConditionOperand get operand => $_getN(0);
+  $3980.WebpageConditionOperandEnum_WebpageConditionOperand get operand => $_getN(0);
   @$pb.TagNumber(1)
-  set operand($3979.WebpageConditionOperandEnum_WebpageConditionOperand v) { setField(1, v); }
+  set operand($3980.WebpageConditionOperandEnum_WebpageConditionOperand v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOperand() => $_has(0);
   @$pb.TagNumber(1)
@@ -746,9 +746,9 @@ class WebpageConditionInfo extends $pb.GeneratedMessage {
 
   /// Operator of webpage targeting condition.
   @$pb.TagNumber(2)
-  $3980.WebpageConditionOperatorEnum_WebpageConditionOperator get operator => $_getN(1);
+  $3981.WebpageConditionOperatorEnum_WebpageConditionOperator get operator => $_getN(1);
   @$pb.TagNumber(2)
-  set operator($3980.WebpageConditionOperatorEnum_WebpageConditionOperator v) { setField(2, v); }
+  set operator($3981.WebpageConditionOperatorEnum_WebpageConditionOperator v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOperator() => $_has(1);
   @$pb.TagNumber(2)
@@ -768,7 +768,7 @@ class WebpageConditionInfo extends $pb.GeneratedMessage {
 /// A radius around a list of locations specified through a feed.
 class LocationGroupInfo extends $pb.GeneratedMessage {
   factory LocationGroupInfo({
-    $3981.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits? radiusUnits,
+    $3982.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits? radiusUnits,
     $core.Iterable<$core.String>? geoTargetConstants,
     $fixnum.Int64? radius,
     $core.Iterable<$core.String>? feedItemSets,
@@ -793,7 +793,7 @@ class LocationGroupInfo extends $pb.GeneratedMessage {
   factory LocationGroupInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationGroupInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3981.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits>(4, _omitFieldNames ? '' : 'radiusUnits', $pb.PbFieldType.OE, defaultOrMaker: $3981.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits.UNSPECIFIED, valueOf: $3981.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits.valueOf, enumValues: $3981.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits.values)
+    ..e<$3982.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits>(4, _omitFieldNames ? '' : 'radiusUnits', $pb.PbFieldType.OE, defaultOrMaker: $3982.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits.UNSPECIFIED, valueOf: $3982.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits.valueOf, enumValues: $3982.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits.values)
     ..pPS(6, _omitFieldNames ? '' : 'geoTargetConstants')
     ..aInt64(7, _omitFieldNames ? '' : 'radius')
     ..pPS(8, _omitFieldNames ? '' : 'feedItemSets')
@@ -825,9 +825,9 @@ class LocationGroupInfo extends $pb.GeneratedMessage {
   /// constants. Milli miles and meters are supported for feed item sets.
   /// This is required and must be set in CREATE operations.
   @$pb.TagNumber(4)
-  $3981.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits get radiusUnits => $_getN(0);
+  $3982.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits get radiusUnits => $_getN(0);
   @$pb.TagNumber(4)
-  set radiusUnits($3981.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits v) { setField(4, v); }
+  set radiusUnits($3982.LocationGroupRadiusUnitsEnum_LocationGroupRadiusUnits v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRadiusUnits() => $_has(0);
   @$pb.TagNumber(4)

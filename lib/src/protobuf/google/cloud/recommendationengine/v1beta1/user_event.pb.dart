@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'catalog.pb.dart' as $1224;
 import 'catalog.pbenum.dart' as $1224;
-import 'common.pb.dart' as $4592;
+import 'common.pb.dart' as $4594;
 import 'user_event.pbenum.dart';
 
 export 'user_event.pbenum.dart';
@@ -29,7 +29,7 @@ class UserEvent extends $pb.GeneratedMessage {
     UserInfo? userInfo,
     EventDetail? eventDetail,
     ProductEventDetail? productEventDetail,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     UserEvent_EventSource? eventSource,
   }) {
     final $result = create();
@@ -62,7 +62,7 @@ class UserEvent extends $pb.GeneratedMessage {
     ..aOM<UserInfo>(2, _omitFieldNames ? '' : 'userInfo', subBuilder: UserInfo.create)
     ..aOM<EventDetail>(3, _omitFieldNames ? '' : 'eventDetail', subBuilder: EventDetail.create)
     ..aOM<ProductEventDetail>(4, _omitFieldNames ? '' : 'productEventDetail', subBuilder: ProductEventDetail.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..e<UserEvent_EventSource>(6, _omitFieldNames ? '' : 'eventSource', $pb.PbFieldType.OE, defaultOrMaker: UserEvent_EventSource.EVENT_SOURCE_UNSPECIFIED, valueOf: UserEvent_EventSource.valueOf, enumValues: UserEvent_EventSource.values)
     ..hasRequiredFields = false
   ;
@@ -178,15 +178,15 @@ class UserEvent extends $pb.GeneratedMessage {
   /// Optional. Only required for ImportUserEvents method. Timestamp of user
   /// event created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get eventTime => $_getN(4);
+  $1776.Timestamp get eventTime => $_getN(4);
   @$pb.TagNumber(5)
-  set eventTime($1775.Timestamp v) { setField(5, v); }
+  set eventTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEventTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEventTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEventTime() => $_ensure(4);
+  $1776.Timestamp ensureEventTime() => $_ensure(4);
 
   /// Optional. This field should *not* be set when using JavaScript pixel
   /// or the Recommendations AI Tag. Defaults to `EVENT_SOURCE_UNSPECIFIED`.
@@ -338,7 +338,7 @@ class EventDetail extends $pb.GeneratedMessage {
     $core.String? pageViewId,
     $core.Iterable<$core.String>? experimentIds,
     $core.String? recommendationToken,
-    $4592.FeatureMap? eventAttributes,
+    $4594.FeatureMap? eventAttributes,
     $core.String? referrerUri,
   }) {
     final $result = create();
@@ -371,7 +371,7 @@ class EventDetail extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'pageViewId')
     ..pPS(3, _omitFieldNames ? '' : 'experimentIds')
     ..aOS(4, _omitFieldNames ? '' : 'recommendationToken')
-    ..aOM<$4592.FeatureMap>(5, _omitFieldNames ? '' : 'eventAttributes', subBuilder: $4592.FeatureMap.create)
+    ..aOM<$4594.FeatureMap>(5, _omitFieldNames ? '' : 'eventAttributes', subBuilder: $4594.FeatureMap.create)
     ..aOS(6, _omitFieldNames ? '' : 'referrerUri')
     ..hasRequiredFields = false
   ;
@@ -464,15 +464,15 @@ class EventDetail extends $pb.GeneratedMessage {
   ///  at the site by coming to the site directly, or coming through Google
   ///  search, and etc.
   @$pb.TagNumber(5)
-  $4592.FeatureMap get eventAttributes => $_getN(4);
+  $4594.FeatureMap get eventAttributes => $_getN(4);
   @$pb.TagNumber(5)
-  set eventAttributes($4592.FeatureMap v) { setField(5, v); }
+  set eventAttributes($4594.FeatureMap v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEventAttributes() => $_has(4);
   @$pb.TagNumber(5)
   void clearEventAttributes() => clearField(5);
   @$pb.TagNumber(5)
-  $4592.FeatureMap ensureEventAttributes() => $_ensure(4);
+  $4594.FeatureMap ensureEventAttributes() => $_ensure(4);
 
   /// Optional. The referrer url of the current page. When using
   /// the JavaScript pixel, this value is filled in automatically.
@@ -765,7 +765,7 @@ class ProductDetail extends $pb.GeneratedMessage {
     $1224.ProductCatalogItem_StockState? stockState,
     $core.int? quantity,
     $core.int? availableQuantity,
-    $4592.FeatureMap? itemAttributes,
+    $4594.FeatureMap? itemAttributes,
   }) {
     final $result = create();
     if (id != null) {
@@ -806,7 +806,7 @@ class ProductDetail extends $pb.GeneratedMessage {
     ..e<$1224.ProductCatalogItem_StockState>(5, _omitFieldNames ? '' : 'stockState', $pb.PbFieldType.OE, defaultOrMaker: $1224.ProductCatalogItem_StockState.STOCK_STATE_UNSPECIFIED, valueOf: $1224.ProductCatalogItem_StockState.valueOf, enumValues: $1224.ProductCatalogItem_StockState.values)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'quantity', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'availableQuantity', $pb.PbFieldType.O3)
-    ..aOM<$4592.FeatureMap>(8, _omitFieldNames ? '' : 'itemAttributes', subBuilder: $4592.FeatureMap.create)
+    ..aOM<$4594.FeatureMap>(8, _omitFieldNames ? '' : 'itemAttributes', subBuilder: $4594.FeatureMap.create)
     ..hasRequiredFields = false
   ;
 
@@ -918,15 +918,15 @@ class ProductDetail extends $pb.GeneratedMessage {
 
   /// Optional. Extra features associated with a product in the user event.
   @$pb.TagNumber(8)
-  $4592.FeatureMap get itemAttributes => $_getN(7);
+  $4594.FeatureMap get itemAttributes => $_getN(7);
   @$pb.TagNumber(8)
-  set itemAttributes($4592.FeatureMap v) { setField(8, v); }
+  set itemAttributes($4594.FeatureMap v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasItemAttributes() => $_has(7);
   @$pb.TagNumber(8)
   void clearItemAttributes() => clearField(8);
   @$pb.TagNumber(8)
-  $4592.FeatureMap ensureItemAttributes() => $_ensure(7);
+  $4594.FeatureMap ensureItemAttributes() => $_ensure(7);
 }
 
 

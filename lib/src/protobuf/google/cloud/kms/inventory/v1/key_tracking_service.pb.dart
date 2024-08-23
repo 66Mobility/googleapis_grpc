@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Request message for
 /// [KeyTrackingService.GetProtectedResourcesSummary][google.cloud.kms.inventory.v1.KeyTrackingService.GetProtectedResourcesSummary].
@@ -387,7 +387,7 @@ class ProtectedResource extends $pb.GeneratedMessage {
     $core.String? location,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? cryptoKeyVersion,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? cloudProduct,
     $core.String? projectId,
     $core.Iterable<$core.String>? cryptoKeyVersions,
@@ -436,7 +436,7 @@ class ProtectedResource extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'location')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'ProtectedResource.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.kms.inventory.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'cryptoKeyVersion')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'cloudProduct')
     ..aOS(9, _omitFieldNames ? '' : 'projectId')
     ..pPS(10, _omitFieldNames ? '' : 'cryptoKeyVersions')
@@ -530,15 +530,15 @@ class ProtectedResource extends $pb.GeneratedMessage {
   /// Output only. The time at which this resource was created. The granularity
   /// is in seconds. Timestamp.nanos will always be 0.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// The Cloud product that owns the resource.
   /// Example: `compute`

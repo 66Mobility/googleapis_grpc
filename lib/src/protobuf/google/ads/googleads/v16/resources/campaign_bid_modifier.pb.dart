@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $2570;
+import '../common/criteria.pb.dart' as $2571;
 
 enum CampaignBidModifier_Criterion {
   interactionType, 
@@ -25,7 +25,7 @@ enum CampaignBidModifier_Criterion {
 class CampaignBidModifier extends $pb.GeneratedMessage {
   factory CampaignBidModifier({
     $core.String? resourceName,
-    $2570.InteractionTypeInfo? interactionType,
+    $2571.InteractionTypeInfo? interactionType,
     $core.String? campaign,
     $fixnum.Int64? criterionId,
     $core.double? bidModifier,
@@ -59,7 +59,7 @@ class CampaignBidModifier extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignBidModifier', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2570.InteractionTypeInfo>(5, _omitFieldNames ? '' : 'interactionType', subBuilder: $2570.InteractionTypeInfo.create)
+    ..aOM<$2571.InteractionTypeInfo>(5, _omitFieldNames ? '' : 'interactionType', subBuilder: $2571.InteractionTypeInfo.create)
     ..aOS(6, _omitFieldNames ? '' : 'campaign')
     ..aInt64(7, _omitFieldNames ? '' : 'criterionId')
     ..a<$core.double>(8, _omitFieldNames ? '' : 'bidModifier', $pb.PbFieldType.OD)
@@ -106,15 +106,15 @@ class CampaignBidModifier extends $pb.GeneratedMessage {
   /// Immutable. Criterion for interaction type. Only supported for search
   /// campaigns.
   @$pb.TagNumber(5)
-  $2570.InteractionTypeInfo get interactionType => $_getN(1);
+  $2571.InteractionTypeInfo get interactionType => $_getN(1);
   @$pb.TagNumber(5)
-  set interactionType($2570.InteractionTypeInfo v) { setField(5, v); }
+  set interactionType($2571.InteractionTypeInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInteractionType() => $_has(1);
   @$pb.TagNumber(5)
   void clearInteractionType() => clearField(5);
   @$pb.TagNumber(5)
-  $2570.InteractionTypeInfo ensureInteractionType() => $_ensure(1);
+  $2571.InteractionTypeInfo ensureInteractionType() => $_ensure(1);
 
   /// Output only. The campaign to which this criterion belongs.
   @$pb.TagNumber(6)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../protobuf/struct.pb.dart' as $1735;
 
 /// Device resource represents an instance of enterprise managed device in the
 /// property.
@@ -21,7 +21,7 @@ class Device extends $pb.GeneratedMessage {
   factory Device({
     $core.String? name,
     $core.String? type,
-    $1734.Struct? traits,
+    $1735.Struct? traits,
     $core.Iterable<ParentRelation>? parentRelations,
   }) {
     final $result = create();
@@ -46,7 +46,7 @@ class Device extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Device', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'type')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'traits', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'traits', subBuilder: $1735.Struct.create)
     ..pc<ParentRelation>(5, _omitFieldNames ? '' : 'parentRelations', $pb.PbFieldType.PM, subBuilder: ParentRelation.create)
     ..hasRequiredFields = false
   ;
@@ -98,15 +98,15 @@ class Device extends $pb.GeneratedMessage {
 
   /// Output only. Device traits.
   @$pb.TagNumber(4)
-  $1734.Struct get traits => $_getN(2);
+  $1735.Struct get traits => $_getN(2);
   @$pb.TagNumber(4)
-  set traits($1734.Struct v) { setField(4, v); }
+  set traits($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTraits() => $_has(2);
   @$pb.TagNumber(4)
   void clearTraits() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureTraits() => $_ensure(2);
+  $1735.Struct ensureTraits() => $_ensure(2);
 
   /// Assignee details of the device.
   @$pb.TagNumber(5)

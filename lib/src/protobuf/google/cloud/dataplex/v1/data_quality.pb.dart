@@ -15,7 +15,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'data_quality.pbenum.dart';
-import 'processing.pb.dart' as $4466;
+import 'processing.pb.dart' as $4468;
 
 export 'data_quality.pbenum.dart';
 
@@ -651,7 +651,7 @@ class DataQualityResult extends $pb.GeneratedMessage {
     $core.Iterable<DataQualityRuleResult>? rules,
     $fixnum.Int64? rowCount,
     $core.bool? passed,
-    $4466.ScannedData? scannedData,
+    $4468.ScannedData? scannedData,
     DataQualityResult_PostScanActionsResult? postScanActionsResult,
     $core.double? score,
     $core.Iterable<DataQualityColumnResult>? columns,
@@ -692,7 +692,7 @@ class DataQualityResult extends $pb.GeneratedMessage {
     ..pc<DataQualityRuleResult>(3, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: DataQualityRuleResult.create)
     ..aInt64(4, _omitFieldNames ? '' : 'rowCount')
     ..aOB(5, _omitFieldNames ? '' : 'passed')
-    ..aOM<$4466.ScannedData>(7, _omitFieldNames ? '' : 'scannedData', subBuilder: $4466.ScannedData.create)
+    ..aOM<$4468.ScannedData>(7, _omitFieldNames ? '' : 'scannedData', subBuilder: $4468.ScannedData.create)
     ..aOM<DataQualityResult_PostScanActionsResult>(8, _omitFieldNames ? '' : 'postScanActionsResult', subBuilder: DataQualityResult_PostScanActionsResult.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
     ..pc<DataQualityColumnResult>(10, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM, subBuilder: DataQualityColumnResult.create)
@@ -753,15 +753,15 @@ class DataQualityResult extends $pb.GeneratedMessage {
 
   /// The data scanned for this result.
   @$pb.TagNumber(7)
-  $4466.ScannedData get scannedData => $_getN(4);
+  $4468.ScannedData get scannedData => $_getN(4);
   @$pb.TagNumber(7)
-  set scannedData($4466.ScannedData v) { setField(7, v); }
+  set scannedData($4468.ScannedData v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasScannedData() => $_has(4);
   @$pb.TagNumber(7)
   void clearScannedData() => clearField(7);
   @$pb.TagNumber(7)
-  $4466.ScannedData ensureScannedData() => $_ensure(4);
+  $4468.ScannedData ensureScannedData() => $_ensure(4);
 
   /// Output only. The result of post scan actions.
   @$pb.TagNumber(8)

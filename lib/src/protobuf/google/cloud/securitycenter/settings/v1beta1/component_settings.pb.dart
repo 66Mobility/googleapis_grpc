@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'component_settings.pbenum.dart';
 
 export 'component_settings.pbenum.dart';
@@ -87,7 +87,7 @@ class ComponentSettings extends $pb.GeneratedMessage {
     $core.String? projectServiceAccount,
     $core.Map<$core.String, ComponentSettings_DetectorSettings>? detectorSettings,
     $core.String? etag,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     WebSecurityScanner? webSecurityScannerSettings,
     ContainerThreatDetectionSettings? containerThreatDetectionSettings,
     EventThreatDetectionSettings? eventThreatDetectionSettings,
@@ -144,7 +144,7 @@ class ComponentSettings extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'projectServiceAccount')
     ..m<$core.String, ComponentSettings_DetectorSettings>(4, _omitFieldNames ? '' : 'detectorSettings', entryClassName: 'ComponentSettings.DetectorSettingsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ComponentSettings_DetectorSettings.create, valueDefaultOrMaker: ComponentSettings_DetectorSettings.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.settings.v1beta1'))
     ..aOS(5, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<WebSecurityScanner>(40, _omitFieldNames ? '' : 'webSecurityScannerSettings', subBuilder: WebSecurityScanner.create)
     ..aOM<ContainerThreatDetectionSettings>(41, _omitFieldNames ? '' : 'containerThreatDetectionSettings', subBuilder: ContainerThreatDetectionSettings.create)
     ..aOM<EventThreatDetectionSettings>(42, _omitFieldNames ? '' : 'eventThreatDetectionSettings', subBuilder: EventThreatDetectionSettings.create)
@@ -235,15 +235,15 @@ class ComponentSettings extends $pb.GeneratedMessage {
 
   /// Output only. The time these settings were last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Web Security Scanner specific settings
   /// For component, expect WEB_SECURITY_SCANNER

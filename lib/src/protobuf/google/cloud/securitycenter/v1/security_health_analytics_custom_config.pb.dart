@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/expr.pb.dart' as $4213;
+import '../../../type/expr.pb.dart' as $4214;
 import 'security_health_analytics_custom_config.pbenum.dart';
 
 export 'security_health_analytics_custom_config.pbenum.dart';
@@ -22,7 +22,7 @@ export 'security_health_analytics_custom_config.pbenum.dart';
 class CustomConfig_CustomOutputSpec_Property extends $pb.GeneratedMessage {
   factory CustomConfig_CustomOutputSpec_Property({
     $core.String? name,
-    $4213.Expr? valueExpression,
+    $4214.Expr? valueExpression,
   }) {
     final $result = create();
     if (name != null) {
@@ -39,7 +39,7 @@ class CustomConfig_CustomOutputSpec_Property extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomConfig.CustomOutputSpec.Property', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4213.Expr>(2, _omitFieldNames ? '' : 'valueExpression', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(2, _omitFieldNames ? '' : 'valueExpression', subBuilder: $4214.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -78,15 +78,15 @@ class CustomConfig_CustomOutputSpec_Property extends $pb.GeneratedMessage {
   /// specified to return the value of the property or a text string enclosed
   /// in quotation marks.
   @$pb.TagNumber(2)
-  $4213.Expr get valueExpression => $_getN(1);
+  $4214.Expr get valueExpression => $_getN(1);
   @$pb.TagNumber(2)
-  set valueExpression($4213.Expr v) { setField(2, v); }
+  set valueExpression($4214.Expr v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValueExpression() => $_has(1);
   @$pb.TagNumber(2)
   void clearValueExpression() => clearField(2);
   @$pb.TagNumber(2)
-  $4213.Expr ensureValueExpression() => $_ensure(1);
+  $4214.Expr ensureValueExpression() => $_ensure(1);
 }
 
 /// A set of optional name-value pairs that define custom source properties to
@@ -189,7 +189,7 @@ class CustomConfig_ResourceSelector extends $pb.GeneratedMessage {
 /// detectors that generate custom findings for resources that you specify.
 class CustomConfig extends $pb.GeneratedMessage {
   factory CustomConfig({
-    $4213.Expr? predicate,
+    $4214.Expr? predicate,
     CustomConfig_CustomOutputSpec? customOutput,
     CustomConfig_ResourceSelector? resourceSelector,
     CustomConfig_Severity? severity,
@@ -222,7 +222,7 @@ class CustomConfig extends $pb.GeneratedMessage {
   factory CustomConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
-    ..aOM<$4213.Expr>(1, _omitFieldNames ? '' : 'predicate', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(1, _omitFieldNames ? '' : 'predicate', subBuilder: $4214.Expr.create)
     ..aOM<CustomConfig_CustomOutputSpec>(2, _omitFieldNames ? '' : 'customOutput', subBuilder: CustomConfig_CustomOutputSpec.create)
     ..aOM<CustomConfig_ResourceSelector>(3, _omitFieldNames ? '' : 'resourceSelector', subBuilder: CustomConfig_ResourceSelector.create)
     ..e<CustomConfig_Severity>(4, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: CustomConfig_Severity.SEVERITY_UNSPECIFIED, valueOf: CustomConfig_Severity.valueOf, enumValues: CustomConfig_Severity.values)
@@ -255,15 +255,15 @@ class CustomConfig extends $pb.GeneratedMessage {
   /// The CEL expression to evaluate to produce findings. When the expression
   /// evaluates to true against a resource, a finding is generated.
   @$pb.TagNumber(1)
-  $4213.Expr get predicate => $_getN(0);
+  $4214.Expr get predicate => $_getN(0);
   @$pb.TagNumber(1)
-  set predicate($4213.Expr v) { setField(1, v); }
+  set predicate($4214.Expr v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPredicate() => $_has(0);
   @$pb.TagNumber(1)
   void clearPredicate() => clearField(1);
   @$pb.TagNumber(1)
-  $4213.Expr ensurePredicate() => $_ensure(0);
+  $4214.Expr ensurePredicate() => $_ensure(0);
 
   /// Custom output properties.
   @$pb.TagNumber(2)

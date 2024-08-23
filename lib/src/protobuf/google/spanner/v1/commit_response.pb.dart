@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $1775;
+import '../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Additional statistics about a commit.
 class CommitResponse_CommitStats extends $pb.GeneratedMessage {
@@ -77,7 +77,7 @@ class CommitResponse_CommitStats extends $pb.GeneratedMessage {
 /// The response for [Commit][google.spanner.v1.Spanner.Commit].
 class CommitResponse extends $pb.GeneratedMessage {
   factory CommitResponse({
-    $1775.Timestamp? commitTimestamp,
+    $1776.Timestamp? commitTimestamp,
     CommitResponse_CommitStats? commitStats,
   }) {
     final $result = create();
@@ -94,7 +94,7 @@ class CommitResponse extends $pb.GeneratedMessage {
   factory CommitResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommitResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'commitTimestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'commitTimestamp', subBuilder: $1776.Timestamp.create)
     ..aOM<CommitResponse_CommitStats>(2, _omitFieldNames ? '' : 'commitStats', subBuilder: CommitResponse_CommitStats.create)
     ..hasRequiredFields = false
   ;
@@ -122,15 +122,15 @@ class CommitResponse extends $pb.GeneratedMessage {
 
   /// The Cloud Spanner timestamp at which the transaction committed.
   @$pb.TagNumber(1)
-  $1775.Timestamp get commitTimestamp => $_getN(0);
+  $1776.Timestamp get commitTimestamp => $_getN(0);
   @$pb.TagNumber(1)
-  set commitTimestamp($1775.Timestamp v) { setField(1, v); }
+  set commitTimestamp($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommitTimestamp() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommitTimestamp() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCommitTimestamp() => $_ensure(0);
+  $1776.Timestamp ensureCommitTimestamp() => $_ensure(0);
 
   /// The statistics about this Commit. Not returned by default.
   /// For more information, see

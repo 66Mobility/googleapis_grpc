@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'case.pb.dart' as $1418;
-import 'escalation.pb.dart' as $4690;
+import 'escalation.pb.dart' as $4692;
 
 /// The request message for the GetCase endpoint.
 class GetCaseRequest extends $pb.GeneratedMessage {
@@ -518,7 +518,7 @@ class SearchCasesResponse extends $pb.GeneratedMessage {
 class EscalateCaseRequest extends $pb.GeneratedMessage {
   factory EscalateCaseRequest({
     $core.String? name,
-    $4690.Escalation? escalation,
+    $4692.Escalation? escalation,
   }) {
     final $result = create();
     if (name != null) {
@@ -535,7 +535,7 @@ class EscalateCaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EscalateCaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.support.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4690.Escalation>(2, _omitFieldNames ? '' : 'escalation', subBuilder: $4690.Escalation.create)
+    ..aOM<$4692.Escalation>(2, _omitFieldNames ? '' : 'escalation', subBuilder: $4692.Escalation.create)
     ..hasRequiredFields = false
   ;
 
@@ -572,22 +572,22 @@ class EscalateCaseRequest extends $pb.GeneratedMessage {
 
   /// The escalation object to be sent with the escalation request.
   @$pb.TagNumber(2)
-  $4690.Escalation get escalation => $_getN(1);
+  $4692.Escalation get escalation => $_getN(1);
   @$pb.TagNumber(2)
-  set escalation($4690.Escalation v) { setField(2, v); }
+  set escalation($4692.Escalation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEscalation() => $_has(1);
   @$pb.TagNumber(2)
   void clearEscalation() => clearField(2);
   @$pb.TagNumber(2)
-  $4690.Escalation ensureEscalation() => $_ensure(1);
+  $4692.Escalation ensureEscalation() => $_ensure(1);
 }
 
 /// The request message for the UpdateCase endpoint
 class UpdateCaseRequest extends $pb.GeneratedMessage {
   factory UpdateCaseRequest({
     $1418.Case? case_1,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (case_1 != null) {
@@ -604,7 +604,7 @@ class UpdateCaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.support.v2'), createEmptyInstance: create)
     ..aOM<$1418.Case>(1, _omitFieldNames ? '' : 'case', subBuilder: $1418.Case.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -651,15 +651,15 @@ class UpdateCaseRequest extends $pb.GeneratedMessage {
   ///  not provide a value for `subscriber_email_addresses`, then
   ///  `subscriber_email_addresses` is updated to empty.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for the CloseCase endpoint.

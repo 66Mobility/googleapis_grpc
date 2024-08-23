@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4434;
+import 'common.pb.dart' as $4436;
 import 'ssl_config.pbenum.dart';
 
 export 'ssl_config.pbenum.dart';
@@ -25,7 +25,7 @@ class SslConfigTemplate extends $pb.GeneratedMessage {
     $core.bool? isTlsMandatory,
     $core.Iterable<CertType>? serverCertType,
     $core.Iterable<CertType>? clientCertType,
-    $core.Iterable<$4434.ConfigVariableTemplate>? additionalVariables,
+    $core.Iterable<$4436.ConfigVariableTemplate>? additionalVariables,
   }) {
     final $result = create();
     if (sslType != null) {
@@ -54,7 +54,7 @@ class SslConfigTemplate extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'isTlsMandatory')
     ..pc<CertType>(3, _omitFieldNames ? '' : 'serverCertType', $pb.PbFieldType.KE, valueOf: CertType.valueOf, enumValues: CertType.values, defaultEnumValue: CertType.CERT_TYPE_UNSPECIFIED)
     ..pc<CertType>(4, _omitFieldNames ? '' : 'clientCertType', $pb.PbFieldType.KE, valueOf: CertType.valueOf, enumValues: CertType.values, defaultEnumValue: CertType.CERT_TYPE_UNSPECIFIED)
-    ..pc<$4434.ConfigVariableTemplate>(5, _omitFieldNames ? '' : 'additionalVariables', $pb.PbFieldType.PM, subBuilder: $4434.ConfigVariableTemplate.create)
+    ..pc<$4436.ConfigVariableTemplate>(5, _omitFieldNames ? '' : 'additionalVariables', $pb.PbFieldType.PM, subBuilder: $4436.ConfigVariableTemplate.create)
     ..hasRequiredFields = false
   ;
 
@@ -109,7 +109,7 @@ class SslConfigTemplate extends $pb.GeneratedMessage {
 
   /// Any additional fields that need to be rendered
   @$pb.TagNumber(5)
-  $core.List<$4434.ConfigVariableTemplate> get additionalVariables => $_getList(4);
+  $core.List<$4436.ConfigVariableTemplate> get additionalVariables => $_getList(4);
 }
 
 /// SSL Configuration of a connection
@@ -117,14 +117,14 @@ class SslConfig extends $pb.GeneratedMessage {
   factory SslConfig({
     SslType? type,
     SslConfig_TrustModel? trustModel,
-    $4434.Secret? privateServerCertificate,
-    $4434.Secret? clientCertificate,
-    $4434.Secret? clientPrivateKey,
-    $4434.Secret? clientPrivateKeyPass,
+    $4436.Secret? privateServerCertificate,
+    $4436.Secret? clientCertificate,
+    $4436.Secret? clientPrivateKey,
+    $4436.Secret? clientPrivateKeyPass,
     CertType? serverCertType,
     CertType? clientCertType,
     $core.bool? useSsl,
-    $core.Iterable<$4434.ConfigVariable>? additionalVariables,
+    $core.Iterable<$4436.ConfigVariable>? additionalVariables,
   }) {
     final $result = create();
     if (type != null) {
@@ -166,14 +166,14 @@ class SslConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SslConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..e<SslType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: SslType.SSL_TYPE_UNSPECIFIED, valueOf: SslType.valueOf, enumValues: SslType.values)
     ..e<SslConfig_TrustModel>(2, _omitFieldNames ? '' : 'trustModel', $pb.PbFieldType.OE, defaultOrMaker: SslConfig_TrustModel.PUBLIC, valueOf: SslConfig_TrustModel.valueOf, enumValues: SslConfig_TrustModel.values)
-    ..aOM<$4434.Secret>(3, _omitFieldNames ? '' : 'privateServerCertificate', subBuilder: $4434.Secret.create)
-    ..aOM<$4434.Secret>(4, _omitFieldNames ? '' : 'clientCertificate', subBuilder: $4434.Secret.create)
-    ..aOM<$4434.Secret>(5, _omitFieldNames ? '' : 'clientPrivateKey', subBuilder: $4434.Secret.create)
-    ..aOM<$4434.Secret>(6, _omitFieldNames ? '' : 'clientPrivateKeyPass', subBuilder: $4434.Secret.create)
+    ..aOM<$4436.Secret>(3, _omitFieldNames ? '' : 'privateServerCertificate', subBuilder: $4436.Secret.create)
+    ..aOM<$4436.Secret>(4, _omitFieldNames ? '' : 'clientCertificate', subBuilder: $4436.Secret.create)
+    ..aOM<$4436.Secret>(5, _omitFieldNames ? '' : 'clientPrivateKey', subBuilder: $4436.Secret.create)
+    ..aOM<$4436.Secret>(6, _omitFieldNames ? '' : 'clientPrivateKeyPass', subBuilder: $4436.Secret.create)
     ..e<CertType>(7, _omitFieldNames ? '' : 'serverCertType', $pb.PbFieldType.OE, defaultOrMaker: CertType.CERT_TYPE_UNSPECIFIED, valueOf: CertType.valueOf, enumValues: CertType.values)
     ..e<CertType>(8, _omitFieldNames ? '' : 'clientCertType', $pb.PbFieldType.OE, defaultOrMaker: CertType.CERT_TYPE_UNSPECIFIED, valueOf: CertType.valueOf, enumValues: CertType.values)
     ..aOB(9, _omitFieldNames ? '' : 'useSsl')
-    ..pc<$4434.ConfigVariable>(10, _omitFieldNames ? '' : 'additionalVariables', $pb.PbFieldType.PM, subBuilder: $4434.ConfigVariable.create)
+    ..pc<$4436.ConfigVariable>(10, _omitFieldNames ? '' : 'additionalVariables', $pb.PbFieldType.PM, subBuilder: $4436.ConfigVariable.create)
     ..hasRequiredFields = false
   ;
 
@@ -221,51 +221,51 @@ class SslConfig extends $pb.GeneratedMessage {
   /// Private Server Certificate. Needs to be specified if trust model is
   /// `PRIVATE`.
   @$pb.TagNumber(3)
-  $4434.Secret get privateServerCertificate => $_getN(2);
+  $4436.Secret get privateServerCertificate => $_getN(2);
   @$pb.TagNumber(3)
-  set privateServerCertificate($4434.Secret v) { setField(3, v); }
+  set privateServerCertificate($4436.Secret v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPrivateServerCertificate() => $_has(2);
   @$pb.TagNumber(3)
   void clearPrivateServerCertificate() => clearField(3);
   @$pb.TagNumber(3)
-  $4434.Secret ensurePrivateServerCertificate() => $_ensure(2);
+  $4436.Secret ensurePrivateServerCertificate() => $_ensure(2);
 
   /// Client Certificate
   @$pb.TagNumber(4)
-  $4434.Secret get clientCertificate => $_getN(3);
+  $4436.Secret get clientCertificate => $_getN(3);
   @$pb.TagNumber(4)
-  set clientCertificate($4434.Secret v) { setField(4, v); }
+  set clientCertificate($4436.Secret v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasClientCertificate() => $_has(3);
   @$pb.TagNumber(4)
   void clearClientCertificate() => clearField(4);
   @$pb.TagNumber(4)
-  $4434.Secret ensureClientCertificate() => $_ensure(3);
+  $4436.Secret ensureClientCertificate() => $_ensure(3);
 
   /// Client Private Key
   @$pb.TagNumber(5)
-  $4434.Secret get clientPrivateKey => $_getN(4);
+  $4436.Secret get clientPrivateKey => $_getN(4);
   @$pb.TagNumber(5)
-  set clientPrivateKey($4434.Secret v) { setField(5, v); }
+  set clientPrivateKey($4436.Secret v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasClientPrivateKey() => $_has(4);
   @$pb.TagNumber(5)
   void clearClientPrivateKey() => clearField(5);
   @$pb.TagNumber(5)
-  $4434.Secret ensureClientPrivateKey() => $_ensure(4);
+  $4436.Secret ensureClientPrivateKey() => $_ensure(4);
 
   /// Secret containing the passphrase protecting the Client Private Key
   @$pb.TagNumber(6)
-  $4434.Secret get clientPrivateKeyPass => $_getN(5);
+  $4436.Secret get clientPrivateKeyPass => $_getN(5);
   @$pb.TagNumber(6)
-  set clientPrivateKeyPass($4434.Secret v) { setField(6, v); }
+  set clientPrivateKeyPass($4436.Secret v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasClientPrivateKeyPass() => $_has(5);
   @$pb.TagNumber(6)
   void clearClientPrivateKeyPass() => clearField(6);
   @$pb.TagNumber(6)
-  $4434.Secret ensureClientPrivateKeyPass() => $_ensure(5);
+  $4436.Secret ensureClientPrivateKeyPass() => $_ensure(5);
 
   /// Type of Server Cert (PEM/JKS/.. etc.)
   @$pb.TagNumber(7)
@@ -299,7 +299,7 @@ class SslConfig extends $pb.GeneratedMessage {
 
   /// Additional SSL related field values
   @$pb.TagNumber(10)
-  $core.List<$4434.ConfigVariable> get additionalVariables => $_getList(9);
+  $core.List<$4436.ConfigVariable> get additionalVariables => $_getList(9);
 }
 
 

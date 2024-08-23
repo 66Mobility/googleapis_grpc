@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../enums/access_role.pbenum.dart' as $2970;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/customer.pb.dart' as $3102;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../enums/access_role.pbenum.dart' as $2971;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/customer.pb.dart' as $3103;
 
 /// Request message for
 /// [CustomerService.MutateCustomer][google.ads.googleads.v16.services.CustomerService.MutateCustomer].
@@ -25,7 +25,7 @@ class MutateCustomerRequest extends $pb.GeneratedMessage {
     $core.String? customerId,
     CustomerOperation? operation,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -50,7 +50,7 @@ class MutateCustomerRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..aOM<CustomerOperation>(4, _omitFieldNames ? '' : 'operation', subBuilder: CustomerOperation.create)
     ..aOB(5, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(6, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(6, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -111,9 +111,9 @@ class MutateCustomerRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(6)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
   @$pb.TagNumber(6)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(6, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasResponseContentType() => $_has(3);
   @$pb.TagNumber(6)
@@ -125,8 +125,8 @@ class MutateCustomerRequest extends $pb.GeneratedMessage {
 class CreateCustomerClientRequest extends $pb.GeneratedMessage {
   factory CreateCustomerClientRequest({
     $core.String? customerId,
-    $3102.Customer? customerClient,
-    $2970.AccessRoleEnum_AccessRole? accessRole,
+    $3103.Customer? customerClient,
+    $2971.AccessRoleEnum_AccessRole? accessRole,
     $core.String? emailAddress,
     $core.bool? validateOnly,
   }) {
@@ -154,8 +154,8 @@ class CreateCustomerClientRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateCustomerClientRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..aOM<$3102.Customer>(2, _omitFieldNames ? '' : 'customerClient', subBuilder: $3102.Customer.create)
-    ..e<$2970.AccessRoleEnum_AccessRole>(4, _omitFieldNames ? '' : 'accessRole', $pb.PbFieldType.OE, defaultOrMaker: $2970.AccessRoleEnum_AccessRole.UNSPECIFIED, valueOf: $2970.AccessRoleEnum_AccessRole.valueOf, enumValues: $2970.AccessRoleEnum_AccessRole.values)
+    ..aOM<$3103.Customer>(2, _omitFieldNames ? '' : 'customerClient', subBuilder: $3103.Customer.create)
+    ..e<$2971.AccessRoleEnum_AccessRole>(4, _omitFieldNames ? '' : 'accessRole', $pb.PbFieldType.OE, defaultOrMaker: $2971.AccessRoleEnum_AccessRole.UNSPECIFIED, valueOf: $2971.AccessRoleEnum_AccessRole.valueOf, enumValues: $2971.AccessRoleEnum_AccessRole.values)
     ..aOS(5, _omitFieldNames ? '' : 'emailAddress')
     ..aOB(6, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -196,22 +196,22 @@ class CreateCustomerClientRequest extends $pb.GeneratedMessage {
   /// Required. The new client customer to create. The resource name on this
   /// customer will be ignored.
   @$pb.TagNumber(2)
-  $3102.Customer get customerClient => $_getN(1);
+  $3103.Customer get customerClient => $_getN(1);
   @$pb.TagNumber(2)
-  set customerClient($3102.Customer v) { setField(2, v); }
+  set customerClient($3103.Customer v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomerClient() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomerClient() => clearField(2);
   @$pb.TagNumber(2)
-  $3102.Customer ensureCustomerClient() => $_ensure(1);
+  $3103.Customer ensureCustomerClient() => $_ensure(1);
 
   /// The proposed role of user on the created client customer.
   /// Accessible only to customers on the allow-list.
   @$pb.TagNumber(4)
-  $2970.AccessRoleEnum_AccessRole get accessRole => $_getN(2);
+  $2971.AccessRoleEnum_AccessRole get accessRole => $_getN(2);
   @$pb.TagNumber(4)
-  set accessRole($2970.AccessRoleEnum_AccessRole v) { setField(4, v); }
+  set accessRole($2971.AccessRoleEnum_AccessRole v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAccessRole() => $_has(2);
   @$pb.TagNumber(4)
@@ -243,8 +243,8 @@ class CreateCustomerClientRequest extends $pb.GeneratedMessage {
 /// A single update on a customer.
 class CustomerOperation extends $pb.GeneratedMessage {
   factory CustomerOperation({
-    $3102.Customer? update,
-    $2209.FieldMask? updateMask,
+    $3103.Customer? update,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (update != null) {
@@ -260,8 +260,8 @@ class CustomerOperation extends $pb.GeneratedMessage {
   factory CustomerOperation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..aOM<$3102.Customer>(1, _omitFieldNames ? '' : 'update', subBuilder: $3102.Customer.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$3103.Customer>(1, _omitFieldNames ? '' : 'update', subBuilder: $3103.Customer.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -288,27 +288,27 @@ class CustomerOperation extends $pb.GeneratedMessage {
 
   /// Mutate operation. Only updates are supported for customer.
   @$pb.TagNumber(1)
-  $3102.Customer get update => $_getN(0);
+  $3103.Customer get update => $_getN(0);
   @$pb.TagNumber(1)
-  set update($3102.Customer v) { setField(1, v); }
+  set update($3103.Customer v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdate() => clearField(1);
   @$pb.TagNumber(1)
-  $3102.Customer ensureUpdate() => $_ensure(0);
+  $3103.Customer ensureUpdate() => $_ensure(0);
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Response message for CreateCustomerClient mutate.
@@ -438,7 +438,7 @@ class MutateCustomerResponse extends $pb.GeneratedMessage {
 class MutateCustomerResult extends $pb.GeneratedMessage {
   factory MutateCustomerResult({
     $core.String? resourceName,
-    $3102.Customer? customer,
+    $3103.Customer? customer,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -455,7 +455,7 @@ class MutateCustomerResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3102.Customer>(2, _omitFieldNames ? '' : 'customer', subBuilder: $3102.Customer.create)
+    ..aOM<$3103.Customer>(2, _omitFieldNames ? '' : 'customer', subBuilder: $3103.Customer.create)
     ..hasRequiredFields = false
   ;
 
@@ -493,15 +493,15 @@ class MutateCustomerResult extends $pb.GeneratedMessage {
   /// The mutated customer with only mutable fields after mutate. The fields will
   /// only be returned when response_content_type is set to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3102.Customer get customer => $_getN(1);
+  $3103.Customer get customer => $_getN(1);
   @$pb.TagNumber(2)
-  set customer($3102.Customer v) { setField(2, v); }
+  set customer($3103.Customer v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomer() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomer() => clearField(2);
   @$pb.TagNumber(2)
-  $3102.Customer ensureCustomer() => $_ensure(1);
+  $3103.Customer ensureCustomer() => $_ensure(1);
 }
 
 /// Request message for

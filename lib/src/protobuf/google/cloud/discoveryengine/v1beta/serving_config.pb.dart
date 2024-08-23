@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4508;
-import 'common.pbenum.dart' as $4508;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4510;
+import 'common.pbenum.dart' as $4510;
 import 'search_service.pb.dart' as $997;
 
 enum ServingConfig_MediaConfig_DemoteContentWatched {
@@ -228,12 +228,12 @@ class ServingConfig extends $pb.GeneratedMessage {
   factory ServingConfig({
     $core.String? name,
     $core.String? displayName,
-    $4508.SolutionType? solutionType,
+    $4510.SolutionType? solutionType,
     $core.String? modelId,
     $core.String? diversityLevel,
     ServingConfig_MediaConfig? mediaConfig,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     ServingConfig_GenericConfig? genericConfig,
     $core.Iterable<$core.String>? filterControlIds,
     $core.Iterable<$core.String>? boostControlIds,
@@ -243,7 +243,7 @@ class ServingConfig extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? dissociateControlIds,
     $core.Iterable<$core.String>? replacementControlIds,
     $core.Iterable<$core.String>? ignoreControlIds,
-    $4508.EmbeddingConfig? embeddingConfig,
+    $4510.EmbeddingConfig? embeddingConfig,
     $core.String? rankingExpression,
   }) {
     final $result = create();
@@ -319,12 +319,12 @@ class ServingConfig extends $pb.GeneratedMessage {
     ..oo(0, [7, 10])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<$4508.SolutionType>(3, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4508.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4508.SolutionType.valueOf, enumValues: $4508.SolutionType.values)
+    ..e<$4510.SolutionType>(3, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4510.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4510.SolutionType.valueOf, enumValues: $4510.SolutionType.values)
     ..aOS(4, _omitFieldNames ? '' : 'modelId')
     ..aOS(5, _omitFieldNames ? '' : 'diversityLevel')
     ..aOM<ServingConfig_MediaConfig>(7, _omitFieldNames ? '' : 'mediaConfig', subBuilder: ServingConfig_MediaConfig.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ServingConfig_GenericConfig>(10, _omitFieldNames ? '' : 'genericConfig', subBuilder: ServingConfig_GenericConfig.create)
     ..pPS(11, _omitFieldNames ? '' : 'filterControlIds')
     ..pPS(12, _omitFieldNames ? '' : 'boostControlIds')
@@ -334,7 +334,7 @@ class ServingConfig extends $pb.GeneratedMessage {
     ..pPS(17, _omitFieldNames ? '' : 'dissociateControlIds')
     ..pPS(18, _omitFieldNames ? '' : 'replacementControlIds')
     ..pPS(19, _omitFieldNames ? '' : 'ignoreControlIds')
-    ..aOM<$4508.EmbeddingConfig>(20, _omitFieldNames ? '' : 'embeddingConfig', subBuilder: $4508.EmbeddingConfig.create)
+    ..aOM<$4510.EmbeddingConfig>(20, _omitFieldNames ? '' : 'embeddingConfig', subBuilder: $4510.EmbeddingConfig.create)
     ..aOS(21, _omitFieldNames ? '' : 'rankingExpression')
     ..hasRequiredFields = false
   ;
@@ -391,9 +391,9 @@ class ServingConfig extends $pb.GeneratedMessage {
   /// Required. Immutable. Specifies the solution type that a serving config can
   /// be associated with.
   @$pb.TagNumber(3)
-  $4508.SolutionType get solutionType => $_getN(2);
+  $4510.SolutionType get solutionType => $_getN(2);
   @$pb.TagNumber(3)
-  set solutionType($4508.SolutionType v) { setField(3, v); }
+  set solutionType($4510.SolutionType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSolutionType() => $_has(2);
   @$pb.TagNumber(3)
@@ -454,27 +454,27 @@ class ServingConfig extends $pb.GeneratedMessage {
 
   /// Output only. ServingConfig created timestamp.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. ServingConfig updated timestamp.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// The GenericConfig of the serving configuration.
   @$pb.TagNumber(10)
@@ -571,15 +571,15 @@ class ServingConfig extends $pb.GeneratedMessage {
   /// is provided, it overrides this
   /// [ServingConfig.embedding_config][google.cloud.discoveryengine.v1beta.ServingConfig.embedding_config].
   @$pb.TagNumber(20)
-  $4508.EmbeddingConfig get embeddingConfig => $_getN(17);
+  $4510.EmbeddingConfig get embeddingConfig => $_getN(17);
   @$pb.TagNumber(20)
-  set embeddingConfig($4508.EmbeddingConfig v) { setField(20, v); }
+  set embeddingConfig($4510.EmbeddingConfig v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasEmbeddingConfig() => $_has(17);
   @$pb.TagNumber(20)
   void clearEmbeddingConfig() => clearField(20);
   @$pb.TagNumber(20)
-  $4508.EmbeddingConfig ensureEmbeddingConfig() => $_ensure(17);
+  $4510.EmbeddingConfig ensureEmbeddingConfig() => $_ensure(17);
 
   ///  The ranking expression controls the customized ranking on retrieval
   ///  documents. To leverage this, document embedding is required. The ranking

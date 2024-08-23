@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/simulation.pb.dart' as $2837;
-import '../enums/simulation_modification_method.pbenum.dart' as $2839;
-import '../enums/simulation_type.pbenum.dart' as $2838;
+import '../common/simulation.pb.dart' as $2838;
+import '../enums/simulation_modification_method.pbenum.dart' as $2840;
+import '../enums/simulation_type.pbenum.dart' as $2839;
 
 enum AdGroupCriterionSimulation_PointList {
   cpcBidPointList, 
@@ -37,14 +37,14 @@ enum AdGroupCriterionSimulation_PointList {
 class AdGroupCriterionSimulation extends $pb.GeneratedMessage {
   factory AdGroupCriterionSimulation({
     $core.String? resourceName,
-    $2838.SimulationTypeEnum_SimulationType? type,
-    $2839.SimulationModificationMethodEnum_SimulationModificationMethod? modificationMethod,
-    $2837.CpcBidSimulationPointList? cpcBidPointList,
+    $2839.SimulationTypeEnum_SimulationType? type,
+    $2840.SimulationModificationMethodEnum_SimulationModificationMethod? modificationMethod,
+    $2838.CpcBidSimulationPointList? cpcBidPointList,
     $fixnum.Int64? adGroupId,
     $fixnum.Int64? criterionId,
     $core.String? startDate,
     $core.String? endDate,
-    $2837.PercentCpcBidSimulationPointList? percentCpcBidPointList,
+    $2838.PercentCpcBidSimulationPointList? percentCpcBidPointList,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -88,14 +88,14 @@ class AdGroupCriterionSimulation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupCriterionSimulation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..oo(0, [8, 13])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2838.SimulationTypeEnum_SimulationType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2838.SimulationTypeEnum_SimulationType.UNSPECIFIED, valueOf: $2838.SimulationTypeEnum_SimulationType.valueOf, enumValues: $2838.SimulationTypeEnum_SimulationType.values)
-    ..e<$2839.SimulationModificationMethodEnum_SimulationModificationMethod>(5, _omitFieldNames ? '' : 'modificationMethod', $pb.PbFieldType.OE, defaultOrMaker: $2839.SimulationModificationMethodEnum_SimulationModificationMethod.UNSPECIFIED, valueOf: $2839.SimulationModificationMethodEnum_SimulationModificationMethod.valueOf, enumValues: $2839.SimulationModificationMethodEnum_SimulationModificationMethod.values)
-    ..aOM<$2837.CpcBidSimulationPointList>(8, _omitFieldNames ? '' : 'cpcBidPointList', subBuilder: $2837.CpcBidSimulationPointList.create)
+    ..e<$2839.SimulationTypeEnum_SimulationType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2839.SimulationTypeEnum_SimulationType.UNSPECIFIED, valueOf: $2839.SimulationTypeEnum_SimulationType.valueOf, enumValues: $2839.SimulationTypeEnum_SimulationType.values)
+    ..e<$2840.SimulationModificationMethodEnum_SimulationModificationMethod>(5, _omitFieldNames ? '' : 'modificationMethod', $pb.PbFieldType.OE, defaultOrMaker: $2840.SimulationModificationMethodEnum_SimulationModificationMethod.UNSPECIFIED, valueOf: $2840.SimulationModificationMethodEnum_SimulationModificationMethod.valueOf, enumValues: $2840.SimulationModificationMethodEnum_SimulationModificationMethod.values)
+    ..aOM<$2838.CpcBidSimulationPointList>(8, _omitFieldNames ? '' : 'cpcBidPointList', subBuilder: $2838.CpcBidSimulationPointList.create)
     ..aInt64(9, _omitFieldNames ? '' : 'adGroupId')
     ..aInt64(10, _omitFieldNames ? '' : 'criterionId')
     ..aOS(11, _omitFieldNames ? '' : 'startDate')
     ..aOS(12, _omitFieldNames ? '' : 'endDate')
-    ..aOM<$2837.PercentCpcBidSimulationPointList>(13, _omitFieldNames ? '' : 'percentCpcBidPointList', subBuilder: $2837.PercentCpcBidSimulationPointList.create)
+    ..aOM<$2838.PercentCpcBidSimulationPointList>(13, _omitFieldNames ? '' : 'percentCpcBidPointList', subBuilder: $2838.PercentCpcBidSimulationPointList.create)
     ..hasRequiredFields = false
   ;
 
@@ -138,9 +138,9 @@ class AdGroupCriterionSimulation extends $pb.GeneratedMessage {
 
   /// Output only. The field that the simulation modifies.
   @$pb.TagNumber(4)
-  $2838.SimulationTypeEnum_SimulationType get type => $_getN(1);
+  $2839.SimulationTypeEnum_SimulationType get type => $_getN(1);
   @$pb.TagNumber(4)
-  set type($2838.SimulationTypeEnum_SimulationType v) { setField(4, v); }
+  set type($2839.SimulationTypeEnum_SimulationType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(4)
@@ -148,9 +148,9 @@ class AdGroupCriterionSimulation extends $pb.GeneratedMessage {
 
   /// Output only. How the simulation modifies the field.
   @$pb.TagNumber(5)
-  $2839.SimulationModificationMethodEnum_SimulationModificationMethod get modificationMethod => $_getN(2);
+  $2840.SimulationModificationMethodEnum_SimulationModificationMethod get modificationMethod => $_getN(2);
   @$pb.TagNumber(5)
-  set modificationMethod($2839.SimulationModificationMethodEnum_SimulationModificationMethod v) { setField(5, v); }
+  set modificationMethod($2840.SimulationModificationMethodEnum_SimulationModificationMethod v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasModificationMethod() => $_has(2);
   @$pb.TagNumber(5)
@@ -158,15 +158,15 @@ class AdGroupCriterionSimulation extends $pb.GeneratedMessage {
 
   /// Output only. Simulation points if the simulation type is CPC_BID.
   @$pb.TagNumber(8)
-  $2837.CpcBidSimulationPointList get cpcBidPointList => $_getN(3);
+  $2838.CpcBidSimulationPointList get cpcBidPointList => $_getN(3);
   @$pb.TagNumber(8)
-  set cpcBidPointList($2837.CpcBidSimulationPointList v) { setField(8, v); }
+  set cpcBidPointList($2838.CpcBidSimulationPointList v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCpcBidPointList() => $_has(3);
   @$pb.TagNumber(8)
   void clearCpcBidPointList() => clearField(8);
   @$pb.TagNumber(8)
-  $2837.CpcBidSimulationPointList ensureCpcBidPointList() => $_ensure(3);
+  $2838.CpcBidSimulationPointList ensureCpcBidPointList() => $_ensure(3);
 
   /// Output only. AdGroup ID of the simulation.
   @$pb.TagNumber(9)
@@ -212,15 +212,15 @@ class AdGroupCriterionSimulation extends $pb.GeneratedMessage {
 
   /// Output only. Simulation points if the simulation type is PERCENT_CPC_BID.
   @$pb.TagNumber(13)
-  $2837.PercentCpcBidSimulationPointList get percentCpcBidPointList => $_getN(8);
+  $2838.PercentCpcBidSimulationPointList get percentCpcBidPointList => $_getN(8);
   @$pb.TagNumber(13)
-  set percentCpcBidPointList($2837.PercentCpcBidSimulationPointList v) { setField(13, v); }
+  set percentCpcBidPointList($2838.PercentCpcBidSimulationPointList v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasPercentCpcBidPointList() => $_has(8);
   @$pb.TagNumber(13)
   void clearPercentCpcBidPointList() => clearField(13);
   @$pb.TagNumber(13)
-  $2837.PercentCpcBidSimulationPointList ensurePercentCpcBidPointList() => $_ensure(8);
+  $2838.PercentCpcBidSimulationPointList ensurePercentCpcBidPointList() => $_ensure(8);
 }
 
 

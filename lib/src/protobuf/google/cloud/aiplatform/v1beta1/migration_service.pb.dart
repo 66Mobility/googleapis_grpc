@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
-import 'migratable_resource.pb.dart' as $4304;
-import 'operation.pb.dart' as $4295;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'migratable_resource.pb.dart' as $4305;
+import 'operation.pb.dart' as $4296;
 
 /// Request message for
 /// [MigrationService.SearchMigratableResources][google.cloud.aiplatform.v1beta1.MigrationService.SearchMigratableResources].
@@ -135,7 +135,7 @@ class SearchMigratableResourcesRequest extends $pb.GeneratedMessage {
 /// [MigrationService.SearchMigratableResources][google.cloud.aiplatform.v1beta1.MigrationService.SearchMigratableResources].
 class SearchMigratableResourcesResponse extends $pb.GeneratedMessage {
   factory SearchMigratableResourcesResponse({
-    $core.Iterable<$4304.MigratableResource>? migratableResources,
+    $core.Iterable<$4305.MigratableResource>? migratableResources,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -152,7 +152,7 @@ class SearchMigratableResourcesResponse extends $pb.GeneratedMessage {
   factory SearchMigratableResourcesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchMigratableResourcesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..pc<$4304.MigratableResource>(1, _omitFieldNames ? '' : 'migratableResources', $pb.PbFieldType.PM, subBuilder: $4304.MigratableResource.create)
+    ..pc<$4305.MigratableResource>(1, _omitFieldNames ? '' : 'migratableResources', $pb.PbFieldType.PM, subBuilder: $4305.MigratableResource.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -181,7 +181,7 @@ class SearchMigratableResourcesResponse extends $pb.GeneratedMessage {
   /// All migratable resources that can be migrated to the
   /// location specified in the request.
   @$pb.TagNumber(1)
-  $core.List<$4304.MigratableResource> get migratableResources => $_getList(0);
+  $core.List<$4305.MigratableResource> get migratableResources => $_getList(0);
 
   /// The standard next-page token.
   /// The migratable_resources may not fill page_size in
@@ -818,7 +818,7 @@ class MigrateResourceResponse extends $pb.GeneratedMessage {
   factory MigrateResourceResponse({
     $core.String? dataset,
     $core.String? model,
-    $4304.MigratableResource? migratableResource,
+    $4305.MigratableResource? migratableResource,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -845,7 +845,7 @@ class MigrateResourceResponse extends $pb.GeneratedMessage {
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'dataset')
     ..aOS(2, _omitFieldNames ? '' : 'model')
-    ..aOM<$4304.MigratableResource>(3, _omitFieldNames ? '' : 'migratableResource', subBuilder: $4304.MigratableResource.create)
+    ..aOM<$4305.MigratableResource>(3, _omitFieldNames ? '' : 'migratableResource', subBuilder: $4305.MigratableResource.create)
     ..hasRequiredFields = false
   ;
 
@@ -896,15 +896,15 @@ class MigrateResourceResponse extends $pb.GeneratedMessage {
   /// Before migration, the identifier in ml.googleapis.com,
   /// automl.googleapis.com or datalabeling.googleapis.com.
   @$pb.TagNumber(3)
-  $4304.MigratableResource get migratableResource => $_getN(2);
+  $4305.MigratableResource get migratableResource => $_getN(2);
   @$pb.TagNumber(3)
-  set migratableResource($4304.MigratableResource v) { setField(3, v); }
+  set migratableResource($4305.MigratableResource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMigratableResource() => $_has(2);
   @$pb.TagNumber(3)
   void clearMigratableResource() => clearField(3);
   @$pb.TagNumber(3)
-  $4304.MigratableResource ensureMigratableResource() => $_ensure(2);
+  $4305.MigratableResource ensureMigratableResource() => $_ensure(2);
 }
 
 enum BatchMigrateResourcesOperationMetadata_PartialResult_Result {
@@ -919,7 +919,7 @@ enum BatchMigrateResourcesOperationMetadata_PartialResult_Result {
 class BatchMigrateResourcesOperationMetadata_PartialResult extends $pb.GeneratedMessage {
   factory BatchMigrateResourcesOperationMetadata_PartialResult({
     MigrateResourceRequest? request,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.String? model,
     $core.String? dataset,
   }) {
@@ -951,7 +951,7 @@ class BatchMigrateResourcesOperationMetadata_PartialResult extends $pb.Generated
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchMigrateResourcesOperationMetadata.PartialResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4])
     ..aOM<MigrateResourceRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: MigrateResourceRequest.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOS(3, _omitFieldNames ? '' : 'model')
     ..aOS(4, _omitFieldNames ? '' : 'dataset')
     ..hasRequiredFields = false
@@ -996,15 +996,15 @@ class BatchMigrateResourcesOperationMetadata_PartialResult extends $pb.Generated
 
   /// The error result of the migration request in case of failure.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 
   /// Migrated model resource name.
   @$pb.TagNumber(3)
@@ -1031,7 +1031,7 @@ class BatchMigrateResourcesOperationMetadata_PartialResult extends $pb.Generated
 /// [MigrationService.BatchMigrateResources][google.cloud.aiplatform.v1beta1.MigrationService.BatchMigrateResources].
 class BatchMigrateResourcesOperationMetadata extends $pb.GeneratedMessage {
   factory BatchMigrateResourcesOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
     $core.Iterable<BatchMigrateResourcesOperationMetadata_PartialResult>? partialResults,
   }) {
     final $result = create();
@@ -1048,7 +1048,7 @@ class BatchMigrateResourcesOperationMetadata extends $pb.GeneratedMessage {
   factory BatchMigrateResourcesOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchMigrateResourcesOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..pc<BatchMigrateResourcesOperationMetadata_PartialResult>(2, _omitFieldNames ? '' : 'partialResults', $pb.PbFieldType.PM, subBuilder: BatchMigrateResourcesOperationMetadata_PartialResult.create)
     ..hasRequiredFields = false
   ;
@@ -1076,15 +1076,15 @@ class BatchMigrateResourcesOperationMetadata extends $pb.GeneratedMessage {
 
   /// The common part of the operation metadata.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// Partial results that reflect the latest migration operation progress.
   @$pb.TagNumber(2)

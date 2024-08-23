@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3982;
-import '../enums/ad_group_criterion_engine_status.pbenum.dart' as $4027;
-import '../enums/ad_group_criterion_status.pbenum.dart' as $4025;
-import '../enums/criterion_type.pbenum.dart' as $4026;
+import '../common/criteria.pb.dart' as $3983;
+import '../enums/ad_group_criterion_engine_status.pbenum.dart' as $4028;
+import '../enums/ad_group_criterion_status.pbenum.dart' as $4026;
+import '../enums/criterion_type.pbenum.dart' as $4027;
 
 /// A container for ad group criterion quality information.
 class AdGroupCriterion_QualityInfo extends $pb.GeneratedMessage {
@@ -144,16 +144,16 @@ enum AdGroupCriterion_Criterion {
 class AdGroupCriterion extends $pb.GeneratedMessage {
   factory AdGroupCriterion({
     $core.String? resourceName,
-    $4025.AdGroupCriterionStatusEnum_AdGroupCriterionStatus? status,
+    $4026.AdGroupCriterionStatusEnum_AdGroupCriterionStatus? status,
     AdGroupCriterion_QualityInfo? qualityInfo,
     AdGroupCriterion_PositionEstimates? positionEstimates,
-    $4026.CriterionTypeEnum_CriterionType? type,
-    $3982.KeywordInfo? keyword,
-    $3982.ListingGroupInfo? listingGroup,
-    $3982.AgeRangeInfo? ageRange,
-    $3982.GenderInfo? gender,
-    $3982.UserListInfo? userList,
-    $3982.WebpageInfo? webpage,
+    $4027.CriterionTypeEnum_CriterionType? type,
+    $3983.KeywordInfo? keyword,
+    $3983.ListingGroupInfo? listingGroup,
+    $3983.AgeRangeInfo? ageRange,
+    $3983.GenderInfo? gender,
+    $3983.UserListInfo? userList,
+    $3983.WebpageInfo? webpage,
     $fixnum.Int64? criterionId,
     $core.String? adGroup,
     $core.bool? negative,
@@ -166,9 +166,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
     $core.String? trackingUrlTemplate,
     $core.String? engineId,
     $core.String? lastModifiedTime,
-    $4027.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus? engineStatus,
+    $4028.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus? engineStatus,
     $core.String? creationTime,
-    $3982.LocationInfo? location,
+    $3983.LocationInfo? location,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -268,16 +268,16 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupCriterion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..oo(0, [27, 32, 36, 37, 42, 46, 82])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4025.AdGroupCriterionStatusEnum_AdGroupCriterionStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4025.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.UNSPECIFIED, valueOf: $4025.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.valueOf, enumValues: $4025.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.values)
+    ..e<$4026.AdGroupCriterionStatusEnum_AdGroupCriterionStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4026.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.UNSPECIFIED, valueOf: $4026.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.valueOf, enumValues: $4026.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.values)
     ..aOM<AdGroupCriterion_QualityInfo>(4, _omitFieldNames ? '' : 'qualityInfo', subBuilder: AdGroupCriterion_QualityInfo.create)
     ..aOM<AdGroupCriterion_PositionEstimates>(10, _omitFieldNames ? '' : 'positionEstimates', subBuilder: AdGroupCriterion_PositionEstimates.create)
-    ..e<$4026.CriterionTypeEnum_CriterionType>(25, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4026.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $4026.CriterionTypeEnum_CriterionType.valueOf, enumValues: $4026.CriterionTypeEnum_CriterionType.values)
-    ..aOM<$3982.KeywordInfo>(27, _omitFieldNames ? '' : 'keyword', subBuilder: $3982.KeywordInfo.create)
-    ..aOM<$3982.ListingGroupInfo>(32, _omitFieldNames ? '' : 'listingGroup', subBuilder: $3982.ListingGroupInfo.create)
-    ..aOM<$3982.AgeRangeInfo>(36, _omitFieldNames ? '' : 'ageRange', subBuilder: $3982.AgeRangeInfo.create)
-    ..aOM<$3982.GenderInfo>(37, _omitFieldNames ? '' : 'gender', subBuilder: $3982.GenderInfo.create)
-    ..aOM<$3982.UserListInfo>(42, _omitFieldNames ? '' : 'userList', subBuilder: $3982.UserListInfo.create)
-    ..aOM<$3982.WebpageInfo>(46, _omitFieldNames ? '' : 'webpage', subBuilder: $3982.WebpageInfo.create)
+    ..e<$4027.CriterionTypeEnum_CriterionType>(25, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4027.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $4027.CriterionTypeEnum_CriterionType.valueOf, enumValues: $4027.CriterionTypeEnum_CriterionType.values)
+    ..aOM<$3983.KeywordInfo>(27, _omitFieldNames ? '' : 'keyword', subBuilder: $3983.KeywordInfo.create)
+    ..aOM<$3983.ListingGroupInfo>(32, _omitFieldNames ? '' : 'listingGroup', subBuilder: $3983.ListingGroupInfo.create)
+    ..aOM<$3983.AgeRangeInfo>(36, _omitFieldNames ? '' : 'ageRange', subBuilder: $3983.AgeRangeInfo.create)
+    ..aOM<$3983.GenderInfo>(37, _omitFieldNames ? '' : 'gender', subBuilder: $3983.GenderInfo.create)
+    ..aOM<$3983.UserListInfo>(42, _omitFieldNames ? '' : 'userList', subBuilder: $3983.UserListInfo.create)
+    ..aOM<$3983.WebpageInfo>(46, _omitFieldNames ? '' : 'webpage', subBuilder: $3983.WebpageInfo.create)
     ..aInt64(56, _omitFieldNames ? '' : 'criterionId')
     ..aOS(57, _omitFieldNames ? '' : 'adGroup')
     ..aOB(58, _omitFieldNames ? '' : 'negative')
@@ -290,9 +290,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
     ..aOS(73, _omitFieldNames ? '' : 'trackingUrlTemplate')
     ..aOS(76, _omitFieldNames ? '' : 'engineId')
     ..aOS(78, _omitFieldNames ? '' : 'lastModifiedTime')
-    ..e<$4027.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus>(80, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4027.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus.UNSPECIFIED, valueOf: $4027.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus.valueOf, enumValues: $4027.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus.values)
+    ..e<$4028.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus>(80, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4028.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus.UNSPECIFIED, valueOf: $4028.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus.valueOf, enumValues: $4028.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus.values)
     ..aOS(81, _omitFieldNames ? '' : 'creationTime')
-    ..aOM<$3982.LocationInfo>(82, _omitFieldNames ? '' : 'location', subBuilder: $3982.LocationInfo.create)
+    ..aOM<$3983.LocationInfo>(82, _omitFieldNames ? '' : 'location', subBuilder: $3983.LocationInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -344,9 +344,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
   ///  eligible to see the ads; but AdGroupCriterion.status will show "removed",
   ///  since no positive criterion was added.
   @$pb.TagNumber(3)
-  $4025.AdGroupCriterionStatusEnum_AdGroupCriterionStatus get status => $_getN(1);
+  $4026.AdGroupCriterionStatusEnum_AdGroupCriterionStatus get status => $_getN(1);
   @$pb.TagNumber(3)
-  set status($4025.AdGroupCriterionStatusEnum_AdGroupCriterionStatus v) { setField(3, v); }
+  set status($4026.AdGroupCriterionStatusEnum_AdGroupCriterionStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(3)
@@ -378,9 +378,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Output only. The type of the criterion.
   @$pb.TagNumber(25)
-  $4026.CriterionTypeEnum_CriterionType get type => $_getN(4);
+  $4027.CriterionTypeEnum_CriterionType get type => $_getN(4);
   @$pb.TagNumber(25)
-  set type($4026.CriterionTypeEnum_CriterionType v) { setField(25, v); }
+  set type($4027.CriterionTypeEnum_CriterionType v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(25)
@@ -388,75 +388,75 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Keyword.
   @$pb.TagNumber(27)
-  $3982.KeywordInfo get keyword => $_getN(5);
+  $3983.KeywordInfo get keyword => $_getN(5);
   @$pb.TagNumber(27)
-  set keyword($3982.KeywordInfo v) { setField(27, v); }
+  set keyword($3983.KeywordInfo v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasKeyword() => $_has(5);
   @$pb.TagNumber(27)
   void clearKeyword() => clearField(27);
   @$pb.TagNumber(27)
-  $3982.KeywordInfo ensureKeyword() => $_ensure(5);
+  $3983.KeywordInfo ensureKeyword() => $_ensure(5);
 
   /// Immutable. Listing group.
   @$pb.TagNumber(32)
-  $3982.ListingGroupInfo get listingGroup => $_getN(6);
+  $3983.ListingGroupInfo get listingGroup => $_getN(6);
   @$pb.TagNumber(32)
-  set listingGroup($3982.ListingGroupInfo v) { setField(32, v); }
+  set listingGroup($3983.ListingGroupInfo v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasListingGroup() => $_has(6);
   @$pb.TagNumber(32)
   void clearListingGroup() => clearField(32);
   @$pb.TagNumber(32)
-  $3982.ListingGroupInfo ensureListingGroup() => $_ensure(6);
+  $3983.ListingGroupInfo ensureListingGroup() => $_ensure(6);
 
   /// Immutable. Age range.
   @$pb.TagNumber(36)
-  $3982.AgeRangeInfo get ageRange => $_getN(7);
+  $3983.AgeRangeInfo get ageRange => $_getN(7);
   @$pb.TagNumber(36)
-  set ageRange($3982.AgeRangeInfo v) { setField(36, v); }
+  set ageRange($3983.AgeRangeInfo v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasAgeRange() => $_has(7);
   @$pb.TagNumber(36)
   void clearAgeRange() => clearField(36);
   @$pb.TagNumber(36)
-  $3982.AgeRangeInfo ensureAgeRange() => $_ensure(7);
+  $3983.AgeRangeInfo ensureAgeRange() => $_ensure(7);
 
   /// Immutable. Gender.
   @$pb.TagNumber(37)
-  $3982.GenderInfo get gender => $_getN(8);
+  $3983.GenderInfo get gender => $_getN(8);
   @$pb.TagNumber(37)
-  set gender($3982.GenderInfo v) { setField(37, v); }
+  set gender($3983.GenderInfo v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasGender() => $_has(8);
   @$pb.TagNumber(37)
   void clearGender() => clearField(37);
   @$pb.TagNumber(37)
-  $3982.GenderInfo ensureGender() => $_ensure(8);
+  $3983.GenderInfo ensureGender() => $_ensure(8);
 
   /// Immutable. User List.
   @$pb.TagNumber(42)
-  $3982.UserListInfo get userList => $_getN(9);
+  $3983.UserListInfo get userList => $_getN(9);
   @$pb.TagNumber(42)
-  set userList($3982.UserListInfo v) { setField(42, v); }
+  set userList($3983.UserListInfo v) { setField(42, v); }
   @$pb.TagNumber(42)
   $core.bool hasUserList() => $_has(9);
   @$pb.TagNumber(42)
   void clearUserList() => clearField(42);
   @$pb.TagNumber(42)
-  $3982.UserListInfo ensureUserList() => $_ensure(9);
+  $3983.UserListInfo ensureUserList() => $_ensure(9);
 
   /// Immutable. Webpage
   @$pb.TagNumber(46)
-  $3982.WebpageInfo get webpage => $_getN(10);
+  $3983.WebpageInfo get webpage => $_getN(10);
   @$pb.TagNumber(46)
-  set webpage($3982.WebpageInfo v) { setField(46, v); }
+  set webpage($3983.WebpageInfo v) { setField(46, v); }
   @$pb.TagNumber(46)
   $core.bool hasWebpage() => $_has(10);
   @$pb.TagNumber(46)
   void clearWebpage() => clearField(46);
   @$pb.TagNumber(46)
-  $3982.WebpageInfo ensureWebpage() => $_ensure(10);
+  $3983.WebpageInfo ensureWebpage() => $_ensure(10);
 
   /// Output only. The ID of the criterion.
   @$pb.TagNumber(56)
@@ -579,9 +579,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Output only. The Engine Status for ad group criterion.
   @$pb.TagNumber(80)
-  $4027.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus get engineStatus => $_getN(23);
+  $4028.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus get engineStatus => $_getN(23);
   @$pb.TagNumber(80)
-  set engineStatus($4027.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus v) { setField(80, v); }
+  set engineStatus($4028.AdGroupCriterionEngineStatusEnum_AdGroupCriterionEngineStatus v) { setField(80, v); }
   @$pb.TagNumber(80)
   $core.bool hasEngineStatus() => $_has(23);
   @$pb.TagNumber(80)
@@ -601,15 +601,15 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Location.
   @$pb.TagNumber(82)
-  $3982.LocationInfo get location => $_getN(25);
+  $3983.LocationInfo get location => $_getN(25);
   @$pb.TagNumber(82)
-  set location($3982.LocationInfo v) { setField(82, v); }
+  set location($3983.LocationInfo v) { setField(82, v); }
   @$pb.TagNumber(82)
   $core.bool hasLocation() => $_has(25);
   @$pb.TagNumber(82)
   void clearLocation() => clearField(82);
   @$pb.TagNumber(82)
-  $3982.LocationInfo ensureLocation() => $_ensure(25);
+  $3983.LocationInfo ensureLocation() => $_ensure(25);
 }
 
 

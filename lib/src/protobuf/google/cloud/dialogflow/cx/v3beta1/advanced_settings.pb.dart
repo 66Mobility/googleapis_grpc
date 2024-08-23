@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import 'gcs.pb.dart' as $4483;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import 'gcs.pb.dart' as $4485;
 
 /// Define behaviors of speech to text detection.
 class AdvancedSettings_SpeechSettings extends $pb.GeneratedMessage {
   factory AdvancedSettings_SpeechSettings({
     $core.int? endpointerSensitivity,
-    $1737.Duration? noSpeechTimeout,
+    $1738.Duration? noSpeechTimeout,
     $core.bool? useTimeoutBasedEndpointing,
     $core.Map<$core.String, $core.String>? models,
   }) {
@@ -45,7 +45,7 @@ class AdvancedSettings_SpeechSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdvancedSettings.SpeechSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'endpointerSensitivity', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'noSpeechTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'noSpeechTimeout', subBuilder: $1738.Duration.create)
     ..aOB(3, _omitFieldNames ? '' : 'useTimeoutBasedEndpointing')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'models', entryClassName: 'AdvancedSettings.SpeechSettings.ModelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dialogflow.cx.v3beta1'))
     ..hasRequiredFields = false
@@ -85,15 +85,15 @@ class AdvancedSettings_SpeechSettings extends $pb.GeneratedMessage {
 
   /// Timeout before detecting no speech.
   @$pb.TagNumber(2)
-  $1737.Duration get noSpeechTimeout => $_getN(1);
+  $1738.Duration get noSpeechTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set noSpeechTimeout($1737.Duration v) { setField(2, v); }
+  set noSpeechTimeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasNoSpeechTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearNoSpeechTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureNoSpeechTimeout() => $_ensure(1);
+  $1738.Duration ensureNoSpeechTimeout() => $_ensure(1);
 
   /// Use timeout based endpointing, interpreting endpointer sensitivy as
   /// seconds of timeout value.
@@ -121,8 +121,8 @@ class AdvancedSettings_DtmfSettings extends $pb.GeneratedMessage {
     $core.bool? enabled,
     $core.int? maxDigits,
     $core.String? finishDigit,
-    $1737.Duration? interdigitTimeoutDuration,
-    $1737.Duration? endpointingTimeoutDuration,
+    $1738.Duration? interdigitTimeoutDuration,
+    $1738.Duration? endpointingTimeoutDuration,
   }) {
     final $result = create();
     if (enabled != null) {
@@ -150,8 +150,8 @@ class AdvancedSettings_DtmfSettings extends $pb.GeneratedMessage {
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxDigits', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'finishDigit')
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'interdigitTimeoutDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'endpointingTimeoutDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'interdigitTimeoutDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'endpointingTimeoutDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -213,27 +213,27 @@ class AdvancedSettings_DtmfSettings extends $pb.GeneratedMessage {
 
   /// Interdigit timeout setting for matching dtmf input to regex.
   @$pb.TagNumber(6)
-  $1737.Duration get interdigitTimeoutDuration => $_getN(3);
+  $1738.Duration get interdigitTimeoutDuration => $_getN(3);
   @$pb.TagNumber(6)
-  set interdigitTimeoutDuration($1737.Duration v) { setField(6, v); }
+  set interdigitTimeoutDuration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasInterdigitTimeoutDuration() => $_has(3);
   @$pb.TagNumber(6)
   void clearInterdigitTimeoutDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureInterdigitTimeoutDuration() => $_ensure(3);
+  $1738.Duration ensureInterdigitTimeoutDuration() => $_ensure(3);
 
   /// Endpoint timeout setting for matching dtmf input to regex.
   @$pb.TagNumber(7)
-  $1737.Duration get endpointingTimeoutDuration => $_getN(4);
+  $1738.Duration get endpointingTimeoutDuration => $_getN(4);
   @$pb.TagNumber(7)
-  set endpointingTimeoutDuration($1737.Duration v) { setField(7, v); }
+  set endpointingTimeoutDuration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndpointingTimeoutDuration() => $_has(4);
   @$pb.TagNumber(7)
   void clearEndpointingTimeoutDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureEndpointingTimeoutDuration() => $_ensure(4);
+  $1738.Duration ensureEndpointingTimeoutDuration() => $_ensure(4);
 }
 
 /// Define behaviors on logging.
@@ -333,7 +333,7 @@ class AdvancedSettings_LoggingSettings extends $pb.GeneratedMessage {
 ///  Hierarchy: Agent->Flow->Page->Fulfillment/Parameter.
 class AdvancedSettings extends $pb.GeneratedMessage {
   factory AdvancedSettings({
-    $4483.GcsDestination? audioExportGcsDestination,
+    $4485.GcsDestination? audioExportGcsDestination,
     AdvancedSettings_SpeechSettings? speechSettings,
     AdvancedSettings_DtmfSettings? dtmfSettings,
     AdvancedSettings_LoggingSettings? loggingSettings,
@@ -358,7 +358,7 @@ class AdvancedSettings extends $pb.GeneratedMessage {
   factory AdvancedSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdvancedSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..aOM<$4483.GcsDestination>(2, _omitFieldNames ? '' : 'audioExportGcsDestination', subBuilder: $4483.GcsDestination.create)
+    ..aOM<$4485.GcsDestination>(2, _omitFieldNames ? '' : 'audioExportGcsDestination', subBuilder: $4485.GcsDestination.create)
     ..aOM<AdvancedSettings_SpeechSettings>(3, _omitFieldNames ? '' : 'speechSettings', subBuilder: AdvancedSettings_SpeechSettings.create)
     ..aOM<AdvancedSettings_DtmfSettings>(5, _omitFieldNames ? '' : 'dtmfSettings', subBuilder: AdvancedSettings_DtmfSettings.create)
     ..aOM<AdvancedSettings_LoggingSettings>(6, _omitFieldNames ? '' : 'loggingSettings', subBuilder: AdvancedSettings_LoggingSettings.create)
@@ -392,15 +392,15 @@ class AdvancedSettings extends $pb.GeneratedMessage {
   /// - Agent level
   /// - Flow level
   @$pb.TagNumber(2)
-  $4483.GcsDestination get audioExportGcsDestination => $_getN(0);
+  $4485.GcsDestination get audioExportGcsDestination => $_getN(0);
   @$pb.TagNumber(2)
-  set audioExportGcsDestination($4483.GcsDestination v) { setField(2, v); }
+  set audioExportGcsDestination($4485.GcsDestination v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAudioExportGcsDestination() => $_has(0);
   @$pb.TagNumber(2)
   void clearAudioExportGcsDestination() => clearField(2);
   @$pb.TagNumber(2)
-  $4483.GcsDestination ensureAudioExportGcsDestination() => $_ensure(0);
+  $4485.GcsDestination ensureAudioExportGcsDestination() => $_ensure(0);
 
   /// Settings for speech to text detection.
   /// Exposed at the following levels:

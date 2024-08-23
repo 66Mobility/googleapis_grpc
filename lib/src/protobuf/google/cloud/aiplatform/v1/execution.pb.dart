@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'execution.pbenum.dart';
 
 export 'execution.pbenum.dart';
@@ -27,11 +27,11 @@ class Execution extends $pb.GeneratedMessage {
     Execution_State? state,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? schemaTitle,
     $core.String? schemaVersion,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
     $core.String? description,
   }) {
     final $result = create();
@@ -80,11 +80,11 @@ class Execution extends $pb.GeneratedMessage {
     ..e<Execution_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Execution_State.STATE_UNSPECIFIED, valueOf: Execution_State.valueOf, enumValues: Execution_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'Execution.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(13, _omitFieldNames ? '' : 'schemaTitle')
     ..aOS(14, _omitFieldNames ? '' : 'schemaVersion')
-    ..aOM<$1734.Struct>(15, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(15, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..aOS(16, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -167,27 +167,27 @@ class Execution extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Execution was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Timestamp when this Execution was last updated.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   ///  The title of the schema describing the metadata.
   ///
@@ -221,15 +221,15 @@ class Execution extends $pb.GeneratedMessage {
   /// Top level metadata keys' heading and trailing spaces will be trimmed.
   /// The size of this field should not exceed 200KB.
   @$pb.TagNumber(15)
-  $1734.Struct get metadata => $_getN(9);
+  $1735.Struct get metadata => $_getN(9);
   @$pb.TagNumber(15)
-  set metadata($1734.Struct v) { setField(15, v); }
+  set metadata($1735.Struct v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasMetadata() => $_has(9);
   @$pb.TagNumber(15)
   void clearMetadata() => clearField(15);
   @$pb.TagNumber(15)
-  $1734.Struct ensureMetadata() => $_ensure(9);
+  $1735.Struct ensureMetadata() => $_ensure(9);
 
   /// Description of the Execution
   @$pb.TagNumber(16)

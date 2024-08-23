@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'annotations.pb.dart' as $4727;
-import 'annotations.pbenum.dart' as $4727;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'annotations.pb.dart' as $4729;
+import 'annotations.pbenum.dart' as $4729;
 import 'common.pb.dart' as $1502;
 import 'platform.pbenum.dart';
 
@@ -818,7 +818,7 @@ class CreateApplicationRequest extends $pb.GeneratedMessage {
 /// Message for updating an Application.
 class UpdateApplicationRequest extends $pb.GeneratedMessage {
   factory UpdateApplicationRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Application? application,
     $core.String? requestId,
   }) {
@@ -839,7 +839,7 @@ class UpdateApplicationRequest extends $pb.GeneratedMessage {
   factory UpdateApplicationRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateApplicationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Application>(2, _omitFieldNames ? '' : 'application', subBuilder: Application.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -872,15 +872,15 @@ class UpdateApplicationRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)
@@ -2182,7 +2182,7 @@ class CreateDraftRequest extends $pb.GeneratedMessage {
 /// Message for updating an Draft.
 class UpdateDraftRequest extends $pb.GeneratedMessage {
   factory UpdateDraftRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Draft? draft,
     $core.String? requestId,
     $core.bool? allowMissing,
@@ -2207,7 +2207,7 @@ class UpdateDraftRequest extends $pb.GeneratedMessage {
   factory UpdateDraftRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDraftRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Draft>(2, _omitFieldNames ? '' : 'draft', subBuilder: Draft.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
@@ -2241,15 +2241,15 @@ class UpdateDraftRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)
@@ -2299,7 +2299,7 @@ class UpdateDraftRequest extends $pb.GeneratedMessage {
 
 class UpdateApplicationInstancesRequest_UpdateApplicationInstance extends $pb.GeneratedMessage {
   factory UpdateApplicationInstancesRequest_UpdateApplicationInstance({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Instance? instance,
     $core.String? instanceId,
   }) {
@@ -2320,7 +2320,7 @@ class UpdateApplicationInstancesRequest_UpdateApplicationInstance extends $pb.Ge
   factory UpdateApplicationInstancesRequest_UpdateApplicationInstance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateApplicationInstancesRequest.UpdateApplicationInstance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Instance>(2, _omitFieldNames ? '' : 'instance', subBuilder: Instance.create)
     ..aOS(3, _omitFieldNames ? '' : 'instanceId')
     ..hasRequiredFields = false
@@ -2353,15 +2353,15 @@ class UpdateApplicationInstancesRequest_UpdateApplicationInstance extends $pb.Ge
   /// the full request. A field will be overwritten if it is in the mask. If
   /// the user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)
@@ -3017,7 +3017,7 @@ class CreateProcessorRequest extends $pb.GeneratedMessage {
 /// Message for updating a Processor.
 class UpdateProcessorRequest extends $pb.GeneratedMessage {
   factory UpdateProcessorRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Processor? processor,
     $core.String? requestId,
   }) {
@@ -3038,7 +3038,7 @@ class UpdateProcessorRequest extends $pb.GeneratedMessage {
   factory UpdateProcessorRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProcessorRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Processor>(2, _omitFieldNames ? '' : 'processor', subBuilder: Processor.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -3071,15 +3071,15 @@ class UpdateProcessorRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)
@@ -3338,7 +3338,7 @@ class Application_ApplicationRuntimeInfo_MonitoringConfig extends $pb.GeneratedM
 /// Message storing the runtime information of the application.
 class Application_ApplicationRuntimeInfo extends $pb.GeneratedMessage {
   factory Application_ApplicationRuntimeInfo({
-    $1775.Timestamp? deployTime,
+    $1776.Timestamp? deployTime,
     $core.Iterable<Application_ApplicationRuntimeInfo_GlobalOutputResource>? globalOutputResources,
     Application_ApplicationRuntimeInfo_MonitoringConfig? monitoringConfig,
   }) {
@@ -3359,7 +3359,7 @@ class Application_ApplicationRuntimeInfo extends $pb.GeneratedMessage {
   factory Application_ApplicationRuntimeInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application.ApplicationRuntimeInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'deployTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'deployTime', subBuilder: $1776.Timestamp.create)
     ..pc<Application_ApplicationRuntimeInfo_GlobalOutputResource>(3, _omitFieldNames ? '' : 'globalOutputResources', $pb.PbFieldType.PM, subBuilder: Application_ApplicationRuntimeInfo_GlobalOutputResource.create)
     ..aOM<Application_ApplicationRuntimeInfo_MonitoringConfig>(4, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: Application_ApplicationRuntimeInfo_MonitoringConfig.create)
     ..hasRequiredFields = false
@@ -3388,15 +3388,15 @@ class Application_ApplicationRuntimeInfo extends $pb.GeneratedMessage {
 
   /// Timestamp when the engine be deployed
   @$pb.TagNumber(1)
-  $1775.Timestamp get deployTime => $_getN(0);
+  $1776.Timestamp get deployTime => $_getN(0);
   @$pb.TagNumber(1)
-  set deployTime($1775.Timestamp v) { setField(1, v); }
+  set deployTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDeployTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearDeployTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureDeployTime() => $_ensure(0);
+  $1776.Timestamp ensureDeployTime() => $_ensure(0);
 
   /// Globally created resources like warehouse dataschemas.
   @$pb.TagNumber(3)
@@ -3419,8 +3419,8 @@ class Application_ApplicationRuntimeInfo extends $pb.GeneratedMessage {
 class Application extends $pb.GeneratedMessage {
   factory Application({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     $core.String? description,
@@ -3464,8 +3464,8 @@ class Application extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Application', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Application.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'description')
@@ -3508,27 +3508,27 @@ class Application extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create timestamp
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. [Output only] Update timestamp
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels as key value pairs
   @$pb.TagNumber(4)
@@ -3594,7 +3594,7 @@ class Application extends $pb.GeneratedMessage {
 class ApplicationConfigs_EventDeliveryConfig extends $pb.GeneratedMessage {
   factory ApplicationConfigs_EventDeliveryConfig({
     $core.String? channel,
-    $1737.Duration? minimalDeliveryInterval,
+    $1738.Duration? minimalDeliveryInterval,
   }) {
     final $result = create();
     if (channel != null) {
@@ -3611,7 +3611,7 @@ class ApplicationConfigs_EventDeliveryConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplicationConfigs.EventDeliveryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'channel')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'minimalDeliveryInterval', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'minimalDeliveryInterval', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -3654,15 +3654,15 @@ class ApplicationConfigs_EventDeliveryConfig extends $pb.GeneratedMessage {
   /// happening multiple times during the period of time.The same event is
   /// identified by <event_id, app_platform_metadata>.
   @$pb.TagNumber(2)
-  $1737.Duration get minimalDeliveryInterval => $_getN(1);
+  $1738.Duration get minimalDeliveryInterval => $_getN(1);
   @$pb.TagNumber(2)
-  set minimalDeliveryInterval($1737.Duration v) { setField(2, v); }
+  set minimalDeliveryInterval($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMinimalDeliveryInterval() => $_has(1);
   @$pb.TagNumber(2)
   void clearMinimalDeliveryInterval() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMinimalDeliveryInterval() => $_ensure(1);
+  $1738.Duration ensureMinimalDeliveryInterval() => $_ensure(1);
 }
 
 /// Message storing the graph of the application.
@@ -3970,12 +3970,12 @@ class Node extends $pb.GeneratedMessage {
 class Draft extends $pb.GeneratedMessage {
   factory Draft({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     $core.String? description,
     ApplicationConfigs? draftApplicationConfigs,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -4007,12 +4007,12 @@ class Draft extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Draft', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'Draft.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1alpha1'))
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOM<ApplicationConfigs>(6, _omitFieldNames ? '' : 'draftApplicationConfigs', subBuilder: ApplicationConfigs.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4049,15 +4049,15 @@ class Draft extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create timestamp
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Labels as key value pairs
   @$pb.TagNumber(3)
@@ -4097,15 +4097,15 @@ class Draft extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create timestamp
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 }
 
 enum Instance_InputResource_InputResourceInformation {
@@ -4377,13 +4377,13 @@ class Instance_OutputResource extends $pb.GeneratedMessage {
 class Instance extends $pb.GeneratedMessage {
   factory Instance({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     $core.String? description,
     $core.Iterable<Instance_InputResource>? inputResources,
     $core.Iterable<Instance_OutputResource>? outputResources,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     Instance_State? state,
   }) {
     final $result = create();
@@ -4422,13 +4422,13 @@ class Instance extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Instance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'Instance.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1alpha1'))
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..pc<Instance_InputResource>(6, _omitFieldNames ? '' : 'inputResources', $pb.PbFieldType.PM, subBuilder: Instance_InputResource.create)
     ..pc<Instance_OutputResource>(7, _omitFieldNames ? '' : 'outputResources', $pb.PbFieldType.PM, subBuilder: Instance_OutputResource.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Instance_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Instance_State.STATE_UNSPECIFIED, valueOf: Instance_State.valueOf, enumValues: Instance_State.values)
     ..hasRequiredFields = false
   ;
@@ -4466,15 +4466,15 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create timestamp
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Labels as key value pairs
   @$pb.TagNumber(3)
@@ -4513,15 +4513,15 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Update timestamp
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// State of the instance.
   @$pb.TagNumber(9)
@@ -4608,8 +4608,8 @@ class ApplicationInstance extends $pb.GeneratedMessage {
 class Processor extends $pb.GeneratedMessage {
   factory Processor({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     Processor_ProcessorType? processorType,
@@ -4619,7 +4619,7 @@ class Processor extends $pb.GeneratedMessage {
     ProcessorIOSpec? processorIoSpec,
     ModelType? modelType,
     $core.String? configurationTypeurl,
-    $core.Iterable<$4727.StreamAnnotationType>? supportedAnnotationTypes,
+    $core.Iterable<$4729.StreamAnnotationType>? supportedAnnotationTypes,
     $core.bool? supportsPostProcessing,
   }) {
     final $result = create();
@@ -4673,8 +4673,8 @@ class Processor extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Processor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Processor.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..e<Processor_ProcessorType>(6, _omitFieldNames ? '' : 'processorType', $pb.PbFieldType.OE, defaultOrMaker: Processor_ProcessorType.PROCESSOR_TYPE_UNSPECIFIED, valueOf: Processor_ProcessorType.valueOf, enumValues: Processor_ProcessorType.values)
@@ -4684,7 +4684,7 @@ class Processor extends $pb.GeneratedMessage {
     ..aOM<ProcessorIOSpec>(11, _omitFieldNames ? '' : 'processorIoSpec', subBuilder: ProcessorIOSpec.create)
     ..e<ModelType>(13, _omitFieldNames ? '' : 'modelType', $pb.PbFieldType.OE, defaultOrMaker: ModelType.MODEL_TYPE_UNSPECIFIED, valueOf: ModelType.valueOf, enumValues: ModelType.values)
     ..aOS(14, _omitFieldNames ? '' : 'configurationTypeurl')
-    ..pc<$4727.StreamAnnotationType>(15, _omitFieldNames ? '' : 'supportedAnnotationTypes', $pb.PbFieldType.KE, valueOf: $4727.StreamAnnotationType.valueOf, enumValues: $4727.StreamAnnotationType.values, defaultEnumValue: $4727.StreamAnnotationType.STREAM_ANNOTATION_TYPE_UNSPECIFIED)
+    ..pc<$4729.StreamAnnotationType>(15, _omitFieldNames ? '' : 'supportedAnnotationTypes', $pb.PbFieldType.KE, valueOf: $4729.StreamAnnotationType.valueOf, enumValues: $4729.StreamAnnotationType.values, defaultEnumValue: $4729.StreamAnnotationType.STREAM_ANNOTATION_TYPE_UNSPECIFIED)
     ..aOB(17, _omitFieldNames ? '' : 'supportsPostProcessing')
     ..hasRequiredFields = false
   ;
@@ -4722,27 +4722,27 @@ class Processor extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. [Output only] Update timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels as key value pairs.
   @$pb.TagNumber(4)
@@ -4836,7 +4836,7 @@ class Processor extends $pb.GeneratedMessage {
   void clearConfigurationTypeurl() => clearField(14);
 
   @$pb.TagNumber(15)
-  $core.List<$4727.StreamAnnotationType> get supportedAnnotationTypes => $_getList(12);
+  $core.List<$4729.StreamAnnotationType> get supportedAnnotationTypes => $_getList(12);
 
   /// Indicates if the processor supports post processing.
   @$pb.TagNumber(17)
@@ -5788,7 +5788,7 @@ class ProcessorConfig extends $pb.GeneratedMessage {
 class StreamWithAnnotation_NodeAnnotation extends $pb.GeneratedMessage {
   factory StreamWithAnnotation_NodeAnnotation({
     $core.String? node,
-    $core.Iterable<$4727.StreamAnnotation>? annotations,
+    $core.Iterable<$4729.StreamAnnotation>? annotations,
   }) {
     final $result = create();
     if (node != null) {
@@ -5805,7 +5805,7 @@ class StreamWithAnnotation_NodeAnnotation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamWithAnnotation.NodeAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'node')
-    ..pc<$4727.StreamAnnotation>(2, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM, subBuilder: $4727.StreamAnnotation.create)
+    ..pc<$4729.StreamAnnotation>(2, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM, subBuilder: $4729.StreamAnnotation.create)
     ..hasRequiredFields = false
   ;
 
@@ -5842,7 +5842,7 @@ class StreamWithAnnotation_NodeAnnotation extends $pb.GeneratedMessage {
 
   /// The node specific stream annotations.
   @$pb.TagNumber(2)
-  $core.List<$4727.StreamAnnotation> get annotations => $_getList(1);
+  $core.List<$4729.StreamAnnotation> get annotations => $_getList(1);
 }
 
 /// Message describing Vision AI stream with application specific annotations.
@@ -5850,7 +5850,7 @@ class StreamWithAnnotation_NodeAnnotation extends $pb.GeneratedMessage {
 class StreamWithAnnotation extends $pb.GeneratedMessage {
   factory StreamWithAnnotation({
     $core.String? stream,
-    $core.Iterable<$4727.StreamAnnotation>? applicationAnnotations,
+    $core.Iterable<$4729.StreamAnnotation>? applicationAnnotations,
     $core.Iterable<StreamWithAnnotation_NodeAnnotation>? nodeAnnotations,
   }) {
     final $result = create();
@@ -5871,7 +5871,7 @@ class StreamWithAnnotation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamWithAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'stream')
-    ..pc<$4727.StreamAnnotation>(2, _omitFieldNames ? '' : 'applicationAnnotations', $pb.PbFieldType.PM, subBuilder: $4727.StreamAnnotation.create)
+    ..pc<$4729.StreamAnnotation>(2, _omitFieldNames ? '' : 'applicationAnnotations', $pb.PbFieldType.PM, subBuilder: $4729.StreamAnnotation.create)
     ..pc<StreamWithAnnotation_NodeAnnotation>(3, _omitFieldNames ? '' : 'nodeAnnotations', $pb.PbFieldType.PM, subBuilder: StreamWithAnnotation_NodeAnnotation.create)
     ..hasRequiredFields = false
   ;
@@ -5909,7 +5909,7 @@ class StreamWithAnnotation extends $pb.GeneratedMessage {
 
   /// Annotations that will be applied to the whole application.
   @$pb.TagNumber(2)
-  $core.List<$4727.StreamAnnotation> get applicationAnnotations => $_getList(1);
+  $core.List<$4729.StreamAnnotation> get applicationAnnotations => $_getList(1);
 
   /// Annotations that will be applied to the specific node of the application.
   /// If the same type of the annotations is applied to both application and
@@ -5928,7 +5928,7 @@ class StreamWithAnnotation extends $pb.GeneratedMessage {
 class ApplicationNodeAnnotation extends $pb.GeneratedMessage {
   factory ApplicationNodeAnnotation({
     $core.String? node,
-    $core.Iterable<$4727.StreamAnnotation>? annotations,
+    $core.Iterable<$4729.StreamAnnotation>? annotations,
   }) {
     final $result = create();
     if (node != null) {
@@ -5945,7 +5945,7 @@ class ApplicationNodeAnnotation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplicationNodeAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'node')
-    ..pc<$4727.StreamAnnotation>(2, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM, subBuilder: $4727.StreamAnnotation.create)
+    ..pc<$4729.StreamAnnotation>(2, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM, subBuilder: $4729.StreamAnnotation.create)
     ..hasRequiredFields = false
   ;
 
@@ -5982,13 +5982,13 @@ class ApplicationNodeAnnotation extends $pb.GeneratedMessage {
 
   /// The node specific stream annotations.
   @$pb.TagNumber(2)
-  $core.List<$4727.StreamAnnotation> get annotations => $_getList(1);
+  $core.List<$4729.StreamAnnotation> get annotations => $_getList(1);
 }
 
 /// Message describing general annotation for resources.
 class ResourceAnnotations extends $pb.GeneratedMessage {
   factory ResourceAnnotations({
-    $core.Iterable<$4727.StreamAnnotation>? applicationAnnotations,
+    $core.Iterable<$4729.StreamAnnotation>? applicationAnnotations,
     $core.Iterable<ApplicationNodeAnnotation>? nodeAnnotations,
   }) {
     final $result = create();
@@ -6005,7 +6005,7 @@ class ResourceAnnotations extends $pb.GeneratedMessage {
   factory ResourceAnnotations.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResourceAnnotations', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..pc<$4727.StreamAnnotation>(1, _omitFieldNames ? '' : 'applicationAnnotations', $pb.PbFieldType.PM, subBuilder: $4727.StreamAnnotation.create)
+    ..pc<$4729.StreamAnnotation>(1, _omitFieldNames ? '' : 'applicationAnnotations', $pb.PbFieldType.PM, subBuilder: $4729.StreamAnnotation.create)
     ..pc<ApplicationNodeAnnotation>(2, _omitFieldNames ? '' : 'nodeAnnotations', $pb.PbFieldType.PM, subBuilder: ApplicationNodeAnnotation.create)
     ..hasRequiredFields = false
   ;
@@ -6033,7 +6033,7 @@ class ResourceAnnotations extends $pb.GeneratedMessage {
 
   /// Annotations that will be applied to the whole application.
   @$pb.TagNumber(1)
-  $core.List<$4727.StreamAnnotation> get applicationAnnotations => $_getList(0);
+  $core.List<$4729.StreamAnnotation> get applicationAnnotations => $_getList(0);
 
   /// Annotations that will be applied to the specific node of the application.
   /// If the same type of the annotations is applied to both application and
@@ -6148,7 +6148,7 @@ class MediaWarehouseConfig extends $pb.GeneratedMessage {
     $core.String? corpus,
   @$core.Deprecated('This field is deprecated.')
     $core.String? region,
-    $1737.Duration? ttl,
+    $1738.Duration? ttl,
   }) {
     final $result = create();
     if (corpus != null) {
@@ -6170,7 +6170,7 @@ class MediaWarehouseConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MediaWarehouseConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'corpus')
     ..aOS(2, _omitFieldNames ? '' : 'region')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -6224,15 +6224,15 @@ class MediaWarehouseConfig extends $pb.GeneratedMessage {
   /// The duration for which all media assets, associated metadata, and search
   /// documents can exist.
   @$pb.TagNumber(3)
-  $1737.Duration get ttl => $_getN(2);
+  $1738.Duration get ttl => $_getN(2);
   @$pb.TagNumber(3)
-  set ttl($1737.Duration v) { setField(3, v); }
+  set ttl($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTtl() => $_has(2);
   @$pb.TagNumber(3)
   void clearTtl() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTtl() => $_ensure(2);
+  $1738.Duration ensureTtl() => $_ensure(2);
 }
 
 /// Message describing FaceBlurConfig.

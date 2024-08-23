@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'answer.pb.dart' as $962;
-import 'common.pb.dart' as $4504;
+import 'common.pb.dart' as $4506;
 import 'conversation.pb.dart' as $961;
 import 'conversational_search_service.pbenum.dart';
 import 'search_service.pb.dart' as $959;
@@ -407,7 +407,7 @@ class CreateConversationRequest extends $pb.GeneratedMessage {
 class UpdateConversationRequest extends $pb.GeneratedMessage {
   factory UpdateConversationRequest({
     $961.Conversation? conversation,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (conversation != null) {
@@ -424,7 +424,7 @@ class UpdateConversationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConversationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOM<$961.Conversation>(1, _omitFieldNames ? '' : 'conversation', subBuilder: $961.Conversation.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -469,15 +469,15 @@ class UpdateConversationRequest extends $pb.GeneratedMessage {
   ///
   ///  If not set or empty, all supported fields are updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for DeleteConversation method.
@@ -1162,7 +1162,7 @@ class AnswerQueryRequest_SearchSpec_SearchParams extends $pb.GeneratedMessage {
     $959.SearchRequest_BoostSpec? boostSpec,
     $core.String? orderBy,
     $959.SearchRequest_ContentSearchSpec_SearchResultMode? searchResultMode,
-    $4504.CustomFineTuningSpec? customFineTuningSpec,
+    $4506.CustomFineTuningSpec? customFineTuningSpec,
     $core.Iterable<$959.SearchRequest_DataStoreSpec>? dataStoreSpecs,
   }) {
     final $result = create();
@@ -1199,7 +1199,7 @@ class AnswerQueryRequest_SearchSpec_SearchParams extends $pb.GeneratedMessage {
     ..aOM<$959.SearchRequest_BoostSpec>(3, _omitFieldNames ? '' : 'boostSpec', subBuilder: $959.SearchRequest_BoostSpec.create)
     ..aOS(4, _omitFieldNames ? '' : 'orderBy')
     ..e<$959.SearchRequest_ContentSearchSpec_SearchResultMode>(5, _omitFieldNames ? '' : 'searchResultMode', $pb.PbFieldType.OE, defaultOrMaker: $959.SearchRequest_ContentSearchSpec_SearchResultMode.SEARCH_RESULT_MODE_UNSPECIFIED, valueOf: $959.SearchRequest_ContentSearchSpec_SearchResultMode.valueOf, enumValues: $959.SearchRequest_ContentSearchSpec_SearchResultMode.values)
-    ..aOM<$4504.CustomFineTuningSpec>(6, _omitFieldNames ? '' : 'customFineTuningSpec', subBuilder: $4504.CustomFineTuningSpec.create)
+    ..aOM<$4506.CustomFineTuningSpec>(6, _omitFieldNames ? '' : 'customFineTuningSpec', subBuilder: $4506.CustomFineTuningSpec.create)
     ..pc<$959.SearchRequest_DataStoreSpec>(7, _omitFieldNames ? '' : 'dataStoreSpecs', $pb.PbFieldType.PM, subBuilder: $959.SearchRequest_DataStoreSpec.create)
     ..hasRequiredFields = false
   ;
@@ -1308,15 +1308,15 @@ class AnswerQueryRequest_SearchSpec_SearchParams extends $pb.GeneratedMessage {
 
   /// Custom fine tuning configs.
   @$pb.TagNumber(6)
-  $4504.CustomFineTuningSpec get customFineTuningSpec => $_getN(5);
+  $4506.CustomFineTuningSpec get customFineTuningSpec => $_getN(5);
   @$pb.TagNumber(6)
-  set customFineTuningSpec($4504.CustomFineTuningSpec v) { setField(6, v); }
+  set customFineTuningSpec($4506.CustomFineTuningSpec v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCustomFineTuningSpec() => $_has(5);
   @$pb.TagNumber(6)
   void clearCustomFineTuningSpec() => clearField(6);
   @$pb.TagNumber(6)
-  $4504.CustomFineTuningSpec ensureCustomFineTuningSpec() => $_ensure(5);
+  $4506.CustomFineTuningSpec ensureCustomFineTuningSpec() => $_ensure(5);
 
   /// Specs defining dataStores to filter on in a search call and
   /// configurations for those dataStores. This is only considered for
@@ -2586,7 +2586,7 @@ class CreateSessionRequest extends $pb.GeneratedMessage {
 class UpdateSessionRequest extends $pb.GeneratedMessage {
   factory UpdateSessionRequest({
     $963.Session? session,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (session != null) {
@@ -2603,7 +2603,7 @@ class UpdateSessionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSessionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOM<$963.Session>(1, _omitFieldNames ? '' : 'session', subBuilder: $963.Session.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2648,15 +2648,15 @@ class UpdateSessionRequest extends $pb.GeneratedMessage {
   ///
   ///  If not set or empty, all supported fields are updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for DeleteSession method.

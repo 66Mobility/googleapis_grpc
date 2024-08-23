@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_link_primary_status.pbenum.dart' as $1828;
-import '../enums/asset_link_primary_status_reason.pbenum.dart' as $1827;
-import '../enums/asset_offline_evaluation_error_reasons.pbenum.dart' as $1829;
-import '../enums/policy_approval_status.pbenum.dart' as $1826;
-import '../enums/policy_review_status.pbenum.dart' as $1825;
-import 'policy.pb.dart' as $1824;
+import '../enums/asset_link_primary_status.pbenum.dart' as $1829;
+import '../enums/asset_link_primary_status_reason.pbenum.dart' as $1828;
+import '../enums/asset_offline_evaluation_error_reasons.pbenum.dart' as $1830;
+import '../enums/policy_approval_status.pbenum.dart' as $1827;
+import '../enums/policy_review_status.pbenum.dart' as $1826;
+import 'policy.pb.dart' as $1825;
 
 /// Contains policy information for an asset inside an ad.
 class AdAssetPolicySummary extends $pb.GeneratedMessage {
   factory AdAssetPolicySummary({
-    $core.Iterable<$1824.PolicyTopicEntry>? policyTopicEntries,
-    $1825.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
-    $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
+    $core.Iterable<$1825.PolicyTopicEntry>? policyTopicEntries,
+    $1826.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
+    $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
   }) {
     final $result = create();
     if (policyTopicEntries != null) {
@@ -44,9 +44,9 @@ class AdAssetPolicySummary extends $pb.GeneratedMessage {
   factory AdAssetPolicySummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdAssetPolicySummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1824.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $1824.PolicyTopicEntry.create)
-    ..e<$1825.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $1825.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $1825.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $1825.PolicyReviewStatusEnum_PolicyReviewStatus.values)
-    ..e<$1826.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
+    ..pc<$1825.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $1825.PolicyTopicEntry.create)
+    ..e<$1826.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $1826.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $1826.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $1826.PolicyReviewStatusEnum_PolicyReviewStatus.values)
+    ..e<$1827.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -73,13 +73,13 @@ class AdAssetPolicySummary extends $pb.GeneratedMessage {
 
   /// The list of policy findings for this asset.
   @$pb.TagNumber(1)
-  $core.List<$1824.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
+  $core.List<$1825.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
 
   /// Where in the review process this asset.
   @$pb.TagNumber(2)
-  $1825.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
+  $1826.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set reviewStatus($1825.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
+  set reviewStatus($1826.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReviewStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -88,9 +88,9 @@ class AdAssetPolicySummary extends $pb.GeneratedMessage {
   /// The overall approval status of this asset, which is calculated based on
   /// the status of its individual policy topic entries.
   @$pb.TagNumber(3)
-  $1826.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
+  $1827.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set approvalStatus($1826.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
+  set approvalStatus($1827.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApprovalStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -111,8 +111,8 @@ enum AssetLinkPrimaryStatusDetails_Details {
 /// evaluation errors which led to the asset being disapproved.
 class AssetLinkPrimaryStatusDetails extends $pb.GeneratedMessage {
   factory AssetLinkPrimaryStatusDetails({
-    $1827.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason? reason,
-    $1828.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? status,
+    $1828.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason? reason,
+    $1829.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? status,
     AssetDisapproved? assetDisapproved,
   }) {
     final $result = create();
@@ -137,8 +137,8 @@ class AssetLinkPrimaryStatusDetails extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetLinkPrimaryStatusDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..oo(0, [3])
-    ..e<$1827.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(1, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE, defaultOrMaker: $1827.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED, valueOf: $1827.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $1827.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values)
-    ..e<$1828.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1828.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $1828.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $1828.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
+    ..e<$1828.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(1, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE, defaultOrMaker: $1828.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED, valueOf: $1828.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $1828.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values)
+    ..e<$1829.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1829.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $1829.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $1829.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
     ..aOM<AssetDisapproved>(3, _omitFieldNames ? '' : 'assetDisapproved', subBuilder: AssetDisapproved.create)
     ..hasRequiredFields = false
   ;
@@ -169,9 +169,9 @@ class AssetLinkPrimaryStatusDetails extends $pb.GeneratedMessage {
 
   /// Provides the reason of this PrimaryStatus.
   @$pb.TagNumber(1)
-  $1827.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason get reason => $_getN(0);
+  $1828.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason get reason => $_getN(0);
   @$pb.TagNumber(1)
-  set reason($1827.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason v) { setField(1, v); }
+  set reason($1828.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReason() => $_has(0);
   @$pb.TagNumber(1)
@@ -179,9 +179,9 @@ class AssetLinkPrimaryStatusDetails extends $pb.GeneratedMessage {
 
   /// Provides the PrimaryStatus of this status detail.
   @$pb.TagNumber(2)
-  $1828.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get status => $_getN(1);
+  $1829.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1828.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(2, v); }
+  set status($1829.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -203,7 +203,7 @@ class AssetLinkPrimaryStatusDetails extends $pb.GeneratedMessage {
 /// Details related to AssetLinkPrimaryStatusReasonPB.ASSET_DISAPPROVED
 class AssetDisapproved extends $pb.GeneratedMessage {
   factory AssetDisapproved({
-    $core.Iterable<$1829.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons>? offlineEvaluationErrorReasons,
+    $core.Iterable<$1830.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons>? offlineEvaluationErrorReasons,
   }) {
     final $result = create();
     if (offlineEvaluationErrorReasons != null) {
@@ -216,7 +216,7 @@ class AssetDisapproved extends $pb.GeneratedMessage {
   factory AssetDisapproved.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetDisapproved', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1829.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons>(1, _omitFieldNames ? '' : 'offlineEvaluationErrorReasons', $pb.PbFieldType.KE, valueOf: $1829.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons.valueOf, enumValues: $1829.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons.values, defaultEnumValue: $1829.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons.UNSPECIFIED)
+    ..pc<$1830.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons>(1, _omitFieldNames ? '' : 'offlineEvaluationErrorReasons', $pb.PbFieldType.KE, valueOf: $1830.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons.valueOf, enumValues: $1830.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons.values, defaultEnumValue: $1830.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -243,7 +243,7 @@ class AssetDisapproved extends $pb.GeneratedMessage {
 
   /// Provides the quality evaluation disapproval reason of an asset.
   @$pb.TagNumber(1)
-  $core.List<$1829.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons> get offlineEvaluationErrorReasons => $_getList(0);
+  $core.List<$1830.AssetOfflineEvaluationErrorReasonsEnum_AssetOfflineEvaluationErrorReasons> get offlineEvaluationErrorReasons => $_getList(0);
 }
 
 

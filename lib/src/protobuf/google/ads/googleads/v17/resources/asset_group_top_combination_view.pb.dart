@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_usage.pb.dart' as $3549;
+import '../common/asset_usage.pb.dart' as $3550;
 
 /// A view on the usage of ad group ad asset combination.
 class AssetGroupTopCombinationView extends $pb.GeneratedMessage {
@@ -81,7 +81,7 @@ class AssetGroupTopCombinationView extends $pb.GeneratedMessage {
 /// Asset group asset combination data
 class AssetGroupAssetCombinationData extends $pb.GeneratedMessage {
   factory AssetGroupAssetCombinationData({
-    $core.Iterable<$3549.AssetUsage>? assetCombinationServedAssets,
+    $core.Iterable<$3550.AssetUsage>? assetCombinationServedAssets,
   }) {
     final $result = create();
     if (assetCombinationServedAssets != null) {
@@ -94,7 +94,7 @@ class AssetGroupAssetCombinationData extends $pb.GeneratedMessage {
   factory AssetGroupAssetCombinationData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetGroupAssetCombinationData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..pc<$3549.AssetUsage>(1, _omitFieldNames ? '' : 'assetCombinationServedAssets', $pb.PbFieldType.PM, subBuilder: $3549.AssetUsage.create)
+    ..pc<$3550.AssetUsage>(1, _omitFieldNames ? '' : 'assetCombinationServedAssets', $pb.PbFieldType.PM, subBuilder: $3550.AssetUsage.create)
     ..hasRequiredFields = false
   ;
 
@@ -121,7 +121,7 @@ class AssetGroupAssetCombinationData extends $pb.GeneratedMessage {
 
   /// Output only. Served assets.
   @$pb.TagNumber(1)
-  $core.List<$3549.AssetUsage> get assetCombinationServedAssets => $_getList(0);
+  $core.List<$3550.AssetUsage> get assetCombinationServedAssets => $_getList(0);
 }
 
 

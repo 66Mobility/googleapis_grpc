@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/struct.pb.dart' as $1735;
 
 /// Information related to the details for one ad tag. This resource is only
 /// available for live sessions that do not implement Google Ad Manager ad
@@ -233,7 +233,7 @@ class AdRequest extends $pb.GeneratedMessage {
 /// Metadata for an ad request.
 class RequestMetadata extends $pb.GeneratedMessage {
   factory RequestMetadata({
-    $1734.Struct? headers,
+    $1735.Struct? headers,
   }) {
     final $result = create();
     if (headers != null) {
@@ -246,7 +246,7 @@ class RequestMetadata extends $pb.GeneratedMessage {
   factory RequestMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'headers', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'headers', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -273,25 +273,25 @@ class RequestMetadata extends $pb.GeneratedMessage {
 
   /// The HTTP headers of the ad request.
   @$pb.TagNumber(1)
-  $1734.Struct get headers => $_getN(0);
+  $1735.Struct get headers => $_getN(0);
   @$pb.TagNumber(1)
-  set headers($1734.Struct v) { setField(1, v); }
+  set headers($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeaders() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeaders() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureHeaders() => $_ensure(0);
+  $1735.Struct ensureHeaders() => $_ensure(0);
 }
 
 /// Metadata for the response of an ad request.
 class ResponseMetadata extends $pb.GeneratedMessage {
   factory ResponseMetadata({
     $core.String? error,
-    $1734.Struct? headers,
+    $1735.Struct? headers,
     $core.String? statusCode,
     $core.int? sizeBytes,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $core.String? body,
   }) {
     final $result = create();
@@ -321,10 +321,10 @@ class ResponseMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'error')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'headers', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'headers', subBuilder: $1735.Struct.create)
     ..aOS(3, _omitFieldNames ? '' : 'statusCode')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'sizeBytes', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aOS(6, _omitFieldNames ? '' : 'body')
     ..hasRequiredFields = false
   ;
@@ -362,15 +362,15 @@ class ResponseMetadata extends $pb.GeneratedMessage {
 
   /// Headers from the response.
   @$pb.TagNumber(2)
-  $1734.Struct get headers => $_getN(1);
+  $1735.Struct get headers => $_getN(1);
   @$pb.TagNumber(2)
-  set headers($1734.Struct v) { setField(2, v); }
+  set headers($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasHeaders() => $_has(1);
   @$pb.TagNumber(2)
   void clearHeaders() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureHeaders() => $_ensure(1);
+  $1735.Struct ensureHeaders() => $_ensure(1);
 
   /// Status code for the response.
   @$pb.TagNumber(3)
@@ -394,15 +394,15 @@ class ResponseMetadata extends $pb.GeneratedMessage {
 
   /// Total time elapsed for the response.
   @$pb.TagNumber(5)
-  $1737.Duration get duration => $_getN(4);
+  $1738.Duration get duration => $_getN(4);
   @$pb.TagNumber(5)
-  set duration($1737.Duration v) { setField(5, v); }
+  set duration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureDuration() => $_ensure(4);
+  $1738.Duration ensureDuration() => $_ensure(4);
 
   /// The body of the response.
   @$pb.TagNumber(6)

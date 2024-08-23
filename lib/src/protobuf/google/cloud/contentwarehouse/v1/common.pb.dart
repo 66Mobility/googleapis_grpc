@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -195,7 +195,7 @@ class UserInfo extends $pb.GeneratedMessage {
 class UpdateOptions extends $pb.GeneratedMessage {
   factory UpdateOptions({
     UpdateType? updateType,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     MergeFieldsOptions? mergeFieldsOptions,
   }) {
     final $result = create();
@@ -216,7 +216,7 @@ class UpdateOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..e<UpdateType>(1, _omitFieldNames ? '' : 'updateType', $pb.PbFieldType.OE, defaultOrMaker: UpdateType.UPDATE_TYPE_UNSPECIFIED, valueOf: UpdateType.valueOf, enumValues: UpdateType.values)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<MergeFieldsOptions>(3, _omitFieldNames ? '' : 'mergeFieldsOptions', subBuilder: MergeFieldsOptions.create)
     ..hasRequiredFields = false
   ;
@@ -257,15 +257,15 @@ class UpdateOptions extends $pb.GeneratedMessage {
   /// see
   /// https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Options for merging.
   @$pb.TagNumber(3)

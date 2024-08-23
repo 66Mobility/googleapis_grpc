@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'environment.pb.dart' as $1162;
 import 'runtime.pbenum.dart';
 
@@ -35,8 +35,8 @@ class Runtime extends $pb.GeneratedMessage {
     RuntimeAccessConfig? accessConfig,
     RuntimeSoftwareConfig? softwareConfig,
     RuntimeMetrics? metrics,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -85,8 +85,8 @@ class Runtime extends $pb.GeneratedMessage {
     ..aOM<RuntimeAccessConfig>(5, _omitFieldNames ? '' : 'accessConfig', subBuilder: RuntimeAccessConfig.create)
     ..aOM<RuntimeSoftwareConfig>(6, _omitFieldNames ? '' : 'softwareConfig', subBuilder: RuntimeSoftwareConfig.create)
     ..aOM<RuntimeMetrics>(7, _omitFieldNames ? '' : 'metrics', subBuilder: RuntimeMetrics.create)
-    ..aOM<$1775.Timestamp>(20, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(21, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(20, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(21, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -197,27 +197,27 @@ class Runtime extends $pb.GeneratedMessage {
 
   /// Output only. Runtime creation time.
   @$pb.TagNumber(20)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(20)
-  set createTime($1775.Timestamp v) { setField(20, v); }
+  set createTime($1776.Timestamp v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(20)
   void clearCreateTime() => clearField(20);
   @$pb.TagNumber(20)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Runtime update time.
   @$pb.TagNumber(21)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(21)
-  set updateTime($1775.Timestamp v) { setField(21, v); }
+  set updateTime($1776.Timestamp v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(21)
   void clearUpdateTime() => clearField(21);
   @$pb.TagNumber(21)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 }
 
 ///  Definition of the types of hardware accelerators that can be used.

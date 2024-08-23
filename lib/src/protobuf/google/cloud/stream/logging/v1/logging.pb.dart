@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'logging.pbenum.dart';
 
 export 'logging.pbenum.dart';
@@ -25,7 +25,7 @@ export 'logging.pbenum.dart';
 class OperationEventLog extends $pb.GeneratedMessage {
   factory OperationEventLog({
     OperationEventType? eventType,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     $core.String? operation,
     $core.Iterable<OperationArtifact>? operationArtifacts,
   }) {
@@ -50,7 +50,7 @@ class OperationEventLog extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationEventLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.stream.logging.v1'), createEmptyInstance: create)
     ..e<OperationEventType>(1, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: OperationEventType.OPERATION_EVENT_TYPE_UNSPECIFIED, valueOf: OperationEventType.valueOf, enumValues: OperationEventType.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'operation')
     ..pc<OperationArtifact>(4, _omitFieldNames ? '' : 'operationArtifacts', $pb.PbFieldType.PM, subBuilder: OperationArtifact.create)
     ..hasRequiredFields = false
@@ -89,15 +89,15 @@ class OperationEventLog extends $pb.GeneratedMessage {
 
   /// Timestamp when the event occurred.
   @$pb.TagNumber(2)
-  $1775.Timestamp get eventTime => $_getN(1);
+  $1776.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventTime($1775.Timestamp v) { setField(2, v); }
+  set eventTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEventTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEventTime() => $_ensure(1);
+  $1776.Timestamp ensureEventTime() => $_ensure(1);
 
   /// Operation resource identifier.
   @$pb.TagNumber(3)
@@ -189,7 +189,7 @@ class OperationArtifact extends $pb.GeneratedMessage {
 class SessionEventLog extends $pb.GeneratedMessage {
   factory SessionEventLog({
     SessionEventType? eventType,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     $core.String? sessionId,
   }) {
     final $result = create();
@@ -210,7 +210,7 @@ class SessionEventLog extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SessionEventLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.stream.logging.v1'), createEmptyInstance: create)
     ..e<SessionEventType>(1, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: SessionEventType.SESSION_EVENT_TYPE_UNSPECIFIED, valueOf: SessionEventType.valueOf, enumValues: SessionEventType.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'sessionId')
     ..hasRequiredFields = false
   ;
@@ -248,15 +248,15 @@ class SessionEventLog extends $pb.GeneratedMessage {
 
   /// Timestamp when the event occurred.
   @$pb.TagNumber(2)
-  $1775.Timestamp get eventTime => $_getN(1);
+  $1776.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventTime($1775.Timestamp v) { setField(2, v); }
+  set eventTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEventTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEventTime() => $_ensure(1);
+  $1776.Timestamp ensureEventTime() => $_ensure(1);
 
   /// Session identifier generated from the server.
   @$pb.TagNumber(3)

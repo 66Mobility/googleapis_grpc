@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'finding.pbenum.dart';
 import 'security_marks.pb.dart' as $1361;
 
@@ -34,10 +34,10 @@ class Finding extends $pb.GeneratedMessage {
     Finding_State? state,
     $core.String? category,
     $core.String? externalUri,
-    $core.Map<$core.String, $1734.Value>? sourceProperties,
+    $core.Map<$core.String, $1735.Value>? sourceProperties,
     $1361.SecurityMarks? securityMarks,
-    $1775.Timestamp? eventTime,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? eventTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -83,10 +83,10 @@ class Finding extends $pb.GeneratedMessage {
     ..e<Finding_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Finding_State.STATE_UNSPECIFIED, valueOf: Finding_State.valueOf, enumValues: Finding_State.values)
     ..aOS(5, _omitFieldNames ? '' : 'category')
     ..aOS(6, _omitFieldNames ? '' : 'externalUri')
-    ..m<$core.String, $1734.Value>(7, _omitFieldNames ? '' : 'sourceProperties', entryClassName: 'Finding.SourcePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v1beta1'))
+    ..m<$core.String, $1735.Value>(7, _omitFieldNames ? '' : 'sourceProperties', entryClassName: 'Finding.SourcePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v1beta1'))
     ..aOM<$1361.SecurityMarks>(8, _omitFieldNames ? '' : 'securityMarks', subBuilder: $1361.SecurityMarks.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -193,7 +193,7 @@ class Finding extends $pb.GeneratedMessage {
   /// between 1 and 255 characters, and must start with a letter and contain
   /// alphanumeric characters or underscores only.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $1734.Value> get sourceProperties => $_getMap(6);
+  $core.Map<$core.String, $1735.Value> get sourceProperties => $_getMap(6);
 
   /// Output only. User specified security marks. These marks are entirely
   /// managed by the user and come from the SecurityMarks resource that belongs
@@ -215,27 +215,27 @@ class Finding extends $pb.GeneratedMessage {
   /// accuracy is determined by the detector. If the finding were to be resolved
   /// afterward, this time would reflect when the finding was resolved.
   @$pb.TagNumber(9)
-  $1775.Timestamp get eventTime => $_getN(8);
+  $1776.Timestamp get eventTime => $_getN(8);
   @$pb.TagNumber(9)
-  set eventTime($1775.Timestamp v) { setField(9, v); }
+  set eventTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasEventTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearEventTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureEventTime() => $_ensure(8);
+  $1776.Timestamp ensureEventTime() => $_ensure(8);
 
   /// The time at which the finding was created in Security Command Center.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(9);
+  $1776.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCreateTime() => $_ensure(9);
 }
 
 

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/linked_product_type.pbenum.dart' as $2332;
-import '../enums/product_link_invitation_status.pbenum.dart' as $2333;
+import '../enums/linked_product_type.pbenum.dart' as $2333;
+import '../enums/product_link_invitation_status.pbenum.dart' as $2334;
 
 enum ProductLinkInvitation_InvitedAccount {
   hotelCenter, 
@@ -29,10 +29,10 @@ class ProductLinkInvitation extends $pb.GeneratedMessage {
   factory ProductLinkInvitation({
     $core.String? resourceName,
     $fixnum.Int64? productLinkInvitationId,
-    $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus? status,
+    $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus? status,
     HotelCenterLinkInvitationIdentifier? hotelCenter,
     MerchantCenterLinkInvitationIdentifier? merchantCenter,
-    $2332.LinkedProductTypeEnum_LinkedProductType? type,
+    $2333.LinkedProductTypeEnum_LinkedProductType? type,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -68,10 +68,10 @@ class ProductLinkInvitation extends $pb.GeneratedMessage {
     ..oo(0, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'productLinkInvitationId')
-    ..e<$2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.UNSPECIFIED, valueOf: $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.valueOf, enumValues: $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.values)
+    ..e<$2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.UNSPECIFIED, valueOf: $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.valueOf, enumValues: $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.values)
     ..aOM<HotelCenterLinkInvitationIdentifier>(4, _omitFieldNames ? '' : 'hotelCenter', subBuilder: HotelCenterLinkInvitationIdentifier.create)
     ..aOM<MerchantCenterLinkInvitationIdentifier>(5, _omitFieldNames ? '' : 'merchantCenter', subBuilder: MerchantCenterLinkInvitationIdentifier.create)
-    ..e<$2332.LinkedProductTypeEnum_LinkedProductType>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2332.LinkedProductTypeEnum_LinkedProductType.UNSPECIFIED, valueOf: $2332.LinkedProductTypeEnum_LinkedProductType.valueOf, enumValues: $2332.LinkedProductTypeEnum_LinkedProductType.values)
+    ..e<$2333.LinkedProductTypeEnum_LinkedProductType>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2333.LinkedProductTypeEnum_LinkedProductType.UNSPECIFIED, valueOf: $2333.LinkedProductTypeEnum_LinkedProductType.valueOf, enumValues: $2333.LinkedProductTypeEnum_LinkedProductType.values)
     ..hasRequiredFields = false
   ;
 
@@ -126,9 +126,9 @@ class ProductLinkInvitation extends $pb.GeneratedMessage {
   /// Output only. The status of the product link invitation.
   /// This field is read only.
   @$pb.TagNumber(3)
-  $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus get status => $_getN(2);
+  $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus v) { setField(3, v); }
+  set status($2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -162,9 +162,9 @@ class ProductLinkInvitation extends $pb.GeneratedMessage {
   /// This field is read only and can be used for filtering invitations with
   /// {@code GoogleAdsService.SearchGoogleAdsRequest}.
   @$pb.TagNumber(6)
-  $2332.LinkedProductTypeEnum_LinkedProductType get type => $_getN(5);
+  $2333.LinkedProductTypeEnum_LinkedProductType get type => $_getN(5);
   @$pb.TagNumber(6)
-  set type($2332.LinkedProductTypeEnum_LinkedProductType v) { setField(6, v); }
+  set type($2333.LinkedProductTypeEnum_LinkedProductType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasType() => $_has(5);
   @$pb.TagNumber(6)

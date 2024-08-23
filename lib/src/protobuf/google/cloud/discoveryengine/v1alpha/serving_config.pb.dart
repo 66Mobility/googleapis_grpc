@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4504;
-import 'common.pbenum.dart' as $4504;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4506;
+import 'common.pbenum.dart' as $4506;
 import 'search_service.pb.dart' as $959;
 
 enum ServingConfig_MediaConfig_DemoteContentWatched {
@@ -228,12 +228,12 @@ class ServingConfig extends $pb.GeneratedMessage {
   factory ServingConfig({
     $core.String? name,
     $core.String? displayName,
-    $4504.SolutionType? solutionType,
+    $4506.SolutionType? solutionType,
     $core.String? modelId,
     $core.String? diversityLevel,
     ServingConfig_MediaConfig? mediaConfig,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     ServingConfig_GenericConfig? genericConfig,
     $core.Iterable<$core.String>? filterControlIds,
     $core.Iterable<$core.String>? boostControlIds,
@@ -243,10 +243,10 @@ class ServingConfig extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? dissociateControlIds,
     $core.Iterable<$core.String>? replacementControlIds,
     $core.Iterable<$core.String>? ignoreControlIds,
-    $4504.EmbeddingConfig? embeddingConfig,
+    $4506.EmbeddingConfig? embeddingConfig,
     $core.String? rankingExpression,
-    $4504.GuidedSearchSpec? guidedSearchSpec,
-    $4504.CustomFineTuningSpec? customFineTuningSpec,
+    $4506.GuidedSearchSpec? guidedSearchSpec,
+    $4506.CustomFineTuningSpec? customFineTuningSpec,
   }) {
     final $result = create();
     if (name != null) {
@@ -327,12 +327,12 @@ class ServingConfig extends $pb.GeneratedMessage {
     ..oo(0, [7, 10])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<$4504.SolutionType>(3, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4504.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4504.SolutionType.valueOf, enumValues: $4504.SolutionType.values)
+    ..e<$4506.SolutionType>(3, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4506.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4506.SolutionType.valueOf, enumValues: $4506.SolutionType.values)
     ..aOS(4, _omitFieldNames ? '' : 'modelId')
     ..aOS(5, _omitFieldNames ? '' : 'diversityLevel')
     ..aOM<ServingConfig_MediaConfig>(7, _omitFieldNames ? '' : 'mediaConfig', subBuilder: ServingConfig_MediaConfig.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ServingConfig_GenericConfig>(10, _omitFieldNames ? '' : 'genericConfig', subBuilder: ServingConfig_GenericConfig.create)
     ..pPS(11, _omitFieldNames ? '' : 'filterControlIds')
     ..pPS(12, _omitFieldNames ? '' : 'boostControlIds')
@@ -342,10 +342,10 @@ class ServingConfig extends $pb.GeneratedMessage {
     ..pPS(17, _omitFieldNames ? '' : 'dissociateControlIds')
     ..pPS(18, _omitFieldNames ? '' : 'replacementControlIds')
     ..pPS(19, _omitFieldNames ? '' : 'ignoreControlIds')
-    ..aOM<$4504.EmbeddingConfig>(20, _omitFieldNames ? '' : 'embeddingConfig', subBuilder: $4504.EmbeddingConfig.create)
+    ..aOM<$4506.EmbeddingConfig>(20, _omitFieldNames ? '' : 'embeddingConfig', subBuilder: $4506.EmbeddingConfig.create)
     ..aOS(21, _omitFieldNames ? '' : 'rankingExpression')
-    ..aOM<$4504.GuidedSearchSpec>(22, _omitFieldNames ? '' : 'guidedSearchSpec', subBuilder: $4504.GuidedSearchSpec.create)
-    ..aOM<$4504.CustomFineTuningSpec>(24, _omitFieldNames ? '' : 'customFineTuningSpec', subBuilder: $4504.CustomFineTuningSpec.create)
+    ..aOM<$4506.GuidedSearchSpec>(22, _omitFieldNames ? '' : 'guidedSearchSpec', subBuilder: $4506.GuidedSearchSpec.create)
+    ..aOM<$4506.CustomFineTuningSpec>(24, _omitFieldNames ? '' : 'customFineTuningSpec', subBuilder: $4506.CustomFineTuningSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -401,9 +401,9 @@ class ServingConfig extends $pb.GeneratedMessage {
   /// Required. Immutable. Specifies the solution type that a serving config can
   /// be associated with.
   @$pb.TagNumber(3)
-  $4504.SolutionType get solutionType => $_getN(2);
+  $4506.SolutionType get solutionType => $_getN(2);
   @$pb.TagNumber(3)
-  set solutionType($4504.SolutionType v) { setField(3, v); }
+  set solutionType($4506.SolutionType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSolutionType() => $_has(2);
   @$pb.TagNumber(3)
@@ -464,27 +464,27 @@ class ServingConfig extends $pb.GeneratedMessage {
 
   /// Output only. ServingConfig created timestamp.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. ServingConfig updated timestamp.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// The GenericConfig of the serving configuration.
   @$pb.TagNumber(10)
@@ -581,15 +581,15 @@ class ServingConfig extends $pb.GeneratedMessage {
   /// is provided, it overrides this
   /// [ServingConfig.embedding_config][google.cloud.discoveryengine.v1alpha.ServingConfig.embedding_config].
   @$pb.TagNumber(20)
-  $4504.EmbeddingConfig get embeddingConfig => $_getN(17);
+  $4506.EmbeddingConfig get embeddingConfig => $_getN(17);
   @$pb.TagNumber(20)
-  set embeddingConfig($4504.EmbeddingConfig v) { setField(20, v); }
+  set embeddingConfig($4506.EmbeddingConfig v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasEmbeddingConfig() => $_has(17);
   @$pb.TagNumber(20)
   void clearEmbeddingConfig() => clearField(20);
   @$pb.TagNumber(20)
-  $4504.EmbeddingConfig ensureEmbeddingConfig() => $_ensure(17);
+  $4506.EmbeddingConfig ensureEmbeddingConfig() => $_ensure(17);
 
   ///  The ranking expression controls the customized ranking on retrieval
   ///  documents. To leverage this, document embedding is required. The ranking
@@ -632,30 +632,30 @@ class ServingConfig extends $pb.GeneratedMessage {
 
   /// Guided search configs.
   @$pb.TagNumber(22)
-  $4504.GuidedSearchSpec get guidedSearchSpec => $_getN(19);
+  $4506.GuidedSearchSpec get guidedSearchSpec => $_getN(19);
   @$pb.TagNumber(22)
-  set guidedSearchSpec($4504.GuidedSearchSpec v) { setField(22, v); }
+  set guidedSearchSpec($4506.GuidedSearchSpec v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasGuidedSearchSpec() => $_has(19);
   @$pb.TagNumber(22)
   void clearGuidedSearchSpec() => clearField(22);
   @$pb.TagNumber(22)
-  $4504.GuidedSearchSpec ensureGuidedSearchSpec() => $_ensure(19);
+  $4506.GuidedSearchSpec ensureGuidedSearchSpec() => $_ensure(19);
 
   /// Custom fine tuning configs.
   /// If
   /// [SearchRequest.custom_fine_tuning_spec][google.cloud.discoveryengine.v1alpha.SearchRequest.custom_fine_tuning_spec]
   /// is set, it has higher priority than the configs set here.
   @$pb.TagNumber(24)
-  $4504.CustomFineTuningSpec get customFineTuningSpec => $_getN(20);
+  $4506.CustomFineTuningSpec get customFineTuningSpec => $_getN(20);
   @$pb.TagNumber(24)
-  set customFineTuningSpec($4504.CustomFineTuningSpec v) { setField(24, v); }
+  set customFineTuningSpec($4506.CustomFineTuningSpec v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasCustomFineTuningSpec() => $_has(20);
   @$pb.TagNumber(24)
   void clearCustomFineTuningSpec() => clearField(24);
   @$pb.TagNumber(24)
-  $4504.CustomFineTuningSpec ensureCustomFineTuningSpec() => $_ensure(20);
+  $4506.CustomFineTuningSpec ensureCustomFineTuningSpec() => $_ensure(20);
 }
 
 

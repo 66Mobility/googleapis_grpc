@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'routine.pbenum.dart';
-import 'routine_reference.pb.dart' as $4391;
-import 'standard_sql.pb.dart' as $4402;
+import 'routine_reference.pb.dart' as $4392;
+import 'standard_sql.pb.dart' as $4403;
 
 export 'routine.pbenum.dart';
 
@@ -28,8 +28,8 @@ class Routine_Argument extends $pb.GeneratedMessage {
     $core.String? name,
     Routine_Argument_ArgumentKind? argumentKind,
     Routine_Argument_Mode? mode,
-    $4402.StandardSqlDataType? dataType,
-    $1780.BoolValue? isAggregate,
+    $4403.StandardSqlDataType? dataType,
+    $1781.BoolValue? isAggregate,
   }) {
     final $result = create();
     if (name != null) {
@@ -57,8 +57,8 @@ class Routine_Argument extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<Routine_Argument_ArgumentKind>(2, _omitFieldNames ? '' : 'argumentKind', $pb.PbFieldType.OE, defaultOrMaker: Routine_Argument_ArgumentKind.ARGUMENT_KIND_UNSPECIFIED, valueOf: Routine_Argument_ArgumentKind.valueOf, enumValues: Routine_Argument_ArgumentKind.values)
     ..e<Routine_Argument_Mode>(3, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: Routine_Argument_Mode.MODE_UNSPECIFIED, valueOf: Routine_Argument_Mode.valueOf, enumValues: Routine_Argument_Mode.values)
-    ..aOM<$4402.StandardSqlDataType>(4, _omitFieldNames ? '' : 'dataType', subBuilder: $4402.StandardSqlDataType.create)
-    ..aOM<$1780.BoolValue>(6, _omitFieldNames ? '' : 'isAggregate', subBuilder: $1780.BoolValue.create)
+    ..aOM<$4403.StandardSqlDataType>(4, _omitFieldNames ? '' : 'dataType', subBuilder: $4403.StandardSqlDataType.create)
+    ..aOM<$1781.BoolValue>(6, _omitFieldNames ? '' : 'isAggregate', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -117,15 +117,15 @@ class Routine_Argument extends $pb.GeneratedMessage {
 
   /// Required unless argument_kind = ANY_TYPE.
   @$pb.TagNumber(4)
-  $4402.StandardSqlDataType get dataType => $_getN(3);
+  $4403.StandardSqlDataType get dataType => $_getN(3);
   @$pb.TagNumber(4)
-  set dataType($4402.StandardSqlDataType v) { setField(4, v); }
+  set dataType($4403.StandardSqlDataType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDataType() => $_has(3);
   @$pb.TagNumber(4)
   void clearDataType() => clearField(4);
   @$pb.TagNumber(4)
-  $4402.StandardSqlDataType ensureDataType() => $_ensure(3);
+  $4403.StandardSqlDataType ensureDataType() => $_ensure(3);
 
   /// Optional. Whether the argument is an aggregate function parameter.
   /// Must be Unset for routine types other than AGGREGATE_FUNCTION.
@@ -133,15 +133,15 @@ class Routine_Argument extends $pb.GeneratedMessage {
   /// AGGREGATE" clause in DDL; Otherwise, it is equivalent to omitting "NOT
   /// AGGREGATE" clause in DDL.
   @$pb.TagNumber(6)
-  $1780.BoolValue get isAggregate => $_getN(4);
+  $1781.BoolValue get isAggregate => $_getN(4);
   @$pb.TagNumber(6)
-  set isAggregate($1780.BoolValue v) { setField(6, v); }
+  set isAggregate($1781.BoolValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasIsAggregate() => $_has(4);
   @$pb.TagNumber(6)
   void clearIsAggregate() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.BoolValue ensureIsAggregate() => $_ensure(4);
+  $1781.BoolValue ensureIsAggregate() => $_ensure(4);
 }
 
 /// Options for a remote user-defined function.
@@ -248,7 +248,7 @@ class Routine_RemoteFunctionOptions extends $pb.GeneratedMessage {
 class Routine extends $pb.GeneratedMessage {
   factory Routine({
     $core.String? etag,
-    $4391.RoutineReference? routineReference,
+    $4392.RoutineReference? routineReference,
     Routine_RoutineType? routineType,
     $fixnum.Int64? creationTime,
     $fixnum.Int64? lastModifiedTime,
@@ -256,11 +256,11 @@ class Routine extends $pb.GeneratedMessage {
     $core.Iterable<Routine_Argument>? arguments,
     $core.Iterable<$core.String>? importedLibraries,
     $core.String? definitionBody,
-    $4402.StandardSqlDataType? returnType,
+    $4403.StandardSqlDataType? returnType,
     $core.String? description,
     Routine_DeterminismLevel? determinismLevel,
-    $4402.StandardSqlTableType? returnTableType,
-    $1780.BoolValue? strictMode,
+    $4403.StandardSqlTableType? returnTableType,
+    $1781.BoolValue? strictMode,
     Routine_RemoteFunctionOptions? remoteFunctionOptions,
     SparkOptions? sparkOptions,
     Routine_DataGovernanceType? dataGovernanceType,
@@ -329,7 +329,7 @@ class Routine extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Routine', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'etag')
-    ..aOM<$4391.RoutineReference>(2, _omitFieldNames ? '' : 'routineReference', subBuilder: $4391.RoutineReference.create)
+    ..aOM<$4392.RoutineReference>(2, _omitFieldNames ? '' : 'routineReference', subBuilder: $4392.RoutineReference.create)
     ..e<Routine_RoutineType>(3, _omitFieldNames ? '' : 'routineType', $pb.PbFieldType.OE, defaultOrMaker: Routine_RoutineType.ROUTINE_TYPE_UNSPECIFIED, valueOf: Routine_RoutineType.valueOf, enumValues: Routine_RoutineType.values)
     ..aInt64(4, _omitFieldNames ? '' : 'creationTime')
     ..aInt64(5, _omitFieldNames ? '' : 'lastModifiedTime')
@@ -337,11 +337,11 @@ class Routine extends $pb.GeneratedMessage {
     ..pc<Routine_Argument>(7, _omitFieldNames ? '' : 'arguments', $pb.PbFieldType.PM, subBuilder: Routine_Argument.create)
     ..pPS(8, _omitFieldNames ? '' : 'importedLibraries')
     ..aOS(9, _omitFieldNames ? '' : 'definitionBody')
-    ..aOM<$4402.StandardSqlDataType>(10, _omitFieldNames ? '' : 'returnType', subBuilder: $4402.StandardSqlDataType.create)
+    ..aOM<$4403.StandardSqlDataType>(10, _omitFieldNames ? '' : 'returnType', subBuilder: $4403.StandardSqlDataType.create)
     ..aOS(11, _omitFieldNames ? '' : 'description')
     ..e<Routine_DeterminismLevel>(12, _omitFieldNames ? '' : 'determinismLevel', $pb.PbFieldType.OE, defaultOrMaker: Routine_DeterminismLevel.DETERMINISM_LEVEL_UNSPECIFIED, valueOf: Routine_DeterminismLevel.valueOf, enumValues: Routine_DeterminismLevel.values)
-    ..aOM<$4402.StandardSqlTableType>(13, _omitFieldNames ? '' : 'returnTableType', subBuilder: $4402.StandardSqlTableType.create)
-    ..aOM<$1780.BoolValue>(14, _omitFieldNames ? '' : 'strictMode', subBuilder: $1780.BoolValue.create)
+    ..aOM<$4403.StandardSqlTableType>(13, _omitFieldNames ? '' : 'returnTableType', subBuilder: $4403.StandardSqlTableType.create)
+    ..aOM<$1781.BoolValue>(14, _omitFieldNames ? '' : 'strictMode', subBuilder: $1781.BoolValue.create)
     ..aOM<Routine_RemoteFunctionOptions>(15, _omitFieldNames ? '' : 'remoteFunctionOptions', subBuilder: Routine_RemoteFunctionOptions.create)
     ..aOM<SparkOptions>(16, _omitFieldNames ? '' : 'sparkOptions', subBuilder: SparkOptions.create)
     ..e<Routine_DataGovernanceType>(17, _omitFieldNames ? '' : 'dataGovernanceType', $pb.PbFieldType.OE, defaultOrMaker: Routine_DataGovernanceType.DATA_GOVERNANCE_TYPE_UNSPECIFIED, valueOf: Routine_DataGovernanceType.valueOf, enumValues: Routine_DataGovernanceType.values)
@@ -382,15 +382,15 @@ class Routine extends $pb.GeneratedMessage {
 
   /// Required. Reference describing the ID of this routine.
   @$pb.TagNumber(2)
-  $4391.RoutineReference get routineReference => $_getN(1);
+  $4392.RoutineReference get routineReference => $_getN(1);
   @$pb.TagNumber(2)
-  set routineReference($4391.RoutineReference v) { setField(2, v); }
+  set routineReference($4392.RoutineReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRoutineReference() => $_has(1);
   @$pb.TagNumber(2)
   void clearRoutineReference() => clearField(2);
   @$pb.TagNumber(2)
-  $4391.RoutineReference ensureRoutineReference() => $_ensure(1);
+  $4392.RoutineReference ensureRoutineReference() => $_ensure(1);
 
   /// Required. The type of routine.
   @$pb.TagNumber(3)
@@ -500,15 +500,15 @@ class Routine extends $pb.GeneratedMessage {
   ///  Then the inferred return type of `Increment` is automatically changed to
   ///  INT64 at query time, while the return type of `Decrement` remains FLOAT64.
   @$pb.TagNumber(10)
-  $4402.StandardSqlDataType get returnType => $_getN(9);
+  $4403.StandardSqlDataType get returnType => $_getN(9);
   @$pb.TagNumber(10)
-  set returnType($4402.StandardSqlDataType v) { setField(10, v); }
+  set returnType($4403.StandardSqlDataType v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasReturnType() => $_has(9);
   @$pb.TagNumber(10)
   void clearReturnType() => clearField(10);
   @$pb.TagNumber(10)
-  $4402.StandardSqlDataType ensureReturnType() => $_ensure(9);
+  $4403.StandardSqlDataType ensureReturnType() => $_ensure(9);
 
   /// Optional. The description of the routine, if defined.
   @$pb.TagNumber(11)
@@ -537,15 +537,15 @@ class Routine extends $pb.GeneratedMessage {
   ///  columns in the evaluated table result will be cast to match the column
   ///  types specified in return table type, at query time.
   @$pb.TagNumber(13)
-  $4402.StandardSqlTableType get returnTableType => $_getN(12);
+  $4403.StandardSqlTableType get returnTableType => $_getN(12);
   @$pb.TagNumber(13)
-  set returnTableType($4402.StandardSqlTableType v) { setField(13, v); }
+  set returnTableType($4403.StandardSqlTableType v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasReturnTableType() => $_has(12);
   @$pb.TagNumber(13)
   void clearReturnTableType() => clearField(13);
   @$pb.TagNumber(13)
-  $4402.StandardSqlTableType ensureReturnTableType() => $_ensure(12);
+  $4403.StandardSqlTableType ensureReturnTableType() => $_ensure(12);
 
   ///  Optional. Use this option to catch many common errors. Error checking is
   ///  not exhaustive, and successfully creating a procedure doesn't guarantee
@@ -561,15 +561,15 @@ class Routine extends $pb.GeneratedMessage {
   ///
   ///  Default value is `TRUE`.
   @$pb.TagNumber(14)
-  $1780.BoolValue get strictMode => $_getN(13);
+  $1781.BoolValue get strictMode => $_getN(13);
   @$pb.TagNumber(14)
-  set strictMode($1780.BoolValue v) { setField(14, v); }
+  set strictMode($1781.BoolValue v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasStrictMode() => $_has(13);
   @$pb.TagNumber(14)
   void clearStrictMode() => clearField(14);
   @$pb.TagNumber(14)
-  $1780.BoolValue ensureStrictMode() => $_ensure(13);
+  $1781.BoolValue ensureStrictMode() => $_ensure(13);
 
   /// Optional. Remote function specific options.
   @$pb.TagNumber(15)
@@ -802,7 +802,7 @@ class GetRoutineRequest extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.String? datasetId,
     $core.String? routineId,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -827,7 +827,7 @@ class GetRoutineRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
     ..aOS(3, _omitFieldNames ? '' : 'routineId')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -885,15 +885,15 @@ class GetRoutineRequest extends $pb.GeneratedMessage {
   /// If set, only the Routine fields in the field mask are returned in the
   /// response. If unset, all Routine fields are returned.
   @$pb.TagNumber(4)
-  $2209.FieldMask get readMask => $_getN(3);
+  $2210.FieldMask get readMask => $_getN(3);
   @$pb.TagNumber(4)
-  set readMask($2209.FieldMask v) { setField(4, v); }
+  set readMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureReadMask() => $_ensure(3);
+  $2210.FieldMask ensureReadMask() => $_ensure(3);
 }
 
 /// Describes the format for inserting a routine.
@@ -1086,7 +1086,7 @@ class PatchRoutineRequest extends $pb.GeneratedMessage {
     $core.String? datasetId,
     $core.String? routineId,
     Routine? routine,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -1115,7 +1115,7 @@ class PatchRoutineRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
     ..aOS(3, _omitFieldNames ? '' : 'routineId')
     ..aOM<Routine>(4, _omitFieldNames ? '' : 'routine', subBuilder: Routine.create)
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1187,15 +1187,15 @@ class PatchRoutineRequest extends $pb.GeneratedMessage {
   /// by the given routine. Repeated routine fields will be fully replaced
   /// if contained in the field mask.
   @$pb.TagNumber(5)
-  $2209.FieldMask get fieldMask => $_getN(4);
+  $2210.FieldMask get fieldMask => $_getN(4);
   @$pb.TagNumber(5)
-  set fieldMask($2209.FieldMask v) { setField(5, v); }
+  set fieldMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFieldMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearFieldMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureFieldMask() => $_ensure(4);
+  $2210.FieldMask ensureFieldMask() => $_ensure(4);
 }
 
 /// Describes the format for deleting a routine.
@@ -1285,9 +1285,9 @@ class ListRoutinesRequest extends $pb.GeneratedMessage {
   factory ListRoutinesRequest({
     $core.String? projectId,
     $core.String? datasetId,
-    $1780.UInt32Value? maxResults,
+    $1781.UInt32Value? maxResults,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
     $core.String? filter,
   }) {
     final $result = create();
@@ -1318,9 +1318,9 @@ class ListRoutinesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRoutinesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
-    ..aOM<$1780.UInt32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.UInt32Value.create)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..aOS(6, _omitFieldNames ? '' : 'filter')
     ..hasRequiredFields = false
   ;
@@ -1369,15 +1369,15 @@ class ListRoutinesRequest extends $pb.GeneratedMessage {
   /// The maximum number of results to return in a single response page.
   /// Leverage the page tokens to iterate through the entire collection.
   @$pb.TagNumber(3)
-  $1780.UInt32Value get maxResults => $_getN(2);
+  $1781.UInt32Value get maxResults => $_getN(2);
   @$pb.TagNumber(3)
-  set maxResults($1780.UInt32Value v) { setField(3, v); }
+  set maxResults($1781.UInt32Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMaxResults() => $_has(2);
   @$pb.TagNumber(3)
   void clearMaxResults() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.UInt32Value ensureMaxResults() => $_ensure(2);
+  $1781.UInt32Value ensureMaxResults() => $_ensure(2);
 
   /// Page token, returned by a previous call, to request the next page of
   /// results
@@ -1396,15 +1396,15 @@ class ListRoutinesRequest extends $pb.GeneratedMessage {
   /// etag, project_id, dataset_id, routine_id, routine_type, creation_time,
   /// last_modified_time, and language.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 
   /// If set, then only the Routines matching this filter are returned.
   /// The supported format is `routineType:{RoutineType}`, where `{RoutineType}`

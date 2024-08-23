@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/timestamp.pb.dart' as $4;
-import 'package.pb.dart' as $13;
+import '../../google/protobuf/timestamp.pb.dart' as $1776;
+import 'package.pb.dart' as $4898;
 
 /// An Upgrade Note represents a potential upgrade of a package to a given
 /// version. For each package version combination (i.e. bash 4.0, bash 4.1,
@@ -23,7 +23,7 @@ import 'package.pb.dart' as $13;
 class UpgradeNote extends $pb.GeneratedMessage {
   factory UpgradeNote({
     $core.String? package,
-    $13.Version? version,
+    $4898.Version? version,
     $core.Iterable<UpgradeDistribution>? distributions,
     WindowsUpdate? windowsUpdate,
   }) {
@@ -48,7 +48,7 @@ class UpgradeNote extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpgradeNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'package')
-    ..aOM<$13.Version>(2, _omitFieldNames ? '' : 'version', subBuilder: $13.Version.create)
+    ..aOM<$4898.Version>(2, _omitFieldNames ? '' : 'version', subBuilder: $4898.Version.create)
     ..pc<UpgradeDistribution>(3, _omitFieldNames ? '' : 'distributions', $pb.PbFieldType.PM, subBuilder: UpgradeDistribution.create)
     ..aOM<WindowsUpdate>(4, _omitFieldNames ? '' : 'windowsUpdate', subBuilder: WindowsUpdate.create)
     ..hasRequiredFields = false
@@ -88,15 +88,15 @@ class UpgradeNote extends $pb.GeneratedMessage {
   /// Required for non-Windows OS. The version of the package in machine + human
   /// readable form.
   @$pb.TagNumber(2)
-  $13.Version get version => $_getN(1);
+  $4898.Version get version => $_getN(1);
   @$pb.TagNumber(2)
-  set version($13.Version v) { setField(2, v); }
+  set version($4898.Version v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
   void clearVersion() => clearField(2);
   @$pb.TagNumber(2)
-  $13.Version ensureVersion() => $_ensure(1);
+  $4898.Version ensureVersion() => $_ensure(1);
 
   /// Metadata about the upgrade for each specific operating system.
   @$pb.TagNumber(3)
@@ -358,7 +358,7 @@ class WindowsUpdate extends $pb.GeneratedMessage {
     $core.Iterable<WindowsUpdate_Category>? categories,
     $core.Iterable<$core.String>? kbArticleIds,
     $core.String? supportUrl,
-    $4.Timestamp? lastPublishedTimestamp,
+    $1776.Timestamp? lastPublishedTimestamp,
   }) {
     final $result = create();
     if (identity != null) {
@@ -395,7 +395,7 @@ class WindowsUpdate extends $pb.GeneratedMessage {
     ..pc<WindowsUpdate_Category>(4, _omitFieldNames ? '' : 'categories', $pb.PbFieldType.PM, subBuilder: WindowsUpdate_Category.create)
     ..pPS(5, _omitFieldNames ? '' : 'kbArticleIds')
     ..aOS(6, _omitFieldNames ? '' : 'supportUrl')
-    ..aOM<$4.Timestamp>(7, _omitFieldNames ? '' : 'lastPublishedTimestamp', subBuilder: $4.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'lastPublishedTimestamp', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -473,15 +473,15 @@ class WindowsUpdate extends $pb.GeneratedMessage {
 
   /// The last published timestamp of the update.
   @$pb.TagNumber(7)
-  $4.Timestamp get lastPublishedTimestamp => $_getN(6);
+  $1776.Timestamp get lastPublishedTimestamp => $_getN(6);
   @$pb.TagNumber(7)
-  set lastPublishedTimestamp($4.Timestamp v) { setField(7, v); }
+  set lastPublishedTimestamp($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLastPublishedTimestamp() => $_has(6);
   @$pb.TagNumber(7)
   void clearLastPublishedTimestamp() => clearField(7);
   @$pb.TagNumber(7)
-  $4.Timestamp ensureLastPublishedTimestamp() => $_ensure(6);
+  $1776.Timestamp ensureLastPublishedTimestamp() => $_ensure(6);
 }
 
 /// An Upgrade Occurrence represents that a specific resource_url could install a
@@ -492,7 +492,7 @@ class WindowsUpdate extends $pb.GeneratedMessage {
 class UpgradeOccurrence extends $pb.GeneratedMessage {
   factory UpgradeOccurrence({
     $core.String? package,
-    $13.Version? parsedVersion,
+    $4898.Version? parsedVersion,
     UpgradeDistribution? distribution,
     WindowsUpdate? windowsUpdate,
   }) {
@@ -517,7 +517,7 @@ class UpgradeOccurrence extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpgradeOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'package')
-    ..aOM<$13.Version>(3, _omitFieldNames ? '' : 'parsedVersion', subBuilder: $13.Version.create)
+    ..aOM<$4898.Version>(3, _omitFieldNames ? '' : 'parsedVersion', subBuilder: $4898.Version.create)
     ..aOM<UpgradeDistribution>(4, _omitFieldNames ? '' : 'distribution', subBuilder: UpgradeDistribution.create)
     ..aOM<WindowsUpdate>(5, _omitFieldNames ? '' : 'windowsUpdate', subBuilder: WindowsUpdate.create)
     ..hasRequiredFields = false
@@ -557,15 +557,15 @@ class UpgradeOccurrence extends $pb.GeneratedMessage {
   /// Required for non-Windows OS. The version of the package in a machine +
   /// human readable form.
   @$pb.TagNumber(3)
-  $13.Version get parsedVersion => $_getN(1);
+  $4898.Version get parsedVersion => $_getN(1);
   @$pb.TagNumber(3)
-  set parsedVersion($13.Version v) { setField(3, v); }
+  set parsedVersion($4898.Version v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParsedVersion() => $_has(1);
   @$pb.TagNumber(3)
   void clearParsedVersion() => clearField(3);
   @$pb.TagNumber(3)
-  $13.Version ensureParsedVersion() => $_ensure(1);
+  $4898.Version ensureParsedVersion() => $_ensure(1);
 
   /// Metadata about the upgrade for available for the specific operating system
   /// for the resource_url. This allows efficient filtering, as well as

@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'resource.pbenum.dart' as $4644;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'resource.pbenum.dart' as $4646;
 import 'valued_resource.pb.dart' as $1348;
 
 /// Attack path simulation
 class Simulation extends $pb.GeneratedMessage {
   factory Simulation({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Iterable<$1348.ResourceValueConfigMetadata>? resourceValueConfigsMetadata,
-    $4644.CloudProvider? cloudProvider,
+    $4646.CloudProvider? cloudProvider,
   }) {
     final $result = create();
     if (name != null) {
@@ -46,9 +46,9 @@ class Simulation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Simulation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..pc<$1348.ResourceValueConfigMetadata>(3, _omitFieldNames ? '' : 'resourceValueConfigsMetadata', $pb.PbFieldType.PM, subBuilder: $1348.ResourceValueConfigMetadata.create)
-    ..e<$4644.CloudProvider>(4, _omitFieldNames ? '' : 'cloudProvider', $pb.PbFieldType.OE, defaultOrMaker: $4644.CloudProvider.CLOUD_PROVIDER_UNSPECIFIED, valueOf: $4644.CloudProvider.valueOf, enumValues: $4644.CloudProvider.values)
+    ..e<$4646.CloudProvider>(4, _omitFieldNames ? '' : 'cloudProvider', $pb.PbFieldType.OE, defaultOrMaker: $4646.CloudProvider.CLOUD_PROVIDER_UNSPECIFIED, valueOf: $4646.CloudProvider.valueOf, enumValues: $4646.CloudProvider.values)
     ..hasRequiredFields = false
   ;
 
@@ -86,15 +86,15 @@ class Simulation extends $pb.GeneratedMessage {
 
   /// Output only. Time simulation was created
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Resource value configurations' metadata used in this simulation. Maximum of
   /// 100.
@@ -103,9 +103,9 @@ class Simulation extends $pb.GeneratedMessage {
 
   /// Indicates which cloud provider was used in this simulation.
   @$pb.TagNumber(4)
-  $4644.CloudProvider get cloudProvider => $_getN(3);
+  $4646.CloudProvider get cloudProvider => $_getN(3);
   @$pb.TagNumber(4)
-  set cloudProvider($4644.CloudProvider v) { setField(4, v); }
+  set cloudProvider($4646.CloudProvider v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCloudProvider() => $_has(3);
   @$pb.TagNumber(4)

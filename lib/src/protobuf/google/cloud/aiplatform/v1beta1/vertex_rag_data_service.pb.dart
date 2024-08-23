@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
-import 'operation.pb.dart' as $4295;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'operation.pb.dart' as $4296;
 import 'vertex_rag_data.pb.dart' as $634;
 
 /// Request message for
@@ -471,7 +471,7 @@ enum UploadRagFileResponse_Result {
 class UploadRagFileResponse extends $pb.GeneratedMessage {
   factory UploadRagFileResponse({
     $634.RagFile? ragFile,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (ragFile != null) {
@@ -494,7 +494,7 @@ class UploadRagFileResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadRagFileResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [1, 4])
     ..aOM<$634.RagFile>(1, _omitFieldNames ? '' : 'ragFile', subBuilder: $634.RagFile.create)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -536,15 +536,15 @@ class UploadRagFileResponse extends $pb.GeneratedMessage {
 
   /// The error that occurred while processing the RagFile.
   @$pb.TagNumber(4)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(4)
-  set error($1795.Status v) { setField(4, v); }
+  set error($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(4)
   void clearError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 }
 
 /// Request message for
@@ -973,7 +973,7 @@ class DeleteRagFileRequest extends $pb.GeneratedMessage {
 /// [VertexRagDataService.CreateRagCorpus][google.cloud.aiplatform.v1beta1.VertexRagDataService.CreateRagCorpus].
 class CreateRagCorpusOperationMetadata extends $pb.GeneratedMessage {
   factory CreateRagCorpusOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -986,7 +986,7 @@ class CreateRagCorpusOperationMetadata extends $pb.GeneratedMessage {
   factory CreateRagCorpusOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateRagCorpusOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1013,22 +1013,22 @@ class CreateRagCorpusOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Runtime operation information for
 /// [VertexRagDataService.ImportRagFiles][google.cloud.aiplatform.v1beta1.VertexRagDataService.ImportRagFiles].
 class ImportRagFilesOperationMetadata extends $pb.GeneratedMessage {
   factory ImportRagFilesOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
     $fixnum.Int64? ragCorpusId,
     $634.ImportRagFilesConfig? importRagFilesConfig,
     $core.int? progressPercentage,
@@ -1053,7 +1053,7 @@ class ImportRagFilesOperationMetadata extends $pb.GeneratedMessage {
   factory ImportRagFilesOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportRagFilesOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..aInt64(2, _omitFieldNames ? '' : 'ragCorpusId')
     ..aOM<$634.ImportRagFilesConfig>(3, _omitFieldNames ? '' : 'importRagFilesConfig', subBuilder: $634.ImportRagFilesConfig.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'progressPercentage', $pb.PbFieldType.O3)
@@ -1083,15 +1083,15 @@ class ImportRagFilesOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// The resource ID of RagCorpus that this operation is executed on.
   @$pb.TagNumber(2)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'queue.pb.dart' as $1446;
 import 'task.pb.dart' as $1447;
 import 'task.pbenum.dart' as $1447;
@@ -26,7 +26,7 @@ class ListQueuesRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -55,7 +55,7 @@ class ListQueuesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -150,15 +150,15 @@ class ListQueuesRequest extends $pb.GeneratedMessage {
   /// [Queue.stats]. [Queue.stats] will be returned only if it was  explicitly
   /// specified in the mask.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -237,7 +237,7 @@ class ListQueuesResponse extends $pb.GeneratedMessage {
 class GetQueueRequest extends $pb.GeneratedMessage {
   factory GetQueueRequest({
     $core.String? name,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -254,7 +254,7 @@ class GetQueueRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetQueueRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -295,15 +295,15 @@ class GetQueueRequest extends $pb.GeneratedMessage {
   /// [Queue.stats]. [Queue.stats] will be returned only if it was  explicitly
   /// specified in the mask.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -389,7 +389,7 @@ class CreateQueueRequest extends $pb.GeneratedMessage {
 class UpdateQueueRequest extends $pb.GeneratedMessage {
   factory UpdateQueueRequest({
     $1446.Queue? queue,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (queue != null) {
@@ -406,7 +406,7 @@ class UpdateQueueRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateQueueRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta3'), createEmptyInstance: create)
     ..aOM<$1446.Queue>(1, _omitFieldNames ? '' : 'queue', subBuilder: $1446.Queue.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -455,15 +455,15 @@ class UpdateQueueRequest extends $pb.GeneratedMessage {
   ///
   ///  If empty, then all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for

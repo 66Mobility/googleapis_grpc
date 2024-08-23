@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../type/interval.pb.dart' as $4257;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -47,7 +47,7 @@ export 'common.pbenum.dart';
 ///  aggregation](https://cloud.google.com/monitoring/api/v3/aggregation).
 class Aggregation extends $pb.GeneratedMessage {
   factory Aggregation({
-    $1737.Duration? alignmentPeriod,
+    $1738.Duration? alignmentPeriod,
     Aggregation_Aligner? perSeriesAligner,
     Aggregation_Reducer? crossSeriesReducer,
     $core.Iterable<$core.String>? groupByFields,
@@ -72,7 +72,7 @@ class Aggregation extends $pb.GeneratedMessage {
   factory Aggregation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Aggregation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'alignmentPeriod', subBuilder: $1738.Duration.create)
     ..e<Aggregation_Aligner>(2, _omitFieldNames ? '' : 'perSeriesAligner', $pb.PbFieldType.OE, defaultOrMaker: Aggregation_Aligner.ALIGN_NONE, valueOf: Aggregation_Aligner.valueOf, enumValues: Aggregation_Aligner.values)
     ..e<Aggregation_Reducer>(4, _omitFieldNames ? '' : 'crossSeriesReducer', $pb.PbFieldType.OE, defaultOrMaker: Aggregation_Reducer.REDUCE_NONE, valueOf: Aggregation_Reducer.valueOf, enumValues: Aggregation_Reducer.values)
     ..pPS(5, _omitFieldNames ? '' : 'groupByFields')
@@ -113,15 +113,15 @@ class Aggregation extends $pb.GeneratedMessage {
   ///
   ///  The maximum value of the `alignment_period` is 2 years, or 104 weeks.
   @$pb.TagNumber(1)
-  $1737.Duration get alignmentPeriod => $_getN(0);
+  $1738.Duration get alignmentPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set alignmentPeriod($1737.Duration v) { setField(1, v); }
+  set alignmentPeriod($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAlignmentPeriod() => $_has(0);
   @$pb.TagNumber(1)
   void clearAlignmentPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureAlignmentPeriod() => $_ensure(0);
+  $1738.Duration ensureAlignmentPeriod() => $_ensure(0);
 
   ///  An `Aligner` describes how to bring the data points in a single
   ///  time series into temporal alignment. Except for `ALIGN_NONE`, all
@@ -201,7 +201,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
     PickTimeSeriesFilter_Method? rankingMethod,
     $core.int? numTimeSeries,
     PickTimeSeriesFilter_Direction? direction,
-    $4256.Interval? interval,
+    $4257.Interval? interval,
   }) {
     final $result = create();
     if (rankingMethod != null) {
@@ -226,7 +226,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
     ..e<PickTimeSeriesFilter_Method>(1, _omitFieldNames ? '' : 'rankingMethod', $pb.PbFieldType.OE, defaultOrMaker: PickTimeSeriesFilter_Method.METHOD_UNSPECIFIED, valueOf: PickTimeSeriesFilter_Method.valueOf, enumValues: PickTimeSeriesFilter_Method.values)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'numTimeSeries', $pb.PbFieldType.O3)
     ..e<PickTimeSeriesFilter_Direction>(3, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE, defaultOrMaker: PickTimeSeriesFilter_Direction.DIRECTION_UNSPECIFIED, valueOf: PickTimeSeriesFilter_Direction.valueOf, enumValues: PickTimeSeriesFilter_Direction.values)
-    ..aOM<$4256.Interval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $4257.Interval.create)
     ..hasRequiredFields = false
   ;
 
@@ -285,15 +285,15 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
 
   /// Select the top N streams/time series within this time interval
   @$pb.TagNumber(4)
-  $4256.Interval get interval => $_getN(3);
+  $4257.Interval get interval => $_getN(3);
   @$pb.TagNumber(4)
-  set interval($4256.Interval v) { setField(4, v); }
+  set interval($4257.Interval v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInterval() => $_has(3);
   @$pb.TagNumber(4)
   void clearInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $4256.Interval ensureInterval() => $_ensure(3);
+  $4257.Interval ensureInterval() => $_ensure(3);
 }
 
 /// A filter that ranks streams based on their statistical relation to other

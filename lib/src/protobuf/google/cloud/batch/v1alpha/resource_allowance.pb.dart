@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/interval.pb.dart' as $4256;
-import 'notification.pb.dart' as $4363;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/interval.pb.dart' as $4257;
+import 'notification.pb.dart' as $4364;
 import 'resource_allowance.pbenum.dart';
 
 export 'resource_allowance.pbenum.dart';
@@ -32,10 +32,10 @@ class ResourceAllowance extends $pb.GeneratedMessage {
   factory ResourceAllowance({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     UsageResourceAllowance? usageResourceAllowance,
     $core.Map<$core.String, $core.String>? labels,
-    $core.Iterable<$4363.Notification>? notifications,
+    $core.Iterable<$4364.Notification>? notifications,
   }) {
     final $result = create();
     if (name != null) {
@@ -70,10 +70,10 @@ class ResourceAllowance extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<UsageResourceAllowance>(4, _omitFieldNames ? '' : 'usageResourceAllowance', subBuilder: UsageResourceAllowance.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'ResourceAllowance.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.batch.v1alpha'))
-    ..pc<$4363.Notification>(6, _omitFieldNames ? '' : 'notifications', $pb.PbFieldType.PM, subBuilder: $4363.Notification.create)
+    ..pc<$4364.Notification>(6, _omitFieldNames ? '' : 'notifications', $pb.PbFieldType.PM, subBuilder: $4364.Notification.create)
     ..hasRequiredFields = false
   ;
 
@@ -126,15 +126,15 @@ class ResourceAllowance extends $pb.GeneratedMessage {
 
   /// Output only. Time when the ResourceAllowance was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The detail of usage resource allowance.
   @$pb.TagNumber(4)
@@ -164,7 +164,7 @@ class ResourceAllowance extends $pb.GeneratedMessage {
 
   /// Optional. Notification configurations.
   @$pb.TagNumber(6)
-  $core.List<$4363.Notification> get notifications => $_getList(5);
+  $core.List<$4364.Notification> get notifications => $_getList(5);
 }
 
 /// UsageResourceAllowance describes the detail of usage resource allowance.
@@ -401,7 +401,7 @@ class UsageResourceAllowanceSpec extends $pb.GeneratedMessage {
 /// UsageResourceAllowanceStatus detail about usage consumption.
 class UsageResourceAllowanceStatus_LimitStatus extends $pb.GeneratedMessage {
   factory UsageResourceAllowanceStatus_LimitStatus({
-    $4256.Interval? consumptionInterval,
+    $4257.Interval? consumptionInterval,
     $core.double? limit,
     $core.double? consumed,
   }) {
@@ -422,7 +422,7 @@ class UsageResourceAllowanceStatus_LimitStatus extends $pb.GeneratedMessage {
   factory UsageResourceAllowanceStatus_LimitStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageResourceAllowanceStatus.LimitStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.batch.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4256.Interval>(1, _omitFieldNames ? '' : 'consumptionInterval', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(1, _omitFieldNames ? '' : 'consumptionInterval', subBuilder: $4257.Interval.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'limit', $pb.PbFieldType.OD)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'consumed', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -451,15 +451,15 @@ class UsageResourceAllowanceStatus_LimitStatus extends $pb.GeneratedMessage {
 
   /// Output only. The consumption interval.
   @$pb.TagNumber(1)
-  $4256.Interval get consumptionInterval => $_getN(0);
+  $4257.Interval get consumptionInterval => $_getN(0);
   @$pb.TagNumber(1)
-  set consumptionInterval($4256.Interval v) { setField(1, v); }
+  set consumptionInterval($4257.Interval v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasConsumptionInterval() => $_has(0);
   @$pb.TagNumber(1)
   void clearConsumptionInterval() => clearField(1);
   @$pb.TagNumber(1)
-  $4256.Interval ensureConsumptionInterval() => $_ensure(0);
+  $4257.Interval ensureConsumptionInterval() => $_ensure(0);
 
   /// Output only. Limit value of a UsageResourceAllowance within its one
   /// duration.
@@ -485,7 +485,7 @@ class UsageResourceAllowanceStatus_LimitStatus extends $pb.GeneratedMessage {
 
 class UsageResourceAllowanceStatus_PeriodConsumption extends $pb.GeneratedMessage {
   factory UsageResourceAllowanceStatus_PeriodConsumption({
-    $4256.Interval? consumptionInterval,
+    $4257.Interval? consumptionInterval,
     $core.double? consumed,
   }) {
     final $result = create();
@@ -502,7 +502,7 @@ class UsageResourceAllowanceStatus_PeriodConsumption extends $pb.GeneratedMessag
   factory UsageResourceAllowanceStatus_PeriodConsumption.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageResourceAllowanceStatus.PeriodConsumption', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.batch.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4256.Interval>(1, _omitFieldNames ? '' : 'consumptionInterval', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(1, _omitFieldNames ? '' : 'consumptionInterval', subBuilder: $4257.Interval.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'consumed', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -530,15 +530,15 @@ class UsageResourceAllowanceStatus_PeriodConsumption extends $pb.GeneratedMessag
 
   /// Output only. The consumption interval.
   @$pb.TagNumber(1)
-  $4256.Interval get consumptionInterval => $_getN(0);
+  $4257.Interval get consumptionInterval => $_getN(0);
   @$pb.TagNumber(1)
-  set consumptionInterval($4256.Interval v) { setField(1, v); }
+  set consumptionInterval($4257.Interval v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasConsumptionInterval() => $_has(0);
   @$pb.TagNumber(1)
   void clearConsumptionInterval() => clearField(1);
   @$pb.TagNumber(1)
-  $4256.Interval ensureConsumptionInterval() => $_ensure(0);
+  $4257.Interval ensureConsumptionInterval() => $_ensure(0);
 
   /// Output only. Accumulated consumption during `consumption_interval`.
   @$pb.TagNumber(2)

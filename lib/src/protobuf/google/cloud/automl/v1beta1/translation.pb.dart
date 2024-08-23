@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data_items.pb.dart' as $4349;
+import 'data_items.pb.dart' as $4350;
 
 /// Dataset metadata that is specific to translation.
 class TranslationDatasetMetadata extends $pb.GeneratedMessage {
@@ -239,7 +239,7 @@ class TranslationModelMetadata extends $pb.GeneratedMessage {
 /// Annotation details specific to translation.
 class TranslationAnnotation extends $pb.GeneratedMessage {
   factory TranslationAnnotation({
-    $4349.TextSnippet? translatedContent,
+    $4350.TextSnippet? translatedContent,
   }) {
     final $result = create();
     if (translatedContent != null) {
@@ -252,7 +252,7 @@ class TranslationAnnotation extends $pb.GeneratedMessage {
   factory TranslationAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TranslationAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4349.TextSnippet>(1, _omitFieldNames ? '' : 'translatedContent', subBuilder: $4349.TextSnippet.create)
+    ..aOM<$4350.TextSnippet>(1, _omitFieldNames ? '' : 'translatedContent', subBuilder: $4350.TextSnippet.create)
     ..hasRequiredFields = false
   ;
 
@@ -279,15 +279,15 @@ class TranslationAnnotation extends $pb.GeneratedMessage {
 
   /// Output only . The translated content.
   @$pb.TagNumber(1)
-  $4349.TextSnippet get translatedContent => $_getN(0);
+  $4350.TextSnippet get translatedContent => $_getN(0);
   @$pb.TagNumber(1)
-  set translatedContent($4349.TextSnippet v) { setField(1, v); }
+  set translatedContent($4350.TextSnippet v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTranslatedContent() => $_has(0);
   @$pb.TagNumber(1)
   void clearTranslatedContent() => clearField(1);
   @$pb.TagNumber(1)
-  $4349.TextSnippet ensureTranslatedContent() => $_ensure(0);
+  $4350.TextSnippet ensureTranslatedContent() => $_ensure(0);
 }
 
 

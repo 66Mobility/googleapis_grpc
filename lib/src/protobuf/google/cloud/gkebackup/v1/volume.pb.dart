@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4534;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4536;
 import 'volume.pbenum.dart';
 
 export 'volume.pbenum.dart';
@@ -27,14 +27,14 @@ class VolumeBackup extends $pb.GeneratedMessage {
   factory VolumeBackup({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4534.NamespacedName? sourcePvc,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4536.NamespacedName? sourcePvc,
     $core.String? volumeBackupHandle,
     VolumeBackup_VolumeBackupFormat? format,
     $fixnum.Int64? storageBytes,
     $fixnum.Int64? diskSizeBytes,
-    $1775.Timestamp? completeTime,
+    $1776.Timestamp? completeTime,
     VolumeBackup_State? state,
     $core.String? stateMessage,
     $core.String? etag,
@@ -88,14 +88,14 @@ class VolumeBackup extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VolumeBackup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4534.NamespacedName>(5, _omitFieldNames ? '' : 'sourcePvc', subBuilder: $4534.NamespacedName.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4536.NamespacedName>(5, _omitFieldNames ? '' : 'sourcePvc', subBuilder: $4536.NamespacedName.create)
     ..aOS(6, _omitFieldNames ? '' : 'volumeBackupHandle')
     ..e<VolumeBackup_VolumeBackupFormat>(7, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE, defaultOrMaker: VolumeBackup_VolumeBackupFormat.VOLUME_BACKUP_FORMAT_UNSPECIFIED, valueOf: VolumeBackup_VolumeBackupFormat.valueOf, enumValues: VolumeBackup_VolumeBackupFormat.values)
     ..aInt64(8, _omitFieldNames ? '' : 'storageBytes')
     ..aInt64(9, _omitFieldNames ? '' : 'diskSizeBytes')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'completeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'completeTime', subBuilder: $1776.Timestamp.create)
     ..e<VolumeBackup_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: VolumeBackup_State.STATE_UNSPECIFIED, valueOf: VolumeBackup_State.valueOf, enumValues: VolumeBackup_State.values)
     ..aOS(12, _omitFieldNames ? '' : 'stateMessage')
     ..aOS(13, _omitFieldNames ? '' : 'etag')
@@ -148,41 +148,41 @@ class VolumeBackup extends $pb.GeneratedMessage {
   /// Output only. The timestamp when this VolumeBackup resource was
   /// created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this VolumeBackup resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. A reference to the source Kubernetes PVC from which this
   /// VolumeBackup was created.
   @$pb.TagNumber(5)
-  $4534.NamespacedName get sourcePvc => $_getN(4);
+  $4536.NamespacedName get sourcePvc => $_getN(4);
   @$pb.TagNumber(5)
-  set sourcePvc($4534.NamespacedName v) { setField(5, v); }
+  set sourcePvc($4536.NamespacedName v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSourcePvc() => $_has(4);
   @$pb.TagNumber(5)
   void clearSourcePvc() => clearField(5);
   @$pb.TagNumber(5)
-  $4534.NamespacedName ensureSourcePvc() => $_ensure(4);
+  $4536.NamespacedName ensureSourcePvc() => $_ensure(4);
 
   /// Output only. A storage system-specific opaque handle to the underlying
   /// volume backup.
@@ -233,15 +233,15 @@ class VolumeBackup extends $pb.GeneratedMessage {
   /// Output only. The timestamp when the associated underlying volume backup
   /// operation completed.
   @$pb.TagNumber(10)
-  $1775.Timestamp get completeTime => $_getN(9);
+  $1776.Timestamp get completeTime => $_getN(9);
   @$pb.TagNumber(10)
-  set completeTime($1775.Timestamp v) { setField(10, v); }
+  set completeTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCompleteTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearCompleteTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCompleteTime() => $_ensure(9);
+  $1776.Timestamp ensureCompleteTime() => $_ensure(9);
 
   /// Output only. The current state of this VolumeBackup.
   @$pb.TagNumber(11)
@@ -284,13 +284,13 @@ class VolumeRestore extends $pb.GeneratedMessage {
   factory VolumeRestore({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? volumeBackup,
-    $4534.NamespacedName? targetPvc,
+    $4536.NamespacedName? targetPvc,
     $core.String? volumeHandle,
     VolumeRestore_VolumeType? volumeType,
-    $1775.Timestamp? completeTime,
+    $1776.Timestamp? completeTime,
     VolumeRestore_State? state,
     $core.String? stateMessage,
     $core.String? etag,
@@ -341,13 +341,13 @@ class VolumeRestore extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VolumeRestore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkebackup.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'volumeBackup')
-    ..aOM<$4534.NamespacedName>(6, _omitFieldNames ? '' : 'targetPvc', subBuilder: $4534.NamespacedName.create)
+    ..aOM<$4536.NamespacedName>(6, _omitFieldNames ? '' : 'targetPvc', subBuilder: $4536.NamespacedName.create)
     ..aOS(7, _omitFieldNames ? '' : 'volumeHandle')
     ..e<VolumeRestore_VolumeType>(8, _omitFieldNames ? '' : 'volumeType', $pb.PbFieldType.OE, defaultOrMaker: VolumeRestore_VolumeType.VOLUME_TYPE_UNSPECIFIED, valueOf: VolumeRestore_VolumeType.valueOf, enumValues: VolumeRestore_VolumeType.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'completeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'completeTime', subBuilder: $1776.Timestamp.create)
     ..e<VolumeRestore_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: VolumeRestore_State.STATE_UNSPECIFIED, valueOf: VolumeRestore_State.valueOf, enumValues: VolumeRestore_State.values)
     ..aOS(11, _omitFieldNames ? '' : 'stateMessage')
     ..aOS(12, _omitFieldNames ? '' : 'etag')
@@ -400,28 +400,28 @@ class VolumeRestore extends $pb.GeneratedMessage {
   /// Output only. The timestamp when this VolumeRestore resource was
   /// created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this VolumeRestore resource was last
   /// updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. The full name of the VolumeBackup from which the volume will
   /// be restored. Format:
@@ -437,15 +437,15 @@ class VolumeRestore extends $pb.GeneratedMessage {
 
   /// Output only. The reference to the target Kubernetes PVC to be restored.
   @$pb.TagNumber(6)
-  $4534.NamespacedName get targetPvc => $_getN(5);
+  $4536.NamespacedName get targetPvc => $_getN(5);
   @$pb.TagNumber(6)
-  set targetPvc($4534.NamespacedName v) { setField(6, v); }
+  set targetPvc($4536.NamespacedName v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTargetPvc() => $_has(5);
   @$pb.TagNumber(6)
   void clearTargetPvc() => clearField(6);
   @$pb.TagNumber(6)
-  $4534.NamespacedName ensureTargetPvc() => $_ensure(5);
+  $4536.NamespacedName ensureTargetPvc() => $_ensure(5);
 
   /// Output only. A storage system-specific opaque handler to the underlying
   /// volume created for the target PVC from the volume backup.
@@ -471,15 +471,15 @@ class VolumeRestore extends $pb.GeneratedMessage {
   /// Output only. The timestamp when the associated underlying volume
   /// restoration completed.
   @$pb.TagNumber(9)
-  $1775.Timestamp get completeTime => $_getN(8);
+  $1776.Timestamp get completeTime => $_getN(8);
   @$pb.TagNumber(9)
-  set completeTime($1775.Timestamp v) { setField(9, v); }
+  set completeTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCompleteTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCompleteTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCompleteTime() => $_ensure(8);
+  $1776.Timestamp ensureCompleteTime() => $_ensure(8);
 
   /// Output only. The current state of this VolumeRestore.
   @$pb.TagNumber(10)

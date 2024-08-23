@@ -13,22 +13,22 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../common/value.pb.dart' as $3990;
-import 'authentication_error.pbenum.dart' as $4004;
-import 'authorization_error.pbenum.dart' as $4001;
-import 'custom_column_error.pbenum.dart' as $4010;
-import 'date_error.pbenum.dart' as $4005;
-import 'date_range_error.pbenum.dart' as $4006;
-import 'distinct_error.pbenum.dart' as $4007;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../common/value.pb.dart' as $3991;
+import 'authentication_error.pbenum.dart' as $4005;
+import 'authorization_error.pbenum.dart' as $4002;
+import 'custom_column_error.pbenum.dart' as $4011;
+import 'date_error.pbenum.dart' as $4006;
+import 'date_range_error.pbenum.dart' as $4007;
+import 'distinct_error.pbenum.dart' as $4008;
 import 'errors.pbenum.dart';
-import 'header_error.pbenum.dart' as $4008;
-import 'internal_error.pbenum.dart' as $4002;
-import 'invalid_parameter_error.pbenum.dart' as $4011;
-import 'query_error.pbenum.dart' as $4000;
-import 'quota_error.pbenum.dart' as $4003;
-import 'request_error.pbenum.dart' as $3999;
-import 'size_limit_error.pbenum.dart' as $4009;
+import 'header_error.pbenum.dart' as $4009;
+import 'internal_error.pbenum.dart' as $4003;
+import 'invalid_parameter_error.pbenum.dart' as $4012;
+import 'query_error.pbenum.dart' as $4001;
+import 'quota_error.pbenum.dart' as $4004;
+import 'request_error.pbenum.dart' as $4000;
+import 'size_limit_error.pbenum.dart' as $4010;
 
 export 'errors.pbenum.dart';
 
@@ -99,7 +99,7 @@ class SearchAds360Error extends $pb.GeneratedMessage {
   factory SearchAds360Error({
     ErrorCode? errorCode,
     $core.String? message,
-    $3990.Value? trigger,
+    $3991.Value? trigger,
     ErrorLocation? location,
     ErrorDetails? details,
   }) {
@@ -128,7 +128,7 @@ class SearchAds360Error extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchAds360Error', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.errors'), createEmptyInstance: create)
     ..aOM<ErrorCode>(1, _omitFieldNames ? '' : 'errorCode', subBuilder: ErrorCode.create)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aOM<$3990.Value>(3, _omitFieldNames ? '' : 'trigger', subBuilder: $3990.Value.create)
+    ..aOM<$3991.Value>(3, _omitFieldNames ? '' : 'trigger', subBuilder: $3991.Value.create)
     ..aOM<ErrorLocation>(4, _omitFieldNames ? '' : 'location', subBuilder: ErrorLocation.create)
     ..aOM<ErrorDetails>(5, _omitFieldNames ? '' : 'details', subBuilder: ErrorDetails.create)
     ..hasRequiredFields = false
@@ -179,15 +179,15 @@ class SearchAds360Error extends $pb.GeneratedMessage {
 
   /// The value that triggered the error.
   @$pb.TagNumber(3)
-  $3990.Value get trigger => $_getN(2);
+  $3991.Value get trigger => $_getN(2);
   @$pb.TagNumber(3)
-  set trigger($3990.Value v) { setField(3, v); }
+  set trigger($3991.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTrigger() => $_has(2);
   @$pb.TagNumber(3)
   void clearTrigger() => clearField(3);
   @$pb.TagNumber(3)
-  $3990.Value ensureTrigger() => $_ensure(2);
+  $3991.Value ensureTrigger() => $_ensure(2);
 
   /// Describes the part of the request proto that caused the error.
   @$pb.TagNumber(4)
@@ -235,19 +235,19 @@ enum ErrorCode_ErrorCode {
 /// The error reason represented by type and enum.
 class ErrorCode extends $pb.GeneratedMessage {
   factory ErrorCode({
-    $3999.RequestErrorEnum_RequestError? requestError,
-    $4000.QueryErrorEnum_QueryError? queryError,
-    $4001.AuthorizationErrorEnum_AuthorizationError? authorizationError,
-    $4002.InternalErrorEnum_InternalError? internalError,
-    $4003.QuotaErrorEnum_QuotaError? quotaError,
-    $4004.AuthenticationErrorEnum_AuthenticationError? authenticationError,
-    $4005.DateErrorEnum_DateError? dateError,
-    $4006.DateRangeErrorEnum_DateRangeError? dateRangeError,
-    $4007.DistinctErrorEnum_DistinctError? distinctError,
-    $4008.HeaderErrorEnum_HeaderError? headerError,
-    $4009.SizeLimitErrorEnum_SizeLimitError? sizeLimitError,
-    $4010.CustomColumnErrorEnum_CustomColumnError? customColumnError,
-    $4011.InvalidParameterErrorEnum_InvalidParameterError? invalidParameterError,
+    $4000.RequestErrorEnum_RequestError? requestError,
+    $4001.QueryErrorEnum_QueryError? queryError,
+    $4002.AuthorizationErrorEnum_AuthorizationError? authorizationError,
+    $4003.InternalErrorEnum_InternalError? internalError,
+    $4004.QuotaErrorEnum_QuotaError? quotaError,
+    $4005.AuthenticationErrorEnum_AuthenticationError? authenticationError,
+    $4006.DateErrorEnum_DateError? dateError,
+    $4007.DateRangeErrorEnum_DateRangeError? dateRangeError,
+    $4008.DistinctErrorEnum_DistinctError? distinctError,
+    $4009.HeaderErrorEnum_HeaderError? headerError,
+    $4010.SizeLimitErrorEnum_SizeLimitError? sizeLimitError,
+    $4011.CustomColumnErrorEnum_CustomColumnError? customColumnError,
+    $4012.InvalidParameterErrorEnum_InvalidParameterError? invalidParameterError,
   }) {
     final $result = create();
     if (requestError != null) {
@@ -313,19 +313,19 @@ class ErrorCode extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ErrorCode', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.errors'), createEmptyInstance: create)
     ..oo(0, [1, 5, 9, 10, 11, 17, 33, 34, 35, 66, 118, 144, 175])
-    ..e<$3999.RequestErrorEnum_RequestError>(1, _omitFieldNames ? '' : 'requestError', $pb.PbFieldType.OE, defaultOrMaker: $3999.RequestErrorEnum_RequestError.UNSPECIFIED, valueOf: $3999.RequestErrorEnum_RequestError.valueOf, enumValues: $3999.RequestErrorEnum_RequestError.values)
-    ..e<$4000.QueryErrorEnum_QueryError>(5, _omitFieldNames ? '' : 'queryError', $pb.PbFieldType.OE, defaultOrMaker: $4000.QueryErrorEnum_QueryError.UNSPECIFIED, valueOf: $4000.QueryErrorEnum_QueryError.valueOf, enumValues: $4000.QueryErrorEnum_QueryError.values)
-    ..e<$4001.AuthorizationErrorEnum_AuthorizationError>(9, _omitFieldNames ? '' : 'authorizationError', $pb.PbFieldType.OE, defaultOrMaker: $4001.AuthorizationErrorEnum_AuthorizationError.UNSPECIFIED, valueOf: $4001.AuthorizationErrorEnum_AuthorizationError.valueOf, enumValues: $4001.AuthorizationErrorEnum_AuthorizationError.values)
-    ..e<$4002.InternalErrorEnum_InternalError>(10, _omitFieldNames ? '' : 'internalError', $pb.PbFieldType.OE, defaultOrMaker: $4002.InternalErrorEnum_InternalError.UNSPECIFIED, valueOf: $4002.InternalErrorEnum_InternalError.valueOf, enumValues: $4002.InternalErrorEnum_InternalError.values)
-    ..e<$4003.QuotaErrorEnum_QuotaError>(11, _omitFieldNames ? '' : 'quotaError', $pb.PbFieldType.OE, defaultOrMaker: $4003.QuotaErrorEnum_QuotaError.UNSPECIFIED, valueOf: $4003.QuotaErrorEnum_QuotaError.valueOf, enumValues: $4003.QuotaErrorEnum_QuotaError.values)
-    ..e<$4004.AuthenticationErrorEnum_AuthenticationError>(17, _omitFieldNames ? '' : 'authenticationError', $pb.PbFieldType.OE, defaultOrMaker: $4004.AuthenticationErrorEnum_AuthenticationError.UNSPECIFIED, valueOf: $4004.AuthenticationErrorEnum_AuthenticationError.valueOf, enumValues: $4004.AuthenticationErrorEnum_AuthenticationError.values)
-    ..e<$4005.DateErrorEnum_DateError>(33, _omitFieldNames ? '' : 'dateError', $pb.PbFieldType.OE, defaultOrMaker: $4005.DateErrorEnum_DateError.UNSPECIFIED, valueOf: $4005.DateErrorEnum_DateError.valueOf, enumValues: $4005.DateErrorEnum_DateError.values)
-    ..e<$4006.DateRangeErrorEnum_DateRangeError>(34, _omitFieldNames ? '' : 'dateRangeError', $pb.PbFieldType.OE, defaultOrMaker: $4006.DateRangeErrorEnum_DateRangeError.UNSPECIFIED, valueOf: $4006.DateRangeErrorEnum_DateRangeError.valueOf, enumValues: $4006.DateRangeErrorEnum_DateRangeError.values)
-    ..e<$4007.DistinctErrorEnum_DistinctError>(35, _omitFieldNames ? '' : 'distinctError', $pb.PbFieldType.OE, defaultOrMaker: $4007.DistinctErrorEnum_DistinctError.UNSPECIFIED, valueOf: $4007.DistinctErrorEnum_DistinctError.valueOf, enumValues: $4007.DistinctErrorEnum_DistinctError.values)
-    ..e<$4008.HeaderErrorEnum_HeaderError>(66, _omitFieldNames ? '' : 'headerError', $pb.PbFieldType.OE, defaultOrMaker: $4008.HeaderErrorEnum_HeaderError.UNSPECIFIED, valueOf: $4008.HeaderErrorEnum_HeaderError.valueOf, enumValues: $4008.HeaderErrorEnum_HeaderError.values)
-    ..e<$4009.SizeLimitErrorEnum_SizeLimitError>(118, _omitFieldNames ? '' : 'sizeLimitError', $pb.PbFieldType.OE, defaultOrMaker: $4009.SizeLimitErrorEnum_SizeLimitError.UNSPECIFIED, valueOf: $4009.SizeLimitErrorEnum_SizeLimitError.valueOf, enumValues: $4009.SizeLimitErrorEnum_SizeLimitError.values)
-    ..e<$4010.CustomColumnErrorEnum_CustomColumnError>(144, _omitFieldNames ? '' : 'customColumnError', $pb.PbFieldType.OE, defaultOrMaker: $4010.CustomColumnErrorEnum_CustomColumnError.UNSPECIFIED, valueOf: $4010.CustomColumnErrorEnum_CustomColumnError.valueOf, enumValues: $4010.CustomColumnErrorEnum_CustomColumnError.values)
-    ..e<$4011.InvalidParameterErrorEnum_InvalidParameterError>(175, _omitFieldNames ? '' : 'invalidParameterError', $pb.PbFieldType.OE, defaultOrMaker: $4011.InvalidParameterErrorEnum_InvalidParameterError.UNSPECIFIED, valueOf: $4011.InvalidParameterErrorEnum_InvalidParameterError.valueOf, enumValues: $4011.InvalidParameterErrorEnum_InvalidParameterError.values)
+    ..e<$4000.RequestErrorEnum_RequestError>(1, _omitFieldNames ? '' : 'requestError', $pb.PbFieldType.OE, defaultOrMaker: $4000.RequestErrorEnum_RequestError.UNSPECIFIED, valueOf: $4000.RequestErrorEnum_RequestError.valueOf, enumValues: $4000.RequestErrorEnum_RequestError.values)
+    ..e<$4001.QueryErrorEnum_QueryError>(5, _omitFieldNames ? '' : 'queryError', $pb.PbFieldType.OE, defaultOrMaker: $4001.QueryErrorEnum_QueryError.UNSPECIFIED, valueOf: $4001.QueryErrorEnum_QueryError.valueOf, enumValues: $4001.QueryErrorEnum_QueryError.values)
+    ..e<$4002.AuthorizationErrorEnum_AuthorizationError>(9, _omitFieldNames ? '' : 'authorizationError', $pb.PbFieldType.OE, defaultOrMaker: $4002.AuthorizationErrorEnum_AuthorizationError.UNSPECIFIED, valueOf: $4002.AuthorizationErrorEnum_AuthorizationError.valueOf, enumValues: $4002.AuthorizationErrorEnum_AuthorizationError.values)
+    ..e<$4003.InternalErrorEnum_InternalError>(10, _omitFieldNames ? '' : 'internalError', $pb.PbFieldType.OE, defaultOrMaker: $4003.InternalErrorEnum_InternalError.UNSPECIFIED, valueOf: $4003.InternalErrorEnum_InternalError.valueOf, enumValues: $4003.InternalErrorEnum_InternalError.values)
+    ..e<$4004.QuotaErrorEnum_QuotaError>(11, _omitFieldNames ? '' : 'quotaError', $pb.PbFieldType.OE, defaultOrMaker: $4004.QuotaErrorEnum_QuotaError.UNSPECIFIED, valueOf: $4004.QuotaErrorEnum_QuotaError.valueOf, enumValues: $4004.QuotaErrorEnum_QuotaError.values)
+    ..e<$4005.AuthenticationErrorEnum_AuthenticationError>(17, _omitFieldNames ? '' : 'authenticationError', $pb.PbFieldType.OE, defaultOrMaker: $4005.AuthenticationErrorEnum_AuthenticationError.UNSPECIFIED, valueOf: $4005.AuthenticationErrorEnum_AuthenticationError.valueOf, enumValues: $4005.AuthenticationErrorEnum_AuthenticationError.values)
+    ..e<$4006.DateErrorEnum_DateError>(33, _omitFieldNames ? '' : 'dateError', $pb.PbFieldType.OE, defaultOrMaker: $4006.DateErrorEnum_DateError.UNSPECIFIED, valueOf: $4006.DateErrorEnum_DateError.valueOf, enumValues: $4006.DateErrorEnum_DateError.values)
+    ..e<$4007.DateRangeErrorEnum_DateRangeError>(34, _omitFieldNames ? '' : 'dateRangeError', $pb.PbFieldType.OE, defaultOrMaker: $4007.DateRangeErrorEnum_DateRangeError.UNSPECIFIED, valueOf: $4007.DateRangeErrorEnum_DateRangeError.valueOf, enumValues: $4007.DateRangeErrorEnum_DateRangeError.values)
+    ..e<$4008.DistinctErrorEnum_DistinctError>(35, _omitFieldNames ? '' : 'distinctError', $pb.PbFieldType.OE, defaultOrMaker: $4008.DistinctErrorEnum_DistinctError.UNSPECIFIED, valueOf: $4008.DistinctErrorEnum_DistinctError.valueOf, enumValues: $4008.DistinctErrorEnum_DistinctError.values)
+    ..e<$4009.HeaderErrorEnum_HeaderError>(66, _omitFieldNames ? '' : 'headerError', $pb.PbFieldType.OE, defaultOrMaker: $4009.HeaderErrorEnum_HeaderError.UNSPECIFIED, valueOf: $4009.HeaderErrorEnum_HeaderError.valueOf, enumValues: $4009.HeaderErrorEnum_HeaderError.values)
+    ..e<$4010.SizeLimitErrorEnum_SizeLimitError>(118, _omitFieldNames ? '' : 'sizeLimitError', $pb.PbFieldType.OE, defaultOrMaker: $4010.SizeLimitErrorEnum_SizeLimitError.UNSPECIFIED, valueOf: $4010.SizeLimitErrorEnum_SizeLimitError.valueOf, enumValues: $4010.SizeLimitErrorEnum_SizeLimitError.values)
+    ..e<$4011.CustomColumnErrorEnum_CustomColumnError>(144, _omitFieldNames ? '' : 'customColumnError', $pb.PbFieldType.OE, defaultOrMaker: $4011.CustomColumnErrorEnum_CustomColumnError.UNSPECIFIED, valueOf: $4011.CustomColumnErrorEnum_CustomColumnError.valueOf, enumValues: $4011.CustomColumnErrorEnum_CustomColumnError.values)
+    ..e<$4012.InvalidParameterErrorEnum_InvalidParameterError>(175, _omitFieldNames ? '' : 'invalidParameterError', $pb.PbFieldType.OE, defaultOrMaker: $4012.InvalidParameterErrorEnum_InvalidParameterError.UNSPECIFIED, valueOf: $4012.InvalidParameterErrorEnum_InvalidParameterError.valueOf, enumValues: $4012.InvalidParameterErrorEnum_InvalidParameterError.values)
     ..hasRequiredFields = false
   ;
 
@@ -355,9 +355,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// An error caused by the request
   @$pb.TagNumber(1)
-  $3999.RequestErrorEnum_RequestError get requestError => $_getN(0);
+  $4000.RequestErrorEnum_RequestError get requestError => $_getN(0);
   @$pb.TagNumber(1)
-  set requestError($3999.RequestErrorEnum_RequestError v) { setField(1, v); }
+  set requestError($4000.RequestErrorEnum_RequestError v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRequestError() => $_has(0);
   @$pb.TagNumber(1)
@@ -365,9 +365,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// An error with the query
   @$pb.TagNumber(5)
-  $4000.QueryErrorEnum_QueryError get queryError => $_getN(1);
+  $4001.QueryErrorEnum_QueryError get queryError => $_getN(1);
   @$pb.TagNumber(5)
-  set queryError($4000.QueryErrorEnum_QueryError v) { setField(5, v); }
+  set queryError($4001.QueryErrorEnum_QueryError v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasQueryError() => $_has(1);
   @$pb.TagNumber(5)
@@ -375,9 +375,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// An error encountered when trying to authorize a user.
   @$pb.TagNumber(9)
-  $4001.AuthorizationErrorEnum_AuthorizationError get authorizationError => $_getN(2);
+  $4002.AuthorizationErrorEnum_AuthorizationError get authorizationError => $_getN(2);
   @$pb.TagNumber(9)
-  set authorizationError($4001.AuthorizationErrorEnum_AuthorizationError v) { setField(9, v); }
+  set authorizationError($4002.AuthorizationErrorEnum_AuthorizationError v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasAuthorizationError() => $_has(2);
   @$pb.TagNumber(9)
@@ -385,9 +385,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// An unexpected server-side error.
   @$pb.TagNumber(10)
-  $4002.InternalErrorEnum_InternalError get internalError => $_getN(3);
+  $4003.InternalErrorEnum_InternalError get internalError => $_getN(3);
   @$pb.TagNumber(10)
-  set internalError($4002.InternalErrorEnum_InternalError v) { setField(10, v); }
+  set internalError($4003.InternalErrorEnum_InternalError v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasInternalError() => $_has(3);
   @$pb.TagNumber(10)
@@ -395,9 +395,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// An error with the amount of quota remaining.
   @$pb.TagNumber(11)
-  $4003.QuotaErrorEnum_QuotaError get quotaError => $_getN(4);
+  $4004.QuotaErrorEnum_QuotaError get quotaError => $_getN(4);
   @$pb.TagNumber(11)
-  set quotaError($4003.QuotaErrorEnum_QuotaError v) { setField(11, v); }
+  set quotaError($4004.QuotaErrorEnum_QuotaError v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasQuotaError() => $_has(4);
   @$pb.TagNumber(11)
@@ -405,9 +405,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// Indicates failure to properly authenticate user.
   @$pb.TagNumber(17)
-  $4004.AuthenticationErrorEnum_AuthenticationError get authenticationError => $_getN(5);
+  $4005.AuthenticationErrorEnum_AuthenticationError get authenticationError => $_getN(5);
   @$pb.TagNumber(17)
-  set authenticationError($4004.AuthenticationErrorEnum_AuthenticationError v) { setField(17, v); }
+  set authenticationError($4005.AuthenticationErrorEnum_AuthenticationError v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasAuthenticationError() => $_has(5);
   @$pb.TagNumber(17)
@@ -415,9 +415,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// The reasons for the date error
   @$pb.TagNumber(33)
-  $4005.DateErrorEnum_DateError get dateError => $_getN(6);
+  $4006.DateErrorEnum_DateError get dateError => $_getN(6);
   @$pb.TagNumber(33)
-  set dateError($4005.DateErrorEnum_DateError v) { setField(33, v); }
+  set dateError($4006.DateErrorEnum_DateError v) { setField(33, v); }
   @$pb.TagNumber(33)
   $core.bool hasDateError() => $_has(6);
   @$pb.TagNumber(33)
@@ -425,9 +425,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// The reasons for the date range error
   @$pb.TagNumber(34)
-  $4006.DateRangeErrorEnum_DateRangeError get dateRangeError => $_getN(7);
+  $4007.DateRangeErrorEnum_DateRangeError get dateRangeError => $_getN(7);
   @$pb.TagNumber(34)
-  set dateRangeError($4006.DateRangeErrorEnum_DateRangeError v) { setField(34, v); }
+  set dateRangeError($4007.DateRangeErrorEnum_DateRangeError v) { setField(34, v); }
   @$pb.TagNumber(34)
   $core.bool hasDateRangeError() => $_has(7);
   @$pb.TagNumber(34)
@@ -435,9 +435,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// The reasons for the distinct error
   @$pb.TagNumber(35)
-  $4007.DistinctErrorEnum_DistinctError get distinctError => $_getN(8);
+  $4008.DistinctErrorEnum_DistinctError get distinctError => $_getN(8);
   @$pb.TagNumber(35)
-  set distinctError($4007.DistinctErrorEnum_DistinctError v) { setField(35, v); }
+  set distinctError($4008.DistinctErrorEnum_DistinctError v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasDistinctError() => $_has(8);
   @$pb.TagNumber(35)
@@ -445,9 +445,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// The reasons for the header error.
   @$pb.TagNumber(66)
-  $4008.HeaderErrorEnum_HeaderError get headerError => $_getN(9);
+  $4009.HeaderErrorEnum_HeaderError get headerError => $_getN(9);
   @$pb.TagNumber(66)
-  set headerError($4008.HeaderErrorEnum_HeaderError v) { setField(66, v); }
+  set headerError($4009.HeaderErrorEnum_HeaderError v) { setField(66, v); }
   @$pb.TagNumber(66)
   $core.bool hasHeaderError() => $_has(9);
   @$pb.TagNumber(66)
@@ -455,9 +455,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// The reasons for the size limit error
   @$pb.TagNumber(118)
-  $4009.SizeLimitErrorEnum_SizeLimitError get sizeLimitError => $_getN(10);
+  $4010.SizeLimitErrorEnum_SizeLimitError get sizeLimitError => $_getN(10);
   @$pb.TagNumber(118)
-  set sizeLimitError($4009.SizeLimitErrorEnum_SizeLimitError v) { setField(118, v); }
+  set sizeLimitError($4010.SizeLimitErrorEnum_SizeLimitError v) { setField(118, v); }
   @$pb.TagNumber(118)
   $core.bool hasSizeLimitError() => $_has(10);
   @$pb.TagNumber(118)
@@ -465,9 +465,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// The reasons for the custom column error
   @$pb.TagNumber(144)
-  $4010.CustomColumnErrorEnum_CustomColumnError get customColumnError => $_getN(11);
+  $4011.CustomColumnErrorEnum_CustomColumnError get customColumnError => $_getN(11);
   @$pb.TagNumber(144)
-  set customColumnError($4010.CustomColumnErrorEnum_CustomColumnError v) { setField(144, v); }
+  set customColumnError($4011.CustomColumnErrorEnum_CustomColumnError v) { setField(144, v); }
   @$pb.TagNumber(144)
   $core.bool hasCustomColumnError() => $_has(11);
   @$pb.TagNumber(144)
@@ -475,9 +475,9 @@ class ErrorCode extends $pb.GeneratedMessage {
 
   /// The reasons for invalid parameter errors.
   @$pb.TagNumber(175)
-  $4011.InvalidParameterErrorEnum_InvalidParameterError get invalidParameterError => $_getN(12);
+  $4012.InvalidParameterErrorEnum_InvalidParameterError get invalidParameterError => $_getN(12);
   @$pb.TagNumber(175)
-  set invalidParameterError($4011.InvalidParameterErrorEnum_InvalidParameterError v) { setField(175, v); }
+  set invalidParameterError($4012.InvalidParameterErrorEnum_InvalidParameterError v) { setField(175, v); }
   @$pb.TagNumber(175)
   $core.bool hasInvalidParameterError() => $_has(12);
   @$pb.TagNumber(175)
@@ -673,7 +673,7 @@ class QuotaErrorDetails extends $pb.GeneratedMessage {
   factory QuotaErrorDetails({
     QuotaErrorDetails_QuotaRateScope? rateScope,
     $core.String? rateName,
-    $1737.Duration? retryDelay,
+    $1738.Duration? retryDelay,
   }) {
     final $result = create();
     if (rateScope != null) {
@@ -694,7 +694,7 @@ class QuotaErrorDetails extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QuotaErrorDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.errors'), createEmptyInstance: create)
     ..e<QuotaErrorDetails_QuotaRateScope>(1, _omitFieldNames ? '' : 'rateScope', $pb.PbFieldType.OE, defaultOrMaker: QuotaErrorDetails_QuotaRateScope.UNSPECIFIED, valueOf: QuotaErrorDetails_QuotaRateScope.valueOf, enumValues: QuotaErrorDetails_QuotaRateScope.values)
     ..aOS(2, _omitFieldNames ? '' : 'rateName')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'retryDelay', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'retryDelay', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -742,15 +742,15 @@ class QuotaErrorDetails extends $pb.GeneratedMessage {
 
   /// Backoff period that customers should wait before sending next request.
   @$pb.TagNumber(3)
-  $1737.Duration get retryDelay => $_getN(2);
+  $1738.Duration get retryDelay => $_getN(2);
   @$pb.TagNumber(3)
-  set retryDelay($1737.Duration v) { setField(3, v); }
+  set retryDelay($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRetryDelay() => $_has(2);
   @$pb.TagNumber(3)
   void clearRetryDelay() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureRetryDelay() => $_ensure(2);
+  $1738.Duration ensureRetryDelay() => $_ensure(2);
 }
 
 

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'common.pb.dart' as $4598;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'common.pb.dart' as $4600;
 import 'product.pb.dart' as $1306;
 
 /// UserEvent captures all metadata information Retail API needs to know about
@@ -24,16 +24,16 @@ class UserEvent extends $pb.GeneratedMessage {
   factory UserEvent({
     $core.String? eventType,
     $core.String? visitorId,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     $core.Iterable<$core.String>? experimentIds,
     $core.String? attributionToken,
     $core.Iterable<ProductDetail>? productDetails,
-    $core.Map<$core.String, $4598.CustomAttribute>? attributes,
+    $core.Map<$core.String, $4600.CustomAttribute>? attributes,
     $core.String? cartId,
     PurchaseTransaction? purchaseTransaction,
     $core.String? searchQuery,
     $core.Iterable<$core.String>? pageCategories,
-    $4598.UserInfo? userInfo,
+    $4600.UserInfo? userInfo,
     $core.String? uri,
     $core.String? referrerUri,
     $core.String? pageViewId,
@@ -117,16 +117,16 @@ class UserEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'eventType')
     ..aOS(2, _omitFieldNames ? '' : 'visitorId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..pPS(4, _omitFieldNames ? '' : 'experimentIds')
     ..aOS(5, _omitFieldNames ? '' : 'attributionToken')
     ..pc<ProductDetail>(6, _omitFieldNames ? '' : 'productDetails', $pb.PbFieldType.PM, subBuilder: ProductDetail.create)
-    ..m<$core.String, $4598.CustomAttribute>(7, _omitFieldNames ? '' : 'attributes', entryClassName: 'UserEvent.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4598.CustomAttribute.create, valueDefaultOrMaker: $4598.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
+    ..m<$core.String, $4600.CustomAttribute>(7, _omitFieldNames ? '' : 'attributes', entryClassName: 'UserEvent.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4600.CustomAttribute.create, valueDefaultOrMaker: $4600.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
     ..aOS(8, _omitFieldNames ? '' : 'cartId')
     ..aOM<PurchaseTransaction>(9, _omitFieldNames ? '' : 'purchaseTransaction', subBuilder: PurchaseTransaction.create)
     ..aOS(10, _omitFieldNames ? '' : 'searchQuery')
     ..pPS(11, _omitFieldNames ? '' : 'pageCategories')
-    ..aOM<$4598.UserInfo>(12, _omitFieldNames ? '' : 'userInfo', subBuilder: $4598.UserInfo.create)
+    ..aOM<$4600.UserInfo>(12, _omitFieldNames ? '' : 'userInfo', subBuilder: $4600.UserInfo.create)
     ..aOS(13, _omitFieldNames ? '' : 'uri')
     ..aOS(14, _omitFieldNames ? '' : 'referrerUri')
     ..aOS(15, _omitFieldNames ? '' : 'pageViewId')
@@ -212,15 +212,15 @@ class UserEvent extends $pb.GeneratedMessage {
   /// [UserEventService.ImportUserEvents][google.cloud.retail.v2beta.UserEventService.ImportUserEvents]
   /// method. Timestamp of when the user event happened.
   @$pb.TagNumber(3)
-  $1775.Timestamp get eventTime => $_getN(2);
+  $1776.Timestamp get eventTime => $_getN(2);
   @$pb.TagNumber(3)
-  set eventTime($1775.Timestamp v) { setField(3, v); }
+  set eventTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEventTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEventTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEventTime() => $_ensure(2);
+  $1776.Timestamp ensureEventTime() => $_ensure(2);
 
   /// A list of identifiers for the independent experiment groups this user event
   /// belongs to. This is used to distinguish between user events associated with
@@ -303,7 +303,7 @@ class UserEvent extends $pb.GeneratedMessage {
   ///  at the site by coming to the site directly, coming through Google
   ///  search, or in other ways.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $4598.CustomAttribute> get attributes => $_getMap(6);
+  $core.Map<$core.String, $4600.CustomAttribute> get attributes => $_getMap(6);
 
   ///  The ID or name of the associated shopping cart. This ID is used
   ///  to associate multiple items added or present in the cart before purchase.
@@ -376,15 +376,15 @@ class UserEvent extends $pb.GeneratedMessage {
 
   /// User information.
   @$pb.TagNumber(12)
-  $4598.UserInfo get userInfo => $_getN(11);
+  $4600.UserInfo get userInfo => $_getN(11);
   @$pb.TagNumber(12)
-  set userInfo($4598.UserInfo v) { setField(12, v); }
+  set userInfo($4600.UserInfo v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUserInfo() => $_has(11);
   @$pb.TagNumber(12)
   void clearUserInfo() => clearField(12);
   @$pb.TagNumber(12)
-  $4598.UserInfo ensureUserInfo() => $_ensure(11);
+  $4600.UserInfo ensureUserInfo() => $_ensure(11);
 
   ///  Complete URL (window.location.href) of the user's current page.
   ///
@@ -539,7 +539,7 @@ class UserEvent extends $pb.GeneratedMessage {
 class ProductDetail extends $pb.GeneratedMessage {
   factory ProductDetail({
     $1306.Product? product,
-    $1780.Int32Value? quantity,
+    $1781.Int32Value? quantity,
   }) {
     final $result = create();
     if (product != null) {
@@ -556,7 +556,7 @@ class ProductDetail extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOM<$1306.Product>(1, _omitFieldNames ? '' : 'product', subBuilder: $1306.Product.create)
-    ..aOM<$1780.Int32Value>(2, _omitFieldNames ? '' : 'quantity', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(2, _omitFieldNames ? '' : 'quantity', subBuilder: $1781.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -615,15 +615,15 @@ class ProductDetail extends $pb.GeneratedMessage {
   ///  cart for `purchase-complete` event. Required for `add-to-cart` and
   ///  `purchase-complete` event types.
   @$pb.TagNumber(2)
-  $1780.Int32Value get quantity => $_getN(1);
+  $1781.Int32Value get quantity => $_getN(1);
   @$pb.TagNumber(2)
-  set quantity($1780.Int32Value v) { setField(2, v); }
+  set quantity($1781.Int32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasQuantity() => $_has(1);
   @$pb.TagNumber(2)
   void clearQuantity() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int32Value ensureQuantity() => $_ensure(1);
+  $1781.Int32Value ensureQuantity() => $_ensure(1);
 }
 
 /// Detailed completion information including completion attribution token and

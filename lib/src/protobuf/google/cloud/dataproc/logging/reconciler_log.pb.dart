@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'reconciler_log.pbenum.dart';
 
 export 'reconciler_log.pbenum.dart';
@@ -22,10 +22,10 @@ export 'reconciler_log.pbenum.dart';
 /// We could add more details in future if required.
 class ReconciliationLog_Inputs extends $pb.GeneratedMessage {
   factory ReconciliationLog_Inputs({
-    $1737.Duration? idleDuration,
-    $1737.Duration? idleTtl,
-    $1737.Duration? sessionLifetime,
-    $1737.Duration? ttl,
+    $1738.Duration? idleDuration,
+    $1738.Duration? idleTtl,
+    $1738.Duration? sessionLifetime,
+    $1738.Duration? ttl,
   }) {
     final $result = create();
     if (idleDuration != null) {
@@ -47,10 +47,10 @@ class ReconciliationLog_Inputs extends $pb.GeneratedMessage {
   factory ReconciliationLog_Inputs.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReconciliationLog.Inputs', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.logging'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'idleDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'idleTtl', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'sessionLifetime', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'idleDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'idleTtl', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'sessionLifetime', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -77,51 +77,51 @@ class ReconciliationLog_Inputs extends $pb.GeneratedMessage {
 
   /// Idle duration
   @$pb.TagNumber(1)
-  $1737.Duration get idleDuration => $_getN(0);
+  $1738.Duration get idleDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set idleDuration($1737.Duration v) { setField(1, v); }
+  set idleDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIdleDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearIdleDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureIdleDuration() => $_ensure(0);
+  $1738.Duration ensureIdleDuration() => $_ensure(0);
 
   /// Configured idle TTL
   @$pb.TagNumber(2)
-  $1737.Duration get idleTtl => $_getN(1);
+  $1738.Duration get idleTtl => $_getN(1);
   @$pb.TagNumber(2)
-  set idleTtl($1737.Duration v) { setField(2, v); }
+  set idleTtl($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIdleTtl() => $_has(1);
   @$pb.TagNumber(2)
   void clearIdleTtl() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureIdleTtl() => $_ensure(1);
+  $1738.Duration ensureIdleTtl() => $_ensure(1);
 
   /// Total session lifetime
   @$pb.TagNumber(3)
-  $1737.Duration get sessionLifetime => $_getN(2);
+  $1738.Duration get sessionLifetime => $_getN(2);
   @$pb.TagNumber(3)
-  set sessionLifetime($1737.Duration v) { setField(3, v); }
+  set sessionLifetime($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSessionLifetime() => $_has(2);
   @$pb.TagNumber(3)
   void clearSessionLifetime() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureSessionLifetime() => $_ensure(2);
+  $1738.Duration ensureSessionLifetime() => $_ensure(2);
 
   /// Configured ttl
   @$pb.TagNumber(4)
-  $1737.Duration get ttl => $_getN(3);
+  $1738.Duration get ttl => $_getN(3);
   @$pb.TagNumber(4)
-  set ttl($1737.Duration v) { setField(4, v); }
+  set ttl($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTtl() => $_has(3);
   @$pb.TagNumber(4)
   void clearTtl() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureTtl() => $_ensure(3);
+  $1738.Duration ensureTtl() => $_ensure(3);
 }
 
 /// Reconciler recommendations.

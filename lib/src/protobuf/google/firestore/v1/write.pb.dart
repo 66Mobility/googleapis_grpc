@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $1775;
-import 'bloom_filter.pb.dart' as $4777;
-import 'common.pb.dart' as $4776;
+import '../../protobuf/timestamp.pb.dart' as $1776;
+import 'bloom_filter.pb.dart' as $4779;
+import 'common.pb.dart' as $4778;
 import 'document.pb.dart' as $1608;
 import 'write.pbenum.dart';
 
@@ -33,8 +33,8 @@ class Write extends $pb.GeneratedMessage {
   factory Write({
     $1608.Document? update,
     $core.String? delete,
-    $4776.DocumentMask? updateMask,
-    $4776.Precondition? currentDocument,
+    $4778.DocumentMask? updateMask,
+    $4778.Precondition? currentDocument,
     DocumentTransform? transform,
     $core.Iterable<DocumentTransform_FieldTransform>? updateTransforms,
   }) {
@@ -73,8 +73,8 @@ class Write extends $pb.GeneratedMessage {
     ..oo(0, [1, 2, 6])
     ..aOM<$1608.Document>(1, _omitFieldNames ? '' : 'update', subBuilder: $1608.Document.create)
     ..aOS(2, _omitFieldNames ? '' : 'delete')
-    ..aOM<$4776.DocumentMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $4776.DocumentMask.create)
-    ..aOM<$4776.Precondition>(4, _omitFieldNames ? '' : 'currentDocument', subBuilder: $4776.Precondition.create)
+    ..aOM<$4778.DocumentMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $4778.DocumentMask.create)
+    ..aOM<$4778.Precondition>(4, _omitFieldNames ? '' : 'currentDocument', subBuilder: $4778.Precondition.create)
     ..aOM<DocumentTransform>(6, _omitFieldNames ? '' : 'transform', subBuilder: DocumentTransform.create)
     ..pc<DocumentTransform_FieldTransform>(7, _omitFieldNames ? '' : 'updateTransforms', $pb.PbFieldType.PM, subBuilder: DocumentTransform_FieldTransform.create)
     ..hasRequiredFields = false
@@ -138,29 +138,29 @@ class Write extends $pb.GeneratedMessage {
   ///  deleted from the document on the server.
   ///  The field paths in this mask must not contain a reserved field name.
   @$pb.TagNumber(3)
-  $4776.DocumentMask get updateMask => $_getN(2);
+  $4778.DocumentMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($4776.DocumentMask v) { setField(3, v); }
+  set updateMask($4778.DocumentMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $4776.DocumentMask ensureUpdateMask() => $_ensure(2);
+  $4778.DocumentMask ensureUpdateMask() => $_ensure(2);
 
   ///  An optional precondition on the document.
   ///
   ///  The write will fail if this is set and not met by the target document.
   @$pb.TagNumber(4)
-  $4776.Precondition get currentDocument => $_getN(3);
+  $4778.Precondition get currentDocument => $_getN(3);
   @$pb.TagNumber(4)
-  set currentDocument($4776.Precondition v) { setField(4, v); }
+  set currentDocument($4778.Precondition v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCurrentDocument() => $_has(3);
   @$pb.TagNumber(4)
   void clearCurrentDocument() => clearField(4);
   @$pb.TagNumber(4)
-  $4776.Precondition ensureCurrentDocument() => $_ensure(3);
+  $4778.Precondition ensureCurrentDocument() => $_ensure(3);
 
   /// Applies a transformation to a document.
   @$pb.TagNumber(6)
@@ -477,7 +477,7 @@ class DocumentTransform extends $pb.GeneratedMessage {
 /// The result of applying a write.
 class WriteResult extends $pb.GeneratedMessage {
   factory WriteResult({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$1608.Value>? transformResults,
   }) {
     final $result = create();
@@ -494,7 +494,7 @@ class WriteResult extends $pb.GeneratedMessage {
   factory WriteResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pc<$1608.Value>(2, _omitFieldNames ? '' : 'transformResults', $pb.PbFieldType.PM, subBuilder: $1608.Value.create)
     ..hasRequiredFields = false
   ;
@@ -526,15 +526,15 @@ class WriteResult extends $pb.GeneratedMessage {
   ///  If the write did not actually change the document, this will be the
   ///  previous update_time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// The results of applying each
   /// [DocumentTransform.FieldTransform][google.firestore.v1.DocumentTransform.FieldTransform],
@@ -635,7 +635,7 @@ class DocumentChange extends $pb.GeneratedMessage {
 class DocumentDelete extends $pb.GeneratedMessage {
   factory DocumentDelete({
     $core.String? document,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.Iterable<$core.int>? removedTargetIds,
   }) {
     final $result = create();
@@ -656,7 +656,7 @@ class DocumentDelete extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DocumentDelete', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'document')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..p<$core.int>(6, _omitFieldNames ? '' : 'removedTargetIds', $pb.PbFieldType.K3)
     ..hasRequiredFields = false
   ;
@@ -697,15 +697,15 @@ class DocumentDelete extends $pb.GeneratedMessage {
   ///
   ///  Greater or equal to the `commit_time` of the delete.
   @$pb.TagNumber(4)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(4)
-  set readTime($1775.Timestamp v) { setField(4, v); }
+  set readTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(4)
   void clearReadTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   /// A set of target IDs for targets that previously matched this entity.
   @$pb.TagNumber(6)
@@ -726,7 +726,7 @@ class DocumentRemove extends $pb.GeneratedMessage {
   factory DocumentRemove({
     $core.String? document,
     $core.Iterable<$core.int>? removedTargetIds,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
   }) {
     final $result = create();
     if (document != null) {
@@ -747,7 +747,7 @@ class DocumentRemove extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DocumentRemove', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'document')
     ..p<$core.int>(2, _omitFieldNames ? '' : 'removedTargetIds', $pb.PbFieldType.K3)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -791,15 +791,15 @@ class DocumentRemove extends $pb.GeneratedMessage {
   ///
   ///  Greater or equal to the `commit_time` of the change/delete/remove.
   @$pb.TagNumber(4)
-  $1775.Timestamp get readTime => $_getN(2);
+  $1776.Timestamp get readTime => $_getN(2);
   @$pb.TagNumber(4)
-  set readTime($1775.Timestamp v) { setField(4, v); }
+  set readTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearReadTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureReadTime() => $_ensure(2);
+  $1776.Timestamp ensureReadTime() => $_ensure(2);
 }
 
 /// A digest of all the documents that match a given target.
@@ -807,7 +807,7 @@ class ExistenceFilter extends $pb.GeneratedMessage {
   factory ExistenceFilter({
     $core.int? targetId,
     $core.int? count,
-    $4777.BloomFilter? unchangedNames,
+    $4779.BloomFilter? unchangedNames,
   }) {
     final $result = create();
     if (targetId != null) {
@@ -828,7 +828,7 @@ class ExistenceFilter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExistenceFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'targetId', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
-    ..aOM<$4777.BloomFilter>(3, _omitFieldNames ? '' : 'unchangedNames', subBuilder: $4777.BloomFilter.create)
+    ..aOM<$4779.BloomFilter>(3, _omitFieldNames ? '' : 'unchangedNames', subBuilder: $4779.BloomFilter.create)
     ..hasRequiredFields = false
   ;
 
@@ -894,15 +894,15 @@ class ExistenceFilter extends $pb.GeneratedMessage {
   ///  this field existed; that is, re-add the target without a resume token to
   ///  figure out which documents in the client's cache are out of sync.
   @$pb.TagNumber(3)
-  $4777.BloomFilter get unchangedNames => $_getN(2);
+  $4779.BloomFilter get unchangedNames => $_getN(2);
   @$pb.TagNumber(3)
-  set unchangedNames($4777.BloomFilter v) { setField(3, v); }
+  set unchangedNames($4779.BloomFilter v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUnchangedNames() => $_has(2);
   @$pb.TagNumber(3)
   void clearUnchangedNames() => clearField(3);
   @$pb.TagNumber(3)
-  $4777.BloomFilter ensureUnchangedNames() => $_ensure(2);
+  $4779.BloomFilter ensureUnchangedNames() => $_ensure(2);
 }
 
 

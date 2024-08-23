@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Configuration for a Recommender.
 class RecommenderConfig extends $pb.GeneratedMessage {
@@ -22,7 +22,7 @@ class RecommenderConfig extends $pb.GeneratedMessage {
     $core.String? name,
     RecommenderGenerationConfig? recommenderGenerationConfig,
     $core.String? etag,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? revisionId,
     $core.Map<$core.String, $core.String>? annotations,
     $core.String? displayName,
@@ -59,7 +59,7 @@ class RecommenderConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<RecommenderGenerationConfig>(2, _omitFieldNames ? '' : 'recommenderGenerationConfig', subBuilder: RecommenderGenerationConfig.create)
     ..aOS(3, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'revisionId')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'annotations', entryClassName: 'RecommenderConfig.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.recommender.v1beta1'))
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
@@ -125,15 +125,15 @@ class RecommenderConfig extends $pb.GeneratedMessage {
 
   /// Last time when the config was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Immutable. The revision ID of the config.
   /// A new revision is committed whenever the config is changed in any way.
@@ -175,7 +175,7 @@ class RecommenderConfig extends $pb.GeneratedMessage {
 /// recommendation.
 class RecommenderGenerationConfig extends $pb.GeneratedMessage {
   factory RecommenderGenerationConfig({
-    $1734.Struct? params,
+    $1735.Struct? params,
   }) {
     final $result = create();
     if (params != null) {
@@ -188,7 +188,7 @@ class RecommenderGenerationConfig extends $pb.GeneratedMessage {
   factory RecommenderGenerationConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecommenderGenerationConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'params', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'params', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -216,15 +216,15 @@ class RecommenderGenerationConfig extends $pb.GeneratedMessage {
   /// Parameters for this RecommenderGenerationConfig. These configs can be used
   /// by or are applied to all subtypes.
   @$pb.TagNumber(1)
-  $1734.Struct get params => $_getN(0);
+  $1735.Struct get params => $_getN(0);
   @$pb.TagNumber(1)
-  set params($1734.Struct v) { setField(1, v); }
+  set params($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasParams() => $_has(0);
   @$pb.TagNumber(1)
   void clearParams() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureParams() => $_ensure(0);
+  $1735.Struct ensureParams() => $_ensure(0);
 }
 
 

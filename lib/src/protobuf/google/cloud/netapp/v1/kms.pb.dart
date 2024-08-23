@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'kms.pbenum.dart';
 
 export 'kms.pbenum.dart';
@@ -344,7 +344,7 @@ class CreateKmsConfigRequest extends $pb.GeneratedMessage {
 /// UpdateKmsConfigRequest updates a KMS Config.
 class UpdateKmsConfigRequest extends $pb.GeneratedMessage {
   factory UpdateKmsConfigRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     KmsConfig? kmsConfig,
   }) {
     final $result = create();
@@ -361,7 +361,7 @@ class UpdateKmsConfigRequest extends $pb.GeneratedMessage {
   factory UpdateKmsConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateKmsConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<KmsConfig>(2, _omitFieldNames ? '' : 'kmsConfig', subBuilder: KmsConfig.create)
     ..hasRequiredFields = false
   ;
@@ -393,15 +393,15 @@ class UpdateKmsConfigRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The KmsConfig being updated
   @$pb.TagNumber(2)
@@ -664,7 +664,7 @@ class KmsConfig extends $pb.GeneratedMessage {
     $core.String? cryptoKeyName,
     KmsConfig_State? state,
     $core.String? stateDetails,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? description,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? instructions,
@@ -709,7 +709,7 @@ class KmsConfig extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'cryptoKeyName')
     ..e<KmsConfig_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: KmsConfig_State.STATE_UNSPECIFIED, valueOf: KmsConfig_State.valueOf, enumValues: KmsConfig_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'stateDetails')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'KmsConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.netapp.v1'))
     ..aOS(8, _omitFieldNames ? '' : 'instructions')
@@ -781,15 +781,15 @@ class KmsConfig extends $pb.GeneratedMessage {
 
   /// Output only. Create time of the KmsConfig.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Description of the KmsConfig.
   @$pb.TagNumber(6)

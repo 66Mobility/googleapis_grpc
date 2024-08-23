@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'branch.pbenum.dart';
 import 'product.pb.dart' as $1286;
 
@@ -309,7 +309,7 @@ class Branch extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.bool? isDefault,
-    $1775.Timestamp? lastProductImportTime,
+    $1776.Timestamp? lastProductImportTime,
     $core.Iterable<Branch_QualityMetric>? qualityMetrics,
     $core.Iterable<Branch_ProductCountStatistic>? productCountStats,
   }) {
@@ -342,7 +342,7 @@ class Branch extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOB(3, _omitFieldNames ? '' : 'isDefault')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'lastProductImportTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'lastProductImportTime', subBuilder: $1776.Timestamp.create)
     ..pc<Branch_QualityMetric>(6, _omitFieldNames ? '' : 'qualityMetrics', $pb.PbFieldType.PM, subBuilder: Branch_QualityMetric.create)
     ..pc<Branch_ProductCountStatistic>(7, _omitFieldNames ? '' : 'productCountStats', $pb.PbFieldType.PM, subBuilder: Branch_ProductCountStatistic.create)
     ..hasRequiredFields = false
@@ -405,15 +405,15 @@ class Branch extends $pb.GeneratedMessage {
   /// [ProductService.ImportProducts][google.cloud.retail.v2alpha.ProductService.ImportProducts].
   /// Empty value means no import has been made to this branch.
   @$pb.TagNumber(5)
-  $1775.Timestamp get lastProductImportTime => $_getN(3);
+  $1776.Timestamp get lastProductImportTime => $_getN(3);
   @$pb.TagNumber(5)
-  set lastProductImportTime($1775.Timestamp v) { setField(5, v); }
+  set lastProductImportTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLastProductImportTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearLastProductImportTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureLastProductImportTime() => $_ensure(3);
+  $1776.Timestamp ensureLastProductImportTime() => $_ensure(3);
 
   ///  Output only. The quality metrics measured among products of this branch.
   ///

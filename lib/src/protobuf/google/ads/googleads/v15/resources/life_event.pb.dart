@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criterion_category_availability.pb.dart' as $2266;
+import '../common/criterion_category_availability.pb.dart' as $2267;
 
 /// A life event: a particular interest-based vertical to be targeted to reach
 /// users when they are in the midst of important life milestones.
@@ -25,7 +25,7 @@ class LifeEvent extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? parent,
     $core.bool? launchedToAll,
-    $core.Iterable<$2266.CriterionCategoryAvailability>? availabilities,
+    $core.Iterable<$2267.CriterionCategoryAvailability>? availabilities,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -58,7 +58,7 @@ class LifeEvent extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'parent')
     ..aOB(5, _omitFieldNames ? '' : 'launchedToAll')
-    ..pc<$2266.CriterionCategoryAvailability>(6, _omitFieldNames ? '' : 'availabilities', $pb.PbFieldType.PM, subBuilder: $2266.CriterionCategoryAvailability.create)
+    ..pc<$2267.CriterionCategoryAvailability>(6, _omitFieldNames ? '' : 'availabilities', $pb.PbFieldType.PM, subBuilder: $2267.CriterionCategoryAvailability.create)
     ..hasRequiredFields = false
   ;
 
@@ -139,7 +139,7 @@ class LifeEvent extends $pb.GeneratedMessage {
 
   /// Output only. Availability information of the life event.
   @$pb.TagNumber(6)
-  $core.List<$2266.CriterionCategoryAvailability> get availabilities => $_getList(5);
+  $core.List<$2267.CriterionCategoryAvailability> get availabilities => $_getList(5);
 }
 
 

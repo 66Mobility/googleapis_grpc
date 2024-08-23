@@ -13,27 +13,27 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'compute_routes_request.pb.dart' as $1653;
 import 'compute_routes_request.pbenum.dart' as $1653;
-import 'polyline.pbenum.dart' as $4821;
-import 'waypoint.pb.dart' as $4820;
+import 'polyline.pbenum.dart' as $4823;
+import 'waypoint.pb.dart' as $4822;
 
 /// ComputeCustomRoutes request message.
 class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   factory ComputeCustomRoutesRequest({
-    $4820.Waypoint? origin,
-    $4820.Waypoint? destination,
-    $core.Iterable<$4820.Waypoint>? intermediates,
+    $4822.Waypoint? origin,
+    $4822.Waypoint? destination,
+    $core.Iterable<$4822.Waypoint>? intermediates,
     $1653.RouteTravelMode? travelMode,
     $1653.RoutingPreference? routingPreference,
-    $4821.PolylineQuality? polylineQuality,
-    $1775.Timestamp? departureTime,
+    $4823.PolylineQuality? polylineQuality,
+    $1776.Timestamp? departureTime,
     $core.String? languageCode,
     $1653.Units? units,
     $1653.RouteModifiers? routeModifiers,
     RouteObjective? routeObjective,
-    $4821.PolylineEncoding? polylineEncoding,
+    $4823.PolylineEncoding? polylineEncoding,
   }) {
     final $result = create();
     if (origin != null) {
@@ -79,18 +79,18 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   factory ComputeCustomRoutesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeCustomRoutesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$4820.Waypoint>(1, _omitFieldNames ? '' : 'origin', subBuilder: $4820.Waypoint.create)
-    ..aOM<$4820.Waypoint>(2, _omitFieldNames ? '' : 'destination', subBuilder: $4820.Waypoint.create)
-    ..pc<$4820.Waypoint>(3, _omitFieldNames ? '' : 'intermediates', $pb.PbFieldType.PM, subBuilder: $4820.Waypoint.create)
+    ..aOM<$4822.Waypoint>(1, _omitFieldNames ? '' : 'origin', subBuilder: $4822.Waypoint.create)
+    ..aOM<$4822.Waypoint>(2, _omitFieldNames ? '' : 'destination', subBuilder: $4822.Waypoint.create)
+    ..pc<$4822.Waypoint>(3, _omitFieldNames ? '' : 'intermediates', $pb.PbFieldType.PM, subBuilder: $4822.Waypoint.create)
     ..e<$1653.RouteTravelMode>(4, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: $1653.RouteTravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: $1653.RouteTravelMode.valueOf, enumValues: $1653.RouteTravelMode.values)
     ..e<$1653.RoutingPreference>(5, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE, defaultOrMaker: $1653.RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED, valueOf: $1653.RoutingPreference.valueOf, enumValues: $1653.RoutingPreference.values)
-    ..e<$4821.PolylineQuality>(6, _omitFieldNames ? '' : 'polylineQuality', $pb.PbFieldType.OE, defaultOrMaker: $4821.PolylineQuality.POLYLINE_QUALITY_UNSPECIFIED, valueOf: $4821.PolylineQuality.valueOf, enumValues: $4821.PolylineQuality.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'departureTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4823.PolylineQuality>(6, _omitFieldNames ? '' : 'polylineQuality', $pb.PbFieldType.OE, defaultOrMaker: $4823.PolylineQuality.POLYLINE_QUALITY_UNSPECIFIED, valueOf: $4823.PolylineQuality.valueOf, enumValues: $4823.PolylineQuality.values)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'departureTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'languageCode')
     ..e<$1653.Units>(10, _omitFieldNames ? '' : 'units', $pb.PbFieldType.OE, defaultOrMaker: $1653.Units.UNITS_UNSPECIFIED, valueOf: $1653.Units.valueOf, enumValues: $1653.Units.values)
     ..aOM<$1653.RouteModifiers>(11, _omitFieldNames ? '' : 'routeModifiers', subBuilder: $1653.RouteModifiers.create)
     ..aOM<RouteObjective>(12, _omitFieldNames ? '' : 'routeObjective', subBuilder: RouteObjective.create)
-    ..e<$4821.PolylineEncoding>(13, _omitFieldNames ? '' : 'polylineEncoding', $pb.PbFieldType.OE, defaultOrMaker: $4821.PolylineEncoding.POLYLINE_ENCODING_UNSPECIFIED, valueOf: $4821.PolylineEncoding.valueOf, enumValues: $4821.PolylineEncoding.values)
+    ..e<$4823.PolylineEncoding>(13, _omitFieldNames ? '' : 'polylineEncoding', $pb.PbFieldType.OE, defaultOrMaker: $4823.PolylineEncoding.POLYLINE_ENCODING_UNSPECIFIED, valueOf: $4823.PolylineEncoding.valueOf, enumValues: $4823.PolylineEncoding.values)
     ..hasRequiredFields = false
   ;
 
@@ -117,32 +117,32 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
 
   /// Required. Origin waypoint.
   @$pb.TagNumber(1)
-  $4820.Waypoint get origin => $_getN(0);
+  $4822.Waypoint get origin => $_getN(0);
   @$pb.TagNumber(1)
-  set origin($4820.Waypoint v) { setField(1, v); }
+  set origin($4822.Waypoint v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOrigin() => $_has(0);
   @$pb.TagNumber(1)
   void clearOrigin() => clearField(1);
   @$pb.TagNumber(1)
-  $4820.Waypoint ensureOrigin() => $_ensure(0);
+  $4822.Waypoint ensureOrigin() => $_ensure(0);
 
   /// Required. Destination waypoint.
   @$pb.TagNumber(2)
-  $4820.Waypoint get destination => $_getN(1);
+  $4822.Waypoint get destination => $_getN(1);
   @$pb.TagNumber(2)
-  set destination($4820.Waypoint v) { setField(2, v); }
+  set destination($4822.Waypoint v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDestination() => $_has(1);
   @$pb.TagNumber(2)
   void clearDestination() => clearField(2);
   @$pb.TagNumber(2)
-  $4820.Waypoint ensureDestination() => $_ensure(1);
+  $4822.Waypoint ensureDestination() => $_ensure(1);
 
   /// Optional. A set of waypoints along the route (excluding terminal points), for either
   /// stopping at or passing by. Up to 25 intermediate waypoints are supported.
   @$pb.TagNumber(3)
-  $core.List<$4820.Waypoint> get intermediates => $_getList(2);
+  $core.List<$4822.Waypoint> get intermediates => $_getList(2);
 
   /// Optional. Specifies the mode of transportation. Only DRIVE is supported now.
   @$pb.TagNumber(4)
@@ -172,9 +172,9 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies your preference for the quality of the polyline.
   @$pb.TagNumber(6)
-  $4821.PolylineQuality get polylineQuality => $_getN(5);
+  $4823.PolylineQuality get polylineQuality => $_getN(5);
   @$pb.TagNumber(6)
-  set polylineQuality($4821.PolylineQuality v) { setField(6, v); }
+  set polylineQuality($4823.PolylineQuality v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPolylineQuality() => $_has(5);
   @$pb.TagNumber(6)
@@ -184,15 +184,15 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   /// defaults to the time that you made the request. If you set this value to a
   /// time that has already occurred, then the request fails.
   @$pb.TagNumber(7)
-  $1775.Timestamp get departureTime => $_getN(6);
+  $1776.Timestamp get departureTime => $_getN(6);
   @$pb.TagNumber(7)
-  set departureTime($1775.Timestamp v) { setField(7, v); }
+  set departureTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDepartureTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearDepartureTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureDepartureTime() => $_ensure(6);
+  $1776.Timestamp ensureDepartureTime() => $_ensure(6);
 
   /// Optional. The BCP-47 language code, such as "en-US" or "sr-Latn". For more
   /// information, see
@@ -249,9 +249,9 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies the preferred encoding for the polyline.
   @$pb.TagNumber(13)
-  $4821.PolylineEncoding get polylineEncoding => $_getN(11);
+  $4823.PolylineEncoding get polylineEncoding => $_getN(11);
   @$pb.TagNumber(13)
-  set polylineEncoding($4821.PolylineEncoding v) { setField(13, v); }
+  set polylineEncoding($4823.PolylineEncoding v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasPolylineEncoding() => $_has(11);
   @$pb.TagNumber(13)

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../api/monitored_resource.pb.dart' as $1672;
-import '../../protobuf/duration.pb.dart' as $1737;
+import '../../protobuf/duration.pb.dart' as $1738;
 import 'uptime.pbenum.dart';
 
 export 'uptime.pbenum.dart';
@@ -1202,8 +1202,8 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
     UptimeCheckConfig_ResourceGroup? resourceGroup,
     UptimeCheckConfig_HttpCheck? httpCheck,
     UptimeCheckConfig_TcpCheck? tcpCheck,
-    $1737.Duration? period,
-    $1737.Duration? timeout,
+    $1738.Duration? period,
+    $1738.Duration? timeout,
     $core.Iterable<UptimeCheckConfig_ContentMatcher>? contentMatchers,
     $core.Iterable<UptimeCheckRegion>? selectedRegions,
   @$core.Deprecated('This field is deprecated.')
@@ -1288,8 +1288,8 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
     ..aOM<UptimeCheckConfig_ResourceGroup>(4, _omitFieldNames ? '' : 'resourceGroup', subBuilder: UptimeCheckConfig_ResourceGroup.create)
     ..aOM<UptimeCheckConfig_HttpCheck>(5, _omitFieldNames ? '' : 'httpCheck', subBuilder: UptimeCheckConfig_HttpCheck.create)
     ..aOM<UptimeCheckConfig_TcpCheck>(6, _omitFieldNames ? '' : 'tcpCheck', subBuilder: UptimeCheckConfig_TcpCheck.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'period', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'period', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..pc<UptimeCheckConfig_ContentMatcher>(9, _omitFieldNames ? '' : 'contentMatchers', $pb.PbFieldType.PM, subBuilder: UptimeCheckConfig_ContentMatcher.create)
     ..pc<UptimeCheckRegion>(10, _omitFieldNames ? '' : 'selectedRegions', $pb.PbFieldType.KE, valueOf: UptimeCheckRegion.valueOf, enumValues: UptimeCheckRegion.values, defaultEnumValue: UptimeCheckRegion.REGION_UNSPECIFIED)
     ..pc<InternalChecker>(14, _omitFieldNames ? '' : 'internalCheckers', $pb.PbFieldType.PM, subBuilder: InternalChecker.create)
@@ -1423,28 +1423,28 @@ class UptimeCheckConfig extends $pb.GeneratedMessage {
   /// (5 minutes), `600s` (10 minutes), and `900s` (15 minutes). Optional,
   /// defaults to `60s`.
   @$pb.TagNumber(7)
-  $1737.Duration get period => $_getN(6);
+  $1738.Duration get period => $_getN(6);
   @$pb.TagNumber(7)
-  set period($1737.Duration v) { setField(7, v); }
+  set period($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPeriod() => $_has(6);
   @$pb.TagNumber(7)
   void clearPeriod() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensurePeriod() => $_ensure(6);
+  $1738.Duration ensurePeriod() => $_ensure(6);
 
   /// The maximum amount of time to wait for the request to complete (must be
   /// between 1 and 60 seconds). Required.
   @$pb.TagNumber(8)
-  $1737.Duration get timeout => $_getN(7);
+  $1738.Duration get timeout => $_getN(7);
   @$pb.TagNumber(8)
-  set timeout($1737.Duration v) { setField(8, v); }
+  set timeout($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(7);
   @$pb.TagNumber(8)
   void clearTimeout() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureTimeout() => $_ensure(7);
+  $1738.Duration ensureTimeout() => $_ensure(7);
 
   /// The content that is expected to appear in the data returned by the target
   /// server against which the check is run.  Currently, only the first entry

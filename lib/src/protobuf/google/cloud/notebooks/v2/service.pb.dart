@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'diagnostic_config.pb.dart' as $4573;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'diagnostic_config.pb.dart' as $4575;
 import 'instance.pb.dart' as $1169;
 
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -62,8 +62,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -96,27 +96,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -528,7 +528,7 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
 class UpdateInstanceRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceRequest({
     $1169.Instance? instance,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -549,7 +549,7 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v2'), createEmptyInstance: create)
     ..aOM<$1169.Instance>(1, _omitFieldNames ? '' : 'instance', subBuilder: $1169.Instance.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -589,15 +589,15 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
 
   /// Required. Mask used to update an instance
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. Idempotent request UUID.
   @$pb.TagNumber(3)
@@ -1131,7 +1131,7 @@ class RollbackInstanceRequest extends $pb.GeneratedMessage {
 class DiagnoseInstanceRequest extends $pb.GeneratedMessage {
   factory DiagnoseInstanceRequest({
     $core.String? name,
-    $4573.DiagnosticConfig? diagnosticConfig,
+    $4575.DiagnosticConfig? diagnosticConfig,
     $core.int? timeoutMinutes,
   }) {
     final $result = create();
@@ -1152,7 +1152,7 @@ class DiagnoseInstanceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiagnoseInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4573.DiagnosticConfig>(2, _omitFieldNames ? '' : 'diagnosticConfig', subBuilder: $4573.DiagnosticConfig.create)
+    ..aOM<$4575.DiagnosticConfig>(2, _omitFieldNames ? '' : 'diagnosticConfig', subBuilder: $4575.DiagnosticConfig.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'timeoutMinutes', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -1191,15 +1191,15 @@ class DiagnoseInstanceRequest extends $pb.GeneratedMessage {
 
   /// Required. Defines flags that are used to run the diagnostic tool
   @$pb.TagNumber(2)
-  $4573.DiagnosticConfig get diagnosticConfig => $_getN(1);
+  $4575.DiagnosticConfig get diagnosticConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set diagnosticConfig($4573.DiagnosticConfig v) { setField(2, v); }
+  set diagnosticConfig($4575.DiagnosticConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDiagnosticConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearDiagnosticConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4573.DiagnosticConfig ensureDiagnosticConfig() => $_ensure(1);
+  $4575.DiagnosticConfig ensureDiagnosticConfig() => $_ensure(1);
 
   /// Optional. Maxmium amount of time in minutes before the operation times out.
   @$pb.TagNumber(3)

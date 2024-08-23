@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -72,7 +72,7 @@ class PubSubMessage extends $pb.GeneratedMessage {
     $core.List<$core.int>? key,
     $core.List<$core.int>? data,
     $core.Map<$core.String, AttributeValues>? attributes,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
   }) {
     final $result = create();
     if (key != null) {
@@ -97,7 +97,7 @@ class PubSubMessage extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'key', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
     ..m<$core.String, AttributeValues>(3, _omitFieldNames ? '' : 'attributes', entryClassName: 'PubSubMessage.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: AttributeValues.create, valueDefaultOrMaker: AttributeValues.getDefault, packageName: const $pb.PackageName('google.cloud.pubsublite.v1'))
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -150,15 +150,15 @@ class PubSubMessage extends $pb.GeneratedMessage {
 
   /// An optional, user-specified event time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get eventTime => $_getN(3);
+  $1776.Timestamp get eventTime => $_getN(3);
   @$pb.TagNumber(4)
-  set eventTime($1775.Timestamp v) { setField(4, v); }
+  set eventTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEventTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEventTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEventTime() => $_ensure(3);
+  $1776.Timestamp ensureEventTime() => $_ensure(3);
 }
 
 /// A cursor that describes the position of a message within a topic partition.
@@ -218,7 +218,7 @@ class Cursor extends $pb.GeneratedMessage {
 class SequencedMessage extends $pb.GeneratedMessage {
   factory SequencedMessage({
     Cursor? cursor,
-    $1775.Timestamp? publishTime,
+    $1776.Timestamp? publishTime,
     PubSubMessage? message,
     $fixnum.Int64? sizeBytes,
   }) {
@@ -243,7 +243,7 @@ class SequencedMessage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SequencedMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.pubsublite.v1'), createEmptyInstance: create)
     ..aOM<Cursor>(1, _omitFieldNames ? '' : 'cursor', subBuilder: Cursor.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'publishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'publishTime', subBuilder: $1776.Timestamp.create)
     ..aOM<PubSubMessage>(3, _omitFieldNames ? '' : 'message', subBuilder: PubSubMessage.create)
     ..aInt64(4, _omitFieldNames ? '' : 'sizeBytes')
     ..hasRequiredFields = false
@@ -285,15 +285,15 @@ class SequencedMessage extends $pb.GeneratedMessage {
   /// The time when the message was received by the server when it was first
   /// published.
   @$pb.TagNumber(2)
-  $1775.Timestamp get publishTime => $_getN(1);
+  $1776.Timestamp get publishTime => $_getN(1);
   @$pb.TagNumber(2)
-  set publishTime($1775.Timestamp v) { setField(2, v); }
+  set publishTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPublishTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearPublishTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensurePublishTime() => $_ensure(1);
+  $1776.Timestamp ensurePublishTime() => $_ensure(1);
 
   /// The user message.
   @$pb.TagNumber(3)
@@ -583,7 +583,7 @@ class Topic_PartitionConfig extends $pb.GeneratedMessage {
 class Topic_RetentionConfig extends $pb.GeneratedMessage {
   factory Topic_RetentionConfig({
     $fixnum.Int64? perPartitionBytes,
-    $1737.Duration? period,
+    $1738.Duration? period,
   }) {
     final $result = create();
     if (perPartitionBytes != null) {
@@ -600,7 +600,7 @@ class Topic_RetentionConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Topic.RetentionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.pubsublite.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'perPartitionBytes')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'period', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'period', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -642,15 +642,15 @@ class Topic_RetentionConfig extends $pb.GeneratedMessage {
   /// retained as long as the bytes retained for each partition is below
   /// `per_partition_bytes`.
   @$pb.TagNumber(2)
-  $1737.Duration get period => $_getN(1);
+  $1738.Duration get period => $_getN(1);
   @$pb.TagNumber(2)
-  set period($1737.Duration v) { setField(2, v); }
+  set period($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPeriod() => $_has(1);
   @$pb.TagNumber(2)
   void clearPeriod() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensurePeriod() => $_ensure(1);
+  $1738.Duration ensurePeriod() => $_ensure(1);
 }
 
 /// The settings for this topic's Reservation usage.
@@ -1158,8 +1158,8 @@ enum TimeTarget_Time {
 /// corresponding cursor.
 class TimeTarget extends $pb.GeneratedMessage {
   factory TimeTarget({
-    $1775.Timestamp? publishTime,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? publishTime,
+    $1776.Timestamp? eventTime,
   }) {
     final $result = create();
     if (publishTime != null) {
@@ -1181,8 +1181,8 @@ class TimeTarget extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeTarget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.pubsublite.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'publishTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'publishTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1214,15 +1214,15 @@ class TimeTarget extends $pb.GeneratedMessage {
   /// equal to `publish_time`. All messages thereafter are guaranteed to have
   /// publish times >= `publish_time`.
   @$pb.TagNumber(1)
-  $1775.Timestamp get publishTime => $_getN(0);
+  $1776.Timestamp get publishTime => $_getN(0);
   @$pb.TagNumber(1)
-  set publishTime($1775.Timestamp v) { setField(1, v); }
+  set publishTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPublishTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearPublishTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensurePublishTime() => $_ensure(0);
+  $1776.Timestamp ensurePublishTime() => $_ensure(0);
 
   /// Request the cursor of the first message with event time greater than or
   /// equal to `event_time`. If messages are missing an event time, the publish
@@ -1230,15 +1230,15 @@ class TimeTarget extends $pb.GeneratedMessage {
   /// messages may have event times less than `event_time` and should be
   /// filtered by the client, if necessary.
   @$pb.TagNumber(2)
-  $1775.Timestamp get eventTime => $_getN(1);
+  $1776.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventTime($1775.Timestamp v) { setField(2, v); }
+  set eventTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEventTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEventTime() => $_ensure(1);
+  $1776.Timestamp ensureEventTime() => $_ensure(1);
 }
 
 

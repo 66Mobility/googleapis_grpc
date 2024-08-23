@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4499;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4501;
 
 /// Configurations for a Search Engine.
 class Engine_SearchEngineConfig extends $pb.GeneratedMessage {
   factory Engine_SearchEngineConfig({
-    $4499.SearchTier? searchTier,
-    $core.Iterable<$4499.SearchAddOn>? searchAddOns,
+    $4501.SearchTier? searchTier,
+    $core.Iterable<$4501.SearchAddOn>? searchAddOns,
   }) {
     final $result = create();
     if (searchTier != null) {
@@ -36,8 +36,8 @@ class Engine_SearchEngineConfig extends $pb.GeneratedMessage {
   factory Engine_SearchEngineConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Engine.SearchEngineConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
-    ..e<$4499.SearchTier>(1, _omitFieldNames ? '' : 'searchTier', $pb.PbFieldType.OE, defaultOrMaker: $4499.SearchTier.SEARCH_TIER_UNSPECIFIED, valueOf: $4499.SearchTier.valueOf, enumValues: $4499.SearchTier.values)
-    ..pc<$4499.SearchAddOn>(2, _omitFieldNames ? '' : 'searchAddOns', $pb.PbFieldType.KE, valueOf: $4499.SearchAddOn.valueOf, enumValues: $4499.SearchAddOn.values, defaultEnumValue: $4499.SearchAddOn.SEARCH_ADD_ON_UNSPECIFIED)
+    ..e<$4501.SearchTier>(1, _omitFieldNames ? '' : 'searchTier', $pb.PbFieldType.OE, defaultOrMaker: $4501.SearchTier.SEARCH_TIER_UNSPECIFIED, valueOf: $4501.SearchTier.valueOf, enumValues: $4501.SearchTier.values)
+    ..pc<$4501.SearchAddOn>(2, _omitFieldNames ? '' : 'searchAddOns', $pb.PbFieldType.KE, valueOf: $4501.SearchAddOn.valueOf, enumValues: $4501.SearchAddOn.values, defaultEnumValue: $4501.SearchAddOn.SEARCH_ADD_ON_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -71,9 +71,9 @@ class Engine_SearchEngineConfig extends $pb.GeneratedMessage {
   ///  [SearchTier.SEARCH_TIER_STANDARD][google.cloud.discoveryengine.v1.SearchTier.SEARCH_TIER_STANDARD]
   ///  if not specified.
   @$pb.TagNumber(1)
-  $4499.SearchTier get searchTier => $_getN(0);
+  $4501.SearchTier get searchTier => $_getN(0);
   @$pb.TagNumber(1)
-  set searchTier($4499.SearchTier v) { setField(1, v); }
+  set searchTier($4501.SearchTier v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSearchTier() => $_has(0);
   @$pb.TagNumber(1)
@@ -81,7 +81,7 @@ class Engine_SearchEngineConfig extends $pb.GeneratedMessage {
 
   /// The add-on that this search engine enables.
   @$pb.TagNumber(2)
-  $core.List<$4499.SearchAddOn> get searchAddOns => $_getList(1);
+  $core.List<$4501.SearchAddOn> get searchAddOns => $_getList(1);
 }
 
 ///  Configurations for generating a Dialogflow agent.
@@ -415,15 +415,15 @@ class Engine extends $pb.GeneratedMessage {
   factory Engine({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$core.String>? dataStoreIds,
-    $4499.SolutionType? solutionType,
+    $4501.SolutionType? solutionType,
     Engine_ChatEngineConfig? chatEngineConfig,
     Engine_ChatEngineMetadata? chatEngineMetadata,
     Engine_SearchEngineConfig? searchEngineConfig,
     Engine_CommonConfig? commonConfig,
-    $4499.IndustryVertical? industryVertical,
+    $4501.IndustryVertical? industryVertical,
   }) {
     final $result = create();
     if (name != null) {
@@ -479,15 +479,15 @@ class Engine extends $pb.GeneratedMessage {
     ..oo(1, [12])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pPS(5, _omitFieldNames ? '' : 'dataStoreIds')
-    ..e<$4499.SolutionType>(6, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4499.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4499.SolutionType.valueOf, enumValues: $4499.SolutionType.values)
+    ..e<$4501.SolutionType>(6, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4501.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4501.SolutionType.valueOf, enumValues: $4501.SolutionType.values)
     ..aOM<Engine_ChatEngineConfig>(11, _omitFieldNames ? '' : 'chatEngineConfig', subBuilder: Engine_ChatEngineConfig.create)
     ..aOM<Engine_ChatEngineMetadata>(12, _omitFieldNames ? '' : 'chatEngineMetadata', subBuilder: Engine_ChatEngineMetadata.create)
     ..aOM<Engine_SearchEngineConfig>(13, _omitFieldNames ? '' : 'searchEngineConfig', subBuilder: Engine_SearchEngineConfig.create)
     ..aOM<Engine_CommonConfig>(15, _omitFieldNames ? '' : 'commonConfig', subBuilder: Engine_CommonConfig.create)
-    ..e<$4499.IndustryVertical>(16, _omitFieldNames ? '' : 'industryVertical', $pb.PbFieldType.OE, defaultOrMaker: $4499.IndustryVertical.INDUSTRY_VERTICAL_UNSPECIFIED, valueOf: $4499.IndustryVertical.valueOf, enumValues: $4499.IndustryVertical.values)
+    ..e<$4501.IndustryVertical>(16, _omitFieldNames ? '' : 'industryVertical', $pb.PbFieldType.OE, defaultOrMaker: $4501.IndustryVertical.INDUSTRY_VERTICAL_UNSPECIFIED, valueOf: $4501.IndustryVertical.valueOf, enumValues: $4501.IndustryVertical.values)
     ..hasRequiredFields = false
   ;
 
@@ -549,27 +549,27 @@ class Engine extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp the Recommendation Engine was created at.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Timestamp the Recommendation Engine was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   ///  The data stores associated with this engine.
   ///
@@ -594,9 +594,9 @@ class Engine extends $pb.GeneratedMessage {
 
   /// Required. The solutions of the engine.
   @$pb.TagNumber(6)
-  $4499.SolutionType get solutionType => $_getN(5);
+  $4501.SolutionType get solutionType => $_getN(5);
   @$pb.TagNumber(6)
-  set solutionType($4499.SolutionType v) { setField(6, v); }
+  set solutionType($4501.SolutionType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSolutionType() => $_has(5);
   @$pb.TagNumber(6)
@@ -663,9 +663,9 @@ class Engine extends $pb.GeneratedMessage {
   /// default to `GENERIC`. Vertical on Engine has to match vertical of the
   /// DataStore linked to the engine.
   @$pb.TagNumber(16)
-  $4499.IndustryVertical get industryVertical => $_getN(10);
+  $4501.IndustryVertical get industryVertical => $_getN(10);
   @$pb.TagNumber(16)
-  set industryVertical($4499.IndustryVertical v) { setField(16, v); }
+  set industryVertical($4501.IndustryVertical v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasIndustryVertical() => $_has(10);
   @$pb.TagNumber(16)

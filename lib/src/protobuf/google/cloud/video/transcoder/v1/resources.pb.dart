@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -35,12 +35,12 @@ class Job extends $pb.GeneratedMessage {
     $core.String? templateId,
     JobConfig? config,
     Job_ProcessingState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.int? ttlAfterCompletionDays,
     $core.Map<$core.String, $core.String>? labels,
-    $1795.Status? error,
+    $1796.Status? error,
     Job_ProcessingMode? mode,
     $core.int? batchModePriority,
     Job_OptimizationStrategy? optimization,
@@ -110,12 +110,12 @@ class Job extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'templateId')
     ..aOM<JobConfig>(5, _omitFieldNames ? '' : 'config', subBuilder: JobConfig.create)
     ..e<Job_ProcessingState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Job_ProcessingState.PROCESSING_STATE_UNSPECIFIED, valueOf: Job_ProcessingState.valueOf, enumValues: Job_ProcessingState.values)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(15, _omitFieldNames ? '' : 'ttlAfterCompletionDays', $pb.PbFieldType.O3)
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'labels', entryClassName: 'Job.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.video.transcoder.v1'))
-    ..aOM<$1795.Status>(17, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(17, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..e<Job_ProcessingMode>(20, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: Job_ProcessingMode.PROCESSING_MODE_UNSPECIFIED, valueOf: Job_ProcessingMode.valueOf, enumValues: Job_ProcessingMode.values)
     ..a<$core.int>(21, _omitFieldNames ? '' : 'batchModePriority', $pb.PbFieldType.O3)
     ..e<Job_OptimizationStrategy>(22, _omitFieldNames ? '' : 'optimization', $pb.PbFieldType.OE, defaultOrMaker: Job_OptimizationStrategy.OPTIMIZATION_STRATEGY_UNSPECIFIED, valueOf: Job_OptimizationStrategy.valueOf, enumValues: Job_OptimizationStrategy.values)
@@ -223,39 +223,39 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. The time the job was created.
   @$pb.TagNumber(12)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(12)
-  set createTime($1775.Timestamp v) { setField(12, v); }
+  set createTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(12)
   void clearCreateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time the transcoding started.
   @$pb.TagNumber(13)
-  $1775.Timestamp get startTime => $_getN(7);
+  $1776.Timestamp get startTime => $_getN(7);
   @$pb.TagNumber(13)
-  set startTime($1775.Timestamp v) { setField(13, v); }
+  set startTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasStartTime() => $_has(7);
   @$pb.TagNumber(13)
   void clearStartTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureStartTime() => $_ensure(7);
+  $1776.Timestamp ensureStartTime() => $_ensure(7);
 
   /// Output only. The time the transcoding finished.
   @$pb.TagNumber(14)
-  $1775.Timestamp get endTime => $_getN(8);
+  $1776.Timestamp get endTime => $_getN(8);
   @$pb.TagNumber(14)
-  set endTime($1775.Timestamp v) { setField(14, v); }
+  set endTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasEndTime() => $_has(8);
   @$pb.TagNumber(14)
   void clearEndTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureEndTime() => $_ensure(8);
+  $1776.Timestamp ensureEndTime() => $_ensure(8);
 
   /// Job time to live value in days, which will be effective after job
   /// completion. Job should be deleted automatically after the given TTL. Enter
@@ -277,15 +277,15 @@ class Job extends $pb.GeneratedMessage {
   /// Output only. An error object that describes the reason for the failure.
   /// This property is always present when `state` is `FAILED`.
   @$pb.TagNumber(17)
-  $1795.Status get error => $_getN(11);
+  $1796.Status get error => $_getN(11);
   @$pb.TagNumber(17)
-  set error($1795.Status v) { setField(17, v); }
+  set error($1796.Status v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasError() => $_has(11);
   @$pb.TagNumber(17)
   void clearError() => clearField(17);
   @$pb.TagNumber(17)
-  $1795.Status ensureError() => $_ensure(11);
+  $1796.Status ensureError() => $_ensure(11);
 
   /// The processing mode of the job.
   /// The default is `PROCESSING_MODE_INTERACTIVE`.
@@ -711,8 +711,8 @@ class EditAtom extends $pb.GeneratedMessage {
   factory EditAtom({
     $core.String? key,
     $core.Iterable<$core.String>? inputs,
-    $1737.Duration? endTimeOffset,
-    $1737.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
   }) {
     final $result = create();
     if (key != null) {
@@ -736,8 +736,8 @@ class EditAtom extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EditAtom', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.transcoder.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..pPS(2, _omitFieldNames ? '' : 'inputs')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -782,34 +782,34 @@ class EditAtom extends $pb.GeneratedMessage {
   /// When `end_time_offset` is not specified, the `inputs` are used until
   /// the end of the atom.
   @$pb.TagNumber(3)
-  $1737.Duration get endTimeOffset => $_getN(2);
+  $1738.Duration get endTimeOffset => $_getN(2);
   @$pb.TagNumber(3)
-  set endTimeOffset($1737.Duration v) { setField(3, v); }
+  set endTimeOffset($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTimeOffset() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTimeOffset() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(2);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(2);
 
   /// Start time in seconds for the atom, relative to the input file timeline.
   /// The default is `0s`.
   @$pb.TagNumber(4)
-  $1737.Duration get startTimeOffset => $_getN(3);
+  $1738.Duration get startTimeOffset => $_getN(3);
   @$pb.TagNumber(4)
-  set startTimeOffset($1737.Duration v) { setField(4, v); }
+  set startTimeOffset($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTimeOffset() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTimeOffset() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(3);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(3);
 }
 
 /// Ad break.
 class AdBreak extends $pb.GeneratedMessage {
   factory AdBreak({
-    $1737.Duration? startTimeOffset,
+    $1738.Duration? startTimeOffset,
   }) {
     final $result = create();
     if (startTimeOffset != null) {
@@ -822,7 +822,7 @@ class AdBreak extends $pb.GeneratedMessage {
   factory AdBreak.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdBreak', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.transcoder.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -850,15 +850,15 @@ class AdBreak extends $pb.GeneratedMessage {
   /// Start time in seconds for the ad break, relative to the output file
   /// timeline. The default is `0s`.
   @$pb.TagNumber(1)
-  $1737.Duration get startTimeOffset => $_getN(0);
+  $1738.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($1737.Duration v) { setField(1, v); }
+  set startTimeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(0);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(0);
 }
 
 enum ElementaryStream_ElementaryStream {
@@ -1356,10 +1356,10 @@ class SpriteSheet extends $pb.GeneratedMessage {
     $core.int? spriteHeightPixels,
     $core.int? columnCount,
     $core.int? rowCount,
-    $1737.Duration? startTimeOffset,
-    $1737.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
     $core.int? totalCount,
-    $1737.Duration? interval,
+    $1738.Duration? interval,
     $core.int? quality,
   }) {
     final $result = create();
@@ -1415,10 +1415,10 @@ class SpriteSheet extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'spriteHeightPixels', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'columnCount', $pb.PbFieldType.O3)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'rowCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'totalCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'interval', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'interval', subBuilder: $1738.Duration.create)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'quality', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -1542,29 +1542,29 @@ class SpriteSheet extends $pb.GeneratedMessage {
   /// Start time in seconds, relative to the output file timeline. Determines the
   /// first sprite to pick. The default is `0s`.
   @$pb.TagNumber(7)
-  $1737.Duration get startTimeOffset => $_getN(6);
+  $1738.Duration get startTimeOffset => $_getN(6);
   @$pb.TagNumber(7)
-  set startTimeOffset($1737.Duration v) { setField(7, v); }
+  set startTimeOffset($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStartTimeOffset() => $_has(6);
   @$pb.TagNumber(7)
   void clearStartTimeOffset() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(6);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(6);
 
   /// End time in seconds, relative to the output file timeline. When
   /// `end_time_offset` is not specified, the sprites are generated until the end
   /// of the output file.
   @$pb.TagNumber(8)
-  $1737.Duration get endTimeOffset => $_getN(7);
+  $1738.Duration get endTimeOffset => $_getN(7);
   @$pb.TagNumber(8)
-  set endTimeOffset($1737.Duration v) { setField(8, v); }
+  set endTimeOffset($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEndTimeOffset() => $_has(7);
   @$pb.TagNumber(8)
   void clearEndTimeOffset() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(7);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(7);
 
   /// Total number of sprites. Create the specified number of sprites
   /// distributed evenly across the timeline of the output media. The default
@@ -1581,15 +1581,15 @@ class SpriteSheet extends $pb.GeneratedMessage {
   /// Starting from `0s`, create sprites at regular intervals. Specify the
   /// interval value in seconds.
   @$pb.TagNumber(10)
-  $1737.Duration get interval => $_getN(9);
+  $1738.Duration get interval => $_getN(9);
   @$pb.TagNumber(10)
-  set interval($1737.Duration v) { setField(10, v); }
+  set interval($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasInterval() => $_has(9);
   @$pb.TagNumber(10)
   void clearInterval() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureInterval() => $_ensure(9);
+  $1738.Duration ensureInterval() => $_ensure(9);
 
   /// The quality of the generated sprite sheet. Enter a value between 1
   /// and 100, where 1 is the lowest quality and 100 is the highest quality.
@@ -1765,7 +1765,7 @@ class Overlay_Image extends $pb.GeneratedMessage {
 class Overlay_AnimationStatic extends $pb.GeneratedMessage {
   factory Overlay_AnimationStatic({
     Overlay_NormalizedCoordinate? xy,
-    $1737.Duration? startTimeOffset,
+    $1738.Duration? startTimeOffset,
   }) {
     final $result = create();
     if (xy != null) {
@@ -1782,7 +1782,7 @@ class Overlay_AnimationStatic extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Overlay.AnimationStatic', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.transcoder.v1'), createEmptyInstance: create)
     ..aOM<Overlay_NormalizedCoordinate>(1, _omitFieldNames ? '' : 'xy', subBuilder: Overlay_NormalizedCoordinate.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1825,15 +1825,15 @@ class Overlay_AnimationStatic extends $pb.GeneratedMessage {
 
   /// The time to start displaying the overlay object, in seconds. Default: 0
   @$pb.TagNumber(2)
-  $1737.Duration get startTimeOffset => $_getN(1);
+  $1738.Duration get startTimeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set startTimeOffset($1737.Duration v) { setField(2, v); }
+  set startTimeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(1);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(1);
 }
 
 /// Display overlay object with fade animation.
@@ -1841,8 +1841,8 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
   factory Overlay_AnimationFade({
     Overlay_FadeType? fadeType,
     Overlay_NormalizedCoordinate? xy,
-    $1737.Duration? startTimeOffset,
-    $1737.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
   }) {
     final $result = create();
     if (fadeType != null) {
@@ -1866,8 +1866,8 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Overlay.AnimationFade', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.transcoder.v1'), createEmptyInstance: create)
     ..e<Overlay_FadeType>(1, _omitFieldNames ? '' : 'fadeType', $pb.PbFieldType.OE, defaultOrMaker: Overlay_FadeType.FADE_TYPE_UNSPECIFIED, valueOf: Overlay_FadeType.valueOf, enumValues: Overlay_FadeType.values)
     ..aOM<Overlay_NormalizedCoordinate>(2, _omitFieldNames ? '' : 'xy', subBuilder: Overlay_NormalizedCoordinate.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1920,28 +1920,28 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
 
   /// The time to start the fade animation, in seconds. Default: 0
   @$pb.TagNumber(3)
-  $1737.Duration get startTimeOffset => $_getN(2);
+  $1738.Duration get startTimeOffset => $_getN(2);
   @$pb.TagNumber(3)
-  set startTimeOffset($1737.Duration v) { setField(3, v); }
+  set startTimeOffset($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTimeOffset() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTimeOffset() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(2);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(2);
 
   /// The time to end the fade animation, in seconds. Default:
   /// `start_time_offset` + 1s
   @$pb.TagNumber(4)
-  $1737.Duration get endTimeOffset => $_getN(3);
+  $1738.Duration get endTimeOffset => $_getN(3);
   @$pb.TagNumber(4)
-  set endTimeOffset($1737.Duration v) { setField(4, v); }
+  set endTimeOffset($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTimeOffset() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTimeOffset() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(3);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(3);
 }
 
 /// End previous overlay animation from the video. Without AnimationEnd, the
@@ -1949,7 +1949,7 @@ class Overlay_AnimationFade extends $pb.GeneratedMessage {
 /// the video.
 class Overlay_AnimationEnd extends $pb.GeneratedMessage {
   factory Overlay_AnimationEnd({
-    $1737.Duration? startTimeOffset,
+    $1738.Duration? startTimeOffset,
   }) {
     final $result = create();
     if (startTimeOffset != null) {
@@ -1962,7 +1962,7 @@ class Overlay_AnimationEnd extends $pb.GeneratedMessage {
   factory Overlay_AnimationEnd.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Overlay.AnimationEnd', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.transcoder.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1989,15 +1989,15 @@ class Overlay_AnimationEnd extends $pb.GeneratedMessage {
 
   /// The time to end overlay object, in seconds. Default: 0
   @$pb.TagNumber(1)
-  $1737.Duration get startTimeOffset => $_getN(0);
+  $1738.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($1737.Duration v) { setField(1, v); }
+  set startTimeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(0);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(0);
 }
 
 enum Overlay_Animation_AnimationType {
@@ -3161,7 +3161,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
     $core.int? crfLevel,
     $core.bool? allowOpenGop,
     $core.int? gopFrameCount,
-    $1737.Duration? gopDuration,
+    $1738.Duration? gopDuration,
     $core.bool? enableTwoPass,
     $core.int? vbvSizeBits,
     $core.int? vbvFullnessBits,
@@ -3256,7 +3256,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
     ..a<$core.int>(7, _omitFieldNames ? '' : 'crfLevel', $pb.PbFieldType.O3)
     ..aOB(8, _omitFieldNames ? '' : 'allowOpenGop')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'gopFrameCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1738.Duration.create)
     ..aOB(11, _omitFieldNames ? '' : 'enableTwoPass')
     ..a<$core.int>(12, _omitFieldNames ? '' : 'vbvSizeBits', $pb.PbFieldType.O3)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'vbvFullnessBits', $pb.PbFieldType.O3)
@@ -3431,15 +3431,15 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   /// [`segmentDuration`](#SegmentSettings) must be divisible by
   /// `gopDuration`.
   @$pb.TagNumber(10)
-  $1737.Duration get gopDuration => $_getN(9);
+  $1738.Duration get gopDuration => $_getN(9);
   @$pb.TagNumber(10)
-  set gopDuration($1737.Duration v) { setField(10, v); }
+  set gopDuration($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasGopDuration() => $_has(9);
   @$pb.TagNumber(10)
   void clearGopDuration() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureGopDuration() => $_ensure(9);
+  $1738.Duration ensureGopDuration() => $_ensure(9);
 
   /// Use two-pass encoding strategy to achieve better video quality.
   /// `VideoStream.rate_control_mode` must be `vbr`. The default is `false`.
@@ -3594,7 +3594,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
     $core.int? crfLevel,
     $core.bool? allowOpenGop,
     $core.int? gopFrameCount,
-    $1737.Duration? gopDuration,
+    $1738.Duration? gopDuration,
     $core.bool? enableTwoPass,
     $core.int? vbvSizeBits,
     $core.int? vbvFullnessBits,
@@ -3685,7 +3685,7 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
     ..a<$core.int>(7, _omitFieldNames ? '' : 'crfLevel', $pb.PbFieldType.O3)
     ..aOB(8, _omitFieldNames ? '' : 'allowOpenGop')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'gopFrameCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1738.Duration.create)
     ..aOB(11, _omitFieldNames ? '' : 'enableTwoPass')
     ..a<$core.int>(12, _omitFieldNames ? '' : 'vbvSizeBits', $pb.PbFieldType.O3)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'vbvFullnessBits', $pb.PbFieldType.O3)
@@ -3859,15 +3859,15 @@ class VideoStream_H265CodecSettings extends $pb.GeneratedMessage {
   /// [`segmentDuration`](#SegmentSettings) must be divisible by
   /// `gopDuration`.
   @$pb.TagNumber(10)
-  $1737.Duration get gopDuration => $_getN(9);
+  $1738.Duration get gopDuration => $_getN(9);
   @$pb.TagNumber(10)
-  set gopDuration($1737.Duration v) { setField(10, v); }
+  set gopDuration($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasGopDuration() => $_has(9);
   @$pb.TagNumber(10)
   void clearGopDuration() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureGopDuration() => $_ensure(9);
+  $1738.Duration ensureGopDuration() => $_ensure(9);
 
   /// Use two-pass encoding strategy to achieve better video quality.
   /// `VideoStream.rate_control_mode` must be `vbr`. The default is `false`.
@@ -4021,7 +4021,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
     $core.String? rateControlMode,
     $core.int? crfLevel,
     $core.int? gopFrameCount,
-    $1737.Duration? gopDuration,
+    $1738.Duration? gopDuration,
     $core.String? profile,
   }) {
     final $result = create();
@@ -4076,7 +4076,7 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'rateControlMode')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'crfLevel', $pb.PbFieldType.O3)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'gopFrameCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(9, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(9, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1738.Duration.create)
     ..aOS(10, _omitFieldNames ? '' : 'profile')
     ..hasRequiredFields = false
   ;
@@ -4232,15 +4232,15 @@ class VideoStream_Vp9CodecSettings extends $pb.GeneratedMessage {
   /// [`segmentDuration`](#SegmentSettings) must be divisible by
   /// `gopDuration`.
   @$pb.TagNumber(9)
-  $1737.Duration get gopDuration => $_getN(8);
+  $1738.Duration get gopDuration => $_getN(8);
   @$pb.TagNumber(9)
-  set gopDuration($1737.Duration v) { setField(9, v); }
+  set gopDuration($1738.Duration v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasGopDuration() => $_has(8);
   @$pb.TagNumber(9)
   void clearGopDuration() => clearField(9);
   @$pb.TagNumber(9)
-  $1737.Duration ensureGopDuration() => $_ensure(8);
+  $1738.Duration ensureGopDuration() => $_ensure(8);
 
   ///  Enforces the specified codec profile. The following profiles are
   ///  supported:
@@ -4858,7 +4858,7 @@ class TextStream extends $pb.GeneratedMessage {
 /// Segment settings for `ts`, `fmp4` and `vtt`.
 class SegmentSettings extends $pb.GeneratedMessage {
   factory SegmentSettings({
-    $1737.Duration? segmentDuration,
+    $1738.Duration? segmentDuration,
     $core.bool? individualSegments,
   }) {
     final $result = create();
@@ -4875,7 +4875,7 @@ class SegmentSettings extends $pb.GeneratedMessage {
   factory SegmentSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SegmentSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.transcoder.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'segmentDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'segmentDuration', subBuilder: $1738.Duration.create)
     ..aOB(3, _omitFieldNames ? '' : 'individualSegments')
     ..hasRequiredFields = false
   ;
@@ -4906,15 +4906,15 @@ class SegmentSettings extends $pb.GeneratedMessage {
   /// [`gopDuration`](#videostream), and `segmentDuration` must be divisible by
   /// [`gopDuration`](#videostream).
   @$pb.TagNumber(1)
-  $1737.Duration get segmentDuration => $_getN(0);
+  $1738.Duration get segmentDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set segmentDuration($1737.Duration v) { setField(1, v); }
+  set segmentDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSegmentDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearSegmentDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureSegmentDuration() => $_ensure(0);
+  $1738.Duration ensureSegmentDuration() => $_ensure(0);
 
   /// Required. Create an individual segment file. The default is `false`.
   @$pb.TagNumber(3)

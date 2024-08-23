@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'environment.pb.dart' as $1167;
 import 'instance.pbenum.dart';
 
@@ -197,8 +197,8 @@ class Instance extends $pb.GeneratedMessage {
     $core.String? subnet,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? metadata,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Instance_DiskType? dataDiskType,
     $fixnum.Int64? dataDiskSizeGb,
     $core.bool? noRemoveDataDisk,
@@ -332,8 +332,8 @@ class Instance extends $pb.GeneratedMessage {
     ..aOS(20, _omitFieldNames ? '' : 'subnet')
     ..m<$core.String, $core.String>(21, _omitFieldNames ? '' : 'labels', entryClassName: 'Instance.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.notebooks.v1beta1'))
     ..m<$core.String, $core.String>(22, _omitFieldNames ? '' : 'metadata', entryClassName: 'Instance.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.notebooks.v1beta1'))
-    ..aOM<$1775.Timestamp>(23, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(24, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(23, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(24, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Instance_DiskType>(25, _omitFieldNames ? '' : 'dataDiskType', $pb.PbFieldType.OE, defaultOrMaker: Instance_DiskType.DISK_TYPE_UNSPECIFIED, valueOf: Instance_DiskType.valueOf, enumValues: Instance_DiskType.values)
     ..aInt64(26, _omitFieldNames ? '' : 'dataDiskSizeGb')
     ..aOB(27, _omitFieldNames ? '' : 'noRemoveDataDisk')
@@ -614,27 +614,27 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. Instance creation time.
   @$pb.TagNumber(23)
-  $1775.Timestamp get createTime => $_getN(22);
+  $1776.Timestamp get createTime => $_getN(22);
   @$pb.TagNumber(23)
-  set createTime($1775.Timestamp v) { setField(23, v); }
+  set createTime($1776.Timestamp v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasCreateTime() => $_has(22);
   @$pb.TagNumber(23)
   void clearCreateTime() => clearField(23);
   @$pb.TagNumber(23)
-  $1775.Timestamp ensureCreateTime() => $_ensure(22);
+  $1776.Timestamp ensureCreateTime() => $_ensure(22);
 
   /// Output only. Instance update time.
   @$pb.TagNumber(24)
-  $1775.Timestamp get updateTime => $_getN(23);
+  $1776.Timestamp get updateTime => $_getN(23);
   @$pb.TagNumber(24)
-  set updateTime($1775.Timestamp v) { setField(24, v); }
+  set updateTime($1776.Timestamp v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasUpdateTime() => $_has(23);
   @$pb.TagNumber(24)
   void clearUpdateTime() => clearField(24);
   @$pb.TagNumber(24)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(23);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(23);
 
   /// Input only. The type of the data disk attached to this instance, defaults to
   /// standard persistent disk (`PD_STANDARD`).

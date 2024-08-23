@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
 import 'aws_resources.pbenum.dart';
-import 'common_resources.pb.dart' as $4546;
+import 'common_resources.pb.dart' as $4548;
 
 export 'aws_resources.pbenum.dart';
 
@@ -32,18 +32,18 @@ class AwsCluster extends $pb.GeneratedMessage {
     $core.String? endpoint,
     $core.String? uid,
     $core.bool? reconciling,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? annotations,
     AwsAuthorization? authorization,
-    $4546.WorkloadIdentityConfig? workloadIdentityConfig,
+    $4548.WorkloadIdentityConfig? workloadIdentityConfig,
     $core.String? clusterCaCertificate,
-    $4546.Fleet? fleet,
-    $4546.LoggingConfig? loggingConfig,
+    $4548.Fleet? fleet,
+    $4548.LoggingConfig? loggingConfig,
     $core.Iterable<AwsClusterError>? errors,
-    $4546.MonitoringConfig? monitoringConfig,
-    $4546.BinaryAuthorization? binaryAuthorization,
+    $4548.MonitoringConfig? monitoringConfig,
+    $4548.BinaryAuthorization? binaryAuthorization,
   }) {
     final $result = create();
     if (name != null) {
@@ -125,18 +125,18 @@ class AwsCluster extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'endpoint')
     ..aOS(9, _omitFieldNames ? '' : 'uid')
     ..aOB(10, _omitFieldNames ? '' : 'reconciling')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(13, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(14, _omitFieldNames ? '' : 'annotations', entryClassName: 'AwsCluster.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
     ..aOM<AwsAuthorization>(15, _omitFieldNames ? '' : 'authorization', subBuilder: AwsAuthorization.create)
-    ..aOM<$4546.WorkloadIdentityConfig>(16, _omitFieldNames ? '' : 'workloadIdentityConfig', subBuilder: $4546.WorkloadIdentityConfig.create)
+    ..aOM<$4548.WorkloadIdentityConfig>(16, _omitFieldNames ? '' : 'workloadIdentityConfig', subBuilder: $4548.WorkloadIdentityConfig.create)
     ..aOS(17, _omitFieldNames ? '' : 'clusterCaCertificate')
-    ..aOM<$4546.Fleet>(18, _omitFieldNames ? '' : 'fleet', subBuilder: $4546.Fleet.create)
-    ..aOM<$4546.LoggingConfig>(19, _omitFieldNames ? '' : 'loggingConfig', subBuilder: $4546.LoggingConfig.create)
+    ..aOM<$4548.Fleet>(18, _omitFieldNames ? '' : 'fleet', subBuilder: $4548.Fleet.create)
+    ..aOM<$4548.LoggingConfig>(19, _omitFieldNames ? '' : 'loggingConfig', subBuilder: $4548.LoggingConfig.create)
     ..pc<AwsClusterError>(20, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: AwsClusterError.create)
-    ..aOM<$4546.MonitoringConfig>(21, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4546.MonitoringConfig.create)
-    ..aOM<$4546.BinaryAuthorization>(22, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4546.BinaryAuthorization.create)
+    ..aOM<$4548.MonitoringConfig>(21, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4548.MonitoringConfig.create)
+    ..aOM<$4548.BinaryAuthorization>(22, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4548.BinaryAuthorization.create)
     ..hasRequiredFields = false
   ;
 
@@ -269,27 +269,27 @@ class AwsCluster extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this cluster was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(9);
+  $1776.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCreateTime() => $_ensure(9);
 
   /// Output only. The time at which this cluster was last updated.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(10);
+  $1776.Timestamp get updateTime => $_getN(10);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(10);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(10);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(10);
 
   ///  Allows clients to perform consistent read-modify-writes
   ///  through optimistic concurrency control.
@@ -331,15 +331,15 @@ class AwsCluster extends $pb.GeneratedMessage {
 
   /// Output only. Workload Identity settings.
   @$pb.TagNumber(16)
-  $4546.WorkloadIdentityConfig get workloadIdentityConfig => $_getN(14);
+  $4548.WorkloadIdentityConfig get workloadIdentityConfig => $_getN(14);
   @$pb.TagNumber(16)
-  set workloadIdentityConfig($4546.WorkloadIdentityConfig v) { setField(16, v); }
+  set workloadIdentityConfig($4548.WorkloadIdentityConfig v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasWorkloadIdentityConfig() => $_has(14);
   @$pb.TagNumber(16)
   void clearWorkloadIdentityConfig() => clearField(16);
   @$pb.TagNumber(16)
-  $4546.WorkloadIdentityConfig ensureWorkloadIdentityConfig() => $_ensure(14);
+  $4548.WorkloadIdentityConfig ensureWorkloadIdentityConfig() => $_ensure(14);
 
   /// Output only. PEM encoded x509 certificate of the cluster root of trust.
   @$pb.TagNumber(17)
@@ -353,27 +353,27 @@ class AwsCluster extends $pb.GeneratedMessage {
 
   /// Required. Fleet configuration.
   @$pb.TagNumber(18)
-  $4546.Fleet get fleet => $_getN(16);
+  $4548.Fleet get fleet => $_getN(16);
   @$pb.TagNumber(18)
-  set fleet($4546.Fleet v) { setField(18, v); }
+  set fleet($4548.Fleet v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasFleet() => $_has(16);
   @$pb.TagNumber(18)
   void clearFleet() => clearField(18);
   @$pb.TagNumber(18)
-  $4546.Fleet ensureFleet() => $_ensure(16);
+  $4548.Fleet ensureFleet() => $_ensure(16);
 
   /// Optional. Logging configuration for this cluster.
   @$pb.TagNumber(19)
-  $4546.LoggingConfig get loggingConfig => $_getN(17);
+  $4548.LoggingConfig get loggingConfig => $_getN(17);
   @$pb.TagNumber(19)
-  set loggingConfig($4546.LoggingConfig v) { setField(19, v); }
+  set loggingConfig($4548.LoggingConfig v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasLoggingConfig() => $_has(17);
   @$pb.TagNumber(19)
   void clearLoggingConfig() => clearField(19);
   @$pb.TagNumber(19)
-  $4546.LoggingConfig ensureLoggingConfig() => $_ensure(17);
+  $4548.LoggingConfig ensureLoggingConfig() => $_ensure(17);
 
   /// Output only. A set of errors found in the cluster.
   @$pb.TagNumber(20)
@@ -381,27 +381,27 @@ class AwsCluster extends $pb.GeneratedMessage {
 
   /// Optional. Monitoring configuration for this cluster.
   @$pb.TagNumber(21)
-  $4546.MonitoringConfig get monitoringConfig => $_getN(19);
+  $4548.MonitoringConfig get monitoringConfig => $_getN(19);
   @$pb.TagNumber(21)
-  set monitoringConfig($4546.MonitoringConfig v) { setField(21, v); }
+  set monitoringConfig($4548.MonitoringConfig v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasMonitoringConfig() => $_has(19);
   @$pb.TagNumber(21)
   void clearMonitoringConfig() => clearField(21);
   @$pb.TagNumber(21)
-  $4546.MonitoringConfig ensureMonitoringConfig() => $_ensure(19);
+  $4548.MonitoringConfig ensureMonitoringConfig() => $_ensure(19);
 
   /// Optional. Binary Authorization configuration for this cluster.
   @$pb.TagNumber(22)
-  $4546.BinaryAuthorization get binaryAuthorization => $_getN(20);
+  $4548.BinaryAuthorization get binaryAuthorization => $_getN(20);
   @$pb.TagNumber(22)
-  set binaryAuthorization($4546.BinaryAuthorization v) { setField(22, v); }
+  set binaryAuthorization($4548.BinaryAuthorization v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasBinaryAuthorization() => $_has(20);
   @$pb.TagNumber(22)
   void clearBinaryAuthorization() => clearField(22);
   @$pb.TagNumber(22)
-  $4546.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(20);
+  $4548.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(20);
 }
 
 /// ControlPlane defines common parameters between control plane nodes.
@@ -1206,12 +1206,12 @@ class AwsNodePool extends $pb.GeneratedMessage {
     AwsNodePool_State? state,
     $core.String? uid,
     $core.bool? reconciling,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? annotations,
     AwsNodePoolAutoscaling? autoscaling,
-    $4546.MaxPodsConstraint? maxPodsConstraint,
+    $4548.MaxPodsConstraint? maxPodsConstraint,
     AwsNodeConfig? config,
     $core.Iterable<AwsNodePoolError>? errors,
     AwsNodeManagement? management,
@@ -1279,12 +1279,12 @@ class AwsNodePool extends $pb.GeneratedMessage {
     ..e<AwsNodePool_State>(16, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AwsNodePool_State.STATE_UNSPECIFIED, valueOf: AwsNodePool_State.valueOf, enumValues: AwsNodePool_State.values)
     ..aOS(17, _omitFieldNames ? '' : 'uid')
     ..aOB(18, _omitFieldNames ? '' : 'reconciling')
-    ..aOM<$1775.Timestamp>(19, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(20, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(19, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(20, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(21, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(22, _omitFieldNames ? '' : 'annotations', entryClassName: 'AwsNodePool.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
     ..aOM<AwsNodePoolAutoscaling>(25, _omitFieldNames ? '' : 'autoscaling', subBuilder: AwsNodePoolAutoscaling.create)
-    ..aOM<$4546.MaxPodsConstraint>(27, _omitFieldNames ? '' : 'maxPodsConstraint', subBuilder: $4546.MaxPodsConstraint.create)
+    ..aOM<$4548.MaxPodsConstraint>(27, _omitFieldNames ? '' : 'maxPodsConstraint', subBuilder: $4548.MaxPodsConstraint.create)
     ..aOM<AwsNodeConfig>(28, _omitFieldNames ? '' : 'config', subBuilder: AwsNodeConfig.create)
     ..pc<AwsNodePoolError>(29, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: AwsNodePoolError.create)
     ..aOM<AwsNodeManagement>(30, _omitFieldNames ? '' : 'management', subBuilder: AwsNodeManagement.create)
@@ -1387,27 +1387,27 @@ class AwsNodePool extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this node pool was created.
   @$pb.TagNumber(19)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(19)
-  set createTime($1775.Timestamp v) { setField(19, v); }
+  set createTime($1776.Timestamp v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(19)
   void clearCreateTime() => clearField(19);
   @$pb.TagNumber(19)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time at which this node pool was last updated.
   @$pb.TagNumber(20)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(20)
-  set updateTime($1775.Timestamp v) { setField(20, v); }
+  set updateTime($1776.Timestamp v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(20)
   void clearUpdateTime() => clearField(20);
   @$pb.TagNumber(20)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   ///  Allows clients to perform consistent read-modify-writes
   ///  through optimistic concurrency control.
@@ -1450,15 +1450,15 @@ class AwsNodePool extends $pb.GeneratedMessage {
   /// Required. The constraint on the maximum number of pods that can be run
   /// simultaneously on a node in the node pool.
   @$pb.TagNumber(27)
-  $4546.MaxPodsConstraint get maxPodsConstraint => $_getN(11);
+  $4548.MaxPodsConstraint get maxPodsConstraint => $_getN(11);
   @$pb.TagNumber(27)
-  set maxPodsConstraint($4546.MaxPodsConstraint v) { setField(27, v); }
+  set maxPodsConstraint($4548.MaxPodsConstraint v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasMaxPodsConstraint() => $_has(11);
   @$pb.TagNumber(27)
   void clearMaxPodsConstraint() => clearField(27);
   @$pb.TagNumber(27)
-  $4546.MaxPodsConstraint ensureMaxPodsConstraint() => $_ensure(11);
+  $4548.MaxPodsConstraint ensureMaxPodsConstraint() => $_ensure(11);
 
   /// Required. The configuration of the node pool.
   @$pb.TagNumber(28)
@@ -1708,7 +1708,7 @@ class AwsNodeConfig extends $pb.GeneratedMessage {
   factory AwsNodeConfig({
     $core.String? instanceType,
     AwsVolumeTemplate? rootVolume,
-    $core.Iterable<$4546.NodeTaint>? taints,
+    $core.Iterable<$4548.NodeTaint>? taints,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? tags,
     $core.String? iamInstanceProfile,
@@ -1773,7 +1773,7 @@ class AwsNodeConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsNodeConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkemulticloud.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceType')
     ..aOM<AwsVolumeTemplate>(2, _omitFieldNames ? '' : 'rootVolume', subBuilder: AwsVolumeTemplate.create)
-    ..pc<$4546.NodeTaint>(3, _omitFieldNames ? '' : 'taints', $pb.PbFieldType.PM, subBuilder: $4546.NodeTaint.create)
+    ..pc<$4548.NodeTaint>(3, _omitFieldNames ? '' : 'taints', $pb.PbFieldType.PM, subBuilder: $4548.NodeTaint.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'AwsNodeConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'tags', entryClassName: 'AwsNodeConfig.TagsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'iamInstanceProfile')
@@ -1840,7 +1840,7 @@ class AwsNodeConfig extends $pb.GeneratedMessage {
 
   /// Optional. The initial taints assigned to nodes of this node pool.
   @$pb.TagNumber(3)
-  $core.List<$4546.NodeTaint> get taints => $_getList(2);
+  $core.List<$4548.NodeTaint> get taints => $_getList(2);
 
   /// Optional. The initial labels assigned to nodes of this node pool. An object
   /// containing a list of "key": value pairs. Example: { "name": "wrench",
@@ -2152,7 +2152,7 @@ class AwsOpenIdConfig extends $pb.GeneratedMessage {
 /// AwsJsonWebKeys is a valid JSON Web Key Set as specififed in RFC 7517.
 class AwsJsonWebKeys extends $pb.GeneratedMessage {
   factory AwsJsonWebKeys({
-    $core.Iterable<$4546.Jwk>? keys,
+    $core.Iterable<$4548.Jwk>? keys,
   }) {
     final $result = create();
     if (keys != null) {
@@ -2165,7 +2165,7 @@ class AwsJsonWebKeys extends $pb.GeneratedMessage {
   factory AwsJsonWebKeys.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsJsonWebKeys', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkemulticloud.v1'), createEmptyInstance: create)
-    ..pc<$4546.Jwk>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $4546.Jwk.create)
+    ..pc<$4548.Jwk>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $4548.Jwk.create)
     ..hasRequiredFields = false
   ;
 
@@ -2193,7 +2193,7 @@ class AwsJsonWebKeys extends $pb.GeneratedMessage {
   /// The public component of the keys used by the cluster to sign token
   /// requests.
   @$pb.TagNumber(1)
-  $core.List<$4546.Jwk> get keys => $_getList(0);
+  $core.List<$4548.Jwk> get keys => $_getList(0);
 }
 
 /// AwsServerConfig is the configuration of GKE cluster on AWS.
@@ -2275,8 +2275,8 @@ class AwsK8sVersionInfo extends $pb.GeneratedMessage {
     $core.String? version,
     $core.bool? enabled,
     $core.bool? endOfLife,
-    $1800.Date? endOfLifeDate,
-    $1800.Date? releaseDate,
+    $1801.Date? endOfLifeDate,
+    $1801.Date? releaseDate,
   }) {
     final $result = create();
     if (version != null) {
@@ -2304,8 +2304,8 @@ class AwsK8sVersionInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'version')
     ..aOB(3, _omitFieldNames ? '' : 'enabled')
     ..aOB(4, _omitFieldNames ? '' : 'endOfLife')
-    ..aOM<$1800.Date>(5, _omitFieldNames ? '' : 'endOfLifeDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(6, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(5, _omitFieldNames ? '' : 'endOfLifeDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(6, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -2370,27 +2370,27 @@ class AwsK8sVersionInfo extends $pb.GeneratedMessage {
   /// `end_of_life` field is true), this is the actual date (in Pacific time)
   /// when the version reached its end of life.
   @$pb.TagNumber(5)
-  $1800.Date get endOfLifeDate => $_getN(3);
+  $1801.Date get endOfLifeDate => $_getN(3);
   @$pb.TagNumber(5)
-  set endOfLifeDate($1800.Date v) { setField(5, v); }
+  set endOfLifeDate($1801.Date v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndOfLifeDate() => $_has(3);
   @$pb.TagNumber(5)
   void clearEndOfLifeDate() => clearField(5);
   @$pb.TagNumber(5)
-  $1800.Date ensureEndOfLifeDate() => $_ensure(3);
+  $1801.Date ensureEndOfLifeDate() => $_ensure(3);
 
   /// Optional. The date (in Pacific Time) when the cluster version was released.
   @$pb.TagNumber(6)
-  $1800.Date get releaseDate => $_getN(4);
+  $1801.Date get releaseDate => $_getN(4);
   @$pb.TagNumber(6)
-  set releaseDate($1800.Date v) { setField(6, v); }
+  set releaseDate($1801.Date v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasReleaseDate() => $_has(4);
   @$pb.TagNumber(6)
   void clearReleaseDate() => clearField(6);
   @$pb.TagNumber(6)
-  $1800.Date ensureReleaseDate() => $_ensure(4);
+  $1801.Date ensureReleaseDate() => $_ensure(4);
 }
 
 /// SSH configuration for AWS resources.

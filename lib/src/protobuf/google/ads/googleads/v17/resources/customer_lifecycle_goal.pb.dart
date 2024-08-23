@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/lifecycle_goals.pb.dart' as $3632;
+import '../common/lifecycle_goals.pb.dart' as $3633;
 
 /// Account level customer lifecycle goal settings.
 class CustomerLifecycleGoal extends $pb.GeneratedMessage {
   factory CustomerLifecycleGoal({
     $core.String? resourceName,
-    $3632.LifecycleGoalValueSettings? customerAcquisitionGoalValueSettings,
+    $3633.LifecycleGoalValueSettings? customerAcquisitionGoalValueSettings,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -36,7 +36,7 @@ class CustomerLifecycleGoal extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerLifecycleGoal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3632.LifecycleGoalValueSettings>(3, _omitFieldNames ? '' : 'customerAcquisitionGoalValueSettings', subBuilder: $3632.LifecycleGoalValueSettings.create)
+    ..aOM<$3633.LifecycleGoalValueSettings>(3, _omitFieldNames ? '' : 'customerAcquisitionGoalValueSettings', subBuilder: $3633.LifecycleGoalValueSettings.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,15 +76,15 @@ class CustomerLifecycleGoal extends $pb.GeneratedMessage {
 
   /// Output only. Customer acquisition goal customer level value settings.
   @$pb.TagNumber(3)
-  $3632.LifecycleGoalValueSettings get customerAcquisitionGoalValueSettings => $_getN(1);
+  $3633.LifecycleGoalValueSettings get customerAcquisitionGoalValueSettings => $_getN(1);
   @$pb.TagNumber(3)
-  set customerAcquisitionGoalValueSettings($3632.LifecycleGoalValueSettings v) { setField(3, v); }
+  set customerAcquisitionGoalValueSettings($3633.LifecycleGoalValueSettings v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCustomerAcquisitionGoalValueSettings() => $_has(1);
   @$pb.TagNumber(3)
   void clearCustomerAcquisitionGoalValueSettings() => clearField(3);
   @$pb.TagNumber(3)
-  $3632.LifecycleGoalValueSettings ensureCustomerAcquisitionGoalValueSettings() => $_ensure(1);
+  $3633.LifecycleGoalValueSettings ensureCustomerAcquisitionGoalValueSettings() => $_ensure(1);
 }
 
 

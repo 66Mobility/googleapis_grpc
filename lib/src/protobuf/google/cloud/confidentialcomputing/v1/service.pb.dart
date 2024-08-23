@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'service.pbenum.dart';
 
 export 'service.pbenum.dart';
@@ -23,8 +23,8 @@ export 'service.pbenum.dart';
 class Challenge extends $pb.GeneratedMessage {
   factory Challenge({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? expireTime,
     $core.bool? used,
     $core.String? tpmNonce,
   }) {
@@ -52,8 +52,8 @@ class Challenge extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Challenge', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.confidentialcomputing.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOB(4, _omitFieldNames ? '' : 'used')
     ..aOS(6, _omitFieldNames ? '' : 'tpmNonce')
     ..hasRequiredFields = false
@@ -93,28 +93,28 @@ class Challenge extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this Challenge was created
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which this Challenge will no longer be usable. It
   /// is also the expiration time for any tokens generated from this Challenge.
   @$pb.TagNumber(3)
-  $1775.Timestamp get expireTime => $_getN(2);
+  $1776.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($1775.Timestamp v) { setField(3, v); }
+  set expireTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureExpireTime() => $_ensure(2);
+  $1776.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// Output only. Indicates if this challenge has been used to generate a token.
   @$pb.TagNumber(4)
@@ -563,7 +563,7 @@ class SevSnpAttestation extends $pb.GeneratedMessage {
 class VerifyAttestationResponse extends $pb.GeneratedMessage {
   factory VerifyAttestationResponse({
     $core.String? oidcClaimsToken,
-    $core.Iterable<$1795.Status>? partialErrors,
+    $core.Iterable<$1796.Status>? partialErrors,
   }) {
     final $result = create();
     if (oidcClaimsToken != null) {
@@ -580,7 +580,7 @@ class VerifyAttestationResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VerifyAttestationResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.confidentialcomputing.v1'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'oidcClaimsToken')
-    ..pc<$1795.Status>(3, _omitFieldNames ? '' : 'partialErrors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'partialErrors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -618,7 +618,7 @@ class VerifyAttestationResponse extends $pb.GeneratedMessage {
   /// Output only. A list of messages that carry the partial error details
   /// related to VerifyAttestation.
   @$pb.TagNumber(3)
-  $core.List<$1795.Status> get partialErrors => $_getList(1);
+  $core.List<$1796.Status> get partialErrors => $_getList(1);
 }
 
 /// Credentials issued by GCP which are linked to the platform attestation. These

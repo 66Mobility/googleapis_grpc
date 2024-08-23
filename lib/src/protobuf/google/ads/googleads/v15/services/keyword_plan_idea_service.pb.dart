@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $1867;
-import '../common/dates.pb.dart' as $1895;
-import '../common/keyword_plan_common.pb.dart' as $2514;
-import '../enums/keyword_match_type.pbenum.dart' as $1843;
-import '../enums/keyword_plan_keyword_annotation.pbenum.dart' as $2515;
-import '../enums/keyword_plan_network.pbenum.dart' as $2309;
+import '../common/criteria.pb.dart' as $1868;
+import '../common/dates.pb.dart' as $1896;
+import '../common/keyword_plan_common.pb.dart' as $2515;
+import '../enums/keyword_match_type.pbenum.dart' as $1844;
+import '../enums/keyword_plan_keyword_annotation.pbenum.dart' as $2516;
+import '../enums/keyword_plan_network.pbenum.dart' as $2310;
 
 enum GenerateKeywordIdeasRequest_Seed {
   keywordAndUrlSeed, 
@@ -37,16 +37,16 @@ class GenerateKeywordIdeasRequest extends $pb.GeneratedMessage {
     KeywordAndUrlSeed? keywordAndUrlSeed,
     KeywordSeed? keywordSeed,
     UrlSeed? urlSeed,
-    $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
+    $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
     $core.bool? includeAdultKeywords,
     SiteSeed? siteSeed,
     $core.String? pageToken,
     $core.int? pageSize,
     $core.String? language,
     $core.Iterable<$core.String>? geoTargetConstants,
-    $2514.KeywordPlanAggregateMetrics? aggregateMetrics,
-    $core.Iterable<$2515.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation>? keywordAnnotation,
-    $2514.HistoricalMetricsOptions? historicalMetricsOptions,
+    $2515.KeywordPlanAggregateMetrics? aggregateMetrics,
+    $core.Iterable<$2516.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation>? keywordAnnotation,
+    $2515.HistoricalMetricsOptions? historicalMetricsOptions,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -110,16 +110,16 @@ class GenerateKeywordIdeasRequest extends $pb.GeneratedMessage {
     ..aOM<KeywordAndUrlSeed>(2, _omitFieldNames ? '' : 'keywordAndUrlSeed', subBuilder: KeywordAndUrlSeed.create)
     ..aOM<KeywordSeed>(3, _omitFieldNames ? '' : 'keywordSeed', subBuilder: KeywordSeed.create)
     ..aOM<UrlSeed>(5, _omitFieldNames ? '' : 'urlSeed', subBuilder: UrlSeed.create)
-    ..e<$2309.KeywordPlanNetworkEnum_KeywordPlanNetwork>(9, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
+    ..e<$2310.KeywordPlanNetworkEnum_KeywordPlanNetwork>(9, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
     ..aOB(10, _omitFieldNames ? '' : 'includeAdultKeywords')
     ..aOM<SiteSeed>(11, _omitFieldNames ? '' : 'siteSeed', subBuilder: SiteSeed.create)
     ..aOS(12, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(13, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(14, _omitFieldNames ? '' : 'language')
     ..pPS(15, _omitFieldNames ? '' : 'geoTargetConstants')
-    ..aOM<$2514.KeywordPlanAggregateMetrics>(16, _omitFieldNames ? '' : 'aggregateMetrics', subBuilder: $2514.KeywordPlanAggregateMetrics.create)
-    ..pc<$2515.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation>(17, _omitFieldNames ? '' : 'keywordAnnotation', $pb.PbFieldType.KE, valueOf: $2515.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.valueOf, enumValues: $2515.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.values, defaultEnumValue: $2515.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.UNSPECIFIED)
-    ..aOM<$2514.HistoricalMetricsOptions>(18, _omitFieldNames ? '' : 'historicalMetricsOptions', subBuilder: $2514.HistoricalMetricsOptions.create)
+    ..aOM<$2515.KeywordPlanAggregateMetrics>(16, _omitFieldNames ? '' : 'aggregateMetrics', subBuilder: $2515.KeywordPlanAggregateMetrics.create)
+    ..pc<$2516.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation>(17, _omitFieldNames ? '' : 'keywordAnnotation', $pb.PbFieldType.KE, valueOf: $2516.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.valueOf, enumValues: $2516.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.values, defaultEnumValue: $2516.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation.UNSPECIFIED)
+    ..aOM<$2515.HistoricalMetricsOptions>(18, _omitFieldNames ? '' : 'historicalMetricsOptions', subBuilder: $2515.HistoricalMetricsOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -197,9 +197,9 @@ class GenerateKeywordIdeasRequest extends $pb.GeneratedMessage {
   /// Targeting network.
   /// If not set, Google Search And Partners Network will be used.
   @$pb.TagNumber(9)
-  $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(4);
+  $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(4);
   @$pb.TagNumber(9)
-  set keywordPlanNetwork($2309.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(9, v); }
+  set keywordPlanNetwork($2310.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasKeywordPlanNetwork() => $_has(4);
   @$pb.TagNumber(9)
@@ -277,31 +277,31 @@ class GenerateKeywordIdeasRequest extends $pb.GeneratedMessage {
 
   /// The aggregate fields to include in response.
   @$pb.TagNumber(16)
-  $2514.KeywordPlanAggregateMetrics get aggregateMetrics => $_getN(11);
+  $2515.KeywordPlanAggregateMetrics get aggregateMetrics => $_getN(11);
   @$pb.TagNumber(16)
-  set aggregateMetrics($2514.KeywordPlanAggregateMetrics v) { setField(16, v); }
+  set aggregateMetrics($2515.KeywordPlanAggregateMetrics v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasAggregateMetrics() => $_has(11);
   @$pb.TagNumber(16)
   void clearAggregateMetrics() => clearField(16);
   @$pb.TagNumber(16)
-  $2514.KeywordPlanAggregateMetrics ensureAggregateMetrics() => $_ensure(11);
+  $2515.KeywordPlanAggregateMetrics ensureAggregateMetrics() => $_ensure(11);
 
   /// The keyword annotations to include in response.
   @$pb.TagNumber(17)
-  $core.List<$2515.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation> get keywordAnnotation => $_getList(12);
+  $core.List<$2516.KeywordPlanKeywordAnnotationEnum_KeywordPlanKeywordAnnotation> get keywordAnnotation => $_getList(12);
 
   /// The options for historical metrics data.
   @$pb.TagNumber(18)
-  $2514.HistoricalMetricsOptions get historicalMetricsOptions => $_getN(13);
+  $2515.HistoricalMetricsOptions get historicalMetricsOptions => $_getN(13);
   @$pb.TagNumber(18)
-  set historicalMetricsOptions($2514.HistoricalMetricsOptions v) { setField(18, v); }
+  set historicalMetricsOptions($2515.HistoricalMetricsOptions v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasHistoricalMetricsOptions() => $_has(13);
   @$pb.TagNumber(18)
   void clearHistoricalMetricsOptions() => clearField(18);
   @$pb.TagNumber(18)
-  $2514.HistoricalMetricsOptions ensureHistoricalMetricsOptions() => $_ensure(13);
+  $2515.HistoricalMetricsOptions ensureHistoricalMetricsOptions() => $_ensure(13);
 }
 
 /// Keyword And Url Seed
@@ -523,7 +523,7 @@ class GenerateKeywordIdeaResponse extends $pb.GeneratedMessage {
     $core.Iterable<GenerateKeywordIdeaResult>? results,
     $core.String? nextPageToken,
     $fixnum.Int64? totalSize,
-    $2514.KeywordPlanAggregateMetricResults? aggregateMetricResults,
+    $2515.KeywordPlanAggregateMetricResults? aggregateMetricResults,
   }) {
     final $result = create();
     if (results != null) {
@@ -548,7 +548,7 @@ class GenerateKeywordIdeaResponse extends $pb.GeneratedMessage {
     ..pc<GenerateKeywordIdeaResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: GenerateKeywordIdeaResult.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..aInt64(3, _omitFieldNames ? '' : 'totalSize')
-    ..aOM<$2514.KeywordPlanAggregateMetricResults>(4, _omitFieldNames ? '' : 'aggregateMetricResults', subBuilder: $2514.KeywordPlanAggregateMetricResults.create)
+    ..aOM<$2515.KeywordPlanAggregateMetricResults>(4, _omitFieldNames ? '' : 'aggregateMetricResults', subBuilder: $2515.KeywordPlanAggregateMetricResults.create)
     ..hasRequiredFields = false
   ;
 
@@ -602,23 +602,23 @@ class GenerateKeywordIdeaResponse extends $pb.GeneratedMessage {
 
   /// The aggregate metrics for all keyword ideas.
   @$pb.TagNumber(4)
-  $2514.KeywordPlanAggregateMetricResults get aggregateMetricResults => $_getN(3);
+  $2515.KeywordPlanAggregateMetricResults get aggregateMetricResults => $_getN(3);
   @$pb.TagNumber(4)
-  set aggregateMetricResults($2514.KeywordPlanAggregateMetricResults v) { setField(4, v); }
+  set aggregateMetricResults($2515.KeywordPlanAggregateMetricResults v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAggregateMetricResults() => $_has(3);
   @$pb.TagNumber(4)
   void clearAggregateMetricResults() => clearField(4);
   @$pb.TagNumber(4)
-  $2514.KeywordPlanAggregateMetricResults ensureAggregateMetricResults() => $_ensure(3);
+  $2515.KeywordPlanAggregateMetricResults ensureAggregateMetricResults() => $_ensure(3);
 }
 
 /// The result of generating keyword ideas.
 class GenerateKeywordIdeaResult extends $pb.GeneratedMessage {
   factory GenerateKeywordIdeaResult({
-    $2514.KeywordPlanHistoricalMetrics? keywordIdeaMetrics,
+    $2515.KeywordPlanHistoricalMetrics? keywordIdeaMetrics,
     $core.String? text,
-    $2514.KeywordAnnotations? keywordAnnotations,
+    $2515.KeywordAnnotations? keywordAnnotations,
     $core.Iterable<$core.String>? closeVariants,
   }) {
     final $result = create();
@@ -641,9 +641,9 @@ class GenerateKeywordIdeaResult extends $pb.GeneratedMessage {
   factory GenerateKeywordIdeaResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateKeywordIdeaResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..aOM<$2514.KeywordPlanHistoricalMetrics>(3, _omitFieldNames ? '' : 'keywordIdeaMetrics', subBuilder: $2514.KeywordPlanHistoricalMetrics.create)
+    ..aOM<$2515.KeywordPlanHistoricalMetrics>(3, _omitFieldNames ? '' : 'keywordIdeaMetrics', subBuilder: $2515.KeywordPlanHistoricalMetrics.create)
     ..aOS(5, _omitFieldNames ? '' : 'text')
-    ..aOM<$2514.KeywordAnnotations>(6, _omitFieldNames ? '' : 'keywordAnnotations', subBuilder: $2514.KeywordAnnotations.create)
+    ..aOM<$2515.KeywordAnnotations>(6, _omitFieldNames ? '' : 'keywordAnnotations', subBuilder: $2515.KeywordAnnotations.create)
     ..pPS(7, _omitFieldNames ? '' : 'closeVariants')
     ..hasRequiredFields = false
   ;
@@ -671,15 +671,15 @@ class GenerateKeywordIdeaResult extends $pb.GeneratedMessage {
 
   /// The historical metrics for the keyword.
   @$pb.TagNumber(3)
-  $2514.KeywordPlanHistoricalMetrics get keywordIdeaMetrics => $_getN(0);
+  $2515.KeywordPlanHistoricalMetrics get keywordIdeaMetrics => $_getN(0);
   @$pb.TagNumber(3)
-  set keywordIdeaMetrics($2514.KeywordPlanHistoricalMetrics v) { setField(3, v); }
+  set keywordIdeaMetrics($2515.KeywordPlanHistoricalMetrics v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasKeywordIdeaMetrics() => $_has(0);
   @$pb.TagNumber(3)
   void clearKeywordIdeaMetrics() => clearField(3);
   @$pb.TagNumber(3)
-  $2514.KeywordPlanHistoricalMetrics ensureKeywordIdeaMetrics() => $_ensure(0);
+  $2515.KeywordPlanHistoricalMetrics ensureKeywordIdeaMetrics() => $_ensure(0);
 
   /// Text of the keyword idea.
   /// As in Keyword Plan historical metrics, this text may not be an actual
@@ -697,15 +697,15 @@ class GenerateKeywordIdeaResult extends $pb.GeneratedMessage {
   /// The annotations for the keyword.
   /// The annotation data is only provided if requested.
   @$pb.TagNumber(6)
-  $2514.KeywordAnnotations get keywordAnnotations => $_getN(2);
+  $2515.KeywordAnnotations get keywordAnnotations => $_getN(2);
   @$pb.TagNumber(6)
-  set keywordAnnotations($2514.KeywordAnnotations v) { setField(6, v); }
+  set keywordAnnotations($2515.KeywordAnnotations v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasKeywordAnnotations() => $_has(2);
   @$pb.TagNumber(6)
   void clearKeywordAnnotations() => clearField(6);
   @$pb.TagNumber(6)
-  $2514.KeywordAnnotations ensureKeywordAnnotations() => $_ensure(2);
+  $2515.KeywordAnnotations ensureKeywordAnnotations() => $_ensure(2);
 
   /// The list of close variants from the requested keywords that
   /// are combined into this GenerateKeywordIdeaResult. See
@@ -721,12 +721,12 @@ class GenerateKeywordHistoricalMetricsRequest extends $pb.GeneratedMessage {
   factory GenerateKeywordHistoricalMetricsRequest({
     $core.String? customerId,
     $core.Iterable<$core.String>? keywords,
-    $2514.HistoricalMetricsOptions? historicalMetricsOptions,
+    $2515.HistoricalMetricsOptions? historicalMetricsOptions,
     $core.String? language,
     $core.bool? includeAdultKeywords,
     $core.Iterable<$core.String>? geoTargetConstants,
-    $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
-    $2514.KeywordPlanAggregateMetrics? aggregateMetrics,
+    $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
+    $2515.KeywordPlanAggregateMetrics? aggregateMetrics,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -762,12 +762,12 @@ class GenerateKeywordHistoricalMetricsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateKeywordHistoricalMetricsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..pPS(2, _omitFieldNames ? '' : 'keywords')
-    ..aOM<$2514.HistoricalMetricsOptions>(3, _omitFieldNames ? '' : 'historicalMetricsOptions', subBuilder: $2514.HistoricalMetricsOptions.create)
+    ..aOM<$2515.HistoricalMetricsOptions>(3, _omitFieldNames ? '' : 'historicalMetricsOptions', subBuilder: $2515.HistoricalMetricsOptions.create)
     ..aOS(4, _omitFieldNames ? '' : 'language')
     ..aOB(5, _omitFieldNames ? '' : 'includeAdultKeywords')
     ..pPS(6, _omitFieldNames ? '' : 'geoTargetConstants')
-    ..e<$2309.KeywordPlanNetworkEnum_KeywordPlanNetwork>(7, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
-    ..aOM<$2514.KeywordPlanAggregateMetrics>(8, _omitFieldNames ? '' : 'aggregateMetrics', subBuilder: $2514.KeywordPlanAggregateMetrics.create)
+    ..e<$2310.KeywordPlanNetworkEnum_KeywordPlanNetwork>(7, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
+    ..aOM<$2515.KeywordPlanAggregateMetrics>(8, _omitFieldNames ? '' : 'aggregateMetrics', subBuilder: $2515.KeywordPlanAggregateMetrics.create)
     ..hasRequiredFields = false
   ;
 
@@ -812,15 +812,15 @@ class GenerateKeywordHistoricalMetricsRequest extends $pb.GeneratedMessage {
 
   /// The options for historical metrics data.
   @$pb.TagNumber(3)
-  $2514.HistoricalMetricsOptions get historicalMetricsOptions => $_getN(2);
+  $2515.HistoricalMetricsOptions get historicalMetricsOptions => $_getN(2);
   @$pb.TagNumber(3)
-  set historicalMetricsOptions($2514.HistoricalMetricsOptions v) { setField(3, v); }
+  set historicalMetricsOptions($2515.HistoricalMetricsOptions v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasHistoricalMetricsOptions() => $_has(2);
   @$pb.TagNumber(3)
   void clearHistoricalMetricsOptions() => clearField(3);
   @$pb.TagNumber(3)
-  $2514.HistoricalMetricsOptions ensureHistoricalMetricsOptions() => $_ensure(2);
+  $2515.HistoricalMetricsOptions ensureHistoricalMetricsOptions() => $_ensure(2);
 
   /// The resource name of the language to target.
   /// Each keyword belongs to some set of languages; a keyword is included if
@@ -854,9 +854,9 @@ class GenerateKeywordHistoricalMetricsRequest extends $pb.GeneratedMessage {
   /// Targeting network.
   /// If not set, Google Search And Partners Network will be used.
   @$pb.TagNumber(7)
-  $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(6);
+  $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(6);
   @$pb.TagNumber(7)
-  set keywordPlanNetwork($2309.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(7, v); }
+  set keywordPlanNetwork($2310.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasKeywordPlanNetwork() => $_has(6);
   @$pb.TagNumber(7)
@@ -864,15 +864,15 @@ class GenerateKeywordHistoricalMetricsRequest extends $pb.GeneratedMessage {
 
   /// The aggregate fields to include in response.
   @$pb.TagNumber(8)
-  $2514.KeywordPlanAggregateMetrics get aggregateMetrics => $_getN(7);
+  $2515.KeywordPlanAggregateMetrics get aggregateMetrics => $_getN(7);
   @$pb.TagNumber(8)
-  set aggregateMetrics($2514.KeywordPlanAggregateMetrics v) { setField(8, v); }
+  set aggregateMetrics($2515.KeywordPlanAggregateMetrics v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAggregateMetrics() => $_has(7);
   @$pb.TagNumber(8)
   void clearAggregateMetrics() => clearField(8);
   @$pb.TagNumber(8)
-  $2514.KeywordPlanAggregateMetrics ensureAggregateMetrics() => $_ensure(7);
+  $2515.KeywordPlanAggregateMetrics ensureAggregateMetrics() => $_ensure(7);
 }
 
 /// Response message for
@@ -880,7 +880,7 @@ class GenerateKeywordHistoricalMetricsRequest extends $pb.GeneratedMessage {
 class GenerateKeywordHistoricalMetricsResponse extends $pb.GeneratedMessage {
   factory GenerateKeywordHistoricalMetricsResponse({
     $core.Iterable<GenerateKeywordHistoricalMetricsResult>? results,
-    $2514.KeywordPlanAggregateMetricResults? aggregateMetricResults,
+    $2515.KeywordPlanAggregateMetricResults? aggregateMetricResults,
   }) {
     final $result = create();
     if (results != null) {
@@ -897,7 +897,7 @@ class GenerateKeywordHistoricalMetricsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateKeywordHistoricalMetricsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<GenerateKeywordHistoricalMetricsResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: GenerateKeywordHistoricalMetricsResult.create)
-    ..aOM<$2514.KeywordPlanAggregateMetricResults>(2, _omitFieldNames ? '' : 'aggregateMetricResults', subBuilder: $2514.KeywordPlanAggregateMetricResults.create)
+    ..aOM<$2515.KeywordPlanAggregateMetricResults>(2, _omitFieldNames ? '' : 'aggregateMetricResults', subBuilder: $2515.KeywordPlanAggregateMetricResults.create)
     ..hasRequiredFields = false
   ;
 
@@ -928,22 +928,22 @@ class GenerateKeywordHistoricalMetricsResponse extends $pb.GeneratedMessage {
 
   /// The aggregate metrics for all keywords.
   @$pb.TagNumber(2)
-  $2514.KeywordPlanAggregateMetricResults get aggregateMetricResults => $_getN(1);
+  $2515.KeywordPlanAggregateMetricResults get aggregateMetricResults => $_getN(1);
   @$pb.TagNumber(2)
-  set aggregateMetricResults($2514.KeywordPlanAggregateMetricResults v) { setField(2, v); }
+  set aggregateMetricResults($2515.KeywordPlanAggregateMetricResults v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAggregateMetricResults() => $_has(1);
   @$pb.TagNumber(2)
   void clearAggregateMetricResults() => clearField(2);
   @$pb.TagNumber(2)
-  $2514.KeywordPlanAggregateMetricResults ensureAggregateMetricResults() => $_ensure(1);
+  $2515.KeywordPlanAggregateMetricResults ensureAggregateMetricResults() => $_ensure(1);
 }
 
 /// The result of generating keyword historical metrics.
 class GenerateKeywordHistoricalMetricsResult extends $pb.GeneratedMessage {
   factory GenerateKeywordHistoricalMetricsResult({
     $core.String? text,
-    $2514.KeywordPlanHistoricalMetrics? keywordMetrics,
+    $2515.KeywordPlanHistoricalMetrics? keywordMetrics,
     $core.Iterable<$core.String>? closeVariants,
   }) {
     final $result = create();
@@ -964,7 +964,7 @@ class GenerateKeywordHistoricalMetricsResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateKeywordHistoricalMetricsResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..aOM<$2514.KeywordPlanHistoricalMetrics>(2, _omitFieldNames ? '' : 'keywordMetrics', subBuilder: $2514.KeywordPlanHistoricalMetrics.create)
+    ..aOM<$2515.KeywordPlanHistoricalMetrics>(2, _omitFieldNames ? '' : 'keywordMetrics', subBuilder: $2515.KeywordPlanHistoricalMetrics.create)
     ..pPS(3, _omitFieldNames ? '' : 'closeVariants')
     ..hasRequiredFields = false
   ;
@@ -1007,15 +1007,15 @@ class GenerateKeywordHistoricalMetricsResult extends $pb.GeneratedMessage {
 
   /// The historical metrics for text and its close variants
   @$pb.TagNumber(2)
-  $2514.KeywordPlanHistoricalMetrics get keywordMetrics => $_getN(1);
+  $2515.KeywordPlanHistoricalMetrics get keywordMetrics => $_getN(1);
   @$pb.TagNumber(2)
-  set keywordMetrics($2514.KeywordPlanHistoricalMetrics v) { setField(2, v); }
+  set keywordMetrics($2515.KeywordPlanHistoricalMetrics v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasKeywordMetrics() => $_has(1);
   @$pb.TagNumber(2)
   void clearKeywordMetrics() => clearField(2);
   @$pb.TagNumber(2)
-  $2514.KeywordPlanHistoricalMetrics ensureKeywordMetrics() => $_ensure(1);
+  $2515.KeywordPlanHistoricalMetrics ensureKeywordMetrics() => $_ensure(1);
 
   /// The list of close variants from the requested keywords whose stats
   /// are combined into this GenerateKeywordHistoricalMetricsResult.
@@ -1156,7 +1156,7 @@ class AdGroupKeywordSuggestion extends $pb.GeneratedMessage {
   factory AdGroupKeywordSuggestion({
     $core.String? keywordText,
     $core.String? suggestedKeywordText,
-    $1843.KeywordMatchTypeEnum_KeywordMatchType? suggestedMatchType,
+    $1844.KeywordMatchTypeEnum_KeywordMatchType? suggestedMatchType,
     $core.String? suggestedAdGroup,
     $core.String? suggestedCampaign,
   }) {
@@ -1185,7 +1185,7 @@ class AdGroupKeywordSuggestion extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupKeywordSuggestion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'keywordText')
     ..aOS(2, _omitFieldNames ? '' : 'suggestedKeywordText')
-    ..e<$1843.KeywordMatchTypeEnum_KeywordMatchType>(3, _omitFieldNames ? '' : 'suggestedMatchType', $pb.PbFieldType.OE, defaultOrMaker: $1843.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $1843.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $1843.KeywordMatchTypeEnum_KeywordMatchType.values)
+    ..e<$1844.KeywordMatchTypeEnum_KeywordMatchType>(3, _omitFieldNames ? '' : 'suggestedMatchType', $pb.PbFieldType.OE, defaultOrMaker: $1844.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $1844.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $1844.KeywordMatchTypeEnum_KeywordMatchType.values)
     ..aOS(4, _omitFieldNames ? '' : 'suggestedAdGroup')
     ..aOS(5, _omitFieldNames ? '' : 'suggestedCampaign')
     ..hasRequiredFields = false
@@ -1234,9 +1234,9 @@ class AdGroupKeywordSuggestion extends $pb.GeneratedMessage {
 
   /// The suggested keyword match type.
   @$pb.TagNumber(3)
-  $1843.KeywordMatchTypeEnum_KeywordMatchType get suggestedMatchType => $_getN(2);
+  $1844.KeywordMatchTypeEnum_KeywordMatchType get suggestedMatchType => $_getN(2);
   @$pb.TagNumber(3)
-  set suggestedMatchType($1843.KeywordMatchTypeEnum_KeywordMatchType v) { setField(3, v); }
+  set suggestedMatchType($1844.KeywordMatchTypeEnum_KeywordMatchType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSuggestedMatchType() => $_has(2);
   @$pb.TagNumber(3)
@@ -1344,7 +1344,7 @@ class GenerateKeywordForecastMetricsRequest extends $pb.GeneratedMessage {
   factory GenerateKeywordForecastMetricsRequest({
     $core.String? customerId,
     $core.String? currencyCode,
-    $1895.DateRange? forecastPeriod,
+    $1896.DateRange? forecastPeriod,
     CampaignToForecast? campaign,
   }) {
     final $result = create();
@@ -1369,7 +1369,7 @@ class GenerateKeywordForecastMetricsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateKeywordForecastMetricsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..aOS(2, _omitFieldNames ? '' : 'currencyCode')
-    ..aOM<$1895.DateRange>(3, _omitFieldNames ? '' : 'forecastPeriod', subBuilder: $1895.DateRange.create)
+    ..aOM<$1896.DateRange>(3, _omitFieldNames ? '' : 'forecastPeriod', subBuilder: $1896.DateRange.create)
     ..aOM<CampaignToForecast>(4, _omitFieldNames ? '' : 'campaign', subBuilder: CampaignToForecast.create)
     ..hasRequiredFields = false
   ;
@@ -1424,15 +1424,15 @@ class GenerateKeywordForecastMetricsRequest extends $pb.GeneratedMessage {
   /// the one of the Google Ads account belonging to the customer. If not set, a
   /// default date range from next Sunday to the following Saturday will be used.
   @$pb.TagNumber(3)
-  $1895.DateRange get forecastPeriod => $_getN(2);
+  $1896.DateRange get forecastPeriod => $_getN(2);
   @$pb.TagNumber(3)
-  set forecastPeriod($1895.DateRange v) { setField(3, v); }
+  set forecastPeriod($1896.DateRange v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasForecastPeriod() => $_has(2);
   @$pb.TagNumber(3)
   void clearForecastPeriod() => clearField(3);
   @$pb.TagNumber(3)
-  $1895.DateRange ensureForecastPeriod() => $_ensure(2);
+  $1896.DateRange ensureForecastPeriod() => $_ensure(2);
 
   /// Required. The campaign used in the forecast.
   @$pb.TagNumber(4)
@@ -1557,8 +1557,8 @@ class CampaignToForecast extends $pb.GeneratedMessage {
   factory CampaignToForecast({
     $core.Iterable<$core.String>? languageConstants,
     $core.Iterable<CriterionBidModifier>? geoModifiers,
-    $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
-    $core.Iterable<$1867.KeywordInfo>? negativeKeywords,
+    $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
+    $core.Iterable<$1868.KeywordInfo>? negativeKeywords,
     CampaignToForecast_CampaignBiddingStrategy? biddingStrategy,
     $core.double? conversionRate,
     $core.Iterable<ForecastAdGroup>? adGroups,
@@ -1594,8 +1594,8 @@ class CampaignToForecast extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignToForecast', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'languageConstants')
     ..pc<CriterionBidModifier>(2, _omitFieldNames ? '' : 'geoModifiers', $pb.PbFieldType.PM, subBuilder: CriterionBidModifier.create)
-    ..e<$2309.KeywordPlanNetworkEnum_KeywordPlanNetwork>(3, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
-    ..pc<$1867.KeywordInfo>(4, _omitFieldNames ? '' : 'negativeKeywords', $pb.PbFieldType.PM, subBuilder: $1867.KeywordInfo.create)
+    ..e<$2310.KeywordPlanNetworkEnum_KeywordPlanNetwork>(3, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
+    ..pc<$1868.KeywordInfo>(4, _omitFieldNames ? '' : 'negativeKeywords', $pb.PbFieldType.PM, subBuilder: $1868.KeywordInfo.create)
     ..aOM<CampaignToForecast_CampaignBiddingStrategy>(5, _omitFieldNames ? '' : 'biddingStrategy', subBuilder: CampaignToForecast_CampaignBiddingStrategy.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'conversionRate', $pb.PbFieldType.OD)
     ..pc<ForecastAdGroup>(7, _omitFieldNames ? '' : 'adGroups', $pb.PbFieldType.PM, subBuilder: ForecastAdGroup.create)
@@ -1636,9 +1636,9 @@ class CampaignToForecast extends $pb.GeneratedMessage {
 
   /// Required. The network used for targeting.
   @$pb.TagNumber(3)
-  $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(2);
+  $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(2);
   @$pb.TagNumber(3)
-  set keywordPlanNetwork($2309.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(3, v); }
+  set keywordPlanNetwork($2310.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasKeywordPlanNetwork() => $_has(2);
   @$pb.TagNumber(3)
@@ -1647,7 +1647,7 @@ class CampaignToForecast extends $pb.GeneratedMessage {
   /// The list of negative keywords to be used in the campaign when doing the
   /// forecast.
   @$pb.TagNumber(4)
-  $core.List<$1867.KeywordInfo> get negativeKeywords => $_getList(3);
+  $core.List<$1868.KeywordInfo> get negativeKeywords => $_getList(3);
 
   /// Required. The bidding strategy for the campaign.
   @$pb.TagNumber(5)
@@ -1684,7 +1684,7 @@ class ForecastAdGroup extends $pb.GeneratedMessage {
   factory ForecastAdGroup({
     $fixnum.Int64? maxCpcBidMicros,
     $core.Iterable<BiddableKeyword>? biddableKeywords,
-    $core.Iterable<$1867.KeywordInfo>? negativeKeywords,
+    $core.Iterable<$1868.KeywordInfo>? negativeKeywords,
   }) {
     final $result = create();
     if (maxCpcBidMicros != null) {
@@ -1705,7 +1705,7 @@ class ForecastAdGroup extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ForecastAdGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'maxCpcBidMicros')
     ..pc<BiddableKeyword>(2, _omitFieldNames ? '' : 'biddableKeywords', $pb.PbFieldType.PM, subBuilder: BiddableKeyword.create)
-    ..pc<$1867.KeywordInfo>(3, _omitFieldNames ? '' : 'negativeKeywords', $pb.PbFieldType.PM, subBuilder: $1867.KeywordInfo.create)
+    ..pc<$1868.KeywordInfo>(3, _omitFieldNames ? '' : 'negativeKeywords', $pb.PbFieldType.PM, subBuilder: $1868.KeywordInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -1750,13 +1750,13 @@ class ForecastAdGroup extends $pb.GeneratedMessage {
   /// The details of the keyword. You should specify both the keyword text and
   /// match type.
   @$pb.TagNumber(3)
-  $core.List<$1867.KeywordInfo> get negativeKeywords => $_getList(2);
+  $core.List<$1868.KeywordInfo> get negativeKeywords => $_getList(2);
 }
 
 /// A biddable keyword part of an ad group.
 class BiddableKeyword extends $pb.GeneratedMessage {
   factory BiddableKeyword({
-    $1867.KeywordInfo? keyword,
+    $1868.KeywordInfo? keyword,
     $fixnum.Int64? maxCpcBidMicros,
   }) {
     final $result = create();
@@ -1773,7 +1773,7 @@ class BiddableKeyword extends $pb.GeneratedMessage {
   factory BiddableKeyword.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BiddableKeyword', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..aOM<$1867.KeywordInfo>(1, _omitFieldNames ? '' : 'keyword', subBuilder: $1867.KeywordInfo.create)
+    ..aOM<$1868.KeywordInfo>(1, _omitFieldNames ? '' : 'keyword', subBuilder: $1868.KeywordInfo.create)
     ..aInt64(2, _omitFieldNames ? '' : 'maxCpcBidMicros')
     ..hasRequiredFields = false
   ;
@@ -1801,15 +1801,15 @@ class BiddableKeyword extends $pb.GeneratedMessage {
 
   /// Required. Keyword. Must have text and match type.
   @$pb.TagNumber(1)
-  $1867.KeywordInfo get keyword => $_getN(0);
+  $1868.KeywordInfo get keyword => $_getN(0);
   @$pb.TagNumber(1)
-  set keyword($1867.KeywordInfo v) { setField(1, v); }
+  set keyword($1868.KeywordInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasKeyword() => $_has(0);
   @$pb.TagNumber(1)
   void clearKeyword() => clearField(1);
   @$pb.TagNumber(1)
-  $1867.KeywordInfo ensureKeyword() => $_ensure(0);
+  $1868.KeywordInfo ensureKeyword() => $_ensure(0);
 
   /// A max cpc bid in micros that overrides the ad group level max cpc bid in
   /// forecast simulation. This value will override the max cpc value set in the

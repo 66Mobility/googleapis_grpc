@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
 import 'entity_type.pbenum.dart';
-import 'inline.pb.dart' as $4493;
+import 'inline.pb.dart' as $4495;
 
 export 'entity_type.pbenum.dart';
 
@@ -506,7 +506,7 @@ enum ExportEntityTypesResponse_ExportedEntityTypes {
 class ExportEntityTypesResponse extends $pb.GeneratedMessage {
   factory ExportEntityTypesResponse({
     $core.String? entityTypesUri,
-    $4493.InlineDestination? entityTypesContent,
+    $4495.InlineDestination? entityTypesContent,
   }) {
     final $result = create();
     if (entityTypesUri != null) {
@@ -529,7 +529,7 @@ class ExportEntityTypesResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportEntityTypesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'entityTypesUri')
-    ..aOM<$4493.InlineDestination>(2, _omitFieldNames ? '' : 'entityTypesContent', subBuilder: $4493.InlineDestination.create)
+    ..aOM<$4495.InlineDestination>(2, _omitFieldNames ? '' : 'entityTypesContent', subBuilder: $4495.InlineDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -573,15 +573,15 @@ class ExportEntityTypesResponse extends $pb.GeneratedMessage {
   /// if `entity_types_content_inline` is set to true in
   /// [ExportEntityTypesRequest][google.cloud.dialogflow.cx.v3beta1.ExportEntityTypesRequest].
   @$pb.TagNumber(2)
-  $4493.InlineDestination get entityTypesContent => $_getN(1);
+  $4495.InlineDestination get entityTypesContent => $_getN(1);
   @$pb.TagNumber(2)
-  set entityTypesContent($4493.InlineDestination v) { setField(2, v); }
+  set entityTypesContent($4495.InlineDestination v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEntityTypesContent() => $_has(1);
   @$pb.TagNumber(2)
   void clearEntityTypesContent() => clearField(2);
   @$pb.TagNumber(2)
-  $4493.InlineDestination ensureEntityTypesContent() => $_ensure(1);
+  $4495.InlineDestination ensureEntityTypesContent() => $_ensure(1);
 }
 
 /// Metadata returned for the
@@ -631,7 +631,7 @@ class ImportEntityTypesRequest extends $pb.GeneratedMessage {
   factory ImportEntityTypesRequest({
     $core.String? parent,
     $core.String? entityTypesUri,
-    $4493.InlineSource? entityTypesContent,
+    $4495.InlineSource? entityTypesContent,
     ImportEntityTypesRequest_MergeOption? mergeOption,
     $core.String? targetEntityType,
   }) {
@@ -666,7 +666,7 @@ class ImportEntityTypesRequest extends $pb.GeneratedMessage {
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'entityTypesUri')
-    ..aOM<$4493.InlineSource>(3, _omitFieldNames ? '' : 'entityTypesContent', subBuilder: $4493.InlineSource.create)
+    ..aOM<$4495.InlineSource>(3, _omitFieldNames ? '' : 'entityTypesContent', subBuilder: $4495.InlineSource.create)
     ..e<ImportEntityTypesRequest_MergeOption>(4, _omitFieldNames ? '' : 'mergeOption', $pb.PbFieldType.OE, defaultOrMaker: ImportEntityTypesRequest_MergeOption.MERGE_OPTION_UNSPECIFIED, valueOf: ImportEntityTypesRequest_MergeOption.valueOf, enumValues: ImportEntityTypesRequest_MergeOption.values)
     ..aOS(5, _omitFieldNames ? '' : 'targetEntityType')
     ..hasRequiredFields = false
@@ -727,15 +727,15 @@ class ImportEntityTypesRequest extends $pb.GeneratedMessage {
 
   /// Uncompressed byte content of entity types.
   @$pb.TagNumber(3)
-  $4493.InlineSource get entityTypesContent => $_getN(2);
+  $4495.InlineSource get entityTypesContent => $_getN(2);
   @$pb.TagNumber(3)
-  set entityTypesContent($4493.InlineSource v) { setField(3, v); }
+  set entityTypesContent($4495.InlineSource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEntityTypesContent() => $_has(2);
   @$pb.TagNumber(3)
   void clearEntityTypesContent() => clearField(3);
   @$pb.TagNumber(3)
-  $4493.InlineSource ensureEntityTypesContent() => $_ensure(2);
+  $4495.InlineSource ensureEntityTypesContent() => $_ensure(2);
 
   /// Required. Merge option for importing entity types.
   @$pb.TagNumber(4)
@@ -1283,7 +1283,7 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
   factory UpdateEntityTypeRequest({
     EntityType? entityType,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (entityType != null) {
@@ -1304,7 +1304,7 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEntityTypeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<EntityType>(1, _omitFieldNames ? '' : 'entityType', subBuilder: EntityType.create)
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1363,15 +1363,15 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
 
   /// The mask to control which fields get updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The request message for

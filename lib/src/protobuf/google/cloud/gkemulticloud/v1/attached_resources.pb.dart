@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'attached_resources.pbenum.dart';
-import 'common_resources.pb.dart' as $4546;
+import 'common_resources.pb.dart' as $4548;
 
 export 'attached_resources.pbenum.dart';
 
@@ -26,24 +26,24 @@ class AttachedCluster extends $pb.GeneratedMessage {
     $core.String? description,
     AttachedOidcConfig? oidcConfig,
     $core.String? platformVersion,
-    $4546.Fleet? fleet,
+    $4548.Fleet? fleet,
     AttachedCluster_State? state,
     $core.String? uid,
     $core.bool? reconciling,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.String? kubernetesVersion,
     $core.Map<$core.String, $core.String>? annotations,
-    $4546.WorkloadIdentityConfig? workloadIdentityConfig,
-    $4546.LoggingConfig? loggingConfig,
+    $4548.WorkloadIdentityConfig? workloadIdentityConfig,
+    $4548.LoggingConfig? loggingConfig,
     $core.String? distribution,
     $core.Iterable<AttachedClusterError>? errors,
     AttachedClustersAuthorization? authorization,
     $core.String? clusterRegion,
-    $4546.MonitoringConfig? monitoringConfig,
+    $4548.MonitoringConfig? monitoringConfig,
     AttachedProxyConfig? proxyConfig,
-    $4546.BinaryAuthorization? binaryAuthorization,
+    $4548.BinaryAuthorization? binaryAuthorization,
   }) {
     final $result = create();
     if (name != null) {
@@ -123,24 +123,24 @@ class AttachedCluster extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<AttachedOidcConfig>(3, _omitFieldNames ? '' : 'oidcConfig', subBuilder: AttachedOidcConfig.create)
     ..aOS(4, _omitFieldNames ? '' : 'platformVersion')
-    ..aOM<$4546.Fleet>(5, _omitFieldNames ? '' : 'fleet', subBuilder: $4546.Fleet.create)
+    ..aOM<$4548.Fleet>(5, _omitFieldNames ? '' : 'fleet', subBuilder: $4548.Fleet.create)
     ..e<AttachedCluster_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AttachedCluster_State.STATE_UNSPECIFIED, valueOf: AttachedCluster_State.valueOf, enumValues: AttachedCluster_State.values)
     ..aOS(7, _omitFieldNames ? '' : 'uid')
     ..aOB(8, _omitFieldNames ? '' : 'reconciling')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'etag')
     ..aOS(12, _omitFieldNames ? '' : 'kubernetesVersion')
     ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'annotations', entryClassName: 'AttachedCluster.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
-    ..aOM<$4546.WorkloadIdentityConfig>(14, _omitFieldNames ? '' : 'workloadIdentityConfig', subBuilder: $4546.WorkloadIdentityConfig.create)
-    ..aOM<$4546.LoggingConfig>(15, _omitFieldNames ? '' : 'loggingConfig', subBuilder: $4546.LoggingConfig.create)
+    ..aOM<$4548.WorkloadIdentityConfig>(14, _omitFieldNames ? '' : 'workloadIdentityConfig', subBuilder: $4548.WorkloadIdentityConfig.create)
+    ..aOM<$4548.LoggingConfig>(15, _omitFieldNames ? '' : 'loggingConfig', subBuilder: $4548.LoggingConfig.create)
     ..aOS(16, _omitFieldNames ? '' : 'distribution')
     ..pc<AttachedClusterError>(20, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: AttachedClusterError.create)
     ..aOM<AttachedClustersAuthorization>(21, _omitFieldNames ? '' : 'authorization', subBuilder: AttachedClustersAuthorization.create)
     ..aOS(22, _omitFieldNames ? '' : 'clusterRegion')
-    ..aOM<$4546.MonitoringConfig>(23, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4546.MonitoringConfig.create)
+    ..aOM<$4548.MonitoringConfig>(23, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4548.MonitoringConfig.create)
     ..aOM<AttachedProxyConfig>(24, _omitFieldNames ? '' : 'proxyConfig', subBuilder: AttachedProxyConfig.create)
-    ..aOM<$4546.BinaryAuthorization>(25, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4546.BinaryAuthorization.create)
+    ..aOM<$4548.BinaryAuthorization>(25, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4548.BinaryAuthorization.create)
     ..hasRequiredFields = false
   ;
 
@@ -220,15 +220,15 @@ class AttachedCluster extends $pb.GeneratedMessage {
 
   /// Required. Fleet configuration.
   @$pb.TagNumber(5)
-  $4546.Fleet get fleet => $_getN(4);
+  $4548.Fleet get fleet => $_getN(4);
   @$pb.TagNumber(5)
-  set fleet($4546.Fleet v) { setField(5, v); }
+  set fleet($4548.Fleet v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFleet() => $_has(4);
   @$pb.TagNumber(5)
   void clearFleet() => clearField(5);
   @$pb.TagNumber(5)
-  $4546.Fleet ensureFleet() => $_ensure(4);
+  $4548.Fleet ensureFleet() => $_ensure(4);
 
   /// Output only. The current state of the cluster.
   @$pb.TagNumber(6)
@@ -262,27 +262,27 @@ class AttachedCluster extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this cluster was registered.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. The time at which this cluster was last updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   ///  Allows clients to perform consistent read-modify-writes
   ///  through optimistic concurrency control.
@@ -322,27 +322,27 @@ class AttachedCluster extends $pb.GeneratedMessage {
 
   /// Output only. Workload Identity settings.
   @$pb.TagNumber(14)
-  $4546.WorkloadIdentityConfig get workloadIdentityConfig => $_getN(13);
+  $4548.WorkloadIdentityConfig get workloadIdentityConfig => $_getN(13);
   @$pb.TagNumber(14)
-  set workloadIdentityConfig($4546.WorkloadIdentityConfig v) { setField(14, v); }
+  set workloadIdentityConfig($4548.WorkloadIdentityConfig v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasWorkloadIdentityConfig() => $_has(13);
   @$pb.TagNumber(14)
   void clearWorkloadIdentityConfig() => clearField(14);
   @$pb.TagNumber(14)
-  $4546.WorkloadIdentityConfig ensureWorkloadIdentityConfig() => $_ensure(13);
+  $4548.WorkloadIdentityConfig ensureWorkloadIdentityConfig() => $_ensure(13);
 
   /// Optional. Logging configuration for this cluster.
   @$pb.TagNumber(15)
-  $4546.LoggingConfig get loggingConfig => $_getN(14);
+  $4548.LoggingConfig get loggingConfig => $_getN(14);
   @$pb.TagNumber(15)
-  set loggingConfig($4546.LoggingConfig v) { setField(15, v); }
+  set loggingConfig($4548.LoggingConfig v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasLoggingConfig() => $_has(14);
   @$pb.TagNumber(15)
   void clearLoggingConfig() => clearField(15);
   @$pb.TagNumber(15)
-  $4546.LoggingConfig ensureLoggingConfig() => $_ensure(14);
+  $4548.LoggingConfig ensureLoggingConfig() => $_ensure(14);
 
   ///  Required. The Kubernetes distribution of the underlying attached cluster.
   ///
@@ -387,15 +387,15 @@ class AttachedCluster extends $pb.GeneratedMessage {
 
   /// Optional. Monitoring configuration for this cluster.
   @$pb.TagNumber(23)
-  $4546.MonitoringConfig get monitoringConfig => $_getN(19);
+  $4548.MonitoringConfig get monitoringConfig => $_getN(19);
   @$pb.TagNumber(23)
-  set monitoringConfig($4546.MonitoringConfig v) { setField(23, v); }
+  set monitoringConfig($4548.MonitoringConfig v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasMonitoringConfig() => $_has(19);
   @$pb.TagNumber(23)
   void clearMonitoringConfig() => clearField(23);
   @$pb.TagNumber(23)
-  $4546.MonitoringConfig ensureMonitoringConfig() => $_ensure(19);
+  $4548.MonitoringConfig ensureMonitoringConfig() => $_ensure(19);
 
   /// Optional. Proxy configuration for outbound HTTP(S) traffic.
   @$pb.TagNumber(24)
@@ -411,15 +411,15 @@ class AttachedCluster extends $pb.GeneratedMessage {
 
   /// Optional. Binary Authorization configuration for this cluster.
   @$pb.TagNumber(25)
-  $4546.BinaryAuthorization get binaryAuthorization => $_getN(21);
+  $4548.BinaryAuthorization get binaryAuthorization => $_getN(21);
   @$pb.TagNumber(25)
-  set binaryAuthorization($4546.BinaryAuthorization v) { setField(25, v); }
+  set binaryAuthorization($4548.BinaryAuthorization v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasBinaryAuthorization() => $_has(21);
   @$pb.TagNumber(25)
   void clearBinaryAuthorization() => clearField(25);
   @$pb.TagNumber(25)
-  $4546.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(21);
+  $4548.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(21);
 }
 
 /// Configuration related to the cluster RBAC settings.

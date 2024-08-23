@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'operation.pb.dart' as $4250;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'operation.pb.dart' as $4251;
 import 'pipeline_job.pb.dart' as $542;
 import 'training_pipeline.pb.dart' as $541;
 
@@ -22,7 +22,7 @@ import 'training_pipeline.pb.dart' as $541;
 /// [PipelineService.BatchCancelPipelineJobs][google.cloud.aiplatform.v1.PipelineService.BatchCancelPipelineJobs].
 class BatchCancelPipelineJobsOperationMetadata extends $pb.GeneratedMessage {
   factory BatchCancelPipelineJobsOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -35,7 +35,7 @@ class BatchCancelPipelineJobsOperationMetadata extends $pb.GeneratedMessage {
   factory BatchCancelPipelineJobsOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCancelPipelineJobsOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -62,15 +62,15 @@ class BatchCancelPipelineJobsOperationMetadata extends $pb.GeneratedMessage {
 
   /// The common part of the operation metadata.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -207,7 +207,7 @@ class ListTrainingPipelinesRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -236,7 +236,7 @@ class ListTrainingPipelinesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -328,15 +328,15 @@ class ListTrainingPipelinesRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -669,7 +669,7 @@ class ListPipelineJobsRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? orderBy,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -702,7 +702,7 @@ class ListPipelineJobsRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(6, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$2209.FieldMask>(7, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(7, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -830,15 +830,15 @@ class ListPipelineJobsRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(7)
-  $2209.FieldMask get readMask => $_getN(5);
+  $2210.FieldMask get readMask => $_getN(5);
   @$pb.TagNumber(7)
-  set readMask($2209.FieldMask v) { setField(7, v); }
+  set readMask($2210.FieldMask v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasReadMask() => $_has(5);
   @$pb.TagNumber(7)
   void clearReadMask() => clearField(7);
   @$pb.TagNumber(7)
-  $2209.FieldMask ensureReadMask() => $_ensure(5);
+  $2210.FieldMask ensureReadMask() => $_ensure(5);
 }
 
 /// Response message for

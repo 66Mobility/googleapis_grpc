@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'explanation.pb.dart' as $4239;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'explanation.pb.dart' as $4240;
 
 class ModelEvaluation_ModelEvaluationExplanationSpec extends $pb.GeneratedMessage {
   factory ModelEvaluation_ModelEvaluationExplanationSpec({
     $core.String? explanationType,
-    $4239.ExplanationSpec? explanationSpec,
+    $4240.ExplanationSpec? explanationSpec,
   }) {
     final $result = create();
     if (explanationType != null) {
@@ -37,7 +37,7 @@ class ModelEvaluation_ModelEvaluationExplanationSpec extends $pb.GeneratedMessag
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelEvaluation.ModelEvaluationExplanationSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'explanationType')
-    ..aOM<$4239.ExplanationSpec>(2, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4239.ExplanationSpec.create)
+    ..aOM<$4240.ExplanationSpec>(2, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4240.ExplanationSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -79,15 +79,15 @@ class ModelEvaluation_ModelEvaluationExplanationSpec extends $pb.GeneratedMessag
 
   /// Explanation spec details.
   @$pb.TagNumber(2)
-  $4239.ExplanationSpec get explanationSpec => $_getN(1);
+  $4240.ExplanationSpec get explanationSpec => $_getN(1);
   @$pb.TagNumber(2)
-  set explanationSpec($4239.ExplanationSpec v) { setField(2, v); }
+  set explanationSpec($4240.ExplanationSpec v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExplanationSpec() => $_has(1);
   @$pb.TagNumber(2)
   void clearExplanationSpec() => clearField(2);
   @$pb.TagNumber(2)
-  $4239.ExplanationSpec ensureExplanationSpec() => $_ensure(1);
+  $4240.ExplanationSpec ensureExplanationSpec() => $_ensure(1);
 }
 
 /// A collection of metrics calculated by comparing Model's predictions on all of
@@ -96,15 +96,15 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   factory ModelEvaluation({
     $core.String? name,
     $core.String? metricsSchemaUri,
-    $1734.Value? metrics,
-    $1775.Timestamp? createTime,
+    $1735.Value? metrics,
+    $1776.Timestamp? createTime,
     $core.Iterable<$core.String>? sliceDimensions,
     $core.String? dataItemSchemaUri,
     $core.String? annotationSchemaUri,
-    $4239.ModelExplanation? modelExplanation,
+    $4240.ModelExplanation? modelExplanation,
     $core.Iterable<ModelEvaluation_ModelEvaluationExplanationSpec>? explanationSpecs,
     $core.String? displayName,
-    $1734.Value? metadata,
+    $1735.Value? metadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -149,15 +149,15 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelEvaluation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'metricsSchemaUri')
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'metrics', subBuilder: $1734.Value.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'metrics', subBuilder: $1735.Value.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..pPS(5, _omitFieldNames ? '' : 'sliceDimensions')
     ..aOS(6, _omitFieldNames ? '' : 'dataItemSchemaUri')
     ..aOS(7, _omitFieldNames ? '' : 'annotationSchemaUri')
-    ..aOM<$4239.ModelExplanation>(8, _omitFieldNames ? '' : 'modelExplanation', subBuilder: $4239.ModelExplanation.create)
+    ..aOM<$4240.ModelExplanation>(8, _omitFieldNames ? '' : 'modelExplanation', subBuilder: $4240.ModelExplanation.create)
     ..pc<ModelEvaluation_ModelEvaluationExplanationSpec>(9, _omitFieldNames ? '' : 'explanationSpecs', $pb.PbFieldType.PM, subBuilder: ModelEvaluation_ModelEvaluationExplanationSpec.create)
     ..aOS(10, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1734.Value>(11, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(11, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -208,27 +208,27 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   /// Evaluation metrics of the Model. The schema of the metrics is stored in
   /// [metrics_schema_uri][google.cloud.aiplatform.v1.ModelEvaluation.metrics_schema_uri]
   @$pb.TagNumber(3)
-  $1734.Value get metrics => $_getN(2);
+  $1735.Value get metrics => $_getN(2);
   @$pb.TagNumber(3)
-  set metrics($1734.Value v) { setField(3, v); }
+  set metrics($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetrics() => $_has(2);
   @$pb.TagNumber(3)
   void clearMetrics() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensureMetrics() => $_ensure(2);
+  $1735.Value ensureMetrics() => $_ensure(2);
 
   /// Output only. Timestamp when this ModelEvaluation was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// All possible
   /// [dimensions][google.cloud.aiplatform.v1.ModelEvaluationSlice.Slice.dimension]
@@ -279,15 +279,15 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   ///  data this ModelEvaluation uses. This field is populated only if the Model
   ///  is evaluated with explanations, and only for AutoML tabular Models.
   @$pb.TagNumber(8)
-  $4239.ModelExplanation get modelExplanation => $_getN(7);
+  $4240.ModelExplanation get modelExplanation => $_getN(7);
   @$pb.TagNumber(8)
-  set modelExplanation($4239.ModelExplanation v) { setField(8, v); }
+  set modelExplanation($4240.ModelExplanation v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasModelExplanation() => $_has(7);
   @$pb.TagNumber(8)
   void clearModelExplanation() => clearField(8);
   @$pb.TagNumber(8)
-  $4239.ModelExplanation ensureModelExplanation() => $_ensure(7);
+  $4240.ModelExplanation ensureModelExplanation() => $_ensure(7);
 
   /// Describes the values of
   /// [ExplanationSpec][google.cloud.aiplatform.v1.ExplanationSpec] that are used
@@ -310,15 +310,15 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   /// structured value with keys of "pipeline_job_id", "evaluation_dataset_type",
   /// "evaluation_dataset_path", "row_based_metrics_path".
   @$pb.TagNumber(11)
-  $1734.Value get metadata => $_getN(10);
+  $1735.Value get metadata => $_getN(10);
   @$pb.TagNumber(11)
-  set metadata($1734.Value v) { setField(11, v); }
+  set metadata($1735.Value v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasMetadata() => $_has(10);
   @$pb.TagNumber(11)
   void clearMetadata() => clearField(11);
   @$pb.TagNumber(11)
-  $1734.Value ensureMetadata() => $_ensure(10);
+  $1735.Value ensureMetadata() => $_ensure(10);
 }
 
 

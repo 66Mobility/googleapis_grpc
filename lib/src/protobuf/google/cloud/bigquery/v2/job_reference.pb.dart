@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 
 /// A job reference is a fully qualified identifier for referring to a job.
 class JobReference extends $pb.GeneratedMessage {
   factory JobReference({
     $core.String? projectId,
     $core.String? jobId,
-    $1780.StringValue? location,
+    $1781.StringValue? location,
     $core.Iterable<$core.String>? locationAlternative,
   }) {
     final $result = create();
@@ -45,7 +45,7 @@ class JobReference extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'jobId')
-    ..aOM<$1780.StringValue>(3, _omitFieldNames ? '' : 'location', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(3, _omitFieldNames ? '' : 'location', subBuilder: $1781.StringValue.create)
     ..pPS(5, _omitFieldNames ? '' : 'locationAlternative')
     ..hasRequiredFields = false
   ;
@@ -98,15 +98,15 @@ class JobReference extends $pb.GeneratedMessage {
   ///  For more information about BigQuery locations, see:
   ///  https://cloud.google.com/bigquery/docs/locations
   @$pb.TagNumber(3)
-  $1780.StringValue get location => $_getN(2);
+  $1781.StringValue get location => $_getN(2);
   @$pb.TagNumber(3)
-  set location($1780.StringValue v) { setField(3, v); }
+  set location($1781.StringValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLocation() => $_has(2);
   @$pb.TagNumber(3)
   void clearLocation() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.StringValue ensureLocation() => $_ensure(2);
+  $1781.StringValue ensureLocation() => $_ensure(2);
 
   /// This field should not be used.
   @$pb.TagNumber(5)

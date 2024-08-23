@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/target_frequency_time_unit.pbenum.dart' as $2582;
-import '../enums/target_impression_share_location.pbenum.dart' as $2583;
+import '../enums/target_frequency_time_unit.pbenum.dart' as $2583;
+import '../enums/target_impression_share_location.pbenum.dart' as $2584;
 
 /// Commission is an automatic bidding strategy in which the advertiser pays a
 /// certain portion of the conversion value.
@@ -607,7 +607,7 @@ class TargetCpm extends $pb.GeneratedMessage {
 class TargetCpmTargetFrequencyGoal extends $pb.GeneratedMessage {
   factory TargetCpmTargetFrequencyGoal({
     $fixnum.Int64? targetCount,
-    $2582.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit? timeUnit,
+    $2583.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit? timeUnit,
   }) {
     final $result = create();
     if (targetCount != null) {
@@ -624,7 +624,7 @@ class TargetCpmTargetFrequencyGoal extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetCpmTargetFrequencyGoal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'targetCount')
-    ..e<$2582.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit>(2, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $2582.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.UNSPECIFIED, valueOf: $2582.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.valueOf, enumValues: $2582.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.values)
+    ..e<$2583.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit>(2, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $2583.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.UNSPECIFIED, valueOf: $2583.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.valueOf, enumValues: $2583.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.values)
     ..hasRequiredFields = false
   ;
 
@@ -663,9 +663,9 @@ class TargetCpmTargetFrequencyGoal extends $pb.GeneratedMessage {
   /// Time window expressing the period over which you want to reach
   /// the specified target_count.
   @$pb.TagNumber(2)
-  $2582.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit get timeUnit => $_getN(1);
+  $2583.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit get timeUnit => $_getN(1);
   @$pb.TagNumber(2)
-  set timeUnit($2582.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit v) { setField(2, v); }
+  set timeUnit($2583.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeUnit() => $_has(1);
   @$pb.TagNumber(2)
@@ -677,7 +677,7 @@ class TargetCpmTargetFrequencyGoal extends $pb.GeneratedMessage {
 /// location).
 class TargetImpressionShare extends $pb.GeneratedMessage {
   factory TargetImpressionShare({
-    $2583.TargetImpressionShareLocationEnum_TargetImpressionShareLocation? location,
+    $2584.TargetImpressionShareLocationEnum_TargetImpressionShareLocation? location,
     $fixnum.Int64? locationFractionMicros,
     $fixnum.Int64? cpcBidCeilingMicros,
   }) {
@@ -698,7 +698,7 @@ class TargetImpressionShare extends $pb.GeneratedMessage {
   factory TargetImpressionShare.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetImpressionShare', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2583.TargetImpressionShareLocationEnum_TargetImpressionShareLocation>(1, _omitFieldNames ? '' : 'location', $pb.PbFieldType.OE, defaultOrMaker: $2583.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.UNSPECIFIED, valueOf: $2583.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.valueOf, enumValues: $2583.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.values)
+    ..e<$2584.TargetImpressionShareLocationEnum_TargetImpressionShareLocation>(1, _omitFieldNames ? '' : 'location', $pb.PbFieldType.OE, defaultOrMaker: $2584.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.UNSPECIFIED, valueOf: $2584.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.valueOf, enumValues: $2584.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.values)
     ..aInt64(4, _omitFieldNames ? '' : 'locationFractionMicros')
     ..aInt64(5, _omitFieldNames ? '' : 'cpcBidCeilingMicros')
     ..hasRequiredFields = false
@@ -727,9 +727,9 @@ class TargetImpressionShare extends $pb.GeneratedMessage {
 
   /// The targeted location on the search results page.
   @$pb.TagNumber(1)
-  $2583.TargetImpressionShareLocationEnum_TargetImpressionShareLocation get location => $_getN(0);
+  $2584.TargetImpressionShareLocationEnum_TargetImpressionShareLocation get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($2583.TargetImpressionShareLocationEnum_TargetImpressionShareLocation v) { setField(1, v); }
+  set location($2584.TargetImpressionShareLocationEnum_TargetImpressionShareLocation v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)

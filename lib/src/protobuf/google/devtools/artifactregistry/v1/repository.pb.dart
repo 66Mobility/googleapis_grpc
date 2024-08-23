@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'repository.pbenum.dart';
 
 export 'repository.pbenum.dart';
@@ -113,8 +113,8 @@ class CleanupPolicyCondition extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? tagPrefixes,
     $core.Iterable<$core.String>? versionNamePrefixes,
     $core.Iterable<$core.String>? packageNamePrefixes,
-    $1737.Duration? olderThan,
-    $1737.Duration? newerThan,
+    $1738.Duration? olderThan,
+    $1738.Duration? newerThan,
   }) {
     final $result = create();
     if (tagState != null) {
@@ -146,8 +146,8 @@ class CleanupPolicyCondition extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'tagPrefixes')
     ..pPS(4, _omitFieldNames ? '' : 'versionNamePrefixes')
     ..pPS(5, _omitFieldNames ? '' : 'packageNamePrefixes')
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'olderThan', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'newerThan', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'olderThan', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'newerThan', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -196,27 +196,27 @@ class CleanupPolicyCondition extends $pb.GeneratedMessage {
 
   /// Match versions older than a duration.
   @$pb.TagNumber(6)
-  $1737.Duration get olderThan => $_getN(4);
+  $1738.Duration get olderThan => $_getN(4);
   @$pb.TagNumber(6)
-  set olderThan($1737.Duration v) { setField(6, v); }
+  set olderThan($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOlderThan() => $_has(4);
   @$pb.TagNumber(6)
   void clearOlderThan() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureOlderThan() => $_ensure(4);
+  $1738.Duration ensureOlderThan() => $_ensure(4);
 
   /// Match versions newer than a duration.
   @$pb.TagNumber(7)
-  $1737.Duration get newerThan => $_getN(5);
+  $1738.Duration get newerThan => $_getN(5);
   @$pb.TagNumber(7)
-  set newerThan($1737.Duration v) { setField(7, v); }
+  set newerThan($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasNewerThan() => $_has(5);
   @$pb.TagNumber(7)
   void clearNewerThan() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureNewerThan() => $_ensure(5);
+  $1738.Duration ensureNewerThan() => $_ensure(5);
 }
 
 /// CleanupPolicyMostRecentVersions is an alternate condition of a CleanupPolicy
@@ -1456,8 +1456,8 @@ class Repository extends $pb.GeneratedMessage {
     Repository_Format? format,
     $core.String? description,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? kmsKeyName,
     Repository_MavenRepositoryConfig? mavenConfig,
     Repository_Mode? mode,
@@ -1541,8 +1541,8 @@ class Repository extends $pb.GeneratedMessage {
     ..e<Repository_Format>(2, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE, defaultOrMaker: Repository_Format.FORMAT_UNSPECIFIED, valueOf: Repository_Format.valueOf, enumValues: Repository_Format.values)
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Repository.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.devtools.artifactregistry.v1'))
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOM<Repository_MavenRepositoryConfig>(9, _omitFieldNames ? '' : 'mavenConfig', subBuilder: Repository_MavenRepositoryConfig.create)
     ..e<Repository_Mode>(10, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: Repository_Mode.MODE_UNSPECIFIED, valueOf: Repository_Mode.valueOf, enumValues: Repository_Mode.values)
@@ -1624,27 +1624,27 @@ class Repository extends $pb.GeneratedMessage {
 
   /// Output only. The time when the repository was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The time when the repository was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// The Cloud KMS resource name of the customer managed encryption key that's
   /// used to encrypt the contents of the Repository. Has the form:
@@ -2046,7 +2046,7 @@ class CreateRepositoryRequest extends $pb.GeneratedMessage {
 class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   factory UpdateRepositoryRequest({
     Repository? repository,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (repository != null) {
@@ -2063,7 +2063,7 @@ class UpdateRepositoryRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRepositoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.artifactregistry.v1'), createEmptyInstance: create)
     ..aOM<Repository>(1, _omitFieldNames ? '' : 'repository', subBuilder: Repository.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2104,15 +2104,15 @@ class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   /// see
   /// https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request to delete a repository.

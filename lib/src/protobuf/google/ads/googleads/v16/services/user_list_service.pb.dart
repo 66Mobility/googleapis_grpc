@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/user_list.pb.dart' as $3124;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/user_list.pb.dart' as $3125;
 
 /// Request message for
 /// [UserListService.MutateUserLists][google.ads.googleads.v16.services.UserListService.MutateUserLists].
@@ -123,10 +123,10 @@ enum UserListOperation_Operation {
 /// A single operation (create, update) on a user list.
 class UserListOperation extends $pb.GeneratedMessage {
   factory UserListOperation({
-    $3124.UserList? create_1,
-    $3124.UserList? update,
+    $3125.UserList? create_1,
+    $3125.UserList? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -155,10 +155,10 @@ class UserListOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserListOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3124.UserList>(1, _omitFieldNames ? '' : 'create', subBuilder: $3124.UserList.create)
-    ..aOM<$3124.UserList>(2, _omitFieldNames ? '' : 'update', subBuilder: $3124.UserList.create)
+    ..aOM<$3125.UserList>(1, _omitFieldNames ? '' : 'create', subBuilder: $3125.UserList.create)
+    ..aOM<$3125.UserList>(2, _omitFieldNames ? '' : 'update', subBuilder: $3125.UserList.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -188,28 +188,28 @@ class UserListOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new user list.
   @$pb.TagNumber(1)
-  $3124.UserList get create_1 => $_getN(0);
+  $3125.UserList get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3124.UserList v) { setField(1, v); }
+  set create_1($3125.UserList v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3124.UserList ensureCreate_1() => $_ensure(0);
+  $3125.UserList ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The user list is expected to have a valid resource
   /// name.
   @$pb.TagNumber(2)
-  $3124.UserList get update => $_getN(1);
+  $3125.UserList get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3124.UserList v) { setField(2, v); }
+  set update($3125.UserList v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3124.UserList ensureUpdate() => $_ensure(1);
+  $3125.UserList ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed user list is expected,
   ///  in this format:
@@ -226,22 +226,22 @@ class UserListOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for user list mutate.
 class MutateUserListsResponse extends $pb.GeneratedMessage {
   factory MutateUserListsResponse({
     $core.Iterable<MutateUserListResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -258,7 +258,7 @@ class MutateUserListsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateUserListsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateUserListResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateUserListResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -292,15 +292,15 @@ class MutateUserListsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the user list mutate.

@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import 'tax_rule.pb.dart' as $4874;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import 'tax_rule.pb.dart' as $4876;
 
 /// The tax settings of a merchant account. All methods require the admin role.
 class AccountTax extends $pb.GeneratedMessage {
   factory AccountTax({
     $core.String? name,
     $fixnum.Int64? account,
-    $core.Iterable<$4874.TaxRule>? taxRules,
+    $core.Iterable<$4876.TaxRule>? taxRules,
   }) {
     final $result = create();
     if (name != null) {
@@ -43,7 +43,7 @@ class AccountTax extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountTax', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
-    ..pc<$4874.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM, subBuilder: $4874.TaxRule.create)
+    ..pc<$4876.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM, subBuilder: $4876.TaxRule.create)
     ..hasRequiredFields = false
   ;
 
@@ -94,7 +94,7 @@ class AccountTax extends $pb.GeneratedMessage {
   /// Tax rules. "Define the tax rules in each region.
   /// No tax will be presented if a region has no rule."
   @$pb.TagNumber(3)
-  $core.List<$4874.TaxRule> get taxRules => $_getList(2);
+  $core.List<$4876.TaxRule> get taxRules => $_getList(2);
 }
 
 /// Request to get tax settings
@@ -153,7 +153,7 @@ class GetAccountTaxRequest extends $pb.GeneratedMessage {
 class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
   factory UpdateAccountTaxRequest({
     AccountTax? accountTax,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (accountTax != null) {
@@ -170,7 +170,7 @@ class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountTaxRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<AccountTax>(1, _omitFieldNames ? '' : 'accountTax', subBuilder: AccountTax.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -209,15 +209,15 @@ class UpdateAccountTaxRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to list all sub-account tax settings only for the requesting merchant

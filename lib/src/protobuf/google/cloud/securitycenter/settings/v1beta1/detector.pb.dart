@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'billing_settings.pbenum.dart' as $4610;
+import 'billing_settings.pbenum.dart' as $4612;
 
 ///  Detector is a set of detectors or scanners act as individual checks done
 ///  within a component e.g. bad IP, bad domains, IAM anomaly, cryptomining, open
@@ -27,7 +27,7 @@ class Detector extends $pb.GeneratedMessage {
   factory Detector({
     $core.String? detector,
     $core.String? component,
-    $4610.BillingTier? billingTier,
+    $4612.BillingTier? billingTier,
     $core.Iterable<$core.String>? detectorLabels,
   }) {
     final $result = create();
@@ -52,7 +52,7 @@ class Detector extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Detector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.settings.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'detector')
     ..aOS(2, _omitFieldNames ? '' : 'component')
-    ..e<$4610.BillingTier>(3, _omitFieldNames ? '' : 'billingTier', $pb.PbFieldType.OE, defaultOrMaker: $4610.BillingTier.BILLING_TIER_UNSPECIFIED, valueOf: $4610.BillingTier.valueOf, enumValues: $4610.BillingTier.values)
+    ..e<$4612.BillingTier>(3, _omitFieldNames ? '' : 'billingTier', $pb.PbFieldType.OE, defaultOrMaker: $4612.BillingTier.BILLING_TIER_UNSPECIFIED, valueOf: $4612.BillingTier.valueOf, enumValues: $4612.BillingTier.values)
     ..pPS(4, _omitFieldNames ? '' : 'detectorLabels')
     ..hasRequiredFields = false
   ;
@@ -102,9 +102,9 @@ class Detector extends $pb.GeneratedMessage {
   /// Output only. The billing tier may be different for a detector of the same name in
   /// another component.
   @$pb.TagNumber(3)
-  $4610.BillingTier get billingTier => $_getN(2);
+  $4612.BillingTier get billingTier => $_getN(2);
   @$pb.TagNumber(3)
-  set billingTier($4610.BillingTier v) { setField(3, v); }
+  set billingTier($4612.BillingTier v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBillingTier() => $_has(2);
   @$pb.TagNumber(3)

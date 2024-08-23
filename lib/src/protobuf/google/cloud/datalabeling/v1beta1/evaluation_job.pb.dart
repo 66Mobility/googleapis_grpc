@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'dataset.pb.dart' as $814;
 import 'evaluation.pb.dart' as $817;
 import 'evaluation_job.pbenum.dart';
-import 'human_annotation_config.pb.dart' as $4464;
+import 'human_annotation_config.pb.dart' as $4466;
 
 export 'evaluation_job.pbenum.dart';
 
@@ -37,7 +37,7 @@ class EvaluationJob extends $pb.GeneratedMessage {
     $core.String? annotationSpecSet,
     $core.bool? labelMissingGroundTruth,
     $core.Iterable<Attempt>? attempts,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -86,7 +86,7 @@ class EvaluationJob extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'annotationSpecSet')
     ..aOB(8, _omitFieldNames ? '' : 'labelMissingGroundTruth')
     ..pc<Attempt>(9, _omitFieldNames ? '' : 'attempts', $pb.PbFieldType.PM, subBuilder: Attempt.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -230,15 +230,15 @@ class EvaluationJob extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp of when this evaluation job was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(9);
+  $1776.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCreateTime() => $_ensure(9);
 }
 
 enum EvaluationJobConfig_HumanAnnotationRequestConfig {
@@ -254,10 +254,10 @@ class EvaluationJobConfig extends $pb.GeneratedMessage {
   factory EvaluationJobConfig({
     $814.InputConfig? inputConfig,
     $817.EvaluationConfig? evaluationConfig,
-    $4464.HumanAnnotationConfig? humanAnnotationConfig,
-    $4464.ImageClassificationConfig? imageClassificationConfig,
-    $4464.BoundingPolyConfig? boundingPolyConfig,
-    $4464.TextClassificationConfig? textClassificationConfig,
+    $4466.HumanAnnotationConfig? humanAnnotationConfig,
+    $4466.ImageClassificationConfig? imageClassificationConfig,
+    $4466.BoundingPolyConfig? boundingPolyConfig,
+    $4466.TextClassificationConfig? textClassificationConfig,
     $core.Map<$core.String, $core.String>? bigqueryImportKeys,
     $core.int? exampleCount,
     $core.double? exampleSamplePercentage,
@@ -310,10 +310,10 @@ class EvaluationJobConfig extends $pb.GeneratedMessage {
     ..oo(0, [4, 5, 8])
     ..aOM<$814.InputConfig>(1, _omitFieldNames ? '' : 'inputConfig', subBuilder: $814.InputConfig.create)
     ..aOM<$817.EvaluationConfig>(2, _omitFieldNames ? '' : 'evaluationConfig', subBuilder: $817.EvaluationConfig.create)
-    ..aOM<$4464.HumanAnnotationConfig>(3, _omitFieldNames ? '' : 'humanAnnotationConfig', subBuilder: $4464.HumanAnnotationConfig.create)
-    ..aOM<$4464.ImageClassificationConfig>(4, _omitFieldNames ? '' : 'imageClassificationConfig', subBuilder: $4464.ImageClassificationConfig.create)
-    ..aOM<$4464.BoundingPolyConfig>(5, _omitFieldNames ? '' : 'boundingPolyConfig', subBuilder: $4464.BoundingPolyConfig.create)
-    ..aOM<$4464.TextClassificationConfig>(8, _omitFieldNames ? '' : 'textClassificationConfig', subBuilder: $4464.TextClassificationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(3, _omitFieldNames ? '' : 'humanAnnotationConfig', subBuilder: $4466.HumanAnnotationConfig.create)
+    ..aOM<$4466.ImageClassificationConfig>(4, _omitFieldNames ? '' : 'imageClassificationConfig', subBuilder: $4466.ImageClassificationConfig.create)
+    ..aOM<$4466.BoundingPolyConfig>(5, _omitFieldNames ? '' : 'boundingPolyConfig', subBuilder: $4466.BoundingPolyConfig.create)
+    ..aOM<$4466.TextClassificationConfig>(8, _omitFieldNames ? '' : 'textClassificationConfig', subBuilder: $4466.TextClassificationConfig.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'bigqueryImportKeys', entryClassName: 'EvaluationJobConfig.BigqueryImportKeysEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.datalabeling.v1beta1'))
     ..a<$core.int>(10, _omitFieldNames ? '' : 'exampleCount', $pb.PbFieldType.O3)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'exampleSamplePercentage', $pb.PbFieldType.OD)
@@ -391,15 +391,15 @@ class EvaluationJobConfig extends $pb.GeneratedMessage {
   ///  specify this field. Provide the name of the instruction resource in the
   ///  `instruction` field within this configuration.
   @$pb.TagNumber(3)
-  $4464.HumanAnnotationConfig get humanAnnotationConfig => $_getN(2);
+  $4466.HumanAnnotationConfig get humanAnnotationConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set humanAnnotationConfig($4464.HumanAnnotationConfig v) { setField(3, v); }
+  set humanAnnotationConfig($4466.HumanAnnotationConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasHumanAnnotationConfig() => $_has(2);
   @$pb.TagNumber(3)
   void clearHumanAnnotationConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4464.HumanAnnotationConfig ensureHumanAnnotationConfig() => $_ensure(2);
+  $4466.HumanAnnotationConfig ensureHumanAnnotationConfig() => $_ensure(2);
 
   ///  Specify this field if your model version performs image classification or
   ///  general classification.
@@ -409,15 +409,15 @@ class EvaluationJobConfig extends $pb.GeneratedMessage {
   ///  `allowMultiLabel` in this configuration must match
   ///  `classificationMetadata.isMultiLabel` in [input_config][google.cloud.datalabeling.v1beta1.EvaluationJobConfig.input_config].
   @$pb.TagNumber(4)
-  $4464.ImageClassificationConfig get imageClassificationConfig => $_getN(3);
+  $4466.ImageClassificationConfig get imageClassificationConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set imageClassificationConfig($4464.ImageClassificationConfig v) { setField(4, v); }
+  set imageClassificationConfig($4466.ImageClassificationConfig v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImageClassificationConfig() => $_has(3);
   @$pb.TagNumber(4)
   void clearImageClassificationConfig() => clearField(4);
   @$pb.TagNumber(4)
-  $4464.ImageClassificationConfig ensureImageClassificationConfig() => $_ensure(3);
+  $4466.ImageClassificationConfig ensureImageClassificationConfig() => $_ensure(3);
 
   ///  Specify this field if your model version performs image object detection
   ///  (bounding box detection).
@@ -425,15 +425,15 @@ class EvaluationJobConfig extends $pb.GeneratedMessage {
   ///  `annotationSpecSet` in this configuration must match
   ///  [EvaluationJob.annotationSpecSet][google.cloud.datalabeling.v1beta1.EvaluationJob.annotation_spec_set].
   @$pb.TagNumber(5)
-  $4464.BoundingPolyConfig get boundingPolyConfig => $_getN(4);
+  $4466.BoundingPolyConfig get boundingPolyConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set boundingPolyConfig($4464.BoundingPolyConfig v) { setField(5, v); }
+  set boundingPolyConfig($4466.BoundingPolyConfig v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBoundingPolyConfig() => $_has(4);
   @$pb.TagNumber(5)
   void clearBoundingPolyConfig() => clearField(5);
   @$pb.TagNumber(5)
-  $4464.BoundingPolyConfig ensureBoundingPolyConfig() => $_ensure(4);
+  $4466.BoundingPolyConfig ensureBoundingPolyConfig() => $_ensure(4);
 
   ///  Specify this field if your model version performs text classification.
   ///
@@ -442,15 +442,15 @@ class EvaluationJobConfig extends $pb.GeneratedMessage {
   ///  `allowMultiLabel` in this configuration must match
   ///  `classificationMetadata.isMultiLabel` in [input_config][google.cloud.datalabeling.v1beta1.EvaluationJobConfig.input_config].
   @$pb.TagNumber(8)
-  $4464.TextClassificationConfig get textClassificationConfig => $_getN(5);
+  $4466.TextClassificationConfig get textClassificationConfig => $_getN(5);
   @$pb.TagNumber(8)
-  set textClassificationConfig($4464.TextClassificationConfig v) { setField(8, v); }
+  set textClassificationConfig($4466.TextClassificationConfig v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTextClassificationConfig() => $_has(5);
   @$pb.TagNumber(8)
   void clearTextClassificationConfig() => clearField(8);
   @$pb.TagNumber(8)
-  $4464.TextClassificationConfig ensureTextClassificationConfig() => $_ensure(5);
+  $4466.TextClassificationConfig ensureTextClassificationConfig() => $_ensure(5);
 
   ///  Required. Prediction keys that tell Data Labeling Service where to find the
   ///  data for evaluation in your BigQuery table. When the service samples
@@ -590,8 +590,8 @@ class EvaluationJobAlertConfig extends $pb.GeneratedMessage {
 /// Records a failed evaluation job run.
 class Attempt extends $pb.GeneratedMessage {
   factory Attempt({
-    $1775.Timestamp? attemptTime,
-    $core.Iterable<$1795.Status>? partialFailures,
+    $1776.Timestamp? attemptTime,
+    $core.Iterable<$1796.Status>? partialFailures,
   }) {
     final $result = create();
     if (attemptTime != null) {
@@ -607,8 +607,8 @@ class Attempt extends $pb.GeneratedMessage {
   factory Attempt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Attempt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'attemptTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'attemptTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -634,19 +634,19 @@ class Attempt extends $pb.GeneratedMessage {
   static Attempt? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $1775.Timestamp get attemptTime => $_getN(0);
+  $1776.Timestamp get attemptTime => $_getN(0);
   @$pb.TagNumber(1)
-  set attemptTime($1775.Timestamp v) { setField(1, v); }
+  set attemptTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAttemptTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearAttemptTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureAttemptTime() => $_ensure(0);
+  $1776.Timestamp ensureAttemptTime() => $_ensure(0);
 
   /// Details of errors that occurred.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get partialFailures => $_getList(1);
+  $core.List<$1796.Status> get partialFailures => $_getList(1);
 }
 
 

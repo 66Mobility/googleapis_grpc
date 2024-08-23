@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'config_common.pb.dart' as $4584;
-import 'config_common.pbenum.dart' as $4584;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'config_common.pb.dart' as $4586;
+import 'config_common.pbenum.dart' as $4586;
 
 /// Compliance data for an OS policy
 class InstanceOSPoliciesCompliance_OSPolicyCompliance extends $pb.GeneratedMessage {
   factory InstanceOSPoliciesCompliance_OSPolicyCompliance({
     $core.String? osPolicyId,
     $core.String? osPolicyAssignment,
-    $4584.OSPolicyComplianceState? state,
-    $core.Iterable<$4584.OSPolicyResourceCompliance>? osPolicyResourceCompliances,
+    $4586.OSPolicyComplianceState? state,
+    $core.Iterable<$4586.OSPolicyResourceCompliance>? osPolicyResourceCompliances,
   }) {
     final $result = create();
     if (osPolicyId != null) {
@@ -47,8 +47,8 @@ class InstanceOSPoliciesCompliance_OSPolicyCompliance extends $pb.GeneratedMessa
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InstanceOSPoliciesCompliance.OSPolicyCompliance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'osPolicyId')
     ..aOS(2, _omitFieldNames ? '' : 'osPolicyAssignment')
-    ..e<$4584.OSPolicyComplianceState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4584.OSPolicyComplianceState.OS_POLICY_COMPLIANCE_STATE_UNSPECIFIED, valueOf: $4584.OSPolicyComplianceState.valueOf, enumValues: $4584.OSPolicyComplianceState.values)
-    ..pc<$4584.OSPolicyResourceCompliance>(5, _omitFieldNames ? '' : 'osPolicyResourceCompliances', $pb.PbFieldType.PM, subBuilder: $4584.OSPolicyResourceCompliance.create)
+    ..e<$4586.OSPolicyComplianceState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4586.OSPolicyComplianceState.OS_POLICY_COMPLIANCE_STATE_UNSPECIFIED, valueOf: $4586.OSPolicyComplianceState.valueOf, enumValues: $4586.OSPolicyComplianceState.values)
+    ..pc<$4586.OSPolicyResourceCompliance>(5, _omitFieldNames ? '' : 'osPolicyResourceCompliances', $pb.PbFieldType.PM, subBuilder: $4586.OSPolicyResourceCompliance.create)
     ..hasRequiredFields = false
   ;
 
@@ -99,9 +99,9 @@ class InstanceOSPoliciesCompliance_OSPolicyCompliance extends $pb.GeneratedMessa
 
   /// Compliance state of the OS policy.
   @$pb.TagNumber(4)
-  $4584.OSPolicyComplianceState get state => $_getN(2);
+  $4586.OSPolicyComplianceState get state => $_getN(2);
   @$pb.TagNumber(4)
-  set state($4584.OSPolicyComplianceState v) { setField(4, v); }
+  set state($4586.OSPolicyComplianceState v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(4)
@@ -110,7 +110,7 @@ class InstanceOSPoliciesCompliance_OSPolicyCompliance extends $pb.GeneratedMessa
   /// Compliance data for each `OSPolicyResource` that is applied to the
   /// VM.
   @$pb.TagNumber(5)
-  $core.List<$4584.OSPolicyResourceCompliance> get osPolicyResourceCompliances => $_getList(3);
+  $core.List<$4586.OSPolicyResourceCompliance> get osPolicyResourceCompliances => $_getList(3);
 }
 
 ///  This API resource represents the OS policies compliance data for a Compute
@@ -129,11 +129,11 @@ class InstanceOSPoliciesCompliance extends $pb.GeneratedMessage {
   factory InstanceOSPoliciesCompliance({
     $core.String? name,
     $core.String? instance,
-    $4584.OSPolicyComplianceState? state,
+    $4586.OSPolicyComplianceState? state,
     $core.String? detailedState,
     $core.String? detailedStateReason,
     $core.Iterable<InstanceOSPoliciesCompliance_OSPolicyCompliance>? osPolicyCompliances,
-    $1775.Timestamp? lastComplianceCheckTime,
+    $1776.Timestamp? lastComplianceCheckTime,
     $core.String? lastComplianceRunId,
   }) {
     final $result = create();
@@ -170,11 +170,11 @@ class InstanceOSPoliciesCompliance extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InstanceOSPoliciesCompliance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'instance')
-    ..e<$4584.OSPolicyComplianceState>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4584.OSPolicyComplianceState.OS_POLICY_COMPLIANCE_STATE_UNSPECIFIED, valueOf: $4584.OSPolicyComplianceState.valueOf, enumValues: $4584.OSPolicyComplianceState.values)
+    ..e<$4586.OSPolicyComplianceState>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4586.OSPolicyComplianceState.OS_POLICY_COMPLIANCE_STATE_UNSPECIFIED, valueOf: $4586.OSPolicyComplianceState.valueOf, enumValues: $4586.OSPolicyComplianceState.values)
     ..aOS(4, _omitFieldNames ? '' : 'detailedState')
     ..aOS(5, _omitFieldNames ? '' : 'detailedStateReason')
     ..pc<InstanceOSPoliciesCompliance_OSPolicyCompliance>(6, _omitFieldNames ? '' : 'osPolicyCompliances', $pb.PbFieldType.PM, subBuilder: InstanceOSPoliciesCompliance_OSPolicyCompliance.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'lastComplianceCheckTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'lastComplianceCheckTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'lastComplianceRunId')
     ..hasRequiredFields = false
   ;
@@ -225,9 +225,9 @@ class InstanceOSPoliciesCompliance extends $pb.GeneratedMessage {
 
   /// Output only. Compliance state of the VM.
   @$pb.TagNumber(3)
-  $4584.OSPolicyComplianceState get state => $_getN(2);
+  $4586.OSPolicyComplianceState get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state($4584.OSPolicyComplianceState v) { setField(3, v); }
+  set state($4586.OSPolicyComplianceState v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
@@ -272,15 +272,15 @@ class InstanceOSPoliciesCompliance extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp of the last compliance check for the VM.
   @$pb.TagNumber(7)
-  $1775.Timestamp get lastComplianceCheckTime => $_getN(6);
+  $1776.Timestamp get lastComplianceCheckTime => $_getN(6);
   @$pb.TagNumber(7)
-  set lastComplianceCheckTime($1775.Timestamp v) { setField(7, v); }
+  set lastComplianceCheckTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLastComplianceCheckTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearLastComplianceCheckTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureLastComplianceCheckTime() => $_ensure(6);
+  $1776.Timestamp ensureLastComplianceCheckTime() => $_ensure(6);
 
   /// Output only. Unique identifier for the last compliance run.
   /// This id will be logged by the OS config agent during a compliance run and

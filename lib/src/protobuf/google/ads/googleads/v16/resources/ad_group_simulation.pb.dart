@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/simulation.pb.dart' as $2837;
-import '../enums/simulation_modification_method.pbenum.dart' as $2839;
-import '../enums/simulation_type.pbenum.dart' as $2838;
+import '../common/simulation.pb.dart' as $2838;
+import '../enums/simulation_modification_method.pbenum.dart' as $2840;
+import '../enums/simulation_type.pbenum.dart' as $2839;
 
 enum AdGroupSimulation_PointList {
   cpcBidPointList, 
@@ -40,12 +40,12 @@ enum AdGroupSimulation_PointList {
 class AdGroupSimulation extends $pb.GeneratedMessage {
   factory AdGroupSimulation({
     $core.String? resourceName,
-    $2838.SimulationTypeEnum_SimulationType? type,
-    $2839.SimulationModificationMethodEnum_SimulationModificationMethod? modificationMethod,
-    $2837.CpcBidSimulationPointList? cpcBidPointList,
-    $2837.TargetCpaSimulationPointList? targetCpaPointList,
-    $2837.CpvBidSimulationPointList? cpvBidPointList,
-    $2837.TargetRoasSimulationPointList? targetRoasPointList,
+    $2839.SimulationTypeEnum_SimulationType? type,
+    $2840.SimulationModificationMethodEnum_SimulationModificationMethod? modificationMethod,
+    $2838.CpcBidSimulationPointList? cpcBidPointList,
+    $2838.TargetCpaSimulationPointList? targetCpaPointList,
+    $2838.CpvBidSimulationPointList? cpvBidPointList,
+    $2838.TargetRoasSimulationPointList? targetRoasPointList,
     $fixnum.Int64? adGroupId,
     $core.String? startDate,
     $core.String? endDate,
@@ -97,12 +97,12 @@ class AdGroupSimulation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupSimulation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..oo(0, [8, 9, 10, 11])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2838.SimulationTypeEnum_SimulationType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2838.SimulationTypeEnum_SimulationType.UNSPECIFIED, valueOf: $2838.SimulationTypeEnum_SimulationType.valueOf, enumValues: $2838.SimulationTypeEnum_SimulationType.values)
-    ..e<$2839.SimulationModificationMethodEnum_SimulationModificationMethod>(4, _omitFieldNames ? '' : 'modificationMethod', $pb.PbFieldType.OE, defaultOrMaker: $2839.SimulationModificationMethodEnum_SimulationModificationMethod.UNSPECIFIED, valueOf: $2839.SimulationModificationMethodEnum_SimulationModificationMethod.valueOf, enumValues: $2839.SimulationModificationMethodEnum_SimulationModificationMethod.values)
-    ..aOM<$2837.CpcBidSimulationPointList>(8, _omitFieldNames ? '' : 'cpcBidPointList', subBuilder: $2837.CpcBidSimulationPointList.create)
-    ..aOM<$2837.TargetCpaSimulationPointList>(9, _omitFieldNames ? '' : 'targetCpaPointList', subBuilder: $2837.TargetCpaSimulationPointList.create)
-    ..aOM<$2837.CpvBidSimulationPointList>(10, _omitFieldNames ? '' : 'cpvBidPointList', subBuilder: $2837.CpvBidSimulationPointList.create)
-    ..aOM<$2837.TargetRoasSimulationPointList>(11, _omitFieldNames ? '' : 'targetRoasPointList', subBuilder: $2837.TargetRoasSimulationPointList.create)
+    ..e<$2839.SimulationTypeEnum_SimulationType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2839.SimulationTypeEnum_SimulationType.UNSPECIFIED, valueOf: $2839.SimulationTypeEnum_SimulationType.valueOf, enumValues: $2839.SimulationTypeEnum_SimulationType.values)
+    ..e<$2840.SimulationModificationMethodEnum_SimulationModificationMethod>(4, _omitFieldNames ? '' : 'modificationMethod', $pb.PbFieldType.OE, defaultOrMaker: $2840.SimulationModificationMethodEnum_SimulationModificationMethod.UNSPECIFIED, valueOf: $2840.SimulationModificationMethodEnum_SimulationModificationMethod.valueOf, enumValues: $2840.SimulationModificationMethodEnum_SimulationModificationMethod.values)
+    ..aOM<$2838.CpcBidSimulationPointList>(8, _omitFieldNames ? '' : 'cpcBidPointList', subBuilder: $2838.CpcBidSimulationPointList.create)
+    ..aOM<$2838.TargetCpaSimulationPointList>(9, _omitFieldNames ? '' : 'targetCpaPointList', subBuilder: $2838.TargetCpaSimulationPointList.create)
+    ..aOM<$2838.CpvBidSimulationPointList>(10, _omitFieldNames ? '' : 'cpvBidPointList', subBuilder: $2838.CpvBidSimulationPointList.create)
+    ..aOM<$2838.TargetRoasSimulationPointList>(11, _omitFieldNames ? '' : 'targetRoasPointList', subBuilder: $2838.TargetRoasSimulationPointList.create)
     ..aInt64(12, _omitFieldNames ? '' : 'adGroupId')
     ..aOS(13, _omitFieldNames ? '' : 'startDate')
     ..aOS(14, _omitFieldNames ? '' : 'endDate')
@@ -148,9 +148,9 @@ class AdGroupSimulation extends $pb.GeneratedMessage {
 
   /// Output only. The field that the simulation modifies.
   @$pb.TagNumber(3)
-  $2838.SimulationTypeEnum_SimulationType get type => $_getN(1);
+  $2839.SimulationTypeEnum_SimulationType get type => $_getN(1);
   @$pb.TagNumber(3)
-  set type($2838.SimulationTypeEnum_SimulationType v) { setField(3, v); }
+  set type($2839.SimulationTypeEnum_SimulationType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(3)
@@ -158,9 +158,9 @@ class AdGroupSimulation extends $pb.GeneratedMessage {
 
   /// Output only. How the simulation modifies the field.
   @$pb.TagNumber(4)
-  $2839.SimulationModificationMethodEnum_SimulationModificationMethod get modificationMethod => $_getN(2);
+  $2840.SimulationModificationMethodEnum_SimulationModificationMethod get modificationMethod => $_getN(2);
   @$pb.TagNumber(4)
-  set modificationMethod($2839.SimulationModificationMethodEnum_SimulationModificationMethod v) { setField(4, v); }
+  set modificationMethod($2840.SimulationModificationMethodEnum_SimulationModificationMethod v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasModificationMethod() => $_has(2);
   @$pb.TagNumber(4)
@@ -168,51 +168,51 @@ class AdGroupSimulation extends $pb.GeneratedMessage {
 
   /// Output only. Simulation points if the simulation type is CPC_BID.
   @$pb.TagNumber(8)
-  $2837.CpcBidSimulationPointList get cpcBidPointList => $_getN(3);
+  $2838.CpcBidSimulationPointList get cpcBidPointList => $_getN(3);
   @$pb.TagNumber(8)
-  set cpcBidPointList($2837.CpcBidSimulationPointList v) { setField(8, v); }
+  set cpcBidPointList($2838.CpcBidSimulationPointList v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCpcBidPointList() => $_has(3);
   @$pb.TagNumber(8)
   void clearCpcBidPointList() => clearField(8);
   @$pb.TagNumber(8)
-  $2837.CpcBidSimulationPointList ensureCpcBidPointList() => $_ensure(3);
+  $2838.CpcBidSimulationPointList ensureCpcBidPointList() => $_ensure(3);
 
   /// Output only. Simulation points if the simulation type is TARGET_CPA.
   @$pb.TagNumber(9)
-  $2837.TargetCpaSimulationPointList get targetCpaPointList => $_getN(4);
+  $2838.TargetCpaSimulationPointList get targetCpaPointList => $_getN(4);
   @$pb.TagNumber(9)
-  set targetCpaPointList($2837.TargetCpaSimulationPointList v) { setField(9, v); }
+  set targetCpaPointList($2838.TargetCpaSimulationPointList v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTargetCpaPointList() => $_has(4);
   @$pb.TagNumber(9)
   void clearTargetCpaPointList() => clearField(9);
   @$pb.TagNumber(9)
-  $2837.TargetCpaSimulationPointList ensureTargetCpaPointList() => $_ensure(4);
+  $2838.TargetCpaSimulationPointList ensureTargetCpaPointList() => $_ensure(4);
 
   /// Output only. Simulation points if the simulation type is CPV_BID.
   @$pb.TagNumber(10)
-  $2837.CpvBidSimulationPointList get cpvBidPointList => $_getN(5);
+  $2838.CpvBidSimulationPointList get cpvBidPointList => $_getN(5);
   @$pb.TagNumber(10)
-  set cpvBidPointList($2837.CpvBidSimulationPointList v) { setField(10, v); }
+  set cpvBidPointList($2838.CpvBidSimulationPointList v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCpvBidPointList() => $_has(5);
   @$pb.TagNumber(10)
   void clearCpvBidPointList() => clearField(10);
   @$pb.TagNumber(10)
-  $2837.CpvBidSimulationPointList ensureCpvBidPointList() => $_ensure(5);
+  $2838.CpvBidSimulationPointList ensureCpvBidPointList() => $_ensure(5);
 
   /// Output only. Simulation points if the simulation type is TARGET_ROAS.
   @$pb.TagNumber(11)
-  $2837.TargetRoasSimulationPointList get targetRoasPointList => $_getN(6);
+  $2838.TargetRoasSimulationPointList get targetRoasPointList => $_getN(6);
   @$pb.TagNumber(11)
-  set targetRoasPointList($2837.TargetRoasSimulationPointList v) { setField(11, v); }
+  set targetRoasPointList($2838.TargetRoasSimulationPointList v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTargetRoasPointList() => $_has(6);
   @$pb.TagNumber(11)
   void clearTargetRoasPointList() => clearField(11);
   @$pb.TagNumber(11)
-  $2837.TargetRoasSimulationPointList ensureTargetRoasPointList() => $_ensure(6);
+  $2838.TargetRoasSimulationPointList ensureTargetRoasPointList() => $_ensure(6);
 
   /// Output only. Ad group id of the simulation.
   @$pb.TagNumber(12)

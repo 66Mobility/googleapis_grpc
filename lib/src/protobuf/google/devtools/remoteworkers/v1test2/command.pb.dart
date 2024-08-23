@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// An environment variable required by this task.
 class CommandTask_Inputs_EnvironmentVariable extends $pb.GeneratedMessage {
@@ -296,9 +296,9 @@ class CommandTask_Outputs extends $pb.GeneratedMessage {
 /// Describes the timeouts associated with this task.
 class CommandTask_Timeouts extends $pb.GeneratedMessage {
   factory CommandTask_Timeouts({
-    $1737.Duration? execution,
-    $1737.Duration? idle,
-    $1737.Duration? shutdown,
+    $1738.Duration? execution,
+    $1738.Duration? idle,
+    $1738.Duration? shutdown,
   }) {
     final $result = create();
     if (execution != null) {
@@ -317,9 +317,9 @@ class CommandTask_Timeouts extends $pb.GeneratedMessage {
   factory CommandTask_Timeouts.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommandTask.Timeouts', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.remoteworkers.v1test2'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'execution', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'idle', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'shutdown', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'execution', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'idle', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'shutdown', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -348,30 +348,30 @@ class CommandTask_Timeouts extends $pb.GeneratedMessage {
   /// time required to download inputs or upload outputs. That is, the worker
   /// will terminate the task if it runs longer than this.
   @$pb.TagNumber(1)
-  $1737.Duration get execution => $_getN(0);
+  $1738.Duration get execution => $_getN(0);
   @$pb.TagNumber(1)
-  set execution($1737.Duration v) { setField(1, v); }
+  set execution($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasExecution() => $_has(0);
   @$pb.TagNumber(1)
   void clearExecution() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureExecution() => $_ensure(0);
+  $1738.Duration ensureExecution() => $_ensure(0);
 
   /// This specifies the maximum amount of time the task can be idle - that is,
   /// go without generating some output in either stdout or stderr. If the
   /// process is silent for more than the specified time, the worker will
   /// terminate the task.
   @$pb.TagNumber(2)
-  $1737.Duration get idle => $_getN(1);
+  $1738.Duration get idle => $_getN(1);
   @$pb.TagNumber(2)
-  set idle($1737.Duration v) { setField(2, v); }
+  set idle($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIdle() => $_has(1);
   @$pb.TagNumber(2)
   void clearIdle() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureIdle() => $_ensure(1);
+  $1738.Duration ensureIdle() => $_ensure(1);
 
   /// If the execution or IO timeouts are exceeded, the worker will try to
   /// gracefully terminate the task and return any existing logs. However,
@@ -380,15 +380,15 @@ class CommandTask_Timeouts extends $pb.GeneratedMessage {
   /// gracefully (e.g. via SIGTERM) before we bring down the hammer (e.g.
   /// SIGKILL on *nix, CTRL_BREAK_EVENT on Windows).
   @$pb.TagNumber(3)
-  $1737.Duration get shutdown => $_getN(2);
+  $1738.Duration get shutdown => $_getN(2);
   @$pb.TagNumber(3)
-  set shutdown($1737.Duration v) { setField(3, v); }
+  set shutdown($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasShutdown() => $_has(2);
   @$pb.TagNumber(3)
   void clearShutdown() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureShutdown() => $_ensure(2);
+  $1738.Duration ensureShutdown() => $_ensure(2);
 }
 
 /// Describes a shell-style task to execute, suitable for providing as the Bots
@@ -561,8 +561,8 @@ class CommandOutputs extends $pb.GeneratedMessage {
 /// sophisticated message.
 class CommandOverhead extends $pb.GeneratedMessage {
   factory CommandOverhead({
-    $1737.Duration? duration,
-    $1737.Duration? overhead,
+    $1738.Duration? duration,
+    $1738.Duration? overhead,
   }) {
     final $result = create();
     if (duration != null) {
@@ -578,8 +578,8 @@ class CommandOverhead extends $pb.GeneratedMessage {
   factory CommandOverhead.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommandOverhead', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.remoteworkers.v1test2'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'overhead', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'overhead', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -608,42 +608,42 @@ class CommandOverhead extends $pb.GeneratedMessage {
   /// have its own idea of what this should be, but this excludes the overhead of
   /// the RPCs and the bot response time.
   @$pb.TagNumber(1)
-  $1737.Duration get duration => $_getN(0);
+  $1738.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($1737.Duration v) { setField(1, v); }
+  set duration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDuration() => $_ensure(0);
+  $1738.Duration ensureDuration() => $_ensure(0);
 
   /// The amount of time *not* spent executing the command (ie
   /// uploading/downloading files).
   @$pb.TagNumber(2)
-  $1737.Duration get overhead => $_getN(1);
+  $1738.Duration get overhead => $_getN(1);
   @$pb.TagNumber(2)
-  set overhead($1737.Duration v) { setField(2, v); }
+  set overhead($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOverhead() => $_has(1);
   @$pb.TagNumber(2)
   void clearOverhead() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureOverhead() => $_ensure(1);
+  $1738.Duration ensureOverhead() => $_ensure(1);
 }
 
 /// All information about the execution of a command, suitable for providing as
 /// the Bots interface's `Lease.result` field.
 class CommandResult extends $pb.GeneratedMessage {
   factory CommandResult({
-    $1795.Status? status,
+    $1796.Status? status,
     $core.int? exitCode,
     Digest? outputs,
   @$core.Deprecated('This field is deprecated.')
-    $1737.Duration? duration,
+    $1738.Duration? duration,
   @$core.Deprecated('This field is deprecated.')
-    $1737.Duration? overhead,
-    $core.Iterable<$1794.Any>? metadata,
+    $1738.Duration? overhead,
+    $core.Iterable<$1795.Any>? metadata,
   }) {
     final $result = create();
     if (status != null) {
@@ -673,12 +673,12 @@ class CommandResult extends $pb.GeneratedMessage {
   factory CommandResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommandResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.remoteworkers.v1test2'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'exitCode', $pb.PbFieldType.O3)
     ..aOM<Digest>(3, _omitFieldNames ? '' : 'outputs', subBuilder: Digest.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'overhead', subBuilder: $1737.Duration.create)
-    ..pc<$1794.Any>(6, _omitFieldNames ? '' : 'metadata', $pb.PbFieldType.PM, subBuilder: $1794.Any.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'overhead', subBuilder: $1738.Duration.create)
+    ..pc<$1795.Any>(6, _omitFieldNames ? '' : 'metadata', $pb.PbFieldType.PM, subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -707,15 +707,15 @@ class CommandResult extends $pb.GeneratedMessage {
   /// this might have a code of DEADLINE_EXCEEDED; if it was killed by the OS for
   /// memory exhaustion, it might have a code of RESOURCE_EXHAUSTED.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// The exit code of the process. An exit code of "0" should only be trusted if
   /// `status` has a code of OK (otherwise it may simply be unset).
@@ -748,10 +748,10 @@ class CommandResult extends $pb.GeneratedMessage {
   /// the RPCs and the bot response time.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  $1737.Duration get duration => $_getN(3);
+  $1738.Duration get duration => $_getN(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  set duration($1737.Duration v) { setField(4, v); }
+  set duration($1738.Duration v) { setField(4, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasDuration() => $_has(3);
@@ -760,16 +760,16 @@ class CommandResult extends $pb.GeneratedMessage {
   void clearDuration() => clearField(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  $1737.Duration ensureDuration() => $_ensure(3);
+  $1738.Duration ensureDuration() => $_ensure(3);
 
   /// The amount of time *not* spent executing the command (ie
   /// uploading/downloading files).
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $1737.Duration get overhead => $_getN(4);
+  $1738.Duration get overhead => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set overhead($1737.Duration v) { setField(5, v); }
+  set overhead($1738.Duration v) { setField(5, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasOverhead() => $_has(4);
@@ -778,7 +778,7 @@ class CommandResult extends $pb.GeneratedMessage {
   void clearOverhead() => clearField(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $1737.Duration ensureOverhead() => $_ensure(4);
+  $1738.Duration ensureOverhead() => $_ensure(4);
 
   /// Implementation-dependent metadata about the task. Both servers and bots
   /// may define messages which can be encoded here; bots are free to provide
@@ -787,7 +787,7 @@ class CommandResult extends $pb.GeneratedMessage {
   /// considered an error for the bot to provide the server with a field that it
   /// doesn't know about.
   @$pb.TagNumber(6)
-  $core.List<$1794.Any> get metadata => $_getList(5);
+  $core.List<$1795.Any> get metadata => $_getList(5);
 }
 
 /// The metadata for a file. Similar to the equivalent message in the Remote

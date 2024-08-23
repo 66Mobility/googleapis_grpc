@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/feed_item_set_filter_type_infos.pb.dart' as $2982;
-import '../enums/feed_item_set_status.pbenum.dart' as $2983;
+import '../common/feed_item_set_filter_type_infos.pb.dart' as $2983;
+import '../enums/feed_item_set_status.pbenum.dart' as $2984;
 
 enum FeedItemSet_DynamicSetFilter {
   dynamicLocationSetFilter, 
@@ -32,9 +32,9 @@ class FeedItemSet extends $pb.GeneratedMessage {
     $core.String? feed,
     $fixnum.Int64? feedItemSetId,
     $core.String? displayName,
-    $2982.DynamicLocationSetFilter? dynamicLocationSetFilter,
-    $2982.DynamicAffiliateLocationSetFilter? dynamicAffiliateLocationSetFilter,
-    $2983.FeedItemSetStatusEnum_FeedItemSetStatus? status,
+    $2983.DynamicLocationSetFilter? dynamicLocationSetFilter,
+    $2983.DynamicAffiliateLocationSetFilter? dynamicAffiliateLocationSetFilter,
+    $2984.FeedItemSetStatusEnum_FeedItemSetStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -75,9 +75,9 @@ class FeedItemSet extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'feed')
     ..aInt64(3, _omitFieldNames ? '' : 'feedItemSetId')
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$2982.DynamicLocationSetFilter>(5, _omitFieldNames ? '' : 'dynamicLocationSetFilter', subBuilder: $2982.DynamicLocationSetFilter.create)
-    ..aOM<$2982.DynamicAffiliateLocationSetFilter>(6, _omitFieldNames ? '' : 'dynamicAffiliateLocationSetFilter', subBuilder: $2982.DynamicAffiliateLocationSetFilter.create)
-    ..e<$2983.FeedItemSetStatusEnum_FeedItemSetStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2983.FeedItemSetStatusEnum_FeedItemSetStatus.UNSPECIFIED, valueOf: $2983.FeedItemSetStatusEnum_FeedItemSetStatus.valueOf, enumValues: $2983.FeedItemSetStatusEnum_FeedItemSetStatus.values)
+    ..aOM<$2983.DynamicLocationSetFilter>(5, _omitFieldNames ? '' : 'dynamicLocationSetFilter', subBuilder: $2983.DynamicLocationSetFilter.create)
+    ..aOM<$2983.DynamicAffiliateLocationSetFilter>(6, _omitFieldNames ? '' : 'dynamicAffiliateLocationSetFilter', subBuilder: $2983.DynamicAffiliateLocationSetFilter.create)
+    ..e<$2984.FeedItemSetStatusEnum_FeedItemSetStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2984.FeedItemSetStatusEnum_FeedItemSetStatus.UNSPECIFIED, valueOf: $2984.FeedItemSetStatusEnum_FeedItemSetStatus.valueOf, enumValues: $2984.FeedItemSetStatusEnum_FeedItemSetStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -151,36 +151,36 @@ class FeedItemSet extends $pb.GeneratedMessage {
   /// Filter for dynamic location set.
   /// It is only used for sets of locations.
   @$pb.TagNumber(5)
-  $2982.DynamicLocationSetFilter get dynamicLocationSetFilter => $_getN(4);
+  $2983.DynamicLocationSetFilter get dynamicLocationSetFilter => $_getN(4);
   @$pb.TagNumber(5)
-  set dynamicLocationSetFilter($2982.DynamicLocationSetFilter v) { setField(5, v); }
+  set dynamicLocationSetFilter($2983.DynamicLocationSetFilter v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDynamicLocationSetFilter() => $_has(4);
   @$pb.TagNumber(5)
   void clearDynamicLocationSetFilter() => clearField(5);
   @$pb.TagNumber(5)
-  $2982.DynamicLocationSetFilter ensureDynamicLocationSetFilter() => $_ensure(4);
+  $2983.DynamicLocationSetFilter ensureDynamicLocationSetFilter() => $_ensure(4);
 
   /// Filter for dynamic affiliate location set.
   /// This field doesn't apply generally to feed item sets. It is only used for
   /// sets of affiliate locations.
   @$pb.TagNumber(6)
-  $2982.DynamicAffiliateLocationSetFilter get dynamicAffiliateLocationSetFilter => $_getN(5);
+  $2983.DynamicAffiliateLocationSetFilter get dynamicAffiliateLocationSetFilter => $_getN(5);
   @$pb.TagNumber(6)
-  set dynamicAffiliateLocationSetFilter($2982.DynamicAffiliateLocationSetFilter v) { setField(6, v); }
+  set dynamicAffiliateLocationSetFilter($2983.DynamicAffiliateLocationSetFilter v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDynamicAffiliateLocationSetFilter() => $_has(5);
   @$pb.TagNumber(6)
   void clearDynamicAffiliateLocationSetFilter() => clearField(6);
   @$pb.TagNumber(6)
-  $2982.DynamicAffiliateLocationSetFilter ensureDynamicAffiliateLocationSetFilter() => $_ensure(5);
+  $2983.DynamicAffiliateLocationSetFilter ensureDynamicAffiliateLocationSetFilter() => $_ensure(5);
 
   /// Output only. Status of the feed item set.
   /// This field is read-only.
   @$pb.TagNumber(8)
-  $2983.FeedItemSetStatusEnum_FeedItemSetStatus get status => $_getN(6);
+  $2984.FeedItemSetStatusEnum_FeedItemSetStatus get status => $_getN(6);
   @$pb.TagNumber(8)
-  set status($2983.FeedItemSetStatusEnum_FeedItemSetStatus v) { setField(8, v); }
+  set status($2984.FeedItemSetStatusEnum_FeedItemSetStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStatus() => $_has(6);
   @$pb.TagNumber(8)

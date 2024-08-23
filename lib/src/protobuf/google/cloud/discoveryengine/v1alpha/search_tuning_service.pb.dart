@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'custom_tuning_model.pb.dart' as $4507;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'custom_tuning_model.pb.dart' as $4509;
 import 'import_config.pb.dart' as $955;
 
 /// Request message for
@@ -80,7 +80,7 @@ class ListCustomModelsRequest extends $pb.GeneratedMessage {
 /// method.
 class ListCustomModelsResponse extends $pb.GeneratedMessage {
   factory ListCustomModelsResponse({
-    $core.Iterable<$4507.CustomTuningModel>? models,
+    $core.Iterable<$4509.CustomTuningModel>? models,
   }) {
     final $result = create();
     if (models != null) {
@@ -93,7 +93,7 @@ class ListCustomModelsResponse extends $pb.GeneratedMessage {
   factory ListCustomModelsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCustomModelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..pc<$4507.CustomTuningModel>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM, subBuilder: $4507.CustomTuningModel.create)
+    ..pc<$4509.CustomTuningModel>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM, subBuilder: $4509.CustomTuningModel.create)
     ..hasRequiredFields = false
   ;
 
@@ -120,7 +120,7 @@ class ListCustomModelsResponse extends $pb.GeneratedMessage {
 
   /// List of custom tuning models.
   @$pb.TagNumber(1)
-  $core.List<$4507.CustomTuningModel> get models => $_getList(0);
+  $core.List<$4509.CustomTuningModel> get models => $_getList(0);
 }
 
 /// Cloud Storage training data input.
@@ -382,7 +382,7 @@ class TrainCustomModelRequest extends $pb.GeneratedMessage {
 /// This message is returned by the google.longrunning.Operations.response field.
 class TrainCustomModelResponse extends $pb.GeneratedMessage {
   factory TrainCustomModelResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     $955.ImportErrorConfig? errorConfig,
     $core.String? modelStatus,
     $core.Map<$core.String, $core.double>? metrics,
@@ -411,7 +411,7 @@ class TrainCustomModelResponse extends $pb.GeneratedMessage {
   factory TrainCustomModelResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrainCustomModelResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<$955.ImportErrorConfig>(2, _omitFieldNames ? '' : 'errorConfig', subBuilder: $955.ImportErrorConfig.create)
     ..aOS(3, _omitFieldNames ? '' : 'modelStatus')
     ..m<$core.String, $core.double>(4, _omitFieldNames ? '' : 'metrics', entryClassName: 'TrainCustomModelResponse.MetricsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
@@ -442,7 +442,7 @@ class TrainCustomModelResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the data.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Echoes the destination for the complete errors in the request if set.
   @$pb.TagNumber(2)
@@ -493,8 +493,8 @@ class TrainCustomModelResponse extends $pb.GeneratedMessage {
 /// returned by the google.longrunning.Operation.metadata field.
 class TrainCustomModelMetadata extends $pb.GeneratedMessage {
   factory TrainCustomModelMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -510,8 +510,8 @@ class TrainCustomModelMetadata extends $pb.GeneratedMessage {
   factory TrainCustomModelMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrainCustomModelMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -538,28 +538,28 @@ class TrainCustomModelMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 

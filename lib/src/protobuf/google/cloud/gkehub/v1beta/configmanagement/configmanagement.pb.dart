@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'configmanagement.pbenum.dart';
 
 export 'configmanagement.pbenum.dart';
@@ -1475,7 +1475,7 @@ class SyncState extends $pb.GeneratedMessage {
     $core.String? lastSync,
     SyncState_SyncCode? code,
     $core.Iterable<SyncError>? errors,
-    $1775.Timestamp? lastSyncTime,
+    $1776.Timestamp? lastSyncTime,
   }) {
     final $result = create();
     if (sourceToken != null) {
@@ -1513,7 +1513,7 @@ class SyncState extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'lastSync')
     ..e<SyncState_SyncCode>(5, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: SyncState_SyncCode.SYNC_CODE_UNSPECIFIED, valueOf: SyncState_SyncCode.valueOf, enumValues: SyncState_SyncCode.values)
     ..pc<SyncError>(6, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: SyncError.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'lastSyncTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'lastSyncTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1602,15 +1602,15 @@ class SyncState extends $pb.GeneratedMessage {
 
   /// Timestamp type of when ACM last successfully synced the repo
   @$pb.TagNumber(7)
-  $1775.Timestamp get lastSyncTime => $_getN(6);
+  $1776.Timestamp get lastSyncTime => $_getN(6);
   @$pb.TagNumber(7)
-  set lastSyncTime($1775.Timestamp v) { setField(7, v); }
+  set lastSyncTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLastSyncTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearLastSyncTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureLastSyncTime() => $_ensure(6);
+  $1776.Timestamp ensureLastSyncTime() => $_ensure(6);
 }
 
 /// An ACM created error representing a problem syncing configurations

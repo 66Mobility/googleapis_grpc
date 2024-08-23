@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../type/latlng.pb.dart' as $1798;
-import '../../../type/money.pb.dart' as $1814;
-import '../../../type/postal_address.pb.dart' as $4427;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../type/latlng.pb.dart' as $1799;
+import '../../../type/money.pb.dart' as $1815;
+import '../../../type/postal_address.pb.dart' as $4429;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -26,8 +26,8 @@ export 'common.pbenum.dart';
 /// Message representing a period of time between two timestamps.
 class TimestampRange extends $pb.GeneratedMessage {
   factory TimestampRange({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -43,8 +43,8 @@ class TimestampRange extends $pb.GeneratedMessage {
   factory TimestampRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimestampRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -71,35 +71,35 @@ class TimestampRange extends $pb.GeneratedMessage {
 
   /// Begin of the period (inclusive).
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// End of the period (exclusive).
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// A resource that represents a location with full geographic information.
 class Location extends $pb.GeneratedMessage {
   factory Location({
     Location_LocationType? locationType,
-    $4427.PostalAddress? postalAddress,
-    $1798.LatLng? latLng,
+    $4429.PostalAddress? postalAddress,
+    $1799.LatLng? latLng,
     $core.double? radiusMiles,
   }) {
     final $result = create();
@@ -123,8 +123,8 @@ class Location extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Location', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4beta1'), createEmptyInstance: create)
     ..e<Location_LocationType>(1, _omitFieldNames ? '' : 'locationType', $pb.PbFieldType.OE, defaultOrMaker: Location_LocationType.LOCATION_TYPE_UNSPECIFIED, valueOf: Location_LocationType.valueOf, enumValues: Location_LocationType.values)
-    ..aOM<$4427.PostalAddress>(2, _omitFieldNames ? '' : 'postalAddress', subBuilder: $4427.PostalAddress.create)
-    ..aOM<$1798.LatLng>(3, _omitFieldNames ? '' : 'latLng', subBuilder: $1798.LatLng.create)
+    ..aOM<$4429.PostalAddress>(2, _omitFieldNames ? '' : 'postalAddress', subBuilder: $4429.PostalAddress.create)
+    ..aOM<$1799.LatLng>(3, _omitFieldNames ? '' : 'latLng', subBuilder: $1799.LatLng.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'radiusMiles', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -170,27 +170,27 @@ class Location extends $pb.GeneratedMessage {
   /// a postal service can deliver items to a premises, P.O. Box, or other
   /// delivery location.
   @$pb.TagNumber(2)
-  $4427.PostalAddress get postalAddress => $_getN(1);
+  $4429.PostalAddress get postalAddress => $_getN(1);
   @$pb.TagNumber(2)
-  set postalAddress($4427.PostalAddress v) { setField(2, v); }
+  set postalAddress($4429.PostalAddress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPostalAddress() => $_has(1);
   @$pb.TagNumber(2)
   void clearPostalAddress() => clearField(2);
   @$pb.TagNumber(2)
-  $4427.PostalAddress ensurePostalAddress() => $_ensure(1);
+  $4429.PostalAddress ensurePostalAddress() => $_ensure(1);
 
   /// An object representing a latitude/longitude pair.
   @$pb.TagNumber(3)
-  $1798.LatLng get latLng => $_getN(2);
+  $1799.LatLng get latLng => $_getN(2);
   @$pb.TagNumber(3)
-  set latLng($1798.LatLng v) { setField(3, v); }
+  set latLng($1799.LatLng v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLatLng() => $_has(2);
   @$pb.TagNumber(3)
   void clearLatLng() => clearField(3);
   @$pb.TagNumber(3)
-  $1798.LatLng ensureLatLng() => $_ensure(2);
+  $1799.LatLng ensureLatLng() => $_ensure(2);
 
   /// Radius in miles of the job location. This value is derived from the
   /// location bounding box in which a circle with the specified radius
@@ -728,10 +728,10 @@ class CompensationInfo_CompensationEntry extends $pb.GeneratedMessage {
   factory CompensationInfo_CompensationEntry({
     CompensationInfo_CompensationType? type,
     CompensationInfo_CompensationUnit? unit,
-    $1814.Money? amount,
+    $1815.Money? amount,
     CompensationInfo_CompensationRange? range,
     $core.String? description,
-    $1780.DoubleValue? expectedUnitsPerYear,
+    $1781.DoubleValue? expectedUnitsPerYear,
   }) {
     final $result = create();
     if (type != null) {
@@ -767,10 +767,10 @@ class CompensationInfo_CompensationEntry extends $pb.GeneratedMessage {
     ..oo(0, [3, 4])
     ..e<CompensationInfo_CompensationType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: CompensationInfo_CompensationType.COMPENSATION_TYPE_UNSPECIFIED, valueOf: CompensationInfo_CompensationType.valueOf, enumValues: CompensationInfo_CompensationType.values)
     ..e<CompensationInfo_CompensationUnit>(2, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE, defaultOrMaker: CompensationInfo_CompensationUnit.COMPENSATION_UNIT_UNSPECIFIED, valueOf: CompensationInfo_CompensationUnit.valueOf, enumValues: CompensationInfo_CompensationUnit.values)
-    ..aOM<$1814.Money>(3, _omitFieldNames ? '' : 'amount', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(3, _omitFieldNames ? '' : 'amount', subBuilder: $1815.Money.create)
     ..aOM<CompensationInfo_CompensationRange>(4, _omitFieldNames ? '' : 'range', subBuilder: CompensationInfo_CompensationRange.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..aOM<$1780.DoubleValue>(6, _omitFieldNames ? '' : 'expectedUnitsPerYear', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(6, _omitFieldNames ? '' : 'expectedUnitsPerYear', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -826,15 +826,15 @@ class CompensationInfo_CompensationEntry extends $pb.GeneratedMessage {
 
   /// Compensation amount.
   @$pb.TagNumber(3)
-  $1814.Money get amount => $_getN(2);
+  $1815.Money get amount => $_getN(2);
   @$pb.TagNumber(3)
-  set amount($1814.Money v) { setField(3, v); }
+  set amount($1815.Money v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAmount() => $_has(2);
   @$pb.TagNumber(3)
   void clearAmount() => clearField(3);
   @$pb.TagNumber(3)
-  $1814.Money ensureAmount() => $_ensure(2);
+  $1815.Money ensureAmount() => $_ensure(2);
 
   /// Compensation range.
   @$pb.TagNumber(4)
@@ -871,22 +871,22 @@ class CompensationInfo_CompensationEntry extends $pb.GeneratedMessage {
   /// - MONTHLY: 12
   /// - ANNUAL: 1
   @$pb.TagNumber(6)
-  $1780.DoubleValue get expectedUnitsPerYear => $_getN(5);
+  $1781.DoubleValue get expectedUnitsPerYear => $_getN(5);
   @$pb.TagNumber(6)
-  set expectedUnitsPerYear($1780.DoubleValue v) { setField(6, v); }
+  set expectedUnitsPerYear($1781.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExpectedUnitsPerYear() => $_has(5);
   @$pb.TagNumber(6)
   void clearExpectedUnitsPerYear() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.DoubleValue ensureExpectedUnitsPerYear() => $_ensure(5);
+  $1781.DoubleValue ensureExpectedUnitsPerYear() => $_ensure(5);
 }
 
 /// Compensation range.
 class CompensationInfo_CompensationRange extends $pb.GeneratedMessage {
   factory CompensationInfo_CompensationRange({
-    $1814.Money? minCompensation,
-    $1814.Money? maxCompensation,
+    $1815.Money? minCompensation,
+    $1815.Money? maxCompensation,
   }) {
     final $result = create();
     if (minCompensation != null) {
@@ -902,8 +902,8 @@ class CompensationInfo_CompensationRange extends $pb.GeneratedMessage {
   factory CompensationInfo_CompensationRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompensationInfo.CompensationRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4beta1'), createEmptyInstance: create)
-    ..aOM<$1814.Money>(1, _omitFieldNames ? '' : 'minCompensation', subBuilder: $1814.Money.create)
-    ..aOM<$1814.Money>(2, _omitFieldNames ? '' : 'maxCompensation', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(1, _omitFieldNames ? '' : 'minCompensation', subBuilder: $1815.Money.create)
+    ..aOM<$1815.Money>(2, _omitFieldNames ? '' : 'maxCompensation', subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -932,30 +932,30 @@ class CompensationInfo_CompensationRange extends $pb.GeneratedMessage {
   /// to zero and the currency code is set to match the
   /// [currency code][google.type.Money.currency_code] of max_compensation.
   @$pb.TagNumber(1)
-  $1814.Money get minCompensation => $_getN(0);
+  $1815.Money get minCompensation => $_getN(0);
   @$pb.TagNumber(1)
-  set minCompensation($1814.Money v) { setField(1, v); }
+  set minCompensation($1815.Money v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinCompensation() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinCompensation() => clearField(1);
   @$pb.TagNumber(1)
-  $1814.Money ensureMinCompensation() => $_ensure(0);
+  $1815.Money ensureMinCompensation() => $_ensure(0);
 
   /// The maximum amount of compensation. If left empty, the value is set
   /// to a maximal compensation value and the currency code is set to
   /// match the [currency code][google.type.Money.currency_code] of
   /// min_compensation.
   @$pb.TagNumber(2)
-  $1814.Money get maxCompensation => $_getN(1);
+  $1815.Money get maxCompensation => $_getN(1);
   @$pb.TagNumber(2)
-  set maxCompensation($1814.Money v) { setField(2, v); }
+  set maxCompensation($1815.Money v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxCompensation() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxCompensation() => clearField(2);
   @$pb.TagNumber(2)
-  $1814.Money ensureMaxCompensation() => $_ensure(1);
+  $1815.Money ensureMaxCompensation() => $_ensure(1);
 }
 
 /// Job compensation details.
@@ -1068,9 +1068,9 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
     $core.int? successCount,
     $core.int? failureCount,
     $core.int? totalCount,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -1109,9 +1109,9 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'successCount', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'failureCount', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'totalCount', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1188,43 +1188,43 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the batch operation is created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// The time when the batch operation status is updated. The metadata and the
   /// [update_time][google.cloud.talent.v4beta1.BatchOperationMetadata.update_time]
   /// is refreshed every minute otherwise cached data is returned.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// The time when the batch operation is finished and
   /// [google.longrunning.Operation.done][google.longrunning.Operation.done] is
   /// set to `true`.
   @$pb.TagNumber(8)
-  $1775.Timestamp get endTime => $_getN(7);
+  $1776.Timestamp get endTime => $_getN(7);
   @$pb.TagNumber(8)
-  set endTime($1775.Timestamp v) { setField(8, v); }
+  set endTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEndTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEndTime() => $_ensure(7);
+  $1776.Timestamp ensureEndTime() => $_ensure(7);
 }
 
 

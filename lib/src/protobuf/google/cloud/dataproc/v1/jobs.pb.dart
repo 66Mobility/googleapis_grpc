@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'jobs.pbenum.dart';
 
 export 'jobs.pbenum.dart';
@@ -1518,7 +1518,7 @@ class JobStatus extends $pb.GeneratedMessage {
   factory JobStatus({
     JobStatus_State? state,
     $core.String? details,
-    $1775.Timestamp? stateStartTime,
+    $1776.Timestamp? stateStartTime,
     JobStatus_Substate? substate,
   }) {
     final $result = create();
@@ -1543,7 +1543,7 @@ class JobStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..e<JobStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: JobStatus_State.STATE_UNSPECIFIED, valueOf: JobStatus_State.valueOf, enumValues: JobStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'details')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1776.Timestamp.create)
     ..e<JobStatus_Substate>(7, _omitFieldNames ? '' : 'substate', $pb.PbFieldType.OE, defaultOrMaker: JobStatus_Substate.UNSPECIFIED, valueOf: JobStatus_Substate.valueOf, enumValues: JobStatus_Substate.values)
     ..hasRequiredFields = false
   ;
@@ -1592,15 +1592,15 @@ class JobStatus extends $pb.GeneratedMessage {
 
   /// Output only. The time when this state was entered.
   @$pb.TagNumber(6)
-  $1775.Timestamp get stateStartTime => $_getN(2);
+  $1776.Timestamp get stateStartTime => $_getN(2);
   @$pb.TagNumber(6)
-  set stateStartTime($1775.Timestamp v) { setField(6, v); }
+  set stateStartTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStateStartTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearStateStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureStateStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStateStartTime() => $_ensure(2);
 
   /// Output only. Additional state information, which includes
   /// status reported by the agent.
@@ -2476,7 +2476,7 @@ class JobMetadata extends $pb.GeneratedMessage {
     $core.String? jobId,
     JobStatus? status,
     $core.String? operationType,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (jobId != null) {
@@ -2501,7 +2501,7 @@ class JobMetadata extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'jobId')
     ..aOM<JobStatus>(2, _omitFieldNames ? '' : 'status', subBuilder: JobStatus.create)
     ..aOS(3, _omitFieldNames ? '' : 'operationType')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2560,15 +2560,15 @@ class JobMetadata extends $pb.GeneratedMessage {
 
   /// Output only. Job submission time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 }
 
 /// A request to get the resource representation for a job in a project.
@@ -2822,7 +2822,7 @@ class UpdateJobRequest extends $pb.GeneratedMessage {
     $core.String? region,
     $core.String? jobId,
     Job? job,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -2851,7 +2851,7 @@ class UpdateJobRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'region')
     ..aOS(3, _omitFieldNames ? '' : 'jobId')
     ..aOM<Job>(4, _omitFieldNames ? '' : 'job', subBuilder: Job.create)
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2926,15 +2926,15 @@ class UpdateJobRequest extends $pb.GeneratedMessage {
   /// value. <strong>Note:</strong> Currently, <code>labels</code> is the only
   /// field that can be updated.
   @$pb.TagNumber(5)
-  $2209.FieldMask get updateMask => $_getN(4);
+  $2210.FieldMask get updateMask => $_getN(4);
   @$pb.TagNumber(5)
-  set updateMask($2209.FieldMask v) { setField(5, v); }
+  set updateMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(4);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(4);
 }
 
 /// A list of jobs in a project.

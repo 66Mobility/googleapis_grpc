@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
-import '../../../type/datetime.pb.dart' as $1801;
-import '../../../type/decimal.pb.dart' as $4429;
-import '../../../type/money.pb.dart' as $1814;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
+import '../../../type/datetime.pb.dart' as $1802;
+import '../../../type/decimal.pb.dart' as $4431;
+import '../../../type/money.pb.dart' as $1815;
 import 'reports_service.pbenum.dart';
 
 export 'reports_service.pbenum.dart';
@@ -852,10 +852,10 @@ class Column extends $pb.GeneratedMessage {
 /// A representation of usage or invoice date ranges.
 class DateRange extends $pb.GeneratedMessage {
   factory DateRange({
-    $1801.DateTime? usageStartDateTime,
-    $1801.DateTime? usageEndDateTime,
-    $1800.Date? invoiceStartDate,
-    $1800.Date? invoiceEndDate,
+    $1802.DateTime? usageStartDateTime,
+    $1802.DateTime? usageEndDateTime,
+    $1801.Date? invoiceStartDate,
+    $1801.Date? invoiceEndDate,
   }) {
     final $result = create();
     if (usageStartDateTime != null) {
@@ -877,10 +877,10 @@ class DateRange extends $pb.GeneratedMessage {
   factory DateRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..aOM<$1801.DateTime>(1, _omitFieldNames ? '' : 'usageStartDateTime', subBuilder: $1801.DateTime.create)
-    ..aOM<$1801.DateTime>(2, _omitFieldNames ? '' : 'usageEndDateTime', subBuilder: $1801.DateTime.create)
-    ..aOM<$1800.Date>(3, _omitFieldNames ? '' : 'invoiceStartDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(4, _omitFieldNames ? '' : 'invoiceEndDate', subBuilder: $1800.Date.create)
+    ..aOM<$1802.DateTime>(1, _omitFieldNames ? '' : 'usageStartDateTime', subBuilder: $1802.DateTime.create)
+    ..aOM<$1802.DateTime>(2, _omitFieldNames ? '' : 'usageEndDateTime', subBuilder: $1802.DateTime.create)
+    ..aOM<$1801.Date>(3, _omitFieldNames ? '' : 'invoiceStartDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(4, _omitFieldNames ? '' : 'invoiceEndDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -912,15 +912,15 @@ class DateRange extends $pb.GeneratedMessage {
   ///  rounded down to include all usage from the specified date. We recommend
   ///  that clients pass `usage_start_date_time` in Pacific time.
   @$pb.TagNumber(1)
-  $1801.DateTime get usageStartDateTime => $_getN(0);
+  $1802.DateTime get usageStartDateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set usageStartDateTime($1801.DateTime v) { setField(1, v); }
+  set usageStartDateTime($1802.DateTime v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUsageStartDateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUsageStartDateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1801.DateTime ensureUsageStartDateTime() => $_ensure(0);
+  $1802.DateTime ensureUsageStartDateTime() => $_ensure(0);
 
   ///  The latest usage date time (exclusive).
   ///
@@ -929,45 +929,45 @@ class DateRange extends $pb.GeneratedMessage {
   ///  rounded down to include all usage from the specified date. We recommend
   ///  that clients pass `usage_start_date_time` in Pacific time.
   @$pb.TagNumber(2)
-  $1801.DateTime get usageEndDateTime => $_getN(1);
+  $1802.DateTime get usageEndDateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set usageEndDateTime($1801.DateTime v) { setField(2, v); }
+  set usageEndDateTime($1802.DateTime v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUsageEndDateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUsageEndDateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1801.DateTime ensureUsageEndDateTime() => $_ensure(1);
+  $1802.DateTime ensureUsageEndDateTime() => $_ensure(1);
 
   ///  The earliest invoice date (inclusive).
   ///
   ///  If this value is not the first day of a month, this will move it back to
   ///  the first day of the given month.
   @$pb.TagNumber(3)
-  $1800.Date get invoiceStartDate => $_getN(2);
+  $1801.Date get invoiceStartDate => $_getN(2);
   @$pb.TagNumber(3)
-  set invoiceStartDate($1800.Date v) { setField(3, v); }
+  set invoiceStartDate($1801.Date v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInvoiceStartDate() => $_has(2);
   @$pb.TagNumber(3)
   void clearInvoiceStartDate() => clearField(3);
   @$pb.TagNumber(3)
-  $1800.Date ensureInvoiceStartDate() => $_ensure(2);
+  $1801.Date ensureInvoiceStartDate() => $_ensure(2);
 
   ///  The latest invoice date (inclusive).
   ///
   ///  If this value is not the last day of a month, this will move it forward to
   ///  the last day of the given month.
   @$pb.TagNumber(4)
-  $1800.Date get invoiceEndDate => $_getN(3);
+  $1801.Date get invoiceEndDate => $_getN(3);
   @$pb.TagNumber(4)
-  set invoiceEndDate($1800.Date v) { setField(4, v); }
+  set invoiceEndDate($1801.Date v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInvoiceEndDate() => $_has(3);
   @$pb.TagNumber(4)
   void clearInvoiceEndDate() => clearField(4);
   @$pb.TagNumber(4)
-  $1800.Date ensureInvoiceEndDate() => $_ensure(3);
+  $1801.Date ensureInvoiceEndDate() => $_ensure(3);
 }
 
 /// A row of report values.
@@ -1047,10 +1047,10 @@ class ReportValue extends $pb.GeneratedMessage {
   factory ReportValue({
     $core.String? stringValue,
     $fixnum.Int64? intValue,
-    $4429.Decimal? decimalValue,
-    $1814.Money? moneyValue,
-    $1800.Date? dateValue,
-    $1801.DateTime? dateTimeValue,
+    $4431.Decimal? decimalValue,
+    $1815.Money? moneyValue,
+    $1801.Date? dateValue,
+    $1802.DateTime? dateTimeValue,
   }) {
     final $result = create();
     if (stringValue != null) {
@@ -1090,10 +1090,10 @@ class ReportValue extends $pb.GeneratedMessage {
     ..oo(0, [1, 2, 3, 4, 5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'stringValue')
     ..aInt64(2, _omitFieldNames ? '' : 'intValue')
-    ..aOM<$4429.Decimal>(3, _omitFieldNames ? '' : 'decimalValue', subBuilder: $4429.Decimal.create)
-    ..aOM<$1814.Money>(4, _omitFieldNames ? '' : 'moneyValue', subBuilder: $1814.Money.create)
-    ..aOM<$1800.Date>(5, _omitFieldNames ? '' : 'dateValue', subBuilder: $1800.Date.create)
-    ..aOM<$1801.DateTime>(6, _omitFieldNames ? '' : 'dateTimeValue', subBuilder: $1801.DateTime.create)
+    ..aOM<$4431.Decimal>(3, _omitFieldNames ? '' : 'decimalValue', subBuilder: $4431.Decimal.create)
+    ..aOM<$1815.Money>(4, _omitFieldNames ? '' : 'moneyValue', subBuilder: $1815.Money.create)
+    ..aOM<$1801.Date>(5, _omitFieldNames ? '' : 'dateValue', subBuilder: $1801.Date.create)
+    ..aOM<$1802.DateTime>(6, _omitFieldNames ? '' : 'dateTimeValue', subBuilder: $1802.DateTime.create)
     ..hasRequiredFields = false
   ;
 
@@ -1144,61 +1144,61 @@ class ReportValue extends $pb.GeneratedMessage {
   /// A value of type `google.type.Decimal`, representing non-integer numeric
   /// values.
   @$pb.TagNumber(3)
-  $4429.Decimal get decimalValue => $_getN(2);
+  $4431.Decimal get decimalValue => $_getN(2);
   @$pb.TagNumber(3)
-  set decimalValue($4429.Decimal v) { setField(3, v); }
+  set decimalValue($4431.Decimal v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDecimalValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearDecimalValue() => clearField(3);
   @$pb.TagNumber(3)
-  $4429.Decimal ensureDecimalValue() => $_ensure(2);
+  $4431.Decimal ensureDecimalValue() => $_ensure(2);
 
   /// A value of type `google.type.Money` (currency code, whole units, decimal
   /// units).
   @$pb.TagNumber(4)
-  $1814.Money get moneyValue => $_getN(3);
+  $1815.Money get moneyValue => $_getN(3);
   @$pb.TagNumber(4)
-  set moneyValue($1814.Money v) { setField(4, v); }
+  set moneyValue($1815.Money v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMoneyValue() => $_has(3);
   @$pb.TagNumber(4)
   void clearMoneyValue() => clearField(4);
   @$pb.TagNumber(4)
-  $1814.Money ensureMoneyValue() => $_ensure(3);
+  $1815.Money ensureMoneyValue() => $_ensure(3);
 
   /// A value of type `google.type.Date` (year, month, day).
   @$pb.TagNumber(5)
-  $1800.Date get dateValue => $_getN(4);
+  $1801.Date get dateValue => $_getN(4);
   @$pb.TagNumber(5)
-  set dateValue($1800.Date v) { setField(5, v); }
+  set dateValue($1801.Date v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDateValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearDateValue() => clearField(5);
   @$pb.TagNumber(5)
-  $1800.Date ensureDateValue() => $_ensure(4);
+  $1801.Date ensureDateValue() => $_ensure(4);
 
   /// A value of type `google.type.DateTime` (year, month, day, hour, minute,
   /// second, and UTC offset or timezone.)
   @$pb.TagNumber(6)
-  $1801.DateTime get dateTimeValue => $_getN(5);
+  $1802.DateTime get dateTimeValue => $_getN(5);
   @$pb.TagNumber(6)
-  set dateTimeValue($1801.DateTime v) { setField(6, v); }
+  set dateTimeValue($1802.DateTime v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDateTimeValue() => $_has(5);
   @$pb.TagNumber(6)
   void clearDateTimeValue() => clearField(6);
   @$pb.TagNumber(6)
-  $1801.DateTime ensureDateTimeValue() => $_ensure(5);
+  $1802.DateTime ensureDateTimeValue() => $_ensure(5);
 }
 
 /// Status of a report generation process.
 class ReportStatus extends $pb.GeneratedMessage {
   factory ReportStatus({
     ReportStatus_State? state,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -1218,8 +1218,8 @@ class ReportStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..e<ReportStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ReportStatus_State.STATE_UNSPECIFIED, valueOf: ReportStatus_State.valueOf, enumValues: ReportStatus_State.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1256,27 +1256,27 @@ class ReportStatus extends $pb.GeneratedMessage {
 
   /// The report generation's start time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The report generation's completion time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// The ID and description of a report that was used to generate report data.

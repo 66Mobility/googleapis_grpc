@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3796;
-import '../resources/ad_group_asset_set.pb.dart' as $3797;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3797;
+import '../resources/ad_group_asset_set.pb.dart' as $3798;
 
 /// Request message for
 /// [AdGroupAssetSetService.MutateAdGroupAssetSets][google.ads.googleads.v17.services.AdGroupAssetSetService.MutateAdGroupAssetSets].
@@ -25,7 +25,7 @@ class MutateAdGroupAssetSetsRequest extends $pb.GeneratedMessage {
     $core.Iterable<AdGroupAssetSetOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3796.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3797.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateAdGroupAssetSetsRequest extends $pb.GeneratedMessage {
     ..pc<AdGroupAssetSetOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: AdGroupAssetSetOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3796.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3796.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3796.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3796.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3797.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3797.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3797.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3797.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -122,9 +122,9 @@ class MutateAdGroupAssetSetsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3796.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3797.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3796.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3797.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,7 +140,7 @@ enum AdGroupAssetSetOperation_Operation {
 /// A single operation (create, remove) on an ad group asset set.
 class AdGroupAssetSetOperation extends $pb.GeneratedMessage {
   factory AdGroupAssetSetOperation({
-    $3797.AdGroupAssetSet? create_1,
+    $3798.AdGroupAssetSet? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -163,7 +163,7 @@ class AdGroupAssetSetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupAssetSetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3797.AdGroupAssetSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $3797.AdGroupAssetSet.create)
+    ..aOM<$3798.AdGroupAssetSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $3798.AdGroupAssetSet.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -195,15 +195,15 @@ class AdGroupAssetSetOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new ad group asset
   /// set.
   @$pb.TagNumber(1)
-  $3797.AdGroupAssetSet get create_1 => $_getN(0);
+  $3798.AdGroupAssetSet get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3797.AdGroupAssetSet v) { setField(1, v); }
+  set create_1($3798.AdGroupAssetSet v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3797.AdGroupAssetSet ensureCreate_1() => $_ensure(0);
+  $3798.AdGroupAssetSet ensureCreate_1() => $_ensure(0);
 
   /// Remove operation: A resource name for the removed ad group asset set is
   /// expected, in this format:
@@ -222,7 +222,7 @@ class AdGroupAssetSetOperation extends $pb.GeneratedMessage {
 class MutateAdGroupAssetSetsResponse extends $pb.GeneratedMessage {
   factory MutateAdGroupAssetSetsResponse({
     $core.Iterable<MutateAdGroupAssetSetResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -239,7 +239,7 @@ class MutateAdGroupAssetSetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupAssetSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateAdGroupAssetSetResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAdGroupAssetSetResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -273,22 +273,22 @@ class MutateAdGroupAssetSetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (e.g. auth errors),
   /// we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the ad group asset set mutate.
 class MutateAdGroupAssetSetResult extends $pb.GeneratedMessage {
   factory MutateAdGroupAssetSetResult({
     $core.String? resourceName,
-    $3797.AdGroupAssetSet? adGroupAssetSet,
+    $3798.AdGroupAssetSet? adGroupAssetSet,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -305,7 +305,7 @@ class MutateAdGroupAssetSetResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupAssetSetResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3797.AdGroupAssetSet>(2, _omitFieldNames ? '' : 'adGroupAssetSet', subBuilder: $3797.AdGroupAssetSet.create)
+    ..aOM<$3798.AdGroupAssetSet>(2, _omitFieldNames ? '' : 'adGroupAssetSet', subBuilder: $3798.AdGroupAssetSet.create)
     ..hasRequiredFields = false
   ;
 
@@ -344,15 +344,15 @@ class MutateAdGroupAssetSetResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3797.AdGroupAssetSet get adGroupAssetSet => $_getN(1);
+  $3798.AdGroupAssetSet get adGroupAssetSet => $_getN(1);
   @$pb.TagNumber(2)
-  set adGroupAssetSet($3797.AdGroupAssetSet v) { setField(2, v); }
+  set adGroupAssetSet($3798.AdGroupAssetSet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdGroupAssetSet() => $_has(1);
   @$pb.TagNumber(2)
   void clearAdGroupAssetSet() => clearField(2);
   @$pb.TagNumber(2)
-  $3797.AdGroupAssetSet ensureAdGroupAssetSet() => $_ensure(1);
+  $3798.AdGroupAssetSet ensureAdGroupAssetSet() => $_ensure(1);
 }
 
 

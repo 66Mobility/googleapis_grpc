@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'analyze.pb.dart' as $822;
 import 'content.pbenum.dart';
 
@@ -108,7 +108,7 @@ class CreateContentRequest extends $pb.GeneratedMessage {
 /// Update content request.
 class UpdateContentRequest extends $pb.GeneratedMessage {
   factory UpdateContentRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $822.Content? content,
     $core.bool? validateOnly,
   }) {
@@ -129,7 +129,7 @@ class UpdateContentRequest extends $pb.GeneratedMessage {
   factory UpdateContentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$822.Content>(2, _omitFieldNames ? '' : 'content', subBuilder: $822.Content.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -158,15 +158,15 @@ class UpdateContentRequest extends $pb.GeneratedMessage {
 
   /// Required. Mask of fields to update.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Update description.
   /// Only fields specified in `update_mask` are updated.

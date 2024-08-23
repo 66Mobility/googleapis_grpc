@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/duration.pb.dart' as $1737;
+import '../protobuf/duration.pb.dart' as $1738;
 
 enum DateTime_TimeOffset {
   utcOffset, 
@@ -54,7 +54,7 @@ class DateTime extends $pb.GeneratedMessage {
     $core.int? minutes,
     $core.int? seconds,
     $core.int? nanos,
-    $1737.Duration? utcOffset,
+    $1738.Duration? utcOffset,
     TimeZone? timeZone,
   }) {
     final $result = create();
@@ -105,7 +105,7 @@ class DateTime extends $pb.GeneratedMessage {
     ..a<$core.int>(5, _omitFieldNames ? '' : 'minutes', $pb.PbFieldType.O3)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'seconds', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'nanos', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'utcOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'utcOffset', subBuilder: $1738.Duration.create)
     ..aOM<TimeZone>(9, _omitFieldNames ? '' : 'timeZone', subBuilder: TimeZone.create)
     ..hasRequiredFields = false
   ;
@@ -214,15 +214,15 @@ class DateTime extends $pb.GeneratedMessage {
   /// For example, a UTC offset of -4:00 would be represented as
   /// { seconds: -14400 }.
   @$pb.TagNumber(8)
-  $1737.Duration get utcOffset => $_getN(7);
+  $1738.Duration get utcOffset => $_getN(7);
   @$pb.TagNumber(8)
-  set utcOffset($1737.Duration v) { setField(8, v); }
+  set utcOffset($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUtcOffset() => $_has(7);
   @$pb.TagNumber(8)
   void clearUtcOffset() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureUtcOffset() => $_ensure(7);
+  $1738.Duration ensureUtcOffset() => $_ensure(7);
 
   /// Time zone.
   @$pb.TagNumber(9)

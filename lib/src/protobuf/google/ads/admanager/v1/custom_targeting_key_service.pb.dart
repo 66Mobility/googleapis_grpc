@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'custom_targeting_key_enums.pbenum.dart' as $1812;
+import 'custom_targeting_key_enums.pbenum.dart' as $1813;
 
 /// The `CustomTargetingKey` resource.
 class CustomTargetingKey extends $pb.GeneratedMessage {
@@ -23,9 +23,9 @@ class CustomTargetingKey extends $pb.GeneratedMessage {
     $fixnum.Int64? customTargetingKeyId,
     $core.String? adTagName,
     $core.String? displayName,
-    $1812.CustomTargetingKeyTypeEnum_CustomTargetingKeyType? type,
-    $1812.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus? status,
-    $1812.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType? reportableType,
+    $1813.CustomTargetingKeyTypeEnum_CustomTargetingKeyType? type,
+    $1813.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus? status,
+    $1813.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType? reportableType,
   }) {
     final $result = create();
     if (name != null) {
@@ -60,9 +60,9 @@ class CustomTargetingKey extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'customTargetingKeyId')
     ..aOS(3, _omitFieldNames ? '' : 'adTagName')
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
-    ..e<$1812.CustomTargetingKeyTypeEnum_CustomTargetingKeyType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1812.CustomTargetingKeyTypeEnum_CustomTargetingKeyType.CUSTOM_TARGETING_KEY_TYPE_UNSPECIFIED, valueOf: $1812.CustomTargetingKeyTypeEnum_CustomTargetingKeyType.valueOf, enumValues: $1812.CustomTargetingKeyTypeEnum_CustomTargetingKeyType.values)
-    ..e<$1812.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1812.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus.CUSTOM_TARGETING_KEY_STATUS_UNSPECIFIED, valueOf: $1812.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus.valueOf, enumValues: $1812.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus.values)
-    ..e<$1812.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType>(7, _omitFieldNames ? '' : 'reportableType', $pb.PbFieldType.OE, defaultOrMaker: $1812.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType.CUSTOM_TARGETING_KEY_REPORTABLE_TYPE_UNSPECIFIED, valueOf: $1812.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType.valueOf, enumValues: $1812.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType.values)
+    ..e<$1813.CustomTargetingKeyTypeEnum_CustomTargetingKeyType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1813.CustomTargetingKeyTypeEnum_CustomTargetingKeyType.CUSTOM_TARGETING_KEY_TYPE_UNSPECIFIED, valueOf: $1813.CustomTargetingKeyTypeEnum_CustomTargetingKeyType.valueOf, enumValues: $1813.CustomTargetingKeyTypeEnum_CustomTargetingKeyType.values)
+    ..e<$1813.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1813.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus.CUSTOM_TARGETING_KEY_STATUS_UNSPECIFIED, valueOf: $1813.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus.valueOf, enumValues: $1813.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus.values)
+    ..e<$1813.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType>(7, _omitFieldNames ? '' : 'reportableType', $pb.PbFieldType.OE, defaultOrMaker: $1813.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType.CUSTOM_TARGETING_KEY_REPORTABLE_TYPE_UNSPECIFIED, valueOf: $1813.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType.valueOf, enumValues: $1813.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType.values)
     ..hasRequiredFields = false
   ;
 
@@ -135,9 +135,9 @@ class CustomTargetingKey extends $pb.GeneratedMessage {
   /// create new targeting values, while specifying targeting criteria for a line
   /// item.
   @$pb.TagNumber(5)
-  $1812.CustomTargetingKeyTypeEnum_CustomTargetingKeyType get type => $_getN(4);
+  $1813.CustomTargetingKeyTypeEnum_CustomTargetingKeyType get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type($1812.CustomTargetingKeyTypeEnum_CustomTargetingKeyType v) { setField(5, v); }
+  set type($1813.CustomTargetingKeyTypeEnum_CustomTargetingKeyType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -145,9 +145,9 @@ class CustomTargetingKey extends $pb.GeneratedMessage {
 
   /// Output only. Status of the `CustomTargetingKey`.
   @$pb.TagNumber(6)
-  $1812.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus get status => $_getN(5);
+  $1813.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus get status => $_getN(5);
   @$pb.TagNumber(6)
-  set status($1812.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus v) { setField(6, v); }
+  set status($1813.CustomTargetingKeyStatusEnum_CustomTargetingKeyStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -155,9 +155,9 @@ class CustomTargetingKey extends $pb.GeneratedMessage {
 
   /// Required. Reportable state of the `CustomTargetingKey`.
   @$pb.TagNumber(7)
-  $1812.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType get reportableType => $_getN(6);
+  $1813.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType get reportableType => $_getN(6);
   @$pb.TagNumber(7)
-  set reportableType($1812.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType v) { setField(7, v); }
+  set reportableType($1813.CustomTargetingKeyReportableTypeEnum_CustomTargetingKeyReportableType v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasReportableType() => $_has(6);
   @$pb.TagNumber(7)

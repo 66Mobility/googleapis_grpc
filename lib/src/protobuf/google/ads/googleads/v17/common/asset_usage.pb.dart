@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/served_asset_field_type.pbenum.dart' as $3247;
+import '../enums/served_asset_field_type.pbenum.dart' as $3248;
 
 /// Contains the usage information of the asset.
 class AssetUsage extends $pb.GeneratedMessage {
   factory AssetUsage({
     $core.String? asset,
-    $3247.ServedAssetFieldTypeEnum_ServedAssetFieldType? servedAssetFieldType,
+    $3248.ServedAssetFieldTypeEnum_ServedAssetFieldType? servedAssetFieldType,
   }) {
     final $result = create();
     if (asset != null) {
@@ -36,7 +36,7 @@ class AssetUsage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetUsage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'asset')
-    ..e<$3247.ServedAssetFieldTypeEnum_ServedAssetFieldType>(2, _omitFieldNames ? '' : 'servedAssetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $3247.ServedAssetFieldTypeEnum_ServedAssetFieldType.UNSPECIFIED, valueOf: $3247.ServedAssetFieldTypeEnum_ServedAssetFieldType.valueOf, enumValues: $3247.ServedAssetFieldTypeEnum_ServedAssetFieldType.values)
+    ..e<$3248.ServedAssetFieldTypeEnum_ServedAssetFieldType>(2, _omitFieldNames ? '' : 'servedAssetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $3248.ServedAssetFieldTypeEnum_ServedAssetFieldType.UNSPECIFIED, valueOf: $3248.ServedAssetFieldTypeEnum_ServedAssetFieldType.valueOf, enumValues: $3248.ServedAssetFieldTypeEnum_ServedAssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -73,9 +73,9 @@ class AssetUsage extends $pb.GeneratedMessage {
 
   /// The served field type of the asset.
   @$pb.TagNumber(2)
-  $3247.ServedAssetFieldTypeEnum_ServedAssetFieldType get servedAssetFieldType => $_getN(1);
+  $3248.ServedAssetFieldTypeEnum_ServedAssetFieldType get servedAssetFieldType => $_getN(1);
   @$pb.TagNumber(2)
-  set servedAssetFieldType($3247.ServedAssetFieldTypeEnum_ServedAssetFieldType v) { setField(2, v); }
+  set servedAssetFieldType($3248.ServedAssetFieldTypeEnum_ServedAssetFieldType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasServedAssetFieldType() => $_has(1);
   @$pb.TagNumber(2)

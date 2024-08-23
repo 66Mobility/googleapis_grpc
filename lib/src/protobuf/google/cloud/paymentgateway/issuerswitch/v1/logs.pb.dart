@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../logging/type/log_severity.pbenum.dart' as $4183;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common_fields.pbenum.dart' as $4588;
+import '../../../../logging/type/log_severity.pbenum.dart' as $4184;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common_fields.pbenum.dart' as $4590;
 import 'transactions.pbenum.dart' as $1202;
 
 enum UpiTransaction_Payload {
@@ -28,15 +28,15 @@ enum UpiTransaction_Payload {
 class UpiTransaction extends $pb.GeneratedMessage {
   factory UpiTransaction({
     $core.String? message,
-    $4183.LogSeverity? severity,
-    $4588.ApiType? apiType,
-    $4588.XmlApiType? xmlApiType,
-    $4588.TransactionType? transactionType,
+    $4184.LogSeverity? severity,
+    $4590.ApiType? apiType,
+    $4590.XmlApiType? xmlApiType,
+    $4590.TransactionType? transactionType,
     $core.String? transactionId,
     $core.String? messageId,
     $core.String? rrn,
-    $1775.Timestamp? payloadReceiptTime,
-    $1775.Timestamp? payloadSentTime,
+    $1776.Timestamp? payloadReceiptTime,
+    $1776.Timestamp? payloadSentTime,
     $1202.TransactionInfo_State? status,
     $core.String? errorCode,
     $core.String? upiErrorCode,
@@ -107,15 +107,15 @@ class UpiTransaction extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpiTransaction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..oo(0, [15, 16])
     ..aOS(1, _omitFieldNames ? '' : 'message')
-    ..e<$4183.LogSeverity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $4183.LogSeverity.DEFAULT, valueOf: $4183.LogSeverity.valueOf, enumValues: $4183.LogSeverity.values)
-    ..e<$4588.ApiType>(3, _omitFieldNames ? '' : 'apiType', $pb.PbFieldType.OE, defaultOrMaker: $4588.ApiType.API_TYPE_UNSPECIFIED, valueOf: $4588.ApiType.valueOf, enumValues: $4588.ApiType.values)
-    ..e<$4588.XmlApiType>(4, _omitFieldNames ? '' : 'xmlApiType', $pb.PbFieldType.OE, defaultOrMaker: $4588.XmlApiType.XML_API_TYPE_UNSPECIFIED, valueOf: $4588.XmlApiType.valueOf, enumValues: $4588.XmlApiType.values)
-    ..e<$4588.TransactionType>(5, _omitFieldNames ? '' : 'transactionType', $pb.PbFieldType.OE, defaultOrMaker: $4588.TransactionType.TRANSACTION_TYPE_UNSPECIFIED, valueOf: $4588.TransactionType.valueOf, enumValues: $4588.TransactionType.values)
+    ..e<$4184.LogSeverity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $4184.LogSeverity.DEFAULT, valueOf: $4184.LogSeverity.valueOf, enumValues: $4184.LogSeverity.values)
+    ..e<$4590.ApiType>(3, _omitFieldNames ? '' : 'apiType', $pb.PbFieldType.OE, defaultOrMaker: $4590.ApiType.API_TYPE_UNSPECIFIED, valueOf: $4590.ApiType.valueOf, enumValues: $4590.ApiType.values)
+    ..e<$4590.XmlApiType>(4, _omitFieldNames ? '' : 'xmlApiType', $pb.PbFieldType.OE, defaultOrMaker: $4590.XmlApiType.XML_API_TYPE_UNSPECIFIED, valueOf: $4590.XmlApiType.valueOf, enumValues: $4590.XmlApiType.values)
+    ..e<$4590.TransactionType>(5, _omitFieldNames ? '' : 'transactionType', $pb.PbFieldType.OE, defaultOrMaker: $4590.TransactionType.TRANSACTION_TYPE_UNSPECIFIED, valueOf: $4590.TransactionType.valueOf, enumValues: $4590.TransactionType.values)
     ..aOS(6, _omitFieldNames ? '' : 'transactionId')
     ..aOS(7, _omitFieldNames ? '' : 'messageId')
     ..aOS(8, _omitFieldNames ? '' : 'rrn')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'payloadReceiptTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'payloadSentTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'payloadReceiptTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'payloadSentTime', subBuilder: $1776.Timestamp.create)
     ..e<$1202.TransactionInfo_State>(11, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1202.TransactionInfo_State.STATE_UNSPECIFIED, valueOf: $1202.TransactionInfo_State.valueOf, enumValues: $1202.TransactionInfo_State.values)
     ..aOS(12, _omitFieldNames ? '' : 'errorCode')
     ..aOS(13, _omitFieldNames ? '' : 'upiErrorCode')
@@ -161,9 +161,9 @@ class UpiTransaction extends $pb.GeneratedMessage {
 
   /// The severity of the log entry.
   @$pb.TagNumber(2)
-  $4183.LogSeverity get severity => $_getN(1);
+  $4184.LogSeverity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity($4183.LogSeverity v) { setField(2, v); }
+  set severity($4184.LogSeverity v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSeverity() => $_has(1);
   @$pb.TagNumber(2)
@@ -171,9 +171,9 @@ class UpiTransaction extends $pb.GeneratedMessage {
 
   /// The API type of the transaction.
   @$pb.TagNumber(3)
-  $4588.ApiType get apiType => $_getN(2);
+  $4590.ApiType get apiType => $_getN(2);
   @$pb.TagNumber(3)
-  set apiType($4588.ApiType v) { setField(3, v); }
+  set apiType($4590.ApiType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApiType() => $_has(2);
   @$pb.TagNumber(3)
@@ -181,9 +181,9 @@ class UpiTransaction extends $pb.GeneratedMessage {
 
   /// The XML API type of the transaction.
   @$pb.TagNumber(4)
-  $4588.XmlApiType get xmlApiType => $_getN(3);
+  $4590.XmlApiType get xmlApiType => $_getN(3);
   @$pb.TagNumber(4)
-  set xmlApiType($4588.XmlApiType v) { setField(4, v); }
+  set xmlApiType($4590.XmlApiType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasXmlApiType() => $_has(3);
   @$pb.TagNumber(4)
@@ -191,9 +191,9 @@ class UpiTransaction extends $pb.GeneratedMessage {
 
   /// The type of the transaction.
   @$pb.TagNumber(5)
-  $4588.TransactionType get transactionType => $_getN(4);
+  $4590.TransactionType get transactionType => $_getN(4);
   @$pb.TagNumber(5)
-  set transactionType($4588.TransactionType v) { setField(5, v); }
+  set transactionType($4590.TransactionType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTransactionType() => $_has(4);
   @$pb.TagNumber(5)
@@ -232,27 +232,27 @@ class UpiTransaction extends $pb.GeneratedMessage {
 
   /// The timestamp at which the payload was received by the issuer switch.
   @$pb.TagNumber(9)
-  $1775.Timestamp get payloadReceiptTime => $_getN(8);
+  $1776.Timestamp get payloadReceiptTime => $_getN(8);
   @$pb.TagNumber(9)
-  set payloadReceiptTime($1775.Timestamp v) { setField(9, v); }
+  set payloadReceiptTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasPayloadReceiptTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearPayloadReceiptTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensurePayloadReceiptTime() => $_ensure(8);
+  $1776.Timestamp ensurePayloadReceiptTime() => $_ensure(8);
 
   /// The timestamp at which the payload was sent by the issuer switch.
   @$pb.TagNumber(10)
-  $1775.Timestamp get payloadSentTime => $_getN(9);
+  $1776.Timestamp get payloadSentTime => $_getN(9);
   @$pb.TagNumber(10)
-  set payloadSentTime($1775.Timestamp v) { setField(10, v); }
+  set payloadSentTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasPayloadSentTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearPayloadSentTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensurePayloadSentTime() => $_ensure(9);
+  $1776.Timestamp ensurePayloadSentTime() => $_ensure(9);
 
   /// Status of the transaction which could be SUCCESS or FAILURE. This will be
   /// populated only after transaction is complete.

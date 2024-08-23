@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/listing_group_filter_custom_attribute_index.pbenum.dart' as $2857;
-import '../enums/listing_group_filter_listing_source.pbenum.dart' as $2853;
-import '../enums/listing_group_filter_product_category_level.pbenum.dart' as $2854;
-import '../enums/listing_group_filter_product_channel.pbenum.dart' as $2855;
-import '../enums/listing_group_filter_product_condition.pbenum.dart' as $2856;
-import '../enums/listing_group_filter_product_type_level.pbenum.dart' as $2858;
-import '../enums/listing_group_filter_type_enum.pbenum.dart' as $2852;
+import '../enums/listing_group_filter_custom_attribute_index.pbenum.dart' as $2858;
+import '../enums/listing_group_filter_listing_source.pbenum.dart' as $2854;
+import '../enums/listing_group_filter_product_category_level.pbenum.dart' as $2855;
+import '../enums/listing_group_filter_product_channel.pbenum.dart' as $2856;
+import '../enums/listing_group_filter_product_condition.pbenum.dart' as $2857;
+import '../enums/listing_group_filter_product_type_level.pbenum.dart' as $2859;
+import '../enums/listing_group_filter_type_enum.pbenum.dart' as $2853;
 
 /// AssetGroupListingGroupFilter represents a listing group filter tree node in
 /// an asset group.
@@ -29,11 +29,11 @@ class AssetGroupListingGroupFilter extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? assetGroup,
     $fixnum.Int64? id,
-    $2852.ListingGroupFilterTypeEnum_ListingGroupFilterType? type,
+    $2853.ListingGroupFilterTypeEnum_ListingGroupFilterType? type,
     ListingGroupFilterDimension? caseValue,
     $core.String? parentListingGroupFilter,
     ListingGroupFilterDimensionPath? path,
-    $2853.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource? listingSource,
+    $2854.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource? listingSource,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -70,11 +70,11 @@ class AssetGroupListingGroupFilter extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'assetGroup')
     ..aInt64(3, _omitFieldNames ? '' : 'id')
-    ..e<$2852.ListingGroupFilterTypeEnum_ListingGroupFilterType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2852.ListingGroupFilterTypeEnum_ListingGroupFilterType.UNSPECIFIED, valueOf: $2852.ListingGroupFilterTypeEnum_ListingGroupFilterType.valueOf, enumValues: $2852.ListingGroupFilterTypeEnum_ListingGroupFilterType.values)
+    ..e<$2853.ListingGroupFilterTypeEnum_ListingGroupFilterType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2853.ListingGroupFilterTypeEnum_ListingGroupFilterType.UNSPECIFIED, valueOf: $2853.ListingGroupFilterTypeEnum_ListingGroupFilterType.valueOf, enumValues: $2853.ListingGroupFilterTypeEnum_ListingGroupFilterType.values)
     ..aOM<ListingGroupFilterDimension>(6, _omitFieldNames ? '' : 'caseValue', subBuilder: ListingGroupFilterDimension.create)
     ..aOS(7, _omitFieldNames ? '' : 'parentListingGroupFilter')
     ..aOM<ListingGroupFilterDimensionPath>(8, _omitFieldNames ? '' : 'path', subBuilder: ListingGroupFilterDimensionPath.create)
-    ..e<$2853.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource>(9, _omitFieldNames ? '' : 'listingSource', $pb.PbFieldType.OE, defaultOrMaker: $2853.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource.UNSPECIFIED, valueOf: $2853.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource.valueOf, enumValues: $2853.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource.values)
+    ..e<$2854.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource>(9, _omitFieldNames ? '' : 'listingSource', $pb.PbFieldType.OE, defaultOrMaker: $2854.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource.UNSPECIFIED, valueOf: $2854.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource.valueOf, enumValues: $2854.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource.values)
     ..hasRequiredFields = false
   ;
 
@@ -135,9 +135,9 @@ class AssetGroupListingGroupFilter extends $pb.GeneratedMessage {
 
   /// Immutable. Type of a listing group filter node.
   @$pb.TagNumber(4)
-  $2852.ListingGroupFilterTypeEnum_ListingGroupFilterType get type => $_getN(3);
+  $2853.ListingGroupFilterTypeEnum_ListingGroupFilterType get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type($2852.ListingGroupFilterTypeEnum_ListingGroupFilterType v) { setField(4, v); }
+  set type($2853.ListingGroupFilterTypeEnum_ListingGroupFilterType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
@@ -181,9 +181,9 @@ class AssetGroupListingGroupFilter extends $pb.GeneratedMessage {
 
   /// Immutable. The source of listings filtered by this listing group filter.
   @$pb.TagNumber(9)
-  $2853.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource get listingSource => $_getN(7);
+  $2854.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource get listingSource => $_getN(7);
   @$pb.TagNumber(9)
-  set listingSource($2853.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource v) { setField(9, v); }
+  set listingSource($2854.ListingGroupFilterListingSourceEnum_ListingGroupFilterListingSource v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasListingSource() => $_has(7);
   @$pb.TagNumber(9)
@@ -245,7 +245,7 @@ class ListingGroupFilterDimensionPath extends $pb.GeneratedMessage {
 class ListingGroupFilterDimension_ProductCategory extends $pb.GeneratedMessage {
   factory ListingGroupFilterDimension_ProductCategory({
     $fixnum.Int64? categoryId,
-    $2854.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel? level,
+    $2855.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel? level,
   }) {
     final $result = create();
     if (categoryId != null) {
@@ -262,7 +262,7 @@ class ListingGroupFilterDimension_ProductCategory extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListingGroupFilterDimension.ProductCategory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'categoryId')
-    ..e<$2854.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel>(2, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $2854.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel.UNSPECIFIED, valueOf: $2854.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel.valueOf, enumValues: $2854.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel.values)
+    ..e<$2855.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel>(2, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $2855.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel.UNSPECIFIED, valueOf: $2855.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel.valueOf, enumValues: $2855.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel.values)
     ..hasRequiredFields = false
   ;
 
@@ -302,9 +302,9 @@ class ListingGroupFilterDimension_ProductCategory extends $pb.GeneratedMessage {
 
   /// Indicates the level of the category in the taxonomy.
   @$pb.TagNumber(2)
-  $2854.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel get level => $_getN(1);
+  $2855.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel get level => $_getN(1);
   @$pb.TagNumber(2)
-  set level($2854.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel v) { setField(2, v); }
+  set level($2855.ListingGroupFilterProductCategoryLevelEnum_ListingGroupFilterProductCategoryLevel v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLevel() => $_has(1);
   @$pb.TagNumber(2)
@@ -366,7 +366,7 @@ class ListingGroupFilterDimension_ProductBrand extends $pb.GeneratedMessage {
 /// Locality of a product offer.
 class ListingGroupFilterDimension_ProductChannel extends $pb.GeneratedMessage {
   factory ListingGroupFilterDimension_ProductChannel({
-    $2855.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel? channel,
+    $2856.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel? channel,
   }) {
     final $result = create();
     if (channel != null) {
@@ -379,7 +379,7 @@ class ListingGroupFilterDimension_ProductChannel extends $pb.GeneratedMessage {
   factory ListingGroupFilterDimension_ProductChannel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListingGroupFilterDimension.ProductChannel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..e<$2855.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel>(1, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $2855.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel.UNSPECIFIED, valueOf: $2855.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel.valueOf, enumValues: $2855.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel.values)
+    ..e<$2856.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel>(1, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $2856.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel.UNSPECIFIED, valueOf: $2856.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel.valueOf, enumValues: $2856.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel.values)
     ..hasRequiredFields = false
   ;
 
@@ -406,9 +406,9 @@ class ListingGroupFilterDimension_ProductChannel extends $pb.GeneratedMessage {
 
   /// Value of the locality.
   @$pb.TagNumber(1)
-  $2855.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel get channel => $_getN(0);
+  $2856.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel get channel => $_getN(0);
   @$pb.TagNumber(1)
-  set channel($2855.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel v) { setField(1, v); }
+  set channel($2856.ListingGroupFilterProductChannelEnum_ListingGroupFilterProductChannel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasChannel() => $_has(0);
   @$pb.TagNumber(1)
@@ -418,7 +418,7 @@ class ListingGroupFilterDimension_ProductChannel extends $pb.GeneratedMessage {
 /// Condition of a product offer.
 class ListingGroupFilterDimension_ProductCondition extends $pb.GeneratedMessage {
   factory ListingGroupFilterDimension_ProductCondition({
-    $2856.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition? condition,
+    $2857.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition? condition,
   }) {
     final $result = create();
     if (condition != null) {
@@ -431,7 +431,7 @@ class ListingGroupFilterDimension_ProductCondition extends $pb.GeneratedMessage 
   factory ListingGroupFilterDimension_ProductCondition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListingGroupFilterDimension.ProductCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..e<$2856.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition>(1, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE, defaultOrMaker: $2856.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition.UNSPECIFIED, valueOf: $2856.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition.valueOf, enumValues: $2856.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition.values)
+    ..e<$2857.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition>(1, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE, defaultOrMaker: $2857.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition.UNSPECIFIED, valueOf: $2857.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition.valueOf, enumValues: $2857.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition.values)
     ..hasRequiredFields = false
   ;
 
@@ -458,9 +458,9 @@ class ListingGroupFilterDimension_ProductCondition extends $pb.GeneratedMessage 
 
   /// Value of the condition.
   @$pb.TagNumber(1)
-  $2856.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition get condition => $_getN(0);
+  $2857.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition get condition => $_getN(0);
   @$pb.TagNumber(1)
-  set condition($2856.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition v) { setField(1, v); }
+  set condition($2857.ListingGroupFilterProductConditionEnum_ListingGroupFilterProductCondition v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCondition() => $_has(0);
   @$pb.TagNumber(1)
@@ -471,7 +471,7 @@ class ListingGroupFilterDimension_ProductCondition extends $pb.GeneratedMessage 
 class ListingGroupFilterDimension_ProductCustomAttribute extends $pb.GeneratedMessage {
   factory ListingGroupFilterDimension_ProductCustomAttribute({
     $core.String? value,
-    $2857.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex? index,
+    $2858.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex? index,
   }) {
     final $result = create();
     if (value != null) {
@@ -488,7 +488,7 @@ class ListingGroupFilterDimension_ProductCustomAttribute extends $pb.GeneratedMe
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListingGroupFilterDimension.ProductCustomAttribute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'value')
-    ..e<$2857.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex>(2, _omitFieldNames ? '' : 'index', $pb.PbFieldType.OE, defaultOrMaker: $2857.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex.UNSPECIFIED, valueOf: $2857.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex.valueOf, enumValues: $2857.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex.values)
+    ..e<$2858.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex>(2, _omitFieldNames ? '' : 'index', $pb.PbFieldType.OE, defaultOrMaker: $2858.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex.UNSPECIFIED, valueOf: $2858.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex.valueOf, enumValues: $2858.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex.values)
     ..hasRequiredFields = false
   ;
 
@@ -525,9 +525,9 @@ class ListingGroupFilterDimension_ProductCustomAttribute extends $pb.GeneratedMe
 
   /// Indicates the index of the custom attribute.
   @$pb.TagNumber(2)
-  $2857.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex get index => $_getN(1);
+  $2858.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex get index => $_getN(1);
   @$pb.TagNumber(2)
-  set index($2857.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex v) { setField(2, v); }
+  set index($2858.ListingGroupFilterCustomAttributeIndexEnum_ListingGroupFilterCustomAttributeIndex v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIndex() => $_has(1);
   @$pb.TagNumber(2)
@@ -590,7 +590,7 @@ class ListingGroupFilterDimension_ProductItemId extends $pb.GeneratedMessage {
 class ListingGroupFilterDimension_ProductType extends $pb.GeneratedMessage {
   factory ListingGroupFilterDimension_ProductType({
     $core.String? value,
-    $2858.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel? level,
+    $2859.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel? level,
   }) {
     final $result = create();
     if (value != null) {
@@ -607,7 +607,7 @@ class ListingGroupFilterDimension_ProductType extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListingGroupFilterDimension.ProductType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'value')
-    ..e<$2858.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel>(2, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $2858.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel.UNSPECIFIED, valueOf: $2858.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel.valueOf, enumValues: $2858.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel.values)
+    ..e<$2859.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel>(2, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $2859.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel.UNSPECIFIED, valueOf: $2859.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel.valueOf, enumValues: $2859.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel.values)
     ..hasRequiredFields = false
   ;
 
@@ -644,9 +644,9 @@ class ListingGroupFilterDimension_ProductType extends $pb.GeneratedMessage {
 
   /// Level of the type.
   @$pb.TagNumber(2)
-  $2858.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel get level => $_getN(1);
+  $2859.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel get level => $_getN(1);
   @$pb.TagNumber(2)
-  set level($2858.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel v) { setField(2, v); }
+  set level($2859.ListingGroupFilterProductTypeLevelEnum_ListingGroupFilterProductTypeLevel v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLevel() => $_has(1);
   @$pb.TagNumber(2)

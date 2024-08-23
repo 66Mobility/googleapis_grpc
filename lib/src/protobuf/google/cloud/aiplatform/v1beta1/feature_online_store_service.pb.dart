@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'feature_online_store_service.pbenum.dart';
 import 'featurestore_online_service.pb.dart' as $570;
 
@@ -439,7 +439,7 @@ enum FetchFeatureValuesResponse_Format {
 /// [FeatureOnlineStoreService.FetchFeatureValues][google.cloud.aiplatform.v1beta1.FeatureOnlineStoreService.FetchFeatureValues]
 class FetchFeatureValuesResponse extends $pb.GeneratedMessage {
   factory FetchFeatureValuesResponse({
-    $1734.Struct? protoStruct,
+    $1735.Struct? protoStruct,
     FetchFeatureValuesResponse_FeatureNameValuePairList? keyValues,
     FeatureViewDataKey? dataKey,
   }) {
@@ -466,7 +466,7 @@ class FetchFeatureValuesResponse extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchFeatureValuesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'protoStruct', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'protoStruct', subBuilder: $1735.Struct.create)
     ..aOM<FetchFeatureValuesResponse_FeatureNameValuePairList>(3, _omitFieldNames ? '' : 'keyValues', subBuilder: FetchFeatureValuesResponse_FeatureNameValuePairList.create)
     ..aOM<FeatureViewDataKey>(4, _omitFieldNames ? '' : 'dataKey', subBuilder: FeatureViewDataKey.create)
     ..hasRequiredFields = false
@@ -498,15 +498,15 @@ class FetchFeatureValuesResponse extends $pb.GeneratedMessage {
 
   /// Feature values in proto Struct format.
   @$pb.TagNumber(2)
-  $1734.Struct get protoStruct => $_getN(0);
+  $1735.Struct get protoStruct => $_getN(0);
   @$pb.TagNumber(2)
-  set protoStruct($1734.Struct v) { setField(2, v); }
+  set protoStruct($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProtoStruct() => $_has(0);
   @$pb.TagNumber(2)
   void clearProtoStruct() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureProtoStruct() => $_ensure(0);
+  $1735.Struct ensureProtoStruct() => $_ensure(0);
 
   /// Feature values in KeyValue format.
   @$pb.TagNumber(3)
@@ -619,7 +619,7 @@ class StreamingFetchFeatureValuesRequest extends $pb.GeneratedMessage {
 /// [FeatureOnlineStoreService.StreamingFetchFeatureValues][google.cloud.aiplatform.v1beta1.FeatureOnlineStoreService.StreamingFetchFeatureValues].
 class StreamingFetchFeatureValuesResponse extends $pb.GeneratedMessage {
   factory StreamingFetchFeatureValuesResponse({
-    $1795.Status? status,
+    $1796.Status? status,
     $core.Iterable<FetchFeatureValuesResponse>? data,
     $core.Iterable<FeatureViewDataKey>? dataKeysWithError,
   }) {
@@ -640,7 +640,7 @@ class StreamingFetchFeatureValuesResponse extends $pb.GeneratedMessage {
   factory StreamingFetchFeatureValuesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingFetchFeatureValuesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..pc<FetchFeatureValuesResponse>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM, subBuilder: FetchFeatureValuesResponse.create)
     ..pc<FeatureViewDataKey>(3, _omitFieldNames ? '' : 'dataKeysWithError', $pb.PbFieldType.PM, subBuilder: FeatureViewDataKey.create)
     ..hasRequiredFields = false
@@ -676,15 +676,15 @@ class StreamingFetchFeatureValuesResponse extends $pb.GeneratedMessage {
   /// the listed data keys - the stream will remain open for further
   /// [FeatureOnlineStoreService.StreamingFetchFeatureValuesRequest][] requests.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.List<FetchFeatureValuesResponse> get data => $_getList(1);

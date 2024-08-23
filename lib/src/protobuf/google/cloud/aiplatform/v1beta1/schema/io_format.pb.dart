@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import '../../../../rpc/code.pbenum.dart' as $4219;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import '../../../../rpc/code.pbenum.dart' as $4220;
 
 class PredictionResult_Error extends $pb.GeneratedMessage {
   factory PredictionResult_Error({
-    $4219.Code? status,
+    $4220.Code? status,
     $core.String? message,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class PredictionResult_Error extends $pb.GeneratedMessage {
   factory PredictionResult_Error.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictionResult.Error', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
-    ..e<$4219.Code>(1, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4219.Code.OK, valueOf: $4219.Code.valueOf, enumValues: $4219.Code.values)
+    ..e<$4220.Code>(1, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4220.Code.OK, valueOf: $4220.Code.valueOf, enumValues: $4220.Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false
   ;
@@ -64,9 +64,9 @@ class PredictionResult_Error extends $pb.GeneratedMessage {
   /// Error status. This will be serialized into the enum name e.g.
   /// "NOT_FOUND".
   @$pb.TagNumber(1)
-  $4219.Code get status => $_getN(0);
+  $4220.Code get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($4219.Code v) { setField(1, v); }
+  set status($4220.Code v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
@@ -92,9 +92,9 @@ enum PredictionResult_Input {
 /// Represents a line of JSONL in the batch prediction output file.
 class PredictionResult extends $pb.GeneratedMessage {
   factory PredictionResult({
-    $1734.Struct? instance,
+    $1735.Struct? instance,
     $core.String? key,
-    $1734.Value? prediction,
+    $1735.Value? prediction,
     PredictionResult_Error? error,
   }) {
     final $result = create();
@@ -123,9 +123,9 @@ class PredictionResult extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'instance', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'instance', subBuilder: $1735.Struct.create)
     ..aOS(2, _omitFieldNames ? '' : 'key')
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'prediction', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'prediction', subBuilder: $1735.Value.create)
     ..aOM<PredictionResult_Error>(4, _omitFieldNames ? '' : 'error', subBuilder: PredictionResult_Error.create)
     ..hasRequiredFields = false
   ;
@@ -158,15 +158,15 @@ class PredictionResult extends $pb.GeneratedMessage {
   /// Struct is used here instead of Any so that JsonFormat does not append an
   /// extra "@type" field when we convert the proto to JSON.
   @$pb.TagNumber(1)
-  $1734.Struct get instance => $_getN(0);
+  $1735.Struct get instance => $_getN(0);
   @$pb.TagNumber(1)
-  set instance($1734.Struct v) { setField(1, v); }
+  set instance($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInstance() => $_has(0);
   @$pb.TagNumber(1)
   void clearInstance() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureInstance() => $_ensure(0);
+  $1735.Struct ensureInstance() => $_ensure(0);
 
   /// Optional user-provided key from the input instance.
   @$pb.TagNumber(2)
@@ -184,15 +184,15 @@ class PredictionResult extends $pb.GeneratedMessage {
   /// represent array of objects.
   /// Do not set error if this is set.
   @$pb.TagNumber(3)
-  $1734.Value get prediction => $_getN(2);
+  $1735.Value get prediction => $_getN(2);
   @$pb.TagNumber(3)
-  set prediction($1734.Value v) { setField(3, v); }
+  set prediction($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPrediction() => $_has(2);
   @$pb.TagNumber(3)
   void clearPrediction() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensurePrediction() => $_ensure(2);
+  $1735.Value ensurePrediction() => $_ensure(2);
 
   /// The error result.
   /// Do not set prediction if this is set.

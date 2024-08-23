@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 
 /// Tags point to a version and represent an alternative name that can be used
 /// to access the version.
@@ -397,7 +397,7 @@ class CreateTagRequest extends $pb.GeneratedMessage {
 class UpdateTagRequest extends $pb.GeneratedMessage {
   factory UpdateTagRequest({
     Tag? tag,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (tag != null) {
@@ -414,7 +414,7 @@ class UpdateTagRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTagRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.artifactregistry.v1beta2'), createEmptyInstance: create)
     ..aOM<Tag>(1, _omitFieldNames ? '' : 'tag', subBuilder: Tag.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -455,15 +455,15 @@ class UpdateTagRequest extends $pb.GeneratedMessage {
   /// see
   /// https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request to delete a tag.

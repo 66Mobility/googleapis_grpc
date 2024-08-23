@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'common.pb.dart' as $1459;
 import 'translation_service.pbenum.dart';
 
@@ -2406,7 +2406,7 @@ class BatchTranslateMetadata extends $pb.GeneratedMessage {
     $fixnum.Int64? translatedCharacters,
     $fixnum.Int64? failedCharacters,
     $fixnum.Int64? totalCharacters,
-    $1775.Timestamp? submitTime,
+    $1776.Timestamp? submitTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -2435,7 +2435,7 @@ class BatchTranslateMetadata extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'translatedCharacters')
     ..aInt64(3, _omitFieldNames ? '' : 'failedCharacters')
     ..aInt64(4, _omitFieldNames ? '' : 'totalCharacters')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2505,15 +2505,15 @@ class BatchTranslateMetadata extends $pb.GeneratedMessage {
 
   /// Time when the operation was submitted.
   @$pb.TagNumber(5)
-  $1775.Timestamp get submitTime => $_getN(4);
+  $1776.Timestamp get submitTime => $_getN(4);
   @$pb.TagNumber(5)
-  set submitTime($1775.Timestamp v) { setField(5, v); }
+  set submitTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSubmitTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearSubmitTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(4);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(4);
 }
 
 /// Stored in the
@@ -2525,8 +2525,8 @@ class BatchTranslateResponse extends $pb.GeneratedMessage {
     $fixnum.Int64? totalCharacters,
     $fixnum.Int64? translatedCharacters,
     $fixnum.Int64? failedCharacters,
-    $1775.Timestamp? submitTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? submitTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (totalCharacters != null) {
@@ -2554,8 +2554,8 @@ class BatchTranslateResponse extends $pb.GeneratedMessage {
     ..aInt64(1, _omitFieldNames ? '' : 'totalCharacters')
     ..aInt64(2, _omitFieldNames ? '' : 'translatedCharacters')
     ..aInt64(3, _omitFieldNames ? '' : 'failedCharacters')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2612,29 +2612,29 @@ class BatchTranslateResponse extends $pb.GeneratedMessage {
 
   /// Time when the operation was submitted.
   @$pb.TagNumber(4)
-  $1775.Timestamp get submitTime => $_getN(3);
+  $1776.Timestamp get submitTime => $_getN(3);
   @$pb.TagNumber(4)
-  set submitTime($1775.Timestamp v) { setField(4, v); }
+  set submitTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSubmitTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearSubmitTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(3);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(3);
 
   /// The time when the operation is finished and
   /// [google.longrunning.Operation.done][google.longrunning.Operation.done] is
   /// set to true.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 }
 
 enum GlossaryInputConfig_Source {
@@ -2855,8 +2855,8 @@ class Glossary extends $pb.GeneratedMessage {
     Glossary_LanguageCodesSet? languageCodesSet,
     GlossaryInputConfig? inputConfig,
     $core.int? entryCount,
-    $1775.Timestamp? submitTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? submitTime,
+    $1776.Timestamp? endTime,
     $core.String? displayName,
   }) {
     final $result = create();
@@ -2902,8 +2902,8 @@ class Glossary extends $pb.GeneratedMessage {
     ..aOM<Glossary_LanguageCodesSet>(4, _omitFieldNames ? '' : 'languageCodesSet', subBuilder: Glossary_LanguageCodesSet.create)
     ..aOM<GlossaryInputConfig>(5, _omitFieldNames ? '' : 'inputConfig', subBuilder: GlossaryInputConfig.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'entryCount', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
   ;
@@ -2992,27 +2992,27 @@ class Glossary extends $pb.GeneratedMessage {
 
   /// Output only. When CreateGlossary was called.
   @$pb.TagNumber(7)
-  $1775.Timestamp get submitTime => $_getN(5);
+  $1776.Timestamp get submitTime => $_getN(5);
   @$pb.TagNumber(7)
-  set submitTime($1775.Timestamp v) { setField(7, v); }
+  set submitTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSubmitTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearSubmitTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(5);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(5);
 
   /// Output only. When the glossary creation was finished.
   @$pb.TagNumber(8)
-  $1775.Timestamp get endTime => $_getN(6);
+  $1776.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(8)
-  set endTime($1775.Timestamp v) { setField(8, v); }
+  set endTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEndTime() => $_ensure(6);
+  $1776.Timestamp ensureEndTime() => $_ensure(6);
 
   /// Optional. The display name of the glossary.
   @$pb.TagNumber(9)
@@ -3098,7 +3098,7 @@ class CreateGlossaryRequest extends $pb.GeneratedMessage {
 class UpdateGlossaryRequest extends $pb.GeneratedMessage {
   factory UpdateGlossaryRequest({
     Glossary? glossary,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (glossary != null) {
@@ -3115,7 +3115,7 @@ class UpdateGlossaryRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGlossaryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.translation.v3'), createEmptyInstance: create)
     ..aOM<Glossary>(1, _omitFieldNames ? '' : 'glossary', subBuilder: Glossary.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3155,15 +3155,15 @@ class UpdateGlossaryRequest extends $pb.GeneratedMessage {
   /// The list of fields to be updated. Currently only `display_name` and
   /// 'input_config'
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for GetGlossary.
@@ -3832,7 +3832,7 @@ class CreateGlossaryMetadata extends $pb.GeneratedMessage {
   factory CreateGlossaryMetadata({
     $core.String? name,
     CreateGlossaryMetadata_State? state,
-    $1775.Timestamp? submitTime,
+    $1776.Timestamp? submitTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -3853,7 +3853,7 @@ class CreateGlossaryMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateGlossaryMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.translation.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<CreateGlossaryMetadata_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CreateGlossaryMetadata_State.STATE_UNSPECIFIED, valueOf: CreateGlossaryMetadata_State.valueOf, enumValues: CreateGlossaryMetadata_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3900,15 +3900,15 @@ class CreateGlossaryMetadata extends $pb.GeneratedMessage {
 
   /// The time when the operation was submitted to the server.
   @$pb.TagNumber(3)
-  $1775.Timestamp get submitTime => $_getN(2);
+  $1776.Timestamp get submitTime => $_getN(2);
   @$pb.TagNumber(3)
-  set submitTime($1775.Timestamp v) { setField(3, v); }
+  set submitTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSubmitTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearSubmitTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(2);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(2);
 }
 
 /// Stored in the
@@ -3918,7 +3918,7 @@ class UpdateGlossaryMetadata extends $pb.GeneratedMessage {
   factory UpdateGlossaryMetadata({
     Glossary? glossary,
     UpdateGlossaryMetadata_State? state,
-    $1775.Timestamp? submitTime,
+    $1776.Timestamp? submitTime,
   }) {
     final $result = create();
     if (glossary != null) {
@@ -3939,7 +3939,7 @@ class UpdateGlossaryMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGlossaryMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.translation.v3'), createEmptyInstance: create)
     ..aOM<Glossary>(1, _omitFieldNames ? '' : 'glossary', subBuilder: Glossary.create)
     ..e<UpdateGlossaryMetadata_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: UpdateGlossaryMetadata_State.STATE_UNSPECIFIED, valueOf: UpdateGlossaryMetadata_State.valueOf, enumValues: UpdateGlossaryMetadata_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3989,15 +3989,15 @@ class UpdateGlossaryMetadata extends $pb.GeneratedMessage {
 
   /// The time when the operation was submitted to the server.
   @$pb.TagNumber(3)
-  $1775.Timestamp get submitTime => $_getN(2);
+  $1776.Timestamp get submitTime => $_getN(2);
   @$pb.TagNumber(3)
-  set submitTime($1775.Timestamp v) { setField(3, v); }
+  set submitTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSubmitTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearSubmitTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(2);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(2);
 }
 
 /// Stored in the
@@ -4007,7 +4007,7 @@ class DeleteGlossaryMetadata extends $pb.GeneratedMessage {
   factory DeleteGlossaryMetadata({
     $core.String? name,
     DeleteGlossaryMetadata_State? state,
-    $1775.Timestamp? submitTime,
+    $1776.Timestamp? submitTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -4028,7 +4028,7 @@ class DeleteGlossaryMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteGlossaryMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.translation.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<DeleteGlossaryMetadata_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: DeleteGlossaryMetadata_State.STATE_UNSPECIFIED, valueOf: DeleteGlossaryMetadata_State.valueOf, enumValues: DeleteGlossaryMetadata_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4075,15 +4075,15 @@ class DeleteGlossaryMetadata extends $pb.GeneratedMessage {
 
   /// The time when the operation was submitted to the server.
   @$pb.TagNumber(3)
-  $1775.Timestamp get submitTime => $_getN(2);
+  $1776.Timestamp get submitTime => $_getN(2);
   @$pb.TagNumber(3)
-  set submitTime($1775.Timestamp v) { setField(3, v); }
+  set submitTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSubmitTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearSubmitTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(2);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(2);
 }
 
 /// Stored in the
@@ -4092,8 +4092,8 @@ class DeleteGlossaryMetadata extends $pb.GeneratedMessage {
 class DeleteGlossaryResponse extends $pb.GeneratedMessage {
   factory DeleteGlossaryResponse({
     $core.String? name,
-    $1775.Timestamp? submitTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? submitTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -4113,8 +4113,8 @@ class DeleteGlossaryResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteGlossaryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.translation.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4151,29 +4151,29 @@ class DeleteGlossaryResponse extends $pb.GeneratedMessage {
 
   /// The time when the operation was submitted to the server.
   @$pb.TagNumber(2)
-  $1775.Timestamp get submitTime => $_getN(1);
+  $1776.Timestamp get submitTime => $_getN(1);
   @$pb.TagNumber(2)
-  set submitTime($1775.Timestamp v) { setField(2, v); }
+  set submitTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSubmitTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSubmitTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(1);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(1);
 
   /// The time when the glossary deletion is finished and
   /// [google.longrunning.Operation.done][google.longrunning.Operation.done] is
   /// set to true.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// The BatchTranslateDocument request.
@@ -4605,8 +4605,8 @@ class BatchTranslateDocumentResponse extends $pb.GeneratedMessage {
     $fixnum.Int64? translatedCharacters,
     $fixnum.Int64? failedCharacters,
     $fixnum.Int64? totalBillableCharacters,
-    $1775.Timestamp? submitTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? submitTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (totalPages != null) {
@@ -4654,8 +4654,8 @@ class BatchTranslateDocumentResponse extends $pb.GeneratedMessage {
     ..aInt64(6, _omitFieldNames ? '' : 'translatedCharacters')
     ..aInt64(7, _omitFieldNames ? '' : 'failedCharacters')
     ..aInt64(8, _omitFieldNames ? '' : 'totalBillableCharacters')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4769,29 +4769,29 @@ class BatchTranslateDocumentResponse extends $pb.GeneratedMessage {
 
   /// Time when the operation was submitted.
   @$pb.TagNumber(9)
-  $1775.Timestamp get submitTime => $_getN(8);
+  $1776.Timestamp get submitTime => $_getN(8);
   @$pb.TagNumber(9)
-  set submitTime($1775.Timestamp v) { setField(9, v); }
+  set submitTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSubmitTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearSubmitTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(8);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(8);
 
   /// The time when the operation is finished and
   /// [google.longrunning.Operation.done][google.longrunning.Operation.done] is
   /// set to true.
   @$pb.TagNumber(10)
-  $1775.Timestamp get endTime => $_getN(9);
+  $1776.Timestamp get endTime => $_getN(9);
   @$pb.TagNumber(10)
-  set endTime($1775.Timestamp v) { setField(10, v); }
+  set endTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasEndTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearEndTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureEndTime() => $_ensure(9);
+  $1776.Timestamp ensureEndTime() => $_ensure(9);
 }
 
 /// State metadata for the batch translation operation.
@@ -4806,7 +4806,7 @@ class BatchTranslateDocumentMetadata extends $pb.GeneratedMessage {
     $fixnum.Int64? translatedCharacters,
     $fixnum.Int64? failedCharacters,
     $fixnum.Int64? totalBillableCharacters,
-    $1775.Timestamp? submitTime,
+    $1776.Timestamp? submitTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -4855,7 +4855,7 @@ class BatchTranslateDocumentMetadata extends $pb.GeneratedMessage {
     ..aInt64(7, _omitFieldNames ? '' : 'translatedCharacters')
     ..aInt64(8, _omitFieldNames ? '' : 'failedCharacters')
     ..aInt64(9, _omitFieldNames ? '' : 'totalBillableCharacters')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4979,15 +4979,15 @@ class BatchTranslateDocumentMetadata extends $pb.GeneratedMessage {
 
   /// Time when the operation was submitted.
   @$pb.TagNumber(10)
-  $1775.Timestamp get submitTime => $_getN(9);
+  $1776.Timestamp get submitTime => $_getN(9);
   @$pb.TagNumber(10)
-  set submitTime($1775.Timestamp v) { setField(10, v); }
+  set submitTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSubmitTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearSubmitTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(9);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(9);
 }
 
 /// Configures which glossary is used for a specific target language and defines

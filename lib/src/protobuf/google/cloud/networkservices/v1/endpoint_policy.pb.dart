@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4567;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4569;
 import 'endpoint_policy.pbenum.dart';
 
 export 'endpoint_policy.pbenum.dart';
@@ -27,13 +27,13 @@ export 'endpoint_policy.pbenum.dart';
 class EndpointPolicy extends $pb.GeneratedMessage {
   factory EndpointPolicy({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     EndpointPolicy_EndpointPolicyType? type,
     $core.String? authorizationPolicy,
-    $4567.EndpointMatcher? endpointMatcher,
-    $4567.TrafficPortSelector? trafficPortSelector,
+    $4569.EndpointMatcher? endpointMatcher,
+    $4569.TrafficPortSelector? trafficPortSelector,
     $core.String? description,
     $core.String? serverTlsPolicy,
     $core.String? clientTlsPolicy,
@@ -80,13 +80,13 @@ class EndpointPolicy extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EndpointPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'EndpointPolicy.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networkservices.v1'))
     ..e<EndpointPolicy_EndpointPolicyType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: EndpointPolicy_EndpointPolicyType.ENDPOINT_POLICY_TYPE_UNSPECIFIED, valueOf: EndpointPolicy_EndpointPolicyType.valueOf, enumValues: EndpointPolicy_EndpointPolicyType.values)
     ..aOS(7, _omitFieldNames ? '' : 'authorizationPolicy')
-    ..aOM<$4567.EndpointMatcher>(9, _omitFieldNames ? '' : 'endpointMatcher', subBuilder: $4567.EndpointMatcher.create)
-    ..aOM<$4567.TrafficPortSelector>(10, _omitFieldNames ? '' : 'trafficPortSelector', subBuilder: $4567.TrafficPortSelector.create)
+    ..aOM<$4569.EndpointMatcher>(9, _omitFieldNames ? '' : 'endpointMatcher', subBuilder: $4569.EndpointMatcher.create)
+    ..aOM<$4569.TrafficPortSelector>(10, _omitFieldNames ? '' : 'trafficPortSelector', subBuilder: $4569.TrafficPortSelector.create)
     ..aOS(11, _omitFieldNames ? '' : 'description')
     ..aOS(12, _omitFieldNames ? '' : 'serverTlsPolicy')
     ..aOS(13, _omitFieldNames ? '' : 'clientTlsPolicy')
@@ -127,27 +127,27 @@ class EndpointPolicy extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the EndpointPolicy resource.
   @$pb.TagNumber(4)
@@ -181,28 +181,28 @@ class EndpointPolicy extends $pb.GeneratedMessage {
   /// Required. A matcher that selects endpoints to which the policies should be
   /// applied.
   @$pb.TagNumber(9)
-  $4567.EndpointMatcher get endpointMatcher => $_getN(6);
+  $4569.EndpointMatcher get endpointMatcher => $_getN(6);
   @$pb.TagNumber(9)
-  set endpointMatcher($4567.EndpointMatcher v) { setField(9, v); }
+  set endpointMatcher($4569.EndpointMatcher v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasEndpointMatcher() => $_has(6);
   @$pb.TagNumber(9)
   void clearEndpointMatcher() => clearField(9);
   @$pb.TagNumber(9)
-  $4567.EndpointMatcher ensureEndpointMatcher() => $_ensure(6);
+  $4569.EndpointMatcher ensureEndpointMatcher() => $_ensure(6);
 
   /// Optional. Port selector for the (matched) endpoints. If no port selector is
   /// provided, the matched config is applied to all ports.
   @$pb.TagNumber(10)
-  $4567.TrafficPortSelector get trafficPortSelector => $_getN(7);
+  $4569.TrafficPortSelector get trafficPortSelector => $_getN(7);
   @$pb.TagNumber(10)
-  set trafficPortSelector($4567.TrafficPortSelector v) { setField(10, v); }
+  set trafficPortSelector($4569.TrafficPortSelector v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTrafficPortSelector() => $_has(7);
   @$pb.TagNumber(10)
   void clearTrafficPortSelector() => clearField(10);
   @$pb.TagNumber(10)
-  $4567.TrafficPortSelector ensureTrafficPortSelector() => $_ensure(7);
+  $4569.TrafficPortSelector ensureTrafficPortSelector() => $_ensure(7);
 
   /// Optional. A free-text description of the resource. Max length 1024
   /// characters.
@@ -537,7 +537,7 @@ class CreateEndpointPolicyRequest extends $pb.GeneratedMessage {
 /// Request used with the UpdateEndpointPolicy method.
 class UpdateEndpointPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateEndpointPolicyRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     EndpointPolicy? endpointPolicy,
   }) {
     final $result = create();
@@ -554,7 +554,7 @@ class UpdateEndpointPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateEndpointPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEndpointPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<EndpointPolicy>(2, _omitFieldNames ? '' : 'endpointPolicy', subBuilder: EndpointPolicy.create)
     ..hasRequiredFields = false
   ;
@@ -586,15 +586,15 @@ class UpdateEndpointPolicyRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Updated EndpointPolicy resource.
   @$pb.TagNumber(2)

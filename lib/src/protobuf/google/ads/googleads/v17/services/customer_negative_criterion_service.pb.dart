@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3796;
-import '../resources/customer_negative_criterion.pb.dart' as $3832;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3797;
+import '../resources/customer_negative_criterion.pb.dart' as $3833;
 
 /// Request message for
 /// [CustomerNegativeCriterionService.MutateCustomerNegativeCriteria][google.ads.googleads.v17.services.CustomerNegativeCriterionService.MutateCustomerNegativeCriteria].
@@ -25,7 +25,7 @@ class MutateCustomerNegativeCriteriaRequest extends $pb.GeneratedMessage {
     $core.Iterable<CustomerNegativeCriterionOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3796.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3797.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateCustomerNegativeCriteriaRequest extends $pb.GeneratedMessage {
     ..pc<CustomerNegativeCriterionOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: CustomerNegativeCriterionOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3796.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3796.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3796.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3796.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3797.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3797.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3797.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3797.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -120,9 +120,9 @@ class MutateCustomerNegativeCriteriaRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3796.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3797.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3796.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3797.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -138,7 +138,7 @@ enum CustomerNegativeCriterionOperation_Operation {
 /// A single operation (create or remove) on a customer level negative criterion.
 class CustomerNegativeCriterionOperation extends $pb.GeneratedMessage {
   factory CustomerNegativeCriterionOperation({
-    $3832.CustomerNegativeCriterion? create_1,
+    $3833.CustomerNegativeCriterion? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -161,7 +161,7 @@ class CustomerNegativeCriterionOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerNegativeCriterionOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3832.CustomerNegativeCriterion>(1, _omitFieldNames ? '' : 'create', subBuilder: $3832.CustomerNegativeCriterion.create)
+    ..aOM<$3833.CustomerNegativeCriterion>(1, _omitFieldNames ? '' : 'create', subBuilder: $3833.CustomerNegativeCriterion.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -192,15 +192,15 @@ class CustomerNegativeCriterionOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new criterion.
   @$pb.TagNumber(1)
-  $3832.CustomerNegativeCriterion get create_1 => $_getN(0);
+  $3833.CustomerNegativeCriterion get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3832.CustomerNegativeCriterion v) { setField(1, v); }
+  set create_1($3833.CustomerNegativeCriterion v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3832.CustomerNegativeCriterion ensureCreate_1() => $_ensure(0);
+  $3833.CustomerNegativeCriterion ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed criterion is expected,
   ///  in this format:
@@ -220,7 +220,7 @@ class CustomerNegativeCriterionOperation extends $pb.GeneratedMessage {
 class MutateCustomerNegativeCriteriaResponse extends $pb.GeneratedMessage {
   factory MutateCustomerNegativeCriteriaResponse({
     $core.Iterable<MutateCustomerNegativeCriteriaResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -237,7 +237,7 @@ class MutateCustomerNegativeCriteriaResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerNegativeCriteriaResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateCustomerNegativeCriteriaResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateCustomerNegativeCriteriaResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -271,22 +271,22 @@ class MutateCustomerNegativeCriteriaResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the criterion mutate.
 class MutateCustomerNegativeCriteriaResult extends $pb.GeneratedMessage {
   factory MutateCustomerNegativeCriteriaResult({
     $core.String? resourceName,
-    $3832.CustomerNegativeCriterion? customerNegativeCriterion,
+    $3833.CustomerNegativeCriterion? customerNegativeCriterion,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -303,7 +303,7 @@ class MutateCustomerNegativeCriteriaResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerNegativeCriteriaResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3832.CustomerNegativeCriterion>(2, _omitFieldNames ? '' : 'customerNegativeCriterion', subBuilder: $3832.CustomerNegativeCriterion.create)
+    ..aOM<$3833.CustomerNegativeCriterion>(2, _omitFieldNames ? '' : 'customerNegativeCriterion', subBuilder: $3833.CustomerNegativeCriterion.create)
     ..hasRequiredFields = false
   ;
 
@@ -341,15 +341,15 @@ class MutateCustomerNegativeCriteriaResult extends $pb.GeneratedMessage {
   /// The mutated criterion with only mutable fields after mutate. The field will
   /// only be returned when response_content_type is set to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3832.CustomerNegativeCriterion get customerNegativeCriterion => $_getN(1);
+  $3833.CustomerNegativeCriterion get customerNegativeCriterion => $_getN(1);
   @$pb.TagNumber(2)
-  set customerNegativeCriterion($3832.CustomerNegativeCriterion v) { setField(2, v); }
+  set customerNegativeCriterion($3833.CustomerNegativeCriterion v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomerNegativeCriterion() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomerNegativeCriterion() => clearField(2);
   @$pb.TagNumber(2)
-  $3832.CustomerNegativeCriterion ensureCustomerNegativeCriterion() => $_ensure(1);
+  $3833.CustomerNegativeCriterion ensureCustomerNegativeCriterion() => $_ensure(1);
 }
 
 

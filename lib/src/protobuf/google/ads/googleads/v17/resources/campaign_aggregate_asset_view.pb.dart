@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_field_type.pbenum.dart' as $3540;
-import '../enums/asset_source.pbenum.dart' as $3550;
+import '../enums/asset_field_type.pbenum.dart' as $3541;
+import '../enums/asset_source.pbenum.dart' as $3551;
 
 /// A campaign-level aggregate asset view that shows where the asset is linked,
 /// performamce of the asset and stats.
@@ -23,8 +23,8 @@ class CampaignAggregateAssetView extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? campaign,
     $core.String? asset,
-    $3550.AssetSourceEnum_AssetSource? assetSource,
-    $3540.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $3551.AssetSourceEnum_AssetSource? assetSource,
+    $3541.AssetFieldTypeEnum_AssetFieldType? fieldType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -52,8 +52,8 @@ class CampaignAggregateAssetView extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'campaign')
     ..aOS(3, _omitFieldNames ? '' : 'asset')
-    ..e<$3550.AssetSourceEnum_AssetSource>(4, _omitFieldNames ? '' : 'assetSource', $pb.PbFieldType.OE, defaultOrMaker: $3550.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $3550.AssetSourceEnum_AssetSource.valueOf, enumValues: $3550.AssetSourceEnum_AssetSource.values)
-    ..e<$3540.AssetFieldTypeEnum_AssetFieldType>(5, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3540.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3540.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3540.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$3551.AssetSourceEnum_AssetSource>(4, _omitFieldNames ? '' : 'assetSource', $pb.PbFieldType.OE, defaultOrMaker: $3551.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $3551.AssetSourceEnum_AssetSource.valueOf, enumValues: $3551.AssetSourceEnum_AssetSource.values)
+    ..e<$3541.AssetFieldTypeEnum_AssetFieldType>(5, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3541.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3541.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3541.AssetFieldTypeEnum_AssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -113,9 +113,9 @@ class CampaignAggregateAssetView extends $pb.GeneratedMessage {
 
   /// Output only. Source of the asset link.
   @$pb.TagNumber(4)
-  $3550.AssetSourceEnum_AssetSource get assetSource => $_getN(3);
+  $3551.AssetSourceEnum_AssetSource get assetSource => $_getN(3);
   @$pb.TagNumber(4)
-  set assetSource($3550.AssetSourceEnum_AssetSource v) { setField(4, v); }
+  set assetSource($3551.AssetSourceEnum_AssetSource v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAssetSource() => $_has(3);
   @$pb.TagNumber(4)
@@ -123,9 +123,9 @@ class CampaignAggregateAssetView extends $pb.GeneratedMessage {
 
   /// Output only. FieldType of the asset.
   @$pb.TagNumber(5)
-  $3540.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(4);
+  $3541.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(4);
   @$pb.TagNumber(5)
-  set fieldType($3540.AssetFieldTypeEnum_AssetFieldType v) { setField(5, v); }
+  set fieldType($3541.AssetFieldTypeEnum_AssetFieldType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFieldType() => $_has(4);
   @$pb.TagNumber(5)

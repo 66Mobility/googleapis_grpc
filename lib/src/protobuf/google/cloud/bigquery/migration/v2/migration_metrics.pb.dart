@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../api/distribution.pb.dart' as $4181;
+import '../../../../api/distribution.pb.dart' as $4182;
 import '../../../../api/metric.pbenum.dart' as $1673;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// The metrics object for a SubTask.
 class TimeSeries extends $pb.GeneratedMessage {
@@ -207,8 +207,8 @@ class Point extends $pb.GeneratedMessage {
 /// represents a single point in time.
 class TimeInterval extends $pb.GeneratedMessage {
   factory TimeInterval({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -224,8 +224,8 @@ class TimeInterval extends $pb.GeneratedMessage {
   factory TimeInterval.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeInterval', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -254,27 +254,27 @@ class TimeInterval extends $pb.GeneratedMessage {
   /// for the start time is the end time. The start time must not be
   /// later than the end time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Required. The end of the time interval.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 enum TypedValue_Value {
@@ -293,7 +293,7 @@ class TypedValue extends $pb.GeneratedMessage {
     $fixnum.Int64? int64Value,
     $core.double? doubleValue,
     $core.String? stringValue,
-    $4181.Distribution? distributionValue,
+    $4182.Distribution? distributionValue,
   }) {
     final $result = create();
     if (boolValue != null) {
@@ -331,7 +331,7 @@ class TypedValue extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'int64Value')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aOS(4, _omitFieldNames ? '' : 'stringValue')
-    ..aOM<$4181.Distribution>(5, _omitFieldNames ? '' : 'distributionValue', subBuilder: $4181.Distribution.create)
+    ..aOM<$4182.Distribution>(5, _omitFieldNames ? '' : 'distributionValue', subBuilder: $4182.Distribution.create)
     ..hasRequiredFields = false
   ;
 
@@ -403,15 +403,15 @@ class TypedValue extends $pb.GeneratedMessage {
 
   /// A distribution value.
   @$pb.TagNumber(5)
-  $4181.Distribution get distributionValue => $_getN(4);
+  $4182.Distribution get distributionValue => $_getN(4);
   @$pb.TagNumber(5)
-  set distributionValue($4181.Distribution v) { setField(5, v); }
+  set distributionValue($4182.Distribution v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDistributionValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearDistributionValue() => clearField(5);
   @$pb.TagNumber(5)
-  $4181.Distribution ensureDistributionValue() => $_ensure(4);
+  $4182.Distribution ensureDistributionValue() => $_ensure(4);
 }
 
 

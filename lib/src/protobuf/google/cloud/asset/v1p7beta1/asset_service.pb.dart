@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'asset_service.pbenum.dart';
 
 export 'asset_service.pbenum.dart';
@@ -22,7 +22,7 @@ export 'asset_service.pbenum.dart';
 class ExportAssetsRequest extends $pb.GeneratedMessage {
   factory ExportAssetsRequest({
     $core.String? parent,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.Iterable<$core.String>? assetTypes,
     ContentType? contentType,
     OutputConfig? outputConfig,
@@ -55,7 +55,7 @@ class ExportAssetsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportAssetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p7beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..pPS(3, _omitFieldNames ? '' : 'assetTypes')
     ..e<ContentType>(4, _omitFieldNames ? '' : 'contentType', $pb.PbFieldType.OE, defaultOrMaker: ContentType.CONTENT_TYPE_UNSPECIFIED, valueOf: ContentType.valueOf, enumValues: ContentType.values)
     ..aOM<OutputConfig>(5, _omitFieldNames ? '' : 'outputConfig', subBuilder: OutputConfig.create)
@@ -103,15 +103,15 @@ class ExportAssetsRequest extends $pb.GeneratedMessage {
   /// data collection and indexing, there is a volatile window during which
   /// running the same query may get different results.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   ///  A list of asset types to take a snapshot for. For example:
   ///  "compute.googleapis.com/Disk".
@@ -179,7 +179,7 @@ class ExportAssetsRequest extends $pb.GeneratedMessage {
 /// field.
 class ExportAssetsResponse extends $pb.GeneratedMessage {
   factory ExportAssetsResponse({
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     OutputConfig? outputConfig,
     OutputResult? outputResult,
   }) {
@@ -200,7 +200,7 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
   factory ExportAssetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p7beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOM<OutputConfig>(2, _omitFieldNames ? '' : 'outputConfig', subBuilder: OutputConfig.create)
     ..aOM<OutputResult>(3, _omitFieldNames ? '' : 'outputResult', subBuilder: OutputResult.create)
     ..hasRequiredFields = false
@@ -229,15 +229,15 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
 
   /// Time the snapshot was taken.
   @$pb.TagNumber(1)
-  $1775.Timestamp get readTime => $_getN(0);
+  $1776.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(1)
-  set readTime($1775.Timestamp v) { setField(1, v); }
+  set readTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReadTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReadTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReadTime() => $_ensure(0);
+  $1776.Timestamp ensureReadTime() => $_ensure(0);
 
   /// Output configuration indicating where the results were output to.
   @$pb.TagNumber(2)

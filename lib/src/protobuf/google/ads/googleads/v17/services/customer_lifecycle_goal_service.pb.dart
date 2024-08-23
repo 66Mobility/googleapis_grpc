@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/customer_lifecycle_goal.pb.dart' as $3945;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/customer_lifecycle_goal.pb.dart' as $3946;
 
 /// Request message for
 /// [CustomerLifecycleGoalService.configureCustomerLifecycleGoals][].
@@ -111,9 +111,9 @@ enum CustomerLifecycleGoalOperation_Operation {
 /// A single operation on a customer lifecycle goal.
 class CustomerLifecycleGoalOperation extends $pb.GeneratedMessage {
   factory CustomerLifecycleGoalOperation({
-    $3945.CustomerLifecycleGoal? create_1,
-    $2209.FieldMask? updateMask,
-    $3945.CustomerLifecycleGoal? update,
+    $3946.CustomerLifecycleGoal? create_1,
+    $2210.FieldMask? updateMask,
+    $3946.CustomerLifecycleGoal? update,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -138,9 +138,9 @@ class CustomerLifecycleGoalOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerLifecycleGoalOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 3])
-    ..aOM<$3945.CustomerLifecycleGoal>(1, _omitFieldNames ? '' : 'create', subBuilder: $3945.CustomerLifecycleGoal.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$3945.CustomerLifecycleGoal>(3, _omitFieldNames ? '' : 'update', subBuilder: $3945.CustomerLifecycleGoal.create)
+    ..aOM<$3946.CustomerLifecycleGoal>(1, _omitFieldNames ? '' : 'create', subBuilder: $3946.CustomerLifecycleGoal.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$3946.CustomerLifecycleGoal>(3, _omitFieldNames ? '' : 'update', subBuilder: $3946.CustomerLifecycleGoal.create)
     ..hasRequiredFields = false
   ;
 
@@ -170,40 +170,40 @@ class CustomerLifecycleGoalOperation extends $pb.GeneratedMessage {
 
   /// Create operation: Create a new customer lifecycle goal.
   @$pb.TagNumber(1)
-  $3945.CustomerLifecycleGoal get create_1 => $_getN(0);
+  $3946.CustomerLifecycleGoal get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3945.CustomerLifecycleGoal v) { setField(1, v); }
+  set create_1($3946.CustomerLifecycleGoal v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3945.CustomerLifecycleGoal ensureCreate_1() => $_ensure(0);
+  $3946.CustomerLifecycleGoal ensureCreate_1() => $_ensure(0);
 
   /// Optional. FieldMask that determines which resource fields are modified in
   /// an update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Update operation: Update an existing customer lifecycle goal.
   @$pb.TagNumber(3)
-  $3945.CustomerLifecycleGoal get update => $_getN(2);
+  $3946.CustomerLifecycleGoal get update => $_getN(2);
   @$pb.TagNumber(3)
-  set update($3945.CustomerLifecycleGoal v) { setField(3, v); }
+  set update($3946.CustomerLifecycleGoal v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdate() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdate() => clearField(3);
   @$pb.TagNumber(3)
-  $3945.CustomerLifecycleGoal ensureUpdate() => $_ensure(2);
+  $3946.CustomerLifecycleGoal ensureUpdate() => $_ensure(2);
 }
 
 /// Response message for

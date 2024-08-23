@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/error_details.pb.dart' as $4365;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/error_details.pb.dart' as $4366;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'vmmigration.pbenum.dart';
 
 export 'vmmigration.pbenum.dart';
@@ -27,15 +27,15 @@ export 'vmmigration.pbenum.dart';
 /// status.
 class ReplicationCycle extends $pb.GeneratedMessage {
   factory ReplicationCycle({
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   @$core.Deprecated('This field is deprecated.')
     $core.int? progressPercent,
-    $1775.Timestamp? endTime,
-    $1737.Duration? totalPauseDuration,
+    $1776.Timestamp? endTime,
+    $1738.Duration? totalPauseDuration,
     $core.Iterable<CycleStep>? steps,
     $core.int? cycleNumber,
     ReplicationCycle_State? state,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.String? name,
   }) {
     final $result = create();
@@ -74,14 +74,14 @@ class ReplicationCycle extends $pb.GeneratedMessage {
   factory ReplicationCycle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReplicationCycle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'totalPauseDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'totalPauseDuration', subBuilder: $1738.Duration.create)
     ..pc<CycleStep>(9, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: CycleStep.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'cycleNumber', $pb.PbFieldType.O3)
     ..e<ReplicationCycle_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ReplicationCycle_State.STATE_UNSPECIFIED, valueOf: ReplicationCycle_State.valueOf, enumValues: ReplicationCycle_State.values)
-    ..aOM<$1795.Status>(12, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(12, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOS(13, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
   ;
@@ -109,15 +109,15 @@ class ReplicationCycle extends $pb.GeneratedMessage {
 
   /// The time the replication cycle has started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The current progress in percentage of this cycle.
   /// Was replaced by 'steps' field, which breaks down the cycle progression more
@@ -137,27 +137,27 @@ class ReplicationCycle extends $pb.GeneratedMessage {
 
   /// The time the replication cycle has ended.
   @$pb.TagNumber(6)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(6)
-  set endTime($1775.Timestamp v) { setField(6, v); }
+  set endTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// The accumulated duration the replication cycle was paused.
   @$pb.TagNumber(7)
-  $1737.Duration get totalPauseDuration => $_getN(3);
+  $1738.Duration get totalPauseDuration => $_getN(3);
   @$pb.TagNumber(7)
-  set totalPauseDuration($1737.Duration v) { setField(7, v); }
+  set totalPauseDuration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTotalPauseDuration() => $_has(3);
   @$pb.TagNumber(7)
   void clearTotalPauseDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureTotalPauseDuration() => $_ensure(3);
+  $1738.Duration ensureTotalPauseDuration() => $_ensure(3);
 
   /// The cycle's steps list representing its progress.
   @$pb.TagNumber(9)
@@ -185,15 +185,15 @@ class ReplicationCycle extends $pb.GeneratedMessage {
 
   /// Provides details on the state of the cycle in case of an error.
   @$pb.TagNumber(12)
-  $1795.Status get error => $_getN(7);
+  $1796.Status get error => $_getN(7);
   @$pb.TagNumber(12)
-  set error($1795.Status v) { setField(12, v); }
+  set error($1796.Status v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(12)
   void clearError() => clearField(12);
   @$pb.TagNumber(12)
-  $1795.Status ensureError() => $_ensure(7);
+  $1796.Status ensureError() => $_ensure(7);
 
   /// The identifier of the ReplicationCycle.
   @$pb.TagNumber(13)
@@ -216,8 +216,8 @@ enum CycleStep_Step {
 /// CycleStep holds information about a step progress.
 class CycleStep extends $pb.GeneratedMessage {
   factory CycleStep({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     InitializingReplicationStep? initializingReplication,
     ReplicatingStep? replicating,
     PostProcessingStep? postProcessing,
@@ -252,8 +252,8 @@ class CycleStep extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CycleStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<InitializingReplicationStep>(3, _omitFieldNames ? '' : 'initializingReplication', subBuilder: InitializingReplicationStep.create)
     ..aOM<ReplicatingStep>(4, _omitFieldNames ? '' : 'replicating', subBuilder: ReplicatingStep.create)
     ..aOM<PostProcessingStep>(5, _omitFieldNames ? '' : 'postProcessing', subBuilder: PostProcessingStep.create)
@@ -286,27 +286,27 @@ class CycleStep extends $pb.GeneratedMessage {
 
   /// The time the cycle step has started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the cycle step has ended.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Initializing replication step.
   @$pb.TagNumber(3)
@@ -513,7 +513,7 @@ class PostProcessingStep extends $pb.GeneratedMessage {
 /// ReplicationSync contain information about the last replica sync to the cloud.
 class ReplicationSync extends $pb.GeneratedMessage {
   factory ReplicationSync({
-    $1775.Timestamp? lastSyncTime,
+    $1776.Timestamp? lastSyncTime,
   }) {
     final $result = create();
     if (lastSyncTime != null) {
@@ -526,7 +526,7 @@ class ReplicationSync extends $pb.GeneratedMessage {
   factory ReplicationSync.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReplicationSync', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'lastSyncTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'lastSyncTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -554,15 +554,15 @@ class ReplicationSync extends $pb.GeneratedMessage {
   /// The most updated snapshot created time in the source that finished
   /// replication.
   @$pb.TagNumber(1)
-  $1775.Timestamp get lastSyncTime => $_getN(0);
+  $1776.Timestamp get lastSyncTime => $_getN(0);
   @$pb.TagNumber(1)
-  set lastSyncTime($1775.Timestamp v) { setField(1, v); }
+  set lastSyncTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLastSyncTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearLastSyncTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureLastSyncTime() => $_ensure(0);
+  $1776.Timestamp ensureLastSyncTime() => $_ensure(0);
 }
 
 enum MigratingVm_TargetVmDefaults {
@@ -583,17 +583,17 @@ class MigratingVm extends $pb.GeneratedMessage {
     $core.String? sourceVmId,
     $core.String? description,
     SchedulePolicy? policy,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     ReplicationSync? lastSync,
     ReplicationCycle? currentSyncInfo,
     $core.String? group,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<CloneJob>? recentCloneJobs,
     $core.String? displayName,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.Iterable<CutoverJob>? recentCutoverJobs,
-    $1775.Timestamp? stateTime,
+    $1776.Timestamp? stateTime,
     MigratingVm_State? state,
     ComputeEngineTargetDefaults? computeEngineTargetDefaults,
     AwsSourceVmDetails? awsSourceVmDetails,
@@ -674,17 +674,17 @@ class MigratingVm extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'sourceVmId')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<SchedulePolicy>(8, _omitFieldNames ? '' : 'policy', subBuilder: SchedulePolicy.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ReplicationSync>(11, _omitFieldNames ? '' : 'lastSync', subBuilder: ReplicationSync.create)
     ..aOM<ReplicationCycle>(13, _omitFieldNames ? '' : 'currentSyncInfo', subBuilder: ReplicationCycle.create)
     ..aOS(15, _omitFieldNames ? '' : 'group')
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'labels', entryClassName: 'MigratingVm.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.vmmigration.v1'))
     ..pc<CloneJob>(17, _omitFieldNames ? '' : 'recentCloneJobs', $pb.PbFieldType.PM, subBuilder: CloneJob.create)
     ..aOS(18, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1795.Status>(19, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(19, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..pc<CutoverJob>(20, _omitFieldNames ? '' : 'recentCutoverJobs', $pb.PbFieldType.PM, subBuilder: CutoverJob.create)
-    ..aOM<$1775.Timestamp>(22, _omitFieldNames ? '' : 'stateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(22, _omitFieldNames ? '' : 'stateTime', subBuilder: $1776.Timestamp.create)
     ..e<MigratingVm_State>(23, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MigratingVm_State.STATE_UNSPECIFIED, valueOf: MigratingVm_State.valueOf, enumValues: MigratingVm_State.values)
     ..aOM<ComputeEngineTargetDefaults>(26, _omitFieldNames ? '' : 'computeEngineTargetDefaults', subBuilder: ComputeEngineTargetDefaults.create)
     ..aOM<AwsSourceVmDetails>(29, _omitFieldNames ? '' : 'awsSourceVmDetails', subBuilder: AwsSourceVmDetails.create)
@@ -765,27 +765,27 @@ class MigratingVm extends $pb.GeneratedMessage {
   /// Output only. The time the migrating VM was created (this refers to this
   /// resource and not to the time it was installed in the source).
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The last time the migrating VM resource was updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. The most updated snapshot created time in the source that
   /// finished replication.
@@ -850,15 +850,15 @@ class MigratingVm extends $pb.GeneratedMessage {
   /// Output only. Provides details on the state of the Migrating VM in case of
   /// an error in replication.
   @$pb.TagNumber(19)
-  $1795.Status get error => $_getN(12);
+  $1796.Status get error => $_getN(12);
   @$pb.TagNumber(19)
-  set error($1795.Status v) { setField(19, v); }
+  set error($1796.Status v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasError() => $_has(12);
   @$pb.TagNumber(19)
   void clearError() => clearField(19);
   @$pb.TagNumber(19)
-  $1795.Status ensureError() => $_ensure(12);
+  $1796.Status ensureError() => $_ensure(12);
 
   /// Output only. The recent cutover jobs performed on the migrating VM.
   /// This field holds the vm's last completed cutover job and the vm's
@@ -870,15 +870,15 @@ class MigratingVm extends $pb.GeneratedMessage {
 
   /// Output only. The last time the migrating VM state was updated.
   @$pb.TagNumber(22)
-  $1775.Timestamp get stateTime => $_getN(14);
+  $1776.Timestamp get stateTime => $_getN(14);
   @$pb.TagNumber(22)
-  set stateTime($1775.Timestamp v) { setField(22, v); }
+  set stateTime($1776.Timestamp v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasStateTime() => $_has(14);
   @$pb.TagNumber(22)
   void clearStateTime() => clearField(22);
   @$pb.TagNumber(22)
-  $1775.Timestamp ensureStateTime() => $_ensure(14);
+  $1776.Timestamp ensureStateTime() => $_ensure(14);
 
   /// Output only. State of the MigratingVm.
   @$pb.TagNumber(23)
@@ -932,13 +932,13 @@ enum CloneJob_TargetVmDetails {
 /// CloneJob being cancelled or upon failure to clone.
 class CloneJob extends $pb.GeneratedMessage {
   factory CloneJob({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? name,
     CloneJob_State? state,
-    $1775.Timestamp? stateTime,
-    $1795.Status? error,
+    $1776.Timestamp? stateTime,
+    $1796.Status? error,
     ComputeEngineTargetDetails? computeEngineTargetDetails,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? endTime,
     $core.Iterable<CloneStep>? steps,
   }) {
     final $result = create();
@@ -978,13 +978,13 @@ class CloneJob extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CloneJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..oo(0, [20])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..e<CloneJob_State>(12, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CloneJob_State.STATE_UNSPECIFIED, valueOf: CloneJob_State.valueOf, enumValues: CloneJob_State.values)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'stateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(17, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'stateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(17, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<ComputeEngineTargetDetails>(20, _omitFieldNames ? '' : 'computeEngineTargetDetails', subBuilder: ComputeEngineTargetDetails.create)
-    ..aOM<$1775.Timestamp>(22, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(22, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..pc<CloneStep>(23, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: CloneStep.create)
     ..hasRequiredFields = false
   ;
@@ -1016,15 +1016,15 @@ class CloneJob extends $pb.GeneratedMessage {
   /// Output only. The time the clone job was created (as an API call, not when
   /// it was actually created in the target).
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The name of the clone.
   @$pb.TagNumber(3)
@@ -1048,28 +1048,28 @@ class CloneJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last updated.
   @$pb.TagNumber(14)
-  $1775.Timestamp get stateTime => $_getN(3);
+  $1776.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(14)
-  set stateTime($1775.Timestamp v) { setField(14, v); }
+  set stateTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(14)
   void clearStateTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureStateTime() => $_ensure(3);
+  $1776.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details for the errors that led to the Clone Job's
   /// state.
   @$pb.TagNumber(17)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(17)
-  set error($1795.Status v) { setField(17, v); }
+  set error($1796.Status v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(17)
   void clearError() => clearField(17);
   @$pb.TagNumber(17)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 
   /// Output only. Details of the target VM in Compute Engine.
   @$pb.TagNumber(20)
@@ -1085,15 +1085,15 @@ class CloneJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the clone job was ended.
   @$pb.TagNumber(22)
-  $1775.Timestamp get endTime => $_getN(6);
+  $1776.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(22)
-  set endTime($1775.Timestamp v) { setField(22, v); }
+  set endTime($1776.Timestamp v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(22)
   void clearEndTime() => clearField(22);
   @$pb.TagNumber(22)
-  $1775.Timestamp ensureEndTime() => $_ensure(6);
+  $1776.Timestamp ensureEndTime() => $_ensure(6);
 
   /// Output only. The clone steps list representing its progress.
   @$pb.TagNumber(23)
@@ -1110,8 +1110,8 @@ enum CloneStep_Step {
 /// CloneStep holds information about the clone step progress.
 class CloneStep extends $pb.GeneratedMessage {
   factory CloneStep({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     AdaptingOSStep? adaptingOs,
     PreparingVMDisksStep? preparingVmDisks,
     InstantiatingMigratedVMStep? instantiatingMigratedVm,
@@ -1146,8 +1146,8 @@ class CloneStep extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CloneStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<AdaptingOSStep>(3, _omitFieldNames ? '' : 'adaptingOs', subBuilder: AdaptingOSStep.create)
     ..aOM<PreparingVMDisksStep>(4, _omitFieldNames ? '' : 'preparingVmDisks', subBuilder: PreparingVMDisksStep.create)
     ..aOM<InstantiatingMigratedVMStep>(5, _omitFieldNames ? '' : 'instantiatingMigratedVm', subBuilder: InstantiatingMigratedVMStep.create)
@@ -1180,27 +1180,27 @@ class CloneStep extends $pb.GeneratedMessage {
 
   /// The time the step has started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the step has ended.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Adapting OS step.
   @$pb.TagNumber(3)
@@ -1348,15 +1348,15 @@ enum CutoverJob_TargetVmDetails {
 /// clonning the VM using the replicated snapshot.
 class CutoverJob extends $pb.GeneratedMessage {
   factory CutoverJob({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? name,
     CutoverJob_State? state,
-    $1775.Timestamp? stateTime,
-    $1795.Status? error,
+    $1776.Timestamp? stateTime,
+    $1796.Status? error,
     $core.String? stateMessage,
     $core.int? progressPercent,
     ComputeEngineTargetDetails? computeEngineTargetDetails,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? endTime,
     $core.Iterable<CutoverStep>? steps,
   }) {
     final $result = create();
@@ -1402,15 +1402,15 @@ class CutoverJob extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CutoverJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..oo(0, [14])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..e<CutoverJob_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CutoverJob_State.STATE_UNSPECIFIED, valueOf: CutoverJob_State.valueOf, enumValues: CutoverJob_State.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'stateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'stateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOS(10, _omitFieldNames ? '' : 'stateMessage')
     ..a<$core.int>(13, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
     ..aOM<ComputeEngineTargetDetails>(14, _omitFieldNames ? '' : 'computeEngineTargetDetails', subBuilder: ComputeEngineTargetDetails.create)
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..pc<CutoverStep>(17, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: CutoverStep.create)
     ..hasRequiredFields = false
   ;
@@ -1442,15 +1442,15 @@ class CutoverJob extends $pb.GeneratedMessage {
   /// Output only. The time the cutover job was created (as an API call, not when
   /// it was actually created in the target).
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The name of the cutover job.
   @$pb.TagNumber(3)
@@ -1474,28 +1474,28 @@ class CutoverJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get stateTime => $_getN(3);
+  $1776.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set stateTime($1775.Timestamp v) { setField(6, v); }
+  set stateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearStateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureStateTime() => $_ensure(3);
+  $1776.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details for the errors that led to the Cutover Job's
   /// state.
   @$pb.TagNumber(9)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(9)
-  set error($1795.Status v) { setField(9, v); }
+  set error($1796.Status v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(9)
   void clearError() => clearField(9);
   @$pb.TagNumber(9)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 
   /// Output only. A message providing possible extra details about the current
   /// state.
@@ -1532,15 +1532,15 @@ class CutoverJob extends $pb.GeneratedMessage {
 
   /// Output only. The time the cutover job had finished.
   @$pb.TagNumber(16)
-  $1775.Timestamp get endTime => $_getN(8);
+  $1776.Timestamp get endTime => $_getN(8);
   @$pb.TagNumber(16)
-  set endTime($1775.Timestamp v) { setField(16, v); }
+  set endTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasEndTime() => $_has(8);
   @$pb.TagNumber(16)
   void clearEndTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureEndTime() => $_ensure(8);
+  $1776.Timestamp ensureEndTime() => $_ensure(8);
 
   /// Output only. The cutover steps list representing its progress.
   @$pb.TagNumber(17)
@@ -1559,8 +1559,8 @@ enum CutoverStep_Step {
 /// CutoverStep holds information about the cutover step progress.
 class CutoverStep extends $pb.GeneratedMessage {
   factory CutoverStep({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     ReplicationCycle? previousReplicationCycle,
     ShuttingDownSourceVMStep? shuttingDownSourceVm,
     ReplicationCycle? finalSync,
@@ -1605,8 +1605,8 @@ class CutoverStep extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CutoverStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5, 6, 7])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ReplicationCycle>(3, _omitFieldNames ? '' : 'previousReplicationCycle', subBuilder: ReplicationCycle.create)
     ..aOM<ShuttingDownSourceVMStep>(4, _omitFieldNames ? '' : 'shuttingDownSourceVm', subBuilder: ShuttingDownSourceVMStep.create)
     ..aOM<ReplicationCycle>(5, _omitFieldNames ? '' : 'finalSync', subBuilder: ReplicationCycle.create)
@@ -1641,27 +1641,27 @@ class CutoverStep extends $pb.GeneratedMessage {
 
   /// The time the step has started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the step has ended.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// A replication cycle prior cutover step.
   @$pb.TagNumber(3)
@@ -2206,8 +2206,8 @@ enum Source_SourceDetails {
 class Source extends $pb.GeneratedMessage {
   factory Source({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     VmwareSourceDetails? vmware,
@@ -2249,8 +2249,8 @@ class Source extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Source', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..oo(0, [10, 12])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Source.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.vmmigration.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOM<VmwareSourceDetails>(10, _omitFieldNames ? '' : 'vmware', subBuilder: VmwareSourceDetails.create)
@@ -2294,27 +2294,27 @@ class Source extends $pb.GeneratedMessage {
 
   /// Output only. The create time timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The labels of the source.
   @$pb.TagNumber(4)
@@ -2599,7 +2599,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   factory AwsSourceDetails({
     $core.String? awsRegion,
     AwsSourceDetails_State? state,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.Iterable<$core.String>? inventorySecurityGroupNames,
     $core.Map<$core.String, $core.String>? migrationResourcesUserTags,
     $core.String? publicIp,
@@ -2645,7 +2645,7 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
     ..oo(0, [11])
     ..aOS(3, _omitFieldNames ? '' : 'awsRegion')
     ..e<AwsSourceDetails_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AwsSourceDetails_State.STATE_UNSPECIFIED, valueOf: AwsSourceDetails_State.valueOf, enumValues: AwsSourceDetails_State.values)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..pPS(7, _omitFieldNames ? '' : 'inventorySecurityGroupNames')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'migrationResourcesUserTags', entryClassName: 'AwsSourceDetails.MigrationResourcesUserTagsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.vmmigration.v1'))
     ..aOS(9, _omitFieldNames ? '' : 'publicIp')
@@ -2701,15 +2701,15 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
   /// Output only. Provides details on the state of the Source in case of an
   /// error.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 
   /// AWS security group names to limit the scope of the source
   /// inventory.
@@ -2757,15 +2757,15 @@ class AwsSourceDetails extends $pb.GeneratedMessage {
 /// migration data transfer.
 class DatacenterConnector extends $pb.GeneratedMessage {
   factory DatacenterConnector({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? name,
     $core.String? serviceAccount,
     $core.String? version,
     DatacenterConnector_State? state,
-    $1775.Timestamp? stateTime,
+    $1776.Timestamp? stateTime,
     $core.String? bucket,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.String? registrationId,
     $core.String? applianceInfrastructureVersion,
     $core.String? applianceSoftwareVersion,
@@ -2822,15 +2822,15 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   factory DatacenterConnector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatacenterConnector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(6, _omitFieldNames ? '' : 'version')
     ..e<DatacenterConnector_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: DatacenterConnector_State.STATE_UNSPECIFIED, valueOf: DatacenterConnector_State.valueOf, enumValues: DatacenterConnector_State.values)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'stateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'stateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'bucket')
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOS(12, _omitFieldNames ? '' : 'registrationId')
     ..aOS(13, _omitFieldNames ? '' : 'applianceInfrastructureVersion')
     ..aOS(14, _omitFieldNames ? '' : 'applianceSoftwareVersion')
@@ -2863,27 +2863,27 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   /// Output only. The time the connector was created (as an API call, not when
   /// it was actually installed).
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The last time the connector was updated with an API call.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Output only. The connector's name.
   @$pb.TagNumber(3)
@@ -2930,15 +2930,15 @@ class DatacenterConnector extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last set.
   @$pb.TagNumber(8)
-  $1775.Timestamp get stateTime => $_getN(6);
+  $1776.Timestamp get stateTime => $_getN(6);
   @$pb.TagNumber(8)
-  set stateTime($1775.Timestamp v) { setField(8, v); }
+  set stateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearStateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureStateTime() => $_ensure(6);
+  $1776.Timestamp ensureStateTime() => $_ensure(6);
 
   /// Output only. The communication channel between the datacenter connector and
   /// Google Cloud.
@@ -2954,15 +2954,15 @@ class DatacenterConnector extends $pb.GeneratedMessage {
   /// Output only. Provides details on the state of the Datacenter Connector in
   /// case of an error.
   @$pb.TagNumber(11)
-  $1795.Status get error => $_getN(8);
+  $1796.Status get error => $_getN(8);
   @$pb.TagNumber(11)
-  set error($1795.Status v) { setField(11, v); }
+  set error($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(11)
   void clearError() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureError() => $_ensure(8);
+  $1796.Status ensureError() => $_ensure(8);
 
   /// Immutable. A unique key for this connector. This key is internal to the OVA
   /// connector and is supplied with its creation during the registration process
@@ -3030,8 +3030,8 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   factory UpgradeStatus({
     $core.String? version,
     UpgradeStatus_State? state,
-    $1795.Status? error,
-    $1775.Timestamp? startTime,
+    $1796.Status? error,
+    $1776.Timestamp? startTime,
     $core.String? previousVersion,
   }) {
     final $result = create();
@@ -3059,8 +3059,8 @@ class UpgradeStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpgradeStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'version')
     ..e<UpgradeStatus_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: UpgradeStatus_State.STATE_UNSPECIFIED, valueOf: UpgradeStatus_State.valueOf, enumValues: UpgradeStatus_State.values)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'previousVersion')
     ..hasRequiredFields = false
   ;
@@ -3108,27 +3108,27 @@ class UpgradeStatus extends $pb.GeneratedMessage {
 
   /// Provides details on the state of the upgrade operation in case of an error.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 
   /// The time the operation was started.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// The version from which we upgraded.
   @$pb.TagNumber(5)
@@ -3669,7 +3669,7 @@ class CreateSourceRequest extends $pb.GeneratedMessage {
 /// Update message for 'UpdateSources' request.
 class UpdateSourceRequest extends $pb.GeneratedMessage {
   factory UpdateSourceRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Source? source,
     $core.String? requestId,
   }) {
@@ -3690,7 +3690,7 @@ class UpdateSourceRequest extends $pb.GeneratedMessage {
   factory UpdateSourceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Source>(2, _omitFieldNames ? '' : 'source', subBuilder: Source.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -3723,15 +3723,15 @@ class UpdateSourceRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The update request body.
   @$pb.TagNumber(2)
@@ -4601,7 +4601,7 @@ enum FetchInventoryResponse_SourceVms {
 class FetchInventoryResponse extends $pb.GeneratedMessage {
   factory FetchInventoryResponse({
     VmwareVmsDetails? vmwareVms,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     AwsVmsDetails? awsVms,
   }) {
     final $result = create();
@@ -4628,7 +4628,7 @@ class FetchInventoryResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchInventoryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..oo(0, [1, 3])
     ..aOM<VmwareVmsDetails>(1, _omitFieldNames ? '' : 'vmwareVms', subBuilder: VmwareVmsDetails.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<AwsVmsDetails>(3, _omitFieldNames ? '' : 'awsVms', subBuilder: AwsVmsDetails.create)
     ..hasRequiredFields = false
   ;
@@ -4672,15 +4672,15 @@ class FetchInventoryResponse extends $pb.GeneratedMessage {
   /// Output only. The timestamp when the source was last queried (if the result
   /// is from the cache).
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// The description of the VMs in a Source of type AWS.
   @$pb.TagNumber(3)
@@ -4702,11 +4702,11 @@ class UtilizationReport extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     UtilizationReport_State? state,
-    $1775.Timestamp? stateTime,
-    $1795.Status? error,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? stateTime,
+    $1796.Status? error,
+    $1776.Timestamp? createTime,
     UtilizationReport_TimeFrame? timeFrame,
-    $1775.Timestamp? frameEndTime,
+    $1776.Timestamp? frameEndTime,
     $core.int? vmCount,
     $core.Iterable<VmUtilizationInfo>? vms,
   }) {
@@ -4751,11 +4751,11 @@ class UtilizationReport extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..e<UtilizationReport_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: UtilizationReport_State.STATE_UNSPECIFIED, valueOf: UtilizationReport_State.valueOf, enumValues: UtilizationReport_State.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'stateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'stateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<UtilizationReport_TimeFrame>(7, _omitFieldNames ? '' : 'timeFrame', $pb.PbFieldType.OE, defaultOrMaker: UtilizationReport_TimeFrame.TIME_FRAME_UNSPECIFIED, valueOf: UtilizationReport_TimeFrame.valueOf, enumValues: UtilizationReport_TimeFrame.values)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'frameEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'frameEndTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'vmCount', $pb.PbFieldType.O3)
     ..pc<VmUtilizationInfo>(10, _omitFieldNames ? '' : 'vms', $pb.PbFieldType.PM, subBuilder: VmUtilizationInfo.create)
     ..hasRequiredFields = false
@@ -4814,41 +4814,41 @@ class UtilizationReport extends $pb.GeneratedMessage {
 
   /// Output only. The time the state was last set.
   @$pb.TagNumber(4)
-  $1775.Timestamp get stateTime => $_getN(3);
+  $1776.Timestamp get stateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set stateTime($1775.Timestamp v) { setField(4, v); }
+  set stateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStateTime() => $_ensure(3);
+  $1776.Timestamp ensureStateTime() => $_ensure(3);
 
   /// Output only. Provides details on the state of the report in case of an
   /// error.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 
   /// Output only. The time the report was created (this refers to the time of
   /// the request, not the time the report creation completed).
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Time frame of the report.
   @$pb.TagNumber(7)
@@ -4865,15 +4865,15 @@ class UtilizationReport extends $pb.GeneratedMessage {
   /// is 2021/01/20 and the time frame is WEEK then the report covers the week
   /// between 2021/01/20 and 2021/01/14.
   @$pb.TagNumber(8)
-  $1775.Timestamp get frameEndTime => $_getN(7);
+  $1776.Timestamp get frameEndTime => $_getN(7);
   @$pb.TagNumber(8)
-  set frameEndTime($1775.Timestamp v) { setField(8, v); }
+  set frameEndTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasFrameEndTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearFrameEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureFrameEndTime() => $_ensure(7);
+  $1776.Timestamp ensureFrameEndTime() => $_ensure(7);
 
   /// Output only. Total number of VMs included in the report.
   @$pb.TagNumber(9)
@@ -7084,7 +7084,7 @@ class ComputeScheduling extends $pb.GeneratedMessage {
 /// A policy for scheduling replications.
 class SchedulePolicy extends $pb.GeneratedMessage {
   factory SchedulePolicy({
-    $1737.Duration? idleDuration,
+    $1738.Duration? idleDuration,
     $core.bool? skipOsAdaptation,
   }) {
     final $result = create();
@@ -7101,7 +7101,7 @@ class SchedulePolicy extends $pb.GeneratedMessage {
   factory SchedulePolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SchedulePolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'idleDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'idleDuration', subBuilder: $1738.Duration.create)
     ..aOB(2, _omitFieldNames ? '' : 'skipOsAdaptation')
     ..hasRequiredFields = false
   ;
@@ -7129,15 +7129,15 @@ class SchedulePolicy extends $pb.GeneratedMessage {
 
   /// The idle duration between replication stages.
   @$pb.TagNumber(1)
-  $1737.Duration get idleDuration => $_getN(0);
+  $1738.Duration get idleDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set idleDuration($1737.Duration v) { setField(1, v); }
+  set idleDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIdleDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearIdleDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureIdleDuration() => $_ensure(0);
+  $1738.Duration ensureIdleDuration() => $_ensure(0);
 
   /// A flag to indicate whether to skip OS adaptation during the replication
   /// sync. OS adaptation is a process where the VM's operating system undergoes
@@ -7538,7 +7538,7 @@ class GetMigratingVmRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateMigratingVm' request.
 class UpdateMigratingVmRequest extends $pb.GeneratedMessage {
   factory UpdateMigratingVmRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     MigratingVm? migratingVm,
     $core.String? requestId,
   }) {
@@ -7559,7 +7559,7 @@ class UpdateMigratingVmRequest extends $pb.GeneratedMessage {
   factory UpdateMigratingVmRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMigratingVmRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<MigratingVm>(2, _omitFieldNames ? '' : 'migratingVm', subBuilder: MigratingVm.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -7592,15 +7592,15 @@ class UpdateMigratingVmRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The update request body.
   @$pb.TagNumber(2)
@@ -8036,8 +8036,8 @@ class TargetProject extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? project,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -8065,8 +8065,8 @@ class TargetProject extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'project')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -8124,27 +8124,27 @@ class TargetProject extends $pb.GeneratedMessage {
   /// Output only. The time this target project resource was created (not related
   /// to when the Compute Engine project it points to was created).
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The last time the target project resource was updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 }
 
 /// Request message for 'GetTargetProject' call.
@@ -8503,7 +8503,7 @@ class CreateTargetProjectRequest extends $pb.GeneratedMessage {
 /// Update message for 'UpdateTargetProject' request.
 class UpdateTargetProjectRequest extends $pb.GeneratedMessage {
   factory UpdateTargetProjectRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     TargetProject? targetProject,
     $core.String? requestId,
   }) {
@@ -8524,7 +8524,7 @@ class UpdateTargetProjectRequest extends $pb.GeneratedMessage {
   factory UpdateTargetProjectRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTargetProjectRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<TargetProject>(2, _omitFieldNames ? '' : 'targetProject', subBuilder: TargetProject.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -8557,15 +8557,15 @@ class UpdateTargetProjectRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The update request body.
   @$pb.TagNumber(2)
@@ -8686,8 +8686,8 @@ class DeleteTargetProjectRequest extends $pb.GeneratedMessage {
 class Group extends $pb.GeneratedMessage {
   factory Group({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
   }) {
@@ -8715,8 +8715,8 @@ class Group extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Group', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
@@ -8755,27 +8755,27 @@ class Group extends $pb.GeneratedMessage {
 
   /// Output only. The create time timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-provided description of the group.
   @$pb.TagNumber(4)
@@ -9154,7 +9154,7 @@ class CreateGroupRequest extends $pb.GeneratedMessage {
 /// Update message for 'UpdateGroups' request.
 class UpdateGroupRequest extends $pb.GeneratedMessage {
   factory UpdateGroupRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Group? group,
     $core.String? requestId,
   }) {
@@ -9175,7 +9175,7 @@ class UpdateGroupRequest extends $pb.GeneratedMessage {
   factory UpdateGroupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Group>(2, _omitFieldNames ? '' : 'group', subBuilder: Group.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -9208,15 +9208,15 @@ class UpdateGroupRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The update request body.
   @$pb.TagNumber(2)
@@ -9973,8 +9973,8 @@ class GetCutoverJobRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -10010,8 +10010,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -10043,27 +10043,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -10126,10 +10126,10 @@ class OperationMetadata extends $pb.GeneratedMessage {
 class MigrationError extends $pb.GeneratedMessage {
   factory MigrationError({
     MigrationError_ErrorCode? code,
-    $4365.LocalizedMessage? errorMessage,
-    $4365.LocalizedMessage? actionItem,
-    $core.Iterable<$4365.Help_Link>? helpLinks,
-    $1775.Timestamp? errorTime,
+    $4366.LocalizedMessage? errorMessage,
+    $4366.LocalizedMessage? actionItem,
+    $core.Iterable<$4366.Help_Link>? helpLinks,
+    $1776.Timestamp? errorTime,
   }) {
     final $result = create();
     if (code != null) {
@@ -10155,10 +10155,10 @@ class MigrationError extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MigrationError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmmigration.v1'), createEmptyInstance: create)
     ..e<MigrationError_ErrorCode>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: MigrationError_ErrorCode.ERROR_CODE_UNSPECIFIED, valueOf: MigrationError_ErrorCode.valueOf, enumValues: MigrationError_ErrorCode.values)
-    ..aOM<$4365.LocalizedMessage>(2, _omitFieldNames ? '' : 'errorMessage', subBuilder: $4365.LocalizedMessage.create)
-    ..aOM<$4365.LocalizedMessage>(3, _omitFieldNames ? '' : 'actionItem', subBuilder: $4365.LocalizedMessage.create)
-    ..pc<$4365.Help_Link>(4, _omitFieldNames ? '' : 'helpLinks', $pb.PbFieldType.PM, subBuilder: $4365.Help_Link.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'errorTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4366.LocalizedMessage>(2, _omitFieldNames ? '' : 'errorMessage', subBuilder: $4366.LocalizedMessage.create)
+    ..aOM<$4366.LocalizedMessage>(3, _omitFieldNames ? '' : 'actionItem', subBuilder: $4366.LocalizedMessage.create)
+    ..pc<$4366.Help_Link>(4, _omitFieldNames ? '' : 'helpLinks', $pb.PbFieldType.PM, subBuilder: $4366.Help_Link.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'errorTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -10195,44 +10195,44 @@ class MigrationError extends $pb.GeneratedMessage {
 
   /// Output only. The localized error message.
   @$pb.TagNumber(2)
-  $4365.LocalizedMessage get errorMessage => $_getN(1);
+  $4366.LocalizedMessage get errorMessage => $_getN(1);
   @$pb.TagNumber(2)
-  set errorMessage($4365.LocalizedMessage v) { setField(2, v); }
+  set errorMessage($4366.LocalizedMessage v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasErrorMessage() => $_has(1);
   @$pb.TagNumber(2)
   void clearErrorMessage() => clearField(2);
   @$pb.TagNumber(2)
-  $4365.LocalizedMessage ensureErrorMessage() => $_ensure(1);
+  $4366.LocalizedMessage ensureErrorMessage() => $_ensure(1);
 
   /// Output only. Suggested action for solving the error.
   @$pb.TagNumber(3)
-  $4365.LocalizedMessage get actionItem => $_getN(2);
+  $4366.LocalizedMessage get actionItem => $_getN(2);
   @$pb.TagNumber(3)
-  set actionItem($4365.LocalizedMessage v) { setField(3, v); }
+  set actionItem($4366.LocalizedMessage v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasActionItem() => $_has(2);
   @$pb.TagNumber(3)
   void clearActionItem() => clearField(3);
   @$pb.TagNumber(3)
-  $4365.LocalizedMessage ensureActionItem() => $_ensure(2);
+  $4366.LocalizedMessage ensureActionItem() => $_ensure(2);
 
   /// Output only. URL(s) pointing to additional information on handling the
   /// current error.
   @$pb.TagNumber(4)
-  $core.List<$4365.Help_Link> get helpLinks => $_getList(3);
+  $core.List<$4366.Help_Link> get helpLinks => $_getList(3);
 
   /// Output only. The time the error occurred.
   @$pb.TagNumber(5)
-  $1775.Timestamp get errorTime => $_getN(4);
+  $1776.Timestamp get errorTime => $_getN(4);
   @$pb.TagNumber(5)
-  set errorTime($1775.Timestamp v) { setField(5, v); }
+  set errorTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasErrorTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearErrorTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureErrorTime() => $_ensure(4);
+  $1776.Timestamp ensureErrorTime() => $_ensure(4);
 }
 
 /// Represent the source AWS VM details.

@@ -1,0 +1,42 @@
+// Generated file. Do not modify.
+
+library google_cloud_visionai_v1alpha1;
+
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streaming_service.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/warehouse.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/platform.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streams_resources.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streams_service.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/annotations.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva_service.pbgrpc.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/common.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/platform.pbgrpc.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streaming_service.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streams_resources.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva_service.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streaming_resources.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva_resources.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streaming_resources.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva_service.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva_resources.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva_resources.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streaming_resources.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/platform.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva_service.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streams_service.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/warehouse.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/annotations.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streams_service.pbgrpc.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streaming_service.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/warehouse.pbgrpc.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/common.pb.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/annotations.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/lva.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/common.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/warehouse.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streams_service.pbjson.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streams_resources.pbenum.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/streaming_service.pbgrpc.dart';
+export 'src/protobuf/google/cloud/visionai/v1alpha1/platform.pbenum.dart';

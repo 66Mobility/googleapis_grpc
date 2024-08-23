@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/targeting_dimension.pbenum.dart' as $2635;
+import '../enums/targeting_dimension.pbenum.dart' as $2636;
 import 'targeting_setting.pbenum.dart';
 
 export 'targeting_setting.pbenum.dart';
@@ -82,7 +82,7 @@ class TargetingSetting extends $pb.GeneratedMessage {
 /// The list of per-targeting-dimension targeting settings.
 class TargetRestriction extends $pb.GeneratedMessage {
   factory TargetRestriction({
-    $2635.TargetingDimensionEnum_TargetingDimension? targetingDimension,
+    $2636.TargetingDimensionEnum_TargetingDimension? targetingDimension,
     $core.bool? bidOnly,
   }) {
     final $result = create();
@@ -99,7 +99,7 @@ class TargetRestriction extends $pb.GeneratedMessage {
   factory TargetRestriction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetRestriction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2635.TargetingDimensionEnum_TargetingDimension>(1, _omitFieldNames ? '' : 'targetingDimension', $pb.PbFieldType.OE, defaultOrMaker: $2635.TargetingDimensionEnum_TargetingDimension.UNSPECIFIED, valueOf: $2635.TargetingDimensionEnum_TargetingDimension.valueOf, enumValues: $2635.TargetingDimensionEnum_TargetingDimension.values)
+    ..e<$2636.TargetingDimensionEnum_TargetingDimension>(1, _omitFieldNames ? '' : 'targetingDimension', $pb.PbFieldType.OE, defaultOrMaker: $2636.TargetingDimensionEnum_TargetingDimension.UNSPECIFIED, valueOf: $2636.TargetingDimensionEnum_TargetingDimension.valueOf, enumValues: $2636.TargetingDimensionEnum_TargetingDimension.values)
     ..aOB(3, _omitFieldNames ? '' : 'bidOnly')
     ..hasRequiredFields = false
   ;
@@ -127,9 +127,9 @@ class TargetRestriction extends $pb.GeneratedMessage {
 
   /// The targeting dimension that these settings apply to.
   @$pb.TagNumber(1)
-  $2635.TargetingDimensionEnum_TargetingDimension get targetingDimension => $_getN(0);
+  $2636.TargetingDimensionEnum_TargetingDimension get targetingDimension => $_getN(0);
   @$pb.TagNumber(1)
-  set targetingDimension($2635.TargetingDimensionEnum_TargetingDimension v) { setField(1, v); }
+  set targetingDimension($2636.TargetingDimensionEnum_TargetingDimension v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTargetingDimension() => $_has(0);
   @$pb.TagNumber(1)

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'placement_enums.pbenum.dart' as $1819;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'placement_enums.pbenum.dart' as $1820;
 
 /// The `Placement` resource.
 class Placement extends $pb.GeneratedMessage {
@@ -25,9 +25,9 @@ class Placement extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $core.String? placementCode,
-    $1819.PlacementStatusEnum_PlacementStatus? status,
+    $1820.PlacementStatusEnum_PlacementStatus? status,
     $core.Iterable<$core.String>? targetedAdUnits,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -66,9 +66,9 @@ class Placement extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..aOS(5, _omitFieldNames ? '' : 'placementCode')
-    ..e<$1819.PlacementStatusEnum_PlacementStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1819.PlacementStatusEnum_PlacementStatus.PLACEMENT_STATUS_UNSPECIFIED, valueOf: $1819.PlacementStatusEnum_PlacementStatus.valueOf, enumValues: $1819.PlacementStatusEnum_PlacementStatus.values)
+    ..e<$1820.PlacementStatusEnum_PlacementStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1820.PlacementStatusEnum_PlacementStatus.PLACEMENT_STATUS_UNSPECIFIED, valueOf: $1820.PlacementStatusEnum_PlacementStatus.valueOf, enumValues: $1820.PlacementStatusEnum_PlacementStatus.values)
     ..pPS(7, _omitFieldNames ? '' : 'targetedAdUnits')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -150,9 +150,9 @@ class Placement extends $pb.GeneratedMessage {
 
   /// Output only. The status of the Placement. This attribute is read-only.
   @$pb.TagNumber(6)
-  $1819.PlacementStatusEnum_PlacementStatus get status => $_getN(5);
+  $1820.PlacementStatusEnum_PlacementStatus get status => $_getN(5);
   @$pb.TagNumber(6)
-  set status($1819.PlacementStatusEnum_PlacementStatus v) { setField(6, v); }
+  set status($1820.PlacementStatusEnum_PlacementStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -165,15 +165,15 @@ class Placement extends $pb.GeneratedMessage {
 
   /// Output only. The instant this Placement was last modified.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 }
 
 /// Request object for `GetPlacement` method.

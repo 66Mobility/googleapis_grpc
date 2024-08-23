@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// A log entry for a DICOM import long-running operation.
 class ImportDicomLogEntry extends $pb.GeneratedMessage {
   factory ImportDicomLogEntry({
     $core.String? source,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (source != null) {
@@ -36,7 +36,7 @@ class ImportDicomLogEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDicomLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'source')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -73,22 +73,22 @@ class ImportDicomLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 }
 
 /// A log entry for a DICOM export long-running operation.
 class ExportDicomLogEntry extends $pb.GeneratedMessage {
   factory ExportDicomLogEntry({
     $core.String? resourceName,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -105,7 +105,7 @@ class ExportDicomLogEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDicomLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -142,15 +142,15 @@ class ExportDicomLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 }
 
 /// A log entry for a DICOM store Pub/Sub notification.
@@ -158,7 +158,7 @@ class DicomNotificationLogEntry extends $pb.GeneratedMessage {
   factory DicomNotificationLogEntry({
     $core.String? resourceName,
     $core.String? pubsubTopic,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -179,7 +179,7 @@ class DicomNotificationLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DicomNotificationLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'pubsubTopic')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -226,15 +226,15 @@ class DicomNotificationLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// A log entry for a DICOM streaming export notification.
@@ -242,7 +242,7 @@ class DicomStreamLogEntry extends $pb.GeneratedMessage {
   factory DicomStreamLogEntry({
     $core.String? resourceName,
     $core.String? destination,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -263,7 +263,7 @@ class DicomStreamLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DicomStreamLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.healthcare.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'destination')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -311,15 +311,15 @@ class DicomStreamLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 

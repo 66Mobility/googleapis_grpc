@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../api/launch_stage.pbenum.dart' as $1777;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'condition.pb.dart' as $4603;
-import 'revision_template.pb.dart' as $4606;
-import 'traffic_target.pb.dart' as $4607;
-import 'vendor_settings.pb.dart' as $4601;
-import 'vendor_settings.pbenum.dart' as $4601;
+import '../../../api/launch_stage.pbenum.dart' as $1778;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'condition.pb.dart' as $4605;
+import 'revision_template.pb.dart' as $4608;
+import 'traffic_target.pb.dart' as $4609;
+import 'vendor_settings.pb.dart' as $4603;
+import 'vendor_settings.pbenum.dart' as $4603;
 
 /// Request message for creating a Service.
 class CreateServiceRequest extends $pb.GeneratedMessage {
@@ -131,7 +131,7 @@ class CreateServiceRequest extends $pb.GeneratedMessage {
 class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest({
     Service? service,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
     $core.bool? allowMissing,
   }) {
@@ -156,7 +156,7 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.run.v2'), createEmptyInstance: create)
     ..aOM<Service>(1, _omitFieldNames ? '' : 'service', subBuilder: Service.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
@@ -197,15 +197,15 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
 
   /// Optional. The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Indicates that the request should be validated and default values
   /// populated, without persisting the request or updating any resources.
@@ -547,27 +547,27 @@ class Service extends $pb.GeneratedMessage {
     $fixnum.Int64? generation,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? annotations,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     $core.String? creator,
     $core.String? lastModifier,
     $core.String? client,
     $core.String? clientVersion,
-    $4601.IngressTraffic? ingress,
-    $1777.LaunchStage? launchStage,
-    $4601.BinaryAuthorization? binaryAuthorization,
-    $4606.RevisionTemplate? template,
-    $core.Iterable<$4607.TrafficTarget>? traffic,
-    $4601.ServiceScaling? scaling,
+    $4603.IngressTraffic? ingress,
+    $1778.LaunchStage? launchStage,
+    $4603.BinaryAuthorization? binaryAuthorization,
+    $4608.RevisionTemplate? template,
+    $core.Iterable<$4609.TrafficTarget>? traffic,
+    $4603.ServiceScaling? scaling,
     $core.bool? defaultUriDisabled,
     $fixnum.Int64? observedGeneration,
-    $4603.Condition? terminalCondition,
-    $core.Iterable<$4603.Condition>? conditions,
+    $4605.Condition? terminalCondition,
+    $core.Iterable<$4605.Condition>? conditions,
     $core.String? latestReadyRevision,
     $core.String? latestCreatedRevision,
-    $core.Iterable<$4607.TrafficTargetStatus>? trafficStatuses,
+    $core.Iterable<$4609.TrafficTargetStatus>? trafficStatuses,
     $core.String? uri,
     $core.Iterable<$core.String>? customAudiences,
     $core.bool? satisfiesPzs,
@@ -684,27 +684,27 @@ class Service extends $pb.GeneratedMessage {
     ..aInt64(4, _omitFieldNames ? '' : 'generation')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'Service.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'annotations', entryClassName: 'Service.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'creator')
     ..aOS(12, _omitFieldNames ? '' : 'lastModifier')
     ..aOS(13, _omitFieldNames ? '' : 'client')
     ..aOS(14, _omitFieldNames ? '' : 'clientVersion')
-    ..e<$4601.IngressTraffic>(15, _omitFieldNames ? '' : 'ingress', $pb.PbFieldType.OE, defaultOrMaker: $4601.IngressTraffic.INGRESS_TRAFFIC_UNSPECIFIED, valueOf: $4601.IngressTraffic.valueOf, enumValues: $4601.IngressTraffic.values)
-    ..e<$1777.LaunchStage>(16, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1777.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1777.LaunchStage.valueOf, enumValues: $1777.LaunchStage.values)
-    ..aOM<$4601.BinaryAuthorization>(17, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4601.BinaryAuthorization.create)
-    ..aOM<$4606.RevisionTemplate>(18, _omitFieldNames ? '' : 'template', subBuilder: $4606.RevisionTemplate.create)
-    ..pc<$4607.TrafficTarget>(19, _omitFieldNames ? '' : 'traffic', $pb.PbFieldType.PM, subBuilder: $4607.TrafficTarget.create)
-    ..aOM<$4601.ServiceScaling>(20, _omitFieldNames ? '' : 'scaling', subBuilder: $4601.ServiceScaling.create)
+    ..e<$4603.IngressTraffic>(15, _omitFieldNames ? '' : 'ingress', $pb.PbFieldType.OE, defaultOrMaker: $4603.IngressTraffic.INGRESS_TRAFFIC_UNSPECIFIED, valueOf: $4603.IngressTraffic.valueOf, enumValues: $4603.IngressTraffic.values)
+    ..e<$1778.LaunchStage>(16, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1778.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1778.LaunchStage.valueOf, enumValues: $1778.LaunchStage.values)
+    ..aOM<$4603.BinaryAuthorization>(17, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4603.BinaryAuthorization.create)
+    ..aOM<$4608.RevisionTemplate>(18, _omitFieldNames ? '' : 'template', subBuilder: $4608.RevisionTemplate.create)
+    ..pc<$4609.TrafficTarget>(19, _omitFieldNames ? '' : 'traffic', $pb.PbFieldType.PM, subBuilder: $4609.TrafficTarget.create)
+    ..aOM<$4603.ServiceScaling>(20, _omitFieldNames ? '' : 'scaling', subBuilder: $4603.ServiceScaling.create)
     ..aOB(22, _omitFieldNames ? '' : 'defaultUriDisabled')
     ..aInt64(30, _omitFieldNames ? '' : 'observedGeneration')
-    ..aOM<$4603.Condition>(31, _omitFieldNames ? '' : 'terminalCondition', subBuilder: $4603.Condition.create)
-    ..pc<$4603.Condition>(32, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4603.Condition.create)
+    ..aOM<$4605.Condition>(31, _omitFieldNames ? '' : 'terminalCondition', subBuilder: $4605.Condition.create)
+    ..pc<$4605.Condition>(32, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4605.Condition.create)
     ..aOS(33, _omitFieldNames ? '' : 'latestReadyRevision')
     ..aOS(34, _omitFieldNames ? '' : 'latestCreatedRevision')
-    ..pc<$4607.TrafficTargetStatus>(35, _omitFieldNames ? '' : 'trafficStatuses', $pb.PbFieldType.PM, subBuilder: $4607.TrafficTargetStatus.create)
+    ..pc<$4609.TrafficTargetStatus>(35, _omitFieldNames ? '' : 'trafficStatuses', $pb.PbFieldType.PM, subBuilder: $4609.TrafficTargetStatus.create)
     ..aOS(36, _omitFieldNames ? '' : 'uri')
     ..pPS(37, _omitFieldNames ? '' : 'customAudiences')
     ..aOB(38, _omitFieldNames ? '' : 'satisfiesPzs')
@@ -815,53 +815,53 @@ class Service extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The last-modified time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The deletion time. It is only populated as a response to a
   /// Delete request.
   @$pb.TagNumber(9)
-  $1775.Timestamp get deleteTime => $_getN(8);
+  $1776.Timestamp get deleteTime => $_getN(8);
   @$pb.TagNumber(9)
-  set deleteTime($1775.Timestamp v) { setField(9, v); }
+  set deleteTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDeleteTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearDeleteTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(8);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(8);
 
   /// Output only. For a deleted resource, the time after which it will be
   /// permamently deleted.
   @$pb.TagNumber(10)
-  $1775.Timestamp get expireTime => $_getN(9);
+  $1776.Timestamp get expireTime => $_getN(9);
   @$pb.TagNumber(10)
-  set expireTime($1775.Timestamp v) { setField(10, v); }
+  set expireTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasExpireTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearExpireTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureExpireTime() => $_ensure(9);
+  $1776.Timestamp ensureExpireTime() => $_ensure(9);
 
   /// Output only. Email address of the authenticated creator.
   @$pb.TagNumber(11)
@@ -907,9 +907,9 @@ class Service extends $pb.GeneratedMessage {
   /// returns the currently observed ingress settings, or
   /// INGRESS_TRAFFIC_UNSPECIFIED if no revision is active.
   @$pb.TagNumber(15)
-  $4601.IngressTraffic get ingress => $_getN(14);
+  $4603.IngressTraffic get ingress => $_getN(14);
   @$pb.TagNumber(15)
-  set ingress($4601.IngressTraffic v) { setField(15, v); }
+  set ingress($4603.IngressTraffic v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasIngress() => $_has(14);
   @$pb.TagNumber(15)
@@ -926,9 +926,9 @@ class Service extends $pb.GeneratedMessage {
   /// For example, if ALPHA is provided as input, but only BETA and GA-level
   /// features are used, this field will be BETA on output.
   @$pb.TagNumber(16)
-  $1777.LaunchStage get launchStage => $_getN(15);
+  $1778.LaunchStage get launchStage => $_getN(15);
   @$pb.TagNumber(16)
-  set launchStage($1777.LaunchStage v) { setField(16, v); }
+  set launchStage($1778.LaunchStage v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasLaunchStage() => $_has(15);
   @$pb.TagNumber(16)
@@ -936,45 +936,45 @@ class Service extends $pb.GeneratedMessage {
 
   /// Optional. Settings for the Binary Authorization feature.
   @$pb.TagNumber(17)
-  $4601.BinaryAuthorization get binaryAuthorization => $_getN(16);
+  $4603.BinaryAuthorization get binaryAuthorization => $_getN(16);
   @$pb.TagNumber(17)
-  set binaryAuthorization($4601.BinaryAuthorization v) { setField(17, v); }
+  set binaryAuthorization($4603.BinaryAuthorization v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasBinaryAuthorization() => $_has(16);
   @$pb.TagNumber(17)
   void clearBinaryAuthorization() => clearField(17);
   @$pb.TagNumber(17)
-  $4601.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(16);
+  $4603.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(16);
 
   /// Required. The template used to create revisions for this Service.
   @$pb.TagNumber(18)
-  $4606.RevisionTemplate get template => $_getN(17);
+  $4608.RevisionTemplate get template => $_getN(17);
   @$pb.TagNumber(18)
-  set template($4606.RevisionTemplate v) { setField(18, v); }
+  set template($4608.RevisionTemplate v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasTemplate() => $_has(17);
   @$pb.TagNumber(18)
   void clearTemplate() => clearField(18);
   @$pb.TagNumber(18)
-  $4606.RevisionTemplate ensureTemplate() => $_ensure(17);
+  $4608.RevisionTemplate ensureTemplate() => $_ensure(17);
 
   /// Optional. Specifies how to distribute traffic over a collection of
   /// Revisions belonging to the Service. If traffic is empty or not provided,
   /// defaults to 100% traffic to the latest `Ready` Revision.
   @$pb.TagNumber(19)
-  $core.List<$4607.TrafficTarget> get traffic => $_getList(18);
+  $core.List<$4609.TrafficTarget> get traffic => $_getList(18);
 
   /// Optional. Specifies service-level scaling settings
   @$pb.TagNumber(20)
-  $4601.ServiceScaling get scaling => $_getN(19);
+  $4603.ServiceScaling get scaling => $_getN(19);
   @$pb.TagNumber(20)
-  set scaling($4601.ServiceScaling v) { setField(20, v); }
+  set scaling($4603.ServiceScaling v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasScaling() => $_has(19);
   @$pb.TagNumber(20)
   void clearScaling() => clearField(20);
   @$pb.TagNumber(20)
-  $4601.ServiceScaling ensureScaling() => $_ensure(19);
+  $4603.ServiceScaling ensureScaling() => $_ensure(19);
 
   /// Optional. Disables public resolution of the default URI of this service.
   @$pb.TagNumber(22)
@@ -1005,22 +1005,22 @@ class Service extends $pb.GeneratedMessage {
   /// state. See comments in `reconciling` for additional information on
   /// reconciliation process in Cloud Run.
   @$pb.TagNumber(31)
-  $4603.Condition get terminalCondition => $_getN(22);
+  $4605.Condition get terminalCondition => $_getN(22);
   @$pb.TagNumber(31)
-  set terminalCondition($4603.Condition v) { setField(31, v); }
+  set terminalCondition($4605.Condition v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasTerminalCondition() => $_has(22);
   @$pb.TagNumber(31)
   void clearTerminalCondition() => clearField(31);
   @$pb.TagNumber(31)
-  $4603.Condition ensureTerminalCondition() => $_ensure(22);
+  $4605.Condition ensureTerminalCondition() => $_ensure(22);
 
   /// Output only. The Conditions of all other associated sub-resources. They
   /// contain additional diagnostics information in case the Service does not
   /// reach its Serving state. See comments in `reconciling` for additional
   /// information on reconciliation process in Cloud Run.
   @$pb.TagNumber(32)
-  $core.List<$4603.Condition> get conditions => $_getList(23);
+  $core.List<$4605.Condition> get conditions => $_getList(23);
 
   /// Output only. Name of the latest revision that is serving traffic. See
   /// comments in `reconciling` for additional information on reconciliation
@@ -1050,7 +1050,7 @@ class Service extends $pb.GeneratedMessage {
   /// See comments in `reconciling` for additional information on reconciliation
   /// process in Cloud Run.
   @$pb.TagNumber(35)
-  $core.List<$4607.TrafficTargetStatus> get trafficStatuses => $_getList(26);
+  $core.List<$4609.TrafficTargetStatus> get trafficStatuses => $_getList(26);
 
   /// Output only. The main URI in which this Service is serving traffic.
   @$pb.TagNumber(36)

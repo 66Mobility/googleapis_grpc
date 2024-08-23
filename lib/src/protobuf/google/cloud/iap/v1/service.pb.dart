@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'service.pbenum.dart';
 
 export 'service.pbenum.dart';
@@ -377,7 +377,7 @@ class DeleteTunnelDestGroupRequest extends $pb.GeneratedMessage {
 class UpdateTunnelDestGroupRequest extends $pb.GeneratedMessage {
   factory UpdateTunnelDestGroupRequest({
     TunnelDestGroup? tunnelDestGroup,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (tunnelDestGroup != null) {
@@ -394,7 +394,7 @@ class UpdateTunnelDestGroupRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTunnelDestGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
     ..aOM<TunnelDestGroup>(1, _omitFieldNames ? '' : 'tunnelDestGroup', subBuilder: TunnelDestGroup.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -435,15 +435,15 @@ class UpdateTunnelDestGroupRequest extends $pb.GeneratedMessage {
   /// If omitted, then all of the settings are updated. See
   /// https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A TunnelDestGroup.
@@ -576,7 +576,7 @@ class GetIapSettingsRequest extends $pb.GeneratedMessage {
 class UpdateIapSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateIapSettingsRequest({
     IapSettings? iapSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (iapSettings != null) {
@@ -593,7 +593,7 @@ class UpdateIapSettingsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateIapSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
     ..aOM<IapSettings>(1, _omitFieldNames ? '' : 'iapSettings', subBuilder: IapSettings.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -639,15 +639,15 @@ class UpdateIapSettingsRequest extends $pb.GeneratedMessage {
   ///  Note: All IAP reauth settings must always be set together, using the
   ///  field mask: `iapSettings.accessSettings.reauthSettings`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The IAP configurable settings.
@@ -862,7 +862,7 @@ class AccessSettings extends $pb.GeneratedMessage {
 class GcipSettings extends $pb.GeneratedMessage {
   factory GcipSettings({
     $core.Iterable<$core.String>? tenantIds,
-    $1780.StringValue? loginPageUri,
+    $1781.StringValue? loginPageUri,
   }) {
     final $result = create();
     if (tenantIds != null) {
@@ -879,7 +879,7 @@ class GcipSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcipSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'tenantIds')
-    ..aOM<$1780.StringValue>(2, _omitFieldNames ? '' : 'loginPageUri', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(2, _omitFieldNames ? '' : 'loginPageUri', subBuilder: $1781.StringValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -917,22 +917,22 @@ class GcipSettings extends $pb.GeneratedMessage {
   /// Typically, all resources within the same project share the same login page,
   /// though it could be overridden at the sub resource level.
   @$pb.TagNumber(2)
-  $1780.StringValue get loginPageUri => $_getN(1);
+  $1781.StringValue get loginPageUri => $_getN(1);
   @$pb.TagNumber(2)
-  set loginPageUri($1780.StringValue v) { setField(2, v); }
+  set loginPageUri($1781.StringValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLoginPageUri() => $_has(1);
   @$pb.TagNumber(2)
   void clearLoginPageUri() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.StringValue ensureLoginPageUri() => $_ensure(1);
+  $1781.StringValue ensureLoginPageUri() => $_ensure(1);
 }
 
 /// Allows customers to configure HTTP request paths that'll allow HTTP OPTIONS
 /// call to bypass authentication and authorization.
 class CorsSettings extends $pb.GeneratedMessage {
   factory CorsSettings({
-    $1780.BoolValue? allowHttpOptions,
+    $1781.BoolValue? allowHttpOptions,
   }) {
     final $result = create();
     if (allowHttpOptions != null) {
@@ -945,7 +945,7 @@ class CorsSettings extends $pb.GeneratedMessage {
   factory CorsSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CorsSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
-    ..aOM<$1780.BoolValue>(1, _omitFieldNames ? '' : 'allowHttpOptions', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'allowHttpOptions', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -973,22 +973,22 @@ class CorsSettings extends $pb.GeneratedMessage {
   /// Configuration to allow HTTP OPTIONS calls to skip authorization. If
   /// undefined, IAP will not apply any special logic to OPTIONS requests.
   @$pb.TagNumber(1)
-  $1780.BoolValue get allowHttpOptions => $_getN(0);
+  $1781.BoolValue get allowHttpOptions => $_getN(0);
   @$pb.TagNumber(1)
-  set allowHttpOptions($1780.BoolValue v) { setField(1, v); }
+  set allowHttpOptions($1781.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAllowHttpOptions() => $_has(0);
   @$pb.TagNumber(1)
   void clearAllowHttpOptions() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BoolValue ensureAllowHttpOptions() => $_ensure(0);
+  $1781.BoolValue ensureAllowHttpOptions() => $_ensure(0);
 }
 
 /// Configuration for OAuth login&consent flow behavior as well as for OAuth
 /// Credentials.
 class OAuthSettings extends $pb.GeneratedMessage {
   factory OAuthSettings({
-    $1780.StringValue? loginHint,
+    $1781.StringValue? loginHint,
     $core.Iterable<$core.String>? programmaticClients,
   }) {
     final $result = create();
@@ -1005,7 +1005,7 @@ class OAuthSettings extends $pb.GeneratedMessage {
   factory OAuthSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OAuthSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(2, _omitFieldNames ? '' : 'loginHint', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(2, _omitFieldNames ? '' : 'loginHint', subBuilder: $1781.StringValue.create)
     ..pPS(5, _omitFieldNames ? '' : 'programmaticClients')
     ..hasRequiredFields = false
   ;
@@ -1037,15 +1037,15 @@ class OAuthSettings extends $pb.GeneratedMessage {
   /// Note: IAP does not verify that the id token's hd claim matches this value
   /// since access behavior is managed by IAM policies.
   @$pb.TagNumber(2)
-  $1780.StringValue get loginHint => $_getN(0);
+  $1781.StringValue get loginHint => $_getN(0);
   @$pb.TagNumber(2)
-  set loginHint($1780.StringValue v) { setField(2, v); }
+  set loginHint($1781.StringValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLoginHint() => $_has(0);
   @$pb.TagNumber(2)
   void clearLoginHint() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.StringValue ensureLoginHint() => $_ensure(0);
+  $1781.StringValue ensureLoginHint() => $_ensure(0);
 
   /// List of OAuth client IDs allowed to programmatically authenticate with IAP.
   @$pb.TagNumber(5)
@@ -1056,7 +1056,7 @@ class OAuthSettings extends $pb.GeneratedMessage {
 class ReauthSettings extends $pb.GeneratedMessage {
   factory ReauthSettings({
     ReauthSettings_Method? method,
-    $1737.Duration? maxAge,
+    $1738.Duration? maxAge,
     ReauthSettings_PolicyType? policyType,
   }) {
     final $result = create();
@@ -1077,7 +1077,7 @@ class ReauthSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReauthSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
     ..e<ReauthSettings_Method>(1, _omitFieldNames ? '' : 'method', $pb.PbFieldType.OE, defaultOrMaker: ReauthSettings_Method.METHOD_UNSPECIFIED, valueOf: ReauthSettings_Method.valueOf, enumValues: ReauthSettings_Method.values)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'maxAge', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'maxAge', subBuilder: $1738.Duration.create)
     ..e<ReauthSettings_PolicyType>(3, _omitFieldNames ? '' : 'policyType', $pb.PbFieldType.OE, defaultOrMaker: ReauthSettings_PolicyType.POLICY_TYPE_UNSPECIFIED, valueOf: ReauthSettings_PolicyType.valueOf, enumValues: ReauthSettings_PolicyType.values)
     ..hasRequiredFields = false
   ;
@@ -1116,15 +1116,15 @@ class ReauthSettings extends $pb.GeneratedMessage {
   /// Reauth session lifetime, how long before a user has to reauthenticate
   /// again.
   @$pb.TagNumber(2)
-  $1737.Duration get maxAge => $_getN(1);
+  $1738.Duration get maxAge => $_getN(1);
   @$pb.TagNumber(2)
-  set maxAge($1737.Duration v) { setField(2, v); }
+  set maxAge($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxAge() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxAge() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMaxAge() => $_ensure(1);
+  $1738.Duration ensureMaxAge() => $_ensure(1);
 
   /// How IAP determines the effective policy in cases of hierarchial policies.
   /// Policies are merged from higher in the hierarchy to lower in the hierarchy.
@@ -1205,7 +1205,7 @@ class ApplicationSettings extends $pb.GeneratedMessage {
   factory ApplicationSettings({
     CsmSettings? csmSettings,
     AccessDeniedPageSettings? accessDeniedPageSettings,
-    $1780.StringValue? cookieDomain,
+    $1781.StringValue? cookieDomain,
     AttributePropagationSettings? attributePropagationSettings,
   }) {
     final $result = create();
@@ -1230,7 +1230,7 @@ class ApplicationSettings extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplicationSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
     ..aOM<CsmSettings>(1, _omitFieldNames ? '' : 'csmSettings', subBuilder: CsmSettings.create)
     ..aOM<AccessDeniedPageSettings>(2, _omitFieldNames ? '' : 'accessDeniedPageSettings', subBuilder: AccessDeniedPageSettings.create)
-    ..aOM<$1780.StringValue>(3, _omitFieldNames ? '' : 'cookieDomain', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(3, _omitFieldNames ? '' : 'cookieDomain', subBuilder: $1781.StringValue.create)
     ..aOM<AttributePropagationSettings>(4, _omitFieldNames ? '' : 'attributePropagationSettings', subBuilder: AttributePropagationSettings.create)
     ..hasRequiredFields = false
   ;
@@ -1283,15 +1283,15 @@ class ApplicationSettings extends $pb.GeneratedMessage {
   /// The Domain value to set for cookies generated by IAP. This value is not
   /// validated by the API, but will be ignored at runtime if invalid.
   @$pb.TagNumber(3)
-  $1780.StringValue get cookieDomain => $_getN(2);
+  $1781.StringValue get cookieDomain => $_getN(2);
   @$pb.TagNumber(3)
-  set cookieDomain($1780.StringValue v) { setField(3, v); }
+  set cookieDomain($1781.StringValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCookieDomain() => $_has(2);
   @$pb.TagNumber(3)
   void clearCookieDomain() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.StringValue ensureCookieDomain() => $_ensure(2);
+  $1781.StringValue ensureCookieDomain() => $_ensure(2);
 
   /// Settings to configure attribute propagation.
   @$pb.TagNumber(4)
@@ -1312,7 +1312,7 @@ class ApplicationSettings extends $pb.GeneratedMessage {
 /// to a single mesh by configuring the audience field accordingly.
 class CsmSettings extends $pb.GeneratedMessage {
   factory CsmSettings({
-    $1780.StringValue? rctokenAud,
+    $1781.StringValue? rctokenAud,
   }) {
     final $result = create();
     if (rctokenAud != null) {
@@ -1325,7 +1325,7 @@ class CsmSettings extends $pb.GeneratedMessage {
   factory CsmSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CsmSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(1, _omitFieldNames ? '' : 'rctokenAud', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(1, _omitFieldNames ? '' : 'rctokenAud', subBuilder: $1781.StringValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1353,15 +1353,15 @@ class CsmSettings extends $pb.GeneratedMessage {
   /// Audience claim set in the generated RCToken. This value is not validated by
   /// IAP.
   @$pb.TagNumber(1)
-  $1780.StringValue get rctokenAud => $_getN(0);
+  $1781.StringValue get rctokenAud => $_getN(0);
   @$pb.TagNumber(1)
-  set rctokenAud($1780.StringValue v) { setField(1, v); }
+  set rctokenAud($1781.StringValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRctokenAud() => $_has(0);
   @$pb.TagNumber(1)
   void clearRctokenAud() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.StringValue ensureRctokenAud() => $_ensure(0);
+  $1781.StringValue ensureRctokenAud() => $_ensure(0);
 }
 
 /// Custom content configuration for access denied page.
@@ -1370,9 +1370,9 @@ class CsmSettings extends $pb.GeneratedMessage {
 /// IAP error page will be displayed instead.
 class AccessDeniedPageSettings extends $pb.GeneratedMessage {
   factory AccessDeniedPageSettings({
-    $1780.StringValue? accessDeniedPageUri,
-    $1780.BoolValue? generateTroubleshootingUri,
-    $1780.BoolValue? remediationTokenGenerationEnabled,
+    $1781.StringValue? accessDeniedPageUri,
+    $1781.BoolValue? generateTroubleshootingUri,
+    $1781.BoolValue? remediationTokenGenerationEnabled,
   }) {
     final $result = create();
     if (accessDeniedPageUri != null) {
@@ -1391,9 +1391,9 @@ class AccessDeniedPageSettings extends $pb.GeneratedMessage {
   factory AccessDeniedPageSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccessDeniedPageSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iap.v1'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(1, _omitFieldNames ? '' : 'accessDeniedPageUri', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.BoolValue>(2, _omitFieldNames ? '' : 'generateTroubleshootingUri', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'remediationTokenGenerationEnabled', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.StringValue>(1, _omitFieldNames ? '' : 'accessDeniedPageUri', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.BoolValue>(2, _omitFieldNames ? '' : 'generateTroubleshootingUri', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'remediationTokenGenerationEnabled', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1420,41 +1420,41 @@ class AccessDeniedPageSettings extends $pb.GeneratedMessage {
 
   /// The URI to be redirected to when access is denied.
   @$pb.TagNumber(1)
-  $1780.StringValue get accessDeniedPageUri => $_getN(0);
+  $1781.StringValue get accessDeniedPageUri => $_getN(0);
   @$pb.TagNumber(1)
-  set accessDeniedPageUri($1780.StringValue v) { setField(1, v); }
+  set accessDeniedPageUri($1781.StringValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessDeniedPageUri() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessDeniedPageUri() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.StringValue ensureAccessDeniedPageUri() => $_ensure(0);
+  $1781.StringValue ensureAccessDeniedPageUri() => $_ensure(0);
 
   /// Whether to generate a troubleshooting URL on access denied events to this
   /// application.
   @$pb.TagNumber(2)
-  $1780.BoolValue get generateTroubleshootingUri => $_getN(1);
+  $1781.BoolValue get generateTroubleshootingUri => $_getN(1);
   @$pb.TagNumber(2)
-  set generateTroubleshootingUri($1780.BoolValue v) { setField(2, v); }
+  set generateTroubleshootingUri($1781.BoolValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGenerateTroubleshootingUri() => $_has(1);
   @$pb.TagNumber(2)
   void clearGenerateTroubleshootingUri() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.BoolValue ensureGenerateTroubleshootingUri() => $_ensure(1);
+  $1781.BoolValue ensureGenerateTroubleshootingUri() => $_ensure(1);
 
   /// Whether to generate remediation token on access denied events to this
   /// application.
   @$pb.TagNumber(3)
-  $1780.BoolValue get remediationTokenGenerationEnabled => $_getN(2);
+  $1781.BoolValue get remediationTokenGenerationEnabled => $_getN(2);
   @$pb.TagNumber(3)
-  set remediationTokenGenerationEnabled($1780.BoolValue v) { setField(3, v); }
+  set remediationTokenGenerationEnabled($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRemediationTokenGenerationEnabled() => $_has(2);
   @$pb.TagNumber(3)
   void clearRemediationTokenGenerationEnabled() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureRemediationTokenGenerationEnabled() => $_ensure(2);
+  $1781.BoolValue ensureRemediationTokenGenerationEnabled() => $_ensure(2);
 }
 
 /// Configuration for propagating attributes to applications protected

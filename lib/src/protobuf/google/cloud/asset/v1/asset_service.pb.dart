@@ -15,14 +15,14 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../iam/v1/policy.pb.dart' as $463;
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/expr.pb.dart' as $4213;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/expr.pb.dart' as $4214;
 import 'asset_service.pbenum.dart';
-import 'assets.pb.dart' as $4325;
+import 'assets.pb.dart' as $4326;
 
 export 'asset_service.pbenum.dart';
 
@@ -30,7 +30,7 @@ export 'asset_service.pbenum.dart';
 /// AnalyzeIamPolicyLongrunning RPC.
 class AnalyzeIamPolicyLongrunningMetadata extends $pb.GeneratedMessage {
   factory AnalyzeIamPolicyLongrunningMetadata({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -43,7 +43,7 @@ class AnalyzeIamPolicyLongrunningMetadata extends $pb.GeneratedMessage {
   factory AnalyzeIamPolicyLongrunningMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzeIamPolicyLongrunningMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -70,22 +70,22 @@ class AnalyzeIamPolicyLongrunningMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 }
 
 /// Export asset request.
 class ExportAssetsRequest extends $pb.GeneratedMessage {
   factory ExportAssetsRequest({
     $core.String? parent,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.Iterable<$core.String>? assetTypes,
     ContentType? contentType,
     OutputConfig? outputConfig,
@@ -118,7 +118,7 @@ class ExportAssetsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportAssetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..pPS(3, _omitFieldNames ? '' : 'assetTypes')
     ..e<ContentType>(4, _omitFieldNames ? '' : 'contentType', $pb.PbFieldType.OE, defaultOrMaker: ContentType.CONTENT_TYPE_UNSPECIFIED, valueOf: ContentType.valueOf, enumValues: ContentType.values)
     ..aOM<OutputConfig>(5, _omitFieldNames ? '' : 'outputConfig', subBuilder: OutputConfig.create)
@@ -166,15 +166,15 @@ class ExportAssetsRequest extends $pb.GeneratedMessage {
   /// data collection and indexing, there is a volatile window during which
   /// running the same query may get different results.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   ///  A list of asset types to take a snapshot for. For example:
   ///  "compute.googleapis.com/Disk".
@@ -247,7 +247,7 @@ class ExportAssetsRequest extends $pb.GeneratedMessage {
 /// field.
 class ExportAssetsResponse extends $pb.GeneratedMessage {
   factory ExportAssetsResponse({
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     OutputConfig? outputConfig,
     OutputResult? outputResult,
   }) {
@@ -268,7 +268,7 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
   factory ExportAssetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOM<OutputConfig>(2, _omitFieldNames ? '' : 'outputConfig', subBuilder: OutputConfig.create)
     ..aOM<OutputResult>(3, _omitFieldNames ? '' : 'outputResult', subBuilder: OutputResult.create)
     ..hasRequiredFields = false
@@ -297,15 +297,15 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
 
   /// Time the snapshot was taken.
   @$pb.TagNumber(1)
-  $1775.Timestamp get readTime => $_getN(0);
+  $1776.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(1)
-  set readTime($1775.Timestamp v) { setField(1, v); }
+  set readTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReadTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReadTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReadTime() => $_ensure(0);
+  $1776.Timestamp ensureReadTime() => $_ensure(0);
 
   /// Output configuration indicating where the results were output to.
   @$pb.TagNumber(2)
@@ -340,7 +340,7 @@ class ExportAssetsResponse extends $pb.GeneratedMessage {
 class ListAssetsRequest extends $pb.GeneratedMessage {
   factory ListAssetsRequest({
     $core.String? parent,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.Iterable<$core.String>? assetTypes,
     ContentType? contentType,
     $core.int? pageSize,
@@ -377,7 +377,7 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAssetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..pPS(3, _omitFieldNames ? '' : 'assetTypes')
     ..e<ContentType>(4, _omitFieldNames ? '' : 'contentType', $pb.PbFieldType.OE, defaultOrMaker: ContentType.CONTENT_TYPE_UNSPECIFIED, valueOf: ContentType.valueOf, enumValues: ContentType.values)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
@@ -427,15 +427,15 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
   /// data collection and indexing, there is a volatile window during which
   /// running the same query may get different results.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   ///  A list of asset types to take a snapshot for. For example:
   ///  "compute.googleapis.com/Disk".
@@ -514,8 +514,8 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
 /// ListAssets response.
 class ListAssetsResponse extends $pb.GeneratedMessage {
   factory ListAssetsResponse({
-    $1775.Timestamp? readTime,
-    $core.Iterable<$4325.Asset>? assets,
+    $1776.Timestamp? readTime,
+    $core.Iterable<$4326.Asset>? assets,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -535,8 +535,8 @@ class ListAssetsResponse extends $pb.GeneratedMessage {
   factory ListAssetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$4325.Asset>(2, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4325.Asset.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$4326.Asset>(2, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4326.Asset.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -564,19 +564,19 @@ class ListAssetsResponse extends $pb.GeneratedMessage {
 
   /// Time the snapshot was taken.
   @$pb.TagNumber(1)
-  $1775.Timestamp get readTime => $_getN(0);
+  $1776.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(1)
-  set readTime($1775.Timestamp v) { setField(1, v); }
+  set readTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReadTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReadTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReadTime() => $_ensure(0);
+  $1776.Timestamp ensureReadTime() => $_ensure(0);
 
   /// Assets.
   @$pb.TagNumber(2)
-  $core.List<$4325.Asset> get assets => $_getList(1);
+  $core.List<$4326.Asset> get assets => $_getList(1);
 
   /// Token to retrieve the next page of results. It expires 72 hours after the
   /// page token for the first page is generated. Set to empty if there are no
@@ -597,7 +597,7 @@ class BatchGetAssetsHistoryRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.Iterable<$core.String>? assetNames,
     ContentType? contentType,
-    $4325.TimeWindow? readTimeWindow,
+    $4326.TimeWindow? readTimeWindow,
     $core.Iterable<$core.String>? relationshipTypes,
   }) {
     final $result = create();
@@ -626,7 +626,7 @@ class BatchGetAssetsHistoryRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..pPS(2, _omitFieldNames ? '' : 'assetNames')
     ..e<ContentType>(3, _omitFieldNames ? '' : 'contentType', $pb.PbFieldType.OE, defaultOrMaker: ContentType.CONTENT_TYPE_UNSPECIFIED, valueOf: ContentType.valueOf, enumValues: ContentType.values)
-    ..aOM<$4325.TimeWindow>(4, _omitFieldNames ? '' : 'readTimeWindow', subBuilder: $4325.TimeWindow.create)
+    ..aOM<$4326.TimeWindow>(4, _omitFieldNames ? '' : 'readTimeWindow', subBuilder: $4326.TimeWindow.create)
     ..pPS(5, _omitFieldNames ? '' : 'relationshipTypes')
     ..hasRequiredFields = false
   ;
@@ -692,15 +692,15 @@ class BatchGetAssetsHistoryRequest extends $pb.GeneratedMessage {
   /// returned. The returned results contain all temporal assets whose time
   /// window overlap with read_time_window.
   @$pb.TagNumber(4)
-  $4325.TimeWindow get readTimeWindow => $_getN(3);
+  $4326.TimeWindow get readTimeWindow => $_getN(3);
   @$pb.TagNumber(4)
-  set readTimeWindow($4325.TimeWindow v) { setField(4, v); }
+  set readTimeWindow($4326.TimeWindow v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadTimeWindow() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadTimeWindow() => clearField(4);
   @$pb.TagNumber(4)
-  $4325.TimeWindow ensureReadTimeWindow() => $_ensure(3);
+  $4326.TimeWindow ensureReadTimeWindow() => $_ensure(3);
 
   /// Optional. A list of relationship types to output, for example:
   /// `INSTANCE_TO_INSTANCEGROUP`. This field should only be specified if
@@ -725,7 +725,7 @@ class BatchGetAssetsHistoryRequest extends $pb.GeneratedMessage {
 /// Batch get assets history response.
 class BatchGetAssetsHistoryResponse extends $pb.GeneratedMessage {
   factory BatchGetAssetsHistoryResponse({
-    $core.Iterable<$4325.TemporalAsset>? assets,
+    $core.Iterable<$4326.TemporalAsset>? assets,
   }) {
     final $result = create();
     if (assets != null) {
@@ -738,7 +738,7 @@ class BatchGetAssetsHistoryResponse extends $pb.GeneratedMessage {
   factory BatchGetAssetsHistoryResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchGetAssetsHistoryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
-    ..pc<$4325.TemporalAsset>(1, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4325.TemporalAsset.create)
+    ..pc<$4326.TemporalAsset>(1, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4326.TemporalAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -765,7 +765,7 @@ class BatchGetAssetsHistoryResponse extends $pb.GeneratedMessage {
 
   /// A list of assets with valid time windows.
   @$pb.TagNumber(1)
-  $core.List<$4325.TemporalAsset> get assets => $_getList(0);
+  $core.List<$4326.TemporalAsset> get assets => $_getList(0);
 }
 
 /// Create asset feed request.
@@ -1018,7 +1018,7 @@ class ListFeedsResponse extends $pb.GeneratedMessage {
 class UpdateFeedRequest extends $pb.GeneratedMessage {
   factory UpdateFeedRequest({
     Feed? feed,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (feed != null) {
@@ -1035,7 +1035,7 @@ class UpdateFeedRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeedRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..aOM<Feed>(1, _omitFieldNames ? '' : 'feed', subBuilder: Feed.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1080,15 +1080,15 @@ class UpdateFeedRequest extends $pb.GeneratedMessage {
   /// The field mask must not be empty, and it must not contain fields that
   /// are immutable or only set by the server.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 class DeleteFeedRequest extends $pb.GeneratedMessage {
@@ -1796,7 +1796,7 @@ class Feed extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? assetTypes,
     ContentType? contentType,
     FeedOutputConfig? feedOutputConfig,
-    $4213.Expr? condition,
+    $4214.Expr? condition,
     $core.Iterable<$core.String>? relationshipTypes,
   }) {
     final $result = create();
@@ -1833,7 +1833,7 @@ class Feed extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'assetTypes')
     ..e<ContentType>(4, _omitFieldNames ? '' : 'contentType', $pb.PbFieldType.OE, defaultOrMaker: ContentType.CONTENT_TYPE_UNSPECIFIED, valueOf: ContentType.valueOf, enumValues: ContentType.values)
     ..aOM<FeedOutputConfig>(5, _omitFieldNames ? '' : 'feedOutputConfig', subBuilder: FeedOutputConfig.create)
-    ..aOM<$4213.Expr>(6, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(6, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
     ..pPS(7, _omitFieldNames ? '' : 'relationshipTypes')
     ..hasRequiredFields = false
   ;
@@ -1932,15 +1932,15 @@ class Feed extends $pb.GeneratedMessage {
   ///  guide](https://cloud.google.com/asset-inventory/docs/monitoring-asset-changes-with-condition)
   ///  for detailed instructions.
   @$pb.TagNumber(6)
-  $4213.Expr get condition => $_getN(5);
+  $4214.Expr get condition => $_getN(5);
   @$pb.TagNumber(6)
-  set condition($4213.Expr v) { setField(6, v); }
+  set condition($4214.Expr v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCondition() => $_has(5);
   @$pb.TagNumber(6)
   void clearCondition() => clearField(6);
   @$pb.TagNumber(6)
-  $4213.Expr ensureCondition() => $_ensure(5);
+  $4214.Expr ensureCondition() => $_ensure(5);
 
   /// A list of relationship types to output, for example:
   /// `INSTANCE_TO_INSTANCEGROUP`. This field should only be specified if
@@ -1971,7 +1971,7 @@ class SearchAllResourcesRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? orderBy,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (scope != null) {
@@ -2008,7 +2008,7 @@ class SearchAllResourcesRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..aOS(6, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$2209.FieldMask>(8, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(8, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2245,21 +2245,21 @@ class SearchAllResourcesRequest extends $pb.GeneratedMessage {
   ///  Examples: `"name,location"`, `"name,versionedResources"`, `"*"`.
   ///  Any invalid field path will trigger INVALID_ARGUMENT error.
   @$pb.TagNumber(8)
-  $2209.FieldMask get readMask => $_getN(6);
+  $2210.FieldMask get readMask => $_getN(6);
   @$pb.TagNumber(8)
-  set readMask($2209.FieldMask v) { setField(8, v); }
+  set readMask($2210.FieldMask v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasReadMask() => $_has(6);
   @$pb.TagNumber(8)
   void clearReadMask() => clearField(8);
   @$pb.TagNumber(8)
-  $2209.FieldMask ensureReadMask() => $_ensure(6);
+  $2210.FieldMask ensureReadMask() => $_ensure(6);
 }
 
 /// Search all resources response.
 class SearchAllResourcesResponse extends $pb.GeneratedMessage {
   factory SearchAllResourcesResponse({
-    $core.Iterable<$4325.ResourceSearchResult>? results,
+    $core.Iterable<$4326.ResourceSearchResult>? results,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -2276,7 +2276,7 @@ class SearchAllResourcesResponse extends $pb.GeneratedMessage {
   factory SearchAllResourcesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchAllResourcesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
-    ..pc<$4325.ResourceSearchResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4325.ResourceSearchResult.create)
+    ..pc<$4326.ResourceSearchResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4326.ResourceSearchResult.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -2305,7 +2305,7 @@ class SearchAllResourcesResponse extends $pb.GeneratedMessage {
   /// A list of Resources that match the search query. It contains the resource
   /// standard metadata information.
   @$pb.TagNumber(1)
-  $core.List<$4325.ResourceSearchResult> get results => $_getList(0);
+  $core.List<$4326.ResourceSearchResult> get results => $_getList(0);
 
   /// If there are more results than those appearing in this response, then
   /// `next_page_token` is included. To get the next set of results, call this
@@ -2528,7 +2528,7 @@ class SearchAllIamPoliciesRequest extends $pb.GeneratedMessage {
 /// Search all IAM policies response.
 class SearchAllIamPoliciesResponse extends $pb.GeneratedMessage {
   factory SearchAllIamPoliciesResponse({
-    $core.Iterable<$4325.IamPolicySearchResult>? results,
+    $core.Iterable<$4326.IamPolicySearchResult>? results,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -2545,7 +2545,7 @@ class SearchAllIamPoliciesResponse extends $pb.GeneratedMessage {
   factory SearchAllIamPoliciesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchAllIamPoliciesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
-    ..pc<$4325.IamPolicySearchResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4325.IamPolicySearchResult.create)
+    ..pc<$4326.IamPolicySearchResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4326.IamPolicySearchResult.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -2574,7 +2574,7 @@ class SearchAllIamPoliciesResponse extends $pb.GeneratedMessage {
   /// A list of IAM policies that match the search query. Related information
   /// such as the associated resource is returned along with the policy.
   @$pb.TagNumber(1)
-  $core.List<$4325.IamPolicySearchResult> get results => $_getList(0);
+  $core.List<$4326.IamPolicySearchResult> get results => $_getList(0);
 
   /// Set if there are more results than those appearing in this response; to get
   /// the next set of results, call this method again, using this value as the
@@ -2987,7 +2987,7 @@ enum IamPolicyAnalysisQuery_ConditionContext_TimeContext {
 /// The IAM conditions context.
 class IamPolicyAnalysisQuery_ConditionContext extends $pb.GeneratedMessage {
   factory IamPolicyAnalysisQuery_ConditionContext({
-    $1775.Timestamp? accessTime,
+    $1776.Timestamp? accessTime,
   }) {
     final $result = create();
     if (accessTime != null) {
@@ -3005,7 +3005,7 @@ class IamPolicyAnalysisQuery_ConditionContext extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IamPolicyAnalysisQuery.ConditionContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'accessTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'accessTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3037,15 +3037,15 @@ class IamPolicyAnalysisQuery_ConditionContext extends $pb.GeneratedMessage {
   /// this value must not be earlier than the current time; otherwise, an
   /// INVALID_ARGUMENT error will be returned.
   @$pb.TagNumber(1)
-  $1775.Timestamp get accessTime => $_getN(0);
+  $1776.Timestamp get accessTime => $_getN(0);
   @$pb.TagNumber(1)
-  set accessTime($1775.Timestamp v) { setField(1, v); }
+  set accessTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureAccessTime() => $_ensure(0);
+  $1776.Timestamp ensureAccessTime() => $_ensure(0);
 }
 
 /// IAM policy analysis query message.
@@ -3201,7 +3201,7 @@ class IamPolicyAnalysisQuery extends $pb.GeneratedMessage {
 class AnalyzeIamPolicyRequest extends $pb.GeneratedMessage {
   factory AnalyzeIamPolicyRequest({
     IamPolicyAnalysisQuery? analysisQuery,
-    $1737.Duration? executionTimeout,
+    $1738.Duration? executionTimeout,
     $core.String? savedAnalysisQuery,
   }) {
     final $result = create();
@@ -3222,7 +3222,7 @@ class AnalyzeIamPolicyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzeIamPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..aOM<IamPolicyAnalysisQuery>(1, _omitFieldNames ? '' : 'analysisQuery', subBuilder: IamPolicyAnalysisQuery.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'savedAnalysisQuery')
     ..hasRequiredFields = false
   ;
@@ -3272,15 +3272,15 @@ class AnalyzeIamPolicyRequest extends $pb.GeneratedMessage {
   ///
   ///  Default is empty.
   @$pb.TagNumber(2)
-  $1737.Duration get executionTimeout => $_getN(1);
+  $1738.Duration get executionTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set executionTimeout($1737.Duration v) { setField(2, v); }
+  set executionTimeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExecutionTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearExecutionTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureExecutionTimeout() => $_ensure(1);
+  $1738.Duration ensureExecutionTimeout() => $_ensure(1);
 
   ///  Optional. The name of a saved query, which must be in the format of:
   ///
@@ -3312,9 +3312,9 @@ class AnalyzeIamPolicyRequest extends $pb.GeneratedMessage {
 class AnalyzeIamPolicyResponse_IamPolicyAnalysis extends $pb.GeneratedMessage {
   factory AnalyzeIamPolicyResponse_IamPolicyAnalysis({
     IamPolicyAnalysisQuery? analysisQuery,
-    $core.Iterable<$4325.IamPolicyAnalysisResult>? analysisResults,
+    $core.Iterable<$4326.IamPolicyAnalysisResult>? analysisResults,
     $core.bool? fullyExplored,
-    $core.Iterable<$4325.IamPolicyAnalysisState>? nonCriticalErrors,
+    $core.Iterable<$4326.IamPolicyAnalysisState>? nonCriticalErrors,
   }) {
     final $result = create();
     if (analysisQuery != null) {
@@ -3337,9 +3337,9 @@ class AnalyzeIamPolicyResponse_IamPolicyAnalysis extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzeIamPolicyResponse.IamPolicyAnalysis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..aOM<IamPolicyAnalysisQuery>(1, _omitFieldNames ? '' : 'analysisQuery', subBuilder: IamPolicyAnalysisQuery.create)
-    ..pc<$4325.IamPolicyAnalysisResult>(2, _omitFieldNames ? '' : 'analysisResults', $pb.PbFieldType.PM, subBuilder: $4325.IamPolicyAnalysisResult.create)
+    ..pc<$4326.IamPolicyAnalysisResult>(2, _omitFieldNames ? '' : 'analysisResults', $pb.PbFieldType.PM, subBuilder: $4326.IamPolicyAnalysisResult.create)
     ..aOB(3, _omitFieldNames ? '' : 'fullyExplored')
-    ..pc<$4325.IamPolicyAnalysisState>(5, _omitFieldNames ? '' : 'nonCriticalErrors', $pb.PbFieldType.PM, subBuilder: $4325.IamPolicyAnalysisState.create)
+    ..pc<$4326.IamPolicyAnalysisState>(5, _omitFieldNames ? '' : 'nonCriticalErrors', $pb.PbFieldType.PM, subBuilder: $4326.IamPolicyAnalysisState.create)
     ..hasRequiredFields = false
   ;
 
@@ -3380,7 +3380,7 @@ class AnalyzeIamPolicyResponse_IamPolicyAnalysis extends $pb.GeneratedMessage {
   /// [IamPolicyAnalysisResult][google.cloud.asset.v1.IamPolicyAnalysisResult]
   /// that matches the analysis query, or empty if no result is found.
   @$pb.TagNumber(2)
-  $core.List<$4325.IamPolicyAnalysisResult> get analysisResults => $_getList(1);
+  $core.List<$4326.IamPolicyAnalysisResult> get analysisResults => $_getList(1);
 
   /// Represents whether all entries in the
   /// [analysis_results][google.cloud.asset.v1.AnalyzeIamPolicyResponse.IamPolicyAnalysis.analysis_results]
@@ -3396,7 +3396,7 @@ class AnalyzeIamPolicyResponse_IamPolicyAnalysis extends $pb.GeneratedMessage {
 
   /// A list of non-critical errors happened during the query handling.
   @$pb.TagNumber(5)
-  $core.List<$4325.IamPolicyAnalysisState> get nonCriticalErrors => $_getList(3);
+  $core.List<$4326.IamPolicyAnalysisState> get nonCriticalErrors => $_getList(3);
 }
 
 /// A response message for
@@ -3963,9 +3963,9 @@ class SavedQuery extends $pb.GeneratedMessage {
   factory SavedQuery({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? creator,
-    $1775.Timestamp? lastUpdateTime,
+    $1776.Timestamp? lastUpdateTime,
     $core.String? lastUpdater,
     $core.Map<$core.String, $core.String>? labels,
     SavedQuery_QueryContent? content,
@@ -4004,9 +4004,9 @@ class SavedQuery extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SavedQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'creator')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'lastUpdater')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'SavedQuery.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.asset.v1'))
     ..aOM<SavedQuery_QueryContent>(8, _omitFieldNames ? '' : 'content', subBuilder: SavedQuery_QueryContent.create)
@@ -4061,15 +4061,15 @@ class SavedQuery extends $pb.GeneratedMessage {
 
   /// Output only. The create time of this saved query.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The account's email address who has created this saved query.
   @$pb.TagNumber(4)
@@ -4083,15 +4083,15 @@ class SavedQuery extends $pb.GeneratedMessage {
 
   /// Output only. The last update time of this saved query.
   @$pb.TagNumber(5)
-  $1775.Timestamp get lastUpdateTime => $_getN(4);
+  $1776.Timestamp get lastUpdateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set lastUpdateTime($1775.Timestamp v) { setField(5, v); }
+  set lastUpdateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLastUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearLastUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureLastUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureLastUpdateTime() => $_ensure(4);
 
   /// Output only. The account's email address who has updated this saved query
   /// most recently.
@@ -4454,7 +4454,7 @@ class ListSavedQueriesResponse extends $pb.GeneratedMessage {
 class UpdateSavedQueryRequest extends $pb.GeneratedMessage {
   factory UpdateSavedQueryRequest({
     SavedQuery? savedQuery,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (savedQuery != null) {
@@ -4471,7 +4471,7 @@ class UpdateSavedQueryRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSavedQueryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
     ..aOM<SavedQuery>(1, _omitFieldNames ? '' : 'savedQuery', subBuilder: SavedQuery.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4517,15 +4517,15 @@ class UpdateSavedQueryRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete a saved query.
@@ -4733,7 +4733,7 @@ class MoveAnalysis extends $pb.GeneratedMessage {
   factory MoveAnalysis({
     $core.String? displayName,
     MoveAnalysisResult? analysis,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (displayName != null) {
@@ -4760,7 +4760,7 @@ class MoveAnalysis extends $pb.GeneratedMessage {
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
     ..aOM<MoveAnalysisResult>(2, _omitFieldNames ? '' : 'analysis', subBuilder: MoveAnalysisResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -4813,15 +4813,15 @@ class MoveAnalysis extends $pb.GeneratedMessage {
 
   /// Description of error encountered when performing the analysis.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// An analysis result including blockers and warnings.
@@ -5103,9 +5103,9 @@ class QueryAssetsRequest extends $pb.GeneratedMessage {
     $core.String? jobReference,
     $core.int? pageSize,
     $core.String? pageToken,
-    $1737.Duration? timeout,
-    $4325.TimeWindow? readTimeWindow,
-    $1775.Timestamp? readTime,
+    $1738.Duration? timeout,
+    $4326.TimeWindow? readTimeWindow,
+    $1776.Timestamp? readTime,
     QueryAssetsOutputConfig? outputConfig,
   }) {
     final $result = create();
@@ -5160,9 +5160,9 @@ class QueryAssetsRequest extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'jobReference')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
-    ..aOM<$4325.TimeWindow>(7, _omitFieldNames ? '' : 'readTimeWindow', subBuilder: $4325.TimeWindow.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
+    ..aOM<$4326.TimeWindow>(7, _omitFieldNames ? '' : 'readTimeWindow', subBuilder: $4326.TimeWindow.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOM<QueryAssetsOutputConfig>(9, _omitFieldNames ? '' : 'outputConfig', subBuilder: QueryAssetsOutputConfig.create)
     ..hasRequiredFields = false
   ;
@@ -5273,42 +5273,42 @@ class QueryAssetsRequest extends $pb.GeneratedMessage {
   ///
   ///  The field will be ignored when [output_config] is specified.
   @$pb.TagNumber(6)
-  $1737.Duration get timeout => $_getN(5);
+  $1738.Duration get timeout => $_getN(5);
   @$pb.TagNumber(6)
-  set timeout($1737.Duration v) { setField(6, v); }
+  set timeout($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeout() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeout() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureTimeout() => $_ensure(5);
+  $1738.Duration ensureTimeout() => $_ensure(5);
 
   /// Optional. [start_time] is required. [start_time] must be less than
   /// [end_time] Defaults [end_time] to now if [start_time] is set and
   /// [end_time] isn't. Maximum permitted time range is 7 days.
   @$pb.TagNumber(7)
-  $4325.TimeWindow get readTimeWindow => $_getN(6);
+  $4326.TimeWindow get readTimeWindow => $_getN(6);
   @$pb.TagNumber(7)
-  set readTimeWindow($4325.TimeWindow v) { setField(7, v); }
+  set readTimeWindow($4326.TimeWindow v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasReadTimeWindow() => $_has(6);
   @$pb.TagNumber(7)
   void clearReadTimeWindow() => clearField(7);
   @$pb.TagNumber(7)
-  $4325.TimeWindow ensureReadTimeWindow() => $_ensure(6);
+  $4326.TimeWindow ensureReadTimeWindow() => $_ensure(6);
 
   /// Optional. Queries cloud assets as they appeared at the specified point in
   /// time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get readTime => $_getN(7);
+  $1776.Timestamp get readTime => $_getN(7);
   @$pb.TagNumber(8)
-  set readTime($1775.Timestamp v) { setField(8, v); }
+  set readTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasReadTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearReadTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureReadTime() => $_ensure(7);
+  $1776.Timestamp ensureReadTime() => $_ensure(7);
 
   ///  Optional. Destination where the query results will be saved.
   ///
@@ -5343,7 +5343,7 @@ class QueryAssetsResponse extends $pb.GeneratedMessage {
   factory QueryAssetsResponse({
     $core.String? jobReference,
     $core.bool? done,
-    $1795.Status? error,
+    $1796.Status? error,
     QueryResult? queryResult,
     QueryAssetsOutputConfig? outputConfig,
   }) {
@@ -5379,7 +5379,7 @@ class QueryAssetsResponse extends $pb.GeneratedMessage {
     ..oo(0, [3, 4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'jobReference')
     ..aOB(2, _omitFieldNames ? '' : 'done')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<QueryResult>(4, _omitFieldNames ? '' : 'queryResult', subBuilder: QueryResult.create)
     ..aOM<QueryAssetsOutputConfig>(5, _omitFieldNames ? '' : 'outputConfig', subBuilder: QueryAssetsOutputConfig.create)
     ..hasRequiredFields = false
@@ -5436,15 +5436,15 @@ class QueryAssetsResponse extends $pb.GeneratedMessage {
 
   /// Error status.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 
   /// Result of the query.
   @$pb.TagNumber(4)
@@ -5479,7 +5479,7 @@ class QueryAssetsResponse extends $pb.GeneratedMessage {
 ///  the results of following pages.
 class QueryResult extends $pb.GeneratedMessage {
   factory QueryResult({
-    $core.Iterable<$1734.Struct>? rows,
+    $core.Iterable<$1735.Struct>? rows,
     TableSchema? schema,
     $core.String? nextPageToken,
     $fixnum.Int64? totalRows,
@@ -5504,7 +5504,7 @@ class QueryResult extends $pb.GeneratedMessage {
   factory QueryResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1'), createEmptyInstance: create)
-    ..pc<$1734.Struct>(1, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $1734.Struct.create)
+    ..pc<$1735.Struct>(1, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $1735.Struct.create)
     ..aOM<TableSchema>(2, _omitFieldNames ? '' : 'schema', subBuilder: TableSchema.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..aInt64(4, _omitFieldNames ? '' : 'totalRows')
@@ -5534,7 +5534,7 @@ class QueryResult extends $pb.GeneratedMessage {
 
   /// Each row hold a query result in the format of `Struct`.
   @$pb.TagNumber(1)
-  $core.List<$1734.Struct> get rows => $_getList(0);
+  $core.List<$1735.Struct> get rows => $_getList(0);
 
   /// Describes the format of the [rows].
   @$pb.TagNumber(2)
@@ -6083,8 +6083,8 @@ class AnalyzerOrgPolicy_Rule extends $pb.GeneratedMessage {
     $core.bool? allowAll,
     $core.bool? denyAll,
     $core.bool? enforce,
-    $4213.Expr? condition,
-    $4325.ConditionEvaluation? conditionEvaluation,
+    $4214.Expr? condition,
+    $4326.ConditionEvaluation? conditionEvaluation,
   }) {
     final $result = create();
     if (values != null) {
@@ -6124,8 +6124,8 @@ class AnalyzerOrgPolicy_Rule extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'allowAll')
     ..aOB(5, _omitFieldNames ? '' : 'denyAll')
     ..aOB(6, _omitFieldNames ? '' : 'enforce')
-    ..aOM<$4213.Expr>(7, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
-    ..aOM<$4325.ConditionEvaluation>(8, _omitFieldNames ? '' : 'conditionEvaluation', subBuilder: $4325.ConditionEvaluation.create)
+    ..aOM<$4214.Expr>(7, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
+    ..aOM<$4326.ConditionEvaluation>(8, _omitFieldNames ? '' : 'conditionEvaluation', subBuilder: $4326.ConditionEvaluation.create)
     ..hasRequiredFields = false
   ;
 
@@ -6202,15 +6202,15 @@ class AnalyzerOrgPolicy_Rule extends $pb.GeneratedMessage {
 
   /// The evaluating condition for this rule.
   @$pb.TagNumber(7)
-  $4213.Expr get condition => $_getN(4);
+  $4214.Expr get condition => $_getN(4);
   @$pb.TagNumber(7)
-  set condition($4213.Expr v) { setField(7, v); }
+  set condition($4214.Expr v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCondition() => $_has(4);
   @$pb.TagNumber(7)
   void clearCondition() => clearField(7);
   @$pb.TagNumber(7)
-  $4213.Expr ensureCondition() => $_ensure(4);
+  $4214.Expr ensureCondition() => $_ensure(4);
 
   ///  The condition evaluation result for this rule.
   ///  Only populated if it meets all the following criteria:
@@ -6227,15 +6227,15 @@ class AnalyzerOrgPolicy_Rule extends $pb.GeneratedMessage {
   ///    has
   ///    [AnalyzeOrgPolicyGovernedAssetsResponse.GovernedAsset.governed_resource][google.cloud.asset.v1.AnalyzeOrgPolicyGovernedAssetsResponse.GovernedAsset.governed_resource].
   @$pb.TagNumber(8)
-  $4325.ConditionEvaluation get conditionEvaluation => $_getN(5);
+  $4326.ConditionEvaluation get conditionEvaluation => $_getN(5);
   @$pb.TagNumber(8)
-  set conditionEvaluation($4325.ConditionEvaluation v) { setField(8, v); }
+  set conditionEvaluation($4326.ConditionEvaluation v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasConditionEvaluation() => $_has(5);
   @$pb.TagNumber(8)
   void clearConditionEvaluation() => clearField(8);
   @$pb.TagNumber(8)
-  $4325.ConditionEvaluation ensureConditionEvaluation() => $_ensure(5);
+  $4326.ConditionEvaluation ensureConditionEvaluation() => $_ensure(5);
 }
 
 /// This organization policy message is a modified version of the one defined in
@@ -7326,7 +7326,7 @@ class AnalyzeOrgPolicyGovernedContainersResponse_GovernedContainer extends $pb.G
     $core.String? project,
     $core.Iterable<$core.String>? folders,
     $core.String? organization,
-    $core.Iterable<$4325.EffectiveTagDetails>? effectiveTags,
+    $core.Iterable<$4326.EffectiveTagDetails>? effectiveTags,
   }) {
     final $result = create();
     if (fullResourceName != null) {
@@ -7367,7 +7367,7 @@ class AnalyzeOrgPolicyGovernedContainersResponse_GovernedContainer extends $pb.G
     ..aOS(5, _omitFieldNames ? '' : 'project')
     ..pPS(6, _omitFieldNames ? '' : 'folders')
     ..aOS(7, _omitFieldNames ? '' : 'organization')
-    ..pc<$4325.EffectiveTagDetails>(8, _omitFieldNames ? '' : 'effectiveTags', $pb.PbFieldType.PM, subBuilder: $4325.EffectiveTagDetails.create)
+    ..pc<$4326.EffectiveTagDetails>(8, _omitFieldNames ? '' : 'effectiveTags', $pb.PbFieldType.PM, subBuilder: $4326.EffectiveTagDetails.create)
     ..hasRequiredFields = false
   ;
 
@@ -7474,7 +7474,7 @@ class AnalyzeOrgPolicyGovernedContainersResponse_GovernedContainer extends $pb.G
 
   /// The effective tags on this resource.
   @$pb.TagNumber(8)
-  $core.List<$4325.EffectiveTagDetails> get effectiveTags => $_getList(7);
+  $core.List<$4326.EffectiveTagDetails> get effectiveTags => $_getList(7);
 }
 
 /// The response message for
@@ -7715,7 +7715,7 @@ class AnalyzeOrgPolicyGovernedAssetsResponse_GovernedResource extends $pb.Genera
     $core.Iterable<$core.String>? folders,
     $core.String? organization,
     $core.String? assetType,
-    $core.Iterable<$4325.EffectiveTagDetails>? effectiveTags,
+    $core.Iterable<$4326.EffectiveTagDetails>? effectiveTags,
   }) {
     final $result = create();
     if (fullResourceName != null) {
@@ -7752,7 +7752,7 @@ class AnalyzeOrgPolicyGovernedAssetsResponse_GovernedResource extends $pb.Genera
     ..pPS(6, _omitFieldNames ? '' : 'folders')
     ..aOS(7, _omitFieldNames ? '' : 'organization')
     ..aOS(8, _omitFieldNames ? '' : 'assetType')
-    ..pc<$4325.EffectiveTagDetails>(9, _omitFieldNames ? '' : 'effectiveTags', $pb.PbFieldType.PM, subBuilder: $4325.EffectiveTagDetails.create)
+    ..pc<$4326.EffectiveTagDetails>(9, _omitFieldNames ? '' : 'effectiveTags', $pb.PbFieldType.PM, subBuilder: $4326.EffectiveTagDetails.create)
     ..hasRequiredFields = false
   ;
 
@@ -7850,7 +7850,7 @@ class AnalyzeOrgPolicyGovernedAssetsResponse_GovernedResource extends $pb.Genera
 
   /// The effective tags on this resource.
   @$pb.TagNumber(9)
-  $core.List<$4325.EffectiveTagDetails> get effectiveTags => $_getList(6);
+  $core.List<$4326.EffectiveTagDetails> get effectiveTags => $_getList(6);
 }
 
 /// The IAM policies governed by the organization policies of the

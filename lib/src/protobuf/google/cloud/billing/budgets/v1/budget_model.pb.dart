@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import '../../../../type/date.pb.dart' as $1800;
-import '../../../../type/money.pb.dart' as $1814;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import '../../../../type/date.pb.dart' as $1801;
+import '../../../../type/money.pb.dart' as $1815;
 import 'budget_model.pbenum.dart';
 
 export 'budget_model.pbenum.dart';
@@ -188,7 +188,7 @@ enum BudgetAmount_BudgetAmount {
 /// The budgeted amount for each usage period.
 class BudgetAmount extends $pb.GeneratedMessage {
   factory BudgetAmount({
-    $1814.Money? specifiedAmount,
+    $1815.Money? specifiedAmount,
     LastPeriodAmount? lastPeriodAmount,
   }) {
     final $result = create();
@@ -211,7 +211,7 @@ class BudgetAmount extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BudgetAmount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.billing.budgets.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$1814.Money>(1, _omitFieldNames ? '' : 'specifiedAmount', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(1, _omitFieldNames ? '' : 'specifiedAmount', subBuilder: $1815.Money.create)
     ..aOM<LastPeriodAmount>(2, _omitFieldNames ? '' : 'lastPeriodAmount', subBuilder: LastPeriodAmount.create)
     ..hasRequiredFields = false
   ;
@@ -246,15 +246,15 @@ class BudgetAmount extends $pb.GeneratedMessage {
   /// budget, it must match the currency_code of the existing budget.
   /// The `currency_code` is provided on output.
   @$pb.TagNumber(1)
-  $1814.Money get specifiedAmount => $_getN(0);
+  $1815.Money get specifiedAmount => $_getN(0);
   @$pb.TagNumber(1)
-  set specifiedAmount($1814.Money v) { setField(1, v); }
+  set specifiedAmount($1815.Money v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpecifiedAmount() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpecifiedAmount() => clearField(1);
   @$pb.TagNumber(1)
-  $1814.Money ensureSpecifiedAmount() => $_ensure(0);
+  $1815.Money ensureSpecifiedAmount() => $_ensure(0);
 
   /// Use the last period's actual spend as the budget for the present period.
   /// LastPeriodAmount can only be set when the budget's time period is a
@@ -584,7 +584,7 @@ class Filter extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? services,
     Filter_CreditTypesTreatment? creditTypesTreatment,
     $core.Iterable<$core.String>? subaccounts,
-    $core.Map<$core.String, $1734.ListValue>? labels,
+    $core.Map<$core.String, $1735.ListValue>? labels,
     $core.Iterable<$core.String>? creditTypes,
     CalendarPeriod? calendarPeriod,
     CustomPeriod? customPeriod,
@@ -635,7 +635,7 @@ class Filter extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'services')
     ..e<Filter_CreditTypesTreatment>(4, _omitFieldNames ? '' : 'creditTypesTreatment', $pb.PbFieldType.OE, defaultOrMaker: Filter_CreditTypesTreatment.CREDIT_TYPES_TREATMENT_UNSPECIFIED, valueOf: Filter_CreditTypesTreatment.valueOf, enumValues: Filter_CreditTypesTreatment.values)
     ..pPS(5, _omitFieldNames ? '' : 'subaccounts')
-    ..m<$core.String, $1734.ListValue>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Filter.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.ListValue.create, valueDefaultOrMaker: $1734.ListValue.getDefault, packageName: const $pb.PackageName('google.cloud.billing.budgets.v1'))
+    ..m<$core.String, $1735.ListValue>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Filter.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.ListValue.create, valueDefaultOrMaker: $1735.ListValue.getDefault, packageName: const $pb.PackageName('google.cloud.billing.budgets.v1'))
     ..pPS(7, _omitFieldNames ? '' : 'creditTypes')
     ..e<CalendarPeriod>(8, _omitFieldNames ? '' : 'calendarPeriod', $pb.PbFieldType.OE, defaultOrMaker: CalendarPeriod.CALENDAR_PERIOD_UNSPECIFIED, valueOf: CalendarPeriod.valueOf, enumValues: CalendarPeriod.values)
     ..aOM<CustomPeriod>(9, _omitFieldNames ? '' : 'customPeriod', subBuilder: CustomPeriod.create)
@@ -721,7 +721,7 @@ class Filter extends $pb.GeneratedMessage {
   ///   _Currently, multiple entries or multiple values per entry are not
   ///   allowed._
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $1734.ListValue> get labels => $_getMap(5);
+  $core.Map<$core.String, $1735.ListValue> get labels => $_getMap(5);
 
   ///  Optional. If
   ///  [Filter.credit_types_treatment][google.cloud.billing.budgets.v1.Filter.credit_types_treatment]
@@ -768,8 +768,8 @@ class Filter extends $pb.GeneratedMessage {
 /// All date times begin at 12 AM US and Canadian Pacific Time (UTC-8).
 class CustomPeriod extends $pb.GeneratedMessage {
   factory CustomPeriod({
-    $1800.Date? startDate,
-    $1800.Date? endDate,
+    $1801.Date? startDate,
+    $1801.Date? endDate,
   }) {
     final $result = create();
     if (startDate != null) {
@@ -785,8 +785,8 @@ class CustomPeriod extends $pb.GeneratedMessage {
   factory CustomPeriod.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomPeriod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.billing.budgets.v1'), createEmptyInstance: create)
-    ..aOM<$1800.Date>(1, _omitFieldNames ? '' : 'startDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(2, _omitFieldNames ? '' : 'endDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(1, _omitFieldNames ? '' : 'startDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(2, _omitFieldNames ? '' : 'endDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -813,29 +813,29 @@ class CustomPeriod extends $pb.GeneratedMessage {
 
   /// Required. The start date must be after January 1, 2017.
   @$pb.TagNumber(1)
-  $1800.Date get startDate => $_getN(0);
+  $1801.Date get startDate => $_getN(0);
   @$pb.TagNumber(1)
-  set startDate($1800.Date v) { setField(1, v); }
+  set startDate($1801.Date v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartDate() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartDate() => clearField(1);
   @$pb.TagNumber(1)
-  $1800.Date ensureStartDate() => $_ensure(0);
+  $1801.Date ensureStartDate() => $_ensure(0);
 
   /// Optional. The end date of the time period. Budgets with elapsed end date
   /// won't be processed. If unset, specifies to track all usage incurred since
   /// the start_date.
   @$pb.TagNumber(2)
-  $1800.Date get endDate => $_getN(1);
+  $1801.Date get endDate => $_getN(1);
   @$pb.TagNumber(2)
-  set endDate($1800.Date v) { setField(2, v); }
+  set endDate($1801.Date v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndDate() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndDate() => clearField(2);
   @$pb.TagNumber(2)
-  $1800.Date ensureEndDate() => $_ensure(1);
+  $1801.Date ensureEndDate() => $_ensure(1);
 }
 
 

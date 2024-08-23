@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'error.pb.dart' as $4413;
+import 'error.pb.dart' as $4414;
 
 class JobStatus extends $pb.GeneratedMessage {
   factory JobStatus({
-    $4413.ErrorProto? errorResult,
-    $core.Iterable<$4413.ErrorProto>? errors,
+    $4414.ErrorProto? errorResult,
+    $core.Iterable<$4414.ErrorProto>? errors,
     $core.String? state,
   }) {
     final $result = create();
@@ -38,8 +38,8 @@ class JobStatus extends $pb.GeneratedMessage {
   factory JobStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4413.ErrorProto>(1, _omitFieldNames ? '' : 'errorResult', subBuilder: $4413.ErrorProto.create)
-    ..pc<$4413.ErrorProto>(2, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $4413.ErrorProto.create)
+    ..aOM<$4414.ErrorProto>(1, _omitFieldNames ? '' : 'errorResult', subBuilder: $4414.ErrorProto.create)
+    ..pc<$4414.ErrorProto>(2, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $4414.ErrorProto.create)
     ..aOS(3, _omitFieldNames ? '' : 'state')
     ..hasRequiredFields = false
   ;
@@ -68,22 +68,22 @@ class JobStatus extends $pb.GeneratedMessage {
   /// Output only. Final error result of the job. If present, indicates that the
   /// job has completed and was unsuccessful.
   @$pb.TagNumber(1)
-  $4413.ErrorProto get errorResult => $_getN(0);
+  $4414.ErrorProto get errorResult => $_getN(0);
   @$pb.TagNumber(1)
-  set errorResult($4413.ErrorProto v) { setField(1, v); }
+  set errorResult($4414.ErrorProto v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasErrorResult() => $_has(0);
   @$pb.TagNumber(1)
   void clearErrorResult() => clearField(1);
   @$pb.TagNumber(1)
-  $4413.ErrorProto ensureErrorResult() => $_ensure(0);
+  $4414.ErrorProto ensureErrorResult() => $_ensure(0);
 
   /// Output only. The first errors encountered during the running of the job.
   /// The final message includes the number of errors that caused the process to
   /// stop. Errors here do not necessarily mean that the job has not completed or
   /// was unsuccessful.
   @$pb.TagNumber(2)
-  $core.List<$4413.ErrorProto> get errors => $_getList(1);
+  $core.List<$4414.ErrorProto> get errors => $_getList(1);
 
   /// Output only. Running state of the job.  Valid states include 'PENDING',
   /// 'RUNNING', and 'DONE'.

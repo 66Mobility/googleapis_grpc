@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pbenum.dart' as $1734;
-import '../../protobuf/timestamp.pb.dart' as $1775;
-import '../../type/latlng.pb.dart' as $1798;
+import '../../protobuf/struct.pbenum.dart' as $1735;
+import '../../protobuf/timestamp.pb.dart' as $1776;
+import '../../type/latlng.pb.dart' as $1799;
 
 ///  A partition ID identifies a grouping of entities. The grouping is always
 ///  by project and namespace, however the namespace ID may be empty.
@@ -367,10 +367,10 @@ class Value extends $pb.GeneratedMessage {
     $core.double? doubleValue,
     Key? keyValue,
     Entity? entityValue,
-    $1798.LatLng? geoPointValue,
+    $1799.LatLng? geoPointValue,
     ArrayValue? arrayValue,
-    $1775.Timestamp? timestampValue,
-    $1734.NullValue? nullValue,
+    $1776.Timestamp? timestampValue,
+    $1735.NullValue? nullValue,
     $core.int? meaning,
     $core.String? stringValue,
     $core.List<$core.int>? blobValue,
@@ -443,10 +443,10 @@ class Value extends $pb.GeneratedMessage {
     ..a<$core.double>(3, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aOM<Key>(5, _omitFieldNames ? '' : 'keyValue', subBuilder: Key.create)
     ..aOM<Entity>(6, _omitFieldNames ? '' : 'entityValue', subBuilder: Entity.create)
-    ..aOM<$1798.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(8, _omitFieldNames ? '' : 'geoPointValue', subBuilder: $1799.LatLng.create)
     ..aOM<ArrayValue>(9, _omitFieldNames ? '' : 'arrayValue', subBuilder: ArrayValue.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1775.Timestamp.create)
-    ..e<$1734.NullValue>(11, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $1734.NullValue.NULL_VALUE, valueOf: $1734.NullValue.valueOf, enumValues: $1734.NullValue.values)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1776.Timestamp.create)
+    ..e<$1735.NullValue>(11, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $1735.NullValue.NULL_VALUE, valueOf: $1735.NullValue.valueOf, enumValues: $1735.NullValue.values)
     ..a<$core.int>(14, _omitFieldNames ? '' : 'meaning', $pb.PbFieldType.O3)
     ..aOS(17, _omitFieldNames ? '' : 'stringValue')
     ..a<$core.List<$core.int>>(18, _omitFieldNames ? '' : 'blobValue', $pb.PbFieldType.OY)
@@ -538,15 +538,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// A geo point value representing a point on the surface of Earth.
   @$pb.TagNumber(8)
-  $1798.LatLng get geoPointValue => $_getN(5);
+  $1799.LatLng get geoPointValue => $_getN(5);
   @$pb.TagNumber(8)
-  set geoPointValue($1798.LatLng v) { setField(8, v); }
+  set geoPointValue($1799.LatLng v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasGeoPointValue() => $_has(5);
   @$pb.TagNumber(8)
   void clearGeoPointValue() => clearField(8);
   @$pb.TagNumber(8)
-  $1798.LatLng ensureGeoPointValue() => $_ensure(5);
+  $1799.LatLng ensureGeoPointValue() => $_ensure(5);
 
   /// An array value.
   /// Cannot contain another array value.
@@ -567,21 +567,21 @@ class Value extends $pb.GeneratedMessage {
   /// When stored in the Datastore, precise only to microseconds;
   /// any additional precision is rounded down.
   @$pb.TagNumber(10)
-  $1775.Timestamp get timestampValue => $_getN(7);
+  $1776.Timestamp get timestampValue => $_getN(7);
   @$pb.TagNumber(10)
-  set timestampValue($1775.Timestamp v) { setField(10, v); }
+  set timestampValue($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTimestampValue() => $_has(7);
   @$pb.TagNumber(10)
   void clearTimestampValue() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureTimestampValue() => $_ensure(7);
+  $1776.Timestamp ensureTimestampValue() => $_ensure(7);
 
   /// A null value.
   @$pb.TagNumber(11)
-  $1734.NullValue get nullValue => $_getN(8);
+  $1735.NullValue get nullValue => $_getN(8);
   @$pb.TagNumber(11)
-  set nullValue($1734.NullValue v) { setField(11, v); }
+  set nullValue($1735.NullValue v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasNullValue() => $_has(8);
   @$pb.TagNumber(11)

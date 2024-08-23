@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'registry_models.pb.dart' as $649;
 
 /// Request message for ListApis.
@@ -332,7 +332,7 @@ class CreateApiRequest extends $pb.GeneratedMessage {
 class UpdateApiRequest extends $pb.GeneratedMessage {
   factory UpdateApiRequest({
     $649.Api? api,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -353,7 +353,7 @@ class UpdateApiRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateApiRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.apigeeregistry.v1'), createEmptyInstance: create)
     ..aOM<$649.Api>(1, _omitFieldNames ? '' : 'api', subBuilder: $649.Api.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -399,15 +399,15 @@ class UpdateApiRequest extends $pb.GeneratedMessage {
   /// If an asterisk "*" is specified, all fields are updated, including fields
   /// that are unspecified/default in the request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set to true, and the API is not found, a new API will be created.
   /// In this situation, `update_mask` is ignored.
@@ -806,7 +806,7 @@ class CreateApiVersionRequest extends $pb.GeneratedMessage {
 class UpdateApiVersionRequest extends $pb.GeneratedMessage {
   factory UpdateApiVersionRequest({
     $649.ApiVersion? apiVersion,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -827,7 +827,7 @@ class UpdateApiVersionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateApiVersionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.apigeeregistry.v1'), createEmptyInstance: create)
     ..aOM<$649.ApiVersion>(1, _omitFieldNames ? '' : 'apiVersion', subBuilder: $649.ApiVersion.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -873,15 +873,15 @@ class UpdateApiVersionRequest extends $pb.GeneratedMessage {
   /// If an asterisk "*" is specified, all fields are updated, including fields
   /// that are unspecified/default in the request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set to true, and the version is not found, a new version will be
   /// created. In this situation, `update_mask` is ignored.
@@ -1333,7 +1333,7 @@ class CreateApiSpecRequest extends $pb.GeneratedMessage {
 class UpdateApiSpecRequest extends $pb.GeneratedMessage {
   factory UpdateApiSpecRequest({
     $649.ApiSpec? apiSpec,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -1354,7 +1354,7 @@ class UpdateApiSpecRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateApiSpecRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.apigeeregistry.v1'), createEmptyInstance: create)
     ..aOM<$649.ApiSpec>(1, _omitFieldNames ? '' : 'apiSpec', subBuilder: $649.ApiSpec.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -1400,15 +1400,15 @@ class UpdateApiSpecRequest extends $pb.GeneratedMessage {
   /// If an asterisk "*" is specified, all fields are updated, including fields
   /// that are unspecified/default in the request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set to true, and the spec is not found, a new spec will be created.
   /// In this situation, `update_mask` is ignored.
@@ -2146,7 +2146,7 @@ class CreateApiDeploymentRequest extends $pb.GeneratedMessage {
 class UpdateApiDeploymentRequest extends $pb.GeneratedMessage {
   factory UpdateApiDeploymentRequest({
     $649.ApiDeployment? apiDeployment,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -2167,7 +2167,7 @@ class UpdateApiDeploymentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateApiDeploymentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.apigeeregistry.v1'), createEmptyInstance: create)
     ..aOM<$649.ApiDeployment>(1, _omitFieldNames ? '' : 'apiDeployment', subBuilder: $649.ApiDeployment.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -2213,15 +2213,15 @@ class UpdateApiDeploymentRequest extends $pb.GeneratedMessage {
   /// If an asterisk "*" is specified, all fields are updated, including fields
   /// that are unspecified/default in the request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set to true, and the deployment is not found, a new deployment will be
   /// created. In this situation, `update_mask` is ignored.

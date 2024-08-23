@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'target.pb.dart' as $4698;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'target.pb.dart' as $4700;
 import 'task.pbenum.dart';
 
 export 'task.pbenum.dart';
@@ -31,13 +31,13 @@ enum Task_PayloadType {
 class Task extends $pb.GeneratedMessage {
   factory Task({
     $core.String? name,
-    $4698.AppEngineHttpRequest? appEngineHttpRequest,
-    $4698.PullMessage? pullMessage,
-    $1775.Timestamp? scheduleTime,
-    $1775.Timestamp? createTime,
+    $4700.AppEngineHttpRequest? appEngineHttpRequest,
+    $4700.PullMessage? pullMessage,
+    $1776.Timestamp? scheduleTime,
+    $1776.Timestamp? createTime,
     TaskStatus? status,
     Task_View? view,
-    $4698.HttpRequest? httpRequest,
+    $4700.HttpRequest? httpRequest,
   }) {
     final $result = create();
     if (name != null) {
@@ -79,13 +79,13 @@ class Task extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Task', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
     ..oo(0, [3, 4, 13])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4698.AppEngineHttpRequest>(3, _omitFieldNames ? '' : 'appEngineHttpRequest', subBuilder: $4698.AppEngineHttpRequest.create)
-    ..aOM<$4698.PullMessage>(4, _omitFieldNames ? '' : 'pullMessage', subBuilder: $4698.PullMessage.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4700.AppEngineHttpRequest>(3, _omitFieldNames ? '' : 'appEngineHttpRequest', subBuilder: $4700.AppEngineHttpRequest.create)
+    ..aOM<$4700.PullMessage>(4, _omitFieldNames ? '' : 'pullMessage', subBuilder: $4700.PullMessage.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<TaskStatus>(7, _omitFieldNames ? '' : 'status', subBuilder: TaskStatus.create)
     ..e<Task_View>(8, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: Task_View.VIEW_UNSPECIFIED, valueOf: Task_View.valueOf, enumValues: Task_View.values)
-    ..aOM<$4698.HttpRequest>(13, _omitFieldNames ? '' : 'httpRequest', subBuilder: $4698.HttpRequest.create)
+    ..aOM<$4700.HttpRequest>(13, _omitFieldNames ? '' : 'httpRequest', subBuilder: $4700.HttpRequest.create)
     ..hasRequiredFields = false
   ;
 
@@ -152,15 +152,15 @@ class Task extends $pb.GeneratedMessage {
   ///  [AppEngineHttpRequest][google.cloud.tasks.v2beta2.AppEngineHttpRequest]
   ///  set.
   @$pb.TagNumber(3)
-  $4698.AppEngineHttpRequest get appEngineHttpRequest => $_getN(1);
+  $4700.AppEngineHttpRequest get appEngineHttpRequest => $_getN(1);
   @$pb.TagNumber(3)
-  set appEngineHttpRequest($4698.AppEngineHttpRequest v) { setField(3, v); }
+  set appEngineHttpRequest($4700.AppEngineHttpRequest v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAppEngineHttpRequest() => $_has(1);
   @$pb.TagNumber(3)
   void clearAppEngineHttpRequest() => clearField(3);
   @$pb.TagNumber(3)
-  $4698.AppEngineHttpRequest ensureAppEngineHttpRequest() => $_ensure(1);
+  $4700.AppEngineHttpRequest ensureAppEngineHttpRequest() => $_ensure(1);
 
   ///  [LeaseTasks][google.cloud.tasks.v2beta2.CloudTasks.LeaseTasks] to process
   ///  the task. Can be set only if
@@ -170,15 +170,15 @@ class Task extends $pb.GeneratedMessage {
   ///  A pull task is a task that has
   ///  [PullMessage][google.cloud.tasks.v2beta2.PullMessage] set.
   @$pb.TagNumber(4)
-  $4698.PullMessage get pullMessage => $_getN(2);
+  $4700.PullMessage get pullMessage => $_getN(2);
   @$pb.TagNumber(4)
-  set pullMessage($4698.PullMessage v) { setField(4, v); }
+  set pullMessage($4700.PullMessage v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPullMessage() => $_has(2);
   @$pb.TagNumber(4)
   void clearPullMessage() => clearField(4);
   @$pb.TagNumber(4)
-  $4698.PullMessage ensurePullMessage() => $_ensure(2);
+  $4700.PullMessage ensurePullMessage() => $_ensure(2);
 
   ///  The time when the task is scheduled to be attempted.
   ///
@@ -192,29 +192,29 @@ class Task extends $pb.GeneratedMessage {
   ///
   ///  `schedule_time` will be truncated to the nearest microsecond.
   @$pb.TagNumber(5)
-  $1775.Timestamp get scheduleTime => $_getN(3);
+  $1776.Timestamp get scheduleTime => $_getN(3);
   @$pb.TagNumber(5)
-  set scheduleTime($1775.Timestamp v) { setField(5, v); }
+  set scheduleTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasScheduleTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearScheduleTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(3);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(3);
 
   ///  Output only. The time that the task was created.
   ///
   ///  `create_time` will be truncated to the nearest second.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The task status.
   @$pb.TagNumber(7)
@@ -244,15 +244,15 @@ class Task extends $pb.GeneratedMessage {
   ///  An HTTP task is a task that has
   ///  [HttpRequest][google.cloud.tasks.v2beta2.HttpRequest] set.
   @$pb.TagNumber(13)
-  $4698.HttpRequest get httpRequest => $_getN(7);
+  $4700.HttpRequest get httpRequest => $_getN(7);
   @$pb.TagNumber(13)
-  set httpRequest($4698.HttpRequest v) { setField(13, v); }
+  set httpRequest($4700.HttpRequest v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasHttpRequest() => $_has(7);
   @$pb.TagNumber(13)
   void clearHttpRequest() => clearField(13);
   @$pb.TagNumber(13)
-  $4698.HttpRequest ensureHttpRequest() => $_ensure(7);
+  $4700.HttpRequest ensureHttpRequest() => $_ensure(7);
 }
 
 /// Status of the task.
@@ -377,10 +377,10 @@ class TaskStatus extends $pb.GeneratedMessage {
 /// The status of a task attempt.
 class AttemptStatus extends $pb.GeneratedMessage {
   factory AttemptStatus({
-    $1775.Timestamp? scheduleTime,
-    $1775.Timestamp? dispatchTime,
-    $1775.Timestamp? responseTime,
-    $1795.Status? responseStatus,
+    $1776.Timestamp? scheduleTime,
+    $1776.Timestamp? dispatchTime,
+    $1776.Timestamp? responseTime,
+    $1796.Status? responseStatus,
   }) {
     final $result = create();
     if (scheduleTime != null) {
@@ -402,10 +402,10 @@ class AttemptStatus extends $pb.GeneratedMessage {
   factory AttemptStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttemptStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'dispatchTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'responseTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'responseStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'dispatchTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'responseTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'responseStatus', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -434,58 +434,58 @@ class AttemptStatus extends $pb.GeneratedMessage {
   ///
   ///  `schedule_time` will be truncated to the nearest microsecond.
   @$pb.TagNumber(1)
-  $1775.Timestamp get scheduleTime => $_getN(0);
+  $1776.Timestamp get scheduleTime => $_getN(0);
   @$pb.TagNumber(1)
-  set scheduleTime($1775.Timestamp v) { setField(1, v); }
+  set scheduleTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasScheduleTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearScheduleTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(0);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(0);
 
   ///  Output only. The time that this attempt was dispatched.
   ///
   ///  `dispatch_time` will be truncated to the nearest microsecond.
   @$pb.TagNumber(2)
-  $1775.Timestamp get dispatchTime => $_getN(1);
+  $1776.Timestamp get dispatchTime => $_getN(1);
   @$pb.TagNumber(2)
-  set dispatchTime($1775.Timestamp v) { setField(2, v); }
+  set dispatchTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDispatchTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearDispatchTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureDispatchTime() => $_ensure(1);
+  $1776.Timestamp ensureDispatchTime() => $_ensure(1);
 
   ///  Output only. The time that this attempt response was received.
   ///
   ///  `response_time` will be truncated to the nearest microsecond.
   @$pb.TagNumber(3)
-  $1775.Timestamp get responseTime => $_getN(2);
+  $1776.Timestamp get responseTime => $_getN(2);
   @$pb.TagNumber(3)
-  set responseTime($1775.Timestamp v) { setField(3, v); }
+  set responseTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasResponseTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearResponseTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureResponseTime() => $_ensure(2);
+  $1776.Timestamp ensureResponseTime() => $_ensure(2);
 
   ///  Output only. The response from the target for this attempt.
   ///
   ///  If the task has not been attempted or the task is currently running
   ///  then the response status is unset.
   @$pb.TagNumber(4)
-  $1795.Status get responseStatus => $_getN(3);
+  $1796.Status get responseStatus => $_getN(3);
   @$pb.TagNumber(4)
-  set responseStatus($1795.Status v) { setField(4, v); }
+  set responseStatus($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResponseStatus() => $_has(3);
   @$pb.TagNumber(4)
   void clearResponseStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureResponseStatus() => $_ensure(3);
+  $1796.Status ensureResponseStatus() => $_ensure(3);
 }
 
 

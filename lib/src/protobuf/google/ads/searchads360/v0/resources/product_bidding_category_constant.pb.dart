@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/product_bidding_category_level.pbenum.dart' as $4081;
-import '../enums/product_bidding_category_status.pbenum.dart' as $4082;
+import '../enums/product_bidding_category_level.pbenum.dart' as $4082;
+import '../enums/product_bidding_category_status.pbenum.dart' as $4083;
 
 /// A Product Bidding Category.
 class ProductBiddingCategoryConstant extends $pb.GeneratedMessage {
   factory ProductBiddingCategoryConstant({
     $core.String? resourceName,
-    $4081.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel? level,
-    $4082.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus? status,
+    $4082.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel? level,
+    $4083.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus? status,
     $fixnum.Int64? id,
     $core.String? countryCode,
     $core.String? productBiddingCategoryConstantParent,
@@ -62,8 +62,8 @@ class ProductBiddingCategoryConstant extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductBiddingCategoryConstant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4081.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel>(5, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $4081.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel.UNSPECIFIED, valueOf: $4081.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel.valueOf, enumValues: $4081.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel.values)
-    ..e<$4082.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4082.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus.UNSPECIFIED, valueOf: $4082.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus.valueOf, enumValues: $4082.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus.values)
+    ..e<$4082.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel>(5, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $4082.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel.UNSPECIFIED, valueOf: $4082.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel.valueOf, enumValues: $4082.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel.values)
+    ..e<$4083.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4083.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus.UNSPECIFIED, valueOf: $4083.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus.valueOf, enumValues: $4083.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus.values)
     ..aInt64(10, _omitFieldNames ? '' : 'id')
     ..aOS(11, _omitFieldNames ? '' : 'countryCode')
     ..aOS(12, _omitFieldNames ? '' : 'productBiddingCategoryConstantParent')
@@ -108,9 +108,9 @@ class ProductBiddingCategoryConstant extends $pb.GeneratedMessage {
 
   /// Output only. Level of the product bidding category.
   @$pb.TagNumber(5)
-  $4081.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel get level => $_getN(1);
+  $4082.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel get level => $_getN(1);
   @$pb.TagNumber(5)
-  set level($4081.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel v) { setField(5, v); }
+  set level($4082.ProductBiddingCategoryLevelEnum_ProductBiddingCategoryLevel v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLevel() => $_has(1);
   @$pb.TagNumber(5)
@@ -118,9 +118,9 @@ class ProductBiddingCategoryConstant extends $pb.GeneratedMessage {
 
   /// Output only. Status of the product bidding category.
   @$pb.TagNumber(6)
-  $4082.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus get status => $_getN(2);
+  $4083.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus get status => $_getN(2);
   @$pb.TagNumber(6)
-  set status($4082.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus v) { setField(6, v); }
+  set status($4083.ProductBiddingCategoryStatusEnum_ProductBiddingCategoryStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(6)

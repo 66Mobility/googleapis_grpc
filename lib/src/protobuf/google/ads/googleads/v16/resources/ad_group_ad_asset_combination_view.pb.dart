@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_usage.pb.dart' as $2826;
+import '../common/asset_usage.pb.dart' as $2827;
 
 /// A view on the usage of ad group ad asset combination.
 /// Now we only support AdGroupAdAssetCombinationView for Responsive Search Ads,
@@ -21,7 +21,7 @@ import '../common/asset_usage.pb.dart' as $2826;
 class AdGroupAdAssetCombinationView extends $pb.GeneratedMessage {
   factory AdGroupAdAssetCombinationView({
     $core.String? resourceName,
-    $core.Iterable<$2826.AssetUsage>? servedAssets,
+    $core.Iterable<$2827.AssetUsage>? servedAssets,
     $core.bool? enabled,
   }) {
     final $result = create();
@@ -42,7 +42,7 @@ class AdGroupAdAssetCombinationView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupAdAssetCombinationView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..pc<$2826.AssetUsage>(2, _omitFieldNames ? '' : 'servedAssets', $pb.PbFieldType.PM, subBuilder: $2826.AssetUsage.create)
+    ..pc<$2827.AssetUsage>(2, _omitFieldNames ? '' : 'servedAssets', $pb.PbFieldType.PM, subBuilder: $2827.AssetUsage.create)
     ..aOB(3, _omitFieldNames ? '' : 'enabled')
     ..hasRequiredFields = false
   ;
@@ -85,7 +85,7 @@ class AdGroupAdAssetCombinationView extends $pb.GeneratedMessage {
 
   /// Output only. Served assets.
   @$pb.TagNumber(2)
-  $core.List<$2826.AssetUsage> get servedAssets => $_getList(1);
+  $core.List<$2827.AssetUsage> get servedAssets => $_getList(1);
 
   /// Output only. The status between the asset combination and the latest
   /// version of the ad. If true, the asset combination is linked to the latest

@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'functions.pbenum.dart';
 
 export 'functions.pbenum.dart';
@@ -139,10 +139,10 @@ class CloudFunction extends $pb.GeneratedMessage {
     EventTrigger? eventTrigger,
     CloudFunctionStatus? status,
     $core.String? entryPoint,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     $core.int? availableMemoryMb,
     $core.String? serviceAccountEmail,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? versionId,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? sourceUploadUrl,
@@ -313,10 +313,10 @@ class CloudFunction extends $pb.GeneratedMessage {
     ..aOM<EventTrigger>(6, _omitFieldNames ? '' : 'eventTrigger', subBuilder: EventTrigger.create)
     ..e<CloudFunctionStatus>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: CloudFunctionStatus.CLOUD_FUNCTION_STATUS_UNSPECIFIED, valueOf: CloudFunctionStatus.valueOf, enumValues: CloudFunctionStatus.values)
     ..aOS(8, _omitFieldNames ? '' : 'entryPoint')
-    ..aOM<$1737.Duration>(9, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(9, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'availableMemoryMb', $pb.PbFieldType.O3)
     ..aOS(11, _omitFieldNames ? '' : 'serviceAccountEmail')
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(14, _omitFieldNames ? '' : 'versionId')
     ..m<$core.String, $core.String>(15, _omitFieldNames ? '' : 'labels', entryClassName: 'CloudFunction.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.functions.v1'))
     ..aOS(16, _omitFieldNames ? '' : 'sourceUploadUrl')
@@ -470,15 +470,15 @@ class CloudFunction extends $pb.GeneratedMessage {
   /// can be terminated if the function is not completed at the end of the
   /// timeout period. Defaults to 60 seconds.
   @$pb.TagNumber(9)
-  $1737.Duration get timeout => $_getN(8);
+  $1738.Duration get timeout => $_getN(8);
   @$pb.TagNumber(9)
-  set timeout($1737.Duration v) { setField(9, v); }
+  set timeout($1738.Duration v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTimeout() => $_has(8);
   @$pb.TagNumber(9)
   void clearTimeout() => clearField(9);
   @$pb.TagNumber(9)
-  $1737.Duration ensureTimeout() => $_ensure(8);
+  $1738.Duration ensureTimeout() => $_ensure(8);
 
   /// The amount of memory in MB available for a function.
   /// Defaults to 256MB.
@@ -504,15 +504,15 @@ class CloudFunction extends $pb.GeneratedMessage {
 
   /// Output only. The last update timestamp of a Cloud Function.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(11);
+  $1776.Timestamp get updateTime => $_getN(11);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(11);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(11);
 
   /// Output only. The version identifier of the Cloud Function. Each deployment
   /// attempt results in a new version of a function being created.
@@ -1570,7 +1570,7 @@ class CreateFunctionRequest extends $pb.GeneratedMessage {
 class UpdateFunctionRequest extends $pb.GeneratedMessage {
   factory UpdateFunctionRequest({
     CloudFunction? function,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (function != null) {
@@ -1587,7 +1587,7 @@ class UpdateFunctionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFunctionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.functions.v1'), createEmptyInstance: create)
     ..aOM<CloudFunction>(1, _omitFieldNames ? '' : 'function', subBuilder: CloudFunction.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1626,15 +1626,15 @@ class UpdateFunctionRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields in `CloudFunction` that have to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the `GetFunction` method.

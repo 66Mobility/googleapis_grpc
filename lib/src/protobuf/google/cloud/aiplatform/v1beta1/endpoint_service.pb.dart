@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'endpoint.pb.dart' as $561;
-import 'operation.pb.dart' as $4295;
+import 'operation.pb.dart' as $4296;
 
 /// Request message for
 /// [EndpointService.CreateEndpoint][google.cloud.aiplatform.v1beta1.EndpointService.CreateEndpoint].
@@ -120,7 +120,7 @@ class CreateEndpointRequest extends $pb.GeneratedMessage {
 /// [EndpointService.CreateEndpoint][google.cloud.aiplatform.v1beta1.EndpointService.CreateEndpoint].
 class CreateEndpointOperationMetadata extends $pb.GeneratedMessage {
   factory CreateEndpointOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -133,7 +133,7 @@ class CreateEndpointOperationMetadata extends $pb.GeneratedMessage {
   factory CreateEndpointOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateEndpointOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -160,15 +160,15 @@ class CreateEndpointOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -234,7 +234,7 @@ class ListEndpointsRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -263,7 +263,7 @@ class ListEndpointsRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -354,15 +354,15 @@ class ListEndpointsRequest extends $pb.GeneratedMessage {
 
   /// Optional. Mask specifying which fields to read.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -435,7 +435,7 @@ class ListEndpointsResponse extends $pb.GeneratedMessage {
 class UpdateEndpointRequest extends $pb.GeneratedMessage {
   factory UpdateEndpointRequest({
     $561.Endpoint? endpoint,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -452,7 +452,7 @@ class UpdateEndpointRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEndpointRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOM<$561.Endpoint>(1, _omitFieldNames ? '' : 'endpoint', subBuilder: $561.Endpoint.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -492,15 +492,15 @@ class UpdateEndpointRequest extends $pb.GeneratedMessage {
   /// Required. The update mask applies to the resource. See
   /// [google.protobuf.FieldMask][google.protobuf.FieldMask].
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -714,7 +714,7 @@ class DeployModelResponse extends $pb.GeneratedMessage {
 /// [EndpointService.DeployModel][google.cloud.aiplatform.v1beta1.EndpointService.DeployModel].
 class DeployModelOperationMetadata extends $pb.GeneratedMessage {
   factory DeployModelOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -727,7 +727,7 @@ class DeployModelOperationMetadata extends $pb.GeneratedMessage {
   factory DeployModelOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeployModelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -754,15 +754,15 @@ class DeployModelOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -888,7 +888,7 @@ class UndeployModelResponse extends $pb.GeneratedMessage {
 /// [EndpointService.UndeployModel][google.cloud.aiplatform.v1beta1.EndpointService.UndeployModel].
 class UndeployModelOperationMetadata extends $pb.GeneratedMessage {
   factory UndeployModelOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -901,7 +901,7 @@ class UndeployModelOperationMetadata extends $pb.GeneratedMessage {
   factory UndeployModelOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeployModelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -928,15 +928,15 @@ class UndeployModelOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -945,7 +945,7 @@ class MutateDeployedModelRequest extends $pb.GeneratedMessage {
   factory MutateDeployedModelRequest({
     $core.String? endpoint,
     $561.DeployedModel? deployedModel,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -966,7 +966,7 @@ class MutateDeployedModelRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateDeployedModelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
     ..aOM<$561.DeployedModel>(2, _omitFieldNames ? '' : 'deployedModel', subBuilder: $561.DeployedModel.create)
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1029,15 +1029,15 @@ class MutateDeployedModelRequest extends $pb.GeneratedMessage {
   /// Required. The update mask applies to the resource. See
   /// [google.protobuf.FieldMask][google.protobuf.FieldMask].
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Response message for
@@ -1099,7 +1099,7 @@ class MutateDeployedModelResponse extends $pb.GeneratedMessage {
 /// [EndpointService.MutateDeployedModel][google.cloud.aiplatform.v1beta1.EndpointService.MutateDeployedModel].
 class MutateDeployedModelOperationMetadata extends $pb.GeneratedMessage {
   factory MutateDeployedModelOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -1112,7 +1112,7 @@ class MutateDeployedModelOperationMetadata extends $pb.GeneratedMessage {
   factory MutateDeployedModelOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateDeployedModelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1139,15 +1139,15 @@ class MutateDeployedModelOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 

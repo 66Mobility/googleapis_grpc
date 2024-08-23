@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Describes the dataset version.
 class DatasetVersion extends $pb.GeneratedMessage {
   factory DatasetVersion({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? etag,
     $core.String? bigQueryDatasetName,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? displayName,
-    $1734.Value? metadata,
+    $1735.Value? metadata,
     $core.String? modelReference,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -69,12 +69,12 @@ class DatasetVersion extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatasetVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'etag')
     ..aOS(4, _omitFieldNames ? '' : 'bigQueryDatasetName')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1734.Value>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Value.create)
     ..aOS(9, _omitFieldNames ? '' : 'modelReference')
     ..aOB(10, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(11, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -114,15 +114,15 @@ class DatasetVersion extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this DatasetVersion was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Used to perform consistent read-modify-write updates. If not set, a blind
   /// "overwrite" update happens.
@@ -147,15 +147,15 @@ class DatasetVersion extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this DatasetVersion was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// The user-defined name of the DatasetVersion.
   /// The name can be up to 128 characters long and can consist of any UTF-8
@@ -171,15 +171,15 @@ class DatasetVersion extends $pb.GeneratedMessage {
 
   /// Required. Output only. Additional information about the DatasetVersion.
   @$pb.TagNumber(8)
-  $1734.Value get metadata => $_getN(6);
+  $1735.Value get metadata => $_getN(6);
   @$pb.TagNumber(8)
-  set metadata($1734.Value v) { setField(8, v); }
+  set metadata($1735.Value v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMetadata() => $_has(6);
   @$pb.TagNumber(8)
   void clearMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $1734.Value ensureMetadata() => $_ensure(6);
+  $1735.Value ensureMetadata() => $_ensure(6);
 
   /// Output only. Reference to the public base model last used by the dataset
   /// version. Only set for prompt dataset versions.

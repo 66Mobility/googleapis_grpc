@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import 'advanced_settings.pb.dart' as $4486;
-import 'data_store_connection.pb.dart' as $4488;
-import 'fulfillment.pb.dart' as $4487;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import 'advanced_settings.pb.dart' as $4488;
+import 'data_store_connection.pb.dart' as $4490;
+import 'fulfillment.pb.dart' as $4489;
 
 ///  A Dialogflow CX conversation (session) can be described and visualized as a
 ///  state machine. The states of a CX session are represented by pages.
@@ -40,11 +40,11 @@ class Page extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     Form? form,
-    $4487.Fulfillment? entryFulfillment,
+    $4489.Fulfillment? entryFulfillment,
     $core.Iterable<TransitionRoute>? transitionRoutes,
     $core.Iterable<EventHandler>? eventHandlers,
     $core.Iterable<$core.String>? transitionRouteGroups,
-    $4486.AdvancedSettings? advancedSettings,
+    $4488.AdvancedSettings? advancedSettings,
     KnowledgeConnectorSettings? knowledgeConnectorSettings,
     $core.String? description,
   }) {
@@ -89,11 +89,11 @@ class Page extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<Form>(4, _omitFieldNames ? '' : 'form', subBuilder: Form.create)
-    ..aOM<$4487.Fulfillment>(7, _omitFieldNames ? '' : 'entryFulfillment', subBuilder: $4487.Fulfillment.create)
+    ..aOM<$4489.Fulfillment>(7, _omitFieldNames ? '' : 'entryFulfillment', subBuilder: $4489.Fulfillment.create)
     ..pc<TransitionRoute>(9, _omitFieldNames ? '' : 'transitionRoutes', $pb.PbFieldType.PM, subBuilder: TransitionRoute.create)
     ..pc<EventHandler>(10, _omitFieldNames ? '' : 'eventHandlers', $pb.PbFieldType.PM, subBuilder: EventHandler.create)
     ..pPS(11, _omitFieldNames ? '' : 'transitionRouteGroups')
-    ..aOM<$4486.AdvancedSettings>(13, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4486.AdvancedSettings.create)
+    ..aOM<$4488.AdvancedSettings>(13, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4488.AdvancedSettings.create)
     ..aOM<KnowledgeConnectorSettings>(18, _omitFieldNames ? '' : 'knowledgeConnectorSettings', subBuilder: KnowledgeConnectorSettings.create)
     ..aOS(19, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
@@ -162,15 +162,15 @@ class Page extends $pb.GeneratedMessage {
 
   /// The fulfillment to call when the session is entering the page.
   @$pb.TagNumber(7)
-  $4487.Fulfillment get entryFulfillment => $_getN(3);
+  $4489.Fulfillment get entryFulfillment => $_getN(3);
   @$pb.TagNumber(7)
-  set entryFulfillment($4487.Fulfillment v) { setField(7, v); }
+  set entryFulfillment($4489.Fulfillment v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEntryFulfillment() => $_has(3);
   @$pb.TagNumber(7)
   void clearEntryFulfillment() => clearField(7);
   @$pb.TagNumber(7)
-  $4487.Fulfillment ensureEntryFulfillment() => $_ensure(3);
+  $4489.Fulfillment ensureEntryFulfillment() => $_ensure(3);
 
   ///  A list of transitions for the transition rules of this page.
   ///  They route the conversation to another page in the same flow, or another
@@ -227,15 +227,15 @@ class Page extends $pb.GeneratedMessage {
   /// Hierarchical advanced settings for this page. The settings exposed at the
   /// lower level overrides the settings exposed at the higher level.
   @$pb.TagNumber(13)
-  $4486.AdvancedSettings get advancedSettings => $_getN(7);
+  $4488.AdvancedSettings get advancedSettings => $_getN(7);
   @$pb.TagNumber(13)
-  set advancedSettings($4486.AdvancedSettings v) { setField(13, v); }
+  set advancedSettings($4488.AdvancedSettings v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasAdvancedSettings() => $_has(7);
   @$pb.TagNumber(13)
   void clearAdvancedSettings() => clearField(13);
   @$pb.TagNumber(13)
-  $4486.AdvancedSettings ensureAdvancedSettings() => $_ensure(7);
+  $4488.AdvancedSettings ensureAdvancedSettings() => $_ensure(7);
 
   /// Optional. Knowledge connector configuration.
   @$pb.TagNumber(18)
@@ -263,7 +263,7 @@ class Page extends $pb.GeneratedMessage {
 /// Configuration for how the filling of a parameter should be handled.
 class Form_Parameter_FillBehavior extends $pb.GeneratedMessage {
   factory Form_Parameter_FillBehavior({
-    $4487.Fulfillment? initialPromptFulfillment,
+    $4489.Fulfillment? initialPromptFulfillment,
     $core.Iterable<EventHandler>? repromptEventHandlers,
   }) {
     final $result = create();
@@ -280,7 +280,7 @@ class Form_Parameter_FillBehavior extends $pb.GeneratedMessage {
   factory Form_Parameter_FillBehavior.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Form.Parameter.FillBehavior', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..aOM<$4487.Fulfillment>(3, _omitFieldNames ? '' : 'initialPromptFulfillment', subBuilder: $4487.Fulfillment.create)
+    ..aOM<$4489.Fulfillment>(3, _omitFieldNames ? '' : 'initialPromptFulfillment', subBuilder: $4489.Fulfillment.create)
     ..pc<EventHandler>(5, _omitFieldNames ? '' : 'repromptEventHandlers', $pb.PbFieldType.PM, subBuilder: EventHandler.create)
     ..hasRequiredFields = false
   ;
@@ -309,15 +309,15 @@ class Form_Parameter_FillBehavior extends $pb.GeneratedMessage {
   /// Required. The fulfillment to provide the initial prompt that the agent
   /// can present to the user in order to fill the parameter.
   @$pb.TagNumber(3)
-  $4487.Fulfillment get initialPromptFulfillment => $_getN(0);
+  $4489.Fulfillment get initialPromptFulfillment => $_getN(0);
   @$pb.TagNumber(3)
-  set initialPromptFulfillment($4487.Fulfillment v) { setField(3, v); }
+  set initialPromptFulfillment($4489.Fulfillment v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInitialPromptFulfillment() => $_has(0);
   @$pb.TagNumber(3)
   void clearInitialPromptFulfillment() => clearField(3);
   @$pb.TagNumber(3)
-  $4487.Fulfillment ensureInitialPromptFulfillment() => $_ensure(0);
+  $4489.Fulfillment ensureInitialPromptFulfillment() => $_ensure(0);
 
   ///  The handlers for parameter-level events, used to provide reprompt for
   ///  the parameter or transition to a different page/flow. The supported
@@ -363,9 +363,9 @@ class Form_Parameter extends $pb.GeneratedMessage {
     $core.String? entityType,
     $core.bool? isList,
     Form_Parameter_FillBehavior? fillBehavior,
-    $1734.Value? defaultValue,
+    $1735.Value? defaultValue,
     $core.bool? redact,
-    $4486.AdvancedSettings? advancedSettings,
+    $4488.AdvancedSettings? advancedSettings,
   }) {
     final $result = create();
     if (displayName != null) {
@@ -404,9 +404,9 @@ class Form_Parameter extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'entityType')
     ..aOB(4, _omitFieldNames ? '' : 'isList')
     ..aOM<Form_Parameter_FillBehavior>(7, _omitFieldNames ? '' : 'fillBehavior', subBuilder: Form_Parameter_FillBehavior.create)
-    ..aOM<$1734.Value>(9, _omitFieldNames ? '' : 'defaultValue', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(9, _omitFieldNames ? '' : 'defaultValue', subBuilder: $1735.Value.create)
     ..aOB(11, _omitFieldNames ? '' : 'redact')
-    ..aOM<$4486.AdvancedSettings>(12, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4486.AdvancedSettings.create)
+    ..aOM<$4488.AdvancedSettings>(12, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4488.AdvancedSettings.create)
     ..hasRequiredFields = false
   ;
 
@@ -494,15 +494,15 @@ class Form_Parameter extends $pb.GeneratedMessage {
   /// The default value of an optional parameter. If the parameter is required,
   /// the default value will be ignored.
   @$pb.TagNumber(9)
-  $1734.Value get defaultValue => $_getN(5);
+  $1735.Value get defaultValue => $_getN(5);
   @$pb.TagNumber(9)
-  set defaultValue($1734.Value v) { setField(9, v); }
+  set defaultValue($1735.Value v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDefaultValue() => $_has(5);
   @$pb.TagNumber(9)
   void clearDefaultValue() => clearField(9);
   @$pb.TagNumber(9)
-  $1734.Value ensureDefaultValue() => $_ensure(5);
+  $1735.Value ensureDefaultValue() => $_ensure(5);
 
   /// Indicates whether the parameter content should be redacted in log.  If
   /// redaction is enabled, the parameter content will be replaced by parameter
@@ -523,15 +523,15 @@ class Form_Parameter extends $pb.GeneratedMessage {
   /// Hierarchical advanced settings for this parameter. The settings exposed
   /// at the lower level overrides the settings exposed at the higher level.
   @$pb.TagNumber(12)
-  $4486.AdvancedSettings get advancedSettings => $_getN(7);
+  $4488.AdvancedSettings get advancedSettings => $_getN(7);
   @$pb.TagNumber(12)
-  set advancedSettings($4486.AdvancedSettings v) { setField(12, v); }
+  set advancedSettings($4488.AdvancedSettings v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasAdvancedSettings() => $_has(7);
   @$pb.TagNumber(12)
   void clearAdvancedSettings() => clearField(12);
   @$pb.TagNumber(12)
-  $4486.AdvancedSettings ensureAdvancedSettings() => $_ensure(7);
+  $4488.AdvancedSettings ensureAdvancedSettings() => $_ensure(7);
 }
 
 /// A form is a data model that groups related parameters that can be collected
@@ -613,7 +613,7 @@ class EventHandler extends $pb.GeneratedMessage {
     $core.String? targetPage,
     $core.String? targetFlow,
     $core.String? event,
-    $4487.Fulfillment? triggerFulfillment,
+    $4489.Fulfillment? triggerFulfillment,
     $core.String? name,
     $core.String? targetPlaybook,
   }) {
@@ -653,7 +653,7 @@ class EventHandler extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'targetPage')
     ..aOS(3, _omitFieldNames ? '' : 'targetFlow')
     ..aOS(4, _omitFieldNames ? '' : 'event')
-    ..aOM<$4487.Fulfillment>(5, _omitFieldNames ? '' : 'triggerFulfillment', subBuilder: $4487.Fulfillment.create)
+    ..aOM<$4489.Fulfillment>(5, _omitFieldNames ? '' : 'triggerFulfillment', subBuilder: $4489.Fulfillment.create)
     ..aOS(6, _omitFieldNames ? '' : 'name')
     ..aOS(7, _omitFieldNames ? '' : 'targetPlaybook')
     ..hasRequiredFields = false
@@ -722,15 +722,15 @@ class EventHandler extends $pb.GeneratedMessage {
   /// cause infinite loop. It is invalid to specify such fulfillment for a
   /// handler handling webhooks.
   @$pb.TagNumber(5)
-  $4487.Fulfillment get triggerFulfillment => $_getN(3);
+  $4489.Fulfillment get triggerFulfillment => $_getN(3);
   @$pb.TagNumber(5)
-  set triggerFulfillment($4487.Fulfillment v) { setField(5, v); }
+  set triggerFulfillment($4489.Fulfillment v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTriggerFulfillment() => $_has(3);
   @$pb.TagNumber(5)
   void clearTriggerFulfillment() => clearField(5);
   @$pb.TagNumber(5)
-  $4487.Fulfillment ensureTriggerFulfillment() => $_ensure(3);
+  $4489.Fulfillment ensureTriggerFulfillment() => $_ensure(3);
 
   /// Output only. The unique identifier of this event handler.
   @$pb.TagNumber(6)
@@ -781,7 +781,7 @@ class TransitionRoute extends $pb.GeneratedMessage {
   factory TransitionRoute({
     $core.String? intent,
     $core.String? condition,
-    $4487.Fulfillment? triggerFulfillment,
+    $4489.Fulfillment? triggerFulfillment,
     $core.String? targetPage,
     $core.String? targetFlow,
     $core.String? name,
@@ -824,7 +824,7 @@ class TransitionRoute extends $pb.GeneratedMessage {
     ..oo(0, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'intent')
     ..aOS(2, _omitFieldNames ? '' : 'condition')
-    ..aOM<$4487.Fulfillment>(3, _omitFieldNames ? '' : 'triggerFulfillment', subBuilder: $4487.Fulfillment.create)
+    ..aOM<$4489.Fulfillment>(3, _omitFieldNames ? '' : 'triggerFulfillment', subBuilder: $4489.Fulfillment.create)
     ..aOS(4, _omitFieldNames ? '' : 'targetPage')
     ..aOS(5, _omitFieldNames ? '' : 'targetFlow')
     ..aOS(6, _omitFieldNames ? '' : 'name')
@@ -896,15 +896,15 @@ class TransitionRoute extends $pb.GeneratedMessage {
   /// `trigger_fulfillment` and `target` must be specified. When both are
   /// defined, `trigger_fulfillment` is executed first.
   @$pb.TagNumber(3)
-  $4487.Fulfillment get triggerFulfillment => $_getN(2);
+  $4489.Fulfillment get triggerFulfillment => $_getN(2);
   @$pb.TagNumber(3)
-  set triggerFulfillment($4487.Fulfillment v) { setField(3, v); }
+  set triggerFulfillment($4489.Fulfillment v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTriggerFulfillment() => $_has(2);
   @$pb.TagNumber(3)
   void clearTriggerFulfillment() => clearField(3);
   @$pb.TagNumber(3)
-  $4487.Fulfillment ensureTriggerFulfillment() => $_ensure(2);
+  $4489.Fulfillment ensureTriggerFulfillment() => $_ensure(2);
 
   /// The target page to transition to.
   /// Format: `projects/<Project ID>/locations/<Location ID>/agents/<Agent
@@ -1339,7 +1339,7 @@ class UpdatePageRequest extends $pb.GeneratedMessage {
   factory UpdatePageRequest({
     Page? page,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (page != null) {
@@ -1360,7 +1360,7 @@ class UpdatePageRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<Page>(1, _omitFieldNames ? '' : 'page', subBuilder: Page.create)
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1429,15 +1429,15 @@ class UpdatePageRequest extends $pb.GeneratedMessage {
   /// The mask to control which fields get updated. If the mask is not present,
   /// all fields will be updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The request message for
@@ -1531,10 +1531,10 @@ enum KnowledgeConnectorSettings_Target {
 class KnowledgeConnectorSettings extends $pb.GeneratedMessage {
   factory KnowledgeConnectorSettings({
     $core.bool? enabled,
-    $4487.Fulfillment? triggerFulfillment,
+    $4489.Fulfillment? triggerFulfillment,
     $core.String? targetPage,
     $core.String? targetFlow,
-    $core.Iterable<$4488.DataStoreConnection>? dataStoreConnections,
+    $core.Iterable<$4490.DataStoreConnection>? dataStoreConnections,
   }) {
     final $result = create();
     if (enabled != null) {
@@ -1566,10 +1566,10 @@ class KnowledgeConnectorSettings extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KnowledgeConnectorSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..oo(0, [4, 5])
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
-    ..aOM<$4487.Fulfillment>(3, _omitFieldNames ? '' : 'triggerFulfillment', subBuilder: $4487.Fulfillment.create)
+    ..aOM<$4489.Fulfillment>(3, _omitFieldNames ? '' : 'triggerFulfillment', subBuilder: $4489.Fulfillment.create)
     ..aOS(4, _omitFieldNames ? '' : 'targetPage')
     ..aOS(5, _omitFieldNames ? '' : 'targetFlow')
-    ..pc<$4488.DataStoreConnection>(6, _omitFieldNames ? '' : 'dataStoreConnections', $pb.PbFieldType.PM, subBuilder: $4488.DataStoreConnection.create)
+    ..pc<$4490.DataStoreConnection>(6, _omitFieldNames ? '' : 'dataStoreConnections', $pb.PbFieldType.PM, subBuilder: $4490.DataStoreConnection.create)
     ..hasRequiredFields = false
   ;
 
@@ -1615,15 +1615,15 @@ class KnowledgeConnectorSettings extends $pb.GeneratedMessage {
   ///  `$request.knowledge.questions` (contains the corresponding questions) to
   ///  construct the fulfillment.
   @$pb.TagNumber(3)
-  $4487.Fulfillment get triggerFulfillment => $_getN(1);
+  $4489.Fulfillment get triggerFulfillment => $_getN(1);
   @$pb.TagNumber(3)
-  set triggerFulfillment($4487.Fulfillment v) { setField(3, v); }
+  set triggerFulfillment($4489.Fulfillment v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTriggerFulfillment() => $_has(1);
   @$pb.TagNumber(3)
   void clearTriggerFulfillment() => clearField(3);
   @$pb.TagNumber(3)
-  $4487.Fulfillment ensureTriggerFulfillment() => $_ensure(1);
+  $4489.Fulfillment ensureTriggerFulfillment() => $_ensure(1);
 
   /// The target page to transition to.
   /// Format: `projects/<Project ID>/locations/<Location ID>/agents/<Agent
@@ -1651,7 +1651,7 @@ class KnowledgeConnectorSettings extends $pb.GeneratedMessage {
 
   /// Optional. List of related data store connections.
   @$pb.TagNumber(6)
-  $core.List<$4488.DataStoreConnection> get dataStoreConnections => $_getList(4);
+  $core.List<$4490.DataStoreConnection> get dataStoreConnections => $_getList(4);
 }
 
 

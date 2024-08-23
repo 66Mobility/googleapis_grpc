@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'value_type.pb.dart' as $4555;
+import 'value_type.pb.dart' as $4557;
 
 /// This message is used for processing and persisting (when applicable) key
 /// value pair parameters for each event in the event bus.
@@ -21,7 +21,7 @@ import 'value_type.pb.dart' as $4555;
 class EventParameter extends $pb.GeneratedMessage {
   factory EventParameter({
     $core.String? key,
-    $4555.ValueType? value,
+    $4557.ValueType? value,
     $core.bool? masked,
   }) {
     final $result = create();
@@ -42,7 +42,7 @@ class EventParameter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventParameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.integrations.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..aOM<$4555.ValueType>(2, _omitFieldNames ? '' : 'value', subBuilder: $4555.ValueType.create)
+    ..aOM<$4557.ValueType>(2, _omitFieldNames ? '' : 'value', subBuilder: $4557.ValueType.create)
     ..aOB(3, _omitFieldNames ? '' : 'masked')
     ..hasRequiredFields = false
   ;
@@ -83,15 +83,15 @@ class EventParameter extends $pb.GeneratedMessage {
   /// Values for the defined keys. Each value can either be string, int, double
   /// or any proto message.
   @$pb.TagNumber(2)
-  $4555.ValueType get value => $_getN(1);
+  $4557.ValueType get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($4555.ValueType v) { setField(2, v); }
+  set value($4557.ValueType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $4555.ValueType ensureValue() => $_ensure(1);
+  $4557.ValueType ensureValue() => $_ensure(1);
 
   /// True if this parameter should be masked in the logs
   @$pb.TagNumber(3)

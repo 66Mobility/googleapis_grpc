@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'evaluated_annotation.pbenum.dart';
-import 'explanation.pb.dart' as $4285;
+import 'explanation.pb.dart' as $4286;
 
 export 'evaluated_annotation.pbenum.dart';
 
@@ -26,9 +26,9 @@ export 'evaluated_annotation.pbenum.dart';
 class EvaluatedAnnotation extends $pb.GeneratedMessage {
   factory EvaluatedAnnotation({
     EvaluatedAnnotation_EvaluatedAnnotationType? type,
-    $core.Iterable<$1734.Value>? predictions,
-    $core.Iterable<$1734.Value>? groundTruths,
-    $1734.Value? dataItemPayload,
+    $core.Iterable<$1735.Value>? predictions,
+    $core.Iterable<$1735.Value>? groundTruths,
+    $1735.Value? dataItemPayload,
     $core.String? evaluatedDataItemViewId,
     $core.Iterable<EvaluatedAnnotationExplanation>? explanations,
     $core.Iterable<ErrorAnalysisAnnotation>? errorAnalysisAnnotations,
@@ -63,9 +63,9 @@ class EvaluatedAnnotation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EvaluatedAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..e<EvaluatedAnnotation_EvaluatedAnnotationType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: EvaluatedAnnotation_EvaluatedAnnotationType.EVALUATED_ANNOTATION_TYPE_UNSPECIFIED, valueOf: EvaluatedAnnotation_EvaluatedAnnotationType.valueOf, enumValues: EvaluatedAnnotation_EvaluatedAnnotationType.values)
-    ..pc<$1734.Value>(2, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
-    ..pc<$1734.Value>(3, _omitFieldNames ? '' : 'groundTruths', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
-    ..aOM<$1734.Value>(5, _omitFieldNames ? '' : 'dataItemPayload', subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(2, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
+    ..pc<$1735.Value>(3, _omitFieldNames ? '' : 'groundTruths', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
+    ..aOM<$1735.Value>(5, _omitFieldNames ? '' : 'dataItemPayload', subBuilder: $1735.Value.create)
     ..aOS(6, _omitFieldNames ? '' : 'evaluatedDataItemViewId')
     ..pc<EvaluatedAnnotationExplanation>(8, _omitFieldNames ? '' : 'explanations', $pb.PbFieldType.PM, subBuilder: EvaluatedAnnotationExplanation.create)
     ..pc<ErrorAnalysisAnnotation>(9, _omitFieldNames ? '' : 'errorAnalysisAnnotations', $pb.PbFieldType.PM, subBuilder: ErrorAnalysisAnnotation.create)
@@ -121,7 +121,7 @@ class EvaluatedAnnotation extends $pb.GeneratedMessage {
   ///  The schema of the prediction is stored in
   ///  [ModelEvaluation.annotation_schema_uri][]
   @$pb.TagNumber(2)
-  $core.List<$1734.Value> get predictions => $_getList(1);
+  $core.List<$1735.Value> get predictions => $_getList(1);
 
   ///  Output only. The ground truth Annotations, i.e. the Annotations that exist
   ///  in the test data the Model is evaluated on.
@@ -141,20 +141,20 @@ class EvaluatedAnnotation extends $pb.GeneratedMessage {
   ///  The schema of the ground truth is stored in
   ///  [ModelEvaluation.annotation_schema_uri][]
   @$pb.TagNumber(3)
-  $core.List<$1734.Value> get groundTruths => $_getList(2);
+  $core.List<$1735.Value> get groundTruths => $_getList(2);
 
   /// Output only. The data item payload that the Model predicted this
   /// EvaluatedAnnotation on.
   @$pb.TagNumber(5)
-  $1734.Value get dataItemPayload => $_getN(3);
+  $1735.Value get dataItemPayload => $_getN(3);
   @$pb.TagNumber(5)
-  set dataItemPayload($1734.Value v) { setField(5, v); }
+  set dataItemPayload($1735.Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDataItemPayload() => $_has(3);
   @$pb.TagNumber(5)
   void clearDataItemPayload() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Value ensureDataItemPayload() => $_ensure(3);
+  $1735.Value ensureDataItemPayload() => $_ensure(3);
 
   /// Output only. ID of the EvaluatedDataItemView under the same ancestor
   /// ModelEvaluation. The EvaluatedDataItemView consists of all ground truths
@@ -192,7 +192,7 @@ class EvaluatedAnnotation extends $pb.GeneratedMessage {
 class EvaluatedAnnotationExplanation extends $pb.GeneratedMessage {
   factory EvaluatedAnnotationExplanation({
     $core.String? explanationType,
-    $4285.Explanation? explanation,
+    $4286.Explanation? explanation,
   }) {
     final $result = create();
     if (explanationType != null) {
@@ -209,7 +209,7 @@ class EvaluatedAnnotationExplanation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EvaluatedAnnotationExplanation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'explanationType')
-    ..aOM<$4285.Explanation>(2, _omitFieldNames ? '' : 'explanation', subBuilder: $4285.Explanation.create)
+    ..aOM<$4286.Explanation>(2, _omitFieldNames ? '' : 'explanation', subBuilder: $4286.Explanation.create)
     ..hasRequiredFields = false
   ;
 
@@ -251,15 +251,15 @@ class EvaluatedAnnotationExplanation extends $pb.GeneratedMessage {
 
   /// Explanation attribution response details.
   @$pb.TagNumber(2)
-  $4285.Explanation get explanation => $_getN(1);
+  $4286.Explanation get explanation => $_getN(1);
   @$pb.TagNumber(2)
-  set explanation($4285.Explanation v) { setField(2, v); }
+  set explanation($4286.Explanation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExplanation() => $_has(1);
   @$pb.TagNumber(2)
   void clearExplanation() => clearField(2);
   @$pb.TagNumber(2)
-  $4285.Explanation ensureExplanation() => $_ensure(1);
+  $4286.Explanation ensureExplanation() => $_ensure(1);
 }
 
 /// Attributed items for a given annotation, typically representing neighbors

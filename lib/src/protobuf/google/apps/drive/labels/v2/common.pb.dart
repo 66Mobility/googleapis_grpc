@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/color.pb.dart' as $4199;
+import '../../../../type/color.pb.dart' as $4200;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -256,7 +256,7 @@ class UserInfo extends $pb.GeneratedMessage {
 /// Badge status of the label.
 class BadgeConfig extends $pb.GeneratedMessage {
   factory BadgeConfig({
-    $4199.Color? color,
+    $4200.Color? color,
     $fixnum.Int64? priorityOverride,
   }) {
     final $result = create();
@@ -273,7 +273,7 @@ class BadgeConfig extends $pb.GeneratedMessage {
   factory BadgeConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BadgeConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2'), createEmptyInstance: create)
-    ..aOM<$4199.Color>(1, _omitFieldNames ? '' : 'color', subBuilder: $4199.Color.create)
+    ..aOM<$4200.Color>(1, _omitFieldNames ? '' : 'color', subBuilder: $4200.Color.create)
     ..aInt64(2, _omitFieldNames ? '' : 'priorityOverride')
     ..hasRequiredFields = false
   ;
@@ -303,15 +303,15 @@ class BadgeConfig extends $pb.GeneratedMessage {
   /// The background, foreground, and solo (light and dark mode) colors set here
   /// are changed in the Drive UI into the closest recommended supported color.
   @$pb.TagNumber(1)
-  $4199.Color get color => $_getN(0);
+  $4200.Color get color => $_getN(0);
   @$pb.TagNumber(1)
-  set color($4199.Color v) { setField(1, v); }
+  set color($4200.Color v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasColor() => $_has(0);
   @$pb.TagNumber(1)
   void clearColor() => clearField(1);
   @$pb.TagNumber(1)
-  $4199.Color ensureColor() => $_ensure(0);
+  $4200.Color ensureColor() => $_ensure(0);
 
   /// Override the default global priority of this badge.
   /// When set to 0, the default priority heuristic is used.
@@ -329,9 +329,9 @@ class BadgeConfig extends $pb.GeneratedMessage {
 /// supported color.
 class BadgeColors extends $pb.GeneratedMessage {
   factory BadgeColors({
-    $4199.Color? backgroundColor,
-    $4199.Color? foregroundColor,
-    $4199.Color? soloColor,
+    $4200.Color? backgroundColor,
+    $4200.Color? foregroundColor,
+    $4200.Color? soloColor,
   }) {
     final $result = create();
     if (backgroundColor != null) {
@@ -350,9 +350,9 @@ class BadgeColors extends $pb.GeneratedMessage {
   factory BadgeColors.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BadgeColors', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2'), createEmptyInstance: create)
-    ..aOM<$4199.Color>(1, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4199.Color.create)
-    ..aOM<$4199.Color>(2, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $4199.Color.create)
-    ..aOM<$4199.Color>(3, _omitFieldNames ? '' : 'soloColor', subBuilder: $4199.Color.create)
+    ..aOM<$4200.Color>(1, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4200.Color.create)
+    ..aOM<$4200.Color>(2, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $4200.Color.create)
+    ..aOM<$4200.Color>(3, _omitFieldNames ? '' : 'soloColor', subBuilder: $4200.Color.create)
     ..hasRequiredFields = false
   ;
 
@@ -379,39 +379,39 @@ class BadgeColors extends $pb.GeneratedMessage {
 
   /// Output only. Badge background that pairs with the foreground.
   @$pb.TagNumber(1)
-  $4199.Color get backgroundColor => $_getN(0);
+  $4200.Color get backgroundColor => $_getN(0);
   @$pb.TagNumber(1)
-  set backgroundColor($4199.Color v) { setField(1, v); }
+  set backgroundColor($4200.Color v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBackgroundColor() => $_has(0);
   @$pb.TagNumber(1)
   void clearBackgroundColor() => clearField(1);
   @$pb.TagNumber(1)
-  $4199.Color ensureBackgroundColor() => $_ensure(0);
+  $4200.Color ensureBackgroundColor() => $_ensure(0);
 
   /// Output only. Badge foreground that pairs with the background.
   @$pb.TagNumber(2)
-  $4199.Color get foregroundColor => $_getN(1);
+  $4200.Color get foregroundColor => $_getN(1);
   @$pb.TagNumber(2)
-  set foregroundColor($4199.Color v) { setField(2, v); }
+  set foregroundColor($4200.Color v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasForegroundColor() => $_has(1);
   @$pb.TagNumber(2)
   void clearForegroundColor() => clearField(2);
   @$pb.TagNumber(2)
-  $4199.Color ensureForegroundColor() => $_ensure(1);
+  $4200.Color ensureForegroundColor() => $_ensure(1);
 
   /// Output only. Color that can be used for text without a background.
   @$pb.TagNumber(3)
-  $4199.Color get soloColor => $_getN(2);
+  $4200.Color get soloColor => $_getN(2);
   @$pb.TagNumber(3)
-  set soloColor($4199.Color v) { setField(3, v); }
+  set soloColor($4200.Color v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSoloColor() => $_has(2);
   @$pb.TagNumber(3)
   void clearSoloColor() => clearField(3);
   @$pb.TagNumber(3)
-  $4199.Color ensureSoloColor() => $_ensure(2);
+  $4200.Color ensureSoloColor() => $_ensure(2);
 }
 
 /// Contains information about whether a label component should be considered

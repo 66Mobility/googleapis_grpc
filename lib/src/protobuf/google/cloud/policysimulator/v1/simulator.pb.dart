@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../iam/v1/policy.pb.dart' as $463;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/date.pb.dart' as $1800;
-import 'explanations.pb.dart' as $4589;
-import 'explanations.pbenum.dart' as $4589;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/date.pb.dart' as $1801;
+import 'explanations.pb.dart' as $4591;
+import 'explanations.pbenum.dart' as $4591;
 import 'simulator.pbenum.dart';
 
 export 'simulator.pbenum.dart';
@@ -30,8 +30,8 @@ class Replay_ResultsSummary extends $pb.GeneratedMessage {
     $core.int? unchangedCount,
     $core.int? differenceCount,
     $core.int? errorCount,
-    $1800.Date? oldestDate,
-    $1800.Date? newestDate,
+    $1801.Date? oldestDate,
+    $1801.Date? newestDate,
   }) {
     final $result = create();
     if (logCount != null) {
@@ -63,8 +63,8 @@ class Replay_ResultsSummary extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'unchangedCount', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'differenceCount', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'errorCount', $pb.PbFieldType.O3)
-    ..aOM<$1800.Date>(5, _omitFieldNames ? '' : 'oldestDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(6, _omitFieldNames ? '' : 'newestDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(5, _omitFieldNames ? '' : 'oldestDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(6, _omitFieldNames ? '' : 'newestDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -133,27 +133,27 @@ class Replay_ResultsSummary extends $pb.GeneratedMessage {
 
   /// The date of the oldest log entry replayed.
   @$pb.TagNumber(5)
-  $1800.Date get oldestDate => $_getN(4);
+  $1801.Date get oldestDate => $_getN(4);
   @$pb.TagNumber(5)
-  set oldestDate($1800.Date v) { setField(5, v); }
+  set oldestDate($1801.Date v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOldestDate() => $_has(4);
   @$pb.TagNumber(5)
   void clearOldestDate() => clearField(5);
   @$pb.TagNumber(5)
-  $1800.Date ensureOldestDate() => $_ensure(4);
+  $1801.Date ensureOldestDate() => $_ensure(4);
 
   /// The date of the newest log entry replayed.
   @$pb.TagNumber(6)
-  $1800.Date get newestDate => $_getN(5);
+  $1801.Date get newestDate => $_getN(5);
   @$pb.TagNumber(6)
-  set newestDate($1800.Date v) { setField(6, v); }
+  set newestDate($1801.Date v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasNewestDate() => $_has(5);
   @$pb.TagNumber(6)
   void clearNewestDate() => clearField(6);
   @$pb.TagNumber(6)
-  $1800.Date ensureNewestDate() => $_ensure(5);
+  $1801.Date ensureNewestDate() => $_ensure(5);
 }
 
 /// A resource describing a `Replay`, or simulation.
@@ -276,10 +276,10 @@ class ReplayResult extends $pb.GeneratedMessage {
   factory ReplayResult({
     $core.String? name,
     $core.String? parent,
-    $4589.AccessTuple? accessTuple,
-    $1800.Date? lastSeenDate,
+    $4591.AccessTuple? accessTuple,
+    $1801.Date? lastSeenDate,
     ReplayDiff? diff,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (name != null) {
@@ -315,10 +315,10 @@ class ReplayResult extends $pb.GeneratedMessage {
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4589.AccessTuple>(3, _omitFieldNames ? '' : 'accessTuple', subBuilder: $4589.AccessTuple.create)
-    ..aOM<$1800.Date>(4, _omitFieldNames ? '' : 'lastSeenDate', subBuilder: $1800.Date.create)
+    ..aOM<$4591.AccessTuple>(3, _omitFieldNames ? '' : 'accessTuple', subBuilder: $4591.AccessTuple.create)
+    ..aOM<$1801.Date>(4, _omitFieldNames ? '' : 'lastSeenDate', subBuilder: $1801.Date.create)
     ..aOM<ReplayDiff>(5, _omitFieldNames ? '' : 'diff', subBuilder: ReplayDiff.create)
-    ..aOM<$1795.Status>(6, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(6, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -378,27 +378,27 @@ class ReplayResult extends $pb.GeneratedMessage {
   /// the principal, resource, and permission that were involved in the access
   /// attempt.
   @$pb.TagNumber(3)
-  $4589.AccessTuple get accessTuple => $_getN(2);
+  $4591.AccessTuple get accessTuple => $_getN(2);
   @$pb.TagNumber(3)
-  set accessTuple($4589.AccessTuple v) { setField(3, v); }
+  set accessTuple($4591.AccessTuple v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAccessTuple() => $_has(2);
   @$pb.TagNumber(3)
   void clearAccessTuple() => clearField(3);
   @$pb.TagNumber(3)
-  $4589.AccessTuple ensureAccessTuple() => $_ensure(2);
+  $4591.AccessTuple ensureAccessTuple() => $_ensure(2);
 
   /// The latest date this access tuple was seen in the logs.
   @$pb.TagNumber(4)
-  $1800.Date get lastSeenDate => $_getN(3);
+  $1801.Date get lastSeenDate => $_getN(3);
   @$pb.TagNumber(4)
-  set lastSeenDate($1800.Date v) { setField(4, v); }
+  set lastSeenDate($1801.Date v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastSeenDate() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastSeenDate() => clearField(4);
   @$pb.TagNumber(4)
-  $1800.Date ensureLastSeenDate() => $_ensure(3);
+  $1801.Date ensureLastSeenDate() => $_ensure(3);
 
   ///  The difference between the principal's access under the current
   ///  (baseline) policies and the principal's access under the proposed
@@ -423,15 +423,15 @@ class ReplayResult extends $pb.GeneratedMessage {
   ///  This field is only included for access tuples that were not replayed
   ///  successfully.
   @$pb.TagNumber(6)
-  $1795.Status get error => $_getN(5);
+  $1796.Status get error => $_getN(5);
   @$pb.TagNumber(6)
-  set error($1795.Status v) { setField(6, v); }
+  set error($1796.Status v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasError() => $_has(5);
   @$pb.TagNumber(6)
   void clearError() => clearField(6);
   @$pb.TagNumber(6)
-  $1795.Status ensureError() => $_ensure(5);
+  $1796.Status ensureError() => $_ensure(5);
 }
 
 /// Request message for
@@ -512,7 +512,7 @@ class CreateReplayRequest extends $pb.GeneratedMessage {
 /// Metadata about a Replay operation.
 class ReplayOperationMetadata extends $pb.GeneratedMessage {
   factory ReplayOperationMetadata({
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -525,7 +525,7 @@ class ReplayOperationMetadata extends $pb.GeneratedMessage {
   factory ReplayOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReplayOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.policysimulator.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -552,15 +552,15 @@ class ReplayOperationMetadata extends $pb.GeneratedMessage {
 
   /// Time when the request was received.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 }
 
 /// Request message for
@@ -1027,9 +1027,9 @@ class AccessStateDiff extends $pb.GeneratedMessage {
 /// replaying an access tuple.
 class ExplainedAccess extends $pb.GeneratedMessage {
   factory ExplainedAccess({
-    $4589.AccessState? accessState,
-    $core.Iterable<$4589.ExplainedPolicy>? policies,
-    $core.Iterable<$1795.Status>? errors,
+    $4591.AccessState? accessState,
+    $core.Iterable<$4591.ExplainedPolicy>? policies,
+    $core.Iterable<$1796.Status>? errors,
   }) {
     final $result = create();
     if (accessState != null) {
@@ -1048,9 +1048,9 @@ class ExplainedAccess extends $pb.GeneratedMessage {
   factory ExplainedAccess.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplainedAccess', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.policysimulator.v1'), createEmptyInstance: create)
-    ..e<$4589.AccessState>(1, _omitFieldNames ? '' : 'accessState', $pb.PbFieldType.OE, defaultOrMaker: $4589.AccessState.ACCESS_STATE_UNSPECIFIED, valueOf: $4589.AccessState.valueOf, enumValues: $4589.AccessState.values)
-    ..pc<$4589.ExplainedPolicy>(2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: $4589.ExplainedPolicy.create)
-    ..pc<$1795.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..e<$4591.AccessState>(1, _omitFieldNames ? '' : 'accessState', $pb.PbFieldType.OE, defaultOrMaker: $4591.AccessState.ACCESS_STATE_UNSPECIFIED, valueOf: $4591.AccessState.valueOf, enumValues: $4591.AccessState.values)
+    ..pc<$4591.ExplainedPolicy>(2, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: $4591.ExplainedPolicy.create)
+    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1078,9 +1078,9 @@ class ExplainedAccess extends $pb.GeneratedMessage {
   /// Whether the principal in the access tuple has permission to access the
   /// resource in the access tuple under the given policies.
   @$pb.TagNumber(1)
-  $4589.AccessState get accessState => $_getN(0);
+  $4591.AccessState get accessState => $_getN(0);
   @$pb.TagNumber(1)
-  set accessState($4589.AccessState v) { setField(1, v); }
+  set accessState($4591.AccessState v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessState() => $_has(0);
   @$pb.TagNumber(1)
@@ -1092,7 +1092,7 @@ class ExplainedAccess extends $pb.GeneratedMessage {
   ///  If the `AccessState` is `GRANTED` or `NOT_GRANTED`, this field is
   ///  omitted.
   @$pb.TagNumber(2)
-  $core.List<$4589.ExplainedPolicy> get policies => $_getList(1);
+  $core.List<$4591.ExplainedPolicy> get policies => $_getList(1);
 
   ///  If the [AccessState][google.cloud.policysimulator.v1.AccessState] is
   ///  `UNKNOWN`, this field contains a list of errors explaining why the result
@@ -1101,7 +1101,7 @@ class ExplainedAccess extends $pb.GeneratedMessage {
   ///  If the `AccessState` is `GRANTED` or `NOT_GRANTED`, this field is
   ///  omitted.
   @$pb.TagNumber(3)
-  $core.List<$1795.Status> get errors => $_getList(2);
+  $core.List<$1796.Status> get errors => $_getList(2);
 }
 
 

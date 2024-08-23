@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
+import '../../../protobuf/any.pb.dart' as $1795;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -279,7 +279,7 @@ class Value extends $pb.GeneratedMessage {
     $fixnum.Int64? int64Value,
     $core.String? stringValue,
     $core.double? doubleValue,
-    $1794.Any? protoValue,
+    $1795.Any? protoValue,
     $core.bool? boolValue,
   }) {
     final $result = create();
@@ -317,7 +317,7 @@ class Value extends $pb.GeneratedMessage {
     ..aInt64(1, _omitFieldNames ? '' : 'int64Value')
     ..aOS(2, _omitFieldNames ? '' : 'stringValue')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
-    ..aOM<$1794.Any>(4, _omitFieldNames ? '' : 'protoValue', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(4, _omitFieldNames ? '' : 'protoValue', subBuilder: $1795.Any.create)
     ..aOB(5, _omitFieldNames ? '' : 'boolValue')
     ..hasRequiredFields = false
   ;
@@ -378,15 +378,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// Represents an 'Any' proto value.
   @$pb.TagNumber(4)
-  $1794.Any get protoValue => $_getN(3);
+  $1795.Any get protoValue => $_getN(3);
   @$pb.TagNumber(4)
-  set protoValue($1794.Any v) { setField(4, v); }
+  set protoValue($1795.Any v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasProtoValue() => $_has(3);
   @$pb.TagNumber(4)
   void clearProtoValue() => clearField(4);
   @$pb.TagNumber(4)
-  $1794.Any ensureProtoValue() => $_ensure(3);
+  $1795.Any ensureProtoValue() => $_ensure(3);
 
   /// Represents a boolean value.
   @$pb.TagNumber(5)

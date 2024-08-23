@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'io.pb.dart' as $4235;
+import 'io.pb.dart' as $4236;
 import 'model_monitoring.pbenum.dart';
 
 export 'model_monitoring.pbenum.dart';
@@ -30,8 +30,8 @@ class ModelMonitoringObjectiveConfig_TrainingDataset extends $pb.GeneratedMessag
   factory ModelMonitoringObjectiveConfig_TrainingDataset({
     $core.String? dataFormat,
     $core.String? dataset,
-    $4235.GcsSource? gcsSource,
-    $4235.BigQuerySource? bigquerySource,
+    $4236.GcsSource? gcsSource,
+    $4236.BigQuerySource? bigquerySource,
     $core.String? targetField,
     SamplingStrategy? loggingSamplingStrategy,
   }) {
@@ -70,8 +70,8 @@ class ModelMonitoringObjectiveConfig_TrainingDataset extends $pb.GeneratedMessag
     ..oo(0, [3, 4, 5])
     ..aOS(2, _omitFieldNames ? '' : 'dataFormat')
     ..aOS(3, _omitFieldNames ? '' : 'dataset')
-    ..aOM<$4235.GcsSource>(4, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4235.GcsSource.create)
-    ..aOM<$4235.BigQuerySource>(5, _omitFieldNames ? '' : 'bigquerySource', subBuilder: $4235.BigQuerySource.create)
+    ..aOM<$4236.GcsSource>(4, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4236.GcsSource.create)
+    ..aOM<$4236.BigQuerySource>(5, _omitFieldNames ? '' : 'bigquerySource', subBuilder: $4236.BigQuerySource.create)
     ..aOS(6, _omitFieldNames ? '' : 'targetField')
     ..aOM<SamplingStrategy>(7, _omitFieldNames ? '' : 'loggingSamplingStrategy', subBuilder: SamplingStrategy.create)
     ..hasRequiredFields = false
@@ -134,28 +134,28 @@ class ModelMonitoringObjectiveConfig_TrainingDataset extends $pb.GeneratedMessag
   /// The Google Cloud Storage uri of the unmanaged Dataset used to train
   /// this Model.
   @$pb.TagNumber(4)
-  $4235.GcsSource get gcsSource => $_getN(2);
+  $4236.GcsSource get gcsSource => $_getN(2);
   @$pb.TagNumber(4)
-  set gcsSource($4235.GcsSource v) { setField(4, v); }
+  set gcsSource($4236.GcsSource v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGcsSource() => $_has(2);
   @$pb.TagNumber(4)
   void clearGcsSource() => clearField(4);
   @$pb.TagNumber(4)
-  $4235.GcsSource ensureGcsSource() => $_ensure(2);
+  $4236.GcsSource ensureGcsSource() => $_ensure(2);
 
   /// The BigQuery table of the unmanaged Dataset used to train this
   /// Model.
   @$pb.TagNumber(5)
-  $4235.BigQuerySource get bigquerySource => $_getN(3);
+  $4236.BigQuerySource get bigquerySource => $_getN(3);
   @$pb.TagNumber(5)
-  set bigquerySource($4235.BigQuerySource v) { setField(5, v); }
+  set bigquerySource($4236.BigQuerySource v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBigquerySource() => $_has(3);
   @$pb.TagNumber(5)
   void clearBigquerySource() => clearField(5);
   @$pb.TagNumber(5)
-  $4235.BigQuerySource ensureBigquerySource() => $_ensure(3);
+  $4236.BigQuerySource ensureBigquerySource() => $_ensure(3);
 
   /// The target field name the model is to predict.
   /// This field will be excluded when doing Predict and (or) Explain for the
@@ -354,8 +354,8 @@ enum ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline_Destin
 class ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline extends $pb.GeneratedMessage {
   factory ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline({
     ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline_PredictionFormat? predictionFormat,
-    $4235.GcsDestination? gcs,
-    $4235.BigQueryDestination? bigquery,
+    $4236.GcsDestination? gcs,
+    $4236.BigQueryDestination? bigquery,
   }) {
     final $result = create();
     if (predictionFormat != null) {
@@ -381,8 +381,8 @@ class ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline exten
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringObjectiveConfig.ExplanationConfig.ExplanationBaseline', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..e<ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline_PredictionFormat>(1, _omitFieldNames ? '' : 'predictionFormat', $pb.PbFieldType.OE, defaultOrMaker: ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline_PredictionFormat.PREDICTION_FORMAT_UNSPECIFIED, valueOf: ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline_PredictionFormat.valueOf, enumValues: ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline_PredictionFormat.values)
-    ..aOM<$4235.GcsDestination>(2, _omitFieldNames ? '' : 'gcs', subBuilder: $4235.GcsDestination.create)
-    ..aOM<$4235.BigQueryDestination>(3, _omitFieldNames ? '' : 'bigquery', subBuilder: $4235.BigQueryDestination.create)
+    ..aOM<$4236.GcsDestination>(2, _omitFieldNames ? '' : 'gcs', subBuilder: $4236.GcsDestination.create)
+    ..aOM<$4236.BigQueryDestination>(3, _omitFieldNames ? '' : 'bigquery', subBuilder: $4236.BigQueryDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -422,27 +422,27 @@ class ModelMonitoringObjectiveConfig_ExplanationConfig_ExplanationBaseline exten
 
   /// Cloud Storage location for BatchExplain output.
   @$pb.TagNumber(2)
-  $4235.GcsDestination get gcs => $_getN(1);
+  $4236.GcsDestination get gcs => $_getN(1);
   @$pb.TagNumber(2)
-  set gcs($4235.GcsDestination v) { setField(2, v); }
+  set gcs($4236.GcsDestination v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcs() => $_has(1);
   @$pb.TagNumber(2)
   void clearGcs() => clearField(2);
   @$pb.TagNumber(2)
-  $4235.GcsDestination ensureGcs() => $_ensure(1);
+  $4236.GcsDestination ensureGcs() => $_ensure(1);
 
   /// BigQuery location for BatchExplain output.
   @$pb.TagNumber(3)
-  $4235.BigQueryDestination get bigquery => $_getN(2);
+  $4236.BigQueryDestination get bigquery => $_getN(2);
   @$pb.TagNumber(3)
-  set bigquery($4235.BigQueryDestination v) { setField(3, v); }
+  set bigquery($4236.BigQueryDestination v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBigquery() => $_has(2);
   @$pb.TagNumber(3)
   void clearBigquery() => clearField(3);
   @$pb.TagNumber(3)
-  $4235.BigQueryDestination ensureBigquery() => $_ensure(2);
+  $4236.BigQueryDestination ensureBigquery() => $_ensure(2);
 }
 
 /// The config for integrating with Vertex Explainable AI. Only applicable if

@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'cloud_sql_instances.pbenum.dart';
 import 'cloud_sql_resources.pb.dart' as $1401;
 import 'cloud_sql_resources.pbenum.dart' as $1401;
@@ -1145,7 +1145,7 @@ class SqlInstancesSwitchoverRequest extends $pb.GeneratedMessage {
   factory SqlInstancesSwitchoverRequest({
     $core.String? instance,
     $core.String? project,
-    $1737.Duration? dbTimeout,
+    $1738.Duration? dbTimeout,
   }) {
     final $result = create();
     if (instance != null) {
@@ -1166,7 +1166,7 @@ class SqlInstancesSwitchoverRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SqlInstancesSwitchoverRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instance')
     ..aOS(2, _omitFieldNames ? '' : 'project')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'dbTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'dbTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1215,15 +1215,15 @@ class SqlInstancesSwitchoverRequest extends $pb.GeneratedMessage {
   /// sum of all database operations. Default value is 10 minutes and can be
   /// modified to a maximum value of 24 hours.
   @$pb.TagNumber(3)
-  $1737.Duration get dbTimeout => $_getN(2);
+  $1738.Duration get dbTimeout => $_getN(2);
   @$pb.TagNumber(3)
-  set dbTimeout($1737.Duration v) { setField(3, v); }
+  set dbTimeout($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDbTimeout() => $_has(2);
   @$pb.TagNumber(3)
   void clearDbTimeout() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureDbTimeout() => $_ensure(2);
+  $1738.Duration ensureDbTimeout() => $_ensure(2);
 }
 
 /// Instance reset SSL config request.
@@ -3742,7 +3742,7 @@ class SqlInstancesGetLatestRecoveryTimeRequest extends $pb.GeneratedMessage {
 class SqlInstancesGetLatestRecoveryTimeResponse extends $pb.GeneratedMessage {
   factory SqlInstancesGetLatestRecoveryTimeResponse({
     $core.String? kind,
-    $1775.Timestamp? latestRecoveryTime,
+    $1776.Timestamp? latestRecoveryTime,
   }) {
     final $result = create();
     if (kind != null) {
@@ -3759,7 +3759,7 @@ class SqlInstancesGetLatestRecoveryTimeResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SqlInstancesGetLatestRecoveryTimeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'latestRecoveryTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'latestRecoveryTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3796,15 +3796,15 @@ class SqlInstancesGetLatestRecoveryTimeResponse extends $pb.GeneratedMessage {
 
   /// Timestamp, identifies the latest recovery time of the source instance.
   @$pb.TagNumber(2)
-  $1775.Timestamp get latestRecoveryTime => $_getN(1);
+  $1776.Timestamp get latestRecoveryTime => $_getN(1);
   @$pb.TagNumber(2)
-  set latestRecoveryTime($1775.Timestamp v) { setField(2, v); }
+  set latestRecoveryTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLatestRecoveryTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLatestRecoveryTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLatestRecoveryTime() => $_ensure(1);
+  $1776.Timestamp ensureLatestRecoveryTime() => $_ensure(1);
 }
 
 /// Database instance clone context.
@@ -3814,7 +3814,7 @@ class CloneContext extends $pb.GeneratedMessage {
     $fixnum.Int64? pitrTimestampMs,
     $core.String? destinationInstanceName,
     BinLogCoordinates? binLogCoordinates,
-    $1775.Timestamp? pointInTime,
+    $1776.Timestamp? pointInTime,
     $core.String? allocatedIpRange,
     $core.Iterable<$core.String>? databaseNames,
     $core.String? preferredZone,
@@ -3855,7 +3855,7 @@ class CloneContext extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'pitrTimestampMs')
     ..aOS(3, _omitFieldNames ? '' : 'destinationInstanceName')
     ..aOM<BinLogCoordinates>(4, _omitFieldNames ? '' : 'binLogCoordinates', subBuilder: BinLogCoordinates.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'pointInTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'pointInTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'allocatedIpRange')
     ..pPS(9, _omitFieldNames ? '' : 'databaseNames')
     ..aOS(10, _omitFieldNames ? '' : 'preferredZone')
@@ -3930,15 +3930,15 @@ class CloneContext extends $pb.GeneratedMessage {
   /// Timestamp, if specified, identifies the time to which the source instance
   /// is cloned.
   @$pb.TagNumber(5)
-  $1775.Timestamp get pointInTime => $_getN(4);
+  $1776.Timestamp get pointInTime => $_getN(4);
   @$pb.TagNumber(5)
-  set pointInTime($1775.Timestamp v) { setField(5, v); }
+  set pointInTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPointInTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearPointInTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensurePointInTime() => $_ensure(4);
+  $1776.Timestamp ensurePointInTime() => $_ensure(4);
 
   /// The name of the allocated ip range for the private ip Cloud SQL instance.
   /// For example: "google-managed-services-default". If set, the cloned instance
@@ -4059,7 +4059,7 @@ class BinLogCoordinates extends $pb.GeneratedMessage {
 class DatabaseInstance_SqlFailoverReplica extends $pb.GeneratedMessage {
   factory DatabaseInstance_SqlFailoverReplica({
     $core.String? name,
-    $1780.BoolValue? available,
+    $1781.BoolValue? available,
   }) {
     final $result = create();
     if (name != null) {
@@ -4076,7 +4076,7 @@ class DatabaseInstance_SqlFailoverReplica extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatabaseInstance.SqlFailoverReplica', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1780.BoolValue>(2, _omitFieldNames ? '' : 'available', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(2, _omitFieldNames ? '' : 'available', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -4117,25 +4117,25 @@ class DatabaseInstance_SqlFailoverReplica extends $pb.GeneratedMessage {
   /// that the failover replica is out of sync. The primary instance can only
   /// failover to the failover replica when the status is true.
   @$pb.TagNumber(2)
-  $1780.BoolValue get available => $_getN(1);
+  $1781.BoolValue get available => $_getN(1);
   @$pb.TagNumber(2)
-  set available($1780.BoolValue v) { setField(2, v); }
+  set available($1781.BoolValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAvailable() => $_has(1);
   @$pb.TagNumber(2)
   void clearAvailable() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.BoolValue ensureAvailable() => $_ensure(1);
+  $1781.BoolValue ensureAvailable() => $_ensure(1);
 }
 
 /// Any scheduled maintenance for this instance.
 class DatabaseInstance_SqlScheduledMaintenance extends $pb.GeneratedMessage {
   factory DatabaseInstance_SqlScheduledMaintenance({
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   @$core.Deprecated('This field is deprecated.')
     $core.bool? canDefer,
     $core.bool? canReschedule,
-    $1775.Timestamp? scheduleDeadlineTime,
+    $1776.Timestamp? scheduleDeadlineTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -4158,10 +4158,10 @@ class DatabaseInstance_SqlScheduledMaintenance extends $pb.GeneratedMessage {
   factory DatabaseInstance_SqlScheduledMaintenance.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatabaseInstance.SqlScheduledMaintenance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..aOB(2, _omitFieldNames ? '' : 'canDefer')
     ..aOB(3, _omitFieldNames ? '' : 'canReschedule')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'scheduleDeadlineTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'scheduleDeadlineTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4188,15 +4188,15 @@ class DatabaseInstance_SqlScheduledMaintenance extends $pb.GeneratedMessage {
 
   /// The start time of any upcoming scheduled maintenance for this instance.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(2)
@@ -4223,15 +4223,15 @@ class DatabaseInstance_SqlScheduledMaintenance extends $pb.GeneratedMessage {
 
   /// Maintenance cannot be rescheduled to start beyond this deadline.
   @$pb.TagNumber(4)
-  $1775.Timestamp get scheduleDeadlineTime => $_getN(3);
+  $1776.Timestamp get scheduleDeadlineTime => $_getN(3);
   @$pb.TagNumber(4)
-  set scheduleDeadlineTime($1775.Timestamp v) { setField(4, v); }
+  set scheduleDeadlineTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasScheduleDeadlineTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearScheduleDeadlineTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureScheduleDeadlineTime() => $_ensure(3);
+  $1776.Timestamp ensureScheduleDeadlineTime() => $_ensure(3);
 }
 
 /// This message wraps up the information written by out-of-disk detection job.
@@ -4322,9 +4322,9 @@ class DatabaseInstance extends $pb.GeneratedMessage {
     $core.String? masterInstanceName,
     $core.Iterable<$core.String>? replicaNames,
   @$core.Deprecated('This field is deprecated.')
-    $1780.Int64Value? maxDiskSize,
+    $1781.Int64Value? maxDiskSize,
   @$core.Deprecated('This field is deprecated.')
-    $1780.Int64Value? currentDiskSize,
+    $1781.Int64Value? currentDiskSize,
     $core.Iterable<$1401.IpMapping>? ipAddresses,
     $1401.SslCert? serverCaCert,
     SqlInstanceType? instanceType,
@@ -4346,9 +4346,9 @@ class DatabaseInstance extends $pb.GeneratedMessage {
     $core.String? rootPassword,
     DatabaseInstance_SqlScheduledMaintenance? scheduledMaintenance,
     $core.String? secondaryGceZone,
-    $1780.BoolValue? satisfiesPzs,
+    $1781.BoolValue? satisfiesPzs,
     DatabaseInstance_SqlOutOfDiskReport? outOfDiskReport,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? databaseInstalledVersion,
     $core.Iterable<$core.String>? availableMaintenanceVersions,
     $core.String? maintenanceVersion,
@@ -4361,8 +4361,8 @@ class DatabaseInstance extends $pb.GeneratedMessage {
     $core.String? writeEndpoint,
     ReplicationCluster? replicationCluster,
     GeminiInstanceConfig? geminiConfig,
-    $1780.BoolValue? satisfiesPzi,
-    $1780.BoolValue? switchTransactionLogsToCloudStorageEnabled,
+    $1781.BoolValue? satisfiesPzi,
+    $1781.BoolValue? switchTransactionLogsToCloudStorageEnabled,
   }) {
     final $result = create();
     if (kind != null) {
@@ -4522,8 +4522,8 @@ class DatabaseInstance extends $pb.GeneratedMessage {
     ..aOM<DatabaseInstance_SqlFailoverReplica>(6, _omitFieldNames ? '' : 'failoverReplica', subBuilder: DatabaseInstance_SqlFailoverReplica.create)
     ..aOS(7, _omitFieldNames ? '' : 'masterInstanceName')
     ..pPS(8, _omitFieldNames ? '' : 'replicaNames')
-    ..aOM<$1780.Int64Value>(9, _omitFieldNames ? '' : 'maxDiskSize', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(10, _omitFieldNames ? '' : 'currentDiskSize', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(9, _omitFieldNames ? '' : 'maxDiskSize', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(10, _omitFieldNames ? '' : 'currentDiskSize', subBuilder: $1781.Int64Value.create)
     ..pc<$1401.IpMapping>(11, _omitFieldNames ? '' : 'ipAddresses', $pb.PbFieldType.PM, subBuilder: $1401.IpMapping.create)
     ..aOM<$1401.SslCert>(12, _omitFieldNames ? '' : 'serverCaCert', subBuilder: $1401.SslCert.create)
     ..e<SqlInstanceType>(13, _omitFieldNames ? '' : 'instanceType', $pb.PbFieldType.OE, defaultOrMaker: SqlInstanceType.SQL_INSTANCE_TYPE_UNSPECIFIED, valueOf: SqlInstanceType.valueOf, enumValues: SqlInstanceType.values)
@@ -4544,9 +4544,9 @@ class DatabaseInstance extends $pb.GeneratedMessage {
     ..aOS(29, _omitFieldNames ? '' : 'rootPassword')
     ..aOM<DatabaseInstance_SqlScheduledMaintenance>(30, _omitFieldNames ? '' : 'scheduledMaintenance', subBuilder: DatabaseInstance_SqlScheduledMaintenance.create)
     ..aOS(34, _omitFieldNames ? '' : 'secondaryGceZone')
-    ..aOM<$1780.BoolValue>(35, _omitFieldNames ? '' : 'satisfiesPzs', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(35, _omitFieldNames ? '' : 'satisfiesPzs', subBuilder: $1781.BoolValue.create)
     ..aOM<DatabaseInstance_SqlOutOfDiskReport>(38, _omitFieldNames ? '' : 'outOfDiskReport', subBuilder: DatabaseInstance_SqlOutOfDiskReport.create)
-    ..aOM<$1775.Timestamp>(39, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(39, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(40, _omitFieldNames ? '' : 'databaseInstalledVersion')
     ..pPS(41, _omitFieldNames ? '' : 'availableMaintenanceVersions')
     ..aOS(42, _omitFieldNames ? '' : 'maintenanceVersion')
@@ -4558,8 +4558,8 @@ class DatabaseInstance extends $pb.GeneratedMessage {
     ..aOS(52, _omitFieldNames ? '' : 'writeEndpoint')
     ..aOM<ReplicationCluster>(54, _omitFieldNames ? '' : 'replicationCluster', subBuilder: ReplicationCluster.create)
     ..aOM<GeminiInstanceConfig>(55, _omitFieldNames ? '' : 'geminiConfig', subBuilder: GeminiInstanceConfig.create)
-    ..aOM<$1780.BoolValue>(56, _omitFieldNames ? '' : 'satisfiesPzi', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(57, _omitFieldNames ? '' : 'switchTransactionLogsToCloudStorageEnabled', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(56, _omitFieldNames ? '' : 'satisfiesPzi', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(57, _omitFieldNames ? '' : 'switchTransactionLogsToCloudStorageEnabled', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -4668,10 +4668,10 @@ class DatabaseInstance extends $pb.GeneratedMessage {
   /// The maximum disk size of the instance in bytes.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $1780.Int64Value get maxDiskSize => $_getN(8);
+  $1781.Int64Value get maxDiskSize => $_getN(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  set maxDiskSize($1780.Int64Value v) { setField(9, v); }
+  set maxDiskSize($1781.Int64Value v) { setField(9, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
   $core.bool hasMaxDiskSize() => $_has(8);
@@ -4680,7 +4680,7 @@ class DatabaseInstance extends $pb.GeneratedMessage {
   void clearMaxDiskSize() => clearField(9);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $1780.Int64Value ensureMaxDiskSize() => $_ensure(8);
+  $1781.Int64Value ensureMaxDiskSize() => $_ensure(8);
 
   /// The current disk usage of the instance in bytes. This property has been
   /// deprecated. Use the
@@ -4690,10 +4690,10 @@ class DatabaseInstance extends $pb.GeneratedMessage {
   /// for details.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  $1780.Int64Value get currentDiskSize => $_getN(9);
+  $1781.Int64Value get currentDiskSize => $_getN(9);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  set currentDiskSize($1780.Int64Value v) { setField(10, v); }
+  set currentDiskSize($1781.Int64Value v) { setField(10, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
   $core.bool hasCurrentDiskSize() => $_has(9);
@@ -4702,7 +4702,7 @@ class DatabaseInstance extends $pb.GeneratedMessage {
   void clearCurrentDiskSize() => clearField(10);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  $1780.Int64Value ensureCurrentDiskSize() => $_ensure(9);
+  $1781.Int64Value ensureCurrentDiskSize() => $_ensure(9);
 
   /// The assigned IP addresses for the instance.
   @$pb.TagNumber(11)
@@ -4935,15 +4935,15 @@ class DatabaseInstance extends $pb.GeneratedMessage {
   ///
   ///  The status is reserved for future use.
   @$pb.TagNumber(35)
-  $1780.BoolValue get satisfiesPzs => $_getN(30);
+  $1781.BoolValue get satisfiesPzs => $_getN(30);
   @$pb.TagNumber(35)
-  set satisfiesPzs($1780.BoolValue v) { setField(35, v); }
+  set satisfiesPzs($1781.BoolValue v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasSatisfiesPzs() => $_has(30);
   @$pb.TagNumber(35)
   void clearSatisfiesPzs() => clearField(35);
   @$pb.TagNumber(35)
-  $1780.BoolValue ensureSatisfiesPzs() => $_ensure(30);
+  $1781.BoolValue ensureSatisfiesPzs() => $_ensure(30);
 
   /// This field represents the report generated by the proactive database
   /// wellness job for OutOfDisk issues.
@@ -4966,15 +4966,15 @@ class DatabaseInstance extends $pb.GeneratedMessage {
   /// [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example
   /// `2012-11-15T16:19:00.094Z`.
   @$pb.TagNumber(39)
-  $1775.Timestamp get createTime => $_getN(32);
+  $1776.Timestamp get createTime => $_getN(32);
   @$pb.TagNumber(39)
-  set createTime($1775.Timestamp v) { setField(39, v); }
+  set createTime($1776.Timestamp v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasCreateTime() => $_has(32);
   @$pb.TagNumber(39)
   void clearCreateTime() => clearField(39);
   @$pb.TagNumber(39)
-  $1775.Timestamp ensureCreateTime() => $_ensure(32);
+  $1776.Timestamp ensureCreateTime() => $_ensure(32);
 
   /// Output only. Stores the current database version running on the instance
   /// including minor version such as `MYSQL_8_0_18`.
@@ -5089,28 +5089,28 @@ class DatabaseInstance extends $pb.GeneratedMessage {
   ///
   ///  The status is reserved for future use.
   @$pb.TagNumber(56)
-  $1780.BoolValue get satisfiesPzi => $_getN(44);
+  $1781.BoolValue get satisfiesPzi => $_getN(44);
   @$pb.TagNumber(56)
-  set satisfiesPzi($1780.BoolValue v) { setField(56, v); }
+  set satisfiesPzi($1781.BoolValue v) { setField(56, v); }
   @$pb.TagNumber(56)
   $core.bool hasSatisfiesPzi() => $_has(44);
   @$pb.TagNumber(56)
   void clearSatisfiesPzi() => clearField(56);
   @$pb.TagNumber(56)
-  $1780.BoolValue ensureSatisfiesPzi() => $_ensure(44);
+  $1781.BoolValue ensureSatisfiesPzi() => $_ensure(44);
 
   /// Input only. Whether Cloud SQL is enabled to switch storing point-in-time
   /// recovery log files from a data disk to Cloud Storage.
   @$pb.TagNumber(57)
-  $1780.BoolValue get switchTransactionLogsToCloudStorageEnabled => $_getN(45);
+  $1781.BoolValue get switchTransactionLogsToCloudStorageEnabled => $_getN(45);
   @$pb.TagNumber(57)
-  set switchTransactionLogsToCloudStorageEnabled($1780.BoolValue v) { setField(57, v); }
+  set switchTransactionLogsToCloudStorageEnabled($1781.BoolValue v) { setField(57, v); }
   @$pb.TagNumber(57)
   $core.bool hasSwitchTransactionLogsToCloudStorageEnabled() => $_has(45);
   @$pb.TagNumber(57)
   void clearSwitchTransactionLogsToCloudStorageEnabled() => clearField(57);
   @$pb.TagNumber(57)
-  $1780.BoolValue ensureSwitchTransactionLogsToCloudStorageEnabled() => $_ensure(45);
+  $1781.BoolValue ensureSwitchTransactionLogsToCloudStorageEnabled() => $_ensure(45);
 }
 
 /// Gemini instance configuration.
@@ -5423,7 +5423,7 @@ class AvailableDatabaseVersion extends $pb.GeneratedMessage {
 class SqlInstancesRescheduleMaintenanceRequestBody_Reschedule extends $pb.GeneratedMessage {
   factory SqlInstancesRescheduleMaintenanceRequestBody_Reschedule({
     SqlInstancesRescheduleMaintenanceRequestBody_RescheduleType? rescheduleType,
-    $1775.Timestamp? scheduleTime,
+    $1776.Timestamp? scheduleTime,
   }) {
     final $result = create();
     if (rescheduleType != null) {
@@ -5440,7 +5440,7 @@ class SqlInstancesRescheduleMaintenanceRequestBody_Reschedule extends $pb.Genera
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SqlInstancesRescheduleMaintenanceRequestBody.Reschedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..e<SqlInstancesRescheduleMaintenanceRequestBody_RescheduleType>(1, _omitFieldNames ? '' : 'rescheduleType', $pb.PbFieldType.OE, defaultOrMaker: SqlInstancesRescheduleMaintenanceRequestBody_RescheduleType.RESCHEDULE_TYPE_UNSPECIFIED, valueOf: SqlInstancesRescheduleMaintenanceRequestBody_RescheduleType.valueOf, enumValues: SqlInstancesRescheduleMaintenanceRequestBody_RescheduleType.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -5480,15 +5480,15 @@ class SqlInstancesRescheduleMaintenanceRequestBody_Reschedule extends $pb.Genera
   /// [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example
   /// `2012-11-15T16:19:00.094Z`.
   @$pb.TagNumber(2)
-  $1775.Timestamp get scheduleTime => $_getN(1);
+  $1776.Timestamp get scheduleTime => $_getN(1);
   @$pb.TagNumber(2)
-  set scheduleTime($1775.Timestamp v) { setField(2, v); }
+  set scheduleTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasScheduleTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearScheduleTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(1);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(1);
 }
 
 /// Reschedule options for maintenance windows.
@@ -5549,7 +5549,7 @@ class SqlInstancesRescheduleMaintenanceRequestBody extends $pb.GeneratedMessage 
 class DemoteMasterContext extends $pb.GeneratedMessage {
   factory DemoteMasterContext({
     $core.String? kind,
-    $1780.BoolValue? verifyGtidConsistency,
+    $1781.BoolValue? verifyGtidConsistency,
     $core.String? masterInstanceName,
     $1401.DemoteMasterConfiguration? replicaConfiguration,
     $core.bool? skipReplicationSetup,
@@ -5578,7 +5578,7 @@ class DemoteMasterContext extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DemoteMasterContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
-    ..aOM<$1780.BoolValue>(2, _omitFieldNames ? '' : 'verifyGtidConsistency', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(2, _omitFieldNames ? '' : 'verifyGtidConsistency', subBuilder: $1781.BoolValue.create)
     ..aOS(3, _omitFieldNames ? '' : 'masterInstanceName')
     ..aOM<$1401.DemoteMasterConfiguration>(4, _omitFieldNames ? '' : 'replicaConfiguration', subBuilder: $1401.DemoteMasterConfiguration.create)
     ..aOB(5, _omitFieldNames ? '' : 'skipReplicationSetup')
@@ -5624,15 +5624,15 @@ class DemoteMasterContext extends $pb.GeneratedMessage {
   /// for the GTID divergence and are confident that doing so will not cause any
   /// replication issues.
   @$pb.TagNumber(2)
-  $1780.BoolValue get verifyGtidConsistency => $_getN(1);
+  $1781.BoolValue get verifyGtidConsistency => $_getN(1);
   @$pb.TagNumber(2)
-  set verifyGtidConsistency($1780.BoolValue v) { setField(2, v); }
+  set verifyGtidConsistency($1781.BoolValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVerifyGtidConsistency() => $_has(1);
   @$pb.TagNumber(2)
   void clearVerifyGtidConsistency() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.BoolValue ensureVerifyGtidConsistency() => $_ensure(1);
+  $1781.BoolValue ensureVerifyGtidConsistency() => $_ensure(1);
 
   /// The name of the instance which will act as on-premises primary instance
   /// in the replication setup.
@@ -6303,8 +6303,8 @@ class ReplicaConfiguration extends $pb.GeneratedMessage {
   factory ReplicaConfiguration({
     $core.String? kind,
     $1401.MySqlReplicaConfiguration? mysqlReplicaConfiguration,
-    $1780.BoolValue? failoverTarget,
-    $1780.BoolValue? cascadableReplica,
+    $1781.BoolValue? failoverTarget,
+    $1781.BoolValue? cascadableReplica,
   }) {
     final $result = create();
     if (kind != null) {
@@ -6328,8 +6328,8 @@ class ReplicaConfiguration extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReplicaConfiguration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
     ..aOM<$1401.MySqlReplicaConfiguration>(2, _omitFieldNames ? '' : 'mysqlReplicaConfiguration', subBuilder: $1401.MySqlReplicaConfiguration.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'failoverTarget', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(5, _omitFieldNames ? '' : 'cascadableReplica', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'failoverTarget', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(5, _omitFieldNames ? '' : 'cascadableReplica', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -6387,29 +6387,29 @@ class ReplicaConfiguration extends $pb.GeneratedMessage {
   /// primary instance. Only one replica can be specified as failover target, and
   /// the replica has to be in different zone with the primary instance.
   @$pb.TagNumber(3)
-  $1780.BoolValue get failoverTarget => $_getN(2);
+  $1781.BoolValue get failoverTarget => $_getN(2);
   @$pb.TagNumber(3)
-  set failoverTarget($1780.BoolValue v) { setField(3, v); }
+  set failoverTarget($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFailoverTarget() => $_has(2);
   @$pb.TagNumber(3)
   void clearFailoverTarget() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureFailoverTarget() => $_ensure(2);
+  $1781.BoolValue ensureFailoverTarget() => $_ensure(2);
 
   /// Optional. Specifies if a SQL Server replica is a cascadable replica. A
   /// cascadable replica is a SQL Server cross region replica that supports
   /// replica(s) under it.
   @$pb.TagNumber(5)
-  $1780.BoolValue get cascadableReplica => $_getN(3);
+  $1781.BoolValue get cascadableReplica => $_getN(3);
   @$pb.TagNumber(5)
-  set cascadableReplica($1780.BoolValue v) { setField(5, v); }
+  set cascadableReplica($1781.BoolValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCascadableReplica() => $_has(3);
   @$pb.TagNumber(5)
   void clearCascadableReplica() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.BoolValue ensureCascadableReplica() => $_ensure(3);
+  $1781.BoolValue ensureCascadableReplica() => $_ensure(3);
 }
 
 /// Request to acquire a lease for SSRS.

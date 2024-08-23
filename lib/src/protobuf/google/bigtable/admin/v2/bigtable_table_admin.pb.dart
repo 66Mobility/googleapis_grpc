@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4212;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4213;
 import 'table.pb.dart' as $467;
 import 'table.pbenum.dart' as $467;
 
@@ -134,7 +134,7 @@ class RestoreTableMetadata extends $pb.GeneratedMessage {
     $467.RestoreSourceType? sourceType,
     $467.BackupInfo? backupInfo,
     $core.String? optimizeTableOperationName,
-    $4212.OperationProgress? progress,
+    $4213.OperationProgress? progress,
   }) {
     final $result = create();
     if (name != null) {
@@ -168,7 +168,7 @@ class RestoreTableMetadata extends $pb.GeneratedMessage {
     ..e<$467.RestoreSourceType>(2, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE, defaultOrMaker: $467.RestoreSourceType.RESTORE_SOURCE_TYPE_UNSPECIFIED, valueOf: $467.RestoreSourceType.valueOf, enumValues: $467.RestoreSourceType.values)
     ..aOM<$467.BackupInfo>(3, _omitFieldNames ? '' : 'backupInfo', subBuilder: $467.BackupInfo.create)
     ..aOS(4, _omitFieldNames ? '' : 'optimizeTableOperationName')
-    ..aOM<$4212.OperationProgress>(5, _omitFieldNames ? '' : 'progress', subBuilder: $4212.OperationProgress.create)
+    ..aOM<$4213.OperationProgress>(5, _omitFieldNames ? '' : 'progress', subBuilder: $4213.OperationProgress.create)
     ..hasRequiredFields = false
   ;
 
@@ -249,15 +249,15 @@ class RestoreTableMetadata extends $pb.GeneratedMessage {
   /// [RestoreTable][google.bigtable.admin.v2.BigtableTableAdmin.RestoreTable]
   /// operation.
   @$pb.TagNumber(5)
-  $4212.OperationProgress get progress => $_getN(4);
+  $4213.OperationProgress get progress => $_getN(4);
   @$pb.TagNumber(5)
-  set progress($4212.OperationProgress v) { setField(5, v); }
+  set progress($4213.OperationProgress v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasProgress() => $_has(4);
   @$pb.TagNumber(5)
   void clearProgress() => clearField(5);
   @$pb.TagNumber(5)
-  $4212.OperationProgress ensureProgress() => $_ensure(4);
+  $4213.OperationProgress ensureProgress() => $_ensure(4);
 }
 
 /// Metadata type for the long-running operation used to track the progress
@@ -267,7 +267,7 @@ class RestoreTableMetadata extends $pb.GeneratedMessage {
 class OptimizeRestoredTableMetadata extends $pb.GeneratedMessage {
   factory OptimizeRestoredTableMetadata({
     $core.String? name,
-    $4212.OperationProgress? progress,
+    $4213.OperationProgress? progress,
   }) {
     final $result = create();
     if (name != null) {
@@ -284,7 +284,7 @@ class OptimizeRestoredTableMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeRestoredTableMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4212.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $4212.OperationProgress.create)
+    ..aOM<$4213.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $4213.OperationProgress.create)
     ..hasRequiredFields = false
   ;
 
@@ -321,15 +321,15 @@ class OptimizeRestoredTableMetadata extends $pb.GeneratedMessage {
 
   /// The progress of the post-restore optimizations.
   @$pb.TagNumber(2)
-  $4212.OperationProgress get progress => $_getN(1);
+  $4213.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($4212.OperationProgress v) { setField(2, v); }
+  set progress($4213.OperationProgress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $4212.OperationProgress ensureProgress() => $_ensure(1);
+  $4213.OperationProgress ensureProgress() => $_ensure(1);
 }
 
 /// An initial split point for a newly created table.
@@ -938,7 +938,7 @@ class GetTableRequest extends $pb.GeneratedMessage {
 class UpdateTableRequest extends $pb.GeneratedMessage {
   factory UpdateTableRequest({
     $467.Table? table,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (table != null) {
@@ -955,7 +955,7 @@ class UpdateTableRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTableRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<$467.Table>(1, _omitFieldNames ? '' : 'table', subBuilder: $467.Table.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1006,15 +1006,15 @@ class UpdateTableRequest extends $pb.GeneratedMessage {
   ///  If `column_families` is set in `update_mask`, it will return an
   ///  UNIMPLEMENTED error.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Metadata type for the operation returned by
@@ -1022,8 +1022,8 @@ class UpdateTableRequest extends $pb.GeneratedMessage {
 class UpdateTableMetadata extends $pb.GeneratedMessage {
   factory UpdateTableMetadata({
     $core.String? name,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1043,8 +1043,8 @@ class UpdateTableMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTableMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1081,27 +1081,27 @@ class UpdateTableMetadata extends $pb.GeneratedMessage {
 
   /// The time at which this operation started.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// If set, the time at which this operation finished or was canceled.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// Request message for
@@ -1219,8 +1219,8 @@ class UndeleteTableRequest extends $pb.GeneratedMessage {
 class UndeleteTableMetadata extends $pb.GeneratedMessage {
   factory UndeleteTableMetadata({
     $core.String? name,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1240,8 +1240,8 @@ class UndeleteTableMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeleteTableMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1278,27 +1278,27 @@ class UndeleteTableMetadata extends $pb.GeneratedMessage {
 
   /// The time at which this operation started.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// If set, the time at which this operation finished or was cancelled.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 enum ModifyColumnFamiliesRequest_Modification_Mod {
@@ -1315,7 +1315,7 @@ class ModifyColumnFamiliesRequest_Modification extends $pb.GeneratedMessage {
     $467.ColumnFamily? create_2,
     $467.ColumnFamily? update,
     $core.bool? drop,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (id != null) {
@@ -1351,7 +1351,7 @@ class ModifyColumnFamiliesRequest_Modification extends $pb.GeneratedMessage {
     ..aOM<$467.ColumnFamily>(2, _omitFieldNames ? '' : 'create', subBuilder: $467.ColumnFamily.create)
     ..aOM<$467.ColumnFamily>(3, _omitFieldNames ? '' : 'update', subBuilder: $467.ColumnFamily.create)
     ..aOB(4, _omitFieldNames ? '' : 'drop')
-    ..aOM<$2209.FieldMask>(6, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(6, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1430,15 +1430,15 @@ class ModifyColumnFamiliesRequest_Modification extends $pb.GeneratedMessage {
   /// mod should be updated, ignored for other modification types. If unset or
   /// empty, we treat it as updating `gc_rule` to be backward compatible.
   @$pb.TagNumber(6)
-  $2209.FieldMask get updateMask => $_getN(4);
+  $2210.FieldMask get updateMask => $_getN(4);
   @$pb.TagNumber(6)
-  set updateMask($2209.FieldMask v) { setField(6, v); }
+  set updateMask($2210.FieldMask v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateMask() => $_has(4);
   @$pb.TagNumber(6)
   void clearUpdateMask() => clearField(6);
   @$pb.TagNumber(6)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(4);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(4);
 }
 
 /// Request message for
@@ -1888,7 +1888,7 @@ class SnapshotTableRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? cluster,
     $core.String? snapshotId,
-    $1737.Duration? ttl,
+    $1738.Duration? ttl,
     $core.String? description,
   }) {
     final $result = create();
@@ -1917,7 +1917,7 @@ class SnapshotTableRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'cluster')
     ..aOS(3, _omitFieldNames ? '' : 'snapshotId')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -1985,15 +1985,15 @@ class SnapshotTableRequest extends $pb.GeneratedMessage {
   /// amount of time a snapshot can stay active is 7 days. If 'ttl' is not
   /// specified, the default value of 24 hours will be used.
   @$pb.TagNumber(4)
-  $1737.Duration get ttl => $_getN(3);
+  $1738.Duration get ttl => $_getN(3);
   @$pb.TagNumber(4)
-  set ttl($1737.Duration v) { setField(4, v); }
+  set ttl($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTtl() => $_has(3);
   @$pb.TagNumber(4)
   void clearTtl() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureTtl() => $_ensure(3);
+  $1738.Duration ensureTtl() => $_ensure(3);
 
   /// Description of the snapshot.
   @$pb.TagNumber(5)
@@ -2297,8 +2297,8 @@ class DeleteSnapshotRequest extends $pb.GeneratedMessage {
 class SnapshotTableMetadata extends $pb.GeneratedMessage {
   factory SnapshotTableMetadata({
     SnapshotTableRequest? originalRequest,
-    $1775.Timestamp? requestTime,
-    $1775.Timestamp? finishTime,
+    $1776.Timestamp? requestTime,
+    $1776.Timestamp? finishTime,
   }) {
     final $result = create();
     if (originalRequest != null) {
@@ -2318,8 +2318,8 @@ class SnapshotTableMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SnapshotTableMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<SnapshotTableRequest>(1, _omitFieldNames ? '' : 'originalRequest', subBuilder: SnapshotTableRequest.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2358,27 +2358,27 @@ class SnapshotTableMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $1775.Timestamp get requestTime => $_getN(1);
+  $1776.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($1775.Timestamp v) { setField(2, v); }
+  set requestTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRequestTime() => $_ensure(1);
+  $1776.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $1775.Timestamp get finishTime => $_getN(2);
+  $1776.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($1775.Timestamp v) { setField(3, v); }
+  set finishTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFinishTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureFinishTime() => $_ensure(2);
+  $1776.Timestamp ensureFinishTime() => $_ensure(2);
 }
 
 ///  The metadata for the Operation returned by CreateTableFromSnapshot.
@@ -2390,8 +2390,8 @@ class SnapshotTableMetadata extends $pb.GeneratedMessage {
 class CreateTableFromSnapshotMetadata extends $pb.GeneratedMessage {
   factory CreateTableFromSnapshotMetadata({
     CreateTableFromSnapshotRequest? originalRequest,
-    $1775.Timestamp? requestTime,
-    $1775.Timestamp? finishTime,
+    $1776.Timestamp? requestTime,
+    $1776.Timestamp? finishTime,
   }) {
     final $result = create();
     if (originalRequest != null) {
@@ -2411,8 +2411,8 @@ class CreateTableFromSnapshotMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTableFromSnapshotMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<CreateTableFromSnapshotRequest>(1, _omitFieldNames ? '' : 'originalRequest', subBuilder: CreateTableFromSnapshotRequest.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2452,27 +2452,27 @@ class CreateTableFromSnapshotMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $1775.Timestamp get requestTime => $_getN(1);
+  $1776.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($1775.Timestamp v) { setField(2, v); }
+  set requestTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRequestTime() => $_ensure(1);
+  $1776.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $1775.Timestamp get finishTime => $_getN(2);
+  $1776.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($1775.Timestamp v) { setField(3, v); }
+  set finishTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFinishTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureFinishTime() => $_ensure(2);
+  $1776.Timestamp ensureFinishTime() => $_ensure(2);
 }
 
 /// The request for
@@ -2573,8 +2573,8 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   factory CreateBackupMetadata({
     $core.String? name,
     $core.String? sourceTable,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -2598,8 +2598,8 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateBackupMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'sourceTable')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2646,27 +2646,27 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
 
   /// The time at which this operation started.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// If set, the time at which this operation finished or was cancelled.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 }
 
 /// The request for
@@ -2674,7 +2674,7 @@ class CreateBackupMetadata extends $pb.GeneratedMessage {
 class UpdateBackupRequest extends $pb.GeneratedMessage {
   factory UpdateBackupRequest({
     $467.Backup? backup,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (backup != null) {
@@ -2691,7 +2691,7 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBackupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<$467.Backup>(1, _omitFieldNames ? '' : 'backup', subBuilder: $467.Backup.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2738,15 +2738,15 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
   /// specified; this prevents any future fields from being erased accidentally
   /// by clients that do not know about them.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for
@@ -3104,7 +3104,7 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? backupId,
     $core.String? sourceBackup,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (parent != null) {
@@ -3129,7 +3129,7 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'backupId')
     ..aOS(3, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3203,15 +3203,15 @@ class CopyBackupRequest extends $pb.GeneratedMessage {
   /// passed, Cloud Bigtable will delete the backup and free the resources used
   /// by the backup.
   @$pb.TagNumber(4)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($1775.Timestamp v) { setField(4, v); }
+  set expireTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 }
 
 /// Metadata type for the google.longrunning.Operation returned by
@@ -3220,7 +3220,7 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   factory CopyBackupMetadata({
     $core.String? name,
     $467.BackupInfo? sourceBackupInfo,
-    $4212.OperationProgress? progress,
+    $4213.OperationProgress? progress,
   }) {
     final $result = create();
     if (name != null) {
@@ -3241,7 +3241,7 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CopyBackupMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<$467.BackupInfo>(2, _omitFieldNames ? '' : 'sourceBackupInfo', subBuilder: $467.BackupInfo.create)
-    ..aOM<$4212.OperationProgress>(3, _omitFieldNames ? '' : 'progress', subBuilder: $4212.OperationProgress.create)
+    ..aOM<$4213.OperationProgress>(3, _omitFieldNames ? '' : 'progress', subBuilder: $4213.OperationProgress.create)
     ..hasRequiredFields = false
   ;
 
@@ -3294,15 +3294,15 @@ class CopyBackupMetadata extends $pb.GeneratedMessage {
   /// [CopyBackup][google.bigtable.admin.v2.BigtableTableAdmin.CopyBackup]
   /// operation.
   @$pb.TagNumber(3)
-  $4212.OperationProgress get progress => $_getN(2);
+  $4213.OperationProgress get progress => $_getN(2);
   @$pb.TagNumber(3)
-  set progress($4212.OperationProgress v) { setField(3, v); }
+  set progress($4213.OperationProgress v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasProgress() => $_has(2);
   @$pb.TagNumber(3)
   void clearProgress() => clearField(3);
   @$pb.TagNumber(3)
-  $4212.OperationProgress ensureProgress() => $_ensure(2);
+  $4213.OperationProgress ensureProgress() => $_ensure(2);
 }
 
 /// The request for
@@ -3399,8 +3399,8 @@ class CreateAuthorizedViewRequest extends $pb.GeneratedMessage {
 class CreateAuthorizedViewMetadata extends $pb.GeneratedMessage {
   factory CreateAuthorizedViewMetadata({
     CreateAuthorizedViewRequest? originalRequest,
-    $1775.Timestamp? requestTime,
-    $1775.Timestamp? finishTime,
+    $1776.Timestamp? requestTime,
+    $1776.Timestamp? finishTime,
   }) {
     final $result = create();
     if (originalRequest != null) {
@@ -3420,8 +3420,8 @@ class CreateAuthorizedViewMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAuthorizedViewMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<CreateAuthorizedViewRequest>(1, _omitFieldNames ? '' : 'originalRequest', subBuilder: CreateAuthorizedViewRequest.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3460,27 +3460,27 @@ class CreateAuthorizedViewMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $1775.Timestamp get requestTime => $_getN(1);
+  $1776.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($1775.Timestamp v) { setField(2, v); }
+  set requestTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRequestTime() => $_ensure(1);
+  $1776.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $1775.Timestamp get finishTime => $_getN(2);
+  $1776.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($1775.Timestamp v) { setField(3, v); }
+  set finishTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFinishTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureFinishTime() => $_ensure(2);
+  $1776.Timestamp ensureFinishTime() => $_ensure(2);
 }
 
 /// Request message for
@@ -3732,7 +3732,7 @@ class GetAuthorizedViewRequest extends $pb.GeneratedMessage {
 class UpdateAuthorizedViewRequest extends $pb.GeneratedMessage {
   factory UpdateAuthorizedViewRequest({
     $467.AuthorizedView? authorizedView,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? ignoreWarnings,
   }) {
     final $result = create();
@@ -3753,7 +3753,7 @@ class UpdateAuthorizedViewRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAuthorizedViewRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<$467.AuthorizedView>(1, _omitFieldNames ? '' : 'authorizedView', subBuilder: $467.AuthorizedView.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'ignoreWarnings')
     ..hasRequiredFields = false
   ;
@@ -3802,15 +3802,15 @@ class UpdateAuthorizedViewRequest extends $pb.GeneratedMessage {
   /// `*` means to overwrite all fields (including fields not set in the
   /// request).
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. If true, ignore the safety checks when updating the
   /// AuthorizedView.
@@ -3829,8 +3829,8 @@ class UpdateAuthorizedViewRequest extends $pb.GeneratedMessage {
 class UpdateAuthorizedViewMetadata extends $pb.GeneratedMessage {
   factory UpdateAuthorizedViewMetadata({
     UpdateAuthorizedViewRequest? originalRequest,
-    $1775.Timestamp? requestTime,
-    $1775.Timestamp? finishTime,
+    $1776.Timestamp? requestTime,
+    $1776.Timestamp? finishTime,
   }) {
     final $result = create();
     if (originalRequest != null) {
@@ -3850,8 +3850,8 @@ class UpdateAuthorizedViewMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAuthorizedViewMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<UpdateAuthorizedViewRequest>(1, _omitFieldNames ? '' : 'originalRequest', subBuilder: UpdateAuthorizedViewRequest.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'finishTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3891,27 +3891,27 @@ class UpdateAuthorizedViewMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the original request was received.
   @$pb.TagNumber(2)
-  $1775.Timestamp get requestTime => $_getN(1);
+  $1776.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($1775.Timestamp v) { setField(2, v); }
+  set requestTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRequestTime() => $_ensure(1);
+  $1776.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// The time at which the operation failed or was completed successfully.
   @$pb.TagNumber(3)
-  $1775.Timestamp get finishTime => $_getN(2);
+  $1776.Timestamp get finishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set finishTime($1775.Timestamp v) { setField(3, v); }
+  set finishTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFinishTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearFinishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureFinishTime() => $_ensure(2);
+  $1776.Timestamp ensureFinishTime() => $_ensure(2);
 }
 
 /// Request message for

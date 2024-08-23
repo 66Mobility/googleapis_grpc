@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'folders.pbenum.dart';
 
 export 'folders.pbenum.dart';
@@ -27,9 +27,9 @@ class Folder extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? displayName,
     Folder_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? etag,
   }) {
     final $result = create();
@@ -68,9 +68,9 @@ class Folder extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'parent')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..e<Folder_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Folder_State.STATE_UNSPECIFIED, valueOf: Folder_State.valueOf, enumValues: Folder_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
   ;
@@ -150,39 +150,39 @@ class Folder extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the folder was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp when the folder was last modified.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. Timestamp when the folder was requested to be deleted.
   @$pb.TagNumber(7)
-  $1775.Timestamp get deleteTime => $_getN(6);
+  $1776.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(7)
-  set deleteTime($1775.Timestamp v) { setField(7, v); }
+  set deleteTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearDeleteTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(6);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(6);
 
   /// Output only. A checksum computed by the server based on the current value
   /// of the folder resource. This may be sent on update and delete requests to
@@ -735,7 +735,7 @@ class CreateFolderMetadata extends $pb.GeneratedMessage {
 class UpdateFolderRequest extends $pb.GeneratedMessage {
   factory UpdateFolderRequest({
     Folder? folder,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (folder != null) {
@@ -752,7 +752,7 @@ class UpdateFolderRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFolderRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.resourcemanager.v3'), createEmptyInstance: create)
     ..aOM<Folder>(1, _omitFieldNames ? '' : 'folder', subBuilder: Folder.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -793,15 +793,15 @@ class UpdateFolderRequest extends $pb.GeneratedMessage {
   /// Required. Fields to be updated.
   /// Only the `display_name` can be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A status object which is used as the `metadata` field for the Operation

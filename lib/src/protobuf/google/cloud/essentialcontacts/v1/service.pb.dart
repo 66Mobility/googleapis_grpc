@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'enums.pbenum.dart' as $4528;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'enums.pbenum.dart' as $4530;
 
 /// A contact that will receive notifications from Google Cloud.
 class Contact extends $pb.GeneratedMessage {
   factory Contact({
     $core.String? name,
     $core.String? email,
-    $core.Iterable<$4528.NotificationCategory>? notificationCategorySubscriptions,
+    $core.Iterable<$4530.NotificationCategory>? notificationCategorySubscriptions,
     $core.String? languageTag,
-    $4528.ValidationState? validationState,
-    $1775.Timestamp? validateTime,
+    $4530.ValidationState? validationState,
+    $1776.Timestamp? validateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -55,10 +55,10 @@ class Contact extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Contact', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.essentialcontacts.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'email')
-    ..pc<$4528.NotificationCategory>(3, _omitFieldNames ? '' : 'notificationCategorySubscriptions', $pb.PbFieldType.KE, valueOf: $4528.NotificationCategory.valueOf, enumValues: $4528.NotificationCategory.values, defaultEnumValue: $4528.NotificationCategory.NOTIFICATION_CATEGORY_UNSPECIFIED)
+    ..pc<$4530.NotificationCategory>(3, _omitFieldNames ? '' : 'notificationCategorySubscriptions', $pb.PbFieldType.KE, valueOf: $4530.NotificationCategory.valueOf, enumValues: $4530.NotificationCategory.values, defaultEnumValue: $4530.NotificationCategory.NOTIFICATION_CATEGORY_UNSPECIFIED)
     ..aOS(4, _omitFieldNames ? '' : 'languageTag')
-    ..e<$4528.ValidationState>(8, _omitFieldNames ? '' : 'validationState', $pb.PbFieldType.OE, defaultOrMaker: $4528.ValidationState.VALIDATION_STATE_UNSPECIFIED, valueOf: $4528.ValidationState.valueOf, enumValues: $4528.ValidationState.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'validateTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4530.ValidationState>(8, _omitFieldNames ? '' : 'validationState', $pb.PbFieldType.OE, defaultOrMaker: $4530.ValidationState.VALIDATION_STATE_UNSPECIFIED, valueOf: $4530.ValidationState.valueOf, enumValues: $4530.ValidationState.values)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'validateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -108,7 +108,7 @@ class Contact extends $pb.GeneratedMessage {
   /// Required. The categories of notifications that the contact will receive
   /// communications for.
   @$pb.TagNumber(3)
-  $core.List<$4528.NotificationCategory> get notificationCategorySubscriptions => $_getList(2);
+  $core.List<$4530.NotificationCategory> get notificationCategorySubscriptions => $_getList(2);
 
   /// Required. The preferred language for notifications, as a ISO 639-1 language
   /// code. See [Supported
@@ -126,9 +126,9 @@ class Contact extends $pb.GeneratedMessage {
   /// The validity of the contact. A contact is considered valid if it is the
   /// correct recipient for notifications for a particular resource.
   @$pb.TagNumber(8)
-  $4528.ValidationState get validationState => $_getN(4);
+  $4530.ValidationState get validationState => $_getN(4);
   @$pb.TagNumber(8)
-  set validationState($4528.ValidationState v) { setField(8, v); }
+  set validationState($4530.ValidationState v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasValidationState() => $_has(4);
   @$pb.TagNumber(8)
@@ -138,15 +138,15 @@ class Contact extends $pb.GeneratedMessage {
   /// automatically. A contact is considered stale if its validation state was
   /// updated more than 1 year ago.
   @$pb.TagNumber(9)
-  $1775.Timestamp get validateTime => $_getN(5);
+  $1776.Timestamp get validateTime => $_getN(5);
   @$pb.TagNumber(9)
-  set validateTime($1775.Timestamp v) { setField(9, v); }
+  set validateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasValidateTime() => $_has(5);
   @$pb.TagNumber(9)
   void clearValidateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureValidateTime() => $_ensure(5);
+  $1776.Timestamp ensureValidateTime() => $_ensure(5);
 }
 
 /// Request message for the ListContacts method.
@@ -489,7 +489,7 @@ class CreateContactRequest extends $pb.GeneratedMessage {
 class UpdateContactRequest extends $pb.GeneratedMessage {
   factory UpdateContactRequest({
     Contact? contact,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (contact != null) {
@@ -506,7 +506,7 @@ class UpdateContactRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateContactRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.essentialcontacts.v1'), createEmptyInstance: create)
     ..aOM<Contact>(2, _omitFieldNames ? '' : 'contact', subBuilder: Contact.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -548,15 +548,15 @@ class UpdateContactRequest extends $pb.GeneratedMessage {
   /// definition, see
   /// https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the ComputeContacts method.
@@ -565,7 +565,7 @@ class ComputeContactsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
-    $core.Iterable<$4528.NotificationCategory>? notificationCategories,
+    $core.Iterable<$4530.NotificationCategory>? notificationCategories,
   }) {
     final $result = create();
     if (parent != null) {
@@ -590,7 +590,7 @@ class ComputeContactsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..pc<$4528.NotificationCategory>(6, _omitFieldNames ? '' : 'notificationCategories', $pb.PbFieldType.KE, valueOf: $4528.NotificationCategory.valueOf, enumValues: $4528.NotificationCategory.values, defaultEnumValue: $4528.NotificationCategory.NOTIFICATION_CATEGORY_UNSPECIFIED)
+    ..pc<$4530.NotificationCategory>(6, _omitFieldNames ? '' : 'notificationCategories', $pb.PbFieldType.KE, valueOf: $4530.NotificationCategory.valueOf, enumValues: $4530.NotificationCategory.values, defaultEnumValue: $4530.NotificationCategory.NOTIFICATION_CATEGORY_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -657,7 +657,7 @@ class ComputeContactsRequest extends $pb.GeneratedMessage {
   /// in this list, contacts subscribed to any notification category will be
   /// returned.
   @$pb.TagNumber(6)
-  $core.List<$4528.NotificationCategory> get notificationCategories => $_getList(3);
+  $core.List<$4530.NotificationCategory> get notificationCategories => $_getList(3);
 }
 
 /// Response message for the ComputeContacts method.
@@ -731,7 +731,7 @@ class SendTestMessageRequest extends $pb.GeneratedMessage {
   factory SendTestMessageRequest({
     $core.Iterable<$core.String>? contacts,
     $core.String? resource,
-    $4528.NotificationCategory? notificationCategory,
+    $4530.NotificationCategory? notificationCategory,
   }) {
     final $result = create();
     if (contacts != null) {
@@ -752,7 +752,7 @@ class SendTestMessageRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SendTestMessageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.essentialcontacts.v1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'contacts')
     ..aOS(2, _omitFieldNames ? '' : 'resource')
-    ..e<$4528.NotificationCategory>(3, _omitFieldNames ? '' : 'notificationCategory', $pb.PbFieldType.OE, defaultOrMaker: $4528.NotificationCategory.NOTIFICATION_CATEGORY_UNSPECIFIED, valueOf: $4528.NotificationCategory.valueOf, enumValues: $4528.NotificationCategory.values)
+    ..e<$4530.NotificationCategory>(3, _omitFieldNames ? '' : 'notificationCategory', $pb.PbFieldType.OE, defaultOrMaker: $4530.NotificationCategory.NOTIFICATION_CATEGORY_UNSPECIFIED, valueOf: $4530.NotificationCategory.valueOf, enumValues: $4530.NotificationCategory.values)
     ..hasRequiredFields = false
   ;
 
@@ -801,9 +801,9 @@ class SendTestMessageRequest extends $pb.GeneratedMessage {
   /// Required. The notification category to send the test message for. All
   /// contacts must be subscribed to this category.
   @$pb.TagNumber(3)
-  $4528.NotificationCategory get notificationCategory => $_getN(2);
+  $4530.NotificationCategory get notificationCategory => $_getN(2);
   @$pb.TagNumber(3)
-  set notificationCategory($4528.NotificationCategory v) { setField(3, v); }
+  set notificationCategory($4530.NotificationCategory v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasNotificationCategory() => $_has(2);
   @$pb.TagNumber(3)

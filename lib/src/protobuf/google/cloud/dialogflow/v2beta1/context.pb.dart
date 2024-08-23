@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
 
 ///  Dialogflow contexts are similar to natural language context. If a person says
 ///  to you "they are orange", you need context in order to understand what "they"
@@ -35,7 +35,7 @@ class Context extends $pb.GeneratedMessage {
   factory Context({
     $core.String? name,
     $core.int? lifespanCount,
-    $1734.Struct? parameters,
+    $1735.Struct? parameters,
   }) {
     final $result = create();
     if (name != null) {
@@ -56,7 +56,7 @@ class Context extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Context', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'lifespanCount', $pb.PbFieldType.O3)
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -141,15 +141,15 @@ class Context extends $pb.GeneratedMessage {
   ///  map from composite entity property names to property values, otherwise,
   ///  use parameter value.
   @$pb.TagNumber(3)
-  $1734.Struct get parameters => $_getN(2);
+  $1735.Struct get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($1734.Struct v) { setField(3, v); }
+  set parameters($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureParameters() => $_ensure(2);
+  $1735.Struct ensureParameters() => $_ensure(2);
 }
 
 /// The request message for
@@ -465,7 +465,7 @@ class CreateContextRequest extends $pb.GeneratedMessage {
 class UpdateContextRequest extends $pb.GeneratedMessage {
   factory UpdateContextRequest({
     Context? context,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (context != null) {
@@ -482,7 +482,7 @@ class UpdateContextRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateContextRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<Context>(1, _omitFieldNames ? '' : 'context', subBuilder: Context.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -521,15 +521,15 @@ class UpdateContextRequest extends $pb.GeneratedMessage {
 
   /// Optional. The mask to control which fields get updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for

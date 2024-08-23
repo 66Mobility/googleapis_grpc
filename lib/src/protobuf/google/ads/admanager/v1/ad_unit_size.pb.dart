@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'environment_type_enum.pbenum.dart' as $1803;
-import 'size.pb.dart' as $1802;
+import 'environment_type_enum.pbenum.dart' as $1804;
+import 'size.pb.dart' as $1803;
 
 /// Represents the size, environment, and companions of an ad in an ad unit.
 class AdUnitSize extends $pb.GeneratedMessage {
   factory AdUnitSize({
-    $1802.Size? size,
-    $1803.EnvironmentTypeEnum_EnvironmentType? environmentType,
-    $core.Iterable<$1802.Size>? companions,
+    $1803.Size? size,
+    $1804.EnvironmentTypeEnum_EnvironmentType? environmentType,
+    $core.Iterable<$1803.Size>? companions,
   }) {
     final $result = create();
     if (size != null) {
@@ -40,9 +40,9 @@ class AdUnitSize extends $pb.GeneratedMessage {
   factory AdUnitSize.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdUnitSize', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.admanager.v1'), createEmptyInstance: create)
-    ..aOM<$1802.Size>(1, _omitFieldNames ? '' : 'size', subBuilder: $1802.Size.create)
-    ..e<$1803.EnvironmentTypeEnum_EnvironmentType>(2, _omitFieldNames ? '' : 'environmentType', $pb.PbFieldType.OE, defaultOrMaker: $1803.EnvironmentTypeEnum_EnvironmentType.ENVIRONMENT_TYPE_UNSPECIFIED, valueOf: $1803.EnvironmentTypeEnum_EnvironmentType.valueOf, enumValues: $1803.EnvironmentTypeEnum_EnvironmentType.values)
-    ..pc<$1802.Size>(3, _omitFieldNames ? '' : 'companions', $pb.PbFieldType.PM, subBuilder: $1802.Size.create)
+    ..aOM<$1803.Size>(1, _omitFieldNames ? '' : 'size', subBuilder: $1803.Size.create)
+    ..e<$1804.EnvironmentTypeEnum_EnvironmentType>(2, _omitFieldNames ? '' : 'environmentType', $pb.PbFieldType.OE, defaultOrMaker: $1804.EnvironmentTypeEnum_EnvironmentType.ENVIRONMENT_TYPE_UNSPECIFIED, valueOf: $1804.EnvironmentTypeEnum_EnvironmentType.valueOf, enumValues: $1804.EnvironmentTypeEnum_EnvironmentType.values)
+    ..pc<$1803.Size>(3, _omitFieldNames ? '' : 'companions', $pb.PbFieldType.PM, subBuilder: $1803.Size.create)
     ..hasRequiredFields = false
   ;
 
@@ -69,21 +69,21 @@ class AdUnitSize extends $pb.GeneratedMessage {
 
   /// Required. The Size of the AdUnit.
   @$pb.TagNumber(1)
-  $1802.Size get size => $_getN(0);
+  $1803.Size get size => $_getN(0);
   @$pb.TagNumber(1)
-  set size($1802.Size v) { setField(1, v); }
+  set size($1803.Size v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSize() => $_has(0);
   @$pb.TagNumber(1)
   void clearSize() => clearField(1);
   @$pb.TagNumber(1)
-  $1802.Size ensureSize() => $_ensure(0);
+  $1803.Size ensureSize() => $_ensure(0);
 
   /// Required. The EnvironmentType of the AdUnit
   @$pb.TagNumber(2)
-  $1803.EnvironmentTypeEnum_EnvironmentType get environmentType => $_getN(1);
+  $1804.EnvironmentTypeEnum_EnvironmentType get environmentType => $_getN(1);
   @$pb.TagNumber(2)
-  set environmentType($1803.EnvironmentTypeEnum_EnvironmentType v) { setField(2, v); }
+  set environmentType($1804.EnvironmentTypeEnum_EnvironmentType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEnvironmentType() => $_has(1);
   @$pb.TagNumber(2)
@@ -93,7 +93,7 @@ class AdUnitSize extends $pb.GeneratedMessage {
   /// environment is
   /// [VIDEO_PLAYER][google.ads.admanager.v1.EnvironmentTypeEnum.EnvironmentType].
   @$pb.TagNumber(3)
-  $core.List<$1802.Size> get companions => $_getList(2);
+  $core.List<$1803.Size> get companions => $_getList(2);
 }
 
 

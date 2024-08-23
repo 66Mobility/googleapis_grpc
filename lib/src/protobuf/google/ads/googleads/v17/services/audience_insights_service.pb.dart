@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3285;
-import '../common/dates.pb.dart' as $3315;
-import '../enums/audience_insights_dimension.pbenum.dart' as $3808;
+import '../common/criteria.pb.dart' as $3286;
+import '../common/dates.pb.dart' as $3316;
+import '../enums/audience_insights_dimension.pbenum.dart' as $3809;
 
 /// Request message for
 /// [AudienceInsightsService.GenerateInsightsFinderReport][google.ads.googleads.v17.services.AudienceInsightsService.GenerateInsightsFinderReport].
@@ -185,7 +185,7 @@ class GenerateAudienceCompositionInsightsRequest extends $pb.GeneratedMessage {
     $core.String? customerId,
     InsightsAudience? audience,
     $core.String? dataMonth,
-    $core.Iterable<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>? dimensions,
+    $core.Iterable<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>? dimensions,
     $core.String? customerInsightsGroup,
     InsightsAudience? baselineAudience,
   }) {
@@ -218,7 +218,7 @@ class GenerateAudienceCompositionInsightsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..aOM<InsightsAudience>(2, _omitFieldNames ? '' : 'audience', subBuilder: InsightsAudience.create)
     ..aOS(3, _omitFieldNames ? '' : 'dataMonth')
-    ..pc<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(4, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values, defaultEnumValue: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED)
+    ..pc<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(4, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values, defaultEnumValue: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED)
     ..aOS(5, _omitFieldNames ? '' : 'customerInsightsGroup')
     ..aOM<InsightsAudience>(6, _omitFieldNames ? '' : 'baselineAudience', subBuilder: InsightsAudience.create)
     ..hasRequiredFields = false
@@ -282,7 +282,7 @@ class GenerateAudienceCompositionInsightsRequest extends $pb.GeneratedMessage {
   /// Required. The audience dimensions for which composition insights should be
   /// returned.
   @$pb.TagNumber(4)
-  $core.List<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension> get dimensions => $_getList(3);
+  $core.List<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension> get dimensions => $_getList(3);
 
   /// The name of the customer being planned for.  This is a user-defined value.
   @$pb.TagNumber(5)
@@ -529,8 +529,8 @@ class GenerateSuggestedTargetingInsightsResponse extends $pb.GeneratedMessage {
 class TargetingSuggestionMetrics extends $pb.GeneratedMessage {
   factory TargetingSuggestionMetrics({
     $core.Iterable<AudienceInsightsAttributeMetadata>? locations,
-    $core.Iterable<$3285.AgeRangeInfo>? ageRanges,
-    $3285.GenderInfo? gender,
+    $core.Iterable<$3286.AgeRangeInfo>? ageRanges,
+    $3286.GenderInfo? gender,
     $core.Iterable<AudienceInsightsAttributeMetadata>? userInterests,
     $core.double? coverage,
     $core.double? index,
@@ -566,8 +566,8 @@ class TargetingSuggestionMetrics extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetingSuggestionMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<AudienceInsightsAttributeMetadata>(1, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: AudienceInsightsAttributeMetadata.create)
-    ..pc<$3285.AgeRangeInfo>(2, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.PM, subBuilder: $3285.AgeRangeInfo.create)
-    ..aOM<$3285.GenderInfo>(3, _omitFieldNames ? '' : 'gender', subBuilder: $3285.GenderInfo.create)
+    ..pc<$3286.AgeRangeInfo>(2, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.PM, subBuilder: $3286.AgeRangeInfo.create)
+    ..aOM<$3286.GenderInfo>(3, _omitFieldNames ? '' : 'gender', subBuilder: $3286.GenderInfo.create)
     ..pc<AudienceInsightsAttributeMetadata>(4, _omitFieldNames ? '' : 'userInterests', $pb.PbFieldType.PM, subBuilder: AudienceInsightsAttributeMetadata.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'coverage', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'index', $pb.PbFieldType.OD)
@@ -603,20 +603,20 @@ class TargetingSuggestionMetrics extends $pb.GeneratedMessage {
 
   /// Suggested age targeting; may be empty indicating no age targeting.
   @$pb.TagNumber(2)
-  $core.List<$3285.AgeRangeInfo> get ageRanges => $_getList(1);
+  $core.List<$3286.AgeRangeInfo> get ageRanges => $_getList(1);
 
   /// Suggested gender targeting.  If present, this attribute has dimension
   /// GENDER.
   @$pb.TagNumber(3)
-  $3285.GenderInfo get gender => $_getN(2);
+  $3286.GenderInfo get gender => $_getN(2);
   @$pb.TagNumber(3)
-  set gender($3285.GenderInfo v) { setField(3, v); }
+  set gender($3286.GenderInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGender() => $_has(2);
   @$pb.TagNumber(3)
   void clearGender() => clearField(3);
   @$pb.TagNumber(3)
-  $3285.GenderInfo ensureGender() => $_ensure(2);
+  $3286.GenderInfo ensureGender() => $_ensure(2);
 
   /// Suggested audience segments to target.  These attributes all have dimension
   /// AFFINITY_USER_INTEREST or IN_MARKET_USER_INTEREST
@@ -662,11 +662,11 @@ class TargetingSuggestionMetrics extends $pb.GeneratedMessage {
 class ListAudienceInsightsAttributesRequest extends $pb.GeneratedMessage {
   factory ListAudienceInsightsAttributesRequest({
     $core.String? customerId,
-    $core.Iterable<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>? dimensions,
+    $core.Iterable<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>? dimensions,
     $core.String? queryText,
     $core.String? customerInsightsGroup,
-    $core.Iterable<$3285.LocationInfo>? locationCountryFilters,
-    $3285.LocationInfo? youtubeReachLocation,
+    $core.Iterable<$3286.LocationInfo>? locationCountryFilters,
+    $3286.LocationInfo? youtubeReachLocation,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -695,11 +695,11 @@ class ListAudienceInsightsAttributesRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAudienceInsightsAttributesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..pc<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values, defaultEnumValue: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED)
+    ..pc<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values, defaultEnumValue: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED)
     ..aOS(3, _omitFieldNames ? '' : 'queryText')
     ..aOS(4, _omitFieldNames ? '' : 'customerInsightsGroup')
-    ..pc<$3285.LocationInfo>(5, _omitFieldNames ? '' : 'locationCountryFilters', $pb.PbFieldType.PM, subBuilder: $3285.LocationInfo.create)
-    ..aOM<$3285.LocationInfo>(6, _omitFieldNames ? '' : 'youtubeReachLocation', subBuilder: $3285.LocationInfo.create)
+    ..pc<$3286.LocationInfo>(5, _omitFieldNames ? '' : 'locationCountryFilters', $pb.PbFieldType.PM, subBuilder: $3286.LocationInfo.create)
+    ..aOM<$3286.LocationInfo>(6, _omitFieldNames ? '' : 'youtubeReachLocation', subBuilder: $3286.LocationInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -736,7 +736,7 @@ class ListAudienceInsightsAttributesRequest extends $pb.GeneratedMessage {
 
   /// Required. The types of attributes to be returned.
   @$pb.TagNumber(2)
-  $core.List<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension> get dimensions => $_getList(1);
+  $core.List<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension> get dimensions => $_getList(1);
 
   /// Required. A free text query.  If the requested dimensions include
   /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
@@ -768,7 +768,7 @@ class ListAudienceInsightsAttributesRequest extends $pb.GeneratedMessage {
   /// attributes are not filtered by country. Setting this field when
   /// SUB_COUNTRY_LOCATION attributes are not requested will return an error.
   @$pb.TagNumber(5)
-  $core.List<$3285.LocationInfo> get locationCountryFilters => $_getList(4);
+  $core.List<$3286.LocationInfo> get locationCountryFilters => $_getList(4);
 
   /// If present, potential YouTube reach estimates within the specified market
   /// will be returned for attributes for which they are available.  Reach is
@@ -776,15 +776,15 @@ class ListAudienceInsightsAttributesRequest extends $pb.GeneratedMessage {
   /// IN_MARKET_USER_INTEREST dimensions, and may not be available for every
   /// attribute of those dimensions in every market.
   @$pb.TagNumber(6)
-  $3285.LocationInfo get youtubeReachLocation => $_getN(5);
+  $3286.LocationInfo get youtubeReachLocation => $_getN(5);
   @$pb.TagNumber(6)
-  set youtubeReachLocation($3285.LocationInfo v) { setField(6, v); }
+  set youtubeReachLocation($3286.LocationInfo v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasYoutubeReachLocation() => $_has(5);
   @$pb.TagNumber(6)
   void clearYoutubeReachLocation() => clearField(6);
   @$pb.TagNumber(6)
-  $3285.LocationInfo ensureYoutubeReachLocation() => $_ensure(5);
+  $3286.LocationInfo ensureYoutubeReachLocation() => $_ensure(5);
 }
 
 /// Response message for
@@ -873,7 +873,7 @@ class ListInsightsEligibleDatesRequest extends $pb.GeneratedMessage {
 class ListInsightsEligibleDatesResponse extends $pb.GeneratedMessage {
   factory ListInsightsEligibleDatesResponse({
     $core.Iterable<$core.String>? dataMonths,
-    $3315.DateRange? lastThirtyDays,
+    $3316.DateRange? lastThirtyDays,
   }) {
     final $result = create();
     if (dataMonths != null) {
@@ -890,7 +890,7 @@ class ListInsightsEligibleDatesResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInsightsEligibleDatesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'dataMonths')
-    ..aOM<$3315.DateRange>(2, _omitFieldNames ? '' : 'lastThirtyDays', subBuilder: $3315.DateRange.create)
+    ..aOM<$3316.DateRange>(2, _omitFieldNames ? '' : 'lastThirtyDays', subBuilder: $3316.DateRange.create)
     ..hasRequiredFields = false
   ;
 
@@ -925,15 +925,15 @@ class ListInsightsEligibleDatesResponse extends $pb.GeneratedMessage {
   /// [AudienceInsightsService.GenerateAudienceCompositionInsights][google.ads.googleads.v17.services.AudienceInsightsService.GenerateAudienceCompositionInsights]
   /// requests that have no data_month set.
   @$pb.TagNumber(2)
-  $3315.DateRange get lastThirtyDays => $_getN(1);
+  $3316.DateRange get lastThirtyDays => $_getN(1);
   @$pb.TagNumber(2)
-  set lastThirtyDays($3315.DateRange v) { setField(2, v); }
+  set lastThirtyDays($3316.DateRange v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLastThirtyDays() => $_has(1);
   @$pb.TagNumber(2)
   void clearLastThirtyDays() => clearField(2);
   @$pb.TagNumber(2)
-  $3315.DateRange ensureLastThirtyDays() => $_ensure(1);
+  $3316.DateRange ensureLastThirtyDays() => $_ensure(1);
 }
 
 /// Request message for
@@ -941,9 +941,9 @@ class ListInsightsEligibleDatesResponse extends $pb.GeneratedMessage {
 class GenerateAudienceOverlapInsightsRequest extends $pb.GeneratedMessage {
   factory GenerateAudienceOverlapInsightsRequest({
     $core.String? customerId,
-    $3285.LocationInfo? countryLocation,
+    $3286.LocationInfo? countryLocation,
     AudienceInsightsAttribute? primaryAttribute,
-    $core.Iterable<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>? dimensions,
+    $core.Iterable<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>? dimensions,
     $core.String? customerInsightsGroup,
   }) {
     final $result = create();
@@ -970,9 +970,9 @@ class GenerateAudienceOverlapInsightsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateAudienceOverlapInsightsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..aOM<$3285.LocationInfo>(2, _omitFieldNames ? '' : 'countryLocation', subBuilder: $3285.LocationInfo.create)
+    ..aOM<$3286.LocationInfo>(2, _omitFieldNames ? '' : 'countryLocation', subBuilder: $3286.LocationInfo.create)
     ..aOM<AudienceInsightsAttribute>(3, _omitFieldNames ? '' : 'primaryAttribute', subBuilder: AudienceInsightsAttribute.create)
-    ..pc<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(4, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values, defaultEnumValue: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED)
+    ..pc<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(4, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values, defaultEnumValue: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED)
     ..aOS(5, _omitFieldNames ? '' : 'customerInsightsGroup')
     ..hasRequiredFields = false
   ;
@@ -1011,15 +1011,15 @@ class GenerateAudienceOverlapInsightsRequest extends $pb.GeneratedMessage {
   /// Required. The country in which to calculate the sizes and overlaps of
   /// audiences.
   @$pb.TagNumber(2)
-  $3285.LocationInfo get countryLocation => $_getN(1);
+  $3286.LocationInfo get countryLocation => $_getN(1);
   @$pb.TagNumber(2)
-  set countryLocation($3285.LocationInfo v) { setField(2, v); }
+  set countryLocation($3286.LocationInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCountryLocation() => $_has(1);
   @$pb.TagNumber(2)
   void clearCountryLocation() => clearField(2);
   @$pb.TagNumber(2)
-  $3285.LocationInfo ensureCountryLocation() => $_ensure(1);
+  $3286.LocationInfo ensureCountryLocation() => $_ensure(1);
 
   /// Required. The audience attribute that should be intersected with all other
   /// eligible audiences.  This must be an Affinity or In-Market UserInterest, an
@@ -1039,7 +1039,7 @@ class GenerateAudienceOverlapInsightsRequest extends $pb.GeneratedMessage {
   /// the primary_attribute. The values must be a subset of
   /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, AGE_RANGE and GENDER.
   @$pb.TagNumber(4)
-  $core.List<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension> get dimensions => $_getList(3);
+  $core.List<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension> get dimensions => $_getList(3);
 
   /// The name of the customer being planned for.  This is a user-defined value.
   @$pb.TagNumber(5)
@@ -1122,7 +1122,7 @@ class GenerateAudienceOverlapInsightsResponse extends $pb.GeneratedMessage {
 /// [GenerateAudienceOverlapInsightsResponse][google.ads.googleads.v17.services.GenerateAudienceOverlapInsightsResponse].
 class DimensionOverlapResult extends $pb.GeneratedMessage {
   factory DimensionOverlapResult({
-    $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension? dimension,
+    $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension? dimension,
     $core.Iterable<AudienceOverlapItem>? items,
   }) {
     final $result = create();
@@ -1139,7 +1139,7 @@ class DimensionOverlapResult extends $pb.GeneratedMessage {
   factory DimensionOverlapResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DimensionOverlapResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(1, _omitFieldNames ? '' : 'dimension', $pb.PbFieldType.OE, defaultOrMaker: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED, valueOf: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values)
+    ..e<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(1, _omitFieldNames ? '' : 'dimension', $pb.PbFieldType.OE, defaultOrMaker: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED, valueOf: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values)
     ..pc<AudienceOverlapItem>(2, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: AudienceOverlapItem.create)
     ..hasRequiredFields = false
   ;
@@ -1167,9 +1167,9 @@ class DimensionOverlapResult extends $pb.GeneratedMessage {
 
   /// The dimension of all the attributes in this section.
   @$pb.TagNumber(1)
-  $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension get dimension => $_getN(0);
+  $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension get dimension => $_getN(0);
   @$pb.TagNumber(1)
-  set dimension($3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension v) { setField(1, v); }
+  set dimension($3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDimension() => $_has(0);
   @$pb.TagNumber(1)
@@ -1270,16 +1270,16 @@ enum AudienceInsightsAttribute_Attribute {
 /// audience.
 class AudienceInsightsAttribute extends $pb.GeneratedMessage {
   factory AudienceInsightsAttribute({
-    $3285.AgeRangeInfo? ageRange,
-    $3285.GenderInfo? gender,
-    $3285.LocationInfo? location,
-    $3285.UserInterestInfo? userInterest,
+    $3286.AgeRangeInfo? ageRange,
+    $3286.GenderInfo? gender,
+    $3286.LocationInfo? location,
+    $3286.UserInterestInfo? userInterest,
     AudienceInsightsEntity? entity,
     AudienceInsightsCategory? category,
     AudienceInsightsDynamicLineup? dynamicLineup,
-    $3285.ParentalStatusInfo? parentalStatus,
-    $3285.IncomeRangeInfo? incomeRange,
-    $3285.YouTubeChannelInfo? youtubeChannel,
+    $3286.ParentalStatusInfo? parentalStatus,
+    $3286.IncomeRangeInfo? incomeRange,
+    $3286.YouTubeChannelInfo? youtubeChannel,
   }) {
     final $result = create();
     if (ageRange != null) {
@@ -1333,16 +1333,16 @@ class AudienceInsightsAttribute extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudienceInsightsAttribute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-    ..aOM<$3285.AgeRangeInfo>(1, _omitFieldNames ? '' : 'ageRange', subBuilder: $3285.AgeRangeInfo.create)
-    ..aOM<$3285.GenderInfo>(2, _omitFieldNames ? '' : 'gender', subBuilder: $3285.GenderInfo.create)
-    ..aOM<$3285.LocationInfo>(3, _omitFieldNames ? '' : 'location', subBuilder: $3285.LocationInfo.create)
-    ..aOM<$3285.UserInterestInfo>(4, _omitFieldNames ? '' : 'userInterest', subBuilder: $3285.UserInterestInfo.create)
+    ..aOM<$3286.AgeRangeInfo>(1, _omitFieldNames ? '' : 'ageRange', subBuilder: $3286.AgeRangeInfo.create)
+    ..aOM<$3286.GenderInfo>(2, _omitFieldNames ? '' : 'gender', subBuilder: $3286.GenderInfo.create)
+    ..aOM<$3286.LocationInfo>(3, _omitFieldNames ? '' : 'location', subBuilder: $3286.LocationInfo.create)
+    ..aOM<$3286.UserInterestInfo>(4, _omitFieldNames ? '' : 'userInterest', subBuilder: $3286.UserInterestInfo.create)
     ..aOM<AudienceInsightsEntity>(5, _omitFieldNames ? '' : 'entity', subBuilder: AudienceInsightsEntity.create)
     ..aOM<AudienceInsightsCategory>(6, _omitFieldNames ? '' : 'category', subBuilder: AudienceInsightsCategory.create)
     ..aOM<AudienceInsightsDynamicLineup>(7, _omitFieldNames ? '' : 'dynamicLineup', subBuilder: AudienceInsightsDynamicLineup.create)
-    ..aOM<$3285.ParentalStatusInfo>(8, _omitFieldNames ? '' : 'parentalStatus', subBuilder: $3285.ParentalStatusInfo.create)
-    ..aOM<$3285.IncomeRangeInfo>(9, _omitFieldNames ? '' : 'incomeRange', subBuilder: $3285.IncomeRangeInfo.create)
-    ..aOM<$3285.YouTubeChannelInfo>(10, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3285.YouTubeChannelInfo.create)
+    ..aOM<$3286.ParentalStatusInfo>(8, _omitFieldNames ? '' : 'parentalStatus', subBuilder: $3286.ParentalStatusInfo.create)
+    ..aOM<$3286.IncomeRangeInfo>(9, _omitFieldNames ? '' : 'incomeRange', subBuilder: $3286.IncomeRangeInfo.create)
+    ..aOM<$3286.YouTubeChannelInfo>(10, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3286.YouTubeChannelInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -1372,51 +1372,51 @@ class AudienceInsightsAttribute extends $pb.GeneratedMessage {
 
   /// An audience attribute defined by an age range.
   @$pb.TagNumber(1)
-  $3285.AgeRangeInfo get ageRange => $_getN(0);
+  $3286.AgeRangeInfo get ageRange => $_getN(0);
   @$pb.TagNumber(1)
-  set ageRange($3285.AgeRangeInfo v) { setField(1, v); }
+  set ageRange($3286.AgeRangeInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAgeRange() => $_has(0);
   @$pb.TagNumber(1)
   void clearAgeRange() => clearField(1);
   @$pb.TagNumber(1)
-  $3285.AgeRangeInfo ensureAgeRange() => $_ensure(0);
+  $3286.AgeRangeInfo ensureAgeRange() => $_ensure(0);
 
   /// An audience attribute defined by a gender.
   @$pb.TagNumber(2)
-  $3285.GenderInfo get gender => $_getN(1);
+  $3286.GenderInfo get gender => $_getN(1);
   @$pb.TagNumber(2)
-  set gender($3285.GenderInfo v) { setField(2, v); }
+  set gender($3286.GenderInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGender() => $_has(1);
   @$pb.TagNumber(2)
   void clearGender() => clearField(2);
   @$pb.TagNumber(2)
-  $3285.GenderInfo ensureGender() => $_ensure(1);
+  $3286.GenderInfo ensureGender() => $_ensure(1);
 
   /// An audience attribute defined by a geographic location.
   @$pb.TagNumber(3)
-  $3285.LocationInfo get location => $_getN(2);
+  $3286.LocationInfo get location => $_getN(2);
   @$pb.TagNumber(3)
-  set location($3285.LocationInfo v) { setField(3, v); }
+  set location($3286.LocationInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLocation() => $_has(2);
   @$pb.TagNumber(3)
   void clearLocation() => clearField(3);
   @$pb.TagNumber(3)
-  $3285.LocationInfo ensureLocation() => $_ensure(2);
+  $3286.LocationInfo ensureLocation() => $_ensure(2);
 
   /// An Affinity or In-Market audience.
   @$pb.TagNumber(4)
-  $3285.UserInterestInfo get userInterest => $_getN(3);
+  $3286.UserInterestInfo get userInterest => $_getN(3);
   @$pb.TagNumber(4)
-  set userInterest($3285.UserInterestInfo v) { setField(4, v); }
+  set userInterest($3286.UserInterestInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUserInterest() => $_has(3);
   @$pb.TagNumber(4)
   void clearUserInterest() => clearField(4);
   @$pb.TagNumber(4)
-  $3285.UserInterestInfo ensureUserInterest() => $_ensure(3);
+  $3286.UserInterestInfo ensureUserInterest() => $_ensure(3);
 
   /// An audience attribute defined by interest in a topic represented by a
   /// Knowledge Graph entity.
@@ -1458,39 +1458,39 @@ class AudienceInsightsAttribute extends $pb.GeneratedMessage {
 
   /// A Parental Status value (parent, or not a parent).
   @$pb.TagNumber(8)
-  $3285.ParentalStatusInfo get parentalStatus => $_getN(7);
+  $3286.ParentalStatusInfo get parentalStatus => $_getN(7);
   @$pb.TagNumber(8)
-  set parentalStatus($3285.ParentalStatusInfo v) { setField(8, v); }
+  set parentalStatus($3286.ParentalStatusInfo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasParentalStatus() => $_has(7);
   @$pb.TagNumber(8)
   void clearParentalStatus() => clearField(8);
   @$pb.TagNumber(8)
-  $3285.ParentalStatusInfo ensureParentalStatus() => $_ensure(7);
+  $3286.ParentalStatusInfo ensureParentalStatus() => $_ensure(7);
 
   /// A household income percentile range.
   @$pb.TagNumber(9)
-  $3285.IncomeRangeInfo get incomeRange => $_getN(8);
+  $3286.IncomeRangeInfo get incomeRange => $_getN(8);
   @$pb.TagNumber(9)
-  set incomeRange($3285.IncomeRangeInfo v) { setField(9, v); }
+  set incomeRange($3286.IncomeRangeInfo v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasIncomeRange() => $_has(8);
   @$pb.TagNumber(9)
   void clearIncomeRange() => clearField(9);
   @$pb.TagNumber(9)
-  $3285.IncomeRangeInfo ensureIncomeRange() => $_ensure(8);
+  $3286.IncomeRangeInfo ensureIncomeRange() => $_ensure(8);
 
   /// A YouTube channel.
   @$pb.TagNumber(10)
-  $3285.YouTubeChannelInfo get youtubeChannel => $_getN(9);
+  $3286.YouTubeChannelInfo get youtubeChannel => $_getN(9);
   @$pb.TagNumber(10)
-  set youtubeChannel($3285.YouTubeChannelInfo v) { setField(10, v); }
+  set youtubeChannel($3286.YouTubeChannelInfo v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasYoutubeChannel() => $_has(9);
   @$pb.TagNumber(10)
   void clearYoutubeChannel() => clearField(10);
   @$pb.TagNumber(10)
-  $3285.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(9);
+  $3286.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(9);
 }
 
 enum AudienceInsightsTopic_Topic {
@@ -1738,11 +1738,11 @@ class AudienceInsightsDynamicLineup extends $pb.GeneratedMessage {
 /// A description of an audience used for requesting insights.
 class BasicInsightsAudience extends $pb.GeneratedMessage {
   factory BasicInsightsAudience({
-    $core.Iterable<$3285.LocationInfo>? countryLocation,
-    $core.Iterable<$3285.LocationInfo>? subCountryLocations,
-    $3285.GenderInfo? gender,
-    $core.Iterable<$3285.AgeRangeInfo>? ageRanges,
-    $core.Iterable<$3285.UserInterestInfo>? userInterests,
+    $core.Iterable<$3286.LocationInfo>? countryLocation,
+    $core.Iterable<$3286.LocationInfo>? subCountryLocations,
+    $3286.GenderInfo? gender,
+    $core.Iterable<$3286.AgeRangeInfo>? ageRanges,
+    $core.Iterable<$3286.UserInterestInfo>? userInterests,
     $core.Iterable<AudienceInsightsTopic>? topics,
   }) {
     final $result = create();
@@ -1771,11 +1771,11 @@ class BasicInsightsAudience extends $pb.GeneratedMessage {
   factory BasicInsightsAudience.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BasicInsightsAudience', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..pc<$3285.LocationInfo>(1, _omitFieldNames ? '' : 'countryLocation', $pb.PbFieldType.PM, subBuilder: $3285.LocationInfo.create)
-    ..pc<$3285.LocationInfo>(2, _omitFieldNames ? '' : 'subCountryLocations', $pb.PbFieldType.PM, subBuilder: $3285.LocationInfo.create)
-    ..aOM<$3285.GenderInfo>(3, _omitFieldNames ? '' : 'gender', subBuilder: $3285.GenderInfo.create)
-    ..pc<$3285.AgeRangeInfo>(4, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.PM, subBuilder: $3285.AgeRangeInfo.create)
-    ..pc<$3285.UserInterestInfo>(5, _omitFieldNames ? '' : 'userInterests', $pb.PbFieldType.PM, subBuilder: $3285.UserInterestInfo.create)
+    ..pc<$3286.LocationInfo>(1, _omitFieldNames ? '' : 'countryLocation', $pb.PbFieldType.PM, subBuilder: $3286.LocationInfo.create)
+    ..pc<$3286.LocationInfo>(2, _omitFieldNames ? '' : 'subCountryLocations', $pb.PbFieldType.PM, subBuilder: $3286.LocationInfo.create)
+    ..aOM<$3286.GenderInfo>(3, _omitFieldNames ? '' : 'gender', subBuilder: $3286.GenderInfo.create)
+    ..pc<$3286.AgeRangeInfo>(4, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.PM, subBuilder: $3286.AgeRangeInfo.create)
+    ..pc<$3286.UserInterestInfo>(5, _omitFieldNames ? '' : 'userInterests', $pb.PbFieldType.PM, subBuilder: $3286.UserInterestInfo.create)
     ..pc<AudienceInsightsTopic>(6, _omitFieldNames ? '' : 'topics', $pb.PbFieldType.PM, subBuilder: AudienceInsightsTopic.create)
     ..hasRequiredFields = false
   ;
@@ -1803,35 +1803,35 @@ class BasicInsightsAudience extends $pb.GeneratedMessage {
 
   /// Required. The countries for this audience.
   @$pb.TagNumber(1)
-  $core.List<$3285.LocationInfo> get countryLocation => $_getList(0);
+  $core.List<$3286.LocationInfo> get countryLocation => $_getList(0);
 
   /// Sub-country geographic location attributes.  If present, each of these
   /// must be contained in one of the countries in this audience.
   @$pb.TagNumber(2)
-  $core.List<$3285.LocationInfo> get subCountryLocations => $_getList(1);
+  $core.List<$3286.LocationInfo> get subCountryLocations => $_getList(1);
 
   /// Gender for the audience.  If absent, the audience does not restrict by
   /// gender.
   @$pb.TagNumber(3)
-  $3285.GenderInfo get gender => $_getN(2);
+  $3286.GenderInfo get gender => $_getN(2);
   @$pb.TagNumber(3)
-  set gender($3285.GenderInfo v) { setField(3, v); }
+  set gender($3286.GenderInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGender() => $_has(2);
   @$pb.TagNumber(3)
   void clearGender() => clearField(3);
   @$pb.TagNumber(3)
-  $3285.GenderInfo ensureGender() => $_ensure(2);
+  $3286.GenderInfo ensureGender() => $_ensure(2);
 
   /// Age ranges for the audience.  If absent, the audience represents all people
   /// over 18 that match the other attributes.
   @$pb.TagNumber(4)
-  $core.List<$3285.AgeRangeInfo> get ageRanges => $_getList(3);
+  $core.List<$3286.AgeRangeInfo> get ageRanges => $_getList(3);
 
   /// User interests defining this audience.  Affinity and In-Market audiences
   /// are supported.
   @$pb.TagNumber(5)
-  $core.List<$3285.UserInterestInfo> get userInterests => $_getList(4);
+  $core.List<$3286.UserInterestInfo> get userInterests => $_getList(4);
 
   /// Topics, represented by Knowledge Graph entities and/or Product & Service
   /// categories, that this audience is interested in.
@@ -1850,7 +1850,7 @@ enum AudienceInsightsAttributeMetadata_DimensionMetadata {
 /// search.
 class AudienceInsightsAttributeMetadata extends $pb.GeneratedMessage {
   factory AudienceInsightsAttributeMetadata({
-    $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension? dimension,
+    $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension? dimension,
     AudienceInsightsAttribute? attribute,
     $core.String? displayName,
     $core.String? displayInfo,
@@ -1898,7 +1898,7 @@ class AudienceInsightsAttributeMetadata extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudienceInsightsAttributeMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [6, 7, 8])
-    ..e<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(1, _omitFieldNames ? '' : 'dimension', $pb.PbFieldType.OE, defaultOrMaker: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED, valueOf: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values)
+    ..e<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(1, _omitFieldNames ? '' : 'dimension', $pb.PbFieldType.OE, defaultOrMaker: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED, valueOf: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values)
     ..aOM<AudienceInsightsAttribute>(2, _omitFieldNames ? '' : 'attribute', subBuilder: AudienceInsightsAttribute.create)
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(5, _omitFieldNames ? '' : 'displayInfo')
@@ -1935,9 +1935,9 @@ class AudienceInsightsAttributeMetadata extends $pb.GeneratedMessage {
 
   /// The type of the attribute.
   @$pb.TagNumber(1)
-  $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension get dimension => $_getN(0);
+  $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension get dimension => $_getN(0);
   @$pb.TagNumber(1)
-  set dimension($3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension v) { setField(1, v); }
+  set dimension($3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDimension() => $_has(0);
   @$pb.TagNumber(1)
@@ -2087,7 +2087,7 @@ class YouTubeChannelAttributeMetadata extends $pb.GeneratedMessage {
 /// A YouTube channel returned as an example of the content in a lineup.
 class DynamicLineupAttributeMetadata_SampleChannel extends $pb.GeneratedMessage {
   factory DynamicLineupAttributeMetadata_SampleChannel({
-    $3285.YouTubeChannelInfo? youtubeChannel,
+    $3286.YouTubeChannelInfo? youtubeChannel,
     $core.String? displayName,
     YouTubeChannelAttributeMetadata? youtubeChannelMetadata,
   }) {
@@ -2108,7 +2108,7 @@ class DynamicLineupAttributeMetadata_SampleChannel extends $pb.GeneratedMessage 
   factory DynamicLineupAttributeMetadata_SampleChannel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DynamicLineupAttributeMetadata.SampleChannel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$3285.YouTubeChannelInfo>(1, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3285.YouTubeChannelInfo.create)
+    ..aOM<$3286.YouTubeChannelInfo>(1, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3286.YouTubeChannelInfo.create)
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<YouTubeChannelAttributeMetadata>(3, _omitFieldNames ? '' : 'youtubeChannelMetadata', subBuilder: YouTubeChannelAttributeMetadata.create)
     ..hasRequiredFields = false
@@ -2137,15 +2137,15 @@ class DynamicLineupAttributeMetadata_SampleChannel extends $pb.GeneratedMessage 
 
   /// A YouTube channel.
   @$pb.TagNumber(1)
-  $3285.YouTubeChannelInfo get youtubeChannel => $_getN(0);
+  $3286.YouTubeChannelInfo get youtubeChannel => $_getN(0);
   @$pb.TagNumber(1)
-  set youtubeChannel($3285.YouTubeChannelInfo v) { setField(1, v); }
+  set youtubeChannel($3286.YouTubeChannelInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasYoutubeChannel() => $_has(0);
   @$pb.TagNumber(1)
   void clearYoutubeChannel() => clearField(1);
   @$pb.TagNumber(1)
-  $3285.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(0);
+  $3286.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(0);
 
   /// The name of the sample channel.
   @$pb.TagNumber(2)
@@ -2173,7 +2173,7 @@ class DynamicLineupAttributeMetadata_SampleChannel extends $pb.GeneratedMessage 
 /// Metadata associated with a Dynamic Lineup attribute.
 class DynamicLineupAttributeMetadata extends $pb.GeneratedMessage {
   factory DynamicLineupAttributeMetadata({
-    $3285.LocationInfo? inventoryCountry,
+    $3286.LocationInfo? inventoryCountry,
     $fixnum.Int64? medianMonthlyInventory,
     $fixnum.Int64? channelCountLowerBound,
     $fixnum.Int64? channelCountUpperBound,
@@ -2202,7 +2202,7 @@ class DynamicLineupAttributeMetadata extends $pb.GeneratedMessage {
   factory DynamicLineupAttributeMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DynamicLineupAttributeMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$3285.LocationInfo>(1, _omitFieldNames ? '' : 'inventoryCountry', subBuilder: $3285.LocationInfo.create)
+    ..aOM<$3286.LocationInfo>(1, _omitFieldNames ? '' : 'inventoryCountry', subBuilder: $3286.LocationInfo.create)
     ..aInt64(2, _omitFieldNames ? '' : 'medianMonthlyInventory')
     ..aInt64(3, _omitFieldNames ? '' : 'channelCountLowerBound')
     ..aInt64(4, _omitFieldNames ? '' : 'channelCountUpperBound')
@@ -2233,15 +2233,15 @@ class DynamicLineupAttributeMetadata extends $pb.GeneratedMessage {
 
   /// The national market associated with the lineup.
   @$pb.TagNumber(1)
-  $3285.LocationInfo get inventoryCountry => $_getN(0);
+  $3286.LocationInfo get inventoryCountry => $_getN(0);
   @$pb.TagNumber(1)
-  set inventoryCountry($3285.LocationInfo v) { setField(1, v); }
+  set inventoryCountry($3286.LocationInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInventoryCountry() => $_has(0);
   @$pb.TagNumber(1)
   void clearInventoryCountry() => clearField(1);
   @$pb.TagNumber(1)
-  $3285.LocationInfo ensureInventoryCountry() => $_ensure(0);
+  $3286.LocationInfo ensureInventoryCountry() => $_ensure(0);
 
   /// The median number of impressions per month on this lineup.
   @$pb.TagNumber(2)
@@ -2281,7 +2281,7 @@ class DynamicLineupAttributeMetadata extends $pb.GeneratedMessage {
 /// Metadata associated with a Location attribute.
 class LocationAttributeMetadata extends $pb.GeneratedMessage {
   factory LocationAttributeMetadata({
-    $3285.LocationInfo? countryLocation,
+    $3286.LocationInfo? countryLocation,
   }) {
     final $result = create();
     if (countryLocation != null) {
@@ -2294,7 +2294,7 @@ class LocationAttributeMetadata extends $pb.GeneratedMessage {
   factory LocationAttributeMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationAttributeMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$3285.LocationInfo>(1, _omitFieldNames ? '' : 'countryLocation', subBuilder: $3285.LocationInfo.create)
+    ..aOM<$3286.LocationInfo>(1, _omitFieldNames ? '' : 'countryLocation', subBuilder: $3286.LocationInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -2321,27 +2321,27 @@ class LocationAttributeMetadata extends $pb.GeneratedMessage {
 
   /// The country location of the sub country location.
   @$pb.TagNumber(1)
-  $3285.LocationInfo get countryLocation => $_getN(0);
+  $3286.LocationInfo get countryLocation => $_getN(0);
   @$pb.TagNumber(1)
-  set countryLocation($3285.LocationInfo v) { setField(1, v); }
+  set countryLocation($3286.LocationInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCountryLocation() => $_has(0);
   @$pb.TagNumber(1)
   void clearCountryLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $3285.LocationInfo ensureCountryLocation() => $_ensure(0);
+  $3286.LocationInfo ensureCountryLocation() => $_ensure(0);
 }
 
 /// A set of users, defined by various characteristics, for which insights can
 /// be requested in AudienceInsightsService.
 class InsightsAudience extends $pb.GeneratedMessage {
   factory InsightsAudience({
-    $core.Iterable<$3285.LocationInfo>? countryLocations,
-    $core.Iterable<$3285.LocationInfo>? subCountryLocations,
-    $3285.GenderInfo? gender,
-    $core.Iterable<$3285.AgeRangeInfo>? ageRanges,
-    $3285.ParentalStatusInfo? parentalStatus,
-    $core.Iterable<$3285.IncomeRangeInfo>? incomeRanges,
+    $core.Iterable<$3286.LocationInfo>? countryLocations,
+    $core.Iterable<$3286.LocationInfo>? subCountryLocations,
+    $3286.GenderInfo? gender,
+    $core.Iterable<$3286.AgeRangeInfo>? ageRanges,
+    $3286.ParentalStatusInfo? parentalStatus,
+    $core.Iterable<$3286.IncomeRangeInfo>? incomeRanges,
     $core.Iterable<AudienceInsightsDynamicLineup>? dynamicLineups,
     $core.Iterable<InsightsAudienceAttributeGroup>? topicAudienceCombinations,
   }) {
@@ -2377,12 +2377,12 @@ class InsightsAudience extends $pb.GeneratedMessage {
   factory InsightsAudience.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsightsAudience', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..pc<$3285.LocationInfo>(1, _omitFieldNames ? '' : 'countryLocations', $pb.PbFieldType.PM, subBuilder: $3285.LocationInfo.create)
-    ..pc<$3285.LocationInfo>(2, _omitFieldNames ? '' : 'subCountryLocations', $pb.PbFieldType.PM, subBuilder: $3285.LocationInfo.create)
-    ..aOM<$3285.GenderInfo>(3, _omitFieldNames ? '' : 'gender', subBuilder: $3285.GenderInfo.create)
-    ..pc<$3285.AgeRangeInfo>(4, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.PM, subBuilder: $3285.AgeRangeInfo.create)
-    ..aOM<$3285.ParentalStatusInfo>(5, _omitFieldNames ? '' : 'parentalStatus', subBuilder: $3285.ParentalStatusInfo.create)
-    ..pc<$3285.IncomeRangeInfo>(6, _omitFieldNames ? '' : 'incomeRanges', $pb.PbFieldType.PM, subBuilder: $3285.IncomeRangeInfo.create)
+    ..pc<$3286.LocationInfo>(1, _omitFieldNames ? '' : 'countryLocations', $pb.PbFieldType.PM, subBuilder: $3286.LocationInfo.create)
+    ..pc<$3286.LocationInfo>(2, _omitFieldNames ? '' : 'subCountryLocations', $pb.PbFieldType.PM, subBuilder: $3286.LocationInfo.create)
+    ..aOM<$3286.GenderInfo>(3, _omitFieldNames ? '' : 'gender', subBuilder: $3286.GenderInfo.create)
+    ..pc<$3286.AgeRangeInfo>(4, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.PM, subBuilder: $3286.AgeRangeInfo.create)
+    ..aOM<$3286.ParentalStatusInfo>(5, _omitFieldNames ? '' : 'parentalStatus', subBuilder: $3286.ParentalStatusInfo.create)
+    ..pc<$3286.IncomeRangeInfo>(6, _omitFieldNames ? '' : 'incomeRanges', $pb.PbFieldType.PM, subBuilder: $3286.IncomeRangeInfo.create)
     ..pc<AudienceInsightsDynamicLineup>(7, _omitFieldNames ? '' : 'dynamicLineups', $pb.PbFieldType.PM, subBuilder: AudienceInsightsDynamicLineup.create)
     ..pc<InsightsAudienceAttributeGroup>(8, _omitFieldNames ? '' : 'topicAudienceCombinations', $pb.PbFieldType.PM, subBuilder: InsightsAudienceAttributeGroup.create)
     ..hasRequiredFields = false
@@ -2411,49 +2411,49 @@ class InsightsAudience extends $pb.GeneratedMessage {
 
   /// Required. The countries for the audience.
   @$pb.TagNumber(1)
-  $core.List<$3285.LocationInfo> get countryLocations => $_getList(0);
+  $core.List<$3286.LocationInfo> get countryLocations => $_getList(0);
 
   /// Sub-country geographic location attributes.  If present, each of these
   /// must be contained in one of the countries in this audience.  If absent, the
   /// audience is geographically to the country_locations and no further.
   @$pb.TagNumber(2)
-  $core.List<$3285.LocationInfo> get subCountryLocations => $_getList(1);
+  $core.List<$3286.LocationInfo> get subCountryLocations => $_getList(1);
 
   /// Gender for the audience.  If absent, the audience does not restrict by
   /// gender.
   @$pb.TagNumber(3)
-  $3285.GenderInfo get gender => $_getN(2);
+  $3286.GenderInfo get gender => $_getN(2);
   @$pb.TagNumber(3)
-  set gender($3285.GenderInfo v) { setField(3, v); }
+  set gender($3286.GenderInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGender() => $_has(2);
   @$pb.TagNumber(3)
   void clearGender() => clearField(3);
   @$pb.TagNumber(3)
-  $3285.GenderInfo ensureGender() => $_ensure(2);
+  $3286.GenderInfo ensureGender() => $_ensure(2);
 
   /// Age ranges for the audience.  If absent, the audience represents all people
   /// over 18 that match the other attributes.
   @$pb.TagNumber(4)
-  $core.List<$3285.AgeRangeInfo> get ageRanges => $_getList(3);
+  $core.List<$3286.AgeRangeInfo> get ageRanges => $_getList(3);
 
   /// Parental status for the audience.  If absent, the audience does not
   /// restrict by parental status.
   @$pb.TagNumber(5)
-  $3285.ParentalStatusInfo get parentalStatus => $_getN(4);
+  $3286.ParentalStatusInfo get parentalStatus => $_getN(4);
   @$pb.TagNumber(5)
-  set parentalStatus($3285.ParentalStatusInfo v) { setField(5, v); }
+  set parentalStatus($3286.ParentalStatusInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasParentalStatus() => $_has(4);
   @$pb.TagNumber(5)
   void clearParentalStatus() => clearField(5);
   @$pb.TagNumber(5)
-  $3285.ParentalStatusInfo ensureParentalStatus() => $_ensure(4);
+  $3286.ParentalStatusInfo ensureParentalStatus() => $_ensure(4);
 
   /// Household income percentile ranges for the audience.  If absent, the
   /// audience does not restrict by household income range.
   @$pb.TagNumber(6)
-  $core.List<$3285.IncomeRangeInfo> get incomeRanges => $_getList(5);
+  $core.List<$3286.IncomeRangeInfo> get incomeRanges => $_getList(5);
 
   /// Dynamic lineups representing the YouTube content viewed by the audience.
   @$pb.TagNumber(7)
@@ -2523,7 +2523,7 @@ class InsightsAudienceAttributeGroup extends $pb.GeneratedMessage {
 /// composition insights report.
 class AudienceCompositionSection extends $pb.GeneratedMessage {
   factory AudienceCompositionSection({
-    $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension? dimension,
+    $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension? dimension,
     $core.Iterable<AudienceCompositionAttribute>? topAttributes,
     $core.Iterable<AudienceCompositionAttributeCluster>? clusteredAttributes,
   }) {
@@ -2544,7 +2544,7 @@ class AudienceCompositionSection extends $pb.GeneratedMessage {
   factory AudienceCompositionSection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudienceCompositionSection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(1, _omitFieldNames ? '' : 'dimension', $pb.PbFieldType.OE, defaultOrMaker: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED, valueOf: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values)
+    ..e<$3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension>(1, _omitFieldNames ? '' : 'dimension', $pb.PbFieldType.OE, defaultOrMaker: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.UNSPECIFIED, valueOf: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.valueOf, enumValues: $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension.values)
     ..pc<AudienceCompositionAttribute>(3, _omitFieldNames ? '' : 'topAttributes', $pb.PbFieldType.PM, subBuilder: AudienceCompositionAttribute.create)
     ..pc<AudienceCompositionAttributeCluster>(4, _omitFieldNames ? '' : 'clusteredAttributes', $pb.PbFieldType.PM, subBuilder: AudienceCompositionAttributeCluster.create)
     ..hasRequiredFields = false
@@ -2573,9 +2573,9 @@ class AudienceCompositionSection extends $pb.GeneratedMessage {
 
   /// The type of the attributes in this section.
   @$pb.TagNumber(1)
-  $3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension get dimension => $_getN(0);
+  $3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension get dimension => $_getN(0);
   @$pb.TagNumber(1)
-  set dimension($3808.AudienceInsightsDimensionEnum_AudienceInsightsDimension v) { setField(1, v); }
+  set dimension($3809.AudienceInsightsDimensionEnum_AudienceInsightsDimension v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDimension() => $_has(0);
   @$pb.TagNumber(1)

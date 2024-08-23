@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/color.pb.dart' as $4199;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/color.pb.dart' as $4200;
 import 'document.pbenum.dart';
-import 'geometry.pb.dart' as $4517;
+import 'geometry.pb.dart' as $4519;
 
 export 'document.pbenum.dart';
 
@@ -179,8 +179,8 @@ class Document_Style_FontSize extends $pb.GeneratedMessage {
 class Document_Style extends $pb.GeneratedMessage {
   factory Document_Style({
     Document_TextAnchor? textAnchor,
-    $4199.Color? color,
-    $4199.Color? backgroundColor,
+    $4200.Color? color,
+    $4200.Color? backgroundColor,
     $core.String? fontWeight,
     $core.String? textStyle,
     $core.String? textDecoration,
@@ -216,8 +216,8 @@ class Document_Style extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.Style', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta1'), createEmptyInstance: create)
     ..aOM<Document_TextAnchor>(1, _omitFieldNames ? '' : 'textAnchor', subBuilder: Document_TextAnchor.create)
-    ..aOM<$4199.Color>(2, _omitFieldNames ? '' : 'color', subBuilder: $4199.Color.create)
-    ..aOM<$4199.Color>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4199.Color.create)
+    ..aOM<$4200.Color>(2, _omitFieldNames ? '' : 'color', subBuilder: $4200.Color.create)
+    ..aOM<$4200.Color>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4200.Color.create)
     ..aOS(4, _omitFieldNames ? '' : 'fontWeight')
     ..aOS(5, _omitFieldNames ? '' : 'textStyle')
     ..aOS(6, _omitFieldNames ? '' : 'textDecoration')
@@ -261,27 +261,27 @@ class Document_Style extends $pb.GeneratedMessage {
 
   /// Text color.
   @$pb.TagNumber(2)
-  $4199.Color get color => $_getN(1);
+  $4200.Color get color => $_getN(1);
   @$pb.TagNumber(2)
-  set color($4199.Color v) { setField(2, v); }
+  set color($4200.Color v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(2)
   void clearColor() => clearField(2);
   @$pb.TagNumber(2)
-  $4199.Color ensureColor() => $_ensure(1);
+  $4200.Color ensureColor() => $_ensure(1);
 
   /// Text background color.
   @$pb.TagNumber(3)
-  $4199.Color get backgroundColor => $_getN(2);
+  $4200.Color get backgroundColor => $_getN(2);
   @$pb.TagNumber(3)
-  set backgroundColor($4199.Color v) { setField(3, v); }
+  set backgroundColor($4200.Color v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $4199.Color ensureBackgroundColor() => $_ensure(2);
+  $4200.Color ensureBackgroundColor() => $_ensure(2);
 
   /// Font weight. Possible values are normal, bold, bolder, and lighter.
   /// https://www.w3schools.com/cssref/pr_font_weight.asp
@@ -417,7 +417,7 @@ class Document_Page_Layout extends $pb.GeneratedMessage {
   factory Document_Page_Layout({
     Document_TextAnchor? textAnchor,
     $core.double? confidence,
-    $4517.BoundingPoly? boundingPoly,
+    $4519.BoundingPoly? boundingPoly,
     Document_Page_Layout_Orientation? orientation,
   }) {
     final $result = create();
@@ -442,7 +442,7 @@ class Document_Page_Layout extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.Page.Layout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta1'), createEmptyInstance: create)
     ..aOM<Document_TextAnchor>(1, _omitFieldNames ? '' : 'textAnchor', subBuilder: Document_TextAnchor.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
-    ..aOM<$4517.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4517.BoundingPoly.create)
+    ..aOM<$4519.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4519.BoundingPoly.create)
     ..e<Document_Page_Layout_Orientation>(4, _omitFieldNames ? '' : 'orientation', $pb.PbFieldType.OE, defaultOrMaker: Document_Page_Layout_Orientation.ORIENTATION_UNSPECIFIED, valueOf: Document_Page_Layout_Orientation.valueOf, enumValues: Document_Page_Layout_Orientation.values)
     ..hasRequiredFields = false
   ;
@@ -498,15 +498,15 @@ class Document_Page_Layout extends $pb.GeneratedMessage {
   /// The bounding polygon for the
   /// [Layout][google.cloud.documentai.v1beta1.Document.Page.Layout].
   @$pb.TagNumber(3)
-  $4517.BoundingPoly get boundingPoly => $_getN(2);
+  $4519.BoundingPoly get boundingPoly => $_getN(2);
   @$pb.TagNumber(3)
-  set boundingPoly($4517.BoundingPoly v) { setField(3, v); }
+  set boundingPoly($4519.BoundingPoly v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBoundingPoly() => $_has(2);
   @$pb.TagNumber(3)
   void clearBoundingPoly() => clearField(3);
   @$pb.TagNumber(3)
-  $4517.BoundingPoly ensureBoundingPoly() => $_ensure(2);
+  $4519.BoundingPoly ensureBoundingPoly() => $_ensure(2);
 
   /// Detected orientation for the
   /// [Layout][google.cloud.documentai.v1beta1.Document.Page.Layout].
@@ -1813,7 +1813,7 @@ class Document extends $pb.GeneratedMessage {
     $core.Iterable<Document_Entity>? entities,
     $core.Iterable<Document_EntityRelation>? entityRelations,
     Document_ShardInfo? shardInfo,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (uri != null) {
@@ -1868,7 +1868,7 @@ class Document extends $pb.GeneratedMessage {
     ..pc<Document_Entity>(7, _omitFieldNames ? '' : 'entities', $pb.PbFieldType.PM, subBuilder: Document_Entity.create)
     ..pc<Document_EntityRelation>(8, _omitFieldNames ? '' : 'entityRelations', $pb.PbFieldType.PM, subBuilder: Document_EntityRelation.create)
     ..aOM<Document_ShardInfo>(9, _omitFieldNames ? '' : 'shardInfo', subBuilder: Document_ShardInfo.create)
-    ..aOM<$1795.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1980,15 +1980,15 @@ class Document extends $pb.GeneratedMessage {
 
   /// Any error that occurred while processing this document.
   @$pb.TagNumber(10)
-  $1795.Status get error => $_getN(9);
+  $1796.Status get error => $_getN(9);
   @$pb.TagNumber(10)
-  set error($1795.Status v) { setField(10, v); }
+  set error($1796.Status v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasError() => $_has(9);
   @$pb.TagNumber(10)
   void clearError() => clearField(10);
   @$pb.TagNumber(10)
-  $1795.Status ensureError() => $_ensure(9);
+  $1796.Status ensureError() => $_ensure(9);
 }
 
 

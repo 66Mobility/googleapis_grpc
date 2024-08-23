@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'access_report.pb.dart' as $4151;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'access_report.pb.dart' as $4152;
 import 'resources.pb.dart' as $406;
 import 'resources.pbenum.dart' as $406;
 
@@ -24,15 +24,15 @@ import 'resources.pbenum.dart' as $406;
 class RunAccessReportRequest extends $pb.GeneratedMessage {
   factory RunAccessReportRequest({
     $core.String? entity,
-    $core.Iterable<$4151.AccessDimension>? dimensions,
-    $core.Iterable<$4151.AccessMetric>? metrics,
-    $core.Iterable<$4151.AccessDateRange>? dateRanges,
-    $4151.AccessFilterExpression? dimensionFilter,
-    $4151.AccessFilterExpression? metricFilter,
+    $core.Iterable<$4152.AccessDimension>? dimensions,
+    $core.Iterable<$4152.AccessMetric>? metrics,
+    $core.Iterable<$4152.AccessDateRange>? dateRanges,
+    $4152.AccessFilterExpression? dimensionFilter,
+    $4152.AccessFilterExpression? metricFilter,
     $fixnum.Int64? offset,
     $fixnum.Int64? limit,
     $core.String? timeZone,
-    $core.Iterable<$4151.AccessOrderBy>? orderBys,
+    $core.Iterable<$4152.AccessOrderBy>? orderBys,
     $core.bool? returnEntityQuota,
     $core.bool? includeAllUsers,
     $core.bool? expandGroups,
@@ -85,15 +85,15 @@ class RunAccessReportRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunAccessReportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'entity')
-    ..pc<$4151.AccessDimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4151.AccessDimension.create)
-    ..pc<$4151.AccessMetric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4151.AccessMetric.create)
-    ..pc<$4151.AccessDateRange>(4, _omitFieldNames ? '' : 'dateRanges', $pb.PbFieldType.PM, subBuilder: $4151.AccessDateRange.create)
-    ..aOM<$4151.AccessFilterExpression>(5, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4151.AccessFilterExpression.create)
-    ..aOM<$4151.AccessFilterExpression>(6, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4151.AccessFilterExpression.create)
+    ..pc<$4152.AccessDimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4152.AccessDimension.create)
+    ..pc<$4152.AccessMetric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4152.AccessMetric.create)
+    ..pc<$4152.AccessDateRange>(4, _omitFieldNames ? '' : 'dateRanges', $pb.PbFieldType.PM, subBuilder: $4152.AccessDateRange.create)
+    ..aOM<$4152.AccessFilterExpression>(5, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4152.AccessFilterExpression.create)
+    ..aOM<$4152.AccessFilterExpression>(6, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4152.AccessFilterExpression.create)
     ..aInt64(7, _omitFieldNames ? '' : 'offset')
     ..aInt64(8, _omitFieldNames ? '' : 'limit')
     ..aOS(9, _omitFieldNames ? '' : 'timeZone')
-    ..pc<$4151.AccessOrderBy>(10, _omitFieldNames ? '' : 'orderBys', $pb.PbFieldType.PM, subBuilder: $4151.AccessOrderBy.create)
+    ..pc<$4152.AccessOrderBy>(10, _omitFieldNames ? '' : 'orderBys', $pb.PbFieldType.PM, subBuilder: $4152.AccessOrderBy.create)
     ..aOB(11, _omitFieldNames ? '' : 'returnEntityQuota')
     ..aOB(12, _omitFieldNames ? '' : 'includeAllUsers')
     ..aOB(13, _omitFieldNames ? '' : 'expandGroups')
@@ -141,12 +141,12 @@ class RunAccessReportRequest extends $pb.GeneratedMessage {
   /// The dimensions requested and displayed in the response. Requests are
   /// allowed up to 9 dimensions.
   @$pb.TagNumber(2)
-  $core.List<$4151.AccessDimension> get dimensions => $_getList(1);
+  $core.List<$4152.AccessDimension> get dimensions => $_getList(1);
 
   /// The metrics requested and displayed in the response. Requests are allowed
   /// up to 10 metrics.
   @$pb.TagNumber(3)
-  $core.List<$4151.AccessMetric> get metrics => $_getList(2);
+  $core.List<$4152.AccessMetric> get metrics => $_getList(2);
 
   /// Date ranges of access records to read. If multiple date ranges are
   /// requested, each response row will contain a zero based date range index. If
@@ -154,7 +154,7 @@ class RunAccessReportRequest extends $pb.GeneratedMessage {
   /// included in the response rows for both date ranges. Requests are allowed up
   /// to 2 date ranges.
   @$pb.TagNumber(4)
-  $core.List<$4151.AccessDateRange> get dateRanges => $_getList(3);
+  $core.List<$4152.AccessDateRange> get dateRanges => $_getList(3);
 
   /// Dimension filters let you restrict report response to specific
   /// dimension values which match the filter. For example, filtering on access
@@ -162,30 +162,30 @@ class RunAccessReportRequest extends $pb.GeneratedMessage {
   /// Filters](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#dimension_filters)
   /// for examples. Metrics cannot be used in this filter.
   @$pb.TagNumber(5)
-  $4151.AccessFilterExpression get dimensionFilter => $_getN(4);
+  $4152.AccessFilterExpression get dimensionFilter => $_getN(4);
   @$pb.TagNumber(5)
-  set dimensionFilter($4151.AccessFilterExpression v) { setField(5, v); }
+  set dimensionFilter($4152.AccessFilterExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDimensionFilter() => $_has(4);
   @$pb.TagNumber(5)
   void clearDimensionFilter() => clearField(5);
   @$pb.TagNumber(5)
-  $4151.AccessFilterExpression ensureDimensionFilter() => $_ensure(4);
+  $4152.AccessFilterExpression ensureDimensionFilter() => $_ensure(4);
 
   /// Metric filters allow you to restrict report response to specific metric
   /// values which match the filter. Metric filters are applied after aggregating
   /// the report's rows, similar to SQL having-clause. Dimensions cannot be used
   /// in this filter.
   @$pb.TagNumber(6)
-  $4151.AccessFilterExpression get metricFilter => $_getN(5);
+  $4152.AccessFilterExpression get metricFilter => $_getN(5);
   @$pb.TagNumber(6)
-  set metricFilter($4151.AccessFilterExpression v) { setField(6, v); }
+  set metricFilter($4152.AccessFilterExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMetricFilter() => $_has(5);
   @$pb.TagNumber(6)
   void clearMetricFilter() => clearField(6);
   @$pb.TagNumber(6)
-  $4151.AccessFilterExpression ensureMetricFilter() => $_ensure(5);
+  $4152.AccessFilterExpression ensureMetricFilter() => $_ensure(5);
 
   ///  The row count of the start row. The first row is counted as row 0. If
   ///  offset is unspecified, it is treated as 0. If offset is zero, then this
@@ -241,7 +241,7 @@ class RunAccessReportRequest extends $pb.GeneratedMessage {
 
   /// Specifies how rows are ordered in the response.
   @$pb.TagNumber(10)
-  $core.List<$4151.AccessOrderBy> get orderBys => $_getList(9);
+  $core.List<$4152.AccessOrderBy> get orderBys => $_getList(9);
 
   /// Toggles whether to return the current state of this Analytics Property's
   /// quota. Quota is returned in [AccessQuota](#AccessQuota). For account-level
@@ -286,11 +286,11 @@ class RunAccessReportRequest extends $pb.GeneratedMessage {
 /// The customized Data Access Record Report response.
 class RunAccessReportResponse extends $pb.GeneratedMessage {
   factory RunAccessReportResponse({
-    $core.Iterable<$4151.AccessDimensionHeader>? dimensionHeaders,
-    $core.Iterable<$4151.AccessMetricHeader>? metricHeaders,
-    $core.Iterable<$4151.AccessRow>? rows,
+    $core.Iterable<$4152.AccessDimensionHeader>? dimensionHeaders,
+    $core.Iterable<$4152.AccessMetricHeader>? metricHeaders,
+    $core.Iterable<$4152.AccessRow>? rows,
     $core.int? rowCount,
-    $4151.AccessQuota? quota,
+    $4152.AccessQuota? quota,
   }) {
     final $result = create();
     if (dimensionHeaders != null) {
@@ -315,11 +315,11 @@ class RunAccessReportResponse extends $pb.GeneratedMessage {
   factory RunAccessReportResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunAccessReportResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
-    ..pc<$4151.AccessDimensionHeader>(1, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4151.AccessDimensionHeader.create)
-    ..pc<$4151.AccessMetricHeader>(2, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4151.AccessMetricHeader.create)
-    ..pc<$4151.AccessRow>(3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4151.AccessRow.create)
+    ..pc<$4152.AccessDimensionHeader>(1, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4152.AccessDimensionHeader.create)
+    ..pc<$4152.AccessMetricHeader>(2, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4152.AccessMetricHeader.create)
+    ..pc<$4152.AccessRow>(3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4152.AccessRow.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'rowCount', $pb.PbFieldType.O3)
-    ..aOM<$4151.AccessQuota>(5, _omitFieldNames ? '' : 'quota', subBuilder: $4151.AccessQuota.create)
+    ..aOM<$4152.AccessQuota>(5, _omitFieldNames ? '' : 'quota', subBuilder: $4152.AccessQuota.create)
     ..hasRequiredFields = false
   ;
 
@@ -348,17 +348,17 @@ class RunAccessReportResponse extends $pb.GeneratedMessage {
   /// dimension. The number of DimensionHeaders and ordering of DimensionHeaders
   /// matches the dimensions present in rows.
   @$pb.TagNumber(1)
-  $core.List<$4151.AccessDimensionHeader> get dimensionHeaders => $_getList(0);
+  $core.List<$4152.AccessDimensionHeader> get dimensionHeaders => $_getList(0);
 
   /// The header for a column in the report that corresponds to a specific
   /// metric. The number of MetricHeaders and ordering of MetricHeaders matches
   /// the metrics present in rows.
   @$pb.TagNumber(2)
-  $core.List<$4151.AccessMetricHeader> get metricHeaders => $_getList(1);
+  $core.List<$4152.AccessMetricHeader> get metricHeaders => $_getList(1);
 
   /// Rows of dimension value combinations and metric values in the report.
   @$pb.TagNumber(3)
-  $core.List<$4151.AccessRow> get rows => $_getList(2);
+  $core.List<$4152.AccessRow> get rows => $_getList(2);
 
   ///  The total number of rows in the query result. `rowCount` is independent of
   ///  the number of rows returned in the response, the `limit` request
@@ -380,15 +380,15 @@ class RunAccessReportResponse extends $pb.GeneratedMessage {
   /// The quota state for this Analytics property including this request. This
   /// field doesn't work with account-level requests.
   @$pb.TagNumber(5)
-  $4151.AccessQuota get quota => $_getN(4);
+  $4152.AccessQuota get quota => $_getN(4);
   @$pb.TagNumber(5)
-  set quota($4151.AccessQuota v) { setField(5, v); }
+  set quota($4152.AccessQuota v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasQuota() => $_has(4);
   @$pb.TagNumber(5)
   void clearQuota() => clearField(5);
   @$pb.TagNumber(5)
-  $4151.AccessQuota ensureQuota() => $_ensure(4);
+  $4152.AccessQuota ensureQuota() => $_ensure(4);
 }
 
 /// Request message for GetAccount RPC.
@@ -655,7 +655,7 @@ class DeleteAccountRequest extends $pb.GeneratedMessage {
 class UpdateAccountRequest extends $pb.GeneratedMessage {
   factory UpdateAccountRequest({
     $406.Account? account,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (account != null) {
@@ -672,7 +672,7 @@ class UpdateAccountRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.Account>(1, _omitFieldNames ? '' : 'account', subBuilder: $406.Account.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -715,15 +715,15 @@ class UpdateAccountRequest extends $pb.GeneratedMessage {
   /// To replace the entire entity, use one path with the string "*" to match all
   /// fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ProvisionAccountTicket RPC.
@@ -1088,7 +1088,7 @@ class ListPropertiesResponse extends $pb.GeneratedMessage {
 class UpdatePropertyRequest extends $pb.GeneratedMessage {
   factory UpdatePropertyRequest({
     $406.Property? property,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (property != null) {
@@ -1105,7 +1105,7 @@ class UpdatePropertyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePropertyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.Property>(1, _omitFieldNames ? '' : 'property', subBuilder: $406.Property.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1149,15 +1149,15 @@ class UpdatePropertyRequest extends $pb.GeneratedMessage {
   /// replace the entire entity, use one path with the string "*" to match all
   /// fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for CreateProperty RPC.
@@ -1621,7 +1621,7 @@ class CreateGoogleAdsLinkRequest extends $pb.GeneratedMessage {
 class UpdateGoogleAdsLinkRequest extends $pb.GeneratedMessage {
   factory UpdateGoogleAdsLinkRequest({
     $406.GoogleAdsLink? googleAdsLink,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (googleAdsLink != null) {
@@ -1638,7 +1638,7 @@ class UpdateGoogleAdsLinkRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGoogleAdsLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.GoogleAdsLink>(1, _omitFieldNames ? '' : 'googleAdsLink', subBuilder: $406.GoogleAdsLink.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1680,15 +1680,15 @@ class UpdateGoogleAdsLinkRequest extends $pb.GeneratedMessage {
   /// replace the entire entity, use one path with the string "*" to match all
   /// fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for DeleteGoogleAdsLink RPC.
@@ -2198,8 +2198,8 @@ class SearchChangeHistoryEventsRequest extends $pb.GeneratedMessage {
     $core.Iterable<$406.ChangeHistoryResourceType>? resourceType,
     $core.Iterable<$406.ActionType>? action,
     $core.Iterable<$core.String>? actorEmail,
-    $1775.Timestamp? earliestChangeTime,
-    $1775.Timestamp? latestChangeTime,
+    $1776.Timestamp? earliestChangeTime,
+    $1776.Timestamp? latestChangeTime,
     $core.int? pageSize,
     $core.String? pageToken,
   }) {
@@ -2243,8 +2243,8 @@ class SearchChangeHistoryEventsRequest extends $pb.GeneratedMessage {
     ..pc<$406.ChangeHistoryResourceType>(3, _omitFieldNames ? '' : 'resourceType', $pb.PbFieldType.KE, valueOf: $406.ChangeHistoryResourceType.valueOf, enumValues: $406.ChangeHistoryResourceType.values, defaultEnumValue: $406.ChangeHistoryResourceType.CHANGE_HISTORY_RESOURCE_TYPE_UNSPECIFIED)
     ..pc<$406.ActionType>(4, _omitFieldNames ? '' : 'action', $pb.PbFieldType.KE, valueOf: $406.ActionType.valueOf, enumValues: $406.ActionType.values, defaultEnumValue: $406.ActionType.ACTION_TYPE_UNSPECIFIED)
     ..pPS(5, _omitFieldNames ? '' : 'actorEmail')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'earliestChangeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'latestChangeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'earliestChangeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'latestChangeTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(9, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false
@@ -2315,27 +2315,27 @@ class SearchChangeHistoryEventsRequest extends $pb.GeneratedMessage {
 
   /// Optional. If set, only return changes made after this time (inclusive).
   @$pb.TagNumber(6)
-  $1775.Timestamp get earliestChangeTime => $_getN(5);
+  $1776.Timestamp get earliestChangeTime => $_getN(5);
   @$pb.TagNumber(6)
-  set earliestChangeTime($1775.Timestamp v) { setField(6, v); }
+  set earliestChangeTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEarliestChangeTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEarliestChangeTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEarliestChangeTime() => $_ensure(5);
+  $1776.Timestamp ensureEarliestChangeTime() => $_ensure(5);
 
   /// Optional. If set, only return changes made before this time (inclusive).
   @$pb.TagNumber(7)
-  $1775.Timestamp get latestChangeTime => $_getN(6);
+  $1776.Timestamp get latestChangeTime => $_getN(6);
   @$pb.TagNumber(7)
-  set latestChangeTime($1775.Timestamp v) { setField(7, v); }
+  set latestChangeTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLatestChangeTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearLatestChangeTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureLatestChangeTime() => $_ensure(6);
+  $1776.Timestamp ensureLatestChangeTime() => $_ensure(6);
 
   /// Optional. The maximum number of ChangeHistoryEvent items to return.
   /// The service may return fewer than this value, even if there are additional
@@ -2609,7 +2609,7 @@ class DeleteMeasurementProtocolSecretRequest extends $pb.GeneratedMessage {
 class UpdateMeasurementProtocolSecretRequest extends $pb.GeneratedMessage {
   factory UpdateMeasurementProtocolSecretRequest({
     $406.MeasurementProtocolSecret? measurementProtocolSecret,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (measurementProtocolSecret != null) {
@@ -2626,7 +2626,7 @@ class UpdateMeasurementProtocolSecretRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMeasurementProtocolSecretRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.MeasurementProtocolSecret>(1, _omitFieldNames ? '' : 'measurementProtocolSecret', subBuilder: $406.MeasurementProtocolSecret.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2666,15 +2666,15 @@ class UpdateMeasurementProtocolSecretRequest extends $pb.GeneratedMessage {
   /// Required. The list of fields to be updated. Omitted fields will not be
   /// updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ListMeasurementProtocolSecret RPC
@@ -2902,7 +2902,7 @@ class CreateConversionEventRequest extends $pb.GeneratedMessage {
 class UpdateConversionEventRequest extends $pb.GeneratedMessage {
   factory UpdateConversionEventRequest({
     $406.ConversionEvent? conversionEvent,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (conversionEvent != null) {
@@ -2919,7 +2919,7 @@ class UpdateConversionEventRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConversionEventRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.ConversionEvent>(1, _omitFieldNames ? '' : 'conversionEvent', subBuilder: $406.ConversionEvent.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2962,15 +2962,15 @@ class UpdateConversionEventRequest extends $pb.GeneratedMessage {
   /// replace the entire entity, use one path with the string "*" to match all
   /// fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for GetConversionEvent RPC
@@ -3305,7 +3305,7 @@ class CreateKeyEventRequest extends $pb.GeneratedMessage {
 class UpdateKeyEventRequest extends $pb.GeneratedMessage {
   factory UpdateKeyEventRequest({
     $406.KeyEvent? keyEvent,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (keyEvent != null) {
@@ -3322,7 +3322,7 @@ class UpdateKeyEventRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateKeyEventRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.KeyEvent>(1, _omitFieldNames ? '' : 'keyEvent', subBuilder: $406.KeyEvent.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3365,15 +3365,15 @@ class UpdateKeyEventRequest extends $pb.GeneratedMessage {
   /// replace the entire entity, use one path with the string "*" to match all
   /// fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for GetKeyEvent RPC
@@ -3707,7 +3707,7 @@ class CreateCustomDimensionRequest extends $pb.GeneratedMessage {
 class UpdateCustomDimensionRequest extends $pb.GeneratedMessage {
   factory UpdateCustomDimensionRequest({
     $406.CustomDimension? customDimension,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (customDimension != null) {
@@ -3724,7 +3724,7 @@ class UpdateCustomDimensionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCustomDimensionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.CustomDimension>(1, _omitFieldNames ? '' : 'customDimension', subBuilder: $406.CustomDimension.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3765,15 +3765,15 @@ class UpdateCustomDimensionRequest extends $pb.GeneratedMessage {
   /// updated. To replace the entire entity, use one path with the string "*" to
   /// match all fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ListCustomDimensions RPC.
@@ -4105,7 +4105,7 @@ class CreateCustomMetricRequest extends $pb.GeneratedMessage {
 class UpdateCustomMetricRequest extends $pb.GeneratedMessage {
   factory UpdateCustomMetricRequest({
     $406.CustomMetric? customMetric,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (customMetric != null) {
@@ -4122,7 +4122,7 @@ class UpdateCustomMetricRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCustomMetricRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.CustomMetric>(1, _omitFieldNames ? '' : 'customMetric', subBuilder: $406.CustomMetric.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4163,15 +4163,15 @@ class UpdateCustomMetricRequest extends $pb.GeneratedMessage {
   /// updated. To replace the entire entity, use one path with the string "*" to
   /// match all fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ListCustomMetrics RPC.
@@ -4489,7 +4489,7 @@ class GetDataRetentionSettingsRequest extends $pb.GeneratedMessage {
 class UpdateDataRetentionSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateDataRetentionSettingsRequest({
     $406.DataRetentionSettings? dataRetentionSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataRetentionSettings != null) {
@@ -4506,7 +4506,7 @@ class UpdateDataRetentionSettingsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataRetentionSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.DataRetentionSettings>(1, _omitFieldNames ? '' : 'dataRetentionSettings', subBuilder: $406.DataRetentionSettings.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4549,15 +4549,15 @@ class UpdateDataRetentionSettingsRequest extends $pb.GeneratedMessage {
   /// replace the entire entity, use one path with the string "*" to match all
   /// fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for CreateDataStream RPC.
@@ -4686,7 +4686,7 @@ class DeleteDataStreamRequest extends $pb.GeneratedMessage {
 class UpdateDataStreamRequest extends $pb.GeneratedMessage {
   factory UpdateDataStreamRequest({
     $406.DataStream? dataStream,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataStream != null) {
@@ -4703,7 +4703,7 @@ class UpdateDataStreamRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1beta'), createEmptyInstance: create)
     ..aOM<$406.DataStream>(1, _omitFieldNames ? '' : 'dataStream', subBuilder: $406.DataStream.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4744,15 +4744,15 @@ class UpdateDataStreamRequest extends $pb.GeneratedMessage {
   /// updated. To replace the entire entity, use one path with the string "*" to
   /// match all fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ListDataStreams RPC.

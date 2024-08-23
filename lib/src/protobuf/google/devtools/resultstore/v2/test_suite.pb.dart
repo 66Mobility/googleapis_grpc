@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4769;
-import 'file.pb.dart' as $4770;
+import 'common.pb.dart' as $4771;
+import 'file.pb.dart' as $4772;
 import 'test_suite.pbenum.dart';
 
 export 'test_suite.pbenum.dart';
@@ -27,9 +27,9 @@ class TestSuite extends $pb.GeneratedMessage {
     $core.Iterable<Test>? tests,
     $core.Iterable<TestFailure>? failures,
     $core.Iterable<TestError>? errors,
-    $4769.Timing? timing,
-    $core.Iterable<$4769.Property>? properties,
-    $core.Iterable<$4770.File>? files,
+    $4771.Timing? timing,
+    $core.Iterable<$4771.Property>? properties,
+    $core.Iterable<$4772.File>? files,
   }) {
     final $result = create();
     if (suiteName != null) {
@@ -64,9 +64,9 @@ class TestSuite extends $pb.GeneratedMessage {
     ..pc<Test>(2, _omitFieldNames ? '' : 'tests', $pb.PbFieldType.PM, subBuilder: Test.create)
     ..pc<TestFailure>(3, _omitFieldNames ? '' : 'failures', $pb.PbFieldType.PM, subBuilder: TestFailure.create)
     ..pc<TestError>(4, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: TestError.create)
-    ..aOM<$4769.Timing>(6, _omitFieldNames ? '' : 'timing', subBuilder: $4769.Timing.create)
-    ..pc<$4769.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4769.Property.create)
-    ..pc<$4770.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4770.File.create)
+    ..aOM<$4771.Timing>(6, _omitFieldNames ? '' : 'timing', subBuilder: $4771.Timing.create)
+    ..pc<$4771.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4771.Property.create)
+    ..pc<$4772.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4772.File.create)
     ..hasRequiredFields = false
   ;
 
@@ -119,29 +119,29 @@ class TestSuite extends $pb.GeneratedMessage {
 
   /// The timing for the entire TestSuite, as reported by the time attribute.
   @$pb.TagNumber(6)
-  $4769.Timing get timing => $_getN(4);
+  $4771.Timing get timing => $_getN(4);
   @$pb.TagNumber(6)
-  set timing($4769.Timing v) { setField(6, v); }
+  set timing($4771.Timing v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTiming() => $_has(4);
   @$pb.TagNumber(6)
   void clearTiming() => clearField(6);
   @$pb.TagNumber(6)
-  $4769.Timing ensureTiming() => $_ensure(4);
+  $4771.Timing ensureTiming() => $_ensure(4);
 
   /// Arbitrary name-value pairs, as reported in custom attributes or in a
   /// <properties> element within this <testsuite>. Multiple properties are
   /// allowed with the same key. Properties will be returned in lexicographical
   /// order by key.
   @$pb.TagNumber(7)
-  $core.List<$4769.Property> get properties => $_getList(5);
+  $core.List<$4771.Property> get properties => $_getList(5);
 
   /// Files produced by this test suite, as reported by undeclared output
   /// annotations.
   /// The file IDs must be unique within this list. Duplicate file IDs will
   /// result in an error. Files will be returned in lexicographical order by ID.
   @$pb.TagNumber(8)
-  $core.List<$4770.File> get files => $_getList(6);
+  $core.List<$4772.File> get files => $_getList(6);
 }
 
 enum Test_TestType {
@@ -240,9 +240,9 @@ class TestCase extends $pb.GeneratedMessage {
     TestCase_Result? result,
     $core.Iterable<TestFailure>? failures,
     $core.Iterable<TestError>? errors,
-    $4769.Timing? timing,
-    $core.Iterable<$4769.Property>? properties,
-    $core.Iterable<$4770.File>? files,
+    $4771.Timing? timing,
+    $core.Iterable<$4771.Property>? properties,
+    $core.Iterable<$4772.File>? files,
     $core.int? retryNumber,
     $core.int? repeatNumber,
   }) {
@@ -289,9 +289,9 @@ class TestCase extends $pb.GeneratedMessage {
     ..e<TestCase_Result>(3, _omitFieldNames ? '' : 'result', $pb.PbFieldType.OE, defaultOrMaker: TestCase_Result.RESULT_UNSPECIFIED, valueOf: TestCase_Result.valueOf, enumValues: TestCase_Result.values)
     ..pc<TestFailure>(4, _omitFieldNames ? '' : 'failures', $pb.PbFieldType.PM, subBuilder: TestFailure.create)
     ..pc<TestError>(5, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: TestError.create)
-    ..aOM<$4769.Timing>(7, _omitFieldNames ? '' : 'timing', subBuilder: $4769.Timing.create)
-    ..pc<$4769.Property>(8, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4769.Property.create)
-    ..pc<$4770.File>(9, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4770.File.create)
+    ..aOM<$4771.Timing>(7, _omitFieldNames ? '' : 'timing', subBuilder: $4771.Timing.create)
+    ..pc<$4771.Property>(8, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4771.Property.create)
+    ..pc<$4772.File>(9, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4772.File.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'retryNumber', $pb.PbFieldType.O3)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'repeatNumber', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -362,29 +362,29 @@ class TestCase extends $pb.GeneratedMessage {
 
   /// The timing for the TestCase, as reported by the time attribute.
   @$pb.TagNumber(7)
-  $4769.Timing get timing => $_getN(5);
+  $4771.Timing get timing => $_getN(5);
   @$pb.TagNumber(7)
-  set timing($4769.Timing v) { setField(7, v); }
+  set timing($4771.Timing v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTiming() => $_has(5);
   @$pb.TagNumber(7)
   void clearTiming() => clearField(7);
   @$pb.TagNumber(7)
-  $4769.Timing ensureTiming() => $_ensure(5);
+  $4771.Timing ensureTiming() => $_ensure(5);
 
   /// Arbitrary name-value pairs, as reported in custom attributes or in a
   /// <properties> element within this <testcase>. Multiple properties are
   /// allowed with the same key. Properties will be returned in lexicographical
   /// order by key.
   @$pb.TagNumber(8)
-  $core.List<$4769.Property> get properties => $_getList(6);
+  $core.List<$4771.Property> get properties => $_getList(6);
 
   /// Files produced by this test case, as reported by undeclared output
   /// annotations.
   /// The file IDs must be unique within this list. Duplicate file IDs will
   /// result in an error. Files will be returned in lexicographical order by ID.
   @$pb.TagNumber(9)
-  $core.List<$4770.File> get files => $_getList(7);
+  $core.List<$4772.File> get files => $_getList(7);
 
   /// The 0-indexed retry number of the test case. A value of `0` may indicate
   /// either that this is the first in a series of retries, or that no retries

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import 'common.pb.dart' as $4769;
-import 'file.pb.dart' as $4770;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import 'common.pb.dart' as $4771;
+import 'file.pb.dart' as $4772;
 
 /// The resource ID components that identify the ConfiguredTarget.
 class ConfiguredTarget_Id extends $pb.GeneratedMessage {
@@ -108,11 +108,11 @@ class ConfiguredTarget extends $pb.GeneratedMessage {
   factory ConfiguredTarget({
     $core.String? name,
     ConfiguredTarget_Id? id,
-    $4769.StatusAttributes? statusAttributes,
-    $4769.Timing? timing,
+    $4771.StatusAttributes? statusAttributes,
+    $4771.Timing? timing,
     ConfiguredTestAttributes? testAttributes,
-    $core.Iterable<$4769.Property>? properties,
-    $core.Iterable<$4770.File>? files,
+    $core.Iterable<$4771.Property>? properties,
+    $core.Iterable<$4772.File>? files,
   }) {
     final $result = create();
     if (name != null) {
@@ -145,11 +145,11 @@ class ConfiguredTarget extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfiguredTarget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<ConfiguredTarget_Id>(2, _omitFieldNames ? '' : 'id', subBuilder: ConfiguredTarget_Id.create)
-    ..aOM<$4769.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4769.StatusAttributes.create)
-    ..aOM<$4769.Timing>(4, _omitFieldNames ? '' : 'timing', subBuilder: $4769.Timing.create)
+    ..aOM<$4771.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4771.StatusAttributes.create)
+    ..aOM<$4771.Timing>(4, _omitFieldNames ? '' : 'timing', subBuilder: $4771.Timing.create)
     ..aOM<ConfiguredTestAttributes>(6, _omitFieldNames ? '' : 'testAttributes', subBuilder: ConfiguredTestAttributes.create)
-    ..pc<$4769.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4769.Property.create)
-    ..pc<$4770.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4770.File.create)
+    ..pc<$4771.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4771.Property.create)
+    ..pc<$4772.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4772.File.create)
     ..hasRequiredFields = false
   ;
 
@@ -204,27 +204,27 @@ class ConfiguredTarget extends $pb.GeneratedMessage {
   /// was not requested, set this to the build status (e.g. BUILT or
   /// FAILED_TO_BUILD).
   @$pb.TagNumber(3)
-  $4769.StatusAttributes get statusAttributes => $_getN(2);
+  $4771.StatusAttributes get statusAttributes => $_getN(2);
   @$pb.TagNumber(3)
-  set statusAttributes($4769.StatusAttributes v) { setField(3, v); }
+  set statusAttributes($4771.StatusAttributes v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatusAttributes() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatusAttributes() => clearField(3);
   @$pb.TagNumber(3)
-  $4769.StatusAttributes ensureStatusAttributes() => $_ensure(2);
+  $4771.StatusAttributes ensureStatusAttributes() => $_ensure(2);
 
   /// Captures the start time and duration of this configured target.
   @$pb.TagNumber(4)
-  $4769.Timing get timing => $_getN(3);
+  $4771.Timing get timing => $_getN(3);
   @$pb.TagNumber(4)
-  set timing($4769.Timing v) { setField(4, v); }
+  set timing($4771.Timing v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTiming() => $_has(3);
   @$pb.TagNumber(4)
   void clearTiming() => clearField(4);
   @$pb.TagNumber(4)
-  $4769.Timing ensureTiming() => $_ensure(3);
+  $4771.Timing ensureTiming() => $_ensure(3);
 
   /// Test specific attributes for this ConfiguredTarget.
   @$pb.TagNumber(6)
@@ -242,13 +242,13 @@ class ConfiguredTarget extends $pb.GeneratedMessage {
   /// This is implemented as a multi-map. Multiple properties are allowed with
   /// the same key. Properties will be returned in lexicographical order by key.
   @$pb.TagNumber(7)
-  $core.List<$4769.Property> get properties => $_getList(5);
+  $core.List<$4771.Property> get properties => $_getList(5);
 
   /// A list of file references for configured target level files.
   /// The file IDs must be unique within this list. Duplicate file IDs will
   /// result in an error. Files will be returned in lexicographical order by ID.
   @$pb.TagNumber(8)
-  $core.List<$4770.File> get files => $_getList(6);
+  $core.List<$4772.File> get files => $_getList(6);
 }
 
 /// Attributes that apply only to test actions under this configured target.
@@ -256,7 +256,7 @@ class ConfiguredTestAttributes extends $pb.GeneratedMessage {
   factory ConfiguredTestAttributes({
     $core.int? totalRunCount,
     $core.int? totalShardCount,
-    $1737.Duration? timeoutDuration,
+    $1738.Duration? timeoutDuration,
   }) {
     final $result = create();
     if (totalRunCount != null) {
@@ -277,7 +277,7 @@ class ConfiguredTestAttributes extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfiguredTestAttributes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'totalRunCount', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalShardCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'timeoutDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'timeoutDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -325,15 +325,15 @@ class ConfiguredTestAttributes extends $pb.GeneratedMessage {
 
   /// How long test is allowed to run.
   @$pb.TagNumber(5)
-  $1737.Duration get timeoutDuration => $_getN(2);
+  $1738.Duration get timeoutDuration => $_getN(2);
   @$pb.TagNumber(5)
-  set timeoutDuration($1737.Duration v) { setField(5, v); }
+  set timeoutDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTimeoutDuration() => $_has(2);
   @$pb.TagNumber(5)
   void clearTimeoutDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureTimeoutDuration() => $_ensure(2);
+  $1738.Duration ensureTimeoutDuration() => $_ensure(2);
 }
 
 

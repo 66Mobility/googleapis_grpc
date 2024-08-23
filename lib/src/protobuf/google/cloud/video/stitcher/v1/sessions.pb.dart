@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import 'companions.pb.dart' as $4703;
-import 'events.pb.dart' as $4701;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import 'companions.pb.dart' as $4705;
+import 'events.pb.dart' as $4703;
 import 'live_configs.pbenum.dart' as $1471;
 import 'sessions.pbenum.dart';
 
@@ -376,9 +376,9 @@ class Interstitials extends $pb.GeneratedMessage {
 /// Metadata for an inserted ad in a VOD session.
 class VodSessionAd extends $pb.GeneratedMessage {
   factory VodSessionAd({
-    $1737.Duration? duration,
-    $4703.CompanionAds? companionAds,
-    $core.Iterable<$4701.Event>? activityEvents,
+    $1738.Duration? duration,
+    $4705.CompanionAds? companionAds,
+    $core.Iterable<$4703.Event>? activityEvents,
   }) {
     final $result = create();
     if (duration != null) {
@@ -397,9 +397,9 @@ class VodSessionAd extends $pb.GeneratedMessage {
   factory VodSessionAd.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VodSessionAd', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
-    ..aOM<$4703.CompanionAds>(2, _omitFieldNames ? '' : 'companionAds', subBuilder: $4703.CompanionAds.create)
-    ..pc<$4701.Event>(3, _omitFieldNames ? '' : 'activityEvents', $pb.PbFieldType.PM, subBuilder: $4701.Event.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
+    ..aOM<$4705.CompanionAds>(2, _omitFieldNames ? '' : 'companionAds', subBuilder: $4705.CompanionAds.create)
+    ..pc<$4703.Event>(3, _omitFieldNames ? '' : 'activityEvents', $pb.PbFieldType.PM, subBuilder: $4703.Event.create)
     ..hasRequiredFields = false
   ;
 
@@ -426,27 +426,27 @@ class VodSessionAd extends $pb.GeneratedMessage {
 
   /// Duration in seconds of the ad.
   @$pb.TagNumber(1)
-  $1737.Duration get duration => $_getN(0);
+  $1738.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($1737.Duration v) { setField(1, v); }
+  set duration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDuration() => $_ensure(0);
+  $1738.Duration ensureDuration() => $_ensure(0);
 
   /// Metadata of companion ads associated with the ad.
   @$pb.TagNumber(2)
-  $4703.CompanionAds get companionAds => $_getN(1);
+  $4705.CompanionAds get companionAds => $_getN(1);
   @$pb.TagNumber(2)
-  set companionAds($4703.CompanionAds v) { setField(2, v); }
+  set companionAds($4705.CompanionAds v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCompanionAds() => $_has(1);
   @$pb.TagNumber(2)
   void clearCompanionAds() => clearField(2);
   @$pb.TagNumber(2)
-  $4703.CompanionAds ensureCompanionAds() => $_ensure(1);
+  $4705.CompanionAds ensureCompanionAds() => $_ensure(1);
 
   /// The list of progress tracking events for the ad break. These can be of
   /// the following IAB types: `MUTE`, `UNMUTE`, `PAUSE`, `CLICK`,
@@ -454,13 +454,13 @@ class VodSessionAd extends $pb.GeneratedMessage {
   /// `EXIT_FULLSCREEN`, `EXPAND`, `COLLAPSE`, `ACCEPT_INVITATION_LINEAR`,
   /// `CLOSE_LINEAR`, `SKIP`.
   @$pb.TagNumber(3)
-  $core.List<$4701.Event> get activityEvents => $_getList(2);
+  $core.List<$4703.Event> get activityEvents => $_getList(2);
 }
 
 /// Metadata for the entire stitched content in a VOD session.
 class VodSessionContent extends $pb.GeneratedMessage {
   factory VodSessionContent({
-    $1737.Duration? duration,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (duration != null) {
@@ -473,7 +473,7 @@ class VodSessionContent extends $pb.GeneratedMessage {
   factory VodSessionContent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VodSessionContent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -501,24 +501,24 @@ class VodSessionContent extends $pb.GeneratedMessage {
   /// The total duration in seconds of the content including the ads stitched
   /// in.
   @$pb.TagNumber(1)
-  $1737.Duration get duration => $_getN(0);
+  $1738.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($1737.Duration v) { setField(1, v); }
+  set duration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDuration() => $_ensure(0);
+  $1738.Duration ensureDuration() => $_ensure(0);
 }
 
 /// Metadata for an inserted ad break.
 class VodSessionAdBreak extends $pb.GeneratedMessage {
   factory VodSessionAdBreak({
-    $core.Iterable<$4701.ProgressEvent>? progressEvents,
+    $core.Iterable<$4703.ProgressEvent>? progressEvents,
     $core.Iterable<VodSessionAd>? ads,
-    $1737.Duration? endTimeOffset,
-    $1737.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
   }) {
     final $result = create();
     if (progressEvents != null) {
@@ -540,10 +540,10 @@ class VodSessionAdBreak extends $pb.GeneratedMessage {
   factory VodSessionAdBreak.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VodSessionAdBreak', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
-    ..pc<$4701.ProgressEvent>(1, _omitFieldNames ? '' : 'progressEvents', $pb.PbFieldType.PM, subBuilder: $4701.ProgressEvent.create)
+    ..pc<$4703.ProgressEvent>(1, _omitFieldNames ? '' : 'progressEvents', $pb.PbFieldType.PM, subBuilder: $4703.ProgressEvent.create)
     ..pc<VodSessionAd>(2, _omitFieldNames ? '' : 'ads', $pb.PbFieldType.PM, subBuilder: VodSessionAd.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -570,7 +570,7 @@ class VodSessionAdBreak extends $pb.GeneratedMessage {
 
   /// List of events that are expected to be triggered, ordered by time.
   @$pb.TagNumber(1)
-  $core.List<$4701.ProgressEvent> get progressEvents => $_getList(0);
+  $core.List<$4703.ProgressEvent> get progressEvents => $_getList(0);
 
   /// Ordered list of ads stitched into the ad break.
   @$pb.TagNumber(2)
@@ -578,27 +578,27 @@ class VodSessionAdBreak extends $pb.GeneratedMessage {
 
   /// Ad break end time in seconds relative to the start of the VOD asset.
   @$pb.TagNumber(3)
-  $1737.Duration get endTimeOffset => $_getN(2);
+  $1738.Duration get endTimeOffset => $_getN(2);
   @$pb.TagNumber(3)
-  set endTimeOffset($1737.Duration v) { setField(3, v); }
+  set endTimeOffset($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTimeOffset() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTimeOffset() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(2);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(2);
 
   /// Ad break start time in seconds relative to the start of the VOD asset.
   @$pb.TagNumber(4)
-  $1737.Duration get startTimeOffset => $_getN(3);
+  $1738.Duration get startTimeOffset => $_getN(3);
   @$pb.TagNumber(4)
-  set startTimeOffset($1737.Duration v) { setField(4, v); }
+  set startTimeOffset($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTimeOffset() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTimeOffset() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(3);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(3);
 }
 
 /// Defines fields related to Google Ad Manager (GAM).

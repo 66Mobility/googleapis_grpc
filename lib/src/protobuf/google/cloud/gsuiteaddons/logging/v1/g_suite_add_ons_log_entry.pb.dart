@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../rpc/status.pb.dart' as $1796;
 
 /// JSON payload of error messages that are logged to Cloud Logging. An error
 /// message (in English) is written to Cloud Logging (if not disabled) when an
@@ -21,7 +21,7 @@ import '../../../../rpc/status.pb.dart' as $1795;
 class GSuiteAddOnsLogEntry extends $pb.GeneratedMessage {
   factory GSuiteAddOnsLogEntry({
     $core.String? deployment,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.String? deploymentFunction,
   }) {
     final $result = create();
@@ -42,7 +42,7 @@ class GSuiteAddOnsLogEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GSuiteAddOnsLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gsuiteaddons.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deployment')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOS(3, _omitFieldNames ? '' : 'deploymentFunction')
     ..hasRequiredFields = false
   ;
@@ -82,15 +82,15 @@ class GSuiteAddOnsLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 
   /// The function name that was running when the error occurred. This field
   /// might not always be set, for example, if an error happens when fetching the

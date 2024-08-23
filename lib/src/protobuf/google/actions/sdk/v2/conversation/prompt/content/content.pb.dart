@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'canvas.pb.dart' as $1787;
-import 'card.pb.dart' as $1784;
-import 'collection.pb.dart' as $1788;
-import 'image.pb.dart' as $1782;
-import 'list.pb.dart' as $1789;
-import 'media.pb.dart' as $1786;
-import 'table.pb.dart' as $1785;
+import 'canvas.pb.dart' as $1788;
+import 'card.pb.dart' as $1785;
+import 'collection.pb.dart' as $1789;
+import 'image.pb.dart' as $1783;
+import 'list.pb.dart' as $1790;
+import 'media.pb.dart' as $1787;
+import 'table.pb.dart' as $1786;
 
 enum Content_Content {
   card, 
@@ -35,14 +35,14 @@ enum Content_Content {
 /// Content to be shown.
 class Content extends $pb.GeneratedMessage {
   factory Content({
-    $1784.Card? card,
-    $1782.Image? image,
-    $1785.Table? table,
-    $1786.Media? media,
+    $1785.Card? card,
+    $1783.Image? image,
+    $1786.Table? table,
+    $1787.Media? media,
   @$core.Deprecated('This field is deprecated.')
-    $1787.Canvas? canvas,
-    $1788.Collection? collection,
-    $1789.List_? list,
+    $1788.Canvas? canvas,
+    $1789.Collection? collection,
+    $1790.List_? list,
   }) {
     final $result = create();
     if (card != null) {
@@ -85,13 +85,13 @@ class Content extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Content', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7])
-    ..aOM<$1784.Card>(1, _omitFieldNames ? '' : 'card', subBuilder: $1784.Card.create)
-    ..aOM<$1782.Image>(2, _omitFieldNames ? '' : 'image', subBuilder: $1782.Image.create)
-    ..aOM<$1785.Table>(3, _omitFieldNames ? '' : 'table', subBuilder: $1785.Table.create)
-    ..aOM<$1786.Media>(4, _omitFieldNames ? '' : 'media', subBuilder: $1786.Media.create)
-    ..aOM<$1787.Canvas>(5, _omitFieldNames ? '' : 'canvas', subBuilder: $1787.Canvas.create)
-    ..aOM<$1788.Collection>(6, _omitFieldNames ? '' : 'collection', subBuilder: $1788.Collection.create)
-    ..aOM<$1789.List_>(7, _omitFieldNames ? '' : 'list', subBuilder: $1789.List_.create)
+    ..aOM<$1785.Card>(1, _omitFieldNames ? '' : 'card', subBuilder: $1785.Card.create)
+    ..aOM<$1783.Image>(2, _omitFieldNames ? '' : 'image', subBuilder: $1783.Image.create)
+    ..aOM<$1786.Table>(3, _omitFieldNames ? '' : 'table', subBuilder: $1786.Table.create)
+    ..aOM<$1787.Media>(4, _omitFieldNames ? '' : 'media', subBuilder: $1787.Media.create)
+    ..aOM<$1788.Canvas>(5, _omitFieldNames ? '' : 'canvas', subBuilder: $1788.Canvas.create)
+    ..aOM<$1789.Collection>(6, _omitFieldNames ? '' : 'collection', subBuilder: $1789.Collection.create)
+    ..aOM<$1790.List_>(7, _omitFieldNames ? '' : 'list', subBuilder: $1790.List_.create)
     ..hasRequiredFields = false
   ;
 
@@ -121,59 +121,59 @@ class Content extends $pb.GeneratedMessage {
 
   /// A basic card.
   @$pb.TagNumber(1)
-  $1784.Card get card => $_getN(0);
+  $1785.Card get card => $_getN(0);
   @$pb.TagNumber(1)
-  set card($1784.Card v) { setField(1, v); }
+  set card($1785.Card v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCard() => $_has(0);
   @$pb.TagNumber(1)
   void clearCard() => clearField(1);
   @$pb.TagNumber(1)
-  $1784.Card ensureCard() => $_ensure(0);
+  $1785.Card ensureCard() => $_ensure(0);
 
   /// An image.
   @$pb.TagNumber(2)
-  $1782.Image get image => $_getN(1);
+  $1783.Image get image => $_getN(1);
   @$pb.TagNumber(2)
-  set image($1782.Image v) { setField(2, v); }
+  set image($1783.Image v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasImage() => $_has(1);
   @$pb.TagNumber(2)
   void clearImage() => clearField(2);
   @$pb.TagNumber(2)
-  $1782.Image ensureImage() => $_ensure(1);
+  $1783.Image ensureImage() => $_ensure(1);
 
   /// Table card.
   @$pb.TagNumber(3)
-  $1785.Table get table => $_getN(2);
+  $1786.Table get table => $_getN(2);
   @$pb.TagNumber(3)
-  set table($1785.Table v) { setField(3, v); }
+  set table($1786.Table v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTable() => $_has(2);
   @$pb.TagNumber(3)
   void clearTable() => clearField(3);
   @$pb.TagNumber(3)
-  $1785.Table ensureTable() => $_ensure(2);
+  $1786.Table ensureTable() => $_ensure(2);
 
   /// Response indicating a set of media to be played.
   @$pb.TagNumber(4)
-  $1786.Media get media => $_getN(3);
+  $1787.Media get media => $_getN(3);
   @$pb.TagNumber(4)
-  set media($1786.Media v) { setField(4, v); }
+  set media($1787.Media v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMedia() => $_has(3);
   @$pb.TagNumber(4)
   void clearMedia() => clearField(4);
   @$pb.TagNumber(4)
-  $1786.Media ensureMedia() => $_ensure(3);
+  $1787.Media ensureMedia() => $_ensure(3);
 
   /// A response to be used for interactive canvas experience.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $1787.Canvas get canvas => $_getN(4);
+  $1788.Canvas get canvas => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set canvas($1787.Canvas v) { setField(5, v); }
+  set canvas($1788.Canvas v) { setField(5, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasCanvas() => $_has(4);
@@ -182,31 +182,31 @@ class Content extends $pb.GeneratedMessage {
   void clearCanvas() => clearField(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $1787.Canvas ensureCanvas() => $_ensure(4);
+  $1788.Canvas ensureCanvas() => $_ensure(4);
 
   /// A card presenting a collection of options to select from.
   @$pb.TagNumber(6)
-  $1788.Collection get collection => $_getN(5);
+  $1789.Collection get collection => $_getN(5);
   @$pb.TagNumber(6)
-  set collection($1788.Collection v) { setField(6, v); }
+  set collection($1789.Collection v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCollection() => $_has(5);
   @$pb.TagNumber(6)
   void clearCollection() => clearField(6);
   @$pb.TagNumber(6)
-  $1788.Collection ensureCollection() => $_ensure(5);
+  $1789.Collection ensureCollection() => $_ensure(5);
 
   /// A card presenting a list of options to select from.
   @$pb.TagNumber(7)
-  $1789.List_ get list => $_getN(6);
+  $1790.List_ get list => $_getN(6);
   @$pb.TagNumber(7)
-  set list($1789.List_ v) { setField(7, v); }
+  set list($1790.List_ v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasList() => $_has(6);
   @$pb.TagNumber(7)
   void clearList() => clearField(7);
   @$pb.TagNumber(7)
-  $1789.List_ ensureList() => $_ensure(6);
+  $1790.List_ ensureList() => $_ensure(6);
 }
 
 

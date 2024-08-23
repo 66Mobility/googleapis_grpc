@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../rpc/status.pb.dart' as $1795;
+import '../../../../../rpc/status.pb.dart' as $1796;
 import '../../v1/resources.pbenum.dart' as $1464;
 
 enum ChannelActivity_ActivityType {
@@ -283,7 +283,7 @@ class StreamingStateChange extends $pb.GeneratedMessage {
 /// StreamingError records when an error happens with the video pipeline.
 class StreamingError extends $pb.GeneratedMessage {
   factory StreamingError({
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (error != null) {
@@ -296,7 +296,7 @@ class StreamingError extends $pb.GeneratedMessage {
   factory StreamingError.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.logging.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -323,15 +323,15 @@ class StreamingError extends $pb.GeneratedMessage {
 
   /// A description of the reason for the streaming error.
   @$pb.TagNumber(1)
-  $1795.Status get error => $_getN(0);
+  $1796.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($1795.Status v) { setField(1, v); }
+  set error($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureError() => $_ensure(0);
+  $1796.Status ensureError() => $_ensure(0);
 }
 
 /// InputAccept records when the channel has accepted an input stream.
@@ -424,7 +424,7 @@ class InputError extends $pb.GeneratedMessage {
     $core.String? streamId,
     $core.String? inputAttachment,
     InputStreamProperty? inputStreamProperty,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (streamId != null) {
@@ -449,7 +449,7 @@ class InputError extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'streamId')
     ..aOS(2, _omitFieldNames ? '' : 'inputAttachment')
     ..aOM<InputStreamProperty>(3, _omitFieldNames ? '' : 'inputStreamProperty', subBuilder: InputStreamProperty.create)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -509,15 +509,15 @@ class InputError extends $pb.GeneratedMessage {
 
   /// A description of the reason for the error with the input stream.
   @$pb.TagNumber(4)
-  $1795.Status get error => $_getN(3);
+  $1796.Status get error => $_getN(3);
   @$pb.TagNumber(4)
-  set error($1795.Status v) { setField(4, v); }
+  set error($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(3);
   @$pb.TagNumber(4)
   void clearError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureError() => $_ensure(3);
+  $1796.Status ensureError() => $_ensure(3);
 }
 
 /// Properties of the input stream.

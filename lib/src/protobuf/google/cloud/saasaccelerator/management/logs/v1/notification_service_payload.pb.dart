@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'notification_service_payload.pbenum.dart';
 
 export 'notification_service_payload.pbenum.dart';
@@ -22,7 +22,7 @@ export 'notification_service_payload.pbenum.dart';
 class NotificationStage extends $pb.GeneratedMessage {
   factory NotificationStage({
     NotificationStage_Stage? stage,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     $core.String? notificationId,
     NotificationStage_Event? event,
     $core.String? message,
@@ -51,7 +51,7 @@ class NotificationStage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotificationStage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.saasaccelerator.management.logs.v1'), createEmptyInstance: create)
     ..e<NotificationStage_Stage>(1, _omitFieldNames ? '' : 'stage', $pb.PbFieldType.OE, defaultOrMaker: NotificationStage_Stage.STAGE_UNSPECIFIED, valueOf: NotificationStage_Stage.valueOf, enumValues: NotificationStage_Stage.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'notificationId')
     ..e<NotificationStage_Event>(4, _omitFieldNames ? '' : 'event', $pb.PbFieldType.OE, defaultOrMaker: NotificationStage_Event.EVENT_UNSPECIFIED, valueOf: NotificationStage_Event.valueOf, enumValues: NotificationStage_Event.values)
     ..aOS(5, _omitFieldNames ? '' : 'message')
@@ -91,15 +91,15 @@ class NotificationStage extends $pb.GeneratedMessage {
 
   /// Time of the NotificationServiceEvent.
   @$pb.TagNumber(2)
-  $1775.Timestamp get eventTime => $_getN(1);
+  $1776.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventTime($1775.Timestamp v) { setField(2, v); }
+  set eventTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEventTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEventTime() => $_ensure(1);
+  $1776.Timestamp ensureEventTime() => $_ensure(1);
 
   /// The id of the notification.
   @$pb.TagNumber(3)

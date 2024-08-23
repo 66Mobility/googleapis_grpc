@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/money.pb.dart' as $1814;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/money.pb.dart' as $1815;
 import 'fuel_options.pbenum.dart';
 
 export 'fuel_options.pbenum.dart';
@@ -23,8 +23,8 @@ export 'fuel_options.pbenum.dart';
 class FuelOptions_FuelPrice extends $pb.GeneratedMessage {
   factory FuelOptions_FuelPrice({
     FuelOptions_FuelPrice_FuelType? type,
-    $1814.Money? price,
-    $1775.Timestamp? updateTime,
+    $1815.Money? price,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (type != null) {
@@ -44,8 +44,8 @@ class FuelOptions_FuelPrice extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FuelOptions.FuelPrice', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
     ..e<FuelOptions_FuelPrice_FuelType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: FuelOptions_FuelPrice_FuelType.FUEL_TYPE_UNSPECIFIED, valueOf: FuelOptions_FuelPrice_FuelType.valueOf, enumValues: FuelOptions_FuelPrice_FuelType.values)
-    ..aOM<$1814.Money>(2, _omitFieldNames ? '' : 'price', subBuilder: $1814.Money.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1815.Money>(2, _omitFieldNames ? '' : 'price', subBuilder: $1815.Money.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -82,27 +82,27 @@ class FuelOptions_FuelPrice extends $pb.GeneratedMessage {
 
   /// The price of the fuel.
   @$pb.TagNumber(2)
-  $1814.Money get price => $_getN(1);
+  $1815.Money get price => $_getN(1);
   @$pb.TagNumber(2)
-  set price($1814.Money v) { setField(2, v); }
+  set price($1815.Money v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPrice() => $_has(1);
   @$pb.TagNumber(2)
   void clearPrice() => clearField(2);
   @$pb.TagNumber(2)
-  $1814.Money ensurePrice() => $_ensure(1);
+  $1815.Money ensurePrice() => $_ensure(1);
 
   /// The time the fuel price was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// The most recent information about fuel options in a gas station. This

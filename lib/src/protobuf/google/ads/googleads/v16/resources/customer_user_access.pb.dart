@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/access_role.pbenum.dart' as $2970;
+import '../enums/access_role.pbenum.dart' as $2971;
 
 /// Represents the permission of a single user onto a single customer.
 class CustomerUserAccess extends $pb.GeneratedMessage {
@@ -22,7 +22,7 @@ class CustomerUserAccess extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? userId,
     $core.String? emailAddress,
-    $2970.AccessRoleEnum_AccessRole? accessRole,
+    $2971.AccessRoleEnum_AccessRole? accessRole,
     $core.String? accessCreationDateTime,
     $core.String? inviterUserEmailAddress,
   }) {
@@ -55,7 +55,7 @@ class CustomerUserAccess extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'userId')
     ..aOS(3, _omitFieldNames ? '' : 'emailAddress')
-    ..e<$2970.AccessRoleEnum_AccessRole>(4, _omitFieldNames ? '' : 'accessRole', $pb.PbFieldType.OE, defaultOrMaker: $2970.AccessRoleEnum_AccessRole.UNSPECIFIED, valueOf: $2970.AccessRoleEnum_AccessRole.valueOf, enumValues: $2970.AccessRoleEnum_AccessRole.values)
+    ..e<$2971.AccessRoleEnum_AccessRole>(4, _omitFieldNames ? '' : 'accessRole', $pb.PbFieldType.OE, defaultOrMaker: $2971.AccessRoleEnum_AccessRole.UNSPECIFIED, valueOf: $2971.AccessRoleEnum_AccessRole.valueOf, enumValues: $2971.AccessRoleEnum_AccessRole.values)
     ..aOS(6, _omitFieldNames ? '' : 'accessCreationDateTime')
     ..aOS(7, _omitFieldNames ? '' : 'inviterUserEmailAddress')
     ..hasRequiredFields = false
@@ -118,9 +118,9 @@ class CustomerUserAccess extends $pb.GeneratedMessage {
 
   /// Access role of the user.
   @$pb.TagNumber(4)
-  $2970.AccessRoleEnum_AccessRole get accessRole => $_getN(3);
+  $2971.AccessRoleEnum_AccessRole get accessRole => $_getN(3);
   @$pb.TagNumber(4)
-  set accessRole($2970.AccessRoleEnum_AccessRole v) { setField(4, v); }
+  set accessRole($2971.AccessRoleEnum_AccessRole v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAccessRole() => $_has(3);
   @$pb.TagNumber(4)

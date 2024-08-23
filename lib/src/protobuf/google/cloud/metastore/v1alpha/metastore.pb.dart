@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../type/dayofweek.pbenum.dart' as $4321;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../type/dayofweek.pbenum.dart' as $4322;
 import 'metastore.pbenum.dart';
 
 export 'metastore.pbenum.dart';
@@ -30,8 +30,8 @@ enum Service_MetastoreConfig {
 class Service extends $pb.GeneratedMessage {
   factory Service({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     HiveMetastoreConfig? hiveMetastoreConfig,
     $core.String? network,
@@ -132,8 +132,8 @@ class Service extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Service', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Service.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.metastore.v1alpha'))
     ..aOM<HiveMetastoreConfig>(5, _omitFieldNames ? '' : 'hiveMetastoreConfig', subBuilder: HiveMetastoreConfig.create)
     ..aOS(7, _omitFieldNames ? '' : 'network')
@@ -195,27 +195,27 @@ class Service extends $pb.GeneratedMessage {
 
   /// Output only. The time when the metastore service was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the metastore service was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined labels for the metastore service.
   @$pb.TagNumber(4)
@@ -665,8 +665,8 @@ class Lake extends $pb.GeneratedMessage {
 /// may perform system maintenance operation to the service.
 class MaintenanceWindow extends $pb.GeneratedMessage {
   factory MaintenanceWindow({
-    $1780.Int32Value? hourOfDay,
-    $4321.DayOfWeek? dayOfWeek,
+    $1781.Int32Value? hourOfDay,
+    $4322.DayOfWeek? dayOfWeek,
   }) {
     final $result = create();
     if (hourOfDay != null) {
@@ -682,8 +682,8 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
   factory MaintenanceWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaintenanceWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1780.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay', subBuilder: $1780.Int32Value.create)
-    ..e<$4321.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $4321.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4321.DayOfWeek.valueOf, enumValues: $4321.DayOfWeek.values)
+    ..aOM<$1781.Int32Value>(1, _omitFieldNames ? '' : 'hourOfDay', subBuilder: $1781.Int32Value.create)
+    ..e<$4322.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $4322.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4322.DayOfWeek.valueOf, enumValues: $4322.DayOfWeek.values)
     ..hasRequiredFields = false
   ;
 
@@ -710,21 +710,21 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
 
   /// The hour of day (0-23) when the window starts.
   @$pb.TagNumber(1)
-  $1780.Int32Value get hourOfDay => $_getN(0);
+  $1781.Int32Value get hourOfDay => $_getN(0);
   @$pb.TagNumber(1)
-  set hourOfDay($1780.Int32Value v) { setField(1, v); }
+  set hourOfDay($1781.Int32Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHourOfDay() => $_has(0);
   @$pb.TagNumber(1)
   void clearHourOfDay() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int32Value ensureHourOfDay() => $_ensure(0);
+  $1781.Int32Value ensureHourOfDay() => $_ensure(0);
 
   /// The day of week, when the window starts.
   @$pb.TagNumber(2)
-  $4321.DayOfWeek get dayOfWeek => $_getN(1);
+  $4322.DayOfWeek get dayOfWeek => $_getN(1);
   @$pb.TagNumber(2)
-  set dayOfWeek($4321.DayOfWeek v) { setField(2, v); }
+  set dayOfWeek($4322.DayOfWeek v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDayOfWeek() => $_has(1);
   @$pb.TagNumber(2)
@@ -1546,11 +1546,11 @@ class MetadataImport extends $pb.GeneratedMessage {
   factory MetadataImport({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     MetadataImport_State? state,
     MetadataImport_DatabaseDump? databaseDump,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1588,11 +1588,11 @@ class MetadataImport extends $pb.GeneratedMessage {
     ..oo(0, [6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<MetadataImport_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MetadataImport_State.STATE_UNSPECIFIED, valueOf: MetadataImport_State.valueOf, enumValues: MetadataImport_State.values)
     ..aOM<MetadataImport_DatabaseDump>(6, _omitFieldNames ? '' : 'databaseDump', subBuilder: MetadataImport_DatabaseDump.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1644,27 +1644,27 @@ class MetadataImport extends $pb.GeneratedMessage {
 
   /// Output only. The time when the metadata import was started.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The time when the metadata import was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. The current state of the metadata import.
   @$pb.TagNumber(5)
@@ -1690,15 +1690,15 @@ class MetadataImport extends $pb.GeneratedMessage {
 
   /// Output only. The time when the metadata import finished.
   @$pb.TagNumber(7)
-  $1775.Timestamp get endTime => $_getN(6);
+  $1776.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
-  set endTime($1775.Timestamp v) { setField(7, v); }
+  set endTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureEndTime() => $_ensure(6);
+  $1776.Timestamp ensureEndTime() => $_ensure(6);
 }
 
 enum MetadataExport_Destination {
@@ -1709,8 +1709,8 @@ enum MetadataExport_Destination {
 /// The details of a metadata export operation.
 class MetadataExport extends $pb.GeneratedMessage {
   factory MetadataExport({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     MetadataExport_State? state,
     $core.String? destinationGcsUri,
     DatabaseDumpSpec_Type? databaseDumpType,
@@ -1743,8 +1743,8 @@ class MetadataExport extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetadataExport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
     ..oo(0, [4])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<MetadataExport_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: MetadataExport_State.STATE_UNSPECIFIED, valueOf: MetadataExport_State.valueOf, enumValues: MetadataExport_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'destinationGcsUri')
     ..e<DatabaseDumpSpec_Type>(5, _omitFieldNames ? '' : 'databaseDumpType', $pb.PbFieldType.OE, defaultOrMaker: DatabaseDumpSpec_Type.TYPE_UNSPECIFIED, valueOf: DatabaseDumpSpec_Type.valueOf, enumValues: DatabaseDumpSpec_Type.values)
@@ -1777,27 +1777,27 @@ class MetadataExport extends $pb.GeneratedMessage {
 
   /// Output only. The time when the export started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. The time when the export ended.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. The current state of the export.
   @$pb.TagNumber(3)
@@ -1837,8 +1837,8 @@ class MetadataExport extends $pb.GeneratedMessage {
 class Backup extends $pb.GeneratedMessage {
   factory Backup({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     Backup_State? state,
     Service? serviceRevision,
     $core.String? description,
@@ -1874,8 +1874,8 @@ class Backup extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Backup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<Backup_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Backup_State.STATE_UNSPECIFIED, valueOf: Backup_State.valueOf, enumValues: Backup_State.values)
     ..aOM<Service>(5, _omitFieldNames ? '' : 'serviceRevision', subBuilder: Service.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
@@ -1918,27 +1918,27 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. The time when the backup was started.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the backup finished creating.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Output only. The current state of the backup.
   @$pb.TagNumber(4)
@@ -1980,8 +1980,8 @@ class Backup extends $pb.GeneratedMessage {
 /// The details of a metadata restore operation.
 class Restore extends $pb.GeneratedMessage {
   factory Restore({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     Restore_State? state,
     $core.String? backup,
     Restore_RestoreType? type,
@@ -2013,8 +2013,8 @@ class Restore extends $pb.GeneratedMessage {
   factory Restore.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Restore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<Restore_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Restore_State.STATE_UNSPECIFIED, valueOf: Restore_State.valueOf, enumValues: Restore_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'backup')
     ..e<Restore_RestoreType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Restore_RestoreType.RESTORE_TYPE_UNSPECIFIED, valueOf: Restore_RestoreType.valueOf, enumValues: Restore_RestoreType.values)
@@ -2045,27 +2045,27 @@ class Restore extends $pb.GeneratedMessage {
 
   /// Output only. The time when the restore started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. The time when the restore ended.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. The current state of the restore.
   @$pb.TagNumber(3)
@@ -2578,7 +2578,7 @@ class CreateServiceRequest extends $pb.GeneratedMessage {
 /// [DataprocMetastore.UpdateService][google.cloud.metastore.v1alpha.DataprocMetastore.UpdateService].
 class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Service? service,
     $core.String? requestId,
   }) {
@@ -2599,7 +2599,7 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Service>(2, _omitFieldNames ? '' : 'service', subBuilder: Service.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -2631,15 +2631,15 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
   /// Fields specified in the `update_mask` are relative to the resource (not
   /// to the full request). A field is overwritten if it is in the mask.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   ///  Required. The metastore service to update. The server only merges fields
   ///  in the service if they are specified in `update_mask`.
@@ -3142,7 +3142,7 @@ class CreateMetadataImportRequest extends $pb.GeneratedMessage {
 /// [DataprocMetastore.UpdateMetadataImport][google.cloud.metastore.v1alpha.DataprocMetastore.UpdateMetadataImport].
 class UpdateMetadataImportRequest extends $pb.GeneratedMessage {
   factory UpdateMetadataImportRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     MetadataImport? metadataImport,
     $core.String? requestId,
   }) {
@@ -3163,7 +3163,7 @@ class UpdateMetadataImportRequest extends $pb.GeneratedMessage {
   factory UpdateMetadataImportRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMetadataImportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<MetadataImport>(2, _omitFieldNames ? '' : 'metadataImport', subBuilder: MetadataImport.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -3195,15 +3195,15 @@ class UpdateMetadataImportRequest extends $pb.GeneratedMessage {
   /// Fields specified in the `update_mask` are relative to the resource (not
   /// to the full request). A field is overwritten if it is in the mask.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   ///  Required. The metadata import to update. The server only merges fields
   ///  in the import if they are specified in `update_mask`.
@@ -3946,8 +3946,8 @@ class RestoreServiceRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of a long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -3983,8 +3983,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -4016,27 +4016,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
 import 'component_settings.pb.dart' as $1340;
-import 'detector.pb.dart' as $4612;
+import 'detector.pb.dart' as $4614;
 import 'settings.pb.dart' as $1339;
 
 /// Request message for GetServiceAccount.
@@ -208,7 +208,7 @@ class GetSettingsRequest extends $pb.GeneratedMessage {
 class UpdateSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateSettingsRequest({
     $1339.Settings? settings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (settings != null) {
@@ -225,7 +225,7 @@ class UpdateSettingsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.settings.v1beta1'), createEmptyInstance: create)
     ..aOM<$1339.Settings>(1, _omitFieldNames ? '' : 'settings', subBuilder: $1339.Settings.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -273,15 +273,15 @@ class UpdateSettingsRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated on the settings.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ResetSettings.
@@ -711,7 +711,7 @@ class GetComponentSettingsRequest extends $pb.GeneratedMessage {
 class UpdateComponentSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateComponentSettingsRequest({
     $1340.ComponentSettings? componentSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (componentSettings != null) {
@@ -728,7 +728,7 @@ class UpdateComponentSettingsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateComponentSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.settings.v1beta1'), createEmptyInstance: create)
     ..aOM<$1340.ComponentSettings>(1, _omitFieldNames ? '' : 'componentSettings', subBuilder: $1340.ComponentSettings.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -776,15 +776,15 @@ class UpdateComponentSettingsRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated on the component settings resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ResetComponentSettings.
@@ -1041,7 +1041,7 @@ class ListDetectorsRequest extends $pb.GeneratedMessage {
 /// Response message for ListDetectors.
 class ListDetectorsResponse extends $pb.GeneratedMessage {
   factory ListDetectorsResponse({
-    $core.Iterable<$4612.Detector>? detectors,
+    $core.Iterable<$4614.Detector>? detectors,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1058,7 +1058,7 @@ class ListDetectorsResponse extends $pb.GeneratedMessage {
   factory ListDetectorsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDetectorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.settings.v1beta1'), createEmptyInstance: create)
-    ..pc<$4612.Detector>(1, _omitFieldNames ? '' : 'detectors', $pb.PbFieldType.PM, subBuilder: $4612.Detector.create)
+    ..pc<$4614.Detector>(1, _omitFieldNames ? '' : 'detectors', $pb.PbFieldType.PM, subBuilder: $4614.Detector.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1086,7 +1086,7 @@ class ListDetectorsResponse extends $pb.GeneratedMessage {
 
   /// The detectors from the specified organization.
   @$pb.TagNumber(1)
-  $core.List<$4612.Detector> get detectors => $_getList(0);
+  $core.List<$4614.Detector> get detectors => $_getList(0);
 
   /// A token that can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.

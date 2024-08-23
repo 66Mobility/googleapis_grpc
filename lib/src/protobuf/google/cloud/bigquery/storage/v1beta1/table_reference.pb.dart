@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Table reference that includes just the 3 strings needed to identify a table.
 class TableReference extends $pb.GeneratedMessage {
@@ -100,7 +100,7 @@ class TableReference extends $pb.GeneratedMessage {
 /// All fields in this message optional.
 class TableModifiers extends $pb.GeneratedMessage {
   factory TableModifiers({
-    $1775.Timestamp? snapshotTime,
+    $1776.Timestamp? snapshotTime,
   }) {
     final $result = create();
     if (snapshotTime != null) {
@@ -113,7 +113,7 @@ class TableModifiers extends $pb.GeneratedMessage {
   factory TableModifiers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TableModifiers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -140,15 +140,15 @@ class TableModifiers extends $pb.GeneratedMessage {
 
   /// The snapshot time of the table. If not set, interpreted as now.
   @$pb.TagNumber(1)
-  $1775.Timestamp get snapshotTime => $_getN(0);
+  $1776.Timestamp get snapshotTime => $_getN(0);
   @$pb.TagNumber(1)
-  set snapshotTime($1775.Timestamp v) { setField(1, v); }
+  set snapshotTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSnapshotTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearSnapshotTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureSnapshotTime() => $_ensure(0);
+  $1776.Timestamp ensureSnapshotTime() => $_ensure(0);
 }
 
 

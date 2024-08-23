@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/types.pb.dart' as $4872;
-import 'css_product_common.pb.dart' as $4873;
+import '../../type/types.pb.dart' as $4874;
+import 'css_product_common.pb.dart' as $4875;
 
 /// The request message for the `GetCssProduct` method.
 class GetCssProductRequest extends $pb.GeneratedMessage {
@@ -75,9 +75,9 @@ class CssProduct extends $pb.GeneratedMessage {
     $core.String? rawProvidedId,
     $core.String? contentLanguage,
     $core.String? feedLabel,
-    $4873.Attributes? attributes,
-    $core.Iterable<$4872.CustomAttribute>? customAttributes,
-    $4873.CssProductStatus? cssProductStatus,
+    $4875.Attributes? attributes,
+    $core.Iterable<$4874.CustomAttribute>? customAttributes,
+    $4875.CssProductStatus? cssProductStatus,
   }) {
     final $result = create();
     if (name != null) {
@@ -112,9 +112,9 @@ class CssProduct extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'rawProvidedId')
     ..aOS(3, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(4, _omitFieldNames ? '' : 'feedLabel')
-    ..aOM<$4873.Attributes>(5, _omitFieldNames ? '' : 'attributes', subBuilder: $4873.Attributes.create)
-    ..pc<$4872.CustomAttribute>(6, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $4872.CustomAttribute.create)
-    ..aOM<$4873.CssProductStatus>(8, _omitFieldNames ? '' : 'cssProductStatus', subBuilder: $4873.CssProductStatus.create)
+    ..aOM<$4875.Attributes>(5, _omitFieldNames ? '' : 'attributes', subBuilder: $4875.Attributes.create)
+    ..pc<$4874.CustomAttribute>(6, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $4874.CustomAttribute.create)
+    ..aOM<$4875.CssProductStatus>(8, _omitFieldNames ? '' : 'cssProductStatus', subBuilder: $4875.CssProductStatus.create)
     ..hasRequiredFields = false
   ;
 
@@ -185,15 +185,15 @@ class CssProduct extends $pb.GeneratedMessage {
 
   /// Output only. A list of product attributes.
   @$pb.TagNumber(5)
-  $4873.Attributes get attributes => $_getN(4);
+  $4875.Attributes get attributes => $_getN(4);
   @$pb.TagNumber(5)
-  set attributes($4873.Attributes v) { setField(5, v); }
+  set attributes($4875.Attributes v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAttributes() => $_has(4);
   @$pb.TagNumber(5)
   void clearAttributes() => clearField(5);
   @$pb.TagNumber(5)
-  $4873.Attributes ensureAttributes() => $_ensure(4);
+  $4875.Attributes ensureAttributes() => $_ensure(4);
 
   /// Output only. A list of custom (CSS-provided) attributes. It can also be
   /// used to submit any attribute of the feed specification in its generic form
@@ -202,20 +202,20 @@ class CssProduct extends $pb.GeneratedMessage {
   /// This is useful for submitting attributes not explicitly exposed by the
   /// API, such as additional attributes used for Buy on Google.
   @$pb.TagNumber(6)
-  $core.List<$4872.CustomAttribute> get customAttributes => $_getList(5);
+  $core.List<$4874.CustomAttribute> get customAttributes => $_getList(5);
 
   /// Output only. The status of a product, data validation issues, that is,
   /// information about a product computed asynchronously.
   @$pb.TagNumber(8)
-  $4873.CssProductStatus get cssProductStatus => $_getN(6);
+  $4875.CssProductStatus get cssProductStatus => $_getN(6);
   @$pb.TagNumber(8)
-  set cssProductStatus($4873.CssProductStatus v) { setField(8, v); }
+  set cssProductStatus($4875.CssProductStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCssProductStatus() => $_has(6);
   @$pb.TagNumber(8)
   void clearCssProductStatus() => clearField(8);
   @$pb.TagNumber(8)
-  $4873.CssProductStatus ensureCssProductStatus() => $_ensure(6);
+  $4875.CssProductStatus ensureCssProductStatus() => $_ensure(6);
 }
 
 /// Request message for the ListCssProducts method.

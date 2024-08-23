@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pbenum.dart' as $4595;
+import 'common.pbenum.dart' as $4597;
 import 'project.pbenum.dart';
 
 export 'project.pbenum.dart';
@@ -269,7 +269,7 @@ class LoggingConfig extends $pb.GeneratedMessage {
 class Project extends $pb.GeneratedMessage {
   factory Project({
     $core.String? name,
-    $core.Iterable<$4595.SolutionType>? enrolledSolutions,
+    $core.Iterable<$4597.SolutionType>? enrolledSolutions,
   }) {
     final $result = create();
     if (name != null) {
@@ -286,7 +286,7 @@ class Project extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Project', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$4595.SolutionType>(2, _omitFieldNames ? '' : 'enrolledSolutions', $pb.PbFieldType.KE, valueOf: $4595.SolutionType.valueOf, enumValues: $4595.SolutionType.values, defaultEnumValue: $4595.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
+    ..pc<$4597.SolutionType>(2, _omitFieldNames ? '' : 'enrolledSolutions', $pb.PbFieldType.KE, valueOf: $4597.SolutionType.valueOf, enumValues: $4597.SolutionType.values, defaultEnumValue: $4597.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -324,7 +324,7 @@ class Project extends $pb.GeneratedMessage {
 
   /// Output only. Retail API solutions that the project has enrolled.
   @$pb.TagNumber(2)
-  $core.List<$4595.SolutionType> get enrolledSolutions => $_getList(1);
+  $core.List<$4597.SolutionType> get enrolledSolutions => $_getList(1);
 }
 
 /// Recipient contact information.

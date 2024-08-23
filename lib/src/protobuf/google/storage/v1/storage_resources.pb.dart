@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $1775;
-import '../../protobuf/wrappers.pb.dart' as $1780;
+import '../../protobuf/timestamp.pb.dart' as $1776;
+import '../../protobuf/wrappers.pb.dart' as $1781;
 import 'storage_resources.pbenum.dart';
 
 export 'storage_resources.pbenum.dart';
@@ -218,7 +218,7 @@ class Bucket_Encryption extends $pb.GeneratedMessage {
 class Bucket_IamConfiguration_UniformBucketLevelAccess extends $pb.GeneratedMessage {
   factory Bucket_IamConfiguration_UniformBucketLevelAccess({
     $core.bool? enabled,
-    $1775.Timestamp? lockedTime,
+    $1776.Timestamp? lockedTime,
   }) {
     final $result = create();
     if (enabled != null) {
@@ -235,7 +235,7 @@ class Bucket_IamConfiguration_UniformBucketLevelAccess extends $pb.GeneratedMess
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Bucket.IamConfiguration.UniformBucketLevelAccess', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'lockedTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'lockedTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -275,15 +275,15 @@ class Bucket_IamConfiguration_UniformBucketLevelAccess extends $pb.GeneratedMess
   /// true to false in [https://tools.ietf.org/html/rfc3339][RFC 3339]. After
   /// the deadline is passed the field is immutable.
   @$pb.TagNumber(2)
-  $1775.Timestamp get lockedTime => $_getN(1);
+  $1776.Timestamp get lockedTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lockedTime($1775.Timestamp v) { setField(2, v); }
+  set lockedTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLockedTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLockedTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLockedTime() => $_ensure(1);
+  $1776.Timestamp ensureLockedTime() => $_ensure(1);
 }
 
 /// Bucket restriction options currently enforced on the bucket.
@@ -427,15 +427,15 @@ class Bucket_Lifecycle_Rule_Action extends $pb.GeneratedMessage {
 class Bucket_Lifecycle_Rule_Condition extends $pb.GeneratedMessage {
   factory Bucket_Lifecycle_Rule_Condition({
     $core.int? age,
-    $1775.Timestamp? createdBefore,
-    $1780.BoolValue? isLive,
+    $1776.Timestamp? createdBefore,
+    $1781.BoolValue? isLive,
     $core.int? numNewerVersions,
     $core.Iterable<$core.String>? matchesStorageClass,
     $core.String? matchesPattern,
     $core.int? daysSinceCustomTime,
-    $1775.Timestamp? customTimeBefore,
+    $1776.Timestamp? customTimeBefore,
     $core.int? daysSinceNoncurrentTime,
-    $1775.Timestamp? noncurrentTimeBefore,
+    $1776.Timestamp? noncurrentTimeBefore,
     $core.Iterable<$core.String>? matchesPrefix,
     $core.Iterable<$core.String>? matchesSuffix,
   }) {
@@ -484,15 +484,15 @@ class Bucket_Lifecycle_Rule_Condition extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Bucket.Lifecycle.Rule.Condition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'age', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createdBefore', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'isLive', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createdBefore', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'isLive', subBuilder: $1781.BoolValue.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'numNewerVersions', $pb.PbFieldType.O3)
     ..pPS(5, _omitFieldNames ? '' : 'matchesStorageClass')
     ..aOS(6, _omitFieldNames ? '' : 'matchesPattern')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'daysSinceCustomTime', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'customTimeBefore', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'customTimeBefore', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'daysSinceNoncurrentTime', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'noncurrentTimeBefore', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'noncurrentTimeBefore', subBuilder: $1776.Timestamp.create)
     ..pPS(11, _omitFieldNames ? '' : 'matchesPrefix')
     ..pPS(12, _omitFieldNames ? '' : 'matchesSuffix')
     ..hasRequiredFields = false
@@ -535,29 +535,29 @@ class Bucket_Lifecycle_Rule_Condition extends $pb.GeneratedMessage {
   /// object is created before midnight of the specified date in UTC.
   /// [1]: https://tools.ietf.org/html/rfc3339
   @$pb.TagNumber(2)
-  $1775.Timestamp get createdBefore => $_getN(1);
+  $1776.Timestamp get createdBefore => $_getN(1);
   @$pb.TagNumber(2)
-  set createdBefore($1775.Timestamp v) { setField(2, v); }
+  set createdBefore($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreatedBefore() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreatedBefore() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreatedBefore() => $_ensure(1);
+  $1776.Timestamp ensureCreatedBefore() => $_ensure(1);
 
   /// Relevant only for versioned objects. If the value is
   /// `true`, this condition matches live objects; if the value
   /// is `false`, it matches archived objects.
   @$pb.TagNumber(3)
-  $1780.BoolValue get isLive => $_getN(2);
+  $1781.BoolValue get isLive => $_getN(2);
   @$pb.TagNumber(3)
-  set isLive($1780.BoolValue v) { setField(3, v); }
+  set isLive($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIsLive() => $_has(2);
   @$pb.TagNumber(3)
   void clearIsLive() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureIsLive() => $_ensure(2);
+  $1781.BoolValue ensureIsLive() => $_ensure(2);
 
   /// Relevant only for versioned objects. If the value is N, this
   /// condition is satisfied when there are at least N versions (including
@@ -607,15 +607,15 @@ class Bucket_Lifecycle_Rule_Condition extends $pb.GeneratedMessage {
   /// An object matches this condition if the custom timestamp set on the
   /// object is before this timestamp.
   @$pb.TagNumber(8)
-  $1775.Timestamp get customTimeBefore => $_getN(7);
+  $1776.Timestamp get customTimeBefore => $_getN(7);
   @$pb.TagNumber(8)
-  set customTimeBefore($1775.Timestamp v) { setField(8, v); }
+  set customTimeBefore($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCustomTimeBefore() => $_has(7);
   @$pb.TagNumber(8)
   void clearCustomTimeBefore() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCustomTimeBefore() => $_ensure(7);
+  $1776.Timestamp ensureCustomTimeBefore() => $_ensure(7);
 
   /// This condition is relevant only for versioned objects. An object
   /// version satisfies this condition only if these many days have been
@@ -635,15 +635,15 @@ class Bucket_Lifecycle_Rule_Condition extends $pb.GeneratedMessage {
   /// version satisfies this condition only if it became noncurrent before
   /// the specified timestamp.
   @$pb.TagNumber(10)
-  $1775.Timestamp get noncurrentTimeBefore => $_getN(9);
+  $1776.Timestamp get noncurrentTimeBefore => $_getN(9);
   @$pb.TagNumber(10)
-  set noncurrentTimeBefore($1775.Timestamp v) { setField(10, v); }
+  set noncurrentTimeBefore($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasNoncurrentTimeBefore() => $_has(9);
   @$pb.TagNumber(10)
   void clearNoncurrentTimeBefore() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureNoncurrentTimeBefore() => $_ensure(9);
+  $1776.Timestamp ensureNoncurrentTimeBefore() => $_ensure(9);
 
   /// List of object name prefixes. If any prefix exactly matches the
   /// beginning of the object name, the condition evaluates to true.
@@ -846,7 +846,7 @@ class Bucket_Logging extends $pb.GeneratedMessage {
 /// Retention policy properties of a bucket.
 class Bucket_RetentionPolicy extends $pb.GeneratedMessage {
   factory Bucket_RetentionPolicy({
-    $1775.Timestamp? effectiveTime,
+    $1776.Timestamp? effectiveTime,
     $core.bool? isLocked,
     $fixnum.Int64? retentionPeriod,
   }) {
@@ -867,7 +867,7 @@ class Bucket_RetentionPolicy extends $pb.GeneratedMessage {
   factory Bucket_RetentionPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Bucket.RetentionPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'effectiveTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'effectiveTime', subBuilder: $1776.Timestamp.create)
     ..aOB(2, _omitFieldNames ? '' : 'isLocked')
     ..aInt64(3, _omitFieldNames ? '' : 'retentionPeriod')
     ..hasRequiredFields = false
@@ -898,15 +898,15 @@ class Bucket_RetentionPolicy extends $pb.GeneratedMessage {
   /// enforced and effective. This value is in
   /// [https://tools.ietf.org/html/rfc3339][RFC 3339] format.
   @$pb.TagNumber(1)
-  $1775.Timestamp get effectiveTime => $_getN(0);
+  $1776.Timestamp get effectiveTime => $_getN(0);
   @$pb.TagNumber(1)
-  set effectiveTime($1775.Timestamp v) { setField(1, v); }
+  set effectiveTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEffectiveTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEffectiveTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEffectiveTime() => $_ensure(0);
+  $1776.Timestamp ensureEffectiveTime() => $_ensure(0);
 
   /// Once locked, an object retention policy cannot be modified.
   @$pb.TagNumber(2)
@@ -1066,7 +1066,7 @@ class Bucket_Website extends $pb.GeneratedMessage {
 class Bucket_Autoclass extends $pb.GeneratedMessage {
   factory Bucket_Autoclass({
     $core.bool? enabled,
-    $1775.Timestamp? toggleTime,
+    $1776.Timestamp? toggleTime,
   }) {
     final $result = create();
     if (enabled != null) {
@@ -1083,7 +1083,7 @@ class Bucket_Autoclass extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Bucket.Autoclass', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'toggleTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'toggleTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1120,15 +1120,15 @@ class Bucket_Autoclass extends $pb.GeneratedMessage {
 
   /// Latest instant at which the `enabled` bit was flipped.
   @$pb.TagNumber(2)
-  $1775.Timestamp get toggleTime => $_getN(1);
+  $1776.Timestamp get toggleTime => $_getN(1);
   @$pb.TagNumber(2)
-  set toggleTime($1775.Timestamp v) { setField(2, v); }
+  set toggleTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasToggleTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearToggleTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureToggleTime() => $_ensure(1);
+  $1776.Timestamp ensureToggleTime() => $_ensure(1);
 }
 
 /// A bucket.
@@ -1137,7 +1137,7 @@ class Bucket extends $pb.GeneratedMessage {
     $core.Iterable<BucketAccessControl>? acl,
     $core.Iterable<ObjectAccessControl>? defaultObjectAcl,
     Bucket_Lifecycle? lifecycle,
-    $1775.Timestamp? timeCreated,
+    $1776.Timestamp? timeCreated,
     $core.String? id,
     $core.String? name,
     $fixnum.Int64? projectNumber,
@@ -1146,7 +1146,7 @@ class Bucket extends $pb.GeneratedMessage {
     $core.String? location,
     $core.String? storageClass,
     $core.String? etag,
-    $1775.Timestamp? updated,
+    $1776.Timestamp? updated,
     $core.bool? defaultEventBasedHold,
     $core.Map<$core.String, $core.String>? labels,
     Bucket_Website? website,
@@ -1256,7 +1256,7 @@ class Bucket extends $pb.GeneratedMessage {
     ..pc<BucketAccessControl>(1, _omitFieldNames ? '' : 'acl', $pb.PbFieldType.PM, subBuilder: BucketAccessControl.create)
     ..pc<ObjectAccessControl>(2, _omitFieldNames ? '' : 'defaultObjectAcl', $pb.PbFieldType.PM, subBuilder: ObjectAccessControl.create)
     ..aOM<Bucket_Lifecycle>(3, _omitFieldNames ? '' : 'lifecycle', subBuilder: Bucket_Lifecycle.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'timeCreated', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'timeCreated', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'id')
     ..aOS(6, _omitFieldNames ? '' : 'name')
     ..aInt64(7, _omitFieldNames ? '' : 'projectNumber')
@@ -1265,7 +1265,7 @@ class Bucket extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'location')
     ..aOS(11, _omitFieldNames ? '' : 'storageClass')
     ..aOS(12, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'updated', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'updated', subBuilder: $1776.Timestamp.create)
     ..aOB(14, _omitFieldNames ? '' : 'defaultEventBasedHold')
     ..m<$core.String, $core.String>(15, _omitFieldNames ? '' : 'labels', entryClassName: 'Bucket.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.storage.v1'))
     ..aOM<Bucket_Website>(16, _omitFieldNames ? '' : 'website', subBuilder: Bucket_Website.create)
@@ -1331,15 +1331,15 @@ class Bucket extends $pb.GeneratedMessage {
   /// Attempting to set or update this field will result in a
   /// [FieldViolation][google.rpc.BadRequest.FieldViolation].
   @$pb.TagNumber(4)
-  $1775.Timestamp get timeCreated => $_getN(3);
+  $1776.Timestamp get timeCreated => $_getN(3);
   @$pb.TagNumber(4)
-  set timeCreated($1775.Timestamp v) { setField(4, v); }
+  set timeCreated($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeCreated() => $_has(3);
   @$pb.TagNumber(4)
   void clearTimeCreated() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureTimeCreated() => $_ensure(3);
+  $1776.Timestamp ensureTimeCreated() => $_ensure(3);
 
   /// The ID of the bucket. For buckets, the `id` and `name` properties are the
   /// same.
@@ -1441,15 +1441,15 @@ class Bucket extends $pb.GeneratedMessage {
   /// Attempting to set or update this field will result in a
   /// [FieldViolation][google.rpc.BadRequest.FieldViolation].
   @$pb.TagNumber(13)
-  $1775.Timestamp get updated => $_getN(12);
+  $1776.Timestamp get updated => $_getN(12);
   @$pb.TagNumber(13)
-  set updated($1775.Timestamp v) { setField(13, v); }
+  set updated($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasUpdated() => $_has(12);
   @$pb.TagNumber(13)
   void clearUpdated() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureUpdated() => $_ensure(12);
+  $1776.Timestamp ensureUpdated() => $_ensure(12);
 
   /// The default value for event-based hold on newly created objects in this
   /// bucket.  Event-based hold is a way to retain objects indefinitely until an
@@ -1932,7 +1932,7 @@ class Channel extends $pb.GeneratedMessage {
     $core.String? resourceId,
     $core.String? resourceUri,
     $core.String? token,
-    $1775.Timestamp? expiration,
+    $1776.Timestamp? expiration,
     $core.String? type,
     $core.String? address,
     $core.Map<$core.String, $core.String>? params,
@@ -1977,7 +1977,7 @@ class Channel extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'resourceId')
     ..aOS(3, _omitFieldNames ? '' : 'resourceUri')
     ..aOS(4, _omitFieldNames ? '' : 'token')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expiration', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expiration', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'type')
     ..aOS(7, _omitFieldNames ? '' : 'address')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'params', entryClassName: 'Channel.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.storage.v1'))
@@ -2050,15 +2050,15 @@ class Channel extends $pb.GeneratedMessage {
 
   /// Date and time of notification channel expiration. Optional.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expiration => $_getN(4);
+  $1776.Timestamp get expiration => $_getN(4);
   @$pb.TagNumber(5)
-  set expiration($1775.Timestamp v) { setField(5, v); }
+  set expiration($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpiration() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpiration() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpiration() => $_ensure(4);
+  $1776.Timestamp ensureExpiration() => $_ensure(4);
 
   /// The type of delivery mechanism used for this channel.
   @$pb.TagNumber(6)
@@ -2101,7 +2101,7 @@ class ListChannelsResponse_Items extends $pb.GeneratedMessage {
     $core.String? resourceId,
     $core.String? pushUrl,
     $core.String? subscriberEmail,
-    $1775.Timestamp? creationTime,
+    $1776.Timestamp? creationTime,
   }) {
     final $result = create();
     if (channelId != null) {
@@ -2130,7 +2130,7 @@ class ListChannelsResponse_Items extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'resourceId')
     ..aOS(3, _omitFieldNames ? '' : 'pushUrl')
     ..aOS(4, _omitFieldNames ? '' : 'subscriberEmail')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'creationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'creationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2198,15 +2198,15 @@ class ListChannelsResponse_Items extends $pb.GeneratedMessage {
 
   /// Time when the channel was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get creationTime => $_getN(4);
+  $1776.Timestamp get creationTime => $_getN(4);
   @$pb.TagNumber(5)
-  set creationTime($1775.Timestamp v) { setField(5, v); }
+  set creationTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreationTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreationTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreationTime() => $_ensure(4);
+  $1776.Timestamp ensureCreationTime() => $_ensure(4);
 }
 
 /// The result of a call to Channels.ListChannels
@@ -2260,7 +2260,7 @@ class ListChannelsResponse extends $pb.GeneratedMessage {
 class ChecksummedData extends $pb.GeneratedMessage {
   factory ChecksummedData({
     $core.List<$core.int>? content,
-    $1780.UInt32Value? crc32c,
+    $1781.UInt32Value? crc32c,
   }) {
     final $result = create();
     if (content != null) {
@@ -2277,7 +2277,7 @@ class ChecksummedData extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChecksummedData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'content', $pb.PbFieldType.OY)
-    ..aOM<$1780.UInt32Value>(2, _omitFieldNames ? '' : 'crc32c', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(2, _omitFieldNames ? '' : 'crc32c', subBuilder: $1781.UInt32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2314,21 +2314,21 @@ class ChecksummedData extends $pb.GeneratedMessage {
 
   /// CRC32C digest of the contents.
   @$pb.TagNumber(2)
-  $1780.UInt32Value get crc32c => $_getN(1);
+  $1781.UInt32Value get crc32c => $_getN(1);
   @$pb.TagNumber(2)
-  set crc32c($1780.UInt32Value v) { setField(2, v); }
+  set crc32c($1781.UInt32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCrc32c() => $_has(1);
   @$pb.TagNumber(2)
   void clearCrc32c() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.UInt32Value ensureCrc32c() => $_ensure(1);
+  $1781.UInt32Value ensureCrc32c() => $_ensure(1);
 }
 
 /// Message used for storing full (not subrange) object checksums.
 class ObjectChecksums extends $pb.GeneratedMessage {
   factory ObjectChecksums({
-    $1780.UInt32Value? crc32c,
+    $1781.UInt32Value? crc32c,
     $core.String? md5Hash,
   }) {
     final $result = create();
@@ -2345,7 +2345,7 @@ class ObjectChecksums extends $pb.GeneratedMessage {
   factory ObjectChecksums.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ObjectChecksums', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
-    ..aOM<$1780.UInt32Value>(1, _omitFieldNames ? '' : 'crc32c', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(1, _omitFieldNames ? '' : 'crc32c', subBuilder: $1781.UInt32Value.create)
     ..aOS(2, _omitFieldNames ? '' : 'md5Hash')
     ..hasRequiredFields = false
   ;
@@ -2375,15 +2375,15 @@ class ObjectChecksums extends $pb.GeneratedMessage {
   /// all written objects, and validated by the GCS service against
   /// client-supplied values if present in an InsertObjectRequest.
   @$pb.TagNumber(1)
-  $1780.UInt32Value get crc32c => $_getN(0);
+  $1781.UInt32Value get crc32c => $_getN(0);
   @$pb.TagNumber(1)
-  set crc32c($1780.UInt32Value v) { setField(1, v); }
+  set crc32c($1781.UInt32Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCrc32c() => $_has(0);
   @$pb.TagNumber(1)
   void clearCrc32c() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.UInt32Value ensureCrc32c() => $_ensure(0);
+  $1781.UInt32Value ensureCrc32c() => $_ensure(0);
 
   /// Hex-encoded MD5 hash of the object data (hexdigest). Whether/how this
   /// checksum is provided and validated is service-dependent.
@@ -2520,8 +2520,8 @@ class HmacKeyMetadata extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.String? serviceAccountEmail,
     $core.String? state,
-    $1775.Timestamp? timeCreated,
-    $1775.Timestamp? updated,
+    $1776.Timestamp? timeCreated,
+    $1776.Timestamp? updated,
     $core.String? etag,
   }) {
     final $result = create();
@@ -2561,8 +2561,8 @@ class HmacKeyMetadata extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'projectId')
     ..aOS(4, _omitFieldNames ? '' : 'serviceAccountEmail')
     ..aOS(5, _omitFieldNames ? '' : 'state')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'timeCreated', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updated', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'timeCreated', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updated', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
   ;
@@ -2640,27 +2640,27 @@ class HmacKeyMetadata extends $pb.GeneratedMessage {
 
   /// The creation time of the HMAC key in RFC 3339 format.
   @$pb.TagNumber(6)
-  $1775.Timestamp get timeCreated => $_getN(5);
+  $1776.Timestamp get timeCreated => $_getN(5);
   @$pb.TagNumber(6)
-  set timeCreated($1775.Timestamp v) { setField(6, v); }
+  set timeCreated($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeCreated() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeCreated() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureTimeCreated() => $_ensure(5);
+  $1776.Timestamp ensureTimeCreated() => $_ensure(5);
 
   /// The last modification time of the HMAC key metadata in RFC 3339 format.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updated => $_getN(6);
+  $1776.Timestamp get updated => $_getN(6);
   @$pb.TagNumber(7)
-  set updated($1775.Timestamp v) { setField(7, v); }
+  set updated($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdated() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdated() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdated() => $_ensure(6);
+  $1776.Timestamp ensureUpdated() => $_ensure(6);
 
   /// Tag updated with each key update.
   @$pb.TagNumber(8)
@@ -2930,20 +2930,20 @@ class Object extends $pb.GeneratedMessage {
     $core.Iterable<ObjectAccessControl>? acl,
     $core.String? contentLanguage,
     $fixnum.Int64? metageneration,
-    $1775.Timestamp? timeDeleted,
+    $1776.Timestamp? timeDeleted,
     $core.String? contentType,
     $fixnum.Int64? size,
-    $1775.Timestamp? timeCreated,
-    $1780.UInt32Value? crc32c,
+    $1776.Timestamp? timeCreated,
+    $1781.UInt32Value? crc32c,
     $core.int? componentCount,
     $core.String? md5Hash,
     $core.String? etag,
-    $1775.Timestamp? updated,
+    $1776.Timestamp? updated,
     $core.String? storageClass,
     $core.String? kmsKeyName,
-    $1775.Timestamp? timeStorageClassUpdated,
+    $1776.Timestamp? timeStorageClassUpdated,
     $core.bool? temporaryHold,
-    $1775.Timestamp? retentionExpirationTime,
+    $1776.Timestamp? retentionExpirationTime,
     $core.Map<$core.String, $core.String>? metadata,
     $core.String? name,
     $core.String? id,
@@ -2951,8 +2951,8 @@ class Object extends $pb.GeneratedMessage {
     $fixnum.Int64? generation,
     Owner? owner,
     Object_CustomerEncryption? customerEncryption,
-    $1780.BoolValue? eventBasedHold,
-    $1775.Timestamp? customTime,
+    $1781.BoolValue? eventBasedHold,
+    $1776.Timestamp? customTime,
   }) {
     final $result = create();
     if (contentEncoding != null) {
@@ -3055,20 +3055,20 @@ class Object extends $pb.GeneratedMessage {
     ..pc<ObjectAccessControl>(4, _omitFieldNames ? '' : 'acl', $pb.PbFieldType.PM, subBuilder: ObjectAccessControl.create)
     ..aOS(5, _omitFieldNames ? '' : 'contentLanguage')
     ..aInt64(6, _omitFieldNames ? '' : 'metageneration')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'timeDeleted', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'timeDeleted', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'contentType')
     ..aInt64(9, _omitFieldNames ? '' : 'size')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'timeCreated', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1780.UInt32Value>(11, _omitFieldNames ? '' : 'crc32c', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'timeCreated', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1781.UInt32Value>(11, _omitFieldNames ? '' : 'crc32c', subBuilder: $1781.UInt32Value.create)
     ..a<$core.int>(12, _omitFieldNames ? '' : 'componentCount', $pb.PbFieldType.O3)
     ..aOS(13, _omitFieldNames ? '' : 'md5Hash')
     ..aOS(14, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(15, _omitFieldNames ? '' : 'updated', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(15, _omitFieldNames ? '' : 'updated', subBuilder: $1776.Timestamp.create)
     ..aOS(16, _omitFieldNames ? '' : 'storageClass')
     ..aOS(17, _omitFieldNames ? '' : 'kmsKeyName')
-    ..aOM<$1775.Timestamp>(18, _omitFieldNames ? '' : 'timeStorageClassUpdated', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(18, _omitFieldNames ? '' : 'timeStorageClassUpdated', subBuilder: $1776.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'temporaryHold')
-    ..aOM<$1775.Timestamp>(20, _omitFieldNames ? '' : 'retentionExpirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(20, _omitFieldNames ? '' : 'retentionExpirationTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(21, _omitFieldNames ? '' : 'metadata', entryClassName: 'Object.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.storage.v1'))
     ..aOS(23, _omitFieldNames ? '' : 'name')
     ..aOS(24, _omitFieldNames ? '' : 'id')
@@ -3076,8 +3076,8 @@ class Object extends $pb.GeneratedMessage {
     ..aInt64(26, _omitFieldNames ? '' : 'generation')
     ..aOM<Owner>(27, _omitFieldNames ? '' : 'owner', subBuilder: Owner.create)
     ..aOM<Object_CustomerEncryption>(28, _omitFieldNames ? '' : 'customerEncryption', subBuilder: Object_CustomerEncryption.create)
-    ..aOM<$1780.BoolValue>(29, _omitFieldNames ? '' : 'eventBasedHold', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1775.Timestamp>(30, _omitFieldNames ? '' : 'customTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1781.BoolValue>(29, _omitFieldNames ? '' : 'eventBasedHold', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1776.Timestamp>(30, _omitFieldNames ? '' : 'customTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3172,15 +3172,15 @@ class Object extends $pb.GeneratedMessage {
   /// Attempting to set or update this field will result in a
   /// [FieldViolation][google.rpc.BadRequest.FieldViolation].
   @$pb.TagNumber(7)
-  $1775.Timestamp get timeDeleted => $_getN(6);
+  $1776.Timestamp get timeDeleted => $_getN(6);
   @$pb.TagNumber(7)
-  set timeDeleted($1775.Timestamp v) { setField(7, v); }
+  set timeDeleted($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTimeDeleted() => $_has(6);
   @$pb.TagNumber(7)
   void clearTimeDeleted() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureTimeDeleted() => $_ensure(6);
+  $1776.Timestamp ensureTimeDeleted() => $_ensure(6);
 
   /// Content-Type of the object data, matching
   /// [https://tools.ietf.org/html/rfc7231#section-3.1.1.5][RFC 7231 §3.1.1.5].
@@ -3212,15 +3212,15 @@ class Object extends $pb.GeneratedMessage {
   /// Attempting to set or update this field will result in a
   /// [FieldViolation][google.rpc.BadRequest.FieldViolation].
   @$pb.TagNumber(10)
-  $1775.Timestamp get timeCreated => $_getN(9);
+  $1776.Timestamp get timeCreated => $_getN(9);
   @$pb.TagNumber(10)
-  set timeCreated($1775.Timestamp v) { setField(10, v); }
+  set timeCreated($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTimeCreated() => $_has(9);
   @$pb.TagNumber(10)
   void clearTimeCreated() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureTimeCreated() => $_ensure(9);
+  $1776.Timestamp ensureTimeCreated() => $_ensure(9);
 
   /// CRC32c checksum. For more information about using the CRC32c
   /// checksum, see
@@ -3230,15 +3230,15 @@ class Object extends $pb.GeneratedMessage {
   /// value provided. Users should instead use the object_checksums field on the
   /// InsertObjectRequest when uploading an object.
   @$pb.TagNumber(11)
-  $1780.UInt32Value get crc32c => $_getN(10);
+  $1781.UInt32Value get crc32c => $_getN(10);
   @$pb.TagNumber(11)
-  set crc32c($1780.UInt32Value v) { setField(11, v); }
+  set crc32c($1781.UInt32Value v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCrc32c() => $_has(10);
   @$pb.TagNumber(11)
   void clearCrc32c() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.UInt32Value ensureCrc32c() => $_ensure(10);
+  $1781.UInt32Value ensureCrc32c() => $_ensure(10);
 
   /// Number of underlying components that make up this object. Components are
   /// accumulated by compose operations.
@@ -3287,15 +3287,15 @@ class Object extends $pb.GeneratedMessage {
   /// Attempting to set or update this field will result in a
   /// [FieldViolation][google.rpc.BadRequest.FieldViolation].
   @$pb.TagNumber(15)
-  $1775.Timestamp get updated => $_getN(14);
+  $1776.Timestamp get updated => $_getN(14);
   @$pb.TagNumber(15)
-  set updated($1775.Timestamp v) { setField(15, v); }
+  set updated($1776.Timestamp v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasUpdated() => $_has(14);
   @$pb.TagNumber(15)
   void clearUpdated() => clearField(15);
   @$pb.TagNumber(15)
-  $1775.Timestamp ensureUpdated() => $_ensure(14);
+  $1776.Timestamp ensureUpdated() => $_ensure(14);
 
   /// Storage class of the object.
   @$pb.TagNumber(16)
@@ -3323,15 +3323,15 @@ class Object extends $pb.GeneratedMessage {
   /// Attempting to set or update this field will result in a
   /// [FieldViolation][google.rpc.BadRequest.FieldViolation].
   @$pb.TagNumber(18)
-  $1775.Timestamp get timeStorageClassUpdated => $_getN(17);
+  $1776.Timestamp get timeStorageClassUpdated => $_getN(17);
   @$pb.TagNumber(18)
-  set timeStorageClassUpdated($1775.Timestamp v) { setField(18, v); }
+  set timeStorageClassUpdated($1776.Timestamp v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasTimeStorageClassUpdated() => $_has(17);
   @$pb.TagNumber(18)
   void clearTimeStorageClassUpdated() => clearField(18);
   @$pb.TagNumber(18)
-  $1775.Timestamp ensureTimeStorageClassUpdated() => $_ensure(17);
+  $1776.Timestamp ensureTimeStorageClassUpdated() => $_ensure(17);
 
   /// Whether an object is under temporary hold. While this flag is set to true,
   /// the object is protected against deletion and overwrites.  A common use case
@@ -3356,15 +3356,15 @@ class Object extends $pb.GeneratedMessage {
   /// the user can reason about policy without having to first unset the
   /// temporary hold).
   @$pb.TagNumber(20)
-  $1775.Timestamp get retentionExpirationTime => $_getN(19);
+  $1776.Timestamp get retentionExpirationTime => $_getN(19);
   @$pb.TagNumber(20)
-  set retentionExpirationTime($1775.Timestamp v) { setField(20, v); }
+  set retentionExpirationTime($1776.Timestamp v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasRetentionExpirationTime() => $_has(19);
   @$pb.TagNumber(20)
   void clearRetentionExpirationTime() => clearField(20);
   @$pb.TagNumber(20)
-  $1775.Timestamp ensureRetentionExpirationTime() => $_ensure(19);
+  $1776.Timestamp ensureRetentionExpirationTime() => $_ensure(19);
 
   /// User-provided metadata, in key/value pairs.
   @$pb.TagNumber(21)
@@ -3458,27 +3458,27 @@ class Object extends $pb.GeneratedMessage {
   /// after that. That means retention duration of the objects begins from the
   /// moment event-based hold transitioned from true to false.
   @$pb.TagNumber(29)
-  $1780.BoolValue get eventBasedHold => $_getN(27);
+  $1781.BoolValue get eventBasedHold => $_getN(27);
   @$pb.TagNumber(29)
-  set eventBasedHold($1780.BoolValue v) { setField(29, v); }
+  set eventBasedHold($1781.BoolValue v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasEventBasedHold() => $_has(27);
   @$pb.TagNumber(29)
   void clearEventBasedHold() => clearField(29);
   @$pb.TagNumber(29)
-  $1780.BoolValue ensureEventBasedHold() => $_ensure(27);
+  $1781.BoolValue ensureEventBasedHold() => $_ensure(27);
 
   /// A user-specified timestamp set on an object.
   @$pb.TagNumber(30)
-  $1775.Timestamp get customTime => $_getN(28);
+  $1776.Timestamp get customTime => $_getN(28);
   @$pb.TagNumber(30)
-  set customTime($1775.Timestamp v) { setField(30, v); }
+  set customTime($1776.Timestamp v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasCustomTime() => $_has(28);
   @$pb.TagNumber(30)
   void clearCustomTime() => clearField(30);
   @$pb.TagNumber(30)
-  $1775.Timestamp ensureCustomTime() => $_ensure(28);
+  $1776.Timestamp ensureCustomTime() => $_ensure(28);
 }
 
 /// An access-control entry.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'continuous_validation_logging.pbenum.dart';
 
 export 'continuous_validation_logging.pbenum.dart';
@@ -388,8 +388,8 @@ class ContinuousValidationEvent_ContinuousValidationPodEvent_ImageDetails extend
 class ContinuousValidationEvent_ContinuousValidationPodEvent extends $pb.GeneratedMessage {
   factory ContinuousValidationEvent_ContinuousValidationPodEvent({
     $core.String? pod,
-    $1775.Timestamp? deployTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? deployTime,
+    $1776.Timestamp? endTime,
     ContinuousValidationEvent_ContinuousValidationPodEvent_PolicyConformanceVerdict? verdict,
     $core.Iterable<ContinuousValidationEvent_ContinuousValidationPodEvent_ImageDetails>? images,
     $core.String? podNamespace,
@@ -425,8 +425,8 @@ class ContinuousValidationEvent_ContinuousValidationPodEvent extends $pb.Generat
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContinuousValidationEvent.ContinuousValidationPodEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.binaryauthorization.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'pod')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'deployTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'deployTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<ContinuousValidationEvent_ContinuousValidationPodEvent_PolicyConformanceVerdict>(4, _omitFieldNames ? '' : 'verdict', $pb.PbFieldType.OE, defaultOrMaker: ContinuousValidationEvent_ContinuousValidationPodEvent_PolicyConformanceVerdict.POLICY_CONFORMANCE_VERDICT_UNSPECIFIED, valueOf: ContinuousValidationEvent_ContinuousValidationPodEvent_PolicyConformanceVerdict.valueOf, enumValues: ContinuousValidationEvent_ContinuousValidationPodEvent_PolicyConformanceVerdict.values)
     ..pc<ContinuousValidationEvent_ContinuousValidationPodEvent_ImageDetails>(5, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: ContinuousValidationEvent_ContinuousValidationPodEvent_ImageDetails.create)
     ..aOS(7, _omitFieldNames ? '' : 'podNamespace')
@@ -467,27 +467,27 @@ class ContinuousValidationEvent_ContinuousValidationPodEvent extends $pb.Generat
 
   /// Deploy time of the Pod from k8s.
   @$pb.TagNumber(2)
-  $1775.Timestamp get deployTime => $_getN(1);
+  $1776.Timestamp get deployTime => $_getN(1);
   @$pb.TagNumber(2)
-  set deployTime($1775.Timestamp v) { setField(2, v); }
+  set deployTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeployTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeployTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureDeployTime() => $_ensure(1);
+  $1776.Timestamp ensureDeployTime() => $_ensure(1);
 
   /// Termination time of the Pod from k8s, or nothing if still running.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Auditing verdict for this Pod.
   @$pb.TagNumber(4)

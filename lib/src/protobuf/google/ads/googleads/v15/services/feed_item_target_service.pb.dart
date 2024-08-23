@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $2352;
-import '../resources/feed_item_target.pb.dart' as $2396;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $2353;
+import '../resources/feed_item_target.pb.dart' as $2397;
 
 /// Request message for
 /// [FeedItemTargetService.MutateFeedItemTargets][google.ads.googleads.v15.services.FeedItemTargetService.MutateFeedItemTargets].
@@ -25,7 +25,7 @@ class MutateFeedItemTargetsRequest extends $pb.GeneratedMessage {
     $core.Iterable<FeedItemTargetOperation>? operations,
     $core.bool? validateOnly,
     $core.bool? partialFailure,
-    $2352.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $2353.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateFeedItemTargetsRequest extends $pb.GeneratedMessage {
     ..pc<FeedItemTargetOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: FeedItemTargetOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..aOB(4, _omitFieldNames ? '' : 'partialFailure')
-    ..e<$2352.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2352.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2352.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2352.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$2353.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2353.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2353.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2353.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -122,9 +122,9 @@ class MutateFeedItemTargetsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $2352.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $2353.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($2352.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($2353.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,7 +140,7 @@ enum FeedItemTargetOperation_Operation {
 /// A single operation (create, remove) on an feed item target.
 class FeedItemTargetOperation extends $pb.GeneratedMessage {
   factory FeedItemTargetOperation({
-    $2396.FeedItemTarget? create_1,
+    $2397.FeedItemTarget? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -163,7 +163,7 @@ class FeedItemTargetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItemTargetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$2396.FeedItemTarget>(1, _omitFieldNames ? '' : 'create', subBuilder: $2396.FeedItemTarget.create)
+    ..aOM<$2397.FeedItemTarget>(1, _omitFieldNames ? '' : 'create', subBuilder: $2397.FeedItemTarget.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -195,15 +195,15 @@ class FeedItemTargetOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new feed item
   /// target.
   @$pb.TagNumber(1)
-  $2396.FeedItemTarget get create_1 => $_getN(0);
+  $2397.FeedItemTarget get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2396.FeedItemTarget v) { setField(1, v); }
+  set create_1($2397.FeedItemTarget v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2396.FeedItemTarget ensureCreate_1() => $_ensure(0);
+  $2397.FeedItemTarget ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed feed item target is
   ///  expected, in this format:
@@ -223,7 +223,7 @@ class FeedItemTargetOperation extends $pb.GeneratedMessage {
 class MutateFeedItemTargetsResponse extends $pb.GeneratedMessage {
   factory MutateFeedItemTargetsResponse({
     $core.Iterable<MutateFeedItemTargetResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -240,7 +240,7 @@ class MutateFeedItemTargetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateFeedItemTargetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<MutateFeedItemTargetResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateFeedItemTargetResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -274,22 +274,22 @@ class MutateFeedItemTargetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the feed item target mutate.
 class MutateFeedItemTargetResult extends $pb.GeneratedMessage {
   factory MutateFeedItemTargetResult({
     $core.String? resourceName,
-    $2396.FeedItemTarget? feedItemTarget,
+    $2397.FeedItemTarget? feedItemTarget,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -306,7 +306,7 @@ class MutateFeedItemTargetResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateFeedItemTargetResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2396.FeedItemTarget>(2, _omitFieldNames ? '' : 'feedItemTarget', subBuilder: $2396.FeedItemTarget.create)
+    ..aOM<$2397.FeedItemTarget>(2, _omitFieldNames ? '' : 'feedItemTarget', subBuilder: $2397.FeedItemTarget.create)
     ..hasRequiredFields = false
   ;
 
@@ -345,15 +345,15 @@ class MutateFeedItemTargetResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $2396.FeedItemTarget get feedItemTarget => $_getN(1);
+  $2397.FeedItemTarget get feedItemTarget => $_getN(1);
   @$pb.TagNumber(2)
-  set feedItemTarget($2396.FeedItemTarget v) { setField(2, v); }
+  set feedItemTarget($2397.FeedItemTarget v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFeedItemTarget() => $_has(1);
   @$pb.TagNumber(2)
   void clearFeedItemTarget() => clearField(2);
   @$pb.TagNumber(2)
-  $2396.FeedItemTarget ensureFeedItemTarget() => $_ensure(1);
+  $2397.FeedItemTarget ensureFeedItemTarget() => $_ensure(1);
 }
 
 

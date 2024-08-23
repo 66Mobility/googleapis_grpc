@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -36,16 +36,16 @@ class Secret extends $pb.GeneratedMessage {
   factory Secret({
     $core.String? name,
     Replication? replication,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<Topic>? topics,
-    $1775.Timestamp? expireTime,
-    $1737.Duration? ttl,
+    $1776.Timestamp? expireTime,
+    $1738.Duration? ttl,
     $core.String? etag,
     Rotation? rotation,
     $core.Map<$core.String, $fixnum.Int64>? versionAliases,
     $core.Map<$core.String, $core.String>? annotations,
-    $1737.Duration? versionDestroyTtl,
+    $1738.Duration? versionDestroyTtl,
     CustomerManagedEncryption? customerManagedEncryption,
   }) {
     final $result = create();
@@ -103,16 +103,16 @@ class Secret extends $pb.GeneratedMessage {
     ..oo(0, [6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Replication>(2, _omitFieldNames ? '' : 'replication', subBuilder: Replication.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Secret.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.secretmanager.v1'))
     ..pc<Topic>(5, _omitFieldNames ? '' : 'topics', $pb.PbFieldType.PM, subBuilder: Topic.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..aOM<Rotation>(9, _omitFieldNames ? '' : 'rotation', subBuilder: Rotation.create)
     ..m<$core.String, $fixnum.Int64>(11, _omitFieldNames ? '' : 'versionAliases', entryClassName: 'Secret.VersionAliasesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.O6, packageName: const $pb.PackageName('google.cloud.secretmanager.v1'))
     ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'annotations', entryClassName: 'Secret.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.secretmanager.v1'))
-    ..aOM<$1737.Duration>(14, _omitFieldNames ? '' : 'versionDestroyTtl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(14, _omitFieldNames ? '' : 'versionDestroyTtl', subBuilder: $1738.Duration.create)
     ..aOM<CustomerManagedEncryption>(15, _omitFieldNames ? '' : 'customerManagedEncryption', subBuilder: CustomerManagedEncryption.create)
     ..hasRequiredFields = false
   ;
@@ -171,15 +171,15 @@ class Secret extends $pb.GeneratedMessage {
   /// Output only. The time at which the
   /// [Secret][google.cloud.secretmanager.v1.Secret] was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   ///  The labels assigned to this Secret.
   ///
@@ -204,28 +204,28 @@ class Secret extends $pb.GeneratedMessage {
   /// [Secret][google.cloud.secretmanager.v1.Secret] is scheduled to expire.
   /// This is always provided on output, regardless of what was sent on input.
   @$pb.TagNumber(6)
-  $1775.Timestamp get expireTime => $_getN(5);
+  $1776.Timestamp get expireTime => $_getN(5);
   @$pb.TagNumber(6)
-  set expireTime($1775.Timestamp v) { setField(6, v); }
+  set expireTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExpireTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearExpireTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureExpireTime() => $_ensure(5);
+  $1776.Timestamp ensureExpireTime() => $_ensure(5);
 
   /// Input only. The TTL for the
   /// [Secret][google.cloud.secretmanager.v1.Secret].
   @$pb.TagNumber(7)
-  $1737.Duration get ttl => $_getN(6);
+  $1738.Duration get ttl => $_getN(6);
   @$pb.TagNumber(7)
-  set ttl($1737.Duration v) { setField(7, v); }
+  set ttl($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTtl() => $_has(6);
   @$pb.TagNumber(7)
   void clearTtl() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureTtl() => $_ensure(6);
+  $1738.Duration ensureTtl() => $_ensure(6);
 
   /// Optional. Etag of the currently stored
   /// [Secret][google.cloud.secretmanager.v1.Secret].
@@ -288,15 +288,15 @@ class Secret extends $pb.GeneratedMessage {
   ///  on calling destroy instead the version goes to a disabled state and
   ///  destruction happens after the TTL expires.
   @$pb.TagNumber(14)
-  $1737.Duration get versionDestroyTtl => $_getN(11);
+  $1738.Duration get versionDestroyTtl => $_getN(11);
   @$pb.TagNumber(14)
-  set versionDestroyTtl($1737.Duration v) { setField(14, v); }
+  set versionDestroyTtl($1738.Duration v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasVersionDestroyTtl() => $_has(11);
   @$pb.TagNumber(14)
   void clearVersionDestroyTtl() => clearField(14);
   @$pb.TagNumber(14)
-  $1737.Duration ensureVersionDestroyTtl() => $_ensure(11);
+  $1738.Duration ensureVersionDestroyTtl() => $_ensure(11);
 
   ///  Optional. The customer-managed encryption configuration of the Regionalised
   ///  Secrets. If no configuration is provided, Google-managed default encryption
@@ -323,13 +323,13 @@ class Secret extends $pb.GeneratedMessage {
 class SecretVersion extends $pb.GeneratedMessage {
   factory SecretVersion({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? destroyTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? destroyTime,
     SecretVersion_State? state,
     ReplicationStatus? replicationStatus,
     $core.String? etag,
     $core.bool? clientSpecifiedPayloadChecksum,
-    $1775.Timestamp? scheduledDestroyTime,
+    $1776.Timestamp? scheduledDestroyTime,
     CustomerManagedEncryptionStatus? customerManagedEncryption,
   }) {
     final $result = create();
@@ -368,13 +368,13 @@ class SecretVersion extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SecretVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.secretmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'destroyTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'destroyTime', subBuilder: $1776.Timestamp.create)
     ..e<SecretVersion_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: SecretVersion_State.STATE_UNSPECIFIED, valueOf: SecretVersion_State.valueOf, enumValues: SecretVersion_State.values)
     ..aOM<ReplicationStatus>(5, _omitFieldNames ? '' : 'replicationStatus', subBuilder: ReplicationStatus.create)
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..aOB(7, _omitFieldNames ? '' : 'clientSpecifiedPayloadChecksum')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'scheduledDestroyTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'scheduledDestroyTime', subBuilder: $1776.Timestamp.create)
     ..aOM<CustomerManagedEncryptionStatus>(9, _omitFieldNames ? '' : 'customerManagedEncryption', subBuilder: CustomerManagedEncryptionStatus.create)
     ..hasRequiredFields = false
   ;
@@ -419,15 +419,15 @@ class SecretVersion extends $pb.GeneratedMessage {
   /// Output only. The time at which the
   /// [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time this
   /// [SecretVersion][google.cloud.secretmanager.v1.SecretVersion] was destroyed.
@@ -435,15 +435,15 @@ class SecretVersion extends $pb.GeneratedMessage {
   /// is
   /// [DESTROYED][google.cloud.secretmanager.v1.SecretVersion.State.DESTROYED].
   @$pb.TagNumber(3)
-  $1775.Timestamp get destroyTime => $_getN(2);
+  $1776.Timestamp get destroyTime => $_getN(2);
   @$pb.TagNumber(3)
-  set destroyTime($1775.Timestamp v) { setField(3, v); }
+  set destroyTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDestroyTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDestroyTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureDestroyTime() => $_ensure(2);
+  $1776.Timestamp ensureDestroyTime() => $_ensure(2);
 
   /// Output only. The current state of the
   /// [SecretVersion][google.cloud.secretmanager.v1.SecretVersion].
@@ -502,15 +502,15 @@ class SecretVersion extends $pb.GeneratedMessage {
   /// destruction. The version is destroyed only after the
   /// `scheduled_destroy_time`.
   @$pb.TagNumber(8)
-  $1775.Timestamp get scheduledDestroyTime => $_getN(7);
+  $1776.Timestamp get scheduledDestroyTime => $_getN(7);
   @$pb.TagNumber(8)
-  set scheduledDestroyTime($1775.Timestamp v) { setField(8, v); }
+  set scheduledDestroyTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasScheduledDestroyTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearScheduledDestroyTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureScheduledDestroyTime() => $_ensure(7);
+  $1776.Timestamp ensureScheduledDestroyTime() => $_ensure(7);
 
   /// Output only. The customer-managed encryption status of the
   /// [SecretVersion][google.cloud.secretmanager.v1.SecretVersion]. Only
@@ -1278,8 +1278,8 @@ class Topic extends $pb.GeneratedMessage {
 /// set to configure rotation.
 class Rotation extends $pb.GeneratedMessage {
   factory Rotation({
-    $1775.Timestamp? nextRotationTime,
-    $1737.Duration? rotationPeriod,
+    $1776.Timestamp? nextRotationTime,
+    $1738.Duration? rotationPeriod,
   }) {
     final $result = create();
     if (nextRotationTime != null) {
@@ -1295,8 +1295,8 @@ class Rotation extends $pb.GeneratedMessage {
   factory Rotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Rotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.secretmanager.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'nextRotationTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'rotationPeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'nextRotationTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'rotationPeriod', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1331,15 +1331,15 @@ class Rotation extends $pb.GeneratedMessage {
   ///  [rotation_period][google.cloud.secretmanager.v1.Rotation.rotation_period]
   ///  is set.
   @$pb.TagNumber(1)
-  $1775.Timestamp get nextRotationTime => $_getN(0);
+  $1776.Timestamp get nextRotationTime => $_getN(0);
   @$pb.TagNumber(1)
-  set nextRotationTime($1775.Timestamp v) { setField(1, v); }
+  set nextRotationTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNextRotationTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearNextRotationTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureNextRotationTime() => $_ensure(0);
+  $1776.Timestamp ensureNextRotationTime() => $_ensure(0);
 
   ///  Input only. The Duration between rotation notifications. Must be in seconds
   ///  and at least 3600s (1h) and at most 3153600000s (100 years).
@@ -1353,15 +1353,15 @@ class Rotation extends $pb.GeneratedMessage {
   ///  will be advanced by this period when the service automatically sends
   ///  rotation notifications.
   @$pb.TagNumber(2)
-  $1737.Duration get rotationPeriod => $_getN(1);
+  $1738.Duration get rotationPeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set rotationPeriod($1737.Duration v) { setField(2, v); }
+  set rotationPeriod($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRotationPeriod() => $_has(1);
   @$pb.TagNumber(2)
   void clearRotationPeriod() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureRotationPeriod() => $_ensure(1);
+  $1738.Duration ensureRotationPeriod() => $_ensure(1);
 }
 
 /// A secret payload resource in the Secret Manager API. This contains the

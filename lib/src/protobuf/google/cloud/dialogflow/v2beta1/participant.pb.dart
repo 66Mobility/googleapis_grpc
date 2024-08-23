@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'audio_config.pb.dart' as $4497;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'audio_config.pb.dart' as $4499;
 import 'participant.pbenum.dart';
 import 'session.pb.dart' as $912;
 
@@ -173,10 +173,10 @@ class Message extends $pb.GeneratedMessage {
     $core.String? languageCode,
     $core.String? participant,
     Participant_Role? participantRole,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     MessageAnnotation? messageAnnotation,
     $912.SentimentAnalysisResult? sentimentAnalysis,
-    $1775.Timestamp? sendTime,
+    $1776.Timestamp? sendTime,
     $core.Iterable<ResponseMessage>? responseMessages,
   }) {
     final $result = create();
@@ -222,10 +222,10 @@ class Message extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
     ..aOS(4, _omitFieldNames ? '' : 'participant')
     ..e<Participant_Role>(5, _omitFieldNames ? '' : 'participantRole', $pb.PbFieldType.OE, defaultOrMaker: Participant_Role.ROLE_UNSPECIFIED, valueOf: Participant_Role.valueOf, enumValues: Participant_Role.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<MessageAnnotation>(7, _omitFieldNames ? '' : 'messageAnnotation', subBuilder: MessageAnnotation.create)
     ..aOM<$912.SentimentAnalysisResult>(8, _omitFieldNames ? '' : 'sentimentAnalysis', subBuilder: $912.SentimentAnalysisResult.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'sendTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'sendTime', subBuilder: $1776.Timestamp.create)
     ..pc<ResponseMessage>(11, _omitFieldNames ? '' : 'responseMessages', $pb.PbFieldType.PM, subBuilder: ResponseMessage.create)
     ..hasRequiredFields = false
   ;
@@ -307,15 +307,15 @@ class Message extends $pb.GeneratedMessage {
 
   /// Output only. The time when the message was created in Contact Center AI.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The annotation for the message.
   @$pb.TagNumber(7)
@@ -343,15 +343,15 @@ class Message extends $pb.GeneratedMessage {
 
   /// Optional. The time when the message was sent.
   @$pb.TagNumber(9)
-  $1775.Timestamp get sendTime => $_getN(8);
+  $1776.Timestamp get sendTime => $_getN(8);
   @$pb.TagNumber(9)
-  set sendTime($1775.Timestamp v) { setField(9, v); }
+  set sendTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSendTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearSendTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureSendTime() => $_ensure(8);
+  $1776.Timestamp ensureSendTime() => $_ensure(8);
 
   /// Optional. Automated agent responses.
   @$pb.TagNumber(11)
@@ -640,7 +640,7 @@ class ListParticipantsResponse extends $pb.GeneratedMessage {
 class UpdateParticipantRequest extends $pb.GeneratedMessage {
   factory UpdateParticipantRequest({
     Participant? participant,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (participant != null) {
@@ -657,7 +657,7 @@ class UpdateParticipantRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateParticipantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<Participant>(1, _omitFieldNames ? '' : 'participant', subBuilder: Participant.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -696,21 +696,21 @@ class UpdateParticipantRequest extends $pb.GeneratedMessage {
 
   /// Required. The mask to specify which fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Represents the natural language speech audio to be processed.
 class AudioInput extends $pb.GeneratedMessage {
   factory AudioInput({
-    $4497.InputAudioConfig? config,
+    $4499.InputAudioConfig? config,
     $core.List<$core.int>? audio,
   }) {
     final $result = create();
@@ -727,7 +727,7 @@ class AudioInput extends $pb.GeneratedMessage {
   factory AudioInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudioInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
-    ..aOM<$4497.InputAudioConfig>(1, _omitFieldNames ? '' : 'config', subBuilder: $4497.InputAudioConfig.create)
+    ..aOM<$4499.InputAudioConfig>(1, _omitFieldNames ? '' : 'config', subBuilder: $4499.InputAudioConfig.create)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'audio', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -755,15 +755,15 @@ class AudioInput extends $pb.GeneratedMessage {
 
   /// Required. Instructs the speech recognizer how to process the speech audio.
   @$pb.TagNumber(1)
-  $4497.InputAudioConfig get config => $_getN(0);
+  $4499.InputAudioConfig get config => $_getN(0);
   @$pb.TagNumber(1)
-  set config($4497.InputAudioConfig v) { setField(1, v); }
+  set config($4499.InputAudioConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4497.InputAudioConfig ensureConfig() => $_ensure(0);
+  $4499.InputAudioConfig ensureConfig() => $_ensure(0);
 
   /// Required. The natural language speech audio to be processed.
   /// A single request can contain up to 2 minutes of speech audio data.
@@ -782,7 +782,7 @@ class AudioInput extends $pb.GeneratedMessage {
 /// Represents the natural language speech audio to be played to the end user.
 class OutputAudio extends $pb.GeneratedMessage {
   factory OutputAudio({
-    $4497.OutputAudioConfig? config,
+    $4499.OutputAudioConfig? config,
     $core.List<$core.int>? audio,
   }) {
     final $result = create();
@@ -799,7 +799,7 @@ class OutputAudio extends $pb.GeneratedMessage {
   factory OutputAudio.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OutputAudio', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
-    ..aOM<$4497.OutputAudioConfig>(1, _omitFieldNames ? '' : 'config', subBuilder: $4497.OutputAudioConfig.create)
+    ..aOM<$4499.OutputAudioConfig>(1, _omitFieldNames ? '' : 'config', subBuilder: $4499.OutputAudioConfig.create)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'audio', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -828,15 +828,15 @@ class OutputAudio extends $pb.GeneratedMessage {
   /// Required. Instructs the speech synthesizer how to generate the speech
   /// audio.
   @$pb.TagNumber(1)
-  $4497.OutputAudioConfig get config => $_getN(0);
+  $4499.OutputAudioConfig get config => $_getN(0);
   @$pb.TagNumber(1)
-  set config($4497.OutputAudioConfig v) { setField(1, v); }
+  set config($4499.OutputAudioConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4497.OutputAudioConfig ensureConfig() => $_ensure(0);
+  $4499.OutputAudioConfig ensureConfig() => $_ensure(0);
 
   /// Required. The natural language speech audio.
   @$pb.TagNumber(2)
@@ -868,11 +868,11 @@ class AutomatedAgentReply extends $pb.GeneratedMessage {
     $core.String? intent,
     $core.String? event,
   @$core.Deprecated('This field is deprecated.')
-    $1734.Struct? cxSessionParameters,
+    $1735.Struct? cxSessionParameters,
     AutomatedAgentReply_AutomatedAgentReplyType? automatedAgentReplyType,
     $core.bool? allowCancellation,
     $core.double? matchConfidence,
-    $1734.Struct? parameters,
+    $1735.Struct? parameters,
     $core.String? cxCurrentPage,
     $core.List<$core.int>? callCompanionAuthCode,
   }) {
@@ -933,11 +933,11 @@ class AutomatedAgentReply extends $pb.GeneratedMessage {
     ..pc<ResponseMessage>(3, _omitFieldNames ? '' : 'responseMessages', $pb.PbFieldType.PM, subBuilder: ResponseMessage.create)
     ..aOS(4, _omitFieldNames ? '' : 'intent')
     ..aOS(5, _omitFieldNames ? '' : 'event')
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'cxSessionParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'cxSessionParameters', subBuilder: $1735.Struct.create)
     ..e<AutomatedAgentReply_AutomatedAgentReplyType>(7, _omitFieldNames ? '' : 'automatedAgentReplyType', $pb.PbFieldType.OE, defaultOrMaker: AutomatedAgentReply_AutomatedAgentReplyType.AUTOMATED_AGENT_REPLY_TYPE_UNSPECIFIED, valueOf: AutomatedAgentReply_AutomatedAgentReplyType.valueOf, enumValues: AutomatedAgentReply_AutomatedAgentReplyType.values)
     ..aOB(8, _omitFieldNames ? '' : 'allowCancellation')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'matchConfidence', $pb.PbFieldType.OF)
-    ..aOM<$1734.Struct>(10, _omitFieldNames ? '' : 'parameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(10, _omitFieldNames ? '' : 'parameters', subBuilder: $1735.Struct.create)
     ..aOS(11, _omitFieldNames ? '' : 'cxCurrentPage')
     ..a<$core.List<$core.int>>(12, _omitFieldNames ? '' : 'callCompanionAuthCode', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
@@ -1017,10 +1017,10 @@ class AutomatedAgentReply extends $pb.GeneratedMessage {
   /// Deprecated: Use `parameters` instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  $1734.Struct get cxSessionParameters => $_getN(4);
+  $1735.Struct get cxSessionParameters => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  set cxSessionParameters($1734.Struct v) { setField(6, v); }
+  set cxSessionParameters($1735.Struct v) { setField(6, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
   $core.bool hasCxSessionParameters() => $_has(4);
@@ -1029,7 +1029,7 @@ class AutomatedAgentReply extends $pb.GeneratedMessage {
   void clearCxSessionParameters() => clearField(6);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  $1734.Struct ensureCxSessionParameters() => $_ensure(4);
+  $1735.Struct ensureCxSessionParameters() => $_ensure(4);
 
   /// AutomatedAgentReply type.
   @$pb.TagNumber(7)
@@ -1070,15 +1070,15 @@ class AutomatedAgentReply extends $pb.GeneratedMessage {
 
   /// The collection of current parameters at the time of this response.
   @$pb.TagNumber(10)
-  $1734.Struct get parameters => $_getN(8);
+  $1735.Struct get parameters => $_getN(8);
   @$pb.TagNumber(10)
-  set parameters($1734.Struct v) { setField(10, v); }
+  set parameters($1735.Struct v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasParameters() => $_has(8);
   @$pb.TagNumber(10)
   void clearParameters() => clearField(10);
   @$pb.TagNumber(10)
-  $1734.Struct ensureParameters() => $_ensure(8);
+  $1735.Struct ensureParameters() => $_ensure(8);
 
   /// The unique identifier of the current Dialogflow CX conversation page.
   /// Format: `projects/<Project ID>/locations/<Location ID>/agents/<Agent
@@ -1108,7 +1108,7 @@ class SuggestionInput extends $pb.GeneratedMessage {
   factory SuggestionInput({
     $core.String? answerRecord,
     $912.TextInput? textOverride,
-    $1734.Struct? parameters,
+    $1735.Struct? parameters,
     IntentInput? intentInput,
   }) {
     final $result = create();
@@ -1133,7 +1133,7 @@ class SuggestionInput extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestionInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'answerRecord')
     ..aOM<$912.TextInput>(2, _omitFieldNames ? '' : 'textOverride', subBuilder: $912.TextInput.create)
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'parameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'parameters', subBuilder: $1735.Struct.create)
     ..aOM<IntentInput>(6, _omitFieldNames ? '' : 'intentInput', subBuilder: IntentInput.create)
     ..hasRequiredFields = false
   ;
@@ -1211,15 +1211,15 @@ class SuggestionInput extends $pb.GeneratedMessage {
   ///  map from composite entity property names to property values, otherwise,
   ///  use parameter value.
   @$pb.TagNumber(4)
-  $1734.Struct get parameters => $_getN(2);
+  $1735.Struct get parameters => $_getN(2);
   @$pb.TagNumber(4)
-  set parameters($1734.Struct v) { setField(4, v); }
+  set parameters($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(4)
   void clearParameters() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureParameters() => $_ensure(2);
+  $1735.Struct ensureParameters() => $_ensure(2);
 
   /// The intent to be triggered on V3 agent.
   @$pb.TagNumber(6)
@@ -1436,17 +1436,17 @@ enum AnalyzeContentRequest_Input {
 class AnalyzeContentRequest extends $pb.GeneratedMessage {
   factory AnalyzeContentRequest({
     $core.String? participant,
-    $4497.OutputAudioConfig? replyAudioConfig,
+    $4499.OutputAudioConfig? replyAudioConfig,
     $912.TextInput? textInput,
     AudioInput? audioInput,
     $912.EventInput? eventInput,
     $912.QueryParameters? queryParams,
-    $1775.Timestamp? messageSendTime,
+    $1776.Timestamp? messageSendTime,
     $core.String? requestId,
     SuggestionInput? suggestionInput,
     IntentInput? intentInput,
     AssistQueryParameters? assistQueryParams,
-    $1734.Struct? cxParameters,
+    $1735.Struct? cxParameters,
     $core.String? cxCurrentPage,
   }) {
     final $result = create();
@@ -1506,17 +1506,17 @@ class AnalyzeContentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzeContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..oo(0, [6, 7, 8, 12, 13])
     ..aOS(1, _omitFieldNames ? '' : 'participant')
-    ..aOM<$4497.OutputAudioConfig>(5, _omitFieldNames ? '' : 'replyAudioConfig', subBuilder: $4497.OutputAudioConfig.create)
+    ..aOM<$4499.OutputAudioConfig>(5, _omitFieldNames ? '' : 'replyAudioConfig', subBuilder: $4499.OutputAudioConfig.create)
     ..aOM<$912.TextInput>(6, _omitFieldNames ? '' : 'textInput', subBuilder: $912.TextInput.create)
     ..aOM<AudioInput>(7, _omitFieldNames ? '' : 'audioInput', subBuilder: AudioInput.create)
     ..aOM<$912.EventInput>(8, _omitFieldNames ? '' : 'eventInput', subBuilder: $912.EventInput.create)
     ..aOM<$912.QueryParameters>(9, _omitFieldNames ? '' : 'queryParams', subBuilder: $912.QueryParameters.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'messageSendTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'messageSendTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'requestId')
     ..aOM<SuggestionInput>(12, _omitFieldNames ? '' : 'suggestionInput', subBuilder: SuggestionInput.create)
     ..aOM<IntentInput>(13, _omitFieldNames ? '' : 'intentInput', subBuilder: IntentInput.create)
     ..aOM<AssistQueryParameters>(14, _omitFieldNames ? '' : 'assistQueryParams', subBuilder: AssistQueryParameters.create)
-    ..aOM<$1734.Struct>(18, _omitFieldNames ? '' : 'cxParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(18, _omitFieldNames ? '' : 'cxParameters', subBuilder: $1735.Struct.create)
     ..aOS(20, _omitFieldNames ? '' : 'cxCurrentPage')
     ..hasRequiredFields = false
   ;
@@ -1563,15 +1563,15 @@ class AnalyzeContentRequest extends $pb.GeneratedMessage {
   /// AnalyzeContent. If this configuration is not supplied, speech synthesis
   /// is disabled.
   @$pb.TagNumber(5)
-  $4497.OutputAudioConfig get replyAudioConfig => $_getN(1);
+  $4499.OutputAudioConfig get replyAudioConfig => $_getN(1);
   @$pb.TagNumber(5)
-  set replyAudioConfig($4497.OutputAudioConfig v) { setField(5, v); }
+  set replyAudioConfig($4499.OutputAudioConfig v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReplyAudioConfig() => $_has(1);
   @$pb.TagNumber(5)
   void clearReplyAudioConfig() => clearField(5);
   @$pb.TagNumber(5)
-  $4497.OutputAudioConfig ensureReplyAudioConfig() => $_ensure(1);
+  $4499.OutputAudioConfig ensureReplyAudioConfig() => $_ensure(1);
 
   /// The natural language text to be processed.
   @$pb.TagNumber(6)
@@ -1636,15 +1636,15 @@ class AnalyzeContentRequest extends $pb.GeneratedMessage {
   ///  If the value is not provided, a new request will always be regarded as a
   ///  new message without any de-duplication.
   @$pb.TagNumber(10)
-  $1775.Timestamp get messageSendTime => $_getN(6);
+  $1776.Timestamp get messageSendTime => $_getN(6);
   @$pb.TagNumber(10)
-  set messageSendTime($1775.Timestamp v) { setField(10, v); }
+  set messageSendTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMessageSendTime() => $_has(6);
   @$pb.TagNumber(10)
   void clearMessageSendTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureMessageSendTime() => $_ensure(6);
+  $1776.Timestamp ensureMessageSendTime() => $_ensure(6);
 
   /// A unique identifier for this request. Restricted to 36 ASCII characters.
   /// A random UUID is recommended.
@@ -1701,15 +1701,15 @@ class AnalyzeContentRequest extends $pb.GeneratedMessage {
   ///  Note: this field should only be used if you are connecting to a Dialogflow
   ///  CX agent.
   @$pb.TagNumber(18)
-  $1734.Struct get cxParameters => $_getN(11);
+  $1735.Struct get cxParameters => $_getN(11);
   @$pb.TagNumber(18)
-  set cxParameters($1734.Struct v) { setField(18, v); }
+  set cxParameters($1735.Struct v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasCxParameters() => $_has(11);
   @$pb.TagNumber(18)
   void clearCxParameters() => clearField(18);
   @$pb.TagNumber(18)
-  $1734.Struct ensureCxParameters() => $_ensure(11);
+  $1735.Struct ensureCxParameters() => $_ensure(11);
 
   ///  The unique identifier of the CX page to override the `current_page` in the
   ///  session.
@@ -2075,17 +2075,17 @@ enum StreamingAnalyzeContentRequest_Input {
 class StreamingAnalyzeContentRequest extends $pb.GeneratedMessage {
   factory StreamingAnalyzeContentRequest({
     $core.String? participant,
-    $4497.InputAudioConfig? audioConfig,
+    $4499.InputAudioConfig? audioConfig,
     InputTextConfig? textConfig,
-    $4497.OutputAudioConfig? replyAudioConfig,
+    $4499.OutputAudioConfig? replyAudioConfig,
     $core.List<$core.int>? inputAudio,
     $core.String? inputText,
     $912.QueryParameters? queryParams,
     AssistQueryParameters? assistQueryParams,
-    $4497.TelephonyDtmfEvents? inputDtmf,
+    $4499.TelephonyDtmfEvents? inputDtmf,
     $core.bool? enableExtendedStreaming,
     $core.bool? enablePartialAutomatedAgentReply,
-    $1734.Struct? cxParameters,
+    $1735.Struct? cxParameters,
     $core.String? cxCurrentPage,
     $core.String? inputIntent,
     $core.bool? enableDebuggingInfo,
@@ -2163,17 +2163,17 @@ class StreamingAnalyzeContentRequest extends $pb.GeneratedMessage {
     ..oo(0, [2, 3])
     ..oo(1, [5, 6, 9, 17, 20])
     ..aOS(1, _omitFieldNames ? '' : 'participant')
-    ..aOM<$4497.InputAudioConfig>(2, _omitFieldNames ? '' : 'audioConfig', subBuilder: $4497.InputAudioConfig.create)
+    ..aOM<$4499.InputAudioConfig>(2, _omitFieldNames ? '' : 'audioConfig', subBuilder: $4499.InputAudioConfig.create)
     ..aOM<InputTextConfig>(3, _omitFieldNames ? '' : 'textConfig', subBuilder: InputTextConfig.create)
-    ..aOM<$4497.OutputAudioConfig>(4, _omitFieldNames ? '' : 'replyAudioConfig', subBuilder: $4497.OutputAudioConfig.create)
+    ..aOM<$4499.OutputAudioConfig>(4, _omitFieldNames ? '' : 'replyAudioConfig', subBuilder: $4499.OutputAudioConfig.create)
     ..a<$core.List<$core.int>>(5, _omitFieldNames ? '' : 'inputAudio', $pb.PbFieldType.OY)
     ..aOS(6, _omitFieldNames ? '' : 'inputText')
     ..aOM<$912.QueryParameters>(7, _omitFieldNames ? '' : 'queryParams', subBuilder: $912.QueryParameters.create)
     ..aOM<AssistQueryParameters>(8, _omitFieldNames ? '' : 'assistQueryParams', subBuilder: AssistQueryParameters.create)
-    ..aOM<$4497.TelephonyDtmfEvents>(9, _omitFieldNames ? '' : 'inputDtmf', subBuilder: $4497.TelephonyDtmfEvents.create)
+    ..aOM<$4499.TelephonyDtmfEvents>(9, _omitFieldNames ? '' : 'inputDtmf', subBuilder: $4499.TelephonyDtmfEvents.create)
     ..aOB(11, _omitFieldNames ? '' : 'enableExtendedStreaming')
     ..aOB(12, _omitFieldNames ? '' : 'enablePartialAutomatedAgentReply')
-    ..aOM<$1734.Struct>(13, _omitFieldNames ? '' : 'cxParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(13, _omitFieldNames ? '' : 'cxParameters', subBuilder: $1735.Struct.create)
     ..aOS(15, _omitFieldNames ? '' : 'cxCurrentPage')
     ..aOS(17, _omitFieldNames ? '' : 'inputIntent')
     ..aOB(19, _omitFieldNames ? '' : 'enableDebuggingInfo')
@@ -2222,15 +2222,15 @@ class StreamingAnalyzeContentRequest extends $pb.GeneratedMessage {
 
   /// Instructs the speech recognizer how to process the speech audio.
   @$pb.TagNumber(2)
-  $4497.InputAudioConfig get audioConfig => $_getN(1);
+  $4499.InputAudioConfig get audioConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set audioConfig($4497.InputAudioConfig v) { setField(2, v); }
+  set audioConfig($4499.InputAudioConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAudioConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearAudioConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4497.InputAudioConfig ensureAudioConfig() => $_ensure(1);
+  $4499.InputAudioConfig ensureAudioConfig() => $_ensure(1);
 
   /// The natural language text to be processed.
   @$pb.TagNumber(3)
@@ -2250,15 +2250,15 @@ class StreamingAnalyzeContentRequest extends $pb.GeneratedMessage {
   /// StreamingAnalyzeContent. If this configuration is not supplied, speech
   /// synthesis is disabled.
   @$pb.TagNumber(4)
-  $4497.OutputAudioConfig get replyAudioConfig => $_getN(3);
+  $4499.OutputAudioConfig get replyAudioConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set replyAudioConfig($4497.OutputAudioConfig v) { setField(4, v); }
+  set replyAudioConfig($4499.OutputAudioConfig v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReplyAudioConfig() => $_has(3);
   @$pb.TagNumber(4)
   void clearReplyAudioConfig() => clearField(4);
   @$pb.TagNumber(4)
-  $4497.OutputAudioConfig ensureReplyAudioConfig() => $_ensure(3);
+  $4499.OutputAudioConfig ensureReplyAudioConfig() => $_ensure(3);
 
   /// The input audio content to be recognized. Must be sent if `audio_config`
   /// is set in the first message. The complete audio over all streaming
@@ -2314,15 +2314,15 @@ class StreamingAnalyzeContentRequest extends $pb.GeneratedMessage {
   ///  This input is ignored if the previous response indicated that DTMF input
   ///  is not accepted.
   @$pb.TagNumber(9)
-  $4497.TelephonyDtmfEvents get inputDtmf => $_getN(8);
+  $4499.TelephonyDtmfEvents get inputDtmf => $_getN(8);
   @$pb.TagNumber(9)
-  set inputDtmf($4497.TelephonyDtmfEvents v) { setField(9, v); }
+  set inputDtmf($4499.TelephonyDtmfEvents v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasInputDtmf() => $_has(8);
   @$pb.TagNumber(9)
   void clearInputDtmf() => clearField(9);
   @$pb.TagNumber(9)
-  $4497.TelephonyDtmfEvents ensureInputDtmf() => $_ensure(8);
+  $4499.TelephonyDtmfEvents ensureInputDtmf() => $_ensure(8);
 
   ///  Optional. Enable full bidirectional streaming. You can keep streaming the
   ///  audio until timeout, and there's no need to half close the stream to get
@@ -2372,15 +2372,15 @@ class StreamingAnalyzeContentRequest extends $pb.GeneratedMessage {
   ///  Note: this field should only be used if you are connecting to a Dialogflow
   ///  CX agent.
   @$pb.TagNumber(13)
-  $1734.Struct get cxParameters => $_getN(11);
+  $1735.Struct get cxParameters => $_getN(11);
   @$pb.TagNumber(13)
-  set cxParameters($1734.Struct v) { setField(13, v); }
+  set cxParameters($1735.Struct v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCxParameters() => $_has(11);
   @$pb.TagNumber(13)
   void clearCxParameters() => clearField(13);
   @$pb.TagNumber(13)
-  $1734.Struct ensureCxParameters() => $_ensure(11);
+  $1735.Struct ensureCxParameters() => $_ensure(11);
 
   ///  The unique identifier of the CX page to override the `current_page` in the
   ///  session.
@@ -2664,7 +2664,7 @@ class AnnotatedMessagePart extends $pb.GeneratedMessage {
   factory AnnotatedMessagePart({
     $core.String? text,
     $core.String? entityType,
-    $1734.Value? formattedValue,
+    $1735.Value? formattedValue,
   }) {
     final $result = create();
     if (text != null) {
@@ -2685,7 +2685,7 @@ class AnnotatedMessagePart extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnnotatedMessagePart', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOS(2, _omitFieldNames ? '' : 'entityType')
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'formattedValue', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'formattedValue', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2744,15 +2744,15 @@ class AnnotatedMessagePart extends $pb.GeneratedMessage {
   /// }
   /// </pre>
   @$pb.TagNumber(3)
-  $1734.Value get formattedValue => $_getN(2);
+  $1735.Value get formattedValue => $_getN(2);
   @$pb.TagNumber(3)
-  set formattedValue($1734.Value v) { setField(3, v); }
+  set formattedValue($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFormattedValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearFormattedValue() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensureFormattedValue() => $_ensure(2);
+  $1735.Value ensureFormattedValue() => $_ensure(2);
 }
 
 /// Represents the result of annotation for the message.
@@ -3359,7 +3359,7 @@ enum SuggestionResult_SuggestionResponse {
 /// [HumanAgentAssistantEvent][google.cloud.dialogflow.v2beta1.HumanAgentAssistantEvent].
 class SuggestionResult extends $pb.GeneratedMessage {
   factory SuggestionResult({
-    $1795.Status? error,
+    $1796.Status? error,
     SuggestArticlesResponse? suggestArticlesResponse,
     SuggestFaqAnswersResponse? suggestFaqAnswersResponse,
     SuggestSmartRepliesResponse? suggestSmartRepliesResponse,
@@ -3407,7 +3407,7 @@ class SuggestionResult extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 7, 8])
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<SuggestArticlesResponse>(2, _omitFieldNames ? '' : 'suggestArticlesResponse', subBuilder: SuggestArticlesResponse.create)
     ..aOM<SuggestFaqAnswersResponse>(3, _omitFieldNames ? '' : 'suggestFaqAnswersResponse', subBuilder: SuggestFaqAnswersResponse.create)
     ..aOM<SuggestSmartRepliesResponse>(4, _omitFieldNames ? '' : 'suggestSmartRepliesResponse', subBuilder: SuggestSmartRepliesResponse.create)
@@ -3443,15 +3443,15 @@ class SuggestionResult extends $pb.GeneratedMessage {
 
   /// Error status if the request failed.
   @$pb.TagNumber(1)
-  $1795.Status get error => $_getN(0);
+  $1796.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($1795.Status v) { setField(1, v); }
+  set error($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureError() => $_ensure(0);
+  $1796.Status ensureError() => $_ensure(0);
 
   /// SuggestArticlesResponse if request is for ARTICLE_SUGGESTION.
   @$pb.TagNumber(2)
@@ -4437,7 +4437,7 @@ class Suggestion extends $pb.GeneratedMessage {
     $core.String? name,
     $core.Iterable<Suggestion_Article>? articles,
     $core.Iterable<Suggestion_FaqAnswer>? faqAnswers,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? latestMessage,
   }) {
     final $result = create();
@@ -4466,7 +4466,7 @@ class Suggestion extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pc<Suggestion_Article>(2, _omitFieldNames ? '' : 'articles', $pb.PbFieldType.PM, subBuilder: Suggestion_Article.create)
     ..pc<Suggestion_FaqAnswer>(4, _omitFieldNames ? '' : 'faqAnswers', $pb.PbFieldType.PM, subBuilder: Suggestion_FaqAnswer.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'latestMessage')
     ..hasRequiredFields = false
   ;
@@ -4515,15 +4515,15 @@ class Suggestion extends $pb.GeneratedMessage {
 
   /// Output only. The time the suggestion was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   ///  Output only. Latest message used as context to compile this suggestion.
   ///
@@ -4957,7 +4957,7 @@ class ResponseMessage_Text extends $pb.GeneratedMessage {
 ///    be handled by a human.
 class ResponseMessage_LiveAgentHandoff extends $pb.GeneratedMessage {
   factory ResponseMessage_LiveAgentHandoff({
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -4970,7 +4970,7 @@ class ResponseMessage_LiveAgentHandoff extends $pb.GeneratedMessage {
   factory ResponseMessage_LiveAgentHandoff.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponseMessage.LiveAgentHandoff', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4998,15 +4998,15 @@ class ResponseMessage_LiveAgentHandoff extends $pb.GeneratedMessage {
   /// Custom metadata for your handoff procedure. Dialogflow doesn't impose
   /// any structure on this.
   @$pb.TagNumber(1)
-  $1734.Struct get metadata => $_getN(0);
+  $1735.Struct get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata($1734.Struct v) { setField(1, v); }
+  set metadata($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureMetadata() => $_ensure(0);
+  $1735.Struct ensureMetadata() => $_ensure(0);
 }
 
 /// Indicates that interaction with the Dialogflow agent has ended.
@@ -5289,7 +5289,7 @@ enum ResponseMessage_Message {
 class ResponseMessage extends $pb.GeneratedMessage {
   factory ResponseMessage({
     ResponseMessage_Text? text,
-    $1734.Struct? payload,
+    $1735.Struct? payload,
     ResponseMessage_LiveAgentHandoff? liveAgentHandoff,
     ResponseMessage_EndInteraction? endInteraction,
     ResponseMessage_MixedAudio? mixedAudio,
@@ -5332,7 +5332,7 @@ class ResponseMessage extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponseMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6])
     ..aOM<ResponseMessage_Text>(1, _omitFieldNames ? '' : 'text', subBuilder: ResponseMessage_Text.create)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Struct.create)
     ..aOM<ResponseMessage_LiveAgentHandoff>(3, _omitFieldNames ? '' : 'liveAgentHandoff', subBuilder: ResponseMessage_LiveAgentHandoff.create)
     ..aOM<ResponseMessage_EndInteraction>(4, _omitFieldNames ? '' : 'endInteraction', subBuilder: ResponseMessage_EndInteraction.create)
     ..aOM<ResponseMessage_MixedAudio>(5, _omitFieldNames ? '' : 'mixedAudio', subBuilder: ResponseMessage_MixedAudio.create)
@@ -5378,15 +5378,15 @@ class ResponseMessage extends $pb.GeneratedMessage {
 
   /// Returns a response containing a custom, platform-specific payload.
   @$pb.TagNumber(2)
-  $1734.Struct get payload => $_getN(1);
+  $1735.Struct get payload => $_getN(1);
   @$pb.TagNumber(2)
-  set payload($1734.Struct v) { setField(2, v); }
+  set payload($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPayload() => $_has(1);
   @$pb.TagNumber(2)
   void clearPayload() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensurePayload() => $_ensure(1);
+  $1735.Struct ensurePayload() => $_ensure(1);
 
   /// Hands off conversation to a live agent.
   @$pb.TagNumber(3)

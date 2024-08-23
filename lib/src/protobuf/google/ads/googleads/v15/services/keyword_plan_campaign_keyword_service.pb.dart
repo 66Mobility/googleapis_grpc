@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/keyword_plan_campaign_keyword.pb.dart' as $2400;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/keyword_plan_campaign_keyword.pb.dart' as $2401;
 
 /// Request message for
 /// [KeywordPlanCampaignKeywordService.MutateKeywordPlanCampaignKeywords][google.ads.googleads.v15.services.KeywordPlanCampaignKeywordService.MutateKeywordPlanCampaignKeywords].
@@ -126,10 +126,10 @@ enum KeywordPlanCampaignKeywordOperation_Operation {
 /// keyword.
 class KeywordPlanCampaignKeywordOperation extends $pb.GeneratedMessage {
   factory KeywordPlanCampaignKeywordOperation({
-    $2400.KeywordPlanCampaignKeyword? create_1,
-    $2400.KeywordPlanCampaignKeyword? update,
+    $2401.KeywordPlanCampaignKeyword? create_1,
+    $2401.KeywordPlanCampaignKeyword? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -158,10 +158,10 @@ class KeywordPlanCampaignKeywordOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanCampaignKeywordOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$2400.KeywordPlanCampaignKeyword>(1, _omitFieldNames ? '' : 'create', subBuilder: $2400.KeywordPlanCampaignKeyword.create)
-    ..aOM<$2400.KeywordPlanCampaignKeyword>(2, _omitFieldNames ? '' : 'update', subBuilder: $2400.KeywordPlanCampaignKeyword.create)
+    ..aOM<$2401.KeywordPlanCampaignKeyword>(1, _omitFieldNames ? '' : 'create', subBuilder: $2401.KeywordPlanCampaignKeyword.create)
+    ..aOM<$2401.KeywordPlanCampaignKeyword>(2, _omitFieldNames ? '' : 'update', subBuilder: $2401.KeywordPlanCampaignKeyword.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -192,28 +192,28 @@ class KeywordPlanCampaignKeywordOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new Keyword Plan
   /// campaign keyword.
   @$pb.TagNumber(1)
-  $2400.KeywordPlanCampaignKeyword get create_1 => $_getN(0);
+  $2401.KeywordPlanCampaignKeyword get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2400.KeywordPlanCampaignKeyword v) { setField(1, v); }
+  set create_1($2401.KeywordPlanCampaignKeyword v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2400.KeywordPlanCampaignKeyword ensureCreate_1() => $_ensure(0);
+  $2401.KeywordPlanCampaignKeyword ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The Keyword Plan campaign keyword expected to have a
   /// valid resource name.
   @$pb.TagNumber(2)
-  $2400.KeywordPlanCampaignKeyword get update => $_getN(1);
+  $2401.KeywordPlanCampaignKeyword get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($2400.KeywordPlanCampaignKeyword v) { setField(2, v); }
+  set update($2401.KeywordPlanCampaignKeyword v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $2400.KeywordPlanCampaignKeyword ensureUpdate() => $_ensure(1);
+  $2401.KeywordPlanCampaignKeyword ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed Keyword Plan campaign
   ///  keywords expected in this format:
@@ -231,22 +231,22 @@ class KeywordPlanCampaignKeywordOperation extends $pb.GeneratedMessage {
   /// The FieldMask that determines which resource fields are modified in an
   /// update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for a Keyword Plan campaign keyword mutate.
 class MutateKeywordPlanCampaignKeywordsResponse extends $pb.GeneratedMessage {
   factory MutateKeywordPlanCampaignKeywordsResponse({
     $core.Iterable<MutateKeywordPlanCampaignKeywordResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -263,7 +263,7 @@ class MutateKeywordPlanCampaignKeywordsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateKeywordPlanCampaignKeywordsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<MutateKeywordPlanCampaignKeywordResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateKeywordPlanCampaignKeywordResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -297,15 +297,15 @@ class MutateKeywordPlanCampaignKeywordsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the Keyword Plan campaign keyword mutate.

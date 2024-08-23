@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4593;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4595;
 import 'model.pbenum.dart';
 
 export 'model.pbenum.dart';
@@ -200,15 +200,15 @@ class Model extends $pb.GeneratedMessage {
     $core.String? displayName,
     Model_TrainingState? trainingState,
     Model_ServingState? servingState,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? type,
     $core.String? optimizationObjective,
     Model_PeriodicTuningState? periodicTuningState,
-    $1775.Timestamp? lastTuneTime,
+    $1776.Timestamp? lastTuneTime,
     $core.String? tuningOperation,
     Model_DataState? dataState,
-    $4593.RecommendationsFilteringOption? filteringOption,
+    $4595.RecommendationsFilteringOption? filteringOption,
     $core.Iterable<Model_ServingConfigList>? servingConfigLists,
     Model_ModelFeaturesConfig? modelFeaturesConfig,
   }) {
@@ -269,15 +269,15 @@ class Model extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..e<Model_TrainingState>(3, _omitFieldNames ? '' : 'trainingState', $pb.PbFieldType.OE, defaultOrMaker: Model_TrainingState.TRAINING_STATE_UNSPECIFIED, valueOf: Model_TrainingState.valueOf, enumValues: Model_TrainingState.values)
     ..e<Model_ServingState>(4, _omitFieldNames ? '' : 'servingState', $pb.PbFieldType.OE, defaultOrMaker: Model_ServingState.SERVING_STATE_UNSPECIFIED, valueOf: Model_ServingState.valueOf, enumValues: Model_ServingState.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'type')
     ..aOS(8, _omitFieldNames ? '' : 'optimizationObjective')
     ..e<Model_PeriodicTuningState>(11, _omitFieldNames ? '' : 'periodicTuningState', $pb.PbFieldType.OE, defaultOrMaker: Model_PeriodicTuningState.PERIODIC_TUNING_STATE_UNSPECIFIED, valueOf: Model_PeriodicTuningState.valueOf, enumValues: Model_PeriodicTuningState.values)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'lastTuneTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'lastTuneTime', subBuilder: $1776.Timestamp.create)
     ..aOS(15, _omitFieldNames ? '' : 'tuningOperation')
     ..e<Model_DataState>(16, _omitFieldNames ? '' : 'dataState', $pb.PbFieldType.OE, defaultOrMaker: Model_DataState.DATA_STATE_UNSPECIFIED, valueOf: Model_DataState.valueOf, enumValues: Model_DataState.values)
-    ..e<$4593.RecommendationsFilteringOption>(18, _omitFieldNames ? '' : 'filteringOption', $pb.PbFieldType.OE, defaultOrMaker: $4593.RecommendationsFilteringOption.RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED, valueOf: $4593.RecommendationsFilteringOption.valueOf, enumValues: $4593.RecommendationsFilteringOption.values)
+    ..e<$4595.RecommendationsFilteringOption>(18, _omitFieldNames ? '' : 'filteringOption', $pb.PbFieldType.OE, defaultOrMaker: $4595.RecommendationsFilteringOption.RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED, valueOf: $4595.RecommendationsFilteringOption.valueOf, enumValues: $4595.RecommendationsFilteringOption.values)
     ..pc<Model_ServingConfigList>(19, _omitFieldNames ? '' : 'servingConfigLists', $pb.PbFieldType.PM, subBuilder: Model_ServingConfigList.create)
     ..aOM<Model_ModelFeaturesConfig>(22, _omitFieldNames ? '' : 'modelFeaturesConfig', subBuilder: Model_ModelFeaturesConfig.create)
     ..hasRequiredFields = false
@@ -362,29 +362,29 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp the Recommendation Model was created at.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp the Recommendation Model was last updated. E.g.
   /// if a Recommendation Model was paused - this would be the time the pause was
   /// initiated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   ///  Required. The type of model e.g. `home-page`.
   ///
@@ -459,15 +459,15 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the latest successful tune finished.
   @$pb.TagNumber(12)
-  $1775.Timestamp get lastTuneTime => $_getN(9);
+  $1776.Timestamp get lastTuneTime => $_getN(9);
   @$pb.TagNumber(12)
-  set lastTuneTime($1775.Timestamp v) { setField(12, v); }
+  set lastTuneTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasLastTuneTime() => $_has(9);
   @$pb.TagNumber(12)
   void clearLastTuneTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureLastTuneTime() => $_ensure(9);
+  $1776.Timestamp ensureLastTuneTime() => $_ensure(9);
 
   ///  Output only. The tune operation associated with the model.
   ///
@@ -502,9 +502,9 @@ class Model extends $pb.GeneratedMessage {
   /// Optional. If `RECOMMENDATIONS_FILTERING_ENABLED`, recommendation filtering
   /// by attributes is enabled for the model.
   @$pb.TagNumber(18)
-  $4593.RecommendationsFilteringOption get filteringOption => $_getN(12);
+  $4595.RecommendationsFilteringOption get filteringOption => $_getN(12);
   @$pb.TagNumber(18)
-  set filteringOption($4593.RecommendationsFilteringOption v) { setField(18, v); }
+  set filteringOption($4595.RecommendationsFilteringOption v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasFilteringOption() => $_has(12);
   @$pb.TagNumber(18)

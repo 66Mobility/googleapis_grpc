@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/search_ads360_field_category.pbenum.dart' as $4083;
-import '../enums/search_ads360_field_data_type.pbenum.dart' as $4084;
+import '../enums/search_ads360_field_category.pbenum.dart' as $4084;
+import '../enums/search_ads360_field_data_type.pbenum.dart' as $4085;
 
 /// A field or resource (artifact) used by SearchAds360Service.
 class SearchAds360Field extends $pb.GeneratedMessage {
   factory SearchAds360Field({
     $core.String? resourceName,
-    $4083.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory? category,
-    $4084.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType? dataType,
+    $4084.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory? category,
+    $4085.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType? dataType,
     $core.String? name,
     $core.bool? selectable,
     $core.bool? filterable,
@@ -85,8 +85,8 @@ class SearchAds360Field extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchAds360Field', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4083.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory>(3, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $4083.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory.UNSPECIFIED, valueOf: $4083.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory.valueOf, enumValues: $4083.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory.values)
-    ..e<$4084.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType>(12, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: $4084.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType.UNSPECIFIED, valueOf: $4084.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType.valueOf, enumValues: $4084.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType.values)
+    ..e<$4084.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory>(3, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $4084.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory.UNSPECIFIED, valueOf: $4084.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory.valueOf, enumValues: $4084.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory.values)
+    ..e<$4085.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType>(12, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: $4085.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType.UNSPECIFIED, valueOf: $4085.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType.valueOf, enumValues: $4085.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType.values)
     ..aOS(21, _omitFieldNames ? '' : 'name')
     ..aOB(22, _omitFieldNames ? '' : 'selectable')
     ..aOB(23, _omitFieldNames ? '' : 'filterable')
@@ -137,9 +137,9 @@ class SearchAds360Field extends $pb.GeneratedMessage {
 
   /// Output only. The category of the artifact.
   @$pb.TagNumber(3)
-  $4083.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory get category => $_getN(1);
+  $4084.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory get category => $_getN(1);
   @$pb.TagNumber(3)
-  set category($4083.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory v) { setField(3, v); }
+  set category($4084.SearchAds360FieldCategoryEnum_SearchAds360FieldCategory v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(3)
@@ -148,9 +148,9 @@ class SearchAds360Field extends $pb.GeneratedMessage {
   /// Output only. This field determines the operators that can be used with the
   /// artifact in WHERE clauses.
   @$pb.TagNumber(12)
-  $4084.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType get dataType => $_getN(2);
+  $4085.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType get dataType => $_getN(2);
   @$pb.TagNumber(12)
-  set dataType($4084.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType v) { setField(12, v); }
+  set dataType($4085.SearchAds360FieldDataTypeEnum_SearchAds360FieldDataType v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDataType() => $_has(2);
   @$pb.TagNumber(12)

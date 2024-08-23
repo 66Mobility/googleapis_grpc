@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'site_search_engine.pbenum.dart';
 
 export 'site_search_engine.pbenum.dart';
@@ -200,7 +200,7 @@ class TargetSite extends $pb.GeneratedMessage {
     $core.String? providedUriPattern,
     TargetSite_Type? type,
     $core.String? generatedUriPattern,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.bool? exactMatch,
     SiteVerificationInfo? siteVerificationInfo,
     TargetSite_IndexingStatus? indexingStatus,
@@ -249,7 +249,7 @@ class TargetSite extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'providedUriPattern')
     ..e<TargetSite_Type>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: TargetSite_Type.TYPE_UNSPECIFIED, valueOf: TargetSite_Type.valueOf, enumValues: TargetSite_Type.values)
     ..aOS(4, _omitFieldNames ? '' : 'generatedUriPattern')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOB(6, _omitFieldNames ? '' : 'exactMatch')
     ..aOM<SiteVerificationInfo>(7, _omitFieldNames ? '' : 'siteVerificationInfo', subBuilder: SiteVerificationInfo.create)
     ..e<TargetSite_IndexingStatus>(8, _omitFieldNames ? '' : 'indexingStatus', $pb.PbFieldType.OE, defaultOrMaker: TargetSite_IndexingStatus.INDEXING_STATUS_UNSPECIFIED, valueOf: TargetSite_IndexingStatus.valueOf, enumValues: TargetSite_IndexingStatus.values)
@@ -325,15 +325,15 @@ class TargetSite extends $pb.GeneratedMessage {
 
   /// Output only. The target site's last updated time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Input only. If set to false, a uri_pattern is generated to include all
   /// pages whose address contains the provided_uri_pattern. If set to true, an
@@ -399,7 +399,7 @@ class TargetSite extends $pb.GeneratedMessage {
 class SiteVerificationInfo extends $pb.GeneratedMessage {
   factory SiteVerificationInfo({
     SiteVerificationInfo_SiteVerificationState? siteVerificationState,
-    $1775.Timestamp? verifyTime,
+    $1776.Timestamp? verifyTime,
   }) {
     final $result = create();
     if (siteVerificationState != null) {
@@ -416,7 +416,7 @@ class SiteVerificationInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SiteVerificationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
     ..e<SiteVerificationInfo_SiteVerificationState>(1, _omitFieldNames ? '' : 'siteVerificationState', $pb.PbFieldType.OE, defaultOrMaker: SiteVerificationInfo_SiteVerificationState.SITE_VERIFICATION_STATE_UNSPECIFIED, valueOf: SiteVerificationInfo_SiteVerificationState.valueOf, enumValues: SiteVerificationInfo_SiteVerificationState.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'verifyTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'verifyTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -453,15 +453,15 @@ class SiteVerificationInfo extends $pb.GeneratedMessage {
 
   /// Latest site verification time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get verifyTime => $_getN(1);
+  $1776.Timestamp get verifyTime => $_getN(1);
   @$pb.TagNumber(2)
-  set verifyTime($1775.Timestamp v) { setField(2, v); }
+  set verifyTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVerifyTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearVerifyTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureVerifyTime() => $_ensure(1);
+  $1776.Timestamp ensureVerifyTime() => $_ensure(1);
 }
 
 

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4240;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4241;
 import 'feature_online_store.pbenum.dart';
-import 'service_networking.pb.dart' as $4253;
+import 'service_networking.pb.dart' as $4254;
 
 export 'feature_online_store.pbenum.dart';
 
@@ -200,7 +200,7 @@ class FeatureOnlineStore_Optimized extends $pb.GeneratedMessage {
 class FeatureOnlineStore_DedicatedServingEndpoint extends $pb.GeneratedMessage {
   factory FeatureOnlineStore_DedicatedServingEndpoint({
     $core.String? publicEndpointDomainName,
-    $4253.PrivateServiceConnectConfig? privateServiceConnectConfig,
+    $4254.PrivateServiceConnectConfig? privateServiceConnectConfig,
     $core.String? serviceAttachment,
   }) {
     final $result = create();
@@ -221,7 +221,7 @@ class FeatureOnlineStore_DedicatedServingEndpoint extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureOnlineStore.DedicatedServingEndpoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'publicEndpointDomainName')
-    ..aOM<$4253.PrivateServiceConnectConfig>(3, _omitFieldNames ? '' : 'privateServiceConnectConfig', subBuilder: $4253.PrivateServiceConnectConfig.create)
+    ..aOM<$4254.PrivateServiceConnectConfig>(3, _omitFieldNames ? '' : 'privateServiceConnectConfig', subBuilder: $4254.PrivateServiceConnectConfig.create)
     ..aOS(4, _omitFieldNames ? '' : 'serviceAttachment')
     ..hasRequiredFields = false
   ;
@@ -265,15 +265,15 @@ class FeatureOnlineStore_DedicatedServingEndpoint extends $pb.GeneratedMessage {
   /// set to true, customers will use private service connection to send
   /// request. Otherwise, the connection will set to public endpoint.
   @$pb.TagNumber(3)
-  $4253.PrivateServiceConnectConfig get privateServiceConnectConfig => $_getN(1);
+  $4254.PrivateServiceConnectConfig get privateServiceConnectConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set privateServiceConnectConfig($4253.PrivateServiceConnectConfig v) { setField(3, v); }
+  set privateServiceConnectConfig($4254.PrivateServiceConnectConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPrivateServiceConnectConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearPrivateServiceConnectConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4253.PrivateServiceConnectConfig ensurePrivateServiceConnectConfig() => $_ensure(1);
+  $4254.PrivateServiceConnectConfig ensurePrivateServiceConnectConfig() => $_ensure(1);
 
   /// Output only. The name of the service attachment resource. Populated if
   /// private service connect is enabled and after FeatureViewSync is created.
@@ -299,15 +299,15 @@ enum FeatureOnlineStore_StorageType {
 class FeatureOnlineStore extends $pb.GeneratedMessage {
   factory FeatureOnlineStore({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
     FeatureOnlineStore_State? state,
     FeatureOnlineStore_Bigtable? bigtable,
     FeatureOnlineStore_DedicatedServingEndpoint? dedicatedServingEndpoint,
     FeatureOnlineStore_Optimized? optimized,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
   }) {
@@ -362,15 +362,15 @@ class FeatureOnlineStore extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureOnlineStore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [8, 12])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'FeatureOnlineStore.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..e<FeatureOnlineStore_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: FeatureOnlineStore_State.STATE_UNSPECIFIED, valueOf: FeatureOnlineStore_State.valueOf, enumValues: FeatureOnlineStore_State.values)
     ..aOM<FeatureOnlineStore_Bigtable>(8, _omitFieldNames ? '' : 'bigtable', subBuilder: FeatureOnlineStore_Bigtable.create)
     ..aOM<FeatureOnlineStore_DedicatedServingEndpoint>(10, _omitFieldNames ? '' : 'dedicatedServingEndpoint', subBuilder: FeatureOnlineStore_DedicatedServingEndpoint.create)
     ..aOM<FeatureOnlineStore_Optimized>(12, _omitFieldNames ? '' : 'optimized', subBuilder: FeatureOnlineStore_Optimized.create)
-    ..aOM<$4240.EncryptionSpec>(13, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(13, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOB(15, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(16, _omitFieldNames ? '' : 'satisfiesPzi')
     ..hasRequiredFields = false
@@ -413,27 +413,27 @@ class FeatureOnlineStore extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this FeatureOnlineStore was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Timestamp when this FeatureOnlineStore was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Used to perform consistent read-modify-write updates. If not set,
   /// a blind "overwrite" update happens.
@@ -516,15 +516,15 @@ class FeatureOnlineStore extends $pb.GeneratedMessage {
   /// Optional. Customer-managed encryption key spec for data storage. If set,
   /// online store will be secured by this key.
   @$pb.TagNumber(13)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(9);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(9);
   @$pb.TagNumber(13)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(13, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasEncryptionSpec() => $_has(9);
   @$pb.TagNumber(13)
   void clearEncryptionSpec() => clearField(13);
   @$pb.TagNumber(13)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(9);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(9);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(15)

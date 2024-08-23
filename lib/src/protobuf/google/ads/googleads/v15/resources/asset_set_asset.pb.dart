@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_set_asset_status.pbenum.dart' as $2153;
+import '../enums/asset_set_asset_status.pbenum.dart' as $2154;
 
 /// AssetSetAsset is the link between an asset and an asset set.
 /// Adding an AssetSetAsset links an asset with an asset set.
@@ -22,7 +22,7 @@ class AssetSetAsset extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? assetSet,
     $core.String? asset,
-    $2153.AssetSetAssetStatusEnum_AssetSetAssetStatus? status,
+    $2154.AssetSetAssetStatusEnum_AssetSetAssetStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -47,7 +47,7 @@ class AssetSetAsset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'assetSet')
     ..aOS(3, _omitFieldNames ? '' : 'asset')
-    ..e<$2153.AssetSetAssetStatusEnum_AssetSetAssetStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2153.AssetSetAssetStatusEnum_AssetSetAssetStatus.UNSPECIFIED, valueOf: $2153.AssetSetAssetStatusEnum_AssetSetAssetStatus.valueOf, enumValues: $2153.AssetSetAssetStatusEnum_AssetSetAssetStatus.values)
+    ..e<$2154.AssetSetAssetStatusEnum_AssetSetAssetStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2154.AssetSetAssetStatusEnum_AssetSetAssetStatus.UNSPECIFIED, valueOf: $2154.AssetSetAssetStatusEnum_AssetSetAssetStatus.valueOf, enumValues: $2154.AssetSetAssetStatusEnum_AssetSetAssetStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -107,9 +107,9 @@ class AssetSetAsset extends $pb.GeneratedMessage {
 
   /// Output only. The status of the asset set asset. Read-only.
   @$pb.TagNumber(4)
-  $2153.AssetSetAssetStatusEnum_AssetSetAssetStatus get status => $_getN(3);
+  $2154.AssetSetAssetStatusEnum_AssetSetAssetStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($2153.AssetSetAssetStatusEnum_AssetSetAssetStatus v) { setField(4, v); }
+  set status($2154.AssetSetAssetStatusEnum_AssetSetAssetStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)

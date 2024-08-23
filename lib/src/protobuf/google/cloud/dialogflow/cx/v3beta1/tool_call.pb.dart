@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../protobuf/struct.pb.dart' as $1735;
 
 /// Represents a call of a specific tool's action with the specified inputs.
 class ToolCall extends $pb.GeneratedMessage {
   factory ToolCall({
     $core.String? tool,
     $core.String? action,
-    $1734.Struct? inputParameters,
+    $1735.Struct? inputParameters,
   }) {
     final $result = create();
     if (tool != null) {
@@ -41,7 +41,7 @@ class ToolCall extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ToolCall', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'tool')
     ..aOS(2, _omitFieldNames ? '' : 'action')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'inputParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'inputParameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -90,15 +90,15 @@ class ToolCall extends $pb.GeneratedMessage {
 
   /// The action's input parameters.
   @$pb.TagNumber(3)
-  $1734.Struct get inputParameters => $_getN(2);
+  $1735.Struct get inputParameters => $_getN(2);
   @$pb.TagNumber(3)
-  set inputParameters($1734.Struct v) { setField(3, v); }
+  set inputParameters($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInputParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearInputParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureInputParameters() => $_ensure(2);
+  $1735.Struct ensureInputParameters() => $_ensure(2);
 }
 
 /// An error produced by the tool call.
@@ -165,7 +165,7 @@ class ToolCallResult extends $pb.GeneratedMessage {
     $core.String? tool,
     $core.String? action,
     ToolCallResult_Error? error,
-    $1734.Struct? outputParameters,
+    $1735.Struct? outputParameters,
   }) {
     final $result = create();
     if (tool != null) {
@@ -196,7 +196,7 @@ class ToolCallResult extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'tool')
     ..aOS(2, _omitFieldNames ? '' : 'action')
     ..aOM<ToolCallResult_Error>(3, _omitFieldNames ? '' : 'error', subBuilder: ToolCallResult_Error.create)
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'outputParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'outputParameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -260,15 +260,15 @@ class ToolCallResult extends $pb.GeneratedMessage {
 
   /// The tool call's output parameters.
   @$pb.TagNumber(4)
-  $1734.Struct get outputParameters => $_getN(3);
+  $1735.Struct get outputParameters => $_getN(3);
   @$pb.TagNumber(4)
-  set outputParameters($1734.Struct v) { setField(4, v); }
+  set outputParameters($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasOutputParameters() => $_has(3);
   @$pb.TagNumber(4)
   void clearOutputParameters() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureOutputParameters() => $_ensure(3);
+  $1735.Struct ensureOutputParameters() => $_ensure(3);
 }
 
 

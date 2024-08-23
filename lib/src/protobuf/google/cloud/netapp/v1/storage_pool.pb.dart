@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4562;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4564;
 import 'storage_pool.pbenum.dart';
 
 export 'storage_pool.pbenum.dart';
@@ -347,7 +347,7 @@ class CreateStoragePoolRequest extends $pb.GeneratedMessage {
 /// UpdateStoragePoolRequest updates a Storage Pool.
 class UpdateStoragePoolRequest extends $pb.GeneratedMessage {
   factory UpdateStoragePoolRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     StoragePool? storagePool,
   }) {
     final $result = create();
@@ -364,7 +364,7 @@ class UpdateStoragePoolRequest extends $pb.GeneratedMessage {
   factory UpdateStoragePoolRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateStoragePoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<StoragePool>(2, _omitFieldNames ? '' : 'storagePool', subBuilder: StoragePool.create)
     ..hasRequiredFields = false
   ;
@@ -396,15 +396,15 @@ class UpdateStoragePoolRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The pool being updated
   @$pb.TagNumber(2)
@@ -477,13 +477,13 @@ class DeleteStoragePoolRequest extends $pb.GeneratedMessage {
 class StoragePool extends $pb.GeneratedMessage {
   factory StoragePool({
     $core.String? name,
-    $4562.ServiceLevel? serviceLevel,
+    $4564.ServiceLevel? serviceLevel,
     $fixnum.Int64? capacityGib,
     $fixnum.Int64? volumeCapacityGib,
     $core.int? volumeCount,
     StoragePool_State? state,
     $core.String? stateDetails,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? description,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? network,
@@ -491,7 +491,7 @@ class StoragePool extends $pb.GeneratedMessage {
     $core.String? kmsConfig,
     $core.bool? ldapEnabled,
     $core.String? psaRange,
-    $4562.EncryptionType? encryptionType,
+    $4564.EncryptionType? encryptionType,
   @$core.Deprecated('This field is deprecated.')
     $core.bool? globalAccessAllowed,
     $core.String? replicaZone,
@@ -564,13 +564,13 @@ class StoragePool extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StoragePool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<$4562.ServiceLevel>(2, _omitFieldNames ? '' : 'serviceLevel', $pb.PbFieldType.OE, defaultOrMaker: $4562.ServiceLevel.SERVICE_LEVEL_UNSPECIFIED, valueOf: $4562.ServiceLevel.valueOf, enumValues: $4562.ServiceLevel.values)
+    ..e<$4564.ServiceLevel>(2, _omitFieldNames ? '' : 'serviceLevel', $pb.PbFieldType.OE, defaultOrMaker: $4564.ServiceLevel.SERVICE_LEVEL_UNSPECIFIED, valueOf: $4564.ServiceLevel.valueOf, enumValues: $4564.ServiceLevel.values)
     ..aInt64(3, _omitFieldNames ? '' : 'capacityGib')
     ..aInt64(4, _omitFieldNames ? '' : 'volumeCapacityGib')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'volumeCount', $pb.PbFieldType.O3)
     ..e<StoragePool_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: StoragePool_State.STATE_UNSPECIFIED, valueOf: StoragePool_State.valueOf, enumValues: StoragePool_State.values)
     ..aOS(7, _omitFieldNames ? '' : 'stateDetails')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'StoragePool.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.netapp.v1'))
     ..aOS(11, _omitFieldNames ? '' : 'network')
@@ -578,7 +578,7 @@ class StoragePool extends $pb.GeneratedMessage {
     ..aOS(13, _omitFieldNames ? '' : 'kmsConfig')
     ..aOB(14, _omitFieldNames ? '' : 'ldapEnabled')
     ..aOS(15, _omitFieldNames ? '' : 'psaRange')
-    ..e<$4562.EncryptionType>(16, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: $4562.EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: $4562.EncryptionType.valueOf, enumValues: $4562.EncryptionType.values)
+    ..e<$4564.EncryptionType>(16, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: $4564.EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: $4564.EncryptionType.valueOf, enumValues: $4564.EncryptionType.values)
     ..aOB(17, _omitFieldNames ? '' : 'globalAccessAllowed')
     ..aOS(20, _omitFieldNames ? '' : 'replicaZone')
     ..aOS(21, _omitFieldNames ? '' : 'zone')
@@ -618,9 +618,9 @@ class StoragePool extends $pb.GeneratedMessage {
 
   /// Required. Service level of the storage pool
   @$pb.TagNumber(2)
-  $4562.ServiceLevel get serviceLevel => $_getN(1);
+  $4564.ServiceLevel get serviceLevel => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceLevel($4562.ServiceLevel v) { setField(2, v); }
+  set serviceLevel($4564.ServiceLevel v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasServiceLevel() => $_has(1);
   @$pb.TagNumber(2)
@@ -678,15 +678,15 @@ class StoragePool extends $pb.GeneratedMessage {
 
   /// Output only. Create time of the storage pool
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Optional. Description of the storage pool
   @$pb.TagNumber(9)
@@ -757,9 +757,9 @@ class StoragePool extends $pb.GeneratedMessage {
 
   /// Output only. Specifies the current pool encryption key source.
   @$pb.TagNumber(16)
-  $4562.EncryptionType get encryptionType => $_getN(15);
+  $4564.EncryptionType get encryptionType => $_getN(15);
   @$pb.TagNumber(16)
-  set encryptionType($4562.EncryptionType v) { setField(16, v); }
+  set encryptionType($4564.EncryptionType v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasEncryptionType() => $_has(15);
   @$pb.TagNumber(16)

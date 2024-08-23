@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'tether.pbenum.dart';
 
 export 'tether.pbenum.dart';
@@ -28,7 +28,7 @@ class EgressRequest extends $pb.GeneratedMessage {
     TetherEndpoint? endpoint,
     $core.String? project,
     $core.String? traceId,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
   }) {
     final $result = create();
     if (id != null) {
@@ -61,7 +61,7 @@ class EgressRequest extends $pb.GeneratedMessage {
     ..e<TetherEndpoint>(3, _omitFieldNames ? '' : 'endpoint', $pb.PbFieldType.OE, defaultOrMaker: TetherEndpoint.TETHER_ENDPOINT_UNSPECIFIED, valueOf: TetherEndpoint.valueOf, enumValues: TetherEndpoint.values)
     ..aOS(4, _omitFieldNames ? '' : 'project')
     ..aOS(5, _omitFieldNames ? '' : 'traceId')
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -141,15 +141,15 @@ class EgressRequest extends $pb.GeneratedMessage {
 
   /// Timeout for the HTTP request.
   @$pb.TagNumber(6)
-  $1737.Duration get timeout => $_getN(5);
+  $1738.Duration get timeout => $_getN(5);
   @$pb.TagNumber(6)
-  set timeout($1737.Duration v) { setField(6, v); }
+  set timeout($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeout() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeout() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureTimeout() => $_ensure(5);
+  $1738.Duration ensureTimeout() => $_ensure(5);
 }
 
 enum Payload_Kind {
@@ -312,7 +312,7 @@ class EgressResponse extends $pb.GeneratedMessage {
   factory EgressResponse({
     $core.String? id,
     HttpResponse? httpResponse,
-    $1795.Status? status,
+    $1796.Status? status,
     $core.String? project,
     $core.String? traceId,
     TetherEndpoint? endpoint,
@@ -349,7 +349,7 @@ class EgressResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EgressResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.apigeeconnect.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOM<HttpResponse>(2, _omitFieldNames ? '' : 'httpResponse', subBuilder: HttpResponse.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOS(4, _omitFieldNames ? '' : 'project')
     ..aOS(5, _omitFieldNames ? '' : 'traceId')
     ..e<TetherEndpoint>(6, _omitFieldNames ? '' : 'endpoint', $pb.PbFieldType.OE, defaultOrMaker: TetherEndpoint.TETHER_ENDPOINT_UNSPECIFIED, valueOf: TetherEndpoint.valueOf, enumValues: TetherEndpoint.values)
@@ -402,15 +402,15 @@ class EgressResponse extends $pb.GeneratedMessage {
 
   /// Errors from application when handling the http request.
   @$pb.TagNumber(3)
-  $1795.Status get status => $_getN(2);
+  $1796.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($1795.Status v) { setField(3, v); }
+  set status($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureStatus() => $_ensure(2);
+  $1796.Status ensureStatus() => $_ensure(2);
 
   /// GCP Project.
   /// Format: `projects/{project_number}`.

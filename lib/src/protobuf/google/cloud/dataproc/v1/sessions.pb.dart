@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'sessions.pbenum.dart';
-import 'shared.pb.dart' as $4470;
+import 'shared.pb.dart' as $4472;
 
 export 'sessions.pbenum.dart';
 
@@ -516,7 +516,7 @@ class Session_SessionStateHistory extends $pb.GeneratedMessage {
   factory Session_SessionStateHistory({
     Session_State? state,
     $core.String? stateMessage,
-    $1775.Timestamp? stateStartTime,
+    $1776.Timestamp? stateStartTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -537,7 +537,7 @@ class Session_SessionStateHistory extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Session.SessionStateHistory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..e<Session_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Session_State.STATE_UNSPECIFIED, valueOf: Session_State.valueOf, enumValues: Session_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'stateMessage')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -586,15 +586,15 @@ class Session_SessionStateHistory extends $pb.GeneratedMessage {
 
   /// Output only. The time when the session entered the historical state.
   @$pb.TagNumber(3)
-  $1775.Timestamp get stateStartTime => $_getN(2);
+  $1776.Timestamp get stateStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set stateStartTime($1775.Timestamp v) { setField(3, v); }
+  set stateStartTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStateStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStateStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStateStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStateStartTime() => $_ensure(2);
 }
 
 enum Session_SessionConfig {
@@ -607,16 +607,16 @@ class Session extends $pb.GeneratedMessage {
   factory Session({
     $core.String? name,
     $core.String? uuid,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     JupyterConfig? jupyterSession,
-    $4470.RuntimeInfo? runtimeInfo,
+    $4472.RuntimeInfo? runtimeInfo,
     Session_State? state,
     $core.String? stateMessage,
-    $1775.Timestamp? stateTime,
+    $1776.Timestamp? stateTime,
     $core.String? creator,
     $core.Map<$core.String, $core.String>? labels,
-    $4470.RuntimeConfig? runtimeConfig,
-    $4470.EnvironmentConfig? environmentConfig,
+    $4472.RuntimeConfig? runtimeConfig,
+    $4472.EnvironmentConfig? environmentConfig,
     $core.String? user,
     $core.Iterable<Session_SessionStateHistory>? stateHistory,
     $core.String? sessionTemplate,
@@ -681,16 +681,16 @@ class Session extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uuid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<JupyterConfig>(4, _omitFieldNames ? '' : 'jupyterSession', subBuilder: JupyterConfig.create)
-    ..aOM<$4470.RuntimeInfo>(6, _omitFieldNames ? '' : 'runtimeInfo', subBuilder: $4470.RuntimeInfo.create)
+    ..aOM<$4472.RuntimeInfo>(6, _omitFieldNames ? '' : 'runtimeInfo', subBuilder: $4472.RuntimeInfo.create)
     ..e<Session_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Session_State.STATE_UNSPECIFIED, valueOf: Session_State.valueOf, enumValues: Session_State.values)
     ..aOS(8, _omitFieldNames ? '' : 'stateMessage')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'stateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'stateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'creator')
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'Session.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
-    ..aOM<$4470.RuntimeConfig>(12, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: $4470.RuntimeConfig.create)
-    ..aOM<$4470.EnvironmentConfig>(13, _omitFieldNames ? '' : 'environmentConfig', subBuilder: $4470.EnvironmentConfig.create)
+    ..aOM<$4472.RuntimeConfig>(12, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: $4472.RuntimeConfig.create)
+    ..aOM<$4472.EnvironmentConfig>(13, _omitFieldNames ? '' : 'environmentConfig', subBuilder: $4472.EnvironmentConfig.create)
     ..aOS(14, _omitFieldNames ? '' : 'user')
     ..pc<Session_SessionStateHistory>(15, _omitFieldNames ? '' : 'stateHistory', $pb.PbFieldType.PM, subBuilder: Session_SessionStateHistory.create)
     ..aOS(16, _omitFieldNames ? '' : 'sessionTemplate')
@@ -744,15 +744,15 @@ class Session extends $pb.GeneratedMessage {
 
   /// Output only. The time when the session was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Optional. Jupyter session config.
   @$pb.TagNumber(4)
@@ -768,15 +768,15 @@ class Session extends $pb.GeneratedMessage {
 
   /// Output only. Runtime information about session execution.
   @$pb.TagNumber(6)
-  $4470.RuntimeInfo get runtimeInfo => $_getN(4);
+  $4472.RuntimeInfo get runtimeInfo => $_getN(4);
   @$pb.TagNumber(6)
-  set runtimeInfo($4470.RuntimeInfo v) { setField(6, v); }
+  set runtimeInfo($4472.RuntimeInfo v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRuntimeInfo() => $_has(4);
   @$pb.TagNumber(6)
   void clearRuntimeInfo() => clearField(6);
   @$pb.TagNumber(6)
-  $4470.RuntimeInfo ensureRuntimeInfo() => $_ensure(4);
+  $4472.RuntimeInfo ensureRuntimeInfo() => $_ensure(4);
 
   /// Output only. A state of the session.
   @$pb.TagNumber(7)
@@ -801,15 +801,15 @@ class Session extends $pb.GeneratedMessage {
 
   /// Output only. The time when the session entered the current state.
   @$pb.TagNumber(9)
-  $1775.Timestamp get stateTime => $_getN(7);
+  $1776.Timestamp get stateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set stateTime($1775.Timestamp v) { setField(9, v); }
+  set stateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasStateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearStateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureStateTime() => $_ensure(7);
+  $1776.Timestamp ensureStateTime() => $_ensure(7);
 
   /// Output only. The email address of the user who created the session.
   @$pb.TagNumber(10)
@@ -833,27 +833,27 @@ class Session extends $pb.GeneratedMessage {
 
   /// Optional. Runtime configuration for the session execution.
   @$pb.TagNumber(12)
-  $4470.RuntimeConfig get runtimeConfig => $_getN(10);
+  $4472.RuntimeConfig get runtimeConfig => $_getN(10);
   @$pb.TagNumber(12)
-  set runtimeConfig($4470.RuntimeConfig v) { setField(12, v); }
+  set runtimeConfig($4472.RuntimeConfig v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasRuntimeConfig() => $_has(10);
   @$pb.TagNumber(12)
   void clearRuntimeConfig() => clearField(12);
   @$pb.TagNumber(12)
-  $4470.RuntimeConfig ensureRuntimeConfig() => $_ensure(10);
+  $4472.RuntimeConfig ensureRuntimeConfig() => $_ensure(10);
 
   /// Optional. Environment configuration for the session execution.
   @$pb.TagNumber(13)
-  $4470.EnvironmentConfig get environmentConfig => $_getN(11);
+  $4472.EnvironmentConfig get environmentConfig => $_getN(11);
   @$pb.TagNumber(13)
-  set environmentConfig($4470.EnvironmentConfig v) { setField(13, v); }
+  set environmentConfig($4472.EnvironmentConfig v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasEnvironmentConfig() => $_has(11);
   @$pb.TagNumber(13)
   void clearEnvironmentConfig() => clearField(13);
   @$pb.TagNumber(13)
-  $4470.EnvironmentConfig ensureEnvironmentConfig() => $_ensure(11);
+  $4472.EnvironmentConfig ensureEnvironmentConfig() => $_ensure(11);
 
   /// Optional. The email address of the user who owns the session.
   @$pb.TagNumber(14)

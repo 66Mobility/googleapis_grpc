@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'file.pb.dart' as $4654;
+import 'file.pb.dart' as $4656;
 
 /// Represents an operating system process.
 class Process extends $pb.GeneratedMessage {
   factory Process({
     $core.String? name,
-    $4654.File? binary,
-    $core.Iterable<$4654.File>? libraries,
-    $4654.File? script,
+    $4656.File? binary,
+    $core.Iterable<$4656.File>? libraries,
+    $4656.File? script,
     $core.Iterable<$core.String>? args,
     $core.bool? argumentsTruncated,
     $core.Iterable<EnvironmentVariable>? envVariables,
@@ -69,9 +69,9 @@ class Process extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Process', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4654.File>(2, _omitFieldNames ? '' : 'binary', subBuilder: $4654.File.create)
-    ..pc<$4654.File>(3, _omitFieldNames ? '' : 'libraries', $pb.PbFieldType.PM, subBuilder: $4654.File.create)
-    ..aOM<$4654.File>(4, _omitFieldNames ? '' : 'script', subBuilder: $4654.File.create)
+    ..aOM<$4656.File>(2, _omitFieldNames ? '' : 'binary', subBuilder: $4656.File.create)
+    ..pc<$4656.File>(3, _omitFieldNames ? '' : 'libraries', $pb.PbFieldType.PM, subBuilder: $4656.File.create)
+    ..aOM<$4656.File>(4, _omitFieldNames ? '' : 'script', subBuilder: $4656.File.create)
     ..pPS(5, _omitFieldNames ? '' : 'args')
     ..aOB(6, _omitFieldNames ? '' : 'argumentsTruncated')
     ..pc<EnvironmentVariable>(7, _omitFieldNames ? '' : 'envVariables', $pb.PbFieldType.PM, subBuilder: EnvironmentVariable.create)
@@ -116,33 +116,33 @@ class Process extends $pb.GeneratedMessage {
 
   /// File information for the process executable.
   @$pb.TagNumber(2)
-  $4654.File get binary => $_getN(1);
+  $4656.File get binary => $_getN(1);
   @$pb.TagNumber(2)
-  set binary($4654.File v) { setField(2, v); }
+  set binary($4656.File v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBinary() => $_has(1);
   @$pb.TagNumber(2)
   void clearBinary() => clearField(2);
   @$pb.TagNumber(2)
-  $4654.File ensureBinary() => $_ensure(1);
+  $4656.File ensureBinary() => $_ensure(1);
 
   /// File information for libraries loaded by the process.
   @$pb.TagNumber(3)
-  $core.List<$4654.File> get libraries => $_getList(2);
+  $core.List<$4656.File> get libraries => $_getList(2);
 
   /// When the process represents the invocation of a script, `binary` provides
   /// information about the interpreter, while `script` provides information
   /// about the script file provided to the interpreter.
   @$pb.TagNumber(4)
-  $4654.File get script => $_getN(3);
+  $4656.File get script => $_getN(3);
   @$pb.TagNumber(4)
-  set script($4654.File v) { setField(4, v); }
+  set script($4656.File v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasScript() => $_has(3);
   @$pb.TagNumber(4)
   void clearScript() => clearField(4);
   @$pb.TagNumber(4)
-  $4654.File ensureScript() => $_ensure(3);
+  $4656.File ensureScript() => $_ensure(3);
 
   /// Process arguments as JSON encoded strings.
   @$pb.TagNumber(5)

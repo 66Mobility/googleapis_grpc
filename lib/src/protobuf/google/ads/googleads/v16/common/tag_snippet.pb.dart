@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/tracking_code_page_format.pbenum.dart' as $2634;
-import '../enums/tracking_code_type.pbenum.dart' as $2633;
+import '../enums/tracking_code_page_format.pbenum.dart' as $2635;
+import '../enums/tracking_code_type.pbenum.dart' as $2634;
 
 /// The site tag and event snippet pair for a TrackingCodeType.
 class TagSnippet extends $pb.GeneratedMessage {
   factory TagSnippet({
-    $2633.TrackingCodeTypeEnum_TrackingCodeType? type,
-    $2634.TrackingCodePageFormatEnum_TrackingCodePageFormat? pageFormat,
+    $2634.TrackingCodeTypeEnum_TrackingCodeType? type,
+    $2635.TrackingCodePageFormatEnum_TrackingCodePageFormat? pageFormat,
     $core.String? globalSiteTag,
     $core.String? eventSnippet,
   }) {
@@ -44,8 +44,8 @@ class TagSnippet extends $pb.GeneratedMessage {
   factory TagSnippet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TagSnippet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2633.TrackingCodeTypeEnum_TrackingCodeType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2633.TrackingCodeTypeEnum_TrackingCodeType.UNSPECIFIED, valueOf: $2633.TrackingCodeTypeEnum_TrackingCodeType.valueOf, enumValues: $2633.TrackingCodeTypeEnum_TrackingCodeType.values)
-    ..e<$2634.TrackingCodePageFormatEnum_TrackingCodePageFormat>(2, _omitFieldNames ? '' : 'pageFormat', $pb.PbFieldType.OE, defaultOrMaker: $2634.TrackingCodePageFormatEnum_TrackingCodePageFormat.UNSPECIFIED, valueOf: $2634.TrackingCodePageFormatEnum_TrackingCodePageFormat.valueOf, enumValues: $2634.TrackingCodePageFormatEnum_TrackingCodePageFormat.values)
+    ..e<$2634.TrackingCodeTypeEnum_TrackingCodeType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2634.TrackingCodeTypeEnum_TrackingCodeType.UNSPECIFIED, valueOf: $2634.TrackingCodeTypeEnum_TrackingCodeType.valueOf, enumValues: $2634.TrackingCodeTypeEnum_TrackingCodeType.values)
+    ..e<$2635.TrackingCodePageFormatEnum_TrackingCodePageFormat>(2, _omitFieldNames ? '' : 'pageFormat', $pb.PbFieldType.OE, defaultOrMaker: $2635.TrackingCodePageFormatEnum_TrackingCodePageFormat.UNSPECIFIED, valueOf: $2635.TrackingCodePageFormatEnum_TrackingCodePageFormat.valueOf, enumValues: $2635.TrackingCodePageFormatEnum_TrackingCodePageFormat.values)
     ..aOS(5, _omitFieldNames ? '' : 'globalSiteTag')
     ..aOS(6, _omitFieldNames ? '' : 'eventSnippet')
     ..hasRequiredFields = false
@@ -74,9 +74,9 @@ class TagSnippet extends $pb.GeneratedMessage {
 
   /// The type of the generated tag snippets for tracking conversions.
   @$pb.TagNumber(1)
-  $2633.TrackingCodeTypeEnum_TrackingCodeType get type => $_getN(0);
+  $2634.TrackingCodeTypeEnum_TrackingCodeType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($2633.TrackingCodeTypeEnum_TrackingCodeType v) { setField(1, v); }
+  set type($2634.TrackingCodeTypeEnum_TrackingCodeType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -85,9 +85,9 @@ class TagSnippet extends $pb.GeneratedMessage {
   /// The format of the web page where the tracking tag and snippet will be
   /// installed, for example, HTML.
   @$pb.TagNumber(2)
-  $2634.TrackingCodePageFormatEnum_TrackingCodePageFormat get pageFormat => $_getN(1);
+  $2635.TrackingCodePageFormatEnum_TrackingCodePageFormat get pageFormat => $_getN(1);
   @$pb.TagNumber(2)
-  set pageFormat($2634.TrackingCodePageFormatEnum_TrackingCodePageFormat v) { setField(2, v); }
+  set pageFormat($2635.TrackingCodePageFormatEnum_TrackingCodePageFormat v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPageFormat() => $_has(1);
   @$pb.TagNumber(2)

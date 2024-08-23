@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'log_enums.pbenum.dart' as $4472;
+import 'log_enums.pbenum.dart' as $4474;
 
 /// Payload proto for "clouddeploy.googleapis.com/jobrun_notification"
 /// Platform Log event that describes the failure to send JobRun resource update
@@ -26,7 +26,7 @@ class JobRunNotificationEvent extends $pb.GeneratedMessage {
     $core.String? releaseUid,
     $core.String? rolloutUid,
     $core.String? targetId,
-    $4472.Type? type,
+    $4474.Type? type,
     $core.String? release,
     $core.String? rollout,
   }) {
@@ -71,7 +71,7 @@ class JobRunNotificationEvent extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'releaseUid')
     ..aOS(5, _omitFieldNames ? '' : 'rolloutUid')
     ..aOS(6, _omitFieldNames ? '' : 'targetId')
-    ..e<$4472.Type>(7, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4472.Type.TYPE_UNSPECIFIED, valueOf: $4472.Type.valueOf, enumValues: $4472.Type.values)
+    ..e<$4474.Type>(7, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4474.Type.TYPE_UNSPECIFIED, valueOf: $4474.Type.valueOf, enumValues: $4474.Type.values)
     ..aOS(8, _omitFieldNames ? '' : 'release')
     ..aOS(9, _omitFieldNames ? '' : 'rollout')
     ..hasRequiredFields = false
@@ -160,9 +160,9 @@ class JobRunNotificationEvent extends $pb.GeneratedMessage {
 
   /// Type of this notification, e.g. for a Pub/Sub failure.
   @$pb.TagNumber(7)
-  $4472.Type get type => $_getN(6);
+  $4474.Type get type => $_getN(6);
   @$pb.TagNumber(7)
-  set type($4472.Type v) { setField(7, v); }
+  set type($4474.Type v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasType() => $_has(6);
   @$pb.TagNumber(7)

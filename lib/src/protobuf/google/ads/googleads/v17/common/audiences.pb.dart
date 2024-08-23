@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/gender_type.pbenum.dart' as $3273;
-import '../enums/income_range_type.pbenum.dart' as $3274;
-import '../enums/parental_status_type.pbenum.dart' as $3275;
+import '../enums/gender_type.pbenum.dart' as $3274;
+import '../enums/income_range_type.pbenum.dart' as $3275;
+import '../enums/parental_status_type.pbenum.dart' as $3276;
 
 enum AudienceDimension_Dimension {
   age, 
@@ -408,7 +408,7 @@ class AgeSegment extends $pb.GeneratedMessage {
 /// Dimension specifying users by their gender.
 class GenderDimension extends $pb.GeneratedMessage {
   factory GenderDimension({
-    $core.Iterable<$3273.GenderTypeEnum_GenderType>? genders,
+    $core.Iterable<$3274.GenderTypeEnum_GenderType>? genders,
     $core.bool? includeUndetermined,
   }) {
     final $result = create();
@@ -425,7 +425,7 @@ class GenderDimension extends $pb.GeneratedMessage {
   factory GenderDimension.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenderDimension', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..pc<$3273.GenderTypeEnum_GenderType>(1, _omitFieldNames ? '' : 'genders', $pb.PbFieldType.KE, valueOf: $3273.GenderTypeEnum_GenderType.valueOf, enumValues: $3273.GenderTypeEnum_GenderType.values, defaultEnumValue: $3273.GenderTypeEnum_GenderType.UNSPECIFIED)
+    ..pc<$3274.GenderTypeEnum_GenderType>(1, _omitFieldNames ? '' : 'genders', $pb.PbFieldType.KE, valueOf: $3274.GenderTypeEnum_GenderType.valueOf, enumValues: $3274.GenderTypeEnum_GenderType.values, defaultEnumValue: $3274.GenderTypeEnum_GenderType.UNSPECIFIED)
     ..aOB(2, _omitFieldNames ? '' : 'includeUndetermined')
     ..hasRequiredFields = false
   ;
@@ -453,7 +453,7 @@ class GenderDimension extends $pb.GeneratedMessage {
 
   /// Included gender demographic segments.
   @$pb.TagNumber(1)
-  $core.List<$3273.GenderTypeEnum_GenderType> get genders => $_getList(0);
+  $core.List<$3274.GenderTypeEnum_GenderType> get genders => $_getList(0);
 
   /// Include users whose gender is not determined.
   @$pb.TagNumber(2)
@@ -469,7 +469,7 @@ class GenderDimension extends $pb.GeneratedMessage {
 /// Dimension specifying users by their household income.
 class HouseholdIncomeDimension extends $pb.GeneratedMessage {
   factory HouseholdIncomeDimension({
-    $core.Iterable<$3274.IncomeRangeTypeEnum_IncomeRangeType>? incomeRanges,
+    $core.Iterable<$3275.IncomeRangeTypeEnum_IncomeRangeType>? incomeRanges,
     $core.bool? includeUndetermined,
   }) {
     final $result = create();
@@ -486,7 +486,7 @@ class HouseholdIncomeDimension extends $pb.GeneratedMessage {
   factory HouseholdIncomeDimension.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HouseholdIncomeDimension', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..pc<$3274.IncomeRangeTypeEnum_IncomeRangeType>(1, _omitFieldNames ? '' : 'incomeRanges', $pb.PbFieldType.KE, valueOf: $3274.IncomeRangeTypeEnum_IncomeRangeType.valueOf, enumValues: $3274.IncomeRangeTypeEnum_IncomeRangeType.values, defaultEnumValue: $3274.IncomeRangeTypeEnum_IncomeRangeType.UNSPECIFIED)
+    ..pc<$3275.IncomeRangeTypeEnum_IncomeRangeType>(1, _omitFieldNames ? '' : 'incomeRanges', $pb.PbFieldType.KE, valueOf: $3275.IncomeRangeTypeEnum_IncomeRangeType.valueOf, enumValues: $3275.IncomeRangeTypeEnum_IncomeRangeType.values, defaultEnumValue: $3275.IncomeRangeTypeEnum_IncomeRangeType.UNSPECIFIED)
     ..aOB(2, _omitFieldNames ? '' : 'includeUndetermined')
     ..hasRequiredFields = false
   ;
@@ -514,7 +514,7 @@ class HouseholdIncomeDimension extends $pb.GeneratedMessage {
 
   /// Included household income demographic segments.
   @$pb.TagNumber(1)
-  $core.List<$3274.IncomeRangeTypeEnum_IncomeRangeType> get incomeRanges => $_getList(0);
+  $core.List<$3275.IncomeRangeTypeEnum_IncomeRangeType> get incomeRanges => $_getList(0);
 
   /// Include users whose household income is not determined.
   @$pb.TagNumber(2)
@@ -530,7 +530,7 @@ class HouseholdIncomeDimension extends $pb.GeneratedMessage {
 /// Dimension specifying users by their parental status.
 class ParentalStatusDimension extends $pb.GeneratedMessage {
   factory ParentalStatusDimension({
-    $core.Iterable<$3275.ParentalStatusTypeEnum_ParentalStatusType>? parentalStatuses,
+    $core.Iterable<$3276.ParentalStatusTypeEnum_ParentalStatusType>? parentalStatuses,
     $core.bool? includeUndetermined,
   }) {
     final $result = create();
@@ -547,7 +547,7 @@ class ParentalStatusDimension extends $pb.GeneratedMessage {
   factory ParentalStatusDimension.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ParentalStatusDimension', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..pc<$3275.ParentalStatusTypeEnum_ParentalStatusType>(1, _omitFieldNames ? '' : 'parentalStatuses', $pb.PbFieldType.KE, valueOf: $3275.ParentalStatusTypeEnum_ParentalStatusType.valueOf, enumValues: $3275.ParentalStatusTypeEnum_ParentalStatusType.values, defaultEnumValue: $3275.ParentalStatusTypeEnum_ParentalStatusType.UNSPECIFIED)
+    ..pc<$3276.ParentalStatusTypeEnum_ParentalStatusType>(1, _omitFieldNames ? '' : 'parentalStatuses', $pb.PbFieldType.KE, valueOf: $3276.ParentalStatusTypeEnum_ParentalStatusType.valueOf, enumValues: $3276.ParentalStatusTypeEnum_ParentalStatusType.values, defaultEnumValue: $3276.ParentalStatusTypeEnum_ParentalStatusType.UNSPECIFIED)
     ..aOB(2, _omitFieldNames ? '' : 'includeUndetermined')
     ..hasRequiredFields = false
   ;
@@ -575,7 +575,7 @@ class ParentalStatusDimension extends $pb.GeneratedMessage {
 
   /// Included parental status demographic segments.
   @$pb.TagNumber(1)
-  $core.List<$3275.ParentalStatusTypeEnum_ParentalStatusType> get parentalStatuses => $_getList(0);
+  $core.List<$3276.ParentalStatusTypeEnum_ParentalStatusType> get parentalStatuses => $_getList(0);
 
   /// Include users whose parental status is undetermined.
   @$pb.TagNumber(2)

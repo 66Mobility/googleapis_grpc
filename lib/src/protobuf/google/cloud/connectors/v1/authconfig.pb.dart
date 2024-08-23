@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'authconfig.pbenum.dart';
-import 'common.pb.dart' as $4434;
+import 'common.pb.dart' as $4436;
 
 export 'authconfig.pbenum.dart';
 
@@ -22,7 +22,7 @@ export 'authconfig.pbenum.dart';
 class AuthConfig_UserPassword extends $pb.GeneratedMessage {
   factory AuthConfig_UserPassword({
     $core.String? username,
-    $4434.Secret? password,
+    $4436.Secret? password,
   }) {
     final $result = create();
     if (username != null) {
@@ -39,7 +39,7 @@ class AuthConfig_UserPassword extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthConfig.UserPassword', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'username')
-    ..aOM<$4434.Secret>(2, _omitFieldNames ? '' : 'password', subBuilder: $4434.Secret.create)
+    ..aOM<$4436.Secret>(2, _omitFieldNames ? '' : 'password', subBuilder: $4436.Secret.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,15 +76,15 @@ class AuthConfig_UserPassword extends $pb.GeneratedMessage {
 
   /// Secret version reference containing the password.
   @$pb.TagNumber(2)
-  $4434.Secret get password => $_getN(1);
+  $4436.Secret get password => $_getN(1);
   @$pb.TagNumber(2)
-  set password($4434.Secret v) { setField(2, v); }
+  set password($4436.Secret v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPassword() => $_has(1);
   @$pb.TagNumber(2)
   void clearPassword() => clearField(2);
   @$pb.TagNumber(2)
-  $4434.Secret ensurePassword() => $_ensure(1);
+  $4436.Secret ensurePassword() => $_ensure(1);
 }
 
 /// JWT claims used for the jwt-bearer authorization grant.
@@ -174,7 +174,7 @@ class AuthConfig_Oauth2JwtBearer_JwtClaims extends $pb.GeneratedMessage {
 /// See https://tools.ietf.org/html/rfc7523 for more details.
 class AuthConfig_Oauth2JwtBearer extends $pb.GeneratedMessage {
   factory AuthConfig_Oauth2JwtBearer({
-    $4434.Secret? clientKey,
+    $4436.Secret? clientKey,
     AuthConfig_Oauth2JwtBearer_JwtClaims? jwtClaims,
   }) {
     final $result = create();
@@ -191,7 +191,7 @@ class AuthConfig_Oauth2JwtBearer extends $pb.GeneratedMessage {
   factory AuthConfig_Oauth2JwtBearer.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthConfig.Oauth2JwtBearer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
-    ..aOM<$4434.Secret>(1, _omitFieldNames ? '' : 'clientKey', subBuilder: $4434.Secret.create)
+    ..aOM<$4436.Secret>(1, _omitFieldNames ? '' : 'clientKey', subBuilder: $4436.Secret.create)
     ..aOM<AuthConfig_Oauth2JwtBearer_JwtClaims>(2, _omitFieldNames ? '' : 'jwtClaims', subBuilder: AuthConfig_Oauth2JwtBearer_JwtClaims.create)
     ..hasRequiredFields = false
   ;
@@ -222,15 +222,15 @@ class AuthConfig_Oauth2JwtBearer extends $pb.GeneratedMessage {
   /// used to sign JWTs used for the jwt-bearer authorization grant.
   /// Specified in the form as: `projects/*/secrets/*/versions/*`.
   @$pb.TagNumber(1)
-  $4434.Secret get clientKey => $_getN(0);
+  $4436.Secret get clientKey => $_getN(0);
   @$pb.TagNumber(1)
-  set clientKey($4434.Secret v) { setField(1, v); }
+  set clientKey($4436.Secret v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasClientKey() => $_has(0);
   @$pb.TagNumber(1)
   void clearClientKey() => clearField(1);
   @$pb.TagNumber(1)
-  $4434.Secret ensureClientKey() => $_ensure(0);
+  $4436.Secret ensureClientKey() => $_ensure(0);
 
   /// JwtClaims providers fields to generate the token.
   @$pb.TagNumber(2)
@@ -250,7 +250,7 @@ class AuthConfig_Oauth2JwtBearer extends $pb.GeneratedMessage {
 class AuthConfig_Oauth2ClientCredentials extends $pb.GeneratedMessage {
   factory AuthConfig_Oauth2ClientCredentials({
     $core.String? clientId,
-    $4434.Secret? clientSecret,
+    $4436.Secret? clientSecret,
   }) {
     final $result = create();
     if (clientId != null) {
@@ -267,7 +267,7 @@ class AuthConfig_Oauth2ClientCredentials extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthConfig.Oauth2ClientCredentials', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'clientId')
-    ..aOM<$4434.Secret>(2, _omitFieldNames ? '' : 'clientSecret', subBuilder: $4434.Secret.create)
+    ..aOM<$4436.Secret>(2, _omitFieldNames ? '' : 'clientSecret', subBuilder: $4436.Secret.create)
     ..hasRequiredFields = false
   ;
 
@@ -304,24 +304,24 @@ class AuthConfig_Oauth2ClientCredentials extends $pb.GeneratedMessage {
 
   /// Secret version reference containing the client secret.
   @$pb.TagNumber(2)
-  $4434.Secret get clientSecret => $_getN(1);
+  $4436.Secret get clientSecret => $_getN(1);
   @$pb.TagNumber(2)
-  set clientSecret($4434.Secret v) { setField(2, v); }
+  set clientSecret($4436.Secret v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasClientSecret() => $_has(1);
   @$pb.TagNumber(2)
   void clearClientSecret() => clearField(2);
   @$pb.TagNumber(2)
-  $4434.Secret ensureClientSecret() => $_ensure(1);
+  $4436.Secret ensureClientSecret() => $_ensure(1);
 }
 
 /// Parameters to support Ssh public key Authentication.
 class AuthConfig_SshPublicKey extends $pb.GeneratedMessage {
   factory AuthConfig_SshPublicKey({
     $core.String? username,
-    $4434.Secret? sshClientCert,
+    $4436.Secret? sshClientCert,
     $core.String? certType,
-    $4434.Secret? sshClientCertPass,
+    $4436.Secret? sshClientCertPass,
   }) {
     final $result = create();
     if (username != null) {
@@ -344,9 +344,9 @@ class AuthConfig_SshPublicKey extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthConfig.SshPublicKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'username')
-    ..aOM<$4434.Secret>(3, _omitFieldNames ? '' : 'sshClientCert', subBuilder: $4434.Secret.create)
+    ..aOM<$4436.Secret>(3, _omitFieldNames ? '' : 'sshClientCert', subBuilder: $4436.Secret.create)
     ..aOS(4, _omitFieldNames ? '' : 'certType')
-    ..aOM<$4434.Secret>(5, _omitFieldNames ? '' : 'sshClientCertPass', subBuilder: $4434.Secret.create)
+    ..aOM<$4436.Secret>(5, _omitFieldNames ? '' : 'sshClientCertPass', subBuilder: $4436.Secret.create)
     ..hasRequiredFields = false
   ;
 
@@ -383,15 +383,15 @@ class AuthConfig_SshPublicKey extends $pb.GeneratedMessage {
 
   /// SSH Client Cert. It should contain both public and private key.
   @$pb.TagNumber(3)
-  $4434.Secret get sshClientCert => $_getN(1);
+  $4436.Secret get sshClientCert => $_getN(1);
   @$pb.TagNumber(3)
-  set sshClientCert($4434.Secret v) { setField(3, v); }
+  set sshClientCert($4436.Secret v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSshClientCert() => $_has(1);
   @$pb.TagNumber(3)
   void clearSshClientCert() => clearField(3);
   @$pb.TagNumber(3)
-  $4434.Secret ensureSshClientCert() => $_ensure(1);
+  $4436.Secret ensureSshClientCert() => $_ensure(1);
 
   /// Format of SSH Client cert.
   @$pb.TagNumber(4)
@@ -405,15 +405,15 @@ class AuthConfig_SshPublicKey extends $pb.GeneratedMessage {
 
   /// Password (passphrase) for ssh client certificate if it has one.
   @$pb.TagNumber(5)
-  $4434.Secret get sshClientCertPass => $_getN(3);
+  $4436.Secret get sshClientCertPass => $_getN(3);
   @$pb.TagNumber(5)
-  set sshClientCertPass($4434.Secret v) { setField(5, v); }
+  set sshClientCertPass($4436.Secret v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSshClientCertPass() => $_has(3);
   @$pb.TagNumber(5)
   void clearSshClientCertPass() => clearField(5);
   @$pb.TagNumber(5)
-  $4434.Secret ensureSshClientCertPass() => $_ensure(3);
+  $4436.Secret ensureSshClientCertPass() => $_ensure(3);
 }
 
 enum AuthConfig_Type {
@@ -431,7 +431,7 @@ class AuthConfig extends $pb.GeneratedMessage {
     AuthConfig_UserPassword? userPassword,
     AuthConfig_Oauth2JwtBearer? oauth2JwtBearer,
     AuthConfig_Oauth2ClientCredentials? oauth2ClientCredentials,
-    $core.Iterable<$4434.ConfigVariable>? additionalVariables,
+    $core.Iterable<$4436.ConfigVariable>? additionalVariables,
     AuthConfig_SshPublicKey? sshPublicKey,
   }) {
     final $result = create();
@@ -472,7 +472,7 @@ class AuthConfig extends $pb.GeneratedMessage {
     ..aOM<AuthConfig_UserPassword>(2, _omitFieldNames ? '' : 'userPassword', subBuilder: AuthConfig_UserPassword.create)
     ..aOM<AuthConfig_Oauth2JwtBearer>(3, _omitFieldNames ? '' : 'oauth2JwtBearer', subBuilder: AuthConfig_Oauth2JwtBearer.create)
     ..aOM<AuthConfig_Oauth2ClientCredentials>(4, _omitFieldNames ? '' : 'oauth2ClientCredentials', subBuilder: AuthConfig_Oauth2ClientCredentials.create)
-    ..pc<$4434.ConfigVariable>(5, _omitFieldNames ? '' : 'additionalVariables', $pb.PbFieldType.PM, subBuilder: $4434.ConfigVariable.create)
+    ..pc<$4436.ConfigVariable>(5, _omitFieldNames ? '' : 'additionalVariables', $pb.PbFieldType.PM, subBuilder: $4436.ConfigVariable.create)
     ..aOM<AuthConfig_SshPublicKey>(6, _omitFieldNames ? '' : 'sshPublicKey', subBuilder: AuthConfig_SshPublicKey.create)
     ..hasRequiredFields = false
   ;
@@ -549,7 +549,7 @@ class AuthConfig extends $pb.GeneratedMessage {
 
   /// List containing additional auth configs.
   @$pb.TagNumber(5)
-  $core.List<$4434.ConfigVariable> get additionalVariables => $_getList(4);
+  $core.List<$4436.ConfigVariable> get additionalVariables => $_getList(4);
 
   /// SSH Public Key.
   @$pb.TagNumber(6)
@@ -568,7 +568,7 @@ class AuthConfig extends $pb.GeneratedMessage {
 class AuthConfigTemplate extends $pb.GeneratedMessage {
   factory AuthConfigTemplate({
     AuthType? authType,
-    $core.Iterable<$4434.ConfigVariableTemplate>? configVariableTemplates,
+    $core.Iterable<$4436.ConfigVariableTemplate>? configVariableTemplates,
     $core.String? displayName,
     $core.String? description,
   }) {
@@ -593,7 +593,7 @@ class AuthConfigTemplate extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthConfigTemplate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..e<AuthType>(1, _omitFieldNames ? '' : 'authType', $pb.PbFieldType.OE, defaultOrMaker: AuthType.AUTH_TYPE_UNSPECIFIED, valueOf: AuthType.valueOf, enumValues: AuthType.values)
-    ..pc<$4434.ConfigVariableTemplate>(2, _omitFieldNames ? '' : 'configVariableTemplates', $pb.PbFieldType.PM, subBuilder: $4434.ConfigVariableTemplate.create)
+    ..pc<$4436.ConfigVariableTemplate>(2, _omitFieldNames ? '' : 'configVariableTemplates', $pb.PbFieldType.PM, subBuilder: $4436.ConfigVariableTemplate.create)
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
@@ -632,7 +632,7 @@ class AuthConfigTemplate extends $pb.GeneratedMessage {
 
   /// Config variables to describe an `AuthConfig` for a `Connection`.
   @$pb.TagNumber(2)
-  $core.List<$4434.ConfigVariableTemplate> get configVariableTemplates => $_getList(1);
+  $core.List<$4436.ConfigVariableTemplate> get configVariableTemplates => $_getList(1);
 
   /// Display name for authentication template.
   @$pb.TagNumber(3)

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/campaign_group_status.pbenum.dart' as $2905;
+import '../enums/campaign_group_status.pbenum.dart' as $2906;
 
 /// A campaign group.
 class CampaignGroup extends $pb.GeneratedMessage {
@@ -22,7 +22,7 @@ class CampaignGroup extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? id,
     $core.String? name,
-    $2905.CampaignGroupStatusEnum_CampaignGroupStatus? status,
+    $2906.CampaignGroupStatusEnum_CampaignGroupStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -47,7 +47,7 @@ class CampaignGroup extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(3, _omitFieldNames ? '' : 'id')
     ..aOS(4, _omitFieldNames ? '' : 'name')
-    ..e<$2905.CampaignGroupStatusEnum_CampaignGroupStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2905.CampaignGroupStatusEnum_CampaignGroupStatus.UNSPECIFIED, valueOf: $2905.CampaignGroupStatusEnum_CampaignGroupStatus.valueOf, enumValues: $2905.CampaignGroupStatusEnum_CampaignGroupStatus.values)
+    ..e<$2906.CampaignGroupStatusEnum_CampaignGroupStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2906.CampaignGroupStatusEnum_CampaignGroupStatus.UNSPECIFIED, valueOf: $2906.CampaignGroupStatusEnum_CampaignGroupStatus.valueOf, enumValues: $2906.CampaignGroupStatusEnum_CampaignGroupStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -115,9 +115,9 @@ class CampaignGroup extends $pb.GeneratedMessage {
   ///
   ///  When a new campaign group is added, the status defaults to ENABLED.
   @$pb.TagNumber(5)
-  $2905.CampaignGroupStatusEnum_CampaignGroupStatus get status => $_getN(3);
+  $2906.CampaignGroupStatusEnum_CampaignGroupStatus get status => $_getN(3);
   @$pb.TagNumber(5)
-  set status($2905.CampaignGroupStatusEnum_CampaignGroupStatus v) { setField(5, v); }
+  set status($2906.CampaignGroupStatusEnum_CampaignGroupStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(5)

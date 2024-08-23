@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/money.pb.dart' as $1814;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/money.pb.dart' as $1815;
 import 'recommendation.pbenum.dart';
 
 export 'recommendation.pbenum.dart';
@@ -80,7 +80,7 @@ class Recommendation extends $pb.GeneratedMessage {
   factory Recommendation({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? lastRefreshTime,
+    $1776.Timestamp? lastRefreshTime,
     Impact? primaryImpact,
     $core.Iterable<Impact>? additionalImpact,
     RecommendationContent? content,
@@ -137,7 +137,7 @@ class Recommendation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Recommendation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'lastRefreshTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'lastRefreshTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Impact>(5, _omitFieldNames ? '' : 'primaryImpact', subBuilder: Impact.create)
     ..pc<Impact>(6, _omitFieldNames ? '' : 'additionalImpact', $pb.PbFieldType.PM, subBuilder: Impact.create)
     ..aOM<RecommendationContent>(7, _omitFieldNames ? '' : 'content', subBuilder: RecommendationContent.create)
@@ -195,15 +195,15 @@ class Recommendation extends $pb.GeneratedMessage {
   /// Last time this recommendation was refreshed by the system that created it
   /// in the first place.
   @$pb.TagNumber(4)
-  $1775.Timestamp get lastRefreshTime => $_getN(2);
+  $1776.Timestamp get lastRefreshTime => $_getN(2);
   @$pb.TagNumber(4)
-  set lastRefreshTime($1775.Timestamp v) { setField(4, v); }
+  set lastRefreshTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastRefreshTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearLastRefreshTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureLastRefreshTime() => $_ensure(2);
+  $1776.Timestamp ensureLastRefreshTime() => $_ensure(2);
 
   /// The primary impact that this recommendation can have while trying to
   /// optimize for one category.
@@ -309,7 +309,7 @@ class Recommendation extends $pb.GeneratedMessage {
 class RecommendationContent extends $pb.GeneratedMessage {
   factory RecommendationContent({
     $core.Iterable<OperationGroup>? operationGroups,
-    $1734.Struct? overview,
+    $1735.Struct? overview,
   }) {
     final $result = create();
     if (operationGroups != null) {
@@ -326,7 +326,7 @@ class RecommendationContent extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecommendationContent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
     ..pc<OperationGroup>(2, _omitFieldNames ? '' : 'operationGroups', $pb.PbFieldType.PM, subBuilder: OperationGroup.create)
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'overview', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'overview', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -359,15 +359,15 @@ class RecommendationContent extends $pb.GeneratedMessage {
 
   /// Condensed overview information about the recommendation.
   @$pb.TagNumber(3)
-  $1734.Struct get overview => $_getN(1);
+  $1735.Struct get overview => $_getN(1);
   @$pb.TagNumber(3)
-  set overview($1734.Struct v) { setField(3, v); }
+  set overview($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOverview() => $_has(1);
   @$pb.TagNumber(3)
   void clearOverview() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureOverview() => $_ensure(1);
+  $1735.Struct ensureOverview() => $_ensure(1);
 }
 
 /// Group of operations that need to be performed atomically.
@@ -440,8 +440,8 @@ class Operation extends $pb.GeneratedMessage {
     $core.String? path,
     $core.String? sourceResource,
     $core.String? sourcePath,
-    $1734.Value? value,
-    $core.Map<$core.String, $1734.Value>? pathFilters,
+    $1735.Value? value,
+    $core.Map<$core.String, $1735.Value>? pathFilters,
     ValueMatcher? valueMatcher,
     $core.Map<$core.String, ValueMatcher>? pathValueMatchers,
   }) {
@@ -495,8 +495,8 @@ class Operation extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'path')
     ..aOS(5, _omitFieldNames ? '' : 'sourceResource')
     ..aOS(6, _omitFieldNames ? '' : 'sourcePath')
-    ..aOM<$1734.Value>(7, _omitFieldNames ? '' : 'value', subBuilder: $1734.Value.create)
-    ..m<$core.String, $1734.Value>(8, _omitFieldNames ? '' : 'pathFilters', entryClassName: 'Operation.PathFiltersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommender.v1'))
+    ..aOM<$1735.Value>(7, _omitFieldNames ? '' : 'value', subBuilder: $1735.Value.create)
+    ..m<$core.String, $1735.Value>(8, _omitFieldNames ? '' : 'pathFilters', entryClassName: 'Operation.PathFiltersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.recommender.v1'))
     ..aOM<ValueMatcher>(10, _omitFieldNames ? '' : 'valueMatcher', subBuilder: ValueMatcher.create)
     ..m<$core.String, ValueMatcher>(11, _omitFieldNames ? '' : 'pathValueMatchers', entryClassName: 'Operation.PathValueMatchersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: ValueMatcher.create, valueDefaultOrMaker: ValueMatcher.getDefault, packageName: const $pb.PackageName('google.cloud.recommender.v1'))
     ..hasRequiredFields = false
@@ -601,15 +601,15 @@ class Operation extends $pb.GeneratedMessage {
   /// Maybe set for action: 'test'. Either this or `value_matcher` will be set
   /// for 'test' operation. An exact match must be performed.
   @$pb.TagNumber(7)
-  $1734.Value get value => $_getN(6);
+  $1735.Value get value => $_getN(6);
   @$pb.TagNumber(7)
-  set value($1734.Value v) { setField(7, v); }
+  set value($1735.Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasValue() => $_has(6);
   @$pb.TagNumber(7)
   void clearValue() => clearField(7);
   @$pb.TagNumber(7)
-  $1734.Value ensureValue() => $_ensure(6);
+  $1735.Value ensureValue() => $_ensure(6);
 
   ///  Set of filters to apply if `path` refers to array elements or nested array
   ///  elements in order to narrow down to a single unique element that is being
@@ -641,7 +641,7 @@ class Operation extends $pb.GeneratedMessage {
   ///  When both path_filters and path_value_matchers are set, an implicit AND
   ///  must be performed.
   @$pb.TagNumber(8)
-  $core.Map<$core.String, $1734.Value> get pathFilters => $_getMap(7);
+  $core.Map<$core.String, $1735.Value> get pathFilters => $_getMap(7);
 
   /// Can be set for action 'test' for advanced matching for the value of
   /// 'path' field. Either this or `value` will be set for 'test' operation.
@@ -735,9 +735,9 @@ class ValueMatcher extends $pb.GeneratedMessage {
 /// Contains metadata about how much money a recommendation can save or incur.
 class CostProjection extends $pb.GeneratedMessage {
   factory CostProjection({
-    $1814.Money? cost,
-    $1737.Duration? duration,
-    $1814.Money? costInLocalCurrency,
+    $1815.Money? cost,
+    $1738.Duration? duration,
+    $1815.Money? costInLocalCurrency,
   }) {
     final $result = create();
     if (cost != null) {
@@ -756,9 +756,9 @@ class CostProjection extends $pb.GeneratedMessage {
   factory CostProjection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CostProjection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
-    ..aOM<$1814.Money>(1, _omitFieldNames ? '' : 'cost', subBuilder: $1814.Money.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
-    ..aOM<$1814.Money>(3, _omitFieldNames ? '' : 'costInLocalCurrency', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(1, _omitFieldNames ? '' : 'cost', subBuilder: $1815.Money.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
+    ..aOM<$1815.Money>(3, _omitFieldNames ? '' : 'costInLocalCurrency', subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -790,45 +790,45 @@ class CostProjection extends $pb.GeneratedMessage {
   ///  A user's permissions may affect whether the cost is computed using list
   ///  prices or custom contract prices.
   @$pb.TagNumber(1)
-  $1814.Money get cost => $_getN(0);
+  $1815.Money get cost => $_getN(0);
   @$pb.TagNumber(1)
-  set cost($1814.Money v) { setField(1, v); }
+  set cost($1815.Money v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCost() => $_has(0);
   @$pb.TagNumber(1)
   void clearCost() => clearField(1);
   @$pb.TagNumber(1)
-  $1814.Money ensureCost() => $_ensure(0);
+  $1815.Money ensureCost() => $_ensure(0);
 
   /// Duration for which this cost applies.
   @$pb.TagNumber(2)
-  $1737.Duration get duration => $_getN(1);
+  $1738.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($1737.Duration v) { setField(2, v); }
+  set duration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureDuration() => $_ensure(1);
+  $1738.Duration ensureDuration() => $_ensure(1);
 
   /// The approximate cost savings in the billing account's local currency.
   @$pb.TagNumber(3)
-  $1814.Money get costInLocalCurrency => $_getN(2);
+  $1815.Money get costInLocalCurrency => $_getN(2);
   @$pb.TagNumber(3)
-  set costInLocalCurrency($1814.Money v) { setField(3, v); }
+  set costInLocalCurrency($1815.Money v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCostInLocalCurrency() => $_has(2);
   @$pb.TagNumber(3)
   void clearCostInLocalCurrency() => clearField(3);
   @$pb.TagNumber(3)
-  $1814.Money ensureCostInLocalCurrency() => $_ensure(2);
+  $1815.Money ensureCostInLocalCurrency() => $_ensure(2);
 }
 
 /// Contains various ways of describing the impact on Security.
 class SecurityProjection extends $pb.GeneratedMessage {
   factory SecurityProjection({
-    $1734.Struct? details,
+    $1735.Struct? details,
   }) {
     final $result = create();
     if (details != null) {
@@ -841,7 +841,7 @@ class SecurityProjection extends $pb.GeneratedMessage {
   factory SecurityProjection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SecurityProjection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'details', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'details', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -868,15 +868,15 @@ class SecurityProjection extends $pb.GeneratedMessage {
 
   /// Additional security impact details that is provided by the recommender.
   @$pb.TagNumber(2)
-  $1734.Struct get details => $_getN(0);
+  $1735.Struct get details => $_getN(0);
   @$pb.TagNumber(2)
-  set details($1734.Struct v) { setField(2, v); }
+  set details($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDetails() => $_has(0);
   @$pb.TagNumber(2)
   void clearDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureDetails() => $_ensure(0);
+  $1735.Struct ensureDetails() => $_ensure(0);
 }
 
 /// Contains metadata about how much sustainability a recommendation can save or
@@ -884,7 +884,7 @@ class SecurityProjection extends $pb.GeneratedMessage {
 class SustainabilityProjection extends $pb.GeneratedMessage {
   factory SustainabilityProjection({
     $core.double? kgCO2e,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (kgCO2e != null) {
@@ -901,7 +901,7 @@ class SustainabilityProjection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SustainabilityProjection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'kgCO2e', $pb.PbFieldType.OD)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -939,22 +939,22 @@ class SustainabilityProjection extends $pb.GeneratedMessage {
 
   /// Duration for which this sustainability applies.
   @$pb.TagNumber(2)
-  $1737.Duration get duration => $_getN(1);
+  $1738.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($1737.Duration v) { setField(2, v); }
+  set duration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureDuration() => $_ensure(1);
+  $1738.Duration ensureDuration() => $_ensure(1);
 }
 
 /// Contains information on the impact of a reliability recommendation.
 class ReliabilityProjection extends $pb.GeneratedMessage {
   factory ReliabilityProjection({
     $core.Iterable<ReliabilityProjection_RiskType>? risks,
-    $1734.Struct? details,
+    $1735.Struct? details,
   }) {
     final $result = create();
     if (risks != null) {
@@ -971,7 +971,7 @@ class ReliabilityProjection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReliabilityProjection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
     ..pc<ReliabilityProjection_RiskType>(1, _omitFieldNames ? '' : 'risks', $pb.PbFieldType.KE, valueOf: ReliabilityProjection_RiskType.valueOf, enumValues: ReliabilityProjection_RiskType.values, defaultEnumValue: ReliabilityProjection_RiskType.RISK_TYPE_UNSPECIFIED)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'details', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'details', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1002,15 +1002,15 @@ class ReliabilityProjection extends $pb.GeneratedMessage {
 
   /// Per-recommender projection.
   @$pb.TagNumber(2)
-  $1734.Struct get details => $_getN(1);
+  $1735.Struct get details => $_getN(1);
   @$pb.TagNumber(2)
-  set details($1734.Struct v) { setField(2, v); }
+  set details($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureDetails() => $_ensure(1);
+  $1735.Struct ensureDetails() => $_ensure(1);
 }
 
 enum Impact_Projection {

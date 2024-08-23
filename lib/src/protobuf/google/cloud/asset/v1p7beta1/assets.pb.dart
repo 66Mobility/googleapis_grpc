@@ -17,9 +17,9 @@ import '../../../iam/v1/policy.pb.dart' as $463;
 import '../../../identity/accesscontextmanager/v1/access_level.pb.dart' as $1628;
 import '../../../identity/accesscontextmanager/v1/access_policy.pb.dart' as $1627;
 import '../../../identity/accesscontextmanager/v1/service_perimeter.pb.dart' as $1629;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../orgpolicy/v1/orgpolicy.pb.dart' as $4324;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../orgpolicy/v1/orgpolicy.pb.dart' as $4325;
 
 enum Asset_AccessContextPolicy {
   accessPolicy, 
@@ -42,12 +42,12 @@ class Asset extends $pb.GeneratedMessage {
     $core.String? assetType,
     Resource? resource,
     $463.Policy? iamPolicy,
-    $core.Iterable<$4324.Policy>? orgPolicy,
+    $core.Iterable<$4325.Policy>? orgPolicy,
     $1627.AccessPolicy? accessPolicy,
     $1628.AccessLevel? accessLevel,
     $1629.ServicePerimeter? servicePerimeter,
     $core.Iterable<$core.String>? ancestors,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     RelatedAssets? relatedAssets,
   }) {
     final $result = create();
@@ -102,12 +102,12 @@ class Asset extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'assetType')
     ..aOM<Resource>(3, _omitFieldNames ? '' : 'resource', subBuilder: Resource.create)
     ..aOM<$463.Policy>(4, _omitFieldNames ? '' : 'iamPolicy', subBuilder: $463.Policy.create)
-    ..pc<$4324.Policy>(6, _omitFieldNames ? '' : 'orgPolicy', $pb.PbFieldType.PM, subBuilder: $4324.Policy.create)
+    ..pc<$4325.Policy>(6, _omitFieldNames ? '' : 'orgPolicy', $pb.PbFieldType.PM, subBuilder: $4325.Policy.create)
     ..aOM<$1627.AccessPolicy>(7, _omitFieldNames ? '' : 'accessPolicy', subBuilder: $1627.AccessPolicy.create)
     ..aOM<$1628.AccessLevel>(8, _omitFieldNames ? '' : 'accessLevel', subBuilder: $1628.AccessLevel.create)
     ..aOM<$1629.ServicePerimeter>(9, _omitFieldNames ? '' : 'servicePerimeter', subBuilder: $1629.ServicePerimeter.create)
     ..pPS(10, _omitFieldNames ? '' : 'ancestors')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<RelatedAssets>(13, _omitFieldNames ? '' : 'relatedAssets', subBuilder: RelatedAssets.create)
     ..hasRequiredFields = false
   ;
@@ -202,7 +202,7 @@ class Asset extends $pb.GeneratedMessage {
   /// There can be more than one organization policy with different constraints
   /// set on a given resource.
   @$pb.TagNumber(6)
-  $core.List<$4324.Policy> get orgPolicy => $_getList(4);
+  $core.List<$4325.Policy> get orgPolicy => $_getList(4);
 
   /// Please also refer to the [access policy user
   /// guide](https://cloud.google.com/access-context-manager/docs/overview#access-policies).
@@ -257,15 +257,15 @@ class Asset extends $pb.GeneratedMessage {
   /// The last update timestamp of an asset. update_time is updated when
   /// create/update/delete operation is performed.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// The related assets of the asset of one relationship type.
   /// One asset only represents one type of relationship.
@@ -289,7 +289,7 @@ class Resource extends $pb.GeneratedMessage {
     $core.String? discoveryName,
     $core.String? resourceUrl,
     $core.String? parent,
-    $1734.Struct? data,
+    $1735.Struct? data,
     $core.String? location,
   }) {
     final $result = create();
@@ -326,7 +326,7 @@ class Resource extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'discoveryName')
     ..aOS(4, _omitFieldNames ? '' : 'resourceUrl')
     ..aOS(5, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'data', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'data', subBuilder: $1735.Struct.create)
     ..aOS(8, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false
   ;
@@ -429,15 +429,15 @@ class Resource extends $pb.GeneratedMessage {
   /// The content of the resource, in which some sensitive fields are removed
   /// and may not be present.
   @$pb.TagNumber(6)
-  $1734.Struct get data => $_getN(5);
+  $1735.Struct get data => $_getN(5);
   @$pb.TagNumber(6)
-  set data($1734.Struct v) { setField(6, v); }
+  set data($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasData() => $_has(5);
   @$pb.TagNumber(6)
   void clearData() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureData() => $_ensure(5);
+  $1735.Struct ensureData() => $_ensure(5);
 
   /// The location of the resource in Google Cloud, such as its zone and region.
   /// For more information, see https://cloud.google.com/about/locations/.

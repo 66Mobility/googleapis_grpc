@@ -15,8 +15,8 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'clouddms_resources.pbenum.dart' as $770;
 import 'conversionworkspace_resources.pbenum.dart';
 
@@ -98,9 +98,9 @@ class ConversionWorkspace extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.String>? globalSettings,
     $core.bool? hasUncommittedChanges,
     $core.String? latestCommitId,
-    $1775.Timestamp? latestCommitTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? latestCommitTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? displayName,
   }) {
     final $result = create();
@@ -147,9 +147,9 @@ class ConversionWorkspace extends $pb.GeneratedMessage {
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'globalSettings', entryClassName: 'ConversionWorkspace.GlobalSettingsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.clouddms.v1'))
     ..aOB(5, _omitFieldNames ? '' : 'hasUncommittedChanges')
     ..aOS(6, _omitFieldNames ? '' : 'latestCommitId')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'latestCommitTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'latestCommitTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
   ;
@@ -241,39 +241,39 @@ class ConversionWorkspace extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the workspace was committed.
   @$pb.TagNumber(7)
-  $1775.Timestamp get latestCommitTime => $_getN(6);
+  $1776.Timestamp get latestCommitTime => $_getN(6);
   @$pb.TagNumber(7)
-  set latestCommitTime($1775.Timestamp v) { setField(7, v); }
+  set latestCommitTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLatestCommitTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearLatestCommitTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureLatestCommitTime() => $_ensure(6);
+  $1776.Timestamp ensureLatestCommitTime() => $_ensure(6);
 
   /// Output only. The timestamp when the workspace resource was created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The timestamp when the workspace resource was last updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Optional. The display name for the workspace.
   @$pb.TagNumber(11)
@@ -531,8 +531,8 @@ class BackgroundJobLogEntry extends $pb.GeneratedMessage {
   factory BackgroundJobLogEntry({
     $core.String? id,
     BackgroundJobType? jobType,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? finishTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? finishTime,
     BackgroundJobLogEntry_JobCompletionState? completionState,
     $core.String? completionComment,
     $core.bool? requestAutocommit,
@@ -592,8 +592,8 @@ class BackgroundJobLogEntry extends $pb.GeneratedMessage {
     ..oo(0, [100, 101, 102, 103])
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..e<BackgroundJobType>(2, _omitFieldNames ? '' : 'jobType', $pb.PbFieldType.OE, defaultOrMaker: BackgroundJobType.BACKGROUND_JOB_TYPE_UNSPECIFIED, valueOf: BackgroundJobType.valueOf, enumValues: BackgroundJobType.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'finishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'finishTime', subBuilder: $1776.Timestamp.create)
     ..e<BackgroundJobLogEntry_JobCompletionState>(5, _omitFieldNames ? '' : 'completionState', $pb.PbFieldType.OE, defaultOrMaker: BackgroundJobLogEntry_JobCompletionState.JOB_COMPLETION_STATE_UNSPECIFIED, valueOf: BackgroundJobLogEntry_JobCompletionState.valueOf, enumValues: BackgroundJobLogEntry_JobCompletionState.values)
     ..aOS(6, _omitFieldNames ? '' : 'completionComment')
     ..aOB(7, _omitFieldNames ? '' : 'requestAutocommit')
@@ -650,27 +650,27 @@ class BackgroundJobLogEntry extends $pb.GeneratedMessage {
 
   /// The timestamp when the background job was started.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The timestamp when the background job was finished.
   @$pb.TagNumber(4)
-  $1775.Timestamp get finishTime => $_getN(3);
+  $1776.Timestamp get finishTime => $_getN(3);
   @$pb.TagNumber(4)
-  set finishTime($1775.Timestamp v) { setField(4, v); }
+  set finishTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFinishTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearFinishTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureFinishTime() => $_ensure(3);
+  $1776.Timestamp ensureFinishTime() => $_ensure(3);
 
   /// Output only. Job completion state, i.e. the final state after the job
   /// completed.
@@ -898,7 +898,7 @@ class MappingRule extends $pb.GeneratedMessage {
     MappingRuleFilter? filter,
     $fixnum.Int64? ruleOrder,
     $core.String? revisionId,
-    $1775.Timestamp? revisionCreateTime,
+    $1776.Timestamp? revisionCreateTime,
     SingleEntityRename? singleEntityRename,
     MultiEntityRename? multiEntityRename,
     EntityMove? entityMove,
@@ -998,7 +998,7 @@ class MappingRule extends $pb.GeneratedMessage {
     ..aOM<MappingRuleFilter>(5, _omitFieldNames ? '' : 'filter', subBuilder: MappingRuleFilter.create)
     ..aInt64(6, _omitFieldNames ? '' : 'ruleOrder')
     ..aOS(7, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SingleEntityRename>(102, _omitFieldNames ? '' : 'singleEntityRename', subBuilder: SingleEntityRename.create)
     ..aOM<MultiEntityRename>(103, _omitFieldNames ? '' : 'multiEntityRename', subBuilder: MultiEntityRename.create)
     ..aOM<EntityMove>(105, _omitFieldNames ? '' : 'entityMove', subBuilder: EntityMove.create)
@@ -1115,15 +1115,15 @@ class MappingRule extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp that the revision was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get revisionCreateTime => $_getN(7);
+  $1776.Timestamp get revisionCreateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set revisionCreateTime($1775.Timestamp v) { setField(8, v); }
+  set revisionCreateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRevisionCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearRevisionCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureRevisionCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureRevisionCreateTime() => $_ensure(7);
 
   /// Optional. Rule to specify how a single entity should be renamed.
   @$pb.TagNumber(102)
@@ -1485,7 +1485,7 @@ class SingleColumnChange extends $pb.GeneratedMessage {
     $core.bool? nullable,
     $core.bool? autoGenerated,
     $core.bool? udt,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
     $core.Iterable<$core.String>? setValues,
     $core.String? comment,
   }) {
@@ -1554,7 +1554,7 @@ class SingleColumnChange extends $pb.GeneratedMessage {
     ..aOB(10, _omitFieldNames ? '' : 'nullable')
     ..aOB(11, _omitFieldNames ? '' : 'autoGenerated')
     ..aOB(12, _omitFieldNames ? '' : 'udt')
-    ..aOM<$1734.Struct>(13, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(13, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..pPS(14, _omitFieldNames ? '' : 'setValues')
     ..aOS(15, _omitFieldNames ? '' : 'comment')
     ..hasRequiredFields = false
@@ -1705,15 +1705,15 @@ class SingleColumnChange extends $pb.GeneratedMessage {
 
   /// Optional. Custom engine specific features.
   @$pb.TagNumber(13)
-  $1734.Struct get customFeatures => $_getN(12);
+  $1735.Struct get customFeatures => $_getN(12);
   @$pb.TagNumber(13)
-  set customFeatures($1734.Struct v) { setField(13, v); }
+  set customFeatures($1735.Struct v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCustomFeatures() => $_has(12);
   @$pb.TagNumber(13)
   void clearCustomFeatures() => clearField(13);
   @$pb.TagNumber(13)
-  $1734.Struct ensureCustomFeatures() => $_ensure(12);
+  $1735.Struct ensureCustomFeatures() => $_ensure(12);
 
   /// Optional. Specifies the list of values allowed in the column.
   @$pb.TagNumber(14)
@@ -1757,7 +1757,7 @@ class MultiColumnDatatypeChange extends $pb.GeneratedMessage {
     $core.int? overrideScale,
     $core.int? overridePrecision,
     $core.int? overrideFractionalSecondsPrecision,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
     SourceTextFilter? sourceTextFilter,
     SourceNumericFilter? sourceNumericFilter,
   }) {
@@ -1808,7 +1808,7 @@ class MultiColumnDatatypeChange extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'overrideScale', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'overridePrecision', $pb.PbFieldType.O3)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'overrideFractionalSecondsPrecision', $pb.PbFieldType.O3)
-    ..aOM<$1734.Struct>(7, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(7, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..aOM<SourceTextFilter>(100, _omitFieldNames ? '' : 'sourceTextFilter', subBuilder: SourceTextFilter.create)
     ..aOM<SourceNumericFilter>(101, _omitFieldNames ? '' : 'sourceNumericFilter', subBuilder: SourceNumericFilter.create)
     ..hasRequiredFields = false
@@ -1905,15 +1905,15 @@ class MultiColumnDatatypeChange extends $pb.GeneratedMessage {
 
   /// Optional. Custom engine specific features.
   @$pb.TagNumber(7)
-  $1734.Struct get customFeatures => $_getN(6);
+  $1735.Struct get customFeatures => $_getN(6);
   @$pb.TagNumber(7)
-  set customFeatures($1734.Struct v) { setField(7, v); }
+  set customFeatures($1735.Struct v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCustomFeatures() => $_has(6);
   @$pb.TagNumber(7)
   void clearCustomFeatures() => clearField(7);
   @$pb.TagNumber(7)
-  $1734.Struct ensureCustomFeatures() => $_ensure(6);
+  $1735.Struct ensureCustomFeatures() => $_ensure(6);
 
   /// Optional. Filter for text-based data types like varchar.
   @$pb.TagNumber(100)
@@ -2142,7 +2142,7 @@ enum ConditionalColumnSetValue_SourceFilter {
 class ConditionalColumnSetValue extends $pb.GeneratedMessage {
   factory ConditionalColumnSetValue({
     ValueTransformation? valueTransformation,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
     SourceTextFilter? sourceTextFilter,
     SourceNumericFilter? sourceNumericFilter,
   }) {
@@ -2173,7 +2173,7 @@ class ConditionalColumnSetValue extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConditionalColumnSetValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..oo(0, [100, 101])
     ..aOM<ValueTransformation>(1, _omitFieldNames ? '' : 'valueTransformation', subBuilder: ValueTransformation.create)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..aOM<SourceTextFilter>(100, _omitFieldNames ? '' : 'sourceTextFilter', subBuilder: SourceTextFilter.create)
     ..aOM<SourceNumericFilter>(101, _omitFieldNames ? '' : 'sourceNumericFilter', subBuilder: SourceNumericFilter.create)
     ..hasRequiredFields = false
@@ -2217,15 +2217,15 @@ class ConditionalColumnSetValue extends $pb.GeneratedMessage {
 
   /// Optional. Custom engine specific features.
   @$pb.TagNumber(2)
-  $1734.Struct get customFeatures => $_getN(1);
+  $1735.Struct get customFeatures => $_getN(1);
   @$pb.TagNumber(2)
-  set customFeatures($1734.Struct v) { setField(2, v); }
+  set customFeatures($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomFeatures() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomFeatures() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureCustomFeatures() => $_ensure(1);
+  $1735.Struct ensureCustomFeatures() => $_ensure(1);
 
   /// Optional. Optional filter on source column length. Used for text based
   /// data types like varchar.
@@ -3573,7 +3573,7 @@ class DatabaseEntity extends $pb.GeneratedMessage {
 /// DatabaseInstance acts as a parent entity to other database entities.
 class DatabaseInstanceEntity extends $pb.GeneratedMessage {
   factory DatabaseInstanceEntity({
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (customFeatures != null) {
@@ -3586,7 +3586,7 @@ class DatabaseInstanceEntity extends $pb.GeneratedMessage {
   factory DatabaseInstanceEntity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatabaseInstanceEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -3613,15 +3613,15 @@ class DatabaseInstanceEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(1)
-  $1734.Struct get customFeatures => $_getN(0);
+  $1735.Struct get customFeatures => $_getN(0);
   @$pb.TagNumber(1)
-  set customFeatures($1734.Struct v) { setField(1, v); }
+  set customFeatures($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCustomFeatures() => $_has(0);
   @$pb.TagNumber(1)
   void clearCustomFeatures() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureCustomFeatures() => $_ensure(0);
+  $1735.Struct ensureCustomFeatures() => $_ensure(0);
 }
 
 /// Schema typically has no parent entity, but can have a parent entity
@@ -3631,7 +3631,7 @@ class DatabaseInstanceEntity extends $pb.GeneratedMessage {
 /// additional information which is schema specific.
 class SchemaEntity extends $pb.GeneratedMessage {
   factory SchemaEntity({
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (customFeatures != null) {
@@ -3644,7 +3644,7 @@ class SchemaEntity extends $pb.GeneratedMessage {
   factory SchemaEntity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SchemaEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -3671,15 +3671,15 @@ class SchemaEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(1)
-  $1734.Struct get customFeatures => $_getN(0);
+  $1735.Struct get customFeatures => $_getN(0);
   @$pb.TagNumber(1)
-  set customFeatures($1734.Struct v) { setField(1, v); }
+  set customFeatures($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCustomFeatures() => $_has(0);
   @$pb.TagNumber(1)
   void clearCustomFeatures() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureCustomFeatures() => $_ensure(0);
+  $1735.Struct ensureCustomFeatures() => $_ensure(0);
 }
 
 /// Table's parent is a schema.
@@ -3689,7 +3689,7 @@ class TableEntity extends $pb.GeneratedMessage {
     $core.Iterable<ConstraintEntity>? constraints,
     $core.Iterable<IndexEntity>? indices,
     $core.Iterable<TriggerEntity>? triggers,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
     $core.String? comment,
   }) {
     final $result = create();
@@ -3722,7 +3722,7 @@ class TableEntity extends $pb.GeneratedMessage {
     ..pc<ConstraintEntity>(2, _omitFieldNames ? '' : 'constraints', $pb.PbFieldType.PM, subBuilder: ConstraintEntity.create)
     ..pc<IndexEntity>(3, _omitFieldNames ? '' : 'indices', $pb.PbFieldType.PM, subBuilder: IndexEntity.create)
     ..pc<TriggerEntity>(4, _omitFieldNames ? '' : 'triggers', $pb.PbFieldType.PM, subBuilder: TriggerEntity.create)
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..aOS(6, _omitFieldNames ? '' : 'comment')
     ..hasRequiredFields = false
   ;
@@ -3766,15 +3766,15 @@ class TableEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(5)
-  $1734.Struct get customFeatures => $_getN(4);
+  $1735.Struct get customFeatures => $_getN(4);
   @$pb.TagNumber(5)
-  set customFeatures($1734.Struct v) { setField(5, v); }
+  set customFeatures($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCustomFeatures() => $_has(4);
   @$pb.TagNumber(5)
   void clearCustomFeatures() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureCustomFeatures() => $_ensure(4);
+  $1735.Struct ensureCustomFeatures() => $_ensure(4);
 
   /// Comment associated with the table.
   @$pb.TagNumber(6)
@@ -3804,7 +3804,7 @@ class ColumnEntity extends $pb.GeneratedMessage {
     $core.bool? nullable,
     $core.bool? autoGenerated,
     $core.bool? udt,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
     $core.Iterable<$core.String>? setValues,
     $core.String? comment,
     $core.int? ordinalPosition,
@@ -3885,7 +3885,7 @@ class ColumnEntity extends $pb.GeneratedMessage {
     ..aOB(11, _omitFieldNames ? '' : 'nullable')
     ..aOB(12, _omitFieldNames ? '' : 'autoGenerated')
     ..aOB(13, _omitFieldNames ? '' : 'udt')
-    ..aOM<$1734.Struct>(14, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(14, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..pPS(15, _omitFieldNames ? '' : 'setValues')
     ..aOS(16, _omitFieldNames ? '' : 'comment')
     ..a<$core.int>(17, _omitFieldNames ? '' : 'ordinalPosition', $pb.PbFieldType.O3)
@@ -4046,15 +4046,15 @@ class ColumnEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(14)
-  $1734.Struct get customFeatures => $_getN(13);
+  $1735.Struct get customFeatures => $_getN(13);
   @$pb.TagNumber(14)
-  set customFeatures($1734.Struct v) { setField(14, v); }
+  set customFeatures($1735.Struct v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasCustomFeatures() => $_has(13);
   @$pb.TagNumber(14)
   void clearCustomFeatures() => clearField(14);
   @$pb.TagNumber(14)
-  $1734.Struct ensureCustomFeatures() => $_ensure(13);
+  $1735.Struct ensureCustomFeatures() => $_ensure(13);
 
   /// Specifies the list of values allowed in the column.
   /// Only used for set data type.
@@ -4099,7 +4099,7 @@ class ConstraintEntity extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? type,
     $core.Iterable<$core.String>? tableColumns,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
     $core.Iterable<$core.String>? referenceColumns,
     $core.String? referenceTable,
     $core.String? tableName,
@@ -4136,7 +4136,7 @@ class ConstraintEntity extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..pPS(3, _omitFieldNames ? '' : 'tableColumns')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..pPS(5, _omitFieldNames ? '' : 'referenceColumns')
     ..aOS(6, _omitFieldNames ? '' : 'referenceTable')
     ..aOS(7, _omitFieldNames ? '' : 'tableName')
@@ -4192,15 +4192,15 @@ class ConstraintEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(4)
-  $1734.Struct get customFeatures => $_getN(3);
+  $1735.Struct get customFeatures => $_getN(3);
   @$pb.TagNumber(4)
-  set customFeatures($1734.Struct v) { setField(4, v); }
+  set customFeatures($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCustomFeatures() => $_has(3);
   @$pb.TagNumber(4)
   void clearCustomFeatures() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureCustomFeatures() => $_ensure(3);
+  $1735.Struct ensureCustomFeatures() => $_ensure(3);
 
   /// Reference columns which may be associated with the constraint. For example,
   /// if the constraint is a FOREIGN_KEY, this represents the list of full names
@@ -4242,7 +4242,7 @@ class IndexEntity extends $pb.GeneratedMessage {
     $core.String? type,
     $core.Iterable<$core.String>? tableColumns,
     $core.bool? unique,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (name != null) {
@@ -4271,7 +4271,7 @@ class IndexEntity extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..pPS(3, _omitFieldNames ? '' : 'tableColumns')
     ..aOB(4, _omitFieldNames ? '' : 'unique')
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4333,15 +4333,15 @@ class IndexEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(5)
-  $1734.Struct get customFeatures => $_getN(4);
+  $1735.Struct get customFeatures => $_getN(4);
   @$pb.TagNumber(5)
-  set customFeatures($1734.Struct v) { setField(5, v); }
+  set customFeatures($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCustomFeatures() => $_has(4);
   @$pb.TagNumber(5)
   void clearCustomFeatures() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureCustomFeatures() => $_ensure(4);
+  $1735.Struct ensureCustomFeatures() => $_ensure(4);
 }
 
 /// Trigger is not used as an independent entity, it is retrieved as part of a
@@ -4352,7 +4352,7 @@ class TriggerEntity extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? triggeringEvents,
     $core.String? triggerType,
     $core.String? sqlCode,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (name != null) {
@@ -4381,7 +4381,7 @@ class TriggerEntity extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'triggeringEvents')
     ..aOS(3, _omitFieldNames ? '' : 'triggerType')
     ..aOS(4, _omitFieldNames ? '' : 'sqlCode')
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4444,22 +4444,22 @@ class TriggerEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(5)
-  $1734.Struct get customFeatures => $_getN(4);
+  $1735.Struct get customFeatures => $_getN(4);
   @$pb.TagNumber(5)
-  set customFeatures($1734.Struct v) { setField(5, v); }
+  set customFeatures($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCustomFeatures() => $_has(4);
   @$pb.TagNumber(5)
   void clearCustomFeatures() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureCustomFeatures() => $_ensure(4);
+  $1735.Struct ensureCustomFeatures() => $_ensure(4);
 }
 
 /// View's parent is a schema.
 class ViewEntity extends $pb.GeneratedMessage {
   factory ViewEntity({
     $core.String? sqlCode,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
     $core.Iterable<ConstraintEntity>? constraints,
   }) {
     final $result = create();
@@ -4480,7 +4480,7 @@ class ViewEntity extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ViewEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sqlCode')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..pc<ConstraintEntity>(3, _omitFieldNames ? '' : 'constraints', $pb.PbFieldType.PM, subBuilder: ConstraintEntity.create)
     ..hasRequiredFields = false
   ;
@@ -4518,15 +4518,15 @@ class ViewEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(2)
-  $1734.Struct get customFeatures => $_getN(1);
+  $1735.Struct get customFeatures => $_getN(1);
   @$pb.TagNumber(2)
-  set customFeatures($1734.Struct v) { setField(2, v); }
+  set customFeatures($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomFeatures() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomFeatures() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureCustomFeatures() => $_ensure(1);
+  $1735.Struct ensureCustomFeatures() => $_ensure(1);
 
   /// View constraints.
   @$pb.TagNumber(3)
@@ -4542,7 +4542,7 @@ class SequenceEntity extends $pb.GeneratedMessage {
     $core.List<$core.int>? minValue,
     $core.bool? cycle,
     $fixnum.Int64? cache,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (increment != null) {
@@ -4579,7 +4579,7 @@ class SequenceEntity extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'minValue', $pb.PbFieldType.OY)
     ..aOB(5, _omitFieldNames ? '' : 'cycle')
     ..aInt64(6, _omitFieldNames ? '' : 'cache')
-    ..aOM<$1734.Struct>(7, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(7, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4669,22 +4669,22 @@ class SequenceEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(7)
-  $1734.Struct get customFeatures => $_getN(6);
+  $1735.Struct get customFeatures => $_getN(6);
   @$pb.TagNumber(7)
-  set customFeatures($1734.Struct v) { setField(7, v); }
+  set customFeatures($1735.Struct v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCustomFeatures() => $_has(6);
   @$pb.TagNumber(7)
   void clearCustomFeatures() => clearField(7);
   @$pb.TagNumber(7)
-  $1734.Struct ensureCustomFeatures() => $_ensure(6);
+  $1735.Struct ensureCustomFeatures() => $_ensure(6);
 }
 
 /// Stored procedure's parent is a schema.
 class StoredProcedureEntity extends $pb.GeneratedMessage {
   factory StoredProcedureEntity({
     $core.String? sqlCode,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (sqlCode != null) {
@@ -4701,7 +4701,7 @@ class StoredProcedureEntity extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StoredProcedureEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sqlCode')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4738,22 +4738,22 @@ class StoredProcedureEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(2)
-  $1734.Struct get customFeatures => $_getN(1);
+  $1735.Struct get customFeatures => $_getN(1);
   @$pb.TagNumber(2)
-  set customFeatures($1734.Struct v) { setField(2, v); }
+  set customFeatures($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomFeatures() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomFeatures() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureCustomFeatures() => $_ensure(1);
+  $1735.Struct ensureCustomFeatures() => $_ensure(1);
 }
 
 /// Function's parent is a schema.
 class FunctionEntity extends $pb.GeneratedMessage {
   factory FunctionEntity({
     $core.String? sqlCode,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (sqlCode != null) {
@@ -4770,7 +4770,7 @@ class FunctionEntity extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sqlCode')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4807,22 +4807,22 @@ class FunctionEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(2)
-  $1734.Struct get customFeatures => $_getN(1);
+  $1735.Struct get customFeatures => $_getN(1);
   @$pb.TagNumber(2)
-  set customFeatures($1734.Struct v) { setField(2, v); }
+  set customFeatures($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomFeatures() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomFeatures() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureCustomFeatures() => $_ensure(1);
+  $1735.Struct ensureCustomFeatures() => $_ensure(1);
 }
 
 /// MaterializedView's parent is a schema.
 class MaterializedViewEntity extends $pb.GeneratedMessage {
   factory MaterializedViewEntity({
     $core.String? sqlCode,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (sqlCode != null) {
@@ -4839,7 +4839,7 @@ class MaterializedViewEntity extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterializedViewEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sqlCode')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4876,15 +4876,15 @@ class MaterializedViewEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(2)
-  $1734.Struct get customFeatures => $_getN(1);
+  $1735.Struct get customFeatures => $_getN(1);
   @$pb.TagNumber(2)
-  set customFeatures($1734.Struct v) { setField(2, v); }
+  set customFeatures($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomFeatures() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomFeatures() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureCustomFeatures() => $_ensure(1);
+  $1735.Struct ensureCustomFeatures() => $_ensure(1);
 }
 
 /// Synonym's parent is a schema.
@@ -4892,7 +4892,7 @@ class SynonymEntity extends $pb.GeneratedMessage {
   factory SynonymEntity({
     $core.String? sourceEntity,
     DatabaseEntityType? sourceType,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (sourceEntity != null) {
@@ -4913,7 +4913,7 @@ class SynonymEntity extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SynonymEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sourceEntity')
     ..e<DatabaseEntityType>(2, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE, defaultOrMaker: DatabaseEntityType.DATABASE_ENTITY_TYPE_UNSPECIFIED, valueOf: DatabaseEntityType.valueOf, enumValues: DatabaseEntityType.values)
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -4961,15 +4961,15 @@ class SynonymEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(3)
-  $1734.Struct get customFeatures => $_getN(2);
+  $1735.Struct get customFeatures => $_getN(2);
   @$pb.TagNumber(3)
-  set customFeatures($1734.Struct v) { setField(3, v); }
+  set customFeatures($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCustomFeatures() => $_has(2);
   @$pb.TagNumber(3)
   void clearCustomFeatures() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureCustomFeatures() => $_ensure(2);
+  $1735.Struct ensureCustomFeatures() => $_ensure(2);
 }
 
 /// Package's parent is a schema.
@@ -4977,7 +4977,7 @@ class PackageEntity extends $pb.GeneratedMessage {
   factory PackageEntity({
     $core.String? packageSqlCode,
     $core.String? packageBody,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (packageSqlCode != null) {
@@ -4998,7 +4998,7 @@ class PackageEntity extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PackageEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'packageSqlCode')
     ..aOS(2, _omitFieldNames ? '' : 'packageBody')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -5046,15 +5046,15 @@ class PackageEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(3)
-  $1734.Struct get customFeatures => $_getN(2);
+  $1735.Struct get customFeatures => $_getN(2);
   @$pb.TagNumber(3)
-  set customFeatures($1734.Struct v) { setField(3, v); }
+  set customFeatures($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCustomFeatures() => $_has(2);
   @$pb.TagNumber(3)
   void clearCustomFeatures() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureCustomFeatures() => $_ensure(2);
+  $1735.Struct ensureCustomFeatures() => $_ensure(2);
 }
 
 /// UDT's parent is a schema.
@@ -5062,7 +5062,7 @@ class UDTEntity extends $pb.GeneratedMessage {
   factory UDTEntity({
     $core.String? udtSqlCode,
     $core.String? udtBody,
-    $1734.Struct? customFeatures,
+    $1735.Struct? customFeatures,
   }) {
     final $result = create();
     if (udtSqlCode != null) {
@@ -5083,7 +5083,7 @@ class UDTEntity extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UDTEntity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'udtSqlCode')
     ..aOS(2, _omitFieldNames ? '' : 'udtBody')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'customFeatures', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -5130,15 +5130,15 @@ class UDTEntity extends $pb.GeneratedMessage {
 
   /// Custom engine specific features.
   @$pb.TagNumber(3)
-  $1734.Struct get customFeatures => $_getN(2);
+  $1735.Struct get customFeatures => $_getN(2);
   @$pb.TagNumber(3)
-  set customFeatures($1734.Struct v) { setField(3, v); }
+  set customFeatures($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCustomFeatures() => $_has(2);
   @$pb.TagNumber(3)
   void clearCustomFeatures() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureCustomFeatures() => $_ensure(2);
+  $1735.Struct ensureCustomFeatures() => $_ensure(2);
 }
 
 /// Details of the mappings of a database entity.

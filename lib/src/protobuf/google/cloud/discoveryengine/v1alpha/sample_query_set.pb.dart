@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// A SampleQuerySet is the parent resource of SampleQuery, and contains the
 /// configurations shared by all SampleQuery under it.
@@ -21,7 +21,7 @@ class SampleQuerySet extends $pb.GeneratedMessage {
   factory SampleQuerySet({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? description,
   }) {
     final $result = create();
@@ -46,7 +46,7 @@ class SampleQuerySet extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SampleQuerySet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -105,15 +105,15 @@ class SampleQuerySet extends $pb.GeneratedMessage {
   /// [SampleQuerySet][google.cloud.discoveryengine.v1alpha.SampleQuerySet] was
   /// created at.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The description of the
   /// [SampleQuerySet][google.cloud.discoveryengine.v1alpha.SampleQuerySet].

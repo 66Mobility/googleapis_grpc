@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'applied_label.pb.dart' as $1805;
-import 'company_credit_status_enum.pbenum.dart' as $1809;
-import 'company_type_enum.pbenum.dart' as $1808;
+import 'applied_label.pb.dart' as $1806;
+import 'company_credit_status_enum.pbenum.dart' as $1810;
+import 'company_type_enum.pbenum.dart' as $1809;
 
 /// The `Company` resource.
 class Company extends $pb.GeneratedMessage {
@@ -24,15 +24,15 @@ class Company extends $pb.GeneratedMessage {
     $core.String? name,
     $fixnum.Int64? companyId,
     $core.String? displayName,
-    $1808.CompanyTypeEnum_CompanyType? type,
+    $1809.CompanyTypeEnum_CompanyType? type,
     $core.String? address,
     $core.String? email,
     $core.String? fax,
     $core.String? phone,
     $core.String? externalId,
     $core.String? comment,
-    $1809.CompanyCreditStatusEnum_CompanyCreditStatus? creditStatus,
-    $core.Iterable<$1805.AppliedLabel>? appliedLabels,
+    $1810.CompanyCreditStatusEnum_CompanyCreditStatus? creditStatus,
+    $core.Iterable<$1806.AppliedLabel>? appliedLabels,
     $core.String? primaryContact,
     $core.Iterable<$core.String>? appliedTeams,
   }) {
@@ -89,15 +89,15 @@ class Company extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'companyId')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..e<$1808.CompanyTypeEnum_CompanyType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1808.CompanyTypeEnum_CompanyType.COMPANY_TYPE_UNSPECIFIED, valueOf: $1808.CompanyTypeEnum_CompanyType.valueOf, enumValues: $1808.CompanyTypeEnum_CompanyType.values)
+    ..e<$1809.CompanyTypeEnum_CompanyType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1809.CompanyTypeEnum_CompanyType.COMPANY_TYPE_UNSPECIFIED, valueOf: $1809.CompanyTypeEnum_CompanyType.valueOf, enumValues: $1809.CompanyTypeEnum_CompanyType.values)
     ..aOS(5, _omitFieldNames ? '' : 'address')
     ..aOS(6, _omitFieldNames ? '' : 'email')
     ..aOS(7, _omitFieldNames ? '' : 'fax')
     ..aOS(8, _omitFieldNames ? '' : 'phone')
     ..aOS(9, _omitFieldNames ? '' : 'externalId')
     ..aOS(10, _omitFieldNames ? '' : 'comment')
-    ..e<$1809.CompanyCreditStatusEnum_CompanyCreditStatus>(11, _omitFieldNames ? '' : 'creditStatus', $pb.PbFieldType.OE, defaultOrMaker: $1809.CompanyCreditStatusEnum_CompanyCreditStatus.COMPANY_CREDIT_STATUS_UNSPECIFIED, valueOf: $1809.CompanyCreditStatusEnum_CompanyCreditStatus.valueOf, enumValues: $1809.CompanyCreditStatusEnum_CompanyCreditStatus.values)
-    ..pc<$1805.AppliedLabel>(12, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1805.AppliedLabel.create)
+    ..e<$1810.CompanyCreditStatusEnum_CompanyCreditStatus>(11, _omitFieldNames ? '' : 'creditStatus', $pb.PbFieldType.OE, defaultOrMaker: $1810.CompanyCreditStatusEnum_CompanyCreditStatus.COMPANY_CREDIT_STATUS_UNSPECIFIED, valueOf: $1810.CompanyCreditStatusEnum_CompanyCreditStatus.valueOf, enumValues: $1810.CompanyCreditStatusEnum_CompanyCreditStatus.values)
+    ..pc<$1806.AppliedLabel>(12, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1806.AppliedLabel.create)
     ..aOS(13, _omitFieldNames ? '' : 'primaryContact')
     ..pPS(14, _omitFieldNames ? '' : 'appliedTeams')
     ..hasRequiredFields = false
@@ -159,9 +159,9 @@ class Company extends $pb.GeneratedMessage {
 
   /// Required. The type of the `Company`.
   @$pb.TagNumber(4)
-  $1808.CompanyTypeEnum_CompanyType get type => $_getN(3);
+  $1809.CompanyTypeEnum_CompanyType get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type($1808.CompanyTypeEnum_CompanyType v) { setField(4, v); }
+  set type($1809.CompanyTypeEnum_CompanyType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
@@ -244,9 +244,9 @@ class Company extends $pb.GeneratedMessage {
   ///  This attribute defaults to `ACTIVE` if basic settings are enabled and
   ///  `ON_HOLD` if advance settings are enabled.
   @$pb.TagNumber(11)
-  $1809.CompanyCreditStatusEnum_CompanyCreditStatus get creditStatus => $_getN(10);
+  $1810.CompanyCreditStatusEnum_CompanyCreditStatus get creditStatus => $_getN(10);
   @$pb.TagNumber(11)
-  set creditStatus($1809.CompanyCreditStatusEnum_CompanyCreditStatus v) { setField(11, v); }
+  set creditStatus($1810.CompanyCreditStatusEnum_CompanyCreditStatus v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreditStatus() => $_has(10);
   @$pb.TagNumber(11)
@@ -254,7 +254,7 @@ class Company extends $pb.GeneratedMessage {
 
   /// Optional. The labels that are directly applied to this company.
   @$pb.TagNumber(12)
-  $core.List<$1805.AppliedLabel> get appliedLabels => $_getList(11);
+  $core.List<$1806.AppliedLabel> get appliedLabels => $_getList(11);
 
   /// Optional. The resource names of primary Contact of this company.
   /// Format: "networks/{network_code}/contacts/{contact_id}"

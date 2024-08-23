@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'inventory.pb.dart' as $4579;
-import 'tasks.pb.dart' as $4578;
-import 'tasks.pbenum.dart' as $4578;
+import 'inventory.pb.dart' as $4581;
+import 'tasks.pb.dart' as $4580;
+import 'tasks.pbenum.dart' as $4580;
 
 /// A request message to receive task notifications.
 class ReceiveTaskNotificationRequest extends $pb.GeneratedMessage {
@@ -177,7 +177,7 @@ class StartNextTaskRequest extends $pb.GeneratedMessage {
 /// A response message that contains the details of the task to work on.
 class StartNextTaskResponse extends $pb.GeneratedMessage {
   factory StartNextTaskResponse({
-    $4578.Task? task,
+    $4580.Task? task,
   }) {
     final $result = create();
     if (task != null) {
@@ -190,7 +190,7 @@ class StartNextTaskResponse extends $pb.GeneratedMessage {
   factory StartNextTaskResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartNextTaskResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1'), createEmptyInstance: create)
-    ..aOM<$4578.Task>(1, _omitFieldNames ? '' : 'task', subBuilder: $4578.Task.create)
+    ..aOM<$4580.Task>(1, _omitFieldNames ? '' : 'task', subBuilder: $4580.Task.create)
     ..hasRequiredFields = false
   ;
 
@@ -218,15 +218,15 @@ class StartNextTaskResponse extends $pb.GeneratedMessage {
   /// The details of the task that should be worked on.  Can be empty if there
   /// is no new task to work on.
   @$pb.TagNumber(1)
-  $4578.Task get task => $_getN(0);
+  $4580.Task get task => $_getN(0);
   @$pb.TagNumber(1)
-  set task($4578.Task v) { setField(1, v); }
+  set task($4580.Task v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTask() => $_has(0);
   @$pb.TagNumber(1)
   void clearTask() => clearField(1);
   @$pb.TagNumber(1)
-  $4578.Task ensureTask() => $_ensure(0);
+  $4580.Task ensureTask() => $_ensure(0);
 }
 
 enum ReportTaskProgressRequest_Progress {
@@ -241,10 +241,10 @@ class ReportTaskProgressRequest extends $pb.GeneratedMessage {
   factory ReportTaskProgressRequest({
     $core.String? instanceIdToken,
     $core.String? taskId,
-    $4578.TaskType? taskType,
-    $4578.ApplyPatchesTaskProgress? applyPatchesTaskProgress,
-    $4578.ExecStepTaskProgress? execStepTaskProgress,
-    $4578.ApplyConfigTaskProgress? applyConfigTaskProgress,
+    $4580.TaskType? taskType,
+    $4580.ApplyPatchesTaskProgress? applyPatchesTaskProgress,
+    $4580.ExecStepTaskProgress? execStepTaskProgress,
+    $4580.ApplyConfigTaskProgress? applyConfigTaskProgress,
   }) {
     final $result = create();
     if (instanceIdToken != null) {
@@ -281,10 +281,10 @@ class ReportTaskProgressRequest extends $pb.GeneratedMessage {
     ..oo(0, [4, 5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'instanceIdToken')
     ..aOS(2, _omitFieldNames ? '' : 'taskId')
-    ..e<$4578.TaskType>(3, _omitFieldNames ? '' : 'taskType', $pb.PbFieldType.OE, defaultOrMaker: $4578.TaskType.TASK_TYPE_UNSPECIFIED, valueOf: $4578.TaskType.valueOf, enumValues: $4578.TaskType.values)
-    ..aOM<$4578.ApplyPatchesTaskProgress>(4, _omitFieldNames ? '' : 'applyPatchesTaskProgress', subBuilder: $4578.ApplyPatchesTaskProgress.create)
-    ..aOM<$4578.ExecStepTaskProgress>(5, _omitFieldNames ? '' : 'execStepTaskProgress', subBuilder: $4578.ExecStepTaskProgress.create)
-    ..aOM<$4578.ApplyConfigTaskProgress>(6, _omitFieldNames ? '' : 'applyConfigTaskProgress', subBuilder: $4578.ApplyConfigTaskProgress.create)
+    ..e<$4580.TaskType>(3, _omitFieldNames ? '' : 'taskType', $pb.PbFieldType.OE, defaultOrMaker: $4580.TaskType.TASK_TYPE_UNSPECIFIED, valueOf: $4580.TaskType.valueOf, enumValues: $4580.TaskType.values)
+    ..aOM<$4580.ApplyPatchesTaskProgress>(4, _omitFieldNames ? '' : 'applyPatchesTaskProgress', subBuilder: $4580.ApplyPatchesTaskProgress.create)
+    ..aOM<$4580.ExecStepTaskProgress>(5, _omitFieldNames ? '' : 'execStepTaskProgress', subBuilder: $4580.ExecStepTaskProgress.create)
+    ..aOM<$4580.ApplyConfigTaskProgress>(6, _omitFieldNames ? '' : 'applyConfigTaskProgress', subBuilder: $4580.ApplyConfigTaskProgress.create)
     ..hasRequiredFields = false
   ;
 
@@ -342,9 +342,9 @@ class ReportTaskProgressRequest extends $pb.GeneratedMessage {
   ///  `EXEC_STEP` = Progress not supported for this type.
   ///  `APPLY_CONFIG_TASK` = ApplyConfigTaskProgress
   @$pb.TagNumber(3)
-  $4578.TaskType get taskType => $_getN(2);
+  $4580.TaskType get taskType => $_getN(2);
   @$pb.TagNumber(3)
-  set taskType($4578.TaskType v) { setField(3, v); }
+  set taskType($4580.TaskType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTaskType() => $_has(2);
   @$pb.TagNumber(3)
@@ -352,45 +352,45 @@ class ReportTaskProgressRequest extends $pb.GeneratedMessage {
 
   /// Details about the progress of the apply patches task.
   @$pb.TagNumber(4)
-  $4578.ApplyPatchesTaskProgress get applyPatchesTaskProgress => $_getN(3);
+  $4580.ApplyPatchesTaskProgress get applyPatchesTaskProgress => $_getN(3);
   @$pb.TagNumber(4)
-  set applyPatchesTaskProgress($4578.ApplyPatchesTaskProgress v) { setField(4, v); }
+  set applyPatchesTaskProgress($4580.ApplyPatchesTaskProgress v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasApplyPatchesTaskProgress() => $_has(3);
   @$pb.TagNumber(4)
   void clearApplyPatchesTaskProgress() => clearField(4);
   @$pb.TagNumber(4)
-  $4578.ApplyPatchesTaskProgress ensureApplyPatchesTaskProgress() => $_ensure(3);
+  $4580.ApplyPatchesTaskProgress ensureApplyPatchesTaskProgress() => $_ensure(3);
 
   /// Details about the progress of the exec step task.
   @$pb.TagNumber(5)
-  $4578.ExecStepTaskProgress get execStepTaskProgress => $_getN(4);
+  $4580.ExecStepTaskProgress get execStepTaskProgress => $_getN(4);
   @$pb.TagNumber(5)
-  set execStepTaskProgress($4578.ExecStepTaskProgress v) { setField(5, v); }
+  set execStepTaskProgress($4580.ExecStepTaskProgress v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExecStepTaskProgress() => $_has(4);
   @$pb.TagNumber(5)
   void clearExecStepTaskProgress() => clearField(5);
   @$pb.TagNumber(5)
-  $4578.ExecStepTaskProgress ensureExecStepTaskProgress() => $_ensure(4);
+  $4580.ExecStepTaskProgress ensureExecStepTaskProgress() => $_ensure(4);
 
   /// Details about the progress of the apply config task.
   @$pb.TagNumber(6)
-  $4578.ApplyConfigTaskProgress get applyConfigTaskProgress => $_getN(5);
+  $4580.ApplyConfigTaskProgress get applyConfigTaskProgress => $_getN(5);
   @$pb.TagNumber(6)
-  set applyConfigTaskProgress($4578.ApplyConfigTaskProgress v) { setField(6, v); }
+  set applyConfigTaskProgress($4580.ApplyConfigTaskProgress v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasApplyConfigTaskProgress() => $_has(5);
   @$pb.TagNumber(6)
   void clearApplyConfigTaskProgress() => clearField(6);
   @$pb.TagNumber(6)
-  $4578.ApplyConfigTaskProgress ensureApplyConfigTaskProgress() => $_ensure(5);
+  $4580.ApplyConfigTaskProgress ensureApplyConfigTaskProgress() => $_ensure(5);
 }
 
 /// The response message after the agent reported the current task progress.
 class ReportTaskProgressResponse extends $pb.GeneratedMessage {
   factory ReportTaskProgressResponse({
-    $4578.TaskDirective? taskDirective,
+    $4580.TaskDirective? taskDirective,
   }) {
     final $result = create();
     if (taskDirective != null) {
@@ -403,7 +403,7 @@ class ReportTaskProgressResponse extends $pb.GeneratedMessage {
   factory ReportTaskProgressResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportTaskProgressResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1'), createEmptyInstance: create)
-    ..e<$4578.TaskDirective>(1, _omitFieldNames ? '' : 'taskDirective', $pb.PbFieldType.OE, defaultOrMaker: $4578.TaskDirective.TASK_DIRECTIVE_UNSPECIFIED, valueOf: $4578.TaskDirective.valueOf, enumValues: $4578.TaskDirective.values)
+    ..e<$4580.TaskDirective>(1, _omitFieldNames ? '' : 'taskDirective', $pb.PbFieldType.OE, defaultOrMaker: $4580.TaskDirective.TASK_DIRECTIVE_UNSPECIFIED, valueOf: $4580.TaskDirective.valueOf, enumValues: $4580.TaskDirective.values)
     ..hasRequiredFields = false
   ;
 
@@ -430,9 +430,9 @@ class ReportTaskProgressResponse extends $pb.GeneratedMessage {
 
   /// Instructs agent to continue or not.
   @$pb.TagNumber(1)
-  $4578.TaskDirective get taskDirective => $_getN(0);
+  $4580.TaskDirective get taskDirective => $_getN(0);
   @$pb.TagNumber(1)
-  set taskDirective($4578.TaskDirective v) { setField(1, v); }
+  set taskDirective($4580.TaskDirective v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTaskDirective() => $_has(0);
   @$pb.TagNumber(1)
@@ -451,11 +451,11 @@ class ReportTaskCompleteRequest extends $pb.GeneratedMessage {
   factory ReportTaskCompleteRequest({
     $core.String? instanceIdToken,
     $core.String? taskId,
-    $4578.TaskType? taskType,
+    $4580.TaskType? taskType,
     $core.String? errorMessage,
-    $4578.ApplyPatchesTaskOutput? applyPatchesTaskOutput,
-    $4578.ExecStepTaskOutput? execStepTaskOutput,
-    $4578.ApplyConfigTaskOutput? applyConfigTaskOutput,
+    $4580.ApplyPatchesTaskOutput? applyPatchesTaskOutput,
+    $4580.ExecStepTaskOutput? execStepTaskOutput,
+    $4580.ApplyConfigTaskOutput? applyConfigTaskOutput,
   }) {
     final $result = create();
     if (instanceIdToken != null) {
@@ -495,11 +495,11 @@ class ReportTaskCompleteRequest extends $pb.GeneratedMessage {
     ..oo(0, [5, 6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'instanceIdToken')
     ..aOS(2, _omitFieldNames ? '' : 'taskId')
-    ..e<$4578.TaskType>(3, _omitFieldNames ? '' : 'taskType', $pb.PbFieldType.OE, defaultOrMaker: $4578.TaskType.TASK_TYPE_UNSPECIFIED, valueOf: $4578.TaskType.valueOf, enumValues: $4578.TaskType.values)
+    ..e<$4580.TaskType>(3, _omitFieldNames ? '' : 'taskType', $pb.PbFieldType.OE, defaultOrMaker: $4580.TaskType.TASK_TYPE_UNSPECIFIED, valueOf: $4580.TaskType.valueOf, enumValues: $4580.TaskType.values)
     ..aOS(4, _omitFieldNames ? '' : 'errorMessage')
-    ..aOM<$4578.ApplyPatchesTaskOutput>(5, _omitFieldNames ? '' : 'applyPatchesTaskOutput', subBuilder: $4578.ApplyPatchesTaskOutput.create)
-    ..aOM<$4578.ExecStepTaskOutput>(6, _omitFieldNames ? '' : 'execStepTaskOutput', subBuilder: $4578.ExecStepTaskOutput.create)
-    ..aOM<$4578.ApplyConfigTaskOutput>(7, _omitFieldNames ? '' : 'applyConfigTaskOutput', subBuilder: $4578.ApplyConfigTaskOutput.create)
+    ..aOM<$4580.ApplyPatchesTaskOutput>(5, _omitFieldNames ? '' : 'applyPatchesTaskOutput', subBuilder: $4580.ApplyPatchesTaskOutput.create)
+    ..aOM<$4580.ExecStepTaskOutput>(6, _omitFieldNames ? '' : 'execStepTaskOutput', subBuilder: $4580.ExecStepTaskOutput.create)
+    ..aOM<$4580.ApplyConfigTaskOutput>(7, _omitFieldNames ? '' : 'applyConfigTaskOutput', subBuilder: $4580.ApplyConfigTaskOutput.create)
     ..hasRequiredFields = false
   ;
 
@@ -557,9 +557,9 @@ class ReportTaskCompleteRequest extends $pb.GeneratedMessage {
   ///  EXEC_STEP = ExecStepTaskOutput
   ///  APPLY_CONFIG_TASK = ApplyConfigTaskOutput
   @$pb.TagNumber(3)
-  $4578.TaskType get taskType => $_getN(2);
+  $4580.TaskType get taskType => $_getN(2);
   @$pb.TagNumber(3)
-  set taskType($4578.TaskType v) { setField(3, v); }
+  set taskType($4580.TaskType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTaskType() => $_has(2);
   @$pb.TagNumber(3)
@@ -577,39 +577,39 @@ class ReportTaskCompleteRequest extends $pb.GeneratedMessage {
 
   /// Final output details of the apply patches task;
   @$pb.TagNumber(5)
-  $4578.ApplyPatchesTaskOutput get applyPatchesTaskOutput => $_getN(4);
+  $4580.ApplyPatchesTaskOutput get applyPatchesTaskOutput => $_getN(4);
   @$pb.TagNumber(5)
-  set applyPatchesTaskOutput($4578.ApplyPatchesTaskOutput v) { setField(5, v); }
+  set applyPatchesTaskOutput($4580.ApplyPatchesTaskOutput v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasApplyPatchesTaskOutput() => $_has(4);
   @$pb.TagNumber(5)
   void clearApplyPatchesTaskOutput() => clearField(5);
   @$pb.TagNumber(5)
-  $4578.ApplyPatchesTaskOutput ensureApplyPatchesTaskOutput() => $_ensure(4);
+  $4580.ApplyPatchesTaskOutput ensureApplyPatchesTaskOutput() => $_ensure(4);
 
   /// Final output details of the exec step task;
   @$pb.TagNumber(6)
-  $4578.ExecStepTaskOutput get execStepTaskOutput => $_getN(5);
+  $4580.ExecStepTaskOutput get execStepTaskOutput => $_getN(5);
   @$pb.TagNumber(6)
-  set execStepTaskOutput($4578.ExecStepTaskOutput v) { setField(6, v); }
+  set execStepTaskOutput($4580.ExecStepTaskOutput v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExecStepTaskOutput() => $_has(5);
   @$pb.TagNumber(6)
   void clearExecStepTaskOutput() => clearField(6);
   @$pb.TagNumber(6)
-  $4578.ExecStepTaskOutput ensureExecStepTaskOutput() => $_ensure(5);
+  $4580.ExecStepTaskOutput ensureExecStepTaskOutput() => $_ensure(5);
 
   /// Final output details of the apply config task;
   @$pb.TagNumber(7)
-  $4578.ApplyConfigTaskOutput get applyConfigTaskOutput => $_getN(6);
+  $4580.ApplyConfigTaskOutput get applyConfigTaskOutput => $_getN(6);
   @$pb.TagNumber(7)
-  set applyConfigTaskOutput($4578.ApplyConfigTaskOutput v) { setField(7, v); }
+  set applyConfigTaskOutput($4580.ApplyConfigTaskOutput v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasApplyConfigTaskOutput() => $_has(6);
   @$pb.TagNumber(7)
   void clearApplyConfigTaskOutput() => clearField(7);
   @$pb.TagNumber(7)
-  $4578.ApplyConfigTaskOutput ensureApplyConfigTaskOutput() => $_ensure(6);
+  $4580.ApplyConfigTaskOutput ensureApplyConfigTaskOutput() => $_ensure(6);
 }
 
 /// The response message after the agent signaled the current task complete.
@@ -827,7 +827,7 @@ class ReportInventoryRequest extends $pb.GeneratedMessage {
   factory ReportInventoryRequest({
     $core.String? instanceIdToken,
     $core.String? inventoryChecksum,
-    $4579.Inventory? inventory,
+    $4581.Inventory? inventory,
   }) {
     final $result = create();
     if (instanceIdToken != null) {
@@ -848,7 +848,7 @@ class ReportInventoryRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportInventoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceIdToken')
     ..aOS(2, _omitFieldNames ? '' : 'inventoryChecksum')
-    ..aOM<$4579.Inventory>(3, _omitFieldNames ? '' : 'inventory', subBuilder: $4579.Inventory.create)
+    ..aOM<$4581.Inventory>(3, _omitFieldNames ? '' : 'inventory', subBuilder: $4581.Inventory.create)
     ..hasRequiredFields = false
   ;
 
@@ -901,15 +901,15 @@ class ReportInventoryRequest extends $pb.GeneratedMessage {
   /// the inventory has changed since the last report, or if instructed by the
   /// service to provide full inventory.
   @$pb.TagNumber(3)
-  $4579.Inventory get inventory => $_getN(2);
+  $4581.Inventory get inventory => $_getN(2);
   @$pb.TagNumber(3)
-  set inventory($4579.Inventory v) { setField(3, v); }
+  set inventory($4581.Inventory v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInventory() => $_has(2);
   @$pb.TagNumber(3)
   void clearInventory() => clearField(3);
   @$pb.TagNumber(3)
-  $4579.Inventory ensureInventory() => $_ensure(2);
+  $4581.Inventory ensureInventory() => $_ensure(2);
 }
 
 /// The response message after the agent has reported inventory.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'context.pb.dart' as $908;
 import 'intent.pbenum.dart';
 
@@ -3499,7 +3499,7 @@ class Intent_Message extends $pb.GeneratedMessage {
     Intent_Message_Image? image,
     Intent_Message_QuickReplies? quickReplies,
     Intent_Message_Card? card,
-    $1734.Struct? payload,
+    $1735.Struct? payload,
     Intent_Message_Platform? platform,
     Intent_Message_SimpleResponses? simpleResponses,
     Intent_Message_BasicCard? basicCard,
@@ -3616,7 +3616,7 @@ class Intent_Message extends $pb.GeneratedMessage {
     ..aOM<Intent_Message_Image>(2, _omitFieldNames ? '' : 'image', subBuilder: Intent_Message_Image.create)
     ..aOM<Intent_Message_QuickReplies>(3, _omitFieldNames ? '' : 'quickReplies', subBuilder: Intent_Message_QuickReplies.create)
     ..aOM<Intent_Message_Card>(4, _omitFieldNames ? '' : 'card', subBuilder: Intent_Message_Card.create)
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Struct.create)
     ..e<Intent_Message_Platform>(6, _omitFieldNames ? '' : 'platform', $pb.PbFieldType.OE, defaultOrMaker: Intent_Message_Platform.PLATFORM_UNSPECIFIED, valueOf: Intent_Message_Platform.valueOf, enumValues: Intent_Message_Platform.values)
     ..aOM<Intent_Message_SimpleResponses>(7, _omitFieldNames ? '' : 'simpleResponses', subBuilder: Intent_Message_SimpleResponses.create)
     ..aOM<Intent_Message_BasicCard>(8, _omitFieldNames ? '' : 'basicCard', subBuilder: Intent_Message_BasicCard.create)
@@ -3710,15 +3710,15 @@ class Intent_Message extends $pb.GeneratedMessage {
 
   /// A custom platform-specific response.
   @$pb.TagNumber(5)
-  $1734.Struct get payload => $_getN(4);
+  $1735.Struct get payload => $_getN(4);
   @$pb.TagNumber(5)
-  set payload($1734.Struct v) { setField(5, v); }
+  set payload($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPayload() => $_has(4);
   @$pb.TagNumber(5)
   void clearPayload() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensurePayload() => $_ensure(4);
+  $1735.Struct ensurePayload() => $_ensure(4);
 
   /// Optional. The platform that this message is intended for.
   @$pb.TagNumber(6)
@@ -4763,7 +4763,7 @@ class UpdateIntentRequest extends $pb.GeneratedMessage {
   factory UpdateIntentRequest({
     Intent? intent,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     IntentView? intentView,
   }) {
     final $result = create();
@@ -4788,7 +4788,7 @@ class UpdateIntentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateIntentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<Intent>(1, _omitFieldNames ? '' : 'intent', subBuilder: Intent.create)
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..e<IntentView>(4, _omitFieldNames ? '' : 'intentView', $pb.PbFieldType.OE, defaultOrMaker: IntentView.INTENT_VIEW_UNSPECIFIED, valueOf: IntentView.valueOf, enumValues: IntentView.values)
     ..hasRequiredFields = false
   ;
@@ -4842,15 +4842,15 @@ class UpdateIntentRequest extends $pb.GeneratedMessage {
 
   /// Optional. The mask to control which fields get updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 
   /// Optional. The resource view to apply to the returned intent.
   @$pb.TagNumber(4)
@@ -4936,7 +4936,7 @@ class BatchUpdateIntentsRequest extends $pb.GeneratedMessage {
     $core.String? intentBatchUri,
     IntentBatch? intentBatchInline,
     $core.String? languageCode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     IntentView? intentView,
   }) {
     final $result = create();
@@ -4975,7 +4975,7 @@ class BatchUpdateIntentsRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'intentBatchUri')
     ..aOM<IntentBatch>(3, _omitFieldNames ? '' : 'intentBatchInline', subBuilder: IntentBatch.create)
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..e<IntentView>(6, _omitFieldNames ? '' : 'intentView', $pb.PbFieldType.OE, defaultOrMaker: IntentView.INTENT_VIEW_UNSPECIFIED, valueOf: IntentView.valueOf, enumValues: IntentView.values)
     ..hasRequiredFields = false
   ;
@@ -5058,15 +5058,15 @@ class BatchUpdateIntentsRequest extends $pb.GeneratedMessage {
 
   /// Optional. The mask to control which fields get updated.
   @$pb.TagNumber(5)
-  $2209.FieldMask get updateMask => $_getN(4);
+  $2210.FieldMask get updateMask => $_getN(4);
   @$pb.TagNumber(5)
-  set updateMask($2209.FieldMask v) { setField(5, v); }
+  set updateMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(4);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(4);
 
   /// Optional. The resource view to apply to the returned intent.
   @$pb.TagNumber(6)

@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/call_conversion_reporting_state.pbenum.dart' as $1839;
-import '../enums/display_ad_format_setting.pbenum.dart' as $1836;
-import '../enums/display_upload_product_type.pbenum.dart' as $1838;
-import '../enums/legacy_app_install_ad_app_store.pbenum.dart' as $1837;
-import '../enums/mime_type.pbenum.dart' as $1834;
-import '../enums/video_thumbnail.pbenum.dart' as $1835;
-import 'ad_asset.pb.dart' as $1833;
+import '../enums/call_conversion_reporting_state.pbenum.dart' as $1840;
+import '../enums/display_ad_format_setting.pbenum.dart' as $1837;
+import '../enums/display_upload_product_type.pbenum.dart' as $1839;
+import '../enums/legacy_app_install_ad_app_store.pbenum.dart' as $1838;
+import '../enums/mime_type.pbenum.dart' as $1835;
+import '../enums/video_thumbnail.pbenum.dart' as $1836;
+import 'ad_asset.pb.dart' as $1834;
 
 /// A text ad.
 class TextAdInfo extends $pb.GeneratedMessage {
@@ -508,7 +508,7 @@ enum ImageAdInfo_Image {
 /// An image ad.
 class ImageAdInfo extends $pb.GeneratedMessage {
   factory ImageAdInfo({
-    $1834.MimeTypeEnum_MimeType? mimeType,
+    $1835.MimeTypeEnum_MimeType? mimeType,
     $core.List<$core.int>? data,
     $fixnum.Int64? adIdToCopyImageFrom,
     $fixnum.Int64? pixelWidth,
@@ -518,7 +518,7 @@ class ImageAdInfo extends $pb.GeneratedMessage {
     $fixnum.Int64? previewPixelHeight,
     $core.String? previewImageUrl,
     $core.String? name,
-    $1833.AdImageAsset? imageAsset,
+    $1834.AdImageAsset? imageAsset,
   }) {
     final $result = create();
     if (mimeType != null) {
@@ -568,7 +568,7 @@ class ImageAdInfo extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..oo(0, [13, 14, 22])
-    ..e<$1834.MimeTypeEnum_MimeType>(10, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $1834.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $1834.MimeTypeEnum_MimeType.valueOf, enumValues: $1834.MimeTypeEnum_MimeType.values)
+    ..e<$1835.MimeTypeEnum_MimeType>(10, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $1835.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $1835.MimeTypeEnum_MimeType.valueOf, enumValues: $1835.MimeTypeEnum_MimeType.values)
     ..a<$core.List<$core.int>>(13, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
     ..aInt64(14, _omitFieldNames ? '' : 'adIdToCopyImageFrom')
     ..aInt64(15, _omitFieldNames ? '' : 'pixelWidth')
@@ -578,7 +578,7 @@ class ImageAdInfo extends $pb.GeneratedMessage {
     ..aInt64(19, _omitFieldNames ? '' : 'previewPixelHeight')
     ..aOS(20, _omitFieldNames ? '' : 'previewImageUrl')
     ..aOS(21, _omitFieldNames ? '' : 'name')
-    ..aOM<$1833.AdImageAsset>(22, _omitFieldNames ? '' : 'imageAsset', subBuilder: $1833.AdImageAsset.create)
+    ..aOM<$1834.AdImageAsset>(22, _omitFieldNames ? '' : 'imageAsset', subBuilder: $1834.AdImageAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -608,9 +608,9 @@ class ImageAdInfo extends $pb.GeneratedMessage {
 
   /// The mime type of the image.
   @$pb.TagNumber(10)
-  $1834.MimeTypeEnum_MimeType get mimeType => $_getN(0);
+  $1835.MimeTypeEnum_MimeType get mimeType => $_getN(0);
   @$pb.TagNumber(10)
-  set mimeType($1834.MimeTypeEnum_MimeType v) { setField(10, v); }
+  set mimeType($1835.MimeTypeEnum_MimeType v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMimeType() => $_has(0);
   @$pb.TagNumber(10)
@@ -709,22 +709,22 @@ class ImageAdInfo extends $pb.GeneratedMessage {
 
   /// The image assets used for the ad.
   @$pb.TagNumber(22)
-  $1833.AdImageAsset get imageAsset => $_getN(10);
+  $1834.AdImageAsset get imageAsset => $_getN(10);
   @$pb.TagNumber(22)
-  set imageAsset($1833.AdImageAsset v) { setField(22, v); }
+  set imageAsset($1834.AdImageAsset v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasImageAsset() => $_has(10);
   @$pb.TagNumber(22)
   void clearImageAsset() => clearField(22);
   @$pb.TagNumber(22)
-  $1833.AdImageAsset ensureImageAsset() => $_ensure(10);
+  $1834.AdImageAsset ensureImageAsset() => $_ensure(10);
 }
 
 /// Representation of video bumper in-stream ad format (very short in-stream
 /// non-skippable video ad).
 class VideoBumperInStreamAdInfo extends $pb.GeneratedMessage {
   factory VideoBumperInStreamAdInfo({
-    $1833.AdImageAsset? companionBanner,
+    $1834.AdImageAsset? companionBanner,
     $core.String? actionButtonLabel,
     $core.String? actionHeadline,
   }) {
@@ -745,7 +745,7 @@ class VideoBumperInStreamAdInfo extends $pb.GeneratedMessage {
   factory VideoBumperInStreamAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoBumperInStreamAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..aOM<$1833.AdImageAsset>(3, _omitFieldNames ? '' : 'companionBanner', subBuilder: $1833.AdImageAsset.create)
+    ..aOM<$1834.AdImageAsset>(3, _omitFieldNames ? '' : 'companionBanner', subBuilder: $1834.AdImageAsset.create)
     ..aOS(4, _omitFieldNames ? '' : 'actionButtonLabel')
     ..aOS(5, _omitFieldNames ? '' : 'actionHeadline')
     ..hasRequiredFields = false
@@ -774,15 +774,15 @@ class VideoBumperInStreamAdInfo extends $pb.GeneratedMessage {
 
   /// The image assets of the companion banner used with the ad.
   @$pb.TagNumber(3)
-  $1833.AdImageAsset get companionBanner => $_getN(0);
+  $1834.AdImageAsset get companionBanner => $_getN(0);
   @$pb.TagNumber(3)
-  set companionBanner($1833.AdImageAsset v) { setField(3, v); }
+  set companionBanner($1834.AdImageAsset v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCompanionBanner() => $_has(0);
   @$pb.TagNumber(3)
   void clearCompanionBanner() => clearField(3);
   @$pb.TagNumber(3)
-  $1833.AdImageAsset ensureCompanionBanner() => $_ensure(0);
+  $1834.AdImageAsset ensureCompanionBanner() => $_ensure(0);
 
   /// Label on the "Call To Action" button taking the user to the video ad's
   /// final URL.
@@ -813,7 +813,7 @@ class VideoNonSkippableInStreamAdInfo extends $pb.GeneratedMessage {
   factory VideoNonSkippableInStreamAdInfo({
     $core.String? actionButtonLabel,
     $core.String? actionHeadline,
-    $1833.AdImageAsset? companionBanner,
+    $1834.AdImageAsset? companionBanner,
   }) {
     final $result = create();
     if (actionButtonLabel != null) {
@@ -834,7 +834,7 @@ class VideoNonSkippableInStreamAdInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoNonSkippableInStreamAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..aOS(3, _omitFieldNames ? '' : 'actionButtonLabel')
     ..aOS(4, _omitFieldNames ? '' : 'actionHeadline')
-    ..aOM<$1833.AdImageAsset>(5, _omitFieldNames ? '' : 'companionBanner', subBuilder: $1833.AdImageAsset.create)
+    ..aOM<$1834.AdImageAsset>(5, _omitFieldNames ? '' : 'companionBanner', subBuilder: $1834.AdImageAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -883,15 +883,15 @@ class VideoNonSkippableInStreamAdInfo extends $pb.GeneratedMessage {
 
   /// The image assets of the companion banner used with the ad.
   @$pb.TagNumber(5)
-  $1833.AdImageAsset get companionBanner => $_getN(2);
+  $1834.AdImageAsset get companionBanner => $_getN(2);
   @$pb.TagNumber(5)
-  set companionBanner($1833.AdImageAsset v) { setField(5, v); }
+  set companionBanner($1834.AdImageAsset v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCompanionBanner() => $_has(2);
   @$pb.TagNumber(5)
   void clearCompanionBanner() => clearField(5);
   @$pb.TagNumber(5)
-  $1833.AdImageAsset ensureCompanionBanner() => $_ensure(2);
+  $1834.AdImageAsset ensureCompanionBanner() => $_ensure(2);
 }
 
 /// Representation of video TrueView in-stream ad format (ad shown during video
@@ -901,7 +901,7 @@ class VideoTrueViewInStreamAdInfo extends $pb.GeneratedMessage {
   factory VideoTrueViewInStreamAdInfo({
     $core.String? actionButtonLabel,
     $core.String? actionHeadline,
-    $1833.AdImageAsset? companionBanner,
+    $1834.AdImageAsset? companionBanner,
   }) {
     final $result = create();
     if (actionButtonLabel != null) {
@@ -922,7 +922,7 @@ class VideoTrueViewInStreamAdInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoTrueViewInStreamAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..aOS(4, _omitFieldNames ? '' : 'actionButtonLabel')
     ..aOS(5, _omitFieldNames ? '' : 'actionHeadline')
-    ..aOM<$1833.AdImageAsset>(7, _omitFieldNames ? '' : 'companionBanner', subBuilder: $1833.AdImageAsset.create)
+    ..aOM<$1834.AdImageAsset>(7, _omitFieldNames ? '' : 'companionBanner', subBuilder: $1834.AdImageAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -972,15 +972,15 @@ class VideoTrueViewInStreamAdInfo extends $pb.GeneratedMessage {
 
   /// The image assets of the companion banner used with the ad.
   @$pb.TagNumber(7)
-  $1833.AdImageAsset get companionBanner => $_getN(2);
+  $1834.AdImageAsset get companionBanner => $_getN(2);
   @$pb.TagNumber(7)
-  set companionBanner($1833.AdImageAsset v) { setField(7, v); }
+  set companionBanner($1834.AdImageAsset v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCompanionBanner() => $_has(2);
   @$pb.TagNumber(7)
   void clearCompanionBanner() => clearField(7);
   @$pb.TagNumber(7)
-  $1833.AdImageAsset ensureCompanionBanner() => $_ensure(2);
+  $1834.AdImageAsset ensureCompanionBanner() => $_ensure(2);
 }
 
 /// Representation of video out-stream ad format (ad shown alongside a feed
@@ -1057,7 +1057,7 @@ class InFeedVideoAdInfo extends $pb.GeneratedMessage {
     $core.String? headline,
     $core.String? description1,
     $core.String? description2,
-    $1835.VideoThumbnailEnum_VideoThumbnail? thumbnail,
+    $1836.VideoThumbnailEnum_VideoThumbnail? thumbnail,
   }) {
     final $result = create();
     if (headline != null) {
@@ -1082,7 +1082,7 @@ class InFeedVideoAdInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'headline')
     ..aOS(2, _omitFieldNames ? '' : 'description1')
     ..aOS(3, _omitFieldNames ? '' : 'description2')
-    ..e<$1835.VideoThumbnailEnum_VideoThumbnail>(4, _omitFieldNames ? '' : 'thumbnail', $pb.PbFieldType.OE, defaultOrMaker: $1835.VideoThumbnailEnum_VideoThumbnail.UNSPECIFIED, valueOf: $1835.VideoThumbnailEnum_VideoThumbnail.valueOf, enumValues: $1835.VideoThumbnailEnum_VideoThumbnail.values)
+    ..e<$1836.VideoThumbnailEnum_VideoThumbnail>(4, _omitFieldNames ? '' : 'thumbnail', $pb.PbFieldType.OE, defaultOrMaker: $1836.VideoThumbnailEnum_VideoThumbnail.UNSPECIFIED, valueOf: $1836.VideoThumbnailEnum_VideoThumbnail.valueOf, enumValues: $1836.VideoThumbnailEnum_VideoThumbnail.values)
     ..hasRequiredFields = false
   ;
 
@@ -1139,9 +1139,9 @@ class InFeedVideoAdInfo extends $pb.GeneratedMessage {
 
   /// Video thumbnail image to use.
   @$pb.TagNumber(4)
-  $1835.VideoThumbnailEnum_VideoThumbnail get thumbnail => $_getN(3);
+  $1836.VideoThumbnailEnum_VideoThumbnail get thumbnail => $_getN(3);
   @$pb.TagNumber(4)
-  set thumbnail($1835.VideoThumbnailEnum_VideoThumbnail v) { setField(4, v); }
+  set thumbnail($1836.VideoThumbnailEnum_VideoThumbnail v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasThumbnail() => $_has(3);
   @$pb.TagNumber(4)
@@ -1164,7 +1164,7 @@ class VideoAdInfo extends $pb.GeneratedMessage {
     VideoBumperInStreamAdInfo? bumper,
     VideoOutstreamAdInfo? outStream,
     VideoNonSkippableInStreamAdInfo? nonSkippable,
-    $1833.AdVideoAsset? video,
+    $1834.AdVideoAsset? video,
     InFeedVideoAdInfo? inFeed,
   }) {
     final $result = create();
@@ -1206,7 +1206,7 @@ class VideoAdInfo extends $pb.GeneratedMessage {
     ..aOM<VideoBumperInStreamAdInfo>(3, _omitFieldNames ? '' : 'bumper', subBuilder: VideoBumperInStreamAdInfo.create)
     ..aOM<VideoOutstreamAdInfo>(4, _omitFieldNames ? '' : 'outStream', subBuilder: VideoOutstreamAdInfo.create)
     ..aOM<VideoNonSkippableInStreamAdInfo>(5, _omitFieldNames ? '' : 'nonSkippable', subBuilder: VideoNonSkippableInStreamAdInfo.create)
-    ..aOM<$1833.AdVideoAsset>(8, _omitFieldNames ? '' : 'video', subBuilder: $1833.AdVideoAsset.create)
+    ..aOM<$1834.AdVideoAsset>(8, _omitFieldNames ? '' : 'video', subBuilder: $1834.AdVideoAsset.create)
     ..aOM<InFeedVideoAdInfo>(9, _omitFieldNames ? '' : 'inFeed', subBuilder: InFeedVideoAdInfo.create)
     ..hasRequiredFields = false
   ;
@@ -1285,15 +1285,15 @@ class VideoAdInfo extends $pb.GeneratedMessage {
 
   /// The YouTube video assets used for the ad.
   @$pb.TagNumber(8)
-  $1833.AdVideoAsset get video => $_getN(4);
+  $1834.AdVideoAsset get video => $_getN(4);
   @$pb.TagNumber(8)
-  set video($1833.AdVideoAsset v) { setField(8, v); }
+  set video($1834.AdVideoAsset v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasVideo() => $_has(4);
   @$pb.TagNumber(8)
   void clearVideo() => clearField(8);
   @$pb.TagNumber(8)
-  $1833.AdVideoAsset ensureVideo() => $_ensure(4);
+  $1834.AdVideoAsset ensureVideo() => $_ensure(4);
 
   /// In-feed video ad format.
   @$pb.TagNumber(9)
@@ -1311,12 +1311,12 @@ class VideoAdInfo extends $pb.GeneratedMessage {
 /// A video responsive ad.
 class VideoResponsiveAdInfo extends $pb.GeneratedMessage {
   factory VideoResponsiveAdInfo({
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? longHeadlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
-    $core.Iterable<$1833.AdTextAsset>? callToActions,
-    $core.Iterable<$1833.AdVideoAsset>? videos,
-    $core.Iterable<$1833.AdImageAsset>? companionBanners,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? longHeadlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdTextAsset>? callToActions,
+    $core.Iterable<$1834.AdVideoAsset>? videos,
+    $core.Iterable<$1834.AdImageAsset>? companionBanners,
     $core.String? breadcrumb1,
     $core.String? breadcrumb2,
   }) {
@@ -1352,12 +1352,12 @@ class VideoResponsiveAdInfo extends $pb.GeneratedMessage {
   factory VideoResponsiveAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoResponsiveAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'longHeadlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(3, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(4, _omitFieldNames ? '' : 'callToActions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdVideoAsset>(5, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1833.AdVideoAsset.create)
-    ..pc<$1833.AdImageAsset>(6, _omitFieldNames ? '' : 'companionBanners', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
+    ..pc<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'longHeadlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(3, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(4, _omitFieldNames ? '' : 'callToActions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdVideoAsset>(5, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1834.AdVideoAsset.create)
+    ..pc<$1834.AdImageAsset>(6, _omitFieldNames ? '' : 'companionBanners', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
     ..aOS(7, _omitFieldNames ? '' : 'breadcrumb1')
     ..aOS(8, _omitFieldNames ? '' : 'breadcrumb2')
     ..hasRequiredFields = false
@@ -1388,32 +1388,32 @@ class VideoResponsiveAdInfo extends $pb.GeneratedMessage {
   /// Action" banner. Currently, only a single value for the short headline is
   /// supported.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(0);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(0);
 
   /// List of text assets used for the long headline.
   /// Currently, only a single value for the long headline is supported.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get longHeadlines => $_getList(1);
+  $core.List<$1834.AdTextAsset> get longHeadlines => $_getList(1);
 
   /// List of text assets used for the description.
   /// Currently, only a single value for the description is supported.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(2);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(2);
 
   /// List of text assets used for the button, for example, the "Call To Action"
   /// button. Currently, only a single value for the button is supported.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdTextAsset> get callToActions => $_getList(3);
+  $core.List<$1834.AdTextAsset> get callToActions => $_getList(3);
 
   /// List of YouTube video assets used for the ad.
   /// Currently, only a single value for the YouTube video asset is supported.
   @$pb.TagNumber(5)
-  $core.List<$1833.AdVideoAsset> get videos => $_getList(4);
+  $core.List<$1834.AdVideoAsset> get videos => $_getList(4);
 
   /// List of image assets used for the companion banner.
   /// Currently, only a single value for the companion banner asset is supported.
   @$pb.TagNumber(6)
-  $core.List<$1833.AdImageAsset> get companionBanners => $_getList(5);
+  $core.List<$1834.AdImageAsset> get companionBanners => $_getList(5);
 
   /// First part of text that appears in the ad with the displayed URL.
   @$pb.TagNumber(7)
@@ -1449,8 +1449,8 @@ class VideoResponsiveAdInfo extends $pb.GeneratedMessage {
 ///  More information at https://support.google.com/google-ads/answer/7684791
 class ResponsiveSearchAdInfo extends $pb.GeneratedMessage {
   factory ResponsiveSearchAdInfo({
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
     $core.String? path1,
     $core.String? path2,
   }) {
@@ -1474,8 +1474,8 @@ class ResponsiveSearchAdInfo extends $pb.GeneratedMessage {
   factory ResponsiveSearchAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponsiveSearchAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
     ..aOS(5, _omitFieldNames ? '' : 'path1')
     ..aOS(6, _omitFieldNames ? '' : 'path2')
     ..hasRequiredFields = false
@@ -1505,12 +1505,12 @@ class ResponsiveSearchAdInfo extends $pb.GeneratedMessage {
   /// List of text assets for headlines. When the ad serves the headlines will
   /// be selected from this list.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(0);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(0);
 
   /// List of text assets for descriptions. When the ad serves the descriptions
   /// will be selected from this list.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(1);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(1);
 
   /// First part of text that can be appended to the URL in the ad.
   @$pb.TagNumber(5)
@@ -1538,7 +1538,7 @@ class ResponsiveSearchAdInfo extends $pb.GeneratedMessage {
 /// in the Google Ads UI.
 class LegacyResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
   factory LegacyResponsiveDisplayAdInfo({
-    $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting? formatSetting,
+    $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting? formatSetting,
     $core.String? shortHeadline,
     $core.String? longHeadline,
     $core.String? description,
@@ -1607,7 +1607,7 @@ class LegacyResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
   factory LegacyResponsiveDisplayAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LegacyResponsiveDisplayAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting>(13, _omitFieldNames ? '' : 'formatSetting', $pb.PbFieldType.OE, defaultOrMaker: $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.UNSPECIFIED, valueOf: $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.valueOf, enumValues: $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.values)
+    ..e<$1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting>(13, _omitFieldNames ? '' : 'formatSetting', $pb.PbFieldType.OE, defaultOrMaker: $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.UNSPECIFIED, valueOf: $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.valueOf, enumValues: $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.values)
     ..aOS(16, _omitFieldNames ? '' : 'shortHeadline')
     ..aOS(17, _omitFieldNames ? '' : 'longHeadline')
     ..aOS(18, _omitFieldNames ? '' : 'description')
@@ -1648,9 +1648,9 @@ class LegacyResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
 
   /// Specifies which format the ad will be served in. Default is ALL_FORMATS.
   @$pb.TagNumber(13)
-  $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting get formatSetting => $_getN(0);
+  $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting get formatSetting => $_getN(0);
   @$pb.TagNumber(13)
-  set formatSetting($1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting v) { setField(13, v); }
+  set formatSetting($1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasFormatSetting() => $_has(0);
   @$pb.TagNumber(13)
@@ -1809,12 +1809,12 @@ class LegacyResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
 /// An app ad.
 class AppAdInfo extends $pb.GeneratedMessage {
   factory AppAdInfo({
-    $1833.AdTextAsset? mandatoryAdText,
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
-    $core.Iterable<$1833.AdImageAsset>? images,
-    $core.Iterable<$1833.AdVideoAsset>? youtubeVideos,
-    $core.Iterable<$1833.AdMediaBundleAsset>? html5MediaBundles,
+    $1834.AdTextAsset? mandatoryAdText,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdImageAsset>? images,
+    $core.Iterable<$1834.AdVideoAsset>? youtubeVideos,
+    $core.Iterable<$1834.AdMediaBundleAsset>? html5MediaBundles,
   }) {
     final $result = create();
     if (mandatoryAdText != null) {
@@ -1842,12 +1842,12 @@ class AppAdInfo extends $pb.GeneratedMessage {
   factory AppAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..aOM<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'mandatoryAdText', subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(3, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdImageAsset>(4, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdVideoAsset>(5, _omitFieldNames ? '' : 'youtubeVideos', $pb.PbFieldType.PM, subBuilder: $1833.AdVideoAsset.create)
-    ..pc<$1833.AdMediaBundleAsset>(6, _omitFieldNames ? '' : 'html5MediaBundles', $pb.PbFieldType.PM, subBuilder: $1833.AdMediaBundleAsset.create)
+    ..aOM<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'mandatoryAdText', subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(3, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdImageAsset>(4, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdVideoAsset>(5, _omitFieldNames ? '' : 'youtubeVideos', $pb.PbFieldType.PM, subBuilder: $1834.AdVideoAsset.create)
+    ..pc<$1834.AdMediaBundleAsset>(6, _omitFieldNames ? '' : 'html5MediaBundles', $pb.PbFieldType.PM, subBuilder: $1834.AdMediaBundleAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -1874,37 +1874,37 @@ class AppAdInfo extends $pb.GeneratedMessage {
 
   /// Mandatory ad text.
   @$pb.TagNumber(1)
-  $1833.AdTextAsset get mandatoryAdText => $_getN(0);
+  $1834.AdTextAsset get mandatoryAdText => $_getN(0);
   @$pb.TagNumber(1)
-  set mandatoryAdText($1833.AdTextAsset v) { setField(1, v); }
+  set mandatoryAdText($1834.AdTextAsset v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMandatoryAdText() => $_has(0);
   @$pb.TagNumber(1)
   void clearMandatoryAdText() => clearField(1);
   @$pb.TagNumber(1)
-  $1833.AdTextAsset ensureMandatoryAdText() => $_ensure(0);
+  $1834.AdTextAsset ensureMandatoryAdText() => $_ensure(0);
 
   /// List of text assets for headlines. When the ad serves the headlines will
   /// be selected from this list.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(1);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(1);
 
   /// List of text assets for descriptions. When the ad serves the descriptions
   /// will be selected from this list.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(2);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(2);
 
   /// List of image assets that may be displayed with the ad.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdImageAsset> get images => $_getList(3);
+  $core.List<$1834.AdImageAsset> get images => $_getList(3);
 
   /// List of YouTube video assets that may be displayed with the ad.
   @$pb.TagNumber(5)
-  $core.List<$1833.AdVideoAsset> get youtubeVideos => $_getList(4);
+  $core.List<$1834.AdVideoAsset> get youtubeVideos => $_getList(4);
 
   /// List of media bundle assets that may be used with the ad.
   @$pb.TagNumber(6)
-  $core.List<$1833.AdMediaBundleAsset> get html5MediaBundles => $_getList(5);
+  $core.List<$1834.AdMediaBundleAsset> get html5MediaBundles => $_getList(5);
 }
 
 /// App engagement ads allow you to write text encouraging a specific action in
@@ -1913,10 +1913,10 @@ class AppAdInfo extends $pb.GeneratedMessage {
 /// find what they're looking for easier and faster.
 class AppEngagementAdInfo extends $pb.GeneratedMessage {
   factory AppEngagementAdInfo({
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
-    $core.Iterable<$1833.AdImageAsset>? images,
-    $core.Iterable<$1833.AdVideoAsset>? videos,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdImageAsset>? images,
+    $core.Iterable<$1834.AdVideoAsset>? videos,
   }) {
     final $result = create();
     if (headlines != null) {
@@ -1938,10 +1938,10 @@ class AppEngagementAdInfo extends $pb.GeneratedMessage {
   factory AppEngagementAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppEngagementAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdImageAsset>(3, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdVideoAsset>(4, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1833.AdVideoAsset.create)
+    ..pc<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdImageAsset>(3, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdVideoAsset>(4, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1834.AdVideoAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -1969,20 +1969,20 @@ class AppEngagementAdInfo extends $pb.GeneratedMessage {
   /// List of text assets for headlines. When the ad serves the headlines will
   /// be selected from this list.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(0);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(0);
 
   /// List of text assets for descriptions. When the ad serves the descriptions
   /// will be selected from this list.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(1);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(1);
 
   /// List of image assets that may be displayed with the ad.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdImageAsset> get images => $_getList(2);
+  $core.List<$1834.AdImageAsset> get images => $_getList(2);
 
   /// List of video assets that may be displayed with the ad.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdVideoAsset> get videos => $_getList(3);
+  $core.List<$1834.AdVideoAsset> get videos => $_getList(3);
 }
 
 /// App pre-registration ads link to your app or game listing on Google Play, and
@@ -1992,10 +1992,10 @@ class AppEngagementAdInfo extends $pb.GeneratedMessage {
 /// or game before a launch.
 class AppPreRegistrationAdInfo extends $pb.GeneratedMessage {
   factory AppPreRegistrationAdInfo({
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
-    $core.Iterable<$1833.AdImageAsset>? images,
-    $core.Iterable<$1833.AdVideoAsset>? youtubeVideos,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdImageAsset>? images,
+    $core.Iterable<$1834.AdVideoAsset>? youtubeVideos,
   }) {
     final $result = create();
     if (headlines != null) {
@@ -2017,10 +2017,10 @@ class AppPreRegistrationAdInfo extends $pb.GeneratedMessage {
   factory AppPreRegistrationAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppPreRegistrationAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdImageAsset>(3, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdVideoAsset>(4, _omitFieldNames ? '' : 'youtubeVideos', $pb.PbFieldType.PM, subBuilder: $1833.AdVideoAsset.create)
+    ..pc<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdImageAsset>(3, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdVideoAsset>(4, _omitFieldNames ? '' : 'youtubeVideos', $pb.PbFieldType.PM, subBuilder: $1834.AdVideoAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -2048,26 +2048,26 @@ class AppPreRegistrationAdInfo extends $pb.GeneratedMessage {
   /// List of text assets for headlines. When the ad serves the headlines will
   /// be selected from this list.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(0);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(0);
 
   /// List of text assets for descriptions. When the ad serves the descriptions
   /// will be selected from this list.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(1);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(1);
 
   /// List of image asset IDs whose images may be displayed with the ad.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdImageAsset> get images => $_getList(2);
+  $core.List<$1834.AdImageAsset> get images => $_getList(2);
 
   /// List of YouTube video asset IDs whose videos may be displayed with the ad.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdVideoAsset> get youtubeVideos => $_getList(3);
+  $core.List<$1834.AdVideoAsset> get youtubeVideos => $_getList(3);
 }
 
 /// A legacy app install ad that only can be used by a few select customers.
 class LegacyAppInstallAdInfo extends $pb.GeneratedMessage {
   factory LegacyAppInstallAdInfo({
-    $1837.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore? appStore,
+    $1838.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore? appStore,
     $core.String? appId,
     $core.String? headline,
     $core.String? description1,
@@ -2096,7 +2096,7 @@ class LegacyAppInstallAdInfo extends $pb.GeneratedMessage {
   factory LegacyAppInstallAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LegacyAppInstallAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1837.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore>(2, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $1837.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore.UNSPECIFIED, valueOf: $1837.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore.valueOf, enumValues: $1837.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore.values)
+    ..e<$1838.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore>(2, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $1838.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore.UNSPECIFIED, valueOf: $1838.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore.valueOf, enumValues: $1838.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore.values)
     ..aOS(6, _omitFieldNames ? '' : 'appId')
     ..aOS(7, _omitFieldNames ? '' : 'headline')
     ..aOS(8, _omitFieldNames ? '' : 'description1')
@@ -2127,9 +2127,9 @@ class LegacyAppInstallAdInfo extends $pb.GeneratedMessage {
 
   /// The app store the mobile app is available in.
   @$pb.TagNumber(2)
-  $1837.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore get appStore => $_getN(0);
+  $1838.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore get appStore => $_getN(0);
   @$pb.TagNumber(2)
-  set appStore($1837.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore v) { setField(2, v); }
+  set appStore($1838.LegacyAppInstallAdAppStoreEnum_LegacyAppInstallAdAppStore v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAppStore() => $_has(0);
   @$pb.TagNumber(2)
@@ -2179,15 +2179,15 @@ class LegacyAppInstallAdInfo extends $pb.GeneratedMessage {
 /// A responsive display ad.
 class ResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
   factory ResponsiveDisplayAdInfo({
-    $core.Iterable<$1833.AdImageAsset>? marketingImages,
-    $core.Iterable<$1833.AdImageAsset>? squareMarketingImages,
-    $core.Iterable<$1833.AdImageAsset>? logoImages,
-    $core.Iterable<$1833.AdImageAsset>? squareLogoImages,
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $1833.AdTextAsset? longHeadline,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
-    $core.Iterable<$1833.AdVideoAsset>? youtubeVideos,
-    $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting? formatSetting,
+    $core.Iterable<$1834.AdImageAsset>? marketingImages,
+    $core.Iterable<$1834.AdImageAsset>? squareMarketingImages,
+    $core.Iterable<$1834.AdImageAsset>? logoImages,
+    $core.Iterable<$1834.AdImageAsset>? squareLogoImages,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $1834.AdTextAsset? longHeadline,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdVideoAsset>? youtubeVideos,
+    $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting? formatSetting,
     $core.String? businessName,
     $core.String? mainColor,
     $core.String? accentColor,
@@ -2256,15 +2256,15 @@ class ResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
   factory ResponsiveDisplayAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponsiveDisplayAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdImageAsset>(1, _omitFieldNames ? '' : 'marketingImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdImageAsset>(2, _omitFieldNames ? '' : 'squareMarketingImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdImageAsset>(3, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdImageAsset>(4, _omitFieldNames ? '' : 'squareLogoImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdTextAsset>(5, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..aOM<$1833.AdTextAsset>(6, _omitFieldNames ? '' : 'longHeadline', subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(7, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdVideoAsset>(8, _omitFieldNames ? '' : 'youtubeVideos', $pb.PbFieldType.PM, subBuilder: $1833.AdVideoAsset.create)
-    ..e<$1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting>(16, _omitFieldNames ? '' : 'formatSetting', $pb.PbFieldType.OE, defaultOrMaker: $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.UNSPECIFIED, valueOf: $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.valueOf, enumValues: $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.values)
+    ..pc<$1834.AdImageAsset>(1, _omitFieldNames ? '' : 'marketingImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdImageAsset>(2, _omitFieldNames ? '' : 'squareMarketingImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdImageAsset>(3, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdImageAsset>(4, _omitFieldNames ? '' : 'squareLogoImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdTextAsset>(5, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..aOM<$1834.AdTextAsset>(6, _omitFieldNames ? '' : 'longHeadline', subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(7, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdVideoAsset>(8, _omitFieldNames ? '' : 'youtubeVideos', $pb.PbFieldType.PM, subBuilder: $1834.AdVideoAsset.create)
+    ..e<$1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting>(16, _omitFieldNames ? '' : 'formatSetting', $pb.PbFieldType.OE, defaultOrMaker: $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.UNSPECIFIED, valueOf: $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.valueOf, enumValues: $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting.values)
     ..aOS(17, _omitFieldNames ? '' : 'businessName')
     ..aOS(18, _omitFieldNames ? '' : 'mainColor')
     ..aOS(19, _omitFieldNames ? '' : 'accentColor')
@@ -2302,58 +2302,58 @@ class ResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
   /// be 1.91:1 (+-1%). At least one `marketing_image` is required. Combined
   /// with `square_marketing_images`, the maximum is 15.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdImageAsset> get marketingImages => $_getList(0);
+  $core.List<$1834.AdImageAsset> get marketingImages => $_getList(0);
 
   /// Square marketing images to be used in the ad. Valid image types are GIF,
   /// JPEG, and PNG. The minimum size is 300x300 and the aspect ratio must
   /// be 1:1 (+-1%). At least one square `marketing_image` is required. Combined
   /// with `marketing_images`, the maximum is 15.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdImageAsset> get squareMarketingImages => $_getList(1);
+  $core.List<$1834.AdImageAsset> get squareMarketingImages => $_getList(1);
 
   /// Logo images to be used in the ad. Valid image types are GIF,
   /// JPEG, and PNG. The minimum size is 512x128 and the aspect ratio must
   /// be 4:1 (+-1%). Combined with `square_logo_images`, the maximum is 5.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdImageAsset> get logoImages => $_getList(2);
+  $core.List<$1834.AdImageAsset> get logoImages => $_getList(2);
 
   /// Square logo images to be used in the ad. Valid image types are GIF,
   /// JPEG, and PNG. The minimum size is 128x128 and the aspect ratio must
   /// be 1:1 (+-1%). Combined with `logo_images`, the maximum is 5.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdImageAsset> get squareLogoImages => $_getList(3);
+  $core.List<$1834.AdImageAsset> get squareLogoImages => $_getList(3);
 
   /// Short format headlines for the ad. The maximum length is 30 characters.
   /// At least 1 and max 5 headlines can be specified.
   @$pb.TagNumber(5)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(4);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(4);
 
   /// A required long format headline. The maximum length is 90 characters.
   @$pb.TagNumber(6)
-  $1833.AdTextAsset get longHeadline => $_getN(5);
+  $1834.AdTextAsset get longHeadline => $_getN(5);
   @$pb.TagNumber(6)
-  set longHeadline($1833.AdTextAsset v) { setField(6, v); }
+  set longHeadline($1834.AdTextAsset v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLongHeadline() => $_has(5);
   @$pb.TagNumber(6)
   void clearLongHeadline() => clearField(6);
   @$pb.TagNumber(6)
-  $1833.AdTextAsset ensureLongHeadline() => $_ensure(5);
+  $1834.AdTextAsset ensureLongHeadline() => $_ensure(5);
 
   /// Descriptive texts for the ad. The maximum length is 90 characters. At
   /// least 1 and max 5 headlines can be specified.
   @$pb.TagNumber(7)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(6);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(6);
 
   /// Optional YouTube videos for the ad. A maximum of 5 videos can be specified.
   @$pb.TagNumber(8)
-  $core.List<$1833.AdVideoAsset> get youtubeVideos => $_getList(7);
+  $core.List<$1834.AdVideoAsset> get youtubeVideos => $_getList(7);
 
   /// Specifies which format the ad will be served in. Default is ALL_FORMATS.
   @$pb.TagNumber(16)
-  $1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting get formatSetting => $_getN(8);
+  $1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting get formatSetting => $_getN(8);
   @$pb.TagNumber(16)
-  set formatSetting($1836.DisplayAdFormatSettingEnum_DisplayAdFormatSetting v) { setField(16, v); }
+  set formatSetting($1837.DisplayAdFormatSettingEnum_DisplayAdFormatSetting v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasFormatSetting() => $_has(8);
   @$pb.TagNumber(16)
@@ -2454,12 +2454,12 @@ class ResponsiveDisplayAdInfo extends $pb.GeneratedMessage {
 /// A local ad.
 class LocalAdInfo extends $pb.GeneratedMessage {
   factory LocalAdInfo({
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
-    $core.Iterable<$1833.AdTextAsset>? callToActions,
-    $core.Iterable<$1833.AdImageAsset>? marketingImages,
-    $core.Iterable<$1833.AdImageAsset>? logoImages,
-    $core.Iterable<$1833.AdVideoAsset>? videos,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdTextAsset>? callToActions,
+    $core.Iterable<$1834.AdImageAsset>? marketingImages,
+    $core.Iterable<$1834.AdImageAsset>? logoImages,
+    $core.Iterable<$1834.AdVideoAsset>? videos,
     $core.String? path1,
     $core.String? path2,
   }) {
@@ -2495,12 +2495,12 @@ class LocalAdInfo extends $pb.GeneratedMessage {
   factory LocalAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocalAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(3, _omitFieldNames ? '' : 'callToActions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdImageAsset>(4, _omitFieldNames ? '' : 'marketingImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdImageAsset>(5, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdVideoAsset>(6, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1833.AdVideoAsset.create)
+    ..pc<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(3, _omitFieldNames ? '' : 'callToActions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdImageAsset>(4, _omitFieldNames ? '' : 'marketingImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdImageAsset>(5, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdVideoAsset>(6, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1834.AdVideoAsset.create)
     ..aOS(9, _omitFieldNames ? '' : 'path1')
     ..aOS(10, _omitFieldNames ? '' : 'path2')
     ..hasRequiredFields = false
@@ -2531,36 +2531,36 @@ class LocalAdInfo extends $pb.GeneratedMessage {
   /// be selected from this list. At least 1 and at most 5 headlines must be
   /// specified.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(0);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(0);
 
   /// List of text assets for descriptions. When the ad serves the descriptions
   /// will be selected from this list. At least 1 and at most 5 descriptions must
   /// be specified.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(1);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(1);
 
   /// List of text assets for call-to-actions. When the ad serves the
   /// call-to-actions will be selected from this list. At least 1 and at most
   /// 5 call-to-actions must be specified.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdTextAsset> get callToActions => $_getList(2);
+  $core.List<$1834.AdTextAsset> get callToActions => $_getList(2);
 
   /// List of marketing image assets that may be displayed with the ad. The
   /// images must be 314x600 pixels or 320x320 pixels. At least 1 and at most
   /// 20 image assets must be specified.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdImageAsset> get marketingImages => $_getList(3);
+  $core.List<$1834.AdImageAsset> get marketingImages => $_getList(3);
 
   /// List of logo image assets that may be displayed with the ad. The images
   /// must be 128x128 pixels and not larger than 120KB. At least 1 and at most 5
   /// image assets must be specified.
   @$pb.TagNumber(5)
-  $core.List<$1833.AdImageAsset> get logoImages => $_getList(4);
+  $core.List<$1834.AdImageAsset> get logoImages => $_getList(4);
 
   /// List of YouTube video assets that may be displayed with the ad. At least 1
   /// and at most 20 video assets must be specified.
   @$pb.TagNumber(6)
-  $core.List<$1833.AdVideoAsset> get videos => $_getList(5);
+  $core.List<$1834.AdVideoAsset> get videos => $_getList(5);
 
   /// First part of optional text that can be appended to the URL in the ad.
   @$pb.TagNumber(9)
@@ -2594,8 +2594,8 @@ enum DisplayUploadAdInfo_MediaAsset {
 /// need to be included with the ad.
 class DisplayUploadAdInfo extends $pb.GeneratedMessage {
   factory DisplayUploadAdInfo({
-    $1838.DisplayUploadProductTypeEnum_DisplayUploadProductType? displayUploadProductType,
-    $1833.AdMediaBundleAsset? mediaBundle,
+    $1839.DisplayUploadProductTypeEnum_DisplayUploadProductType? displayUploadProductType,
+    $1834.AdMediaBundleAsset? mediaBundle,
   }) {
     final $result = create();
     if (displayUploadProductType != null) {
@@ -2616,8 +2616,8 @@ class DisplayUploadAdInfo extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DisplayUploadAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..oo(0, [2])
-    ..e<$1838.DisplayUploadProductTypeEnum_DisplayUploadProductType>(1, _omitFieldNames ? '' : 'displayUploadProductType', $pb.PbFieldType.OE, defaultOrMaker: $1838.DisplayUploadProductTypeEnum_DisplayUploadProductType.UNSPECIFIED, valueOf: $1838.DisplayUploadProductTypeEnum_DisplayUploadProductType.valueOf, enumValues: $1838.DisplayUploadProductTypeEnum_DisplayUploadProductType.values)
-    ..aOM<$1833.AdMediaBundleAsset>(2, _omitFieldNames ? '' : 'mediaBundle', subBuilder: $1833.AdMediaBundleAsset.create)
+    ..e<$1839.DisplayUploadProductTypeEnum_DisplayUploadProductType>(1, _omitFieldNames ? '' : 'displayUploadProductType', $pb.PbFieldType.OE, defaultOrMaker: $1839.DisplayUploadProductTypeEnum_DisplayUploadProductType.UNSPECIFIED, valueOf: $1839.DisplayUploadProductTypeEnum_DisplayUploadProductType.valueOf, enumValues: $1839.DisplayUploadProductTypeEnum_DisplayUploadProductType.values)
+    ..aOM<$1834.AdMediaBundleAsset>(2, _omitFieldNames ? '' : 'mediaBundle', subBuilder: $1834.AdMediaBundleAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -2647,9 +2647,9 @@ class DisplayUploadAdInfo extends $pb.GeneratedMessage {
 
   /// The product type of this ad. See comments on the enum for details.
   @$pb.TagNumber(1)
-  $1838.DisplayUploadProductTypeEnum_DisplayUploadProductType get displayUploadProductType => $_getN(0);
+  $1839.DisplayUploadProductTypeEnum_DisplayUploadProductType get displayUploadProductType => $_getN(0);
   @$pb.TagNumber(1)
-  set displayUploadProductType($1838.DisplayUploadProductTypeEnum_DisplayUploadProductType v) { setField(1, v); }
+  set displayUploadProductType($1839.DisplayUploadProductTypeEnum_DisplayUploadProductType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDisplayUploadProductType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2663,15 +2663,15 @@ class DisplayUploadAdInfo extends $pb.GeneratedMessage {
   /// https://support.google.com/webdesigner/answer/7543898 for more
   /// information.
   @$pb.TagNumber(2)
-  $1833.AdMediaBundleAsset get mediaBundle => $_getN(1);
+  $1834.AdMediaBundleAsset get mediaBundle => $_getN(1);
   @$pb.TagNumber(2)
-  set mediaBundle($1833.AdMediaBundleAsset v) { setField(2, v); }
+  set mediaBundle($1834.AdMediaBundleAsset v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMediaBundle() => $_has(1);
   @$pb.TagNumber(2)
   void clearMediaBundle() => clearField(2);
   @$pb.TagNumber(2)
-  $1833.AdMediaBundleAsset ensureMediaBundle() => $_ensure(1);
+  $1834.AdMediaBundleAsset ensureMediaBundle() => $_ensure(1);
 }
 
 /// Specification for various creative controls for a responsive display ad.
@@ -2744,8 +2744,8 @@ class ResponsiveDisplayAdControlSpec extends $pb.GeneratedMessage {
 /// A Smart campaign ad.
 class SmartCampaignAdInfo extends $pb.GeneratedMessage {
   factory SmartCampaignAdInfo({
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
   }) {
     final $result = create();
     if (headlines != null) {
@@ -2761,8 +2761,8 @@ class SmartCampaignAdInfo extends $pb.GeneratedMessage {
   factory SmartCampaignAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SmartCampaignAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -2790,12 +2790,12 @@ class SmartCampaignAdInfo extends $pb.GeneratedMessage {
   /// List of text assets, each of which corresponds to a headline when the ad
   /// serves. This list consists of a minimum of 3 and up to 15 text assets.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(0);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(0);
 
   /// List of text assets, each of which corresponds to a description when the ad
   /// serves. This list consists of a minimum of 2 and up to 4 text assets.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(1);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(1);
 }
 
 /// A call ad.
@@ -2810,7 +2810,7 @@ class CallAdInfo extends $pb.GeneratedMessage {
     $core.bool? disableCallConversion,
     $core.String? phoneNumberVerificationUrl,
     $core.String? conversionAction,
-    $1839.CallConversionReportingStateEnum_CallConversionReportingState? conversionReportingState,
+    $1840.CallConversionReportingStateEnum_CallConversionReportingState? conversionReportingState,
     $core.String? headline1,
     $core.String? headline2,
     $core.String? path1,
@@ -2875,7 +2875,7 @@ class CallAdInfo extends $pb.GeneratedMessage {
     ..aOB(7, _omitFieldNames ? '' : 'disableCallConversion')
     ..aOS(8, _omitFieldNames ? '' : 'phoneNumberVerificationUrl')
     ..aOS(9, _omitFieldNames ? '' : 'conversionAction')
-    ..e<$1839.CallConversionReportingStateEnum_CallConversionReportingState>(10, _omitFieldNames ? '' : 'conversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $1839.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $1839.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $1839.CallConversionReportingStateEnum_CallConversionReportingState.values)
+    ..e<$1840.CallConversionReportingStateEnum_CallConversionReportingState>(10, _omitFieldNames ? '' : 'conversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $1840.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $1840.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $1840.CallConversionReportingStateEnum_CallConversionReportingState.values)
     ..aOS(11, _omitFieldNames ? '' : 'headline1')
     ..aOS(12, _omitFieldNames ? '' : 'headline2')
     ..aOS(13, _omitFieldNames ? '' : 'path1')
@@ -3003,9 +3003,9 @@ class CallAdInfo extends $pb.GeneratedMessage {
   /// The call conversion behavior of this call ad. It can use its own call
   /// conversion setting, inherit the account level setting, or be disabled.
   @$pb.TagNumber(10)
-  $1839.CallConversionReportingStateEnum_CallConversionReportingState get conversionReportingState => $_getN(9);
+  $1840.CallConversionReportingStateEnum_CallConversionReportingState get conversionReportingState => $_getN(9);
   @$pb.TagNumber(10)
-  set conversionReportingState($1839.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(10, v); }
+  set conversionReportingState($1840.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasConversionReportingState() => $_has(9);
   @$pb.TagNumber(10)
@@ -3056,12 +3056,12 @@ class CallAdInfo extends $pb.GeneratedMessage {
 /// A discovery multi asset ad.
 class DiscoveryMultiAssetAdInfo extends $pb.GeneratedMessage {
   factory DiscoveryMultiAssetAdInfo({
-    $core.Iterable<$1833.AdImageAsset>? marketingImages,
-    $core.Iterable<$1833.AdImageAsset>? squareMarketingImages,
-    $core.Iterable<$1833.AdImageAsset>? portraitMarketingImages,
-    $core.Iterable<$1833.AdImageAsset>? logoImages,
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdImageAsset>? marketingImages,
+    $core.Iterable<$1834.AdImageAsset>? squareMarketingImages,
+    $core.Iterable<$1834.AdImageAsset>? portraitMarketingImages,
+    $core.Iterable<$1834.AdImageAsset>? logoImages,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
     $core.String? businessName,
     $core.String? callToActionText,
     $core.bool? leadFormOnly,
@@ -3101,12 +3101,12 @@ class DiscoveryMultiAssetAdInfo extends $pb.GeneratedMessage {
   factory DiscoveryMultiAssetAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryMultiAssetAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdImageAsset>(1, _omitFieldNames ? '' : 'marketingImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdImageAsset>(2, _omitFieldNames ? '' : 'squareMarketingImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdImageAsset>(3, _omitFieldNames ? '' : 'portraitMarketingImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdImageAsset>(4, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
-    ..pc<$1833.AdTextAsset>(5, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(6, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
+    ..pc<$1834.AdImageAsset>(1, _omitFieldNames ? '' : 'marketingImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdImageAsset>(2, _omitFieldNames ? '' : 'squareMarketingImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdImageAsset>(3, _omitFieldNames ? '' : 'portraitMarketingImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdImageAsset>(4, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
+    ..pc<$1834.AdTextAsset>(5, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(6, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
     ..aOS(7, _omitFieldNames ? '' : 'businessName')
     ..aOS(8, _omitFieldNames ? '' : 'callToActionText')
     ..aOB(9, _omitFieldNames ? '' : 'leadFormOnly')
@@ -3140,37 +3140,37 @@ class DiscoveryMultiAssetAdInfo extends $pb.GeneratedMessage {
   /// not present. Combined with `square_marketing_images` and
   /// `portrait_marketing_images` the maximum is 20.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdImageAsset> get marketingImages => $_getList(0);
+  $core.List<$1834.AdImageAsset> get marketingImages => $_getList(0);
 
   /// Square marketing image assets to be used in the ad. Valid image types are
   /// GIF, JPEG, and PNG. The minimum size is 300x300 and the aspect ratio must
   /// be 1:1 (+-1%). Required if marketing_images is not present.  Combined with
   /// `marketing_images` and `portrait_marketing_images` the maximum is 20.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdImageAsset> get squareMarketingImages => $_getList(1);
+  $core.List<$1834.AdImageAsset> get squareMarketingImages => $_getList(1);
 
   /// Portrait marketing image assets to be used in the ad. Valid image types are
   /// GIF, JPEG, and PNG. The minimum size is 480x600 and the aspect ratio must
   /// be 4:5 (+-1%).  Combined with `marketing_images` and
   /// `square_marketing_images` the maximum is 20.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdImageAsset> get portraitMarketingImages => $_getList(2);
+  $core.List<$1834.AdImageAsset> get portraitMarketingImages => $_getList(2);
 
   /// Logo image assets to be used in the ad. Valid image types are GIF,
   /// JPEG, and PNG. The minimum size is 128x128 and the aspect ratio must be
   /// 1:1(+-1%). At least 1 and max 5 logo images can be specified.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdImageAsset> get logoImages => $_getList(3);
+  $core.List<$1834.AdImageAsset> get logoImages => $_getList(3);
 
   /// Headline text asset of the ad. Maximum display width is 30. At least 1 and
   /// max 5 headlines can be specified.
   @$pb.TagNumber(5)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(4);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(4);
 
   /// The descriptive text of the ad. Maximum display width is 90. At least 1 and
   /// max 5 descriptions can be specified.
   @$pb.TagNumber(6)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(5);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(5);
 
   /// The Advertiser/brand name. Maximum display width is 25. Required.
   @$pb.TagNumber(7)
@@ -3207,11 +3207,11 @@ class DiscoveryMultiAssetAdInfo extends $pb.GeneratedMessage {
 class DiscoveryCarouselAdInfo extends $pb.GeneratedMessage {
   factory DiscoveryCarouselAdInfo({
     $core.String? businessName,
-    $1833.AdImageAsset? logoImage,
-    $1833.AdTextAsset? headline,
-    $1833.AdTextAsset? description,
+    $1834.AdImageAsset? logoImage,
+    $1834.AdTextAsset? headline,
+    $1834.AdTextAsset? description,
     $core.String? callToActionText,
-    $core.Iterable<$1833.AdDiscoveryCarouselCardAsset>? carouselCards,
+    $core.Iterable<$1834.AdDiscoveryCarouselCardAsset>? carouselCards,
   }) {
     final $result = create();
     if (businessName != null) {
@@ -3240,11 +3240,11 @@ class DiscoveryCarouselAdInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryCarouselAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'businessName')
-    ..aOM<$1833.AdImageAsset>(2, _omitFieldNames ? '' : 'logoImage', subBuilder: $1833.AdImageAsset.create)
-    ..aOM<$1833.AdTextAsset>(3, _omitFieldNames ? '' : 'headline', subBuilder: $1833.AdTextAsset.create)
-    ..aOM<$1833.AdTextAsset>(4, _omitFieldNames ? '' : 'description', subBuilder: $1833.AdTextAsset.create)
+    ..aOM<$1834.AdImageAsset>(2, _omitFieldNames ? '' : 'logoImage', subBuilder: $1834.AdImageAsset.create)
+    ..aOM<$1834.AdTextAsset>(3, _omitFieldNames ? '' : 'headline', subBuilder: $1834.AdTextAsset.create)
+    ..aOM<$1834.AdTextAsset>(4, _omitFieldNames ? '' : 'description', subBuilder: $1834.AdTextAsset.create)
     ..aOS(5, _omitFieldNames ? '' : 'callToActionText')
-    ..pc<$1833.AdDiscoveryCarouselCardAsset>(6, _omitFieldNames ? '' : 'carouselCards', $pb.PbFieldType.PM, subBuilder: $1833.AdDiscoveryCarouselCardAsset.create)
+    ..pc<$1834.AdDiscoveryCarouselCardAsset>(6, _omitFieldNames ? '' : 'carouselCards', $pb.PbFieldType.PM, subBuilder: $1834.AdDiscoveryCarouselCardAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -3282,39 +3282,39 @@ class DiscoveryCarouselAdInfo extends $pb.GeneratedMessage {
   /// Required. Logo image to be used in the ad.  The minimum size is 128x128 and
   /// the aspect ratio must be 1:1(+-1%).
   @$pb.TagNumber(2)
-  $1833.AdImageAsset get logoImage => $_getN(1);
+  $1834.AdImageAsset get logoImage => $_getN(1);
   @$pb.TagNumber(2)
-  set logoImage($1833.AdImageAsset v) { setField(2, v); }
+  set logoImage($1834.AdImageAsset v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLogoImage() => $_has(1);
   @$pb.TagNumber(2)
   void clearLogoImage() => clearField(2);
   @$pb.TagNumber(2)
-  $1833.AdImageAsset ensureLogoImage() => $_ensure(1);
+  $1834.AdImageAsset ensureLogoImage() => $_ensure(1);
 
   /// Required. Headline of the ad.
   @$pb.TagNumber(3)
-  $1833.AdTextAsset get headline => $_getN(2);
+  $1834.AdTextAsset get headline => $_getN(2);
   @$pb.TagNumber(3)
-  set headline($1833.AdTextAsset v) { setField(3, v); }
+  set headline($1834.AdTextAsset v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasHeadline() => $_has(2);
   @$pb.TagNumber(3)
   void clearHeadline() => clearField(3);
   @$pb.TagNumber(3)
-  $1833.AdTextAsset ensureHeadline() => $_ensure(2);
+  $1834.AdTextAsset ensureHeadline() => $_ensure(2);
 
   /// Required. The descriptive text of the ad.
   @$pb.TagNumber(4)
-  $1833.AdTextAsset get description => $_getN(3);
+  $1834.AdTextAsset get description => $_getN(3);
   @$pb.TagNumber(4)
-  set description($1833.AdTextAsset v) { setField(4, v); }
+  set description($1834.AdTextAsset v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDescription() => $_has(3);
   @$pb.TagNumber(4)
   void clearDescription() => clearField(4);
   @$pb.TagNumber(4)
-  $1833.AdTextAsset ensureDescription() => $_ensure(3);
+  $1834.AdTextAsset ensureDescription() => $_ensure(3);
 
   /// Call to action text.
   @$pb.TagNumber(5)
@@ -3328,21 +3328,21 @@ class DiscoveryCarouselAdInfo extends $pb.GeneratedMessage {
 
   /// Required. Carousel cards that will display with the ad. Min 2 max 10.
   @$pb.TagNumber(6)
-  $core.List<$1833.AdDiscoveryCarouselCardAsset> get carouselCards => $_getList(5);
+  $core.List<$1834.AdDiscoveryCarouselCardAsset> get carouselCards => $_getList(5);
 }
 
 /// A discovery video responsive ad.
 class DiscoveryVideoResponsiveAdInfo extends $pb.GeneratedMessage {
   factory DiscoveryVideoResponsiveAdInfo({
-    $core.Iterable<$1833.AdTextAsset>? headlines,
-    $core.Iterable<$1833.AdTextAsset>? longHeadlines,
-    $core.Iterable<$1833.AdTextAsset>? descriptions,
-    $core.Iterable<$1833.AdVideoAsset>? videos,
-    $core.Iterable<$1833.AdImageAsset>? logoImages,
+    $core.Iterable<$1834.AdTextAsset>? headlines,
+    $core.Iterable<$1834.AdTextAsset>? longHeadlines,
+    $core.Iterable<$1834.AdTextAsset>? descriptions,
+    $core.Iterable<$1834.AdVideoAsset>? videos,
+    $core.Iterable<$1834.AdImageAsset>? logoImages,
     $core.String? breadcrumb1,
     $core.String? breadcrumb2,
-    $1833.AdTextAsset? businessName,
-    $core.Iterable<$1833.AdCallToActionAsset>? callToActions,
+    $1834.AdTextAsset? businessName,
+    $core.Iterable<$1834.AdCallToActionAsset>? callToActions,
   }) {
     final $result = create();
     if (headlines != null) {
@@ -3379,15 +3379,15 @@ class DiscoveryVideoResponsiveAdInfo extends $pb.GeneratedMessage {
   factory DiscoveryVideoResponsiveAdInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryVideoResponsiveAdInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..pc<$1833.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(2, _omitFieldNames ? '' : 'longHeadlines', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdTextAsset>(3, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdVideoAsset>(4, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1833.AdVideoAsset.create)
-    ..pc<$1833.AdImageAsset>(5, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1833.AdImageAsset.create)
+    ..pc<$1834.AdTextAsset>(1, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(2, _omitFieldNames ? '' : 'longHeadlines', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdTextAsset>(3, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdVideoAsset>(4, _omitFieldNames ? '' : 'videos', $pb.PbFieldType.PM, subBuilder: $1834.AdVideoAsset.create)
+    ..pc<$1834.AdImageAsset>(5, _omitFieldNames ? '' : 'logoImages', $pb.PbFieldType.PM, subBuilder: $1834.AdImageAsset.create)
     ..aOS(6, _omitFieldNames ? '' : 'breadcrumb1')
     ..aOS(7, _omitFieldNames ? '' : 'breadcrumb2')
-    ..aOM<$1833.AdTextAsset>(8, _omitFieldNames ? '' : 'businessName', subBuilder: $1833.AdTextAsset.create)
-    ..pc<$1833.AdCallToActionAsset>(9, _omitFieldNames ? '' : 'callToActions', $pb.PbFieldType.PM, subBuilder: $1833.AdCallToActionAsset.create)
+    ..aOM<$1834.AdTextAsset>(8, _omitFieldNames ? '' : 'businessName', subBuilder: $1834.AdTextAsset.create)
+    ..pc<$1834.AdCallToActionAsset>(9, _omitFieldNames ? '' : 'callToActions', $pb.PbFieldType.PM, subBuilder: $1834.AdCallToActionAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -3415,24 +3415,24 @@ class DiscoveryVideoResponsiveAdInfo extends $pb.GeneratedMessage {
   /// List of text assets used for the short headline, for example, the "Call To
   /// Action" banner.
   @$pb.TagNumber(1)
-  $core.List<$1833.AdTextAsset> get headlines => $_getList(0);
+  $core.List<$1834.AdTextAsset> get headlines => $_getList(0);
 
   /// List of text assets used for the long headline.
   @$pb.TagNumber(2)
-  $core.List<$1833.AdTextAsset> get longHeadlines => $_getList(1);
+  $core.List<$1834.AdTextAsset> get longHeadlines => $_getList(1);
 
   /// List of text assets used for the description.
   @$pb.TagNumber(3)
-  $core.List<$1833.AdTextAsset> get descriptions => $_getList(2);
+  $core.List<$1834.AdTextAsset> get descriptions => $_getList(2);
 
   /// List of YouTube video assets used for the ad.
   @$pb.TagNumber(4)
-  $core.List<$1833.AdVideoAsset> get videos => $_getList(3);
+  $core.List<$1834.AdVideoAsset> get videos => $_getList(3);
 
   /// Logo image to be used in the ad. Valid image types are GIF, JPEG, and PNG.
   /// The minimum size is 128x128 and the aspect ratio must be 1:1(+-1%).
   @$pb.TagNumber(5)
-  $core.List<$1833.AdImageAsset> get logoImages => $_getList(4);
+  $core.List<$1834.AdImageAsset> get logoImages => $_getList(4);
 
   /// First part of text that appears in the ad with the displayed URL.
   @$pb.TagNumber(6)
@@ -3456,19 +3456,19 @@ class DiscoveryVideoResponsiveAdInfo extends $pb.GeneratedMessage {
 
   /// Required. The advertiser/brand name.
   @$pb.TagNumber(8)
-  $1833.AdTextAsset get businessName => $_getN(7);
+  $1834.AdTextAsset get businessName => $_getN(7);
   @$pb.TagNumber(8)
-  set businessName($1833.AdTextAsset v) { setField(8, v); }
+  set businessName($1834.AdTextAsset v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasBusinessName() => $_has(7);
   @$pb.TagNumber(8)
   void clearBusinessName() => clearField(8);
   @$pb.TagNumber(8)
-  $1833.AdTextAsset ensureBusinessName() => $_ensure(7);
+  $1834.AdTextAsset ensureBusinessName() => $_ensure(7);
 
   /// Assets of type CallToActionAsset used for the "Call To Action" button.
   @$pb.TagNumber(9)
-  $core.List<$1833.AdCallToActionAsset> get callToActions => $_getList(8);
+  $core.List<$1834.AdCallToActionAsset> get callToActions => $_getList(8);
 }
 
 

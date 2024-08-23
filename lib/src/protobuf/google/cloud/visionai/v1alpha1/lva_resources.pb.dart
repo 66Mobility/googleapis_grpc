@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'lva.pb.dart' as $4726;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'lva.pb.dart' as $4728;
 
 /// Message describing the Analysis object.
 class Analysis extends $pb.GeneratedMessage {
   factory Analysis({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
-    $4726.AnalysisDefinition? analysisDefinition,
+    $4728.AnalysisDefinition? analysisDefinition,
     $core.Map<$core.String, $core.String>? inputStreamsMapping,
     $core.Map<$core.String, $core.String>? outputStreamsMapping,
   }) {
@@ -57,10 +57,10 @@ class Analysis extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Analysis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Analysis.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1alpha1'))
-    ..aOM<$4726.AnalysisDefinition>(5, _omitFieldNames ? '' : 'analysisDefinition', subBuilder: $4726.AnalysisDefinition.create)
+    ..aOM<$4728.AnalysisDefinition>(5, _omitFieldNames ? '' : 'analysisDefinition', subBuilder: $4728.AnalysisDefinition.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'inputStreamsMapping', entryClassName: 'Analysis.InputStreamsMappingEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1alpha1'))
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'outputStreamsMapping', entryClassName: 'Analysis.OutputStreamsMappingEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1alpha1'))
     ..hasRequiredFields = false
@@ -99,27 +99,27 @@ class Analysis extends $pb.GeneratedMessage {
 
   /// Output only. The create timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels as key value pairs.
   @$pb.TagNumber(4)
@@ -127,15 +127,15 @@ class Analysis extends $pb.GeneratedMessage {
 
   /// The definition of the analysis.
   @$pb.TagNumber(5)
-  $4726.AnalysisDefinition get analysisDefinition => $_getN(4);
+  $4728.AnalysisDefinition get analysisDefinition => $_getN(4);
   @$pb.TagNumber(5)
-  set analysisDefinition($4726.AnalysisDefinition v) { setField(5, v); }
+  set analysisDefinition($4728.AnalysisDefinition v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAnalysisDefinition() => $_has(4);
   @$pb.TagNumber(5)
   void clearAnalysisDefinition() => clearField(5);
   @$pb.TagNumber(5)
-  $4726.AnalysisDefinition ensureAnalysisDefinition() => $_ensure(4);
+  $4728.AnalysisDefinition ensureAnalysisDefinition() => $_ensure(4);
 
   /// Map from the input parameter in the definition to the real stream.
   /// E.g., suppose you had a stream source operator named "input-0" and you try

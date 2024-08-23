@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'annotated_string.pb.dart' as $4471;
+import 'annotated_string.pb.dart' as $4473;
 import 'auto_suggestion_service.pbenum.dart';
 
 export 'auto_suggestion_service.pbenum.dart';
@@ -292,7 +292,7 @@ class SuggestionInfo_MatchInfo extends $pb.GeneratedMessage {
 /// Detailed information about the suggestion.
 class SuggestionInfo extends $pb.GeneratedMessage {
   factory SuggestionInfo({
-    $4471.AnnotatedString? annotatedSuggestion,
+    $4473.AnnotatedString? annotatedSuggestion,
     $core.Iterable<SuggestionInfo_MatchInfo>? queryMatches,
   }) {
     final $result = create();
@@ -309,7 +309,7 @@ class SuggestionInfo extends $pb.GeneratedMessage {
   factory SuggestionInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataqna.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4471.AnnotatedString>(1, _omitFieldNames ? '' : 'annotatedSuggestion', subBuilder: $4471.AnnotatedString.create)
+    ..aOM<$4473.AnnotatedString>(1, _omitFieldNames ? '' : 'annotatedSuggestion', subBuilder: $4473.AnnotatedString.create)
     ..pc<SuggestionInfo_MatchInfo>(2, _omitFieldNames ? '' : 'queryMatches', $pb.PbFieldType.PM, subBuilder: SuggestionInfo_MatchInfo.create)
     ..hasRequiredFields = false
   ;
@@ -338,15 +338,15 @@ class SuggestionInfo extends $pb.GeneratedMessage {
   /// Annotations for the suggestion. This provides information about which part
   /// of the suggestion corresponds to what semantic meaning (e.g. a metric).
   @$pb.TagNumber(1)
-  $4471.AnnotatedString get annotatedSuggestion => $_getN(0);
+  $4473.AnnotatedString get annotatedSuggestion => $_getN(0);
   @$pb.TagNumber(1)
-  set annotatedSuggestion($4471.AnnotatedString v) { setField(1, v); }
+  set annotatedSuggestion($4473.AnnotatedString v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAnnotatedSuggestion() => $_has(0);
   @$pb.TagNumber(1)
   void clearAnnotatedSuggestion() => clearField(1);
   @$pb.TagNumber(1)
-  $4471.AnnotatedString ensureAnnotatedSuggestion() => $_ensure(0);
+  $4473.AnnotatedString ensureAnnotatedSuggestion() => $_ensure(0);
 
   /// Matches between user query and the annotated string.
   @$pb.TagNumber(2)

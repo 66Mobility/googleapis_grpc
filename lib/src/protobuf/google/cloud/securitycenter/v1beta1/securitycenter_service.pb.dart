@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'asset.pb.dart' as $4648;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'asset.pb.dart' as $4650;
 import 'finding.pb.dart' as $1359;
 import 'finding.pbenum.dart' as $1359;
 import 'organization_settings.pb.dart' as $1360;
@@ -299,8 +299,8 @@ class GroupAssetsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? filter,
     $core.String? groupBy,
-    $1737.Duration? compareDuration,
-    $1775.Timestamp? readTime,
+    $1738.Duration? compareDuration,
+    $1776.Timestamp? readTime,
     $core.String? pageToken,
     $core.int? pageSize,
   }) {
@@ -336,8 +336,8 @@ class GroupAssetsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..aOS(3, _omitFieldNames ? '' : 'groupBy')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'compareDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'compareDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(8, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -456,30 +456,30 @@ class GroupAssetsRequest extends $pb.GeneratedMessage {
   ///
   ///  This field is ignored if `state` is not a field in `group_by`.
   @$pb.TagNumber(4)
-  $1737.Duration get compareDuration => $_getN(3);
+  $1738.Duration get compareDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set compareDuration($1737.Duration v) { setField(4, v); }
+  set compareDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCompareDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearCompareDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureCompareDuration() => $_ensure(3);
+  $1738.Duration ensureCompareDuration() => $_ensure(3);
 
   /// Time used as a reference point when filtering assets. The filter is limited
   /// to assets existing at the supplied time and their values are those at that
   /// specific time. Absence of this field will default to the API's version of
   /// NOW.
   @$pb.TagNumber(5)
-  $1775.Timestamp get readTime => $_getN(4);
+  $1776.Timestamp get readTime => $_getN(4);
   @$pb.TagNumber(5)
-  set readTime($1775.Timestamp v) { setField(5, v); }
+  set readTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureReadTime() => $_ensure(4);
+  $1776.Timestamp ensureReadTime() => $_ensure(4);
 
   /// The value returned by the last `GroupAssetsResponse`; indicates
   /// that this is a continuation of a prior `GroupAssets` call, and that the
@@ -509,7 +509,7 @@ class GroupAssetsRequest extends $pb.GeneratedMessage {
 class GroupAssetsResponse extends $pb.GeneratedMessage {
   factory GroupAssetsResponse({
     $core.Iterable<GroupResult>? groupByResults,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -530,7 +530,7 @@ class GroupAssetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GroupAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..pc<GroupResult>(1, _omitFieldNames ? '' : 'groupByResults', $pb.PbFieldType.PM, subBuilder: GroupResult.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -564,15 +564,15 @@ class GroupAssetsResponse extends $pb.GeneratedMessage {
 
   /// Time used for executing the groupBy request.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   /// Token to retrieve the next page of results, or empty if there are no more
   /// results.
@@ -592,7 +592,7 @@ class GroupFindingsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? filter,
     $core.String? groupBy,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.String? pageToken,
     $core.int? pageSize,
   }) {
@@ -625,7 +625,7 @@ class GroupFindingsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..aOS(3, _omitFieldNames ? '' : 'groupBy')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -724,15 +724,15 @@ class GroupFindingsRequest extends $pb.GeneratedMessage {
   /// those at that specific time. Absence of this field will default to the
   /// API's version of NOW.
   @$pb.TagNumber(4)
-  $1775.Timestamp get readTime => $_getN(3);
+  $1776.Timestamp get readTime => $_getN(3);
   @$pb.TagNumber(4)
-  set readTime($1775.Timestamp v) { setField(4, v); }
+  set readTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureReadTime() => $_ensure(3);
+  $1776.Timestamp ensureReadTime() => $_ensure(3);
 
   /// The value returned by the last `GroupFindingsResponse`; indicates
   /// that this is a continuation of a prior `GroupFindings` call, and
@@ -762,7 +762,7 @@ class GroupFindingsRequest extends $pb.GeneratedMessage {
 class GroupFindingsResponse extends $pb.GeneratedMessage {
   factory GroupFindingsResponse({
     $core.Iterable<GroupResult>? groupByResults,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -783,7 +783,7 @@ class GroupFindingsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GroupFindingsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..pc<GroupResult>(1, _omitFieldNames ? '' : 'groupByResults', $pb.PbFieldType.PM, subBuilder: GroupResult.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -817,15 +817,15 @@ class GroupFindingsResponse extends $pb.GeneratedMessage {
 
   /// Time used for executing the groupBy request.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   /// Token to retrieve the next page of results, or empty if there are no more
   /// results.
@@ -842,7 +842,7 @@ class GroupFindingsResponse extends $pb.GeneratedMessage {
 /// Result containing the properties and count of a groupBy request.
 class GroupResult extends $pb.GeneratedMessage {
   factory GroupResult({
-    $core.Map<$core.String, $1734.Value>? properties,
+    $core.Map<$core.String, $1735.Value>? properties,
     $fixnum.Int64? count,
   }) {
     final $result = create();
@@ -859,7 +859,7 @@ class GroupResult extends $pb.GeneratedMessage {
   factory GroupResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GroupResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
-    ..m<$core.String, $1734.Value>(1, _omitFieldNames ? '' : 'properties', entryClassName: 'GroupResult.PropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v1beta1'))
+    ..m<$core.String, $1735.Value>(1, _omitFieldNames ? '' : 'properties', entryClassName: 'GroupResult.PropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v1beta1'))
     ..aInt64(2, _omitFieldNames ? '' : 'count')
     ..hasRequiredFields = false
   ;
@@ -887,7 +887,7 @@ class GroupResult extends $pb.GeneratedMessage {
 
   /// Properties matching the groupBy fields in the request.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $1734.Value> get properties => $_getMap(0);
+  $core.Map<$core.String, $1735.Value> get properties => $_getMap(0);
 
   /// Total count of resources for the given properties.
   @$pb.TagNumber(2)
@@ -1054,9 +1054,9 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? filter,
     $core.String? orderBy,
-    $1775.Timestamp? readTime,
-    $1737.Duration? compareDuration,
-    $2209.FieldMask? fieldMask,
+    $1776.Timestamp? readTime,
+    $1738.Duration? compareDuration,
+    $2210.FieldMask? fieldMask,
     $core.String? pageToken,
     $core.int? pageSize,
   }) {
@@ -1095,9 +1095,9 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..aOS(3, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'compareDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$2209.FieldMask>(7, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'compareDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$2210.FieldMask>(7, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOS(8, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -1193,15 +1193,15 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
   /// specific time. Absence of this field will default to the API's version of
   /// NOW.
   @$pb.TagNumber(4)
-  $1775.Timestamp get readTime => $_getN(3);
+  $1776.Timestamp get readTime => $_getN(3);
   @$pb.TagNumber(4)
-  set readTime($1775.Timestamp v) { setField(4, v); }
+  set readTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureReadTime() => $_ensure(3);
+  $1776.Timestamp ensureReadTime() => $_ensure(3);
 
   ///  When compare_duration is set, the ListAssetResult's "state" attribute is
   ///  updated to indicate whether the asset was added, removed, or remained
@@ -1227,29 +1227,29 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
   ///  If compare_duration is not specified, then the only possible state is
   ///  "UNUSED", which indicates that the asset is present at read_time.
   @$pb.TagNumber(5)
-  $1737.Duration get compareDuration => $_getN(4);
+  $1738.Duration get compareDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set compareDuration($1737.Duration v) { setField(5, v); }
+  set compareDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCompareDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearCompareDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureCompareDuration() => $_ensure(4);
+  $1738.Duration ensureCompareDuration() => $_ensure(4);
 
   /// Optional. A field mask to specify the ListAssetsResult fields to be listed in the
   /// response.
   /// An empty field mask will list all fields.
   @$pb.TagNumber(7)
-  $2209.FieldMask get fieldMask => $_getN(5);
+  $2210.FieldMask get fieldMask => $_getN(5);
   @$pb.TagNumber(7)
-  set fieldMask($2209.FieldMask v) { setField(7, v); }
+  set fieldMask($2210.FieldMask v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFieldMask() => $_has(5);
   @$pb.TagNumber(7)
   void clearFieldMask() => clearField(7);
   @$pb.TagNumber(7)
-  $2209.FieldMask ensureFieldMask() => $_ensure(5);
+  $2210.FieldMask ensureFieldMask() => $_ensure(5);
 
   /// The value returned by the last `ListAssetsResponse`; indicates
   /// that this is a continuation of a prior `ListAssets` call, and
@@ -1278,7 +1278,7 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
 /// Result containing the Asset and its State.
 class ListAssetsResponse_ListAssetsResult extends $pb.GeneratedMessage {
   factory ListAssetsResponse_ListAssetsResult({
-    $4648.Asset? asset,
+    $4650.Asset? asset,
     ListAssetsResponse_ListAssetsResult_State? state,
   }) {
     final $result = create();
@@ -1295,7 +1295,7 @@ class ListAssetsResponse_ListAssetsResult extends $pb.GeneratedMessage {
   factory ListAssetsResponse_ListAssetsResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAssetsResponse.ListAssetsResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4648.Asset>(1, _omitFieldNames ? '' : 'asset', subBuilder: $4648.Asset.create)
+    ..aOM<$4650.Asset>(1, _omitFieldNames ? '' : 'asset', subBuilder: $4650.Asset.create)
     ..e<ListAssetsResponse_ListAssetsResult_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ListAssetsResponse_ListAssetsResult_State.STATE_UNSPECIFIED, valueOf: ListAssetsResponse_ListAssetsResult_State.valueOf, enumValues: ListAssetsResponse_ListAssetsResult_State.values)
     ..hasRequiredFields = false
   ;
@@ -1323,15 +1323,15 @@ class ListAssetsResponse_ListAssetsResult extends $pb.GeneratedMessage {
 
   /// Asset matching the search request.
   @$pb.TagNumber(1)
-  $4648.Asset get asset => $_getN(0);
+  $4650.Asset get asset => $_getN(0);
   @$pb.TagNumber(1)
-  set asset($4648.Asset v) { setField(1, v); }
+  set asset($4650.Asset v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAsset() => $_has(0);
   @$pb.TagNumber(1)
   void clearAsset() => clearField(1);
   @$pb.TagNumber(1)
-  $4648.Asset ensureAsset() => $_ensure(0);
+  $4650.Asset ensureAsset() => $_ensure(0);
 
   /// State of the asset.
   @$pb.TagNumber(2)
@@ -1348,7 +1348,7 @@ class ListAssetsResponse_ListAssetsResult extends $pb.GeneratedMessage {
 class ListAssetsResponse extends $pb.GeneratedMessage {
   factory ListAssetsResponse({
     $core.Iterable<ListAssetsResponse_ListAssetsResult>? listAssetsResults,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -1373,7 +1373,7 @@ class ListAssetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..pc<ListAssetsResponse_ListAssetsResult>(1, _omitFieldNames ? '' : 'listAssetsResults', $pb.PbFieldType.PM, subBuilder: ListAssetsResponse_ListAssetsResult.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -1406,15 +1406,15 @@ class ListAssetsResponse extends $pb.GeneratedMessage {
 
   /// Time used for executing the list request.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   /// Token to retrieve the next page of results, or empty if there are no more
   /// results.
@@ -1444,8 +1444,8 @@ class ListFindingsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? filter,
     $core.String? orderBy,
-    $1775.Timestamp? readTime,
-    $2209.FieldMask? fieldMask,
+    $1776.Timestamp? readTime,
+    $2210.FieldMask? fieldMask,
     $core.String? pageToken,
     $core.int? pageSize,
   }) {
@@ -1481,8 +1481,8 @@ class ListFindingsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..aOS(3, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOS(6, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -1578,28 +1578,28 @@ class ListFindingsRequest extends $pb.GeneratedMessage {
   /// those at that specific time. Absence of this field will default to the
   /// API's version of NOW.
   @$pb.TagNumber(4)
-  $1775.Timestamp get readTime => $_getN(3);
+  $1776.Timestamp get readTime => $_getN(3);
   @$pb.TagNumber(4)
-  set readTime($1775.Timestamp v) { setField(4, v); }
+  set readTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureReadTime() => $_ensure(3);
+  $1776.Timestamp ensureReadTime() => $_ensure(3);
 
   /// Optional. A field mask to specify the Finding fields to be listed in the response.
   /// An empty field mask will list all fields.
   @$pb.TagNumber(5)
-  $2209.FieldMask get fieldMask => $_getN(4);
+  $2210.FieldMask get fieldMask => $_getN(4);
   @$pb.TagNumber(5)
-  set fieldMask($2209.FieldMask v) { setField(5, v); }
+  set fieldMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFieldMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearFieldMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureFieldMask() => $_ensure(4);
+  $2210.FieldMask ensureFieldMask() => $_ensure(4);
 
   /// The value returned by the last `ListFindingsResponse`; indicates
   /// that this is a continuation of a prior `ListFindings` call, and
@@ -1629,7 +1629,7 @@ class ListFindingsRequest extends $pb.GeneratedMessage {
 class ListFindingsResponse extends $pb.GeneratedMessage {
   factory ListFindingsResponse({
     $core.Iterable<$1359.Finding>? findings,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -1654,7 +1654,7 @@ class ListFindingsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListFindingsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..pc<$1359.Finding>(1, _omitFieldNames ? '' : 'findings', $pb.PbFieldType.PM, subBuilder: $1359.Finding.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -1687,15 +1687,15 @@ class ListFindingsResponse extends $pb.GeneratedMessage {
 
   /// Time used for executing the list request.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   /// Token to retrieve the next page of results, or empty if there are no more
   /// results.
@@ -1724,7 +1724,7 @@ class SetFindingStateRequest extends $pb.GeneratedMessage {
   factory SetFindingStateRequest({
     $core.String? name,
     $1359.Finding_State? state,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1745,7 +1745,7 @@ class SetFindingStateRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetFindingStateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<$1359.Finding_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $1359.Finding_State.STATE_UNSPECIFIED, valueOf: $1359.Finding_State.valueOf, enumValues: $1359.Finding_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1795,15 +1795,15 @@ class SetFindingStateRequest extends $pb.GeneratedMessage {
 
   /// Required. The time at which the updated state takes effect.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 }
 
 /// Request message for running asset discovery for an organization.
@@ -1863,7 +1863,7 @@ class RunAssetDiscoveryRequest extends $pb.GeneratedMessage {
 class UpdateFindingRequest extends $pb.GeneratedMessage {
   factory UpdateFindingRequest({
     $1359.Finding? finding,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (finding != null) {
@@ -1880,7 +1880,7 @@ class UpdateFindingRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFindingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..aOM<$1359.Finding>(1, _omitFieldNames ? '' : 'finding', subBuilder: $1359.Finding.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1925,22 +1925,22 @@ class UpdateFindingRequest extends $pb.GeneratedMessage {
   /// The FieldMask to use when updating the finding resource. This field should
   /// not be specified when creating a finding.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating an organization's settings.
 class UpdateOrganizationSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateOrganizationSettingsRequest({
     $1360.OrganizationSettings? organizationSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (organizationSettings != null) {
@@ -1957,7 +1957,7 @@ class UpdateOrganizationSettingsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateOrganizationSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..aOM<$1360.OrganizationSettings>(1, _omitFieldNames ? '' : 'organizationSettings', subBuilder: $1360.OrganizationSettings.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1996,22 +1996,22 @@ class UpdateOrganizationSettingsRequest extends $pb.GeneratedMessage {
 
   /// The FieldMask to use when updating the settings resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating a source.
 class UpdateSourceRequest extends $pb.GeneratedMessage {
   factory UpdateSourceRequest({
     $1358.Source? source,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (source != null) {
@@ -2028,7 +2028,7 @@ class UpdateSourceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..aOM<$1358.Source>(1, _omitFieldNames ? '' : 'source', subBuilder: $1358.Source.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2067,23 +2067,23 @@ class UpdateSourceRequest extends $pb.GeneratedMessage {
 
   /// The FieldMask to use when updating the source resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating a SecurityMarks resource.
 class UpdateSecurityMarksRequest extends $pb.GeneratedMessage {
   factory UpdateSecurityMarksRequest({
     $1361.SecurityMarks? securityMarks,
-    $2209.FieldMask? updateMask,
-    $1775.Timestamp? startTime,
+    $2210.FieldMask? updateMask,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (securityMarks != null) {
@@ -2103,8 +2103,8 @@ class UpdateSecurityMarksRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSecurityMarksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1beta1'), createEmptyInstance: create)
     ..aOM<$1361.SecurityMarks>(1, _omitFieldNames ? '' : 'securityMarks', subBuilder: $1361.SecurityMarks.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2143,27 +2143,27 @@ class UpdateSecurityMarksRequest extends $pb.GeneratedMessage {
 
   /// The FieldMask to use when updating the security marks resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// The time at which the updated SecurityMarks take effect.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 }
 
 

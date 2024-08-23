@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'application.pbenum.dart';
-import 'attributes.pb.dart' as $4322;
+import 'attributes.pb.dart' as $4323;
 
 export 'application.pbenum.dart';
 
@@ -28,9 +28,9 @@ class Application extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $4322.Attributes? attributes,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $4323.Attributes? attributes,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Scope? scope,
     $core.String? uid,
     Application_State? state,
@@ -73,9 +73,9 @@ class Application extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$4322.Attributes>(4, _omitFieldNames ? '' : 'attributes', subBuilder: $4322.Attributes.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4323.Attributes>(4, _omitFieldNames ? '' : 'attributes', subBuilder: $4323.Attributes.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Scope>(9, _omitFieldNames ? '' : 'scope', subBuilder: Scope.create)
     ..aOS(10, _omitFieldNames ? '' : 'uid')
     ..e<Application_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Application_State.STATE_UNSPECIFIED, valueOf: Application_State.valueOf, enumValues: Application_State.values)
@@ -138,39 +138,39 @@ class Application extends $pb.GeneratedMessage {
 
   /// Optional. Consumer provided attributes.
   @$pb.TagNumber(4)
-  $4322.Attributes get attributes => $_getN(3);
+  $4323.Attributes get attributes => $_getN(3);
   @$pb.TagNumber(4)
-  set attributes($4322.Attributes v) { setField(4, v); }
+  set attributes($4323.Attributes v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAttributes() => $_has(3);
   @$pb.TagNumber(4)
   void clearAttributes() => clearField(4);
   @$pb.TagNumber(4)
-  $4322.Attributes ensureAttributes() => $_ensure(3);
+  $4323.Attributes ensureAttributes() => $_ensure(3);
 
   /// Output only. Create time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Update time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Required. Immutable. Defines what data can be included into this
   /// Application. Limits which Services and Workloads can be registered.

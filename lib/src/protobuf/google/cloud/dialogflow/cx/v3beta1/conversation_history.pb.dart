@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'conversation_history.pbenum.dart';
 import 'environment.pb.dart' as $877;
 import 'flow.pb.dart' as $865;
@@ -586,9 +586,9 @@ class Conversation_Metrics_MatchTypeCount extends $pb.GeneratedMessage {
 class Conversation_Metrics extends $pb.GeneratedMessage {
   factory Conversation_Metrics({
     $core.int? interactionCount,
-    $1737.Duration? inputAudioDuration,
-    $1737.Duration? outputAudioDuration,
-    $1737.Duration? maxWebhookLatency,
+    $1738.Duration? inputAudioDuration,
+    $1738.Duration? outputAudioDuration,
+    $1738.Duration? maxWebhookLatency,
     $core.bool? hasEndInteraction,
     $core.bool? hasLiveAgentHandoff,
     $core.double? averageMatchConfidence,
@@ -631,9 +631,9 @@ class Conversation_Metrics extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Conversation.Metrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'interactionCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'inputAudioDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'outputAudioDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'maxWebhookLatency', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'inputAudioDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'outputAudioDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'maxWebhookLatency', subBuilder: $1738.Duration.create)
     ..aOB(5, _omitFieldNames ? '' : 'hasEndInteraction')
     ..aOB(6, _omitFieldNames ? '' : 'hasLiveAgentHandoff')
     ..a<$core.double>(7, _omitFieldNames ? '' : 'averageMatchConfidence', $pb.PbFieldType.OF)
@@ -675,41 +675,41 @@ class Conversation_Metrics extends $pb.GeneratedMessage {
 
   /// Duration of all the input's audio in the conversation.
   @$pb.TagNumber(2)
-  $1737.Duration get inputAudioDuration => $_getN(1);
+  $1738.Duration get inputAudioDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set inputAudioDuration($1737.Duration v) { setField(2, v); }
+  set inputAudioDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInputAudioDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearInputAudioDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureInputAudioDuration() => $_ensure(1);
+  $1738.Duration ensureInputAudioDuration() => $_ensure(1);
 
   /// Duration of all the output's audio in the conversation.
   @$pb.TagNumber(3)
-  $1737.Duration get outputAudioDuration => $_getN(2);
+  $1738.Duration get outputAudioDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set outputAudioDuration($1737.Duration v) { setField(3, v); }
+  set outputAudioDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOutputAudioDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearOutputAudioDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureOutputAudioDuration() => $_ensure(2);
+  $1738.Duration ensureOutputAudioDuration() => $_ensure(2);
 
   /// Maximum latency of the
   /// [Webhook][google.cloud.dialogflow.cx.v3beta1.Webhook] calls in the
   /// conversation.
   @$pb.TagNumber(4)
-  $1737.Duration get maxWebhookLatency => $_getN(3);
+  $1738.Duration get maxWebhookLatency => $_getN(3);
   @$pb.TagNumber(4)
-  set maxWebhookLatency($1737.Duration v) { setField(4, v); }
+  set maxWebhookLatency($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxWebhookLatency() => $_has(3);
   @$pb.TagNumber(4)
   void clearMaxWebhookLatency() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureMaxWebhookLatency() => $_ensure(3);
+  $1738.Duration ensureMaxWebhookLatency() => $_ensure(3);
 
   /// A signal that indicates the interaction with the Dialogflow agent has
   /// ended.
@@ -855,7 +855,7 @@ class Conversation_Interaction extends $pb.GeneratedMessage {
     $core.Iterable<$873.DetectIntentResponse>? partialResponses,
     $core.String? requestUtterances,
     $core.String? responseUtterances,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Conversation_Interaction_MissingTransition? missingTransition,
   }) {
     final $result = create();
@@ -892,7 +892,7 @@ class Conversation_Interaction extends $pb.GeneratedMessage {
     ..pc<$873.DetectIntentResponse>(3, _omitFieldNames ? '' : 'partialResponses', $pb.PbFieldType.PM, subBuilder: $873.DetectIntentResponse.create)
     ..aOS(4, _omitFieldNames ? '' : 'requestUtterances')
     ..aOS(5, _omitFieldNames ? '' : 'responseUtterances')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Conversation_Interaction_MissingTransition>(8, _omitFieldNames ? '' : 'missingTransition', subBuilder: Conversation_Interaction_MissingTransition.create)
     ..hasRequiredFields = false
   ;
@@ -974,15 +974,15 @@ class Conversation_Interaction extends $pb.GeneratedMessage {
 
   /// The time that the interaction was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Missing transition predicted for the interaction. This field is set only
   /// if the interaction match type was no-match.
@@ -1004,8 +1004,8 @@ class Conversation extends $pb.GeneratedMessage {
     $core.String? name,
     Conversation_Type? type,
     $core.String? languageCode,
-    $1775.Timestamp? startTime,
-    $1737.Duration? duration,
+    $1776.Timestamp? startTime,
+    $1738.Duration? duration,
     Conversation_Metrics? metrics,
     $core.Iterable<$869.Intent>? intents,
     $core.Iterable<$865.Flow>? flows,
@@ -1061,8 +1061,8 @@ class Conversation extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<Conversation_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Conversation_Type.TYPE_UNSPECIFIED, valueOf: Conversation_Type.valueOf, enumValues: Conversation_Type.values)
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aOM<Conversation_Metrics>(6, _omitFieldNames ? '' : 'metrics', subBuilder: Conversation_Metrics.create)
     ..pc<$869.Intent>(7, _omitFieldNames ? '' : 'intents', $pb.PbFieldType.PM, subBuilder: $869.Intent.create)
     ..pc<$865.Flow>(8, _omitFieldNames ? '' : 'flows', $pb.PbFieldType.PM, subBuilder: $865.Flow.create)
@@ -1132,27 +1132,27 @@ class Conversation extends $pb.GeneratedMessage {
   /// Start time of the conversation, which is the time of the first request of
   /// the conversation.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Duration of the conversation.
   @$pb.TagNumber(5)
-  $1737.Duration get duration => $_getN(4);
+  $1738.Duration get duration => $_getN(4);
   @$pb.TagNumber(5)
-  set duration($1737.Duration v) { setField(5, v); }
+  set duration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureDuration() => $_ensure(4);
+  $1738.Duration ensureDuration() => $_ensure(4);
 
   /// Conversation metrics.
   @$pb.TagNumber(6)

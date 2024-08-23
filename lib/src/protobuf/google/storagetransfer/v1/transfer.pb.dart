@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $2209;
+import '../../protobuf/field_mask.pb.dart' as $2210;
 import 'transfer_types.pb.dart' as $1730;
 
 /// Request passed to GetGoogleServiceAccount.
@@ -129,7 +129,7 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
     $core.String? jobName,
     $core.String? projectId,
     $1730.TransferJob? transferJob,
-    $2209.FieldMask? updateTransferJobFieldMask,
+    $2210.FieldMask? updateTransferJobFieldMask,
   }) {
     final $result = create();
     if (jobName != null) {
@@ -154,7 +154,7 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'jobName')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOM<$1730.TransferJob>(3, _omitFieldNames ? '' : 'transferJob', subBuilder: $1730.TransferJob.create)
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateTransferJobFieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateTransferJobFieldMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -235,15 +235,15 @@ class UpdateTransferJobRequest extends $pb.GeneratedMessage {
   /// rejected with the error
   /// [INVALID_ARGUMENT][google.rpc.Code.INVALID_ARGUMENT].
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateTransferJobFieldMask => $_getN(3);
+  $2210.FieldMask get updateTransferJobFieldMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTransferJobFieldMask($2209.FieldMask v) { setField(4, v); }
+  set updateTransferJobFieldMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTransferJobFieldMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTransferJobFieldMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateTransferJobFieldMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateTransferJobFieldMask() => $_ensure(3);
 }
 
 /// Request passed to GetTransferJob.
@@ -810,7 +810,7 @@ class CreateAgentPoolRequest extends $pb.GeneratedMessage {
 class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   factory UpdateAgentPoolRequest({
     $1730.AgentPool? agentPool,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (agentPool != null) {
@@ -827,7 +827,7 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAgentPoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
     ..aOM<$1730.AgentPool>(1, _omitFieldNames ? '' : 'agentPool', subBuilder: $1730.AgentPool.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -882,15 +882,15 @@ class UpdateAgentPoolRequest extends $pb.GeneratedMessage {
   ///
   ///  *  [bandwidth_limit][google.storagetransfer.v1.AgentPool.bandwidth_limit]
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Specifies the request passed to GetAgentPool.

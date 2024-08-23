@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'content.pb.dart' as $4293;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'content.pb.dart' as $4294;
 
 /// Request message for ComputeTokens RPC call.
 class ComputeTokensRequest extends $pb.GeneratedMessage {
   factory ComputeTokensRequest({
     $core.String? endpoint,
-    $core.Iterable<$1734.Value>? instances,
+    $core.Iterable<$1735.Value>? instances,
     $core.String? model,
-    $core.Iterable<$4293.Content>? contents,
+    $core.Iterable<$4294.Content>? contents,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -46,9 +46,9 @@ class ComputeTokensRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeTokensRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
-    ..pc<$1734.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'model')
-    ..pc<$4293.Content>(4, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4293.Content.create)
+    ..pc<$4294.Content>(4, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4294.Content.create)
     ..hasRequiredFields = false
   ;
 
@@ -88,7 +88,7 @@ class ComputeTokensRequest extends $pb.GeneratedMessage {
   /// Schema is identical to the prediction schema of the text model, even for
   /// the non-text models, like chat models, or Codey models.
   @$pb.TagNumber(2)
-  $core.List<$1734.Value> get instances => $_getList(1);
+  $core.List<$1735.Value> get instances => $_getList(1);
 
   /// Optional. The name of the publisher model requested to serve the
   /// prediction. Format:
@@ -104,7 +104,7 @@ class ComputeTokensRequest extends $pb.GeneratedMessage {
 
   /// Optional. Input content.
   @$pb.TagNumber(4)
-  $core.List<$4293.Content> get contents => $_getList(3);
+  $core.List<$4294.Content> get contents => $_getList(3);
 }
 
 /// Tokens info with a list of tokens and the corresponding list of token ids.

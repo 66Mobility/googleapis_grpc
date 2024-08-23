@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'geometry.pb.dart' as $4329;
+import 'geometry.pb.dart' as $4330;
 
 /// Annotation details for image object detection.
 class ImageObjectDetectionAnnotation extends $pb.GeneratedMessage {
   factory ImageObjectDetectionAnnotation({
-    $4329.BoundingPoly? boundingBox,
+    $4330.BoundingPoly? boundingBox,
     $core.double? score,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class ImageObjectDetectionAnnotation extends $pb.GeneratedMessage {
   factory ImageObjectDetectionAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageObjectDetectionAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1'), createEmptyInstance: create)
-    ..aOM<$4329.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4329.BoundingPoly.create)
+    ..aOM<$4330.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4330.BoundingPoly.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -63,15 +63,15 @@ class ImageObjectDetectionAnnotation extends $pb.GeneratedMessage {
 
   /// Output only. The rectangle representing the object location.
   @$pb.TagNumber(1)
-  $4329.BoundingPoly get boundingBox => $_getN(0);
+  $4330.BoundingPoly get boundingBox => $_getN(0);
   @$pb.TagNumber(1)
-  set boundingBox($4329.BoundingPoly v) { setField(1, v); }
+  set boundingBox($4330.BoundingPoly v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBoundingBox() => $_has(0);
   @$pb.TagNumber(1)
   void clearBoundingBox() => clearField(1);
   @$pb.TagNumber(1)
-  $4329.BoundingPoly ensureBoundingBox() => $_ensure(0);
+  $4330.BoundingPoly ensureBoundingBox() => $_ensure(0);
 
   /// Output only. The confidence that this annotation is positive for the parent example,
   /// value in [0, 1], higher means higher positivity confidence.

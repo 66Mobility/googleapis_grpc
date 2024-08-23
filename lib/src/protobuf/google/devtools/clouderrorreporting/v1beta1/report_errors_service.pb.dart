@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'common.pb.dart' as $1566;
 
 /// A request for reporting an individual error event.
@@ -127,7 +127,7 @@ class ReportErrorEventResponse extends $pb.GeneratedMessage {
 /// An error event which is reported to the Error Reporting system.
 class ReportedErrorEvent extends $pb.GeneratedMessage {
   factory ReportedErrorEvent({
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     $1566.ServiceContext? serviceContext,
     $core.String? message,
     $1566.ErrorContext? context,
@@ -152,7 +152,7 @@ class ReportedErrorEvent extends $pb.GeneratedMessage {
   factory ReportedErrorEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportedErrorEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.clouderrorreporting.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$1566.ServiceContext>(2, _omitFieldNames ? '' : 'serviceContext', subBuilder: $1566.ServiceContext.create)
     ..aOS(3, _omitFieldNames ? '' : 'message')
     ..aOM<$1566.ErrorContext>(4, _omitFieldNames ? '' : 'context', subBuilder: $1566.ErrorContext.create)
@@ -188,15 +188,15 @@ class ReportedErrorEvent extends $pb.GeneratedMessage {
   /// the past, or be more than 24 hours in the future.
   /// If an invalid time is provided, then an error is returned.
   @$pb.TagNumber(1)
-  $1775.Timestamp get eventTime => $_getN(0);
+  $1776.Timestamp get eventTime => $_getN(0);
   @$pb.TagNumber(1)
-  set eventTime($1775.Timestamp v) { setField(1, v); }
+  set eventTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEventTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEventTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEventTime() => $_ensure(0);
+  $1776.Timestamp ensureEventTime() => $_ensure(0);
 
   /// Required. The service context in which this error has occurred.
   @$pb.TagNumber(2)

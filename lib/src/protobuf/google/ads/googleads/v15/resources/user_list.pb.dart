@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/user_lists.pb.dart' as $2342;
-import '../enums/access_reason.pbenum.dart' as $2347;
-import '../enums/user_list_access_status.pbenum.dart' as $2348;
-import '../enums/user_list_closing_reason.pbenum.dart' as $2346;
-import '../enums/user_list_membership_status.pbenum.dart' as $2343;
-import '../enums/user_list_size_range.pbenum.dart' as $2344;
-import '../enums/user_list_type.pbenum.dart' as $2345;
+import '../common/user_lists.pb.dart' as $2343;
+import '../enums/access_reason.pbenum.dart' as $2348;
+import '../enums/user_list_access_status.pbenum.dart' as $2349;
+import '../enums/user_list_closing_reason.pbenum.dart' as $2347;
+import '../enums/user_list_membership_status.pbenum.dart' as $2344;
+import '../enums/user_list_size_range.pbenum.dart' as $2345;
+import '../enums/user_list_type.pbenum.dart' as $2346;
 
 enum UserList_UserList {
   crmBasedUserList, 
@@ -36,18 +36,18 @@ enum UserList_UserList {
 class UserList extends $pb.GeneratedMessage {
   factory UserList({
     $core.String? resourceName,
-    $2343.UserListMembershipStatusEnum_UserListMembershipStatus? membershipStatus,
-    $2344.UserListSizeRangeEnum_UserListSizeRange? sizeRangeForDisplay,
-    $2344.UserListSizeRangeEnum_UserListSizeRange? sizeRangeForSearch,
-    $2345.UserListTypeEnum_UserListType? type,
-    $2346.UserListClosingReasonEnum_UserListClosingReason? closingReason,
-    $2347.AccessReasonEnum_AccessReason? accessReason,
-    $2348.UserListAccessStatusEnum_UserListAccessStatus? accountUserListStatus,
-    $2342.CrmBasedUserListInfo? crmBasedUserList,
-    $2342.SimilarUserListInfo? similarUserList,
-    $2342.RuleBasedUserListInfo? ruleBasedUserList,
-    $2342.LogicalUserListInfo? logicalUserList,
-    $2342.BasicUserListInfo? basicUserList,
+    $2344.UserListMembershipStatusEnum_UserListMembershipStatus? membershipStatus,
+    $2345.UserListSizeRangeEnum_UserListSizeRange? sizeRangeForDisplay,
+    $2345.UserListSizeRangeEnum_UserListSizeRange? sizeRangeForSearch,
+    $2346.UserListTypeEnum_UserListType? type,
+    $2347.UserListClosingReasonEnum_UserListClosingReason? closingReason,
+    $2348.AccessReasonEnum_AccessReason? accessReason,
+    $2349.UserListAccessStatusEnum_UserListAccessStatus? accountUserListStatus,
+    $2343.CrmBasedUserListInfo? crmBasedUserList,
+    $2343.SimilarUserListInfo? similarUserList,
+    $2343.RuleBasedUserListInfo? ruleBasedUserList,
+    $2343.LogicalUserListInfo? logicalUserList,
+    $2343.BasicUserListInfo? basicUserList,
     $core.int? matchRatePercentage,
     $fixnum.Int64? id,
     $core.bool? readOnly,
@@ -59,7 +59,7 @@ class UserList extends $pb.GeneratedMessage {
     $fixnum.Int64? sizeForSearch,
     $core.bool? eligibleForSearch,
     $core.bool? eligibleForDisplay,
-    $2342.LookalikeUserListInfo? lookalikeUserList,
+    $2343.LookalikeUserListInfo? lookalikeUserList,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -155,18 +155,18 @@ class UserList extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..oo(0, [19, 20, 21, 22, 23, 36])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2343.UserListMembershipStatusEnum_UserListMembershipStatus>(6, _omitFieldNames ? '' : 'membershipStatus', $pb.PbFieldType.OE, defaultOrMaker: $2343.UserListMembershipStatusEnum_UserListMembershipStatus.UNSPECIFIED, valueOf: $2343.UserListMembershipStatusEnum_UserListMembershipStatus.valueOf, enumValues: $2343.UserListMembershipStatusEnum_UserListMembershipStatus.values)
-    ..e<$2344.UserListSizeRangeEnum_UserListSizeRange>(10, _omitFieldNames ? '' : 'sizeRangeForDisplay', $pb.PbFieldType.OE, defaultOrMaker: $2344.UserListSizeRangeEnum_UserListSizeRange.UNSPECIFIED, valueOf: $2344.UserListSizeRangeEnum_UserListSizeRange.valueOf, enumValues: $2344.UserListSizeRangeEnum_UserListSizeRange.values)
-    ..e<$2344.UserListSizeRangeEnum_UserListSizeRange>(12, _omitFieldNames ? '' : 'sizeRangeForSearch', $pb.PbFieldType.OE, defaultOrMaker: $2344.UserListSizeRangeEnum_UserListSizeRange.UNSPECIFIED, valueOf: $2344.UserListSizeRangeEnum_UserListSizeRange.valueOf, enumValues: $2344.UserListSizeRangeEnum_UserListSizeRange.values)
-    ..e<$2345.UserListTypeEnum_UserListType>(13, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2345.UserListTypeEnum_UserListType.UNSPECIFIED, valueOf: $2345.UserListTypeEnum_UserListType.valueOf, enumValues: $2345.UserListTypeEnum_UserListType.values)
-    ..e<$2346.UserListClosingReasonEnum_UserListClosingReason>(14, _omitFieldNames ? '' : 'closingReason', $pb.PbFieldType.OE, defaultOrMaker: $2346.UserListClosingReasonEnum_UserListClosingReason.UNSPECIFIED, valueOf: $2346.UserListClosingReasonEnum_UserListClosingReason.valueOf, enumValues: $2346.UserListClosingReasonEnum_UserListClosingReason.values)
-    ..e<$2347.AccessReasonEnum_AccessReason>(15, _omitFieldNames ? '' : 'accessReason', $pb.PbFieldType.OE, defaultOrMaker: $2347.AccessReasonEnum_AccessReason.UNSPECIFIED, valueOf: $2347.AccessReasonEnum_AccessReason.valueOf, enumValues: $2347.AccessReasonEnum_AccessReason.values)
-    ..e<$2348.UserListAccessStatusEnum_UserListAccessStatus>(16, _omitFieldNames ? '' : 'accountUserListStatus', $pb.PbFieldType.OE, defaultOrMaker: $2348.UserListAccessStatusEnum_UserListAccessStatus.UNSPECIFIED, valueOf: $2348.UserListAccessStatusEnum_UserListAccessStatus.valueOf, enumValues: $2348.UserListAccessStatusEnum_UserListAccessStatus.values)
-    ..aOM<$2342.CrmBasedUserListInfo>(19, _omitFieldNames ? '' : 'crmBasedUserList', subBuilder: $2342.CrmBasedUserListInfo.create)
-    ..aOM<$2342.SimilarUserListInfo>(20, _omitFieldNames ? '' : 'similarUserList', subBuilder: $2342.SimilarUserListInfo.create)
-    ..aOM<$2342.RuleBasedUserListInfo>(21, _omitFieldNames ? '' : 'ruleBasedUserList', subBuilder: $2342.RuleBasedUserListInfo.create)
-    ..aOM<$2342.LogicalUserListInfo>(22, _omitFieldNames ? '' : 'logicalUserList', subBuilder: $2342.LogicalUserListInfo.create)
-    ..aOM<$2342.BasicUserListInfo>(23, _omitFieldNames ? '' : 'basicUserList', subBuilder: $2342.BasicUserListInfo.create)
+    ..e<$2344.UserListMembershipStatusEnum_UserListMembershipStatus>(6, _omitFieldNames ? '' : 'membershipStatus', $pb.PbFieldType.OE, defaultOrMaker: $2344.UserListMembershipStatusEnum_UserListMembershipStatus.UNSPECIFIED, valueOf: $2344.UserListMembershipStatusEnum_UserListMembershipStatus.valueOf, enumValues: $2344.UserListMembershipStatusEnum_UserListMembershipStatus.values)
+    ..e<$2345.UserListSizeRangeEnum_UserListSizeRange>(10, _omitFieldNames ? '' : 'sizeRangeForDisplay', $pb.PbFieldType.OE, defaultOrMaker: $2345.UserListSizeRangeEnum_UserListSizeRange.UNSPECIFIED, valueOf: $2345.UserListSizeRangeEnum_UserListSizeRange.valueOf, enumValues: $2345.UserListSizeRangeEnum_UserListSizeRange.values)
+    ..e<$2345.UserListSizeRangeEnum_UserListSizeRange>(12, _omitFieldNames ? '' : 'sizeRangeForSearch', $pb.PbFieldType.OE, defaultOrMaker: $2345.UserListSizeRangeEnum_UserListSizeRange.UNSPECIFIED, valueOf: $2345.UserListSizeRangeEnum_UserListSizeRange.valueOf, enumValues: $2345.UserListSizeRangeEnum_UserListSizeRange.values)
+    ..e<$2346.UserListTypeEnum_UserListType>(13, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2346.UserListTypeEnum_UserListType.UNSPECIFIED, valueOf: $2346.UserListTypeEnum_UserListType.valueOf, enumValues: $2346.UserListTypeEnum_UserListType.values)
+    ..e<$2347.UserListClosingReasonEnum_UserListClosingReason>(14, _omitFieldNames ? '' : 'closingReason', $pb.PbFieldType.OE, defaultOrMaker: $2347.UserListClosingReasonEnum_UserListClosingReason.UNSPECIFIED, valueOf: $2347.UserListClosingReasonEnum_UserListClosingReason.valueOf, enumValues: $2347.UserListClosingReasonEnum_UserListClosingReason.values)
+    ..e<$2348.AccessReasonEnum_AccessReason>(15, _omitFieldNames ? '' : 'accessReason', $pb.PbFieldType.OE, defaultOrMaker: $2348.AccessReasonEnum_AccessReason.UNSPECIFIED, valueOf: $2348.AccessReasonEnum_AccessReason.valueOf, enumValues: $2348.AccessReasonEnum_AccessReason.values)
+    ..e<$2349.UserListAccessStatusEnum_UserListAccessStatus>(16, _omitFieldNames ? '' : 'accountUserListStatus', $pb.PbFieldType.OE, defaultOrMaker: $2349.UserListAccessStatusEnum_UserListAccessStatus.UNSPECIFIED, valueOf: $2349.UserListAccessStatusEnum_UserListAccessStatus.valueOf, enumValues: $2349.UserListAccessStatusEnum_UserListAccessStatus.values)
+    ..aOM<$2343.CrmBasedUserListInfo>(19, _omitFieldNames ? '' : 'crmBasedUserList', subBuilder: $2343.CrmBasedUserListInfo.create)
+    ..aOM<$2343.SimilarUserListInfo>(20, _omitFieldNames ? '' : 'similarUserList', subBuilder: $2343.SimilarUserListInfo.create)
+    ..aOM<$2343.RuleBasedUserListInfo>(21, _omitFieldNames ? '' : 'ruleBasedUserList', subBuilder: $2343.RuleBasedUserListInfo.create)
+    ..aOM<$2343.LogicalUserListInfo>(22, _omitFieldNames ? '' : 'logicalUserList', subBuilder: $2343.LogicalUserListInfo.create)
+    ..aOM<$2343.BasicUserListInfo>(23, _omitFieldNames ? '' : 'basicUserList', subBuilder: $2343.BasicUserListInfo.create)
     ..a<$core.int>(24, _omitFieldNames ? '' : 'matchRatePercentage', $pb.PbFieldType.O3)
     ..aInt64(25, _omitFieldNames ? '' : 'id')
     ..aOB(26, _omitFieldNames ? '' : 'readOnly')
@@ -178,7 +178,7 @@ class UserList extends $pb.GeneratedMessage {
     ..aInt64(32, _omitFieldNames ? '' : 'sizeForSearch')
     ..aOB(33, _omitFieldNames ? '' : 'eligibleForSearch')
     ..aOB(34, _omitFieldNames ? '' : 'eligibleForDisplay')
-    ..aOM<$2342.LookalikeUserListInfo>(36, _omitFieldNames ? '' : 'lookalikeUserList', subBuilder: $2342.LookalikeUserListInfo.create)
+    ..aOM<$2343.LookalikeUserListInfo>(36, _omitFieldNames ? '' : 'lookalikeUserList', subBuilder: $2343.LookalikeUserListInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -223,9 +223,9 @@ class UserList extends $pb.GeneratedMessage {
   /// or active. Only open user lists can accumulate more users and can be
   /// targeted to.
   @$pb.TagNumber(6)
-  $2343.UserListMembershipStatusEnum_UserListMembershipStatus get membershipStatus => $_getN(1);
+  $2344.UserListMembershipStatusEnum_UserListMembershipStatus get membershipStatus => $_getN(1);
   @$pb.TagNumber(6)
-  set membershipStatus($2343.UserListMembershipStatusEnum_UserListMembershipStatus v) { setField(6, v); }
+  set membershipStatus($2344.UserListMembershipStatusEnum_UserListMembershipStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMembershipStatus() => $_has(1);
   @$pb.TagNumber(6)
@@ -236,9 +236,9 @@ class UserList extends $pb.GeneratedMessage {
   ///
   ///  This field is read-only.
   @$pb.TagNumber(10)
-  $2344.UserListSizeRangeEnum_UserListSizeRange get sizeRangeForDisplay => $_getN(2);
+  $2345.UserListSizeRangeEnum_UserListSizeRange get sizeRangeForDisplay => $_getN(2);
   @$pb.TagNumber(10)
-  set sizeRangeForDisplay($2344.UserListSizeRangeEnum_UserListSizeRange v) { setField(10, v); }
+  set sizeRangeForDisplay($2345.UserListSizeRangeEnum_UserListSizeRange v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSizeRangeForDisplay() => $_has(2);
   @$pb.TagNumber(10)
@@ -249,9 +249,9 @@ class UserList extends $pb.GeneratedMessage {
   ///
   ///  This field is read-only.
   @$pb.TagNumber(12)
-  $2344.UserListSizeRangeEnum_UserListSizeRange get sizeRangeForSearch => $_getN(3);
+  $2345.UserListSizeRangeEnum_UserListSizeRange get sizeRangeForSearch => $_getN(3);
   @$pb.TagNumber(12)
-  set sizeRangeForSearch($2344.UserListSizeRangeEnum_UserListSizeRange v) { setField(12, v); }
+  set sizeRangeForSearch($2345.UserListSizeRangeEnum_UserListSizeRange v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSizeRangeForSearch() => $_has(3);
   @$pb.TagNumber(12)
@@ -261,9 +261,9 @@ class UserList extends $pb.GeneratedMessage {
   ///
   ///  This field is read-only.
   @$pb.TagNumber(13)
-  $2345.UserListTypeEnum_UserListType get type => $_getN(4);
+  $2346.UserListTypeEnum_UserListType get type => $_getN(4);
   @$pb.TagNumber(13)
-  set type($2345.UserListTypeEnum_UserListType v) { setField(13, v); }
+  set type($2346.UserListTypeEnum_UserListType v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(13)
@@ -273,9 +273,9 @@ class UserList extends $pb.GeneratedMessage {
   /// only populated on lists that were automatically closed due to inactivity,
   /// and will be cleared once the list membership status becomes open.
   @$pb.TagNumber(14)
-  $2346.UserListClosingReasonEnum_UserListClosingReason get closingReason => $_getN(5);
+  $2347.UserListClosingReasonEnum_UserListClosingReason get closingReason => $_getN(5);
   @$pb.TagNumber(14)
-  set closingReason($2346.UserListClosingReasonEnum_UserListClosingReason v) { setField(14, v); }
+  set closingReason($2347.UserListClosingReasonEnum_UserListClosingReason v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasClosingReason() => $_has(5);
   @$pb.TagNumber(14)
@@ -286,9 +286,9 @@ class UserList extends $pb.GeneratedMessage {
   ///
   ///  This field is read-only.
   @$pb.TagNumber(15)
-  $2347.AccessReasonEnum_AccessReason get accessReason => $_getN(6);
+  $2348.AccessReasonEnum_AccessReason get accessReason => $_getN(6);
   @$pb.TagNumber(15)
-  set accessReason($2347.AccessReasonEnum_AccessReason v) { setField(15, v); }
+  set accessReason($2348.AccessReasonEnum_AccessReason v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasAccessReason() => $_has(6);
   @$pb.TagNumber(15)
@@ -299,9 +299,9 @@ class UserList extends $pb.GeneratedMessage {
   /// to revoke the share and make it DISABLED.
   /// The default value of this field is set to ENABLED.
   @$pb.TagNumber(16)
-  $2348.UserListAccessStatusEnum_UserListAccessStatus get accountUserListStatus => $_getN(7);
+  $2349.UserListAccessStatusEnum_UserListAccessStatus get accountUserListStatus => $_getN(7);
   @$pb.TagNumber(16)
-  set accountUserListStatus($2348.UserListAccessStatusEnum_UserListAccessStatus v) { setField(16, v); }
+  set accountUserListStatus($2349.UserListAccessStatusEnum_UserListAccessStatus v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasAccountUserListStatus() => $_has(7);
   @$pb.TagNumber(16)
@@ -309,64 +309,64 @@ class UserList extends $pb.GeneratedMessage {
 
   /// User list of CRM users provided by the advertiser.
   @$pb.TagNumber(19)
-  $2342.CrmBasedUserListInfo get crmBasedUserList => $_getN(8);
+  $2343.CrmBasedUserListInfo get crmBasedUserList => $_getN(8);
   @$pb.TagNumber(19)
-  set crmBasedUserList($2342.CrmBasedUserListInfo v) { setField(19, v); }
+  set crmBasedUserList($2343.CrmBasedUserListInfo v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasCrmBasedUserList() => $_has(8);
   @$pb.TagNumber(19)
   void clearCrmBasedUserList() => clearField(19);
   @$pb.TagNumber(19)
-  $2342.CrmBasedUserListInfo ensureCrmBasedUserList() => $_ensure(8);
+  $2343.CrmBasedUserListInfo ensureCrmBasedUserList() => $_ensure(8);
 
   /// Output only. User list which are similar to users from another UserList.
   /// These lists are readonly and automatically created by google.
   @$pb.TagNumber(20)
-  $2342.SimilarUserListInfo get similarUserList => $_getN(9);
+  $2343.SimilarUserListInfo get similarUserList => $_getN(9);
   @$pb.TagNumber(20)
-  set similarUserList($2342.SimilarUserListInfo v) { setField(20, v); }
+  set similarUserList($2343.SimilarUserListInfo v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasSimilarUserList() => $_has(9);
   @$pb.TagNumber(20)
   void clearSimilarUserList() => clearField(20);
   @$pb.TagNumber(20)
-  $2342.SimilarUserListInfo ensureSimilarUserList() => $_ensure(9);
+  $2343.SimilarUserListInfo ensureSimilarUserList() => $_ensure(9);
 
   /// User list generated by a rule.
   @$pb.TagNumber(21)
-  $2342.RuleBasedUserListInfo get ruleBasedUserList => $_getN(10);
+  $2343.RuleBasedUserListInfo get ruleBasedUserList => $_getN(10);
   @$pb.TagNumber(21)
-  set ruleBasedUserList($2342.RuleBasedUserListInfo v) { setField(21, v); }
+  set ruleBasedUserList($2343.RuleBasedUserListInfo v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasRuleBasedUserList() => $_has(10);
   @$pb.TagNumber(21)
   void clearRuleBasedUserList() => clearField(21);
   @$pb.TagNumber(21)
-  $2342.RuleBasedUserListInfo ensureRuleBasedUserList() => $_ensure(10);
+  $2343.RuleBasedUserListInfo ensureRuleBasedUserList() => $_ensure(10);
 
   /// User list that is a custom combination of user lists and user interests.
   @$pb.TagNumber(22)
-  $2342.LogicalUserListInfo get logicalUserList => $_getN(11);
+  $2343.LogicalUserListInfo get logicalUserList => $_getN(11);
   @$pb.TagNumber(22)
-  set logicalUserList($2342.LogicalUserListInfo v) { setField(22, v); }
+  set logicalUserList($2343.LogicalUserListInfo v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasLogicalUserList() => $_has(11);
   @$pb.TagNumber(22)
   void clearLogicalUserList() => clearField(22);
   @$pb.TagNumber(22)
-  $2342.LogicalUserListInfo ensureLogicalUserList() => $_ensure(11);
+  $2343.LogicalUserListInfo ensureLogicalUserList() => $_ensure(11);
 
   /// User list targeting as a collection of conversion or remarketing actions.
   @$pb.TagNumber(23)
-  $2342.BasicUserListInfo get basicUserList => $_getN(12);
+  $2343.BasicUserListInfo get basicUserList => $_getN(12);
   @$pb.TagNumber(23)
-  set basicUserList($2342.BasicUserListInfo v) { setField(23, v); }
+  set basicUserList($2343.BasicUserListInfo v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasBasicUserList() => $_has(12);
   @$pb.TagNumber(23)
   void clearBasicUserList() => clearField(23);
   @$pb.TagNumber(23)
-  $2342.BasicUserListInfo ensureBasicUserList() => $_ensure(12);
+  $2343.BasicUserListInfo ensureBasicUserList() => $_ensure(12);
 
   ///  Output only. Indicates match rate for Customer Match lists. The range of
   ///  this field is [0-100]. This will be null for other list types or when it's
@@ -506,15 +506,15 @@ class UserList extends $pb.GeneratedMessage {
 
   /// Immutable. Lookalike User List.
   @$pb.TagNumber(36)
-  $2342.LookalikeUserListInfo get lookalikeUserList => $_getN(24);
+  $2343.LookalikeUserListInfo get lookalikeUserList => $_getN(24);
   @$pb.TagNumber(36)
-  set lookalikeUserList($2342.LookalikeUserListInfo v) { setField(36, v); }
+  set lookalikeUserList($2343.LookalikeUserListInfo v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasLookalikeUserList() => $_has(24);
   @$pb.TagNumber(36)
   void clearLookalikeUserList() => clearField(36);
   @$pb.TagNumber(36)
-  $2342.LookalikeUserListInfo ensureLookalikeUserList() => $_ensure(24);
+  $2343.LookalikeUserListInfo ensureLookalikeUserList() => $_ensure(24);
 }
 
 

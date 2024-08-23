@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
 import 'page.pb.dart' as $864;
 
 /// A TransitionRouteGroup represents a group of
@@ -471,7 +471,7 @@ class CreateTransitionRouteGroupRequest extends $pb.GeneratedMessage {
 class UpdateTransitionRouteGroupRequest extends $pb.GeneratedMessage {
   factory UpdateTransitionRouteGroupRequest({
     TransitionRouteGroup? transitionRouteGroup,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? languageCode,
   }) {
     final $result = create();
@@ -492,7 +492,7 @@ class UpdateTransitionRouteGroupRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTransitionRouteGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<TransitionRouteGroup>(1, _omitFieldNames ? '' : 'transitionRouteGroup', subBuilder: TransitionRouteGroup.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
   ;
@@ -532,15 +532,15 @@ class UpdateTransitionRouteGroupRequest extends $pb.GeneratedMessage {
 
   /// The mask to control which fields get updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  The language of the following fields in `TransitionRouteGroup`:
   ///

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'clusters.pb.dart' as $830;
 
 /// A request to create a node group.
@@ -137,7 +137,7 @@ class ResizeNodeGroupRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $core.int? size,
     $core.String? requestId,
-    $1737.Duration? gracefulDecommissionTimeout,
+    $1738.Duration? gracefulDecommissionTimeout,
   }) {
     final $result = create();
     if (name != null) {
@@ -162,7 +162,7 @@ class ResizeNodeGroupRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'size', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -245,15 +245,15 @@ class ResizeNodeGroupRequest extends $pb.GeneratedMessage {
   ///
   ///  Only supported on Dataproc image versions 1.2 and higher.
   @$pb.TagNumber(4)
-  $1737.Duration get gracefulDecommissionTimeout => $_getN(3);
+  $1738.Duration get gracefulDecommissionTimeout => $_getN(3);
   @$pb.TagNumber(4)
-  set gracefulDecommissionTimeout($1737.Duration v) { setField(4, v); }
+  set gracefulDecommissionTimeout($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGracefulDecommissionTimeout() => $_has(3);
   @$pb.TagNumber(4)
   void clearGracefulDecommissionTimeout() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureGracefulDecommissionTimeout() => $_ensure(3);
+  $1738.Duration ensureGracefulDecommissionTimeout() => $_ensure(3);
 }
 
 /// A request to get a node group .

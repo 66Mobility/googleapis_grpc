@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'finding.pb.dart' as $1344;
-import 'resource.pb.dart' as $4644;
+import 'resource.pb.dart' as $4646;
 
 enum NotificationMessage_Event {
   finding, 
@@ -26,7 +26,7 @@ class NotificationMessage extends $pb.GeneratedMessage {
   factory NotificationMessage({
     $core.String? notificationConfigName,
     $1344.Finding? finding,
-    $4644.Resource? resource,
+    $4646.Resource? resource,
   }) {
     final $result = create();
     if (notificationConfigName != null) {
@@ -52,7 +52,7 @@ class NotificationMessage extends $pb.GeneratedMessage {
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'notificationConfigName')
     ..aOM<$1344.Finding>(2, _omitFieldNames ? '' : 'finding', subBuilder: $1344.Finding.create)
-    ..aOM<$4644.Resource>(3, _omitFieldNames ? '' : 'resource', subBuilder: $4644.Resource.create)
+    ..aOM<$4646.Resource>(3, _omitFieldNames ? '' : 'resource', subBuilder: $4646.Resource.create)
     ..hasRequiredFields = false
   ;
 
@@ -105,15 +105,15 @@ class NotificationMessage extends $pb.GeneratedMessage {
 
   /// The Cloud resource tied to this notification's Finding.
   @$pb.TagNumber(3)
-  $4644.Resource get resource => $_getN(2);
+  $4646.Resource get resource => $_getN(2);
   @$pb.TagNumber(3)
-  set resource($4644.Resource v) { setField(3, v); }
+  set resource($4646.Resource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasResource() => $_has(2);
   @$pb.TagNumber(3)
   void clearResource() => clearField(3);
   @$pb.TagNumber(3)
-  $4644.Resource ensureResource() => $_ensure(2);
+  $4646.Resource ensureResource() => $_ensure(2);
 }
 
 

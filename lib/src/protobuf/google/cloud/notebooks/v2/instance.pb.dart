@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'gce_setup.pb.dart' as $4572;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'gce_setup.pb.dart' as $4574;
 import 'instance.pbenum.dart';
 
 export 'instance.pbenum.dart';
@@ -28,7 +28,7 @@ class UpgradeHistoryEntry extends $pb.GeneratedMessage {
     $core.String? framework,
     $core.String? version,
     UpgradeHistoryEntry_State? state,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     UpgradeHistoryEntry_Action? action,
     $core.String? targetVersion,
   }) {
@@ -73,7 +73,7 @@ class UpgradeHistoryEntry extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'framework')
     ..aOS(5, _omitFieldNames ? '' : 'version')
     ..e<UpgradeHistoryEntry_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: UpgradeHistoryEntry_State.STATE_UNSPECIFIED, valueOf: UpgradeHistoryEntry_State.valueOf, enumValues: UpgradeHistoryEntry_State.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<UpgradeHistoryEntry_Action>(8, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE, defaultOrMaker: UpgradeHistoryEntry_Action.ACTION_UNSPECIFIED, valueOf: UpgradeHistoryEntry_Action.valueOf, enumValues: UpgradeHistoryEntry_Action.values)
     ..aOS(9, _omitFieldNames ? '' : 'targetVersion')
     ..hasRequiredFields = false
@@ -163,15 +163,15 @@ class UpgradeHistoryEntry extends $pb.GeneratedMessage {
 
   /// Immutable. The time that this instance upgrade history entry is created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Optional. Action. Rolloback or Upgrade.
   @$pb.TagNumber(8)
@@ -203,7 +203,7 @@ enum Instance_Infrastructure {
 class Instance extends $pb.GeneratedMessage {
   factory Instance({
     $core.String? name,
-    $4572.GceSetup? gceSetup,
+    $4574.GceSetup? gceSetup,
     $core.String? proxyUri,
     $core.Iterable<$core.String>? instanceOwners,
     $core.String? creator,
@@ -212,8 +212,8 @@ class Instance extends $pb.GeneratedMessage {
     $core.String? id,
     HealthState? healthState,
     $core.Map<$core.String, $core.String>? healthInfo,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.bool? disableProxyAccess,
     $core.Map<$core.String, $core.String>? labels,
   }) {
@@ -273,7 +273,7 @@ class Instance extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Instance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v2'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4572.GceSetup>(2, _omitFieldNames ? '' : 'gceSetup', subBuilder: $4572.GceSetup.create)
+    ..aOM<$4574.GceSetup>(2, _omitFieldNames ? '' : 'gceSetup', subBuilder: $4574.GceSetup.create)
     ..aOS(3, _omitFieldNames ? '' : 'proxyUri')
     ..pPS(4, _omitFieldNames ? '' : 'instanceOwners')
     ..aOS(5, _omitFieldNames ? '' : 'creator')
@@ -282,8 +282,8 @@ class Instance extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'id')
     ..e<HealthState>(9, _omitFieldNames ? '' : 'healthState', $pb.PbFieldType.OE, defaultOrMaker: HealthState.HEALTH_STATE_UNSPECIFIED, valueOf: HealthState.valueOf, enumValues: HealthState.values)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'healthInfo', entryClassName: 'Instance.HealthInfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.notebooks.v2'))
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOB(13, _omitFieldNames ? '' : 'disableProxyAccess')
     ..m<$core.String, $core.String>(14, _omitFieldNames ? '' : 'labels', entryClassName: 'Instance.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.notebooks.v2'))
     ..hasRequiredFields = false
@@ -327,15 +327,15 @@ class Instance extends $pb.GeneratedMessage {
   /// Optional. Compute Engine setup for the notebook. Uses notebook-defined
   /// fields.
   @$pb.TagNumber(2)
-  $4572.GceSetup get gceSetup => $_getN(1);
+  $4574.GceSetup get gceSetup => $_getN(1);
   @$pb.TagNumber(2)
-  set gceSetup($4572.GceSetup v) { setField(2, v); }
+  set gceSetup($4574.GceSetup v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGceSetup() => $_has(1);
   @$pb.TagNumber(2)
   void clearGceSetup() => clearField(2);
   @$pb.TagNumber(2)
-  $4572.GceSetup ensureGceSetup() => $_ensure(1);
+  $4574.GceSetup ensureGceSetup() => $_ensure(1);
 
   /// Output only. The proxy endpoint that is used to access the Jupyter
   /// notebook.
@@ -417,27 +417,27 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. Instance creation time.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(10);
+  $1776.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(10);
+  $1776.Timestamp ensureCreateTime() => $_ensure(10);
 
   /// Output only. Instance update time.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(11);
+  $1776.Timestamp get updateTime => $_getN(11);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(11);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(11);
 
   /// Optional. If true, the notebook instance will not register with the proxy.
   @$pb.TagNumber(13)

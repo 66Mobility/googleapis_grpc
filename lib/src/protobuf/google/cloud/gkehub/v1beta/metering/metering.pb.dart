@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// **Metering**: Per-Membership Feature State.
 class MembershipState extends $pb.GeneratedMessage {
   factory MembershipState({
-    $1775.Timestamp? lastMeasurementTime,
+    $1776.Timestamp? lastMeasurementTime,
     $core.double? preciseLastMeasuredClusterVcpuCapacity,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class MembershipState extends $pb.GeneratedMessage {
   factory MembershipState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.metering.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'lastMeasurementTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'lastMeasurementTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'preciseLastMeasuredClusterVcpuCapacity', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -64,15 +64,15 @@ class MembershipState extends $pb.GeneratedMessage {
   /// The time stamp of the most recent measurement of the number of vCPUs
   /// in the cluster.
   @$pb.TagNumber(1)
-  $1775.Timestamp get lastMeasurementTime => $_getN(0);
+  $1776.Timestamp get lastMeasurementTime => $_getN(0);
   @$pb.TagNumber(1)
-  set lastMeasurementTime($1775.Timestamp v) { setField(1, v); }
+  set lastMeasurementTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLastMeasurementTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearLastMeasurementTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureLastMeasurementTime() => $_ensure(0);
+  $1776.Timestamp ensureLastMeasurementTime() => $_ensure(0);
 
   /// The vCPUs capacity in the cluster according to the most recent
   /// measurement (1/1000 precision).

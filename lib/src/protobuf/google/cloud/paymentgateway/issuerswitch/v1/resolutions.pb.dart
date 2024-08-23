@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../type/money.pb.dart' as $1814;
-import 'common_fields.pb.dart' as $4588;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../type/money.pb.dart' as $1815;
+import 'common_fields.pb.dart' as $4590;
 import 'resolutions.pbenum.dart';
 
 export 'resolutions.pbenum.dart';
@@ -530,7 +530,7 @@ class OriginalTransaction extends $pb.GeneratedMessage {
   factory OriginalTransaction({
     $core.String? transactionId,
     $core.String? retrievalReferenceNumber,
-    $1775.Timestamp? requestTime,
+    $1776.Timestamp? requestTime,
   }) {
     final $result = create();
     if (transactionId != null) {
@@ -551,7 +551,7 @@ class OriginalTransaction extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OriginalTransaction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'transactionId')
     ..aOS(2, _omitFieldNames ? '' : 'retrievalReferenceNumber')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -599,15 +599,15 @@ class OriginalTransaction extends $pb.GeneratedMessage {
 
   /// Timestamp of the original transaction request.
   @$pb.TagNumber(3)
-  $1775.Timestamp get requestTime => $_getN(2);
+  $1776.Timestamp get requestTime => $_getN(2);
   @$pb.TagNumber(3)
-  set requestTime($1775.Timestamp v) { setField(3, v); }
+  set requestTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRequestTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearRequestTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureRequestTime() => $_ensure(2);
+  $1776.Timestamp ensureRequestTime() => $_ensure(2);
 }
 
 /// Details of the complaint or dispute.
@@ -615,7 +615,7 @@ class CaseDetails extends $pb.GeneratedMessage {
   factory CaseDetails({
     OriginalTransaction? originalTransaction,
     TransactionSubType? transactionSubType,
-    $1814.Money? amount,
+    $1815.Money? amount,
     $core.String? originalSettlementResponseCode,
     $core.bool? currentCycle,
   }) {
@@ -644,7 +644,7 @@ class CaseDetails extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CaseDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..aOM<OriginalTransaction>(1, _omitFieldNames ? '' : 'originalTransaction', subBuilder: OriginalTransaction.create)
     ..e<TransactionSubType>(2, _omitFieldNames ? '' : 'transactionSubType', $pb.PbFieldType.OE, defaultOrMaker: TransactionSubType.TRANSACTION_SUB_TYPE_UNSPECIFIED, valueOf: TransactionSubType.valueOf, enumValues: TransactionSubType.values)
-    ..aOM<$1814.Money>(3, _omitFieldNames ? '' : 'amount', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(3, _omitFieldNames ? '' : 'amount', subBuilder: $1815.Money.create)
     ..aOS(4, _omitFieldNames ? '' : 'originalSettlementResponseCode')
     ..aOB(5, _omitFieldNames ? '' : 'currentCycle')
     ..hasRequiredFields = false
@@ -696,15 +696,15 @@ class CaseDetails extends $pb.GeneratedMessage {
   /// Required. The adjustment amount in URCS for the complaint / dispute. This
   /// maps to `reqAdjAmount` in complaint request.
   @$pb.TagNumber(3)
-  $1814.Money get amount => $_getN(2);
+  $1815.Money get amount => $_getN(2);
   @$pb.TagNumber(3)
-  set amount($1814.Money v) { setField(3, v); }
+  set amount($1815.Money v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAmount() => $_has(2);
   @$pb.TagNumber(3)
   void clearAmount() => clearField(3);
   @$pb.TagNumber(3)
-  $1814.Money ensureAmount() => $_ensure(2);
+  $1815.Money ensureAmount() => $_ensure(2);
 
   /// The original response code which has been updated in the complaint
   /// Response. This should map to settlement response code currently available
@@ -740,16 +740,16 @@ enum CaseResponse_Participant {
 class CaseResponse extends $pb.GeneratedMessage {
   factory CaseResponse({
     $core.String? complaintReferenceNumber,
-    $1814.Money? amount,
+    $1815.Money? amount,
     $core.String? adjustmentFlag,
     $core.String? adjustmentCode,
     $core.String? adjustmentReferenceId,
     $core.String? adjustmentRemarks,
     $core.String? approvalNumber,
     $core.String? processStatus,
-    $1775.Timestamp? adjustmentTime,
-    $4588.Participant? payer,
-    $4588.Participant? payee,
+    $1776.Timestamp? adjustmentTime,
+    $4590.Participant? payer,
+    $4590.Participant? payee,
     CaseResponse_Result? result,
   }) {
     final $result = create();
@@ -803,16 +803,16 @@ class CaseResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CaseResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..oo(0, [10, 11])
     ..aOS(1, _omitFieldNames ? '' : 'complaintReferenceNumber')
-    ..aOM<$1814.Money>(2, _omitFieldNames ? '' : 'amount', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(2, _omitFieldNames ? '' : 'amount', subBuilder: $1815.Money.create)
     ..aOS(3, _omitFieldNames ? '' : 'adjustmentFlag')
     ..aOS(4, _omitFieldNames ? '' : 'adjustmentCode')
     ..aOS(5, _omitFieldNames ? '' : 'adjustmentReferenceId')
     ..aOS(6, _omitFieldNames ? '' : 'adjustmentRemarks')
     ..aOS(7, _omitFieldNames ? '' : 'approvalNumber')
     ..aOS(8, _omitFieldNames ? '' : 'processStatus')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'adjustmentTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4588.Participant>(10, _omitFieldNames ? '' : 'payer', subBuilder: $4588.Participant.create)
-    ..aOM<$4588.Participant>(11, _omitFieldNames ? '' : 'payee', subBuilder: $4588.Participant.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'adjustmentTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4590.Participant>(10, _omitFieldNames ? '' : 'payer', subBuilder: $4590.Participant.create)
+    ..aOM<$4590.Participant>(11, _omitFieldNames ? '' : 'payee', subBuilder: $4590.Participant.create)
     ..e<CaseResponse_Result>(12, _omitFieldNames ? '' : 'result', $pb.PbFieldType.OE, defaultOrMaker: CaseResponse_Result.RESULT_UNSPECIFIED, valueOf: CaseResponse_Result.valueOf, enumValues: CaseResponse_Result.values)
     ..hasRequiredFields = false
   ;
@@ -855,15 +855,15 @@ class CaseResponse extends $pb.GeneratedMessage {
   /// The adjustment amount of the response. This maps to `adjAmt` in
   /// complaint response.
   @$pb.TagNumber(2)
-  $1814.Money get amount => $_getN(1);
+  $1815.Money get amount => $_getN(1);
   @$pb.TagNumber(2)
-  set amount($1814.Money v) { setField(2, v); }
+  set amount($1815.Money v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAmount() => $_has(1);
   @$pb.TagNumber(2)
   void clearAmount() => clearField(2);
   @$pb.TagNumber(2)
-  $1814.Money ensureAmount() => $_ensure(1);
+  $1815.Money ensureAmount() => $_ensure(1);
 
   /// The adjustment flag in response to the complaint. This maps adjustment flag
   /// in URCS for the complaint transaction to `Resp.Ref.adjFlag` in complaint
@@ -935,39 +935,39 @@ class CaseResponse extends $pb.GeneratedMessage {
   /// The adjustment timestamp when bank performs the adjustment for the received
   /// complaint request. This maps to `adjTs` in complaint response.
   @$pb.TagNumber(9)
-  $1775.Timestamp get adjustmentTime => $_getN(8);
+  $1776.Timestamp get adjustmentTime => $_getN(8);
   @$pb.TagNumber(9)
-  set adjustmentTime($1775.Timestamp v) { setField(9, v); }
+  set adjustmentTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasAdjustmentTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearAdjustmentTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureAdjustmentTime() => $_ensure(8);
+  $1776.Timestamp ensureAdjustmentTime() => $_ensure(8);
 
   /// The payer in the original financial transaction.
   @$pb.TagNumber(10)
-  $4588.Participant get payer => $_getN(9);
+  $4590.Participant get payer => $_getN(9);
   @$pb.TagNumber(10)
-  set payer($4588.Participant v) { setField(10, v); }
+  set payer($4590.Participant v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasPayer() => $_has(9);
   @$pb.TagNumber(10)
   void clearPayer() => clearField(10);
   @$pb.TagNumber(10)
-  $4588.Participant ensurePayer() => $_ensure(9);
+  $4590.Participant ensurePayer() => $_ensure(9);
 
   /// The payee in the original financial transaction.
   @$pb.TagNumber(11)
-  $4588.Participant get payee => $_getN(10);
+  $4590.Participant get payee => $_getN(10);
   @$pb.TagNumber(11)
-  set payee($4588.Participant v) { setField(11, v); }
+  set payee($4590.Participant v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasPayee() => $_has(10);
   @$pb.TagNumber(11)
   void clearPayee() => clearField(11);
   @$pb.TagNumber(11)
-  $4588.Participant ensurePayee() => $_ensure(10);
+  $4590.Participant ensurePayee() => $_ensure(10);
 
   /// The result of the transaction.
   @$pb.TagNumber(12)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../api/launch_stage.pbenum.dart' as $1777;
+import '../../../api/launch_stage.pbenum.dart' as $1778;
 
 /// The location information about where the processor is available.
 class ProcessorType_LocationInfo extends $pb.GeneratedMessage {
@@ -77,7 +77,7 @@ class ProcessorType extends $pb.GeneratedMessage {
     $core.String? category,
     $core.Iterable<ProcessorType_LocationInfo>? availableLocations,
     $core.bool? allowCreation,
-    $1777.LaunchStage? launchStage,
+    $1778.LaunchStage? launchStage,
     $core.Iterable<$core.String>? sampleDocumentUris,
   }) {
     final $result = create();
@@ -114,7 +114,7 @@ class ProcessorType extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'category')
     ..pc<ProcessorType_LocationInfo>(4, _omitFieldNames ? '' : 'availableLocations', $pb.PbFieldType.PM, subBuilder: ProcessorType_LocationInfo.create)
     ..aOB(6, _omitFieldNames ? '' : 'allowCreation')
-    ..e<$1777.LaunchStage>(8, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1777.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1777.LaunchStage.valueOf, enumValues: $1777.LaunchStage.values)
+    ..e<$1778.LaunchStage>(8, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1778.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1778.LaunchStage.valueOf, enumValues: $1778.LaunchStage.values)
     ..pPS(9, _omitFieldNames ? '' : 'sampleDocumentUris')
     ..hasRequiredFields = false
   ;
@@ -188,9 +188,9 @@ class ProcessorType extends $pb.GeneratedMessage {
 
   /// Launch stage of the processor type
   @$pb.TagNumber(8)
-  $1777.LaunchStage get launchStage => $_getN(5);
+  $1778.LaunchStage get launchStage => $_getN(5);
   @$pb.TagNumber(8)
-  set launchStage($1777.LaunchStage v) { setField(8, v); }
+  set launchStage($1778.LaunchStage v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasLaunchStage() => $_has(5);
   @$pb.TagNumber(8)

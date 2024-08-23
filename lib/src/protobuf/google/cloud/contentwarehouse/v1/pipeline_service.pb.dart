@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4441;
-import 'pipelines.pb.dart' as $4444;
+import 'common.pb.dart' as $4443;
+import 'pipelines.pb.dart' as $4446;
 
 enum RunPipelineRequest_Pipeline {
   gcsIngestPipeline, 
@@ -28,11 +28,11 @@ enum RunPipelineRequest_Pipeline {
 class RunPipelineRequest extends $pb.GeneratedMessage {
   factory RunPipelineRequest({
     $core.String? name,
-    $4444.GcsIngestPipeline? gcsIngestPipeline,
-    $4444.GcsIngestWithDocAiProcessorsPipeline? gcsIngestWithDocAiProcessorsPipeline,
-    $4444.ExportToCdwPipeline? exportCdwPipeline,
-    $4444.ProcessWithDocAiPipeline? processWithDocAiPipeline,
-    $4441.RequestMetadata? requestMetadata,
+    $4446.GcsIngestPipeline? gcsIngestPipeline,
+    $4446.GcsIngestWithDocAiProcessorsPipeline? gcsIngestWithDocAiProcessorsPipeline,
+    $4446.ExportToCdwPipeline? exportCdwPipeline,
+    $4446.ProcessWithDocAiPipeline? processWithDocAiPipeline,
+    $4443.RequestMetadata? requestMetadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -69,11 +69,11 @@ class RunPipelineRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunPipelineRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4444.GcsIngestPipeline>(2, _omitFieldNames ? '' : 'gcsIngestPipeline', subBuilder: $4444.GcsIngestPipeline.create)
-    ..aOM<$4444.GcsIngestWithDocAiProcessorsPipeline>(3, _omitFieldNames ? '' : 'gcsIngestWithDocAiProcessorsPipeline', subBuilder: $4444.GcsIngestWithDocAiProcessorsPipeline.create)
-    ..aOM<$4444.ExportToCdwPipeline>(4, _omitFieldNames ? '' : 'exportCdwPipeline', subBuilder: $4444.ExportToCdwPipeline.create)
-    ..aOM<$4444.ProcessWithDocAiPipeline>(5, _omitFieldNames ? '' : 'processWithDocAiPipeline', subBuilder: $4444.ProcessWithDocAiPipeline.create)
-    ..aOM<$4441.RequestMetadata>(6, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4441.RequestMetadata.create)
+    ..aOM<$4446.GcsIngestPipeline>(2, _omitFieldNames ? '' : 'gcsIngestPipeline', subBuilder: $4446.GcsIngestPipeline.create)
+    ..aOM<$4446.GcsIngestWithDocAiProcessorsPipeline>(3, _omitFieldNames ? '' : 'gcsIngestWithDocAiProcessorsPipeline', subBuilder: $4446.GcsIngestWithDocAiProcessorsPipeline.create)
+    ..aOM<$4446.ExportToCdwPipeline>(4, _omitFieldNames ? '' : 'exportCdwPipeline', subBuilder: $4446.ExportToCdwPipeline.create)
+    ..aOM<$4446.ProcessWithDocAiPipeline>(5, _omitFieldNames ? '' : 'processWithDocAiPipeline', subBuilder: $4446.ProcessWithDocAiPipeline.create)
+    ..aOM<$4443.RequestMetadata>(6, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4443.RequestMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -114,66 +114,66 @@ class RunPipelineRequest extends $pb.GeneratedMessage {
 
   /// Cloud Storage ingestion pipeline.
   @$pb.TagNumber(2)
-  $4444.GcsIngestPipeline get gcsIngestPipeline => $_getN(1);
+  $4446.GcsIngestPipeline get gcsIngestPipeline => $_getN(1);
   @$pb.TagNumber(2)
-  set gcsIngestPipeline($4444.GcsIngestPipeline v) { setField(2, v); }
+  set gcsIngestPipeline($4446.GcsIngestPipeline v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcsIngestPipeline() => $_has(1);
   @$pb.TagNumber(2)
   void clearGcsIngestPipeline() => clearField(2);
   @$pb.TagNumber(2)
-  $4444.GcsIngestPipeline ensureGcsIngestPipeline() => $_ensure(1);
+  $4446.GcsIngestPipeline ensureGcsIngestPipeline() => $_ensure(1);
 
   /// Use DocAI processors to process documents in Cloud Storage and ingest
   /// them to Document Warehouse.
   @$pb.TagNumber(3)
-  $4444.GcsIngestWithDocAiProcessorsPipeline get gcsIngestWithDocAiProcessorsPipeline => $_getN(2);
+  $4446.GcsIngestWithDocAiProcessorsPipeline get gcsIngestWithDocAiProcessorsPipeline => $_getN(2);
   @$pb.TagNumber(3)
-  set gcsIngestWithDocAiProcessorsPipeline($4444.GcsIngestWithDocAiProcessorsPipeline v) { setField(3, v); }
+  set gcsIngestWithDocAiProcessorsPipeline($4446.GcsIngestWithDocAiProcessorsPipeline v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGcsIngestWithDocAiProcessorsPipeline() => $_has(2);
   @$pb.TagNumber(3)
   void clearGcsIngestWithDocAiProcessorsPipeline() => clearField(3);
   @$pb.TagNumber(3)
-  $4444.GcsIngestWithDocAiProcessorsPipeline ensureGcsIngestWithDocAiProcessorsPipeline() => $_ensure(2);
+  $4446.GcsIngestWithDocAiProcessorsPipeline ensureGcsIngestWithDocAiProcessorsPipeline() => $_ensure(2);
 
   /// Export docuemnts from Document Warehouse to CDW for training purpose.
   @$pb.TagNumber(4)
-  $4444.ExportToCdwPipeline get exportCdwPipeline => $_getN(3);
+  $4446.ExportToCdwPipeline get exportCdwPipeline => $_getN(3);
   @$pb.TagNumber(4)
-  set exportCdwPipeline($4444.ExportToCdwPipeline v) { setField(4, v); }
+  set exportCdwPipeline($4446.ExportToCdwPipeline v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasExportCdwPipeline() => $_has(3);
   @$pb.TagNumber(4)
   void clearExportCdwPipeline() => clearField(4);
   @$pb.TagNumber(4)
-  $4444.ExportToCdwPipeline ensureExportCdwPipeline() => $_ensure(3);
+  $4446.ExportToCdwPipeline ensureExportCdwPipeline() => $_ensure(3);
 
   /// Use a DocAI processor to process documents in Document Warehouse, and
   /// re-ingest the updated results into Document Warehouse.
   @$pb.TagNumber(5)
-  $4444.ProcessWithDocAiPipeline get processWithDocAiPipeline => $_getN(4);
+  $4446.ProcessWithDocAiPipeline get processWithDocAiPipeline => $_getN(4);
   @$pb.TagNumber(5)
-  set processWithDocAiPipeline($4444.ProcessWithDocAiPipeline v) { setField(5, v); }
+  set processWithDocAiPipeline($4446.ProcessWithDocAiPipeline v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasProcessWithDocAiPipeline() => $_has(4);
   @$pb.TagNumber(5)
   void clearProcessWithDocAiPipeline() => clearField(5);
   @$pb.TagNumber(5)
-  $4444.ProcessWithDocAiPipeline ensureProcessWithDocAiPipeline() => $_ensure(4);
+  $4446.ProcessWithDocAiPipeline ensureProcessWithDocAiPipeline() => $_ensure(4);
 
   /// The meta information collected about the end user, used to enforce access
   /// control for the service.
   @$pb.TagNumber(6)
-  $4441.RequestMetadata get requestMetadata => $_getN(5);
+  $4443.RequestMetadata get requestMetadata => $_getN(5);
   @$pb.TagNumber(6)
-  set requestMetadata($4441.RequestMetadata v) { setField(6, v); }
+  set requestMetadata($4443.RequestMetadata v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRequestMetadata() => $_has(5);
   @$pb.TagNumber(6)
   void clearRequestMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $4441.RequestMetadata ensureRequestMetadata() => $_ensure(5);
+  $4443.RequestMetadata ensureRequestMetadata() => $_ensure(5);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'custom_targeting_value_enums.pbenum.dart' as $1813;
+import 'custom_targeting_value_enums.pbenum.dart' as $1814;
 
 /// The `CustomTargetingValue` resource.
 class CustomTargetingValue extends $pb.GeneratedMessage {
@@ -21,8 +21,8 @@ class CustomTargetingValue extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? adTagName,
     $core.String? displayName,
-    $1813.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType? matchType,
-    $1813.CustomTargetingValueStatusEnum_CustomTargetingValueStatus? status,
+    $1814.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType? matchType,
+    $1814.CustomTargetingValueStatusEnum_CustomTargetingValueStatus? status,
   }) {
     final $result = create();
     if (name != null) {
@@ -50,8 +50,8 @@ class CustomTargetingValue extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'adTagName')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..e<$1813.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType>(6, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $1813.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType.CUSTOM_TARGETING_VALUE_MATCH_TYPE_UNSPECIFIED, valueOf: $1813.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType.valueOf, enumValues: $1813.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType.values)
-    ..e<$1813.CustomTargetingValueStatusEnum_CustomTargetingValueStatus>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1813.CustomTargetingValueStatusEnum_CustomTargetingValueStatus.CUSTOM_TARGETING_VALUE_STATUS_UNSPECIFIED, valueOf: $1813.CustomTargetingValueStatusEnum_CustomTargetingValueStatus.valueOf, enumValues: $1813.CustomTargetingValueStatusEnum_CustomTargetingValueStatus.values)
+    ..e<$1814.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType>(6, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $1814.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType.CUSTOM_TARGETING_VALUE_MATCH_TYPE_UNSPECIFIED, valueOf: $1814.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType.valueOf, enumValues: $1814.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType.values)
+    ..e<$1814.CustomTargetingValueStatusEnum_CustomTargetingValueStatus>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1814.CustomTargetingValueStatusEnum_CustomTargetingValueStatus.CUSTOM_TARGETING_VALUE_STATUS_UNSPECIFIED, valueOf: $1814.CustomTargetingValueStatusEnum_CustomTargetingValueStatus.valueOf, enumValues: $1814.CustomTargetingValueStatusEnum_CustomTargetingValueStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -115,9 +115,9 @@ class CustomTargetingValue extends $pb.GeneratedMessage {
   /// Required. The way in which the CustomTargetingValue.name strings will be
   /// matched.
   @$pb.TagNumber(6)
-  $1813.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType get matchType => $_getN(3);
+  $1814.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType get matchType => $_getN(3);
   @$pb.TagNumber(6)
-  set matchType($1813.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType v) { setField(6, v); }
+  set matchType($1814.CustomTargetingValueMatchTypeEnum_CustomTargetingValueMatchType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMatchType() => $_has(3);
   @$pb.TagNumber(6)
@@ -125,9 +125,9 @@ class CustomTargetingValue extends $pb.GeneratedMessage {
 
   /// Output only. Status of the `CustomTargetingValue`.
   @$pb.TagNumber(7)
-  $1813.CustomTargetingValueStatusEnum_CustomTargetingValueStatus get status => $_getN(4);
+  $1814.CustomTargetingValueStatusEnum_CustomTargetingValueStatus get status => $_getN(4);
   @$pb.TagNumber(7)
-  set status($1813.CustomTargetingValueStatusEnum_CustomTargetingValueStatus v) { setField(7, v); }
+  set status($1814.CustomTargetingValueStatusEnum_CustomTargetingValueStatus v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(7)

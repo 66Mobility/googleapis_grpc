@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/audiences.pb.dart' as $2154;
-import '../enums/audience_scope.pbenum.dart' as $2156;
-import '../enums/audience_status.pbenum.dart' as $2155;
+import '../common/audiences.pb.dart' as $2155;
+import '../enums/audience_scope.pbenum.dart' as $2157;
+import '../enums/audience_status.pbenum.dart' as $2156;
 
 /// Audience is an effective targeting option that lets you
 /// intersect different segment attributes, such as detailed demographics and
@@ -26,11 +26,11 @@ class Audience extends $pb.GeneratedMessage {
   factory Audience({
     $core.String? resourceName,
     $fixnum.Int64? id,
-    $2155.AudienceStatusEnum_AudienceStatus? status,
+    $2156.AudienceStatusEnum_AudienceStatus? status,
     $core.String? description,
-    $core.Iterable<$2154.AudienceDimension>? dimensions,
-    $2154.AudienceExclusionDimension? exclusionDimension,
-    $2156.AudienceScopeEnum_AudienceScope? scope,
+    $core.Iterable<$2155.AudienceDimension>? dimensions,
+    $2155.AudienceExclusionDimension? exclusionDimension,
+    $2157.AudienceScopeEnum_AudienceScope? scope,
     $core.String? assetGroup,
     $core.String? name,
   }) {
@@ -71,11 +71,11 @@ class Audience extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Audience', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
-    ..e<$2155.AudienceStatusEnum_AudienceStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2155.AudienceStatusEnum_AudienceStatus.UNSPECIFIED, valueOf: $2155.AudienceStatusEnum_AudienceStatus.valueOf, enumValues: $2155.AudienceStatusEnum_AudienceStatus.values)
+    ..e<$2156.AudienceStatusEnum_AudienceStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2156.AudienceStatusEnum_AudienceStatus.UNSPECIFIED, valueOf: $2156.AudienceStatusEnum_AudienceStatus.valueOf, enumValues: $2156.AudienceStatusEnum_AudienceStatus.values)
     ..aOS(5, _omitFieldNames ? '' : 'description')
-    ..pc<$2154.AudienceDimension>(6, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $2154.AudienceDimension.create)
-    ..aOM<$2154.AudienceExclusionDimension>(7, _omitFieldNames ? '' : 'exclusionDimension', subBuilder: $2154.AudienceExclusionDimension.create)
-    ..e<$2156.AudienceScopeEnum_AudienceScope>(8, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $2156.AudienceScopeEnum_AudienceScope.UNSPECIFIED, valueOf: $2156.AudienceScopeEnum_AudienceScope.valueOf, enumValues: $2156.AudienceScopeEnum_AudienceScope.values)
+    ..pc<$2155.AudienceDimension>(6, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $2155.AudienceDimension.create)
+    ..aOM<$2155.AudienceExclusionDimension>(7, _omitFieldNames ? '' : 'exclusionDimension', subBuilder: $2155.AudienceExclusionDimension.create)
+    ..e<$2157.AudienceScopeEnum_AudienceScope>(8, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $2157.AudienceScopeEnum_AudienceScope.UNSPECIFIED, valueOf: $2157.AudienceScopeEnum_AudienceScope.valueOf, enumValues: $2157.AudienceScopeEnum_AudienceScope.values)
     ..aOS(9, _omitFieldNames ? '' : 'assetGroup')
     ..aOS(10, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
@@ -128,9 +128,9 @@ class Audience extends $pb.GeneratedMessage {
   /// Output only. Status of this audience. Indicates whether the audience
   /// is enabled or removed.
   @$pb.TagNumber(3)
-  $2155.AudienceStatusEnum_AudienceStatus get status => $_getN(2);
+  $2156.AudienceStatusEnum_AudienceStatus get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($2155.AudienceStatusEnum_AudienceStatus v) { setField(3, v); }
+  set status($2156.AudienceStatusEnum_AudienceStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -148,28 +148,28 @@ class Audience extends $pb.GeneratedMessage {
 
   /// Positive dimensions specifying the audience composition.
   @$pb.TagNumber(6)
-  $core.List<$2154.AudienceDimension> get dimensions => $_getList(4);
+  $core.List<$2155.AudienceDimension> get dimensions => $_getList(4);
 
   /// Negative dimension specifying the audience composition.
   @$pb.TagNumber(7)
-  $2154.AudienceExclusionDimension get exclusionDimension => $_getN(5);
+  $2155.AudienceExclusionDimension get exclusionDimension => $_getN(5);
   @$pb.TagNumber(7)
-  set exclusionDimension($2154.AudienceExclusionDimension v) { setField(7, v); }
+  set exclusionDimension($2155.AudienceExclusionDimension v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasExclusionDimension() => $_has(5);
   @$pb.TagNumber(7)
   void clearExclusionDimension() => clearField(7);
   @$pb.TagNumber(7)
-  $2154.AudienceExclusionDimension ensureExclusionDimension() => $_ensure(5);
+  $2155.AudienceExclusionDimension ensureExclusionDimension() => $_ensure(5);
 
   /// Defines the scope this audience can be used in. By default, the scope is
   /// CUSTOMER. Audiences can be created with a scope of ASSET_GROUP for
   /// exclusive use by a single asset_group. Scope may change from ASSET_GROUP to
   /// CUSTOMER but not from CUSTOMER to ASSET_GROUP.
   @$pb.TagNumber(8)
-  $2156.AudienceScopeEnum_AudienceScope get scope => $_getN(6);
+  $2157.AudienceScopeEnum_AudienceScope get scope => $_getN(6);
   @$pb.TagNumber(8)
-  set scope($2156.AudienceScopeEnum_AudienceScope v) { setField(8, v); }
+  set scope($2157.AudienceScopeEnum_AudienceScope v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasScope() => $_has(6);
   @$pb.TagNumber(8)

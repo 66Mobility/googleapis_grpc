@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'human_annotation_config.pbenum.dart';
 
 export 'human_annotation_config.pbenum.dart';
@@ -27,7 +27,7 @@ class HumanAnnotationConfig extends $pb.GeneratedMessage {
     $core.String? labelGroup,
     $core.String? languageCode,
     $core.int? replicaCount,
-    $1737.Duration? questionDuration,
+    $1738.Duration? questionDuration,
     $core.Iterable<$core.String>? contributorEmails,
     $core.String? userEmailAddress,
   }) {
@@ -72,7 +72,7 @@ class HumanAnnotationConfig extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'labelGroup')
     ..aOS(5, _omitFieldNames ? '' : 'languageCode')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'replicaCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'questionDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'questionDuration', subBuilder: $1738.Duration.create)
     ..pPS(9, _omitFieldNames ? '' : 'contributorEmails')
     ..aOS(10, _omitFieldNames ? '' : 'userEmailAddress')
     ..hasRequiredFields = false
@@ -173,15 +173,15 @@ class HumanAnnotationConfig extends $pb.GeneratedMessage {
   /// Optional. Maximum duration for contributors to answer a question. Maximum
   /// is 3600 seconds. Default is 3600 seconds.
   @$pb.TagNumber(7)
-  $1737.Duration get questionDuration => $_getN(6);
+  $1738.Duration get questionDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set questionDuration($1737.Duration v) { setField(7, v); }
+  set questionDuration($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasQuestionDuration() => $_has(6);
   @$pb.TagNumber(7)
   void clearQuestionDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureQuestionDuration() => $_ensure(6);
+  $1738.Duration ensureQuestionDuration() => $_ensure(6);
 
   /// Optional. If you want your own labeling contributors to manage and work on
   /// this labeling request, you can set these contributors here. We will give

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../source/v1/source_context.pb.dart' as $4754;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../source/v1/source_context.pb.dart' as $4756;
 import 'data.pbenum.dart';
 
 export 'data.pbenum.dart';
@@ -375,7 +375,7 @@ class Variable extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? value,
     $core.Iterable<Variable>? members,
-    $1780.Int32Value? varTableIndex,
+    $1781.Int32Value? varTableIndex,
     StatusMessage? status,
     $core.String? type,
   }) {
@@ -408,7 +408,7 @@ class Variable extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'value')
     ..pc<Variable>(3, _omitFieldNames ? '' : 'members', $pb.PbFieldType.PM, subBuilder: Variable.create)
-    ..aOM<$1780.Int32Value>(4, _omitFieldNames ? '' : 'varTableIndex', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(4, _omitFieldNames ? '' : 'varTableIndex', subBuilder: $1781.Int32Value.create)
     ..aOM<StatusMessage>(5, _omitFieldNames ? '' : 'status', subBuilder: StatusMessage.create)
     ..aOS(6, _omitFieldNames ? '' : 'type')
     ..hasRequiredFields = false
@@ -463,15 +463,15 @@ class Variable extends $pb.GeneratedMessage {
   /// one variable can reference the same variable in the table. The
   /// `var_table_index` field is an index into `variable_table` in Breakpoint.
   @$pb.TagNumber(4)
-  $1780.Int32Value get varTableIndex => $_getN(3);
+  $1781.Int32Value get varTableIndex => $_getN(3);
   @$pb.TagNumber(4)
-  set varTableIndex($1780.Int32Value v) { setField(4, v); }
+  set varTableIndex($1781.Int32Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasVarTableIndex() => $_has(3);
   @$pb.TagNumber(4)
   void clearVarTableIndex() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int32Value ensureVarTableIndex() => $_ensure(3);
+  $1781.Int32Value ensureVarTableIndex() => $_ensure(3);
 
   ///  Status associated with the variable. This field will usually stay
   ///  unset. A status of a single variable only applies to that variable or
@@ -618,8 +618,8 @@ class Breakpoint extends $pb.GeneratedMessage {
     $core.Iterable<Variable>? evaluatedExpressions,
     $core.Iterable<Variable>? variableTable,
     StatusMessage? status,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? finalTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? finalTime,
     Breakpoint_Action? action,
     $core.String? logMessageFormat,
     Breakpoint_LogLevel? logLevel,
@@ -691,8 +691,8 @@ class Breakpoint extends $pb.GeneratedMessage {
     ..pc<Variable>(8, _omitFieldNames ? '' : 'evaluatedExpressions', $pb.PbFieldType.PM, subBuilder: Variable.create)
     ..pc<Variable>(9, _omitFieldNames ? '' : 'variableTable', $pb.PbFieldType.PM, subBuilder: Variable.create)
     ..aOM<StatusMessage>(10, _omitFieldNames ? '' : 'status', subBuilder: StatusMessage.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'finalTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'finalTime', subBuilder: $1776.Timestamp.create)
     ..e<Breakpoint_Action>(13, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE, defaultOrMaker: Breakpoint_Action.CAPTURE, valueOf: Breakpoint_Action.valueOf, enumValues: Breakpoint_Action.values)
     ..aOS(14, _omitFieldNames ? '' : 'logMessageFormat')
     ..e<Breakpoint_LogLevel>(15, _omitFieldNames ? '' : 'logLevel', $pb.PbFieldType.OE, defaultOrMaker: Breakpoint_LogLevel.INFO, valueOf: Breakpoint_LogLevel.valueOf, enumValues: Breakpoint_LogLevel.values)
@@ -832,28 +832,28 @@ class Breakpoint extends $pb.GeneratedMessage {
 
   /// Time this breakpoint was created by the server in seconds resolution.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(9);
+  $1776.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCreateTime() => $_ensure(9);
 
   /// Time this breakpoint was finalized as seen by the server in seconds
   /// resolution.
   @$pb.TagNumber(12)
-  $1775.Timestamp get finalTime => $_getN(10);
+  $1776.Timestamp get finalTime => $_getN(10);
   @$pb.TagNumber(12)
-  set finalTime($1775.Timestamp v) { setField(12, v); }
+  set finalTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasFinalTime() => $_has(10);
   @$pb.TagNumber(12)
   void clearFinalTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureFinalTime() => $_ensure(10);
+  $1776.Timestamp ensureFinalTime() => $_ensure(10);
 
   /// Action that the agent should perform when the code at the
   /// breakpoint location is hit.
@@ -924,10 +924,10 @@ class Debuggee extends $pb.GeneratedMessage {
     $core.String? agentVersion,
     $core.bool? isDisabled,
     StatusMessage? status,
-    $core.Iterable<$4754.SourceContext>? sourceContexts,
+    $core.Iterable<$4756.SourceContext>? sourceContexts,
     $core.Map<$core.String, $core.String>? labels,
   @$core.Deprecated('This field is deprecated.')
-    $core.Iterable<$4754.ExtendedSourceContext>? extSourceContexts,
+    $core.Iterable<$4756.ExtendedSourceContext>? extSourceContexts,
   }) {
     final $result = create();
     if (id != null) {
@@ -979,9 +979,9 @@ class Debuggee extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'agentVersion')
     ..aOB(7, _omitFieldNames ? '' : 'isDisabled')
     ..aOM<StatusMessage>(8, _omitFieldNames ? '' : 'status', subBuilder: StatusMessage.create)
-    ..pc<$4754.SourceContext>(9, _omitFieldNames ? '' : 'sourceContexts', $pb.PbFieldType.PM, subBuilder: $4754.SourceContext.create)
+    ..pc<$4756.SourceContext>(9, _omitFieldNames ? '' : 'sourceContexts', $pb.PbFieldType.PM, subBuilder: $4756.SourceContext.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'Debuggee.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.devtools.clouddebugger.v2'))
-    ..pc<$4754.ExtendedSourceContext>(13, _omitFieldNames ? '' : 'extSourceContexts', $pb.PbFieldType.PM, subBuilder: $4754.ExtendedSourceContext.create)
+    ..pc<$4756.ExtendedSourceContext>(13, _omitFieldNames ? '' : 'extSourceContexts', $pb.PbFieldType.PM, subBuilder: $4756.ExtendedSourceContext.create)
     ..hasRequiredFields = false
   ;
 
@@ -1105,7 +1105,7 @@ class Debuggee extends $pb.GeneratedMessage {
   /// References to the locations and revisions of the source code used in the
   /// deployed application.
   @$pb.TagNumber(9)
-  $core.List<$4754.SourceContext> get sourceContexts => $_getList(8);
+  $core.List<$4756.SourceContext> get sourceContexts => $_getList(8);
 
   /// A set of custom debuggee properties, populated by the agent, to be
   /// displayed to the user.
@@ -1116,7 +1116,7 @@ class Debuggee extends $pb.GeneratedMessage {
   /// deployed application.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(13)
-  $core.List<$4754.ExtendedSourceContext> get extSourceContexts => $_getList(10);
+  $core.List<$4756.ExtendedSourceContext> get extSourceContexts => $_getList(10);
 }
 
 

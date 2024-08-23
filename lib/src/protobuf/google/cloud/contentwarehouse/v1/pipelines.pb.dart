@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../iam/v1/policy.pb.dart' as $463;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'common.pb.dart' as $4441;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'common.pb.dart' as $4443;
 
 /// Response message of RunPipeline method.
 class RunPipelineResponse extends $pb.GeneratedMessage {
@@ -247,7 +247,7 @@ class RunPipelineMetadata_ProcessWithDocAiPipelineMetadata extends $pb.Generated
 class RunPipelineMetadata_IndividualDocumentStatus extends $pb.GeneratedMessage {
   factory RunPipelineMetadata_IndividualDocumentStatus({
     $core.String? documentId,
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (documentId != null) {
@@ -264,7 +264,7 @@ class RunPipelineMetadata_IndividualDocumentStatus extends $pb.GeneratedMessage 
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunPipelineMetadata.IndividualDocumentStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'documentId')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -301,15 +301,15 @@ class RunPipelineMetadata_IndividualDocumentStatus extends $pb.GeneratedMessage 
 
   /// The status processing the document.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 }
 
 enum RunPipelineMetadata_PipelineMetadata {
@@ -324,7 +324,7 @@ class RunPipelineMetadata extends $pb.GeneratedMessage {
   factory RunPipelineMetadata({
     $core.int? totalFileCount,
     $core.int? failedFileCount,
-    $4441.UserInfo? userInfo,
+    $4443.UserInfo? userInfo,
     RunPipelineMetadata_GcsIngestPipelineMetadata? gcsIngestPipelineMetadata,
     $core.Iterable<RunPipelineMetadata_IndividualDocumentStatus>? individualDocumentStatuses,
     RunPipelineMetadata_ExportToCdwPipelineMetadata? exportToCdwPipelineMetadata,
@@ -368,7 +368,7 @@ class RunPipelineMetadata extends $pb.GeneratedMessage {
     ..oo(0, [4, 6, 7])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'totalFileCount', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'failedFileCount', $pb.PbFieldType.O3)
-    ..aOM<$4441.UserInfo>(3, _omitFieldNames ? '' : 'userInfo', subBuilder: $4441.UserInfo.create)
+    ..aOM<$4443.UserInfo>(3, _omitFieldNames ? '' : 'userInfo', subBuilder: $4443.UserInfo.create)
     ..aOM<RunPipelineMetadata_GcsIngestPipelineMetadata>(4, _omitFieldNames ? '' : 'gcsIngestPipelineMetadata', subBuilder: RunPipelineMetadata_GcsIngestPipelineMetadata.create)
     ..pc<RunPipelineMetadata_IndividualDocumentStatus>(5, _omitFieldNames ? '' : 'individualDocumentStatuses', $pb.PbFieldType.PM, subBuilder: RunPipelineMetadata_IndividualDocumentStatus.create)
     ..aOM<RunPipelineMetadata_ExportToCdwPipelineMetadata>(6, _omitFieldNames ? '' : 'exportToCdwPipelineMetadata', subBuilder: RunPipelineMetadata_ExportToCdwPipelineMetadata.create)
@@ -422,15 +422,15 @@ class RunPipelineMetadata extends $pb.GeneratedMessage {
 
   /// User unique identification and groups information.
   @$pb.TagNumber(3)
-  $4441.UserInfo get userInfo => $_getN(2);
+  $4443.UserInfo get userInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set userInfo($4441.UserInfo v) { setField(3, v); }
+  set userInfo($4443.UserInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUserInfo() => $_has(2);
   @$pb.TagNumber(3)
   void clearUserInfo() => clearField(3);
   @$pb.TagNumber(3)
-  $4441.UserInfo ensureUserInfo() => $_ensure(2);
+  $4443.UserInfo ensureUserInfo() => $_ensure(2);
 
   /// The pipeline metadata for GcsIngest pipeline.
   @$pb.TagNumber(4)

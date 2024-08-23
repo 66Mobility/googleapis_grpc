@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/color.pb.dart' as $4199;
+import '../../../../type/color.pb.dart' as $4200;
 
 /// An entry of mapping between color and AnnotationSpec. The mapping is used in
 /// segmentation mask.
 class AnnotationSpecColor extends $pb.GeneratedMessage {
   factory AnnotationSpecColor({
-    $4199.Color? color,
+    $4200.Color? color,
     $core.String? displayName,
     $core.String? id,
   }) {
@@ -40,7 +40,7 @@ class AnnotationSpecColor extends $pb.GeneratedMessage {
   factory AnnotationSpecColor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnnotationSpecColor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1.schema'), createEmptyInstance: create)
-    ..aOM<$4199.Color>(1, _omitFieldNames ? '' : 'color', subBuilder: $4199.Color.create)
+    ..aOM<$4200.Color>(1, _omitFieldNames ? '' : 'color', subBuilder: $4200.Color.create)
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'id')
     ..hasRequiredFields = false
@@ -69,15 +69,15 @@ class AnnotationSpecColor extends $pb.GeneratedMessage {
 
   /// The color of the AnnotationSpec in a segmentation mask.
   @$pb.TagNumber(1)
-  $4199.Color get color => $_getN(0);
+  $4200.Color get color => $_getN(0);
   @$pb.TagNumber(1)
-  set color($4199.Color v) { setField(1, v); }
+  set color($4200.Color v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasColor() => $_has(0);
   @$pb.TagNumber(1)
   void clearColor() => clearField(1);
   @$pb.TagNumber(1)
-  $4199.Color ensureColor() => $_ensure(0);
+  $4200.Color ensureColor() => $_ensure(0);
 
   /// The display name of the AnnotationSpec represented by the color in the
   /// segmentation mask.

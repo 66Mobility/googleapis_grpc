@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// A TagHold represents the use of a TagValue that is not captured by
 /// TagBindings. If a TagValue has any TagHolds, deletion will be blocked.
@@ -25,7 +25,7 @@ class TagHold extends $pb.GeneratedMessage {
     $core.String? holder,
     $core.String? origin,
     $core.String? helpLink,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -54,7 +54,7 @@ class TagHold extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'holder')
     ..aOS(3, _omitFieldNames ? '' : 'origin')
     ..aOS(4, _omitFieldNames ? '' : 'helpLink')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -131,15 +131,15 @@ class TagHold extends $pb.GeneratedMessage {
 
   /// Output only. The time this TagHold was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 }
 
 /// The request message to create a TagHold.

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../common/consent.pb.dart' as $3325;
-import '../common/offline_user_data.pb.dart' as $3765;
-import '../enums/conversion_environment_enum.pbenum.dart' as $3959;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../common/consent.pb.dart' as $3326;
+import '../common/offline_user_data.pb.dart' as $3766;
+import '../enums/conversion_environment_enum.pbenum.dart' as $3960;
 
 /// Request message for
 /// [ConversionUploadService.UploadClickConversions][google.ads.googleads.v17.services.ConversionUploadService.UploadClickConversions].
@@ -173,7 +173,7 @@ class UploadClickConversionsRequest extends $pb.GeneratedMessage {
 /// [ConversionUploadService.UploadClickConversions][google.ads.googleads.v17.services.ConversionUploadService.UploadClickConversions].
 class UploadClickConversionsResponse extends $pb.GeneratedMessage {
   factory UploadClickConversionsResponse({
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     $core.Iterable<ClickConversionResult>? results,
     $fixnum.Int64? jobId,
   }) {
@@ -194,7 +194,7 @@ class UploadClickConversionsResponse extends $pb.GeneratedMessage {
   factory UploadClickConversionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadClickConversionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..pc<ClickConversionResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: ClickConversionResult.create)
     ..aInt64(3, _omitFieldNames ? '' : 'jobId')
     ..hasRequiredFields = false
@@ -228,15 +228,15 @@ class UploadClickConversionsResponse extends $pb.GeneratedMessage {
   /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
   /// for more information about partial failure.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// Returned for successfully processed conversions. Proto will be empty for
   /// rows that received an error. Results are not returned when validate_only is
@@ -358,7 +358,7 @@ class UploadCallConversionsRequest extends $pb.GeneratedMessage {
 /// [ConversionUploadService.UploadCallConversions][google.ads.googleads.v17.services.ConversionUploadService.UploadCallConversions].
 class UploadCallConversionsResponse extends $pb.GeneratedMessage {
   factory UploadCallConversionsResponse({
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     $core.Iterable<CallConversionResult>? results,
   }) {
     final $result = create();
@@ -375,7 +375,7 @@ class UploadCallConversionsResponse extends $pb.GeneratedMessage {
   factory UploadCallConversionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadCallConversionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..pc<CallConversionResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: CallConversionResult.create)
     ..hasRequiredFields = false
   ;
@@ -408,15 +408,15 @@ class UploadCallConversionsResponse extends $pb.GeneratedMessage {
   /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
   /// for more information about partial failure.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// Returned for successfully processed conversions. Proto will be empty for
   /// rows that received an error. Results are not returned when validate_only is
@@ -437,11 +437,11 @@ class ClickConversion extends $pb.GeneratedMessage {
     $core.String? orderId,
     $core.Iterable<CustomVariable>? customVariables,
     CartData? cartData,
-    $core.Iterable<$3765.UserIdentifier>? userIdentifiers,
+    $core.Iterable<$3766.UserIdentifier>? userIdentifiers,
     $core.String? gbraid,
     $core.String? wbraid,
-    $3959.ConversionEnvironmentEnum_ConversionEnvironment? conversionEnvironment,
-    $3325.Consent? consent,
+    $3960.ConversionEnvironmentEnum_ConversionEnvironment? conversionEnvironment,
+    $3326.Consent? consent,
   }) {
     final $result = create();
     if (externalAttributionData != null) {
@@ -502,11 +502,11 @@ class ClickConversion extends $pb.GeneratedMessage {
     ..aOS(14, _omitFieldNames ? '' : 'orderId')
     ..pc<CustomVariable>(15, _omitFieldNames ? '' : 'customVariables', $pb.PbFieldType.PM, subBuilder: CustomVariable.create)
     ..aOM<CartData>(16, _omitFieldNames ? '' : 'cartData', subBuilder: CartData.create)
-    ..pc<$3765.UserIdentifier>(17, _omitFieldNames ? '' : 'userIdentifiers', $pb.PbFieldType.PM, subBuilder: $3765.UserIdentifier.create)
+    ..pc<$3766.UserIdentifier>(17, _omitFieldNames ? '' : 'userIdentifiers', $pb.PbFieldType.PM, subBuilder: $3766.UserIdentifier.create)
     ..aOS(18, _omitFieldNames ? '' : 'gbraid')
     ..aOS(19, _omitFieldNames ? '' : 'wbraid')
-    ..e<$3959.ConversionEnvironmentEnum_ConversionEnvironment>(20, _omitFieldNames ? '' : 'conversionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $3959.ConversionEnvironmentEnum_ConversionEnvironment.UNSPECIFIED, valueOf: $3959.ConversionEnvironmentEnum_ConversionEnvironment.valueOf, enumValues: $3959.ConversionEnvironmentEnum_ConversionEnvironment.values)
-    ..aOM<$3325.Consent>(23, _omitFieldNames ? '' : 'consent', subBuilder: $3325.Consent.create)
+    ..e<$3960.ConversionEnvironmentEnum_ConversionEnvironment>(20, _omitFieldNames ? '' : 'conversionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $3960.ConversionEnvironmentEnum_ConversionEnvironment.UNSPECIFIED, valueOf: $3960.ConversionEnvironmentEnum_ConversionEnvironment.valueOf, enumValues: $3960.ConversionEnvironmentEnum_ConversionEnvironment.values)
+    ..aOM<$3326.Consent>(23, _omitFieldNames ? '' : 'consent', subBuilder: $3326.Consent.create)
     ..hasRequiredFields = false
   ;
 
@@ -632,7 +632,7 @@ class ClickConversion extends $pb.GeneratedMessage {
   /// hashed_phone_number are supported for conversion uploads. The maximum
   /// number of user identifiers for each conversion is 5.
   @$pb.TagNumber(17)
-  $core.List<$3765.UserIdentifier> get userIdentifiers => $_getList(9);
+  $core.List<$3766.UserIdentifier> get userIdentifiers => $_getList(9);
 
   /// The click identifier for clicks associated with app conversions and
   /// originating from iOS devices starting with iOS14.
@@ -658,9 +658,9 @@ class ClickConversion extends $pb.GeneratedMessage {
 
   /// The environment this conversion was recorded on, for example, App or Web.
   @$pb.TagNumber(20)
-  $3959.ConversionEnvironmentEnum_ConversionEnvironment get conversionEnvironment => $_getN(12);
+  $3960.ConversionEnvironmentEnum_ConversionEnvironment get conversionEnvironment => $_getN(12);
   @$pb.TagNumber(20)
-  set conversionEnvironment($3959.ConversionEnvironmentEnum_ConversionEnvironment v) { setField(20, v); }
+  set conversionEnvironment($3960.ConversionEnvironmentEnum_ConversionEnvironment v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasConversionEnvironment() => $_has(12);
   @$pb.TagNumber(20)
@@ -668,15 +668,15 @@ class ClickConversion extends $pb.GeneratedMessage {
 
   /// The consent setting for the event.
   @$pb.TagNumber(23)
-  $3325.Consent get consent => $_getN(13);
+  $3326.Consent get consent => $_getN(13);
   @$pb.TagNumber(23)
-  set consent($3325.Consent v) { setField(23, v); }
+  set consent($3326.Consent v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasConsent() => $_has(13);
   @$pb.TagNumber(23)
   void clearConsent() => clearField(23);
   @$pb.TagNumber(23)
-  $3325.Consent ensureConsent() => $_ensure(13);
+  $3326.Consent ensureConsent() => $_ensure(13);
 }
 
 /// A call conversion.
@@ -689,7 +689,7 @@ class CallConversion extends $pb.GeneratedMessage {
     $core.double? conversionValue,
     $core.String? currencyCode,
     $core.Iterable<CustomVariable>? customVariables,
-    $3325.Consent? consent,
+    $3326.Consent? consent,
   }) {
     final $result = create();
     if (callerId != null) {
@@ -730,7 +730,7 @@ class CallConversion extends $pb.GeneratedMessage {
     ..a<$core.double>(11, _omitFieldNames ? '' : 'conversionValue', $pb.PbFieldType.OD)
     ..aOS(12, _omitFieldNames ? '' : 'currencyCode')
     ..pc<CustomVariable>(13, _omitFieldNames ? '' : 'customVariables', $pb.PbFieldType.PM, subBuilder: CustomVariable.create)
-    ..aOM<$3325.Consent>(14, _omitFieldNames ? '' : 'consent', subBuilder: $3325.Consent.create)
+    ..aOM<$3326.Consent>(14, _omitFieldNames ? '' : 'consent', subBuilder: $3326.Consent.create)
     ..hasRequiredFields = false
   ;
 
@@ -830,15 +830,15 @@ class CallConversion extends $pb.GeneratedMessage {
 
   /// The consent setting for the event.
   @$pb.TagNumber(14)
-  $3325.Consent get consent => $_getN(7);
+  $3326.Consent get consent => $_getN(7);
   @$pb.TagNumber(14)
-  set consent($3325.Consent v) { setField(14, v); }
+  set consent($3326.Consent v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasConsent() => $_has(7);
   @$pb.TagNumber(14)
   void clearConsent() => clearField(14);
   @$pb.TagNumber(14)
-  $3325.Consent ensureConsent() => $_ensure(7);
+  $3326.Consent ensureConsent() => $_ensure(7);
 }
 
 /// Contains additional information about externally attributed conversions.
@@ -915,7 +915,7 @@ class ClickConversionResult extends $pb.GeneratedMessage {
     $core.String? gclid,
     $core.String? conversionAction,
     $core.String? conversionDateTime,
-    $core.Iterable<$3765.UserIdentifier>? userIdentifiers,
+    $core.Iterable<$3766.UserIdentifier>? userIdentifiers,
     $core.String? gbraid,
     $core.String? wbraid,
   }) {
@@ -948,7 +948,7 @@ class ClickConversionResult extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'gclid')
     ..aOS(5, _omitFieldNames ? '' : 'conversionAction')
     ..aOS(6, _omitFieldNames ? '' : 'conversionDateTime')
-    ..pc<$3765.UserIdentifier>(7, _omitFieldNames ? '' : 'userIdentifiers', $pb.PbFieldType.PM, subBuilder: $3765.UserIdentifier.create)
+    ..pc<$3766.UserIdentifier>(7, _omitFieldNames ? '' : 'userIdentifiers', $pb.PbFieldType.PM, subBuilder: $3766.UserIdentifier.create)
     ..aOS(8, _omitFieldNames ? '' : 'gbraid')
     ..aOS(9, _omitFieldNames ? '' : 'wbraid')
     ..hasRequiredFields = false
@@ -1010,7 +1010,7 @@ class ClickConversionResult extends $pb.GeneratedMessage {
   /// hashed_phone_number are supported for conversion uploads. The maximum
   /// number of user identifiers for each conversion is 5.
   @$pb.TagNumber(7)
-  $core.List<$3765.UserIdentifier> get userIdentifiers => $_getList(3);
+  $core.List<$3766.UserIdentifier> get userIdentifiers => $_getList(3);
 
   /// The click identifier for clicks associated with app conversions and
   /// originating from iOS devices starting with iOS14.

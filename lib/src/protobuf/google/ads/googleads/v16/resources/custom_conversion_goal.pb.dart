@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/custom_conversion_goal_status.pbenum.dart' as $2961;
+import '../enums/custom_conversion_goal_status.pbenum.dart' as $2962;
 
 /// Custom conversion goal that can make arbitrary conversion actions biddable.
 class CustomConversionGoal extends $pb.GeneratedMessage {
@@ -23,7 +23,7 @@ class CustomConversionGoal extends $pb.GeneratedMessage {
     $fixnum.Int64? id,
     $core.String? name,
     $core.Iterable<$core.String>? conversionActions,
-    $2961.CustomConversionGoalStatusEnum_CustomConversionGoalStatus? status,
+    $2962.CustomConversionGoalStatusEnum_CustomConversionGoalStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -52,7 +52,7 @@ class CustomConversionGoal extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..pPS(4, _omitFieldNames ? '' : 'conversionActions')
-    ..e<$2961.CustomConversionGoalStatusEnum_CustomConversionGoalStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2961.CustomConversionGoalStatusEnum_CustomConversionGoalStatus.UNSPECIFIED, valueOf: $2961.CustomConversionGoalStatusEnum_CustomConversionGoalStatus.valueOf, enumValues: $2961.CustomConversionGoalStatusEnum_CustomConversionGoalStatus.values)
+    ..e<$2962.CustomConversionGoalStatusEnum_CustomConversionGoalStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2962.CustomConversionGoalStatusEnum_CustomConversionGoalStatus.UNSPECIFIED, valueOf: $2962.CustomConversionGoalStatusEnum_CustomConversionGoalStatus.valueOf, enumValues: $2962.CustomConversionGoalStatusEnum_CustomConversionGoalStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -116,9 +116,9 @@ class CustomConversionGoal extends $pb.GeneratedMessage {
 
   /// The status of the custom conversion goal.
   @$pb.TagNumber(5)
-  $2961.CustomConversionGoalStatusEnum_CustomConversionGoalStatus get status => $_getN(4);
+  $2962.CustomConversionGoalStatusEnum_CustomConversionGoalStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($2961.CustomConversionGoalStatusEnum_CustomConversionGoalStatus v) { setField(5, v); }
+  set status($2962.CustomConversionGoalStatusEnum_CustomConversionGoalStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/ad_group_label.pb.dart' as $3071;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/ad_group_label.pb.dart' as $3072;
 
 /// Request message for
 /// [AdGroupLabelService.MutateAdGroupLabels][google.ads.googleads.v16.services.AdGroupLabelService.MutateAdGroupLabels].
@@ -121,7 +121,7 @@ enum AdGroupLabelOperation_Operation {
 /// A single operation (create, remove) on an ad group label.
 class AdGroupLabelOperation extends $pb.GeneratedMessage {
   factory AdGroupLabelOperation({
-    $3071.AdGroupLabel? create_1,
+    $3072.AdGroupLabel? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -144,7 +144,7 @@ class AdGroupLabelOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupLabelOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3071.AdGroupLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3071.AdGroupLabel.create)
+    ..aOM<$3072.AdGroupLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3072.AdGroupLabel.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -176,15 +176,15 @@ class AdGroupLabelOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new ad group
   /// label.
   @$pb.TagNumber(1)
-  $3071.AdGroupLabel get create_1 => $_getN(0);
+  $3072.AdGroupLabel get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3071.AdGroupLabel v) { setField(1, v); }
+  set create_1($3072.AdGroupLabel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3071.AdGroupLabel ensureCreate_1() => $_ensure(0);
+  $3072.AdGroupLabel ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the ad group label
   ///  being removed, in this format:
@@ -204,7 +204,7 @@ class AdGroupLabelOperation extends $pb.GeneratedMessage {
 class MutateAdGroupLabelsResponse extends $pb.GeneratedMessage {
   factory MutateAdGroupLabelsResponse({
     $core.Iterable<MutateAdGroupLabelResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -221,7 +221,7 @@ class MutateAdGroupLabelsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupLabelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateAdGroupLabelResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAdGroupLabelResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -255,15 +255,15 @@ class MutateAdGroupLabelsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for an ad group label mutate.

@@ -16,9 +16,9 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../iam/v1/iam_policy.pb.dart' as $462;
 import '../../../../iam/v1/policy.pb.dart' as $463;
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
 
 enum AuditData_Request {
   tableInsertRequest, 
@@ -1651,11 +1651,11 @@ class Table extends $pb.GeneratedMessage {
     TableName? tableName,
     TableInfo? info,
     TableViewDefinition? view,
-    $1775.Timestamp? expireTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? truncateTime,
+    $1776.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? truncateTime,
     $core.String? schemaJson,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     EncryptionInfo? encryption,
   }) {
     final $result = create();
@@ -1696,11 +1696,11 @@ class Table extends $pb.GeneratedMessage {
     ..aOM<TableName>(1, _omitFieldNames ? '' : 'tableName', subBuilder: TableName.create)
     ..aOM<TableInfo>(2, _omitFieldNames ? '' : 'info', subBuilder: TableInfo.create)
     ..aOM<TableViewDefinition>(4, _omitFieldNames ? '' : 'view', subBuilder: TableViewDefinition.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'truncateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'truncateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'schemaJson')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<EncryptionInfo>(10, _omitFieldNames ? '' : 'encryption', subBuilder: EncryptionInfo.create)
     ..hasRequiredFields = false
   ;
@@ -1766,40 +1766,40 @@ class Table extends $pb.GeneratedMessage {
   /// is deleted and the storage reclaimed.
   /// If not present, the table persists indefinitely.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// The time the table was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// The time the table was last truncated
   /// by an operation with a `writeDisposition` of `WRITE_TRUNCATE`.
   @$pb.TagNumber(7)
-  $1775.Timestamp get truncateTime => $_getN(5);
+  $1776.Timestamp get truncateTime => $_getN(5);
   @$pb.TagNumber(7)
-  set truncateTime($1775.Timestamp v) { setField(7, v); }
+  set truncateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTruncateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearTruncateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureTruncateTime() => $_ensure(5);
+  $1776.Timestamp ensureTruncateTime() => $_ensure(5);
 
   /// A JSON representation of the table's schema.
   @$pb.TagNumber(8)
@@ -1813,15 +1813,15 @@ class Table extends $pb.GeneratedMessage {
 
   /// The time the table was last modified.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// The table encryption information. Set when non-default encryption is used.
   @$pb.TagNumber(10)
@@ -1972,10 +1972,10 @@ class Dataset extends $pb.GeneratedMessage {
   factory Dataset({
     DatasetName? datasetName,
     DatasetInfo? info,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     BigQueryAcl? acl,
-    $1737.Duration? defaultTableExpireDuration,
+    $1738.Duration? defaultTableExpireDuration,
   }) {
     final $result = create();
     if (datasetName != null) {
@@ -2005,10 +2005,10 @@ class Dataset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Dataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.logging.v1'), createEmptyInstance: create)
     ..aOM<DatasetName>(1, _omitFieldNames ? '' : 'datasetName', subBuilder: DatasetName.create)
     ..aOM<DatasetInfo>(2, _omitFieldNames ? '' : 'info', subBuilder: DatasetInfo.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<BigQueryAcl>(6, _omitFieldNames ? '' : 'acl', subBuilder: BigQueryAcl.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'defaultTableExpireDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'defaultTableExpireDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2059,27 +2059,27 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// The time the dataset was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The time the dataset was last modified.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The access control list for the dataset.
   @$pb.TagNumber(6)
@@ -2098,15 +2098,15 @@ class Dataset extends $pb.GeneratedMessage {
   /// duration to the table's `createTime`.  If this field is empty,
   /// there is no default table expiration time.
   @$pb.TagNumber(8)
-  $1737.Duration get defaultTableExpireDuration => $_getN(5);
+  $1738.Duration get defaultTableExpireDuration => $_getN(5);
   @$pb.TagNumber(8)
-  set defaultTableExpireDuration($1737.Duration v) { setField(8, v); }
+  set defaultTableExpireDuration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDefaultTableExpireDuration() => $_has(5);
   @$pb.TagNumber(8)
   void clearDefaultTableExpireDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureDefaultTableExpireDuration() => $_ensure(5);
+  $1738.Duration ensureDefaultTableExpireDuration() => $_ensure(5);
 }
 
 /// User-provided metadata for a dataset.
@@ -3166,8 +3166,8 @@ class TableDefinition extends $pb.GeneratedMessage {
 class JobStatus extends $pb.GeneratedMessage {
   factory JobStatus({
     $core.String? state,
-    $1795.Status? error,
-    $core.Iterable<$1795.Status>? additionalErrors,
+    $1796.Status? error,
+    $core.Iterable<$1796.Status>? additionalErrors,
   }) {
     final $result = create();
     if (state != null) {
@@ -3187,8 +3187,8 @@ class JobStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'state')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..pc<$1795.Status>(3, _omitFieldNames ? '' : 'additionalErrors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'additionalErrors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -3225,20 +3225,20 @@ class JobStatus extends $pb.GeneratedMessage {
 
   /// If the job did not complete successfully, this field describes why.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 
   /// Errors encountered during the running of the job. Do not necessarily mean
   /// that the job has completed or was unsuccessful.
   @$pb.TagNumber(3)
-  $core.List<$1795.Status> get additionalErrors => $_getList(2);
+  $core.List<$1796.Status> get additionalErrors => $_getList(2);
 }
 
 /// Job resource usage breakdown by reservation.
@@ -3311,9 +3311,9 @@ class JobStatistics_ReservationResourceUsage extends $pb.GeneratedMessage {
 /// Job statistics that may change after a job starts.
 class JobStatistics extends $pb.GeneratedMessage {
   factory JobStatistics({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $fixnum.Int64? totalProcessedBytes,
     $fixnum.Int64? totalBilledBytes,
     $core.int? billingTier,
@@ -3382,9 +3382,9 @@ class JobStatistics extends $pb.GeneratedMessage {
   factory JobStatistics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobStatistics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.logging.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(4, _omitFieldNames ? '' : 'totalProcessedBytes')
     ..aInt64(5, _omitFieldNames ? '' : 'totalBilledBytes')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'billingTier', $pb.PbFieldType.O3)
@@ -3423,39 +3423,39 @@ class JobStatistics extends $pb.GeneratedMessage {
 
   /// Time when the job was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Time when the job started.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Time when the job ended.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Total bytes processed for a job.
   @$pb.TagNumber(4)

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'index.pb.dart' as $509;
 import 'index_service.pbenum.dart';
-import 'operation.pb.dart' as $4250;
+import 'operation.pb.dart' as $4251;
 
 export 'index_service.pbenum.dart';
 
@@ -96,7 +96,7 @@ class CreateIndexRequest extends $pb.GeneratedMessage {
 /// [IndexService.CreateIndex][google.cloud.aiplatform.v1.IndexService.CreateIndex].
 class CreateIndexOperationMetadata extends $pb.GeneratedMessage {
   factory CreateIndexOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     NearestNeighborSearchOperationMetadata? nearestNeighborSearchOperationMetadata,
   }) {
     final $result = create();
@@ -113,7 +113,7 @@ class CreateIndexOperationMetadata extends $pb.GeneratedMessage {
   factory CreateIndexOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateIndexOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOM<NearestNeighborSearchOperationMetadata>(2, _omitFieldNames ? '' : 'nearestNeighborSearchOperationMetadata', subBuilder: NearestNeighborSearchOperationMetadata.create)
     ..hasRequiredFields = false
   ;
@@ -141,15 +141,15 @@ class CreateIndexOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// The operation metadata with regard to Matching Engine Index operation.
   @$pb.TagNumber(2)
@@ -227,7 +227,7 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -256,7 +256,7 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -329,15 +329,15 @@ class ListIndexesRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -410,7 +410,7 @@ class ListIndexesResponse extends $pb.GeneratedMessage {
 class UpdateIndexRequest extends $pb.GeneratedMessage {
   factory UpdateIndexRequest({
     $509.Index? index,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (index != null) {
@@ -427,7 +427,7 @@ class UpdateIndexRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateIndexRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$509.Index>(1, _omitFieldNames ? '' : 'index', subBuilder: $509.Index.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -468,22 +468,22 @@ class UpdateIndexRequest extends $pb.GeneratedMessage {
   /// For the `FieldMask` definition, see
   /// [google.protobuf.FieldMask][google.protobuf.FieldMask].
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Runtime operation information for
 /// [IndexService.UpdateIndex][google.cloud.aiplatform.v1.IndexService.UpdateIndex].
 class UpdateIndexOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateIndexOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     NearestNeighborSearchOperationMetadata? nearestNeighborSearchOperationMetadata,
   }) {
     final $result = create();
@@ -500,7 +500,7 @@ class UpdateIndexOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateIndexOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateIndexOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOM<NearestNeighborSearchOperationMetadata>(2, _omitFieldNames ? '' : 'nearestNeighborSearchOperationMetadata', subBuilder: NearestNeighborSearchOperationMetadata.create)
     ..hasRequiredFields = false
   ;
@@ -528,15 +528,15 @@ class UpdateIndexOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// The operation metadata with regard to Matching Engine Index operation.
   @$pb.TagNumber(2)
@@ -612,7 +612,7 @@ class UpsertDatapointsRequest extends $pb.GeneratedMessage {
   factory UpsertDatapointsRequest({
     $core.String? index,
     $core.Iterable<$509.IndexDatapoint>? datapoints,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (index != null) {
@@ -633,7 +633,7 @@ class UpsertDatapointsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpsertDatapointsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'index')
     ..pc<$509.IndexDatapoint>(2, _omitFieldNames ? '' : 'datapoints', $pb.PbFieldType.PM, subBuilder: $509.IndexDatapoint.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -682,15 +682,15 @@ class UpsertDatapointsRequest extends $pb.GeneratedMessage {
   ///
   ///    * Use `all_restricts` to update both restricts and numeric_restricts.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Response message for

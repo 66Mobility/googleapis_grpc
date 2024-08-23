@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/account_link_status.pbenum.dart' as $3528;
-import '../enums/linked_account_type.pbenum.dart' as $3529;
-import '../enums/mobile_app_vendor.pbenum.dart' as $3292;
+import '../enums/account_link_status.pbenum.dart' as $3529;
+import '../enums/linked_account_type.pbenum.dart' as $3530;
+import '../enums/mobile_app_vendor.pbenum.dart' as $3293;
 
 enum AccountLink_LinkedAccount {
   thirdPartyAppAnalytics, 
@@ -28,8 +28,8 @@ enum AccountLink_LinkedAccount {
 class AccountLink extends $pb.GeneratedMessage {
   factory AccountLink({
     $core.String? resourceName,
-    $3528.AccountLinkStatusEnum_AccountLinkStatus? status,
-    $3529.LinkedAccountTypeEnum_LinkedAccountType? type,
+    $3529.AccountLinkStatusEnum_AccountLinkStatus? status,
+    $3530.LinkedAccountTypeEnum_LinkedAccountType? type,
     ThirdPartyAppAnalyticsLinkIdentifier? thirdPartyAppAnalytics,
     $fixnum.Int64? accountLinkId,
   }) {
@@ -62,8 +62,8 @@ class AccountLink extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountLink', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3528.AccountLinkStatusEnum_AccountLinkStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3528.AccountLinkStatusEnum_AccountLinkStatus.UNSPECIFIED, valueOf: $3528.AccountLinkStatusEnum_AccountLinkStatus.valueOf, enumValues: $3528.AccountLinkStatusEnum_AccountLinkStatus.values)
-    ..e<$3529.LinkedAccountTypeEnum_LinkedAccountType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3529.LinkedAccountTypeEnum_LinkedAccountType.UNSPECIFIED, valueOf: $3529.LinkedAccountTypeEnum_LinkedAccountType.valueOf, enumValues: $3529.LinkedAccountTypeEnum_LinkedAccountType.values)
+    ..e<$3529.AccountLinkStatusEnum_AccountLinkStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3529.AccountLinkStatusEnum_AccountLinkStatus.UNSPECIFIED, valueOf: $3529.AccountLinkStatusEnum_AccountLinkStatus.valueOf, enumValues: $3529.AccountLinkStatusEnum_AccountLinkStatus.values)
+    ..e<$3530.LinkedAccountTypeEnum_LinkedAccountType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3530.LinkedAccountTypeEnum_LinkedAccountType.UNSPECIFIED, valueOf: $3530.LinkedAccountTypeEnum_LinkedAccountType.valueOf, enumValues: $3530.LinkedAccountTypeEnum_LinkedAccountType.values)
     ..aOM<ThirdPartyAppAnalyticsLinkIdentifier>(5, _omitFieldNames ? '' : 'thirdPartyAppAnalytics', subBuilder: ThirdPartyAppAnalyticsLinkIdentifier.create)
     ..aInt64(8, _omitFieldNames ? '' : 'accountLinkId')
     ..hasRequiredFields = false
@@ -107,9 +107,9 @@ class AccountLink extends $pb.GeneratedMessage {
 
   /// The status of the link.
   @$pb.TagNumber(3)
-  $3528.AccountLinkStatusEnum_AccountLinkStatus get status => $_getN(1);
+  $3529.AccountLinkStatusEnum_AccountLinkStatus get status => $_getN(1);
   @$pb.TagNumber(3)
-  set status($3528.AccountLinkStatusEnum_AccountLinkStatus v) { setField(3, v); }
+  set status($3529.AccountLinkStatusEnum_AccountLinkStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(3)
@@ -117,9 +117,9 @@ class AccountLink extends $pb.GeneratedMessage {
 
   /// Output only. The type of the linked account.
   @$pb.TagNumber(4)
-  $3529.LinkedAccountTypeEnum_LinkedAccountType get type => $_getN(2);
+  $3530.LinkedAccountTypeEnum_LinkedAccountType get type => $_getN(2);
   @$pb.TagNumber(4)
-  set type($3529.LinkedAccountTypeEnum_LinkedAccountType v) { setField(4, v); }
+  set type($3530.LinkedAccountTypeEnum_LinkedAccountType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(4)
@@ -152,7 +152,7 @@ class AccountLink extends $pb.GeneratedMessage {
 /// The identifiers of a Third Party App Analytics Link.
 class ThirdPartyAppAnalyticsLinkIdentifier extends $pb.GeneratedMessage {
   factory ThirdPartyAppAnalyticsLinkIdentifier({
-    $3292.MobileAppVendorEnum_MobileAppVendor? appVendor,
+    $3293.MobileAppVendorEnum_MobileAppVendor? appVendor,
     $fixnum.Int64? appAnalyticsProviderId,
     $core.String? appId,
   }) {
@@ -173,7 +173,7 @@ class ThirdPartyAppAnalyticsLinkIdentifier extends $pb.GeneratedMessage {
   factory ThirdPartyAppAnalyticsLinkIdentifier.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ThirdPartyAppAnalyticsLinkIdentifier', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..e<$3292.MobileAppVendorEnum_MobileAppVendor>(3, _omitFieldNames ? '' : 'appVendor', $pb.PbFieldType.OE, defaultOrMaker: $3292.MobileAppVendorEnum_MobileAppVendor.UNSPECIFIED, valueOf: $3292.MobileAppVendorEnum_MobileAppVendor.valueOf, enumValues: $3292.MobileAppVendorEnum_MobileAppVendor.values)
+    ..e<$3293.MobileAppVendorEnum_MobileAppVendor>(3, _omitFieldNames ? '' : 'appVendor', $pb.PbFieldType.OE, defaultOrMaker: $3293.MobileAppVendorEnum_MobileAppVendor.UNSPECIFIED, valueOf: $3293.MobileAppVendorEnum_MobileAppVendor.valueOf, enumValues: $3293.MobileAppVendorEnum_MobileAppVendor.values)
     ..aInt64(4, _omitFieldNames ? '' : 'appAnalyticsProviderId')
     ..aOS(5, _omitFieldNames ? '' : 'appId')
     ..hasRequiredFields = false
@@ -205,9 +205,9 @@ class ThirdPartyAppAnalyticsLinkIdentifier extends $pb.GeneratedMessage {
   /// party app analytics link. It is unable to be modified after the creation of
   /// the link.
   @$pb.TagNumber(3)
-  $3292.MobileAppVendorEnum_MobileAppVendor get appVendor => $_getN(0);
+  $3293.MobileAppVendorEnum_MobileAppVendor get appVendor => $_getN(0);
   @$pb.TagNumber(3)
-  set appVendor($3292.MobileAppVendorEnum_MobileAppVendor v) { setField(3, v); }
+  set appVendor($3293.MobileAppVendorEnum_MobileAppVendor v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAppVendor() => $_has(0);
   @$pb.TagNumber(3)

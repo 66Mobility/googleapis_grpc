@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/experiment_metric.pbenum.dart' as $2604;
-import '../enums/experiment_metric_direction.pbenum.dart' as $2605;
+import '../enums/experiment_metric.pbenum.dart' as $2605;
+import '../enums/experiment_metric_direction.pbenum.dart' as $2606;
 
 /// A metric goal for an experiment.
 class MetricGoal extends $pb.GeneratedMessage {
   factory MetricGoal({
-    $2604.ExperimentMetricEnum_ExperimentMetric? metric,
-    $2605.ExperimentMetricDirectionEnum_ExperimentMetricDirection? direction,
+    $2605.ExperimentMetricEnum_ExperimentMetric? metric,
+    $2606.ExperimentMetricDirectionEnum_ExperimentMetricDirection? direction,
   }) {
     final $result = create();
     if (metric != null) {
@@ -36,8 +36,8 @@ class MetricGoal extends $pb.GeneratedMessage {
   factory MetricGoal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetricGoal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..e<$2604.ExperimentMetricEnum_ExperimentMetric>(1, _omitFieldNames ? '' : 'metric', $pb.PbFieldType.OE, defaultOrMaker: $2604.ExperimentMetricEnum_ExperimentMetric.UNSPECIFIED, valueOf: $2604.ExperimentMetricEnum_ExperimentMetric.valueOf, enumValues: $2604.ExperimentMetricEnum_ExperimentMetric.values)
-    ..e<$2605.ExperimentMetricDirectionEnum_ExperimentMetricDirection>(2, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE, defaultOrMaker: $2605.ExperimentMetricDirectionEnum_ExperimentMetricDirection.UNSPECIFIED, valueOf: $2605.ExperimentMetricDirectionEnum_ExperimentMetricDirection.valueOf, enumValues: $2605.ExperimentMetricDirectionEnum_ExperimentMetricDirection.values)
+    ..e<$2605.ExperimentMetricEnum_ExperimentMetric>(1, _omitFieldNames ? '' : 'metric', $pb.PbFieldType.OE, defaultOrMaker: $2605.ExperimentMetricEnum_ExperimentMetric.UNSPECIFIED, valueOf: $2605.ExperimentMetricEnum_ExperimentMetric.valueOf, enumValues: $2605.ExperimentMetricEnum_ExperimentMetric.values)
+    ..e<$2606.ExperimentMetricDirectionEnum_ExperimentMetricDirection>(2, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE, defaultOrMaker: $2606.ExperimentMetricDirectionEnum_ExperimentMetricDirection.UNSPECIFIED, valueOf: $2606.ExperimentMetricDirectionEnum_ExperimentMetricDirection.valueOf, enumValues: $2606.ExperimentMetricDirectionEnum_ExperimentMetricDirection.values)
     ..hasRequiredFields = false
   ;
 
@@ -65,9 +65,9 @@ class MetricGoal extends $pb.GeneratedMessage {
   /// The metric of the goal. For example, clicks, impressions, cost,
   /// conversions, etc.
   @$pb.TagNumber(1)
-  $2604.ExperimentMetricEnum_ExperimentMetric get metric => $_getN(0);
+  $2605.ExperimentMetricEnum_ExperimentMetric get metric => $_getN(0);
   @$pb.TagNumber(1)
-  set metric($2604.ExperimentMetricEnum_ExperimentMetric v) { setField(1, v); }
+  set metric($2605.ExperimentMetricEnum_ExperimentMetric v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetric() => $_has(0);
   @$pb.TagNumber(1)
@@ -76,9 +76,9 @@ class MetricGoal extends $pb.GeneratedMessage {
   /// The metric direction of the goal. For example, increase, decrease, no
   /// change.
   @$pb.TagNumber(2)
-  $2605.ExperimentMetricDirectionEnum_ExperimentMetricDirection get direction => $_getN(1);
+  $2606.ExperimentMetricDirectionEnum_ExperimentMetricDirection get direction => $_getN(1);
   @$pb.TagNumber(2)
-  set direction($2605.ExperimentMetricDirectionEnum_ExperimentMetricDirection v) { setField(2, v); }
+  set direction($2606.ExperimentMetricDirectionEnum_ExperimentMetricDirection v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDirection() => $_has(1);
   @$pb.TagNumber(2)

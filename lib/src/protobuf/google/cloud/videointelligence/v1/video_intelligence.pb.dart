@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'video_intelligence.pbenum.dart';
 
 export 'video_intelligence.pbenum.dart';
@@ -881,8 +881,8 @@ class TextDetectionConfig extends $pb.GeneratedMessage {
 /// Video segment.
 class VideoSegment extends $pb.GeneratedMessage {
   factory VideoSegment({
-    $1737.Duration? startTimeOffset,
-    $1737.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
   }) {
     final $result = create();
     if (startTimeOffset != null) {
@@ -898,8 +898,8 @@ class VideoSegment extends $pb.GeneratedMessage {
   factory VideoSegment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoSegment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -927,28 +927,28 @@ class VideoSegment extends $pb.GeneratedMessage {
   /// Time-offset, relative to the beginning of the video,
   /// corresponding to the start of the segment (inclusive).
   @$pb.TagNumber(1)
-  $1737.Duration get startTimeOffset => $_getN(0);
+  $1738.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($1737.Duration v) { setField(1, v); }
+  set startTimeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(0);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(0);
 
   /// Time-offset, relative to the beginning of the video,
   /// corresponding to the end of the segment (inclusive).
   @$pb.TagNumber(2)
-  $1737.Duration get endTimeOffset => $_getN(1);
+  $1738.Duration get endTimeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endTimeOffset($1737.Duration v) { setField(2, v); }
+  set endTimeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(1);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(1);
 }
 
 /// Video segment level annotation results for label detection.
@@ -1023,7 +1023,7 @@ class LabelSegment extends $pb.GeneratedMessage {
 /// Video frame level annotation results for label detection.
 class LabelFrame extends $pb.GeneratedMessage {
   factory LabelFrame({
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
     $core.double? confidence,
   }) {
     final $result = create();
@@ -1040,7 +1040,7 @@ class LabelFrame extends $pb.GeneratedMessage {
   factory LabelFrame.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelFrame', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -1069,15 +1069,15 @@ class LabelFrame extends $pb.GeneratedMessage {
   /// Time-offset, relative to the beginning of the video, corresponding to the
   /// video frame for this location.
   @$pb.TagNumber(1)
-  $1737.Duration get timeOffset => $_getN(0);
+  $1738.Duration get timeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set timeOffset($1737.Duration v) { setField(1, v); }
+  set timeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTimeOffset() => $_ensure(0);
+  $1738.Duration ensureTimeOffset() => $_ensure(0);
 
   /// Confidence that the label is accurate. Range: [0, 1].
   @$pb.TagNumber(2)
@@ -1276,7 +1276,7 @@ class LabelAnnotation extends $pb.GeneratedMessage {
 /// Video frame level annotation results for explicit content.
 class ExplicitContentFrame extends $pb.GeneratedMessage {
   factory ExplicitContentFrame({
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
     Likelihood? pornographyLikelihood,
   }) {
     final $result = create();
@@ -1293,7 +1293,7 @@ class ExplicitContentFrame extends $pb.GeneratedMessage {
   factory ExplicitContentFrame.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplicitContentFrame', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..e<Likelihood>(2, _omitFieldNames ? '' : 'pornographyLikelihood', $pb.PbFieldType.OE, defaultOrMaker: Likelihood.LIKELIHOOD_UNSPECIFIED, valueOf: Likelihood.valueOf, enumValues: Likelihood.values)
     ..hasRequiredFields = false
   ;
@@ -1322,15 +1322,15 @@ class ExplicitContentFrame extends $pb.GeneratedMessage {
   /// Time-offset, relative to the beginning of the video, corresponding to the
   /// video frame for this location.
   @$pb.TagNumber(1)
-  $1737.Duration get timeOffset => $_getN(0);
+  $1738.Duration get timeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set timeOffset($1737.Duration v) { setField(1, v); }
+  set timeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTimeOffset() => $_ensure(0);
+  $1738.Duration ensureTimeOffset() => $_ensure(0);
 
   /// Likelihood of the pornography content..
   @$pb.TagNumber(2)
@@ -1700,7 +1700,7 @@ class FaceSegment extends $pb.GeneratedMessage {
 class FaceFrame extends $pb.GeneratedMessage {
   factory FaceFrame({
     $core.Iterable<NormalizedBoundingBox>? normalizedBoundingBoxes,
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
   }) {
     final $result = create();
     if (normalizedBoundingBoxes != null) {
@@ -1717,7 +1717,7 @@ class FaceFrame extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FaceFrame', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
     ..pc<NormalizedBoundingBox>(1, _omitFieldNames ? '' : 'normalizedBoundingBoxes', $pb.PbFieldType.PM, subBuilder: NormalizedBoundingBox.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1751,15 +1751,15 @@ class FaceFrame extends $pb.GeneratedMessage {
   /// Time-offset, relative to the beginning of the video,
   /// corresponding to the video frame for this location.
   @$pb.TagNumber(2)
-  $1737.Duration get timeOffset => $_getN(1);
+  $1738.Duration get timeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set timeOffset($1737.Duration v) { setField(2, v); }
+  set timeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeOffset() => $_ensure(1);
+  $1738.Duration ensureTimeOffset() => $_ensure(1);
 }
 
 /// Deprecated. No effect.
@@ -1838,7 +1838,7 @@ class FaceAnnotation extends $pb.GeneratedMessage {
 class TimestampedObject extends $pb.GeneratedMessage {
   factory TimestampedObject({
     NormalizedBoundingBox? normalizedBoundingBox,
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
     $core.Iterable<DetectedAttribute>? attributes,
     $core.Iterable<DetectedLandmark>? landmarks,
   }) {
@@ -1863,7 +1863,7 @@ class TimestampedObject extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimestampedObject', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
     ..aOM<NormalizedBoundingBox>(1, _omitFieldNames ? '' : 'normalizedBoundingBox', subBuilder: NormalizedBoundingBox.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..pc<DetectedAttribute>(3, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: DetectedAttribute.create)
     ..pc<DetectedLandmark>(4, _omitFieldNames ? '' : 'landmarks', $pb.PbFieldType.PM, subBuilder: DetectedLandmark.create)
     ..hasRequiredFields = false
@@ -1905,15 +1905,15 @@ class TimestampedObject extends $pb.GeneratedMessage {
   /// Time-offset, relative to the beginning of the video,
   /// corresponding to the video frame for this object.
   @$pb.TagNumber(2)
-  $1737.Duration get timeOffset => $_getN(1);
+  $1738.Duration get timeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set timeOffset($1737.Duration v) { setField(2, v); }
+  set timeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeOffset() => $_ensure(1);
+  $1738.Duration ensureTimeOffset() => $_ensure(1);
 
   /// Optional. The attributes of the object in the bounding box.
   @$pb.TagNumber(3)
@@ -2192,7 +2192,7 @@ class VideoAnnotationResults extends $pb.GeneratedMessage {
     $core.Iterable<FaceAnnotation>? faceAnnotations,
     $core.Iterable<VideoSegment>? shotAnnotations,
     ExplicitContentAnnotation? explicitAnnotation,
-    $1795.Status? error,
+    $1796.Status? error,
     VideoSegment? segment,
     $core.Iterable<SpeechTranscription>? speechTranscriptions,
     $core.Iterable<TextAnnotation>? textAnnotations,
@@ -2270,7 +2270,7 @@ class VideoAnnotationResults extends $pb.GeneratedMessage {
     ..pc<FaceAnnotation>(5, _omitFieldNames ? '' : 'faceAnnotations', $pb.PbFieldType.PM, subBuilder: FaceAnnotation.create)
     ..pc<VideoSegment>(6, _omitFieldNames ? '' : 'shotAnnotations', $pb.PbFieldType.PM, subBuilder: VideoSegment.create)
     ..aOM<ExplicitContentAnnotation>(7, _omitFieldNames ? '' : 'explicitAnnotation', subBuilder: ExplicitContentAnnotation.create)
-    ..aOM<$1795.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<VideoSegment>(10, _omitFieldNames ? '' : 'segment', subBuilder: VideoSegment.create)
     ..pc<SpeechTranscription>(11, _omitFieldNames ? '' : 'speechTranscriptions', $pb.PbFieldType.PM, subBuilder: SpeechTranscription.create)
     ..pc<TextAnnotation>(12, _omitFieldNames ? '' : 'textAnnotations', $pb.PbFieldType.PM, subBuilder: TextAnnotation.create)
@@ -2354,15 +2354,15 @@ class VideoAnnotationResults extends $pb.GeneratedMessage {
   /// If set, indicates an error. Note that for a single `AnnotateVideoRequest`
   /// some videos may succeed and some may fail.
   @$pb.TagNumber(9)
-  $1795.Status get error => $_getN(7);
+  $1796.Status get error => $_getN(7);
   @$pb.TagNumber(9)
-  set error($1795.Status v) { setField(9, v); }
+  set error($1796.Status v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(9)
   void clearError() => clearField(9);
   @$pb.TagNumber(9)
-  $1795.Status ensureError() => $_ensure(7);
+  $1796.Status ensureError() => $_ensure(7);
 
   /// Video segment on which the annotation is run.
   @$pb.TagNumber(10)
@@ -2473,8 +2473,8 @@ class VideoAnnotationProgress extends $pb.GeneratedMessage {
   factory VideoAnnotationProgress({
     $core.String? inputUri,
     $core.int? progressPercent,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? updateTime,
     Feature? feature,
     VideoSegment? segment,
   }) {
@@ -2506,8 +2506,8 @@ class VideoAnnotationProgress extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoAnnotationProgress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'inputUri')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Feature>(5, _omitFieldNames ? '' : 'feature', $pb.PbFieldType.OE, defaultOrMaker: Feature.FEATURE_UNSPECIFIED, valueOf: Feature.valueOf, enumValues: Feature.values)
     ..aOM<VideoSegment>(6, _omitFieldNames ? '' : 'segment', subBuilder: VideoSegment.create)
     ..hasRequiredFields = false
@@ -2558,27 +2558,27 @@ class VideoAnnotationProgress extends $pb.GeneratedMessage {
 
   /// Time when the request was received.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Time of the most recent update.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Specifies which feature is being tracked if the request contains more than
   /// one feature.
@@ -3046,8 +3046,8 @@ class SpeechRecognitionAlternative extends $pb.GeneratedMessage {
 /// as `enable_word_time_offsets`.
 class WordInfo extends $pb.GeneratedMessage {
   factory WordInfo({
-    $1737.Duration? startTime,
-    $1737.Duration? endTime,
+    $1738.Duration? startTime,
+    $1738.Duration? endTime,
     $core.String? word,
     $core.double? confidence,
     $core.int? speakerTag,
@@ -3075,8 +3075,8 @@ class WordInfo extends $pb.GeneratedMessage {
   factory WordInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WordInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'word')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'speakerTag', $pb.PbFieldType.O3)
@@ -3109,30 +3109,30 @@ class WordInfo extends $pb.GeneratedMessage {
   /// `enable_word_time_offsets=true` and only in the top hypothesis. This is an
   /// experimental feature and the accuracy of the time offset can vary.
   @$pb.TagNumber(1)
-  $1737.Duration get startTime => $_getN(0);
+  $1738.Duration get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1737.Duration v) { setField(1, v); }
+  set startTime($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTime() => $_ensure(0);
+  $1738.Duration ensureStartTime() => $_ensure(0);
 
   /// Time offset relative to the beginning of the audio, and
   /// corresponding to the end of the spoken word. This field is only set if
   /// `enable_word_time_offsets=true` and only in the top hypothesis. This is an
   /// experimental feature and the accuracy of the time offset can vary.
   @$pb.TagNumber(2)
-  $1737.Duration get endTime => $_getN(1);
+  $1738.Duration get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1737.Duration v) { setField(2, v); }
+  set endTime($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndTime() => $_ensure(1);
+  $1738.Duration ensureEndTime() => $_ensure(1);
 
   /// The word corresponding to this set of information.
   @$pb.TagNumber(3)
@@ -3389,7 +3389,7 @@ class TextSegment extends $pb.GeneratedMessage {
 class TextFrame extends $pb.GeneratedMessage {
   factory TextFrame({
     NormalizedBoundingPoly? rotatedBoundingBox,
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
   }) {
     final $result = create();
     if (rotatedBoundingBox != null) {
@@ -3406,7 +3406,7 @@ class TextFrame extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextFrame', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
     ..aOM<NormalizedBoundingPoly>(1, _omitFieldNames ? '' : 'rotatedBoundingBox', subBuilder: NormalizedBoundingPoly.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -3445,15 +3445,15 @@ class TextFrame extends $pb.GeneratedMessage {
 
   /// Timestamp of this frame.
   @$pb.TagNumber(2)
-  $1737.Duration get timeOffset => $_getN(1);
+  $1738.Duration get timeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set timeOffset($1737.Duration v) { setField(2, v); }
+  set timeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeOffset() => $_ensure(1);
+  $1738.Duration ensureTimeOffset() => $_ensure(1);
 }
 
 /// Annotations related to one detected OCR text snippet. This will contain the
@@ -3539,7 +3539,7 @@ class TextAnnotation extends $pb.GeneratedMessage {
 class ObjectTrackingFrame extends $pb.GeneratedMessage {
   factory ObjectTrackingFrame({
     NormalizedBoundingBox? normalizedBoundingBox,
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
   }) {
     final $result = create();
     if (normalizedBoundingBox != null) {
@@ -3556,7 +3556,7 @@ class ObjectTrackingFrame extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ObjectTrackingFrame', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.videointelligence.v1'), createEmptyInstance: create)
     ..aOM<NormalizedBoundingBox>(1, _omitFieldNames ? '' : 'normalizedBoundingBox', subBuilder: NormalizedBoundingBox.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -3595,15 +3595,15 @@ class ObjectTrackingFrame extends $pb.GeneratedMessage {
 
   /// The timestamp of the frame in microseconds.
   @$pb.TagNumber(2)
-  $1737.Duration get timeOffset => $_getN(1);
+  $1738.Duration get timeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set timeOffset($1737.Duration v) { setField(2, v); }
+  set timeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeOffset() => $_ensure(1);
+  $1738.Duration ensureTimeOffset() => $_ensure(1);
 }
 
 enum ObjectTrackingAnnotation_TrackInfo {

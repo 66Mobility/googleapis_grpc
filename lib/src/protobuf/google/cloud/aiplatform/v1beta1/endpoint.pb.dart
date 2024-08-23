@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4281;
-import 'explanation.pb.dart' as $4285;
-import 'io.pb.dart' as $4277;
-import 'machine_resources.pb.dart' as $4287;
-import 'service_networking.pb.dart' as $4298;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4282;
+import 'explanation.pb.dart' as $4286;
+import 'io.pb.dart' as $4278;
+import 'machine_resources.pb.dart' as $4288;
+import 'service_networking.pb.dart' as $4299;
 
 /// Models are deployed into it, and afterwards Endpoint is called to obtain
 /// predictions and explanations.
@@ -31,15 +31,15 @@ class Endpoint extends $pb.GeneratedMessage {
     $core.Map<$core.String, $core.int>? trafficSplit,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4281.EncryptionSpec? encryptionSpec,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4282.EncryptionSpec? encryptionSpec,
     $core.String? network,
     $core.String? modelDeploymentMonitoringJob,
   @$core.Deprecated('This field is deprecated.')
     $core.bool? enablePrivateServiceConnect,
     PredictRequestResponseLoggingConfig? predictRequestResponseLoggingConfig,
-    $4298.PrivateServiceConnectConfig? privateServiceConnectConfig,
+    $4299.PrivateServiceConnectConfig? privateServiceConnectConfig,
     $core.bool? dedicatedEndpointEnabled,
     $core.String? dedicatedEndpointDns,
     $core.bool? satisfiesPzs,
@@ -118,14 +118,14 @@ class Endpoint extends $pb.GeneratedMessage {
     ..m<$core.String, $core.int>(5, _omitFieldNames ? '' : 'trafficSplit', entryClassName: 'Endpoint.TrafficSplitEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.O3, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'Endpoint.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4281.EncryptionSpec>(10, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4282.EncryptionSpec>(10, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOS(13, _omitFieldNames ? '' : 'network')
     ..aOS(14, _omitFieldNames ? '' : 'modelDeploymentMonitoringJob')
     ..aOB(17, _omitFieldNames ? '' : 'enablePrivateServiceConnect')
     ..aOM<PredictRequestResponseLoggingConfig>(18, _omitFieldNames ? '' : 'predictRequestResponseLoggingConfig', subBuilder: PredictRequestResponseLoggingConfig.create)
-    ..aOM<$4298.PrivateServiceConnectConfig>(21, _omitFieldNames ? '' : 'privateServiceConnectConfig', subBuilder: $4298.PrivateServiceConnectConfig.create)
+    ..aOM<$4299.PrivateServiceConnectConfig>(21, _omitFieldNames ? '' : 'privateServiceConnectConfig', subBuilder: $4299.PrivateServiceConnectConfig.create)
     ..aOB(24, _omitFieldNames ? '' : 'dedicatedEndpointEnabled')
     ..aOS(25, _omitFieldNames ? '' : 'dedicatedEndpointDns')
     ..aOB(27, _omitFieldNames ? '' : 'satisfiesPzs')
@@ -229,41 +229,41 @@ class Endpoint extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Endpoint was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Timestamp when this Endpoint was last updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Customer-managed encryption key spec for an Endpoint. If set, this
   /// Endpoint and all sub-resources of this Endpoint will be secured by
   /// this key.
   @$pb.TagNumber(10)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(9);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(9);
   @$pb.TagNumber(10)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(10, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasEncryptionSpec() => $_has(9);
   @$pb.TagNumber(10)
   void clearEncryptionSpec() => clearField(10);
   @$pb.TagNumber(10)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(9);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(9);
 
   ///  Optional. The full name of the Google Compute Engine
   ///  [network](https://cloud.google.com//compute/docs/networks-and-firewalls#networks)
@@ -341,15 +341,15 @@ class Endpoint extends $pb.GeneratedMessage {
   ///  [private_service_connect_config][google.cloud.aiplatform.v1beta1.Endpoint.private_service_connect_config]
   ///  are mutually exclusive.
   @$pb.TagNumber(21)
-  $4298.PrivateServiceConnectConfig get privateServiceConnectConfig => $_getN(14);
+  $4299.PrivateServiceConnectConfig get privateServiceConnectConfig => $_getN(14);
   @$pb.TagNumber(21)
-  set privateServiceConnectConfig($4298.PrivateServiceConnectConfig v) { setField(21, v); }
+  set privateServiceConnectConfig($4299.PrivateServiceConnectConfig v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasPrivateServiceConnectConfig() => $_has(14);
   @$pb.TagNumber(21)
   void clearPrivateServiceConnectConfig() => clearField(21);
   @$pb.TagNumber(21)
-  $4298.PrivateServiceConnectConfig ensurePrivateServiceConnectConfig() => $_ensure(14);
+  $4299.PrivateServiceConnectConfig ensurePrivateServiceConnectConfig() => $_ensure(14);
 
   /// If true, the endpoint will be exposed through a dedicated
   /// DNS [Endpoint.dedicated_endpoint_dns]. Your request to the dedicated DNS
@@ -414,10 +414,10 @@ class DeployedModel extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? model,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $4287.DedicatedResources? dedicatedResources,
-    $4287.AutomaticResources? automaticResources,
-    $4285.ExplanationSpec? explanationSpec,
+    $1776.Timestamp? createTime,
+    $4288.DedicatedResources? dedicatedResources,
+    $4288.AutomaticResources? automaticResources,
+    $4286.ExplanationSpec? explanationSpec,
     $core.String? serviceAccount,
     $core.bool? enableContainerLogging,
     $core.bool? enableAccessLogging,
@@ -486,10 +486,10 @@ class DeployedModel extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'model')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4287.DedicatedResources>(7, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4287.DedicatedResources.create)
-    ..aOM<$4287.AutomaticResources>(8, _omitFieldNames ? '' : 'automaticResources', subBuilder: $4287.AutomaticResources.create)
-    ..aOM<$4285.ExplanationSpec>(9, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4285.ExplanationSpec.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4288.DedicatedResources>(7, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4288.DedicatedResources.create)
+    ..aOM<$4288.AutomaticResources>(8, _omitFieldNames ? '' : 'automaticResources', subBuilder: $4288.AutomaticResources.create)
+    ..aOM<$4286.ExplanationSpec>(9, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4286.ExplanationSpec.create)
     ..aOS(11, _omitFieldNames ? '' : 'serviceAccount')
     ..aOB(12, _omitFieldNames ? '' : 'enableContainerLogging')
     ..aOB(13, _omitFieldNames ? '' : 'enableAccessLogging')
@@ -569,41 +569,41 @@ class DeployedModel extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the DeployedModel was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// A description of resources that are dedicated to the DeployedModel, and
   /// that need a higher degree of manual configuration.
   @$pb.TagNumber(7)
-  $4287.DedicatedResources get dedicatedResources => $_getN(4);
+  $4288.DedicatedResources get dedicatedResources => $_getN(4);
   @$pb.TagNumber(7)
-  set dedicatedResources($4287.DedicatedResources v) { setField(7, v); }
+  set dedicatedResources($4288.DedicatedResources v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDedicatedResources() => $_has(4);
   @$pb.TagNumber(7)
   void clearDedicatedResources() => clearField(7);
   @$pb.TagNumber(7)
-  $4287.DedicatedResources ensureDedicatedResources() => $_ensure(4);
+  $4288.DedicatedResources ensureDedicatedResources() => $_ensure(4);
 
   /// A description of resources that to large degree are decided by Vertex
   /// AI, and require only a modest additional configuration.
   @$pb.TagNumber(8)
-  $4287.AutomaticResources get automaticResources => $_getN(5);
+  $4288.AutomaticResources get automaticResources => $_getN(5);
   @$pb.TagNumber(8)
-  set automaticResources($4287.AutomaticResources v) { setField(8, v); }
+  set automaticResources($4288.AutomaticResources v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAutomaticResources() => $_has(5);
   @$pb.TagNumber(8)
   void clearAutomaticResources() => clearField(8);
   @$pb.TagNumber(8)
-  $4287.AutomaticResources ensureAutomaticResources() => $_ensure(5);
+  $4288.AutomaticResources ensureAutomaticResources() => $_ensure(5);
 
   ///  Explanation configuration for this DeployedModel.
   ///
@@ -623,15 +623,15 @@ class DeployedModel extends $pb.GeneratedMessage {
   ///  [explanation_spec][google.cloud.aiplatform.v1beta1.DeployedModel.explanation_spec]
   ///  will be used for the explanation configuration.
   @$pb.TagNumber(9)
-  $4285.ExplanationSpec get explanationSpec => $_getN(6);
+  $4286.ExplanationSpec get explanationSpec => $_getN(6);
   @$pb.TagNumber(9)
-  set explanationSpec($4285.ExplanationSpec v) { setField(9, v); }
+  set explanationSpec($4286.ExplanationSpec v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExplanationSpec() => $_has(6);
   @$pb.TagNumber(9)
   void clearExplanationSpec() => clearField(9);
   @$pb.TagNumber(9)
-  $4285.ExplanationSpec ensureExplanationSpec() => $_ensure(6);
+  $4286.ExplanationSpec ensureExplanationSpec() => $_ensure(6);
 
   ///  The service account that the DeployedModel's container runs as. Specify the
   ///  email address of the service account. If this service account is not
@@ -838,7 +838,7 @@ class PredictRequestResponseLoggingConfig extends $pb.GeneratedMessage {
   factory PredictRequestResponseLoggingConfig({
     $core.bool? enabled,
     $core.double? samplingRate,
-    $4277.BigQueryDestination? bigqueryDestination,
+    $4278.BigQueryDestination? bigqueryDestination,
   }) {
     final $result = create();
     if (enabled != null) {
@@ -859,7 +859,7 @@ class PredictRequestResponseLoggingConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictRequestResponseLoggingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..a<$core.double>(2, _omitFieldNames ? '' : 'samplingRate', $pb.PbFieldType.OD)
-    ..aOM<$4277.BigQueryDestination>(3, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4277.BigQueryDestination.create)
+    ..aOM<$4278.BigQueryDestination>(3, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4278.BigQueryDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -912,15 +912,15 @@ class PredictRequestResponseLoggingConfig extends $pb.GeneratedMessage {
   /// most special characters will become underscores). If no table name is
   /// given, a new table will be created with name `request_response_logging`
   @$pb.TagNumber(3)
-  $4277.BigQueryDestination get bigqueryDestination => $_getN(2);
+  $4278.BigQueryDestination get bigqueryDestination => $_getN(2);
   @$pb.TagNumber(3)
-  set bigqueryDestination($4277.BigQueryDestination v) { setField(3, v); }
+  set bigqueryDestination($4278.BigQueryDestination v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBigqueryDestination() => $_has(2);
   @$pb.TagNumber(3)
   void clearBigqueryDestination() => clearField(3);
   @$pb.TagNumber(3)
-  $4277.BigQueryDestination ensureBigqueryDestination() => $_ensure(2);
+  $4278.BigQueryDestination ensureBigqueryDestination() => $_ensure(2);
 }
 
 

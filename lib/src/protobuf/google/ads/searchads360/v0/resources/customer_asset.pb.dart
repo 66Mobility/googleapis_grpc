@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_link_status.pbenum.dart' as $4023;
+import '../enums/asset_link_status.pbenum.dart' as $4024;
 
 /// A link between a customer and an asset.
 class CustomerAsset extends $pb.GeneratedMessage {
   factory CustomerAsset({
     $core.String? resourceName,
     $core.String? asset,
-    $4023.AssetLinkStatusEnum_AssetLinkStatus? status,
+    $4024.AssetLinkStatusEnum_AssetLinkStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -41,7 +41,7 @@ class CustomerAsset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'asset')
-    ..e<$4023.AssetLinkStatusEnum_AssetLinkStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4023.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4023.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4023.AssetLinkStatusEnum_AssetLinkStatus.values)
+    ..e<$4024.AssetLinkStatusEnum_AssetLinkStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4024.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4024.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4024.AssetLinkStatusEnum_AssetLinkStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -91,9 +91,9 @@ class CustomerAsset extends $pb.GeneratedMessage {
 
   /// Status of the customer asset.
   @$pb.TagNumber(4)
-  $4023.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(2);
+  $4024.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(2);
   @$pb.TagNumber(4)
-  set status($4023.AssetLinkStatusEnum_AssetLinkStatus v) { setField(4, v); }
+  set status($4024.AssetLinkStatusEnum_AssetLinkStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(4)

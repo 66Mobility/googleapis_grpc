@@ -13,21 +13,21 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'decimal_target_types.pbenum.dart' as $4399;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'decimal_target_types.pbenum.dart' as $4400;
 import 'external_data_config.pbenum.dart';
-import 'file_set_specification_type.pbenum.dart' as $4401;
-import 'hive_partitioning.pb.dart' as $4397;
-import 'json_extension.pbenum.dart' as $4400;
-import 'map_target_type.pbenum.dart' as $4398;
-import 'table_schema.pb.dart' as $4396;
+import 'file_set_specification_type.pbenum.dart' as $4402;
+import 'hive_partitioning.pb.dart' as $4398;
+import 'json_extension.pbenum.dart' as $4401;
+import 'map_target_type.pbenum.dart' as $4399;
+import 'table_schema.pb.dart' as $4397;
 
 export 'external_data_config.pbenum.dart';
 
 /// Options for external data sources.
 class AvroOptions extends $pb.GeneratedMessage {
   factory AvroOptions({
-    $1780.BoolValue? useAvroLogicalTypes,
+    $1781.BoolValue? useAvroLogicalTypes,
   }) {
     final $result = create();
     if (useAvroLogicalTypes != null) {
@@ -40,7 +40,7 @@ class AvroOptions extends $pb.GeneratedMessage {
   factory AvroOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AvroOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.BoolValue>(1, _omitFieldNames ? '' : 'useAvroLogicalTypes', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'useAvroLogicalTypes', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -69,23 +69,23 @@ class AvroOptions extends $pb.GeneratedMessage {
   /// logical types as the corresponding BigQuery data type (for example,
   /// TIMESTAMP), instead of using the raw type (for example, INTEGER).
   @$pb.TagNumber(1)
-  $1780.BoolValue get useAvroLogicalTypes => $_getN(0);
+  $1781.BoolValue get useAvroLogicalTypes => $_getN(0);
   @$pb.TagNumber(1)
-  set useAvroLogicalTypes($1780.BoolValue v) { setField(1, v); }
+  set useAvroLogicalTypes($1781.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUseAvroLogicalTypes() => $_has(0);
   @$pb.TagNumber(1)
   void clearUseAvroLogicalTypes() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BoolValue ensureUseAvroLogicalTypes() => $_ensure(0);
+  $1781.BoolValue ensureUseAvroLogicalTypes() => $_ensure(0);
 }
 
 /// Parquet Options for load and make external tables.
 class ParquetOptions extends $pb.GeneratedMessage {
   factory ParquetOptions({
-    $1780.BoolValue? enumAsString,
-    $1780.BoolValue? enableListInference,
-    $4398.MapTargetType? mapTargetType,
+    $1781.BoolValue? enumAsString,
+    $1781.BoolValue? enableListInference,
+    $4399.MapTargetType? mapTargetType,
   }) {
     final $result = create();
     if (enumAsString != null) {
@@ -104,9 +104,9 @@ class ParquetOptions extends $pb.GeneratedMessage {
   factory ParquetOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ParquetOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.BoolValue>(1, _omitFieldNames ? '' : 'enumAsString', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(2, _omitFieldNames ? '' : 'enableListInference', subBuilder: $1780.BoolValue.create)
-    ..e<$4398.MapTargetType>(3, _omitFieldNames ? '' : 'mapTargetType', $pb.PbFieldType.OE, defaultOrMaker: $4398.MapTargetType.MAP_TARGET_TYPE_UNSPECIFIED, valueOf: $4398.MapTargetType.valueOf, enumValues: $4398.MapTargetType.values)
+    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'enumAsString', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(2, _omitFieldNames ? '' : 'enableListInference', subBuilder: $1781.BoolValue.create)
+    ..e<$4399.MapTargetType>(3, _omitFieldNames ? '' : 'mapTargetType', $pb.PbFieldType.OE, defaultOrMaker: $4399.MapTargetType.MAP_TARGET_TYPE_UNSPECIFIED, valueOf: $4399.MapTargetType.valueOf, enumValues: $4399.MapTargetType.values)
     ..hasRequiredFields = false
   ;
 
@@ -134,34 +134,34 @@ class ParquetOptions extends $pb.GeneratedMessage {
   /// Optional. Indicates whether to infer Parquet ENUM logical type as STRING
   /// instead of BYTES by default.
   @$pb.TagNumber(1)
-  $1780.BoolValue get enumAsString => $_getN(0);
+  $1781.BoolValue get enumAsString => $_getN(0);
   @$pb.TagNumber(1)
-  set enumAsString($1780.BoolValue v) { setField(1, v); }
+  set enumAsString($1781.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEnumAsString() => $_has(0);
   @$pb.TagNumber(1)
   void clearEnumAsString() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BoolValue ensureEnumAsString() => $_ensure(0);
+  $1781.BoolValue ensureEnumAsString() => $_ensure(0);
 
   /// Optional. Indicates whether to use schema inference specifically for
   /// Parquet LIST logical type.
   @$pb.TagNumber(2)
-  $1780.BoolValue get enableListInference => $_getN(1);
+  $1781.BoolValue get enableListInference => $_getN(1);
   @$pb.TagNumber(2)
-  set enableListInference($1780.BoolValue v) { setField(2, v); }
+  set enableListInference($1781.BoolValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEnableListInference() => $_has(1);
   @$pb.TagNumber(2)
   void clearEnableListInference() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.BoolValue ensureEnableListInference() => $_ensure(1);
+  $1781.BoolValue ensureEnableListInference() => $_ensure(1);
 
   /// Optional. Indicates how to represent a Parquet map if present.
   @$pb.TagNumber(3)
-  $4398.MapTargetType get mapTargetType => $_getN(2);
+  $4399.MapTargetType get mapTargetType => $_getN(2);
   @$pb.TagNumber(3)
-  set mapTargetType($4398.MapTargetType v) { setField(3, v); }
+  set mapTargetType($4399.MapTargetType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMapTargetType() => $_has(2);
   @$pb.TagNumber(3)
@@ -172,13 +172,13 @@ class ParquetOptions extends $pb.GeneratedMessage {
 class CsvOptions extends $pb.GeneratedMessage {
   factory CsvOptions({
     $core.String? fieldDelimiter,
-    $1780.Int64Value? skipLeadingRows,
-    $1780.StringValue? quote,
-    $1780.BoolValue? allowQuotedNewlines,
-    $1780.BoolValue? allowJaggedRows,
+    $1781.Int64Value? skipLeadingRows,
+    $1781.StringValue? quote,
+    $1781.BoolValue? allowQuotedNewlines,
+    $1781.BoolValue? allowJaggedRows,
     $core.String? encoding,
-    $1780.BoolValue? preserveAsciiControlCharacters,
-    $1780.StringValue? nullMarker,
+    $1781.BoolValue? preserveAsciiControlCharacters,
+    $1781.StringValue? nullMarker,
   }) {
     final $result = create();
     if (fieldDelimiter != null) {
@@ -213,13 +213,13 @@ class CsvOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CsvOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'fieldDelimiter')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'skipLeadingRows', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.StringValue>(3, _omitFieldNames ? '' : 'quote', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.BoolValue>(4, _omitFieldNames ? '' : 'allowQuotedNewlines', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(5, _omitFieldNames ? '' : 'allowJaggedRows', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'skipLeadingRows', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.StringValue>(3, _omitFieldNames ? '' : 'quote', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.BoolValue>(4, _omitFieldNames ? '' : 'allowQuotedNewlines', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(5, _omitFieldNames ? '' : 'allowJaggedRows', subBuilder: $1781.BoolValue.create)
     ..aOS(6, _omitFieldNames ? '' : 'encoding')
-    ..aOM<$1780.BoolValue>(7, _omitFieldNames ? '' : 'preserveAsciiControlCharacters', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.StringValue>(8, _omitFieldNames ? '' : 'nullMarker', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.BoolValue>(7, _omitFieldNames ? '' : 'preserveAsciiControlCharacters', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.StringValue>(8, _omitFieldNames ? '' : 'nullMarker', subBuilder: $1781.StringValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -276,15 +276,15 @@ class CsvOptions extends $pb.GeneratedMessage {
   ///    headers in row N. If headers are not detected, row N is just skipped.
   ///    Otherwise row N is used to extract column names for the detected schema.
   @$pb.TagNumber(2)
-  $1780.Int64Value get skipLeadingRows => $_getN(1);
+  $1781.Int64Value get skipLeadingRows => $_getN(1);
   @$pb.TagNumber(2)
-  set skipLeadingRows($1780.Int64Value v) { setField(2, v); }
+  set skipLeadingRows($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSkipLeadingRows() => $_has(1);
   @$pb.TagNumber(2)
   void clearSkipLeadingRows() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureSkipLeadingRows() => $_ensure(1);
+  $1781.Int64Value ensureSkipLeadingRows() => $_ensure(1);
 
   /// Optional. The value that is used to quote data sections in a CSV file.
   /// BigQuery converts the string to ISO-8859-1 encoding, and then uses the
@@ -299,28 +299,28 @@ class CsvOptions extends $pb.GeneratedMessage {
   /// with an additional matching quote character. For example, if you want to
   /// escape the default character  ' " ', use ' "" '.
   @$pb.TagNumber(3)
-  $1780.StringValue get quote => $_getN(2);
+  $1781.StringValue get quote => $_getN(2);
   @$pb.TagNumber(3)
-  set quote($1780.StringValue v) { setField(3, v); }
+  set quote($1781.StringValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasQuote() => $_has(2);
   @$pb.TagNumber(3)
   void clearQuote() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.StringValue ensureQuote() => $_ensure(2);
+  $1781.StringValue ensureQuote() => $_ensure(2);
 
   /// Optional. Indicates if BigQuery should allow quoted data sections that
   /// contain newline characters in a CSV file. The default value is false.
   @$pb.TagNumber(4)
-  $1780.BoolValue get allowQuotedNewlines => $_getN(3);
+  $1781.BoolValue get allowQuotedNewlines => $_getN(3);
   @$pb.TagNumber(4)
-  set allowQuotedNewlines($1780.BoolValue v) { setField(4, v); }
+  set allowQuotedNewlines($1781.BoolValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAllowQuotedNewlines() => $_has(3);
   @$pb.TagNumber(4)
   void clearAllowQuotedNewlines() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.BoolValue ensureAllowQuotedNewlines() => $_ensure(3);
+  $1781.BoolValue ensureAllowQuotedNewlines() => $_ensure(3);
 
   /// Optional. Indicates if BigQuery should accept rows that are missing
   /// trailing optional columns. If true, BigQuery treats missing trailing
@@ -329,15 +329,15 @@ class CsvOptions extends $pb.GeneratedMessage {
   /// and if there are too many bad records, an invalid error is returned in the
   /// job result. The default value is false.
   @$pb.TagNumber(5)
-  $1780.BoolValue get allowJaggedRows => $_getN(4);
+  $1781.BoolValue get allowJaggedRows => $_getN(4);
   @$pb.TagNumber(5)
-  set allowJaggedRows($1780.BoolValue v) { setField(5, v); }
+  set allowJaggedRows($1781.BoolValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAllowJaggedRows() => $_has(4);
   @$pb.TagNumber(5)
   void clearAllowJaggedRows() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.BoolValue ensureAllowJaggedRows() => $_ensure(4);
+  $1781.BoolValue ensureAllowJaggedRows() => $_ensure(4);
 
   /// Optional. The character encoding of the data.
   /// The supported values are UTF-8, ISO-8859-1, UTF-16BE, UTF-16LE, UTF-32BE,
@@ -356,15 +356,15 @@ class CsvOptions extends $pb.GeneratedMessage {
   /// Optional. Indicates if the embedded ASCII control characters (the first 32
   /// characters in the ASCII-table, from '\x00' to '\x1F') are preserved.
   @$pb.TagNumber(7)
-  $1780.BoolValue get preserveAsciiControlCharacters => $_getN(6);
+  $1781.BoolValue get preserveAsciiControlCharacters => $_getN(6);
   @$pb.TagNumber(7)
-  set preserveAsciiControlCharacters($1780.BoolValue v) { setField(7, v); }
+  set preserveAsciiControlCharacters($1781.BoolValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPreserveAsciiControlCharacters() => $_has(6);
   @$pb.TagNumber(7)
   void clearPreserveAsciiControlCharacters() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.BoolValue ensurePreserveAsciiControlCharacters() => $_ensure(6);
+  $1781.BoolValue ensurePreserveAsciiControlCharacters() => $_ensure(6);
 
   /// Optional. Specifies a string that represents a null value in a CSV file.
   /// For example, if you specify "\N", BigQuery interprets "\N" as a null value
@@ -374,15 +374,15 @@ class CsvOptions extends $pb.GeneratedMessage {
   /// types except for STRING and BYTE. For STRING and BYTE columns, BigQuery
   /// interprets the empty string as an empty value.
   @$pb.TagNumber(8)
-  $1780.StringValue get nullMarker => $_getN(7);
+  $1781.StringValue get nullMarker => $_getN(7);
   @$pb.TagNumber(8)
-  set nullMarker($1780.StringValue v) { setField(8, v); }
+  set nullMarker($1781.StringValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasNullMarker() => $_has(7);
   @$pb.TagNumber(8)
   void clearNullMarker() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.StringValue ensureNullMarker() => $_ensure(7);
+  $1781.StringValue ensureNullMarker() => $_ensure(7);
 }
 
 /// Json Options for load and make external tables.
@@ -442,12 +442,12 @@ class JsonOptions extends $pb.GeneratedMessage {
 /// Information related to a Bigtable column.
 class BigtableColumn extends $pb.GeneratedMessage {
   factory BigtableColumn({
-    $1780.BytesValue? qualifierEncoded,
-    $1780.StringValue? qualifierString,
+    $1781.BytesValue? qualifierEncoded,
+    $1781.StringValue? qualifierString,
     $core.String? fieldName,
     $core.String? type,
     $core.String? encoding,
-    $1780.BoolValue? onlyReadLatest,
+    $1781.BoolValue? onlyReadLatest,
   }) {
     final $result = create();
     if (qualifierEncoded != null) {
@@ -475,12 +475,12 @@ class BigtableColumn extends $pb.GeneratedMessage {
   factory BigtableColumn.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigtableColumn', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.BytesValue>(1, _omitFieldNames ? '' : 'qualifierEncoded', subBuilder: $1780.BytesValue.create)
-    ..aOM<$1780.StringValue>(2, _omitFieldNames ? '' : 'qualifierString', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.BytesValue>(1, _omitFieldNames ? '' : 'qualifierEncoded', subBuilder: $1781.BytesValue.create)
+    ..aOM<$1781.StringValue>(2, _omitFieldNames ? '' : 'qualifierString', subBuilder: $1781.StringValue.create)
     ..aOS(3, _omitFieldNames ? '' : 'fieldName')
     ..aOS(4, _omitFieldNames ? '' : 'type')
     ..aOS(5, _omitFieldNames ? '' : 'encoding')
-    ..aOM<$1780.BoolValue>(6, _omitFieldNames ? '' : 'onlyReadLatest', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(6, _omitFieldNames ? '' : 'onlyReadLatest', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -515,27 +515,27 @@ class BigtableColumn extends $pb.GeneratedMessage {
   /// qualifier is not a valid BigQuery field identifier i.e. does not match
   /// [a-zA-Z][a-zA-Z0-9_]*, a valid identifier must be provided as field_name.
   @$pb.TagNumber(1)
-  $1780.BytesValue get qualifierEncoded => $_getN(0);
+  $1781.BytesValue get qualifierEncoded => $_getN(0);
   @$pb.TagNumber(1)
-  set qualifierEncoded($1780.BytesValue v) { setField(1, v); }
+  set qualifierEncoded($1781.BytesValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasQualifierEncoded() => $_has(0);
   @$pb.TagNumber(1)
   void clearQualifierEncoded() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BytesValue ensureQualifierEncoded() => $_ensure(0);
+  $1781.BytesValue ensureQualifierEncoded() => $_ensure(0);
 
   /// Qualifier string.
   @$pb.TagNumber(2)
-  $1780.StringValue get qualifierString => $_getN(1);
+  $1781.StringValue get qualifierString => $_getN(1);
   @$pb.TagNumber(2)
-  set qualifierString($1780.StringValue v) { setField(2, v); }
+  set qualifierString($1781.StringValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasQualifierString() => $_has(1);
   @$pb.TagNumber(2)
   void clearQualifierString() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.StringValue ensureQualifierString() => $_ensure(1);
+  $1781.StringValue ensureQualifierString() => $_ensure(1);
 
   /// Optional. If the qualifier is not a valid BigQuery field identifier i.e.
   /// does not match [a-zA-Z][a-zA-Z0-9_]*,  a valid identifier must be provided
@@ -595,15 +595,15 @@ class BigtableColumn extends $pb.GeneratedMessage {
   /// setting at this level takes precedence if 'onlyReadLatest' is set at both
   /// levels.
   @$pb.TagNumber(6)
-  $1780.BoolValue get onlyReadLatest => $_getN(5);
+  $1781.BoolValue get onlyReadLatest => $_getN(5);
   @$pb.TagNumber(6)
-  set onlyReadLatest($1780.BoolValue v) { setField(6, v); }
+  set onlyReadLatest($1781.BoolValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOnlyReadLatest() => $_has(5);
   @$pb.TagNumber(6)
   void clearOnlyReadLatest() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.BoolValue ensureOnlyReadLatest() => $_ensure(5);
+  $1781.BoolValue ensureOnlyReadLatest() => $_ensure(5);
 }
 
 /// Information related to a Bigtable column family.
@@ -613,7 +613,7 @@ class BigtableColumnFamily extends $pb.GeneratedMessage {
     $core.String? type,
     $core.String? encoding,
     $core.Iterable<BigtableColumn>? columns,
-    $1780.BoolValue? onlyReadLatest,
+    $1781.BoolValue? onlyReadLatest,
   }) {
     final $result = create();
     if (familyId != null) {
@@ -642,7 +642,7 @@ class BigtableColumnFamily extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..aOS(3, _omitFieldNames ? '' : 'encoding')
     ..pc<BigtableColumn>(4, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM, subBuilder: BigtableColumn.create)
-    ..aOM<$1780.BoolValue>(5, _omitFieldNames ? '' : 'onlyReadLatest', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(5, _omitFieldNames ? '' : 'onlyReadLatest', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -732,24 +732,24 @@ class BigtableColumnFamily extends $pb.GeneratedMessage {
   /// 'columns' and specifying a different setting
   /// for that column.
   @$pb.TagNumber(5)
-  $1780.BoolValue get onlyReadLatest => $_getN(4);
+  $1781.BoolValue get onlyReadLatest => $_getN(4);
   @$pb.TagNumber(5)
-  set onlyReadLatest($1780.BoolValue v) { setField(5, v); }
+  set onlyReadLatest($1781.BoolValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOnlyReadLatest() => $_has(4);
   @$pb.TagNumber(5)
   void clearOnlyReadLatest() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.BoolValue ensureOnlyReadLatest() => $_ensure(4);
+  $1781.BoolValue ensureOnlyReadLatest() => $_ensure(4);
 }
 
 /// Options specific to Google Cloud Bigtable data sources.
 class BigtableOptions extends $pb.GeneratedMessage {
   factory BigtableOptions({
     $core.Iterable<BigtableColumnFamily>? columnFamilies,
-    $1780.BoolValue? ignoreUnspecifiedColumnFamilies,
-    $1780.BoolValue? readRowkeyAsString,
-    $1780.BoolValue? outputColumnFamiliesAsJson,
+    $1781.BoolValue? ignoreUnspecifiedColumnFamilies,
+    $1781.BoolValue? readRowkeyAsString,
+    $1781.BoolValue? outputColumnFamiliesAsJson,
   }) {
     final $result = create();
     if (columnFamilies != null) {
@@ -772,9 +772,9 @@ class BigtableOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BigtableOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..pc<BigtableColumnFamily>(1, _omitFieldNames ? '' : 'columnFamilies', $pb.PbFieldType.PM, subBuilder: BigtableColumnFamily.create)
-    ..aOM<$1780.BoolValue>(2, _omitFieldNames ? '' : 'ignoreUnspecifiedColumnFamilies', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'readRowkeyAsString', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(4, _omitFieldNames ? '' : 'outputColumnFamiliesAsJson', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(2, _omitFieldNames ? '' : 'ignoreUnspecifiedColumnFamilies', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'readRowkeyAsString', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(4, _omitFieldNames ? '' : 'outputColumnFamiliesAsJson', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -817,50 +817,50 @@ class BigtableOptions extends $pb.GeneratedMessage {
   /// Otherwise, they are read with BYTES type values.
   /// The default value is false.
   @$pb.TagNumber(2)
-  $1780.BoolValue get ignoreUnspecifiedColumnFamilies => $_getN(1);
+  $1781.BoolValue get ignoreUnspecifiedColumnFamilies => $_getN(1);
   @$pb.TagNumber(2)
-  set ignoreUnspecifiedColumnFamilies($1780.BoolValue v) { setField(2, v); }
+  set ignoreUnspecifiedColumnFamilies($1781.BoolValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIgnoreUnspecifiedColumnFamilies() => $_has(1);
   @$pb.TagNumber(2)
   void clearIgnoreUnspecifiedColumnFamilies() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.BoolValue ensureIgnoreUnspecifiedColumnFamilies() => $_ensure(1);
+  $1781.BoolValue ensureIgnoreUnspecifiedColumnFamilies() => $_ensure(1);
 
   /// Optional. If field is true, then the rowkey column families will be read
   /// and converted to string. Otherwise they are read with BYTES type values and
   /// users need to manually cast them with CAST if necessary.
   /// The default value is false.
   @$pb.TagNumber(3)
-  $1780.BoolValue get readRowkeyAsString => $_getN(2);
+  $1781.BoolValue get readRowkeyAsString => $_getN(2);
   @$pb.TagNumber(3)
-  set readRowkeyAsString($1780.BoolValue v) { setField(3, v); }
+  set readRowkeyAsString($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReadRowkeyAsString() => $_has(2);
   @$pb.TagNumber(3)
   void clearReadRowkeyAsString() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureReadRowkeyAsString() => $_ensure(2);
+  $1781.BoolValue ensureReadRowkeyAsString() => $_ensure(2);
 
   /// Optional. If field is true, then each column family will be read as a
   /// single JSON column. Otherwise they are read as a repeated cell structure
   /// containing timestamp/value tuples. The default value is false.
   @$pb.TagNumber(4)
-  $1780.BoolValue get outputColumnFamiliesAsJson => $_getN(3);
+  $1781.BoolValue get outputColumnFamiliesAsJson => $_getN(3);
   @$pb.TagNumber(4)
-  set outputColumnFamiliesAsJson($1780.BoolValue v) { setField(4, v); }
+  set outputColumnFamiliesAsJson($1781.BoolValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasOutputColumnFamiliesAsJson() => $_has(3);
   @$pb.TagNumber(4)
   void clearOutputColumnFamiliesAsJson() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.BoolValue ensureOutputColumnFamiliesAsJson() => $_ensure(3);
+  $1781.BoolValue ensureOutputColumnFamiliesAsJson() => $_ensure(3);
 }
 
 /// Options specific to Google Sheets data sources.
 class GoogleSheetsOptions extends $pb.GeneratedMessage {
   factory GoogleSheetsOptions({
-    $1780.Int64Value? skipLeadingRows,
+    $1781.Int64Value? skipLeadingRows,
     $core.String? range,
   }) {
     final $result = create();
@@ -877,7 +877,7 @@ class GoogleSheetsOptions extends $pb.GeneratedMessage {
   factory GoogleSheetsOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GoogleSheetsOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'skipLeadingRows', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'skipLeadingRows', subBuilder: $1781.Int64Value.create)
     ..aOS(2, _omitFieldNames ? '' : 'range')
     ..hasRequiredFields = false
   ;
@@ -916,15 +916,15 @@ class GoogleSheetsOptions extends $pb.GeneratedMessage {
   ///   headers in row N. If headers are not detected, row N is just skipped.
   ///   Otherwise row N is used to extract column names for the detected schema.
   @$pb.TagNumber(1)
-  $1780.Int64Value get skipLeadingRows => $_getN(0);
+  $1781.Int64Value get skipLeadingRows => $_getN(0);
   @$pb.TagNumber(1)
-  set skipLeadingRows($1780.Int64Value v) { setField(1, v); }
+  set skipLeadingRows($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSkipLeadingRows() => $_has(0);
   @$pb.TagNumber(1)
   void clearSkipLeadingRows() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureSkipLeadingRows() => $_ensure(0);
+  $1781.Int64Value ensureSkipLeadingRows() => $_ensure(0);
 
   /// Optional. Range of a sheet to query from. Only used when non-empty.
   /// Typical format: sheet_name!top_left_cell_id:bottom_right_cell_id
@@ -942,25 +942,25 @@ class GoogleSheetsOptions extends $pb.GeneratedMessage {
 class ExternalDataConfiguration extends $pb.GeneratedMessage {
   factory ExternalDataConfiguration({
     $core.Iterable<$core.String>? sourceUris,
-    $4396.TableSchema? schema,
+    $4397.TableSchema? schema,
     $core.String? sourceFormat,
-    $1780.Int32Value? maxBadRecords,
-    $1780.BoolValue? autodetect,
-    $1780.BoolValue? ignoreUnknownValues,
+    $1781.Int32Value? maxBadRecords,
+    $1781.BoolValue? autodetect,
+    $1781.BoolValue? ignoreUnknownValues,
     $core.String? compression,
     CsvOptions? csvOptions,
     BigtableOptions? bigtableOptions,
     GoogleSheetsOptions? googleSheetsOptions,
-    $4397.HivePartitioningOptions? hivePartitioningOptions,
+    $4398.HivePartitioningOptions? hivePartitioningOptions,
     $core.String? connectionId,
-    $core.Iterable<$4399.DecimalTargetType>? decimalTargetTypes,
+    $core.Iterable<$4400.DecimalTargetType>? decimalTargetTypes,
     AvroOptions? avroOptions,
-    $4400.JsonExtension? jsonExtension,
+    $4401.JsonExtension? jsonExtension,
     ParquetOptions? parquetOptions,
     ExternalDataConfiguration_ObjectMetadata? objectMetadata,
-    $1780.StringValue? referenceFileSchemaUri,
+    $1781.StringValue? referenceFileSchemaUri,
     ExternalDataConfiguration_MetadataCacheMode? metadataCacheMode,
-    $4401.FileSetSpecType? fileSetSpecType,
+    $4402.FileSetSpecType? fileSetSpecType,
     JsonOptions? jsonOptions,
   }) {
     final $result = create();
@@ -1035,25 +1035,25 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExternalDataConfiguration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'sourceUris')
-    ..aOM<$4396.TableSchema>(2, _omitFieldNames ? '' : 'schema', subBuilder: $4396.TableSchema.create)
+    ..aOM<$4397.TableSchema>(2, _omitFieldNames ? '' : 'schema', subBuilder: $4397.TableSchema.create)
     ..aOS(3, _omitFieldNames ? '' : 'sourceFormat')
-    ..aOM<$1780.Int32Value>(4, _omitFieldNames ? '' : 'maxBadRecords', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1780.BoolValue>(5, _omitFieldNames ? '' : 'autodetect', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(6, _omitFieldNames ? '' : 'ignoreUnknownValues', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.Int32Value>(4, _omitFieldNames ? '' : 'maxBadRecords', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1781.BoolValue>(5, _omitFieldNames ? '' : 'autodetect', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(6, _omitFieldNames ? '' : 'ignoreUnknownValues', subBuilder: $1781.BoolValue.create)
     ..aOS(7, _omitFieldNames ? '' : 'compression')
     ..aOM<CsvOptions>(8, _omitFieldNames ? '' : 'csvOptions', subBuilder: CsvOptions.create)
     ..aOM<BigtableOptions>(9, _omitFieldNames ? '' : 'bigtableOptions', subBuilder: BigtableOptions.create)
     ..aOM<GoogleSheetsOptions>(10, _omitFieldNames ? '' : 'googleSheetsOptions', subBuilder: GoogleSheetsOptions.create)
-    ..aOM<$4397.HivePartitioningOptions>(13, _omitFieldNames ? '' : 'hivePartitioningOptions', subBuilder: $4397.HivePartitioningOptions.create)
+    ..aOM<$4398.HivePartitioningOptions>(13, _omitFieldNames ? '' : 'hivePartitioningOptions', subBuilder: $4398.HivePartitioningOptions.create)
     ..aOS(14, _omitFieldNames ? '' : 'connectionId')
-    ..pc<$4399.DecimalTargetType>(16, _omitFieldNames ? '' : 'decimalTargetTypes', $pb.PbFieldType.KE, valueOf: $4399.DecimalTargetType.valueOf, enumValues: $4399.DecimalTargetType.values, defaultEnumValue: $4399.DecimalTargetType.DECIMAL_TARGET_TYPE_UNSPECIFIED)
+    ..pc<$4400.DecimalTargetType>(16, _omitFieldNames ? '' : 'decimalTargetTypes', $pb.PbFieldType.KE, valueOf: $4400.DecimalTargetType.valueOf, enumValues: $4400.DecimalTargetType.values, defaultEnumValue: $4400.DecimalTargetType.DECIMAL_TARGET_TYPE_UNSPECIFIED)
     ..aOM<AvroOptions>(17, _omitFieldNames ? '' : 'avroOptions', subBuilder: AvroOptions.create)
-    ..e<$4400.JsonExtension>(18, _omitFieldNames ? '' : 'jsonExtension', $pb.PbFieldType.OE, defaultOrMaker: $4400.JsonExtension.JSON_EXTENSION_UNSPECIFIED, valueOf: $4400.JsonExtension.valueOf, enumValues: $4400.JsonExtension.values)
+    ..e<$4401.JsonExtension>(18, _omitFieldNames ? '' : 'jsonExtension', $pb.PbFieldType.OE, defaultOrMaker: $4401.JsonExtension.JSON_EXTENSION_UNSPECIFIED, valueOf: $4401.JsonExtension.valueOf, enumValues: $4401.JsonExtension.values)
     ..aOM<ParquetOptions>(19, _omitFieldNames ? '' : 'parquetOptions', subBuilder: ParquetOptions.create)
     ..e<ExternalDataConfiguration_ObjectMetadata>(22, _omitFieldNames ? '' : 'objectMetadata', $pb.PbFieldType.OE, defaultOrMaker: ExternalDataConfiguration_ObjectMetadata.OBJECT_METADATA_UNSPECIFIED, valueOf: ExternalDataConfiguration_ObjectMetadata.valueOf, enumValues: ExternalDataConfiguration_ObjectMetadata.values)
-    ..aOM<$1780.StringValue>(23, _omitFieldNames ? '' : 'referenceFileSchemaUri', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(23, _omitFieldNames ? '' : 'referenceFileSchemaUri', subBuilder: $1781.StringValue.create)
     ..e<ExternalDataConfiguration_MetadataCacheMode>(24, _omitFieldNames ? '' : 'metadataCacheMode', $pb.PbFieldType.OE, defaultOrMaker: ExternalDataConfiguration_MetadataCacheMode.METADATA_CACHE_MODE_UNSPECIFIED, valueOf: ExternalDataConfiguration_MetadataCacheMode.valueOf, enumValues: ExternalDataConfiguration_MetadataCacheMode.values)
-    ..e<$4401.FileSetSpecType>(25, _omitFieldNames ? '' : 'fileSetSpecType', $pb.PbFieldType.OE, defaultOrMaker: $4401.FileSetSpecType.FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH, valueOf: $4401.FileSetSpecType.valueOf, enumValues: $4401.FileSetSpecType.values)
+    ..e<$4402.FileSetSpecType>(25, _omitFieldNames ? '' : 'fileSetSpecType', $pb.PbFieldType.OE, defaultOrMaker: $4402.FileSetSpecType.FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH, valueOf: $4402.FileSetSpecType.valueOf, enumValues: $4402.FileSetSpecType.values)
     ..aOM<JsonOptions>(26, _omitFieldNames ? '' : 'jsonOptions', subBuilder: JsonOptions.create)
     ..hasRequiredFields = false
   ;
@@ -1097,15 +1097,15 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   /// Schema is disallowed for Google Cloud Bigtable, Cloud Datastore backups,
   /// Avro, ORC and Parquet formats.
   @$pb.TagNumber(2)
-  $4396.TableSchema get schema => $_getN(1);
+  $4397.TableSchema get schema => $_getN(1);
   @$pb.TagNumber(2)
-  set schema($4396.TableSchema v) { setField(2, v); }
+  set schema($4397.TableSchema v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSchema() => $_has(1);
   @$pb.TagNumber(2)
   void clearSchema() => clearField(2);
   @$pb.TagNumber(2)
-  $4396.TableSchema ensureSchema() => $_ensure(1);
+  $4397.TableSchema ensureSchema() => $_ensure(1);
 
   /// [Required] The data format.
   /// For CSV files, specify "CSV".
@@ -1132,28 +1132,28 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   /// that all records are valid. This setting is ignored for Google Cloud
   /// Bigtable, Google Cloud Datastore backups, Avro, ORC and Parquet formats.
   @$pb.TagNumber(4)
-  $1780.Int32Value get maxBadRecords => $_getN(3);
+  $1781.Int32Value get maxBadRecords => $_getN(3);
   @$pb.TagNumber(4)
-  set maxBadRecords($1780.Int32Value v) { setField(4, v); }
+  set maxBadRecords($1781.Int32Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxBadRecords() => $_has(3);
   @$pb.TagNumber(4)
   void clearMaxBadRecords() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int32Value ensureMaxBadRecords() => $_ensure(3);
+  $1781.Int32Value ensureMaxBadRecords() => $_ensure(3);
 
   /// Try to detect schema and format options automatically.
   /// Any option specified explicitly will be honored.
   @$pb.TagNumber(5)
-  $1780.BoolValue get autodetect => $_getN(4);
+  $1781.BoolValue get autodetect => $_getN(4);
   @$pb.TagNumber(5)
-  set autodetect($1780.BoolValue v) { setField(5, v); }
+  set autodetect($1781.BoolValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAutodetect() => $_has(4);
   @$pb.TagNumber(5)
   void clearAutodetect() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.BoolValue ensureAutodetect() => $_ensure(4);
+  $1781.BoolValue ensureAutodetect() => $_ensure(4);
 
   /// Optional. Indicates if BigQuery should allow extra values that are not
   /// represented in the table schema.
@@ -1172,15 +1172,15 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   ///   ORC: This setting is ignored.
   ///   Parquet: This setting is ignored.
   @$pb.TagNumber(6)
-  $1780.BoolValue get ignoreUnknownValues => $_getN(5);
+  $1781.BoolValue get ignoreUnknownValues => $_getN(5);
   @$pb.TagNumber(6)
-  set ignoreUnknownValues($1780.BoolValue v) { setField(6, v); }
+  set ignoreUnknownValues($1781.BoolValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasIgnoreUnknownValues() => $_has(5);
   @$pb.TagNumber(6)
   void clearIgnoreUnknownValues() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.BoolValue ensureIgnoreUnknownValues() => $_ensure(5);
+  $1781.BoolValue ensureIgnoreUnknownValues() => $_ensure(5);
 
   /// Optional. The compression type of the data source.
   /// Possible values include GZIP and NONE. The default value is NONE.
@@ -1237,15 +1237,15 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   /// unsupported format will lead to an error, as will providing an invalid
   /// specification.
   @$pb.TagNumber(13)
-  $4397.HivePartitioningOptions get hivePartitioningOptions => $_getN(10);
+  $4398.HivePartitioningOptions get hivePartitioningOptions => $_getN(10);
   @$pb.TagNumber(13)
-  set hivePartitioningOptions($4397.HivePartitioningOptions v) { setField(13, v); }
+  set hivePartitioningOptions($4398.HivePartitioningOptions v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasHivePartitioningOptions() => $_has(10);
   @$pb.TagNumber(13)
   void clearHivePartitioningOptions() => clearField(13);
   @$pb.TagNumber(13)
-  $4397.HivePartitioningOptions ensureHivePartitioningOptions() => $_ensure(10);
+  $4398.HivePartitioningOptions ensureHivePartitioningOptions() => $_ensure(10);
 
   /// Optional. The connection specifying the credentials to be used to read
   /// external storage, such as Azure Blob, Cloud Storage, or S3. The
@@ -1288,7 +1288,7 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   ///  Defaults to ["NUMERIC", "STRING"] for ORC and ["NUMERIC"] for the other
   ///  file formats.
   @$pb.TagNumber(16)
-  $core.List<$4399.DecimalTargetType> get decimalTargetTypes => $_getList(12);
+  $core.List<$4400.DecimalTargetType> get decimalTargetTypes => $_getList(12);
 
   /// Optional. Additional properties to set if sourceFormat is set to AVRO.
   @$pb.TagNumber(17)
@@ -1307,9 +1307,9 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   /// To load newline-delimited GeoJSON, specify GEOJSON (and source_format must
   /// be set to NEWLINE_DELIMITED_JSON).
   @$pb.TagNumber(18)
-  $4400.JsonExtension get jsonExtension => $_getN(14);
+  $4401.JsonExtension get jsonExtension => $_getN(14);
   @$pb.TagNumber(18)
-  set jsonExtension($4400.JsonExtension v) { setField(18, v); }
+  set jsonExtension($4401.JsonExtension v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasJsonExtension() => $_has(14);
   @$pb.TagNumber(18)
@@ -1345,15 +1345,15 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   /// file with the table schema. This is enabled for the following formats:
   /// AVRO, PARQUET, ORC.
   @$pb.TagNumber(23)
-  $1780.StringValue get referenceFileSchemaUri => $_getN(17);
+  $1781.StringValue get referenceFileSchemaUri => $_getN(17);
   @$pb.TagNumber(23)
-  set referenceFileSchemaUri($1780.StringValue v) { setField(23, v); }
+  set referenceFileSchemaUri($1781.StringValue v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasReferenceFileSchemaUri() => $_has(17);
   @$pb.TagNumber(23)
   void clearReferenceFileSchemaUri() => clearField(23);
   @$pb.TagNumber(23)
-  $1780.StringValue ensureReferenceFileSchemaUri() => $_ensure(17);
+  $1781.StringValue ensureReferenceFileSchemaUri() => $_ensure(17);
 
   /// Optional. Metadata Cache Mode for the table. Set this to enable caching of
   /// metadata from external data source.
@@ -1371,9 +1371,9 @@ class ExternalDataConfiguration extends $pb.GeneratedMessage {
   /// underlying storage.  Other options include specifying manifest files. Only
   /// applicable to object storage systems.
   @$pb.TagNumber(25)
-  $4401.FileSetSpecType get fileSetSpecType => $_getN(19);
+  $4402.FileSetSpecType get fileSetSpecType => $_getN(19);
   @$pb.TagNumber(25)
-  set fileSetSpecType($4401.FileSetSpecType v) { setField(25, v); }
+  set fileSetSpecType($4402.FileSetSpecType v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasFileSetSpecType() => $_has(19);
   @$pb.TagNumber(25)

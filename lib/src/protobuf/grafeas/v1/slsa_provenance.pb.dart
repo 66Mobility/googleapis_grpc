@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/any.pb.dart' as $3;
-import '../../google/protobuf/timestamp.pb.dart' as $4;
+import '../../google/protobuf/any.pb.dart' as $1795;
+import '../../google/protobuf/timestamp.pb.dart' as $1776;
 
 /// Steps taken to build the artifact.
 /// For a TaskRun, typically each container corresponds to one step in the
@@ -25,8 +25,8 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
     $core.String? type,
     $fixnum.Int64? definedInMaterial,
     $core.String? entryPoint,
-    $3.Any? arguments,
-    $3.Any? environment,
+    $1795.Any? arguments,
+    $1795.Any? environment,
   }) {
     final $result = create();
     if (type != null) {
@@ -54,8 +54,8 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aInt64(2, _omitFieldNames ? '' : 'definedInMaterial')
     ..aOS(3, _omitFieldNames ? '' : 'entryPoint')
-    ..aOM<$3.Any>(4, _omitFieldNames ? '' : 'arguments', subBuilder: $3.Any.create)
-    ..aOM<$3.Any>(5, _omitFieldNames ? '' : 'environment', subBuilder: $3.Any.create)
+    ..aOM<$1795.Any>(4, _omitFieldNames ? '' : 'arguments', subBuilder: $1795.Any.create)
+    ..aOM<$1795.Any>(5, _omitFieldNames ? '' : 'environment', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -126,30 +126,30 @@ class SlsaProvenance_SlsaRecipe extends $pb.GeneratedMessage {
   /// aside from the target, which is captured in recipe.entryPoint. Depending
   /// on the recipe Type, the structure may be different.
   @$pb.TagNumber(4)
-  $3.Any get arguments => $_getN(3);
+  $1795.Any get arguments => $_getN(3);
   @$pb.TagNumber(4)
-  set arguments($3.Any v) { setField(4, v); }
+  set arguments($1795.Any v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasArguments() => $_has(3);
   @$pb.TagNumber(4)
   void clearArguments() => clearField(4);
   @$pb.TagNumber(4)
-  $3.Any ensureArguments() => $_ensure(3);
+  $1795.Any ensureArguments() => $_ensure(3);
 
   /// Any other builder-controlled inputs necessary for correctly evaluating
   /// the recipe. Usually only needed for reproducing the build but not
   /// evaluated as part of policy. Depending on the recipe Type, the structure
   /// may be different.
   @$pb.TagNumber(5)
-  $3.Any get environment => $_getN(4);
+  $1795.Any get environment => $_getN(4);
   @$pb.TagNumber(5)
-  set environment($3.Any v) { setField(5, v); }
+  set environment($1795.Any v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEnvironment() => $_has(4);
   @$pb.TagNumber(5)
   void clearEnvironment() => clearField(5);
   @$pb.TagNumber(5)
-  $3.Any ensureEnvironment() => $_ensure(4);
+  $1795.Any ensureEnvironment() => $_ensure(4);
 }
 
 /// Indicates that the builder claims certain fields in this message to be
@@ -242,8 +242,8 @@ class SlsaProvenance_SlsaCompleteness extends $pb.GeneratedMessage {
 class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
   factory SlsaProvenance_SlsaMetadata({
     $core.String? buildInvocationId,
-    $4.Timestamp? buildStartedOn,
-    $4.Timestamp? buildFinishedOn,
+    $1776.Timestamp? buildStartedOn,
+    $1776.Timestamp? buildFinishedOn,
     SlsaProvenance_SlsaCompleteness? completeness,
     $core.bool? reproducible,
   }) {
@@ -271,8 +271,8 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlsaProvenance.SlsaMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildInvocationId')
-    ..aOM<$4.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn', subBuilder: $4.Timestamp.create)
-    ..aOM<$4.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn', subBuilder: $4.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn', subBuilder: $1776.Timestamp.create)
     ..aOM<SlsaProvenance_SlsaCompleteness>(4, _omitFieldNames ? '' : 'completeness', subBuilder: SlsaProvenance_SlsaCompleteness.create)
     ..aOB(5, _omitFieldNames ? '' : 'reproducible')
     ..hasRequiredFields = false
@@ -313,27 +313,27 @@ class SlsaProvenance_SlsaMetadata extends $pb.GeneratedMessage {
 
   /// The timestamp of when the build started.
   @$pb.TagNumber(2)
-  $4.Timestamp get buildStartedOn => $_getN(1);
+  $1776.Timestamp get buildStartedOn => $_getN(1);
   @$pb.TagNumber(2)
-  set buildStartedOn($4.Timestamp v) { setField(2, v); }
+  set buildStartedOn($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBuildStartedOn() => $_has(1);
   @$pb.TagNumber(2)
   void clearBuildStartedOn() => clearField(2);
   @$pb.TagNumber(2)
-  $4.Timestamp ensureBuildStartedOn() => $_ensure(1);
+  $1776.Timestamp ensureBuildStartedOn() => $_ensure(1);
 
   /// The timestamp of when the build completed.
   @$pb.TagNumber(3)
-  $4.Timestamp get buildFinishedOn => $_getN(2);
+  $1776.Timestamp get buildFinishedOn => $_getN(2);
   @$pb.TagNumber(3)
-  set buildFinishedOn($4.Timestamp v) { setField(3, v); }
+  set buildFinishedOn($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBuildFinishedOn() => $_has(2);
   @$pb.TagNumber(3)
   void clearBuildFinishedOn() => clearField(3);
   @$pb.TagNumber(3)
-  $4.Timestamp ensureBuildFinishedOn() => $_ensure(2);
+  $1776.Timestamp ensureBuildFinishedOn() => $_ensure(2);
 
   /// Indicates that the builder claims certain fields in this message to be
   /// complete.

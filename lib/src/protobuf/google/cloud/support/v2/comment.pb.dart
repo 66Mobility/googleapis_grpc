@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'actor.pb.dart' as $4688;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'actor.pb.dart' as $4690;
 
 /// A comment associated with a support case.
 class Comment extends $pb.GeneratedMessage {
   factory Comment({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $4688.Actor? creator,
+    $1776.Timestamp? createTime,
+    $4690.Actor? creator,
     $core.String? body,
     $core.String? plainTextBody,
   }) {
@@ -49,8 +49,8 @@ class Comment extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Comment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.support.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4688.Actor>(3, _omitFieldNames ? '' : 'creator', subBuilder: $4688.Actor.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4690.Actor>(3, _omitFieldNames ? '' : 'creator', subBuilder: $4690.Actor.create)
     ..aOS(4, _omitFieldNames ? '' : 'body')
     ..aOS(5, _omitFieldNames ? '' : 'plainTextBody')
     ..hasRequiredFields = false
@@ -89,27 +89,27 @@ class Comment extends $pb.GeneratedMessage {
 
   /// Output only. The time when this comment was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The user or Google Support agent created this comment.
   @$pb.TagNumber(3)
-  $4688.Actor get creator => $_getN(2);
+  $4690.Actor get creator => $_getN(2);
   @$pb.TagNumber(3)
-  set creator($4688.Actor v) { setField(3, v); }
+  set creator($4690.Actor v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreator() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreator() => clearField(3);
   @$pb.TagNumber(3)
-  $4688.Actor ensureCreator() => $_ensure(2);
+  $4690.Actor ensureCreator() => $_ensure(2);
 
   /// The full comment body. Maximum of 12800 characters. This can contain rich
   /// text syntax.

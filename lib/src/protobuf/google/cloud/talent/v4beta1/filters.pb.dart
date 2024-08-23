@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../type/latlng.pb.dart' as $1798;
-import '../../../type/timeofday.pb.dart' as $4320;
-import 'common.pb.dart' as $4694;
-import 'common.pbenum.dart' as $4694;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../type/latlng.pb.dart' as $1799;
+import '../../../type/timeofday.pb.dart' as $4321;
+import 'common.pb.dart' as $4696;
+import 'common.pbenum.dart' as $4696;
 import 'filters.pbenum.dart';
 
 export 'filters.pbenum.dart';
@@ -28,15 +28,15 @@ class JobQuery extends $pb.GeneratedMessage {
     $core.String? query,
     $core.Iterable<$core.String>? companies,
     $core.Iterable<LocationFilter>? locationFilters,
-    $core.Iterable<$4694.JobCategory>? jobCategories,
+    $core.Iterable<$4696.JobCategory>? jobCategories,
     CommuteFilter? commuteFilter,
     $core.Iterable<$core.String>? companyDisplayNames,
     CompensationFilter? compensationFilter,
     $core.String? customAttributeFilter,
     $core.bool? disableSpellCheck,
-    $core.Iterable<$4694.EmploymentType>? employmentTypes,
+    $core.Iterable<$4696.EmploymentType>? employmentTypes,
     $core.Iterable<$core.String>? languageCodes,
-    $4694.TimestampRange? publishTimeRange,
+    $4696.TimestampRange? publishTimeRange,
     $core.Iterable<$core.String>? excludedJobs,
     $core.String? queryLanguageCode,
   }) {
@@ -93,15 +93,15 @@ class JobQuery extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'query')
     ..pPS(2, _omitFieldNames ? '' : 'companies')
     ..pc<LocationFilter>(3, _omitFieldNames ? '' : 'locationFilters', $pb.PbFieldType.PM, subBuilder: LocationFilter.create)
-    ..pc<$4694.JobCategory>(4, _omitFieldNames ? '' : 'jobCategories', $pb.PbFieldType.KE, valueOf: $4694.JobCategory.valueOf, enumValues: $4694.JobCategory.values, defaultEnumValue: $4694.JobCategory.JOB_CATEGORY_UNSPECIFIED)
+    ..pc<$4696.JobCategory>(4, _omitFieldNames ? '' : 'jobCategories', $pb.PbFieldType.KE, valueOf: $4696.JobCategory.valueOf, enumValues: $4696.JobCategory.values, defaultEnumValue: $4696.JobCategory.JOB_CATEGORY_UNSPECIFIED)
     ..aOM<CommuteFilter>(5, _omitFieldNames ? '' : 'commuteFilter', subBuilder: CommuteFilter.create)
     ..pPS(6, _omitFieldNames ? '' : 'companyDisplayNames')
     ..aOM<CompensationFilter>(7, _omitFieldNames ? '' : 'compensationFilter', subBuilder: CompensationFilter.create)
     ..aOS(8, _omitFieldNames ? '' : 'customAttributeFilter')
     ..aOB(9, _omitFieldNames ? '' : 'disableSpellCheck')
-    ..pc<$4694.EmploymentType>(10, _omitFieldNames ? '' : 'employmentTypes', $pb.PbFieldType.KE, valueOf: $4694.EmploymentType.valueOf, enumValues: $4694.EmploymentType.values, defaultEnumValue: $4694.EmploymentType.EMPLOYMENT_TYPE_UNSPECIFIED)
+    ..pc<$4696.EmploymentType>(10, _omitFieldNames ? '' : 'employmentTypes', $pb.PbFieldType.KE, valueOf: $4696.EmploymentType.valueOf, enumValues: $4696.EmploymentType.values, defaultEnumValue: $4696.EmploymentType.EMPLOYMENT_TYPE_UNSPECIFIED)
     ..pPS(11, _omitFieldNames ? '' : 'languageCodes')
-    ..aOM<$4694.TimestampRange>(12, _omitFieldNames ? '' : 'publishTimeRange', subBuilder: $4694.TimestampRange.create)
+    ..aOM<$4696.TimestampRange>(12, _omitFieldNames ? '' : 'publishTimeRange', subBuilder: $4696.TimestampRange.create)
     ..pPS(13, _omitFieldNames ? '' : 'excludedJobs')
     ..aOS(14, _omitFieldNames ? '' : 'queryLanguageCode')
     ..hasRequiredFields = false
@@ -186,7 +186,7 @@ class JobQuery extends $pb.GeneratedMessage {
   ///  If multiple values are specified, jobs from any of the specified
   ///  categories are searched against.
   @$pb.TagNumber(4)
-  $core.List<$4694.JobCategory> get jobCategories => $_getList(3);
+  $core.List<$4696.JobCategory> get jobCategories => $_getList(3);
 
   ///  Allows filtering jobs by commute time with different travel methods (for
   ///   example, driving or public transit).
@@ -309,7 +309,7 @@ class JobQuery extends $pb.GeneratedMessage {
   ///  If multiple values are specified, jobs in the search results include
   ///  any of the specified employment types.
   @$pb.TagNumber(10)
-  $core.List<$4694.EmploymentType> get employmentTypes => $_getList(9);
+  $core.List<$4696.EmploymentType> get employmentTypes => $_getList(9);
 
   ///  This filter specifies the locale of jobs to search against,
   ///  for example, "en-US".
@@ -329,15 +329,15 @@ class JobQuery extends $pb.GeneratedMessage {
   /// Jobs published within a range specified by this filter are searched
   /// against.
   @$pb.TagNumber(12)
-  $4694.TimestampRange get publishTimeRange => $_getN(11);
+  $4696.TimestampRange get publishTimeRange => $_getN(11);
   @$pb.TagNumber(12)
-  set publishTimeRange($4694.TimestampRange v) { setField(12, v); }
+  set publishTimeRange($4696.TimestampRange v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasPublishTimeRange() => $_has(11);
   @$pb.TagNumber(12)
   void clearPublishTimeRange() => clearField(12);
   @$pb.TagNumber(12)
-  $4694.TimestampRange ensurePublishTimeRange() => $_ensure(11);
+  $4696.TimestampRange ensurePublishTimeRange() => $_ensure(11);
 
   ///  This filter specifies a list of job names to be excluded during search.
   ///
@@ -369,7 +369,7 @@ class LocationFilter extends $pb.GeneratedMessage {
   factory LocationFilter({
     $core.String? address,
     $core.String? regionCode,
-    $1798.LatLng? latLng,
+    $1799.LatLng? latLng,
     $core.double? distanceInMiles,
     LocationFilter_TelecommutePreference? telecommutePreference,
     $core.bool? negated,
@@ -402,7 +402,7 @@ class LocationFilter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'address')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
-    ..aOM<$1798.LatLng>(3, _omitFieldNames ? '' : 'latLng', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(3, _omitFieldNames ? '' : 'latLng', subBuilder: $1799.LatLng.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'distanceInMiles', $pb.PbFieldType.OD)
     ..e<LocationFilter_TelecommutePreference>(5, _omitFieldNames ? '' : 'telecommutePreference', $pb.PbFieldType.OE, defaultOrMaker: LocationFilter_TelecommutePreference.TELECOMMUTE_PREFERENCE_UNSPECIFIED, valueOf: LocationFilter_TelecommutePreference.valueOf, enumValues: LocationFilter_TelecommutePreference.values)
     ..aOB(6, _omitFieldNames ? '' : 'negated')
@@ -467,15 +467,15 @@ class LocationFilter extends $pb.GeneratedMessage {
   /// The latitude and longitude of the geographic center to search from. This
   /// field is ignored if `address` is provided.
   @$pb.TagNumber(3)
-  $1798.LatLng get latLng => $_getN(2);
+  $1799.LatLng get latLng => $_getN(2);
   @$pb.TagNumber(3)
-  set latLng($1798.LatLng v) { setField(3, v); }
+  set latLng($1799.LatLng v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLatLng() => $_has(2);
   @$pb.TagNumber(3)
   void clearLatLng() => clearField(3);
   @$pb.TagNumber(3)
-  $1798.LatLng ensureLatLng() => $_ensure(2);
+  $1799.LatLng ensureLatLng() => $_ensure(2);
 
   /// The distance_in_miles is applied when the location being searched for is
   /// identified as a city or smaller. This field is ignored if the location
@@ -541,8 +541,8 @@ class LocationFilter extends $pb.GeneratedMessage {
 class CompensationFilter extends $pb.GeneratedMessage {
   factory CompensationFilter({
     CompensationFilter_FilterType? type,
-    $core.Iterable<$4694.CompensationInfo_CompensationUnit>? units,
-    $4694.CompensationInfo_CompensationRange? range,
+    $core.Iterable<$4696.CompensationInfo_CompensationUnit>? units,
+    $4696.CompensationInfo_CompensationRange? range,
     $core.bool? includeJobsWithUnspecifiedCompensationRange,
   }) {
     final $result = create();
@@ -566,8 +566,8 @@ class CompensationFilter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompensationFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4beta1'), createEmptyInstance: create)
     ..e<CompensationFilter_FilterType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: CompensationFilter_FilterType.FILTER_TYPE_UNSPECIFIED, valueOf: CompensationFilter_FilterType.valueOf, enumValues: CompensationFilter_FilterType.values)
-    ..pc<$4694.CompensationInfo_CompensationUnit>(2, _omitFieldNames ? '' : 'units', $pb.PbFieldType.KE, valueOf: $4694.CompensationInfo_CompensationUnit.valueOf, enumValues: $4694.CompensationInfo_CompensationUnit.values, defaultEnumValue: $4694.CompensationInfo_CompensationUnit.COMPENSATION_UNIT_UNSPECIFIED)
-    ..aOM<$4694.CompensationInfo_CompensationRange>(3, _omitFieldNames ? '' : 'range', subBuilder: $4694.CompensationInfo_CompensationRange.create)
+    ..pc<$4696.CompensationInfo_CompensationUnit>(2, _omitFieldNames ? '' : 'units', $pb.PbFieldType.KE, valueOf: $4696.CompensationInfo_CompensationUnit.valueOf, enumValues: $4696.CompensationInfo_CompensationUnit.values, defaultEnumValue: $4696.CompensationInfo_CompensationUnit.COMPENSATION_UNIT_UNSPECIFIED)
+    ..aOM<$4696.CompensationInfo_CompensationRange>(3, _omitFieldNames ? '' : 'range', subBuilder: $4696.CompensationInfo_CompensationRange.create)
     ..aOB(4, _omitFieldNames ? '' : 'includeJobsWithUnspecifiedCompensationRange')
     ..hasRequiredFields = false
   ;
@@ -606,19 +606,19 @@ class CompensationFilter extends $pb.GeneratedMessage {
   /// Required. Specify desired `base compensation entry's`
   /// [CompensationInfo.CompensationUnit][google.cloud.talent.v4beta1.CompensationInfo.CompensationUnit].
   @$pb.TagNumber(2)
-  $core.List<$4694.CompensationInfo_CompensationUnit> get units => $_getList(1);
+  $core.List<$4696.CompensationInfo_CompensationUnit> get units => $_getList(1);
 
   /// Compensation range.
   @$pb.TagNumber(3)
-  $4694.CompensationInfo_CompensationRange get range => $_getN(2);
+  $4696.CompensationInfo_CompensationRange get range => $_getN(2);
   @$pb.TagNumber(3)
-  set range($4694.CompensationInfo_CompensationRange v) { setField(3, v); }
+  set range($4696.CompensationInfo_CompensationRange v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRange() => $_has(2);
   @$pb.TagNumber(3)
   void clearRange() => clearField(3);
   @$pb.TagNumber(3)
-  $4694.CompensationInfo_CompensationRange ensureRange() => $_ensure(2);
+  $4696.CompensationInfo_CompensationRange ensureRange() => $_ensure(2);
 
   /// If set to true, jobs with unspecified compensation range fields are
   /// included.
@@ -641,12 +641,12 @@ enum CommuteFilter_TrafficOption {
 /// Parameters needed for commute search.
 class CommuteFilter extends $pb.GeneratedMessage {
   factory CommuteFilter({
-    $4694.CommuteMethod? commuteMethod,
-    $1798.LatLng? startCoordinates,
-    $1737.Duration? travelDuration,
+    $4696.CommuteMethod? commuteMethod,
+    $1799.LatLng? startCoordinates,
+    $1738.Duration? travelDuration,
     $core.bool? allowImpreciseAddresses,
     CommuteFilter_RoadTraffic? roadTraffic,
-    $4320.TimeOfDay? departureTime,
+    $4321.TimeOfDay? departureTime,
   }) {
     final $result = create();
     if (commuteMethod != null) {
@@ -680,12 +680,12 @@ class CommuteFilter extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommuteFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4beta1'), createEmptyInstance: create)
     ..oo(0, [5, 6])
-    ..e<$4694.CommuteMethod>(1, _omitFieldNames ? '' : 'commuteMethod', $pb.PbFieldType.OE, defaultOrMaker: $4694.CommuteMethod.COMMUTE_METHOD_UNSPECIFIED, valueOf: $4694.CommuteMethod.valueOf, enumValues: $4694.CommuteMethod.values)
-    ..aOM<$1798.LatLng>(2, _omitFieldNames ? '' : 'startCoordinates', subBuilder: $1798.LatLng.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'travelDuration', subBuilder: $1737.Duration.create)
+    ..e<$4696.CommuteMethod>(1, _omitFieldNames ? '' : 'commuteMethod', $pb.PbFieldType.OE, defaultOrMaker: $4696.CommuteMethod.COMMUTE_METHOD_UNSPECIFIED, valueOf: $4696.CommuteMethod.valueOf, enumValues: $4696.CommuteMethod.values)
+    ..aOM<$1799.LatLng>(2, _omitFieldNames ? '' : 'startCoordinates', subBuilder: $1799.LatLng.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'travelDuration', subBuilder: $1738.Duration.create)
     ..aOB(4, _omitFieldNames ? '' : 'allowImpreciseAddresses')
     ..e<CommuteFilter_RoadTraffic>(5, _omitFieldNames ? '' : 'roadTraffic', $pb.PbFieldType.OE, defaultOrMaker: CommuteFilter_RoadTraffic.ROAD_TRAFFIC_UNSPECIFIED, valueOf: CommuteFilter_RoadTraffic.valueOf, enumValues: CommuteFilter_RoadTraffic.values)
-    ..aOM<$4320.TimeOfDay>(6, _omitFieldNames ? '' : 'departureTime', subBuilder: $4320.TimeOfDay.create)
+    ..aOM<$4321.TimeOfDay>(6, _omitFieldNames ? '' : 'departureTime', subBuilder: $4321.TimeOfDay.create)
     ..hasRequiredFields = false
   ;
 
@@ -715,9 +715,9 @@ class CommuteFilter extends $pb.GeneratedMessage {
 
   /// Required. The method of transportation to calculate the commute time for.
   @$pb.TagNumber(1)
-  $4694.CommuteMethod get commuteMethod => $_getN(0);
+  $4696.CommuteMethod get commuteMethod => $_getN(0);
   @$pb.TagNumber(1)
-  set commuteMethod($4694.CommuteMethod v) { setField(1, v); }
+  set commuteMethod($4696.CommuteMethod v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommuteMethod() => $_has(0);
   @$pb.TagNumber(1)
@@ -726,28 +726,28 @@ class CommuteFilter extends $pb.GeneratedMessage {
   /// Required. The latitude and longitude of the location to calculate the
   /// commute time from.
   @$pb.TagNumber(2)
-  $1798.LatLng get startCoordinates => $_getN(1);
+  $1799.LatLng get startCoordinates => $_getN(1);
   @$pb.TagNumber(2)
-  set startCoordinates($1798.LatLng v) { setField(2, v); }
+  set startCoordinates($1799.LatLng v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartCoordinates() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartCoordinates() => clearField(2);
   @$pb.TagNumber(2)
-  $1798.LatLng ensureStartCoordinates() => $_ensure(1);
+  $1799.LatLng ensureStartCoordinates() => $_ensure(1);
 
   /// Required. The maximum travel time in seconds. The maximum allowed value is
   /// `3600s` (one hour). Format is `123s`.
   @$pb.TagNumber(3)
-  $1737.Duration get travelDuration => $_getN(2);
+  $1738.Duration get travelDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set travelDuration($1737.Duration v) { setField(3, v); }
+  set travelDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTravelDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearTravelDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTravelDuration() => $_ensure(2);
+  $1738.Duration ensureTravelDuration() => $_ensure(2);
 
   /// If `true`, jobs without street level addresses may also be returned.
   /// For city level addresses, the city center is used. For state and coarser
@@ -778,15 +778,15 @@ class CommuteFilter extends $pb.GeneratedMessage {
   ///
   ///  Currently traffic model is restricted to hour level resolution.
   @$pb.TagNumber(6)
-  $4320.TimeOfDay get departureTime => $_getN(5);
+  $4321.TimeOfDay get departureTime => $_getN(5);
   @$pb.TagNumber(6)
-  set departureTime($4320.TimeOfDay v) { setField(6, v); }
+  set departureTime($4321.TimeOfDay v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDepartureTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearDepartureTime() => clearField(6);
   @$pb.TagNumber(6)
-  $4320.TimeOfDay ensureDepartureTime() => $_ensure(5);
+  $4321.TimeOfDay ensureDepartureTime() => $_ensure(5);
 }
 
 

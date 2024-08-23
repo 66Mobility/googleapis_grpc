@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -345,7 +345,7 @@ class CertificateAuthority_CertificateAuthorityPolicy extends $pb.GeneratedMessa
     $core.Iterable<Subject>? allowedLocationsAndOrganizations,
     $core.Iterable<$core.String>? allowedCommonNames,
     CertificateAuthority_CertificateAuthorityPolicy_AllowedSubjectAltNames? allowedSans,
-    $1737.Duration? maximumLifetime,
+    $1738.Duration? maximumLifetime,
     CertificateAuthority_CertificateAuthorityPolicy_IssuanceModes? allowedIssuanceModes,
   }) {
     final $result = create();
@@ -388,7 +388,7 @@ class CertificateAuthority_CertificateAuthorityPolicy extends $pb.GeneratedMessa
     ..pc<Subject>(3, _omitFieldNames ? '' : 'allowedLocationsAndOrganizations', $pb.PbFieldType.PM, subBuilder: Subject.create)
     ..pPS(4, _omitFieldNames ? '' : 'allowedCommonNames')
     ..aOM<CertificateAuthority_CertificateAuthorityPolicy_AllowedSubjectAltNames>(5, _omitFieldNames ? '' : 'allowedSans', subBuilder: CertificateAuthority_CertificateAuthorityPolicy_AllowedSubjectAltNames.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'maximumLifetime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'maximumLifetime', subBuilder: $1738.Duration.create)
     ..aOM<CertificateAuthority_CertificateAuthorityPolicy_IssuanceModes>(8, _omitFieldNames ? '' : 'allowedIssuanceModes', subBuilder: CertificateAuthority_CertificateAuthorityPolicy_IssuanceModes.create)
     ..hasRequiredFields = false
   ;
@@ -479,15 +479,15 @@ class CertificateAuthority_CertificateAuthorityPolicy extends $pb.GeneratedMessa
   /// requested maximum_lifetime, the effective lifetime will be explicitly
   /// truncated.
   @$pb.TagNumber(6)
-  $1737.Duration get maximumLifetime => $_getN(5);
+  $1738.Duration get maximumLifetime => $_getN(5);
   @$pb.TagNumber(6)
-  set maximumLifetime($1737.Duration v) { setField(6, v); }
+  set maximumLifetime($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMaximumLifetime() => $_has(5);
   @$pb.TagNumber(6)
   void clearMaximumLifetime() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureMaximumLifetime() => $_ensure(5);
+  $1738.Duration ensureMaximumLifetime() => $_ensure(5);
 
   /// Optional. If specified, then only methods allowed in the [IssuanceModes][google.cloud.security.privateca.v1beta1.CertificateAuthority.CertificateAuthorityPolicy.IssuanceModes] may be
   /// used to issue [Certificates][google.cloud.security.privateca.v1beta1.Certificate].
@@ -668,7 +668,7 @@ class CertificateAuthority extends $pb.GeneratedMessage {
     CertificateAuthority_Type? type,
     CertificateAuthority_Tier? tier,
     CertificateConfig? config,
-    $1737.Duration? lifetime,
+    $1738.Duration? lifetime,
     CertificateAuthority_KeyVersionSpec? keySpec,
     CertificateAuthority_CertificateAuthorityPolicy? certificatePolicy,
     CertificateAuthority_IssuingOptions? issuingOptions,
@@ -677,9 +677,9 @@ class CertificateAuthority extends $pb.GeneratedMessage {
     $core.Iterable<CertificateDescription>? caCertificateDescriptions,
     $core.String? gcsBucket,
     CertificateAuthority_AccessUrls? accessUrls,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.Map<$core.String, $core.String>? labels,
     SubordinateConfig? subordinateConfig,
   }) {
@@ -749,7 +749,7 @@ class CertificateAuthority extends $pb.GeneratedMessage {
     ..e<CertificateAuthority_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: CertificateAuthority_Type.TYPE_UNSPECIFIED, valueOf: CertificateAuthority_Type.valueOf, enumValues: CertificateAuthority_Type.values)
     ..e<CertificateAuthority_Tier>(3, _omitFieldNames ? '' : 'tier', $pb.PbFieldType.OE, defaultOrMaker: CertificateAuthority_Tier.TIER_UNSPECIFIED, valueOf: CertificateAuthority_Tier.valueOf, enumValues: CertificateAuthority_Tier.values)
     ..aOM<CertificateConfig>(4, _omitFieldNames ? '' : 'config', subBuilder: CertificateConfig.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'lifetime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'lifetime', subBuilder: $1738.Duration.create)
     ..aOM<CertificateAuthority_KeyVersionSpec>(6, _omitFieldNames ? '' : 'keySpec', subBuilder: CertificateAuthority_KeyVersionSpec.create)
     ..aOM<CertificateAuthority_CertificateAuthorityPolicy>(7, _omitFieldNames ? '' : 'certificatePolicy', subBuilder: CertificateAuthority_CertificateAuthorityPolicy.create)
     ..aOM<CertificateAuthority_IssuingOptions>(8, _omitFieldNames ? '' : 'issuingOptions', subBuilder: CertificateAuthority_IssuingOptions.create)
@@ -758,9 +758,9 @@ class CertificateAuthority extends $pb.GeneratedMessage {
     ..pc<CertificateDescription>(12, _omitFieldNames ? '' : 'caCertificateDescriptions', $pb.PbFieldType.PM, subBuilder: CertificateDescription.create)
     ..aOS(13, _omitFieldNames ? '' : 'gcsBucket')
     ..aOM<CertificateAuthority_AccessUrls>(14, _omitFieldNames ? '' : 'accessUrls', subBuilder: CertificateAuthority_AccessUrls.create)
-    ..aOM<$1775.Timestamp>(15, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(17, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(15, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(17, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(18, _omitFieldNames ? '' : 'labels', entryClassName: 'CertificateAuthority.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.security.privateca.v1beta1'))
     ..aOM<SubordinateConfig>(19, _omitFieldNames ? '' : 'subordinateConfig', subBuilder: SubordinateConfig.create)
     ..hasRequiredFields = false
@@ -834,15 +834,15 @@ class CertificateAuthority extends $pb.GeneratedMessage {
   /// "not_before_time" and "not_after_time" fields inside an X.509
   /// certificate.
   @$pb.TagNumber(5)
-  $1737.Duration get lifetime => $_getN(4);
+  $1738.Duration get lifetime => $_getN(4);
   @$pb.TagNumber(5)
-  set lifetime($1737.Duration v) { setField(5, v); }
+  set lifetime($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLifetime() => $_has(4);
   @$pb.TagNumber(5)
   void clearLifetime() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureLifetime() => $_ensure(4);
+  $1738.Duration ensureLifetime() => $_ensure(4);
 
   /// Required. Immutable. Used when issuing certificates for this [CertificateAuthority][google.cloud.security.privateca.v1beta1.CertificateAuthority]. If this
   /// [CertificateAuthority][google.cloud.security.privateca.v1beta1.CertificateAuthority] is a self-signed CertificateAuthority, this key
@@ -937,40 +937,40 @@ class CertificateAuthority extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this [CertificateAuthority][google.cloud.security.privateca.v1beta1.CertificateAuthority] was created.
   @$pb.TagNumber(15)
-  $1775.Timestamp get createTime => $_getN(13);
+  $1776.Timestamp get createTime => $_getN(13);
   @$pb.TagNumber(15)
-  set createTime($1775.Timestamp v) { setField(15, v); }
+  set createTime($1776.Timestamp v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasCreateTime() => $_has(13);
   @$pb.TagNumber(15)
   void clearCreateTime() => clearField(15);
   @$pb.TagNumber(15)
-  $1775.Timestamp ensureCreateTime() => $_ensure(13);
+  $1776.Timestamp ensureCreateTime() => $_ensure(13);
 
   /// Output only. The time at which this [CertificateAuthority][google.cloud.security.privateca.v1beta1.CertificateAuthority] was updated.
   @$pb.TagNumber(16)
-  $1775.Timestamp get updateTime => $_getN(14);
+  $1776.Timestamp get updateTime => $_getN(14);
   @$pb.TagNumber(16)
-  set updateTime($1775.Timestamp v) { setField(16, v); }
+  set updateTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasUpdateTime() => $_has(14);
   @$pb.TagNumber(16)
   void clearUpdateTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(14);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(14);
 
   /// Output only. The time at which this [CertificateAuthority][google.cloud.security.privateca.v1beta1.CertificateAuthority] will be deleted, if
   /// scheduled for deletion.
   @$pb.TagNumber(17)
-  $1775.Timestamp get deleteTime => $_getN(15);
+  $1776.Timestamp get deleteTime => $_getN(15);
   @$pb.TagNumber(17)
-  set deleteTime($1775.Timestamp v) { setField(17, v); }
+  set deleteTime($1776.Timestamp v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasDeleteTime() => $_has(15);
   @$pb.TagNumber(17)
   void clearDeleteTime() => clearField(17);
   @$pb.TagNumber(17)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(15);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(15);
 
   /// Optional. Labels with user-defined metadata.
   @$pb.TagNumber(18)
@@ -1085,8 +1085,8 @@ class CertificateRevocationList extends $pb.GeneratedMessage {
     $core.String? pemCrl,
     $core.String? accessUrl,
     CertificateRevocationList_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -1130,8 +1130,8 @@ class CertificateRevocationList extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'pemCrl')
     ..aOS(5, _omitFieldNames ? '' : 'accessUrl')
     ..e<CertificateRevocationList_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CertificateRevocationList_State.STATE_UNSPECIFIED, valueOf: CertificateRevocationList_State.valueOf, enumValues: CertificateRevocationList_State.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'CertificateRevocationList.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.security.privateca.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -1216,27 +1216,27 @@ class CertificateRevocationList extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this [CertificateRevocationList][google.cloud.security.privateca.v1beta1.CertificateRevocationList] was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time at which this [CertificateRevocationList][google.cloud.security.privateca.v1beta1.CertificateRevocationList] was updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Optional. Labels with user-defined metadata.
   @$pb.TagNumber(9)
@@ -1247,7 +1247,7 @@ class CertificateRevocationList extends $pb.GeneratedMessage {
 class Certificate_RevocationDetails extends $pb.GeneratedMessage {
   factory Certificate_RevocationDetails({
     RevocationReason? revocationState,
-    $1775.Timestamp? revocationTime,
+    $1776.Timestamp? revocationTime,
   }) {
     final $result = create();
     if (revocationState != null) {
@@ -1264,7 +1264,7 @@ class Certificate_RevocationDetails extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Certificate.RevocationDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.security.privateca.v1beta1'), createEmptyInstance: create)
     ..e<RevocationReason>(1, _omitFieldNames ? '' : 'revocationState', $pb.PbFieldType.OE, defaultOrMaker: RevocationReason.REVOCATION_REASON_UNSPECIFIED, valueOf: RevocationReason.valueOf, enumValues: RevocationReason.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'revocationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'revocationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1301,15 +1301,15 @@ class Certificate_RevocationDetails extends $pb.GeneratedMessage {
 
   /// The time at which this [Certificate][google.cloud.security.privateca.v1beta1.Certificate] was revoked.
   @$pb.TagNumber(2)
-  $1775.Timestamp get revocationTime => $_getN(1);
+  $1776.Timestamp get revocationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set revocationTime($1775.Timestamp v) { setField(2, v); }
+  set revocationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRevocationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearRevocationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRevocationTime() => $_ensure(1);
+  $1776.Timestamp ensureRevocationTime() => $_ensure(1);
 }
 
 enum Certificate_CertificateConfig {
@@ -1325,13 +1325,13 @@ class Certificate extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? pemCsr,
     CertificateConfig? config,
-    $1737.Duration? lifetime,
+    $1738.Duration? lifetime,
     Certificate_RevocationDetails? revocationDetails,
     $core.String? pemCertificate,
     CertificateDescription? certificateDescription,
     $core.Iterable<$core.String>? pemCertificateChain,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -1384,13 +1384,13 @@ class Certificate extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'pemCsr')
     ..aOM<CertificateConfig>(3, _omitFieldNames ? '' : 'config', subBuilder: CertificateConfig.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'lifetime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'lifetime', subBuilder: $1738.Duration.create)
     ..aOM<Certificate_RevocationDetails>(5, _omitFieldNames ? '' : 'revocationDetails', subBuilder: Certificate_RevocationDetails.create)
     ..aOS(6, _omitFieldNames ? '' : 'pemCertificate')
     ..aOM<CertificateDescription>(7, _omitFieldNames ? '' : 'certificateDescription', subBuilder: CertificateDescription.create)
     ..pPS(8, _omitFieldNames ? '' : 'pemCertificateChain')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'Certificate.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.security.privateca.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -1458,15 +1458,15 @@ class Certificate extends $pb.GeneratedMessage {
   /// certificate. Note that the lifetime may be truncated if it would extend
   /// past the life of any certificate authority in the issuing chain.
   @$pb.TagNumber(4)
-  $1737.Duration get lifetime => $_getN(3);
+  $1738.Duration get lifetime => $_getN(3);
   @$pb.TagNumber(4)
-  set lifetime($1737.Duration v) { setField(4, v); }
+  set lifetime($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLifetime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLifetime() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureLifetime() => $_ensure(3);
+  $1738.Duration ensureLifetime() => $_ensure(3);
 
   /// Output only. Details regarding the revocation of this [Certificate][google.cloud.security.privateca.v1beta1.Certificate]. This
   /// [Certificate][google.cloud.security.privateca.v1beta1.Certificate] is considered revoked if and only if this field is present.
@@ -1510,27 +1510,27 @@ class Certificate extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this [Certificate][google.cloud.security.privateca.v1beta1.Certificate] was created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. The time at which this [Certificate][google.cloud.security.privateca.v1beta1.Certificate] was updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Optional. Labels with user-defined metadata.
   @$pb.TagNumber(11)
@@ -1546,8 +1546,8 @@ class ReusableConfig extends $pb.GeneratedMessage {
     $core.String? name,
     ReusableConfigValues? values,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -1579,8 +1579,8 @@ class ReusableConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<ReusableConfigValues>(2, _omitFieldNames ? '' : 'values', subBuilder: ReusableConfigValues.create)
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'ReusableConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.security.privateca.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -1642,27 +1642,27 @@ class ReusableConfig extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this [ReusableConfig][google.cloud.security.privateca.v1beta1.ReusableConfig] was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time at which this [ReusableConfig][google.cloud.security.privateca.v1beta1.ReusableConfig] was updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. Labels with user-defined metadata.
   @$pb.TagNumber(6)
@@ -1672,8 +1672,8 @@ class ReusableConfig extends $pb.GeneratedMessage {
 /// Describes values that are relevant in a CA certificate.
 class ReusableConfigValues_CaOptions extends $pb.GeneratedMessage {
   factory ReusableConfigValues_CaOptions({
-    $1780.BoolValue? isCa,
-    $1780.Int32Value? maxIssuerPathLength,
+    $1781.BoolValue? isCa,
+    $1781.Int32Value? maxIssuerPathLength,
   }) {
     final $result = create();
     if (isCa != null) {
@@ -1689,8 +1689,8 @@ class ReusableConfigValues_CaOptions extends $pb.GeneratedMessage {
   factory ReusableConfigValues_CaOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReusableConfigValues.CaOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.security.privateca.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1780.BoolValue>(1, _omitFieldNames ? '' : 'isCa', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.Int32Value>(2, _omitFieldNames ? '' : 'maxIssuerPathLength', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'isCa', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.Int32Value>(2, _omitFieldNames ? '' : 'maxIssuerPathLength', subBuilder: $1781.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1718,15 +1718,15 @@ class ReusableConfigValues_CaOptions extends $pb.GeneratedMessage {
   /// Optional. Refers to the "CA" X.509 extension, which is a boolean value. When this
   /// value is missing, the extension will be omitted from the CA certificate.
   @$pb.TagNumber(1)
-  $1780.BoolValue get isCa => $_getN(0);
+  $1781.BoolValue get isCa => $_getN(0);
   @$pb.TagNumber(1)
-  set isCa($1780.BoolValue v) { setField(1, v); }
+  set isCa($1781.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIsCa() => $_has(0);
   @$pb.TagNumber(1)
   void clearIsCa() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BoolValue ensureIsCa() => $_ensure(0);
+  $1781.BoolValue ensureIsCa() => $_ensure(0);
 
   /// Optional. Refers to the path length restriction X.509 extension. For a CA
   /// certificate, this value describes the depth of subordinate CA
@@ -1735,15 +1735,15 @@ class ReusableConfigValues_CaOptions extends $pb.GeneratedMessage {
   /// If this value is missing, the max path length will be omitted from the
   /// CA certificate.
   @$pb.TagNumber(2)
-  $1780.Int32Value get maxIssuerPathLength => $_getN(1);
+  $1781.Int32Value get maxIssuerPathLength => $_getN(1);
   @$pb.TagNumber(2)
-  set maxIssuerPathLength($1780.Int32Value v) { setField(2, v); }
+  set maxIssuerPathLength($1781.Int32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxIssuerPathLength() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxIssuerPathLength() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int32Value ensureMaxIssuerPathLength() => $_ensure(1);
+  $1781.Int32Value ensureMaxIssuerPathLength() => $_ensure(1);
 }
 
 /// A [ReusableConfigValues][google.cloud.security.privateca.v1beta1.ReusableConfigValues] is used to describe certain fields of an
@@ -2328,9 +2328,9 @@ class CertificateDescription_SubjectDescription extends $pb.GeneratedMessage {
     $core.String? commonName,
     SubjectAltNames? subjectAltName,
     $core.String? hexSerialNumber,
-    $1737.Duration? lifetime,
-    $1775.Timestamp? notBeforeTime,
-    $1775.Timestamp? notAfterTime,
+    $1738.Duration? lifetime,
+    $1776.Timestamp? notBeforeTime,
+    $1776.Timestamp? notAfterTime,
   }) {
     final $result = create();
     if (subject != null) {
@@ -2365,9 +2365,9 @@ class CertificateDescription_SubjectDescription extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'commonName')
     ..aOM<SubjectAltNames>(3, _omitFieldNames ? '' : 'subjectAltName', subBuilder: SubjectAltNames.create)
     ..aOS(4, _omitFieldNames ? '' : 'hexSerialNumber')
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'lifetime', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'notBeforeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'notAfterTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'lifetime', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'notBeforeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'notAfterTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2439,39 +2439,39 @@ class CertificateDescription_SubjectDescription extends $pb.GeneratedMessage {
   /// For convenience, the actual lifetime of an issued certificate.
   /// Corresponds to 'not_after_time' - 'not_before_time'.
   @$pb.TagNumber(5)
-  $1737.Duration get lifetime => $_getN(4);
+  $1738.Duration get lifetime => $_getN(4);
   @$pb.TagNumber(5)
-  set lifetime($1737.Duration v) { setField(5, v); }
+  set lifetime($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLifetime() => $_has(4);
   @$pb.TagNumber(5)
   void clearLifetime() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureLifetime() => $_ensure(4);
+  $1738.Duration ensureLifetime() => $_ensure(4);
 
   /// The time at which the certificate becomes valid.
   @$pb.TagNumber(6)
-  $1775.Timestamp get notBeforeTime => $_getN(5);
+  $1776.Timestamp get notBeforeTime => $_getN(5);
   @$pb.TagNumber(6)
-  set notBeforeTime($1775.Timestamp v) { setField(6, v); }
+  set notBeforeTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasNotBeforeTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearNotBeforeTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureNotBeforeTime() => $_ensure(5);
+  $1776.Timestamp ensureNotBeforeTime() => $_ensure(5);
 
   /// The time at which the certificate expires.
   @$pb.TagNumber(7)
-  $1775.Timestamp get notAfterTime => $_getN(6);
+  $1776.Timestamp get notAfterTime => $_getN(6);
   @$pb.TagNumber(7)
-  set notAfterTime($1775.Timestamp v) { setField(7, v); }
+  set notAfterTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasNotAfterTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearNotAfterTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureNotAfterTime() => $_ensure(6);
+  $1776.Timestamp ensureNotAfterTime() => $_ensure(6);
 }
 
 /// A KeyId identifies a specific public key, usually by hashing the public

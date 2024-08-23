@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../resources/keyword_theme_constant.pb.dart' as $2478;
+import '../resources/keyword_theme_constant.pb.dart' as $2479;
 
 /// Request message for
 /// [KeywordThemeConstantService.SuggestKeywordThemeConstants][google.ads.googleads.v15.services.KeywordThemeConstantService.SuggestKeywordThemeConstants].
@@ -105,7 +105,7 @@ class SuggestKeywordThemeConstantsRequest extends $pb.GeneratedMessage {
 /// [KeywordThemeConstantService.SuggestKeywordThemeConstants][google.ads.googleads.v15.services.KeywordThemeConstantService.SuggestKeywordThemeConstants].
 class SuggestKeywordThemeConstantsResponse extends $pb.GeneratedMessage {
   factory SuggestKeywordThemeConstantsResponse({
-    $core.Iterable<$2478.KeywordThemeConstant>? keywordThemeConstants,
+    $core.Iterable<$2479.KeywordThemeConstant>? keywordThemeConstants,
   }) {
     final $result = create();
     if (keywordThemeConstants != null) {
@@ -118,7 +118,7 @@ class SuggestKeywordThemeConstantsResponse extends $pb.GeneratedMessage {
   factory SuggestKeywordThemeConstantsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestKeywordThemeConstantsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..pc<$2478.KeywordThemeConstant>(1, _omitFieldNames ? '' : 'keywordThemeConstants', $pb.PbFieldType.PM, subBuilder: $2478.KeywordThemeConstant.create)
+    ..pc<$2479.KeywordThemeConstant>(1, _omitFieldNames ? '' : 'keywordThemeConstants', $pb.PbFieldType.PM, subBuilder: $2479.KeywordThemeConstant.create)
     ..hasRequiredFields = false
   ;
 
@@ -145,7 +145,7 @@ class SuggestKeywordThemeConstantsResponse extends $pb.GeneratedMessage {
 
   /// Smart Campaign keyword theme suggestions.
   @$pb.TagNumber(1)
-  $core.List<$2478.KeywordThemeConstant> get keywordThemeConstants => $_getList(0);
+  $core.List<$2479.KeywordThemeConstant> get keywordThemeConstants => $_getList(0);
 }
 
 

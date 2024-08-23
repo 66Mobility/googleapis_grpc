@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/code.pbenum.dart' as $4219;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/code.pbenum.dart' as $4220;
 
 /// The arguments to the `RunPipeline` method. The requesting user must have
 /// the `iam.serviceAccounts.actAs` permission for the Cloud Life Sciences
@@ -161,7 +161,7 @@ class Pipeline extends $pb.GeneratedMessage {
     $core.Iterable<Action>? actions,
     Resources? resources,
     $core.Map<$core.String, $core.String>? environment,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     Secret? encryptedEnvironment,
   }) {
     final $result = create();
@@ -190,7 +190,7 @@ class Pipeline extends $pb.GeneratedMessage {
     ..pc<Action>(1, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: Action.create)
     ..aOM<Resources>(2, _omitFieldNames ? '' : 'resources', subBuilder: Resources.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'environment', entryClassName: 'Pipeline.EnvironmentEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.lifesciences.v2beta'))
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOM<Secret>(5, _omitFieldNames ? '' : 'encryptedEnvironment', subBuilder: Secret.create)
     ..hasRequiredFields = false
   ;
@@ -245,15 +245,15 @@ class Pipeline extends $pb.GeneratedMessage {
   ///
   ///  If unspecified, it will default to 7 days.
   @$pb.TagNumber(4)
-  $1737.Duration get timeout => $_getN(3);
+  $1738.Duration get timeout => $_getN(3);
   @$pb.TagNumber(4)
-  set timeout($1737.Duration v) { setField(4, v); }
+  set timeout($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeout() => $_has(3);
   @$pb.TagNumber(4)
   void clearTimeout() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureTimeout() => $_ensure(3);
+  $1738.Duration ensureTimeout() => $_ensure(3);
 
   ///  The encrypted environment to pass into every action. Each action can also
   ///  specify its own encrypted environment.
@@ -287,7 +287,7 @@ class Action extends $pb.GeneratedMessage {
     $core.Iterable<Mount>? mounts,
     $core.Map<$core.String, $core.String>? labels,
     Secret? credentials,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     $core.bool? ignoreExitStatus,
     $core.bool? runInBackground,
     $core.bool? alwaysRun,
@@ -376,7 +376,7 @@ class Action extends $pb.GeneratedMessage {
     ..pc<Mount>(9, _omitFieldNames ? '' : 'mounts', $pb.PbFieldType.PM, subBuilder: Mount.create)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'Action.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.lifesciences.v2beta'))
     ..aOM<Secret>(11, _omitFieldNames ? '' : 'credentials', subBuilder: Secret.create)
-    ..aOM<$1737.Duration>(12, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(12, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOB(13, _omitFieldNames ? '' : 'ignoreExitStatus')
     ..aOB(14, _omitFieldNames ? '' : 'runInBackground')
     ..aOB(15, _omitFieldNames ? '' : 'alwaysRun')
@@ -555,15 +555,15 @@ class Action extends $pb.GeneratedMessage {
   /// status will be non-zero. The pipeline will continue or terminate based
   /// on the rules defined by the `ALWAYS_RUN` and `IGNORE_EXIT_STATUS` flags.
   @$pb.TagNumber(12)
-  $1737.Duration get timeout => $_getN(10);
+  $1738.Duration get timeout => $_getN(10);
   @$pb.TagNumber(12)
-  set timeout($1737.Duration v) { setField(12, v); }
+  set timeout($1738.Duration v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasTimeout() => $_has(10);
   @$pb.TagNumber(12)
   void clearTimeout() => clearField(12);
   @$pb.TagNumber(12)
-  $1737.Duration ensureTimeout() => $_ensure(10);
+  $1738.Duration ensureTimeout() => $_ensure(10);
 
   /// Normally, a non-zero exit status causes the pipeline to fail. This flag
   /// allows execution of other actions to continue instead.
@@ -1896,9 +1896,9 @@ class Metadata extends $pb.GeneratedMessage {
     Pipeline? pipeline,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<Event>? events,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? pubSubTopic,
   }) {
     final $result = create();
@@ -1933,9 +1933,9 @@ class Metadata extends $pb.GeneratedMessage {
     ..aOM<Pipeline>(1, _omitFieldNames ? '' : 'pipeline', subBuilder: Pipeline.create)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'Metadata.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.lifesciences.v2beta'))
     ..pc<Event>(3, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: Event.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'pubSubTopic')
     ..hasRequiredFields = false
   ;
@@ -1984,39 +1984,39 @@ class Metadata extends $pb.GeneratedMessage {
 
   /// The time at which the operation was created by the API.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// The first time at which resources were allocated to execute the pipeline.
   @$pb.TagNumber(5)
-  $1775.Timestamp get startTime => $_getN(4);
+  $1776.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(5)
-  set startTime($1775.Timestamp v) { setField(5, v); }
+  set startTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureStartTime() => $_ensure(4);
+  $1776.Timestamp ensureStartTime() => $_ensure(4);
 
   /// The time at which execution was completed and resources were cleaned up.
   @$pb.TagNumber(6)
-  $1775.Timestamp get endTime => $_getN(5);
+  $1776.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($1775.Timestamp v) { setField(6, v); }
+  set endTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEndTime() => $_ensure(5);
+  $1776.Timestamp ensureEndTime() => $_ensure(5);
 
   /// The name of the Cloud Pub/Sub topic where notifications of operation status
   /// changes are sent.
@@ -2047,7 +2047,7 @@ enum Event_Details {
 /// Carries information about events that occur during pipeline execution.
 class Event extends $pb.GeneratedMessage {
   factory Event({
-    $1775.Timestamp? timestamp,
+    $1776.Timestamp? timestamp,
     $core.String? description,
     DelayedEvent? delayed,
     WorkerAssignedEvent? workerAssigned,
@@ -2118,7 +2118,7 @@ class Event extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.lifesciences.v2beta'), createEmptyInstance: create)
     ..oo(0, [17, 18, 19, 20, 21, 22, 23, 24, 25, 26])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'timestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'timestamp', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<DelayedEvent>(17, _omitFieldNames ? '' : 'delayed', subBuilder: DelayedEvent.create)
     ..aOM<WorkerAssignedEvent>(18, _omitFieldNames ? '' : 'workerAssigned', subBuilder: WorkerAssignedEvent.create)
@@ -2159,15 +2159,15 @@ class Event extends $pb.GeneratedMessage {
 
   /// The time at which the event occurred.
   @$pb.TagNumber(1)
-  $1775.Timestamp get timestamp => $_getN(0);
+  $1776.Timestamp get timestamp => $_getN(0);
   @$pb.TagNumber(1)
-  set timestamp($1775.Timestamp v) { setField(1, v); }
+  set timestamp($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimestamp() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimestamp() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureTimestamp() => $_ensure(0);
+  $1776.Timestamp ensureTimestamp() => $_ensure(0);
 
   /// A human-readable description of the event. Note that these strings can
   /// change at any time without notice. Any application logic must use the
@@ -2932,7 +2932,7 @@ class ContainerKilledEvent extends $pb.GeneratedMessage {
 /// that other events can continue to occur after this event.
 class FailedEvent extends $pb.GeneratedMessage {
   factory FailedEvent({
-    $4219.Code? code,
+    $4220.Code? code,
     $core.String? cause,
   }) {
     final $result = create();
@@ -2949,7 +2949,7 @@ class FailedEvent extends $pb.GeneratedMessage {
   factory FailedEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FailedEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.lifesciences.v2beta'), createEmptyInstance: create)
-    ..e<$4219.Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: $4219.Code.OK, valueOf: $4219.Code.valueOf, enumValues: $4219.Code.values)
+    ..e<$4220.Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: $4220.Code.OK, valueOf: $4220.Code.valueOf, enumValues: $4220.Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'cause')
     ..hasRequiredFields = false
   ;
@@ -2977,9 +2977,9 @@ class FailedEvent extends $pb.GeneratedMessage {
 
   /// The Google standard error code that best describes this failure.
   @$pb.TagNumber(1)
-  $4219.Code get code => $_getN(0);
+  $4220.Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code($4219.Code v) { setField(1, v); }
+  set code($4220.Code v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)

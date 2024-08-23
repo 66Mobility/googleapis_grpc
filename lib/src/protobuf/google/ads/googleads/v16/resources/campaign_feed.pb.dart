@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/matching_function.pb.dart' as $2842;
-import '../enums/feed_link_status.pbenum.dart' as $2843;
-import '../enums/placeholder_type.pbenum.dart' as $2612;
+import '../common/matching_function.pb.dart' as $2843;
+import '../enums/feed_link_status.pbenum.dart' as $2844;
+import '../enums/placeholder_type.pbenum.dart' as $2613;
 
 /// A campaign feed.
 class CampaignFeed extends $pb.GeneratedMessage {
   factory CampaignFeed({
     $core.String? resourceName,
-    $core.Iterable<$2612.PlaceholderTypeEnum_PlaceholderType>? placeholderTypes,
-    $2842.MatchingFunction? matchingFunction,
-    $2843.FeedLinkStatusEnum_FeedLinkStatus? status,
+    $core.Iterable<$2613.PlaceholderTypeEnum_PlaceholderType>? placeholderTypes,
+    $2843.MatchingFunction? matchingFunction,
+    $2844.FeedLinkStatusEnum_FeedLinkStatus? status,
     $core.String? feed,
     $core.String? campaign,
   }) {
@@ -54,9 +54,9 @@ class CampaignFeed extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignFeed', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..pc<$2612.PlaceholderTypeEnum_PlaceholderType>(4, _omitFieldNames ? '' : 'placeholderTypes', $pb.PbFieldType.KE, valueOf: $2612.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $2612.PlaceholderTypeEnum_PlaceholderType.values, defaultEnumValue: $2612.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED)
-    ..aOM<$2842.MatchingFunction>(5, _omitFieldNames ? '' : 'matchingFunction', subBuilder: $2842.MatchingFunction.create)
-    ..e<$2843.FeedLinkStatusEnum_FeedLinkStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2843.FeedLinkStatusEnum_FeedLinkStatus.UNSPECIFIED, valueOf: $2843.FeedLinkStatusEnum_FeedLinkStatus.valueOf, enumValues: $2843.FeedLinkStatusEnum_FeedLinkStatus.values)
+    ..pc<$2613.PlaceholderTypeEnum_PlaceholderType>(4, _omitFieldNames ? '' : 'placeholderTypes', $pb.PbFieldType.KE, valueOf: $2613.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $2613.PlaceholderTypeEnum_PlaceholderType.values, defaultEnumValue: $2613.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED)
+    ..aOM<$2843.MatchingFunction>(5, _omitFieldNames ? '' : 'matchingFunction', subBuilder: $2843.MatchingFunction.create)
+    ..e<$2844.FeedLinkStatusEnum_FeedLinkStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2844.FeedLinkStatusEnum_FeedLinkStatus.UNSPECIFIED, valueOf: $2844.FeedLinkStatusEnum_FeedLinkStatus.valueOf, enumValues: $2844.FeedLinkStatusEnum_FeedLinkStatus.values)
     ..aOS(7, _omitFieldNames ? '' : 'feed')
     ..aOS(8, _omitFieldNames ? '' : 'campaign')
     ..hasRequiredFields = false
@@ -99,28 +99,28 @@ class CampaignFeed extends $pb.GeneratedMessage {
   /// Indicates which placeholder types the feed may populate under the connected
   /// campaign. Required.
   @$pb.TagNumber(4)
-  $core.List<$2612.PlaceholderTypeEnum_PlaceholderType> get placeholderTypes => $_getList(1);
+  $core.List<$2613.PlaceholderTypeEnum_PlaceholderType> get placeholderTypes => $_getList(1);
 
   /// Matching function associated with the CampaignFeed.
   /// The matching function is used to filter the set of feed items selected.
   /// Required.
   @$pb.TagNumber(5)
-  $2842.MatchingFunction get matchingFunction => $_getN(2);
+  $2843.MatchingFunction get matchingFunction => $_getN(2);
   @$pb.TagNumber(5)
-  set matchingFunction($2842.MatchingFunction v) { setField(5, v); }
+  set matchingFunction($2843.MatchingFunction v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMatchingFunction() => $_has(2);
   @$pb.TagNumber(5)
   void clearMatchingFunction() => clearField(5);
   @$pb.TagNumber(5)
-  $2842.MatchingFunction ensureMatchingFunction() => $_ensure(2);
+  $2843.MatchingFunction ensureMatchingFunction() => $_ensure(2);
 
   /// Output only. Status of the campaign feed.
   /// This field is read-only.
   @$pb.TagNumber(6)
-  $2843.FeedLinkStatusEnum_FeedLinkStatus get status => $_getN(3);
+  $2844.FeedLinkStatusEnum_FeedLinkStatus get status => $_getN(3);
   @$pb.TagNumber(6)
-  set status($2843.FeedLinkStatusEnum_FeedLinkStatus v) { setField(6, v); }
+  set status($2844.FeedLinkStatusEnum_FeedLinkStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(6)

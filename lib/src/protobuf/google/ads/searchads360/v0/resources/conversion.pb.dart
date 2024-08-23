@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_field_type.pbenum.dart' as $4034;
-import '../enums/attribution_type.pbenum.dart' as $4061;
-import '../enums/conversion_status.pbenum.dart' as $4062;
-import '../enums/product_channel.pbenum.dart' as $3994;
+import '../enums/asset_field_type.pbenum.dart' as $4035;
+import '../enums/attribution_type.pbenum.dart' as $4062;
+import '../enums/conversion_status.pbenum.dart' as $4063;
+import '../enums/product_channel.pbenum.dart' as $3995;
 
 /// A conversion.
 class Conversion extends $pb.GeneratedMessage {
@@ -31,11 +31,11 @@ class Conversion extends $pb.GeneratedMessage {
     $fixnum.Int64? visitId,
     $core.String? advertiserConversionId,
     $core.String? productId,
-    $3994.ProductChannelEnum_ProductChannel? productChannel,
+    $3995.ProductChannelEnum_ProductChannel? productChannel,
     $core.String? productLanguageCode,
     $core.String? productStoreId,
     $core.String? productCountryCode,
-    $4061.AttributionTypeEnum_AttributionType? attributionType,
+    $4062.AttributionTypeEnum_AttributionType? attributionType,
     $core.String? conversionDateTime,
     $core.String? conversionLastModifiedDateTime,
     $core.String? conversionVisitDateTime,
@@ -43,9 +43,9 @@ class Conversion extends $pb.GeneratedMessage {
     $fixnum.Int64? conversionRevenueMicros,
     $fixnum.Int64? floodlightOriginalRevenue,
     $core.String? floodlightOrderId,
-    $4062.ConversionStatusEnum_ConversionStatus? status,
+    $4063.ConversionStatusEnum_ConversionStatus? status,
     $fixnum.Int64? assetId,
-    $4034.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
+    $4035.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -136,11 +136,11 @@ class Conversion extends $pb.GeneratedMessage {
     ..aInt64(7, _omitFieldNames ? '' : 'visitId')
     ..aOS(8, _omitFieldNames ? '' : 'advertiserConversionId')
     ..aOS(9, _omitFieldNames ? '' : 'productId')
-    ..e<$3994.ProductChannelEnum_ProductChannel>(10, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $3994.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3994.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3994.ProductChannelEnum_ProductChannel.values)
+    ..e<$3995.ProductChannelEnum_ProductChannel>(10, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $3995.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3995.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3995.ProductChannelEnum_ProductChannel.values)
     ..aOS(11, _omitFieldNames ? '' : 'productLanguageCode')
     ..aOS(12, _omitFieldNames ? '' : 'productStoreId')
     ..aOS(13, _omitFieldNames ? '' : 'productCountryCode')
-    ..e<$4061.AttributionTypeEnum_AttributionType>(14, _omitFieldNames ? '' : 'attributionType', $pb.PbFieldType.OE, defaultOrMaker: $4061.AttributionTypeEnum_AttributionType.UNSPECIFIED, valueOf: $4061.AttributionTypeEnum_AttributionType.valueOf, enumValues: $4061.AttributionTypeEnum_AttributionType.values)
+    ..e<$4062.AttributionTypeEnum_AttributionType>(14, _omitFieldNames ? '' : 'attributionType', $pb.PbFieldType.OE, defaultOrMaker: $4062.AttributionTypeEnum_AttributionType.UNSPECIFIED, valueOf: $4062.AttributionTypeEnum_AttributionType.valueOf, enumValues: $4062.AttributionTypeEnum_AttributionType.values)
     ..aOS(15, _omitFieldNames ? '' : 'conversionDateTime')
     ..aOS(16, _omitFieldNames ? '' : 'conversionLastModifiedDateTime')
     ..aOS(17, _omitFieldNames ? '' : 'conversionVisitDateTime')
@@ -148,9 +148,9 @@ class Conversion extends $pb.GeneratedMessage {
     ..aInt64(19, _omitFieldNames ? '' : 'conversionRevenueMicros')
     ..aInt64(20, _omitFieldNames ? '' : 'floodlightOriginalRevenue')
     ..aOS(21, _omitFieldNames ? '' : 'floodlightOrderId')
-    ..e<$4062.ConversionStatusEnum_ConversionStatus>(22, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4062.ConversionStatusEnum_ConversionStatus.UNSPECIFIED, valueOf: $4062.ConversionStatusEnum_ConversionStatus.valueOf, enumValues: $4062.ConversionStatusEnum_ConversionStatus.values)
+    ..e<$4063.ConversionStatusEnum_ConversionStatus>(22, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4063.ConversionStatusEnum_ConversionStatus.UNSPECIFIED, valueOf: $4063.ConversionStatusEnum_ConversionStatus.valueOf, enumValues: $4063.ConversionStatusEnum_ConversionStatus.values)
     ..aInt64(23, _omitFieldNames ? '' : 'assetId')
-    ..e<$4034.AssetFieldTypeEnum_AssetFieldType>(24, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $4034.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $4034.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4034.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$4035.AssetFieldTypeEnum_AssetFieldType>(24, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $4035.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $4035.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4035.AssetFieldTypeEnum_AssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -281,9 +281,9 @@ class Conversion extends $pb.GeneratedMessage {
   /// Output only. The sales channel of the product that was clicked on: Online
   /// or Local.
   @$pb.TagNumber(10)
-  $3994.ProductChannelEnum_ProductChannel get productChannel => $_getN(9);
+  $3995.ProductChannelEnum_ProductChannel get productChannel => $_getN(9);
   @$pb.TagNumber(10)
-  set productChannel($3994.ProductChannelEnum_ProductChannel v) { setField(10, v); }
+  set productChannel($3995.ProductChannelEnum_ProductChannel v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasProductChannel() => $_has(9);
   @$pb.TagNumber(10)
@@ -324,9 +324,9 @@ class Conversion extends $pb.GeneratedMessage {
 
   /// Output only. What the conversion is attributed to: Visit or Keyword+Ad.
   @$pb.TagNumber(14)
-  $4061.AttributionTypeEnum_AttributionType get attributionType => $_getN(13);
+  $4062.AttributionTypeEnum_AttributionType get attributionType => $_getN(13);
   @$pb.TagNumber(14)
-  set attributionType($4061.AttributionTypeEnum_AttributionType v) { setField(14, v); }
+  set attributionType($4062.AttributionTypeEnum_AttributionType v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasAttributionType() => $_has(13);
   @$pb.TagNumber(14)
@@ -412,9 +412,9 @@ class Conversion extends $pb.GeneratedMessage {
 
   /// Output only. The status of the conversion, either ENABLED or REMOVED..
   @$pb.TagNumber(22)
-  $4062.ConversionStatusEnum_ConversionStatus get status => $_getN(21);
+  $4063.ConversionStatusEnum_ConversionStatus get status => $_getN(21);
   @$pb.TagNumber(22)
-  set status($4062.ConversionStatusEnum_ConversionStatus v) { setField(22, v); }
+  set status($4063.ConversionStatusEnum_ConversionStatus v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasStatus() => $_has(21);
   @$pb.TagNumber(22)
@@ -433,9 +433,9 @@ class Conversion extends $pb.GeneratedMessage {
 
   /// Output only. Asset field type of the conversion event.
   @$pb.TagNumber(24)
-  $4034.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(23);
+  $4035.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(23);
   @$pb.TagNumber(24)
-  set assetFieldType($4034.AssetFieldTypeEnum_AssetFieldType v) { setField(24, v); }
+  set assetFieldType($4035.AssetFieldTypeEnum_AssetFieldType v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasAssetFieldType() => $_has(23);
   @$pb.TagNumber(24)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'openapi.pb.dart' as $4247;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'openapi.pb.dart' as $4248;
 import 'tool.pbenum.dart';
 
 export 'tool.pbenum.dart';
@@ -125,7 +125,7 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
   factory FunctionDeclaration({
     $core.String? name,
     $core.String? description,
-    $4247.Schema? parameters,
+    $4248.Schema? parameters,
   }) {
     final $result = create();
     if (name != null) {
@@ -146,7 +146,7 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionDeclaration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$4247.Schema>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4247.Schema.create)
+    ..aOM<$4248.Schema>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4248.Schema.create)
     ..hasRequiredFields = false
   ;
 
@@ -210,15 +210,15 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
   /// required:
   ///  - param1
   @$pb.TagNumber(3)
-  $4247.Schema get parameters => $_getN(2);
+  $4248.Schema get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($4247.Schema v) { setField(3, v); }
+  set parameters($4248.Schema v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $4247.Schema ensureParameters() => $_ensure(2);
+  $4248.Schema ensureParameters() => $_ensure(2);
 }
 
 /// A predicted [FunctionCall] returned from the model that contains a string
@@ -227,7 +227,7 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
 class FunctionCall extends $pb.GeneratedMessage {
   factory FunctionCall({
     $core.String? name,
-    $1734.Struct? args,
+    $1735.Struct? args,
   }) {
     final $result = create();
     if (name != null) {
@@ -244,7 +244,7 @@ class FunctionCall extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionCall', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'args', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'args', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -283,15 +283,15 @@ class FunctionCall extends $pb.GeneratedMessage {
   /// Optional. Required. The function parameters and values in JSON object
   /// format. See [FunctionDeclaration.parameters] for parameter details.
   @$pb.TagNumber(2)
-  $1734.Struct get args => $_getN(1);
+  $1735.Struct get args => $_getN(1);
   @$pb.TagNumber(2)
-  set args($1734.Struct v) { setField(2, v); }
+  set args($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasArgs() => $_has(1);
   @$pb.TagNumber(2)
   void clearArgs() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureArgs() => $_ensure(1);
+  $1735.Struct ensureArgs() => $_ensure(1);
 }
 
 /// The result output from a [FunctionCall] that contains a string representing
@@ -301,7 +301,7 @@ class FunctionCall extends $pb.GeneratedMessage {
 class FunctionResponse extends $pb.GeneratedMessage {
   factory FunctionResponse({
     $core.String? name,
-    $1734.Struct? response,
+    $1735.Struct? response,
   }) {
     final $result = create();
     if (name != null) {
@@ -318,7 +318,7 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'response', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'response', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -356,15 +356,15 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   /// Required. The function response in JSON object format.
   @$pb.TagNumber(2)
-  $1734.Struct get response => $_getN(1);
+  $1735.Struct get response => $_getN(1);
   @$pb.TagNumber(2)
-  set response($1734.Struct v) { setField(2, v); }
+  set response($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureResponse() => $_ensure(1);
+  $1735.Struct ensureResponse() => $_ensure(1);
 }
 
 enum Retrieval_Source {

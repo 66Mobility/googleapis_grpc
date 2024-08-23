@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 
 /// Payload message of raw document content (bytes).
 class RawDocument extends $pb.GeneratedMessage {
@@ -424,7 +424,7 @@ class DocumentOutputConfig_GcsOutputConfig_ShardingConfig extends $pb.GeneratedM
 class DocumentOutputConfig_GcsOutputConfig extends $pb.GeneratedMessage {
   factory DocumentOutputConfig_GcsOutputConfig({
     $core.String? gcsUri,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
     DocumentOutputConfig_GcsOutputConfig_ShardingConfig? shardingConfig,
   }) {
     final $result = create();
@@ -445,7 +445,7 @@ class DocumentOutputConfig_GcsOutputConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DocumentOutputConfig.GcsOutputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'gcsUri')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DocumentOutputConfig_GcsOutputConfig_ShardingConfig>(3, _omitFieldNames ? '' : 'shardingConfig', subBuilder: DocumentOutputConfig_GcsOutputConfig_ShardingConfig.create)
     ..hasRequiredFields = false
   ;
@@ -485,15 +485,15 @@ class DocumentOutputConfig_GcsOutputConfig extends $pb.GeneratedMessage {
   /// Only supports top level document and pages field so it must be in the
   /// form of `{document_field_name}` or `pages.{page_field_name}`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get fieldMask => $_getN(1);
+  $2210.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($2209.FieldMask v) { setField(2, v); }
+  set fieldMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureFieldMask() => $_ensure(1);
+  $2210.FieldMask ensureFieldMask() => $_ensure(1);
 
   /// Specifies the sharding config for the output document.
   @$pb.TagNumber(3)

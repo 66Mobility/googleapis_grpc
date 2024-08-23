@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'machine_resources.pb.dart' as $4287;
+import 'machine_resources.pb.dart' as $4288;
 import 'model.pb.dart' as $609;
 import 'publisher_model.pbenum.dart';
 
@@ -623,8 +623,8 @@ class PublisherModel_CallToAction_Deploy extends $pb.GeneratedMessage {
     $609.LargeModelReference? largeModelReference,
     $609.ModelContainerSpec? containerSpec,
     $core.String? artifactUri,
-    $4287.DedicatedResources? dedicatedResources,
-    $4287.AutomaticResources? automaticResources,
+    $4288.DedicatedResources? dedicatedResources,
+    $4288.AutomaticResources? automaticResources,
     $core.String? sharedResources,
     $core.String? title,
     $core.String? publicArtifactUri,
@@ -683,8 +683,8 @@ class PublisherModel_CallToAction_Deploy extends $pb.GeneratedMessage {
     ..aOM<$609.LargeModelReference>(2, _omitFieldNames ? '' : 'largeModelReference', subBuilder: $609.LargeModelReference.create)
     ..aOM<$609.ModelContainerSpec>(3, _omitFieldNames ? '' : 'containerSpec', subBuilder: $609.ModelContainerSpec.create)
     ..aOS(4, _omitFieldNames ? '' : 'artifactUri')
-    ..aOM<$4287.DedicatedResources>(5, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4287.DedicatedResources.create)
-    ..aOM<$4287.AutomaticResources>(6, _omitFieldNames ? '' : 'automaticResources', subBuilder: $4287.AutomaticResources.create)
+    ..aOM<$4288.DedicatedResources>(5, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4288.DedicatedResources.create)
+    ..aOM<$4288.AutomaticResources>(6, _omitFieldNames ? '' : 'automaticResources', subBuilder: $4288.AutomaticResources.create)
     ..aOS(7, _omitFieldNames ? '' : 'sharedResources')
     ..aOS(8, _omitFieldNames ? '' : 'title')
     ..aOS(9, _omitFieldNames ? '' : 'publicArtifactUri')
@@ -767,28 +767,28 @@ class PublisherModel_CallToAction_Deploy extends $pb.GeneratedMessage {
   /// A description of resources that are dedicated to the DeployedModel,
   /// and that need a higher degree of manual configuration.
   @$pb.TagNumber(5)
-  $4287.DedicatedResources get dedicatedResources => $_getN(4);
+  $4288.DedicatedResources get dedicatedResources => $_getN(4);
   @$pb.TagNumber(5)
-  set dedicatedResources($4287.DedicatedResources v) { setField(5, v); }
+  set dedicatedResources($4288.DedicatedResources v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDedicatedResources() => $_has(4);
   @$pb.TagNumber(5)
   void clearDedicatedResources() => clearField(5);
   @$pb.TagNumber(5)
-  $4287.DedicatedResources ensureDedicatedResources() => $_ensure(4);
+  $4288.DedicatedResources ensureDedicatedResources() => $_ensure(4);
 
   /// A description of resources that to large degree are decided by Vertex
   /// AI, and require only a modest additional configuration.
   @$pb.TagNumber(6)
-  $4287.AutomaticResources get automaticResources => $_getN(5);
+  $4288.AutomaticResources get automaticResources => $_getN(5);
   @$pb.TagNumber(6)
-  set automaticResources($4287.AutomaticResources v) { setField(6, v); }
+  set automaticResources($4288.AutomaticResources v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAutomaticResources() => $_has(5);
   @$pb.TagNumber(6)
   void clearAutomaticResources() => clearField(6);
   @$pb.TagNumber(6)
-  $4287.AutomaticResources ensureAutomaticResources() => $_ensure(5);
+  $4288.AutomaticResources ensureAutomaticResources() => $_ensure(5);
 
   /// The resource name of the shared DeploymentResourcePool to deploy on.
   /// Format:

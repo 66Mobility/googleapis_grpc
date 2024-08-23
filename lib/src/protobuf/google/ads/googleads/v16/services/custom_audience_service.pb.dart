@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/custom_audience.pb.dart' as $3183;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/custom_audience.pb.dart' as $3184;
 
 /// Request message for
 /// [CustomAudienceService.MutateCustomAudiences][google.ads.googleads.v16.services.CustomAudienceService.MutateCustomAudiences].
@@ -104,10 +104,10 @@ enum CustomAudienceOperation_Operation {
 /// A single operation (create, update) on a custom audience.
 class CustomAudienceOperation extends $pb.GeneratedMessage {
   factory CustomAudienceOperation({
-    $3183.CustomAudience? create_1,
-    $3183.CustomAudience? update,
+    $3184.CustomAudience? create_1,
+    $3184.CustomAudience? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -136,10 +136,10 @@ class CustomAudienceOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomAudienceOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3183.CustomAudience>(1, _omitFieldNames ? '' : 'create', subBuilder: $3183.CustomAudience.create)
-    ..aOM<$3183.CustomAudience>(2, _omitFieldNames ? '' : 'update', subBuilder: $3183.CustomAudience.create)
+    ..aOM<$3184.CustomAudience>(1, _omitFieldNames ? '' : 'create', subBuilder: $3184.CustomAudience.create)
+    ..aOM<$3184.CustomAudience>(2, _omitFieldNames ? '' : 'update', subBuilder: $3184.CustomAudience.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -170,28 +170,28 @@ class CustomAudienceOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new custom
   /// audience.
   @$pb.TagNumber(1)
-  $3183.CustomAudience get create_1 => $_getN(0);
+  $3184.CustomAudience get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3183.CustomAudience v) { setField(1, v); }
+  set create_1($3184.CustomAudience v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3183.CustomAudience ensureCreate_1() => $_ensure(0);
+  $3184.CustomAudience ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The custom audience is expected to have a valid
   /// resource name.
   @$pb.TagNumber(2)
-  $3183.CustomAudience get update => $_getN(1);
+  $3184.CustomAudience get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3183.CustomAudience v) { setField(2, v); }
+  set update($3184.CustomAudience v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3183.CustomAudience ensureUpdate() => $_ensure(1);
+  $3184.CustomAudience ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed custom audience is
   ///  expected, in this format:
@@ -208,15 +208,15 @@ class CustomAudienceOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for custom audience mutate.

@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/datetime.pb.dart' as $1801;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/datetime.pb.dart' as $1802;
 import 'warehouse.pbenum.dart';
 
 export 'warehouse.pbenum.dart';
@@ -327,7 +327,7 @@ class ListAssetsResponse extends $pb.GeneratedMessage {
 class UpdateAssetRequest extends $pb.GeneratedMessage {
   factory UpdateAssetRequest({
     Asset? asset,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (asset != null) {
@@ -344,7 +344,7 @@ class UpdateAssetRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAssetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOM<Asset>(1, _omitFieldNames ? '' : 'asset', subBuilder: Asset.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -387,15 +387,15 @@ class UpdateAssetRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for DeleteAsset.
@@ -459,7 +459,7 @@ class DeleteAssetRequest extends $pb.GeneratedMessage {
 class Asset extends $pb.GeneratedMessage {
   factory Asset({
     $core.String? name,
-    $1737.Duration? ttl,
+    $1738.Duration? ttl,
   }) {
     final $result = create();
     if (name != null) {
@@ -476,7 +476,7 @@ class Asset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -517,15 +517,15 @@ class Asset extends $pb.GeneratedMessage {
   /// documents can exist. If not set, then it will using the default ttl in the
   /// parent corpus resource.
   @$pb.TagNumber(2)
-  $1737.Duration get ttl => $_getN(1);
+  $1738.Duration get ttl => $_getN(1);
   @$pb.TagNumber(2)
-  set ttl($1737.Duration v) { setField(2, v); }
+  set ttl($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTtl() => $_has(1);
   @$pb.TagNumber(2)
   void clearTtl() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTtl() => $_ensure(1);
+  $1738.Duration ensureTtl() => $_ensure(1);
 }
 
 /// Request message of CreateCorpus API.
@@ -637,7 +637,7 @@ class Corpus extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1737.Duration? defaultTtl,
+    $1738.Duration? defaultTtl,
   }) {
     final $result = create();
     if (name != null) {
@@ -662,7 +662,7 @@ class Corpus extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'defaultTtl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'defaultTtl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -724,15 +724,15 @@ class Corpus extends $pb.GeneratedMessage {
   /// user-defined TTL with a maximum of 10 years. This is required for all
   /// corpora.
   @$pb.TagNumber(5)
-  $1737.Duration get defaultTtl => $_getN(3);
+  $1738.Duration get defaultTtl => $_getN(3);
   @$pb.TagNumber(5)
-  set defaultTtl($1737.Duration v) { setField(5, v); }
+  set defaultTtl($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDefaultTtl() => $_has(3);
   @$pb.TagNumber(5)
   void clearDefaultTtl() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureDefaultTtl() => $_ensure(3);
+  $1738.Duration ensureDefaultTtl() => $_ensure(3);
 }
 
 /// Request message for GetCorpus.
@@ -791,7 +791,7 @@ class GetCorpusRequest extends $pb.GeneratedMessage {
 class UpdateCorpusRequest extends $pb.GeneratedMessage {
   factory UpdateCorpusRequest({
     Corpus? corpus,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (corpus != null) {
@@ -808,7 +808,7 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCorpusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOM<Corpus>(1, _omitFieldNames ? '' : 'corpus', subBuilder: Corpus.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -847,15 +847,15 @@ class UpdateCorpusRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for ListCorpora.
@@ -1434,7 +1434,7 @@ class DataSchemaDetails extends $pb.GeneratedMessage {
 class UpdateDataSchemaRequest extends $pb.GeneratedMessage {
   factory UpdateDataSchemaRequest({
     DataSchema? dataSchema,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataSchema != null) {
@@ -1451,7 +1451,7 @@ class UpdateDataSchemaRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataSchemaRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOM<DataSchema>(1, _omitFieldNames ? '' : 'dataSchema', subBuilder: DataSchema.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1492,15 +1492,15 @@ class UpdateDataSchemaRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for GetDataSchema.
@@ -2100,9 +2100,9 @@ class AnnotationValue extends $pb.GeneratedMessage {
     $core.String? strValue,
     $core.String? datetimeValue,
     GeoCoordinate? geoCoordinate,
-    $1794.Any? protoAnyValue,
+    $1795.Any? protoAnyValue,
     $core.bool? boolValue,
-    $1734.Struct? customizedStructDataValue,
+    $1735.Struct? customizedStructDataValue,
   }) {
     final $result = create();
     if (intValue != null) {
@@ -2153,9 +2153,9 @@ class AnnotationValue extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'strValue')
     ..aOS(5, _omitFieldNames ? '' : 'datetimeValue')
     ..aOM<GeoCoordinate>(7, _omitFieldNames ? '' : 'geoCoordinate', subBuilder: GeoCoordinate.create)
-    ..aOM<$1794.Any>(8, _omitFieldNames ? '' : 'protoAnyValue', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(8, _omitFieldNames ? '' : 'protoAnyValue', subBuilder: $1795.Any.create)
     ..aOB(9, _omitFieldNames ? '' : 'boolValue')
-    ..aOM<$1734.Struct>(10, _omitFieldNames ? '' : 'customizedStructDataValue', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(10, _omitFieldNames ? '' : 'customizedStructDataValue', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -2237,15 +2237,15 @@ class AnnotationValue extends $pb.GeneratedMessage {
 
   /// Value of any proto value.
   @$pb.TagNumber(8)
-  $1794.Any get protoAnyValue => $_getN(5);
+  $1795.Any get protoAnyValue => $_getN(5);
   @$pb.TagNumber(8)
-  set protoAnyValue($1794.Any v) { setField(8, v); }
+  set protoAnyValue($1795.Any v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasProtoAnyValue() => $_has(5);
   @$pb.TagNumber(8)
   void clearProtoAnyValue() => clearField(8);
   @$pb.TagNumber(8)
-  $1794.Any ensureProtoAnyValue() => $_ensure(5);
+  $1795.Any ensureProtoAnyValue() => $_ensure(5);
 
   /// Value of boolean type annotation.
   @$pb.TagNumber(9)
@@ -2259,15 +2259,15 @@ class AnnotationValue extends $pb.GeneratedMessage {
 
   /// Value of customized struct annotation.
   @$pb.TagNumber(10)
-  $1734.Struct get customizedStructDataValue => $_getN(7);
+  $1735.Struct get customizedStructDataValue => $_getN(7);
   @$pb.TagNumber(10)
-  set customizedStructDataValue($1734.Struct v) { setField(10, v); }
+  set customizedStructDataValue($1735.Struct v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCustomizedStructDataValue() => $_has(7);
   @$pb.TagNumber(10)
   void clearCustomizedStructDataValue() => clearField(10);
   @$pb.TagNumber(10)
-  $1734.Struct ensureCustomizedStructDataValue() => $_ensure(7);
+  $1735.Struct ensureCustomizedStructDataValue() => $_ensure(7);
 }
 
 /// Request message for GetAnnotation API.
@@ -2504,7 +2504,7 @@ class GetAnnotationRequest extends $pb.GeneratedMessage {
 class UpdateAnnotationRequest extends $pb.GeneratedMessage {
   factory UpdateAnnotationRequest({
     Annotation? annotation,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (annotation != null) {
@@ -2521,7 +2521,7 @@ class UpdateAnnotationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAnnotationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOM<Annotation>(1, _omitFieldNames ? '' : 'annotation', subBuilder: Annotation.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2563,15 +2563,15 @@ class UpdateAnnotationRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for DeleteAnnotation API.
@@ -2720,7 +2720,7 @@ class CreateSearchConfigRequest extends $pb.GeneratedMessage {
 class UpdateSearchConfigRequest extends $pb.GeneratedMessage {
   factory UpdateSearchConfigRequest({
     SearchConfig? searchConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (searchConfig != null) {
@@ -2737,7 +2737,7 @@ class UpdateSearchConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSearchConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOM<SearchConfig>(1, _omitFieldNames ? '' : 'searchConfig', subBuilder: SearchConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2781,15 +2781,15 @@ class UpdateSearchConfigRequest extends $pb.GeneratedMessage {
   /// The list of fields to be updated. If left unset, all field paths will be
   /// updated/overwritten.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for GetSearchConfig.
@@ -3597,7 +3597,7 @@ class FacetValue extends $pb.GeneratedMessage {
   factory FacetValue({
     $core.String? stringValue,
     $fixnum.Int64? integerValue,
-    $1801.DateTime? datetimeValue,
+    $1802.DateTime? datetimeValue,
   }) {
     final $result = create();
     if (stringValue != null) {
@@ -3625,7 +3625,7 @@ class FacetValue extends $pb.GeneratedMessage {
     ..oo(0, [1, 2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'stringValue')
     ..aInt64(2, _omitFieldNames ? '' : 'integerValue')
-    ..aOM<$1801.DateTime>(3, _omitFieldNames ? '' : 'datetimeValue', subBuilder: $1801.DateTime.create)
+    ..aOM<$1802.DateTime>(3, _omitFieldNames ? '' : 'datetimeValue', subBuilder: $1802.DateTime.create)
     ..hasRequiredFields = false
   ;
 
@@ -3675,15 +3675,15 @@ class FacetValue extends $pb.GeneratedMessage {
 
   /// Datetime type value.
   @$pb.TagNumber(3)
-  $1801.DateTime get datetimeValue => $_getN(2);
+  $1802.DateTime get datetimeValue => $_getN(2);
   @$pb.TagNumber(3)
-  set datetimeValue($1801.DateTime v) { setField(3, v); }
+  set datetimeValue($1802.DateTime v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDatetimeValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearDatetimeValue() => clearField(3);
   @$pb.TagNumber(3)
-  $1801.DateTime ensureDatetimeValue() => $_ensure(2);
+  $1802.DateTime ensureDatetimeValue() => $_ensure(2);
 }
 
 /// The range of values [start, end) for which faceting is applied.
@@ -4806,7 +4806,7 @@ class AnnotationMatchingResult extends $pb.GeneratedMessage {
   factory AnnotationMatchingResult({
     Criteria? criteria,
     $core.Iterable<Annotation>? matchedAnnotations,
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (criteria != null) {
@@ -4827,7 +4827,7 @@ class AnnotationMatchingResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnnotationMatchingResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOM<Criteria>(1, _omitFieldNames ? '' : 'criteria', subBuilder: Criteria.create)
     ..pc<Annotation>(2, _omitFieldNames ? '' : 'matchedAnnotations', $pb.PbFieldType.PM, subBuilder: Annotation.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -4873,15 +4873,15 @@ class AnnotationMatchingResult extends $pb.GeneratedMessage {
   /// FAILED_PRECONDITION - the criteria is not eligible for match.
   /// OK - matching is performed.
   @$pb.TagNumber(3)
-  $1795.Status get status => $_getN(2);
+  $1796.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($1795.Status v) { setField(3, v); }
+  set status($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureStatus() => $_ensure(2);
+  $1796.Status ensureStatus() => $_ensure(2);
 }
 
 /// Search result contains asset name and corresponding time ranges.
@@ -5335,8 +5335,8 @@ class FloatRangeArray extends $pb.GeneratedMessage {
 /// Datetime range type.
 class DateTimeRange extends $pb.GeneratedMessage {
   factory DateTimeRange({
-    $1801.DateTime? start,
-    $1801.DateTime? end,
+    $1802.DateTime? start,
+    $1802.DateTime? end,
   }) {
     final $result = create();
     if (start != null) {
@@ -5352,8 +5352,8 @@ class DateTimeRange extends $pb.GeneratedMessage {
   factory DateTimeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateTimeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1801.DateTime>(1, _omitFieldNames ? '' : 'start', subBuilder: $1801.DateTime.create)
-    ..aOM<$1801.DateTime>(2, _omitFieldNames ? '' : 'end', subBuilder: $1801.DateTime.create)
+    ..aOM<$1802.DateTime>(1, _omitFieldNames ? '' : 'start', subBuilder: $1802.DateTime.create)
+    ..aOM<$1802.DateTime>(2, _omitFieldNames ? '' : 'end', subBuilder: $1802.DateTime.create)
     ..hasRequiredFields = false
   ;
 
@@ -5380,27 +5380,27 @@ class DateTimeRange extends $pb.GeneratedMessage {
 
   /// Start date time.
   @$pb.TagNumber(1)
-  $1801.DateTime get start => $_getN(0);
+  $1802.DateTime get start => $_getN(0);
   @$pb.TagNumber(1)
-  set start($1801.DateTime v) { setField(1, v); }
+  set start($1802.DateTime v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
   void clearStart() => clearField(1);
   @$pb.TagNumber(1)
-  $1801.DateTime ensureStart() => $_ensure(0);
+  $1802.DateTime ensureStart() => $_ensure(0);
 
   /// End data time.
   @$pb.TagNumber(2)
-  $1801.DateTime get end => $_getN(1);
+  $1802.DateTime get end => $_getN(1);
   @$pb.TagNumber(2)
-  set end($1801.DateTime v) { setField(2, v); }
+  set end($1802.DateTime v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
   void clearEnd() => clearField(2);
   @$pb.TagNumber(2)
-  $1801.DateTime ensureEnd() => $_ensure(1);
+  $1802.DateTime ensureEnd() => $_ensure(1);
 }
 
 /// A list of datetime range values.
@@ -5828,8 +5828,8 @@ class Criteria extends $pb.GeneratedMessage {
 /// Partition of asset in UTC Epoch time.
 class Partition_TemporalPartition extends $pb.GeneratedMessage {
   factory Partition_TemporalPartition({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -5845,8 +5845,8 @@ class Partition_TemporalPartition extends $pb.GeneratedMessage {
   factory Partition_TemporalPartition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Partition.TemporalPartition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -5873,27 +5873,27 @@ class Partition_TemporalPartition extends $pb.GeneratedMessage {
 
   /// Start time of the partition.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// End time of the partition.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Partition of asset in space.

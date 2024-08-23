@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Information about the ticket, if any, that is being used to track the
 /// resolution of the issue that is identified by this finding.
@@ -24,7 +24,7 @@ class ExternalSystem_TicketInfo extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? uri,
     $core.String? status,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (id != null) {
@@ -57,7 +57,7 @@ class ExternalSystem_TicketInfo extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'uri')
     ..aOS(5, _omitFieldNames ? '' : 'status')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -135,15 +135,15 @@ class ExternalSystem_TicketInfo extends $pb.GeneratedMessage {
   /// The time when the ticket was last updated, as reported by the ticket
   /// system.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 /// Representation of third party SIEM/SOAR fields within SCC.
@@ -153,13 +153,13 @@ class ExternalSystem extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? assignees,
     $core.String? externalUid,
     $core.String? status,
-    $1775.Timestamp? externalSystemUpdateTime,
+    $1776.Timestamp? externalSystemUpdateTime,
     $core.String? caseUri,
     $core.String? casePriority,
     ExternalSystem_TicketInfo? ticketInfo,
-    $1775.Timestamp? caseSla,
-    $1775.Timestamp? caseCreateTime,
-    $1775.Timestamp? caseCloseTime,
+    $1776.Timestamp? caseSla,
+    $1776.Timestamp? caseCreateTime,
+    $1776.Timestamp? caseCloseTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -206,13 +206,13 @@ class ExternalSystem extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'assignees')
     ..aOS(3, _omitFieldNames ? '' : 'externalUid')
     ..aOS(4, _omitFieldNames ? '' : 'status')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'externalSystemUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'externalSystemUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'caseUri')
     ..aOS(7, _omitFieldNames ? '' : 'casePriority')
     ..aOM<ExternalSystem_TicketInfo>(8, _omitFieldNames ? '' : 'ticketInfo', subBuilder: ExternalSystem_TicketInfo.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'caseSla', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'caseCreateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'caseCloseTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'caseSla', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'caseCreateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'caseCloseTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -287,15 +287,15 @@ class ExternalSystem extends $pb.GeneratedMessage {
   /// The time when the case was last updated, as reported by the external
   /// system.
   @$pb.TagNumber(5)
-  $1775.Timestamp get externalSystemUpdateTime => $_getN(4);
+  $1776.Timestamp get externalSystemUpdateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set externalSystemUpdateTime($1775.Timestamp v) { setField(5, v); }
+  set externalSystemUpdateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExternalSystemUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExternalSystemUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExternalSystemUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureExternalSystemUpdateTime() => $_ensure(4);
 
   /// The link to the finding's corresponding case in the external system.
   @$pb.TagNumber(6)
@@ -332,39 +332,39 @@ class ExternalSystem extends $pb.GeneratedMessage {
 
   /// The SLA of the finding's corresponding case in the external system.
   @$pb.TagNumber(9)
-  $1775.Timestamp get caseSla => $_getN(8);
+  $1776.Timestamp get caseSla => $_getN(8);
   @$pb.TagNumber(9)
-  set caseSla($1775.Timestamp v) { setField(9, v); }
+  set caseSla($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCaseSla() => $_has(8);
   @$pb.TagNumber(9)
   void clearCaseSla() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCaseSla() => $_ensure(8);
+  $1776.Timestamp ensureCaseSla() => $_ensure(8);
 
   /// The time when the case was created, as reported by the external system.
   @$pb.TagNumber(10)
-  $1775.Timestamp get caseCreateTime => $_getN(9);
+  $1776.Timestamp get caseCreateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set caseCreateTime($1775.Timestamp v) { setField(10, v); }
+  set caseCreateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCaseCreateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearCaseCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCaseCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCaseCreateTime() => $_ensure(9);
 
   /// The time when the case was closed, as reported by the external system.
   @$pb.TagNumber(11)
-  $1775.Timestamp get caseCloseTime => $_getN(10);
+  $1776.Timestamp get caseCloseTime => $_getN(10);
   @$pb.TagNumber(11)
-  set caseCloseTime($1775.Timestamp v) { setField(11, v); }
+  set caseCloseTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCaseCloseTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearCaseCloseTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCaseCloseTime() => $_ensure(10);
+  $1776.Timestamp ensureCaseCloseTime() => $_ensure(10);
 }
 
 

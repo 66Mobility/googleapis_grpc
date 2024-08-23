@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'policy.pb.dart' as $4154;
+import 'policy.pb.dart' as $4155;
 
 ///  Selects and configures the service controller used by the service.
 ///
@@ -24,7 +24,7 @@ import 'policy.pb.dart' as $4154;
 class Control extends $pb.GeneratedMessage {
   factory Control({
     $core.String? environment,
-    $core.Iterable<$4154.MethodPolicy>? methodPolicies,
+    $core.Iterable<$4155.MethodPolicy>? methodPolicies,
   }) {
     final $result = create();
     if (environment != null) {
@@ -41,7 +41,7 @@ class Control extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Control', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'environment')
-    ..pc<$4154.MethodPolicy>(4, _omitFieldNames ? '' : 'methodPolicies', $pb.PbFieldType.PM, subBuilder: $4154.MethodPolicy.create)
+    ..pc<$4155.MethodPolicy>(4, _omitFieldNames ? '' : 'methodPolicies', $pb.PbFieldType.PM, subBuilder: $4155.MethodPolicy.create)
     ..hasRequiredFields = false
   ;
 
@@ -80,7 +80,7 @@ class Control extends $pb.GeneratedMessage {
 
   /// Defines policies applying to the API methods of the service.
   @$pb.TagNumber(4)
-  $core.List<$4154.MethodPolicy> get methodPolicies => $_getList(1);
+  $core.List<$4155.MethodPolicy> get methodPolicies => $_getList(1);
 }
 
 

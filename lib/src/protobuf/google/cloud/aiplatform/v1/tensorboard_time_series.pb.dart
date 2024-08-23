@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'tensorboard_time_series.pbenum.dart';
 
 export 'tensorboard_time_series.pbenum.dart';
@@ -23,7 +23,7 @@ export 'tensorboard_time_series.pbenum.dart';
 class TensorboardTimeSeries_Metadata extends $pb.GeneratedMessage {
   factory TensorboardTimeSeries_Metadata({
     $fixnum.Int64? maxStep,
-    $1775.Timestamp? maxWallTime,
+    $1776.Timestamp? maxWallTime,
     $fixnum.Int64? maxBlobSequenceLength,
   }) {
     final $result = create();
@@ -44,7 +44,7 @@ class TensorboardTimeSeries_Metadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TensorboardTimeSeries.Metadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'maxStep')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'maxWallTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'maxWallTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'maxBlobSequenceLength')
     ..hasRequiredFields = false
   ;
@@ -84,15 +84,15 @@ class TensorboardTimeSeries_Metadata extends $pb.GeneratedMessage {
   /// Output only. Max wall clock timestamp of all data points within a
   /// TensorboardTimeSeries.
   @$pb.TagNumber(2)
-  $1775.Timestamp get maxWallTime => $_getN(1);
+  $1776.Timestamp get maxWallTime => $_getN(1);
   @$pb.TagNumber(2)
-  set maxWallTime($1775.Timestamp v) { setField(2, v); }
+  set maxWallTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxWallTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxWallTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureMaxWallTime() => $_ensure(1);
+  $1776.Timestamp ensureMaxWallTime() => $_ensure(1);
 
   /// Output only. The largest blob sequence length (number of blobs) of all
   /// data points in this time series, if its ValueType is BLOB_SEQUENCE.
@@ -113,8 +113,8 @@ class TensorboardTimeSeries extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     TensorboardTimeSeries_ValueType? valueType,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.String? pluginName,
     $core.List<$core.int>? pluginData,
@@ -162,8 +162,8 @@ class TensorboardTimeSeries extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..e<TensorboardTimeSeries_ValueType>(4, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: TensorboardTimeSeries_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: TensorboardTimeSeries_ValueType.valueOf, enumValues: TensorboardTimeSeries_ValueType.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'etag')
     ..aOS(8, _omitFieldNames ? '' : 'pluginName')
     ..a<$core.List<$core.int>>(9, _omitFieldNames ? '' : 'pluginData', $pb.PbFieldType.OY)
@@ -236,27 +236,27 @@ class TensorboardTimeSeries extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this TensorboardTimeSeries was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp when this TensorboardTimeSeries was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Used to perform a consistent read-modify-write updates. If not set, a blind
   /// "overwrite" update happens.

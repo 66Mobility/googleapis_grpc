@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'annotation.pbenum.dart';
 import 'annotation_spec_set.pb.dart' as $815;
 
@@ -1215,8 +1215,8 @@ class SequentialSegment extends $pb.GeneratedMessage {
 /// A time period inside of an example that has a time dimension (e.g. video).
 class TimeSegment extends $pb.GeneratedMessage {
   factory TimeSegment({
-    $1737.Duration? startTimeOffset,
-    $1737.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
   }) {
     final $result = create();
     if (startTimeOffset != null) {
@@ -1232,8 +1232,8 @@ class TimeSegment extends $pb.GeneratedMessage {
   factory TimeSegment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSegment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1261,28 +1261,28 @@ class TimeSegment extends $pb.GeneratedMessage {
   /// Start of the time segment (inclusive), represented as the duration since
   /// the example start.
   @$pb.TagNumber(1)
-  $1737.Duration get startTimeOffset => $_getN(0);
+  $1738.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($1737.Duration v) { setField(1, v); }
+  set startTimeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(0);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(0);
 
   /// End of the time segment (exclusive), represented as the duration since the
   /// example start.
   @$pb.TagNumber(2)
-  $1737.Duration get endTimeOffset => $_getN(1);
+  $1738.Duration get endTimeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endTimeOffset($1737.Duration v) { setField(2, v); }
+  set endTimeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(1);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(1);
 }
 
 /// Video classification annotation.
@@ -1367,7 +1367,7 @@ class ObjectTrackingFrame extends $pb.GeneratedMessage {
   factory ObjectTrackingFrame({
     BoundingPoly? boundingPoly,
     NormalizedBoundingPoly? normalizedBoundingPoly,
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
   }) {
     final $result = create();
     if (boundingPoly != null) {
@@ -1394,7 +1394,7 @@ class ObjectTrackingFrame extends $pb.GeneratedMessage {
     ..oo(0, [1, 2])
     ..aOM<BoundingPoly>(1, _omitFieldNames ? '' : 'boundingPoly', subBuilder: BoundingPoly.create)
     ..aOM<NormalizedBoundingPoly>(2, _omitFieldNames ? '' : 'normalizedBoundingPoly', subBuilder: NormalizedBoundingPoly.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1446,15 +1446,15 @@ class ObjectTrackingFrame extends $pb.GeneratedMessage {
 
   /// The time offset of this frame relative to the beginning of the video.
   @$pb.TagNumber(3)
-  $1737.Duration get timeOffset => $_getN(2);
+  $1738.Duration get timeOffset => $_getN(2);
   @$pb.TagNumber(3)
-  set timeOffset($1737.Duration v) { setField(3, v); }
+  set timeOffset($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTimeOffset() => $_has(2);
   @$pb.TagNumber(3)
   void clearTimeOffset() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTimeOffset() => $_ensure(2);
+  $1738.Duration ensureTimeOffset() => $_ensure(2);
 }
 
 /// Video object tracking annotation.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/customizer_value.pb.dart' as $2835;
-import '../enums/customizer_value_status.pbenum.dart' as $2836;
+import '../common/customizer_value.pb.dart' as $2836;
+import '../enums/customizer_value_status.pbenum.dart' as $2837;
 
 /// A customizer value for the associated CustomizerAttribute at the AdGroup
 /// level.
@@ -23,8 +23,8 @@ class AdGroupCustomizer extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? adGroup,
     $core.String? customizerAttribute,
-    $2836.CustomizerValueStatusEnum_CustomizerValueStatus? status,
-    $2835.CustomizerValue? value,
+    $2837.CustomizerValueStatusEnum_CustomizerValueStatus? status,
+    $2836.CustomizerValue? value,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -52,8 +52,8 @@ class AdGroupCustomizer extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'adGroup')
     ..aOS(3, _omitFieldNames ? '' : 'customizerAttribute')
-    ..e<$2836.CustomizerValueStatusEnum_CustomizerValueStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2836.CustomizerValueStatusEnum_CustomizerValueStatus.UNSPECIFIED, valueOf: $2836.CustomizerValueStatusEnum_CustomizerValueStatus.valueOf, enumValues: $2836.CustomizerValueStatusEnum_CustomizerValueStatus.values)
-    ..aOM<$2835.CustomizerValue>(5, _omitFieldNames ? '' : 'value', subBuilder: $2835.CustomizerValue.create)
+    ..e<$2837.CustomizerValueStatusEnum_CustomizerValueStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2837.CustomizerValueStatusEnum_CustomizerValueStatus.UNSPECIFIED, valueOf: $2837.CustomizerValueStatusEnum_CustomizerValueStatus.valueOf, enumValues: $2837.CustomizerValueStatusEnum_CustomizerValueStatus.values)
+    ..aOM<$2836.CustomizerValue>(5, _omitFieldNames ? '' : 'value', subBuilder: $2836.CustomizerValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -114,9 +114,9 @@ class AdGroupCustomizer extends $pb.GeneratedMessage {
 
   /// Output only. The status of the ad group customizer.
   @$pb.TagNumber(4)
-  $2836.CustomizerValueStatusEnum_CustomizerValueStatus get status => $_getN(3);
+  $2837.CustomizerValueStatusEnum_CustomizerValueStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($2836.CustomizerValueStatusEnum_CustomizerValueStatus v) { setField(4, v); }
+  set status($2837.CustomizerValueStatusEnum_CustomizerValueStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -125,15 +125,15 @@ class AdGroupCustomizer extends $pb.GeneratedMessage {
   /// Required. The value to associate with the customizer attribute at this
   /// level. The value must be of the type specified for the CustomizerAttribute.
   @$pb.TagNumber(5)
-  $2835.CustomizerValue get value => $_getN(4);
+  $2836.CustomizerValue get value => $_getN(4);
   @$pb.TagNumber(5)
-  set value($2835.CustomizerValue v) { setField(5, v); }
+  set value($2836.CustomizerValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearValue() => clearField(5);
   @$pb.TagNumber(5)
-  $2835.CustomizerValue ensureValue() => $_ensure(4);
+  $2836.CustomizerValue ensureValue() => $_ensure(4);
 }
 
 

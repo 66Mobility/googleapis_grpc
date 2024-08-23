@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../rpc/status.pb.dart' as $1796;
 
 /// The event emitted by KMS when performing a scheduled automatic CryptoKey
 /// rotation. See https://cloud.google.com/kms/docs/rotating-keys#automatic
 class CryptoKeyEvent_RotationEvent extends $pb.GeneratedMessage {
   factory CryptoKeyEvent_RotationEvent({
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (status != null) {
@@ -32,7 +32,7 @@ class CryptoKeyEvent_RotationEvent extends $pb.GeneratedMessage {
   factory CryptoKeyEvent_RotationEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CryptoKeyEvent.RotationEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.logging.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -60,15 +60,15 @@ class CryptoKeyEvent_RotationEvent extends $pb.GeneratedMessage {
   /// The result of the scheduled key rotation. The 'details' field of the
   /// status may contain a google.rpc.PreconditionFailure.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 }
 
 /// Log message used to send to Platform Logging for asynchronous
@@ -130,7 +130,7 @@ class CryptoKeyEvent extends $pb.GeneratedMessage {
 /// destruction. See https://cloud.google.com/kms/docs/destroy-restore#destroy
 class CryptoKeyVersionEvent_ScheduledDestructionEvent extends $pb.GeneratedMessage {
   factory CryptoKeyVersionEvent_ScheduledDestructionEvent({
-    $1795.Status? status,
+    $1796.Status? status,
     $core.String? keyAccessJustificationReason,
   }) {
     final $result = create();
@@ -147,7 +147,7 @@ class CryptoKeyVersionEvent_ScheduledDestructionEvent extends $pb.GeneratedMessa
   factory CryptoKeyVersionEvent_ScheduledDestructionEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CryptoKeyVersionEvent.ScheduledDestructionEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.logging.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOS(2, _omitFieldNames ? '' : 'keyAccessJustificationReason')
     ..hasRequiredFields = false
   ;
@@ -178,15 +178,15 @@ class CryptoKeyVersionEvent_ScheduledDestructionEvent extends $pb.GeneratedMessa
   /// the 'violations' field of a PreconditionFailure will also include EKM
   /// errors.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// The Key Access Justification (KAJ) reason associated with the request.
   /// This field is only populated for KAJ enrolled customers for EKM keys.
@@ -204,7 +204,7 @@ class CryptoKeyVersionEvent_ScheduledDestructionEvent extends $pb.GeneratedMessa
 /// https://cloud.google.com/kms/docs/key-states
 class CryptoKeyVersionEvent_KeyGenerationEvent extends $pb.GeneratedMessage {
   factory CryptoKeyVersionEvent_KeyGenerationEvent({
-    $1795.Status? status,
+    $1796.Status? status,
     $core.String? keyAccessJustificationReason,
   }) {
     final $result = create();
@@ -221,7 +221,7 @@ class CryptoKeyVersionEvent_KeyGenerationEvent extends $pb.GeneratedMessage {
   factory CryptoKeyVersionEvent_KeyGenerationEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CryptoKeyVersionEvent.KeyGenerationEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.logging.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOS(2, _omitFieldNames ? '' : 'keyAccessJustificationReason')
     ..hasRequiredFields = false
   ;
@@ -251,15 +251,15 @@ class CryptoKeyVersionEvent_KeyGenerationEvent extends $pb.GeneratedMessage {
   /// status may contain a google.rpc.PreconditionFailure. For EKM keys, the
   /// 'violations' field of a PreconditionFailure will also include EKM errors.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// The Key Access Justification (KAJ) reason associated with the request.
   /// This field is only populated for KAJ enrolled customers for EKM keys.
@@ -277,7 +277,7 @@ class CryptoKeyVersionEvent_KeyGenerationEvent extends $pb.GeneratedMessage {
 /// https://cloud.google.com/kms/docs/importing-a-key
 class CryptoKeyVersionEvent_ImportEvent extends $pb.GeneratedMessage {
   factory CryptoKeyVersionEvent_ImportEvent({
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (status != null) {
@@ -290,7 +290,7 @@ class CryptoKeyVersionEvent_ImportEvent extends $pb.GeneratedMessage {
   factory CryptoKeyVersionEvent_ImportEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CryptoKeyVersionEvent.ImportEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.logging.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -318,15 +318,15 @@ class CryptoKeyVersionEvent_ImportEvent extends $pb.GeneratedMessage {
   /// The result of the key version import. The 'details' field of the status
   /// may contain a google.rpc.PreconditionFailure.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 }
 
 enum CryptoKeyVersionEvent_Event {

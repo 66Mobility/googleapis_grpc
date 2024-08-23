@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/android_privacy_interaction_type.pbenum.dart' as $3569;
-import '../enums/android_privacy_network_type.pbenum.dart' as $3570;
+import '../enums/android_privacy_interaction_type.pbenum.dart' as $3570;
+import '../enums/android_privacy_network_type.pbenum.dart' as $3571;
 
 /// An Android privacy shared key view for Google ad group key.
 class AndroidPrivacySharedKeyGoogleAdGroup extends $pb.GeneratedMessage {
   factory AndroidPrivacySharedKeyGoogleAdGroup({
     $core.String? resourceName,
     $fixnum.Int64? campaignId,
-    $3569.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType? androidPrivacyInteractionType,
+    $3570.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType? androidPrivacyInteractionType,
     $core.String? androidPrivacyInteractionDate,
-    $3570.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType? androidPrivacyNetworkType,
+    $3571.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType? androidPrivacyNetworkType,
     $fixnum.Int64? adGroupId,
     $core.String? sharedAdGroupKey,
   }) {
@@ -59,9 +59,9 @@ class AndroidPrivacySharedKeyGoogleAdGroup extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AndroidPrivacySharedKeyGoogleAdGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'campaignId')
-    ..e<$3569.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType>(3, _omitFieldNames ? '' : 'androidPrivacyInteractionType', $pb.PbFieldType.OE, defaultOrMaker: $3569.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType.UNSPECIFIED, valueOf: $3569.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType.valueOf, enumValues: $3569.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType.values)
+    ..e<$3570.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType>(3, _omitFieldNames ? '' : 'androidPrivacyInteractionType', $pb.PbFieldType.OE, defaultOrMaker: $3570.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType.UNSPECIFIED, valueOf: $3570.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType.valueOf, enumValues: $3570.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType.values)
     ..aOS(4, _omitFieldNames ? '' : 'androidPrivacyInteractionDate')
-    ..e<$3570.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType>(5, _omitFieldNames ? '' : 'androidPrivacyNetworkType', $pb.PbFieldType.OE, defaultOrMaker: $3570.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType.UNSPECIFIED, valueOf: $3570.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType.valueOf, enumValues: $3570.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType.values)
+    ..e<$3571.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType>(5, _omitFieldNames ? '' : 'androidPrivacyNetworkType', $pb.PbFieldType.OE, defaultOrMaker: $3571.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType.UNSPECIFIED, valueOf: $3571.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType.valueOf, enumValues: $3571.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType.values)
     ..aInt64(6, _omitFieldNames ? '' : 'adGroupId')
     ..aOS(7, _omitFieldNames ? '' : 'sharedAdGroupKey')
     ..hasRequiredFields = false
@@ -113,9 +113,9 @@ class AndroidPrivacySharedKeyGoogleAdGroup extends $pb.GeneratedMessage {
 
   /// Output only. The interaction type enum used in the share key encoding.
   @$pb.TagNumber(3)
-  $3569.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType get androidPrivacyInteractionType => $_getN(2);
+  $3570.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType get androidPrivacyInteractionType => $_getN(2);
   @$pb.TagNumber(3)
-  set androidPrivacyInteractionType($3569.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType v) { setField(3, v); }
+  set androidPrivacyInteractionType($3570.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAndroidPrivacyInteractionType() => $_has(2);
   @$pb.TagNumber(3)
@@ -134,9 +134,9 @@ class AndroidPrivacySharedKeyGoogleAdGroup extends $pb.GeneratedMessage {
 
   /// Output only. The network type enum used in the share key encoding.
   @$pb.TagNumber(5)
-  $3570.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType get androidPrivacyNetworkType => $_getN(4);
+  $3571.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType get androidPrivacyNetworkType => $_getN(4);
   @$pb.TagNumber(5)
-  set androidPrivacyNetworkType($3570.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType v) { setField(5, v); }
+  set androidPrivacyNetworkType($3571.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAndroidPrivacyNetworkType() => $_has(4);
   @$pb.TagNumber(5)

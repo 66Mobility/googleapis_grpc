@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'event.pbenum.dart';
 
 export 'event.pbenum.dart';
@@ -21,7 +21,7 @@ export 'event.pbenum.dart';
 /// The definition of an Event for a managed / semi-managed notebook instance.
 class Event extends $pb.GeneratedMessage {
   factory Event({
-    $1775.Timestamp? reportTime,
+    $1776.Timestamp? reportTime,
     Event_EventType? type,
     $core.Map<$core.String, $core.String>? details,
   }) {
@@ -42,7 +42,7 @@ class Event extends $pb.GeneratedMessage {
   factory Event.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'reportTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'reportTime', subBuilder: $1776.Timestamp.create)
     ..e<Event_EventType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Event_EventType.EVENT_TYPE_UNSPECIFIED, valueOf: Event_EventType.valueOf, enumValues: Event_EventType.values)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'details', entryClassName: 'Event.DetailsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.notebooks.v1'))
     ..hasRequiredFields = false
@@ -71,15 +71,15 @@ class Event extends $pb.GeneratedMessage {
 
   /// Event report time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get reportTime => $_getN(0);
+  $1776.Timestamp get reportTime => $_getN(0);
   @$pb.TagNumber(1)
-  set reportTime($1775.Timestamp v) { setField(1, v); }
+  set reportTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReportTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReportTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReportTime() => $_ensure(0);
+  $1776.Timestamp ensureReportTime() => $_ensure(0);
 
   /// Event type.
   @$pb.TagNumber(2)

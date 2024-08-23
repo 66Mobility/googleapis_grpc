@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'data.pbenum.dart';
 
 export 'data.pbenum.dart';
@@ -2882,7 +2882,7 @@ class FunnelStep extends $pb.GeneratedMessage {
   factory FunnelStep({
     $core.String? name,
     $core.bool? isDirectlyFollowedBy,
-    $1737.Duration? withinDurationFromPriorStep,
+    $1738.Duration? withinDurationFromPriorStep,
     FunnelFilterExpression? filterExpression,
   }) {
     final $result = create();
@@ -2907,7 +2907,7 @@ class FunnelStep extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunnelStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'isDirectlyFollowedBy')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'withinDurationFromPriorStep', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'withinDurationFromPriorStep', subBuilder: $1738.Duration.create)
     ..aOM<FunnelFilterExpression>(4, _omitFieldNames ? '' : 'filterExpression', subBuilder: FunnelFilterExpression.create)
     ..hasRequiredFields = false
   ;
@@ -2968,15 +2968,15 @@ class FunnelStep extends $pb.GeneratedMessage {
   ///  `withinDurationFromPriorStep` is optional, and if unspecified, steps may
   ///  be separated by any time duration.
   @$pb.TagNumber(3)
-  $1737.Duration get withinDurationFromPriorStep => $_getN(2);
+  $1738.Duration get withinDurationFromPriorStep => $_getN(2);
   @$pb.TagNumber(3)
-  set withinDurationFromPriorStep($1737.Duration v) { setField(3, v); }
+  set withinDurationFromPriorStep($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasWithinDurationFromPriorStep() => $_has(2);
   @$pb.TagNumber(3)
   void clearWithinDurationFromPriorStep() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureWithinDurationFromPriorStep() => $_ensure(2);
+  $1738.Duration ensureWithinDurationFromPriorStep() => $_ensure(2);
 
   /// The condition that your users must meet to be included in this step of
   /// the funnel journey.
@@ -3300,7 +3300,7 @@ class UserSegmentConditionGroup extends $pb.GeneratedMessage {
 class UserSegmentSequenceGroup extends $pb.GeneratedMessage {
   factory UserSegmentSequenceGroup({
     UserCriteriaScoping? sequenceScoping,
-    $1737.Duration? sequenceMaximumDuration,
+    $1738.Duration? sequenceMaximumDuration,
     $core.Iterable<UserSequenceStep>? userSequenceSteps,
   }) {
     final $result = create();
@@ -3321,7 +3321,7 @@ class UserSegmentSequenceGroup extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserSegmentSequenceGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1alpha'), createEmptyInstance: create)
     ..e<UserCriteriaScoping>(1, _omitFieldNames ? '' : 'sequenceScoping', $pb.PbFieldType.OE, defaultOrMaker: UserCriteriaScoping.USER_CRITERIA_SCOPING_UNSPECIFIED, valueOf: UserCriteriaScoping.valueOf, enumValues: UserCriteriaScoping.values)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'sequenceMaximumDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'sequenceMaximumDuration', subBuilder: $1738.Duration.create)
     ..pc<UserSequenceStep>(3, _omitFieldNames ? '' : 'userSequenceSteps', $pb.PbFieldType.PM, subBuilder: UserSequenceStep.create)
     ..hasRequiredFields = false
   ;
@@ -3373,15 +3373,15 @@ class UserSegmentSequenceGroup extends $pb.GeneratedMessage {
   ///  `sequenceMaximumDuration` is optional, and if unspecified, sequences can
   ///  be completed in any time duration.
   @$pb.TagNumber(2)
-  $1737.Duration get sequenceMaximumDuration => $_getN(1);
+  $1738.Duration get sequenceMaximumDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set sequenceMaximumDuration($1737.Duration v) { setField(2, v); }
+  set sequenceMaximumDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSequenceMaximumDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearSequenceMaximumDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureSequenceMaximumDuration() => $_ensure(1);
+  $1738.Duration ensureSequenceMaximumDuration() => $_ensure(1);
 
   /// An ordered sequence of condition steps. A user's events must complete
   /// each step in order for the user to match the

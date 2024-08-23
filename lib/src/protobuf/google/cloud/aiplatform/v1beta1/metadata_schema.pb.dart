@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'metadata_schema.pbenum.dart';
 
 export 'metadata_schema.pbenum.dart';
@@ -25,7 +25,7 @@ class MetadataSchema extends $pb.GeneratedMessage {
     $core.String? schemaVersion,
     $core.String? schema,
     MetadataSchema_MetadataSchemaType? schemaType,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? description,
   }) {
     final $result = create();
@@ -58,7 +58,7 @@ class MetadataSchema extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'schemaVersion')
     ..aOS(3, _omitFieldNames ? '' : 'schema')
     ..e<MetadataSchema_MetadataSchemaType>(4, _omitFieldNames ? '' : 'schemaType', $pb.PbFieldType.OE, defaultOrMaker: MetadataSchema_MetadataSchemaType.METADATA_SCHEMA_TYPE_UNSPECIFIED, valueOf: MetadataSchema_MetadataSchemaType.valueOf, enumValues: MetadataSchema_MetadataSchemaType.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -135,15 +135,15 @@ class MetadataSchema extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this MetadataSchema was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Description of the Metadata Schema
   @$pb.TagNumber(6)

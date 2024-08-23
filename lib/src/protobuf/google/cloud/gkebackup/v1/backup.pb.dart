@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'backup.pbenum.dart';
-import 'common.pb.dart' as $4534;
+import 'common.pb.dart' as $4536;
 
 export 'backup.pbenum.dart';
 
@@ -164,24 +164,24 @@ class Backup extends $pb.GeneratedMessage {
   factory Backup({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.bool? manual,
     $core.Map<$core.String, $core.String>? labels,
     $core.int? deleteLockDays,
-    $1775.Timestamp? deleteLockExpireTime,
+    $1776.Timestamp? deleteLockExpireTime,
     $core.int? retainDays,
-    $1775.Timestamp? retainExpireTime,
-    $4534.EncryptionKey? encryptionKey,
+    $1776.Timestamp? retainExpireTime,
+    $4536.EncryptionKey? encryptionKey,
     $core.bool? allNamespaces,
-    $4534.Namespaces? selectedNamespaces,
-    $4534.NamespacedNames? selectedApplications,
+    $4536.Namespaces? selectedNamespaces,
+    $4536.NamespacedNames? selectedApplications,
     $core.bool? containsVolumeData,
     $core.bool? containsSecrets,
     Backup_ClusterMetadata? clusterMetadata,
     Backup_State? state,
     $core.String? stateReason,
-    $1775.Timestamp? completeTime,
+    $1776.Timestamp? completeTime,
     $core.int? resourceCount,
     $core.int? volumeCount,
     $fixnum.Int64? sizeBytes,
@@ -292,24 +292,24 @@ class Backup extends $pb.GeneratedMessage {
     ..oo(0, [12, 13, 14])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOB(5, _omitFieldNames ? '' : 'manual')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Backup.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkebackup.v1'))
     ..a<$core.int>(7, _omitFieldNames ? '' : 'deleteLockDays', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteLockExpireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteLockExpireTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'retainDays', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'retainExpireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4534.EncryptionKey>(11, _omitFieldNames ? '' : 'encryptionKey', subBuilder: $4534.EncryptionKey.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'retainExpireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4536.EncryptionKey>(11, _omitFieldNames ? '' : 'encryptionKey', subBuilder: $4536.EncryptionKey.create)
     ..aOB(12, _omitFieldNames ? '' : 'allNamespaces')
-    ..aOM<$4534.Namespaces>(13, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4534.Namespaces.create)
-    ..aOM<$4534.NamespacedNames>(14, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4534.NamespacedNames.create)
+    ..aOM<$4536.Namespaces>(13, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4536.Namespaces.create)
+    ..aOM<$4536.NamespacedNames>(14, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4536.NamespacedNames.create)
     ..aOB(15, _omitFieldNames ? '' : 'containsVolumeData')
     ..aOB(16, _omitFieldNames ? '' : 'containsSecrets')
     ..aOM<Backup_ClusterMetadata>(17, _omitFieldNames ? '' : 'clusterMetadata', subBuilder: Backup_ClusterMetadata.create)
     ..e<Backup_State>(18, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Backup_State.STATE_UNSPECIFIED, valueOf: Backup_State.valueOf, enumValues: Backup_State.values)
     ..aOS(19, _omitFieldNames ? '' : 'stateReason')
-    ..aOM<$1775.Timestamp>(20, _omitFieldNames ? '' : 'completeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(20, _omitFieldNames ? '' : 'completeTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(21, _omitFieldNames ? '' : 'resourceCount', $pb.PbFieldType.O3)
     ..a<$core.int>(22, _omitFieldNames ? '' : 'volumeCount', $pb.PbFieldType.O3)
     ..aInt64(23, _omitFieldNames ? '' : 'sizeBytes')
@@ -369,27 +369,27 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this Backup resource was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when this Backup resource was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. This flag indicates whether this Backup resource was created
   /// manually by a user or via a schedule in the BackupPlan. A value of True
@@ -430,15 +430,15 @@ class Backup extends $pb.GeneratedMessage {
   /// backup (calculated from create_time +
   /// [delete_lock_days][google.cloud.gkebackup.v1.Backup.delete_lock_days]).
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteLockExpireTime => $_getN(7);
+  $1776.Timestamp get deleteLockExpireTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteLockExpireTime($1775.Timestamp v) { setField(8, v); }
+  set deleteLockExpireTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteLockExpireTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteLockExpireTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteLockExpireTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteLockExpireTime() => $_ensure(7);
 
   ///  Optional. The age (in days) after which this Backup will be automatically
   ///  deleted. Must be an integer value >= 0:
@@ -466,30 +466,30 @@ class Backup extends $pb.GeneratedMessage {
   /// (calculated from create_time +
   /// [retain_days][google.cloud.gkebackup.v1.Backup.retain_days]).
   @$pb.TagNumber(10)
-  $1775.Timestamp get retainExpireTime => $_getN(9);
+  $1776.Timestamp get retainExpireTime => $_getN(9);
   @$pb.TagNumber(10)
-  set retainExpireTime($1775.Timestamp v) { setField(10, v); }
+  set retainExpireTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasRetainExpireTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearRetainExpireTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureRetainExpireTime() => $_ensure(9);
+  $1776.Timestamp ensureRetainExpireTime() => $_ensure(9);
 
   /// Output only. The customer managed encryption key that was used to encrypt
   /// the Backup's artifacts.  Inherited from the parent BackupPlan's
   /// [encryption_key][google.cloud.gkebackup.v1.BackupPlan.BackupConfig.encryption_key]
   /// value.
   @$pb.TagNumber(11)
-  $4534.EncryptionKey get encryptionKey => $_getN(10);
+  $4536.EncryptionKey get encryptionKey => $_getN(10);
   @$pb.TagNumber(11)
-  set encryptionKey($4534.EncryptionKey v) { setField(11, v); }
+  set encryptionKey($4536.EncryptionKey v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasEncryptionKey() => $_has(10);
   @$pb.TagNumber(11)
   void clearEncryptionKey() => clearField(11);
   @$pb.TagNumber(11)
-  $4534.EncryptionKey ensureEncryptionKey() => $_ensure(10);
+  $4536.EncryptionKey ensureEncryptionKey() => $_ensure(10);
 
   /// Output only. If True, all namespaces were included in the Backup.
   @$pb.TagNumber(12)
@@ -504,28 +504,28 @@ class Backup extends $pb.GeneratedMessage {
   /// Output only. If set, the list of namespaces that were included in the
   /// Backup.
   @$pb.TagNumber(13)
-  $4534.Namespaces get selectedNamespaces => $_getN(12);
+  $4536.Namespaces get selectedNamespaces => $_getN(12);
   @$pb.TagNumber(13)
-  set selectedNamespaces($4534.Namespaces v) { setField(13, v); }
+  set selectedNamespaces($4536.Namespaces v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasSelectedNamespaces() => $_has(12);
   @$pb.TagNumber(13)
   void clearSelectedNamespaces() => clearField(13);
   @$pb.TagNumber(13)
-  $4534.Namespaces ensureSelectedNamespaces() => $_ensure(12);
+  $4536.Namespaces ensureSelectedNamespaces() => $_ensure(12);
 
   /// Output only. If set, the list of ProtectedApplications whose resources
   /// were included in the Backup.
   @$pb.TagNumber(14)
-  $4534.NamespacedNames get selectedApplications => $_getN(13);
+  $4536.NamespacedNames get selectedApplications => $_getN(13);
   @$pb.TagNumber(14)
-  set selectedApplications($4534.NamespacedNames v) { setField(14, v); }
+  set selectedApplications($4536.NamespacedNames v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasSelectedApplications() => $_has(13);
   @$pb.TagNumber(14)
   void clearSelectedApplications() => clearField(14);
   @$pb.TagNumber(14)
-  $4534.NamespacedNames ensureSelectedApplications() => $_ensure(13);
+  $4536.NamespacedNames ensureSelectedApplications() => $_ensure(13);
 
   /// Output only. Whether or not the Backup contains volume data.  Controlled by
   /// the parent BackupPlan's
@@ -589,15 +589,15 @@ class Backup extends $pb.GeneratedMessage {
 
   /// Output only. Completion time of the Backup
   @$pb.TagNumber(20)
-  $1775.Timestamp get completeTime => $_getN(19);
+  $1776.Timestamp get completeTime => $_getN(19);
   @$pb.TagNumber(20)
-  set completeTime($1775.Timestamp v) { setField(20, v); }
+  set completeTime($1776.Timestamp v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasCompleteTime() => $_has(19);
   @$pb.TagNumber(20)
   void clearCompleteTime() => clearField(20);
   @$pb.TagNumber(20)
-  $1775.Timestamp ensureCompleteTime() => $_ensure(19);
+  $1776.Timestamp ensureCompleteTime() => $_ensure(19);
 
   /// Output only. The total number of Kubernetes resources included in the
   /// Backup.

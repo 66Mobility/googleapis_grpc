@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/policy_approval_status.pbenum.dart' as $2527;
-import '../enums/policy_review_status.pbenum.dart' as $2526;
-import 'policy.pb.dart' as $2525;
+import '../enums/policy_approval_status.pbenum.dart' as $2528;
+import '../enums/policy_review_status.pbenum.dart' as $2527;
+import 'policy.pb.dart' as $2526;
 
 /// Contains policy summary information.
 class PolicySummary extends $pb.GeneratedMessage {
   factory PolicySummary({
-    $core.Iterable<$2525.PolicyTopicEntry>? policyTopicEntries,
-    $2526.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
-    $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
+    $core.Iterable<$2526.PolicyTopicEntry>? policyTopicEntries,
+    $2527.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
+    $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
   }) {
     final $result = create();
     if (policyTopicEntries != null) {
@@ -41,9 +41,9 @@ class PolicySummary extends $pb.GeneratedMessage {
   factory PolicySummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PolicySummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
-    ..pc<$2525.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $2525.PolicyTopicEntry.create)
-    ..e<$2526.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.values)
-    ..e<$2527.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
+    ..pc<$2526.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $2526.PolicyTopicEntry.create)
+    ..e<$2527.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.values)
+    ..e<$2528.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -70,13 +70,13 @@ class PolicySummary extends $pb.GeneratedMessage {
 
   /// The list of policy findings.
   @$pb.TagNumber(1)
-  $core.List<$2525.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
+  $core.List<$2526.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
 
   /// Where in the review process the resource is.
   @$pb.TagNumber(2)
-  $2526.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
+  $2527.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set reviewStatus($2526.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
+  set reviewStatus($2527.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReviewStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -85,9 +85,9 @@ class PolicySummary extends $pb.GeneratedMessage {
   /// The overall approval status, which is calculated based on
   /// the status of its individual policy topic entries.
   @$pb.TagNumber(3)
-  $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
+  $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set approvalStatus($2527.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
+  set approvalStatus($2528.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApprovalStatus() => $_has(2);
   @$pb.TagNumber(3)

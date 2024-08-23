@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4691;
-import 'common.pbenum.dart' as $4691;
+import 'common.pb.dart' as $4693;
+import 'common.pbenum.dart' as $4693;
 
 /// Derived details about the company.
 class Company_DerivedInfo extends $pb.GeneratedMessage {
   factory Company_DerivedInfo({
-    $4691.Location? headquartersLocation,
+    $4693.Location? headquartersLocation,
   }) {
     final $result = create();
     if (headquartersLocation != null) {
@@ -32,7 +32,7 @@ class Company_DerivedInfo extends $pb.GeneratedMessage {
   factory Company_DerivedInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Company.DerivedInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4'), createEmptyInstance: create)
-    ..aOM<$4691.Location>(1, _omitFieldNames ? '' : 'headquartersLocation', subBuilder: $4691.Location.create)
+    ..aOM<$4693.Location>(1, _omitFieldNames ? '' : 'headquartersLocation', subBuilder: $4693.Location.create)
     ..hasRequiredFields = false
   ;
 
@@ -61,15 +61,15 @@ class Company_DerivedInfo extends $pb.GeneratedMessage {
   /// [Company.headquarters_address][google.cloud.talent.v4.Company.headquarters_address]
   /// if provided.
   @$pb.TagNumber(1)
-  $4691.Location get headquartersLocation => $_getN(0);
+  $4693.Location get headquartersLocation => $_getN(0);
   @$pb.TagNumber(1)
-  set headquartersLocation($4691.Location v) { setField(1, v); }
+  set headquartersLocation($4693.Location v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeadquartersLocation() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeadquartersLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $4691.Location ensureHeadquartersLocation() => $_ensure(0);
+  $4693.Location ensureHeadquartersLocation() => $_ensure(0);
 }
 
 /// A Company resource represents a company in the service. A company is the
@@ -80,7 +80,7 @@ class Company extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? externalId,
-    $4691.CompanySize? size,
+    $4693.CompanySize? size,
     $core.String? headquartersAddress,
     $core.bool? hiringAgency,
     $core.String? eeoText,
@@ -143,7 +143,7 @@ class Company extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'externalId')
-    ..e<$4691.CompanySize>(4, _omitFieldNames ? '' : 'size', $pb.PbFieldType.OE, defaultOrMaker: $4691.CompanySize.COMPANY_SIZE_UNSPECIFIED, valueOf: $4691.CompanySize.valueOf, enumValues: $4691.CompanySize.values)
+    ..e<$4693.CompanySize>(4, _omitFieldNames ? '' : 'size', $pb.PbFieldType.OE, defaultOrMaker: $4693.CompanySize.COMPANY_SIZE_UNSPECIFIED, valueOf: $4693.CompanySize.valueOf, enumValues: $4693.CompanySize.values)
     ..aOS(5, _omitFieldNames ? '' : 'headquartersAddress')
     ..aOB(6, _omitFieldNames ? '' : 'hiringAgency')
     ..aOS(7, _omitFieldNames ? '' : 'eeoText')
@@ -219,9 +219,9 @@ class Company extends $pb.GeneratedMessage {
 
   /// The employer's company size.
   @$pb.TagNumber(4)
-  $4691.CompanySize get size => $_getN(3);
+  $4693.CompanySize get size => $_getN(3);
   @$pb.TagNumber(4)
-  set size($4691.CompanySize v) { setField(4, v); }
+  set size($4693.CompanySize v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSize() => $_has(3);
   @$pb.TagNumber(4)

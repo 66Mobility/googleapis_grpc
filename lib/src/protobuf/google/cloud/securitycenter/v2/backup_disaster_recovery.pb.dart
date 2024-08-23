@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Information related to Google Cloud Backup and DR Service findings.
 class BackupDisasterRecovery extends $pb.GeneratedMessage {
@@ -27,7 +27,7 @@ class BackupDisasterRecovery extends $pb.GeneratedMessage {
     $core.String? profile,
     $core.String? appliance,
     $core.String? backupType,
-    $1775.Timestamp? backupCreateTime,
+    $1776.Timestamp? backupCreateTime,
   }) {
     final $result = create();
     if (backupTemplate != null) {
@@ -76,7 +76,7 @@ class BackupDisasterRecovery extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'profile')
     ..aOS(8, _omitFieldNames ? '' : 'appliance')
     ..aOS(9, _omitFieldNames ? '' : 'backupType')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'backupCreateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'backupCreateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -203,15 +203,15 @@ class BackupDisasterRecovery extends $pb.GeneratedMessage {
 
   /// The timestamp at which the Backup and DR backup was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get backupCreateTime => $_getN(9);
+  $1776.Timestamp get backupCreateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set backupCreateTime($1775.Timestamp v) { setField(10, v); }
+  set backupCreateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBackupCreateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearBackupCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureBackupCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureBackupCreateTime() => $_ensure(9);
 }
 
 

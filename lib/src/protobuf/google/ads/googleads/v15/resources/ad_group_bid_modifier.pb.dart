@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $1867;
-import '../enums/bid_modifier_source.pbenum.dart' as $2121;
+import '../common/criteria.pb.dart' as $1868;
+import '../enums/bid_modifier_source.pbenum.dart' as $2122;
 
 enum AdGroupBidModifier_Criterion {
   hotelDateSelectionType, 
@@ -31,17 +31,17 @@ enum AdGroupBidModifier_Criterion {
 class AdGroupBidModifier extends $pb.GeneratedMessage {
   factory AdGroupBidModifier({
     $core.String? resourceName,
-    $1867.HotelDateSelectionTypeInfo? hotelDateSelectionType,
-    $1867.HotelAdvanceBookingWindowInfo? hotelAdvanceBookingWindow,
-    $1867.HotelLengthOfStayInfo? hotelLengthOfStay,
-    $1867.HotelCheckInDayInfo? hotelCheckInDay,
-    $2121.BidModifierSourceEnum_BidModifierSource? bidModifierSource,
-    $1867.DeviceInfo? device,
+    $1868.HotelDateSelectionTypeInfo? hotelDateSelectionType,
+    $1868.HotelAdvanceBookingWindowInfo? hotelAdvanceBookingWindow,
+    $1868.HotelLengthOfStayInfo? hotelLengthOfStay,
+    $1868.HotelCheckInDayInfo? hotelCheckInDay,
+    $2122.BidModifierSourceEnum_BidModifierSource? bidModifierSource,
+    $1868.DeviceInfo? device,
     $core.String? adGroup,
     $fixnum.Int64? criterionId,
     $core.double? bidModifier,
     $core.String? baseAdGroup,
-    $1867.HotelCheckInDateRangeInfo? hotelCheckInDateRange,
+    $1868.HotelCheckInDateRangeInfo? hotelCheckInDateRange,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -98,17 +98,17 @@ class AdGroupBidModifier extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupBidModifier', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..oo(0, [5, 6, 7, 8, 11, 17])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$1867.HotelDateSelectionTypeInfo>(5, _omitFieldNames ? '' : 'hotelDateSelectionType', subBuilder: $1867.HotelDateSelectionTypeInfo.create)
-    ..aOM<$1867.HotelAdvanceBookingWindowInfo>(6, _omitFieldNames ? '' : 'hotelAdvanceBookingWindow', subBuilder: $1867.HotelAdvanceBookingWindowInfo.create)
-    ..aOM<$1867.HotelLengthOfStayInfo>(7, _omitFieldNames ? '' : 'hotelLengthOfStay', subBuilder: $1867.HotelLengthOfStayInfo.create)
-    ..aOM<$1867.HotelCheckInDayInfo>(8, _omitFieldNames ? '' : 'hotelCheckInDay', subBuilder: $1867.HotelCheckInDayInfo.create)
-    ..e<$2121.BidModifierSourceEnum_BidModifierSource>(10, _omitFieldNames ? '' : 'bidModifierSource', $pb.PbFieldType.OE, defaultOrMaker: $2121.BidModifierSourceEnum_BidModifierSource.UNSPECIFIED, valueOf: $2121.BidModifierSourceEnum_BidModifierSource.valueOf, enumValues: $2121.BidModifierSourceEnum_BidModifierSource.values)
-    ..aOM<$1867.DeviceInfo>(11, _omitFieldNames ? '' : 'device', subBuilder: $1867.DeviceInfo.create)
+    ..aOM<$1868.HotelDateSelectionTypeInfo>(5, _omitFieldNames ? '' : 'hotelDateSelectionType', subBuilder: $1868.HotelDateSelectionTypeInfo.create)
+    ..aOM<$1868.HotelAdvanceBookingWindowInfo>(6, _omitFieldNames ? '' : 'hotelAdvanceBookingWindow', subBuilder: $1868.HotelAdvanceBookingWindowInfo.create)
+    ..aOM<$1868.HotelLengthOfStayInfo>(7, _omitFieldNames ? '' : 'hotelLengthOfStay', subBuilder: $1868.HotelLengthOfStayInfo.create)
+    ..aOM<$1868.HotelCheckInDayInfo>(8, _omitFieldNames ? '' : 'hotelCheckInDay', subBuilder: $1868.HotelCheckInDayInfo.create)
+    ..e<$2122.BidModifierSourceEnum_BidModifierSource>(10, _omitFieldNames ? '' : 'bidModifierSource', $pb.PbFieldType.OE, defaultOrMaker: $2122.BidModifierSourceEnum_BidModifierSource.UNSPECIFIED, valueOf: $2122.BidModifierSourceEnum_BidModifierSource.valueOf, enumValues: $2122.BidModifierSourceEnum_BidModifierSource.values)
+    ..aOM<$1868.DeviceInfo>(11, _omitFieldNames ? '' : 'device', subBuilder: $1868.DeviceInfo.create)
     ..aOS(13, _omitFieldNames ? '' : 'adGroup')
     ..aInt64(14, _omitFieldNames ? '' : 'criterionId')
     ..a<$core.double>(15, _omitFieldNames ? '' : 'bidModifier', $pb.PbFieldType.OD)
     ..aOS(16, _omitFieldNames ? '' : 'baseAdGroup')
-    ..aOM<$1867.HotelCheckInDateRangeInfo>(17, _omitFieldNames ? '' : 'hotelCheckInDateRange', subBuilder: $1867.HotelCheckInDateRangeInfo.create)
+    ..aOM<$1868.HotelCheckInDateRangeInfo>(17, _omitFieldNames ? '' : 'hotelCheckInDateRange', subBuilder: $1868.HotelCheckInDateRangeInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -152,58 +152,58 @@ class AdGroupBidModifier extends $pb.GeneratedMessage {
   /// Immutable. Criterion for hotel date selection (default dates versus user
   /// selected).
   @$pb.TagNumber(5)
-  $1867.HotelDateSelectionTypeInfo get hotelDateSelectionType => $_getN(1);
+  $1868.HotelDateSelectionTypeInfo get hotelDateSelectionType => $_getN(1);
   @$pb.TagNumber(5)
-  set hotelDateSelectionType($1867.HotelDateSelectionTypeInfo v) { setField(5, v); }
+  set hotelDateSelectionType($1868.HotelDateSelectionTypeInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasHotelDateSelectionType() => $_has(1);
   @$pb.TagNumber(5)
   void clearHotelDateSelectionType() => clearField(5);
   @$pb.TagNumber(5)
-  $1867.HotelDateSelectionTypeInfo ensureHotelDateSelectionType() => $_ensure(1);
+  $1868.HotelDateSelectionTypeInfo ensureHotelDateSelectionType() => $_ensure(1);
 
   /// Immutable. Criterion for number of days prior to the stay the booking is
   /// being made.
   @$pb.TagNumber(6)
-  $1867.HotelAdvanceBookingWindowInfo get hotelAdvanceBookingWindow => $_getN(2);
+  $1868.HotelAdvanceBookingWindowInfo get hotelAdvanceBookingWindow => $_getN(2);
   @$pb.TagNumber(6)
-  set hotelAdvanceBookingWindow($1867.HotelAdvanceBookingWindowInfo v) { setField(6, v); }
+  set hotelAdvanceBookingWindow($1868.HotelAdvanceBookingWindowInfo v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasHotelAdvanceBookingWindow() => $_has(2);
   @$pb.TagNumber(6)
   void clearHotelAdvanceBookingWindow() => clearField(6);
   @$pb.TagNumber(6)
-  $1867.HotelAdvanceBookingWindowInfo ensureHotelAdvanceBookingWindow() => $_ensure(2);
+  $1868.HotelAdvanceBookingWindowInfo ensureHotelAdvanceBookingWindow() => $_ensure(2);
 
   /// Immutable. Criterion for length of hotel stay in nights.
   @$pb.TagNumber(7)
-  $1867.HotelLengthOfStayInfo get hotelLengthOfStay => $_getN(3);
+  $1868.HotelLengthOfStayInfo get hotelLengthOfStay => $_getN(3);
   @$pb.TagNumber(7)
-  set hotelLengthOfStay($1867.HotelLengthOfStayInfo v) { setField(7, v); }
+  set hotelLengthOfStay($1868.HotelLengthOfStayInfo v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasHotelLengthOfStay() => $_has(3);
   @$pb.TagNumber(7)
   void clearHotelLengthOfStay() => clearField(7);
   @$pb.TagNumber(7)
-  $1867.HotelLengthOfStayInfo ensureHotelLengthOfStay() => $_ensure(3);
+  $1868.HotelLengthOfStayInfo ensureHotelLengthOfStay() => $_ensure(3);
 
   /// Immutable. Criterion for day of the week the booking is for.
   @$pb.TagNumber(8)
-  $1867.HotelCheckInDayInfo get hotelCheckInDay => $_getN(4);
+  $1868.HotelCheckInDayInfo get hotelCheckInDay => $_getN(4);
   @$pb.TagNumber(8)
-  set hotelCheckInDay($1867.HotelCheckInDayInfo v) { setField(8, v); }
+  set hotelCheckInDay($1868.HotelCheckInDayInfo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasHotelCheckInDay() => $_has(4);
   @$pb.TagNumber(8)
   void clearHotelCheckInDay() => clearField(8);
   @$pb.TagNumber(8)
-  $1867.HotelCheckInDayInfo ensureHotelCheckInDay() => $_ensure(4);
+  $1868.HotelCheckInDayInfo ensureHotelCheckInDay() => $_ensure(4);
 
   /// Output only. Bid modifier source.
   @$pb.TagNumber(10)
-  $2121.BidModifierSourceEnum_BidModifierSource get bidModifierSource => $_getN(5);
+  $2122.BidModifierSourceEnum_BidModifierSource get bidModifierSource => $_getN(5);
   @$pb.TagNumber(10)
-  set bidModifierSource($2121.BidModifierSourceEnum_BidModifierSource v) { setField(10, v); }
+  set bidModifierSource($2122.BidModifierSourceEnum_BidModifierSource v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBidModifierSource() => $_has(5);
   @$pb.TagNumber(10)
@@ -211,15 +211,15 @@ class AdGroupBidModifier extends $pb.GeneratedMessage {
 
   /// Immutable. A device criterion.
   @$pb.TagNumber(11)
-  $1867.DeviceInfo get device => $_getN(6);
+  $1868.DeviceInfo get device => $_getN(6);
   @$pb.TagNumber(11)
-  set device($1867.DeviceInfo v) { setField(11, v); }
+  set device($1868.DeviceInfo v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDevice() => $_has(6);
   @$pb.TagNumber(11)
   void clearDevice() => clearField(11);
   @$pb.TagNumber(11)
-  $1867.DeviceInfo ensureDevice() => $_ensure(6);
+  $1868.DeviceInfo ensureDevice() => $_ensure(6);
 
   /// Immutable. The ad group to which this criterion belongs.
   @$pb.TagNumber(13)
@@ -271,15 +271,15 @@ class AdGroupBidModifier extends $pb.GeneratedMessage {
 
   /// Immutable. Criterion for a hotel check-in date range.
   @$pb.TagNumber(17)
-  $1867.HotelCheckInDateRangeInfo get hotelCheckInDateRange => $_getN(11);
+  $1868.HotelCheckInDateRangeInfo get hotelCheckInDateRange => $_getN(11);
   @$pb.TagNumber(17)
-  set hotelCheckInDateRange($1867.HotelCheckInDateRangeInfo v) { setField(17, v); }
+  set hotelCheckInDateRange($1868.HotelCheckInDateRangeInfo v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasHotelCheckInDateRange() => $_has(11);
   @$pb.TagNumber(17)
   void clearHotelCheckInDateRange() => clearField(17);
   @$pb.TagNumber(17)
-  $1867.HotelCheckInDateRangeInfo ensureHotelCheckInDateRange() => $_ensure(11);
+  $1868.HotelCheckInDateRangeInfo ensureHotelCheckInDateRange() => $_ensure(11);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'logging.pbenum.dart';
 
 export 'logging.pbenum.dart';
@@ -269,7 +269,7 @@ class Finding extends $pb.GeneratedMessage {
     Finding_State? state,
     $core.String? finding,
     Severity? severity,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     Vulnerability? vulnerability,
   }) {
     final $result = create();
@@ -311,7 +311,7 @@ class Finding extends $pb.GeneratedMessage {
     ..e<Finding_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Finding_State.STATE_UNSPECIFIED, valueOf: Finding_State.valueOf, enumValues: Finding_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'finding')
     ..e<Severity>(5, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: Severity.SEVERITY_UNSPECIFIED, valueOf: Severity.valueOf, enumValues: Severity.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Vulnerability>(7, _omitFieldNames ? '' : 'vulnerability', subBuilder: Vulnerability.create)
     ..hasRequiredFields = false
   ;
@@ -394,15 +394,15 @@ class Finding extends $pb.GeneratedMessage {
 
   /// The time this finding was found/remediated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get eventTime => $_getN(5);
+  $1776.Timestamp get eventTime => $_getN(5);
   @$pb.TagNumber(6)
-  set eventTime($1775.Timestamp v) { setField(6, v); }
+  set eventTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEventTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEventTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEventTime() => $_ensure(5);
+  $1776.Timestamp ensureEventTime() => $_ensure(5);
 
   @$pb.TagNumber(7)
   Vulnerability get vulnerability => $_getN(6);

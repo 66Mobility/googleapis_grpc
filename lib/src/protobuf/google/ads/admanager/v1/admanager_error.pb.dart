@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
+import '../../../protobuf/any.pb.dart' as $1795;
 
 /// / AdManagerError contains all the information required for processing a
 /// / particular error thrown by the AdManager API.
@@ -27,7 +27,7 @@ class AdManagerError extends $pb.GeneratedMessage {
     $core.String? fieldPath,
     $core.String? trigger,
     $core.String? stackTrace,
-    $core.Iterable<$1794.Any>? details,
+    $core.Iterable<$1795.Any>? details,
   }) {
     final $result = create();
     if (errorCode != null) {
@@ -60,7 +60,7 @@ class AdManagerError extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'fieldPath')
     ..aOS(4, _omitFieldNames ? '' : 'trigger')
     ..aOS(5, _omitFieldNames ? '' : 'stackTrace')
-    ..pc<$1794.Any>(6, _omitFieldNames ? '' : 'details', $pb.PbFieldType.PM, subBuilder: $1794.Any.create)
+    ..pc<$1795.Any>(6, _omitFieldNames ? '' : 'details', $pb.PbFieldType.PM, subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -137,7 +137,7 @@ class AdManagerError extends $pb.GeneratedMessage {
 
   /// A list of messages that carry any additional error details.
   @$pb.TagNumber(6)
-  $core.List<$1794.Any> get details => $_getList(5);
+  $core.List<$1795.Any> get details => $_getList(5);
 }
 
 

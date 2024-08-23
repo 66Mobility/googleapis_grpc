@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'label.pb.dart' as $4652;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'label.pb.dart' as $4654;
 
 /// Container associated with the finding.
 class Container extends $pb.GeneratedMessage {
@@ -22,8 +22,8 @@ class Container extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? uri,
     $core.String? imageId,
-    $core.Iterable<$4652.Label>? labels,
-    $1775.Timestamp? createTime,
+    $core.Iterable<$4654.Label>? labels,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -51,8 +51,8 @@ class Container extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uri')
     ..aOS(3, _omitFieldNames ? '' : 'imageId')
-    ..pc<$4652.Label>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $4652.Label.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$4654.Label>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $4654.Label.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -111,19 +111,19 @@ class Container extends $pb.GeneratedMessage {
 
   /// Container labels, as provided by the container runtime.
   @$pb.TagNumber(4)
-  $core.List<$4652.Label> get labels => $_getList(3);
+  $core.List<$4654.Label> get labels => $_getList(3);
 
   /// The time that the container was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 }
 
 

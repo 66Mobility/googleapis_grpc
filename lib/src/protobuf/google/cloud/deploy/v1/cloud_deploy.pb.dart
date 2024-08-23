@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
 import 'cloud_deploy.pbenum.dart';
 
 export 'cloud_deploy.pbenum.dart';
@@ -38,8 +38,8 @@ class DeliveryPipeline extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Map<$core.String, $core.String>? annotations,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     SerialPipeline? serialPipeline,
     $core.String? etag,
     PipelineCondition? condition,
@@ -96,8 +96,8 @@ class DeliveryPipeline extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'annotations', entryClassName: 'DeliveryPipeline.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'DeliveryPipeline.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SerialPipeline>(8, _omitFieldNames ? '' : 'serialPipeline', subBuilder: SerialPipeline.create)
     ..aOS(10, _omitFieldNames ? '' : 'etag')
     ..aOM<PipelineCondition>(11, _omitFieldNames ? '' : 'condition', subBuilder: PipelineCondition.create)
@@ -183,27 +183,27 @@ class DeliveryPipeline extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the pipeline was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Most recent time at which the pipeline was updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// SerialPipeline defines a sequential set of stages for a
   /// `DeliveryPipeline`.
@@ -1117,8 +1117,8 @@ class KubernetesConfig_GatewayServiceMesh extends $pb.GeneratedMessage {
     $core.String? httpRoute,
     $core.String? service,
     $core.String? deployment,
-    $1737.Duration? routeUpdateWaitTime,
-    $1737.Duration? stableCutbackDuration,
+    $1738.Duration? routeUpdateWaitTime,
+    $1738.Duration? stableCutbackDuration,
     $core.String? podSelectorLabel,
   }) {
     final $result = create();
@@ -1150,8 +1150,8 @@ class KubernetesConfig_GatewayServiceMesh extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'httpRoute')
     ..aOS(2, _omitFieldNames ? '' : 'service')
     ..aOS(3, _omitFieldNames ? '' : 'deployment')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'routeUpdateWaitTime', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'stableCutbackDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'routeUpdateWaitTime', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'stableCutbackDuration', subBuilder: $1738.Duration.create)
     ..aOS(6, _omitFieldNames ? '' : 'podSelectorLabel')
     ..hasRequiredFields = false
   ;
@@ -1212,30 +1212,30 @@ class KubernetesConfig_GatewayServiceMesh extends $pb.GeneratedMessage {
   /// configurable time is 3 hours, in seconds format. If unspecified, there is
   /// no wait time.
   @$pb.TagNumber(4)
-  $1737.Duration get routeUpdateWaitTime => $_getN(3);
+  $1738.Duration get routeUpdateWaitTime => $_getN(3);
   @$pb.TagNumber(4)
-  set routeUpdateWaitTime($1737.Duration v) { setField(4, v); }
+  set routeUpdateWaitTime($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRouteUpdateWaitTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearRouteUpdateWaitTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureRouteUpdateWaitTime() => $_ensure(3);
+  $1738.Duration ensureRouteUpdateWaitTime() => $_ensure(3);
 
   /// Optional. The amount of time to migrate traffic back from the canary
   /// Service to the original Service during the stable phase deployment. If
   /// specified, must be between 15s and 3600s. If unspecified, there is no
   /// cutback time.
   @$pb.TagNumber(5)
-  $1737.Duration get stableCutbackDuration => $_getN(4);
+  $1738.Duration get stableCutbackDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set stableCutbackDuration($1737.Duration v) { setField(5, v); }
+  set stableCutbackDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStableCutbackDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearStableCutbackDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureStableCutbackDuration() => $_ensure(4);
+  $1738.Duration ensureStableCutbackDuration() => $_ensure(4);
 
   /// Optional. The label to use when selecting Pods for the Deployment and
   /// Service resources. This label must already be present in both resources.
@@ -1614,7 +1614,7 @@ class RuntimeConfig extends $pb.GeneratedMessage {
 class PipelineReadyCondition extends $pb.GeneratedMessage {
   factory PipelineReadyCondition({
     $core.bool? status,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (status != null) {
@@ -1631,7 +1631,7 @@ class PipelineReadyCondition extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineReadyCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOB(3, _omitFieldNames ? '' : 'status')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1671,15 +1671,15 @@ class PipelineReadyCondition extends $pb.GeneratedMessage {
 
   /// Last time the condition was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// `TargetsPresentCondition` contains information on any Targets referenced in
@@ -1688,7 +1688,7 @@ class TargetsPresentCondition extends $pb.GeneratedMessage {
   factory TargetsPresentCondition({
     $core.bool? status,
     $core.Iterable<$core.String>? missingTargets,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (status != null) {
@@ -1709,7 +1709,7 @@ class TargetsPresentCondition extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetsPresentCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'status')
     ..pPS(2, _omitFieldNames ? '' : 'missingTargets')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1751,15 +1751,15 @@ class TargetsPresentCondition extends $pb.GeneratedMessage {
 
   /// Last time the condition was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 /// TargetsTypeCondition contains information on whether the Targets defined in
@@ -2297,7 +2297,7 @@ class CreateDeliveryPipelineRequest extends $pb.GeneratedMessage {
 /// The request object for `UpdateDeliveryPipeline`.
 class UpdateDeliveryPipelineRequest extends $pb.GeneratedMessage {
   factory UpdateDeliveryPipelineRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     DeliveryPipeline? deliveryPipeline,
     $core.String? requestId,
     $core.bool? allowMissing,
@@ -2326,7 +2326,7 @@ class UpdateDeliveryPipelineRequest extends $pb.GeneratedMessage {
   factory UpdateDeliveryPipelineRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDeliveryPipelineRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DeliveryPipeline>(2, _omitFieldNames ? '' : 'deliveryPipeline', subBuilder: DeliveryPipeline.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
@@ -2361,15 +2361,15 @@ class UpdateDeliveryPipelineRequest extends $pb.GeneratedMessage {
   /// will be overwritten if it's in the mask. If the user doesn't provide a mask
   /// then all fields are overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The `DeliveryPipeline` to update.
   @$pb.TagNumber(2)
@@ -2869,8 +2869,8 @@ class Target extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Map<$core.String, $core.String>? annotations,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.bool? requireApproval,
     GkeCluster? gke,
@@ -2955,8 +2955,8 @@ class Target extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Target.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Target.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'etag')
     ..aOB(13, _omitFieldNames ? '' : 'requireApproval')
     ..aOM<GkeCluster>(15, _omitFieldNames ? '' : 'gke', subBuilder: GkeCluster.create)
@@ -3058,27 +3058,27 @@ class Target extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the `Target` was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Most recent time at which the `Target` was updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Optional. This checksum is computed by the server based on the value of
   /// other fields, and may be sent on update and delete requests to ensure the
@@ -3192,7 +3192,7 @@ class ExecutionConfig extends $pb.GeneratedMessage {
     $core.String? workerPool,
     $core.String? serviceAccount,
     $core.String? artifactStorage,
-    $1737.Duration? executionTimeout,
+    $1738.Duration? executionTimeout,
     $core.bool? verbose,
   }) {
     final $result = create();
@@ -3239,7 +3239,7 @@ class ExecutionConfig extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'workerPool')
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(6, _omitFieldNames ? '' : 'artifactStorage')
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1738.Duration.create)
     ..aOB(8, _omitFieldNames ? '' : 'verbose')
     ..hasRequiredFields = false
   ;
@@ -3338,15 +3338,15 @@ class ExecutionConfig extends $pb.GeneratedMessage {
   /// between 10m and 24h in seconds format. If unspecified, a default timeout of
   /// 1h is used.
   @$pb.TagNumber(7)
-  $1737.Duration get executionTimeout => $_getN(6);
+  $1738.Duration get executionTimeout => $_getN(6);
   @$pb.TagNumber(7)
-  set executionTimeout($1737.Duration v) { setField(7, v); }
+  set executionTimeout($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasExecutionTimeout() => $_has(6);
   @$pb.TagNumber(7)
   void clearExecutionTimeout() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureExecutionTimeout() => $_ensure(6);
+  $1738.Duration ensureExecutionTimeout() => $_ensure(6);
 
   /// Optional. If true, additional logging will be enabled when running builds
   /// in this execution environment.
@@ -4196,7 +4196,7 @@ class CreateTargetRequest extends $pb.GeneratedMessage {
 /// The request object for `UpdateTarget`.
 class UpdateTargetRequest extends $pb.GeneratedMessage {
   factory UpdateTargetRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Target? target,
     $core.String? requestId,
     $core.bool? allowMissing,
@@ -4225,7 +4225,7 @@ class UpdateTargetRequest extends $pb.GeneratedMessage {
   factory UpdateTargetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTargetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Target>(2, _omitFieldNames ? '' : 'target', subBuilder: Target.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
@@ -4260,15 +4260,15 @@ class UpdateTargetRequest extends $pb.GeneratedMessage {
   /// overwritten if it's in the mask. If the user doesn't provide a mask then
   /// all fields are overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The `Target` to update.
   @$pb.TagNumber(2)
@@ -4474,8 +4474,8 @@ class CustomTargetType extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Map<$core.String, $core.String>? annotations,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     CustomTargetSkaffoldActions? customActions,
   }) {
@@ -4528,8 +4528,8 @@ class CustomTargetType extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'CustomTargetType.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'CustomTargetType.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..aOM<CustomTargetSkaffoldActions>(10, _omitFieldNames ? '' : 'customActions', subBuilder: CustomTargetSkaffoldActions.create)
     ..hasRequiredFields = false
@@ -4626,27 +4626,27 @@ class CustomTargetType extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the `CustomTargetType` was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Most recent time at which the `CustomTargetType` was updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Optional. This checksum is computed by the server based on the value of
   /// other fields, and may be sent on update and delete requests to ensure the
@@ -5481,7 +5481,7 @@ class CreateCustomTargetTypeRequest extends $pb.GeneratedMessage {
 /// The request object for `UpdateCustomTargetType`.
 class UpdateCustomTargetTypeRequest extends $pb.GeneratedMessage {
   factory UpdateCustomTargetTypeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     CustomTargetType? customTargetType,
     $core.String? requestId,
     $core.bool? allowMissing,
@@ -5510,7 +5510,7 @@ class UpdateCustomTargetTypeRequest extends $pb.GeneratedMessage {
   factory UpdateCustomTargetTypeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCustomTargetTypeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<CustomTargetType>(2, _omitFieldNames ? '' : 'customTargetType', subBuilder: CustomTargetType.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
@@ -5545,15 +5545,15 @@ class UpdateCustomTargetTypeRequest extends $pb.GeneratedMessage {
   /// will be overwritten if it's in the mask. If the user doesn't provide a mask
   /// then all fields are overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The `CustomTargetType` to update.
   @$pb.TagNumber(2)
@@ -5987,8 +5987,8 @@ class Release_SkaffoldSupportedCondition extends $pb.GeneratedMessage {
   factory Release_SkaffoldSupportedCondition({
     $core.bool? status,
     SkaffoldSupportState? skaffoldSupportState,
-    $1775.Timestamp? maintenanceModeTime,
-    $1775.Timestamp? supportExpirationTime,
+    $1776.Timestamp? maintenanceModeTime,
+    $1776.Timestamp? supportExpirationTime,
   }) {
     final $result = create();
     if (status != null) {
@@ -6012,8 +6012,8 @@ class Release_SkaffoldSupportedCondition extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Release.SkaffoldSupportedCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'status')
     ..e<SkaffoldSupportState>(2, _omitFieldNames ? '' : 'skaffoldSupportState', $pb.PbFieldType.OE, defaultOrMaker: SkaffoldSupportState.SKAFFOLD_SUPPORT_STATE_UNSPECIFIED, valueOf: SkaffoldSupportState.valueOf, enumValues: SkaffoldSupportState.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'maintenanceModeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'supportExpirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'maintenanceModeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'supportExpirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -6061,28 +6061,28 @@ class Release_SkaffoldSupportedCondition extends $pb.GeneratedMessage {
   /// The time at which this release's version of Skaffold will enter
   /// maintenance mode.
   @$pb.TagNumber(3)
-  $1775.Timestamp get maintenanceModeTime => $_getN(2);
+  $1776.Timestamp get maintenanceModeTime => $_getN(2);
   @$pb.TagNumber(3)
-  set maintenanceModeTime($1775.Timestamp v) { setField(3, v); }
+  set maintenanceModeTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMaintenanceModeTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearMaintenanceModeTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureMaintenanceModeTime() => $_ensure(2);
+  $1776.Timestamp ensureMaintenanceModeTime() => $_ensure(2);
 
   /// The time at which this release's version of Skaffold will no longer be
   /// supported.
   @$pb.TagNumber(4)
-  $1775.Timestamp get supportExpirationTime => $_getN(3);
+  $1776.Timestamp get supportExpirationTime => $_getN(3);
   @$pb.TagNumber(4)
-  set supportExpirationTime($1775.Timestamp v) { setField(4, v); }
+  set supportExpirationTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSupportExpirationTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearSupportExpirationTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureSupportExpirationTime() => $_ensure(3);
+  $1776.Timestamp ensureSupportExpirationTime() => $_ensure(3);
 }
 
 /// ReleaseCondition contains all conditions relevant to a Release.
@@ -6168,9 +6168,9 @@ class Release extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Map<$core.String, $core.String>? annotations,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? renderStartTime,
-    $1775.Timestamp? renderEndTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? renderStartTime,
+    $1776.Timestamp? renderEndTime,
     $core.String? skaffoldConfigPath,
     $core.Iterable<BuildArtifact>? buildArtifacts,
     DeliveryPipeline? deliveryPipelineSnapshot,
@@ -6265,9 +6265,9 @@ class Release extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'annotations', entryClassName: 'Release.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'Release.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'renderStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'renderEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'renderStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'renderEndTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'skaffoldConfigPath')
     ..pc<BuildArtifact>(10, _omitFieldNames ? '' : 'buildArtifacts', $pb.PbFieldType.PM, subBuilder: BuildArtifact.create)
     ..aOM<DeliveryPipeline>(11, _omitFieldNames ? '' : 'deliveryPipelineSnapshot', subBuilder: DeliveryPipeline.create)
@@ -6360,39 +6360,39 @@ class Release extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the `Release` was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time at which the render began.
   @$pb.TagNumber(7)
-  $1775.Timestamp get renderStartTime => $_getN(6);
+  $1776.Timestamp get renderStartTime => $_getN(6);
   @$pb.TagNumber(7)
-  set renderStartTime($1775.Timestamp v) { setField(7, v); }
+  set renderStartTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRenderStartTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearRenderStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureRenderStartTime() => $_ensure(6);
+  $1776.Timestamp ensureRenderStartTime() => $_ensure(6);
 
   /// Output only. Time at which the render completed.
   @$pb.TagNumber(8)
-  $1775.Timestamp get renderEndTime => $_getN(7);
+  $1776.Timestamp get renderEndTime => $_getN(7);
   @$pb.TagNumber(8)
-  set renderEndTime($1775.Timestamp v) { setField(8, v); }
+  set renderEndTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRenderEndTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearRenderEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureRenderEndTime() => $_ensure(7);
+  $1776.Timestamp ensureRenderEndTime() => $_ensure(7);
 
   /// Filepath of the Skaffold config inside of the config URI.
   @$pb.TagNumber(9)
@@ -7346,11 +7346,11 @@ class Rollout extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Map<$core.String, $core.String>? annotations,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? approveTime,
-    $1775.Timestamp? enqueueTime,
-    $1775.Timestamp? deployStartTime,
-    $1775.Timestamp? deployEndTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? approveTime,
+    $1776.Timestamp? enqueueTime,
+    $1776.Timestamp? deployStartTime,
+    $1776.Timestamp? deployEndTime,
     Rollout_ApprovalState? approvalState,
     Rollout_State? state,
     $core.String? failureReason,
@@ -7443,11 +7443,11 @@ class Rollout extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'annotations', entryClassName: 'Rollout.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'Rollout.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'approveTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'enqueueTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'deployStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'deployEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'approveTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'enqueueTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'deployStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'deployEndTime', subBuilder: $1776.Timestamp.create)
     ..e<Rollout_ApprovalState>(12, _omitFieldNames ? '' : 'approvalState', $pb.PbFieldType.OE, defaultOrMaker: Rollout_ApprovalState.APPROVAL_STATE_UNSPECIFIED, valueOf: Rollout_ApprovalState.valueOf, enumValues: Rollout_ApprovalState.values)
     ..e<Rollout_State>(13, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Rollout_State.STATE_UNSPECIFIED, valueOf: Rollout_State.valueOf, enumValues: Rollout_State.values)
     ..aOS(14, _omitFieldNames ? '' : 'failureReason')
@@ -7539,63 +7539,63 @@ class Rollout extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the `Rollout` was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time at which the `Rollout` was approved.
   @$pb.TagNumber(7)
-  $1775.Timestamp get approveTime => $_getN(6);
+  $1776.Timestamp get approveTime => $_getN(6);
   @$pb.TagNumber(7)
-  set approveTime($1775.Timestamp v) { setField(7, v); }
+  set approveTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasApproveTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearApproveTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureApproveTime() => $_ensure(6);
+  $1776.Timestamp ensureApproveTime() => $_ensure(6);
 
   /// Output only. Time at which the `Rollout` was enqueued.
   @$pb.TagNumber(8)
-  $1775.Timestamp get enqueueTime => $_getN(7);
+  $1776.Timestamp get enqueueTime => $_getN(7);
   @$pb.TagNumber(8)
-  set enqueueTime($1775.Timestamp v) { setField(8, v); }
+  set enqueueTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEnqueueTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearEnqueueTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEnqueueTime() => $_ensure(7);
+  $1776.Timestamp ensureEnqueueTime() => $_ensure(7);
 
   /// Output only. Time at which the `Rollout` started deploying.
   @$pb.TagNumber(9)
-  $1775.Timestamp get deployStartTime => $_getN(8);
+  $1776.Timestamp get deployStartTime => $_getN(8);
   @$pb.TagNumber(9)
-  set deployStartTime($1775.Timestamp v) { setField(9, v); }
+  set deployStartTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDeployStartTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearDeployStartTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureDeployStartTime() => $_ensure(8);
+  $1776.Timestamp ensureDeployStartTime() => $_ensure(8);
 
   /// Output only. Time at which the `Rollout` finished deploying.
   @$pb.TagNumber(10)
-  $1775.Timestamp get deployEndTime => $_getN(9);
+  $1776.Timestamp get deployEndTime => $_getN(9);
   @$pb.TagNumber(10)
-  set deployEndTime($1775.Timestamp v) { setField(10, v); }
+  set deployEndTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDeployEndTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearDeployEndTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureDeployEndTime() => $_ensure(9);
+  $1776.Timestamp ensureDeployEndTime() => $_ensure(9);
 
   /// Output only. Approval state of the `Rollout`.
   @$pb.TagNumber(12)
@@ -9300,8 +9300,8 @@ class CreateRolloutRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -9337,8 +9337,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -9370,27 +9370,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -10072,9 +10072,9 @@ class JobRun extends $pb.GeneratedMessage {
     $core.String? uid,
     $core.String? phaseId,
     $core.String? jobId,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     JobRun_State? state,
     DeployJobRun? deployJobRun,
     VerifyJobRun? verifyJobRun,
@@ -10151,9 +10151,9 @@ class JobRun extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aOS(3, _omitFieldNames ? '' : 'phaseId')
     ..aOS(4, _omitFieldNames ? '' : 'jobId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<JobRun_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: JobRun_State.STATE_UNSPECIFIED, valueOf: JobRun_State.valueOf, enumValues: JobRun_State.values)
     ..aOM<DeployJobRun>(9, _omitFieldNames ? '' : 'deployJobRun', subBuilder: DeployJobRun.create)
     ..aOM<VerifyJobRun>(10, _omitFieldNames ? '' : 'verifyJobRun', subBuilder: VerifyJobRun.create)
@@ -10232,39 +10232,39 @@ class JobRun extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the `JobRun` was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Time at which the `JobRun` was started.
   @$pb.TagNumber(6)
-  $1775.Timestamp get startTime => $_getN(5);
+  $1776.Timestamp get startTime => $_getN(5);
   @$pb.TagNumber(6)
-  set startTime($1775.Timestamp v) { setField(6, v); }
+  set startTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStartTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureStartTime() => $_ensure(5);
+  $1776.Timestamp ensureStartTime() => $_ensure(5);
 
   /// Output only. Time at which the `JobRun` ended.
   @$pb.TagNumber(7)
-  $1775.Timestamp get endTime => $_getN(6);
+  $1776.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
-  set endTime($1775.Timestamp v) { setField(7, v); }
+  set endTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureEndTime() => $_ensure(6);
+  $1776.Timestamp ensureEndTime() => $_ensure(6);
 
   /// Output only. The current state of the `JobRun`.
   @$pb.TagNumber(8)
@@ -11319,9 +11319,9 @@ class Config extends $pb.GeneratedMessage {
 class SkaffoldVersion extends $pb.GeneratedMessage {
   factory SkaffoldVersion({
     $core.String? version,
-    $1800.Date? supportEndDate,
-    $1775.Timestamp? maintenanceModeTime,
-    $1775.Timestamp? supportExpirationTime,
+    $1801.Date? supportEndDate,
+    $1776.Timestamp? maintenanceModeTime,
+    $1776.Timestamp? supportExpirationTime,
   }) {
     final $result = create();
     if (version != null) {
@@ -11344,9 +11344,9 @@ class SkaffoldVersion extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SkaffoldVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'version')
-    ..aOM<$1800.Date>(2, _omitFieldNames ? '' : 'supportEndDate', subBuilder: $1800.Date.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'maintenanceModeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'supportExpirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1801.Date>(2, _omitFieldNames ? '' : 'supportEndDate', subBuilder: $1801.Date.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'maintenanceModeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'supportExpirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -11383,39 +11383,39 @@ class SkaffoldVersion extends $pb.GeneratedMessage {
 
   /// Date when this version is expected to no longer be supported.
   @$pb.TagNumber(2)
-  $1800.Date get supportEndDate => $_getN(1);
+  $1801.Date get supportEndDate => $_getN(1);
   @$pb.TagNumber(2)
-  set supportEndDate($1800.Date v) { setField(2, v); }
+  set supportEndDate($1801.Date v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSupportEndDate() => $_has(1);
   @$pb.TagNumber(2)
   void clearSupportEndDate() => clearField(2);
   @$pb.TagNumber(2)
-  $1800.Date ensureSupportEndDate() => $_ensure(1);
+  $1801.Date ensureSupportEndDate() => $_ensure(1);
 
   /// The time at which this version of Skaffold will enter maintenance mode.
   @$pb.TagNumber(3)
-  $1775.Timestamp get maintenanceModeTime => $_getN(2);
+  $1776.Timestamp get maintenanceModeTime => $_getN(2);
   @$pb.TagNumber(3)
-  set maintenanceModeTime($1775.Timestamp v) { setField(3, v); }
+  set maintenanceModeTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMaintenanceModeTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearMaintenanceModeTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureMaintenanceModeTime() => $_ensure(2);
+  $1776.Timestamp ensureMaintenanceModeTime() => $_ensure(2);
 
   /// The time at which this version of Skaffold will no longer be supported.
   @$pb.TagNumber(4)
-  $1775.Timestamp get supportExpirationTime => $_getN(3);
+  $1776.Timestamp get supportExpirationTime => $_getN(3);
   @$pb.TagNumber(4)
-  set supportExpirationTime($1775.Timestamp v) { setField(4, v); }
+  set supportExpirationTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSupportExpirationTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearSupportExpirationTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureSupportExpirationTime() => $_ensure(3);
+  $1776.Timestamp ensureSupportExpirationTime() => $_ensure(3);
 }
 
 /// Request to get a configuration.
@@ -11482,8 +11482,8 @@ class Automation extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? uid,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? annotations,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? etag,
@@ -11539,8 +11539,8 @@ class Automation extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'annotations', entryClassName: 'Automation.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'Automation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.deploy.v1'))
     ..aOS(8, _omitFieldNames ? '' : 'etag')
@@ -11605,27 +11605,27 @@ class Automation extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the automation was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Time at which the automation was updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   ///  Optional. User annotations. These attributes can only be set and used by
   ///  the user, and not by Cloud Deploy. Annotations must meet the following
@@ -11875,7 +11875,7 @@ class AutomationRule extends $pb.GeneratedMessage {
 class PromoteReleaseRule extends $pb.GeneratedMessage {
   factory PromoteReleaseRule({
     $core.String? id,
-    $1737.Duration? wait,
+    $1738.Duration? wait,
     AutomationRuleCondition? condition,
     $core.String? destinationTargetId,
     $core.String? destinationPhase,
@@ -11904,7 +11904,7 @@ class PromoteReleaseRule extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PromoteReleaseRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1738.Duration.create)
     ..aOM<AutomationRuleCondition>(5, _omitFieldNames ? '' : 'condition', subBuilder: AutomationRuleCondition.create)
     ..aOS(7, _omitFieldNames ? '' : 'destinationTargetId')
     ..aOS(8, _omitFieldNames ? '' : 'destinationPhase')
@@ -11947,15 +11947,15 @@ class PromoteReleaseRule extends $pb.GeneratedMessage {
   /// Optional. How long the release need to be paused until being promoted to
   /// the next target.
   @$pb.TagNumber(2)
-  $1737.Duration get wait => $_getN(1);
+  $1738.Duration get wait => $_getN(1);
   @$pb.TagNumber(2)
-  set wait($1737.Duration v) { setField(2, v); }
+  set wait($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWait() => $_has(1);
   @$pb.TagNumber(2)
   void clearWait() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureWait() => $_ensure(1);
+  $1738.Duration ensureWait() => $_ensure(1);
 
   /// Output only. Information around the state of the Automation rule.
   @$pb.TagNumber(5)
@@ -12001,7 +12001,7 @@ class PromoteReleaseRule extends $pb.GeneratedMessage {
 class AdvanceRolloutRule extends $pb.GeneratedMessage {
   factory AdvanceRolloutRule({
     $core.String? id,
-    $1737.Duration? wait,
+    $1738.Duration? wait,
     AutomationRuleCondition? condition,
     $core.Iterable<$core.String>? sourcePhases,
   }) {
@@ -12026,7 +12026,7 @@ class AdvanceRolloutRule extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdvanceRolloutRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'wait', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'wait', subBuilder: $1738.Duration.create)
     ..aOM<AutomationRuleCondition>(5, _omitFieldNames ? '' : 'condition', subBuilder: AutomationRuleCondition.create)
     ..pPS(6, _omitFieldNames ? '' : 'sourcePhases')
     ..hasRequiredFields = false
@@ -12067,15 +12067,15 @@ class AdvanceRolloutRule extends $pb.GeneratedMessage {
 
   /// Optional. How long to wait after a rollout is finished.
   @$pb.TagNumber(3)
-  $1737.Duration get wait => $_getN(1);
+  $1738.Duration get wait => $_getN(1);
   @$pb.TagNumber(3)
-  set wait($1737.Duration v) { setField(3, v); }
+  set wait($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasWait() => $_has(1);
   @$pb.TagNumber(3)
   void clearWait() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureWait() => $_ensure(1);
+  $1738.Duration ensureWait() => $_ensure(1);
 
   /// Output only. Information around the state of the Automation rule.
   @$pb.TagNumber(5)
@@ -12372,7 +12372,7 @@ class CreateAutomationRequest extends $pb.GeneratedMessage {
 /// The request object for `UpdateAutomation`.
 class UpdateAutomationRequest extends $pb.GeneratedMessage {
   factory UpdateAutomationRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Automation? automation,
     $core.String? requestId,
     $core.bool? allowMissing,
@@ -12401,7 +12401,7 @@ class UpdateAutomationRequest extends $pb.GeneratedMessage {
   factory UpdateAutomationRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAutomationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Automation>(2, _omitFieldNames ? '' : 'automation', subBuilder: Automation.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
@@ -12436,15 +12436,15 @@ class UpdateAutomationRequest extends $pb.GeneratedMessage {
   /// will be overwritten if it's in the mask. If the user doesn't provide a mask
   /// then all fields are overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The `Automation` to update.
   @$pb.TagNumber(2)
@@ -12893,20 +12893,20 @@ enum AutomationRun_Operation {
 class AutomationRun extends $pb.GeneratedMessage {
   factory AutomationRun({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.String? serviceAccount,
     Automation? automationSnapshot,
     $core.String? targetId,
     AutomationRun_State? state,
     $core.String? stateDescription,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.String? ruleId,
     PromoteReleaseOperation? promoteReleaseOperation,
     AdvanceRolloutOperation? advanceRolloutOperation,
     $core.String? automationId,
-    $1775.Timestamp? waitUntilTime,
+    $1776.Timestamp? waitUntilTime,
     RepairRolloutOperation? repairRolloutOperation,
   }) {
     final $result = create();
@@ -12973,20 +12973,20 @@ class AutomationRun extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutomationRun', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..oo(0, [13, 14, 17])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'etag')
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccount')
     ..aOM<Automation>(6, _omitFieldNames ? '' : 'automationSnapshot', subBuilder: Automation.create)
     ..aOS(7, _omitFieldNames ? '' : 'targetId')
     ..e<AutomationRun_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AutomationRun_State.STATE_UNSPECIFIED, valueOf: AutomationRun_State.valueOf, enumValues: AutomationRun_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'stateDescription')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'ruleId')
     ..aOM<PromoteReleaseOperation>(13, _omitFieldNames ? '' : 'promoteReleaseOperation', subBuilder: PromoteReleaseOperation.create)
     ..aOM<AdvanceRolloutOperation>(14, _omitFieldNames ? '' : 'advanceRolloutOperation', subBuilder: AdvanceRolloutOperation.create)
     ..aOS(15, _omitFieldNames ? '' : 'automationId')
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'waitUntilTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'waitUntilTime', subBuilder: $1776.Timestamp.create)
     ..aOM<RepairRolloutOperation>(17, _omitFieldNames ? '' : 'repairRolloutOperation', subBuilder: RepairRolloutOperation.create)
     ..hasRequiredFields = false
   ;
@@ -13028,27 +13028,27 @@ class AutomationRun extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the `AutomationRun` was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time at which the automationRun was updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The weak etag of the `AutomationRun` resource.
   /// This checksum is computed by the server based on the value of other
@@ -13123,15 +13123,15 @@ class AutomationRun extends $pb.GeneratedMessage {
   /// Output only. Time the `AutomationRun` expires. An `AutomationRun` expires
   /// after 14 days from its creation date.
   @$pb.TagNumber(11)
-  $1775.Timestamp get expireTime => $_getN(9);
+  $1776.Timestamp get expireTime => $_getN(9);
   @$pb.TagNumber(11)
-  set expireTime($1775.Timestamp v) { setField(11, v); }
+  set expireTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasExpireTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearExpireTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureExpireTime() => $_ensure(9);
+  $1776.Timestamp ensureExpireTime() => $_ensure(9);
 
   /// Output only. The ID of the automation rule that initiated the operation.
   @$pb.TagNumber(12)
@@ -13180,15 +13180,15 @@ class AutomationRun extends $pb.GeneratedMessage {
   /// Output only. Earliest time the `AutomationRun` will attempt to resume.
   /// Wait-time is configured by `wait` in automation rule.
   @$pb.TagNumber(16)
-  $1775.Timestamp get waitUntilTime => $_getN(14);
+  $1776.Timestamp get waitUntilTime => $_getN(14);
   @$pb.TagNumber(16)
-  set waitUntilTime($1775.Timestamp v) { setField(16, v); }
+  set waitUntilTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasWaitUntilTime() => $_has(14);
   @$pb.TagNumber(16)
   void clearWaitUntilTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureWaitUntilTime() => $_ensure(14);
+  $1776.Timestamp ensureWaitUntilTime() => $_ensure(14);
 
   /// Output only. Repairs a failed 'Rollout'.
   @$pb.TagNumber(17)
@@ -13207,7 +13207,7 @@ class AutomationRun extends $pb.GeneratedMessage {
 class PromoteReleaseOperation extends $pb.GeneratedMessage {
   factory PromoteReleaseOperation({
     $core.String? targetId,
-    $1737.Duration? wait,
+    $1738.Duration? wait,
     $core.String? rollout,
     $core.String? phase,
   }) {
@@ -13232,7 +13232,7 @@ class PromoteReleaseOperation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PromoteReleaseOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'targetId')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'rollout')
     ..aOS(4, _omitFieldNames ? '' : 'phase')
     ..hasRequiredFields = false
@@ -13273,15 +13273,15 @@ class PromoteReleaseOperation extends $pb.GeneratedMessage {
 
   /// Output only. How long the operation will be paused.
   @$pb.TagNumber(2)
-  $1737.Duration get wait => $_getN(1);
+  $1738.Duration get wait => $_getN(1);
   @$pb.TagNumber(2)
-  set wait($1737.Duration v) { setField(2, v); }
+  set wait($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWait() => $_has(1);
   @$pb.TagNumber(2)
   void clearWait() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureWait() => $_ensure(1);
+  $1738.Duration ensureWait() => $_ensure(1);
 
   /// Output only. The name of the rollout that initiates the `AutomationRun`.
   @$pb.TagNumber(3)
@@ -13307,7 +13307,7 @@ class PromoteReleaseOperation extends $pb.GeneratedMessage {
 /// Contains the information of an automated advance-rollout operation.
 class AdvanceRolloutOperation extends $pb.GeneratedMessage {
   factory AdvanceRolloutOperation({
-    $1737.Duration? wait,
+    $1738.Duration? wait,
     $core.String? rollout,
     $core.String? destinationPhase,
     $core.String? sourcePhase,
@@ -13332,7 +13332,7 @@ class AdvanceRolloutOperation extends $pb.GeneratedMessage {
   factory AdvanceRolloutOperation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdvanceRolloutOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'rollout')
     ..aOS(4, _omitFieldNames ? '' : 'destinationPhase')
     ..aOS(5, _omitFieldNames ? '' : 'sourcePhase')
@@ -13362,15 +13362,15 @@ class AdvanceRolloutOperation extends $pb.GeneratedMessage {
 
   /// Output only. How long the operation will be paused.
   @$pb.TagNumber(2)
-  $1737.Duration get wait => $_getN(0);
+  $1738.Duration get wait => $_getN(0);
   @$pb.TagNumber(2)
-  set wait($1737.Duration v) { setField(2, v); }
+  set wait($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWait() => $_has(0);
   @$pb.TagNumber(2)
   void clearWait() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureWait() => $_ensure(0);
+  $1738.Duration ensureWait() => $_ensure(0);
 
   /// Output only. The name of the rollout that initiates the `AutomationRun`.
   @$pb.TagNumber(3)
@@ -13665,7 +13665,7 @@ class RetryPhase extends $pb.GeneratedMessage {
 class RetryAttempt extends $pb.GeneratedMessage {
   factory RetryAttempt({
     $fixnum.Int64? attempt,
-    $1737.Duration? wait,
+    $1738.Duration? wait,
     RepairState? state,
     $core.String? stateDesc,
   }) {
@@ -13690,7 +13690,7 @@ class RetryAttempt extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetryAttempt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'attempt')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'wait', subBuilder: $1738.Duration.create)
     ..e<RepairState>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: RepairState.REPAIR_STATE_UNSPECIFIED, valueOf: RepairState.valueOf, enumValues: RepairState.values)
     ..aOS(6, _omitFieldNames ? '' : 'stateDesc')
     ..hasRequiredFields = false
@@ -13729,15 +13729,15 @@ class RetryAttempt extends $pb.GeneratedMessage {
 
   /// Output only. How long the operation will be paused.
   @$pb.TagNumber(2)
-  $1737.Duration get wait => $_getN(1);
+  $1738.Duration get wait => $_getN(1);
   @$pb.TagNumber(2)
-  set wait($1737.Duration v) { setField(2, v); }
+  set wait($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWait() => $_has(1);
   @$pb.TagNumber(2)
   void clearWait() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureWait() => $_ensure(1);
+  $1738.Duration ensureWait() => $_ensure(1);
 
   /// Output only. Valid state of this retry action.
   @$pb.TagNumber(5)

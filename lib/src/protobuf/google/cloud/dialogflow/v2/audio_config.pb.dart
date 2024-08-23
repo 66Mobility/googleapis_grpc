@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'audio_config.pbenum.dart';
 
 export 'audio_config.pbenum.dart';
@@ -103,8 +103,8 @@ class SpeechContext extends $pb.GeneratedMessage {
 /// Information for a word recognized by the speech recognizer.
 class SpeechWordInfo extends $pb.GeneratedMessage {
   factory SpeechWordInfo({
-    $1737.Duration? startOffset,
-    $1737.Duration? endOffset,
+    $1738.Duration? startOffset,
+    $1738.Duration? endOffset,
     $core.String? word,
     $core.double? confidence,
   }) {
@@ -128,8 +128,8 @@ class SpeechWordInfo extends $pb.GeneratedMessage {
   factory SpeechWordInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpeechWordInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'word')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
@@ -160,29 +160,29 @@ class SpeechWordInfo extends $pb.GeneratedMessage {
   /// start of the spoken word. This is an experimental feature and the accuracy
   /// of the time offset can vary.
   @$pb.TagNumber(1)
-  $1737.Duration get startOffset => $_getN(0);
+  $1738.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startOffset($1737.Duration v) { setField(1, v); }
+  set startOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartOffset() => $_ensure(0);
+  $1738.Duration ensureStartOffset() => $_ensure(0);
 
   /// Time offset relative to the beginning of the audio that corresponds to the
   /// end of the spoken word. This is an experimental feature and the accuracy of
   /// the time offset can vary.
   @$pb.TagNumber(2)
-  $1737.Duration get endOffset => $_getN(1);
+  $1738.Duration get endOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endOffset($1737.Duration v) { setField(2, v); }
+  set endOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndOffset() => $_ensure(1);
+  $1738.Duration ensureEndOffset() => $_ensure(1);
 
   /// The word this info is for.
   @$pb.TagNumber(3)

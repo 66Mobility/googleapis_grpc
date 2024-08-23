@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'custom_job.pb.dart' as $587;
-import 'encryption_spec.pb.dart' as $4281;
-import 'job_state.pbenum.dart' as $4283;
+import 'encryption_spec.pb.dart' as $4282;
+import 'job_state.pbenum.dart' as $4284;
 import 'nas_job.pbenum.dart';
 import 'study.pb.dart' as $637;
 
@@ -30,14 +30,14 @@ class NasJob extends $pb.GeneratedMessage {
     $core.String? displayName,
     NasJobSpec? nasJobSpec,
     NasJobOutput? nasJobOutput,
-    $4283.JobState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
-    $1795.Status? error,
+    $4284.JobState? state,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
+    $1796.Status? error,
     $core.Map<$core.String, $core.String>? labels,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4282.EncryptionSpec? encryptionSpec,
   @$core.Deprecated('This field is deprecated.')
     $core.bool? enableRestrictedImageTraining,
     $core.bool? satisfiesPzs,
@@ -101,14 +101,14 @@ class NasJob extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<NasJobSpec>(4, _omitFieldNames ? '' : 'nasJobSpec', subBuilder: NasJobSpec.create)
     ..aOM<NasJobOutput>(5, _omitFieldNames ? '' : 'nasJobOutput', subBuilder: NasJobOutput.create)
-    ..e<$4283.JobState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4283.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4283.JobState.valueOf, enumValues: $4283.JobState.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..e<$4284.JobState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4284.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4284.JobState.valueOf, enumValues: $4284.JobState.values)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'labels', entryClassName: 'NasJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$4281.EncryptionSpec>(13, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4282.EncryptionSpec>(13, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOB(14, _omitFieldNames ? '' : 'enableRestrictedImageTraining')
     ..aOB(15, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(16, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -184,9 +184,9 @@ class NasJob extends $pb.GeneratedMessage {
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(6)
-  $4283.JobState get state => $_getN(4);
+  $4284.JobState get state => $_getN(4);
   @$pb.TagNumber(6)
-  set state($4283.JobState v) { setField(6, v); }
+  set state($4284.JobState v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(6)
@@ -194,66 +194,66 @@ class NasJob extends $pb.GeneratedMessage {
 
   /// Output only. Time when the NasJob was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time when the NasJob for the first time entered the
   /// `JOB_STATE_RUNNING` state.
   @$pb.TagNumber(8)
-  $1775.Timestamp get startTime => $_getN(6);
+  $1776.Timestamp get startTime => $_getN(6);
   @$pb.TagNumber(8)
-  set startTime($1775.Timestamp v) { setField(8, v); }
+  set startTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearStartTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureStartTime() => $_ensure(6);
+  $1776.Timestamp ensureStartTime() => $_ensure(6);
 
   /// Output only. Time when the NasJob entered any of the following states:
   /// `JOB_STATE_SUCCEEDED`, `JOB_STATE_FAILED`, `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(9)
-  $1775.Timestamp get endTime => $_getN(7);
+  $1776.Timestamp get endTime => $_getN(7);
   @$pb.TagNumber(9)
-  set endTime($1775.Timestamp v) { setField(9, v); }
+  set endTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasEndTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearEndTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureEndTime() => $_ensure(7);
+  $1776.Timestamp ensureEndTime() => $_ensure(7);
 
   /// Output only. Time when the NasJob was most recently updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. Only populated when job's state is JOB_STATE_FAILED or
   /// JOB_STATE_CANCELLED.
   @$pb.TagNumber(11)
-  $1795.Status get error => $_getN(9);
+  $1796.Status get error => $_getN(9);
   @$pb.TagNumber(11)
-  set error($1795.Status v) { setField(11, v); }
+  set error($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasError() => $_has(9);
   @$pb.TagNumber(11)
   void clearError() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureError() => $_ensure(9);
+  $1796.Status ensureError() => $_ensure(9);
 
   ///  The labels with user-defined metadata to organize NasJobs.
   ///
@@ -269,15 +269,15 @@ class NasJob extends $pb.GeneratedMessage {
   /// If this is set, then all resources created by the NasJob
   /// will be encrypted with the provided encryption key.
   @$pb.TagNumber(13)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(11);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(11);
   @$pb.TagNumber(13)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(13, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasEncryptionSpec() => $_has(11);
   @$pb.TagNumber(13)
   void clearEncryptionSpec() => clearField(13);
   @$pb.TagNumber(13)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(11);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(11);
 
   /// Optional. Enable a separation of Custom model training
   /// and restricted image training for tenant project.
@@ -1017,8 +1017,8 @@ class NasTrial extends $pb.GeneratedMessage {
     $core.String? id,
     NasTrial_State? state,
     $637.Measurement? finalMeasurement,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (id != null) {
@@ -1046,8 +1046,8 @@ class NasTrial extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..e<NasTrial_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: NasTrial_State.STATE_UNSPECIFIED, valueOf: NasTrial_State.valueOf, enumValues: NasTrial_State.values)
     ..aOM<$637.Measurement>(3, _omitFieldNames ? '' : 'finalMeasurement', subBuilder: $637.Measurement.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1106,28 +1106,28 @@ class NasTrial extends $pb.GeneratedMessage {
 
   /// Output only. Time when the NasTrial was started.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Output only. Time when the NasTrial's status changed to `SUCCEEDED` or
   /// `INFEASIBLE`.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 }
 
 

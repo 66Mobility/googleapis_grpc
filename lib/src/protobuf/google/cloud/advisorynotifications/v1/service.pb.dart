@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'service.pbenum.dart';
 
 export 'service.pbenum.dart';
@@ -25,7 +25,7 @@ class Notification extends $pb.GeneratedMessage {
     $core.String? name,
     Subject? subject,
     $core.Iterable<Message>? messages,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     NotificationType? notificationType,
   }) {
     final $result = create();
@@ -54,7 +54,7 @@ class Notification extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Subject>(2, _omitFieldNames ? '' : 'subject', subBuilder: Subject.create)
     ..pc<Message>(3, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM, subBuilder: Message.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<NotificationType>(12, _omitFieldNames ? '' : 'notificationType', $pb.PbFieldType.OE, defaultOrMaker: NotificationType.NOTIFICATION_TYPE_UNSPECIFIED, valueOf: NotificationType.valueOf, enumValues: NotificationType.values)
     ..hasRequiredFields = false
   ;
@@ -111,15 +111,15 @@ class Notification extends $pb.GeneratedMessage {
 
   /// Output only. Time the notification was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Type of notification
   @$pb.TagNumber(12)
@@ -327,8 +327,8 @@ class Message extends $pb.GeneratedMessage {
   factory Message({
     Message_Body? body,
     $core.Iterable<Attachment>? attachments,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? localizationTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? localizationTime,
   }) {
     final $result = create();
     if (body != null) {
@@ -352,8 +352,8 @@ class Message extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Message', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.advisorynotifications.v1'), createEmptyInstance: create)
     ..aOM<Message_Body>(1, _omitFieldNames ? '' : 'body', subBuilder: Message_Body.create)
     ..pc<Attachment>(2, _omitFieldNames ? '' : 'attachments', $pb.PbFieldType.PM, subBuilder: Attachment.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'localizationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'localizationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -396,27 +396,27 @@ class Message extends $pb.GeneratedMessage {
 
   /// The Message creation timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Time when Message was localized
   @$pb.TagNumber(4)
-  $1775.Timestamp get localizationTime => $_getN(3);
+  $1776.Timestamp get localizationTime => $_getN(3);
   @$pb.TagNumber(4)
-  set localizationTime($1775.Timestamp v) { setField(4, v); }
+  set localizationTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLocalizationTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLocalizationTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureLocalizationTime() => $_ensure(3);
+  $1776.Timestamp ensureLocalizationTime() => $_ensure(3);
 }
 
 enum Attachment_Data {

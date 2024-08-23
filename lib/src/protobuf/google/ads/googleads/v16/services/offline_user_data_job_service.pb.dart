@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../common/offline_user_data.pb.dart' as $3038;
-import '../resources/offline_user_data_job.pb.dart' as $3177;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../common/offline_user_data.pb.dart' as $3039;
+import '../resources/offline_user_data_job.pb.dart' as $3178;
 
 /// Request message for
 /// [OfflineUserDataJobService.CreateOfflineUserDataJob][google.ads.googleads.v16.services.OfflineUserDataJobService.CreateOfflineUserDataJob].
 class CreateOfflineUserDataJobRequest extends $pb.GeneratedMessage {
   factory CreateOfflineUserDataJobRequest({
     $core.String? customerId,
-    $3177.OfflineUserDataJob? job,
+    $3178.OfflineUserDataJob? job,
     $core.bool? validateOnly,
     $core.bool? enableMatchRateRangePreview,
   }) {
@@ -47,7 +47,7 @@ class CreateOfflineUserDataJobRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateOfflineUserDataJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..aOM<$3177.OfflineUserDataJob>(2, _omitFieldNames ? '' : 'job', subBuilder: $3177.OfflineUserDataJob.create)
+    ..aOM<$3178.OfflineUserDataJob>(2, _omitFieldNames ? '' : 'job', subBuilder: $3178.OfflineUserDataJob.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..aOB(5, _omitFieldNames ? '' : 'enableMatchRateRangePreview')
     ..hasRequiredFields = false
@@ -87,15 +87,15 @@ class CreateOfflineUserDataJobRequest extends $pb.GeneratedMessage {
 
   /// Required. The offline user data job to be created.
   @$pb.TagNumber(2)
-  $3177.OfflineUserDataJob get job => $_getN(1);
+  $3178.OfflineUserDataJob get job => $_getN(1);
   @$pb.TagNumber(2)
-  set job($3177.OfflineUserDataJob v) { setField(2, v); }
+  set job($3178.OfflineUserDataJob v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasJob() => $_has(1);
   @$pb.TagNumber(2)
   void clearJob() => clearField(2);
   @$pb.TagNumber(2)
-  $3177.OfflineUserDataJob ensureJob() => $_ensure(1);
+  $3178.OfflineUserDataJob ensureJob() => $_ensure(1);
 
   /// If true, the request is validated but not executed. Only errors are
   /// returned, not results.
@@ -362,8 +362,8 @@ enum OfflineUserDataJobOperation_Operation {
 /// Operation to be made for the AddOfflineUserDataJobOperationsRequest.
 class OfflineUserDataJobOperation extends $pb.GeneratedMessage {
   factory OfflineUserDataJobOperation({
-    $3038.UserData? create_1,
-    $3038.UserData? remove,
+    $3039.UserData? create_1,
+    $3039.UserData? remove,
     $core.bool? removeAll,
   }) {
     final $result = create();
@@ -390,8 +390,8 @@ class OfflineUserDataJobOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OfflineUserDataJobOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3038.UserData>(1, _omitFieldNames ? '' : 'create', subBuilder: $3038.UserData.create)
-    ..aOM<$3038.UserData>(2, _omitFieldNames ? '' : 'remove', subBuilder: $3038.UserData.create)
+    ..aOM<$3039.UserData>(1, _omitFieldNames ? '' : 'create', subBuilder: $3039.UserData.create)
+    ..aOM<$3039.UserData>(2, _omitFieldNames ? '' : 'remove', subBuilder: $3039.UserData.create)
     ..aOB(3, _omitFieldNames ? '' : 'removeAll')
     ..hasRequiredFields = false
   ;
@@ -423,28 +423,28 @@ class OfflineUserDataJobOperation extends $pb.GeneratedMessage {
   /// Add the provided data to the transaction. Data cannot be retrieved after
   /// being uploaded.
   @$pb.TagNumber(1)
-  $3038.UserData get create_1 => $_getN(0);
+  $3039.UserData get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3038.UserData v) { setField(1, v); }
+  set create_1($3039.UserData v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3038.UserData ensureCreate_1() => $_ensure(0);
+  $3039.UserData ensureCreate_1() => $_ensure(0);
 
   /// Remove the provided data from the transaction. Data cannot be retrieved
   /// after being uploaded.
   @$pb.TagNumber(2)
-  $3038.UserData get remove => $_getN(1);
+  $3039.UserData get remove => $_getN(1);
   @$pb.TagNumber(2)
-  set remove($3038.UserData v) { setField(2, v); }
+  set remove($3039.UserData v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRemove() => $_has(1);
   @$pb.TagNumber(2)
   void clearRemove() => clearField(2);
   @$pb.TagNumber(2)
-  $3038.UserData ensureRemove() => $_ensure(1);
+  $3039.UserData ensureRemove() => $_ensure(1);
 
   /// Remove all previously provided data. This is only supported for Customer
   /// Match.
@@ -462,8 +462,8 @@ class OfflineUserDataJobOperation extends $pb.GeneratedMessage {
 /// [OfflineUserDataJobService.AddOfflineUserDataJobOperations][google.ads.googleads.v16.services.OfflineUserDataJobService.AddOfflineUserDataJobOperations].
 class AddOfflineUserDataJobOperationsResponse extends $pb.GeneratedMessage {
   factory AddOfflineUserDataJobOperationsResponse({
-    $1795.Status? partialFailureError,
-    $1795.Status? warning,
+    $1796.Status? partialFailureError,
+    $1796.Status? warning,
   }) {
     final $result = create();
     if (partialFailureError != null) {
@@ -479,8 +479,8 @@ class AddOfflineUserDataJobOperationsResponse extends $pb.GeneratedMessage {
   factory AddOfflineUserDataJobOperationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AddOfflineUserDataJobOperationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'warning', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'warning', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -510,28 +510,28 @@ class AddOfflineUserDataJobOperationsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// Non blocking errors that pertain to operation failures in the warnings
   /// mode. Returned only when enable_warnings = true.
   @$pb.TagNumber(2)
-  $1795.Status get warning => $_getN(1);
+  $1796.Status get warning => $_getN(1);
   @$pb.TagNumber(2)
-  set warning($1795.Status v) { setField(2, v); }
+  set warning($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWarning() => $_has(1);
   @$pb.TagNumber(2)
   void clearWarning() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureWarning() => $_ensure(1);
+  $1796.Status ensureWarning() => $_ensure(1);
 }
 
 

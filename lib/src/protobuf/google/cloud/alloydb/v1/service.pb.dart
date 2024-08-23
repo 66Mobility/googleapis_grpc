@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'resources.pb.dart' as $639;
 import 'resources.pbenum.dart' as $639;
 import 'service.pbenum.dart';
@@ -538,7 +538,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
 /// Message for updating a Cluster
 class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $639.Cluster? cluster,
     $core.String? requestId,
     $core.bool? validateOnly,
@@ -567,7 +567,7 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.alloydb.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$639.Cluster>(2, _omitFieldNames ? '' : 'cluster', subBuilder: $639.Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -602,15 +602,15 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -1878,7 +1878,7 @@ class BatchCreateInstanceStatus extends $pb.GeneratedMessage {
     BatchCreateInstanceStatus_State? state,
     $core.String? errorMsg,
     $639.Instance_InstanceType? type,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (state != null) {
@@ -1903,7 +1903,7 @@ class BatchCreateInstanceStatus extends $pb.GeneratedMessage {
     ..e<BatchCreateInstanceStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: BatchCreateInstanceStatus_State.STATE_UNSPECIFIED, valueOf: BatchCreateInstanceStatus_State.valueOf, enumValues: BatchCreateInstanceStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'errorMsg')
     ..e<$639.Instance_InstanceType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $639.Instance_InstanceType.INSTANCE_TYPE_UNSPECIFIED, valueOf: $639.Instance_InstanceType.valueOf, enumValues: $639.Instance_InstanceType.values)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1968,21 +1968,21 @@ class BatchCreateInstanceStatus extends $pb.GeneratedMessage {
   /// The RPC status of the instance creation operation. This field will be
   /// present if an error happened during the instance creation.
   @$pb.TagNumber(4)
-  $1795.Status get error => $_getN(3);
+  $1796.Status get error => $_getN(3);
   @$pb.TagNumber(4)
-  set error($1795.Status v) { setField(4, v); }
+  set error($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(3);
   @$pb.TagNumber(4)
   void clearError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureError() => $_ensure(3);
+  $1796.Status ensureError() => $_ensure(3);
 }
 
 /// Message for updating a Instance
 class UpdateInstanceRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $639.Instance? instance,
     $core.String? requestId,
     $core.bool? validateOnly,
@@ -2011,7 +2011,7 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.alloydb.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$639.Instance>(2, _omitFieldNames ? '' : 'instance', subBuilder: $639.Instance.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -2046,15 +2046,15 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -2895,7 +2895,7 @@ class CreateBackupRequest extends $pb.GeneratedMessage {
 /// Message for updating a Backup
 class UpdateBackupRequest extends $pb.GeneratedMessage {
   factory UpdateBackupRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $639.Backup? backup,
     $core.String? requestId,
     $core.bool? validateOnly,
@@ -2924,7 +2924,7 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
   factory UpdateBackupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBackupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.alloydb.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$639.Backup>(2, _omitFieldNames ? '' : 'backup', subBuilder: $639.Backup.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -2959,15 +2959,15 @@ class UpdateBackupRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -3295,7 +3295,7 @@ class GenerateClientCertificateRequest extends $pb.GeneratedMessage {
   factory GenerateClientCertificateRequest({
     $core.String? parent,
     $core.String? requestId,
-    $1737.Duration? certDuration,
+    $1738.Duration? certDuration,
     $core.String? publicKey,
     $core.bool? useMetadataExchange,
   }) {
@@ -3324,7 +3324,7 @@ class GenerateClientCertificateRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateClientCertificateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.alloydb.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'certDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'certDuration', subBuilder: $1738.Duration.create)
     ..aOS(5, _omitFieldNames ? '' : 'publicKey')
     ..aOB(6, _omitFieldNames ? '' : 'useMetadataExchange')
     ..hasRequiredFields = false
@@ -3390,15 +3390,15 @@ class GenerateClientCertificateRequest extends $pb.GeneratedMessage {
   /// unspecified or is not honored, then the endpoint will pick an appropriate
   /// default duration.
   @$pb.TagNumber(4)
-  $1737.Duration get certDuration => $_getN(2);
+  $1738.Duration get certDuration => $_getN(2);
   @$pb.TagNumber(4)
-  set certDuration($1737.Duration v) { setField(4, v); }
+  set certDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCertDuration() => $_has(2);
   @$pb.TagNumber(4)
   void clearCertDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureCertDuration() => $_ensure(2);
+  $1738.Duration ensureCertDuration() => $_ensure(2);
 
   /// Optional. The public key from the client.
   @$pb.TagNumber(5)
@@ -3573,8 +3573,8 @@ enum OperationMetadata_RequestSpecific {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -3619,8 +3619,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.alloydb.v1'), createEmptyInstance: create)
     ..oo(0, [8])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -3656,27 +3656,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -4111,7 +4111,7 @@ class CreateUserRequest extends $pb.GeneratedMessage {
 /// Message for updating a User
 class UpdateUserRequest extends $pb.GeneratedMessage {
   factory UpdateUserRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $639.User? user,
     $core.String? requestId,
     $core.bool? validateOnly,
@@ -4140,7 +4140,7 @@ class UpdateUserRequest extends $pb.GeneratedMessage {
   factory UpdateUserRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateUserRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.alloydb.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$639.User>(2, _omitFieldNames ? '' : 'user', subBuilder: $639.User.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -4175,15 +4175,15 @@ class UpdateUserRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)

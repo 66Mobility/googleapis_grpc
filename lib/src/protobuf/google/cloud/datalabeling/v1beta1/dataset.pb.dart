@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'annotation.pb.dart' as $4465;
-import 'annotation.pbenum.dart' as $4465;
-import 'data_payloads.pb.dart' as $4463;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'annotation.pb.dart' as $4467;
+import 'annotation.pbenum.dart' as $4467;
+import 'data_payloads.pb.dart' as $4465;
 import 'dataset.pbenum.dart';
-import 'human_annotation_config.pb.dart' as $4464;
+import 'human_annotation_config.pb.dart' as $4466;
 
 export 'dataset.pbenum.dart';
 
@@ -30,7 +30,7 @@ class Dataset extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Iterable<InputConfig>? inputConfigs,
     $core.Iterable<$core.String>? blockingResources,
     $fixnum.Int64? dataItemCount,
@@ -67,7 +67,7 @@ class Dataset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..pc<InputConfig>(5, _omitFieldNames ? '' : 'inputConfigs', $pb.PbFieldType.PM, subBuilder: InputConfig.create)
     ..pPS(6, _omitFieldNames ? '' : 'blockingResources')
     ..aInt64(7, _omitFieldNames ? '' : 'dataItemCount')
@@ -129,15 +129,15 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// Output only. Time the dataset is created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. This is populated with the original input configs
   /// where ImportData is called. It is available only after the clients
@@ -177,7 +177,7 @@ class InputConfig extends $pb.GeneratedMessage {
   factory InputConfig({
     DataType? dataType,
     GcsSource? gcsSource,
-    $4465.AnnotationType? annotationType,
+    $4467.AnnotationType? annotationType,
     ClassificationMetadata? classificationMetadata,
     BigQuerySource? bigquerySource,
     TextMetadata? textMetadata,
@@ -221,7 +221,7 @@ class InputConfig extends $pb.GeneratedMessage {
     ..oo(1, [2, 5])
     ..e<DataType>(1, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: DataType.DATA_TYPE_UNSPECIFIED, valueOf: DataType.valueOf, enumValues: DataType.values)
     ..aOM<GcsSource>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: GcsSource.create)
-    ..e<$4465.AnnotationType>(3, _omitFieldNames ? '' : 'annotationType', $pb.PbFieldType.OE, defaultOrMaker: $4465.AnnotationType.ANNOTATION_TYPE_UNSPECIFIED, valueOf: $4465.AnnotationType.valueOf, enumValues: $4465.AnnotationType.values)
+    ..e<$4467.AnnotationType>(3, _omitFieldNames ? '' : 'annotationType', $pb.PbFieldType.OE, defaultOrMaker: $4467.AnnotationType.ANNOTATION_TYPE_UNSPECIFIED, valueOf: $4467.AnnotationType.valueOf, enumValues: $4467.AnnotationType.values)
     ..aOM<ClassificationMetadata>(4, _omitFieldNames ? '' : 'classificationMetadata', subBuilder: ClassificationMetadata.create)
     ..aOM<BigQuerySource>(5, _omitFieldNames ? '' : 'bigquerySource', subBuilder: BigQuerySource.create)
     ..aOM<TextMetadata>(6, _omitFieldNames ? '' : 'textMetadata', subBuilder: TextMetadata.create)
@@ -281,9 +281,9 @@ class InputConfig extends $pb.GeneratedMessage {
   /// specify this field if you are using this InputConfig in an
   /// [EvaluationJob][google.cloud.datalabeling.v1beta1.EvaluationJob].
   @$pb.TagNumber(3)
-  $4465.AnnotationType get annotationType => $_getN(2);
+  $4467.AnnotationType get annotationType => $_getN(2);
   @$pb.TagNumber(3)
-  set annotationType($4465.AnnotationType v) { setField(3, v); }
+  set annotationType($4467.AnnotationType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnnotationType() => $_has(2);
   @$pb.TagNumber(3)
@@ -791,9 +791,9 @@ enum DataItem_Payload {
 class DataItem extends $pb.GeneratedMessage {
   factory DataItem({
     $core.String? name,
-    $4463.ImagePayload? imagePayload,
-    $4463.TextPayload? textPayload,
-    $4463.VideoPayload? videoPayload,
+    $4465.ImagePayload? imagePayload,
+    $4465.TextPayload? textPayload,
+    $4465.VideoPayload? videoPayload,
   }) {
     final $result = create();
     if (name != null) {
@@ -823,9 +823,9 @@ class DataItem extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataItem', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4463.ImagePayload>(2, _omitFieldNames ? '' : 'imagePayload', subBuilder: $4463.ImagePayload.create)
-    ..aOM<$4463.TextPayload>(3, _omitFieldNames ? '' : 'textPayload', subBuilder: $4463.TextPayload.create)
-    ..aOM<$4463.VideoPayload>(4, _omitFieldNames ? '' : 'videoPayload', subBuilder: $4463.VideoPayload.create)
+    ..aOM<$4465.ImagePayload>(2, _omitFieldNames ? '' : 'imagePayload', subBuilder: $4465.ImagePayload.create)
+    ..aOM<$4465.TextPayload>(3, _omitFieldNames ? '' : 'textPayload', subBuilder: $4465.TextPayload.create)
+    ..aOM<$4465.VideoPayload>(4, _omitFieldNames ? '' : 'videoPayload', subBuilder: $4465.VideoPayload.create)
     ..hasRequiredFields = false
   ;
 
@@ -866,39 +866,39 @@ class DataItem extends $pb.GeneratedMessage {
 
   /// The image payload, a container of the image bytes/uri.
   @$pb.TagNumber(2)
-  $4463.ImagePayload get imagePayload => $_getN(1);
+  $4465.ImagePayload get imagePayload => $_getN(1);
   @$pb.TagNumber(2)
-  set imagePayload($4463.ImagePayload v) { setField(2, v); }
+  set imagePayload($4465.ImagePayload v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasImagePayload() => $_has(1);
   @$pb.TagNumber(2)
   void clearImagePayload() => clearField(2);
   @$pb.TagNumber(2)
-  $4463.ImagePayload ensureImagePayload() => $_ensure(1);
+  $4465.ImagePayload ensureImagePayload() => $_ensure(1);
 
   /// The text payload, a container of text content.
   @$pb.TagNumber(3)
-  $4463.TextPayload get textPayload => $_getN(2);
+  $4465.TextPayload get textPayload => $_getN(2);
   @$pb.TagNumber(3)
-  set textPayload($4463.TextPayload v) { setField(3, v); }
+  set textPayload($4465.TextPayload v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTextPayload() => $_has(2);
   @$pb.TagNumber(3)
   void clearTextPayload() => clearField(3);
   @$pb.TagNumber(3)
-  $4463.TextPayload ensureTextPayload() => $_ensure(2);
+  $4465.TextPayload ensureTextPayload() => $_ensure(2);
 
   /// The video payload, a container of the video uri.
   @$pb.TagNumber(4)
-  $4463.VideoPayload get videoPayload => $_getN(3);
+  $4465.VideoPayload get videoPayload => $_getN(3);
   @$pb.TagNumber(4)
-  set videoPayload($4463.VideoPayload v) { setField(4, v); }
+  set videoPayload($4465.VideoPayload v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasVideoPayload() => $_has(3);
   @$pb.TagNumber(4)
   void clearVideoPayload() => clearField(4);
   @$pb.TagNumber(4)
-  $4463.VideoPayload ensureVideoPayload() => $_ensure(3);
+  $4465.VideoPayload ensureVideoPayload() => $_ensure(3);
 }
 
 /// AnnotatedDataset is a set holding annotations for data in a Dataset. Each
@@ -908,12 +908,12 @@ class AnnotatedDataset extends $pb.GeneratedMessage {
   factory AnnotatedDataset({
     $core.String? name,
     $core.String? displayName,
-    $4465.AnnotationSource? annotationSource,
+    $4467.AnnotationSource? annotationSource,
     $fixnum.Int64? exampleCount,
     $fixnum.Int64? completedExampleCount,
     LabelStats? labelStats,
-    $1775.Timestamp? createTime,
-    $4465.AnnotationType? annotationType,
+    $1776.Timestamp? createTime,
+    $4467.AnnotationType? annotationType,
     $core.String? description,
     AnnotatedDatasetMetadata? metadata,
     $core.Iterable<$core.String>? blockingResources,
@@ -961,12 +961,12 @@ class AnnotatedDataset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnnotatedDataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<$4465.AnnotationSource>(3, _omitFieldNames ? '' : 'annotationSource', $pb.PbFieldType.OE, defaultOrMaker: $4465.AnnotationSource.ANNOTATION_SOURCE_UNSPECIFIED, valueOf: $4465.AnnotationSource.valueOf, enumValues: $4465.AnnotationSource.values)
+    ..e<$4467.AnnotationSource>(3, _omitFieldNames ? '' : 'annotationSource', $pb.PbFieldType.OE, defaultOrMaker: $4467.AnnotationSource.ANNOTATION_SOURCE_UNSPECIFIED, valueOf: $4467.AnnotationSource.valueOf, enumValues: $4467.AnnotationSource.values)
     ..aInt64(4, _omitFieldNames ? '' : 'exampleCount')
     ..aInt64(5, _omitFieldNames ? '' : 'completedExampleCount')
     ..aOM<LabelStats>(6, _omitFieldNames ? '' : 'labelStats', subBuilder: LabelStats.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..e<$4465.AnnotationType>(8, _omitFieldNames ? '' : 'annotationType', $pb.PbFieldType.OE, defaultOrMaker: $4465.AnnotationType.ANNOTATION_TYPE_UNSPECIFIED, valueOf: $4465.AnnotationType.valueOf, enumValues: $4465.AnnotationType.values)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..e<$4467.AnnotationType>(8, _omitFieldNames ? '' : 'annotationType', $pb.PbFieldType.OE, defaultOrMaker: $4467.AnnotationType.ANNOTATION_TYPE_UNSPECIFIED, valueOf: $4467.AnnotationType.valueOf, enumValues: $4467.AnnotationType.values)
     ..aOS(9, _omitFieldNames ? '' : 'description')
     ..aOM<AnnotatedDatasetMetadata>(10, _omitFieldNames ? '' : 'metadata', subBuilder: AnnotatedDatasetMetadata.create)
     ..pPS(11, _omitFieldNames ? '' : 'blockingResources')
@@ -1020,9 +1020,9 @@ class AnnotatedDataset extends $pb.GeneratedMessage {
 
   /// Output only. Source of the annotation.
   @$pb.TagNumber(3)
-  $4465.AnnotationSource get annotationSource => $_getN(2);
+  $4467.AnnotationSource get annotationSource => $_getN(2);
   @$pb.TagNumber(3)
-  set annotationSource($4465.AnnotationSource v) { setField(3, v); }
+  set annotationSource($4467.AnnotationSource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnnotationSource() => $_has(2);
   @$pb.TagNumber(3)
@@ -1063,22 +1063,22 @@ class AnnotatedDataset extends $pb.GeneratedMessage {
 
   /// Output only. Time the AnnotatedDataset was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Type of the annotation. It is specified when starting labeling
   /// task.
   @$pb.TagNumber(8)
-  $4465.AnnotationType get annotationType => $_getN(7);
+  $4467.AnnotationType get annotationType => $_getN(7);
   @$pb.TagNumber(8)
-  set annotationType($4465.AnnotationType v) { setField(8, v); }
+  set annotationType($4467.AnnotationType v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAnnotationType() => $_has(7);
   @$pb.TagNumber(8)
@@ -1181,17 +1181,17 @@ enum AnnotatedDatasetMetadata_AnnotationRequestConfig {
 /// Metadata on AnnotatedDataset.
 class AnnotatedDatasetMetadata extends $pb.GeneratedMessage {
   factory AnnotatedDatasetMetadata({
-    $4464.HumanAnnotationConfig? humanAnnotationConfig,
-    $4464.ImageClassificationConfig? imageClassificationConfig,
-    $4464.BoundingPolyConfig? boundingPolyConfig,
-    $4464.PolylineConfig? polylineConfig,
-    $4464.SegmentationConfig? segmentationConfig,
-    $4464.VideoClassificationConfig? videoClassificationConfig,
-    $4464.ObjectDetectionConfig? objectDetectionConfig,
-    $4464.ObjectTrackingConfig? objectTrackingConfig,
-    $4464.EventConfig? eventConfig,
-    $4464.TextClassificationConfig? textClassificationConfig,
-    $4464.TextEntityExtractionConfig? textEntityExtractionConfig,
+    $4466.HumanAnnotationConfig? humanAnnotationConfig,
+    $4466.ImageClassificationConfig? imageClassificationConfig,
+    $4466.BoundingPolyConfig? boundingPolyConfig,
+    $4466.PolylineConfig? polylineConfig,
+    $4466.SegmentationConfig? segmentationConfig,
+    $4466.VideoClassificationConfig? videoClassificationConfig,
+    $4466.ObjectDetectionConfig? objectDetectionConfig,
+    $4466.ObjectTrackingConfig? objectTrackingConfig,
+    $4466.EventConfig? eventConfig,
+    $4466.TextClassificationConfig? textClassificationConfig,
+    $4466.TextEntityExtractionConfig? textEntityExtractionConfig,
   }) {
     final $result = create();
     if (humanAnnotationConfig != null) {
@@ -1248,17 +1248,17 @@ class AnnotatedDatasetMetadata extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnnotatedDatasetMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'humanAnnotationConfig', subBuilder: $4464.HumanAnnotationConfig.create)
-    ..aOM<$4464.ImageClassificationConfig>(2, _omitFieldNames ? '' : 'imageClassificationConfig', subBuilder: $4464.ImageClassificationConfig.create)
-    ..aOM<$4464.BoundingPolyConfig>(3, _omitFieldNames ? '' : 'boundingPolyConfig', subBuilder: $4464.BoundingPolyConfig.create)
-    ..aOM<$4464.PolylineConfig>(4, _omitFieldNames ? '' : 'polylineConfig', subBuilder: $4464.PolylineConfig.create)
-    ..aOM<$4464.SegmentationConfig>(5, _omitFieldNames ? '' : 'segmentationConfig', subBuilder: $4464.SegmentationConfig.create)
-    ..aOM<$4464.VideoClassificationConfig>(6, _omitFieldNames ? '' : 'videoClassificationConfig', subBuilder: $4464.VideoClassificationConfig.create)
-    ..aOM<$4464.ObjectDetectionConfig>(7, _omitFieldNames ? '' : 'objectDetectionConfig', subBuilder: $4464.ObjectDetectionConfig.create)
-    ..aOM<$4464.ObjectTrackingConfig>(8, _omitFieldNames ? '' : 'objectTrackingConfig', subBuilder: $4464.ObjectTrackingConfig.create)
-    ..aOM<$4464.EventConfig>(9, _omitFieldNames ? '' : 'eventConfig', subBuilder: $4464.EventConfig.create)
-    ..aOM<$4464.TextClassificationConfig>(10, _omitFieldNames ? '' : 'textClassificationConfig', subBuilder: $4464.TextClassificationConfig.create)
-    ..aOM<$4464.TextEntityExtractionConfig>(11, _omitFieldNames ? '' : 'textEntityExtractionConfig', subBuilder: $4464.TextEntityExtractionConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'humanAnnotationConfig', subBuilder: $4466.HumanAnnotationConfig.create)
+    ..aOM<$4466.ImageClassificationConfig>(2, _omitFieldNames ? '' : 'imageClassificationConfig', subBuilder: $4466.ImageClassificationConfig.create)
+    ..aOM<$4466.BoundingPolyConfig>(3, _omitFieldNames ? '' : 'boundingPolyConfig', subBuilder: $4466.BoundingPolyConfig.create)
+    ..aOM<$4466.PolylineConfig>(4, _omitFieldNames ? '' : 'polylineConfig', subBuilder: $4466.PolylineConfig.create)
+    ..aOM<$4466.SegmentationConfig>(5, _omitFieldNames ? '' : 'segmentationConfig', subBuilder: $4466.SegmentationConfig.create)
+    ..aOM<$4466.VideoClassificationConfig>(6, _omitFieldNames ? '' : 'videoClassificationConfig', subBuilder: $4466.VideoClassificationConfig.create)
+    ..aOM<$4466.ObjectDetectionConfig>(7, _omitFieldNames ? '' : 'objectDetectionConfig', subBuilder: $4466.ObjectDetectionConfig.create)
+    ..aOM<$4466.ObjectTrackingConfig>(8, _omitFieldNames ? '' : 'objectTrackingConfig', subBuilder: $4466.ObjectTrackingConfig.create)
+    ..aOM<$4466.EventConfig>(9, _omitFieldNames ? '' : 'eventConfig', subBuilder: $4466.EventConfig.create)
+    ..aOM<$4466.TextClassificationConfig>(10, _omitFieldNames ? '' : 'textClassificationConfig', subBuilder: $4466.TextClassificationConfig.create)
+    ..aOM<$4466.TextEntityExtractionConfig>(11, _omitFieldNames ? '' : 'textEntityExtractionConfig', subBuilder: $4466.TextEntityExtractionConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1289,135 +1289,135 @@ class AnnotatedDatasetMetadata extends $pb.GeneratedMessage {
   /// HumanAnnotationConfig used when requesting the human labeling task for this
   /// AnnotatedDataset.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get humanAnnotationConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get humanAnnotationConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set humanAnnotationConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set humanAnnotationConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHumanAnnotationConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearHumanAnnotationConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureHumanAnnotationConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureHumanAnnotationConfig() => $_ensure(0);
 
   /// Configuration for image classification task.
   @$pb.TagNumber(2)
-  $4464.ImageClassificationConfig get imageClassificationConfig => $_getN(1);
+  $4466.ImageClassificationConfig get imageClassificationConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set imageClassificationConfig($4464.ImageClassificationConfig v) { setField(2, v); }
+  set imageClassificationConfig($4466.ImageClassificationConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasImageClassificationConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearImageClassificationConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4464.ImageClassificationConfig ensureImageClassificationConfig() => $_ensure(1);
+  $4466.ImageClassificationConfig ensureImageClassificationConfig() => $_ensure(1);
 
   /// Configuration for image bounding box and bounding poly task.
   @$pb.TagNumber(3)
-  $4464.BoundingPolyConfig get boundingPolyConfig => $_getN(2);
+  $4466.BoundingPolyConfig get boundingPolyConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set boundingPolyConfig($4464.BoundingPolyConfig v) { setField(3, v); }
+  set boundingPolyConfig($4466.BoundingPolyConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBoundingPolyConfig() => $_has(2);
   @$pb.TagNumber(3)
   void clearBoundingPolyConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4464.BoundingPolyConfig ensureBoundingPolyConfig() => $_ensure(2);
+  $4466.BoundingPolyConfig ensureBoundingPolyConfig() => $_ensure(2);
 
   /// Configuration for image polyline task.
   @$pb.TagNumber(4)
-  $4464.PolylineConfig get polylineConfig => $_getN(3);
+  $4466.PolylineConfig get polylineConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set polylineConfig($4464.PolylineConfig v) { setField(4, v); }
+  set polylineConfig($4466.PolylineConfig v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPolylineConfig() => $_has(3);
   @$pb.TagNumber(4)
   void clearPolylineConfig() => clearField(4);
   @$pb.TagNumber(4)
-  $4464.PolylineConfig ensurePolylineConfig() => $_ensure(3);
+  $4466.PolylineConfig ensurePolylineConfig() => $_ensure(3);
 
   /// Configuration for image segmentation task.
   @$pb.TagNumber(5)
-  $4464.SegmentationConfig get segmentationConfig => $_getN(4);
+  $4466.SegmentationConfig get segmentationConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set segmentationConfig($4464.SegmentationConfig v) { setField(5, v); }
+  set segmentationConfig($4466.SegmentationConfig v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSegmentationConfig() => $_has(4);
   @$pb.TagNumber(5)
   void clearSegmentationConfig() => clearField(5);
   @$pb.TagNumber(5)
-  $4464.SegmentationConfig ensureSegmentationConfig() => $_ensure(4);
+  $4466.SegmentationConfig ensureSegmentationConfig() => $_ensure(4);
 
   /// Configuration for video classification task.
   @$pb.TagNumber(6)
-  $4464.VideoClassificationConfig get videoClassificationConfig => $_getN(5);
+  $4466.VideoClassificationConfig get videoClassificationConfig => $_getN(5);
   @$pb.TagNumber(6)
-  set videoClassificationConfig($4464.VideoClassificationConfig v) { setField(6, v); }
+  set videoClassificationConfig($4466.VideoClassificationConfig v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasVideoClassificationConfig() => $_has(5);
   @$pb.TagNumber(6)
   void clearVideoClassificationConfig() => clearField(6);
   @$pb.TagNumber(6)
-  $4464.VideoClassificationConfig ensureVideoClassificationConfig() => $_ensure(5);
+  $4466.VideoClassificationConfig ensureVideoClassificationConfig() => $_ensure(5);
 
   /// Configuration for video object detection task.
   @$pb.TagNumber(7)
-  $4464.ObjectDetectionConfig get objectDetectionConfig => $_getN(6);
+  $4466.ObjectDetectionConfig get objectDetectionConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set objectDetectionConfig($4464.ObjectDetectionConfig v) { setField(7, v); }
+  set objectDetectionConfig($4466.ObjectDetectionConfig v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasObjectDetectionConfig() => $_has(6);
   @$pb.TagNumber(7)
   void clearObjectDetectionConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $4464.ObjectDetectionConfig ensureObjectDetectionConfig() => $_ensure(6);
+  $4466.ObjectDetectionConfig ensureObjectDetectionConfig() => $_ensure(6);
 
   /// Configuration for video object tracking task.
   @$pb.TagNumber(8)
-  $4464.ObjectTrackingConfig get objectTrackingConfig => $_getN(7);
+  $4466.ObjectTrackingConfig get objectTrackingConfig => $_getN(7);
   @$pb.TagNumber(8)
-  set objectTrackingConfig($4464.ObjectTrackingConfig v) { setField(8, v); }
+  set objectTrackingConfig($4466.ObjectTrackingConfig v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasObjectTrackingConfig() => $_has(7);
   @$pb.TagNumber(8)
   void clearObjectTrackingConfig() => clearField(8);
   @$pb.TagNumber(8)
-  $4464.ObjectTrackingConfig ensureObjectTrackingConfig() => $_ensure(7);
+  $4466.ObjectTrackingConfig ensureObjectTrackingConfig() => $_ensure(7);
 
   /// Configuration for video event labeling task.
   @$pb.TagNumber(9)
-  $4464.EventConfig get eventConfig => $_getN(8);
+  $4466.EventConfig get eventConfig => $_getN(8);
   @$pb.TagNumber(9)
-  set eventConfig($4464.EventConfig v) { setField(9, v); }
+  set eventConfig($4466.EventConfig v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasEventConfig() => $_has(8);
   @$pb.TagNumber(9)
   void clearEventConfig() => clearField(9);
   @$pb.TagNumber(9)
-  $4464.EventConfig ensureEventConfig() => $_ensure(8);
+  $4466.EventConfig ensureEventConfig() => $_ensure(8);
 
   /// Configuration for text classification task.
   @$pb.TagNumber(10)
-  $4464.TextClassificationConfig get textClassificationConfig => $_getN(9);
+  $4466.TextClassificationConfig get textClassificationConfig => $_getN(9);
   @$pb.TagNumber(10)
-  set textClassificationConfig($4464.TextClassificationConfig v) { setField(10, v); }
+  set textClassificationConfig($4466.TextClassificationConfig v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTextClassificationConfig() => $_has(9);
   @$pb.TagNumber(10)
   void clearTextClassificationConfig() => clearField(10);
   @$pb.TagNumber(10)
-  $4464.TextClassificationConfig ensureTextClassificationConfig() => $_ensure(9);
+  $4466.TextClassificationConfig ensureTextClassificationConfig() => $_ensure(9);
 
   /// Configuration for text entity extraction task.
   @$pb.TagNumber(11)
-  $4464.TextEntityExtractionConfig get textEntityExtractionConfig => $_getN(10);
+  $4466.TextEntityExtractionConfig get textEntityExtractionConfig => $_getN(10);
   @$pb.TagNumber(11)
-  set textEntityExtractionConfig($4464.TextEntityExtractionConfig v) { setField(11, v); }
+  set textEntityExtractionConfig($4466.TextEntityExtractionConfig v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTextEntityExtractionConfig() => $_has(10);
   @$pb.TagNumber(11)
   void clearTextEntityExtractionConfig() => clearField(11);
   @$pb.TagNumber(11)
-  $4464.TextEntityExtractionConfig ensureTextEntityExtractionConfig() => $_ensure(10);
+  $4466.TextEntityExtractionConfig ensureTextEntityExtractionConfig() => $_ensure(10);
 }
 
 enum Example_Payload {
@@ -1432,10 +1432,10 @@ enum Example_Payload {
 class Example extends $pb.GeneratedMessage {
   factory Example({
     $core.String? name,
-    $4463.ImagePayload? imagePayload,
-    $core.Iterable<$4465.Annotation>? annotations,
-    $4463.TextPayload? textPayload,
-    $4463.VideoPayload? videoPayload,
+    $4465.ImagePayload? imagePayload,
+    $core.Iterable<$4467.Annotation>? annotations,
+    $4465.TextPayload? textPayload,
+    $4465.VideoPayload? videoPayload,
   }) {
     final $result = create();
     if (name != null) {
@@ -1468,10 +1468,10 @@ class Example extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Example', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4463.ImagePayload>(2, _omitFieldNames ? '' : 'imagePayload', subBuilder: $4463.ImagePayload.create)
-    ..pc<$4465.Annotation>(5, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM, subBuilder: $4465.Annotation.create)
-    ..aOM<$4463.TextPayload>(6, _omitFieldNames ? '' : 'textPayload', subBuilder: $4463.TextPayload.create)
-    ..aOM<$4463.VideoPayload>(7, _omitFieldNames ? '' : 'videoPayload', subBuilder: $4463.VideoPayload.create)
+    ..aOM<$4465.ImagePayload>(2, _omitFieldNames ? '' : 'imagePayload', subBuilder: $4465.ImagePayload.create)
+    ..pc<$4467.Annotation>(5, _omitFieldNames ? '' : 'annotations', $pb.PbFieldType.PM, subBuilder: $4467.Annotation.create)
+    ..aOM<$4465.TextPayload>(6, _omitFieldNames ? '' : 'textPayload', subBuilder: $4465.TextPayload.create)
+    ..aOM<$4465.VideoPayload>(7, _omitFieldNames ? '' : 'videoPayload', subBuilder: $4465.VideoPayload.create)
     ..hasRequiredFields = false
   ;
 
@@ -1513,44 +1513,44 @@ class Example extends $pb.GeneratedMessage {
 
   /// The image payload, a container of the image bytes/uri.
   @$pb.TagNumber(2)
-  $4463.ImagePayload get imagePayload => $_getN(1);
+  $4465.ImagePayload get imagePayload => $_getN(1);
   @$pb.TagNumber(2)
-  set imagePayload($4463.ImagePayload v) { setField(2, v); }
+  set imagePayload($4465.ImagePayload v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasImagePayload() => $_has(1);
   @$pb.TagNumber(2)
   void clearImagePayload() => clearField(2);
   @$pb.TagNumber(2)
-  $4463.ImagePayload ensureImagePayload() => $_ensure(1);
+  $4465.ImagePayload ensureImagePayload() => $_ensure(1);
 
   /// Output only. Annotations for the piece of data in Example.
   /// One piece of data can have multiple annotations.
   @$pb.TagNumber(5)
-  $core.List<$4465.Annotation> get annotations => $_getList(2);
+  $core.List<$4467.Annotation> get annotations => $_getList(2);
 
   /// The text payload, a container of the text content.
   @$pb.TagNumber(6)
-  $4463.TextPayload get textPayload => $_getN(3);
+  $4465.TextPayload get textPayload => $_getN(3);
   @$pb.TagNumber(6)
-  set textPayload($4463.TextPayload v) { setField(6, v); }
+  set textPayload($4465.TextPayload v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTextPayload() => $_has(3);
   @$pb.TagNumber(6)
   void clearTextPayload() => clearField(6);
   @$pb.TagNumber(6)
-  $4463.TextPayload ensureTextPayload() => $_ensure(3);
+  $4465.TextPayload ensureTextPayload() => $_ensure(3);
 
   /// The video payload, a container of the video uri.
   @$pb.TagNumber(7)
-  $4463.VideoPayload get videoPayload => $_getN(4);
+  $4465.VideoPayload get videoPayload => $_getN(4);
   @$pb.TagNumber(7)
-  set videoPayload($4463.VideoPayload v) { setField(7, v); }
+  set videoPayload($4465.VideoPayload v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasVideoPayload() => $_has(4);
   @$pb.TagNumber(7)
   void clearVideoPayload() => clearField(7);
   @$pb.TagNumber(7)
-  $4463.VideoPayload ensureVideoPayload() => $_ensure(4);
+  $4465.VideoPayload ensureVideoPayload() => $_ensure(4);
 }
 
 

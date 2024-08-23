@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'feature_online_store_service.pbenum.dart';
 import 'featurestore_online_service.pb.dart' as $496;
 
@@ -380,7 +380,7 @@ enum FetchFeatureValuesResponse_Format {
 /// [FeatureOnlineStoreService.FetchFeatureValues][google.cloud.aiplatform.v1.FeatureOnlineStoreService.FetchFeatureValues]
 class FetchFeatureValuesResponse extends $pb.GeneratedMessage {
   factory FetchFeatureValuesResponse({
-    $1734.Struct? protoStruct,
+    $1735.Struct? protoStruct,
     FetchFeatureValuesResponse_FeatureNameValuePairList? keyValues,
     FeatureViewDataKey? dataKey,
   }) {
@@ -407,7 +407,7 @@ class FetchFeatureValuesResponse extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchFeatureValuesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'protoStruct', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'protoStruct', subBuilder: $1735.Struct.create)
     ..aOM<FetchFeatureValuesResponse_FeatureNameValuePairList>(3, _omitFieldNames ? '' : 'keyValues', subBuilder: FetchFeatureValuesResponse_FeatureNameValuePairList.create)
     ..aOM<FeatureViewDataKey>(4, _omitFieldNames ? '' : 'dataKey', subBuilder: FeatureViewDataKey.create)
     ..hasRequiredFields = false
@@ -439,15 +439,15 @@ class FetchFeatureValuesResponse extends $pb.GeneratedMessage {
 
   /// Feature values in proto Struct format.
   @$pb.TagNumber(2)
-  $1734.Struct get protoStruct => $_getN(0);
+  $1735.Struct get protoStruct => $_getN(0);
   @$pb.TagNumber(2)
-  set protoStruct($1734.Struct v) { setField(2, v); }
+  set protoStruct($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProtoStruct() => $_has(0);
   @$pb.TagNumber(2)
   void clearProtoStruct() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureProtoStruct() => $_ensure(0);
+  $1735.Struct ensureProtoStruct() => $_ensure(0);
 
   /// Feature values in KeyValue format.
   @$pb.TagNumber(3)

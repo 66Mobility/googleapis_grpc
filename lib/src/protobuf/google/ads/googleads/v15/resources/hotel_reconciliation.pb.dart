@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/hotel_reconciliation_status.pbenum.dart' as $2306;
+import '../enums/hotel_reconciliation_status.pbenum.dart' as $2307;
 
 /// A hotel reconciliation. It contains conversion information from Hotel
 /// bookings to reconcile with advertiser records. These rows may be updated
@@ -30,7 +30,7 @@ class HotelReconciliation extends $pb.GeneratedMessage {
     $core.String? checkOutDate,
     $fixnum.Int64? reconciledValueMicros,
     $core.bool? billed,
-    $2306.HotelReconciliationStatusEnum_HotelReconciliationStatus? status,
+    $2307.HotelReconciliationStatusEnum_HotelReconciliationStatus? status,
     $core.String? campaign,
   }) {
     final $result = create();
@@ -83,7 +83,7 @@ class HotelReconciliation extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'checkOutDate')
     ..aInt64(8, _omitFieldNames ? '' : 'reconciledValueMicros')
     ..aOB(9, _omitFieldNames ? '' : 'billed')
-    ..e<$2306.HotelReconciliationStatusEnum_HotelReconciliationStatus>(10, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2306.HotelReconciliationStatusEnum_HotelReconciliationStatus.UNSPECIFIED, valueOf: $2306.HotelReconciliationStatusEnum_HotelReconciliationStatus.valueOf, enumValues: $2306.HotelReconciliationStatusEnum_HotelReconciliationStatus.values)
+    ..e<$2307.HotelReconciliationStatusEnum_HotelReconciliationStatus>(10, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2307.HotelReconciliationStatusEnum_HotelReconciliationStatus.UNSPECIFIED, valueOf: $2307.HotelReconciliationStatusEnum_HotelReconciliationStatus.valueOf, enumValues: $2307.HotelReconciliationStatusEnum_HotelReconciliationStatus.values)
     ..aOS(11, _omitFieldNames ? '' : 'campaign')
     ..hasRequiredFields = false
   ;
@@ -225,9 +225,9 @@ class HotelReconciliation extends $pb.GeneratedMessage {
   /// after the check-out date. Any booking not reconciled within 45 days will be
   /// billed at its original value.
   @$pb.TagNumber(10)
-  $2306.HotelReconciliationStatusEnum_HotelReconciliationStatus get status => $_getN(9);
+  $2307.HotelReconciliationStatusEnum_HotelReconciliationStatus get status => $_getN(9);
   @$pb.TagNumber(10)
-  set status($2306.HotelReconciliationStatusEnum_HotelReconciliationStatus v) { setField(10, v); }
+  set status($2307.HotelReconciliationStatusEnum_HotelReconciliationStatus v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasStatus() => $_has(9);
   @$pb.TagNumber(10)

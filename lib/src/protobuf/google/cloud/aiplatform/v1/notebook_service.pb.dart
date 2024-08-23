@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'notebook_execution_job.pb.dart' as $537;
 import 'notebook_runtime.pb.dart' as $536;
 import 'notebook_service.pbenum.dart';
-import 'operation.pb.dart' as $4250;
+import 'operation.pb.dart' as $4251;
 
 export 'notebook_service.pbenum.dart';
 
@@ -111,7 +111,7 @@ class CreateNotebookRuntimeTemplateRequest extends $pb.GeneratedMessage {
 /// [NotebookService.CreateNotebookRuntimeTemplate][google.cloud.aiplatform.v1.NotebookService.CreateNotebookRuntimeTemplate].
 class CreateNotebookRuntimeTemplateOperationMetadata extends $pb.GeneratedMessage {
   factory CreateNotebookRuntimeTemplateOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -124,7 +124,7 @@ class CreateNotebookRuntimeTemplateOperationMetadata extends $pb.GeneratedMessag
   factory CreateNotebookRuntimeTemplateOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateNotebookRuntimeTemplateOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -151,15 +151,15 @@ class CreateNotebookRuntimeTemplateOperationMetadata extends $pb.GeneratedMessag
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -225,7 +225,7 @@ class ListNotebookRuntimeTemplatesRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
     $core.String? orderBy,
   }) {
     final $result = create();
@@ -258,7 +258,7 @@ class ListNotebookRuntimeTemplatesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..aOS(6, _omitFieldNames ? '' : 'orderBy')
     ..hasRequiredFields = false
   ;
@@ -353,15 +353,15 @@ class ListNotebookRuntimeTemplatesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Mask specifying which fields to read.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 
   ///  Optional. A comma-separated list of fields to order by, sorted in ascending
   ///  order. Use "desc" after a field name for descending. Supported fields:
@@ -506,7 +506,7 @@ class DeleteNotebookRuntimeTemplateRequest extends $pb.GeneratedMessage {
 class UpdateNotebookRuntimeTemplateRequest extends $pb.GeneratedMessage {
   factory UpdateNotebookRuntimeTemplateRequest({
     $536.NotebookRuntimeTemplate? notebookRuntimeTemplate,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (notebookRuntimeTemplate != null) {
@@ -523,7 +523,7 @@ class UpdateNotebookRuntimeTemplateRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNotebookRuntimeTemplateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$536.NotebookRuntimeTemplate>(1, _omitFieldNames ? '' : 'notebookRuntimeTemplate', subBuilder: $536.NotebookRuntimeTemplate.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -567,15 +567,15 @@ class UpdateNotebookRuntimeTemplateRequest extends $pb.GeneratedMessage {
   ///
   ///    * `encryption_spec.kms_key_name`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -685,7 +685,7 @@ class AssignNotebookRuntimeRequest extends $pb.GeneratedMessage {
 /// [NotebookService.AssignNotebookRuntime][google.cloud.aiplatform.v1.NotebookService.AssignNotebookRuntime].
 class AssignNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
   factory AssignNotebookRuntimeOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $core.String? progressMessage,
   }) {
     final $result = create();
@@ -702,7 +702,7 @@ class AssignNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
   factory AssignNotebookRuntimeOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssignNotebookRuntimeOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'progressMessage')
     ..hasRequiredFields = false
   ;
@@ -730,15 +730,15 @@ class AssignNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// A human-readable message that shows the intermediate progress details of
   /// NotebookRuntime.
@@ -816,7 +816,7 @@ class ListNotebookRuntimesRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
     $core.String? orderBy,
   }) {
     final $result = create();
@@ -849,7 +849,7 @@ class ListNotebookRuntimesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..aOS(6, _omitFieldNames ? '' : 'orderBy')
     ..hasRequiredFields = false
   ;
@@ -958,15 +958,15 @@ class ListNotebookRuntimesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Mask specifying which fields to read.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 
   ///  Optional. A comma-separated list of fields to order by, sorted in ascending
   ///  order. Use "desc" after a field name for descending. Supported fields:
@@ -1167,7 +1167,7 @@ class UpgradeNotebookRuntimeRequest extends $pb.GeneratedMessage {
 /// [NotebookService.UpgradeNotebookRuntime][google.cloud.aiplatform.v1.NotebookService.UpgradeNotebookRuntime].
 class UpgradeNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
   factory UpgradeNotebookRuntimeOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $core.String? progressMessage,
   }) {
     final $result = create();
@@ -1184,7 +1184,7 @@ class UpgradeNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
   factory UpgradeNotebookRuntimeOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpgradeNotebookRuntimeOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'progressMessage')
     ..hasRequiredFields = false
   ;
@@ -1212,15 +1212,15 @@ class UpgradeNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// A human-readable message that shows the intermediate progress details of
   /// NotebookRuntime.
@@ -1328,7 +1328,7 @@ class StartNotebookRuntimeRequest extends $pb.GeneratedMessage {
 /// [NotebookService.StartNotebookRuntime][google.cloud.aiplatform.v1.NotebookService.StartNotebookRuntime].
 class StartNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
   factory StartNotebookRuntimeOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $core.String? progressMessage,
   }) {
     final $result = create();
@@ -1345,7 +1345,7 @@ class StartNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
   factory StartNotebookRuntimeOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartNotebookRuntimeOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'progressMessage')
     ..hasRequiredFields = false
   ;
@@ -1373,15 +1373,15 @@ class StartNotebookRuntimeOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// A human-readable message that shows the intermediate progress details of
   /// NotebookRuntime.
@@ -1518,7 +1518,7 @@ class CreateNotebookExecutionJobRequest extends $pb.GeneratedMessage {
 /// [NotebookService.CreateNotebookExecutionJob][google.cloud.aiplatform.v1.NotebookService.CreateNotebookExecutionJob].
 class CreateNotebookExecutionJobOperationMetadata extends $pb.GeneratedMessage {
   factory CreateNotebookExecutionJobOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $core.String? progressMessage,
   }) {
     final $result = create();
@@ -1535,7 +1535,7 @@ class CreateNotebookExecutionJobOperationMetadata extends $pb.GeneratedMessage {
   factory CreateNotebookExecutionJobOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateNotebookExecutionJobOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'progressMessage')
     ..hasRequiredFields = false
   ;
@@ -1563,15 +1563,15 @@ class CreateNotebookExecutionJobOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// A human-readable message that shows the intermediate progress details of
   /// NotebookRuntime.

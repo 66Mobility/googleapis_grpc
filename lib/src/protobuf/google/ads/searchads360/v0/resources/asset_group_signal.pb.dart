@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3982;
+import '../common/criteria.pb.dart' as $3983;
 
 enum AssetGroupSignal_Signal {
   audience, 
@@ -28,7 +28,7 @@ class AssetGroupSignal extends $pb.GeneratedMessage {
   factory AssetGroupSignal({
     $core.String? resourceName,
     $core.String? assetGroup,
-    $3982.AudienceInfo? audience,
+    $3983.AudienceInfo? audience,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -54,7 +54,7 @@ class AssetGroupSignal extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'assetGroup')
-    ..aOM<$3982.AudienceInfo>(4, _omitFieldNames ? '' : 'audience', subBuilder: $3982.AudienceInfo.create)
+    ..aOM<$3983.AudienceInfo>(4, _omitFieldNames ? '' : 'audience', subBuilder: $3983.AudienceInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -108,15 +108,15 @@ class AssetGroupSignal extends $pb.GeneratedMessage {
   /// Immutable. The audience signal to be used by the performance max
   /// campaign.
   @$pb.TagNumber(4)
-  $3982.AudienceInfo get audience => $_getN(2);
+  $3983.AudienceInfo get audience => $_getN(2);
   @$pb.TagNumber(4)
-  set audience($3982.AudienceInfo v) { setField(4, v); }
+  set audience($3983.AudienceInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAudience() => $_has(2);
   @$pb.TagNumber(4)
   void clearAudience() => clearField(4);
   @$pb.TagNumber(4)
-  $3982.AudienceInfo ensureAudience() => $_ensure(2);
+  $3983.AudienceInfo ensureAudience() => $_ensure(2);
 }
 
 

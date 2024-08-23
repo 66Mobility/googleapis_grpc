@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'execution.pb.dart' as $1164;
 import 'schedule.pbenum.dart';
 
@@ -28,8 +28,8 @@ class Schedule extends $pb.GeneratedMessage {
     Schedule_State? state,
     $core.String? cronSchedule,
     $core.String? timeZone,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $1164.ExecutionTemplate? executionTemplate,
     $core.Iterable<$1164.Execution>? recentExecutions,
   }) {
@@ -77,8 +77,8 @@ class Schedule extends $pb.GeneratedMessage {
     ..e<Schedule_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Schedule_State.STATE_UNSPECIFIED, valueOf: Schedule_State.valueOf, enumValues: Schedule_State.values)
     ..aOS(5, _omitFieldNames ? '' : 'cronSchedule')
     ..aOS(6, _omitFieldNames ? '' : 'timeZone')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$1164.ExecutionTemplate>(9, _omitFieldNames ? '' : 'executionTemplate', subBuilder: $1164.ExecutionTemplate.create)
     ..pc<$1164.Execution>(10, _omitFieldNames ? '' : 'recentExecutions', $pb.PbFieldType.PM, subBuilder: $1164.Execution.create)
     ..hasRequiredFields = false
@@ -179,27 +179,27 @@ class Schedule extends $pb.GeneratedMessage {
 
   /// Output only. Time the schedule was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Time the schedule was last updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Notebook Execution Template corresponding to this schedule.
   @$pb.TagNumber(9)

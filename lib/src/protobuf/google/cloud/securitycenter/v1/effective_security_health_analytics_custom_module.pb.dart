@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'effective_security_health_analytics_custom_module.pbenum.dart';
-import 'security_health_analytics_custom_config.pb.dart' as $4615;
+import 'security_health_analytics_custom_config.pb.dart' as $4617;
 
 export 'effective_security_health_analytics_custom_module.pbenum.dart';
 
@@ -30,7 +30,7 @@ export 'effective_security_health_analytics_custom_module.pbenum.dart';
 class EffectiveSecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
   factory EffectiveSecurityHealthAnalyticsCustomModule({
     $core.String? name,
-    $4615.CustomConfig? customConfig,
+    $4617.CustomConfig? customConfig,
     EffectiveSecurityHealthAnalyticsCustomModule_EnablementState? enablementState,
     $core.String? displayName,
   }) {
@@ -55,7 +55,7 @@ class EffectiveSecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage 
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EffectiveSecurityHealthAnalyticsCustomModule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4615.CustomConfig>(2, _omitFieldNames ? '' : 'customConfig', subBuilder: $4615.CustomConfig.create)
+    ..aOM<$4617.CustomConfig>(2, _omitFieldNames ? '' : 'customConfig', subBuilder: $4617.CustomConfig.create)
     ..e<EffectiveSecurityHealthAnalyticsCustomModule_EnablementState>(3, _omitFieldNames ? '' : 'enablementState', $pb.PbFieldType.OE, defaultOrMaker: EffectiveSecurityHealthAnalyticsCustomModule_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: EffectiveSecurityHealthAnalyticsCustomModule_EnablementState.valueOf, enumValues: EffectiveSecurityHealthAnalyticsCustomModule_EnablementState.values)
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
@@ -100,15 +100,15 @@ class EffectiveSecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage 
 
   /// Output only. The user-specified configuration for the module.
   @$pb.TagNumber(2)
-  $4615.CustomConfig get customConfig => $_getN(1);
+  $4617.CustomConfig get customConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set customConfig($4615.CustomConfig v) { setField(2, v); }
+  set customConfig($4617.CustomConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4615.CustomConfig ensureCustomConfig() => $_ensure(1);
+  $4617.CustomConfig ensureCustomConfig() => $_ensure(1);
 
   /// Output only. The effective state of enablement for the module at the given
   /// level of the hierarchy.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4499;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4501;
 
 /// Matcher for search request query
 class Condition_QueryTerm extends $pb.GeneratedMessage {
@@ -91,8 +91,8 @@ class Condition_QueryTerm extends $pb.GeneratedMessage {
 /// Used for time-dependent conditions.
 class Condition_TimeRange extends $pb.GeneratedMessage {
   factory Condition_TimeRange({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -108,8 +108,8 @@ class Condition_TimeRange extends $pb.GeneratedMessage {
   factory Condition_TimeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Condition.TimeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -138,30 +138,30 @@ class Condition_TimeRange extends $pb.GeneratedMessage {
   ///
   ///  Range is inclusive.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   ///  End of time range.
   ///
   ///  Range is inclusive.
   ///  Must be in the future.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Defines circumstances to be checked before allowing a behavior
@@ -515,11 +515,11 @@ class Control extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.Iterable<$core.String>? associatedServingConfigIds,
-    $4499.SolutionType? solutionType,
+    $4501.SolutionType? solutionType,
     $core.Iterable<Condition>? conditions,
     Control_BoostAction? boostAction,
     Control_FilterAction? filterAction,
-    $core.Iterable<$4499.SearchUseCase>? useCases,
+    $core.Iterable<$4501.SearchUseCase>? useCases,
     Control_RedirectAction? redirectAction,
     Control_SynonymsAction? synonymsAction,
   }) {
@@ -572,11 +572,11 @@ class Control extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..pPS(3, _omitFieldNames ? '' : 'associatedServingConfigIds')
-    ..e<$4499.SolutionType>(4, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4499.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4499.SolutionType.valueOf, enumValues: $4499.SolutionType.values)
+    ..e<$4501.SolutionType>(4, _omitFieldNames ? '' : 'solutionType', $pb.PbFieldType.OE, defaultOrMaker: $4501.SolutionType.SOLUTION_TYPE_UNSPECIFIED, valueOf: $4501.SolutionType.valueOf, enumValues: $4501.SolutionType.values)
     ..pc<Condition>(5, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: Condition.create)
     ..aOM<Control_BoostAction>(6, _omitFieldNames ? '' : 'boostAction', subBuilder: Control_BoostAction.create)
     ..aOM<Control_FilterAction>(7, _omitFieldNames ? '' : 'filterAction', subBuilder: Control_FilterAction.create)
-    ..pc<$4499.SearchUseCase>(8, _omitFieldNames ? '' : 'useCases', $pb.PbFieldType.KE, valueOf: $4499.SearchUseCase.valueOf, enumValues: $4499.SearchUseCase.values, defaultEnumValue: $4499.SearchUseCase.SEARCH_USE_CASE_UNSPECIFIED)
+    ..pc<$4501.SearchUseCase>(8, _omitFieldNames ? '' : 'useCases', $pb.PbFieldType.KE, valueOf: $4501.SearchUseCase.valueOf, enumValues: $4501.SearchUseCase.values, defaultEnumValue: $4501.SearchUseCase.SEARCH_USE_CASE_UNSPECIFIED)
     ..aOM<Control_RedirectAction>(9, _omitFieldNames ? '' : 'redirectAction', subBuilder: Control_RedirectAction.create)
     ..aOM<Control_SynonymsAction>(10, _omitFieldNames ? '' : 'synonymsAction', subBuilder: Control_SynonymsAction.create)
     ..hasRequiredFields = false
@@ -640,9 +640,9 @@ class Control extends $pb.GeneratedMessage {
   ///  Must be compatible with vertical of resource.
   ///  Otherwise an INVALID ARGUMENT error is thrown.
   @$pb.TagNumber(4)
-  $4499.SolutionType get solutionType => $_getN(3);
+  $4501.SolutionType get solutionType => $_getN(3);
   @$pb.TagNumber(4)
-  set solutionType($4499.SolutionType v) { setField(4, v); }
+  set solutionType($4501.SolutionType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSolutionType() => $_has(3);
   @$pb.TagNumber(4)
@@ -689,7 +689,7 @@ class Control extends $pb.GeneratedMessage {
   /// Must be set when solution_type is
   /// [SolutionType.SOLUTION_TYPE_SEARCH][google.cloud.discoveryengine.v1.SolutionType.SOLUTION_TYPE_SEARCH].
   @$pb.TagNumber(8)
-  $core.List<$4499.SearchUseCase> get useCases => $_getList(7);
+  $core.List<$4501.SearchUseCase> get useCases => $_getList(7);
 
   /// Defines a redirect-type control.
   @$pb.TagNumber(9)

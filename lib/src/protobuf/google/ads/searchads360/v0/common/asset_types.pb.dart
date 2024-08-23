@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/call_conversion_reporting_state.pbenum.dart' as $3985;
-import '../enums/call_to_action_type.pbenum.dart' as $3986;
-import '../enums/location_ownership_type.pbenum.dart' as $3987;
-import '../enums/mime_type.pbenum.dart' as $3983;
-import '../enums/mobile_app_vendor.pbenum.dart' as $3984;
-import 'criteria.pb.dart' as $3982;
+import '../enums/call_conversion_reporting_state.pbenum.dart' as $3986;
+import '../enums/call_to_action_type.pbenum.dart' as $3987;
+import '../enums/location_ownership_type.pbenum.dart' as $3988;
+import '../enums/mime_type.pbenum.dart' as $3984;
+import '../enums/mobile_app_vendor.pbenum.dart' as $3985;
+import 'criteria.pb.dart' as $3983;
 
 /// A YouTube asset.
 class YoutubeVideoAsset extends $pb.GeneratedMessage {
@@ -92,7 +92,7 @@ class YoutubeVideoAsset extends $pb.GeneratedMessage {
 /// An Image asset.
 class ImageAsset extends $pb.GeneratedMessage {
   factory ImageAsset({
-    $3983.MimeTypeEnum_MimeType? mimeType,
+    $3984.MimeTypeEnum_MimeType? mimeType,
     ImageDimension? fullSize,
     $fixnum.Int64? fileSize,
   }) {
@@ -113,7 +113,7 @@ class ImageAsset extends $pb.GeneratedMessage {
   factory ImageAsset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3983.MimeTypeEnum_MimeType>(3, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $3983.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $3983.MimeTypeEnum_MimeType.valueOf, enumValues: $3983.MimeTypeEnum_MimeType.values)
+    ..e<$3984.MimeTypeEnum_MimeType>(3, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $3984.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $3984.MimeTypeEnum_MimeType.valueOf, enumValues: $3984.MimeTypeEnum_MimeType.values)
     ..aOM<ImageDimension>(4, _omitFieldNames ? '' : 'fullSize', subBuilder: ImageDimension.create)
     ..aInt64(6, _omitFieldNames ? '' : 'fileSize')
     ..hasRequiredFields = false
@@ -142,9 +142,9 @@ class ImageAsset extends $pb.GeneratedMessage {
 
   /// MIME type of the image asset.
   @$pb.TagNumber(3)
-  $3983.MimeTypeEnum_MimeType get mimeType => $_getN(0);
+  $3984.MimeTypeEnum_MimeType get mimeType => $_getN(0);
   @$pb.TagNumber(3)
-  set mimeType($3983.MimeTypeEnum_MimeType v) { setField(3, v); }
+  set mimeType($3984.MimeTypeEnum_MimeType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMimeType() => $_has(0);
   @$pb.TagNumber(3)
@@ -313,7 +313,7 @@ class UnifiedCalloutAsset extends $pb.GeneratedMessage {
     $core.String? calloutText,
     $core.String? startDate,
     $core.String? endDate,
-    $core.Iterable<$3982.AdScheduleInfo>? adScheduleTargets,
+    $core.Iterable<$3983.AdScheduleInfo>? adScheduleTargets,
     $core.bool? useSearcherTimeZone,
   }) {
     final $result = create();
@@ -342,7 +342,7 @@ class UnifiedCalloutAsset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'calloutText')
     ..aOS(2, _omitFieldNames ? '' : 'startDate')
     ..aOS(3, _omitFieldNames ? '' : 'endDate')
-    ..pc<$3982.AdScheduleInfo>(4, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3982.AdScheduleInfo.create)
+    ..pc<$3983.AdScheduleInfo>(4, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3983.AdScheduleInfo.create)
     ..aOB(5, _omitFieldNames ? '' : 'useSearcherTimeZone')
     ..hasRequiredFields = false
   ;
@@ -405,7 +405,7 @@ class UnifiedCalloutAsset extends $pb.GeneratedMessage {
   /// the asset may serve. There can be a maximum of 6 schedules per day, 42 in
   /// total.
   @$pb.TagNumber(4)
-  $core.List<$3982.AdScheduleInfo> get adScheduleTargets => $_getList(3);
+  $core.List<$3983.AdScheduleInfo> get adScheduleTargets => $_getList(3);
 
   /// Whether to show the asset in search user's time zone. Applies to Microsoft
   /// Ads.
@@ -427,7 +427,7 @@ class UnifiedSitelinkAsset extends $pb.GeneratedMessage {
     $core.String? description2,
     $core.String? startDate,
     $core.String? endDate,
-    $core.Iterable<$3982.AdScheduleInfo>? adScheduleTargets,
+    $core.Iterable<$3983.AdScheduleInfo>? adScheduleTargets,
     $fixnum.Int64? trackingId,
     $core.bool? useSearcherTimeZone,
     $core.bool? mobilePreferred,
@@ -472,7 +472,7 @@ class UnifiedSitelinkAsset extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description2')
     ..aOS(4, _omitFieldNames ? '' : 'startDate')
     ..aOS(5, _omitFieldNames ? '' : 'endDate')
-    ..pc<$3982.AdScheduleInfo>(6, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3982.AdScheduleInfo.create)
+    ..pc<$3983.AdScheduleInfo>(6, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3983.AdScheduleInfo.create)
     ..aInt64(7, _omitFieldNames ? '' : 'trackingId')
     ..aOB(8, _omitFieldNames ? '' : 'useSearcherTimeZone')
     ..aOB(9, _omitFieldNames ? '' : 'mobilePreferred')
@@ -561,7 +561,7 @@ class UnifiedSitelinkAsset extends $pb.GeneratedMessage {
   /// the asset may serve. There can be a maximum of 6 schedules per day, 42 in
   /// total.
   @$pb.TagNumber(6)
-  $core.List<$3982.AdScheduleInfo> get adScheduleTargets => $_getList(5);
+  $core.List<$3983.AdScheduleInfo> get adScheduleTargets => $_getList(5);
 
   /// ID used for tracking clicks for the sitelink asset. This is a Yahoo! Japan
   /// only field.
@@ -662,7 +662,7 @@ class UnifiedPageFeedAsset extends $pb.GeneratedMessage {
 class MobileAppAsset extends $pb.GeneratedMessage {
   factory MobileAppAsset({
     $core.String? appId,
-    $3984.MobileAppVendorEnum_MobileAppVendor? appStore,
+    $3985.MobileAppVendorEnum_MobileAppVendor? appStore,
   }) {
     final $result = create();
     if (appId != null) {
@@ -679,7 +679,7 @@ class MobileAppAsset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MobileAppAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appId')
-    ..e<$3984.MobileAppVendorEnum_MobileAppVendor>(2, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $3984.MobileAppVendorEnum_MobileAppVendor.UNSPECIFIED, valueOf: $3984.MobileAppVendorEnum_MobileAppVendor.valueOf, enumValues: $3984.MobileAppVendorEnum_MobileAppVendor.values)
+    ..e<$3985.MobileAppVendorEnum_MobileAppVendor>(2, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $3985.MobileAppVendorEnum_MobileAppVendor.UNSPECIFIED, valueOf: $3985.MobileAppVendorEnum_MobileAppVendor.valueOf, enumValues: $3985.MobileAppVendorEnum_MobileAppVendor.values)
     ..hasRequiredFields = false
   ;
 
@@ -718,9 +718,9 @@ class MobileAppAsset extends $pb.GeneratedMessage {
 
   /// Required. The application store that distributes this specific app.
   @$pb.TagNumber(2)
-  $3984.MobileAppVendorEnum_MobileAppVendor get appStore => $_getN(1);
+  $3985.MobileAppVendorEnum_MobileAppVendor get appStore => $_getN(1);
   @$pb.TagNumber(2)
-  set appStore($3984.MobileAppVendorEnum_MobileAppVendor v) { setField(2, v); }
+  set appStore($3985.MobileAppVendorEnum_MobileAppVendor v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAppStore() => $_has(1);
   @$pb.TagNumber(2)
@@ -732,9 +732,9 @@ class UnifiedCallAsset extends $pb.GeneratedMessage {
   factory UnifiedCallAsset({
     $core.String? countryCode,
     $core.String? phoneNumber,
-    $3985.CallConversionReportingStateEnum_CallConversionReportingState? callConversionReportingState,
+    $3986.CallConversionReportingStateEnum_CallConversionReportingState? callConversionReportingState,
     $core.String? callConversionAction,
-    $core.Iterable<$3982.AdScheduleInfo>? adScheduleTargets,
+    $core.Iterable<$3983.AdScheduleInfo>? adScheduleTargets,
     $core.bool? callOnly,
     $core.bool? callTrackingEnabled,
     $core.bool? useSearcherTimeZone,
@@ -781,9 +781,9 @@ class UnifiedCallAsset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UnifiedCallAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'countryCode')
     ..aOS(2, _omitFieldNames ? '' : 'phoneNumber')
-    ..e<$3985.CallConversionReportingStateEnum_CallConversionReportingState>(3, _omitFieldNames ? '' : 'callConversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $3985.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $3985.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $3985.CallConversionReportingStateEnum_CallConversionReportingState.values)
+    ..e<$3986.CallConversionReportingStateEnum_CallConversionReportingState>(3, _omitFieldNames ? '' : 'callConversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $3986.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $3986.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $3986.CallConversionReportingStateEnum_CallConversionReportingState.values)
     ..aOS(4, _omitFieldNames ? '' : 'callConversionAction')
-    ..pc<$3982.AdScheduleInfo>(5, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3982.AdScheduleInfo.create)
+    ..pc<$3983.AdScheduleInfo>(5, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3983.AdScheduleInfo.create)
     ..aOB(7, _omitFieldNames ? '' : 'callOnly')
     ..aOB(8, _omitFieldNames ? '' : 'callTrackingEnabled')
     ..aOB(9, _omitFieldNames ? '' : 'useSearcherTimeZone')
@@ -837,9 +837,9 @@ class UnifiedCallAsset extends $pb.GeneratedMessage {
   /// conversion setting, follow the account level setting, or disable call
   /// conversion.
   @$pb.TagNumber(3)
-  $3985.CallConversionReportingStateEnum_CallConversionReportingState get callConversionReportingState => $_getN(2);
+  $3986.CallConversionReportingStateEnum_CallConversionReportingState get callConversionReportingState => $_getN(2);
   @$pb.TagNumber(3)
-  set callConversionReportingState($3985.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(3, v); }
+  set callConversionReportingState($3986.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCallConversionReportingState() => $_has(2);
   @$pb.TagNumber(3)
@@ -862,7 +862,7 @@ class UnifiedCallAsset extends $pb.GeneratedMessage {
   /// the asset may serve. There can be a maximum of 6 schedules per day, 42 in
   /// total.
   @$pb.TagNumber(5)
-  $core.List<$3982.AdScheduleInfo> get adScheduleTargets => $_getList(4);
+  $core.List<$3983.AdScheduleInfo> get adScheduleTargets => $_getList(4);
 
   /// Whether the call only shows the phone number without a link to the website.
   /// Applies to Microsoft Ads.
@@ -923,7 +923,7 @@ class UnifiedCallAsset extends $pb.GeneratedMessage {
 /// A call to action asset.
 class CallToActionAsset extends $pb.GeneratedMessage {
   factory CallToActionAsset({
-    $3986.CallToActionTypeEnum_CallToActionType? callToAction,
+    $3987.CallToActionTypeEnum_CallToActionType? callToAction,
   }) {
     final $result = create();
     if (callToAction != null) {
@@ -936,7 +936,7 @@ class CallToActionAsset extends $pb.GeneratedMessage {
   factory CallToActionAsset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CallToActionAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3986.CallToActionTypeEnum_CallToActionType>(1, _omitFieldNames ? '' : 'callToAction', $pb.PbFieldType.OE, defaultOrMaker: $3986.CallToActionTypeEnum_CallToActionType.UNSPECIFIED, valueOf: $3986.CallToActionTypeEnum_CallToActionType.valueOf, enumValues: $3986.CallToActionTypeEnum_CallToActionType.values)
+    ..e<$3987.CallToActionTypeEnum_CallToActionType>(1, _omitFieldNames ? '' : 'callToAction', $pb.PbFieldType.OE, defaultOrMaker: $3987.CallToActionTypeEnum_CallToActionType.UNSPECIFIED, valueOf: $3987.CallToActionTypeEnum_CallToActionType.valueOf, enumValues: $3987.CallToActionTypeEnum_CallToActionType.values)
     ..hasRequiredFields = false
   ;
 
@@ -963,9 +963,9 @@ class CallToActionAsset extends $pb.GeneratedMessage {
 
   /// Call to action.
   @$pb.TagNumber(1)
-  $3986.CallToActionTypeEnum_CallToActionType get callToAction => $_getN(0);
+  $3987.CallToActionTypeEnum_CallToActionType get callToAction => $_getN(0);
   @$pb.TagNumber(1)
-  set callToAction($3986.CallToActionTypeEnum_CallToActionType v) { setField(1, v); }
+  set callToAction($3987.CallToActionTypeEnum_CallToActionType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCallToAction() => $_has(0);
   @$pb.TagNumber(1)
@@ -977,7 +977,7 @@ class UnifiedLocationAsset extends $pb.GeneratedMessage {
   factory UnifiedLocationAsset({
     $core.String? placeId,
     $core.Iterable<BusinessProfileLocation>? businessProfileLocations,
-    $3987.LocationOwnershipTypeEnum_LocationOwnershipType? locationOwnershipType,
+    $3988.LocationOwnershipTypeEnum_LocationOwnershipType? locationOwnershipType,
   }) {
     final $result = create();
     if (placeId != null) {
@@ -998,7 +998,7 @@ class UnifiedLocationAsset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UnifiedLocationAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'placeId')
     ..pc<BusinessProfileLocation>(2, _omitFieldNames ? '' : 'businessProfileLocations', $pb.PbFieldType.PM, subBuilder: BusinessProfileLocation.create)
-    ..e<$3987.LocationOwnershipTypeEnum_LocationOwnershipType>(3, _omitFieldNames ? '' : 'locationOwnershipType', $pb.PbFieldType.OE, defaultOrMaker: $3987.LocationOwnershipTypeEnum_LocationOwnershipType.UNSPECIFIED, valueOf: $3987.LocationOwnershipTypeEnum_LocationOwnershipType.valueOf, enumValues: $3987.LocationOwnershipTypeEnum_LocationOwnershipType.values)
+    ..e<$3988.LocationOwnershipTypeEnum_LocationOwnershipType>(3, _omitFieldNames ? '' : 'locationOwnershipType', $pb.PbFieldType.OE, defaultOrMaker: $3988.LocationOwnershipTypeEnum_LocationOwnershipType.UNSPECIFIED, valueOf: $3988.LocationOwnershipTypeEnum_LocationOwnershipType.valueOf, enumValues: $3988.LocationOwnershipTypeEnum_LocationOwnershipType.values)
     ..hasRequiredFields = false
   ;
 
@@ -1048,9 +1048,9 @@ class UnifiedLocationAsset extends $pb.GeneratedMessage {
   /// If the type is BUSINESS_OWNER, it will be served as a location extension.
   /// If the type is AFFILIATE, it will be served as an affiliate location.
   @$pb.TagNumber(3)
-  $3987.LocationOwnershipTypeEnum_LocationOwnershipType get locationOwnershipType => $_getN(2);
+  $3988.LocationOwnershipTypeEnum_LocationOwnershipType get locationOwnershipType => $_getN(2);
   @$pb.TagNumber(3)
-  set locationOwnershipType($3987.LocationOwnershipTypeEnum_LocationOwnershipType v) { setField(3, v); }
+  set locationOwnershipType($3988.LocationOwnershipTypeEnum_LocationOwnershipType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLocationOwnershipType() => $_has(2);
   @$pb.TagNumber(3)

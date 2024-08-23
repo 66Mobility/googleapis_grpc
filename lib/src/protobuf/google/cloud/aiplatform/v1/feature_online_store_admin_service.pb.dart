@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'feature_online_store.pb.dart' as $493;
 import 'feature_view.pb.dart' as $494;
 import 'feature_view_sync.pb.dart' as $495;
-import 'operation.pb.dart' as $4250;
+import 'operation.pb.dart' as $4251;
 
 /// Request message for
 /// [FeatureOnlineStoreAdminService.CreateFeatureOnlineStore][google.cloud.aiplatform.v1.FeatureOnlineStoreAdminService.CreateFeatureOnlineStore].
@@ -380,7 +380,7 @@ class ListFeatureOnlineStoresResponse extends $pb.GeneratedMessage {
 class UpdateFeatureOnlineStoreRequest extends $pb.GeneratedMessage {
   factory UpdateFeatureOnlineStoreRequest({
     $493.FeatureOnlineStore? featureOnlineStore,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (featureOnlineStore != null) {
@@ -397,7 +397,7 @@ class UpdateFeatureOnlineStoreRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeatureOnlineStoreRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$493.FeatureOnlineStore>(1, _omitFieldNames ? '' : 'featureOnlineStore', subBuilder: $493.FeatureOnlineStore.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -452,15 +452,15 @@ class UpdateFeatureOnlineStoreRequest extends $pb.GeneratedMessage {
   ///    * `bigtable.auto_scaling`
   ///    * `bigtable.enable_multi_region_replica`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -919,7 +919,7 @@ class ListFeatureViewsResponse extends $pb.GeneratedMessage {
 class UpdateFeatureViewRequest extends $pb.GeneratedMessage {
   factory UpdateFeatureViewRequest({
     $494.FeatureView? featureView,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (featureView != null) {
@@ -936,7 +936,7 @@ class UpdateFeatureViewRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeatureViewRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$494.FeatureView>(1, _omitFieldNames ? '' : 'featureView', subBuilder: $494.FeatureView.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -995,15 +995,15 @@ class UpdateFeatureViewRequest extends $pb.GeneratedMessage {
   ///    * `sync_config`
   ///    * `sync_config.cron`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for [FeatureOnlineStoreAdminService.DeleteFeatureViews][].
@@ -1063,7 +1063,7 @@ class DeleteFeatureViewRequest extends $pb.GeneratedMessage {
 /// Details of operations that perform create FeatureOnlineStore.
 class CreateFeatureOnlineStoreOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeatureOnlineStoreOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -1076,7 +1076,7 @@ class CreateFeatureOnlineStoreOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeatureOnlineStoreOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateFeatureOnlineStoreOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1103,21 +1103,21 @@ class CreateFeatureOnlineStoreOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for FeatureOnlineStore.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform update FeatureOnlineStore.
 class UpdateFeatureOnlineStoreOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateFeatureOnlineStoreOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -1130,7 +1130,7 @@ class UpdateFeatureOnlineStoreOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateFeatureOnlineStoreOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeatureOnlineStoreOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1157,21 +1157,21 @@ class UpdateFeatureOnlineStoreOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for FeatureOnlineStore.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform create FeatureView.
 class CreateFeatureViewOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeatureViewOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -1184,7 +1184,7 @@ class CreateFeatureViewOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeatureViewOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateFeatureViewOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1211,21 +1211,21 @@ class CreateFeatureViewOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for FeatureView Create.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform update FeatureView.
 class UpdateFeatureViewOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateFeatureViewOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -1238,7 +1238,7 @@ class UpdateFeatureViewOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateFeatureViewOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeatureViewOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1265,15 +1265,15 @@ class UpdateFeatureViewOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for FeatureView Update.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/feed_item_set_string_filter_type.pbenum.dart' as $3310;
+import '../enums/feed_item_set_string_filter_type.pbenum.dart' as $3311;
 
 /// Represents a filter on locations in a feed item set.
 /// Only applicable if the parent Feed of the FeedItemSet is a LOCATION feed.
@@ -85,7 +85,7 @@ class DynamicLocationSetFilter extends $pb.GeneratedMessage {
 class BusinessNameFilter extends $pb.GeneratedMessage {
   factory BusinessNameFilter({
     $core.String? businessName,
-    $3310.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType? filterType,
+    $3311.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType? filterType,
   }) {
     final $result = create();
     if (businessName != null) {
@@ -102,7 +102,7 @@ class BusinessNameFilter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BusinessNameFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'businessName')
-    ..e<$3310.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType>(2, _omitFieldNames ? '' : 'filterType', $pb.PbFieldType.OE, defaultOrMaker: $3310.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType.UNSPECIFIED, valueOf: $3310.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType.valueOf, enumValues: $3310.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType.values)
+    ..e<$3311.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType>(2, _omitFieldNames ? '' : 'filterType', $pb.PbFieldType.OE, defaultOrMaker: $3311.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType.UNSPECIFIED, valueOf: $3311.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType.valueOf, enumValues: $3311.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType.values)
     ..hasRequiredFields = false
   ;
 
@@ -139,9 +139,9 @@ class BusinessNameFilter extends $pb.GeneratedMessage {
 
   /// The type of string matching to use when filtering with business_name.
   @$pb.TagNumber(2)
-  $3310.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType get filterType => $_getN(1);
+  $3311.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType get filterType => $_getN(1);
   @$pb.TagNumber(2)
-  set filterType($3310.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType v) { setField(2, v); }
+  set filterType($3311.FeedItemSetStringFilterTypeEnum_FeedItemSetStringFilterType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFilterType() => $_has(1);
   @$pb.TagNumber(2)

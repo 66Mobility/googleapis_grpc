@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'resources.pb.dart' as $1099;
 import 'resources.pbenum.dart' as $1099;
 
@@ -1726,7 +1726,7 @@ class CreateImportJobRequest extends $pb.GeneratedMessage {
 class UpdateCryptoKeyRequest extends $pb.GeneratedMessage {
   factory UpdateCryptoKeyRequest({
     $1099.CryptoKey? cryptoKey,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (cryptoKey != null) {
@@ -1743,7 +1743,7 @@ class UpdateCryptoKeyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCryptoKeyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOM<$1099.CryptoKey>(1, _omitFieldNames ? '' : 'cryptoKey', subBuilder: $1099.CryptoKey.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1782,15 +1782,15 @@ class UpdateCryptoKeyRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -1798,7 +1798,7 @@ class UpdateCryptoKeyRequest extends $pb.GeneratedMessage {
 class UpdateCryptoKeyVersionRequest extends $pb.GeneratedMessage {
   factory UpdateCryptoKeyVersionRequest({
     $1099.CryptoKeyVersion? cryptoKeyVersion,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (cryptoKeyVersion != null) {
@@ -1815,7 +1815,7 @@ class UpdateCryptoKeyVersionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCryptoKeyVersionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOM<$1099.CryptoKeyVersion>(1, _omitFieldNames ? '' : 'cryptoKeyVersion', subBuilder: $1099.CryptoKeyVersion.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1855,15 +1855,15 @@ class UpdateCryptoKeyVersionRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -2051,8 +2051,8 @@ class EncryptRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $core.List<$core.int>? plaintext,
     $core.List<$core.int>? additionalAuthenticatedData,
-    $1780.Int64Value? plaintextCrc32c,
-    $1780.Int64Value? additionalAuthenticatedDataCrc32c,
+    $1781.Int64Value? plaintextCrc32c,
+    $1781.Int64Value? additionalAuthenticatedDataCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -2080,8 +2080,8 @@ class EncryptRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'plaintext', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'additionalAuthenticatedData', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(7, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(8, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(7, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(8, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2184,15 +2184,15 @@ class EncryptRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(7)
-  $1780.Int64Value get plaintextCrc32c => $_getN(3);
+  $1781.Int64Value get plaintextCrc32c => $_getN(3);
   @$pb.TagNumber(7)
-  set plaintextCrc32c($1780.Int64Value v) { setField(7, v); }
+  set plaintextCrc32c($1781.Int64Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPlaintextCrc32c() => $_has(3);
   @$pb.TagNumber(7)
   void clearPlaintextCrc32c() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int64Value ensurePlaintextCrc32c() => $_ensure(3);
+  $1781.Int64Value ensurePlaintextCrc32c() => $_ensure(3);
 
   /// Optional. An optional CRC32C checksum of the
   /// [EncryptRequest.additional_authenticated_data][google.cloud.kms.v1.EncryptRequest.additional_authenticated_data].
@@ -2214,15 +2214,15 @@ class EncryptRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(8)
-  $1780.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(4);
+  $1781.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(4);
   @$pb.TagNumber(8)
-  set additionalAuthenticatedDataCrc32c($1780.Int64Value v) { setField(8, v); }
+  set additionalAuthenticatedDataCrc32c($1781.Int64Value v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAdditionalAuthenticatedDataCrc32c() => $_has(4);
   @$pb.TagNumber(8)
   void clearAdditionalAuthenticatedDataCrc32c() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(4);
+  $1781.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(4);
 }
 
 /// Request message for
@@ -2232,8 +2232,8 @@ class DecryptRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $core.List<$core.int>? ciphertext,
     $core.List<$core.int>? additionalAuthenticatedData,
-    $1780.Int64Value? ciphertextCrc32c,
-    $1780.Int64Value? additionalAuthenticatedDataCrc32c,
+    $1781.Int64Value? ciphertextCrc32c,
+    $1781.Int64Value? additionalAuthenticatedDataCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -2261,8 +2261,8 @@ class DecryptRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'ciphertext', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'additionalAuthenticatedData', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(6, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(6, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2341,15 +2341,15 @@ class DecryptRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(5)
-  $1780.Int64Value get ciphertextCrc32c => $_getN(3);
+  $1781.Int64Value get ciphertextCrc32c => $_getN(3);
   @$pb.TagNumber(5)
-  set ciphertextCrc32c($1780.Int64Value v) { setField(5, v); }
+  set ciphertextCrc32c($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCiphertextCrc32c() => $_has(3);
   @$pb.TagNumber(5)
   void clearCiphertextCrc32c() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureCiphertextCrc32c() => $_ensure(3);
+  $1781.Int64Value ensureCiphertextCrc32c() => $_ensure(3);
 
   /// Optional. An optional CRC32C checksum of the
   /// [DecryptRequest.additional_authenticated_data][google.cloud.kms.v1.DecryptRequest.additional_authenticated_data].
@@ -2371,15 +2371,15 @@ class DecryptRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(6)
-  $1780.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(4);
+  $1781.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(4);
   @$pb.TagNumber(6)
-  set additionalAuthenticatedDataCrc32c($1780.Int64Value v) { setField(6, v); }
+  set additionalAuthenticatedDataCrc32c($1781.Int64Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAdditionalAuthenticatedDataCrc32c() => $_has(4);
   @$pb.TagNumber(6)
   void clearAdditionalAuthenticatedDataCrc32c() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(4);
+  $1781.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(4);
 }
 
 /// Request message for
@@ -2389,10 +2389,10 @@ class RawEncryptRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $core.List<$core.int>? plaintext,
     $core.List<$core.int>? additionalAuthenticatedData,
-    $1780.Int64Value? plaintextCrc32c,
-    $1780.Int64Value? additionalAuthenticatedDataCrc32c,
+    $1781.Int64Value? plaintextCrc32c,
+    $1781.Int64Value? additionalAuthenticatedDataCrc32c,
     $core.List<$core.int>? initializationVector,
-    $1780.Int64Value? initializationVectorCrc32c,
+    $1781.Int64Value? initializationVectorCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -2426,10 +2426,10 @@ class RawEncryptRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'plaintext', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'additionalAuthenticatedData', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1781.Int64Value.create)
     ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'initializationVector', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(7, _omitFieldNames ? '' : 'initializationVectorCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(7, _omitFieldNames ? '' : 'initializationVectorCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2523,15 +2523,15 @@ class RawEncryptRequest extends $pb.GeneratedMessage {
   /// will never exceed 2^32-1, and can be safely downconverted to uint32 in
   /// languages that support this type.
   @$pb.TagNumber(4)
-  $1780.Int64Value get plaintextCrc32c => $_getN(3);
+  $1781.Int64Value get plaintextCrc32c => $_getN(3);
   @$pb.TagNumber(4)
-  set plaintextCrc32c($1780.Int64Value v) { setField(4, v); }
+  set plaintextCrc32c($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPlaintextCrc32c() => $_has(3);
   @$pb.TagNumber(4)
   void clearPlaintextCrc32c() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensurePlaintextCrc32c() => $_ensure(3);
+  $1781.Int64Value ensurePlaintextCrc32c() => $_ensure(3);
 
   /// Optional. An optional CRC32C checksum of the
   /// [RawEncryptRequest.additional_authenticated_data][google.cloud.kms.v1.RawEncryptRequest.additional_authenticated_data].
@@ -2551,15 +2551,15 @@ class RawEncryptRequest extends $pb.GeneratedMessage {
   /// never exceed 2^32-1, and can be safely downconverted to uint32 in languages
   /// that support this type.
   @$pb.TagNumber(5)
-  $1780.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(4);
+  $1781.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(4);
   @$pb.TagNumber(5)
-  set additionalAuthenticatedDataCrc32c($1780.Int64Value v) { setField(5, v); }
+  set additionalAuthenticatedDataCrc32c($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAdditionalAuthenticatedDataCrc32c() => $_has(4);
   @$pb.TagNumber(5)
   void clearAdditionalAuthenticatedDataCrc32c() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(4);
+  $1781.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(4);
 
   /// Optional. A customer-supplied initialization vector that will be used for
   /// encryption. If it is not provided for AES-CBC and AES-CTR, one will be
@@ -2591,15 +2591,15 @@ class RawEncryptRequest extends $pb.GeneratedMessage {
   /// never exceed 2^32-1, and can be safely downconverted to uint32 in languages
   /// that support this type.
   @$pb.TagNumber(7)
-  $1780.Int64Value get initializationVectorCrc32c => $_getN(6);
+  $1781.Int64Value get initializationVectorCrc32c => $_getN(6);
   @$pb.TagNumber(7)
-  set initializationVectorCrc32c($1780.Int64Value v) { setField(7, v); }
+  set initializationVectorCrc32c($1781.Int64Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInitializationVectorCrc32c() => $_has(6);
   @$pb.TagNumber(7)
   void clearInitializationVectorCrc32c() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int64Value ensureInitializationVectorCrc32c() => $_ensure(6);
+  $1781.Int64Value ensureInitializationVectorCrc32c() => $_ensure(6);
 }
 
 /// Request message for
@@ -2611,9 +2611,9 @@ class RawDecryptRequest extends $pb.GeneratedMessage {
     $core.List<$core.int>? additionalAuthenticatedData,
     $core.List<$core.int>? initializationVector,
     $core.int? tagLength,
-    $1780.Int64Value? ciphertextCrc32c,
-    $1780.Int64Value? additionalAuthenticatedDataCrc32c,
-    $1780.Int64Value? initializationVectorCrc32c,
+    $1781.Int64Value? ciphertextCrc32c,
+    $1781.Int64Value? additionalAuthenticatedDataCrc32c,
+    $1781.Int64Value? initializationVectorCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -2652,9 +2652,9 @@ class RawDecryptRequest extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'additionalAuthenticatedData', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'initializationVector', $pb.PbFieldType.OY)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'tagLength', $pb.PbFieldType.O3)
-    ..aOM<$1780.Int64Value>(6, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(7, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(8, _omitFieldNames ? '' : 'initializationVectorCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(6, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(7, _omitFieldNames ? '' : 'additionalAuthenticatedDataCrc32c', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(8, _omitFieldNames ? '' : 'initializationVectorCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2752,15 +2752,15 @@ class RawDecryptRequest extends $pb.GeneratedMessage {
   /// will never exceed 2^32-1, and can be safely downconverted to uint32 in
   /// languages that support this type.
   @$pb.TagNumber(6)
-  $1780.Int64Value get ciphertextCrc32c => $_getN(5);
+  $1781.Int64Value get ciphertextCrc32c => $_getN(5);
   @$pb.TagNumber(6)
-  set ciphertextCrc32c($1780.Int64Value v) { setField(6, v); }
+  set ciphertextCrc32c($1781.Int64Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCiphertextCrc32c() => $_has(5);
   @$pb.TagNumber(6)
   void clearCiphertextCrc32c() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int64Value ensureCiphertextCrc32c() => $_ensure(5);
+  $1781.Int64Value ensureCiphertextCrc32c() => $_ensure(5);
 
   /// Optional. An optional CRC32C checksum of the
   /// [RawDecryptRequest.additional_authenticated_data][google.cloud.kms.v1.RawDecryptRequest.additional_authenticated_data].
@@ -2780,15 +2780,15 @@ class RawDecryptRequest extends $pb.GeneratedMessage {
   /// never exceed 2^32-1, and can be safely downconverted to uint32 in languages
   /// that support this type.
   @$pb.TagNumber(7)
-  $1780.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(6);
+  $1781.Int64Value get additionalAuthenticatedDataCrc32c => $_getN(6);
   @$pb.TagNumber(7)
-  set additionalAuthenticatedDataCrc32c($1780.Int64Value v) { setField(7, v); }
+  set additionalAuthenticatedDataCrc32c($1781.Int64Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAdditionalAuthenticatedDataCrc32c() => $_has(6);
   @$pb.TagNumber(7)
   void clearAdditionalAuthenticatedDataCrc32c() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(6);
+  $1781.Int64Value ensureAdditionalAuthenticatedDataCrc32c() => $_ensure(6);
 
   /// Optional. An optional CRC32C checksum of the
   /// [RawDecryptRequest.initialization_vector][google.cloud.kms.v1.RawDecryptRequest.initialization_vector].
@@ -2806,15 +2806,15 @@ class RawDecryptRequest extends $pb.GeneratedMessage {
   /// never exceed 2^32-1, and can be safely downconverted to uint32 in languages
   /// that support this type.
   @$pb.TagNumber(8)
-  $1780.Int64Value get initializationVectorCrc32c => $_getN(7);
+  $1781.Int64Value get initializationVectorCrc32c => $_getN(7);
   @$pb.TagNumber(8)
-  set initializationVectorCrc32c($1780.Int64Value v) { setField(8, v); }
+  set initializationVectorCrc32c($1781.Int64Value v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasInitializationVectorCrc32c() => $_has(7);
   @$pb.TagNumber(8)
   void clearInitializationVectorCrc32c() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.Int64Value ensureInitializationVectorCrc32c() => $_ensure(7);
+  $1781.Int64Value ensureInitializationVectorCrc32c() => $_ensure(7);
 }
 
 /// Request message for
@@ -2823,9 +2823,9 @@ class AsymmetricSignRequest extends $pb.GeneratedMessage {
   factory AsymmetricSignRequest({
     $core.String? name,
     Digest? digest,
-    $1780.Int64Value? digestCrc32c,
+    $1781.Int64Value? digestCrc32c,
     $core.List<$core.int>? data,
-    $1780.Int64Value? dataCrc32c,
+    $1781.Int64Value? dataCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -2852,9 +2852,9 @@ class AsymmetricSignRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AsymmetricSignRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Digest>(3, _omitFieldNames ? '' : 'digest', subBuilder: Digest.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'digestCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'digestCrc32c', subBuilder: $1781.Int64Value.create)
     ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(7, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(7, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2929,15 +2929,15 @@ class AsymmetricSignRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(4)
-  $1780.Int64Value get digestCrc32c => $_getN(2);
+  $1781.Int64Value get digestCrc32c => $_getN(2);
   @$pb.TagNumber(4)
-  set digestCrc32c($1780.Int64Value v) { setField(4, v); }
+  set digestCrc32c($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDigestCrc32c() => $_has(2);
   @$pb.TagNumber(4)
   void clearDigestCrc32c() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureDigestCrc32c() => $_ensure(2);
+  $1781.Int64Value ensureDigestCrc32c() => $_ensure(2);
 
   /// Optional. The data to sign.
   /// It can't be supplied if
@@ -2972,15 +2972,15 @@ class AsymmetricSignRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(7)
-  $1780.Int64Value get dataCrc32c => $_getN(4);
+  $1781.Int64Value get dataCrc32c => $_getN(4);
   @$pb.TagNumber(7)
-  set dataCrc32c($1780.Int64Value v) { setField(7, v); }
+  set dataCrc32c($1781.Int64Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDataCrc32c() => $_has(4);
   @$pb.TagNumber(7)
   void clearDataCrc32c() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int64Value ensureDataCrc32c() => $_ensure(4);
+  $1781.Int64Value ensureDataCrc32c() => $_ensure(4);
 }
 
 /// Request message for
@@ -2989,7 +2989,7 @@ class AsymmetricDecryptRequest extends $pb.GeneratedMessage {
   factory AsymmetricDecryptRequest({
     $core.String? name,
     $core.List<$core.int>? ciphertext,
-    $1780.Int64Value? ciphertextCrc32c,
+    $1781.Int64Value? ciphertextCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -3010,7 +3010,7 @@ class AsymmetricDecryptRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AsymmetricDecryptRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'ciphertext', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -3079,15 +3079,15 @@ class AsymmetricDecryptRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(4)
-  $1780.Int64Value get ciphertextCrc32c => $_getN(2);
+  $1781.Int64Value get ciphertextCrc32c => $_getN(2);
   @$pb.TagNumber(4)
-  set ciphertextCrc32c($1780.Int64Value v) { setField(4, v); }
+  set ciphertextCrc32c($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCiphertextCrc32c() => $_has(2);
   @$pb.TagNumber(4)
   void clearCiphertextCrc32c() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureCiphertextCrc32c() => $_ensure(2);
+  $1781.Int64Value ensureCiphertextCrc32c() => $_ensure(2);
 }
 
 /// Request message for
@@ -3096,7 +3096,7 @@ class MacSignRequest extends $pb.GeneratedMessage {
   factory MacSignRequest({
     $core.String? name,
     $core.List<$core.int>? data,
-    $1780.Int64Value? dataCrc32c,
+    $1781.Int64Value? dataCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -3117,7 +3117,7 @@ class MacSignRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MacSignRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -3183,15 +3183,15 @@ class MacSignRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(3)
-  $1780.Int64Value get dataCrc32c => $_getN(2);
+  $1781.Int64Value get dataCrc32c => $_getN(2);
   @$pb.TagNumber(3)
-  set dataCrc32c($1780.Int64Value v) { setField(3, v); }
+  set dataCrc32c($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDataCrc32c() => $_has(2);
   @$pb.TagNumber(3)
   void clearDataCrc32c() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureDataCrc32c() => $_ensure(2);
+  $1781.Int64Value ensureDataCrc32c() => $_ensure(2);
 }
 
 /// Request message for
@@ -3200,9 +3200,9 @@ class MacVerifyRequest extends $pb.GeneratedMessage {
   factory MacVerifyRequest({
     $core.String? name,
     $core.List<$core.int>? data,
-    $1780.Int64Value? dataCrc32c,
+    $1781.Int64Value? dataCrc32c,
     $core.List<$core.int>? mac,
-    $1780.Int64Value? macCrc32c,
+    $1781.Int64Value? macCrc32c,
   }) {
     final $result = create();
     if (name != null) {
@@ -3229,9 +3229,9 @@ class MacVerifyRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MacVerifyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1781.Int64Value.create)
     ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'mac', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'macCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'macCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -3299,15 +3299,15 @@ class MacVerifyRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(3)
-  $1780.Int64Value get dataCrc32c => $_getN(2);
+  $1781.Int64Value get dataCrc32c => $_getN(2);
   @$pb.TagNumber(3)
-  set dataCrc32c($1780.Int64Value v) { setField(3, v); }
+  set dataCrc32c($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDataCrc32c() => $_has(2);
   @$pb.TagNumber(3)
   void clearDataCrc32c() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureDataCrc32c() => $_ensure(2);
+  $1781.Int64Value ensureDataCrc32c() => $_ensure(2);
 
   /// Required. The signature to verify.
   @$pb.TagNumber(4)
@@ -3336,15 +3336,15 @@ class MacVerifyRequest extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(5)
-  $1780.Int64Value get macCrc32c => $_getN(4);
+  $1781.Int64Value get macCrc32c => $_getN(4);
   @$pb.TagNumber(5)
-  set macCrc32c($1780.Int64Value v) { setField(5, v); }
+  set macCrc32c($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMacCrc32c() => $_has(4);
   @$pb.TagNumber(5)
   void clearMacCrc32c() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureMacCrc32c() => $_ensure(4);
+  $1781.Int64Value ensureMacCrc32c() => $_ensure(4);
 }
 
 /// Request message for
@@ -3441,7 +3441,7 @@ class EncryptResponse extends $pb.GeneratedMessage {
   factory EncryptResponse({
     $core.String? name,
     $core.List<$core.int>? ciphertext,
-    $1780.Int64Value? ciphertextCrc32c,
+    $1781.Int64Value? ciphertextCrc32c,
     $core.bool? verifiedPlaintextCrc32c,
     $core.bool? verifiedAdditionalAuthenticatedDataCrc32c,
     $1099.ProtectionLevel? protectionLevel,
@@ -3474,7 +3474,7 @@ class EncryptResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'ciphertext', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1781.Int64Value.create)
     ..aOB(5, _omitFieldNames ? '' : 'verifiedPlaintextCrc32c')
     ..aOB(6, _omitFieldNames ? '' : 'verifiedAdditionalAuthenticatedDataCrc32c')
     ..e<$1099.ProtectionLevel>(7, _omitFieldNames ? '' : 'protectionLevel', $pb.PbFieldType.OE, defaultOrMaker: $1099.ProtectionLevel.PROTECTION_LEVEL_UNSPECIFIED, valueOf: $1099.ProtectionLevel.valueOf, enumValues: $1099.ProtectionLevel.values)
@@ -3539,15 +3539,15 @@ class EncryptResponse extends $pb.GeneratedMessage {
   /// will never exceed 2^32-1, and can be safely downconverted to uint32 in
   /// languages that support this type.
   @$pb.TagNumber(4)
-  $1780.Int64Value get ciphertextCrc32c => $_getN(2);
+  $1781.Int64Value get ciphertextCrc32c => $_getN(2);
   @$pb.TagNumber(4)
-  set ciphertextCrc32c($1780.Int64Value v) { setField(4, v); }
+  set ciphertextCrc32c($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCiphertextCrc32c() => $_has(2);
   @$pb.TagNumber(4)
   void clearCiphertextCrc32c() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureCiphertextCrc32c() => $_ensure(2);
+  $1781.Int64Value ensureCiphertextCrc32c() => $_ensure(2);
 
   /// Integrity verification field. A flag indicating whether
   /// [EncryptRequest.plaintext_crc32c][google.cloud.kms.v1.EncryptRequest.plaintext_crc32c]
@@ -3613,7 +3613,7 @@ class EncryptResponse extends $pb.GeneratedMessage {
 class DecryptResponse extends $pb.GeneratedMessage {
   factory DecryptResponse({
     $core.List<$core.int>? plaintext,
-    $1780.Int64Value? plaintextCrc32c,
+    $1781.Int64Value? plaintextCrc32c,
     $core.bool? usedPrimary,
     $1099.ProtectionLevel? protectionLevel,
   }) {
@@ -3638,7 +3638,7 @@ class DecryptResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DecryptResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'plaintext', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1781.Int64Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'usedPrimary')
     ..e<$1099.ProtectionLevel>(4, _omitFieldNames ? '' : 'protectionLevel', $pb.PbFieldType.OE, defaultOrMaker: $1099.ProtectionLevel.PROTECTION_LEVEL_UNSPECIFIED, valueOf: $1099.ProtectionLevel.valueOf, enumValues: $1099.ProtectionLevel.values)
     ..hasRequiredFields = false
@@ -3694,15 +3694,15 @@ class DecryptResponse extends $pb.GeneratedMessage {
   /// 2^32-1, and can be safely downconverted to uint32 in languages that support
   /// this type.
   @$pb.TagNumber(2)
-  $1780.Int64Value get plaintextCrc32c => $_getN(1);
+  $1781.Int64Value get plaintextCrc32c => $_getN(1);
   @$pb.TagNumber(2)
-  set plaintextCrc32c($1780.Int64Value v) { setField(2, v); }
+  set plaintextCrc32c($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPlaintextCrc32c() => $_has(1);
   @$pb.TagNumber(2)
   void clearPlaintextCrc32c() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensurePlaintextCrc32c() => $_ensure(1);
+  $1781.Int64Value ensurePlaintextCrc32c() => $_ensure(1);
 
   /// Whether the Decryption was performed using the primary key version.
   @$pb.TagNumber(3)
@@ -3734,8 +3734,8 @@ class RawEncryptResponse extends $pb.GeneratedMessage {
     $core.List<$core.int>? ciphertext,
     $core.List<$core.int>? initializationVector,
     $core.int? tagLength,
-    $1780.Int64Value? ciphertextCrc32c,
-    $1780.Int64Value? initializationVectorCrc32c,
+    $1781.Int64Value? ciphertextCrc32c,
+    $1781.Int64Value? initializationVectorCrc32c,
     $core.bool? verifiedPlaintextCrc32c,
     $core.bool? verifiedAdditionalAuthenticatedDataCrc32c,
     $core.String? name,
@@ -3783,8 +3783,8 @@ class RawEncryptResponse extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'ciphertext', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'initializationVector', $pb.PbFieldType.OY)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'tagLength', $pb.PbFieldType.O3)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'initializationVectorCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'ciphertextCrc32c', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'initializationVectorCrc32c', subBuilder: $1781.Int64Value.create)
     ..aOB(6, _omitFieldNames ? '' : 'verifiedPlaintextCrc32c')
     ..aOB(7, _omitFieldNames ? '' : 'verifiedAdditionalAuthenticatedDataCrc32c')
     ..aOS(8, _omitFieldNames ? '' : 'name')
@@ -3861,15 +3861,15 @@ class RawEncryptResponse extends $pb.GeneratedMessage {
   /// non-negative integer, which will never exceed 2^32-1, and can be safely
   /// downconverted to uint32 in languages that support this type.
   @$pb.TagNumber(4)
-  $1780.Int64Value get ciphertextCrc32c => $_getN(3);
+  $1781.Int64Value get ciphertextCrc32c => $_getN(3);
   @$pb.TagNumber(4)
-  set ciphertextCrc32c($1780.Int64Value v) { setField(4, v); }
+  set ciphertextCrc32c($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCiphertextCrc32c() => $_has(3);
   @$pb.TagNumber(4)
   void clearCiphertextCrc32c() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureCiphertextCrc32c() => $_ensure(3);
+  $1781.Int64Value ensureCiphertextCrc32c() => $_ensure(3);
 
   /// Integrity verification field. A CRC32C checksum of the returned
   /// [RawEncryptResponse.initialization_vector][google.cloud.kms.v1.RawEncryptResponse.initialization_vector].
@@ -3882,15 +3882,15 @@ class RawEncryptResponse extends $pb.GeneratedMessage {
   /// However, it is a non-negative integer, which will never exceed 2^32-1, and
   /// can be safely downconverted to uint32 in languages that support this type.
   @$pb.TagNumber(5)
-  $1780.Int64Value get initializationVectorCrc32c => $_getN(4);
+  $1781.Int64Value get initializationVectorCrc32c => $_getN(4);
   @$pb.TagNumber(5)
-  set initializationVectorCrc32c($1780.Int64Value v) { setField(5, v); }
+  set initializationVectorCrc32c($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInitializationVectorCrc32c() => $_has(4);
   @$pb.TagNumber(5)
   void clearInitializationVectorCrc32c() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureInitializationVectorCrc32c() => $_ensure(4);
+  $1781.Int64Value ensureInitializationVectorCrc32c() => $_ensure(4);
 
   /// Integrity verification field. A flag indicating whether
   /// [RawEncryptRequest.plaintext_crc32c][google.cloud.kms.v1.RawEncryptRequest.plaintext_crc32c]
@@ -3989,7 +3989,7 @@ class RawEncryptResponse extends $pb.GeneratedMessage {
 class RawDecryptResponse extends $pb.GeneratedMessage {
   factory RawDecryptResponse({
     $core.List<$core.int>? plaintext,
-    $1780.Int64Value? plaintextCrc32c,
+    $1781.Int64Value? plaintextCrc32c,
     $1099.ProtectionLevel? protectionLevel,
     $core.bool? verifiedCiphertextCrc32c,
     $core.bool? verifiedAdditionalAuthenticatedDataCrc32c,
@@ -4022,7 +4022,7 @@ class RawDecryptResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RawDecryptResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'plaintext', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1781.Int64Value.create)
     ..e<$1099.ProtectionLevel>(3, _omitFieldNames ? '' : 'protectionLevel', $pb.PbFieldType.OE, defaultOrMaker: $1099.ProtectionLevel.PROTECTION_LEVEL_UNSPECIFIED, valueOf: $1099.ProtectionLevel.valueOf, enumValues: $1099.ProtectionLevel.values)
     ..aOB(4, _omitFieldNames ? '' : 'verifiedCiphertextCrc32c')
     ..aOB(5, _omitFieldNames ? '' : 'verifiedAdditionalAuthenticatedDataCrc32c')
@@ -4077,15 +4077,15 @@ class RawDecryptResponse extends $pb.GeneratedMessage {
   /// never exceed 2^32-1, and can be safely downconverted to uint32 in languages
   /// that support this type.
   @$pb.TagNumber(2)
-  $1780.Int64Value get plaintextCrc32c => $_getN(1);
+  $1781.Int64Value get plaintextCrc32c => $_getN(1);
   @$pb.TagNumber(2)
-  set plaintextCrc32c($1780.Int64Value v) { setField(2, v); }
+  set plaintextCrc32c($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPlaintextCrc32c() => $_has(1);
   @$pb.TagNumber(2)
   void clearPlaintextCrc32c() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensurePlaintextCrc32c() => $_ensure(1);
+  $1781.Int64Value ensurePlaintextCrc32c() => $_ensure(1);
 
   /// The [ProtectionLevel][google.cloud.kms.v1.ProtectionLevel] of the
   /// [CryptoKeyVersion][google.cloud.kms.v1.CryptoKeyVersion] used in
@@ -4171,7 +4171,7 @@ class RawDecryptResponse extends $pb.GeneratedMessage {
 class AsymmetricSignResponse extends $pb.GeneratedMessage {
   factory AsymmetricSignResponse({
     $core.List<$core.int>? signature,
-    $1780.Int64Value? signatureCrc32c,
+    $1781.Int64Value? signatureCrc32c,
     $core.bool? verifiedDigestCrc32c,
     $core.String? name,
     $core.bool? verifiedDataCrc32c,
@@ -4204,7 +4204,7 @@ class AsymmetricSignResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AsymmetricSignResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'signature', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'signatureCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'signatureCrc32c', subBuilder: $1781.Int64Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'verifiedDigestCrc32c')
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..aOB(5, _omitFieldNames ? '' : 'verifiedDataCrc32c')
@@ -4257,15 +4257,15 @@ class AsymmetricSignResponse extends $pb.GeneratedMessage {
   /// will never exceed 2^32-1, and can be safely downconverted to uint32 in
   /// languages that support this type.
   @$pb.TagNumber(2)
-  $1780.Int64Value get signatureCrc32c => $_getN(1);
+  $1781.Int64Value get signatureCrc32c => $_getN(1);
   @$pb.TagNumber(2)
-  set signatureCrc32c($1780.Int64Value v) { setField(2, v); }
+  set signatureCrc32c($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSignatureCrc32c() => $_has(1);
   @$pb.TagNumber(2)
   void clearSignatureCrc32c() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureSignatureCrc32c() => $_ensure(1);
+  $1781.Int64Value ensureSignatureCrc32c() => $_ensure(1);
 
   /// Integrity verification field. A flag indicating whether
   /// [AsymmetricSignRequest.digest_crc32c][google.cloud.kms.v1.AsymmetricSignRequest.digest_crc32c]
@@ -4342,7 +4342,7 @@ class AsymmetricSignResponse extends $pb.GeneratedMessage {
 class AsymmetricDecryptResponse extends $pb.GeneratedMessage {
   factory AsymmetricDecryptResponse({
     $core.List<$core.int>? plaintext,
-    $1780.Int64Value? plaintextCrc32c,
+    $1781.Int64Value? plaintextCrc32c,
     $core.bool? verifiedCiphertextCrc32c,
     $1099.ProtectionLevel? protectionLevel,
   }) {
@@ -4367,7 +4367,7 @@ class AsymmetricDecryptResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AsymmetricDecryptResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'plaintext', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'plaintextCrc32c', subBuilder: $1781.Int64Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'verifiedCiphertextCrc32c')
     ..e<$1099.ProtectionLevel>(4, _omitFieldNames ? '' : 'protectionLevel', $pb.PbFieldType.OE, defaultOrMaker: $1099.ProtectionLevel.PROTECTION_LEVEL_UNSPECIFIED, valueOf: $1099.ProtectionLevel.valueOf, enumValues: $1099.ProtectionLevel.values)
     ..hasRequiredFields = false
@@ -4418,15 +4418,15 @@ class AsymmetricDecryptResponse extends $pb.GeneratedMessage {
   /// will never exceed 2^32-1, and can be safely downconverted to uint32 in
   /// languages that support this type.
   @$pb.TagNumber(2)
-  $1780.Int64Value get plaintextCrc32c => $_getN(1);
+  $1781.Int64Value get plaintextCrc32c => $_getN(1);
   @$pb.TagNumber(2)
-  set plaintextCrc32c($1780.Int64Value v) { setField(2, v); }
+  set plaintextCrc32c($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPlaintextCrc32c() => $_has(1);
   @$pb.TagNumber(2)
   void clearPlaintextCrc32c() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensurePlaintextCrc32c() => $_ensure(1);
+  $1781.Int64Value ensurePlaintextCrc32c() => $_ensure(1);
 
   /// Integrity verification field. A flag indicating whether
   /// [AsymmetricDecryptRequest.ciphertext_crc32c][google.cloud.kms.v1.AsymmetricDecryptRequest.ciphertext_crc32c]
@@ -4470,7 +4470,7 @@ class MacSignResponse extends $pb.GeneratedMessage {
   factory MacSignResponse({
     $core.String? name,
     $core.List<$core.int>? mac,
-    $1780.Int64Value? macCrc32c,
+    $1781.Int64Value? macCrc32c,
     $core.bool? verifiedDataCrc32c,
     $1099.ProtectionLevel? protectionLevel,
   }) {
@@ -4499,7 +4499,7 @@ class MacSignResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MacSignResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'mac', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'macCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'macCrc32c', subBuilder: $1781.Int64Value.create)
     ..aOB(4, _omitFieldNames ? '' : 'verifiedDataCrc32c')
     ..e<$1099.ProtectionLevel>(5, _omitFieldNames ? '' : 'protectionLevel', $pb.PbFieldType.OE, defaultOrMaker: $1099.ProtectionLevel.PROTECTION_LEVEL_UNSPECIFIED, valueOf: $1099.ProtectionLevel.valueOf, enumValues: $1099.ProtectionLevel.values)
     ..hasRequiredFields = false
@@ -4562,15 +4562,15 @@ class MacSignResponse extends $pb.GeneratedMessage {
   /// will never exceed 2^32-1, and can be safely downconverted to uint32 in
   /// languages that support this type.
   @$pb.TagNumber(3)
-  $1780.Int64Value get macCrc32c => $_getN(2);
+  $1781.Int64Value get macCrc32c => $_getN(2);
   @$pb.TagNumber(3)
-  set macCrc32c($1780.Int64Value v) { setField(3, v); }
+  set macCrc32c($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMacCrc32c() => $_has(2);
   @$pb.TagNumber(3)
   void clearMacCrc32c() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureMacCrc32c() => $_ensure(2);
+  $1781.Int64Value ensureMacCrc32c() => $_ensure(2);
 
   /// Integrity verification field. A flag indicating whether
   /// [MacSignRequest.data_crc32c][google.cloud.kms.v1.MacSignRequest.data_crc32c]
@@ -4777,7 +4777,7 @@ class MacVerifyResponse extends $pb.GeneratedMessage {
 class GenerateRandomBytesResponse extends $pb.GeneratedMessage {
   factory GenerateRandomBytesResponse({
     $core.List<$core.int>? data,
-    $1780.Int64Value? dataCrc32c,
+    $1781.Int64Value? dataCrc32c,
   }) {
     final $result = create();
     if (data != null) {
@@ -4794,7 +4794,7 @@ class GenerateRandomBytesResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateRandomBytesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.kms.v1'), createEmptyInstance: create)
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'dataCrc32c', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -4843,15 +4843,15 @@ class GenerateRandomBytesResponse extends $pb.GeneratedMessage {
   /// will never exceed 2^32-1, and can be safely downconverted to uint32 in
   /// languages that support this type.
   @$pb.TagNumber(3)
-  $1780.Int64Value get dataCrc32c => $_getN(1);
+  $1781.Int64Value get dataCrc32c => $_getN(1);
   @$pb.TagNumber(3)
-  set dataCrc32c($1780.Int64Value v) { setField(3, v); }
+  set dataCrc32c($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDataCrc32c() => $_has(1);
   @$pb.TagNumber(3)
   void clearDataCrc32c() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureDataCrc32c() => $_ensure(1);
+  $1781.Int64Value ensureDataCrc32c() => $_ensure(1);
 }
 
 enum Digest_Digest {

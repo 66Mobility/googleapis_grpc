@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'custom_job.pbenum.dart';
-import 'encryption_spec.pb.dart' as $4240;
-import 'env_var.pb.dart' as $4241;
-import 'io.pb.dart' as $4235;
-import 'job_state.pbenum.dart' as $4246;
-import 'machine_resources.pb.dart' as $4242;
+import 'encryption_spec.pb.dart' as $4241;
+import 'env_var.pb.dart' as $4242;
+import 'io.pb.dart' as $4236;
+import 'job_state.pbenum.dart' as $4247;
+import 'machine_resources.pb.dart' as $4243;
 
 export 'custom_job.pbenum.dart';
 
@@ -35,14 +35,14 @@ class CustomJob extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     CustomJobSpec? jobSpec,
-    $4246.JobState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
-    $1795.Status? error,
+    $4247.JobState? state,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
+    $1796.Status? error,
     $core.Map<$core.String, $core.String>? labels,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.Map<$core.String, $core.String>? webAccessUris,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -100,14 +100,14 @@ class CustomJob extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<CustomJobSpec>(4, _omitFieldNames ? '' : 'jobSpec', subBuilder: CustomJobSpec.create)
-    ..e<$4246.JobState>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4246.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4246.JobState.valueOf, enumValues: $4246.JobState.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..e<$4247.JobState>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4247.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4247.JobState.valueOf, enumValues: $4247.JobState.values)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'CustomJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$4240.EncryptionSpec>(12, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(12, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'webAccessUris', entryClassName: 'CustomJob.WebAccessUrisEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..aOB(18, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(19, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -171,9 +171,9 @@ class CustomJob extends $pb.GeneratedMessage {
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(5)
-  $4246.JobState get state => $_getN(3);
+  $4247.JobState get state => $_getN(3);
   @$pb.TagNumber(5)
-  set state($4246.JobState v) { setField(5, v); }
+  set state($4247.JobState v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(5)
@@ -181,66 +181,66 @@ class CustomJob extends $pb.GeneratedMessage {
 
   /// Output only. Time when the CustomJob was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Time when the CustomJob for the first time entered the
   /// `JOB_STATE_RUNNING` state.
   @$pb.TagNumber(7)
-  $1775.Timestamp get startTime => $_getN(5);
+  $1776.Timestamp get startTime => $_getN(5);
   @$pb.TagNumber(7)
-  set startTime($1775.Timestamp v) { setField(7, v); }
+  set startTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStartTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureStartTime() => $_ensure(5);
+  $1776.Timestamp ensureStartTime() => $_ensure(5);
 
   /// Output only. Time when the CustomJob entered any of the following states:
   /// `JOB_STATE_SUCCEEDED`, `JOB_STATE_FAILED`, `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(8)
-  $1775.Timestamp get endTime => $_getN(6);
+  $1776.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(8)
-  set endTime($1775.Timestamp v) { setField(8, v); }
+  set endTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEndTime() => $_ensure(6);
+  $1776.Timestamp ensureEndTime() => $_ensure(6);
 
   /// Output only. Time when the CustomJob was most recently updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. Only populated when job's state is `JOB_STATE_FAILED` or
   /// `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(10)
-  $1795.Status get error => $_getN(8);
+  $1796.Status get error => $_getN(8);
   @$pb.TagNumber(10)
-  set error($1795.Status v) { setField(10, v); }
+  set error($1796.Status v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(10)
   void clearError() => clearField(10);
   @$pb.TagNumber(10)
-  $1795.Status ensureError() => $_ensure(8);
+  $1796.Status ensureError() => $_ensure(8);
 
   ///  The labels with user-defined metadata to organize CustomJobs.
   ///
@@ -256,15 +256,15 @@ class CustomJob extends $pb.GeneratedMessage {
   /// then all resources created by the CustomJob will be encrypted with the
   /// provided encryption key.
   @$pb.TagNumber(12)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(10);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(10);
   @$pb.TagNumber(12)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(12, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasEncryptionSpec() => $_has(10);
   @$pb.TagNumber(12)
   void clearEncryptionSpec() => clearField(12);
   @$pb.TagNumber(12)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(10);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(10);
 
   ///  Output only. URIs for accessing [interactive
   ///  shells](https://cloud.google.com/vertex-ai/docs/training/monitor-debug-interactive-shell)
@@ -309,7 +309,7 @@ class CustomJobSpec extends $pb.GeneratedMessage {
     Scheduling? scheduling,
     $core.String? serviceAccount,
     $core.String? network,
-    $4235.GcsDestination? baseOutputDirectory,
+    $4236.GcsDestination? baseOutputDirectory,
     $core.String? tensorboard,
     $core.bool? enableWebAccess,
     $core.Iterable<$core.String>? reservedIpRanges,
@@ -374,7 +374,7 @@ class CustomJobSpec extends $pb.GeneratedMessage {
     ..aOM<Scheduling>(3, _omitFieldNames ? '' : 'scheduling', subBuilder: Scheduling.create)
     ..aOS(4, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(5, _omitFieldNames ? '' : 'network')
-    ..aOM<$4235.GcsDestination>(6, _omitFieldNames ? '' : 'baseOutputDirectory', subBuilder: $4235.GcsDestination.create)
+    ..aOM<$4236.GcsDestination>(6, _omitFieldNames ? '' : 'baseOutputDirectory', subBuilder: $4236.GcsDestination.create)
     ..aOS(7, _omitFieldNames ? '' : 'tensorboard')
     ..aOB(10, _omitFieldNames ? '' : 'enableWebAccess')
     ..pPS(13, _omitFieldNames ? '' : 'reservedIpRanges')
@@ -484,15 +484,15 @@ class CustomJobSpec extends $pb.GeneratedMessage {
   ///    * AIP_CHECKPOINT_DIR = `<base_output_directory>/<trial_id>/checkpoints/`
   ///    * AIP_TENSORBOARD_LOG_DIR = `<base_output_directory>/<trial_id>/logs/`
   @$pb.TagNumber(6)
-  $4235.GcsDestination get baseOutputDirectory => $_getN(4);
+  $4236.GcsDestination get baseOutputDirectory => $_getN(4);
   @$pb.TagNumber(6)
-  set baseOutputDirectory($4235.GcsDestination v) { setField(6, v); }
+  set baseOutputDirectory($4236.GcsDestination v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBaseOutputDirectory() => $_has(4);
   @$pb.TagNumber(6)
   void clearBaseOutputDirectory() => clearField(6);
   @$pb.TagNumber(6)
-  $4235.GcsDestination ensureBaseOutputDirectory() => $_ensure(4);
+  $4236.GcsDestination ensureBaseOutputDirectory() => $_ensure(4);
 
   /// Optional. The name of a Vertex AI
   /// [Tensorboard][google.cloud.aiplatform.v1.Tensorboard] resource to which
@@ -636,10 +636,10 @@ enum WorkerPoolSpec_Task {
 /// Represents the spec of a worker pool in a job.
 class WorkerPoolSpec extends $pb.GeneratedMessage {
   factory WorkerPoolSpec({
-    $4242.MachineSpec? machineSpec,
+    $4243.MachineSpec? machineSpec,
     $fixnum.Int64? replicaCount,
-    $core.Iterable<$4242.NfsMount>? nfsMounts,
-    $4242.DiskSpec? diskSpec,
+    $core.Iterable<$4243.NfsMount>? nfsMounts,
+    $4243.DiskSpec? diskSpec,
     ContainerSpec? containerSpec,
     PythonPackageSpec? pythonPackageSpec,
   }) {
@@ -675,10 +675,10 @@ class WorkerPoolSpec extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WorkerPoolSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [6, 7])
-    ..aOM<$4242.MachineSpec>(1, _omitFieldNames ? '' : 'machineSpec', subBuilder: $4242.MachineSpec.create)
+    ..aOM<$4243.MachineSpec>(1, _omitFieldNames ? '' : 'machineSpec', subBuilder: $4243.MachineSpec.create)
     ..aInt64(2, _omitFieldNames ? '' : 'replicaCount')
-    ..pc<$4242.NfsMount>(4, _omitFieldNames ? '' : 'nfsMounts', $pb.PbFieldType.PM, subBuilder: $4242.NfsMount.create)
-    ..aOM<$4242.DiskSpec>(5, _omitFieldNames ? '' : 'diskSpec', subBuilder: $4242.DiskSpec.create)
+    ..pc<$4243.NfsMount>(4, _omitFieldNames ? '' : 'nfsMounts', $pb.PbFieldType.PM, subBuilder: $4243.NfsMount.create)
+    ..aOM<$4243.DiskSpec>(5, _omitFieldNames ? '' : 'diskSpec', subBuilder: $4243.DiskSpec.create)
     ..aOM<ContainerSpec>(6, _omitFieldNames ? '' : 'containerSpec', subBuilder: ContainerSpec.create)
     ..aOM<PythonPackageSpec>(7, _omitFieldNames ? '' : 'pythonPackageSpec', subBuilder: PythonPackageSpec.create)
     ..hasRequiredFields = false
@@ -710,15 +710,15 @@ class WorkerPoolSpec extends $pb.GeneratedMessage {
 
   /// Optional. Immutable. The specification of a single machine.
   @$pb.TagNumber(1)
-  $4242.MachineSpec get machineSpec => $_getN(0);
+  $4243.MachineSpec get machineSpec => $_getN(0);
   @$pb.TagNumber(1)
-  set machineSpec($4242.MachineSpec v) { setField(1, v); }
+  set machineSpec($4243.MachineSpec v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMachineSpec() => $_has(0);
   @$pb.TagNumber(1)
   void clearMachineSpec() => clearField(1);
   @$pb.TagNumber(1)
-  $4242.MachineSpec ensureMachineSpec() => $_ensure(0);
+  $4243.MachineSpec ensureMachineSpec() => $_ensure(0);
 
   /// Optional. The number of worker replicas to use for this worker pool.
   @$pb.TagNumber(2)
@@ -732,19 +732,19 @@ class WorkerPoolSpec extends $pb.GeneratedMessage {
 
   /// Optional. List of NFS mount spec.
   @$pb.TagNumber(4)
-  $core.List<$4242.NfsMount> get nfsMounts => $_getList(2);
+  $core.List<$4243.NfsMount> get nfsMounts => $_getList(2);
 
   /// Disk spec.
   @$pb.TagNumber(5)
-  $4242.DiskSpec get diskSpec => $_getN(3);
+  $4243.DiskSpec get diskSpec => $_getN(3);
   @$pb.TagNumber(5)
-  set diskSpec($4242.DiskSpec v) { setField(5, v); }
+  set diskSpec($4243.DiskSpec v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDiskSpec() => $_has(3);
   @$pb.TagNumber(5)
   void clearDiskSpec() => clearField(5);
   @$pb.TagNumber(5)
-  $4242.DiskSpec ensureDiskSpec() => $_ensure(3);
+  $4243.DiskSpec ensureDiskSpec() => $_ensure(3);
 
   /// The custom container task.
   @$pb.TagNumber(6)
@@ -777,7 +777,7 @@ class ContainerSpec extends $pb.GeneratedMessage {
     $core.String? imageUri,
     $core.Iterable<$core.String>? command,
     $core.Iterable<$core.String>? args,
-    $core.Iterable<$4241.EnvVar>? env,
+    $core.Iterable<$4242.EnvVar>? env,
   }) {
     final $result = create();
     if (imageUri != null) {
@@ -802,7 +802,7 @@ class ContainerSpec extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'imageUri')
     ..pPS(2, _omitFieldNames ? '' : 'command')
     ..pPS(3, _omitFieldNames ? '' : 'args')
-    ..pc<$4241.EnvVar>(4, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4241.EnvVar.create)
+    ..pc<$4242.EnvVar>(4, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4242.EnvVar.create)
     ..hasRequiredFields = false
   ;
 
@@ -850,7 +850,7 @@ class ContainerSpec extends $pb.GeneratedMessage {
   /// Environment variables to be passed to the container.
   /// Maximum limit is 100.
   @$pb.TagNumber(4)
-  $core.List<$4241.EnvVar> get env => $_getList(3);
+  $core.List<$4242.EnvVar> get env => $_getList(3);
 }
 
 /// The spec of a Python packaged code.
@@ -860,7 +860,7 @@ class PythonPackageSpec extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? packageUris,
     $core.String? pythonModule,
     $core.Iterable<$core.String>? args,
-    $core.Iterable<$4241.EnvVar>? env,
+    $core.Iterable<$4242.EnvVar>? env,
   }) {
     final $result = create();
     if (executorImageUri != null) {
@@ -889,7 +889,7 @@ class PythonPackageSpec extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'packageUris')
     ..aOS(3, _omitFieldNames ? '' : 'pythonModule')
     ..pPS(4, _omitFieldNames ? '' : 'args')
-    ..pc<$4241.EnvVar>(5, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4241.EnvVar.create)
+    ..pc<$4242.EnvVar>(5, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4242.EnvVar.create)
     ..hasRequiredFields = false
   ;
 
@@ -952,13 +952,13 @@ class PythonPackageSpec extends $pb.GeneratedMessage {
   /// Environment variables to be passed to the python module.
   /// Maximum limit is 100.
   @$pb.TagNumber(5)
-  $core.List<$4241.EnvVar> get env => $_getList(4);
+  $core.List<$4242.EnvVar> get env => $_getList(4);
 }
 
 /// All parameters related to queuing and scheduling of custom jobs.
 class Scheduling extends $pb.GeneratedMessage {
   factory Scheduling({
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     $core.bool? restartJobOnWorkerRestart,
     Scheduling_Strategy? strategy,
     $core.bool? disableRetries,
@@ -983,7 +983,7 @@ class Scheduling extends $pb.GeneratedMessage {
   factory Scheduling.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Scheduling', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOB(3, _omitFieldNames ? '' : 'restartJobOnWorkerRestart')
     ..e<Scheduling_Strategy>(4, _omitFieldNames ? '' : 'strategy', $pb.PbFieldType.OE, defaultOrMaker: Scheduling_Strategy.STRATEGY_UNSPECIFIED, valueOf: Scheduling_Strategy.valueOf, enumValues: Scheduling_Strategy.values)
     ..aOB(5, _omitFieldNames ? '' : 'disableRetries')
@@ -1013,15 +1013,15 @@ class Scheduling extends $pb.GeneratedMessage {
 
   /// The maximum job running time. The default is 7 days.
   @$pb.TagNumber(1)
-  $1737.Duration get timeout => $_getN(0);
+  $1738.Duration get timeout => $_getN(0);
   @$pb.TagNumber(1)
-  set timeout($1737.Duration v) { setField(1, v); }
+  set timeout($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeout() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeout() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTimeout() => $_ensure(0);
+  $1738.Duration ensureTimeout() => $_ensure(0);
 
   /// Restarts the entire CustomJob if a worker gets restarted.
   /// This feature can be used by distributed training jobs that are not

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/any.pb.dart' as $1794;
+import '../../protobuf/any.pb.dart' as $1795;
 import 'watch.pbenum.dart';
 
 export 'watch.pbenum.dart';
@@ -189,7 +189,7 @@ class Change extends $pb.GeneratedMessage {
     Change_State? state,
     $core.List<$core.int>? resumeMarker,
     $core.bool? continued,
-    $1794.Any? data,
+    $1795.Any? data,
   }) {
     final $result = create();
     if (element != null) {
@@ -218,7 +218,7 @@ class Change extends $pb.GeneratedMessage {
     ..e<Change_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Change_State.EXISTS, valueOf: Change_State.valueOf, enumValues: Change_State.values)
     ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'resumeMarker', $pb.PbFieldType.OY)
     ..aOB(5, _omitFieldNames ? '' : 'continued')
-    ..aOM<$1794.Any>(6, _omitFieldNames ? '' : 'data', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(6, _omitFieldNames ? '' : 'data', subBuilder: $1795.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -294,15 +294,15 @@ class Change extends $pb.GeneratedMessage {
   /// or `state() == ERROR`. Please see
   /// [google.protobuf.Any][google.protobuf.Any] about how to use the Any type.
   @$pb.TagNumber(6)
-  $1794.Any get data => $_getN(4);
+  $1795.Any get data => $_getN(4);
   @$pb.TagNumber(6)
-  set data($1794.Any v) { setField(6, v); }
+  set data($1795.Any v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasData() => $_has(4);
   @$pb.TagNumber(6)
   void clearData() => clearField(6);
   @$pb.TagNumber(6)
-  $1794.Any ensureData() => $_ensure(4);
+  $1795.Any ensureData() => $_ensure(4);
 }
 
 

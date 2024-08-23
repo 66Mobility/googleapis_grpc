@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'project.pbenum.dart';
 
 export 'project.pbenum.dart';
@@ -24,8 +24,8 @@ class Project_ServiceTerms extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? version,
     Project_ServiceTerms_State? state,
-    $1775.Timestamp? acceptTime,
-    $1775.Timestamp? declineTime,
+    $1776.Timestamp? acceptTime,
+    $1776.Timestamp? declineTime,
   }) {
     final $result = create();
     if (id != null) {
@@ -53,8 +53,8 @@ class Project_ServiceTerms extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'version')
     ..e<Project_ServiceTerms_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Project_ServiceTerms_State.STATE_UNSPECIFIED, valueOf: Project_ServiceTerms_State.valueOf, enumValues: Project_ServiceTerms_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'acceptTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'declineTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'acceptTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'declineTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -121,36 +121,36 @@ class Project_ServiceTerms extends $pb.GeneratedMessage {
 
   /// The last time when the project agreed to the terms of service.
   @$pb.TagNumber(5)
-  $1775.Timestamp get acceptTime => $_getN(3);
+  $1776.Timestamp get acceptTime => $_getN(3);
   @$pb.TagNumber(5)
-  set acceptTime($1775.Timestamp v) { setField(5, v); }
+  set acceptTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAcceptTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearAcceptTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureAcceptTime() => $_ensure(3);
+  $1776.Timestamp ensureAcceptTime() => $_ensure(3);
 
   /// The last time when the project declined or revoked the agreement to terms
   /// of service.
   @$pb.TagNumber(6)
-  $1775.Timestamp get declineTime => $_getN(4);
+  $1776.Timestamp get declineTime => $_getN(4);
   @$pb.TagNumber(6)
-  set declineTime($1775.Timestamp v) { setField(6, v); }
+  set declineTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDeclineTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearDeclineTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureDeclineTime() => $_ensure(4);
+  $1776.Timestamp ensureDeclineTime() => $_ensure(4);
 }
 
 /// Metadata and configurations for a Google Cloud project in the service.
 class Project extends $pb.GeneratedMessage {
   factory Project({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? provisionCompletionTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? provisionCompletionTime,
     $core.Map<$core.String, Project_ServiceTerms>? serviceTermsMap,
   }) {
     final $result = create();
@@ -174,8 +174,8 @@ class Project extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Project', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'provisionCompletionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'provisionCompletionTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, Project_ServiceTerms>(4, _omitFieldNames ? '' : 'serviceTermsMap', entryClassName: 'Project.ServiceTermsMapEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Project_ServiceTerms.create, valueDefaultOrMaker: Project_ServiceTerms.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1beta'))
     ..hasRequiredFields = false
   ;
@@ -216,29 +216,29 @@ class Project extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this project is created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when this project is successfully provisioned.
   /// Empty value means this project is still provisioning and is not ready for
   /// use.
   @$pb.TagNumber(3)
-  $1775.Timestamp get provisionCompletionTime => $_getN(2);
+  $1776.Timestamp get provisionCompletionTime => $_getN(2);
   @$pb.TagNumber(3)
-  set provisionCompletionTime($1775.Timestamp v) { setField(3, v); }
+  set provisionCompletionTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasProvisionCompletionTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearProvisionCompletionTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureProvisionCompletionTime() => $_ensure(2);
+  $1776.Timestamp ensureProvisionCompletionTime() => $_ensure(2);
 
   /// Output only. A map of terms of services. The key is the `id` of
   /// [ServiceTerms][google.cloud.discoveryengine.v1beta.Project.ServiceTerms].

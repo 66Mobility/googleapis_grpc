@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/click_location.pb.dart' as $2233;
-import '../common/criteria.pb.dart' as $1867;
+import '../common/click_location.pb.dart' as $2234;
+import '../common/criteria.pb.dart' as $1868;
 
 /// A click view with metrics aggregated at each click level, including both
 /// valid and invalid clicks. For non-Search campaigns, metrics.clicks
@@ -26,15 +26,15 @@ import '../common/criteria.pb.dart' as $1867;
 class ClickView extends $pb.GeneratedMessage {
   factory ClickView({
     $core.String? resourceName,
-    $2233.ClickLocation? areaOfInterest,
-    $2233.ClickLocation? locationOfPresence,
+    $2234.ClickLocation? areaOfInterest,
+    $2234.ClickLocation? locationOfPresence,
     $core.String? gclid,
     $fixnum.Int64? pageNumber,
     $core.String? adGroupAd,
     $core.String? campaignLocationTarget,
     $core.String? userList,
     $core.String? keyword,
-    $1867.KeywordInfo? keywordInfo,
+    $1868.KeywordInfo? keywordInfo,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -75,15 +75,15 @@ class ClickView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ClickView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2233.ClickLocation>(3, _omitFieldNames ? '' : 'areaOfInterest', subBuilder: $2233.ClickLocation.create)
-    ..aOM<$2233.ClickLocation>(4, _omitFieldNames ? '' : 'locationOfPresence', subBuilder: $2233.ClickLocation.create)
+    ..aOM<$2234.ClickLocation>(3, _omitFieldNames ? '' : 'areaOfInterest', subBuilder: $2234.ClickLocation.create)
+    ..aOM<$2234.ClickLocation>(4, _omitFieldNames ? '' : 'locationOfPresence', subBuilder: $2234.ClickLocation.create)
     ..aOS(8, _omitFieldNames ? '' : 'gclid')
     ..aInt64(9, _omitFieldNames ? '' : 'pageNumber')
     ..aOS(10, _omitFieldNames ? '' : 'adGroupAd')
     ..aOS(11, _omitFieldNames ? '' : 'campaignLocationTarget')
     ..aOS(12, _omitFieldNames ? '' : 'userList')
     ..aOS(13, _omitFieldNames ? '' : 'keyword')
-    ..aOM<$1867.KeywordInfo>(14, _omitFieldNames ? '' : 'keywordInfo', subBuilder: $1867.KeywordInfo.create)
+    ..aOM<$1868.KeywordInfo>(14, _omitFieldNames ? '' : 'keywordInfo', subBuilder: $1868.KeywordInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -124,28 +124,28 @@ class ClickView extends $pb.GeneratedMessage {
   /// Output only. The location criteria matching the area of interest associated
   /// with the impression.
   @$pb.TagNumber(3)
-  $2233.ClickLocation get areaOfInterest => $_getN(1);
+  $2234.ClickLocation get areaOfInterest => $_getN(1);
   @$pb.TagNumber(3)
-  set areaOfInterest($2233.ClickLocation v) { setField(3, v); }
+  set areaOfInterest($2234.ClickLocation v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAreaOfInterest() => $_has(1);
   @$pb.TagNumber(3)
   void clearAreaOfInterest() => clearField(3);
   @$pb.TagNumber(3)
-  $2233.ClickLocation ensureAreaOfInterest() => $_ensure(1);
+  $2234.ClickLocation ensureAreaOfInterest() => $_ensure(1);
 
   /// Output only. The location criteria matching the location of presence
   /// associated with the impression.
   @$pb.TagNumber(4)
-  $2233.ClickLocation get locationOfPresence => $_getN(2);
+  $2234.ClickLocation get locationOfPresence => $_getN(2);
   @$pb.TagNumber(4)
-  set locationOfPresence($2233.ClickLocation v) { setField(4, v); }
+  set locationOfPresence($2234.ClickLocation v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLocationOfPresence() => $_has(2);
   @$pb.TagNumber(4)
   void clearLocationOfPresence() => clearField(4);
   @$pb.TagNumber(4)
-  $2233.ClickLocation ensureLocationOfPresence() => $_ensure(2);
+  $2234.ClickLocation ensureLocationOfPresence() => $_ensure(2);
 
   /// Output only. The Google Click ID.
   @$pb.TagNumber(8)
@@ -210,15 +210,15 @@ class ClickView extends $pb.GeneratedMessage {
 
   /// Output only. Basic information about the associated keyword, if it exists.
   @$pb.TagNumber(14)
-  $1867.KeywordInfo get keywordInfo => $_getN(9);
+  $1868.KeywordInfo get keywordInfo => $_getN(9);
   @$pb.TagNumber(14)
-  set keywordInfo($1867.KeywordInfo v) { setField(14, v); }
+  set keywordInfo($1868.KeywordInfo v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasKeywordInfo() => $_has(9);
   @$pb.TagNumber(14)
   void clearKeywordInfo() => clearField(14);
   @$pb.TagNumber(14)
-  $1867.KeywordInfo ensureKeywordInfo() => $_ensure(9);
+  $1868.KeywordInfo ensureKeywordInfo() => $_ensure(9);
 }
 
 

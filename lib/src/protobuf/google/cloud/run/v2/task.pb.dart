@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'condition.pb.dart' as $4603;
-import 'k8s.min.pb.dart' as $4600;
-import 'vendor_settings.pb.dart' as $4601;
-import 'vendor_settings.pbenum.dart' as $4601;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'condition.pb.dart' as $4605;
+import 'k8s.min.pb.dart' as $4602;
+import 'vendor_settings.pb.dart' as $4603;
+import 'vendor_settings.pbenum.dart' as $4603;
 
 /// Request message for obtaining a Task by its full name.
 class GetTaskRequest extends $pb.GeneratedMessage {
@@ -247,31 +247,31 @@ class Task extends $pb.GeneratedMessage {
     $fixnum.Int64? generation,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? annotations,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? completionTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? completionTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     $core.String? job,
     $core.String? execution,
-    $core.Iterable<$4600.Container>? containers,
-    $core.Iterable<$4600.Volume>? volumes,
+    $core.Iterable<$4602.Container>? containers,
+    $core.Iterable<$4602.Volume>? volumes,
     $core.int? maxRetries,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     $core.String? serviceAccount,
-    $4601.ExecutionEnvironment? executionEnvironment,
+    $4603.ExecutionEnvironment? executionEnvironment,
     $core.bool? reconciling,
-    $core.Iterable<$4603.Condition>? conditions,
+    $core.Iterable<$4605.Condition>? conditions,
     $fixnum.Int64? observedGeneration,
     $core.int? index,
     $core.int? retried,
     TaskAttemptResult? lastAttemptResult,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
     $core.String? encryptionKey,
-    $4601.VpcAccess? vpcAccess,
+    $4603.VpcAccess? vpcAccess,
     $core.String? logUri,
     $core.bool? satisfiesPzs,
-    $1775.Timestamp? scheduledTime,
+    $1776.Timestamp? scheduledTime,
     $core.String? etag,
   }) {
     final $result = create();
@@ -380,31 +380,31 @@ class Task extends $pb.GeneratedMessage {
     ..aInt64(3, _omitFieldNames ? '' : 'generation')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Task.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Task.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'completionTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'completionTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'job')
     ..aOS(13, _omitFieldNames ? '' : 'execution')
-    ..pc<$4600.Container>(14, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4600.Container.create)
-    ..pc<$4600.Volume>(15, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4600.Volume.create)
+    ..pc<$4602.Container>(14, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4602.Container.create)
+    ..pc<$4602.Volume>(15, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4602.Volume.create)
     ..a<$core.int>(16, _omitFieldNames ? '' : 'maxRetries', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(17, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(17, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOS(18, _omitFieldNames ? '' : 'serviceAccount')
-    ..e<$4601.ExecutionEnvironment>(20, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4601.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4601.ExecutionEnvironment.valueOf, enumValues: $4601.ExecutionEnvironment.values)
+    ..e<$4603.ExecutionEnvironment>(20, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4603.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4603.ExecutionEnvironment.valueOf, enumValues: $4603.ExecutionEnvironment.values)
     ..aOB(21, _omitFieldNames ? '' : 'reconciling')
-    ..pc<$4603.Condition>(22, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4603.Condition.create)
+    ..pc<$4605.Condition>(22, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4605.Condition.create)
     ..aInt64(23, _omitFieldNames ? '' : 'observedGeneration')
     ..a<$core.int>(24, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
     ..a<$core.int>(25, _omitFieldNames ? '' : 'retried', $pb.PbFieldType.O3)
     ..aOM<TaskAttemptResult>(26, _omitFieldNames ? '' : 'lastAttemptResult', subBuilder: TaskAttemptResult.create)
-    ..aOM<$1775.Timestamp>(27, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(27, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..aOS(28, _omitFieldNames ? '' : 'encryptionKey')
-    ..aOM<$4601.VpcAccess>(29, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4601.VpcAccess.create)
+    ..aOM<$4603.VpcAccess>(29, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4603.VpcAccess.create)
     ..aOS(32, _omitFieldNames ? '' : 'logUri')
     ..aOB(33, _omitFieldNames ? '' : 'satisfiesPzs')
-    ..aOM<$1775.Timestamp>(34, _omitFieldNames ? '' : 'scheduledTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(34, _omitFieldNames ? '' : 'scheduledTime', subBuilder: $1776.Timestamp.create)
     ..aOS(99, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
   ;
@@ -483,67 +483,67 @@ class Task extends $pb.GeneratedMessage {
   /// It is not guaranteed to be set in happens-before order across separate
   /// operations.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Represents time when the Task was completed. It is not
   /// guaranteed to be set in happens-before order across separate operations.
   @$pb.TagNumber(7)
-  $1775.Timestamp get completionTime => $_getN(6);
+  $1776.Timestamp get completionTime => $_getN(6);
   @$pb.TagNumber(7)
-  set completionTime($1775.Timestamp v) { setField(7, v); }
+  set completionTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCompletionTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCompletionTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCompletionTime() => $_ensure(6);
+  $1776.Timestamp ensureCompletionTime() => $_ensure(6);
 
   /// Output only. The last-modified time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. For a deleted resource, the deletion time. It is only
   /// populated as a response to a Delete request.
   @$pb.TagNumber(9)
-  $1775.Timestamp get deleteTime => $_getN(8);
+  $1776.Timestamp get deleteTime => $_getN(8);
   @$pb.TagNumber(9)
-  set deleteTime($1775.Timestamp v) { setField(9, v); }
+  set deleteTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDeleteTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearDeleteTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(8);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(8);
 
   /// Output only. For a deleted resource, the time after which it will be
   /// permamently deleted. It is only populated as a response to a Delete
   /// request.
   @$pb.TagNumber(10)
-  $1775.Timestamp get expireTime => $_getN(9);
+  $1776.Timestamp get expireTime => $_getN(9);
   @$pb.TagNumber(10)
-  set expireTime($1775.Timestamp v) { setField(10, v); }
+  set expireTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasExpireTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearExpireTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureExpireTime() => $_ensure(9);
+  $1776.Timestamp ensureExpireTime() => $_ensure(9);
 
   /// Output only. The name of the parent Job.
   @$pb.TagNumber(12)
@@ -568,11 +568,11 @@ class Task extends $pb.GeneratedMessage {
   /// Holds the single container that defines the unit of execution for this
   /// task.
   @$pb.TagNumber(14)
-  $core.List<$4600.Container> get containers => $_getList(12);
+  $core.List<$4602.Container> get containers => $_getList(12);
 
   /// A list of Volumes to make available to containers.
   @$pb.TagNumber(15)
-  $core.List<$4600.Volume> get volumes => $_getList(13);
+  $core.List<$4602.Volume> get volumes => $_getList(13);
 
   /// Number of retries allowed per Task, before marking this Task failed.
   @$pb.TagNumber(16)
@@ -588,15 +588,15 @@ class Task extends $pb.GeneratedMessage {
   /// actively try to mark it failed and kill associated containers. This applies
   /// per attempt of a task, meaning each retry can run for the full timeout.
   @$pb.TagNumber(17)
-  $1737.Duration get timeout => $_getN(15);
+  $1738.Duration get timeout => $_getN(15);
   @$pb.TagNumber(17)
-  set timeout($1737.Duration v) { setField(17, v); }
+  set timeout($1738.Duration v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasTimeout() => $_has(15);
   @$pb.TagNumber(17)
   void clearTimeout() => clearField(17);
   @$pb.TagNumber(17)
-  $1737.Duration ensureTimeout() => $_ensure(15);
+  $1738.Duration ensureTimeout() => $_ensure(15);
 
   /// Email address of the IAM service account associated with the Task of a
   /// Job. The service account represents the identity of the
@@ -613,9 +613,9 @@ class Task extends $pb.GeneratedMessage {
 
   /// The execution environment being used to host this Task.
   @$pb.TagNumber(20)
-  $4601.ExecutionEnvironment get executionEnvironment => $_getN(17);
+  $4603.ExecutionEnvironment get executionEnvironment => $_getN(17);
   @$pb.TagNumber(20)
-  set executionEnvironment($4601.ExecutionEnvironment v) { setField(20, v); }
+  set executionEnvironment($4603.ExecutionEnvironment v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasExecutionEnvironment() => $_has(17);
   @$pb.TagNumber(20)
@@ -636,7 +636,7 @@ class Task extends $pb.GeneratedMessage {
   /// Output only. The Condition of this Task, containing its readiness status,
   /// and detailed error information in case it did not reach the desired state.
   @$pb.TagNumber(22)
-  $core.List<$4603.Condition> get conditions => $_getList(19);
+  $core.List<$4605.Condition> get conditions => $_getList(19);
 
   /// Output only. The generation of this Task. See comments in `Job.reconciling`
   /// for additional information on reconciliation process in Cloud Run.
@@ -686,15 +686,15 @@ class Task extends $pb.GeneratedMessage {
   /// It is not guaranteed to be set in happens-before order across separate
   /// operations.
   @$pb.TagNumber(27)
-  $1775.Timestamp get startTime => $_getN(24);
+  $1776.Timestamp get startTime => $_getN(24);
   @$pb.TagNumber(27)
-  set startTime($1775.Timestamp v) { setField(27, v); }
+  set startTime($1776.Timestamp v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasStartTime() => $_has(24);
   @$pb.TagNumber(27)
   void clearStartTime() => clearField(27);
   @$pb.TagNumber(27)
-  $1775.Timestamp ensureStartTime() => $_ensure(24);
+  $1776.Timestamp ensureStartTime() => $_ensure(24);
 
   /// Output only. A reference to a customer managed encryption key (CMEK) to use
   /// to encrypt this container image. For more information, go to
@@ -712,15 +712,15 @@ class Task extends $pb.GeneratedMessage {
   /// information, visit
   /// https://cloud.google.com/run/docs/configuring/connecting-vpc.
   @$pb.TagNumber(29)
-  $4601.VpcAccess get vpcAccess => $_getN(26);
+  $4603.VpcAccess get vpcAccess => $_getN(26);
   @$pb.TagNumber(29)
-  set vpcAccess($4601.VpcAccess v) { setField(29, v); }
+  set vpcAccess($4603.VpcAccess v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasVpcAccess() => $_has(26);
   @$pb.TagNumber(29)
   void clearVpcAccess() => clearField(29);
   @$pb.TagNumber(29)
-  $4601.VpcAccess ensureVpcAccess() => $_ensure(26);
+  $4603.VpcAccess ensureVpcAccess() => $_ensure(26);
 
   /// Output only. URI where logs for this execution can be found in Cloud
   /// Console.
@@ -747,15 +747,15 @@ class Task extends $pb.GeneratedMessage {
   /// system. It is not guaranteed to be set in happens-before order across
   /// separate operations.
   @$pb.TagNumber(34)
-  $1775.Timestamp get scheduledTime => $_getN(29);
+  $1776.Timestamp get scheduledTime => $_getN(29);
   @$pb.TagNumber(34)
-  set scheduledTime($1775.Timestamp v) { setField(34, v); }
+  set scheduledTime($1776.Timestamp v) { setField(34, v); }
   @$pb.TagNumber(34)
   $core.bool hasScheduledTime() => $_has(29);
   @$pb.TagNumber(34)
   void clearScheduledTime() => clearField(34);
   @$pb.TagNumber(34)
-  $1775.Timestamp ensureScheduledTime() => $_ensure(29);
+  $1776.Timestamp ensureScheduledTime() => $_ensure(29);
 
   /// Output only. A system-generated fingerprint for this version of the
   /// resource. May be used to detect modification conflict during updates.
@@ -772,7 +772,7 @@ class Task extends $pb.GeneratedMessage {
 /// Result of a task attempt.
 class TaskAttemptResult extends $pb.GeneratedMessage {
   factory TaskAttemptResult({
-    $1795.Status? status,
+    $1796.Status? status,
     $core.int? exitCode,
   }) {
     final $result = create();
@@ -789,7 +789,7 @@ class TaskAttemptResult extends $pb.GeneratedMessage {
   factory TaskAttemptResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskAttemptResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.run.v2'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'exitCode', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -818,15 +818,15 @@ class TaskAttemptResult extends $pb.GeneratedMessage {
   /// Output only. The status of this attempt.
   /// If the status code is OK, then the attempt succeeded.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// Output only. The exit code of this attempt.
   /// This may be unset if the container was unable to exit cleanly with a code

@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/color.pb.dart' as $4199;
-import '../../../type/date.pb.dart' as $1800;
-import '../../../type/datetime.pb.dart' as $1801;
-import '../../../type/money.pb.dart' as $1814;
-import '../../../type/postal_address.pb.dart' as $4427;
-import 'barcode.pb.dart' as $4439;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/color.pb.dart' as $4200;
+import '../../../type/date.pb.dart' as $1801;
+import '../../../type/datetime.pb.dart' as $1802;
+import '../../../type/money.pb.dart' as $1815;
+import '../../../type/postal_address.pb.dart' as $4429;
+import 'barcode.pb.dart' as $4441;
 import 'document.pbenum.dart';
-import 'geometry.pb.dart' as $4438;
+import 'geometry.pb.dart' as $4440;
 
 export 'document.pbenum.dart';
 
@@ -186,8 +186,8 @@ class Document_Style_FontSize extends $pb.GeneratedMessage {
 class Document_Style extends $pb.GeneratedMessage {
   factory Document_Style({
     Document_TextAnchor? textAnchor,
-    $4199.Color? color,
-    $4199.Color? backgroundColor,
+    $4200.Color? color,
+    $4200.Color? backgroundColor,
     $core.String? fontWeight,
     $core.String? textStyle,
     $core.String? textDecoration,
@@ -227,8 +227,8 @@ class Document_Style extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.Style', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..aOM<Document_TextAnchor>(1, _omitFieldNames ? '' : 'textAnchor', subBuilder: Document_TextAnchor.create)
-    ..aOM<$4199.Color>(2, _omitFieldNames ? '' : 'color', subBuilder: $4199.Color.create)
-    ..aOM<$4199.Color>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4199.Color.create)
+    ..aOM<$4200.Color>(2, _omitFieldNames ? '' : 'color', subBuilder: $4200.Color.create)
+    ..aOM<$4200.Color>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4200.Color.create)
     ..aOS(4, _omitFieldNames ? '' : 'fontWeight')
     ..aOS(5, _omitFieldNames ? '' : 'textStyle')
     ..aOS(6, _omitFieldNames ? '' : 'textDecoration')
@@ -273,27 +273,27 @@ class Document_Style extends $pb.GeneratedMessage {
 
   /// Text color.
   @$pb.TagNumber(2)
-  $4199.Color get color => $_getN(1);
+  $4200.Color get color => $_getN(1);
   @$pb.TagNumber(2)
-  set color($4199.Color v) { setField(2, v); }
+  set color($4200.Color v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(2)
   void clearColor() => clearField(2);
   @$pb.TagNumber(2)
-  $4199.Color ensureColor() => $_ensure(1);
+  $4200.Color ensureColor() => $_ensure(1);
 
   /// Text background color.
   @$pb.TagNumber(3)
-  $4199.Color get backgroundColor => $_getN(2);
+  $4200.Color get backgroundColor => $_getN(2);
   @$pb.TagNumber(3)
-  set backgroundColor($4199.Color v) { setField(3, v); }
+  set backgroundColor($4200.Color v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $4199.Color ensureBackgroundColor() => $_ensure(2);
+  $4200.Color ensureBackgroundColor() => $_ensure(2);
 
   /// [Font weight](https://www.w3schools.com/cssref/pr_font_weight.asp).
   /// Possible values are `normal`, `bold`, `bolder`, and `lighter`.
@@ -641,7 +641,7 @@ class Document_Page_Layout extends $pb.GeneratedMessage {
   factory Document_Page_Layout({
     Document_TextAnchor? textAnchor,
     $core.double? confidence,
-    $4438.BoundingPoly? boundingPoly,
+    $4440.BoundingPoly? boundingPoly,
     Document_Page_Layout_Orientation? orientation,
   }) {
     final $result = create();
@@ -666,7 +666,7 @@ class Document_Page_Layout extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.Page.Layout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..aOM<Document_TextAnchor>(1, _omitFieldNames ? '' : 'textAnchor', subBuilder: Document_TextAnchor.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
-    ..aOM<$4438.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4438.BoundingPoly.create)
+    ..aOM<$4440.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4440.BoundingPoly.create)
     ..e<Document_Page_Layout_Orientation>(4, _omitFieldNames ? '' : 'orientation', $pb.PbFieldType.OE, defaultOrMaker: Document_Page_Layout_Orientation.ORIENTATION_UNSPECIFIED, valueOf: Document_Page_Layout_Orientation.valueOf, enumValues: Document_Page_Layout_Orientation.values)
     ..hasRequiredFields = false
   ;
@@ -722,15 +722,15 @@ class Document_Page_Layout extends $pb.GeneratedMessage {
   /// The bounding polygon for the
   /// [Layout][google.cloud.documentai.v1.Document.Page.Layout].
   @$pb.TagNumber(3)
-  $4438.BoundingPoly get boundingPoly => $_getN(2);
+  $4440.BoundingPoly get boundingPoly => $_getN(2);
   @$pb.TagNumber(3)
-  set boundingPoly($4438.BoundingPoly v) { setField(3, v); }
+  set boundingPoly($4440.BoundingPoly v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBoundingPoly() => $_has(2);
   @$pb.TagNumber(3)
   void clearBoundingPoly() => clearField(3);
   @$pb.TagNumber(3)
-  $4438.BoundingPoly ensureBoundingPoly() => $_ensure(2);
+  $4440.BoundingPoly ensureBoundingPoly() => $_ensure(2);
 
   /// Detected orientation for the
   /// [Layout][google.cloud.documentai.v1.Document.Page.Layout].
@@ -1079,8 +1079,8 @@ class Document_Page_Token_StyleInfo extends $pb.GeneratedMessage {
     $core.bool? smallcaps,
     $core.int? fontWeight,
     $core.bool? handwritten,
-    $4199.Color? textColor,
-    $4199.Color? backgroundColor,
+    $4200.Color? textColor,
+    $4200.Color? backgroundColor,
   }) {
     final $result = create();
     if (fontSize != null) {
@@ -1148,8 +1148,8 @@ class Document_Page_Token_StyleInfo extends $pb.GeneratedMessage {
     ..aOB(11, _omitFieldNames ? '' : 'smallcaps')
     ..a<$core.int>(12, _omitFieldNames ? '' : 'fontWeight', $pb.PbFieldType.O3)
     ..aOB(13, _omitFieldNames ? '' : 'handwritten')
-    ..aOM<$4199.Color>(14, _omitFieldNames ? '' : 'textColor', subBuilder: $4199.Color.create)
-    ..aOM<$4199.Color>(15, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4199.Color.create)
+    ..aOM<$4200.Color>(14, _omitFieldNames ? '' : 'textColor', subBuilder: $4200.Color.create)
+    ..aOM<$4200.Color>(15, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $4200.Color.create)
     ..hasRequiredFields = false
   ;
 
@@ -1311,27 +1311,27 @@ class Document_Page_Token_StyleInfo extends $pb.GeneratedMessage {
 
   /// Color of the text.
   @$pb.TagNumber(14)
-  $4199.Color get textColor => $_getN(13);
+  $4200.Color get textColor => $_getN(13);
   @$pb.TagNumber(14)
-  set textColor($4199.Color v) { setField(14, v); }
+  set textColor($4200.Color v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTextColor() => $_has(13);
   @$pb.TagNumber(14)
   void clearTextColor() => clearField(14);
   @$pb.TagNumber(14)
-  $4199.Color ensureTextColor() => $_ensure(13);
+  $4200.Color ensureTextColor() => $_ensure(13);
 
   /// Color of the background.
   @$pb.TagNumber(15)
-  $4199.Color get backgroundColor => $_getN(14);
+  $4200.Color get backgroundColor => $_getN(14);
   @$pb.TagNumber(15)
-  set backgroundColor($4199.Color v) { setField(15, v); }
+  set backgroundColor($4200.Color v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasBackgroundColor() => $_has(14);
   @$pb.TagNumber(15)
   void clearBackgroundColor() => clearField(15);
   @$pb.TagNumber(15)
-  $4199.Color ensureBackgroundColor() => $_ensure(14);
+  $4200.Color ensureBackgroundColor() => $_ensure(14);
 }
 
 /// A detected token.
@@ -2015,7 +2015,7 @@ class Document_Page_FormField extends $pb.GeneratedMessage {
 class Document_Page_DetectedBarcode extends $pb.GeneratedMessage {
   factory Document_Page_DetectedBarcode({
     Document_Page_Layout? layout,
-    $4439.Barcode? barcode,
+    $4441.Barcode? barcode,
   }) {
     final $result = create();
     if (layout != null) {
@@ -2032,7 +2032,7 @@ class Document_Page_DetectedBarcode extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.Page.DetectedBarcode', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..aOM<Document_Page_Layout>(1, _omitFieldNames ? '' : 'layout', subBuilder: Document_Page_Layout.create)
-    ..aOM<$4439.Barcode>(2, _omitFieldNames ? '' : 'barcode', subBuilder: $4439.Barcode.create)
+    ..aOM<$4441.Barcode>(2, _omitFieldNames ? '' : 'barcode', subBuilder: $4441.Barcode.create)
     ..hasRequiredFields = false
   ;
 
@@ -2073,15 +2073,15 @@ class Document_Page_DetectedBarcode extends $pb.GeneratedMessage {
   /// Detailed barcode information of the
   /// [DetectedBarcode][google.cloud.documentai.v1.Document.Page.DetectedBarcode].
   @$pb.TagNumber(2)
-  $4439.Barcode get barcode => $_getN(1);
+  $4441.Barcode get barcode => $_getN(1);
   @$pb.TagNumber(2)
-  set barcode($4439.Barcode v) { setField(2, v); }
+  set barcode($4441.Barcode v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBarcode() => $_has(1);
   @$pb.TagNumber(2)
   void clearBarcode() => clearField(2);
   @$pb.TagNumber(2)
-  $4439.Barcode ensureBarcode() => $_ensure(1);
+  $4441.Barcode ensureBarcode() => $_ensure(1);
 }
 
 /// Detected language for a structural component.
@@ -2561,10 +2561,10 @@ enum Document_Entity_NormalizedValue_StructuredValue {
 class Document_Entity_NormalizedValue extends $pb.GeneratedMessage {
   factory Document_Entity_NormalizedValue({
     $core.String? text,
-    $1814.Money? moneyValue,
-    $1800.Date? dateValue,
-    $1801.DateTime? datetimeValue,
-    $4427.PostalAddress? addressValue,
+    $1815.Money? moneyValue,
+    $1801.Date? dateValue,
+    $1802.DateTime? datetimeValue,
+    $4429.PostalAddress? addressValue,
     $core.bool? booleanValue,
     $core.int? integerValue,
     $core.double? floatValue,
@@ -2613,10 +2613,10 @@ class Document_Entity_NormalizedValue extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.Entity.NormalizedValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5, 6, 7, 8])
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..aOM<$1814.Money>(2, _omitFieldNames ? '' : 'moneyValue', subBuilder: $1814.Money.create)
-    ..aOM<$1800.Date>(3, _omitFieldNames ? '' : 'dateValue', subBuilder: $1800.Date.create)
-    ..aOM<$1801.DateTime>(4, _omitFieldNames ? '' : 'datetimeValue', subBuilder: $1801.DateTime.create)
-    ..aOM<$4427.PostalAddress>(5, _omitFieldNames ? '' : 'addressValue', subBuilder: $4427.PostalAddress.create)
+    ..aOM<$1815.Money>(2, _omitFieldNames ? '' : 'moneyValue', subBuilder: $1815.Money.create)
+    ..aOM<$1801.Date>(3, _omitFieldNames ? '' : 'dateValue', subBuilder: $1801.Date.create)
+    ..aOM<$1802.DateTime>(4, _omitFieldNames ? '' : 'datetimeValue', subBuilder: $1802.DateTime.create)
+    ..aOM<$4429.PostalAddress>(5, _omitFieldNames ? '' : 'addressValue', subBuilder: $4429.PostalAddress.create)
     ..aOB(6, _omitFieldNames ? '' : 'booleanValue')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'integerValue', $pb.PbFieldType.O3)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'floatValue', $pb.PbFieldType.OF)
@@ -2670,54 +2670,54 @@ class Document_Entity_NormalizedValue extends $pb.GeneratedMessage {
   /// Money value. See also:
   /// https://github.com/googleapis/googleapis/blob/master/google/type/money.proto
   @$pb.TagNumber(2)
-  $1814.Money get moneyValue => $_getN(1);
+  $1815.Money get moneyValue => $_getN(1);
   @$pb.TagNumber(2)
-  set moneyValue($1814.Money v) { setField(2, v); }
+  set moneyValue($1815.Money v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMoneyValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearMoneyValue() => clearField(2);
   @$pb.TagNumber(2)
-  $1814.Money ensureMoneyValue() => $_ensure(1);
+  $1815.Money ensureMoneyValue() => $_ensure(1);
 
   /// Date value. Includes year, month, day. See also:
   /// https://github.com/googleapis/googleapis/blob/master/google/type/date.proto
   @$pb.TagNumber(3)
-  $1800.Date get dateValue => $_getN(2);
+  $1801.Date get dateValue => $_getN(2);
   @$pb.TagNumber(3)
-  set dateValue($1800.Date v) { setField(3, v); }
+  set dateValue($1801.Date v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDateValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearDateValue() => clearField(3);
   @$pb.TagNumber(3)
-  $1800.Date ensureDateValue() => $_ensure(2);
+  $1801.Date ensureDateValue() => $_ensure(2);
 
   /// DateTime value. Includes date, time, and timezone. See also:
   /// https://github.com/googleapis/googleapis/blob/master/google/type/datetime.proto
   @$pb.TagNumber(4)
-  $1801.DateTime get datetimeValue => $_getN(3);
+  $1802.DateTime get datetimeValue => $_getN(3);
   @$pb.TagNumber(4)
-  set datetimeValue($1801.DateTime v) { setField(4, v); }
+  set datetimeValue($1802.DateTime v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDatetimeValue() => $_has(3);
   @$pb.TagNumber(4)
   void clearDatetimeValue() => clearField(4);
   @$pb.TagNumber(4)
-  $1801.DateTime ensureDatetimeValue() => $_ensure(3);
+  $1802.DateTime ensureDatetimeValue() => $_ensure(3);
 
   /// Postal address. See also:
   /// https://github.com/googleapis/googleapis/blob/master/google/type/postal_address.proto
   @$pb.TagNumber(5)
-  $4427.PostalAddress get addressValue => $_getN(4);
+  $4429.PostalAddress get addressValue => $_getN(4);
   @$pb.TagNumber(5)
-  set addressValue($4427.PostalAddress v) { setField(5, v); }
+  set addressValue($4429.PostalAddress v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAddressValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearAddressValue() => clearField(5);
   @$pb.TagNumber(5)
-  $4427.PostalAddress ensureAddressValue() => $_ensure(4);
+  $4429.PostalAddress ensureAddressValue() => $_ensure(4);
 
   /// Boolean value. Can be used for entities with binary values, or for
   /// checkboxes.
@@ -3196,7 +3196,7 @@ class Document_PageAnchor_PageRef extends $pb.GeneratedMessage {
     Document_PageAnchor_PageRef_LayoutType? layoutType,
   @$core.Deprecated('This field is deprecated.')
     $core.String? layoutId,
-    $4438.BoundingPoly? boundingPoly,
+    $4440.BoundingPoly? boundingPoly,
     $core.double? confidence,
   }) {
     final $result = create();
@@ -3226,7 +3226,7 @@ class Document_PageAnchor_PageRef extends $pb.GeneratedMessage {
     ..aInt64(1, _omitFieldNames ? '' : 'page')
     ..e<Document_PageAnchor_PageRef_LayoutType>(2, _omitFieldNames ? '' : 'layoutType', $pb.PbFieldType.OE, defaultOrMaker: Document_PageAnchor_PageRef_LayoutType.LAYOUT_TYPE_UNSPECIFIED, valueOf: Document_PageAnchor_PageRef_LayoutType.valueOf, enumValues: Document_PageAnchor_PageRef_LayoutType.values)
     ..aOS(3, _omitFieldNames ? '' : 'layoutId')
-    ..aOM<$4438.BoundingPoly>(4, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4438.BoundingPoly.create)
+    ..aOM<$4440.BoundingPoly>(4, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4440.BoundingPoly.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -3298,15 +3298,15 @@ class Document_PageAnchor_PageRef extends $pb.GeneratedMessage {
   /// page. If `layout_type` is set, the bounding polygon must be exactly the
   /// same to the layout element it's referring to.
   @$pb.TagNumber(4)
-  $4438.BoundingPoly get boundingPoly => $_getN(3);
+  $4440.BoundingPoly get boundingPoly => $_getN(3);
   @$pb.TagNumber(4)
-  set boundingPoly($4438.BoundingPoly v) { setField(4, v); }
+  set boundingPoly($4440.BoundingPoly v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBoundingPoly() => $_has(3);
   @$pb.TagNumber(4)
   void clearBoundingPoly() => clearField(4);
   @$pb.TagNumber(4)
-  $4438.BoundingPoly ensureBoundingPoly() => $_ensure(3);
+  $4440.BoundingPoly ensureBoundingPoly() => $_ensure(3);
 
   /// Optional. Confidence of detected page element, if applicable. Range
   /// `[0, 1]`.
@@ -3644,7 +3644,7 @@ class Document_Revision extends $pb.GeneratedMessage {
     $core.String? id,
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<$core.int>? parent,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? agent,
     $core.String? processor,
     Document_Revision_HumanReview? humanReview,
@@ -3688,7 +3688,7 @@ class Document_Revision extends $pb.GeneratedMessage {
     ..oo(0, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..p<$core.int>(2, _omitFieldNames ? '' : 'parent', $pb.PbFieldType.K3)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'agent')
     ..aOS(5, _omitFieldNames ? '' : 'processor')
     ..aOM<Document_Revision_HumanReview>(6, _omitFieldNames ? '' : 'humanReview', subBuilder: Document_Revision_HumanReview.create)
@@ -3741,15 +3741,15 @@ class Document_Revision extends $pb.GeneratedMessage {
   /// The time that the revision was created, internally generated by
   /// doc proto storage at the time of create.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// If the change was made by a person specify the name or id of that
   /// person.
@@ -4895,7 +4895,7 @@ class Document extends $pb.GeneratedMessage {
     $core.Iterable<Document_Entity>? entities,
     $core.Iterable<Document_EntityRelation>? entityRelations,
     Document_ShardInfo? shardInfo,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.Iterable<Document_Revision>? revisions,
     $core.Iterable<Document_TextChange>? textChanges,
     Document_DocumentLayout? documentLayout,
@@ -4967,7 +4967,7 @@ class Document extends $pb.GeneratedMessage {
     ..pc<Document_Entity>(7, _omitFieldNames ? '' : 'entities', $pb.PbFieldType.PM, subBuilder: Document_Entity.create)
     ..pc<Document_EntityRelation>(8, _omitFieldNames ? '' : 'entityRelations', $pb.PbFieldType.PM, subBuilder: Document_EntityRelation.create)
     ..aOM<Document_ShardInfo>(9, _omitFieldNames ? '' : 'shardInfo', subBuilder: Document_ShardInfo.create)
-    ..aOM<$1795.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..pc<Document_Revision>(13, _omitFieldNames ? '' : 'revisions', $pb.PbFieldType.PM, subBuilder: Document_Revision.create)
     ..pc<Document_TextChange>(14, _omitFieldNames ? '' : 'textChanges', $pb.PbFieldType.PM, subBuilder: Document_TextChange.create)
     ..aOM<Document_DocumentLayout>(17, _omitFieldNames ? '' : 'documentLayout', subBuilder: Document_DocumentLayout.create)
@@ -5080,15 +5080,15 @@ class Document extends $pb.GeneratedMessage {
 
   /// Any error that occurred while processing this document.
   @$pb.TagNumber(10)
-  $1795.Status get error => $_getN(9);
+  $1796.Status get error => $_getN(9);
   @$pb.TagNumber(10)
-  set error($1795.Status v) { setField(10, v); }
+  set error($1796.Status v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasError() => $_has(9);
   @$pb.TagNumber(10)
   void clearError() => clearField(10);
   @$pb.TagNumber(10)
-  $1795.Status ensureError() => $_ensure(9);
+  $1796.Status ensureError() => $_ensure(9);
 
   /// Placeholder. Revision history of this document.
   @$pb.TagNumber(13)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/any.pb.dart' as $1794;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/any.pb.dart' as $1795;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resource_info.pbenum.dart';
 
 export 'resource_info.pbenum.dart';
@@ -33,8 +33,8 @@ class ResourceInfo extends $pb.GeneratedMessage {
   factory ResourceInfo({
     $core.String? id,
     HealthStatus? status,
-    $1794.Any? resource,
-    $1775.Timestamp? time,
+    $1795.Any? resource,
+    $1776.Timestamp? time,
     $core.Iterable<ResourceInfo>? sub,
   }) {
     final $result = create();
@@ -62,8 +62,8 @@ class ResourceInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResourceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.beyondcorp.appconnectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..e<HealthStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: HealthStatus.HEALTH_STATUS_UNSPECIFIED, valueOf: HealthStatus.valueOf, enumValues: HealthStatus.values)
-    ..aOM<$1794.Any>(3, _omitFieldNames ? '' : 'resource', subBuilder: $1794.Any.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'time', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1795.Any>(3, _omitFieldNames ? '' : 'resource', subBuilder: $1795.Any.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'time', subBuilder: $1776.Timestamp.create)
     ..pc<ResourceInfo>(5, _omitFieldNames ? '' : 'sub', $pb.PbFieldType.PM, subBuilder: ResourceInfo.create)
     ..hasRequiredFields = false
   ;
@@ -112,28 +112,28 @@ class ResourceInfo extends $pb.GeneratedMessage {
 
   /// Specific details for the resource. This is for internal use only.
   @$pb.TagNumber(3)
-  $1794.Any get resource => $_getN(2);
+  $1795.Any get resource => $_getN(2);
   @$pb.TagNumber(3)
-  set resource($1794.Any v) { setField(3, v); }
+  set resource($1795.Any v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasResource() => $_has(2);
   @$pb.TagNumber(3)
   void clearResource() => clearField(3);
   @$pb.TagNumber(3)
-  $1794.Any ensureResource() => $_ensure(2);
+  $1795.Any ensureResource() => $_ensure(2);
 
   /// The timestamp to collect the info. It is suggested to be set by
   /// the topmost level resource only.
   @$pb.TagNumber(4)
-  $1775.Timestamp get time => $_getN(3);
+  $1776.Timestamp get time => $_getN(3);
   @$pb.TagNumber(4)
-  set time($1775.Timestamp v) { setField(4, v); }
+  set time($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureTime() => $_ensure(3);
+  $1776.Timestamp ensureTime() => $_ensure(3);
 
   /// List of Info for the sub level resources.
   @$pb.TagNumber(5)

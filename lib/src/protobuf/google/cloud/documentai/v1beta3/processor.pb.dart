@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'document_schema.pb.dart' as $4524;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'document_schema.pb.dart' as $4526;
 import 'evaluation.pb.dart' as $1037;
 import 'processor.pbenum.dart';
 
@@ -23,7 +23,7 @@ export 'processor.pbenum.dart';
 /// Information about the upcoming deprecation of this processor version.
 class ProcessorVersion_DeprecationInfo extends $pb.GeneratedMessage {
   factory ProcessorVersion_DeprecationInfo({
-    $1775.Timestamp? deprecationTime,
+    $1776.Timestamp? deprecationTime,
     $core.String? replacementProcessorVersion,
   }) {
     final $result = create();
@@ -40,7 +40,7 @@ class ProcessorVersion_DeprecationInfo extends $pb.GeneratedMessage {
   factory ProcessorVersion_DeprecationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessorVersion.DeprecationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta3'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'deprecationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'deprecationTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'replacementProcessorVersion')
     ..hasRequiredFields = false
   ;
@@ -68,15 +68,15 @@ class ProcessorVersion_DeprecationInfo extends $pb.GeneratedMessage {
 
   /// The time at which this processor version will be deprecated.
   @$pb.TagNumber(1)
-  $1775.Timestamp get deprecationTime => $_getN(0);
+  $1776.Timestamp get deprecationTime => $_getN(0);
   @$pb.TagNumber(1)
-  set deprecationTime($1775.Timestamp v) { setField(1, v); }
+  set deprecationTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDeprecationTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearDeprecationTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureDeprecationTime() => $_ensure(0);
+  $1776.Timestamp ensureDeprecationTime() => $_ensure(0);
 
   /// If set, the processor version that will be used as a replacement.
   @$pb.TagNumber(2)
@@ -321,12 +321,12 @@ class ProcessorVersion extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     ProcessorVersion_State? state,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $1037.EvaluationReference? latestEvaluation,
     $core.String? kmsKeyName,
     $core.String? kmsKeyVersionName,
     $core.bool? googleManaged,
-    $4524.DocumentSchema? documentSchema,
+    $4526.DocumentSchema? documentSchema,
     ProcessorVersion_DeprecationInfo? deprecationInfo,
     ProcessorVersion_ModelType? modelType,
     $core.bool? satisfiesPzs,
@@ -386,12 +386,12 @@ class ProcessorVersion extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..e<ProcessorVersion_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ProcessorVersion_State.STATE_UNSPECIFIED, valueOf: ProcessorVersion_State.valueOf, enumValues: ProcessorVersion_State.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$1037.EvaluationReference>(8, _omitFieldNames ? '' : 'latestEvaluation', subBuilder: $1037.EvaluationReference.create)
     ..aOS(9, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOS(10, _omitFieldNames ? '' : 'kmsKeyVersionName')
     ..aOB(11, _omitFieldNames ? '' : 'googleManaged')
-    ..aOM<$4524.DocumentSchema>(12, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4524.DocumentSchema.create)
+    ..aOM<$4526.DocumentSchema>(12, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4526.DocumentSchema.create)
     ..aOM<ProcessorVersion_DeprecationInfo>(13, _omitFieldNames ? '' : 'deprecationInfo', subBuilder: ProcessorVersion_DeprecationInfo.create)
     ..e<ProcessorVersion_ModelType>(15, _omitFieldNames ? '' : 'modelType', $pb.PbFieldType.OE, defaultOrMaker: ProcessorVersion_ModelType.MODEL_TYPE_UNSPECIFIED, valueOf: ProcessorVersion_ModelType.valueOf, enumValues: ProcessorVersion_ModelType.values)
     ..aOB(16, _omitFieldNames ? '' : 'satisfiesPzs')
@@ -455,15 +455,15 @@ class ProcessorVersion extends $pb.GeneratedMessage {
 
   /// The time the processor version was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// The most recently invoked evaluation for the processor version.
   @$pb.TagNumber(8)
@@ -509,15 +509,15 @@ class ProcessorVersion extends $pb.GeneratedMessage {
 
   /// The schema of the processor version. Describes the output.
   @$pb.TagNumber(12)
-  $4524.DocumentSchema get documentSchema => $_getN(8);
+  $4526.DocumentSchema get documentSchema => $_getN(8);
   @$pb.TagNumber(12)
-  set documentSchema($4524.DocumentSchema v) { setField(12, v); }
+  set documentSchema($4526.DocumentSchema v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDocumentSchema() => $_has(8);
   @$pb.TagNumber(12)
   void clearDocumentSchema() => clearField(12);
   @$pb.TagNumber(12)
-  $4524.DocumentSchema ensureDocumentSchema() => $_ensure(8);
+  $4526.DocumentSchema ensureDocumentSchema() => $_ensure(8);
 
   /// If set, information about the eventual deprecation of this version.
   @$pb.TagNumber(13)
@@ -651,7 +651,7 @@ class Processor extends $pb.GeneratedMessage {
     $core.String? displayName,
     Processor_State? state,
     $core.String? processEndpoint,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? kmsKeyName,
     $core.String? defaultProcessorVersion,
     $core.Iterable<ProcessorVersionAlias>? processorVersionAliases,
@@ -704,7 +704,7 @@ class Processor extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..e<Processor_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Processor_State.STATE_UNSPECIFIED, valueOf: Processor_State.valueOf, enumValues: Processor_State.values)
     ..aOS(6, _omitFieldNames ? '' : 'processEndpoint')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOS(9, _omitFieldNames ? '' : 'defaultProcessorVersion')
     ..pc<ProcessorVersionAlias>(10, _omitFieldNames ? '' : 'processorVersionAliases', $pb.PbFieldType.PM, subBuilder: ProcessorVersionAlias.create)
@@ -790,15 +790,15 @@ class Processor extends $pb.GeneratedMessage {
 
   /// The time the processor was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// The [KMS key](https://cloud.google.com/security-key-management) used for
   /// encryption and decryption in CMEK scenarios.

@@ -13,20 +13,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/any.pb.dart' as $1794;
-import '../../protobuf/timestamp.pb.dart' as $1775;
+import '../../protobuf/any.pb.dart' as $1795;
+import '../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Metadata describing an [Operation][google.longrunning.Operation].
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
     $core.String? projectId,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1794.Any? request,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1795.Any? request,
     $core.Iterable<OperationEvent>? events,
     $core.String? clientId,
-    $1794.Any? runtimeMetadata,
+    $1795.Any? runtimeMetadata,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -65,13 +65,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1794.Any>(5, _omitFieldNames ? '' : 'request', subBuilder: $1794.Any.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1795.Any>(5, _omitFieldNames ? '' : 'request', subBuilder: $1795.Any.create)
     ..pc<OperationEvent>(6, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: OperationEvent.create)
     ..aOS(7, _omitFieldNames ? '' : 'clientId')
-    ..aOM<$1794.Any>(8, _omitFieldNames ? '' : 'runtimeMetadata', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(8, _omitFieldNames ? '' : 'runtimeMetadata', subBuilder: $1795.Any.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'OperationMetadata.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.genomics.v1'))
     ..hasRequiredFields = false
   ;
@@ -109,53 +109,53 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time at which the job was submitted to the Genomics service.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The time at which the job began to run.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The time at which the job stopped running.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 
   /// The original request that started the operation. Note that this will be in
   /// current version of the API. If the operation was started with v1beta2 API
   /// and a GetOperation is performed on v1 API, a v1 request will be returned.
   @$pb.TagNumber(5)
-  $1794.Any get request => $_getN(4);
+  $1795.Any get request => $_getN(4);
   @$pb.TagNumber(5)
-  set request($1794.Any v) { setField(5, v); }
+  set request($1795.Any v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRequest() => $_has(4);
   @$pb.TagNumber(5)
   void clearRequest() => clearField(5);
   @$pb.TagNumber(5)
-  $1794.Any ensureRequest() => $_ensure(4);
+  $1795.Any ensureRequest() => $_ensure(4);
 
   /// Optional event messages that were generated during the job's execution.
   /// This also contains any warnings that were generated during import
@@ -176,15 +176,15 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Runtime metadata on this Operation.
   @$pb.TagNumber(8)
-  $1794.Any get runtimeMetadata => $_getN(7);
+  $1795.Any get runtimeMetadata => $_getN(7);
   @$pb.TagNumber(8)
-  set runtimeMetadata($1794.Any v) { setField(8, v); }
+  set runtimeMetadata($1795.Any v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRuntimeMetadata() => $_has(7);
   @$pb.TagNumber(8)
   void clearRuntimeMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $1794.Any ensureRuntimeMetadata() => $_ensure(7);
+  $1795.Any ensureRuntimeMetadata() => $_ensure(7);
 
   /// Optionally provided by the caller when submitting the request that creates
   /// the operation.
@@ -195,8 +195,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
 /// An event that occurred during an [Operation][google.longrunning.Operation].
 class OperationEvent extends $pb.GeneratedMessage {
   factory OperationEvent({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? description,
   }) {
     final $result = create();
@@ -216,8 +216,8 @@ class OperationEvent extends $pb.GeneratedMessage {
   factory OperationEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -245,28 +245,28 @@ class OperationEvent extends $pb.GeneratedMessage {
 
   /// Optional time of when event started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Optional time of when event finished. An event can have a start time and no
   /// finish time. If an event has a finish time, there must be a start time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Required description of event.
   @$pb.TagNumber(3)

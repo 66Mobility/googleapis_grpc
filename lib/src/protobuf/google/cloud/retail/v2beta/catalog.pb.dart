@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'catalog.pbenum.dart';
-import 'common.pb.dart' as $4598;
-import 'common.pbenum.dart' as $4598;
+import 'common.pb.dart' as $4600;
+import 'common.pbenum.dart' as $4600;
 import 'import_config.pb.dart' as $1298;
 
 export 'catalog.pbenum.dart';
@@ -142,8 +142,8 @@ class ProductLevelConfig extends $pb.GeneratedMessage {
 class CatalogAttribute_FacetConfig_IgnoredFacetValues extends $pb.GeneratedMessage {
   factory CatalogAttribute_FacetConfig_IgnoredFacetValues({
     $core.Iterable<$core.String>? values,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (values != null) {
@@ -163,8 +163,8 @@ class CatalogAttribute_FacetConfig_IgnoredFacetValues extends $pb.GeneratedMessa
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CatalogAttribute.FacetConfig.IgnoredFacetValues', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'values')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -204,28 +204,28 @@ class CatalogAttribute_FacetConfig_IgnoredFacetValues extends $pb.GeneratedMessa
   /// If start time is not empty and end time is empty, then will ignore
   /// these facet values after the start time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// If start time is empty and end time is not empty, then ignore these
   /// facet values before end time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// Replaces a set of textual facet values by the same (possibly different)
@@ -433,7 +433,7 @@ class CatalogAttribute_FacetConfig_RerankConfig extends $pb.GeneratedMessage {
 /// config.
 class CatalogAttribute_FacetConfig extends $pb.GeneratedMessage {
   factory CatalogAttribute_FacetConfig({
-    $core.Iterable<$4598.Interval>? facetIntervals,
+    $core.Iterable<$4600.Interval>? facetIntervals,
     $core.Iterable<CatalogAttribute_FacetConfig_IgnoredFacetValues>? ignoredFacetValues,
     $core.Iterable<CatalogAttribute_FacetConfig_MergedFacetValue>? mergedFacetValues,
     CatalogAttribute_FacetConfig_MergedFacet? mergedFacet,
@@ -462,7 +462,7 @@ class CatalogAttribute_FacetConfig extends $pb.GeneratedMessage {
   factory CatalogAttribute_FacetConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CatalogAttribute.FacetConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..pc<$4598.Interval>(1, _omitFieldNames ? '' : 'facetIntervals', $pb.PbFieldType.PM, subBuilder: $4598.Interval.create)
+    ..pc<$4600.Interval>(1, _omitFieldNames ? '' : 'facetIntervals', $pb.PbFieldType.PM, subBuilder: $4600.Interval.create)
     ..pc<CatalogAttribute_FacetConfig_IgnoredFacetValues>(2, _omitFieldNames ? '' : 'ignoredFacetValues', $pb.PbFieldType.PM, subBuilder: CatalogAttribute_FacetConfig_IgnoredFacetValues.create)
     ..pc<CatalogAttribute_FacetConfig_MergedFacetValue>(3, _omitFieldNames ? '' : 'mergedFacetValues', $pb.PbFieldType.PM, subBuilder: CatalogAttribute_FacetConfig_MergedFacetValue.create)
     ..aOM<CatalogAttribute_FacetConfig_MergedFacet>(4, _omitFieldNames ? '' : 'mergedFacet', subBuilder: CatalogAttribute_FacetConfig_MergedFacet.create)
@@ -503,7 +503,7 @@ class CatalogAttribute_FacetConfig extends $pb.GeneratedMessage {
   /// are provided, then the lower bound must be smaller or equal than the
   /// upper bound.
   @$pb.TagNumber(1)
-  $core.List<$4598.Interval> get facetIntervals => $_getList(0);
+  $core.List<$4600.Interval> get facetIntervals => $_getList(0);
 
   /// Each instance represents a list of attribute values to ignore as facet
   /// values for a specific time range. The maximum number of instances per
@@ -558,7 +558,7 @@ class CatalogAttribute extends $pb.GeneratedMessage {
     CatalogAttribute_IndexableOption? indexableOption,
     CatalogAttribute_DynamicFacetableOption? dynamicFacetableOption,
     CatalogAttribute_SearchableOption? searchableOption,
-    $4598.RecommendationsFilteringOption? recommendationsFilteringOption,
+    $4600.RecommendationsFilteringOption? recommendationsFilteringOption,
     $core.bool? inUse,
     CatalogAttribute_AttributeType? type,
     CatalogAttribute_ExactSearchableOption? exactSearchableOption,
@@ -607,7 +607,7 @@ class CatalogAttribute extends $pb.GeneratedMessage {
     ..e<CatalogAttribute_IndexableOption>(5, _omitFieldNames ? '' : 'indexableOption', $pb.PbFieldType.OE, defaultOrMaker: CatalogAttribute_IndexableOption.INDEXABLE_OPTION_UNSPECIFIED, valueOf: CatalogAttribute_IndexableOption.valueOf, enumValues: CatalogAttribute_IndexableOption.values)
     ..e<CatalogAttribute_DynamicFacetableOption>(6, _omitFieldNames ? '' : 'dynamicFacetableOption', $pb.PbFieldType.OE, defaultOrMaker: CatalogAttribute_DynamicFacetableOption.DYNAMIC_FACETABLE_OPTION_UNSPECIFIED, valueOf: CatalogAttribute_DynamicFacetableOption.valueOf, enumValues: CatalogAttribute_DynamicFacetableOption.values)
     ..e<CatalogAttribute_SearchableOption>(7, _omitFieldNames ? '' : 'searchableOption', $pb.PbFieldType.OE, defaultOrMaker: CatalogAttribute_SearchableOption.SEARCHABLE_OPTION_UNSPECIFIED, valueOf: CatalogAttribute_SearchableOption.valueOf, enumValues: CatalogAttribute_SearchableOption.values)
-    ..e<$4598.RecommendationsFilteringOption>(8, _omitFieldNames ? '' : 'recommendationsFilteringOption', $pb.PbFieldType.OE, defaultOrMaker: $4598.RecommendationsFilteringOption.RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED, valueOf: $4598.RecommendationsFilteringOption.valueOf, enumValues: $4598.RecommendationsFilteringOption.values)
+    ..e<$4600.RecommendationsFilteringOption>(8, _omitFieldNames ? '' : 'recommendationsFilteringOption', $pb.PbFieldType.OE, defaultOrMaker: $4600.RecommendationsFilteringOption.RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED, valueOf: $4600.RecommendationsFilteringOption.valueOf, enumValues: $4600.RecommendationsFilteringOption.values)
     ..aOB(9, _omitFieldNames ? '' : 'inUse')
     ..e<CatalogAttribute_AttributeType>(10, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: CatalogAttribute_AttributeType.UNKNOWN, valueOf: CatalogAttribute_AttributeType.valueOf, enumValues: CatalogAttribute_AttributeType.values)
     ..e<CatalogAttribute_ExactSearchableOption>(11, _omitFieldNames ? '' : 'exactSearchableOption', $pb.PbFieldType.OE, defaultOrMaker: CatalogAttribute_ExactSearchableOption.EXACT_SEARCHABLE_OPTION_UNSPECIFIED, valueOf: CatalogAttribute_ExactSearchableOption.valueOf, enumValues: CatalogAttribute_ExactSearchableOption.values)
@@ -720,9 +720,9 @@ class CatalogAttribute extends $pb.GeneratedMessage {
   /// This option works for categorical features only,
   /// does not work for numerical features, inventory filtering.
   @$pb.TagNumber(8)
-  $4598.RecommendationsFilteringOption get recommendationsFilteringOption => $_getN(4);
+  $4600.RecommendationsFilteringOption get recommendationsFilteringOption => $_getN(4);
   @$pb.TagNumber(8)
-  set recommendationsFilteringOption($4598.RecommendationsFilteringOption v) { setField(8, v); }
+  set recommendationsFilteringOption($4600.RecommendationsFilteringOption v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRecommendationsFilteringOption() => $_has(4);
   @$pb.TagNumber(8)
@@ -815,7 +815,7 @@ class AttributesConfig extends $pb.GeneratedMessage {
   factory AttributesConfig({
     $core.String? name,
     $core.Map<$core.String, CatalogAttribute>? catalogAttributes,
-    $4598.AttributeConfigLevel? attributeConfigLevel,
+    $4600.AttributeConfigLevel? attributeConfigLevel,
   }) {
     final $result = create();
     if (name != null) {
@@ -836,7 +836,7 @@ class AttributesConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttributesConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..m<$core.String, CatalogAttribute>(2, _omitFieldNames ? '' : 'catalogAttributes', entryClassName: 'AttributesConfig.CatalogAttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: CatalogAttribute.create, valueDefaultOrMaker: CatalogAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
-    ..e<$4598.AttributeConfigLevel>(3, _omitFieldNames ? '' : 'attributeConfigLevel', $pb.PbFieldType.OE, defaultOrMaker: $4598.AttributeConfigLevel.ATTRIBUTE_CONFIG_LEVEL_UNSPECIFIED, valueOf: $4598.AttributeConfigLevel.valueOf, enumValues: $4598.AttributeConfigLevel.values)
+    ..e<$4600.AttributeConfigLevel>(3, _omitFieldNames ? '' : 'attributeConfigLevel', $pb.PbFieldType.OE, defaultOrMaker: $4600.AttributeConfigLevel.ATTRIBUTE_CONFIG_LEVEL_UNSPECIFIED, valueOf: $4600.AttributeConfigLevel.valueOf, enumValues: $4600.AttributeConfigLevel.values)
     ..hasRequiredFields = false
   ;
 
@@ -888,9 +888,9 @@ class AttributesConfig extends $pb.GeneratedMessage {
   /// [AttributeConfigLevel][google.cloud.retail.v2beta.AttributeConfigLevel]
   /// used for this catalog.
   @$pb.TagNumber(3)
-  $4598.AttributeConfigLevel get attributeConfigLevel => $_getN(2);
+  $4600.AttributeConfigLevel get attributeConfigLevel => $_getN(2);
   @$pb.TagNumber(3)
-  set attributeConfigLevel($4598.AttributeConfigLevel v) { setField(3, v); }
+  set attributeConfigLevel($4600.AttributeConfigLevel v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAttributeConfigLevel() => $_has(2);
   @$pb.TagNumber(3)

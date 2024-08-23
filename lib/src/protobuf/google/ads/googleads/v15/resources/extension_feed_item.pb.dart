@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $1867;
-import '../common/extensions.pb.dart' as $2272;
-import '../enums/extension_type.pbenum.dart' as $2131;
-import '../enums/feed_item_status.pbenum.dart' as $2205;
-import '../enums/feed_item_target_device.pbenum.dart' as $2273;
+import '../common/criteria.pb.dart' as $1868;
+import '../common/extensions.pb.dart' as $2273;
+import '../enums/extension_type.pbenum.dart' as $2132;
+import '../enums/feed_item_status.pbenum.dart' as $2206;
+import '../enums/feed_item_target_device.pbenum.dart' as $2274;
 
 enum ExtensionFeedItem_Extension {
   sitelinkFeedItem, 
@@ -46,29 +46,29 @@ enum ExtensionFeedItem_ServingResourceTargeting {
 class ExtensionFeedItem extends $pb.GeneratedMessage {
   factory ExtensionFeedItem({
     $core.String? resourceName,
-    $2272.SitelinkFeedItem? sitelinkFeedItem,
-    $2272.StructuredSnippetFeedItem? structuredSnippetFeedItem,
-    $2205.FeedItemStatusEnum_FeedItemStatus? status,
-    $2272.AppFeedItem? appFeedItem,
-    $2272.CallFeedItem? callFeedItem,
-    $2272.CalloutFeedItem? calloutFeedItem,
-    $2272.TextMessageFeedItem? textMessageFeedItem,
-    $2272.PriceFeedItem? priceFeedItem,
-    $2272.PromotionFeedItem? promotionFeedItem,
-    $2131.ExtensionTypeEnum_ExtensionType? extensionType,
-    $2272.LocationFeedItem? locationFeedItem,
-    $2272.AffiliateLocationFeedItem? affiliateLocationFeedItem,
-    $core.Iterable<$1867.AdScheduleInfo>? adSchedules,
-    $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice? device,
-    $1867.KeywordInfo? targetedKeyword,
-    $2272.HotelCalloutFeedItem? hotelCalloutFeedItem,
+    $2273.SitelinkFeedItem? sitelinkFeedItem,
+    $2273.StructuredSnippetFeedItem? structuredSnippetFeedItem,
+    $2206.FeedItemStatusEnum_FeedItemStatus? status,
+    $2273.AppFeedItem? appFeedItem,
+    $2273.CallFeedItem? callFeedItem,
+    $2273.CalloutFeedItem? calloutFeedItem,
+    $2273.TextMessageFeedItem? textMessageFeedItem,
+    $2273.PriceFeedItem? priceFeedItem,
+    $2273.PromotionFeedItem? promotionFeedItem,
+    $2132.ExtensionTypeEnum_ExtensionType? extensionType,
+    $2273.LocationFeedItem? locationFeedItem,
+    $2273.AffiliateLocationFeedItem? affiliateLocationFeedItem,
+    $core.Iterable<$1868.AdScheduleInfo>? adSchedules,
+    $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice? device,
+    $1868.KeywordInfo? targetedKeyword,
+    $2273.HotelCalloutFeedItem? hotelCalloutFeedItem,
     $fixnum.Int64? id,
     $core.String? startDateTime,
     $core.String? endDateTime,
     $core.String? targetedCampaign,
     $core.String? targetedAdGroup,
     $core.String? targetedGeoTargetConstant,
-    $2272.ImageFeedItem? imageFeedItem,
+    $2273.ImageFeedItem? imageFeedItem,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -173,29 +173,29 @@ class ExtensionFeedItem extends $pb.GeneratedMessage {
     ..oo(0, [2, 3, 7, 8, 9, 10, 11, 12, 14, 15, 23, 31])
     ..oo(1, [28, 29])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2272.SitelinkFeedItem>(2, _omitFieldNames ? '' : 'sitelinkFeedItem', subBuilder: $2272.SitelinkFeedItem.create)
-    ..aOM<$2272.StructuredSnippetFeedItem>(3, _omitFieldNames ? '' : 'structuredSnippetFeedItem', subBuilder: $2272.StructuredSnippetFeedItem.create)
-    ..e<$2205.FeedItemStatusEnum_FeedItemStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2205.FeedItemStatusEnum_FeedItemStatus.UNSPECIFIED, valueOf: $2205.FeedItemStatusEnum_FeedItemStatus.valueOf, enumValues: $2205.FeedItemStatusEnum_FeedItemStatus.values)
-    ..aOM<$2272.AppFeedItem>(7, _omitFieldNames ? '' : 'appFeedItem', subBuilder: $2272.AppFeedItem.create)
-    ..aOM<$2272.CallFeedItem>(8, _omitFieldNames ? '' : 'callFeedItem', subBuilder: $2272.CallFeedItem.create)
-    ..aOM<$2272.CalloutFeedItem>(9, _omitFieldNames ? '' : 'calloutFeedItem', subBuilder: $2272.CalloutFeedItem.create)
-    ..aOM<$2272.TextMessageFeedItem>(10, _omitFieldNames ? '' : 'textMessageFeedItem', subBuilder: $2272.TextMessageFeedItem.create)
-    ..aOM<$2272.PriceFeedItem>(11, _omitFieldNames ? '' : 'priceFeedItem', subBuilder: $2272.PriceFeedItem.create)
-    ..aOM<$2272.PromotionFeedItem>(12, _omitFieldNames ? '' : 'promotionFeedItem', subBuilder: $2272.PromotionFeedItem.create)
-    ..e<$2131.ExtensionTypeEnum_ExtensionType>(13, _omitFieldNames ? '' : 'extensionType', $pb.PbFieldType.OE, defaultOrMaker: $2131.ExtensionTypeEnum_ExtensionType.UNSPECIFIED, valueOf: $2131.ExtensionTypeEnum_ExtensionType.valueOf, enumValues: $2131.ExtensionTypeEnum_ExtensionType.values)
-    ..aOM<$2272.LocationFeedItem>(14, _omitFieldNames ? '' : 'locationFeedItem', subBuilder: $2272.LocationFeedItem.create)
-    ..aOM<$2272.AffiliateLocationFeedItem>(15, _omitFieldNames ? '' : 'affiliateLocationFeedItem', subBuilder: $2272.AffiliateLocationFeedItem.create)
-    ..pc<$1867.AdScheduleInfo>(16, _omitFieldNames ? '' : 'adSchedules', $pb.PbFieldType.PM, subBuilder: $1867.AdScheduleInfo.create)
-    ..e<$2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice>(17, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice.UNSPECIFIED, valueOf: $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice.valueOf, enumValues: $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice.values)
-    ..aOM<$1867.KeywordInfo>(22, _omitFieldNames ? '' : 'targetedKeyword', subBuilder: $1867.KeywordInfo.create)
-    ..aOM<$2272.HotelCalloutFeedItem>(23, _omitFieldNames ? '' : 'hotelCalloutFeedItem', subBuilder: $2272.HotelCalloutFeedItem.create)
+    ..aOM<$2273.SitelinkFeedItem>(2, _omitFieldNames ? '' : 'sitelinkFeedItem', subBuilder: $2273.SitelinkFeedItem.create)
+    ..aOM<$2273.StructuredSnippetFeedItem>(3, _omitFieldNames ? '' : 'structuredSnippetFeedItem', subBuilder: $2273.StructuredSnippetFeedItem.create)
+    ..e<$2206.FeedItemStatusEnum_FeedItemStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2206.FeedItemStatusEnum_FeedItemStatus.UNSPECIFIED, valueOf: $2206.FeedItemStatusEnum_FeedItemStatus.valueOf, enumValues: $2206.FeedItemStatusEnum_FeedItemStatus.values)
+    ..aOM<$2273.AppFeedItem>(7, _omitFieldNames ? '' : 'appFeedItem', subBuilder: $2273.AppFeedItem.create)
+    ..aOM<$2273.CallFeedItem>(8, _omitFieldNames ? '' : 'callFeedItem', subBuilder: $2273.CallFeedItem.create)
+    ..aOM<$2273.CalloutFeedItem>(9, _omitFieldNames ? '' : 'calloutFeedItem', subBuilder: $2273.CalloutFeedItem.create)
+    ..aOM<$2273.TextMessageFeedItem>(10, _omitFieldNames ? '' : 'textMessageFeedItem', subBuilder: $2273.TextMessageFeedItem.create)
+    ..aOM<$2273.PriceFeedItem>(11, _omitFieldNames ? '' : 'priceFeedItem', subBuilder: $2273.PriceFeedItem.create)
+    ..aOM<$2273.PromotionFeedItem>(12, _omitFieldNames ? '' : 'promotionFeedItem', subBuilder: $2273.PromotionFeedItem.create)
+    ..e<$2132.ExtensionTypeEnum_ExtensionType>(13, _omitFieldNames ? '' : 'extensionType', $pb.PbFieldType.OE, defaultOrMaker: $2132.ExtensionTypeEnum_ExtensionType.UNSPECIFIED, valueOf: $2132.ExtensionTypeEnum_ExtensionType.valueOf, enumValues: $2132.ExtensionTypeEnum_ExtensionType.values)
+    ..aOM<$2273.LocationFeedItem>(14, _omitFieldNames ? '' : 'locationFeedItem', subBuilder: $2273.LocationFeedItem.create)
+    ..aOM<$2273.AffiliateLocationFeedItem>(15, _omitFieldNames ? '' : 'affiliateLocationFeedItem', subBuilder: $2273.AffiliateLocationFeedItem.create)
+    ..pc<$1868.AdScheduleInfo>(16, _omitFieldNames ? '' : 'adSchedules', $pb.PbFieldType.PM, subBuilder: $1868.AdScheduleInfo.create)
+    ..e<$2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice>(17, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice.UNSPECIFIED, valueOf: $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice.valueOf, enumValues: $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice.values)
+    ..aOM<$1868.KeywordInfo>(22, _omitFieldNames ? '' : 'targetedKeyword', subBuilder: $1868.KeywordInfo.create)
+    ..aOM<$2273.HotelCalloutFeedItem>(23, _omitFieldNames ? '' : 'hotelCalloutFeedItem', subBuilder: $2273.HotelCalloutFeedItem.create)
     ..aInt64(25, _omitFieldNames ? '' : 'id')
     ..aOS(26, _omitFieldNames ? '' : 'startDateTime')
     ..aOS(27, _omitFieldNames ? '' : 'endDateTime')
     ..aOS(28, _omitFieldNames ? '' : 'targetedCampaign')
     ..aOS(29, _omitFieldNames ? '' : 'targetedAdGroup')
     ..aOS(30, _omitFieldNames ? '' : 'targetedGeoTargetConstant')
-    ..aOM<$2272.ImageFeedItem>(31, _omitFieldNames ? '' : 'imageFeedItem', subBuilder: $2272.ImageFeedItem.create)
+    ..aOM<$2273.ImageFeedItem>(31, _omitFieldNames ? '' : 'imageFeedItem', subBuilder: $2273.ImageFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -241,34 +241,34 @@ class ExtensionFeedItem extends $pb.GeneratedMessage {
 
   /// Sitelink.
   @$pb.TagNumber(2)
-  $2272.SitelinkFeedItem get sitelinkFeedItem => $_getN(1);
+  $2273.SitelinkFeedItem get sitelinkFeedItem => $_getN(1);
   @$pb.TagNumber(2)
-  set sitelinkFeedItem($2272.SitelinkFeedItem v) { setField(2, v); }
+  set sitelinkFeedItem($2273.SitelinkFeedItem v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSitelinkFeedItem() => $_has(1);
   @$pb.TagNumber(2)
   void clearSitelinkFeedItem() => clearField(2);
   @$pb.TagNumber(2)
-  $2272.SitelinkFeedItem ensureSitelinkFeedItem() => $_ensure(1);
+  $2273.SitelinkFeedItem ensureSitelinkFeedItem() => $_ensure(1);
 
   /// Structured snippet extension.
   @$pb.TagNumber(3)
-  $2272.StructuredSnippetFeedItem get structuredSnippetFeedItem => $_getN(2);
+  $2273.StructuredSnippetFeedItem get structuredSnippetFeedItem => $_getN(2);
   @$pb.TagNumber(3)
-  set structuredSnippetFeedItem($2272.StructuredSnippetFeedItem v) { setField(3, v); }
+  set structuredSnippetFeedItem($2273.StructuredSnippetFeedItem v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStructuredSnippetFeedItem() => $_has(2);
   @$pb.TagNumber(3)
   void clearStructuredSnippetFeedItem() => clearField(3);
   @$pb.TagNumber(3)
-  $2272.StructuredSnippetFeedItem ensureStructuredSnippetFeedItem() => $_ensure(2);
+  $2273.StructuredSnippetFeedItem ensureStructuredSnippetFeedItem() => $_ensure(2);
 
   /// Output only. Status of the feed item.
   /// This field is read-only.
   @$pb.TagNumber(4)
-  $2205.FeedItemStatusEnum_FeedItemStatus get status => $_getN(3);
+  $2206.FeedItemStatusEnum_FeedItemStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($2205.FeedItemStatusEnum_FeedItemStatus v) { setField(4, v); }
+  set status($2206.FeedItemStatusEnum_FeedItemStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -276,82 +276,82 @@ class ExtensionFeedItem extends $pb.GeneratedMessage {
 
   /// App extension.
   @$pb.TagNumber(7)
-  $2272.AppFeedItem get appFeedItem => $_getN(4);
+  $2273.AppFeedItem get appFeedItem => $_getN(4);
   @$pb.TagNumber(7)
-  set appFeedItem($2272.AppFeedItem v) { setField(7, v); }
+  set appFeedItem($2273.AppFeedItem v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAppFeedItem() => $_has(4);
   @$pb.TagNumber(7)
   void clearAppFeedItem() => clearField(7);
   @$pb.TagNumber(7)
-  $2272.AppFeedItem ensureAppFeedItem() => $_ensure(4);
+  $2273.AppFeedItem ensureAppFeedItem() => $_ensure(4);
 
   /// Call extension.
   @$pb.TagNumber(8)
-  $2272.CallFeedItem get callFeedItem => $_getN(5);
+  $2273.CallFeedItem get callFeedItem => $_getN(5);
   @$pb.TagNumber(8)
-  set callFeedItem($2272.CallFeedItem v) { setField(8, v); }
+  set callFeedItem($2273.CallFeedItem v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCallFeedItem() => $_has(5);
   @$pb.TagNumber(8)
   void clearCallFeedItem() => clearField(8);
   @$pb.TagNumber(8)
-  $2272.CallFeedItem ensureCallFeedItem() => $_ensure(5);
+  $2273.CallFeedItem ensureCallFeedItem() => $_ensure(5);
 
   /// Callout extension.
   @$pb.TagNumber(9)
-  $2272.CalloutFeedItem get calloutFeedItem => $_getN(6);
+  $2273.CalloutFeedItem get calloutFeedItem => $_getN(6);
   @$pb.TagNumber(9)
-  set calloutFeedItem($2272.CalloutFeedItem v) { setField(9, v); }
+  set calloutFeedItem($2273.CalloutFeedItem v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCalloutFeedItem() => $_has(6);
   @$pb.TagNumber(9)
   void clearCalloutFeedItem() => clearField(9);
   @$pb.TagNumber(9)
-  $2272.CalloutFeedItem ensureCalloutFeedItem() => $_ensure(6);
+  $2273.CalloutFeedItem ensureCalloutFeedItem() => $_ensure(6);
 
   /// Text message extension.
   @$pb.TagNumber(10)
-  $2272.TextMessageFeedItem get textMessageFeedItem => $_getN(7);
+  $2273.TextMessageFeedItem get textMessageFeedItem => $_getN(7);
   @$pb.TagNumber(10)
-  set textMessageFeedItem($2272.TextMessageFeedItem v) { setField(10, v); }
+  set textMessageFeedItem($2273.TextMessageFeedItem v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTextMessageFeedItem() => $_has(7);
   @$pb.TagNumber(10)
   void clearTextMessageFeedItem() => clearField(10);
   @$pb.TagNumber(10)
-  $2272.TextMessageFeedItem ensureTextMessageFeedItem() => $_ensure(7);
+  $2273.TextMessageFeedItem ensureTextMessageFeedItem() => $_ensure(7);
 
   /// Price extension.
   @$pb.TagNumber(11)
-  $2272.PriceFeedItem get priceFeedItem => $_getN(8);
+  $2273.PriceFeedItem get priceFeedItem => $_getN(8);
   @$pb.TagNumber(11)
-  set priceFeedItem($2272.PriceFeedItem v) { setField(11, v); }
+  set priceFeedItem($2273.PriceFeedItem v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasPriceFeedItem() => $_has(8);
   @$pb.TagNumber(11)
   void clearPriceFeedItem() => clearField(11);
   @$pb.TagNumber(11)
-  $2272.PriceFeedItem ensurePriceFeedItem() => $_ensure(8);
+  $2273.PriceFeedItem ensurePriceFeedItem() => $_ensure(8);
 
   /// Promotion extension.
   @$pb.TagNumber(12)
-  $2272.PromotionFeedItem get promotionFeedItem => $_getN(9);
+  $2273.PromotionFeedItem get promotionFeedItem => $_getN(9);
   @$pb.TagNumber(12)
-  set promotionFeedItem($2272.PromotionFeedItem v) { setField(12, v); }
+  set promotionFeedItem($2273.PromotionFeedItem v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasPromotionFeedItem() => $_has(9);
   @$pb.TagNumber(12)
   void clearPromotionFeedItem() => clearField(12);
   @$pb.TagNumber(12)
-  $2272.PromotionFeedItem ensurePromotionFeedItem() => $_ensure(9);
+  $2273.PromotionFeedItem ensurePromotionFeedItem() => $_ensure(9);
 
   /// Output only. The extension type of the extension feed item.
   /// This field is read-only.
   @$pb.TagNumber(13)
-  $2131.ExtensionTypeEnum_ExtensionType get extensionType => $_getN(10);
+  $2132.ExtensionTypeEnum_ExtensionType get extensionType => $_getN(10);
   @$pb.TagNumber(13)
-  set extensionType($2131.ExtensionTypeEnum_ExtensionType v) { setField(13, v); }
+  set extensionType($2132.ExtensionTypeEnum_ExtensionType v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasExtensionType() => $_has(10);
   @$pb.TagNumber(13)
@@ -360,40 +360,40 @@ class ExtensionFeedItem extends $pb.GeneratedMessage {
   /// Output only. Location extension. Locations are synced from a Business
   /// Profile into a feed. This field is read-only.
   @$pb.TagNumber(14)
-  $2272.LocationFeedItem get locationFeedItem => $_getN(11);
+  $2273.LocationFeedItem get locationFeedItem => $_getN(11);
   @$pb.TagNumber(14)
-  set locationFeedItem($2272.LocationFeedItem v) { setField(14, v); }
+  set locationFeedItem($2273.LocationFeedItem v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasLocationFeedItem() => $_has(11);
   @$pb.TagNumber(14)
   void clearLocationFeedItem() => clearField(14);
   @$pb.TagNumber(14)
-  $2272.LocationFeedItem ensureLocationFeedItem() => $_ensure(11);
+  $2273.LocationFeedItem ensureLocationFeedItem() => $_ensure(11);
 
   /// Output only. Affiliate location extension. Feed locations are populated
   /// by Google Ads based on a chain ID. This field is read-only.
   @$pb.TagNumber(15)
-  $2272.AffiliateLocationFeedItem get affiliateLocationFeedItem => $_getN(12);
+  $2273.AffiliateLocationFeedItem get affiliateLocationFeedItem => $_getN(12);
   @$pb.TagNumber(15)
-  set affiliateLocationFeedItem($2272.AffiliateLocationFeedItem v) { setField(15, v); }
+  set affiliateLocationFeedItem($2273.AffiliateLocationFeedItem v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasAffiliateLocationFeedItem() => $_has(12);
   @$pb.TagNumber(15)
   void clearAffiliateLocationFeedItem() => clearField(15);
   @$pb.TagNumber(15)
-  $2272.AffiliateLocationFeedItem ensureAffiliateLocationFeedItem() => $_ensure(12);
+  $2273.AffiliateLocationFeedItem ensureAffiliateLocationFeedItem() => $_ensure(12);
 
   /// List of non-overlapping schedules specifying all time intervals
   /// for which the feed item may serve. There can be a maximum of 6 schedules
   /// per day.
   @$pb.TagNumber(16)
-  $core.List<$1867.AdScheduleInfo> get adSchedules => $_getList(13);
+  $core.List<$1868.AdScheduleInfo> get adSchedules => $_getList(13);
 
   /// The targeted device.
   @$pb.TagNumber(17)
-  $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice get device => $_getN(14);
+  $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice get device => $_getN(14);
   @$pb.TagNumber(17)
-  set device($2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice v) { setField(17, v); }
+  set device($2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasDevice() => $_has(14);
   @$pb.TagNumber(17)
@@ -401,27 +401,27 @@ class ExtensionFeedItem extends $pb.GeneratedMessage {
 
   /// The targeted keyword.
   @$pb.TagNumber(22)
-  $1867.KeywordInfo get targetedKeyword => $_getN(15);
+  $1868.KeywordInfo get targetedKeyword => $_getN(15);
   @$pb.TagNumber(22)
-  set targetedKeyword($1867.KeywordInfo v) { setField(22, v); }
+  set targetedKeyword($1868.KeywordInfo v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasTargetedKeyword() => $_has(15);
   @$pb.TagNumber(22)
   void clearTargetedKeyword() => clearField(22);
   @$pb.TagNumber(22)
-  $1867.KeywordInfo ensureTargetedKeyword() => $_ensure(15);
+  $1868.KeywordInfo ensureTargetedKeyword() => $_ensure(15);
 
   /// Hotel Callout extension.
   @$pb.TagNumber(23)
-  $2272.HotelCalloutFeedItem get hotelCalloutFeedItem => $_getN(16);
+  $2273.HotelCalloutFeedItem get hotelCalloutFeedItem => $_getN(16);
   @$pb.TagNumber(23)
-  set hotelCalloutFeedItem($2272.HotelCalloutFeedItem v) { setField(23, v); }
+  set hotelCalloutFeedItem($2273.HotelCalloutFeedItem v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasHotelCalloutFeedItem() => $_has(16);
   @$pb.TagNumber(23)
   void clearHotelCalloutFeedItem() => clearField(23);
   @$pb.TagNumber(23)
-  $2272.HotelCalloutFeedItem ensureHotelCalloutFeedItem() => $_ensure(16);
+  $2273.HotelCalloutFeedItem ensureHotelCalloutFeedItem() => $_ensure(16);
 
   /// Output only. The ID of this feed item. Read-only.
   @$pb.TagNumber(25)
@@ -491,15 +491,15 @@ class ExtensionFeedItem extends $pb.GeneratedMessage {
 
   /// Immutable. Advertiser provided image extension.
   @$pb.TagNumber(31)
-  $2272.ImageFeedItem get imageFeedItem => $_getN(23);
+  $2273.ImageFeedItem get imageFeedItem => $_getN(23);
   @$pb.TagNumber(31)
-  set imageFeedItem($2272.ImageFeedItem v) { setField(31, v); }
+  set imageFeedItem($2273.ImageFeedItem v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasImageFeedItem() => $_has(23);
   @$pb.TagNumber(31)
   void clearImageFeedItem() => clearField(31);
   @$pb.TagNumber(31)
-  $2272.ImageFeedItem ensureImageFeedItem() => $_ensure(23);
+  $2273.ImageFeedItem ensureImageFeedItem() => $_ensure(23);
 }
 
 

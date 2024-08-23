@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// Log of a request to Identitytoolkit. This proto is modeled after
 /// google.cloud.audit.AuditLog so that consumers can easily query
@@ -24,12 +24,12 @@ import '../../../rpc/status.pb.dart' as $1795;
 class RequestLog extends $pb.GeneratedMessage {
   factory RequestLog({
     $core.String? methodName,
-    $1795.Status? status,
+    $1796.Status? status,
     RequestMetadata? requestMetadata,
-    $1734.Struct? request,
-    $1734.Struct? response,
+    $1735.Struct? request,
+    $1735.Struct? response,
     $fixnum.Int64? numResponseItems,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
   }) {
     final $result = create();
     if (methodName != null) {
@@ -61,12 +61,12 @@ class RequestLog extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.identitytoolkit.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'methodName')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOM<RequestMetadata>(3, _omitFieldNames ? '' : 'requestMetadata', subBuilder: RequestMetadata.create)
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'request', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'response', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'request', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'response', subBuilder: $1735.Struct.create)
     ..aInt64(6, _omitFieldNames ? '' : 'numResponseItems')
-    ..aOM<$1734.Struct>(7, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(7, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -108,15 +108,15 @@ class RequestLog extends $pb.GeneratedMessage {
 
   /// The status of the overall operation.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 
   /// Metadata about the operation.
   @$pb.TagNumber(3)
@@ -137,15 +137,15 @@ class RequestLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(4)
-  $1734.Struct get request => $_getN(3);
+  $1735.Struct get request => $_getN(3);
   @$pb.TagNumber(4)
-  set request($1734.Struct v) { setField(4, v); }
+  set request($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRequest() => $_has(3);
   @$pb.TagNumber(4)
   void clearRequest() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureRequest() => $_ensure(3);
+  $1735.Struct ensureRequest() => $_ensure(3);
 
   /// The operation response. This may not include all response elements,
   /// such as those that are too large, privacy-sensitive, or duplicated
@@ -154,15 +154,15 @@ class RequestLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(5)
-  $1734.Struct get response => $_getN(4);
+  $1735.Struct get response => $_getN(4);
   @$pb.TagNumber(5)
-  set response($1734.Struct v) { setField(5, v); }
+  set response($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponse() => $_has(4);
   @$pb.TagNumber(5)
   void clearResponse() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureResponse() => $_ensure(4);
+  $1735.Struct ensureResponse() => $_ensure(4);
 
   /// The number of items returned from a List or Query API method,
   /// if applicable.
@@ -178,15 +178,15 @@ class RequestLog extends $pb.GeneratedMessage {
   /// Other service-specific data about the request, response, and other
   /// information associated with the current event.
   @$pb.TagNumber(7)
-  $1734.Struct get metadata => $_getN(6);
+  $1735.Struct get metadata => $_getN(6);
   @$pb.TagNumber(7)
-  set metadata($1734.Struct v) { setField(7, v); }
+  set metadata($1735.Struct v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasMetadata() => $_has(6);
   @$pb.TagNumber(7)
   void clearMetadata() => clearField(7);
   @$pb.TagNumber(7)
-  $1734.Struct ensureMetadata() => $_ensure(6);
+  $1735.Struct ensureMetadata() => $_ensure(6);
 }
 
 /// Metadata about the request.

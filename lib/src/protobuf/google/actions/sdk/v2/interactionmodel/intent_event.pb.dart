@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'event_handler.pb.dart' as $1750;
+import 'event_handler.pb.dart' as $1751;
 
 /// Registers Events which trigger as the result of an intent match.
 class IntentEvent extends $pb.GeneratedMessage {
   factory IntentEvent({
     $core.String? intent,
     $core.String? transitionToScene,
-    $1750.EventHandler? handler,
+    $1751.EventHandler? handler,
   }) {
     final $result = create();
     if (intent != null) {
@@ -41,7 +41,7 @@ class IntentEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IntentEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'intent')
     ..aOS(2, _omitFieldNames ? '' : 'transitionToScene')
-    ..aOM<$1750.EventHandler>(3, _omitFieldNames ? '' : 'handler', subBuilder: $1750.EventHandler.create)
+    ..aOM<$1751.EventHandler>(3, _omitFieldNames ? '' : 'handler', subBuilder: $1751.EventHandler.create)
     ..hasRequiredFields = false
   ;
 
@@ -91,15 +91,15 @@ class IntentEvent extends $pb.GeneratedMessage {
   /// before transitioning to the destination scene. Useful to generate prompts
   /// in response to events.
   @$pb.TagNumber(3)
-  $1750.EventHandler get handler => $_getN(2);
+  $1751.EventHandler get handler => $_getN(2);
   @$pb.TagNumber(3)
-  set handler($1750.EventHandler v) { setField(3, v); }
+  set handler($1751.EventHandler v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasHandler() => $_has(2);
   @$pb.TagNumber(3)
   void clearHandler() => clearField(3);
   @$pb.TagNumber(3)
-  $1750.EventHandler ensureHandler() => $_ensure(2);
+  $1751.EventHandler ensureHandler() => $_ensure(2);
 }
 
 

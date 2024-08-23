@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'deployed_model_ref.pb.dart' as $4284;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'deployed_model_ref.pb.dart' as $4285;
 import 'deployment_resource_pool.pb.dart' as $559;
 import 'endpoint.pb.dart' as $561;
-import 'operation.pb.dart' as $4295;
+import 'operation.pb.dart' as $4296;
 
 /// Request message for CreateDeploymentResourcePool method.
 class CreateDeploymentResourcePoolRequest extends $pb.GeneratedMessage {
@@ -112,7 +112,7 @@ class CreateDeploymentResourcePoolRequest extends $pb.GeneratedMessage {
 /// Runtime operation information for CreateDeploymentResourcePool method.
 class CreateDeploymentResourcePoolOperationMetadata extends $pb.GeneratedMessage {
   factory CreateDeploymentResourcePoolOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -125,7 +125,7 @@ class CreateDeploymentResourcePoolOperationMetadata extends $pb.GeneratedMessage
   factory CreateDeploymentResourcePoolOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDeploymentResourcePoolOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -152,15 +152,15 @@ class CreateDeploymentResourcePoolOperationMetadata extends $pb.GeneratedMessage
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for GetDeploymentResourcePool method.
@@ -372,7 +372,7 @@ class ListDeploymentResourcePoolsResponse extends $pb.GeneratedMessage {
 class UpdateDeploymentResourcePoolRequest extends $pb.GeneratedMessage {
   factory UpdateDeploymentResourcePoolRequest({
     $559.DeploymentResourcePool? deploymentResourcePool,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (deploymentResourcePool != null) {
@@ -389,7 +389,7 @@ class UpdateDeploymentResourcePoolRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDeploymentResourcePoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOM<$559.DeploymentResourcePool>(1, _omitFieldNames ? '' : 'deploymentResourcePool', subBuilder: $559.DeploymentResourcePool.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -433,21 +433,21 @@ class UpdateDeploymentResourcePoolRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Runtime operation information for UpdateDeploymentResourcePool method.
 class UpdateDeploymentResourcePoolOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateDeploymentResourcePoolOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -460,7 +460,7 @@ class UpdateDeploymentResourcePoolOperationMetadata extends $pb.GeneratedMessage
   factory UpdateDeploymentResourcePoolOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDeploymentResourcePoolOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -487,15 +487,15 @@ class UpdateDeploymentResourcePoolOperationMetadata extends $pb.GeneratedMessage
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for DeleteDeploymentResourcePool method.
@@ -648,7 +648,7 @@ class QueryDeployedModelsResponse extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<$561.DeployedModel>? deployedModels,
     $core.String? nextPageToken,
-    $core.Iterable<$4284.DeployedModelRef>? deployedModelRefs,
+    $core.Iterable<$4285.DeployedModelRef>? deployedModelRefs,
     $core.int? totalDeployedModelCount,
     $core.int? totalEndpointCount,
   }) {
@@ -678,7 +678,7 @@ class QueryDeployedModelsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryDeployedModelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..pc<$561.DeployedModel>(1, _omitFieldNames ? '' : 'deployedModels', $pb.PbFieldType.PM, subBuilder: $561.DeployedModel.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$4284.DeployedModelRef>(3, _omitFieldNames ? '' : 'deployedModelRefs', $pb.PbFieldType.PM, subBuilder: $4284.DeployedModelRef.create)
+    ..pc<$4285.DeployedModelRef>(3, _omitFieldNames ? '' : 'deployedModelRefs', $pb.PbFieldType.PM, subBuilder: $4285.DeployedModelRef.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalDeployedModelCount', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'totalEndpointCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -724,7 +724,7 @@ class QueryDeployedModelsResponse extends $pb.GeneratedMessage {
   /// References to the DeployedModels that share the specified
   /// deploymentResourcePool.
   @$pb.TagNumber(3)
-  $core.List<$4284.DeployedModelRef> get deployedModelRefs => $_getList(2);
+  $core.List<$4285.DeployedModelRef> get deployedModelRefs => $_getList(2);
 
   /// The total number of DeployedModels on this DeploymentResourcePool.
   @$pb.TagNumber(4)

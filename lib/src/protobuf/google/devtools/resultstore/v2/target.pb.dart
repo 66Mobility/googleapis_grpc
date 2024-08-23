@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4769;
-import 'common.pbenum.dart' as $4769;
-import 'file.pb.dart' as $4770;
+import 'common.pb.dart' as $4771;
+import 'common.pbenum.dart' as $4771;
+import 'file.pb.dart' as $4772;
 import 'target.pbenum.dart';
 
 export 'target.pbenum.dart';
@@ -95,12 +95,12 @@ class Target extends $pb.GeneratedMessage {
     $core.String? name,
     Target_Id? id,
   @$core.Deprecated('This field is deprecated.')
-    $4769.StatusAttributes? statusAttributes,
-    $4769.Timing? timing,
+    $4771.StatusAttributes? statusAttributes,
+    $4771.Timing? timing,
     TargetAttributes? targetAttributes,
     TestAttributes? testAttributes,
-    $core.Iterable<$4769.Property>? properties,
-    $core.Iterable<$4770.File>? files,
+    $core.Iterable<$4771.Property>? properties,
+    $core.Iterable<$4772.File>? files,
     $core.bool? visible,
   }) {
     final $result = create();
@@ -141,12 +141,12 @@ class Target extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Target', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Target_Id>(2, _omitFieldNames ? '' : 'id', subBuilder: Target_Id.create)
-    ..aOM<$4769.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4769.StatusAttributes.create)
-    ..aOM<$4769.Timing>(4, _omitFieldNames ? '' : 'timing', subBuilder: $4769.Timing.create)
+    ..aOM<$4771.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4771.StatusAttributes.create)
+    ..aOM<$4771.Timing>(4, _omitFieldNames ? '' : 'timing', subBuilder: $4771.Timing.create)
     ..aOM<TargetAttributes>(5, _omitFieldNames ? '' : 'targetAttributes', subBuilder: TargetAttributes.create)
     ..aOM<TestAttributes>(6, _omitFieldNames ? '' : 'testAttributes', subBuilder: TestAttributes.create)
-    ..pc<$4769.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4769.Property.create)
-    ..pc<$4770.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4770.File.create)
+    ..pc<$4771.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4771.Property.create)
+    ..pc<$4772.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4772.File.create)
     ..aOB(10, _omitFieldNames ? '' : 'visible')
     ..hasRequiredFields = false
   ;
@@ -200,10 +200,10 @@ class Target extends $pb.GeneratedMessage {
   /// DEPRECATED - use ConfiguredTarget.status_attributes instead
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $4769.StatusAttributes get statusAttributes => $_getN(2);
+  $4771.StatusAttributes get statusAttributes => $_getN(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set statusAttributes($4769.StatusAttributes v) { setField(3, v); }
+  set statusAttributes($4771.StatusAttributes v) { setField(3, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasStatusAttributes() => $_has(2);
@@ -212,19 +212,19 @@ class Target extends $pb.GeneratedMessage {
   void clearStatusAttributes() => clearField(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $4769.StatusAttributes ensureStatusAttributes() => $_ensure(2);
+  $4771.StatusAttributes ensureStatusAttributes() => $_ensure(2);
 
   /// When this target started and its duration.
   @$pb.TagNumber(4)
-  $4769.Timing get timing => $_getN(3);
+  $4771.Timing get timing => $_getN(3);
   @$pb.TagNumber(4)
-  set timing($4769.Timing v) { setField(4, v); }
+  set timing($4771.Timing v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTiming() => $_has(3);
   @$pb.TagNumber(4)
   void clearTiming() => clearField(4);
   @$pb.TagNumber(4)
-  $4769.Timing ensureTiming() => $_ensure(3);
+  $4771.Timing ensureTiming() => $_ensure(3);
 
   /// Attributes that apply to all targets.
   @$pb.TagNumber(5)
@@ -254,14 +254,14 @@ class Target extends $pb.GeneratedMessage {
   /// This is implemented as a multi-map. Multiple properties are allowed with
   /// the same key. Properties will be returned in lexicographical order by key.
   @$pb.TagNumber(7)
-  $core.List<$4769.Property> get properties => $_getList(6);
+  $core.List<$4771.Property> get properties => $_getList(6);
 
   /// A list of file references for target level files.
   /// The file IDs must be unique within this list. Duplicate file IDs will
   /// result in an error. Files will be returned in lexicographical order by ID.
   /// Use this field to specify outputs not related to a configuration.
   @$pb.TagNumber(8)
-  $core.List<$4770.File> get files => $_getList(7);
+  $core.List<$4772.File> get files => $_getList(7);
 
   /// Provides a hint to clients as to whether to display the Target to users.
   /// If true then clients likely want to display the Target by default.
@@ -280,7 +280,7 @@ class Target extends $pb.GeneratedMessage {
 class TargetAttributes extends $pb.GeneratedMessage {
   factory TargetAttributes({
     TargetType? type,
-    $4769.Language? language,
+    $4771.Language? language,
     $core.Iterable<$core.String>? tags,
   }) {
     final $result = create();
@@ -301,7 +301,7 @@ class TargetAttributes extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetAttributes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..e<TargetType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: TargetType.TARGET_TYPE_UNSPECIFIED, valueOf: TargetType.valueOf, enumValues: TargetType.values)
-    ..e<$4769.Language>(2, _omitFieldNames ? '' : 'language', $pb.PbFieldType.OE, defaultOrMaker: $4769.Language.LANGUAGE_UNSPECIFIED, valueOf: $4769.Language.valueOf, enumValues: $4769.Language.values)
+    ..e<$4771.Language>(2, _omitFieldNames ? '' : 'language', $pb.PbFieldType.OE, defaultOrMaker: $4771.Language.LANGUAGE_UNSPECIFIED, valueOf: $4771.Language.valueOf, enumValues: $4771.Language.values)
     ..pPS(3, _omitFieldNames ? '' : 'tags')
     ..hasRequiredFields = false
   ;
@@ -340,9 +340,9 @@ class TargetAttributes extends $pb.GeneratedMessage {
 
   /// If known, the main language of this target, e.g. java, cc, python, etc.
   @$pb.TagNumber(2)
-  $4769.Language get language => $_getN(1);
+  $4771.Language get language => $_getN(1);
   @$pb.TagNumber(2)
-  set language($4769.Language v) { setField(2, v); }
+  set language($4771.Language v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLanguage() => $_has(1);
   @$pb.TagNumber(2)

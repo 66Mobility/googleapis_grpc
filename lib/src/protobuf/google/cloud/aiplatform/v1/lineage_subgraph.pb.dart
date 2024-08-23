@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'artifact.pb.dart' as $523;
-import 'event.pb.dart' as $4262;
+import 'event.pb.dart' as $4263;
 import 'execution.pb.dart' as $526;
 
 /// A subgraph of the overall lineage graph. Event edges connect Artifact and
@@ -23,7 +23,7 @@ class LineageSubgraph extends $pb.GeneratedMessage {
   factory LineageSubgraph({
     $core.Iterable<$523.Artifact>? artifacts,
     $core.Iterable<$526.Execution>? executions,
-    $core.Iterable<$4262.Event>? events,
+    $core.Iterable<$4263.Event>? events,
   }) {
     final $result = create();
     if (artifacts != null) {
@@ -44,7 +44,7 @@ class LineageSubgraph extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LineageSubgraph', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..pc<$523.Artifact>(1, _omitFieldNames ? '' : 'artifacts', $pb.PbFieldType.PM, subBuilder: $523.Artifact.create)
     ..pc<$526.Execution>(2, _omitFieldNames ? '' : 'executions', $pb.PbFieldType.PM, subBuilder: $526.Execution.create)
-    ..pc<$4262.Event>(3, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $4262.Event.create)
+    ..pc<$4263.Event>(3, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $4263.Event.create)
     ..hasRequiredFields = false
   ;
 
@@ -79,7 +79,7 @@ class LineageSubgraph extends $pb.GeneratedMessage {
 
   /// The Event edges between Artifacts and Executions in the subgraph.
   @$pb.TagNumber(3)
-  $core.List<$4262.Event> get events => $_getList(2);
+  $core.List<$4263.Event> get events => $_getList(2);
 }
 
 

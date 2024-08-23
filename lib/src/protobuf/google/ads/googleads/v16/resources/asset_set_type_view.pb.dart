@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_set_type.pbenum.dart' as $2819;
+import '../enums/asset_set_type.pbenum.dart' as $2820;
 
 /// An asset set type view.
 /// This view reports non-overcounted metrics for each asset set type. Child
@@ -22,7 +22,7 @@ import '../enums/asset_set_type.pbenum.dart' as $2819;
 class AssetSetTypeView extends $pb.GeneratedMessage {
   factory AssetSetTypeView({
     $core.String? resourceName,
-    $2819.AssetSetTypeEnum_AssetSetType? assetSetType,
+    $2820.AssetSetTypeEnum_AssetSetType? assetSetType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -39,7 +39,7 @@ class AssetSetTypeView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetSetTypeView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2819.AssetSetTypeEnum_AssetSetType>(3, _omitFieldNames ? '' : 'assetSetType', $pb.PbFieldType.OE, defaultOrMaker: $2819.AssetSetTypeEnum_AssetSetType.UNSPECIFIED, valueOf: $2819.AssetSetTypeEnum_AssetSetType.valueOf, enumValues: $2819.AssetSetTypeEnum_AssetSetType.values)
+    ..e<$2820.AssetSetTypeEnum_AssetSetType>(3, _omitFieldNames ? '' : 'assetSetType', $pb.PbFieldType.OE, defaultOrMaker: $2820.AssetSetTypeEnum_AssetSetType.UNSPECIFIED, valueOf: $2820.AssetSetTypeEnum_AssetSetType.valueOf, enumValues: $2820.AssetSetTypeEnum_AssetSetType.values)
     ..hasRequiredFields = false
   ;
 
@@ -79,9 +79,9 @@ class AssetSetTypeView extends $pb.GeneratedMessage {
 
   /// Output only. The asset set type of the asset set type view.
   @$pb.TagNumber(3)
-  $2819.AssetSetTypeEnum_AssetSetType get assetSetType => $_getN(1);
+  $2820.AssetSetTypeEnum_AssetSetType get assetSetType => $_getN(1);
   @$pb.TagNumber(3)
-  set assetSetType($2819.AssetSetTypeEnum_AssetSetType v) { setField(3, v); }
+  set assetSetType($2820.AssetSetTypeEnum_AssetSetType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAssetSetType() => $_has(1);
   @$pb.TagNumber(3)

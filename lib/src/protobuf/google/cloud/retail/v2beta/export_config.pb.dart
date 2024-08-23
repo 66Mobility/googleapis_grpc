@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// The Google Cloud Storage output destination configuration.
 class OutputConfig_GcsDestination extends $pb.GeneratedMessage {
@@ -418,8 +418,8 @@ class ExportAnalyticsMetricsRequest extends $pb.GeneratedMessage {
 /// returned by the google.longrunning.Operation.metadata field.
 class ExportMetadata extends $pb.GeneratedMessage {
   factory ExportMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -435,8 +435,8 @@ class ExportMetadata extends $pb.GeneratedMessage {
   factory ExportMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -463,28 +463,28 @@ class ExportMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Response of the ExportProductsRequest. If the long running
@@ -492,7 +492,7 @@ class ExportMetadata extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ExportProductsResponse extends $pb.GeneratedMessage {
   factory ExportProductsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ExportErrorsConfig? errorsConfig,
     OutputResult? outputResult,
   }) {
@@ -513,7 +513,7 @@ class ExportProductsResponse extends $pb.GeneratedMessage {
   factory ExportProductsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportProductsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ExportErrorsConfig>(2, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ExportErrorsConfig.create)
     ..aOM<OutputResult>(3, _omitFieldNames ? '' : 'outputResult', subBuilder: OutputResult.create)
     ..hasRequiredFields = false
@@ -542,7 +542,7 @@ class ExportProductsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// This field is never set.
   @$pb.TagNumber(2)
@@ -574,7 +574,7 @@ class ExportProductsResponse extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ExportUserEventsResponse extends $pb.GeneratedMessage {
   factory ExportUserEventsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ExportErrorsConfig? errorsConfig,
     OutputResult? outputResult,
   }) {
@@ -595,7 +595,7 @@ class ExportUserEventsResponse extends $pb.GeneratedMessage {
   factory ExportUserEventsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportUserEventsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ExportErrorsConfig>(2, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ExportErrorsConfig.create)
     ..aOM<OutputResult>(3, _omitFieldNames ? '' : 'outputResult', subBuilder: OutputResult.create)
     ..hasRequiredFields = false
@@ -624,7 +624,7 @@ class ExportUserEventsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// This field is never set.
   @$pb.TagNumber(2)
@@ -656,7 +656,7 @@ class ExportUserEventsResponse extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ExportAnalyticsMetricsResponse extends $pb.GeneratedMessage {
   factory ExportAnalyticsMetricsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ExportErrorsConfig? errorsConfig,
     OutputResult? outputResult,
   }) {
@@ -677,7 +677,7 @@ class ExportAnalyticsMetricsResponse extends $pb.GeneratedMessage {
   factory ExportAnalyticsMetricsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportAnalyticsMetricsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ExportErrorsConfig>(2, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ExportErrorsConfig.create)
     ..aOM<OutputResult>(3, _omitFieldNames ? '' : 'outputResult', subBuilder: OutputResult.create)
     ..hasRequiredFields = false
@@ -706,7 +706,7 @@ class ExportAnalyticsMetricsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// This field is never set.
   @$pb.TagNumber(2)

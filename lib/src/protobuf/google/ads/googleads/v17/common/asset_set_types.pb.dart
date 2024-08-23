@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/chain_relationship_type.pbenum.dart' as $3257;
-import '../enums/location_ownership_type.pbenum.dart' as $3256;
-import '../enums/location_string_filter_type.pbenum.dart' as $3258;
+import '../enums/chain_relationship_type.pbenum.dart' as $3258;
+import '../enums/location_ownership_type.pbenum.dart' as $3257;
+import '../enums/location_string_filter_type.pbenum.dart' as $3259;
 
 enum LocationSet_Source {
   businessProfileLocationSet, 
@@ -32,7 +32,7 @@ class LocationSet extends $pb.GeneratedMessage {
   factory LocationSet({
     BusinessProfileLocationSet? businessProfileLocationSet,
     ChainSet? chainLocationSet,
-    $3256.LocationOwnershipTypeEnum_LocationOwnershipType? locationOwnershipType,
+    $3257.LocationOwnershipTypeEnum_LocationOwnershipType? locationOwnershipType,
     MapsLocationSet? mapsLocationSet,
   }) {
     final $result = create();
@@ -64,7 +64,7 @@ class LocationSet extends $pb.GeneratedMessage {
     ..oo(0, [1, 2, 5])
     ..aOM<BusinessProfileLocationSet>(1, _omitFieldNames ? '' : 'businessProfileLocationSet', subBuilder: BusinessProfileLocationSet.create)
     ..aOM<ChainSet>(2, _omitFieldNames ? '' : 'chainLocationSet', subBuilder: ChainSet.create)
-    ..e<$3256.LocationOwnershipTypeEnum_LocationOwnershipType>(3, _omitFieldNames ? '' : 'locationOwnershipType', $pb.PbFieldType.OE, defaultOrMaker: $3256.LocationOwnershipTypeEnum_LocationOwnershipType.UNSPECIFIED, valueOf: $3256.LocationOwnershipTypeEnum_LocationOwnershipType.valueOf, enumValues: $3256.LocationOwnershipTypeEnum_LocationOwnershipType.values)
+    ..e<$3257.LocationOwnershipTypeEnum_LocationOwnershipType>(3, _omitFieldNames ? '' : 'locationOwnershipType', $pb.PbFieldType.OE, defaultOrMaker: $3257.LocationOwnershipTypeEnum_LocationOwnershipType.UNSPECIFIED, valueOf: $3257.LocationOwnershipTypeEnum_LocationOwnershipType.valueOf, enumValues: $3257.LocationOwnershipTypeEnum_LocationOwnershipType.values)
     ..aOM<MapsLocationSet>(5, _omitFieldNames ? '' : 'mapsLocationSet', subBuilder: MapsLocationSet.create)
     ..hasRequiredFields = false
   ;
@@ -122,9 +122,9 @@ class LocationSet extends $pb.GeneratedMessage {
   /// Required. Immutable. Location Ownership Type (owned location or affiliate
   /// location).
   @$pb.TagNumber(3)
-  $3256.LocationOwnershipTypeEnum_LocationOwnershipType get locationOwnershipType => $_getN(2);
+  $3257.LocationOwnershipTypeEnum_LocationOwnershipType get locationOwnershipType => $_getN(2);
   @$pb.TagNumber(3)
-  set locationOwnershipType($3256.LocationOwnershipTypeEnum_LocationOwnershipType v) { setField(3, v); }
+  set locationOwnershipType($3257.LocationOwnershipTypeEnum_LocationOwnershipType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLocationOwnershipType() => $_has(2);
   @$pb.TagNumber(3)
@@ -277,7 +277,7 @@ class BusinessProfileLocationSet extends $pb.GeneratedMessage {
 /// Data used to configure a location set populated with the specified chains.
 class ChainSet extends $pb.GeneratedMessage {
   factory ChainSet({
-    $3257.ChainRelationshipTypeEnum_ChainRelationshipType? relationshipType,
+    $3258.ChainRelationshipTypeEnum_ChainRelationshipType? relationshipType,
     $core.Iterable<ChainFilter>? chains,
   }) {
     final $result = create();
@@ -294,7 +294,7 @@ class ChainSet extends $pb.GeneratedMessage {
   factory ChainSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChainSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..e<$3257.ChainRelationshipTypeEnum_ChainRelationshipType>(1, _omitFieldNames ? '' : 'relationshipType', $pb.PbFieldType.OE, defaultOrMaker: $3257.ChainRelationshipTypeEnum_ChainRelationshipType.UNSPECIFIED, valueOf: $3257.ChainRelationshipTypeEnum_ChainRelationshipType.valueOf, enumValues: $3257.ChainRelationshipTypeEnum_ChainRelationshipType.values)
+    ..e<$3258.ChainRelationshipTypeEnum_ChainRelationshipType>(1, _omitFieldNames ? '' : 'relationshipType', $pb.PbFieldType.OE, defaultOrMaker: $3258.ChainRelationshipTypeEnum_ChainRelationshipType.UNSPECIFIED, valueOf: $3258.ChainRelationshipTypeEnum_ChainRelationshipType.valueOf, enumValues: $3258.ChainRelationshipTypeEnum_ChainRelationshipType.values)
     ..pc<ChainFilter>(2, _omitFieldNames ? '' : 'chains', $pb.PbFieldType.PM, subBuilder: ChainFilter.create)
     ..hasRequiredFields = false
   ;
@@ -323,9 +323,9 @@ class ChainSet extends $pb.GeneratedMessage {
   /// Required. Immutable. Relationship type the specified chains have with this
   /// advertiser.
   @$pb.TagNumber(1)
-  $3257.ChainRelationshipTypeEnum_ChainRelationshipType get relationshipType => $_getN(0);
+  $3258.ChainRelationshipTypeEnum_ChainRelationshipType get relationshipType => $_getN(0);
   @$pb.TagNumber(1)
-  set relationshipType($3257.ChainRelationshipTypeEnum_ChainRelationshipType v) { setField(1, v); }
+  set relationshipType($3258.ChainRelationshipTypeEnum_ChainRelationshipType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRelationshipType() => $_has(0);
   @$pb.TagNumber(1)
@@ -635,7 +635,7 @@ class DynamicBusinessProfileLocationGroupFilter extends $pb.GeneratedMessage {
 class BusinessProfileBusinessNameFilter extends $pb.GeneratedMessage {
   factory BusinessProfileBusinessNameFilter({
     $core.String? businessName,
-    $3258.LocationStringFilterTypeEnum_LocationStringFilterType? filterType,
+    $3259.LocationStringFilterTypeEnum_LocationStringFilterType? filterType,
   }) {
     final $result = create();
     if (businessName != null) {
@@ -652,7 +652,7 @@ class BusinessProfileBusinessNameFilter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BusinessProfileBusinessNameFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'businessName')
-    ..e<$3258.LocationStringFilterTypeEnum_LocationStringFilterType>(2, _omitFieldNames ? '' : 'filterType', $pb.PbFieldType.OE, defaultOrMaker: $3258.LocationStringFilterTypeEnum_LocationStringFilterType.UNSPECIFIED, valueOf: $3258.LocationStringFilterTypeEnum_LocationStringFilterType.valueOf, enumValues: $3258.LocationStringFilterTypeEnum_LocationStringFilterType.values)
+    ..e<$3259.LocationStringFilterTypeEnum_LocationStringFilterType>(2, _omitFieldNames ? '' : 'filterType', $pb.PbFieldType.OE, defaultOrMaker: $3259.LocationStringFilterTypeEnum_LocationStringFilterType.UNSPECIFIED, valueOf: $3259.LocationStringFilterTypeEnum_LocationStringFilterType.valueOf, enumValues: $3259.LocationStringFilterTypeEnum_LocationStringFilterType.values)
     ..hasRequiredFields = false
   ;
 
@@ -689,9 +689,9 @@ class BusinessProfileBusinessNameFilter extends $pb.GeneratedMessage {
 
   /// The type of string matching to use when filtering with business_name.
   @$pb.TagNumber(2)
-  $3258.LocationStringFilterTypeEnum_LocationStringFilterType get filterType => $_getN(1);
+  $3259.LocationStringFilterTypeEnum_LocationStringFilterType get filterType => $_getN(1);
   @$pb.TagNumber(2)
-  set filterType($3258.LocationStringFilterTypeEnum_LocationStringFilterType v) { setField(2, v); }
+  set filterType($3259.LocationStringFilterTypeEnum_LocationStringFilterType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFilterType() => $_has(1);
   @$pb.TagNumber(2)

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'catalog.pbenum.dart';
-import 'common.pb.dart' as $4593;
-import 'common.pbenum.dart' as $4593;
+import 'common.pb.dart' as $4595;
+import 'common.pbenum.dart' as $4595;
 import 'import_config.pb.dart' as $1257;
 
 export 'catalog.pbenum.dart';
@@ -141,8 +141,8 @@ class ProductLevelConfig extends $pb.GeneratedMessage {
 class CatalogAttribute_FacetConfig_IgnoredFacetValues extends $pb.GeneratedMessage {
   factory CatalogAttribute_FacetConfig_IgnoredFacetValues({
     $core.Iterable<$core.String>? values,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (values != null) {
@@ -162,8 +162,8 @@ class CatalogAttribute_FacetConfig_IgnoredFacetValues extends $pb.GeneratedMessa
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CatalogAttribute.FacetConfig.IgnoredFacetValues', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'values')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -203,28 +203,28 @@ class CatalogAttribute_FacetConfig_IgnoredFacetValues extends $pb.GeneratedMessa
   /// If start time is not empty and end time is empty, then will ignore
   /// these facet values after the start time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// If start time is empty and end time is not empty, then ignore these
   /// facet values before end time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// Replaces a set of textual facet values by the same (possibly different)
@@ -431,7 +431,7 @@ class CatalogAttribute_FacetConfig_RerankConfig extends $pb.GeneratedMessage {
 /// config.
 class CatalogAttribute_FacetConfig extends $pb.GeneratedMessage {
   factory CatalogAttribute_FacetConfig({
-    $core.Iterable<$4593.Interval>? facetIntervals,
+    $core.Iterable<$4595.Interval>? facetIntervals,
     $core.Iterable<CatalogAttribute_FacetConfig_IgnoredFacetValues>? ignoredFacetValues,
     $core.Iterable<CatalogAttribute_FacetConfig_MergedFacetValue>? mergedFacetValues,
     CatalogAttribute_FacetConfig_MergedFacet? mergedFacet,
@@ -460,7 +460,7 @@ class CatalogAttribute_FacetConfig extends $pb.GeneratedMessage {
   factory CatalogAttribute_FacetConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CatalogAttribute.FacetConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2'), createEmptyInstance: create)
-    ..pc<$4593.Interval>(1, _omitFieldNames ? '' : 'facetIntervals', $pb.PbFieldType.PM, subBuilder: $4593.Interval.create)
+    ..pc<$4595.Interval>(1, _omitFieldNames ? '' : 'facetIntervals', $pb.PbFieldType.PM, subBuilder: $4595.Interval.create)
     ..pc<CatalogAttribute_FacetConfig_IgnoredFacetValues>(2, _omitFieldNames ? '' : 'ignoredFacetValues', $pb.PbFieldType.PM, subBuilder: CatalogAttribute_FacetConfig_IgnoredFacetValues.create)
     ..pc<CatalogAttribute_FacetConfig_MergedFacetValue>(3, _omitFieldNames ? '' : 'mergedFacetValues', $pb.PbFieldType.PM, subBuilder: CatalogAttribute_FacetConfig_MergedFacetValue.create)
     ..aOM<CatalogAttribute_FacetConfig_MergedFacet>(4, _omitFieldNames ? '' : 'mergedFacet', subBuilder: CatalogAttribute_FacetConfig_MergedFacet.create)
@@ -501,7 +501,7 @@ class CatalogAttribute_FacetConfig extends $pb.GeneratedMessage {
   /// provided, then the lower bound must be smaller or equal than the upper
   /// bound.
   @$pb.TagNumber(1)
-  $core.List<$4593.Interval> get facetIntervals => $_getList(0);
+  $core.List<$4595.Interval> get facetIntervals => $_getList(0);
 
   /// Each instance represents a list of attribute values to ignore as facet
   /// values for a specific time range. The maximum number of instances per
@@ -793,7 +793,7 @@ class AttributesConfig extends $pb.GeneratedMessage {
   factory AttributesConfig({
     $core.String? name,
     $core.Map<$core.String, CatalogAttribute>? catalogAttributes,
-    $4593.AttributeConfigLevel? attributeConfigLevel,
+    $4595.AttributeConfigLevel? attributeConfigLevel,
   }) {
     final $result = create();
     if (name != null) {
@@ -814,7 +814,7 @@ class AttributesConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttributesConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..m<$core.String, CatalogAttribute>(2, _omitFieldNames ? '' : 'catalogAttributes', entryClassName: 'AttributesConfig.CatalogAttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: CatalogAttribute.create, valueDefaultOrMaker: CatalogAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2'))
-    ..e<$4593.AttributeConfigLevel>(3, _omitFieldNames ? '' : 'attributeConfigLevel', $pb.PbFieldType.OE, defaultOrMaker: $4593.AttributeConfigLevel.ATTRIBUTE_CONFIG_LEVEL_UNSPECIFIED, valueOf: $4593.AttributeConfigLevel.valueOf, enumValues: $4593.AttributeConfigLevel.values)
+    ..e<$4595.AttributeConfigLevel>(3, _omitFieldNames ? '' : 'attributeConfigLevel', $pb.PbFieldType.OE, defaultOrMaker: $4595.AttributeConfigLevel.ATTRIBUTE_CONFIG_LEVEL_UNSPECIFIED, valueOf: $4595.AttributeConfigLevel.valueOf, enumValues: $4595.AttributeConfigLevel.values)
     ..hasRequiredFields = false
   ;
 
@@ -866,9 +866,9 @@ class AttributesConfig extends $pb.GeneratedMessage {
   /// [AttributeConfigLevel][google.cloud.retail.v2.AttributeConfigLevel] used
   /// for this catalog.
   @$pb.TagNumber(3)
-  $4593.AttributeConfigLevel get attributeConfigLevel => $_getN(2);
+  $4595.AttributeConfigLevel get attributeConfigLevel => $_getN(2);
   @$pb.TagNumber(3)
-  set attributeConfigLevel($4593.AttributeConfigLevel v) { setField(3, v); }
+  set attributeConfigLevel($4595.AttributeConfigLevel v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAttributeConfigLevel() => $_has(2);
   @$pb.TagNumber(3)

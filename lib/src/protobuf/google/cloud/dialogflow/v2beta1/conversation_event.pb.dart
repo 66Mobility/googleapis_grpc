@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'conversation_event.pbenum.dart';
 import 'participant.pb.dart' as $913;
 
@@ -30,7 +30,7 @@ class ConversationEvent extends $pb.GeneratedMessage {
   factory ConversationEvent({
     $core.String? conversation,
     ConversationEvent_Type? type,
-    $1795.Status? errorStatus,
+    $1796.Status? errorStatus,
     $913.Message? newMessagePayload,
   }) {
     final $result = create();
@@ -60,7 +60,7 @@ class ConversationEvent extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'conversation')
     ..e<ConversationEvent_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: ConversationEvent_Type.TYPE_UNSPECIFIED, valueOf: ConversationEvent_Type.valueOf, enumValues: ConversationEvent_Type.values)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1796.Status.create)
     ..aOM<$913.Message>(4, _omitFieldNames ? '' : 'newMessagePayload', subBuilder: $913.Message.create)
     ..hasRequiredFields = false
   ;
@@ -114,15 +114,15 @@ class ConversationEvent extends $pb.GeneratedMessage {
   /// Optional. More detailed information about an error. Only set for type
   /// UNRECOVERABLE_ERROR_IN_PHONE_CALL.
   @$pb.TagNumber(3)
-  $1795.Status get errorStatus => $_getN(2);
+  $1796.Status get errorStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set errorStatus($1795.Status v) { setField(3, v); }
+  set errorStatus($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasErrorStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearErrorStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureErrorStatus() => $_ensure(2);
+  $1796.Status ensureErrorStatus() => $_ensure(2);
 
   /// Payload of NEW_MESSAGE event.
   @$pb.TagNumber(4)

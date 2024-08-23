@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/advertising_channel_type.pbenum.dart' as $3303;
-import '../enums/asset_field_type.pbenum.dart' as $3540;
-import '../enums/asset_source.pbenum.dart' as $3550;
+import '../enums/advertising_channel_type.pbenum.dart' as $3304;
+import '../enums/asset_field_type.pbenum.dart' as $3541;
+import '../enums/asset_source.pbenum.dart' as $3551;
 
 /// A channel-level aggregate asset view that shows where the asset is linked,
 /// performamce of the asset and stats.
 class ChannelAggregateAssetView extends $pb.GeneratedMessage {
   factory ChannelAggregateAssetView({
     $core.String? resourceName,
-    $3303.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
+    $3304.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
     $core.String? asset,
-    $3550.AssetSourceEnum_AssetSource? assetSource,
-    $3540.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $3551.AssetSourceEnum_AssetSource? assetSource,
+    $3541.AssetFieldTypeEnum_AssetFieldType? fieldType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -51,10 +51,10 @@ class ChannelAggregateAssetView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChannelAggregateAssetView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3303.AdvertisingChannelTypeEnum_AdvertisingChannelType>(2, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $3303.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $3303.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $3303.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
+    ..e<$3304.AdvertisingChannelTypeEnum_AdvertisingChannelType>(2, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $3304.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $3304.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $3304.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
     ..aOS(3, _omitFieldNames ? '' : 'asset')
-    ..e<$3550.AssetSourceEnum_AssetSource>(4, _omitFieldNames ? '' : 'assetSource', $pb.PbFieldType.OE, defaultOrMaker: $3550.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $3550.AssetSourceEnum_AssetSource.valueOf, enumValues: $3550.AssetSourceEnum_AssetSource.values)
-    ..e<$3540.AssetFieldTypeEnum_AssetFieldType>(5, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3540.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3540.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3540.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$3551.AssetSourceEnum_AssetSource>(4, _omitFieldNames ? '' : 'assetSource', $pb.PbFieldType.OE, defaultOrMaker: $3551.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $3551.AssetSourceEnum_AssetSource.valueOf, enumValues: $3551.AssetSourceEnum_AssetSource.values)
+    ..e<$3541.AssetFieldTypeEnum_AssetFieldType>(5, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3541.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3541.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3541.AssetFieldTypeEnum_AssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -94,9 +94,9 @@ class ChannelAggregateAssetView extends $pb.GeneratedMessage {
 
   /// Output only. Channel in which the asset served.
   @$pb.TagNumber(2)
-  $3303.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(1);
+  $3304.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(1);
   @$pb.TagNumber(2)
-  set advertisingChannelType($3303.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(2, v); }
+  set advertisingChannelType($3304.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdvertisingChannelType() => $_has(1);
   @$pb.TagNumber(2)
@@ -114,9 +114,9 @@ class ChannelAggregateAssetView extends $pb.GeneratedMessage {
 
   /// Output only. Source of the asset link.
   @$pb.TagNumber(4)
-  $3550.AssetSourceEnum_AssetSource get assetSource => $_getN(3);
+  $3551.AssetSourceEnum_AssetSource get assetSource => $_getN(3);
   @$pb.TagNumber(4)
-  set assetSource($3550.AssetSourceEnum_AssetSource v) { setField(4, v); }
+  set assetSource($3551.AssetSourceEnum_AssetSource v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAssetSource() => $_has(3);
   @$pb.TagNumber(4)
@@ -124,9 +124,9 @@ class ChannelAggregateAssetView extends $pb.GeneratedMessage {
 
   /// Output only. FieldType of the asset.
   @$pb.TagNumber(5)
-  $3540.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(4);
+  $3541.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(4);
   @$pb.TagNumber(5)
-  set fieldType($3540.AssetFieldTypeEnum_AssetFieldType v) { setField(5, v); }
+  set fieldType($3541.AssetFieldTypeEnum_AssetFieldType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFieldType() => $_has(4);
   @$pb.TagNumber(5)

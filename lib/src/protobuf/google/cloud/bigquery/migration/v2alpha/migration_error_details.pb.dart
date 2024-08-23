@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/error_details.pb.dart' as $4365;
+import '../../../../rpc/error_details.pb.dart' as $4366;
 
 /// Provides details for errors and the corresponding resources.
 class ResourceErrorDetail extends $pb.GeneratedMessage {
   factory ResourceErrorDetail({
-    $4365.ResourceInfo? resourceInfo,
+    $4366.ResourceInfo? resourceInfo,
     $core.Iterable<ErrorDetail>? errorDetails,
     $core.int? errorCount,
   }) {
@@ -39,7 +39,7 @@ class ResourceErrorDetail extends $pb.GeneratedMessage {
   factory ResourceErrorDetail.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResourceErrorDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2alpha'), createEmptyInstance: create)
-    ..aOM<$4365.ResourceInfo>(1, _omitFieldNames ? '' : 'resourceInfo', subBuilder: $4365.ResourceInfo.create)
+    ..aOM<$4366.ResourceInfo>(1, _omitFieldNames ? '' : 'resourceInfo', subBuilder: $4366.ResourceInfo.create)
     ..pc<ErrorDetail>(2, _omitFieldNames ? '' : 'errorDetails', $pb.PbFieldType.PM, subBuilder: ErrorDetail.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'errorCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -68,15 +68,15 @@ class ResourceErrorDetail extends $pb.GeneratedMessage {
 
   /// Required. Information about the resource where the error is located.
   @$pb.TagNumber(1)
-  $4365.ResourceInfo get resourceInfo => $_getN(0);
+  $4366.ResourceInfo get resourceInfo => $_getN(0);
   @$pb.TagNumber(1)
-  set resourceInfo($4365.ResourceInfo v) { setField(1, v); }
+  set resourceInfo($4366.ResourceInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResourceInfo() => $_has(0);
   @$pb.TagNumber(1)
   void clearResourceInfo() => clearField(1);
   @$pb.TagNumber(1)
-  $4365.ResourceInfo ensureResourceInfo() => $_ensure(0);
+  $4366.ResourceInfo ensureResourceInfo() => $_ensure(0);
 
   /// Required. The error details for the resource.
   @$pb.TagNumber(2)
@@ -100,7 +100,7 @@ class ResourceErrorDetail extends $pb.GeneratedMessage {
 class ErrorDetail extends $pb.GeneratedMessage {
   factory ErrorDetail({
     ErrorLocation? location,
-    $4365.ErrorInfo? errorInfo,
+    $4366.ErrorInfo? errorInfo,
   }) {
     final $result = create();
     if (location != null) {
@@ -117,7 +117,7 @@ class ErrorDetail extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ErrorDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2alpha'), createEmptyInstance: create)
     ..aOM<ErrorLocation>(1, _omitFieldNames ? '' : 'location', subBuilder: ErrorLocation.create)
-    ..aOM<$4365.ErrorInfo>(2, _omitFieldNames ? '' : 'errorInfo', subBuilder: $4365.ErrorInfo.create)
+    ..aOM<$4366.ErrorInfo>(2, _omitFieldNames ? '' : 'errorInfo', subBuilder: $4366.ErrorInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -156,15 +156,15 @@ class ErrorDetail extends $pb.GeneratedMessage {
 
   /// Required. Describes the cause of the error with structured detail.
   @$pb.TagNumber(2)
-  $4365.ErrorInfo get errorInfo => $_getN(1);
+  $4366.ErrorInfo get errorInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set errorInfo($4365.ErrorInfo v) { setField(2, v); }
+  set errorInfo($4366.ErrorInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasErrorInfo() => $_has(1);
   @$pb.TagNumber(2)
   void clearErrorInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $4365.ErrorInfo ensureErrorInfo() => $_ensure(1);
+  $4366.ErrorInfo ensureErrorInfo() => $_ensure(1);
 }
 
 /// Holds information about where the error is located.

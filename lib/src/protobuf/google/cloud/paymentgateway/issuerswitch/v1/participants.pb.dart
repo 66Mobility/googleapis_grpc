@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common_fields.pb.dart' as $4588;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common_fields.pb.dart' as $4590;
 import 'participants.pbenum.dart';
 
 export 'participants.pbenum.dart';
@@ -26,7 +26,7 @@ export 'participants.pbenum.dart';
 class FetchParticipantRequest extends $pb.GeneratedMessage {
   factory FetchParticipantRequest({
     $core.String? parent,
-    $4588.AccountReference? accountReference,
+    $4590.AccountReference? accountReference,
   }) {
     final $result = create();
     if (parent != null) {
@@ -43,7 +43,7 @@ class FetchParticipantRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchParticipantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4588.AccountReference>(2, _omitFieldNames ? '' : 'accountReference', subBuilder: $4588.AccountReference.create)
+    ..aOM<$4590.AccountReference>(2, _omitFieldNames ? '' : 'accountReference', subBuilder: $4590.AccountReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -81,15 +81,15 @@ class FetchParticipantRequest extends $pb.GeneratedMessage {
 
   /// Required. The account details of the issuer participant.
   @$pb.TagNumber(2)
-  $4588.AccountReference get accountReference => $_getN(1);
+  $4590.AccountReference get accountReference => $_getN(1);
   @$pb.TagNumber(2)
-  set accountReference($4588.AccountReference v) { setField(2, v); }
+  set accountReference($4590.AccountReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountReference() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountReference() => clearField(2);
   @$pb.TagNumber(2)
-  $4588.AccountReference ensureAccountReference() => $_ensure(1);
+  $4590.AccountReference ensureAccountReference() => $_ensure(1);
 }
 
 /// The metadata of the participant.
@@ -144,14 +144,14 @@ class IssuerParticipant_Metadata extends $pb.GeneratedMessage {
 /// issuer switch.
 class IssuerParticipant extends $pb.GeneratedMessage {
   factory IssuerParticipant({
-    $4588.AccountReference? accountReference,
+    $4590.AccountReference? accountReference,
     $core.String? mobileNumber,
     IssuerParticipant_State? state,
     IssuerParticipant_Metadata? metadata,
     $core.int? mpinFailureCount,
-    $1775.Timestamp? mpinLockedTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? mpinLockedTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (accountReference != null) {
@@ -185,14 +185,14 @@ class IssuerParticipant extends $pb.GeneratedMessage {
   factory IssuerParticipant.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssuerParticipant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
-    ..aOM<$4588.AccountReference>(1, _omitFieldNames ? '' : 'accountReference', subBuilder: $4588.AccountReference.create)
+    ..aOM<$4590.AccountReference>(1, _omitFieldNames ? '' : 'accountReference', subBuilder: $4590.AccountReference.create)
     ..aOS(2, _omitFieldNames ? '' : 'mobileNumber')
     ..e<IssuerParticipant_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: IssuerParticipant_State.STATE_UNSPECIFIED, valueOf: IssuerParticipant_State.valueOf, enumValues: IssuerParticipant_State.values)
     ..aOM<IssuerParticipant_Metadata>(4, _omitFieldNames ? '' : 'metadata', subBuilder: IssuerParticipant_Metadata.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'mpinFailureCount', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'mpinLockedTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'mpinLockedTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -220,15 +220,15 @@ class IssuerParticipant extends $pb.GeneratedMessage {
   /// Required. The account details of the issuer participant. Only the
   /// account_number and ifsc fields will be used.
   @$pb.TagNumber(1)
-  $4588.AccountReference get accountReference => $_getN(0);
+  $4590.AccountReference get accountReference => $_getN(0);
   @$pb.TagNumber(1)
-  set accountReference($4588.AccountReference v) { setField(1, v); }
+  set accountReference($4590.AccountReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccountReference() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccountReference() => clearField(1);
   @$pb.TagNumber(1)
-  $4588.AccountReference ensureAccountReference() => $_ensure(0);
+  $4590.AccountReference ensureAccountReference() => $_ensure(0);
 
   /// Output only. The mobile number of the participant.
   @$pb.TagNumber(2)
@@ -275,39 +275,39 @@ class IssuerParticipant extends $pb.GeneratedMessage {
   /// Output only. The time when participant's MPIN got locked due to too many
   /// incorrect attempts.
   @$pb.TagNumber(6)
-  $1775.Timestamp get mpinLockedTime => $_getN(5);
+  $1776.Timestamp get mpinLockedTime => $_getN(5);
   @$pb.TagNumber(6)
-  set mpinLockedTime($1775.Timestamp v) { setField(6, v); }
+  set mpinLockedTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMpinLockedTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearMpinLockedTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureMpinLockedTime() => $_ensure(5);
+  $1776.Timestamp ensureMpinLockedTime() => $_ensure(5);
 
   /// Output only. The time when the participant's account was onboarded to PGIS.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time when the participant was last updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 }
 
 /// Request for the
@@ -317,7 +317,7 @@ class UpdateIssuerParticipantRequest extends $pb.GeneratedMessage {
   factory UpdateIssuerParticipantRequest({
     $core.String? parent,
     IssuerParticipant? issuerParticipant,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -338,7 +338,7 @@ class UpdateIssuerParticipantRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateIssuerParticipantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<IssuerParticipant>(2, _omitFieldNames ? '' : 'issuerParticipant', subBuilder: IssuerParticipant.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -388,15 +388,15 @@ class UpdateIssuerParticipantRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to update.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 enum ParticipantStateChangeRequest_Id {
@@ -414,7 +414,7 @@ enum ParticipantStateChangeRequest_Id {
 class ParticipantStateChangeRequest extends $pb.GeneratedMessage {
   factory ParticipantStateChangeRequest({
     $core.String? parent,
-    $4588.AccountReference? accountReference,
+    $4590.AccountReference? accountReference,
     $core.String? mobileNumber,
   }) {
     final $result = create();
@@ -441,7 +441,7 @@ class ParticipantStateChangeRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ParticipantStateChangeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4588.AccountReference>(2, _omitFieldNames ? '' : 'accountReference', subBuilder: $4588.AccountReference.create)
+    ..aOM<$4590.AccountReference>(2, _omitFieldNames ? '' : 'accountReference', subBuilder: $4590.AccountReference.create)
     ..aOS(3, _omitFieldNames ? '' : 'mobileNumber')
     ..hasRequiredFields = false
   ;
@@ -483,15 +483,15 @@ class ParticipantStateChangeRequest extends $pb.GeneratedMessage {
 
   /// Optional. The account details of the issuer participant.
   @$pb.TagNumber(2)
-  $4588.AccountReference get accountReference => $_getN(1);
+  $4590.AccountReference get accountReference => $_getN(1);
   @$pb.TagNumber(2)
-  set accountReference($4588.AccountReference v) { setField(2, v); }
+  set accountReference($4590.AccountReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountReference() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountReference() => clearField(2);
   @$pb.TagNumber(2)
-  $4588.AccountReference ensureAccountReference() => $_ensure(1);
+  $4590.AccountReference ensureAccountReference() => $_ensure(1);
 
   /// Optional. The mobile number of the issuer participant.
   @$pb.TagNumber(3)

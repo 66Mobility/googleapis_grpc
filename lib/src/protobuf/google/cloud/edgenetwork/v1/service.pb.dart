@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pb.dart' as $1046;
 import 'service.pbenum.dart';
 
@@ -1036,7 +1036,7 @@ class CreateSubnetRequest extends $pb.GeneratedMessage {
 /// Message for updating a Subnet
 class UpdateSubnetRequest extends $pb.GeneratedMessage {
   factory UpdateSubnetRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1046.Subnet? subnet,
     $core.String? requestId,
   }) {
@@ -1057,7 +1057,7 @@ class UpdateSubnetRequest extends $pb.GeneratedMessage {
   factory UpdateSubnetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSubnetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1046.Subnet>(2, _omitFieldNames ? '' : 'subnet', subBuilder: $1046.Subnet.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1090,15 +1090,15 @@ class UpdateSubnetRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -2227,7 +2227,7 @@ class CreateRouterRequest extends $pb.GeneratedMessage {
 /// Message for updating a Router
 class UpdateRouterRequest extends $pb.GeneratedMessage {
   factory UpdateRouterRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1046.Router? router,
     $core.String? requestId,
   }) {
@@ -2248,7 +2248,7 @@ class UpdateRouterRequest extends $pb.GeneratedMessage {
   factory UpdateRouterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRouterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1046.Router>(2, _omitFieldNames ? '' : 'router', subBuilder: $1046.Router.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -2281,15 +2281,15 @@ class UpdateRouterRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -2408,8 +2408,8 @@ class DeleteRouterRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -2445,8 +2445,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -2478,27 +2478,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -2672,7 +2672,7 @@ class DiagnoseNetworkResponse_NetworkStatus extends $pb.GeneratedMessage {
 /// DiagnoseNetworkResponse contains the current status for a specific network.
 class DiagnoseNetworkResponse extends $pb.GeneratedMessage {
   factory DiagnoseNetworkResponse({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     DiagnoseNetworkResponse_NetworkStatus? result,
   }) {
     final $result = create();
@@ -2689,7 +2689,7 @@ class DiagnoseNetworkResponse extends $pb.GeneratedMessage {
   factory DiagnoseNetworkResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiagnoseNetworkResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<DiagnoseNetworkResponse_NetworkStatus>(2, _omitFieldNames ? '' : 'result', subBuilder: DiagnoseNetworkResponse_NetworkStatus.create)
     ..hasRequiredFields = false
   ;
@@ -2717,15 +2717,15 @@ class DiagnoseNetworkResponse extends $pb.GeneratedMessage {
 
   /// The time when the network status was last updated.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// The network status of a specific network.
   @$pb.TagNumber(2)
@@ -2797,7 +2797,7 @@ class DiagnoseInterconnectRequest extends $pb.GeneratedMessage {
 /// specific interconnect.
 class DiagnoseInterconnectResponse extends $pb.GeneratedMessage {
   factory DiagnoseInterconnectResponse({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $1046.InterconnectDiagnostics? result,
   }) {
     final $result = create();
@@ -2814,7 +2814,7 @@ class DiagnoseInterconnectResponse extends $pb.GeneratedMessage {
   factory DiagnoseInterconnectResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiagnoseInterconnectResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$1046.InterconnectDiagnostics>(2, _omitFieldNames ? '' : 'result', subBuilder: $1046.InterconnectDiagnostics.create)
     ..hasRequiredFields = false
   ;
@@ -2842,15 +2842,15 @@ class DiagnoseInterconnectResponse extends $pb.GeneratedMessage {
 
   /// The time when the interconnect diagnostics was last updated.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// The network status of a specific interconnect.
   @$pb.TagNumber(2)
@@ -2920,7 +2920,7 @@ class DiagnoseRouterRequest extends $pb.GeneratedMessage {
 /// DiagnoseRouterResponse contains the current status for a specific router.
 class DiagnoseRouterResponse extends $pb.GeneratedMessage {
   factory DiagnoseRouterResponse({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $1046.RouterStatus? result,
   }) {
     final $result = create();
@@ -2937,7 +2937,7 @@ class DiagnoseRouterResponse extends $pb.GeneratedMessage {
   factory DiagnoseRouterResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiagnoseRouterResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgenetwork.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$1046.RouterStatus>(2, _omitFieldNames ? '' : 'result', subBuilder: $1046.RouterStatus.create)
     ..hasRequiredFields = false
   ;
@@ -2965,15 +2965,15 @@ class DiagnoseRouterResponse extends $pb.GeneratedMessage {
 
   /// The time when the router status was last updated.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// The network status of a specific router.
   @$pb.TagNumber(2)

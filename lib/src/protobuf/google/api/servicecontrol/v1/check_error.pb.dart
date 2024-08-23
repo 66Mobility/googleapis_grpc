@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'check_error.pbenum.dart';
 
 export 'check_error.pbenum.dart';
@@ -24,7 +24,7 @@ class CheckError extends $pb.GeneratedMessage {
   factory CheckError({
     CheckError_Code? code,
     $core.String? detail,
-    $1795.Status? status,
+    $1796.Status? status,
     $core.String? subject,
   }) {
     final $result = create();
@@ -49,7 +49,7 @@ class CheckError extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicecontrol.v1'), createEmptyInstance: create)
     ..e<CheckError_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: CheckError_Code.ERROR_CODE_UNSPECIFIED, valueOf: CheckError_Code.valueOf, enumValues: CheckError_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'detail')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOS(4, _omitFieldNames ? '' : 'subject')
     ..hasRequiredFields = false
   ;
@@ -99,15 +99,15 @@ class CheckError extends $pb.GeneratedMessage {
   /// `status.code` will be non zero and client can propagate it out as public
   /// error.
   @$pb.TagNumber(3)
-  $1795.Status get status => $_getN(2);
+  $1796.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($1795.Status v) { setField(3, v); }
+  set status($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureStatus() => $_ensure(2);
+  $1796.Status ensureStatus() => $_ensure(2);
 
   ///  Subject to whom this error applies. See the specific code enum for more
   ///  details on this field. For example:

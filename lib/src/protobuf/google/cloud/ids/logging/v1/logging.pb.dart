@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'logging.pbenum.dart';
 
 export 'logging.pbenum.dart';
@@ -24,7 +24,7 @@ export 'logging.pbenum.dart';
 class ThreatLog extends $pb.GeneratedMessage {
   factory ThreatLog({
     $core.String? name,
-    $1775.Timestamp? alertTime,
+    $1776.Timestamp? alertTime,
     $core.String? type,
     $core.String? sourceIpAddress,
     $core.int? sourcePort,
@@ -109,7 +109,7 @@ class ThreatLog extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ThreatLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.ids.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'alertTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'alertTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'type')
     ..aOS(5, _omitFieldNames ? '' : 'sourceIpAddress')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'sourcePort', $pb.PbFieldType.O3)
@@ -163,15 +163,15 @@ class ThreatLog extends $pb.GeneratedMessage {
 
   /// The time of the alert.
   @$pb.TagNumber(2)
-  $1775.Timestamp get alertTime => $_getN(1);
+  $1776.Timestamp get alertTime => $_getN(1);
   @$pb.TagNumber(2)
-  set alertTime($1775.Timestamp v) { setField(2, v); }
+  set alertTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlertTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearAlertTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureAlertTime() => $_ensure(1);
+  $1776.Timestamp ensureAlertTime() => $_ensure(1);
 
   /// The type of the threat, e.g. "Spyware".
   @$pb.TagNumber(4)
@@ -344,8 +344,8 @@ class ThreatLog extends $pb.GeneratedMessage {
 /// https://docs.paloaltonetworks.com/pan-os/8-1/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/traffic-log-fields.html.
 class TrafficLog extends $pb.GeneratedMessage {
   factory TrafficLog({
-    $1775.Timestamp? startTime,
-    $1737.Duration? elapsedTime,
+    $1776.Timestamp? startTime,
+    $1738.Duration? elapsedTime,
     $core.String? network,
     $core.String? sourceIpAddress,
     $core.int? sourcePort,
@@ -405,8 +405,8 @@ class TrafficLog extends $pb.GeneratedMessage {
   factory TrafficLog.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrafficLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.ids.logging.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'elapsedTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'elapsedTime', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'network')
     ..aOS(4, _omitFieldNames ? '' : 'sourceIpAddress')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'sourcePort', $pb.PbFieldType.O3)
@@ -444,27 +444,27 @@ class TrafficLog extends $pb.GeneratedMessage {
 
   /// Time of session start.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Elapsed time of the session.
   @$pb.TagNumber(2)
-  $1737.Duration get elapsedTime => $_getN(1);
+  $1738.Duration get elapsedTime => $_getN(1);
   @$pb.TagNumber(2)
-  set elapsedTime($1737.Duration v) { setField(2, v); }
+  set elapsedTime($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasElapsedTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearElapsedTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureElapsedTime() => $_ensure(1);
+  $1738.Duration ensureElapsedTime() => $_ensure(1);
 
   /// The network associated with the IDS Endpoint.
   @$pb.TagNumber(3)

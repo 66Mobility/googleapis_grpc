@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import 'fetch_options.pb.dart' as $4702;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import 'fetch_options.pb.dart' as $4704;
 import 'live_configs.pbenum.dart';
 
 export 'live_configs.pbenum.dart';
@@ -31,7 +31,7 @@ class LiveConfig extends $pb.GeneratedMessage {
     $core.String? defaultSlate,
     LiveConfig_StitchingPolicy? stitchingPolicy,
     PrefetchConfig? prefetchConfig,
-    $4702.FetchOptions? sourceFetchOptions,
+    $4704.FetchOptions? sourceFetchOptions,
   }) {
     final $result = create();
     if (name != null) {
@@ -80,7 +80,7 @@ class LiveConfig extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'defaultSlate')
     ..e<LiveConfig_StitchingPolicy>(8, _omitFieldNames ? '' : 'stitchingPolicy', $pb.PbFieldType.OE, defaultOrMaker: LiveConfig_StitchingPolicy.STITCHING_POLICY_UNSPECIFIED, valueOf: LiveConfig_StitchingPolicy.valueOf, enumValues: LiveConfig_StitchingPolicy.values)
     ..aOM<PrefetchConfig>(10, _omitFieldNames ? '' : 'prefetchConfig', subBuilder: PrefetchConfig.create)
-    ..aOM<$4702.FetchOptions>(16, _omitFieldNames ? '' : 'sourceFetchOptions', subBuilder: $4702.FetchOptions.create)
+    ..aOM<$4704.FetchOptions>(16, _omitFieldNames ? '' : 'sourceFetchOptions', subBuilder: $4704.FetchOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -207,22 +207,22 @@ class LiveConfig extends $pb.GeneratedMessage {
 
   /// Options for fetching source manifests and segments.
   @$pb.TagNumber(16)
-  $4702.FetchOptions get sourceFetchOptions => $_getN(9);
+  $4704.FetchOptions get sourceFetchOptions => $_getN(9);
   @$pb.TagNumber(16)
-  set sourceFetchOptions($4702.FetchOptions v) { setField(16, v); }
+  set sourceFetchOptions($4704.FetchOptions v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasSourceFetchOptions() => $_has(9);
   @$pb.TagNumber(16)
   void clearSourceFetchOptions() => clearField(16);
   @$pb.TagNumber(16)
-  $4702.FetchOptions ensureSourceFetchOptions() => $_ensure(9);
+  $4704.FetchOptions ensureSourceFetchOptions() => $_ensure(9);
 }
 
 /// The configuration for prefetch ads.
 class PrefetchConfig extends $pb.GeneratedMessage {
   factory PrefetchConfig({
     $core.bool? enabled,
-    $1737.Duration? initialAdRequestDuration,
+    $1738.Duration? initialAdRequestDuration,
   }) {
     final $result = create();
     if (enabled != null) {
@@ -239,7 +239,7 @@ class PrefetchConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrefetchConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'initialAdRequestDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'initialAdRequestDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -281,15 +281,15 @@ class PrefetchConfig extends $pb.GeneratedMessage {
   /// expected. For example, for a live event with 30s and 60s ad breaks, the
   /// initial duration should be set to 30s.
   @$pb.TagNumber(2)
-  $1737.Duration get initialAdRequestDuration => $_getN(1);
+  $1738.Duration get initialAdRequestDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set initialAdRequestDuration($1737.Duration v) { setField(2, v); }
+  set initialAdRequestDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInitialAdRequestDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearInitialAdRequestDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureInitialAdRequestDuration() => $_ensure(1);
+  $1738.Duration ensureInitialAdRequestDuration() => $_ensure(1);
 }
 
 /// Metadata used to register a live stream with Google Ad Manager (GAM)

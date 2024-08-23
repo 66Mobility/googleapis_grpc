@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1795;
-import 'explanations.pb.dart' as $4591;
-import 'explanations.pbenum.dart' as $4591;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'explanations.pb.dart' as $4593;
+import 'explanations.pbenum.dart' as $4593;
 
 export 'explanations.pb.dart';
 
@@ -23,7 +23,7 @@ export 'explanations.pb.dart';
 /// [TroubleshootIamPolicy][google.cloud.policytroubleshooter.v1.IamChecker.TroubleshootIamPolicy].
 class TroubleshootIamPolicyRequest extends $pb.GeneratedMessage {
   factory TroubleshootIamPolicyRequest({
-    $4591.AccessTuple? accessTuple,
+    $4593.AccessTuple? accessTuple,
   }) {
     final $result = create();
     if (accessTuple != null) {
@@ -36,7 +36,7 @@ class TroubleshootIamPolicyRequest extends $pb.GeneratedMessage {
   factory TroubleshootIamPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TroubleshootIamPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.policytroubleshooter.v1'), createEmptyInstance: create)
-    ..aOM<$4591.AccessTuple>(1, _omitFieldNames ? '' : 'accessTuple', subBuilder: $4591.AccessTuple.create)
+    ..aOM<$4593.AccessTuple>(1, _omitFieldNames ? '' : 'accessTuple', subBuilder: $4593.AccessTuple.create)
     ..hasRequiredFields = false
   ;
 
@@ -64,24 +64,24 @@ class TroubleshootIamPolicyRequest extends $pb.GeneratedMessage {
   /// The information to use for checking whether a principal has a permission
   /// for a resource.
   @$pb.TagNumber(1)
-  $4591.AccessTuple get accessTuple => $_getN(0);
+  $4593.AccessTuple get accessTuple => $_getN(0);
   @$pb.TagNumber(1)
-  set accessTuple($4591.AccessTuple v) { setField(1, v); }
+  set accessTuple($4593.AccessTuple v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessTuple() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessTuple() => clearField(1);
   @$pb.TagNumber(1)
-  $4591.AccessTuple ensureAccessTuple() => $_ensure(0);
+  $4593.AccessTuple ensureAccessTuple() => $_ensure(0);
 }
 
 /// Response for
 /// [TroubleshootIamPolicy][google.cloud.policytroubleshooter.v1.IamChecker.TroubleshootIamPolicy].
 class TroubleshootIamPolicyResponse extends $pb.GeneratedMessage {
   factory TroubleshootIamPolicyResponse({
-    $4591.AccessState? access,
-    $core.Iterable<$4591.ExplainedPolicy>? explainedPolicies,
-    $core.Iterable<$1795.Status>? errors,
+    $4593.AccessState? access,
+    $core.Iterable<$4593.ExplainedPolicy>? explainedPolicies,
+    $core.Iterable<$1796.Status>? errors,
   }) {
     final $result = create();
     if (access != null) {
@@ -100,9 +100,9 @@ class TroubleshootIamPolicyResponse extends $pb.GeneratedMessage {
   factory TroubleshootIamPolicyResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TroubleshootIamPolicyResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.policytroubleshooter.v1'), createEmptyInstance: create)
-    ..e<$4591.AccessState>(1, _omitFieldNames ? '' : 'access', $pb.PbFieldType.OE, defaultOrMaker: $4591.AccessState.ACCESS_STATE_UNSPECIFIED, valueOf: $4591.AccessState.valueOf, enumValues: $4591.AccessState.values)
-    ..pc<$4591.ExplainedPolicy>(2, _omitFieldNames ? '' : 'explainedPolicies', $pb.PbFieldType.PM, subBuilder: $4591.ExplainedPolicy.create)
-    ..pc<$1795.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..e<$4593.AccessState>(1, _omitFieldNames ? '' : 'access', $pb.PbFieldType.OE, defaultOrMaker: $4593.AccessState.ACCESS_STATE_UNSPECIFIED, valueOf: $4593.AccessState.valueOf, enumValues: $4593.AccessState.values)
+    ..pc<$4593.ExplainedPolicy>(2, _omitFieldNames ? '' : 'explainedPolicies', $pb.PbFieldType.PM, subBuilder: $4593.ExplainedPolicy.create)
+    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -130,9 +130,9 @@ class TroubleshootIamPolicyResponse extends $pb.GeneratedMessage {
   /// Indicates whether the principal has the specified permission for the
   /// specified resource, based on evaluating all of the applicable IAM policies.
   @$pb.TagNumber(1)
-  $4591.AccessState get access => $_getN(0);
+  $4593.AccessState get access => $_getN(0);
   @$pb.TagNumber(1)
-  set access($4591.AccessState v) { setField(1, v); }
+  set access($4593.AccessState v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccess() => $_has(0);
   @$pb.TagNumber(1)
@@ -149,11 +149,11 @@ class TroubleshootIamPolicyResponse extends $pb.GeneratedMessage {
   ///  To learn more about the resource hierarchy, see
   ///  https://cloud.google.com/iam/help/resource-hierarchy.
   @$pb.TagNumber(2)
-  $core.List<$4591.ExplainedPolicy> get explainedPolicies => $_getList(1);
+  $core.List<$4593.ExplainedPolicy> get explainedPolicies => $_getList(1);
 
   /// The general errors contained in the troubleshooting response.
   @$pb.TagNumber(3)
-  $core.List<$1795.Status> get errors => $_getList(2);
+  $core.List<$1796.Status> get errors => $_getList(2);
 }
 
 

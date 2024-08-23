@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../type/latlng.pb.dart' as $1798;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../type/latlng.pb.dart' as $1799;
 import 'roads.pbenum.dart';
 
 export 'roads.pbenum.dart';
@@ -122,8 +122,8 @@ class SnapToRoadsRequest extends $pb.GeneratedMessage {
 /// A snapped point object, representing the result of snapping.
 class SnappedPoint extends $pb.GeneratedMessage {
   factory SnappedPoint({
-    $1798.LatLng? location,
-    $1780.UInt32Value? originalIndex,
+    $1799.LatLng? location,
+    $1781.UInt32Value? originalIndex,
     $core.String? placeId,
   }) {
     final $result = create();
@@ -143,8 +143,8 @@ class SnappedPoint extends $pb.GeneratedMessage {
   factory SnappedPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SnappedPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.roads.v1op'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $1798.LatLng.create)
-    ..aOM<$1780.UInt32Value>(2, _omitFieldNames ? '' : 'originalIndex', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $1799.LatLng.create)
+    ..aOM<$1781.UInt32Value>(2, _omitFieldNames ? '' : 'originalIndex', subBuilder: $1781.UInt32Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'placeId')
     ..hasRequiredFields = false
   ;
@@ -172,29 +172,29 @@ class SnappedPoint extends $pb.GeneratedMessage {
 
   /// The lat,lng of the snapped location.
   @$pb.TagNumber(1)
-  $1798.LatLng get location => $_getN(0);
+  $1799.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($1798.LatLng v) { setField(1, v); }
+  set location($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
   void clearLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureLocation() => $_ensure(0);
+  $1799.LatLng ensureLocation() => $_ensure(0);
 
   /// The index into the original path of the equivalent pre-snapped point.
   /// This allows for identification of points which have been interpolated if
   /// this index is missing.
   @$pb.TagNumber(2)
-  $1780.UInt32Value get originalIndex => $_getN(1);
+  $1781.UInt32Value get originalIndex => $_getN(1);
   @$pb.TagNumber(2)
-  set originalIndex($1780.UInt32Value v) { setField(2, v); }
+  set originalIndex($1781.UInt32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOriginalIndex() => $_has(1);
   @$pb.TagNumber(2)
   void clearOriginalIndex() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.UInt32Value ensureOriginalIndex() => $_ensure(1);
+  $1781.UInt32Value ensureOriginalIndex() => $_ensure(1);
 
   /// The place ID for this snapped location (road segment). These are the same
   /// as are currently used by the Places API.

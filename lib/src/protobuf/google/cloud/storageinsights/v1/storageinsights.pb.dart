@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/date.pb.dart' as $1800;
-import '../../../type/datetime.pb.dart' as $1801;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/date.pb.dart' as $1801;
+import '../../../type/datetime.pb.dart' as $1802;
 import 'storageinsights.pbenum.dart';
 
 export 'storageinsights.pbenum.dart';
@@ -357,7 +357,7 @@ class CreateReportConfigRequest extends $pb.GeneratedMessage {
 /// Message for updating a ReportConfig
 class UpdateReportConfigRequest extends $pb.GeneratedMessage {
   factory UpdateReportConfigRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     ReportConfig? reportConfig,
     $core.String? requestId,
   }) {
@@ -378,7 +378,7 @@ class UpdateReportConfigRequest extends $pb.GeneratedMessage {
   factory UpdateReportConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateReportConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.storageinsights.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<ReportConfig>(2, _omitFieldNames ? '' : 'reportConfig', subBuilder: ReportConfig.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -411,15 +411,15 @@ class UpdateReportConfigRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -608,10 +608,10 @@ class ReportDetail_Metrics extends $pb.GeneratedMessage {
 class ReportDetail extends $pb.GeneratedMessage {
   factory ReportDetail({
     $core.String? name,
-    $1775.Timestamp? snapshotTime,
-    $1795.Status? status,
+    $1776.Timestamp? snapshotTime,
+    $1796.Status? status,
     $core.Map<$core.String, $core.String>? labels,
-    $1801.DateTime? targetDatetime,
+    $1802.DateTime? targetDatetime,
     ReportDetail_Metrics? reportMetrics,
     $core.String? reportPathPrefix,
     $fixnum.Int64? shardsCount,
@@ -649,10 +649,10 @@ class ReportDetail extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.storageinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'ReportDetail.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.storageinsights.v1'))
-    ..aOM<$1801.DateTime>(6, _omitFieldNames ? '' : 'targetDatetime', subBuilder: $1801.DateTime.create)
+    ..aOM<$1802.DateTime>(6, _omitFieldNames ? '' : 'targetDatetime', subBuilder: $1802.DateTime.create)
     ..aOM<ReportDetail_Metrics>(7, _omitFieldNames ? '' : 'reportMetrics', subBuilder: ReportDetail_Metrics.create)
     ..aOS(8, _omitFieldNames ? '' : 'reportPathPrefix')
     ..aInt64(9, _omitFieldNames ? '' : 'shardsCount')
@@ -694,27 +694,27 @@ class ReportDetail extends $pb.GeneratedMessage {
   /// The snapshot time.
   /// All the report data is referenced at this point of time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get snapshotTime => $_getN(1);
+  $1776.Timestamp get snapshotTime => $_getN(1);
   @$pb.TagNumber(2)
-  set snapshotTime($1775.Timestamp v) { setField(2, v); }
+  set snapshotTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSnapshotTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSnapshotTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSnapshotTime() => $_ensure(1);
+  $1776.Timestamp ensureSnapshotTime() => $_ensure(1);
 
   /// Status of the ReportDetail.
   @$pb.TagNumber(4)
-  $1795.Status get status => $_getN(2);
+  $1796.Status get status => $_getN(2);
   @$pb.TagNumber(4)
-  set status($1795.Status v) { setField(4, v); }
+  set status($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(4)
   void clearStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureStatus() => $_ensure(2);
+  $1796.Status ensureStatus() => $_ensure(2);
 
   /// Labels as key value pairs
   @$pb.TagNumber(5)
@@ -723,15 +723,15 @@ class ReportDetail extends $pb.GeneratedMessage {
   /// The date for which report is generated. The time part of target_datetime
   /// will be zero till we support multiple reports per day.
   @$pb.TagNumber(6)
-  $1801.DateTime get targetDatetime => $_getN(4);
+  $1802.DateTime get targetDatetime => $_getN(4);
   @$pb.TagNumber(6)
-  set targetDatetime($1801.DateTime v) { setField(6, v); }
+  set targetDatetime($1802.DateTime v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTargetDatetime() => $_has(4);
   @$pb.TagNumber(6)
   void clearTargetDatetime() => clearField(6);
   @$pb.TagNumber(6)
-  $1801.DateTime ensureTargetDatetime() => $_ensure(4);
+  $1802.DateTime ensureTargetDatetime() => $_ensure(4);
 
   /// Metrics of the report.
   @$pb.TagNumber(7)
@@ -1010,8 +1010,8 @@ class GetReportDetailRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -1047,8 +1047,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.storageinsights.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -1080,27 +1080,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -1163,8 +1163,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
 class FrequencyOptions extends $pb.GeneratedMessage {
   factory FrequencyOptions({
     FrequencyOptions_Frequency? frequency,
-    $1800.Date? startDate,
-    $1800.Date? endDate,
+    $1801.Date? startDate,
+    $1801.Date? endDate,
   }) {
     final $result = create();
     if (frequency != null) {
@@ -1184,8 +1184,8 @@ class FrequencyOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FrequencyOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.storageinsights.v1'), createEmptyInstance: create)
     ..e<FrequencyOptions_Frequency>(1, _omitFieldNames ? '' : 'frequency', $pb.PbFieldType.OE, defaultOrMaker: FrequencyOptions_Frequency.FREQUENCY_UNSPECIFIED, valueOf: FrequencyOptions_Frequency.valueOf, enumValues: FrequencyOptions_Frequency.values)
-    ..aOM<$1800.Date>(2, _omitFieldNames ? '' : 'startDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(3, _omitFieldNames ? '' : 'endDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(2, _omitFieldNames ? '' : 'startDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(3, _omitFieldNames ? '' : 'endDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -1223,28 +1223,28 @@ class FrequencyOptions extends $pb.GeneratedMessage {
   /// The date from which report generation should start.
   /// UTC time zone.
   @$pb.TagNumber(2)
-  $1800.Date get startDate => $_getN(1);
+  $1801.Date get startDate => $_getN(1);
   @$pb.TagNumber(2)
-  set startDate($1800.Date v) { setField(2, v); }
+  set startDate($1801.Date v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartDate() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartDate() => clearField(2);
   @$pb.TagNumber(2)
-  $1800.Date ensureStartDate() => $_ensure(1);
+  $1801.Date ensureStartDate() => $_ensure(1);
 
   /// The date on which report generation should stop (Inclusive).
   /// UTC time zone.
   @$pb.TagNumber(3)
-  $1800.Date get endDate => $_getN(2);
+  $1801.Date get endDate => $_getN(2);
   @$pb.TagNumber(3)
-  set endDate($1800.Date v) { setField(3, v); }
+  set endDate($1801.Date v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndDate() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndDate() => clearField(3);
   @$pb.TagNumber(3)
-  $1800.Date ensureEndDate() => $_ensure(2);
+  $1801.Date ensureEndDate() => $_ensure(2);
 }
 
 /// Options to configure CSV formatted reports.
@@ -1611,8 +1611,8 @@ enum ReportConfig_ReportKind {
 class ReportConfig extends $pb.GeneratedMessage {
   factory ReportConfig({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     FrequencyOptions? frequencyOptions,
     CSVOptions? csvOptions,
     ParquetOptions? parquetOptions,
@@ -1667,8 +1667,8 @@ class ReportConfig extends $pb.GeneratedMessage {
     ..oo(0, [6, 7])
     ..oo(1, [8])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<FrequencyOptions>(5, _omitFieldNames ? '' : 'frequencyOptions', subBuilder: FrequencyOptions.create)
     ..aOM<CSVOptions>(6, _omitFieldNames ? '' : 'csvOptions', subBuilder: CSVOptions.create)
     ..aOM<ParquetOptions>(7, _omitFieldNames ? '' : 'parquetOptions', subBuilder: ParquetOptions.create)
@@ -1718,27 +1718,27 @@ class ReportConfig extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create time stamp
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. [Output only] Update time stamp
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The frequency of report generation.
   @$pb.TagNumber(5)

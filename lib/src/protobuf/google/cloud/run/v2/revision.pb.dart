@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../api/launch_stage.pbenum.dart' as $1777;
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'condition.pb.dart' as $4603;
-import 'k8s.min.pb.dart' as $4600;
-import 'status.pb.dart' as $4605;
-import 'vendor_settings.pb.dart' as $4601;
-import 'vendor_settings.pbenum.dart' as $4601;
+import '../../../api/launch_stage.pbenum.dart' as $1778;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'condition.pb.dart' as $4605;
+import 'k8s.min.pb.dart' as $4602;
+import 'status.pb.dart' as $4607;
+import 'vendor_settings.pb.dart' as $4603;
+import 'vendor_settings.pbenum.dart' as $4603;
 
 /// Request message for obtaining a Revision by its full name.
 class GetRevisionRequest extends $pb.GeneratedMessage {
@@ -338,30 +338,30 @@ class Revision extends $pb.GeneratedMessage {
     $fixnum.Int64? generation,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? annotations,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
-    $1777.LaunchStage? launchStage,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
+    $1778.LaunchStage? launchStage,
     $core.String? service,
-    $4601.RevisionScaling? scaling,
-    $4601.VpcAccess? vpcAccess,
-    $1737.Duration? timeout,
+    $4603.RevisionScaling? scaling,
+    $4603.VpcAccess? vpcAccess,
+    $1738.Duration? timeout,
     $core.String? serviceAccount,
-    $core.Iterable<$4600.Container>? containers,
-    $core.Iterable<$4600.Volume>? volumes,
-    $4601.ExecutionEnvironment? executionEnvironment,
+    $core.Iterable<$4602.Container>? containers,
+    $core.Iterable<$4602.Volume>? volumes,
+    $4603.ExecutionEnvironment? executionEnvironment,
     $core.String? encryptionKey,
-    $4601.EncryptionKeyRevocationAction? encryptionKeyRevocationAction,
-    $1737.Duration? encryptionKeyShutdownDuration,
+    $4603.EncryptionKeyRevocationAction? encryptionKeyRevocationAction,
+    $1738.Duration? encryptionKeyShutdownDuration,
     $core.bool? reconciling,
-    $core.Iterable<$4603.Condition>? conditions,
+    $core.Iterable<$4605.Condition>? conditions,
     $fixnum.Int64? observedGeneration,
     $core.String? logUri,
     $core.int? maxInstanceRequestConcurrency,
     $core.bool? satisfiesPzs,
     $core.bool? sessionAffinity,
-    $4605.RevisionScalingStatus? scalingStatus,
+    $4607.RevisionScalingStatus? scalingStatus,
     $core.String? etag,
   }) {
     final $result = create();
@@ -467,30 +467,30 @@ class Revision extends $pb.GeneratedMessage {
     ..aInt64(3, _omitFieldNames ? '' : 'generation')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Revision.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Revision.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..e<$1777.LaunchStage>(10, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1777.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1777.LaunchStage.valueOf, enumValues: $1777.LaunchStage.values)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..e<$1778.LaunchStage>(10, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1778.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1778.LaunchStage.valueOf, enumValues: $1778.LaunchStage.values)
     ..aOS(11, _omitFieldNames ? '' : 'service')
-    ..aOM<$4601.RevisionScaling>(12, _omitFieldNames ? '' : 'scaling', subBuilder: $4601.RevisionScaling.create)
-    ..aOM<$4601.VpcAccess>(13, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4601.VpcAccess.create)
-    ..aOM<$1737.Duration>(15, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$4603.RevisionScaling>(12, _omitFieldNames ? '' : 'scaling', subBuilder: $4603.RevisionScaling.create)
+    ..aOM<$4603.VpcAccess>(13, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4603.VpcAccess.create)
+    ..aOM<$1738.Duration>(15, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOS(16, _omitFieldNames ? '' : 'serviceAccount')
-    ..pc<$4600.Container>(17, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4600.Container.create)
-    ..pc<$4600.Volume>(18, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4600.Volume.create)
-    ..e<$4601.ExecutionEnvironment>(20, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4601.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4601.ExecutionEnvironment.valueOf, enumValues: $4601.ExecutionEnvironment.values)
+    ..pc<$4602.Container>(17, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4602.Container.create)
+    ..pc<$4602.Volume>(18, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4602.Volume.create)
+    ..e<$4603.ExecutionEnvironment>(20, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4603.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4603.ExecutionEnvironment.valueOf, enumValues: $4603.ExecutionEnvironment.values)
     ..aOS(21, _omitFieldNames ? '' : 'encryptionKey')
-    ..e<$4601.EncryptionKeyRevocationAction>(23, _omitFieldNames ? '' : 'encryptionKeyRevocationAction', $pb.PbFieldType.OE, defaultOrMaker: $4601.EncryptionKeyRevocationAction.ENCRYPTION_KEY_REVOCATION_ACTION_UNSPECIFIED, valueOf: $4601.EncryptionKeyRevocationAction.valueOf, enumValues: $4601.EncryptionKeyRevocationAction.values)
-    ..aOM<$1737.Duration>(24, _omitFieldNames ? '' : 'encryptionKeyShutdownDuration', subBuilder: $1737.Duration.create)
+    ..e<$4603.EncryptionKeyRevocationAction>(23, _omitFieldNames ? '' : 'encryptionKeyRevocationAction', $pb.PbFieldType.OE, defaultOrMaker: $4603.EncryptionKeyRevocationAction.ENCRYPTION_KEY_REVOCATION_ACTION_UNSPECIFIED, valueOf: $4603.EncryptionKeyRevocationAction.valueOf, enumValues: $4603.EncryptionKeyRevocationAction.values)
+    ..aOM<$1738.Duration>(24, _omitFieldNames ? '' : 'encryptionKeyShutdownDuration', subBuilder: $1738.Duration.create)
     ..aOB(30, _omitFieldNames ? '' : 'reconciling')
-    ..pc<$4603.Condition>(31, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4603.Condition.create)
+    ..pc<$4605.Condition>(31, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4605.Condition.create)
     ..aInt64(32, _omitFieldNames ? '' : 'observedGeneration')
     ..aOS(33, _omitFieldNames ? '' : 'logUri')
     ..a<$core.int>(34, _omitFieldNames ? '' : 'maxInstanceRequestConcurrency', $pb.PbFieldType.O3)
     ..aOB(37, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(38, _omitFieldNames ? '' : 'sessionAffinity')
-    ..aOM<$4605.RevisionScalingStatus>(39, _omitFieldNames ? '' : 'scalingStatus', subBuilder: $4605.RevisionScalingStatus.create)
+    ..aOM<$4607.RevisionScalingStatus>(39, _omitFieldNames ? '' : 'scalingStatus', subBuilder: $4607.RevisionScalingStatus.create)
     ..aOS(99, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
   ;
@@ -567,54 +567,54 @@ class Revision extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The last-modified time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. For a deleted resource, the deletion time. It is only
   /// populated as a response to a Delete request.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Output only. For a deleted resource, the time after which it will be
   /// permamently deleted. It is only populated as a response to a Delete
   /// request.
   @$pb.TagNumber(9)
-  $1775.Timestamp get expireTime => $_getN(8);
+  $1776.Timestamp get expireTime => $_getN(8);
   @$pb.TagNumber(9)
-  set expireTime($1775.Timestamp v) { setField(9, v); }
+  set expireTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpireTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearExpireTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureExpireTime() => $_ensure(8);
+  $1776.Timestamp ensureExpireTime() => $_ensure(8);
 
   /// The least stable launch stage needed to create this resource, as defined by
   /// [Google Cloud Platform Launch
@@ -625,9 +625,9 @@ class Revision extends $pb.GeneratedMessage {
   /// resource, but only BETA and GA-level features are were, this field will be
   /// BETA.
   @$pb.TagNumber(10)
-  $1777.LaunchStage get launchStage => $_getN(9);
+  $1778.LaunchStage get launchStage => $_getN(9);
   @$pb.TagNumber(10)
-  set launchStage($1777.LaunchStage v) { setField(10, v); }
+  set launchStage($1778.LaunchStage v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasLaunchStage() => $_has(9);
   @$pb.TagNumber(10)
@@ -645,40 +645,40 @@ class Revision extends $pb.GeneratedMessage {
 
   /// Scaling settings for this revision.
   @$pb.TagNumber(12)
-  $4601.RevisionScaling get scaling => $_getN(11);
+  $4603.RevisionScaling get scaling => $_getN(11);
   @$pb.TagNumber(12)
-  set scaling($4601.RevisionScaling v) { setField(12, v); }
+  set scaling($4603.RevisionScaling v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasScaling() => $_has(11);
   @$pb.TagNumber(12)
   void clearScaling() => clearField(12);
   @$pb.TagNumber(12)
-  $4601.RevisionScaling ensureScaling() => $_ensure(11);
+  $4603.RevisionScaling ensureScaling() => $_ensure(11);
 
   /// VPC Access configuration for this Revision. For more information, visit
   /// https://cloud.google.com/run/docs/configuring/connecting-vpc.
   @$pb.TagNumber(13)
-  $4601.VpcAccess get vpcAccess => $_getN(12);
+  $4603.VpcAccess get vpcAccess => $_getN(12);
   @$pb.TagNumber(13)
-  set vpcAccess($4601.VpcAccess v) { setField(13, v); }
+  set vpcAccess($4603.VpcAccess v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasVpcAccess() => $_has(12);
   @$pb.TagNumber(13)
   void clearVpcAccess() => clearField(13);
   @$pb.TagNumber(13)
-  $4601.VpcAccess ensureVpcAccess() => $_ensure(12);
+  $4603.VpcAccess ensureVpcAccess() => $_ensure(12);
 
   /// Max allowed time for an instance to respond to a request.
   @$pb.TagNumber(15)
-  $1737.Duration get timeout => $_getN(13);
+  $1738.Duration get timeout => $_getN(13);
   @$pb.TagNumber(15)
-  set timeout($1737.Duration v) { setField(15, v); }
+  set timeout($1738.Duration v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasTimeout() => $_has(13);
   @$pb.TagNumber(15)
   void clearTimeout() => clearField(15);
   @$pb.TagNumber(15)
-  $1737.Duration ensureTimeout() => $_ensure(13);
+  $1738.Duration ensureTimeout() => $_ensure(13);
 
   /// Email address of the IAM service account associated with the revision of
   /// the service. The service account represents the identity of the running
@@ -695,17 +695,17 @@ class Revision extends $pb.GeneratedMessage {
   /// Holds the single container that defines the unit of execution for this
   /// Revision.
   @$pb.TagNumber(17)
-  $core.List<$4600.Container> get containers => $_getList(15);
+  $core.List<$4602.Container> get containers => $_getList(15);
 
   /// A list of Volumes to make available to containers.
   @$pb.TagNumber(18)
-  $core.List<$4600.Volume> get volumes => $_getList(16);
+  $core.List<$4602.Volume> get volumes => $_getList(16);
 
   /// The execution environment being used to host this Revision.
   @$pb.TagNumber(20)
-  $4601.ExecutionEnvironment get executionEnvironment => $_getN(17);
+  $4603.ExecutionEnvironment get executionEnvironment => $_getN(17);
   @$pb.TagNumber(20)
-  set executionEnvironment($4601.ExecutionEnvironment v) { setField(20, v); }
+  set executionEnvironment($4603.ExecutionEnvironment v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasExecutionEnvironment() => $_has(17);
   @$pb.TagNumber(20)
@@ -725,9 +725,9 @@ class Revision extends $pb.GeneratedMessage {
 
   /// The action to take if the encryption key is revoked.
   @$pb.TagNumber(23)
-  $4601.EncryptionKeyRevocationAction get encryptionKeyRevocationAction => $_getN(19);
+  $4603.EncryptionKeyRevocationAction get encryptionKeyRevocationAction => $_getN(19);
   @$pb.TagNumber(23)
-  set encryptionKeyRevocationAction($4601.EncryptionKeyRevocationAction v) { setField(23, v); }
+  set encryptionKeyRevocationAction($4603.EncryptionKeyRevocationAction v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasEncryptionKeyRevocationAction() => $_has(19);
   @$pb.TagNumber(23)
@@ -736,15 +736,15 @@ class Revision extends $pb.GeneratedMessage {
   /// If encryption_key_revocation_action is SHUTDOWN, the duration before
   /// shutting down all instances. The minimum increment is 1 hour.
   @$pb.TagNumber(24)
-  $1737.Duration get encryptionKeyShutdownDuration => $_getN(20);
+  $1738.Duration get encryptionKeyShutdownDuration => $_getN(20);
   @$pb.TagNumber(24)
-  set encryptionKeyShutdownDuration($1737.Duration v) { setField(24, v); }
+  set encryptionKeyShutdownDuration($1738.Duration v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasEncryptionKeyShutdownDuration() => $_has(20);
   @$pb.TagNumber(24)
   void clearEncryptionKeyShutdownDuration() => clearField(24);
   @$pb.TagNumber(24)
-  $1737.Duration ensureEncryptionKeyShutdownDuration() => $_ensure(20);
+  $1738.Duration ensureEncryptionKeyShutdownDuration() => $_ensure(20);
 
   /// Output only. Indicates whether the resource's reconciliation is still in
   /// progress. See comments in `Service.reconciling` for additional information
@@ -762,7 +762,7 @@ class Revision extends $pb.GeneratedMessage {
   /// status, and detailed error information in case it did not reach a serving
   /// state.
   @$pb.TagNumber(31)
-  $core.List<$4603.Condition> get conditions => $_getList(22);
+  $core.List<$4605.Condition> get conditions => $_getList(22);
 
   /// Output only. The generation of this Revision currently serving traffic. See
   /// comments in `reconciling` for additional information on reconciliation
@@ -818,15 +818,15 @@ class Revision extends $pb.GeneratedMessage {
 
   /// Output only. The current effective scaling settings for the revision.
   @$pb.TagNumber(39)
-  $4605.RevisionScalingStatus get scalingStatus => $_getN(28);
+  $4607.RevisionScalingStatus get scalingStatus => $_getN(28);
   @$pb.TagNumber(39)
-  set scalingStatus($4605.RevisionScalingStatus v) { setField(39, v); }
+  set scalingStatus($4607.RevisionScalingStatus v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasScalingStatus() => $_has(28);
   @$pb.TagNumber(39)
   void clearScalingStatus() => clearField(39);
   @$pb.TagNumber(39)
-  $4605.RevisionScalingStatus ensureScalingStatus() => $_ensure(28);
+  $4607.RevisionScalingStatus ensureScalingStatus() => $_ensure(28);
 
   /// Output only. A system-generated fingerprint for this version of the
   /// resource. May be used to detect modification conflict during updates.

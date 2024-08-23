@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../apps/script/type/calendar/calendar_addon_manifest.pb.dart' as $4550;
-import '../../../apps/script/type/docs/docs_addon_manifest.pb.dart' as $4551;
-import '../../../apps/script/type/drive/drive_addon_manifest.pb.dart' as $4549;
-import '../../../apps/script/type/gmail/gmail_addon_manifest.pb.dart' as $4548;
-import '../../../apps/script/type/script_manifest.pb.dart' as $4547;
-import '../../../apps/script/type/sheets/sheets_addon_manifest.pb.dart' as $4552;
-import '../../../apps/script/type/slides/slides_addon_manifest.pb.dart' as $4553;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../apps/script/type/calendar/calendar_addon_manifest.pb.dart' as $4552;
+import '../../../apps/script/type/docs/docs_addon_manifest.pb.dart' as $4553;
+import '../../../apps/script/type/drive/drive_addon_manifest.pb.dart' as $4551;
+import '../../../apps/script/type/gmail/gmail_addon_manifest.pb.dart' as $4550;
+import '../../../apps/script/type/script_manifest.pb.dart' as $4549;
+import '../../../apps/script/type/sheets/sheets_addon_manifest.pb.dart' as $4554;
+import '../../../apps/script/type/slides/slides_addon_manifest.pb.dart' as $4555;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 
 /// Request message to get Google Workspace Add-ons authorization information.
 class GetAuthorizationRequest extends $pb.GeneratedMessage {
@@ -746,7 +746,7 @@ class GetInstallStatusRequest extends $pb.GeneratedMessage {
 class InstallStatus extends $pb.GeneratedMessage {
   factory InstallStatus({
     $core.String? name,
-    $1780.BoolValue? installed,
+    $1781.BoolValue? installed,
   }) {
     final $result = create();
     if (name != null) {
@@ -763,7 +763,7 @@ class InstallStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InstallStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gsuiteaddons.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1780.BoolValue>(2, _omitFieldNames ? '' : 'installed', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(2, _omitFieldNames ? '' : 'installed', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -802,15 +802,15 @@ class InstallStatus extends $pb.GeneratedMessage {
 
   /// True if the deployment is installed for the user
   @$pb.TagNumber(2)
-  $1780.BoolValue get installed => $_getN(1);
+  $1781.BoolValue get installed => $_getN(1);
   @$pb.TagNumber(2)
-  set installed($1780.BoolValue v) { setField(2, v); }
+  set installed($1781.BoolValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInstalled() => $_has(1);
   @$pb.TagNumber(2)
   void clearInstalled() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.BoolValue ensureInstalled() => $_ensure(1);
+  $1781.BoolValue ensureInstalled() => $_ensure(1);
 }
 
 /// A Google Workspace Add-on deployment
@@ -913,14 +913,14 @@ class Deployment extends $pb.GeneratedMessage {
 /// A Google Workspace Add-on configuration.
 class AddOns extends $pb.GeneratedMessage {
   factory AddOns({
-    $4547.CommonAddOnManifest? common,
-    $4548.GmailAddOnManifest? gmail,
-    $4549.DriveAddOnManifest? drive,
-    $4550.CalendarAddOnManifest? calendar,
-    $4551.DocsAddOnManifest? docs,
-    $4552.SheetsAddOnManifest? sheets,
-    $4553.SlidesAddOnManifest? slides,
-    $4547.HttpOptions? httpOptions,
+    $4549.CommonAddOnManifest? common,
+    $4550.GmailAddOnManifest? gmail,
+    $4551.DriveAddOnManifest? drive,
+    $4552.CalendarAddOnManifest? calendar,
+    $4553.DocsAddOnManifest? docs,
+    $4554.SheetsAddOnManifest? sheets,
+    $4555.SlidesAddOnManifest? slides,
+    $4549.HttpOptions? httpOptions,
   }) {
     final $result = create();
     if (common != null) {
@@ -954,14 +954,14 @@ class AddOns extends $pb.GeneratedMessage {
   factory AddOns.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AddOns', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gsuiteaddons.v1'), createEmptyInstance: create)
-    ..aOM<$4547.CommonAddOnManifest>(1, _omitFieldNames ? '' : 'common', subBuilder: $4547.CommonAddOnManifest.create)
-    ..aOM<$4548.GmailAddOnManifest>(2, _omitFieldNames ? '' : 'gmail', subBuilder: $4548.GmailAddOnManifest.create)
-    ..aOM<$4549.DriveAddOnManifest>(5, _omitFieldNames ? '' : 'drive', subBuilder: $4549.DriveAddOnManifest.create)
-    ..aOM<$4550.CalendarAddOnManifest>(6, _omitFieldNames ? '' : 'calendar', subBuilder: $4550.CalendarAddOnManifest.create)
-    ..aOM<$4551.DocsAddOnManifest>(7, _omitFieldNames ? '' : 'docs', subBuilder: $4551.DocsAddOnManifest.create)
-    ..aOM<$4552.SheetsAddOnManifest>(8, _omitFieldNames ? '' : 'sheets', subBuilder: $4552.SheetsAddOnManifest.create)
-    ..aOM<$4553.SlidesAddOnManifest>(10, _omitFieldNames ? '' : 'slides', subBuilder: $4553.SlidesAddOnManifest.create)
-    ..aOM<$4547.HttpOptions>(15, _omitFieldNames ? '' : 'httpOptions', subBuilder: $4547.HttpOptions.create)
+    ..aOM<$4549.CommonAddOnManifest>(1, _omitFieldNames ? '' : 'common', subBuilder: $4549.CommonAddOnManifest.create)
+    ..aOM<$4550.GmailAddOnManifest>(2, _omitFieldNames ? '' : 'gmail', subBuilder: $4550.GmailAddOnManifest.create)
+    ..aOM<$4551.DriveAddOnManifest>(5, _omitFieldNames ? '' : 'drive', subBuilder: $4551.DriveAddOnManifest.create)
+    ..aOM<$4552.CalendarAddOnManifest>(6, _omitFieldNames ? '' : 'calendar', subBuilder: $4552.CalendarAddOnManifest.create)
+    ..aOM<$4553.DocsAddOnManifest>(7, _omitFieldNames ? '' : 'docs', subBuilder: $4553.DocsAddOnManifest.create)
+    ..aOM<$4554.SheetsAddOnManifest>(8, _omitFieldNames ? '' : 'sheets', subBuilder: $4554.SheetsAddOnManifest.create)
+    ..aOM<$4555.SlidesAddOnManifest>(10, _omitFieldNames ? '' : 'slides', subBuilder: $4555.SlidesAddOnManifest.create)
+    ..aOM<$4549.HttpOptions>(15, _omitFieldNames ? '' : 'httpOptions', subBuilder: $4549.HttpOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -988,99 +988,99 @@ class AddOns extends $pb.GeneratedMessage {
 
   /// Configuration that is common across all Google Workspace Add-ons.
   @$pb.TagNumber(1)
-  $4547.CommonAddOnManifest get common => $_getN(0);
+  $4549.CommonAddOnManifest get common => $_getN(0);
   @$pb.TagNumber(1)
-  set common($4547.CommonAddOnManifest v) { setField(1, v); }
+  set common($4549.CommonAddOnManifest v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommon() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => clearField(1);
   @$pb.TagNumber(1)
-  $4547.CommonAddOnManifest ensureCommon() => $_ensure(0);
+  $4549.CommonAddOnManifest ensureCommon() => $_ensure(0);
 
   /// Gmail add-on configuration.
   @$pb.TagNumber(2)
-  $4548.GmailAddOnManifest get gmail => $_getN(1);
+  $4550.GmailAddOnManifest get gmail => $_getN(1);
   @$pb.TagNumber(2)
-  set gmail($4548.GmailAddOnManifest v) { setField(2, v); }
+  set gmail($4550.GmailAddOnManifest v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGmail() => $_has(1);
   @$pb.TagNumber(2)
   void clearGmail() => clearField(2);
   @$pb.TagNumber(2)
-  $4548.GmailAddOnManifest ensureGmail() => $_ensure(1);
+  $4550.GmailAddOnManifest ensureGmail() => $_ensure(1);
 
   /// Drive add-on configuration.
   @$pb.TagNumber(5)
-  $4549.DriveAddOnManifest get drive => $_getN(2);
+  $4551.DriveAddOnManifest get drive => $_getN(2);
   @$pb.TagNumber(5)
-  set drive($4549.DriveAddOnManifest v) { setField(5, v); }
+  set drive($4551.DriveAddOnManifest v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDrive() => $_has(2);
   @$pb.TagNumber(5)
   void clearDrive() => clearField(5);
   @$pb.TagNumber(5)
-  $4549.DriveAddOnManifest ensureDrive() => $_ensure(2);
+  $4551.DriveAddOnManifest ensureDrive() => $_ensure(2);
 
   /// Calendar add-on configuration.
   @$pb.TagNumber(6)
-  $4550.CalendarAddOnManifest get calendar => $_getN(3);
+  $4552.CalendarAddOnManifest get calendar => $_getN(3);
   @$pb.TagNumber(6)
-  set calendar($4550.CalendarAddOnManifest v) { setField(6, v); }
+  set calendar($4552.CalendarAddOnManifest v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCalendar() => $_has(3);
   @$pb.TagNumber(6)
   void clearCalendar() => clearField(6);
   @$pb.TagNumber(6)
-  $4550.CalendarAddOnManifest ensureCalendar() => $_ensure(3);
+  $4552.CalendarAddOnManifest ensureCalendar() => $_ensure(3);
 
   /// Docs add-on configuration.
   @$pb.TagNumber(7)
-  $4551.DocsAddOnManifest get docs => $_getN(4);
+  $4553.DocsAddOnManifest get docs => $_getN(4);
   @$pb.TagNumber(7)
-  set docs($4551.DocsAddOnManifest v) { setField(7, v); }
+  set docs($4553.DocsAddOnManifest v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDocs() => $_has(4);
   @$pb.TagNumber(7)
   void clearDocs() => clearField(7);
   @$pb.TagNumber(7)
-  $4551.DocsAddOnManifest ensureDocs() => $_ensure(4);
+  $4553.DocsAddOnManifest ensureDocs() => $_ensure(4);
 
   /// Sheets add-on configuration.
   @$pb.TagNumber(8)
-  $4552.SheetsAddOnManifest get sheets => $_getN(5);
+  $4554.SheetsAddOnManifest get sheets => $_getN(5);
   @$pb.TagNumber(8)
-  set sheets($4552.SheetsAddOnManifest v) { setField(8, v); }
+  set sheets($4554.SheetsAddOnManifest v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSheets() => $_has(5);
   @$pb.TagNumber(8)
   void clearSheets() => clearField(8);
   @$pb.TagNumber(8)
-  $4552.SheetsAddOnManifest ensureSheets() => $_ensure(5);
+  $4554.SheetsAddOnManifest ensureSheets() => $_ensure(5);
 
   /// Slides add-on configuration.
   @$pb.TagNumber(10)
-  $4553.SlidesAddOnManifest get slides => $_getN(6);
+  $4555.SlidesAddOnManifest get slides => $_getN(6);
   @$pb.TagNumber(10)
-  set slides($4553.SlidesAddOnManifest v) { setField(10, v); }
+  set slides($4555.SlidesAddOnManifest v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSlides() => $_has(6);
   @$pb.TagNumber(10)
   void clearSlides() => clearField(10);
   @$pb.TagNumber(10)
-  $4553.SlidesAddOnManifest ensureSlides() => $_ensure(6);
+  $4555.SlidesAddOnManifest ensureSlides() => $_ensure(6);
 
   /// Options for sending requests to add-on HTTP endpoints
   @$pb.TagNumber(15)
-  $4547.HttpOptions get httpOptions => $_getN(7);
+  $4549.HttpOptions get httpOptions => $_getN(7);
   @$pb.TagNumber(15)
-  set httpOptions($4547.HttpOptions v) { setField(15, v); }
+  set httpOptions($4549.HttpOptions v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasHttpOptions() => $_has(7);
   @$pb.TagNumber(15)
   void clearHttpOptions() => clearField(15);
   @$pb.TagNumber(15)
-  $4547.HttpOptions ensureHttpOptions() => $_ensure(7);
+  $4549.HttpOptions ensureHttpOptions() => $_ensure(7);
 }
 
 

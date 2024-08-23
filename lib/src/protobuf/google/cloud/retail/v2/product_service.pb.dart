@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4593;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4595;
 import 'product.pb.dart' as $1264;
 
 /// Request message for
@@ -188,7 +188,7 @@ class GetProductRequest extends $pb.GeneratedMessage {
 class UpdateProductRequest extends $pb.GeneratedMessage {
   factory UpdateProductRequest({
     $1264.Product? product,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -209,7 +209,7 @@ class UpdateProductRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProductRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2'), createEmptyInstance: create)
     ..aOM<$1264.Product>(1, _omitFieldNames ? '' : 'product', subBuilder: $1264.Product.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -269,15 +269,15 @@ class UpdateProductRequest extends $pb.GeneratedMessage {
   ///  the patching product from the request, this key will be deleted after the
   ///  update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If set to true, and the [Product][google.cloud.retail.v2.Product] is not
   /// found, a new [Product][google.cloud.retail.v2.Product] will be created. In
@@ -375,7 +375,7 @@ class ListProductsRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? filter,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -404,7 +404,7 @@ class ListProductsRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -534,15 +534,15 @@ class ListProductsRequest extends $pb.GeneratedMessage {
   ///  If an unsupported or unknown field is provided, an INVALID_ARGUMENT error
   ///  is returned.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 }
 
 /// Response message for
@@ -617,8 +617,8 @@ class ListProductsResponse extends $pb.GeneratedMessage {
 class SetInventoryRequest extends $pb.GeneratedMessage {
   factory SetInventoryRequest({
     $1264.Product? inventory,
-    $2209.FieldMask? setMask,
-    $1775.Timestamp? setTime,
+    $2210.FieldMask? setMask,
+    $1776.Timestamp? setTime,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -642,8 +642,8 @@ class SetInventoryRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetInventoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2'), createEmptyInstance: create)
     ..aOM<$1264.Product>(1, _omitFieldNames ? '' : 'inventory', subBuilder: $1264.Product.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'setMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'setTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'setMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'setTime', subBuilder: $1776.Timestamp.create)
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -746,29 +746,29 @@ class SetInventoryRequest extends $pb.GeneratedMessage {
   ///  If an unsupported or unknown field is provided, an INVALID_ARGUMENT error
   ///  is returned and the entire update will be ignored.
   @$pb.TagNumber(2)
-  $2209.FieldMask get setMask => $_getN(1);
+  $2210.FieldMask get setMask => $_getN(1);
   @$pb.TagNumber(2)
-  set setMask($2209.FieldMask v) { setField(2, v); }
+  set setMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSetMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearSetMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureSetMask() => $_ensure(1);
+  $2210.FieldMask ensureSetMask() => $_ensure(1);
 
   /// The time when the request is issued, used to prevent
   /// out-of-order updates on inventory fields with the last update time
   /// recorded. If not provided, the internal system time will be used.
   @$pb.TagNumber(3)
-  $1775.Timestamp get setTime => $_getN(2);
+  $1776.Timestamp get setTime => $_getN(2);
   @$pb.TagNumber(3)
-  set setTime($1775.Timestamp v) { setField(3, v); }
+  set setTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSetTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearSetTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureSetTime() => $_ensure(2);
+  $1776.Timestamp ensureSetTime() => $_ensure(2);
 
   /// If set to true, and the [Product][google.cloud.retail.v2.Product] with name
   /// [Product.name][google.cloud.retail.v2.Product.name] is not found, the
@@ -866,7 +866,7 @@ class AddFulfillmentPlacesRequest extends $pb.GeneratedMessage {
     $core.String? product,
     $core.String? type,
     $core.Iterable<$core.String>? placeIds,
-    $1775.Timestamp? addTime,
+    $1776.Timestamp? addTime,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -895,7 +895,7 @@ class AddFulfillmentPlacesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'product')
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..pPS(3, _omitFieldNames ? '' : 'placeIds')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'addTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'addTime', subBuilder: $1776.Timestamp.create)
     ..aOB(5, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -988,15 +988,15 @@ class AddFulfillmentPlacesRequest extends $pb.GeneratedMessage {
   /// out-of-order updates on fulfillment information. If not provided, the
   /// internal system time will be used.
   @$pb.TagNumber(4)
-  $1775.Timestamp get addTime => $_getN(3);
+  $1776.Timestamp get addTime => $_getN(3);
   @$pb.TagNumber(4)
-  set addTime($1775.Timestamp v) { setField(4, v); }
+  set addTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAddTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearAddTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureAddTime() => $_ensure(3);
+  $1776.Timestamp ensureAddTime() => $_ensure(3);
 
   /// If set to true, and the [Product][google.cloud.retail.v2.Product] is not
   /// found, the fulfillment information will still be processed and retained for
@@ -1092,9 +1092,9 @@ class AddFulfillmentPlacesResponse extends $pb.GeneratedMessage {
 class AddLocalInventoriesRequest extends $pb.GeneratedMessage {
   factory AddLocalInventoriesRequest({
     $core.String? product,
-    $core.Iterable<$4593.LocalInventory>? localInventories,
-    $2209.FieldMask? addMask,
-    $1775.Timestamp? addTime,
+    $core.Iterable<$4595.LocalInventory>? localInventories,
+    $2210.FieldMask? addMask,
+    $1776.Timestamp? addTime,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -1121,9 +1121,9 @@ class AddLocalInventoriesRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AddLocalInventoriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'product')
-    ..pc<$4593.LocalInventory>(2, _omitFieldNames ? '' : 'localInventories', $pb.PbFieldType.PM, subBuilder: $4593.LocalInventory.create)
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'addMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'addTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$4595.LocalInventory>(2, _omitFieldNames ? '' : 'localInventories', $pb.PbFieldType.PM, subBuilder: $4595.LocalInventory.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'addMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'addTime', subBuilder: $1776.Timestamp.create)
     ..aOB(6, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -1169,7 +1169,7 @@ class AddLocalInventoriesRequest extends $pb.GeneratedMessage {
   /// is identified by its place ID. At most 3000 inventories are allowed per
   /// request.
   @$pb.TagNumber(2)
-  $core.List<$4593.LocalInventory> get localInventories => $_getList(1);
+  $core.List<$4595.LocalInventory> get localInventories => $_getList(1);
 
   ///  Indicates which inventory fields in the provided list of
   ///  [LocalInventory][google.cloud.retail.v2.LocalInventory] to update. The
@@ -1187,29 +1187,29 @@ class AddLocalInventoriesRequest extends $pb.GeneratedMessage {
   ///  If an unsupported or unknown field is provided, an INVALID_ARGUMENT error
   ///  is returned and the entire update will be ignored.
   @$pb.TagNumber(4)
-  $2209.FieldMask get addMask => $_getN(2);
+  $2210.FieldMask get addMask => $_getN(2);
   @$pb.TagNumber(4)
-  set addMask($2209.FieldMask v) { setField(4, v); }
+  set addMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAddMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearAddMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureAddMask() => $_ensure(2);
+  $2210.FieldMask ensureAddMask() => $_ensure(2);
 
   /// The time when the inventory updates are issued. Used to prevent
   /// out-of-order updates on local inventory fields. If not provided, the
   /// internal system time will be used.
   @$pb.TagNumber(5)
-  $1775.Timestamp get addTime => $_getN(3);
+  $1776.Timestamp get addTime => $_getN(3);
   @$pb.TagNumber(5)
-  set addTime($1775.Timestamp v) { setField(5, v); }
+  set addTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAddTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearAddTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureAddTime() => $_ensure(3);
+  $1776.Timestamp ensureAddTime() => $_ensure(3);
 
   /// If set to true, and the [Product][google.cloud.retail.v2.Product] is not
   /// found, the local inventory will still be processed and retained for at most
@@ -1308,7 +1308,7 @@ class RemoveLocalInventoriesRequest extends $pb.GeneratedMessage {
     $core.String? product,
     $core.Iterable<$core.String>? placeIds,
     $core.bool? allowMissing,
-    $1775.Timestamp? removeTime,
+    $1776.Timestamp? removeTime,
   }) {
     final $result = create();
     if (product != null) {
@@ -1333,7 +1333,7 @@ class RemoveLocalInventoriesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'product')
     ..pPS(2, _omitFieldNames ? '' : 'placeIds')
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'removeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'removeTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1398,15 +1398,15 @@ class RemoveLocalInventoriesRequest extends $pb.GeneratedMessage {
   /// out-of-order updates and deletions on local inventory fields. If not
   /// provided, the internal system time will be used.
   @$pb.TagNumber(5)
-  $1775.Timestamp get removeTime => $_getN(3);
+  $1776.Timestamp get removeTime => $_getN(3);
   @$pb.TagNumber(5)
-  set removeTime($1775.Timestamp v) { setField(5, v); }
+  set removeTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRemoveTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearRemoveTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureRemoveTime() => $_ensure(3);
+  $1776.Timestamp ensureRemoveTime() => $_ensure(3);
 }
 
 /// Metadata related to the progress of the RemoveLocalInventories operation.
@@ -1491,7 +1491,7 @@ class RemoveFulfillmentPlacesRequest extends $pb.GeneratedMessage {
     $core.String? product,
     $core.String? type,
     $core.Iterable<$core.String>? placeIds,
-    $1775.Timestamp? removeTime,
+    $1776.Timestamp? removeTime,
     $core.bool? allowMissing,
   }) {
     final $result = create();
@@ -1520,7 +1520,7 @@ class RemoveFulfillmentPlacesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'product')
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..pPS(3, _omitFieldNames ? '' : 'placeIds')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'removeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'removeTime', subBuilder: $1776.Timestamp.create)
     ..aOB(5, _omitFieldNames ? '' : 'allowMissing')
     ..hasRequiredFields = false
   ;
@@ -1608,15 +1608,15 @@ class RemoveFulfillmentPlacesRequest extends $pb.GeneratedMessage {
   /// out-of-order updates on fulfillment information. If not provided, the
   /// internal system time will be used.
   @$pb.TagNumber(4)
-  $1775.Timestamp get removeTime => $_getN(3);
+  $1776.Timestamp get removeTime => $_getN(3);
   @$pb.TagNumber(4)
-  set removeTime($1775.Timestamp v) { setField(4, v); }
+  set removeTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRemoveTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearRemoveTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureRemoveTime() => $_ensure(3);
+  $1776.Timestamp ensureRemoveTime() => $_ensure(3);
 
   /// If set to true, and the [Product][google.cloud.retail.v2.Product] is not
   /// found, the fulfillment information will still be processed and retained for

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/expr.pb.dart' as $4213;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/expr.pb.dart' as $4214;
 import 'org_policy_config.pbenum.dart';
 
 export 'org_policy_config.pbenum.dart';
@@ -105,7 +105,7 @@ class PolicyRule extends $pb.GeneratedMessage {
     $core.bool? allowAll,
     $core.bool? denyAll,
     $core.bool? enforce,
-    $4213.Expr? condition,
+    $4214.Expr? condition,
   }) {
     final $result = create();
     if (values != null) {
@@ -142,7 +142,7 @@ class PolicyRule extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'allowAll')
     ..aOB(3, _omitFieldNames ? '' : 'denyAll')
     ..aOB(4, _omitFieldNames ? '' : 'enforce')
-    ..aOM<$4213.Expr>(5, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(5, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -230,15 +230,15 @@ class PolicyRule extends $pb.GeneratedMessage {
   /// 'prod')" or "resource.matchTagId('tagKeys/123',
   /// 'tagValues/456')".
   @$pb.TagNumber(5)
-  $4213.Expr get condition => $_getN(4);
+  $4214.Expr get condition => $_getN(4);
   @$pb.TagNumber(5)
-  set condition($4213.Expr v) { setField(5, v); }
+  set condition($4214.Expr v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCondition() => $_has(4);
   @$pb.TagNumber(5)
   void clearCondition() => clearField(5);
   @$pb.TagNumber(5)
-  $4213.Expr ensureCondition() => $_ensure(4);
+  $4214.Expr ensureCondition() => $_ensure(4);
 }
 
 ///  A custom constraint defined by customers which can *only* be applied to the
@@ -256,7 +256,7 @@ class CustomConstraint extends $pb.GeneratedMessage {
     CustomConstraint_ActionType? actionType,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -297,7 +297,7 @@ class CustomConstraint extends $pb.GeneratedMessage {
     ..e<CustomConstraint_ActionType>(5, _omitFieldNames ? '' : 'actionType', $pb.PbFieldType.OE, defaultOrMaker: CustomConstraint_ActionType.ACTION_TYPE_UNSPECIFIED, valueOf: CustomConstraint_ActionType.valueOf, enumValues: CustomConstraint_ActionType.values)
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..aOS(7, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -402,15 +402,15 @@ class CustomConstraint extends $pb.GeneratedMessage {
   /// represents the last time that the `CreateCustomConstraint` or
   /// `UpdateCustomConstraint` RPC was called
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 }
 
 

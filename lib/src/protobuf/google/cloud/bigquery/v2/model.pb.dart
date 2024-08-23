@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'encryption_config.pb.dart' as $4392;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'encryption_config.pb.dart' as $4393;
 import 'model.pbenum.dart';
-import 'model_reference.pb.dart' as $4410;
-import 'standard_sql.pb.dart' as $4402;
-import 'table_reference.pb.dart' as $4390;
+import 'model_reference.pb.dart' as $4411;
+import 'standard_sql.pb.dart' as $4403;
+import 'table_reference.pb.dart' as $4391;
 
 export 'model.pbenum.dart';
 
@@ -179,7 +179,7 @@ class RemoteModelInfo extends $pb.GeneratedMessage {
 class TransformColumn extends $pb.GeneratedMessage {
   factory TransformColumn({
     $core.String? name,
-    $4402.StandardSqlDataType? type,
+    $4403.StandardSqlDataType? type,
     $core.String? transformSql,
   }) {
     final $result = create();
@@ -200,7 +200,7 @@ class TransformColumn extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransformColumn', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4402.StandardSqlDataType>(2, _omitFieldNames ? '' : 'type', subBuilder: $4402.StandardSqlDataType.create)
+    ..aOM<$4403.StandardSqlDataType>(2, _omitFieldNames ? '' : 'type', subBuilder: $4403.StandardSqlDataType.create)
     ..aOS(3, _omitFieldNames ? '' : 'transformSql')
     ..hasRequiredFields = false
   ;
@@ -238,15 +238,15 @@ class TransformColumn extends $pb.GeneratedMessage {
 
   /// Output only. Data type of the column after the transform.
   @$pb.TagNumber(2)
-  $4402.StandardSqlDataType get type => $_getN(1);
+  $4403.StandardSqlDataType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($4402.StandardSqlDataType v) { setField(2, v); }
+  set type($4403.StandardSqlDataType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $4402.StandardSqlDataType ensureType() => $_ensure(1);
+  $4403.StandardSqlDataType ensureType() => $_ensure(1);
 
   /// Output only. The SQL expression used in the column transform.
   @$pb.TagNumber(3)
@@ -395,11 +395,11 @@ class Model_HparamTuningEnums extends $pb.GeneratedMessage {
 /// factorization models.
 class Model_RegressionMetrics extends $pb.GeneratedMessage {
   factory Model_RegressionMetrics({
-    $1780.DoubleValue? meanAbsoluteError,
-    $1780.DoubleValue? meanSquaredError,
-    $1780.DoubleValue? meanSquaredLogError,
-    $1780.DoubleValue? medianAbsoluteError,
-    $1780.DoubleValue? rSquared,
+    $1781.DoubleValue? meanAbsoluteError,
+    $1781.DoubleValue? meanSquaredError,
+    $1781.DoubleValue? meanSquaredLogError,
+    $1781.DoubleValue? medianAbsoluteError,
+    $1781.DoubleValue? rSquared,
   }) {
     final $result = create();
     if (meanAbsoluteError != null) {
@@ -424,11 +424,11 @@ class Model_RegressionMetrics extends $pb.GeneratedMessage {
   factory Model_RegressionMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.RegressionMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'meanAbsoluteError', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'meanSquaredError', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(3, _omitFieldNames ? '' : 'meanSquaredLogError', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(4, _omitFieldNames ? '' : 'medianAbsoluteError', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(5, _omitFieldNames ? '' : 'rSquared', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'meanAbsoluteError', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'meanSquaredError', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(3, _omitFieldNames ? '' : 'meanSquaredLogError', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(4, _omitFieldNames ? '' : 'medianAbsoluteError', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(5, _omitFieldNames ? '' : 'rSquared', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -455,63 +455,63 @@ class Model_RegressionMetrics extends $pb.GeneratedMessage {
 
   /// Mean absolute error.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get meanAbsoluteError => $_getN(0);
+  $1781.DoubleValue get meanAbsoluteError => $_getN(0);
   @$pb.TagNumber(1)
-  set meanAbsoluteError($1780.DoubleValue v) { setField(1, v); }
+  set meanAbsoluteError($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMeanAbsoluteError() => $_has(0);
   @$pb.TagNumber(1)
   void clearMeanAbsoluteError() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensureMeanAbsoluteError() => $_ensure(0);
+  $1781.DoubleValue ensureMeanAbsoluteError() => $_ensure(0);
 
   /// Mean squared error.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get meanSquaredError => $_getN(1);
+  $1781.DoubleValue get meanSquaredError => $_getN(1);
   @$pb.TagNumber(2)
-  set meanSquaredError($1780.DoubleValue v) { setField(2, v); }
+  set meanSquaredError($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMeanSquaredError() => $_has(1);
   @$pb.TagNumber(2)
   void clearMeanSquaredError() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureMeanSquaredError() => $_ensure(1);
+  $1781.DoubleValue ensureMeanSquaredError() => $_ensure(1);
 
   /// Mean squared log error.
   @$pb.TagNumber(3)
-  $1780.DoubleValue get meanSquaredLogError => $_getN(2);
+  $1781.DoubleValue get meanSquaredLogError => $_getN(2);
   @$pb.TagNumber(3)
-  set meanSquaredLogError($1780.DoubleValue v) { setField(3, v); }
+  set meanSquaredLogError($1781.DoubleValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMeanSquaredLogError() => $_has(2);
   @$pb.TagNumber(3)
   void clearMeanSquaredLogError() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.DoubleValue ensureMeanSquaredLogError() => $_ensure(2);
+  $1781.DoubleValue ensureMeanSquaredLogError() => $_ensure(2);
 
   /// Median absolute error.
   @$pb.TagNumber(4)
-  $1780.DoubleValue get medianAbsoluteError => $_getN(3);
+  $1781.DoubleValue get medianAbsoluteError => $_getN(3);
   @$pb.TagNumber(4)
-  set medianAbsoluteError($1780.DoubleValue v) { setField(4, v); }
+  set medianAbsoluteError($1781.DoubleValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMedianAbsoluteError() => $_has(3);
   @$pb.TagNumber(4)
   void clearMedianAbsoluteError() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.DoubleValue ensureMedianAbsoluteError() => $_ensure(3);
+  $1781.DoubleValue ensureMedianAbsoluteError() => $_ensure(3);
 
   /// R^2 score. This corresponds to r2_score in ML.EVALUATE.
   @$pb.TagNumber(5)
-  $1780.DoubleValue get rSquared => $_getN(4);
+  $1781.DoubleValue get rSquared => $_getN(4);
   @$pb.TagNumber(5)
-  set rSquared($1780.DoubleValue v) { setField(5, v); }
+  set rSquared($1781.DoubleValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRSquared() => $_has(4);
   @$pb.TagNumber(5)
   void clearRSquared() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.DoubleValue ensureRSquared() => $_ensure(4);
+  $1781.DoubleValue ensureRSquared() => $_ensure(4);
 }
 
 /// Aggregate metrics for classification/classifier models. For multi-class
@@ -522,13 +522,13 @@ class Model_RegressionMetrics extends $pb.GeneratedMessage {
 /// predicted rows.
 class Model_AggregateClassificationMetrics extends $pb.GeneratedMessage {
   factory Model_AggregateClassificationMetrics({
-    $1780.DoubleValue? precision,
-    $1780.DoubleValue? recall,
-    $1780.DoubleValue? accuracy,
-    $1780.DoubleValue? threshold,
-    $1780.DoubleValue? f1Score,
-    $1780.DoubleValue? logLoss,
-    $1780.DoubleValue? rocAuc,
+    $1781.DoubleValue? precision,
+    $1781.DoubleValue? recall,
+    $1781.DoubleValue? accuracy,
+    $1781.DoubleValue? threshold,
+    $1781.DoubleValue? f1Score,
+    $1781.DoubleValue? logLoss,
+    $1781.DoubleValue? rocAuc,
   }) {
     final $result = create();
     if (precision != null) {
@@ -559,13 +559,13 @@ class Model_AggregateClassificationMetrics extends $pb.GeneratedMessage {
   factory Model_AggregateClassificationMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.AggregateClassificationMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'precision', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'recall', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(3, _omitFieldNames ? '' : 'accuracy', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(4, _omitFieldNames ? '' : 'threshold', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(5, _omitFieldNames ? '' : 'f1Score', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(6, _omitFieldNames ? '' : 'logLoss', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(7, _omitFieldNames ? '' : 'rocAuc', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'precision', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'recall', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(3, _omitFieldNames ? '' : 'accuracy', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(4, _omitFieldNames ? '' : 'threshold', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(5, _omitFieldNames ? '' : 'f1Score', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(6, _omitFieldNames ? '' : 'logLoss', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(7, _omitFieldNames ? '' : 'rocAuc', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -594,108 +594,108 @@ class Model_AggregateClassificationMetrics extends $pb.GeneratedMessage {
   /// positive actual labels. For multiclass this is a macro-averaged
   /// metric treating each class as a binary classifier.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get precision => $_getN(0);
+  $1781.DoubleValue get precision => $_getN(0);
   @$pb.TagNumber(1)
-  set precision($1780.DoubleValue v) { setField(1, v); }
+  set precision($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPrecision() => $_has(0);
   @$pb.TagNumber(1)
   void clearPrecision() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensurePrecision() => $_ensure(0);
+  $1781.DoubleValue ensurePrecision() => $_ensure(0);
 
   /// Recall is the fraction of actual positive labels that were given a
   /// positive prediction. For multiclass this is a macro-averaged metric.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get recall => $_getN(1);
+  $1781.DoubleValue get recall => $_getN(1);
   @$pb.TagNumber(2)
-  set recall($1780.DoubleValue v) { setField(2, v); }
+  set recall($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRecall() => $_has(1);
   @$pb.TagNumber(2)
   void clearRecall() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureRecall() => $_ensure(1);
+  $1781.DoubleValue ensureRecall() => $_ensure(1);
 
   /// Accuracy is the fraction of predictions given the correct label. For
   /// multiclass this is a micro-averaged metric.
   @$pb.TagNumber(3)
-  $1780.DoubleValue get accuracy => $_getN(2);
+  $1781.DoubleValue get accuracy => $_getN(2);
   @$pb.TagNumber(3)
-  set accuracy($1780.DoubleValue v) { setField(3, v); }
+  set accuracy($1781.DoubleValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAccuracy() => $_has(2);
   @$pb.TagNumber(3)
   void clearAccuracy() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.DoubleValue ensureAccuracy() => $_ensure(2);
+  $1781.DoubleValue ensureAccuracy() => $_ensure(2);
 
   /// Threshold at which the metrics are computed. For binary
   /// classification models this is the positive class threshold.
   /// For multi-class classfication models this is the confidence
   /// threshold.
   @$pb.TagNumber(4)
-  $1780.DoubleValue get threshold => $_getN(3);
+  $1781.DoubleValue get threshold => $_getN(3);
   @$pb.TagNumber(4)
-  set threshold($1780.DoubleValue v) { setField(4, v); }
+  set threshold($1781.DoubleValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasThreshold() => $_has(3);
   @$pb.TagNumber(4)
   void clearThreshold() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.DoubleValue ensureThreshold() => $_ensure(3);
+  $1781.DoubleValue ensureThreshold() => $_ensure(3);
 
   /// The F1 score is an average of recall and precision. For multiclass
   /// this is a macro-averaged metric.
   @$pb.TagNumber(5)
-  $1780.DoubleValue get f1Score => $_getN(4);
+  $1781.DoubleValue get f1Score => $_getN(4);
   @$pb.TagNumber(5)
-  set f1Score($1780.DoubleValue v) { setField(5, v); }
+  set f1Score($1781.DoubleValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasF1Score() => $_has(4);
   @$pb.TagNumber(5)
   void clearF1Score() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.DoubleValue ensureF1Score() => $_ensure(4);
+  $1781.DoubleValue ensureF1Score() => $_ensure(4);
 
   /// Logarithmic Loss. For multiclass this is a macro-averaged metric.
   @$pb.TagNumber(6)
-  $1780.DoubleValue get logLoss => $_getN(5);
+  $1781.DoubleValue get logLoss => $_getN(5);
   @$pb.TagNumber(6)
-  set logLoss($1780.DoubleValue v) { setField(6, v); }
+  set logLoss($1781.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLogLoss() => $_has(5);
   @$pb.TagNumber(6)
   void clearLogLoss() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.DoubleValue ensureLogLoss() => $_ensure(5);
+  $1781.DoubleValue ensureLogLoss() => $_ensure(5);
 
   /// Area Under a ROC Curve. For multiclass this is a macro-averaged
   /// metric.
   @$pb.TagNumber(7)
-  $1780.DoubleValue get rocAuc => $_getN(6);
+  $1781.DoubleValue get rocAuc => $_getN(6);
   @$pb.TagNumber(7)
-  set rocAuc($1780.DoubleValue v) { setField(7, v); }
+  set rocAuc($1781.DoubleValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRocAuc() => $_has(6);
   @$pb.TagNumber(7)
   void clearRocAuc() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.DoubleValue ensureRocAuc() => $_ensure(6);
+  $1781.DoubleValue ensureRocAuc() => $_ensure(6);
 }
 
 /// Confusion matrix for binary classification models.
 class Model_BinaryClassificationMetrics_BinaryConfusionMatrix extends $pb.GeneratedMessage {
   factory Model_BinaryClassificationMetrics_BinaryConfusionMatrix({
-    $1780.DoubleValue? positiveClassThreshold,
-    $1780.Int64Value? truePositives,
-    $1780.Int64Value? falsePositives,
-    $1780.Int64Value? trueNegatives,
-    $1780.Int64Value? falseNegatives,
-    $1780.DoubleValue? precision,
-    $1780.DoubleValue? recall,
-    $1780.DoubleValue? f1Score,
-    $1780.DoubleValue? accuracy,
+    $1781.DoubleValue? positiveClassThreshold,
+    $1781.Int64Value? truePositives,
+    $1781.Int64Value? falsePositives,
+    $1781.Int64Value? trueNegatives,
+    $1781.Int64Value? falseNegatives,
+    $1781.DoubleValue? precision,
+    $1781.DoubleValue? recall,
+    $1781.DoubleValue? f1Score,
+    $1781.DoubleValue? accuracy,
   }) {
     final $result = create();
     if (positiveClassThreshold != null) {
@@ -732,15 +732,15 @@ class Model_BinaryClassificationMetrics_BinaryConfusionMatrix extends $pb.Genera
   factory Model_BinaryClassificationMetrics_BinaryConfusionMatrix.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.BinaryClassificationMetrics.BinaryConfusionMatrix', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'positiveClassThreshold', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'truePositives', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'falsePositives', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'trueNegatives', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'falseNegatives', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(6, _omitFieldNames ? '' : 'precision', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(7, _omitFieldNames ? '' : 'recall', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(8, _omitFieldNames ? '' : 'f1Score', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(9, _omitFieldNames ? '' : 'accuracy', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'positiveClassThreshold', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'truePositives', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'falsePositives', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'trueNegatives', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'falseNegatives', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(6, _omitFieldNames ? '' : 'precision', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(7, _omitFieldNames ? '' : 'recall', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(8, _omitFieldNames ? '' : 'f1Score', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(9, _omitFieldNames ? '' : 'accuracy', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -767,113 +767,113 @@ class Model_BinaryClassificationMetrics_BinaryConfusionMatrix extends $pb.Genera
 
   /// Threshold value used when computing each of the following metric.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get positiveClassThreshold => $_getN(0);
+  $1781.DoubleValue get positiveClassThreshold => $_getN(0);
   @$pb.TagNumber(1)
-  set positiveClassThreshold($1780.DoubleValue v) { setField(1, v); }
+  set positiveClassThreshold($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPositiveClassThreshold() => $_has(0);
   @$pb.TagNumber(1)
   void clearPositiveClassThreshold() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensurePositiveClassThreshold() => $_ensure(0);
+  $1781.DoubleValue ensurePositiveClassThreshold() => $_ensure(0);
 
   /// Number of true samples predicted as true.
   @$pb.TagNumber(2)
-  $1780.Int64Value get truePositives => $_getN(1);
+  $1781.Int64Value get truePositives => $_getN(1);
   @$pb.TagNumber(2)
-  set truePositives($1780.Int64Value v) { setField(2, v); }
+  set truePositives($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTruePositives() => $_has(1);
   @$pb.TagNumber(2)
   void clearTruePositives() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureTruePositives() => $_ensure(1);
+  $1781.Int64Value ensureTruePositives() => $_ensure(1);
 
   /// Number of false samples predicted as true.
   @$pb.TagNumber(3)
-  $1780.Int64Value get falsePositives => $_getN(2);
+  $1781.Int64Value get falsePositives => $_getN(2);
   @$pb.TagNumber(3)
-  set falsePositives($1780.Int64Value v) { setField(3, v); }
+  set falsePositives($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFalsePositives() => $_has(2);
   @$pb.TagNumber(3)
   void clearFalsePositives() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureFalsePositives() => $_ensure(2);
+  $1781.Int64Value ensureFalsePositives() => $_ensure(2);
 
   /// Number of true samples predicted as false.
   @$pb.TagNumber(4)
-  $1780.Int64Value get trueNegatives => $_getN(3);
+  $1781.Int64Value get trueNegatives => $_getN(3);
   @$pb.TagNumber(4)
-  set trueNegatives($1780.Int64Value v) { setField(4, v); }
+  set trueNegatives($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTrueNegatives() => $_has(3);
   @$pb.TagNumber(4)
   void clearTrueNegatives() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureTrueNegatives() => $_ensure(3);
+  $1781.Int64Value ensureTrueNegatives() => $_ensure(3);
 
   /// Number of false samples predicted as false.
   @$pb.TagNumber(5)
-  $1780.Int64Value get falseNegatives => $_getN(4);
+  $1781.Int64Value get falseNegatives => $_getN(4);
   @$pb.TagNumber(5)
-  set falseNegatives($1780.Int64Value v) { setField(5, v); }
+  set falseNegatives($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFalseNegatives() => $_has(4);
   @$pb.TagNumber(5)
   void clearFalseNegatives() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureFalseNegatives() => $_ensure(4);
+  $1781.Int64Value ensureFalseNegatives() => $_ensure(4);
 
   /// The fraction of actual positive predictions that had positive actual
   /// labels.
   @$pb.TagNumber(6)
-  $1780.DoubleValue get precision => $_getN(5);
+  $1781.DoubleValue get precision => $_getN(5);
   @$pb.TagNumber(6)
-  set precision($1780.DoubleValue v) { setField(6, v); }
+  set precision($1781.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPrecision() => $_has(5);
   @$pb.TagNumber(6)
   void clearPrecision() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.DoubleValue ensurePrecision() => $_ensure(5);
+  $1781.DoubleValue ensurePrecision() => $_ensure(5);
 
   /// The fraction of actual positive labels that were given a positive
   /// prediction.
   @$pb.TagNumber(7)
-  $1780.DoubleValue get recall => $_getN(6);
+  $1781.DoubleValue get recall => $_getN(6);
   @$pb.TagNumber(7)
-  set recall($1780.DoubleValue v) { setField(7, v); }
+  set recall($1781.DoubleValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRecall() => $_has(6);
   @$pb.TagNumber(7)
   void clearRecall() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.DoubleValue ensureRecall() => $_ensure(6);
+  $1781.DoubleValue ensureRecall() => $_ensure(6);
 
   /// The equally weighted average of recall and precision.
   @$pb.TagNumber(8)
-  $1780.DoubleValue get f1Score => $_getN(7);
+  $1781.DoubleValue get f1Score => $_getN(7);
   @$pb.TagNumber(8)
-  set f1Score($1780.DoubleValue v) { setField(8, v); }
+  set f1Score($1781.DoubleValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasF1Score() => $_has(7);
   @$pb.TagNumber(8)
   void clearF1Score() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.DoubleValue ensureF1Score() => $_ensure(7);
+  $1781.DoubleValue ensureF1Score() => $_ensure(7);
 
   /// The fraction of predictions given the correct label.
   @$pb.TagNumber(9)
-  $1780.DoubleValue get accuracy => $_getN(8);
+  $1781.DoubleValue get accuracy => $_getN(8);
   @$pb.TagNumber(9)
-  set accuracy($1780.DoubleValue v) { setField(9, v); }
+  set accuracy($1781.DoubleValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasAccuracy() => $_has(8);
   @$pb.TagNumber(9)
   void clearAccuracy() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.DoubleValue ensureAccuracy() => $_ensure(8);
+  $1781.DoubleValue ensureAccuracy() => $_ensure(8);
 }
 
 /// Evaluation metrics for binary classification/classifier models.
@@ -973,7 +973,7 @@ class Model_BinaryClassificationMetrics extends $pb.GeneratedMessage {
 class Model_MultiClassClassificationMetrics_ConfusionMatrix_Entry extends $pb.GeneratedMessage {
   factory Model_MultiClassClassificationMetrics_ConfusionMatrix_Entry({
     $core.String? predictedLabel,
-    $1780.Int64Value? itemCount,
+    $1781.Int64Value? itemCount,
   }) {
     final $result = create();
     if (predictedLabel != null) {
@@ -990,7 +990,7 @@ class Model_MultiClassClassificationMetrics_ConfusionMatrix_Entry extends $pb.Ge
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'predictedLabel')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'itemCount', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'itemCount', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1029,15 +1029,15 @@ class Model_MultiClassClassificationMetrics_ConfusionMatrix_Entry extends $pb.Ge
 
   /// Number of items being predicted as this label.
   @$pb.TagNumber(2)
-  $1780.Int64Value get itemCount => $_getN(1);
+  $1781.Int64Value get itemCount => $_getN(1);
   @$pb.TagNumber(2)
-  set itemCount($1780.Int64Value v) { setField(2, v); }
+  set itemCount($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasItemCount() => $_has(1);
   @$pb.TagNumber(2)
   void clearItemCount() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureItemCount() => $_ensure(1);
+  $1781.Int64Value ensureItemCount() => $_ensure(1);
 }
 
 /// A single row in the confusion matrix.
@@ -1104,7 +1104,7 @@ class Model_MultiClassClassificationMetrics_ConfusionMatrix_Row extends $pb.Gene
 /// Confusion matrix for multi-class classification models.
 class Model_MultiClassClassificationMetrics_ConfusionMatrix extends $pb.GeneratedMessage {
   factory Model_MultiClassClassificationMetrics_ConfusionMatrix({
-    $1780.DoubleValue? confidenceThreshold,
+    $1781.DoubleValue? confidenceThreshold,
     $core.Iterable<Model_MultiClassClassificationMetrics_ConfusionMatrix_Row>? rows,
   }) {
     final $result = create();
@@ -1121,7 +1121,7 @@ class Model_MultiClassClassificationMetrics_ConfusionMatrix extends $pb.Generate
   factory Model_MultiClassClassificationMetrics_ConfusionMatrix.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.MultiClassClassificationMetrics.ConfusionMatrix', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'confidenceThreshold', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'confidenceThreshold', subBuilder: $1781.DoubleValue.create)
     ..pc<Model_MultiClassClassificationMetrics_ConfusionMatrix_Row>(2, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: Model_MultiClassClassificationMetrics_ConfusionMatrix_Row.create)
     ..hasRequiredFields = false
   ;
@@ -1150,15 +1150,15 @@ class Model_MultiClassClassificationMetrics_ConfusionMatrix extends $pb.Generate
   /// Confidence threshold used when computing the entries of the
   /// confusion matrix.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get confidenceThreshold => $_getN(0);
+  $1781.DoubleValue get confidenceThreshold => $_getN(0);
   @$pb.TagNumber(1)
-  set confidenceThreshold($1780.DoubleValue v) { setField(1, v); }
+  set confidenceThreshold($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasConfidenceThreshold() => $_has(0);
   @$pb.TagNumber(1)
   void clearConfidenceThreshold() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensureConfidenceThreshold() => $_ensure(0);
+  $1781.DoubleValue ensureConfidenceThreshold() => $_ensure(0);
 
   /// One row per actual label.
   @$pb.TagNumber(2)
@@ -1232,7 +1232,7 @@ class Model_MultiClassClassificationMetrics extends $pb.GeneratedMessage {
 class Model_ClusteringMetrics_Cluster_FeatureValue_CategoricalValue_CategoryCount extends $pb.GeneratedMessage {
   factory Model_ClusteringMetrics_Cluster_FeatureValue_CategoricalValue_CategoryCount({
     $core.String? category,
-    $1780.Int64Value? count,
+    $1781.Int64Value? count,
   }) {
     final $result = create();
     if (category != null) {
@@ -1249,7 +1249,7 @@ class Model_ClusteringMetrics_Cluster_FeatureValue_CategoricalValue_CategoryCoun
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'category')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'count', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'count', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1287,15 +1287,15 @@ class Model_ClusteringMetrics_Cluster_FeatureValue_CategoricalValue_CategoryCoun
   /// The count of training samples matching the category within the
   /// cluster.
   @$pb.TagNumber(2)
-  $1780.Int64Value get count => $_getN(1);
+  $1781.Int64Value get count => $_getN(1);
   @$pb.TagNumber(2)
-  set count($1780.Int64Value v) { setField(2, v); }
+  set count($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCount() => $_has(1);
   @$pb.TagNumber(2)
   void clearCount() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureCount() => $_ensure(1);
+  $1781.Int64Value ensureCount() => $_ensure(1);
 }
 
 /// Representative value of a categorical feature.
@@ -1357,7 +1357,7 @@ enum Model_ClusteringMetrics_Cluster_FeatureValue_Value {
 class Model_ClusteringMetrics_Cluster_FeatureValue extends $pb.GeneratedMessage {
   factory Model_ClusteringMetrics_Cluster_FeatureValue({
     $core.String? featureColumn,
-    $1780.DoubleValue? numericalValue,
+    $1781.DoubleValue? numericalValue,
     Model_ClusteringMetrics_Cluster_FeatureValue_CategoricalValue? categoricalValue,
   }) {
     final $result = create();
@@ -1384,7 +1384,7 @@ class Model_ClusteringMetrics_Cluster_FeatureValue extends $pb.GeneratedMessage 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.ClusteringMetrics.Cluster.FeatureValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'featureColumn')
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'numericalValue', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'numericalValue', subBuilder: $1781.DoubleValue.create)
     ..aOM<Model_ClusteringMetrics_Cluster_FeatureValue_CategoricalValue>(3, _omitFieldNames ? '' : 'categoricalValue', subBuilder: Model_ClusteringMetrics_Cluster_FeatureValue_CategoricalValue.create)
     ..hasRequiredFields = false
   ;
@@ -1426,15 +1426,15 @@ class Model_ClusteringMetrics_Cluster_FeatureValue extends $pb.GeneratedMessage 
   /// The numerical feature value. This is the centroid value for this
   /// feature.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get numericalValue => $_getN(1);
+  $1781.DoubleValue get numericalValue => $_getN(1);
   @$pb.TagNumber(2)
-  set numericalValue($1780.DoubleValue v) { setField(2, v); }
+  set numericalValue($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasNumericalValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearNumericalValue() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureNumericalValue() => $_ensure(1);
+  $1781.DoubleValue ensureNumericalValue() => $_ensure(1);
 
   /// The categorical feature value.
   @$pb.TagNumber(3)
@@ -1454,7 +1454,7 @@ class Model_ClusteringMetrics_Cluster extends $pb.GeneratedMessage {
   factory Model_ClusteringMetrics_Cluster({
     $fixnum.Int64? centroidId,
     $core.Iterable<Model_ClusteringMetrics_Cluster_FeatureValue>? featureValues,
-    $1780.Int64Value? count,
+    $1781.Int64Value? count,
   }) {
     final $result = create();
     if (centroidId != null) {
@@ -1475,7 +1475,7 @@ class Model_ClusteringMetrics_Cluster extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.ClusteringMetrics.Cluster', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'centroidId')
     ..pc<Model_ClusteringMetrics_Cluster_FeatureValue>(2, _omitFieldNames ? '' : 'featureValues', $pb.PbFieldType.PM, subBuilder: Model_ClusteringMetrics_Cluster_FeatureValue.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'count', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'count', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1516,22 +1516,22 @@ class Model_ClusteringMetrics_Cluster extends $pb.GeneratedMessage {
 
   /// Count of training data rows that were assigned to this cluster.
   @$pb.TagNumber(3)
-  $1780.Int64Value get count => $_getN(2);
+  $1781.Int64Value get count => $_getN(2);
   @$pb.TagNumber(3)
-  set count($1780.Int64Value v) { setField(3, v); }
+  set count($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCount() => $_has(2);
   @$pb.TagNumber(3)
   void clearCount() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureCount() => $_ensure(2);
+  $1781.Int64Value ensureCount() => $_ensure(2);
 }
 
 /// Evaluation metrics for clustering models.
 class Model_ClusteringMetrics extends $pb.GeneratedMessage {
   factory Model_ClusteringMetrics({
-    $1780.DoubleValue? daviesBouldinIndex,
-    $1780.DoubleValue? meanSquaredDistance,
+    $1781.DoubleValue? daviesBouldinIndex,
+    $1781.DoubleValue? meanSquaredDistance,
     $core.Iterable<Model_ClusteringMetrics_Cluster>? clusters,
   }) {
     final $result = create();
@@ -1551,8 +1551,8 @@ class Model_ClusteringMetrics extends $pb.GeneratedMessage {
   factory Model_ClusteringMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.ClusteringMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'daviesBouldinIndex', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'meanSquaredDistance', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'daviesBouldinIndex', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'meanSquaredDistance', subBuilder: $1781.DoubleValue.create)
     ..pc<Model_ClusteringMetrics_Cluster>(3, _omitFieldNames ? '' : 'clusters', $pb.PbFieldType.PM, subBuilder: Model_ClusteringMetrics_Cluster.create)
     ..hasRequiredFields = false
   ;
@@ -1580,27 +1580,27 @@ class Model_ClusteringMetrics extends $pb.GeneratedMessage {
 
   /// Davies-Bouldin index.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get daviesBouldinIndex => $_getN(0);
+  $1781.DoubleValue get daviesBouldinIndex => $_getN(0);
   @$pb.TagNumber(1)
-  set daviesBouldinIndex($1780.DoubleValue v) { setField(1, v); }
+  set daviesBouldinIndex($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDaviesBouldinIndex() => $_has(0);
   @$pb.TagNumber(1)
   void clearDaviesBouldinIndex() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensureDaviesBouldinIndex() => $_ensure(0);
+  $1781.DoubleValue ensureDaviesBouldinIndex() => $_ensure(0);
 
   /// Mean of squared distances between each sample to its cluster centroid.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get meanSquaredDistance => $_getN(1);
+  $1781.DoubleValue get meanSquaredDistance => $_getN(1);
   @$pb.TagNumber(2)
-  set meanSquaredDistance($1780.DoubleValue v) { setField(2, v); }
+  set meanSquaredDistance($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMeanSquaredDistance() => $_has(1);
   @$pb.TagNumber(2)
   void clearMeanSquaredDistance() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureMeanSquaredDistance() => $_ensure(1);
+  $1781.DoubleValue ensureMeanSquaredDistance() => $_ensure(1);
 
   /// Information for all clusters.
   @$pb.TagNumber(3)
@@ -1611,10 +1611,10 @@ class Model_ClusteringMetrics extends $pb.GeneratedMessage {
 /// feedback_type=implicit.
 class Model_RankingMetrics extends $pb.GeneratedMessage {
   factory Model_RankingMetrics({
-    $1780.DoubleValue? meanAveragePrecision,
-    $1780.DoubleValue? meanSquaredError,
-    $1780.DoubleValue? normalizedDiscountedCumulativeGain,
-    $1780.DoubleValue? averageRank,
+    $1781.DoubleValue? meanAveragePrecision,
+    $1781.DoubleValue? meanSquaredError,
+    $1781.DoubleValue? normalizedDiscountedCumulativeGain,
+    $1781.DoubleValue? averageRank,
   }) {
     final $result = create();
     if (meanAveragePrecision != null) {
@@ -1636,10 +1636,10 @@ class Model_RankingMetrics extends $pb.GeneratedMessage {
   factory Model_RankingMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.RankingMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'meanAveragePrecision', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'meanSquaredError', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(3, _omitFieldNames ? '' : 'normalizedDiscountedCumulativeGain', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(4, _omitFieldNames ? '' : 'averageRank', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'meanAveragePrecision', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'meanSquaredError', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(3, _omitFieldNames ? '' : 'normalizedDiscountedCumulativeGain', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(4, _omitFieldNames ? '' : 'averageRank', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1667,57 +1667,57 @@ class Model_RankingMetrics extends $pb.GeneratedMessage {
   /// Calculates a precision per user for all the items by ranking them and
   /// then averages all the precisions across all the users.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get meanAveragePrecision => $_getN(0);
+  $1781.DoubleValue get meanAveragePrecision => $_getN(0);
   @$pb.TagNumber(1)
-  set meanAveragePrecision($1780.DoubleValue v) { setField(1, v); }
+  set meanAveragePrecision($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMeanAveragePrecision() => $_has(0);
   @$pb.TagNumber(1)
   void clearMeanAveragePrecision() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensureMeanAveragePrecision() => $_ensure(0);
+  $1781.DoubleValue ensureMeanAveragePrecision() => $_ensure(0);
 
   /// Similar to the mean squared error computed in regression and explicit
   /// recommendation models except instead of computing the rating directly,
   /// the output from evaluate is computed against a preference which is 1 or 0
   /// depending on if the rating exists or not.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get meanSquaredError => $_getN(1);
+  $1781.DoubleValue get meanSquaredError => $_getN(1);
   @$pb.TagNumber(2)
-  set meanSquaredError($1780.DoubleValue v) { setField(2, v); }
+  set meanSquaredError($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMeanSquaredError() => $_has(1);
   @$pb.TagNumber(2)
   void clearMeanSquaredError() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureMeanSquaredError() => $_ensure(1);
+  $1781.DoubleValue ensureMeanSquaredError() => $_ensure(1);
 
   /// A metric to determine the goodness of a ranking calculated from the
   /// predicted confidence by comparing it to an ideal rank measured by the
   /// original ratings.
   @$pb.TagNumber(3)
-  $1780.DoubleValue get normalizedDiscountedCumulativeGain => $_getN(2);
+  $1781.DoubleValue get normalizedDiscountedCumulativeGain => $_getN(2);
   @$pb.TagNumber(3)
-  set normalizedDiscountedCumulativeGain($1780.DoubleValue v) { setField(3, v); }
+  set normalizedDiscountedCumulativeGain($1781.DoubleValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasNormalizedDiscountedCumulativeGain() => $_has(2);
   @$pb.TagNumber(3)
   void clearNormalizedDiscountedCumulativeGain() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.DoubleValue ensureNormalizedDiscountedCumulativeGain() => $_ensure(2);
+  $1781.DoubleValue ensureNormalizedDiscountedCumulativeGain() => $_ensure(2);
 
   /// Determines the goodness of a ranking by computing the percentile rank
   /// from the predicted confidence and dividing it by the original rank.
   @$pb.TagNumber(4)
-  $1780.DoubleValue get averageRank => $_getN(3);
+  $1781.DoubleValue get averageRank => $_getN(3);
   @$pb.TagNumber(4)
-  set averageRank($1780.DoubleValue v) { setField(4, v); }
+  set averageRank($1781.DoubleValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAverageRank() => $_has(3);
   @$pb.TagNumber(4)
   void clearAverageRank() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.DoubleValue ensureAverageRank() => $_ensure(3);
+  $1781.DoubleValue ensureAverageRank() => $_ensure(3);
 }
 
 /// Model evaluation metrics for a single ARIMA forecasting model.
@@ -1725,12 +1725,12 @@ class Model_ArimaForecastingMetrics_ArimaSingleModelForecastingMetrics extends $
   factory Model_ArimaForecastingMetrics_ArimaSingleModelForecastingMetrics({
     Model_ArimaOrder? nonSeasonalOrder,
     Model_ArimaFittingMetrics? arimaFittingMetrics,
-    $1780.BoolValue? hasDrift,
+    $1781.BoolValue? hasDrift,
     $core.String? timeSeriesId,
     $core.Iterable<Model_SeasonalPeriod_SeasonalPeriodType>? seasonalPeriods,
-    $1780.BoolValue? hasHolidayEffect,
-    $1780.BoolValue? hasSpikesAndDips,
-    $1780.BoolValue? hasStepChanges,
+    $1781.BoolValue? hasHolidayEffect,
+    $1781.BoolValue? hasSpikesAndDips,
+    $1781.BoolValue? hasStepChanges,
     $core.Iterable<$core.String>? timeSeriesIds,
   }) {
     final $result = create();
@@ -1770,12 +1770,12 @@ class Model_ArimaForecastingMetrics_ArimaSingleModelForecastingMetrics extends $
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.ArimaForecastingMetrics.ArimaSingleModelForecastingMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOM<Model_ArimaOrder>(1, _omitFieldNames ? '' : 'nonSeasonalOrder', subBuilder: Model_ArimaOrder.create)
     ..aOM<Model_ArimaFittingMetrics>(2, _omitFieldNames ? '' : 'arimaFittingMetrics', subBuilder: Model_ArimaFittingMetrics.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'hasDrift', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'hasDrift', subBuilder: $1781.BoolValue.create)
     ..aOS(4, _omitFieldNames ? '' : 'timeSeriesId')
     ..pc<Model_SeasonalPeriod_SeasonalPeriodType>(5, _omitFieldNames ? '' : 'seasonalPeriods', $pb.PbFieldType.KE, valueOf: Model_SeasonalPeriod_SeasonalPeriodType.valueOf, enumValues: Model_SeasonalPeriod_SeasonalPeriodType.values, defaultEnumValue: Model_SeasonalPeriod_SeasonalPeriodType.SEASONAL_PERIOD_TYPE_UNSPECIFIED)
-    ..aOM<$1780.BoolValue>(6, _omitFieldNames ? '' : 'hasHolidayEffect', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(7, _omitFieldNames ? '' : 'hasSpikesAndDips', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(8, _omitFieldNames ? '' : 'hasStepChanges', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(6, _omitFieldNames ? '' : 'hasHolidayEffect', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(7, _omitFieldNames ? '' : 'hasSpikesAndDips', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(8, _omitFieldNames ? '' : 'hasStepChanges', subBuilder: $1781.BoolValue.create)
     ..pPS(9, _omitFieldNames ? '' : 'timeSeriesIds')
     ..hasRequiredFields = false
   ;
@@ -1828,15 +1828,15 @@ class Model_ArimaForecastingMetrics_ArimaSingleModelForecastingMetrics extends $
   /// Is arima model fitted with drift or not. It is always false when d
   /// is not 1.
   @$pb.TagNumber(3)
-  $1780.BoolValue get hasDrift => $_getN(2);
+  $1781.BoolValue get hasDrift => $_getN(2);
   @$pb.TagNumber(3)
-  set hasDrift($1780.BoolValue v) { setField(3, v); }
+  set hasDrift($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasHasDrift() => $_has(2);
   @$pb.TagNumber(3)
   void clearHasDrift() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureHasDrift() => $_ensure(2);
+  $1781.BoolValue ensureHasDrift() => $_ensure(2);
 
   /// The time_series_id value for this time series. It will be one of
   /// the unique values from the time_series_id_column specified during
@@ -1858,39 +1858,39 @@ class Model_ArimaForecastingMetrics_ArimaSingleModelForecastingMetrics extends $
 
   /// If true, holiday_effect is a part of time series decomposition result.
   @$pb.TagNumber(6)
-  $1780.BoolValue get hasHolidayEffect => $_getN(5);
+  $1781.BoolValue get hasHolidayEffect => $_getN(5);
   @$pb.TagNumber(6)
-  set hasHolidayEffect($1780.BoolValue v) { setField(6, v); }
+  set hasHolidayEffect($1781.BoolValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasHasHolidayEffect() => $_has(5);
   @$pb.TagNumber(6)
   void clearHasHolidayEffect() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.BoolValue ensureHasHolidayEffect() => $_ensure(5);
+  $1781.BoolValue ensureHasHolidayEffect() => $_ensure(5);
 
   /// If true, spikes_and_dips is a part of time series decomposition result.
   @$pb.TagNumber(7)
-  $1780.BoolValue get hasSpikesAndDips => $_getN(6);
+  $1781.BoolValue get hasSpikesAndDips => $_getN(6);
   @$pb.TagNumber(7)
-  set hasSpikesAndDips($1780.BoolValue v) { setField(7, v); }
+  set hasSpikesAndDips($1781.BoolValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasHasSpikesAndDips() => $_has(6);
   @$pb.TagNumber(7)
   void clearHasSpikesAndDips() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.BoolValue ensureHasSpikesAndDips() => $_ensure(6);
+  $1781.BoolValue ensureHasSpikesAndDips() => $_ensure(6);
 
   /// If true, step_changes is a part of time series decomposition result.
   @$pb.TagNumber(8)
-  $1780.BoolValue get hasStepChanges => $_getN(7);
+  $1781.BoolValue get hasStepChanges => $_getN(7);
   @$pb.TagNumber(8)
-  set hasStepChanges($1780.BoolValue v) { setField(8, v); }
+  set hasStepChanges($1781.BoolValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasHasStepChanges() => $_has(7);
   @$pb.TagNumber(8)
   void clearHasStepChanges() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.BoolValue ensureHasStepChanges() => $_ensure(7);
+  $1781.BoolValue ensureHasStepChanges() => $_ensure(7);
 
   /// The tuple of time_series_ids identifying this time series. It will
   /// be one of the unique tuples of values present in the
@@ -1952,7 +1952,7 @@ class Model_ArimaForecastingMetrics extends $pb.GeneratedMessage {
 /// Model evaluation metrics for dimensionality reduction models.
 class Model_DimensionalityReductionMetrics extends $pb.GeneratedMessage {
   factory Model_DimensionalityReductionMetrics({
-    $1780.DoubleValue? totalExplainedVarianceRatio,
+    $1781.DoubleValue? totalExplainedVarianceRatio,
   }) {
     final $result = create();
     if (totalExplainedVarianceRatio != null) {
@@ -1965,7 +1965,7 @@ class Model_DimensionalityReductionMetrics extends $pb.GeneratedMessage {
   factory Model_DimensionalityReductionMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.DimensionalityReductionMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'totalExplainedVarianceRatio', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'totalExplainedVarianceRatio', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1993,15 +1993,15 @@ class Model_DimensionalityReductionMetrics extends $pb.GeneratedMessage {
   /// Total percentage of variance explained by the selected principal
   /// components.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get totalExplainedVarianceRatio => $_getN(0);
+  $1781.DoubleValue get totalExplainedVarianceRatio => $_getN(0);
   @$pb.TagNumber(1)
-  set totalExplainedVarianceRatio($1780.DoubleValue v) { setField(1, v); }
+  set totalExplainedVarianceRatio($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTotalExplainedVarianceRatio() => $_has(0);
   @$pb.TagNumber(1)
   void clearTotalExplainedVarianceRatio() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensureTotalExplainedVarianceRatio() => $_ensure(0);
+  $1781.DoubleValue ensureTotalExplainedVarianceRatio() => $_ensure(0);
 }
 
 enum Model_EvaluationMetrics_Metrics {
@@ -2193,9 +2193,9 @@ class Model_EvaluationMetrics extends $pb.GeneratedMessage {
 /// data tables that were used to train the model.
 class Model_DataSplitResult extends $pb.GeneratedMessage {
   factory Model_DataSplitResult({
-    $4390.TableReference? trainingTable,
-    $4390.TableReference? evaluationTable,
-    $4390.TableReference? testTable,
+    $4391.TableReference? trainingTable,
+    $4391.TableReference? evaluationTable,
+    $4391.TableReference? testTable,
   }) {
     final $result = create();
     if (trainingTable != null) {
@@ -2214,9 +2214,9 @@ class Model_DataSplitResult extends $pb.GeneratedMessage {
   factory Model_DataSplitResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.DataSplitResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'trainingTable', subBuilder: $4390.TableReference.create)
-    ..aOM<$4390.TableReference>(2, _omitFieldNames ? '' : 'evaluationTable', subBuilder: $4390.TableReference.create)
-    ..aOM<$4390.TableReference>(3, _omitFieldNames ? '' : 'testTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'trainingTable', subBuilder: $4391.TableReference.create)
+    ..aOM<$4391.TableReference>(2, _omitFieldNames ? '' : 'evaluationTable', subBuilder: $4391.TableReference.create)
+    ..aOM<$4391.TableReference>(3, _omitFieldNames ? '' : 'testTable', subBuilder: $4391.TableReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -2243,47 +2243,47 @@ class Model_DataSplitResult extends $pb.GeneratedMessage {
 
   /// Table reference of the training data after split.
   @$pb.TagNumber(1)
-  $4390.TableReference get trainingTable => $_getN(0);
+  $4391.TableReference get trainingTable => $_getN(0);
   @$pb.TagNumber(1)
-  set trainingTable($4390.TableReference v) { setField(1, v); }
+  set trainingTable($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTrainingTable() => $_has(0);
   @$pb.TagNumber(1)
   void clearTrainingTable() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureTrainingTable() => $_ensure(0);
+  $4391.TableReference ensureTrainingTable() => $_ensure(0);
 
   /// Table reference of the evaluation data after split.
   @$pb.TagNumber(2)
-  $4390.TableReference get evaluationTable => $_getN(1);
+  $4391.TableReference get evaluationTable => $_getN(1);
   @$pb.TagNumber(2)
-  set evaluationTable($4390.TableReference v) { setField(2, v); }
+  set evaluationTable($4391.TableReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEvaluationTable() => $_has(1);
   @$pb.TagNumber(2)
   void clearEvaluationTable() => clearField(2);
   @$pb.TagNumber(2)
-  $4390.TableReference ensureEvaluationTable() => $_ensure(1);
+  $4391.TableReference ensureEvaluationTable() => $_ensure(1);
 
   /// Table reference of the test data after split.
   @$pb.TagNumber(3)
-  $4390.TableReference get testTable => $_getN(2);
+  $4391.TableReference get testTable => $_getN(2);
   @$pb.TagNumber(3)
-  set testTable($4390.TableReference v) { setField(3, v); }
+  set testTable($4391.TableReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTestTable() => $_has(2);
   @$pb.TagNumber(3)
   void clearTestTable() => clearField(3);
   @$pb.TagNumber(3)
-  $4390.TableReference ensureTestTable() => $_ensure(2);
+  $4391.TableReference ensureTestTable() => $_ensure(2);
 }
 
 /// Arima order, can be used for both non-seasonal and seasonal parts.
 class Model_ArimaOrder extends $pb.GeneratedMessage {
   factory Model_ArimaOrder({
-    $1780.Int64Value? p,
-    $1780.Int64Value? d,
-    $1780.Int64Value? q,
+    $1781.Int64Value? p,
+    $1781.Int64Value? d,
+    $1781.Int64Value? q,
   }) {
     final $result = create();
     if (p != null) {
@@ -2302,9 +2302,9 @@ class Model_ArimaOrder extends $pb.GeneratedMessage {
   factory Model_ArimaOrder.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.ArimaOrder', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'p', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'd', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'q', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'p', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'd', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'q', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2331,47 +2331,47 @@ class Model_ArimaOrder extends $pb.GeneratedMessage {
 
   /// Order of the autoregressive part.
   @$pb.TagNumber(1)
-  $1780.Int64Value get p => $_getN(0);
+  $1781.Int64Value get p => $_getN(0);
   @$pb.TagNumber(1)
-  set p($1780.Int64Value v) { setField(1, v); }
+  set p($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasP() => $_has(0);
   @$pb.TagNumber(1)
   void clearP() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureP() => $_ensure(0);
+  $1781.Int64Value ensureP() => $_ensure(0);
 
   /// Order of the differencing part.
   @$pb.TagNumber(2)
-  $1780.Int64Value get d => $_getN(1);
+  $1781.Int64Value get d => $_getN(1);
   @$pb.TagNumber(2)
-  set d($1780.Int64Value v) { setField(2, v); }
+  set d($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasD() => $_has(1);
   @$pb.TagNumber(2)
   void clearD() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureD() => $_ensure(1);
+  $1781.Int64Value ensureD() => $_ensure(1);
 
   /// Order of the moving-average part.
   @$pb.TagNumber(3)
-  $1780.Int64Value get q => $_getN(2);
+  $1781.Int64Value get q => $_getN(2);
   @$pb.TagNumber(3)
-  set q($1780.Int64Value v) { setField(3, v); }
+  set q($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasQ() => $_has(2);
   @$pb.TagNumber(3)
   void clearQ() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureQ() => $_ensure(2);
+  $1781.Int64Value ensureQ() => $_ensure(2);
 }
 
 /// ARIMA model fitting metrics.
 class Model_ArimaFittingMetrics extends $pb.GeneratedMessage {
   factory Model_ArimaFittingMetrics({
-    $1780.DoubleValue? logLikelihood,
-    $1780.DoubleValue? aic,
-    $1780.DoubleValue? variance,
+    $1781.DoubleValue? logLikelihood,
+    $1781.DoubleValue? aic,
+    $1781.DoubleValue? variance,
   }) {
     final $result = create();
     if (logLikelihood != null) {
@@ -2390,9 +2390,9 @@ class Model_ArimaFittingMetrics extends $pb.GeneratedMessage {
   factory Model_ArimaFittingMetrics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.ArimaFittingMetrics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'logLikelihood', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'aic', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(3, _omitFieldNames ? '' : 'variance', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'logLikelihood', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'aic', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(3, _omitFieldNames ? '' : 'variance', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -2419,46 +2419,46 @@ class Model_ArimaFittingMetrics extends $pb.GeneratedMessage {
 
   /// Log-likelihood.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get logLikelihood => $_getN(0);
+  $1781.DoubleValue get logLikelihood => $_getN(0);
   @$pb.TagNumber(1)
-  set logLikelihood($1780.DoubleValue v) { setField(1, v); }
+  set logLikelihood($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLogLikelihood() => $_has(0);
   @$pb.TagNumber(1)
   void clearLogLikelihood() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensureLogLikelihood() => $_ensure(0);
+  $1781.DoubleValue ensureLogLikelihood() => $_ensure(0);
 
   /// AIC.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get aic => $_getN(1);
+  $1781.DoubleValue get aic => $_getN(1);
   @$pb.TagNumber(2)
-  set aic($1780.DoubleValue v) { setField(2, v); }
+  set aic($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAic() => $_has(1);
   @$pb.TagNumber(2)
   void clearAic() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureAic() => $_ensure(1);
+  $1781.DoubleValue ensureAic() => $_ensure(1);
 
   /// Variance.
   @$pb.TagNumber(3)
-  $1780.DoubleValue get variance => $_getN(2);
+  $1781.DoubleValue get variance => $_getN(2);
   @$pb.TagNumber(3)
-  set variance($1780.DoubleValue v) { setField(3, v); }
+  set variance($1781.DoubleValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasVariance() => $_has(2);
   @$pb.TagNumber(3)
   void clearVariance() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.DoubleValue ensureVariance() => $_ensure(2);
+  $1781.DoubleValue ensureVariance() => $_ensure(2);
 }
 
 /// Explanation for a single feature.
 class Model_GlobalExplanation_Explanation extends $pb.GeneratedMessage {
   factory Model_GlobalExplanation_Explanation({
     $core.String? featureName,
-    $1780.DoubleValue? attribution,
+    $1781.DoubleValue? attribution,
   }) {
     final $result = create();
     if (featureName != null) {
@@ -2475,7 +2475,7 @@ class Model_GlobalExplanation_Explanation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.GlobalExplanation.Explanation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'featureName')
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'attribution', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'attribution', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -2514,15 +2514,15 @@ class Model_GlobalExplanation_Explanation extends $pb.GeneratedMessage {
 
   /// Attribution of feature.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get attribution => $_getN(1);
+  $1781.DoubleValue get attribution => $_getN(1);
   @$pb.TagNumber(2)
-  set attribution($1780.DoubleValue v) { setField(2, v); }
+  set attribution($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAttribution() => $_has(1);
   @$pb.TagNumber(2)
   void clearAttribution() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureAttribution() => $_ensure(1);
+  $1781.DoubleValue ensureAttribution() => $_ensure(1);
 }
 
 /// Global explanations containing the top most important features
@@ -2695,11 +2695,11 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
     $fixnum.Int64? maxIterations,
     Model_LossType? lossType,
     $core.double? learnRate,
-    $1780.DoubleValue? l1Regularization,
-    $1780.DoubleValue? l2Regularization,
-    $1780.DoubleValue? minRelativeProgress,
-    $1780.BoolValue? warmStart,
-    $1780.BoolValue? earlyStop,
+    $1781.DoubleValue? l1Regularization,
+    $1781.DoubleValue? l2Regularization,
+    $1781.DoubleValue? minRelativeProgress,
+    $1781.BoolValue? warmStart,
+    $1781.BoolValue? earlyStop,
     $core.Iterable<$core.String>? inputLabelColumns,
     Model_DataSplitMethod? dataSplitMethod,
     $core.double? dataSplitEvalFraction,
@@ -2715,45 +2715,45 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
     Model_OptimizationStrategy? optimizationStrategy,
     $core.Iterable<$fixnum.Int64>? hiddenUnits,
     $fixnum.Int64? batchSize,
-    $1780.DoubleValue? dropout,
+    $1781.DoubleValue? dropout,
     $fixnum.Int64? maxTreeDepth,
     $core.double? subsample,
-    $1780.DoubleValue? minSplitLoss,
+    $1781.DoubleValue? minSplitLoss,
     $fixnum.Int64? numFactors,
     Model_FeedbackType? feedbackType,
-    $1780.DoubleValue? walsAlpha,
+    $1781.DoubleValue? walsAlpha,
     Model_KmeansEnums_KmeansInitializationMethod? kmeansInitializationMethod,
     $core.String? kmeansInitializationColumn,
     $core.String? timeSeriesTimestampColumn,
     $core.String? timeSeriesDataColumn,
-    $1780.BoolValue? autoArima,
+    $1781.BoolValue? autoArima,
     Model_ArimaOrder? nonSeasonalOrder,
     Model_DataFrequency? dataFrequency,
-    $1780.BoolValue? calculatePValues,
-    $1780.BoolValue? includeDrift,
+    $1781.BoolValue? calculatePValues,
+    $1781.BoolValue? includeDrift,
     Model_HolidayRegion? holidayRegion,
     $core.String? timeSeriesIdColumn,
     $fixnum.Int64? horizon,
     $fixnum.Int64? autoArimaMaxOrder,
     $fixnum.Int64? numTrials,
     $fixnum.Int64? maxParallelTrials,
-    $1780.BoolValue? decomposeTimeSeries,
+    $1781.BoolValue? decomposeTimeSeries,
     $core.Iterable<$core.String>? timeSeriesIdColumns,
-    $1780.BoolValue? cleanSpikesAndDips,
-    $1780.BoolValue? adjustStepChanges,
+    $1781.BoolValue? cleanSpikesAndDips,
+    $1781.BoolValue? adjustStepChanges,
     $core.Iterable<Model_HparamTuningEnums_HparamTuningObjective>? hparamTuningObjectives,
-    $1780.BoolValue? enableGlobalExplain,
+    $1781.BoolValue? enableGlobalExplain,
     $fixnum.Int64? sampledShapleyNumPaths,
     $fixnum.Int64? integratedGradientsNumSteps,
     Model_CategoryEncodingMethod_EncodingMethod? categoryEncodingMethod,
     Model_BoostedTreeOptionEnums_BoosterType? boosterType,
-    $1780.Int64Value? numParallelTree,
+    $1781.Int64Value? numParallelTree,
     Model_BoostedTreeOptionEnums_DartNormalizeType? dartNormalizeType,
     Model_BoostedTreeOptionEnums_TreeMethod? treeMethod,
-    $1780.Int64Value? minTreeChildWeight,
-    $1780.DoubleValue? colsampleBytree,
-    $1780.DoubleValue? colsampleBylevel,
-    $1780.DoubleValue? colsampleBynode,
+    $1781.Int64Value? minTreeChildWeight,
+    $1781.DoubleValue? colsampleBytree,
+    $1781.DoubleValue? colsampleBylevel,
+    $1781.DoubleValue? colsampleBynode,
     $core.String? tfVersion,
     $core.Iterable<Model_HolidayRegion>? holidayRegions,
     Model_ColorSpace? colorSpace,
@@ -2764,17 +2764,17 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
     $fixnum.Int64? maxTimeSeriesLength,
     $core.String? xgboostVersion,
     $fixnum.Int64? autoArimaMinOrder,
-    $1780.BoolValue? approxGlobalFeatureContrib,
-    $1780.BoolValue? fitIntercept,
+    $1781.BoolValue? approxGlobalFeatureContrib,
+    $1781.BoolValue? fitIntercept,
     $fixnum.Int64? numPrincipalComponents,
     $core.double? pcaExplainedVarianceRatio,
-    $1780.BoolValue? scaleFeatures,
+    $1781.BoolValue? scaleFeatures,
     Model_PcaSolverOptionEnums_PcaSolver? pcaSolver,
-    $1780.BoolValue? autoClassWeights,
+    $1781.BoolValue? autoClassWeights,
     $core.String? activationFn,
     $core.String? optimizer,
     $core.double? budgetHours,
-    $1780.BoolValue? standardizeFeatures,
+    $1781.BoolValue? standardizeFeatures,
     $core.double? l1RegActivation,
     Model_ModelRegistryOptionEnums_ModelRegistry? modelRegistry,
     $core.Iterable<$core.String>? vertexAiModelVersionAliases,
@@ -3048,11 +3048,11 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
     ..aInt64(1, _omitFieldNames ? '' : 'maxIterations')
     ..e<Model_LossType>(2, _omitFieldNames ? '' : 'lossType', $pb.PbFieldType.OE, defaultOrMaker: Model_LossType.LOSS_TYPE_UNSPECIFIED, valueOf: Model_LossType.valueOf, enumValues: Model_LossType.values)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'learnRate', $pb.PbFieldType.OD)
-    ..aOM<$1780.DoubleValue>(4, _omitFieldNames ? '' : 'l1Regularization', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(5, _omitFieldNames ? '' : 'l2Regularization', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(6, _omitFieldNames ? '' : 'minRelativeProgress', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.BoolValue>(7, _omitFieldNames ? '' : 'warmStart', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(8, _omitFieldNames ? '' : 'earlyStop', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.DoubleValue>(4, _omitFieldNames ? '' : 'l1Regularization', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(5, _omitFieldNames ? '' : 'l2Regularization', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(6, _omitFieldNames ? '' : 'minRelativeProgress', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.BoolValue>(7, _omitFieldNames ? '' : 'warmStart', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(8, _omitFieldNames ? '' : 'earlyStop', subBuilder: $1781.BoolValue.create)
     ..pPS(9, _omitFieldNames ? '' : 'inputLabelColumns')
     ..e<Model_DataSplitMethod>(10, _omitFieldNames ? '' : 'dataSplitMethod', $pb.PbFieldType.OE, defaultOrMaker: Model_DataSplitMethod.DATA_SPLIT_METHOD_UNSPECIFIED, valueOf: Model_DataSplitMethod.valueOf, enumValues: Model_DataSplitMethod.values)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'dataSplitEvalFraction', $pb.PbFieldType.OD)
@@ -3068,45 +3068,45 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
     ..e<Model_OptimizationStrategy>(23, _omitFieldNames ? '' : 'optimizationStrategy', $pb.PbFieldType.OE, defaultOrMaker: Model_OptimizationStrategy.OPTIMIZATION_STRATEGY_UNSPECIFIED, valueOf: Model_OptimizationStrategy.valueOf, enumValues: Model_OptimizationStrategy.values)
     ..p<$fixnum.Int64>(24, _omitFieldNames ? '' : 'hiddenUnits', $pb.PbFieldType.K6)
     ..aInt64(25, _omitFieldNames ? '' : 'batchSize')
-    ..aOM<$1780.DoubleValue>(26, _omitFieldNames ? '' : 'dropout', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(26, _omitFieldNames ? '' : 'dropout', subBuilder: $1781.DoubleValue.create)
     ..aInt64(27, _omitFieldNames ? '' : 'maxTreeDepth')
     ..a<$core.double>(28, _omitFieldNames ? '' : 'subsample', $pb.PbFieldType.OD)
-    ..aOM<$1780.DoubleValue>(29, _omitFieldNames ? '' : 'minSplitLoss', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(29, _omitFieldNames ? '' : 'minSplitLoss', subBuilder: $1781.DoubleValue.create)
     ..aInt64(30, _omitFieldNames ? '' : 'numFactors')
     ..e<Model_FeedbackType>(31, _omitFieldNames ? '' : 'feedbackType', $pb.PbFieldType.OE, defaultOrMaker: Model_FeedbackType.FEEDBACK_TYPE_UNSPECIFIED, valueOf: Model_FeedbackType.valueOf, enumValues: Model_FeedbackType.values)
-    ..aOM<$1780.DoubleValue>(32, _omitFieldNames ? '' : 'walsAlpha', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(32, _omitFieldNames ? '' : 'walsAlpha', subBuilder: $1781.DoubleValue.create)
     ..e<Model_KmeansEnums_KmeansInitializationMethod>(33, _omitFieldNames ? '' : 'kmeansInitializationMethod', $pb.PbFieldType.OE, defaultOrMaker: Model_KmeansEnums_KmeansInitializationMethod.KMEANS_INITIALIZATION_METHOD_UNSPECIFIED, valueOf: Model_KmeansEnums_KmeansInitializationMethod.valueOf, enumValues: Model_KmeansEnums_KmeansInitializationMethod.values)
     ..aOS(34, _omitFieldNames ? '' : 'kmeansInitializationColumn')
     ..aOS(35, _omitFieldNames ? '' : 'timeSeriesTimestampColumn')
     ..aOS(36, _omitFieldNames ? '' : 'timeSeriesDataColumn')
-    ..aOM<$1780.BoolValue>(37, _omitFieldNames ? '' : 'autoArima', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(37, _omitFieldNames ? '' : 'autoArima', subBuilder: $1781.BoolValue.create)
     ..aOM<Model_ArimaOrder>(38, _omitFieldNames ? '' : 'nonSeasonalOrder', subBuilder: Model_ArimaOrder.create)
     ..e<Model_DataFrequency>(39, _omitFieldNames ? '' : 'dataFrequency', $pb.PbFieldType.OE, defaultOrMaker: Model_DataFrequency.DATA_FREQUENCY_UNSPECIFIED, valueOf: Model_DataFrequency.valueOf, enumValues: Model_DataFrequency.values)
-    ..aOM<$1780.BoolValue>(40, _omitFieldNames ? '' : 'calculatePValues', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(41, _omitFieldNames ? '' : 'includeDrift', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(40, _omitFieldNames ? '' : 'calculatePValues', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(41, _omitFieldNames ? '' : 'includeDrift', subBuilder: $1781.BoolValue.create)
     ..e<Model_HolidayRegion>(42, _omitFieldNames ? '' : 'holidayRegion', $pb.PbFieldType.OE, defaultOrMaker: Model_HolidayRegion.HOLIDAY_REGION_UNSPECIFIED, valueOf: Model_HolidayRegion.valueOf, enumValues: Model_HolidayRegion.values)
     ..aOS(43, _omitFieldNames ? '' : 'timeSeriesIdColumn')
     ..aInt64(44, _omitFieldNames ? '' : 'horizon')
     ..aInt64(46, _omitFieldNames ? '' : 'autoArimaMaxOrder')
     ..aInt64(47, _omitFieldNames ? '' : 'numTrials')
     ..aInt64(48, _omitFieldNames ? '' : 'maxParallelTrials')
-    ..aOM<$1780.BoolValue>(50, _omitFieldNames ? '' : 'decomposeTimeSeries', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(50, _omitFieldNames ? '' : 'decomposeTimeSeries', subBuilder: $1781.BoolValue.create)
     ..pPS(51, _omitFieldNames ? '' : 'timeSeriesIdColumns')
-    ..aOM<$1780.BoolValue>(52, _omitFieldNames ? '' : 'cleanSpikesAndDips', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(53, _omitFieldNames ? '' : 'adjustStepChanges', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(52, _omitFieldNames ? '' : 'cleanSpikesAndDips', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(53, _omitFieldNames ? '' : 'adjustStepChanges', subBuilder: $1781.BoolValue.create)
     ..pc<Model_HparamTuningEnums_HparamTuningObjective>(54, _omitFieldNames ? '' : 'hparamTuningObjectives', $pb.PbFieldType.KE, valueOf: Model_HparamTuningEnums_HparamTuningObjective.valueOf, enumValues: Model_HparamTuningEnums_HparamTuningObjective.values, defaultEnumValue: Model_HparamTuningEnums_HparamTuningObjective.HPARAM_TUNING_OBJECTIVE_UNSPECIFIED)
-    ..aOM<$1780.BoolValue>(55, _omitFieldNames ? '' : 'enableGlobalExplain', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(55, _omitFieldNames ? '' : 'enableGlobalExplain', subBuilder: $1781.BoolValue.create)
     ..aInt64(56, _omitFieldNames ? '' : 'sampledShapleyNumPaths')
     ..aInt64(57, _omitFieldNames ? '' : 'integratedGradientsNumSteps')
     ..e<Model_CategoryEncodingMethod_EncodingMethod>(58, _omitFieldNames ? '' : 'categoryEncodingMethod', $pb.PbFieldType.OE, defaultOrMaker: Model_CategoryEncodingMethod_EncodingMethod.ENCODING_METHOD_UNSPECIFIED, valueOf: Model_CategoryEncodingMethod_EncodingMethod.valueOf, enumValues: Model_CategoryEncodingMethod_EncodingMethod.values)
     ..e<Model_BoostedTreeOptionEnums_BoosterType>(60, _omitFieldNames ? '' : 'boosterType', $pb.PbFieldType.OE, defaultOrMaker: Model_BoostedTreeOptionEnums_BoosterType.BOOSTER_TYPE_UNSPECIFIED, valueOf: Model_BoostedTreeOptionEnums_BoosterType.valueOf, enumValues: Model_BoostedTreeOptionEnums_BoosterType.values)
-    ..aOM<$1780.Int64Value>(61, _omitFieldNames ? '' : 'numParallelTree', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(61, _omitFieldNames ? '' : 'numParallelTree', subBuilder: $1781.Int64Value.create)
     ..e<Model_BoostedTreeOptionEnums_DartNormalizeType>(62, _omitFieldNames ? '' : 'dartNormalizeType', $pb.PbFieldType.OE, defaultOrMaker: Model_BoostedTreeOptionEnums_DartNormalizeType.DART_NORMALIZE_TYPE_UNSPECIFIED, valueOf: Model_BoostedTreeOptionEnums_DartNormalizeType.valueOf, enumValues: Model_BoostedTreeOptionEnums_DartNormalizeType.values)
     ..e<Model_BoostedTreeOptionEnums_TreeMethod>(63, _omitFieldNames ? '' : 'treeMethod', $pb.PbFieldType.OE, defaultOrMaker: Model_BoostedTreeOptionEnums_TreeMethod.TREE_METHOD_UNSPECIFIED, valueOf: Model_BoostedTreeOptionEnums_TreeMethod.valueOf, enumValues: Model_BoostedTreeOptionEnums_TreeMethod.values)
-    ..aOM<$1780.Int64Value>(64, _omitFieldNames ? '' : 'minTreeChildWeight', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(65, _omitFieldNames ? '' : 'colsampleBytree', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(66, _omitFieldNames ? '' : 'colsampleBylevel', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(67, _omitFieldNames ? '' : 'colsampleBynode', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(64, _omitFieldNames ? '' : 'minTreeChildWeight', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(65, _omitFieldNames ? '' : 'colsampleBytree', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(66, _omitFieldNames ? '' : 'colsampleBylevel', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(67, _omitFieldNames ? '' : 'colsampleBynode', subBuilder: $1781.DoubleValue.create)
     ..aOS(70, _omitFieldNames ? '' : 'tfVersion')
     ..pc<Model_HolidayRegion>(71, _omitFieldNames ? '' : 'holidayRegions', $pb.PbFieldType.KE, valueOf: Model_HolidayRegion.valueOf, enumValues: Model_HolidayRegion.values, defaultEnumValue: Model_HolidayRegion.HOLIDAY_REGION_UNSPECIFIED)
     ..e<Model_ColorSpace>(72, _omitFieldNames ? '' : 'colorSpace', $pb.PbFieldType.OE, defaultOrMaker: Model_ColorSpace.COLOR_SPACE_UNSPECIFIED, valueOf: Model_ColorSpace.valueOf, enumValues: Model_ColorSpace.values)
@@ -3117,17 +3117,17 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
     ..aInt64(77, _omitFieldNames ? '' : 'maxTimeSeriesLength')
     ..aOS(78, _omitFieldNames ? '' : 'xgboostVersion')
     ..aInt64(83, _omitFieldNames ? '' : 'autoArimaMinOrder')
-    ..aOM<$1780.BoolValue>(84, _omitFieldNames ? '' : 'approxGlobalFeatureContrib', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(85, _omitFieldNames ? '' : 'fitIntercept', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(84, _omitFieldNames ? '' : 'approxGlobalFeatureContrib', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(85, _omitFieldNames ? '' : 'fitIntercept', subBuilder: $1781.BoolValue.create)
     ..aInt64(86, _omitFieldNames ? '' : 'numPrincipalComponents')
     ..a<$core.double>(87, _omitFieldNames ? '' : 'pcaExplainedVarianceRatio', $pb.PbFieldType.OD)
-    ..aOM<$1780.BoolValue>(88, _omitFieldNames ? '' : 'scaleFeatures', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(88, _omitFieldNames ? '' : 'scaleFeatures', subBuilder: $1781.BoolValue.create)
     ..e<Model_PcaSolverOptionEnums_PcaSolver>(89, _omitFieldNames ? '' : 'pcaSolver', $pb.PbFieldType.OE, defaultOrMaker: Model_PcaSolverOptionEnums_PcaSolver.UNSPECIFIED, valueOf: Model_PcaSolverOptionEnums_PcaSolver.valueOf, enumValues: Model_PcaSolverOptionEnums_PcaSolver.values)
-    ..aOM<$1780.BoolValue>(90, _omitFieldNames ? '' : 'autoClassWeights', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(90, _omitFieldNames ? '' : 'autoClassWeights', subBuilder: $1781.BoolValue.create)
     ..aOS(91, _omitFieldNames ? '' : 'activationFn')
     ..aOS(92, _omitFieldNames ? '' : 'optimizer')
     ..a<$core.double>(93, _omitFieldNames ? '' : 'budgetHours', $pb.PbFieldType.OD)
-    ..aOM<$1780.BoolValue>(94, _omitFieldNames ? '' : 'standardizeFeatures', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(94, _omitFieldNames ? '' : 'standardizeFeatures', subBuilder: $1781.BoolValue.create)
     ..a<$core.double>(95, _omitFieldNames ? '' : 'l1RegActivation', $pb.PbFieldType.OD)
     ..e<Model_ModelRegistryOptionEnums_ModelRegistry>(96, _omitFieldNames ? '' : 'modelRegistry', $pb.PbFieldType.OE, defaultOrMaker: Model_ModelRegistryOptionEnums_ModelRegistry.MODEL_REGISTRY_UNSPECIFIED, valueOf: Model_ModelRegistryOptionEnums_ModelRegistry.valueOf, enumValues: Model_ModelRegistryOptionEnums_ModelRegistry.values)
     ..pPS(97, _omitFieldNames ? '' : 'vertexAiModelVersionAliases')
@@ -3188,67 +3188,67 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// L1 regularization coefficient.
   @$pb.TagNumber(4)
-  $1780.DoubleValue get l1Regularization => $_getN(3);
+  $1781.DoubleValue get l1Regularization => $_getN(3);
   @$pb.TagNumber(4)
-  set l1Regularization($1780.DoubleValue v) { setField(4, v); }
+  set l1Regularization($1781.DoubleValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasL1Regularization() => $_has(3);
   @$pb.TagNumber(4)
   void clearL1Regularization() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.DoubleValue ensureL1Regularization() => $_ensure(3);
+  $1781.DoubleValue ensureL1Regularization() => $_ensure(3);
 
   /// L2 regularization coefficient.
   @$pb.TagNumber(5)
-  $1780.DoubleValue get l2Regularization => $_getN(4);
+  $1781.DoubleValue get l2Regularization => $_getN(4);
   @$pb.TagNumber(5)
-  set l2Regularization($1780.DoubleValue v) { setField(5, v); }
+  set l2Regularization($1781.DoubleValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasL2Regularization() => $_has(4);
   @$pb.TagNumber(5)
   void clearL2Regularization() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.DoubleValue ensureL2Regularization() => $_ensure(4);
+  $1781.DoubleValue ensureL2Regularization() => $_ensure(4);
 
   /// When early_stop is true, stops training when accuracy improvement is
   /// less than 'min_relative_progress'. Used only for iterative training
   /// algorithms.
   @$pb.TagNumber(6)
-  $1780.DoubleValue get minRelativeProgress => $_getN(5);
+  $1781.DoubleValue get minRelativeProgress => $_getN(5);
   @$pb.TagNumber(6)
-  set minRelativeProgress($1780.DoubleValue v) { setField(6, v); }
+  set minRelativeProgress($1781.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMinRelativeProgress() => $_has(5);
   @$pb.TagNumber(6)
   void clearMinRelativeProgress() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.DoubleValue ensureMinRelativeProgress() => $_ensure(5);
+  $1781.DoubleValue ensureMinRelativeProgress() => $_ensure(5);
 
   /// Whether to train a model from the last checkpoint.
   @$pb.TagNumber(7)
-  $1780.BoolValue get warmStart => $_getN(6);
+  $1781.BoolValue get warmStart => $_getN(6);
   @$pb.TagNumber(7)
-  set warmStart($1780.BoolValue v) { setField(7, v); }
+  set warmStart($1781.BoolValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasWarmStart() => $_has(6);
   @$pb.TagNumber(7)
   void clearWarmStart() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.BoolValue ensureWarmStart() => $_ensure(6);
+  $1781.BoolValue ensureWarmStart() => $_ensure(6);
 
   /// Whether to stop early when the loss doesn't improve significantly
   /// any more (compared to min_relative_progress). Used only for iterative
   /// training algorithms.
   @$pb.TagNumber(8)
-  $1780.BoolValue get earlyStop => $_getN(7);
+  $1781.BoolValue get earlyStop => $_getN(7);
   @$pb.TagNumber(8)
-  set earlyStop($1780.BoolValue v) { setField(8, v); }
+  set earlyStop($1781.BoolValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEarlyStop() => $_has(7);
   @$pb.TagNumber(8)
   void clearEarlyStop() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.BoolValue ensureEarlyStop() => $_ensure(7);
+  $1781.BoolValue ensureEarlyStop() => $_ensure(7);
 
   /// Name of input label columns in training data.
   @$pb.TagNumber(9)
@@ -3399,15 +3399,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// Dropout probability for dnn models.
   @$pb.TagNumber(26)
-  $1780.DoubleValue get dropout => $_getN(23);
+  $1781.DoubleValue get dropout => $_getN(23);
   @$pb.TagNumber(26)
-  set dropout($1780.DoubleValue v) { setField(26, v); }
+  set dropout($1781.DoubleValue v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasDropout() => $_has(23);
   @$pb.TagNumber(26)
   void clearDropout() => clearField(26);
   @$pb.TagNumber(26)
-  $1780.DoubleValue ensureDropout() => $_ensure(23);
+  $1781.DoubleValue ensureDropout() => $_ensure(23);
 
   /// Maximum depth of a tree for boosted tree models.
   @$pb.TagNumber(27)
@@ -3432,15 +3432,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// Minimum split loss for boosted tree models.
   @$pb.TagNumber(29)
-  $1780.DoubleValue get minSplitLoss => $_getN(26);
+  $1781.DoubleValue get minSplitLoss => $_getN(26);
   @$pb.TagNumber(29)
-  set minSplitLoss($1780.DoubleValue v) { setField(29, v); }
+  set minSplitLoss($1781.DoubleValue v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasMinSplitLoss() => $_has(26);
   @$pb.TagNumber(29)
   void clearMinSplitLoss() => clearField(29);
   @$pb.TagNumber(29)
-  $1780.DoubleValue ensureMinSplitLoss() => $_ensure(26);
+  $1781.DoubleValue ensureMinSplitLoss() => $_ensure(26);
 
   /// Num factors specified for matrix factorization models.
   @$pb.TagNumber(30)
@@ -3466,15 +3466,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
   /// Hyperparameter for matrix factoration when implicit feedback type is
   /// specified.
   @$pb.TagNumber(32)
-  $1780.DoubleValue get walsAlpha => $_getN(29);
+  $1781.DoubleValue get walsAlpha => $_getN(29);
   @$pb.TagNumber(32)
-  set walsAlpha($1780.DoubleValue v) { setField(32, v); }
+  set walsAlpha($1781.DoubleValue v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasWalsAlpha() => $_has(29);
   @$pb.TagNumber(32)
   void clearWalsAlpha() => clearField(32);
   @$pb.TagNumber(32)
-  $1780.DoubleValue ensureWalsAlpha() => $_ensure(29);
+  $1781.DoubleValue ensureWalsAlpha() => $_ensure(29);
 
   /// The method used to initialize the centroids for kmeans algorithm.
   @$pb.TagNumber(33)
@@ -3519,15 +3519,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// Whether to enable auto ARIMA or not.
   @$pb.TagNumber(37)
-  $1780.BoolValue get autoArima => $_getN(34);
+  $1781.BoolValue get autoArima => $_getN(34);
   @$pb.TagNumber(37)
-  set autoArima($1780.BoolValue v) { setField(37, v); }
+  set autoArima($1781.BoolValue v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasAutoArima() => $_has(34);
   @$pb.TagNumber(37)
   void clearAutoArima() => clearField(37);
   @$pb.TagNumber(37)
-  $1780.BoolValue ensureAutoArima() => $_ensure(34);
+  $1781.BoolValue ensureAutoArima() => $_ensure(34);
 
   /// A specification of the non-seasonal part of the ARIMA model: the three
   /// components (p, d, q) are the AR order, the degree of differencing, and
@@ -3556,27 +3556,27 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
   /// Whether or not p-value test should be computed for this model. Only
   /// available for linear and logistic regression models.
   @$pb.TagNumber(40)
-  $1780.BoolValue get calculatePValues => $_getN(37);
+  $1781.BoolValue get calculatePValues => $_getN(37);
   @$pb.TagNumber(40)
-  set calculatePValues($1780.BoolValue v) { setField(40, v); }
+  set calculatePValues($1781.BoolValue v) { setField(40, v); }
   @$pb.TagNumber(40)
   $core.bool hasCalculatePValues() => $_has(37);
   @$pb.TagNumber(40)
   void clearCalculatePValues() => clearField(40);
   @$pb.TagNumber(40)
-  $1780.BoolValue ensureCalculatePValues() => $_ensure(37);
+  $1781.BoolValue ensureCalculatePValues() => $_ensure(37);
 
   /// Include drift when fitting an ARIMA model.
   @$pb.TagNumber(41)
-  $1780.BoolValue get includeDrift => $_getN(38);
+  $1781.BoolValue get includeDrift => $_getN(38);
   @$pb.TagNumber(41)
-  set includeDrift($1780.BoolValue v) { setField(41, v); }
+  set includeDrift($1781.BoolValue v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasIncludeDrift() => $_has(38);
   @$pb.TagNumber(41)
   void clearIncludeDrift() => clearField(41);
   @$pb.TagNumber(41)
-  $1780.BoolValue ensureIncludeDrift() => $_ensure(38);
+  $1781.BoolValue ensureIncludeDrift() => $_ensure(38);
 
   /// The geographical region based on which the holidays are considered in
   /// time series modeling. If a valid value is specified, then holiday
@@ -3642,15 +3642,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// If true, perform decompose time series and save the results.
   @$pb.TagNumber(50)
-  $1780.BoolValue get decomposeTimeSeries => $_getN(45);
+  $1781.BoolValue get decomposeTimeSeries => $_getN(45);
   @$pb.TagNumber(50)
-  set decomposeTimeSeries($1780.BoolValue v) { setField(50, v); }
+  set decomposeTimeSeries($1781.BoolValue v) { setField(50, v); }
   @$pb.TagNumber(50)
   $core.bool hasDecomposeTimeSeries() => $_has(45);
   @$pb.TagNumber(50)
   void clearDecomposeTimeSeries() => clearField(50);
   @$pb.TagNumber(50)
-  $1780.BoolValue ensureDecomposeTimeSeries() => $_ensure(45);
+  $1781.BoolValue ensureDecomposeTimeSeries() => $_ensure(45);
 
   /// The time series id columns that were used during ARIMA model training.
   @$pb.TagNumber(51)
@@ -3658,28 +3658,28 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// If true, clean spikes and dips in the input time series.
   @$pb.TagNumber(52)
-  $1780.BoolValue get cleanSpikesAndDips => $_getN(47);
+  $1781.BoolValue get cleanSpikesAndDips => $_getN(47);
   @$pb.TagNumber(52)
-  set cleanSpikesAndDips($1780.BoolValue v) { setField(52, v); }
+  set cleanSpikesAndDips($1781.BoolValue v) { setField(52, v); }
   @$pb.TagNumber(52)
   $core.bool hasCleanSpikesAndDips() => $_has(47);
   @$pb.TagNumber(52)
   void clearCleanSpikesAndDips() => clearField(52);
   @$pb.TagNumber(52)
-  $1780.BoolValue ensureCleanSpikesAndDips() => $_ensure(47);
+  $1781.BoolValue ensureCleanSpikesAndDips() => $_ensure(47);
 
   /// If true, detect step changes and make data adjustment in the input time
   /// series.
   @$pb.TagNumber(53)
-  $1780.BoolValue get adjustStepChanges => $_getN(48);
+  $1781.BoolValue get adjustStepChanges => $_getN(48);
   @$pb.TagNumber(53)
-  set adjustStepChanges($1780.BoolValue v) { setField(53, v); }
+  set adjustStepChanges($1781.BoolValue v) { setField(53, v); }
   @$pb.TagNumber(53)
   $core.bool hasAdjustStepChanges() => $_has(48);
   @$pb.TagNumber(53)
   void clearAdjustStepChanges() => clearField(53);
   @$pb.TagNumber(53)
-  $1780.BoolValue ensureAdjustStepChanges() => $_ensure(48);
+  $1781.BoolValue ensureAdjustStepChanges() => $_ensure(48);
 
   /// The target evaluation metrics to optimize the hyperparameters for.
   @$pb.TagNumber(54)
@@ -3687,15 +3687,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// If true, enable global explanation during training.
   @$pb.TagNumber(55)
-  $1780.BoolValue get enableGlobalExplain => $_getN(50);
+  $1781.BoolValue get enableGlobalExplain => $_getN(50);
   @$pb.TagNumber(55)
-  set enableGlobalExplain($1780.BoolValue v) { setField(55, v); }
+  set enableGlobalExplain($1781.BoolValue v) { setField(55, v); }
   @$pb.TagNumber(55)
   $core.bool hasEnableGlobalExplain() => $_has(50);
   @$pb.TagNumber(55)
   void clearEnableGlobalExplain() => clearField(55);
   @$pb.TagNumber(55)
-  $1780.BoolValue ensureEnableGlobalExplain() => $_ensure(50);
+  $1781.BoolValue ensureEnableGlobalExplain() => $_ensure(50);
 
   /// Number of paths for the sampled Shapley explain method.
   @$pb.TagNumber(56)
@@ -3740,15 +3740,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
   /// Number of parallel trees constructed during each iteration for boosted
   /// tree models.
   @$pb.TagNumber(61)
-  $1780.Int64Value get numParallelTree => $_getN(55);
+  $1781.Int64Value get numParallelTree => $_getN(55);
   @$pb.TagNumber(61)
-  set numParallelTree($1780.Int64Value v) { setField(61, v); }
+  set numParallelTree($1781.Int64Value v) { setField(61, v); }
   @$pb.TagNumber(61)
   $core.bool hasNumParallelTree() => $_has(55);
   @$pb.TagNumber(61)
   void clearNumParallelTree() => clearField(61);
   @$pb.TagNumber(61)
-  $1780.Int64Value ensureNumParallelTree() => $_ensure(55);
+  $1781.Int64Value ensureNumParallelTree() => $_ensure(55);
 
   /// Type of normalization algorithm for boosted tree models using
   /// dart booster.
@@ -3774,53 +3774,53 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
   /// Minimum sum of instance weight needed in a child for boosted tree
   /// models.
   @$pb.TagNumber(64)
-  $1780.Int64Value get minTreeChildWeight => $_getN(58);
+  $1781.Int64Value get minTreeChildWeight => $_getN(58);
   @$pb.TagNumber(64)
-  set minTreeChildWeight($1780.Int64Value v) { setField(64, v); }
+  set minTreeChildWeight($1781.Int64Value v) { setField(64, v); }
   @$pb.TagNumber(64)
   $core.bool hasMinTreeChildWeight() => $_has(58);
   @$pb.TagNumber(64)
   void clearMinTreeChildWeight() => clearField(64);
   @$pb.TagNumber(64)
-  $1780.Int64Value ensureMinTreeChildWeight() => $_ensure(58);
+  $1781.Int64Value ensureMinTreeChildWeight() => $_ensure(58);
 
   /// Subsample ratio of columns when constructing each tree for boosted tree
   /// models.
   @$pb.TagNumber(65)
-  $1780.DoubleValue get colsampleBytree => $_getN(59);
+  $1781.DoubleValue get colsampleBytree => $_getN(59);
   @$pb.TagNumber(65)
-  set colsampleBytree($1780.DoubleValue v) { setField(65, v); }
+  set colsampleBytree($1781.DoubleValue v) { setField(65, v); }
   @$pb.TagNumber(65)
   $core.bool hasColsampleBytree() => $_has(59);
   @$pb.TagNumber(65)
   void clearColsampleBytree() => clearField(65);
   @$pb.TagNumber(65)
-  $1780.DoubleValue ensureColsampleBytree() => $_ensure(59);
+  $1781.DoubleValue ensureColsampleBytree() => $_ensure(59);
 
   /// Subsample ratio of columns for each level for boosted tree models.
   @$pb.TagNumber(66)
-  $1780.DoubleValue get colsampleBylevel => $_getN(60);
+  $1781.DoubleValue get colsampleBylevel => $_getN(60);
   @$pb.TagNumber(66)
-  set colsampleBylevel($1780.DoubleValue v) { setField(66, v); }
+  set colsampleBylevel($1781.DoubleValue v) { setField(66, v); }
   @$pb.TagNumber(66)
   $core.bool hasColsampleBylevel() => $_has(60);
   @$pb.TagNumber(66)
   void clearColsampleBylevel() => clearField(66);
   @$pb.TagNumber(66)
-  $1780.DoubleValue ensureColsampleBylevel() => $_ensure(60);
+  $1781.DoubleValue ensureColsampleBylevel() => $_ensure(60);
 
   /// Subsample ratio of columns for each node(split) for boosted tree
   /// models.
   @$pb.TagNumber(67)
-  $1780.DoubleValue get colsampleBynode => $_getN(61);
+  $1781.DoubleValue get colsampleBynode => $_getN(61);
   @$pb.TagNumber(67)
-  set colsampleBynode($1780.DoubleValue v) { setField(67, v); }
+  set colsampleBynode($1781.DoubleValue v) { setField(67, v); }
   @$pb.TagNumber(67)
   $core.bool hasColsampleBynode() => $_has(61);
   @$pb.TagNumber(67)
   void clearColsampleBynode() => clearField(67);
   @$pb.TagNumber(67)
-  $1780.DoubleValue ensureColsampleBynode() => $_ensure(61);
+  $1781.DoubleValue ensureColsampleBynode() => $_ensure(61);
 
   /// Based on the selected TF version, the corresponding docker image is
   /// used to train external models.
@@ -3943,27 +3943,27 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
   /// Whether to use approximate feature contribution method in XGBoost model
   /// explanation for global explain.
   @$pb.TagNumber(84)
-  $1780.BoolValue get approxGlobalFeatureContrib => $_getN(72);
+  $1781.BoolValue get approxGlobalFeatureContrib => $_getN(72);
   @$pb.TagNumber(84)
-  set approxGlobalFeatureContrib($1780.BoolValue v) { setField(84, v); }
+  set approxGlobalFeatureContrib($1781.BoolValue v) { setField(84, v); }
   @$pb.TagNumber(84)
   $core.bool hasApproxGlobalFeatureContrib() => $_has(72);
   @$pb.TagNumber(84)
   void clearApproxGlobalFeatureContrib() => clearField(84);
   @$pb.TagNumber(84)
-  $1780.BoolValue ensureApproxGlobalFeatureContrib() => $_ensure(72);
+  $1781.BoolValue ensureApproxGlobalFeatureContrib() => $_ensure(72);
 
   /// Whether the model should include intercept during model training.
   @$pb.TagNumber(85)
-  $1780.BoolValue get fitIntercept => $_getN(73);
+  $1781.BoolValue get fitIntercept => $_getN(73);
   @$pb.TagNumber(85)
-  set fitIntercept($1780.BoolValue v) { setField(85, v); }
+  set fitIntercept($1781.BoolValue v) { setField(85, v); }
   @$pb.TagNumber(85)
   $core.bool hasFitIntercept() => $_has(73);
   @$pb.TagNumber(85)
   void clearFitIntercept() => clearField(85);
   @$pb.TagNumber(85)
-  $1780.BoolValue ensureFitIntercept() => $_ensure(73);
+  $1781.BoolValue ensureFitIntercept() => $_ensure(73);
 
   /// Number of principal components to keep in the PCA model. Must be <= the
   /// number of features.
@@ -3990,15 +3990,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
   /// If true, scale the feature values by dividing the feature standard
   /// deviation. Currently only apply to PCA.
   @$pb.TagNumber(88)
-  $1780.BoolValue get scaleFeatures => $_getN(76);
+  $1781.BoolValue get scaleFeatures => $_getN(76);
   @$pb.TagNumber(88)
-  set scaleFeatures($1780.BoolValue v) { setField(88, v); }
+  set scaleFeatures($1781.BoolValue v) { setField(88, v); }
   @$pb.TagNumber(88)
   $core.bool hasScaleFeatures() => $_has(76);
   @$pb.TagNumber(88)
   void clearScaleFeatures() => clearField(88);
   @$pb.TagNumber(88)
-  $1780.BoolValue ensureScaleFeatures() => $_ensure(76);
+  $1781.BoolValue ensureScaleFeatures() => $_ensure(76);
 
   /// The solver for PCA.
   @$pb.TagNumber(89)
@@ -4013,15 +4013,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
   /// Whether to calculate class weights automatically based on the
   /// popularity of each label.
   @$pb.TagNumber(90)
-  $1780.BoolValue get autoClassWeights => $_getN(78);
+  $1781.BoolValue get autoClassWeights => $_getN(78);
   @$pb.TagNumber(90)
-  set autoClassWeights($1780.BoolValue v) { setField(90, v); }
+  set autoClassWeights($1781.BoolValue v) { setField(90, v); }
   @$pb.TagNumber(90)
   $core.bool hasAutoClassWeights() => $_has(78);
   @$pb.TagNumber(90)
   void clearAutoClassWeights() => clearField(90);
   @$pb.TagNumber(90)
-  $1780.BoolValue ensureAutoClassWeights() => $_ensure(78);
+  $1781.BoolValue ensureAutoClassWeights() => $_ensure(78);
 
   /// Activation function of the neural nets.
   @$pb.TagNumber(91)
@@ -4055,15 +4055,15 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 
   /// Whether to standardize numerical features. Default to true.
   @$pb.TagNumber(94)
-  $1780.BoolValue get standardizeFeatures => $_getN(82);
+  $1781.BoolValue get standardizeFeatures => $_getN(82);
   @$pb.TagNumber(94)
-  set standardizeFeatures($1780.BoolValue v) { setField(94, v); }
+  set standardizeFeatures($1781.BoolValue v) { setField(94, v); }
   @$pb.TagNumber(94)
   $core.bool hasStandardizeFeatures() => $_has(82);
   @$pb.TagNumber(94)
   void clearStandardizeFeatures() => clearField(94);
   @$pb.TagNumber(94)
-  $1780.BoolValue ensureStandardizeFeatures() => $_ensure(82);
+  $1781.BoolValue ensureStandardizeFeatures() => $_ensure(82);
 
   /// L1 regularization coefficient to activations.
   @$pb.TagNumber(95)
@@ -4095,8 +4095,8 @@ class Model_TrainingRun_TrainingOptions extends $pb.GeneratedMessage {
 class Model_TrainingRun_IterationResult_ClusterInfo extends $pb.GeneratedMessage {
   factory Model_TrainingRun_IterationResult_ClusterInfo({
     $fixnum.Int64? centroidId,
-    $1780.DoubleValue? clusterRadius,
-    $1780.Int64Value? clusterSize,
+    $1781.DoubleValue? clusterRadius,
+    $1781.Int64Value? clusterSize,
   }) {
     final $result = create();
     if (centroidId != null) {
@@ -4116,8 +4116,8 @@ class Model_TrainingRun_IterationResult_ClusterInfo extends $pb.GeneratedMessage
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.TrainingRun.IterationResult.ClusterInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'centroidId')
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'clusterRadius', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'clusterSize', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'clusterRadius', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'clusterSize', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -4155,27 +4155,27 @@ class Model_TrainingRun_IterationResult_ClusterInfo extends $pb.GeneratedMessage
   /// Cluster radius, the average distance from centroid
   /// to each point assigned to the cluster.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get clusterRadius => $_getN(1);
+  $1781.DoubleValue get clusterRadius => $_getN(1);
   @$pb.TagNumber(2)
-  set clusterRadius($1780.DoubleValue v) { setField(2, v); }
+  set clusterRadius($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasClusterRadius() => $_has(1);
   @$pb.TagNumber(2)
   void clearClusterRadius() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureClusterRadius() => $_ensure(1);
+  $1781.DoubleValue ensureClusterRadius() => $_ensure(1);
 
   /// Cluster size, the total number of points assigned to the cluster.
   @$pb.TagNumber(3)
-  $1780.Int64Value get clusterSize => $_getN(2);
+  $1781.Int64Value get clusterSize => $_getN(2);
   @$pb.TagNumber(3)
-  set clusterSize($1780.Int64Value v) { setField(3, v); }
+  set clusterSize($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasClusterSize() => $_has(2);
   @$pb.TagNumber(3)
   void clearClusterSize() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureClusterSize() => $_ensure(2);
+  $1781.Int64Value ensureClusterSize() => $_ensure(2);
 }
 
 /// Arima coefficients.
@@ -4183,7 +4183,7 @@ class Model_TrainingRun_IterationResult_ArimaResult_ArimaCoefficients extends $p
   factory Model_TrainingRun_IterationResult_ArimaResult_ArimaCoefficients({
     $core.Iterable<$core.double>? autoRegressiveCoefficients,
     $core.Iterable<$core.double>? movingAverageCoefficients,
-    $1780.DoubleValue? interceptCoefficient,
+    $1781.DoubleValue? interceptCoefficient,
   }) {
     final $result = create();
     if (autoRegressiveCoefficients != null) {
@@ -4204,7 +4204,7 @@ class Model_TrainingRun_IterationResult_ArimaResult_ArimaCoefficients extends $p
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.TrainingRun.IterationResult.ArimaResult.ArimaCoefficients', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..p<$core.double>(1, _omitFieldNames ? '' : 'autoRegressiveCoefficients', $pb.PbFieldType.KD)
     ..p<$core.double>(2, _omitFieldNames ? '' : 'movingAverageCoefficients', $pb.PbFieldType.KD)
-    ..aOM<$1780.DoubleValue>(3, _omitFieldNames ? '' : 'interceptCoefficient', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(3, _omitFieldNames ? '' : 'interceptCoefficient', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -4239,15 +4239,15 @@ class Model_TrainingRun_IterationResult_ArimaResult_ArimaCoefficients extends $p
 
   /// Intercept coefficient, just a double not an array.
   @$pb.TagNumber(3)
-  $1780.DoubleValue get interceptCoefficient => $_getN(2);
+  $1781.DoubleValue get interceptCoefficient => $_getN(2);
   @$pb.TagNumber(3)
-  set interceptCoefficient($1780.DoubleValue v) { setField(3, v); }
+  set interceptCoefficient($1781.DoubleValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInterceptCoefficient() => $_has(2);
   @$pb.TagNumber(3)
   void clearInterceptCoefficient() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.DoubleValue ensureInterceptCoefficient() => $_ensure(2);
+  $1781.DoubleValue ensureInterceptCoefficient() => $_ensure(2);
 }
 
 /// Arima model information.
@@ -4256,12 +4256,12 @@ class Model_TrainingRun_IterationResult_ArimaResult_ArimaModelInfo extends $pb.G
     Model_ArimaOrder? nonSeasonalOrder,
     Model_TrainingRun_IterationResult_ArimaResult_ArimaCoefficients? arimaCoefficients,
     Model_ArimaFittingMetrics? arimaFittingMetrics,
-    $1780.BoolValue? hasDrift,
+    $1781.BoolValue? hasDrift,
     $core.String? timeSeriesId,
     $core.Iterable<Model_SeasonalPeriod_SeasonalPeriodType>? seasonalPeriods,
-    $1780.BoolValue? hasHolidayEffect,
-    $1780.BoolValue? hasSpikesAndDips,
-    $1780.BoolValue? hasStepChanges,
+    $1781.BoolValue? hasHolidayEffect,
+    $1781.BoolValue? hasSpikesAndDips,
+    $1781.BoolValue? hasStepChanges,
     $core.Iterable<$core.String>? timeSeriesIds,
   }) {
     final $result = create();
@@ -4305,12 +4305,12 @@ class Model_TrainingRun_IterationResult_ArimaResult_ArimaModelInfo extends $pb.G
     ..aOM<Model_ArimaOrder>(1, _omitFieldNames ? '' : 'nonSeasonalOrder', subBuilder: Model_ArimaOrder.create)
     ..aOM<Model_TrainingRun_IterationResult_ArimaResult_ArimaCoefficients>(2, _omitFieldNames ? '' : 'arimaCoefficients', subBuilder: Model_TrainingRun_IterationResult_ArimaResult_ArimaCoefficients.create)
     ..aOM<Model_ArimaFittingMetrics>(3, _omitFieldNames ? '' : 'arimaFittingMetrics', subBuilder: Model_ArimaFittingMetrics.create)
-    ..aOM<$1780.BoolValue>(4, _omitFieldNames ? '' : 'hasDrift', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(4, _omitFieldNames ? '' : 'hasDrift', subBuilder: $1781.BoolValue.create)
     ..aOS(5, _omitFieldNames ? '' : 'timeSeriesId')
     ..pc<Model_SeasonalPeriod_SeasonalPeriodType>(6, _omitFieldNames ? '' : 'seasonalPeriods', $pb.PbFieldType.KE, valueOf: Model_SeasonalPeriod_SeasonalPeriodType.valueOf, enumValues: Model_SeasonalPeriod_SeasonalPeriodType.values, defaultEnumValue: Model_SeasonalPeriod_SeasonalPeriodType.SEASONAL_PERIOD_TYPE_UNSPECIFIED)
-    ..aOM<$1780.BoolValue>(7, _omitFieldNames ? '' : 'hasHolidayEffect', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(8, _omitFieldNames ? '' : 'hasSpikesAndDips', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(9, _omitFieldNames ? '' : 'hasStepChanges', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(7, _omitFieldNames ? '' : 'hasHolidayEffect', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(8, _omitFieldNames ? '' : 'hasSpikesAndDips', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(9, _omitFieldNames ? '' : 'hasStepChanges', subBuilder: $1781.BoolValue.create)
     ..pPS(10, _omitFieldNames ? '' : 'timeSeriesIds')
     ..hasRequiredFields = false
   ;
@@ -4375,15 +4375,15 @@ class Model_TrainingRun_IterationResult_ArimaResult_ArimaModelInfo extends $pb.G
   /// Whether Arima model fitted with drift or not. It is always false
   /// when d is not 1.
   @$pb.TagNumber(4)
-  $1780.BoolValue get hasDrift => $_getN(3);
+  $1781.BoolValue get hasDrift => $_getN(3);
   @$pb.TagNumber(4)
-  set hasDrift($1780.BoolValue v) { setField(4, v); }
+  set hasDrift($1781.BoolValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasHasDrift() => $_has(3);
   @$pb.TagNumber(4)
   void clearHasDrift() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.BoolValue ensureHasDrift() => $_ensure(3);
+  $1781.BoolValue ensureHasDrift() => $_ensure(3);
 
   /// The time_series_id value for this time series. It will be one of
   /// the unique values from the time_series_id_column specified during
@@ -4406,41 +4406,41 @@ class Model_TrainingRun_IterationResult_ArimaResult_ArimaModelInfo extends $pb.G
   /// If true, holiday_effect is a part of time series decomposition
   /// result.
   @$pb.TagNumber(7)
-  $1780.BoolValue get hasHolidayEffect => $_getN(6);
+  $1781.BoolValue get hasHolidayEffect => $_getN(6);
   @$pb.TagNumber(7)
-  set hasHolidayEffect($1780.BoolValue v) { setField(7, v); }
+  set hasHolidayEffect($1781.BoolValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasHasHolidayEffect() => $_has(6);
   @$pb.TagNumber(7)
   void clearHasHolidayEffect() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.BoolValue ensureHasHolidayEffect() => $_ensure(6);
+  $1781.BoolValue ensureHasHolidayEffect() => $_ensure(6);
 
   /// If true, spikes_and_dips is a part of time series decomposition
   /// result.
   @$pb.TagNumber(8)
-  $1780.BoolValue get hasSpikesAndDips => $_getN(7);
+  $1781.BoolValue get hasSpikesAndDips => $_getN(7);
   @$pb.TagNumber(8)
-  set hasSpikesAndDips($1780.BoolValue v) { setField(8, v); }
+  set hasSpikesAndDips($1781.BoolValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasHasSpikesAndDips() => $_has(7);
   @$pb.TagNumber(8)
   void clearHasSpikesAndDips() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.BoolValue ensureHasSpikesAndDips() => $_ensure(7);
+  $1781.BoolValue ensureHasSpikesAndDips() => $_ensure(7);
 
   /// If true, step_changes is a part of time series decomposition
   /// result.
   @$pb.TagNumber(9)
-  $1780.BoolValue get hasStepChanges => $_getN(8);
+  $1781.BoolValue get hasStepChanges => $_getN(8);
   @$pb.TagNumber(9)
-  set hasStepChanges($1780.BoolValue v) { setField(9, v); }
+  set hasStepChanges($1781.BoolValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasHasStepChanges() => $_has(8);
   @$pb.TagNumber(9)
   void clearHasStepChanges() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.BoolValue ensureHasStepChanges() => $_ensure(8);
+  $1781.BoolValue ensureHasStepChanges() => $_ensure(8);
 
   /// The tuple of time_series_ids identifying this time series. It will
   /// be one of the unique tuples of values present in the
@@ -4515,10 +4515,10 @@ class Model_TrainingRun_IterationResult_ArimaResult extends $pb.GeneratedMessage
 /// order.
 class Model_TrainingRun_IterationResult_PrincipalComponentInfo extends $pb.GeneratedMessage {
   factory Model_TrainingRun_IterationResult_PrincipalComponentInfo({
-    $1780.Int64Value? principalComponentId,
-    $1780.DoubleValue? explainedVariance,
-    $1780.DoubleValue? explainedVarianceRatio,
-    $1780.DoubleValue? cumulativeExplainedVarianceRatio,
+    $1781.Int64Value? principalComponentId,
+    $1781.DoubleValue? explainedVariance,
+    $1781.DoubleValue? explainedVarianceRatio,
+    $1781.DoubleValue? cumulativeExplainedVarianceRatio,
   }) {
     final $result = create();
     if (principalComponentId != null) {
@@ -4540,10 +4540,10 @@ class Model_TrainingRun_IterationResult_PrincipalComponentInfo extends $pb.Gener
   factory Model_TrainingRun_IterationResult_PrincipalComponentInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.TrainingRun.IterationResult.PrincipalComponentInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'principalComponentId', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'explainedVariance', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(3, _omitFieldNames ? '' : 'explainedVarianceRatio', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(4, _omitFieldNames ? '' : 'cumulativeExplainedVarianceRatio', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'principalComponentId', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'explainedVariance', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(3, _omitFieldNames ? '' : 'explainedVarianceRatio', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(4, _omitFieldNames ? '' : 'cumulativeExplainedVarianceRatio', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -4570,62 +4570,62 @@ class Model_TrainingRun_IterationResult_PrincipalComponentInfo extends $pb.Gener
 
   /// Id of the principal component.
   @$pb.TagNumber(1)
-  $1780.Int64Value get principalComponentId => $_getN(0);
+  $1781.Int64Value get principalComponentId => $_getN(0);
   @$pb.TagNumber(1)
-  set principalComponentId($1780.Int64Value v) { setField(1, v); }
+  set principalComponentId($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPrincipalComponentId() => $_has(0);
   @$pb.TagNumber(1)
   void clearPrincipalComponentId() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensurePrincipalComponentId() => $_ensure(0);
+  $1781.Int64Value ensurePrincipalComponentId() => $_ensure(0);
 
   /// Explained variance by this principal component, which is simply the
   /// eigenvalue.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get explainedVariance => $_getN(1);
+  $1781.DoubleValue get explainedVariance => $_getN(1);
   @$pb.TagNumber(2)
-  set explainedVariance($1780.DoubleValue v) { setField(2, v); }
+  set explainedVariance($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExplainedVariance() => $_has(1);
   @$pb.TagNumber(2)
   void clearExplainedVariance() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureExplainedVariance() => $_ensure(1);
+  $1781.DoubleValue ensureExplainedVariance() => $_ensure(1);
 
   /// Explained_variance over the total explained variance.
   @$pb.TagNumber(3)
-  $1780.DoubleValue get explainedVarianceRatio => $_getN(2);
+  $1781.DoubleValue get explainedVarianceRatio => $_getN(2);
   @$pb.TagNumber(3)
-  set explainedVarianceRatio($1780.DoubleValue v) { setField(3, v); }
+  set explainedVarianceRatio($1781.DoubleValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExplainedVarianceRatio() => $_has(2);
   @$pb.TagNumber(3)
   void clearExplainedVarianceRatio() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.DoubleValue ensureExplainedVarianceRatio() => $_ensure(2);
+  $1781.DoubleValue ensureExplainedVarianceRatio() => $_ensure(2);
 
   /// The explained_variance is pre-ordered in the descending order to
   /// compute the cumulative explained variance ratio.
   @$pb.TagNumber(4)
-  $1780.DoubleValue get cumulativeExplainedVarianceRatio => $_getN(3);
+  $1781.DoubleValue get cumulativeExplainedVarianceRatio => $_getN(3);
   @$pb.TagNumber(4)
-  set cumulativeExplainedVarianceRatio($1780.DoubleValue v) { setField(4, v); }
+  set cumulativeExplainedVarianceRatio($1781.DoubleValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCumulativeExplainedVarianceRatio() => $_has(3);
   @$pb.TagNumber(4)
   void clearCumulativeExplainedVarianceRatio() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.DoubleValue ensureCumulativeExplainedVarianceRatio() => $_ensure(3);
+  $1781.DoubleValue ensureCumulativeExplainedVarianceRatio() => $_ensure(3);
 }
 
 /// Information about a single iteration of the training run.
 class Model_TrainingRun_IterationResult extends $pb.GeneratedMessage {
   factory Model_TrainingRun_IterationResult({
-    $1780.Int32Value? index,
-    $1780.Int64Value? durationMs,
-    $1780.DoubleValue? trainingLoss,
-    $1780.DoubleValue? evalLoss,
+    $1781.Int32Value? index,
+    $1781.Int64Value? durationMs,
+    $1781.DoubleValue? trainingLoss,
+    $1781.DoubleValue? evalLoss,
     $core.double? learnRate,
     $core.Iterable<Model_TrainingRun_IterationResult_ClusterInfo>? clusterInfos,
     Model_TrainingRun_IterationResult_ArimaResult? arimaResult,
@@ -4663,10 +4663,10 @@ class Model_TrainingRun_IterationResult extends $pb.GeneratedMessage {
   factory Model_TrainingRun_IterationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.TrainingRun.IterationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int32Value>(1, _omitFieldNames ? '' : 'index', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'durationMs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(5, _omitFieldNames ? '' : 'trainingLoss', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(6, _omitFieldNames ? '' : 'evalLoss', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.Int32Value>(1, _omitFieldNames ? '' : 'index', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'durationMs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(5, _omitFieldNames ? '' : 'trainingLoss', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(6, _omitFieldNames ? '' : 'evalLoss', subBuilder: $1781.DoubleValue.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'learnRate', $pb.PbFieldType.OD)
     ..pc<Model_TrainingRun_IterationResult_ClusterInfo>(8, _omitFieldNames ? '' : 'clusterInfos', $pb.PbFieldType.PM, subBuilder: Model_TrainingRun_IterationResult_ClusterInfo.create)
     ..aOM<Model_TrainingRun_IterationResult_ArimaResult>(9, _omitFieldNames ? '' : 'arimaResult', subBuilder: Model_TrainingRun_IterationResult_ArimaResult.create)
@@ -4697,51 +4697,51 @@ class Model_TrainingRun_IterationResult extends $pb.GeneratedMessage {
 
   /// Index of the iteration, 0 based.
   @$pb.TagNumber(1)
-  $1780.Int32Value get index => $_getN(0);
+  $1781.Int32Value get index => $_getN(0);
   @$pb.TagNumber(1)
-  set index($1780.Int32Value v) { setField(1, v); }
+  set index($1781.Int32Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIndex() => $_has(0);
   @$pb.TagNumber(1)
   void clearIndex() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int32Value ensureIndex() => $_ensure(0);
+  $1781.Int32Value ensureIndex() => $_ensure(0);
 
   /// Time taken to run the iteration in milliseconds.
   @$pb.TagNumber(4)
-  $1780.Int64Value get durationMs => $_getN(1);
+  $1781.Int64Value get durationMs => $_getN(1);
   @$pb.TagNumber(4)
-  set durationMs($1780.Int64Value v) { setField(4, v); }
+  set durationMs($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDurationMs() => $_has(1);
   @$pb.TagNumber(4)
   void clearDurationMs() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureDurationMs() => $_ensure(1);
+  $1781.Int64Value ensureDurationMs() => $_ensure(1);
 
   /// Loss computed on the training data at the end of iteration.
   @$pb.TagNumber(5)
-  $1780.DoubleValue get trainingLoss => $_getN(2);
+  $1781.DoubleValue get trainingLoss => $_getN(2);
   @$pb.TagNumber(5)
-  set trainingLoss($1780.DoubleValue v) { setField(5, v); }
+  set trainingLoss($1781.DoubleValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTrainingLoss() => $_has(2);
   @$pb.TagNumber(5)
   void clearTrainingLoss() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.DoubleValue ensureTrainingLoss() => $_ensure(2);
+  $1781.DoubleValue ensureTrainingLoss() => $_ensure(2);
 
   /// Loss computed on the eval data at the end of iteration.
   @$pb.TagNumber(6)
-  $1780.DoubleValue get evalLoss => $_getN(3);
+  $1781.DoubleValue get evalLoss => $_getN(3);
   @$pb.TagNumber(6)
-  set evalLoss($1780.DoubleValue v) { setField(6, v); }
+  set evalLoss($1781.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEvalLoss() => $_has(3);
   @$pb.TagNumber(6)
   void clearEvalLoss() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.DoubleValue ensureEvalLoss() => $_ensure(3);
+  $1781.DoubleValue ensureEvalLoss() => $_ensure(3);
 
   /// Learn rate used for this iteration.
   @$pb.TagNumber(7)
@@ -4780,7 +4780,7 @@ class Model_TrainingRun extends $pb.GeneratedMessage {
     Model_TrainingRun_TrainingOptions? trainingOptions,
     $core.Iterable<Model_TrainingRun_IterationResult>? results,
     Model_EvaluationMetrics? evaluationMetrics,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
     Model_DataSplitResult? dataSplitResult,
     Model_GlobalExplanation? modelLevelGlobalExplanation,
     $core.Iterable<Model_GlobalExplanation>? classLevelGlobalExplanations,
@@ -4825,7 +4825,7 @@ class Model_TrainingRun extends $pb.GeneratedMessage {
     ..aOM<Model_TrainingRun_TrainingOptions>(1, _omitFieldNames ? '' : 'trainingOptions', subBuilder: Model_TrainingRun_TrainingOptions.create)
     ..pc<Model_TrainingRun_IterationResult>(6, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: Model_TrainingRun_IterationResult.create)
     ..aOM<Model_EvaluationMetrics>(7, _omitFieldNames ? '' : 'evaluationMetrics', subBuilder: Model_EvaluationMetrics.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Model_DataSplitResult>(9, _omitFieldNames ? '' : 'dataSplitResult', subBuilder: Model_DataSplitResult.create)
     ..aOM<Model_GlobalExplanation>(11, _omitFieldNames ? '' : 'modelLevelGlobalExplanation', subBuilder: Model_GlobalExplanation.create)
     ..pc<Model_GlobalExplanation>(12, _omitFieldNames ? '' : 'classLevelGlobalExplanations', $pb.PbFieldType.PM, subBuilder: Model_GlobalExplanation.create)
@@ -4888,15 +4888,15 @@ class Model_TrainingRun extends $pb.GeneratedMessage {
 
   /// Output only. The start time of this training run.
   @$pb.TagNumber(8)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(8)
-  set startTime($1775.Timestamp v) { setField(8, v); }
+  set startTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(8)
   void clearStartTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Output only. Data split result of the training run. Only set when the
   /// input data is actually split.
@@ -4957,8 +4957,8 @@ class Model_TrainingRun extends $pb.GeneratedMessage {
 /// Range of a double hyperparameter.
 class Model_DoubleHparamSearchSpace_DoubleRange extends $pb.GeneratedMessage {
   factory Model_DoubleHparamSearchSpace_DoubleRange({
-    $1780.DoubleValue? min,
-    $1780.DoubleValue? max,
+    $1781.DoubleValue? min,
+    $1781.DoubleValue? max,
   }) {
     final $result = create();
     if (min != null) {
@@ -4974,8 +4974,8 @@ class Model_DoubleHparamSearchSpace_DoubleRange extends $pb.GeneratedMessage {
   factory Model_DoubleHparamSearchSpace_DoubleRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.DoubleHparamSearchSpace.DoubleRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'min', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(2, _omitFieldNames ? '' : 'max', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'min', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(2, _omitFieldNames ? '' : 'max', subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -5002,33 +5002,33 @@ class Model_DoubleHparamSearchSpace_DoubleRange extends $pb.GeneratedMessage {
 
   /// Min value of the double parameter.
   @$pb.TagNumber(1)
-  $1780.DoubleValue get min => $_getN(0);
+  $1781.DoubleValue get min => $_getN(0);
   @$pb.TagNumber(1)
-  set min($1780.DoubleValue v) { setField(1, v); }
+  set min($1781.DoubleValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMin() => $_has(0);
   @$pb.TagNumber(1)
   void clearMin() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.DoubleValue ensureMin() => $_ensure(0);
+  $1781.DoubleValue ensureMin() => $_ensure(0);
 
   /// Max value of the double parameter.
   @$pb.TagNumber(2)
-  $1780.DoubleValue get max => $_getN(1);
+  $1781.DoubleValue get max => $_getN(1);
   @$pb.TagNumber(2)
-  set max($1780.DoubleValue v) { setField(2, v); }
+  set max($1781.DoubleValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMax() => $_has(1);
   @$pb.TagNumber(2)
   void clearMax() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.DoubleValue ensureMax() => $_ensure(1);
+  $1781.DoubleValue ensureMax() => $_ensure(1);
 }
 
 /// Discrete candidates of a double hyperparameter.
 class Model_DoubleHparamSearchSpace_DoubleCandidates extends $pb.GeneratedMessage {
   factory Model_DoubleHparamSearchSpace_DoubleCandidates({
-    $core.Iterable<$1780.DoubleValue>? candidates,
+    $core.Iterable<$1781.DoubleValue>? candidates,
   }) {
     final $result = create();
     if (candidates != null) {
@@ -5041,7 +5041,7 @@ class Model_DoubleHparamSearchSpace_DoubleCandidates extends $pb.GeneratedMessag
   factory Model_DoubleHparamSearchSpace_DoubleCandidates.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.DoubleHparamSearchSpace.DoubleCandidates', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..pc<$1780.DoubleValue>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: $1780.DoubleValue.create)
+    ..pc<$1781.DoubleValue>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: $1781.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -5068,7 +5068,7 @@ class Model_DoubleHparamSearchSpace_DoubleCandidates extends $pb.GeneratedMessag
 
   /// Candidates for the double parameter in increasing order.
   @$pb.TagNumber(1)
-  $core.List<$1780.DoubleValue> get candidates => $_getList(0);
+  $core.List<$1781.DoubleValue> get candidates => $_getList(0);
 }
 
 enum Model_DoubleHparamSearchSpace_SearchSpace {
@@ -5160,8 +5160,8 @@ class Model_DoubleHparamSearchSpace extends $pb.GeneratedMessage {
 /// Range of an int hyperparameter.
 class Model_IntHparamSearchSpace_IntRange extends $pb.GeneratedMessage {
   factory Model_IntHparamSearchSpace_IntRange({
-    $1780.Int64Value? min,
-    $1780.Int64Value? max,
+    $1781.Int64Value? min,
+    $1781.Int64Value? max,
   }) {
     final $result = create();
     if (min != null) {
@@ -5177,8 +5177,8 @@ class Model_IntHparamSearchSpace_IntRange extends $pb.GeneratedMessage {
   factory Model_IntHparamSearchSpace_IntRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.IntHparamSearchSpace.IntRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'min', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'max', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'min', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'max', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -5205,33 +5205,33 @@ class Model_IntHparamSearchSpace_IntRange extends $pb.GeneratedMessage {
 
   /// Min value of the int parameter.
   @$pb.TagNumber(1)
-  $1780.Int64Value get min => $_getN(0);
+  $1781.Int64Value get min => $_getN(0);
   @$pb.TagNumber(1)
-  set min($1780.Int64Value v) { setField(1, v); }
+  set min($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMin() => $_has(0);
   @$pb.TagNumber(1)
   void clearMin() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureMin() => $_ensure(0);
+  $1781.Int64Value ensureMin() => $_ensure(0);
 
   /// Max value of the int parameter.
   @$pb.TagNumber(2)
-  $1780.Int64Value get max => $_getN(1);
+  $1781.Int64Value get max => $_getN(1);
   @$pb.TagNumber(2)
-  set max($1780.Int64Value v) { setField(2, v); }
+  set max($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMax() => $_has(1);
   @$pb.TagNumber(2)
   void clearMax() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureMax() => $_ensure(1);
+  $1781.Int64Value ensureMax() => $_ensure(1);
 }
 
 /// Discrete candidates of an int hyperparameter.
 class Model_IntHparamSearchSpace_IntCandidates extends $pb.GeneratedMessage {
   factory Model_IntHparamSearchSpace_IntCandidates({
-    $core.Iterable<$1780.Int64Value>? candidates,
+    $core.Iterable<$1781.Int64Value>? candidates,
   }) {
     final $result = create();
     if (candidates != null) {
@@ -5244,7 +5244,7 @@ class Model_IntHparamSearchSpace_IntCandidates extends $pb.GeneratedMessage {
   factory Model_IntHparamSearchSpace_IntCandidates.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model.IntHparamSearchSpace.IntCandidates', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..pc<$1780.Int64Value>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: $1780.Int64Value.create)
+    ..pc<$1781.Int64Value>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -5271,7 +5271,7 @@ class Model_IntHparamSearchSpace_IntCandidates extends $pb.GeneratedMessage {
 
   /// Candidates for the int parameter in increasing order.
   @$pb.TagNumber(1)
-  $core.List<$1780.Int64Value> get candidates => $_getList(0);
+  $core.List<$1781.Int64Value> get candidates => $_getList(0);
 }
 
 enum Model_IntHparamSearchSpace_SearchSpace {
@@ -5926,8 +5926,8 @@ class Model_HparamTuningTrial extends $pb.GeneratedMessage {
     Model_EvaluationMetrics? evaluationMetrics,
     Model_HparamTuningTrial_TrialStatus? status,
     $core.String? errorMessage,
-    $1780.DoubleValue? trainingLoss,
-    $1780.DoubleValue? evalLoss,
+    $1781.DoubleValue? trainingLoss,
+    $1781.DoubleValue? evalLoss,
     Model_EvaluationMetrics? hparamTuningEvaluationMetrics,
   }) {
     final $result = create();
@@ -5975,8 +5975,8 @@ class Model_HparamTuningTrial extends $pb.GeneratedMessage {
     ..aOM<Model_EvaluationMetrics>(5, _omitFieldNames ? '' : 'evaluationMetrics', subBuilder: Model_EvaluationMetrics.create)
     ..e<Model_HparamTuningTrial_TrialStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: Model_HparamTuningTrial_TrialStatus.TRIAL_STATUS_UNSPECIFIED, valueOf: Model_HparamTuningTrial_TrialStatus.valueOf, enumValues: Model_HparamTuningTrial_TrialStatus.values)
     ..aOS(7, _omitFieldNames ? '' : 'errorMessage')
-    ..aOM<$1780.DoubleValue>(8, _omitFieldNames ? '' : 'trainingLoss', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.DoubleValue>(9, _omitFieldNames ? '' : 'evalLoss', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(8, _omitFieldNames ? '' : 'trainingLoss', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.DoubleValue>(9, _omitFieldNames ? '' : 'evalLoss', subBuilder: $1781.DoubleValue.create)
     ..aOM<Model_EvaluationMetrics>(10, _omitFieldNames ? '' : 'hparamTuningEvaluationMetrics', subBuilder: Model_EvaluationMetrics.create)
     ..hasRequiredFields = false
   ;
@@ -6079,27 +6079,27 @@ class Model_HparamTuningTrial extends $pb.GeneratedMessage {
 
   /// Loss computed on the training data at the end of trial.
   @$pb.TagNumber(8)
-  $1780.DoubleValue get trainingLoss => $_getN(7);
+  $1781.DoubleValue get trainingLoss => $_getN(7);
   @$pb.TagNumber(8)
-  set trainingLoss($1780.DoubleValue v) { setField(8, v); }
+  set trainingLoss($1781.DoubleValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTrainingLoss() => $_has(7);
   @$pb.TagNumber(8)
   void clearTrainingLoss() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.DoubleValue ensureTrainingLoss() => $_ensure(7);
+  $1781.DoubleValue ensureTrainingLoss() => $_ensure(7);
 
   /// Loss computed on the eval data at the end of trial.
   @$pb.TagNumber(9)
-  $1780.DoubleValue get evalLoss => $_getN(8);
+  $1781.DoubleValue get evalLoss => $_getN(8);
   @$pb.TagNumber(9)
-  set evalLoss($1780.DoubleValue v) { setField(9, v); }
+  set evalLoss($1781.DoubleValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasEvalLoss() => $_has(8);
   @$pb.TagNumber(9)
   void clearEvalLoss() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.DoubleValue ensureEvalLoss() => $_ensure(8);
+  $1781.DoubleValue ensureEvalLoss() => $_ensure(8);
 
   /// Hyperparameter tuning evaluation metrics of this trial calculated on the
   /// eval data. Unlike evaluation_metrics, only the fields corresponding to
@@ -6119,19 +6119,19 @@ class Model_HparamTuningTrial extends $pb.GeneratedMessage {
 class Model extends $pb.GeneratedMessage {
   factory Model({
     $core.String? etag,
-    $4410.ModelReference? modelReference,
+    $4411.ModelReference? modelReference,
     $fixnum.Int64? creationTime,
     $fixnum.Int64? lastModifiedTime,
     Model_ModelType? modelType,
     $core.Iterable<Model_TrainingRun>? trainingRuns,
-    $core.Iterable<$4402.StandardSqlField>? featureColumns,
-    $core.Iterable<$4402.StandardSqlField>? labelColumns,
+    $core.Iterable<$4403.StandardSqlField>? featureColumns,
+    $core.Iterable<$4403.StandardSqlField>? labelColumns,
     $core.String? description,
     $core.String? location,
     $core.String? friendlyName,
     $core.Map<$core.String, $core.String>? labels,
     $fixnum.Int64? expirationTime,
-    $4392.EncryptionConfiguration? encryptionConfiguration,
+    $4393.EncryptionConfiguration? encryptionConfiguration,
     Model_HparamSearchSpaces? hparamSearchSpaces,
     $core.Iterable<Model_HparamTuningTrial>? hparamTrials,
     $fixnum.Int64? defaultTrialId,
@@ -6208,19 +6208,19 @@ class Model extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Model', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'etag')
-    ..aOM<$4410.ModelReference>(2, _omitFieldNames ? '' : 'modelReference', subBuilder: $4410.ModelReference.create)
+    ..aOM<$4411.ModelReference>(2, _omitFieldNames ? '' : 'modelReference', subBuilder: $4411.ModelReference.create)
     ..aInt64(5, _omitFieldNames ? '' : 'creationTime')
     ..aInt64(6, _omitFieldNames ? '' : 'lastModifiedTime')
     ..e<Model_ModelType>(7, _omitFieldNames ? '' : 'modelType', $pb.PbFieldType.OE, defaultOrMaker: Model_ModelType.MODEL_TYPE_UNSPECIFIED, valueOf: Model_ModelType.valueOf, enumValues: Model_ModelType.values)
     ..pc<Model_TrainingRun>(9, _omitFieldNames ? '' : 'trainingRuns', $pb.PbFieldType.PM, subBuilder: Model_TrainingRun.create)
-    ..pc<$4402.StandardSqlField>(10, _omitFieldNames ? '' : 'featureColumns', $pb.PbFieldType.PM, subBuilder: $4402.StandardSqlField.create)
-    ..pc<$4402.StandardSqlField>(11, _omitFieldNames ? '' : 'labelColumns', $pb.PbFieldType.PM, subBuilder: $4402.StandardSqlField.create)
+    ..pc<$4403.StandardSqlField>(10, _omitFieldNames ? '' : 'featureColumns', $pb.PbFieldType.PM, subBuilder: $4403.StandardSqlField.create)
+    ..pc<$4403.StandardSqlField>(11, _omitFieldNames ? '' : 'labelColumns', $pb.PbFieldType.PM, subBuilder: $4403.StandardSqlField.create)
     ..aOS(12, _omitFieldNames ? '' : 'description')
     ..aOS(13, _omitFieldNames ? '' : 'location')
     ..aOS(14, _omitFieldNames ? '' : 'friendlyName')
     ..m<$core.String, $core.String>(15, _omitFieldNames ? '' : 'labels', entryClassName: 'Model.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
     ..aInt64(16, _omitFieldNames ? '' : 'expirationTime')
-    ..aOM<$4392.EncryptionConfiguration>(17, _omitFieldNames ? '' : 'encryptionConfiguration', subBuilder: $4392.EncryptionConfiguration.create)
+    ..aOM<$4393.EncryptionConfiguration>(17, _omitFieldNames ? '' : 'encryptionConfiguration', subBuilder: $4393.EncryptionConfiguration.create)
     ..aOM<Model_HparamSearchSpaces>(18, _omitFieldNames ? '' : 'hparamSearchSpaces', subBuilder: Model_HparamSearchSpaces.create)
     ..pc<Model_HparamTuningTrial>(20, _omitFieldNames ? '' : 'hparamTrials', $pb.PbFieldType.PM, subBuilder: Model_HparamTuningTrial.create)
     ..aInt64(21, _omitFieldNames ? '' : 'defaultTrialId')
@@ -6263,15 +6263,15 @@ class Model extends $pb.GeneratedMessage {
 
   /// Required. Unique identifier for this model.
   @$pb.TagNumber(2)
-  $4410.ModelReference get modelReference => $_getN(1);
+  $4411.ModelReference get modelReference => $_getN(1);
   @$pb.TagNumber(2)
-  set modelReference($4410.ModelReference v) { setField(2, v); }
+  set modelReference($4411.ModelReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasModelReference() => $_has(1);
   @$pb.TagNumber(2)
   void clearModelReference() => clearField(2);
   @$pb.TagNumber(2)
-  $4410.ModelReference ensureModelReference() => $_ensure(1);
+  $4411.ModelReference ensureModelReference() => $_ensure(1);
 
   /// Output only. The time when this model was created, in millisecs since the
   /// epoch.
@@ -6312,12 +6312,12 @@ class Model extends $pb.GeneratedMessage {
   /// Output only. Input feature columns for the model inference. If the model is
   /// trained with TRANSFORM clause, these are the input of the TRANSFORM clause.
   @$pb.TagNumber(10)
-  $core.List<$4402.StandardSqlField> get featureColumns => $_getList(6);
+  $core.List<$4403.StandardSqlField> get featureColumns => $_getList(6);
 
   /// Output only. Label columns that were used to train this model.
   /// The output of the model will have a "predicted_" prefix to these columns.
   @$pb.TagNumber(11)
-  $core.List<$4402.StandardSqlField> get labelColumns => $_getList(7);
+  $core.List<$4403.StandardSqlField> get labelColumns => $_getList(7);
 
   /// Optional. A user-friendly description of this model.
   @$pb.TagNumber(12)
@@ -6378,15 +6378,15 @@ class Model extends $pb.GeneratedMessage {
   /// storage. This field can be used with PatchModel to update encryption key
   /// for an already encrypted model.
   @$pb.TagNumber(17)
-  $4392.EncryptionConfiguration get encryptionConfiguration => $_getN(13);
+  $4393.EncryptionConfiguration get encryptionConfiguration => $_getN(13);
   @$pb.TagNumber(17)
-  set encryptionConfiguration($4392.EncryptionConfiguration v) { setField(17, v); }
+  set encryptionConfiguration($4393.EncryptionConfiguration v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasEncryptionConfiguration() => $_has(13);
   @$pb.TagNumber(17)
   void clearEncryptionConfiguration() => clearField(17);
   @$pb.TagNumber(17)
-  $4392.EncryptionConfiguration ensureEncryptionConfiguration() => $_ensure(13);
+  $4393.EncryptionConfiguration ensureEncryptionConfiguration() => $_ensure(13);
 
   /// Output only. All hyperparameter search spaces in this model.
   @$pb.TagNumber(18)
@@ -6719,7 +6719,7 @@ class ListModelsRequest extends $pb.GeneratedMessage {
   factory ListModelsRequest({
     $core.String? projectId,
     $core.String? datasetId,
-    $1780.UInt32Value? maxResults,
+    $1781.UInt32Value? maxResults,
     $core.String? pageToken,
   }) {
     final $result = create();
@@ -6744,7 +6744,7 @@ class ListModelsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListModelsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
-    ..aOM<$1780.UInt32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.UInt32Value.create)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false
   ;
@@ -6793,15 +6793,15 @@ class ListModelsRequest extends $pb.GeneratedMessage {
   /// The maximum number of results to return in a single response page.
   /// Leverage the page tokens to iterate through the entire collection.
   @$pb.TagNumber(3)
-  $1780.UInt32Value get maxResults => $_getN(2);
+  $1781.UInt32Value get maxResults => $_getN(2);
   @$pb.TagNumber(3)
-  set maxResults($1780.UInt32Value v) { setField(3, v); }
+  set maxResults($1781.UInt32Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMaxResults() => $_has(2);
   @$pb.TagNumber(3)
   void clearMaxResults() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.UInt32Value ensureMaxResults() => $_ensure(2);
+  $1781.UInt32Value ensureMaxResults() => $_ensure(2);
 
   /// Page token, returned by a previous call to request the next page of
   /// results

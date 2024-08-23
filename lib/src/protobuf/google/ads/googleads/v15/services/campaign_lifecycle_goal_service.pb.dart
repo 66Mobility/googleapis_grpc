@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/campaign_lifecycle_goal.pb.dart' as $2502;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/campaign_lifecycle_goal.pb.dart' as $2503;
 
 /// Request message for
 /// [CampaignLifecycleService.configureCampaignLifecycleGoals][].
@@ -110,8 +110,8 @@ enum CampaignLifecycleGoalOperation_Operation {
 /// A single operation on a campaign lifecycle goal.
 class CampaignLifecycleGoalOperation extends $pb.GeneratedMessage {
   factory CampaignLifecycleGoalOperation({
-    $2502.CampaignLifecycleGoal? create_1,
-    $2209.FieldMask? updateMask,
+    $2503.CampaignLifecycleGoal? create_1,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -132,8 +132,8 @@ class CampaignLifecycleGoalOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignLifecycleGoalOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$2502.CampaignLifecycleGoal>(1, _omitFieldNames ? '' : 'create', subBuilder: $2502.CampaignLifecycleGoal.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2503.CampaignLifecycleGoal>(1, _omitFieldNames ? '' : 'create', subBuilder: $2503.CampaignLifecycleGoal.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -169,28 +169,28 @@ class CampaignLifecycleGoalOperation extends $pb.GeneratedMessage {
   /// campaign field needs to be empty. Partial update based on field mask is
   /// supported when updating an existing campaign lifecycle goal.
   @$pb.TagNumber(1)
-  $2502.CampaignLifecycleGoal get create_1 => $_getN(0);
+  $2503.CampaignLifecycleGoal get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2502.CampaignLifecycleGoal v) { setField(1, v); }
+  set create_1($2503.CampaignLifecycleGoal v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2502.CampaignLifecycleGoal ensureCreate_1() => $_ensure(0);
+  $2503.CampaignLifecycleGoal ensureCreate_1() => $_ensure(0);
 
   /// Optional. FieldMask that determines which resource fields are modified in
   /// an update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Response message for

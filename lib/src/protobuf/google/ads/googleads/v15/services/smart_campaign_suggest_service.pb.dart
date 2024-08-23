@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/ad_type_infos.pb.dart' as $2103;
-import '../common/criteria.pb.dart' as $1867;
-import '../resources/keyword_theme_constant.pb.dart' as $2478;
+import '../common/ad_type_infos.pb.dart' as $2104;
+import '../common/criteria.pb.dart' as $1868;
+import '../resources/keyword_theme_constant.pb.dart' as $2479;
 
 enum SuggestSmartCampaignBudgetOptionsRequest_SuggestionData {
   campaign, 
@@ -121,7 +121,7 @@ class SuggestSmartCampaignBudgetOptionsRequest extends $pb.GeneratedMessage {
 /// A list of locations.
 class SmartCampaignSuggestionInfo_LocationList extends $pb.GeneratedMessage {
   factory SmartCampaignSuggestionInfo_LocationList({
-    $core.Iterable<$1867.LocationInfo>? locations,
+    $core.Iterable<$1868.LocationInfo>? locations,
   }) {
     final $result = create();
     if (locations != null) {
@@ -134,7 +134,7 @@ class SmartCampaignSuggestionInfo_LocationList extends $pb.GeneratedMessage {
   factory SmartCampaignSuggestionInfo_LocationList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SmartCampaignSuggestionInfo.LocationList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..pc<$1867.LocationInfo>(1, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: $1867.LocationInfo.create)
+    ..pc<$1868.LocationInfo>(1, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: $1868.LocationInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -161,7 +161,7 @@ class SmartCampaignSuggestionInfo_LocationList extends $pb.GeneratedMessage {
 
   /// Required. Locations.
   @$pb.TagNumber(1)
-  $core.List<$1867.LocationInfo> get locations => $_getList(0);
+  $core.List<$1868.LocationInfo> get locations => $_getList(0);
 }
 
 /// A context that describes a business.
@@ -235,9 +235,9 @@ class SmartCampaignSuggestionInfo extends $pb.GeneratedMessage {
     $core.String? finalUrl,
     $core.String? languageCode,
     SmartCampaignSuggestionInfo_LocationList? locationList,
-    $1867.ProximityInfo? proximity,
-    $core.Iterable<$1867.AdScheduleInfo>? adSchedules,
-    $core.Iterable<$1867.KeywordThemeInfo>? keywordThemes,
+    $1868.ProximityInfo? proximity,
+    $core.Iterable<$1868.AdScheduleInfo>? adSchedules,
+    $core.Iterable<$1868.KeywordThemeInfo>? keywordThemes,
     SmartCampaignSuggestionInfo_BusinessContext? businessContext,
     $core.String? businessProfileLocation,
   }) {
@@ -288,9 +288,9 @@ class SmartCampaignSuggestionInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'finalUrl')
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
     ..aOM<SmartCampaignSuggestionInfo_LocationList>(4, _omitFieldNames ? '' : 'locationList', subBuilder: SmartCampaignSuggestionInfo_LocationList.create)
-    ..aOM<$1867.ProximityInfo>(5, _omitFieldNames ? '' : 'proximity', subBuilder: $1867.ProximityInfo.create)
-    ..pc<$1867.AdScheduleInfo>(6, _omitFieldNames ? '' : 'adSchedules', $pb.PbFieldType.PM, subBuilder: $1867.AdScheduleInfo.create)
-    ..pc<$1867.KeywordThemeInfo>(7, _omitFieldNames ? '' : 'keywordThemes', $pb.PbFieldType.PM, subBuilder: $1867.KeywordThemeInfo.create)
+    ..aOM<$1868.ProximityInfo>(5, _omitFieldNames ? '' : 'proximity', subBuilder: $1868.ProximityInfo.create)
+    ..pc<$1868.AdScheduleInfo>(6, _omitFieldNames ? '' : 'adSchedules', $pb.PbFieldType.PM, subBuilder: $1868.AdScheduleInfo.create)
+    ..pc<$1868.KeywordThemeInfo>(7, _omitFieldNames ? '' : 'keywordThemes', $pb.PbFieldType.PM, subBuilder: $1868.KeywordThemeInfo.create)
     ..aOM<SmartCampaignSuggestionInfo_BusinessContext>(8, _omitFieldNames ? '' : 'businessContext', subBuilder: SmartCampaignSuggestionInfo_BusinessContext.create)
     ..aOS(9, _omitFieldNames ? '' : 'businessProfileLocation')
     ..hasRequiredFields = false
@@ -358,24 +358,24 @@ class SmartCampaignSuggestionInfo extends $pb.GeneratedMessage {
 
   /// Optional. The targeting geo location by proximity.
   @$pb.TagNumber(5)
-  $1867.ProximityInfo get proximity => $_getN(3);
+  $1868.ProximityInfo get proximity => $_getN(3);
   @$pb.TagNumber(5)
-  set proximity($1867.ProximityInfo v) { setField(5, v); }
+  set proximity($1868.ProximityInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasProximity() => $_has(3);
   @$pb.TagNumber(5)
   void clearProximity() => clearField(5);
   @$pb.TagNumber(5)
-  $1867.ProximityInfo ensureProximity() => $_ensure(3);
+  $1868.ProximityInfo ensureProximity() => $_ensure(3);
 
   /// Optional. The business ad schedule.
   @$pb.TagNumber(6)
-  $core.List<$1867.AdScheduleInfo> get adSchedules => $_getList(4);
+  $core.List<$1868.AdScheduleInfo> get adSchedules => $_getList(4);
 
   /// Optional. Smart campaign keyword themes. This field may greatly improve
   /// suggestion accuracy and we recommend always setting it if possible.
   @$pb.TagNumber(7)
-  $core.List<$1867.KeywordThemeInfo> get keywordThemes => $_getList(5);
+  $core.List<$1868.KeywordThemeInfo> get keywordThemes => $_getList(5);
 
   /// Optional. Context describing the business to advertise.
   @$pb.TagNumber(8)
@@ -714,7 +714,7 @@ class SuggestSmartCampaignAdRequest extends $pb.GeneratedMessage {
 /// [SmartCampaignSuggestService.SuggestSmartCampaignAd][google.ads.googleads.v15.services.SmartCampaignSuggestService.SuggestSmartCampaignAd].
 class SuggestSmartCampaignAdResponse extends $pb.GeneratedMessage {
   factory SuggestSmartCampaignAdResponse({
-    $2103.SmartCampaignAdInfo? adInfo,
+    $2104.SmartCampaignAdInfo? adInfo,
   }) {
     final $result = create();
     if (adInfo != null) {
@@ -727,7 +727,7 @@ class SuggestSmartCampaignAdResponse extends $pb.GeneratedMessage {
   factory SuggestSmartCampaignAdResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestSmartCampaignAdResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..aOM<$2103.SmartCampaignAdInfo>(1, _omitFieldNames ? '' : 'adInfo', subBuilder: $2103.SmartCampaignAdInfo.create)
+    ..aOM<$2104.SmartCampaignAdInfo>(1, _omitFieldNames ? '' : 'adInfo', subBuilder: $2104.SmartCampaignAdInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -755,15 +755,15 @@ class SuggestSmartCampaignAdResponse extends $pb.GeneratedMessage {
   /// Optional. Ad info includes 3 creative headlines and 2 creative
   /// descriptions.
   @$pb.TagNumber(1)
-  $2103.SmartCampaignAdInfo get adInfo => $_getN(0);
+  $2104.SmartCampaignAdInfo get adInfo => $_getN(0);
   @$pb.TagNumber(1)
-  set adInfo($2103.SmartCampaignAdInfo v) { setField(1, v); }
+  set adInfo($2104.SmartCampaignAdInfo v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAdInfo() => $_has(0);
   @$pb.TagNumber(1)
   void clearAdInfo() => clearField(1);
   @$pb.TagNumber(1)
-  $2103.SmartCampaignAdInfo ensureAdInfo() => $_ensure(0);
+  $2104.SmartCampaignAdInfo ensureAdInfo() => $_ensure(0);
 }
 
 /// Request message for
@@ -854,7 +854,7 @@ enum SuggestKeywordThemesResponse_KeywordTheme_KeywordTheme {
 /// A Smart campaign keyword theme suggestion.
 class SuggestKeywordThemesResponse_KeywordTheme extends $pb.GeneratedMessage {
   factory SuggestKeywordThemesResponse_KeywordTheme({
-    $2478.KeywordThemeConstant? keywordThemeConstant,
+    $2479.KeywordThemeConstant? keywordThemeConstant,
     $core.String? freeFormKeywordTheme,
   }) {
     final $result = create();
@@ -877,7 +877,7 @@ class SuggestKeywordThemesResponse_KeywordTheme extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SuggestKeywordThemesResponse.KeywordTheme', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$2478.KeywordThemeConstant>(1, _omitFieldNames ? '' : 'keywordThemeConstant', subBuilder: $2478.KeywordThemeConstant.create)
+    ..aOM<$2479.KeywordThemeConstant>(1, _omitFieldNames ? '' : 'keywordThemeConstant', subBuilder: $2479.KeywordThemeConstant.create)
     ..aOS(2, _omitFieldNames ? '' : 'freeFormKeywordTheme')
     ..hasRequiredFields = false
   ;
@@ -908,15 +908,15 @@ class SuggestKeywordThemesResponse_KeywordTheme extends $pb.GeneratedMessage {
 
   /// A Smart campaign keyword theme constant.
   @$pb.TagNumber(1)
-  $2478.KeywordThemeConstant get keywordThemeConstant => $_getN(0);
+  $2479.KeywordThemeConstant get keywordThemeConstant => $_getN(0);
   @$pb.TagNumber(1)
-  set keywordThemeConstant($2478.KeywordThemeConstant v) { setField(1, v); }
+  set keywordThemeConstant($2479.KeywordThemeConstant v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasKeywordThemeConstant() => $_has(0);
   @$pb.TagNumber(1)
   void clearKeywordThemeConstant() => clearField(1);
   @$pb.TagNumber(1)
-  $2478.KeywordThemeConstant ensureKeywordThemeConstant() => $_ensure(0);
+  $2479.KeywordThemeConstant ensureKeywordThemeConstant() => $_ensure(0);
 
   /// A free-form text keyword theme.
   @$pb.TagNumber(2)

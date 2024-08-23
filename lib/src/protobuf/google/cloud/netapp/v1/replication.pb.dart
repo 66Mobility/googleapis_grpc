@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'replication.pbenum.dart';
 
 export 'replication.pbenum.dart';
@@ -25,12 +25,12 @@ export 'replication.pbenum.dart';
 class TransferStats extends $pb.GeneratedMessage {
   factory TransferStats({
     $fixnum.Int64? transferBytes,
-    $1737.Duration? totalTransferDuration,
+    $1738.Duration? totalTransferDuration,
     $fixnum.Int64? lastTransferBytes,
-    $1737.Duration? lastTransferDuration,
-    $1737.Duration? lagDuration,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? lastTransferEndTime,
+    $1738.Duration? lastTransferDuration,
+    $1738.Duration? lagDuration,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? lastTransferEndTime,
     $core.String? lastTransferError,
   }) {
     final $result = create();
@@ -66,12 +66,12 @@ class TransferStats extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'transferBytes')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'totalTransferDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'totalTransferDuration', subBuilder: $1738.Duration.create)
     ..aInt64(3, _omitFieldNames ? '' : 'lastTransferBytes')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'lastTransferDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'lagDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'lastTransferEndTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'lastTransferDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'lagDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'lastTransferEndTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'lastTransferError')
     ..hasRequiredFields = false
   ;
@@ -110,15 +110,15 @@ class TransferStats extends $pb.GeneratedMessage {
   /// Cumulative time taken across all transfers for the replication
   /// relationship.
   @$pb.TagNumber(2)
-  $1737.Duration get totalTransferDuration => $_getN(1);
+  $1738.Duration get totalTransferDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set totalTransferDuration($1737.Duration v) { setField(2, v); }
+  set totalTransferDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTotalTransferDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearTotalTransferDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTotalTransferDuration() => $_ensure(1);
+  $1738.Duration ensureTotalTransferDuration() => $_ensure(1);
 
   /// Last transfer size in bytes.
   @$pb.TagNumber(3)
@@ -132,52 +132,52 @@ class TransferStats extends $pb.GeneratedMessage {
 
   /// Time taken during last transfer.
   @$pb.TagNumber(4)
-  $1737.Duration get lastTransferDuration => $_getN(3);
+  $1738.Duration get lastTransferDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set lastTransferDuration($1737.Duration v) { setField(4, v); }
+  set lastTransferDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastTransferDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastTransferDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureLastTransferDuration() => $_ensure(3);
+  $1738.Duration ensureLastTransferDuration() => $_ensure(3);
 
   /// Lag duration indicates the duration by which Destination region volume
   /// content lags behind the primary region volume content.
   @$pb.TagNumber(5)
-  $1737.Duration get lagDuration => $_getN(4);
+  $1738.Duration get lagDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set lagDuration($1737.Duration v) { setField(5, v); }
+  set lagDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLagDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearLagDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureLagDuration() => $_ensure(4);
+  $1738.Duration ensureLagDuration() => $_ensure(4);
 
   /// Time when progress was updated last.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Time when last transfer completed.
   @$pb.TagNumber(7)
-  $1775.Timestamp get lastTransferEndTime => $_getN(6);
+  $1776.Timestamp get lastTransferEndTime => $_getN(6);
   @$pb.TagNumber(7)
-  set lastTransferEndTime($1775.Timestamp v) { setField(7, v); }
+  set lastTransferEndTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLastTransferEndTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearLastTransferEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureLastTransferEndTime() => $_ensure(6);
+  $1776.Timestamp ensureLastTransferEndTime() => $_ensure(6);
 
   /// A message describing the cause of the last transfer failure.
   @$pb.TagNumber(8)
@@ -202,7 +202,7 @@ class Replication extends $pb.GeneratedMessage {
     Replication_ReplicationSchedule? replicationSchedule,
     Replication_MirrorState? mirrorState,
     $core.bool? healthy,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? destinationVolume,
     TransferStats? transferStats,
     $core.Map<$core.String, $core.String>? labels,
@@ -267,7 +267,7 @@ class Replication extends $pb.GeneratedMessage {
     ..e<Replication_ReplicationSchedule>(5, _omitFieldNames ? '' : 'replicationSchedule', $pb.PbFieldType.OE, defaultOrMaker: Replication_ReplicationSchedule.REPLICATION_SCHEDULE_UNSPECIFIED, valueOf: Replication_ReplicationSchedule.valueOf, enumValues: Replication_ReplicationSchedule.values)
     ..e<Replication_MirrorState>(6, _omitFieldNames ? '' : 'mirrorState', $pb.PbFieldType.OE, defaultOrMaker: Replication_MirrorState.MIRROR_STATE_UNSPECIFIED, valueOf: Replication_MirrorState.valueOf, enumValues: Replication_MirrorState.values)
     ..aOB(8, _omitFieldNames ? '' : 'healthy')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'destinationVolume')
     ..aOM<TransferStats>(11, _omitFieldNames ? '' : 'transferStats', subBuilder: TransferStats.create)
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'labels', entryClassName: 'Replication.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.netapp.v1'))
@@ -376,15 +376,15 @@ class Replication extends $pb.GeneratedMessage {
 
   /// Output only. Replication create time.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Full name of destination volume resource.
   /// Example : "projects/{project}/locations/{location}/volumes/{volume_id}"
@@ -932,7 +932,7 @@ class DeleteReplicationRequest extends $pb.GeneratedMessage {
 /// UpdateReplicationRequest updates description and/or labels for a replication.
 class UpdateReplicationRequest extends $pb.GeneratedMessage {
   factory UpdateReplicationRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Replication? replication,
   }) {
     final $result = create();
@@ -949,7 +949,7 @@ class UpdateReplicationRequest extends $pb.GeneratedMessage {
   factory UpdateReplicationRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateReplicationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Replication>(2, _omitFieldNames ? '' : 'replication', subBuilder: Replication.create)
     ..hasRequiredFields = false
   ;
@@ -978,15 +978,15 @@ class UpdateReplicationRequest extends $pb.GeneratedMessage {
   /// Required. Mask of fields to update.  At least one path must be supplied in
   /// this field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. A replication resource
   @$pb.TagNumber(2)

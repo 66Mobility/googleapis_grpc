@@ -14,31 +14,31 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/ad_customizer_placeholder_field.pbenum.dart' as $3724;
-import '../enums/affiliate_location_placeholder_field.pbenum.dart' as $3718;
-import '../enums/app_placeholder_field.pbenum.dart' as $3716;
-import '../enums/call_placeholder_field.pbenum.dart' as $3715;
-import '../enums/callout_placeholder_field.pbenum.dart' as $3719;
-import '../enums/custom_placeholder_field.pbenum.dart' as $3729;
-import '../enums/dsa_page_feed_criterion_field.pbenum.dart' as $3725;
-import '../enums/education_placeholder_field.pbenum.dart' as $3727;
-import '../enums/feed_mapping_criterion_type.pbenum.dart' as $3712;
-import '../enums/feed_mapping_status.pbenum.dart' as $3713;
-import '../enums/flight_placeholder_field.pbenum.dart' as $3728;
-import '../enums/hotel_placeholder_field.pbenum.dart' as $3730;
-import '../enums/image_placeholder_field.pbenum.dart' as $3735;
-import '../enums/job_placeholder_field.pbenum.dart' as $3734;
-import '../enums/local_placeholder_field.pbenum.dart' as $3733;
-import '../enums/location_extension_targeting_criterion_field.pbenum.dart' as $3726;
-import '../enums/location_placeholder_field.pbenum.dart' as $3717;
-import '../enums/message_placeholder_field.pbenum.dart' as $3721;
-import '../enums/placeholder_type.pbenum.dart' as $3329;
-import '../enums/price_placeholder_field.pbenum.dart' as $3722;
-import '../enums/promotion_placeholder_field.pbenum.dart' as $3723;
-import '../enums/real_estate_placeholder_field.pbenum.dart' as $3731;
-import '../enums/sitelink_placeholder_field.pbenum.dart' as $3714;
-import '../enums/structured_snippet_placeholder_field.pbenum.dart' as $3720;
-import '../enums/travel_placeholder_field.pbenum.dart' as $3732;
+import '../enums/ad_customizer_placeholder_field.pbenum.dart' as $3725;
+import '../enums/affiliate_location_placeholder_field.pbenum.dart' as $3719;
+import '../enums/app_placeholder_field.pbenum.dart' as $3717;
+import '../enums/call_placeholder_field.pbenum.dart' as $3716;
+import '../enums/callout_placeholder_field.pbenum.dart' as $3720;
+import '../enums/custom_placeholder_field.pbenum.dart' as $3730;
+import '../enums/dsa_page_feed_criterion_field.pbenum.dart' as $3726;
+import '../enums/education_placeholder_field.pbenum.dart' as $3728;
+import '../enums/feed_mapping_criterion_type.pbenum.dart' as $3713;
+import '../enums/feed_mapping_status.pbenum.dart' as $3714;
+import '../enums/flight_placeholder_field.pbenum.dart' as $3729;
+import '../enums/hotel_placeholder_field.pbenum.dart' as $3731;
+import '../enums/image_placeholder_field.pbenum.dart' as $3736;
+import '../enums/job_placeholder_field.pbenum.dart' as $3735;
+import '../enums/local_placeholder_field.pbenum.dart' as $3734;
+import '../enums/location_extension_targeting_criterion_field.pbenum.dart' as $3727;
+import '../enums/location_placeholder_field.pbenum.dart' as $3718;
+import '../enums/message_placeholder_field.pbenum.dart' as $3722;
+import '../enums/placeholder_type.pbenum.dart' as $3330;
+import '../enums/price_placeholder_field.pbenum.dart' as $3723;
+import '../enums/promotion_placeholder_field.pbenum.dart' as $3724;
+import '../enums/real_estate_placeholder_field.pbenum.dart' as $3732;
+import '../enums/sitelink_placeholder_field.pbenum.dart' as $3715;
+import '../enums/structured_snippet_placeholder_field.pbenum.dart' as $3721;
+import '../enums/travel_placeholder_field.pbenum.dart' as $3733;
 
 enum FeedMapping_Target {
   placeholderType, 
@@ -50,10 +50,10 @@ enum FeedMapping_Target {
 class FeedMapping extends $pb.GeneratedMessage {
   factory FeedMapping({
     $core.String? resourceName,
-    $3329.PlaceholderTypeEnum_PlaceholderType? placeholderType,
-    $3712.FeedMappingCriterionTypeEnum_FeedMappingCriterionType? criterionType,
+    $3330.PlaceholderTypeEnum_PlaceholderType? placeholderType,
+    $3713.FeedMappingCriterionTypeEnum_FeedMappingCriterionType? criterionType,
     $core.Iterable<AttributeFieldMapping>? attributeFieldMappings,
-    $3713.FeedMappingStatusEnum_FeedMappingStatus? status,
+    $3714.FeedMappingStatusEnum_FeedMappingStatus? status,
     $core.String? feed,
   }) {
     final $result = create();
@@ -89,10 +89,10 @@ class FeedMapping extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedMapping', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3329.PlaceholderTypeEnum_PlaceholderType>(3, _omitFieldNames ? '' : 'placeholderType', $pb.PbFieldType.OE, defaultOrMaker: $3329.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $3329.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $3329.PlaceholderTypeEnum_PlaceholderType.values)
-    ..e<$3712.FeedMappingCriterionTypeEnum_FeedMappingCriterionType>(4, _omitFieldNames ? '' : 'criterionType', $pb.PbFieldType.OE, defaultOrMaker: $3712.FeedMappingCriterionTypeEnum_FeedMappingCriterionType.UNSPECIFIED, valueOf: $3712.FeedMappingCriterionTypeEnum_FeedMappingCriterionType.valueOf, enumValues: $3712.FeedMappingCriterionTypeEnum_FeedMappingCriterionType.values)
+    ..e<$3330.PlaceholderTypeEnum_PlaceholderType>(3, _omitFieldNames ? '' : 'placeholderType', $pb.PbFieldType.OE, defaultOrMaker: $3330.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $3330.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $3330.PlaceholderTypeEnum_PlaceholderType.values)
+    ..e<$3713.FeedMappingCriterionTypeEnum_FeedMappingCriterionType>(4, _omitFieldNames ? '' : 'criterionType', $pb.PbFieldType.OE, defaultOrMaker: $3713.FeedMappingCriterionTypeEnum_FeedMappingCriterionType.UNSPECIFIED, valueOf: $3713.FeedMappingCriterionTypeEnum_FeedMappingCriterionType.valueOf, enumValues: $3713.FeedMappingCriterionTypeEnum_FeedMappingCriterionType.values)
     ..pc<AttributeFieldMapping>(5, _omitFieldNames ? '' : 'attributeFieldMappings', $pb.PbFieldType.PM, subBuilder: AttributeFieldMapping.create)
-    ..e<$3713.FeedMappingStatusEnum_FeedMappingStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3713.FeedMappingStatusEnum_FeedMappingStatus.UNSPECIFIED, valueOf: $3713.FeedMappingStatusEnum_FeedMappingStatus.valueOf, enumValues: $3713.FeedMappingStatusEnum_FeedMappingStatus.values)
+    ..e<$3714.FeedMappingStatusEnum_FeedMappingStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3714.FeedMappingStatusEnum_FeedMappingStatus.UNSPECIFIED, valueOf: $3714.FeedMappingStatusEnum_FeedMappingStatus.valueOf, enumValues: $3714.FeedMappingStatusEnum_FeedMappingStatus.values)
     ..aOS(7, _omitFieldNames ? '' : 'feed')
     ..hasRequiredFields = false
   ;
@@ -137,9 +137,9 @@ class FeedMapping extends $pb.GeneratedMessage {
   /// Immutable. The placeholder type of this mapping (for example, if the
   /// mapping maps feed attributes to placeholder fields).
   @$pb.TagNumber(3)
-  $3329.PlaceholderTypeEnum_PlaceholderType get placeholderType => $_getN(1);
+  $3330.PlaceholderTypeEnum_PlaceholderType get placeholderType => $_getN(1);
   @$pb.TagNumber(3)
-  set placeholderType($3329.PlaceholderTypeEnum_PlaceholderType v) { setField(3, v); }
+  set placeholderType($3330.PlaceholderTypeEnum_PlaceholderType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPlaceholderType() => $_has(1);
   @$pb.TagNumber(3)
@@ -148,9 +148,9 @@ class FeedMapping extends $pb.GeneratedMessage {
   /// Immutable. The criterion type of this mapping (for example, if the
   /// mapping maps feed attributes to criterion fields).
   @$pb.TagNumber(4)
-  $3712.FeedMappingCriterionTypeEnum_FeedMappingCriterionType get criterionType => $_getN(2);
+  $3713.FeedMappingCriterionTypeEnum_FeedMappingCriterionType get criterionType => $_getN(2);
   @$pb.TagNumber(4)
-  set criterionType($3712.FeedMappingCriterionTypeEnum_FeedMappingCriterionType v) { setField(4, v); }
+  set criterionType($3713.FeedMappingCriterionTypeEnum_FeedMappingCriterionType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCriterionType() => $_has(2);
   @$pb.TagNumber(4)
@@ -167,9 +167,9 @@ class FeedMapping extends $pb.GeneratedMessage {
   /// Output only. Status of the feed mapping.
   /// This field is read-only.
   @$pb.TagNumber(6)
-  $3713.FeedMappingStatusEnum_FeedMappingStatus get status => $_getN(4);
+  $3714.FeedMappingStatusEnum_FeedMappingStatus get status => $_getN(4);
   @$pb.TagNumber(6)
-  set status($3713.FeedMappingStatusEnum_FeedMappingStatus v) { setField(6, v); }
+  set status($3714.FeedMappingStatusEnum_FeedMappingStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(6)
@@ -215,30 +215,30 @@ enum AttributeFieldMapping_Field {
 /// Maps from feed attribute id to a placeholder or criterion field id.
 class AttributeFieldMapping extends $pb.GeneratedMessage {
   factory AttributeFieldMapping({
-    $3714.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField? sitelinkField,
-    $3715.CallPlaceholderFieldEnum_CallPlaceholderField? callField,
-    $3716.AppPlaceholderFieldEnum_AppPlaceholderField? appField,
-    $3717.LocationPlaceholderFieldEnum_LocationPlaceholderField? locationField,
-    $3718.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField? affiliateLocationField,
-    $3719.CalloutPlaceholderFieldEnum_CalloutPlaceholderField? calloutField,
-    $3720.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField? structuredSnippetField,
-    $3721.MessagePlaceholderFieldEnum_MessagePlaceholderField? messageField,
-    $3722.PricePlaceholderFieldEnum_PricePlaceholderField? priceField,
-    $3723.PromotionPlaceholderFieldEnum_PromotionPlaceholderField? promotionField,
-    $3724.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField? adCustomizerField,
-    $3725.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField? dsaPageFeedField,
-    $3726.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField? locationExtensionTargetingField,
-    $3727.EducationPlaceholderFieldEnum_EducationPlaceholderField? educationField,
-    $3728.FlightPlaceholderFieldEnum_FlightPlaceholderField? flightField,
-    $3729.CustomPlaceholderFieldEnum_CustomPlaceholderField? customField,
-    $3730.HotelPlaceholderFieldEnum_HotelPlaceholderField? hotelField,
-    $3731.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField? realEstateField,
-    $3732.TravelPlaceholderFieldEnum_TravelPlaceholderField? travelField,
-    $3733.LocalPlaceholderFieldEnum_LocalPlaceholderField? localField,
-    $3734.JobPlaceholderFieldEnum_JobPlaceholderField? jobField,
+    $3715.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField? sitelinkField,
+    $3716.CallPlaceholderFieldEnum_CallPlaceholderField? callField,
+    $3717.AppPlaceholderFieldEnum_AppPlaceholderField? appField,
+    $3718.LocationPlaceholderFieldEnum_LocationPlaceholderField? locationField,
+    $3719.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField? affiliateLocationField,
+    $3720.CalloutPlaceholderFieldEnum_CalloutPlaceholderField? calloutField,
+    $3721.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField? structuredSnippetField,
+    $3722.MessagePlaceholderFieldEnum_MessagePlaceholderField? messageField,
+    $3723.PricePlaceholderFieldEnum_PricePlaceholderField? priceField,
+    $3724.PromotionPlaceholderFieldEnum_PromotionPlaceholderField? promotionField,
+    $3725.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField? adCustomizerField,
+    $3726.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField? dsaPageFeedField,
+    $3727.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField? locationExtensionTargetingField,
+    $3728.EducationPlaceholderFieldEnum_EducationPlaceholderField? educationField,
+    $3729.FlightPlaceholderFieldEnum_FlightPlaceholderField? flightField,
+    $3730.CustomPlaceholderFieldEnum_CustomPlaceholderField? customField,
+    $3731.HotelPlaceholderFieldEnum_HotelPlaceholderField? hotelField,
+    $3732.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField? realEstateField,
+    $3733.TravelPlaceholderFieldEnum_TravelPlaceholderField? travelField,
+    $3734.LocalPlaceholderFieldEnum_LocalPlaceholderField? localField,
+    $3735.JobPlaceholderFieldEnum_JobPlaceholderField? jobField,
     $fixnum.Int64? feedAttributeId,
     $fixnum.Int64? fieldId,
-    $3735.ImagePlaceholderFieldEnum_ImagePlaceholderField? imageField,
+    $3736.ImagePlaceholderFieldEnum_ImagePlaceholderField? imageField,
   }) {
     final $result = create();
     if (sitelinkField != null) {
@@ -346,30 +346,30 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttributeFieldMapping', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 26])
-    ..e<$3714.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField>(3, _omitFieldNames ? '' : 'sitelinkField', $pb.PbFieldType.OE, defaultOrMaker: $3714.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField.UNSPECIFIED, valueOf: $3714.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField.valueOf, enumValues: $3714.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField.values)
-    ..e<$3715.CallPlaceholderFieldEnum_CallPlaceholderField>(4, _omitFieldNames ? '' : 'callField', $pb.PbFieldType.OE, defaultOrMaker: $3715.CallPlaceholderFieldEnum_CallPlaceholderField.UNSPECIFIED, valueOf: $3715.CallPlaceholderFieldEnum_CallPlaceholderField.valueOf, enumValues: $3715.CallPlaceholderFieldEnum_CallPlaceholderField.values)
-    ..e<$3716.AppPlaceholderFieldEnum_AppPlaceholderField>(5, _omitFieldNames ? '' : 'appField', $pb.PbFieldType.OE, defaultOrMaker: $3716.AppPlaceholderFieldEnum_AppPlaceholderField.UNSPECIFIED, valueOf: $3716.AppPlaceholderFieldEnum_AppPlaceholderField.valueOf, enumValues: $3716.AppPlaceholderFieldEnum_AppPlaceholderField.values)
-    ..e<$3717.LocationPlaceholderFieldEnum_LocationPlaceholderField>(6, _omitFieldNames ? '' : 'locationField', $pb.PbFieldType.OE, defaultOrMaker: $3717.LocationPlaceholderFieldEnum_LocationPlaceholderField.UNSPECIFIED, valueOf: $3717.LocationPlaceholderFieldEnum_LocationPlaceholderField.valueOf, enumValues: $3717.LocationPlaceholderFieldEnum_LocationPlaceholderField.values)
-    ..e<$3718.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField>(7, _omitFieldNames ? '' : 'affiliateLocationField', $pb.PbFieldType.OE, defaultOrMaker: $3718.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField.UNSPECIFIED, valueOf: $3718.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField.valueOf, enumValues: $3718.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField.values)
-    ..e<$3719.CalloutPlaceholderFieldEnum_CalloutPlaceholderField>(8, _omitFieldNames ? '' : 'calloutField', $pb.PbFieldType.OE, defaultOrMaker: $3719.CalloutPlaceholderFieldEnum_CalloutPlaceholderField.UNSPECIFIED, valueOf: $3719.CalloutPlaceholderFieldEnum_CalloutPlaceholderField.valueOf, enumValues: $3719.CalloutPlaceholderFieldEnum_CalloutPlaceholderField.values)
-    ..e<$3720.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField>(9, _omitFieldNames ? '' : 'structuredSnippetField', $pb.PbFieldType.OE, defaultOrMaker: $3720.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField.UNSPECIFIED, valueOf: $3720.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField.valueOf, enumValues: $3720.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField.values)
-    ..e<$3721.MessagePlaceholderFieldEnum_MessagePlaceholderField>(10, _omitFieldNames ? '' : 'messageField', $pb.PbFieldType.OE, defaultOrMaker: $3721.MessagePlaceholderFieldEnum_MessagePlaceholderField.UNSPECIFIED, valueOf: $3721.MessagePlaceholderFieldEnum_MessagePlaceholderField.valueOf, enumValues: $3721.MessagePlaceholderFieldEnum_MessagePlaceholderField.values)
-    ..e<$3722.PricePlaceholderFieldEnum_PricePlaceholderField>(11, _omitFieldNames ? '' : 'priceField', $pb.PbFieldType.OE, defaultOrMaker: $3722.PricePlaceholderFieldEnum_PricePlaceholderField.UNSPECIFIED, valueOf: $3722.PricePlaceholderFieldEnum_PricePlaceholderField.valueOf, enumValues: $3722.PricePlaceholderFieldEnum_PricePlaceholderField.values)
-    ..e<$3723.PromotionPlaceholderFieldEnum_PromotionPlaceholderField>(12, _omitFieldNames ? '' : 'promotionField', $pb.PbFieldType.OE, defaultOrMaker: $3723.PromotionPlaceholderFieldEnum_PromotionPlaceholderField.UNSPECIFIED, valueOf: $3723.PromotionPlaceholderFieldEnum_PromotionPlaceholderField.valueOf, enumValues: $3723.PromotionPlaceholderFieldEnum_PromotionPlaceholderField.values)
-    ..e<$3724.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField>(13, _omitFieldNames ? '' : 'adCustomizerField', $pb.PbFieldType.OE, defaultOrMaker: $3724.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField.UNSPECIFIED, valueOf: $3724.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField.valueOf, enumValues: $3724.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField.values)
-    ..e<$3725.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField>(14, _omitFieldNames ? '' : 'dsaPageFeedField', $pb.PbFieldType.OE, defaultOrMaker: $3725.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField.UNSPECIFIED, valueOf: $3725.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField.valueOf, enumValues: $3725.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField.values)
-    ..e<$3726.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField>(15, _omitFieldNames ? '' : 'locationExtensionTargetingField', $pb.PbFieldType.OE, defaultOrMaker: $3726.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField.UNSPECIFIED, valueOf: $3726.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField.valueOf, enumValues: $3726.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField.values)
-    ..e<$3727.EducationPlaceholderFieldEnum_EducationPlaceholderField>(16, _omitFieldNames ? '' : 'educationField', $pb.PbFieldType.OE, defaultOrMaker: $3727.EducationPlaceholderFieldEnum_EducationPlaceholderField.UNSPECIFIED, valueOf: $3727.EducationPlaceholderFieldEnum_EducationPlaceholderField.valueOf, enumValues: $3727.EducationPlaceholderFieldEnum_EducationPlaceholderField.values)
-    ..e<$3728.FlightPlaceholderFieldEnum_FlightPlaceholderField>(17, _omitFieldNames ? '' : 'flightField', $pb.PbFieldType.OE, defaultOrMaker: $3728.FlightPlaceholderFieldEnum_FlightPlaceholderField.UNSPECIFIED, valueOf: $3728.FlightPlaceholderFieldEnum_FlightPlaceholderField.valueOf, enumValues: $3728.FlightPlaceholderFieldEnum_FlightPlaceholderField.values)
-    ..e<$3729.CustomPlaceholderFieldEnum_CustomPlaceholderField>(18, _omitFieldNames ? '' : 'customField', $pb.PbFieldType.OE, defaultOrMaker: $3729.CustomPlaceholderFieldEnum_CustomPlaceholderField.UNSPECIFIED, valueOf: $3729.CustomPlaceholderFieldEnum_CustomPlaceholderField.valueOf, enumValues: $3729.CustomPlaceholderFieldEnum_CustomPlaceholderField.values)
-    ..e<$3730.HotelPlaceholderFieldEnum_HotelPlaceholderField>(19, _omitFieldNames ? '' : 'hotelField', $pb.PbFieldType.OE, defaultOrMaker: $3730.HotelPlaceholderFieldEnum_HotelPlaceholderField.UNSPECIFIED, valueOf: $3730.HotelPlaceholderFieldEnum_HotelPlaceholderField.valueOf, enumValues: $3730.HotelPlaceholderFieldEnum_HotelPlaceholderField.values)
-    ..e<$3731.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField>(20, _omitFieldNames ? '' : 'realEstateField', $pb.PbFieldType.OE, defaultOrMaker: $3731.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField.UNSPECIFIED, valueOf: $3731.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField.valueOf, enumValues: $3731.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField.values)
-    ..e<$3732.TravelPlaceholderFieldEnum_TravelPlaceholderField>(21, _omitFieldNames ? '' : 'travelField', $pb.PbFieldType.OE, defaultOrMaker: $3732.TravelPlaceholderFieldEnum_TravelPlaceholderField.UNSPECIFIED, valueOf: $3732.TravelPlaceholderFieldEnum_TravelPlaceholderField.valueOf, enumValues: $3732.TravelPlaceholderFieldEnum_TravelPlaceholderField.values)
-    ..e<$3733.LocalPlaceholderFieldEnum_LocalPlaceholderField>(22, _omitFieldNames ? '' : 'localField', $pb.PbFieldType.OE, defaultOrMaker: $3733.LocalPlaceholderFieldEnum_LocalPlaceholderField.UNSPECIFIED, valueOf: $3733.LocalPlaceholderFieldEnum_LocalPlaceholderField.valueOf, enumValues: $3733.LocalPlaceholderFieldEnum_LocalPlaceholderField.values)
-    ..e<$3734.JobPlaceholderFieldEnum_JobPlaceholderField>(23, _omitFieldNames ? '' : 'jobField', $pb.PbFieldType.OE, defaultOrMaker: $3734.JobPlaceholderFieldEnum_JobPlaceholderField.UNSPECIFIED, valueOf: $3734.JobPlaceholderFieldEnum_JobPlaceholderField.valueOf, enumValues: $3734.JobPlaceholderFieldEnum_JobPlaceholderField.values)
+    ..e<$3715.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField>(3, _omitFieldNames ? '' : 'sitelinkField', $pb.PbFieldType.OE, defaultOrMaker: $3715.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField.UNSPECIFIED, valueOf: $3715.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField.valueOf, enumValues: $3715.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField.values)
+    ..e<$3716.CallPlaceholderFieldEnum_CallPlaceholderField>(4, _omitFieldNames ? '' : 'callField', $pb.PbFieldType.OE, defaultOrMaker: $3716.CallPlaceholderFieldEnum_CallPlaceholderField.UNSPECIFIED, valueOf: $3716.CallPlaceholderFieldEnum_CallPlaceholderField.valueOf, enumValues: $3716.CallPlaceholderFieldEnum_CallPlaceholderField.values)
+    ..e<$3717.AppPlaceholderFieldEnum_AppPlaceholderField>(5, _omitFieldNames ? '' : 'appField', $pb.PbFieldType.OE, defaultOrMaker: $3717.AppPlaceholderFieldEnum_AppPlaceholderField.UNSPECIFIED, valueOf: $3717.AppPlaceholderFieldEnum_AppPlaceholderField.valueOf, enumValues: $3717.AppPlaceholderFieldEnum_AppPlaceholderField.values)
+    ..e<$3718.LocationPlaceholderFieldEnum_LocationPlaceholderField>(6, _omitFieldNames ? '' : 'locationField', $pb.PbFieldType.OE, defaultOrMaker: $3718.LocationPlaceholderFieldEnum_LocationPlaceholderField.UNSPECIFIED, valueOf: $3718.LocationPlaceholderFieldEnum_LocationPlaceholderField.valueOf, enumValues: $3718.LocationPlaceholderFieldEnum_LocationPlaceholderField.values)
+    ..e<$3719.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField>(7, _omitFieldNames ? '' : 'affiliateLocationField', $pb.PbFieldType.OE, defaultOrMaker: $3719.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField.UNSPECIFIED, valueOf: $3719.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField.valueOf, enumValues: $3719.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField.values)
+    ..e<$3720.CalloutPlaceholderFieldEnum_CalloutPlaceholderField>(8, _omitFieldNames ? '' : 'calloutField', $pb.PbFieldType.OE, defaultOrMaker: $3720.CalloutPlaceholderFieldEnum_CalloutPlaceholderField.UNSPECIFIED, valueOf: $3720.CalloutPlaceholderFieldEnum_CalloutPlaceholderField.valueOf, enumValues: $3720.CalloutPlaceholderFieldEnum_CalloutPlaceholderField.values)
+    ..e<$3721.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField>(9, _omitFieldNames ? '' : 'structuredSnippetField', $pb.PbFieldType.OE, defaultOrMaker: $3721.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField.UNSPECIFIED, valueOf: $3721.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField.valueOf, enumValues: $3721.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField.values)
+    ..e<$3722.MessagePlaceholderFieldEnum_MessagePlaceholderField>(10, _omitFieldNames ? '' : 'messageField', $pb.PbFieldType.OE, defaultOrMaker: $3722.MessagePlaceholderFieldEnum_MessagePlaceholderField.UNSPECIFIED, valueOf: $3722.MessagePlaceholderFieldEnum_MessagePlaceholderField.valueOf, enumValues: $3722.MessagePlaceholderFieldEnum_MessagePlaceholderField.values)
+    ..e<$3723.PricePlaceholderFieldEnum_PricePlaceholderField>(11, _omitFieldNames ? '' : 'priceField', $pb.PbFieldType.OE, defaultOrMaker: $3723.PricePlaceholderFieldEnum_PricePlaceholderField.UNSPECIFIED, valueOf: $3723.PricePlaceholderFieldEnum_PricePlaceholderField.valueOf, enumValues: $3723.PricePlaceholderFieldEnum_PricePlaceholderField.values)
+    ..e<$3724.PromotionPlaceholderFieldEnum_PromotionPlaceholderField>(12, _omitFieldNames ? '' : 'promotionField', $pb.PbFieldType.OE, defaultOrMaker: $3724.PromotionPlaceholderFieldEnum_PromotionPlaceholderField.UNSPECIFIED, valueOf: $3724.PromotionPlaceholderFieldEnum_PromotionPlaceholderField.valueOf, enumValues: $3724.PromotionPlaceholderFieldEnum_PromotionPlaceholderField.values)
+    ..e<$3725.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField>(13, _omitFieldNames ? '' : 'adCustomizerField', $pb.PbFieldType.OE, defaultOrMaker: $3725.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField.UNSPECIFIED, valueOf: $3725.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField.valueOf, enumValues: $3725.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField.values)
+    ..e<$3726.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField>(14, _omitFieldNames ? '' : 'dsaPageFeedField', $pb.PbFieldType.OE, defaultOrMaker: $3726.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField.UNSPECIFIED, valueOf: $3726.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField.valueOf, enumValues: $3726.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField.values)
+    ..e<$3727.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField>(15, _omitFieldNames ? '' : 'locationExtensionTargetingField', $pb.PbFieldType.OE, defaultOrMaker: $3727.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField.UNSPECIFIED, valueOf: $3727.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField.valueOf, enumValues: $3727.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField.values)
+    ..e<$3728.EducationPlaceholderFieldEnum_EducationPlaceholderField>(16, _omitFieldNames ? '' : 'educationField', $pb.PbFieldType.OE, defaultOrMaker: $3728.EducationPlaceholderFieldEnum_EducationPlaceholderField.UNSPECIFIED, valueOf: $3728.EducationPlaceholderFieldEnum_EducationPlaceholderField.valueOf, enumValues: $3728.EducationPlaceholderFieldEnum_EducationPlaceholderField.values)
+    ..e<$3729.FlightPlaceholderFieldEnum_FlightPlaceholderField>(17, _omitFieldNames ? '' : 'flightField', $pb.PbFieldType.OE, defaultOrMaker: $3729.FlightPlaceholderFieldEnum_FlightPlaceholderField.UNSPECIFIED, valueOf: $3729.FlightPlaceholderFieldEnum_FlightPlaceholderField.valueOf, enumValues: $3729.FlightPlaceholderFieldEnum_FlightPlaceholderField.values)
+    ..e<$3730.CustomPlaceholderFieldEnum_CustomPlaceholderField>(18, _omitFieldNames ? '' : 'customField', $pb.PbFieldType.OE, defaultOrMaker: $3730.CustomPlaceholderFieldEnum_CustomPlaceholderField.UNSPECIFIED, valueOf: $3730.CustomPlaceholderFieldEnum_CustomPlaceholderField.valueOf, enumValues: $3730.CustomPlaceholderFieldEnum_CustomPlaceholderField.values)
+    ..e<$3731.HotelPlaceholderFieldEnum_HotelPlaceholderField>(19, _omitFieldNames ? '' : 'hotelField', $pb.PbFieldType.OE, defaultOrMaker: $3731.HotelPlaceholderFieldEnum_HotelPlaceholderField.UNSPECIFIED, valueOf: $3731.HotelPlaceholderFieldEnum_HotelPlaceholderField.valueOf, enumValues: $3731.HotelPlaceholderFieldEnum_HotelPlaceholderField.values)
+    ..e<$3732.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField>(20, _omitFieldNames ? '' : 'realEstateField', $pb.PbFieldType.OE, defaultOrMaker: $3732.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField.UNSPECIFIED, valueOf: $3732.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField.valueOf, enumValues: $3732.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField.values)
+    ..e<$3733.TravelPlaceholderFieldEnum_TravelPlaceholderField>(21, _omitFieldNames ? '' : 'travelField', $pb.PbFieldType.OE, defaultOrMaker: $3733.TravelPlaceholderFieldEnum_TravelPlaceholderField.UNSPECIFIED, valueOf: $3733.TravelPlaceholderFieldEnum_TravelPlaceholderField.valueOf, enumValues: $3733.TravelPlaceholderFieldEnum_TravelPlaceholderField.values)
+    ..e<$3734.LocalPlaceholderFieldEnum_LocalPlaceholderField>(22, _omitFieldNames ? '' : 'localField', $pb.PbFieldType.OE, defaultOrMaker: $3734.LocalPlaceholderFieldEnum_LocalPlaceholderField.UNSPECIFIED, valueOf: $3734.LocalPlaceholderFieldEnum_LocalPlaceholderField.valueOf, enumValues: $3734.LocalPlaceholderFieldEnum_LocalPlaceholderField.values)
+    ..e<$3735.JobPlaceholderFieldEnum_JobPlaceholderField>(23, _omitFieldNames ? '' : 'jobField', $pb.PbFieldType.OE, defaultOrMaker: $3735.JobPlaceholderFieldEnum_JobPlaceholderField.UNSPECIFIED, valueOf: $3735.JobPlaceholderFieldEnum_JobPlaceholderField.valueOf, enumValues: $3735.JobPlaceholderFieldEnum_JobPlaceholderField.values)
     ..aInt64(24, _omitFieldNames ? '' : 'feedAttributeId')
     ..aInt64(25, _omitFieldNames ? '' : 'fieldId')
-    ..e<$3735.ImagePlaceholderFieldEnum_ImagePlaceholderField>(26, _omitFieldNames ? '' : 'imageField', $pb.PbFieldType.OE, defaultOrMaker: $3735.ImagePlaceholderFieldEnum_ImagePlaceholderField.UNSPECIFIED, valueOf: $3735.ImagePlaceholderFieldEnum_ImagePlaceholderField.valueOf, enumValues: $3735.ImagePlaceholderFieldEnum_ImagePlaceholderField.values)
+    ..e<$3736.ImagePlaceholderFieldEnum_ImagePlaceholderField>(26, _omitFieldNames ? '' : 'imageField', $pb.PbFieldType.OE, defaultOrMaker: $3736.ImagePlaceholderFieldEnum_ImagePlaceholderField.UNSPECIFIED, valueOf: $3736.ImagePlaceholderFieldEnum_ImagePlaceholderField.valueOf, enumValues: $3736.ImagePlaceholderFieldEnum_ImagePlaceholderField.values)
     ..hasRequiredFields = false
   ;
 
@@ -399,9 +399,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Sitelink Placeholder Fields.
   @$pb.TagNumber(3)
-  $3714.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField get sitelinkField => $_getN(0);
+  $3715.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField get sitelinkField => $_getN(0);
   @$pb.TagNumber(3)
-  set sitelinkField($3714.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField v) { setField(3, v); }
+  set sitelinkField($3715.SitelinkPlaceholderFieldEnum_SitelinkPlaceholderField v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSitelinkField() => $_has(0);
   @$pb.TagNumber(3)
@@ -409,9 +409,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Call Placeholder Fields.
   @$pb.TagNumber(4)
-  $3715.CallPlaceholderFieldEnum_CallPlaceholderField get callField => $_getN(1);
+  $3716.CallPlaceholderFieldEnum_CallPlaceholderField get callField => $_getN(1);
   @$pb.TagNumber(4)
-  set callField($3715.CallPlaceholderFieldEnum_CallPlaceholderField v) { setField(4, v); }
+  set callField($3716.CallPlaceholderFieldEnum_CallPlaceholderField v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCallField() => $_has(1);
   @$pb.TagNumber(4)
@@ -419,9 +419,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. App Placeholder Fields.
   @$pb.TagNumber(5)
-  $3716.AppPlaceholderFieldEnum_AppPlaceholderField get appField => $_getN(2);
+  $3717.AppPlaceholderFieldEnum_AppPlaceholderField get appField => $_getN(2);
   @$pb.TagNumber(5)
-  set appField($3716.AppPlaceholderFieldEnum_AppPlaceholderField v) { setField(5, v); }
+  set appField($3717.AppPlaceholderFieldEnum_AppPlaceholderField v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAppField() => $_has(2);
   @$pb.TagNumber(5)
@@ -429,9 +429,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Output only. Location Placeholder Fields. This field is read-only.
   @$pb.TagNumber(6)
-  $3717.LocationPlaceholderFieldEnum_LocationPlaceholderField get locationField => $_getN(3);
+  $3718.LocationPlaceholderFieldEnum_LocationPlaceholderField get locationField => $_getN(3);
   @$pb.TagNumber(6)
-  set locationField($3717.LocationPlaceholderFieldEnum_LocationPlaceholderField v) { setField(6, v); }
+  set locationField($3718.LocationPlaceholderFieldEnum_LocationPlaceholderField v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLocationField() => $_has(3);
   @$pb.TagNumber(6)
@@ -440,9 +440,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
   /// Output only. Affiliate Location Placeholder Fields. This field is
   /// read-only.
   @$pb.TagNumber(7)
-  $3718.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField get affiliateLocationField => $_getN(4);
+  $3719.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField get affiliateLocationField => $_getN(4);
   @$pb.TagNumber(7)
-  set affiliateLocationField($3718.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField v) { setField(7, v); }
+  set affiliateLocationField($3719.AffiliateLocationPlaceholderFieldEnum_AffiliateLocationPlaceholderField v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAffiliateLocationField() => $_has(4);
   @$pb.TagNumber(7)
@@ -450,9 +450,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Callout Placeholder Fields.
   @$pb.TagNumber(8)
-  $3719.CalloutPlaceholderFieldEnum_CalloutPlaceholderField get calloutField => $_getN(5);
+  $3720.CalloutPlaceholderFieldEnum_CalloutPlaceholderField get calloutField => $_getN(5);
   @$pb.TagNumber(8)
-  set calloutField($3719.CalloutPlaceholderFieldEnum_CalloutPlaceholderField v) { setField(8, v); }
+  set calloutField($3720.CalloutPlaceholderFieldEnum_CalloutPlaceholderField v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCalloutField() => $_has(5);
   @$pb.TagNumber(8)
@@ -460,9 +460,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Structured Snippet Placeholder Fields.
   @$pb.TagNumber(9)
-  $3720.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField get structuredSnippetField => $_getN(6);
+  $3721.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField get structuredSnippetField => $_getN(6);
   @$pb.TagNumber(9)
-  set structuredSnippetField($3720.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField v) { setField(9, v); }
+  set structuredSnippetField($3721.StructuredSnippetPlaceholderFieldEnum_StructuredSnippetPlaceholderField v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasStructuredSnippetField() => $_has(6);
   @$pb.TagNumber(9)
@@ -470,9 +470,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Message Placeholder Fields.
   @$pb.TagNumber(10)
-  $3721.MessagePlaceholderFieldEnum_MessagePlaceholderField get messageField => $_getN(7);
+  $3722.MessagePlaceholderFieldEnum_MessagePlaceholderField get messageField => $_getN(7);
   @$pb.TagNumber(10)
-  set messageField($3721.MessagePlaceholderFieldEnum_MessagePlaceholderField v) { setField(10, v); }
+  set messageField($3722.MessagePlaceholderFieldEnum_MessagePlaceholderField v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMessageField() => $_has(7);
   @$pb.TagNumber(10)
@@ -480,9 +480,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Price Placeholder Fields.
   @$pb.TagNumber(11)
-  $3722.PricePlaceholderFieldEnum_PricePlaceholderField get priceField => $_getN(8);
+  $3723.PricePlaceholderFieldEnum_PricePlaceholderField get priceField => $_getN(8);
   @$pb.TagNumber(11)
-  set priceField($3722.PricePlaceholderFieldEnum_PricePlaceholderField v) { setField(11, v); }
+  set priceField($3723.PricePlaceholderFieldEnum_PricePlaceholderField v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasPriceField() => $_has(8);
   @$pb.TagNumber(11)
@@ -490,9 +490,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Promotion Placeholder Fields.
   @$pb.TagNumber(12)
-  $3723.PromotionPlaceholderFieldEnum_PromotionPlaceholderField get promotionField => $_getN(9);
+  $3724.PromotionPlaceholderFieldEnum_PromotionPlaceholderField get promotionField => $_getN(9);
   @$pb.TagNumber(12)
-  set promotionField($3723.PromotionPlaceholderFieldEnum_PromotionPlaceholderField v) { setField(12, v); }
+  set promotionField($3724.PromotionPlaceholderFieldEnum_PromotionPlaceholderField v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasPromotionField() => $_has(9);
   @$pb.TagNumber(12)
@@ -500,9 +500,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Ad Customizer Placeholder Fields
   @$pb.TagNumber(13)
-  $3724.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField get adCustomizerField => $_getN(10);
+  $3725.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField get adCustomizerField => $_getN(10);
   @$pb.TagNumber(13)
-  set adCustomizerField($3724.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField v) { setField(13, v); }
+  set adCustomizerField($3725.AdCustomizerPlaceholderFieldEnum_AdCustomizerPlaceholderField v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasAdCustomizerField() => $_has(10);
   @$pb.TagNumber(13)
@@ -510,9 +510,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Dynamic Search Ad Page Feed Fields.
   @$pb.TagNumber(14)
-  $3725.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField get dsaPageFeedField => $_getN(11);
+  $3726.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField get dsaPageFeedField => $_getN(11);
   @$pb.TagNumber(14)
-  set dsaPageFeedField($3725.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField v) { setField(14, v); }
+  set dsaPageFeedField($3726.DsaPageFeedCriterionFieldEnum_DsaPageFeedCriterionField v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasDsaPageFeedField() => $_has(11);
   @$pb.TagNumber(14)
@@ -520,9 +520,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Location Target Fields.
   @$pb.TagNumber(15)
-  $3726.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField get locationExtensionTargetingField => $_getN(12);
+  $3727.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField get locationExtensionTargetingField => $_getN(12);
   @$pb.TagNumber(15)
-  set locationExtensionTargetingField($3726.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField v) { setField(15, v); }
+  set locationExtensionTargetingField($3727.LocationExtensionTargetingCriterionFieldEnum_LocationExtensionTargetingCriterionField v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasLocationExtensionTargetingField() => $_has(12);
   @$pb.TagNumber(15)
@@ -530,9 +530,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Education Placeholder Fields
   @$pb.TagNumber(16)
-  $3727.EducationPlaceholderFieldEnum_EducationPlaceholderField get educationField => $_getN(13);
+  $3728.EducationPlaceholderFieldEnum_EducationPlaceholderField get educationField => $_getN(13);
   @$pb.TagNumber(16)
-  set educationField($3727.EducationPlaceholderFieldEnum_EducationPlaceholderField v) { setField(16, v); }
+  set educationField($3728.EducationPlaceholderFieldEnum_EducationPlaceholderField v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasEducationField() => $_has(13);
   @$pb.TagNumber(16)
@@ -540,9 +540,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Flight Placeholder Fields
   @$pb.TagNumber(17)
-  $3728.FlightPlaceholderFieldEnum_FlightPlaceholderField get flightField => $_getN(14);
+  $3729.FlightPlaceholderFieldEnum_FlightPlaceholderField get flightField => $_getN(14);
   @$pb.TagNumber(17)
-  set flightField($3728.FlightPlaceholderFieldEnum_FlightPlaceholderField v) { setField(17, v); }
+  set flightField($3729.FlightPlaceholderFieldEnum_FlightPlaceholderField v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasFlightField() => $_has(14);
   @$pb.TagNumber(17)
@@ -550,9 +550,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Custom Placeholder Fields
   @$pb.TagNumber(18)
-  $3729.CustomPlaceholderFieldEnum_CustomPlaceholderField get customField => $_getN(15);
+  $3730.CustomPlaceholderFieldEnum_CustomPlaceholderField get customField => $_getN(15);
   @$pb.TagNumber(18)
-  set customField($3729.CustomPlaceholderFieldEnum_CustomPlaceholderField v) { setField(18, v); }
+  set customField($3730.CustomPlaceholderFieldEnum_CustomPlaceholderField v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasCustomField() => $_has(15);
   @$pb.TagNumber(18)
@@ -560,9 +560,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Hotel Placeholder Fields
   @$pb.TagNumber(19)
-  $3730.HotelPlaceholderFieldEnum_HotelPlaceholderField get hotelField => $_getN(16);
+  $3731.HotelPlaceholderFieldEnum_HotelPlaceholderField get hotelField => $_getN(16);
   @$pb.TagNumber(19)
-  set hotelField($3730.HotelPlaceholderFieldEnum_HotelPlaceholderField v) { setField(19, v); }
+  set hotelField($3731.HotelPlaceholderFieldEnum_HotelPlaceholderField v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasHotelField() => $_has(16);
   @$pb.TagNumber(19)
@@ -570,9 +570,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Real Estate Placeholder Fields
   @$pb.TagNumber(20)
-  $3731.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField get realEstateField => $_getN(17);
+  $3732.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField get realEstateField => $_getN(17);
   @$pb.TagNumber(20)
-  set realEstateField($3731.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField v) { setField(20, v); }
+  set realEstateField($3732.RealEstatePlaceholderFieldEnum_RealEstatePlaceholderField v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasRealEstateField() => $_has(17);
   @$pb.TagNumber(20)
@@ -580,9 +580,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Travel Placeholder Fields
   @$pb.TagNumber(21)
-  $3732.TravelPlaceholderFieldEnum_TravelPlaceholderField get travelField => $_getN(18);
+  $3733.TravelPlaceholderFieldEnum_TravelPlaceholderField get travelField => $_getN(18);
   @$pb.TagNumber(21)
-  set travelField($3732.TravelPlaceholderFieldEnum_TravelPlaceholderField v) { setField(21, v); }
+  set travelField($3733.TravelPlaceholderFieldEnum_TravelPlaceholderField v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasTravelField() => $_has(18);
   @$pb.TagNumber(21)
@@ -590,9 +590,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Local Placeholder Fields
   @$pb.TagNumber(22)
-  $3733.LocalPlaceholderFieldEnum_LocalPlaceholderField get localField => $_getN(19);
+  $3734.LocalPlaceholderFieldEnum_LocalPlaceholderField get localField => $_getN(19);
   @$pb.TagNumber(22)
-  set localField($3733.LocalPlaceholderFieldEnum_LocalPlaceholderField v) { setField(22, v); }
+  set localField($3734.LocalPlaceholderFieldEnum_LocalPlaceholderField v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasLocalField() => $_has(19);
   @$pb.TagNumber(22)
@@ -600,9 +600,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Job Placeholder Fields
   @$pb.TagNumber(23)
-  $3734.JobPlaceholderFieldEnum_JobPlaceholderField get jobField => $_getN(20);
+  $3735.JobPlaceholderFieldEnum_JobPlaceholderField get jobField => $_getN(20);
   @$pb.TagNumber(23)
-  set jobField($3734.JobPlaceholderFieldEnum_JobPlaceholderField v) { setField(23, v); }
+  set jobField($3735.JobPlaceholderFieldEnum_JobPlaceholderField v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasJobField() => $_has(20);
   @$pb.TagNumber(23)
@@ -632,9 +632,9 @@ class AttributeFieldMapping extends $pb.GeneratedMessage {
 
   /// Immutable. Image Placeholder Fields
   @$pb.TagNumber(26)
-  $3735.ImagePlaceholderFieldEnum_ImagePlaceholderField get imageField => $_getN(23);
+  $3736.ImagePlaceholderFieldEnum_ImagePlaceholderField get imageField => $_getN(23);
   @$pb.TagNumber(26)
-  set imageField($3735.ImagePlaceholderFieldEnum_ImagePlaceholderField v) { setField(26, v); }
+  set imageField($3736.ImagePlaceholderFieldEnum_ImagePlaceholderField v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasImageField() => $_has(23);
   @$pb.TagNumber(26)

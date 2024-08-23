@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'data_items.pbenum.dart';
-import 'geometry.pb.dart' as $4329;
-import 'io.pb.dart' as $4332;
-import 'text_segment.pb.dart' as $4330;
+import 'geometry.pb.dart' as $4330;
+import 'io.pb.dart' as $4333;
+import 'text_segment.pb.dart' as $4331;
 
 export 'data_items.pbenum.dart';
 
@@ -273,9 +273,9 @@ class DocumentDimensions extends $pb.GeneratedMessage {
 /// Describes the layout information of a [text_segment][google.cloud.automl.v1.Document.Layout.text_segment] in the document.
 class Document_Layout extends $pb.GeneratedMessage {
   factory Document_Layout({
-    $4330.TextSegment? textSegment,
+    $4331.TextSegment? textSegment,
     $core.int? pageNumber,
-    $4329.BoundingPoly? boundingPoly,
+    $4330.BoundingPoly? boundingPoly,
     Document_Layout_TextSegmentType? textSegmentType,
   }) {
     final $result = create();
@@ -298,9 +298,9 @@ class Document_Layout extends $pb.GeneratedMessage {
   factory Document_Layout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.Layout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1'), createEmptyInstance: create)
-    ..aOM<$4330.TextSegment>(1, _omitFieldNames ? '' : 'textSegment', subBuilder: $4330.TextSegment.create)
+    ..aOM<$4331.TextSegment>(1, _omitFieldNames ? '' : 'textSegment', subBuilder: $4331.TextSegment.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageNumber', $pb.PbFieldType.O3)
-    ..aOM<$4329.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4329.BoundingPoly.create)
+    ..aOM<$4330.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4330.BoundingPoly.create)
     ..e<Document_Layout_TextSegmentType>(4, _omitFieldNames ? '' : 'textSegmentType', $pb.PbFieldType.OE, defaultOrMaker: Document_Layout_TextSegmentType.TEXT_SEGMENT_TYPE_UNSPECIFIED, valueOf: Document_Layout_TextSegmentType.valueOf, enumValues: Document_Layout_TextSegmentType.values)
     ..hasRequiredFields = false
   ;
@@ -329,15 +329,15 @@ class Document_Layout extends $pb.GeneratedMessage {
   /// Text Segment that represents a segment in
   /// [document_text][google.cloud.automl.v1p1beta.Document.document_text].
   @$pb.TagNumber(1)
-  $4330.TextSegment get textSegment => $_getN(0);
+  $4331.TextSegment get textSegment => $_getN(0);
   @$pb.TagNumber(1)
-  set textSegment($4330.TextSegment v) { setField(1, v); }
+  set textSegment($4331.TextSegment v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTextSegment() => $_has(0);
   @$pb.TagNumber(1)
   void clearTextSegment() => clearField(1);
   @$pb.TagNumber(1)
-  $4330.TextSegment ensureTextSegment() => $_ensure(0);
+  $4331.TextSegment ensureTextSegment() => $_ensure(0);
 
   /// Page number of the [text_segment][google.cloud.automl.v1.Document.Layout.text_segment] in the original document, starts
   /// from 1.
@@ -359,15 +359,15 @@ class Document_Layout extends $pb.GeneratedMessage {
   /// relative to the page.
   /// Coordinates are based on top-left as point (0,0).
   @$pb.TagNumber(3)
-  $4329.BoundingPoly get boundingPoly => $_getN(2);
+  $4330.BoundingPoly get boundingPoly => $_getN(2);
   @$pb.TagNumber(3)
-  set boundingPoly($4329.BoundingPoly v) { setField(3, v); }
+  set boundingPoly($4330.BoundingPoly v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBoundingPoly() => $_has(2);
   @$pb.TagNumber(3)
   void clearBoundingPoly() => clearField(3);
   @$pb.TagNumber(3)
-  $4329.BoundingPoly ensureBoundingPoly() => $_ensure(2);
+  $4330.BoundingPoly ensureBoundingPoly() => $_ensure(2);
 
   /// The type of the [text_segment][google.cloud.automl.v1.Document.Layout.text_segment] in document.
   @$pb.TagNumber(4)
@@ -383,7 +383,7 @@ class Document_Layout extends $pb.GeneratedMessage {
 /// A structured text document e.g. a PDF.
 class Document extends $pb.GeneratedMessage {
   factory Document({
-    $4332.DocumentInputConfig? inputConfig,
+    $4333.DocumentInputConfig? inputConfig,
     TextSnippet? documentText,
     $core.Iterable<Document_Layout>? layout,
     DocumentDimensions? documentDimensions,
@@ -412,7 +412,7 @@ class Document extends $pb.GeneratedMessage {
   factory Document.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1'), createEmptyInstance: create)
-    ..aOM<$4332.DocumentInputConfig>(1, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4332.DocumentInputConfig.create)
+    ..aOM<$4333.DocumentInputConfig>(1, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4333.DocumentInputConfig.create)
     ..aOM<TextSnippet>(2, _omitFieldNames ? '' : 'documentText', subBuilder: TextSnippet.create)
     ..pc<Document_Layout>(3, _omitFieldNames ? '' : 'layout', $pb.PbFieldType.PM, subBuilder: Document_Layout.create)
     ..aOM<DocumentDimensions>(4, _omitFieldNames ? '' : 'documentDimensions', subBuilder: DocumentDimensions.create)
@@ -443,15 +443,15 @@ class Document extends $pb.GeneratedMessage {
 
   /// An input config specifying the content of the document.
   @$pb.TagNumber(1)
-  $4332.DocumentInputConfig get inputConfig => $_getN(0);
+  $4333.DocumentInputConfig get inputConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set inputConfig($4332.DocumentInputConfig v) { setField(1, v); }
+  set inputConfig($4333.DocumentInputConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInputConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearInputConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4332.DocumentInputConfig ensureInputConfig() => $_ensure(0);
+  $4333.DocumentInputConfig ensureInputConfig() => $_ensure(0);
 
   /// The plain text version of this document.
   @$pb.TagNumber(2)

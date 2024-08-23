@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'study.pbenum.dart';
 
 export 'study.pbenum.dart';
@@ -29,7 +29,7 @@ class Study extends $pb.GeneratedMessage {
     $core.String? displayName,
     StudySpec? studySpec,
     Study_State? state,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? inactiveReason,
   }) {
     final $result = create();
@@ -62,7 +62,7 @@ class Study extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<StudySpec>(3, _omitFieldNames ? '' : 'studySpec', subBuilder: StudySpec.create)
     ..e<Study_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Study_State.STATE_UNSPECIFIED, valueOf: Study_State.valueOf, enumValues: Study_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'inactiveReason')
     ..hasRequiredFields = false
   ;
@@ -133,15 +133,15 @@ class Study extends $pb.GeneratedMessage {
 
   /// Output only. Time at which the study was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. A human readable reason why the Study is inactive.
   /// This should be empty if a study is ACTIVE or COMPLETED.
@@ -159,7 +159,7 @@ class Study extends $pb.GeneratedMessage {
 class Trial_Parameter extends $pb.GeneratedMessage {
   factory Trial_Parameter({
     $core.String? parameterId,
-    $1734.Value? value,
+    $1735.Value? value,
   }) {
     final $result = create();
     if (parameterId != null) {
@@ -176,7 +176,7 @@ class Trial_Parameter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Trial.Parameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parameterId')
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -219,15 +219,15 @@ class Trial_Parameter extends $pb.GeneratedMessage {
   /// `string_value` will be set if a parameter defined in StudySpec is
   /// in type 'CATEGORICAL'.
   @$pb.TagNumber(2)
-  $1734.Value get value => $_getN(1);
+  $1735.Value get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($1734.Value v) { setField(2, v); }
+  set value($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureValue() => $_ensure(1);
+  $1735.Value ensureValue() => $_ensure(1);
 }
 
 /// A message representing a Trial. A Trial contains a unique set of Parameters
@@ -241,8 +241,8 @@ class Trial extends $pb.GeneratedMessage {
     $core.Iterable<Trial_Parameter>? parameters,
     Measurement? finalMeasurement,
     $core.Iterable<Measurement>? measurements,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? clientId,
     $core.String? infeasibleReason,
     $core.String? customJob,
@@ -298,8 +298,8 @@ class Trial extends $pb.GeneratedMessage {
     ..pc<Trial_Parameter>(4, _omitFieldNames ? '' : 'parameters', $pb.PbFieldType.PM, subBuilder: Trial_Parameter.create)
     ..aOM<Measurement>(5, _omitFieldNames ? '' : 'finalMeasurement', subBuilder: Measurement.create)
     ..pc<Measurement>(6, _omitFieldNames ? '' : 'measurements', $pb.PbFieldType.PM, subBuilder: Measurement.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'clientId')
     ..aOS(10, _omitFieldNames ? '' : 'infeasibleReason')
     ..aOS(11, _omitFieldNames ? '' : 'customJob')
@@ -382,28 +382,28 @@ class Trial extends $pb.GeneratedMessage {
 
   /// Output only. Time when the Trial was started.
   @$pb.TagNumber(7)
-  $1775.Timestamp get startTime => $_getN(6);
+  $1776.Timestamp get startTime => $_getN(6);
   @$pb.TagNumber(7)
-  set startTime($1775.Timestamp v) { setField(7, v); }
+  set startTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStartTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureStartTime() => $_ensure(6);
+  $1776.Timestamp ensureStartTime() => $_ensure(6);
 
   /// Output only. Time when the Trial's status changed to `SUCCEEDED` or
   /// `INFEASIBLE`.
   @$pb.TagNumber(8)
-  $1775.Timestamp get endTime => $_getN(7);
+  $1776.Timestamp get endTime => $_getN(7);
   @$pb.TagNumber(8)
-  set endTime($1775.Timestamp v) { setField(8, v); }
+  set endTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEndTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEndTime() => $_ensure(7);
+  $1776.Timestamp ensureEndTime() => $_ensure(7);
 
   /// Output only. The identifier of the client that originally requested this
   /// Trial. Each client is identified by a unique client_id. When a client asks
@@ -541,8 +541,8 @@ enum StudyTimeConstraint_Constraint {
 /// Time-based Constraint for Study
 class StudyTimeConstraint extends $pb.GeneratedMessage {
   factory StudyTimeConstraint({
-    $1737.Duration? maxDuration,
-    $1775.Timestamp? endTime,
+    $1738.Duration? maxDuration,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (maxDuration != null) {
@@ -564,8 +564,8 @@ class StudyTimeConstraint extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StudyTimeConstraint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'maxDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'maxDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -595,27 +595,27 @@ class StudyTimeConstraint extends $pb.GeneratedMessage {
 
   /// Counts the wallclock time passed since the creation of this Study.
   @$pb.TagNumber(1)
-  $1737.Duration get maxDuration => $_getN(0);
+  $1738.Duration get maxDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set maxDuration($1737.Duration v) { setField(1, v); }
+  set maxDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaxDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaxDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMaxDuration() => $_ensure(0);
+  $1738.Duration ensureMaxDuration() => $_ensure(0);
 
   /// Compares the wallclock time to this time. Must use UTC timezone.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Used in safe optimization to specify threshold levels and risk tolerance.
@@ -1812,13 +1812,13 @@ class StudySpec_ConvexAutomatedStoppingSpec extends $pb.GeneratedMessage {
 /// Conditions include trial budgets, time budgets, and convergence detection.
 class StudySpec_StudyStoppingConfig extends $pb.GeneratedMessage {
   factory StudySpec_StudyStoppingConfig({
-    $1780.BoolValue? shouldStopAsap,
+    $1781.BoolValue? shouldStopAsap,
     StudyTimeConstraint? minimumRuntimeConstraint,
     StudyTimeConstraint? maximumRuntimeConstraint,
-    $1780.Int32Value? minNumTrials,
-    $1780.Int32Value? maxNumTrials,
-    $1780.Int32Value? maxNumTrialsNoProgress,
-    $1737.Duration? maxDurationNoProgress,
+    $1781.Int32Value? minNumTrials,
+    $1781.Int32Value? maxNumTrials,
+    $1781.Int32Value? maxNumTrialsNoProgress,
+    $1738.Duration? maxDurationNoProgress,
   }) {
     final $result = create();
     if (shouldStopAsap != null) {
@@ -1849,13 +1849,13 @@ class StudySpec_StudyStoppingConfig extends $pb.GeneratedMessage {
   factory StudySpec_StudyStoppingConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StudySpec.StudyStoppingConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1780.BoolValue>(1, _omitFieldNames ? '' : 'shouldStopAsap', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'shouldStopAsap', subBuilder: $1781.BoolValue.create)
     ..aOM<StudyTimeConstraint>(2, _omitFieldNames ? '' : 'minimumRuntimeConstraint', subBuilder: StudyTimeConstraint.create)
     ..aOM<StudyTimeConstraint>(3, _omitFieldNames ? '' : 'maximumRuntimeConstraint', subBuilder: StudyTimeConstraint.create)
-    ..aOM<$1780.Int32Value>(4, _omitFieldNames ? '' : 'minNumTrials', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1780.Int32Value>(5, _omitFieldNames ? '' : 'maxNumTrials', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1780.Int32Value>(6, _omitFieldNames ? '' : 'maxNumTrialsNoProgress', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'maxDurationNoProgress', subBuilder: $1737.Duration.create)
+    ..aOM<$1781.Int32Value>(4, _omitFieldNames ? '' : 'minNumTrials', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1781.Int32Value>(5, _omitFieldNames ? '' : 'maxNumTrials', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1781.Int32Value>(6, _omitFieldNames ? '' : 'maxNumTrialsNoProgress', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'maxDurationNoProgress', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1887,15 +1887,15 @@ class StudySpec_StudyStoppingConfig extends $pb.GeneratedMessage {
   ///  evaluations of Trials as soon as the study stopping condition is met.
   ///  (Please see Study.State documentation for the source of truth).
   @$pb.TagNumber(1)
-  $1780.BoolValue get shouldStopAsap => $_getN(0);
+  $1781.BoolValue get shouldStopAsap => $_getN(0);
   @$pb.TagNumber(1)
-  set shouldStopAsap($1780.BoolValue v) { setField(1, v); }
+  set shouldStopAsap($1781.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasShouldStopAsap() => $_has(0);
   @$pb.TagNumber(1)
   void clearShouldStopAsap() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BoolValue ensureShouldStopAsap() => $_ensure(0);
+  $1781.BoolValue ensureShouldStopAsap() => $_ensure(0);
 
   /// Each "stopping rule" in this proto specifies an "if" condition. Before
   /// Vizier would generate a new suggestion, it first checks each specified
@@ -1943,57 +1943,57 @@ class StudySpec_StudyStoppingConfig extends $pb.GeneratedMessage {
   /// If there are fewer than this many COMPLETED trials, do not stop the
   /// study.
   @$pb.TagNumber(4)
-  $1780.Int32Value get minNumTrials => $_getN(3);
+  $1781.Int32Value get minNumTrials => $_getN(3);
   @$pb.TagNumber(4)
-  set minNumTrials($1780.Int32Value v) { setField(4, v); }
+  set minNumTrials($1781.Int32Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMinNumTrials() => $_has(3);
   @$pb.TagNumber(4)
   void clearMinNumTrials() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int32Value ensureMinNumTrials() => $_ensure(3);
+  $1781.Int32Value ensureMinNumTrials() => $_ensure(3);
 
   /// If there are more than this many trials, stop the study.
   @$pb.TagNumber(5)
-  $1780.Int32Value get maxNumTrials => $_getN(4);
+  $1781.Int32Value get maxNumTrials => $_getN(4);
   @$pb.TagNumber(5)
-  set maxNumTrials($1780.Int32Value v) { setField(5, v); }
+  set maxNumTrials($1781.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMaxNumTrials() => $_has(4);
   @$pb.TagNumber(5)
   void clearMaxNumTrials() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int32Value ensureMaxNumTrials() => $_ensure(4);
+  $1781.Int32Value ensureMaxNumTrials() => $_ensure(4);
 
   ///  If the objective value has not improved for this many consecutive
   ///  trials, stop the study.
   ///
   ///  WARNING: Effective only for single-objective studies.
   @$pb.TagNumber(6)
-  $1780.Int32Value get maxNumTrialsNoProgress => $_getN(5);
+  $1781.Int32Value get maxNumTrialsNoProgress => $_getN(5);
   @$pb.TagNumber(6)
-  set maxNumTrialsNoProgress($1780.Int32Value v) { setField(6, v); }
+  set maxNumTrialsNoProgress($1781.Int32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMaxNumTrialsNoProgress() => $_has(5);
   @$pb.TagNumber(6)
   void clearMaxNumTrialsNoProgress() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int32Value ensureMaxNumTrialsNoProgress() => $_ensure(5);
+  $1781.Int32Value ensureMaxNumTrialsNoProgress() => $_ensure(5);
 
   ///  If the objective value has not improved for this much time, stop the
   ///  study.
   ///
   ///  WARNING: Effective only for single-objective studies.
   @$pb.TagNumber(7)
-  $1737.Duration get maxDurationNoProgress => $_getN(6);
+  $1738.Duration get maxDurationNoProgress => $_getN(6);
   @$pb.TagNumber(7)
-  set maxDurationNoProgress($1737.Duration v) { setField(7, v); }
+  set maxDurationNoProgress($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasMaxDurationNoProgress() => $_has(6);
   @$pb.TagNumber(7)
   void clearMaxDurationNoProgress() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureMaxDurationNoProgress() => $_ensure(6);
+  $1738.Duration ensureMaxDurationNoProgress() => $_ensure(6);
 }
 
 enum StudySpec_AutomatedStoppingSpec {
@@ -2257,7 +2257,7 @@ class Measurement_Metric extends $pb.GeneratedMessage {
 /// values.
 class Measurement extends $pb.GeneratedMessage {
   factory Measurement({
-    $1737.Duration? elapsedDuration,
+    $1738.Duration? elapsedDuration,
     $fixnum.Int64? stepCount,
     $core.Iterable<Measurement_Metric>? metrics,
   }) {
@@ -2278,7 +2278,7 @@ class Measurement extends $pb.GeneratedMessage {
   factory Measurement.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Measurement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'elapsedDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'elapsedDuration', subBuilder: $1738.Duration.create)
     ..aInt64(2, _omitFieldNames ? '' : 'stepCount')
     ..pc<Measurement_Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: Measurement_Metric.create)
     ..hasRequiredFields = false
@@ -2308,15 +2308,15 @@ class Measurement extends $pb.GeneratedMessage {
   /// Output only. Time that the Trial has been running at the point of this
   /// Measurement.
   @$pb.TagNumber(1)
-  $1737.Duration get elapsedDuration => $_getN(0);
+  $1738.Duration get elapsedDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set elapsedDuration($1737.Duration v) { setField(1, v); }
+  set elapsedDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasElapsedDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearElapsedDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureElapsedDuration() => $_ensure(0);
+  $1738.Duration ensureElapsedDuration() => $_ensure(0);
 
   /// Output only. The number of steps the machine learning model has been
   /// trained for. Must be non-negative.

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/ad_type_infos.pb.dart' as $4013;
-import '../enums/ad_type.pbenum.dart' as $4014;
+import '../common/ad_type_infos.pb.dart' as $4014;
+import '../enums/ad_type.pbenum.dart' as $4015;
 
 enum Ad_AdData {
   textAd, 
@@ -29,17 +29,17 @@ enum Ad_AdData {
 /// An ad.
 class Ad extends $pb.GeneratedMessage {
   factory Ad({
-    $4014.AdTypeEnum_AdType? type,
+    $4015.AdTypeEnum_AdType? type,
     $core.String? resourceName,
     $fixnum.Int64? id,
     $core.Iterable<$core.String>? finalUrls,
     $core.String? displayUrl,
     $core.String? name,
-    $4013.SearchAds360TextAdInfo? textAd,
-    $4013.SearchAds360ExpandedTextAdInfo? expandedTextAd,
-    $4013.SearchAds360ResponsiveSearchAdInfo? responsiveSearchAd,
-    $4013.SearchAds360ProductAdInfo? productAd,
-    $4013.SearchAds360ExpandedDynamicSearchAdInfo? expandedDynamicSearchAd,
+    $4014.SearchAds360TextAdInfo? textAd,
+    $4014.SearchAds360ExpandedTextAdInfo? expandedTextAd,
+    $4014.SearchAds360ResponsiveSearchAdInfo? responsiveSearchAd,
+    $4014.SearchAds360ProductAdInfo? productAd,
+    $4014.SearchAds360ExpandedDynamicSearchAdInfo? expandedDynamicSearchAd,
   }) {
     final $result = create();
     if (type != null) {
@@ -91,17 +91,17 @@ class Ad extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Ad', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..oo(0, [55, 56, 57, 58, 59])
-    ..e<$4014.AdTypeEnum_AdType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4014.AdTypeEnum_AdType.UNSPECIFIED, valueOf: $4014.AdTypeEnum_AdType.valueOf, enumValues: $4014.AdTypeEnum_AdType.values)
+    ..e<$4015.AdTypeEnum_AdType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4015.AdTypeEnum_AdType.UNSPECIFIED, valueOf: $4015.AdTypeEnum_AdType.valueOf, enumValues: $4015.AdTypeEnum_AdType.values)
     ..aOS(37, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(40, _omitFieldNames ? '' : 'id')
     ..pPS(41, _omitFieldNames ? '' : 'finalUrls')
     ..aOS(45, _omitFieldNames ? '' : 'displayUrl')
     ..aOS(47, _omitFieldNames ? '' : 'name')
-    ..aOM<$4013.SearchAds360TextAdInfo>(55, _omitFieldNames ? '' : 'textAd', subBuilder: $4013.SearchAds360TextAdInfo.create)
-    ..aOM<$4013.SearchAds360ExpandedTextAdInfo>(56, _omitFieldNames ? '' : 'expandedTextAd', subBuilder: $4013.SearchAds360ExpandedTextAdInfo.create)
-    ..aOM<$4013.SearchAds360ResponsiveSearchAdInfo>(57, _omitFieldNames ? '' : 'responsiveSearchAd', subBuilder: $4013.SearchAds360ResponsiveSearchAdInfo.create)
-    ..aOM<$4013.SearchAds360ProductAdInfo>(58, _omitFieldNames ? '' : 'productAd', subBuilder: $4013.SearchAds360ProductAdInfo.create)
-    ..aOM<$4013.SearchAds360ExpandedDynamicSearchAdInfo>(59, _omitFieldNames ? '' : 'expandedDynamicSearchAd', subBuilder: $4013.SearchAds360ExpandedDynamicSearchAdInfo.create)
+    ..aOM<$4014.SearchAds360TextAdInfo>(55, _omitFieldNames ? '' : 'textAd', subBuilder: $4014.SearchAds360TextAdInfo.create)
+    ..aOM<$4014.SearchAds360ExpandedTextAdInfo>(56, _omitFieldNames ? '' : 'expandedTextAd', subBuilder: $4014.SearchAds360ExpandedTextAdInfo.create)
+    ..aOM<$4014.SearchAds360ResponsiveSearchAdInfo>(57, _omitFieldNames ? '' : 'responsiveSearchAd', subBuilder: $4014.SearchAds360ResponsiveSearchAdInfo.create)
+    ..aOM<$4014.SearchAds360ProductAdInfo>(58, _omitFieldNames ? '' : 'productAd', subBuilder: $4014.SearchAds360ProductAdInfo.create)
+    ..aOM<$4014.SearchAds360ExpandedDynamicSearchAdInfo>(59, _omitFieldNames ? '' : 'expandedDynamicSearchAd', subBuilder: $4014.SearchAds360ExpandedDynamicSearchAdInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -131,9 +131,9 @@ class Ad extends $pb.GeneratedMessage {
 
   /// Output only. The type of ad.
   @$pb.TagNumber(5)
-  $4014.AdTypeEnum_AdType get type => $_getN(0);
+  $4015.AdTypeEnum_AdType get type => $_getN(0);
   @$pb.TagNumber(5)
-  set type($4014.AdTypeEnum_AdType v) { setField(5, v); }
+  set type($4015.AdTypeEnum_AdType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(5)
@@ -192,63 +192,63 @@ class Ad extends $pb.GeneratedMessage {
 
   /// Immutable. Details pertaining to a text ad.
   @$pb.TagNumber(55)
-  $4013.SearchAds360TextAdInfo get textAd => $_getN(6);
+  $4014.SearchAds360TextAdInfo get textAd => $_getN(6);
   @$pb.TagNumber(55)
-  set textAd($4013.SearchAds360TextAdInfo v) { setField(55, v); }
+  set textAd($4014.SearchAds360TextAdInfo v) { setField(55, v); }
   @$pb.TagNumber(55)
   $core.bool hasTextAd() => $_has(6);
   @$pb.TagNumber(55)
   void clearTextAd() => clearField(55);
   @$pb.TagNumber(55)
-  $4013.SearchAds360TextAdInfo ensureTextAd() => $_ensure(6);
+  $4014.SearchAds360TextAdInfo ensureTextAd() => $_ensure(6);
 
   /// Immutable. Details pertaining to an expanded text ad.
   @$pb.TagNumber(56)
-  $4013.SearchAds360ExpandedTextAdInfo get expandedTextAd => $_getN(7);
+  $4014.SearchAds360ExpandedTextAdInfo get expandedTextAd => $_getN(7);
   @$pb.TagNumber(56)
-  set expandedTextAd($4013.SearchAds360ExpandedTextAdInfo v) { setField(56, v); }
+  set expandedTextAd($4014.SearchAds360ExpandedTextAdInfo v) { setField(56, v); }
   @$pb.TagNumber(56)
   $core.bool hasExpandedTextAd() => $_has(7);
   @$pb.TagNumber(56)
   void clearExpandedTextAd() => clearField(56);
   @$pb.TagNumber(56)
-  $4013.SearchAds360ExpandedTextAdInfo ensureExpandedTextAd() => $_ensure(7);
+  $4014.SearchAds360ExpandedTextAdInfo ensureExpandedTextAd() => $_ensure(7);
 
   /// Immutable. Details pertaining to a responsive search ad.
   @$pb.TagNumber(57)
-  $4013.SearchAds360ResponsiveSearchAdInfo get responsiveSearchAd => $_getN(8);
+  $4014.SearchAds360ResponsiveSearchAdInfo get responsiveSearchAd => $_getN(8);
   @$pb.TagNumber(57)
-  set responsiveSearchAd($4013.SearchAds360ResponsiveSearchAdInfo v) { setField(57, v); }
+  set responsiveSearchAd($4014.SearchAds360ResponsiveSearchAdInfo v) { setField(57, v); }
   @$pb.TagNumber(57)
   $core.bool hasResponsiveSearchAd() => $_has(8);
   @$pb.TagNumber(57)
   void clearResponsiveSearchAd() => clearField(57);
   @$pb.TagNumber(57)
-  $4013.SearchAds360ResponsiveSearchAdInfo ensureResponsiveSearchAd() => $_ensure(8);
+  $4014.SearchAds360ResponsiveSearchAdInfo ensureResponsiveSearchAd() => $_ensure(8);
 
   /// Immutable. Details pertaining to a product ad.
   @$pb.TagNumber(58)
-  $4013.SearchAds360ProductAdInfo get productAd => $_getN(9);
+  $4014.SearchAds360ProductAdInfo get productAd => $_getN(9);
   @$pb.TagNumber(58)
-  set productAd($4013.SearchAds360ProductAdInfo v) { setField(58, v); }
+  set productAd($4014.SearchAds360ProductAdInfo v) { setField(58, v); }
   @$pb.TagNumber(58)
   $core.bool hasProductAd() => $_has(9);
   @$pb.TagNumber(58)
   void clearProductAd() => clearField(58);
   @$pb.TagNumber(58)
-  $4013.SearchAds360ProductAdInfo ensureProductAd() => $_ensure(9);
+  $4014.SearchAds360ProductAdInfo ensureProductAd() => $_ensure(9);
 
   /// Immutable. Details pertaining to an expanded dynamic search ad.
   @$pb.TagNumber(59)
-  $4013.SearchAds360ExpandedDynamicSearchAdInfo get expandedDynamicSearchAd => $_getN(10);
+  $4014.SearchAds360ExpandedDynamicSearchAdInfo get expandedDynamicSearchAd => $_getN(10);
   @$pb.TagNumber(59)
-  set expandedDynamicSearchAd($4013.SearchAds360ExpandedDynamicSearchAdInfo v) { setField(59, v); }
+  set expandedDynamicSearchAd($4014.SearchAds360ExpandedDynamicSearchAdInfo v) { setField(59, v); }
   @$pb.TagNumber(59)
   $core.bool hasExpandedDynamicSearchAd() => $_has(10);
   @$pb.TagNumber(59)
   void clearExpandedDynamicSearchAd() => clearField(59);
   @$pb.TagNumber(59)
-  $4013.SearchAds360ExpandedDynamicSearchAdInfo ensureExpandedDynamicSearchAd() => $_ensure(10);
+  $4014.SearchAds360ExpandedDynamicSearchAdInfo ensureExpandedDynamicSearchAd() => $_ensure(10);
 }
 
 

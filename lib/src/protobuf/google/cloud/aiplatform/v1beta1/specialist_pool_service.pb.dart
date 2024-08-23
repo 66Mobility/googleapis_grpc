@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'operation.pb.dart' as $4295;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'operation.pb.dart' as $4296;
 import 'specialist_pool.pb.dart' as $627;
 
 /// Request message for
@@ -92,7 +92,7 @@ class CreateSpecialistPoolRequest extends $pb.GeneratedMessage {
 /// [SpecialistPoolService.CreateSpecialistPool][google.cloud.aiplatform.v1beta1.SpecialistPoolService.CreateSpecialistPool].
 class CreateSpecialistPoolOperationMetadata extends $pb.GeneratedMessage {
   factory CreateSpecialistPoolOperationMetadata({
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -105,7 +105,7 @@ class CreateSpecialistPoolOperationMetadata extends $pb.GeneratedMessage {
   factory CreateSpecialistPoolOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateSpecialistPoolOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4295.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -132,15 +132,15 @@ class CreateSpecialistPoolOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Request message for
@@ -205,7 +205,7 @@ class ListSpecialistPoolsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -230,7 +230,7 @@ class ListSpecialistPoolsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -293,15 +293,15 @@ class ListSpecialistPoolsRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read. FieldMask represents a set of
   @$pb.TagNumber(4)
-  $2209.FieldMask get readMask => $_getN(3);
+  $2210.FieldMask get readMask => $_getN(3);
   @$pb.TagNumber(4)
-  set readMask($2209.FieldMask v) { setField(4, v); }
+  set readMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureReadMask() => $_ensure(3);
+  $2210.FieldMask ensureReadMask() => $_ensure(3);
 }
 
 /// Response message for
@@ -442,7 +442,7 @@ class DeleteSpecialistPoolRequest extends $pb.GeneratedMessage {
 class UpdateSpecialistPoolRequest extends $pb.GeneratedMessage {
   factory UpdateSpecialistPoolRequest({
     $627.SpecialistPool? specialistPool,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (specialistPool != null) {
@@ -459,7 +459,7 @@ class UpdateSpecialistPoolRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSpecialistPoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOM<$627.SpecialistPool>(1, _omitFieldNames ? '' : 'specialistPool', subBuilder: $627.SpecialistPool.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -498,15 +498,15 @@ class UpdateSpecialistPoolRequest extends $pb.GeneratedMessage {
 
   /// Required. The update mask applies to the resource.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Runtime operation metadata for
@@ -514,7 +514,7 @@ class UpdateSpecialistPoolRequest extends $pb.GeneratedMessage {
 class UpdateSpecialistPoolOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateSpecialistPoolOperationMetadata({
     $core.String? specialistPool,
-    $4295.GenericOperationMetadata? genericMetadata,
+    $4296.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (specialistPool != null) {
@@ -531,7 +531,7 @@ class UpdateSpecialistPoolOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSpecialistPoolOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'specialistPool')
-    ..aOM<$4295.GenericOperationMetadata>(2, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4295.GenericOperationMetadata.create)
+    ..aOM<$4296.GenericOperationMetadata>(2, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4296.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -570,15 +570,15 @@ class UpdateSpecialistPoolOperationMetadata extends $pb.GeneratedMessage {
 
   /// The operation generic information.
   @$pb.TagNumber(2)
-  $4295.GenericOperationMetadata get genericMetadata => $_getN(1);
+  $4296.GenericOperationMetadata get genericMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set genericMetadata($4295.GenericOperationMetadata v) { setField(2, v); }
+  set genericMetadata($4296.GenericOperationMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGenericMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearGenericMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4295.GenericOperationMetadata ensureGenericMetadata() => $_ensure(1);
+  $4296.GenericOperationMetadata ensureGenericMetadata() => $_ensure(1);
 }
 
 

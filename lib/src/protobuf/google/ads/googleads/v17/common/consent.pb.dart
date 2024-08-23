@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/consent_status.pbenum.dart' as $3301;
+import '../enums/consent_status.pbenum.dart' as $3302;
 
 /// Consent
 class Consent extends $pb.GeneratedMessage {
   factory Consent({
-    $3301.ConsentStatusEnum_ConsentStatus? adUserData,
-    $3301.ConsentStatusEnum_ConsentStatus? adPersonalization,
+    $3302.ConsentStatusEnum_ConsentStatus? adUserData,
+    $3302.ConsentStatusEnum_ConsentStatus? adPersonalization,
   }) {
     final $result = create();
     if (adUserData != null) {
@@ -35,8 +35,8 @@ class Consent extends $pb.GeneratedMessage {
   factory Consent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Consent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..e<$3301.ConsentStatusEnum_ConsentStatus>(1, _omitFieldNames ? '' : 'adUserData', $pb.PbFieldType.OE, defaultOrMaker: $3301.ConsentStatusEnum_ConsentStatus.UNSPECIFIED, valueOf: $3301.ConsentStatusEnum_ConsentStatus.valueOf, enumValues: $3301.ConsentStatusEnum_ConsentStatus.values)
-    ..e<$3301.ConsentStatusEnum_ConsentStatus>(2, _omitFieldNames ? '' : 'adPersonalization', $pb.PbFieldType.OE, defaultOrMaker: $3301.ConsentStatusEnum_ConsentStatus.UNSPECIFIED, valueOf: $3301.ConsentStatusEnum_ConsentStatus.valueOf, enumValues: $3301.ConsentStatusEnum_ConsentStatus.values)
+    ..e<$3302.ConsentStatusEnum_ConsentStatus>(1, _omitFieldNames ? '' : 'adUserData', $pb.PbFieldType.OE, defaultOrMaker: $3302.ConsentStatusEnum_ConsentStatus.UNSPECIFIED, valueOf: $3302.ConsentStatusEnum_ConsentStatus.valueOf, enumValues: $3302.ConsentStatusEnum_ConsentStatus.values)
+    ..e<$3302.ConsentStatusEnum_ConsentStatus>(2, _omitFieldNames ? '' : 'adPersonalization', $pb.PbFieldType.OE, defaultOrMaker: $3302.ConsentStatusEnum_ConsentStatus.UNSPECIFIED, valueOf: $3302.ConsentStatusEnum_ConsentStatus.valueOf, enumValues: $3302.ConsentStatusEnum_ConsentStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -63,9 +63,9 @@ class Consent extends $pb.GeneratedMessage {
 
   /// This represents consent for ad user data.
   @$pb.TagNumber(1)
-  $3301.ConsentStatusEnum_ConsentStatus get adUserData => $_getN(0);
+  $3302.ConsentStatusEnum_ConsentStatus get adUserData => $_getN(0);
   @$pb.TagNumber(1)
-  set adUserData($3301.ConsentStatusEnum_ConsentStatus v) { setField(1, v); }
+  set adUserData($3302.ConsentStatusEnum_ConsentStatus v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAdUserData() => $_has(0);
   @$pb.TagNumber(1)
@@ -74,9 +74,9 @@ class Consent extends $pb.GeneratedMessage {
   /// This represents consent for ad personalization.
   /// This can only be set for OfflineUserDataJobService and UserDataService.
   @$pb.TagNumber(2)
-  $3301.ConsentStatusEnum_ConsentStatus get adPersonalization => $_getN(1);
+  $3302.ConsentStatusEnum_ConsentStatus get adPersonalization => $_getN(1);
   @$pb.TagNumber(2)
-  set adPersonalization($3301.ConsentStatusEnum_ConsentStatus v) { setField(2, v); }
+  set adPersonalization($3302.ConsentStatusEnum_ConsentStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdPersonalization() => $_has(1);
   @$pb.TagNumber(2)

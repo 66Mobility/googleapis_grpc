@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $17;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'resources.pb.dart' as $1731;
 import 'rpcmessages.pbenum.dart';
 
@@ -317,7 +317,7 @@ class BatchGetPhotosResponse extends $pb.GeneratedMessage {
 /// [BatchUpdatePhotos][google.streetview.publish.v1.StreetViewPublishService.BatchUpdatePhotos].
 class PhotoResponse extends $pb.GeneratedMessage {
   factory PhotoResponse({
-    $1795.Status? status,
+    $1796.Status? status,
     $1731.Photo? photo,
   }) {
     final $result = create();
@@ -334,7 +334,7 @@ class PhotoResponse extends $pb.GeneratedMessage {
   factory PhotoResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PhotoResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOM<$1731.Photo>(2, _omitFieldNames ? '' : 'photo', subBuilder: $1731.Photo.create)
     ..hasRequiredFields = false
   ;
@@ -363,15 +363,15 @@ class PhotoResponse extends $pb.GeneratedMessage {
   /// The status for the operation to get or update a single photo in the batch
   /// request.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// The [Photo][google.streetview.publish.v1.Photo] resource, if the request
   /// was successful.
@@ -601,7 +601,7 @@ class ListPhotosResponse extends $pb.GeneratedMessage {
 class UpdatePhotoRequest extends $pb.GeneratedMessage {
   factory UpdatePhotoRequest({
     $1731.Photo? photo,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (photo != null) {
@@ -618,7 +618,7 @@ class UpdatePhotoRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePhotoRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
     ..aOM<$1731.Photo>(1, _omitFieldNames ? '' : 'photo', subBuilder: $1731.Photo.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -683,15 +683,15 @@ class UpdatePhotoRequest extends $pb.GeneratedMessage {
   ///  contains `connections` and `UpdatePhotoRequest.photo.connections` is empty,
   ///  all connections are removed.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to update the metadata of photos.
@@ -1126,7 +1126,7 @@ class DeletePhotoSequenceRequest extends $pb.GeneratedMessage {
 /// [Photos][google.streetview.publish.v1.Photo].
 class BatchDeletePhotosResponse extends $pb.GeneratedMessage {
   factory BatchDeletePhotosResponse({
-    $core.Iterable<$1795.Status>? status,
+    $core.Iterable<$1796.Status>? status,
   }) {
     final $result = create();
     if (status != null) {
@@ -1139,7 +1139,7 @@ class BatchDeletePhotosResponse extends $pb.GeneratedMessage {
   factory BatchDeletePhotosResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchDeletePhotosResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.streetview.publish.v1'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'status', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'status', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1167,7 +1167,7 @@ class BatchDeletePhotosResponse extends $pb.GeneratedMessage {
   /// The status for the operation to delete a single
   /// [Photo][google.streetview.publish.v1.Photo] in the batch request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get status => $_getList(0);
+  $core.List<$1796.Status> get status => $_getList(0);
 }
 
 ///  Request to list all photo sequences that belong to the user sending the

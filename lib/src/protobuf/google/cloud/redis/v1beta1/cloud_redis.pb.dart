@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/dayofweek.pbenum.dart' as $4321;
-import '../../../type/timeofday.pb.dart' as $4320;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/dayofweek.pbenum.dart' as $4322;
+import '../../../type/timeofday.pb.dart' as $4321;
 import 'cloud_redis.pbenum.dart';
 
 export 'cloud_redis.pbenum.dart';
@@ -102,7 +102,7 @@ class Instance extends $pb.GeneratedMessage {
     $core.String? host,
     $core.int? port,
     $core.String? currentLocationId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Instance_State? state,
     $core.String? statusMessage,
     $core.Map<$core.String, $core.String>? redisConfigs,
@@ -235,7 +235,7 @@ class Instance extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'host')
     ..a<$core.int>(11, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
     ..aOS(12, _omitFieldNames ? '' : 'currentLocationId')
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Instance_State>(14, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Instance_State.STATE_UNSPECIFIED, valueOf: Instance_State.valueOf, enumValues: Instance_State.values)
     ..aOS(15, _omitFieldNames ? '' : 'statusMessage')
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'redisConfigs', entryClassName: 'Instance.RedisConfigsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.redis.v1beta1'))
@@ -409,15 +409,15 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. The time the instance was created.
   @$pb.TagNumber(13)
-  $1775.Timestamp get createTime => $_getN(10);
+  $1776.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(13)
-  set createTime($1775.Timestamp v) { setField(13, v); }
+  set createTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(13)
   void clearCreateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureCreateTime() => $_ensure(10);
+  $1776.Timestamp ensureCreateTime() => $_ensure(10);
 
   /// Output only. The current state of this instance.
   @$pb.TagNumber(14)
@@ -658,8 +658,8 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   factory PersistenceConfig({
     PersistenceConfig_PersistenceMode? persistenceMode,
     PersistenceConfig_SnapshotPeriod? rdbSnapshotPeriod,
-    $1775.Timestamp? rdbNextSnapshotTime,
-    $1775.Timestamp? rdbSnapshotStartTime,
+    $1776.Timestamp? rdbNextSnapshotTime,
+    $1776.Timestamp? rdbSnapshotStartTime,
   }) {
     final $result = create();
     if (persistenceMode != null) {
@@ -683,8 +683,8 @@ class PersistenceConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PersistenceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.redis.v1beta1'), createEmptyInstance: create)
     ..e<PersistenceConfig_PersistenceMode>(1, _omitFieldNames ? '' : 'persistenceMode', $pb.PbFieldType.OE, defaultOrMaker: PersistenceConfig_PersistenceMode.PERSISTENCE_MODE_UNSPECIFIED, valueOf: PersistenceConfig_PersistenceMode.valueOf, enumValues: PersistenceConfig_PersistenceMode.values)
     ..e<PersistenceConfig_SnapshotPeriod>(2, _omitFieldNames ? '' : 'rdbSnapshotPeriod', $pb.PbFieldType.OE, defaultOrMaker: PersistenceConfig_SnapshotPeriod.SNAPSHOT_PERIOD_UNSPECIFIED, valueOf: PersistenceConfig_SnapshotPeriod.valueOf, enumValues: PersistenceConfig_SnapshotPeriod.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'rdbNextSnapshotTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'rdbSnapshotStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'rdbNextSnapshotTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'rdbSnapshotStartTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -737,29 +737,29 @@ class PersistenceConfig extends $pb.GeneratedMessage {
 
   /// Output only. The next time that a snapshot attempt is scheduled to occur.
   @$pb.TagNumber(4)
-  $1775.Timestamp get rdbNextSnapshotTime => $_getN(2);
+  $1776.Timestamp get rdbNextSnapshotTime => $_getN(2);
   @$pb.TagNumber(4)
-  set rdbNextSnapshotTime($1775.Timestamp v) { setField(4, v); }
+  set rdbNextSnapshotTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRdbNextSnapshotTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearRdbNextSnapshotTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureRdbNextSnapshotTime() => $_ensure(2);
+  $1776.Timestamp ensureRdbNextSnapshotTime() => $_ensure(2);
 
   /// Optional. Date and time that the first snapshot was/will be attempted, and to which
   /// future snapshots will be aligned.
   /// If not provided, the current time will be used.
   @$pb.TagNumber(5)
-  $1775.Timestamp get rdbSnapshotStartTime => $_getN(3);
+  $1776.Timestamp get rdbSnapshotStartTime => $_getN(3);
   @$pb.TagNumber(5)
-  set rdbSnapshotStartTime($1775.Timestamp v) { setField(5, v); }
+  set rdbSnapshotStartTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRdbSnapshotStartTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearRdbSnapshotStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureRdbSnapshotStartTime() => $_ensure(3);
+  $1776.Timestamp ensureRdbSnapshotStartTime() => $_ensure(3);
 }
 
 /// Request for [RescheduleMaintenance][google.cloud.redis.v1beta1.CloudRedis.RescheduleMaintenance].
@@ -767,7 +767,7 @@ class RescheduleMaintenanceRequest extends $pb.GeneratedMessage {
   factory RescheduleMaintenanceRequest({
     $core.String? name,
     RescheduleMaintenanceRequest_RescheduleType? rescheduleType,
-    $1775.Timestamp? scheduleTime,
+    $1776.Timestamp? scheduleTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -788,7 +788,7 @@ class RescheduleMaintenanceRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RescheduleMaintenanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.redis.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<RescheduleMaintenanceRequest_RescheduleType>(2, _omitFieldNames ? '' : 'rescheduleType', $pb.PbFieldType.OE, defaultOrMaker: RescheduleMaintenanceRequest_RescheduleType.RESCHEDULE_TYPE_UNSPECIFIED, valueOf: RescheduleMaintenanceRequest_RescheduleType.valueOf, enumValues: RescheduleMaintenanceRequest_RescheduleType.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -839,22 +839,22 @@ class RescheduleMaintenanceRequest extends $pb.GeneratedMessage {
   /// reschedule_type=SPECIFIC_TIME, in RFC 3339 format, for
   /// example `2012-11-15T16:19:00.094Z`.
   @$pb.TagNumber(3)
-  $1775.Timestamp get scheduleTime => $_getN(2);
+  $1776.Timestamp get scheduleTime => $_getN(2);
   @$pb.TagNumber(3)
-  set scheduleTime($1775.Timestamp v) { setField(3, v); }
+  set scheduleTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasScheduleTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearScheduleTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(2);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(2);
 }
 
 /// Maintenance policy for an instance.
 class MaintenancePolicy extends $pb.GeneratedMessage {
   factory MaintenancePolicy({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.Iterable<WeeklyMaintenanceWindow>? weeklyMaintenanceWindow,
   }) {
@@ -878,8 +878,8 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
   factory MaintenancePolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaintenancePolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.redis.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..pc<WeeklyMaintenanceWindow>(4, _omitFieldNames ? '' : 'weeklyMaintenanceWindow', $pb.PbFieldType.PM, subBuilder: WeeklyMaintenanceWindow.create)
     ..hasRequiredFields = false
@@ -908,27 +908,27 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
 
   /// Output only. The time when the policy was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time when the policy was last updated.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Optional. Description of what this policy is for. Create/Update methods
   /// return INVALID_ARGUMENT if the length is greater than 512.
@@ -952,9 +952,9 @@ class MaintenancePolicy extends $pb.GeneratedMessage {
 /// updates can occur inside or outside this window.
 class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
   factory WeeklyMaintenanceWindow({
-    $4321.DayOfWeek? day,
-    $4320.TimeOfDay? startTime,
-    $1737.Duration? duration,
+    $4322.DayOfWeek? day,
+    $4321.TimeOfDay? startTime,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (day != null) {
@@ -973,9 +973,9 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
   factory WeeklyMaintenanceWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WeeklyMaintenanceWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.redis.v1beta1'), createEmptyInstance: create)
-    ..e<$4321.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE, defaultOrMaker: $4321.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4321.DayOfWeek.valueOf, enumValues: $4321.DayOfWeek.values)
-    ..aOM<$4320.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $4320.TimeOfDay.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..e<$4322.DayOfWeek>(1, _omitFieldNames ? '' : 'day', $pb.PbFieldType.OE, defaultOrMaker: $4322.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4322.DayOfWeek.valueOf, enumValues: $4322.DayOfWeek.values)
+    ..aOM<$4321.TimeOfDay>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $4321.TimeOfDay.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1002,9 +1002,9 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
 
   /// Required. The day of week that maintenance updates occur.
   @$pb.TagNumber(1)
-  $4321.DayOfWeek get day => $_getN(0);
+  $4322.DayOfWeek get day => $_getN(0);
   @$pb.TagNumber(1)
-  set day($4321.DayOfWeek v) { setField(1, v); }
+  set day($4322.DayOfWeek v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDay() => $_has(0);
   @$pb.TagNumber(1)
@@ -1012,38 +1012,38 @@ class WeeklyMaintenanceWindow extends $pb.GeneratedMessage {
 
   /// Required. Start time of the window in UTC time.
   @$pb.TagNumber(2)
-  $4320.TimeOfDay get startTime => $_getN(1);
+  $4321.TimeOfDay get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($4320.TimeOfDay v) { setField(2, v); }
+  set startTime($4321.TimeOfDay v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $4320.TimeOfDay ensureStartTime() => $_ensure(1);
+  $4321.TimeOfDay ensureStartTime() => $_ensure(1);
 
   /// Output only. Duration of the maintenance window. The current window is fixed at 1 hour.
   @$pb.TagNumber(3)
-  $1737.Duration get duration => $_getN(2);
+  $1738.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($1737.Duration v) { setField(3, v); }
+  set duration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureDuration() => $_ensure(2);
+  $1738.Duration ensureDuration() => $_ensure(2);
 }
 
 /// Upcoming maintenance schedule. If no maintenance is scheduled, fields are not
 /// populated.
 class MaintenanceSchedule extends $pb.GeneratedMessage {
   factory MaintenanceSchedule({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   @$core.Deprecated('This field is deprecated.')
     $core.bool? canReschedule,
-    $1775.Timestamp? scheduleDeadlineTime,
+    $1776.Timestamp? scheduleDeadlineTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -1066,10 +1066,10 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   factory MaintenanceSchedule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaintenanceSchedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.redis.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOB(3, _omitFieldNames ? '' : 'canReschedule')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'scheduleDeadlineTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'scheduleDeadlineTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1096,27 +1096,27 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
 
   /// Output only. The start time of any upcoming scheduled maintenance for this instance.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. The end time of any upcoming scheduled maintenance for this instance.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// If the scheduled maintenance can be rescheduled, default is true.
   @$core.Deprecated('This field is deprecated.')
@@ -1135,15 +1135,15 @@ class MaintenanceSchedule extends $pb.GeneratedMessage {
   /// Output only. The deadline that the maintenance schedule start time can not go beyond,
   /// including reschedule.
   @$pb.TagNumber(5)
-  $1775.Timestamp get scheduleDeadlineTime => $_getN(3);
+  $1776.Timestamp get scheduleDeadlineTime => $_getN(3);
   @$pb.TagNumber(5)
-  set scheduleDeadlineTime($1775.Timestamp v) { setField(5, v); }
+  set scheduleDeadlineTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasScheduleDeadlineTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearScheduleDeadlineTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureScheduleDeadlineTime() => $_ensure(3);
+  $1776.Timestamp ensureScheduleDeadlineTime() => $_ensure(3);
 }
 
 /// Request for [ListInstances][google.cloud.redis.v1beta1.CloudRedis.ListInstances].
@@ -1574,7 +1574,7 @@ class CreateInstanceRequest extends $pb.GeneratedMessage {
 /// Request for [UpdateInstance][google.cloud.redis.v1beta1.CloudRedis.UpdateInstance].
 class UpdateInstanceRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Instance? instance,
   }) {
     final $result = create();
@@ -1591,7 +1591,7 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.redis.v1beta1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Instance>(2, _omitFieldNames ? '' : 'instance', subBuilder: Instance.create)
     ..hasRequiredFields = false
   ;
@@ -1627,15 +1627,15 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   ///   *   `redisConfig`
   ///   *   `replica_count`
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Update description.
   /// Only fields specified in update_mask are updated.
@@ -2316,8 +2316,8 @@ class TlsCertificate extends $pb.GeneratedMessage {
   factory TlsCertificate({
     $core.String? serialNumber,
     $core.String? cert,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? expireTime,
     $core.String? sha1Fingerprint,
   }) {
     final $result = create();
@@ -2345,8 +2345,8 @@ class TlsCertificate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TlsCertificate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.redis.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serialNumber')
     ..aOS(2, _omitFieldNames ? '' : 'cert')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'sha1Fingerprint')
     ..hasRequiredFields = false
   ;
@@ -2396,29 +2396,29 @@ class TlsCertificate extends $pb.GeneratedMessage {
   /// 3339](https://tools.ietf.org/html/rfc3339) format, for example
   /// `2020-05-18T00:00:00.094Z`.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The time when the certificate expires in [RFC
   /// 3339](https://tools.ietf.org/html/rfc3339) format, for example
   /// `2020-05-18T00:00:00.094Z`.
   @$pb.TagNumber(4)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($1775.Timestamp v) { setField(4, v); }
+  set expireTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// Sha1 Fingerprint of the certificate.
   @$pb.TagNumber(5)

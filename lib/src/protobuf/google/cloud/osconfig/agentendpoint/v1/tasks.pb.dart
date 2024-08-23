@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'config_common.pb.dart' as $4577;
-import 'os_policy.pb.dart' as $4576;
-import 'os_policy.pbenum.dart' as $4576;
-import 'patch_jobs.pb.dart' as $4575;
+import 'config_common.pb.dart' as $4579;
+import 'os_policy.pb.dart' as $4578;
+import 'os_policy.pbenum.dart' as $4578;
+import 'patch_jobs.pb.dart' as $4577;
 import 'tasks.pbenum.dart';
 
 export 'tasks.pbenum.dart';
@@ -189,7 +189,7 @@ class Task extends $pb.GeneratedMessage {
 /// Message which instructs agent to apply patches.
 class ApplyPatchesTask extends $pb.GeneratedMessage {
   factory ApplyPatchesTask({
-    $4575.PatchConfig? patchConfig,
+    $4577.PatchConfig? patchConfig,
     $core.bool? dryRun,
   }) {
     final $result = create();
@@ -206,7 +206,7 @@ class ApplyPatchesTask extends $pb.GeneratedMessage {
   factory ApplyPatchesTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyPatchesTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1'), createEmptyInstance: create)
-    ..aOM<$4575.PatchConfig>(1, _omitFieldNames ? '' : 'patchConfig', subBuilder: $4575.PatchConfig.create)
+    ..aOM<$4577.PatchConfig>(1, _omitFieldNames ? '' : 'patchConfig', subBuilder: $4577.PatchConfig.create)
     ..aOB(3, _omitFieldNames ? '' : 'dryRun')
     ..hasRequiredFields = false
   ;
@@ -234,15 +234,15 @@ class ApplyPatchesTask extends $pb.GeneratedMessage {
 
   /// Specific information about how patches should be applied.
   @$pb.TagNumber(1)
-  $4575.PatchConfig get patchConfig => $_getN(0);
+  $4577.PatchConfig get patchConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set patchConfig($4575.PatchConfig v) { setField(1, v); }
+  set patchConfig($4577.PatchConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPatchConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearPatchConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4575.PatchConfig ensurePatchConfig() => $_ensure(0);
+  $4577.PatchConfig ensurePatchConfig() => $_ensure(0);
 
   /// If true, the agent will report its status as it goes through the motions
   /// but won't actually run any updates or perform any reboots.
@@ -363,7 +363,7 @@ class ApplyPatchesTaskOutput extends $pb.GeneratedMessage {
 /// Message which instructs agent to execute the following command.
 class ExecStepTask extends $pb.GeneratedMessage {
   factory ExecStepTask({
-    $4575.ExecStep? execStep,
+    $4577.ExecStep? execStep,
   }) {
     final $result = create();
     if (execStep != null) {
@@ -376,7 +376,7 @@ class ExecStepTask extends $pb.GeneratedMessage {
   factory ExecStepTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecStepTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1'), createEmptyInstance: create)
-    ..aOM<$4575.ExecStep>(1, _omitFieldNames ? '' : 'execStep', subBuilder: $4575.ExecStep.create)
+    ..aOM<$4577.ExecStep>(1, _omitFieldNames ? '' : 'execStep', subBuilder: $4577.ExecStep.create)
     ..hasRequiredFields = false
   ;
 
@@ -403,15 +403,15 @@ class ExecStepTask extends $pb.GeneratedMessage {
 
   /// Details of the exec step to run.
   @$pb.TagNumber(1)
-  $4575.ExecStep get execStep => $_getN(0);
+  $4577.ExecStep get execStep => $_getN(0);
   @$pb.TagNumber(1)
-  set execStep($4575.ExecStep v) { setField(1, v); }
+  set execStep($4577.ExecStep v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasExecStep() => $_has(0);
   @$pb.TagNumber(1)
   void clearExecStep() => clearField(1);
   @$pb.TagNumber(1)
-  $4575.ExecStep ensureExecStep() => $_ensure(0);
+  $4577.ExecStep ensureExecStep() => $_ensure(0);
 }
 
 /// Information reported from the agent about the exec step execution.
@@ -538,9 +538,9 @@ class ExecStepTaskOutput extends $pb.GeneratedMessage {
 class ApplyConfigTask_OSPolicy extends $pb.GeneratedMessage {
   factory ApplyConfigTask_OSPolicy({
     $core.String? id,
-    $4576.OSPolicy_Mode? mode,
+    $4578.OSPolicy_Mode? mode,
     $core.String? osPolicyAssignment,
-    $core.Iterable<$4576.OSPolicy_Resource>? resources,
+    $core.Iterable<$4578.OSPolicy_Resource>? resources,
   }) {
     final $result = create();
     if (id != null) {
@@ -563,9 +563,9 @@ class ApplyConfigTask_OSPolicy extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyConfigTask.OSPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..e<$4576.OSPolicy_Mode>(2, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: $4576.OSPolicy_Mode.MODE_UNSPECIFIED, valueOf: $4576.OSPolicy_Mode.valueOf, enumValues: $4576.OSPolicy_Mode.values)
+    ..e<$4578.OSPolicy_Mode>(2, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: $4578.OSPolicy_Mode.MODE_UNSPECIFIED, valueOf: $4578.OSPolicy_Mode.valueOf, enumValues: $4578.OSPolicy_Mode.values)
     ..aOS(3, _omitFieldNames ? '' : 'osPolicyAssignment')
-    ..pc<$4576.OSPolicy_Resource>(4, _omitFieldNames ? '' : 'resources', $pb.PbFieldType.PM, subBuilder: $4576.OSPolicy_Resource.create)
+    ..pc<$4578.OSPolicy_Resource>(4, _omitFieldNames ? '' : 'resources', $pb.PbFieldType.PM, subBuilder: $4578.OSPolicy_Resource.create)
     ..hasRequiredFields = false
   ;
 
@@ -603,9 +603,9 @@ class ApplyConfigTask_OSPolicy extends $pb.GeneratedMessage {
 
   /// The policy mode
   @$pb.TagNumber(2)
-  $4576.OSPolicy_Mode get mode => $_getN(1);
+  $4578.OSPolicy_Mode get mode => $_getN(1);
   @$pb.TagNumber(2)
-  set mode($4576.OSPolicy_Mode v) { setField(2, v); }
+  set mode($4578.OSPolicy_Mode v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMode() => $_has(1);
   @$pb.TagNumber(2)
@@ -628,7 +628,7 @@ class ApplyConfigTask_OSPolicy extends $pb.GeneratedMessage {
   /// List of resources associated with the policy to be set to their
   /// desired state.
   @$pb.TagNumber(4)
-  $core.List<$4576.OSPolicy_Resource> get resources => $_getList(3);
+  $core.List<$4578.OSPolicy_Resource> get resources => $_getList(3);
 }
 
 /// Message which instructs OS Config agent to apply the desired state
@@ -736,7 +736,7 @@ class ApplyConfigTaskOutput_OSPolicyResult extends $pb.GeneratedMessage {
   factory ApplyConfigTaskOutput_OSPolicyResult({
     $core.String? osPolicyId,
     $core.String? osPolicyAssignment,
-    $core.Iterable<$4577.OSPolicyResourceCompliance>? osPolicyResourceCompliances,
+    $core.Iterable<$4579.OSPolicyResourceCompliance>? osPolicyResourceCompliances,
   }) {
     final $result = create();
     if (osPolicyId != null) {
@@ -757,7 +757,7 @@ class ApplyConfigTaskOutput_OSPolicyResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyConfigTaskOutput.OSPolicyResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'osPolicyId')
     ..aOS(2, _omitFieldNames ? '' : 'osPolicyAssignment')
-    ..pc<$4577.OSPolicyResourceCompliance>(3, _omitFieldNames ? '' : 'osPolicyResourceCompliances', $pb.PbFieldType.PM, subBuilder: $4577.OSPolicyResourceCompliance.create)
+    ..pc<$4579.OSPolicyResourceCompliance>(3, _omitFieldNames ? '' : 'osPolicyResourceCompliances', $pb.PbFieldType.PM, subBuilder: $4579.OSPolicyResourceCompliance.create)
     ..hasRequiredFields = false
   ;
 
@@ -808,7 +808,7 @@ class ApplyConfigTaskOutput_OSPolicyResult extends $pb.GeneratedMessage {
 
   /// Results of applying desired state config for the OS policy resources.
   @$pb.TagNumber(3)
-  $core.List<$4577.OSPolicyResourceCompliance> get osPolicyResourceCompliances => $_getList(2);
+  $core.List<$4579.OSPolicyResourceCompliance> get osPolicyResourceCompliances => $_getList(2);
 }
 
 /// Information reported from the agent regarding the output of the task of

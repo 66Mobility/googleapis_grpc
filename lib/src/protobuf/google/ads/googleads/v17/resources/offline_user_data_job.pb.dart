@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/offline_user_data.pb.dart' as $3765;
-import '../enums/offline_user_data_job_failure_reason.pbenum.dart' as $3768;
-import '../enums/offline_user_data_job_match_rate_range.pbenum.dart' as $3769;
-import '../enums/offline_user_data_job_status.pbenum.dart' as $3767;
-import '../enums/offline_user_data_job_type.pbenum.dart' as $3766;
+import '../common/offline_user_data.pb.dart' as $3766;
+import '../enums/offline_user_data_job_failure_reason.pbenum.dart' as $3769;
+import '../enums/offline_user_data_job_match_rate_range.pbenum.dart' as $3770;
+import '../enums/offline_user_data_job_status.pbenum.dart' as $3768;
+import '../enums/offline_user_data_job_type.pbenum.dart' as $3767;
 
 enum OfflineUserDataJob_Metadata {
   customerMatchUserListMetadata, 
@@ -33,11 +33,11 @@ enum OfflineUserDataJob_Metadata {
 class OfflineUserDataJob extends $pb.GeneratedMessage {
   factory OfflineUserDataJob({
     $core.String? resourceName,
-    $3766.OfflineUserDataJobTypeEnum_OfflineUserDataJobType? type,
-    $3767.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus? status,
-    $3768.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason? failureReason,
-    $3765.CustomerMatchUserListMetadata? customerMatchUserListMetadata,
-    $3765.StoreSalesMetadata? storeSalesMetadata,
+    $3767.OfflineUserDataJobTypeEnum_OfflineUserDataJobType? type,
+    $3768.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus? status,
+    $3769.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason? failureReason,
+    $3766.CustomerMatchUserListMetadata? customerMatchUserListMetadata,
+    $3766.StoreSalesMetadata? storeSalesMetadata,
     $fixnum.Int64? id,
     $fixnum.Int64? externalId,
     OfflineUserDataJobMetadata? operationMetadata,
@@ -84,11 +84,11 @@ class OfflineUserDataJob extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OfflineUserDataJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [7, 8])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3766.OfflineUserDataJobTypeEnum_OfflineUserDataJobType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3766.OfflineUserDataJobTypeEnum_OfflineUserDataJobType.UNSPECIFIED, valueOf: $3766.OfflineUserDataJobTypeEnum_OfflineUserDataJobType.valueOf, enumValues: $3766.OfflineUserDataJobTypeEnum_OfflineUserDataJobType.values)
-    ..e<$3767.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3767.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus.UNSPECIFIED, valueOf: $3767.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus.valueOf, enumValues: $3767.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus.values)
-    ..e<$3768.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason>(6, _omitFieldNames ? '' : 'failureReason', $pb.PbFieldType.OE, defaultOrMaker: $3768.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason.UNSPECIFIED, valueOf: $3768.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason.valueOf, enumValues: $3768.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason.values)
-    ..aOM<$3765.CustomerMatchUserListMetadata>(7, _omitFieldNames ? '' : 'customerMatchUserListMetadata', subBuilder: $3765.CustomerMatchUserListMetadata.create)
-    ..aOM<$3765.StoreSalesMetadata>(8, _omitFieldNames ? '' : 'storeSalesMetadata', subBuilder: $3765.StoreSalesMetadata.create)
+    ..e<$3767.OfflineUserDataJobTypeEnum_OfflineUserDataJobType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3767.OfflineUserDataJobTypeEnum_OfflineUserDataJobType.UNSPECIFIED, valueOf: $3767.OfflineUserDataJobTypeEnum_OfflineUserDataJobType.valueOf, enumValues: $3767.OfflineUserDataJobTypeEnum_OfflineUserDataJobType.values)
+    ..e<$3768.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3768.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus.UNSPECIFIED, valueOf: $3768.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus.valueOf, enumValues: $3768.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus.values)
+    ..e<$3769.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason>(6, _omitFieldNames ? '' : 'failureReason', $pb.PbFieldType.OE, defaultOrMaker: $3769.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason.UNSPECIFIED, valueOf: $3769.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason.valueOf, enumValues: $3769.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason.values)
+    ..aOM<$3766.CustomerMatchUserListMetadata>(7, _omitFieldNames ? '' : 'customerMatchUserListMetadata', subBuilder: $3766.CustomerMatchUserListMetadata.create)
+    ..aOM<$3766.StoreSalesMetadata>(8, _omitFieldNames ? '' : 'storeSalesMetadata', subBuilder: $3766.StoreSalesMetadata.create)
     ..aInt64(9, _omitFieldNames ? '' : 'id')
     ..aInt64(10, _omitFieldNames ? '' : 'externalId')
     ..aOM<OfflineUserDataJobMetadata>(11, _omitFieldNames ? '' : 'operationMetadata', subBuilder: OfflineUserDataJobMetadata.create)
@@ -134,9 +134,9 @@ class OfflineUserDataJob extends $pb.GeneratedMessage {
 
   /// Immutable. Type of the job.
   @$pb.TagNumber(4)
-  $3766.OfflineUserDataJobTypeEnum_OfflineUserDataJobType get type => $_getN(1);
+  $3767.OfflineUserDataJobTypeEnum_OfflineUserDataJobType get type => $_getN(1);
   @$pb.TagNumber(4)
-  set type($3766.OfflineUserDataJobTypeEnum_OfflineUserDataJobType v) { setField(4, v); }
+  set type($3767.OfflineUserDataJobTypeEnum_OfflineUserDataJobType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(4)
@@ -144,9 +144,9 @@ class OfflineUserDataJob extends $pb.GeneratedMessage {
 
   /// Output only. Status of the job.
   @$pb.TagNumber(5)
-  $3767.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus get status => $_getN(2);
+  $3768.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus get status => $_getN(2);
   @$pb.TagNumber(5)
-  set status($3767.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus v) { setField(5, v); }
+  set status($3768.OfflineUserDataJobStatusEnum_OfflineUserDataJobStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(5)
@@ -154,9 +154,9 @@ class OfflineUserDataJob extends $pb.GeneratedMessage {
 
   /// Output only. Reason for the processing failure, if status is FAILED.
   @$pb.TagNumber(6)
-  $3768.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason get failureReason => $_getN(3);
+  $3769.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason get failureReason => $_getN(3);
   @$pb.TagNumber(6)
-  set failureReason($3768.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason v) { setField(6, v); }
+  set failureReason($3769.OfflineUserDataJobFailureReasonEnum_OfflineUserDataJobFailureReason v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFailureReason() => $_has(3);
   @$pb.TagNumber(6)
@@ -164,27 +164,27 @@ class OfflineUserDataJob extends $pb.GeneratedMessage {
 
   /// Immutable. Metadata for data updates to a CRM-based user list.
   @$pb.TagNumber(7)
-  $3765.CustomerMatchUserListMetadata get customerMatchUserListMetadata => $_getN(4);
+  $3766.CustomerMatchUserListMetadata get customerMatchUserListMetadata => $_getN(4);
   @$pb.TagNumber(7)
-  set customerMatchUserListMetadata($3765.CustomerMatchUserListMetadata v) { setField(7, v); }
+  set customerMatchUserListMetadata($3766.CustomerMatchUserListMetadata v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCustomerMatchUserListMetadata() => $_has(4);
   @$pb.TagNumber(7)
   void clearCustomerMatchUserListMetadata() => clearField(7);
   @$pb.TagNumber(7)
-  $3765.CustomerMatchUserListMetadata ensureCustomerMatchUserListMetadata() => $_ensure(4);
+  $3766.CustomerMatchUserListMetadata ensureCustomerMatchUserListMetadata() => $_ensure(4);
 
   /// Immutable. Metadata for store sales data update.
   @$pb.TagNumber(8)
-  $3765.StoreSalesMetadata get storeSalesMetadata => $_getN(5);
+  $3766.StoreSalesMetadata get storeSalesMetadata => $_getN(5);
   @$pb.TagNumber(8)
-  set storeSalesMetadata($3765.StoreSalesMetadata v) { setField(8, v); }
+  set storeSalesMetadata($3766.StoreSalesMetadata v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStoreSalesMetadata() => $_has(5);
   @$pb.TagNumber(8)
   void clearStoreSalesMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $3765.StoreSalesMetadata ensureStoreSalesMetadata() => $_ensure(5);
+  $3766.StoreSalesMetadata ensureStoreSalesMetadata() => $_ensure(5);
 
   /// Output only. ID of this offline user data job.
   @$pb.TagNumber(9)
@@ -222,7 +222,7 @@ class OfflineUserDataJob extends $pb.GeneratedMessage {
 /// Metadata of offline user data job.
 class OfflineUserDataJobMetadata extends $pb.GeneratedMessage {
   factory OfflineUserDataJobMetadata({
-    $3769.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange? matchRateRange,
+    $3770.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange? matchRateRange,
   }) {
     final $result = create();
     if (matchRateRange != null) {
@@ -235,7 +235,7 @@ class OfflineUserDataJobMetadata extends $pb.GeneratedMessage {
   factory OfflineUserDataJobMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OfflineUserDataJobMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..e<$3769.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange>(1, _omitFieldNames ? '' : 'matchRateRange', $pb.PbFieldType.OE, defaultOrMaker: $3769.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange.UNSPECIFIED, valueOf: $3769.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange.valueOf, enumValues: $3769.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange.values)
+    ..e<$3770.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange>(1, _omitFieldNames ? '' : 'matchRateRange', $pb.PbFieldType.OE, defaultOrMaker: $3770.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange.UNSPECIFIED, valueOf: $3770.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange.valueOf, enumValues: $3770.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange.values)
     ..hasRequiredFields = false
   ;
 
@@ -265,9 +265,9 @@ class OfflineUserDataJobMetadata extends $pb.GeneratedMessage {
   /// match rate when the final match rate is available after the status of the
   /// job is "SUCCESS/FAILED".
   @$pb.TagNumber(1)
-  $3769.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange get matchRateRange => $_getN(0);
+  $3770.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange get matchRateRange => $_getN(0);
   @$pb.TagNumber(1)
-  set matchRateRange($3769.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange v) { setField(1, v); }
+  set matchRateRange($3770.OfflineUserDataJobMatchRateRangeEnum_OfflineUserDataJobMatchRateRange v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMatchRateRange() => $_has(0);
   @$pb.TagNumber(1)

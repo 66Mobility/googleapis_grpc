@@ -14,20 +14,20 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'data_format_options.pb.dart' as $4419;
-import 'dataset_reference.pb.dart' as $4389;
-import 'error.pb.dart' as $4413;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'data_format_options.pb.dart' as $4420;
+import 'dataset_reference.pb.dart' as $4390;
+import 'error.pb.dart' as $4414;
 import 'job.pbenum.dart';
-import 'job_config.pb.dart' as $4414;
-import 'job_creation_reason.pb.dart' as $4418;
-import 'job_reference.pb.dart' as $4415;
-import 'job_stats.pb.dart' as $4416;
-import 'job_status.pb.dart' as $4417;
-import 'query_parameter.pb.dart' as $4404;
-import 'session_info.pb.dart' as $4412;
-import 'table_schema.pb.dart' as $4396;
+import 'job_config.pb.dart' as $4415;
+import 'job_creation_reason.pb.dart' as $4419;
+import 'job_reference.pb.dart' as $4416;
+import 'job_stats.pb.dart' as $4417;
+import 'job_status.pb.dart' as $4418;
+import 'query_parameter.pb.dart' as $4405;
+import 'session_info.pb.dart' as $4413;
+import 'table_schema.pb.dart' as $4397;
 
 export 'job.pbenum.dart';
 
@@ -38,12 +38,12 @@ class Job extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? selfLink,
     $core.String? userEmail,
-    $4414.JobConfiguration? configuration,
-    $4415.JobReference? jobReference,
-    $4416.JobStatistics? statistics,
-    $4417.JobStatus? status,
+    $4415.JobConfiguration? configuration,
+    $4416.JobReference? jobReference,
+    $4417.JobStatistics? statistics,
+    $4418.JobStatus? status,
     $core.String? principalSubject,
-    $4418.JobCreationReason? jobCreationReason,
+    $4419.JobCreationReason? jobCreationReason,
   }) {
     final $result = create();
     if (kind != null) {
@@ -91,12 +91,12 @@ class Job extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'id')
     ..aOS(4, _omitFieldNames ? '' : 'selfLink')
     ..aOS(5, _omitFieldNames ? '' : 'userEmail')
-    ..aOM<$4414.JobConfiguration>(6, _omitFieldNames ? '' : 'configuration', subBuilder: $4414.JobConfiguration.create)
-    ..aOM<$4415.JobReference>(7, _omitFieldNames ? '' : 'jobReference', subBuilder: $4415.JobReference.create)
-    ..aOM<$4416.JobStatistics>(8, _omitFieldNames ? '' : 'statistics', subBuilder: $4416.JobStatistics.create)
-    ..aOM<$4417.JobStatus>(9, _omitFieldNames ? '' : 'status', subBuilder: $4417.JobStatus.create)
+    ..aOM<$4415.JobConfiguration>(6, _omitFieldNames ? '' : 'configuration', subBuilder: $4415.JobConfiguration.create)
+    ..aOM<$4416.JobReference>(7, _omitFieldNames ? '' : 'jobReference', subBuilder: $4416.JobReference.create)
+    ..aOM<$4417.JobStatistics>(8, _omitFieldNames ? '' : 'statistics', subBuilder: $4417.JobStatistics.create)
+    ..aOM<$4418.JobStatus>(9, _omitFieldNames ? '' : 'status', subBuilder: $4418.JobStatus.create)
     ..aOS(13, _omitFieldNames ? '' : 'principalSubject')
-    ..aOM<$4418.JobCreationReason>(14, _omitFieldNames ? '' : 'jobCreationReason', subBuilder: $4418.JobCreationReason.create)
+    ..aOM<$4419.JobCreationReason>(14, _omitFieldNames ? '' : 'jobCreationReason', subBuilder: $4419.JobCreationReason.create)
     ..hasRequiredFields = false
   ;
 
@@ -173,53 +173,53 @@ class Job extends $pb.GeneratedMessage {
 
   /// Required. Describes the job configuration.
   @$pb.TagNumber(6)
-  $4414.JobConfiguration get configuration => $_getN(5);
+  $4415.JobConfiguration get configuration => $_getN(5);
   @$pb.TagNumber(6)
-  set configuration($4414.JobConfiguration v) { setField(6, v); }
+  set configuration($4415.JobConfiguration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasConfiguration() => $_has(5);
   @$pb.TagNumber(6)
   void clearConfiguration() => clearField(6);
   @$pb.TagNumber(6)
-  $4414.JobConfiguration ensureConfiguration() => $_ensure(5);
+  $4415.JobConfiguration ensureConfiguration() => $_ensure(5);
 
   /// Optional. Reference describing the unique-per-user name of the job.
   @$pb.TagNumber(7)
-  $4415.JobReference get jobReference => $_getN(6);
+  $4416.JobReference get jobReference => $_getN(6);
   @$pb.TagNumber(7)
-  set jobReference($4415.JobReference v) { setField(7, v); }
+  set jobReference($4416.JobReference v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasJobReference() => $_has(6);
   @$pb.TagNumber(7)
   void clearJobReference() => clearField(7);
   @$pb.TagNumber(7)
-  $4415.JobReference ensureJobReference() => $_ensure(6);
+  $4416.JobReference ensureJobReference() => $_ensure(6);
 
   /// Output only. Information about the job, including starting time and ending
   /// time of the job.
   @$pb.TagNumber(8)
-  $4416.JobStatistics get statistics => $_getN(7);
+  $4417.JobStatistics get statistics => $_getN(7);
   @$pb.TagNumber(8)
-  set statistics($4416.JobStatistics v) { setField(8, v); }
+  set statistics($4417.JobStatistics v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStatistics() => $_has(7);
   @$pb.TagNumber(8)
   void clearStatistics() => clearField(8);
   @$pb.TagNumber(8)
-  $4416.JobStatistics ensureStatistics() => $_ensure(7);
+  $4417.JobStatistics ensureStatistics() => $_ensure(7);
 
   /// Output only. The status of this job. Examine this value when polling an
   /// asynchronous job to see if the job is complete.
   @$pb.TagNumber(9)
-  $4417.JobStatus get status => $_getN(8);
+  $4418.JobStatus get status => $_getN(8);
   @$pb.TagNumber(9)
-  set status($4417.JobStatus v) { setField(9, v); }
+  set status($4418.JobStatus v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasStatus() => $_has(8);
   @$pb.TagNumber(9)
   void clearStatus() => clearField(9);
   @$pb.TagNumber(9)
-  $4417.JobStatus ensureStatus() => $_ensure(8);
+  $4418.JobStatus ensureStatus() => $_ensure(8);
 
   /// Output only. [Full-projection-only] String representation of identity of
   /// requesting party. Populated for both first- and third-party identities.
@@ -236,15 +236,15 @@ class Job extends $pb.GeneratedMessage {
   /// Output only. The reason why a Job was created.
   /// [Preview](/products/#product-launch-stages)
   @$pb.TagNumber(14)
-  $4418.JobCreationReason get jobCreationReason => $_getN(10);
+  $4419.JobCreationReason get jobCreationReason => $_getN(10);
   @$pb.TagNumber(14)
-  set jobCreationReason($4418.JobCreationReason v) { setField(14, v); }
+  set jobCreationReason($4419.JobCreationReason v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasJobCreationReason() => $_has(10);
   @$pb.TagNumber(14)
   void clearJobCreationReason() => clearField(14);
   @$pb.TagNumber(14)
-  $4418.JobCreationReason ensureJobCreationReason() => $_ensure(10);
+  $4419.JobCreationReason ensureJobCreationReason() => $_ensure(10);
 }
 
 /// Describes format of a jobs cancellation request.
@@ -659,9 +659,9 @@ class ListJobsRequest extends $pb.GeneratedMessage {
   factory ListJobsRequest({
     $core.String? projectId,
     $core.bool? allUsers,
-    $1780.Int32Value? maxResults,
+    $1781.Int32Value? maxResults,
     $fixnum.Int64? minCreationTime,
-    $1780.UInt64Value? maxCreationTime,
+    $1781.UInt64Value? maxCreationTime,
     $core.String? pageToken,
     ListJobsRequest_Projection? projection,
     $core.Iterable<ListJobsRequest_StateFilter>? stateFilter,
@@ -704,9 +704,9 @@ class ListJobsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListJobsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOB(2, _omitFieldNames ? '' : 'allUsers')
-    ..aOM<$1780.Int32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.Int32Value.create)
     ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'minCreationTime', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$1780.UInt64Value>(5, _omitFieldNames ? '' : 'maxCreationTime', subBuilder: $1780.UInt64Value.create)
+    ..aOM<$1781.UInt64Value>(5, _omitFieldNames ? '' : 'maxCreationTime', subBuilder: $1781.UInt64Value.create)
     ..aOS(6, _omitFieldNames ? '' : 'pageToken')
     ..e<ListJobsRequest_Projection>(7, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: ListJobsRequest_Projection.minimal, valueOf: ListJobsRequest_Projection.valueOf, enumValues: ListJobsRequest_Projection.values)
     ..pc<ListJobsRequest_StateFilter>(8, _omitFieldNames ? '' : 'stateFilter', $pb.PbFieldType.KE, valueOf: ListJobsRequest_StateFilter.valueOf, enumValues: ListJobsRequest_StateFilter.values, defaultEnumValue: ListJobsRequest_StateFilter.done)
@@ -758,15 +758,15 @@ class ListJobsRequest extends $pb.GeneratedMessage {
   /// The maximum number of results to return in a single response page.
   /// Leverage the page tokens to iterate through the entire collection.
   @$pb.TagNumber(3)
-  $1780.Int32Value get maxResults => $_getN(2);
+  $1781.Int32Value get maxResults => $_getN(2);
   @$pb.TagNumber(3)
-  set maxResults($1780.Int32Value v) { setField(3, v); }
+  set maxResults($1781.Int32Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMaxResults() => $_has(2);
   @$pb.TagNumber(3)
   void clearMaxResults() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int32Value ensureMaxResults() => $_ensure(2);
+  $1781.Int32Value ensureMaxResults() => $_ensure(2);
 
   /// Min value for job creation time, in milliseconds since the POSIX epoch.
   /// If set, only jobs created after or at this timestamp are returned.
@@ -782,15 +782,15 @@ class ListJobsRequest extends $pb.GeneratedMessage {
   /// Max value for job creation time, in milliseconds since the POSIX epoch.
   /// If set, only jobs created before or at this timestamp are returned.
   @$pb.TagNumber(5)
-  $1780.UInt64Value get maxCreationTime => $_getN(4);
+  $1781.UInt64Value get maxCreationTime => $_getN(4);
   @$pb.TagNumber(5)
-  set maxCreationTime($1780.UInt64Value v) { setField(5, v); }
+  set maxCreationTime($1781.UInt64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMaxCreationTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearMaxCreationTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.UInt64Value ensureMaxCreationTime() => $_ensure(4);
+  $1781.UInt64Value ensureMaxCreationTime() => $_ensure(4);
 
   /// Page token, returned by a previous call, to request the next page of
   /// results.
@@ -835,12 +835,12 @@ class ListFormatJob extends $pb.GeneratedMessage {
   factory ListFormatJob({
     $core.String? id,
     $core.String? kind,
-    $4415.JobReference? jobReference,
+    $4416.JobReference? jobReference,
     $core.String? state,
-    $4413.ErrorProto? errorResult,
-    $4416.JobStatistics? statistics,
-    $4414.JobConfiguration? configuration,
-    $4417.JobStatus? status,
+    $4414.ErrorProto? errorResult,
+    $4417.JobStatistics? statistics,
+    $4415.JobConfiguration? configuration,
+    $4418.JobStatus? status,
     $core.String? userEmail,
     $core.String? principalSubject,
   }) {
@@ -884,12 +884,12 @@ class ListFormatJob extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListFormatJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'kind')
-    ..aOM<$4415.JobReference>(3, _omitFieldNames ? '' : 'jobReference', subBuilder: $4415.JobReference.create)
+    ..aOM<$4416.JobReference>(3, _omitFieldNames ? '' : 'jobReference', subBuilder: $4416.JobReference.create)
     ..aOS(4, _omitFieldNames ? '' : 'state')
-    ..aOM<$4413.ErrorProto>(5, _omitFieldNames ? '' : 'errorResult', subBuilder: $4413.ErrorProto.create)
-    ..aOM<$4416.JobStatistics>(6, _omitFieldNames ? '' : 'statistics', subBuilder: $4416.JobStatistics.create)
-    ..aOM<$4414.JobConfiguration>(7, _omitFieldNames ? '' : 'configuration', subBuilder: $4414.JobConfiguration.create)
-    ..aOM<$4417.JobStatus>(8, _omitFieldNames ? '' : 'status', subBuilder: $4417.JobStatus.create)
+    ..aOM<$4414.ErrorProto>(5, _omitFieldNames ? '' : 'errorResult', subBuilder: $4414.ErrorProto.create)
+    ..aOM<$4417.JobStatistics>(6, _omitFieldNames ? '' : 'statistics', subBuilder: $4417.JobStatistics.create)
+    ..aOM<$4415.JobConfiguration>(7, _omitFieldNames ? '' : 'configuration', subBuilder: $4415.JobConfiguration.create)
+    ..aOM<$4418.JobStatus>(8, _omitFieldNames ? '' : 'status', subBuilder: $4418.JobStatus.create)
     ..aOS(9, _omitFieldNames ? '' : 'userEmail')
     ..aOS(10, _omitFieldNames ? '' : 'principalSubject')
     ..hasRequiredFields = false
@@ -938,15 +938,15 @@ class ListFormatJob extends $pb.GeneratedMessage {
 
   /// Unique opaque ID of the job.
   @$pb.TagNumber(3)
-  $4415.JobReference get jobReference => $_getN(2);
+  $4416.JobReference get jobReference => $_getN(2);
   @$pb.TagNumber(3)
-  set jobReference($4415.JobReference v) { setField(3, v); }
+  set jobReference($4416.JobReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasJobReference() => $_has(2);
   @$pb.TagNumber(3)
   void clearJobReference() => clearField(3);
   @$pb.TagNumber(3)
-  $4415.JobReference ensureJobReference() => $_ensure(2);
+  $4416.JobReference ensureJobReference() => $_ensure(2);
 
   /// Running state of the job. When the state is DONE, errorResult can be
   /// checked to determine whether the job succeeded or failed.
@@ -961,52 +961,52 @@ class ListFormatJob extends $pb.GeneratedMessage {
 
   /// A result object that will be present only if the job has failed.
   @$pb.TagNumber(5)
-  $4413.ErrorProto get errorResult => $_getN(4);
+  $4414.ErrorProto get errorResult => $_getN(4);
   @$pb.TagNumber(5)
-  set errorResult($4413.ErrorProto v) { setField(5, v); }
+  set errorResult($4414.ErrorProto v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasErrorResult() => $_has(4);
   @$pb.TagNumber(5)
   void clearErrorResult() => clearField(5);
   @$pb.TagNumber(5)
-  $4413.ErrorProto ensureErrorResult() => $_ensure(4);
+  $4414.ErrorProto ensureErrorResult() => $_ensure(4);
 
   /// Output only. Information about the job, including starting time and ending
   /// time of the job.
   @$pb.TagNumber(6)
-  $4416.JobStatistics get statistics => $_getN(5);
+  $4417.JobStatistics get statistics => $_getN(5);
   @$pb.TagNumber(6)
-  set statistics($4416.JobStatistics v) { setField(6, v); }
+  set statistics($4417.JobStatistics v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatistics() => $_has(5);
   @$pb.TagNumber(6)
   void clearStatistics() => clearField(6);
   @$pb.TagNumber(6)
-  $4416.JobStatistics ensureStatistics() => $_ensure(5);
+  $4417.JobStatistics ensureStatistics() => $_ensure(5);
 
   /// Required. Describes the job configuration.
   @$pb.TagNumber(7)
-  $4414.JobConfiguration get configuration => $_getN(6);
+  $4415.JobConfiguration get configuration => $_getN(6);
   @$pb.TagNumber(7)
-  set configuration($4414.JobConfiguration v) { setField(7, v); }
+  set configuration($4415.JobConfiguration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasConfiguration() => $_has(6);
   @$pb.TagNumber(7)
   void clearConfiguration() => clearField(7);
   @$pb.TagNumber(7)
-  $4414.JobConfiguration ensureConfiguration() => $_ensure(6);
+  $4415.JobConfiguration ensureConfiguration() => $_ensure(6);
 
   /// [Full-projection-only] Describes the status of this job.
   @$pb.TagNumber(8)
-  $4417.JobStatus get status => $_getN(7);
+  $4418.JobStatus get status => $_getN(7);
   @$pb.TagNumber(8)
-  set status($4417.JobStatus v) { setField(8, v); }
+  set status($4418.JobStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStatus() => $_has(7);
   @$pb.TagNumber(8)
   void clearStatus() => clearField(8);
   @$pb.TagNumber(8)
-  $4417.JobStatus ensureStatus() => $_ensure(7);
+  $4418.JobStatus ensureStatus() => $_ensure(7);
 
   /// [Full-projection-only] Email address of the user who ran the job.
   @$pb.TagNumber(9)
@@ -1138,12 +1138,12 @@ class GetQueryResultsRequest extends $pb.GeneratedMessage {
   factory GetQueryResultsRequest({
     $core.String? projectId,
     $core.String? jobId,
-    $1780.UInt64Value? startIndex,
+    $1781.UInt64Value? startIndex,
     $core.String? pageToken,
-    $1780.UInt32Value? maxResults,
-    $1780.UInt32Value? timeoutMs,
+    $1781.UInt32Value? maxResults,
+    $1781.UInt32Value? timeoutMs,
     $core.String? location,
-    $4419.DataFormatOptions? formatOptions,
+    $4420.DataFormatOptions? formatOptions,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -1179,12 +1179,12 @@ class GetQueryResultsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetQueryResultsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'jobId')
-    ..aOM<$1780.UInt64Value>(3, _omitFieldNames ? '' : 'startIndex', subBuilder: $1780.UInt64Value.create)
+    ..aOM<$1781.UInt64Value>(3, _omitFieldNames ? '' : 'startIndex', subBuilder: $1781.UInt64Value.create)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$1780.UInt32Value>(5, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.UInt32Value.create)
-    ..aOM<$1780.UInt32Value>(6, _omitFieldNames ? '' : 'timeoutMs', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(5, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(6, _omitFieldNames ? '' : 'timeoutMs', subBuilder: $1781.UInt32Value.create)
     ..aOS(7, _omitFieldNames ? '' : 'location')
-    ..aOM<$4419.DataFormatOptions>(8, _omitFieldNames ? '' : 'formatOptions', subBuilder: $4419.DataFormatOptions.create)
+    ..aOM<$4420.DataFormatOptions>(8, _omitFieldNames ? '' : 'formatOptions', subBuilder: $4420.DataFormatOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -1231,15 +1231,15 @@ class GetQueryResultsRequest extends $pb.GeneratedMessage {
 
   /// Zero-based index of the starting row.
   @$pb.TagNumber(3)
-  $1780.UInt64Value get startIndex => $_getN(2);
+  $1781.UInt64Value get startIndex => $_getN(2);
   @$pb.TagNumber(3)
-  set startIndex($1780.UInt64Value v) { setField(3, v); }
+  set startIndex($1781.UInt64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartIndex() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartIndex() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.UInt64Value ensureStartIndex() => $_ensure(2);
+  $1781.UInt64Value ensureStartIndex() => $_ensure(2);
 
   /// Page token, returned by a previous call, to request the next page of
   /// results.
@@ -1254,15 +1254,15 @@ class GetQueryResultsRequest extends $pb.GeneratedMessage {
 
   /// Maximum number of results to read.
   @$pb.TagNumber(5)
-  $1780.UInt32Value get maxResults => $_getN(4);
+  $1781.UInt32Value get maxResults => $_getN(4);
   @$pb.TagNumber(5)
-  set maxResults($1780.UInt32Value v) { setField(5, v); }
+  set maxResults($1781.UInt32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMaxResults() => $_has(4);
   @$pb.TagNumber(5)
   void clearMaxResults() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.UInt32Value ensureMaxResults() => $_ensure(4);
+  $1781.UInt32Value ensureMaxResults() => $_ensure(4);
 
   ///  Optional: Specifies the maximum amount of time, in milliseconds, that the
   ///  client is willing to wait for the query to complete. By default, this limit
@@ -1279,15 +1279,15 @@ class GetQueryResultsRequest extends $pb.GeneratedMessage {
   ///  by calling the getQueryResults method until the jobComplete field in the
   ///  getQueryResults response is true.
   @$pb.TagNumber(6)
-  $1780.UInt32Value get timeoutMs => $_getN(5);
+  $1781.UInt32Value get timeoutMs => $_getN(5);
   @$pb.TagNumber(6)
-  set timeoutMs($1780.UInt32Value v) { setField(6, v); }
+  set timeoutMs($1781.UInt32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeoutMs() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeoutMs() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.UInt32Value ensureTimeoutMs() => $_ensure(5);
+  $1781.UInt32Value ensureTimeoutMs() => $_ensure(5);
 
   ///  The geographic location of the job. You must specify the location to run
   ///  the job for the following scenarios:
@@ -1310,15 +1310,15 @@ class GetQueryResultsRequest extends $pb.GeneratedMessage {
 
   /// Optional. Output format adjustments.
   @$pb.TagNumber(8)
-  $4419.DataFormatOptions get formatOptions => $_getN(7);
+  $4420.DataFormatOptions get formatOptions => $_getN(7);
   @$pb.TagNumber(8)
-  set formatOptions($4419.DataFormatOptions v) { setField(8, v); }
+  set formatOptions($4420.DataFormatOptions v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasFormatOptions() => $_has(7);
   @$pb.TagNumber(8)
   void clearFormatOptions() => clearField(8);
   @$pb.TagNumber(8)
-  $4419.DataFormatOptions ensureFormatOptions() => $_ensure(7);
+  $4420.DataFormatOptions ensureFormatOptions() => $_ensure(7);
 }
 
 /// Response object of GetQueryResults.
@@ -1326,16 +1326,16 @@ class GetQueryResultsResponse extends $pb.GeneratedMessage {
   factory GetQueryResultsResponse({
     $core.String? kind,
     $core.String? etag,
-    $4396.TableSchema? schema,
-    $4415.JobReference? jobReference,
-    $1780.UInt64Value? totalRows,
+    $4397.TableSchema? schema,
+    $4416.JobReference? jobReference,
+    $1781.UInt64Value? totalRows,
     $core.String? pageToken,
-    $core.Iterable<$1734.Struct>? rows,
-    $1780.Int64Value? totalBytesProcessed,
-    $1780.BoolValue? jobComplete,
-    $core.Iterable<$4413.ErrorProto>? errors,
-    $1780.BoolValue? cacheHit,
-    $1780.Int64Value? numDmlAffectedRows,
+    $core.Iterable<$1735.Struct>? rows,
+    $1781.Int64Value? totalBytesProcessed,
+    $1781.BoolValue? jobComplete,
+    $core.Iterable<$4414.ErrorProto>? errors,
+    $1781.BoolValue? cacheHit,
+    $1781.Int64Value? numDmlAffectedRows,
   }) {
     final $result = create();
     if (kind != null) {
@@ -1383,16 +1383,16 @@ class GetQueryResultsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetQueryResultsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
     ..aOS(2, _omitFieldNames ? '' : 'etag')
-    ..aOM<$4396.TableSchema>(3, _omitFieldNames ? '' : 'schema', subBuilder: $4396.TableSchema.create)
-    ..aOM<$4415.JobReference>(4, _omitFieldNames ? '' : 'jobReference', subBuilder: $4415.JobReference.create)
-    ..aOM<$1780.UInt64Value>(5, _omitFieldNames ? '' : 'totalRows', subBuilder: $1780.UInt64Value.create)
+    ..aOM<$4397.TableSchema>(3, _omitFieldNames ? '' : 'schema', subBuilder: $4397.TableSchema.create)
+    ..aOM<$4416.JobReference>(4, _omitFieldNames ? '' : 'jobReference', subBuilder: $4416.JobReference.create)
+    ..aOM<$1781.UInt64Value>(5, _omitFieldNames ? '' : 'totalRows', subBuilder: $1781.UInt64Value.create)
     ..aOS(6, _omitFieldNames ? '' : 'pageToken')
-    ..pc<$1734.Struct>(7, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $1734.Struct.create)
-    ..aOM<$1780.Int64Value>(8, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.BoolValue>(9, _omitFieldNames ? '' : 'jobComplete', subBuilder: $1780.BoolValue.create)
-    ..pc<$4413.ErrorProto>(10, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $4413.ErrorProto.create)
-    ..aOM<$1780.BoolValue>(11, _omitFieldNames ? '' : 'cacheHit', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.Int64Value>(12, _omitFieldNames ? '' : 'numDmlAffectedRows', subBuilder: $1780.Int64Value.create)
+    ..pc<$1735.Struct>(7, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $1735.Struct.create)
+    ..aOM<$1781.Int64Value>(8, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.BoolValue>(9, _omitFieldNames ? '' : 'jobComplete', subBuilder: $1781.BoolValue.create)
+    ..pc<$4414.ErrorProto>(10, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $4414.ErrorProto.create)
+    ..aOM<$1781.BoolValue>(11, _omitFieldNames ? '' : 'cacheHit', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.Int64Value>(12, _omitFieldNames ? '' : 'numDmlAffectedRows', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1440,15 +1440,15 @@ class GetQueryResultsResponse extends $pb.GeneratedMessage {
   /// The schema of the results. Present only when the query completes
   /// successfully.
   @$pb.TagNumber(3)
-  $4396.TableSchema get schema => $_getN(2);
+  $4397.TableSchema get schema => $_getN(2);
   @$pb.TagNumber(3)
-  set schema($4396.TableSchema v) { setField(3, v); }
+  set schema($4397.TableSchema v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSchema() => $_has(2);
   @$pb.TagNumber(3)
   void clearSchema() => clearField(3);
   @$pb.TagNumber(3)
-  $4396.TableSchema ensureSchema() => $_ensure(2);
+  $4397.TableSchema ensureSchema() => $_ensure(2);
 
   /// Reference to the BigQuery Job that was created to run the query. This field
   /// will be present even if the original request timed out, in which case
@@ -1456,29 +1456,29 @@ class GetQueryResultsResponse extends $pb.GeneratedMessage {
   /// completed. Since this API only returns the first page of results,
   /// subsequent pages can be fetched via the same mechanism (GetQueryResults).
   @$pb.TagNumber(4)
-  $4415.JobReference get jobReference => $_getN(3);
+  $4416.JobReference get jobReference => $_getN(3);
   @$pb.TagNumber(4)
-  set jobReference($4415.JobReference v) { setField(4, v); }
+  set jobReference($4416.JobReference v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasJobReference() => $_has(3);
   @$pb.TagNumber(4)
   void clearJobReference() => clearField(4);
   @$pb.TagNumber(4)
-  $4415.JobReference ensureJobReference() => $_ensure(3);
+  $4416.JobReference ensureJobReference() => $_ensure(3);
 
   /// The total number of rows in the complete query result set, which can be
   /// more than the number of rows in this single page of results. Present only
   /// when the query completes successfully.
   @$pb.TagNumber(5)
-  $1780.UInt64Value get totalRows => $_getN(4);
+  $1781.UInt64Value get totalRows => $_getN(4);
   @$pb.TagNumber(5)
-  set totalRows($1780.UInt64Value v) { setField(5, v); }
+  set totalRows($1781.UInt64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTotalRows() => $_has(4);
   @$pb.TagNumber(5)
   void clearTotalRows() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.UInt64Value ensureTotalRows() => $_ensure(4);
+  $1781.UInt64Value ensureTotalRows() => $_ensure(4);
 
   /// A token used for paging results.  When this token is non-empty, it
   /// indicates additional results are available.
@@ -1499,33 +1499,33 @@ class GetQueryResultsResponse extends $pb.GeneratedMessage {
   ///  The REST-based representation of this data leverages a series of
   ///  JSON f,v objects for indicating fields and values.
   @$pb.TagNumber(7)
-  $core.List<$1734.Struct> get rows => $_getList(6);
+  $core.List<$1735.Struct> get rows => $_getList(6);
 
   /// The total number of bytes processed for this query.
   @$pb.TagNumber(8)
-  $1780.Int64Value get totalBytesProcessed => $_getN(7);
+  $1781.Int64Value get totalBytesProcessed => $_getN(7);
   @$pb.TagNumber(8)
-  set totalBytesProcessed($1780.Int64Value v) { setField(8, v); }
+  set totalBytesProcessed($1781.Int64Value v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTotalBytesProcessed() => $_has(7);
   @$pb.TagNumber(8)
   void clearTotalBytesProcessed() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.Int64Value ensureTotalBytesProcessed() => $_ensure(7);
+  $1781.Int64Value ensureTotalBytesProcessed() => $_ensure(7);
 
   /// Whether the query has completed or not. If rows or totalRows are present,
   /// this will always be true. If this is false, totalRows will not be
   /// available.
   @$pb.TagNumber(9)
-  $1780.BoolValue get jobComplete => $_getN(8);
+  $1781.BoolValue get jobComplete => $_getN(8);
   @$pb.TagNumber(9)
-  set jobComplete($1780.BoolValue v) { setField(9, v); }
+  set jobComplete($1781.BoolValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasJobComplete() => $_has(8);
   @$pb.TagNumber(9)
   void clearJobComplete() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.BoolValue ensureJobComplete() => $_ensure(8);
+  $1781.BoolValue ensureJobComplete() => $_ensure(8);
 
   /// Output only. The first errors or warnings encountered during the running
   /// of the job. The final message includes the number of errors that caused the
@@ -1534,32 +1534,32 @@ class GetQueryResultsResponse extends $pb.GeneratedMessage {
   /// see [Error
   /// messages](https://cloud.google.com/bigquery/docs/error-messages).
   @$pb.TagNumber(10)
-  $core.List<$4413.ErrorProto> get errors => $_getList(9);
+  $core.List<$4414.ErrorProto> get errors => $_getList(9);
 
   /// Whether the query result was fetched from the query cache.
   @$pb.TagNumber(11)
-  $1780.BoolValue get cacheHit => $_getN(10);
+  $1781.BoolValue get cacheHit => $_getN(10);
   @$pb.TagNumber(11)
-  set cacheHit($1780.BoolValue v) { setField(11, v); }
+  set cacheHit($1781.BoolValue v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCacheHit() => $_has(10);
   @$pb.TagNumber(11)
   void clearCacheHit() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.BoolValue ensureCacheHit() => $_ensure(10);
+  $1781.BoolValue ensureCacheHit() => $_ensure(10);
 
   /// Output only. The number of rows affected by a DML statement. Present only
   /// for DML statements INSERT, UPDATE or DELETE.
   @$pb.TagNumber(12)
-  $1780.Int64Value get numDmlAffectedRows => $_getN(11);
+  $1781.Int64Value get numDmlAffectedRows => $_getN(11);
   @$pb.TagNumber(12)
-  set numDmlAffectedRows($1780.Int64Value v) { setField(12, v); }
+  set numDmlAffectedRows($1781.Int64Value v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasNumDmlAffectedRows() => $_has(11);
   @$pb.TagNumber(12)
   void clearNumDmlAffectedRows() => clearField(12);
   @$pb.TagNumber(12)
-  $1780.Int64Value ensureNumDmlAffectedRows() => $_ensure(11);
+  $1781.Int64Value ensureNumDmlAffectedRows() => $_ensure(11);
 }
 
 /// Request format for the query request.
@@ -1636,21 +1636,21 @@ class QueryRequest extends $pb.GeneratedMessage {
   factory QueryRequest({
     $core.String? kind,
     $core.String? query,
-    $1780.UInt32Value? maxResults,
-    $4389.DatasetReference? defaultDataset,
-    $1780.UInt32Value? timeoutMs,
+    $1781.UInt32Value? maxResults,
+    $4390.DatasetReference? defaultDataset,
+    $1781.UInt32Value? timeoutMs,
     $core.bool? dryRun,
-    $1780.BoolValue? useQueryCache,
-    $1780.BoolValue? useLegacySql,
+    $1781.BoolValue? useQueryCache,
+    $1781.BoolValue? useLegacySql,
     $core.String? parameterMode,
-    $core.Iterable<$4404.QueryParameter>? queryParameters,
+    $core.Iterable<$4405.QueryParameter>? queryParameters,
     $core.String? location,
-    $4419.DataFormatOptions? formatOptions,
-    $core.Iterable<$4414.ConnectionProperty>? connectionProperties,
+    $4420.DataFormatOptions? formatOptions,
+    $core.Iterable<$4415.ConnectionProperty>? connectionProperties,
     $core.Map<$core.String, $core.String>? labels,
-    $1780.Int64Value? maximumBytesBilled,
+    $1781.Int64Value? maximumBytesBilled,
     $core.String? requestId,
-    $1780.BoolValue? createSession,
+    $1781.BoolValue? createSession,
     QueryRequest_JobCreationMode? jobCreationMode,
   }) {
     final $result = create();
@@ -1717,21 +1717,21 @@ class QueryRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'kind')
     ..aOS(3, _omitFieldNames ? '' : 'query')
-    ..aOM<$1780.UInt32Value>(4, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.UInt32Value.create)
-    ..aOM<$4389.DatasetReference>(5, _omitFieldNames ? '' : 'defaultDataset', subBuilder: $4389.DatasetReference.create)
-    ..aOM<$1780.UInt32Value>(6, _omitFieldNames ? '' : 'timeoutMs', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(4, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.UInt32Value.create)
+    ..aOM<$4390.DatasetReference>(5, _omitFieldNames ? '' : 'defaultDataset', subBuilder: $4390.DatasetReference.create)
+    ..aOM<$1781.UInt32Value>(6, _omitFieldNames ? '' : 'timeoutMs', subBuilder: $1781.UInt32Value.create)
     ..aOB(7, _omitFieldNames ? '' : 'dryRun')
-    ..aOM<$1780.BoolValue>(9, _omitFieldNames ? '' : 'useQueryCache', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(10, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(9, _omitFieldNames ? '' : 'useQueryCache', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(10, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1781.BoolValue.create)
     ..aOS(11, _omitFieldNames ? '' : 'parameterMode')
-    ..pc<$4404.QueryParameter>(12, _omitFieldNames ? '' : 'queryParameters', $pb.PbFieldType.PM, subBuilder: $4404.QueryParameter.create)
+    ..pc<$4405.QueryParameter>(12, _omitFieldNames ? '' : 'queryParameters', $pb.PbFieldType.PM, subBuilder: $4405.QueryParameter.create)
     ..aOS(13, _omitFieldNames ? '' : 'location')
-    ..aOM<$4419.DataFormatOptions>(15, _omitFieldNames ? '' : 'formatOptions', subBuilder: $4419.DataFormatOptions.create)
-    ..pc<$4414.ConnectionProperty>(16, _omitFieldNames ? '' : 'connectionProperties', $pb.PbFieldType.PM, subBuilder: $4414.ConnectionProperty.create)
+    ..aOM<$4420.DataFormatOptions>(15, _omitFieldNames ? '' : 'formatOptions', subBuilder: $4420.DataFormatOptions.create)
+    ..pc<$4415.ConnectionProperty>(16, _omitFieldNames ? '' : 'connectionProperties', $pb.PbFieldType.PM, subBuilder: $4415.ConnectionProperty.create)
     ..m<$core.String, $core.String>(17, _omitFieldNames ? '' : 'labels', entryClassName: 'QueryRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
-    ..aOM<$1780.Int64Value>(18, _omitFieldNames ? '' : 'maximumBytesBilled', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(18, _omitFieldNames ? '' : 'maximumBytesBilled', subBuilder: $1781.Int64Value.create)
     ..aOS(19, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$1780.BoolValue>(20, _omitFieldNames ? '' : 'createSession', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(20, _omitFieldNames ? '' : 'createSession', subBuilder: $1781.BoolValue.create)
     ..e<QueryRequest_JobCreationMode>(22, _omitFieldNames ? '' : 'jobCreationMode', $pb.PbFieldType.OE, defaultOrMaker: QueryRequest_JobCreationMode.JOB_CREATION_MODE_UNSPECIFIED, valueOf: QueryRequest_JobCreationMode.valueOf, enumValues: QueryRequest_JobCreationMode.values)
     ..hasRequiredFields = false
   ;
@@ -1785,29 +1785,29 @@ class QueryRequest extends $pb.GeneratedMessage {
   /// large. In addition to this limit, responses are also limited to 10 MB. By
   /// default, there is no maximum row count, and only the byte limit applies.
   @$pb.TagNumber(4)
-  $1780.UInt32Value get maxResults => $_getN(2);
+  $1781.UInt32Value get maxResults => $_getN(2);
   @$pb.TagNumber(4)
-  set maxResults($1780.UInt32Value v) { setField(4, v); }
+  set maxResults($1781.UInt32Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxResults() => $_has(2);
   @$pb.TagNumber(4)
   void clearMaxResults() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.UInt32Value ensureMaxResults() => $_ensure(2);
+  $1781.UInt32Value ensureMaxResults() => $_ensure(2);
 
   /// Optional. Specifies the default datasetId and projectId to assume for any
   /// unqualified table names in the query. If not set, all table names in the
   /// query string must be qualified in the format 'datasetId.tableId'.
   @$pb.TagNumber(5)
-  $4389.DatasetReference get defaultDataset => $_getN(3);
+  $4390.DatasetReference get defaultDataset => $_getN(3);
   @$pb.TagNumber(5)
-  set defaultDataset($4389.DatasetReference v) { setField(5, v); }
+  set defaultDataset($4390.DatasetReference v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDefaultDataset() => $_has(3);
   @$pb.TagNumber(5)
   void clearDefaultDataset() => clearField(5);
   @$pb.TagNumber(5)
-  $4389.DatasetReference ensureDefaultDataset() => $_ensure(3);
+  $4390.DatasetReference ensureDefaultDataset() => $_ensure(3);
 
   ///  Optional. Optional: Specifies the maximum amount of time, in milliseconds,
   ///  that the client is willing to wait for the query to complete. By default,
@@ -1824,15 +1824,15 @@ class QueryRequest extends $pb.GeneratedMessage {
   ///  by calling the getQueryResults method until the jobComplete field in the
   ///  getQueryResults response is true.
   @$pb.TagNumber(6)
-  $1780.UInt32Value get timeoutMs => $_getN(4);
+  $1781.UInt32Value get timeoutMs => $_getN(4);
   @$pb.TagNumber(6)
-  set timeoutMs($1780.UInt32Value v) { setField(6, v); }
+  set timeoutMs($1781.UInt32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeoutMs() => $_has(4);
   @$pb.TagNumber(6)
   void clearTimeoutMs() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.UInt32Value ensureTimeoutMs() => $_ensure(4);
+  $1781.UInt32Value ensureTimeoutMs() => $_ensure(4);
 
   /// Optional. If set to true, BigQuery doesn't run the job. Instead, if the
   /// query is valid, BigQuery returns statistics about the job such as how many
@@ -1851,15 +1851,15 @@ class QueryRequest extends $pb.GeneratedMessage {
   /// cache is a best-effort cache that will be flushed whenever tables in the
   /// query are modified. The default value is true.
   @$pb.TagNumber(9)
-  $1780.BoolValue get useQueryCache => $_getN(6);
+  $1781.BoolValue get useQueryCache => $_getN(6);
   @$pb.TagNumber(9)
-  set useQueryCache($1780.BoolValue v) { setField(9, v); }
+  set useQueryCache($1781.BoolValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUseQueryCache() => $_has(6);
   @$pb.TagNumber(9)
   void clearUseQueryCache() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.BoolValue ensureUseQueryCache() => $_ensure(6);
+  $1781.BoolValue ensureUseQueryCache() => $_ensure(6);
 
   /// Specifies whether to use BigQuery's legacy SQL dialect for this query. The
   /// default value is true. If set to false, the query will use BigQuery's
@@ -1867,15 +1867,15 @@ class QueryRequest extends $pb.GeneratedMessage {
   /// useLegacySql is set to false, the value of flattenResults is ignored; query
   /// will be run as if flattenResults is false.
   @$pb.TagNumber(10)
-  $1780.BoolValue get useLegacySql => $_getN(7);
+  $1781.BoolValue get useLegacySql => $_getN(7);
   @$pb.TagNumber(10)
-  set useLegacySql($1780.BoolValue v) { setField(10, v); }
+  set useLegacySql($1781.BoolValue v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUseLegacySql() => $_has(7);
   @$pb.TagNumber(10)
   void clearUseLegacySql() => clearField(10);
   @$pb.TagNumber(10)
-  $1780.BoolValue ensureUseLegacySql() => $_ensure(7);
+  $1781.BoolValue ensureUseLegacySql() => $_ensure(7);
 
   /// GoogleSQL only. Set to POSITIONAL to use positional (?) query parameters
   /// or to NAMED to use named (@myparam) query parameters in this query.
@@ -1890,7 +1890,7 @@ class QueryRequest extends $pb.GeneratedMessage {
 
   /// Query parameters for GoogleSQL queries.
   @$pb.TagNumber(12)
-  $core.List<$4404.QueryParameter> get queryParameters => $_getList(9);
+  $core.List<$4405.QueryParameter> get queryParameters => $_getList(9);
 
   /// The geographic location where the job should run. See details at
   /// https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
@@ -1905,19 +1905,19 @@ class QueryRequest extends $pb.GeneratedMessage {
 
   /// Optional. Output format adjustments.
   @$pb.TagNumber(15)
-  $4419.DataFormatOptions get formatOptions => $_getN(11);
+  $4420.DataFormatOptions get formatOptions => $_getN(11);
   @$pb.TagNumber(15)
-  set formatOptions($4419.DataFormatOptions v) { setField(15, v); }
+  set formatOptions($4420.DataFormatOptions v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasFormatOptions() => $_has(11);
   @$pb.TagNumber(15)
   void clearFormatOptions() => clearField(15);
   @$pb.TagNumber(15)
-  $4419.DataFormatOptions ensureFormatOptions() => $_ensure(11);
+  $4420.DataFormatOptions ensureFormatOptions() => $_ensure(11);
 
   /// Optional. Connection properties which can modify the query behavior.
   @$pb.TagNumber(16)
-  $core.List<$4414.ConnectionProperty> get connectionProperties => $_getList(12);
+  $core.List<$4415.ConnectionProperty> get connectionProperties => $_getList(12);
 
   /// Optional. The labels associated with this query.
   /// Labels can be used to organize and group query jobs.
@@ -1932,15 +1932,15 @@ class QueryRequest extends $pb.GeneratedMessage {
   /// bytes billed above this limit will fail (without incurring a charge).
   /// If unspecified, the project default is used.
   @$pb.TagNumber(18)
-  $1780.Int64Value get maximumBytesBilled => $_getN(14);
+  $1781.Int64Value get maximumBytesBilled => $_getN(14);
   @$pb.TagNumber(18)
-  set maximumBytesBilled($1780.Int64Value v) { setField(18, v); }
+  set maximumBytesBilled($1781.Int64Value v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasMaximumBytesBilled() => $_has(14);
   @$pb.TagNumber(18)
   void clearMaximumBytesBilled() => clearField(18);
   @$pb.TagNumber(18)
-  $1780.Int64Value ensureMaximumBytesBilled() => $_ensure(14);
+  $1781.Int64Value ensureMaximumBytesBilled() => $_ensure(14);
 
   ///  Optional. A unique user provided identifier to ensure idempotent behavior
   ///  for queries. Note that this is different from the job_id. It has the
@@ -1988,15 +1988,15 @@ class QueryRequest extends $pb.GeneratedMessage {
   ///  The session location will be set to QueryRequest.location if it is present,
   ///  otherwise it's set to the default location based on existing routing logic.
   @$pb.TagNumber(20)
-  $1780.BoolValue get createSession => $_getN(16);
+  $1781.BoolValue get createSession => $_getN(16);
   @$pb.TagNumber(20)
-  set createSession($1780.BoolValue v) { setField(20, v); }
+  set createSession($1781.BoolValue v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasCreateSession() => $_has(16);
   @$pb.TagNumber(20)
   void clearCreateSession() => clearField(20);
   @$pb.TagNumber(20)
-  $1780.BoolValue ensureCreateSession() => $_ensure(16);
+  $1781.BoolValue ensureCreateSession() => $_ensure(16);
 
   ///  Optional. If not set, jobs are always required.
   ///
@@ -2015,20 +2015,20 @@ class QueryRequest extends $pb.GeneratedMessage {
 class QueryResponse extends $pb.GeneratedMessage {
   factory QueryResponse({
     $core.String? kind,
-    $4396.TableSchema? schema,
-    $4415.JobReference? jobReference,
-    $1780.UInt64Value? totalRows,
+    $4397.TableSchema? schema,
+    $4416.JobReference? jobReference,
+    $1781.UInt64Value? totalRows,
     $core.String? pageToken,
-    $core.Iterable<$1734.Struct>? rows,
-    $1780.Int64Value? totalBytesProcessed,
-    $1780.BoolValue? jobComplete,
-    $core.Iterable<$4413.ErrorProto>? errors,
-    $1780.BoolValue? cacheHit,
-    $1780.Int64Value? numDmlAffectedRows,
-    $4412.SessionInfo? sessionInfo,
-    $4416.DmlStats? dmlStats,
+    $core.Iterable<$1735.Struct>? rows,
+    $1781.Int64Value? totalBytesProcessed,
+    $1781.BoolValue? jobComplete,
+    $core.Iterable<$4414.ErrorProto>? errors,
+    $1781.BoolValue? cacheHit,
+    $1781.Int64Value? numDmlAffectedRows,
+    $4413.SessionInfo? sessionInfo,
+    $4417.DmlStats? dmlStats,
     $core.String? queryId,
-    $4418.JobCreationReason? jobCreationReason,
+    $4419.JobCreationReason? jobCreationReason,
   }) {
     final $result = create();
     if (kind != null) {
@@ -2084,20 +2084,20 @@ class QueryResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
-    ..aOM<$4396.TableSchema>(2, _omitFieldNames ? '' : 'schema', subBuilder: $4396.TableSchema.create)
-    ..aOM<$4415.JobReference>(3, _omitFieldNames ? '' : 'jobReference', subBuilder: $4415.JobReference.create)
-    ..aOM<$1780.UInt64Value>(4, _omitFieldNames ? '' : 'totalRows', subBuilder: $1780.UInt64Value.create)
+    ..aOM<$4397.TableSchema>(2, _omitFieldNames ? '' : 'schema', subBuilder: $4397.TableSchema.create)
+    ..aOM<$4416.JobReference>(3, _omitFieldNames ? '' : 'jobReference', subBuilder: $4416.JobReference.create)
+    ..aOM<$1781.UInt64Value>(4, _omitFieldNames ? '' : 'totalRows', subBuilder: $1781.UInt64Value.create)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
-    ..pc<$1734.Struct>(6, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $1734.Struct.create)
-    ..aOM<$1780.Int64Value>(7, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.BoolValue>(8, _omitFieldNames ? '' : 'jobComplete', subBuilder: $1780.BoolValue.create)
-    ..pc<$4413.ErrorProto>(9, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $4413.ErrorProto.create)
-    ..aOM<$1780.BoolValue>(10, _omitFieldNames ? '' : 'cacheHit', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.Int64Value>(11, _omitFieldNames ? '' : 'numDmlAffectedRows', subBuilder: $1780.Int64Value.create)
-    ..aOM<$4412.SessionInfo>(12, _omitFieldNames ? '' : 'sessionInfo', subBuilder: $4412.SessionInfo.create)
-    ..aOM<$4416.DmlStats>(13, _omitFieldNames ? '' : 'dmlStats', subBuilder: $4416.DmlStats.create)
+    ..pc<$1735.Struct>(6, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $1735.Struct.create)
+    ..aOM<$1781.Int64Value>(7, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.BoolValue>(8, _omitFieldNames ? '' : 'jobComplete', subBuilder: $1781.BoolValue.create)
+    ..pc<$4414.ErrorProto>(9, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $4414.ErrorProto.create)
+    ..aOM<$1781.BoolValue>(10, _omitFieldNames ? '' : 'cacheHit', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.Int64Value>(11, _omitFieldNames ? '' : 'numDmlAffectedRows', subBuilder: $1781.Int64Value.create)
+    ..aOM<$4413.SessionInfo>(12, _omitFieldNames ? '' : 'sessionInfo', subBuilder: $4413.SessionInfo.create)
+    ..aOM<$4417.DmlStats>(13, _omitFieldNames ? '' : 'dmlStats', subBuilder: $4417.DmlStats.create)
     ..aOS(14, _omitFieldNames ? '' : 'queryId')
-    ..aOM<$4418.JobCreationReason>(15, _omitFieldNames ? '' : 'jobCreationReason', subBuilder: $4418.JobCreationReason.create)
+    ..aOM<$4419.JobCreationReason>(15, _omitFieldNames ? '' : 'jobCreationReason', subBuilder: $4419.JobCreationReason.create)
     ..hasRequiredFields = false
   ;
 
@@ -2135,15 +2135,15 @@ class QueryResponse extends $pb.GeneratedMessage {
   /// The schema of the results. Present only when the query completes
   /// successfully.
   @$pb.TagNumber(2)
-  $4396.TableSchema get schema => $_getN(1);
+  $4397.TableSchema get schema => $_getN(1);
   @$pb.TagNumber(2)
-  set schema($4396.TableSchema v) { setField(2, v); }
+  set schema($4397.TableSchema v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSchema() => $_has(1);
   @$pb.TagNumber(2)
   void clearSchema() => clearField(2);
   @$pb.TagNumber(2)
-  $4396.TableSchema ensureSchema() => $_ensure(1);
+  $4397.TableSchema ensureSchema() => $_ensure(1);
 
   ///  Reference to the Job that was created to run the query. This field will be
   ///  present even if the original request timed out, in which case
@@ -2154,28 +2154,28 @@ class QueryResponse extends $pb.GeneratedMessage {
   ///  If job_creation_mode was set to `JOB_CREATION_OPTIONAL` and the query
   ///  completes without creating a job, this field will be empty.
   @$pb.TagNumber(3)
-  $4415.JobReference get jobReference => $_getN(2);
+  $4416.JobReference get jobReference => $_getN(2);
   @$pb.TagNumber(3)
-  set jobReference($4415.JobReference v) { setField(3, v); }
+  set jobReference($4416.JobReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasJobReference() => $_has(2);
   @$pb.TagNumber(3)
   void clearJobReference() => clearField(3);
   @$pb.TagNumber(3)
-  $4415.JobReference ensureJobReference() => $_ensure(2);
+  $4416.JobReference ensureJobReference() => $_ensure(2);
 
   /// The total number of rows in the complete query result set, which can be
   /// more than the number of rows in this single page of results.
   @$pb.TagNumber(4)
-  $1780.UInt64Value get totalRows => $_getN(3);
+  $1781.UInt64Value get totalRows => $_getN(3);
   @$pb.TagNumber(4)
-  set totalRows($1780.UInt64Value v) { setField(4, v); }
+  set totalRows($1781.UInt64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTotalRows() => $_has(3);
   @$pb.TagNumber(4)
   void clearTotalRows() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.UInt64Value ensureTotalRows() => $_ensure(3);
+  $1781.UInt64Value ensureTotalRows() => $_ensure(3);
 
   /// A token used for paging results. A non-empty token indicates that
   /// additional results are available. To see additional results,
@@ -2196,35 +2196,35 @@ class QueryResponse extends $pb.GeneratedMessage {
   /// permitted reply size. To get any additional rows, you can call
   /// GetQueryResults and specify the jobReference returned above.
   @$pb.TagNumber(6)
-  $core.List<$1734.Struct> get rows => $_getList(5);
+  $core.List<$1735.Struct> get rows => $_getList(5);
 
   /// The total number of bytes processed for this query. If this query was a dry
   /// run, this is the number of bytes that would be processed if the query were
   /// run.
   @$pb.TagNumber(7)
-  $1780.Int64Value get totalBytesProcessed => $_getN(6);
+  $1781.Int64Value get totalBytesProcessed => $_getN(6);
   @$pb.TagNumber(7)
-  set totalBytesProcessed($1780.Int64Value v) { setField(7, v); }
+  set totalBytesProcessed($1781.Int64Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTotalBytesProcessed() => $_has(6);
   @$pb.TagNumber(7)
   void clearTotalBytesProcessed() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int64Value ensureTotalBytesProcessed() => $_ensure(6);
+  $1781.Int64Value ensureTotalBytesProcessed() => $_ensure(6);
 
   /// Whether the query has completed or not. If rows or totalRows are present,
   /// this will always be true. If this is false, totalRows will not be
   /// available.
   @$pb.TagNumber(8)
-  $1780.BoolValue get jobComplete => $_getN(7);
+  $1781.BoolValue get jobComplete => $_getN(7);
   @$pb.TagNumber(8)
-  set jobComplete($1780.BoolValue v) { setField(8, v); }
+  set jobComplete($1781.BoolValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasJobComplete() => $_has(7);
   @$pb.TagNumber(8)
   void clearJobComplete() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.BoolValue ensureJobComplete() => $_ensure(7);
+  $1781.BoolValue ensureJobComplete() => $_ensure(7);
 
   /// Output only. The first errors or warnings encountered during the running of
   /// the job. The final message includes the number of errors that caused the
@@ -2233,57 +2233,57 @@ class QueryResponse extends $pb.GeneratedMessage {
   /// see [Error
   /// messages](https://cloud.google.com/bigquery/docs/error-messages).
   @$pb.TagNumber(9)
-  $core.List<$4413.ErrorProto> get errors => $_getList(8);
+  $core.List<$4414.ErrorProto> get errors => $_getList(8);
 
   /// Whether the query result was fetched from the query cache.
   @$pb.TagNumber(10)
-  $1780.BoolValue get cacheHit => $_getN(9);
+  $1781.BoolValue get cacheHit => $_getN(9);
   @$pb.TagNumber(10)
-  set cacheHit($1780.BoolValue v) { setField(10, v); }
+  set cacheHit($1781.BoolValue v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCacheHit() => $_has(9);
   @$pb.TagNumber(10)
   void clearCacheHit() => clearField(10);
   @$pb.TagNumber(10)
-  $1780.BoolValue ensureCacheHit() => $_ensure(9);
+  $1781.BoolValue ensureCacheHit() => $_ensure(9);
 
   /// Output only. The number of rows affected by a DML statement. Present only
   /// for DML statements INSERT, UPDATE or DELETE.
   @$pb.TagNumber(11)
-  $1780.Int64Value get numDmlAffectedRows => $_getN(10);
+  $1781.Int64Value get numDmlAffectedRows => $_getN(10);
   @$pb.TagNumber(11)
-  set numDmlAffectedRows($1780.Int64Value v) { setField(11, v); }
+  set numDmlAffectedRows($1781.Int64Value v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasNumDmlAffectedRows() => $_has(10);
   @$pb.TagNumber(11)
   void clearNumDmlAffectedRows() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.Int64Value ensureNumDmlAffectedRows() => $_ensure(10);
+  $1781.Int64Value ensureNumDmlAffectedRows() => $_ensure(10);
 
   /// Output only. Information of the session if this job is part of one.
   @$pb.TagNumber(12)
-  $4412.SessionInfo get sessionInfo => $_getN(11);
+  $4413.SessionInfo get sessionInfo => $_getN(11);
   @$pb.TagNumber(12)
-  set sessionInfo($4412.SessionInfo v) { setField(12, v); }
+  set sessionInfo($4413.SessionInfo v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSessionInfo() => $_has(11);
   @$pb.TagNumber(12)
   void clearSessionInfo() => clearField(12);
   @$pb.TagNumber(12)
-  $4412.SessionInfo ensureSessionInfo() => $_ensure(11);
+  $4413.SessionInfo ensureSessionInfo() => $_ensure(11);
 
   /// Output only. Detailed statistics for DML statements INSERT, UPDATE, DELETE,
   /// MERGE or TRUNCATE.
   @$pb.TagNumber(13)
-  $4416.DmlStats get dmlStats => $_getN(12);
+  $4417.DmlStats get dmlStats => $_getN(12);
   @$pb.TagNumber(13)
-  set dmlStats($4416.DmlStats v) { setField(13, v); }
+  set dmlStats($4417.DmlStats v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDmlStats() => $_has(12);
   @$pb.TagNumber(13)
   void clearDmlStats() => clearField(13);
   @$pb.TagNumber(13)
-  $4416.DmlStats ensureDmlStats() => $_ensure(12);
+  $4417.DmlStats ensureDmlStats() => $_ensure(12);
 
   /// Auto-generated ID for the query.
   /// [Preview](/products/#product-launch-stages)
@@ -2302,15 +2302,15 @@ class QueryResponse extends $pb.GeneratedMessage {
   ///  If job_reference is not present it will always be unset.
   ///  [Preview](/products/#product-launch-stages)
   @$pb.TagNumber(15)
-  $4418.JobCreationReason get jobCreationReason => $_getN(14);
+  $4419.JobCreationReason get jobCreationReason => $_getN(14);
   @$pb.TagNumber(15)
-  set jobCreationReason($4418.JobCreationReason v) { setField(15, v); }
+  set jobCreationReason($4419.JobCreationReason v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasJobCreationReason() => $_has(14);
   @$pb.TagNumber(15)
   void clearJobCreationReason() => clearField(15);
   @$pb.TagNumber(15)
-  $4418.JobCreationReason ensureJobCreationReason() => $_ensure(14);
+  $4419.JobCreationReason ensureJobCreationReason() => $_ensure(14);
 }
 
 

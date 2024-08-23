@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pbenum.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pbenum.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'syntax.pbenum.dart';
 
 export 'syntax.pbenum.dart';
@@ -1064,7 +1064,7 @@ enum Constant_ConstantKind {
 ///  `true`, `null`.
 class Constant extends $pb.GeneratedMessage {
   factory Constant({
-    $1734.NullValue? nullValue,
+    $1735.NullValue? nullValue,
     $core.bool? boolValue,
     $fixnum.Int64? int64Value,
     $fixnum.Int64? uint64Value,
@@ -1072,9 +1072,9 @@ class Constant extends $pb.GeneratedMessage {
     $core.String? stringValue,
     $core.List<$core.int>? bytesValue,
   @$core.Deprecated('This field is deprecated.')
-    $1737.Duration? durationValue,
+    $1738.Duration? durationValue,
   @$core.Deprecated('This field is deprecated.')
-    $1775.Timestamp? timestampValue,
+    $1776.Timestamp? timestampValue,
   }) {
     final $result = create();
     if (nullValue != null) {
@@ -1126,15 +1126,15 @@ class Constant extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Constant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.expr.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7, 8, 9])
-    ..e<$1734.NullValue>(1, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $1734.NullValue.NULL_VALUE, valueOf: $1734.NullValue.valueOf, enumValues: $1734.NullValue.values)
+    ..e<$1735.NullValue>(1, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $1735.NullValue.NULL_VALUE, valueOf: $1735.NullValue.valueOf, enumValues: $1735.NullValue.values)
     ..aOB(2, _omitFieldNames ? '' : 'boolValue')
     ..aInt64(3, _omitFieldNames ? '' : 'int64Value')
     ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'uint64Value', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aOS(6, _omitFieldNames ? '' : 'stringValue')
     ..a<$core.List<$core.int>>(7, _omitFieldNames ? '' : 'bytesValue', $pb.PbFieldType.OY)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'durationValue', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'durationValue', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1164,9 +1164,9 @@ class Constant extends $pb.GeneratedMessage {
 
   /// null value.
   @$pb.TagNumber(1)
-  $1734.NullValue get nullValue => $_getN(0);
+  $1735.NullValue get nullValue => $_getN(0);
   @$pb.TagNumber(1)
-  set nullValue($1734.NullValue v) { setField(1, v); }
+  set nullValue($1735.NullValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNullValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -1237,10 +1237,10 @@ class Constant extends $pb.GeneratedMessage {
   ///  Deprecated: duration is no longer considered a builtin cel type.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
-  $1737.Duration get durationValue => $_getN(7);
+  $1738.Duration get durationValue => $_getN(7);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
-  set durationValue($1737.Duration v) { setField(8, v); }
+  set durationValue($1738.Duration v) { setField(8, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
   $core.bool hasDurationValue() => $_has(7);
@@ -1249,17 +1249,17 @@ class Constant extends $pb.GeneratedMessage {
   void clearDurationValue() => clearField(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
-  $1737.Duration ensureDurationValue() => $_ensure(7);
+  $1738.Duration ensureDurationValue() => $_ensure(7);
 
   ///  protobuf.Timestamp value.
   ///
   ///  Deprecated: timestamp is no longer considered a builtin cel type.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $1775.Timestamp get timestampValue => $_getN(8);
+  $1776.Timestamp get timestampValue => $_getN(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  set timestampValue($1775.Timestamp v) { setField(9, v); }
+  set timestampValue($1776.Timestamp v) { setField(9, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
   $core.bool hasTimestampValue() => $_has(8);
@@ -1268,7 +1268,7 @@ class Constant extends $pb.GeneratedMessage {
   void clearTimestampValue() => clearField(9);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureTimestampValue() => $_ensure(8);
+  $1776.Timestamp ensureTimestampValue() => $_ensure(8);
 }
 
 /// Version

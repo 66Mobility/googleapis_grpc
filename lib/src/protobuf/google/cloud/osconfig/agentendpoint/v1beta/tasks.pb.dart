@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'patch_jobs.pb.dart' as $4580;
+import 'patch_jobs.pb.dart' as $4582;
 import 'tasks.pbenum.dart';
 
 export 'tasks.pbenum.dart';
@@ -166,7 +166,7 @@ class Task extends $pb.GeneratedMessage {
 /// Message which instructs agent to apply patches.
 class ApplyPatchesTask extends $pb.GeneratedMessage {
   factory ApplyPatchesTask({
-    $4580.PatchConfig? patchConfig,
+    $4582.PatchConfig? patchConfig,
     $core.bool? dryRun,
   }) {
     final $result = create();
@@ -183,7 +183,7 @@ class ApplyPatchesTask extends $pb.GeneratedMessage {
   factory ApplyPatchesTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyPatchesTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1beta'), createEmptyInstance: create)
-    ..aOM<$4580.PatchConfig>(1, _omitFieldNames ? '' : 'patchConfig', subBuilder: $4580.PatchConfig.create)
+    ..aOM<$4582.PatchConfig>(1, _omitFieldNames ? '' : 'patchConfig', subBuilder: $4582.PatchConfig.create)
     ..aOB(3, _omitFieldNames ? '' : 'dryRun')
     ..hasRequiredFields = false
   ;
@@ -211,15 +211,15 @@ class ApplyPatchesTask extends $pb.GeneratedMessage {
 
   /// Specific information about how patches should be applied.
   @$pb.TagNumber(1)
-  $4580.PatchConfig get patchConfig => $_getN(0);
+  $4582.PatchConfig get patchConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set patchConfig($4580.PatchConfig v) { setField(1, v); }
+  set patchConfig($4582.PatchConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPatchConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearPatchConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4580.PatchConfig ensurePatchConfig() => $_ensure(0);
+  $4582.PatchConfig ensurePatchConfig() => $_ensure(0);
 
   /// If true, the agent will report its status as it goes through the motions
   /// but won't actually run any updates or perform any reboots.
@@ -340,7 +340,7 @@ class ApplyPatchesTaskOutput extends $pb.GeneratedMessage {
 /// Message which instructs agent to execute the following command.
 class ExecStepTask extends $pb.GeneratedMessage {
   factory ExecStepTask({
-    $4580.ExecStep? execStep,
+    $4582.ExecStep? execStep,
   }) {
     final $result = create();
     if (execStep != null) {
@@ -353,7 +353,7 @@ class ExecStepTask extends $pb.GeneratedMessage {
   factory ExecStepTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecStepTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.agentendpoint.v1beta'), createEmptyInstance: create)
-    ..aOM<$4580.ExecStep>(1, _omitFieldNames ? '' : 'execStep', subBuilder: $4580.ExecStep.create)
+    ..aOM<$4582.ExecStep>(1, _omitFieldNames ? '' : 'execStep', subBuilder: $4582.ExecStep.create)
     ..hasRequiredFields = false
   ;
 
@@ -380,15 +380,15 @@ class ExecStepTask extends $pb.GeneratedMessage {
 
   /// Details of the exec step to run.
   @$pb.TagNumber(1)
-  $4580.ExecStep get execStep => $_getN(0);
+  $4582.ExecStep get execStep => $_getN(0);
   @$pb.TagNumber(1)
-  set execStep($4580.ExecStep v) { setField(1, v); }
+  set execStep($4582.ExecStep v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasExecStep() => $_has(0);
   @$pb.TagNumber(1)
   void clearExecStep() => clearField(1);
   @$pb.TagNumber(1)
-  $4580.ExecStep ensureExecStep() => $_ensure(0);
+  $4582.ExecStep ensureExecStep() => $_ensure(0);
 }
 
 /// Information reported from the agent about the exec step execution.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'engine_call.pbenum.dart';
 
 export 'engine_call.pbenum.dart';
@@ -76,7 +76,7 @@ class EngineCallLog_CallArg extends $pb.GeneratedMessage {
 class EngineCallLog_Begun extends $pb.GeneratedMessage {
   factory EngineCallLog_Begun({
     $core.Iterable<EngineCallLog_CallArg>? args,
-    $core.Map<$core.String, $1734.Value>? namedArgs,
+    $core.Map<$core.String, $1735.Value>? namedArgs,
   }) {
     final $result = create();
     if (args != null) {
@@ -93,7 +93,7 @@ class EngineCallLog_Begun extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EngineCallLog.Begun', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workflows.type'), createEmptyInstance: create)
     ..pc<EngineCallLog_CallArg>(1, _omitFieldNames ? '' : 'args', $pb.PbFieldType.PM, subBuilder: EngineCallLog_CallArg.create)
-    ..m<$core.String, $1734.Value>(2, _omitFieldNames ? '' : 'namedArgs', entryClassName: 'EngineCallLog.Begun.NamedArgsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.workflows.type'))
+    ..m<$core.String, $1735.Value>(2, _omitFieldNames ? '' : 'namedArgs', entryClassName: 'EngineCallLog.Begun.NamedArgsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.workflows.type'))
     ..hasRequiredFields = false
   ;
 
@@ -128,13 +128,13 @@ class EngineCallLog_Begun extends $pb.GeneratedMessage {
   /// string forms of the arguments truncated for size reasons. Only one of
   /// 'args' and 'named_args' will be populated.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1734.Value> get namedArgs => $_getMap(1);
+  $core.Map<$core.String, $1735.Value> get namedArgs => $_getMap(1);
 }
 
 /// Information about the end of a successful call.
 class EngineCallLog_Succeeded extends $pb.GeneratedMessage {
   factory EngineCallLog_Succeeded({
-    $1775.Timestamp? callStartTime,
+    $1776.Timestamp? callStartTime,
     $core.String? response,
   }) {
     final $result = create();
@@ -151,7 +151,7 @@ class EngineCallLog_Succeeded extends $pb.GeneratedMessage {
   factory EngineCallLog_Succeeded.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EngineCallLog.Succeeded', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workflows.type'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'callStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'callStartTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'response')
     ..hasRequiredFields = false
   ;
@@ -179,15 +179,15 @@ class EngineCallLog_Succeeded extends $pb.GeneratedMessage {
 
   /// The time when the call started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get callStartTime => $_getN(0);
+  $1776.Timestamp get callStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set callStartTime($1775.Timestamp v) { setField(1, v); }
+  set callStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCallStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCallStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCallStartTime() => $_ensure(0);
+  $1776.Timestamp ensureCallStartTime() => $_ensure(0);
 
   /// The result of the call, if the call succeeded, serialized to a string.
   /// This may be truncated for size reasons.
@@ -204,7 +204,7 @@ class EngineCallLog_Succeeded extends $pb.GeneratedMessage {
 /// Information about the end of a failed call.
 class EngineCallLog_ExceptionRaised extends $pb.GeneratedMessage {
   factory EngineCallLog_ExceptionRaised({
-    $1775.Timestamp? callStartTime,
+    $1776.Timestamp? callStartTime,
     $core.String? exception,
     $core.String? origin,
   }) {
@@ -225,7 +225,7 @@ class EngineCallLog_ExceptionRaised extends $pb.GeneratedMessage {
   factory EngineCallLog_ExceptionRaised.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EngineCallLog.ExceptionRaised', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workflows.type'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'callStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'callStartTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'exception')
     ..aOS(3, _omitFieldNames ? '' : 'origin')
     ..hasRequiredFields = false
@@ -254,15 +254,15 @@ class EngineCallLog_ExceptionRaised extends $pb.GeneratedMessage {
 
   /// The time when the call started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get callStartTime => $_getN(0);
+  $1776.Timestamp get callStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set callStartTime($1775.Timestamp v) { setField(1, v); }
+  set callStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCallStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCallStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCallStartTime() => $_ensure(0);
+  $1776.Timestamp ensureCallStartTime() => $_ensure(0);
 
   /// The exception message which terminated the call, truncated if necessary.
   @$pb.TagNumber(2)
@@ -289,7 +289,7 @@ class EngineCallLog_ExceptionRaised extends $pb.GeneratedMessage {
 /// Information about an exception which was handled.
 class EngineCallLog_ExceptionHandled extends $pb.GeneratedMessage {
   factory EngineCallLog_ExceptionHandled({
-    $1775.Timestamp? callStartTime,
+    $1776.Timestamp? callStartTime,
     $core.String? exception,
     $core.String? origin,
   }) {
@@ -310,7 +310,7 @@ class EngineCallLog_ExceptionHandled extends $pb.GeneratedMessage {
   factory EngineCallLog_ExceptionHandled.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EngineCallLog.ExceptionHandled', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workflows.type'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'callStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'callStartTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'exception')
     ..aOS(3, _omitFieldNames ? '' : 'origin')
     ..hasRequiredFields = false
@@ -339,15 +339,15 @@ class EngineCallLog_ExceptionHandled extends $pb.GeneratedMessage {
 
   /// The time when the call started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get callStartTime => $_getN(0);
+  $1776.Timestamp get callStartTime => $_getN(0);
   @$pb.TagNumber(1)
-  set callStartTime($1775.Timestamp v) { setField(1, v); }
+  set callStartTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCallStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCallStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCallStartTime() => $_ensure(0);
+  $1776.Timestamp ensureCallStartTime() => $_ensure(0);
 
   /// The exception message which was handled, truncated if necessary.
   @$pb.TagNumber(2)
@@ -384,7 +384,7 @@ enum EngineCallLog_Details {
 class EngineCallLog extends $pb.GeneratedMessage {
   factory EngineCallLog({
     $core.String? executionId,
-    $1775.Timestamp? activityTime,
+    $1776.Timestamp? activityTime,
     EngineCallLog_State? state,
     $core.String? step,
     $core.String? callee,
@@ -437,7 +437,7 @@ class EngineCallLog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EngineCallLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workflows.type'), createEmptyInstance: create)
     ..oo(0, [6, 7, 8, 9])
     ..aOS(1, _omitFieldNames ? '' : 'executionId')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'activityTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'activityTime', subBuilder: $1776.Timestamp.create)
     ..e<EngineCallLog_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: EngineCallLog_State.STATE_UNSPECIFIED, valueOf: EngineCallLog_State.valueOf, enumValues: EngineCallLog_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'step')
     ..aOS(5, _omitFieldNames ? '' : 'callee')
@@ -484,15 +484,15 @@ class EngineCallLog extends $pb.GeneratedMessage {
 
   /// The point in time when the activity occurred.
   @$pb.TagNumber(2)
-  $1775.Timestamp get activityTime => $_getN(1);
+  $1776.Timestamp get activityTime => $_getN(1);
   @$pb.TagNumber(2)
-  set activityTime($1775.Timestamp v) { setField(2, v); }
+  set activityTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasActivityTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearActivityTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureActivityTime() => $_ensure(1);
+  $1776.Timestamp ensureActivityTime() => $_ensure(1);
 
   /// The state of the function execution.
   @$pb.TagNumber(3)

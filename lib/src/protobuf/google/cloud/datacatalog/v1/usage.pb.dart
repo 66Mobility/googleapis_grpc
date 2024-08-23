@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 ///  Detailed statistics on the entry's usage.
 ///
@@ -182,7 +182,7 @@ class CommonUsageStats extends $pb.GeneratedMessage {
 ///  fail but will be performed again on the next day.
 class UsageSignal extends $pb.GeneratedMessage {
   factory UsageSignal({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, UsageStats>? usageWithinTimeRange,
     $core.Map<$core.String, CommonUsageStats>? commonUsageWithinTimeRange,
     $fixnum.Int64? favoriteCount,
@@ -207,7 +207,7 @@ class UsageSignal extends $pb.GeneratedMessage {
   factory UsageSignal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UsageSignal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, UsageStats>(2, _omitFieldNames ? '' : 'usageWithinTimeRange', entryClassName: 'UsageSignal.UsageWithinTimeRangeEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: UsageStats.create, valueDefaultOrMaker: UsageStats.getDefault, packageName: const $pb.PackageName('google.cloud.datacatalog.v1'))
     ..m<$core.String, CommonUsageStats>(3, _omitFieldNames ? '' : 'commonUsageWithinTimeRange', entryClassName: 'UsageSignal.CommonUsageWithinTimeRangeEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: CommonUsageStats.create, valueDefaultOrMaker: CommonUsageStats.getDefault, packageName: const $pb.PackageName('google.cloud.datacatalog.v1'))
     ..aInt64(4, _omitFieldNames ? '' : 'favoriteCount')
@@ -237,15 +237,15 @@ class UsageSignal extends $pb.GeneratedMessage {
 
   /// The end timestamp of the duration of usage statistics.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   ///  Output only. BigQuery usage statistics over each of the predefined time
   ///  ranges.

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'queue.pbenum.dart';
-import 'target.pb.dart' as $4699;
+import 'target.pb.dart' as $4701;
 
 export 'queue.pbenum.dart';
 
@@ -32,17 +32,17 @@ enum Queue_QueueType {
 class Queue extends $pb.GeneratedMessage {
   factory Queue({
     $core.String? name,
-    $4699.AppEngineHttpQueue? appEngineHttpQueue,
+    $4701.AppEngineHttpQueue? appEngineHttpQueue,
     RateLimits? rateLimits,
     RetryConfig? retryConfig,
     Queue_State? state,
-    $1775.Timestamp? purgeTime,
-    $1737.Duration? taskTtl,
-    $1737.Duration? tombstoneTtl,
+    $1776.Timestamp? purgeTime,
+    $1738.Duration? taskTtl,
+    $1738.Duration? tombstoneTtl,
     StackdriverLoggingConfig? stackdriverLoggingConfig,
     Queue_Type? type,
     QueueStats? stats,
-    $4699.HttpTarget? httpTarget,
+    $4701.HttpTarget? httpTarget,
   }) {
     final $result = create();
     if (name != null) {
@@ -94,17 +94,17 @@ class Queue extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Queue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta3'), createEmptyInstance: create)
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4699.AppEngineHttpQueue>(3, _omitFieldNames ? '' : 'appEngineHttpQueue', subBuilder: $4699.AppEngineHttpQueue.create)
+    ..aOM<$4701.AppEngineHttpQueue>(3, _omitFieldNames ? '' : 'appEngineHttpQueue', subBuilder: $4701.AppEngineHttpQueue.create)
     ..aOM<RateLimits>(4, _omitFieldNames ? '' : 'rateLimits', subBuilder: RateLimits.create)
     ..aOM<RetryConfig>(5, _omitFieldNames ? '' : 'retryConfig', subBuilder: RetryConfig.create)
     ..e<Queue_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Queue_State.STATE_UNSPECIFIED, valueOf: Queue_State.valueOf, enumValues: Queue_State.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'purgeTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'taskTtl', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(9, _omitFieldNames ? '' : 'tombstoneTtl', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'purgeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'taskTtl', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(9, _omitFieldNames ? '' : 'tombstoneTtl', subBuilder: $1738.Duration.create)
     ..aOM<StackdriverLoggingConfig>(10, _omitFieldNames ? '' : 'stackdriverLoggingConfig', subBuilder: StackdriverLoggingConfig.create)
     ..e<Queue_Type>(11, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Queue_Type.TYPE_UNSPECIFIED, valueOf: Queue_Type.valueOf, enumValues: Queue_Type.values)
     ..aOM<QueueStats>(12, _omitFieldNames ? '' : 'stats', subBuilder: QueueStats.create)
-    ..aOM<$4699.HttpTarget>(13, _omitFieldNames ? '' : 'httpTarget', subBuilder: $4699.HttpTarget.create)
+    ..aOM<$4701.HttpTarget>(13, _omitFieldNames ? '' : 'httpTarget', subBuilder: $4701.HttpTarget.create)
     ..hasRequiredFields = false
   ;
 
@@ -167,15 +167,15 @@ class Queue extends $pb.GeneratedMessage {
   /// [Http tasks][google.cloud.tasks.v2beta3.HttpRequest] are not affected by
   /// this proto.
   @$pb.TagNumber(3)
-  $4699.AppEngineHttpQueue get appEngineHttpQueue => $_getN(1);
+  $4701.AppEngineHttpQueue get appEngineHttpQueue => $_getN(1);
   @$pb.TagNumber(3)
-  set appEngineHttpQueue($4699.AppEngineHttpQueue v) { setField(3, v); }
+  set appEngineHttpQueue($4701.AppEngineHttpQueue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAppEngineHttpQueue() => $_has(1);
   @$pb.TagNumber(3)
   void clearAppEngineHttpQueue() => clearField(3);
   @$pb.TagNumber(3)
-  $4699.AppEngineHttpQueue ensureAppEngineHttpQueue() => $_ensure(1);
+  $4701.AppEngineHttpQueue ensureAppEngineHttpQueue() => $_ensure(1);
 
   ///  Rate limits for task dispatches.
   ///
@@ -268,15 +268,15 @@ class Queue extends $pb.GeneratedMessage {
   ///  Purge time will be truncated to the nearest microsecond. Purge
   ///  time will be unset if the queue has never been purged.
   @$pb.TagNumber(7)
-  $1775.Timestamp get purgeTime => $_getN(5);
+  $1776.Timestamp get purgeTime => $_getN(5);
   @$pb.TagNumber(7)
-  set purgeTime($1775.Timestamp v) { setField(7, v); }
+  set purgeTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPurgeTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearPurgeTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensurePurgeTime() => $_ensure(5);
+  $1776.Timestamp ensurePurgeTime() => $_ensure(5);
 
   ///  The maximum amount of time that a task will be retained in
   ///  this queue.
@@ -291,15 +291,15 @@ class Queue extends $pb.GeneratedMessage {
   ///  these queues. To view the maximum valid duration, see the documentation for
   ///  [Duration][google.protobuf.Duration].
   @$pb.TagNumber(8)
-  $1737.Duration get taskTtl => $_getN(6);
+  $1738.Duration get taskTtl => $_getN(6);
   @$pb.TagNumber(8)
-  set taskTtl($1737.Duration v) { setField(8, v); }
+  set taskTtl($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTaskTtl() => $_has(6);
   @$pb.TagNumber(8)
   void clearTaskTtl() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureTaskTtl() => $_ensure(6);
+  $1738.Duration ensureTaskTtl() => $_ensure(6);
 
   ///  The task tombstone time to live (TTL).
   ///
@@ -312,15 +312,15 @@ class Queue extends $pb.GeneratedMessage {
   ///
   ///  Queues created by Cloud Tasks have a default `tombstone_ttl` of 1 hour.
   @$pb.TagNumber(9)
-  $1737.Duration get tombstoneTtl => $_getN(7);
+  $1738.Duration get tombstoneTtl => $_getN(7);
   @$pb.TagNumber(9)
-  set tombstoneTtl($1737.Duration v) { setField(9, v); }
+  set tombstoneTtl($1738.Duration v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTombstoneTtl() => $_has(7);
   @$pb.TagNumber(9)
   void clearTombstoneTtl() => clearField(9);
   @$pb.TagNumber(9)
-  $1737.Duration ensureTombstoneTtl() => $_ensure(7);
+  $1738.Duration ensureTombstoneTtl() => $_ensure(7);
 
   /// Configuration options for writing logs to
   /// [Stackdriver Logging](https://cloud.google.com/logging/docs/). If this
@@ -366,15 +366,15 @@ class Queue extends $pb.GeneratedMessage {
 
   /// Modifies HTTP target for HTTP tasks.
   @$pb.TagNumber(13)
-  $4699.HttpTarget get httpTarget => $_getN(11);
+  $4701.HttpTarget get httpTarget => $_getN(11);
   @$pb.TagNumber(13)
-  set httpTarget($4699.HttpTarget v) { setField(13, v); }
+  set httpTarget($4701.HttpTarget v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasHttpTarget() => $_has(11);
   @$pb.TagNumber(13)
   void clearHttpTarget() => clearField(13);
   @$pb.TagNumber(13)
-  $4699.HttpTarget ensureHttpTarget() => $_ensure(11);
+  $4701.HttpTarget ensureHttpTarget() => $_ensure(11);
 }
 
 ///  Rate limits.
@@ -531,9 +531,9 @@ class RateLimits extends $pb.GeneratedMessage {
 class RetryConfig extends $pb.GeneratedMessage {
   factory RetryConfig({
     $core.int? maxAttempts,
-    $1737.Duration? maxRetryDuration,
-    $1737.Duration? minBackoff,
-    $1737.Duration? maxBackoff,
+    $1738.Duration? maxRetryDuration,
+    $1738.Duration? minBackoff,
+    $1738.Duration? maxBackoff,
     $core.int? maxDoublings,
   }) {
     final $result = create();
@@ -560,9 +560,9 @@ class RetryConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta3'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'maxAttempts', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'minBackoff', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'maxBackoff', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'minBackoff', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'maxBackoff', subBuilder: $1738.Duration.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'maxDoublings', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -630,15 +630,15 @@ class RetryConfig extends $pb.GeneratedMessage {
   ///  [task_age_limit in
   ///  queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
   @$pb.TagNumber(2)
-  $1737.Duration get maxRetryDuration => $_getN(1);
+  $1738.Duration get maxRetryDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set maxRetryDuration($1737.Duration v) { setField(2, v); }
+  set maxRetryDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxRetryDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxRetryDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMaxRetryDuration() => $_ensure(1);
+  $1738.Duration ensureMaxRetryDuration() => $_ensure(1);
 
   ///  A task will be [scheduled][google.cloud.tasks.v2beta3.Task.schedule_time]
   ///  for retry between
@@ -658,15 +658,15 @@ class RetryConfig extends $pb.GeneratedMessage {
   ///  [min_backoff_seconds in
   ///  queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
   @$pb.TagNumber(3)
-  $1737.Duration get minBackoff => $_getN(2);
+  $1738.Duration get minBackoff => $_getN(2);
   @$pb.TagNumber(3)
-  set minBackoff($1737.Duration v) { setField(3, v); }
+  set minBackoff($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinBackoff() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinBackoff() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureMinBackoff() => $_ensure(2);
+  $1738.Duration ensureMinBackoff() => $_ensure(2);
 
   ///  A task will be [scheduled][google.cloud.tasks.v2beta3.Task.schedule_time]
   ///  for retry between
@@ -686,15 +686,15 @@ class RetryConfig extends $pb.GeneratedMessage {
   ///  [max_backoff_seconds in
   ///  queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
   @$pb.TagNumber(4)
-  $1737.Duration get maxBackoff => $_getN(3);
+  $1738.Duration get maxBackoff => $_getN(3);
   @$pb.TagNumber(4)
-  set maxBackoff($1737.Duration v) { setField(4, v); }
+  set maxBackoff($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxBackoff() => $_has(3);
   @$pb.TagNumber(4)
   void clearMaxBackoff() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureMaxBackoff() => $_ensure(3);
+  $1738.Duration ensureMaxBackoff() => $_ensure(3);
 
   ///  The time between retries will double `max_doublings` times.
   ///
@@ -794,7 +794,7 @@ class StackdriverLoggingConfig extends $pb.GeneratedMessage {
 class QueueStats extends $pb.GeneratedMessage {
   factory QueueStats({
     $fixnum.Int64? tasksCount,
-    $1775.Timestamp? oldestEstimatedArrivalTime,
+    $1776.Timestamp? oldestEstimatedArrivalTime,
     $fixnum.Int64? executedLastMinuteCount,
     $fixnum.Int64? concurrentDispatchesCount,
     $core.double? effectiveExecutionRate,
@@ -823,7 +823,7 @@ class QueueStats extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueueStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2beta3'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'tasksCount')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'oldestEstimatedArrivalTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'oldestEstimatedArrivalTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'executedLastMinuteCount')
     ..aInt64(4, _omitFieldNames ? '' : 'concurrentDispatchesCount')
     ..a<$core.double>(5, _omitFieldNames ? '' : 'effectiveExecutionRate', $pb.PbFieldType.OD)
@@ -867,15 +867,15 @@ class QueueStats extends $pb.GeneratedMessage {
   /// Output only. An estimation of the nearest time in the future where a task
   /// in the queue is scheduled to be executed.
   @$pb.TagNumber(2)
-  $1775.Timestamp get oldestEstimatedArrivalTime => $_getN(1);
+  $1776.Timestamp get oldestEstimatedArrivalTime => $_getN(1);
   @$pb.TagNumber(2)
-  set oldestEstimatedArrivalTime($1775.Timestamp v) { setField(2, v); }
+  set oldestEstimatedArrivalTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOldestEstimatedArrivalTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearOldestEstimatedArrivalTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureOldestEstimatedArrivalTime() => $_ensure(1);
+  $1776.Timestamp ensureOldestEstimatedArrivalTime() => $_ensure(1);
 
   /// Output only. The number of tasks that the queue has dispatched and received
   /// a reply for during the last minute. This variable counts both successful

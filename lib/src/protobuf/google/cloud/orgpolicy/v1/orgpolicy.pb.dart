@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'orgpolicy.pbenum.dart';
 
 export 'orgpolicy.pbenum.dart';
@@ -393,7 +393,7 @@ class Policy extends $pb.GeneratedMessage {
     $core.int? version,
     $core.String? constraint,
     $core.List<$core.int>? etag,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     Policy_ListPolicy? listPolicy,
     Policy_BooleanPolicy? booleanPolicy,
     Policy_RestoreDefault? restoreDefault,
@@ -437,7 +437,7 @@ class Policy extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'version', $pb.PbFieldType.O3)
     ..aOS(2, _omitFieldNames ? '' : 'constraint')
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'etag', $pb.PbFieldType.OY)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Policy_ListPolicy>(5, _omitFieldNames ? '' : 'listPolicy', subBuilder: Policy_ListPolicy.create)
     ..aOM<Policy_BooleanPolicy>(6, _omitFieldNames ? '' : 'booleanPolicy', subBuilder: Policy_BooleanPolicy.create)
     ..aOM<Policy_RestoreDefault>(7, _omitFieldNames ? '' : 'restoreDefault', subBuilder: Policy_RestoreDefault.create)
@@ -520,15 +520,15 @@ class Policy extends $pb.GeneratedMessage {
   /// `SetOrgPolicy` was made for that `Policy`. Any value set by the client will
   /// be ignored.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// List of values either allowed or disallowed.
   @$pb.TagNumber(5)

@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/customer_sk_ad_network_conversion_value_schema.pb.dart' as $3225;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/customer_sk_ad_network_conversion_value_schema.pb.dart' as $3226;
 
 /// A single update operation for a CustomerSkAdNetworkConversionValueSchema.
 class CustomerSkAdNetworkConversionValueSchemaOperation extends $pb.GeneratedMessage {
   factory CustomerSkAdNetworkConversionValueSchemaOperation({
-    $3225.CustomerSkAdNetworkConversionValueSchema? update,
+    $3226.CustomerSkAdNetworkConversionValueSchema? update,
   }) {
     final $result = create();
     if (update != null) {
@@ -32,7 +32,7 @@ class CustomerSkAdNetworkConversionValueSchemaOperation extends $pb.GeneratedMes
   factory CustomerSkAdNetworkConversionValueSchemaOperation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerSkAdNetworkConversionValueSchemaOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..aOM<$3225.CustomerSkAdNetworkConversionValueSchema>(1, _omitFieldNames ? '' : 'update', subBuilder: $3225.CustomerSkAdNetworkConversionValueSchema.create)
+    ..aOM<$3226.CustomerSkAdNetworkConversionValueSchema>(1, _omitFieldNames ? '' : 'update', subBuilder: $3226.CustomerSkAdNetworkConversionValueSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -59,15 +59,15 @@ class CustomerSkAdNetworkConversionValueSchemaOperation extends $pb.GeneratedMes
 
   /// Update operation: The schema is expected to have a valid resource name.
   @$pb.TagNumber(1)
-  $3225.CustomerSkAdNetworkConversionValueSchema get update => $_getN(0);
+  $3226.CustomerSkAdNetworkConversionValueSchema get update => $_getN(0);
   @$pb.TagNumber(1)
-  set update($3225.CustomerSkAdNetworkConversionValueSchema v) { setField(1, v); }
+  set update($3226.CustomerSkAdNetworkConversionValueSchema v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdate() => clearField(1);
   @$pb.TagNumber(1)
-  $3225.CustomerSkAdNetworkConversionValueSchema ensureUpdate() => $_ensure(0);
+  $3226.CustomerSkAdNetworkConversionValueSchema ensureUpdate() => $_ensure(0);
 }
 
 /// Request message for
@@ -244,7 +244,7 @@ class MutateCustomerSkAdNetworkConversionValueSchemaResult extends $pb.Generated
 class MutateCustomerSkAdNetworkConversionValueSchemaResponse extends $pb.GeneratedMessage {
   factory MutateCustomerSkAdNetworkConversionValueSchemaResponse({
     MutateCustomerSkAdNetworkConversionValueSchemaResult? result,
-    $1795.Status? warning,
+    $1796.Status? warning,
   }) {
     final $result = create();
     if (result != null) {
@@ -261,7 +261,7 @@ class MutateCustomerSkAdNetworkConversionValueSchemaResponse extends $pb.Generat
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerSkAdNetworkConversionValueSchemaResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOM<MutateCustomerSkAdNetworkConversionValueSchemaResult>(1, _omitFieldNames ? '' : 'result', subBuilder: MutateCustomerSkAdNetworkConversionValueSchemaResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'warning', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'warning', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -301,15 +301,15 @@ class MutateCustomerSkAdNetworkConversionValueSchemaResponse extends $pb.Generat
   /// Non blocking errors that provides schema validation failure details.
   /// Returned only when enable_warnings = true.
   @$pb.TagNumber(2)
-  $1795.Status get warning => $_getN(1);
+  $1796.Status get warning => $_getN(1);
   @$pb.TagNumber(2)
-  set warning($1795.Status v) { setField(2, v); }
+  set warning($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWarning() => $_has(1);
   @$pb.TagNumber(2)
   void clearWarning() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureWarning() => $_ensure(1);
+  $1796.Status ensureWarning() => $_ensure(1);
 }
 
 

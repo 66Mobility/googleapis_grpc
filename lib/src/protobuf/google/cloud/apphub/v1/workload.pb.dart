@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'attributes.pb.dart' as $4322;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'attributes.pb.dart' as $4323;
 import 'workload.pbenum.dart';
 
 export 'workload.pbenum.dart';
@@ -31,9 +31,9 @@ class Workload extends $pb.GeneratedMessage {
     WorkloadReference? workloadReference,
     WorkloadProperties? workloadProperties,
     $core.String? discoveredWorkload,
-    $4322.Attributes? attributes,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $4323.Attributes? attributes,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? uid,
     Workload_State? state,
   }) {
@@ -84,9 +84,9 @@ class Workload extends $pb.GeneratedMessage {
     ..aOM<WorkloadReference>(4, _omitFieldNames ? '' : 'workloadReference', subBuilder: WorkloadReference.create)
     ..aOM<WorkloadProperties>(5, _omitFieldNames ? '' : 'workloadProperties', subBuilder: WorkloadProperties.create)
     ..aOS(6, _omitFieldNames ? '' : 'discoveredWorkload')
-    ..aOM<$4322.Attributes>(7, _omitFieldNames ? '' : 'attributes', subBuilder: $4322.Attributes.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4323.Attributes>(7, _omitFieldNames ? '' : 'attributes', subBuilder: $4323.Attributes.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'uid')
     ..e<Workload_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Workload_State.STATE_UNSPECIFIED, valueOf: Workload_State.valueOf, enumValues: Workload_State.values)
     ..hasRequiredFields = false
@@ -184,39 +184,39 @@ class Workload extends $pb.GeneratedMessage {
 
   /// Optional. Consumer provided attributes.
   @$pb.TagNumber(7)
-  $4322.Attributes get attributes => $_getN(6);
+  $4323.Attributes get attributes => $_getN(6);
   @$pb.TagNumber(7)
-  set attributes($4322.Attributes v) { setField(7, v); }
+  set attributes($4323.Attributes v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAttributes() => $_has(6);
   @$pb.TagNumber(7)
   void clearAttributes() => clearField(7);
   @$pb.TagNumber(7)
-  $4322.Attributes ensureAttributes() => $_ensure(6);
+  $4323.Attributes ensureAttributes() => $_ensure(6);
 
   /// Output only. Create time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Update time.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. A universally unique identifier (UUID) for the `Workload` in
   /// the UUID4 format.

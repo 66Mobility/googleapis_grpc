@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/code.pbenum.dart' as $4219;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/code.pbenum.dart' as $4220;
 
 /// A representation of the trigger resource.
 class Trigger extends $pb.GeneratedMessage {
   factory Trigger({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<EventFilter>? eventFilters,
     $core.String? serviceAccount,
     Destination? destination,
@@ -78,8 +78,8 @@ class Trigger extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Trigger', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.eventarc.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pc<EventFilter>(8, _omitFieldNames ? '' : 'eventFilters', $pb.PbFieldType.PM, subBuilder: EventFilter.create)
     ..aOS(9, _omitFieldNames ? '' : 'serviceAccount')
     ..aOM<Destination>(10, _omitFieldNames ? '' : 'destination', subBuilder: Destination.create)
@@ -137,27 +137,27 @@ class Trigger extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The last-modified time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Required. Unordered list. The list of filters that applies to event attributes. Only events that
   /// match all the provided filters are sent to the destination.
@@ -338,7 +338,7 @@ class EventFilter extends $pb.GeneratedMessage {
 /// A condition that is part of the trigger state computation.
 class StateCondition extends $pb.GeneratedMessage {
   factory StateCondition({
-    $4219.Code? code,
+    $4220.Code? code,
     $core.String? message,
   }) {
     final $result = create();
@@ -355,7 +355,7 @@ class StateCondition extends $pb.GeneratedMessage {
   factory StateCondition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StateCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.eventarc.v1'), createEmptyInstance: create)
-    ..e<$4219.Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: $4219.Code.OK, valueOf: $4219.Code.valueOf, enumValues: $4219.Code.values)
+    ..e<$4220.Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: $4220.Code.OK, valueOf: $4220.Code.valueOf, enumValues: $4220.Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false
   ;
@@ -383,9 +383,9 @@ class StateCondition extends $pb.GeneratedMessage {
 
   /// The canonical code of the condition.
   @$pb.TagNumber(1)
-  $4219.Code get code => $_getN(0);
+  $4220.Code get code => $_getN(0);
   @$pb.TagNumber(1)
-  set code($4219.Code v) { setField(1, v); }
+  set code($4220.Code v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)

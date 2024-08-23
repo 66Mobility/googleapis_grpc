@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_types.pb.dart' as $4028;
-import '../enums/asset_engine_status.pbenum.dart' as $4031;
-import '../enums/asset_status.pbenum.dart' as $4030;
-import '../enums/asset_type.pbenum.dart' as $4029;
+import '../common/asset_types.pb.dart' as $4029;
+import '../enums/asset_engine_status.pbenum.dart' as $4032;
+import '../enums/asset_status.pbenum.dart' as $4031;
+import '../enums/asset_type.pbenum.dart' as $4030;
 
 enum Asset_AssetData {
   youtubeVideoAsset, 
@@ -40,25 +40,25 @@ enum Asset_AssetData {
 class Asset extends $pb.GeneratedMessage {
   factory Asset({
     $core.String? resourceName,
-    $4029.AssetTypeEnum_AssetType? type,
-    $4028.YoutubeVideoAsset? youtubeVideoAsset,
-    $4028.ImageAsset? imageAsset,
-    $4028.TextAsset? textAsset,
+    $4030.AssetTypeEnum_AssetType? type,
+    $4029.YoutubeVideoAsset? youtubeVideoAsset,
+    $4029.ImageAsset? imageAsset,
+    $4029.TextAsset? textAsset,
     $fixnum.Int64? id,
     $core.String? name,
     $core.Iterable<$core.String>? finalUrls,
     $core.String? trackingUrlTemplate,
-    $4028.MobileAppAsset? mobileAppAsset,
-    $4028.CallToActionAsset? callToActionAsset,
-    $4030.AssetStatusEnum_AssetStatus? status,
+    $4029.MobileAppAsset? mobileAppAsset,
+    $4029.CallToActionAsset? callToActionAsset,
+    $4031.AssetStatusEnum_AssetStatus? status,
     $core.String? creationTime,
     $core.String? lastModifiedTime,
-    $4028.UnifiedSitelinkAsset? sitelinkAsset,
-    $4028.UnifiedPageFeedAsset? pageFeedAsset,
-    $4028.UnifiedCallAsset? callAsset,
-    $4028.UnifiedCalloutAsset? calloutAsset,
-    $4028.UnifiedLocationAsset? locationAsset,
-    $4031.AssetEngineStatusEnum_AssetEngineStatus? engineStatus,
+    $4029.UnifiedSitelinkAsset? sitelinkAsset,
+    $4029.UnifiedPageFeedAsset? pageFeedAsset,
+    $4029.UnifiedCallAsset? callAsset,
+    $4029.UnifiedCalloutAsset? calloutAsset,
+    $4029.UnifiedLocationAsset? locationAsset,
+    $4032.AssetEngineStatusEnum_AssetEngineStatus? engineStatus,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -143,25 +143,25 @@ class Asset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..oo(0, [5, 7, 8, 25, 29, 45, 46, 47, 48, 49])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4029.AssetTypeEnum_AssetType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4029.AssetTypeEnum_AssetType.UNSPECIFIED, valueOf: $4029.AssetTypeEnum_AssetType.valueOf, enumValues: $4029.AssetTypeEnum_AssetType.values)
-    ..aOM<$4028.YoutubeVideoAsset>(5, _omitFieldNames ? '' : 'youtubeVideoAsset', subBuilder: $4028.YoutubeVideoAsset.create)
-    ..aOM<$4028.ImageAsset>(7, _omitFieldNames ? '' : 'imageAsset', subBuilder: $4028.ImageAsset.create)
-    ..aOM<$4028.TextAsset>(8, _omitFieldNames ? '' : 'textAsset', subBuilder: $4028.TextAsset.create)
+    ..e<$4030.AssetTypeEnum_AssetType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4030.AssetTypeEnum_AssetType.UNSPECIFIED, valueOf: $4030.AssetTypeEnum_AssetType.valueOf, enumValues: $4030.AssetTypeEnum_AssetType.values)
+    ..aOM<$4029.YoutubeVideoAsset>(5, _omitFieldNames ? '' : 'youtubeVideoAsset', subBuilder: $4029.YoutubeVideoAsset.create)
+    ..aOM<$4029.ImageAsset>(7, _omitFieldNames ? '' : 'imageAsset', subBuilder: $4029.ImageAsset.create)
+    ..aOM<$4029.TextAsset>(8, _omitFieldNames ? '' : 'textAsset', subBuilder: $4029.TextAsset.create)
     ..aInt64(11, _omitFieldNames ? '' : 'id')
     ..aOS(12, _omitFieldNames ? '' : 'name')
     ..pPS(14, _omitFieldNames ? '' : 'finalUrls')
     ..aOS(17, _omitFieldNames ? '' : 'trackingUrlTemplate')
-    ..aOM<$4028.MobileAppAsset>(25, _omitFieldNames ? '' : 'mobileAppAsset', subBuilder: $4028.MobileAppAsset.create)
-    ..aOM<$4028.CallToActionAsset>(29, _omitFieldNames ? '' : 'callToActionAsset', subBuilder: $4028.CallToActionAsset.create)
-    ..e<$4030.AssetStatusEnum_AssetStatus>(42, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4030.AssetStatusEnum_AssetStatus.UNSPECIFIED, valueOf: $4030.AssetStatusEnum_AssetStatus.valueOf, enumValues: $4030.AssetStatusEnum_AssetStatus.values)
+    ..aOM<$4029.MobileAppAsset>(25, _omitFieldNames ? '' : 'mobileAppAsset', subBuilder: $4029.MobileAppAsset.create)
+    ..aOM<$4029.CallToActionAsset>(29, _omitFieldNames ? '' : 'callToActionAsset', subBuilder: $4029.CallToActionAsset.create)
+    ..e<$4031.AssetStatusEnum_AssetStatus>(42, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4031.AssetStatusEnum_AssetStatus.UNSPECIFIED, valueOf: $4031.AssetStatusEnum_AssetStatus.valueOf, enumValues: $4031.AssetStatusEnum_AssetStatus.values)
     ..aOS(43, _omitFieldNames ? '' : 'creationTime')
     ..aOS(44, _omitFieldNames ? '' : 'lastModifiedTime')
-    ..aOM<$4028.UnifiedSitelinkAsset>(45, _omitFieldNames ? '' : 'sitelinkAsset', subBuilder: $4028.UnifiedSitelinkAsset.create)
-    ..aOM<$4028.UnifiedPageFeedAsset>(46, _omitFieldNames ? '' : 'pageFeedAsset', subBuilder: $4028.UnifiedPageFeedAsset.create)
-    ..aOM<$4028.UnifiedCallAsset>(47, _omitFieldNames ? '' : 'callAsset', subBuilder: $4028.UnifiedCallAsset.create)
-    ..aOM<$4028.UnifiedCalloutAsset>(48, _omitFieldNames ? '' : 'calloutAsset', subBuilder: $4028.UnifiedCalloutAsset.create)
-    ..aOM<$4028.UnifiedLocationAsset>(49, _omitFieldNames ? '' : 'locationAsset', subBuilder: $4028.UnifiedLocationAsset.create)
-    ..e<$4031.AssetEngineStatusEnum_AssetEngineStatus>(61, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4031.AssetEngineStatusEnum_AssetEngineStatus.UNSPECIFIED, valueOf: $4031.AssetEngineStatusEnum_AssetEngineStatus.valueOf, enumValues: $4031.AssetEngineStatusEnum_AssetEngineStatus.values)
+    ..aOM<$4029.UnifiedSitelinkAsset>(45, _omitFieldNames ? '' : 'sitelinkAsset', subBuilder: $4029.UnifiedSitelinkAsset.create)
+    ..aOM<$4029.UnifiedPageFeedAsset>(46, _omitFieldNames ? '' : 'pageFeedAsset', subBuilder: $4029.UnifiedPageFeedAsset.create)
+    ..aOM<$4029.UnifiedCallAsset>(47, _omitFieldNames ? '' : 'callAsset', subBuilder: $4029.UnifiedCallAsset.create)
+    ..aOM<$4029.UnifiedCalloutAsset>(48, _omitFieldNames ? '' : 'calloutAsset', subBuilder: $4029.UnifiedCalloutAsset.create)
+    ..aOM<$4029.UnifiedLocationAsset>(49, _omitFieldNames ? '' : 'locationAsset', subBuilder: $4029.UnifiedLocationAsset.create)
+    ..e<$4032.AssetEngineStatusEnum_AssetEngineStatus>(61, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4032.AssetEngineStatusEnum_AssetEngineStatus.UNSPECIFIED, valueOf: $4032.AssetEngineStatusEnum_AssetEngineStatus.valueOf, enumValues: $4032.AssetEngineStatusEnum_AssetEngineStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -204,9 +204,9 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Output only. Type of the asset.
   @$pb.TagNumber(4)
-  $4029.AssetTypeEnum_AssetType get type => $_getN(1);
+  $4030.AssetTypeEnum_AssetType get type => $_getN(1);
   @$pb.TagNumber(4)
-  set type($4029.AssetTypeEnum_AssetType v) { setField(4, v); }
+  set type($4030.AssetTypeEnum_AssetType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(4)
@@ -214,39 +214,39 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Immutable. A YouTube video asset.
   @$pb.TagNumber(5)
-  $4028.YoutubeVideoAsset get youtubeVideoAsset => $_getN(2);
+  $4029.YoutubeVideoAsset get youtubeVideoAsset => $_getN(2);
   @$pb.TagNumber(5)
-  set youtubeVideoAsset($4028.YoutubeVideoAsset v) { setField(5, v); }
+  set youtubeVideoAsset($4029.YoutubeVideoAsset v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasYoutubeVideoAsset() => $_has(2);
   @$pb.TagNumber(5)
   void clearYoutubeVideoAsset() => clearField(5);
   @$pb.TagNumber(5)
-  $4028.YoutubeVideoAsset ensureYoutubeVideoAsset() => $_ensure(2);
+  $4029.YoutubeVideoAsset ensureYoutubeVideoAsset() => $_ensure(2);
 
   /// Output only. An image asset.
   @$pb.TagNumber(7)
-  $4028.ImageAsset get imageAsset => $_getN(3);
+  $4029.ImageAsset get imageAsset => $_getN(3);
   @$pb.TagNumber(7)
-  set imageAsset($4028.ImageAsset v) { setField(7, v); }
+  set imageAsset($4029.ImageAsset v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasImageAsset() => $_has(3);
   @$pb.TagNumber(7)
   void clearImageAsset() => clearField(7);
   @$pb.TagNumber(7)
-  $4028.ImageAsset ensureImageAsset() => $_ensure(3);
+  $4029.ImageAsset ensureImageAsset() => $_ensure(3);
 
   /// Output only. A text asset.
   @$pb.TagNumber(8)
-  $4028.TextAsset get textAsset => $_getN(4);
+  $4029.TextAsset get textAsset => $_getN(4);
   @$pb.TagNumber(8)
-  set textAsset($4028.TextAsset v) { setField(8, v); }
+  set textAsset($4029.TextAsset v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTextAsset() => $_has(4);
   @$pb.TagNumber(8)
   void clearTextAsset() => clearField(8);
   @$pb.TagNumber(8)
-  $4028.TextAsset ensureTextAsset() => $_ensure(4);
+  $4029.TextAsset ensureTextAsset() => $_ensure(4);
 
   /// Output only. The ID of the asset.
   @$pb.TagNumber(11)
@@ -284,33 +284,33 @@ class Asset extends $pb.GeneratedMessage {
 
   /// A mobile app asset.
   @$pb.TagNumber(25)
-  $4028.MobileAppAsset get mobileAppAsset => $_getN(9);
+  $4029.MobileAppAsset get mobileAppAsset => $_getN(9);
   @$pb.TagNumber(25)
-  set mobileAppAsset($4028.MobileAppAsset v) { setField(25, v); }
+  set mobileAppAsset($4029.MobileAppAsset v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasMobileAppAsset() => $_has(9);
   @$pb.TagNumber(25)
   void clearMobileAppAsset() => clearField(25);
   @$pb.TagNumber(25)
-  $4028.MobileAppAsset ensureMobileAppAsset() => $_ensure(9);
+  $4029.MobileAppAsset ensureMobileAppAsset() => $_ensure(9);
 
   /// Immutable. A call to action asset.
   @$pb.TagNumber(29)
-  $4028.CallToActionAsset get callToActionAsset => $_getN(10);
+  $4029.CallToActionAsset get callToActionAsset => $_getN(10);
   @$pb.TagNumber(29)
-  set callToActionAsset($4028.CallToActionAsset v) { setField(29, v); }
+  set callToActionAsset($4029.CallToActionAsset v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasCallToActionAsset() => $_has(10);
   @$pb.TagNumber(29)
   void clearCallToActionAsset() => clearField(29);
   @$pb.TagNumber(29)
-  $4028.CallToActionAsset ensureCallToActionAsset() => $_ensure(10);
+  $4029.CallToActionAsset ensureCallToActionAsset() => $_ensure(10);
 
   /// Output only. The status of the asset.
   @$pb.TagNumber(42)
-  $4030.AssetStatusEnum_AssetStatus get status => $_getN(11);
+  $4031.AssetStatusEnum_AssetStatus get status => $_getN(11);
   @$pb.TagNumber(42)
-  set status($4030.AssetStatusEnum_AssetStatus v) { setField(42, v); }
+  set status($4031.AssetStatusEnum_AssetStatus v) { setField(42, v); }
   @$pb.TagNumber(42)
   $core.bool hasStatus() => $_has(11);
   @$pb.TagNumber(42)
@@ -340,69 +340,69 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Output only. A unified sitelink asset.
   @$pb.TagNumber(45)
-  $4028.UnifiedSitelinkAsset get sitelinkAsset => $_getN(14);
+  $4029.UnifiedSitelinkAsset get sitelinkAsset => $_getN(14);
   @$pb.TagNumber(45)
-  set sitelinkAsset($4028.UnifiedSitelinkAsset v) { setField(45, v); }
+  set sitelinkAsset($4029.UnifiedSitelinkAsset v) { setField(45, v); }
   @$pb.TagNumber(45)
   $core.bool hasSitelinkAsset() => $_has(14);
   @$pb.TagNumber(45)
   void clearSitelinkAsset() => clearField(45);
   @$pb.TagNumber(45)
-  $4028.UnifiedSitelinkAsset ensureSitelinkAsset() => $_ensure(14);
+  $4029.UnifiedSitelinkAsset ensureSitelinkAsset() => $_ensure(14);
 
   /// Output only. A unified page feed asset.
   @$pb.TagNumber(46)
-  $4028.UnifiedPageFeedAsset get pageFeedAsset => $_getN(15);
+  $4029.UnifiedPageFeedAsset get pageFeedAsset => $_getN(15);
   @$pb.TagNumber(46)
-  set pageFeedAsset($4028.UnifiedPageFeedAsset v) { setField(46, v); }
+  set pageFeedAsset($4029.UnifiedPageFeedAsset v) { setField(46, v); }
   @$pb.TagNumber(46)
   $core.bool hasPageFeedAsset() => $_has(15);
   @$pb.TagNumber(46)
   void clearPageFeedAsset() => clearField(46);
   @$pb.TagNumber(46)
-  $4028.UnifiedPageFeedAsset ensurePageFeedAsset() => $_ensure(15);
+  $4029.UnifiedPageFeedAsset ensurePageFeedAsset() => $_ensure(15);
 
   /// Output only. A unified call asset.
   @$pb.TagNumber(47)
-  $4028.UnifiedCallAsset get callAsset => $_getN(16);
+  $4029.UnifiedCallAsset get callAsset => $_getN(16);
   @$pb.TagNumber(47)
-  set callAsset($4028.UnifiedCallAsset v) { setField(47, v); }
+  set callAsset($4029.UnifiedCallAsset v) { setField(47, v); }
   @$pb.TagNumber(47)
   $core.bool hasCallAsset() => $_has(16);
   @$pb.TagNumber(47)
   void clearCallAsset() => clearField(47);
   @$pb.TagNumber(47)
-  $4028.UnifiedCallAsset ensureCallAsset() => $_ensure(16);
+  $4029.UnifiedCallAsset ensureCallAsset() => $_ensure(16);
 
   /// Output only. A unified callout asset.
   @$pb.TagNumber(48)
-  $4028.UnifiedCalloutAsset get calloutAsset => $_getN(17);
+  $4029.UnifiedCalloutAsset get calloutAsset => $_getN(17);
   @$pb.TagNumber(48)
-  set calloutAsset($4028.UnifiedCalloutAsset v) { setField(48, v); }
+  set calloutAsset($4029.UnifiedCalloutAsset v) { setField(48, v); }
   @$pb.TagNumber(48)
   $core.bool hasCalloutAsset() => $_has(17);
   @$pb.TagNumber(48)
   void clearCalloutAsset() => clearField(48);
   @$pb.TagNumber(48)
-  $4028.UnifiedCalloutAsset ensureCalloutAsset() => $_ensure(17);
+  $4029.UnifiedCalloutAsset ensureCalloutAsset() => $_ensure(17);
 
   /// Output only. A unified location asset.
   @$pb.TagNumber(49)
-  $4028.UnifiedLocationAsset get locationAsset => $_getN(18);
+  $4029.UnifiedLocationAsset get locationAsset => $_getN(18);
   @$pb.TagNumber(49)
-  set locationAsset($4028.UnifiedLocationAsset v) { setField(49, v); }
+  set locationAsset($4029.UnifiedLocationAsset v) { setField(49, v); }
   @$pb.TagNumber(49)
   $core.bool hasLocationAsset() => $_has(18);
   @$pb.TagNumber(49)
   void clearLocationAsset() => clearField(49);
   @$pb.TagNumber(49)
-  $4028.UnifiedLocationAsset ensureLocationAsset() => $_ensure(18);
+  $4029.UnifiedLocationAsset ensureLocationAsset() => $_ensure(18);
 
   /// Output only. The Engine Status for an asset.
   @$pb.TagNumber(61)
-  $4031.AssetEngineStatusEnum_AssetEngineStatus get engineStatus => $_getN(19);
+  $4032.AssetEngineStatusEnum_AssetEngineStatus get engineStatus => $_getN(19);
   @$pb.TagNumber(61)
-  set engineStatus($4031.AssetEngineStatusEnum_AssetEngineStatus v) { setField(61, v); }
+  set engineStatus($4032.AssetEngineStatusEnum_AssetEngineStatus v) { setField(61, v); }
   @$pb.TagNumber(61)
   $core.bool hasEngineStatus() => $_has(19);
   @$pb.TagNumber(61)

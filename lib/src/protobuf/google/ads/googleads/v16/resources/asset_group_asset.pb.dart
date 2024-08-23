@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_policy.pb.dart' as $2531;
-import '../common/policy_summary.pb.dart' as $2851;
-import '../enums/asset_field_type.pbenum.dart' as $2818;
-import '../enums/asset_link_primary_status.pbenum.dart' as $2529;
-import '../enums/asset_link_primary_status_reason.pbenum.dart' as $2528;
-import '../enums/asset_link_status.pbenum.dart' as $2828;
-import '../enums/asset_performance_label.pbenum.dart' as $2533;
-import '../enums/asset_source.pbenum.dart' as $2827;
+import '../common/asset_policy.pb.dart' as $2532;
+import '../common/policy_summary.pb.dart' as $2852;
+import '../enums/asset_field_type.pbenum.dart' as $2819;
+import '../enums/asset_link_primary_status.pbenum.dart' as $2530;
+import '../enums/asset_link_primary_status_reason.pbenum.dart' as $2529;
+import '../enums/asset_link_status.pbenum.dart' as $2829;
+import '../enums/asset_performance_label.pbenum.dart' as $2534;
+import '../enums/asset_source.pbenum.dart' as $2828;
 
 /// AssetGroupAsset is the link between an asset and an asset group.
 /// Adding an AssetGroupAsset links an asset with an asset group.
@@ -29,14 +29,14 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? assetGroup,
     $core.String? asset,
-    $2818.AssetFieldTypeEnum_AssetFieldType? fieldType,
-    $2828.AssetLinkStatusEnum_AssetLinkStatus? status,
-    $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel? performanceLabel,
-    $2851.PolicySummary? policySummary,
-    $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? primaryStatus,
-    $core.Iterable<$2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>? primaryStatusReasons,
-    $core.Iterable<$2531.AssetLinkPrimaryStatusDetails>? primaryStatusDetails,
-    $2827.AssetSourceEnum_AssetSource? source,
+    $2819.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $2829.AssetLinkStatusEnum_AssetLinkStatus? status,
+    $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel? performanceLabel,
+    $2852.PolicySummary? policySummary,
+    $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? primaryStatus,
+    $core.Iterable<$2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>? primaryStatusReasons,
+    $core.Iterable<$2532.AssetLinkPrimaryStatusDetails>? primaryStatusDetails,
+    $2828.AssetSourceEnum_AssetSource? source,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -82,14 +82,14 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'assetGroup')
     ..aOS(3, _omitFieldNames ? '' : 'asset')
-    ..e<$2818.AssetFieldTypeEnum_AssetFieldType>(4, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $2818.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2818.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2818.AssetFieldTypeEnum_AssetFieldType.values)
-    ..e<$2828.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2828.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $2828.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $2828.AssetLinkStatusEnum_AssetLinkStatus.values)
-    ..e<$2533.AssetPerformanceLabelEnum_AssetPerformanceLabel>(6, _omitFieldNames ? '' : 'performanceLabel', $pb.PbFieldType.OE, defaultOrMaker: $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel.UNSPECIFIED, valueOf: $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel.valueOf, enumValues: $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel.values)
-    ..aOM<$2851.PolicySummary>(7, _omitFieldNames ? '' : 'policySummary', subBuilder: $2851.PolicySummary.create)
-    ..e<$2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(8, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
-    ..pc<$2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(9, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values, defaultEnumValue: $2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED)
-    ..pc<$2531.AssetLinkPrimaryStatusDetails>(10, _omitFieldNames ? '' : 'primaryStatusDetails', $pb.PbFieldType.PM, subBuilder: $2531.AssetLinkPrimaryStatusDetails.create)
-    ..e<$2827.AssetSourceEnum_AssetSource>(11, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2827.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2827.AssetSourceEnum_AssetSource.valueOf, enumValues: $2827.AssetSourceEnum_AssetSource.values)
+    ..e<$2819.AssetFieldTypeEnum_AssetFieldType>(4, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $2819.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2819.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2819.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$2829.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2829.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $2829.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $2829.AssetLinkStatusEnum_AssetLinkStatus.values)
+    ..e<$2534.AssetPerformanceLabelEnum_AssetPerformanceLabel>(6, _omitFieldNames ? '' : 'performanceLabel', $pb.PbFieldType.OE, defaultOrMaker: $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel.UNSPECIFIED, valueOf: $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel.valueOf, enumValues: $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel.values)
+    ..aOM<$2852.PolicySummary>(7, _omitFieldNames ? '' : 'policySummary', subBuilder: $2852.PolicySummary.create)
+    ..e<$2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(8, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
+    ..pc<$2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(9, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values, defaultEnumValue: $2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED)
+    ..pc<$2532.AssetLinkPrimaryStatusDetails>(10, _omitFieldNames ? '' : 'primaryStatusDetails', $pb.PbFieldType.PM, subBuilder: $2532.AssetLinkPrimaryStatusDetails.create)
+    ..e<$2828.AssetSourceEnum_AssetSource>(11, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2828.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2828.AssetSourceEnum_AssetSource.valueOf, enumValues: $2828.AssetSourceEnum_AssetSource.values)
     ..hasRequiredFields = false
   ;
 
@@ -150,9 +150,9 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
   /// The description of the placement of the asset within the asset group. For
   /// example: HEADLINE, YOUTUBE_VIDEO etc
   @$pb.TagNumber(4)
-  $2818.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(3);
+  $2819.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(3);
   @$pb.TagNumber(4)
-  set fieldType($2818.AssetFieldTypeEnum_AssetFieldType v) { setField(4, v); }
+  set fieldType($2819.AssetFieldTypeEnum_AssetFieldType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFieldType() => $_has(3);
   @$pb.TagNumber(4)
@@ -160,9 +160,9 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
 
   /// The status of the link between an asset and asset group.
   @$pb.TagNumber(5)
-  $2828.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(4);
+  $2829.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($2828.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
+  set status($2829.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)
@@ -170,9 +170,9 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
 
   /// Output only. The performance of this asset group asset.
   @$pb.TagNumber(6)
-  $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel get performanceLabel => $_getN(5);
+  $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel get performanceLabel => $_getN(5);
   @$pb.TagNumber(6)
-  set performanceLabel($2533.AssetPerformanceLabelEnum_AssetPerformanceLabel v) { setField(6, v); }
+  set performanceLabel($2534.AssetPerformanceLabelEnum_AssetPerformanceLabel v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPerformanceLabel() => $_has(5);
   @$pb.TagNumber(6)
@@ -180,15 +180,15 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
 
   /// Output only. The policy information for this asset group asset.
   @$pb.TagNumber(7)
-  $2851.PolicySummary get policySummary => $_getN(6);
+  $2852.PolicySummary get policySummary => $_getN(6);
   @$pb.TagNumber(7)
-  set policySummary($2851.PolicySummary v) { setField(7, v); }
+  set policySummary($2852.PolicySummary v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPolicySummary() => $_has(6);
   @$pb.TagNumber(7)
   void clearPolicySummary() => clearField(7);
   @$pb.TagNumber(7)
-  $2851.PolicySummary ensurePolicySummary() => $_ensure(6);
+  $2852.PolicySummary ensurePolicySummary() => $_ensure(6);
 
   /// Output only. Provides the PrimaryStatus of this asset link.
   /// Primary status is meant essentially to differentiate between the plain
@@ -197,9 +197,9 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
   /// its mainly policy and quality approvals) to come up with a more
   /// comprehensive status to indicate its serving state.
   @$pb.TagNumber(8)
-  $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get primaryStatus => $_getN(7);
+  $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get primaryStatus => $_getN(7);
   @$pb.TagNumber(8)
-  set primaryStatus($2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(8, v); }
+  set primaryStatus($2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPrimaryStatus() => $_has(7);
   @$pb.TagNumber(8)
@@ -208,18 +208,18 @@ class AssetGroupAsset extends $pb.GeneratedMessage {
   /// Output only. Provides a list of reasons for why an asset is not serving or
   /// not serving at full capacity.
   @$pb.TagNumber(9)
-  $core.List<$2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason> get primaryStatusReasons => $_getList(8);
+  $core.List<$2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason> get primaryStatusReasons => $_getList(8);
 
   /// Output only. Provides the details of the primary status and its associated
   /// reasons.
   @$pb.TagNumber(10)
-  $core.List<$2531.AssetLinkPrimaryStatusDetails> get primaryStatusDetails => $_getList(9);
+  $core.List<$2532.AssetLinkPrimaryStatusDetails> get primaryStatusDetails => $_getList(9);
 
   /// Output only. Source of the asset group asset.
   @$pb.TagNumber(11)
-  $2827.AssetSourceEnum_AssetSource get source => $_getN(10);
+  $2828.AssetSourceEnum_AssetSource get source => $_getN(10);
   @$pb.TagNumber(11)
-  set source($2827.AssetSourceEnum_AssetSource v) { setField(11, v); }
+  set source($2828.AssetSourceEnum_AssetSource v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSource() => $_has(10);
   @$pb.TagNumber(11)

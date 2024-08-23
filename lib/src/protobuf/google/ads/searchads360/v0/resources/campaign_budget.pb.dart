@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/budget_delivery_method.pbenum.dart' as $4058;
-import '../enums/budget_period.pbenum.dart' as $4059;
+import '../enums/budget_delivery_method.pbenum.dart' as $4059;
+import '../enums/budget_period.pbenum.dart' as $4060;
 
 /// A campaign budget.
 class CampaignBudget extends $pb.GeneratedMessage {
   factory CampaignBudget({
     $core.String? resourceName,
-    $4058.BudgetDeliveryMethodEnum_BudgetDeliveryMethod? deliveryMethod,
-    $4059.BudgetPeriodEnum_BudgetPeriod? period,
+    $4059.BudgetDeliveryMethodEnum_BudgetDeliveryMethod? deliveryMethod,
+    $4060.BudgetPeriodEnum_BudgetPeriod? period,
     $fixnum.Int64? amountMicros,
   }) {
     final $result = create();
@@ -46,8 +46,8 @@ class CampaignBudget extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignBudget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4058.BudgetDeliveryMethodEnum_BudgetDeliveryMethod>(7, _omitFieldNames ? '' : 'deliveryMethod', $pb.PbFieldType.OE, defaultOrMaker: $4058.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.UNSPECIFIED, valueOf: $4058.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.valueOf, enumValues: $4058.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.values)
-    ..e<$4059.BudgetPeriodEnum_BudgetPeriod>(13, _omitFieldNames ? '' : 'period', $pb.PbFieldType.OE, defaultOrMaker: $4059.BudgetPeriodEnum_BudgetPeriod.UNSPECIFIED, valueOf: $4059.BudgetPeriodEnum_BudgetPeriod.valueOf, enumValues: $4059.BudgetPeriodEnum_BudgetPeriod.values)
+    ..e<$4059.BudgetDeliveryMethodEnum_BudgetDeliveryMethod>(7, _omitFieldNames ? '' : 'deliveryMethod', $pb.PbFieldType.OE, defaultOrMaker: $4059.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.UNSPECIFIED, valueOf: $4059.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.valueOf, enumValues: $4059.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.values)
+    ..e<$4060.BudgetPeriodEnum_BudgetPeriod>(13, _omitFieldNames ? '' : 'period', $pb.PbFieldType.OE, defaultOrMaker: $4060.BudgetPeriodEnum_BudgetPeriod.UNSPECIFIED, valueOf: $4060.BudgetPeriodEnum_BudgetPeriod.valueOf, enumValues: $4060.BudgetPeriodEnum_BudgetPeriod.values)
     ..aInt64(21, _omitFieldNames ? '' : 'amountMicros')
     ..hasRequiredFields = false
   ;
@@ -91,9 +91,9 @@ class CampaignBudget extends $pb.GeneratedMessage {
   ///
   ///  Defaults to STANDARD if unspecified in a create operation.
   @$pb.TagNumber(7)
-  $4058.BudgetDeliveryMethodEnum_BudgetDeliveryMethod get deliveryMethod => $_getN(1);
+  $4059.BudgetDeliveryMethodEnum_BudgetDeliveryMethod get deliveryMethod => $_getN(1);
   @$pb.TagNumber(7)
-  set deliveryMethod($4058.BudgetDeliveryMethodEnum_BudgetDeliveryMethod v) { setField(7, v); }
+  set deliveryMethod($4059.BudgetDeliveryMethodEnum_BudgetDeliveryMethod v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDeliveryMethod() => $_has(1);
   @$pb.TagNumber(7)
@@ -102,9 +102,9 @@ class CampaignBudget extends $pb.GeneratedMessage {
   /// Immutable. Period over which to spend the budget. Defaults to DAILY if not
   /// specified.
   @$pb.TagNumber(13)
-  $4059.BudgetPeriodEnum_BudgetPeriod get period => $_getN(2);
+  $4060.BudgetPeriodEnum_BudgetPeriod get period => $_getN(2);
   @$pb.TagNumber(13)
-  set period($4059.BudgetPeriodEnum_BudgetPeriod v) { setField(13, v); }
+  set period($4060.BudgetPeriodEnum_BudgetPeriod v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasPeriod() => $_has(2);
   @$pb.TagNumber(13)

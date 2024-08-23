@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'http_route.pbenum.dart';
 
 export 'http_route.pbenum.dart';
@@ -792,7 +792,7 @@ class HttpRoute_Redirect extends $pb.GeneratedMessage {
 /// injection before being sent to a destination.
 class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory HttpRoute_FaultInjectionPolicy_Delay({
-    $1737.Duration? fixedDelay,
+    $1738.Duration? fixedDelay,
     $core.int? percentage,
   }) {
     final $result = create();
@@ -809,7 +809,7 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory HttpRoute_FaultInjectionPolicy_Delay.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HttpRoute.FaultInjectionPolicy.Delay', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'fixedDelay', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'fixedDelay', subBuilder: $1738.Duration.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -837,15 +837,15 @@ class HttpRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
 
   /// Specify a fixed delay before forwarding the request.
   @$pb.TagNumber(1)
-  $1737.Duration get fixedDelay => $_getN(0);
+  $1738.Duration get fixedDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedDelay($1737.Duration v) { setField(1, v); }
+  set fixedDelay($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFixedDelay() => $_has(0);
   @$pb.TagNumber(1)
   void clearFixedDelay() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureFixedDelay() => $_ensure(0);
+  $1738.Duration ensureFixedDelay() => $_ensure(0);
 
   ///  The percentage of traffic on which delay will be injected.
   ///
@@ -1150,7 +1150,7 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
   factory HttpRoute_RetryPolicy({
     $core.Iterable<$core.String>? retryConditions,
     $core.int? numRetries,
-    $1737.Duration? perTryTimeout,
+    $1738.Duration? perTryTimeout,
   }) {
     final $result = create();
     if (retryConditions != null) {
@@ -1171,7 +1171,7 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HttpRoute.RetryPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'retryConditions')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'numRetries', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'perTryTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'perTryTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1234,15 +1234,15 @@ class HttpRoute_RetryPolicy extends $pb.GeneratedMessage {
 
   /// Specifies a non-zero timeout per retry attempt.
   @$pb.TagNumber(3)
-  $1737.Duration get perTryTimeout => $_getN(2);
+  $1738.Duration get perTryTimeout => $_getN(2);
   @$pb.TagNumber(3)
-  set perTryTimeout($1737.Duration v) { setField(3, v); }
+  set perTryTimeout($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPerTryTimeout() => $_has(2);
   @$pb.TagNumber(3)
   void clearPerTryTimeout() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensurePerTryTimeout() => $_ensure(2);
+  $1738.Duration ensurePerTryTimeout() => $_ensure(2);
 }
 
 /// Specifies the policy on how requests are shadowed to a separate mirrored
@@ -1449,7 +1449,7 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
     HttpRoute_HeaderModifier? requestHeaderModifier,
     HttpRoute_HeaderModifier? responseHeaderModifier,
     HttpRoute_URLRewrite? urlRewrite,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     HttpRoute_RetryPolicy? retryPolicy,
     HttpRoute_RequestMirrorPolicy? requestMirrorPolicy,
     HttpRoute_CorsPolicy? corsPolicy,
@@ -1498,7 +1498,7 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
     ..aOM<HttpRoute_HeaderModifier>(5, _omitFieldNames ? '' : 'requestHeaderModifier', subBuilder: HttpRoute_HeaderModifier.create)
     ..aOM<HttpRoute_HeaderModifier>(6, _omitFieldNames ? '' : 'responseHeaderModifier', subBuilder: HttpRoute_HeaderModifier.create)
     ..aOM<HttpRoute_URLRewrite>(7, _omitFieldNames ? '' : 'urlRewrite', subBuilder: HttpRoute_URLRewrite.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOM<HttpRoute_RetryPolicy>(9, _omitFieldNames ? '' : 'retryPolicy', subBuilder: HttpRoute_RetryPolicy.create)
     ..aOM<HttpRoute_RequestMirrorPolicy>(10, _omitFieldNames ? '' : 'requestMirrorPolicy', subBuilder: HttpRoute_RequestMirrorPolicy.create)
     ..aOM<HttpRoute_CorsPolicy>(11, _omitFieldNames ? '' : 'corsPolicy', subBuilder: HttpRoute_CorsPolicy.create)
@@ -1609,15 +1609,15 @@ class HttpRoute_RouteAction extends $pb.GeneratedMessage {
   /// time the request has been fully processed (i.e. end of stream) up until
   /// the response has been completely processed. Timeout includes all retries.
   @$pb.TagNumber(8)
-  $1737.Duration get timeout => $_getN(6);
+  $1738.Duration get timeout => $_getN(6);
   @$pb.TagNumber(8)
-  set timeout($1737.Duration v) { setField(8, v); }
+  set timeout($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(6);
   @$pb.TagNumber(8)
   void clearTimeout() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureTimeout() => $_ensure(6);
+  $1738.Duration ensureTimeout() => $_ensure(6);
 
   /// Specifies the retry policy associated with this route.
   @$pb.TagNumber(9)
@@ -1738,8 +1738,8 @@ class HttpRoute extends $pb.GeneratedMessage {
   factory HttpRoute({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$core.String>? hostnames,
     $core.Iterable<HttpRoute_RouteRule>? rules,
     $core.Iterable<$core.String>? meshes,
@@ -1787,8 +1787,8 @@ class HttpRoute extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HttpRoute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pPS(5, _omitFieldNames ? '' : 'hostnames')
     ..pc<HttpRoute_RouteRule>(6, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: HttpRoute_RouteRule.create)
     ..pPS(8, _omitFieldNames ? '' : 'meshes')
@@ -1843,27 +1843,27 @@ class HttpRoute extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   ///  Required. Hostnames define a set of hosts that should match against the
   ///  HTTP host header to select a HttpRoute to process the request. Hostname is
@@ -2221,7 +2221,7 @@ class CreateHttpRouteRequest extends $pb.GeneratedMessage {
 /// Request used by the UpdateHttpRoute method.
 class UpdateHttpRouteRequest extends $pb.GeneratedMessage {
   factory UpdateHttpRouteRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     HttpRoute? httpRoute,
   }) {
     final $result = create();
@@ -2238,7 +2238,7 @@ class UpdateHttpRouteRequest extends $pb.GeneratedMessage {
   factory UpdateHttpRouteRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateHttpRouteRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<HttpRoute>(2, _omitFieldNames ? '' : 'httpRoute', subBuilder: HttpRoute.create)
     ..hasRequiredFields = false
   ;
@@ -2270,15 +2270,15 @@ class UpdateHttpRouteRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Updated HttpRoute resource.
   @$pb.TagNumber(2)

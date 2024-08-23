@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'entity_display.pb.dart' as $1755;
+import 'entity_display.pb.dart' as $1756;
 import 'synonym_type.pbenum.dart';
 
 export 'synonym_type.pbenum.dart';
@@ -22,7 +22,7 @@ export 'synonym_type.pbenum.dart';
 /// entry inside the type.
 class SynonymType_Entity extends $pb.GeneratedMessage {
   factory SynonymType_Entity({
-    $1755.EntityDisplay? display,
+    $1756.EntityDisplay? display,
     $core.Iterable<$core.String>? synonyms,
   }) {
     final $result = create();
@@ -39,7 +39,7 @@ class SynonymType_Entity extends $pb.GeneratedMessage {
   factory SynonymType_Entity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SynonymType.Entity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
-    ..aOM<$1755.EntityDisplay>(1, _omitFieldNames ? '' : 'display', subBuilder: $1755.EntityDisplay.create)
+    ..aOM<$1756.EntityDisplay>(1, _omitFieldNames ? '' : 'display', subBuilder: $1756.EntityDisplay.create)
     ..pPS(2, _omitFieldNames ? '' : 'synonyms')
     ..hasRequiredFields = false
   ;
@@ -67,15 +67,15 @@ class SynonymType_Entity extends $pb.GeneratedMessage {
 
   /// Optional. The entity display details.
   @$pb.TagNumber(1)
-  $1755.EntityDisplay get display => $_getN(0);
+  $1756.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(1)
-  set display($1755.EntityDisplay v) { setField(1, v); }
+  set display($1756.EntityDisplay v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDisplay() => $_has(0);
   @$pb.TagNumber(1)
   void clearDisplay() => clearField(1);
   @$pb.TagNumber(1)
-  $1755.EntityDisplay ensureDisplay() => $_ensure(0);
+  $1756.EntityDisplay ensureDisplay() => $_ensure(0);
 
   /// Optional. The list of synonyms for the entity.
   /// **This field is localizable.**

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'fetch_options.pb.dart' as $4702;
+import 'fetch_options.pb.dart' as $4704;
 import 'vod_configs.pbenum.dart';
 
 export 'vod_configs.pbenum.dart';
@@ -26,7 +26,7 @@ class VodConfig extends $pb.GeneratedMessage {
     $core.String? adTagUri,
     GamVodConfig? gamVodConfig,
     VodConfig_State? state,
-    $4702.FetchOptions? sourceFetchOptions,
+    $4704.FetchOptions? sourceFetchOptions,
   }) {
     final $result = create();
     if (name != null) {
@@ -59,7 +59,7 @@ class VodConfig extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'adTagUri')
     ..aOM<GamVodConfig>(4, _omitFieldNames ? '' : 'gamVodConfig', subBuilder: GamVodConfig.create)
     ..e<VodConfig_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: VodConfig_State.STATE_UNSPECIFIED, valueOf: VodConfig_State.valueOf, enumValues: VodConfig_State.values)
-    ..aOM<$4702.FetchOptions>(8, _omitFieldNames ? '' : 'sourceFetchOptions', subBuilder: $4702.FetchOptions.create)
+    ..aOM<$4704.FetchOptions>(8, _omitFieldNames ? '' : 'sourceFetchOptions', subBuilder: $4704.FetchOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -139,15 +139,15 @@ class VodConfig extends $pb.GeneratedMessage {
 
   /// Options for fetching source manifests and segments.
   @$pb.TagNumber(8)
-  $4702.FetchOptions get sourceFetchOptions => $_getN(5);
+  $4704.FetchOptions get sourceFetchOptions => $_getN(5);
   @$pb.TagNumber(8)
-  set sourceFetchOptions($4702.FetchOptions v) { setField(8, v); }
+  set sourceFetchOptions($4704.FetchOptions v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSourceFetchOptions() => $_has(5);
   @$pb.TagNumber(8)
   void clearSourceFetchOptions() => clearField(8);
   @$pb.TagNumber(8)
-  $4702.FetchOptions ensureSourceFetchOptions() => $_ensure(5);
+  $4704.FetchOptions ensureSourceFetchOptions() => $_ensure(5);
 }
 
 /// Metadata used for GAM ad decisioning.

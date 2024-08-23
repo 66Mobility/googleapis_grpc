@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'io.pb.dart' as $4345;
+import 'io.pb.dart' as $4346;
 
 /// A specification of a relational table.
 /// The table's schema is represented via its child column specs. It is
@@ -31,7 +31,7 @@ class TableSpec extends $pb.GeneratedMessage {
     $core.String? timeColumnSpecId,
     $fixnum.Int64? rowCount,
     $fixnum.Int64? validRowCount,
-    $core.Iterable<$4345.InputConfig>? inputConfigs,
+    $core.Iterable<$4346.InputConfig>? inputConfigs,
     $core.String? etag,
     $fixnum.Int64? columnCount,
   }) {
@@ -68,7 +68,7 @@ class TableSpec extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'timeColumnSpecId')
     ..aInt64(3, _omitFieldNames ? '' : 'rowCount')
     ..aInt64(4, _omitFieldNames ? '' : 'validRowCount')
-    ..pc<$4345.InputConfig>(5, _omitFieldNames ? '' : 'inputConfigs', $pb.PbFieldType.PM, subBuilder: $4345.InputConfig.create)
+    ..pc<$4346.InputConfig>(5, _omitFieldNames ? '' : 'inputConfigs', $pb.PbFieldType.PM, subBuilder: $4346.InputConfig.create)
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..aInt64(7, _omitFieldNames ? '' : 'columnCount')
     ..hasRequiredFields = false
@@ -149,7 +149,7 @@ class TableSpec extends $pb.GeneratedMessage {
   /// Output only. Input configs via which data currently residing in the table
   /// had been imported.
   @$pb.TagNumber(5)
-  $core.List<$4345.InputConfig> get inputConfigs => $_getList(4);
+  $core.List<$4346.InputConfig> get inputConfigs => $_getList(4);
 
   /// Used to perform consistent read-modify-write updates. If not set, a blind
   /// "overwrite" update happens.

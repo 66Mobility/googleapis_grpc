@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../common/offline_user_data.pb.dart' as $3765;
-import '../enums/conversion_adjustment_type.pbenum.dart' as $3958;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../common/offline_user_data.pb.dart' as $3766;
+import '../enums/conversion_adjustment_type.pbenum.dart' as $3959;
 
 /// Request message for
 /// [ConversionAdjustmentUploadService.UploadConversionAdjustments][google.ads.googleads.v17.services.ConversionAdjustmentUploadService.UploadConversionAdjustments].
@@ -140,7 +140,7 @@ class UploadConversionAdjustmentsRequest extends $pb.GeneratedMessage {
 /// [ConversionAdjustmentUploadService.UploadConversionAdjustments][google.ads.googleads.v17.services.ConversionAdjustmentUploadService.UploadConversionAdjustments].
 class UploadConversionAdjustmentsResponse extends $pb.GeneratedMessage {
   factory UploadConversionAdjustmentsResponse({
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     $core.Iterable<ConversionAdjustmentResult>? results,
     $fixnum.Int64? jobId,
   }) {
@@ -161,7 +161,7 @@ class UploadConversionAdjustmentsResponse extends $pb.GeneratedMessage {
   factory UploadConversionAdjustmentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadConversionAdjustmentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..pc<ConversionAdjustmentResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: ConversionAdjustmentResult.create)
     ..aInt64(3, _omitFieldNames ? '' : 'jobId')
     ..hasRequiredFields = false
@@ -195,15 +195,15 @@ class UploadConversionAdjustmentsResponse extends $pb.GeneratedMessage {
   /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
   /// for more information about partial failure.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// Returned for successfully processed conversion adjustments. Proto will be
   /// empty for rows that received an error. Results are not returned when
@@ -225,11 +225,11 @@ class UploadConversionAdjustmentsResponse extends $pb.GeneratedMessage {
 /// A conversion adjustment.
 class ConversionAdjustment extends $pb.GeneratedMessage {
   factory ConversionAdjustment({
-    $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType? adjustmentType,
+    $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType? adjustmentType,
     RestatementValue? restatementValue,
     $core.String? conversionAction,
     $core.String? adjustmentDateTime,
-    $core.Iterable<$3765.UserIdentifier>? userIdentifiers,
+    $core.Iterable<$3766.UserIdentifier>? userIdentifiers,
     $core.String? userAgent,
     GclidDateTimePair? gclidDateTimePair,
     $core.String? orderId,
@@ -266,11 +266,11 @@ class ConversionAdjustment extends $pb.GeneratedMessage {
   factory ConversionAdjustment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionAdjustment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType>(5, _omitFieldNames ? '' : 'adjustmentType', $pb.PbFieldType.OE, defaultOrMaker: $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.UNSPECIFIED, valueOf: $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.valueOf, enumValues: $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.values)
+    ..e<$3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType>(5, _omitFieldNames ? '' : 'adjustmentType', $pb.PbFieldType.OE, defaultOrMaker: $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.UNSPECIFIED, valueOf: $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.valueOf, enumValues: $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.values)
     ..aOM<RestatementValue>(6, _omitFieldNames ? '' : 'restatementValue', subBuilder: RestatementValue.create)
     ..aOS(8, _omitFieldNames ? '' : 'conversionAction')
     ..aOS(9, _omitFieldNames ? '' : 'adjustmentDateTime')
-    ..pc<$3765.UserIdentifier>(10, _omitFieldNames ? '' : 'userIdentifiers', $pb.PbFieldType.PM, subBuilder: $3765.UserIdentifier.create)
+    ..pc<$3766.UserIdentifier>(10, _omitFieldNames ? '' : 'userIdentifiers', $pb.PbFieldType.PM, subBuilder: $3766.UserIdentifier.create)
     ..aOS(11, _omitFieldNames ? '' : 'userAgent')
     ..aOM<GclidDateTimePair>(12, _omitFieldNames ? '' : 'gclidDateTimePair', subBuilder: GclidDateTimePair.create)
     ..aOS(13, _omitFieldNames ? '' : 'orderId')
@@ -300,9 +300,9 @@ class ConversionAdjustment extends $pb.GeneratedMessage {
 
   /// The adjustment type.
   @$pb.TagNumber(5)
-  $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType get adjustmentType => $_getN(0);
+  $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType get adjustmentType => $_getN(0);
   @$pb.TagNumber(5)
-  set adjustmentType($3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType v) { setField(5, v); }
+  set adjustmentType($3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAdjustmentType() => $_has(0);
   @$pb.TagNumber(5)
@@ -356,7 +356,7 @@ class ConversionAdjustment extends $pb.GeneratedMessage {
   /// enhancements. The maximum number of user identifiers for each
   /// enhancement is 5.
   @$pb.TagNumber(10)
-  $core.List<$3765.UserIdentifier> get userIdentifiers => $_getList(4);
+  $core.List<$3766.UserIdentifier> get userIdentifiers => $_getList(4);
 
   /// The user agent to enhance the original conversion. This can be found in
   /// your user's HTTP request header when they convert on your web page.
@@ -551,7 +551,7 @@ class GclidDateTimePair extends $pb.GeneratedMessage {
 /// Information identifying a successfully processed ConversionAdjustment.
 class ConversionAdjustmentResult extends $pb.GeneratedMessage {
   factory ConversionAdjustmentResult({
-    $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType? adjustmentType,
+    $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType? adjustmentType,
     $core.String? conversionAction,
     $core.String? adjustmentDateTime,
     GclidDateTimePair? gclidDateTimePair,
@@ -580,7 +580,7 @@ class ConversionAdjustmentResult extends $pb.GeneratedMessage {
   factory ConversionAdjustmentResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionAdjustmentResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType>(5, _omitFieldNames ? '' : 'adjustmentType', $pb.PbFieldType.OE, defaultOrMaker: $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.UNSPECIFIED, valueOf: $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.valueOf, enumValues: $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.values)
+    ..e<$3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType>(5, _omitFieldNames ? '' : 'adjustmentType', $pb.PbFieldType.OE, defaultOrMaker: $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.UNSPECIFIED, valueOf: $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.valueOf, enumValues: $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType.values)
     ..aOS(7, _omitFieldNames ? '' : 'conversionAction')
     ..aOS(8, _omitFieldNames ? '' : 'adjustmentDateTime')
     ..aOM<GclidDateTimePair>(9, _omitFieldNames ? '' : 'gclidDateTimePair', subBuilder: GclidDateTimePair.create)
@@ -611,9 +611,9 @@ class ConversionAdjustmentResult extends $pb.GeneratedMessage {
 
   /// The adjustment type.
   @$pb.TagNumber(5)
-  $3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType get adjustmentType => $_getN(0);
+  $3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType get adjustmentType => $_getN(0);
   @$pb.TagNumber(5)
-  set adjustmentType($3958.ConversionAdjustmentTypeEnum_ConversionAdjustmentType v) { setField(5, v); }
+  set adjustmentType($3959.ConversionAdjustmentTypeEnum_ConversionAdjustmentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAdjustmentType() => $_has(0);
   @$pb.TagNumber(5)

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'sha_constraints.pbenum.dart';
-import 'sha_custom_config.pb.dart' as $4685;
+import 'sha_custom_config.pb.dart' as $4687;
 
 export 'sha_constraints.pbenum.dart';
 
@@ -91,7 +91,7 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
   factory SecurityHealthAnalyticsCustomModule({
     $core.String? id,
     $core.String? displayName,
-    $4685.CustomConfig? config,
+    $4687.CustomConfig? config,
     EnablementState? moduleEnablementState,
   }) {
     final $result = create();
@@ -116,7 +116,7 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SecurityHealthAnalyticsCustomModule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securityposture.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4685.CustomConfig>(3, _omitFieldNames ? '' : 'config', subBuilder: $4685.CustomConfig.create)
+    ..aOM<$4687.CustomConfig>(3, _omitFieldNames ? '' : 'config', subBuilder: $4687.CustomConfig.create)
     ..e<EnablementState>(4, _omitFieldNames ? '' : 'moduleEnablementState', $pb.PbFieldType.OE, defaultOrMaker: EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: EnablementState.valueOf, enumValues: EnablementState.values)
     ..hasRequiredFields = false
   ;
@@ -170,15 +170,15 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
 
   /// Required. custom module details
   @$pb.TagNumber(3)
-  $4685.CustomConfig get config => $_getN(2);
+  $4687.CustomConfig get config => $_getN(2);
   @$pb.TagNumber(3)
-  set config($4685.CustomConfig v) { setField(3, v); }
+  set config($4687.CustomConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasConfig() => $_has(2);
   @$pb.TagNumber(3)
   void clearConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4685.CustomConfig ensureConfig() => $_ensure(2);
+  $4687.CustomConfig ensureConfig() => $_ensure(2);
 
   /// The state of enablement for the module at its level of the resource
   /// hierarchy.

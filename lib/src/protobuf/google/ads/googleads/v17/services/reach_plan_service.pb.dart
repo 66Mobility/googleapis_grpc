@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3285;
-import '../common/dates.pb.dart' as $3315;
-import '../enums/frequency_cap_time_unit.pbenum.dart' as $3313;
-import '../enums/reach_plan_age_range.pbenum.dart' as $3967;
-import '../enums/reach_plan_network.pbenum.dart' as $3968;
-import '../enums/reach_plan_surface.pbenum.dart' as $3969;
-import '../enums/target_frequency_time_unit.pbenum.dart' as $3297;
+import '../common/criteria.pb.dart' as $3286;
+import '../common/dates.pb.dart' as $3316;
+import '../enums/frequency_cap_time_unit.pbenum.dart' as $3314;
+import '../enums/reach_plan_age_range.pbenum.dart' as $3968;
+import '../enums/reach_plan_network.pbenum.dart' as $3969;
+import '../enums/reach_plan_surface.pbenum.dart' as $3970;
+import '../enums/target_frequency_time_unit.pbenum.dart' as $3298;
 
 /// Request message for
 /// [ReachPlanService.ListPlannableLocations][google.ads.googleads.v17.services.ReachPlanService.ListPlannableLocations].
@@ -412,10 +412,10 @@ class ProductMetadata extends $pb.GeneratedMessage {
 /// The targeting for which traffic metrics will be reported.
 class PlannableTargeting extends $pb.GeneratedMessage {
   factory PlannableTargeting({
-    $core.Iterable<$3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange>? ageRanges,
-    $core.Iterable<$3285.GenderInfo>? genders,
-    $core.Iterable<$3285.DeviceInfo>? devices,
-    $core.Iterable<$3968.ReachPlanNetworkEnum_ReachPlanNetwork>? networks,
+    $core.Iterable<$3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange>? ageRanges,
+    $core.Iterable<$3286.GenderInfo>? genders,
+    $core.Iterable<$3286.DeviceInfo>? devices,
+    $core.Iterable<$3969.ReachPlanNetworkEnum_ReachPlanNetwork>? networks,
     $core.Iterable<YouTubeSelectLineUp>? youtubeSelectLineups,
     SurfaceTargetingCombinations? surfaceTargeting,
   }) {
@@ -445,10 +445,10 @@ class PlannableTargeting extends $pb.GeneratedMessage {
   factory PlannableTargeting.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlannableTargeting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..pc<$3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange>(1, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.KE, valueOf: $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange.valueOf, enumValues: $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange.values, defaultEnumValue: $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange.UNSPECIFIED)
-    ..pc<$3285.GenderInfo>(2, _omitFieldNames ? '' : 'genders', $pb.PbFieldType.PM, subBuilder: $3285.GenderInfo.create)
-    ..pc<$3285.DeviceInfo>(3, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $3285.DeviceInfo.create)
-    ..pc<$3968.ReachPlanNetworkEnum_ReachPlanNetwork>(4, _omitFieldNames ? '' : 'networks', $pb.PbFieldType.KE, valueOf: $3968.ReachPlanNetworkEnum_ReachPlanNetwork.valueOf, enumValues: $3968.ReachPlanNetworkEnum_ReachPlanNetwork.values, defaultEnumValue: $3968.ReachPlanNetworkEnum_ReachPlanNetwork.UNSPECIFIED)
+    ..pc<$3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange>(1, _omitFieldNames ? '' : 'ageRanges', $pb.PbFieldType.KE, valueOf: $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange.valueOf, enumValues: $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange.values, defaultEnumValue: $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange.UNSPECIFIED)
+    ..pc<$3286.GenderInfo>(2, _omitFieldNames ? '' : 'genders', $pb.PbFieldType.PM, subBuilder: $3286.GenderInfo.create)
+    ..pc<$3286.DeviceInfo>(3, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $3286.DeviceInfo.create)
+    ..pc<$3969.ReachPlanNetworkEnum_ReachPlanNetwork>(4, _omitFieldNames ? '' : 'networks', $pb.PbFieldType.KE, valueOf: $3969.ReachPlanNetworkEnum_ReachPlanNetwork.valueOf, enumValues: $3969.ReachPlanNetworkEnum_ReachPlanNetwork.values, defaultEnumValue: $3969.ReachPlanNetworkEnum_ReachPlanNetwork.UNSPECIFIED)
     ..pc<YouTubeSelectLineUp>(5, _omitFieldNames ? '' : 'youtubeSelectLineups', $pb.PbFieldType.PM, subBuilder: YouTubeSelectLineUp.create)
     ..aOM<SurfaceTargetingCombinations>(6, _omitFieldNames ? '' : 'surfaceTargeting', subBuilder: SurfaceTargetingCombinations.create)
     ..hasRequiredFields = false
@@ -479,22 +479,22 @@ class PlannableTargeting extends $pb.GeneratedMessage {
   /// reported. Actual targeting is computed by mapping this age range onto
   /// standard Google common.AgeRangeInfo values.
   @$pb.TagNumber(1)
-  $core.List<$3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange> get ageRanges => $_getList(0);
+  $core.List<$3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange> get ageRanges => $_getList(0);
 
   /// Targetable genders for the ad product.
   @$pb.TagNumber(2)
-  $core.List<$3285.GenderInfo> get genders => $_getList(1);
+  $core.List<$3286.GenderInfo> get genders => $_getList(1);
 
   /// Targetable devices for the ad product.
   /// TABLET device targeting is automatically applied to reported metrics
   /// when MOBILE targeting is selected for CPM_MASTHEAD,
   /// GOOGLE_PREFERRED_BUMPER, and GOOGLE_PREFERRED_SHORT products.
   @$pb.TagNumber(3)
-  $core.List<$3285.DeviceInfo> get devices => $_getList(2);
+  $core.List<$3286.DeviceInfo> get devices => $_getList(2);
 
   /// Targetable networks for the ad product.
   @$pb.TagNumber(4)
-  $core.List<$3968.ReachPlanNetworkEnum_ReachPlanNetwork> get networks => $_getList(3);
+  $core.List<$3969.ReachPlanNetworkEnum_ReachPlanNetwork> get networks => $_getList(3);
 
   /// Targetable YouTube Select Lineups for the ad product.
   @$pb.TagNumber(5)
@@ -812,7 +812,7 @@ class EffectiveFrequencyLimit extends $pb.GeneratedMessage {
 /// over a particular time period.
 class FrequencyCap extends $pb.GeneratedMessage {
   factory FrequencyCap({
-    $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit? timeUnit,
+    $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit? timeUnit,
     $core.int? impressions,
   }) {
     final $result = create();
@@ -829,7 +829,7 @@ class FrequencyCap extends $pb.GeneratedMessage {
   factory FrequencyCap.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FrequencyCap', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit>(2, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.UNSPECIFIED, valueOf: $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.valueOf, enumValues: $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.values)
+    ..e<$3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit>(2, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.UNSPECIFIED, valueOf: $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.valueOf, enumValues: $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'impressions', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -857,9 +857,9 @@ class FrequencyCap extends $pb.GeneratedMessage {
 
   /// Required. The type of time unit.
   @$pb.TagNumber(2)
-  $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit get timeUnit => $_getN(0);
+  $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit get timeUnit => $_getN(0);
   @$pb.TagNumber(2)
-  set timeUnit($3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit v) { setField(2, v); }
+  set timeUnit($3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeUnit() => $_has(0);
   @$pb.TagNumber(2)
@@ -879,10 +879,10 @@ class FrequencyCap extends $pb.GeneratedMessage {
 /// The targeting for which traffic metrics will be reported.
 class Targeting extends $pb.GeneratedMessage {
   factory Targeting({
-    $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange? ageRange,
-    $core.Iterable<$3285.GenderInfo>? genders,
-    $core.Iterable<$3285.DeviceInfo>? devices,
-    $3968.ReachPlanNetworkEnum_ReachPlanNetwork? network,
+    $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange? ageRange,
+    $core.Iterable<$3286.GenderInfo>? genders,
+    $core.Iterable<$3286.DeviceInfo>? devices,
+    $3969.ReachPlanNetworkEnum_ReachPlanNetwork? network,
     $core.String? plannableLocationId,
     AudienceTargeting? audienceTargeting,
     $core.Iterable<$core.String>? plannableLocationIds,
@@ -916,10 +916,10 @@ class Targeting extends $pb.GeneratedMessage {
   factory Targeting.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Targeting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange>(2, _omitFieldNames ? '' : 'ageRange', $pb.PbFieldType.OE, defaultOrMaker: $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange.UNSPECIFIED, valueOf: $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange.valueOf, enumValues: $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange.values)
-    ..pc<$3285.GenderInfo>(3, _omitFieldNames ? '' : 'genders', $pb.PbFieldType.PM, subBuilder: $3285.GenderInfo.create)
-    ..pc<$3285.DeviceInfo>(4, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $3285.DeviceInfo.create)
-    ..e<$3968.ReachPlanNetworkEnum_ReachPlanNetwork>(5, _omitFieldNames ? '' : 'network', $pb.PbFieldType.OE, defaultOrMaker: $3968.ReachPlanNetworkEnum_ReachPlanNetwork.UNSPECIFIED, valueOf: $3968.ReachPlanNetworkEnum_ReachPlanNetwork.valueOf, enumValues: $3968.ReachPlanNetworkEnum_ReachPlanNetwork.values)
+    ..e<$3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange>(2, _omitFieldNames ? '' : 'ageRange', $pb.PbFieldType.OE, defaultOrMaker: $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange.UNSPECIFIED, valueOf: $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange.valueOf, enumValues: $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange.values)
+    ..pc<$3286.GenderInfo>(3, _omitFieldNames ? '' : 'genders', $pb.PbFieldType.PM, subBuilder: $3286.GenderInfo.create)
+    ..pc<$3286.DeviceInfo>(4, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $3286.DeviceInfo.create)
+    ..e<$3969.ReachPlanNetworkEnum_ReachPlanNetwork>(5, _omitFieldNames ? '' : 'network', $pb.PbFieldType.OE, defaultOrMaker: $3969.ReachPlanNetworkEnum_ReachPlanNetwork.UNSPECIFIED, valueOf: $3969.ReachPlanNetworkEnum_ReachPlanNetwork.valueOf, enumValues: $3969.ReachPlanNetworkEnum_ReachPlanNetwork.values)
     ..aOS(6, _omitFieldNames ? '' : 'plannableLocationId')
     ..aOM<AudienceTargeting>(7, _omitFieldNames ? '' : 'audienceTargeting', subBuilder: AudienceTargeting.create)
     ..pPS(8, _omitFieldNames ? '' : 'plannableLocationIds')
@@ -950,9 +950,9 @@ class Targeting extends $pb.GeneratedMessage {
   /// Targeted age range.
   /// An unset value is equivalent to targeting all ages.
   @$pb.TagNumber(2)
-  $3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange get ageRange => $_getN(0);
+  $3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange get ageRange => $_getN(0);
   @$pb.TagNumber(2)
-  set ageRange($3967.ReachPlanAgeRangeEnum_ReachPlanAgeRange v) { setField(2, v); }
+  set ageRange($3968.ReachPlanAgeRangeEnum_ReachPlanAgeRange v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAgeRange() => $_has(0);
   @$pb.TagNumber(2)
@@ -961,23 +961,23 @@ class Targeting extends $pb.GeneratedMessage {
   /// Targeted genders.
   /// An unset value is equivalent to targeting MALE and FEMALE.
   @$pb.TagNumber(3)
-  $core.List<$3285.GenderInfo> get genders => $_getList(1);
+  $core.List<$3286.GenderInfo> get genders => $_getList(1);
 
   /// Targeted devices.
   /// If not specified, targets all applicable devices. Applicable devices vary
   /// by product and region and can be obtained from
   /// [ReachPlanService.ListPlannableProducts][google.ads.googleads.v17.services.ReachPlanService.ListPlannableProducts].
   @$pb.TagNumber(4)
-  $core.List<$3285.DeviceInfo> get devices => $_getList(2);
+  $core.List<$3286.DeviceInfo> get devices => $_getList(2);
 
   /// Targetable network for the ad product.
   /// If not specified, targets all applicable networks. Applicable networks vary
   /// by product and region and can be obtained from
   /// [ReachPlanService.ListPlannableProducts][google.ads.googleads.v17.services.ReachPlanService.ListPlannableProducts].
   @$pb.TagNumber(5)
-  $3968.ReachPlanNetworkEnum_ReachPlanNetwork get network => $_getN(3);
+  $3969.ReachPlanNetworkEnum_ReachPlanNetwork get network => $_getN(3);
   @$pb.TagNumber(5)
-  set network($3968.ReachPlanNetworkEnum_ReachPlanNetwork v) { setField(5, v); }
+  set network($3969.ReachPlanNetworkEnum_ReachPlanNetwork v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasNetwork() => $_has(3);
   @$pb.TagNumber(5)
@@ -1030,7 +1030,7 @@ class Targeting extends $pb.GeneratedMessage {
 class CampaignDuration extends $pb.GeneratedMessage {
   factory CampaignDuration({
     $core.int? durationInDays,
-    $3315.DateRange? dateRange,
+    $3316.DateRange? dateRange,
   }) {
     final $result = create();
     if (durationInDays != null) {
@@ -1047,7 +1047,7 @@ class CampaignDuration extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignDuration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'durationInDays', $pb.PbFieldType.O3)
-    ..aOM<$3315.DateRange>(3, _omitFieldNames ? '' : 'dateRange', subBuilder: $3315.DateRange.create)
+    ..aOM<$3316.DateRange>(3, _omitFieldNames ? '' : 'dateRange', subBuilder: $3316.DateRange.create)
     ..hasRequiredFields = false
   ;
 
@@ -1091,15 +1091,15 @@ class CampaignDuration extends $pb.GeneratedMessage {
   ///
   ///  This field cannot be combined with the duration_in_days field.
   @$pb.TagNumber(3)
-  $3315.DateRange get dateRange => $_getN(1);
+  $3316.DateRange get dateRange => $_getN(1);
   @$pb.TagNumber(3)
-  set dateRange($3315.DateRange v) { setField(3, v); }
+  set dateRange($3316.DateRange v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDateRange() => $_has(1);
   @$pb.TagNumber(3)
   void clearDateRange() => clearField(3);
   @$pb.TagNumber(3)
-  $3315.DateRange ensureDateRange() => $_ensure(1);
+  $3316.DateRange ensureDateRange() => $_ensure(1);
 }
 
 /// A product being planned for reach.
@@ -2190,7 +2190,7 @@ class ForecastMetricOptions extends $pb.GeneratedMessage {
 /// Audience targeting for reach forecast.
 class AudienceTargeting extends $pb.GeneratedMessage {
   factory AudienceTargeting({
-    $core.Iterable<$3285.UserInterestInfo>? userInterest,
+    $core.Iterable<$3286.UserInterestInfo>? userInterest,
   }) {
     final $result = create();
     if (userInterest != null) {
@@ -2203,7 +2203,7 @@ class AudienceTargeting extends $pb.GeneratedMessage {
   factory AudienceTargeting.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudienceTargeting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..pc<$3285.UserInterestInfo>(1, _omitFieldNames ? '' : 'userInterest', $pb.PbFieldType.PM, subBuilder: $3285.UserInterestInfo.create)
+    ..pc<$3286.UserInterestInfo>(1, _omitFieldNames ? '' : 'userInterest', $pb.PbFieldType.PM, subBuilder: $3286.UserInterestInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -2230,7 +2230,7 @@ class AudienceTargeting extends $pb.GeneratedMessage {
 
   /// List of audiences based on user interests to be targeted.
   @$pb.TagNumber(1)
-  $core.List<$3285.UserInterestInfo> get userInterest => $_getList(0);
+  $core.List<$3286.UserInterestInfo> get userInterest => $_getList(0);
 }
 
 enum AdvancedProductTargeting_AdvancedTargeting {
@@ -2524,7 +2524,7 @@ class SurfaceTargetingCombinations extends $pb.GeneratedMessage {
 /// of ad inventories such as In-Feed, In-Stream, and Shorts.
 class SurfaceTargeting extends $pb.GeneratedMessage {
   factory SurfaceTargeting({
-    $core.Iterable<$3969.ReachPlanSurfaceEnum_ReachPlanSurface>? surfaces,
+    $core.Iterable<$3970.ReachPlanSurfaceEnum_ReachPlanSurface>? surfaces,
   }) {
     final $result = create();
     if (surfaces != null) {
@@ -2537,7 +2537,7 @@ class SurfaceTargeting extends $pb.GeneratedMessage {
   factory SurfaceTargeting.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SurfaceTargeting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..pc<$3969.ReachPlanSurfaceEnum_ReachPlanSurface>(1, _omitFieldNames ? '' : 'surfaces', $pb.PbFieldType.KE, valueOf: $3969.ReachPlanSurfaceEnum_ReachPlanSurface.valueOf, enumValues: $3969.ReachPlanSurfaceEnum_ReachPlanSurface.values, defaultEnumValue: $3969.ReachPlanSurfaceEnum_ReachPlanSurface.UNSPECIFIED)
+    ..pc<$3970.ReachPlanSurfaceEnum_ReachPlanSurface>(1, _omitFieldNames ? '' : 'surfaces', $pb.PbFieldType.KE, valueOf: $3970.ReachPlanSurfaceEnum_ReachPlanSurface.valueOf, enumValues: $3970.ReachPlanSurfaceEnum_ReachPlanSurface.values, defaultEnumValue: $3970.ReachPlanSurfaceEnum_ReachPlanSurface.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -2564,13 +2564,13 @@ class SurfaceTargeting extends $pb.GeneratedMessage {
 
   /// List of surfaces available to target.
   @$pb.TagNumber(1)
-  $core.List<$3969.ReachPlanSurfaceEnum_ReachPlanSurface> get surfaces => $_getList(0);
+  $core.List<$3970.ReachPlanSurfaceEnum_ReachPlanSurface> get surfaces => $_getList(0);
 }
 
 /// Target Frequency settings for a supported product.
 class TargetFrequencySettings extends $pb.GeneratedMessage {
   factory TargetFrequencySettings({
-    $3297.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit? timeUnit,
+    $3298.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit? timeUnit,
     $core.int? targetFrequency,
   }) {
     final $result = create();
@@ -2587,7 +2587,7 @@ class TargetFrequencySettings extends $pb.GeneratedMessage {
   factory TargetFrequencySettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetFrequencySettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3297.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit>(1, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $3297.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.UNSPECIFIED, valueOf: $3297.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.valueOf, enumValues: $3297.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.values)
+    ..e<$3298.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit>(1, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $3298.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.UNSPECIFIED, valueOf: $3298.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.valueOf, enumValues: $3298.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit.values)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'targetFrequency', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -2616,9 +2616,9 @@ class TargetFrequencySettings extends $pb.GeneratedMessage {
   /// Required. The time unit used to describe the time frame for
   /// target_frequency.
   @$pb.TagNumber(1)
-  $3297.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit get timeUnit => $_getN(0);
+  $3298.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit get timeUnit => $_getN(0);
   @$pb.TagNumber(1)
-  set timeUnit($3297.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit v) { setField(1, v); }
+  set timeUnit($3298.TargetFrequencyTimeUnitEnum_TargetFrequencyTimeUnit v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeUnit() => $_has(0);
   @$pb.TagNumber(1)

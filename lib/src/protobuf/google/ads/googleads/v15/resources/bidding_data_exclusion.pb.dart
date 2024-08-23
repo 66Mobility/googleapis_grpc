@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/advertising_channel_type.pbenum.dart' as $1883;
-import '../enums/device.pbenum.dart' as $1844;
-import '../enums/seasonality_event_scope.pbenum.dart' as $2158;
-import '../enums/seasonality_event_status.pbenum.dart' as $2159;
+import '../enums/advertising_channel_type.pbenum.dart' as $1884;
+import '../enums/device.pbenum.dart' as $1845;
+import '../enums/seasonality_event_scope.pbenum.dart' as $2159;
+import '../enums/seasonality_event_status.pbenum.dart' as $2160;
 
 ///  Represents a bidding data exclusion.
 ///
@@ -27,15 +27,15 @@ class BiddingDataExclusion extends $pb.GeneratedMessage {
   factory BiddingDataExclusion({
     $core.String? resourceName,
     $fixnum.Int64? dataExclusionId,
-    $2158.SeasonalityEventScopeEnum_SeasonalityEventScope? scope,
-    $2159.SeasonalityEventStatusEnum_SeasonalityEventStatus? status,
+    $2159.SeasonalityEventScopeEnum_SeasonalityEventScope? scope,
+    $2160.SeasonalityEventStatusEnum_SeasonalityEventStatus? status,
     $core.String? startDateTime,
     $core.String? endDateTime,
     $core.String? name,
     $core.String? description,
-    $core.Iterable<$1844.DeviceEnum_Device>? devices,
+    $core.Iterable<$1845.DeviceEnum_Device>? devices,
     $core.Iterable<$core.String>? campaigns,
-    $core.Iterable<$1883.AdvertisingChannelTypeEnum_AdvertisingChannelType>? advertisingChannelTypes,
+    $core.Iterable<$1884.AdvertisingChannelTypeEnum_AdvertisingChannelType>? advertisingChannelTypes,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -80,15 +80,15 @@ class BiddingDataExclusion extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BiddingDataExclusion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'dataExclusionId')
-    ..e<$2158.SeasonalityEventScopeEnum_SeasonalityEventScope>(3, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $2158.SeasonalityEventScopeEnum_SeasonalityEventScope.UNSPECIFIED, valueOf: $2158.SeasonalityEventScopeEnum_SeasonalityEventScope.valueOf, enumValues: $2158.SeasonalityEventScopeEnum_SeasonalityEventScope.values)
-    ..e<$2159.SeasonalityEventStatusEnum_SeasonalityEventStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2159.SeasonalityEventStatusEnum_SeasonalityEventStatus.UNSPECIFIED, valueOf: $2159.SeasonalityEventStatusEnum_SeasonalityEventStatus.valueOf, enumValues: $2159.SeasonalityEventStatusEnum_SeasonalityEventStatus.values)
+    ..e<$2159.SeasonalityEventScopeEnum_SeasonalityEventScope>(3, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $2159.SeasonalityEventScopeEnum_SeasonalityEventScope.UNSPECIFIED, valueOf: $2159.SeasonalityEventScopeEnum_SeasonalityEventScope.valueOf, enumValues: $2159.SeasonalityEventScopeEnum_SeasonalityEventScope.values)
+    ..e<$2160.SeasonalityEventStatusEnum_SeasonalityEventStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2160.SeasonalityEventStatusEnum_SeasonalityEventStatus.UNSPECIFIED, valueOf: $2160.SeasonalityEventStatusEnum_SeasonalityEventStatus.valueOf, enumValues: $2160.SeasonalityEventStatusEnum_SeasonalityEventStatus.values)
     ..aOS(5, _omitFieldNames ? '' : 'startDateTime')
     ..aOS(6, _omitFieldNames ? '' : 'endDateTime')
     ..aOS(7, _omitFieldNames ? '' : 'name')
     ..aOS(8, _omitFieldNames ? '' : 'description')
-    ..pc<$1844.DeviceEnum_Device>(9, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.KE, valueOf: $1844.DeviceEnum_Device.valueOf, enumValues: $1844.DeviceEnum_Device.values, defaultEnumValue: $1844.DeviceEnum_Device.UNSPECIFIED)
+    ..pc<$1845.DeviceEnum_Device>(9, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.KE, valueOf: $1845.DeviceEnum_Device.valueOf, enumValues: $1845.DeviceEnum_Device.values, defaultEnumValue: $1845.DeviceEnum_Device.UNSPECIFIED)
     ..pPS(10, _omitFieldNames ? '' : 'campaigns')
-    ..pc<$1883.AdvertisingChannelTypeEnum_AdvertisingChannelType>(11, _omitFieldNames ? '' : 'advertisingChannelTypes', $pb.PbFieldType.KE, valueOf: $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType.values, defaultEnumValue: $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED)
+    ..pc<$1884.AdvertisingChannelTypeEnum_AdvertisingChannelType>(11, _omitFieldNames ? '' : 'advertisingChannelTypes', $pb.PbFieldType.KE, valueOf: $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType.values, defaultEnumValue: $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -138,9 +138,9 @@ class BiddingDataExclusion extends $pb.GeneratedMessage {
 
   /// The scope of the data exclusion.
   @$pb.TagNumber(3)
-  $2158.SeasonalityEventScopeEnum_SeasonalityEventScope get scope => $_getN(2);
+  $2159.SeasonalityEventScopeEnum_SeasonalityEventScope get scope => $_getN(2);
   @$pb.TagNumber(3)
-  set scope($2158.SeasonalityEventScopeEnum_SeasonalityEventScope v) { setField(3, v); }
+  set scope($2159.SeasonalityEventScopeEnum_SeasonalityEventScope v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasScope() => $_has(2);
   @$pb.TagNumber(3)
@@ -148,9 +148,9 @@ class BiddingDataExclusion extends $pb.GeneratedMessage {
 
   /// Output only. The status of the data exclusion.
   @$pb.TagNumber(4)
-  $2159.SeasonalityEventStatusEnum_SeasonalityEventStatus get status => $_getN(3);
+  $2160.SeasonalityEventStatusEnum_SeasonalityEventStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($2159.SeasonalityEventStatusEnum_SeasonalityEventStatus v) { setField(4, v); }
+  set status($2160.SeasonalityEventStatusEnum_SeasonalityEventStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -210,7 +210,7 @@ class BiddingDataExclusion extends $pb.GeneratedMessage {
   /// Otherwise, only the specified targeted devices will be included in this
   /// exclusion.
   @$pb.TagNumber(9)
-  $core.List<$1844.DeviceEnum_Device> get devices => $_getList(8);
+  $core.List<$1845.DeviceEnum_Device> get devices => $_getList(8);
 
   /// The data exclusion will apply to the campaigns listed when the scope of
   /// this exclusion is CAMPAIGN. The maximum number of campaigns per event is
@@ -227,7 +227,7 @@ class BiddingDataExclusion extends $pb.GeneratedMessage {
   /// Note: a data exclusion with both advertising_channel_types and
   /// campaign_ids is not supported.
   @$pb.TagNumber(11)
-  $core.List<$1883.AdvertisingChannelTypeEnum_AdvertisingChannelType> get advertisingChannelTypes => $_getList(10);
+  $core.List<$1884.AdvertisingChannelTypeEnum_AdvertisingChannelType> get advertisingChannelTypes => $_getList(10);
 }
 
 

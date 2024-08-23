@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'artifact.pbenum.dart';
 
 export 'artifact.pbenum.dart';
@@ -27,12 +27,12 @@ class Artifact extends $pb.GeneratedMessage {
     $core.String? uri,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Artifact_State? state,
     $core.String? schemaTitle,
     $core.String? schemaVersion,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
     $core.String? description,
   }) {
     final $result = create();
@@ -84,12 +84,12 @@ class Artifact extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'uri')
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'Artifact.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Artifact_State>(13, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Artifact_State.STATE_UNSPECIFIED, valueOf: Artifact_State.valueOf, enumValues: Artifact_State.values)
     ..aOS(14, _omitFieldNames ? '' : 'schemaTitle')
     ..aOS(15, _omitFieldNames ? '' : 'schemaVersion')
-    ..aOM<$1734.Struct>(16, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(16, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..aOS(17, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -170,27 +170,27 @@ class Artifact extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Artifact was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Timestamp when this Artifact was last updated.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// The state of this Artifact. This is a property of the Artifact, and does
   /// not imply or capture any ongoing process. This property is managed by
@@ -237,15 +237,15 @@ class Artifact extends $pb.GeneratedMessage {
   /// Top level metadata keys' heading and trailing spaces will be trimmed.
   /// The size of this field should not exceed 200KB.
   @$pb.TagNumber(16)
-  $1734.Struct get metadata => $_getN(10);
+  $1735.Struct get metadata => $_getN(10);
   @$pb.TagNumber(16)
-  set metadata($1734.Struct v) { setField(16, v); }
+  set metadata($1735.Struct v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasMetadata() => $_has(10);
   @$pb.TagNumber(16)
   void clearMetadata() => clearField(16);
   @$pb.TagNumber(16)
-  $1734.Struct ensureMetadata() => $_ensure(10);
+  $1735.Struct ensureMetadata() => $_ensure(10);
 
   /// Description of the Artifact
   @$pb.TagNumber(17)

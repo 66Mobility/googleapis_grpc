@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/interval.pb.dart' as $4257;
 import 'clusters.pbenum.dart';
-import 'shared.pb.dart' as $4470;
-import 'shared.pbenum.dart' as $4470;
+import 'shared.pb.dart' as $4472;
+import 'shared.pbenum.dart' as $4472;
 
 export 'clusters.pbenum.dart';
 
@@ -555,7 +555,7 @@ enum VirtualClusterConfig_InfrastructureConfig {
 class VirtualClusterConfig extends $pb.GeneratedMessage {
   factory VirtualClusterConfig({
     $core.String? stagingBucket,
-    $4470.KubernetesClusterConfig? kubernetesClusterConfig,
+    $4472.KubernetesClusterConfig? kubernetesClusterConfig,
     AuxiliaryServicesConfig? auxiliaryServicesConfig,
   }) {
     final $result = create();
@@ -581,7 +581,7 @@ class VirtualClusterConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VirtualClusterConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..oo(0, [6])
     ..aOS(1, _omitFieldNames ? '' : 'stagingBucket')
-    ..aOM<$4470.KubernetesClusterConfig>(6, _omitFieldNames ? '' : 'kubernetesClusterConfig', subBuilder: $4470.KubernetesClusterConfig.create)
+    ..aOM<$4472.KubernetesClusterConfig>(6, _omitFieldNames ? '' : 'kubernetesClusterConfig', subBuilder: $4472.KubernetesClusterConfig.create)
     ..aOM<AuxiliaryServicesConfig>(7, _omitFieldNames ? '' : 'auxiliaryServicesConfig', subBuilder: AuxiliaryServicesConfig.create)
     ..hasRequiredFields = false
   ;
@@ -633,15 +633,15 @@ class VirtualClusterConfig extends $pb.GeneratedMessage {
   /// Required. The configuration for running the Dataproc cluster on
   /// Kubernetes.
   @$pb.TagNumber(6)
-  $4470.KubernetesClusterConfig get kubernetesClusterConfig => $_getN(1);
+  $4472.KubernetesClusterConfig get kubernetesClusterConfig => $_getN(1);
   @$pb.TagNumber(6)
-  set kubernetesClusterConfig($4470.KubernetesClusterConfig v) { setField(6, v); }
+  set kubernetesClusterConfig($4472.KubernetesClusterConfig v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasKubernetesClusterConfig() => $_has(1);
   @$pb.TagNumber(6)
   void clearKubernetesClusterConfig() => clearField(6);
   @$pb.TagNumber(6)
-  $4470.KubernetesClusterConfig ensureKubernetesClusterConfig() => $_ensure(1);
+  $4472.KubernetesClusterConfig ensureKubernetesClusterConfig() => $_ensure(1);
 
   /// Optional. Configuration of auxiliary services used by this cluster.
   @$pb.TagNumber(7)
@@ -660,7 +660,7 @@ class VirtualClusterConfig extends $pb.GeneratedMessage {
 class AuxiliaryServicesConfig extends $pb.GeneratedMessage {
   factory AuxiliaryServicesConfig({
     MetastoreConfig? metastoreConfig,
-    $4470.SparkHistoryServerConfig? sparkHistoryServerConfig,
+    $4472.SparkHistoryServerConfig? sparkHistoryServerConfig,
   }) {
     final $result = create();
     if (metastoreConfig != null) {
@@ -677,7 +677,7 @@ class AuxiliaryServicesConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuxiliaryServicesConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..aOM<MetastoreConfig>(1, _omitFieldNames ? '' : 'metastoreConfig', subBuilder: MetastoreConfig.create)
-    ..aOM<$4470.SparkHistoryServerConfig>(2, _omitFieldNames ? '' : 'sparkHistoryServerConfig', subBuilder: $4470.SparkHistoryServerConfig.create)
+    ..aOM<$4472.SparkHistoryServerConfig>(2, _omitFieldNames ? '' : 'sparkHistoryServerConfig', subBuilder: $4472.SparkHistoryServerConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -716,15 +716,15 @@ class AuxiliaryServicesConfig extends $pb.GeneratedMessage {
 
   /// Optional. The Spark History Server configuration for the workload.
   @$pb.TagNumber(2)
-  $4470.SparkHistoryServerConfig get sparkHistoryServerConfig => $_getN(1);
+  $4472.SparkHistoryServerConfig get sparkHistoryServerConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set sparkHistoryServerConfig($4470.SparkHistoryServerConfig v) { setField(2, v); }
+  set sparkHistoryServerConfig($4472.SparkHistoryServerConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSparkHistoryServerConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearSparkHistoryServerConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4470.SparkHistoryServerConfig ensureSparkHistoryServerConfig() => $_ensure(1);
+  $4472.SparkHistoryServerConfig ensureSparkHistoryServerConfig() => $_ensure(1);
 }
 
 /// Endpoint config for this cluster
@@ -2487,7 +2487,7 @@ class NodeGroup extends $pb.GeneratedMessage {
 class NodeInitializationAction extends $pb.GeneratedMessage {
   factory NodeInitializationAction({
     $core.String? executableFile,
-    $1737.Duration? executionTimeout,
+    $1738.Duration? executionTimeout,
   }) {
     final $result = create();
     if (executableFile != null) {
@@ -2504,7 +2504,7 @@ class NodeInitializationAction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NodeInitializationAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'executableFile')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2547,15 +2547,15 @@ class NodeInitializationAction extends $pb.GeneratedMessage {
   ///  name of the executable that caused the error and the exceeded timeout
   ///  period) if the executable is not completed at end of the timeout period.
   @$pb.TagNumber(2)
-  $1737.Duration get executionTimeout => $_getN(1);
+  $1738.Duration get executionTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set executionTimeout($1737.Duration v) { setField(2, v); }
+  set executionTimeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExecutionTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearExecutionTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureExecutionTimeout() => $_ensure(1);
+  $1738.Duration ensureExecutionTimeout() => $_ensure(1);
 }
 
 /// The status of a cluster and its instances.
@@ -2563,7 +2563,7 @@ class ClusterStatus extends $pb.GeneratedMessage {
   factory ClusterStatus({
     ClusterStatus_State? state,
     $core.String? detail,
-    $1775.Timestamp? stateStartTime,
+    $1776.Timestamp? stateStartTime,
     ClusterStatus_Substate? substate,
   }) {
     final $result = create();
@@ -2588,7 +2588,7 @@ class ClusterStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ClusterStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..e<ClusterStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ClusterStatus_State.UNKNOWN, valueOf: ClusterStatus_State.valueOf, enumValues: ClusterStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'detail')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1776.Timestamp.create)
     ..e<ClusterStatus_Substate>(4, _omitFieldNames ? '' : 'substate', $pb.PbFieldType.OE, defaultOrMaker: ClusterStatus_Substate.UNSPECIFIED, valueOf: ClusterStatus_Substate.valueOf, enumValues: ClusterStatus_Substate.values)
     ..hasRequiredFields = false
   ;
@@ -2637,15 +2637,15 @@ class ClusterStatus extends $pb.GeneratedMessage {
   /// Output only. Time when this state was entered (see JSON representation of
   /// [Timestamp](https://developers.google.com/protocol-buffers/docs/proto3#json)).
   @$pb.TagNumber(3)
-  $1775.Timestamp get stateStartTime => $_getN(2);
+  $1776.Timestamp get stateStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set stateStartTime($1775.Timestamp v) { setField(3, v); }
+  set stateStartTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStateStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStateStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStateStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStateStartTime() => $_ensure(2);
 
   /// Output only. Additional state information that includes
   /// status reported by the agent.
@@ -3067,7 +3067,7 @@ class SoftwareConfig extends $pb.GeneratedMessage {
   factory SoftwareConfig({
     $core.String? imageVersion,
     $core.Map<$core.String, $core.String>? properties,
-    $core.Iterable<$4470.Component>? optionalComponents,
+    $core.Iterable<$4472.Component>? optionalComponents,
   }) {
     final $result = create();
     if (imageVersion != null) {
@@ -3088,7 +3088,7 @@ class SoftwareConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SoftwareConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'imageVersion')
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'properties', entryClassName: 'SoftwareConfig.PropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
-    ..pc<$4470.Component>(3, _omitFieldNames ? '' : 'optionalComponents', $pb.PbFieldType.KE, valueOf: $4470.Component.valueOf, enumValues: $4470.Component.values, defaultEnumValue: $4470.Component.COMPONENT_UNSPECIFIED)
+    ..pc<$4472.Component>(3, _omitFieldNames ? '' : 'optionalComponents', $pb.PbFieldType.KE, valueOf: $4472.Component.valueOf, enumValues: $4472.Component.values, defaultEnumValue: $4472.Component.COMPONENT_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -3152,7 +3152,7 @@ class SoftwareConfig extends $pb.GeneratedMessage {
 
   /// Optional. The set of components to activate on the cluster.
   @$pb.TagNumber(3)
-  $core.List<$4470.Component> get optionalComponents => $_getList(2);
+  $core.List<$4472.Component> get optionalComponents => $_getList(2);
 }
 
 enum LifecycleConfig_Ttl {
@@ -3164,10 +3164,10 @@ enum LifecycleConfig_Ttl {
 /// Specifies the cluster auto-delete schedule configuration.
 class LifecycleConfig extends $pb.GeneratedMessage {
   factory LifecycleConfig({
-    $1737.Duration? idleDeleteTtl,
-    $1775.Timestamp? autoDeleteTime,
-    $1737.Duration? autoDeleteTtl,
-    $1775.Timestamp? idleStartTime,
+    $1738.Duration? idleDeleteTtl,
+    $1776.Timestamp? autoDeleteTime,
+    $1738.Duration? autoDeleteTtl,
+    $1776.Timestamp? idleStartTime,
   }) {
     final $result = create();
     if (idleDeleteTtl != null) {
@@ -3195,10 +3195,10 @@ class LifecycleConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LifecycleConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'idleDeleteTtl', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'autoDeleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'autoDeleteTtl', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'idleStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'idleDeleteTtl', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'autoDeleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'autoDeleteTtl', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'idleStartTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3232,59 +3232,59 @@ class LifecycleConfig extends $pb.GeneratedMessage {
   /// representation of
   /// [Duration](https://developers.google.com/protocol-buffers/docs/proto3#json)).
   @$pb.TagNumber(1)
-  $1737.Duration get idleDeleteTtl => $_getN(0);
+  $1738.Duration get idleDeleteTtl => $_getN(0);
   @$pb.TagNumber(1)
-  set idleDeleteTtl($1737.Duration v) { setField(1, v); }
+  set idleDeleteTtl($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIdleDeleteTtl() => $_has(0);
   @$pb.TagNumber(1)
   void clearIdleDeleteTtl() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureIdleDeleteTtl() => $_ensure(0);
+  $1738.Duration ensureIdleDeleteTtl() => $_ensure(0);
 
   /// Optional. The time when cluster will be auto-deleted (see JSON
   /// representation of
   /// [Timestamp](https://developers.google.com/protocol-buffers/docs/proto3#json)).
   @$pb.TagNumber(2)
-  $1775.Timestamp get autoDeleteTime => $_getN(1);
+  $1776.Timestamp get autoDeleteTime => $_getN(1);
   @$pb.TagNumber(2)
-  set autoDeleteTime($1775.Timestamp v) { setField(2, v); }
+  set autoDeleteTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAutoDeleteTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearAutoDeleteTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureAutoDeleteTime() => $_ensure(1);
+  $1776.Timestamp ensureAutoDeleteTime() => $_ensure(1);
 
   /// Optional. The lifetime duration of cluster. The cluster will be
   /// auto-deleted at the end of this period. Minimum value is 10 minutes;
   /// maximum value is 14 days (see JSON representation of
   /// [Duration](https://developers.google.com/protocol-buffers/docs/proto3#json)).
   @$pb.TagNumber(3)
-  $1737.Duration get autoDeleteTtl => $_getN(2);
+  $1738.Duration get autoDeleteTtl => $_getN(2);
   @$pb.TagNumber(3)
-  set autoDeleteTtl($1737.Duration v) { setField(3, v); }
+  set autoDeleteTtl($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAutoDeleteTtl() => $_has(2);
   @$pb.TagNumber(3)
   void clearAutoDeleteTtl() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureAutoDeleteTtl() => $_ensure(2);
+  $1738.Duration ensureAutoDeleteTtl() => $_ensure(2);
 
   /// Output only. The time when cluster became idle (most recent job finished)
   /// and became eligible for deletion due to idleness (see JSON representation
   /// of
   /// [Timestamp](https://developers.google.com/protocol-buffers/docs/proto3#json)).
   @$pb.TagNumber(4)
-  $1775.Timestamp get idleStartTime => $_getN(3);
+  $1776.Timestamp get idleStartTime => $_getN(3);
   @$pb.TagNumber(4)
-  set idleStartTime($1775.Timestamp v) { setField(4, v); }
+  set idleStartTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasIdleStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearIdleStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureIdleStartTime() => $_ensure(3);
+  $1776.Timestamp ensureIdleStartTime() => $_ensure(3);
 }
 
 /// Specifies a Metastore configuration.
@@ -3546,7 +3546,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
     Cluster? cluster,
     $core.String? region,
     $core.String? requestId,
-    $4470.FailureAction? actionOnFailedPrimaryWorkers,
+    $4472.FailureAction? actionOnFailedPrimaryWorkers,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -3575,7 +3575,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
     ..aOM<Cluster>(2, _omitFieldNames ? '' : 'cluster', subBuilder: Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'region')
     ..aOS(4, _omitFieldNames ? '' : 'requestId')
-    ..e<$4470.FailureAction>(5, _omitFieldNames ? '' : 'actionOnFailedPrimaryWorkers', $pb.PbFieldType.OE, defaultOrMaker: $4470.FailureAction.FAILURE_ACTION_UNSPECIFIED, valueOf: $4470.FailureAction.valueOf, enumValues: $4470.FailureAction.values)
+    ..e<$4472.FailureAction>(5, _omitFieldNames ? '' : 'actionOnFailedPrimaryWorkers', $pb.PbFieldType.OE, defaultOrMaker: $4472.FailureAction.FAILURE_ACTION_UNSPECIFIED, valueOf: $4472.FailureAction.valueOf, enumValues: $4472.FailureAction.values)
     ..hasRequiredFields = false
   ;
 
@@ -3656,9 +3656,9 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
 
   /// Optional. Failure action when primary worker creation fails.
   @$pb.TagNumber(5)
-  $4470.FailureAction get actionOnFailedPrimaryWorkers => $_getN(4);
+  $4472.FailureAction get actionOnFailedPrimaryWorkers => $_getN(4);
   @$pb.TagNumber(5)
-  set actionOnFailedPrimaryWorkers($4470.FailureAction v) { setField(5, v); }
+  set actionOnFailedPrimaryWorkers($4472.FailureAction v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasActionOnFailedPrimaryWorkers() => $_has(4);
   @$pb.TagNumber(5)
@@ -3671,9 +3671,9 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.String? clusterName,
     Cluster? cluster,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? region,
-    $1737.Duration? gracefulDecommissionTimeout,
+    $1738.Duration? gracefulDecommissionTimeout,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -3708,9 +3708,9 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'clusterName')
     ..aOM<Cluster>(3, _omitFieldNames ? '' : 'cluster', subBuilder: Cluster.create)
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(5, _omitFieldNames ? '' : 'region')
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1738.Duration.create)
     ..aOS(7, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -3821,15 +3821,15 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   ///   </tbody>
   ///   </table>
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// Required. The Dataproc region in which to handle the request.
   @$pb.TagNumber(5)
@@ -3851,15 +3851,15 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   ///
   ///  Only supported on Dataproc image versions 1.2 and higher.
   @$pb.TagNumber(6)
-  $1737.Duration get gracefulDecommissionTimeout => $_getN(5);
+  $1738.Duration get gracefulDecommissionTimeout => $_getN(5);
   @$pb.TagNumber(6)
-  set gracefulDecommissionTimeout($1737.Duration v) { setField(6, v); }
+  set gracefulDecommissionTimeout($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasGracefulDecommissionTimeout() => $_has(5);
   @$pb.TagNumber(6)
   void clearGracefulDecommissionTimeout() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureGracefulDecommissionTimeout() => $_ensure(5);
+  $1738.Duration ensureGracefulDecommissionTimeout() => $_ensure(5);
 
   ///  Optional. A unique ID used to identify the request. If the server
   ///  receives two
@@ -4542,7 +4542,7 @@ class DiagnoseClusterRequest extends $pb.GeneratedMessage {
     $core.String? clusterName,
     $core.String? region,
     $core.String? tarballGcsDir,
-    $4256.Interval? diagnosisInterval,
+    $4257.Interval? diagnosisInterval,
     $core.Iterable<$core.String>? jobs,
     $core.Iterable<$core.String>? yarnApplicationIds,
   }) {
@@ -4579,7 +4579,7 @@ class DiagnoseClusterRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'clusterName')
     ..aOS(3, _omitFieldNames ? '' : 'region')
     ..aOS(4, _omitFieldNames ? '' : 'tarballGcsDir')
-    ..aOM<$4256.Interval>(6, _omitFieldNames ? '' : 'diagnosisInterval', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(6, _omitFieldNames ? '' : 'diagnosisInterval', subBuilder: $4257.Interval.create)
     ..pPS(10, _omitFieldNames ? '' : 'jobs')
     ..pPS(11, _omitFieldNames ? '' : 'yarnApplicationIds')
     ..hasRequiredFields = false
@@ -4652,15 +4652,15 @@ class DiagnoseClusterRequest extends $pb.GeneratedMessage {
   /// Optional. Time interval in which diagnosis should be carried out on the
   /// cluster.
   @$pb.TagNumber(6)
-  $4256.Interval get diagnosisInterval => $_getN(4);
+  $4257.Interval get diagnosisInterval => $_getN(4);
   @$pb.TagNumber(6)
-  set diagnosisInterval($4256.Interval v) { setField(6, v); }
+  set diagnosisInterval($4257.Interval v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDiagnosisInterval() => $_has(4);
   @$pb.TagNumber(6)
   void clearDiagnosisInterval() => clearField(6);
   @$pb.TagNumber(6)
-  $4256.Interval ensureDiagnosisInterval() => $_ensure(4);
+  $4257.Interval ensureDiagnosisInterval() => $_ensure(4);
 
   /// Optional. Specifies a list of jobs on which diagnosis is to be performed.
   /// Format: projects/{project}/regions/{region}/jobs/{job}

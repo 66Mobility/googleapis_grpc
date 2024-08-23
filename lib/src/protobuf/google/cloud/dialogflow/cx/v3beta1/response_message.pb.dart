@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import 'tool_call.pb.dart' as $4484;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import 'tool_call.pb.dart' as $4486;
 
 /// The text response message.
 class ResponseMessage_Text extends $pb.GeneratedMessage {
@@ -95,7 +95,7 @@ class ResponseMessage_Text extends $pb.GeneratedMessage {
 ///    be handled by a human.
 class ResponseMessage_LiveAgentHandoff extends $pb.GeneratedMessage {
   factory ResponseMessage_LiveAgentHandoff({
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -108,7 +108,7 @@ class ResponseMessage_LiveAgentHandoff extends $pb.GeneratedMessage {
   factory ResponseMessage_LiveAgentHandoff.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponseMessage.LiveAgentHandoff', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -136,15 +136,15 @@ class ResponseMessage_LiveAgentHandoff extends $pb.GeneratedMessage {
   /// Custom metadata for your handoff procedure. Dialogflow doesn't impose
   /// any structure on this.
   @$pb.TagNumber(1)
-  $1734.Struct get metadata => $_getN(0);
+  $1735.Struct get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata($1734.Struct v) { setField(1, v); }
+  set metadata($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureMetadata() => $_ensure(0);
+  $1735.Struct ensureMetadata() => $_ensure(0);
 }
 
 ///  Indicates that the conversation succeeded, i.e., the bot handled the issue
@@ -165,7 +165,7 @@ class ResponseMessage_LiveAgentHandoff extends $pb.GeneratedMessage {
 ///    issue.
 class ResponseMessage_ConversationSuccess extends $pb.GeneratedMessage {
   factory ResponseMessage_ConversationSuccess({
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -178,7 +178,7 @@ class ResponseMessage_ConversationSuccess extends $pb.GeneratedMessage {
   factory ResponseMessage_ConversationSuccess.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponseMessage.ConversationSuccess', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -205,15 +205,15 @@ class ResponseMessage_ConversationSuccess extends $pb.GeneratedMessage {
 
   /// Custom metadata. Dialogflow doesn't impose any structure on this.
   @$pb.TagNumber(1)
-  $1734.Struct get metadata => $_getN(0);
+  $1735.Struct get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata($1734.Struct v) { setField(1, v); }
+  set metadata($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureMetadata() => $_ensure(0);
+  $1735.Struct ensureMetadata() => $_ensure(0);
 }
 
 enum ResponseMessage_OutputAudioText_Source {
@@ -714,7 +714,7 @@ enum ResponseMessage_Message {
 class ResponseMessage extends $pb.GeneratedMessage {
   factory ResponseMessage({
     ResponseMessage_Text? text,
-    $1734.Struct? payload,
+    $1735.Struct? payload,
     ResponseMessage_OutputAudioText? outputAudioText,
     ResponseMessage_ConversationSuccess? conversationSuccess,
     ResponseMessage_LiveAgentHandoff? liveAgentHandoff,
@@ -724,7 +724,7 @@ class ResponseMessage extends $pb.GeneratedMessage {
     ResponseMessage_TelephonyTransferCall? telephonyTransferCall,
     $core.String? channel,
     ResponseMessage_KnowledgeInfoCard? knowledgeInfoCard,
-    $4484.ToolCall? toolCall,
+    $4486.ToolCall? toolCall,
   }) {
     final $result = create();
     if (text != null) {
@@ -786,7 +786,7 @@ class ResponseMessage extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResponseMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 8, 9, 10, 11, 12, 13, 18, 20, 22])
     ..aOM<ResponseMessage_Text>(1, _omitFieldNames ? '' : 'text', subBuilder: ResponseMessage_Text.create)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Struct.create)
     ..aOM<ResponseMessage_OutputAudioText>(8, _omitFieldNames ? '' : 'outputAudioText', subBuilder: ResponseMessage_OutputAudioText.create)
     ..aOM<ResponseMessage_ConversationSuccess>(9, _omitFieldNames ? '' : 'conversationSuccess', subBuilder: ResponseMessage_ConversationSuccess.create)
     ..aOM<ResponseMessage_LiveAgentHandoff>(10, _omitFieldNames ? '' : 'liveAgentHandoff', subBuilder: ResponseMessage_LiveAgentHandoff.create)
@@ -796,7 +796,7 @@ class ResponseMessage extends $pb.GeneratedMessage {
     ..aOM<ResponseMessage_TelephonyTransferCall>(18, _omitFieldNames ? '' : 'telephonyTransferCall', subBuilder: ResponseMessage_TelephonyTransferCall.create)
     ..aOS(19, _omitFieldNames ? '' : 'channel')
     ..aOM<ResponseMessage_KnowledgeInfoCard>(20, _omitFieldNames ? '' : 'knowledgeInfoCard', subBuilder: ResponseMessage_KnowledgeInfoCard.create)
-    ..aOM<$4484.ToolCall>(22, _omitFieldNames ? '' : 'toolCall', subBuilder: $4484.ToolCall.create)
+    ..aOM<$4486.ToolCall>(22, _omitFieldNames ? '' : 'toolCall', subBuilder: $4486.ToolCall.create)
     ..hasRequiredFields = false
   ;
 
@@ -838,15 +838,15 @@ class ResponseMessage extends $pb.GeneratedMessage {
 
   /// Returns a response containing a custom, platform-specific payload.
   @$pb.TagNumber(2)
-  $1734.Struct get payload => $_getN(1);
+  $1735.Struct get payload => $_getN(1);
   @$pb.TagNumber(2)
-  set payload($1734.Struct v) { setField(2, v); }
+  set payload($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPayload() => $_has(1);
   @$pb.TagNumber(2)
   void clearPayload() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensurePayload() => $_ensure(1);
+  $1735.Struct ensurePayload() => $_ensure(1);
 
   /// A text or ssml response that is preferentially used for TTS output audio
   /// synthesis, as described in the comment on the ResponseMessage message.
@@ -976,15 +976,15 @@ class ResponseMessage extends $pb.GeneratedMessage {
   /// Returns the definition of a tool call that should be executed by the
   /// client.
   @$pb.TagNumber(22)
-  $4484.ToolCall get toolCall => $_getN(11);
+  $4486.ToolCall get toolCall => $_getN(11);
   @$pb.TagNumber(22)
-  set toolCall($4484.ToolCall v) { setField(22, v); }
+  set toolCall($4486.ToolCall v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasToolCall() => $_has(11);
   @$pb.TagNumber(22)
   void clearToolCall() => clearField(22);
   @$pb.TagNumber(22)
-  $4484.ToolCall ensureToolCall() => $_ensure(11);
+  $4486.ToolCall ensureToolCall() => $_ensure(11);
 }
 
 

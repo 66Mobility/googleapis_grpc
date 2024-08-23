@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'resource.pbenum.dart' as $4682;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'resource.pbenum.dart' as $4684;
 import 'resource_value_config.pbenum.dart';
 
 export 'resource_value_config.pbenum.dart';
@@ -101,9 +101,9 @@ class ResourceValueConfig extends $pb.GeneratedMessage {
     $core.String? scope,
     $core.Map<$core.String, $core.String>? resourceLabelsSelector,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4682.CloudProvider? cloudProvider,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4684.CloudProvider? cloudProvider,
     ResourceValueConfig_SensitiveDataProtectionMapping? sensitiveDataProtectionMapping,
   }) {
     final $result = create();
@@ -154,9 +154,9 @@ class ResourceValueConfig extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'scope')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'resourceLabelsSelector', entryClassName: 'ResourceValueConfig.ResourceLabelsSelectorEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.securitycenter.v2'))
     ..aOS(7, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..e<$4682.CloudProvider>(10, _omitFieldNames ? '' : 'cloudProvider', $pb.PbFieldType.OE, defaultOrMaker: $4682.CloudProvider.CLOUD_PROVIDER_UNSPECIFIED, valueOf: $4682.CloudProvider.valueOf, enumValues: $4682.CloudProvider.values)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..e<$4684.CloudProvider>(10, _omitFieldNames ? '' : 'cloudProvider', $pb.PbFieldType.OE, defaultOrMaker: $4684.CloudProvider.CLOUD_PROVIDER_UNSPECIFIED, valueOf: $4684.CloudProvider.valueOf, enumValues: $4684.CloudProvider.values)
     ..aOM<ResourceValueConfig_SensitiveDataProtectionMapping>(11, _omitFieldNames ? '' : 'sensitiveDataProtectionMapping', subBuilder: ResourceValueConfig_SensitiveDataProtectionMapping.create)
     ..hasRequiredFields = false
   ;
@@ -256,33 +256,33 @@ class ResourceValueConfig extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp this resource value configuration was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Timestamp this resource value configuration was last updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Cloud provider this configuration applies to
   @$pb.TagNumber(10)
-  $4682.CloudProvider get cloudProvider => $_getN(9);
+  $4684.CloudProvider get cloudProvider => $_getN(9);
   @$pb.TagNumber(10)
-  set cloudProvider($4682.CloudProvider v) { setField(10, v); }
+  set cloudProvider($4684.CloudProvider v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCloudProvider() => $_has(9);
   @$pb.TagNumber(10)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'schema.pbenum.dart';
 
 export 'schema.pbenum.dart';
@@ -28,7 +28,7 @@ enum Schema_Schema {
 class Schema extends $pb.GeneratedMessage {
   factory Schema({
     $core.String? name,
-    $1734.Struct? structSchema,
+    $1735.Struct? structSchema,
     $core.String? jsonSchema,
     $core.Iterable<FieldConfig>? fieldConfigs,
   }) {
@@ -59,7 +59,7 @@ class Schema extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Schema', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'structSchema', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'structSchema', subBuilder: $1735.Struct.create)
     ..aOS(3, _omitFieldNames ? '' : 'jsonSchema')
     ..pc<FieldConfig>(4, _omitFieldNames ? '' : 'fieldConfigs', $pb.PbFieldType.PM, subBuilder: FieldConfig.create)
     ..hasRequiredFields = false
@@ -105,15 +105,15 @@ class Schema extends $pb.GeneratedMessage {
 
   /// The structured representation of the schema.
   @$pb.TagNumber(2)
-  $1734.Struct get structSchema => $_getN(1);
+  $1735.Struct get structSchema => $_getN(1);
   @$pb.TagNumber(2)
-  set structSchema($1734.Struct v) { setField(2, v); }
+  set structSchema($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStructSchema() => $_has(1);
   @$pb.TagNumber(2)
   void clearStructSchema() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureStructSchema() => $_ensure(1);
+  $1735.Struct ensureStructSchema() => $_ensure(1);
 
   /// The JSON representation of the schema.
   @$pb.TagNumber(3)

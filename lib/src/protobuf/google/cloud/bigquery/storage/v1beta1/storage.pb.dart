@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import 'arrow.pb.dart' as $4382;
-import 'avro.pb.dart' as $4381;
-import 'read_options.pb.dart' as $4384;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import 'arrow.pb.dart' as $4383;
+import 'avro.pb.dart' as $4382;
+import 'read_options.pb.dart' as $4385;
 import 'storage.pbenum.dart';
-import 'table_reference.pb.dart' as $4383;
+import 'table_reference.pb.dart' as $4384;
 
 export 'storage.pbenum.dart';
 
@@ -155,12 +155,12 @@ enum ReadSession_Schema {
 class ReadSession extends $pb.GeneratedMessage {
   factory ReadSession({
     $core.String? name,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.Iterable<Stream>? streams,
-    $4381.AvroSchema? avroSchema,
-    $4382.ArrowSchema? arrowSchema,
-    $4383.TableReference? tableReference,
-    $4383.TableModifiers? tableModifiers,
+    $4382.AvroSchema? avroSchema,
+    $4383.ArrowSchema? arrowSchema,
+    $4384.TableReference? tableReference,
+    $4384.TableModifiers? tableModifiers,
     ShardingStrategy? shardingStrategy,
   }) {
     final $result = create();
@@ -202,12 +202,12 @@ class ReadSession extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadSession', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta1'), createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..pc<Stream>(4, _omitFieldNames ? '' : 'streams', $pb.PbFieldType.PM, subBuilder: Stream.create)
-    ..aOM<$4381.AvroSchema>(5, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4381.AvroSchema.create)
-    ..aOM<$4382.ArrowSchema>(6, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4382.ArrowSchema.create)
-    ..aOM<$4383.TableReference>(7, _omitFieldNames ? '' : 'tableReference', subBuilder: $4383.TableReference.create)
-    ..aOM<$4383.TableModifiers>(8, _omitFieldNames ? '' : 'tableModifiers', subBuilder: $4383.TableModifiers.create)
+    ..aOM<$4382.AvroSchema>(5, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4382.AvroSchema.create)
+    ..aOM<$4383.ArrowSchema>(6, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4383.ArrowSchema.create)
+    ..aOM<$4384.TableReference>(7, _omitFieldNames ? '' : 'tableReference', subBuilder: $4384.TableReference.create)
+    ..aOM<$4384.TableModifiers>(8, _omitFieldNames ? '' : 'tableModifiers', subBuilder: $4384.TableModifiers.create)
     ..e<ShardingStrategy>(9, _omitFieldNames ? '' : 'shardingStrategy', $pb.PbFieldType.OE, defaultOrMaker: ShardingStrategy.SHARDING_STRATEGY_UNSPECIFIED, valueOf: ShardingStrategy.valueOf, enumValues: ShardingStrategy.values)
     ..hasRequiredFields = false
   ;
@@ -250,15 +250,15 @@ class ReadSession extends $pb.GeneratedMessage {
   /// Time at which the session becomes invalid. After this time, subsequent
   /// requests to read this Session will return errors.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 
   /// Streams associated with this session.
   @$pb.TagNumber(4)
@@ -266,51 +266,51 @@ class ReadSession extends $pb.GeneratedMessage {
 
   /// Avro schema.
   @$pb.TagNumber(5)
-  $4381.AvroSchema get avroSchema => $_getN(3);
+  $4382.AvroSchema get avroSchema => $_getN(3);
   @$pb.TagNumber(5)
-  set avroSchema($4381.AvroSchema v) { setField(5, v); }
+  set avroSchema($4382.AvroSchema v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAvroSchema() => $_has(3);
   @$pb.TagNumber(5)
   void clearAvroSchema() => clearField(5);
   @$pb.TagNumber(5)
-  $4381.AvroSchema ensureAvroSchema() => $_ensure(3);
+  $4382.AvroSchema ensureAvroSchema() => $_ensure(3);
 
   /// Arrow schema.
   @$pb.TagNumber(6)
-  $4382.ArrowSchema get arrowSchema => $_getN(4);
+  $4383.ArrowSchema get arrowSchema => $_getN(4);
   @$pb.TagNumber(6)
-  set arrowSchema($4382.ArrowSchema v) { setField(6, v); }
+  set arrowSchema($4383.ArrowSchema v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasArrowSchema() => $_has(4);
   @$pb.TagNumber(6)
   void clearArrowSchema() => clearField(6);
   @$pb.TagNumber(6)
-  $4382.ArrowSchema ensureArrowSchema() => $_ensure(4);
+  $4383.ArrowSchema ensureArrowSchema() => $_ensure(4);
 
   /// Table that this ReadSession is reading from.
   @$pb.TagNumber(7)
-  $4383.TableReference get tableReference => $_getN(5);
+  $4384.TableReference get tableReference => $_getN(5);
   @$pb.TagNumber(7)
-  set tableReference($4383.TableReference v) { setField(7, v); }
+  set tableReference($4384.TableReference v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTableReference() => $_has(5);
   @$pb.TagNumber(7)
   void clearTableReference() => clearField(7);
   @$pb.TagNumber(7)
-  $4383.TableReference ensureTableReference() => $_ensure(5);
+  $4384.TableReference ensureTableReference() => $_ensure(5);
 
   /// Any modifiers which are applied when reading from the specified table.
   @$pb.TagNumber(8)
-  $4383.TableModifiers get tableModifiers => $_getN(6);
+  $4384.TableModifiers get tableModifiers => $_getN(6);
   @$pb.TagNumber(8)
-  set tableModifiers($4383.TableModifiers v) { setField(8, v); }
+  set tableModifiers($4384.TableModifiers v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTableModifiers() => $_has(6);
   @$pb.TagNumber(8)
   void clearTableModifiers() => clearField(8);
   @$pb.TagNumber(8)
-  $4383.TableModifiers ensureTableModifiers() => $_ensure(6);
+  $4384.TableModifiers ensureTableModifiers() => $_ensure(6);
 
   /// The strategy to use for distributing data among the streams.
   @$pb.TagNumber(9)
@@ -327,10 +327,10 @@ class ReadSession extends $pb.GeneratedMessage {
 /// requested parallelism, projection filters and constraints.
 class CreateReadSessionRequest extends $pb.GeneratedMessage {
   factory CreateReadSessionRequest({
-    $4383.TableReference? tableReference,
-    $4383.TableModifiers? tableModifiers,
+    $4384.TableReference? tableReference,
+    $4384.TableModifiers? tableModifiers,
     $core.int? requestedStreams,
-    $4384.TableReadOptions? readOptions,
+    $4385.TableReadOptions? readOptions,
     DataFormat? format,
     $core.String? parent,
     ShardingStrategy? shardingStrategy,
@@ -364,10 +364,10 @@ class CreateReadSessionRequest extends $pb.GeneratedMessage {
   factory CreateReadSessionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateReadSessionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4383.TableReference>(1, _omitFieldNames ? '' : 'tableReference', subBuilder: $4383.TableReference.create)
-    ..aOM<$4383.TableModifiers>(2, _omitFieldNames ? '' : 'tableModifiers', subBuilder: $4383.TableModifiers.create)
+    ..aOM<$4384.TableReference>(1, _omitFieldNames ? '' : 'tableReference', subBuilder: $4384.TableReference.create)
+    ..aOM<$4384.TableModifiers>(2, _omitFieldNames ? '' : 'tableModifiers', subBuilder: $4384.TableModifiers.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'requestedStreams', $pb.PbFieldType.O3)
-    ..aOM<$4384.TableReadOptions>(4, _omitFieldNames ? '' : 'readOptions', subBuilder: $4384.TableReadOptions.create)
+    ..aOM<$4385.TableReadOptions>(4, _omitFieldNames ? '' : 'readOptions', subBuilder: $4385.TableReadOptions.create)
     ..e<DataFormat>(5, _omitFieldNames ? '' : 'format', $pb.PbFieldType.OE, defaultOrMaker: DataFormat.DATA_FORMAT_UNSPECIFIED, valueOf: DataFormat.valueOf, enumValues: DataFormat.values)
     ..aOS(6, _omitFieldNames ? '' : 'parent')
     ..e<ShardingStrategy>(7, _omitFieldNames ? '' : 'shardingStrategy', $pb.PbFieldType.OE, defaultOrMaker: ShardingStrategy.SHARDING_STRATEGY_UNSPECIFIED, valueOf: ShardingStrategy.valueOf, enumValues: ShardingStrategy.values)
@@ -397,27 +397,27 @@ class CreateReadSessionRequest extends $pb.GeneratedMessage {
 
   /// Required. Reference to the table to read.
   @$pb.TagNumber(1)
-  $4383.TableReference get tableReference => $_getN(0);
+  $4384.TableReference get tableReference => $_getN(0);
   @$pb.TagNumber(1)
-  set tableReference($4383.TableReference v) { setField(1, v); }
+  set tableReference($4384.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTableReference() => $_has(0);
   @$pb.TagNumber(1)
   void clearTableReference() => clearField(1);
   @$pb.TagNumber(1)
-  $4383.TableReference ensureTableReference() => $_ensure(0);
+  $4384.TableReference ensureTableReference() => $_ensure(0);
 
   /// Any modifiers to the Table (e.g. snapshot timestamp).
   @$pb.TagNumber(2)
-  $4383.TableModifiers get tableModifiers => $_getN(1);
+  $4384.TableModifiers get tableModifiers => $_getN(1);
   @$pb.TagNumber(2)
-  set tableModifiers($4383.TableModifiers v) { setField(2, v); }
+  set tableModifiers($4384.TableModifiers v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTableModifiers() => $_has(1);
   @$pb.TagNumber(2)
   void clearTableModifiers() => clearField(2);
   @$pb.TagNumber(2)
-  $4383.TableModifiers ensureTableModifiers() => $_ensure(1);
+  $4384.TableModifiers ensureTableModifiers() => $_ensure(1);
 
   ///  Initial number of streams. If unset or 0, we will
   ///  provide a value of streams so as to produce reasonable throughput. Must be
@@ -437,15 +437,15 @@ class CreateReadSessionRequest extends $pb.GeneratedMessage {
 
   /// Read options for this session (e.g. column selection, filters).
   @$pb.TagNumber(4)
-  $4384.TableReadOptions get readOptions => $_getN(3);
+  $4385.TableReadOptions get readOptions => $_getN(3);
   @$pb.TagNumber(4)
-  set readOptions($4384.TableReadOptions v) { setField(4, v); }
+  set readOptions($4385.TableReadOptions v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadOptions() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadOptions() => clearField(4);
   @$pb.TagNumber(4)
-  $4384.TableReadOptions ensureReadOptions() => $_ensure(3);
+  $4385.TableReadOptions ensureReadOptions() => $_ensure(3);
 
   /// Data output format. Currently default to Avro.
   /// DATA_FORMAT_UNSPECIFIED not supported.
@@ -796,12 +796,12 @@ enum ReadRowsResponse_Schema {
 class ReadRowsResponse extends $pb.GeneratedMessage {
   factory ReadRowsResponse({
     StreamStatus? status,
-    $4381.AvroRows? avroRows,
-    $4382.ArrowRecordBatch? arrowRecordBatch,
+    $4382.AvroRows? avroRows,
+    $4383.ArrowRecordBatch? arrowRecordBatch,
     ThrottleStatus? throttleStatus,
     $fixnum.Int64? rowCount,
-    $4381.AvroSchema? avroSchema,
-    $4382.ArrowSchema? arrowSchema,
+    $4382.AvroSchema? avroSchema,
+    $4383.ArrowSchema? arrowSchema,
   }) {
     final $result = create();
     if (status != null) {
@@ -845,12 +845,12 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
     ..oo(0, [3, 4])
     ..oo(1, [7, 8])
     ..aOM<StreamStatus>(2, _omitFieldNames ? '' : 'status', subBuilder: StreamStatus.create)
-    ..aOM<$4381.AvroRows>(3, _omitFieldNames ? '' : 'avroRows', subBuilder: $4381.AvroRows.create)
-    ..aOM<$4382.ArrowRecordBatch>(4, _omitFieldNames ? '' : 'arrowRecordBatch', subBuilder: $4382.ArrowRecordBatch.create)
+    ..aOM<$4382.AvroRows>(3, _omitFieldNames ? '' : 'avroRows', subBuilder: $4382.AvroRows.create)
+    ..aOM<$4383.ArrowRecordBatch>(4, _omitFieldNames ? '' : 'arrowRecordBatch', subBuilder: $4383.ArrowRecordBatch.create)
     ..aOM<ThrottleStatus>(5, _omitFieldNames ? '' : 'throttleStatus', subBuilder: ThrottleStatus.create)
     ..aInt64(6, _omitFieldNames ? '' : 'rowCount')
-    ..aOM<$4381.AvroSchema>(7, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4381.AvroSchema.create)
-    ..aOM<$4382.ArrowSchema>(8, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4382.ArrowSchema.create)
+    ..aOM<$4382.AvroSchema>(7, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4382.AvroSchema.create)
+    ..aOM<$4383.ArrowSchema>(8, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4383.ArrowSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -895,27 +895,27 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
 
   /// Serialized row data in AVRO format.
   @$pb.TagNumber(3)
-  $4381.AvroRows get avroRows => $_getN(1);
+  $4382.AvroRows get avroRows => $_getN(1);
   @$pb.TagNumber(3)
-  set avroRows($4381.AvroRows v) { setField(3, v); }
+  set avroRows($4382.AvroRows v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAvroRows() => $_has(1);
   @$pb.TagNumber(3)
   void clearAvroRows() => clearField(3);
   @$pb.TagNumber(3)
-  $4381.AvroRows ensureAvroRows() => $_ensure(1);
+  $4382.AvroRows ensureAvroRows() => $_ensure(1);
 
   /// Serialized row data in Arrow RecordBatch format.
   @$pb.TagNumber(4)
-  $4382.ArrowRecordBatch get arrowRecordBatch => $_getN(2);
+  $4383.ArrowRecordBatch get arrowRecordBatch => $_getN(2);
   @$pb.TagNumber(4)
-  set arrowRecordBatch($4382.ArrowRecordBatch v) { setField(4, v); }
+  set arrowRecordBatch($4383.ArrowRecordBatch v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasArrowRecordBatch() => $_has(2);
   @$pb.TagNumber(4)
   void clearArrowRecordBatch() => clearField(4);
   @$pb.TagNumber(4)
-  $4382.ArrowRecordBatch ensureArrowRecordBatch() => $_ensure(2);
+  $4383.ArrowRecordBatch ensureArrowRecordBatch() => $_ensure(2);
 
   /// Throttling status. If unset, the latest response still describes
   /// the current throttling status.
@@ -945,27 +945,27 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
 
   /// Output only. Avro schema.
   @$pb.TagNumber(7)
-  $4381.AvroSchema get avroSchema => $_getN(5);
+  $4382.AvroSchema get avroSchema => $_getN(5);
   @$pb.TagNumber(7)
-  set avroSchema($4381.AvroSchema v) { setField(7, v); }
+  set avroSchema($4382.AvroSchema v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAvroSchema() => $_has(5);
   @$pb.TagNumber(7)
   void clearAvroSchema() => clearField(7);
   @$pb.TagNumber(7)
-  $4381.AvroSchema ensureAvroSchema() => $_ensure(5);
+  $4382.AvroSchema ensureAvroSchema() => $_ensure(5);
 
   /// Output only. Arrow schema.
   @$pb.TagNumber(8)
-  $4382.ArrowSchema get arrowSchema => $_getN(6);
+  $4383.ArrowSchema get arrowSchema => $_getN(6);
   @$pb.TagNumber(8)
-  set arrowSchema($4382.ArrowSchema v) { setField(8, v); }
+  set arrowSchema($4383.ArrowSchema v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasArrowSchema() => $_has(6);
   @$pb.TagNumber(8)
   void clearArrowSchema() => clearField(8);
   @$pb.TagNumber(8)
-  $4382.ArrowSchema ensureArrowSchema() => $_ensure(6);
+  $4383.ArrowSchema ensureArrowSchema() => $_ensure(6);
 }
 
 /// Information needed to request additional streams for an established read

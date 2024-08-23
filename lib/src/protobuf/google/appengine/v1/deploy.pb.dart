@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $1737;
+import '../../protobuf/duration.pb.dart' as $1738;
 
 /// Code and application artifacts used to deploy a version to App Engine.
 class Deployment extends $pb.GeneratedMessage {
@@ -268,7 +268,7 @@ class ContainerInfo extends $pb.GeneratedMessage {
 class CloudBuildOptions extends $pb.GeneratedMessage {
   factory CloudBuildOptions({
     $core.String? appYamlPath,
-    $1737.Duration? cloudBuildTimeout,
+    $1738.Duration? cloudBuildTimeout,
   }) {
     final $result = create();
     if (appYamlPath != null) {
@@ -285,7 +285,7 @@ class CloudBuildOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CloudBuildOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appYamlPath')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'cloudBuildTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'cloudBuildTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -329,15 +329,15 @@ class CloudBuildOptions extends $pb.GeneratedMessage {
   /// The Cloud Build timeout used as part of any dependent builds performed by
   /// version creation. Defaults to 10 minutes.
   @$pb.TagNumber(2)
-  $1737.Duration get cloudBuildTimeout => $_getN(1);
+  $1738.Duration get cloudBuildTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudBuildTimeout($1737.Duration v) { setField(2, v); }
+  set cloudBuildTimeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCloudBuildTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearCloudBuildTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureCloudBuildTimeout() => $_ensure(1);
+  $1738.Duration ensureCloudBuildTimeout() => $_ensure(1);
 }
 
 /// The zip file information for a zip deployment.

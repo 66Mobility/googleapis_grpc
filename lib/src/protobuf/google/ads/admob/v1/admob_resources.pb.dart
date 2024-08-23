@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/date.pb.dart' as $1800;
+import '../../../type/date.pb.dart' as $1801;
 import 'admob_resources.pbenum.dart';
 
 export 'admob_resources.pbenum.dart';
@@ -1302,8 +1302,8 @@ class ReportFooter extends $pb.GeneratedMessage {
 /// Specification of a single date range. Both dates are inclusive.
 class DateRange extends $pb.GeneratedMessage {
   factory DateRange({
-    $1800.Date? startDate,
-    $1800.Date? endDate,
+    $1801.Date? startDate,
+    $1801.Date? endDate,
   }) {
     final $result = create();
     if (startDate != null) {
@@ -1319,8 +1319,8 @@ class DateRange extends $pb.GeneratedMessage {
   factory DateRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.admob.v1'), createEmptyInstance: create)
-    ..aOM<$1800.Date>(1, _omitFieldNames ? '' : 'startDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(2, _omitFieldNames ? '' : 'endDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(1, _omitFieldNames ? '' : 'startDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(2, _omitFieldNames ? '' : 'endDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -1348,28 +1348,28 @@ class DateRange extends $pb.GeneratedMessage {
   /// Start date of the date range, inclusive. Must be less than or equal to the
   /// end date.
   @$pb.TagNumber(1)
-  $1800.Date get startDate => $_getN(0);
+  $1801.Date get startDate => $_getN(0);
   @$pb.TagNumber(1)
-  set startDate($1800.Date v) { setField(1, v); }
+  set startDate($1801.Date v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartDate() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartDate() => clearField(1);
   @$pb.TagNumber(1)
-  $1800.Date ensureStartDate() => $_ensure(0);
+  $1801.Date ensureStartDate() => $_ensure(0);
 
   /// End date of the date range, inclusive. Must be greater than or equal to the
   /// start date.
   @$pb.TagNumber(2)
-  $1800.Date get endDate => $_getN(1);
+  $1801.Date get endDate => $_getN(1);
   @$pb.TagNumber(2)
-  set endDate($1800.Date v) { setField(2, v); }
+  set endDate($1801.Date v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndDate() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndDate() => clearField(2);
   @$pb.TagNumber(2)
-  $1800.Date ensureEndDate() => $_ensure(1);
+  $1801.Date ensureEndDate() => $_ensure(1);
 }
 
 /// Localization settings for reports, such as currency and language. It affects

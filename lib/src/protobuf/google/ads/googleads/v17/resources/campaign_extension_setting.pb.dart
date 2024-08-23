@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/extension_setting_device.pbenum.dart' as $3566;
-import '../enums/extension_type.pbenum.dart' as $3565;
+import '../enums/extension_setting_device.pbenum.dart' as $3567;
+import '../enums/extension_type.pbenum.dart' as $3566;
 
 /// A campaign extension setting.
 class CampaignExtensionSetting extends $pb.GeneratedMessage {
   factory CampaignExtensionSetting({
     $core.String? resourceName,
-    $3565.ExtensionTypeEnum_ExtensionType? extensionType,
-    $3566.ExtensionSettingDeviceEnum_ExtensionSettingDevice? device,
+    $3566.ExtensionTypeEnum_ExtensionType? extensionType,
+    $3567.ExtensionSettingDeviceEnum_ExtensionSettingDevice? device,
     $core.String? campaign,
     $core.Iterable<$core.String>? extensionFeedItems,
   }) {
@@ -49,8 +49,8 @@ class CampaignExtensionSetting extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignExtensionSetting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3565.ExtensionTypeEnum_ExtensionType>(2, _omitFieldNames ? '' : 'extensionType', $pb.PbFieldType.OE, defaultOrMaker: $3565.ExtensionTypeEnum_ExtensionType.UNSPECIFIED, valueOf: $3565.ExtensionTypeEnum_ExtensionType.valueOf, enumValues: $3565.ExtensionTypeEnum_ExtensionType.values)
-    ..e<$3566.ExtensionSettingDeviceEnum_ExtensionSettingDevice>(5, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $3566.ExtensionSettingDeviceEnum_ExtensionSettingDevice.UNSPECIFIED, valueOf: $3566.ExtensionSettingDeviceEnum_ExtensionSettingDevice.valueOf, enumValues: $3566.ExtensionSettingDeviceEnum_ExtensionSettingDevice.values)
+    ..e<$3566.ExtensionTypeEnum_ExtensionType>(2, _omitFieldNames ? '' : 'extensionType', $pb.PbFieldType.OE, defaultOrMaker: $3566.ExtensionTypeEnum_ExtensionType.UNSPECIFIED, valueOf: $3566.ExtensionTypeEnum_ExtensionType.valueOf, enumValues: $3566.ExtensionTypeEnum_ExtensionType.values)
+    ..e<$3567.ExtensionSettingDeviceEnum_ExtensionSettingDevice>(5, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $3567.ExtensionSettingDeviceEnum_ExtensionSettingDevice.UNSPECIFIED, valueOf: $3567.ExtensionSettingDeviceEnum_ExtensionSettingDevice.valueOf, enumValues: $3567.ExtensionSettingDeviceEnum_ExtensionSettingDevice.values)
     ..aOS(6, _omitFieldNames ? '' : 'campaign')
     ..pPS(7, _omitFieldNames ? '' : 'extensionFeedItems')
     ..hasRequiredFields = false
@@ -92,9 +92,9 @@ class CampaignExtensionSetting extends $pb.GeneratedMessage {
 
   /// Immutable. The extension type of the customer extension setting.
   @$pb.TagNumber(2)
-  $3565.ExtensionTypeEnum_ExtensionType get extensionType => $_getN(1);
+  $3566.ExtensionTypeEnum_ExtensionType get extensionType => $_getN(1);
   @$pb.TagNumber(2)
-  set extensionType($3565.ExtensionTypeEnum_ExtensionType v) { setField(2, v); }
+  set extensionType($3566.ExtensionTypeEnum_ExtensionType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExtensionType() => $_has(1);
   @$pb.TagNumber(2)
@@ -102,9 +102,9 @@ class CampaignExtensionSetting extends $pb.GeneratedMessage {
 
   /// The device for which the extensions will serve. Optional.
   @$pb.TagNumber(5)
-  $3566.ExtensionSettingDeviceEnum_ExtensionSettingDevice get device => $_getN(2);
+  $3567.ExtensionSettingDeviceEnum_ExtensionSettingDevice get device => $_getN(2);
   @$pb.TagNumber(5)
-  set device($3566.ExtensionSettingDeviceEnum_ExtensionSettingDevice v) { setField(5, v); }
+  set device($3567.ExtensionSettingDeviceEnum_ExtensionSettingDevice v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDevice() => $_has(2);
   @$pb.TagNumber(5)

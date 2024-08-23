@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'streaming_resources.pb.dart' as $4728;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'streaming_resources.pb.dart' as $4730;
 import 'streaming_service.pbenum.dart';
 
 export 'streaming_service.pbenum.dart';
@@ -29,8 +29,8 @@ class ReceiveEventsRequest_SetupRequest extends $pb.GeneratedMessage {
     $core.String? stream,
     $core.String? receiver,
     ControlledMode? controlledMode,
-    $1737.Duration? heartbeatInterval,
-    $1737.Duration? writesDoneGracePeriod,
+    $1738.Duration? heartbeatInterval,
+    $1738.Duration? writesDoneGracePeriod,
   }) {
     final $result = create();
     if (cluster != null) {
@@ -62,8 +62,8 @@ class ReceiveEventsRequest_SetupRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'stream')
     ..aOS(3, _omitFieldNames ? '' : 'receiver')
     ..aOM<ControlledMode>(4, _omitFieldNames ? '' : 'controlledMode', subBuilder: ControlledMode.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'heartbeatInterval', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'writesDoneGracePeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'heartbeatInterval', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'writesDoneGracePeriod', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -139,15 +139,15 @@ class ReceiveEventsRequest_SetupRequest extends $pb.GeneratedMessage {
   ///  before this duration expires; otherwise, the client will automatically
   ///  cancel the current connection and retry.
   @$pb.TagNumber(5)
-  $1737.Duration get heartbeatInterval => $_getN(4);
+  $1738.Duration get heartbeatInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set heartbeatInterval($1737.Duration v) { setField(5, v); }
+  set heartbeatInterval($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasHeartbeatInterval() => $_has(4);
   @$pb.TagNumber(5)
   void clearHeartbeatInterval() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureHeartbeatInterval() => $_ensure(4);
+  $1738.Duration ensureHeartbeatInterval() => $_ensure(4);
 
   ///  The grace period after which a `writes_done_request` is issued, that a
   ///  `WritesDone` is expected from the client.
@@ -156,15 +156,15 @@ class ReceiveEventsRequest_SetupRequest extends $pb.GeneratedMessage {
   ///
   ///  A system default will be chosen if unset.
   @$pb.TagNumber(6)
-  $1737.Duration get writesDoneGracePeriod => $_getN(5);
+  $1738.Duration get writesDoneGracePeriod => $_getN(5);
   @$pb.TagNumber(6)
-  set writesDoneGracePeriod($1737.Duration v) { setField(6, v); }
+  set writesDoneGracePeriod($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasWritesDoneGracePeriod() => $_has(5);
   @$pb.TagNumber(6)
   void clearWritesDoneGracePeriod() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureWritesDoneGracePeriod() => $_ensure(5);
+  $1738.Duration ensureWritesDoneGracePeriod() => $_ensure(5);
 }
 
 enum ReceiveEventsRequest_Request {
@@ -259,7 +259,7 @@ class EventUpdate extends $pb.GeneratedMessage {
     $core.String? stream,
     $core.String? event,
     $core.String? series,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? offset,
   }) {
     final $result = create();
@@ -288,7 +288,7 @@ class EventUpdate extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'stream')
     ..aOS(2, _omitFieldNames ? '' : 'event')
     ..aOS(3, _omitFieldNames ? '' : 'series')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(5, _omitFieldNames ? '' : 'offset')
     ..hasRequiredFields = false
   ;
@@ -346,15 +346,15 @@ class EventUpdate extends $pb.GeneratedMessage {
 
   /// The timestamp when the Event update happens.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The offset of the message that will be used to acknowledge of the message
   /// receiving.
@@ -550,7 +550,7 @@ class Lease extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? series,
     $core.String? owner,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     LeaseType? leaseType,
   }) {
     final $result = create();
@@ -579,7 +579,7 @@ class Lease extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'series')
     ..aOS(3, _omitFieldNames ? '' : 'owner')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..e<LeaseType>(5, _omitFieldNames ? '' : 'leaseType', $pb.PbFieldType.OE, defaultOrMaker: LeaseType.LEASE_TYPE_UNSPECIFIED, valueOf: LeaseType.valueOf, enumValues: LeaseType.values)
     ..hasRequiredFields = false
   ;
@@ -637,15 +637,15 @@ class Lease extends $pb.GeneratedMessage {
 
   /// The lease expire time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($1775.Timestamp v) { setField(4, v); }
+  set expireTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// The lease type.
   @$pb.TagNumber(5)
@@ -663,7 +663,7 @@ class AcquireLeaseRequest extends $pb.GeneratedMessage {
   factory AcquireLeaseRequest({
     $core.String? series,
     $core.String? owner,
-    $1737.Duration? term,
+    $1738.Duration? term,
     LeaseType? leaseType,
   }) {
     final $result = create();
@@ -688,7 +688,7 @@ class AcquireLeaseRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AcquireLeaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'series')
     ..aOS(2, _omitFieldNames ? '' : 'owner')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'term', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'term', subBuilder: $1738.Duration.create)
     ..e<LeaseType>(4, _omitFieldNames ? '' : 'leaseType', $pb.PbFieldType.OE, defaultOrMaker: LeaseType.LEASE_TYPE_UNSPECIFIED, valueOf: LeaseType.valueOf, enumValues: LeaseType.values)
     ..hasRequiredFields = false
   ;
@@ -736,15 +736,15 @@ class AcquireLeaseRequest extends $pb.GeneratedMessage {
 
   /// The lease term.
   @$pb.TagNumber(3)
-  $1737.Duration get term => $_getN(2);
+  $1738.Duration get term => $_getN(2);
   @$pb.TagNumber(3)
-  set term($1737.Duration v) { setField(3, v); }
+  set term($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTerm() => $_has(2);
   @$pb.TagNumber(3)
   void clearTerm() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTerm() => $_ensure(2);
+  $1738.Duration ensureTerm() => $_ensure(2);
 
   /// The lease type.
   @$pb.TagNumber(4)
@@ -763,7 +763,7 @@ class RenewLeaseRequest extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? series,
     $core.String? owner,
-    $1737.Duration? term,
+    $1738.Duration? term,
   }) {
     final $result = create();
     if (id != null) {
@@ -788,7 +788,7 @@ class RenewLeaseRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'series')
     ..aOS(3, _omitFieldNames ? '' : 'owner')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'term', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'term', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -845,15 +845,15 @@ class RenewLeaseRequest extends $pb.GeneratedMessage {
 
   /// Lease term.
   @$pb.TagNumber(4)
-  $1737.Duration get term => $_getN(3);
+  $1738.Duration get term => $_getN(3);
   @$pb.TagNumber(4)
-  set term($1737.Duration v) { setField(4, v); }
+  set term($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTerm() => $_has(3);
   @$pb.TagNumber(4)
   void clearTerm() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureTerm() => $_ensure(3);
+  $1738.Duration ensureTerm() => $_ensure(3);
 }
 
 /// Request message for releasing lease.
@@ -979,7 +979,7 @@ class RequestMetadata extends $pb.GeneratedMessage {
     $core.String? series,
     $core.String? leaseId,
     $core.String? owner,
-    $1737.Duration? leaseTerm,
+    $1738.Duration? leaseTerm,
   }) {
     final $result = create();
     if (stream != null) {
@@ -1012,7 +1012,7 @@ class RequestMetadata extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'series')
     ..aOS(4, _omitFieldNames ? '' : 'leaseId')
     ..aOS(5, _omitFieldNames ? '' : 'owner')
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'leaseTerm', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'leaseTerm', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1092,15 +1092,15 @@ class RequestMetadata extends $pb.GeneratedMessage {
   /// server will release the session immediately and the client cannot reconnect
   /// to the same session later.
   @$pb.TagNumber(6)
-  $1737.Duration get leaseTerm => $_getN(5);
+  $1738.Duration get leaseTerm => $_getN(5);
   @$pb.TagNumber(6)
-  set leaseTerm($1737.Duration v) { setField(6, v); }
+  set leaseTerm($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLeaseTerm() => $_has(5);
   @$pb.TagNumber(6)
   void clearLeaseTerm() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureLeaseTerm() => $_ensure(5);
+  $1738.Duration ensureLeaseTerm() => $_ensure(5);
 }
 
 enum SendPacketsRequest_Request {
@@ -1112,7 +1112,7 @@ enum SendPacketsRequest_Request {
 /// Request message for sending packets.
 class SendPacketsRequest extends $pb.GeneratedMessage {
   factory SendPacketsRequest({
-    $4728.Packet? packet,
+    $4730.Packet? packet,
     RequestMetadata? metadata,
   }) {
     final $result = create();
@@ -1135,7 +1135,7 @@ class SendPacketsRequest extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SendPacketsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$4728.Packet>(1, _omitFieldNames ? '' : 'packet', subBuilder: $4728.Packet.create)
+    ..aOM<$4730.Packet>(1, _omitFieldNames ? '' : 'packet', subBuilder: $4730.Packet.create)
     ..aOM<RequestMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: RequestMetadata.create)
     ..hasRequiredFields = false
   ;
@@ -1166,15 +1166,15 @@ class SendPacketsRequest extends $pb.GeneratedMessage {
 
   /// Packets sent over the streaming rpc.
   @$pb.TagNumber(1)
-  $4728.Packet get packet => $_getN(0);
+  $4730.Packet get packet => $_getN(0);
   @$pb.TagNumber(1)
-  set packet($4728.Packet v) { setField(1, v); }
+  set packet($4730.Packet v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPacket() => $_has(0);
   @$pb.TagNumber(1)
   void clearPacket() => clearField(1);
   @$pb.TagNumber(1)
-  $4728.Packet ensurePacket() => $_ensure(0);
+  $4730.Packet ensurePacket() => $_ensure(0);
 
   /// The first message of the streaming rpc including the request metadata.
   @$pb.TagNumber(2)
@@ -1235,8 +1235,8 @@ class ReceivePacketsRequest_SetupRequest extends $pb.GeneratedMessage {
     $core.String? receiver,
     EagerMode? eagerReceiveMode,
     ControlledMode? controlledReceiveMode,
-    $1737.Duration? heartbeatInterval,
-    $1737.Duration? writesDoneGracePeriod,
+    $1738.Duration? heartbeatInterval,
+    $1738.Duration? writesDoneGracePeriod,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -1274,8 +1274,8 @@ class ReceivePacketsRequest_SetupRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'receiver')
     ..aOM<EagerMode>(3, _omitFieldNames ? '' : 'eagerReceiveMode', subBuilder: EagerMode.create)
     ..aOM<ControlledMode>(4, _omitFieldNames ? '' : 'controlledReceiveMode', subBuilder: ControlledMode.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'heartbeatInterval', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'writesDoneGracePeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'heartbeatInterval', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'writesDoneGracePeriod', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1358,15 +1358,15 @@ class ReceivePacketsRequest_SetupRequest extends $pb.GeneratedMessage {
   ///  this duration expires; otherwise, the client will automatically cancel
   ///  the current connection and retry.
   @$pb.TagNumber(5)
-  $1737.Duration get heartbeatInterval => $_getN(4);
+  $1738.Duration get heartbeatInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set heartbeatInterval($1737.Duration v) { setField(5, v); }
+  set heartbeatInterval($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasHeartbeatInterval() => $_has(4);
   @$pb.TagNumber(5)
   void clearHeartbeatInterval() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureHeartbeatInterval() => $_ensure(4);
+  $1738.Duration ensureHeartbeatInterval() => $_ensure(4);
 
   ///  The grace period after which a `writes_done_request` is issued, that a
   ///  `WritesDone` is expected from the client.
@@ -1375,15 +1375,15 @@ class ReceivePacketsRequest_SetupRequest extends $pb.GeneratedMessage {
   ///
   ///  A system default will be chosen if unset.
   @$pb.TagNumber(6)
-  $1737.Duration get writesDoneGracePeriod => $_getN(5);
+  $1738.Duration get writesDoneGracePeriod => $_getN(5);
   @$pb.TagNumber(6)
-  set writesDoneGracePeriod($1737.Duration v) { setField(6, v); }
+  set writesDoneGracePeriod($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasWritesDoneGracePeriod() => $_has(5);
   @$pb.TagNumber(6)
   void clearWritesDoneGracePeriod() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureWritesDoneGracePeriod() => $_ensure(5);
+  $1738.Duration ensureWritesDoneGracePeriod() => $_ensure(5);
 }
 
 enum ReceivePacketsRequest_Request {
@@ -1573,7 +1573,7 @@ enum ReceivePacketsResponse_Response {
 /// Response message from ReceivePackets.
 class ReceivePacketsResponse extends $pb.GeneratedMessage {
   factory ReceivePacketsResponse({
-    $4728.Packet? packet,
+    $4730.Packet? packet,
     ReceivePacketsControlResponse? control,
   }) {
     final $result = create();
@@ -1596,7 +1596,7 @@ class ReceivePacketsResponse extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReceivePacketsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [1, 3])
-    ..aOM<$4728.Packet>(1, _omitFieldNames ? '' : 'packet', subBuilder: $4728.Packet.create)
+    ..aOM<$4730.Packet>(1, _omitFieldNames ? '' : 'packet', subBuilder: $4730.Packet.create)
     ..aOM<ReceivePacketsControlResponse>(3, _omitFieldNames ? '' : 'control', subBuilder: ReceivePacketsControlResponse.create)
     ..hasRequiredFields = false
   ;
@@ -1627,15 +1627,15 @@ class ReceivePacketsResponse extends $pb.GeneratedMessage {
 
   /// A genuine data payload originating from the sender.
   @$pb.TagNumber(1)
-  $4728.Packet get packet => $_getN(0);
+  $4730.Packet get packet => $_getN(0);
   @$pb.TagNumber(1)
-  set packet($4728.Packet v) { setField(1, v); }
+  set packet($4730.Packet v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPacket() => $_has(0);
   @$pb.TagNumber(1)
   void clearPacket() => clearField(1);
   @$pb.TagNumber(1)
-  $4728.Packet ensurePacket() => $_ensure(0);
+  $4730.Packet ensurePacket() => $_ensure(0);
 
   /// A control message from the server.
   @$pb.TagNumber(3)

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/conversion_action_category.pbenum.dart' as $3335;
-import '../enums/conversion_value_rule_set_status.pbenum.dart' as $3683;
-import '../enums/value_rule_set_attachment_type.pbenum.dart' as $3682;
-import '../enums/value_rule_set_dimension.pbenum.dart' as $3681;
+import '../enums/conversion_action_category.pbenum.dart' as $3336;
+import '../enums/conversion_value_rule_set_status.pbenum.dart' as $3684;
+import '../enums/value_rule_set_attachment_type.pbenum.dart' as $3683;
+import '../enums/value_rule_set_dimension.pbenum.dart' as $3682;
 
 /// A conversion value rule set
 class ConversionValueRuleSet extends $pb.GeneratedMessage {
@@ -25,12 +25,12 @@ class ConversionValueRuleSet extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? id,
     $core.Iterable<$core.String>? conversionValueRules,
-    $core.Iterable<$3681.ValueRuleSetDimensionEnum_ValueRuleSetDimension>? dimensions,
+    $core.Iterable<$3682.ValueRuleSetDimensionEnum_ValueRuleSetDimension>? dimensions,
     $core.String? ownerCustomer,
-    $3682.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType? attachmentType,
+    $3683.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType? attachmentType,
     $core.String? campaign,
-    $3683.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus? status,
-    $core.Iterable<$3335.ConversionActionCategoryEnum_ConversionActionCategory>? conversionActionCategories,
+    $3684.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus? status,
+    $core.Iterable<$3336.ConversionActionCategoryEnum_ConversionActionCategory>? conversionActionCategories,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -70,12 +70,12 @@ class ConversionValueRuleSet extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..pPS(3, _omitFieldNames ? '' : 'conversionValueRules')
-    ..pc<$3681.ValueRuleSetDimensionEnum_ValueRuleSetDimension>(4, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3681.ValueRuleSetDimensionEnum_ValueRuleSetDimension.valueOf, enumValues: $3681.ValueRuleSetDimensionEnum_ValueRuleSetDimension.values, defaultEnumValue: $3681.ValueRuleSetDimensionEnum_ValueRuleSetDimension.UNSPECIFIED)
+    ..pc<$3682.ValueRuleSetDimensionEnum_ValueRuleSetDimension>(4, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.KE, valueOf: $3682.ValueRuleSetDimensionEnum_ValueRuleSetDimension.valueOf, enumValues: $3682.ValueRuleSetDimensionEnum_ValueRuleSetDimension.values, defaultEnumValue: $3682.ValueRuleSetDimensionEnum_ValueRuleSetDimension.UNSPECIFIED)
     ..aOS(5, _omitFieldNames ? '' : 'ownerCustomer')
-    ..e<$3682.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType>(6, _omitFieldNames ? '' : 'attachmentType', $pb.PbFieldType.OE, defaultOrMaker: $3682.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType.UNSPECIFIED, valueOf: $3682.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType.valueOf, enumValues: $3682.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType.values)
+    ..e<$3683.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType>(6, _omitFieldNames ? '' : 'attachmentType', $pb.PbFieldType.OE, defaultOrMaker: $3683.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType.UNSPECIFIED, valueOf: $3683.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType.valueOf, enumValues: $3683.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType.values)
     ..aOS(7, _omitFieldNames ? '' : 'campaign')
-    ..e<$3683.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3683.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus.UNSPECIFIED, valueOf: $3683.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus.valueOf, enumValues: $3683.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus.values)
-    ..pc<$3335.ConversionActionCategoryEnum_ConversionActionCategory>(9, _omitFieldNames ? '' : 'conversionActionCategories', $pb.PbFieldType.KE, valueOf: $3335.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $3335.ConversionActionCategoryEnum_ConversionActionCategory.values, defaultEnumValue: $3335.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED)
+    ..e<$3684.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3684.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus.UNSPECIFIED, valueOf: $3684.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus.valueOf, enumValues: $3684.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus.values)
+    ..pc<$3336.ConversionActionCategoryEnum_ConversionActionCategory>(9, _omitFieldNames ? '' : 'conversionActionCategories', $pb.PbFieldType.KE, valueOf: $3336.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $3336.ConversionActionCategoryEnum_ConversionActionCategory.values, defaultEnumValue: $3336.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -134,7 +134,7 @@ class ConversionValueRuleSet extends $pb.GeneratedMessage {
   /// will be segmented into the values adjusted by value rules and the original
   /// values, if some value rules apply.
   @$pb.TagNumber(4)
-  $core.List<$3681.ValueRuleSetDimensionEnum_ValueRuleSetDimension> get dimensions => $_getList(3);
+  $core.List<$3682.ValueRuleSetDimensionEnum_ValueRuleSetDimension> get dimensions => $_getList(3);
 
   /// Output only. The resource name of the conversion value rule set's owner
   /// customer. When the value rule set is inherited from a manager customer,
@@ -153,9 +153,9 @@ class ConversionValueRuleSet extends $pb.GeneratedMessage {
   /// Immutable. Defines the scope where the conversion value rule set is
   /// attached.
   @$pb.TagNumber(6)
-  $3682.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType get attachmentType => $_getN(5);
+  $3683.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType get attachmentType => $_getN(5);
   @$pb.TagNumber(6)
-  set attachmentType($3682.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType v) { setField(6, v); }
+  set attachmentType($3683.ValueRuleSetAttachmentTypeEnum_ValueRuleSetAttachmentType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAttachmentType() => $_has(5);
   @$pb.TagNumber(6)
@@ -175,9 +175,9 @@ class ConversionValueRuleSet extends $pb.GeneratedMessage {
   /// Output only. The status of the conversion value rule set.
   /// ** Read-only **
   @$pb.TagNumber(8)
-  $3683.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus get status => $_getN(7);
+  $3684.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus get status => $_getN(7);
   @$pb.TagNumber(8)
-  set status($3683.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus v) { setField(8, v); }
+  set status($3684.ConversionValueRuleSetStatusEnum_ConversionValueRuleSetStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStatus() => $_has(7);
   @$pb.TagNumber(8)
@@ -186,7 +186,7 @@ class ConversionValueRuleSet extends $pb.GeneratedMessage {
   /// Immutable. The conversion action categories of the conversion value rule
   /// set.
   @$pb.TagNumber(9)
-  $core.List<$3335.ConversionActionCategoryEnum_ConversionActionCategory> get conversionActionCategories => $_getList(8);
+  $core.List<$3336.ConversionActionCategoryEnum_ConversionActionCategory> get conversionActionCategories => $_getList(8);
 }
 
 

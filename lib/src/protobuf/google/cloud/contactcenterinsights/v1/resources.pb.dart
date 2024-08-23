@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -189,7 +189,7 @@ class Conversation_QualityMetadata_AgentInfo extends $pb.GeneratedMessage {
 class Conversation_QualityMetadata extends $pb.GeneratedMessage {
   factory Conversation_QualityMetadata({
     $core.int? customerSatisfactionRating,
-    $1737.Duration? waitDuration,
+    $1738.Duration? waitDuration,
     $core.String? menuPath,
     $core.Iterable<Conversation_QualityMetadata_AgentInfo>? agentInfo,
   }) {
@@ -214,7 +214,7 @@ class Conversation_QualityMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Conversation.QualityMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'customerSatisfactionRating', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'menuPath')
     ..pc<Conversation_QualityMetadata_AgentInfo>(4, _omitFieldNames ? '' : 'agentInfo', $pb.PbFieldType.PM, subBuilder: Conversation_QualityMetadata_AgentInfo.create)
     ..hasRequiredFields = false
@@ -253,15 +253,15 @@ class Conversation_QualityMetadata extends $pb.GeneratedMessage {
 
   /// The amount of time the customer waited to connect with an agent.
   @$pb.TagNumber(2)
-  $1737.Duration get waitDuration => $_getN(1);
+  $1738.Duration get waitDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set waitDuration($1737.Duration v) { setField(2, v); }
+  set waitDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWaitDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearWaitDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureWaitDuration() => $_ensure(1);
+  $1738.Duration ensureWaitDuration() => $_ensure(1);
 
   /// An arbitrary string value specifying the menu path the customer took.
   @$pb.TagNumber(3)
@@ -281,8 +281,8 @@ class Conversation_QualityMetadata extends $pb.GeneratedMessage {
 /// Word-level info for words in a transcript.
 class Conversation_Transcript_TranscriptSegment_WordInfo extends $pb.GeneratedMessage {
   factory Conversation_Transcript_TranscriptSegment_WordInfo({
-    $1737.Duration? startOffset,
-    $1737.Duration? endOffset,
+    $1738.Duration? startOffset,
+    $1738.Duration? endOffset,
     $core.String? word,
     $core.double? confidence,
   }) {
@@ -306,8 +306,8 @@ class Conversation_Transcript_TranscriptSegment_WordInfo extends $pb.GeneratedMe
   factory Conversation_Transcript_TranscriptSegment_WordInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Conversation.Transcript.TranscriptSegment.WordInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'word')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
@@ -337,28 +337,28 @@ class Conversation_Transcript_TranscriptSegment_WordInfo extends $pb.GeneratedMe
   /// Time offset of the start of this word relative to the beginning of
   /// the total conversation.
   @$pb.TagNumber(1)
-  $1737.Duration get startOffset => $_getN(0);
+  $1738.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startOffset($1737.Duration v) { setField(1, v); }
+  set startOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartOffset() => $_ensure(0);
+  $1738.Duration ensureStartOffset() => $_ensure(0);
 
   /// Time offset of the end of this word relative to the beginning of the
   /// total conversation.
   @$pb.TagNumber(2)
-  $1737.Duration get endOffset => $_getN(1);
+  $1738.Duration get endOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endOffset($1737.Duration v) { setField(2, v); }
+  set endOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndOffset() => $_ensure(1);
+  $1738.Duration ensureEndOffset() => $_ensure(1);
 
   /// The word itself. Includes punctuation marks that surround the word.
   @$pb.TagNumber(3)
@@ -443,7 +443,7 @@ class Conversation_Transcript_TranscriptSegment extends $pb.GeneratedMessage {
     $core.Iterable<Conversation_Transcript_TranscriptSegment_WordInfo>? words,
     $core.String? languageCode,
     $core.int? channelTag,
-    $1775.Timestamp? messageTime,
+    $1776.Timestamp? messageTime,
     ConversationParticipant? segmentParticipant,
     Conversation_Transcript_TranscriptSegment_DialogflowSegmentMetadata? dialogflowSegmentMetadata,
     SentimentData? sentiment,
@@ -488,7 +488,7 @@ class Conversation_Transcript_TranscriptSegment extends $pb.GeneratedMessage {
     ..pc<Conversation_Transcript_TranscriptSegment_WordInfo>(3, _omitFieldNames ? '' : 'words', $pb.PbFieldType.PM, subBuilder: Conversation_Transcript_TranscriptSegment_WordInfo.create)
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'channelTag', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'messageTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'messageTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ConversationParticipant>(9, _omitFieldNames ? '' : 'segmentParticipant', subBuilder: ConversationParticipant.create)
     ..aOM<Conversation_Transcript_TranscriptSegment_DialogflowSegmentMetadata>(10, _omitFieldNames ? '' : 'dialogflowSegmentMetadata', subBuilder: Conversation_Transcript_TranscriptSegment_DialogflowSegmentMetadata.create)
     ..aOM<SentimentData>(11, _omitFieldNames ? '' : 'sentiment', subBuilder: SentimentData.create)
@@ -568,15 +568,15 @@ class Conversation_Transcript_TranscriptSegment extends $pb.GeneratedMessage {
 
   /// The time that the message occurred, if provided.
   @$pb.TagNumber(6)
-  $1775.Timestamp get messageTime => $_getN(5);
+  $1776.Timestamp get messageTime => $_getN(5);
   @$pb.TagNumber(6)
-  set messageTime($1775.Timestamp v) { setField(6, v); }
+  set messageTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMessageTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearMessageTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureMessageTime() => $_ensure(5);
+  $1776.Timestamp ensureMessageTime() => $_ensure(5);
 
   /// The participant of this segment.
   @$pb.TagNumber(9)
@@ -677,21 +677,21 @@ class Conversation extends $pb.GeneratedMessage {
   factory Conversation({
     $core.String? name,
     ConversationDataSource? dataSource,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? agentId,
     $core.Map<$core.String, $core.String>? labels,
     Conversation_CallMetadata? callMetadata,
     Conversation_Transcript? transcript,
     Conversation_Medium? medium,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $core.int? turnCount,
     Analysis? latestAnalysis,
     $core.Iterable<RuntimeAnnotation>? runtimeAnnotations,
     $core.String? languageCode,
-    $1775.Timestamp? expireTime,
-    $1737.Duration? ttl,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? expireTime,
+    $1738.Duration? ttl,
+    $1776.Timestamp? startTime,
     $core.Map<$core.String, DialogflowIntent>? dialogflowIntents,
     ConversationSummarizationSuggestionData? latestSummary,
     $core.String? obfuscatedUserId,
@@ -781,21 +781,21 @@ class Conversation extends $pb.GeneratedMessage {
     ..oo(1, [15, 16])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<ConversationDataSource>(2, _omitFieldNames ? '' : 'dataSource', subBuilder: ConversationDataSource.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'agentId')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Conversation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.contactcenterinsights.v1'))
     ..aOM<Conversation_CallMetadata>(7, _omitFieldNames ? '' : 'callMetadata', subBuilder: Conversation_CallMetadata.create)
     ..aOM<Conversation_Transcript>(8, _omitFieldNames ? '' : 'transcript', subBuilder: Conversation_Transcript.create)
     ..e<Conversation_Medium>(9, _omitFieldNames ? '' : 'medium', $pb.PbFieldType.OE, defaultOrMaker: Conversation_Medium.MEDIUM_UNSPECIFIED, valueOf: Conversation_Medium.valueOf, enumValues: Conversation_Medium.values)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'turnCount', $pb.PbFieldType.O3)
     ..aOM<Analysis>(12, _omitFieldNames ? '' : 'latestAnalysis', subBuilder: Analysis.create)
     ..pc<RuntimeAnnotation>(13, _omitFieldNames ? '' : 'runtimeAnnotations', $pb.PbFieldType.PM, subBuilder: RuntimeAnnotation.create)
     ..aOS(14, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$1775.Timestamp>(15, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(16, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(17, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(15, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(16, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(17, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, DialogflowIntent>(18, _omitFieldNames ? '' : 'dialogflowIntents', entryClassName: 'Conversation.DialogflowIntentsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: DialogflowIntent.create, valueDefaultOrMaker: DialogflowIntent.getDefault, packageName: const $pb.PackageName('google.cloud.contactcenterinsights.v1'))
     ..aOM<ConversationSummarizationSuggestionData>(20, _omitFieldNames ? '' : 'latestSummary', subBuilder: ConversationSummarizationSuggestionData.create)
     ..aOS(21, _omitFieldNames ? '' : 'obfuscatedUserId')
@@ -856,27 +856,27 @@ class Conversation extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the conversation was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The most recent time at which the conversation was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// An opaque, user-specified string representing the human agent who handled
   /// the conversation.
@@ -931,15 +931,15 @@ class Conversation extends $pb.GeneratedMessage {
 
   /// Output only. The duration of the conversation.
   @$pb.TagNumber(10)
-  $1737.Duration get duration => $_getN(9);
+  $1738.Duration get duration => $_getN(9);
   @$pb.TagNumber(10)
-  set duration($1737.Duration v) { setField(10, v); }
+  set duration($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDuration() => $_has(9);
   @$pb.TagNumber(10)
   void clearDuration() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureDuration() => $_ensure(9);
+  $1738.Duration ensureDuration() => $_ensure(9);
 
   /// Output only. The number of turns in the conversation.
   @$pb.TagNumber(11)
@@ -981,40 +981,40 @@ class Conversation extends $pb.GeneratedMessage {
   /// The time at which this conversation should expire. After this time, the
   /// conversation data and any associated analyses will be deleted.
   @$pb.TagNumber(15)
-  $1775.Timestamp get expireTime => $_getN(14);
+  $1776.Timestamp get expireTime => $_getN(14);
   @$pb.TagNumber(15)
-  set expireTime($1775.Timestamp v) { setField(15, v); }
+  set expireTime($1776.Timestamp v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasExpireTime() => $_has(14);
   @$pb.TagNumber(15)
   void clearExpireTime() => clearField(15);
   @$pb.TagNumber(15)
-  $1775.Timestamp ensureExpireTime() => $_ensure(14);
+  $1776.Timestamp ensureExpireTime() => $_ensure(14);
 
   /// Input only. The TTL for this resource. If specified, then this TTL will
   /// be used to calculate the expire time.
   @$pb.TagNumber(16)
-  $1737.Duration get ttl => $_getN(15);
+  $1738.Duration get ttl => $_getN(15);
   @$pb.TagNumber(16)
-  set ttl($1737.Duration v) { setField(16, v); }
+  set ttl($1738.Duration v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasTtl() => $_has(15);
   @$pb.TagNumber(16)
   void clearTtl() => clearField(16);
   @$pb.TagNumber(16)
-  $1737.Duration ensureTtl() => $_ensure(15);
+  $1738.Duration ensureTtl() => $_ensure(15);
 
   /// The time at which the conversation started.
   @$pb.TagNumber(17)
-  $1775.Timestamp get startTime => $_getN(16);
+  $1776.Timestamp get startTime => $_getN(16);
   @$pb.TagNumber(17)
-  set startTime($1775.Timestamp v) { setField(17, v); }
+  set startTime($1776.Timestamp v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasStartTime() => $_has(16);
   @$pb.TagNumber(17)
   void clearStartTime() => clearField(17);
   @$pb.TagNumber(17)
-  $1775.Timestamp ensureStartTime() => $_ensure(16);
+  $1776.Timestamp ensureStartTime() => $_ensure(16);
 
   /// Output only. All the matched Dialogflow intents in the call. The key
   /// corresponds to a Dialogflow intent, format:
@@ -1061,8 +1061,8 @@ class Conversation extends $pb.GeneratedMessage {
 class Analysis extends $pb.GeneratedMessage {
   factory Analysis({
     $core.String? name,
-    $1775.Timestamp? requestTime,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? requestTime,
+    $1776.Timestamp? createTime,
     AnalysisResult? analysisResult,
     AnnotatorSelector? annotatorSelector,
   }) {
@@ -1090,8 +1090,8 @@ class Analysis extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Analysis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'requestTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<AnalysisResult>(7, _omitFieldNames ? '' : 'analysisResult', subBuilder: AnalysisResult.create)
     ..aOM<AnnotatorSelector>(8, _omitFieldNames ? '' : 'annotatorSelector', subBuilder: AnnotatorSelector.create)
     ..hasRequiredFields = false
@@ -1132,28 +1132,28 @@ class Analysis extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the analysis was requested.
   @$pb.TagNumber(2)
-  $1775.Timestamp get requestTime => $_getN(1);
+  $1776.Timestamp get requestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set requestTime($1775.Timestamp v) { setField(2, v); }
+  set requestTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRequestTime() => $_ensure(1);
+  $1776.Timestamp ensureRequestTime() => $_ensure(1);
 
   /// Output only. The time at which the analysis was created, which occurs when
   /// the long-running operation completes.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The result of the analysis, which is populated when the
   /// analysis finishes.
@@ -1514,7 +1514,7 @@ enum AnalysisResult_Metadata {
 /// The result of an analysis.
 class AnalysisResult extends $pb.GeneratedMessage {
   factory AnalysisResult({
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? endTime,
     AnalysisResult_CallAnalysisMetadata? callAnalysisMetadata,
   }) {
     final $result = create();
@@ -1536,7 +1536,7 @@ class AnalysisResult extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalysisResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<AnalysisResult_CallAnalysisMetadata>(2, _omitFieldNames ? '' : 'callAnalysisMetadata', subBuilder: AnalysisResult_CallAnalysisMetadata.create)
     ..hasRequiredFields = false
   ;
@@ -1567,15 +1567,15 @@ class AnalysisResult extends $pb.GeneratedMessage {
 
   /// The time at which the analysis ended.
   @$pb.TagNumber(1)
-  $1775.Timestamp get endTime => $_getN(0);
+  $1776.Timestamp get endTime => $_getN(0);
   @$pb.TagNumber(1)
-  set endTime($1775.Timestamp v) { setField(1, v); }
+  set endTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEndTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEndTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEndTime() => $_ensure(0);
+  $1776.Timestamp ensureEndTime() => $_ensure(0);
 
   /// Call-specific metadata created by the analysis.
   @$pb.TagNumber(2)
@@ -2904,8 +2904,8 @@ class IssueModel extends $pb.GeneratedMessage {
   factory IssueModel({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     IssueModel_State? state,
     IssueModel_InputDataConfig? inputDataConfig,
     IssueModelLabelStats? trainingStats,
@@ -2953,8 +2953,8 @@ class IssueModel extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IssueModel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<IssueModel_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: IssueModel_State.STATE_UNSPECIFIED, valueOf: IssueModel_State.valueOf, enumValues: IssueModel_State.values)
     ..aOM<IssueModel_InputDataConfig>(6, _omitFieldNames ? '' : 'inputDataConfig', subBuilder: IssueModel_InputDataConfig.create)
     ..aOM<IssueModelLabelStats>(7, _omitFieldNames ? '' : 'trainingStats', subBuilder: IssueModelLabelStats.create)
@@ -3009,27 +3009,27 @@ class IssueModel extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this issue model was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The most recent time at which the issue model was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. State of the model.
   @$pb.TagNumber(5)
@@ -3102,8 +3102,8 @@ class Issue extends $pb.GeneratedMessage {
   factory Issue({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$core.String>? sampleUtterances,
   }) {
     final $result = create();
@@ -3131,8 +3131,8 @@ class Issue extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Issue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pPS(6, _omitFieldNames ? '' : 'sampleUtterances')
     ..hasRequiredFields = false
   ;
@@ -3182,27 +3182,27 @@ class Issue extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this issue was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The most recent time that this issue was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Resource names of the sample representative utterances that
   /// match to this issue.
@@ -3377,14 +3377,14 @@ class PhraseMatcher extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? revisionId,
     $core.String? versionTag,
-    $1775.Timestamp? revisionCreateTime,
+    $1776.Timestamp? revisionCreateTime,
     $core.String? displayName,
     PhraseMatcher_PhraseMatcherType? type,
     $core.bool? active,
     $core.Iterable<PhraseMatchRuleGroup>? phraseMatchRuleGroups,
-    $1775.Timestamp? activationUpdateTime,
+    $1776.Timestamp? activationUpdateTime,
     ConversationParticipant_Role? roleMatch,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -3430,14 +3430,14 @@ class PhraseMatcher extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'revisionId')
     ..aOS(3, _omitFieldNames ? '' : 'versionTag')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..e<PhraseMatcher_PhraseMatcherType>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: PhraseMatcher_PhraseMatcherType.PHRASE_MATCHER_TYPE_UNSPECIFIED, valueOf: PhraseMatcher_PhraseMatcherType.valueOf, enumValues: PhraseMatcher_PhraseMatcherType.values)
     ..aOB(7, _omitFieldNames ? '' : 'active')
     ..pc<PhraseMatchRuleGroup>(8, _omitFieldNames ? '' : 'phraseMatchRuleGroups', $pb.PbFieldType.PM, subBuilder: PhraseMatchRuleGroup.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'activationUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'activationUpdateTime', subBuilder: $1776.Timestamp.create)
     ..e<ConversationParticipant_Role>(10, _omitFieldNames ? '' : 'roleMatch', $pb.PbFieldType.OE, defaultOrMaker: ConversationParticipant_Role.ROLE_UNSPECIFIED, valueOf: ConversationParticipant_Role.valueOf, enumValues: ConversationParticipant_Role.values)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3501,15 +3501,15 @@ class PhraseMatcher extends $pb.GeneratedMessage {
   /// Output only. The timestamp of when the revision was created. It is also the
   /// create time when a new matcher is added.
   @$pb.TagNumber(4)
-  $1775.Timestamp get revisionCreateTime => $_getN(3);
+  $1776.Timestamp get revisionCreateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set revisionCreateTime($1775.Timestamp v) { setField(4, v); }
+  set revisionCreateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRevisionCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearRevisionCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureRevisionCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureRevisionCreateTime() => $_ensure(3);
 
   /// The human-readable name of the phrase matcher.
   @$pb.TagNumber(5)
@@ -3548,15 +3548,15 @@ class PhraseMatcher extends $pb.GeneratedMessage {
   /// Output only. The most recent time at which the activation status was
   /// updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get activationUpdateTime => $_getN(8);
+  $1776.Timestamp get activationUpdateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set activationUpdateTime($1775.Timestamp v) { setField(9, v); }
+  set activationUpdateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasActivationUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearActivationUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureActivationUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureActivationUpdateTime() => $_ensure(8);
 
   /// The role whose utterances the phrase matcher should be matched
   /// against. If the role is ROLE_UNSPECIFIED it will be matched against any
@@ -3572,15 +3572,15 @@ class PhraseMatcher extends $pb.GeneratedMessage {
 
   /// Output only. The most recent time at which the phrase matcher was updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(10);
+  $1776.Timestamp get updateTime => $_getN(10);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(10);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(10);
 }
 
 /// A message representing a rule in the phrase matcher.
@@ -3940,10 +3940,10 @@ class Settings_AnalysisConfig extends $pb.GeneratedMessage {
 class Settings extends $pb.GeneratedMessage {
   factory Settings({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? languageCode,
-    $1737.Duration? conversationTtl,
+    $1738.Duration? conversationTtl,
     $core.Map<$core.String, $core.String>? pubsubNotificationSettings,
     Settings_AnalysisConfig? analysisConfig,
     RedactionConfig? redactionConfig,
@@ -3985,10 +3985,10 @@ class Settings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Settings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'conversationTtl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'conversationTtl', subBuilder: $1738.Duration.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'pubsubNotificationSettings', entryClassName: 'Settings.PubsubNotificationSettingsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.contactcenterinsights.v1'))
     ..aOM<Settings_AnalysisConfig>(7, _omitFieldNames ? '' : 'analysisConfig', subBuilder: Settings_AnalysisConfig.create)
     ..aOM<RedactionConfig>(10, _omitFieldNames ? '' : 'redactionConfig', subBuilder: RedactionConfig.create)
@@ -4031,27 +4031,27 @@ class Settings extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the settings was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which the settings were last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// A language code to be applied to each transcript segment unless the segment
   /// already specifies a language code. Language code defaults to "en-US" if it
@@ -4070,15 +4070,15 @@ class Settings extends $pb.GeneratedMessage {
   /// value will not change the expiration of existing conversations.
   /// Conversations with no expire time persist until they are deleted.
   @$pb.TagNumber(5)
-  $1737.Duration get conversationTtl => $_getN(4);
+  $1738.Duration get conversationTtl => $_getN(4);
   @$pb.TagNumber(5)
-  set conversationTtl($1737.Duration v) { setField(5, v); }
+  set conversationTtl($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasConversationTtl() => $_has(4);
   @$pb.TagNumber(5)
   void clearConversationTtl() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureConversationTtl() => $_ensure(4);
+  $1738.Duration ensureConversationTtl() => $_ensure(4);
 
   ///  A map that maps a notification trigger to a Pub/Sub topic. Each time a
   ///  specified trigger occurs, Insights will notify the corresponding Pub/Sub
@@ -4276,7 +4276,7 @@ enum RuntimeAnnotation_Data {
 class RuntimeAnnotation extends $pb.GeneratedMessage {
   factory RuntimeAnnotation({
     $core.String? annotationId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     AnnotationBoundary? startBoundary,
     AnnotationBoundary? endBoundary,
     AnswerFeedback? answerFeedback,
@@ -4339,7 +4339,7 @@ class RuntimeAnnotation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RuntimeAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..oo(0, [6, 7, 8, 9, 10, 12])
     ..aOS(1, _omitFieldNames ? '' : 'annotationId')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<AnnotationBoundary>(3, _omitFieldNames ? '' : 'startBoundary', subBuilder: AnnotationBoundary.create)
     ..aOM<AnnotationBoundary>(4, _omitFieldNames ? '' : 'endBoundary', subBuilder: AnnotationBoundary.create)
     ..aOM<AnswerFeedback>(5, _omitFieldNames ? '' : 'answerFeedback', subBuilder: AnswerFeedback.create)
@@ -4390,15 +4390,15 @@ class RuntimeAnnotation extends $pb.GeneratedMessage {
 
   /// The time at which this annotation was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The boundary in the conversation where the annotation starts, inclusive.
   @$pb.TagNumber(3)
@@ -5373,8 +5373,8 @@ class View extends $pb.GeneratedMessage {
   factory View({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? value,
   }) {
     final $result = create();
@@ -5402,8 +5402,8 @@ class View extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'View', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contactcenterinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false
   ;
@@ -5453,27 +5453,27 @@ class View extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this view was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The most recent time at which the view was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// String with specific view properties, must be non-empty.
   @$pb.TagNumber(5)

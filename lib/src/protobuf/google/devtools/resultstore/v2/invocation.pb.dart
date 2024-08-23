@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4769;
-import 'coverage.pb.dart' as $4771;
-import 'coverage_summary.pb.dart' as $4774;
-import 'file.pb.dart' as $4770;
-import 'file_processing_error.pb.dart' as $4772;
+import 'common.pb.dart' as $4771;
+import 'coverage.pb.dart' as $4773;
+import 'coverage_summary.pb.dart' as $4776;
+import 'file.pb.dart' as $4772;
+import 'file_processing_error.pb.dart' as $4774;
 
 /// The resource ID components that identify the Invocation.
 class Invocation_Id extends $pb.GeneratedMessage {
@@ -78,15 +78,15 @@ class Invocation extends $pb.GeneratedMessage {
   factory Invocation({
     $core.String? name,
     Invocation_Id? id,
-    $4769.StatusAttributes? statusAttributes,
-    $4769.Timing? timing,
+    $4771.StatusAttributes? statusAttributes,
+    $4771.Timing? timing,
     InvocationAttributes? invocationAttributes,
     WorkspaceInfo? workspaceInfo,
-    $core.Iterable<$4769.Property>? properties,
-    $core.Iterable<$4770.File>? files,
-    $core.Iterable<$4774.LanguageCoverageSummary>? coverageSummaries,
-    $4771.AggregateCoverage? aggregateCoverage,
-    $core.Iterable<$4772.FileProcessingErrors>? fileProcessingErrors,
+    $core.Iterable<$4771.Property>? properties,
+    $core.Iterable<$4772.File>? files,
+    $core.Iterable<$4776.LanguageCoverageSummary>? coverageSummaries,
+    $4773.AggregateCoverage? aggregateCoverage,
+    $core.Iterable<$4774.FileProcessingErrors>? fileProcessingErrors,
   }) {
     final $result = create();
     if (name != null) {
@@ -131,15 +131,15 @@ class Invocation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Invocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Invocation_Id>(2, _omitFieldNames ? '' : 'id', subBuilder: Invocation_Id.create)
-    ..aOM<$4769.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4769.StatusAttributes.create)
-    ..aOM<$4769.Timing>(4, _omitFieldNames ? '' : 'timing', subBuilder: $4769.Timing.create)
+    ..aOM<$4771.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4771.StatusAttributes.create)
+    ..aOM<$4771.Timing>(4, _omitFieldNames ? '' : 'timing', subBuilder: $4771.Timing.create)
     ..aOM<InvocationAttributes>(5, _omitFieldNames ? '' : 'invocationAttributes', subBuilder: InvocationAttributes.create)
     ..aOM<WorkspaceInfo>(6, _omitFieldNames ? '' : 'workspaceInfo', subBuilder: WorkspaceInfo.create)
-    ..pc<$4769.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4769.Property.create)
-    ..pc<$4770.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4770.File.create)
-    ..pc<$4774.LanguageCoverageSummary>(9, _omitFieldNames ? '' : 'coverageSummaries', $pb.PbFieldType.PM, subBuilder: $4774.LanguageCoverageSummary.create)
-    ..aOM<$4771.AggregateCoverage>(10, _omitFieldNames ? '' : 'aggregateCoverage', subBuilder: $4771.AggregateCoverage.create)
-    ..pc<$4772.FileProcessingErrors>(11, _omitFieldNames ? '' : 'fileProcessingErrors', $pb.PbFieldType.PM, subBuilder: $4772.FileProcessingErrors.create)
+    ..pc<$4771.Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4771.Property.create)
+    ..pc<$4772.File>(8, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $4772.File.create)
+    ..pc<$4776.LanguageCoverageSummary>(9, _omitFieldNames ? '' : 'coverageSummaries', $pb.PbFieldType.PM, subBuilder: $4776.LanguageCoverageSummary.create)
+    ..aOM<$4773.AggregateCoverage>(10, _omitFieldNames ? '' : 'aggregateCoverage', subBuilder: $4773.AggregateCoverage.create)
+    ..pc<$4774.FileProcessingErrors>(11, _omitFieldNames ? '' : 'fileProcessingErrors', $pb.PbFieldType.PM, subBuilder: $4774.FileProcessingErrors.create)
     ..hasRequiredFields = false
   ;
 
@@ -190,27 +190,27 @@ class Invocation extends $pb.GeneratedMessage {
 
   /// The aggregate status of the invocation.
   @$pb.TagNumber(3)
-  $4769.StatusAttributes get statusAttributes => $_getN(2);
+  $4771.StatusAttributes get statusAttributes => $_getN(2);
   @$pb.TagNumber(3)
-  set statusAttributes($4769.StatusAttributes v) { setField(3, v); }
+  set statusAttributes($4771.StatusAttributes v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatusAttributes() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatusAttributes() => clearField(3);
   @$pb.TagNumber(3)
-  $4769.StatusAttributes ensureStatusAttributes() => $_ensure(2);
+  $4771.StatusAttributes ensureStatusAttributes() => $_ensure(2);
 
   /// When this invocation started and its duration.
   @$pb.TagNumber(4)
-  $4769.Timing get timing => $_getN(3);
+  $4771.Timing get timing => $_getN(3);
   @$pb.TagNumber(4)
-  set timing($4769.Timing v) { setField(4, v); }
+  set timing($4771.Timing v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTiming() => $_has(3);
   @$pb.TagNumber(4)
   void clearTiming() => clearField(4);
   @$pb.TagNumber(4)
-  $4769.Timing ensureTiming() => $_ensure(3);
+  $4771.Timing ensureTiming() => $_ensure(3);
 
   /// Attributes of this invocation.
   @$pb.TagNumber(5)
@@ -240,7 +240,7 @@ class Invocation extends $pb.GeneratedMessage {
   /// This is implemented as a multi-map. Multiple properties are allowed with
   /// the same key. Properties will be returned in lexicographical order by key.
   @$pb.TagNumber(7)
-  $core.List<$4769.Property> get properties => $_getList(6);
+  $core.List<$4771.Property> get properties => $_getList(6);
 
   ///  A list of file references for invocation level files.
   ///  The file IDs must be unique within this list. Duplicate file IDs will
@@ -254,29 +254,29 @@ class Invocation extends $pb.GeneratedMessage {
   ///  build.log: The primary log for the Invocation.
   ///  coverage_report.lcov: Aggregate coverage report for the invocation.
   @$pb.TagNumber(8)
-  $core.List<$4770.File> get files => $_getList(7);
+  $core.List<$4772.File> get files => $_getList(7);
 
   /// Summary of aggregate coverage across all Actions in this Invocation.
   /// If missing, this data will be populated by the server from the
   /// coverage_report.lcov file or the union of all ActionCoverages under this
   /// invocation (in that order).
   @$pb.TagNumber(9)
-  $core.List<$4774.LanguageCoverageSummary> get coverageSummaries => $_getList(8);
+  $core.List<$4776.LanguageCoverageSummary> get coverageSummaries => $_getList(8);
 
   /// Aggregate code coverage for all build and test Actions within this
   /// Invocation. If missing, this data will be populated by the server
   /// from the coverage_report.lcov file or the union of all ActionCoverages
   /// under this invocation (in that order).
   @$pb.TagNumber(10)
-  $4771.AggregateCoverage get aggregateCoverage => $_getN(9);
+  $4773.AggregateCoverage get aggregateCoverage => $_getN(9);
   @$pb.TagNumber(10)
-  set aggregateCoverage($4771.AggregateCoverage v) { setField(10, v); }
+  set aggregateCoverage($4773.AggregateCoverage v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasAggregateCoverage() => $_has(9);
   @$pb.TagNumber(10)
   void clearAggregateCoverage() => clearField(10);
   @$pb.TagNumber(10)
-  $4771.AggregateCoverage ensureAggregateCoverage() => $_ensure(9);
+  $4773.AggregateCoverage ensureAggregateCoverage() => $_ensure(9);
 
   /// NOT IMPLEMENTED.
   /// ResultStore will read and parse Files with reserved IDs listed above. Read
@@ -285,7 +285,7 @@ class Invocation extends $pb.GeneratedMessage {
   /// Typically produced when parsing Files, but may also be provided directly
   /// by clients.
   @$pb.TagNumber(11)
-  $core.List<$4772.FileProcessingErrors> get fileProcessingErrors => $_getList(10);
+  $core.List<$4774.FileProcessingErrors> get fileProcessingErrors => $_getList(10);
 }
 
 /// If known, represents the state of the user/build-system workspace.

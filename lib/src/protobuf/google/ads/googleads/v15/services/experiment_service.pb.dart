@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/experiment.pb.dart' as $2392;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/experiment.pb.dart' as $2393;
 
 /// Request message for
 /// [ExperimentService.MutateExperiments][google.ads.googleads.v15.services.ExperimentService.MutateExperiments].
@@ -123,10 +123,10 @@ enum ExperimentOperation_Operation {
 /// A single operation on an experiment.
 class ExperimentOperation extends $pb.GeneratedMessage {
   factory ExperimentOperation({
-    $2392.Experiment? create_1,
-    $2392.Experiment? update,
+    $2393.Experiment? create_1,
+    $2393.Experiment? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -155,10 +155,10 @@ class ExperimentOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExperimentOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$2392.Experiment>(1, _omitFieldNames ? '' : 'create', subBuilder: $2392.Experiment.create)
-    ..aOM<$2392.Experiment>(2, _omitFieldNames ? '' : 'update', subBuilder: $2392.Experiment.create)
+    ..aOM<$2393.Experiment>(1, _omitFieldNames ? '' : 'create', subBuilder: $2393.Experiment.create)
+    ..aOM<$2393.Experiment>(2, _omitFieldNames ? '' : 'update', subBuilder: $2393.Experiment.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -188,28 +188,28 @@ class ExperimentOperation extends $pb.GeneratedMessage {
 
   /// Create operation
   @$pb.TagNumber(1)
-  $2392.Experiment get create_1 => $_getN(0);
+  $2393.Experiment get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2392.Experiment v) { setField(1, v); }
+  set create_1($2393.Experiment v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2392.Experiment ensureCreate_1() => $_ensure(0);
+  $2393.Experiment ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The experiment is expected to have a valid
   /// resource name.
   @$pb.TagNumber(2)
-  $2392.Experiment get update => $_getN(1);
+  $2393.Experiment get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($2392.Experiment v) { setField(2, v); }
+  set update($2393.Experiment v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $2392.Experiment ensureUpdate() => $_ensure(1);
+  $2393.Experiment ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: The experiment is expected to have a valid
   ///  resource name, in this format:
@@ -226,21 +226,21 @@ class ExperimentOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for experiment mutate.
 class MutateExperimentsResponse extends $pb.GeneratedMessage {
   factory MutateExperimentsResponse({
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     $core.Iterable<MutateExperimentResult>? results,
   }) {
     final $result = create();
@@ -257,7 +257,7 @@ class MutateExperimentsResponse extends $pb.GeneratedMessage {
   factory MutateExperimentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateExperimentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..pc<MutateExperimentResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateExperimentResult.create)
     ..hasRequiredFields = false
   ;
@@ -288,15 +288,15 @@ class MutateExperimentsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// All results for the mutate.
   @$pb.TagNumber(2)
@@ -518,7 +518,7 @@ class ListExperimentAsyncErrorsRequest extends $pb.GeneratedMessage {
 /// [ExperimentService.ListExperimentAsyncErrors][google.ads.googleads.v15.services.ExperimentService.ListExperimentAsyncErrors].
 class ListExperimentAsyncErrorsResponse extends $pb.GeneratedMessage {
   factory ListExperimentAsyncErrorsResponse({
-    $core.Iterable<$1795.Status>? errors,
+    $core.Iterable<$1796.Status>? errors,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -535,7 +535,7 @@ class ListExperimentAsyncErrorsResponse extends $pb.GeneratedMessage {
   factory ListExperimentAsyncErrorsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListExperimentAsyncErrorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -563,7 +563,7 @@ class ListExperimentAsyncErrorsResponse extends $pb.GeneratedMessage {
 
   /// details of the errors when performing the asynchronous operation.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errors => $_getList(0);
+  $core.List<$1796.Status> get errors => $_getList(0);
 
   /// Pagination token used to retrieve the next page of results.
   /// Pass the content of this string as the `page_token` attribute of

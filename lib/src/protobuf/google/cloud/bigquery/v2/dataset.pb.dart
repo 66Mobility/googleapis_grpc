@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'dataset.pbenum.dart';
-import 'dataset_reference.pb.dart' as $4389;
-import 'encryption_config.pb.dart' as $4392;
-import 'external_catalog_dataset_options.pb.dart' as $4395;
-import 'external_dataset_reference.pb.dart' as $4393;
-import 'restriction_config.pb.dart' as $4394;
-import 'routine_reference.pb.dart' as $4391;
-import 'table_reference.pb.dart' as $4390;
-import 'table_schema.pbenum.dart' as $4396;
+import 'dataset_reference.pb.dart' as $4390;
+import 'encryption_config.pb.dart' as $4393;
+import 'external_catalog_dataset_options.pb.dart' as $4396;
+import 'external_dataset_reference.pb.dart' as $4394;
+import 'restriction_config.pb.dart' as $4395;
+import 'routine_reference.pb.dart' as $4392;
+import 'table_reference.pb.dart' as $4391;
+import 'table_schema.pbenum.dart' as $4397;
 
 export 'dataset.pbenum.dart';
 
@@ -37,7 +37,7 @@ export 'dataset.pbenum.dart';
 ///  authorizing dataset.
 class DatasetAccessEntry extends $pb.GeneratedMessage {
   factory DatasetAccessEntry({
-    $4389.DatasetReference? dataset,
+    $4390.DatasetReference? dataset,
     $core.Iterable<DatasetAccessEntry_TargetType>? targetTypes,
   }) {
     final $result = create();
@@ -54,7 +54,7 @@ class DatasetAccessEntry extends $pb.GeneratedMessage {
   factory DatasetAccessEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatasetAccessEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4389.DatasetReference>(1, _omitFieldNames ? '' : 'dataset', subBuilder: $4389.DatasetReference.create)
+    ..aOM<$4390.DatasetReference>(1, _omitFieldNames ? '' : 'dataset', subBuilder: $4390.DatasetReference.create)
     ..pc<DatasetAccessEntry_TargetType>(2, _omitFieldNames ? '' : 'targetTypes', $pb.PbFieldType.KE, valueOf: DatasetAccessEntry_TargetType.valueOf, enumValues: DatasetAccessEntry_TargetType.values, defaultEnumValue: DatasetAccessEntry_TargetType.TARGET_TYPE_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
@@ -82,15 +82,15 @@ class DatasetAccessEntry extends $pb.GeneratedMessage {
 
   /// The dataset this entry applies to
   @$pb.TagNumber(1)
-  $4389.DatasetReference get dataset => $_getN(0);
+  $4390.DatasetReference get dataset => $_getN(0);
   @$pb.TagNumber(1)
-  set dataset($4389.DatasetReference v) { setField(1, v); }
+  set dataset($4390.DatasetReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDataset() => $_has(0);
   @$pb.TagNumber(1)
   void clearDataset() => clearField(1);
   @$pb.TagNumber(1)
-  $4389.DatasetReference ensureDataset() => $_ensure(0);
+  $4390.DatasetReference ensureDataset() => $_ensure(0);
 
   /// Which resources in the dataset this entry applies to. Currently, only
   /// views are supported, but additional target types may be added in the
@@ -107,9 +107,9 @@ class Access extends $pb.GeneratedMessage {
     $core.String? groupByEmail,
     $core.String? domain,
     $core.String? specialGroup,
-    $4390.TableReference? view,
+    $4391.TableReference? view,
     $core.String? iamMember,
-    $4391.RoutineReference? routine,
+    $4392.RoutineReference? routine,
     DatasetAccessEntry? dataset,
   }) {
     final $result = create();
@@ -152,9 +152,9 @@ class Access extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'groupByEmail')
     ..aOS(4, _omitFieldNames ? '' : 'domain')
     ..aOS(5, _omitFieldNames ? '' : 'specialGroup')
-    ..aOM<$4390.TableReference>(6, _omitFieldNames ? '' : 'view', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(6, _omitFieldNames ? '' : 'view', subBuilder: $4391.TableReference.create)
     ..aOS(7, _omitFieldNames ? '' : 'iamMember')
-    ..aOM<$4391.RoutineReference>(8, _omitFieldNames ? '' : 'routine', subBuilder: $4391.RoutineReference.create)
+    ..aOM<$4392.RoutineReference>(8, _omitFieldNames ? '' : 'routine', subBuilder: $4392.RoutineReference.create)
     ..aOM<DatasetAccessEntry>(9, _omitFieldNames ? '' : 'dataset', subBuilder: DatasetAccessEntry.create)
     ..hasRequiredFields = false
   ;
@@ -259,15 +259,15 @@ class Access extends $pb.GeneratedMessage {
   /// updated by any user, access to the view needs to be granted again via an
   /// update operation.
   @$pb.TagNumber(6)
-  $4390.TableReference get view => $_getN(5);
+  $4391.TableReference get view => $_getN(5);
   @$pb.TagNumber(6)
-  set view($4390.TableReference v) { setField(6, v); }
+  set view($4391.TableReference v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasView() => $_has(5);
   @$pb.TagNumber(6)
   void clearView() => clearField(6);
   @$pb.TagNumber(6)
-  $4390.TableReference ensureView() => $_ensure(5);
+  $4391.TableReference ensureView() => $_ensure(5);
 
   /// [Pick one] Some other type of member that appears in the IAM Policy but
   /// isn't a user, group, domain, or special group.
@@ -287,15 +287,15 @@ class Access extends $pb.GeneratedMessage {
   /// updated by any user, access to the routine needs to be granted again via
   /// an update operation.
   @$pb.TagNumber(8)
-  $4391.RoutineReference get routine => $_getN(7);
+  $4392.RoutineReference get routine => $_getN(7);
   @$pb.TagNumber(8)
-  set routine($4391.RoutineReference v) { setField(8, v); }
+  set routine($4392.RoutineReference v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRoutine() => $_has(7);
   @$pb.TagNumber(8)
   void clearRoutine() => clearField(8);
   @$pb.TagNumber(8)
-  $4391.RoutineReference ensureRoutine() => $_ensure(7);
+  $4392.RoutineReference ensureRoutine() => $_ensure(7);
 
   /// [Pick one] A grant authorizing all resources of a particular type in a
   /// particular dataset access to this dataset. Only views are supported for
@@ -321,33 +321,33 @@ class Dataset extends $pb.GeneratedMessage {
     $core.String? etag,
     $core.String? id,
     $core.String? selfLink,
-    $4389.DatasetReference? datasetReference,
-    $1780.StringValue? friendlyName,
-    $1780.StringValue? description,
-    $1780.Int64Value? defaultTableExpirationMs,
+    $4390.DatasetReference? datasetReference,
+    $1781.StringValue? friendlyName,
+    $1781.StringValue? description,
+    $1781.Int64Value? defaultTableExpirationMs,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<Access>? access,
     $fixnum.Int64? creationTime,
     $fixnum.Int64? lastModifiedTime,
     $core.String? location,
-    $1780.Int64Value? defaultPartitionExpirationMs,
-    $4392.EncryptionConfiguration? defaultEncryptionConfiguration,
-    $1780.BoolValue? satisfiesPzs,
+    $1781.Int64Value? defaultPartitionExpirationMs,
+    $4393.EncryptionConfiguration? defaultEncryptionConfiguration,
+    $1781.BoolValue? satisfiesPzs,
     $core.String? type,
     LinkedDatasetSource? linkedDatasetSource,
-    $4393.ExternalDatasetReference? externalDatasetReference,
-    $1780.BoolValue? isCaseInsensitive,
-    $1780.StringValue? defaultCollation,
-    $1780.Int64Value? maxTimeTravelHours,
+    $4394.ExternalDatasetReference? externalDatasetReference,
+    $1781.BoolValue? isCaseInsensitive,
+    $1781.StringValue? defaultCollation,
+    $1781.Int64Value? maxTimeTravelHours,
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<GcpTag>? tags,
     Dataset_StorageBillingModel? storageBillingModel,
-    $4396.TableFieldSchema_RoundingMode? defaultRoundingMode,
-    $4394.RestrictionConfig? restrictions,
+    $4397.TableFieldSchema_RoundingMode? defaultRoundingMode,
+    $4395.RestrictionConfig? restrictions,
     LinkedDatasetMetadata? linkedDatasetMetadata,
     $core.Map<$core.String, $core.String>? resourceTags,
-    $1780.BoolValue? satisfiesPzi,
-    $4395.ExternalCatalogDatasetOptions? externalCatalogDatasetOptions,
+    $1781.BoolValue? satisfiesPzi,
+    $4396.ExternalCatalogDatasetOptions? externalCatalogDatasetOptions,
   }) {
     final $result = create();
     if (kind != null) {
@@ -452,32 +452,32 @@ class Dataset extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'etag')
     ..aOS(3, _omitFieldNames ? '' : 'id')
     ..aOS(4, _omitFieldNames ? '' : 'selfLink')
-    ..aOM<$4389.DatasetReference>(5, _omitFieldNames ? '' : 'datasetReference', subBuilder: $4389.DatasetReference.create)
-    ..aOM<$1780.StringValue>(6, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.StringValue>(7, _omitFieldNames ? '' : 'description', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.Int64Value>(8, _omitFieldNames ? '' : 'defaultTableExpirationMs', subBuilder: $1780.Int64Value.create)
+    ..aOM<$4390.DatasetReference>(5, _omitFieldNames ? '' : 'datasetReference', subBuilder: $4390.DatasetReference.create)
+    ..aOM<$1781.StringValue>(6, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.StringValue>(7, _omitFieldNames ? '' : 'description', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.Int64Value>(8, _omitFieldNames ? '' : 'defaultTableExpirationMs', subBuilder: $1781.Int64Value.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Dataset.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
     ..pc<Access>(10, _omitFieldNames ? '' : 'access', $pb.PbFieldType.PM, subBuilder: Access.create)
     ..aInt64(11, _omitFieldNames ? '' : 'creationTime')
     ..aInt64(12, _omitFieldNames ? '' : 'lastModifiedTime')
     ..aOS(13, _omitFieldNames ? '' : 'location')
-    ..aOM<$1780.Int64Value>(14, _omitFieldNames ? '' : 'defaultPartitionExpirationMs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$4392.EncryptionConfiguration>(16, _omitFieldNames ? '' : 'defaultEncryptionConfiguration', subBuilder: $4392.EncryptionConfiguration.create)
-    ..aOM<$1780.BoolValue>(17, _omitFieldNames ? '' : 'satisfiesPzs', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.Int64Value>(14, _omitFieldNames ? '' : 'defaultPartitionExpirationMs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$4393.EncryptionConfiguration>(16, _omitFieldNames ? '' : 'defaultEncryptionConfiguration', subBuilder: $4393.EncryptionConfiguration.create)
+    ..aOM<$1781.BoolValue>(17, _omitFieldNames ? '' : 'satisfiesPzs', subBuilder: $1781.BoolValue.create)
     ..aOS(18, _omitFieldNames ? '' : 'type')
     ..aOM<LinkedDatasetSource>(19, _omitFieldNames ? '' : 'linkedDatasetSource', subBuilder: LinkedDatasetSource.create)
-    ..aOM<$4393.ExternalDatasetReference>(20, _omitFieldNames ? '' : 'externalDatasetReference', subBuilder: $4393.ExternalDatasetReference.create)
-    ..aOM<$1780.BoolValue>(21, _omitFieldNames ? '' : 'isCaseInsensitive', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.StringValue>(22, _omitFieldNames ? '' : 'defaultCollation', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.Int64Value>(23, _omitFieldNames ? '' : 'maxTimeTravelHours', subBuilder: $1780.Int64Value.create)
+    ..aOM<$4394.ExternalDatasetReference>(20, _omitFieldNames ? '' : 'externalDatasetReference', subBuilder: $4394.ExternalDatasetReference.create)
+    ..aOM<$1781.BoolValue>(21, _omitFieldNames ? '' : 'isCaseInsensitive', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.StringValue>(22, _omitFieldNames ? '' : 'defaultCollation', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.Int64Value>(23, _omitFieldNames ? '' : 'maxTimeTravelHours', subBuilder: $1781.Int64Value.create)
     ..pc<GcpTag>(24, _omitFieldNames ? '' : 'tags', $pb.PbFieldType.PM, subBuilder: GcpTag.create)
     ..e<Dataset_StorageBillingModel>(25, _omitFieldNames ? '' : 'storageBillingModel', $pb.PbFieldType.OE, defaultOrMaker: Dataset_StorageBillingModel.STORAGE_BILLING_MODEL_UNSPECIFIED, valueOf: Dataset_StorageBillingModel.valueOf, enumValues: Dataset_StorageBillingModel.values)
-    ..e<$4396.TableFieldSchema_RoundingMode>(26, _omitFieldNames ? '' : 'defaultRoundingMode', $pb.PbFieldType.OE, defaultOrMaker: $4396.TableFieldSchema_RoundingMode.ROUNDING_MODE_UNSPECIFIED, valueOf: $4396.TableFieldSchema_RoundingMode.valueOf, enumValues: $4396.TableFieldSchema_RoundingMode.values)
-    ..aOM<$4394.RestrictionConfig>(27, _omitFieldNames ? '' : 'restrictions', subBuilder: $4394.RestrictionConfig.create)
+    ..e<$4397.TableFieldSchema_RoundingMode>(26, _omitFieldNames ? '' : 'defaultRoundingMode', $pb.PbFieldType.OE, defaultOrMaker: $4397.TableFieldSchema_RoundingMode.ROUNDING_MODE_UNSPECIFIED, valueOf: $4397.TableFieldSchema_RoundingMode.valueOf, enumValues: $4397.TableFieldSchema_RoundingMode.values)
+    ..aOM<$4395.RestrictionConfig>(27, _omitFieldNames ? '' : 'restrictions', subBuilder: $4395.RestrictionConfig.create)
     ..aOM<LinkedDatasetMetadata>(29, _omitFieldNames ? '' : 'linkedDatasetMetadata', subBuilder: LinkedDatasetMetadata.create)
     ..m<$core.String, $core.String>(30, _omitFieldNames ? '' : 'resourceTags', entryClassName: 'Dataset.ResourceTagsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
-    ..aOM<$1780.BoolValue>(31, _omitFieldNames ? '' : 'satisfiesPzi', subBuilder: $1780.BoolValue.create)
-    ..aOM<$4395.ExternalCatalogDatasetOptions>(32, _omitFieldNames ? '' : 'externalCatalogDatasetOptions', subBuilder: $4395.ExternalCatalogDatasetOptions.create)
+    ..aOM<$1781.BoolValue>(31, _omitFieldNames ? '' : 'satisfiesPzi', subBuilder: $1781.BoolValue.create)
+    ..aOM<$4396.ExternalCatalogDatasetOptions>(32, _omitFieldNames ? '' : 'externalCatalogDatasetOptions', subBuilder: $4396.ExternalCatalogDatasetOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -548,39 +548,39 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// Required. A reference that identifies the dataset.
   @$pb.TagNumber(5)
-  $4389.DatasetReference get datasetReference => $_getN(4);
+  $4390.DatasetReference get datasetReference => $_getN(4);
   @$pb.TagNumber(5)
-  set datasetReference($4389.DatasetReference v) { setField(5, v); }
+  set datasetReference($4390.DatasetReference v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDatasetReference() => $_has(4);
   @$pb.TagNumber(5)
   void clearDatasetReference() => clearField(5);
   @$pb.TagNumber(5)
-  $4389.DatasetReference ensureDatasetReference() => $_ensure(4);
+  $4390.DatasetReference ensureDatasetReference() => $_ensure(4);
 
   /// Optional. A descriptive name for the dataset.
   @$pb.TagNumber(6)
-  $1780.StringValue get friendlyName => $_getN(5);
+  $1781.StringValue get friendlyName => $_getN(5);
   @$pb.TagNumber(6)
-  set friendlyName($1780.StringValue v) { setField(6, v); }
+  set friendlyName($1781.StringValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFriendlyName() => $_has(5);
   @$pb.TagNumber(6)
   void clearFriendlyName() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.StringValue ensureFriendlyName() => $_ensure(5);
+  $1781.StringValue ensureFriendlyName() => $_ensure(5);
 
   /// Optional. A user-friendly description of the dataset.
   @$pb.TagNumber(7)
-  $1780.StringValue get description => $_getN(6);
+  $1781.StringValue get description => $_getN(6);
   @$pb.TagNumber(7)
-  set description($1780.StringValue v) { setField(7, v); }
+  set description($1781.StringValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(7)
   void clearDescription() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.StringValue ensureDescription() => $_ensure(6);
+  $1781.StringValue ensureDescription() => $_ensure(6);
 
   /// Optional. The default lifetime of all tables in the dataset, in
   /// milliseconds. The minimum lifetime value is 3600000 milliseconds (one
@@ -595,15 +595,15 @@ class Dataset extends $pb.GeneratedMessage {
   /// table, that value takes precedence over the default expiration time
   /// indicated by this property.
   @$pb.TagNumber(8)
-  $1780.Int64Value get defaultTableExpirationMs => $_getN(7);
+  $1781.Int64Value get defaultTableExpirationMs => $_getN(7);
   @$pb.TagNumber(8)
-  set defaultTableExpirationMs($1780.Int64Value v) { setField(8, v); }
+  set defaultTableExpirationMs($1781.Int64Value v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDefaultTableExpirationMs() => $_has(7);
   @$pb.TagNumber(8)
   void clearDefaultTableExpirationMs() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.Int64Value ensureDefaultTableExpirationMs() => $_ensure(7);
+  $1781.Int64Value ensureDefaultTableExpirationMs() => $_ensure(7);
 
   /// The labels associated with this dataset. You can use these
   /// to organize and group your datasets.
@@ -674,42 +674,42 @@ class Dataset extends $pb.GeneratedMessage {
   ///  is set, the `defaultTableExpirationMs` value is ignored and the table
   ///  will not be inherit a table expiration deadline.
   @$pb.TagNumber(14)
-  $1780.Int64Value get defaultPartitionExpirationMs => $_getN(13);
+  $1781.Int64Value get defaultPartitionExpirationMs => $_getN(13);
   @$pb.TagNumber(14)
-  set defaultPartitionExpirationMs($1780.Int64Value v) { setField(14, v); }
+  set defaultPartitionExpirationMs($1781.Int64Value v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasDefaultPartitionExpirationMs() => $_has(13);
   @$pb.TagNumber(14)
   void clearDefaultPartitionExpirationMs() => clearField(14);
   @$pb.TagNumber(14)
-  $1780.Int64Value ensureDefaultPartitionExpirationMs() => $_ensure(13);
+  $1781.Int64Value ensureDefaultPartitionExpirationMs() => $_ensure(13);
 
   /// The default encryption key for all tables in the dataset.
   /// After this property is set, the encryption key of all newly-created tables
   /// in the dataset is set to this value unless the table creation request or
   /// query explicitly overrides the key.
   @$pb.TagNumber(16)
-  $4392.EncryptionConfiguration get defaultEncryptionConfiguration => $_getN(14);
+  $4393.EncryptionConfiguration get defaultEncryptionConfiguration => $_getN(14);
   @$pb.TagNumber(16)
-  set defaultEncryptionConfiguration($4392.EncryptionConfiguration v) { setField(16, v); }
+  set defaultEncryptionConfiguration($4393.EncryptionConfiguration v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasDefaultEncryptionConfiguration() => $_has(14);
   @$pb.TagNumber(16)
   void clearDefaultEncryptionConfiguration() => clearField(16);
   @$pb.TagNumber(16)
-  $4392.EncryptionConfiguration ensureDefaultEncryptionConfiguration() => $_ensure(14);
+  $4393.EncryptionConfiguration ensureDefaultEncryptionConfiguration() => $_ensure(14);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(17)
-  $1780.BoolValue get satisfiesPzs => $_getN(15);
+  $1781.BoolValue get satisfiesPzs => $_getN(15);
   @$pb.TagNumber(17)
-  set satisfiesPzs($1780.BoolValue v) { setField(17, v); }
+  set satisfiesPzs($1781.BoolValue v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasSatisfiesPzs() => $_has(15);
   @$pb.TagNumber(17)
   void clearSatisfiesPzs() => clearField(17);
   @$pb.TagNumber(17)
-  $1780.BoolValue ensureSatisfiesPzs() => $_ensure(15);
+  $1781.BoolValue ensureSatisfiesPzs() => $_ensure(15);
 
   ///  Output only. Same as `type` in `ListFormatDataset`.
   ///  The type of the dataset, one of:
@@ -745,30 +745,30 @@ class Dataset extends $pb.GeneratedMessage {
   /// Optional. Reference to a read-only external dataset defined in data
   /// catalogs outside of BigQuery. Filled out when the dataset type is EXTERNAL.
   @$pb.TagNumber(20)
-  $4393.ExternalDatasetReference get externalDatasetReference => $_getN(18);
+  $4394.ExternalDatasetReference get externalDatasetReference => $_getN(18);
   @$pb.TagNumber(20)
-  set externalDatasetReference($4393.ExternalDatasetReference v) { setField(20, v); }
+  set externalDatasetReference($4394.ExternalDatasetReference v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasExternalDatasetReference() => $_has(18);
   @$pb.TagNumber(20)
   void clearExternalDatasetReference() => clearField(20);
   @$pb.TagNumber(20)
-  $4393.ExternalDatasetReference ensureExternalDatasetReference() => $_ensure(18);
+  $4394.ExternalDatasetReference ensureExternalDatasetReference() => $_ensure(18);
 
   /// Optional. TRUE if the dataset and its table names are case-insensitive,
   /// otherwise FALSE. By default, this is FALSE, which means the dataset and its
   /// table names are case-sensitive. This field does not affect routine
   /// references.
   @$pb.TagNumber(21)
-  $1780.BoolValue get isCaseInsensitive => $_getN(19);
+  $1781.BoolValue get isCaseInsensitive => $_getN(19);
   @$pb.TagNumber(21)
-  set isCaseInsensitive($1780.BoolValue v) { setField(21, v); }
+  set isCaseInsensitive($1781.BoolValue v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasIsCaseInsensitive() => $_has(19);
   @$pb.TagNumber(21)
   void clearIsCaseInsensitive() => clearField(21);
   @$pb.TagNumber(21)
-  $1780.BoolValue ensureIsCaseInsensitive() => $_ensure(19);
+  $1781.BoolValue ensureIsCaseInsensitive() => $_ensure(19);
 
   ///  Optional. Defines the default collation specification of future tables
   ///  created in the dataset. If a table is created in this dataset without
@@ -781,29 +781,29 @@ class Dataset extends $pb.GeneratedMessage {
   ///  * 'und:ci': undetermined locale, case insensitive.
   ///  * '': empty string. Default to case-sensitive behavior.
   @$pb.TagNumber(22)
-  $1780.StringValue get defaultCollation => $_getN(20);
+  $1781.StringValue get defaultCollation => $_getN(20);
   @$pb.TagNumber(22)
-  set defaultCollation($1780.StringValue v) { setField(22, v); }
+  set defaultCollation($1781.StringValue v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasDefaultCollation() => $_has(20);
   @$pb.TagNumber(22)
   void clearDefaultCollation() => clearField(22);
   @$pb.TagNumber(22)
-  $1780.StringValue ensureDefaultCollation() => $_ensure(20);
+  $1781.StringValue ensureDefaultCollation() => $_ensure(20);
 
   /// Optional. Defines the time travel window in hours. The value can be from 48
   /// to 168 hours (2 to 7 days). The default value is 168 hours if this is not
   /// set.
   @$pb.TagNumber(23)
-  $1780.Int64Value get maxTimeTravelHours => $_getN(21);
+  $1781.Int64Value get maxTimeTravelHours => $_getN(21);
   @$pb.TagNumber(23)
-  set maxTimeTravelHours($1780.Int64Value v) { setField(23, v); }
+  set maxTimeTravelHours($1781.Int64Value v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasMaxTimeTravelHours() => $_has(21);
   @$pb.TagNumber(23)
   void clearMaxTimeTravelHours() => clearField(23);
   @$pb.TagNumber(23)
-  $1780.Int64Value ensureMaxTimeTravelHours() => $_ensure(21);
+  $1781.Int64Value ensureMaxTimeTravelHours() => $_ensure(21);
 
   /// Output only. Tags for the dataset. To provide tags as inputs, use the
   /// `resourceTags` field.
@@ -830,9 +830,9 @@ class Dataset extends $pb.GeneratedMessage {
   /// they will immediately inherit the table's default rounding mode,
   /// unless otherwise specified.
   @$pb.TagNumber(26)
-  $4396.TableFieldSchema_RoundingMode get defaultRoundingMode => $_getN(24);
+  $4397.TableFieldSchema_RoundingMode get defaultRoundingMode => $_getN(24);
   @$pb.TagNumber(26)
-  set defaultRoundingMode($4396.TableFieldSchema_RoundingMode v) { setField(26, v); }
+  set defaultRoundingMode($4397.TableFieldSchema_RoundingMode v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasDefaultRoundingMode() => $_has(24);
   @$pb.TagNumber(26)
@@ -844,15 +844,15 @@ class Dataset extends $pb.GeneratedMessage {
   /// egress](/bigquery/docs/analytics-hub-introduction#data_egress) for more
   /// details.
   @$pb.TagNumber(27)
-  $4394.RestrictionConfig get restrictions => $_getN(25);
+  $4395.RestrictionConfig get restrictions => $_getN(25);
   @$pb.TagNumber(27)
-  set restrictions($4394.RestrictionConfig v) { setField(27, v); }
+  set restrictions($4395.RestrictionConfig v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasRestrictions() => $_has(25);
   @$pb.TagNumber(27)
   void clearRestrictions() => clearField(27);
   @$pb.TagNumber(27)
-  $4394.RestrictionConfig ensureRestrictions() => $_ensure(25);
+  $4395.RestrictionConfig ensureRestrictions() => $_ensure(25);
 
   /// Output only. Metadata about the LinkedDataset. Filled out when the dataset
   /// type is LINKED.
@@ -878,29 +878,29 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(31)
-  $1780.BoolValue get satisfiesPzi => $_getN(28);
+  $1781.BoolValue get satisfiesPzi => $_getN(28);
   @$pb.TagNumber(31)
-  set satisfiesPzi($1780.BoolValue v) { setField(31, v); }
+  set satisfiesPzi($1781.BoolValue v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasSatisfiesPzi() => $_has(28);
   @$pb.TagNumber(31)
   void clearSatisfiesPzi() => clearField(31);
   @$pb.TagNumber(31)
-  $1780.BoolValue ensureSatisfiesPzi() => $_ensure(28);
+  $1781.BoolValue ensureSatisfiesPzi() => $_ensure(28);
 
   /// Optional. Options defining open source compatible datasets living in the
   /// BigQuery catalog. Contains metadata of open source database, schema or
   /// namespace represented by the current dataset.
   @$pb.TagNumber(32)
-  $4395.ExternalCatalogDatasetOptions get externalCatalogDatasetOptions => $_getN(29);
+  $4396.ExternalCatalogDatasetOptions get externalCatalogDatasetOptions => $_getN(29);
   @$pb.TagNumber(32)
-  set externalCatalogDatasetOptions($4395.ExternalCatalogDatasetOptions v) { setField(32, v); }
+  set externalCatalogDatasetOptions($4396.ExternalCatalogDatasetOptions v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasExternalCatalogDatasetOptions() => $_has(29);
   @$pb.TagNumber(32)
   void clearExternalCatalogDatasetOptions() => clearField(32);
   @$pb.TagNumber(32)
-  $4395.ExternalCatalogDatasetOptions ensureExternalCatalogDatasetOptions() => $_ensure(29);
+  $4396.ExternalCatalogDatasetOptions ensureExternalCatalogDatasetOptions() => $_ensure(29);
 }
 
 /// A global tag managed by Resource Manager.
@@ -975,7 +975,7 @@ class GcpTag extends $pb.GeneratedMessage {
 /// A dataset source type which refers to another BigQuery dataset.
 class LinkedDatasetSource extends $pb.GeneratedMessage {
   factory LinkedDatasetSource({
-    $4389.DatasetReference? sourceDataset,
+    $4390.DatasetReference? sourceDataset,
   }) {
     final $result = create();
     if (sourceDataset != null) {
@@ -988,7 +988,7 @@ class LinkedDatasetSource extends $pb.GeneratedMessage {
   factory LinkedDatasetSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LinkedDatasetSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4389.DatasetReference>(1, _omitFieldNames ? '' : 'sourceDataset', subBuilder: $4389.DatasetReference.create)
+    ..aOM<$4390.DatasetReference>(1, _omitFieldNames ? '' : 'sourceDataset', subBuilder: $4390.DatasetReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -1015,15 +1015,15 @@ class LinkedDatasetSource extends $pb.GeneratedMessage {
 
   /// The source dataset reference contains project numbers and not project ids.
   @$pb.TagNumber(1)
-  $4389.DatasetReference get sourceDataset => $_getN(0);
+  $4390.DatasetReference get sourceDataset => $_getN(0);
   @$pb.TagNumber(1)
-  set sourceDataset($4389.DatasetReference v) { setField(1, v); }
+  set sourceDataset($4390.DatasetReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSourceDataset() => $_has(0);
   @$pb.TagNumber(1)
   void clearSourceDataset() => clearField(1);
   @$pb.TagNumber(1)
-  $4389.DatasetReference ensureSourceDataset() => $_ensure(0);
+  $4390.DatasetReference ensureSourceDataset() => $_ensure(0);
 }
 
 /// Metadata about the Linked Dataset.
@@ -1403,7 +1403,7 @@ class DeleteDatasetRequest extends $pb.GeneratedMessage {
 class ListDatasetsRequest extends $pb.GeneratedMessage {
   factory ListDatasetsRequest({
     $core.String? projectId,
-    $1780.UInt32Value? maxResults,
+    $1781.UInt32Value? maxResults,
     $core.String? pageToken,
     $core.bool? all,
     $core.String? filter,
@@ -1432,7 +1432,7 @@ class ListDatasetsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatasetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$1780.UInt32Value>(2, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(2, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.UInt32Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOB(4, _omitFieldNames ? '' : 'all')
     ..aOS(5, _omitFieldNames ? '' : 'filter')
@@ -1473,15 +1473,15 @@ class ListDatasetsRequest extends $pb.GeneratedMessage {
   /// The maximum number of results to return in a single response page.
   /// Leverage the page tokens to iterate through the entire collection.
   @$pb.TagNumber(2)
-  $1780.UInt32Value get maxResults => $_getN(1);
+  $1781.UInt32Value get maxResults => $_getN(1);
   @$pb.TagNumber(2)
-  set maxResults($1780.UInt32Value v) { setField(2, v); }
+  set maxResults($1781.UInt32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxResults() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxResults() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.UInt32Value ensureMaxResults() => $_ensure(1);
+  $1781.UInt32Value ensureMaxResults() => $_ensure(1);
 
   /// Page token, returned by a previous call, to request the next page of
   /// results
@@ -1527,9 +1527,9 @@ class ListFormatDataset extends $pb.GeneratedMessage {
   factory ListFormatDataset({
     $core.String? kind,
     $core.String? id,
-    $4389.DatasetReference? datasetReference,
+    $4390.DatasetReference? datasetReference,
     $core.Map<$core.String, $core.String>? labels,
-    $1780.StringValue? friendlyName,
+    $1781.StringValue? friendlyName,
     $core.String? location,
   }) {
     final $result = create();
@@ -1560,9 +1560,9 @@ class ListFormatDataset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListFormatDataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<$4389.DatasetReference>(3, _omitFieldNames ? '' : 'datasetReference', subBuilder: $4389.DatasetReference.create)
+    ..aOM<$4390.DatasetReference>(3, _omitFieldNames ? '' : 'datasetReference', subBuilder: $4390.DatasetReference.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'ListFormatDataset.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
-    ..aOM<$1780.StringValue>(5, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(5, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1781.StringValue.create)
     ..aOS(6, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false
   ;
@@ -1613,15 +1613,15 @@ class ListFormatDataset extends $pb.GeneratedMessage {
   /// Use this property to access specific parts of the dataset's ID, such as
   /// project ID or dataset ID.
   @$pb.TagNumber(3)
-  $4389.DatasetReference get datasetReference => $_getN(2);
+  $4390.DatasetReference get datasetReference => $_getN(2);
   @$pb.TagNumber(3)
-  set datasetReference($4389.DatasetReference v) { setField(3, v); }
+  set datasetReference($4390.DatasetReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDatasetReference() => $_has(2);
   @$pb.TagNumber(3)
   void clearDatasetReference() => clearField(3);
   @$pb.TagNumber(3)
-  $4389.DatasetReference ensureDatasetReference() => $_ensure(2);
+  $4390.DatasetReference ensureDatasetReference() => $_ensure(2);
 
   /// The labels associated with this dataset.
   /// You can use these to organize and group your datasets.
@@ -1631,15 +1631,15 @@ class ListFormatDataset extends $pb.GeneratedMessage {
   /// An alternate name for the dataset.  The friendly name is purely
   /// decorative in nature.
   @$pb.TagNumber(5)
-  $1780.StringValue get friendlyName => $_getN(4);
+  $1781.StringValue get friendlyName => $_getN(4);
   @$pb.TagNumber(5)
-  set friendlyName($1780.StringValue v) { setField(5, v); }
+  set friendlyName($1781.StringValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFriendlyName() => $_has(4);
   @$pb.TagNumber(5)
   void clearFriendlyName() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.StringValue ensureFriendlyName() => $_ensure(4);
+  $1781.StringValue ensureFriendlyName() => $_ensure(4);
 
   /// The geographic location where the dataset resides.
   @$pb.TagNumber(6)
@@ -1766,7 +1766,7 @@ class UndeleteDatasetRequest extends $pb.GeneratedMessage {
   factory UndeleteDatasetRequest({
     $core.String? projectId,
     $core.String? datasetId,
-    $1775.Timestamp? deletionTime,
+    $1776.Timestamp? deletionTime,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -1787,7 +1787,7 @@ class UndeleteDatasetRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeleteDatasetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'deletionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'deletionTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1836,15 +1836,15 @@ class UndeleteDatasetRequest extends $pb.GeneratedMessage {
   /// the most recently deleted version is undeleted. Undeleting a dataset
   /// using deletion time is not supported.
   @$pb.TagNumber(3)
-  $1775.Timestamp get deletionTime => $_getN(2);
+  $1776.Timestamp get deletionTime => $_getN(2);
   @$pb.TagNumber(3)
-  set deletionTime($1775.Timestamp v) { setField(3, v); }
+  set deletionTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDeletionTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDeletionTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureDeletionTime() => $_ensure(2);
+  $1776.Timestamp ensureDeletionTime() => $_ensure(2);
 }
 
 

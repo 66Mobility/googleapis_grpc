@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'metastore.pbenum.dart';
 
 export 'metastore.pbenum.dart';
@@ -23,10 +23,10 @@ export 'metastore.pbenum.dart';
 class Catalog extends $pb.GeneratedMessage {
   factory Catalog({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -52,10 +52,10 @@ class Catalog extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Catalog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.biglake.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -94,53 +94,53 @@ class Catalog extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the catalog.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last modification time of the catalog.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The deletion time of the catalog. Only set after the catalog
   /// is deleted.
   @$pb.TagNumber(4)
-  $1775.Timestamp get deleteTime => $_getN(3);
+  $1776.Timestamp get deleteTime => $_getN(3);
   @$pb.TagNumber(4)
-  set deleteTime($1775.Timestamp v) { setField(4, v); }
+  set deleteTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeleteTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeleteTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(3);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(3);
 
   /// Output only. The time when this catalog is considered expired. Only set
   /// after the catalog is deleted.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(4);
+  $1776.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(4);
+  $1776.Timestamp ensureExpireTime() => $_ensure(4);
 }
 
 enum Database_Options {
@@ -152,10 +152,10 @@ enum Database_Options {
 class Database extends $pb.GeneratedMessage {
   factory Database({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     Database_Type? type,
     HiveDatabaseOptions? hiveOptions,
   }) {
@@ -194,10 +194,10 @@ class Database extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.biglake.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..e<Database_Type>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Database_Type.TYPE_UNSPECIFIED, valueOf: Database_Type.valueOf, enumValues: Database_Type.values)
     ..aOM<HiveDatabaseOptions>(7, _omitFieldNames ? '' : 'hiveOptions', subBuilder: HiveDatabaseOptions.create)
     ..hasRequiredFields = false
@@ -241,53 +241,53 @@ class Database extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the database.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last modification time of the database.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The deletion time of the database. Only set after the database
   /// is deleted.
   @$pb.TagNumber(4)
-  $1775.Timestamp get deleteTime => $_getN(3);
+  $1776.Timestamp get deleteTime => $_getN(3);
   @$pb.TagNumber(4)
-  set deleteTime($1775.Timestamp v) { setField(4, v); }
+  set deleteTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeleteTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeleteTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(3);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(3);
 
   /// Output only. The time when this database is considered expired. Only set
   /// after the database is deleted.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(4);
+  $1776.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(4);
+  $1776.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// The database type.
   @$pb.TagNumber(6)
@@ -321,10 +321,10 @@ enum Table_Options {
 class Table extends $pb.GeneratedMessage {
   factory Table({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     Table_Type? type,
     HiveTableOptions? hiveOptions,
     $core.String? etag,
@@ -367,10 +367,10 @@ class Table extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Table', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.biglake.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..e<Table_Type>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Table_Type.TYPE_UNSPECIFIED, valueOf: Table_Type.valueOf, enumValues: Table_Type.values)
     ..aOM<HiveTableOptions>(7, _omitFieldNames ? '' : 'hiveOptions', subBuilder: HiveTableOptions.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
@@ -415,53 +415,53 @@ class Table extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the table.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The last modification time of the table.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The deletion time of the table. Only set after the table is
   /// deleted.
   @$pb.TagNumber(4)
-  $1775.Timestamp get deleteTime => $_getN(3);
+  $1776.Timestamp get deleteTime => $_getN(3);
   @$pb.TagNumber(4)
-  set deleteTime($1775.Timestamp v) { setField(4, v); }
+  set deleteTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeleteTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeleteTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(3);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(3);
 
   /// Output only. The time when this table is considered expired. Only set after
   /// the table is deleted.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(4);
+  $1776.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(4);
+  $1776.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// The table type.
   @$pb.TagNumber(6)
@@ -508,7 +508,7 @@ enum Lock_Resources {
 class Lock extends $pb.GeneratedMessage {
   factory Lock({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Lock_Type? type,
     Lock_State? state,
     $core.String? tableId,
@@ -542,7 +542,7 @@ class Lock extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Lock', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.biglake.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Lock_Type>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Lock_Type.TYPE_UNSPECIFIED, valueOf: Lock_Type.valueOf, enumValues: Lock_Type.values)
     ..e<Lock_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Lock_State.STATE_UNSPECIFIED, valueOf: Lock_State.valueOf, enumValues: Lock_State.values)
     ..aOS(5, _omitFieldNames ? '' : 'tableId')
@@ -587,15 +587,15 @@ class Lock extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the lock.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The lock type.
   @$pb.TagNumber(3)
@@ -1122,7 +1122,7 @@ class DeleteDatabaseRequest extends $pb.GeneratedMessage {
 class UpdateDatabaseRequest extends $pb.GeneratedMessage {
   factory UpdateDatabaseRequest({
     Database? database,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (database != null) {
@@ -1139,7 +1139,7 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.biglake.v1alpha1'), createEmptyInstance: create)
     ..aOM<Database>(1, _omitFieldNames ? '' : 'database', subBuilder: Database.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1186,15 +1186,15 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
   ///  https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   ///  If not set, defaults to all of the fields that are allowed to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the GetDatabase method.
@@ -1550,7 +1550,7 @@ class DeleteTableRequest extends $pb.GeneratedMessage {
 class UpdateTableRequest extends $pb.GeneratedMessage {
   factory UpdateTableRequest({
     Table? table,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (table != null) {
@@ -1567,7 +1567,7 @@ class UpdateTableRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTableRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.biglake.v1alpha1'), createEmptyInstance: create)
     ..aOM<Table>(1, _omitFieldNames ? '' : 'table', subBuilder: Table.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1614,15 +1614,15 @@ class UpdateTableRequest extends $pb.GeneratedMessage {
   ///  https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   ///  If not set, defaults to all of the fields that are allowed to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the RenameTable method in MetastoreService

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'cloud_sql.pbenum.dart';
 import 'cloud_sql_resources.pb.dart' as $1411;
 
@@ -1933,7 +1933,7 @@ class SqlInstancesSwitchoverRequest extends $pb.GeneratedMessage {
   factory SqlInstancesSwitchoverRequest({
     $core.String? instance,
     $core.String? project,
-    $1737.Duration? dbTimeout,
+    $1738.Duration? dbTimeout,
   }) {
     final $result = create();
     if (instance != null) {
@@ -1954,7 +1954,7 @@ class SqlInstancesSwitchoverRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SqlInstancesSwitchoverRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1beta4'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instance')
     ..aOS(2, _omitFieldNames ? '' : 'project')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'dbTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'dbTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2003,15 +2003,15 @@ class SqlInstancesSwitchoverRequest extends $pb.GeneratedMessage {
   /// sum of all database operations. Default value is 10 minutes and can be
   /// modified to a maximum value of 24 hours.
   @$pb.TagNumber(3)
-  $1737.Duration get dbTimeout => $_getN(2);
+  $1738.Duration get dbTimeout => $_getN(2);
   @$pb.TagNumber(3)
-  set dbTimeout($1737.Duration v) { setField(3, v); }
+  set dbTimeout($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDbTimeout() => $_has(2);
   @$pb.TagNumber(3)
   void clearDbTimeout() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureDbTimeout() => $_ensure(2);
+  $1738.Duration ensureDbTimeout() => $_ensure(2);
 }
 
 class SqlInstancesResetSslConfigRequest extends $pb.GeneratedMessage {
@@ -4137,7 +4137,7 @@ class SqlInstancesGetLatestRecoveryTimeRequest extends $pb.GeneratedMessage {
 class SqlInstancesGetLatestRecoveryTimeResponse extends $pb.GeneratedMessage {
   factory SqlInstancesGetLatestRecoveryTimeResponse({
     $core.String? kind,
-    $1775.Timestamp? latestRecoveryTime,
+    $1776.Timestamp? latestRecoveryTime,
   }) {
     final $result = create();
     if (kind != null) {
@@ -4154,7 +4154,7 @@ class SqlInstancesGetLatestRecoveryTimeResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SqlInstancesGetLatestRecoveryTimeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1beta4'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'latestRecoveryTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'latestRecoveryTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4191,15 +4191,15 @@ class SqlInstancesGetLatestRecoveryTimeResponse extends $pb.GeneratedMessage {
 
   /// Timestamp, identifies the latest recovery time of the source instance.
   @$pb.TagNumber(2)
-  $1775.Timestamp get latestRecoveryTime => $_getN(1);
+  $1776.Timestamp get latestRecoveryTime => $_getN(1);
   @$pb.TagNumber(2)
-  set latestRecoveryTime($1775.Timestamp v) { setField(2, v); }
+  set latestRecoveryTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLatestRecoveryTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLatestRecoveryTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLatestRecoveryTime() => $_ensure(1);
+  $1776.Timestamp ensureLatestRecoveryTime() => $_ensure(1);
 }
 
 /// Request to release a lease for SSRS.

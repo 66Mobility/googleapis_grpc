@@ -13,33 +13,33 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'clustering.pb.dart' as $4406;
-import 'dataset_reference.pb.dart' as $4389;
-import 'decimal_target_types.pbenum.dart' as $4399;
-import 'encryption_config.pb.dart' as $4392;
-import 'external_data_config.pb.dart' as $4409;
-import 'file_set_specification_type.pbenum.dart' as $4401;
-import 'hive_partitioning.pb.dart' as $4397;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'clustering.pb.dart' as $4407;
+import 'dataset_reference.pb.dart' as $4390;
+import 'decimal_target_types.pbenum.dart' as $4400;
+import 'encryption_config.pb.dart' as $4393;
+import 'external_data_config.pb.dart' as $4410;
+import 'file_set_specification_type.pbenum.dart' as $4402;
+import 'hive_partitioning.pb.dart' as $4398;
 import 'job_config.pbenum.dart';
-import 'json_extension.pbenum.dart' as $4400;
-import 'model_reference.pb.dart' as $4410;
-import 'query_parameter.pb.dart' as $4404;
-import 'range_partitioning.pb.dart' as $4407;
-import 'system_variable.pb.dart' as $4408;
-import 'table_reference.pb.dart' as $4390;
-import 'table_schema.pb.dart' as $4396;
-import 'time_partitioning.pb.dart' as $4405;
-import 'udf_resource.pb.dart' as $4403;
+import 'json_extension.pbenum.dart' as $4401;
+import 'model_reference.pb.dart' as $4411;
+import 'query_parameter.pb.dart' as $4405;
+import 'range_partitioning.pb.dart' as $4408;
+import 'system_variable.pb.dart' as $4409;
+import 'table_reference.pb.dart' as $4391;
+import 'table_schema.pb.dart' as $4397;
+import 'time_partitioning.pb.dart' as $4406;
+import 'udf_resource.pb.dart' as $4404;
 
 export 'job_config.pbenum.dart';
 
 /// Properties for the destination table.
 class DestinationTableProperties extends $pb.GeneratedMessage {
   factory DestinationTableProperties({
-    $1780.StringValue? friendlyName,
-    $1780.StringValue? description,
+    $1781.StringValue? friendlyName,
+    $1781.StringValue? description,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -59,8 +59,8 @@ class DestinationTableProperties extends $pb.GeneratedMessage {
   factory DestinationTableProperties.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DestinationTableProperties', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(1, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.StringValue>(2, _omitFieldNames ? '' : 'description', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(1, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.StringValue>(2, _omitFieldNames ? '' : 'description', subBuilder: $1781.StringValue.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'DestinationTableProperties.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
     ..hasRequiredFields = false
   ;
@@ -89,30 +89,30 @@ class DestinationTableProperties extends $pb.GeneratedMessage {
   /// Optional. Friendly name for the destination table. If the table already
   /// exists, it should be same as the existing friendly name.
   @$pb.TagNumber(1)
-  $1780.StringValue get friendlyName => $_getN(0);
+  $1781.StringValue get friendlyName => $_getN(0);
   @$pb.TagNumber(1)
-  set friendlyName($1780.StringValue v) { setField(1, v); }
+  set friendlyName($1781.StringValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFriendlyName() => $_has(0);
   @$pb.TagNumber(1)
   void clearFriendlyName() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.StringValue ensureFriendlyName() => $_ensure(0);
+  $1781.StringValue ensureFriendlyName() => $_ensure(0);
 
   /// Optional. The description for the destination table.
   /// This will only be used if the destination table is newly created.
   /// If the table already exists and a value different than the current
   /// description is provided, the job will fail.
   @$pb.TagNumber(2)
-  $1780.StringValue get description => $_getN(1);
+  $1781.StringValue get description => $_getN(1);
   @$pb.TagNumber(2)
-  set description($1780.StringValue v) { setField(2, v); }
+  set description($1781.StringValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
   void clearDescription() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.StringValue ensureDescription() => $_ensure(1);
+  $1781.StringValue ensureDescription() => $_ensure(1);
 
   /// Optional. The labels associated with this table. You can use these to
   /// organize and group your tables. This will only be used if the destination
@@ -221,30 +221,30 @@ class ConnectionProperty extends $pb.GeneratedMessage {
 class JobConfigurationQuery extends $pb.GeneratedMessage {
   factory JobConfigurationQuery({
     $core.String? query,
-    $4390.TableReference? destinationTable,
-    $core.Iterable<$4403.UserDefinedFunctionResource>? userDefinedFunctionResources,
+    $4391.TableReference? destinationTable,
+    $core.Iterable<$4404.UserDefinedFunctionResource>? userDefinedFunctionResources,
     $core.String? createDisposition,
     $core.String? writeDisposition,
-    $4389.DatasetReference? defaultDataset,
+    $4390.DatasetReference? defaultDataset,
     $core.String? priority,
-    $1780.BoolValue? allowLargeResults,
-    $1780.BoolValue? useQueryCache,
-    $1780.BoolValue? flattenResults,
-    $1780.Int64Value? maximumBytesBilled,
-    $1780.BoolValue? useLegacySql,
+    $1781.BoolValue? allowLargeResults,
+    $1781.BoolValue? useQueryCache,
+    $1781.BoolValue? flattenResults,
+    $1781.Int64Value? maximumBytesBilled,
+    $1781.BoolValue? useLegacySql,
     $core.String? parameterMode,
-    $core.Iterable<$4404.QueryParameter>? queryParameters,
+    $core.Iterable<$4405.QueryParameter>? queryParameters,
     $core.Iterable<$core.String>? schemaUpdateOptions,
-    $4405.TimePartitioning? timePartitioning,
-    $4406.Clustering? clustering,
-    $4392.EncryptionConfiguration? destinationEncryptionConfiguration,
-    $4407.RangePartitioning? rangePartitioning,
-    $core.Map<$core.String, $4409.ExternalDataConfiguration>? externalTableDefinitions,
+    $4406.TimePartitioning? timePartitioning,
+    $4407.Clustering? clustering,
+    $4393.EncryptionConfiguration? destinationEncryptionConfiguration,
+    $4408.RangePartitioning? rangePartitioning,
+    $core.Map<$core.String, $4410.ExternalDataConfiguration>? externalTableDefinitions,
     ScriptOptions? scriptOptions,
     $core.Iterable<ConnectionProperty>? connectionProperties,
-    $1780.BoolValue? createSession,
-    $4408.SystemVariables? systemVariables,
-    $1780.BoolValue? continuous,
+    $1781.BoolValue? createSession,
+    $4409.SystemVariables? systemVariables,
+    $1781.BoolValue? continuous,
   }) {
     final $result = create();
     if (query != null) {
@@ -330,30 +330,30 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobConfigurationQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..aOM<$4390.TableReference>(2, _omitFieldNames ? '' : 'destinationTable', subBuilder: $4390.TableReference.create)
-    ..pc<$4403.UserDefinedFunctionResource>(4, _omitFieldNames ? '' : 'userDefinedFunctionResources', $pb.PbFieldType.PM, subBuilder: $4403.UserDefinedFunctionResource.create)
+    ..aOM<$4391.TableReference>(2, _omitFieldNames ? '' : 'destinationTable', subBuilder: $4391.TableReference.create)
+    ..pc<$4404.UserDefinedFunctionResource>(4, _omitFieldNames ? '' : 'userDefinedFunctionResources', $pb.PbFieldType.PM, subBuilder: $4404.UserDefinedFunctionResource.create)
     ..aOS(5, _omitFieldNames ? '' : 'createDisposition')
     ..aOS(6, _omitFieldNames ? '' : 'writeDisposition')
-    ..aOM<$4389.DatasetReference>(7, _omitFieldNames ? '' : 'defaultDataset', subBuilder: $4389.DatasetReference.create)
+    ..aOM<$4390.DatasetReference>(7, _omitFieldNames ? '' : 'defaultDataset', subBuilder: $4390.DatasetReference.create)
     ..aOS(8, _omitFieldNames ? '' : 'priority')
-    ..aOM<$1780.BoolValue>(10, _omitFieldNames ? '' : 'allowLargeResults', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(11, _omitFieldNames ? '' : 'useQueryCache', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(12, _omitFieldNames ? '' : 'flattenResults', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.Int64Value>(14, _omitFieldNames ? '' : 'maximumBytesBilled', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.BoolValue>(15, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(10, _omitFieldNames ? '' : 'allowLargeResults', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(11, _omitFieldNames ? '' : 'useQueryCache', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(12, _omitFieldNames ? '' : 'flattenResults', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.Int64Value>(14, _omitFieldNames ? '' : 'maximumBytesBilled', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.BoolValue>(15, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1781.BoolValue.create)
     ..aOS(16, _omitFieldNames ? '' : 'parameterMode')
-    ..pc<$4404.QueryParameter>(17, _omitFieldNames ? '' : 'queryParameters', $pb.PbFieldType.PM, subBuilder: $4404.QueryParameter.create)
+    ..pc<$4405.QueryParameter>(17, _omitFieldNames ? '' : 'queryParameters', $pb.PbFieldType.PM, subBuilder: $4405.QueryParameter.create)
     ..pPS(18, _omitFieldNames ? '' : 'schemaUpdateOptions')
-    ..aOM<$4405.TimePartitioning>(19, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4405.TimePartitioning.create)
-    ..aOM<$4406.Clustering>(20, _omitFieldNames ? '' : 'clustering', subBuilder: $4406.Clustering.create)
-    ..aOM<$4392.EncryptionConfiguration>(21, _omitFieldNames ? '' : 'destinationEncryptionConfiguration', subBuilder: $4392.EncryptionConfiguration.create)
-    ..aOM<$4407.RangePartitioning>(22, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4407.RangePartitioning.create)
-    ..m<$core.String, $4409.ExternalDataConfiguration>(23, _omitFieldNames ? '' : 'externalTableDefinitions', entryClassName: 'JobConfigurationQuery.ExternalTableDefinitionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4409.ExternalDataConfiguration.create, valueDefaultOrMaker: $4409.ExternalDataConfiguration.getDefault, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
+    ..aOM<$4406.TimePartitioning>(19, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4406.TimePartitioning.create)
+    ..aOM<$4407.Clustering>(20, _omitFieldNames ? '' : 'clustering', subBuilder: $4407.Clustering.create)
+    ..aOM<$4393.EncryptionConfiguration>(21, _omitFieldNames ? '' : 'destinationEncryptionConfiguration', subBuilder: $4393.EncryptionConfiguration.create)
+    ..aOM<$4408.RangePartitioning>(22, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4408.RangePartitioning.create)
+    ..m<$core.String, $4410.ExternalDataConfiguration>(23, _omitFieldNames ? '' : 'externalTableDefinitions', entryClassName: 'JobConfigurationQuery.ExternalTableDefinitionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4410.ExternalDataConfiguration.create, valueDefaultOrMaker: $4410.ExternalDataConfiguration.getDefault, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
     ..aOM<ScriptOptions>(24, _omitFieldNames ? '' : 'scriptOptions', subBuilder: ScriptOptions.create)
     ..pc<ConnectionProperty>(33, _omitFieldNames ? '' : 'connectionProperties', $pb.PbFieldType.PM, subBuilder: ConnectionProperty.create)
-    ..aOM<$1780.BoolValue>(34, _omitFieldNames ? '' : 'createSession', subBuilder: $1780.BoolValue.create)
-    ..aOM<$4408.SystemVariables>(35, _omitFieldNames ? '' : 'systemVariables', subBuilder: $4408.SystemVariables.create)
-    ..aOM<$1780.BoolValue>(36, _omitFieldNames ? '' : 'continuous', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(34, _omitFieldNames ? '' : 'createSession', subBuilder: $1781.BoolValue.create)
+    ..aOM<$4409.SystemVariables>(35, _omitFieldNames ? '' : 'systemVariables', subBuilder: $4409.SystemVariables.create)
+    ..aOM<$1781.BoolValue>(36, _omitFieldNames ? '' : 'continuous', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -394,19 +394,19 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   /// response size.  For queries that produce anonymous (cached) results, this
   /// field will be populated by BigQuery.
   @$pb.TagNumber(2)
-  $4390.TableReference get destinationTable => $_getN(1);
+  $4391.TableReference get destinationTable => $_getN(1);
   @$pb.TagNumber(2)
-  set destinationTable($4390.TableReference v) { setField(2, v); }
+  set destinationTable($4391.TableReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDestinationTable() => $_has(1);
   @$pb.TagNumber(2)
   void clearDestinationTable() => clearField(2);
   @$pb.TagNumber(2)
-  $4390.TableReference ensureDestinationTable() => $_ensure(1);
+  $4391.TableReference ensureDestinationTable() => $_ensure(1);
 
   /// Describes user-defined function resources used in the query.
   @$pb.TagNumber(4)
-  $core.List<$4403.UserDefinedFunctionResource> get userDefinedFunctionResources => $_getList(2);
+  $core.List<$4404.UserDefinedFunctionResource> get userDefinedFunctionResources => $_getList(2);
 
   ///  Optional. Specifies whether the job is allowed to create new tables.
   ///  The following values are supported:
@@ -457,15 +457,15 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   /// https://cloud.google.com/bigquery/docs/reference/system-variables for more
   /// information on system variables.
   @$pb.TagNumber(7)
-  $4389.DatasetReference get defaultDataset => $_getN(5);
+  $4390.DatasetReference get defaultDataset => $_getN(5);
   @$pb.TagNumber(7)
-  set defaultDataset($4389.DatasetReference v) { setField(7, v); }
+  set defaultDataset($4390.DatasetReference v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDefaultDataset() => $_has(5);
   @$pb.TagNumber(7)
   void clearDefaultDataset() => clearField(7);
   @$pb.TagNumber(7)
-  $4389.DatasetReference ensureDefaultDataset() => $_ensure(5);
+  $4390.DatasetReference ensureDefaultDataset() => $_ensure(5);
 
   /// Optional. Specifies a priority for the query. Possible values include
   /// INTERACTIVE and BATCH. The default value is INTERACTIVE.
@@ -485,15 +485,15 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   /// always allowed.  However, you must still set destinationTable when result
   /// size exceeds the allowed maximum response size.
   @$pb.TagNumber(10)
-  $1780.BoolValue get allowLargeResults => $_getN(7);
+  $1781.BoolValue get allowLargeResults => $_getN(7);
   @$pb.TagNumber(10)
-  set allowLargeResults($1780.BoolValue v) { setField(10, v); }
+  set allowLargeResults($1781.BoolValue v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasAllowLargeResults() => $_has(7);
   @$pb.TagNumber(10)
   void clearAllowLargeResults() => clearField(10);
   @$pb.TagNumber(10)
-  $1780.BoolValue ensureAllowLargeResults() => $_ensure(7);
+  $1781.BoolValue ensureAllowLargeResults() => $_ensure(7);
 
   /// Optional. Whether to look for the result in the query cache. The query
   /// cache is a best-effort cache that will be flushed whenever tables in the
@@ -501,15 +501,15 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   /// query does not have a destination table specified. The default value is
   /// true.
   @$pb.TagNumber(11)
-  $1780.BoolValue get useQueryCache => $_getN(8);
+  $1781.BoolValue get useQueryCache => $_getN(8);
   @$pb.TagNumber(11)
-  set useQueryCache($1780.BoolValue v) { setField(11, v); }
+  set useQueryCache($1781.BoolValue v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUseQueryCache() => $_has(8);
   @$pb.TagNumber(11)
   void clearUseQueryCache() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.BoolValue ensureUseQueryCache() => $_ensure(8);
+  $1781.BoolValue ensureUseQueryCache() => $_ensure(8);
 
   /// Optional. If true and query uses legacy SQL dialect, flattens all nested
   /// and repeated fields in the query results.
@@ -517,29 +517,29 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   /// For GoogleSQL queries, this flag is ignored and results are never
   /// flattened.
   @$pb.TagNumber(12)
-  $1780.BoolValue get flattenResults => $_getN(9);
+  $1781.BoolValue get flattenResults => $_getN(9);
   @$pb.TagNumber(12)
-  set flattenResults($1780.BoolValue v) { setField(12, v); }
+  set flattenResults($1781.BoolValue v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasFlattenResults() => $_has(9);
   @$pb.TagNumber(12)
   void clearFlattenResults() => clearField(12);
   @$pb.TagNumber(12)
-  $1780.BoolValue ensureFlattenResults() => $_ensure(9);
+  $1781.BoolValue ensureFlattenResults() => $_ensure(9);
 
   /// Limits the bytes billed for this job. Queries that will have
   /// bytes billed beyond this limit will fail (without incurring a charge).
   /// If unspecified, this will be set to your project default.
   @$pb.TagNumber(14)
-  $1780.Int64Value get maximumBytesBilled => $_getN(10);
+  $1781.Int64Value get maximumBytesBilled => $_getN(10);
   @$pb.TagNumber(14)
-  set maximumBytesBilled($1780.Int64Value v) { setField(14, v); }
+  set maximumBytesBilled($1781.Int64Value v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasMaximumBytesBilled() => $_has(10);
   @$pb.TagNumber(14)
   void clearMaximumBytesBilled() => clearField(14);
   @$pb.TagNumber(14)
-  $1780.Int64Value ensureMaximumBytesBilled() => $_ensure(10);
+  $1781.Int64Value ensureMaximumBytesBilled() => $_ensure(10);
 
   ///  Optional. Specifies whether to use BigQuery's legacy SQL dialect for this
   ///  query. The default value is true. If set to false, the query will use
@@ -549,15 +549,15 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   ///  When useLegacySql is set to false, the value of flattenResults is ignored;
   ///  query will be run as if flattenResults is false.
   @$pb.TagNumber(15)
-  $1780.BoolValue get useLegacySql => $_getN(11);
+  $1781.BoolValue get useLegacySql => $_getN(11);
   @$pb.TagNumber(15)
-  set useLegacySql($1780.BoolValue v) { setField(15, v); }
+  set useLegacySql($1781.BoolValue v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasUseLegacySql() => $_has(11);
   @$pb.TagNumber(15)
   void clearUseLegacySql() => clearField(15);
   @$pb.TagNumber(15)
-  $1780.BoolValue ensureUseLegacySql() => $_ensure(11);
+  $1781.BoolValue ensureUseLegacySql() => $_ensure(11);
 
   /// GoogleSQL only. Set to POSITIONAL to use positional (?) query parameters
   /// or to NAMED to use named (@myparam) query parameters in this query.
@@ -572,7 +572,7 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
 
   /// Query parameters for GoogleSQL queries.
   @$pb.TagNumber(17)
-  $core.List<$4404.QueryParameter> get queryParameters => $_getList(13);
+  $core.List<$4405.QueryParameter> get queryParameters => $_getList(13);
 
   ///  Allows the schema of the destination table to be updated as a side effect
   ///  of the query job. Schema update options are supported in two cases:
@@ -591,59 +591,59 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   /// Time-based partitioning specification for the destination table. Only one
   /// of timePartitioning and rangePartitioning should be specified.
   @$pb.TagNumber(19)
-  $4405.TimePartitioning get timePartitioning => $_getN(15);
+  $4406.TimePartitioning get timePartitioning => $_getN(15);
   @$pb.TagNumber(19)
-  set timePartitioning($4405.TimePartitioning v) { setField(19, v); }
+  set timePartitioning($4406.TimePartitioning v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasTimePartitioning() => $_has(15);
   @$pb.TagNumber(19)
   void clearTimePartitioning() => clearField(19);
   @$pb.TagNumber(19)
-  $4405.TimePartitioning ensureTimePartitioning() => $_ensure(15);
+  $4406.TimePartitioning ensureTimePartitioning() => $_ensure(15);
 
   /// Clustering specification for the destination table.
   @$pb.TagNumber(20)
-  $4406.Clustering get clustering => $_getN(16);
+  $4407.Clustering get clustering => $_getN(16);
   @$pb.TagNumber(20)
-  set clustering($4406.Clustering v) { setField(20, v); }
+  set clustering($4407.Clustering v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasClustering() => $_has(16);
   @$pb.TagNumber(20)
   void clearClustering() => clearField(20);
   @$pb.TagNumber(20)
-  $4406.Clustering ensureClustering() => $_ensure(16);
+  $4407.Clustering ensureClustering() => $_ensure(16);
 
   /// Custom encryption configuration (e.g., Cloud KMS keys)
   @$pb.TagNumber(21)
-  $4392.EncryptionConfiguration get destinationEncryptionConfiguration => $_getN(17);
+  $4393.EncryptionConfiguration get destinationEncryptionConfiguration => $_getN(17);
   @$pb.TagNumber(21)
-  set destinationEncryptionConfiguration($4392.EncryptionConfiguration v) { setField(21, v); }
+  set destinationEncryptionConfiguration($4393.EncryptionConfiguration v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasDestinationEncryptionConfiguration() => $_has(17);
   @$pb.TagNumber(21)
   void clearDestinationEncryptionConfiguration() => clearField(21);
   @$pb.TagNumber(21)
-  $4392.EncryptionConfiguration ensureDestinationEncryptionConfiguration() => $_ensure(17);
+  $4393.EncryptionConfiguration ensureDestinationEncryptionConfiguration() => $_ensure(17);
 
   /// Range partitioning specification for the destination table.
   /// Only one of timePartitioning and rangePartitioning should be specified.
   @$pb.TagNumber(22)
-  $4407.RangePartitioning get rangePartitioning => $_getN(18);
+  $4408.RangePartitioning get rangePartitioning => $_getN(18);
   @$pb.TagNumber(22)
-  set rangePartitioning($4407.RangePartitioning v) { setField(22, v); }
+  set rangePartitioning($4408.RangePartitioning v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasRangePartitioning() => $_has(18);
   @$pb.TagNumber(22)
   void clearRangePartitioning() => clearField(22);
   @$pb.TagNumber(22)
-  $4407.RangePartitioning ensureRangePartitioning() => $_ensure(18);
+  $4408.RangePartitioning ensureRangePartitioning() => $_ensure(18);
 
   /// Optional. You can specify external table definitions, which operate as
   /// ephemeral tables that can be queried.  These definitions are configured
   /// using a JSON map, where the string key represents the table identifier, and
   /// the value is the corresponding external data configuration object.
   @$pb.TagNumber(23)
-  $core.Map<$core.String, $4409.ExternalDataConfiguration> get externalTableDefinitions => $_getMap(19);
+  $core.Map<$core.String, $4410.ExternalDataConfiguration> get externalTableDefinitions => $_getMap(19);
 
   /// Options controlling the execution of scripts.
   @$pb.TagNumber(24)
@@ -671,51 +671,51 @@ class JobConfigurationQuery extends $pb.GeneratedMessage {
   ///  is present, otherwise it's set to the default location based on existing
   ///  routing logic.
   @$pb.TagNumber(34)
-  $1780.BoolValue get createSession => $_getN(22);
+  $1781.BoolValue get createSession => $_getN(22);
   @$pb.TagNumber(34)
-  set createSession($1780.BoolValue v) { setField(34, v); }
+  set createSession($1781.BoolValue v) { setField(34, v); }
   @$pb.TagNumber(34)
   $core.bool hasCreateSession() => $_has(22);
   @$pb.TagNumber(34)
   void clearCreateSession() => clearField(34);
   @$pb.TagNumber(34)
-  $1780.BoolValue ensureCreateSession() => $_ensure(22);
+  $1781.BoolValue ensureCreateSession() => $_ensure(22);
 
   /// Output only. System variables for GoogleSQL queries. A system variable is
   /// output if the variable is settable and its value differs from the system
   /// default.
   /// "@@" prefix is not included in the name of the System variables.
   @$pb.TagNumber(35)
-  $4408.SystemVariables get systemVariables => $_getN(23);
+  $4409.SystemVariables get systemVariables => $_getN(23);
   @$pb.TagNumber(35)
-  set systemVariables($4408.SystemVariables v) { setField(35, v); }
+  set systemVariables($4409.SystemVariables v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasSystemVariables() => $_has(23);
   @$pb.TagNumber(35)
   void clearSystemVariables() => clearField(35);
   @$pb.TagNumber(35)
-  $4408.SystemVariables ensureSystemVariables() => $_ensure(23);
+  $4409.SystemVariables ensureSystemVariables() => $_ensure(23);
 
   /// Optional. Whether to run the query as continuous or a regular query.
   /// Continuous query is currently in experimental stage and not ready for
   /// general usage.
   @$pb.TagNumber(36)
-  $1780.BoolValue get continuous => $_getN(24);
+  $1781.BoolValue get continuous => $_getN(24);
   @$pb.TagNumber(36)
-  set continuous($1780.BoolValue v) { setField(36, v); }
+  set continuous($1781.BoolValue v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasContinuous() => $_has(24);
   @$pb.TagNumber(36)
   void clearContinuous() => clearField(36);
   @$pb.TagNumber(36)
-  $1780.BoolValue ensureContinuous() => $_ensure(24);
+  $1781.BoolValue ensureContinuous() => $_ensure(24);
 }
 
 /// Options related to script execution.
 class ScriptOptions extends $pb.GeneratedMessage {
   factory ScriptOptions({
-    $1780.Int64Value? statementTimeoutMs,
-    $1780.Int64Value? statementByteBudget,
+    $1781.Int64Value? statementTimeoutMs,
+    $1781.Int64Value? statementByteBudget,
     ScriptOptions_KeyResultStatementKind? keyResultStatement,
   }) {
     final $result = create();
@@ -735,8 +735,8 @@ class ScriptOptions extends $pb.GeneratedMessage {
   factory ScriptOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScriptOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'statementTimeoutMs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'statementByteBudget', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'statementTimeoutMs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'statementByteBudget', subBuilder: $1781.Int64Value.create)
     ..e<ScriptOptions_KeyResultStatementKind>(4, _omitFieldNames ? '' : 'keyResultStatement', $pb.PbFieldType.OE, defaultOrMaker: ScriptOptions_KeyResultStatementKind.KEY_RESULT_STATEMENT_KIND_UNSPECIFIED, valueOf: ScriptOptions_KeyResultStatementKind.valueOf, enumValues: ScriptOptions_KeyResultStatementKind.values)
     ..hasRequiredFields = false
   ;
@@ -764,28 +764,28 @@ class ScriptOptions extends $pb.GeneratedMessage {
 
   /// Timeout period for each statement in a script.
   @$pb.TagNumber(1)
-  $1780.Int64Value get statementTimeoutMs => $_getN(0);
+  $1781.Int64Value get statementTimeoutMs => $_getN(0);
   @$pb.TagNumber(1)
-  set statementTimeoutMs($1780.Int64Value v) { setField(1, v); }
+  set statementTimeoutMs($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatementTimeoutMs() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatementTimeoutMs() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureStatementTimeoutMs() => $_ensure(0);
+  $1781.Int64Value ensureStatementTimeoutMs() => $_ensure(0);
 
   /// Limit on the number of bytes billed per statement. Exceeding this budget
   /// results in an error.
   @$pb.TagNumber(2)
-  $1780.Int64Value get statementByteBudget => $_getN(1);
+  $1781.Int64Value get statementByteBudget => $_getN(1);
   @$pb.TagNumber(2)
-  set statementByteBudget($1780.Int64Value v) { setField(2, v); }
+  set statementByteBudget($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatementByteBudget() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatementByteBudget() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureStatementByteBudget() => $_ensure(1);
+  $1781.Int64Value ensureStatementByteBudget() => $_ensure(1);
 
   /// Determines which statement in the script represents the "key result",
   /// used to populate the schema and query results of the script job.
@@ -805,40 +805,40 @@ class ScriptOptions extends $pb.GeneratedMessage {
 class JobConfigurationLoad extends $pb.GeneratedMessage {
   factory JobConfigurationLoad({
     $core.Iterable<$core.String>? sourceUris,
-    $4396.TableSchema? schema,
-    $4390.TableReference? destinationTable,
+    $4397.TableSchema? schema,
+    $4391.TableReference? destinationTable,
     DestinationTableProperties? destinationTableProperties,
     $core.String? createDisposition,
     $core.String? writeDisposition,
-    $1780.StringValue? nullMarker,
+    $1781.StringValue? nullMarker,
     $core.String? fieldDelimiter,
-    $1780.Int32Value? skipLeadingRows,
+    $1781.Int32Value? skipLeadingRows,
     $core.String? encoding,
-    $1780.StringValue? quote,
-    $1780.Int32Value? maxBadRecords,
-    $1780.BoolValue? allowQuotedNewlines,
+    $1781.StringValue? quote,
+    $1781.Int32Value? maxBadRecords,
+    $1781.BoolValue? allowQuotedNewlines,
     $core.String? sourceFormat,
-    $1780.BoolValue? allowJaggedRows,
-    $1780.BoolValue? ignoreUnknownValues,
+    $1781.BoolValue? allowJaggedRows,
+    $1781.BoolValue? ignoreUnknownValues,
     $core.Iterable<$core.String>? projectionFields,
-    $1780.BoolValue? autodetect,
+    $1781.BoolValue? autodetect,
     $core.Iterable<$core.String>? schemaUpdateOptions,
-    $4405.TimePartitioning? timePartitioning,
-    $4406.Clustering? clustering,
-    $4392.EncryptionConfiguration? destinationEncryptionConfiguration,
-    $1780.BoolValue? useAvroLogicalTypes,
-    $4407.RangePartitioning? rangePartitioning,
-    $4397.HivePartitioningOptions? hivePartitioningOptions,
-    $core.Iterable<$4399.DecimalTargetType>? decimalTargetTypes,
-    $4400.JsonExtension? jsonExtension,
-    $4409.ParquetOptions? parquetOptions,
-    $1780.BoolValue? preserveAsciiControlCharacters,
-    $1780.StringValue? referenceFileSchemaUri,
+    $4406.TimePartitioning? timePartitioning,
+    $4407.Clustering? clustering,
+    $4393.EncryptionConfiguration? destinationEncryptionConfiguration,
+    $1781.BoolValue? useAvroLogicalTypes,
+    $4408.RangePartitioning? rangePartitioning,
+    $4398.HivePartitioningOptions? hivePartitioningOptions,
+    $core.Iterable<$4400.DecimalTargetType>? decimalTargetTypes,
+    $4401.JsonExtension? jsonExtension,
+    $4410.ParquetOptions? parquetOptions,
+    $1781.BoolValue? preserveAsciiControlCharacters,
+    $1781.StringValue? referenceFileSchemaUri,
     $core.Iterable<ConnectionProperty>? connectionProperties,
-    $1780.BoolValue? createSession,
-    $4401.FileSetSpecType? fileSetSpecType,
+    $1781.BoolValue? createSession,
+    $4402.FileSetSpecType? fileSetSpecType,
     JobConfigurationLoad_ColumnNameCharacterMap? columnNameCharacterMap,
-    $1780.BoolValue? copyFilesOnly,
+    $1781.BoolValue? copyFilesOnly,
   }) {
     final $result = create();
     if (sourceUris != null) {
@@ -954,40 +954,40 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobConfigurationLoad', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'sourceUris')
-    ..aOM<$4396.TableSchema>(2, _omitFieldNames ? '' : 'schema', subBuilder: $4396.TableSchema.create)
-    ..aOM<$4390.TableReference>(3, _omitFieldNames ? '' : 'destinationTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4397.TableSchema>(2, _omitFieldNames ? '' : 'schema', subBuilder: $4397.TableSchema.create)
+    ..aOM<$4391.TableReference>(3, _omitFieldNames ? '' : 'destinationTable', subBuilder: $4391.TableReference.create)
     ..aOM<DestinationTableProperties>(4, _omitFieldNames ? '' : 'destinationTableProperties', subBuilder: DestinationTableProperties.create)
     ..aOS(5, _omitFieldNames ? '' : 'createDisposition')
     ..aOS(6, _omitFieldNames ? '' : 'writeDisposition')
-    ..aOM<$1780.StringValue>(7, _omitFieldNames ? '' : 'nullMarker', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(7, _omitFieldNames ? '' : 'nullMarker', subBuilder: $1781.StringValue.create)
     ..aOS(8, _omitFieldNames ? '' : 'fieldDelimiter')
-    ..aOM<$1780.Int32Value>(9, _omitFieldNames ? '' : 'skipLeadingRows', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(9, _omitFieldNames ? '' : 'skipLeadingRows', subBuilder: $1781.Int32Value.create)
     ..aOS(10, _omitFieldNames ? '' : 'encoding')
-    ..aOM<$1780.StringValue>(11, _omitFieldNames ? '' : 'quote', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.Int32Value>(12, _omitFieldNames ? '' : 'maxBadRecords', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1780.BoolValue>(15, _omitFieldNames ? '' : 'allowQuotedNewlines', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.StringValue>(11, _omitFieldNames ? '' : 'quote', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.Int32Value>(12, _omitFieldNames ? '' : 'maxBadRecords', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1781.BoolValue>(15, _omitFieldNames ? '' : 'allowQuotedNewlines', subBuilder: $1781.BoolValue.create)
     ..aOS(16, _omitFieldNames ? '' : 'sourceFormat')
-    ..aOM<$1780.BoolValue>(17, _omitFieldNames ? '' : 'allowJaggedRows', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(18, _omitFieldNames ? '' : 'ignoreUnknownValues', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(17, _omitFieldNames ? '' : 'allowJaggedRows', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(18, _omitFieldNames ? '' : 'ignoreUnknownValues', subBuilder: $1781.BoolValue.create)
     ..pPS(19, _omitFieldNames ? '' : 'projectionFields')
-    ..aOM<$1780.BoolValue>(20, _omitFieldNames ? '' : 'autodetect', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(20, _omitFieldNames ? '' : 'autodetect', subBuilder: $1781.BoolValue.create)
     ..pPS(21, _omitFieldNames ? '' : 'schemaUpdateOptions')
-    ..aOM<$4405.TimePartitioning>(22, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4405.TimePartitioning.create)
-    ..aOM<$4406.Clustering>(23, _omitFieldNames ? '' : 'clustering', subBuilder: $4406.Clustering.create)
-    ..aOM<$4392.EncryptionConfiguration>(24, _omitFieldNames ? '' : 'destinationEncryptionConfiguration', subBuilder: $4392.EncryptionConfiguration.create)
-    ..aOM<$1780.BoolValue>(25, _omitFieldNames ? '' : 'useAvroLogicalTypes', subBuilder: $1780.BoolValue.create)
-    ..aOM<$4407.RangePartitioning>(26, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4407.RangePartitioning.create)
-    ..aOM<$4397.HivePartitioningOptions>(37, _omitFieldNames ? '' : 'hivePartitioningOptions', subBuilder: $4397.HivePartitioningOptions.create)
-    ..pc<$4399.DecimalTargetType>(39, _omitFieldNames ? '' : 'decimalTargetTypes', $pb.PbFieldType.KE, valueOf: $4399.DecimalTargetType.valueOf, enumValues: $4399.DecimalTargetType.values, defaultEnumValue: $4399.DecimalTargetType.DECIMAL_TARGET_TYPE_UNSPECIFIED)
-    ..e<$4400.JsonExtension>(41, _omitFieldNames ? '' : 'jsonExtension', $pb.PbFieldType.OE, defaultOrMaker: $4400.JsonExtension.JSON_EXTENSION_UNSPECIFIED, valueOf: $4400.JsonExtension.valueOf, enumValues: $4400.JsonExtension.values)
-    ..aOM<$4409.ParquetOptions>(42, _omitFieldNames ? '' : 'parquetOptions', subBuilder: $4409.ParquetOptions.create)
-    ..aOM<$1780.BoolValue>(44, _omitFieldNames ? '' : 'preserveAsciiControlCharacters', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.StringValue>(45, _omitFieldNames ? '' : 'referenceFileSchemaUri', subBuilder: $1780.StringValue.create)
+    ..aOM<$4406.TimePartitioning>(22, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4406.TimePartitioning.create)
+    ..aOM<$4407.Clustering>(23, _omitFieldNames ? '' : 'clustering', subBuilder: $4407.Clustering.create)
+    ..aOM<$4393.EncryptionConfiguration>(24, _omitFieldNames ? '' : 'destinationEncryptionConfiguration', subBuilder: $4393.EncryptionConfiguration.create)
+    ..aOM<$1781.BoolValue>(25, _omitFieldNames ? '' : 'useAvroLogicalTypes', subBuilder: $1781.BoolValue.create)
+    ..aOM<$4408.RangePartitioning>(26, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4408.RangePartitioning.create)
+    ..aOM<$4398.HivePartitioningOptions>(37, _omitFieldNames ? '' : 'hivePartitioningOptions', subBuilder: $4398.HivePartitioningOptions.create)
+    ..pc<$4400.DecimalTargetType>(39, _omitFieldNames ? '' : 'decimalTargetTypes', $pb.PbFieldType.KE, valueOf: $4400.DecimalTargetType.valueOf, enumValues: $4400.DecimalTargetType.values, defaultEnumValue: $4400.DecimalTargetType.DECIMAL_TARGET_TYPE_UNSPECIFIED)
+    ..e<$4401.JsonExtension>(41, _omitFieldNames ? '' : 'jsonExtension', $pb.PbFieldType.OE, defaultOrMaker: $4401.JsonExtension.JSON_EXTENSION_UNSPECIFIED, valueOf: $4401.JsonExtension.valueOf, enumValues: $4401.JsonExtension.values)
+    ..aOM<$4410.ParquetOptions>(42, _omitFieldNames ? '' : 'parquetOptions', subBuilder: $4410.ParquetOptions.create)
+    ..aOM<$1781.BoolValue>(44, _omitFieldNames ? '' : 'preserveAsciiControlCharacters', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.StringValue>(45, _omitFieldNames ? '' : 'referenceFileSchemaUri', subBuilder: $1781.StringValue.create)
     ..pc<ConnectionProperty>(46, _omitFieldNames ? '' : 'connectionProperties', $pb.PbFieldType.PM, subBuilder: ConnectionProperty.create)
-    ..aOM<$1780.BoolValue>(47, _omitFieldNames ? '' : 'createSession', subBuilder: $1780.BoolValue.create)
-    ..e<$4401.FileSetSpecType>(49, _omitFieldNames ? '' : 'fileSetSpecType', $pb.PbFieldType.OE, defaultOrMaker: $4401.FileSetSpecType.FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH, valueOf: $4401.FileSetSpecType.valueOf, enumValues: $4401.FileSetSpecType.values)
+    ..aOM<$1781.BoolValue>(47, _omitFieldNames ? '' : 'createSession', subBuilder: $1781.BoolValue.create)
+    ..e<$4402.FileSetSpecType>(49, _omitFieldNames ? '' : 'fileSetSpecType', $pb.PbFieldType.OE, defaultOrMaker: $4402.FileSetSpecType.FILE_SET_SPEC_TYPE_FILE_SYSTEM_MATCH, valueOf: $4402.FileSetSpecType.valueOf, enumValues: $4402.FileSetSpecType.values)
     ..e<JobConfigurationLoad_ColumnNameCharacterMap>(50, _omitFieldNames ? '' : 'columnNameCharacterMap', $pb.PbFieldType.OE, defaultOrMaker: JobConfigurationLoad_ColumnNameCharacterMap.COLUMN_NAME_CHARACTER_MAP_UNSPECIFIED, valueOf: JobConfigurationLoad_ColumnNameCharacterMap.valueOf, enumValues: JobConfigurationLoad_ColumnNameCharacterMap.values)
-    ..aOM<$1780.BoolValue>(51, _omitFieldNames ? '' : 'copyFilesOnly', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(51, _omitFieldNames ? '' : 'copyFilesOnly', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1031,27 +1031,27 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// omitted if the destination table already exists, or if you're loading data
   /// from Google Cloud Datastore.
   @$pb.TagNumber(2)
-  $4396.TableSchema get schema => $_getN(1);
+  $4397.TableSchema get schema => $_getN(1);
   @$pb.TagNumber(2)
-  set schema($4396.TableSchema v) { setField(2, v); }
+  set schema($4397.TableSchema v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSchema() => $_has(1);
   @$pb.TagNumber(2)
   void clearSchema() => clearField(2);
   @$pb.TagNumber(2)
-  $4396.TableSchema ensureSchema() => $_ensure(1);
+  $4397.TableSchema ensureSchema() => $_ensure(1);
 
   /// [Required] The destination table to load the data into.
   @$pb.TagNumber(3)
-  $4390.TableReference get destinationTable => $_getN(2);
+  $4391.TableReference get destinationTable => $_getN(2);
   @$pb.TagNumber(3)
-  set destinationTable($4390.TableReference v) { setField(3, v); }
+  set destinationTable($4391.TableReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDestinationTable() => $_has(2);
   @$pb.TagNumber(3)
   void clearDestinationTable() => clearField(3);
   @$pb.TagNumber(3)
-  $4390.TableReference ensureDestinationTable() => $_ensure(2);
+  $4391.TableReference ensureDestinationTable() => $_ensure(2);
 
   /// Optional. [Experimental] Properties with which to create the destination
   /// table if it is new.
@@ -1117,15 +1117,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// types except for STRING and BYTE. For STRING and BYTE columns, BigQuery
   /// interprets the empty string as an empty value.
   @$pb.TagNumber(7)
-  $1780.StringValue get nullMarker => $_getN(6);
+  $1781.StringValue get nullMarker => $_getN(6);
   @$pb.TagNumber(7)
-  set nullMarker($1780.StringValue v) { setField(7, v); }
+  set nullMarker($1781.StringValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasNullMarker() => $_has(6);
   @$pb.TagNumber(7)
   void clearNullMarker() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.StringValue ensureNullMarker() => $_ensure(6);
+  $1781.StringValue ensureNullMarker() => $_ensure(6);
 
   /// Optional. The separator character for fields in a CSV file. The separator
   /// is interpreted as a single byte. For files encoded in ISO-8859-1, any
@@ -1159,15 +1159,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   ///    headers in row N. If headers are not detected, row N is just skipped.
   ///    Otherwise row N is used to extract column names for the detected schema.
   @$pb.TagNumber(9)
-  $1780.Int32Value get skipLeadingRows => $_getN(8);
+  $1781.Int32Value get skipLeadingRows => $_getN(8);
   @$pb.TagNumber(9)
-  set skipLeadingRows($1780.Int32Value v) { setField(9, v); }
+  set skipLeadingRows($1781.Int32Value v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSkipLeadingRows() => $_has(8);
   @$pb.TagNumber(9)
   void clearSkipLeadingRows() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.Int32Value ensureSkipLeadingRows() => $_ensure(8);
+  $1781.Int32Value ensureSkipLeadingRows() => $_ensure(8);
 
   ///  Optional. The character encoding of the data.
   ///  The supported values are UTF-8, ISO-8859-1, UTF-16BE, UTF-16LE, UTF-32BE,
@@ -1207,15 +1207,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// escape the default character  ' " ', use ' "" '.
   /// @default "
   @$pb.TagNumber(11)
-  $1780.StringValue get quote => $_getN(10);
+  $1781.StringValue get quote => $_getN(10);
   @$pb.TagNumber(11)
-  set quote($1780.StringValue v) { setField(11, v); }
+  set quote($1781.StringValue v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasQuote() => $_has(10);
   @$pb.TagNumber(11)
   void clearQuote() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.StringValue ensureQuote() => $_ensure(10);
+  $1781.StringValue ensureQuote() => $_ensure(10);
 
   /// Optional. The maximum number of bad records that BigQuery can ignore when
   /// running the job. If the number of bad records exceeds this value, an
@@ -1223,28 +1223,28 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// The default value is 0, which requires that all records are valid.
   /// This is only supported for CSV and NEWLINE_DELIMITED_JSON file formats.
   @$pb.TagNumber(12)
-  $1780.Int32Value get maxBadRecords => $_getN(11);
+  $1781.Int32Value get maxBadRecords => $_getN(11);
   @$pb.TagNumber(12)
-  set maxBadRecords($1780.Int32Value v) { setField(12, v); }
+  set maxBadRecords($1781.Int32Value v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasMaxBadRecords() => $_has(11);
   @$pb.TagNumber(12)
   void clearMaxBadRecords() => clearField(12);
   @$pb.TagNumber(12)
-  $1780.Int32Value ensureMaxBadRecords() => $_ensure(11);
+  $1781.Int32Value ensureMaxBadRecords() => $_ensure(11);
 
   /// Indicates if BigQuery should allow quoted data sections that contain
   /// newline characters in a CSV file. The default value is false.
   @$pb.TagNumber(15)
-  $1780.BoolValue get allowQuotedNewlines => $_getN(12);
+  $1781.BoolValue get allowQuotedNewlines => $_getN(12);
   @$pb.TagNumber(15)
-  set allowQuotedNewlines($1780.BoolValue v) { setField(15, v); }
+  set allowQuotedNewlines($1781.BoolValue v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasAllowQuotedNewlines() => $_has(12);
   @$pb.TagNumber(15)
   void clearAllowQuotedNewlines() => clearField(15);
   @$pb.TagNumber(15)
-  $1780.BoolValue ensureAllowQuotedNewlines() => $_ensure(12);
+  $1781.BoolValue ensureAllowQuotedNewlines() => $_ensure(12);
 
   /// Optional. The format of the data files.
   /// For CSV files, specify "CSV". For datastore backups,
@@ -1269,15 +1269,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// The default value is false.
   /// Only applicable to CSV, ignored for other formats.
   @$pb.TagNumber(17)
-  $1780.BoolValue get allowJaggedRows => $_getN(14);
+  $1781.BoolValue get allowJaggedRows => $_getN(14);
   @$pb.TagNumber(17)
-  set allowJaggedRows($1780.BoolValue v) { setField(17, v); }
+  set allowJaggedRows($1781.BoolValue v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasAllowJaggedRows() => $_has(14);
   @$pb.TagNumber(17)
   void clearAllowJaggedRows() => clearField(17);
   @$pb.TagNumber(17)
-  $1780.BoolValue ensureAllowJaggedRows() => $_ensure(14);
+  $1781.BoolValue ensureAllowJaggedRows() => $_ensure(14);
 
   /// Optional. Indicates if BigQuery should allow extra values that are not
   /// represented in the table schema.
@@ -1292,15 +1292,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   ///   Avro, Parquet, ORC: Fields in the file schema that don't exist in the
   ///   table schema.
   @$pb.TagNumber(18)
-  $1780.BoolValue get ignoreUnknownValues => $_getN(15);
+  $1781.BoolValue get ignoreUnknownValues => $_getN(15);
   @$pb.TagNumber(18)
-  set ignoreUnknownValues($1780.BoolValue v) { setField(18, v); }
+  set ignoreUnknownValues($1781.BoolValue v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasIgnoreUnknownValues() => $_has(15);
   @$pb.TagNumber(18)
   void clearIgnoreUnknownValues() => clearField(18);
   @$pb.TagNumber(18)
-  $1780.BoolValue ensureIgnoreUnknownValues() => $_ensure(15);
+  $1781.BoolValue ensureIgnoreUnknownValues() => $_ensure(15);
 
   /// If sourceFormat is set to "DATASTORE_BACKUP", indicates which entity
   /// properties to load into BigQuery from a Cloud Datastore backup. Property
@@ -1314,15 +1314,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// Optional. Indicates if we should automatically infer the options and
   /// schema for CSV and JSON sources.
   @$pb.TagNumber(20)
-  $1780.BoolValue get autodetect => $_getN(17);
+  $1781.BoolValue get autodetect => $_getN(17);
   @$pb.TagNumber(20)
-  set autodetect($1780.BoolValue v) { setField(20, v); }
+  set autodetect($1781.BoolValue v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasAutodetect() => $_has(17);
   @$pb.TagNumber(20)
   void clearAutodetect() => clearField(20);
   @$pb.TagNumber(20)
-  $1780.BoolValue ensureAutodetect() => $_ensure(17);
+  $1781.BoolValue ensureAutodetect() => $_ensure(17);
 
   ///  Allows the schema of the destination table to be updated as a side effect
   ///  of the load job if a schema is autodetected or supplied in the job
@@ -1343,81 +1343,81 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// Time-based partitioning specification for the destination table. Only one
   /// of timePartitioning and rangePartitioning should be specified.
   @$pb.TagNumber(22)
-  $4405.TimePartitioning get timePartitioning => $_getN(19);
+  $4406.TimePartitioning get timePartitioning => $_getN(19);
   @$pb.TagNumber(22)
-  set timePartitioning($4405.TimePartitioning v) { setField(22, v); }
+  set timePartitioning($4406.TimePartitioning v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasTimePartitioning() => $_has(19);
   @$pb.TagNumber(22)
   void clearTimePartitioning() => clearField(22);
   @$pb.TagNumber(22)
-  $4405.TimePartitioning ensureTimePartitioning() => $_ensure(19);
+  $4406.TimePartitioning ensureTimePartitioning() => $_ensure(19);
 
   /// Clustering specification for the destination table.
   @$pb.TagNumber(23)
-  $4406.Clustering get clustering => $_getN(20);
+  $4407.Clustering get clustering => $_getN(20);
   @$pb.TagNumber(23)
-  set clustering($4406.Clustering v) { setField(23, v); }
+  set clustering($4407.Clustering v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasClustering() => $_has(20);
   @$pb.TagNumber(23)
   void clearClustering() => clearField(23);
   @$pb.TagNumber(23)
-  $4406.Clustering ensureClustering() => $_ensure(20);
+  $4407.Clustering ensureClustering() => $_ensure(20);
 
   /// Custom encryption configuration (e.g., Cloud KMS keys)
   @$pb.TagNumber(24)
-  $4392.EncryptionConfiguration get destinationEncryptionConfiguration => $_getN(21);
+  $4393.EncryptionConfiguration get destinationEncryptionConfiguration => $_getN(21);
   @$pb.TagNumber(24)
-  set destinationEncryptionConfiguration($4392.EncryptionConfiguration v) { setField(24, v); }
+  set destinationEncryptionConfiguration($4393.EncryptionConfiguration v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasDestinationEncryptionConfiguration() => $_has(21);
   @$pb.TagNumber(24)
   void clearDestinationEncryptionConfiguration() => clearField(24);
   @$pb.TagNumber(24)
-  $4392.EncryptionConfiguration ensureDestinationEncryptionConfiguration() => $_ensure(21);
+  $4393.EncryptionConfiguration ensureDestinationEncryptionConfiguration() => $_ensure(21);
 
   /// Optional. If sourceFormat is set to "AVRO", indicates whether to interpret
   /// logical types as the corresponding BigQuery data type (for example,
   /// TIMESTAMP), instead of using the raw type (for example, INTEGER).
   @$pb.TagNumber(25)
-  $1780.BoolValue get useAvroLogicalTypes => $_getN(22);
+  $1781.BoolValue get useAvroLogicalTypes => $_getN(22);
   @$pb.TagNumber(25)
-  set useAvroLogicalTypes($1780.BoolValue v) { setField(25, v); }
+  set useAvroLogicalTypes($1781.BoolValue v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasUseAvroLogicalTypes() => $_has(22);
   @$pb.TagNumber(25)
   void clearUseAvroLogicalTypes() => clearField(25);
   @$pb.TagNumber(25)
-  $1780.BoolValue ensureUseAvroLogicalTypes() => $_ensure(22);
+  $1781.BoolValue ensureUseAvroLogicalTypes() => $_ensure(22);
 
   /// Range partitioning specification for the destination table.
   /// Only one of timePartitioning and rangePartitioning should be specified.
   @$pb.TagNumber(26)
-  $4407.RangePartitioning get rangePartitioning => $_getN(23);
+  $4408.RangePartitioning get rangePartitioning => $_getN(23);
   @$pb.TagNumber(26)
-  set rangePartitioning($4407.RangePartitioning v) { setField(26, v); }
+  set rangePartitioning($4408.RangePartitioning v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasRangePartitioning() => $_has(23);
   @$pb.TagNumber(26)
   void clearRangePartitioning() => clearField(26);
   @$pb.TagNumber(26)
-  $4407.RangePartitioning ensureRangePartitioning() => $_ensure(23);
+  $4408.RangePartitioning ensureRangePartitioning() => $_ensure(23);
 
   /// Optional. When set, configures hive partitioning support.
   /// Not all storage formats support hive partitioning -- requesting hive
   /// partitioning on an unsupported format will lead to an error, as will
   /// providing an invalid specification.
   @$pb.TagNumber(37)
-  $4397.HivePartitioningOptions get hivePartitioningOptions => $_getN(24);
+  $4398.HivePartitioningOptions get hivePartitioningOptions => $_getN(24);
   @$pb.TagNumber(37)
-  set hivePartitioningOptions($4397.HivePartitioningOptions v) { setField(37, v); }
+  set hivePartitioningOptions($4398.HivePartitioningOptions v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasHivePartitioningOptions() => $_has(24);
   @$pb.TagNumber(37)
   void clearHivePartitioningOptions() => clearField(37);
   @$pb.TagNumber(37)
-  $4397.HivePartitioningOptions ensureHivePartitioningOptions() => $_ensure(24);
+  $4398.HivePartitioningOptions ensureHivePartitioningOptions() => $_ensure(24);
 
   ///  Defines the list of possible SQL data types to which the source decimal
   ///  values are converted. This list and the precision and the scale parameters
@@ -1446,16 +1446,16 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   ///  Defaults to ["NUMERIC", "STRING"] for ORC and ["NUMERIC"] for the other
   ///  file formats.
   @$pb.TagNumber(39)
-  $core.List<$4399.DecimalTargetType> get decimalTargetTypes => $_getList(25);
+  $core.List<$4400.DecimalTargetType> get decimalTargetTypes => $_getList(25);
 
   /// Optional. Load option to be used together with source_format
   /// newline-delimited JSON to indicate that a variant of JSON is being loaded.
   /// To load newline-delimited GeoJSON, specify GEOJSON (and source_format must
   /// be set to NEWLINE_DELIMITED_JSON).
   @$pb.TagNumber(41)
-  $4400.JsonExtension get jsonExtension => $_getN(26);
+  $4401.JsonExtension get jsonExtension => $_getN(26);
   @$pb.TagNumber(41)
-  set jsonExtension($4400.JsonExtension v) { setField(41, v); }
+  set jsonExtension($4401.JsonExtension v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasJsonExtension() => $_has(26);
   @$pb.TagNumber(41)
@@ -1463,44 +1463,44 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
 
   /// Optional. Additional properties to set if sourceFormat is set to PARQUET.
   @$pb.TagNumber(42)
-  $4409.ParquetOptions get parquetOptions => $_getN(27);
+  $4410.ParquetOptions get parquetOptions => $_getN(27);
   @$pb.TagNumber(42)
-  set parquetOptions($4409.ParquetOptions v) { setField(42, v); }
+  set parquetOptions($4410.ParquetOptions v) { setField(42, v); }
   @$pb.TagNumber(42)
   $core.bool hasParquetOptions() => $_has(27);
   @$pb.TagNumber(42)
   void clearParquetOptions() => clearField(42);
   @$pb.TagNumber(42)
-  $4409.ParquetOptions ensureParquetOptions() => $_ensure(27);
+  $4410.ParquetOptions ensureParquetOptions() => $_ensure(27);
 
   /// Optional. When sourceFormat is set to "CSV", this indicates whether the
   /// embedded ASCII control characters (the first 32 characters in the
   /// ASCII-table, from
   /// '\x00' to '\x1F') are preserved.
   @$pb.TagNumber(44)
-  $1780.BoolValue get preserveAsciiControlCharacters => $_getN(28);
+  $1781.BoolValue get preserveAsciiControlCharacters => $_getN(28);
   @$pb.TagNumber(44)
-  set preserveAsciiControlCharacters($1780.BoolValue v) { setField(44, v); }
+  set preserveAsciiControlCharacters($1781.BoolValue v) { setField(44, v); }
   @$pb.TagNumber(44)
   $core.bool hasPreserveAsciiControlCharacters() => $_has(28);
   @$pb.TagNumber(44)
   void clearPreserveAsciiControlCharacters() => clearField(44);
   @$pb.TagNumber(44)
-  $1780.BoolValue ensurePreserveAsciiControlCharacters() => $_ensure(28);
+  $1781.BoolValue ensurePreserveAsciiControlCharacters() => $_ensure(28);
 
   /// Optional. The user can provide a reference file with the reader schema.
   /// This file is only loaded if it is part of source URIs, but is not loaded
   /// otherwise. It is enabled for the following formats: AVRO, PARQUET, ORC.
   @$pb.TagNumber(45)
-  $1780.StringValue get referenceFileSchemaUri => $_getN(29);
+  $1781.StringValue get referenceFileSchemaUri => $_getN(29);
   @$pb.TagNumber(45)
-  set referenceFileSchemaUri($1780.StringValue v) { setField(45, v); }
+  set referenceFileSchemaUri($1781.StringValue v) { setField(45, v); }
   @$pb.TagNumber(45)
   $core.bool hasReferenceFileSchemaUri() => $_has(29);
   @$pb.TagNumber(45)
   void clearReferenceFileSchemaUri() => clearField(45);
   @$pb.TagNumber(45)
-  $1780.StringValue ensureReferenceFileSchemaUri() => $_ensure(29);
+  $1781.StringValue ensureReferenceFileSchemaUri() => $_ensure(29);
 
   /// Optional. Connection properties which can modify the load job behavior.
   /// Currently, only the 'session_id' connection property is supported, and is
@@ -1518,15 +1518,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   ///  is present, otherwise it's set to the default location based on existing
   ///  routing logic.
   @$pb.TagNumber(47)
-  $1780.BoolValue get createSession => $_getN(31);
+  $1781.BoolValue get createSession => $_getN(31);
   @$pb.TagNumber(47)
-  set createSession($1780.BoolValue v) { setField(47, v); }
+  set createSession($1781.BoolValue v) { setField(47, v); }
   @$pb.TagNumber(47)
   $core.bool hasCreateSession() => $_has(31);
   @$pb.TagNumber(47)
   void clearCreateSession() => clearField(47);
   @$pb.TagNumber(47)
-  $1780.BoolValue ensureCreateSession() => $_ensure(31);
+  $1781.BoolValue ensureCreateSession() => $_ensure(31);
 
   /// Optional. Specifies how source URIs are interpreted for constructing the
   /// file set to load. By default, source URIs are expanded against the
@@ -1534,9 +1534,9 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   /// file set is constructed. This option is only applicable to object storage
   /// systems.
   @$pb.TagNumber(49)
-  $4401.FileSetSpecType get fileSetSpecType => $_getN(32);
+  $4402.FileSetSpecType get fileSetSpecType => $_getN(32);
   @$pb.TagNumber(49)
-  set fileSetSpecType($4401.FileSetSpecType v) { setField(49, v); }
+  set fileSetSpecType($4402.FileSetSpecType v) { setField(49, v); }
   @$pb.TagNumber(49)
   $core.bool hasFileSetSpecType() => $_has(32);
   @$pb.TagNumber(49)
@@ -1568,15 +1568,15 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
   ///    have type parameters other than precision and scale.
   ///  * No options other than the above are specified.
   @$pb.TagNumber(51)
-  $1780.BoolValue get copyFilesOnly => $_getN(34);
+  $1781.BoolValue get copyFilesOnly => $_getN(34);
   @$pb.TagNumber(51)
-  set copyFilesOnly($1780.BoolValue v) { setField(51, v); }
+  set copyFilesOnly($1781.BoolValue v) { setField(51, v); }
   @$pb.TagNumber(51)
   $core.bool hasCopyFilesOnly() => $_has(34);
   @$pb.TagNumber(51)
   void clearCopyFilesOnly() => clearField(51);
   @$pb.TagNumber(51)
-  $1780.BoolValue ensureCopyFilesOnly() => $_ensure(34);
+  $1781.BoolValue ensureCopyFilesOnly() => $_ensure(34);
 }
 
 /// JobConfigurationTableCopy configures a job that copies data from one table
@@ -1585,14 +1585,14 @@ class JobConfigurationLoad extends $pb.GeneratedMessage {
 ///  table](https://cloud.google.com/bigquery/docs/managing-tables#copy-table).
 class JobConfigurationTableCopy extends $pb.GeneratedMessage {
   factory JobConfigurationTableCopy({
-    $4390.TableReference? sourceTable,
-    $core.Iterable<$4390.TableReference>? sourceTables,
-    $4390.TableReference? destinationTable,
+    $4391.TableReference? sourceTable,
+    $core.Iterable<$4391.TableReference>? sourceTables,
+    $4391.TableReference? destinationTable,
     $core.String? createDisposition,
     $core.String? writeDisposition,
-    $4392.EncryptionConfiguration? destinationEncryptionConfiguration,
+    $4393.EncryptionConfiguration? destinationEncryptionConfiguration,
     JobConfigurationTableCopy_OperationType? operationType,
-    $1775.Timestamp? destinationExpirationTime,
+    $1776.Timestamp? destinationExpirationTime,
   }) {
     final $result = create();
     if (sourceTable != null) {
@@ -1626,14 +1626,14 @@ class JobConfigurationTableCopy extends $pb.GeneratedMessage {
   factory JobConfigurationTableCopy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobConfigurationTableCopy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'sourceTable', subBuilder: $4390.TableReference.create)
-    ..pc<$4390.TableReference>(2, _omitFieldNames ? '' : 'sourceTables', $pb.PbFieldType.PM, subBuilder: $4390.TableReference.create)
-    ..aOM<$4390.TableReference>(3, _omitFieldNames ? '' : 'destinationTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'sourceTable', subBuilder: $4391.TableReference.create)
+    ..pc<$4391.TableReference>(2, _omitFieldNames ? '' : 'sourceTables', $pb.PbFieldType.PM, subBuilder: $4391.TableReference.create)
+    ..aOM<$4391.TableReference>(3, _omitFieldNames ? '' : 'destinationTable', subBuilder: $4391.TableReference.create)
     ..aOS(4, _omitFieldNames ? '' : 'createDisposition')
     ..aOS(5, _omitFieldNames ? '' : 'writeDisposition')
-    ..aOM<$4392.EncryptionConfiguration>(6, _omitFieldNames ? '' : 'destinationEncryptionConfiguration', subBuilder: $4392.EncryptionConfiguration.create)
+    ..aOM<$4393.EncryptionConfiguration>(6, _omitFieldNames ? '' : 'destinationEncryptionConfiguration', subBuilder: $4393.EncryptionConfiguration.create)
     ..e<JobConfigurationTableCopy_OperationType>(8, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: JobConfigurationTableCopy_OperationType.OPERATION_TYPE_UNSPECIFIED, valueOf: JobConfigurationTableCopy_OperationType.valueOf, enumValues: JobConfigurationTableCopy_OperationType.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'destinationExpirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'destinationExpirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1660,31 +1660,31 @@ class JobConfigurationTableCopy extends $pb.GeneratedMessage {
 
   /// [Pick one] Source table to copy.
   @$pb.TagNumber(1)
-  $4390.TableReference get sourceTable => $_getN(0);
+  $4391.TableReference get sourceTable => $_getN(0);
   @$pb.TagNumber(1)
-  set sourceTable($4390.TableReference v) { setField(1, v); }
+  set sourceTable($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSourceTable() => $_has(0);
   @$pb.TagNumber(1)
   void clearSourceTable() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureSourceTable() => $_ensure(0);
+  $4391.TableReference ensureSourceTable() => $_ensure(0);
 
   /// [Pick one] Source tables to copy.
   @$pb.TagNumber(2)
-  $core.List<$4390.TableReference> get sourceTables => $_getList(1);
+  $core.List<$4391.TableReference> get sourceTables => $_getList(1);
 
   /// [Required] The destination table.
   @$pb.TagNumber(3)
-  $4390.TableReference get destinationTable => $_getN(2);
+  $4391.TableReference get destinationTable => $_getN(2);
   @$pb.TagNumber(3)
-  set destinationTable($4390.TableReference v) { setField(3, v); }
+  set destinationTable($4391.TableReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDestinationTable() => $_has(2);
   @$pb.TagNumber(3)
   void clearDestinationTable() => clearField(3);
   @$pb.TagNumber(3)
-  $4390.TableReference ensureDestinationTable() => $_ensure(2);
+  $4391.TableReference ensureDestinationTable() => $_ensure(2);
 
   ///  Optional. Specifies whether the job is allowed to create new tables.
   ///  The following values are supported:
@@ -1730,15 +1730,15 @@ class JobConfigurationTableCopy extends $pb.GeneratedMessage {
 
   /// Custom encryption configuration (e.g., Cloud KMS keys).
   @$pb.TagNumber(6)
-  $4392.EncryptionConfiguration get destinationEncryptionConfiguration => $_getN(5);
+  $4393.EncryptionConfiguration get destinationEncryptionConfiguration => $_getN(5);
   @$pb.TagNumber(6)
-  set destinationEncryptionConfiguration($4392.EncryptionConfiguration v) { setField(6, v); }
+  set destinationEncryptionConfiguration($4393.EncryptionConfiguration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDestinationEncryptionConfiguration() => $_has(5);
   @$pb.TagNumber(6)
   void clearDestinationEncryptionConfiguration() => clearField(6);
   @$pb.TagNumber(6)
-  $4392.EncryptionConfiguration ensureDestinationEncryptionConfiguration() => $_ensure(5);
+  $4393.EncryptionConfiguration ensureDestinationEncryptionConfiguration() => $_ensure(5);
 
   /// Optional. Supported operation types in table copy job.
   @$pb.TagNumber(8)
@@ -1753,21 +1753,21 @@ class JobConfigurationTableCopy extends $pb.GeneratedMessage {
   /// Optional. The time when the destination table expires. Expired tables will
   /// be deleted and their storage reclaimed.
   @$pb.TagNumber(9)
-  $1775.Timestamp get destinationExpirationTime => $_getN(7);
+  $1776.Timestamp get destinationExpirationTime => $_getN(7);
   @$pb.TagNumber(9)
-  set destinationExpirationTime($1775.Timestamp v) { setField(9, v); }
+  set destinationExpirationTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDestinationExpirationTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearDestinationExpirationTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureDestinationExpirationTime() => $_ensure(7);
+  $1776.Timestamp ensureDestinationExpirationTime() => $_ensure(7);
 }
 
 /// Options related to model extraction.
 class JobConfigurationExtract_ModelExtractOptions extends $pb.GeneratedMessage {
   factory JobConfigurationExtract_ModelExtractOptions({
-    $1780.Int64Value? trialId,
+    $1781.Int64Value? trialId,
   }) {
     final $result = create();
     if (trialId != null) {
@@ -1780,7 +1780,7 @@ class JobConfigurationExtract_ModelExtractOptions extends $pb.GeneratedMessage {
   factory JobConfigurationExtract_ModelExtractOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobConfigurationExtract.ModelExtractOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'trialId', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'trialId', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1811,15 +1811,15 @@ class JobConfigurationExtract_ModelExtractOptions extends $pb.GeneratedMessage {
   /// is exported. This field is ignored for models not trained with
   /// hyperparameter tuning.
   @$pb.TagNumber(1)
-  $1780.Int64Value get trialId => $_getN(0);
+  $1781.Int64Value get trialId => $_getN(0);
   @$pb.TagNumber(1)
-  set trialId($1780.Int64Value v) { setField(1, v); }
+  set trialId($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTrialId() => $_has(0);
   @$pb.TagNumber(1)
   void clearTrialId() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureTrialId() => $_ensure(0);
+  $1781.Int64Value ensureTrialId() => $_ensure(0);
 }
 
 enum JobConfigurationExtract_Source {
@@ -1832,14 +1832,14 @@ enum JobConfigurationExtract_Source {
 /// table into Google Cloud Storage.
 class JobConfigurationExtract extends $pb.GeneratedMessage {
   factory JobConfigurationExtract({
-    $4390.TableReference? sourceTable,
+    $4391.TableReference? sourceTable,
     $core.Iterable<$core.String>? destinationUris,
-    $1780.BoolValue? printHeader,
+    $1781.BoolValue? printHeader,
     $core.String? fieldDelimiter,
     $core.String? destinationFormat,
     $core.String? compression,
-    $4410.ModelReference? sourceModel,
-    $1780.BoolValue? useAvroLogicalTypes,
+    $4411.ModelReference? sourceModel,
+    $1781.BoolValue? useAvroLogicalTypes,
     JobConfigurationExtract_ModelExtractOptions? modelExtractOptions,
   }) {
     final $result = create();
@@ -1883,14 +1883,14 @@ class JobConfigurationExtract extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobConfigurationExtract', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..oo(0, [1, 9])
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'sourceTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'sourceTable', subBuilder: $4391.TableReference.create)
     ..pPS(3, _omitFieldNames ? '' : 'destinationUris')
-    ..aOM<$1780.BoolValue>(4, _omitFieldNames ? '' : 'printHeader', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(4, _omitFieldNames ? '' : 'printHeader', subBuilder: $1781.BoolValue.create)
     ..aOS(5, _omitFieldNames ? '' : 'fieldDelimiter')
     ..aOS(6, _omitFieldNames ? '' : 'destinationFormat')
     ..aOS(7, _omitFieldNames ? '' : 'compression')
-    ..aOM<$4410.ModelReference>(9, _omitFieldNames ? '' : 'sourceModel', subBuilder: $4410.ModelReference.create)
-    ..aOM<$1780.BoolValue>(13, _omitFieldNames ? '' : 'useAvroLogicalTypes', subBuilder: $1780.BoolValue.create)
+    ..aOM<$4411.ModelReference>(9, _omitFieldNames ? '' : 'sourceModel', subBuilder: $4411.ModelReference.create)
+    ..aOM<$1781.BoolValue>(13, _omitFieldNames ? '' : 'useAvroLogicalTypes', subBuilder: $1781.BoolValue.create)
     ..aOM<JobConfigurationExtract_ModelExtractOptions>(14, _omitFieldNames ? '' : 'modelExtractOptions', subBuilder: JobConfigurationExtract_ModelExtractOptions.create)
     ..hasRequiredFields = false
   ;
@@ -1921,15 +1921,15 @@ class JobConfigurationExtract extends $pb.GeneratedMessage {
 
   /// A reference to the table being exported.
   @$pb.TagNumber(1)
-  $4390.TableReference get sourceTable => $_getN(0);
+  $4391.TableReference get sourceTable => $_getN(0);
   @$pb.TagNumber(1)
-  set sourceTable($4390.TableReference v) { setField(1, v); }
+  set sourceTable($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSourceTable() => $_has(0);
   @$pb.TagNumber(1)
   void clearSourceTable() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureSourceTable() => $_ensure(0);
+  $4391.TableReference ensureSourceTable() => $_ensure(0);
 
   /// [Pick one] A list of fully-qualified Google Cloud Storage URIs where the
   /// extracted table should be written.
@@ -1939,15 +1939,15 @@ class JobConfigurationExtract extends $pb.GeneratedMessage {
   /// Optional. Whether to print out a header row in the results.
   /// Default is true. Not applicable when extracting models.
   @$pb.TagNumber(4)
-  $1780.BoolValue get printHeader => $_getN(2);
+  $1781.BoolValue get printHeader => $_getN(2);
   @$pb.TagNumber(4)
-  set printHeader($1780.BoolValue v) { setField(4, v); }
+  set printHeader($1781.BoolValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPrintHeader() => $_has(2);
   @$pb.TagNumber(4)
   void clearPrintHeader() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.BoolValue ensurePrintHeader() => $_ensure(2);
+  $1781.BoolValue ensurePrintHeader() => $_ensure(2);
 
   /// Optional. When extracting data in CSV format, this defines the
   /// delimiter to use between fields in the exported data.
@@ -1991,28 +1991,28 @@ class JobConfigurationExtract extends $pb.GeneratedMessage {
 
   /// A reference to the model being exported.
   @$pb.TagNumber(9)
-  $4410.ModelReference get sourceModel => $_getN(6);
+  $4411.ModelReference get sourceModel => $_getN(6);
   @$pb.TagNumber(9)
-  set sourceModel($4410.ModelReference v) { setField(9, v); }
+  set sourceModel($4411.ModelReference v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSourceModel() => $_has(6);
   @$pb.TagNumber(9)
   void clearSourceModel() => clearField(9);
   @$pb.TagNumber(9)
-  $4410.ModelReference ensureSourceModel() => $_ensure(6);
+  $4411.ModelReference ensureSourceModel() => $_ensure(6);
 
   /// Whether to use logical types when extracting to AVRO format. Not applicable
   /// when extracting models.
   @$pb.TagNumber(13)
-  $1780.BoolValue get useAvroLogicalTypes => $_getN(7);
+  $1781.BoolValue get useAvroLogicalTypes => $_getN(7);
   @$pb.TagNumber(13)
-  set useAvroLogicalTypes($1780.BoolValue v) { setField(13, v); }
+  set useAvroLogicalTypes($1781.BoolValue v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasUseAvroLogicalTypes() => $_has(7);
   @$pb.TagNumber(13)
   void clearUseAvroLogicalTypes() => clearField(13);
   @$pb.TagNumber(13)
-  $1780.BoolValue ensureUseAvroLogicalTypes() => $_ensure(7);
+  $1781.BoolValue ensureUseAvroLogicalTypes() => $_ensure(7);
 
   /// Optional. Model extract options only applicable when extracting models.
   @$pb.TagNumber(14)
@@ -2033,8 +2033,8 @@ class JobConfiguration extends $pb.GeneratedMessage {
     JobConfigurationLoad? load,
     JobConfigurationTableCopy? copy,
     JobConfigurationExtract? extract,
-    $1780.BoolValue? dryRun,
-    $1780.Int64Value? jobTimeoutMs,
+    $1781.BoolValue? dryRun,
+    $1781.Int64Value? jobTimeoutMs,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? jobType,
   }) {
@@ -2074,8 +2074,8 @@ class JobConfiguration extends $pb.GeneratedMessage {
     ..aOM<JobConfigurationLoad>(2, _omitFieldNames ? '' : 'load', subBuilder: JobConfigurationLoad.create)
     ..aOM<JobConfigurationTableCopy>(3, _omitFieldNames ? '' : 'copy', subBuilder: JobConfigurationTableCopy.create)
     ..aOM<JobConfigurationExtract>(4, _omitFieldNames ? '' : 'extract', subBuilder: JobConfigurationExtract.create)
-    ..aOM<$1780.BoolValue>(5, _omitFieldNames ? '' : 'dryRun', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.Int64Value>(6, _omitFieldNames ? '' : 'jobTimeoutMs', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.BoolValue>(5, _omitFieldNames ? '' : 'dryRun', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.Int64Value>(6, _omitFieldNames ? '' : 'jobTimeoutMs', subBuilder: $1781.Int64Value.create)
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'JobConfiguration.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
     ..aOS(8, _omitFieldNames ? '' : 'jobType')
     ..hasRequiredFields = false
@@ -2155,15 +2155,15 @@ class JobConfiguration extends $pb.GeneratedMessage {
   /// query will return the same error it would if it wasn't a dry run. Behavior
   /// of non-query jobs is undefined.
   @$pb.TagNumber(5)
-  $1780.BoolValue get dryRun => $_getN(4);
+  $1781.BoolValue get dryRun => $_getN(4);
   @$pb.TagNumber(5)
-  set dryRun($1780.BoolValue v) { setField(5, v); }
+  set dryRun($1781.BoolValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDryRun() => $_has(4);
   @$pb.TagNumber(5)
   void clearDryRun() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.BoolValue ensureDryRun() => $_ensure(4);
+  $1781.BoolValue ensureDryRun() => $_ensure(4);
 
   /// Optional. Job timeout in milliseconds. If this time limit is exceeded,
   /// BigQuery will attempt to stop a longer job, but may not always succeed in
@@ -2171,15 +2171,15 @@ class JobConfiguration extends $pb.GeneratedMessage {
   /// than 60 seconds to complete has a better chance of being stopped than a job
   /// that takes 10 seconds to complete.
   @$pb.TagNumber(6)
-  $1780.Int64Value get jobTimeoutMs => $_getN(5);
+  $1781.Int64Value get jobTimeoutMs => $_getN(5);
   @$pb.TagNumber(6)
-  set jobTimeoutMs($1780.Int64Value v) { setField(6, v); }
+  set jobTimeoutMs($1781.Int64Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasJobTimeoutMs() => $_has(5);
   @$pb.TagNumber(6)
   void clearJobTimeoutMs() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int64Value ensureJobTimeoutMs() => $_ensure(5);
+  $1781.Int64Value ensureJobTimeoutMs() => $_ensure(5);
 
   /// The labels associated with this job. You can use these to organize and
   /// group your jobs.

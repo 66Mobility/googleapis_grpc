@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'merchant_center_account_link.pb.dart' as $4597;
+import 'merchant_center_account_link.pb.dart' as $4599;
 
 /// Request for
 /// [MerchantCenterAccountLinkService.ListMerchantCenterAccountLinks][google.cloud.retail.v2alpha.MerchantCenterAccountLinkService.ListMerchantCenterAccountLinks]
@@ -76,7 +76,7 @@ class ListMerchantCenterAccountLinksRequest extends $pb.GeneratedMessage {
 /// method.
 class ListMerchantCenterAccountLinksResponse extends $pb.GeneratedMessage {
   factory ListMerchantCenterAccountLinksResponse({
-    $core.Iterable<$4597.MerchantCenterAccountLink>? merchantCenterAccountLinks,
+    $core.Iterable<$4599.MerchantCenterAccountLink>? merchantCenterAccountLinks,
   }) {
     final $result = create();
     if (merchantCenterAccountLinks != null) {
@@ -89,7 +89,7 @@ class ListMerchantCenterAccountLinksResponse extends $pb.GeneratedMessage {
   factory ListMerchantCenterAccountLinksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMerchantCenterAccountLinksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
-    ..pc<$4597.MerchantCenterAccountLink>(1, _omitFieldNames ? '' : 'merchantCenterAccountLinks', $pb.PbFieldType.PM, subBuilder: $4597.MerchantCenterAccountLink.create)
+    ..pc<$4599.MerchantCenterAccountLink>(1, _omitFieldNames ? '' : 'merchantCenterAccountLinks', $pb.PbFieldType.PM, subBuilder: $4599.MerchantCenterAccountLink.create)
     ..hasRequiredFields = false
   ;
 
@@ -116,7 +116,7 @@ class ListMerchantCenterAccountLinksResponse extends $pb.GeneratedMessage {
 
   /// The links.
   @$pb.TagNumber(1)
-  $core.List<$4597.MerchantCenterAccountLink> get merchantCenterAccountLinks => $_getList(0);
+  $core.List<$4599.MerchantCenterAccountLink> get merchantCenterAccountLinks => $_getList(0);
 }
 
 /// Request for
@@ -125,7 +125,7 @@ class ListMerchantCenterAccountLinksResponse extends $pb.GeneratedMessage {
 class CreateMerchantCenterAccountLinkRequest extends $pb.GeneratedMessage {
   factory CreateMerchantCenterAccountLinkRequest({
     $core.String? parent,
-    $4597.MerchantCenterAccountLink? merchantCenterAccountLink,
+    $4599.MerchantCenterAccountLink? merchantCenterAccountLink,
   }) {
     final $result = create();
     if (parent != null) {
@@ -142,7 +142,7 @@ class CreateMerchantCenterAccountLinkRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateMerchantCenterAccountLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4597.MerchantCenterAccountLink>(2, _omitFieldNames ? '' : 'merchantCenterAccountLink', subBuilder: $4597.MerchantCenterAccountLink.create)
+    ..aOM<$4599.MerchantCenterAccountLink>(2, _omitFieldNames ? '' : 'merchantCenterAccountLink', subBuilder: $4599.MerchantCenterAccountLink.create)
     ..hasRequiredFields = false
   ;
 
@@ -188,15 +188,15 @@ class CreateMerchantCenterAccountLinkRequest extends $pb.GeneratedMessage {
   ///  regardless of whether or not it exists, a PERMISSION_DENIED error is
   ///  returned.
   @$pb.TagNumber(2)
-  $4597.MerchantCenterAccountLink get merchantCenterAccountLink => $_getN(1);
+  $4599.MerchantCenterAccountLink get merchantCenterAccountLink => $_getN(1);
   @$pb.TagNumber(2)
-  set merchantCenterAccountLink($4597.MerchantCenterAccountLink v) { setField(2, v); }
+  set merchantCenterAccountLink($4599.MerchantCenterAccountLink v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMerchantCenterAccountLink() => $_has(1);
   @$pb.TagNumber(2)
   void clearMerchantCenterAccountLink() => clearField(2);
   @$pb.TagNumber(2)
-  $4597.MerchantCenterAccountLink ensureMerchantCenterAccountLink() => $_ensure(1);
+  $4599.MerchantCenterAccountLink ensureMerchantCenterAccountLink() => $_ensure(1);
 }
 
 /// Request for

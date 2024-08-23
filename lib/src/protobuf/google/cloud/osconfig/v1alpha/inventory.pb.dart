@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
 import 'inventory.pbenum.dart';
 
 export 'inventory.pbenum.dart';
@@ -193,8 +193,8 @@ class Inventory_Item extends $pb.GeneratedMessage {
     Inventory_Item_Type? type,
     Inventory_SoftwarePackage? installedPackage,
     Inventory_SoftwarePackage? availablePackage,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (id != null) {
@@ -236,8 +236,8 @@ class Inventory_Item extends $pb.GeneratedMessage {
     ..e<Inventory_Item_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Inventory_Item_Type.TYPE_UNSPECIFIED, valueOf: Inventory_Item_Type.valueOf, enumValues: Inventory_Item_Type.values)
     ..aOM<Inventory_SoftwarePackage>(6, _omitFieldNames ? '' : 'installedPackage', subBuilder: Inventory_SoftwarePackage.create)
     ..aOM<Inventory_SoftwarePackage>(7, _omitFieldNames ? '' : 'availablePackage', subBuilder: Inventory_SoftwarePackage.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -321,27 +321,27 @@ class Inventory_Item extends $pb.GeneratedMessage {
 
   /// When this inventory item was first detected.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// When this inventory item was last modified.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 }
 
 enum Inventory_SoftwarePackage_Details {
@@ -839,7 +839,7 @@ class Inventory_WindowsUpdatePackage extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? moreInfoUrls,
     $core.String? updateId,
     $core.int? revisionNumber,
-    $1775.Timestamp? lastDeploymentChangeTime,
+    $1776.Timestamp? lastDeploymentChangeTime,
     $core.String? supportUrl,
   }) {
     final $result = create();
@@ -884,7 +884,7 @@ class Inventory_WindowsUpdatePackage extends $pb.GeneratedMessage {
     ..pPS(5, _omitFieldNames ? '' : 'moreInfoUrls')
     ..aOS(6, _omitFieldNames ? '' : 'updateId')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'revisionNumber', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'lastDeploymentChangeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'lastDeploymentChangeTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'supportUrl')
     ..hasRequiredFields = false
   ;
@@ -967,15 +967,15 @@ class Inventory_WindowsUpdatePackage extends $pb.GeneratedMessage {
 
   /// The last published date of the update, in (UTC) date and time.
   @$pb.TagNumber(10)
-  $1775.Timestamp get lastDeploymentChangeTime => $_getN(7);
+  $1776.Timestamp get lastDeploymentChangeTime => $_getN(7);
   @$pb.TagNumber(10)
-  set lastDeploymentChangeTime($1775.Timestamp v) { setField(10, v); }
+  set lastDeploymentChangeTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasLastDeploymentChangeTime() => $_has(7);
   @$pb.TagNumber(10)
   void clearLastDeploymentChangeTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureLastDeploymentChangeTime() => $_ensure(7);
+  $1776.Timestamp ensureLastDeploymentChangeTime() => $_ensure(7);
 
   /// A hyperlink to the language-specific support information for the update.
   @$pb.TagNumber(11)
@@ -997,7 +997,7 @@ class Inventory_WindowsQuickFixEngineeringPackage extends $pb.GeneratedMessage {
     $core.String? caption,
     $core.String? description,
     $core.String? hotFixId,
-    $1775.Timestamp? installTime,
+    $1776.Timestamp? installTime,
   }) {
     final $result = create();
     if (caption != null) {
@@ -1022,7 +1022,7 @@ class Inventory_WindowsQuickFixEngineeringPackage extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'caption')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'hotFixId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'installTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'installTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1079,15 +1079,15 @@ class Inventory_WindowsQuickFixEngineeringPackage extends $pb.GeneratedMessage {
 
   /// Date that the QFE update was installed.  Mapped from installed_on field.
   @$pb.TagNumber(5)
-  $1775.Timestamp get installTime => $_getN(3);
+  $1776.Timestamp get installTime => $_getN(3);
   @$pb.TagNumber(5)
-  set installTime($1775.Timestamp v) { setField(5, v); }
+  set installTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInstallTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearInstallTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureInstallTime() => $_ensure(3);
+  $1776.Timestamp ensureInstallTime() => $_ensure(3);
 }
 
 /// Contains information about a Windows application that is retrieved from the
@@ -1098,7 +1098,7 @@ class Inventory_WindowsApplication extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? displayVersion,
     $core.String? publisher,
-    $1800.Date? installDate,
+    $1801.Date? installDate,
     $core.String? helpLink,
   }) {
     final $result = create();
@@ -1127,7 +1127,7 @@ class Inventory_WindowsApplication extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
     ..aOS(2, _omitFieldNames ? '' : 'displayVersion')
     ..aOS(3, _omitFieldNames ? '' : 'publisher')
-    ..aOM<$1800.Date>(4, _omitFieldNames ? '' : 'installDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(4, _omitFieldNames ? '' : 'installDate', subBuilder: $1801.Date.create)
     ..aOS(5, _omitFieldNames ? '' : 'helpLink')
     ..hasRequiredFields = false
   ;
@@ -1187,15 +1187,15 @@ class Inventory_WindowsApplication extends $pb.GeneratedMessage {
   /// is replaced each time a patch is applied or removed from the product or
   /// the command-line option is used to repair the product.
   @$pb.TagNumber(4)
-  $1800.Date get installDate => $_getN(3);
+  $1801.Date get installDate => $_getN(3);
   @$pb.TagNumber(4)
-  set installDate($1800.Date v) { setField(4, v); }
+  set installDate($1801.Date v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInstallDate() => $_has(3);
   @$pb.TagNumber(4)
   void clearInstallDate() => clearField(4);
   @$pb.TagNumber(4)
-  $1800.Date ensureInstallDate() => $_ensure(3);
+  $1801.Date ensureInstallDate() => $_ensure(3);
 
   /// The internet address for technical support.
   @$pb.TagNumber(5)
@@ -1220,7 +1220,7 @@ class Inventory extends $pb.GeneratedMessage {
     Inventory_OsInfo? osInfo,
     $core.Map<$core.String, Inventory_Item>? items,
     $core.String? name,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (osInfo != null) {
@@ -1245,7 +1245,7 @@ class Inventory extends $pb.GeneratedMessage {
     ..aOM<Inventory_OsInfo>(1, _omitFieldNames ? '' : 'osInfo', subBuilder: Inventory_OsInfo.create)
     ..m<$core.String, Inventory_Item>(2, _omitFieldNames ? '' : 'items', entryClassName: 'Inventory.ItemsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Inventory_Item.create, valueDefaultOrMaker: Inventory_Item.getDefault, packageName: const $pb.PackageName('google.cloud.osconfig.v1alpha'))
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1304,15 +1304,15 @@ class Inventory extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp of the last reported inventory for the VM.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
 /// A request message for getting inventory data for the specified VM.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'actor.pb.dart' as $4688;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'actor.pb.dart' as $4690;
 import 'case.pbenum.dart';
 
 export 'case.pbenum.dart';
@@ -29,9 +29,9 @@ class Case extends $pb.GeneratedMessage {
     $core.String? timeZone,
     $core.Iterable<$core.String>? subscriberEmailAddresses,
     Case_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4688.Actor? creator,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4690.Actor? creator,
     $core.bool? escalated,
     $core.bool? testCase,
     $core.String? languageCode,
@@ -98,9 +98,9 @@ class Case extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'timeZone')
     ..pPS(9, _omitFieldNames ? '' : 'subscriberEmailAddresses')
     ..e<Case_State>(12, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Case_State.STATE_UNSPECIFIED, valueOf: Case_State.valueOf, enumValues: Case_State.values)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4688.Actor>(15, _omitFieldNames ? '' : 'creator', subBuilder: $4688.Actor.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4690.Actor>(15, _omitFieldNames ? '' : 'creator', subBuilder: $4690.Actor.create)
     ..aOB(17, _omitFieldNames ? '' : 'escalated')
     ..aOB(19, _omitFieldNames ? '' : 'testCase')
     ..aOS(23, _omitFieldNames ? '' : 'languageCode')
@@ -200,42 +200,42 @@ class Case extends $pb.GeneratedMessage {
 
   /// Output only. The time this case was created.
   @$pb.TagNumber(13)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(13)
-  set createTime($1775.Timestamp v) { setField(13, v); }
+  set createTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(13)
   void clearCreateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The time this case was last updated.
   @$pb.TagNumber(14)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(14)
-  set updateTime($1775.Timestamp v) { setField(14, v); }
+  set updateTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(14)
   void clearUpdateTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   ///  The user who created the case.
   ///
   ///  Note: The name and email will be obfuscated if the case was created by
   ///  Google Support.
   @$pb.TagNumber(15)
-  $4688.Actor get creator => $_getN(9);
+  $4690.Actor get creator => $_getN(9);
   @$pb.TagNumber(15)
-  set creator($4688.Actor v) { setField(15, v); }
+  set creator($4690.Actor v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasCreator() => $_has(9);
   @$pb.TagNumber(15)
   void clearCreator() => clearField(15);
   @$pb.TagNumber(15)
-  $4688.Actor ensureCreator() => $_ensure(9);
+  $4690.Actor ensureCreator() => $_ensure(9);
 
   /// Whether the case is currently escalated.
   @$pb.TagNumber(17)

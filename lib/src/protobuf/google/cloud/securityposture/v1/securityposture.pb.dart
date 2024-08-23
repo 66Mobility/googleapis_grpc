@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'org_policy_constraints.pb.dart' as $4687;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'org_policy_constraints.pb.dart' as $4689;
 import 'securityposture.pbenum.dart';
-import 'sha_constraints.pb.dart' as $4686;
+import 'sha_constraints.pb.dart' as $4688;
 
 export 'securityposture.pbenum.dart';
 
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -65,8 +65,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securityposture.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -99,27 +99,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -195,8 +195,8 @@ class Posture extends $pb.GeneratedMessage {
     $core.String? name,
     Posture_State? state,
     $core.String? revisionId,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.Iterable<PolicySet>? policySets,
     $core.String? etag,
@@ -244,8 +244,8 @@ class Posture extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<Posture_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Posture_State.STATE_UNSPECIFIED, valueOf: Posture_State.valueOf, enumValues: Posture_State.values)
     ..aOS(3, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..pc<PolicySet>(7, _omitFieldNames ? '' : 'policySets', $pb.PbFieldType.PM, subBuilder: PolicySet.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
@@ -310,27 +310,27 @@ class Posture extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp that the posture was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The timestamp that the posture was updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User provided description of the posture.
   @$pb.TagNumber(6)
@@ -631,10 +631,10 @@ enum Constraint_Implementation {
 /// Representation of a Constraint.
 class Constraint extends $pb.GeneratedMessage {
   factory Constraint({
-    $4686.SecurityHealthAnalyticsModule? securityHealthAnalyticsModule,
-    $4686.SecurityHealthAnalyticsCustomModule? securityHealthAnalyticsCustomModule,
-    $4687.OrgPolicyConstraint? orgPolicyConstraint,
-    $4687.OrgPolicyConstraintCustom? orgPolicyConstraintCustom,
+    $4688.SecurityHealthAnalyticsModule? securityHealthAnalyticsModule,
+    $4688.SecurityHealthAnalyticsCustomModule? securityHealthAnalyticsCustomModule,
+    $4689.OrgPolicyConstraint? orgPolicyConstraint,
+    $4689.OrgPolicyConstraintCustom? orgPolicyConstraintCustom,
   }) {
     final $result = create();
     if (securityHealthAnalyticsModule != null) {
@@ -664,10 +664,10 @@ class Constraint extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Constraint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securityposture.v1'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5, 6])
-    ..aOM<$4686.SecurityHealthAnalyticsModule>(3, _omitFieldNames ? '' : 'securityHealthAnalyticsModule', subBuilder: $4686.SecurityHealthAnalyticsModule.create)
-    ..aOM<$4686.SecurityHealthAnalyticsCustomModule>(4, _omitFieldNames ? '' : 'securityHealthAnalyticsCustomModule', subBuilder: $4686.SecurityHealthAnalyticsCustomModule.create)
-    ..aOM<$4687.OrgPolicyConstraint>(5, _omitFieldNames ? '' : 'orgPolicyConstraint', subBuilder: $4687.OrgPolicyConstraint.create)
-    ..aOM<$4687.OrgPolicyConstraintCustom>(6, _omitFieldNames ? '' : 'orgPolicyConstraintCustom', subBuilder: $4687.OrgPolicyConstraintCustom.create)
+    ..aOM<$4688.SecurityHealthAnalyticsModule>(3, _omitFieldNames ? '' : 'securityHealthAnalyticsModule', subBuilder: $4688.SecurityHealthAnalyticsModule.create)
+    ..aOM<$4688.SecurityHealthAnalyticsCustomModule>(4, _omitFieldNames ? '' : 'securityHealthAnalyticsCustomModule', subBuilder: $4688.SecurityHealthAnalyticsCustomModule.create)
+    ..aOM<$4689.OrgPolicyConstraint>(5, _omitFieldNames ? '' : 'orgPolicyConstraint', subBuilder: $4689.OrgPolicyConstraint.create)
+    ..aOM<$4689.OrgPolicyConstraintCustom>(6, _omitFieldNames ? '' : 'orgPolicyConstraintCustom', subBuilder: $4689.OrgPolicyConstraintCustom.create)
     ..hasRequiredFields = false
   ;
 
@@ -697,51 +697,51 @@ class Constraint extends $pb.GeneratedMessage {
 
   /// Optional. SHA built-in detector.
   @$pb.TagNumber(3)
-  $4686.SecurityHealthAnalyticsModule get securityHealthAnalyticsModule => $_getN(0);
+  $4688.SecurityHealthAnalyticsModule get securityHealthAnalyticsModule => $_getN(0);
   @$pb.TagNumber(3)
-  set securityHealthAnalyticsModule($4686.SecurityHealthAnalyticsModule v) { setField(3, v); }
+  set securityHealthAnalyticsModule($4688.SecurityHealthAnalyticsModule v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSecurityHealthAnalyticsModule() => $_has(0);
   @$pb.TagNumber(3)
   void clearSecurityHealthAnalyticsModule() => clearField(3);
   @$pb.TagNumber(3)
-  $4686.SecurityHealthAnalyticsModule ensureSecurityHealthAnalyticsModule() => $_ensure(0);
+  $4688.SecurityHealthAnalyticsModule ensureSecurityHealthAnalyticsModule() => $_ensure(0);
 
   /// Optional. SHA custom detector.
   @$pb.TagNumber(4)
-  $4686.SecurityHealthAnalyticsCustomModule get securityHealthAnalyticsCustomModule => $_getN(1);
+  $4688.SecurityHealthAnalyticsCustomModule get securityHealthAnalyticsCustomModule => $_getN(1);
   @$pb.TagNumber(4)
-  set securityHealthAnalyticsCustomModule($4686.SecurityHealthAnalyticsCustomModule v) { setField(4, v); }
+  set securityHealthAnalyticsCustomModule($4688.SecurityHealthAnalyticsCustomModule v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSecurityHealthAnalyticsCustomModule() => $_has(1);
   @$pb.TagNumber(4)
   void clearSecurityHealthAnalyticsCustomModule() => clearField(4);
   @$pb.TagNumber(4)
-  $4686.SecurityHealthAnalyticsCustomModule ensureSecurityHealthAnalyticsCustomModule() => $_ensure(1);
+  $4688.SecurityHealthAnalyticsCustomModule ensureSecurityHealthAnalyticsCustomModule() => $_ensure(1);
 
   /// Optional. Org Policy builtin constraint.
   @$pb.TagNumber(5)
-  $4687.OrgPolicyConstraint get orgPolicyConstraint => $_getN(2);
+  $4689.OrgPolicyConstraint get orgPolicyConstraint => $_getN(2);
   @$pb.TagNumber(5)
-  set orgPolicyConstraint($4687.OrgPolicyConstraint v) { setField(5, v); }
+  set orgPolicyConstraint($4689.OrgPolicyConstraint v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOrgPolicyConstraint() => $_has(2);
   @$pb.TagNumber(5)
   void clearOrgPolicyConstraint() => clearField(5);
   @$pb.TagNumber(5)
-  $4687.OrgPolicyConstraint ensureOrgPolicyConstraint() => $_ensure(2);
+  $4689.OrgPolicyConstraint ensureOrgPolicyConstraint() => $_ensure(2);
 
   /// Optional. Org Policy custom constraint.
   @$pb.TagNumber(6)
-  $4687.OrgPolicyConstraintCustom get orgPolicyConstraintCustom => $_getN(3);
+  $4689.OrgPolicyConstraintCustom get orgPolicyConstraintCustom => $_getN(3);
   @$pb.TagNumber(6)
-  set orgPolicyConstraintCustom($4687.OrgPolicyConstraintCustom v) { setField(6, v); }
+  set orgPolicyConstraintCustom($4689.OrgPolicyConstraintCustom v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOrgPolicyConstraintCustom() => $_has(3);
   @$pb.TagNumber(6)
   void clearOrgPolicyConstraintCustom() => clearField(6);
   @$pb.TagNumber(6)
-  $4687.OrgPolicyConstraintCustom ensureOrgPolicyConstraintCustom() => $_ensure(3);
+  $4689.OrgPolicyConstraintCustom ensureOrgPolicyConstraintCustom() => $_ensure(3);
 }
 
 /// Message for requesting list of Postures.
@@ -1196,7 +1196,7 @@ class CreatePostureRequest extends $pb.GeneratedMessage {
 /// Message for updating a Posture.
 class UpdatePostureRequest extends $pb.GeneratedMessage {
   factory UpdatePostureRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Posture? posture,
     $core.String? revisionId,
   }) {
@@ -1217,7 +1217,7 @@ class UpdatePostureRequest extends $pb.GeneratedMessage {
   factory UpdatePostureRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePostureRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securityposture.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Posture>(2, _omitFieldNames ? '' : 'posture', subBuilder: Posture.create)
     ..aOS(3, _omitFieldNames ? '' : 'revisionId')
     ..hasRequiredFields = false
@@ -1250,15 +1250,15 @@ class UpdatePostureRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)
@@ -1447,8 +1447,8 @@ class PostureDeployment extends $pb.GeneratedMessage {
     PostureDeployment_State? state,
     $core.String? postureId,
     $core.String? postureRevisionId,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? annotations,
@@ -1512,8 +1512,8 @@ class PostureDeployment extends $pb.GeneratedMessage {
     ..e<PostureDeployment_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PostureDeployment_State.STATE_UNSPECIFIED, valueOf: PostureDeployment_State.valueOf, enumValues: PostureDeployment_State.values)
     ..aOS(3, _omitFieldNames ? '' : 'postureId')
     ..aOS(4, _omitFieldNames ? '' : 'postureRevisionId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'annotations', entryClassName: 'PostureDeployment.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.securityposture.v1'))
@@ -1593,27 +1593,27 @@ class PostureDeployment extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp that the PostureDeployment was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The timestamp that the PostureDeployment was updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Optional. User provided description of the PostureDeployment.
   @$pb.TagNumber(7)
@@ -2020,7 +2020,7 @@ class CreatePostureDeploymentRequest extends $pb.GeneratedMessage {
 /// Message for updating a PostureDeployment.
 class UpdatePostureDeploymentRequest extends $pb.GeneratedMessage {
   factory UpdatePostureDeploymentRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     PostureDeployment? postureDeployment,
   }) {
     final $result = create();
@@ -2037,7 +2037,7 @@ class UpdatePostureDeploymentRequest extends $pb.GeneratedMessage {
   factory UpdatePostureDeploymentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePostureDeploymentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securityposture.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<PostureDeployment>(2, _omitFieldNames ? '' : 'postureDeployment', subBuilder: PostureDeployment.create)
     ..hasRequiredFields = false
   ;
@@ -2069,15 +2069,15 @@ class UpdatePostureDeploymentRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)

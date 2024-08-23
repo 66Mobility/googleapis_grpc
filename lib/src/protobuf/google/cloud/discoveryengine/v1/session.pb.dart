@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'session.pbenum.dart';
 
 export 'session.pbenum.dart';
@@ -98,8 +98,8 @@ class Session extends $pb.GeneratedMessage {
     Session_State? state,
     $core.String? userPseudoId,
     $core.Iterable<Session_Turn>? turns,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -131,8 +131,8 @@ class Session extends $pb.GeneratedMessage {
     ..e<Session_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Session_State.STATE_UNSPECIFIED, valueOf: Session_State.valueOf, enumValues: Session_State.values)
     ..aOS(3, _omitFieldNames ? '' : 'userPseudoId')
     ..pc<Session_Turn>(4, _omitFieldNames ? '' : 'turns', $pb.PbFieldType.PM, subBuilder: Session_Turn.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -194,27 +194,27 @@ class Session extends $pb.GeneratedMessage {
 
   /// Output only. The time the session started.
   @$pb.TagNumber(5)
-  $1775.Timestamp get startTime => $_getN(4);
+  $1776.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(5)
-  set startTime($1775.Timestamp v) { setField(5, v); }
+  set startTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureStartTime() => $_ensure(4);
+  $1776.Timestamp ensureStartTime() => $_ensure(4);
 
   /// Output only. The time the session finished.
   @$pb.TagNumber(6)
-  $1775.Timestamp get endTime => $_getN(5);
+  $1776.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($1775.Timestamp v) { setField(6, v); }
+  set endTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEndTime() => $_ensure(5);
+  $1776.Timestamp ensureEndTime() => $_ensure(5);
 }
 
 enum Query_Content {

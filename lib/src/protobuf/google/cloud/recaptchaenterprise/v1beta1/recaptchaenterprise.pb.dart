@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'recaptchaenterprise.pbenum.dart';
 
 export 'recaptchaenterprise.pbenum.dart';
@@ -95,7 +95,7 @@ class TransactionEvent extends $pb.GeneratedMessage {
     TransactionEvent_TransactionEventType? eventType,
     $core.String? reason,
     $core.double? value,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
   }) {
     final $result = create();
     if (eventType != null) {
@@ -120,7 +120,7 @@ class TransactionEvent extends $pb.GeneratedMessage {
     ..e<TransactionEvent_TransactionEventType>(1, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: TransactionEvent_TransactionEventType.TRANSACTION_EVENT_TYPE_UNSPECIFIED, valueOf: TransactionEvent_TransactionEventType.valueOf, enumValues: TransactionEvent_TransactionEventType.values)
     ..aOS(2, _omitFieldNames ? '' : 'reason')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -182,15 +182,15 @@ class TransactionEvent extends $pb.GeneratedMessage {
   /// Optional. Timestamp when this transaction event occurred; otherwise assumed
   /// to be the time of the API call.
   @$pb.TagNumber(4)
-  $1775.Timestamp get eventTime => $_getN(3);
+  $1776.Timestamp get eventTime => $_getN(3);
   @$pb.TagNumber(4)
-  set eventTime($1775.Timestamp v) { setField(4, v); }
+  set eventTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEventTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEventTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEventTime() => $_ensure(3);
+  $1776.Timestamp ensureEventTime() => $_ensure(3);
 }
 
 /// The request message to annotate an Assessment.
@@ -1459,7 +1459,7 @@ class TokenProperties extends $pb.GeneratedMessage {
   factory TokenProperties({
     $core.bool? valid,
     TokenProperties_InvalidReason? invalidReason,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? hostname,
     $core.String? action,
   }) {
@@ -1488,7 +1488,7 @@ class TokenProperties extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TokenProperties', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recaptchaenterprise.v1beta1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'valid')
     ..e<TokenProperties_InvalidReason>(2, _omitFieldNames ? '' : 'invalidReason', $pb.PbFieldType.OE, defaultOrMaker: TokenProperties_InvalidReason.INVALID_REASON_UNSPECIFIED, valueOf: TokenProperties_InvalidReason.valueOf, enumValues: TokenProperties_InvalidReason.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'hostname')
     ..aOS(5, _omitFieldNames ? '' : 'action')
     ..hasRequiredFields = false
@@ -1541,15 +1541,15 @@ class TokenProperties extends $pb.GeneratedMessage {
 
   /// The timestamp corresponding to the generation of the token.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The hostname of the page on which the token was generated.
   @$pb.TagNumber(4)

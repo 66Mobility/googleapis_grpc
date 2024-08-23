@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3285;
-import '../enums/criterion_type.pbenum.dart' as $3555;
+import '../common/criteria.pb.dart' as $3286;
+import '../enums/criterion_type.pbenum.dart' as $3556;
 
 enum SharedCriterion_Criterion {
   keyword, 
@@ -32,16 +32,16 @@ enum SharedCriterion_Criterion {
 class SharedCriterion extends $pb.GeneratedMessage {
   factory SharedCriterion({
     $core.String? resourceName,
-    $3285.KeywordInfo? keyword,
-    $3555.CriterionTypeEnum_CriterionType? type,
-    $3285.YouTubeVideoInfo? youtubeVideo,
-    $3285.YouTubeChannelInfo? youtubeChannel,
-    $3285.PlacementInfo? placement,
-    $3285.MobileAppCategoryInfo? mobileAppCategory,
-    $3285.MobileApplicationInfo? mobileApplication,
+    $3286.KeywordInfo? keyword,
+    $3556.CriterionTypeEnum_CriterionType? type,
+    $3286.YouTubeVideoInfo? youtubeVideo,
+    $3286.YouTubeChannelInfo? youtubeChannel,
+    $3286.PlacementInfo? placement,
+    $3286.MobileAppCategoryInfo? mobileAppCategory,
+    $3286.MobileApplicationInfo? mobileApplication,
     $core.String? sharedSet,
     $fixnum.Int64? criterionId,
-    $3285.BrandInfo? brand,
+    $3286.BrandInfo? brand,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -96,16 +96,16 @@ class SharedCriterion extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SharedCriterion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [3, 5, 6, 7, 8, 9, 12])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3285.KeywordInfo>(3, _omitFieldNames ? '' : 'keyword', subBuilder: $3285.KeywordInfo.create)
-    ..e<$3555.CriterionTypeEnum_CriterionType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3555.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $3555.CriterionTypeEnum_CriterionType.valueOf, enumValues: $3555.CriterionTypeEnum_CriterionType.values)
-    ..aOM<$3285.YouTubeVideoInfo>(5, _omitFieldNames ? '' : 'youtubeVideo', subBuilder: $3285.YouTubeVideoInfo.create)
-    ..aOM<$3285.YouTubeChannelInfo>(6, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3285.YouTubeChannelInfo.create)
-    ..aOM<$3285.PlacementInfo>(7, _omitFieldNames ? '' : 'placement', subBuilder: $3285.PlacementInfo.create)
-    ..aOM<$3285.MobileAppCategoryInfo>(8, _omitFieldNames ? '' : 'mobileAppCategory', subBuilder: $3285.MobileAppCategoryInfo.create)
-    ..aOM<$3285.MobileApplicationInfo>(9, _omitFieldNames ? '' : 'mobileApplication', subBuilder: $3285.MobileApplicationInfo.create)
+    ..aOM<$3286.KeywordInfo>(3, _omitFieldNames ? '' : 'keyword', subBuilder: $3286.KeywordInfo.create)
+    ..e<$3556.CriterionTypeEnum_CriterionType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3556.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $3556.CriterionTypeEnum_CriterionType.valueOf, enumValues: $3556.CriterionTypeEnum_CriterionType.values)
+    ..aOM<$3286.YouTubeVideoInfo>(5, _omitFieldNames ? '' : 'youtubeVideo', subBuilder: $3286.YouTubeVideoInfo.create)
+    ..aOM<$3286.YouTubeChannelInfo>(6, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $3286.YouTubeChannelInfo.create)
+    ..aOM<$3286.PlacementInfo>(7, _omitFieldNames ? '' : 'placement', subBuilder: $3286.PlacementInfo.create)
+    ..aOM<$3286.MobileAppCategoryInfo>(8, _omitFieldNames ? '' : 'mobileAppCategory', subBuilder: $3286.MobileAppCategoryInfo.create)
+    ..aOM<$3286.MobileApplicationInfo>(9, _omitFieldNames ? '' : 'mobileApplication', subBuilder: $3286.MobileApplicationInfo.create)
     ..aOS(10, _omitFieldNames ? '' : 'sharedSet')
     ..aInt64(11, _omitFieldNames ? '' : 'criterionId')
-    ..aOM<$3285.BrandInfo>(12, _omitFieldNames ? '' : 'brand', subBuilder: $3285.BrandInfo.create)
+    ..aOM<$3286.BrandInfo>(12, _omitFieldNames ? '' : 'brand', subBuilder: $3286.BrandInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -148,21 +148,21 @@ class SharedCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Keyword.
   @$pb.TagNumber(3)
-  $3285.KeywordInfo get keyword => $_getN(1);
+  $3286.KeywordInfo get keyword => $_getN(1);
   @$pb.TagNumber(3)
-  set keyword($3285.KeywordInfo v) { setField(3, v); }
+  set keyword($3286.KeywordInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasKeyword() => $_has(1);
   @$pb.TagNumber(3)
   void clearKeyword() => clearField(3);
   @$pb.TagNumber(3)
-  $3285.KeywordInfo ensureKeyword() => $_ensure(1);
+  $3286.KeywordInfo ensureKeyword() => $_ensure(1);
 
   /// Output only. The type of the criterion.
   @$pb.TagNumber(4)
-  $3555.CriterionTypeEnum_CriterionType get type => $_getN(2);
+  $3556.CriterionTypeEnum_CriterionType get type => $_getN(2);
   @$pb.TagNumber(4)
-  set type($3555.CriterionTypeEnum_CriterionType v) { setField(4, v); }
+  set type($3556.CriterionTypeEnum_CriterionType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(4)
@@ -170,63 +170,63 @@ class SharedCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. YouTube Video.
   @$pb.TagNumber(5)
-  $3285.YouTubeVideoInfo get youtubeVideo => $_getN(3);
+  $3286.YouTubeVideoInfo get youtubeVideo => $_getN(3);
   @$pb.TagNumber(5)
-  set youtubeVideo($3285.YouTubeVideoInfo v) { setField(5, v); }
+  set youtubeVideo($3286.YouTubeVideoInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasYoutubeVideo() => $_has(3);
   @$pb.TagNumber(5)
   void clearYoutubeVideo() => clearField(5);
   @$pb.TagNumber(5)
-  $3285.YouTubeVideoInfo ensureYoutubeVideo() => $_ensure(3);
+  $3286.YouTubeVideoInfo ensureYoutubeVideo() => $_ensure(3);
 
   /// Immutable. YouTube Channel.
   @$pb.TagNumber(6)
-  $3285.YouTubeChannelInfo get youtubeChannel => $_getN(4);
+  $3286.YouTubeChannelInfo get youtubeChannel => $_getN(4);
   @$pb.TagNumber(6)
-  set youtubeChannel($3285.YouTubeChannelInfo v) { setField(6, v); }
+  set youtubeChannel($3286.YouTubeChannelInfo v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasYoutubeChannel() => $_has(4);
   @$pb.TagNumber(6)
   void clearYoutubeChannel() => clearField(6);
   @$pb.TagNumber(6)
-  $3285.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(4);
+  $3286.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(4);
 
   /// Immutable. Placement.
   @$pb.TagNumber(7)
-  $3285.PlacementInfo get placement => $_getN(5);
+  $3286.PlacementInfo get placement => $_getN(5);
   @$pb.TagNumber(7)
-  set placement($3285.PlacementInfo v) { setField(7, v); }
+  set placement($3286.PlacementInfo v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPlacement() => $_has(5);
   @$pb.TagNumber(7)
   void clearPlacement() => clearField(7);
   @$pb.TagNumber(7)
-  $3285.PlacementInfo ensurePlacement() => $_ensure(5);
+  $3286.PlacementInfo ensurePlacement() => $_ensure(5);
 
   /// Immutable. Mobile App Category.
   @$pb.TagNumber(8)
-  $3285.MobileAppCategoryInfo get mobileAppCategory => $_getN(6);
+  $3286.MobileAppCategoryInfo get mobileAppCategory => $_getN(6);
   @$pb.TagNumber(8)
-  set mobileAppCategory($3285.MobileAppCategoryInfo v) { setField(8, v); }
+  set mobileAppCategory($3286.MobileAppCategoryInfo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMobileAppCategory() => $_has(6);
   @$pb.TagNumber(8)
   void clearMobileAppCategory() => clearField(8);
   @$pb.TagNumber(8)
-  $3285.MobileAppCategoryInfo ensureMobileAppCategory() => $_ensure(6);
+  $3286.MobileAppCategoryInfo ensureMobileAppCategory() => $_ensure(6);
 
   /// Immutable. Mobile application.
   @$pb.TagNumber(9)
-  $3285.MobileApplicationInfo get mobileApplication => $_getN(7);
+  $3286.MobileApplicationInfo get mobileApplication => $_getN(7);
   @$pb.TagNumber(9)
-  set mobileApplication($3285.MobileApplicationInfo v) { setField(9, v); }
+  set mobileApplication($3286.MobileApplicationInfo v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasMobileApplication() => $_has(7);
   @$pb.TagNumber(9)
   void clearMobileApplication() => clearField(9);
   @$pb.TagNumber(9)
-  $3285.MobileApplicationInfo ensureMobileApplication() => $_ensure(7);
+  $3286.MobileApplicationInfo ensureMobileApplication() => $_ensure(7);
 
   /// Immutable. The shared set to which the shared criterion belongs.
   @$pb.TagNumber(10)
@@ -252,15 +252,15 @@ class SharedCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Brand.
   @$pb.TagNumber(12)
-  $3285.BrandInfo get brand => $_getN(10);
+  $3286.BrandInfo get brand => $_getN(10);
   @$pb.TagNumber(12)
-  set brand($3285.BrandInfo v) { setField(12, v); }
+  set brand($3286.BrandInfo v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasBrand() => $_has(10);
   @$pb.TagNumber(12)
   void clearBrand() => clearField(12);
   @$pb.TagNumber(12)
-  $3285.BrandInfo ensureBrand() => $_ensure(10);
+  $3286.BrandInfo ensureBrand() => $_ensure(10);
 }
 
 

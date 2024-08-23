@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'billing_accounts.pb.dart' as $4430;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'billing_accounts.pb.dart' as $4432;
 import 'channel_partner_links.pb.dart' as $752;
 import 'channel_partner_links.pbenum.dart' as $752;
-import 'common.pb.dart' as $4426;
+import 'common.pb.dart' as $4428;
 import 'customers.pb.dart' as $750;
-import 'entitlement_changes.pb.dart' as $4431;
+import 'entitlement_changes.pb.dart' as $4433;
 import 'entitlements.pb.dart' as $751;
 import 'offers.pb.dart' as $754;
-import 'products.pb.dart' as $4428;
+import 'products.pb.dart' as $4430;
 import 'repricing.pb.dart' as $753;
 import 'service.pbenum.dart';
 
@@ -550,7 +550,7 @@ class CreateCustomerRequest extends $pb.GeneratedMessage {
 class UpdateCustomerRequest extends $pb.GeneratedMessage {
   factory UpdateCustomerRequest({
     $750.Customer? customer,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (customer != null) {
@@ -567,7 +567,7 @@ class UpdateCustomerRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCustomerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOM<$750.Customer>(2, _omitFieldNames ? '' : 'customer', subBuilder: $750.Customer.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -607,15 +607,15 @@ class UpdateCustomerRequest extends $pb.GeneratedMessage {
   /// The update mask that applies to the resource.
   /// Optional.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -846,8 +846,8 @@ class ImportCustomerRequest extends $pb.GeneratedMessage {
 class ProvisionCloudIdentityRequest extends $pb.GeneratedMessage {
   factory ProvisionCloudIdentityRequest({
     $core.String? customer,
-    $4426.CloudIdentityInfo? cloudIdentityInfo,
-    $4426.AdminUser? user,
+    $4428.CloudIdentityInfo? cloudIdentityInfo,
+    $4428.AdminUser? user,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -871,8 +871,8 @@ class ProvisionCloudIdentityRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProvisionCloudIdentityRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customer')
-    ..aOM<$4426.CloudIdentityInfo>(2, _omitFieldNames ? '' : 'cloudIdentityInfo', subBuilder: $4426.CloudIdentityInfo.create)
-    ..aOM<$4426.AdminUser>(3, _omitFieldNames ? '' : 'user', subBuilder: $4426.AdminUser.create)
+    ..aOM<$4428.CloudIdentityInfo>(2, _omitFieldNames ? '' : 'cloudIdentityInfo', subBuilder: $4428.CloudIdentityInfo.create)
+    ..aOM<$4428.AdminUser>(3, _omitFieldNames ? '' : 'user', subBuilder: $4428.AdminUser.create)
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -911,27 +911,27 @@ class ProvisionCloudIdentityRequest extends $pb.GeneratedMessage {
 
   /// CloudIdentity-specific customer information.
   @$pb.TagNumber(2)
-  $4426.CloudIdentityInfo get cloudIdentityInfo => $_getN(1);
+  $4428.CloudIdentityInfo get cloudIdentityInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudIdentityInfo($4426.CloudIdentityInfo v) { setField(2, v); }
+  set cloudIdentityInfo($4428.CloudIdentityInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCloudIdentityInfo() => $_has(1);
   @$pb.TagNumber(2)
   void clearCloudIdentityInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $4426.CloudIdentityInfo ensureCloudIdentityInfo() => $_ensure(1);
+  $4428.CloudIdentityInfo ensureCloudIdentityInfo() => $_ensure(1);
 
   /// Admin user information.
   @$pb.TagNumber(3)
-  $4426.AdminUser get user => $_getN(2);
+  $4428.AdminUser get user => $_getN(2);
   @$pb.TagNumber(3)
-  set user($4426.AdminUser v) { setField(3, v); }
+  set user($4428.AdminUser v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUser() => $_has(2);
   @$pb.TagNumber(3)
   void clearUser() => clearField(3);
   @$pb.TagNumber(3)
-  $4426.AdminUser ensureUser() => $_ensure(2);
+  $4428.AdminUser ensureUser() => $_ensure(2);
 
   /// Validate the request and preview the review, but do not post it.
   @$pb.TagNumber(4)
@@ -2026,7 +2026,7 @@ class UpdateChannelPartnerLinkRequest extends $pb.GeneratedMessage {
   factory UpdateChannelPartnerLinkRequest({
     $core.String? name,
     $752.ChannelPartnerLink? channelPartnerLink,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -2047,7 +2047,7 @@ class UpdateChannelPartnerLinkRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateChannelPartnerLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<$752.ChannelPartnerLink>(2, _omitFieldNames ? '' : 'channelPartnerLink', subBuilder: $752.ChannelPartnerLink.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2101,15 +2101,15 @@ class UpdateChannelPartnerLinkRequest extends $pb.GeneratedMessage {
   /// The only allowable value for an update mask is
   /// channel_partner_link.link_state.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for
@@ -4601,7 +4601,7 @@ class ListProductsRequest extends $pb.GeneratedMessage {
 /// Response message for ListProducts.
 class ListProductsResponse extends $pb.GeneratedMessage {
   factory ListProductsResponse({
-    $core.Iterable<$4428.Product>? products,
+    $core.Iterable<$4430.Product>? products,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -4618,7 +4618,7 @@ class ListProductsResponse extends $pb.GeneratedMessage {
   factory ListProductsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProductsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..pc<$4428.Product>(1, _omitFieldNames ? '' : 'products', $pb.PbFieldType.PM, subBuilder: $4428.Product.create)
+    ..pc<$4430.Product>(1, _omitFieldNames ? '' : 'products', $pb.PbFieldType.PM, subBuilder: $4430.Product.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -4646,7 +4646,7 @@ class ListProductsResponse extends $pb.GeneratedMessage {
 
   /// List of Products requested.
   @$pb.TagNumber(1)
-  $core.List<$4428.Product> get products => $_getList(0);
+  $core.List<$4430.Product> get products => $_getList(0);
 
   /// A token to retrieve the next page of results.
   @$pb.TagNumber(2)
@@ -4782,7 +4782,7 @@ class ListSkusRequest extends $pb.GeneratedMessage {
 /// Response message for ListSkus.
 class ListSkusResponse extends $pb.GeneratedMessage {
   factory ListSkusResponse({
-    $core.Iterable<$4428.Sku>? skus,
+    $core.Iterable<$4430.Sku>? skus,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -4799,7 +4799,7 @@ class ListSkusResponse extends $pb.GeneratedMessage {
   factory ListSkusResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSkusResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..pc<$4428.Sku>(1, _omitFieldNames ? '' : 'skus', $pb.PbFieldType.PM, subBuilder: $4428.Sku.create)
+    ..pc<$4430.Sku>(1, _omitFieldNames ? '' : 'skus', $pb.PbFieldType.PM, subBuilder: $4430.Sku.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -4827,7 +4827,7 @@ class ListSkusResponse extends $pb.GeneratedMessage {
 
   /// The list of SKUs requested.
   @$pb.TagNumber(1)
-  $core.List<$4428.Sku> get skus => $_getList(0);
+  $core.List<$4430.Sku> get skus => $_getList(0);
 
   /// A token to retrieve the next page of results.
   @$pb.TagNumber(2)
@@ -5382,7 +5382,7 @@ class ListPurchasableSkusResponse extends $pb.GeneratedMessage {
 /// response.
 class PurchasableSku extends $pb.GeneratedMessage {
   factory PurchasableSku({
-    $4428.Sku? sku,
+    $4430.Sku? sku,
   }) {
     final $result = create();
     if (sku != null) {
@@ -5395,7 +5395,7 @@ class PurchasableSku extends $pb.GeneratedMessage {
   factory PurchasableSku.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PurchasableSku', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..aOM<$4428.Sku>(1, _omitFieldNames ? '' : 'sku', subBuilder: $4428.Sku.create)
+    ..aOM<$4430.Sku>(1, _omitFieldNames ? '' : 'sku', subBuilder: $4430.Sku.create)
     ..hasRequiredFields = false
   ;
 
@@ -5422,15 +5422,15 @@ class PurchasableSku extends $pb.GeneratedMessage {
 
   /// SKU
   @$pb.TagNumber(1)
-  $4428.Sku get sku => $_getN(0);
+  $4430.Sku get sku => $_getN(0);
   @$pb.TagNumber(1)
-  set sku($4428.Sku v) { setField(1, v); }
+  set sku($4430.Sku v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSku() => $_has(0);
   @$pb.TagNumber(1)
   void clearSku() => clearField(1);
   @$pb.TagNumber(1)
-  $4428.Sku ensureSku() => $_ensure(0);
+  $4430.Sku ensureSku() => $_ensure(0);
 }
 
 /// List Offers for CreateEntitlement purchase.
@@ -6032,7 +6032,7 @@ class SkuPurchaseGroup extends $pb.GeneratedMessage {
 /// Represents a billing account that can be used to make a purchase.
 class BillingAccountPurchaseInfo extends $pb.GeneratedMessage {
   factory BillingAccountPurchaseInfo({
-    $4430.BillingAccount? billingAccount,
+    $4432.BillingAccount? billingAccount,
   }) {
     final $result = create();
     if (billingAccount != null) {
@@ -6045,7 +6045,7 @@ class BillingAccountPurchaseInfo extends $pb.GeneratedMessage {
   factory BillingAccountPurchaseInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BillingAccountPurchaseInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..aOM<$4430.BillingAccount>(1, _omitFieldNames ? '' : 'billingAccount', subBuilder: $4430.BillingAccount.create)
+    ..aOM<$4432.BillingAccount>(1, _omitFieldNames ? '' : 'billingAccount', subBuilder: $4432.BillingAccount.create)
     ..hasRequiredFields = false
   ;
 
@@ -6072,15 +6072,15 @@ class BillingAccountPurchaseInfo extends $pb.GeneratedMessage {
 
   /// The billing account resource.
   @$pb.TagNumber(1)
-  $4430.BillingAccount get billingAccount => $_getN(0);
+  $4432.BillingAccount get billingAccount => $_getN(0);
   @$pb.TagNumber(1)
-  set billingAccount($4430.BillingAccount v) { setField(1, v); }
+  set billingAccount($4432.BillingAccount v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBillingAccount() => $_has(0);
   @$pb.TagNumber(1)
   void clearBillingAccount() => clearField(1);
   @$pb.TagNumber(1)
-  $4430.BillingAccount ensureBillingAccount() => $_ensure(0);
+  $4432.BillingAccount ensureBillingAccount() => $_ensure(0);
 }
 
 /// Request Message for RegisterSubscriber.
@@ -6605,7 +6605,7 @@ class ListEntitlementChangesRequest extends $pb.GeneratedMessage {
 /// [CloudChannelService.ListEntitlementChanges][google.cloud.channel.v1.CloudChannelService.ListEntitlementChanges]
 class ListEntitlementChangesResponse extends $pb.GeneratedMessage {
   factory ListEntitlementChangesResponse({
-    $core.Iterable<$4431.EntitlementChange>? entitlementChanges,
+    $core.Iterable<$4433.EntitlementChange>? entitlementChanges,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -6622,7 +6622,7 @@ class ListEntitlementChangesResponse extends $pb.GeneratedMessage {
   factory ListEntitlementChangesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListEntitlementChangesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..pc<$4431.EntitlementChange>(1, _omitFieldNames ? '' : 'entitlementChanges', $pb.PbFieldType.PM, subBuilder: $4431.EntitlementChange.create)
+    ..pc<$4433.EntitlementChange>(1, _omitFieldNames ? '' : 'entitlementChanges', $pb.PbFieldType.PM, subBuilder: $4433.EntitlementChange.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -6650,7 +6650,7 @@ class ListEntitlementChangesResponse extends $pb.GeneratedMessage {
 
   /// The list of entitlement changes.
   @$pb.TagNumber(1)
-  $core.List<$4431.EntitlementChange> get entitlementChanges => $_getList(0);
+  $core.List<$4433.EntitlementChange> get entitlementChanges => $_getList(0);
 
   /// A token to list the next page of results.
   @$pb.TagNumber(2)

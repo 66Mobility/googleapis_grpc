@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'static_image_prompt.pb.dart' as $1735;
+import 'static_image_prompt.pb.dart' as $1736;
 
 /// An item in the list.
 class StaticListPrompt_ListItem extends $pb.GeneratedMessage {
@@ -21,7 +21,7 @@ class StaticListPrompt_ListItem extends $pb.GeneratedMessage {
     $core.String? key,
     $core.String? title,
     $core.String? description,
-    $1735.StaticImagePrompt? image,
+    $1736.StaticImagePrompt? image,
   }) {
     final $result = create();
     if (key != null) {
@@ -46,7 +46,7 @@ class StaticListPrompt_ListItem extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'title')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1735.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $1735.StaticImagePrompt.create)
+    ..aOM<$1736.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $1736.StaticImagePrompt.create)
     ..hasRequiredFields = false
   ;
 
@@ -106,15 +106,15 @@ class StaticListPrompt_ListItem extends $pb.GeneratedMessage {
 
   /// Optional. Item image.
   @$pb.TagNumber(4)
-  $1735.StaticImagePrompt get image => $_getN(3);
+  $1736.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($1735.StaticImagePrompt v) { setField(4, v); }
+  set image($1736.StaticImagePrompt v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $1735.StaticImagePrompt ensureImage() => $_ensure(3);
+  $1736.StaticImagePrompt ensureImage() => $_ensure(3);
 }
 
 /// A card for presenting a list of options to select from.

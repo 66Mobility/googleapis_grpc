@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'companions.pbenum.dart';
-import 'events.pb.dart' as $4701;
+import 'events.pb.dart' as $4703;
 
 export 'companions.pbenum.dart';
 
@@ -97,7 +97,7 @@ class Companion extends $pb.GeneratedMessage {
     $core.int? assetWidthPx,
     $core.int? expandedWidthPx,
     $core.String? adSlotId,
-    $core.Iterable<$4701.Event>? events,
+    $core.Iterable<$4703.Event>? events,
     IframeAdResource? iframeAdResource,
     StaticAdResource? staticAdResource,
     HtmlAdResource? htmlAdResource,
@@ -161,7 +161,7 @@ class Companion extends $pb.GeneratedMessage {
     ..a<$core.int>(6, _omitFieldNames ? '' : 'assetWidthPx', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'expandedWidthPx', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'adSlotId')
-    ..pc<$4701.Event>(9, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $4701.Event.create)
+    ..pc<$4703.Event>(9, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $4703.Event.create)
     ..aOM<IframeAdResource>(10, _omitFieldNames ? '' : 'iframeAdResource', subBuilder: IframeAdResource.create)
     ..aOM<StaticAdResource>(11, _omitFieldNames ? '' : 'staticAdResource', subBuilder: StaticAdResource.create)
     ..aOM<HtmlAdResource>(12, _omitFieldNames ? '' : 'htmlAdResource', subBuilder: HtmlAdResource.create)
@@ -276,7 +276,7 @@ class Companion extends $pb.GeneratedMessage {
 
   /// The list of tracking events for the companion.
   @$pb.TagNumber(9)
-  $core.List<$4701.Event> get events => $_getList(8);
+  $core.List<$4703.Event> get events => $_getList(8);
 
   /// The IFrame ad resource associated with the companion ad.
   @$pb.TagNumber(10)

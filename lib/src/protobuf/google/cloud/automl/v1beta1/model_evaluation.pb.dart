@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'classification.pb.dart' as $4348;
-import 'detection.pb.dart' as $4351;
-import 'regression.pb.dart' as $4358;
-import 'text_extraction.pb.dart' as $4352;
-import 'text_sentiment.pb.dart' as $4353;
-import 'translation.pb.dart' as $4350;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'classification.pb.dart' as $4349;
+import 'detection.pb.dart' as $4352;
+import 'regression.pb.dart' as $4359;
+import 'text_extraction.pb.dart' as $4353;
+import 'text_sentiment.pb.dart' as $4354;
+import 'translation.pb.dart' as $4351;
 
 enum ModelEvaluation_Metrics {
   classificationEvaluationMetrics, 
@@ -37,16 +37,16 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   factory ModelEvaluation({
     $core.String? name,
     $core.String? annotationSpecId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.int? evaluatedExampleCount,
-    $4348.ClassificationEvaluationMetrics? classificationEvaluationMetrics,
-    $4350.TranslationEvaluationMetrics? translationEvaluationMetrics,
-    $4353.TextSentimentEvaluationMetrics? textSentimentEvaluationMetrics,
-    $4351.ImageObjectDetectionEvaluationMetrics? imageObjectDetectionEvaluationMetrics,
-    $4352.TextExtractionEvaluationMetrics? textExtractionEvaluationMetrics,
-    $4351.VideoObjectTrackingEvaluationMetrics? videoObjectTrackingEvaluationMetrics,
+    $4349.ClassificationEvaluationMetrics? classificationEvaluationMetrics,
+    $4351.TranslationEvaluationMetrics? translationEvaluationMetrics,
+    $4354.TextSentimentEvaluationMetrics? textSentimentEvaluationMetrics,
+    $4352.ImageObjectDetectionEvaluationMetrics? imageObjectDetectionEvaluationMetrics,
+    $4353.TextExtractionEvaluationMetrics? textExtractionEvaluationMetrics,
+    $4352.VideoObjectTrackingEvaluationMetrics? videoObjectTrackingEvaluationMetrics,
     $core.String? displayName,
-    $4358.RegressionEvaluationMetrics? regressionEvaluationMetrics,
+    $4359.RegressionEvaluationMetrics? regressionEvaluationMetrics,
   }) {
     final $result = create();
     if (name != null) {
@@ -105,16 +105,16 @@ class ModelEvaluation extends $pb.GeneratedMessage {
     ..oo(0, [8, 9, 11, 12, 13, 14, 24])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'annotationSpecId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'evaluatedExampleCount', $pb.PbFieldType.O3)
-    ..aOM<$4348.ClassificationEvaluationMetrics>(8, _omitFieldNames ? '' : 'classificationEvaluationMetrics', subBuilder: $4348.ClassificationEvaluationMetrics.create)
-    ..aOM<$4350.TranslationEvaluationMetrics>(9, _omitFieldNames ? '' : 'translationEvaluationMetrics', subBuilder: $4350.TranslationEvaluationMetrics.create)
-    ..aOM<$4353.TextSentimentEvaluationMetrics>(11, _omitFieldNames ? '' : 'textSentimentEvaluationMetrics', subBuilder: $4353.TextSentimentEvaluationMetrics.create)
-    ..aOM<$4351.ImageObjectDetectionEvaluationMetrics>(12, _omitFieldNames ? '' : 'imageObjectDetectionEvaluationMetrics', subBuilder: $4351.ImageObjectDetectionEvaluationMetrics.create)
-    ..aOM<$4352.TextExtractionEvaluationMetrics>(13, _omitFieldNames ? '' : 'textExtractionEvaluationMetrics', subBuilder: $4352.TextExtractionEvaluationMetrics.create)
-    ..aOM<$4351.VideoObjectTrackingEvaluationMetrics>(14, _omitFieldNames ? '' : 'videoObjectTrackingEvaluationMetrics', subBuilder: $4351.VideoObjectTrackingEvaluationMetrics.create)
+    ..aOM<$4349.ClassificationEvaluationMetrics>(8, _omitFieldNames ? '' : 'classificationEvaluationMetrics', subBuilder: $4349.ClassificationEvaluationMetrics.create)
+    ..aOM<$4351.TranslationEvaluationMetrics>(9, _omitFieldNames ? '' : 'translationEvaluationMetrics', subBuilder: $4351.TranslationEvaluationMetrics.create)
+    ..aOM<$4354.TextSentimentEvaluationMetrics>(11, _omitFieldNames ? '' : 'textSentimentEvaluationMetrics', subBuilder: $4354.TextSentimentEvaluationMetrics.create)
+    ..aOM<$4352.ImageObjectDetectionEvaluationMetrics>(12, _omitFieldNames ? '' : 'imageObjectDetectionEvaluationMetrics', subBuilder: $4352.ImageObjectDetectionEvaluationMetrics.create)
+    ..aOM<$4353.TextExtractionEvaluationMetrics>(13, _omitFieldNames ? '' : 'textExtractionEvaluationMetrics', subBuilder: $4353.TextExtractionEvaluationMetrics.create)
+    ..aOM<$4352.VideoObjectTrackingEvaluationMetrics>(14, _omitFieldNames ? '' : 'videoObjectTrackingEvaluationMetrics', subBuilder: $4352.VideoObjectTrackingEvaluationMetrics.create)
     ..aOS(15, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4358.RegressionEvaluationMetrics>(24, _omitFieldNames ? '' : 'regressionEvaluationMetrics', subBuilder: $4358.RegressionEvaluationMetrics.create)
+    ..aOM<$4359.RegressionEvaluationMetrics>(24, _omitFieldNames ? '' : 'regressionEvaluationMetrics', subBuilder: $4359.RegressionEvaluationMetrics.create)
     ..hasRequiredFields = false
   ;
 
@@ -175,15 +175,15 @@ class ModelEvaluation extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this model evaluation was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   ///  Output only. The number of examples used for model evaluation, i.e. for
   ///  which ground truth from time of model creation is compared against the
@@ -208,75 +208,75 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   /// Tables problem is considered a classification when the target column
   /// is CATEGORY DataType.
   @$pb.TagNumber(8)
-  $4348.ClassificationEvaluationMetrics get classificationEvaluationMetrics => $_getN(4);
+  $4349.ClassificationEvaluationMetrics get classificationEvaluationMetrics => $_getN(4);
   @$pb.TagNumber(8)
-  set classificationEvaluationMetrics($4348.ClassificationEvaluationMetrics v) { setField(8, v); }
+  set classificationEvaluationMetrics($4349.ClassificationEvaluationMetrics v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasClassificationEvaluationMetrics() => $_has(4);
   @$pb.TagNumber(8)
   void clearClassificationEvaluationMetrics() => clearField(8);
   @$pb.TagNumber(8)
-  $4348.ClassificationEvaluationMetrics ensureClassificationEvaluationMetrics() => $_ensure(4);
+  $4349.ClassificationEvaluationMetrics ensureClassificationEvaluationMetrics() => $_ensure(4);
 
   /// Model evaluation metrics for translation.
   @$pb.TagNumber(9)
-  $4350.TranslationEvaluationMetrics get translationEvaluationMetrics => $_getN(5);
+  $4351.TranslationEvaluationMetrics get translationEvaluationMetrics => $_getN(5);
   @$pb.TagNumber(9)
-  set translationEvaluationMetrics($4350.TranslationEvaluationMetrics v) { setField(9, v); }
+  set translationEvaluationMetrics($4351.TranslationEvaluationMetrics v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTranslationEvaluationMetrics() => $_has(5);
   @$pb.TagNumber(9)
   void clearTranslationEvaluationMetrics() => clearField(9);
   @$pb.TagNumber(9)
-  $4350.TranslationEvaluationMetrics ensureTranslationEvaluationMetrics() => $_ensure(5);
+  $4351.TranslationEvaluationMetrics ensureTranslationEvaluationMetrics() => $_ensure(5);
 
   /// Evaluation metrics for text sentiment models.
   @$pb.TagNumber(11)
-  $4353.TextSentimentEvaluationMetrics get textSentimentEvaluationMetrics => $_getN(6);
+  $4354.TextSentimentEvaluationMetrics get textSentimentEvaluationMetrics => $_getN(6);
   @$pb.TagNumber(11)
-  set textSentimentEvaluationMetrics($4353.TextSentimentEvaluationMetrics v) { setField(11, v); }
+  set textSentimentEvaluationMetrics($4354.TextSentimentEvaluationMetrics v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTextSentimentEvaluationMetrics() => $_has(6);
   @$pb.TagNumber(11)
   void clearTextSentimentEvaluationMetrics() => clearField(11);
   @$pb.TagNumber(11)
-  $4353.TextSentimentEvaluationMetrics ensureTextSentimentEvaluationMetrics() => $_ensure(6);
+  $4354.TextSentimentEvaluationMetrics ensureTextSentimentEvaluationMetrics() => $_ensure(6);
 
   /// Model evaluation metrics for image object detection.
   @$pb.TagNumber(12)
-  $4351.ImageObjectDetectionEvaluationMetrics get imageObjectDetectionEvaluationMetrics => $_getN(7);
+  $4352.ImageObjectDetectionEvaluationMetrics get imageObjectDetectionEvaluationMetrics => $_getN(7);
   @$pb.TagNumber(12)
-  set imageObjectDetectionEvaluationMetrics($4351.ImageObjectDetectionEvaluationMetrics v) { setField(12, v); }
+  set imageObjectDetectionEvaluationMetrics($4352.ImageObjectDetectionEvaluationMetrics v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasImageObjectDetectionEvaluationMetrics() => $_has(7);
   @$pb.TagNumber(12)
   void clearImageObjectDetectionEvaluationMetrics() => clearField(12);
   @$pb.TagNumber(12)
-  $4351.ImageObjectDetectionEvaluationMetrics ensureImageObjectDetectionEvaluationMetrics() => $_ensure(7);
+  $4352.ImageObjectDetectionEvaluationMetrics ensureImageObjectDetectionEvaluationMetrics() => $_ensure(7);
 
   /// Evaluation metrics for text extraction models.
   @$pb.TagNumber(13)
-  $4352.TextExtractionEvaluationMetrics get textExtractionEvaluationMetrics => $_getN(8);
+  $4353.TextExtractionEvaluationMetrics get textExtractionEvaluationMetrics => $_getN(8);
   @$pb.TagNumber(13)
-  set textExtractionEvaluationMetrics($4352.TextExtractionEvaluationMetrics v) { setField(13, v); }
+  set textExtractionEvaluationMetrics($4353.TextExtractionEvaluationMetrics v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasTextExtractionEvaluationMetrics() => $_has(8);
   @$pb.TagNumber(13)
   void clearTextExtractionEvaluationMetrics() => clearField(13);
   @$pb.TagNumber(13)
-  $4352.TextExtractionEvaluationMetrics ensureTextExtractionEvaluationMetrics() => $_ensure(8);
+  $4353.TextExtractionEvaluationMetrics ensureTextExtractionEvaluationMetrics() => $_ensure(8);
 
   /// Model evaluation metrics for video object tracking.
   @$pb.TagNumber(14)
-  $4351.VideoObjectTrackingEvaluationMetrics get videoObjectTrackingEvaluationMetrics => $_getN(9);
+  $4352.VideoObjectTrackingEvaluationMetrics get videoObjectTrackingEvaluationMetrics => $_getN(9);
   @$pb.TagNumber(14)
-  set videoObjectTrackingEvaluationMetrics($4351.VideoObjectTrackingEvaluationMetrics v) { setField(14, v); }
+  set videoObjectTrackingEvaluationMetrics($4352.VideoObjectTrackingEvaluationMetrics v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasVideoObjectTrackingEvaluationMetrics() => $_has(9);
   @$pb.TagNumber(14)
   void clearVideoObjectTrackingEvaluationMetrics() => clearField(14);
   @$pb.TagNumber(14)
-  $4351.VideoObjectTrackingEvaluationMetrics ensureVideoObjectTrackingEvaluationMetrics() => $_ensure(9);
+  $4352.VideoObjectTrackingEvaluationMetrics ensureVideoObjectTrackingEvaluationMetrics() => $_ensure(9);
 
   ///  Output only. The value of
   ///  [display_name][google.cloud.automl.v1beta1.AnnotationSpec.display_name] at
@@ -303,15 +303,15 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   /// Tables problem is considered a regression when the target column
   /// has FLOAT64 DataType.
   @$pb.TagNumber(24)
-  $4358.RegressionEvaluationMetrics get regressionEvaluationMetrics => $_getN(11);
+  $4359.RegressionEvaluationMetrics get regressionEvaluationMetrics => $_getN(11);
   @$pb.TagNumber(24)
-  set regressionEvaluationMetrics($4358.RegressionEvaluationMetrics v) { setField(24, v); }
+  set regressionEvaluationMetrics($4359.RegressionEvaluationMetrics v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasRegressionEvaluationMetrics() => $_has(11);
   @$pb.TagNumber(24)
   void clearRegressionEvaluationMetrics() => clearField(24);
   @$pb.TagNumber(24)
-  $4358.RegressionEvaluationMetrics ensureRegressionEvaluationMetrics() => $_ensure(11);
+  $4359.RegressionEvaluationMetrics ensureRegressionEvaluationMetrics() => $_ensure(11);
 }
 
 

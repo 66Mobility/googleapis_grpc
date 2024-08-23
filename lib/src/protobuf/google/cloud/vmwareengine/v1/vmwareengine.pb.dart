@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'vmwareengine_resources.pb.dart' as $1507;
 
 /// Request message for
@@ -436,7 +436,7 @@ class CreatePrivateCloudRequest extends $pb.GeneratedMessage {
 class UpdatePrivateCloudRequest extends $pb.GeneratedMessage {
   factory UpdatePrivateCloudRequest({
     $1507.PrivateCloud? privateCloud,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -457,7 +457,7 @@ class UpdatePrivateCloudRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePrivateCloudRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOM<$1507.PrivateCloud>(1, _omitFieldNames ? '' : 'privateCloud', subBuilder: $1507.PrivateCloud.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -501,15 +501,15 @@ class UpdatePrivateCloudRequest extends $pb.GeneratedMessage {
   /// overwritten if it is in the mask. If the user does not provide a mask then
   /// all fields will be overwritten.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. The request ID must be a valid UUID with the exception that zero
   /// UUID is not supported (00000000-0000-0000-0000-000000000000).
@@ -1116,7 +1116,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
 /// [VmwareEngine.UpdateCluster][google.cloud.vmwareengine.v1.VmwareEngine.UpdateCluster]
 class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1507.Cluster? cluster,
     $core.String? requestId,
     $core.bool? validateOnly,
@@ -1141,7 +1141,7 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1507.Cluster>(2, _omitFieldNames ? '' : 'cluster', subBuilder: $1507.Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -1175,15 +1175,15 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   /// overwritten if it is in the mask. If the user does not provide a mask then
   /// all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The description of the cluster.
   @$pb.TagNumber(2)
@@ -2081,7 +2081,7 @@ class CreateExternalAddressRequest extends $pb.GeneratedMessage {
 /// [VmwareEngine.UpdateExternalAddress][google.cloud.vmwareengine.v1.VmwareEngine.UpdateExternalAddress]
 class UpdateExternalAddressRequest extends $pb.GeneratedMessage {
   factory UpdateExternalAddressRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1507.ExternalAddress? externalAddress,
     $core.String? requestId,
   }) {
@@ -2102,7 +2102,7 @@ class UpdateExternalAddressRequest extends $pb.GeneratedMessage {
   factory UpdateExternalAddressRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateExternalAddressRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1507.ExternalAddress>(2, _omitFieldNames ? '' : 'externalAddress', subBuilder: $1507.ExternalAddress.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -2135,15 +2135,15 @@ class UpdateExternalAddressRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. External IP address description.
   @$pb.TagNumber(2)
@@ -2495,7 +2495,7 @@ class GetSubnetRequest extends $pb.GeneratedMessage {
 /// [VmwareEngine.UpdateSubnet][google.cloud.vmwareengine.v1.VmwareEngine.UpdateSubnet]
 class UpdateSubnetRequest extends $pb.GeneratedMessage {
   factory UpdateSubnetRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1507.Subnet? subnet,
   }) {
     final $result = create();
@@ -2512,7 +2512,7 @@ class UpdateSubnetRequest extends $pb.GeneratedMessage {
   factory UpdateSubnetRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSubnetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1507.Subnet>(2, _omitFieldNames ? '' : 'subnet', subBuilder: $1507.Subnet.create)
     ..hasRequiredFields = false
   ;
@@ -2544,15 +2544,15 @@ class UpdateSubnetRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Subnet description.
   @$pb.TagNumber(2)
@@ -2982,7 +2982,7 @@ class CreateExternalAccessRuleRequest extends $pb.GeneratedMessage {
 /// [VmwareEngine.UpdateExternalAccessRule][google.cloud.vmwareengine.v1.VmwareEngine.UpdateExternalAccessRule]
 class UpdateExternalAccessRuleRequest extends $pb.GeneratedMessage {
   factory UpdateExternalAccessRuleRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1507.ExternalAccessRule? externalAccessRule,
     $core.String? requestId,
   }) {
@@ -3003,7 +3003,7 @@ class UpdateExternalAccessRuleRequest extends $pb.GeneratedMessage {
   factory UpdateExternalAccessRuleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateExternalAccessRuleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1507.ExternalAccessRule>(2, _omitFieldNames ? '' : 'externalAccessRule', subBuilder: $1507.ExternalAccessRule.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -3036,15 +3036,15 @@ class UpdateExternalAccessRuleRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Description of the external access rule.
   @$pb.TagNumber(2)
@@ -3583,7 +3583,7 @@ class CreateLoggingServerRequest extends $pb.GeneratedMessage {
 /// [VmwareEngine.UpdateLoggingServer][google.cloud.vmwareengine.v1.VmwareEngine.UpdateLoggingServer]
 class UpdateLoggingServerRequest extends $pb.GeneratedMessage {
   factory UpdateLoggingServerRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1507.LoggingServer? loggingServer,
     $core.String? requestId,
   }) {
@@ -3604,7 +3604,7 @@ class UpdateLoggingServerRequest extends $pb.GeneratedMessage {
   factory UpdateLoggingServerRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateLoggingServerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1507.LoggingServer>(2, _omitFieldNames ? '' : 'loggingServer', subBuilder: $1507.LoggingServer.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -3637,15 +3637,15 @@ class UpdateLoggingServerRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Logging server description.
   @$pb.TagNumber(2)
@@ -3771,8 +3771,8 @@ class DeleteLoggingServerRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -3808,8 +3808,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -3841,27 +3841,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -4932,7 +4932,7 @@ class GetDnsForwardingRequest extends $pb.GeneratedMessage {
 class UpdateDnsForwardingRequest extends $pb.GeneratedMessage {
   factory UpdateDnsForwardingRequest({
     $1507.DnsForwarding? dnsForwarding,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -4953,7 +4953,7 @@ class UpdateDnsForwardingRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDnsForwardingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOM<$1507.DnsForwarding>(1, _omitFieldNames ? '' : 'dnsForwarding', subBuilder: $1507.DnsForwarding.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -4997,15 +4997,15 @@ class UpdateDnsForwardingRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  Optional. A request ID to identify requests. Specify a unique request ID
   ///  so that if you must retry your request, the server will know to ignore
@@ -5456,7 +5456,7 @@ class ListNetworkPeeringsRequest extends $pb.GeneratedMessage {
 class UpdateNetworkPeeringRequest extends $pb.GeneratedMessage {
   factory UpdateNetworkPeeringRequest({
     $1507.NetworkPeering? networkPeering,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -5477,7 +5477,7 @@ class UpdateNetworkPeeringRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNetworkPeeringRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOM<$1507.NetworkPeering>(1, _omitFieldNames ? '' : 'networkPeering', subBuilder: $1507.NetworkPeering.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -5521,15 +5521,15 @@ class UpdateNetworkPeeringRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  Optional. A request ID to identify requests. Specify a unique request ID
   ///  so that if you must retry your request, the server will know to ignore
@@ -6088,7 +6088,7 @@ class GetNetworkPolicyRequest extends $pb.GeneratedMessage {
 class UpdateNetworkPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateNetworkPolicyRequest({
     $1507.NetworkPolicy? networkPolicy,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -6109,7 +6109,7 @@ class UpdateNetworkPolicyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNetworkPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOM<$1507.NetworkPolicy>(1, _omitFieldNames ? '' : 'networkPolicy', subBuilder: $1507.NetworkPolicy.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -6153,15 +6153,15 @@ class UpdateNetworkPolicyRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  Optional. A request ID to identify requests. Specify a unique request ID
   ///  so that if you must retry your request, the server will know to ignore
@@ -6817,7 +6817,7 @@ class CreateManagementDnsZoneBindingRequest extends $pb.GeneratedMessage {
 /// [VmwareEngine.UpdateManagementDnsZoneBinding][google.cloud.vmwareengine.v1.VmwareEngine.UpdateManagementDnsZoneBinding]
 class UpdateManagementDnsZoneBindingRequest extends $pb.GeneratedMessage {
   factory UpdateManagementDnsZoneBindingRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1507.ManagementDnsZoneBinding? managementDnsZoneBinding,
     $core.String? requestId,
   }) {
@@ -6838,7 +6838,7 @@ class UpdateManagementDnsZoneBindingRequest extends $pb.GeneratedMessage {
   factory UpdateManagementDnsZoneBindingRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateManagementDnsZoneBindingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1507.ManagementDnsZoneBinding>(2, _omitFieldNames ? '' : 'managementDnsZoneBinding', subBuilder: $1507.ManagementDnsZoneBinding.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -6871,15 +6871,15 @@ class UpdateManagementDnsZoneBindingRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. New values to update the management DNS zone binding with.
   @$pb.TagNumber(2)
@@ -7223,7 +7223,7 @@ class CreateVmwareEngineNetworkRequest extends $pb.GeneratedMessage {
 class UpdateVmwareEngineNetworkRequest extends $pb.GeneratedMessage {
   factory UpdateVmwareEngineNetworkRequest({
     $1507.VmwareEngineNetwork? vmwareEngineNetwork,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -7244,7 +7244,7 @@ class UpdateVmwareEngineNetworkRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVmwareEngineNetworkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOM<$1507.VmwareEngineNetwork>(1, _omitFieldNames ? '' : 'vmwareEngineNetwork', subBuilder: $1507.VmwareEngineNetwork.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -7289,15 +7289,15 @@ class UpdateVmwareEngineNetworkRequest extends $pb.GeneratedMessage {
   /// user does not provide a mask then all fields will be overwritten. Only the
   /// following fields can be updated: `description`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  Optional. A request ID to identify requests. Specify a unique request ID
   ///  so that if you must retry your request, the server will know to ignore
@@ -8118,7 +8118,7 @@ class ListPrivateConnectionsResponse extends $pb.GeneratedMessage {
 class UpdatePrivateConnectionRequest extends $pb.GeneratedMessage {
   factory UpdatePrivateConnectionRequest({
     $1507.PrivateConnection? privateConnection,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? requestId,
   }) {
     final $result = create();
@@ -8139,7 +8139,7 @@ class UpdatePrivateConnectionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePrivateConnectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOM<$1507.PrivateConnection>(1, _omitFieldNames ? '' : 'privateConnection', subBuilder: $1507.PrivateConnection.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
   ;
@@ -8183,15 +8183,15 @@ class UpdatePrivateConnectionRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  Optional. A request ID to identify requests. Specify a unique request ID
   ///  so that if you must retry your request, the server will know to ignore

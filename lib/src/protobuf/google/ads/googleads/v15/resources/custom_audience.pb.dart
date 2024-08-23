@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/custom_audience_member_type.pbenum.dart' as $2252;
-import '../enums/custom_audience_status.pbenum.dart' as $2250;
-import '../enums/custom_audience_type.pbenum.dart' as $2251;
+import '../enums/custom_audience_member_type.pbenum.dart' as $2253;
+import '../enums/custom_audience_status.pbenum.dart' as $2251;
+import '../enums/custom_audience_type.pbenum.dart' as $2252;
 
 /// A custom audience. This is a list of users by interest.
 class CustomAudience extends $pb.GeneratedMessage {
   factory CustomAudience({
     $core.String? resourceName,
     $fixnum.Int64? id,
-    $2250.CustomAudienceStatusEnum_CustomAudienceStatus? status,
+    $2251.CustomAudienceStatusEnum_CustomAudienceStatus? status,
     $core.String? name,
-    $2251.CustomAudienceTypeEnum_CustomAudienceType? type,
+    $2252.CustomAudienceTypeEnum_CustomAudienceType? type,
     $core.String? description,
     $core.Iterable<CustomAudienceMember>? members,
   }) {
@@ -60,9 +60,9 @@ class CustomAudience extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomAudience', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
-    ..e<$2250.CustomAudienceStatusEnum_CustomAudienceStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2250.CustomAudienceStatusEnum_CustomAudienceStatus.UNSPECIFIED, valueOf: $2250.CustomAudienceStatusEnum_CustomAudienceStatus.valueOf, enumValues: $2250.CustomAudienceStatusEnum_CustomAudienceStatus.values)
+    ..e<$2251.CustomAudienceStatusEnum_CustomAudienceStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2251.CustomAudienceStatusEnum_CustomAudienceStatus.UNSPECIFIED, valueOf: $2251.CustomAudienceStatusEnum_CustomAudienceStatus.valueOf, enumValues: $2251.CustomAudienceStatusEnum_CustomAudienceStatus.values)
     ..aOS(4, _omitFieldNames ? '' : 'name')
-    ..e<$2251.CustomAudienceTypeEnum_CustomAudienceType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2251.CustomAudienceTypeEnum_CustomAudienceType.UNSPECIFIED, valueOf: $2251.CustomAudienceTypeEnum_CustomAudienceType.valueOf, enumValues: $2251.CustomAudienceTypeEnum_CustomAudienceType.values)
+    ..e<$2252.CustomAudienceTypeEnum_CustomAudienceType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2252.CustomAudienceTypeEnum_CustomAudienceType.UNSPECIFIED, valueOf: $2252.CustomAudienceTypeEnum_CustomAudienceType.valueOf, enumValues: $2252.CustomAudienceTypeEnum_CustomAudienceType.values)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..pc<CustomAudienceMember>(7, _omitFieldNames ? '' : 'members', $pb.PbFieldType.PM, subBuilder: CustomAudienceMember.create)
     ..hasRequiredFields = false
@@ -115,9 +115,9 @@ class CustomAudience extends $pb.GeneratedMessage {
   /// Output only. Status of this custom audience. Indicates whether the custom
   /// audience is enabled or removed.
   @$pb.TagNumber(3)
-  $2250.CustomAudienceStatusEnum_CustomAudienceStatus get status => $_getN(2);
+  $2251.CustomAudienceStatusEnum_CustomAudienceStatus get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($2250.CustomAudienceStatusEnum_CustomAudienceStatus v) { setField(3, v); }
+  set status($2251.CustomAudienceStatusEnum_CustomAudienceStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -139,9 +139,9 @@ class CustomAudience extends $pb.GeneratedMessage {
   /// ("INTEREST" OR "PURCHASE_INTENT" is not allowed for newly created custom
   /// audience but kept for existing audiences)
   @$pb.TagNumber(5)
-  $2251.CustomAudienceTypeEnum_CustomAudienceType get type => $_getN(4);
+  $2252.CustomAudienceTypeEnum_CustomAudienceType get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type($2251.CustomAudienceTypeEnum_CustomAudienceType v) { setField(5, v); }
+  set type($2252.CustomAudienceTypeEnum_CustomAudienceType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)
@@ -176,7 +176,7 @@ enum CustomAudienceMember_Value {
 /// PLACE_CATEGORY or APP. It can only be created or removed but not changed.
 class CustomAudienceMember extends $pb.GeneratedMessage {
   factory CustomAudienceMember({
-    $2252.CustomAudienceMemberTypeEnum_CustomAudienceMemberType? memberType,
+    $2253.CustomAudienceMemberTypeEnum_CustomAudienceMemberType? memberType,
     $core.String? keyword,
     $core.String? url,
     $fixnum.Int64? placeCategory,
@@ -213,7 +213,7 @@ class CustomAudienceMember extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomAudienceMember', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5])
-    ..e<$2252.CustomAudienceMemberTypeEnum_CustomAudienceMemberType>(1, _omitFieldNames ? '' : 'memberType', $pb.PbFieldType.OE, defaultOrMaker: $2252.CustomAudienceMemberTypeEnum_CustomAudienceMemberType.UNSPECIFIED, valueOf: $2252.CustomAudienceMemberTypeEnum_CustomAudienceMemberType.valueOf, enumValues: $2252.CustomAudienceMemberTypeEnum_CustomAudienceMemberType.values)
+    ..e<$2253.CustomAudienceMemberTypeEnum_CustomAudienceMemberType>(1, _omitFieldNames ? '' : 'memberType', $pb.PbFieldType.OE, defaultOrMaker: $2253.CustomAudienceMemberTypeEnum_CustomAudienceMemberType.UNSPECIFIED, valueOf: $2253.CustomAudienceMemberTypeEnum_CustomAudienceMemberType.valueOf, enumValues: $2253.CustomAudienceMemberTypeEnum_CustomAudienceMemberType.values)
     ..aOS(2, _omitFieldNames ? '' : 'keyword')
     ..aOS(3, _omitFieldNames ? '' : 'url')
     ..aInt64(4, _omitFieldNames ? '' : 'placeCategory')
@@ -247,9 +247,9 @@ class CustomAudienceMember extends $pb.GeneratedMessage {
 
   /// The type of custom audience member, KEYWORD, URL, PLACE_CATEGORY or APP.
   @$pb.TagNumber(1)
-  $2252.CustomAudienceMemberTypeEnum_CustomAudienceMemberType get memberType => $_getN(0);
+  $2253.CustomAudienceMemberTypeEnum_CustomAudienceMemberType get memberType => $_getN(0);
   @$pb.TagNumber(1)
-  set memberType($2252.CustomAudienceMemberTypeEnum_CustomAudienceMemberType v) { setField(1, v); }
+  set memberType($2253.CustomAudienceMemberTypeEnum_CustomAudienceMemberType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMemberType() => $_has(0);
   @$pb.TagNumber(1)

@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/attribution_model.pbenum.dart' as $4065;
-import '../enums/conversion_action_category.pbenum.dart' as $3997;
-import '../enums/conversion_action_status.pbenum.dart' as $4063;
-import '../enums/conversion_action_type.pbenum.dart' as $4064;
-import '../enums/data_driven_model_status.pbenum.dart' as $4066;
+import '../enums/attribution_model.pbenum.dart' as $4066;
+import '../enums/conversion_action_category.pbenum.dart' as $3998;
+import '../enums/conversion_action_status.pbenum.dart' as $4064;
+import '../enums/conversion_action_type.pbenum.dart' as $4065;
+import '../enums/data_driven_model_status.pbenum.dart' as $4067;
 
 /// Settings related to this conversion action's attribution model.
 class ConversionAction_AttributionModelSettings extends $pb.GeneratedMessage {
   factory ConversionAction_AttributionModelSettings({
-    $4065.AttributionModelEnum_AttributionModel? attributionModel,
-    $4066.DataDrivenModelStatusEnum_DataDrivenModelStatus? dataDrivenModelStatus,
+    $4066.AttributionModelEnum_AttributionModel? attributionModel,
+    $4067.DataDrivenModelStatusEnum_DataDrivenModelStatus? dataDrivenModelStatus,
   }) {
     final $result = create();
     if (attributionModel != null) {
@@ -40,8 +40,8 @@ class ConversionAction_AttributionModelSettings extends $pb.GeneratedMessage {
   factory ConversionAction_AttributionModelSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionAction.AttributionModelSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
-    ..e<$4065.AttributionModelEnum_AttributionModel>(1, _omitFieldNames ? '' : 'attributionModel', $pb.PbFieldType.OE, defaultOrMaker: $4065.AttributionModelEnum_AttributionModel.UNSPECIFIED, valueOf: $4065.AttributionModelEnum_AttributionModel.valueOf, enumValues: $4065.AttributionModelEnum_AttributionModel.values)
-    ..e<$4066.DataDrivenModelStatusEnum_DataDrivenModelStatus>(2, _omitFieldNames ? '' : 'dataDrivenModelStatus', $pb.PbFieldType.OE, defaultOrMaker: $4066.DataDrivenModelStatusEnum_DataDrivenModelStatus.UNSPECIFIED, valueOf: $4066.DataDrivenModelStatusEnum_DataDrivenModelStatus.valueOf, enumValues: $4066.DataDrivenModelStatusEnum_DataDrivenModelStatus.values)
+    ..e<$4066.AttributionModelEnum_AttributionModel>(1, _omitFieldNames ? '' : 'attributionModel', $pb.PbFieldType.OE, defaultOrMaker: $4066.AttributionModelEnum_AttributionModel.UNSPECIFIED, valueOf: $4066.AttributionModelEnum_AttributionModel.valueOf, enumValues: $4066.AttributionModelEnum_AttributionModel.values)
+    ..e<$4067.DataDrivenModelStatusEnum_DataDrivenModelStatus>(2, _omitFieldNames ? '' : 'dataDrivenModelStatus', $pb.PbFieldType.OE, defaultOrMaker: $4067.DataDrivenModelStatusEnum_DataDrivenModelStatus.UNSPECIFIED, valueOf: $4067.DataDrivenModelStatusEnum_DataDrivenModelStatus.valueOf, enumValues: $4067.DataDrivenModelStatusEnum_DataDrivenModelStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -68,9 +68,9 @@ class ConversionAction_AttributionModelSettings extends $pb.GeneratedMessage {
 
   /// The attribution model type of this conversion action.
   @$pb.TagNumber(1)
-  $4065.AttributionModelEnum_AttributionModel get attributionModel => $_getN(0);
+  $4066.AttributionModelEnum_AttributionModel get attributionModel => $_getN(0);
   @$pb.TagNumber(1)
-  set attributionModel($4065.AttributionModelEnum_AttributionModel v) { setField(1, v); }
+  set attributionModel($4066.AttributionModelEnum_AttributionModel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAttributionModel() => $_has(0);
   @$pb.TagNumber(1)
@@ -79,9 +79,9 @@ class ConversionAction_AttributionModelSettings extends $pb.GeneratedMessage {
   /// Output only. The status of the data-driven attribution model for the
   /// conversion action.
   @$pb.TagNumber(2)
-  $4066.DataDrivenModelStatusEnum_DataDrivenModelStatus get dataDrivenModelStatus => $_getN(1);
+  $4067.DataDrivenModelStatusEnum_DataDrivenModelStatus get dataDrivenModelStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set dataDrivenModelStatus($4066.DataDrivenModelStatusEnum_DataDrivenModelStatus v) { setField(2, v); }
+  set dataDrivenModelStatus($4067.DataDrivenModelStatusEnum_DataDrivenModelStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDataDrivenModelStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -266,9 +266,9 @@ class ConversionAction_FloodlightSettings extends $pb.GeneratedMessage {
 class ConversionAction extends $pb.GeneratedMessage {
   factory ConversionAction({
     $core.String? resourceName,
-    $4063.ConversionActionStatusEnum_ConversionActionStatus? status,
-    $4064.ConversionActionTypeEnum_ConversionActionType? type,
-    $3997.ConversionActionCategoryEnum_ConversionActionCategory? category,
+    $4064.ConversionActionStatusEnum_ConversionActionStatus? status,
+    $4065.ConversionActionTypeEnum_ConversionActionType? type,
+    $3998.ConversionActionCategoryEnum_ConversionActionCategory? category,
     ConversionAction_ValueSettings? valueSettings,
     ConversionAction_AttributionModelSettings? attributionModelSettings,
     $fixnum.Int64? id,
@@ -339,9 +339,9 @@ class ConversionAction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4063.ConversionActionStatusEnum_ConversionActionStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4063.ConversionActionStatusEnum_ConversionActionStatus.UNSPECIFIED, valueOf: $4063.ConversionActionStatusEnum_ConversionActionStatus.valueOf, enumValues: $4063.ConversionActionStatusEnum_ConversionActionStatus.values)
-    ..e<$4064.ConversionActionTypeEnum_ConversionActionType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4064.ConversionActionTypeEnum_ConversionActionType.UNSPECIFIED, valueOf: $4064.ConversionActionTypeEnum_ConversionActionType.valueOf, enumValues: $4064.ConversionActionTypeEnum_ConversionActionType.values)
-    ..e<$3997.ConversionActionCategoryEnum_ConversionActionCategory>(6, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $3997.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $3997.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $3997.ConversionActionCategoryEnum_ConversionActionCategory.values)
+    ..e<$4064.ConversionActionStatusEnum_ConversionActionStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4064.ConversionActionStatusEnum_ConversionActionStatus.UNSPECIFIED, valueOf: $4064.ConversionActionStatusEnum_ConversionActionStatus.valueOf, enumValues: $4064.ConversionActionStatusEnum_ConversionActionStatus.values)
+    ..e<$4065.ConversionActionTypeEnum_ConversionActionType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4065.ConversionActionTypeEnum_ConversionActionType.UNSPECIFIED, valueOf: $4065.ConversionActionTypeEnum_ConversionActionType.valueOf, enumValues: $4065.ConversionActionTypeEnum_ConversionActionType.values)
+    ..e<$3998.ConversionActionCategoryEnum_ConversionActionCategory>(6, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $3998.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $3998.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $3998.ConversionActionCategoryEnum_ConversionActionCategory.values)
     ..aOM<ConversionAction_ValueSettings>(11, _omitFieldNames ? '' : 'valueSettings', subBuilder: ConversionAction_ValueSettings.create)
     ..aOM<ConversionAction_AttributionModelSettings>(13, _omitFieldNames ? '' : 'attributionModelSettings', subBuilder: ConversionAction_AttributionModelSettings.create)
     ..aInt64(21, _omitFieldNames ? '' : 'id')
@@ -393,9 +393,9 @@ class ConversionAction extends $pb.GeneratedMessage {
 
   /// The status of this conversion action for conversion event accrual.
   @$pb.TagNumber(4)
-  $4063.ConversionActionStatusEnum_ConversionActionStatus get status => $_getN(1);
+  $4064.ConversionActionStatusEnum_ConversionActionStatus get status => $_getN(1);
   @$pb.TagNumber(4)
-  set status($4063.ConversionActionStatusEnum_ConversionActionStatus v) { setField(4, v); }
+  set status($4064.ConversionActionStatusEnum_ConversionActionStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(4)
@@ -403,9 +403,9 @@ class ConversionAction extends $pb.GeneratedMessage {
 
   /// Immutable. The type of this conversion action.
   @$pb.TagNumber(5)
-  $4064.ConversionActionTypeEnum_ConversionActionType get type => $_getN(2);
+  $4065.ConversionActionTypeEnum_ConversionActionType get type => $_getN(2);
   @$pb.TagNumber(5)
-  set type($4064.ConversionActionTypeEnum_ConversionActionType v) { setField(5, v); }
+  set type($4065.ConversionActionTypeEnum_ConversionActionType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(5)
@@ -413,9 +413,9 @@ class ConversionAction extends $pb.GeneratedMessage {
 
   /// The category of conversions reported for this conversion action.
   @$pb.TagNumber(6)
-  $3997.ConversionActionCategoryEnum_ConversionActionCategory get category => $_getN(3);
+  $3998.ConversionActionCategoryEnum_ConversionActionCategory get category => $_getN(3);
   @$pb.TagNumber(6)
-  set category($3997.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(6, v); }
+  set category($3998.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCategory() => $_has(3);
   @$pb.TagNumber(6)

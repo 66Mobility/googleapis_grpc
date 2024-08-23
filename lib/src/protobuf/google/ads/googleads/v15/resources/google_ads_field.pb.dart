@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/google_ads_field_category.pbenum.dart' as $2304;
-import '../enums/google_ads_field_data_type.pbenum.dart' as $2305;
+import '../enums/google_ads_field_category.pbenum.dart' as $2305;
+import '../enums/google_ads_field_data_type.pbenum.dart' as $2306;
 
 /// A field or resource (artifact) used by GoogleAdsService.
 class GoogleAdsField extends $pb.GeneratedMessage {
   factory GoogleAdsField({
     $core.String? resourceName,
-    $2304.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory? category,
-    $2305.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType? dataType,
+    $2305.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory? category,
+    $2306.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType? dataType,
     $core.String? name,
     $core.bool? selectable,
     $core.bool? filterable,
@@ -85,8 +85,8 @@ class GoogleAdsField extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GoogleAdsField', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2304.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory>(3, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $2304.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory.UNSPECIFIED, valueOf: $2304.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory.valueOf, enumValues: $2304.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory.values)
-    ..e<$2305.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType>(12, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: $2305.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType.UNSPECIFIED, valueOf: $2305.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType.valueOf, enumValues: $2305.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType.values)
+    ..e<$2305.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory>(3, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $2305.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory.UNSPECIFIED, valueOf: $2305.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory.valueOf, enumValues: $2305.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory.values)
+    ..e<$2306.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType>(12, _omitFieldNames ? '' : 'dataType', $pb.PbFieldType.OE, defaultOrMaker: $2306.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType.UNSPECIFIED, valueOf: $2306.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType.valueOf, enumValues: $2306.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType.values)
     ..aOS(21, _omitFieldNames ? '' : 'name')
     ..aOB(22, _omitFieldNames ? '' : 'selectable')
     ..aOB(23, _omitFieldNames ? '' : 'filterable')
@@ -137,9 +137,9 @@ class GoogleAdsField extends $pb.GeneratedMessage {
 
   /// Output only. The category of the artifact.
   @$pb.TagNumber(3)
-  $2304.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory get category => $_getN(1);
+  $2305.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory get category => $_getN(1);
   @$pb.TagNumber(3)
-  set category($2304.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory v) { setField(3, v); }
+  set category($2305.GoogleAdsFieldCategoryEnum_GoogleAdsFieldCategory v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(3)
@@ -148,9 +148,9 @@ class GoogleAdsField extends $pb.GeneratedMessage {
   /// Output only. This field determines the operators that can be used with the
   /// artifact in WHERE clauses.
   @$pb.TagNumber(12)
-  $2305.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType get dataType => $_getN(2);
+  $2306.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType get dataType => $_getN(2);
   @$pb.TagNumber(12)
-  set dataType($2305.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType v) { setField(12, v); }
+  set dataType($2306.GoogleAdsFieldDataTypeEnum_GoogleAdsFieldDataType v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDataType() => $_has(2);
   @$pb.TagNumber(12)

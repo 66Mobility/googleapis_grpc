@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/extension_setting_device.pbenum.dart' as $2841;
-import '../enums/extension_type.pbenum.dart' as $2840;
+import '../enums/extension_setting_device.pbenum.dart' as $2842;
+import '../enums/extension_type.pbenum.dart' as $2841;
 
 /// An ad group extension setting.
 class AdGroupExtensionSetting extends $pb.GeneratedMessage {
   factory AdGroupExtensionSetting({
     $core.String? resourceName,
-    $2840.ExtensionTypeEnum_ExtensionType? extensionType,
-    $2841.ExtensionSettingDeviceEnum_ExtensionSettingDevice? device,
+    $2841.ExtensionTypeEnum_ExtensionType? extensionType,
+    $2842.ExtensionSettingDeviceEnum_ExtensionSettingDevice? device,
     $core.String? adGroup,
     $core.Iterable<$core.String>? extensionFeedItems,
   }) {
@@ -49,8 +49,8 @@ class AdGroupExtensionSetting extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupExtensionSetting', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2840.ExtensionTypeEnum_ExtensionType>(2, _omitFieldNames ? '' : 'extensionType', $pb.PbFieldType.OE, defaultOrMaker: $2840.ExtensionTypeEnum_ExtensionType.UNSPECIFIED, valueOf: $2840.ExtensionTypeEnum_ExtensionType.valueOf, enumValues: $2840.ExtensionTypeEnum_ExtensionType.values)
-    ..e<$2841.ExtensionSettingDeviceEnum_ExtensionSettingDevice>(5, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2841.ExtensionSettingDeviceEnum_ExtensionSettingDevice.UNSPECIFIED, valueOf: $2841.ExtensionSettingDeviceEnum_ExtensionSettingDevice.valueOf, enumValues: $2841.ExtensionSettingDeviceEnum_ExtensionSettingDevice.values)
+    ..e<$2841.ExtensionTypeEnum_ExtensionType>(2, _omitFieldNames ? '' : 'extensionType', $pb.PbFieldType.OE, defaultOrMaker: $2841.ExtensionTypeEnum_ExtensionType.UNSPECIFIED, valueOf: $2841.ExtensionTypeEnum_ExtensionType.valueOf, enumValues: $2841.ExtensionTypeEnum_ExtensionType.values)
+    ..e<$2842.ExtensionSettingDeviceEnum_ExtensionSettingDevice>(5, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2842.ExtensionSettingDeviceEnum_ExtensionSettingDevice.UNSPECIFIED, valueOf: $2842.ExtensionSettingDeviceEnum_ExtensionSettingDevice.valueOf, enumValues: $2842.ExtensionSettingDeviceEnum_ExtensionSettingDevice.values)
     ..aOS(6, _omitFieldNames ? '' : 'adGroup')
     ..pPS(7, _omitFieldNames ? '' : 'extensionFeedItems')
     ..hasRequiredFields = false
@@ -92,9 +92,9 @@ class AdGroupExtensionSetting extends $pb.GeneratedMessage {
 
   /// Immutable. The extension type of the ad group extension setting.
   @$pb.TagNumber(2)
-  $2840.ExtensionTypeEnum_ExtensionType get extensionType => $_getN(1);
+  $2841.ExtensionTypeEnum_ExtensionType get extensionType => $_getN(1);
   @$pb.TagNumber(2)
-  set extensionType($2840.ExtensionTypeEnum_ExtensionType v) { setField(2, v); }
+  set extensionType($2841.ExtensionTypeEnum_ExtensionType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExtensionType() => $_has(1);
   @$pb.TagNumber(2)
@@ -102,9 +102,9 @@ class AdGroupExtensionSetting extends $pb.GeneratedMessage {
 
   /// The device for which the extensions will serve. Optional.
   @$pb.TagNumber(5)
-  $2841.ExtensionSettingDeviceEnum_ExtensionSettingDevice get device => $_getN(2);
+  $2842.ExtensionSettingDeviceEnum_ExtensionSettingDevice get device => $_getN(2);
   @$pb.TagNumber(5)
-  set device($2841.ExtensionSettingDeviceEnum_ExtensionSettingDevice v) { setField(5, v); }
+  set device($2842.ExtensionSettingDeviceEnum_ExtensionSettingDevice v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDevice() => $_has(2);
   @$pb.TagNumber(5)

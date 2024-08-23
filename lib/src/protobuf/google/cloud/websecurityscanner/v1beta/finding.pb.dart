@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'finding_addon.pb.dart' as $4738;
+import 'finding_addon.pb.dart' as $4740;
 
 /// A Finding resource represents a vulnerability instance identified during a
 /// ScanRun.
@@ -29,12 +29,12 @@ class Finding extends $pb.GeneratedMessage {
     $core.String? frameUrl,
     $core.String? finalUrl,
     $core.String? trackingId,
-    $4738.OutdatedLibrary? outdatedLibrary,
-    $4738.ViolatingResource? violatingResource,
-    $4738.VulnerableParameters? vulnerableParameters,
-    $4738.Xss? xss,
-    $4738.VulnerableHeaders? vulnerableHeaders,
-    $4738.Form? form,
+    $4740.OutdatedLibrary? outdatedLibrary,
+    $4740.ViolatingResource? violatingResource,
+    $4740.VulnerableParameters? vulnerableParameters,
+    $4740.Xss? xss,
+    $4740.VulnerableHeaders? vulnerableHeaders,
+    $4740.Form? form,
   }) {
     final $result = create();
     if (name != null) {
@@ -102,12 +102,12 @@ class Finding extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'frameUrl')
     ..aOS(9, _omitFieldNames ? '' : 'finalUrl')
     ..aOS(10, _omitFieldNames ? '' : 'trackingId')
-    ..aOM<$4738.OutdatedLibrary>(11, _omitFieldNames ? '' : 'outdatedLibrary', subBuilder: $4738.OutdatedLibrary.create)
-    ..aOM<$4738.ViolatingResource>(12, _omitFieldNames ? '' : 'violatingResource', subBuilder: $4738.ViolatingResource.create)
-    ..aOM<$4738.VulnerableParameters>(13, _omitFieldNames ? '' : 'vulnerableParameters', subBuilder: $4738.VulnerableParameters.create)
-    ..aOM<$4738.Xss>(14, _omitFieldNames ? '' : 'xss', subBuilder: $4738.Xss.create)
-    ..aOM<$4738.VulnerableHeaders>(15, _omitFieldNames ? '' : 'vulnerableHeaders', subBuilder: $4738.VulnerableHeaders.create)
-    ..aOM<$4738.Form>(16, _omitFieldNames ? '' : 'form', subBuilder: $4738.Form.create)
+    ..aOM<$4740.OutdatedLibrary>(11, _omitFieldNames ? '' : 'outdatedLibrary', subBuilder: $4740.OutdatedLibrary.create)
+    ..aOM<$4740.ViolatingResource>(12, _omitFieldNames ? '' : 'violatingResource', subBuilder: $4740.ViolatingResource.create)
+    ..aOM<$4740.VulnerableParameters>(13, _omitFieldNames ? '' : 'vulnerableParameters', subBuilder: $4740.VulnerableParameters.create)
+    ..aOM<$4740.Xss>(14, _omitFieldNames ? '' : 'xss', subBuilder: $4740.Xss.create)
+    ..aOM<$4740.VulnerableHeaders>(15, _omitFieldNames ? '' : 'vulnerableHeaders', subBuilder: $4740.VulnerableHeaders.create)
+    ..aOM<$4740.Form>(16, _omitFieldNames ? '' : 'form', subBuilder: $4740.Form.create)
     ..hasRequiredFields = false
   ;
 
@@ -243,78 +243,78 @@ class Finding extends $pb.GeneratedMessage {
 
   /// An addon containing information about outdated libraries.
   @$pb.TagNumber(11)
-  $4738.OutdatedLibrary get outdatedLibrary => $_getN(10);
+  $4740.OutdatedLibrary get outdatedLibrary => $_getN(10);
   @$pb.TagNumber(11)
-  set outdatedLibrary($4738.OutdatedLibrary v) { setField(11, v); }
+  set outdatedLibrary($4740.OutdatedLibrary v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasOutdatedLibrary() => $_has(10);
   @$pb.TagNumber(11)
   void clearOutdatedLibrary() => clearField(11);
   @$pb.TagNumber(11)
-  $4738.OutdatedLibrary ensureOutdatedLibrary() => $_ensure(10);
+  $4740.OutdatedLibrary ensureOutdatedLibrary() => $_ensure(10);
 
   /// An addon containing detailed information regarding any resource causing the
   /// vulnerability such as JavaScript sources, image, audio files, etc.
   @$pb.TagNumber(12)
-  $4738.ViolatingResource get violatingResource => $_getN(11);
+  $4740.ViolatingResource get violatingResource => $_getN(11);
   @$pb.TagNumber(12)
-  set violatingResource($4738.ViolatingResource v) { setField(12, v); }
+  set violatingResource($4740.ViolatingResource v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasViolatingResource() => $_has(11);
   @$pb.TagNumber(12)
   void clearViolatingResource() => clearField(12);
   @$pb.TagNumber(12)
-  $4738.ViolatingResource ensureViolatingResource() => $_ensure(11);
+  $4740.ViolatingResource ensureViolatingResource() => $_ensure(11);
 
   /// An addon containing information about request parameters which were found
   /// to be vulnerable.
   @$pb.TagNumber(13)
-  $4738.VulnerableParameters get vulnerableParameters => $_getN(12);
+  $4740.VulnerableParameters get vulnerableParameters => $_getN(12);
   @$pb.TagNumber(13)
-  set vulnerableParameters($4738.VulnerableParameters v) { setField(13, v); }
+  set vulnerableParameters($4740.VulnerableParameters v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasVulnerableParameters() => $_has(12);
   @$pb.TagNumber(13)
   void clearVulnerableParameters() => clearField(13);
   @$pb.TagNumber(13)
-  $4738.VulnerableParameters ensureVulnerableParameters() => $_ensure(12);
+  $4740.VulnerableParameters ensureVulnerableParameters() => $_ensure(12);
 
   /// An addon containing information reported for an XSS, if any.
   @$pb.TagNumber(14)
-  $4738.Xss get xss => $_getN(13);
+  $4740.Xss get xss => $_getN(13);
   @$pb.TagNumber(14)
-  set xss($4738.Xss v) { setField(14, v); }
+  set xss($4740.Xss v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasXss() => $_has(13);
   @$pb.TagNumber(14)
   void clearXss() => clearField(14);
   @$pb.TagNumber(14)
-  $4738.Xss ensureXss() => $_ensure(13);
+  $4740.Xss ensureXss() => $_ensure(13);
 
   /// An addon containing information about vulnerable or missing HTTP headers.
   @$pb.TagNumber(15)
-  $4738.VulnerableHeaders get vulnerableHeaders => $_getN(14);
+  $4740.VulnerableHeaders get vulnerableHeaders => $_getN(14);
   @$pb.TagNumber(15)
-  set vulnerableHeaders($4738.VulnerableHeaders v) { setField(15, v); }
+  set vulnerableHeaders($4740.VulnerableHeaders v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasVulnerableHeaders() => $_has(14);
   @$pb.TagNumber(15)
   void clearVulnerableHeaders() => clearField(15);
   @$pb.TagNumber(15)
-  $4738.VulnerableHeaders ensureVulnerableHeaders() => $_ensure(14);
+  $4740.VulnerableHeaders ensureVulnerableHeaders() => $_ensure(14);
 
   /// An addon containing information reported for a vulnerability with an HTML
   /// form, if any.
   @$pb.TagNumber(16)
-  $4738.Form get form => $_getN(15);
+  $4740.Form get form => $_getN(15);
   @$pb.TagNumber(16)
-  set form($4738.Form v) { setField(16, v); }
+  set form($4740.Form v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasForm() => $_has(15);
   @$pb.TagNumber(16)
   void clearForm() => clearField(16);
   @$pb.TagNumber(16)
-  $4738.Form ensureForm() => $_ensure(15);
+  $4740.Form ensureForm() => $_ensure(15);
 }
 
 

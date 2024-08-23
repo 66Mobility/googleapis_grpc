@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $1775;
+import '../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Describes a change made to a configuration.
 class MutationRecord extends $pb.GeneratedMessage {
   factory MutationRecord({
-    $1775.Timestamp? mutateTime,
+    $1776.Timestamp? mutateTime,
     $core.String? mutatedBy,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class MutationRecord extends $pb.GeneratedMessage {
   factory MutationRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutationRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'mutateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'mutateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'mutatedBy')
     ..hasRequiredFields = false
   ;
@@ -63,15 +63,15 @@ class MutationRecord extends $pb.GeneratedMessage {
 
   /// When the change occurred.
   @$pb.TagNumber(1)
-  $1775.Timestamp get mutateTime => $_getN(0);
+  $1776.Timestamp get mutateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set mutateTime($1775.Timestamp v) { setField(1, v); }
+  set mutateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMutateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearMutateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureMutateTime() => $_ensure(0);
+  $1776.Timestamp ensureMutateTime() => $_ensure(0);
 
   /// The email address of the user making the change.
   @$pb.TagNumber(2)

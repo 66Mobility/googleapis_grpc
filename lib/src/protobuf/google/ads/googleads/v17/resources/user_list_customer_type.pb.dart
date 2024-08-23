@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/user_list_customer_type_category.pbenum.dart' as $3792;
+import '../enums/user_list_customer_type_category.pbenum.dart' as $3793;
 
 /// A user list customer type
 class UserListCustomerType extends $pb.GeneratedMessage {
   factory UserListCustomerType({
     $core.String? resourceName,
     $core.String? userList,
-    $3792.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory? customerTypeCategory,
+    $3793.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory? customerTypeCategory,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -41,7 +41,7 @@ class UserListCustomerType extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserListCustomerType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'userList')
-    ..e<$3792.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory>(3, _omitFieldNames ? '' : 'customerTypeCategory', $pb.PbFieldType.OE, defaultOrMaker: $3792.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory.UNSPECIFIED, valueOf: $3792.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory.valueOf, enumValues: $3792.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory.values)
+    ..e<$3793.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory>(3, _omitFieldNames ? '' : 'customerTypeCategory', $pb.PbFieldType.OE, defaultOrMaker: $3793.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory.UNSPECIFIED, valueOf: $3793.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory.valueOf, enumValues: $3793.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory.values)
     ..hasRequiredFields = false
   ;
 
@@ -91,9 +91,9 @@ class UserListCustomerType extends $pb.GeneratedMessage {
 
   /// Immutable. The user list customer type category
   @$pb.TagNumber(3)
-  $3792.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory get customerTypeCategory => $_getN(2);
+  $3793.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory get customerTypeCategory => $_getN(2);
   @$pb.TagNumber(3)
-  set customerTypeCategory($3792.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory v) { setField(3, v); }
+  set customerTypeCategory($3793.UserListCustomerTypeCategoryEnum_UserListCustomerTypeCategory v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCustomerTypeCategory() => $_has(2);
   @$pb.TagNumber(3)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'run_asset_discovery_response.pbenum.dart';
 
 export 'run_asset_discovery_response.pbenum.dart';
@@ -22,7 +22,7 @@ export 'run_asset_discovery_response.pbenum.dart';
 class RunAssetDiscoveryResponse extends $pb.GeneratedMessage {
   factory RunAssetDiscoveryResponse({
     RunAssetDiscoveryResponse_State? state,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (state != null) {
@@ -39,7 +39,7 @@ class RunAssetDiscoveryResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunAssetDiscoveryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1p1beta1'), createEmptyInstance: create)
     ..e<RunAssetDiscoveryResponse_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: RunAssetDiscoveryResponse_State.STATE_UNSPECIFIED, valueOf: RunAssetDiscoveryResponse_State.valueOf, enumValues: RunAssetDiscoveryResponse_State.values)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,15 +76,15 @@ class RunAssetDiscoveryResponse extends $pb.GeneratedMessage {
 
   /// The duration between asset discovery run start and end
   @$pb.TagNumber(2)
-  $1737.Duration get duration => $_getN(1);
+  $1738.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($1737.Duration v) { setField(2, v); }
+  set duration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureDuration() => $_ensure(1);
+  $1738.Duration ensureDuration() => $_ensure(1);
 }
 
 

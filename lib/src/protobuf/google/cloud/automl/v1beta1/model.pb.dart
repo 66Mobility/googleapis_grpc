@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'image.pb.dart' as $4355;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'image.pb.dart' as $4356;
 import 'model.pbenum.dart';
-import 'tables.pb.dart' as $4354;
-import 'text.pb.dart' as $4356;
-import 'translation.pb.dart' as $4350;
-import 'video.pb.dart' as $4357;
+import 'tables.pb.dart' as $4355;
+import 'text.pb.dart' as $4357;
+import 'translation.pb.dart' as $4351;
+import 'video.pb.dart' as $4358;
 
 export 'model.pbenum.dart';
 
@@ -42,18 +42,18 @@ class Model extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? datasetId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Model_DeploymentState? deploymentState,
-    $1775.Timestamp? updateTime,
-    $4355.ImageClassificationModelMetadata? imageClassificationModelMetadata,
-    $4356.TextClassificationModelMetadata? textClassificationModelMetadata,
-    $4350.TranslationModelMetadata? translationModelMetadata,
-    $4356.TextExtractionModelMetadata? textExtractionModelMetadata,
-    $4355.ImageObjectDetectionModelMetadata? imageObjectDetectionModelMetadata,
-    $4357.VideoObjectTrackingModelMetadata? videoObjectTrackingModelMetadata,
-    $4356.TextSentimentModelMetadata? textSentimentModelMetadata,
-    $4357.VideoClassificationModelMetadata? videoClassificationModelMetadata,
-    $4354.TablesModelMetadata? tablesModelMetadata,
+    $1776.Timestamp? updateTime,
+    $4356.ImageClassificationModelMetadata? imageClassificationModelMetadata,
+    $4357.TextClassificationModelMetadata? textClassificationModelMetadata,
+    $4351.TranslationModelMetadata? translationModelMetadata,
+    $4357.TextExtractionModelMetadata? textExtractionModelMetadata,
+    $4356.ImageObjectDetectionModelMetadata? imageObjectDetectionModelMetadata,
+    $4358.VideoObjectTrackingModelMetadata? videoObjectTrackingModelMetadata,
+    $4357.TextSentimentModelMetadata? textSentimentModelMetadata,
+    $4358.VideoClassificationModelMetadata? videoClassificationModelMetadata,
+    $4355.TablesModelMetadata? tablesModelMetadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -124,18 +124,18 @@ class Model extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'datasetId')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Model_DeploymentState>(8, _omitFieldNames ? '' : 'deploymentState', $pb.PbFieldType.OE, defaultOrMaker: Model_DeploymentState.DEPLOYMENT_STATE_UNSPECIFIED, valueOf: Model_DeploymentState.valueOf, enumValues: Model_DeploymentState.values)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4355.ImageClassificationModelMetadata>(13, _omitFieldNames ? '' : 'imageClassificationModelMetadata', subBuilder: $4355.ImageClassificationModelMetadata.create)
-    ..aOM<$4356.TextClassificationModelMetadata>(14, _omitFieldNames ? '' : 'textClassificationModelMetadata', subBuilder: $4356.TextClassificationModelMetadata.create)
-    ..aOM<$4350.TranslationModelMetadata>(15, _omitFieldNames ? '' : 'translationModelMetadata', subBuilder: $4350.TranslationModelMetadata.create)
-    ..aOM<$4356.TextExtractionModelMetadata>(19, _omitFieldNames ? '' : 'textExtractionModelMetadata', subBuilder: $4356.TextExtractionModelMetadata.create)
-    ..aOM<$4355.ImageObjectDetectionModelMetadata>(20, _omitFieldNames ? '' : 'imageObjectDetectionModelMetadata', subBuilder: $4355.ImageObjectDetectionModelMetadata.create)
-    ..aOM<$4357.VideoObjectTrackingModelMetadata>(21, _omitFieldNames ? '' : 'videoObjectTrackingModelMetadata', subBuilder: $4357.VideoObjectTrackingModelMetadata.create)
-    ..aOM<$4356.TextSentimentModelMetadata>(22, _omitFieldNames ? '' : 'textSentimentModelMetadata', subBuilder: $4356.TextSentimentModelMetadata.create)
-    ..aOM<$4357.VideoClassificationModelMetadata>(23, _omitFieldNames ? '' : 'videoClassificationModelMetadata', subBuilder: $4357.VideoClassificationModelMetadata.create)
-    ..aOM<$4354.TablesModelMetadata>(24, _omitFieldNames ? '' : 'tablesModelMetadata', subBuilder: $4354.TablesModelMetadata.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4356.ImageClassificationModelMetadata>(13, _omitFieldNames ? '' : 'imageClassificationModelMetadata', subBuilder: $4356.ImageClassificationModelMetadata.create)
+    ..aOM<$4357.TextClassificationModelMetadata>(14, _omitFieldNames ? '' : 'textClassificationModelMetadata', subBuilder: $4357.TextClassificationModelMetadata.create)
+    ..aOM<$4351.TranslationModelMetadata>(15, _omitFieldNames ? '' : 'translationModelMetadata', subBuilder: $4351.TranslationModelMetadata.create)
+    ..aOM<$4357.TextExtractionModelMetadata>(19, _omitFieldNames ? '' : 'textExtractionModelMetadata', subBuilder: $4357.TextExtractionModelMetadata.create)
+    ..aOM<$4356.ImageObjectDetectionModelMetadata>(20, _omitFieldNames ? '' : 'imageObjectDetectionModelMetadata', subBuilder: $4356.ImageObjectDetectionModelMetadata.create)
+    ..aOM<$4358.VideoObjectTrackingModelMetadata>(21, _omitFieldNames ? '' : 'videoObjectTrackingModelMetadata', subBuilder: $4358.VideoObjectTrackingModelMetadata.create)
+    ..aOM<$4357.TextSentimentModelMetadata>(22, _omitFieldNames ? '' : 'textSentimentModelMetadata', subBuilder: $4357.TextSentimentModelMetadata.create)
+    ..aOM<$4358.VideoClassificationModelMetadata>(23, _omitFieldNames ? '' : 'videoClassificationModelMetadata', subBuilder: $4358.VideoClassificationModelMetadata.create)
+    ..aOM<$4355.TablesModelMetadata>(24, _omitFieldNames ? '' : 'tablesModelMetadata', subBuilder: $4355.TablesModelMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -200,15 +200,15 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the model training finished  and can be used for prediction.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Deployment state of the model. A model can only serve
   /// prediction requests after it gets deployed.
@@ -223,123 +223,123 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this model was last updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Metadata for image classification models.
   @$pb.TagNumber(13)
-  $4355.ImageClassificationModelMetadata get imageClassificationModelMetadata => $_getN(6);
+  $4356.ImageClassificationModelMetadata get imageClassificationModelMetadata => $_getN(6);
   @$pb.TagNumber(13)
-  set imageClassificationModelMetadata($4355.ImageClassificationModelMetadata v) { setField(13, v); }
+  set imageClassificationModelMetadata($4356.ImageClassificationModelMetadata v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasImageClassificationModelMetadata() => $_has(6);
   @$pb.TagNumber(13)
   void clearImageClassificationModelMetadata() => clearField(13);
   @$pb.TagNumber(13)
-  $4355.ImageClassificationModelMetadata ensureImageClassificationModelMetadata() => $_ensure(6);
+  $4356.ImageClassificationModelMetadata ensureImageClassificationModelMetadata() => $_ensure(6);
 
   /// Metadata for text classification models.
   @$pb.TagNumber(14)
-  $4356.TextClassificationModelMetadata get textClassificationModelMetadata => $_getN(7);
+  $4357.TextClassificationModelMetadata get textClassificationModelMetadata => $_getN(7);
   @$pb.TagNumber(14)
-  set textClassificationModelMetadata($4356.TextClassificationModelMetadata v) { setField(14, v); }
+  set textClassificationModelMetadata($4357.TextClassificationModelMetadata v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTextClassificationModelMetadata() => $_has(7);
   @$pb.TagNumber(14)
   void clearTextClassificationModelMetadata() => clearField(14);
   @$pb.TagNumber(14)
-  $4356.TextClassificationModelMetadata ensureTextClassificationModelMetadata() => $_ensure(7);
+  $4357.TextClassificationModelMetadata ensureTextClassificationModelMetadata() => $_ensure(7);
 
   /// Metadata for translation models.
   @$pb.TagNumber(15)
-  $4350.TranslationModelMetadata get translationModelMetadata => $_getN(8);
+  $4351.TranslationModelMetadata get translationModelMetadata => $_getN(8);
   @$pb.TagNumber(15)
-  set translationModelMetadata($4350.TranslationModelMetadata v) { setField(15, v); }
+  set translationModelMetadata($4351.TranslationModelMetadata v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasTranslationModelMetadata() => $_has(8);
   @$pb.TagNumber(15)
   void clearTranslationModelMetadata() => clearField(15);
   @$pb.TagNumber(15)
-  $4350.TranslationModelMetadata ensureTranslationModelMetadata() => $_ensure(8);
+  $4351.TranslationModelMetadata ensureTranslationModelMetadata() => $_ensure(8);
 
   /// Metadata for text extraction models.
   @$pb.TagNumber(19)
-  $4356.TextExtractionModelMetadata get textExtractionModelMetadata => $_getN(9);
+  $4357.TextExtractionModelMetadata get textExtractionModelMetadata => $_getN(9);
   @$pb.TagNumber(19)
-  set textExtractionModelMetadata($4356.TextExtractionModelMetadata v) { setField(19, v); }
+  set textExtractionModelMetadata($4357.TextExtractionModelMetadata v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasTextExtractionModelMetadata() => $_has(9);
   @$pb.TagNumber(19)
   void clearTextExtractionModelMetadata() => clearField(19);
   @$pb.TagNumber(19)
-  $4356.TextExtractionModelMetadata ensureTextExtractionModelMetadata() => $_ensure(9);
+  $4357.TextExtractionModelMetadata ensureTextExtractionModelMetadata() => $_ensure(9);
 
   /// Metadata for image object detection models.
   @$pb.TagNumber(20)
-  $4355.ImageObjectDetectionModelMetadata get imageObjectDetectionModelMetadata => $_getN(10);
+  $4356.ImageObjectDetectionModelMetadata get imageObjectDetectionModelMetadata => $_getN(10);
   @$pb.TagNumber(20)
-  set imageObjectDetectionModelMetadata($4355.ImageObjectDetectionModelMetadata v) { setField(20, v); }
+  set imageObjectDetectionModelMetadata($4356.ImageObjectDetectionModelMetadata v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasImageObjectDetectionModelMetadata() => $_has(10);
   @$pb.TagNumber(20)
   void clearImageObjectDetectionModelMetadata() => clearField(20);
   @$pb.TagNumber(20)
-  $4355.ImageObjectDetectionModelMetadata ensureImageObjectDetectionModelMetadata() => $_ensure(10);
+  $4356.ImageObjectDetectionModelMetadata ensureImageObjectDetectionModelMetadata() => $_ensure(10);
 
   /// Metadata for video object tracking models.
   @$pb.TagNumber(21)
-  $4357.VideoObjectTrackingModelMetadata get videoObjectTrackingModelMetadata => $_getN(11);
+  $4358.VideoObjectTrackingModelMetadata get videoObjectTrackingModelMetadata => $_getN(11);
   @$pb.TagNumber(21)
-  set videoObjectTrackingModelMetadata($4357.VideoObjectTrackingModelMetadata v) { setField(21, v); }
+  set videoObjectTrackingModelMetadata($4358.VideoObjectTrackingModelMetadata v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasVideoObjectTrackingModelMetadata() => $_has(11);
   @$pb.TagNumber(21)
   void clearVideoObjectTrackingModelMetadata() => clearField(21);
   @$pb.TagNumber(21)
-  $4357.VideoObjectTrackingModelMetadata ensureVideoObjectTrackingModelMetadata() => $_ensure(11);
+  $4358.VideoObjectTrackingModelMetadata ensureVideoObjectTrackingModelMetadata() => $_ensure(11);
 
   /// Metadata for text sentiment models.
   @$pb.TagNumber(22)
-  $4356.TextSentimentModelMetadata get textSentimentModelMetadata => $_getN(12);
+  $4357.TextSentimentModelMetadata get textSentimentModelMetadata => $_getN(12);
   @$pb.TagNumber(22)
-  set textSentimentModelMetadata($4356.TextSentimentModelMetadata v) { setField(22, v); }
+  set textSentimentModelMetadata($4357.TextSentimentModelMetadata v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasTextSentimentModelMetadata() => $_has(12);
   @$pb.TagNumber(22)
   void clearTextSentimentModelMetadata() => clearField(22);
   @$pb.TagNumber(22)
-  $4356.TextSentimentModelMetadata ensureTextSentimentModelMetadata() => $_ensure(12);
+  $4357.TextSentimentModelMetadata ensureTextSentimentModelMetadata() => $_ensure(12);
 
   /// Metadata for video classification models.
   @$pb.TagNumber(23)
-  $4357.VideoClassificationModelMetadata get videoClassificationModelMetadata => $_getN(13);
+  $4358.VideoClassificationModelMetadata get videoClassificationModelMetadata => $_getN(13);
   @$pb.TagNumber(23)
-  set videoClassificationModelMetadata($4357.VideoClassificationModelMetadata v) { setField(23, v); }
+  set videoClassificationModelMetadata($4358.VideoClassificationModelMetadata v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasVideoClassificationModelMetadata() => $_has(13);
   @$pb.TagNumber(23)
   void clearVideoClassificationModelMetadata() => clearField(23);
   @$pb.TagNumber(23)
-  $4357.VideoClassificationModelMetadata ensureVideoClassificationModelMetadata() => $_ensure(13);
+  $4358.VideoClassificationModelMetadata ensureVideoClassificationModelMetadata() => $_ensure(13);
 
   /// Metadata for Tables models.
   @$pb.TagNumber(24)
-  $4354.TablesModelMetadata get tablesModelMetadata => $_getN(14);
+  $4355.TablesModelMetadata get tablesModelMetadata => $_getN(14);
   @$pb.TagNumber(24)
-  set tablesModelMetadata($4354.TablesModelMetadata v) { setField(24, v); }
+  set tablesModelMetadata($4355.TablesModelMetadata v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasTablesModelMetadata() => $_has(14);
   @$pb.TagNumber(24)
   void clearTablesModelMetadata() => clearField(24);
   @$pb.TagNumber(24)
-  $4354.TablesModelMetadata ensureTablesModelMetadata() => $_ensure(14);
+  $4355.TablesModelMetadata ensureTablesModelMetadata() => $_ensure(14);
 }
 
 

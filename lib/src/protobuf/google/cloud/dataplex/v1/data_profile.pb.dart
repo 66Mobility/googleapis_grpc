@@ -15,7 +15,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'data_profile.pbenum.dart';
-import 'processing.pb.dart' as $4466;
+import 'processing.pb.dart' as $4468;
 
 export 'data_profile.pbenum.dart';
 
@@ -1149,7 +1149,7 @@ class DataProfileResult extends $pb.GeneratedMessage {
   factory DataProfileResult({
     $fixnum.Int64? rowCount,
     DataProfileResult_Profile? profile,
-    $4466.ScannedData? scannedData,
+    $4468.ScannedData? scannedData,
     DataProfileResult_PostScanActionsResult? postScanActionsResult,
   }) {
     final $result = create();
@@ -1174,7 +1174,7 @@ class DataProfileResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataProfileResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..aInt64(3, _omitFieldNames ? '' : 'rowCount')
     ..aOM<DataProfileResult_Profile>(4, _omitFieldNames ? '' : 'profile', subBuilder: DataProfileResult_Profile.create)
-    ..aOM<$4466.ScannedData>(5, _omitFieldNames ? '' : 'scannedData', subBuilder: $4466.ScannedData.create)
+    ..aOM<$4468.ScannedData>(5, _omitFieldNames ? '' : 'scannedData', subBuilder: $4468.ScannedData.create)
     ..aOM<DataProfileResult_PostScanActionsResult>(6, _omitFieldNames ? '' : 'postScanActionsResult', subBuilder: DataProfileResult_PostScanActionsResult.create)
     ..hasRequiredFields = false
   ;
@@ -1224,15 +1224,15 @@ class DataProfileResult extends $pb.GeneratedMessage {
 
   /// The data scanned for this result.
   @$pb.TagNumber(5)
-  $4466.ScannedData get scannedData => $_getN(2);
+  $4468.ScannedData get scannedData => $_getN(2);
   @$pb.TagNumber(5)
-  set scannedData($4466.ScannedData v) { setField(5, v); }
+  set scannedData($4468.ScannedData v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasScannedData() => $_has(2);
   @$pb.TagNumber(5)
   void clearScannedData() => clearField(5);
   @$pb.TagNumber(5)
-  $4466.ScannedData ensureScannedData() => $_ensure(2);
+  $4468.ScannedData ensureScannedData() => $_ensure(2);
 
   /// Output only. The result of post scan actions.
   @$pb.TagNumber(6)

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'dataset.pb.dart' as $814;
-import 'human_annotation_config.pb.dart' as $4464;
+import 'human_annotation_config.pb.dart' as $4466;
 
 /// Response used for ImportData longrunning operation.
 class ImportDataOperationResponse extends $pb.GeneratedMessage {
@@ -221,8 +221,8 @@ class ExportDataOperationResponse extends $pb.GeneratedMessage {
 class ImportDataOperationMetadata extends $pb.GeneratedMessage {
   factory ImportDataOperationMetadata({
     $core.String? dataset,
-    $core.Iterable<$1795.Status>? partialFailures,
-    $1775.Timestamp? createTime,
+    $core.Iterable<$1796.Status>? partialFailures,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -242,8 +242,8 @@ class ImportDataOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDataOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'dataset')
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -283,27 +283,27 @@ class ImportDataOperationMetadata extends $pb.GeneratedMessage {
   /// E.g. single files that couldn't be read.
   /// Status details field will contain standard GCP error details.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get partialFailures => $_getList(1);
+  $core.List<$1796.Status> get partialFailures => $_getList(1);
 
   /// Output only. Timestamp when import dataset request was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 /// Metadata of an ExportData operation.
 class ExportDataOperationMetadata extends $pb.GeneratedMessage {
   factory ExportDataOperationMetadata({
     $core.String? dataset,
-    $core.Iterable<$1795.Status>? partialFailures,
-    $1775.Timestamp? createTime,
+    $core.Iterable<$1796.Status>? partialFailures,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -323,8 +323,8 @@ class ExportDataOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDataOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'dataset')
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -364,19 +364,19 @@ class ExportDataOperationMetadata extends $pb.GeneratedMessage {
   /// E.g. single files that couldn't be read.
   /// Status details field will contain standard GCP error details.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get partialFailures => $_getList(1);
+  $core.List<$1796.Status> get partialFailures => $_getList(1);
 
   /// Output only. Timestamp when export dataset request was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 enum LabelOperationMetadata_Details {
@@ -400,7 +400,7 @@ enum LabelOperationMetadata_Details {
 class LabelOperationMetadata extends $pb.GeneratedMessage {
   factory LabelOperationMetadata({
     $core.int? progressPercent,
-    $core.Iterable<$1795.Status>? partialFailures,
+    $core.Iterable<$1796.Status>? partialFailures,
     LabelImageClassificationOperationMetadata? imageClassificationDetails,
     LabelImageBoundingBoxOperationMetadata? imageBoundingBoxDetails,
     LabelVideoClassificationOperationMetadata? videoClassificationDetails,
@@ -413,7 +413,7 @@ class LabelOperationMetadata extends $pb.GeneratedMessage {
     LabelTextEntityExtractionOperationMetadata? textEntityExtractionDetails,
     LabelImageOrientedBoundingBoxOperationMetadata? imageOrientedBoundingBoxDetails,
     LabelImageSegmentationOperationMetadata? imageSegmentationDetails,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (progressPercent != null) {
@@ -485,7 +485,7 @@ class LabelOperationMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<LabelImageClassificationOperationMetadata>(3, _omitFieldNames ? '' : 'imageClassificationDetails', subBuilder: LabelImageClassificationOperationMetadata.create)
     ..aOM<LabelImageBoundingBoxOperationMetadata>(4, _omitFieldNames ? '' : 'imageBoundingBoxDetails', subBuilder: LabelImageBoundingBoxOperationMetadata.create)
     ..aOM<LabelVideoClassificationOperationMetadata>(5, _omitFieldNames ? '' : 'videoClassificationDetails', subBuilder: LabelVideoClassificationOperationMetadata.create)
@@ -498,7 +498,7 @@ class LabelOperationMetadata extends $pb.GeneratedMessage {
     ..aOM<LabelTextEntityExtractionOperationMetadata>(13, _omitFieldNames ? '' : 'textEntityExtractionDetails', subBuilder: LabelTextEntityExtractionOperationMetadata.create)
     ..aOM<LabelImageOrientedBoundingBoxOperationMetadata>(14, _omitFieldNames ? '' : 'imageOrientedBoundingBoxDetails', subBuilder: LabelImageOrientedBoundingBoxOperationMetadata.create)
     ..aOM<LabelImageSegmentationOperationMetadata>(15, _omitFieldNames ? '' : 'imageSegmentationDetails', subBuilder: LabelImageSegmentationOperationMetadata.create)
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -540,7 +540,7 @@ class LabelOperationMetadata extends $pb.GeneratedMessage {
   /// E.g. single files that couldn't be read.
   /// Status details field will contain standard GCP error details.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get partialFailures => $_getList(1);
+  $core.List<$1796.Status> get partialFailures => $_getList(1);
 
   /// Details of label image classification operation.
   @$pb.TagNumber(3)
@@ -688,21 +688,21 @@ class LabelOperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when labeling request was created.
   @$pb.TagNumber(16)
-  $1775.Timestamp get createTime => $_getN(14);
+  $1776.Timestamp get createTime => $_getN(14);
   @$pb.TagNumber(16)
-  set createTime($1775.Timestamp v) { setField(16, v); }
+  set createTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasCreateTime() => $_has(14);
   @$pb.TagNumber(16)
   void clearCreateTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureCreateTime() => $_ensure(14);
+  $1776.Timestamp ensureCreateTime() => $_ensure(14);
 }
 
 /// Metadata of a LabelImageClassification operation.
 class LabelImageClassificationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageClassificationOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -715,7 +715,7 @@ class LabelImageClassificationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageClassificationOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelImageClassificationOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -742,21 +742,21 @@ class LabelImageClassificationOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelImageBoundingBox operation metadata.
 class LabelImageBoundingBoxOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageBoundingBoxOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -769,7 +769,7 @@ class LabelImageBoundingBoxOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageBoundingBoxOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelImageBoundingBoxOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -796,21 +796,21 @@ class LabelImageBoundingBoxOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelImageOrientedBoundingBox operation metadata.
 class LabelImageOrientedBoundingBoxOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageOrientedBoundingBoxOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -823,7 +823,7 @@ class LabelImageOrientedBoundingBoxOperationMetadata extends $pb.GeneratedMessag
   factory LabelImageOrientedBoundingBoxOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelImageOrientedBoundingBoxOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -850,21 +850,21 @@ class LabelImageOrientedBoundingBoxOperationMetadata extends $pb.GeneratedMessag
 
   /// Basic human annotation config.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of LabelImageBoundingPoly operation metadata.
 class LabelImageBoundingPolyOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageBoundingPolyOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -877,7 +877,7 @@ class LabelImageBoundingPolyOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageBoundingPolyOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelImageBoundingPolyOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -904,21 +904,21 @@ class LabelImageBoundingPolyOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of LabelImagePolyline operation metadata.
 class LabelImagePolylineOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImagePolylineOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -931,7 +931,7 @@ class LabelImagePolylineOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImagePolylineOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelImagePolylineOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -958,21 +958,21 @@ class LabelImagePolylineOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelImageSegmentation operation metadata.
 class LabelImageSegmentationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageSegmentationOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -985,7 +985,7 @@ class LabelImageSegmentationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelImageSegmentationOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelImageSegmentationOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1012,21 +1012,21 @@ class LabelImageSegmentationOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelVideoClassification operation metadata.
 class LabelVideoClassificationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoClassificationOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -1039,7 +1039,7 @@ class LabelVideoClassificationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoClassificationOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelVideoClassificationOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1066,21 +1066,21 @@ class LabelVideoClassificationOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelVideoObjectDetection operation metadata.
 class LabelVideoObjectDetectionOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoObjectDetectionOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -1093,7 +1093,7 @@ class LabelVideoObjectDetectionOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoObjectDetectionOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelVideoObjectDetectionOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1120,21 +1120,21 @@ class LabelVideoObjectDetectionOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelVideoObjectTracking operation metadata.
 class LabelVideoObjectTrackingOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoObjectTrackingOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -1147,7 +1147,7 @@ class LabelVideoObjectTrackingOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoObjectTrackingOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelVideoObjectTrackingOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1174,21 +1174,21 @@ class LabelVideoObjectTrackingOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelVideoEvent operation metadata.
 class LabelVideoEventOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoEventOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -1201,7 +1201,7 @@ class LabelVideoEventOperationMetadata extends $pb.GeneratedMessage {
   factory LabelVideoEventOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelVideoEventOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1228,21 +1228,21 @@ class LabelVideoEventOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelTextClassification operation metadata.
 class LabelTextClassificationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelTextClassificationOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -1255,7 +1255,7 @@ class LabelTextClassificationOperationMetadata extends $pb.GeneratedMessage {
   factory LabelTextClassificationOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelTextClassificationOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1282,21 +1282,21 @@ class LabelTextClassificationOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Details of a LabelTextEntityExtraction operation metadata.
 class LabelTextEntityExtractionOperationMetadata extends $pb.GeneratedMessage {
   factory LabelTextEntityExtractionOperationMetadata({
-    $4464.HumanAnnotationConfig? basicConfig,
+    $4466.HumanAnnotationConfig? basicConfig,
   }) {
     final $result = create();
     if (basicConfig != null) {
@@ -1309,7 +1309,7 @@ class LabelTextEntityExtractionOperationMetadata extends $pb.GeneratedMessage {
   factory LabelTextEntityExtractionOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelTextEntityExtractionOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4464.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4464.HumanAnnotationConfig.create)
+    ..aOM<$4466.HumanAnnotationConfig>(1, _omitFieldNames ? '' : 'basicConfig', subBuilder: $4466.HumanAnnotationConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1336,23 +1336,23 @@ class LabelTextEntityExtractionOperationMetadata extends $pb.GeneratedMessage {
 
   /// Basic human annotation config used in labeling request.
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig get basicConfig => $_getN(0);
+  $4466.HumanAnnotationConfig get basicConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set basicConfig($4464.HumanAnnotationConfig v) { setField(1, v); }
+  set basicConfig($4466.HumanAnnotationConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasicConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasicConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4464.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
+  $4466.HumanAnnotationConfig ensureBasicConfig() => $_ensure(0);
 }
 
 /// Metadata of a CreateInstruction operation.
 class CreateInstructionMetadata extends $pb.GeneratedMessage {
   factory CreateInstructionMetadata({
     $core.String? instruction,
-    $core.Iterable<$1795.Status>? partialFailures,
-    $1775.Timestamp? createTime,
+    $core.Iterable<$1796.Status>? partialFailures,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (instruction != null) {
@@ -1372,8 +1372,8 @@ class CreateInstructionMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstructionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instruction')
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1413,19 +1413,19 @@ class CreateInstructionMetadata extends $pb.GeneratedMessage {
   /// E.g. single files that couldn't be read.
   /// Status details field will contain standard GCP error details.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get partialFailures => $_getList(1);
+  $core.List<$1796.Status> get partialFailures => $_getList(1);
 
   /// Timestamp when create instruction request was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 

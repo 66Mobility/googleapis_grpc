@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $4210;
+import '../extension_point.pb.dart' as $4211;
 
 /// Slides add-on manifest.
 class SlidesAddOnManifest extends $pb.GeneratedMessage {
   factory SlidesAddOnManifest({
-    $4210.HomepageExtensionPoint? homepageTrigger,
+    $4211.HomepageExtensionPoint? homepageTrigger,
     SlidesExtensionPoint? onFileScopeGrantedTrigger,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
   factory SlidesAddOnManifest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlidesAddOnManifest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.slides'), createEmptyInstance: create)
-    ..aOM<$4210.HomepageExtensionPoint>(1, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $4210.HomepageExtensionPoint.create)
+    ..aOM<$4211.HomepageExtensionPoint>(1, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $4211.HomepageExtensionPoint.create)
     ..aOM<SlidesExtensionPoint>(2, _omitFieldNames ? '' : 'onFileScopeGrantedTrigger', subBuilder: SlidesExtensionPoint.create)
     ..hasRequiredFields = false
   ;
@@ -64,15 +64,15 @@ class SlidesAddOnManifest extends $pb.GeneratedMessage {
   /// If present, this overrides the configuration from
   /// `addOns.common.homepageTrigger`.
   @$pb.TagNumber(1)
-  $4210.HomepageExtensionPoint get homepageTrigger => $_getN(0);
+  $4211.HomepageExtensionPoint get homepageTrigger => $_getN(0);
   @$pb.TagNumber(1)
-  set homepageTrigger($4210.HomepageExtensionPoint v) { setField(1, v); }
+  set homepageTrigger($4211.HomepageExtensionPoint v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHomepageTrigger() => $_has(0);
   @$pb.TagNumber(1)
   void clearHomepageTrigger() => clearField(1);
   @$pb.TagNumber(1)
-  $4210.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
+  $4211.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(0);
 
   /// Endpoint to execute when file scope authorization is granted
   /// for this document/user pair.

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'explanation.pbenum.dart';
-import 'explanation_metadata.pb.dart' as $4276;
-import 'io.pb.dart' as $4277;
+import 'explanation_metadata.pb.dart' as $4277;
+import 'io.pb.dart' as $4278;
 
 export 'explanation.pbenum.dart';
 
@@ -179,7 +179,7 @@ class Attribution extends $pb.GeneratedMessage {
   factory Attribution({
     $core.double? baselineOutputValue,
     $core.double? instanceOutputValue,
-    $1734.Value? featureAttributions,
+    $1735.Value? featureAttributions,
     $core.Iterable<$core.int>? outputIndex,
     $core.String? outputDisplayName,
     $core.double? approximationError,
@@ -216,7 +216,7 @@ class Attribution extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Attribution', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'baselineOutputValue', $pb.PbFieldType.OD)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'instanceOutputValue', $pb.PbFieldType.OD)
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'featureAttributions', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'featureAttributions', subBuilder: $1735.Value.create)
     ..p<$core.int>(4, _omitFieldNames ? '' : 'outputIndex', $pb.PbFieldType.K3)
     ..aOS(5, _omitFieldNames ? '' : 'outputDisplayName')
     ..a<$core.double>(6, _omitFieldNames ? '' : 'approximationError', $pb.PbFieldType.OD)
@@ -316,15 +316,15 @@ class Attribution extends $pb.GeneratedMessage {
   ///  object, points to the schema file that describes the features and their
   ///  attribution values (if it is populated).
   @$pb.TagNumber(3)
-  $1734.Value get featureAttributions => $_getN(2);
+  $1735.Value get featureAttributions => $_getN(2);
   @$pb.TagNumber(3)
-  set featureAttributions($1734.Value v) { setField(3, v); }
+  set featureAttributions($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFeatureAttributions() => $_has(2);
   @$pb.TagNumber(3)
   void clearFeatureAttributions() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensureFeatureAttributions() => $_ensure(2);
+  $1735.Value ensureFeatureAttributions() => $_ensure(2);
 
   ///  Output only. The index that locates the explained prediction output.
   ///
@@ -468,7 +468,7 @@ class Neighbor extends $pb.GeneratedMessage {
 class ExplanationSpec extends $pb.GeneratedMessage {
   factory ExplanationSpec({
     ExplanationParameters? parameters,
-    $4276.ExplanationMetadata? metadata,
+    $4277.ExplanationMetadata? metadata,
   }) {
     final $result = create();
     if (parameters != null) {
@@ -485,7 +485,7 @@ class ExplanationSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplanationSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOM<ExplanationParameters>(1, _omitFieldNames ? '' : 'parameters', subBuilder: ExplanationParameters.create)
-    ..aOM<$4276.ExplanationMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4276.ExplanationMetadata.create)
+    ..aOM<$4277.ExplanationMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4277.ExplanationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -524,15 +524,15 @@ class ExplanationSpec extends $pb.GeneratedMessage {
 
   /// Optional. Metadata describing the Model's input and output for explanation.
   @$pb.TagNumber(2)
-  $4276.ExplanationMetadata get metadata => $_getN(1);
+  $4277.ExplanationMetadata get metadata => $_getN(1);
   @$pb.TagNumber(2)
-  set metadata($4276.ExplanationMetadata v) { setField(2, v); }
+  set metadata($4277.ExplanationMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4276.ExplanationMetadata ensureMetadata() => $_ensure(1);
+  $4277.ExplanationMetadata ensureMetadata() => $_ensure(1);
 }
 
 enum ExplanationParameters_Method {
@@ -550,7 +550,7 @@ class ExplanationParameters extends $pb.GeneratedMessage {
     IntegratedGradientsAttribution? integratedGradientsAttribution,
     XraiAttribution? xraiAttribution,
     $core.int? topK,
-    $1734.ListValue? outputIndices,
+    $1735.ListValue? outputIndices,
     Examples? examples,
   }) {
     final $result = create();
@@ -591,7 +591,7 @@ class ExplanationParameters extends $pb.GeneratedMessage {
     ..aOM<IntegratedGradientsAttribution>(2, _omitFieldNames ? '' : 'integratedGradientsAttribution', subBuilder: IntegratedGradientsAttribution.create)
     ..aOM<XraiAttribution>(3, _omitFieldNames ? '' : 'xraiAttribution', subBuilder: XraiAttribution.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
-    ..aOM<$1734.ListValue>(5, _omitFieldNames ? '' : 'outputIndices', subBuilder: $1734.ListValue.create)
+    ..aOM<$1735.ListValue>(5, _omitFieldNames ? '' : 'outputIndices', subBuilder: $1735.ListValue.create)
     ..aOM<Examples>(7, _omitFieldNames ? '' : 'examples', subBuilder: Examples.create)
     ..hasRequiredFields = false
   ;
@@ -695,15 +695,15 @@ class ExplanationParameters extends $pb.GeneratedMessage {
   ///  Only applicable to Models that predict multiple outputs (e,g, multi-class
   ///  Models that predict multiple classes).
   @$pb.TagNumber(5)
-  $1734.ListValue get outputIndices => $_getN(4);
+  $1735.ListValue get outputIndices => $_getN(4);
   @$pb.TagNumber(5)
-  set outputIndices($1734.ListValue v) { setField(5, v); }
+  set outputIndices($1735.ListValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOutputIndices() => $_has(4);
   @$pb.TagNumber(5)
   void clearOutputIndices() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.ListValue ensureOutputIndices() => $_ensure(4);
+  $1735.ListValue ensureOutputIndices() => $_ensure(4);
 
   /// Example-based explanations that returns the nearest neighbors from the
   /// provided dataset.
@@ -1295,7 +1295,7 @@ class BlurBaselineConfig extends $pb.GeneratedMessage {
 class Examples_ExampleGcsSource extends $pb.GeneratedMessage {
   factory Examples_ExampleGcsSource({
     Examples_ExampleGcsSource_DataFormat? dataFormat,
-    $4277.GcsSource? gcsSource,
+    $4278.GcsSource? gcsSource,
   }) {
     final $result = create();
     if (dataFormat != null) {
@@ -1312,7 +1312,7 @@ class Examples_ExampleGcsSource extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Examples.ExampleGcsSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..e<Examples_ExampleGcsSource_DataFormat>(1, _omitFieldNames ? '' : 'dataFormat', $pb.PbFieldType.OE, defaultOrMaker: Examples_ExampleGcsSource_DataFormat.DATA_FORMAT_UNSPECIFIED, valueOf: Examples_ExampleGcsSource_DataFormat.valueOf, enumValues: Examples_ExampleGcsSource_DataFormat.values)
-    ..aOM<$4277.GcsSource>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4277.GcsSource.create)
+    ..aOM<$4278.GcsSource>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4278.GcsSource.create)
     ..hasRequiredFields = false
   ;
 
@@ -1350,15 +1350,15 @@ class Examples_ExampleGcsSource extends $pb.GeneratedMessage {
 
   /// The Cloud Storage location for the input instances.
   @$pb.TagNumber(2)
-  $4277.GcsSource get gcsSource => $_getN(1);
+  $4278.GcsSource get gcsSource => $_getN(1);
   @$pb.TagNumber(2)
-  set gcsSource($4277.GcsSource v) { setField(2, v); }
+  set gcsSource($4278.GcsSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcsSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearGcsSource() => clearField(2);
   @$pb.TagNumber(2)
-  $4277.GcsSource ensureGcsSource() => $_ensure(1);
+  $4278.GcsSource ensureGcsSource() => $_ensure(1);
 }
 
 enum Examples_Source {
@@ -1376,8 +1376,8 @@ enum Examples_Config {
 /// provided dataset.
 class Examples extends $pb.GeneratedMessage {
   factory Examples({
-    $4277.GcsSource? gcsSource,
-    $1734.Value? nearestNeighborSearchConfig,
+    $4278.GcsSource? gcsSource,
+    $1735.Value? nearestNeighborSearchConfig,
     $core.int? neighborCount,
     Presets? presets,
     Examples_ExampleGcsSource? exampleGcsSource,
@@ -1416,8 +1416,8 @@ class Examples extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Examples', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [5])
     ..oo(1, [2, 4])
-    ..aOM<$4277.GcsSource>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4277.GcsSource.create)
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'nearestNeighborSearchConfig', subBuilder: $1734.Value.create)
+    ..aOM<$4278.GcsSource>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4278.GcsSource.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'nearestNeighborSearchConfig', subBuilder: $1735.Value.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'neighborCount', $pb.PbFieldType.O3)
     ..aOM<Presets>(4, _omitFieldNames ? '' : 'presets', subBuilder: Presets.create)
     ..aOM<Examples_ExampleGcsSource>(5, _omitFieldNames ? '' : 'exampleGcsSource', subBuilder: Examples_ExampleGcsSource.create)
@@ -1454,30 +1454,30 @@ class Examples extends $pb.GeneratedMessage {
   /// The Cloud Storage locations that contain the instances to be
   /// indexed for approximate nearest neighbor search.
   @$pb.TagNumber(1)
-  $4277.GcsSource get gcsSource => $_getN(0);
+  $4278.GcsSource get gcsSource => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsSource($4277.GcsSource v) { setField(1, v); }
+  set gcsSource($4278.GcsSource v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGcsSource() => $_has(0);
   @$pb.TagNumber(1)
   void clearGcsSource() => clearField(1);
   @$pb.TagNumber(1)
-  $4277.GcsSource ensureGcsSource() => $_ensure(0);
+  $4278.GcsSource ensureGcsSource() => $_ensure(0);
 
   /// The full configuration for the generated index, the semantics are the
   /// same as [metadata][google.cloud.aiplatform.v1beta1.Index.metadata] and
   /// should match
   /// [NearestNeighborSearchConfig](https://cloud.google.com/vertex-ai/docs/explainable-ai/configuring-explanations-example-based#nearest-neighbor-search-config).
   @$pb.TagNumber(2)
-  $1734.Value get nearestNeighborSearchConfig => $_getN(1);
+  $1735.Value get nearestNeighborSearchConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set nearestNeighborSearchConfig($1734.Value v) { setField(2, v); }
+  set nearestNeighborSearchConfig($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasNearestNeighborSearchConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearNearestNeighborSearchConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureNearestNeighborSearchConfig() => $_ensure(1);
+  $1735.Value ensureNearestNeighborSearchConfig() => $_ensure(1);
 
   /// The number of neighbors to return when querying for examples.
   @$pb.TagNumber(3)
@@ -1683,7 +1683,7 @@ class ExplanationSpecOverride extends $pb.GeneratedMessage {
 /// entries to be overridden.
 class ExplanationMetadataOverride_InputMetadataOverride extends $pb.GeneratedMessage {
   factory ExplanationMetadataOverride_InputMetadataOverride({
-    $core.Iterable<$1734.Value>? inputBaselines,
+    $core.Iterable<$1735.Value>? inputBaselines,
   }) {
     final $result = create();
     if (inputBaselines != null) {
@@ -1696,7 +1696,7 @@ class ExplanationMetadataOverride_InputMetadataOverride extends $pb.GeneratedMes
   factory ExplanationMetadataOverride_InputMetadataOverride.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplanationMetadataOverride.InputMetadataOverride', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..pc<$1734.Value>(1, _omitFieldNames ? '' : 'inputBaselines', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(1, _omitFieldNames ? '' : 'inputBaselines', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1728,7 +1728,7 @@ class ExplanationMetadataOverride_InputMetadataOverride extends $pb.GeneratedMes
   ///  object of the corresponding feature's input metadata. If it's not
   ///  specified, the original baselines are not overridden.
   @$pb.TagNumber(1)
-  $core.List<$1734.Value> get inputBaselines => $_getList(0);
+  $core.List<$1735.Value> get inputBaselines => $_getList(0);
 }
 
 /// The

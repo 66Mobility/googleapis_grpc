@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/conversion_tracking_status_enum.pbenum.dart' as $2259;
-import '../enums/customer_pay_per_conversion_eligibility_failure_reason.pbenum.dart' as $2257;
-import '../enums/customer_status.pbenum.dart' as $2258;
-import '../enums/local_services_verification_status.pbenum.dart' as $2260;
+import '../enums/conversion_tracking_status_enum.pbenum.dart' as $2260;
+import '../enums/customer_pay_per_conversion_eligibility_failure_reason.pbenum.dart' as $2258;
+import '../enums/customer_status.pbenum.dart' as $2259;
+import '../enums/local_services_verification_status.pbenum.dart' as $2261;
 
 /// A customer.
 class Customer extends $pb.GeneratedMessage {
@@ -26,7 +26,7 @@ class Customer extends $pb.GeneratedMessage {
     CallReportingSetting? callReportingSetting,
     ConversionTrackingSetting? conversionTrackingSetting,
     RemarketingSetting? remarketingSetting,
-    $core.Iterable<$2257.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason>? payPerConversionEligibilityFailureReasons,
+    $core.Iterable<$2258.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason>? payPerConversionEligibilityFailureReasons,
     $fixnum.Int64? id,
     $core.String? descriptiveName,
     $core.String? currencyCode,
@@ -39,7 +39,7 @@ class Customer extends $pb.GeneratedMessage {
     $core.bool? testAccount,
     $core.double? optimizationScore,
     $core.double? optimizationScoreWeight,
-    $2258.CustomerStatusEnum_CustomerStatus? status,
+    $2259.CustomerStatusEnum_CustomerStatus? status,
     $core.bool? locationAssetAutoMigrationDone,
     $core.bool? imageAssetAutoMigrationDone,
     $core.String? locationAssetAutoMigrationDoneDateTime,
@@ -131,7 +131,7 @@ class Customer extends $pb.GeneratedMessage {
     ..aOM<CallReportingSetting>(10, _omitFieldNames ? '' : 'callReportingSetting', subBuilder: CallReportingSetting.create)
     ..aOM<ConversionTrackingSetting>(14, _omitFieldNames ? '' : 'conversionTrackingSetting', subBuilder: ConversionTrackingSetting.create)
     ..aOM<RemarketingSetting>(15, _omitFieldNames ? '' : 'remarketingSetting', subBuilder: RemarketingSetting.create)
-    ..pc<$2257.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason>(16, _omitFieldNames ? '' : 'payPerConversionEligibilityFailureReasons', $pb.PbFieldType.KE, valueOf: $2257.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason.valueOf, enumValues: $2257.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason.values, defaultEnumValue: $2257.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason.UNSPECIFIED)
+    ..pc<$2258.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason>(16, _omitFieldNames ? '' : 'payPerConversionEligibilityFailureReasons', $pb.PbFieldType.KE, valueOf: $2258.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason.valueOf, enumValues: $2258.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason.values, defaultEnumValue: $2258.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason.UNSPECIFIED)
     ..aInt64(19, _omitFieldNames ? '' : 'id')
     ..aOS(20, _omitFieldNames ? '' : 'descriptiveName')
     ..aOS(21, _omitFieldNames ? '' : 'currencyCode')
@@ -144,7 +144,7 @@ class Customer extends $pb.GeneratedMessage {
     ..aOB(28, _omitFieldNames ? '' : 'testAccount')
     ..a<$core.double>(29, _omitFieldNames ? '' : 'optimizationScore', $pb.PbFieldType.OD)
     ..a<$core.double>(30, _omitFieldNames ? '' : 'optimizationScoreWeight', $pb.PbFieldType.OD)
-    ..e<$2258.CustomerStatusEnum_CustomerStatus>(36, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2258.CustomerStatusEnum_CustomerStatus.UNSPECIFIED, valueOf: $2258.CustomerStatusEnum_CustomerStatus.valueOf, enumValues: $2258.CustomerStatusEnum_CustomerStatus.values)
+    ..e<$2259.CustomerStatusEnum_CustomerStatus>(36, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2259.CustomerStatusEnum_CustomerStatus.UNSPECIFIED, valueOf: $2259.CustomerStatusEnum_CustomerStatus.valueOf, enumValues: $2259.CustomerStatusEnum_CustomerStatus.values)
     ..aOB(38, _omitFieldNames ? '' : 'locationAssetAutoMigrationDone')
     ..aOB(39, _omitFieldNames ? '' : 'imageAssetAutoMigrationDone')
     ..aOS(40, _omitFieldNames ? '' : 'locationAssetAutoMigrationDoneDateTime')
@@ -229,7 +229,7 @@ class Customer extends $pb.GeneratedMessage {
   /// PaymentMode.CONVERSIONS. If the list is empty, the customer is eligible.
   /// This field is read-only.
   @$pb.TagNumber(16)
-  $core.List<$2257.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason> get payPerConversionEligibilityFailureReasons => $_getList(4);
+  $core.List<$2258.CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason> get payPerConversionEligibilityFailureReasons => $_getList(4);
 
   /// Output only. The ID of the customer.
   @$pb.TagNumber(19)
@@ -378,9 +378,9 @@ class Customer extends $pb.GeneratedMessage {
 
   /// Output only. The status of the customer.
   @$pb.TagNumber(36)
-  $2258.CustomerStatusEnum_CustomerStatus get status => $_getN(17);
+  $2259.CustomerStatusEnum_CustomerStatus get status => $_getN(17);
   @$pb.TagNumber(36)
-  set status($2258.CustomerStatusEnum_CustomerStatus v) { setField(36, v); }
+  set status($2259.CustomerStatusEnum_CustomerStatus v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasStatus() => $_has(17);
   @$pb.TagNumber(36)
@@ -547,7 +547,7 @@ class ConversionTrackingSetting extends $pb.GeneratedMessage {
     $fixnum.Int64? conversionTrackingId,
     $fixnum.Int64? crossAccountConversionTrackingId,
     $core.bool? acceptedCustomerDataTerms,
-    $2259.ConversionTrackingStatusEnum_ConversionTrackingStatus? conversionTrackingStatus,
+    $2260.ConversionTrackingStatusEnum_ConversionTrackingStatus? conversionTrackingStatus,
     $core.bool? enhancedConversionsForLeadsEnabled,
     $core.String? googleAdsConversionCustomer,
   }) {
@@ -580,7 +580,7 @@ class ConversionTrackingSetting extends $pb.GeneratedMessage {
     ..aInt64(3, _omitFieldNames ? '' : 'conversionTrackingId')
     ..aInt64(4, _omitFieldNames ? '' : 'crossAccountConversionTrackingId')
     ..aOB(5, _omitFieldNames ? '' : 'acceptedCustomerDataTerms')
-    ..e<$2259.ConversionTrackingStatusEnum_ConversionTrackingStatus>(6, _omitFieldNames ? '' : 'conversionTrackingStatus', $pb.PbFieldType.OE, defaultOrMaker: $2259.ConversionTrackingStatusEnum_ConversionTrackingStatus.UNSPECIFIED, valueOf: $2259.ConversionTrackingStatusEnum_ConversionTrackingStatus.valueOf, enumValues: $2259.ConversionTrackingStatusEnum_ConversionTrackingStatus.values)
+    ..e<$2260.ConversionTrackingStatusEnum_ConversionTrackingStatus>(6, _omitFieldNames ? '' : 'conversionTrackingStatus', $pb.PbFieldType.OE, defaultOrMaker: $2260.ConversionTrackingStatusEnum_ConversionTrackingStatus.UNSPECIFIED, valueOf: $2260.ConversionTrackingStatusEnum_ConversionTrackingStatus.valueOf, enumValues: $2260.ConversionTrackingStatusEnum_ConversionTrackingStatus.values)
     ..aOB(7, _omitFieldNames ? '' : 'enhancedConversionsForLeadsEnabled')
     ..aOS(8, _omitFieldNames ? '' : 'googleAdsConversionCustomer')
     ..hasRequiredFields = false
@@ -651,9 +651,9 @@ class ConversionTrackingSetting extends $pb.GeneratedMessage {
   /// the value returned will differ based on the `login-customer-id` of the
   /// request.
   @$pb.TagNumber(6)
-  $2259.ConversionTrackingStatusEnum_ConversionTrackingStatus get conversionTrackingStatus => $_getN(3);
+  $2260.ConversionTrackingStatusEnum_ConversionTrackingStatus get conversionTrackingStatus => $_getN(3);
   @$pb.TagNumber(6)
-  set conversionTrackingStatus($2259.ConversionTrackingStatusEnum_ConversionTrackingStatus v) { setField(6, v); }
+  set conversionTrackingStatus($2260.ConversionTrackingStatusEnum_ConversionTrackingStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasConversionTrackingStatus() => $_has(3);
   @$pb.TagNumber(6)
@@ -847,7 +847,7 @@ class GranularLicenseStatus extends $pb.GeneratedMessage {
   factory GranularLicenseStatus({
     $fixnum.Int64? geoCriterionId,
     $core.String? categoryId,
-    $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus? verificationStatus,
+    $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus? verificationStatus,
   }) {
     final $result = create();
     if (geoCriterionId != null) {
@@ -868,7 +868,7 @@ class GranularLicenseStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GranularLicenseStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'geoCriterionId')
     ..aOS(2, _omitFieldNames ? '' : 'categoryId')
-    ..e<$2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus>(3, _omitFieldNames ? '' : 'verificationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.UNSPECIFIED, valueOf: $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.valueOf, enumValues: $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.values)
+    ..e<$2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus>(3, _omitFieldNames ? '' : 'verificationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.UNSPECIFIED, valueOf: $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.valueOf, enumValues: $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -921,9 +921,9 @@ class GranularLicenseStatus extends $pb.GeneratedMessage {
 
   /// Output only. Granular license status, per geo + vertical.
   @$pb.TagNumber(3)
-  $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus get verificationStatus => $_getN(2);
+  $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus get verificationStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set verificationStatus($2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus v) { setField(3, v); }
+  set verificationStatus($2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasVerificationStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -935,7 +935,7 @@ class GranularInsuranceStatus extends $pb.GeneratedMessage {
   factory GranularInsuranceStatus({
     $fixnum.Int64? geoCriterionId,
     $core.String? categoryId,
-    $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus? verificationStatus,
+    $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus? verificationStatus,
   }) {
     final $result = create();
     if (geoCriterionId != null) {
@@ -956,7 +956,7 @@ class GranularInsuranceStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GranularInsuranceStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'geoCriterionId')
     ..aOS(2, _omitFieldNames ? '' : 'categoryId')
-    ..e<$2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus>(3, _omitFieldNames ? '' : 'verificationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.UNSPECIFIED, valueOf: $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.valueOf, enumValues: $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.values)
+    ..e<$2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus>(3, _omitFieldNames ? '' : 'verificationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.UNSPECIFIED, valueOf: $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.valueOf, enumValues: $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -1009,9 +1009,9 @@ class GranularInsuranceStatus extends $pb.GeneratedMessage {
 
   /// Output only. Granular insurance status, per geo + vertical.
   @$pb.TagNumber(3)
-  $2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus get verificationStatus => $_getN(2);
+  $2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus get verificationStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set verificationStatus($2260.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus v) { setField(3, v); }
+  set verificationStatus($2261.LocalServicesVerificationStatusEnum_LocalServicesVerificationStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasVerificationStatus() => $_has(2);
   @$pb.TagNumber(3)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_field_type.pbenum.dart' as $3540;
+import '../enums/asset_field_type.pbenum.dart' as $3541;
 
 /// An asset field type view.
 /// This view reports non-overcounted metrics for each asset field type when the
@@ -21,7 +21,7 @@ import '../enums/asset_field_type.pbenum.dart' as $3540;
 class AssetFieldTypeView extends $pb.GeneratedMessage {
   factory AssetFieldTypeView({
     $core.String? resourceName,
-    $3540.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $3541.AssetFieldTypeEnum_AssetFieldType? fieldType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -38,7 +38,7 @@ class AssetFieldTypeView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetFieldTypeView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3540.AssetFieldTypeEnum_AssetFieldType>(3, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3540.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3540.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3540.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$3541.AssetFieldTypeEnum_AssetFieldType>(3, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3541.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3541.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3541.AssetFieldTypeEnum_AssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -78,9 +78,9 @@ class AssetFieldTypeView extends $pb.GeneratedMessage {
 
   /// Output only. The asset field type of the asset field type view.
   @$pb.TagNumber(3)
-  $3540.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(1);
+  $3541.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(1);
   @$pb.TagNumber(3)
-  set fieldType($3540.AssetFieldTypeEnum_AssetFieldType v) { setField(3, v); }
+  set fieldType($3541.AssetFieldTypeEnum_AssetFieldType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFieldType() => $_has(1);
   @$pb.TagNumber(3)

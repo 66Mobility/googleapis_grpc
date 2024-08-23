@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'finding.pbenum.dart';
-import 'finding_addon.pb.dart' as $4735;
+import 'finding_addon.pb.dart' as $4737;
 
 export 'finding.pbenum.dart';
 
@@ -32,11 +32,11 @@ class Finding extends $pb.GeneratedMessage {
     $core.String? frameUrl,
     $core.String? finalUrl,
     $core.String? trackingId,
-    $4735.OutdatedLibrary? outdatedLibrary,
-    $4735.ViolatingResource? violatingResource,
-    $4735.VulnerableParameters? vulnerableParameters,
-    $4735.Xss? xss,
-    $4735.VulnerableHeaders? vulnerableHeaders,
+    $4737.OutdatedLibrary? outdatedLibrary,
+    $4737.ViolatingResource? violatingResource,
+    $4737.VulnerableParameters? vulnerableParameters,
+    $4737.Xss? xss,
+    $4737.VulnerableHeaders? vulnerableHeaders,
   }) {
     final $result = create();
     if (name != null) {
@@ -101,11 +101,11 @@ class Finding extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'frameUrl')
     ..aOS(9, _omitFieldNames ? '' : 'finalUrl')
     ..aOS(10, _omitFieldNames ? '' : 'trackingId')
-    ..aOM<$4735.OutdatedLibrary>(11, _omitFieldNames ? '' : 'outdatedLibrary', subBuilder: $4735.OutdatedLibrary.create)
-    ..aOM<$4735.ViolatingResource>(12, _omitFieldNames ? '' : 'violatingResource', subBuilder: $4735.ViolatingResource.create)
-    ..aOM<$4735.VulnerableParameters>(13, _omitFieldNames ? '' : 'vulnerableParameters', subBuilder: $4735.VulnerableParameters.create)
-    ..aOM<$4735.Xss>(14, _omitFieldNames ? '' : 'xss', subBuilder: $4735.Xss.create)
-    ..aOM<$4735.VulnerableHeaders>(15, _omitFieldNames ? '' : 'vulnerableHeaders', subBuilder: $4735.VulnerableHeaders.create)
+    ..aOM<$4737.OutdatedLibrary>(11, _omitFieldNames ? '' : 'outdatedLibrary', subBuilder: $4737.OutdatedLibrary.create)
+    ..aOM<$4737.ViolatingResource>(12, _omitFieldNames ? '' : 'violatingResource', subBuilder: $4737.ViolatingResource.create)
+    ..aOM<$4737.VulnerableParameters>(13, _omitFieldNames ? '' : 'vulnerableParameters', subBuilder: $4737.VulnerableParameters.create)
+    ..aOM<$4737.Xss>(14, _omitFieldNames ? '' : 'xss', subBuilder: $4737.Xss.create)
+    ..aOM<$4737.VulnerableHeaders>(15, _omitFieldNames ? '' : 'vulnerableHeaders', subBuilder: $4737.VulnerableHeaders.create)
     ..hasRequiredFields = false
   ;
 
@@ -239,65 +239,65 @@ class Finding extends $pb.GeneratedMessage {
 
   /// An addon containing information about outdated libraries.
   @$pb.TagNumber(11)
-  $4735.OutdatedLibrary get outdatedLibrary => $_getN(10);
+  $4737.OutdatedLibrary get outdatedLibrary => $_getN(10);
   @$pb.TagNumber(11)
-  set outdatedLibrary($4735.OutdatedLibrary v) { setField(11, v); }
+  set outdatedLibrary($4737.OutdatedLibrary v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasOutdatedLibrary() => $_has(10);
   @$pb.TagNumber(11)
   void clearOutdatedLibrary() => clearField(11);
   @$pb.TagNumber(11)
-  $4735.OutdatedLibrary ensureOutdatedLibrary() => $_ensure(10);
+  $4737.OutdatedLibrary ensureOutdatedLibrary() => $_ensure(10);
 
   /// An addon containing detailed information regarding any resource causing the
   /// vulnerability such as JavaScript sources, image, audio files, etc.
   @$pb.TagNumber(12)
-  $4735.ViolatingResource get violatingResource => $_getN(11);
+  $4737.ViolatingResource get violatingResource => $_getN(11);
   @$pb.TagNumber(12)
-  set violatingResource($4735.ViolatingResource v) { setField(12, v); }
+  set violatingResource($4737.ViolatingResource v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasViolatingResource() => $_has(11);
   @$pb.TagNumber(12)
   void clearViolatingResource() => clearField(12);
   @$pb.TagNumber(12)
-  $4735.ViolatingResource ensureViolatingResource() => $_ensure(11);
+  $4737.ViolatingResource ensureViolatingResource() => $_ensure(11);
 
   /// An addon containing information about request parameters which were found
   /// to be vulnerable.
   @$pb.TagNumber(13)
-  $4735.VulnerableParameters get vulnerableParameters => $_getN(12);
+  $4737.VulnerableParameters get vulnerableParameters => $_getN(12);
   @$pb.TagNumber(13)
-  set vulnerableParameters($4735.VulnerableParameters v) { setField(13, v); }
+  set vulnerableParameters($4737.VulnerableParameters v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasVulnerableParameters() => $_has(12);
   @$pb.TagNumber(13)
   void clearVulnerableParameters() => clearField(13);
   @$pb.TagNumber(13)
-  $4735.VulnerableParameters ensureVulnerableParameters() => $_ensure(12);
+  $4737.VulnerableParameters ensureVulnerableParameters() => $_ensure(12);
 
   /// An addon containing information reported for an XSS, if any.
   @$pb.TagNumber(14)
-  $4735.Xss get xss => $_getN(13);
+  $4737.Xss get xss => $_getN(13);
   @$pb.TagNumber(14)
-  set xss($4735.Xss v) { setField(14, v); }
+  set xss($4737.Xss v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasXss() => $_has(13);
   @$pb.TagNumber(14)
   void clearXss() => clearField(14);
   @$pb.TagNumber(14)
-  $4735.Xss ensureXss() => $_ensure(13);
+  $4737.Xss ensureXss() => $_ensure(13);
 
   /// An addon containing information about vulnerable or missing HTTP headers.
   @$pb.TagNumber(15)
-  $4735.VulnerableHeaders get vulnerableHeaders => $_getN(14);
+  $4737.VulnerableHeaders get vulnerableHeaders => $_getN(14);
   @$pb.TagNumber(15)
-  set vulnerableHeaders($4735.VulnerableHeaders v) { setField(15, v); }
+  set vulnerableHeaders($4737.VulnerableHeaders v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasVulnerableHeaders() => $_has(14);
   @$pb.TagNumber(15)
   void clearVulnerableHeaders() => clearField(15);
   @$pb.TagNumber(15)
-  $4735.VulnerableHeaders ensureVulnerableHeaders() => $_ensure(14);
+  $4737.VulnerableHeaders ensureVulnerableHeaders() => $_ensure(14);
 }
 
 

@@ -16,10 +16,10 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../iam/v1/policy.pb.dart' as $463;
 import '../../../../iam/v2/policy.pb.dart' as $1207;
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../../../../type/expr.pb.dart' as $4213;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../../../../type/expr.pb.dart' as $4214;
 import 'troubleshooter.pbenum.dart';
 
 export 'troubleshooter.pbenum.dart';
@@ -498,7 +498,7 @@ class ConditionContext_Peer extends $pb.GeneratedMessage {
 /// the actual request to an equivalent HTTP request.
 class ConditionContext_Request extends $pb.GeneratedMessage {
   factory ConditionContext_Request({
-    $1775.Timestamp? receiveTime,
+    $1776.Timestamp? receiveTime,
   }) {
     final $result = create();
     if (receiveTime != null) {
@@ -511,7 +511,7 @@ class ConditionContext_Request extends $pb.GeneratedMessage {
   factory ConditionContext_Request.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConditionContext.Request', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.policytroubleshooter.iam.v3'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'receiveTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'receiveTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -539,15 +539,15 @@ class ConditionContext_Request extends $pb.GeneratedMessage {
   /// Optional. The timestamp when the destination service receives the first
   /// byte of the request.
   @$pb.TagNumber(1)
-  $1775.Timestamp get receiveTime => $_getN(0);
+  $1776.Timestamp get receiveTime => $_getN(0);
   @$pb.TagNumber(1)
-  set receiveTime($1775.Timestamp v) { setField(1, v); }
+  set receiveTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReceiveTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReceiveTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReceiveTime() => $_ensure(0);
+  $1776.Timestamp ensureReceiveTime() => $_ensure(0);
 }
 
 /// A tag that applies to a resource during policy evaluation. Tags can be
@@ -1097,7 +1097,7 @@ class AllowBindingExplanation extends $pb.GeneratedMessage {
     AllowBindingExplanation_AnnotatedAllowMembership? combinedMembership,
     $core.Map<$core.String, AllowBindingExplanation_AnnotatedAllowMembership>? memberships,
     HeuristicRelevance? relevance,
-    $4213.Expr? condition,
+    $4214.Expr? condition,
     ConditionExplanation? conditionExplanation,
   }) {
     final $result = create();
@@ -1142,7 +1142,7 @@ class AllowBindingExplanation extends $pb.GeneratedMessage {
     ..aOM<AllowBindingExplanation_AnnotatedAllowMembership>(5, _omitFieldNames ? '' : 'combinedMembership', subBuilder: AllowBindingExplanation_AnnotatedAllowMembership.create)
     ..m<$core.String, AllowBindingExplanation_AnnotatedAllowMembership>(6, _omitFieldNames ? '' : 'memberships', entryClassName: 'AllowBindingExplanation.MembershipsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: AllowBindingExplanation_AnnotatedAllowMembership.create, valueDefaultOrMaker: AllowBindingExplanation_AnnotatedAllowMembership.getDefault, packageName: const $pb.PackageName('google.cloud.policytroubleshooter.iam.v3'))
     ..e<HeuristicRelevance>(7, _omitFieldNames ? '' : 'relevance', $pb.PbFieldType.OE, defaultOrMaker: HeuristicRelevance.HEURISTIC_RELEVANCE_UNSPECIFIED, valueOf: HeuristicRelevance.valueOf, enumValues: HeuristicRelevance.values)
-    ..aOM<$4213.Expr>(8, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(8, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
     ..aOM<ConditionExplanation>(9, _omitFieldNames ? '' : 'conditionExplanation', subBuilder: ConditionExplanation.create)
     ..hasRequiredFields = false
   ;
@@ -1273,15 +1273,15 @@ class AllowBindingExplanation extends $pb.GeneratedMessage {
   ///  To learn about IAM Conditions, see
   ///  https://cloud.google.com/iam/help/conditions/overview.
   @$pb.TagNumber(8)
-  $4213.Expr get condition => $_getN(7);
+  $4214.Expr get condition => $_getN(7);
   @$pb.TagNumber(8)
-  set condition($4213.Expr v) { setField(8, v); }
+  set condition($4214.Expr v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCondition() => $_has(7);
   @$pb.TagNumber(8)
   void clearCondition() => clearField(8);
   @$pb.TagNumber(8)
-  $4213.Expr ensureCondition() => $_ensure(7);
+  $4214.Expr ensureCondition() => $_ensure(7);
 
   /// Condition evaluation state for this role binding.
   @$pb.TagNumber(9)
@@ -1783,7 +1783,7 @@ class DenyRuleExplanation extends $pb.GeneratedMessage {
     DenyRuleExplanation_AnnotatedDenyPrincipalMatching? combinedExceptionPrincipal,
     $core.Map<$core.String, DenyRuleExplanation_AnnotatedDenyPrincipalMatching>? exceptionPrincipals,
     HeuristicRelevance? relevance,
-    $4213.Expr? condition,
+    $4214.Expr? condition,
     ConditionExplanation? conditionExplanation,
   }) {
     final $result = create();
@@ -1840,7 +1840,7 @@ class DenyRuleExplanation extends $pb.GeneratedMessage {
     ..aOM<DenyRuleExplanation_AnnotatedDenyPrincipalMatching>(8, _omitFieldNames ? '' : 'combinedExceptionPrincipal', subBuilder: DenyRuleExplanation_AnnotatedDenyPrincipalMatching.create)
     ..m<$core.String, DenyRuleExplanation_AnnotatedDenyPrincipalMatching>(9, _omitFieldNames ? '' : 'exceptionPrincipals', entryClassName: 'DenyRuleExplanation.ExceptionPrincipalsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: DenyRuleExplanation_AnnotatedDenyPrincipalMatching.create, valueDefaultOrMaker: DenyRuleExplanation_AnnotatedDenyPrincipalMatching.getDefault, packageName: const $pb.PackageName('google.cloud.policytroubleshooter.iam.v3'))
     ..e<HeuristicRelevance>(10, _omitFieldNames ? '' : 'relevance', $pb.PbFieldType.OE, defaultOrMaker: HeuristicRelevance.HEURISTIC_RELEVANCE_UNSPECIFIED, valueOf: HeuristicRelevance.valueOf, enumValues: HeuristicRelevance.values)
-    ..aOM<$4213.Expr>(11, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(11, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
     ..aOM<ConditionExplanation>(12, _omitFieldNames ? '' : 'conditionExplanation', subBuilder: ConditionExplanation.create)
     ..hasRequiredFields = false
   ;
@@ -1990,15 +1990,15 @@ class DenyRuleExplanation extends $pb.GeneratedMessage {
   ///  To learn about IAM Conditions, see
   ///  https://cloud.google.com/iam/help/conditions/overview.
   @$pb.TagNumber(11)
-  $4213.Expr get condition => $_getN(10);
+  $4214.Expr get condition => $_getN(10);
   @$pb.TagNumber(11)
-  set condition($4213.Expr v) { setField(11, v); }
+  set condition($4214.Expr v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCondition() => $_has(10);
   @$pb.TagNumber(11)
   void clearCondition() => clearField(11);
   @$pb.TagNumber(11)
-  $4213.Expr ensureCondition() => $_ensure(10);
+  $4214.Expr ensureCondition() => $_ensure(10);
 
   /// Condition evaluation state for this role binding.
   @$pb.TagNumber(12)
@@ -2018,8 +2018,8 @@ class ConditionExplanation_EvaluationState extends $pb.GeneratedMessage {
   factory ConditionExplanation_EvaluationState({
     $core.int? start,
     $core.int? end,
-    $1734.Value? value,
-    $core.Iterable<$1795.Status>? errors,
+    $1735.Value? value,
+    $core.Iterable<$1796.Status>? errors,
   }) {
     final $result = create();
     if (start != null) {
@@ -2043,8 +2043,8 @@ class ConditionExplanation_EvaluationState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConditionExplanation.EvaluationState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.policytroubleshooter.iam.v3'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'start', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'end', $pb.PbFieldType.O3)
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $1734.Value.create)
-    ..pc<$1795.Status>(4, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $1735.Value.create)
+    ..pc<$1796.Status>(4, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2093,28 +2093,28 @@ class ConditionExplanation_EvaluationState extends $pb.GeneratedMessage {
 
   /// Value of this expression.
   @$pb.TagNumber(3)
-  $1734.Value get value => $_getN(2);
+  $1735.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($1734.Value v) { setField(3, v); }
+  set value($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensureValue() => $_ensure(2);
+  $1735.Value ensureValue() => $_ensure(2);
 
   /// Any errors that prevented complete evaluation of the condition
   /// expression.
   @$pb.TagNumber(4)
-  $core.List<$1795.Status> get errors => $_getList(3);
+  $core.List<$1796.Status> get errors => $_getList(3);
 }
 
 /// Explanation for how a condition affects a principal's access
 class ConditionExplanation extends $pb.GeneratedMessage {
   factory ConditionExplanation({
-    $1734.Value? value,
+    $1735.Value? value,
     $core.Iterable<ConditionExplanation_EvaluationState>? evaluationStates,
-    $core.Iterable<$1795.Status>? errors,
+    $core.Iterable<$1796.Status>? errors,
   }) {
     final $result = create();
     if (value != null) {
@@ -2133,9 +2133,9 @@ class ConditionExplanation extends $pb.GeneratedMessage {
   factory ConditionExplanation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConditionExplanation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.policytroubleshooter.iam.v3'), createEmptyInstance: create)
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'value', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'value', subBuilder: $1735.Value.create)
     ..pc<ConditionExplanation_EvaluationState>(2, _omitFieldNames ? '' : 'evaluationStates', $pb.PbFieldType.PM, subBuilder: ConditionExplanation_EvaluationState.create)
-    ..pc<$1795.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2162,15 +2162,15 @@ class ConditionExplanation extends $pb.GeneratedMessage {
 
   /// Value of the condition.
   @$pb.TagNumber(1)
-  $1734.Value get value => $_getN(0);
+  $1735.Value get value => $_getN(0);
   @$pb.TagNumber(1)
-  set value($1734.Value v) { setField(1, v); }
+  set value($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
   void clearValue() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureValue() => $_ensure(0);
+  $1735.Value ensureValue() => $_ensure(0);
 
   /// The value of each statement of the condition expression. The value can be
   /// `true`, `false`, or `null`. The value is `null` if the statement can't be
@@ -2180,7 +2180,7 @@ class ConditionExplanation extends $pb.GeneratedMessage {
 
   /// Any errors that prevented complete evaluation of the condition expression.
   @$pb.TagNumber(3)
-  $core.List<$1795.Status> get errors => $_getList(2);
+  $core.List<$1796.Status> get errors => $_getList(2);
 }
 
 

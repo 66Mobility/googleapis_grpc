@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'service_project_attachment.pbenum.dart';
 
 export 'service_project_attachment.pbenum.dart';
@@ -27,7 +27,7 @@ class ServiceProjectAttachment extends $pb.GeneratedMessage {
   factory ServiceProjectAttachment({
     $core.String? name,
     $core.String? serviceProject,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? uid,
     ServiceProjectAttachment_State? state,
   }) {
@@ -56,7 +56,7 @@ class ServiceProjectAttachment extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceProjectAttachment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.apphub.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'serviceProject')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'uid')
     ..e<ServiceProjectAttachment_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ServiceProjectAttachment_State.STATE_UNSPECIFIED, valueOf: ServiceProjectAttachment_State.valueOf, enumValues: ServiceProjectAttachment_State.values)
     ..hasRequiredFields = false
@@ -108,15 +108,15 @@ class ServiceProjectAttachment extends $pb.GeneratedMessage {
 
   /// Output only. Create time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. A globally unique identifier (in UUID4 format) for the
   /// `ServiceProjectAttachment`.

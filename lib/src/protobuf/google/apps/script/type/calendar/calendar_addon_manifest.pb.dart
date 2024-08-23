@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $4210;
+import '../extension_point.pb.dart' as $4211;
 import 'calendar_addon_manifest.pbenum.dart';
 
 export 'calendar_addon_manifest.pbenum.dart';
@@ -23,7 +23,7 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   factory CalendarAddOnManifest({
     $core.Iterable<ConferenceSolution>? conferenceSolution,
     $core.String? createSettingsUrlFunction,
-    $4210.HomepageExtensionPoint? homepageTrigger,
+    $4211.HomepageExtensionPoint? homepageTrigger,
     CalendarExtensionPoint? eventOpenTrigger,
     CalendarExtensionPoint? eventUpdateTrigger,
     CalendarAddOnManifest_EventAccess? currentEventAccess,
@@ -56,7 +56,7 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CalendarAddOnManifest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.calendar'), createEmptyInstance: create)
     ..pc<ConferenceSolution>(3, _omitFieldNames ? '' : 'conferenceSolution', $pb.PbFieldType.PM, subBuilder: ConferenceSolution.create)
     ..aOS(5, _omitFieldNames ? '' : 'createSettingsUrlFunction')
-    ..aOM<$4210.HomepageExtensionPoint>(6, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $4210.HomepageExtensionPoint.create)
+    ..aOM<$4211.HomepageExtensionPoint>(6, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $4211.HomepageExtensionPoint.create)
     ..aOM<CalendarExtensionPoint>(10, _omitFieldNames ? '' : 'eventOpenTrigger', subBuilder: CalendarExtensionPoint.create)
     ..aOM<CalendarExtensionPoint>(11, _omitFieldNames ? '' : 'eventUpdateTrigger', subBuilder: CalendarExtensionPoint.create)
     ..e<CalendarAddOnManifest_EventAccess>(12, _omitFieldNames ? '' : 'currentEventAccess', $pb.PbFieldType.OE, defaultOrMaker: CalendarAddOnManifest_EventAccess.UNSPECIFIED, valueOf: CalendarAddOnManifest_EventAccess.valueOf, enumValues: CalendarAddOnManifest_EventAccess.values)
@@ -106,15 +106,15 @@ class CalendarAddOnManifest extends $pb.GeneratedMessage {
   ///  If present, this overrides the configuration from
   ///  `addOns.common.homepageTrigger`.
   @$pb.TagNumber(6)
-  $4210.HomepageExtensionPoint get homepageTrigger => $_getN(2);
+  $4211.HomepageExtensionPoint get homepageTrigger => $_getN(2);
   @$pb.TagNumber(6)
-  set homepageTrigger($4210.HomepageExtensionPoint v) { setField(6, v); }
+  set homepageTrigger($4211.HomepageExtensionPoint v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasHomepageTrigger() => $_has(2);
   @$pb.TagNumber(6)
   void clearHomepageTrigger() => clearField(6);
   @$pb.TagNumber(6)
-  $4210.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(2);
+  $4211.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(2);
 
   /// An endpoint to trigger when an event is opened (viewed/edited).
   @$pb.TagNumber(10)

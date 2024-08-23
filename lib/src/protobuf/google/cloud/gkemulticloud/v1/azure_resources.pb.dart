@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
 import 'azure_resources.pbenum.dart';
-import 'common_resources.pb.dart' as $4546;
+import 'common_resources.pb.dart' as $4548;
 
 export 'azure_resources.pbenum.dart';
 
@@ -33,20 +33,20 @@ class AzureCluster extends $pb.GeneratedMessage {
     $core.String? endpoint,
     $core.String? uid,
     $core.bool? reconciling,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? annotations,
     $core.String? azureClient,
     $core.String? resourceGroupId,
-    $4546.WorkloadIdentityConfig? workloadIdentityConfig,
+    $4548.WorkloadIdentityConfig? workloadIdentityConfig,
     $core.String? clusterCaCertificate,
-    $4546.Fleet? fleet,
+    $4548.Fleet? fleet,
     AzureClusterResources? managedResources,
     AzureServicesAuthentication? azureServicesAuthentication,
-    $4546.LoggingConfig? loggingConfig,
+    $4548.LoggingConfig? loggingConfig,
     $core.Iterable<AzureClusterError>? errors,
-    $4546.MonitoringConfig? monitoringConfig,
+    $4548.MonitoringConfig? monitoringConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -138,20 +138,20 @@ class AzureCluster extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'endpoint')
     ..aOS(9, _omitFieldNames ? '' : 'uid')
     ..aOB(10, _omitFieldNames ? '' : 'reconciling')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(13, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(14, _omitFieldNames ? '' : 'annotations', entryClassName: 'AzureCluster.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
     ..aOS(16, _omitFieldNames ? '' : 'azureClient')
     ..aOS(17, _omitFieldNames ? '' : 'resourceGroupId')
-    ..aOM<$4546.WorkloadIdentityConfig>(18, _omitFieldNames ? '' : 'workloadIdentityConfig', subBuilder: $4546.WorkloadIdentityConfig.create)
+    ..aOM<$4548.WorkloadIdentityConfig>(18, _omitFieldNames ? '' : 'workloadIdentityConfig', subBuilder: $4548.WorkloadIdentityConfig.create)
     ..aOS(19, _omitFieldNames ? '' : 'clusterCaCertificate')
-    ..aOM<$4546.Fleet>(20, _omitFieldNames ? '' : 'fleet', subBuilder: $4546.Fleet.create)
+    ..aOM<$4548.Fleet>(20, _omitFieldNames ? '' : 'fleet', subBuilder: $4548.Fleet.create)
     ..aOM<AzureClusterResources>(21, _omitFieldNames ? '' : 'managedResources', subBuilder: AzureClusterResources.create)
     ..aOM<AzureServicesAuthentication>(22, _omitFieldNames ? '' : 'azureServicesAuthentication', subBuilder: AzureServicesAuthentication.create)
-    ..aOM<$4546.LoggingConfig>(23, _omitFieldNames ? '' : 'loggingConfig', subBuilder: $4546.LoggingConfig.create)
+    ..aOM<$4548.LoggingConfig>(23, _omitFieldNames ? '' : 'loggingConfig', subBuilder: $4548.LoggingConfig.create)
     ..pc<AzureClusterError>(24, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: AzureClusterError.create)
-    ..aOM<$4546.MonitoringConfig>(25, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4546.MonitoringConfig.create)
+    ..aOM<$4548.MonitoringConfig>(25, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4548.MonitoringConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -296,27 +296,27 @@ class AzureCluster extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this cluster was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(10);
+  $1776.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(10);
+  $1776.Timestamp ensureCreateTime() => $_ensure(10);
 
   /// Output only. The time at which this cluster was last updated.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(11);
+  $1776.Timestamp get updateTime => $_getN(11);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(11);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(11);
 
   ///  Allows clients to perform consistent read-modify-writes
   ///  through optimistic concurrency control.
@@ -382,15 +382,15 @@ class AzureCluster extends $pb.GeneratedMessage {
 
   /// Output only. Workload Identity settings.
   @$pb.TagNumber(18)
-  $4546.WorkloadIdentityConfig get workloadIdentityConfig => $_getN(16);
+  $4548.WorkloadIdentityConfig get workloadIdentityConfig => $_getN(16);
   @$pb.TagNumber(18)
-  set workloadIdentityConfig($4546.WorkloadIdentityConfig v) { setField(18, v); }
+  set workloadIdentityConfig($4548.WorkloadIdentityConfig v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasWorkloadIdentityConfig() => $_has(16);
   @$pb.TagNumber(18)
   void clearWorkloadIdentityConfig() => clearField(18);
   @$pb.TagNumber(18)
-  $4546.WorkloadIdentityConfig ensureWorkloadIdentityConfig() => $_ensure(16);
+  $4548.WorkloadIdentityConfig ensureWorkloadIdentityConfig() => $_ensure(16);
 
   /// Output only. PEM encoded x509 certificate of the cluster root of trust.
   @$pb.TagNumber(19)
@@ -404,15 +404,15 @@ class AzureCluster extends $pb.GeneratedMessage {
 
   /// Required. Fleet configuration.
   @$pb.TagNumber(20)
-  $4546.Fleet get fleet => $_getN(18);
+  $4548.Fleet get fleet => $_getN(18);
   @$pb.TagNumber(20)
-  set fleet($4546.Fleet v) { setField(20, v); }
+  set fleet($4548.Fleet v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasFleet() => $_has(18);
   @$pb.TagNumber(20)
   void clearFleet() => clearField(20);
   @$pb.TagNumber(20)
-  $4546.Fleet ensureFleet() => $_ensure(18);
+  $4548.Fleet ensureFleet() => $_ensure(18);
 
   /// Output only. Managed Azure resources for this cluster.
   @$pb.TagNumber(21)
@@ -442,15 +442,15 @@ class AzureCluster extends $pb.GeneratedMessage {
 
   /// Optional. Logging configuration for this cluster.
   @$pb.TagNumber(23)
-  $4546.LoggingConfig get loggingConfig => $_getN(21);
+  $4548.LoggingConfig get loggingConfig => $_getN(21);
   @$pb.TagNumber(23)
-  set loggingConfig($4546.LoggingConfig v) { setField(23, v); }
+  set loggingConfig($4548.LoggingConfig v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasLoggingConfig() => $_has(21);
   @$pb.TagNumber(23)
   void clearLoggingConfig() => clearField(23);
   @$pb.TagNumber(23)
-  $4546.LoggingConfig ensureLoggingConfig() => $_ensure(21);
+  $4548.LoggingConfig ensureLoggingConfig() => $_ensure(21);
 
   /// Output only. A set of errors found in the cluster.
   @$pb.TagNumber(24)
@@ -458,15 +458,15 @@ class AzureCluster extends $pb.GeneratedMessage {
 
   /// Optional. Monitoring configuration for this cluster.
   @$pb.TagNumber(25)
-  $4546.MonitoringConfig get monitoringConfig => $_getN(23);
+  $4548.MonitoringConfig get monitoringConfig => $_getN(23);
   @$pb.TagNumber(25)
-  set monitoringConfig($4546.MonitoringConfig v) { setField(25, v); }
+  set monitoringConfig($4548.MonitoringConfig v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasMonitoringConfig() => $_has(23);
   @$pb.TagNumber(25)
   void clearMonitoringConfig() => clearField(25);
   @$pb.TagNumber(25)
-  $4546.MonitoringConfig ensureMonitoringConfig() => $_ensure(23);
+  $4548.MonitoringConfig ensureMonitoringConfig() => $_ensure(23);
 }
 
 /// ClusterNetworking contains cluster-wide networking configuration.
@@ -1192,11 +1192,11 @@ class AzureClient extends $pb.GeneratedMessage {
     $core.String? tenantId,
     $core.String? applicationId,
     $core.String? uid,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? pemCertificate,
     $core.Map<$core.String, $core.String>? annotations,
     $core.bool? reconciling,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1237,11 +1237,11 @@ class AzureClient extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'tenantId')
     ..aOS(3, _omitFieldNames ? '' : 'applicationId')
     ..aOS(5, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'pemCertificate')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'annotations', entryClassName: 'AzureClient.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
     ..aOB(9, _omitFieldNames ? '' : 'reconciling')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1314,15 +1314,15 @@ class AzureClient extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this resource was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The PEM encoded x509 certificate.
   @$pb.TagNumber(7)
@@ -1358,15 +1358,15 @@ class AzureClient extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this client was last updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 }
 
 /// Configuration related to the cluster RBAC settings.
@@ -1615,11 +1615,11 @@ class AzureNodePool extends $pb.GeneratedMessage {
     AzureNodePool_State? state,
     $core.String? uid,
     $core.bool? reconciling,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? annotations,
-    $4546.MaxPodsConstraint? maxPodsConstraint,
+    $4548.MaxPodsConstraint? maxPodsConstraint,
     AzureNodeConfig? config,
     $core.String? azureAvailabilityZone,
     $core.Iterable<AzureNodePoolError>? errors,
@@ -1688,11 +1688,11 @@ class AzureNodePool extends $pb.GeneratedMessage {
     ..e<AzureNodePool_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AzureNodePool_State.STATE_UNSPECIFIED, valueOf: AzureNodePool_State.valueOf, enumValues: AzureNodePool_State.values)
     ..aOS(8, _omitFieldNames ? '' : 'uid')
     ..aOB(9, _omitFieldNames ? '' : 'reconciling')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'annotations', entryClassName: 'AzureNodePool.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
-    ..aOM<$4546.MaxPodsConstraint>(21, _omitFieldNames ? '' : 'maxPodsConstraint', subBuilder: $4546.MaxPodsConstraint.create)
+    ..aOM<$4548.MaxPodsConstraint>(21, _omitFieldNames ? '' : 'maxPodsConstraint', subBuilder: $4548.MaxPodsConstraint.create)
     ..aOM<AzureNodeConfig>(22, _omitFieldNames ? '' : 'config', subBuilder: AzureNodeConfig.create)
     ..aOS(23, _omitFieldNames ? '' : 'azureAvailabilityZone')
     ..pc<AzureNodePoolError>(29, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: AzureNodePoolError.create)
@@ -1804,27 +1804,27 @@ class AzureNodePool extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this node pool was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The time at which this node pool was last updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   ///  Allows clients to perform consistent read-modify-writes
   ///  through optimistic concurrency control.
@@ -1855,15 +1855,15 @@ class AzureNodePool extends $pb.GeneratedMessage {
   /// Required. The constraint on the maximum number of pods that can be run
   /// simultaneously on a node in the node pool.
   @$pb.TagNumber(21)
-  $4546.MaxPodsConstraint get maxPodsConstraint => $_getN(11);
+  $4548.MaxPodsConstraint get maxPodsConstraint => $_getN(11);
   @$pb.TagNumber(21)
-  set maxPodsConstraint($4546.MaxPodsConstraint v) { setField(21, v); }
+  set maxPodsConstraint($4548.MaxPodsConstraint v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasMaxPodsConstraint() => $_has(11);
   @$pb.TagNumber(21)
   void clearMaxPodsConstraint() => clearField(21);
   @$pb.TagNumber(21)
-  $4546.MaxPodsConstraint ensureMaxPodsConstraint() => $_ensure(11);
+  $4548.MaxPodsConstraint ensureMaxPodsConstraint() => $_ensure(11);
 
   /// Required. The node configuration of the node pool.
   @$pb.TagNumber(22)
@@ -1972,7 +1972,7 @@ class AzureNodeConfig extends $pb.GeneratedMessage {
     AzureSshConfig? sshConfig,
     $core.String? imageType,
     AzureProxyConfig? proxyConfig,
-    $core.Iterable<$4546.NodeTaint>? taints,
+    $core.Iterable<$4548.NodeTaint>? taints,
     $core.Map<$core.String, $core.String>? labels,
     AzureConfigEncryption? configEncryption,
   }) {
@@ -2017,7 +2017,7 @@ class AzureNodeConfig extends $pb.GeneratedMessage {
     ..aOM<AzureSshConfig>(7, _omitFieldNames ? '' : 'sshConfig', subBuilder: AzureSshConfig.create)
     ..aOS(8, _omitFieldNames ? '' : 'imageType')
     ..aOM<AzureProxyConfig>(9, _omitFieldNames ? '' : 'proxyConfig', subBuilder: AzureProxyConfig.create)
-    ..pc<$4546.NodeTaint>(10, _omitFieldNames ? '' : 'taints', $pb.PbFieldType.PM, subBuilder: $4546.NodeTaint.create)
+    ..pc<$4548.NodeTaint>(10, _omitFieldNames ? '' : 'taints', $pb.PbFieldType.PM, subBuilder: $4548.NodeTaint.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'AzureNodeConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gkemulticloud.v1'))
     ..aOM<AzureConfigEncryption>(12, _omitFieldNames ? '' : 'configEncryption', subBuilder: AzureConfigEncryption.create)
     ..hasRequiredFields = false
@@ -2122,7 +2122,7 @@ class AzureNodeConfig extends $pb.GeneratedMessage {
 
   /// Optional. The initial taints assigned to nodes of this node pool.
   @$pb.TagNumber(10)
-  $core.List<$4546.NodeTaint> get taints => $_getList(6);
+  $core.List<$4548.NodeTaint> get taints => $_getList(6);
 
   /// Optional. The initial labels assigned to nodes of this node pool. An object
   /// containing a list of "key": value pairs. Example: { "name": "wrench",
@@ -2331,7 +2331,7 @@ class AzureOpenIdConfig extends $pb.GeneratedMessage {
 /// AzureJsonWebKeys is a valid JSON Web Key Set as specififed in RFC 7517.
 class AzureJsonWebKeys extends $pb.GeneratedMessage {
   factory AzureJsonWebKeys({
-    $core.Iterable<$4546.Jwk>? keys,
+    $core.Iterable<$4548.Jwk>? keys,
   }) {
     final $result = create();
     if (keys != null) {
@@ -2344,7 +2344,7 @@ class AzureJsonWebKeys extends $pb.GeneratedMessage {
   factory AzureJsonWebKeys.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AzureJsonWebKeys', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkemulticloud.v1'), createEmptyInstance: create)
-    ..pc<$4546.Jwk>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $4546.Jwk.create)
+    ..pc<$4548.Jwk>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $4548.Jwk.create)
     ..hasRequiredFields = false
   ;
 
@@ -2372,7 +2372,7 @@ class AzureJsonWebKeys extends $pb.GeneratedMessage {
   /// The public component of the keys used by the cluster to sign token
   /// requests.
   @$pb.TagNumber(1)
-  $core.List<$4546.Jwk> get keys => $_getList(0);
+  $core.List<$4548.Jwk> get keys => $_getList(0);
 }
 
 /// AzureServerConfig contains information about a Google Cloud location, such as
@@ -2461,8 +2461,8 @@ class AzureK8sVersionInfo extends $pb.GeneratedMessage {
     $core.String? version,
     $core.bool? enabled,
     $core.bool? endOfLife,
-    $1800.Date? endOfLifeDate,
-    $1800.Date? releaseDate,
+    $1801.Date? endOfLifeDate,
+    $1801.Date? releaseDate,
   }) {
     final $result = create();
     if (version != null) {
@@ -2490,8 +2490,8 @@ class AzureK8sVersionInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'version')
     ..aOB(3, _omitFieldNames ? '' : 'enabled')
     ..aOB(4, _omitFieldNames ? '' : 'endOfLife')
-    ..aOM<$1800.Date>(5, _omitFieldNames ? '' : 'endOfLifeDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(6, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(5, _omitFieldNames ? '' : 'endOfLifeDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(6, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -2556,27 +2556,27 @@ class AzureK8sVersionInfo extends $pb.GeneratedMessage {
   /// `end_of_life` field is true), this is the actual date (in Pacific time)
   /// when the version reached its end of life.
   @$pb.TagNumber(5)
-  $1800.Date get endOfLifeDate => $_getN(3);
+  $1801.Date get endOfLifeDate => $_getN(3);
   @$pb.TagNumber(5)
-  set endOfLifeDate($1800.Date v) { setField(5, v); }
+  set endOfLifeDate($1801.Date v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndOfLifeDate() => $_has(3);
   @$pb.TagNumber(5)
   void clearEndOfLifeDate() => clearField(5);
   @$pb.TagNumber(5)
-  $1800.Date ensureEndOfLifeDate() => $_ensure(3);
+  $1801.Date ensureEndOfLifeDate() => $_ensure(3);
 
   /// Optional. The date (in Pacific Time) when the cluster version was released.
   @$pb.TagNumber(6)
-  $1800.Date get releaseDate => $_getN(4);
+  $1801.Date get releaseDate => $_getN(4);
   @$pb.TagNumber(6)
-  set releaseDate($1800.Date v) { setField(6, v); }
+  set releaseDate($1801.Date v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasReleaseDate() => $_has(4);
   @$pb.TagNumber(6)
   void clearReleaseDate() => clearField(6);
   @$pb.TagNumber(6)
-  $1800.Date ensureReleaseDate() => $_ensure(4);
+  $1801.Date ensureReleaseDate() => $_ensure(4);
 }
 
 /// SSH configuration for Azure resources.

@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/conversion_value_rule_status.pbenum.dart' as $2243;
-import '../enums/value_rule_device_type.pbenum.dart' as $2246;
-import '../enums/value_rule_geo_location_match_type.pbenum.dart' as $2245;
-import '../enums/value_rule_operation.pbenum.dart' as $2244;
+import '../enums/conversion_value_rule_status.pbenum.dart' as $2244;
+import '../enums/value_rule_device_type.pbenum.dart' as $2247;
+import '../enums/value_rule_geo_location_match_type.pbenum.dart' as $2246;
+import '../enums/value_rule_operation.pbenum.dart' as $2245;
 
 /// Action applied when rule is applied.
 class ConversionValueRule_ValueRuleAction extends $pb.GeneratedMessage {
   factory ConversionValueRule_ValueRuleAction({
-    $2244.ValueRuleOperationEnum_ValueRuleOperation? operation,
+    $2245.ValueRuleOperationEnum_ValueRuleOperation? operation,
     $core.double? value,
   }) {
     final $result = create();
@@ -39,7 +39,7 @@ class ConversionValueRule_ValueRuleAction extends $pb.GeneratedMessage {
   factory ConversionValueRule_ValueRuleAction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionValueRule.ValueRuleAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
-    ..e<$2244.ValueRuleOperationEnum_ValueRuleOperation>(1, _omitFieldNames ? '' : 'operation', $pb.PbFieldType.OE, defaultOrMaker: $2244.ValueRuleOperationEnum_ValueRuleOperation.UNSPECIFIED, valueOf: $2244.ValueRuleOperationEnum_ValueRuleOperation.valueOf, enumValues: $2244.ValueRuleOperationEnum_ValueRuleOperation.values)
+    ..e<$2245.ValueRuleOperationEnum_ValueRuleOperation>(1, _omitFieldNames ? '' : 'operation', $pb.PbFieldType.OE, defaultOrMaker: $2245.ValueRuleOperationEnum_ValueRuleOperation.UNSPECIFIED, valueOf: $2245.ValueRuleOperationEnum_ValueRuleOperation.valueOf, enumValues: $2245.ValueRuleOperationEnum_ValueRuleOperation.values)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -67,9 +67,9 @@ class ConversionValueRule_ValueRuleAction extends $pb.GeneratedMessage {
 
   /// Specifies applied operation.
   @$pb.TagNumber(1)
-  $2244.ValueRuleOperationEnum_ValueRuleOperation get operation => $_getN(0);
+  $2245.ValueRuleOperationEnum_ValueRuleOperation get operation => $_getN(0);
   @$pb.TagNumber(1)
-  set operation($2244.ValueRuleOperationEnum_ValueRuleOperation v) { setField(1, v); }
+  set operation($2245.ValueRuleOperationEnum_ValueRuleOperation v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOperation() => $_has(0);
   @$pb.TagNumber(1)
@@ -90,9 +90,9 @@ class ConversionValueRule_ValueRuleAction extends $pb.GeneratedMessage {
 class ConversionValueRule_ValueRuleGeoLocationCondition extends $pb.GeneratedMessage {
   factory ConversionValueRule_ValueRuleGeoLocationCondition({
     $core.Iterable<$core.String>? excludedGeoTargetConstants,
-    $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType? excludedGeoMatchType,
+    $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType? excludedGeoMatchType,
     $core.Iterable<$core.String>? geoTargetConstants,
-    $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType? geoMatchType,
+    $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType? geoMatchType,
   }) {
     final $result = create();
     if (excludedGeoTargetConstants != null) {
@@ -115,9 +115,9 @@ class ConversionValueRule_ValueRuleGeoLocationCondition extends $pb.GeneratedMes
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionValueRule.ValueRuleGeoLocationCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'excludedGeoTargetConstants')
-    ..e<$2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType>(2, _omitFieldNames ? '' : 'excludedGeoMatchType', $pb.PbFieldType.OE, defaultOrMaker: $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.UNSPECIFIED, valueOf: $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.valueOf, enumValues: $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.values)
+    ..e<$2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType>(2, _omitFieldNames ? '' : 'excludedGeoMatchType', $pb.PbFieldType.OE, defaultOrMaker: $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.UNSPECIFIED, valueOf: $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.valueOf, enumValues: $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.values)
     ..pPS(3, _omitFieldNames ? '' : 'geoTargetConstants')
-    ..e<$2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType>(4, _omitFieldNames ? '' : 'geoMatchType', $pb.PbFieldType.OE, defaultOrMaker: $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.UNSPECIFIED, valueOf: $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.valueOf, enumValues: $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.values)
+    ..e<$2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType>(4, _omitFieldNames ? '' : 'geoMatchType', $pb.PbFieldType.OE, defaultOrMaker: $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.UNSPECIFIED, valueOf: $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.valueOf, enumValues: $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType.values)
     ..hasRequiredFields = false
   ;
 
@@ -148,9 +148,9 @@ class ConversionValueRule_ValueRuleGeoLocationCondition extends $pb.GeneratedMes
 
   /// Excluded Geo location match type.
   @$pb.TagNumber(2)
-  $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType get excludedGeoMatchType => $_getN(1);
+  $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType get excludedGeoMatchType => $_getN(1);
   @$pb.TagNumber(2)
-  set excludedGeoMatchType($2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType v) { setField(2, v); }
+  set excludedGeoMatchType($2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExcludedGeoMatchType() => $_has(1);
   @$pb.TagNumber(2)
@@ -162,9 +162,9 @@ class ConversionValueRule_ValueRuleGeoLocationCondition extends $pb.GeneratedMes
 
   /// Included Geo location match type.
   @$pb.TagNumber(4)
-  $2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType get geoMatchType => $_getN(3);
+  $2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType get geoMatchType => $_getN(3);
   @$pb.TagNumber(4)
-  set geoMatchType($2245.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType v) { setField(4, v); }
+  set geoMatchType($2246.ValueRuleGeoLocationMatchTypeEnum_ValueRuleGeoLocationMatchType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGeoMatchType() => $_has(3);
   @$pb.TagNumber(4)
@@ -174,7 +174,7 @@ class ConversionValueRule_ValueRuleGeoLocationCondition extends $pb.GeneratedMes
 /// Condition on Device dimension.
 class ConversionValueRule_ValueRuleDeviceCondition extends $pb.GeneratedMessage {
   factory ConversionValueRule_ValueRuleDeviceCondition({
-    $core.Iterable<$2246.ValueRuleDeviceTypeEnum_ValueRuleDeviceType>? deviceTypes,
+    $core.Iterable<$2247.ValueRuleDeviceTypeEnum_ValueRuleDeviceType>? deviceTypes,
   }) {
     final $result = create();
     if (deviceTypes != null) {
@@ -187,7 +187,7 @@ class ConversionValueRule_ValueRuleDeviceCondition extends $pb.GeneratedMessage 
   factory ConversionValueRule_ValueRuleDeviceCondition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionValueRule.ValueRuleDeviceCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
-    ..pc<$2246.ValueRuleDeviceTypeEnum_ValueRuleDeviceType>(1, _omitFieldNames ? '' : 'deviceTypes', $pb.PbFieldType.KE, valueOf: $2246.ValueRuleDeviceTypeEnum_ValueRuleDeviceType.valueOf, enumValues: $2246.ValueRuleDeviceTypeEnum_ValueRuleDeviceType.values, defaultEnumValue: $2246.ValueRuleDeviceTypeEnum_ValueRuleDeviceType.UNSPECIFIED)
+    ..pc<$2247.ValueRuleDeviceTypeEnum_ValueRuleDeviceType>(1, _omitFieldNames ? '' : 'deviceTypes', $pb.PbFieldType.KE, valueOf: $2247.ValueRuleDeviceTypeEnum_ValueRuleDeviceType.valueOf, enumValues: $2247.ValueRuleDeviceTypeEnum_ValueRuleDeviceType.values, defaultEnumValue: $2247.ValueRuleDeviceTypeEnum_ValueRuleDeviceType.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -214,7 +214,7 @@ class ConversionValueRule_ValueRuleDeviceCondition extends $pb.GeneratedMessage 
 
   /// Value for device type condition.
   @$pb.TagNumber(1)
-  $core.List<$2246.ValueRuleDeviceTypeEnum_ValueRuleDeviceType> get deviceTypes => $_getList(0);
+  $core.List<$2247.ValueRuleDeviceTypeEnum_ValueRuleDeviceType> get deviceTypes => $_getList(0);
 }
 
 /// Condition on Audience dimension.
@@ -285,7 +285,7 @@ class ConversionValueRule extends $pb.GeneratedMessage {
     ConversionValueRule_ValueRuleDeviceCondition? deviceCondition,
     ConversionValueRule_ValueRuleAudienceCondition? audienceCondition,
     $core.String? ownerCustomer,
-    $2243.ConversionValueRuleStatusEnum_ConversionValueRuleStatus? status,
+    $2244.ConversionValueRuleStatusEnum_ConversionValueRuleStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -326,7 +326,7 @@ class ConversionValueRule extends $pb.GeneratedMessage {
     ..aOM<ConversionValueRule_ValueRuleDeviceCondition>(5, _omitFieldNames ? '' : 'deviceCondition', subBuilder: ConversionValueRule_ValueRuleDeviceCondition.create)
     ..aOM<ConversionValueRule_ValueRuleAudienceCondition>(6, _omitFieldNames ? '' : 'audienceCondition', subBuilder: ConversionValueRule_ValueRuleAudienceCondition.create)
     ..aOS(7, _omitFieldNames ? '' : 'ownerCustomer')
-    ..e<$2243.ConversionValueRuleStatusEnum_ConversionValueRuleStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2243.ConversionValueRuleStatusEnum_ConversionValueRuleStatus.UNSPECIFIED, valueOf: $2243.ConversionValueRuleStatusEnum_ConversionValueRuleStatus.valueOf, enumValues: $2243.ConversionValueRuleStatusEnum_ConversionValueRuleStatus.values)
+    ..e<$2244.ConversionValueRuleStatusEnum_ConversionValueRuleStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2244.ConversionValueRuleStatusEnum_ConversionValueRuleStatus.UNSPECIFIED, valueOf: $2244.ConversionValueRuleStatusEnum_ConversionValueRuleStatus.valueOf, enumValues: $2244.ConversionValueRuleStatusEnum_ConversionValueRuleStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -440,9 +440,9 @@ class ConversionValueRule extends $pb.GeneratedMessage {
 
   /// The status of the conversion value rule.
   @$pb.TagNumber(8)
-  $2243.ConversionValueRuleStatusEnum_ConversionValueRuleStatus get status => $_getN(7);
+  $2244.ConversionValueRuleStatusEnum_ConversionValueRuleStatus get status => $_getN(7);
   @$pb.TagNumber(8)
-  set status($2243.ConversionValueRuleStatusEnum_ConversionValueRuleStatus v) { setField(8, v); }
+  set status($2244.ConversionValueRuleStatusEnum_ConversionValueRuleStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStatus() => $_has(7);
   @$pb.TagNumber(8)

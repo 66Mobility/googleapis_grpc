@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pb.dart' as $1063;
 import 'service.pbenum.dart';
 
@@ -367,7 +367,7 @@ class CreateOrderRequest extends $pb.GeneratedMessage {
 /// A request to update an order.
 class UpdateOrderRequest extends $pb.GeneratedMessage {
   factory UpdateOrderRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1063.Order? order,
     $core.String? requestId,
   }) {
@@ -388,7 +388,7 @@ class UpdateOrderRequest extends $pb.GeneratedMessage {
   factory UpdateOrderRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateOrderRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1063.Order>(2, _omitFieldNames ? '' : 'order', subBuilder: $1063.Order.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -420,15 +420,15 @@ class UpdateOrderRequest extends $pb.GeneratedMessage {
   /// not the full request. A field will be overwritten if it is in the mask. If
   /// you don't provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The order to update.
   @$pb.TagNumber(2)
@@ -958,7 +958,7 @@ class CreateSiteRequest extends $pb.GeneratedMessage {
 /// A request to update a site.
 class UpdateSiteRequest extends $pb.GeneratedMessage {
   factory UpdateSiteRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1063.Site? site,
     $core.String? requestId,
   }) {
@@ -979,7 +979,7 @@ class UpdateSiteRequest extends $pb.GeneratedMessage {
   factory UpdateSiteRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSiteRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1063.Site>(2, _omitFieldNames ? '' : 'site', subBuilder: $1063.Site.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1011,15 +1011,15 @@ class UpdateSiteRequest extends $pb.GeneratedMessage {
   /// not the full request. A field will be overwritten if it is in the mask. If
   /// you don't provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The site to update.
   @$pb.TagNumber(2)
@@ -1394,7 +1394,7 @@ class CreateHardwareGroupRequest extends $pb.GeneratedMessage {
 /// A request to update a hardware group.
 class UpdateHardwareGroupRequest extends $pb.GeneratedMessage {
   factory UpdateHardwareGroupRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1063.HardwareGroup? hardwareGroup,
     $core.String? requestId,
   }) {
@@ -1415,7 +1415,7 @@ class UpdateHardwareGroupRequest extends $pb.GeneratedMessage {
   factory UpdateHardwareGroupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateHardwareGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1063.HardwareGroup>(2, _omitFieldNames ? '' : 'hardwareGroup', subBuilder: $1063.HardwareGroup.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1448,15 +1448,15 @@ class UpdateHardwareGroupRequest extends $pb.GeneratedMessage {
   /// is in the mask. If you don't provide a mask then all fields will be
   /// overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The hardware group to update.
   @$pb.TagNumber(2)
@@ -1884,7 +1884,7 @@ class CreateHardwareRequest extends $pb.GeneratedMessage {
 /// A request to update hardware.
 class UpdateHardwareRequest extends $pb.GeneratedMessage {
   factory UpdateHardwareRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1063.Hardware? hardware,
     $core.String? requestId,
   }) {
@@ -1905,7 +1905,7 @@ class UpdateHardwareRequest extends $pb.GeneratedMessage {
   factory UpdateHardwareRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateHardwareRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1063.Hardware>(2, _omitFieldNames ? '' : 'hardware', subBuilder: $1063.Hardware.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1937,15 +1937,15 @@ class UpdateHardwareRequest extends $pb.GeneratedMessage {
   /// hardware, not the full request. A field will be overwritten if it is in the
   /// mask. If you don't provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The hardware to update.
   @$pb.TagNumber(2)
@@ -3209,7 +3209,7 @@ class CreateZoneRequest extends $pb.GeneratedMessage {
 /// A request to update a zone.
 class UpdateZoneRequest extends $pb.GeneratedMessage {
   factory UpdateZoneRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1063.Zone? zone,
     $core.String? requestId,
   }) {
@@ -3230,7 +3230,7 @@ class UpdateZoneRequest extends $pb.GeneratedMessage {
   factory UpdateZoneRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateZoneRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1063.Zone>(2, _omitFieldNames ? '' : 'zone', subBuilder: $1063.Zone.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -3262,15 +3262,15 @@ class UpdateZoneRequest extends $pb.GeneratedMessage {
   /// not the full request. A field will be overwritten if it is in the mask. If
   /// you don't provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The zone to update.
   @$pb.TagNumber(2)
@@ -3452,8 +3452,8 @@ class SignalZoneStateRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of a long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -3489,8 +3489,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -3522,27 +3522,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/user_identifier_source.pbenum.dart' as $2609;
-import 'consent.pb.dart' as $2608;
+import '../enums/user_identifier_source.pbenum.dart' as $2610;
+import 'consent.pb.dart' as $2609;
 
 /// Address identifier of offline data.
 class OfflineUserAddressInfo extends $pb.GeneratedMessage {
@@ -179,7 +179,7 @@ enum UserIdentifier_Identifier {
 class UserIdentifier extends $pb.GeneratedMessage {
   factory UserIdentifier({
     OfflineUserAddressInfo? addressInfo,
-    $2609.UserIdentifierSourceEnum_UserIdentifierSource? userIdentifierSource,
+    $2610.UserIdentifierSourceEnum_UserIdentifierSource? userIdentifierSource,
     $core.String? hashedEmail,
     $core.String? hashedPhoneNumber,
     $core.String? mobileId,
@@ -221,7 +221,7 @@ class UserIdentifier extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserIdentifier', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
     ..oo(0, [5, 7, 8, 9, 10])
     ..aOM<OfflineUserAddressInfo>(5, _omitFieldNames ? '' : 'addressInfo', subBuilder: OfflineUserAddressInfo.create)
-    ..e<$2609.UserIdentifierSourceEnum_UserIdentifierSource>(6, _omitFieldNames ? '' : 'userIdentifierSource', $pb.PbFieldType.OE, defaultOrMaker: $2609.UserIdentifierSourceEnum_UserIdentifierSource.UNSPECIFIED, valueOf: $2609.UserIdentifierSourceEnum_UserIdentifierSource.valueOf, enumValues: $2609.UserIdentifierSourceEnum_UserIdentifierSource.values)
+    ..e<$2610.UserIdentifierSourceEnum_UserIdentifierSource>(6, _omitFieldNames ? '' : 'userIdentifierSource', $pb.PbFieldType.OE, defaultOrMaker: $2610.UserIdentifierSourceEnum_UserIdentifierSource.UNSPECIFIED, valueOf: $2610.UserIdentifierSourceEnum_UserIdentifierSource.valueOf, enumValues: $2610.UserIdentifierSourceEnum_UserIdentifierSource.values)
     ..aOS(7, _omitFieldNames ? '' : 'hashedEmail')
     ..aOS(8, _omitFieldNames ? '' : 'hashedPhoneNumber')
     ..aOS(9, _omitFieldNames ? '' : 'mobileId')
@@ -269,9 +269,9 @@ class UserIdentifier extends $pb.GeneratedMessage {
   /// Source of the user identifier when the upload is from Store Sales,
   /// ConversionUploadService, or ConversionAdjustmentUploadService.
   @$pb.TagNumber(6)
-  $2609.UserIdentifierSourceEnum_UserIdentifierSource get userIdentifierSource => $_getN(1);
+  $2610.UserIdentifierSourceEnum_UserIdentifierSource get userIdentifierSource => $_getN(1);
   @$pb.TagNumber(6)
-  set userIdentifierSource($2609.UserIdentifierSourceEnum_UserIdentifierSource v) { setField(6, v); }
+  set userIdentifierSource($2610.UserIdentifierSourceEnum_UserIdentifierSource v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUserIdentifierSource() => $_has(1);
   @$pb.TagNumber(6)
@@ -673,7 +673,7 @@ class UserData extends $pb.GeneratedMessage {
     $core.Iterable<UserIdentifier>? userIdentifiers,
     TransactionAttribute? transactionAttribute,
     UserAttribute? userAttribute,
-    $2608.Consent? consent,
+    $2609.Consent? consent,
   }) {
     final $result = create();
     if (userIdentifiers != null) {
@@ -698,7 +698,7 @@ class UserData extends $pb.GeneratedMessage {
     ..pc<UserIdentifier>(1, _omitFieldNames ? '' : 'userIdentifiers', $pb.PbFieldType.PM, subBuilder: UserIdentifier.create)
     ..aOM<TransactionAttribute>(2, _omitFieldNames ? '' : 'transactionAttribute', subBuilder: TransactionAttribute.create)
     ..aOM<UserAttribute>(3, _omitFieldNames ? '' : 'userAttribute', subBuilder: UserAttribute.create)
-    ..aOM<$2608.Consent>(4, _omitFieldNames ? '' : 'consent', subBuilder: $2608.Consent.create)
+    ..aOM<$2609.Consent>(4, _omitFieldNames ? '' : 'consent', subBuilder: $2609.Consent.create)
     ..hasRequiredFields = false
   ;
 
@@ -756,15 +756,15 @@ class UserData extends $pb.GeneratedMessage {
   /// The consent setting for the user. Customer match will ignore this field
   /// and return a warning.
   @$pb.TagNumber(4)
-  $2608.Consent get consent => $_getN(3);
+  $2609.Consent get consent => $_getN(3);
   @$pb.TagNumber(4)
-  set consent($2608.Consent v) { setField(4, v); }
+  set consent($2609.Consent v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasConsent() => $_has(3);
   @$pb.TagNumber(4)
   void clearConsent() => clearField(4);
   @$pb.TagNumber(4)
-  $2608.Consent ensureConsent() => $_ensure(3);
+  $2609.Consent ensureConsent() => $_ensure(3);
 }
 
 /// User attribute, can only be used with CUSTOMER_MATCH_WITH_ATTRIBUTES job
@@ -1161,7 +1161,7 @@ class ShoppingLoyalty extends $pb.GeneratedMessage {
 class CustomerMatchUserListMetadata extends $pb.GeneratedMessage {
   factory CustomerMatchUserListMetadata({
     $core.String? userList,
-    $2608.Consent? consent,
+    $2609.Consent? consent,
   }) {
     final $result = create();
     if (userList != null) {
@@ -1178,7 +1178,7 @@ class CustomerMatchUserListMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerMatchUserListMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.common'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'userList')
-    ..aOM<$2608.Consent>(3, _omitFieldNames ? '' : 'consent', subBuilder: $2608.Consent.create)
+    ..aOM<$2609.Consent>(3, _omitFieldNames ? '' : 'consent', subBuilder: $2609.Consent.create)
     ..hasRequiredFields = false
   ;
 
@@ -1216,15 +1216,15 @@ class CustomerMatchUserListMetadata extends $pb.GeneratedMessage {
 
   /// The consent setting for all the users in this job.
   @$pb.TagNumber(3)
-  $2608.Consent get consent => $_getN(1);
+  $2609.Consent get consent => $_getN(1);
   @$pb.TagNumber(3)
-  set consent($2608.Consent v) { setField(3, v); }
+  set consent($2609.Consent v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasConsent() => $_has(1);
   @$pb.TagNumber(3)
   void clearConsent() => clearField(3);
   @$pb.TagNumber(3)
-  $2608.Consent ensureConsent() => $_ensure(1);
+  $2609.Consent ensureConsent() => $_ensure(1);
 }
 
 /// Metadata for Store Sales Direct.

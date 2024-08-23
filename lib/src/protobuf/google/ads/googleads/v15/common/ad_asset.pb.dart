@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_performance_label.pbenum.dart' as $1832;
-import '../enums/served_asset_field_type.pbenum.dart' as $1831;
-import 'asset_policy.pb.dart' as $1830;
+import '../enums/asset_performance_label.pbenum.dart' as $1833;
+import '../enums/served_asset_field_type.pbenum.dart' as $1832;
+import 'asset_policy.pb.dart' as $1831;
 
 /// A text asset used inside an ad.
 class AdTextAsset extends $pb.GeneratedMessage {
   factory AdTextAsset({
-    $1831.ServedAssetFieldTypeEnum_ServedAssetFieldType? pinnedField,
+    $1832.ServedAssetFieldTypeEnum_ServedAssetFieldType? pinnedField,
     $core.String? text,
-    $1832.AssetPerformanceLabelEnum_AssetPerformanceLabel? assetPerformanceLabel,
-    $1830.AdAssetPolicySummary? policySummaryInfo,
+    $1833.AssetPerformanceLabelEnum_AssetPerformanceLabel? assetPerformanceLabel,
+    $1831.AdAssetPolicySummary? policySummaryInfo,
   }) {
     final $result = create();
     if (pinnedField != null) {
@@ -45,10 +45,10 @@ class AdTextAsset extends $pb.GeneratedMessage {
   factory AdTextAsset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdTextAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1831.ServedAssetFieldTypeEnum_ServedAssetFieldType>(2, _omitFieldNames ? '' : 'pinnedField', $pb.PbFieldType.OE, defaultOrMaker: $1831.ServedAssetFieldTypeEnum_ServedAssetFieldType.UNSPECIFIED, valueOf: $1831.ServedAssetFieldTypeEnum_ServedAssetFieldType.valueOf, enumValues: $1831.ServedAssetFieldTypeEnum_ServedAssetFieldType.values)
+    ..e<$1832.ServedAssetFieldTypeEnum_ServedAssetFieldType>(2, _omitFieldNames ? '' : 'pinnedField', $pb.PbFieldType.OE, defaultOrMaker: $1832.ServedAssetFieldTypeEnum_ServedAssetFieldType.UNSPECIFIED, valueOf: $1832.ServedAssetFieldTypeEnum_ServedAssetFieldType.valueOf, enumValues: $1832.ServedAssetFieldTypeEnum_ServedAssetFieldType.values)
     ..aOS(4, _omitFieldNames ? '' : 'text')
-    ..e<$1832.AssetPerformanceLabelEnum_AssetPerformanceLabel>(5, _omitFieldNames ? '' : 'assetPerformanceLabel', $pb.PbFieldType.OE, defaultOrMaker: $1832.AssetPerformanceLabelEnum_AssetPerformanceLabel.UNSPECIFIED, valueOf: $1832.AssetPerformanceLabelEnum_AssetPerformanceLabel.valueOf, enumValues: $1832.AssetPerformanceLabelEnum_AssetPerformanceLabel.values)
-    ..aOM<$1830.AdAssetPolicySummary>(6, _omitFieldNames ? '' : 'policySummaryInfo', subBuilder: $1830.AdAssetPolicySummary.create)
+    ..e<$1833.AssetPerformanceLabelEnum_AssetPerformanceLabel>(5, _omitFieldNames ? '' : 'assetPerformanceLabel', $pb.PbFieldType.OE, defaultOrMaker: $1833.AssetPerformanceLabelEnum_AssetPerformanceLabel.UNSPECIFIED, valueOf: $1833.AssetPerformanceLabelEnum_AssetPerformanceLabel.valueOf, enumValues: $1833.AssetPerformanceLabelEnum_AssetPerformanceLabel.values)
+    ..aOM<$1831.AdAssetPolicySummary>(6, _omitFieldNames ? '' : 'policySummaryInfo', subBuilder: $1831.AdAssetPolicySummary.create)
     ..hasRequiredFields = false
   ;
 
@@ -78,9 +78,9 @@ class AdTextAsset extends $pb.GeneratedMessage {
   /// asset that is unpinned or pinned to a different field will not serve in a
   /// field where some other asset has been pinned.
   @$pb.TagNumber(2)
-  $1831.ServedAssetFieldTypeEnum_ServedAssetFieldType get pinnedField => $_getN(0);
+  $1832.ServedAssetFieldTypeEnum_ServedAssetFieldType get pinnedField => $_getN(0);
   @$pb.TagNumber(2)
-  set pinnedField($1831.ServedAssetFieldTypeEnum_ServedAssetFieldType v) { setField(2, v); }
+  set pinnedField($1832.ServedAssetFieldTypeEnum_ServedAssetFieldType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPinnedField() => $_has(0);
   @$pb.TagNumber(2)
@@ -98,9 +98,9 @@ class AdTextAsset extends $pb.GeneratedMessage {
 
   /// The performance label of this text asset.
   @$pb.TagNumber(5)
-  $1832.AssetPerformanceLabelEnum_AssetPerformanceLabel get assetPerformanceLabel => $_getN(2);
+  $1833.AssetPerformanceLabelEnum_AssetPerformanceLabel get assetPerformanceLabel => $_getN(2);
   @$pb.TagNumber(5)
-  set assetPerformanceLabel($1832.AssetPerformanceLabelEnum_AssetPerformanceLabel v) { setField(5, v); }
+  set assetPerformanceLabel($1833.AssetPerformanceLabelEnum_AssetPerformanceLabel v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAssetPerformanceLabel() => $_has(2);
   @$pb.TagNumber(5)
@@ -108,15 +108,15 @@ class AdTextAsset extends $pb.GeneratedMessage {
 
   /// The policy summary of this text asset.
   @$pb.TagNumber(6)
-  $1830.AdAssetPolicySummary get policySummaryInfo => $_getN(3);
+  $1831.AdAssetPolicySummary get policySummaryInfo => $_getN(3);
   @$pb.TagNumber(6)
-  set policySummaryInfo($1830.AdAssetPolicySummary v) { setField(6, v); }
+  set policySummaryInfo($1831.AdAssetPolicySummary v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPolicySummaryInfo() => $_has(3);
   @$pb.TagNumber(6)
   void clearPolicySummaryInfo() => clearField(6);
   @$pb.TagNumber(6)
-  $1830.AdAssetPolicySummary ensurePolicySummaryInfo() => $_ensure(3);
+  $1831.AdAssetPolicySummary ensurePolicySummaryInfo() => $_ensure(3);
 }
 
 /// An image asset used inside an ad.

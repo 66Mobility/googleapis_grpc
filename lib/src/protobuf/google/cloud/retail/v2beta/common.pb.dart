@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 export 'common.pbenum.dart';
 
@@ -93,8 +93,8 @@ class Condition_QueryTerm extends $pb.GeneratedMessage {
 /// Example: Want to have rule applied for week long sale.
 class Condition_TimeRange extends $pb.GeneratedMessage {
   factory Condition_TimeRange({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -110,8 +110,8 @@ class Condition_TimeRange extends $pb.GeneratedMessage {
   factory Condition_TimeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Condition.TimeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -138,27 +138,27 @@ class Condition_TimeRange extends $pb.GeneratedMessage {
 
   /// Start of time range. Range is inclusive.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// End of time range. Range is inclusive.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Metadata that is used to define a condition that triggers an action.
@@ -1968,8 +1968,8 @@ class PriceInfo extends $pb.GeneratedMessage {
     $core.double? price,
     $core.double? originalPrice,
     $core.double? cost,
-    $1775.Timestamp? priceEffectiveTime,
-    $1775.Timestamp? priceExpireTime,
+    $1776.Timestamp? priceEffectiveTime,
+    $1776.Timestamp? priceExpireTime,
     PriceInfo_PriceRange? priceRange,
   }) {
     final $result = create();
@@ -2005,8 +2005,8 @@ class PriceInfo extends $pb.GeneratedMessage {
     ..a<$core.double>(2, _omitFieldNames ? '' : 'price', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'originalPrice', $pb.PbFieldType.OF)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'cost', $pb.PbFieldType.OF)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'priceEffectiveTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'priceExpireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'priceEffectiveTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'priceExpireTime', subBuilder: $1776.Timestamp.create)
     ..aOM<PriceInfo_PriceRange>(7, _omitFieldNames ? '' : 'priceRange', subBuilder: PriceInfo_PriceRange.create)
     ..hasRequiredFields = false
   ;
@@ -2114,15 +2114,15 @@ class PriceInfo extends $pb.GeneratedMessage {
   ///  Do not set if [price][google.cloud.retail.v2beta.PriceInfo.price] is always
   ///  effective because it will cause additional latency during search.
   @$pb.TagNumber(5)
-  $1775.Timestamp get priceEffectiveTime => $_getN(4);
+  $1776.Timestamp get priceEffectiveTime => $_getN(4);
   @$pb.TagNumber(5)
-  set priceEffectiveTime($1775.Timestamp v) { setField(5, v); }
+  set priceEffectiveTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPriceEffectiveTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearPriceEffectiveTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensurePriceEffectiveTime() => $_ensure(4);
+  $1776.Timestamp ensurePriceEffectiveTime() => $_ensure(4);
 
   ///  The timestamp when the [price][google.cloud.retail.v2beta.PriceInfo.price]
   ///  stops to be effective. The
@@ -2139,15 +2139,15 @@ class PriceInfo extends $pb.GeneratedMessage {
   ///  Do not set if [price][google.cloud.retail.v2beta.PriceInfo.price] is always
   ///  effective because it will cause additional latency during search.
   @$pb.TagNumber(6)
-  $1775.Timestamp get priceExpireTime => $_getN(5);
+  $1776.Timestamp get priceExpireTime => $_getN(5);
   @$pb.TagNumber(6)
-  set priceExpireTime($1775.Timestamp v) { setField(6, v); }
+  set priceExpireTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPriceExpireTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearPriceExpireTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensurePriceExpireTime() => $_ensure(5);
+  $1776.Timestamp ensurePriceExpireTime() => $_ensure(5);
 
   ///  Output only. The price range of all the child
   ///  [Product.Type.VARIANT][google.cloud.retail.v2beta.Product.Type.VARIANT]

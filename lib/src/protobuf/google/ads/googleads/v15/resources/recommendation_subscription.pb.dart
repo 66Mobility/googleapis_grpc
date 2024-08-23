@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/recommendation_subscription_status.pbenum.dart' as $2337;
-import '../enums/recommendation_type.pbenum.dart' as $1922;
+import '../enums/recommendation_subscription_status.pbenum.dart' as $2338;
+import '../enums/recommendation_type.pbenum.dart' as $1923;
 
 /// Recommendation Subscription resource
 class RecommendationSubscription extends $pb.GeneratedMessage {
   factory RecommendationSubscription({
     $core.String? resourceName,
-    $1922.RecommendationTypeEnum_RecommendationType? type,
+    $1923.RecommendationTypeEnum_RecommendationType? type,
     $core.String? createDateTime,
     $core.String? modifyDateTime,
-    $2337.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus? status,
+    $2338.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -49,10 +49,10 @@ class RecommendationSubscription extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecommendationSubscription', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$1922.RecommendationTypeEnum_RecommendationType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1922.RecommendationTypeEnum_RecommendationType.UNSPECIFIED, valueOf: $1922.RecommendationTypeEnum_RecommendationType.valueOf, enumValues: $1922.RecommendationTypeEnum_RecommendationType.values)
+    ..e<$1923.RecommendationTypeEnum_RecommendationType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1923.RecommendationTypeEnum_RecommendationType.UNSPECIFIED, valueOf: $1923.RecommendationTypeEnum_RecommendationType.valueOf, enumValues: $1923.RecommendationTypeEnum_RecommendationType.values)
     ..aOS(3, _omitFieldNames ? '' : 'createDateTime')
     ..aOS(4, _omitFieldNames ? '' : 'modifyDateTime')
-    ..e<$2337.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2337.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus.UNSPECIFIED, valueOf: $2337.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus.valueOf, enumValues: $2337.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus.values)
+    ..e<$2338.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2338.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus.UNSPECIFIED, valueOf: $2338.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus.valueOf, enumValues: $2338.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -91,9 +91,9 @@ class RecommendationSubscription extends $pb.GeneratedMessage {
 
   /// Required. Immutable. The type of recommendation subscribed to.
   @$pb.TagNumber(2)
-  $1922.RecommendationTypeEnum_RecommendationType get type => $_getN(1);
+  $1923.RecommendationTypeEnum_RecommendationType get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($1922.RecommendationTypeEnum_RecommendationType v) { setField(2, v); }
+  set type($1923.RecommendationTypeEnum_RecommendationType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
@@ -125,9 +125,9 @@ class RecommendationSubscription extends $pb.GeneratedMessage {
 
   /// Required. Status of the subscription, either enabled or paused.
   @$pb.TagNumber(5)
-  $2337.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus get status => $_getN(4);
+  $2338.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($2337.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus v) { setField(5, v); }
+  set status($2338.RecommendationSubscriptionStatusEnum_RecommendationSubscriptionStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)

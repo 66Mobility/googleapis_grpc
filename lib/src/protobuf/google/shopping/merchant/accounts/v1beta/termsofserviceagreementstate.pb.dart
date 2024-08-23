@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/date.pb.dart' as $1800;
-import 'termsofservicekind.pbenum.dart' as $4879;
+import '../../../../type/date.pb.dart' as $1801;
+import 'termsofservicekind.pbenum.dart' as $4881;
 
 ///  This resource represents the agreement state for a given account and terms of
 ///  service kind.
@@ -42,7 +42,7 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   factory TermsOfServiceAgreementState({
     $core.String? name,
     $core.String? regionCode,
-    $4879.TermsOfServiceKind? termsOfServiceKind,
+    $4881.TermsOfServiceKind? termsOfServiceKind,
     Accepted? accepted,
     Required? required,
   }) {
@@ -71,7 +71,7 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TermsOfServiceAgreementState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
-    ..e<$4879.TermsOfServiceKind>(3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE, defaultOrMaker: $4879.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED, valueOf: $4879.TermsOfServiceKind.valueOf, enumValues: $4879.TermsOfServiceKind.values)
+    ..e<$4881.TermsOfServiceKind>(3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE, defaultOrMaker: $4881.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED, valueOf: $4881.TermsOfServiceKind.valueOf, enumValues: $4881.TermsOfServiceKind.values)
     ..aOM<Accepted>(4, _omitFieldNames ? '' : 'accepted', subBuilder: Accepted.create)
     ..aOM<Required>(5, _omitFieldNames ? '' : 'required', subBuilder: Required.create)
     ..hasRequiredFields = false
@@ -122,9 +122,9 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
 
   /// Terms of Service kind associated with the particular version.
   @$pb.TagNumber(3)
-  $4879.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
+  $4881.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
   @$pb.TagNumber(3)
-  set termsOfServiceKind($4879.TermsOfServiceKind v) { setField(3, v); }
+  set termsOfServiceKind($4881.TermsOfServiceKind v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTermsOfServiceKind() => $_has(2);
   @$pb.TagNumber(3)
@@ -161,7 +161,7 @@ class Accepted extends $pb.GeneratedMessage {
   factory Accepted({
     $core.String? termsOfService,
     $core.String? acceptedBy,
-    $1800.Date? validUntil,
+    $1801.Date? validUntil,
   }) {
     final $result = create();
     if (termsOfService != null) {
@@ -182,7 +182,7 @@ class Accepted extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Accepted', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'termsOfService')
     ..aOS(2, _omitFieldNames ? '' : 'acceptedBy')
-    ..aOM<$1800.Date>(3, _omitFieldNames ? '' : 'validUntil', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(3, _omitFieldNames ? '' : 'validUntil', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -236,15 +236,15 @@ class Accepted extends $pb.GeneratedMessage {
   /// [TermsOfService](google.shopping.merchant.accounts.v1main.TermsOfService)
   /// is found in the [Required](Required) message.
   @$pb.TagNumber(3)
-  $1800.Date get validUntil => $_getN(2);
+  $1801.Date get validUntil => $_getN(2);
   @$pb.TagNumber(3)
-  set validUntil($1800.Date v) { setField(3, v); }
+  set validUntil($1801.Date v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValidUntil() => $_has(2);
   @$pb.TagNumber(3)
   void clearValidUntil() => clearField(3);
   @$pb.TagNumber(3)
-  $1800.Date ensureValidUntil() => $_ensure(2);
+  $1801.Date ensureValidUntil() => $_ensure(2);
 }
 
 /// Describes the terms of service which are required to be accepted.

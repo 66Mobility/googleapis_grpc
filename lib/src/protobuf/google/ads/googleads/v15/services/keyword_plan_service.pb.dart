@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/keyword_plan.pb.dart' as $2402;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/keyword_plan.pb.dart' as $2403;
 
 /// Request message for
 /// [KeywordPlanService.MutateKeywordPlans][google.ads.googleads.v15.services.KeywordPlanService.MutateKeywordPlans].
@@ -123,10 +123,10 @@ enum KeywordPlanOperation_Operation {
 /// A single operation (create, update, remove) on a keyword plan.
 class KeywordPlanOperation extends $pb.GeneratedMessage {
   factory KeywordPlanOperation({
-    $2402.KeywordPlan? create_1,
-    $2402.KeywordPlan? update,
+    $2403.KeywordPlan? create_1,
+    $2403.KeywordPlan? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -155,10 +155,10 @@ class KeywordPlanOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$2402.KeywordPlan>(1, _omitFieldNames ? '' : 'create', subBuilder: $2402.KeywordPlan.create)
-    ..aOM<$2402.KeywordPlan>(2, _omitFieldNames ? '' : 'update', subBuilder: $2402.KeywordPlan.create)
+    ..aOM<$2403.KeywordPlan>(1, _omitFieldNames ? '' : 'create', subBuilder: $2403.KeywordPlan.create)
+    ..aOM<$2403.KeywordPlan>(2, _omitFieldNames ? '' : 'update', subBuilder: $2403.KeywordPlan.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -188,28 +188,28 @@ class KeywordPlanOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new keyword plan.
   @$pb.TagNumber(1)
-  $2402.KeywordPlan get create_1 => $_getN(0);
+  $2403.KeywordPlan get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2402.KeywordPlan v) { setField(1, v); }
+  set create_1($2403.KeywordPlan v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2402.KeywordPlan ensureCreate_1() => $_ensure(0);
+  $2403.KeywordPlan ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The keyword plan is expected to have a valid resource
   /// name.
   @$pb.TagNumber(2)
-  $2402.KeywordPlan get update => $_getN(1);
+  $2403.KeywordPlan get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($2402.KeywordPlan v) { setField(2, v); }
+  set update($2403.KeywordPlan v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $2402.KeywordPlan ensureUpdate() => $_ensure(1);
+  $2403.KeywordPlan ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed keyword plan is
   ///  expected in this format:
@@ -227,22 +227,22 @@ class KeywordPlanOperation extends $pb.GeneratedMessage {
   /// The FieldMask that determines which resource fields are modified in an
   /// update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for a keyword plan mutate.
 class MutateKeywordPlansResponse extends $pb.GeneratedMessage {
   factory MutateKeywordPlansResponse({
     $core.Iterable<MutateKeywordPlansResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -259,7 +259,7 @@ class MutateKeywordPlansResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateKeywordPlansResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<MutateKeywordPlansResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateKeywordPlansResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -293,15 +293,15 @@ class MutateKeywordPlansResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the keyword plan mutate.

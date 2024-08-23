@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'user.pb.dart' as $4220;
+import 'user.pb.dart' as $4221;
 
 /// A reaction to a message.
 class Reaction extends $pb.GeneratedMessage {
   factory Reaction({
     $core.String? name,
-    $4220.User? user,
+    $4221.User? user,
     Emoji? emoji,
   }) {
     final $result = create();
@@ -40,7 +40,7 @@ class Reaction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Reaction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4220.User>(2, _omitFieldNames ? '' : 'user', subBuilder: $4220.User.create)
+    ..aOM<$4221.User>(2, _omitFieldNames ? '' : 'user', subBuilder: $4221.User.create)
     ..aOM<Emoji>(3, _omitFieldNames ? '' : 'emoji', subBuilder: Emoji.create)
     ..hasRequiredFields = false
   ;
@@ -80,15 +80,15 @@ class Reaction extends $pb.GeneratedMessage {
 
   /// Output only. The user who created the reaction.
   @$pb.TagNumber(2)
-  $4220.User get user => $_getN(1);
+  $4221.User get user => $_getN(1);
   @$pb.TagNumber(2)
-  set user($4220.User v) { setField(2, v); }
+  set user($4221.User v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUser() => $_has(1);
   @$pb.TagNumber(2)
   void clearUser() => clearField(2);
   @$pb.TagNumber(2)
-  $4220.User ensureUser() => $_ensure(1);
+  $4221.User ensureUser() => $_ensure(1);
 
   /// The emoji used in the reaction.
   @$pb.TagNumber(3)

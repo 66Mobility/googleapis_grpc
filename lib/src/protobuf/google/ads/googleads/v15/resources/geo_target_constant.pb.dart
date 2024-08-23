@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/geo_target_constant_status.pbenum.dart' as $2302;
+import '../enums/geo_target_constant_status.pbenum.dart' as $2303;
 
 /// A geo target constant.
 class GeoTargetConstant extends $pb.GeneratedMessage {
   factory GeoTargetConstant({
     $core.String? resourceName,
-    $2302.GeoTargetConstantStatusEnum_GeoTargetConstantStatus? status,
+    $2303.GeoTargetConstantStatusEnum_GeoTargetConstantStatus? status,
     $core.String? parentGeoTarget,
     $fixnum.Int64? id,
     $core.String? name,
@@ -61,7 +61,7 @@ class GeoTargetConstant extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GeoTargetConstant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2302.GeoTargetConstantStatusEnum_GeoTargetConstantStatus>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2302.GeoTargetConstantStatusEnum_GeoTargetConstantStatus.UNSPECIFIED, valueOf: $2302.GeoTargetConstantStatusEnum_GeoTargetConstantStatus.valueOf, enumValues: $2302.GeoTargetConstantStatusEnum_GeoTargetConstantStatus.values)
+    ..e<$2303.GeoTargetConstantStatusEnum_GeoTargetConstantStatus>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2303.GeoTargetConstantStatusEnum_GeoTargetConstantStatus.UNSPECIFIED, valueOf: $2303.GeoTargetConstantStatusEnum_GeoTargetConstantStatus.valueOf, enumValues: $2303.GeoTargetConstantStatusEnum_GeoTargetConstantStatus.values)
     ..aOS(9, _omitFieldNames ? '' : 'parentGeoTarget')
     ..aInt64(10, _omitFieldNames ? '' : 'id')
     ..aOS(11, _omitFieldNames ? '' : 'name')
@@ -107,9 +107,9 @@ class GeoTargetConstant extends $pb.GeneratedMessage {
 
   /// Output only. Geo target constant status.
   @$pb.TagNumber(7)
-  $2302.GeoTargetConstantStatusEnum_GeoTargetConstantStatus get status => $_getN(1);
+  $2303.GeoTargetConstantStatusEnum_GeoTargetConstantStatus get status => $_getN(1);
   @$pb.TagNumber(7)
-  set status($2302.GeoTargetConstantStatusEnum_GeoTargetConstantStatus v) { setField(7, v); }
+  set status($2303.GeoTargetConstantStatusEnum_GeoTargetConstantStatus v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(7)

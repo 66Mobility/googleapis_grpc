@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/bidding.pb.dart' as $2869;
-import '../enums/bidding_strategy_status.pbenum.dart' as $2870;
-import '../enums/bidding_strategy_type.pbenum.dart' as $2800;
+import '../common/bidding.pb.dart' as $2870;
+import '../enums/bidding_strategy_status.pbenum.dart' as $2871;
+import '../enums/bidding_strategy_type.pbenum.dart' as $2801;
 
 enum BiddingStrategy_Scheme {
   enhancedCpc, 
@@ -33,22 +33,22 @@ enum BiddingStrategy_Scheme {
 class BiddingStrategy extends $pb.GeneratedMessage {
   factory BiddingStrategy({
     $core.String? resourceName,
-    $2800.BiddingStrategyTypeEnum_BiddingStrategyType? type,
-    $2869.EnhancedCpc? enhancedCpc,
-    $2869.TargetCpa? targetCpa,
-    $2869.TargetRoas? targetRoas,
-    $2869.TargetSpend? targetSpend,
-    $2870.BiddingStrategyStatusEnum_BiddingStrategyStatus? status,
+    $2801.BiddingStrategyTypeEnum_BiddingStrategyType? type,
+    $2870.EnhancedCpc? enhancedCpc,
+    $2870.TargetCpa? targetCpa,
+    $2870.TargetRoas? targetRoas,
+    $2870.TargetSpend? targetSpend,
+    $2871.BiddingStrategyStatusEnum_BiddingStrategyStatus? status,
     $fixnum.Int64? id,
     $core.String? name,
     $fixnum.Int64? campaignCount,
     $fixnum.Int64? nonRemovedCampaignCount,
     $core.String? effectiveCurrencyCode,
-    $2869.MaximizeConversionValue? maximizeConversionValue,
-    $2869.MaximizeConversions? maximizeConversions,
+    $2870.MaximizeConversionValue? maximizeConversionValue,
+    $2870.MaximizeConversions? maximizeConversions,
     $core.String? currencyCode,
     $fixnum.Int64? alignedCampaignBudgetId,
-    $2869.TargetImpressionShare? targetImpressionShare,
+    $2870.TargetImpressionShare? targetImpressionShare,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -121,22 +121,22 @@ class BiddingStrategy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BiddingStrategy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..oo(0, [7, 9, 11, 12, 21, 22, 48])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2800.BiddingStrategyTypeEnum_BiddingStrategyType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2800.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $2800.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $2800.BiddingStrategyTypeEnum_BiddingStrategyType.values)
-    ..aOM<$2869.EnhancedCpc>(7, _omitFieldNames ? '' : 'enhancedCpc', subBuilder: $2869.EnhancedCpc.create)
-    ..aOM<$2869.TargetCpa>(9, _omitFieldNames ? '' : 'targetCpa', subBuilder: $2869.TargetCpa.create)
-    ..aOM<$2869.TargetRoas>(11, _omitFieldNames ? '' : 'targetRoas', subBuilder: $2869.TargetRoas.create)
-    ..aOM<$2869.TargetSpend>(12, _omitFieldNames ? '' : 'targetSpend', subBuilder: $2869.TargetSpend.create)
-    ..e<$2870.BiddingStrategyStatusEnum_BiddingStrategyStatus>(15, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2870.BiddingStrategyStatusEnum_BiddingStrategyStatus.UNSPECIFIED, valueOf: $2870.BiddingStrategyStatusEnum_BiddingStrategyStatus.valueOf, enumValues: $2870.BiddingStrategyStatusEnum_BiddingStrategyStatus.values)
+    ..e<$2801.BiddingStrategyTypeEnum_BiddingStrategyType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2801.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $2801.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $2801.BiddingStrategyTypeEnum_BiddingStrategyType.values)
+    ..aOM<$2870.EnhancedCpc>(7, _omitFieldNames ? '' : 'enhancedCpc', subBuilder: $2870.EnhancedCpc.create)
+    ..aOM<$2870.TargetCpa>(9, _omitFieldNames ? '' : 'targetCpa', subBuilder: $2870.TargetCpa.create)
+    ..aOM<$2870.TargetRoas>(11, _omitFieldNames ? '' : 'targetRoas', subBuilder: $2870.TargetRoas.create)
+    ..aOM<$2870.TargetSpend>(12, _omitFieldNames ? '' : 'targetSpend', subBuilder: $2870.TargetSpend.create)
+    ..e<$2871.BiddingStrategyStatusEnum_BiddingStrategyStatus>(15, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2871.BiddingStrategyStatusEnum_BiddingStrategyStatus.UNSPECIFIED, valueOf: $2871.BiddingStrategyStatusEnum_BiddingStrategyStatus.valueOf, enumValues: $2871.BiddingStrategyStatusEnum_BiddingStrategyStatus.values)
     ..aInt64(16, _omitFieldNames ? '' : 'id')
     ..aOS(17, _omitFieldNames ? '' : 'name')
     ..aInt64(18, _omitFieldNames ? '' : 'campaignCount')
     ..aInt64(19, _omitFieldNames ? '' : 'nonRemovedCampaignCount')
     ..aOS(20, _omitFieldNames ? '' : 'effectiveCurrencyCode')
-    ..aOM<$2869.MaximizeConversionValue>(21, _omitFieldNames ? '' : 'maximizeConversionValue', subBuilder: $2869.MaximizeConversionValue.create)
-    ..aOM<$2869.MaximizeConversions>(22, _omitFieldNames ? '' : 'maximizeConversions', subBuilder: $2869.MaximizeConversions.create)
+    ..aOM<$2870.MaximizeConversionValue>(21, _omitFieldNames ? '' : 'maximizeConversionValue', subBuilder: $2870.MaximizeConversionValue.create)
+    ..aOM<$2870.MaximizeConversions>(22, _omitFieldNames ? '' : 'maximizeConversions', subBuilder: $2870.MaximizeConversions.create)
     ..aOS(23, _omitFieldNames ? '' : 'currencyCode')
     ..aInt64(25, _omitFieldNames ? '' : 'alignedCampaignBudgetId')
-    ..aOM<$2869.TargetImpressionShare>(48, _omitFieldNames ? '' : 'targetImpressionShare', subBuilder: $2869.TargetImpressionShare.create)
+    ..aOM<$2870.TargetImpressionShare>(48, _omitFieldNames ? '' : 'targetImpressionShare', subBuilder: $2870.TargetImpressionShare.create)
     ..hasRequiredFields = false
   ;
 
@@ -182,9 +182,9 @@ class BiddingStrategy extends $pb.GeneratedMessage {
   ///
   ///  This field is read-only.
   @$pb.TagNumber(5)
-  $2800.BiddingStrategyTypeEnum_BiddingStrategyType get type => $_getN(1);
+  $2801.BiddingStrategyTypeEnum_BiddingStrategyType get type => $_getN(1);
   @$pb.TagNumber(5)
-  set type($2800.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(5, v); }
+  set type($2801.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(5)
@@ -194,62 +194,62 @@ class BiddingStrategy extends $pb.GeneratedMessage {
   /// lead to a conversion and lowers them for clicks where they seem less
   /// likely.
   @$pb.TagNumber(7)
-  $2869.EnhancedCpc get enhancedCpc => $_getN(2);
+  $2870.EnhancedCpc get enhancedCpc => $_getN(2);
   @$pb.TagNumber(7)
-  set enhancedCpc($2869.EnhancedCpc v) { setField(7, v); }
+  set enhancedCpc($2870.EnhancedCpc v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEnhancedCpc() => $_has(2);
   @$pb.TagNumber(7)
   void clearEnhancedCpc() => clearField(7);
   @$pb.TagNumber(7)
-  $2869.EnhancedCpc ensureEnhancedCpc() => $_ensure(2);
+  $2870.EnhancedCpc ensureEnhancedCpc() => $_ensure(2);
 
   /// A bidding strategy that sets bids to help get as many conversions as
   /// possible at the target cost-per-acquisition (CPA) you set.
   @$pb.TagNumber(9)
-  $2869.TargetCpa get targetCpa => $_getN(3);
+  $2870.TargetCpa get targetCpa => $_getN(3);
   @$pb.TagNumber(9)
-  set targetCpa($2869.TargetCpa v) { setField(9, v); }
+  set targetCpa($2870.TargetCpa v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTargetCpa() => $_has(3);
   @$pb.TagNumber(9)
   void clearTargetCpa() => clearField(9);
   @$pb.TagNumber(9)
-  $2869.TargetCpa ensureTargetCpa() => $_ensure(3);
+  $2870.TargetCpa ensureTargetCpa() => $_ensure(3);
 
   /// A bidding strategy that helps you maximize revenue while averaging a
   /// specific target Return On Ad Spend (ROAS).
   @$pb.TagNumber(11)
-  $2869.TargetRoas get targetRoas => $_getN(4);
+  $2870.TargetRoas get targetRoas => $_getN(4);
   @$pb.TagNumber(11)
-  set targetRoas($2869.TargetRoas v) { setField(11, v); }
+  set targetRoas($2870.TargetRoas v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTargetRoas() => $_has(4);
   @$pb.TagNumber(11)
   void clearTargetRoas() => clearField(11);
   @$pb.TagNumber(11)
-  $2869.TargetRoas ensureTargetRoas() => $_ensure(4);
+  $2870.TargetRoas ensureTargetRoas() => $_ensure(4);
 
   /// A bid strategy that sets your bids to help get as many clicks as
   /// possible within your budget.
   @$pb.TagNumber(12)
-  $2869.TargetSpend get targetSpend => $_getN(5);
+  $2870.TargetSpend get targetSpend => $_getN(5);
   @$pb.TagNumber(12)
-  set targetSpend($2869.TargetSpend v) { setField(12, v); }
+  set targetSpend($2870.TargetSpend v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasTargetSpend() => $_has(5);
   @$pb.TagNumber(12)
   void clearTargetSpend() => clearField(12);
   @$pb.TagNumber(12)
-  $2869.TargetSpend ensureTargetSpend() => $_ensure(5);
+  $2870.TargetSpend ensureTargetSpend() => $_ensure(5);
 
   ///  Output only. The status of the bidding strategy.
   ///
   ///  This field is read-only.
   @$pb.TagNumber(15)
-  $2870.BiddingStrategyStatusEnum_BiddingStrategyStatus get status => $_getN(6);
+  $2871.BiddingStrategyStatusEnum_BiddingStrategyStatus get status => $_getN(6);
   @$pb.TagNumber(15)
-  set status($2870.BiddingStrategyStatusEnum_BiddingStrategyStatus v) { setField(15, v); }
+  set status($2871.BiddingStrategyStatusEnum_BiddingStrategyStatus v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasStatus() => $_has(6);
   @$pb.TagNumber(15)
@@ -326,28 +326,28 @@ class BiddingStrategy extends $pb.GeneratedMessage {
   /// An automated bidding strategy to help get the most conversion value for
   /// your campaigns while spending your budget.
   @$pb.TagNumber(21)
-  $2869.MaximizeConversionValue get maximizeConversionValue => $_getN(12);
+  $2870.MaximizeConversionValue get maximizeConversionValue => $_getN(12);
   @$pb.TagNumber(21)
-  set maximizeConversionValue($2869.MaximizeConversionValue v) { setField(21, v); }
+  set maximizeConversionValue($2870.MaximizeConversionValue v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasMaximizeConversionValue() => $_has(12);
   @$pb.TagNumber(21)
   void clearMaximizeConversionValue() => clearField(21);
   @$pb.TagNumber(21)
-  $2869.MaximizeConversionValue ensureMaximizeConversionValue() => $_ensure(12);
+  $2870.MaximizeConversionValue ensureMaximizeConversionValue() => $_ensure(12);
 
   /// An automated bidding strategy to help get the most conversions for your
   /// campaigns while spending your budget.
   @$pb.TagNumber(22)
-  $2869.MaximizeConversions get maximizeConversions => $_getN(13);
+  $2870.MaximizeConversions get maximizeConversions => $_getN(13);
   @$pb.TagNumber(22)
-  set maximizeConversions($2869.MaximizeConversions v) { setField(22, v); }
+  set maximizeConversions($2870.MaximizeConversions v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasMaximizeConversions() => $_has(13);
   @$pb.TagNumber(22)
   void clearMaximizeConversions() => clearField(22);
   @$pb.TagNumber(22)
-  $2869.MaximizeConversions ensureMaximizeConversions() => $_ensure(13);
+  $2870.MaximizeConversions ensureMaximizeConversions() => $_ensure(13);
 
   ///  Immutable. The currency used by the bidding strategy (ISO 4217 three-letter
   ///  code).
@@ -383,15 +383,15 @@ class BiddingStrategy extends $pb.GeneratedMessage {
   /// A bidding strategy that automatically optimizes towards a chosen
   /// percentage of impressions.
   @$pb.TagNumber(48)
-  $2869.TargetImpressionShare get targetImpressionShare => $_getN(16);
+  $2870.TargetImpressionShare get targetImpressionShare => $_getN(16);
   @$pb.TagNumber(48)
-  set targetImpressionShare($2869.TargetImpressionShare v) { setField(48, v); }
+  set targetImpressionShare($2870.TargetImpressionShare v) { setField(48, v); }
   @$pb.TagNumber(48)
   $core.bool hasTargetImpressionShare() => $_has(16);
   @$pb.TagNumber(48)
   void clearTargetImpressionShare() => clearField(48);
   @$pb.TagNumber(48)
-  $2869.TargetImpressionShare ensureTargetImpressionShare() => $_ensure(16);
+  $2870.TargetImpressionShare ensureTargetImpressionShare() => $_ensure(16);
 }
 
 

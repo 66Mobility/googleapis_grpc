@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/batch_job_status.pbenum.dart' as $2866;
+import '../enums/batch_job_status.pbenum.dart' as $2867;
 
 /// Additional information about the batch job. This message is also used as
 /// metadata returned in batch job Long Running Operations.
@@ -173,7 +173,7 @@ class BatchJob extends $pb.GeneratedMessage {
   factory BatchJob({
     $core.String? resourceName,
     BatchJob_BatchJobMetadata? metadata,
-    $2866.BatchJobStatusEnum_BatchJobStatus? status,
+    $2867.BatchJobStatusEnum_BatchJobStatus? status,
     $fixnum.Int64? id,
     $core.String? nextAddSequenceToken,
     $core.String? longRunningOperation,
@@ -206,7 +206,7 @@ class BatchJob extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOM<BatchJob_BatchJobMetadata>(4, _omitFieldNames ? '' : 'metadata', subBuilder: BatchJob_BatchJobMetadata.create)
-    ..e<$2866.BatchJobStatusEnum_BatchJobStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2866.BatchJobStatusEnum_BatchJobStatus.UNSPECIFIED, valueOf: $2866.BatchJobStatusEnum_BatchJobStatus.valueOf, enumValues: $2866.BatchJobStatusEnum_BatchJobStatus.values)
+    ..e<$2867.BatchJobStatusEnum_BatchJobStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2867.BatchJobStatusEnum_BatchJobStatus.UNSPECIFIED, valueOf: $2867.BatchJobStatusEnum_BatchJobStatus.valueOf, enumValues: $2867.BatchJobStatusEnum_BatchJobStatus.values)
     ..aInt64(7, _omitFieldNames ? '' : 'id')
     ..aOS(8, _omitFieldNames ? '' : 'nextAddSequenceToken')
     ..aOS(9, _omitFieldNames ? '' : 'longRunningOperation')
@@ -261,9 +261,9 @@ class BatchJob extends $pb.GeneratedMessage {
 
   /// Output only. Status of this batch job.
   @$pb.TagNumber(5)
-  $2866.BatchJobStatusEnum_BatchJobStatus get status => $_getN(2);
+  $2867.BatchJobStatusEnum_BatchJobStatus get status => $_getN(2);
   @$pb.TagNumber(5)
-  set status($2866.BatchJobStatusEnum_BatchJobStatus v) { setField(5, v); }
+  set status($2867.BatchJobStatusEnum_BatchJobStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(5)

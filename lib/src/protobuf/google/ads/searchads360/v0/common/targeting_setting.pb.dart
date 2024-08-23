@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/targeting_dimension.pbenum.dart' as $3998;
+import '../enums/targeting_dimension.pbenum.dart' as $3999;
 
 /// Settings for the targeting-related features, at the campaign and ad group
 /// levels. For more details about the targeting setting, visit
@@ -67,7 +67,7 @@ class TargetingSetting extends $pb.GeneratedMessage {
 /// The list of per-targeting-dimension targeting settings.
 class TargetRestriction extends $pb.GeneratedMessage {
   factory TargetRestriction({
-    $3998.TargetingDimensionEnum_TargetingDimension? targetingDimension,
+    $3999.TargetingDimensionEnum_TargetingDimension? targetingDimension,
     $core.bool? bidOnly,
   }) {
     final $result = create();
@@ -84,7 +84,7 @@ class TargetRestriction extends $pb.GeneratedMessage {
   factory TargetRestriction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetRestriction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3998.TargetingDimensionEnum_TargetingDimension>(1, _omitFieldNames ? '' : 'targetingDimension', $pb.PbFieldType.OE, defaultOrMaker: $3998.TargetingDimensionEnum_TargetingDimension.UNSPECIFIED, valueOf: $3998.TargetingDimensionEnum_TargetingDimension.valueOf, enumValues: $3998.TargetingDimensionEnum_TargetingDimension.values)
+    ..e<$3999.TargetingDimensionEnum_TargetingDimension>(1, _omitFieldNames ? '' : 'targetingDimension', $pb.PbFieldType.OE, defaultOrMaker: $3999.TargetingDimensionEnum_TargetingDimension.UNSPECIFIED, valueOf: $3999.TargetingDimensionEnum_TargetingDimension.valueOf, enumValues: $3999.TargetingDimensionEnum_TargetingDimension.values)
     ..aOB(3, _omitFieldNames ? '' : 'bidOnly')
     ..hasRequiredFields = false
   ;
@@ -112,9 +112,9 @@ class TargetRestriction extends $pb.GeneratedMessage {
 
   /// The targeting dimension that these settings apply to.
   @$pb.TagNumber(1)
-  $3998.TargetingDimensionEnum_TargetingDimension get targetingDimension => $_getN(0);
+  $3999.TargetingDimensionEnum_TargetingDimension get targetingDimension => $_getN(0);
   @$pb.TagNumber(1)
-  set targetingDimension($3998.TargetingDimensionEnum_TargetingDimension v) { setField(1, v); }
+  set targetingDimension($3999.TargetingDimensionEnum_TargetingDimension v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTargetingDimension() => $_has(0);
   @$pb.TagNumber(1)

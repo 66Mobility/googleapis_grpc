@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'entity_display.pb.dart' as $1755;
+import 'entity_display.pb.dart' as $1756;
 
 /// Represents an entity object that contains the regular expression that is
 /// used for comparison.
 class RegularExpressionType_Entity extends $pb.GeneratedMessage {
   factory RegularExpressionType_Entity({
-    $1755.EntityDisplay? display,
+    $1756.EntityDisplay? display,
     $core.Iterable<$core.String>? regularExpressions,
   }) {
     final $result = create();
@@ -36,7 +36,7 @@ class RegularExpressionType_Entity extends $pb.GeneratedMessage {
   factory RegularExpressionType_Entity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegularExpressionType.Entity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
-    ..aOM<$1755.EntityDisplay>(1, _omitFieldNames ? '' : 'display', subBuilder: $1755.EntityDisplay.create)
+    ..aOM<$1756.EntityDisplay>(1, _omitFieldNames ? '' : 'display', subBuilder: $1756.EntityDisplay.create)
     ..pPS(2, _omitFieldNames ? '' : 'regularExpressions')
     ..hasRequiredFields = false
   ;
@@ -65,15 +65,15 @@ class RegularExpressionType_Entity extends $pb.GeneratedMessage {
   /// Optional. Elements that will be displayed on the canvas once an entity is
   /// extracted from a query. Only relevant for canvas enabled apps.
   @$pb.TagNumber(1)
-  $1755.EntityDisplay get display => $_getN(0);
+  $1756.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(1)
-  set display($1755.EntityDisplay v) { setField(1, v); }
+  set display($1756.EntityDisplay v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDisplay() => $_has(0);
   @$pb.TagNumber(1)
   void clearDisplay() => clearField(1);
   @$pb.TagNumber(1)
-  $1755.EntityDisplay ensureDisplay() => $_ensure(0);
+  $1756.EntityDisplay ensureDisplay() => $_ensure(0);
 
   /// Required. Uses RE2 regex syntax (See
   /// https://github.com/google/re2/wiki/Syntax for more details)

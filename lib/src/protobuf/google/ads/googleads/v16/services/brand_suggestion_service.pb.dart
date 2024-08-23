@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/brand_state.pbenum.dart' as $2568;
+import '../enums/brand_state.pbenum.dart' as $2569;
 
 /// Request message for
 /// [BrandSuggestionService.SuggestBrands][google.ads.googleads.v16.services.BrandSuggestionService.SuggestBrands].
@@ -147,7 +147,7 @@ class BrandSuggestion extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? name,
     $core.Iterable<$core.String>? urls,
-    $2568.BrandStateEnum_BrandState? state,
+    $2569.BrandStateEnum_BrandState? state,
   }) {
     final $result = create();
     if (id != null) {
@@ -172,7 +172,7 @@ class BrandSuggestion extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..pPS(3, _omitFieldNames ? '' : 'urls')
-    ..e<$2568.BrandStateEnum_BrandState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $2568.BrandStateEnum_BrandState.UNSPECIFIED, valueOf: $2568.BrandStateEnum_BrandState.valueOf, enumValues: $2568.BrandStateEnum_BrandState.values)
+    ..e<$2569.BrandStateEnum_BrandState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $2569.BrandStateEnum_BrandState.UNSPECIFIED, valueOf: $2569.BrandStateEnum_BrandState.valueOf, enumValues: $2569.BrandStateEnum_BrandState.values)
     ..hasRequiredFields = false
   ;
 
@@ -223,9 +223,9 @@ class BrandSuggestion extends $pb.GeneratedMessage {
 
   /// Current state of the brand.
   @$pb.TagNumber(4)
-  $2568.BrandStateEnum_BrandState get state => $_getN(3);
+  $2569.BrandStateEnum_BrandState get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state($2568.BrandStateEnum_BrandState v) { setField(4, v); }
+  set state($2569.BrandStateEnum_BrandState v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)

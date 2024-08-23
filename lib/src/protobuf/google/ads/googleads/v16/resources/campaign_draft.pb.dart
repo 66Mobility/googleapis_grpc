@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/campaign_draft_status.pbenum.dart' as $2904;
+import '../enums/campaign_draft_status.pbenum.dart' as $2905;
 
 /// A campaign draft.
 class CampaignDraft extends $pb.GeneratedMessage {
   factory CampaignDraft({
     $core.String? resourceName,
-    $2904.CampaignDraftStatusEnum_CampaignDraftStatus? status,
+    $2905.CampaignDraftStatusEnum_CampaignDraftStatus? status,
     $fixnum.Int64? draftId,
     $core.String? baseCampaign,
     $core.String? name,
@@ -61,7 +61,7 @@ class CampaignDraft extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignDraft', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2904.CampaignDraftStatusEnum_CampaignDraftStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2904.CampaignDraftStatusEnum_CampaignDraftStatus.UNSPECIFIED, valueOf: $2904.CampaignDraftStatusEnum_CampaignDraftStatus.valueOf, enumValues: $2904.CampaignDraftStatusEnum_CampaignDraftStatus.values)
+    ..e<$2905.CampaignDraftStatusEnum_CampaignDraftStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2905.CampaignDraftStatusEnum_CampaignDraftStatus.UNSPECIFIED, valueOf: $2905.CampaignDraftStatusEnum_CampaignDraftStatus.valueOf, enumValues: $2905.CampaignDraftStatusEnum_CampaignDraftStatus.values)
     ..aInt64(9, _omitFieldNames ? '' : 'draftId')
     ..aOS(10, _omitFieldNames ? '' : 'baseCampaign')
     ..aOS(11, _omitFieldNames ? '' : 'name')
@@ -109,9 +109,9 @@ class CampaignDraft extends $pb.GeneratedMessage {
   ///
   ///  When a new campaign draft is added, the status defaults to PROPOSED.
   @$pb.TagNumber(6)
-  $2904.CampaignDraftStatusEnum_CampaignDraftStatus get status => $_getN(1);
+  $2905.CampaignDraftStatusEnum_CampaignDraftStatus get status => $_getN(1);
   @$pb.TagNumber(6)
-  set status($2904.CampaignDraftStatusEnum_CampaignDraftStatus v) { setField(6, v); }
+  set status($2905.CampaignDraftStatusEnum_CampaignDraftStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(6)

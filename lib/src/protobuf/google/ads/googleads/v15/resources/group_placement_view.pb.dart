@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/placement_type.pbenum.dart' as $2265;
+import '../enums/placement_type.pbenum.dart' as $2266;
 
 /// A group placement view.
 class GroupPlacementView extends $pb.GeneratedMessage {
   factory GroupPlacementView({
     $core.String? resourceName,
-    $2265.PlacementTypeEnum_PlacementType? placementType,
+    $2266.PlacementTypeEnum_PlacementType? placementType,
     $core.String? placement,
     $core.String? displayName,
     $core.String? targetUrl,
@@ -48,7 +48,7 @@ class GroupPlacementView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GroupPlacementView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2265.PlacementTypeEnum_PlacementType>(5, _omitFieldNames ? '' : 'placementType', $pb.PbFieldType.OE, defaultOrMaker: $2265.PlacementTypeEnum_PlacementType.UNSPECIFIED, valueOf: $2265.PlacementTypeEnum_PlacementType.valueOf, enumValues: $2265.PlacementTypeEnum_PlacementType.values)
+    ..e<$2266.PlacementTypeEnum_PlacementType>(5, _omitFieldNames ? '' : 'placementType', $pb.PbFieldType.OE, defaultOrMaker: $2266.PlacementTypeEnum_PlacementType.UNSPECIFIED, valueOf: $2266.PlacementTypeEnum_PlacementType.valueOf, enumValues: $2266.PlacementTypeEnum_PlacementType.values)
     ..aOS(6, _omitFieldNames ? '' : 'placement')
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
     ..aOS(8, _omitFieldNames ? '' : 'targetUrl')
@@ -92,9 +92,9 @@ class GroupPlacementView extends $pb.GeneratedMessage {
   /// Output only. Type of the placement, for example, Website, YouTube Channel,
   /// Mobile Application.
   @$pb.TagNumber(5)
-  $2265.PlacementTypeEnum_PlacementType get placementType => $_getN(1);
+  $2266.PlacementTypeEnum_PlacementType get placementType => $_getN(1);
   @$pb.TagNumber(5)
-  set placementType($2265.PlacementTypeEnum_PlacementType v) { setField(5, v); }
+  set placementType($2266.PlacementTypeEnum_PlacementType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPlacementType() => $_has(1);
   @$pb.TagNumber(5)

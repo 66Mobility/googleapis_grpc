@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import 'advanced_settings.pb.dart' as $4475;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import 'advanced_settings.pb.dart' as $4477;
 import 'agent.pbenum.dart';
-import 'audio_config.pb.dart' as $4481;
+import 'audio_config.pb.dart' as $4483;
 import 'flow.pb.dart' as $847;
 import 'generative_settings.pb.dart' as $849;
 
@@ -361,7 +361,7 @@ class Agent_AnswerFeedbackSettings extends $pb.GeneratedMessage {
 /// Settings for end user personalization.
 class Agent_PersonalizationSettings extends $pb.GeneratedMessage {
   factory Agent_PersonalizationSettings({
-    $1734.Struct? defaultEndUserMetadata,
+    $1735.Struct? defaultEndUserMetadata,
   }) {
     final $result = create();
     if (defaultEndUserMetadata != null) {
@@ -374,7 +374,7 @@ class Agent_PersonalizationSettings extends $pb.GeneratedMessage {
   factory Agent_PersonalizationSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Agent.PersonalizationSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'defaultEndUserMetadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'defaultEndUserMetadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -408,15 +408,15 @@ class Agent_PersonalizationSettings extends $pb.GeneratedMessage {
   /// [DetectIntentRequest.query_params][google.cloud.dialogflow.cx.v3.DetectIntentRequest.query_params]
   /// during query processing.
   @$pb.TagNumber(1)
-  $1734.Struct get defaultEndUserMetadata => $_getN(0);
+  $1735.Struct get defaultEndUserMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set defaultEndUserMetadata($1734.Struct v) { setField(1, v); }
+  set defaultEndUserMetadata($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDefaultEndUserMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearDefaultEndUserMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureDefaultEndUserMetadata() => $_ensure(0);
+  $1735.Struct ensureDefaultEndUserMetadata() => $_ensure(0);
 }
 
 ///  Agents are best described as Natural Language Understanding (NLU) modules
@@ -447,10 +447,10 @@ class Agent extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
     $core.bool? enableStackdriverLogging,
     $core.bool? enableSpellCorrection,
-    $4475.AdvancedSettings? advancedSettings,
+    $4477.AdvancedSettings? advancedSettings,
     $core.bool? locked,
     Agent_GitIntegrationSettings? gitIntegrationSettings,
-    $4481.TextToSpeechSettings? textToSpeechSettings,
+    $4483.TextToSpeechSettings? textToSpeechSettings,
     Agent_GenAppBuilderSettings? genAppBuilderSettings,
     Agent_AnswerFeedbackSettings? answerFeedbackSettings,
     $core.bool? enableMultiLanguageTraining,
@@ -537,10 +537,10 @@ class Agent extends $pb.GeneratedMessage {
     ..aOS(17, _omitFieldNames ? '' : 'securitySettings')
     ..aOB(18, _omitFieldNames ? '' : 'enableStackdriverLogging')
     ..aOB(20, _omitFieldNames ? '' : 'enableSpellCorrection')
-    ..aOM<$4475.AdvancedSettings>(22, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4475.AdvancedSettings.create)
+    ..aOM<$4477.AdvancedSettings>(22, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4477.AdvancedSettings.create)
     ..aOB(27, _omitFieldNames ? '' : 'locked')
     ..aOM<Agent_GitIntegrationSettings>(30, _omitFieldNames ? '' : 'gitIntegrationSettings', subBuilder: Agent_GitIntegrationSettings.create)
-    ..aOM<$4481.TextToSpeechSettings>(31, _omitFieldNames ? '' : 'textToSpeechSettings', subBuilder: $4481.TextToSpeechSettings.create)
+    ..aOM<$4483.TextToSpeechSettings>(31, _omitFieldNames ? '' : 'textToSpeechSettings', subBuilder: $4483.TextToSpeechSettings.create)
     ..aOM<Agent_GenAppBuilderSettings>(33, _omitFieldNames ? '' : 'genAppBuilderSettings', subBuilder: Agent_GenAppBuilderSettings.create)
     ..aOM<Agent_AnswerFeedbackSettings>(38, _omitFieldNames ? '' : 'answerFeedbackSettings', subBuilder: Agent_AnswerFeedbackSettings.create)
     ..aOB(40, _omitFieldNames ? '' : 'enableMultiLanguageTraining')
@@ -721,15 +721,15 @@ class Agent extends $pb.GeneratedMessage {
   /// Hierarchical advanced settings for this agent. The settings exposed at the
   /// lower level overrides the settings exposed at the higher level.
   @$pb.TagNumber(22)
-  $4475.AdvancedSettings get advancedSettings => $_getN(12);
+  $4477.AdvancedSettings get advancedSettings => $_getN(12);
   @$pb.TagNumber(22)
-  set advancedSettings($4475.AdvancedSettings v) { setField(22, v); }
+  set advancedSettings($4477.AdvancedSettings v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasAdvancedSettings() => $_has(12);
   @$pb.TagNumber(22)
   void clearAdvancedSettings() => clearField(22);
   @$pb.TagNumber(22)
-  $4475.AdvancedSettings ensureAdvancedSettings() => $_ensure(12);
+  $4477.AdvancedSettings ensureAdvancedSettings() => $_ensure(12);
 
   /// Indicates whether the agent is locked for changes. If the agent is locked,
   /// modifications to the agent will be rejected except for [RestoreAgent][].
@@ -757,15 +757,15 @@ class Agent extends $pb.GeneratedMessage {
   /// Settings on instructing the speech synthesizer on how to generate the
   /// output audio content.
   @$pb.TagNumber(31)
-  $4481.TextToSpeechSettings get textToSpeechSettings => $_getN(15);
+  $4483.TextToSpeechSettings get textToSpeechSettings => $_getN(15);
   @$pb.TagNumber(31)
-  set textToSpeechSettings($4481.TextToSpeechSettings v) { setField(31, v); }
+  set textToSpeechSettings($4483.TextToSpeechSettings v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasTextToSpeechSettings() => $_has(15);
   @$pb.TagNumber(31)
   void clearTextToSpeechSettings() => clearField(31);
   @$pb.TagNumber(31)
-  $4481.TextToSpeechSettings ensureTextToSpeechSettings() => $_ensure(15);
+  $4483.TextToSpeechSettings ensureTextToSpeechSettings() => $_ensure(15);
 
   /// Gen App Builder-related agent-level settings.
   @$pb.TagNumber(33)
@@ -1094,7 +1094,7 @@ class CreateAgentRequest extends $pb.GeneratedMessage {
 class UpdateAgentRequest extends $pb.GeneratedMessage {
   factory UpdateAgentRequest({
     Agent? agent,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (agent != null) {
@@ -1111,7 +1111,7 @@ class UpdateAgentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAgentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3'), createEmptyInstance: create)
     ..aOM<Agent>(1, _omitFieldNames ? '' : 'agent', subBuilder: Agent.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1151,15 +1151,15 @@ class UpdateAgentRequest extends $pb.GeneratedMessage {
   /// The mask to control which fields get updated. If the mask is not present,
   /// all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for
@@ -2004,7 +2004,7 @@ class GetGenerativeSettingsRequest extends $pb.GeneratedMessage {
 class UpdateGenerativeSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateGenerativeSettingsRequest({
     $849.GenerativeSettings? generativeSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (generativeSettings != null) {
@@ -2021,7 +2021,7 @@ class UpdateGenerativeSettingsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGenerativeSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3'), createEmptyInstance: create)
     ..aOM<$849.GenerativeSettings>(1, _omitFieldNames ? '' : 'generativeSettings', subBuilder: $849.GenerativeSettings.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2061,15 +2061,15 @@ class UpdateGenerativeSettingsRequest extends $pb.GeneratedMessage {
   /// Optional. The mask to control which fields get updated. If the mask is not
   /// present, all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

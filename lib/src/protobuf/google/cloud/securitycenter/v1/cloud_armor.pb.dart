@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 
 /// Fields related to Google Cloud Armor findings.
 class CloudArmor extends $pb.GeneratedMessage {
@@ -23,7 +23,7 @@ class CloudArmor extends $pb.GeneratedMessage {
     AdaptiveProtection? adaptiveProtection,
     Attack? attack,
     $core.String? threatVector,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (securityPolicy != null) {
@@ -56,7 +56,7 @@ class CloudArmor extends $pb.GeneratedMessage {
     ..aOM<AdaptiveProtection>(3, _omitFieldNames ? '' : 'adaptiveProtection', subBuilder: AdaptiveProtection.create)
     ..aOM<Attack>(4, _omitFieldNames ? '' : 'attack', subBuilder: Attack.create)
     ..aOS(5, _omitFieldNames ? '' : 'threatVector')
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -150,15 +150,15 @@ class CloudArmor extends $pb.GeneratedMessage {
   /// Duration of attack from the start until the current moment (updated every 5
   /// minutes).
   @$pb.TagNumber(6)
-  $1737.Duration get duration => $_getN(5);
+  $1738.Duration get duration => $_getN(5);
   @$pb.TagNumber(6)
-  set duration($1737.Duration v) { setField(6, v); }
+  set duration($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDuration() => $_has(5);
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureDuration() => $_ensure(5);
+  $1738.Duration ensureDuration() => $_ensure(5);
 }
 
 /// Information about the [Google Cloud Armor security

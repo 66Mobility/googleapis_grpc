@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'operation.pb.dart' as $4250;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'operation.pb.dart' as $4251;
 import 'persistent_resource.pb.dart' as $539;
 
 /// Request message for
@@ -110,7 +110,7 @@ class CreatePersistentResourceRequest extends $pb.GeneratedMessage {
 /// Details of operations that perform create PersistentResource.
 class CreatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
   factory CreatePersistentResourceOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $core.String? progressMessage,
   }) {
     final $result = create();
@@ -127,7 +127,7 @@ class CreatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
   factory CreatePersistentResourceOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreatePersistentResourceOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'progressMessage')
     ..hasRequiredFields = false
   ;
@@ -155,15 +155,15 @@ class CreatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for PersistentResource.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// Progress Message for Create LRO
   @$pb.TagNumber(2)
@@ -179,7 +179,7 @@ class CreatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
 /// Details of operations that perform update PersistentResource.
 class UpdatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
   factory UpdatePersistentResourceOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $core.String? progressMessage,
   }) {
     final $result = create();
@@ -196,7 +196,7 @@ class UpdatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
   factory UpdatePersistentResourceOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePersistentResourceOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'progressMessage')
     ..hasRequiredFields = false
   ;
@@ -224,15 +224,15 @@ class UpdatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for PersistentResource.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// Progress Message for Update LRO
   @$pb.TagNumber(2)
@@ -248,7 +248,7 @@ class UpdatePersistentResourceOperationMetadata extends $pb.GeneratedMessage {
 /// Details of operations that perform reboot PersistentResource.
 class RebootPersistentResourceOperationMetadata extends $pb.GeneratedMessage {
   factory RebootPersistentResourceOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $core.String? progressMessage,
   }) {
     final $result = create();
@@ -265,7 +265,7 @@ class RebootPersistentResourceOperationMetadata extends $pb.GeneratedMessage {
   factory RebootPersistentResourceOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RebootPersistentResourceOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'progressMessage')
     ..hasRequiredFields = false
   ;
@@ -293,15 +293,15 @@ class RebootPersistentResourceOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for PersistentResource.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// Progress Message for Reboot LRO
   @$pb.TagNumber(2)
@@ -578,7 +578,7 @@ class DeletePersistentResourceRequest extends $pb.GeneratedMessage {
 class UpdatePersistentResourceRequest extends $pb.GeneratedMessage {
   factory UpdatePersistentResourceRequest({
     $539.PersistentResource? persistentResource,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (persistentResource != null) {
@@ -595,7 +595,7 @@ class UpdatePersistentResourceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePersistentResourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$539.PersistentResource>(1, _omitFieldNames ? '' : 'persistentResource', subBuilder: $539.PersistentResource.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -639,15 +639,15 @@ class UpdatePersistentResourceRequest extends $pb.GeneratedMessage {
   /// Required. Specify the fields to be overwritten in the PersistentResource by
   /// the update method.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/lead_form_field_user_input_type.pbenum.dart' as $3289;
+import '../enums/lead_form_field_user_input_type.pbenum.dart' as $3290;
 
 /// Data from lead form submissions.
 class LeadFormSubmissionData extends $pb.GeneratedMessage {
@@ -198,7 +198,7 @@ class LeadFormSubmissionData extends $pb.GeneratedMessage {
 /// Fields in the submitted lead form.
 class LeadFormSubmissionField extends $pb.GeneratedMessage {
   factory LeadFormSubmissionField({
-    $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType? fieldType,
+    $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType? fieldType,
     $core.String? fieldValue,
   }) {
     final $result = create();
@@ -215,7 +215,7 @@ class LeadFormSubmissionField extends $pb.GeneratedMessage {
   factory LeadFormSubmissionField.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LeadFormSubmissionField', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..e<$3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType>(1, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.UNSPECIFIED, valueOf: $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.valueOf, enumValues: $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.values)
+    ..e<$3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType>(1, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.UNSPECIFIED, valueOf: $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.valueOf, enumValues: $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.values)
     ..aOS(2, _omitFieldNames ? '' : 'fieldValue')
     ..hasRequiredFields = false
   ;
@@ -243,9 +243,9 @@ class LeadFormSubmissionField extends $pb.GeneratedMessage {
 
   /// Output only. Field type for lead form fields.
   @$pb.TagNumber(1)
-  $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType get fieldType => $_getN(0);
+  $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType get fieldType => $_getN(0);
   @$pb.TagNumber(1)
-  set fieldType($3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType v) { setField(1, v); }
+  set fieldType($3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFieldType() => $_has(0);
   @$pb.TagNumber(1)

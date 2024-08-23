@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'crawled_url.pb.dart' as $4736;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'crawled_url.pb.dart' as $4738;
 import 'finding.pb.dart' as $1518;
-import 'finding_type_stats.pb.dart' as $4737;
+import 'finding_type_stats.pb.dart' as $4739;
 import 'scan_config.pb.dart' as $1516;
 import 'scan_run.pb.dart' as $1517;
 
@@ -287,7 +287,7 @@ class ListScanConfigsRequest extends $pb.GeneratedMessage {
 class UpdateScanConfigRequest extends $pb.GeneratedMessage {
   factory UpdateScanConfigRequest({
     $1516.ScanConfig? scanConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (scanConfig != null) {
@@ -304,7 +304,7 @@ class UpdateScanConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateScanConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.websecurityscanner.v1alpha'), createEmptyInstance: create)
     ..aOM<$1516.ScanConfig>(2, _omitFieldNames ? '' : 'scanConfig', subBuilder: $1516.ScanConfig.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -347,15 +347,15 @@ class UpdateScanConfigRequest extends $pb.GeneratedMessage {
   /// see
   /// https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Response for the `ListScanConfigs` method.
@@ -821,7 +821,7 @@ class ListCrawledUrlsRequest extends $pb.GeneratedMessage {
 /// Response for the `ListCrawledUrls` method.
 class ListCrawledUrlsResponse extends $pb.GeneratedMessage {
   factory ListCrawledUrlsResponse({
-    $core.Iterable<$4736.CrawledUrl>? crawledUrls,
+    $core.Iterable<$4738.CrawledUrl>? crawledUrls,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -838,7 +838,7 @@ class ListCrawledUrlsResponse extends $pb.GeneratedMessage {
   factory ListCrawledUrlsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCrawledUrlsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.websecurityscanner.v1alpha'), createEmptyInstance: create)
-    ..pc<$4736.CrawledUrl>(1, _omitFieldNames ? '' : 'crawledUrls', $pb.PbFieldType.PM, subBuilder: $4736.CrawledUrl.create)
+    ..pc<$4738.CrawledUrl>(1, _omitFieldNames ? '' : 'crawledUrls', $pb.PbFieldType.PM, subBuilder: $4738.CrawledUrl.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -866,7 +866,7 @@ class ListCrawledUrlsResponse extends $pb.GeneratedMessage {
 
   /// The list of CrawledUrls returned.
   @$pb.TagNumber(1)
-  $core.List<$4736.CrawledUrl> get crawledUrls => $_getList(0);
+  $core.List<$4738.CrawledUrl> get crawledUrls => $_getList(0);
 
   /// Token to retrieve the next page of results, or empty if there are no
   /// more results in the list.
@@ -1159,7 +1159,7 @@ class ListFindingTypeStatsRequest extends $pb.GeneratedMessage {
 /// Response for the `ListFindingTypeStats` method.
 class ListFindingTypeStatsResponse extends $pb.GeneratedMessage {
   factory ListFindingTypeStatsResponse({
-    $core.Iterable<$4737.FindingTypeStats>? findingTypeStats,
+    $core.Iterable<$4739.FindingTypeStats>? findingTypeStats,
   }) {
     final $result = create();
     if (findingTypeStats != null) {
@@ -1172,7 +1172,7 @@ class ListFindingTypeStatsResponse extends $pb.GeneratedMessage {
   factory ListFindingTypeStatsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListFindingTypeStatsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.websecurityscanner.v1alpha'), createEmptyInstance: create)
-    ..pc<$4737.FindingTypeStats>(1, _omitFieldNames ? '' : 'findingTypeStats', $pb.PbFieldType.PM, subBuilder: $4737.FindingTypeStats.create)
+    ..pc<$4739.FindingTypeStats>(1, _omitFieldNames ? '' : 'findingTypeStats', $pb.PbFieldType.PM, subBuilder: $4739.FindingTypeStats.create)
     ..hasRequiredFields = false
   ;
 
@@ -1199,7 +1199,7 @@ class ListFindingTypeStatsResponse extends $pb.GeneratedMessage {
 
   /// The list of FindingTypeStats returned.
   @$pb.TagNumber(1)
-  $core.List<$4737.FindingTypeStats> get findingTypeStats => $_getList(0);
+  $core.List<$4739.FindingTypeStats> get findingTypeStats => $_getList(0);
 }
 
 

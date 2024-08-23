@@ -14,25 +14,25 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/offline_conversion_diagnostic_status_enum.pbenum.dart' as $3763;
-import '../enums/offline_event_upload_client_enum.pbenum.dart' as $3762;
-import 'offline_conversion_upload_client_summary.pb.dart' as $3764;
+import '../enums/offline_conversion_diagnostic_status_enum.pbenum.dart' as $3764;
+import '../enums/offline_event_upload_client_enum.pbenum.dart' as $3763;
+import 'offline_conversion_upload_client_summary.pb.dart' as $3765;
 
 /// Offline conversion upload summary at conversion action level.
 class OfflineConversionUploadConversionActionSummary extends $pb.GeneratedMessage {
   factory OfflineConversionUploadConversionActionSummary({
     $core.String? resourceName,
-    $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient? client,
+    $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient? client,
     $fixnum.Int64? conversionActionId,
     $core.String? conversionActionName,
-    $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus? status,
+    $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus? status,
     $fixnum.Int64? totalEventCount,
     $fixnum.Int64? successfulEventCount,
     $fixnum.Int64? pendingEventCount,
     $core.String? lastUploadDateTime,
-    $core.Iterable<$3764.OfflineConversionSummary>? dailySummaries,
-    $core.Iterable<$3764.OfflineConversionSummary>? jobSummaries,
-    $core.Iterable<$3764.OfflineConversionAlert>? alerts,
+    $core.Iterable<$3765.OfflineConversionSummary>? dailySummaries,
+    $core.Iterable<$3765.OfflineConversionSummary>? jobSummaries,
+    $core.Iterable<$3765.OfflineConversionAlert>? alerts,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -79,17 +79,17 @@ class OfflineConversionUploadConversionActionSummary extends $pb.GeneratedMessag
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OfflineConversionUploadConversionActionSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3762.OfflineEventUploadClientEnum_OfflineEventUploadClient>(2, _omitFieldNames ? '' : 'client', $pb.PbFieldType.OE, defaultOrMaker: $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient.UNSPECIFIED, valueOf: $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient.valueOf, enumValues: $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient.values)
+    ..e<$3763.OfflineEventUploadClientEnum_OfflineEventUploadClient>(2, _omitFieldNames ? '' : 'client', $pb.PbFieldType.OE, defaultOrMaker: $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient.UNSPECIFIED, valueOf: $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient.valueOf, enumValues: $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient.values)
     ..aInt64(3, _omitFieldNames ? '' : 'conversionActionId')
     ..aOS(4, _omitFieldNames ? '' : 'conversionActionName')
-    ..e<$3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.UNSPECIFIED, valueOf: $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.valueOf, enumValues: $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.values)
+    ..e<$3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.UNSPECIFIED, valueOf: $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.valueOf, enumValues: $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus.values)
     ..aInt64(6, _omitFieldNames ? '' : 'totalEventCount')
     ..aInt64(7, _omitFieldNames ? '' : 'successfulEventCount')
     ..aInt64(8, _omitFieldNames ? '' : 'pendingEventCount')
     ..aOS(9, _omitFieldNames ? '' : 'lastUploadDateTime')
-    ..pc<$3764.OfflineConversionSummary>(10, _omitFieldNames ? '' : 'dailySummaries', $pb.PbFieldType.PM, subBuilder: $3764.OfflineConversionSummary.create)
-    ..pc<$3764.OfflineConversionSummary>(11, _omitFieldNames ? '' : 'jobSummaries', $pb.PbFieldType.PM, subBuilder: $3764.OfflineConversionSummary.create)
-    ..pc<$3764.OfflineConversionAlert>(12, _omitFieldNames ? '' : 'alerts', $pb.PbFieldType.PM, subBuilder: $3764.OfflineConversionAlert.create)
+    ..pc<$3765.OfflineConversionSummary>(10, _omitFieldNames ? '' : 'dailySummaries', $pb.PbFieldType.PM, subBuilder: $3765.OfflineConversionSummary.create)
+    ..pc<$3765.OfflineConversionSummary>(11, _omitFieldNames ? '' : 'jobSummaries', $pb.PbFieldType.PM, subBuilder: $3765.OfflineConversionSummary.create)
+    ..pc<$3765.OfflineConversionAlert>(12, _omitFieldNames ? '' : 'alerts', $pb.PbFieldType.PM, subBuilder: $3765.OfflineConversionAlert.create)
     ..hasRequiredFields = false
   ;
 
@@ -130,9 +130,9 @@ class OfflineConversionUploadConversionActionSummary extends $pb.GeneratedMessag
 
   /// Output only. Client type of the upload event.
   @$pb.TagNumber(2)
-  $3762.OfflineEventUploadClientEnum_OfflineEventUploadClient get client => $_getN(1);
+  $3763.OfflineEventUploadClientEnum_OfflineEventUploadClient get client => $_getN(1);
   @$pb.TagNumber(2)
-  set client($3762.OfflineEventUploadClientEnum_OfflineEventUploadClient v) { setField(2, v); }
+  set client($3763.OfflineEventUploadClientEnum_OfflineEventUploadClient v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasClient() => $_has(1);
   @$pb.TagNumber(2)
@@ -162,9 +162,9 @@ class OfflineConversionUploadConversionActionSummary extends $pb.GeneratedMessag
   /// summary. Status is generated from most recent calendar day with upload
   /// stats.
   @$pb.TagNumber(5)
-  $3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus get status => $_getN(4);
+  $3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($3763.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus v) { setField(5, v); }
+  set status($3764.OfflineConversionDiagnosticStatusEnum_OfflineConversionDiagnosticStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)
@@ -213,16 +213,16 @@ class OfflineConversionUploadConversionActionSummary extends $pb.GeneratedMessag
 
   /// Output only. Summary of history stats by last N days.
   @$pb.TagNumber(10)
-  $core.List<$3764.OfflineConversionSummary> get dailySummaries => $_getList(9);
+  $core.List<$3765.OfflineConversionSummary> get dailySummaries => $_getList(9);
 
   /// Output only. Summary of history stats by last N jobs.
   @$pb.TagNumber(11)
-  $core.List<$3764.OfflineConversionSummary> get jobSummaries => $_getList(10);
+  $core.List<$3765.OfflineConversionSummary> get jobSummaries => $_getList(10);
 
   /// Output only. Details for each error code. Alerts are generated from most
   /// recent calendar day with upload stats.
   @$pb.TagNumber(12)
-  $core.List<$3764.OfflineConversionAlert> get alerts => $_getList(11);
+  $core.List<$3765.OfflineConversionAlert> get alerts => $_getList(11);
 }
 
 

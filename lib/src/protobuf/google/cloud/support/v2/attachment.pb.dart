@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'actor.pb.dart' as $4688;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'actor.pb.dart' as $4690;
 
 /// Represents a file attached to a support case.
 class Attachment extends $pb.GeneratedMessage {
   factory Attachment({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $4688.Actor? creator,
+    $1776.Timestamp? createTime,
+    $4690.Actor? creator,
     $core.String? filename,
     $core.String? mimeType,
     $fixnum.Int64? sizeBytes,
@@ -54,8 +54,8 @@ class Attachment extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Attachment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.support.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4688.Actor>(3, _omitFieldNames ? '' : 'creator', subBuilder: $4688.Actor.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4690.Actor>(3, _omitFieldNames ? '' : 'creator', subBuilder: $4690.Actor.create)
     ..aOS(4, _omitFieldNames ? '' : 'filename')
     ..aOS(5, _omitFieldNames ? '' : 'mimeType')
     ..aInt64(6, _omitFieldNames ? '' : 'sizeBytes')
@@ -95,28 +95,28 @@ class Attachment extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the attachment was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The user who uploaded the attachment. Note, the name and email
   /// will be obfuscated if the attachment was uploaded by Google support.
   @$pb.TagNumber(3)
-  $4688.Actor get creator => $_getN(2);
+  $4690.Actor get creator => $_getN(2);
   @$pb.TagNumber(3)
-  set creator($4688.Actor v) { setField(3, v); }
+  set creator($4690.Actor v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreator() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreator() => clearField(3);
   @$pb.TagNumber(3)
-  $4688.Actor ensureCreator() => $_ensure(2);
+  $4690.Actor ensureCreator() => $_ensure(2);
 
   /// The filename of the attachment (e.g. `"graph.jpg"`).
   @$pb.TagNumber(4)

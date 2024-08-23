@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'developer_connect.pbenum.dart';
 
 export 'developer_connect.pbenum.dart';
@@ -29,8 +29,8 @@ enum Connection_ConnectionConfig {
 class Connection extends $pb.GeneratedMessage {
   factory Connection({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     GitHubConfig? githubConfig,
     InstallationState? installationState,
@@ -38,7 +38,7 @@ class Connection extends $pb.GeneratedMessage {
     $core.bool? reconciling,
     $core.Map<$core.String, $core.String>? annotations,
     $core.String? etag,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? deleteTime,
     $core.String? uid,
   }) {
     final $result = create();
@@ -91,8 +91,8 @@ class Connection extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Connection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.developerconnect.v1'), createEmptyInstance: create)
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Connection.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.developerconnect.v1'))
     ..aOM<GitHubConfig>(5, _omitFieldNames ? '' : 'githubConfig', subBuilder: GitHubConfig.create)
     ..aOM<InstallationState>(6, _omitFieldNames ? '' : 'installationState', subBuilder: InstallationState.create)
@@ -100,7 +100,7 @@ class Connection extends $pb.GeneratedMessage {
     ..aOB(8, _omitFieldNames ? '' : 'reconciling')
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'annotations', entryClassName: 'Connection.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.developerconnect.v1'))
     ..aOS(10, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'uid')
     ..hasRequiredFields = false
   ;
@@ -142,27 +142,27 @@ class Connection extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create timestamp
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. [Output only] Update timestamp
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Labels as key value pairs
   @$pb.TagNumber(4)
@@ -233,15 +233,15 @@ class Connection extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Delete timestamp
   @$pb.TagNumber(11)
-  $1775.Timestamp get deleteTime => $_getN(10);
+  $1776.Timestamp get deleteTime => $_getN(10);
   @$pb.TagNumber(11)
-  set deleteTime($1775.Timestamp v) { setField(11, v); }
+  set deleteTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDeleteTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearDeleteTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(10);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(10);
 
   /// Output only. A system-assigned unique identifier for a the
   /// GitRepositoryLink.
@@ -879,7 +879,7 @@ class CreateConnectionRequest extends $pb.GeneratedMessage {
 /// Message for updating a Connection
 class UpdateConnectionRequest extends $pb.GeneratedMessage {
   factory UpdateConnectionRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Connection? connection,
     $core.String? requestId,
     $core.bool? allowMissing,
@@ -908,7 +908,7 @@ class UpdateConnectionRequest extends $pb.GeneratedMessage {
   factory UpdateConnectionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConnectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.developerconnect.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Connection>(2, _omitFieldNames ? '' : 'connection', subBuilder: Connection.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'allowMissing')
@@ -943,15 +943,15 @@ class UpdateConnectionRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -1126,8 +1126,8 @@ class DeleteConnectionRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -1163,8 +1163,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.developerconnect.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -1196,27 +1196,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -1278,9 +1278,9 @@ class GitRepositoryLink extends $pb.GeneratedMessage {
   factory GitRepositoryLink({
     $core.String? name,
     $core.String? cloneUri,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? etag,
     $core.bool? reconciling,
@@ -1327,9 +1327,9 @@ class GitRepositoryLink extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GitRepositoryLink', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.developerconnect.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'cloneUri')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'GitRepositoryLink.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.developerconnect.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'etag')
     ..aOB(8, _omitFieldNames ? '' : 'reconciling')
@@ -1382,39 +1382,39 @@ class GitRepositoryLink extends $pb.GeneratedMessage {
 
   /// Output only. [Output only] Create timestamp
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. [Output only] Update timestamp
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. [Output only] Delete timestamp
   @$pb.TagNumber(5)
-  $1775.Timestamp get deleteTime => $_getN(4);
+  $1776.Timestamp get deleteTime => $_getN(4);
   @$pb.TagNumber(5)
-  set deleteTime($1775.Timestamp v) { setField(5, v); }
+  set deleteTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDeleteTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearDeleteTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(4);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(4);
 
   /// Optional. Labels as key value pairs
   @$pb.TagNumber(6)
@@ -2044,7 +2044,7 @@ class FetchReadTokenRequest extends $pb.GeneratedMessage {
 class FetchReadTokenResponse extends $pb.GeneratedMessage {
   factory FetchReadTokenResponse({
     $core.String? token,
-    $1775.Timestamp? expirationTime,
+    $1776.Timestamp? expirationTime,
     $core.String? gitUsername,
   }) {
     final $result = create();
@@ -2065,7 +2065,7 @@ class FetchReadTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchReadTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.developerconnect.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'token')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'gitUsername')
     ..hasRequiredFields = false
   ;
@@ -2103,15 +2103,15 @@ class FetchReadTokenResponse extends $pb.GeneratedMessage {
 
   /// Expiration timestamp. Can be empty if unknown or non-expiring.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expirationTime => $_getN(1);
+  $1776.Timestamp get expirationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expirationTime($1775.Timestamp v) { setField(2, v); }
+  set expirationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpirationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpirationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpirationTime() => $_ensure(1);
+  $1776.Timestamp ensureExpirationTime() => $_ensure(1);
 
   /// The git_username to specify when making a git clone with the
   /// token. For example, for GitHub GitRepositoryLinks, this would be
@@ -2130,7 +2130,7 @@ class FetchReadTokenResponse extends $pb.GeneratedMessage {
 class FetchReadWriteTokenResponse extends $pb.GeneratedMessage {
   factory FetchReadWriteTokenResponse({
     $core.String? token,
-    $1775.Timestamp? expirationTime,
+    $1776.Timestamp? expirationTime,
     $core.String? gitUsername,
   }) {
     final $result = create();
@@ -2151,7 +2151,7 @@ class FetchReadWriteTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchReadWriteTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.developerconnect.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'token')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'gitUsername')
     ..hasRequiredFields = false
   ;
@@ -2189,15 +2189,15 @@ class FetchReadWriteTokenResponse extends $pb.GeneratedMessage {
 
   /// Expiration timestamp. Can be empty if unknown or non-expiring.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expirationTime => $_getN(1);
+  $1776.Timestamp get expirationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expirationTime($1775.Timestamp v) { setField(2, v); }
+  set expirationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpirationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpirationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpirationTime() => $_ensure(1);
+  $1776.Timestamp ensureExpirationTime() => $_ensure(1);
 
   /// The git_username to specify when making a git clone with the
   /// token. For example, for GitHub GitRepositoryLinks, this would be

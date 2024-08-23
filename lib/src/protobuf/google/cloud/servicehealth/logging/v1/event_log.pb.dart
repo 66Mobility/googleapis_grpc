@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'event_log.pbenum.dart';
 
 export 'event_log.pbenum.dart';
@@ -28,10 +28,10 @@ class EventLog extends $pb.GeneratedMessage {
     $core.String? impactedLocations,
     EventLog_Relevance? relevance,
     $core.String? parentEvent,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? nextUpdateTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? nextUpdateTime,
     EventLog_DetailedState? detailedState,
     $core.String? impactedProducts,
   }) {
@@ -89,10 +89,10 @@ class EventLog extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'impactedLocations')
     ..e<EventLog_Relevance>(7, _omitFieldNames ? '' : 'relevance', $pb.PbFieldType.OE, defaultOrMaker: EventLog_Relevance.RELEVANCE_UNSPECIFIED, valueOf: EventLog_Relevance.valueOf, enumValues: EventLog_Relevance.values)
     ..aOS(8, _omitFieldNames ? '' : 'parentEvent')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'nextUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'nextUpdateTime', subBuilder: $1776.Timestamp.create)
     ..e<EventLog_DetailedState>(14, _omitFieldNames ? '' : 'detailedState', $pb.PbFieldType.OE, defaultOrMaker: EventLog_DetailedState.DETAILED_STATE_UNSPECIFIED, valueOf: EventLog_DetailedState.valueOf, enumValues: EventLog_DetailedState.values)
     ..aOS(15, _omitFieldNames ? '' : 'impactedProducts')
     ..hasRequiredFields = false
@@ -197,51 +197,51 @@ class EventLog extends $pb.GeneratedMessage {
 
   /// The time when the event was last modified.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// The start time of the event, if applicable.
   @$pb.TagNumber(11)
-  $1775.Timestamp get startTime => $_getN(8);
+  $1776.Timestamp get startTime => $_getN(8);
   @$pb.TagNumber(11)
-  set startTime($1775.Timestamp v) { setField(11, v); }
+  set startTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStartTime() => $_has(8);
   @$pb.TagNumber(11)
   void clearStartTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureStartTime() => $_ensure(8);
+  $1776.Timestamp ensureStartTime() => $_ensure(8);
 
   /// The end time of the event, if applicable.
   @$pb.TagNumber(12)
-  $1775.Timestamp get endTime => $_getN(9);
+  $1776.Timestamp get endTime => $_getN(9);
   @$pb.TagNumber(12)
-  set endTime($1775.Timestamp v) { setField(12, v); }
+  set endTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasEndTime() => $_has(9);
   @$pb.TagNumber(12)
   void clearEndTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureEndTime() => $_ensure(9);
+  $1776.Timestamp ensureEndTime() => $_ensure(9);
 
   /// Incident-only field. The time when the next update can be expected.
   @$pb.TagNumber(13)
-  $1775.Timestamp get nextUpdateTime => $_getN(10);
+  $1776.Timestamp get nextUpdateTime => $_getN(10);
   @$pb.TagNumber(13)
-  set nextUpdateTime($1775.Timestamp v) { setField(13, v); }
+  set nextUpdateTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasNextUpdateTime() => $_has(10);
   @$pb.TagNumber(13)
   void clearNextUpdateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureNextUpdateTime() => $_ensure(10);
+  $1776.Timestamp ensureNextUpdateTime() => $_ensure(10);
 
   /// The current detailed state of the event.
   @$pb.TagNumber(14)

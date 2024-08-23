@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/customizer_attribute_status.pbenum.dart' as $2264;
-import '../enums/customizer_attribute_type.pbenum.dart' as $1886;
+import '../enums/customizer_attribute_status.pbenum.dart' as $2265;
+import '../enums/customizer_attribute_type.pbenum.dart' as $1887;
 
 /// A customizer attribute.
 /// Use CustomerCustomizer, CampaignCustomizer, AdGroupCustomizer, or
@@ -27,8 +27,8 @@ class CustomizerAttribute extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? id,
     $core.String? name,
-    $1886.CustomizerAttributeTypeEnum_CustomizerAttributeType? type,
-    $2264.CustomizerAttributeStatusEnum_CustomizerAttributeStatus? status,
+    $1887.CustomizerAttributeTypeEnum_CustomizerAttributeType? type,
+    $2265.CustomizerAttributeStatusEnum_CustomizerAttributeStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -56,8 +56,8 @@ class CustomizerAttribute extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..e<$1886.CustomizerAttributeTypeEnum_CustomizerAttributeType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1886.CustomizerAttributeTypeEnum_CustomizerAttributeType.UNSPECIFIED, valueOf: $1886.CustomizerAttributeTypeEnum_CustomizerAttributeType.valueOf, enumValues: $1886.CustomizerAttributeTypeEnum_CustomizerAttributeType.values)
-    ..e<$2264.CustomizerAttributeStatusEnum_CustomizerAttributeStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2264.CustomizerAttributeStatusEnum_CustomizerAttributeStatus.UNSPECIFIED, valueOf: $2264.CustomizerAttributeStatusEnum_CustomizerAttributeStatus.valueOf, enumValues: $2264.CustomizerAttributeStatusEnum_CustomizerAttributeStatus.values)
+    ..e<$1887.CustomizerAttributeTypeEnum_CustomizerAttributeType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $1887.CustomizerAttributeTypeEnum_CustomizerAttributeType.UNSPECIFIED, valueOf: $1887.CustomizerAttributeTypeEnum_CustomizerAttributeType.valueOf, enumValues: $1887.CustomizerAttributeTypeEnum_CustomizerAttributeType.values)
+    ..e<$2265.CustomizerAttributeStatusEnum_CustomizerAttributeStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2265.CustomizerAttributeStatusEnum_CustomizerAttributeStatus.UNSPECIFIED, valueOf: $2265.CustomizerAttributeStatusEnum_CustomizerAttributeStatus.valueOf, enumValues: $2265.CustomizerAttributeStatusEnum_CustomizerAttributeStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -119,9 +119,9 @@ class CustomizerAttribute extends $pb.GeneratedMessage {
 
   /// Immutable. The type of the customizer attribute.
   @$pb.TagNumber(4)
-  $1886.CustomizerAttributeTypeEnum_CustomizerAttributeType get type => $_getN(3);
+  $1887.CustomizerAttributeTypeEnum_CustomizerAttributeType get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type($1886.CustomizerAttributeTypeEnum_CustomizerAttributeType v) { setField(4, v); }
+  set type($1887.CustomizerAttributeTypeEnum_CustomizerAttributeType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)
@@ -129,9 +129,9 @@ class CustomizerAttribute extends $pb.GeneratedMessage {
 
   /// Output only. The status of the customizer attribute.
   @$pb.TagNumber(5)
-  $2264.CustomizerAttributeStatusEnum_CustomizerAttributeStatus get status => $_getN(4);
+  $2265.CustomizerAttributeStatusEnum_CustomizerAttributeStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($2264.CustomizerAttributeStatusEnum_CustomizerAttributeStatus v) { setField(5, v); }
+  set status($2265.CustomizerAttributeStatusEnum_CustomizerAttributeStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)

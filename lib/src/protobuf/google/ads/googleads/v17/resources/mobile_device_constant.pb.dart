@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/mobile_device_type.pbenum.dart' as $3761;
+import '../enums/mobile_device_type.pbenum.dart' as $3762;
 
 /// A mobile device constant.
 class MobileDeviceConstant extends $pb.GeneratedMessage {
   factory MobileDeviceConstant({
     $core.String? resourceName,
-    $3761.MobileDeviceTypeEnum_MobileDeviceType? type,
+    $3762.MobileDeviceTypeEnum_MobileDeviceType? type,
     $fixnum.Int64? id,
     $core.String? name,
     $core.String? manufacturerName,
@@ -53,7 +53,7 @@ class MobileDeviceConstant extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MobileDeviceConstant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3761.MobileDeviceTypeEnum_MobileDeviceType>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3761.MobileDeviceTypeEnum_MobileDeviceType.UNSPECIFIED, valueOf: $3761.MobileDeviceTypeEnum_MobileDeviceType.valueOf, enumValues: $3761.MobileDeviceTypeEnum_MobileDeviceType.values)
+    ..e<$3762.MobileDeviceTypeEnum_MobileDeviceType>(6, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3762.MobileDeviceTypeEnum_MobileDeviceType.UNSPECIFIED, valueOf: $3762.MobileDeviceTypeEnum_MobileDeviceType.valueOf, enumValues: $3762.MobileDeviceTypeEnum_MobileDeviceType.values)
     ..aInt64(7, _omitFieldNames ? '' : 'id')
     ..aOS(8, _omitFieldNames ? '' : 'name')
     ..aOS(9, _omitFieldNames ? '' : 'manufacturerName')
@@ -97,9 +97,9 @@ class MobileDeviceConstant extends $pb.GeneratedMessage {
 
   /// Output only. The type of mobile device.
   @$pb.TagNumber(6)
-  $3761.MobileDeviceTypeEnum_MobileDeviceType get type => $_getN(1);
+  $3762.MobileDeviceTypeEnum_MobileDeviceType get type => $_getN(1);
   @$pb.TagNumber(6)
-  set type($3761.MobileDeviceTypeEnum_MobileDeviceType v) { setField(6, v); }
+  set type($3762.MobileDeviceTypeEnum_MobileDeviceType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(6)

@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'diagnostic_config.pb.dart' as $4570;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'diagnostic_config.pb.dart' as $4572;
 import 'environment.pb.dart' as $1162;
 import 'execution.pb.dart' as $1164;
 import 'instance.pb.dart' as $1161;
 import 'instance.pbenum.dart' as $1161;
-import 'instance_config.pb.dart' as $4571;
+import 'instance_config.pb.dart' as $4573;
 import 'schedule.pb.dart' as $1163;
 import 'service.pbenum.dart';
 
@@ -29,8 +29,8 @@ export 'service.pbenum.dart';
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -70,8 +70,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -104,27 +104,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -715,7 +715,7 @@ class SetInstanceMachineTypeRequest extends $pb.GeneratedMessage {
 class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceConfigRequest({
     $core.String? name,
-    $4571.InstanceConfig? config,
+    $4573.InstanceConfig? config,
   }) {
     final $result = create();
     if (name != null) {
@@ -732,7 +732,7 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4571.InstanceConfig>(2, _omitFieldNames ? '' : 'config', subBuilder: $4571.InstanceConfig.create)
+    ..aOM<$4573.InstanceConfig>(2, _omitFieldNames ? '' : 'config', subBuilder: $4573.InstanceConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -770,15 +770,15 @@ class UpdateInstanceConfigRequest extends $pb.GeneratedMessage {
 
   /// The instance configurations to be updated.
   @$pb.TagNumber(2)
-  $4571.InstanceConfig get config => $_getN(1);
+  $4573.InstanceConfig get config => $_getN(1);
   @$pb.TagNumber(2)
-  set config($4571.InstanceConfig v) { setField(2, v); }
+  set config($4573.InstanceConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4571.InstanceConfig ensureConfig() => $_ensure(1);
+  $4573.InstanceConfig ensureConfig() => $_ensure(1);
 }
 
 /// Request for setting instance labels.
@@ -1915,7 +1915,7 @@ class ListEnvironmentsRequest extends $pb.GeneratedMessage {
 class DiagnoseInstanceRequest extends $pb.GeneratedMessage {
   factory DiagnoseInstanceRequest({
     $core.String? name,
-    $4570.DiagnosticConfig? diagnosticConfig,
+    $4572.DiagnosticConfig? diagnosticConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -1932,7 +1932,7 @@ class DiagnoseInstanceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiagnoseInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.notebooks.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4570.DiagnosticConfig>(2, _omitFieldNames ? '' : 'diagnosticConfig', subBuilder: $4570.DiagnosticConfig.create)
+    ..aOM<$4572.DiagnosticConfig>(2, _omitFieldNames ? '' : 'diagnosticConfig', subBuilder: $4572.DiagnosticConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -1970,15 +1970,15 @@ class DiagnoseInstanceRequest extends $pb.GeneratedMessage {
 
   /// Required. Defines flags that are used to run the diagnostic tool
   @$pb.TagNumber(2)
-  $4570.DiagnosticConfig get diagnosticConfig => $_getN(1);
+  $4572.DiagnosticConfig get diagnosticConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set diagnosticConfig($4570.DiagnosticConfig v) { setField(2, v); }
+  set diagnosticConfig($4572.DiagnosticConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDiagnosticConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearDiagnosticConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $4570.DiagnosticConfig ensureDiagnosticConfig() => $_ensure(1);
+  $4572.DiagnosticConfig ensureDiagnosticConfig() => $_ensure(1);
 }
 
 /// Response for listing environments.

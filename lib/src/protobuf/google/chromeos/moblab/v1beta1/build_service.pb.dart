@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'resources.pb.dart' as $4232;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'resources.pb.dart' as $4233;
 
 /// Request message for finding the most stable build.
 /// -- NEXT_TAG: 2 --
@@ -76,7 +76,7 @@ class FindMostStableBuildRequest extends $pb.GeneratedMessage {
 /// -- NEXT_TAG: 2 --
 class FindMostStableBuildResponse extends $pb.GeneratedMessage {
   factory FindMostStableBuildResponse({
-    $4232.Build? build,
+    $4233.Build? build,
   }) {
     final $result = create();
     if (build != null) {
@@ -89,7 +89,7 @@ class FindMostStableBuildResponse extends $pb.GeneratedMessage {
   factory FindMostStableBuildResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FindMostStableBuildResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4232.Build>(1, _omitFieldNames ? '' : 'build', subBuilder: $4232.Build.create)
+    ..aOM<$4233.Build>(1, _omitFieldNames ? '' : 'build', subBuilder: $4233.Build.create)
     ..hasRequiredFields = false
   ;
 
@@ -116,15 +116,15 @@ class FindMostStableBuildResponse extends $pb.GeneratedMessage {
 
   /// The most stable build.
   @$pb.TagNumber(1)
-  $4232.Build get build => $_getN(0);
+  $4233.Build get build => $_getN(0);
   @$pb.TagNumber(1)
-  set build($4232.Build v) { setField(1, v); }
+  set build($4233.Build v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBuild() => $_has(0);
   @$pb.TagNumber(1)
   void clearBuild() => clearField(1);
   @$pb.TagNumber(1)
-  $4232.Build ensureBuild() => $_ensure(0);
+  $4233.Build ensureBuild() => $_ensure(0);
 }
 
 /// Request message for listing build targets.
@@ -200,7 +200,7 @@ class ListBuildTargetsRequest extends $pb.GeneratedMessage {
 /// -- NEXT_TAG: 4 --
 class ListBuildTargetsResponse extends $pb.GeneratedMessage {
   factory ListBuildTargetsResponse({
-    $core.Iterable<$4232.BuildTarget>? buildTargets,
+    $core.Iterable<$4233.BuildTarget>? buildTargets,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -221,7 +221,7 @@ class ListBuildTargetsResponse extends $pb.GeneratedMessage {
   factory ListBuildTargetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBuildTargetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
-    ..pc<$4232.BuildTarget>(1, _omitFieldNames ? '' : 'buildTargets', $pb.PbFieldType.PM, subBuilder: $4232.BuildTarget.create)
+    ..pc<$4233.BuildTarget>(1, _omitFieldNames ? '' : 'buildTargets', $pb.PbFieldType.PM, subBuilder: $4233.BuildTarget.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -250,7 +250,7 @@ class ListBuildTargetsResponse extends $pb.GeneratedMessage {
 
   /// The list of build targets.
   @$pb.TagNumber(1)
-  $core.List<$4232.BuildTarget> get buildTargets => $_getList(0);
+  $core.List<$4233.BuildTarget> get buildTargets => $_getList(0);
 
   /// Token to retrieve the next page of build targets. If this field is omitted,
   /// there are no subsequent pages.
@@ -362,7 +362,7 @@ class ListModelsRequest extends $pb.GeneratedMessage {
 /// -- NEXT_TAG: 4 --
 class ListModelsResponse extends $pb.GeneratedMessage {
   factory ListModelsResponse({
-    $core.Iterable<$4232.Model>? models,
+    $core.Iterable<$4233.Model>? models,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -383,7 +383,7 @@ class ListModelsResponse extends $pb.GeneratedMessage {
   factory ListModelsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListModelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
-    ..pc<$4232.Model>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM, subBuilder: $4232.Model.create)
+    ..pc<$4233.Model>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM, subBuilder: $4233.Model.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -412,7 +412,7 @@ class ListModelsResponse extends $pb.GeneratedMessage {
 
   /// The list of models.
   @$pb.TagNumber(1)
-  $core.List<$4232.Model> get models => $_getList(0);
+  $core.List<$4233.Model> get models => $_getList(0);
 
   /// Token to retrieve the next page of models. If this field is omitted, there
   /// are no subsequent pages.
@@ -444,8 +444,8 @@ class ListBuildsRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? filter,
-    $2209.FieldMask? readMask,
-    $2209.FieldMask? groupBy,
+    $2210.FieldMask? readMask,
+    $2210.FieldMask? groupBy,
   }) {
     final $result = create();
     if (parent != null) {
@@ -477,8 +477,8 @@ class ListBuildsRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$2209.FieldMask>(6, _omitFieldNames ? '' : 'groupBy', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$2210.FieldMask>(6, _omitFieldNames ? '' : 'groupBy', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -555,36 +555,36 @@ class ListBuildsRequest extends $pb.GeneratedMessage {
   /// "read_mask='milestone'", the ListBuilds will return a list of Builds object
   /// with only the milestone field.
   @$pb.TagNumber(5)
-  $2209.FieldMask get readMask => $_getN(4);
+  $2210.FieldMask get readMask => $_getN(4);
   @$pb.TagNumber(5)
-  set readMask($2209.FieldMask v) { setField(5, v); }
+  set readMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReadMask() => $_has(4);
   @$pb.TagNumber(5)
   void clearReadMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureReadMask() => $_ensure(4);
+  $2210.FieldMask ensureReadMask() => $_ensure(4);
 
   /// Optional. The operation that groups by all the Build fields specified in
   /// the read mask. The group_by field should be the same as the read_mask field
   /// in convention of SQL.
   @$pb.TagNumber(6)
-  $2209.FieldMask get groupBy => $_getN(5);
+  $2210.FieldMask get groupBy => $_getN(5);
   @$pb.TagNumber(6)
-  set groupBy($2209.FieldMask v) { setField(6, v); }
+  set groupBy($2210.FieldMask v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasGroupBy() => $_has(5);
   @$pb.TagNumber(6)
   void clearGroupBy() => clearField(6);
   @$pb.TagNumber(6)
-  $2209.FieldMask ensureGroupBy() => $_ensure(5);
+  $2210.FieldMask ensureGroupBy() => $_ensure(5);
 }
 
 /// Response message for listing builds.
 /// -- NEXT_TAG: 4 --
 class ListBuildsResponse extends $pb.GeneratedMessage {
   factory ListBuildsResponse({
-    $core.Iterable<$4232.Build>? builds,
+    $core.Iterable<$4233.Build>? builds,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -605,7 +605,7 @@ class ListBuildsResponse extends $pb.GeneratedMessage {
   factory ListBuildsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListBuildsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
-    ..pc<$4232.Build>(1, _omitFieldNames ? '' : 'builds', $pb.PbFieldType.PM, subBuilder: $4232.Build.create)
+    ..pc<$4233.Build>(1, _omitFieldNames ? '' : 'builds', $pb.PbFieldType.PM, subBuilder: $4233.Build.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -634,7 +634,7 @@ class ListBuildsResponse extends $pb.GeneratedMessage {
 
   /// The list of builds.
   @$pb.TagNumber(1)
-  $core.List<$4232.Build> get builds => $_getList(0);
+  $core.List<$4233.Build> get builds => $_getList(0);
 
   /// Token to retrieve the next page of builds. If this field is omitted, there
   /// are no subsequent pages.
@@ -735,8 +735,8 @@ class CheckBuildStageStatusRequest extends $pb.GeneratedMessage {
 class CheckBuildStageStatusResponse extends $pb.GeneratedMessage {
   factory CheckBuildStageStatusResponse({
     $core.bool? isBuildStaged,
-    $4232.BuildArtifact? stagedBuildArtifact,
-    $4232.BuildArtifact? sourceBuildArtifact,
+    $4233.BuildArtifact? stagedBuildArtifact,
+    $4233.BuildArtifact? sourceBuildArtifact,
   }) {
     final $result = create();
     if (isBuildStaged != null) {
@@ -756,8 +756,8 @@ class CheckBuildStageStatusResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckBuildStageStatusResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'isBuildStaged')
-    ..aOM<$4232.BuildArtifact>(2, _omitFieldNames ? '' : 'stagedBuildArtifact', subBuilder: $4232.BuildArtifact.create)
-    ..aOM<$4232.BuildArtifact>(3, _omitFieldNames ? '' : 'sourceBuildArtifact', subBuilder: $4232.BuildArtifact.create)
+    ..aOM<$4233.BuildArtifact>(2, _omitFieldNames ? '' : 'stagedBuildArtifact', subBuilder: $4233.BuildArtifact.create)
+    ..aOM<$4233.BuildArtifact>(3, _omitFieldNames ? '' : 'sourceBuildArtifact', subBuilder: $4233.BuildArtifact.create)
     ..hasRequiredFields = false
   ;
 
@@ -794,27 +794,27 @@ class CheckBuildStageStatusResponse extends $pb.GeneratedMessage {
 
   /// The staged build artifact in the destination bucket.
   @$pb.TagNumber(2)
-  $4232.BuildArtifact get stagedBuildArtifact => $_getN(1);
+  $4233.BuildArtifact get stagedBuildArtifact => $_getN(1);
   @$pb.TagNumber(2)
-  set stagedBuildArtifact($4232.BuildArtifact v) { setField(2, v); }
+  set stagedBuildArtifact($4233.BuildArtifact v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStagedBuildArtifact() => $_has(1);
   @$pb.TagNumber(2)
   void clearStagedBuildArtifact() => clearField(2);
   @$pb.TagNumber(2)
-  $4232.BuildArtifact ensureStagedBuildArtifact() => $_ensure(1);
+  $4233.BuildArtifact ensureStagedBuildArtifact() => $_ensure(1);
 
   /// The source build artifact in the source bucket.
   @$pb.TagNumber(3)
-  $4232.BuildArtifact get sourceBuildArtifact => $_getN(2);
+  $4233.BuildArtifact get sourceBuildArtifact => $_getN(2);
   @$pb.TagNumber(3)
-  set sourceBuildArtifact($4232.BuildArtifact v) { setField(3, v); }
+  set sourceBuildArtifact($4233.BuildArtifact v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSourceBuildArtifact() => $_has(2);
   @$pb.TagNumber(3)
   void clearSourceBuildArtifact() => clearField(3);
   @$pb.TagNumber(3)
-  $4232.BuildArtifact ensureSourceBuildArtifact() => $_ensure(2);
+  $4233.BuildArtifact ensureSourceBuildArtifact() => $_ensure(2);
 }
 
 /// Request message for staging a build artifact.
@@ -893,7 +893,7 @@ class StageBuildRequest extends $pb.GeneratedMessage {
 /// -- NEXT_TAG: 2 --
 class StageBuildResponse extends $pb.GeneratedMessage {
   factory StageBuildResponse({
-    $4232.BuildArtifact? stagedBuildArtifact,
+    $4233.BuildArtifact? stagedBuildArtifact,
   }) {
     final $result = create();
     if (stagedBuildArtifact != null) {
@@ -906,7 +906,7 @@ class StageBuildResponse extends $pb.GeneratedMessage {
   factory StageBuildResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StageBuildResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4232.BuildArtifact>(1, _omitFieldNames ? '' : 'stagedBuildArtifact', subBuilder: $4232.BuildArtifact.create)
+    ..aOM<$4233.BuildArtifact>(1, _omitFieldNames ? '' : 'stagedBuildArtifact', subBuilder: $4233.BuildArtifact.create)
     ..hasRequiredFields = false
   ;
 
@@ -933,15 +933,15 @@ class StageBuildResponse extends $pb.GeneratedMessage {
 
   /// The staged build in the destination bucket.
   @$pb.TagNumber(1)
-  $4232.BuildArtifact get stagedBuildArtifact => $_getN(0);
+  $4233.BuildArtifact get stagedBuildArtifact => $_getN(0);
   @$pb.TagNumber(1)
-  set stagedBuildArtifact($4232.BuildArtifact v) { setField(1, v); }
+  set stagedBuildArtifact($4233.BuildArtifact v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStagedBuildArtifact() => $_has(0);
   @$pb.TagNumber(1)
   void clearStagedBuildArtifact() => clearField(1);
   @$pb.TagNumber(1)
-  $4232.BuildArtifact ensureStagedBuildArtifact() => $_ensure(0);
+  $4233.BuildArtifact ensureStagedBuildArtifact() => $_ensure(0);
 }
 
 /// Metadata message for staging a build artifact.
@@ -949,8 +949,8 @@ class StageBuildResponse extends $pb.GeneratedMessage {
 class StageBuildMetadata extends $pb.GeneratedMessage {
   factory StageBuildMetadata({
     $core.double? progressPercent,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (progressPercent != null) {
@@ -970,8 +970,8 @@ class StageBuildMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StageBuildMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chromeos.moblab.v1beta1'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.OF)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1008,27 +1008,27 @@ class StageBuildMetadata extends $pb.GeneratedMessage {
 
   /// Build stage start time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Build stage end time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 

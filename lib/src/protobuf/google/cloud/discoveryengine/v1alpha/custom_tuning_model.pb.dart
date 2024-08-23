@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'custom_tuning_model.pbenum.dart';
 
 export 'custom_tuning_model.pbenum.dart';
@@ -27,8 +27,8 @@ class CustomTuningModel extends $pb.GeneratedMessage {
     $fixnum.Int64? modelVersion,
     CustomTuningModel_ModelState? modelState,
   @$core.Deprecated('This field is deprecated.')
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? trainingStartTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? trainingStartTime,
     $core.Map<$core.String, $core.double>? metrics,
   }) {
     final $result = create();
@@ -65,8 +65,8 @@ class CustomTuningModel extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aInt64(3, _omitFieldNames ? '' : 'modelVersion')
     ..e<CustomTuningModel_ModelState>(4, _omitFieldNames ? '' : 'modelState', $pb.PbFieldType.OE, defaultOrMaker: CustomTuningModel_ModelState.MODEL_STATE_UNSPECIFIED, valueOf: CustomTuningModel_ModelState.valueOf, enumValues: CustomTuningModel_ModelState.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'trainingStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'trainingStartTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.double>(7, _omitFieldNames ? '' : 'metrics', entryClassName: 'CustomTuningModel.MetricsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OD, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
     ..hasRequiredFields = false
   ;
@@ -139,10 +139,10 @@ class CustomTuningModel extends $pb.GeneratedMessage {
   /// Timestamp the Model was created at.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
@@ -151,19 +151,19 @@ class CustomTuningModel extends $pb.GeneratedMessage {
   void clearCreateTime() => clearField(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Timestamp the model training was initiated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get trainingStartTime => $_getN(5);
+  $1776.Timestamp get trainingStartTime => $_getN(5);
   @$pb.TagNumber(6)
-  set trainingStartTime($1775.Timestamp v) { setField(6, v); }
+  set trainingStartTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTrainingStartTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearTrainingStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureTrainingStartTime() => $_ensure(5);
+  $1776.Timestamp ensureTrainingStartTime() => $_ensure(5);
 
   /// The metrics of the trained model.
   @$pb.TagNumber(7)

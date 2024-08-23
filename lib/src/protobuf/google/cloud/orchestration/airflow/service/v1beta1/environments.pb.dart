@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'environments.pbenum.dart';
 
 export 'environments.pbenum.dart';
@@ -344,7 +344,7 @@ class UpdateEnvironmentRequest extends $pb.GeneratedMessage {
   factory UpdateEnvironmentRequest({
     Environment? environment,
     $core.String? name,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (environment != null) {
@@ -365,7 +365,7 @@ class UpdateEnvironmentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEnvironmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.orchestration.airflow.service.v1beta1'), createEmptyInstance: create)
     ..aOM<Environment>(1, _omitFieldNames ? '' : 'environment', subBuilder: Environment.create)
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -559,15 +559,15 @@ class UpdateEnvironmentRequest extends $pb.GeneratedMessage {
   ///        Composer environments in versions composer-2.*.*-airflow-*.*.* and
   ///        newer.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Restart Airflow web server.
@@ -4873,8 +4873,8 @@ class EncryptionConfig extends $pb.GeneratedMessage {
 ///  each Tuesday and Wednesday.
 class MaintenanceWindow extends $pb.GeneratedMessage {
   factory MaintenanceWindow({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? recurrence,
   }) {
     final $result = create();
@@ -4894,8 +4894,8 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
   factory MaintenanceWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaintenanceWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.orchestration.airflow.service.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'recurrence')
     ..hasRequiredFields = false
   ;
@@ -4923,29 +4923,29 @@ class MaintenanceWindow extends $pb.GeneratedMessage {
 
   /// Required. Start time of the first recurrence of the maintenance window.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Required. Maintenance window end time. It is used only to calculate the
   /// duration of the maintenance window. The value for end_time must be in the
   /// future, relative to `start_time`.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Required. Maintenance window recurrence. Format is a subset of
   /// [RFC-5545](https://tools.ietf.org/html/rfc5545) `RRULE`. The only allowed
@@ -6182,8 +6182,8 @@ class Environment extends $pb.GeneratedMessage {
     EnvironmentConfig? config,
     $core.String? uuid,
     Environment_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.bool? satisfiesPzs,
     StorageConfig? storageConfig,
@@ -6227,8 +6227,8 @@ class Environment extends $pb.GeneratedMessage {
     ..aOM<EnvironmentConfig>(2, _omitFieldNames ? '' : 'config', subBuilder: EnvironmentConfig.create)
     ..aOS(3, _omitFieldNames ? '' : 'uuid')
     ..e<Environment_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Environment_State.STATE_UNSPECIFIED, valueOf: Environment_State.valueOf, enumValues: Environment_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'Environment.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.orchestration.airflow.service.v1beta1'))
     ..aOB(8, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOM<StorageConfig>(9, _omitFieldNames ? '' : 'storageConfig', subBuilder: StorageConfig.create)
@@ -6305,27 +6305,27 @@ class Environment extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this environment was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The time at which this environment was last modified.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   ///  Optional. User-defined labels for this environment.
   ///  The labels map can contain no more than 64 entries. Entries of the labels

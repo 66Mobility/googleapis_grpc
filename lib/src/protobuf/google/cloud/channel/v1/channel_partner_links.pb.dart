@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'channel_partner_links.pbenum.dart';
-import 'common.pb.dart' as $4426;
+import 'common.pb.dart' as $4428;
 
 export 'channel_partner_links.pbenum.dart';
 
@@ -27,10 +27,10 @@ class ChannelPartnerLink extends $pb.GeneratedMessage {
     $core.String? resellerCloudIdentityId,
     ChannelPartnerLinkState? linkState,
     $core.String? inviteLinkUri,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? publicId,
-    $4426.CloudIdentityInfo? channelPartnerCloudIdentityInfo,
+    $4428.CloudIdentityInfo? channelPartnerCloudIdentityInfo,
   }) {
     final $result = create();
     if (name != null) {
@@ -68,10 +68,10 @@ class ChannelPartnerLink extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'resellerCloudIdentityId')
     ..e<ChannelPartnerLinkState>(3, _omitFieldNames ? '' : 'linkState', $pb.PbFieldType.OE, defaultOrMaker: ChannelPartnerLinkState.CHANNEL_PARTNER_LINK_STATE_UNSPECIFIED, valueOf: ChannelPartnerLinkState.valueOf, enumValues: ChannelPartnerLinkState.values)
     ..aOS(4, _omitFieldNames ? '' : 'inviteLinkUri')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'publicId')
-    ..aOM<$4426.CloudIdentityInfo>(8, _omitFieldNames ? '' : 'channelPartnerCloudIdentityInfo', subBuilder: $4426.CloudIdentityInfo.create)
+    ..aOM<$4428.CloudIdentityInfo>(8, _omitFieldNames ? '' : 'channelPartnerCloudIdentityInfo', subBuilder: $4428.CloudIdentityInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -139,27 +139,27 @@ class ChannelPartnerLink extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp of when the channel partner link is created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp of when the channel partner link is updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. Public identifier that a customer must use to generate a
   /// transfer token to move to this distributor-reseller combination.
@@ -174,15 +174,15 @@ class ChannelPartnerLink extends $pb.GeneratedMessage {
 
   /// Output only. Cloud Identity info of the channel partner (IR).
   @$pb.TagNumber(8)
-  $4426.CloudIdentityInfo get channelPartnerCloudIdentityInfo => $_getN(7);
+  $4428.CloudIdentityInfo get channelPartnerCloudIdentityInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set channelPartnerCloudIdentityInfo($4426.CloudIdentityInfo v) { setField(8, v); }
+  set channelPartnerCloudIdentityInfo($4428.CloudIdentityInfo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasChannelPartnerCloudIdentityInfo() => $_has(7);
   @$pb.TagNumber(8)
   void clearChannelPartnerCloudIdentityInfo() => clearField(8);
   @$pb.TagNumber(8)
-  $4426.CloudIdentityInfo ensureChannelPartnerCloudIdentityInfo() => $_ensure(7);
+  $4428.CloudIdentityInfo ensureChannelPartnerCloudIdentityInfo() => $_ensure(7);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'analyze.pbenum.dart';
 import 'resources.pbenum.dart' as $820;
 
@@ -291,7 +291,7 @@ class Environment_InfrastructureSpec extends $pb.GeneratedMessage {
 /// Configuration for sessions created for this environment.
 class Environment_SessionSpec extends $pb.GeneratedMessage {
   factory Environment_SessionSpec({
-    $1737.Duration? maxIdleDuration,
+    $1738.Duration? maxIdleDuration,
     $core.bool? enableFastStartup,
   }) {
     final $result = create();
@@ -308,7 +308,7 @@ class Environment_SessionSpec extends $pb.GeneratedMessage {
   factory Environment_SessionSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Environment.SessionSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'maxIdleDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'maxIdleDuration', subBuilder: $1738.Duration.create)
     ..aOB(2, _omitFieldNames ? '' : 'enableFastStartup')
     ..hasRequiredFields = false
   ;
@@ -337,15 +337,15 @@ class Environment_SessionSpec extends $pb.GeneratedMessage {
   /// Optional. The idle time configuration of the session. The session will be
   /// auto-terminated at the end of this period.
   @$pb.TagNumber(1)
-  $1737.Duration get maxIdleDuration => $_getN(0);
+  $1738.Duration get maxIdleDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set maxIdleDuration($1737.Duration v) { setField(1, v); }
+  set maxIdleDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaxIdleDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaxIdleDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMaxIdleDuration() => $_ensure(0);
+  $1738.Duration ensureMaxIdleDuration() => $_ensure(0);
 
   /// Optional. If True, this causes sessions to be pre-created and available
   /// for faster startup to enable interactive exploration use-cases. This
@@ -489,8 +489,8 @@ class Environment extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $820.State? state,
@@ -546,8 +546,8 @@ class Environment extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Environment.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..e<$820.State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $820.State.STATE_UNSPECIFIED, valueOf: $820.State.valueOf, enumValues: $820.State.values)
@@ -614,27 +614,27 @@ class Environment extends $pb.GeneratedMessage {
 
   /// Output only. Environment creation time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time when the environment was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User defined labels for the environment.
   @$pb.TagNumber(6)
@@ -831,8 +831,8 @@ class Content extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? uid,
     $core.String? path,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $core.String? dataText,
@@ -891,8 +891,8 @@ class Content extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
     ..aOS(3, _omitFieldNames ? '' : 'path')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Content.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..aOS(9, _omitFieldNames ? '' : 'dataText')
@@ -965,27 +965,27 @@ class Content extends $pb.GeneratedMessage {
 
   /// Output only. Content creation time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time when the content was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. User defined labels for the content.
   @$pb.TagNumber(6)
@@ -1041,7 +1041,7 @@ class Session extends $pb.GeneratedMessage {
   factory Session({
     $core.String? name,
     $core.String? userId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $820.State? state,
   }) {
     final $result = create();
@@ -1066,7 +1066,7 @@ class Session extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Session', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'userId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<$820.State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $820.State.STATE_UNSPECIFIED, valueOf: $820.State.valueOf, enumValues: $820.State.values)
     ..hasRequiredFields = false
   ;
@@ -1115,15 +1115,15 @@ class Session extends $pb.GeneratedMessage {
 
   /// Output only. Session start time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. State of Session
   @$pb.TagNumber(4)

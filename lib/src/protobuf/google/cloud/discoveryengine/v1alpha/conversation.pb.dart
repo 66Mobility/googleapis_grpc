@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'conversation.pbenum.dart';
 import 'search_service.pb.dart' as $959;
 
@@ -26,8 +26,8 @@ class Conversation extends $pb.GeneratedMessage {
     Conversation_State? state,
     $core.String? userPseudoId,
     $core.Iterable<ConversationMessage>? messages,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -59,8 +59,8 @@ class Conversation extends $pb.GeneratedMessage {
     ..e<Conversation_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Conversation_State.STATE_UNSPECIFIED, valueOf: Conversation_State.valueOf, enumValues: Conversation_State.values)
     ..aOS(3, _omitFieldNames ? '' : 'userPseudoId')
     ..pc<ConversationMessage>(4, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM, subBuilder: ConversationMessage.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -124,27 +124,27 @@ class Conversation extends $pb.GeneratedMessage {
 
   /// Output only. The time the conversation started.
   @$pb.TagNumber(5)
-  $1775.Timestamp get startTime => $_getN(4);
+  $1776.Timestamp get startTime => $_getN(4);
   @$pb.TagNumber(5)
-  set startTime($1775.Timestamp v) { setField(5, v); }
+  set startTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearStartTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureStartTime() => $_ensure(4);
+  $1776.Timestamp ensureStartTime() => $_ensure(4);
 
   /// Output only. The time the conversation finished.
   @$pb.TagNumber(6)
-  $1775.Timestamp get endTime => $_getN(5);
+  $1776.Timestamp get endTime => $_getN(5);
   @$pb.TagNumber(6)
-  set endTime($1775.Timestamp v) { setField(6, v); }
+  set endTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureEndTime() => $_ensure(5);
+  $1776.Timestamp ensureEndTime() => $_ensure(5);
 }
 
 /// Defines reference in reply.
@@ -475,7 +475,7 @@ class ConversationMessage extends $pb.GeneratedMessage {
   factory ConversationMessage({
     TextInput? userInput,
     Reply? reply,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (userInput != null) {
@@ -502,7 +502,7 @@ class ConversationMessage extends $pb.GeneratedMessage {
     ..oo(0, [1, 2])
     ..aOM<TextInput>(1, _omitFieldNames ? '' : 'userInput', subBuilder: TextInput.create)
     ..aOM<Reply>(2, _omitFieldNames ? '' : 'reply', subBuilder: Reply.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -556,15 +556,15 @@ class ConversationMessage extends $pb.GeneratedMessage {
 
   /// Output only. Message creation timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 

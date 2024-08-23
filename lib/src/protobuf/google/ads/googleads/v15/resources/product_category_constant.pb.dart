@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/product_category_level.pbenum.dart' as $1846;
-import '../enums/product_category_state.pbenum.dart' as $2331;
+import '../enums/product_category_level.pbenum.dart' as $1847;
+import '../enums/product_category_state.pbenum.dart' as $2332;
 
 /// Localization for the product category.
 class ProductCategoryConstant_ProductCategoryLocalization extends $pb.GeneratedMessage {
@@ -107,8 +107,8 @@ class ProductCategoryConstant extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? categoryId,
     $core.String? productCategoryConstantParent,
-    $1846.ProductCategoryLevelEnum_ProductCategoryLevel? level,
-    $2331.ProductCategoryStateEnum_ProductCategoryState? state,
+    $1847.ProductCategoryLevelEnum_ProductCategoryLevel? level,
+    $2332.ProductCategoryStateEnum_ProductCategoryState? state,
     $core.Iterable<ProductCategoryConstant_ProductCategoryLocalization>? localizations,
   }) {
     final $result = create();
@@ -140,8 +140,8 @@ class ProductCategoryConstant extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'categoryId')
     ..aOS(3, _omitFieldNames ? '' : 'productCategoryConstantParent')
-    ..e<$1846.ProductCategoryLevelEnum_ProductCategoryLevel>(4, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $1846.ProductCategoryLevelEnum_ProductCategoryLevel.UNSPECIFIED, valueOf: $1846.ProductCategoryLevelEnum_ProductCategoryLevel.valueOf, enumValues: $1846.ProductCategoryLevelEnum_ProductCategoryLevel.values)
-    ..e<$2331.ProductCategoryStateEnum_ProductCategoryState>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $2331.ProductCategoryStateEnum_ProductCategoryState.UNSPECIFIED, valueOf: $2331.ProductCategoryStateEnum_ProductCategoryState.valueOf, enumValues: $2331.ProductCategoryStateEnum_ProductCategoryState.values)
+    ..e<$1847.ProductCategoryLevelEnum_ProductCategoryLevel>(4, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $1847.ProductCategoryLevelEnum_ProductCategoryLevel.UNSPECIFIED, valueOf: $1847.ProductCategoryLevelEnum_ProductCategoryLevel.valueOf, enumValues: $1847.ProductCategoryLevelEnum_ProductCategoryLevel.values)
+    ..e<$2332.ProductCategoryStateEnum_ProductCategoryState>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $2332.ProductCategoryStateEnum_ProductCategoryState.UNSPECIFIED, valueOf: $2332.ProductCategoryStateEnum_ProductCategoryState.valueOf, enumValues: $2332.ProductCategoryStateEnum_ProductCategoryState.values)
     ..pc<ProductCategoryConstant_ProductCategoryLocalization>(6, _omitFieldNames ? '' : 'localizations', $pb.PbFieldType.PM, subBuilder: ProductCategoryConstant_ProductCategoryLocalization.create)
     ..hasRequiredFields = false
   ;
@@ -205,9 +205,9 @@ class ProductCategoryConstant extends $pb.GeneratedMessage {
 
   /// Output only. Level of the product category.
   @$pb.TagNumber(4)
-  $1846.ProductCategoryLevelEnum_ProductCategoryLevel get level => $_getN(3);
+  $1847.ProductCategoryLevelEnum_ProductCategoryLevel get level => $_getN(3);
   @$pb.TagNumber(4)
-  set level($1846.ProductCategoryLevelEnum_ProductCategoryLevel v) { setField(4, v); }
+  set level($1847.ProductCategoryLevelEnum_ProductCategoryLevel v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLevel() => $_has(3);
   @$pb.TagNumber(4)
@@ -215,9 +215,9 @@ class ProductCategoryConstant extends $pb.GeneratedMessage {
 
   /// Output only. State of the product category.
   @$pb.TagNumber(5)
-  $2331.ProductCategoryStateEnum_ProductCategoryState get state => $_getN(4);
+  $2332.ProductCategoryStateEnum_ProductCategoryState get state => $_getN(4);
   @$pb.TagNumber(5)
-  set state($2331.ProductCategoryStateEnum_ProductCategoryState v) { setField(5, v); }
+  set state($2332.ProductCategoryStateEnum_ProductCategoryState v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasState() => $_has(4);
   @$pb.TagNumber(5)

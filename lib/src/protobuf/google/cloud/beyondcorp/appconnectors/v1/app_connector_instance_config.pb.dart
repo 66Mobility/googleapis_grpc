@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/any.pb.dart' as $1794;
+import '../../../../protobuf/any.pb.dart' as $1795;
 
 /// AppConnectorInstanceConfig defines the instance config of a AppConnector.
 class AppConnectorInstanceConfig extends $pb.GeneratedMessage {
   factory AppConnectorInstanceConfig({
     $fixnum.Int64? sequenceNumber,
-    $1794.Any? instanceConfig,
+    $1795.Any? instanceConfig,
     NotificationConfig? notificationConfig,
     ImageConfig? imageConfig,
   }) {
@@ -45,7 +45,7 @@ class AppConnectorInstanceConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppConnectorInstanceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.beyondcorp.appconnectors.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'sequenceNumber')
-    ..aOM<$1794.Any>(2, _omitFieldNames ? '' : 'instanceConfig', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(2, _omitFieldNames ? '' : 'instanceConfig', subBuilder: $1795.Any.create)
     ..aOM<NotificationConfig>(3, _omitFieldNames ? '' : 'notificationConfig', subBuilder: NotificationConfig.create)
     ..aOM<ImageConfig>(4, _omitFieldNames ? '' : 'imageConfig', subBuilder: ImageConfig.create)
     ..hasRequiredFields = false
@@ -86,15 +86,15 @@ class AppConnectorInstanceConfig extends $pb.GeneratedMessage {
 
   /// The SLM instance agent configuration.
   @$pb.TagNumber(2)
-  $1794.Any get instanceConfig => $_getN(1);
+  $1795.Any get instanceConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set instanceConfig($1794.Any v) { setField(2, v); }
+  set instanceConfig($1795.Any v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInstanceConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearInstanceConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $1794.Any ensureInstanceConfig() => $_ensure(1);
+  $1795.Any ensureInstanceConfig() => $_ensure(1);
 
   /// NotificationConfig defines the notification mechanism that the remote
   /// instance should subscribe to in order to receive notification.

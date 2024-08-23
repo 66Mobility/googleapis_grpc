@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'profiler.pbenum.dart';
 
 export 'profiler.pbenum.dart';
@@ -175,7 +175,7 @@ class CreateOfflineProfileRequest extends $pb.GeneratedMessage {
 class UpdateProfileRequest extends $pb.GeneratedMessage {
   factory UpdateProfileRequest({
     Profile? profile,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (profile != null) {
@@ -192,7 +192,7 @@ class UpdateProfileRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProfileRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.cloudprofiler.v2'), createEmptyInstance: create)
     ..aOM<Profile>(1, _omitFieldNames ? '' : 'profile', subBuilder: Profile.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -234,15 +234,15 @@ class UpdateProfileRequest extends $pb.GeneratedMessage {
   /// those fields can be specified in the mask. When no mask is provided, all
   /// fields are overwritten.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Profile resource.
@@ -251,10 +251,10 @@ class Profile extends $pb.GeneratedMessage {
     $core.String? name,
     ProfileType? profileType,
     Deployment? deployment,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $core.List<$core.int>? profileBytes,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -288,10 +288,10 @@ class Profile extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<ProfileType>(2, _omitFieldNames ? '' : 'profileType', $pb.PbFieldType.OE, defaultOrMaker: ProfileType.PROFILE_TYPE_UNSPECIFIED, valueOf: ProfileType.valueOf, enumValues: ProfileType.values)
     ..aOM<Deployment>(3, _omitFieldNames ? '' : 'deployment', subBuilder: Deployment.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..a<$core.List<$core.int>>(5, _omitFieldNames ? '' : 'profileBytes', $pb.PbFieldType.OY)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Profile.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.devtools.cloudprofiler.v2'))
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -357,15 +357,15 @@ class Profile extends $pb.GeneratedMessage {
   /// data, in case the profiling can't be stopped immediately (e.g. in case
   /// stopping the profiling is handled asynchronously).
   @$pb.TagNumber(4)
-  $1737.Duration get duration => $_getN(3);
+  $1738.Duration get duration => $_getN(3);
   @$pb.TagNumber(4)
-  set duration($1737.Duration v) { setField(4, v); }
+  set duration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureDuration() => $_ensure(3);
+  $1738.Duration ensureDuration() => $_ensure(3);
 
   /// Input only. Profile bytes, as a gzip compressed serialized proto, the
   /// format is https://github.com/google/pprof/blob/master/proto/profile.proto.
@@ -387,15 +387,15 @@ class Profile extends $pb.GeneratedMessage {
   /// Output only. Start time for the profile.
   /// This output is only present in response from the ListProfiles method.
   @$pb.TagNumber(7)
-  $1775.Timestamp get startTime => $_getN(6);
+  $1776.Timestamp get startTime => $_getN(6);
   @$pb.TagNumber(7)
-  set startTime($1775.Timestamp v) { setField(7, v); }
+  set startTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStartTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureStartTime() => $_ensure(6);
+  $1776.Timestamp ensureStartTime() => $_ensure(6);
 }
 
 /// Deployment contains the deployment identification information.

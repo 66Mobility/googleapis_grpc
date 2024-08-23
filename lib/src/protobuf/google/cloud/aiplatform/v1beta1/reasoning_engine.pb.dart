@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// User provided package spec like pickled object and package requirements.
 class ReasoningEngineSpec_PackageSpec extends $pb.GeneratedMessage {
@@ -118,7 +118,7 @@ class ReasoningEngineSpec_PackageSpec extends $pb.GeneratedMessage {
 class ReasoningEngineSpec extends $pb.GeneratedMessage {
   factory ReasoningEngineSpec({
     ReasoningEngineSpec_PackageSpec? packageSpec,
-    $core.Iterable<$1734.Struct>? classMethods,
+    $core.Iterable<$1735.Struct>? classMethods,
   }) {
     final $result = create();
     if (packageSpec != null) {
@@ -135,7 +135,7 @@ class ReasoningEngineSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReasoningEngineSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOM<ReasoningEngineSpec_PackageSpec>(2, _omitFieldNames ? '' : 'packageSpec', subBuilder: ReasoningEngineSpec_PackageSpec.create)
-    ..pc<$1734.Struct>(3, _omitFieldNames ? '' : 'classMethods', $pb.PbFieldType.PM, subBuilder: $1734.Struct.create)
+    ..pc<$1735.Struct>(3, _omitFieldNames ? '' : 'classMethods', $pb.PbFieldType.PM, subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -174,7 +174,7 @@ class ReasoningEngineSpec extends $pb.GeneratedMessage {
 
   /// Optional. Declarations for object class methods.
   @$pb.TagNumber(3)
-  $core.List<$1734.Struct> get classMethods => $_getList(1);
+  $core.List<$1735.Struct> get classMethods => $_getList(1);
 }
 
 /// ReasoningEngine provides a customizable runtime for models to determine
@@ -184,8 +184,8 @@ class ReasoningEngine extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     ReasoningEngineSpec? spec,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.String? description,
   }) {
@@ -221,8 +221,8 @@ class ReasoningEngine extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<ReasoningEngineSpec>(3, _omitFieldNames ? '' : 'spec', subBuilder: ReasoningEngineSpec.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
@@ -283,27 +283,27 @@ class ReasoningEngine extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this ReasoningEngine was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Timestamp when this ReasoningEngine was most recently updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. Used to perform consistent read-modify-write updates. If not set,
   /// a blind "overwrite" update happens.

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/money.pb.dart' as $1814;
-import 'common.pb.dart' as $4426;
-import 'common.pbenum.dart' as $4426;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/money.pb.dart' as $1815;
+import 'common.pb.dart' as $4428;
+import 'common.pbenum.dart' as $4428;
 import 'offers.pbenum.dart';
-import 'products.pb.dart' as $4428;
+import 'products.pb.dart' as $4430;
 
 export 'offers.pbenum.dart';
 
@@ -28,13 +28,13 @@ export 'offers.pbenum.dart';
 class Offer extends $pb.GeneratedMessage {
   factory Offer({
     $core.String? name,
-    $4428.MarketingInfo? marketingInfo,
-    $4428.Sku? sku,
+    $4430.MarketingInfo? marketingInfo,
+    $4430.Sku? sku,
     Plan? plan,
     Constraints? constraints,
     $core.Iterable<PriceByResource>? priceByResources,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.Iterable<ParameterDefinition>? parameterDefinitions,
     $core.String? dealCode,
   }) {
@@ -77,13 +77,13 @@ class Offer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Offer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4428.MarketingInfo>(2, _omitFieldNames ? '' : 'marketingInfo', subBuilder: $4428.MarketingInfo.create)
-    ..aOM<$4428.Sku>(3, _omitFieldNames ? '' : 'sku', subBuilder: $4428.Sku.create)
+    ..aOM<$4430.MarketingInfo>(2, _omitFieldNames ? '' : 'marketingInfo', subBuilder: $4430.MarketingInfo.create)
+    ..aOM<$4430.Sku>(3, _omitFieldNames ? '' : 'sku', subBuilder: $4430.Sku.create)
     ..aOM<Plan>(4, _omitFieldNames ? '' : 'plan', subBuilder: Plan.create)
     ..aOM<Constraints>(5, _omitFieldNames ? '' : 'constraints', subBuilder: Constraints.create)
     ..pc<PriceByResource>(6, _omitFieldNames ? '' : 'priceByResources', $pb.PbFieldType.PM, subBuilder: PriceByResource.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..pc<ParameterDefinition>(9, _omitFieldNames ? '' : 'parameterDefinitions', $pb.PbFieldType.PM, subBuilder: ParameterDefinition.create)
     ..aOS(12, _omitFieldNames ? '' : 'dealCode')
     ..hasRequiredFields = false
@@ -123,27 +123,27 @@ class Offer extends $pb.GeneratedMessage {
 
   /// Marketing information for the Offer.
   @$pb.TagNumber(2)
-  $4428.MarketingInfo get marketingInfo => $_getN(1);
+  $4430.MarketingInfo get marketingInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set marketingInfo($4428.MarketingInfo v) { setField(2, v); }
+  set marketingInfo($4430.MarketingInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMarketingInfo() => $_has(1);
   @$pb.TagNumber(2)
   void clearMarketingInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $4428.MarketingInfo ensureMarketingInfo() => $_ensure(1);
+  $4430.MarketingInfo ensureMarketingInfo() => $_ensure(1);
 
   /// SKU the offer is associated with.
   @$pb.TagNumber(3)
-  $4428.Sku get sku => $_getN(2);
+  $4430.Sku get sku => $_getN(2);
   @$pb.TagNumber(3)
-  set sku($4428.Sku v) { setField(3, v); }
+  set sku($4430.Sku v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSku() => $_has(2);
   @$pb.TagNumber(3)
   void clearSku() => clearField(3);
   @$pb.TagNumber(3)
-  $4428.Sku ensureSku() => $_ensure(2);
+  $4430.Sku ensureSku() => $_ensure(2);
 
   /// Describes the payment plan for the Offer.
   @$pb.TagNumber(4)
@@ -175,27 +175,27 @@ class Offer extends $pb.GeneratedMessage {
 
   /// Start of the Offer validity time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get startTime => $_getN(6);
+  $1776.Timestamp get startTime => $_getN(6);
   @$pb.TagNumber(7)
-  set startTime($1775.Timestamp v) { setField(7, v); }
+  set startTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStartTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureStartTime() => $_ensure(6);
+  $1776.Timestamp ensureStartTime() => $_ensure(6);
 
   /// Output only. End of the Offer validity time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get endTime => $_getN(7);
+  $1776.Timestamp get endTime => $_getN(7);
   @$pb.TagNumber(8)
-  set endTime($1775.Timestamp v) { setField(8, v); }
+  set endTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasEndTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearEndTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureEndTime() => $_ensure(7);
+  $1776.Timestamp ensureEndTime() => $_ensure(7);
 
   /// Parameters required to use current Offer to purchase.
   @$pb.TagNumber(9)
@@ -218,9 +218,9 @@ class ParameterDefinition extends $pb.GeneratedMessage {
   factory ParameterDefinition({
     $core.String? name,
     ParameterDefinition_ParameterType? parameterType,
-    $4426.Value? minValue,
-    $4426.Value? maxValue,
-    $core.Iterable<$4426.Value>? allowedValues,
+    $4428.Value? minValue,
+    $4428.Value? maxValue,
+    $core.Iterable<$4428.Value>? allowedValues,
     $core.bool? optional,
   }) {
     final $result = create();
@@ -251,9 +251,9 @@ class ParameterDefinition extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ParameterDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<ParameterDefinition_ParameterType>(2, _omitFieldNames ? '' : 'parameterType', $pb.PbFieldType.OE, defaultOrMaker: ParameterDefinition_ParameterType.PARAMETER_TYPE_UNSPECIFIED, valueOf: ParameterDefinition_ParameterType.valueOf, enumValues: ParameterDefinition_ParameterType.values)
-    ..aOM<$4426.Value>(3, _omitFieldNames ? '' : 'minValue', subBuilder: $4426.Value.create)
-    ..aOM<$4426.Value>(4, _omitFieldNames ? '' : 'maxValue', subBuilder: $4426.Value.create)
-    ..pc<$4426.Value>(5, _omitFieldNames ? '' : 'allowedValues', $pb.PbFieldType.PM, subBuilder: $4426.Value.create)
+    ..aOM<$4428.Value>(3, _omitFieldNames ? '' : 'minValue', subBuilder: $4428.Value.create)
+    ..aOM<$4428.Value>(4, _omitFieldNames ? '' : 'maxValue', subBuilder: $4428.Value.create)
+    ..pc<$4428.Value>(5, _omitFieldNames ? '' : 'allowedValues', $pb.PbFieldType.PM, subBuilder: $4428.Value.create)
     ..aOB(6, _omitFieldNames ? '' : 'optional')
     ..hasRequiredFields = false
   ;
@@ -304,35 +304,35 @@ class ParameterDefinition extends $pb.GeneratedMessage {
   /// minimal commitment when purchasing Anthos is 0.01.
   /// Applicable to INT64 and DOUBLE parameter types.
   @$pb.TagNumber(3)
-  $4426.Value get minValue => $_getN(2);
+  $4428.Value get minValue => $_getN(2);
   @$pb.TagNumber(3)
-  set minValue($4426.Value v) { setField(3, v); }
+  set minValue($4428.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinValue() => clearField(3);
   @$pb.TagNumber(3)
-  $4426.Value ensureMinValue() => $_ensure(2);
+  $4428.Value ensureMinValue() => $_ensure(2);
 
   /// Maximum value of the parameter, if applicable. Inclusive. For example,
   /// maximum seats when purchasing Google Workspace Business Standard.
   /// Applicable to INT64 and DOUBLE parameter types.
   @$pb.TagNumber(4)
-  $4426.Value get maxValue => $_getN(3);
+  $4428.Value get maxValue => $_getN(3);
   @$pb.TagNumber(4)
-  set maxValue($4426.Value v) { setField(4, v); }
+  set maxValue($4428.Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxValue() => $_has(3);
   @$pb.TagNumber(4)
   void clearMaxValue() => clearField(4);
   @$pb.TagNumber(4)
-  $4426.Value ensureMaxValue() => $_ensure(3);
+  $4428.Value ensureMaxValue() => $_ensure(3);
 
   /// If not empty, parameter values must be drawn from this list.
   /// For example, [us-west1, us-west2, ...]
   /// Applicable to STRING parameter type.
   @$pb.TagNumber(5)
-  $core.List<$4426.Value> get allowedValues => $_getList(4);
+  $core.List<$4428.Value> get allowedValues => $_getList(4);
 
   /// If set to true, parameter is optional to purchase this Offer.
   @$pb.TagNumber(6)
@@ -403,7 +403,7 @@ class Constraints extends $pb.GeneratedMessage {
 class CustomerConstraints extends $pb.GeneratedMessage {
   factory CustomerConstraints({
     $core.Iterable<$core.String>? allowedRegions,
-    $core.Iterable<$4426.CloudIdentityInfo_CustomerType>? allowedCustomerTypes,
+    $core.Iterable<$4428.CloudIdentityInfo_CustomerType>? allowedCustomerTypes,
     $core.Iterable<PromotionalOrderType>? promotionalOrderTypes,
   }) {
     final $result = create();
@@ -424,7 +424,7 @@ class CustomerConstraints extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerConstraints', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'allowedRegions')
-    ..pc<$4426.CloudIdentityInfo_CustomerType>(2, _omitFieldNames ? '' : 'allowedCustomerTypes', $pb.PbFieldType.KE, valueOf: $4426.CloudIdentityInfo_CustomerType.valueOf, enumValues: $4426.CloudIdentityInfo_CustomerType.values, defaultEnumValue: $4426.CloudIdentityInfo_CustomerType.CUSTOMER_TYPE_UNSPECIFIED)
+    ..pc<$4428.CloudIdentityInfo_CustomerType>(2, _omitFieldNames ? '' : 'allowedCustomerTypes', $pb.PbFieldType.KE, valueOf: $4428.CloudIdentityInfo_CustomerType.valueOf, enumValues: $4428.CloudIdentityInfo_CustomerType.values, defaultEnumValue: $4428.CloudIdentityInfo_CustomerType.CUSTOMER_TYPE_UNSPECIFIED)
     ..pc<PromotionalOrderType>(3, _omitFieldNames ? '' : 'promotionalOrderTypes', $pb.PbFieldType.KE, valueOf: PromotionalOrderType.valueOf, enumValues: PromotionalOrderType.values, defaultEnumValue: PromotionalOrderType.PROMOTIONAL_TYPE_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
@@ -456,7 +456,7 @@ class CustomerConstraints extends $pb.GeneratedMessage {
 
   /// Allowed Customer Type.
   @$pb.TagNumber(2)
-  $core.List<$4426.CloudIdentityInfo_CustomerType> get allowedCustomerTypes => $_getList(1);
+  $core.List<$4428.CloudIdentityInfo_CustomerType> get allowedCustomerTypes => $_getList(1);
 
   /// Allowed Promotional Order Type. Present for Promotional offers.
   @$pb.TagNumber(3)
@@ -667,9 +667,9 @@ class PriceByResource extends $pb.GeneratedMessage {
 /// Represents the price of the Offer.
 class Price extends $pb.GeneratedMessage {
   factory Price({
-    $1814.Money? basePrice,
+    $1815.Money? basePrice,
     $core.double? discount,
-    $1814.Money? effectivePrice,
+    $1815.Money? effectivePrice,
     $core.String? externalPriceUri,
   }) {
     final $result = create();
@@ -692,9 +692,9 @@ class Price extends $pb.GeneratedMessage {
   factory Price.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Price', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..aOM<$1814.Money>(1, _omitFieldNames ? '' : 'basePrice', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(1, _omitFieldNames ? '' : 'basePrice', subBuilder: $1815.Money.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'discount', $pb.PbFieldType.OD)
-    ..aOM<$1814.Money>(3, _omitFieldNames ? '' : 'effectivePrice', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(3, _omitFieldNames ? '' : 'effectivePrice', subBuilder: $1815.Money.create)
     ..aOS(4, _omitFieldNames ? '' : 'externalPriceUri')
     ..hasRequiredFields = false
   ;
@@ -722,15 +722,15 @@ class Price extends $pb.GeneratedMessage {
 
   /// Base price.
   @$pb.TagNumber(1)
-  $1814.Money get basePrice => $_getN(0);
+  $1815.Money get basePrice => $_getN(0);
   @$pb.TagNumber(1)
-  set basePrice($1814.Money v) { setField(1, v); }
+  set basePrice($1815.Money v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBasePrice() => $_has(0);
   @$pb.TagNumber(1)
   void clearBasePrice() => clearField(1);
   @$pb.TagNumber(1)
-  $1814.Money ensureBasePrice() => $_ensure(0);
+  $1815.Money ensureBasePrice() => $_ensure(0);
 
   /// Discount percentage, represented as decimal.
   /// For example, a 20% discount will be represent as 0.2.
@@ -745,15 +745,15 @@ class Price extends $pb.GeneratedMessage {
 
   /// Effective Price after applying the discounts.
   @$pb.TagNumber(3)
-  $1814.Money get effectivePrice => $_getN(2);
+  $1815.Money get effectivePrice => $_getN(2);
   @$pb.TagNumber(3)
-  set effectivePrice($1814.Money v) { setField(3, v); }
+  set effectivePrice($1815.Money v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEffectivePrice() => $_has(2);
   @$pb.TagNumber(3)
   void clearEffectivePrice() => clearField(3);
   @$pb.TagNumber(3)
-  $1814.Money ensureEffectivePrice() => $_ensure(2);
+  $1815.Money ensureEffectivePrice() => $_ensure(2);
 
   /// Link to external price list, such as link to Google Voice rate card.
   @$pb.TagNumber(4)

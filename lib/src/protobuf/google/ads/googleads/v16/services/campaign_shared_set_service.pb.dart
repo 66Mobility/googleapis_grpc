@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/campaign_shared_set.pb.dart' as $3089;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/campaign_shared_set.pb.dart' as $3090;
 
 /// Request message for
 /// [CampaignSharedSetService.MutateCampaignSharedSets][google.ads.googleads.v16.services.CampaignSharedSetService.MutateCampaignSharedSets].
@@ -25,7 +25,7 @@ class MutateCampaignSharedSetsRequest extends $pb.GeneratedMessage {
     $core.Iterable<CampaignSharedSetOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateCampaignSharedSetsRequest extends $pb.GeneratedMessage {
     ..pc<CampaignSharedSetOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: CampaignSharedSetOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -122,9 +122,9 @@ class MutateCampaignSharedSetsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,7 +140,7 @@ enum CampaignSharedSetOperation_Operation {
 /// A single operation (create, remove) on a campaign shared set.
 class CampaignSharedSetOperation extends $pb.GeneratedMessage {
   factory CampaignSharedSetOperation({
-    $3089.CampaignSharedSet? create_1,
+    $3090.CampaignSharedSet? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -163,7 +163,7 @@ class CampaignSharedSetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignSharedSetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 3])
-    ..aOM<$3089.CampaignSharedSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $3089.CampaignSharedSet.create)
+    ..aOM<$3090.CampaignSharedSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $3090.CampaignSharedSet.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -195,15 +195,15 @@ class CampaignSharedSetOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new campaign
   /// shared set.
   @$pb.TagNumber(1)
-  $3089.CampaignSharedSet get create_1 => $_getN(0);
+  $3090.CampaignSharedSet get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3089.CampaignSharedSet v) { setField(1, v); }
+  set create_1($3090.CampaignSharedSet v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3089.CampaignSharedSet ensureCreate_1() => $_ensure(0);
+  $3090.CampaignSharedSet ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed campaign shared set is
   ///  expected, in this format:
@@ -223,7 +223,7 @@ class CampaignSharedSetOperation extends $pb.GeneratedMessage {
 class MutateCampaignSharedSetsResponse extends $pb.GeneratedMessage {
   factory MutateCampaignSharedSetsResponse({
     $core.Iterable<MutateCampaignSharedSetResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -240,7 +240,7 @@ class MutateCampaignSharedSetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCampaignSharedSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateCampaignSharedSetResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateCampaignSharedSetResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -274,22 +274,22 @@ class MutateCampaignSharedSetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the campaign shared set mutate.
 class MutateCampaignSharedSetResult extends $pb.GeneratedMessage {
   factory MutateCampaignSharedSetResult({
     $core.String? resourceName,
-    $3089.CampaignSharedSet? campaignSharedSet,
+    $3090.CampaignSharedSet? campaignSharedSet,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -306,7 +306,7 @@ class MutateCampaignSharedSetResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCampaignSharedSetResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3089.CampaignSharedSet>(2, _omitFieldNames ? '' : 'campaignSharedSet', subBuilder: $3089.CampaignSharedSet.create)
+    ..aOM<$3090.CampaignSharedSet>(2, _omitFieldNames ? '' : 'campaignSharedSet', subBuilder: $3090.CampaignSharedSet.create)
     ..hasRequiredFields = false
   ;
 
@@ -345,15 +345,15 @@ class MutateCampaignSharedSetResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3089.CampaignSharedSet get campaignSharedSet => $_getN(1);
+  $3090.CampaignSharedSet get campaignSharedSet => $_getN(1);
   @$pb.TagNumber(2)
-  set campaignSharedSet($3089.CampaignSharedSet v) { setField(2, v); }
+  set campaignSharedSet($3090.CampaignSharedSet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCampaignSharedSet() => $_has(1);
   @$pb.TagNumber(2)
   void clearCampaignSharedSet() => clearField(2);
   @$pb.TagNumber(2)
-  $3089.CampaignSharedSet ensureCampaignSharedSet() => $_ensure(1);
+  $3090.CampaignSharedSet ensureCampaignSharedSet() => $_ensure(1);
 }
 
 

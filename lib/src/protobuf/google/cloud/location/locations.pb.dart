@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/any.pb.dart' as $1794;
+import '../../protobuf/any.pb.dart' as $1795;
 
 /// The request message for [Locations.ListLocations][google.cloud.location.Locations.ListLocations].
 class ListLocationsRequest extends $pb.GeneratedMessage {
@@ -230,7 +230,7 @@ class Location extends $pb.GeneratedMessage {
   factory Location({
     $core.String? name,
     $core.Map<$core.String, $core.String>? labels,
-    $1794.Any? metadata,
+    $1795.Any? metadata,
     $core.String? locationId,
     $core.String? displayName,
   }) {
@@ -259,7 +259,7 @@ class Location extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Location', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.location'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'Location.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.location'))
-    ..aOM<$1794.Any>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $1795.Any.create)
     ..aOS(4, _omitFieldNames ? '' : 'locationId')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
@@ -306,15 +306,15 @@ class Location extends $pb.GeneratedMessage {
   /// Service-specific metadata. For example the available capacity at the given
   /// location.
   @$pb.TagNumber(3)
-  $1794.Any get metadata => $_getN(2);
+  $1795.Any get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata($1794.Any v) { setField(3, v); }
+  set metadata($1795.Any v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $1794.Any ensureMetadata() => $_ensure(2);
+  $1795.Any ensureMetadata() => $_ensure(2);
 
   /// The canonical id for this location. For example: `"us-east1"`.
   @$pb.TagNumber(4)

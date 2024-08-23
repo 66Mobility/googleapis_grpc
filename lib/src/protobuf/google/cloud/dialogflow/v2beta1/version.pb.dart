@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'version.pbenum.dart';
 
 export 'version.pbenum.dart';
@@ -42,7 +42,7 @@ class Version extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     $core.int? versionNumber,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Version_VersionStatus? status,
   }) {
     final $result = create();
@@ -71,7 +71,7 @@ class Version extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'versionNumber', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Version_VersionStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: Version_VersionStatus.VERSION_STATUS_UNSPECIFIED, valueOf: Version_VersionStatus.valueOf, enumValues: Version_VersionStatus.values)
     ..hasRequiredFields = false
   ;
@@ -135,15 +135,15 @@ class Version extends $pb.GeneratedMessage {
   /// Output only. The creation time of this version. This field is read-only,
   /// i.e., it cannot be set by create and update methods.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The status of this version. This field is read-only and cannot
   /// be set by create and update methods.
@@ -443,7 +443,7 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
 class UpdateVersionRequest extends $pb.GeneratedMessage {
   factory UpdateVersionRequest({
     Version? version,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (version != null) {
@@ -460,7 +460,7 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVersionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<Version>(1, _omitFieldNames ? '' : 'version', subBuilder: Version.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -503,15 +503,15 @@ class UpdateVersionRequest extends $pb.GeneratedMessage {
 
   /// Required. The mask to control which fields get updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for

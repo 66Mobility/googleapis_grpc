@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'tuned_model.pbenum.dart';
 
 export 'tuned_model.pbenum.dart';
@@ -33,8 +33,8 @@ class TunedModel extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     TunedModel_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     TuningTask? tuningTask,
     $core.double? temperature,
     $core.double? topP,
@@ -96,8 +96,8 @@ class TunedModel extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..e<TunedModel_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: TunedModel_State.STATE_UNSPECIFIED, valueOf: TunedModel_State.valueOf, enumValues: TunedModel_State.values)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<TuningTask>(10, _omitFieldNames ? '' : 'tuningTask', subBuilder: TuningTask.create)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
@@ -205,27 +205,27 @@ class TunedModel extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this model was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The timestamp when this model was updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Required. The tuning task that creates the tuned model.
   @$pb.TagNumber(10)
@@ -363,8 +363,8 @@ class TunedModelSource extends $pb.GeneratedMessage {
 /// Tuning tasks that create tuned models.
 class TuningTask extends $pb.GeneratedMessage {
   factory TuningTask({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? completeTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? completeTime,
     $core.Iterable<TuningSnapshot>? snapshots,
     Dataset? trainingData,
     Hyperparameters? hyperparameters,
@@ -392,8 +392,8 @@ class TuningTask extends $pb.GeneratedMessage {
   factory TuningTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TuningTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'completeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'completeTime', subBuilder: $1776.Timestamp.create)
     ..pc<TuningSnapshot>(3, _omitFieldNames ? '' : 'snapshots', $pb.PbFieldType.PM, subBuilder: TuningSnapshot.create)
     ..aOM<Dataset>(4, _omitFieldNames ? '' : 'trainingData', subBuilder: Dataset.create)
     ..aOM<Hyperparameters>(5, _omitFieldNames ? '' : 'hyperparameters', subBuilder: Hyperparameters.create)
@@ -423,27 +423,27 @@ class TuningTask extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when tuning this model started.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. The timestamp when tuning this model completed.
   @$pb.TagNumber(2)
-  $1775.Timestamp get completeTime => $_getN(1);
+  $1776.Timestamp get completeTime => $_getN(1);
   @$pb.TagNumber(2)
-  set completeTime($1775.Timestamp v) { setField(2, v); }
+  set completeTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCompleteTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCompleteTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCompleteTime() => $_ensure(1);
+  $1776.Timestamp ensureCompleteTime() => $_ensure(1);
 
   /// Output only. Metrics collected during tuning.
   @$pb.TagNumber(3)
@@ -797,7 +797,7 @@ class TuningSnapshot extends $pb.GeneratedMessage {
     $core.int? step,
     $core.int? epoch,
     $core.double? meanLoss,
-    $1775.Timestamp? computeTime,
+    $1776.Timestamp? computeTime,
   }) {
     final $result = create();
     if (step != null) {
@@ -822,7 +822,7 @@ class TuningSnapshot extends $pb.GeneratedMessage {
     ..a<$core.int>(1, _omitFieldNames ? '' : 'step', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'epoch', $pb.PbFieldType.O3)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'meanLoss', $pb.PbFieldType.OF)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'computeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'computeTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -879,15 +879,15 @@ class TuningSnapshot extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when this metric was computed.
   @$pb.TagNumber(4)
-  $1775.Timestamp get computeTime => $_getN(3);
+  $1776.Timestamp get computeTime => $_getN(3);
   @$pb.TagNumber(4)
-  set computeTime($1775.Timestamp v) { setField(4, v); }
+  set computeTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasComputeTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearComputeTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureComputeTime() => $_ensure(3);
+  $1776.Timestamp ensureComputeTime() => $_ensure(3);
 }
 
 

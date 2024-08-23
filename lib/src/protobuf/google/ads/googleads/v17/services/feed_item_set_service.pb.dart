@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/feed_item_set.pb.dart' as $3839;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/feed_item_set.pb.dart' as $3840;
 
 /// Request message for
 /// [FeedItemSetService.MutateFeedItemSets][google.ads.googleads.v17.services.FeedItemSetService.MutateFeedItemSets].
@@ -123,10 +123,10 @@ enum FeedItemSetOperation_Operation {
 /// A single operation (create, remove) on an feed item set.
 class FeedItemSetOperation extends $pb.GeneratedMessage {
   factory FeedItemSetOperation({
-    $3839.FeedItemSet? create_1,
-    $3839.FeedItemSet? update,
+    $3840.FeedItemSet? create_1,
+    $3840.FeedItemSet? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -155,10 +155,10 @@ class FeedItemSetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItemSetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3839.FeedItemSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $3839.FeedItemSet.create)
-    ..aOM<$3839.FeedItemSet>(2, _omitFieldNames ? '' : 'update', subBuilder: $3839.FeedItemSet.create)
+    ..aOM<$3840.FeedItemSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $3840.FeedItemSet.create)
+    ..aOM<$3840.FeedItemSet>(2, _omitFieldNames ? '' : 'update', subBuilder: $3840.FeedItemSet.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -188,28 +188,28 @@ class FeedItemSetOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new feed item set
   @$pb.TagNumber(1)
-  $3839.FeedItemSet get create_1 => $_getN(0);
+  $3840.FeedItemSet get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3839.FeedItemSet v) { setField(1, v); }
+  set create_1($3840.FeedItemSet v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3839.FeedItemSet ensureCreate_1() => $_ensure(0);
+  $3840.FeedItemSet ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The feed item set is expected to have a valid resource
   /// name.
   @$pb.TagNumber(2)
-  $3839.FeedItemSet get update => $_getN(1);
+  $3840.FeedItemSet get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3839.FeedItemSet v) { setField(2, v); }
+  set update($3840.FeedItemSet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3839.FeedItemSet ensureUpdate() => $_ensure(1);
+  $3840.FeedItemSet ensureUpdate() => $_ensure(1);
 
   /// Remove operation: A resource name for the removed feed item is
   /// expected, in this format:
@@ -225,22 +225,22 @@ class FeedItemSetOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for an feed item set mutate.
 class MutateFeedItemSetsResponse extends $pb.GeneratedMessage {
   factory MutateFeedItemSetsResponse({
     $core.Iterable<MutateFeedItemSetResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -257,7 +257,7 @@ class MutateFeedItemSetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateFeedItemSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateFeedItemSetResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateFeedItemSetResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -291,15 +291,15 @@ class MutateFeedItemSetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the feed item set mutate.

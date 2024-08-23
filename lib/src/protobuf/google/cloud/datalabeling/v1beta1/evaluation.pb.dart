@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'annotation.pbenum.dart' as $4465;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'annotation.pbenum.dart' as $4467;
 import 'annotation_spec_set.pb.dart' as $815;
 
 /// Describes an evaluation between a machine learning model's predictions and
@@ -24,10 +24,10 @@ class Evaluation extends $pb.GeneratedMessage {
   factory Evaluation({
     $core.String? name,
     EvaluationConfig? config,
-    $1775.Timestamp? evaluationJobRunTime,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? evaluationJobRunTime,
+    $1776.Timestamp? createTime,
     EvaluationMetrics? evaluationMetrics,
-    $4465.AnnotationType? annotationType,
+    $4467.AnnotationType? annotationType,
     $fixnum.Int64? evaluatedItemCount,
   }) {
     final $result = create();
@@ -61,10 +61,10 @@ class Evaluation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Evaluation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datalabeling.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<EvaluationConfig>(2, _omitFieldNames ? '' : 'config', subBuilder: EvaluationConfig.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'evaluationJobRunTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'evaluationJobRunTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<EvaluationMetrics>(5, _omitFieldNames ? '' : 'evaluationMetrics', subBuilder: EvaluationMetrics.create)
-    ..e<$4465.AnnotationType>(6, _omitFieldNames ? '' : 'annotationType', $pb.PbFieldType.OE, defaultOrMaker: $4465.AnnotationType.ANNOTATION_TYPE_UNSPECIFIED, valueOf: $4465.AnnotationType.valueOf, enumValues: $4465.AnnotationType.values)
+    ..e<$4467.AnnotationType>(6, _omitFieldNames ? '' : 'annotationType', $pb.PbFieldType.OE, defaultOrMaker: $4467.AnnotationType.ANNOTATION_TYPE_UNSPECIFIED, valueOf: $4467.AnnotationType.valueOf, enumValues: $4467.AnnotationType.values)
     ..aInt64(7, _omitFieldNames ? '' : 'evaluatedItemCount')
     ..hasRequiredFields = false
   ;
@@ -119,27 +119,27 @@ class Evaluation extends $pb.GeneratedMessage {
   /// Output only. Timestamp for when the evaluation job that created this
   /// evaluation ran.
   @$pb.TagNumber(3)
-  $1775.Timestamp get evaluationJobRunTime => $_getN(2);
+  $1776.Timestamp get evaluationJobRunTime => $_getN(2);
   @$pb.TagNumber(3)
-  set evaluationJobRunTime($1775.Timestamp v) { setField(3, v); }
+  set evaluationJobRunTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEvaluationJobRunTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEvaluationJobRunTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEvaluationJobRunTime() => $_ensure(2);
+  $1776.Timestamp ensureEvaluationJobRunTime() => $_ensure(2);
 
   /// Output only. Timestamp for when this evaluation was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Metrics comparing predictions to ground truth labels.
   @$pb.TagNumber(5)
@@ -159,9 +159,9 @@ class Evaluation extends $pb.GeneratedMessage {
   ///  [evaluationJobConfig.inputConfig.annotationType][google.cloud.datalabeling.v1beta1.EvaluationJobConfig.input_config]
   ///  field of the evaluation job that created this evaluation.
   @$pb.TagNumber(6)
-  $4465.AnnotationType get annotationType => $_getN(5);
+  $4467.AnnotationType get annotationType => $_getN(5);
   @$pb.TagNumber(6)
-  set annotationType($4465.AnnotationType v) { setField(6, v); }
+  set annotationType($4467.AnnotationType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAnnotationType() => $_has(5);
   @$pb.TagNumber(6)

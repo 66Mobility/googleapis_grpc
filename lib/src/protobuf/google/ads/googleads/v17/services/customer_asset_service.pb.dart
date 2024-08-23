@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3796;
-import '../resources/customer_asset.pb.dart' as $3656;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3797;
+import '../resources/customer_asset.pb.dart' as $3657;
 
 /// Request message for
 /// [CustomerAssetService.MutateCustomerAssets][google.ads.googleads.v17.services.CustomerAssetService.MutateCustomerAssets].
@@ -26,7 +26,7 @@ class MutateCustomerAssetsRequest extends $pb.GeneratedMessage {
     $core.Iterable<CustomerAssetOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3796.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3797.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateCustomerAssetsRequest extends $pb.GeneratedMessage {
     ..pc<CustomerAssetOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: CustomerAssetOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3796.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3796.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3796.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3796.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3797.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3797.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3797.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3797.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -121,9 +121,9 @@ class MutateCustomerAssetsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3796.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3797.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3796.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3797.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,10 +140,10 @@ enum CustomerAssetOperation_Operation {
 /// A single operation (create, update, remove) on a customer asset.
 class CustomerAssetOperation extends $pb.GeneratedMessage {
   factory CustomerAssetOperation({
-    $3656.CustomerAsset? create_1,
+    $3657.CustomerAsset? create_1,
     $core.String? remove,
-    $3656.CustomerAsset? update,
-    $2209.FieldMask? updateMask,
+    $3657.CustomerAsset? update,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -172,10 +172,10 @@ class CustomerAssetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerAssetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3656.CustomerAsset>(1, _omitFieldNames ? '' : 'create', subBuilder: $3656.CustomerAsset.create)
+    ..aOM<$3657.CustomerAsset>(1, _omitFieldNames ? '' : 'create', subBuilder: $3657.CustomerAsset.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
-    ..aOM<$3656.CustomerAsset>(3, _omitFieldNames ? '' : 'update', subBuilder: $3656.CustomerAsset.create)
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$3657.CustomerAsset>(3, _omitFieldNames ? '' : 'update', subBuilder: $3657.CustomerAsset.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -206,15 +206,15 @@ class CustomerAssetOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new customer
   /// asset.
   @$pb.TagNumber(1)
-  $3656.CustomerAsset get create_1 => $_getN(0);
+  $3657.CustomerAsset get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3656.CustomerAsset v) { setField(1, v); }
+  set create_1($3657.CustomerAsset v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3656.CustomerAsset ensureCreate_1() => $_ensure(0);
+  $3657.CustomerAsset ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed customer asset is
   ///  expected, in this format:
@@ -232,33 +232,33 @@ class CustomerAssetOperation extends $pb.GeneratedMessage {
   /// Update operation: The customer asset is expected to have a valid resource
   /// name.
   @$pb.TagNumber(3)
-  $3656.CustomerAsset get update => $_getN(2);
+  $3657.CustomerAsset get update => $_getN(2);
   @$pb.TagNumber(3)
-  set update($3656.CustomerAsset v) { setField(3, v); }
+  set update($3657.CustomerAsset v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdate() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdate() => clearField(3);
   @$pb.TagNumber(3)
-  $3656.CustomerAsset ensureUpdate() => $_ensure(2);
+  $3657.CustomerAsset ensureUpdate() => $_ensure(2);
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for a customer asset mutate.
 class MutateCustomerAssetsResponse extends $pb.GeneratedMessage {
   factory MutateCustomerAssetsResponse({
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     $core.Iterable<MutateCustomerAssetResult>? results,
   }) {
     final $result = create();
@@ -275,7 +275,7 @@ class MutateCustomerAssetsResponse extends $pb.GeneratedMessage {
   factory MutateCustomerAssetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..pc<MutateCustomerAssetResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateCustomerAssetResult.create)
     ..hasRequiredFields = false
   ;
@@ -306,15 +306,15 @@ class MutateCustomerAssetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// All results for the mutate.
   @$pb.TagNumber(2)
@@ -325,7 +325,7 @@ class MutateCustomerAssetsResponse extends $pb.GeneratedMessage {
 class MutateCustomerAssetResult extends $pb.GeneratedMessage {
   factory MutateCustomerAssetResult({
     $core.String? resourceName,
-    $3656.CustomerAsset? customerAsset,
+    $3657.CustomerAsset? customerAsset,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -342,7 +342,7 @@ class MutateCustomerAssetResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerAssetResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3656.CustomerAsset>(2, _omitFieldNames ? '' : 'customerAsset', subBuilder: $3656.CustomerAsset.create)
+    ..aOM<$3657.CustomerAsset>(2, _omitFieldNames ? '' : 'customerAsset', subBuilder: $3657.CustomerAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -381,15 +381,15 @@ class MutateCustomerAssetResult extends $pb.GeneratedMessage {
   /// mutate. The field will only be returned when response_content_type is set
   /// to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3656.CustomerAsset get customerAsset => $_getN(1);
+  $3657.CustomerAsset get customerAsset => $_getN(1);
   @$pb.TagNumber(2)
-  set customerAsset($3656.CustomerAsset v) { setField(2, v); }
+  set customerAsset($3657.CustomerAsset v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomerAsset() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomerAsset() => clearField(2);
   @$pb.TagNumber(2)
-  $3656.CustomerAsset ensureCustomerAsset() => $_ensure(1);
+  $3657.CustomerAsset ensureCustomerAsset() => $_ensure(1);
 }
 
 

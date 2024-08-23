@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'connectivity_test.pbenum.dart';
-import 'trace.pb.dart' as $4564;
-import 'trace.pbenum.dart' as $4564;
+import 'trace.pb.dart' as $4566;
+import 'trace.pbenum.dart' as $4566;
 
 export 'connectivity_test.pbenum.dart';
 
@@ -33,8 +33,8 @@ class ConnectivityTest extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? relatedProjects,
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     ReachabilityDetails? reachabilityDetails,
     ProbingDetails? probingDetails,
     $core.bool? bypassFirewallChecks,
@@ -94,8 +94,8 @@ class ConnectivityTest extends $pb.GeneratedMessage {
     ..pPS(6, _omitFieldNames ? '' : 'relatedProjects')
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'ConnectivityTest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networkmanagement.v1beta1'))
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ReachabilityDetails>(12, _omitFieldNames ? '' : 'reachabilityDetails', subBuilder: ReachabilityDetails.create)
     ..aOM<ProbingDetails>(14, _omitFieldNames ? '' : 'probingDetails', subBuilder: ProbingDetails.create)
     ..aOB(17, _omitFieldNames ? '' : 'bypassFirewallChecks')
@@ -238,27 +238,27 @@ class ConnectivityTest extends $pb.GeneratedMessage {
 
   /// Output only. The time the test was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. The time the test's configuration was updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Output only. The reachability details of this test from the latest run.
   /// The details are updated when creating a new test, updating an
@@ -479,7 +479,7 @@ class Endpoint extends $pb.GeneratedMessage {
     $core.String? forwardingRule,
     Endpoint_ForwardingRuleTarget? forwardingRuleTarget,
     $core.String? loadBalancerId,
-    $4564.LoadBalancerType? loadBalancerType,
+    $4566.LoadBalancerType? loadBalancerType,
   }) {
     final $result = create();
     if (ipAddress != null) {
@@ -548,7 +548,7 @@ class Endpoint extends $pb.GeneratedMessage {
     ..aOS(13, _omitFieldNames ? '' : 'forwardingRule')
     ..e<Endpoint_ForwardingRuleTarget>(14, _omitFieldNames ? '' : 'forwardingRuleTarget', $pb.PbFieldType.OE, defaultOrMaker: Endpoint_ForwardingRuleTarget.FORWARDING_RULE_TARGET_UNSPECIFIED, valueOf: Endpoint_ForwardingRuleTarget.valueOf, enumValues: Endpoint_ForwardingRuleTarget.values)
     ..aOS(15, _omitFieldNames ? '' : 'loadBalancerId')
-    ..e<$4564.LoadBalancerType>(16, _omitFieldNames ? '' : 'loadBalancerType', $pb.PbFieldType.OE, defaultOrMaker: $4564.LoadBalancerType.LOAD_BALANCER_TYPE_UNSPECIFIED, valueOf: $4564.LoadBalancerType.valueOf, enumValues: $4564.LoadBalancerType.values)
+    ..e<$4566.LoadBalancerType>(16, _omitFieldNames ? '' : 'loadBalancerType', $pb.PbFieldType.OE, defaultOrMaker: $4566.LoadBalancerType.LOAD_BALANCER_TYPE_UNSPECIFIED, valueOf: $4566.LoadBalancerType.valueOf, enumValues: $4566.LoadBalancerType.values)
     ..hasRequiredFields = false
   ;
 
@@ -741,9 +741,9 @@ class Endpoint extends $pb.GeneratedMessage {
 
   /// Output only. Type of the load balancer the forwarding rule points to.
   @$pb.TagNumber(16)
-  $4564.LoadBalancerType get loadBalancerType => $_getN(14);
+  $4566.LoadBalancerType get loadBalancerType => $_getN(14);
   @$pb.TagNumber(16)
-  set loadBalancerType($4564.LoadBalancerType v) { setField(16, v); }
+  set loadBalancerType($4566.LoadBalancerType v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasLoadBalancerType() => $_has(14);
   @$pb.TagNumber(16)
@@ -754,9 +754,9 @@ class Endpoint extends $pb.GeneratedMessage {
 class ReachabilityDetails extends $pb.GeneratedMessage {
   factory ReachabilityDetails({
     ReachabilityDetails_Result? result,
-    $1775.Timestamp? verifyTime,
-    $1795.Status? error,
-    $core.Iterable<$4564.Trace>? traces,
+    $1776.Timestamp? verifyTime,
+    $1796.Status? error,
+    $core.Iterable<$4566.Trace>? traces,
   }) {
     final $result = create();
     if (result != null) {
@@ -779,9 +779,9 @@ class ReachabilityDetails extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReachabilityDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkmanagement.v1beta1'), createEmptyInstance: create)
     ..e<ReachabilityDetails_Result>(1, _omitFieldNames ? '' : 'result', $pb.PbFieldType.OE, defaultOrMaker: ReachabilityDetails_Result.RESULT_UNSPECIFIED, valueOf: ReachabilityDetails_Result.valueOf, enumValues: ReachabilityDetails_Result.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'verifyTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..pc<$4564.Trace>(5, _omitFieldNames ? '' : 'traces', $pb.PbFieldType.PM, subBuilder: $4564.Trace.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'verifyTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..pc<$4566.Trace>(5, _omitFieldNames ? '' : 'traces', $pb.PbFieldType.PM, subBuilder: $4566.Trace.create)
     ..hasRequiredFields = false
   ;
 
@@ -818,33 +818,33 @@ class ReachabilityDetails extends $pb.GeneratedMessage {
 
   /// The time of the configuration analysis.
   @$pb.TagNumber(2)
-  $1775.Timestamp get verifyTime => $_getN(1);
+  $1776.Timestamp get verifyTime => $_getN(1);
   @$pb.TagNumber(2)
-  set verifyTime($1775.Timestamp v) { setField(2, v); }
+  set verifyTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVerifyTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearVerifyTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureVerifyTime() => $_ensure(1);
+  $1776.Timestamp ensureVerifyTime() => $_ensure(1);
 
   /// The details of a failure or a cancellation of reachability analysis.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 
   /// Result may contain a list of traces if a test has multiple possible
   /// paths in the network, such as when destination endpoint is a load balancer
   /// with multiple backends.
   @$pb.TagNumber(5)
-  $core.List<$4564.Trace> get traces => $_getList(3);
+  $core.List<$4566.Trace> get traces => $_getList(3);
 }
 
 /// Latency percentile rank and value.
@@ -1019,12 +1019,12 @@ class ProbingDetails_EdgeLocation extends $pb.GeneratedMessage {
 class ProbingDetails extends $pb.GeneratedMessage {
   factory ProbingDetails({
     ProbingDetails_ProbingResult? result,
-    $1775.Timestamp? verifyTime,
-    $1795.Status? error,
+    $1776.Timestamp? verifyTime,
+    $1796.Status? error,
     ProbingDetails_ProbingAbortCause? abortCause,
     $core.int? sentProbeCount,
     $core.int? successfulProbeCount,
-    $4564.EndpointInfo? endpointInfo,
+    $4566.EndpointInfo? endpointInfo,
     LatencyDistribution? probingLatency,
     ProbingDetails_EdgeLocation? destinationEgressLocation,
   }) {
@@ -1064,12 +1064,12 @@ class ProbingDetails extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProbingDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkmanagement.v1beta1'), createEmptyInstance: create)
     ..e<ProbingDetails_ProbingResult>(1, _omitFieldNames ? '' : 'result', $pb.PbFieldType.OE, defaultOrMaker: ProbingDetails_ProbingResult.PROBING_RESULT_UNSPECIFIED, valueOf: ProbingDetails_ProbingResult.valueOf, enumValues: ProbingDetails_ProbingResult.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'verifyTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'verifyTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..e<ProbingDetails_ProbingAbortCause>(4, _omitFieldNames ? '' : 'abortCause', $pb.PbFieldType.OE, defaultOrMaker: ProbingDetails_ProbingAbortCause.PROBING_ABORT_CAUSE_UNSPECIFIED, valueOf: ProbingDetails_ProbingAbortCause.valueOf, enumValues: ProbingDetails_ProbingAbortCause.values)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'sentProbeCount', $pb.PbFieldType.O3)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'successfulProbeCount', $pb.PbFieldType.O3)
-    ..aOM<$4564.EndpointInfo>(7, _omitFieldNames ? '' : 'endpointInfo', subBuilder: $4564.EndpointInfo.create)
+    ..aOM<$4566.EndpointInfo>(7, _omitFieldNames ? '' : 'endpointInfo', subBuilder: $4566.EndpointInfo.create)
     ..aOM<LatencyDistribution>(8, _omitFieldNames ? '' : 'probingLatency', subBuilder: LatencyDistribution.create)
     ..aOM<ProbingDetails_EdgeLocation>(9, _omitFieldNames ? '' : 'destinationEgressLocation', subBuilder: ProbingDetails_EdgeLocation.create)
     ..hasRequiredFields = false
@@ -1108,27 +1108,27 @@ class ProbingDetails extends $pb.GeneratedMessage {
 
   /// The time that reachability was assessed through active probing.
   @$pb.TagNumber(2)
-  $1775.Timestamp get verifyTime => $_getN(1);
+  $1776.Timestamp get verifyTime => $_getN(1);
   @$pb.TagNumber(2)
-  set verifyTime($1775.Timestamp v) { setField(2, v); }
+  set verifyTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVerifyTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearVerifyTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureVerifyTime() => $_ensure(1);
+  $1776.Timestamp ensureVerifyTime() => $_ensure(1);
 
   /// Details about an internal failure or the cancellation of active probing.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 
   /// The reason probing was aborted.
   @$pb.TagNumber(4)
@@ -1163,15 +1163,15 @@ class ProbingDetails extends $pb.GeneratedMessage {
   /// The source and destination endpoints derived from the test input and used
   /// for active probing.
   @$pb.TagNumber(7)
-  $4564.EndpointInfo get endpointInfo => $_getN(6);
+  $4566.EndpointInfo get endpointInfo => $_getN(6);
   @$pb.TagNumber(7)
-  set endpointInfo($4564.EndpointInfo v) { setField(7, v); }
+  set endpointInfo($4566.EndpointInfo v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndpointInfo() => $_has(6);
   @$pb.TagNumber(7)
   void clearEndpointInfo() => clearField(7);
   @$pb.TagNumber(7)
-  $4564.EndpointInfo ensureEndpointInfo() => $_ensure(6);
+  $4566.EndpointInfo ensureEndpointInfo() => $_ensure(6);
 
   /// Latency as measured by active probing in one direction:
   /// from the source to the destination endpoint.

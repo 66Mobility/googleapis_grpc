@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import 'build_events.pb.dart' as $4753;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import 'build_events.pb.dart' as $4755;
 import 'publish_build_event.pbenum.dart';
 
 export 'publish_build_event.pbenum.dart';
@@ -30,7 +30,7 @@ class PublishLifecycleEventRequest extends $pb.GeneratedMessage {
   factory PublishLifecycleEventRequest({
     PublishLifecycleEventRequest_ServiceLevel? serviceLevel,
     OrderedBuildEvent? buildEvent,
-    $1737.Duration? streamTimeout,
+    $1738.Duration? streamTimeout,
     $core.Iterable<$core.String>? notificationKeywords,
     $core.String? projectId,
     $core.bool? checkPrecedingLifecycleEventsPresent,
@@ -63,7 +63,7 @@ class PublishLifecycleEventRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PublishLifecycleEventRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
     ..e<PublishLifecycleEventRequest_ServiceLevel>(1, _omitFieldNames ? '' : 'serviceLevel', $pb.PbFieldType.OE, defaultOrMaker: PublishLifecycleEventRequest_ServiceLevel.NONINTERACTIVE, valueOf: PublishLifecycleEventRequest_ServiceLevel.valueOf, enumValues: PublishLifecycleEventRequest_ServiceLevel.values)
     ..aOM<OrderedBuildEvent>(2, _omitFieldNames ? '' : 'buildEvent', subBuilder: OrderedBuildEvent.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'streamTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'streamTimeout', subBuilder: $1738.Duration.create)
     ..pPS(4, _omitFieldNames ? '' : 'notificationKeywords')
     ..aOS(6, _omitFieldNames ? '' : 'projectId')
     ..aOB(7, _omitFieldNames ? '' : 'checkPrecedingLifecycleEventsPresent')
@@ -119,15 +119,15 @@ class PublishLifecycleEventRequest extends $pb.GeneratedMessage {
   /// is written to BES, consider this stream expired. If this field is not set,
   /// BES backend will use its own default value.
   @$pb.TagNumber(3)
-  $1737.Duration get streamTimeout => $_getN(2);
+  $1738.Duration get streamTimeout => $_getN(2);
   @$pb.TagNumber(3)
-  set streamTimeout($1737.Duration v) { setField(3, v); }
+  set streamTimeout($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStreamTimeout() => $_has(2);
   @$pb.TagNumber(3)
   void clearStreamTimeout() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureStreamTimeout() => $_ensure(2);
+  $1738.Duration ensureStreamTimeout() => $_ensure(2);
 
   /// Additional information about a build request. These are define by the event
   /// publishers, and the Build Event Service does not validate or interpret
@@ -169,7 +169,7 @@ class PublishLifecycleEventRequest extends $pb.GeneratedMessage {
 /// RPC errors, hence not recorded by this proto.
 class PublishBuildToolEventStreamResponse extends $pb.GeneratedMessage {
   factory PublishBuildToolEventStreamResponse({
-    $4753.StreamId? streamId,
+    $4755.StreamId? streamId,
     $fixnum.Int64? sequenceNumber,
   }) {
     final $result = create();
@@ -186,7 +186,7 @@ class PublishBuildToolEventStreamResponse extends $pb.GeneratedMessage {
   factory PublishBuildToolEventStreamResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PublishBuildToolEventStreamResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
-    ..aOM<$4753.StreamId>(1, _omitFieldNames ? '' : 'streamId', subBuilder: $4753.StreamId.create)
+    ..aOM<$4755.StreamId>(1, _omitFieldNames ? '' : 'streamId', subBuilder: $4755.StreamId.create)
     ..aInt64(2, _omitFieldNames ? '' : 'sequenceNumber')
     ..hasRequiredFields = false
   ;
@@ -214,15 +214,15 @@ class PublishBuildToolEventStreamResponse extends $pb.GeneratedMessage {
 
   /// The stream that contains this event.
   @$pb.TagNumber(1)
-  $4753.StreamId get streamId => $_getN(0);
+  $4755.StreamId get streamId => $_getN(0);
   @$pb.TagNumber(1)
-  set streamId($4753.StreamId v) { setField(1, v); }
+  set streamId($4755.StreamId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStreamId() => $_has(0);
   @$pb.TagNumber(1)
   void clearStreamId() => clearField(1);
   @$pb.TagNumber(1)
-  $4753.StreamId ensureStreamId() => $_ensure(0);
+  $4755.StreamId ensureStreamId() => $_ensure(0);
 
   /// The sequence number of this event that has been committed.
   @$pb.TagNumber(2)
@@ -239,9 +239,9 @@ class PublishBuildToolEventStreamResponse extends $pb.GeneratedMessage {
 /// its position in that stream.
 class OrderedBuildEvent extends $pb.GeneratedMessage {
   factory OrderedBuildEvent({
-    $4753.StreamId? streamId,
+    $4755.StreamId? streamId,
     $fixnum.Int64? sequenceNumber,
-    $4753.BuildEvent? event,
+    $4755.BuildEvent? event,
   }) {
     final $result = create();
     if (streamId != null) {
@@ -260,9 +260,9 @@ class OrderedBuildEvent extends $pb.GeneratedMessage {
   factory OrderedBuildEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OrderedBuildEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
-    ..aOM<$4753.StreamId>(1, _omitFieldNames ? '' : 'streamId', subBuilder: $4753.StreamId.create)
+    ..aOM<$4755.StreamId>(1, _omitFieldNames ? '' : 'streamId', subBuilder: $4755.StreamId.create)
     ..aInt64(2, _omitFieldNames ? '' : 'sequenceNumber')
-    ..aOM<$4753.BuildEvent>(3, _omitFieldNames ? '' : 'event', subBuilder: $4753.BuildEvent.create)
+    ..aOM<$4755.BuildEvent>(3, _omitFieldNames ? '' : 'event', subBuilder: $4755.BuildEvent.create)
     ..hasRequiredFields = false
   ;
 
@@ -289,15 +289,15 @@ class OrderedBuildEvent extends $pb.GeneratedMessage {
 
   /// Which build event stream this event belongs to.
   @$pb.TagNumber(1)
-  $4753.StreamId get streamId => $_getN(0);
+  $4755.StreamId get streamId => $_getN(0);
   @$pb.TagNumber(1)
-  set streamId($4753.StreamId v) { setField(1, v); }
+  set streamId($4755.StreamId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStreamId() => $_has(0);
   @$pb.TagNumber(1)
   void clearStreamId() => clearField(1);
   @$pb.TagNumber(1)
-  $4753.StreamId ensureStreamId() => $_ensure(0);
+  $4755.StreamId ensureStreamId() => $_ensure(0);
 
   /// The position of this event in the stream. The sequence numbers for a build
   /// event stream should be a sequence of consecutive natural numbers starting
@@ -313,15 +313,15 @@ class OrderedBuildEvent extends $pb.GeneratedMessage {
 
   /// The actual event.
   @$pb.TagNumber(3)
-  $4753.BuildEvent get event => $_getN(2);
+  $4755.BuildEvent get event => $_getN(2);
   @$pb.TagNumber(3)
-  set event($4753.BuildEvent v) { setField(3, v); }
+  set event($4755.BuildEvent v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEvent() => $_has(2);
   @$pb.TagNumber(3)
   void clearEvent() => clearField(3);
   @$pb.TagNumber(3)
-  $4753.BuildEvent ensureEvent() => $_ensure(2);
+  $4755.BuildEvent ensureEvent() => $_ensure(2);
 }
 
 /// Streaming request message for PublishBuildToolEventStream.

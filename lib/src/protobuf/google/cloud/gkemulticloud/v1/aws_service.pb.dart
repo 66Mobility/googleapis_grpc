@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'aws_resources.pb.dart' as $1083;
 
 /// Request message for `AwsClusters.CreateAwsCluster` method.
@@ -137,7 +137,7 @@ class UpdateAwsClusterRequest extends $pb.GeneratedMessage {
   factory UpdateAwsClusterRequest({
     $1083.AwsCluster? awsCluster,
     $core.bool? validateOnly,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (awsCluster != null) {
@@ -158,7 +158,7 @@ class UpdateAwsClusterRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAwsClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkemulticloud.v1'), createEmptyInstance: create)
     ..aOM<$1083.AwsCluster>(1, _omitFieldNames ? '' : 'awsCluster', subBuilder: $1083.AwsCluster.create)
     ..aOB(2, _omitFieldNames ? '' : 'validateOnly')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -238,15 +238,15 @@ class UpdateAwsClusterRequest extends $pb.GeneratedMessage {
   ///   *   `monitoring_config.managed_prometheus_config.enabled`.
   ///   *   `networking.per_node_pool_sg_rules_disabled`.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `AwsClusters.GetAwsCluster` method.
@@ -722,7 +722,7 @@ class UpdateAwsNodePoolRequest extends $pb.GeneratedMessage {
   factory UpdateAwsNodePoolRequest({
     $1083.AwsNodePool? awsNodePool,
     $core.bool? validateOnly,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (awsNodePool != null) {
@@ -743,7 +743,7 @@ class UpdateAwsNodePoolRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAwsNodePoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkemulticloud.v1'), createEmptyInstance: create)
     ..aOM<$1083.AwsNodePool>(1, _omitFieldNames ? '' : 'awsNodePool', subBuilder: $1083.AwsNodePool.create)
     ..aOB(2, _omitFieldNames ? '' : 'validateOnly')
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -826,15 +826,15 @@ class UpdateAwsNodePoolRequest extends $pb.GeneratedMessage {
   ///   *   `update_settings.surge_settings.max_surge`.
   ///   *   `update_settings.surge_settings.max_unavailable`.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for `AwsClusters.RollbackAwsNodePoolUpdate` method.
@@ -1503,7 +1503,7 @@ class GenerateAwsAccessTokenRequest extends $pb.GeneratedMessage {
 class GenerateAwsAccessTokenResponse extends $pb.GeneratedMessage {
   factory GenerateAwsAccessTokenResponse({
     $core.String? accessToken,
-    $1775.Timestamp? expirationTime,
+    $1776.Timestamp? expirationTime,
   }) {
     final $result = create();
     if (accessToken != null) {
@@ -1520,7 +1520,7 @@ class GenerateAwsAccessTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateAwsAccessTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkemulticloud.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accessToken')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1557,15 +1557,15 @@ class GenerateAwsAccessTokenResponse extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp at which the token will expire.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expirationTime => $_getN(1);
+  $1776.Timestamp get expirationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expirationTime($1775.Timestamp v) { setField(2, v); }
+  set expirationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpirationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpirationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpirationTime() => $_ensure(1);
+  $1776.Timestamp ensureExpirationTime() => $_ensure(1);
 }
 
 class GenerateAwsClusterAgentTokenRequest extends $pb.GeneratedMessage {

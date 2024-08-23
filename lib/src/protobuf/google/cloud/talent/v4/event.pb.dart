@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'event.pbenum.dart';
 
 export 'event.pbenum.dart';
@@ -32,7 +32,7 @@ class ClientEvent extends $pb.GeneratedMessage {
   factory ClientEvent({
     $core.String? requestId,
     $core.String? eventId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     JobEvent? jobEvent,
     $core.String? eventNotes,
   }) {
@@ -66,7 +66,7 @@ class ClientEvent extends $pb.GeneratedMessage {
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'requestId')
     ..aOS(2, _omitFieldNames ? '' : 'eventId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<JobEvent>(5, _omitFieldNames ? '' : 'jobEvent', subBuilder: JobEvent.create)
     ..aOS(9, _omitFieldNames ? '' : 'eventNotes')
     ..hasRequiredFields = false
@@ -121,15 +121,15 @@ class ClientEvent extends $pb.GeneratedMessage {
 
   /// Required. The timestamp of the event.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// An event issued when a job seeker interacts with the application that
   /// implements Cloud Talent Solution.

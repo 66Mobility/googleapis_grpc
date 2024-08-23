@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import 'partition.pb.dart' as $4380;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import 'partition.pb.dart' as $4381;
 
 /// Request message for CreateMetastorePartition. The MetastorePartition is
 /// uniquely identified by values, which is an ordered list. Hence, there is no
@@ -23,7 +23,7 @@ import 'partition.pb.dart' as $4380;
 class CreateMetastorePartitionRequest extends $pb.GeneratedMessage {
   factory CreateMetastorePartitionRequest({
     $core.String? parent,
-    $4380.MetastorePartition? metastorePartition,
+    $4381.MetastorePartition? metastorePartition,
   }) {
     final $result = create();
     if (parent != null) {
@@ -40,7 +40,7 @@ class CreateMetastorePartitionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateMetastorePartitionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4380.MetastorePartition>(2, _omitFieldNames ? '' : 'metastorePartition', subBuilder: $4380.MetastorePartition.create)
+    ..aOM<$4381.MetastorePartition>(2, _omitFieldNames ? '' : 'metastorePartition', subBuilder: $4381.MetastorePartition.create)
     ..hasRequiredFields = false
   ;
 
@@ -79,15 +79,15 @@ class CreateMetastorePartitionRequest extends $pb.GeneratedMessage {
 
   /// Required. The metastore partition to be added.
   @$pb.TagNumber(2)
-  $4380.MetastorePartition get metastorePartition => $_getN(1);
+  $4381.MetastorePartition get metastorePartition => $_getN(1);
   @$pb.TagNumber(2)
-  set metastorePartition($4380.MetastorePartition v) { setField(2, v); }
+  set metastorePartition($4381.MetastorePartition v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMetastorePartition() => $_has(1);
   @$pb.TagNumber(2)
   void clearMetastorePartition() => clearField(2);
   @$pb.TagNumber(2)
-  $4380.MetastorePartition ensureMetastorePartition() => $_ensure(1);
+  $4381.MetastorePartition ensureMetastorePartition() => $_ensure(1);
 }
 
 /// Request message for BatchCreateMetastorePartitions.
@@ -175,7 +175,7 @@ class BatchCreateMetastorePartitionsRequest extends $pb.GeneratedMessage {
 /// Response message for BatchCreateMetastorePartitions.
 class BatchCreateMetastorePartitionsResponse extends $pb.GeneratedMessage {
   factory BatchCreateMetastorePartitionsResponse({
-    $core.Iterable<$4380.MetastorePartition>? partitions,
+    $core.Iterable<$4381.MetastorePartition>? partitions,
   }) {
     final $result = create();
     if (partitions != null) {
@@ -188,7 +188,7 @@ class BatchCreateMetastorePartitionsResponse extends $pb.GeneratedMessage {
   factory BatchCreateMetastorePartitionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateMetastorePartitionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
-    ..pc<$4380.MetastorePartition>(1, _omitFieldNames ? '' : 'partitions', $pb.PbFieldType.PM, subBuilder: $4380.MetastorePartition.create)
+    ..pc<$4381.MetastorePartition>(1, _omitFieldNames ? '' : 'partitions', $pb.PbFieldType.PM, subBuilder: $4381.MetastorePartition.create)
     ..hasRequiredFields = false
   ;
 
@@ -215,7 +215,7 @@ class BatchCreateMetastorePartitionsResponse extends $pb.GeneratedMessage {
 
   /// The list of metastore partitions that have been created.
   @$pb.TagNumber(1)
-  $core.List<$4380.MetastorePartition> get partitions => $_getList(0);
+  $core.List<$4381.MetastorePartition> get partitions => $_getList(0);
 }
 
 /// Request message for BatchDeleteMetastorePartitions. The MetastorePartition is
@@ -224,7 +224,7 @@ class BatchCreateMetastorePartitionsResponse extends $pb.GeneratedMessage {
 class BatchDeleteMetastorePartitionsRequest extends $pb.GeneratedMessage {
   factory BatchDeleteMetastorePartitionsRequest({
     $core.String? parent,
-    $core.Iterable<$4380.MetastorePartitionValues>? partitionValues,
+    $core.Iterable<$4381.MetastorePartitionValues>? partitionValues,
   }) {
     final $result = create();
     if (parent != null) {
@@ -241,7 +241,7 @@ class BatchDeleteMetastorePartitionsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchDeleteMetastorePartitionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..pc<$4380.MetastorePartitionValues>(2, _omitFieldNames ? '' : 'partitionValues', $pb.PbFieldType.PM, subBuilder: $4380.MetastorePartitionValues.create)
+    ..pc<$4381.MetastorePartitionValues>(2, _omitFieldNames ? '' : 'partitionValues', $pb.PbFieldType.PM, subBuilder: $4381.MetastorePartitionValues.create)
     ..hasRequiredFields = false
   ;
 
@@ -281,14 +281,14 @@ class BatchDeleteMetastorePartitionsRequest extends $pb.GeneratedMessage {
   /// Required. The list of metastore partitions (identified by its values) to be
   /// deleted. A maximum of 100 partitions can be deleted in a batch.
   @$pb.TagNumber(2)
-  $core.List<$4380.MetastorePartitionValues> get partitionValues => $_getList(1);
+  $core.List<$4381.MetastorePartitionValues> get partitionValues => $_getList(1);
 }
 
 /// Request message for UpdateMetastorePartition.
 class UpdateMetastorePartitionRequest extends $pb.GeneratedMessage {
   factory UpdateMetastorePartitionRequest({
-    $4380.MetastorePartition? metastorePartition,
-    $2209.FieldMask? updateMask,
+    $4381.MetastorePartition? metastorePartition,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (metastorePartition != null) {
@@ -304,8 +304,8 @@ class UpdateMetastorePartitionRequest extends $pb.GeneratedMessage {
   factory UpdateMetastorePartitionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMetastorePartitionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4380.MetastorePartition>(1, _omitFieldNames ? '' : 'metastorePartition', subBuilder: $4380.MetastorePartition.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$4381.MetastorePartition>(1, _omitFieldNames ? '' : 'metastorePartition', subBuilder: $4381.MetastorePartition.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -332,27 +332,27 @@ class UpdateMetastorePartitionRequest extends $pb.GeneratedMessage {
 
   /// Required. The metastore partition to be updated.
   @$pb.TagNumber(1)
-  $4380.MetastorePartition get metastorePartition => $_getN(0);
+  $4381.MetastorePartition get metastorePartition => $_getN(0);
   @$pb.TagNumber(1)
-  set metastorePartition($4380.MetastorePartition v) { setField(1, v); }
+  set metastorePartition($4381.MetastorePartition v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetastorePartition() => $_has(0);
   @$pb.TagNumber(1)
   void clearMetastorePartition() => clearField(1);
   @$pb.TagNumber(1)
-  $4380.MetastorePartition ensureMetastorePartition() => $_ensure(0);
+  $4381.MetastorePartition ensureMetastorePartition() => $_ensure(0);
 
   /// Optional. The list of fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for BatchUpdateMetastorePartitions.
@@ -421,7 +421,7 @@ class BatchUpdateMetastorePartitionsRequest extends $pb.GeneratedMessage {
 /// Response message for BatchUpdateMetastorePartitions.
 class BatchUpdateMetastorePartitionsResponse extends $pb.GeneratedMessage {
   factory BatchUpdateMetastorePartitionsResponse({
-    $core.Iterable<$4380.MetastorePartition>? partitions,
+    $core.Iterable<$4381.MetastorePartition>? partitions,
   }) {
     final $result = create();
     if (partitions != null) {
@@ -434,7 +434,7 @@ class BatchUpdateMetastorePartitionsResponse extends $pb.GeneratedMessage {
   factory BatchUpdateMetastorePartitionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchUpdateMetastorePartitionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
-    ..pc<$4380.MetastorePartition>(1, _omitFieldNames ? '' : 'partitions', $pb.PbFieldType.PM, subBuilder: $4380.MetastorePartition.create)
+    ..pc<$4381.MetastorePartition>(1, _omitFieldNames ? '' : 'partitions', $pb.PbFieldType.PM, subBuilder: $4381.MetastorePartition.create)
     ..hasRequiredFields = false
   ;
 
@@ -461,7 +461,7 @@ class BatchUpdateMetastorePartitionsResponse extends $pb.GeneratedMessage {
 
   /// The list of metastore partitions that have been updated.
   @$pb.TagNumber(1)
-  $core.List<$4380.MetastorePartition> get partitions => $_getList(0);
+  $core.List<$4381.MetastorePartition> get partitions => $_getList(0);
 }
 
 /// Request message for ListMetastorePartitions.
@@ -551,8 +551,8 @@ enum ListMetastorePartitionsResponse_Response {
 /// Response message for ListMetastorePartitions.
 class ListMetastorePartitionsResponse extends $pb.GeneratedMessage {
   factory ListMetastorePartitionsResponse({
-    $4380.MetastorePartitionList? partitions,
-    $4380.StreamList? streams,
+    $4381.MetastorePartitionList? partitions,
+    $4381.StreamList? streams,
   }) {
     final $result = create();
     if (partitions != null) {
@@ -574,8 +574,8 @@ class ListMetastorePartitionsResponse extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMetastorePartitionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$4380.MetastorePartitionList>(1, _omitFieldNames ? '' : 'partitions', subBuilder: $4380.MetastorePartitionList.create)
-    ..aOM<$4380.StreamList>(2, _omitFieldNames ? '' : 'streams', subBuilder: $4380.StreamList.create)
+    ..aOM<$4381.MetastorePartitionList>(1, _omitFieldNames ? '' : 'partitions', subBuilder: $4381.MetastorePartitionList.create)
+    ..aOM<$4381.StreamList>(2, _omitFieldNames ? '' : 'streams', subBuilder: $4381.StreamList.create)
     ..hasRequiredFields = false
   ;
 
@@ -605,27 +605,27 @@ class ListMetastorePartitionsResponse extends $pb.GeneratedMessage {
 
   /// The list of partitions.
   @$pb.TagNumber(1)
-  $4380.MetastorePartitionList get partitions => $_getN(0);
+  $4381.MetastorePartitionList get partitions => $_getN(0);
   @$pb.TagNumber(1)
-  set partitions($4380.MetastorePartitionList v) { setField(1, v); }
+  set partitions($4381.MetastorePartitionList v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartitions() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartitions() => clearField(1);
   @$pb.TagNumber(1)
-  $4380.MetastorePartitionList ensurePartitions() => $_ensure(0);
+  $4381.MetastorePartitionList ensurePartitions() => $_ensure(0);
 
   /// The list of streams.
   @$pb.TagNumber(2)
-  $4380.StreamList get streams => $_getN(1);
+  $4381.StreamList get streams => $_getN(1);
   @$pb.TagNumber(2)
-  set streams($4380.StreamList v) { setField(2, v); }
+  set streams($4381.StreamList v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStreams() => $_has(1);
   @$pb.TagNumber(2)
   void clearStreams() => clearField(2);
   @$pb.TagNumber(2)
-  $4380.StreamList ensureStreams() => $_ensure(1);
+  $4381.StreamList ensureStreams() => $_ensure(1);
 }
 
 /// The top-level message sent by the client to the
@@ -634,7 +634,7 @@ class ListMetastorePartitionsResponse extends $pb.GeneratedMessage {
 class StreamMetastorePartitionsRequest extends $pb.GeneratedMessage {
   factory StreamMetastorePartitionsRequest({
     $core.String? parent,
-    $core.Iterable<$4380.MetastorePartition>? metastorePartitions,
+    $core.Iterable<$4381.MetastorePartition>? metastorePartitions,
     $core.bool? skipExistingPartitions,
   }) {
     final $result = create();
@@ -655,7 +655,7 @@ class StreamMetastorePartitionsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamMetastorePartitionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..pc<$4380.MetastorePartition>(2, _omitFieldNames ? '' : 'metastorePartitions', $pb.PbFieldType.PM, subBuilder: $4380.MetastorePartition.create)
+    ..pc<$4381.MetastorePartition>(2, _omitFieldNames ? '' : 'metastorePartitions', $pb.PbFieldType.PM, subBuilder: $4381.MetastorePartition.create)
     ..aOB(3, _omitFieldNames ? '' : 'skipExistingPartitions')
     ..hasRequiredFields = false
   ;
@@ -695,7 +695,7 @@ class StreamMetastorePartitionsRequest extends $pb.GeneratedMessage {
 
   /// Optional. A list of metastore partitions to be added to the table.
   @$pb.TagNumber(2)
-  $core.List<$4380.MetastorePartition> get metastorePartitions => $_getList(1);
+  $core.List<$4381.MetastorePartition> get metastorePartitions => $_getList(1);
 
   /// Optional. Mimics the ifNotExists flag in IMetaStoreClient
   /// add_partitions(..). If the flag is set to false, the server will return

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'common.pb.dart' as $1214;
 
 /// Compute statistics about a range of messages in a given topic and partition.
@@ -125,8 +125,8 @@ class ComputeMessageStatsResponse extends $pb.GeneratedMessage {
   factory ComputeMessageStatsResponse({
     $fixnum.Int64? messageCount,
     $fixnum.Int64? messageBytes,
-    $1775.Timestamp? minimumPublishTime,
-    $1775.Timestamp? minimumEventTime,
+    $1776.Timestamp? minimumPublishTime,
+    $1776.Timestamp? minimumEventTime,
   }) {
     final $result = create();
     if (messageCount != null) {
@@ -150,8 +150,8 @@ class ComputeMessageStatsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeMessageStatsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.pubsublite.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'messageCount')
     ..aInt64(2, _omitFieldNames ? '' : 'messageBytes')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'minimumPublishTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'minimumEventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'minimumPublishTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'minimumEventTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -200,29 +200,29 @@ class ComputeMessageStatsResponse extends $pb.GeneratedMessage {
   /// timestamps within a partition are not guaranteed to be non-decreasing. The
   /// timestamp will be unset if there are no messages.
   @$pb.TagNumber(3)
-  $1775.Timestamp get minimumPublishTime => $_getN(2);
+  $1776.Timestamp get minimumPublishTime => $_getN(2);
   @$pb.TagNumber(3)
-  set minimumPublishTime($1775.Timestamp v) { setField(3, v); }
+  set minimumPublishTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinimumPublishTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinimumPublishTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureMinimumPublishTime() => $_ensure(2);
+  $1776.Timestamp ensureMinimumPublishTime() => $_ensure(2);
 
   /// The minimum event timestamp across these messages. For the purposes of this
   /// computation, if a message does not have an event time, we use the publish
   /// time. The timestamp will be unset if there are no messages.
   @$pb.TagNumber(4)
-  $1775.Timestamp get minimumEventTime => $_getN(3);
+  $1776.Timestamp get minimumEventTime => $_getN(3);
   @$pb.TagNumber(4)
-  set minimumEventTime($1775.Timestamp v) { setField(4, v); }
+  set minimumEventTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMinimumEventTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearMinimumEventTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureMinimumEventTime() => $_ensure(3);
+  $1776.Timestamp ensureMinimumEventTime() => $_ensure(3);
 }
 
 /// Compute the current head cursor for a partition.

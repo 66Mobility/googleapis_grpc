@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'job.pbenum.dart';
 import 'task.pb.dart' as $695;
 import 'task.pbenum.dart' as $695;
@@ -32,8 +32,8 @@ class Job extends $pb.GeneratedMessage {
     AllocationPolicy? allocationPolicy,
     $core.Map<$core.String, $core.String>? labels,
     JobStatus? status,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     LogsPolicy? logsPolicy,
     $core.Iterable<JobNotification>? notifications,
   }) {
@@ -85,8 +85,8 @@ class Job extends $pb.GeneratedMessage {
     ..aOM<AllocationPolicy>(7, _omitFieldNames ? '' : 'allocationPolicy', subBuilder: AllocationPolicy.create)
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'Job.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.batch.v1'))
     ..aOM<JobStatus>(9, _omitFieldNames ? '' : 'status', subBuilder: JobStatus.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<LogsPolicy>(13, _omitFieldNames ? '' : 'logsPolicy', subBuilder: LogsPolicy.create)
     ..pc<JobNotification>(14, _omitFieldNames ? '' : 'notifications', $pb.PbFieldType.PM, subBuilder: JobNotification.create)
     ..hasRequiredFields = false
@@ -191,27 +191,27 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. When the Job was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The last time the Job was updated.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Log preservation policy for the Job.
   @$pb.TagNumber(13)
@@ -539,7 +539,7 @@ class JobStatus extends $pb.GeneratedMessage {
     JobStatus_State? state,
     $core.Iterable<$695.StatusEvent>? statusEvents,
     $core.Map<$core.String, JobStatus_TaskGroupStatus>? taskGroups,
-    $1737.Duration? runDuration,
+    $1738.Duration? runDuration,
   }) {
     final $result = create();
     if (state != null) {
@@ -564,7 +564,7 @@ class JobStatus extends $pb.GeneratedMessage {
     ..e<JobStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: JobStatus_State.STATE_UNSPECIFIED, valueOf: JobStatus_State.valueOf, enumValues: JobStatus_State.values)
     ..pc<$695.StatusEvent>(2, _omitFieldNames ? '' : 'statusEvents', $pb.PbFieldType.PM, subBuilder: $695.StatusEvent.create)
     ..m<$core.String, JobStatus_TaskGroupStatus>(4, _omitFieldNames ? '' : 'taskGroups', entryClassName: 'JobStatus.TaskGroupsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: JobStatus_TaskGroupStatus.create, valueDefaultOrMaker: JobStatus_TaskGroupStatus.getDefault, packageName: const $pb.PackageName('google.cloud.batch.v1'))
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'runDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'runDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -610,15 +610,15 @@ class JobStatus extends $pb.GeneratedMessage {
 
   /// The duration of time that the Job spent in status RUNNING.
   @$pb.TagNumber(5)
-  $1737.Duration get runDuration => $_getN(3);
+  $1738.Duration get runDuration => $_getN(3);
   @$pb.TagNumber(5)
-  set runDuration($1737.Duration v) { setField(5, v); }
+  set runDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRunDuration() => $_has(3);
   @$pb.TagNumber(5)
   void clearRunDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureRunDuration() => $_ensure(3);
+  $1738.Duration ensureRunDuration() => $_ensure(3);
 }
 
 /// Message details.

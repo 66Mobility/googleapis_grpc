@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'tls.pb.dart' as $4565;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'tls.pb.dart' as $4567;
 
 /// Specification of the MTLSPolicy.
 class ServerTlsPolicy_MTLSPolicy extends $pb.GeneratedMessage {
   factory ServerTlsPolicy_MTLSPolicy({
-    $core.Iterable<$4565.ValidationCA>? clientValidationCa,
+    $core.Iterable<$4567.ValidationCA>? clientValidationCa,
   }) {
     final $result = create();
     if (clientValidationCa != null) {
@@ -33,7 +33,7 @@ class ServerTlsPolicy_MTLSPolicy extends $pb.GeneratedMessage {
   factory ServerTlsPolicy_MTLSPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServerTlsPolicy.MTLSPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networksecurity.v1'), createEmptyInstance: create)
-    ..pc<$4565.ValidationCA>(1, _omitFieldNames ? '' : 'clientValidationCa', $pb.PbFieldType.PM, subBuilder: $4565.ValidationCA.create)
+    ..pc<$4567.ValidationCA>(1, _omitFieldNames ? '' : 'clientValidationCa', $pb.PbFieldType.PM, subBuilder: $4567.ValidationCA.create)
     ..hasRequiredFields = false
   ;
 
@@ -62,7 +62,7 @@ class ServerTlsPolicy_MTLSPolicy extends $pb.GeneratedMessage {
   ///  Defines the mechanism to obtain the Certificate Authority certificate to
   ///  validate the client certificate.
   @$pb.TagNumber(1)
-  $core.List<$4565.ValidationCA> get clientValidationCa => $_getList(0);
+  $core.List<$4567.ValidationCA> get clientValidationCa => $_getList(0);
 }
 
 /// ServerTlsPolicy is a resource that specifies how a server should authenticate
@@ -72,11 +72,11 @@ class ServerTlsPolicy extends $pb.GeneratedMessage {
   factory ServerTlsPolicy({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.bool? allowOpen,
-    $4565.CertificateProvider? serverCertificate,
+    $4567.CertificateProvider? serverCertificate,
     ServerTlsPolicy_MTLSPolicy? mtlsPolicy,
   }) {
     final $result = create();
@@ -113,11 +113,11 @@ class ServerTlsPolicy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServerTlsPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networksecurity.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'ServerTlsPolicy.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networksecurity.v1'))
     ..aOB(6, _omitFieldNames ? '' : 'allowOpen')
-    ..aOM<$4565.CertificateProvider>(7, _omitFieldNames ? '' : 'serverCertificate', subBuilder: $4565.CertificateProvider.create)
+    ..aOM<$4567.CertificateProvider>(7, _omitFieldNames ? '' : 'serverCertificate', subBuilder: $4567.CertificateProvider.create)
     ..aOM<ServerTlsPolicy_MTLSPolicy>(8, _omitFieldNames ? '' : 'mtlsPolicy', subBuilder: ServerTlsPolicy_MTLSPolicy.create)
     ..hasRequiredFields = false
   ;
@@ -166,27 +166,27 @@ class ServerTlsPolicy extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Set of label tags associated with the resource.
   @$pb.TagNumber(5)
@@ -216,15 +216,15 @@ class ServerTlsPolicy extends $pb.GeneratedMessage {
   ///  Cannot be combined with `allow_open` as a permissive mode that allows both
   ///  plain text and TLS is not supported.
   @$pb.TagNumber(7)
-  $4565.CertificateProvider get serverCertificate => $_getN(6);
+  $4567.CertificateProvider get serverCertificate => $_getN(6);
   @$pb.TagNumber(7)
-  set serverCertificate($4565.CertificateProvider v) { setField(7, v); }
+  set serverCertificate($4567.CertificateProvider v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasServerCertificate() => $_has(6);
   @$pb.TagNumber(7)
   void clearServerCertificate() => clearField(7);
   @$pb.TagNumber(7)
-  $4565.CertificateProvider ensureServerCertificate() => $_ensure(6);
+  $4567.CertificateProvider ensureServerCertificate() => $_ensure(6);
 
   ///
   ///  Defines a mechanism to provision peer validation certificates for peer to
@@ -536,7 +536,7 @@ class CreateServerTlsPolicyRequest extends $pb.GeneratedMessage {
 /// Request used by UpdateServerTlsPolicy method.
 class UpdateServerTlsPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateServerTlsPolicyRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     ServerTlsPolicy? serverTlsPolicy,
   }) {
     final $result = create();
@@ -553,7 +553,7 @@ class UpdateServerTlsPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateServerTlsPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServerTlsPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networksecurity.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<ServerTlsPolicy>(2, _omitFieldNames ? '' : 'serverTlsPolicy', subBuilder: ServerTlsPolicy.create)
     ..hasRequiredFields = false
   ;
@@ -586,15 +586,15 @@ class UpdateServerTlsPolicyRequest extends $pb.GeneratedMessage {
   /// mask. If the user does not provide a mask then all fields will be
   /// overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Updated ServerTlsPolicy resource.
   @$pb.TagNumber(2)

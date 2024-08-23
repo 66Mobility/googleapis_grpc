@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/any.pb.dart' as $1794;
-import '../../protobuf/struct.pb.dart' as $1734;
-import '../../rpc/context/attribute_context.pb.dart' as $4189;
-import '../../rpc/status.pb.dart' as $1795;
+import '../../protobuf/any.pb.dart' as $1795;
+import '../../protobuf/struct.pb.dart' as $1735;
+import '../../rpc/context/attribute_context.pb.dart' as $4190;
+import '../../rpc/status.pb.dart' as $1796;
 import 'audit_log.pbenum.dart';
 
 export 'audit_log.pbenum.dart';
@@ -25,7 +25,7 @@ export 'audit_log.pbenum.dart';
 /// Common audit log format for Google Cloud Platform API operations.
 class AuditLog extends $pb.GeneratedMessage {
   factory AuditLog({
-    $1795.Status? status,
+    $1796.Status? status,
     AuthenticationInfo? authenticationInfo,
     RequestMetadata? requestMetadata,
     $core.String? serviceName,
@@ -34,11 +34,11 @@ class AuditLog extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? numResponseItems,
   @$core.Deprecated('This field is deprecated.')
-    $1794.Any? serviceData,
-    $1734.Struct? request,
-    $1734.Struct? response,
-    $1734.Struct? metadata,
-    $1734.Struct? resourceOriginalState,
+    $1795.Any? serviceData,
+    $1735.Struct? request,
+    $1735.Struct? response,
+    $1735.Struct? metadata,
+    $1735.Struct? resourceOriginalState,
     ResourceLocation? resourceLocation,
     PolicyViolationInfo? policyViolationInfo,
   }) {
@@ -96,7 +96,7 @@ class AuditLog extends $pb.GeneratedMessage {
   factory AuditLog.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuditLog', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOM<AuthenticationInfo>(3, _omitFieldNames ? '' : 'authenticationInfo', subBuilder: AuthenticationInfo.create)
     ..aOM<RequestMetadata>(4, _omitFieldNames ? '' : 'requestMetadata', subBuilder: RequestMetadata.create)
     ..aOS(7, _omitFieldNames ? '' : 'serviceName')
@@ -104,11 +104,11 @@ class AuditLog extends $pb.GeneratedMessage {
     ..pc<AuthorizationInfo>(9, _omitFieldNames ? '' : 'authorizationInfo', $pb.PbFieldType.PM, subBuilder: AuthorizationInfo.create)
     ..aOS(11, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(12, _omitFieldNames ? '' : 'numResponseItems')
-    ..aOM<$1794.Any>(15, _omitFieldNames ? '' : 'serviceData', subBuilder: $1794.Any.create)
-    ..aOM<$1734.Struct>(16, _omitFieldNames ? '' : 'request', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(17, _omitFieldNames ? '' : 'response', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(18, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState', subBuilder: $1734.Struct.create)
+    ..aOM<$1795.Any>(15, _omitFieldNames ? '' : 'serviceData', subBuilder: $1795.Any.create)
+    ..aOM<$1735.Struct>(16, _omitFieldNames ? '' : 'request', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(17, _omitFieldNames ? '' : 'response', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(18, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(19, _omitFieldNames ? '' : 'resourceOriginalState', subBuilder: $1735.Struct.create)
     ..aOM<ResourceLocation>(20, _omitFieldNames ? '' : 'resourceLocation', subBuilder: ResourceLocation.create)
     ..aOM<PolicyViolationInfo>(25, _omitFieldNames ? '' : 'policyViolationInfo', subBuilder: PolicyViolationInfo.create)
     ..hasRequiredFields = false
@@ -137,15 +137,15 @@ class AuditLog extends $pb.GeneratedMessage {
 
   /// The status of the overall operation.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// Authentication information.
   @$pb.TagNumber(3)
@@ -234,10 +234,10 @@ class AuditLog extends $pb.GeneratedMessage {
   /// activities.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  $1794.Any get serviceData => $_getN(8);
+  $1795.Any get serviceData => $_getN(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  set serviceData($1794.Any v) { setField(15, v); }
+  set serviceData($1795.Any v) { setField(15, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
   $core.bool hasServiceData() => $_has(8);
@@ -246,7 +246,7 @@ class AuditLog extends $pb.GeneratedMessage {
   void clearServiceData() => clearField(15);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  $1794.Any ensureServiceData() => $_ensure(8);
+  $1795.Any ensureServiceData() => $_ensure(8);
 
   /// The operation request. This may not include all request parameters,
   /// such as those that are too large, privacy-sensitive, or duplicated
@@ -255,15 +255,15 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(16)
-  $1734.Struct get request => $_getN(9);
+  $1735.Struct get request => $_getN(9);
   @$pb.TagNumber(16)
-  set request($1734.Struct v) { setField(16, v); }
+  set request($1735.Struct v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasRequest() => $_has(9);
   @$pb.TagNumber(16)
   void clearRequest() => clearField(16);
   @$pb.TagNumber(16)
-  $1734.Struct ensureRequest() => $_ensure(9);
+  $1735.Struct ensureRequest() => $_ensure(9);
 
   /// The operation response. This may not include all response elements,
   /// such as those that are too large, privacy-sensitive, or duplicated
@@ -272,28 +272,28 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(17)
-  $1734.Struct get response => $_getN(10);
+  $1735.Struct get response => $_getN(10);
   @$pb.TagNumber(17)
-  set response($1734.Struct v) { setField(17, v); }
+  set response($1735.Struct v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasResponse() => $_has(10);
   @$pb.TagNumber(17)
   void clearResponse() => clearField(17);
   @$pb.TagNumber(17)
-  $1734.Struct ensureResponse() => $_ensure(10);
+  $1735.Struct ensureResponse() => $_ensure(10);
 
   /// Other service-specific data about the request, response, and other
   /// information associated with the current audited event.
   @$pb.TagNumber(18)
-  $1734.Struct get metadata => $_getN(11);
+  $1735.Struct get metadata => $_getN(11);
   @$pb.TagNumber(18)
-  set metadata($1734.Struct v) { setField(18, v); }
+  set metadata($1735.Struct v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasMetadata() => $_has(11);
   @$pb.TagNumber(18)
   void clearMetadata() => clearField(18);
   @$pb.TagNumber(18)
-  $1734.Struct ensureMetadata() => $_ensure(11);
+  $1735.Struct ensureMetadata() => $_ensure(11);
 
   /// The resource's original state before mutation. Present only for
   /// operations which have successfully modified the targeted resource(s).
@@ -303,15 +303,15 @@ class AuditLog extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent,
   /// the proto name will be indicated in the `@type` property.
   @$pb.TagNumber(19)
-  $1734.Struct get resourceOriginalState => $_getN(12);
+  $1735.Struct get resourceOriginalState => $_getN(12);
   @$pb.TagNumber(19)
-  set resourceOriginalState($1734.Struct v) { setField(19, v); }
+  set resourceOriginalState($1735.Struct v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasResourceOriginalState() => $_has(12);
   @$pb.TagNumber(19)
   void clearResourceOriginalState() => clearField(19);
   @$pb.TagNumber(19)
-  $1734.Struct ensureResourceOriginalState() => $_ensure(12);
+  $1735.Struct ensureResourceOriginalState() => $_ensure(12);
 
   /// The resource location information.
   @$pb.TagNumber(20)
@@ -345,7 +345,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   factory AuthenticationInfo({
     $core.String? principalEmail,
     $core.String? authoritySelector,
-    $1734.Struct? thirdPartyPrincipal,
+    $1735.Struct? thirdPartyPrincipal,
     $core.String? serviceAccountKeyName,
     $core.Iterable<ServiceAccountDelegationInfo>? serviceAccountDelegationInfo,
     $core.String? principalSubject,
@@ -378,7 +378,7 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthenticationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
     ..aOS(2, _omitFieldNames ? '' : 'authoritySelector')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'thirdPartyPrincipal', subBuilder: $1735.Struct.create)
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccountKeyName')
     ..pc<ServiceAccountDelegationInfo>(6, _omitFieldNames ? '' : 'serviceAccountDelegationInfo', $pb.PbFieldType.PM, subBuilder: ServiceAccountDelegationInfo.create)
     ..aOS(8, _omitFieldNames ? '' : 'principalSubject')
@@ -437,15 +437,15 @@ class AuthenticationInfo extends $pb.GeneratedMessage {
   /// When the JSON object represented here has a proto equivalent, the proto
   /// name will be indicated in the `@type` property.
   @$pb.TagNumber(4)
-  $1734.Struct get thirdPartyPrincipal => $_getN(2);
+  $1735.Struct get thirdPartyPrincipal => $_getN(2);
   @$pb.TagNumber(4)
-  set thirdPartyPrincipal($1734.Struct v) { setField(4, v); }
+  set thirdPartyPrincipal($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasThirdPartyPrincipal() => $_has(2);
   @$pb.TagNumber(4)
   void clearThirdPartyPrincipal() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureThirdPartyPrincipal() => $_ensure(2);
+  $1735.Struct ensureThirdPartyPrincipal() => $_ensure(2);
 
   ///  The name of the service account key used to create or exchange
   ///  credentials for authenticating the service account making the request.
@@ -487,7 +487,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
     $core.String? resource,
     $core.String? permission,
     $core.bool? granted,
-    $4189.AttributeContext_Resource? resourceAttributes,
+    $4190.AttributeContext_Resource? resourceAttributes,
   }) {
     final $result = create();
     if (resource != null) {
@@ -512,7 +512,7 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resource')
     ..aOS(2, _omitFieldNames ? '' : 'permission')
     ..aOB(3, _omitFieldNames ? '' : 'granted')
-    ..aOM<$4189.AttributeContext_Resource>(5, _omitFieldNames ? '' : 'resourceAttributes', subBuilder: $4189.AttributeContext_Resource.create)
+    ..aOM<$4190.AttributeContext_Resource>(5, _omitFieldNames ? '' : 'resourceAttributes', subBuilder: $4190.AttributeContext_Resource.create)
     ..hasRequiredFields = false
   ;
 
@@ -580,15 +580,15 @@ class AuthorizationInfo extends $pb.GeneratedMessage {
   ///  condition evaluation, the user must also look into
   ///  `AuditLog.request_metadata.request_attributes`.
   @$pb.TagNumber(5)
-  $4189.AttributeContext_Resource get resourceAttributes => $_getN(3);
+  $4190.AttributeContext_Resource get resourceAttributes => $_getN(3);
   @$pb.TagNumber(5)
-  set resourceAttributes($4189.AttributeContext_Resource v) { setField(5, v); }
+  set resourceAttributes($4190.AttributeContext_Resource v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResourceAttributes() => $_has(3);
   @$pb.TagNumber(5)
   void clearResourceAttributes() => clearField(5);
   @$pb.TagNumber(5)
-  $4189.AttributeContext_Resource ensureResourceAttributes() => $_ensure(3);
+  $4190.AttributeContext_Resource ensureResourceAttributes() => $_ensure(3);
 }
 
 /// Metadata about the request.
@@ -597,8 +597,8 @@ class RequestMetadata extends $pb.GeneratedMessage {
     $core.String? callerIp,
     $core.String? callerSuppliedUserAgent,
     $core.String? callerNetwork,
-    $4189.AttributeContext_Request? requestAttributes,
-    $4189.AttributeContext_Peer? destinationAttributes,
+    $4190.AttributeContext_Request? requestAttributes,
+    $4190.AttributeContext_Peer? destinationAttributes,
   }) {
     final $result = create();
     if (callerIp != null) {
@@ -626,8 +626,8 @@ class RequestMetadata extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'callerIp')
     ..aOS(2, _omitFieldNames ? '' : 'callerSuppliedUserAgent')
     ..aOS(3, _omitFieldNames ? '' : 'callerNetwork')
-    ..aOM<$4189.AttributeContext_Request>(7, _omitFieldNames ? '' : 'requestAttributes', subBuilder: $4189.AttributeContext_Request.create)
-    ..aOM<$4189.AttributeContext_Peer>(8, _omitFieldNames ? '' : 'destinationAttributes', subBuilder: $4189.AttributeContext_Peer.create)
+    ..aOM<$4190.AttributeContext_Request>(7, _omitFieldNames ? '' : 'requestAttributes', subBuilder: $4190.AttributeContext_Request.create)
+    ..aOM<$4190.AttributeContext_Peer>(8, _omitFieldNames ? '' : 'destinationAttributes', subBuilder: $4190.AttributeContext_Peer.create)
     ..hasRequiredFields = false
   ;
 
@@ -717,15 +717,15 @@ class RequestMetadata extends $pb.GeneratedMessage {
   ///  condition evaluation, the user must also look into
   ///  `AuditLog.authentication_info.resource_attributes`.
   @$pb.TagNumber(7)
-  $4189.AttributeContext_Request get requestAttributes => $_getN(3);
+  $4190.AttributeContext_Request get requestAttributes => $_getN(3);
   @$pb.TagNumber(7)
-  set requestAttributes($4189.AttributeContext_Request v) { setField(7, v); }
+  set requestAttributes($4190.AttributeContext_Request v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRequestAttributes() => $_has(3);
   @$pb.TagNumber(7)
   void clearRequestAttributes() => clearField(7);
   @$pb.TagNumber(7)
-  $4189.AttributeContext_Request ensureRequestAttributes() => $_ensure(3);
+  $4190.AttributeContext_Request ensureRequestAttributes() => $_ensure(3);
 
   /// The destination of a network activity, such as accepting a TCP connection.
   /// In a multi hop network activity, the destination represents the receiver of
@@ -733,15 +733,15 @@ class RequestMetadata extends $pb.GeneratedMessage {
   /// Peer.ip. These fields are optionally populated by those services utilizing
   /// the IAM condition feature.
   @$pb.TagNumber(8)
-  $4189.AttributeContext_Peer get destinationAttributes => $_getN(4);
+  $4190.AttributeContext_Peer get destinationAttributes => $_getN(4);
   @$pb.TagNumber(8)
-  set destinationAttributes($4189.AttributeContext_Peer v) { setField(8, v); }
+  set destinationAttributes($4190.AttributeContext_Peer v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDestinationAttributes() => $_has(4);
   @$pb.TagNumber(8)
   void clearDestinationAttributes() => clearField(8);
   @$pb.TagNumber(8)
-  $4189.AttributeContext_Peer ensureDestinationAttributes() => $_ensure(4);
+  $4190.AttributeContext_Peer ensureDestinationAttributes() => $_ensure(4);
 }
 
 /// Location information about a resource.
@@ -817,7 +817,7 @@ class ResourceLocation extends $pb.GeneratedMessage {
 class ServiceAccountDelegationInfo_FirstPartyPrincipal extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_FirstPartyPrincipal({
     $core.String? principalEmail,
-    $1734.Struct? serviceMetadata,
+    $1735.Struct? serviceMetadata,
   }) {
     final $result = create();
     if (principalEmail != null) {
@@ -834,7 +834,7 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal extends $pb.GeneratedMess
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccountDelegationInfo.FirstPartyPrincipal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'principalEmail')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'serviceMetadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -871,21 +871,21 @@ class ServiceAccountDelegationInfo_FirstPartyPrincipal extends $pb.GeneratedMess
 
   /// Metadata about the service that uses the service account.
   @$pb.TagNumber(2)
-  $1734.Struct get serviceMetadata => $_getN(1);
+  $1735.Struct get serviceMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceMetadata($1734.Struct v) { setField(2, v); }
+  set serviceMetadata($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasServiceMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearServiceMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureServiceMetadata() => $_ensure(1);
+  $1735.Struct ensureServiceMetadata() => $_ensure(1);
 }
 
 /// Third party identity principal.
 class ServiceAccountDelegationInfo_ThirdPartyPrincipal extends $pb.GeneratedMessage {
   factory ServiceAccountDelegationInfo_ThirdPartyPrincipal({
-    $1734.Struct? thirdPartyClaims,
+    $1735.Struct? thirdPartyClaims,
   }) {
     final $result = create();
     if (thirdPartyClaims != null) {
@@ -898,7 +898,7 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal extends $pb.GeneratedMess
   factory ServiceAccountDelegationInfo_ThirdPartyPrincipal.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccountDelegationInfo.ThirdPartyPrincipal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'thirdPartyClaims', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -925,15 +925,15 @@ class ServiceAccountDelegationInfo_ThirdPartyPrincipal extends $pb.GeneratedMess
 
   /// Metadata about third party identity.
   @$pb.TagNumber(1)
-  $1734.Struct get thirdPartyClaims => $_getN(0);
+  $1735.Struct get thirdPartyClaims => $_getN(0);
   @$pb.TagNumber(1)
-  set thirdPartyClaims($1734.Struct v) { setField(1, v); }
+  set thirdPartyClaims($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasThirdPartyClaims() => $_has(0);
   @$pb.TagNumber(1)
   void clearThirdPartyClaims() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureThirdPartyClaims() => $_ensure(0);
+  $1735.Struct ensureThirdPartyClaims() => $_ensure(0);
 }
 
 enum ServiceAccountDelegationInfo_Authority {
@@ -1099,7 +1099,7 @@ class PolicyViolationInfo extends $pb.GeneratedMessage {
 /// Represents OrgPolicy Violation information.
 class OrgPolicyViolationInfo extends $pb.GeneratedMessage {
   factory OrgPolicyViolationInfo({
-    $1734.Struct? payload,
+    $1735.Struct? payload,
     $core.String? resourceType,
     $core.Map<$core.String, $core.String>? resourceTags,
     $core.Iterable<ViolationInfo>? violationInfo,
@@ -1124,7 +1124,7 @@ class OrgPolicyViolationInfo extends $pb.GeneratedMessage {
   factory OrgPolicyViolationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OrgPolicyViolationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.audit'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Struct.create)
     ..aOS(2, _omitFieldNames ? '' : 'resourceType')
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'resourceTags', entryClassName: 'OrgPolicyViolationInfo.ResourceTagsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.audit'))
     ..pc<ViolationInfo>(4, _omitFieldNames ? '' : 'violationInfo', $pb.PbFieldType.PM, subBuilder: ViolationInfo.create)
@@ -1156,15 +1156,15 @@ class OrgPolicyViolationInfo extends $pb.GeneratedMessage {
   /// conditions. This payload may be the subset of the actual Resource that may
   /// come in the request. This payload should not contain any core content.
   @$pb.TagNumber(1)
-  $1734.Struct get payload => $_getN(0);
+  $1735.Struct get payload => $_getN(0);
   @$pb.TagNumber(1)
-  set payload($1734.Struct v) { setField(1, v); }
+  set payload($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPayload() => $_has(0);
   @$pb.TagNumber(1)
   void clearPayload() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensurePayload() => $_ensure(0);
+  $1735.Struct ensurePayload() => $_ensure(0);
 
   /// Optional. Resource type that the orgpolicy is checked against.
   /// Example: compute.googleapis.com/Instance, store.googleapis.com/bucket

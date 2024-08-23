@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../type/interval.pb.dart' as $4257;
 import 'filters.pbenum.dart';
 
 export 'filters.pbenum.dart';
@@ -314,7 +314,7 @@ class DocumentQuery extends $pb.GeneratedMessage {
 /// Filter on create timestamp or update timestamp of documents.
 class TimeFilter extends $pb.GeneratedMessage {
   factory TimeFilter({
-    $4256.Interval? timeRange,
+    $4257.Interval? timeRange,
     TimeFilter_TimeField? timeField,
   }) {
     final $result = create();
@@ -331,7 +331,7 @@ class TimeFilter extends $pb.GeneratedMessage {
   factory TimeFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
-    ..aOM<$4256.Interval>(1, _omitFieldNames ? '' : 'timeRange', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(1, _omitFieldNames ? '' : 'timeRange', subBuilder: $4257.Interval.create)
     ..e<TimeFilter_TimeField>(2, _omitFieldNames ? '' : 'timeField', $pb.PbFieldType.OE, defaultOrMaker: TimeFilter_TimeField.TIME_FIELD_UNSPECIFIED, valueOf: TimeFilter_TimeField.valueOf, enumValues: TimeFilter_TimeField.values)
     ..hasRequiredFields = false
   ;
@@ -358,15 +358,15 @@ class TimeFilter extends $pb.GeneratedMessage {
   static TimeFilter? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $4256.Interval get timeRange => $_getN(0);
+  $4257.Interval get timeRange => $_getN(0);
   @$pb.TagNumber(1)
-  set timeRange($4256.Interval v) { setField(1, v); }
+  set timeRange($4257.Interval v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeRange() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeRange() => clearField(1);
   @$pb.TagNumber(1)
-  $4256.Interval ensureTimeRange() => $_ensure(0);
+  $4257.Interval ensureTimeRange() => $_ensure(0);
 
   ///  Specifies which time field to filter documents on.
   ///

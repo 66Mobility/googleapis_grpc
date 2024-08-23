@@ -14,19 +14,19 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/budget_delivery_method.pbenum.dart' as $2190;
-import '../enums/budget_period.pbenum.dart' as $2191;
-import '../enums/budget_status.pbenum.dart' as $2189;
-import '../enums/budget_type.pbenum.dart' as $2192;
+import '../enums/budget_delivery_method.pbenum.dart' as $2191;
+import '../enums/budget_period.pbenum.dart' as $2192;
+import '../enums/budget_status.pbenum.dart' as $2190;
+import '../enums/budget_type.pbenum.dart' as $2193;
 
 /// A campaign budget.
 class CampaignBudget extends $pb.GeneratedMessage {
   factory CampaignBudget({
     $core.String? resourceName,
-    $2189.BudgetStatusEnum_BudgetStatus? status,
-    $2190.BudgetDeliveryMethodEnum_BudgetDeliveryMethod? deliveryMethod,
-    $2191.BudgetPeriodEnum_BudgetPeriod? period,
-    $2192.BudgetTypeEnum_BudgetType? type,
+    $2190.BudgetStatusEnum_BudgetStatus? status,
+    $2191.BudgetDeliveryMethodEnum_BudgetDeliveryMethod? deliveryMethod,
+    $2192.BudgetPeriodEnum_BudgetPeriod? period,
+    $2193.BudgetTypeEnum_BudgetType? type,
     $fixnum.Int64? id,
     $core.String? name,
     $fixnum.Int64? amountMicros,
@@ -104,10 +104,10 @@ class CampaignBudget extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignBudget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2189.BudgetStatusEnum_BudgetStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2189.BudgetStatusEnum_BudgetStatus.UNSPECIFIED, valueOf: $2189.BudgetStatusEnum_BudgetStatus.valueOf, enumValues: $2189.BudgetStatusEnum_BudgetStatus.values)
-    ..e<$2190.BudgetDeliveryMethodEnum_BudgetDeliveryMethod>(7, _omitFieldNames ? '' : 'deliveryMethod', $pb.PbFieldType.OE, defaultOrMaker: $2190.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.UNSPECIFIED, valueOf: $2190.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.valueOf, enumValues: $2190.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.values)
-    ..e<$2191.BudgetPeriodEnum_BudgetPeriod>(13, _omitFieldNames ? '' : 'period', $pb.PbFieldType.OE, defaultOrMaker: $2191.BudgetPeriodEnum_BudgetPeriod.UNSPECIFIED, valueOf: $2191.BudgetPeriodEnum_BudgetPeriod.valueOf, enumValues: $2191.BudgetPeriodEnum_BudgetPeriod.values)
-    ..e<$2192.BudgetTypeEnum_BudgetType>(18, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2192.BudgetTypeEnum_BudgetType.UNSPECIFIED, valueOf: $2192.BudgetTypeEnum_BudgetType.valueOf, enumValues: $2192.BudgetTypeEnum_BudgetType.values)
+    ..e<$2190.BudgetStatusEnum_BudgetStatus>(6, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2190.BudgetStatusEnum_BudgetStatus.UNSPECIFIED, valueOf: $2190.BudgetStatusEnum_BudgetStatus.valueOf, enumValues: $2190.BudgetStatusEnum_BudgetStatus.values)
+    ..e<$2191.BudgetDeliveryMethodEnum_BudgetDeliveryMethod>(7, _omitFieldNames ? '' : 'deliveryMethod', $pb.PbFieldType.OE, defaultOrMaker: $2191.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.UNSPECIFIED, valueOf: $2191.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.valueOf, enumValues: $2191.BudgetDeliveryMethodEnum_BudgetDeliveryMethod.values)
+    ..e<$2192.BudgetPeriodEnum_BudgetPeriod>(13, _omitFieldNames ? '' : 'period', $pb.PbFieldType.OE, defaultOrMaker: $2192.BudgetPeriodEnum_BudgetPeriod.UNSPECIFIED, valueOf: $2192.BudgetPeriodEnum_BudgetPeriod.valueOf, enumValues: $2192.BudgetPeriodEnum_BudgetPeriod.values)
+    ..e<$2193.BudgetTypeEnum_BudgetType>(18, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2193.BudgetTypeEnum_BudgetType.UNSPECIFIED, valueOf: $2193.BudgetTypeEnum_BudgetType.valueOf, enumValues: $2193.BudgetTypeEnum_BudgetType.values)
     ..aInt64(19, _omitFieldNames ? '' : 'id')
     ..aOS(20, _omitFieldNames ? '' : 'name')
     ..aInt64(21, _omitFieldNames ? '' : 'amountMicros')
@@ -160,9 +160,9 @@ class CampaignBudget extends $pb.GeneratedMessage {
 
   /// Output only. The status of this campaign budget. This field is read-only.
   @$pb.TagNumber(6)
-  $2189.BudgetStatusEnum_BudgetStatus get status => $_getN(1);
+  $2190.BudgetStatusEnum_BudgetStatus get status => $_getN(1);
   @$pb.TagNumber(6)
-  set status($2189.BudgetStatusEnum_BudgetStatus v) { setField(6, v); }
+  set status($2190.BudgetStatusEnum_BudgetStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(6)
@@ -173,9 +173,9 @@ class CampaignBudget extends $pb.GeneratedMessage {
   ///
   ///  Defaults to STANDARD if unspecified in a create operation.
   @$pb.TagNumber(7)
-  $2190.BudgetDeliveryMethodEnum_BudgetDeliveryMethod get deliveryMethod => $_getN(2);
+  $2191.BudgetDeliveryMethodEnum_BudgetDeliveryMethod get deliveryMethod => $_getN(2);
   @$pb.TagNumber(7)
-  set deliveryMethod($2190.BudgetDeliveryMethodEnum_BudgetDeliveryMethod v) { setField(7, v); }
+  set deliveryMethod($2191.BudgetDeliveryMethodEnum_BudgetDeliveryMethod v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDeliveryMethod() => $_has(2);
   @$pb.TagNumber(7)
@@ -184,9 +184,9 @@ class CampaignBudget extends $pb.GeneratedMessage {
   /// Immutable. Period over which to spend the budget. Defaults to DAILY if not
   /// specified.
   @$pb.TagNumber(13)
-  $2191.BudgetPeriodEnum_BudgetPeriod get period => $_getN(3);
+  $2192.BudgetPeriodEnum_BudgetPeriod get period => $_getN(3);
   @$pb.TagNumber(13)
-  set period($2191.BudgetPeriodEnum_BudgetPeriod v) { setField(13, v); }
+  set period($2192.BudgetPeriodEnum_BudgetPeriod v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasPeriod() => $_has(3);
   @$pb.TagNumber(13)
@@ -194,9 +194,9 @@ class CampaignBudget extends $pb.GeneratedMessage {
 
   /// Immutable. The type of the campaign budget.
   @$pb.TagNumber(18)
-  $2192.BudgetTypeEnum_BudgetType get type => $_getN(4);
+  $2193.BudgetTypeEnum_BudgetType get type => $_getN(4);
   @$pb.TagNumber(18)
-  set type($2192.BudgetTypeEnum_BudgetType v) { setField(18, v); }
+  set type($2193.BudgetTypeEnum_BudgetType v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(18)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'explanation_metadata.pbenum.dart';
 
 export 'explanation_metadata.pbenum.dart';
@@ -284,7 +284,7 @@ class ExplanationMetadata_InputMetadata_Visualization extends $pb.GeneratedMessa
 ///  Tensorflow.
 class ExplanationMetadata_InputMetadata extends $pb.GeneratedMessage {
   factory ExplanationMetadata_InputMetadata({
-    $core.Iterable<$1734.Value>? inputBaselines,
+    $core.Iterable<$1735.Value>? inputBaselines,
     $core.String? inputTensorName,
     ExplanationMetadata_InputMetadata_Encoding? encoding,
     $core.String? modality,
@@ -293,7 +293,7 @@ class ExplanationMetadata_InputMetadata extends $pb.GeneratedMessage {
     $core.String? denseShapeTensorName,
     $core.Iterable<$core.String>? indexFeatureMapping,
     $core.String? encodedTensorName,
-    $core.Iterable<$1734.Value>? encodedBaselines,
+    $core.Iterable<$1735.Value>? encodedBaselines,
     ExplanationMetadata_InputMetadata_Visualization? visualization,
     $core.String? groupName,
   }) {
@@ -341,7 +341,7 @@ class ExplanationMetadata_InputMetadata extends $pb.GeneratedMessage {
   factory ExplanationMetadata_InputMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplanationMetadata.InputMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$1734.Value>(1, _omitFieldNames ? '' : 'inputBaselines', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(1, _omitFieldNames ? '' : 'inputBaselines', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..aOS(2, _omitFieldNames ? '' : 'inputTensorName')
     ..e<ExplanationMetadata_InputMetadata_Encoding>(3, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE, defaultOrMaker: ExplanationMetadata_InputMetadata_Encoding.ENCODING_UNSPECIFIED, valueOf: ExplanationMetadata_InputMetadata_Encoding.valueOf, enumValues: ExplanationMetadata_InputMetadata_Encoding.values)
     ..aOS(4, _omitFieldNames ? '' : 'modality')
@@ -350,7 +350,7 @@ class ExplanationMetadata_InputMetadata extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'denseShapeTensorName')
     ..pPS(8, _omitFieldNames ? '' : 'indexFeatureMapping')
     ..aOS(9, _omitFieldNames ? '' : 'encodedTensorName')
-    ..pc<$1734.Value>(10, _omitFieldNames ? '' : 'encodedBaselines', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(10, _omitFieldNames ? '' : 'encodedBaselines', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..aOM<ExplanationMetadata_InputMetadata_Visualization>(11, _omitFieldNames ? '' : 'visualization', subBuilder: ExplanationMetadata_InputMetadata_Visualization.create)
     ..aOS(12, _omitFieldNames ? '' : 'groupName')
     ..hasRequiredFields = false
@@ -396,7 +396,7 @@ class ExplanationMetadata_InputMetadata extends $pb.GeneratedMessage {
   ///  [PredictSchemata's][google.cloud.aiplatform.v1.Model.predict_schemata]
   ///  [instance_schema_uri][google.cloud.aiplatform.v1.PredictSchemata.instance_schema_uri].
   @$pb.TagNumber(1)
-  $core.List<$1734.Value> get inputBaselines => $_getList(0);
+  $core.List<$1735.Value> get inputBaselines => $_getList(0);
 
   /// Name of the input tensor for this feature. Required and is only
   /// applicable to Vertex AI-provided images for Tensorflow.
@@ -501,7 +501,7 @@ class ExplanationMetadata_InputMetadata extends $pb.GeneratedMessage {
   ///  If a scalar is provided, Vertex AI broadcasts to the same shape as the
   ///  encoded tensor.
   @$pb.TagNumber(10)
-  $core.List<$1734.Value> get encodedBaselines => $_getList(9);
+  $core.List<$1735.Value> get encodedBaselines => $_getList(9);
 
   /// Visualization configurations for image explanation.
   @$pb.TagNumber(11)
@@ -540,7 +540,7 @@ enum ExplanationMetadata_OutputMetadata_DisplayNameMapping {
 /// Metadata of the prediction output to be explained.
 class ExplanationMetadata_OutputMetadata extends $pb.GeneratedMessage {
   factory ExplanationMetadata_OutputMetadata({
-    $1734.Value? indexDisplayNameMapping,
+    $1735.Value? indexDisplayNameMapping,
     $core.String? displayNameMappingKey,
     $core.String? outputTensorName,
   }) {
@@ -567,7 +567,7 @@ class ExplanationMetadata_OutputMetadata extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplanationMetadata.OutputMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'indexDisplayNameMapping', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'indexDisplayNameMapping', subBuilder: $1735.Value.create)
     ..aOS(2, _omitFieldNames ? '' : 'displayNameMappingKey')
     ..aOS(3, _omitFieldNames ? '' : 'outputTensorName')
     ..hasRequiredFields = false
@@ -612,15 +612,15 @@ class ExplanationMetadata_OutputMetadata extends $pb.GeneratedMessage {
   ///  is populated by locating in the mapping with
   ///  [Attribution.output_index][google.cloud.aiplatform.v1.Attribution.output_index].
   @$pb.TagNumber(1)
-  $1734.Value get indexDisplayNameMapping => $_getN(0);
+  $1735.Value get indexDisplayNameMapping => $_getN(0);
   @$pb.TagNumber(1)
-  set indexDisplayNameMapping($1734.Value v) { setField(1, v); }
+  set indexDisplayNameMapping($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIndexDisplayNameMapping() => $_has(0);
   @$pb.TagNumber(1)
   void clearIndexDisplayNameMapping() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureIndexDisplayNameMapping() => $_ensure(0);
+  $1735.Value ensureIndexDisplayNameMapping() => $_ensure(0);
 
   ///  Specify a field name in the prediction to look for the display name.
   ///

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/interval.pb.dart' as $4256;
-import '../../../type/types.pb.dart' as $4872;
+import '../../../../type/interval.pb.dart' as $4257;
+import '../../../type/types.pb.dart' as $4874;
 
 /// Local inventory information for the product. Represents in-store information
 /// for a specific product at the store specified by
@@ -27,15 +27,15 @@ class LocalInventory extends $pb.GeneratedMessage {
     $core.String? name,
     $fixnum.Int64? account,
     $core.String? storeCode,
-    $4872.Price? price,
-    $4872.Price? salePrice,
-    $4256.Interval? salePriceEffectiveDate,
+    $4874.Price? price,
+    $4874.Price? salePrice,
+    $4257.Interval? salePriceEffectiveDate,
     $core.String? availability,
     $fixnum.Int64? quantity,
     $core.String? pickupMethod,
     $core.String? pickupSla,
     $core.String? instoreProductLocation,
-    $core.Iterable<$4872.CustomAttribute>? customAttributes,
+    $core.Iterable<$4874.CustomAttribute>? customAttributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -84,15 +84,15 @@ class LocalInventory extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
     ..aOS(3, _omitFieldNames ? '' : 'storeCode')
-    ..aOM<$4872.Price>(4, _omitFieldNames ? '' : 'price', subBuilder: $4872.Price.create)
-    ..aOM<$4872.Price>(5, _omitFieldNames ? '' : 'salePrice', subBuilder: $4872.Price.create)
-    ..aOM<$4256.Interval>(6, _omitFieldNames ? '' : 'salePriceEffectiveDate', subBuilder: $4256.Interval.create)
+    ..aOM<$4874.Price>(4, _omitFieldNames ? '' : 'price', subBuilder: $4874.Price.create)
+    ..aOM<$4874.Price>(5, _omitFieldNames ? '' : 'salePrice', subBuilder: $4874.Price.create)
+    ..aOM<$4257.Interval>(6, _omitFieldNames ? '' : 'salePriceEffectiveDate', subBuilder: $4257.Interval.create)
     ..aOS(7, _omitFieldNames ? '' : 'availability')
     ..aInt64(8, _omitFieldNames ? '' : 'quantity')
     ..aOS(9, _omitFieldNames ? '' : 'pickupMethod')
     ..aOS(10, _omitFieldNames ? '' : 'pickupSla')
     ..aOS(11, _omitFieldNames ? '' : 'instoreProductLocation')
-    ..pc<$4872.CustomAttribute>(12, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $4872.CustomAttribute.create)
+    ..pc<$4874.CustomAttribute>(12, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $4874.CustomAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -156,42 +156,42 @@ class LocalInventory extends $pb.GeneratedMessage {
 
   /// Price of the product at this store.
   @$pb.TagNumber(4)
-  $4872.Price get price => $_getN(3);
+  $4874.Price get price => $_getN(3);
   @$pb.TagNumber(4)
-  set price($4872.Price v) { setField(4, v); }
+  set price($4874.Price v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPrice() => $_has(3);
   @$pb.TagNumber(4)
   void clearPrice() => clearField(4);
   @$pb.TagNumber(4)
-  $4872.Price ensurePrice() => $_ensure(3);
+  $4874.Price ensurePrice() => $_ensure(3);
 
   /// Sale price of the product at this store. Mandatory if
   /// [`salePriceEffectiveDate`][google.shopping.merchant.inventories.v1beta.LocalInventory.sale_price_effective_date]
   /// is defined.
   @$pb.TagNumber(5)
-  $4872.Price get salePrice => $_getN(4);
+  $4874.Price get salePrice => $_getN(4);
   @$pb.TagNumber(5)
-  set salePrice($4872.Price v) { setField(5, v); }
+  set salePrice($4874.Price v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSalePrice() => $_has(4);
   @$pb.TagNumber(5)
   void clearSalePrice() => clearField(5);
   @$pb.TagNumber(5)
-  $4872.Price ensureSalePrice() => $_ensure(4);
+  $4874.Price ensureSalePrice() => $_ensure(4);
 
   /// The `TimePeriod` of the
   /// sale at this store.
   @$pb.TagNumber(6)
-  $4256.Interval get salePriceEffectiveDate => $_getN(5);
+  $4257.Interval get salePriceEffectiveDate => $_getN(5);
   @$pb.TagNumber(6)
-  set salePriceEffectiveDate($4256.Interval v) { setField(6, v); }
+  set salePriceEffectiveDate($4257.Interval v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSalePriceEffectiveDate() => $_has(5);
   @$pb.TagNumber(6)
   void clearSalePriceEffectiveDate() => clearField(6);
   @$pb.TagNumber(6)
-  $4256.Interval ensureSalePriceEffectiveDate() => $_ensure(5);
+  $4257.Interval ensureSalePriceEffectiveDate() => $_ensure(5);
 
   /// Availability of the product at this store.
   /// For accepted attribute values, see the [local product inventory data
@@ -258,7 +258,7 @@ class LocalInventory extends $pb.GeneratedMessage {
   /// `CustomAttribute` to submit any attribute of the data specification in its
   /// generic form.
   @$pb.TagNumber(12)
-  $core.List<$4872.CustomAttribute> get customAttributes => $_getList(11);
+  $core.List<$4874.CustomAttribute> get customAttributes => $_getList(11);
 }
 
 /// Request message for the `ListLocalInventories` method.

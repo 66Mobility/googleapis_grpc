@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'attack_path.pb.dart' as $4683;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'attack_path.pb.dart' as $4685;
 import 'bigquery_export.pb.dart' as $1369;
 import 'external_system.pb.dart' as $1377;
 import 'finding.pb.dart' as $1370;
 import 'finding.pbenum.dart' as $1370;
 import 'mute_config.pb.dart' as $1371;
 import 'notification_config.pb.dart' as $1372;
-import 'resource.pb.dart' as $4682;
-import 'resource.pbenum.dart' as $4682;
+import 'resource.pb.dart' as $4684;
+import 'resource.pbenum.dart' as $4684;
 import 'resource_value_config.pb.dart' as $1376;
 import 'security_marks.pb.dart' as $1378;
 import 'securitycenter_service.pbenum.dart';
@@ -1579,7 +1579,7 @@ class GroupFindingsResponse extends $pb.GeneratedMessage {
 /// Result containing the properties and count of a groupBy request.
 class GroupResult extends $pb.GeneratedMessage {
   factory GroupResult({
-    $core.Map<$core.String, $1734.Value>? properties,
+    $core.Map<$core.String, $1735.Value>? properties,
     $fixnum.Int64? count,
   }) {
     final $result = create();
@@ -1596,7 +1596,7 @@ class GroupResult extends $pb.GeneratedMessage {
   factory GroupResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GroupResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
-    ..m<$core.String, $1734.Value>(1, _omitFieldNames ? '' : 'properties', entryClassName: 'GroupResult.PropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v2'))
+    ..m<$core.String, $1735.Value>(1, _omitFieldNames ? '' : 'properties', entryClassName: 'GroupResult.PropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v2'))
     ..aInt64(2, _omitFieldNames ? '' : 'count')
     ..hasRequiredFields = false
   ;
@@ -1624,7 +1624,7 @@ class GroupResult extends $pb.GeneratedMessage {
 
   /// Properties matching the groupBy fields in the request.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $1734.Value> get properties => $_getMap(0);
+  $core.Map<$core.String, $1735.Value> get properties => $_getMap(0);
 
   /// Total count of resources for the given properties.
   @$pb.TagNumber(2)
@@ -1751,7 +1751,7 @@ class ListAttackPathsRequest extends $pb.GeneratedMessage {
 /// valued resource.
 class ListAttackPathsResponse extends $pb.GeneratedMessage {
   factory ListAttackPathsResponse({
-    $core.Iterable<$4683.AttackPath>? attackPaths,
+    $core.Iterable<$4685.AttackPath>? attackPaths,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1768,7 +1768,7 @@ class ListAttackPathsResponse extends $pb.GeneratedMessage {
   factory ListAttackPathsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAttackPathsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
-    ..pc<$4683.AttackPath>(1, _omitFieldNames ? '' : 'attackPaths', $pb.PbFieldType.PM, subBuilder: $4683.AttackPath.create)
+    ..pc<$4685.AttackPath>(1, _omitFieldNames ? '' : 'attackPaths', $pb.PbFieldType.PM, subBuilder: $4685.AttackPath.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1796,7 +1796,7 @@ class ListAttackPathsResponse extends $pb.GeneratedMessage {
 
   /// The attack paths that the attack path simulation identified.
   @$pb.TagNumber(1)
-  $core.List<$4683.AttackPath> get attackPaths => $_getList(0);
+  $core.List<$4685.AttackPath> get attackPaths => $_getList(0);
 
   /// Token to retrieve the next page of results, or empty if there are no more
   /// results.
@@ -2083,7 +2083,7 @@ class ListFindingsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? filter,
     $core.String? orderBy,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
     $core.String? pageToken,
     $core.int? pageSize,
   }) {
@@ -2116,7 +2116,7 @@ class ListFindingsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..aOS(3, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$2209.FieldMask>(7, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(7, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOS(8, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -2259,15 +2259,15 @@ class ListFindingsRequest extends $pb.GeneratedMessage {
   /// A field mask to specify the Finding fields to be listed in the response.
   /// An empty field mask will list all fields.
   @$pb.TagNumber(7)
-  $2209.FieldMask get fieldMask => $_getN(3);
+  $2210.FieldMask get fieldMask => $_getN(3);
   @$pb.TagNumber(7)
-  set fieldMask($2209.FieldMask v) { setField(7, v); }
+  set fieldMask($2210.FieldMask v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFieldMask() => $_has(3);
   @$pb.TagNumber(7)
   void clearFieldMask() => clearField(7);
   @$pb.TagNumber(7)
-  $2209.FieldMask ensureFieldMask() => $_ensure(3);
+  $2210.FieldMask ensureFieldMask() => $_ensure(3);
 
   /// The value returned by the last `ListFindingsResponse`; indicates
   /// that this is a continuation of a prior `ListFindings` call, and
@@ -2307,13 +2307,13 @@ class ListFindingsResponse_ListFindingsResult_Resource extends $pb.GeneratedMess
     $core.String? name,
     $core.String? displayName,
     $core.String? type,
-    $4682.CloudProvider? cloudProvider,
+    $4684.CloudProvider? cloudProvider,
     $core.String? service,
     $core.String? location,
-    $4682.GcpMetadata? gcpMetadata,
-    $4682.AwsMetadata? awsMetadata,
-    $4682.AzureMetadata? azureMetadata,
-    $4682.ResourcePath? resourcePath,
+    $4684.GcpMetadata? gcpMetadata,
+    $4684.AwsMetadata? awsMetadata,
+    $4684.AzureMetadata? azureMetadata,
+    $4684.ResourcePath? resourcePath,
     $core.String? resourcePathString,
   }) {
     final $result = create();
@@ -2367,13 +2367,13 @@ class ListFindingsResponse_ListFindingsResult_Resource extends $pb.GeneratedMess
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'type')
-    ..e<$4682.CloudProvider>(4, _omitFieldNames ? '' : 'cloudProvider', $pb.PbFieldType.OE, defaultOrMaker: $4682.CloudProvider.CLOUD_PROVIDER_UNSPECIFIED, valueOf: $4682.CloudProvider.valueOf, enumValues: $4682.CloudProvider.values)
+    ..e<$4684.CloudProvider>(4, _omitFieldNames ? '' : 'cloudProvider', $pb.PbFieldType.OE, defaultOrMaker: $4684.CloudProvider.CLOUD_PROVIDER_UNSPECIFIED, valueOf: $4684.CloudProvider.valueOf, enumValues: $4684.CloudProvider.values)
     ..aOS(5, _omitFieldNames ? '' : 'service')
     ..aOS(6, _omitFieldNames ? '' : 'location')
-    ..aOM<$4682.GcpMetadata>(7, _omitFieldNames ? '' : 'gcpMetadata', subBuilder: $4682.GcpMetadata.create)
-    ..aOM<$4682.AwsMetadata>(8, _omitFieldNames ? '' : 'awsMetadata', subBuilder: $4682.AwsMetadata.create)
-    ..aOM<$4682.AzureMetadata>(9, _omitFieldNames ? '' : 'azureMetadata', subBuilder: $4682.AzureMetadata.create)
-    ..aOM<$4682.ResourcePath>(10, _omitFieldNames ? '' : 'resourcePath', subBuilder: $4682.ResourcePath.create)
+    ..aOM<$4684.GcpMetadata>(7, _omitFieldNames ? '' : 'gcpMetadata', subBuilder: $4684.GcpMetadata.create)
+    ..aOM<$4684.AwsMetadata>(8, _omitFieldNames ? '' : 'awsMetadata', subBuilder: $4684.AwsMetadata.create)
+    ..aOM<$4684.AzureMetadata>(9, _omitFieldNames ? '' : 'azureMetadata', subBuilder: $4684.AzureMetadata.create)
+    ..aOM<$4684.ResourcePath>(10, _omitFieldNames ? '' : 'resourcePath', subBuilder: $4684.ResourcePath.create)
     ..aOS(11, _omitFieldNames ? '' : 'resourcePathString')
     ..hasRequiredFields = false
   ;
@@ -2435,9 +2435,9 @@ class ListFindingsResponse_ListFindingsResult_Resource extends $pb.GeneratedMess
 
   /// Indicates which cloud provider the finding is from.
   @$pb.TagNumber(4)
-  $4682.CloudProvider get cloudProvider => $_getN(3);
+  $4684.CloudProvider get cloudProvider => $_getN(3);
   @$pb.TagNumber(4)
-  set cloudProvider($4682.CloudProvider v) { setField(4, v); }
+  set cloudProvider($4684.CloudProvider v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCloudProvider() => $_has(3);
   @$pb.TagNumber(4)
@@ -2465,51 +2465,51 @@ class ListFindingsResponse_ListFindingsResult_Resource extends $pb.GeneratedMess
 
   /// The GCP metadata associated with the finding.
   @$pb.TagNumber(7)
-  $4682.GcpMetadata get gcpMetadata => $_getN(6);
+  $4684.GcpMetadata get gcpMetadata => $_getN(6);
   @$pb.TagNumber(7)
-  set gcpMetadata($4682.GcpMetadata v) { setField(7, v); }
+  set gcpMetadata($4684.GcpMetadata v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGcpMetadata() => $_has(6);
   @$pb.TagNumber(7)
   void clearGcpMetadata() => clearField(7);
   @$pb.TagNumber(7)
-  $4682.GcpMetadata ensureGcpMetadata() => $_ensure(6);
+  $4684.GcpMetadata ensureGcpMetadata() => $_ensure(6);
 
   /// The AWS metadata associated with the finding.
   @$pb.TagNumber(8)
-  $4682.AwsMetadata get awsMetadata => $_getN(7);
+  $4684.AwsMetadata get awsMetadata => $_getN(7);
   @$pb.TagNumber(8)
-  set awsMetadata($4682.AwsMetadata v) { setField(8, v); }
+  set awsMetadata($4684.AwsMetadata v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAwsMetadata() => $_has(7);
   @$pb.TagNumber(8)
   void clearAwsMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $4682.AwsMetadata ensureAwsMetadata() => $_ensure(7);
+  $4684.AwsMetadata ensureAwsMetadata() => $_ensure(7);
 
   /// The Azure metadata associated with the finding.
   @$pb.TagNumber(9)
-  $4682.AzureMetadata get azureMetadata => $_getN(8);
+  $4684.AzureMetadata get azureMetadata => $_getN(8);
   @$pb.TagNumber(9)
-  set azureMetadata($4682.AzureMetadata v) { setField(9, v); }
+  set azureMetadata($4684.AzureMetadata v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasAzureMetadata() => $_has(8);
   @$pb.TagNumber(9)
   void clearAzureMetadata() => clearField(9);
   @$pb.TagNumber(9)
-  $4682.AzureMetadata ensureAzureMetadata() => $_ensure(8);
+  $4684.AzureMetadata ensureAzureMetadata() => $_ensure(8);
 
   /// Provides the path to the resource within the resource hierarchy.
   @$pb.TagNumber(10)
-  $4682.ResourcePath get resourcePath => $_getN(9);
+  $4684.ResourcePath get resourcePath => $_getN(9);
   @$pb.TagNumber(10)
-  set resourcePath($4682.ResourcePath v) { setField(10, v); }
+  set resourcePath($4684.ResourcePath v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasResourcePath() => $_has(9);
   @$pb.TagNumber(10)
   void clearResourcePath() => clearField(10);
   @$pb.TagNumber(10)
-  $4682.ResourcePath ensureResourcePath() => $_ensure(9);
+  $4684.ResourcePath ensureResourcePath() => $_ensure(9);
 
   /// A string representation of the resource path.
   /// For Google Cloud, it has the format of
@@ -3675,7 +3675,7 @@ class SetMuteRequest extends $pb.GeneratedMessage {
 class UpdateBigQueryExportRequest extends $pb.GeneratedMessage {
   factory UpdateBigQueryExportRequest({
     $1369.BigQueryExport? bigQueryExport,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (bigQueryExport != null) {
@@ -3692,7 +3692,7 @@ class UpdateBigQueryExportRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBigQueryExportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1369.BigQueryExport>(1, _omitFieldNames ? '' : 'bigQueryExport', subBuilder: $1369.BigQueryExport.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3732,22 +3732,22 @@ class UpdateBigQueryExportRequest extends $pb.GeneratedMessage {
   /// The list of fields to be updated.
   /// If empty all mutable fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating a ExternalSystem resource.
 class UpdateExternalSystemRequest extends $pb.GeneratedMessage {
   factory UpdateExternalSystemRequest({
     $1377.ExternalSystem? externalSystem,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (externalSystem != null) {
@@ -3764,7 +3764,7 @@ class UpdateExternalSystemRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateExternalSystemRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1377.ExternalSystem>(1, _omitFieldNames ? '' : 'externalSystem', subBuilder: $1377.ExternalSystem.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3805,22 +3805,22 @@ class UpdateExternalSystemRequest extends $pb.GeneratedMessage {
   ///
   ///  If empty all mutable fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating or creating a finding.
 class UpdateFindingRequest extends $pb.GeneratedMessage {
   factory UpdateFindingRequest({
     $1370.Finding? finding,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (finding != null) {
@@ -3837,7 +3837,7 @@ class UpdateFindingRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFindingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1370.Finding>(1, _omitFieldNames ? '' : 'finding', subBuilder: $1370.Finding.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3887,22 +3887,22 @@ class UpdateFindingRequest extends $pb.GeneratedMessage {
   ///  be added/updated by using "source_properties.<property key>" in the field
   ///  mask.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating a mute config.
 class UpdateMuteConfigRequest extends $pb.GeneratedMessage {
   factory UpdateMuteConfigRequest({
     $1371.MuteConfig? muteConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (muteConfig != null) {
@@ -3919,7 +3919,7 @@ class UpdateMuteConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMuteConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1371.MuteConfig>(1, _omitFieldNames ? '' : 'muteConfig', subBuilder: $1371.MuteConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3959,22 +3959,22 @@ class UpdateMuteConfigRequest extends $pb.GeneratedMessage {
   /// The list of fields to be updated.
   /// If empty all mutable fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating a notification config.
 class UpdateNotificationConfigRequest extends $pb.GeneratedMessage {
   factory UpdateNotificationConfigRequest({
     $1372.NotificationConfig? notificationConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (notificationConfig != null) {
@@ -3991,7 +3991,7 @@ class UpdateNotificationConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNotificationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1372.NotificationConfig>(1, _omitFieldNames ? '' : 'notificationConfig', subBuilder: $1372.NotificationConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4032,22 +4032,22 @@ class UpdateNotificationConfigRequest extends $pb.GeneratedMessage {
   ///
   ///  If empty all mutable fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message to update resource value config
 class UpdateResourceValueConfigRequest extends $pb.GeneratedMessage {
   factory UpdateResourceValueConfigRequest({
     $1376.ResourceValueConfig? resourceValueConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (resourceValueConfig != null) {
@@ -4064,7 +4064,7 @@ class UpdateResourceValueConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateResourceValueConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1376.ResourceValueConfig>(1, _omitFieldNames ? '' : 'resourceValueConfig', subBuilder: $1376.ResourceValueConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4108,22 +4108,22 @@ class UpdateResourceValueConfigRequest extends $pb.GeneratedMessage {
   ///  For example, to update gcp_metadata.resource_type, include the
   ///  "gcp_metadata" field mask
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating a SecurityMarks resource.
 class UpdateSecurityMarksRequest extends $pb.GeneratedMessage {
   factory UpdateSecurityMarksRequest({
     $1378.SecurityMarks? securityMarks,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (securityMarks != null) {
@@ -4140,7 +4140,7 @@ class UpdateSecurityMarksRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSecurityMarksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1378.SecurityMarks>(1, _omitFieldNames ? '' : 'securityMarks', subBuilder: $1378.SecurityMarks.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4183,22 +4183,22 @@ class UpdateSecurityMarksRequest extends $pb.GeneratedMessage {
   ///  If empty or set to "marks", all marks will be replaced.  Individual
   ///  marks can be updated using "marks.<mark_key>".
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for updating a source.
 class UpdateSourceRequest extends $pb.GeneratedMessage {
   factory UpdateSourceRequest({
     $1373.Source? source,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (source != null) {
@@ -4215,7 +4215,7 @@ class UpdateSourceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v2'), createEmptyInstance: create)
     ..aOM<$1373.Source>(1, _omitFieldNames ? '' : 'source', subBuilder: $1373.Source.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4256,15 +4256,15 @@ class UpdateSourceRequest extends $pb.GeneratedMessage {
   ///
   ///  If empty all mutable fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

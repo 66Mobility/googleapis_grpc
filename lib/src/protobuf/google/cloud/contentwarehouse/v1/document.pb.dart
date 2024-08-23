@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/datetime.pb.dart' as $1801;
-import '../../documentai/v1/document.pb.dart' as $4440;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/datetime.pb.dart' as $1802;
+import '../../documentai/v1/document.pb.dart' as $4442;
 import 'document.pbenum.dart';
 
 export 'document.pbenum.dart';
@@ -38,12 +38,12 @@ class Document extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? documentSchemaName,
-    $4440.Document? cloudAiDocument,
+    $4442.Document? cloudAiDocument,
     $core.String? rawDocumentPath,
     $core.List<$core.int>? inlineRawDocument,
     $core.Iterable<Property>? properties,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
     RawDocumentFileType? rawDocumentFileType,
     $core.String? referenceId,
   @$core.Deprecated('This field is deprecated.')
@@ -59,7 +59,7 @@ class Document extends $pb.GeneratedMessage {
     $core.bool? textExtractionDisabled,
     ContentCategory? contentCategory,
     $core.bool? textExtractionEnabled,
-    $1775.Timestamp? dispositionTime,
+    $1776.Timestamp? dispositionTime,
     $core.bool? legalHold,
   }) {
     final $result = create();
@@ -157,12 +157,12 @@ class Document extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'documentSchemaName')
-    ..aOM<$4440.Document>(4, _omitFieldNames ? '' : 'cloudAiDocument', subBuilder: $4440.Document.create)
+    ..aOM<$4442.Document>(4, _omitFieldNames ? '' : 'cloudAiDocument', subBuilder: $4442.Document.create)
     ..aOS(5, _omitFieldNames ? '' : 'rawDocumentPath')
     ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'inlineRawDocument', $pb.PbFieldType.OY)
     ..pc<Property>(7, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: Property.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<RawDocumentFileType>(10, _omitFieldNames ? '' : 'rawDocumentFileType', $pb.PbFieldType.OE, defaultOrMaker: RawDocumentFileType.RAW_DOCUMENT_FILE_TYPE_UNSPECIFIED, valueOf: RawDocumentFileType.valueOf, enumValues: RawDocumentFileType.values)
     ..aOS(11, _omitFieldNames ? '' : 'referenceId')
     ..aOB(12, _omitFieldNames ? '' : 'asyncEnabled')
@@ -175,7 +175,7 @@ class Document extends $pb.GeneratedMessage {
     ..aOB(19, _omitFieldNames ? '' : 'textExtractionDisabled')
     ..e<ContentCategory>(20, _omitFieldNames ? '' : 'contentCategory', $pb.PbFieldType.OE, defaultOrMaker: ContentCategory.CONTENT_CATEGORY_UNSPECIFIED, valueOf: ContentCategory.valueOf, enumValues: ContentCategory.values)
     ..aOB(21, _omitFieldNames ? '' : 'textExtractionEnabled')
-    ..aOM<$1775.Timestamp>(22, _omitFieldNames ? '' : 'dispositionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(22, _omitFieldNames ? '' : 'dispositionTime', subBuilder: $1776.Timestamp.create)
     ..aOB(23, _omitFieldNames ? '' : 'legalHold')
     ..hasRequiredFields = false
   ;
@@ -248,15 +248,15 @@ class Document extends $pb.GeneratedMessage {
 
   /// Document AI format to save the structured content, including OCR.
   @$pb.TagNumber(4)
-  $4440.Document get cloudAiDocument => $_getN(3);
+  $4442.Document get cloudAiDocument => $_getN(3);
   @$pb.TagNumber(4)
-  set cloudAiDocument($4440.Document v) { setField(4, v); }
+  set cloudAiDocument($4442.Document v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCloudAiDocument() => $_has(3);
   @$pb.TagNumber(4)
   void clearCloudAiDocument() => clearField(4);
   @$pb.TagNumber(4)
-  $4440.Document ensureCloudAiDocument() => $_ensure(3);
+  $4442.Document ensureCloudAiDocument() => $_ensure(3);
 
   /// Raw document file in Cloud Storage path.
   @$pb.TagNumber(5)
@@ -284,27 +284,27 @@ class Document extends $pb.GeneratedMessage {
 
   /// Output only. The time when the document is last updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The time when the document is created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// This is used when DocAI was not used to load the document and parsing/
   /// extracting is needed for the inline_raw_document.  For example, if
@@ -445,15 +445,15 @@ class Document extends $pb.GeneratedMessage {
   /// Output only. If linked to a Collection with RetentionPolicy, the date when
   /// the document becomes mutable.
   @$pb.TagNumber(22)
-  $1775.Timestamp get dispositionTime => $_getN(21);
+  $1776.Timestamp get dispositionTime => $_getN(21);
   @$pb.TagNumber(22)
-  set dispositionTime($1775.Timestamp v) { setField(22, v); }
+  set dispositionTime($1776.Timestamp v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasDispositionTime() => $_has(21);
   @$pb.TagNumber(22)
   void clearDispositionTime() => clearField(22);
   @$pb.TagNumber(22)
-  $1775.Timestamp ensureDispositionTime() => $_ensure(21);
+  $1776.Timestamp ensureDispositionTime() => $_ensure(21);
 
   /// Output only. Indicates if the document has a legal hold on it.
   @$pb.TagNumber(23)
@@ -473,9 +473,9 @@ class DocumentReference extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? snippet,
     $core.bool? documentIsFolder,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? deleteTime,
     $core.bool? documentIsRetentionFolder,
     $core.bool? documentIsLegalHoldFolder,
   }) {
@@ -518,9 +518,9 @@ class DocumentReference extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'snippet')
     ..aOB(4, _omitFieldNames ? '' : 'documentIsFolder')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOB(8, _omitFieldNames ? '' : 'documentIsRetentionFolder')
     ..aOB(9, _omitFieldNames ? '' : 'documentIsLegalHoldFolder')
     ..hasRequiredFields = false
@@ -593,39 +593,39 @@ class DocumentReference extends $pb.GeneratedMessage {
 
   /// Output only. The time when the document is last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Output only. The time when the document is created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The time when the document is deleted.
   @$pb.TagNumber(7)
-  $1775.Timestamp get deleteTime => $_getN(6);
+  $1776.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(7)
-  set deleteTime($1775.Timestamp v) { setField(7, v); }
+  set deleteTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearDeleteTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(6);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(6);
 
   /// Document is a folder with retention policy.
   @$pb.TagNumber(8)
@@ -1053,7 +1053,7 @@ class EnumArray extends $pb.GeneratedMessage {
 /// DateTime values.
 class DateTimeArray extends $pb.GeneratedMessage {
   factory DateTimeArray({
-    $core.Iterable<$1801.DateTime>? values,
+    $core.Iterable<$1802.DateTime>? values,
   }) {
     final $result = create();
     if (values != null) {
@@ -1066,7 +1066,7 @@ class DateTimeArray extends $pb.GeneratedMessage {
   factory DateTimeArray.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateTimeArray', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
-    ..pc<$1801.DateTime>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $1801.DateTime.create)
+    ..pc<$1802.DateTime>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $1802.DateTime.create)
     ..hasRequiredFields = false
   ;
 
@@ -1094,7 +1094,7 @@ class DateTimeArray extends $pb.GeneratedMessage {
   /// List of datetime values.
   /// Both OffsetDateTime and ZonedDateTime are supported.
   @$pb.TagNumber(1)
-  $core.List<$1801.DateTime> get values => $_getList(0);
+  $core.List<$1802.DateTime> get values => $_getList(0);
 }
 
 /// Timestamp values.
@@ -1152,7 +1152,7 @@ enum TimestampValue_Value {
 /// Timestamp value type.
 class TimestampValue extends $pb.GeneratedMessage {
   factory TimestampValue({
-    $1775.Timestamp? timestampValue,
+    $1776.Timestamp? timestampValue,
     $core.String? textValue,
   }) {
     final $result = create();
@@ -1175,7 +1175,7 @@ class TimestampValue extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimestampValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'textValue')
     ..hasRequiredFields = false
   ;
@@ -1206,15 +1206,15 @@ class TimestampValue extends $pb.GeneratedMessage {
 
   /// Timestamp value
   @$pb.TagNumber(1)
-  $1775.Timestamp get timestampValue => $_getN(0);
+  $1776.Timestamp get timestampValue => $_getN(0);
   @$pb.TagNumber(1)
-  set timestampValue($1775.Timestamp v) { setField(1, v); }
+  set timestampValue($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimestampValue() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimestampValue() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureTimestampValue() => $_ensure(0);
+  $1776.Timestamp ensureTimestampValue() => $_ensure(0);
 
   /// The string must represent a valid instant in UTC and is parsed using
   /// java.time.format.DateTimeFormatter.ISO_INSTANT.
@@ -1344,7 +1344,7 @@ class Value extends $pb.GeneratedMessage {
     $core.int? intValue,
     $core.String? stringValue,
     EnumValue? enumValue,
-    $1801.DateTime? datetimeValue,
+    $1802.DateTime? datetimeValue,
     TimestampValue? timestampValue,
     $core.bool? booleanValue,
   }) {
@@ -1392,7 +1392,7 @@ class Value extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'intValue', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'stringValue')
     ..aOM<EnumValue>(4, _omitFieldNames ? '' : 'enumValue', subBuilder: EnumValue.create)
-    ..aOM<$1801.DateTime>(5, _omitFieldNames ? '' : 'datetimeValue', subBuilder: $1801.DateTime.create)
+    ..aOM<$1802.DateTime>(5, _omitFieldNames ? '' : 'datetimeValue', subBuilder: $1802.DateTime.create)
     ..aOM<TimestampValue>(6, _omitFieldNames ? '' : 'timestampValue', subBuilder: TimestampValue.create)
     ..aOB(7, _omitFieldNames ? '' : 'booleanValue')
     ..hasRequiredFields = false
@@ -1466,15 +1466,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// Represents a datetime value.
   @$pb.TagNumber(5)
-  $1801.DateTime get datetimeValue => $_getN(4);
+  $1802.DateTime get datetimeValue => $_getN(4);
   @$pb.TagNumber(5)
-  set datetimeValue($1801.DateTime v) { setField(5, v); }
+  set datetimeValue($1802.DateTime v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDatetimeValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearDatetimeValue() => clearField(5);
   @$pb.TagNumber(5)
-  $1801.DateTime ensureDatetimeValue() => $_ensure(4);
+  $1802.DateTime ensureDatetimeValue() => $_ensure(4);
 
   /// Represents a timestamp value.
   @$pb.TagNumber(6)

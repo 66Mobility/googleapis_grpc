@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pbenum.dart' as $4446;
-import 'physical_schema.pb.dart' as $4445;
+import 'common.pbenum.dart' as $4448;
+import 'physical_schema.pb.dart' as $4447;
 
 /// Common Dataplex fields.
 class DataplexSpec extends $pb.GeneratedMessage {
   factory DataplexSpec({
     $core.String? asset,
-    $4445.PhysicalSchema? dataFormat,
+    $4447.PhysicalSchema? dataFormat,
     $core.String? compressionFormat,
     $core.String? projectId,
   }) {
@@ -45,7 +45,7 @@ class DataplexSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataplexSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'asset')
-    ..aOM<$4445.PhysicalSchema>(2, _omitFieldNames ? '' : 'dataFormat', subBuilder: $4445.PhysicalSchema.create)
+    ..aOM<$4447.PhysicalSchema>(2, _omitFieldNames ? '' : 'dataFormat', subBuilder: $4447.PhysicalSchema.create)
     ..aOS(3, _omitFieldNames ? '' : 'compressionFormat')
     ..aOS(4, _omitFieldNames ? '' : 'projectId')
     ..hasRequiredFields = false
@@ -86,15 +86,15 @@ class DataplexSpec extends $pb.GeneratedMessage {
 
   /// Format of the data.
   @$pb.TagNumber(2)
-  $4445.PhysicalSchema get dataFormat => $_getN(1);
+  $4447.PhysicalSchema get dataFormat => $_getN(1);
   @$pb.TagNumber(2)
-  set dataFormat($4445.PhysicalSchema v) { setField(2, v); }
+  set dataFormat($4447.PhysicalSchema v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDataFormat() => $_has(1);
   @$pb.TagNumber(2)
   void clearDataFormat() => clearField(2);
   @$pb.TagNumber(2)
-  $4445.PhysicalSchema ensureDataFormat() => $_ensure(1);
+  $4447.PhysicalSchema ensureDataFormat() => $_ensure(1);
 
   /// Compression format of the data, e.g., zip, gzip etc.
   @$pb.TagNumber(3)
@@ -263,7 +263,7 @@ class DataplexTableSpec extends $pb.GeneratedMessage {
 /// the Data Catalog.
 class DataplexExternalTable extends $pb.GeneratedMessage {
   factory DataplexExternalTable({
-    $4446.IntegratedSystem? system,
+    $4448.IntegratedSystem? system,
     $core.String? googleCloudResource,
     $core.String? dataCatalogEntry,
     $core.String? fullyQualifiedName,
@@ -288,7 +288,7 @@ class DataplexExternalTable extends $pb.GeneratedMessage {
   factory DataplexExternalTable.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataplexExternalTable', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
-    ..e<$4446.IntegratedSystem>(1, _omitFieldNames ? '' : 'system', $pb.PbFieldType.OE, defaultOrMaker: $4446.IntegratedSystem.INTEGRATED_SYSTEM_UNSPECIFIED, valueOf: $4446.IntegratedSystem.valueOf, enumValues: $4446.IntegratedSystem.values)
+    ..e<$4448.IntegratedSystem>(1, _omitFieldNames ? '' : 'system', $pb.PbFieldType.OE, defaultOrMaker: $4448.IntegratedSystem.INTEGRATED_SYSTEM_UNSPECIFIED, valueOf: $4448.IntegratedSystem.valueOf, enumValues: $4448.IntegratedSystem.values)
     ..aOS(3, _omitFieldNames ? '' : 'googleCloudResource')
     ..aOS(4, _omitFieldNames ? '' : 'dataCatalogEntry')
     ..aOS(28, _omitFieldNames ? '' : 'fullyQualifiedName')
@@ -318,9 +318,9 @@ class DataplexExternalTable extends $pb.GeneratedMessage {
 
   /// Service in which the external table is registered.
   @$pb.TagNumber(1)
-  $4446.IntegratedSystem get system => $_getN(0);
+  $4448.IntegratedSystem get system => $_getN(0);
   @$pb.TagNumber(1)
-  set system($4446.IntegratedSystem v) { setField(1, v); }
+  set system($4448.IntegratedSystem v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSystem() => $_has(0);
   @$pb.TagNumber(1)

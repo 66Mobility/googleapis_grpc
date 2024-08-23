@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/interval.pb.dart' as $4257;
 import 'cloud_tpu.pbenum.dart';
 
 export 'cloud_tpu.pbenum.dart';
@@ -673,7 +673,7 @@ class Node extends $pb.GeneratedMessage {
     $core.String? healthDescription,
     $core.String? runtimeVersion,
     $core.String? cidrBlock,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     SchedulingConfig? schedulingConfig,
     $core.Iterable<NetworkEndpoint>? networkEndpoints,
     Node_Health? health,
@@ -782,7 +782,7 @@ class Node extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'healthDescription')
     ..aOS(11, _omitFieldNames ? '' : 'runtimeVersion')
     ..aOS(13, _omitFieldNames ? '' : 'cidrBlock')
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SchedulingConfig>(17, _omitFieldNames ? '' : 'schedulingConfig', subBuilder: SchedulingConfig.create)
     ..pc<NetworkEndpoint>(21, _omitFieldNames ? '' : 'networkEndpoints', $pb.PbFieldType.PM, subBuilder: NetworkEndpoint.create)
     ..e<Node_Health>(22, _omitFieldNames ? '' : 'health', $pb.PbFieldType.OE, defaultOrMaker: Node_Health.HEALTH_UNSPECIFIED, valueOf: Node_Health.valueOf, enumValues: Node_Health.values)
@@ -904,15 +904,15 @@ class Node extends $pb.GeneratedMessage {
 
   /// Output only. The time when the node was created.
   @$pb.TagNumber(16)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(16)
-  set createTime($1775.Timestamp v) { setField(16, v); }
+  set createTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(16)
   void clearCreateTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// The scheduling options for this node.
   @$pb.TagNumber(17)
@@ -1363,7 +1363,7 @@ class QueuedResource_Spot extends $pb.GeneratedMessage {
 /// Guaranteed tier definition.
 class QueuedResource_Guaranteed extends $pb.GeneratedMessage {
   factory QueuedResource_Guaranteed({
-    $1737.Duration? minDuration,
+    $1738.Duration? minDuration,
     $core.bool? reserved,
   }) {
     final $result = create();
@@ -1380,7 +1380,7 @@ class QueuedResource_Guaranteed extends $pb.GeneratedMessage {
   factory QueuedResource_Guaranteed.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueuedResource.Guaranteed', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2alpha1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'minDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'minDuration', subBuilder: $1738.Duration.create)
     ..aOB(2, _omitFieldNames ? '' : 'reserved')
     ..hasRequiredFields = false
   ;
@@ -1410,15 +1410,15 @@ class QueuedResource_Guaranteed extends $pb.GeneratedMessage {
   /// the requested resources will only be provisioned if they can be
   /// allocated for at least the given duration.
   @$pb.TagNumber(1)
-  $1737.Duration get minDuration => $_getN(0);
+  $1738.Duration get minDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set minDuration($1737.Duration v) { setField(1, v); }
+  set minDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMinDuration() => $_ensure(0);
+  $1738.Duration ensureMinDuration() => $_ensure(0);
 
   /// Optional. Specifies the request should be scheduled on reserved capacity.
   @$pb.TagNumber(2)
@@ -1443,11 +1443,11 @@ enum QueuedResource_QueueingPolicy_StartTimingConstraints {
 /// Defines the policy of the QueuedRequest.
 class QueuedResource_QueueingPolicy extends $pb.GeneratedMessage {
   factory QueuedResource_QueueingPolicy({
-    $1737.Duration? validUntilDuration,
-    $1775.Timestamp? validUntilTime,
-    $1737.Duration? validAfterDuration,
-    $1775.Timestamp? validAfterTime,
-    $4256.Interval? validInterval,
+    $1738.Duration? validUntilDuration,
+    $1776.Timestamp? validUntilTime,
+    $1738.Duration? validAfterDuration,
+    $1776.Timestamp? validAfterTime,
+    $4257.Interval? validInterval,
   }) {
     final $result = create();
     if (validUntilDuration != null) {
@@ -1481,11 +1481,11 @@ class QueuedResource_QueueingPolicy extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueuedResource.QueueingPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2alpha1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5])
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'validUntilDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'validUntilTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'validAfterDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'validAfterTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4256.Interval>(5, _omitFieldNames ? '' : 'validInterval', subBuilder: $4256.Interval.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'validUntilDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'validUntilTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'validAfterDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'validAfterTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4257.Interval>(5, _omitFieldNames ? '' : 'validInterval', subBuilder: $4257.Interval.create)
     ..hasRequiredFields = false
   ;
 
@@ -1517,65 +1517,65 @@ class QueuedResource_QueueingPolicy extends $pb.GeneratedMessage {
   /// If the request cannot be fulfilled by this time the request will be
   /// failed.
   @$pb.TagNumber(1)
-  $1737.Duration get validUntilDuration => $_getN(0);
+  $1738.Duration get validUntilDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set validUntilDuration($1737.Duration v) { setField(1, v); }
+  set validUntilDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasValidUntilDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearValidUntilDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureValidUntilDuration() => $_ensure(0);
+  $1738.Duration ensureValidUntilDuration() => $_ensure(0);
 
   /// An absolute time after which resources should not be created.
   /// If the request cannot be fulfilled by this time the request will be
   /// failed.
   @$pb.TagNumber(2)
-  $1775.Timestamp get validUntilTime => $_getN(1);
+  $1776.Timestamp get validUntilTime => $_getN(1);
   @$pb.TagNumber(2)
-  set validUntilTime($1775.Timestamp v) { setField(2, v); }
+  set validUntilTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValidUntilTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearValidUntilTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureValidUntilTime() => $_ensure(1);
+  $1776.Timestamp ensureValidUntilTime() => $_ensure(1);
 
   /// A relative time after which resources may be created.
   @$pb.TagNumber(3)
-  $1737.Duration get validAfterDuration => $_getN(2);
+  $1738.Duration get validAfterDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set validAfterDuration($1737.Duration v) { setField(3, v); }
+  set validAfterDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValidAfterDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearValidAfterDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureValidAfterDuration() => $_ensure(2);
+  $1738.Duration ensureValidAfterDuration() => $_ensure(2);
 
   /// An absolute time at which resources may be created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get validAfterTime => $_getN(3);
+  $1776.Timestamp get validAfterTime => $_getN(3);
   @$pb.TagNumber(4)
-  set validAfterTime($1775.Timestamp v) { setField(4, v); }
+  set validAfterTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasValidAfterTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearValidAfterTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureValidAfterTime() => $_ensure(3);
+  $1776.Timestamp ensureValidAfterTime() => $_ensure(3);
 
   /// An absolute time interval within which resources may be created.
   @$pb.TagNumber(5)
-  $4256.Interval get validInterval => $_getN(4);
+  $4257.Interval get validInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set validInterval($4256.Interval v) { setField(5, v); }
+  set validInterval($4257.Interval v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasValidInterval() => $_has(4);
   @$pb.TagNumber(5)
   void clearValidInterval() => clearField(5);
   @$pb.TagNumber(5)
-  $4256.Interval ensureValidInterval() => $_ensure(4);
+  $4257.Interval ensureValidInterval() => $_ensure(4);
 }
 
 enum QueuedResource_Resource {
@@ -1881,7 +1881,7 @@ class QueuedResourceState_ProvisioningData extends $pb.GeneratedMessage {
 /// Further data for the failed state.
 class QueuedResourceState_FailedData extends $pb.GeneratedMessage {
   factory QueuedResourceState_FailedData({
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (error != null) {
@@ -1894,7 +1894,7 @@ class QueuedResourceState_FailedData extends $pb.GeneratedMessage {
   factory QueuedResourceState_FailedData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueuedResourceState.FailedData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2alpha1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1921,15 +1921,15 @@ class QueuedResourceState_FailedData extends $pb.GeneratedMessage {
 
   /// The error that caused the queued resource to enter the FAILED state.
   @$pb.TagNumber(1)
-  $1795.Status get error => $_getN(0);
+  $1796.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($1795.Status v) { setField(1, v); }
+  set error($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureError() => $_ensure(0);
+  $1796.Status ensureError() => $_ensure(0);
 }
 
 /// Further data for the deleting state.
@@ -2771,7 +2771,7 @@ class StartNodeRequest extends $pb.GeneratedMessage {
 /// Request for [UpdateNode][google.cloud.tpu.v2alpha1.Tpu.UpdateNode].
 class UpdateNodeRequest extends $pb.GeneratedMessage {
   factory UpdateNodeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Node? node,
   }) {
     final $result = create();
@@ -2788,7 +2788,7 @@ class UpdateNodeRequest extends $pb.GeneratedMessage {
   factory UpdateNodeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNodeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2alpha1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Node>(2, _omitFieldNames ? '' : 'node', subBuilder: Node.create)
     ..hasRequiredFields = false
   ;
@@ -2818,15 +2818,15 @@ class UpdateNodeRequest extends $pb.GeneratedMessage {
   /// Supported fields: [description, tags, labels, metadata,
   /// network_config.enable_external_ips].
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The node. Only fields specified in update_mask are updated.
   @$pb.TagNumber(2)
@@ -4069,8 +4069,8 @@ class ListRuntimeVersionsResponse extends $pb.GeneratedMessage {
 /// Metadata describing an [Operation][google.longrunning.Operation]
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusDetail,
@@ -4106,8 +4106,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusDetail')
@@ -4139,27 +4139,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Target of the operation - for example
   /// projects/project-1/connectivityTests/test-1
@@ -4216,7 +4216,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
 /// A Symptom instance.
 class Symptom extends $pb.GeneratedMessage {
   factory Symptom({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Symptom_SymptomType? symptomType,
     $core.String? details,
     $core.String? workerId,
@@ -4241,7 +4241,7 @@ class Symptom extends $pb.GeneratedMessage {
   factory Symptom.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Symptom', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Symptom_SymptomType>(2, _omitFieldNames ? '' : 'symptomType', $pb.PbFieldType.OE, defaultOrMaker: Symptom_SymptomType.SYMPTOM_TYPE_UNSPECIFIED, valueOf: Symptom_SymptomType.valueOf, enumValues: Symptom_SymptomType.values)
     ..aOS(3, _omitFieldNames ? '' : 'details')
     ..aOS(4, _omitFieldNames ? '' : 'workerId')
@@ -4271,15 +4271,15 @@ class Symptom extends $pb.GeneratedMessage {
 
   /// Timestamp when the Symptom is created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Type of the Symptom.
   @$pb.TagNumber(2)

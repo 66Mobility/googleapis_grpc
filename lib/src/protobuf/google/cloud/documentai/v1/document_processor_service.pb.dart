@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'document.pb.dart' as $4440;
-import 'document_io.pb.dart' as $4515;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'document.pb.dart' as $4442;
+import 'document_io.pb.dart' as $4517;
 import 'document_processor_service.pbenum.dart';
-import 'document_schema.pb.dart' as $4514;
+import 'document_schema.pb.dart' as $4516;
 import 'evaluation.pb.dart' as $1030;
-import 'operation_metadata.pb.dart' as $4516;
+import 'operation_metadata.pb.dart' as $4518;
 import 'processor.pb.dart' as $1029;
 import 'processor_type.pb.dart' as $1028;
 
@@ -205,11 +205,11 @@ enum ProcessOptions_PageRange {
 /// Options for Process API
 class ProcessOptions extends $pb.GeneratedMessage {
   factory ProcessOptions({
-    $4515.OcrConfig? ocrConfig,
+    $4517.OcrConfig? ocrConfig,
     ProcessOptions_IndividualPageSelector? individualPageSelector,
     $core.int? fromStart,
     $core.int? fromEnd,
-    $4514.DocumentSchema? schemaOverride,
+    $4516.DocumentSchema? schemaOverride,
     ProcessOptions_LayoutConfig? layoutConfig,
   }) {
     final $result = create();
@@ -245,11 +245,11 @@ class ProcessOptions extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..oo(0, [5, 6, 7])
-    ..aOM<$4515.OcrConfig>(1, _omitFieldNames ? '' : 'ocrConfig', subBuilder: $4515.OcrConfig.create)
+    ..aOM<$4517.OcrConfig>(1, _omitFieldNames ? '' : 'ocrConfig', subBuilder: $4517.OcrConfig.create)
     ..aOM<ProcessOptions_IndividualPageSelector>(5, _omitFieldNames ? '' : 'individualPageSelector', subBuilder: ProcessOptions_IndividualPageSelector.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'fromStart', $pb.PbFieldType.O3)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'fromEnd', $pb.PbFieldType.O3)
-    ..aOM<$4514.DocumentSchema>(8, _omitFieldNames ? '' : 'schemaOverride', subBuilder: $4514.DocumentSchema.create)
+    ..aOM<$4516.DocumentSchema>(8, _omitFieldNames ? '' : 'schemaOverride', subBuilder: $4516.DocumentSchema.create)
     ..aOM<ProcessOptions_LayoutConfig>(9, _omitFieldNames ? '' : 'layoutConfig', subBuilder: ProcessOptions_LayoutConfig.create)
     ..hasRequiredFields = false
   ;
@@ -281,15 +281,15 @@ class ProcessOptions extends $pb.GeneratedMessage {
   /// Only applicable to `OCR_PROCESSOR` and `FORM_PARSER_PROCESSOR`.
   /// Returns error if set on other processor types.
   @$pb.TagNumber(1)
-  $4515.OcrConfig get ocrConfig => $_getN(0);
+  $4517.OcrConfig get ocrConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set ocrConfig($4515.OcrConfig v) { setField(1, v); }
+  set ocrConfig($4517.OcrConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOcrConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearOcrConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $4515.OcrConfig ensureOcrConfig() => $_ensure(0);
+  $4517.OcrConfig ensureOcrConfig() => $_ensure(0);
 
   /// Which pages to process (1-indexed).
   @$pb.TagNumber(5)
@@ -330,15 +330,15 @@ class ProcessOptions extends $pb.GeneratedMessage {
   /// [ProcessorVersion][google.cloud.documentai.v1.ProcessorVersion] doesn't
   /// support schema override.
   @$pb.TagNumber(8)
-  $4514.DocumentSchema get schemaOverride => $_getN(4);
+  $4516.DocumentSchema get schemaOverride => $_getN(4);
   @$pb.TagNumber(8)
-  set schemaOverride($4514.DocumentSchema v) { setField(8, v); }
+  set schemaOverride($4516.DocumentSchema v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSchemaOverride() => $_has(4);
   @$pb.TagNumber(8)
   void clearSchemaOverride() => clearField(8);
   @$pb.TagNumber(8)
-  $4514.DocumentSchema ensureSchemaOverride() => $_ensure(4);
+  $4516.DocumentSchema ensureSchemaOverride() => $_ensure(4);
 
   /// Optional. Only applicable to `LAYOUT_PARSER_PROCESSOR`.
   /// Returns error if set on other processor types.
@@ -368,11 +368,11 @@ class ProcessRequest extends $pb.GeneratedMessage {
   factory ProcessRequest({
     $core.String? name,
     $core.bool? skipHumanReview,
-    $4440.Document? inlineDocument,
-    $4515.RawDocument? rawDocument,
-    $2209.FieldMask? fieldMask,
+    $4442.Document? inlineDocument,
+    $4517.RawDocument? rawDocument,
+    $2210.FieldMask? fieldMask,
     ProcessOptions? processOptions,
-    $4515.GcsDocument? gcsDocument,
+    $4517.GcsDocument? gcsDocument,
     $core.Map<$core.String, $core.String>? labels,
     $core.bool? imagelessMode,
   }) {
@@ -420,11 +420,11 @@ class ProcessRequest extends $pb.GeneratedMessage {
     ..oo(0, [4, 5, 8])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(3, _omitFieldNames ? '' : 'skipHumanReview')
-    ..aOM<$4440.Document>(4, _omitFieldNames ? '' : 'inlineDocument', subBuilder: $4440.Document.create)
-    ..aOM<$4515.RawDocument>(5, _omitFieldNames ? '' : 'rawDocument', subBuilder: $4515.RawDocument.create)
-    ..aOM<$2209.FieldMask>(6, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$4442.Document>(4, _omitFieldNames ? '' : 'inlineDocument', subBuilder: $4442.Document.create)
+    ..aOM<$4517.RawDocument>(5, _omitFieldNames ? '' : 'rawDocument', subBuilder: $4517.RawDocument.create)
+    ..aOM<$2210.FieldMask>(6, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOM<ProcessOptions>(7, _omitFieldNames ? '' : 'processOptions', subBuilder: ProcessOptions.create)
-    ..aOM<$4515.GcsDocument>(8, _omitFieldNames ? '' : 'gcsDocument', subBuilder: $4515.GcsDocument.create)
+    ..aOM<$4517.GcsDocument>(8, _omitFieldNames ? '' : 'gcsDocument', subBuilder: $4517.GcsDocument.create)
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'ProcessRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.documentai.v1'))
     ..aOB(11, _omitFieldNames ? '' : 'imagelessMode')
     ..hasRequiredFields = false
@@ -486,42 +486,42 @@ class ProcessRequest extends $pb.GeneratedMessage {
 
   /// An inline document proto.
   @$pb.TagNumber(4)
-  $4440.Document get inlineDocument => $_getN(2);
+  $4442.Document get inlineDocument => $_getN(2);
   @$pb.TagNumber(4)
-  set inlineDocument($4440.Document v) { setField(4, v); }
+  set inlineDocument($4442.Document v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInlineDocument() => $_has(2);
   @$pb.TagNumber(4)
   void clearInlineDocument() => clearField(4);
   @$pb.TagNumber(4)
-  $4440.Document ensureInlineDocument() => $_ensure(2);
+  $4442.Document ensureInlineDocument() => $_ensure(2);
 
   /// A raw document content (bytes).
   @$pb.TagNumber(5)
-  $4515.RawDocument get rawDocument => $_getN(3);
+  $4517.RawDocument get rawDocument => $_getN(3);
   @$pb.TagNumber(5)
-  set rawDocument($4515.RawDocument v) { setField(5, v); }
+  set rawDocument($4517.RawDocument v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRawDocument() => $_has(3);
   @$pb.TagNumber(5)
   void clearRawDocument() => clearField(5);
   @$pb.TagNumber(5)
-  $4515.RawDocument ensureRawDocument() => $_ensure(3);
+  $4517.RawDocument ensureRawDocument() => $_ensure(3);
 
   /// Specifies which fields to include in the
   /// [ProcessResponse.document][google.cloud.documentai.v1.ProcessResponse.document]
   /// output. Only supports top-level document and pages field, so it must be in
   /// the form of `{document_field_name}` or `pages.{page_field_name}`.
   @$pb.TagNumber(6)
-  $2209.FieldMask get fieldMask => $_getN(4);
+  $2210.FieldMask get fieldMask => $_getN(4);
   @$pb.TagNumber(6)
-  set fieldMask($2209.FieldMask v) { setField(6, v); }
+  set fieldMask($2210.FieldMask v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFieldMask() => $_has(4);
   @$pb.TagNumber(6)
   void clearFieldMask() => clearField(6);
   @$pb.TagNumber(6)
-  $2209.FieldMask ensureFieldMask() => $_ensure(4);
+  $2210.FieldMask ensureFieldMask() => $_ensure(4);
 
   /// Inference-time options for the process API
   @$pb.TagNumber(7)
@@ -537,15 +537,15 @@ class ProcessRequest extends $pb.GeneratedMessage {
 
   /// A raw document on Google Cloud Storage.
   @$pb.TagNumber(8)
-  $4515.GcsDocument get gcsDocument => $_getN(6);
+  $4517.GcsDocument get gcsDocument => $_getN(6);
   @$pb.TagNumber(8)
-  set gcsDocument($4515.GcsDocument v) { setField(8, v); }
+  set gcsDocument($4517.GcsDocument v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasGcsDocument() => $_has(6);
   @$pb.TagNumber(8)
   void clearGcsDocument() => clearField(8);
   @$pb.TagNumber(8)
-  $4515.GcsDocument ensureGcsDocument() => $_ensure(6);
+  $4517.GcsDocument ensureGcsDocument() => $_ensure(6);
 
   ///  Optional. The labels with user-defined metadata for the request.
   ///
@@ -659,7 +659,7 @@ class HumanReviewStatus extends $pb.GeneratedMessage {
 /// method.
 class ProcessResponse extends $pb.GeneratedMessage {
   factory ProcessResponse({
-    $4440.Document? document,
+    $4442.Document? document,
     HumanReviewStatus? humanReviewStatus,
   }) {
     final $result = create();
@@ -676,7 +676,7 @@ class ProcessResponse extends $pb.GeneratedMessage {
   factory ProcessResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProcessResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4440.Document>(1, _omitFieldNames ? '' : 'document', subBuilder: $4440.Document.create)
+    ..aOM<$4442.Document>(1, _omitFieldNames ? '' : 'document', subBuilder: $4442.Document.create)
     ..aOM<HumanReviewStatus>(3, _omitFieldNames ? '' : 'humanReviewStatus', subBuilder: HumanReviewStatus.create)
     ..hasRequiredFields = false
   ;
@@ -705,15 +705,15 @@ class ProcessResponse extends $pb.GeneratedMessage {
   /// The document payload, will populate fields based on the processor's
   /// behavior.
   @$pb.TagNumber(1)
-  $4440.Document get document => $_getN(0);
+  $4442.Document get document => $_getN(0);
   @$pb.TagNumber(1)
-  set document($4440.Document v) { setField(1, v); }
+  set document($4442.Document v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDocument() => $_has(0);
   @$pb.TagNumber(1)
   void clearDocument() => clearField(1);
   @$pb.TagNumber(1)
-  $4440.Document ensureDocument() => $_ensure(0);
+  $4442.Document ensureDocument() => $_ensure(0);
 
   /// The status of human review on the processed document.
   @$pb.TagNumber(3)
@@ -734,8 +734,8 @@ class BatchProcessRequest extends $pb.GeneratedMessage {
   factory BatchProcessRequest({
     $core.String? name,
     $core.bool? skipHumanReview,
-    $4515.BatchDocumentsInputConfig? inputDocuments,
-    $4515.DocumentOutputConfig? documentOutputConfig,
+    $4517.BatchDocumentsInputConfig? inputDocuments,
+    $4517.DocumentOutputConfig? documentOutputConfig,
     ProcessOptions? processOptions,
     $core.Map<$core.String, $core.String>? labels,
   }) {
@@ -767,8 +767,8 @@ class BatchProcessRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchProcessRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(4, _omitFieldNames ? '' : 'skipHumanReview')
-    ..aOM<$4515.BatchDocumentsInputConfig>(5, _omitFieldNames ? '' : 'inputDocuments', subBuilder: $4515.BatchDocumentsInputConfig.create)
-    ..aOM<$4515.DocumentOutputConfig>(6, _omitFieldNames ? '' : 'documentOutputConfig', subBuilder: $4515.DocumentOutputConfig.create)
+    ..aOM<$4517.BatchDocumentsInputConfig>(5, _omitFieldNames ? '' : 'inputDocuments', subBuilder: $4517.BatchDocumentsInputConfig.create)
+    ..aOM<$4517.DocumentOutputConfig>(6, _omitFieldNames ? '' : 'documentOutputConfig', subBuilder: $4517.DocumentOutputConfig.create)
     ..aOM<ProcessOptions>(7, _omitFieldNames ? '' : 'processOptions', subBuilder: ProcessOptions.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'BatchProcessRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.documentai.v1'))
     ..hasRequiredFields = false
@@ -825,29 +825,29 @@ class BatchProcessRequest extends $pb.GeneratedMessage {
   /// [BatchProcessDocuments][google.cloud.documentai.v1.DocumentProcessorService.BatchProcessDocuments]
   /// method.
   @$pb.TagNumber(5)
-  $4515.BatchDocumentsInputConfig get inputDocuments => $_getN(2);
+  $4517.BatchDocumentsInputConfig get inputDocuments => $_getN(2);
   @$pb.TagNumber(5)
-  set inputDocuments($4515.BatchDocumentsInputConfig v) { setField(5, v); }
+  set inputDocuments($4517.BatchDocumentsInputConfig v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInputDocuments() => $_has(2);
   @$pb.TagNumber(5)
   void clearInputDocuments() => clearField(5);
   @$pb.TagNumber(5)
-  $4515.BatchDocumentsInputConfig ensureInputDocuments() => $_ensure(2);
+  $4517.BatchDocumentsInputConfig ensureInputDocuments() => $_ensure(2);
 
   /// The output configuration for the
   /// [BatchProcessDocuments][google.cloud.documentai.v1.DocumentProcessorService.BatchProcessDocuments]
   /// method.
   @$pb.TagNumber(6)
-  $4515.DocumentOutputConfig get documentOutputConfig => $_getN(3);
+  $4517.DocumentOutputConfig get documentOutputConfig => $_getN(3);
   @$pb.TagNumber(6)
-  set documentOutputConfig($4515.DocumentOutputConfig v) { setField(6, v); }
+  set documentOutputConfig($4517.DocumentOutputConfig v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDocumentOutputConfig() => $_has(3);
   @$pb.TagNumber(6)
   void clearDocumentOutputConfig() => clearField(6);
   @$pb.TagNumber(6)
-  $4515.DocumentOutputConfig ensureDocumentOutputConfig() => $_ensure(3);
+  $4517.DocumentOutputConfig ensureDocumentOutputConfig() => $_ensure(3);
 
   /// Inference-time options for the process API
   @$pb.TagNumber(7)
@@ -909,7 +909,7 @@ class BatchProcessResponse extends $pb.GeneratedMessage {
 class BatchProcessMetadata_IndividualProcessStatus extends $pb.GeneratedMessage {
   factory BatchProcessMetadata_IndividualProcessStatus({
     $core.String? inputGcsSource,
-    $1795.Status? status,
+    $1796.Status? status,
     $core.String? outputGcsDestination,
     HumanReviewStatus? humanReviewStatus,
   }) {
@@ -934,7 +934,7 @@ class BatchProcessMetadata_IndividualProcessStatus extends $pb.GeneratedMessage 
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchProcessMetadata.IndividualProcessStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'inputGcsSource')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..aOS(3, _omitFieldNames ? '' : 'outputGcsDestination')
     ..aOM<HumanReviewStatus>(5, _omitFieldNames ? '' : 'humanReviewStatus', subBuilder: HumanReviewStatus.create)
     ..hasRequiredFields = false
@@ -975,15 +975,15 @@ class BatchProcessMetadata_IndividualProcessStatus extends $pb.GeneratedMessage 
 
   /// The status processing the document.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 
   /// The Cloud Storage output destination (in the request as
   /// [DocumentOutputConfig.GcsOutputConfig.gcs_uri][google.cloud.documentai.v1.DocumentOutputConfig.GcsOutputConfig.gcs_uri])
@@ -1016,8 +1016,8 @@ class BatchProcessMetadata extends $pb.GeneratedMessage {
   factory BatchProcessMetadata({
     BatchProcessMetadata_State? state,
     $core.String? stateMessage,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<BatchProcessMetadata_IndividualProcessStatus>? individualProcessStatuses,
   }) {
     final $result = create();
@@ -1045,8 +1045,8 @@ class BatchProcessMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchProcessMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..e<BatchProcessMetadata_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: BatchProcessMetadata_State.STATE_UNSPECIFIED, valueOf: BatchProcessMetadata_State.valueOf, enumValues: BatchProcessMetadata_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'stateMessage')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pc<BatchProcessMetadata_IndividualProcessStatus>(5, _omitFieldNames ? '' : 'individualProcessStatuses', $pb.PbFieldType.PM, subBuilder: BatchProcessMetadata_IndividualProcessStatus.create)
     ..hasRequiredFields = false
   ;
@@ -1095,27 +1095,27 @@ class BatchProcessMetadata extends $pb.GeneratedMessage {
 
   /// The creation time of the operation.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The last update time of the operation.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The list of response details of each document.
   @$pb.TagNumber(5)
@@ -1897,7 +1897,7 @@ class DeleteProcessorVersionRequest extends $pb.GeneratedMessage {
 /// method.
 class DeleteProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory DeleteProcessorVersionMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -1910,7 +1910,7 @@ class DeleteProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory DeleteProcessorVersionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteProcessorVersionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -1937,15 +1937,15 @@ class DeleteProcessorVersionMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Request message for the
@@ -2042,7 +2042,7 @@ class DeployProcessorVersionResponse extends $pb.GeneratedMessage {
 /// method.
 class DeployProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory DeployProcessorVersionMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -2055,7 +2055,7 @@ class DeployProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory DeployProcessorVersionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeployProcessorVersionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -2082,15 +2082,15 @@ class DeployProcessorVersionMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Request message for the
@@ -2187,7 +2187,7 @@ class UndeployProcessorVersionResponse extends $pb.GeneratedMessage {
 /// method.
 class UndeployProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory UndeployProcessorVersionMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -2200,7 +2200,7 @@ class UndeployProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory UndeployProcessorVersionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeployProcessorVersionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -2227,15 +2227,15 @@ class UndeployProcessorVersionMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Request message for the
@@ -2376,7 +2376,7 @@ class DeleteProcessorRequest extends $pb.GeneratedMessage {
 /// method.
 class DeleteProcessorMetadata extends $pb.GeneratedMessage {
   factory DeleteProcessorMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -2389,7 +2389,7 @@ class DeleteProcessorMetadata extends $pb.GeneratedMessage {
   factory DeleteProcessorMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteProcessorMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -2416,15 +2416,15 @@ class DeleteProcessorMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(5)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(5, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(5)
   void clearCommonMetadata() => clearField(5);
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Request message for the
@@ -2521,7 +2521,7 @@ class EnableProcessorResponse extends $pb.GeneratedMessage {
 /// method.
 class EnableProcessorMetadata extends $pb.GeneratedMessage {
   factory EnableProcessorMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -2534,7 +2534,7 @@ class EnableProcessorMetadata extends $pb.GeneratedMessage {
   factory EnableProcessorMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnableProcessorMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -2561,15 +2561,15 @@ class EnableProcessorMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(5)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(5, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(5)
   void clearCommonMetadata() => clearField(5);
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Request message for the
@@ -2666,7 +2666,7 @@ class DisableProcessorResponse extends $pb.GeneratedMessage {
 /// method.
 class DisableProcessorMetadata extends $pb.GeneratedMessage {
   factory DisableProcessorMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -2679,7 +2679,7 @@ class DisableProcessorMetadata extends $pb.GeneratedMessage {
   factory DisableProcessorMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DisableProcessorMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -2706,15 +2706,15 @@ class DisableProcessorMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(5)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(5, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(5)
   void clearCommonMetadata() => clearField(5);
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Request message for the
@@ -2831,7 +2831,7 @@ class SetDefaultProcessorVersionResponse extends $pb.GeneratedMessage {
 /// method.
 class SetDefaultProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory SetDefaultProcessorVersionMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -2844,7 +2844,7 @@ class SetDefaultProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory SetDefaultProcessorVersionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetDefaultProcessorVersionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -2871,23 +2871,23 @@ class SetDefaultProcessorVersionMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// The input data used to train a new
 /// [ProcessorVersion][google.cloud.documentai.v1.ProcessorVersion].
 class TrainProcessorVersionRequest_InputData extends $pb.GeneratedMessage {
   factory TrainProcessorVersionRequest_InputData({
-    $4515.BatchDocumentsInputConfig? trainingDocuments,
-    $4515.BatchDocumentsInputConfig? testDocuments,
+    $4517.BatchDocumentsInputConfig? trainingDocuments,
+    $4517.BatchDocumentsInputConfig? testDocuments,
   }) {
     final $result = create();
     if (trainingDocuments != null) {
@@ -2903,8 +2903,8 @@ class TrainProcessorVersionRequest_InputData extends $pb.GeneratedMessage {
   factory TrainProcessorVersionRequest_InputData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrainProcessorVersionRequest.InputData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4515.BatchDocumentsInputConfig>(3, _omitFieldNames ? '' : 'trainingDocuments', subBuilder: $4515.BatchDocumentsInputConfig.create)
-    ..aOM<$4515.BatchDocumentsInputConfig>(4, _omitFieldNames ? '' : 'testDocuments', subBuilder: $4515.BatchDocumentsInputConfig.create)
+    ..aOM<$4517.BatchDocumentsInputConfig>(3, _omitFieldNames ? '' : 'trainingDocuments', subBuilder: $4517.BatchDocumentsInputConfig.create)
+    ..aOM<$4517.BatchDocumentsInputConfig>(4, _omitFieldNames ? '' : 'testDocuments', subBuilder: $4517.BatchDocumentsInputConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -2931,27 +2931,27 @@ class TrainProcessorVersionRequest_InputData extends $pb.GeneratedMessage {
 
   /// The documents used for training the new version.
   @$pb.TagNumber(3)
-  $4515.BatchDocumentsInputConfig get trainingDocuments => $_getN(0);
+  $4517.BatchDocumentsInputConfig get trainingDocuments => $_getN(0);
   @$pb.TagNumber(3)
-  set trainingDocuments($4515.BatchDocumentsInputConfig v) { setField(3, v); }
+  set trainingDocuments($4517.BatchDocumentsInputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTrainingDocuments() => $_has(0);
   @$pb.TagNumber(3)
   void clearTrainingDocuments() => clearField(3);
   @$pb.TagNumber(3)
-  $4515.BatchDocumentsInputConfig ensureTrainingDocuments() => $_ensure(0);
+  $4517.BatchDocumentsInputConfig ensureTrainingDocuments() => $_ensure(0);
 
   /// The documents used for testing the trained version.
   @$pb.TagNumber(4)
-  $4515.BatchDocumentsInputConfig get testDocuments => $_getN(1);
+  $4517.BatchDocumentsInputConfig get testDocuments => $_getN(1);
   @$pb.TagNumber(4)
-  set testDocuments($4515.BatchDocumentsInputConfig v) { setField(4, v); }
+  set testDocuments($4517.BatchDocumentsInputConfig v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTestDocuments() => $_has(1);
   @$pb.TagNumber(4)
   void clearTestDocuments() => clearField(4);
   @$pb.TagNumber(4)
-  $4515.BatchDocumentsInputConfig ensureTestDocuments() => $_ensure(1);
+  $4517.BatchDocumentsInputConfig ensureTestDocuments() => $_ensure(1);
 }
 
 /// Options to control the training of the Custom Document Extraction (CDE)
@@ -3093,7 +3093,7 @@ class TrainProcessorVersionRequest extends $pb.GeneratedMessage {
     TrainProcessorVersionRequest_InputData? inputData,
     TrainProcessorVersionRequest_CustomDocumentExtractionOptions? customDocumentExtractionOptions,
     $core.String? baseProcessorVersion,
-    $4514.DocumentSchema? documentSchema,
+    $4516.DocumentSchema? documentSchema,
     TrainProcessorVersionRequest_FoundationModelTuningOptions? foundationModelTuningOptions,
   }) {
     final $result = create();
@@ -3136,7 +3136,7 @@ class TrainProcessorVersionRequest extends $pb.GeneratedMessage {
     ..aOM<TrainProcessorVersionRequest_InputData>(4, _omitFieldNames ? '' : 'inputData', subBuilder: TrainProcessorVersionRequest_InputData.create)
     ..aOM<TrainProcessorVersionRequest_CustomDocumentExtractionOptions>(5, _omitFieldNames ? '' : 'customDocumentExtractionOptions', subBuilder: TrainProcessorVersionRequest_CustomDocumentExtractionOptions.create)
     ..aOS(8, _omitFieldNames ? '' : 'baseProcessorVersion')
-    ..aOM<$4514.DocumentSchema>(10, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4514.DocumentSchema.create)
+    ..aOM<$4516.DocumentSchema>(10, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4516.DocumentSchema.create)
     ..aOM<TrainProcessorVersionRequest_FoundationModelTuningOptions>(12, _omitFieldNames ? '' : 'foundationModelTuningOptions', subBuilder: TrainProcessorVersionRequest_FoundationModelTuningOptions.create)
     ..hasRequiredFields = false
   ;
@@ -3228,15 +3228,15 @@ class TrainProcessorVersionRequest extends $pb.GeneratedMessage {
 
   /// Optional. The schema the processor version will be trained with.
   @$pb.TagNumber(10)
-  $4514.DocumentSchema get documentSchema => $_getN(5);
+  $4516.DocumentSchema get documentSchema => $_getN(5);
   @$pb.TagNumber(10)
-  set documentSchema($4514.DocumentSchema v) { setField(10, v); }
+  set documentSchema($4516.DocumentSchema v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDocumentSchema() => $_has(5);
   @$pb.TagNumber(10)
   void clearDocumentSchema() => clearField(10);
   @$pb.TagNumber(10)
-  $4514.DocumentSchema ensureDocumentSchema() => $_ensure(5);
+  $4516.DocumentSchema ensureDocumentSchema() => $_ensure(5);
 
   /// Options to control foundation model tuning of a processor.
   @$pb.TagNumber(12)
@@ -3308,8 +3308,8 @@ class TrainProcessorVersionResponse extends $pb.GeneratedMessage {
 /// This includes any and all errors with documents and the dataset.
 class TrainProcessorVersionMetadata_DatasetValidation extends $pb.GeneratedMessage {
   factory TrainProcessorVersionMetadata_DatasetValidation({
-    $core.Iterable<$1795.Status>? documentErrors,
-    $core.Iterable<$1795.Status>? datasetErrors,
+    $core.Iterable<$1796.Status>? documentErrors,
+    $core.Iterable<$1796.Status>? datasetErrors,
     $core.int? documentErrorCount,
     $core.int? datasetErrorCount,
   }) {
@@ -3333,8 +3333,8 @@ class TrainProcessorVersionMetadata_DatasetValidation extends $pb.GeneratedMessa
   factory TrainProcessorVersionMetadata_DatasetValidation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrainProcessorVersionMetadata.DatasetValidation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'documentErrors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'datasetErrors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'documentErrors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'datasetErrors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'documentErrorCount', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'datasetErrorCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -3365,13 +3365,13 @@ class TrainProcessorVersionMetadata_DatasetValidation extends $pb.GeneratedMessa
   /// document errors will be returned.
   /// Any document with errors will not be used throughout training.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get documentErrors => $_getList(0);
+  $core.List<$1796.Status> get documentErrors => $_getList(0);
 
   /// Error information for the dataset as a whole. A maximum of 10 dataset
   /// errors will be returned.
   /// A single dataset error is terminal for training.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get datasetErrors => $_getList(1);
+  $core.List<$1796.Status> get datasetErrors => $_getList(1);
 
   /// The total number of document errors.
   @$pb.TagNumber(3)
@@ -3397,7 +3397,7 @@ class TrainProcessorVersionMetadata_DatasetValidation extends $pb.GeneratedMessa
 /// The metadata that represents a processor version being created.
 class TrainProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory TrainProcessorVersionMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
     TrainProcessorVersionMetadata_DatasetValidation? trainingDatasetValidation,
     TrainProcessorVersionMetadata_DatasetValidation? testDatasetValidation,
   }) {
@@ -3418,7 +3418,7 @@ class TrainProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory TrainProcessorVersionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrainProcessorVersionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..aOM<TrainProcessorVersionMetadata_DatasetValidation>(2, _omitFieldNames ? '' : 'trainingDatasetValidation', subBuilder: TrainProcessorVersionMetadata_DatasetValidation.create)
     ..aOM<TrainProcessorVersionMetadata_DatasetValidation>(3, _omitFieldNames ? '' : 'testDatasetValidation', subBuilder: TrainProcessorVersionMetadata_DatasetValidation.create)
     ..hasRequiredFields = false
@@ -3447,15 +3447,15 @@ class TrainProcessorVersionMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 
   /// The training dataset validation information.
   @$pb.TagNumber(2)
@@ -3494,9 +3494,9 @@ class ReviewDocumentRequest extends $pb.GeneratedMessage {
   factory ReviewDocumentRequest({
     $core.String? humanReviewConfig,
     $core.bool? enableSchemaValidation,
-    $4440.Document? inlineDocument,
+    $4442.Document? inlineDocument,
     ReviewDocumentRequest_Priority? priority,
-    $4514.DocumentSchema? documentSchema,
+    $4516.DocumentSchema? documentSchema,
   }) {
     final $result = create();
     if (humanReviewConfig != null) {
@@ -3528,9 +3528,9 @@ class ReviewDocumentRequest extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'humanReviewConfig')
     ..aOB(3, _omitFieldNames ? '' : 'enableSchemaValidation')
-    ..aOM<$4440.Document>(4, _omitFieldNames ? '' : 'inlineDocument', subBuilder: $4440.Document.create)
+    ..aOM<$4442.Document>(4, _omitFieldNames ? '' : 'inlineDocument', subBuilder: $4442.Document.create)
     ..e<ReviewDocumentRequest_Priority>(5, _omitFieldNames ? '' : 'priority', $pb.PbFieldType.OE, defaultOrMaker: ReviewDocumentRequest_Priority.DEFAULT, valueOf: ReviewDocumentRequest_Priority.valueOf, enumValues: ReviewDocumentRequest_Priority.values)
-    ..aOM<$4514.DocumentSchema>(6, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4514.DocumentSchema.create)
+    ..aOM<$4516.DocumentSchema>(6, _omitFieldNames ? '' : 'documentSchema', subBuilder: $4516.DocumentSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -3582,15 +3582,15 @@ class ReviewDocumentRequest extends $pb.GeneratedMessage {
 
   /// An inline document proto.
   @$pb.TagNumber(4)
-  $4440.Document get inlineDocument => $_getN(2);
+  $4442.Document get inlineDocument => $_getN(2);
   @$pb.TagNumber(4)
-  set inlineDocument($4440.Document v) { setField(4, v); }
+  set inlineDocument($4442.Document v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInlineDocument() => $_has(2);
   @$pb.TagNumber(4)
   void clearInlineDocument() => clearField(4);
   @$pb.TagNumber(4)
-  $4440.Document ensureInlineDocument() => $_ensure(2);
+  $4442.Document ensureInlineDocument() => $_ensure(2);
 
   /// The priority of the human review task.
   @$pb.TagNumber(5)
@@ -3604,15 +3604,15 @@ class ReviewDocumentRequest extends $pb.GeneratedMessage {
 
   /// The document schema of the human review task.
   @$pb.TagNumber(6)
-  $4514.DocumentSchema get documentSchema => $_getN(4);
+  $4516.DocumentSchema get documentSchema => $_getN(4);
   @$pb.TagNumber(6)
-  set documentSchema($4514.DocumentSchema v) { setField(6, v); }
+  set documentSchema($4516.DocumentSchema v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDocumentSchema() => $_has(4);
   @$pb.TagNumber(6)
   void clearDocumentSchema() => clearField(6);
   @$pb.TagNumber(6)
-  $4514.DocumentSchema ensureDocumentSchema() => $_ensure(4);
+  $4516.DocumentSchema ensureDocumentSchema() => $_ensure(4);
 }
 
 /// Response message for the
@@ -3705,7 +3705,7 @@ class ReviewDocumentResponse extends $pb.GeneratedMessage {
 /// method.
 class ReviewDocumentOperationMetadata extends $pb.GeneratedMessage {
   factory ReviewDocumentOperationMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
     $core.String? questionId,
   }) {
     final $result = create();
@@ -3722,7 +3722,7 @@ class ReviewDocumentOperationMetadata extends $pb.GeneratedMessage {
   factory ReviewDocumentOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReviewDocumentOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(5, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..aOS(6, _omitFieldNames ? '' : 'questionId')
     ..hasRequiredFields = false
   ;
@@ -3750,15 +3750,15 @@ class ReviewDocumentOperationMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(5)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(5, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(5)
   void clearCommonMetadata() => clearField(5);
   @$pb.TagNumber(5)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 
   /// The Crowd Compute question ID.
   @$pb.TagNumber(6)
@@ -3777,7 +3777,7 @@ class ReviewDocumentOperationMetadata extends $pb.GeneratedMessage {
 class EvaluateProcessorVersionRequest extends $pb.GeneratedMessage {
   factory EvaluateProcessorVersionRequest({
     $core.String? processorVersion,
-    $4515.BatchDocumentsInputConfig? evaluationDocuments,
+    $4517.BatchDocumentsInputConfig? evaluationDocuments,
   }) {
     final $result = create();
     if (processorVersion != null) {
@@ -3794,7 +3794,7 @@ class EvaluateProcessorVersionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EvaluateProcessorVersionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'processorVersion')
-    ..aOM<$4515.BatchDocumentsInputConfig>(3, _omitFieldNames ? '' : 'evaluationDocuments', subBuilder: $4515.BatchDocumentsInputConfig.create)
+    ..aOM<$4517.BatchDocumentsInputConfig>(3, _omitFieldNames ? '' : 'evaluationDocuments', subBuilder: $4517.BatchDocumentsInputConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -3835,15 +3835,15 @@ class EvaluateProcessorVersionRequest extends $pb.GeneratedMessage {
   /// Optional. The documents used in the evaluation. If unspecified, use the
   /// processor's dataset as evaluation input.
   @$pb.TagNumber(3)
-  $4515.BatchDocumentsInputConfig get evaluationDocuments => $_getN(1);
+  $4517.BatchDocumentsInputConfig get evaluationDocuments => $_getN(1);
   @$pb.TagNumber(3)
-  set evaluationDocuments($4515.BatchDocumentsInputConfig v) { setField(3, v); }
+  set evaluationDocuments($4517.BatchDocumentsInputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEvaluationDocuments() => $_has(1);
   @$pb.TagNumber(3)
   void clearEvaluationDocuments() => clearField(3);
   @$pb.TagNumber(3)
-  $4515.BatchDocumentsInputConfig ensureEvaluationDocuments() => $_ensure(1);
+  $4517.BatchDocumentsInputConfig ensureEvaluationDocuments() => $_ensure(1);
 }
 
 /// Metadata of the
@@ -3851,7 +3851,7 @@ class EvaluateProcessorVersionRequest extends $pb.GeneratedMessage {
 /// method.
 class EvaluateProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory EvaluateProcessorVersionMetadata({
-    $4516.CommonOperationMetadata? commonMetadata,
+    $4518.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -3864,7 +3864,7 @@ class EvaluateProcessorVersionMetadata extends $pb.GeneratedMessage {
   factory EvaluateProcessorVersionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EvaluateProcessorVersionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1'), createEmptyInstance: create)
-    ..aOM<$4516.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4516.CommonOperationMetadata.create)
+    ..aOM<$4518.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4518.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3891,15 +3891,15 @@ class EvaluateProcessorVersionMetadata extends $pb.GeneratedMessage {
 
   /// The basic metadata of the long-running operation.
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4518.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4516.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4518.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4516.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4518.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Response of the

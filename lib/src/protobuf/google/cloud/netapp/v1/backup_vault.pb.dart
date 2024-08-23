@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'backup_vault.pbenum.dart';
 
 export 'backup_vault.pbenum.dart';
@@ -24,7 +24,7 @@ class BackupVault extends $pb.GeneratedMessage {
   factory BackupVault({
     $core.String? name,
     BackupVault_State? state,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? description,
     $core.Map<$core.String, $core.String>? labels,
   }) {
@@ -53,7 +53,7 @@ class BackupVault extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupVault', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<BackupVault_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: BackupVault_State.STATE_UNSPECIFIED, valueOf: BackupVault_State.valueOf, enumValues: BackupVault_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'BackupVault.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.netapp.v1'))
     ..hasRequiredFields = false
@@ -104,15 +104,15 @@ class BackupVault extends $pb.GeneratedMessage {
 
   /// Output only. Create time of the backup vault.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Description of the backup vault.
   @$pb.TagNumber(4)
@@ -513,7 +513,7 @@ class DeleteBackupVaultRequest extends $pb.GeneratedMessage {
 /// UpdateBackupVaultRequest updates description and/or labels for a backupVault.
 class UpdateBackupVaultRequest extends $pb.GeneratedMessage {
   factory UpdateBackupVaultRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     BackupVault? backupVault,
   }) {
     final $result = create();
@@ -530,7 +530,7 @@ class UpdateBackupVaultRequest extends $pb.GeneratedMessage {
   factory UpdateBackupVaultRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBackupVaultRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<BackupVault>(2, _omitFieldNames ? '' : 'backupVault', subBuilder: BackupVault.create)
     ..hasRequiredFields = false
   ;
@@ -562,15 +562,15 @@ class UpdateBackupVaultRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The backupVault being updated
   @$pb.TagNumber(2)

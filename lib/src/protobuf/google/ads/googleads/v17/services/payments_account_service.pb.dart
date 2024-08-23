@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../resources/payments_account.pb.dart' as $3966;
+import '../resources/payments_account.pb.dart' as $3967;
 
 /// Request message for fetching all accessible payments accounts.
 class ListPaymentsAccountsRequest extends $pb.GeneratedMessage {
@@ -72,7 +72,7 @@ class ListPaymentsAccountsRequest extends $pb.GeneratedMessage {
 /// [PaymentsAccountService.ListPaymentsAccounts][google.ads.googleads.v17.services.PaymentsAccountService.ListPaymentsAccounts].
 class ListPaymentsAccountsResponse extends $pb.GeneratedMessage {
   factory ListPaymentsAccountsResponse({
-    $core.Iterable<$3966.PaymentsAccount>? paymentsAccounts,
+    $core.Iterable<$3967.PaymentsAccount>? paymentsAccounts,
   }) {
     final $result = create();
     if (paymentsAccounts != null) {
@@ -85,7 +85,7 @@ class ListPaymentsAccountsResponse extends $pb.GeneratedMessage {
   factory ListPaymentsAccountsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListPaymentsAccountsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..pc<$3966.PaymentsAccount>(1, _omitFieldNames ? '' : 'paymentsAccounts', $pb.PbFieldType.PM, subBuilder: $3966.PaymentsAccount.create)
+    ..pc<$3967.PaymentsAccount>(1, _omitFieldNames ? '' : 'paymentsAccounts', $pb.PbFieldType.PM, subBuilder: $3967.PaymentsAccount.create)
     ..hasRequiredFields = false
   ;
 
@@ -112,7 +112,7 @@ class ListPaymentsAccountsResponse extends $pb.GeneratedMessage {
 
   /// The list of accessible payments accounts.
   @$pb.TagNumber(1)
-  $core.List<$3966.PaymentsAccount> get paymentsAccounts => $_getList(0);
+  $core.List<$3967.PaymentsAccount> get paymentsAccounts => $_getList(0);
 }
 
 

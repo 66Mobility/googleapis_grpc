@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/custom_interest_member_type.pbenum.dart' as $2964;
-import '../enums/custom_interest_status.pbenum.dart' as $2962;
-import '../enums/custom_interest_type.pbenum.dart' as $2963;
+import '../enums/custom_interest_member_type.pbenum.dart' as $2965;
+import '../enums/custom_interest_status.pbenum.dart' as $2963;
+import '../enums/custom_interest_type.pbenum.dart' as $2964;
 
 /// A custom interest. This is a list of users by interest.
 class CustomInterest extends $pb.GeneratedMessage {
   factory CustomInterest({
     $core.String? resourceName,
-    $2962.CustomInterestStatusEnum_CustomInterestStatus? status,
-    $2963.CustomInterestTypeEnum_CustomInterestType? type,
+    $2963.CustomInterestStatusEnum_CustomInterestStatus? status,
+    $2964.CustomInterestTypeEnum_CustomInterestType? type,
     $core.Iterable<CustomInterestMember>? members,
     $fixnum.Int64? id,
     $core.String? name,
@@ -59,8 +59,8 @@ class CustomInterest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomInterest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2962.CustomInterestStatusEnum_CustomInterestStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2962.CustomInterestStatusEnum_CustomInterestStatus.UNSPECIFIED, valueOf: $2962.CustomInterestStatusEnum_CustomInterestStatus.valueOf, enumValues: $2962.CustomInterestStatusEnum_CustomInterestStatus.values)
-    ..e<$2963.CustomInterestTypeEnum_CustomInterestType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2963.CustomInterestTypeEnum_CustomInterestType.UNSPECIFIED, valueOf: $2963.CustomInterestTypeEnum_CustomInterestType.valueOf, enumValues: $2963.CustomInterestTypeEnum_CustomInterestType.values)
+    ..e<$2963.CustomInterestStatusEnum_CustomInterestStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2963.CustomInterestStatusEnum_CustomInterestStatus.UNSPECIFIED, valueOf: $2963.CustomInterestStatusEnum_CustomInterestStatus.valueOf, enumValues: $2963.CustomInterestStatusEnum_CustomInterestStatus.values)
+    ..e<$2964.CustomInterestTypeEnum_CustomInterestType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2964.CustomInterestTypeEnum_CustomInterestType.UNSPECIFIED, valueOf: $2964.CustomInterestTypeEnum_CustomInterestType.valueOf, enumValues: $2964.CustomInterestTypeEnum_CustomInterestType.values)
     ..pc<CustomInterestMember>(7, _omitFieldNames ? '' : 'members', $pb.PbFieldType.PM, subBuilder: CustomInterestMember.create)
     ..aInt64(8, _omitFieldNames ? '' : 'id')
     ..aOS(9, _omitFieldNames ? '' : 'name')
@@ -105,9 +105,9 @@ class CustomInterest extends $pb.GeneratedMessage {
   /// Status of this custom interest. Indicates whether the custom interest is
   /// enabled or removed.
   @$pb.TagNumber(3)
-  $2962.CustomInterestStatusEnum_CustomInterestStatus get status => $_getN(1);
+  $2963.CustomInterestStatusEnum_CustomInterestStatus get status => $_getN(1);
   @$pb.TagNumber(3)
-  set status($2962.CustomInterestStatusEnum_CustomInterestStatus v) { setField(3, v); }
+  set status($2963.CustomInterestStatusEnum_CustomInterestStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(3)
@@ -116,9 +116,9 @@ class CustomInterest extends $pb.GeneratedMessage {
   /// Type of the custom interest, CUSTOM_AFFINITY or CUSTOM_INTENT.
   /// By default the type is set to CUSTOM_AFFINITY.
   @$pb.TagNumber(5)
-  $2963.CustomInterestTypeEnum_CustomInterestType get type => $_getN(2);
+  $2964.CustomInterestTypeEnum_CustomInterestType get type => $_getN(2);
   @$pb.TagNumber(5)
-  set type($2963.CustomInterestTypeEnum_CustomInterestType v) { setField(5, v); }
+  set type($2964.CustomInterestTypeEnum_CustomInterestType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(5)
@@ -167,7 +167,7 @@ class CustomInterest extends $pb.GeneratedMessage {
 /// It is immutable, that is, it can only be created or removed but not changed.
 class CustomInterestMember extends $pb.GeneratedMessage {
   factory CustomInterestMember({
-    $2964.CustomInterestMemberTypeEnum_CustomInterestMemberType? memberType,
+    $2965.CustomInterestMemberTypeEnum_CustomInterestMemberType? memberType,
     $core.String? parameter,
   }) {
     final $result = create();
@@ -184,7 +184,7 @@ class CustomInterestMember extends $pb.GeneratedMessage {
   factory CustomInterestMember.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomInterestMember', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..e<$2964.CustomInterestMemberTypeEnum_CustomInterestMemberType>(1, _omitFieldNames ? '' : 'memberType', $pb.PbFieldType.OE, defaultOrMaker: $2964.CustomInterestMemberTypeEnum_CustomInterestMemberType.UNSPECIFIED, valueOf: $2964.CustomInterestMemberTypeEnum_CustomInterestMemberType.valueOf, enumValues: $2964.CustomInterestMemberTypeEnum_CustomInterestMemberType.values)
+    ..e<$2965.CustomInterestMemberTypeEnum_CustomInterestMemberType>(1, _omitFieldNames ? '' : 'memberType', $pb.PbFieldType.OE, defaultOrMaker: $2965.CustomInterestMemberTypeEnum_CustomInterestMemberType.UNSPECIFIED, valueOf: $2965.CustomInterestMemberTypeEnum_CustomInterestMemberType.valueOf, enumValues: $2965.CustomInterestMemberTypeEnum_CustomInterestMemberType.values)
     ..aOS(3, _omitFieldNames ? '' : 'parameter')
     ..hasRequiredFields = false
   ;
@@ -212,9 +212,9 @@ class CustomInterestMember extends $pb.GeneratedMessage {
 
   /// The type of custom interest member, KEYWORD or URL.
   @$pb.TagNumber(1)
-  $2964.CustomInterestMemberTypeEnum_CustomInterestMemberType get memberType => $_getN(0);
+  $2965.CustomInterestMemberTypeEnum_CustomInterestMemberType get memberType => $_getN(0);
   @$pb.TagNumber(1)
-  set memberType($2964.CustomInterestMemberTypeEnum_CustomInterestMemberType v) { setField(1, v); }
+  set memberType($2965.CustomInterestMemberTypeEnum_CustomInterestMemberType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMemberType() => $_has(0);
   @$pb.TagNumber(1)

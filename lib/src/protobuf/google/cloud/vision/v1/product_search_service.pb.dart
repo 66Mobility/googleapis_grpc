@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'geometry.pb.dart' as $4704;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'geometry.pb.dart' as $4706;
 import 'product_search_service.pbenum.dart';
 
 export 'product_search_service.pbenum.dart';
@@ -226,8 +226,8 @@ class ProductSet extends $pb.GeneratedMessage {
   factory ProductSet({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? indexTime,
-    $1795.Status? indexError,
+    $1776.Timestamp? indexTime,
+    $1796.Status? indexError,
   }) {
     final $result = create();
     if (name != null) {
@@ -251,8 +251,8 @@ class ProductSet extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'indexTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'indexError', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'indexTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'indexError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -310,30 +310,30 @@ class ProductSet extends $pb.GeneratedMessage {
   ///
   ///  This field is ignored when creating a ProductSet.
   @$pb.TagNumber(3)
-  $1775.Timestamp get indexTime => $_getN(2);
+  $1776.Timestamp get indexTime => $_getN(2);
   @$pb.TagNumber(3)
-  set indexTime($1775.Timestamp v) { setField(3, v); }
+  set indexTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIndexTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearIndexTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureIndexTime() => $_ensure(2);
+  $1776.Timestamp ensureIndexTime() => $_ensure(2);
 
   ///  Output only. If there was an error with indexing the product set, the field
   ///  is populated.
   ///
   ///  This field is ignored when creating a ProductSet.
   @$pb.TagNumber(4)
-  $1795.Status get indexError => $_getN(3);
+  $1796.Status get indexError => $_getN(3);
   @$pb.TagNumber(4)
-  set indexError($1795.Status v) { setField(4, v); }
+  set indexError($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasIndexError() => $_has(3);
   @$pb.TagNumber(4)
   void clearIndexError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureIndexError() => $_ensure(3);
+  $1796.Status ensureIndexError() => $_ensure(3);
 }
 
 /// A `ReferenceImage` represents a product image and its associated metadata,
@@ -342,7 +342,7 @@ class ReferenceImage extends $pb.GeneratedMessage {
   factory ReferenceImage({
     $core.String? name,
     $core.String? uri,
-    $core.Iterable<$4704.BoundingPoly>? boundingPolys,
+    $core.Iterable<$4706.BoundingPoly>? boundingPolys,
   }) {
     final $result = create();
     if (name != null) {
@@ -363,7 +363,7 @@ class ReferenceImage extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReferenceImage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uri')
-    ..pc<$4704.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPolys', $pb.PbFieldType.PM, subBuilder: $4704.BoundingPoly.create)
+    ..pc<$4706.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingPolys', $pb.PbFieldType.PM, subBuilder: $4706.BoundingPoly.create)
     ..hasRequiredFields = false
   ;
 
@@ -424,7 +424,7 @@ class ReferenceImage extends $pb.GeneratedMessage {
   ///  to 300 pixels. The aspect ratio must be 1:4 or less (i.e. 1:3 is ok; 1:5
   ///  is not).
   @$pb.TagNumber(3)
-  $core.List<$4704.BoundingPoly> get boundingPolys => $_getList(2);
+  $core.List<$4706.BoundingPoly> get boundingPolys => $_getList(2);
 }
 
 /// Request message for the `CreateProduct` method.
@@ -723,7 +723,7 @@ class GetProductRequest extends $pb.GeneratedMessage {
 class UpdateProductRequest extends $pb.GeneratedMessage {
   factory UpdateProductRequest({
     Product? product,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (product != null) {
@@ -740,7 +740,7 @@ class UpdateProductRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProductRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1'), createEmptyInstance: create)
     ..aOM<Product>(1, _omitFieldNames ? '' : 'product', subBuilder: Product.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -784,15 +784,15 @@ class UpdateProductRequest extends $pb.GeneratedMessage {
   /// Valid mask paths include `product_labels`, `display_name`, and
   /// `description`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `DeleteProduct` method.
@@ -1144,7 +1144,7 @@ class GetProductSetRequest extends $pb.GeneratedMessage {
 class UpdateProductSetRequest extends $pb.GeneratedMessage {
   factory UpdateProductSetRequest({
     ProductSet? productSet,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (productSet != null) {
@@ -1161,7 +1161,7 @@ class UpdateProductSetRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProductSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1'), createEmptyInstance: create)
     ..aOM<ProductSet>(1, _omitFieldNames ? '' : 'productSet', subBuilder: ProductSet.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1203,15 +1203,15 @@ class UpdateProductSetRequest extends $pb.GeneratedMessage {
   /// If update_mask isn't specified, all mutable fields are to be updated.
   /// Valid mask path is `display_name`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `DeleteProductSet` method.
@@ -2193,7 +2193,7 @@ class ImportProductSetsRequest extends $pb.GeneratedMessage {
 class ImportProductSetsResponse extends $pb.GeneratedMessage {
   factory ImportProductSetsResponse({
     $core.Iterable<ReferenceImage>? referenceImages,
-    $core.Iterable<$1795.Status>? statuses,
+    $core.Iterable<$1796.Status>? statuses,
   }) {
     final $result = create();
     if (referenceImages != null) {
@@ -2210,7 +2210,7 @@ class ImportProductSetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportProductSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1'), createEmptyInstance: create)
     ..pc<ReferenceImage>(1, _omitFieldNames ? '' : 'referenceImages', $pb.PbFieldType.PM, subBuilder: ReferenceImage.create)
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'statuses', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'statuses', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2246,7 +2246,7 @@ class ImportProductSetsResponse extends $pb.GeneratedMessage {
   ///  and statuses[i] stores the success or failure status of processing the i-th
   ///  line of the csv, starting from line 0.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get statuses => $_getList(1);
+  $core.List<$1796.Status> get statuses => $_getList(1);
 }
 
 ///  Metadata for the batch operations such as the current state.
@@ -2256,8 +2256,8 @@ class ImportProductSetsResponse extends $pb.GeneratedMessage {
 class BatchOperationMetadata extends $pb.GeneratedMessage {
   factory BatchOperationMetadata({
     BatchOperationMetadata_State? state,
-    $1775.Timestamp? submitTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? submitTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -2277,8 +2277,8 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1'), createEmptyInstance: create)
     ..e<BatchOperationMetadata_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: BatchOperationMetadata_State.STATE_UNSPECIFIED, valueOf: BatchOperationMetadata_State.valueOf, enumValues: BatchOperationMetadata_State.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2315,29 +2315,29 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the batch request was submitted to the server.
   @$pb.TagNumber(2)
-  $1775.Timestamp get submitTime => $_getN(1);
+  $1776.Timestamp get submitTime => $_getN(1);
   @$pb.TagNumber(2)
-  set submitTime($1775.Timestamp v) { setField(2, v); }
+  set submitTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSubmitTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSubmitTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(1);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(1);
 
   /// The time when the batch request is finished and
   /// [google.longrunning.Operation.done][google.longrunning.Operation.done] is
   /// set to true.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// Config to control which ProductSet contains the Products to be deleted.

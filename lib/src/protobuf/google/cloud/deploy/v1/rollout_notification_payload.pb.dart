@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'log_enums.pbenum.dart' as $4472;
+import 'log_enums.pbenum.dart' as $4474;
 
 /// Payload proto for "clouddeploy.googleapis.com/rollout_notification"
 /// Platform Log event that describes the failure to send rollout status change
@@ -24,7 +24,7 @@ class RolloutNotificationEvent extends $pb.GeneratedMessage {
     $core.String? pipelineUid,
     $core.String? releaseUid,
     $core.String? rollout,
-    $4472.Type? type,
+    $4474.Type? type,
     $core.String? targetId,
     $core.String? release,
     $core.String? rolloutUid,
@@ -65,7 +65,7 @@ class RolloutNotificationEvent extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'pipelineUid')
     ..aOS(3, _omitFieldNames ? '' : 'releaseUid')
     ..aOS(4, _omitFieldNames ? '' : 'rollout')
-    ..e<$4472.Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4472.Type.TYPE_UNSPECIFIED, valueOf: $4472.Type.valueOf, enumValues: $4472.Type.values)
+    ..e<$4474.Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4474.Type.TYPE_UNSPECIFIED, valueOf: $4474.Type.valueOf, enumValues: $4474.Type.values)
     ..aOS(6, _omitFieldNames ? '' : 'targetId')
     ..aOS(7, _omitFieldNames ? '' : 'release')
     ..aOS(8, _omitFieldNames ? '' : 'rolloutUid')
@@ -135,9 +135,9 @@ class RolloutNotificationEvent extends $pb.GeneratedMessage {
 
   /// Type of this notification, e.g. for a Pub/Sub failure.
   @$pb.TagNumber(5)
-  $4472.Type get type => $_getN(4);
+  $4474.Type get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type($4472.Type v) { setField(5, v); }
+  set type($4474.Type v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)

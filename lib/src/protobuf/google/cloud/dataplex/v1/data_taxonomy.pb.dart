@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'security.pb.dart' as $4467;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'security.pb.dart' as $4469;
 
 /// DataTaxonomy represents a set of hierarchical DataAttributes resources,
 /// grouped with a common theme Eg: 'SensitiveDataTaxonomy' can have attributes
@@ -24,8 +24,8 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   factory DataTaxonomy({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? labels,
@@ -73,8 +73,8 @@ class DataTaxonomy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataTaxonomy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'DataTaxonomy.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
@@ -130,27 +130,27 @@ class DataTaxonomy extends $pb.GeneratedMessage {
 
   /// Output only. The time when the DataTaxonomy was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The time when the DataTaxonomy was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. Description of the DataTaxonomy.
   @$pb.TagNumber(5)
@@ -224,16 +224,16 @@ class DataAttribute extends $pb.GeneratedMessage {
   factory DataAttribute({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? parentId,
     $core.int? attributeCount,
     $core.String? etag,
-    $4467.ResourceAccessSpec? resourceAccessSpec,
-    $4467.DataAccessSpec? dataAccessSpec,
+    $4469.ResourceAccessSpec? resourceAccessSpec,
+    $4469.DataAccessSpec? dataAccessSpec,
   }) {
     final $result = create();
     if (name != null) {
@@ -281,16 +281,16 @@ class DataAttribute extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataAttribute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'DataAttribute.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
     ..aOS(8, _omitFieldNames ? '' : 'parentId')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'attributeCount', $pb.PbFieldType.O3)
     ..aOS(10, _omitFieldNames ? '' : 'etag')
-    ..aOM<$4467.ResourceAccessSpec>(100, _omitFieldNames ? '' : 'resourceAccessSpec', subBuilder: $4467.ResourceAccessSpec.create)
-    ..aOM<$4467.DataAccessSpec>(101, _omitFieldNames ? '' : 'dataAccessSpec', subBuilder: $4467.DataAccessSpec.create)
+    ..aOM<$4469.ResourceAccessSpec>(100, _omitFieldNames ? '' : 'resourceAccessSpec', subBuilder: $4469.ResourceAccessSpec.create)
+    ..aOM<$4469.DataAccessSpec>(101, _omitFieldNames ? '' : 'dataAccessSpec', subBuilder: $4469.DataAccessSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -340,27 +340,27 @@ class DataAttribute extends $pb.GeneratedMessage {
 
   /// Output only. The time when the DataAttribute was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The time when the DataAttribute was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. Description of the DataAttribute.
   @$pb.TagNumber(5)
@@ -424,28 +424,28 @@ class DataAttribute extends $pb.GeneratedMessage {
   /// Optional. Specified when applied to a resource (eg: Cloud Storage bucket,
   /// BigQuery dataset, BigQuery table).
   @$pb.TagNumber(100)
-  $4467.ResourceAccessSpec get resourceAccessSpec => $_getN(10);
+  $4469.ResourceAccessSpec get resourceAccessSpec => $_getN(10);
   @$pb.TagNumber(100)
-  set resourceAccessSpec($4467.ResourceAccessSpec v) { setField(100, v); }
+  set resourceAccessSpec($4469.ResourceAccessSpec v) { setField(100, v); }
   @$pb.TagNumber(100)
   $core.bool hasResourceAccessSpec() => $_has(10);
   @$pb.TagNumber(100)
   void clearResourceAccessSpec() => clearField(100);
   @$pb.TagNumber(100)
-  $4467.ResourceAccessSpec ensureResourceAccessSpec() => $_ensure(10);
+  $4469.ResourceAccessSpec ensureResourceAccessSpec() => $_ensure(10);
 
   /// Optional. Specified when applied to data stored on the resource (eg: rows,
   /// columns in BigQuery Tables).
   @$pb.TagNumber(101)
-  $4467.DataAccessSpec get dataAccessSpec => $_getN(11);
+  $4469.DataAccessSpec get dataAccessSpec => $_getN(11);
   @$pb.TagNumber(101)
-  set dataAccessSpec($4467.DataAccessSpec v) { setField(101, v); }
+  set dataAccessSpec($4469.DataAccessSpec v) { setField(101, v); }
   @$pb.TagNumber(101)
   $core.bool hasDataAccessSpec() => $_has(11);
   @$pb.TagNumber(101)
   void clearDataAccessSpec() => clearField(101);
   @$pb.TagNumber(101)
-  $4467.DataAccessSpec ensureDataAccessSpec() => $_ensure(11);
+  $4469.DataAccessSpec ensureDataAccessSpec() => $_ensure(11);
 }
 
 /// Represents a subresource of the given resource, and associated bindings
@@ -525,8 +525,8 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
   factory DataAttributeBinding({
     $core.String? name,
     $core.String? uid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? labels,
@@ -583,8 +583,8 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
     ..oo(0, [100])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'DataAttributeBinding.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataplex.v1'))
@@ -645,27 +645,27 @@ class DataAttributeBinding extends $pb.GeneratedMessage {
 
   /// Output only. The time when the DataAttributeBinding was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The time when the DataAttributeBinding was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. Description of the DataAttributeBinding.
   @$pb.TagNumber(5)
@@ -841,7 +841,7 @@ class CreateDataTaxonomyRequest extends $pb.GeneratedMessage {
 /// Update DataTaxonomy request.
 class UpdateDataTaxonomyRequest extends $pb.GeneratedMessage {
   factory UpdateDataTaxonomyRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     DataTaxonomy? dataTaxonomy,
     $core.bool? validateOnly,
   }) {
@@ -862,7 +862,7 @@ class UpdateDataTaxonomyRequest extends $pb.GeneratedMessage {
   factory UpdateDataTaxonomyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataTaxonomyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DataTaxonomy>(2, _omitFieldNames ? '' : 'dataTaxonomy', subBuilder: DataTaxonomy.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -891,15 +891,15 @@ class UpdateDataTaxonomyRequest extends $pb.GeneratedMessage {
 
   /// Required. Mask of fields to update.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Only fields specified in `update_mask` are updated.
   @$pb.TagNumber(2)
@@ -1347,7 +1347,7 @@ class CreateDataAttributeRequest extends $pb.GeneratedMessage {
 /// Update DataAttribute request.
 class UpdateDataAttributeRequest extends $pb.GeneratedMessage {
   factory UpdateDataAttributeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     DataAttribute? dataAttribute,
     $core.bool? validateOnly,
   }) {
@@ -1368,7 +1368,7 @@ class UpdateDataAttributeRequest extends $pb.GeneratedMessage {
   factory UpdateDataAttributeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataAttributeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DataAttribute>(2, _omitFieldNames ? '' : 'dataAttribute', subBuilder: DataAttribute.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -1397,15 +1397,15 @@ class UpdateDataAttributeRequest extends $pb.GeneratedMessage {
 
   /// Required. Mask of fields to update.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Only fields specified in `update_mask` are updated.
   @$pb.TagNumber(2)
@@ -1852,7 +1852,7 @@ class CreateDataAttributeBindingRequest extends $pb.GeneratedMessage {
 /// Update DataAttributeBinding request.
 class UpdateDataAttributeBindingRequest extends $pb.GeneratedMessage {
   factory UpdateDataAttributeBindingRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     DataAttributeBinding? dataAttributeBinding,
     $core.bool? validateOnly,
   }) {
@@ -1873,7 +1873,7 @@ class UpdateDataAttributeBindingRequest extends $pb.GeneratedMessage {
   factory UpdateDataAttributeBindingRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataAttributeBindingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataplex.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DataAttributeBinding>(2, _omitFieldNames ? '' : 'dataAttributeBinding', subBuilder: DataAttributeBinding.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -1902,15 +1902,15 @@ class UpdateDataAttributeBindingRequest extends $pb.GeneratedMessage {
 
   /// Required. Mask of fields to update.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Only fields specified in `update_mask` are updated.
   @$pb.TagNumber(2)

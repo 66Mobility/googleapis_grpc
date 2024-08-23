@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4562;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4564;
 import 'volume.pbenum.dart';
 
 export 'volume.pbenum.dart';
@@ -346,7 +346,7 @@ class CreateVolumeRequest extends $pb.GeneratedMessage {
 /// Message for updating a Volume
 class UpdateVolumeRequest extends $pb.GeneratedMessage {
   factory UpdateVolumeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Volume? volume,
   }) {
     final $result = create();
@@ -363,7 +363,7 @@ class UpdateVolumeRequest extends $pb.GeneratedMessage {
   factory UpdateVolumeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVolumeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Volume>(2, _omitFieldNames ? '' : 'volume', subBuilder: Volume.create)
     ..hasRequiredFields = false
   ;
@@ -395,15 +395,15 @@ class UpdateVolumeRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The volume being updated
   @$pb.TagNumber(2)
@@ -563,12 +563,12 @@ class Volume extends $pb.GeneratedMessage {
     $core.String? name,
     Volume_State? state,
     $core.String? stateDetails,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? shareName,
     $core.String? psaRange,
     $core.String? storagePool,
     $core.String? network,
-    $4562.ServiceLevel? serviceLevel,
+    $4564.ServiceLevel? serviceLevel,
     $fixnum.Int64? capacityGib,
     ExportPolicy? exportPolicy,
     $core.Iterable<Protocols>? protocols,
@@ -587,7 +587,7 @@ class Volume extends $pb.GeneratedMessage {
     $core.String? activeDirectory,
     RestoreParameters? restoreParameters,
     $core.String? kmsConfig,
-    $4562.EncryptionType? encryptionType,
+    $4564.EncryptionType? encryptionType,
     $core.bool? hasReplication,
     BackupConfig? backupConfig,
     $core.Iterable<RestrictedAction>? restrictedActions,
@@ -716,12 +716,12 @@ class Volume extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<Volume_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Volume_State.STATE_UNSPECIFIED, valueOf: Volume_State.valueOf, enumValues: Volume_State.values)
     ..aOS(3, _omitFieldNames ? '' : 'stateDetails')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'shareName')
     ..aOS(6, _omitFieldNames ? '' : 'psaRange')
     ..aOS(7, _omitFieldNames ? '' : 'storagePool')
     ..aOS(8, _omitFieldNames ? '' : 'network')
-    ..e<$4562.ServiceLevel>(9, _omitFieldNames ? '' : 'serviceLevel', $pb.PbFieldType.OE, defaultOrMaker: $4562.ServiceLevel.SERVICE_LEVEL_UNSPECIFIED, valueOf: $4562.ServiceLevel.valueOf, enumValues: $4562.ServiceLevel.values)
+    ..e<$4564.ServiceLevel>(9, _omitFieldNames ? '' : 'serviceLevel', $pb.PbFieldType.OE, defaultOrMaker: $4564.ServiceLevel.SERVICE_LEVEL_UNSPECIFIED, valueOf: $4564.ServiceLevel.valueOf, enumValues: $4564.ServiceLevel.values)
     ..aInt64(10, _omitFieldNames ? '' : 'capacityGib')
     ..aOM<ExportPolicy>(11, _omitFieldNames ? '' : 'exportPolicy', subBuilder: ExportPolicy.create)
     ..pc<Protocols>(12, _omitFieldNames ? '' : 'protocols', $pb.PbFieldType.KE, valueOf: Protocols.valueOf, enumValues: Protocols.values, defaultEnumValue: Protocols.PROTOCOLS_UNSPECIFIED)
@@ -740,7 +740,7 @@ class Volume extends $pb.GeneratedMessage {
     ..aOS(25, _omitFieldNames ? '' : 'activeDirectory')
     ..aOM<RestoreParameters>(26, _omitFieldNames ? '' : 'restoreParameters', subBuilder: RestoreParameters.create)
     ..aOS(27, _omitFieldNames ? '' : 'kmsConfig')
-    ..e<$4562.EncryptionType>(28, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: $4562.EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: $4562.EncryptionType.valueOf, enumValues: $4562.EncryptionType.values)
+    ..e<$4564.EncryptionType>(28, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: $4564.EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: $4564.EncryptionType.valueOf, enumValues: $4564.EncryptionType.values)
     ..aOB(29, _omitFieldNames ? '' : 'hasReplication')
     ..aOM<BackupConfig>(30, _omitFieldNames ? '' : 'backupConfig', subBuilder: BackupConfig.create)
     ..pc<RestrictedAction>(31, _omitFieldNames ? '' : 'restrictedActions', $pb.PbFieldType.KE, valueOf: RestrictedAction.valueOf, enumValues: RestrictedAction.values, defaultEnumValue: RestrictedAction.RESTRICTED_ACTION_UNSPECIFIED)
@@ -805,15 +805,15 @@ class Volume extends $pb.GeneratedMessage {
 
   /// Output only. Create time of the volume
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Required. Share name of the volume
   @$pb.TagNumber(5)
@@ -859,9 +859,9 @@ class Volume extends $pb.GeneratedMessage {
 
   /// Output only. Service level of the volume
   @$pb.TagNumber(9)
-  $4562.ServiceLevel get serviceLevel => $_getN(8);
+  $4564.ServiceLevel get serviceLevel => $_getN(8);
   @$pb.TagNumber(9)
-  set serviceLevel($4562.ServiceLevel v) { setField(9, v); }
+  set serviceLevel($4564.ServiceLevel v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasServiceLevel() => $_has(8);
   @$pb.TagNumber(9)
@@ -1037,9 +1037,9 @@ class Volume extends $pb.GeneratedMessage {
 
   /// Output only. Specified the current volume encryption key source.
   @$pb.TagNumber(28)
-  $4562.EncryptionType get encryptionType => $_getN(27);
+  $4564.EncryptionType get encryptionType => $_getN(27);
   @$pb.TagNumber(28)
-  set encryptionType($4562.EncryptionType v) { setField(28, v); }
+  set encryptionType($4564.EncryptionType v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasEncryptionType() => $_has(27);
   @$pb.TagNumber(28)

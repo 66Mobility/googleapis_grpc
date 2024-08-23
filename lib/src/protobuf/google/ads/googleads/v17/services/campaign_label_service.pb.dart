@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/campaign_label.pb.dart' as $3819;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/campaign_label.pb.dart' as $3820;
 
 /// Request message for
 /// [CampaignLabelService.MutateCampaignLabels][google.ads.googleads.v17.services.CampaignLabelService.MutateCampaignLabels].
@@ -123,7 +123,7 @@ enum CampaignLabelOperation_Operation {
 /// A single operation (create, remove) on a campaign-label relationship.
 class CampaignLabelOperation extends $pb.GeneratedMessage {
   factory CampaignLabelOperation({
-    $3819.CampaignLabel? create_1,
+    $3820.CampaignLabel? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -146,7 +146,7 @@ class CampaignLabelOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignLabelOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3819.CampaignLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3819.CampaignLabel.create)
+    ..aOM<$3820.CampaignLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3820.CampaignLabel.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -178,15 +178,15 @@ class CampaignLabelOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new campaign-label
   /// relationship.
   @$pb.TagNumber(1)
-  $3819.CampaignLabel get create_1 => $_getN(0);
+  $3820.CampaignLabel get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3819.CampaignLabel v) { setField(1, v); }
+  set create_1($3820.CampaignLabel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3819.CampaignLabel ensureCreate_1() => $_ensure(0);
+  $3820.CampaignLabel ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the campaign-label relationship
   ///  being removed, in this format:
@@ -206,7 +206,7 @@ class CampaignLabelOperation extends $pb.GeneratedMessage {
 class MutateCampaignLabelsResponse extends $pb.GeneratedMessage {
   factory MutateCampaignLabelsResponse({
     $core.Iterable<MutateCampaignLabelResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -223,7 +223,7 @@ class MutateCampaignLabelsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCampaignLabelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateCampaignLabelResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateCampaignLabelResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -257,15 +257,15 @@ class MutateCampaignLabelsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for a campaign label mutate.

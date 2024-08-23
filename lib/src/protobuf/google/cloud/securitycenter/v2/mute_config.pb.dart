@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'mute_config.pbenum.dart';
 
 export 'mute_config.pbenum.dart';
@@ -25,11 +25,11 @@ class MuteConfig extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     $core.String? filter,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? mostRecentEditor,
     MuteConfig_MuteConfigType? type,
-    $1775.Timestamp? expiryTime,
+    $1776.Timestamp? expiryTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -66,11 +66,11 @@ class MuteConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'filter')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'mostRecentEditor')
     ..e<MuteConfig_MuteConfigType>(8, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: MuteConfig_MuteConfigType.MUTE_CONFIG_TYPE_UNSPECIFIED, valueOf: MuteConfig_MuteConfigType.valueOf, enumValues: MuteConfig_MuteConfigType.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'expiryTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'expiryTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -157,29 +157,29 @@ class MuteConfig extends $pb.GeneratedMessage {
   /// This field is set by the server and will be ignored if provided on config
   /// creation.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The most recent time at which the mute config was updated.
   /// This field is set by the server and will be ignored if provided on config
   /// creation or update.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Output only. Email address of the user who last edited the mute config.
   /// This field is set by the server and will be ignored if provided on config
@@ -208,15 +208,15 @@ class MuteConfig extends $pb.GeneratedMessage {
   /// configs. If the expiry is set, when the config expires, it is removed from
   /// all findings.
   @$pb.TagNumber(9)
-  $1775.Timestamp get expiryTime => $_getN(7);
+  $1776.Timestamp get expiryTime => $_getN(7);
   @$pb.TagNumber(9)
-  set expiryTime($1775.Timestamp v) { setField(9, v); }
+  set expiryTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpiryTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearExpiryTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureExpiryTime() => $_ensure(7);
+  $1776.Timestamp ensureExpiryTime() => $_ensure(7);
 }
 
 

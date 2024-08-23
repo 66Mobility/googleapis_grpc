@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'cloudshell.pbenum.dart';
 
 export 'cloudshell.pbenum.dart';
@@ -411,7 +411,7 @@ class AuthorizeEnvironmentRequest extends $pb.GeneratedMessage {
   factory AuthorizeEnvironmentRequest({
     $core.String? name,
     $core.String? accessToken,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.String? idToken,
   }) {
     final $result = create();
@@ -436,7 +436,7 @@ class AuthorizeEnvironmentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthorizeEnvironmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.shell.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'accessToken')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'idToken')
     ..hasRequiredFields = false
   ;
@@ -487,15 +487,15 @@ class AuthorizeEnvironmentRequest extends $pb.GeneratedMessage {
   /// The time when the credentials expire. If not set, defaults to one hour from
   /// when the server received the request.
   @$pb.TagNumber(3)
-  $1775.Timestamp get expireTime => $_getN(2);
+  $1776.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($1775.Timestamp v) { setField(3, v); }
+  set expireTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureExpireTime() => $_ensure(2);
+  $1776.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// The OAuth ID token that should be sent to the environment.
   @$pb.TagNumber(4)

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4360;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4361;
 import 'instance.pbenum.dart';
 import 'lun.pb.dart' as $689;
 import 'network.pb.dart' as $687;
@@ -27,8 +27,8 @@ export 'instance.pbenum.dart';
 class Instance extends $pb.GeneratedMessage {
   factory Instance({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? machineType,
     Instance_State? state,
     $core.bool? hyperthreadingEnabled,
@@ -43,7 +43,7 @@ class Instance extends $pb.GeneratedMessage {
     $core.Iterable<$687.LogicalInterface>? logicalInterfaces,
     $core.Iterable<$686.Volume>? volumes,
     $core.String? loginInfo,
-    $4360.WorkloadProfile? workloadProfile,
+    $4361.WorkloadProfile? workloadProfile,
     $core.String? firmwareVersion,
   }) {
     final $result = create();
@@ -112,8 +112,8 @@ class Instance extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Instance', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.baremetalsolution.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'machineType')
     ..e<Instance_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Instance_State.STATE_UNSPECIFIED, valueOf: Instance_State.valueOf, enumValues: Instance_State.values)
     ..aOB(6, _omitFieldNames ? '' : 'hyperthreadingEnabled')
@@ -128,7 +128,7 @@ class Instance extends $pb.GeneratedMessage {
     ..pc<$687.LogicalInterface>(15, _omitFieldNames ? '' : 'logicalInterfaces', $pb.PbFieldType.PM, subBuilder: $687.LogicalInterface.create)
     ..pc<$686.Volume>(16, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $686.Volume.create)
     ..aOS(17, _omitFieldNames ? '' : 'loginInfo')
-    ..e<$4360.WorkloadProfile>(18, _omitFieldNames ? '' : 'workloadProfile', $pb.PbFieldType.OE, defaultOrMaker: $4360.WorkloadProfile.WORKLOAD_PROFILE_UNSPECIFIED, valueOf: $4360.WorkloadProfile.valueOf, enumValues: $4360.WorkloadProfile.values)
+    ..e<$4361.WorkloadProfile>(18, _omitFieldNames ? '' : 'workloadProfile', $pb.PbFieldType.OE, defaultOrMaker: $4361.WorkloadProfile.WORKLOAD_PROFILE_UNSPECIFIED, valueOf: $4361.WorkloadProfile.valueOf, enumValues: $4361.WorkloadProfile.values)
     ..aOS(19, _omitFieldNames ? '' : 'firmwareVersion')
     ..hasRequiredFields = false
   ;
@@ -170,27 +170,27 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. Create a time stamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Update a time stamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Immutable. The server type.
   /// [Available server
@@ -320,9 +320,9 @@ class Instance extends $pb.GeneratedMessage {
 
   /// The workload profile for the instance.
   @$pb.TagNumber(18)
-  $4360.WorkloadProfile get workloadProfile => $_getN(17);
+  $4361.WorkloadProfile get workloadProfile => $_getN(17);
   @$pb.TagNumber(18)
-  set workloadProfile($4360.WorkloadProfile v) { setField(18, v); }
+  set workloadProfile($4361.WorkloadProfile v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasWorkloadProfile() => $_has(17);
   @$pb.TagNumber(18)
@@ -563,7 +563,7 @@ class ListInstancesResponse extends $pb.GeneratedMessage {
 class UpdateInstanceRequest extends $pb.GeneratedMessage {
   factory UpdateInstanceRequest({
     Instance? instance,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (instance != null) {
@@ -580,7 +580,7 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.baremetalsolution.v2'), createEmptyInstance: create)
     ..aOM<Instance>(1, _omitFieldNames ? '' : 'instance', subBuilder: Instance.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -626,15 +626,15 @@ class UpdateInstanceRequest extends $pb.GeneratedMessage {
   ///   `hyperthreading_enabled`
   ///   `os_image`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Message requesting rename of a server.

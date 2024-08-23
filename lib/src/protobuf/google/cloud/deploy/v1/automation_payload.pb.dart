@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'log_enums.pbenum.dart' as $4472;
+import 'log_enums.pbenum.dart' as $4474;
 
 /// Payload proto for "clouddeploy.googleapis.com/automation"
 /// Platform Log event that describes the Automation related events.
@@ -22,7 +22,7 @@ class AutomationEvent extends $pb.GeneratedMessage {
     $core.String? message,
     $core.String? automation,
     $core.String? pipelineUid,
-    $4472.Type? type,
+    $4474.Type? type,
   }) {
     final $result = create();
     if (message != null) {
@@ -47,7 +47,7 @@ class AutomationEvent extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'message')
     ..aOS(2, _omitFieldNames ? '' : 'automation')
     ..aOS(3, _omitFieldNames ? '' : 'pipelineUid')
-    ..e<$4472.Type>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4472.Type.TYPE_UNSPECIFIED, valueOf: $4472.Type.valueOf, enumValues: $4472.Type.values)
+    ..e<$4474.Type>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4474.Type.TYPE_UNSPECIFIED, valueOf: $4474.Type.valueOf, enumValues: $4474.Type.values)
     ..hasRequiredFields = false
   ;
 
@@ -105,9 +105,9 @@ class AutomationEvent extends $pb.GeneratedMessage {
 
   /// Type of this notification, e.g. for a Pub/Sub failure.
   @$pb.TagNumber(4)
-  $4472.Type get type => $_getN(3);
+  $4474.Type get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type($4472.Type v) { setField(4, v); }
+  set type($4474.Type v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)

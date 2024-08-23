@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
 import 'dataexchange.pbenum.dart';
 
 export 'dataexchange.pbenum.dart';
@@ -386,8 +386,8 @@ class DestinationDatasetReference extends $pb.GeneratedMessage {
 class DestinationDataset extends $pb.GeneratedMessage {
   factory DestinationDataset({
     DestinationDatasetReference? datasetReference,
-    $1780.StringValue? friendlyName,
-    $1780.StringValue? description,
+    $1781.StringValue? friendlyName,
+    $1781.StringValue? description,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? location,
   }) {
@@ -415,8 +415,8 @@ class DestinationDataset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DestinationDataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.dataexchange.v1beta1'), createEmptyInstance: create)
     ..aOM<DestinationDatasetReference>(1, _omitFieldNames ? '' : 'datasetReference', subBuilder: DestinationDatasetReference.create)
-    ..aOM<$1780.StringValue>(2, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.StringValue>(3, _omitFieldNames ? '' : 'description', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(2, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.StringValue>(3, _omitFieldNames ? '' : 'description', subBuilder: $1781.StringValue.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'DestinationDataset.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.dataexchange.v1beta1'))
     ..aOS(5, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false
@@ -457,27 +457,27 @@ class DestinationDataset extends $pb.GeneratedMessage {
 
   /// Optional. A descriptive name for the dataset.
   @$pb.TagNumber(2)
-  $1780.StringValue get friendlyName => $_getN(1);
+  $1781.StringValue get friendlyName => $_getN(1);
   @$pb.TagNumber(2)
-  set friendlyName($1780.StringValue v) { setField(2, v); }
+  set friendlyName($1781.StringValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFriendlyName() => $_has(1);
   @$pb.TagNumber(2)
   void clearFriendlyName() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.StringValue ensureFriendlyName() => $_ensure(1);
+  $1781.StringValue ensureFriendlyName() => $_ensure(1);
 
   /// Optional. A user-friendly description of the dataset.
   @$pb.TagNumber(3)
-  $1780.StringValue get description => $_getN(2);
+  $1781.StringValue get description => $_getN(2);
   @$pb.TagNumber(3)
-  set description($1780.StringValue v) { setField(3, v); }
+  set description($1781.StringValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
   void clearDescription() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.StringValue ensureDescription() => $_ensure(2);
+  $1781.StringValue ensureDescription() => $_ensure(2);
 
   /// Optional. The labels associated with this dataset. You can use these
   /// to organize and group your datasets.
@@ -1248,7 +1248,7 @@ class CreateDataExchangeRequest extends $pb.GeneratedMessage {
 /// Message for updating a data exchange.
 class UpdateDataExchangeRequest extends $pb.GeneratedMessage {
   factory UpdateDataExchangeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     DataExchange? dataExchange,
   }) {
     final $result = create();
@@ -1265,7 +1265,7 @@ class UpdateDataExchangeRequest extends $pb.GeneratedMessage {
   factory UpdateDataExchangeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataExchangeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.dataexchange.v1beta1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<DataExchange>(2, _omitFieldNames ? '' : 'dataExchange', subBuilder: DataExchange.create)
     ..hasRequiredFields = false
   ;
@@ -1295,15 +1295,15 @@ class UpdateDataExchangeRequest extends $pb.GeneratedMessage {
   /// resource. The fields specified in the
   /// `updateMask` are relative to the resource and are not a full request.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The data exchange to update.
   @$pb.TagNumber(2)
@@ -1662,7 +1662,7 @@ class CreateListingRequest extends $pb.GeneratedMessage {
 /// Message for updating a Listing.
 class UpdateListingRequest extends $pb.GeneratedMessage {
   factory UpdateListingRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Listing? listing,
   }) {
     final $result = create();
@@ -1679,7 +1679,7 @@ class UpdateListingRequest extends $pb.GeneratedMessage {
   factory UpdateListingRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateListingRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.dataexchange.v1beta1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Listing>(2, _omitFieldNames ? '' : 'listing', subBuilder: Listing.create)
     ..hasRequiredFields = false
   ;
@@ -1709,15 +1709,15 @@ class UpdateListingRequest extends $pb.GeneratedMessage {
   /// fields specified in the `updateMask` are relative to the resource and are
   /// not a full request.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The listing to update.
   @$pb.TagNumber(2)

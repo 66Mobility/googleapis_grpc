@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/placeholder_type.pbenum.dart' as $2612;
+import '../enums/placeholder_type.pbenum.dart' as $2613;
 
 /// A feed placeholder view.
 class FeedPlaceholderView extends $pb.GeneratedMessage {
   factory FeedPlaceholderView({
     $core.String? resourceName,
-    $2612.PlaceholderTypeEnum_PlaceholderType? placeholderType,
+    $2613.PlaceholderTypeEnum_PlaceholderType? placeholderType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -36,7 +36,7 @@ class FeedPlaceholderView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedPlaceholderView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2612.PlaceholderTypeEnum_PlaceholderType>(2, _omitFieldNames ? '' : 'placeholderType', $pb.PbFieldType.OE, defaultOrMaker: $2612.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $2612.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $2612.PlaceholderTypeEnum_PlaceholderType.values)
+    ..e<$2613.PlaceholderTypeEnum_PlaceholderType>(2, _omitFieldNames ? '' : 'placeholderType', $pb.PbFieldType.OE, defaultOrMaker: $2613.PlaceholderTypeEnum_PlaceholderType.UNSPECIFIED, valueOf: $2613.PlaceholderTypeEnum_PlaceholderType.valueOf, enumValues: $2613.PlaceholderTypeEnum_PlaceholderType.values)
     ..hasRequiredFields = false
   ;
 
@@ -76,9 +76,9 @@ class FeedPlaceholderView extends $pb.GeneratedMessage {
 
   /// Output only. The placeholder type of the feed placeholder view.
   @$pb.TagNumber(2)
-  $2612.PlaceholderTypeEnum_PlaceholderType get placeholderType => $_getN(1);
+  $2613.PlaceholderTypeEnum_PlaceholderType get placeholderType => $_getN(1);
   @$pb.TagNumber(2)
-  set placeholderType($2612.PlaceholderTypeEnum_PlaceholderType v) { setField(2, v); }
+  set placeholderType($2613.PlaceholderTypeEnum_PlaceholderType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPlaceholderType() => $_has(1);
   @$pb.TagNumber(2)

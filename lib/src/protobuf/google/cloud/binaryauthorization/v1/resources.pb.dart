@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -25,7 +25,7 @@ class Policy extends $pb.GeneratedMessage {
     $core.Iterable<AdmissionWhitelistPattern>? admissionWhitelistPatterns,
     $core.Map<$core.String, AdmissionRule>? clusterAdmissionRules,
     AdmissionRule? defaultAdmissionRule,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     Policy_GlobalPolicyEvaluationMode? globalPolicyEvaluationMode,
     $core.Map<$core.String, AdmissionRule>? kubernetesServiceAccountAdmissionRules,
@@ -74,7 +74,7 @@ class Policy extends $pb.GeneratedMessage {
     ..pc<AdmissionWhitelistPattern>(2, _omitFieldNames ? '' : 'admissionWhitelistPatterns', $pb.PbFieldType.PM, subBuilder: AdmissionWhitelistPattern.create)
     ..m<$core.String, AdmissionRule>(3, _omitFieldNames ? '' : 'clusterAdmissionRules', entryClassName: 'Policy.ClusterAdmissionRulesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: AdmissionRule.create, valueDefaultOrMaker: AdmissionRule.getDefault, packageName: const $pb.PackageName('google.cloud.binaryauthorization.v1'))
     ..aOM<AdmissionRule>(4, _omitFieldNames ? '' : 'defaultAdmissionRule', subBuilder: AdmissionRule.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..e<Policy_GlobalPolicyEvaluationMode>(7, _omitFieldNames ? '' : 'globalPolicyEvaluationMode', $pb.PbFieldType.OE, defaultOrMaker: Policy_GlobalPolicyEvaluationMode.GLOBAL_POLICY_EVALUATION_MODE_UNSPECIFIED, valueOf: Policy_GlobalPolicyEvaluationMode.valueOf, enumValues: Policy_GlobalPolicyEvaluationMode.values)
     ..m<$core.String, AdmissionRule>(8, _omitFieldNames ? '' : 'kubernetesServiceAccountAdmissionRules', entryClassName: 'Policy.KubernetesServiceAccountAdmissionRulesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: AdmissionRule.create, valueDefaultOrMaker: AdmissionRule.getDefault, packageName: const $pb.PackageName('google.cloud.binaryauthorization.v1'))
@@ -146,15 +146,15 @@ class Policy extends $pb.GeneratedMessage {
 
   /// Output only. Time when the policy was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. A descriptive comment.
   @$pb.TagNumber(6)
@@ -355,7 +355,7 @@ class Attestor extends $pb.GeneratedMessage {
   factory Attestor({
     $core.String? name,
     UserOwnedGrafeasNote? userOwnedGrafeasNote,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
   }) {
     final $result = create();
@@ -385,7 +385,7 @@ class Attestor extends $pb.GeneratedMessage {
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<UserOwnedGrafeasNote>(3, _omitFieldNames ? '' : 'userOwnedGrafeasNote', subBuilder: UserOwnedGrafeasNote.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -440,15 +440,15 @@ class Attestor extends $pb.GeneratedMessage {
 
   /// Output only. Time when the attestor was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. A descriptive comment.  This field may be updated.
   /// The field may be displayed in chooser dialogs.

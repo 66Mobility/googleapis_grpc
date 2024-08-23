@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'folder.pb.dart' as $4649;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'folder.pb.dart' as $4651;
 import 'security_marks.pb.dart' as $1367;
 
 /// Security Command Center managed properties. These properties are managed by
@@ -30,7 +30,7 @@ class Asset_SecurityCenterProperties extends $pb.GeneratedMessage {
     $core.String? resourceDisplayName,
     $core.String? resourceParentDisplayName,
     $core.String? resourceProjectDisplayName,
-    $core.Iterable<$4649.Folder>? folders,
+    $core.Iterable<$4651.Folder>? folders,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -75,7 +75,7 @@ class Asset_SecurityCenterProperties extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'resourceDisplayName')
     ..aOS(7, _omitFieldNames ? '' : 'resourceParentDisplayName')
     ..aOS(8, _omitFieldNames ? '' : 'resourceProjectDisplayName')
-    ..pc<$4649.Folder>(10, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4649.Folder.create)
+    ..pc<$4651.Folder>(10, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4651.Folder.create)
     ..hasRequiredFields = false
   ;
 
@@ -185,7 +185,7 @@ class Asset_SecurityCenterProperties extends $pb.GeneratedMessage {
   /// The first folder is the deepest nested folder, and the last folder is the
   /// folder directly under the Organization.
   @$pb.TagNumber(10)
-  $core.List<$4649.Folder> get folders => $_getList(8);
+  $core.List<$4651.Folder> get folders => $_getList(8);
 }
 
 /// Cloud IAM Policy information associated with the Google Cloud resource
@@ -256,10 +256,10 @@ class Asset extends $pb.GeneratedMessage {
   factory Asset({
     $core.String? name,
     Asset_SecurityCenterProperties? securityCenterProperties,
-    $core.Map<$core.String, $1734.Value>? resourceProperties,
+    $core.Map<$core.String, $1735.Value>? resourceProperties,
     $1367.SecurityMarks? securityMarks,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Asset_IamPolicy? iamPolicy,
     $core.String? canonicalName,
   }) {
@@ -297,10 +297,10 @@ class Asset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1p1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Asset_SecurityCenterProperties>(2, _omitFieldNames ? '' : 'securityCenterProperties', subBuilder: Asset_SecurityCenterProperties.create)
-    ..m<$core.String, $1734.Value>(7, _omitFieldNames ? '' : 'resourceProperties', entryClassName: 'Asset.ResourcePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v1p1beta1'))
+    ..m<$core.String, $1735.Value>(7, _omitFieldNames ? '' : 'resourceProperties', entryClassName: 'Asset.ResourcePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycenter.v1p1beta1'))
     ..aOM<$1367.SecurityMarks>(8, _omitFieldNames ? '' : 'securityMarks', subBuilder: $1367.SecurityMarks.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Asset_IamPolicy>(11, _omitFieldNames ? '' : 'iamPolicy', subBuilder: Asset_IamPolicy.create)
     ..aOS(13, _omitFieldNames ? '' : 'canonicalName')
     ..hasRequiredFields = false
@@ -356,7 +356,7 @@ class Asset extends $pb.GeneratedMessage {
   /// Resource managed properties. These properties are managed and defined by
   /// the Google Cloud resource and cannot be modified by the user.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $1734.Value> get resourceProperties => $_getMap(2);
+  $core.Map<$core.String, $1735.Value> get resourceProperties => $_getMap(2);
 
   /// User specified security marks. These marks are entirely managed by the user
   /// and come from the SecurityMarks resource that belongs to the asset.
@@ -373,27 +373,27 @@ class Asset extends $pb.GeneratedMessage {
 
   /// The time at which the asset was created in Security Command Center.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// The time at which the asset was last updated or added in Cloud SCC.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Cloud IAM Policy information associated with the Google Cloud resource
   /// described by the Security Command Center asset. This information is managed

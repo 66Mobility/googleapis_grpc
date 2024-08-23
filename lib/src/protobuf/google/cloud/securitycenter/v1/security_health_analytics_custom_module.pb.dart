@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'security_health_analytics_custom_config.pb.dart' as $4615;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'security_health_analytics_custom_config.pb.dart' as $4617;
 import 'security_health_analytics_custom_module.pbenum.dart';
 
 export 'security_health_analytics_custom_module.pbenum.dart';
@@ -29,10 +29,10 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     SecurityHealthAnalyticsCustomModule_EnablementState? enablementState,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? lastEditor,
     $core.String? ancestorModule,
-    $4615.CustomConfig? customConfig,
+    $4617.CustomConfig? customConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -66,10 +66,10 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..e<SecurityHealthAnalyticsCustomModule_EnablementState>(4, _omitFieldNames ? '' : 'enablementState', $pb.PbFieldType.OE, defaultOrMaker: SecurityHealthAnalyticsCustomModule_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: SecurityHealthAnalyticsCustomModule_EnablementState.valueOf, enumValues: SecurityHealthAnalyticsCustomModule_EnablementState.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'lastEditor')
     ..aOS(7, _omitFieldNames ? '' : 'ancestorModule')
-    ..aOM<$4615.CustomConfig>(8, _omitFieldNames ? '' : 'customConfig', subBuilder: $4615.CustomConfig.create)
+    ..aOM<$4617.CustomConfig>(8, _omitFieldNames ? '' : 'customConfig', subBuilder: $4617.CustomConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -139,15 +139,15 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the custom module was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. The editor that last updated the custom module.
   @$pb.TagNumber(6)
@@ -174,15 +174,15 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
 
   /// The user specified custom configuration for the module.
   @$pb.TagNumber(8)
-  $4615.CustomConfig get customConfig => $_getN(6);
+  $4617.CustomConfig get customConfig => $_getN(6);
   @$pb.TagNumber(8)
-  set customConfig($4615.CustomConfig v) { setField(8, v); }
+  set customConfig($4617.CustomConfig v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCustomConfig() => $_has(6);
   @$pb.TagNumber(8)
   void clearCustomConfig() => clearField(8);
   @$pb.TagNumber(8)
-  $4615.CustomConfig ensureCustomConfig() => $_ensure(6);
+  $4617.CustomConfig ensureCustomConfig() => $_ensure(6);
 }
 
 

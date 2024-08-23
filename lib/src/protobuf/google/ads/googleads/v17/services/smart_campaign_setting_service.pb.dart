@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3796;
-import '../enums/smart_campaign_not_eligible_reason.pbenum.dart' as $3853;
-import '../enums/smart_campaign_status.pbenum.dart' as $3854;
-import '../resources/smart_campaign_setting.pb.dart' as $3852;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3797;
+import '../enums/smart_campaign_not_eligible_reason.pbenum.dart' as $3854;
+import '../enums/smart_campaign_status.pbenum.dart' as $3855;
+import '../resources/smart_campaign_setting.pb.dart' as $3853;
 
 /// Request message for
 /// [SmartCampaignSettingService.GetSmartCampaignStatus][google.ads.googleads.v17.services.SmartCampaignSettingService.GetSmartCampaignStatus].
@@ -77,7 +77,7 @@ class GetSmartCampaignStatusRequest extends $pb.GeneratedMessage {
 /// Details related to Smart campaigns that are not eligible to serve.
 class SmartCampaignNotEligibleDetails extends $pb.GeneratedMessage {
   factory SmartCampaignNotEligibleDetails({
-    $3853.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason? notEligibleReason,
+    $3854.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason? notEligibleReason,
   }) {
     final $result = create();
     if (notEligibleReason != null) {
@@ -90,7 +90,7 @@ class SmartCampaignNotEligibleDetails extends $pb.GeneratedMessage {
   factory SmartCampaignNotEligibleDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SmartCampaignNotEligibleDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3853.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason>(1, _omitFieldNames ? '' : 'notEligibleReason', $pb.PbFieldType.OE, defaultOrMaker: $3853.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason.UNSPECIFIED, valueOf: $3853.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason.valueOf, enumValues: $3853.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason.values)
+    ..e<$3854.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason>(1, _omitFieldNames ? '' : 'notEligibleReason', $pb.PbFieldType.OE, defaultOrMaker: $3854.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason.UNSPECIFIED, valueOf: $3854.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason.valueOf, enumValues: $3854.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason.values)
     ..hasRequiredFields = false
   ;
 
@@ -117,9 +117,9 @@ class SmartCampaignNotEligibleDetails extends $pb.GeneratedMessage {
 
   /// The reason why the Smart campaign is not eligible to serve.
   @$pb.TagNumber(1)
-  $3853.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason get notEligibleReason => $_getN(0);
+  $3854.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason get notEligibleReason => $_getN(0);
   @$pb.TagNumber(1)
-  set notEligibleReason($3853.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason v) { setField(1, v); }
+  set notEligibleReason($3854.SmartCampaignNotEligibleReasonEnum_SmartCampaignNotEligibleReason v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNotEligibleReason() => $_has(0);
   @$pb.TagNumber(1)
@@ -373,7 +373,7 @@ enum GetSmartCampaignStatusResponse_SmartCampaignStatusDetails {
 /// [SmartCampaignSettingService.GetSmartCampaignStatus][google.ads.googleads.v17.services.SmartCampaignSettingService.GetSmartCampaignStatus].
 class GetSmartCampaignStatusResponse extends $pb.GeneratedMessage {
   factory GetSmartCampaignStatusResponse({
-    $3854.SmartCampaignStatusEnum_SmartCampaignStatus? smartCampaignStatus,
+    $3855.SmartCampaignStatusEnum_SmartCampaignStatus? smartCampaignStatus,
     SmartCampaignNotEligibleDetails? notEligibleDetails,
     SmartCampaignEligibleDetails? eligibleDetails,
     SmartCampaignPausedDetails? pausedDetails,
@@ -415,7 +415,7 @@ class GetSmartCampaignStatusResponse extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSmartCampaignStatusResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5, 6])
-    ..e<$3854.SmartCampaignStatusEnum_SmartCampaignStatus>(1, _omitFieldNames ? '' : 'smartCampaignStatus', $pb.PbFieldType.OE, defaultOrMaker: $3854.SmartCampaignStatusEnum_SmartCampaignStatus.UNSPECIFIED, valueOf: $3854.SmartCampaignStatusEnum_SmartCampaignStatus.valueOf, enumValues: $3854.SmartCampaignStatusEnum_SmartCampaignStatus.values)
+    ..e<$3855.SmartCampaignStatusEnum_SmartCampaignStatus>(1, _omitFieldNames ? '' : 'smartCampaignStatus', $pb.PbFieldType.OE, defaultOrMaker: $3855.SmartCampaignStatusEnum_SmartCampaignStatus.UNSPECIFIED, valueOf: $3855.SmartCampaignStatusEnum_SmartCampaignStatus.valueOf, enumValues: $3855.SmartCampaignStatusEnum_SmartCampaignStatus.values)
     ..aOM<SmartCampaignNotEligibleDetails>(2, _omitFieldNames ? '' : 'notEligibleDetails', subBuilder: SmartCampaignNotEligibleDetails.create)
     ..aOM<SmartCampaignEligibleDetails>(3, _omitFieldNames ? '' : 'eligibleDetails', subBuilder: SmartCampaignEligibleDetails.create)
     ..aOM<SmartCampaignPausedDetails>(4, _omitFieldNames ? '' : 'pausedDetails', subBuilder: SmartCampaignPausedDetails.create)
@@ -450,9 +450,9 @@ class GetSmartCampaignStatusResponse extends $pb.GeneratedMessage {
 
   /// The status of this Smart campaign.
   @$pb.TagNumber(1)
-  $3854.SmartCampaignStatusEnum_SmartCampaignStatus get smartCampaignStatus => $_getN(0);
+  $3855.SmartCampaignStatusEnum_SmartCampaignStatus get smartCampaignStatus => $_getN(0);
   @$pb.TagNumber(1)
-  set smartCampaignStatus($3854.SmartCampaignStatusEnum_SmartCampaignStatus v) { setField(1, v); }
+  set smartCampaignStatus($3855.SmartCampaignStatusEnum_SmartCampaignStatus v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSmartCampaignStatus() => $_has(0);
   @$pb.TagNumber(1)
@@ -527,7 +527,7 @@ class MutateSmartCampaignSettingsRequest extends $pb.GeneratedMessage {
     $core.Iterable<SmartCampaignSettingOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3796.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3797.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -556,7 +556,7 @@ class MutateSmartCampaignSettingsRequest extends $pb.GeneratedMessage {
     ..pc<SmartCampaignSettingOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: SmartCampaignSettingOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3796.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3796.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3796.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3796.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3797.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3797.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3797.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3797.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -624,9 +624,9 @@ class MutateSmartCampaignSettingsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3796.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3797.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3796.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3797.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -636,8 +636,8 @@ class MutateSmartCampaignSettingsRequest extends $pb.GeneratedMessage {
 /// A single operation to update Smart campaign settings for a campaign.
 class SmartCampaignSettingOperation extends $pb.GeneratedMessage {
   factory SmartCampaignSettingOperation({
-    $3852.SmartCampaignSetting? update,
-    $2209.FieldMask? updateMask,
+    $3853.SmartCampaignSetting? update,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (update != null) {
@@ -653,8 +653,8 @@ class SmartCampaignSettingOperation extends $pb.GeneratedMessage {
   factory SmartCampaignSettingOperation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SmartCampaignSettingOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$3852.SmartCampaignSetting>(1, _omitFieldNames ? '' : 'update', subBuilder: $3852.SmartCampaignSetting.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$3853.SmartCampaignSetting>(1, _omitFieldNames ? '' : 'update', subBuilder: $3853.SmartCampaignSetting.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -682,33 +682,33 @@ class SmartCampaignSettingOperation extends $pb.GeneratedMessage {
   /// Update operation: The Smart campaign setting must specify a valid
   /// resource name.
   @$pb.TagNumber(1)
-  $3852.SmartCampaignSetting get update => $_getN(0);
+  $3853.SmartCampaignSetting get update => $_getN(0);
   @$pb.TagNumber(1)
-  set update($3852.SmartCampaignSetting v) { setField(1, v); }
+  set update($3853.SmartCampaignSetting v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdate() => clearField(1);
   @$pb.TagNumber(1)
-  $3852.SmartCampaignSetting ensureUpdate() => $_ensure(0);
+  $3853.SmartCampaignSetting ensureUpdate() => $_ensure(0);
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Response message for campaign mutate.
 class MutateSmartCampaignSettingsResponse extends $pb.GeneratedMessage {
   factory MutateSmartCampaignSettingsResponse({
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     $core.Iterable<MutateSmartCampaignSettingResult>? results,
   }) {
     final $result = create();
@@ -725,7 +725,7 @@ class MutateSmartCampaignSettingsResponse extends $pb.GeneratedMessage {
   factory MutateSmartCampaignSettingsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateSmartCampaignSettingsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..pc<MutateSmartCampaignSettingResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateSmartCampaignSettingResult.create)
     ..hasRequiredFields = false
   ;
@@ -756,15 +756,15 @@ class MutateSmartCampaignSettingsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(1)
-  $1795.Status get partialFailureError => $_getN(0);
+  $1796.Status get partialFailureError => $_getN(0);
   @$pb.TagNumber(1)
-  set partialFailureError($1795.Status v) { setField(1, v); }
+  set partialFailureError($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPartialFailureError() => $_has(0);
   @$pb.TagNumber(1)
   void clearPartialFailureError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensurePartialFailureError() => $_ensure(0);
+  $1796.Status ensurePartialFailureError() => $_ensure(0);
 
   /// All results for the mutate.
   @$pb.TagNumber(2)
@@ -775,7 +775,7 @@ class MutateSmartCampaignSettingsResponse extends $pb.GeneratedMessage {
 class MutateSmartCampaignSettingResult extends $pb.GeneratedMessage {
   factory MutateSmartCampaignSettingResult({
     $core.String? resourceName,
-    $3852.SmartCampaignSetting? smartCampaignSetting,
+    $3853.SmartCampaignSetting? smartCampaignSetting,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -792,7 +792,7 @@ class MutateSmartCampaignSettingResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateSmartCampaignSettingResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3852.SmartCampaignSetting>(2, _omitFieldNames ? '' : 'smartCampaignSetting', subBuilder: $3852.SmartCampaignSetting.create)
+    ..aOM<$3853.SmartCampaignSetting>(2, _omitFieldNames ? '' : 'smartCampaignSetting', subBuilder: $3853.SmartCampaignSetting.create)
     ..hasRequiredFields = false
   ;
 
@@ -831,15 +831,15 @@ class MutateSmartCampaignSettingResult extends $pb.GeneratedMessage {
   /// The field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3852.SmartCampaignSetting get smartCampaignSetting => $_getN(1);
+  $3853.SmartCampaignSetting get smartCampaignSetting => $_getN(1);
   @$pb.TagNumber(2)
-  set smartCampaignSetting($3852.SmartCampaignSetting v) { setField(2, v); }
+  set smartCampaignSetting($3853.SmartCampaignSetting v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSmartCampaignSetting() => $_has(1);
   @$pb.TagNumber(2)
   void clearSmartCampaignSetting() => clearField(2);
   @$pb.TagNumber(2)
-  $3852.SmartCampaignSetting ensureSmartCampaignSetting() => $_ensure(1);
+  $3853.SmartCampaignSetting ensureSmartCampaignSetting() => $_ensure(1);
 }
 
 

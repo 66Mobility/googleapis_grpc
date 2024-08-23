@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4694;
+import 'common.pb.dart' as $4696;
 import 'completion_service.pbenum.dart';
 
 export 'completion_service.pbenum.dart';
@@ -265,7 +265,7 @@ class CompleteQueryResponse_CompletionResult extends $pb.GeneratedMessage {
 class CompleteQueryResponse extends $pb.GeneratedMessage {
   factory CompleteQueryResponse({
     $core.Iterable<CompleteQueryResponse_CompletionResult>? completionResults,
-    $4694.ResponseMetadata? metadata,
+    $4696.ResponseMetadata? metadata,
   }) {
     final $result = create();
     if (completionResults != null) {
@@ -282,7 +282,7 @@ class CompleteQueryResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompleteQueryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4beta1'), createEmptyInstance: create)
     ..pc<CompleteQueryResponse_CompletionResult>(1, _omitFieldNames ? '' : 'completionResults', $pb.PbFieldType.PM, subBuilder: CompleteQueryResponse_CompletionResult.create)
-    ..aOM<$4694.ResponseMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4694.ResponseMetadata.create)
+    ..aOM<$4696.ResponseMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4696.ResponseMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -314,15 +314,15 @@ class CompleteQueryResponse extends $pb.GeneratedMessage {
   /// Additional information for the API invocation, such as the request
   /// tracking id.
   @$pb.TagNumber(2)
-  $4694.ResponseMetadata get metadata => $_getN(1);
+  $4696.ResponseMetadata get metadata => $_getN(1);
   @$pb.TagNumber(2)
-  set metadata($4694.ResponseMetadata v) { setField(2, v); }
+  set metadata($4696.ResponseMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4694.ResponseMetadata ensureMetadata() => $_ensure(1);
+  $4696.ResponseMetadata ensureMetadata() => $_ensure(1);
 }
 
 

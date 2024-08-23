@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'conversation_model.pbenum.dart';
 
 export 'conversation_model.pbenum.dart';
@@ -30,7 +30,7 @@ class ConversationModel extends $pb.GeneratedMessage {
   factory ConversationModel({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Iterable<InputDataset>? datasets,
     ConversationModel_State? state,
     ArticleSuggestionModelMetadata? articleSuggestionModelMetadata,
@@ -77,7 +77,7 @@ class ConversationModel extends $pb.GeneratedMessage {
     ..oo(0, [8, 9])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..pc<InputDataset>(4, _omitFieldNames ? '' : 'datasets', $pb.PbFieldType.PM, subBuilder: InputDataset.create)
     ..e<ConversationModel_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ConversationModel_State.STATE_UNSPECIFIED, valueOf: ConversationModel_State.valueOf, enumValues: ConversationModel_State.values)
     ..aOM<ArticleSuggestionModelMetadata>(8, _omitFieldNames ? '' : 'articleSuggestionModelMetadata', subBuilder: ArticleSuggestionModelMetadata.create)
@@ -133,15 +133,15 @@ class ConversationModel extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this model.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Required. Datasets used to create model.
   @$pb.TagNumber(4)
@@ -207,7 +207,7 @@ class ConversationModelEvaluation extends $pb.GeneratedMessage {
   factory ConversationModelEvaluation({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     SmartReplyMetrics? smartReplyMetrics,
     EvaluationConfig? evaluationConfig,
     $core.String? rawHumanEvalTemplateCsv,
@@ -245,7 +245,7 @@ class ConversationModelEvaluation extends $pb.GeneratedMessage {
     ..oo(0, [5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SmartReplyMetrics>(5, _omitFieldNames ? '' : 'smartReplyMetrics', subBuilder: SmartReplyMetrics.create)
     ..aOM<EvaluationConfig>(6, _omitFieldNames ? '' : 'evaluationConfig', subBuilder: EvaluationConfig.create)
     ..aOS(8, _omitFieldNames ? '' : 'rawHumanEvalTemplateCsv')
@@ -300,15 +300,15 @@ class ConversationModelEvaluation extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this model.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Only available when model is for smart reply.
   @$pb.TagNumber(5)
@@ -1626,7 +1626,7 @@ class CreateConversationModelOperationMetadata extends $pb.GeneratedMessage {
   factory CreateConversationModelOperationMetadata({
     $core.String? conversationModel,
     CreateConversationModelOperationMetadata_State? state,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (conversationModel != null) {
@@ -1647,7 +1647,7 @@ class CreateConversationModelOperationMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateConversationModelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'conversationModel')
     ..e<CreateConversationModelOperationMetadata_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CreateConversationModelOperationMetadata_State.STATE_UNSPECIFIED, valueOf: CreateConversationModelOperationMetadata_State.valueOf, enumValues: CreateConversationModelOperationMetadata_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1696,15 +1696,15 @@ class CreateConversationModelOperationMetadata extends $pb.GeneratedMessage {
   /// Timestamp when the request to create conversation model is submitted. The
   /// time is measured on server side.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 /// Metadata for a
@@ -1713,7 +1713,7 @@ class CreateConversationModelOperationMetadata extends $pb.GeneratedMessage {
 class DeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
   factory DeployConversationModelOperationMetadata({
     $core.String? conversationModel,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (conversationModel != null) {
@@ -1730,7 +1730,7 @@ class DeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeployConversationModelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'conversationModel')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1769,15 +1769,15 @@ class DeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
   /// Timestamp when request to deploy conversation model was submitted. The time
   /// is measured on server side.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 }
 
 /// Metadata for a
@@ -1786,7 +1786,7 @@ class DeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
 class UndeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
   factory UndeployConversationModelOperationMetadata({
     $core.String? conversationModel,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (conversationModel != null) {
@@ -1803,7 +1803,7 @@ class UndeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeployConversationModelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'conversationModel')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1842,15 +1842,15 @@ class UndeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
   /// Timestamp when the request to undeploy conversation model was submitted.
   /// The time is measured on server side.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 }
 
 /// Metadata for a
@@ -1859,7 +1859,7 @@ class UndeployConversationModelOperationMetadata extends $pb.GeneratedMessage {
 class DeleteConversationModelOperationMetadata extends $pb.GeneratedMessage {
   factory DeleteConversationModelOperationMetadata({
     $core.String? conversationModel,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (conversationModel != null) {
@@ -1876,7 +1876,7 @@ class DeleteConversationModelOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteConversationModelOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'conversationModel')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1915,15 +1915,15 @@ class DeleteConversationModelOperationMetadata extends $pb.GeneratedMessage {
   /// Timestamp when delete conversation model request was created. The time is
   /// measured on server side.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 }
 
 /// Metadata for a
@@ -1933,7 +1933,7 @@ class CreateConversationModelEvaluationOperationMetadata extends $pb.GeneratedMe
   factory CreateConversationModelEvaluationOperationMetadata({
     $core.String? conversationModelEvaluation,
     CreateConversationModelEvaluationOperationMetadata_State? state,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? conversationModel,
   }) {
     final $result = create();
@@ -1958,7 +1958,7 @@ class CreateConversationModelEvaluationOperationMetadata extends $pb.GeneratedMe
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateConversationModelEvaluationOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'conversationModelEvaluation')
     ..e<CreateConversationModelEvaluationOperationMetadata_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CreateConversationModelEvaluationOperationMetadata_State.STATE_UNSPECIFIED, valueOf: CreateConversationModelEvaluationOperationMetadata_State.valueOf, enumValues: CreateConversationModelEvaluationOperationMetadata_State.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'conversationModel')
     ..hasRequiredFields = false
   ;
@@ -2009,15 +2009,15 @@ class CreateConversationModelEvaluationOperationMetadata extends $pb.GeneratedMe
   /// Timestamp when the request to create conversation model was submitted. The
   /// time is measured on server side.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The resource name of the conversation model. Format:
   /// `projects/<Project ID>/locations/<Location

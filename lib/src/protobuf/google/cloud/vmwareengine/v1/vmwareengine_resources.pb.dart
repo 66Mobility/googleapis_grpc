@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'vmwareengine_resources.pbenum.dart';
 
 export 'vmwareengine_resources.pbenum.dart';
@@ -386,10 +386,10 @@ class PrivateCloud_ManagementCluster extends $pb.GeneratedMessage {
 class PrivateCloud extends $pb.GeneratedMessage {
   factory PrivateCloud({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     PrivateCloud_State? state,
     NetworkConfig? networkConfig,
     PrivateCloud_ManagementCluster? managementCluster,
@@ -451,10 +451,10 @@ class PrivateCloud extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivateCloud', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..e<PrivateCloud_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PrivateCloud_State.STATE_UNSPECIFIED, valueOf: PrivateCloud_State.valueOf, enumValues: PrivateCloud_State.values)
     ..aOM<NetworkConfig>(9, _omitFieldNames ? '' : 'networkConfig', subBuilder: NetworkConfig.create)
     ..aOM<PrivateCloud_ManagementCluster>(10, _omitFieldNames ? '' : 'managementCluster', subBuilder: PrivateCloud_ManagementCluster.create)
@@ -504,51 +504,51 @@ class PrivateCloud extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. Time when the resource was scheduled for deletion.
   @$pb.TagNumber(4)
-  $1775.Timestamp get deleteTime => $_getN(3);
+  $1776.Timestamp get deleteTime => $_getN(3);
   @$pb.TagNumber(4)
-  set deleteTime($1775.Timestamp v) { setField(4, v); }
+  set deleteTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDeleteTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDeleteTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(3);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(3);
 
   /// Output only. Time when the resource will be irreversibly deleted.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(4);
+  $1776.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(4);
+  $1776.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// Output only. State of the resource. New values may be added to this enum
   /// when appropriate.
@@ -661,8 +661,8 @@ class PrivateCloud extends $pb.GeneratedMessage {
 class Cluster extends $pb.GeneratedMessage {
   factory Cluster({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Cluster_State? state,
     $core.bool? management,
     $core.String? uid,
@@ -706,8 +706,8 @@ class Cluster extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cluster', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Cluster_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Cluster_State.STATE_UNSPECIFIED, valueOf: Cluster_State.valueOf, enumValues: Cluster_State.values)
     ..aOB(7, _omitFieldNames ? '' : 'management')
     ..aOS(14, _omitFieldNames ? '' : 'uid')
@@ -754,27 +754,27 @@ class Cluster extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. State of the resource.
   @$pb.TagNumber(6)
@@ -993,8 +993,8 @@ class Node extends $pb.GeneratedMessage {
 class ExternalAddress extends $pb.GeneratedMessage {
   factory ExternalAddress({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? internalIp,
     $core.String? externalIp,
     ExternalAddress_State? state,
@@ -1034,8 +1034,8 @@ class ExternalAddress extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExternalAddress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'internalIp')
     ..aOS(7, _omitFieldNames ? '' : 'externalIp')
     ..e<ExternalAddress_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ExternalAddress_State.STATE_UNSPECIFIED, valueOf: ExternalAddress_State.valueOf, enumValues: ExternalAddress_State.values)
@@ -1081,27 +1081,27 @@ class ExternalAddress extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The internal IP address of a workload VM.
   @$pb.TagNumber(6)
@@ -1397,8 +1397,8 @@ class ExternalAccessRule_IpRange extends $pb.GeneratedMessage {
 class ExternalAccessRule extends $pb.GeneratedMessage {
   factory ExternalAccessRule({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.int? priority,
     ExternalAccessRule_Action? action,
@@ -1458,8 +1458,8 @@ class ExternalAccessRule extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExternalAccessRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'priority', $pb.PbFieldType.O3)
     ..e<ExternalAccessRule_Action>(7, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE, defaultOrMaker: ExternalAccessRule_Action.ACTION_UNSPECIFIED, valueOf: ExternalAccessRule_Action.valueOf, enumValues: ExternalAccessRule_Action.values)
@@ -1510,27 +1510,27 @@ class ExternalAccessRule extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-provided description for this external access rule.
   @$pb.TagNumber(5)
@@ -1640,8 +1640,8 @@ class ExternalAccessRule extends $pb.GeneratedMessage {
 class LoggingServer extends $pb.GeneratedMessage {
   factory LoggingServer({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? hostname,
     LoggingServer_Protocol? protocol,
     $core.int? port,
@@ -1681,8 +1681,8 @@ class LoggingServer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LoggingServer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'hostname')
     ..e<LoggingServer_Protocol>(6, _omitFieldNames ? '' : 'protocol', $pb.PbFieldType.OE, defaultOrMaker: LoggingServer_Protocol.PROTOCOL_UNSPECIFIED, valueOf: LoggingServer_Protocol.valueOf, enumValues: LoggingServer_Protocol.values)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
@@ -1728,27 +1728,27 @@ class LoggingServer extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Required. Fully-qualified domain name (FQDN) or IP Address of the logging
   /// server.
@@ -2073,7 +2073,7 @@ class Credentials extends $pb.GeneratedMessage {
 class HcxActivationKey extends $pb.GeneratedMessage {
   factory HcxActivationKey({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     HcxActivationKey_State? state,
     $core.String? activationKey,
     $core.String? uid,
@@ -2102,7 +2102,7 @@ class HcxActivationKey extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HcxActivationKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<HcxActivationKey_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: HcxActivationKey_State.STATE_UNSPECIFIED, valueOf: HcxActivationKey_State.valueOf, enumValues: HcxActivationKey_State.values)
     ..aOS(4, _omitFieldNames ? '' : 'activationKey')
     ..aOS(5, _omitFieldNames ? '' : 'uid')
@@ -2146,15 +2146,15 @@ class HcxActivationKey extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of HCX activation key.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. State of HCX activation key.
   @$pb.TagNumber(3)
@@ -2698,7 +2698,7 @@ class AutoscalingSettings extends $pb.GeneratedMessage {
     $core.Map<$core.String, AutoscalingSettings_AutoscalingPolicy>? autoscalingPolicies,
     $core.int? minClusterNodeCount,
     $core.int? maxClusterNodeCount,
-    $1737.Duration? coolDownPeriod,
+    $1738.Duration? coolDownPeriod,
   }) {
     final $result = create();
     if (autoscalingPolicies != null) {
@@ -2723,7 +2723,7 @@ class AutoscalingSettings extends $pb.GeneratedMessage {
     ..m<$core.String, AutoscalingSettings_AutoscalingPolicy>(1, _omitFieldNames ? '' : 'autoscalingPolicies', entryClassName: 'AutoscalingSettings.AutoscalingPoliciesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: AutoscalingSettings_AutoscalingPolicy.create, valueDefaultOrMaker: AutoscalingSettings_AutoscalingPolicy.getDefault, packageName: const $pb.PackageName('google.cloud.vmwareengine.v1'))
     ..a<$core.int>(2, _omitFieldNames ? '' : 'minClusterNodeCount', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'maxClusterNodeCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'coolDownPeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'coolDownPeriod', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2791,15 +2791,15 @@ class AutoscalingSettings extends $pb.GeneratedMessage {
   /// Defaults to 30 minutes if not specified. Cool down period must be in whole
   /// minutes (for example, 30, 31, 50, 180 minutes).
   @$pb.TagNumber(4)
-  $1737.Duration get coolDownPeriod => $_getN(3);
+  $1738.Duration get coolDownPeriod => $_getN(3);
   @$pb.TagNumber(4)
-  set coolDownPeriod($1737.Duration v) { setField(4, v); }
+  set coolDownPeriod($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCoolDownPeriod() => $_has(3);
   @$pb.TagNumber(4)
   void clearCoolDownPeriod() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureCoolDownPeriod() => $_ensure(3);
+  $1738.Duration ensureCoolDownPeriod() => $_ensure(3);
 }
 
 /// A forwarding rule is a mapping of a `domain` to `name_servers`.
@@ -2872,8 +2872,8 @@ class DnsForwarding_ForwardingRule extends $pb.GeneratedMessage {
 class DnsForwarding extends $pb.GeneratedMessage {
   factory DnsForwarding({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<DnsForwarding_ForwardingRule>? forwardingRules,
   }) {
     final $result = create();
@@ -2897,8 +2897,8 @@ class DnsForwarding extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DnsForwarding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pc<DnsForwarding_ForwardingRule>(4, _omitFieldNames ? '' : 'forwardingRules', $pb.PbFieldType.PM, subBuilder: DnsForwarding_ForwardingRule.create)
     ..hasRequiredFields = false
   ;
@@ -2940,27 +2940,27 @@ class DnsForwarding extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Required. List of domain mappings to configure
   @$pb.TagNumber(4)
@@ -2971,8 +2971,8 @@ class DnsForwarding extends $pb.GeneratedMessage {
 class NetworkPeering extends $pb.GeneratedMessage {
   factory NetworkPeering({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? peerNetwork,
     $core.String? stateDetails,
     $core.bool? exportCustomRoutes,
@@ -3044,8 +3044,8 @@ class NetworkPeering extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NetworkPeering', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'peerNetwork')
     ..aOS(7, _omitFieldNames ? '' : 'stateDetails')
     ..aOB(8, _omitFieldNames ? '' : 'exportCustomRoutes')
@@ -3100,27 +3100,27 @@ class NetworkPeering extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Required. The relative resource name of the network to peer with
   /// a standard VMware Engine network. The provided network can be a
@@ -3498,8 +3498,8 @@ class NetworkPolicy_NetworkService extends $pb.GeneratedMessage {
 class NetworkPolicy extends $pb.GeneratedMessage {
   factory NetworkPolicy({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     NetworkPolicy_NetworkService? internetAccess,
     NetworkPolicy_NetworkService? externalIp,
     $core.String? edgeServicesCidr,
@@ -3547,8 +3547,8 @@ class NetworkPolicy extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NetworkPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<NetworkPolicy_NetworkService>(6, _omitFieldNames ? '' : 'internetAccess', subBuilder: NetworkPolicy_NetworkService.create)
     ..aOM<NetworkPolicy_NetworkService>(7, _omitFieldNames ? '' : 'externalIp', subBuilder: NetworkPolicy_NetworkService.create)
     ..aOS(9, _omitFieldNames ? '' : 'edgeServicesCidr')
@@ -3596,27 +3596,27 @@ class NetworkPolicy extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Network service that allows VMware workloads to access the internet.
   @$pb.TagNumber(6)
@@ -3716,8 +3716,8 @@ enum ManagementDnsZoneBinding_BindNetwork {
 class ManagementDnsZoneBinding extends $pb.GeneratedMessage {
   factory ManagementDnsZoneBinding({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     ManagementDnsZoneBinding_State? state,
     $core.String? uid,
     $core.String? description,
@@ -3763,8 +3763,8 @@ class ManagementDnsZoneBinding extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ManagementDnsZoneBinding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..oo(0, [14, 15])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<ManagementDnsZoneBinding_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ManagementDnsZoneBinding_State.STATE_UNSPECIFIED, valueOf: ManagementDnsZoneBinding_State.valueOf, enumValues: ManagementDnsZoneBinding_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'uid')
     ..aOS(13, _omitFieldNames ? '' : 'description')
@@ -3813,27 +3813,27 @@ class ManagementDnsZoneBinding extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The state of the resource.
   @$pb.TagNumber(8)
@@ -3968,8 +3968,8 @@ class VmwareEngineNetwork_VpcNetwork extends $pb.GeneratedMessage {
 class VmwareEngineNetwork extends $pb.GeneratedMessage {
   factory VmwareEngineNetwork({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     $core.Iterable<VmwareEngineNetwork_VpcNetwork>? vpcNetworks,
     VmwareEngineNetwork_State? state,
@@ -4013,8 +4013,8 @@ class VmwareEngineNetwork extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VmwareEngineNetwork', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..pc<VmwareEngineNetwork_VpcNetwork>(6, _omitFieldNames ? '' : 'vpcNetworks', $pb.PbFieldType.PM, subBuilder: VmwareEngineNetwork_VpcNetwork.create)
     ..e<VmwareEngineNetwork_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: VmwareEngineNetwork_State.STATE_UNSPECIFIED, valueOf: VmwareEngineNetwork_State.valueOf, enumValues: VmwareEngineNetwork_State.values)
@@ -4061,27 +4061,27 @@ class VmwareEngineNetwork extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-provided description for this VMware Engine network.
   @$pb.TagNumber(5)
@@ -4148,8 +4148,8 @@ class VmwareEngineNetwork extends $pb.GeneratedMessage {
 class PrivateConnection extends $pb.GeneratedMessage {
   factory PrivateConnection({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? description,
     PrivateConnection_State? state,
     $core.String? vmwareEngineNetwork,
@@ -4209,8 +4209,8 @@ class PrivateConnection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivateConnection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vmwareengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..e<PrivateConnection_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PrivateConnection_State.STATE_UNSPECIFIED, valueOf: PrivateConnection_State.valueOf, enumValues: PrivateConnection_State.values)
     ..aOS(8, _omitFieldNames ? '' : 'vmwareEngineNetwork')
@@ -4261,27 +4261,27 @@ class PrivateConnection extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update time of this resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. User-provided description for this private connection.
   @$pb.TagNumber(4)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'clouddms.pbenum.dart';
 import 'clouddms_resources.pb.dart' as $770;
 import 'conversionworkspace_resources.pb.dart' as $771;
@@ -384,7 +384,7 @@ class CreateMigrationJobRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateMigrationJob' request.
 class UpdateMigrationJobRequest extends $pb.GeneratedMessage {
   factory UpdateMigrationJobRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $770.MigrationJob? migrationJob,
     $core.String? requestId,
   }) {
@@ -405,7 +405,7 @@ class UpdateMigrationJobRequest extends $pb.GeneratedMessage {
   factory UpdateMigrationJobRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMigrationJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$770.MigrationJob>(2, _omitFieldNames ? '' : 'migrationJob', subBuilder: $770.MigrationJob.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -435,15 +435,15 @@ class UpdateMigrationJobRequest extends $pb.GeneratedMessage {
   /// Required. Field mask is used to specify the fields to be overwritten by the
   /// update in the conversion workspace resource.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The migration job parameters to update.
   @$pb.TagNumber(2)
@@ -792,7 +792,7 @@ class PromoteMigrationJobRequest extends $pb.GeneratedMessage {
 class VerifyMigrationJobRequest extends $pb.GeneratedMessage {
   factory VerifyMigrationJobRequest({
     $core.String? name,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $770.MigrationJob? migrationJob,
   }) {
     final $result = create();
@@ -813,7 +813,7 @@ class VerifyMigrationJobRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VerifyMigrationJobRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$770.MigrationJob>(3, _omitFieldNames ? '' : 'migrationJob', subBuilder: $770.MigrationJob.create)
     ..hasRequiredFields = false
   ;
@@ -852,15 +852,15 @@ class VerifyMigrationJobRequest extends $pb.GeneratedMessage {
   /// Optional. Field mask is used to specify the changed fields to be verified.
   /// It will not update the migration job.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. The changed migration job parameters to verify.
   /// It will not update the migration job.
@@ -1823,7 +1823,7 @@ class CreateConnectionProfileRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateConnectionProfile' request.
 class UpdateConnectionProfileRequest extends $pb.GeneratedMessage {
   factory UpdateConnectionProfileRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $770.ConnectionProfile? connectionProfile,
     $core.String? requestId,
     $core.bool? validateOnly,
@@ -1852,7 +1852,7 @@ class UpdateConnectionProfileRequest extends $pb.GeneratedMessage {
   factory UpdateConnectionProfileRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConnectionProfileRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$770.ConnectionProfile>(2, _omitFieldNames ? '' : 'connectionProfile', subBuilder: $770.ConnectionProfile.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -1884,15 +1884,15 @@ class UpdateConnectionProfileRequest extends $pb.GeneratedMessage {
   /// Required. Field mask is used to specify the fields to be overwritten by the
   /// update in the conversion workspace resource.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The connection profile parameters to update.
   @$pb.TagNumber(2)
@@ -2481,8 +2481,8 @@ class GetPrivateConnectionRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -2518,8 +2518,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -2551,27 +2551,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)
@@ -2970,7 +2970,7 @@ class CreateConversionWorkspaceRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateConversionWorkspace' request.
 class UpdateConversionWorkspaceRequest extends $pb.GeneratedMessage {
   factory UpdateConversionWorkspaceRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $771.ConversionWorkspace? conversionWorkspace,
     $core.String? requestId,
   }) {
@@ -2991,7 +2991,7 @@ class UpdateConversionWorkspaceRequest extends $pb.GeneratedMessage {
   factory UpdateConversionWorkspaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConversionWorkspaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.clouddms.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$771.ConversionWorkspace>(2, _omitFieldNames ? '' : 'conversionWorkspace', subBuilder: $771.ConversionWorkspace.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -3021,15 +3021,15 @@ class UpdateConversionWorkspaceRequest extends $pb.GeneratedMessage {
   /// Required. Field mask is used to specify the fields to be overwritten by the
   /// update in the conversion workspace resource.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The conversion workspace parameters to update.
   @$pb.TagNumber(2)
@@ -4226,7 +4226,7 @@ class SearchBackgroundJobsRequest extends $pb.GeneratedMessage {
     $core.String? conversionWorkspace,
     $core.bool? returnMostRecentPerJobType,
     $core.int? maxSize,
-    $1775.Timestamp? completedUntilTime,
+    $1776.Timestamp? completedUntilTime,
   }) {
     final $result = create();
     if (conversionWorkspace != null) {
@@ -4251,7 +4251,7 @@ class SearchBackgroundJobsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'conversionWorkspace')
     ..aOB(2, _omitFieldNames ? '' : 'returnMostRecentPerJobType')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'maxSize', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'completedUntilTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'completedUntilTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -4314,15 +4314,15 @@ class SearchBackgroundJobsRequest extends $pb.GeneratedMessage {
   /// Optional. If provided, only returns jobs that completed until (not
   /// including) the given timestamp.
   @$pb.TagNumber(4)
-  $1775.Timestamp get completedUntilTime => $_getN(3);
+  $1776.Timestamp get completedUntilTime => $_getN(3);
   @$pb.TagNumber(4)
-  set completedUntilTime($1775.Timestamp v) { setField(4, v); }
+  set completedUntilTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCompletedUntilTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCompletedUntilTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCompletedUntilTime() => $_ensure(3);
+  $1776.Timestamp ensureCompletedUntilTime() => $_ensure(3);
 }
 
 /// Response message for 'SearchBackgroundJobs' request.

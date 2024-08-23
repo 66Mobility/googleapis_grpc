@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/lifecycle_goals.pb.dart' as $2197;
+import '../common/lifecycle_goals.pb.dart' as $2198;
 
 /// Lifecycle goal common settings, including existing user lists and existing
 /// high lifetime value user lists, shared among different types of lifecycle
@@ -79,7 +79,7 @@ class CustomerLifecycleGoal extends $pb.GeneratedMessage {
   factory CustomerLifecycleGoal({
     $core.String? resourceName,
     CustomerLifecycleGoal_LifecycleGoalCustomerDefinitionSettings? lifecycleGoalCustomerDefinitionSettings,
-    $2197.LifecycleGoalValueSettings? customerAcquisitionGoalValueSettings,
+    $2198.LifecycleGoalValueSettings? customerAcquisitionGoalValueSettings,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -100,7 +100,7 @@ class CustomerLifecycleGoal extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerLifecycleGoal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOM<CustomerLifecycleGoal_LifecycleGoalCustomerDefinitionSettings>(2, _omitFieldNames ? '' : 'lifecycleGoalCustomerDefinitionSettings', subBuilder: CustomerLifecycleGoal_LifecycleGoalCustomerDefinitionSettings.create)
-    ..aOM<$2197.LifecycleGoalValueSettings>(3, _omitFieldNames ? '' : 'customerAcquisitionGoalValueSettings', subBuilder: $2197.LifecycleGoalValueSettings.create)
+    ..aOM<$2198.LifecycleGoalValueSettings>(3, _omitFieldNames ? '' : 'customerAcquisitionGoalValueSettings', subBuilder: $2198.LifecycleGoalValueSettings.create)
     ..hasRequiredFields = false
   ;
 
@@ -153,15 +153,15 @@ class CustomerLifecycleGoal extends $pb.GeneratedMessage {
 
   /// Output only. Customer acquisition goal customer level value settings.
   @$pb.TagNumber(3)
-  $2197.LifecycleGoalValueSettings get customerAcquisitionGoalValueSettings => $_getN(2);
+  $2198.LifecycleGoalValueSettings get customerAcquisitionGoalValueSettings => $_getN(2);
   @$pb.TagNumber(3)
-  set customerAcquisitionGoalValueSettings($2197.LifecycleGoalValueSettings v) { setField(3, v); }
+  set customerAcquisitionGoalValueSettings($2198.LifecycleGoalValueSettings v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCustomerAcquisitionGoalValueSettings() => $_has(2);
   @$pb.TagNumber(3)
   void clearCustomerAcquisitionGoalValueSettings() => clearField(3);
   @$pb.TagNumber(3)
-  $2197.LifecycleGoalValueSettings ensureCustomerAcquisitionGoalValueSettings() => $_ensure(2);
+  $2198.LifecycleGoalValueSettings ensureCustomerAcquisitionGoalValueSettings() => $_ensure(2);
 }
 
 

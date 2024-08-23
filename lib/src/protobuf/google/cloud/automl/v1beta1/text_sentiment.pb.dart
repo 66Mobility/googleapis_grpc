@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'classification.pb.dart' as $4348;
+import 'classification.pb.dart' as $4349;
 
 /// Contains annotation details specific to text sentiment.
 class TextSentimentAnnotation extends $pb.GeneratedMessage {
@@ -88,7 +88,7 @@ class TextSentimentEvaluationMetrics extends $pb.GeneratedMessage {
     $core.double? meanSquaredError,
     $core.double? linearKappa,
     $core.double? quadraticKappa,
-    $4348.ClassificationEvaluationMetrics_ConfusionMatrix? confusionMatrix,
+    $4349.ClassificationEvaluationMetrics_ConfusionMatrix? confusionMatrix,
   @$core.Deprecated('This field is deprecated.')
     $core.Iterable<$core.String>? annotationSpecId,
   }) {
@@ -135,7 +135,7 @@ class TextSentimentEvaluationMetrics extends $pb.GeneratedMessage {
     ..a<$core.double>(5, _omitFieldNames ? '' : 'meanSquaredError', $pb.PbFieldType.OF)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'linearKappa', $pb.PbFieldType.OF)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'quadraticKappa', $pb.PbFieldType.OF)
-    ..aOM<$4348.ClassificationEvaluationMetrics_ConfusionMatrix>(8, _omitFieldNames ? '' : 'confusionMatrix', subBuilder: $4348.ClassificationEvaluationMetrics_ConfusionMatrix.create)
+    ..aOM<$4349.ClassificationEvaluationMetrics_ConfusionMatrix>(8, _omitFieldNames ? '' : 'confusionMatrix', subBuilder: $4349.ClassificationEvaluationMetrics_ConfusionMatrix.create)
     ..pPS(9, _omitFieldNames ? '' : 'annotationSpecId')
     ..hasRequiredFields = false
   ;
@@ -239,15 +239,15 @@ class TextSentimentEvaluationMetrics extends $pb.GeneratedMessage {
   /// Only set for the overall model evaluation, not for evaluation of a single
   /// annotation spec.
   @$pb.TagNumber(8)
-  $4348.ClassificationEvaluationMetrics_ConfusionMatrix get confusionMatrix => $_getN(7);
+  $4349.ClassificationEvaluationMetrics_ConfusionMatrix get confusionMatrix => $_getN(7);
   @$pb.TagNumber(8)
-  set confusionMatrix($4348.ClassificationEvaluationMetrics_ConfusionMatrix v) { setField(8, v); }
+  set confusionMatrix($4349.ClassificationEvaluationMetrics_ConfusionMatrix v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasConfusionMatrix() => $_has(7);
   @$pb.TagNumber(8)
   void clearConfusionMatrix() => clearField(8);
   @$pb.TagNumber(8)
-  $4348.ClassificationEvaluationMetrics_ConfusionMatrix ensureConfusionMatrix() => $_ensure(7);
+  $4349.ClassificationEvaluationMetrics_ConfusionMatrix ensureConfusionMatrix() => $_ensure(7);
 
   /// Output only. The annotation spec ids used for this evaluation.
   /// Deprecated .

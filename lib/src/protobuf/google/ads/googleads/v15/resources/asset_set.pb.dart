@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_set_types.pb.dart' as $2151;
-import '../enums/asset_set_status.pbenum.dart' as $2152;
-import '../enums/asset_set_type.pbenum.dart' as $2114;
+import '../common/asset_set_types.pb.dart' as $2152;
+import '../enums/asset_set_status.pbenum.dart' as $2153;
+import '../enums/asset_set_type.pbenum.dart' as $2115;
 
 /// Merchant ID and Feed Label from Google Merchant Center.
 class AssetSet_MerchantCenterFeed extends $pb.GeneratedMessage {
@@ -166,13 +166,13 @@ class AssetSet extends $pb.GeneratedMessage {
   factory AssetSet({
     $core.String? resourceName,
     $core.String? name,
-    $2114.AssetSetTypeEnum_AssetSetType? type,
-    $2152.AssetSetStatusEnum_AssetSetStatus? status,
+    $2115.AssetSetTypeEnum_AssetSetType? type,
+    $2153.AssetSetStatusEnum_AssetSetStatus? status,
     AssetSet_MerchantCenterFeed? merchantCenterFeed,
     $fixnum.Int64? id,
-    $2151.LocationSet? locationSet,
-    $2151.BusinessProfileLocationGroup? businessProfileLocationGroup,
-    $2151.ChainLocationGroup? chainLocationGroup,
+    $2152.LocationSet? locationSet,
+    $2152.BusinessProfileLocationGroup? businessProfileLocationGroup,
+    $2152.ChainLocationGroup? chainLocationGroup,
     $fixnum.Int64? locationGroupParentAssetSetId,
     AssetSet_HotelPropertyData? hotelPropertyData,
   }) {
@@ -226,13 +226,13 @@ class AssetSet extends $pb.GeneratedMessage {
     ..oo(0, [7, 8, 9])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..e<$2114.AssetSetTypeEnum_AssetSetType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2114.AssetSetTypeEnum_AssetSetType.UNSPECIFIED, valueOf: $2114.AssetSetTypeEnum_AssetSetType.valueOf, enumValues: $2114.AssetSetTypeEnum_AssetSetType.values)
-    ..e<$2152.AssetSetStatusEnum_AssetSetStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2152.AssetSetStatusEnum_AssetSetStatus.UNSPECIFIED, valueOf: $2152.AssetSetStatusEnum_AssetSetStatus.valueOf, enumValues: $2152.AssetSetStatusEnum_AssetSetStatus.values)
+    ..e<$2115.AssetSetTypeEnum_AssetSetType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2115.AssetSetTypeEnum_AssetSetType.UNSPECIFIED, valueOf: $2115.AssetSetTypeEnum_AssetSetType.valueOf, enumValues: $2115.AssetSetTypeEnum_AssetSetType.values)
+    ..e<$2153.AssetSetStatusEnum_AssetSetStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2153.AssetSetStatusEnum_AssetSetStatus.UNSPECIFIED, valueOf: $2153.AssetSetStatusEnum_AssetSetStatus.valueOf, enumValues: $2153.AssetSetStatusEnum_AssetSetStatus.values)
     ..aOM<AssetSet_MerchantCenterFeed>(5, _omitFieldNames ? '' : 'merchantCenterFeed', subBuilder: AssetSet_MerchantCenterFeed.create)
     ..aInt64(6, _omitFieldNames ? '' : 'id')
-    ..aOM<$2151.LocationSet>(7, _omitFieldNames ? '' : 'locationSet', subBuilder: $2151.LocationSet.create)
-    ..aOM<$2151.BusinessProfileLocationGroup>(8, _omitFieldNames ? '' : 'businessProfileLocationGroup', subBuilder: $2151.BusinessProfileLocationGroup.create)
-    ..aOM<$2151.ChainLocationGroup>(9, _omitFieldNames ? '' : 'chainLocationGroup', subBuilder: $2151.ChainLocationGroup.create)
+    ..aOM<$2152.LocationSet>(7, _omitFieldNames ? '' : 'locationSet', subBuilder: $2152.LocationSet.create)
+    ..aOM<$2152.BusinessProfileLocationGroup>(8, _omitFieldNames ? '' : 'businessProfileLocationGroup', subBuilder: $2152.BusinessProfileLocationGroup.create)
+    ..aOM<$2152.ChainLocationGroup>(9, _omitFieldNames ? '' : 'chainLocationGroup', subBuilder: $2152.ChainLocationGroup.create)
     ..aInt64(10, _omitFieldNames ? '' : 'locationGroupParentAssetSetId')
     ..aOM<AssetSet_HotelPropertyData>(11, _omitFieldNames ? '' : 'hotelPropertyData', subBuilder: AssetSet_HotelPropertyData.create)
     ..hasRequiredFields = false
@@ -288,9 +288,9 @@ class AssetSet extends $pb.GeneratedMessage {
 
   /// Required. Immutable. The type of the asset set. Required.
   @$pb.TagNumber(3)
-  $2114.AssetSetTypeEnum_AssetSetType get type => $_getN(2);
+  $2115.AssetSetTypeEnum_AssetSetType get type => $_getN(2);
   @$pb.TagNumber(3)
-  set type($2114.AssetSetTypeEnum_AssetSetType v) { setField(3, v); }
+  set type($2115.AssetSetTypeEnum_AssetSetType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)
@@ -298,9 +298,9 @@ class AssetSet extends $pb.GeneratedMessage {
 
   /// Output only. The status of the asset set. Read-only.
   @$pb.TagNumber(4)
-  $2152.AssetSetStatusEnum_AssetSetStatus get status => $_getN(3);
+  $2153.AssetSetStatusEnum_AssetSetStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($2152.AssetSetStatusEnum_AssetSetStatus v) { setField(4, v); }
+  set status($2153.AssetSetStatusEnum_AssetSetStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -331,41 +331,41 @@ class AssetSet extends $pb.GeneratedMessage {
   /// Location asset set data. This will be used for sync level location
   /// set. This can only be set if AssetSet's type is LOCATION_SYNC.
   @$pb.TagNumber(7)
-  $2151.LocationSet get locationSet => $_getN(6);
+  $2152.LocationSet get locationSet => $_getN(6);
   @$pb.TagNumber(7)
-  set locationSet($2151.LocationSet v) { setField(7, v); }
+  set locationSet($2152.LocationSet v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLocationSet() => $_has(6);
   @$pb.TagNumber(7)
   void clearLocationSet() => clearField(7);
   @$pb.TagNumber(7)
-  $2151.LocationSet ensureLocationSet() => $_ensure(6);
+  $2152.LocationSet ensureLocationSet() => $_ensure(6);
 
   /// Business Profile location group asset set data.
   @$pb.TagNumber(8)
-  $2151.BusinessProfileLocationGroup get businessProfileLocationGroup => $_getN(7);
+  $2152.BusinessProfileLocationGroup get businessProfileLocationGroup => $_getN(7);
   @$pb.TagNumber(8)
-  set businessProfileLocationGroup($2151.BusinessProfileLocationGroup v) { setField(8, v); }
+  set businessProfileLocationGroup($2152.BusinessProfileLocationGroup v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasBusinessProfileLocationGroup() => $_has(7);
   @$pb.TagNumber(8)
   void clearBusinessProfileLocationGroup() => clearField(8);
   @$pb.TagNumber(8)
-  $2151.BusinessProfileLocationGroup ensureBusinessProfileLocationGroup() => $_ensure(7);
+  $2152.BusinessProfileLocationGroup ensureBusinessProfileLocationGroup() => $_ensure(7);
 
   /// Represents information about a Chain dynamic location group.
   /// Only applicable if the sync level AssetSet's type is LOCATION_SYNC and
   /// sync source is chain.
   @$pb.TagNumber(9)
-  $2151.ChainLocationGroup get chainLocationGroup => $_getN(8);
+  $2152.ChainLocationGroup get chainLocationGroup => $_getN(8);
   @$pb.TagNumber(9)
-  set chainLocationGroup($2151.ChainLocationGroup v) { setField(9, v); }
+  set chainLocationGroup($2152.ChainLocationGroup v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasChainLocationGroup() => $_has(8);
   @$pb.TagNumber(9)
   void clearChainLocationGroup() => clearField(9);
   @$pb.TagNumber(9)
-  $2151.ChainLocationGroup ensureChainLocationGroup() => $_ensure(8);
+  $2152.ChainLocationGroup ensureChainLocationGroup() => $_ensure(8);
 
   /// Immutable. Parent asset set id for the asset set where the elements of this
   /// asset set come from. For example: the sync level location AssetSet id where

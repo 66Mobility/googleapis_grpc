@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -27,7 +27,7 @@ class Secret extends $pb.GeneratedMessage {
   factory Secret({
     $core.String? name,
     Replication? replication,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -52,7 +52,7 @@ class Secret extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Secret', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.secrets.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Replication>(2, _omitFieldNames ? '' : 'replication', subBuilder: Replication.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Secret.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.secrets.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -104,15 +104,15 @@ class Secret extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the [Secret][google.cloud.secrets.v1beta1.Secret] was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   ///  The labels assigned to this Secret.
   ///
@@ -133,8 +133,8 @@ class Secret extends $pb.GeneratedMessage {
 class SecretVersion extends $pb.GeneratedMessage {
   factory SecretVersion({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? destroyTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? destroyTime,
     SecretVersion_State? state,
   }) {
     final $result = create();
@@ -158,8 +158,8 @@ class SecretVersion extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SecretVersion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.secrets.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'destroyTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'destroyTime', subBuilder: $1776.Timestamp.create)
     ..e<SecretVersion_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: SecretVersion_State.STATE_UNSPECIFIED, valueOf: SecretVersion_State.valueOf, enumValues: SecretVersion_State.values)
     ..hasRequiredFields = false
   ;
@@ -201,29 +201,29 @@ class SecretVersion extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the [SecretVersion][google.cloud.secrets.v1beta1.SecretVersion] was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time this [SecretVersion][google.cloud.secrets.v1beta1.SecretVersion] was destroyed.
   /// Only present if [state][google.cloud.secrets.v1beta1.SecretVersion.state] is
   /// [DESTROYED][google.cloud.secrets.v1beta1.SecretVersion.State.DESTROYED].
   @$pb.TagNumber(3)
-  $1775.Timestamp get destroyTime => $_getN(2);
+  $1776.Timestamp get destroyTime => $_getN(2);
   @$pb.TagNumber(3)
-  set destroyTime($1775.Timestamp v) { setField(3, v); }
+  set destroyTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDestroyTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDestroyTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureDestroyTime() => $_ensure(2);
+  $1776.Timestamp ensureDestroyTime() => $_ensure(2);
 
   /// Output only. The current state of the [SecretVersion][google.cloud.secrets.v1beta1.SecretVersion].
   @$pb.TagNumber(4)

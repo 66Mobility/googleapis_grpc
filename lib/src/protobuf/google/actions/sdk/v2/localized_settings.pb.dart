@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'theme_customization.pb.dart' as $1759;
+import 'theme_customization.pb.dart' as $1760;
 
 /// Represents settings of an Actions project that are specific to a user locale.
 /// In this instance, user means the end user who invokes your Actions.
@@ -32,7 +32,7 @@ class LocalizedSettings extends $pb.GeneratedMessage {
     $core.String? voice,
     $core.String? privacyPolicyUrl,
     $core.Iterable<$core.String>? sampleInvocations,
-    $1759.ThemeCustomization? themeCustomization,
+    $1760.ThemeCustomization? themeCustomization,
     $core.String? voiceLocale,
   }) {
     final $result = create();
@@ -97,7 +97,7 @@ class LocalizedSettings extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'voice')
     ..aOS(11, _omitFieldNames ? '' : 'privacyPolicyUrl')
     ..pPS(12, _omitFieldNames ? '' : 'sampleInvocations')
-    ..aOM<$1759.ThemeCustomization>(13, _omitFieldNames ? '' : 'themeCustomization', subBuilder: $1759.ThemeCustomization.create)
+    ..aOM<$1760.ThemeCustomization>(13, _omitFieldNames ? '' : 'themeCustomization', subBuilder: $1760.ThemeCustomization.create)
     ..aOS(14, _omitFieldNames ? '' : 'voiceLocale')
     ..hasRequiredFields = false
   ;
@@ -257,15 +257,15 @@ class LocalizedSettings extends $pb.GeneratedMessage {
 
   /// Optional. Theme customizations for visual components of your Actions.
   @$pb.TagNumber(13)
-  $1759.ThemeCustomization get themeCustomization => $_getN(12);
+  $1760.ThemeCustomization get themeCustomization => $_getN(12);
   @$pb.TagNumber(13)
-  set themeCustomization($1759.ThemeCustomization v) { setField(13, v); }
+  set themeCustomization($1760.ThemeCustomization v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasThemeCustomization() => $_has(12);
   @$pb.TagNumber(13)
   void clearThemeCustomization() => clearField(13);
   @$pb.TagNumber(13)
-  $1759.ThemeCustomization ensureThemeCustomization() => $_ensure(12);
+  $1760.ThemeCustomization ensureThemeCustomization() => $_ensure(12);
 
   /// Optional. The locale for the specified voice. If not specified, this resolves
   /// to the user's Assistant locale. If specified, the voice locale must have

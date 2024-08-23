@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'asset_service.pbenum.dart';
-import 'assets.pb.dart' as $4328;
+import 'assets.pb.dart' as $4329;
 
 export 'asset_service.pbenum.dart';
 
@@ -23,7 +23,7 @@ export 'asset_service.pbenum.dart';
 class ListAssetsRequest extends $pb.GeneratedMessage {
   factory ListAssetsRequest({
     $core.String? parent,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
     $core.Iterable<$core.String>? assetTypes,
     ContentType? contentType,
     $core.int? pageSize,
@@ -56,7 +56,7 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAssetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p5beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..pPS(3, _omitFieldNames ? '' : 'assetTypes')
     ..e<ContentType>(4, _omitFieldNames ? '' : 'contentType', $pb.PbFieldType.OE, defaultOrMaker: ContentType.CONTENT_TYPE_UNSPECIFIED, valueOf: ContentType.valueOf, enumValues: ContentType.values)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
@@ -104,15 +104,15 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
   /// data collection and indexing, there is a volatile window during which
   /// running the same query may get different results.
   @$pb.TagNumber(2)
-  $1775.Timestamp get readTime => $_getN(1);
+  $1776.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($1775.Timestamp v) { setField(2, v); }
+  set readTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReadTime() => $_ensure(1);
+  $1776.Timestamp ensureReadTime() => $_ensure(1);
 
   ///  A list of asset types to take a snapshot for. For example:
   ///  "compute.googleapis.com/Disk".
@@ -173,8 +173,8 @@ class ListAssetsRequest extends $pb.GeneratedMessage {
 /// ListAssets response.
 class ListAssetsResponse extends $pb.GeneratedMessage {
   factory ListAssetsResponse({
-    $1775.Timestamp? readTime,
-    $core.Iterable<$4328.Asset>? assets,
+    $1776.Timestamp? readTime,
+    $core.Iterable<$4329.Asset>? assets,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -194,8 +194,8 @@ class ListAssetsResponse extends $pb.GeneratedMessage {
   factory ListAssetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p5beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$4328.Asset>(2, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4328.Asset.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$4329.Asset>(2, _omitFieldNames ? '' : 'assets', $pb.PbFieldType.PM, subBuilder: $4329.Asset.create)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -223,19 +223,19 @@ class ListAssetsResponse extends $pb.GeneratedMessage {
 
   /// Time the snapshot was taken.
   @$pb.TagNumber(1)
-  $1775.Timestamp get readTime => $_getN(0);
+  $1776.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(1)
-  set readTime($1775.Timestamp v) { setField(1, v); }
+  set readTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReadTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReadTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReadTime() => $_ensure(0);
+  $1776.Timestamp ensureReadTime() => $_ensure(0);
 
   /// Assets.
   @$pb.TagNumber(2)
-  $core.List<$4328.Asset> get assets => $_getList(1);
+  $core.List<$4329.Asset> get assets => $_getList(1);
 
   /// Token to retrieve the next page of results. It expires 72 hours after the
   /// page token for the first page is generated. Set to empty if there are no

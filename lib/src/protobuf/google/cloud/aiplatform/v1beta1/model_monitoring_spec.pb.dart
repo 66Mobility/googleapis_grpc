@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/interval.pb.dart' as $4256;
-import 'explanation.pb.dart' as $4285;
-import 'io.pb.dart' as $4277;
-import 'machine_resources.pb.dart' as $4287;
-import 'model_monitoring_alert.pb.dart' as $4305;
+import '../../../type/interval.pb.dart' as $4257;
+import 'explanation.pb.dart' as $4286;
+import 'io.pb.dart' as $4278;
+import 'machine_resources.pb.dart' as $4288;
+import 'model_monitoring_alert.pb.dart' as $4306;
 import 'model_monitoring_spec.pbenum.dart';
 
 export 'model_monitoring_spec.pbenum.dart';
@@ -122,9 +122,9 @@ class ModelMonitoringObjectiveSpec_DataDriftSpec extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? features,
     $core.String? categoricalMetricType,
     $core.String? numericMetricType,
-    $4305.ModelMonitoringAlertCondition? defaultCategoricalAlertCondition,
-    $4305.ModelMonitoringAlertCondition? defaultNumericAlertCondition,
-    $core.Map<$core.String, $4305.ModelMonitoringAlertCondition>? featureAlertConditions,
+    $4306.ModelMonitoringAlertCondition? defaultCategoricalAlertCondition,
+    $4306.ModelMonitoringAlertCondition? defaultNumericAlertCondition,
+    $core.Map<$core.String, $4306.ModelMonitoringAlertCondition>? featureAlertConditions,
   }) {
     final $result = create();
     if (features != null) {
@@ -155,9 +155,9 @@ class ModelMonitoringObjectiveSpec_DataDriftSpec extends $pb.GeneratedMessage {
     ..pPS(1, _omitFieldNames ? '' : 'features')
     ..aOS(2, _omitFieldNames ? '' : 'categoricalMetricType')
     ..aOS(3, _omitFieldNames ? '' : 'numericMetricType')
-    ..aOM<$4305.ModelMonitoringAlertCondition>(4, _omitFieldNames ? '' : 'defaultCategoricalAlertCondition', subBuilder: $4305.ModelMonitoringAlertCondition.create)
-    ..aOM<$4305.ModelMonitoringAlertCondition>(5, _omitFieldNames ? '' : 'defaultNumericAlertCondition', subBuilder: $4305.ModelMonitoringAlertCondition.create)
-    ..m<$core.String, $4305.ModelMonitoringAlertCondition>(6, _omitFieldNames ? '' : 'featureAlertConditions', entryClassName: 'ModelMonitoringObjectiveSpec.DataDriftSpec.FeatureAlertConditionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4305.ModelMonitoringAlertCondition.create, valueDefaultOrMaker: $4305.ModelMonitoringAlertCondition.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
+    ..aOM<$4306.ModelMonitoringAlertCondition>(4, _omitFieldNames ? '' : 'defaultCategoricalAlertCondition', subBuilder: $4306.ModelMonitoringAlertCondition.create)
+    ..aOM<$4306.ModelMonitoringAlertCondition>(5, _omitFieldNames ? '' : 'defaultNumericAlertCondition', subBuilder: $4306.ModelMonitoringAlertCondition.create)
+    ..m<$core.String, $4306.ModelMonitoringAlertCondition>(6, _omitFieldNames ? '' : 'featureAlertConditions', entryClassName: 'ModelMonitoringObjectiveSpec.DataDriftSpec.FeatureAlertConditionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4306.ModelMonitoringAlertCondition.create, valueDefaultOrMaker: $4306.ModelMonitoringAlertCondition.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..hasRequiredFields = false
   ;
 
@@ -215,40 +215,40 @@ class ModelMonitoringObjectiveSpec_DataDriftSpec extends $pb.GeneratedMessage {
 
   /// Default alert condition for all the categorical features.
   @$pb.TagNumber(4)
-  $4305.ModelMonitoringAlertCondition get defaultCategoricalAlertCondition => $_getN(3);
+  $4306.ModelMonitoringAlertCondition get defaultCategoricalAlertCondition => $_getN(3);
   @$pb.TagNumber(4)
-  set defaultCategoricalAlertCondition($4305.ModelMonitoringAlertCondition v) { setField(4, v); }
+  set defaultCategoricalAlertCondition($4306.ModelMonitoringAlertCondition v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDefaultCategoricalAlertCondition() => $_has(3);
   @$pb.TagNumber(4)
   void clearDefaultCategoricalAlertCondition() => clearField(4);
   @$pb.TagNumber(4)
-  $4305.ModelMonitoringAlertCondition ensureDefaultCategoricalAlertCondition() => $_ensure(3);
+  $4306.ModelMonitoringAlertCondition ensureDefaultCategoricalAlertCondition() => $_ensure(3);
 
   /// Default alert condition for all the numeric features.
   @$pb.TagNumber(5)
-  $4305.ModelMonitoringAlertCondition get defaultNumericAlertCondition => $_getN(4);
+  $4306.ModelMonitoringAlertCondition get defaultNumericAlertCondition => $_getN(4);
   @$pb.TagNumber(5)
-  set defaultNumericAlertCondition($4305.ModelMonitoringAlertCondition v) { setField(5, v); }
+  set defaultNumericAlertCondition($4306.ModelMonitoringAlertCondition v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDefaultNumericAlertCondition() => $_has(4);
   @$pb.TagNumber(5)
   void clearDefaultNumericAlertCondition() => clearField(5);
   @$pb.TagNumber(5)
-  $4305.ModelMonitoringAlertCondition ensureDefaultNumericAlertCondition() => $_ensure(4);
+  $4306.ModelMonitoringAlertCondition ensureDefaultNumericAlertCondition() => $_ensure(4);
 
   /// Per feature alert condition will override default alert condition.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $4305.ModelMonitoringAlertCondition> get featureAlertConditions => $_getMap(5);
+  $core.Map<$core.String, $4306.ModelMonitoringAlertCondition> get featureAlertConditions => $_getMap(5);
 }
 
 /// Feature attribution monitoring spec.
 class ModelMonitoringObjectiveSpec_FeatureAttributionSpec extends $pb.GeneratedMessage {
   factory ModelMonitoringObjectiveSpec_FeatureAttributionSpec({
     $core.Iterable<$core.String>? features,
-    $4305.ModelMonitoringAlertCondition? defaultAlertCondition,
-    $core.Map<$core.String, $4305.ModelMonitoringAlertCondition>? featureAlertConditions,
-    $4287.BatchDedicatedResources? batchExplanationDedicatedResources,
+    $4306.ModelMonitoringAlertCondition? defaultAlertCondition,
+    $core.Map<$core.String, $4306.ModelMonitoringAlertCondition>? featureAlertConditions,
+    $4288.BatchDedicatedResources? batchExplanationDedicatedResources,
   }) {
     final $result = create();
     if (features != null) {
@@ -271,9 +271,9 @@ class ModelMonitoringObjectiveSpec_FeatureAttributionSpec extends $pb.GeneratedM
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringObjectiveSpec.FeatureAttributionSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'features')
-    ..aOM<$4305.ModelMonitoringAlertCondition>(2, _omitFieldNames ? '' : 'defaultAlertCondition', subBuilder: $4305.ModelMonitoringAlertCondition.create)
-    ..m<$core.String, $4305.ModelMonitoringAlertCondition>(3, _omitFieldNames ? '' : 'featureAlertConditions', entryClassName: 'ModelMonitoringObjectiveSpec.FeatureAttributionSpec.FeatureAlertConditionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4305.ModelMonitoringAlertCondition.create, valueDefaultOrMaker: $4305.ModelMonitoringAlertCondition.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$4287.BatchDedicatedResources>(4, _omitFieldNames ? '' : 'batchExplanationDedicatedResources', subBuilder: $4287.BatchDedicatedResources.create)
+    ..aOM<$4306.ModelMonitoringAlertCondition>(2, _omitFieldNames ? '' : 'defaultAlertCondition', subBuilder: $4306.ModelMonitoringAlertCondition.create)
+    ..m<$core.String, $4306.ModelMonitoringAlertCondition>(3, _omitFieldNames ? '' : 'featureAlertConditions', entryClassName: 'ModelMonitoringObjectiveSpec.FeatureAttributionSpec.FeatureAlertConditionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4306.ModelMonitoringAlertCondition.create, valueDefaultOrMaker: $4306.ModelMonitoringAlertCondition.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
+    ..aOM<$4288.BatchDedicatedResources>(4, _omitFieldNames ? '' : 'batchExplanationDedicatedResources', subBuilder: $4288.BatchDedicatedResources.create)
     ..hasRequiredFields = false
   ;
 
@@ -307,33 +307,33 @@ class ModelMonitoringObjectiveSpec_FeatureAttributionSpec extends $pb.GeneratedM
 
   /// Default alert condition for all the features.
   @$pb.TagNumber(2)
-  $4305.ModelMonitoringAlertCondition get defaultAlertCondition => $_getN(1);
+  $4306.ModelMonitoringAlertCondition get defaultAlertCondition => $_getN(1);
   @$pb.TagNumber(2)
-  set defaultAlertCondition($4305.ModelMonitoringAlertCondition v) { setField(2, v); }
+  set defaultAlertCondition($4306.ModelMonitoringAlertCondition v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDefaultAlertCondition() => $_has(1);
   @$pb.TagNumber(2)
   void clearDefaultAlertCondition() => clearField(2);
   @$pb.TagNumber(2)
-  $4305.ModelMonitoringAlertCondition ensureDefaultAlertCondition() => $_ensure(1);
+  $4306.ModelMonitoringAlertCondition ensureDefaultAlertCondition() => $_ensure(1);
 
   /// Per feature alert condition will override default alert condition.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $4305.ModelMonitoringAlertCondition> get featureAlertConditions => $_getMap(2);
+  $core.Map<$core.String, $4306.ModelMonitoringAlertCondition> get featureAlertConditions => $_getMap(2);
 
   /// The config of resources used by the Model Monitoring during the batch
   /// explanation for non-AutoML models. If not set, `n1-standard-2` machine
   /// type will be used by default.
   @$pb.TagNumber(4)
-  $4287.BatchDedicatedResources get batchExplanationDedicatedResources => $_getN(3);
+  $4288.BatchDedicatedResources get batchExplanationDedicatedResources => $_getN(3);
   @$pb.TagNumber(4)
-  set batchExplanationDedicatedResources($4287.BatchDedicatedResources v) { setField(4, v); }
+  set batchExplanationDedicatedResources($4288.BatchDedicatedResources v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBatchExplanationDedicatedResources() => $_has(3);
   @$pb.TagNumber(4)
   void clearBatchExplanationDedicatedResources() => clearField(4);
   @$pb.TagNumber(4)
-  $4287.BatchDedicatedResources ensureBatchExplanationDedicatedResources() => $_ensure(3);
+  $4288.BatchDedicatedResources ensureBatchExplanationDedicatedResources() => $_ensure(3);
 }
 
 /// Tabular monitoring objective.
@@ -433,7 +433,7 @@ enum ModelMonitoringObjectiveSpec_Objective {
 class ModelMonitoringObjectiveSpec extends $pb.GeneratedMessage {
   factory ModelMonitoringObjectiveSpec({
     ModelMonitoringObjectiveSpec_TabularObjective? tabularObjective,
-    $4285.ExplanationSpec? explanationSpec,
+    $4286.ExplanationSpec? explanationSpec,
     ModelMonitoringInput? baselineDataset,
     ModelMonitoringInput? targetDataset,
   }) {
@@ -463,7 +463,7 @@ class ModelMonitoringObjectiveSpec extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringObjectiveSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [1])
     ..aOM<ModelMonitoringObjectiveSpec_TabularObjective>(1, _omitFieldNames ? '' : 'tabularObjective', subBuilder: ModelMonitoringObjectiveSpec_TabularObjective.create)
-    ..aOM<$4285.ExplanationSpec>(3, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4285.ExplanationSpec.create)
+    ..aOM<$4286.ExplanationSpec>(3, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4286.ExplanationSpec.create)
     ..aOM<ModelMonitoringInput>(4, _omitFieldNames ? '' : 'baselineDataset', subBuilder: ModelMonitoringInput.create)
     ..aOM<ModelMonitoringInput>(5, _omitFieldNames ? '' : 'targetDataset', subBuilder: ModelMonitoringInput.create)
     ..hasRequiredFields = false
@@ -509,15 +509,15 @@ class ModelMonitoringObjectiveSpec extends $pb.GeneratedMessage {
   /// This spec is required when the objectives spec includes feature attribution
   /// objectives.
   @$pb.TagNumber(3)
-  $4285.ExplanationSpec get explanationSpec => $_getN(1);
+  $4286.ExplanationSpec get explanationSpec => $_getN(1);
   @$pb.TagNumber(3)
-  set explanationSpec($4285.ExplanationSpec v) { setField(3, v); }
+  set explanationSpec($4286.ExplanationSpec v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExplanationSpec() => $_has(1);
   @$pb.TagNumber(3)
   void clearExplanationSpec() => clearField(3);
   @$pb.TagNumber(3)
-  $4285.ExplanationSpec ensureExplanationSpec() => $_ensure(1);
+  $4286.ExplanationSpec ensureExplanationSpec() => $_ensure(1);
 
   /// Baseline dataset.
   /// It could be the training dataset or production serving dataset from a
@@ -550,7 +550,7 @@ class ModelMonitoringObjectiveSpec extends $pb.GeneratedMessage {
 /// metrics, logs, etc.
 class ModelMonitoringOutputSpec extends $pb.GeneratedMessage {
   factory ModelMonitoringOutputSpec({
-    $4277.GcsDestination? gcsBaseDirectory,
+    $4278.GcsDestination? gcsBaseDirectory,
   }) {
     final $result = create();
     if (gcsBaseDirectory != null) {
@@ -563,7 +563,7 @@ class ModelMonitoringOutputSpec extends $pb.GeneratedMessage {
   factory ModelMonitoringOutputSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringOutputSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4277.GcsDestination>(1, _omitFieldNames ? '' : 'gcsBaseDirectory', subBuilder: $4277.GcsDestination.create)
+    ..aOM<$4278.GcsDestination>(1, _omitFieldNames ? '' : 'gcsBaseDirectory', subBuilder: $4278.GcsDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -590,15 +590,15 @@ class ModelMonitoringOutputSpec extends $pb.GeneratedMessage {
 
   /// Google Cloud Storage base folder path for metrics, error logs, etc.
   @$pb.TagNumber(1)
-  $4277.GcsDestination get gcsBaseDirectory => $_getN(0);
+  $4278.GcsDestination get gcsBaseDirectory => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsBaseDirectory($4277.GcsDestination v) { setField(1, v); }
+  set gcsBaseDirectory($4278.GcsDestination v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGcsBaseDirectory() => $_has(0);
   @$pb.TagNumber(1)
   void clearGcsBaseDirectory() => clearField(1);
   @$pb.TagNumber(1)
-  $4277.GcsDestination ensureGcsBaseDirectory() => $_ensure(0);
+  $4278.GcsDestination ensureGcsBaseDirectory() => $_ensure(0);
 }
 
 /// Dataset spec for data stored in Google Cloud Storage.
@@ -1071,7 +1071,7 @@ class ModelMonitoringInput extends $pb.GeneratedMessage {
     ModelMonitoringInput_ModelMonitoringDataset? columnizedDataset,
     ModelMonitoringInput_BatchPredictionOutput? batchPredictionOutput,
     ModelMonitoringInput_VertexEndpointLogs? vertexEndpointLogs,
-    $4256.Interval? timeInterval,
+    $4257.Interval? timeInterval,
     ModelMonitoringInput_TimeOffset? timeOffset,
   }) {
     final $result = create();
@@ -1113,7 +1113,7 @@ class ModelMonitoringInput extends $pb.GeneratedMessage {
     ..aOM<ModelMonitoringInput_ModelMonitoringDataset>(1, _omitFieldNames ? '' : 'columnizedDataset', subBuilder: ModelMonitoringInput_ModelMonitoringDataset.create)
     ..aOM<ModelMonitoringInput_BatchPredictionOutput>(2, _omitFieldNames ? '' : 'batchPredictionOutput', subBuilder: ModelMonitoringInput_BatchPredictionOutput.create)
     ..aOM<ModelMonitoringInput_VertexEndpointLogs>(3, _omitFieldNames ? '' : 'vertexEndpointLogs', subBuilder: ModelMonitoringInput_VertexEndpointLogs.create)
-    ..aOM<$4256.Interval>(6, _omitFieldNames ? '' : 'timeInterval', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(6, _omitFieldNames ? '' : 'timeInterval', subBuilder: $4257.Interval.create)
     ..aOM<ModelMonitoringInput_TimeOffset>(7, _omitFieldNames ? '' : 'timeOffset', subBuilder: ModelMonitoringInput_TimeOffset.create)
     ..hasRequiredFields = false
   ;
@@ -1184,15 +1184,15 @@ class ModelMonitoringInput extends $pb.GeneratedMessage {
   /// The time interval (pair of start_time and end_time) for which results
   /// should be returned.
   @$pb.TagNumber(6)
-  $4256.Interval get timeInterval => $_getN(3);
+  $4257.Interval get timeInterval => $_getN(3);
   @$pb.TagNumber(6)
-  set timeInterval($4256.Interval v) { setField(6, v); }
+  set timeInterval($4257.Interval v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeInterval() => $_has(3);
   @$pb.TagNumber(6)
   void clearTimeInterval() => clearField(6);
   @$pb.TagNumber(6)
-  $4256.Interval ensureTimeInterval() => $_ensure(3);
+  $4257.Interval ensureTimeInterval() => $_ensure(3);
 
   /// The time offset setting for which results should be returned.
   @$pb.TagNumber(7)

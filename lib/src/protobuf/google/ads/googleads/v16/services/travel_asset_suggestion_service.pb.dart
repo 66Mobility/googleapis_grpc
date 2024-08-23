@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_field_type.pbenum.dart' as $2818;
-import '../enums/call_to_action_type.pbenum.dart' as $2581;
-import '../enums/hotel_asset_suggestion_status.pbenum.dart' as $3235;
+import '../enums/asset_field_type.pbenum.dart' as $2819;
+import '../enums/call_to_action_type.pbenum.dart' as $2582;
+import '../enums/hotel_asset_suggestion_status.pbenum.dart' as $3236;
 
 /// Request message for
 /// [TravelAssetSuggestionService.SuggestTravelAssets][google.ads.googleads.v16.services.TravelAssetSuggestionService.SuggestTravelAssets].
@@ -151,10 +151,10 @@ class HotelAssetSuggestion extends $pb.GeneratedMessage {
     $core.String? placeId,
     $core.String? finalUrl,
     $core.String? hotelName,
-    $2581.CallToActionTypeEnum_CallToActionType? callToAction,
+    $2582.CallToActionTypeEnum_CallToActionType? callToAction,
     $core.Iterable<HotelTextAsset>? textAssets,
     $core.Iterable<HotelImageAsset>? imageAssets,
-    $3235.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus? status,
+    $3236.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus? status,
   }) {
     final $result = create();
     if (placeId != null) {
@@ -188,10 +188,10 @@ class HotelAssetSuggestion extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'placeId')
     ..aOS(2, _omitFieldNames ? '' : 'finalUrl')
     ..aOS(3, _omitFieldNames ? '' : 'hotelName')
-    ..e<$2581.CallToActionTypeEnum_CallToActionType>(4, _omitFieldNames ? '' : 'callToAction', $pb.PbFieldType.OE, defaultOrMaker: $2581.CallToActionTypeEnum_CallToActionType.UNSPECIFIED, valueOf: $2581.CallToActionTypeEnum_CallToActionType.valueOf, enumValues: $2581.CallToActionTypeEnum_CallToActionType.values)
+    ..e<$2582.CallToActionTypeEnum_CallToActionType>(4, _omitFieldNames ? '' : 'callToAction', $pb.PbFieldType.OE, defaultOrMaker: $2582.CallToActionTypeEnum_CallToActionType.UNSPECIFIED, valueOf: $2582.CallToActionTypeEnum_CallToActionType.valueOf, enumValues: $2582.CallToActionTypeEnum_CallToActionType.values)
     ..pc<HotelTextAsset>(5, _omitFieldNames ? '' : 'textAssets', $pb.PbFieldType.PM, subBuilder: HotelTextAsset.create)
     ..pc<HotelImageAsset>(6, _omitFieldNames ? '' : 'imageAssets', $pb.PbFieldType.PM, subBuilder: HotelImageAsset.create)
-    ..e<$3235.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3235.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus.UNSPECIFIED, valueOf: $3235.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus.valueOf, enumValues: $3235.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus.values)
+    ..e<$3236.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus>(7, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3236.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus.UNSPECIFIED, valueOf: $3236.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus.valueOf, enumValues: $3236.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -248,9 +248,9 @@ class HotelAssetSuggestion extends $pb.GeneratedMessage {
 
   /// Call to action type.
   @$pb.TagNumber(4)
-  $2581.CallToActionTypeEnum_CallToActionType get callToAction => $_getN(3);
+  $2582.CallToActionTypeEnum_CallToActionType get callToAction => $_getN(3);
   @$pb.TagNumber(4)
-  set callToAction($2581.CallToActionTypeEnum_CallToActionType v) { setField(4, v); }
+  set callToAction($2582.CallToActionTypeEnum_CallToActionType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCallToAction() => $_has(3);
   @$pb.TagNumber(4)
@@ -266,9 +266,9 @@ class HotelAssetSuggestion extends $pb.GeneratedMessage {
 
   /// The status of the hotel asset suggestion.
   @$pb.TagNumber(7)
-  $3235.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus get status => $_getN(6);
+  $3236.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus get status => $_getN(6);
   @$pb.TagNumber(7)
-  set status($3235.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus v) { setField(7, v); }
+  set status($3236.HotelAssetSuggestionStatusEnum_HotelAssetSuggestionStatus v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStatus() => $_has(6);
   @$pb.TagNumber(7)
@@ -279,7 +279,7 @@ class HotelAssetSuggestion extends $pb.GeneratedMessage {
 class HotelTextAsset extends $pb.GeneratedMessage {
   factory HotelTextAsset({
     $core.String? text,
-    $2818.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
+    $2819.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
   }) {
     final $result = create();
     if (text != null) {
@@ -296,7 +296,7 @@ class HotelTextAsset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HotelTextAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
-    ..e<$2818.AssetFieldTypeEnum_AssetFieldType>(2, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $2818.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2818.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2818.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$2819.AssetFieldTypeEnum_AssetFieldType>(2, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $2819.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2819.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2819.AssetFieldTypeEnum_AssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -333,9 +333,9 @@ class HotelTextAsset extends $pb.GeneratedMessage {
 
   /// The text asset type. For example, HEADLINE, DESCRIPTION, etc.
   @$pb.TagNumber(2)
-  $2818.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(1);
+  $2819.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(1);
   @$pb.TagNumber(2)
-  set assetFieldType($2818.AssetFieldTypeEnum_AssetFieldType v) { setField(2, v); }
+  set assetFieldType($2819.AssetFieldTypeEnum_AssetFieldType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAssetFieldType() => $_has(1);
   @$pb.TagNumber(2)
@@ -346,7 +346,7 @@ class HotelTextAsset extends $pb.GeneratedMessage {
 class HotelImageAsset extends $pb.GeneratedMessage {
   factory HotelImageAsset({
     $core.String? uri,
-    $2818.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
+    $2819.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
   }) {
     final $result = create();
     if (uri != null) {
@@ -363,7 +363,7 @@ class HotelImageAsset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HotelImageAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uri')
-    ..e<$2818.AssetFieldTypeEnum_AssetFieldType>(2, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $2818.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2818.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2818.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$2819.AssetFieldTypeEnum_AssetFieldType>(2, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $2819.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2819.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2819.AssetFieldTypeEnum_AssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -401,9 +401,9 @@ class HotelImageAsset extends $pb.GeneratedMessage {
   /// The Image asset type. For example, MARKETING_IMAGE,
   /// PORTRAIT_MARKETING_IMAGE, etc.
   @$pb.TagNumber(2)
-  $2818.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(1);
+  $2819.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(1);
   @$pb.TagNumber(2)
-  set assetFieldType($2818.AssetFieldTypeEnum_AssetFieldType v) { setField(2, v); }
+  set assetFieldType($2819.AssetFieldTypeEnum_AssetFieldType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAssetFieldType() => $_has(1);
   @$pb.TagNumber(2)

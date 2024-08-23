@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'resources.pb.dart' as $1111;
 
 /// Request for ListClusters.
@@ -380,7 +380,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
 /// Request for UpdateCluster.
 class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1111.Cluster? cluster,
     $core.String? requestId,
   }) {
@@ -401,7 +401,7 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.managedkafka.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1111.Cluster>(2, _omitFieldNames ? '' : 'cluster', subBuilder: $1111.Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -434,15 +434,15 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   /// if it is in the mask. The mask is required and a value of * will update all
   /// fields.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The cluster to update. Its `name` field must be populated.
   @$pb.TagNumber(2)
@@ -859,7 +859,7 @@ class CreateTopicRequest extends $pb.GeneratedMessage {
 /// Request for UpdateTopic.
 class UpdateTopicRequest extends $pb.GeneratedMessage {
   factory UpdateTopicRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1111.Topic? topic,
   }) {
     final $result = create();
@@ -876,7 +876,7 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
   factory UpdateTopicRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTopicRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.managedkafka.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1111.Topic>(2, _omitFieldNames ? '' : 'topic', subBuilder: $1111.Topic.create)
     ..hasRequiredFields = false
   ;
@@ -908,15 +908,15 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
   /// if it is in the mask. The mask is required and a value of * will update all
   /// fields.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The topic to update. Its `name` field must be populated.
   @$pb.TagNumber(2)
@@ -1193,7 +1193,7 @@ class GetConsumerGroupRequest extends $pb.GeneratedMessage {
 /// Request for UpdateConsumerGroup.
 class UpdateConsumerGroupRequest extends $pb.GeneratedMessage {
   factory UpdateConsumerGroupRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1111.ConsumerGroup? consumerGroup,
   }) {
     final $result = create();
@@ -1210,7 +1210,7 @@ class UpdateConsumerGroupRequest extends $pb.GeneratedMessage {
   factory UpdateConsumerGroupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConsumerGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.managedkafka.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1111.ConsumerGroup>(2, _omitFieldNames ? '' : 'consumerGroup', subBuilder: $1111.ConsumerGroup.create)
     ..hasRequiredFields = false
   ;
@@ -1242,15 +1242,15 @@ class UpdateConsumerGroupRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. The
   /// mask is required and a value of * will update all fields.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The consumer group to update. Its `name` field must be populated.
   @$pb.TagNumber(2)

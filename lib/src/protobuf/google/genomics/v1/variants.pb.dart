@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $2209;
-import '../../protobuf/struct.pb.dart' as $1734;
+import '../../protobuf/field_mask.pb.dart' as $2210;
+import '../../protobuf/struct.pb.dart' as $1735;
 import 'variants.pbenum.dart';
 
 export 'variants.pbenum.dart';
@@ -28,7 +28,7 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   factory VariantSetMetadata({
     $core.String? key,
     $core.String? value,
-    $core.Map<$core.String, $1734.ListValue>? info,
+    $core.Map<$core.String, $1735.ListValue>? info,
     $core.String? id,
     VariantSetMetadata_Type? type,
     $core.String? description,
@@ -65,7 +65,7 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VariantSetMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..m<$core.String, $1734.ListValue>(3, _omitFieldNames ? '' : 'info', entryClassName: 'VariantSetMetadata.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.ListValue.create, valueDefaultOrMaker: $1734.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..m<$core.String, $1735.ListValue>(3, _omitFieldNames ? '' : 'info', entryClassName: 'VariantSetMetadata.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.ListValue.create, valueDefaultOrMaker: $1735.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
     ..aOS(4, _omitFieldNames ? '' : 'id')
     ..e<VariantSetMetadata_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: VariantSetMetadata_Type.TYPE_UNSPECIFIED, valueOf: VariantSetMetadata_Type.valueOf, enumValues: VariantSetMetadata_Type.values)
     ..aOS(7, _omitFieldNames ? '' : 'description')
@@ -117,7 +117,7 @@ class VariantSetMetadata extends $pb.GeneratedMessage {
   /// Remaining structured metadata key-value pairs. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $1734.ListValue> get info => $_getMap(2);
+  $core.Map<$core.String, $1735.ListValue> get info => $_getMap(2);
 
   /// User-provided ID field, not enforced by this API.
   /// Two or more pieces of structured metadata with identical
@@ -328,7 +328,7 @@ class Variant extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? alternateBases,
     $core.double? quality,
     $core.Iterable<$core.String>? filter,
-    $core.Map<$core.String, $1734.ListValue>? info,
+    $core.Map<$core.String, $1735.ListValue>? info,
     $core.Iterable<VariantCall>? calls,
     $fixnum.Int64? created,
     $fixnum.Int64? end,
@@ -389,7 +389,7 @@ class Variant extends $pb.GeneratedMessage {
     ..pPS(7, _omitFieldNames ? '' : 'alternateBases')
     ..a<$core.double>(8, _omitFieldNames ? '' : 'quality', $pb.PbFieldType.OD)
     ..pPS(9, _omitFieldNames ? '' : 'filter')
-    ..m<$core.String, $1734.ListValue>(10, _omitFieldNames ? '' : 'info', entryClassName: 'Variant.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.ListValue.create, valueDefaultOrMaker: $1734.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..m<$core.String, $1735.ListValue>(10, _omitFieldNames ? '' : 'info', entryClassName: 'Variant.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.ListValue.create, valueDefaultOrMaker: $1735.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
     ..pc<VariantCall>(11, _omitFieldNames ? '' : 'calls', $pb.PbFieldType.PM, subBuilder: VariantCall.create)
     ..aInt64(12, _omitFieldNames ? '' : 'created')
     ..aInt64(13, _omitFieldNames ? '' : 'end')
@@ -468,7 +468,7 @@ class Variant extends $pb.GeneratedMessage {
   /// A map of additional variant information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $1734.ListValue> get info => $_getMap(6);
+  $core.Map<$core.String, $1735.ListValue> get info => $_getMap(6);
 
   /// The variant calls for this particular variant. Each one represents the
   /// determination of genotype with respect to this variant.
@@ -537,7 +537,7 @@ class Variant extends $pb.GeneratedMessage {
 /// a SNP named rs1234 in a call set with the name NA12345.
 class VariantCall extends $pb.GeneratedMessage {
   factory VariantCall({
-    $core.Map<$core.String, $1734.ListValue>? info,
+    $core.Map<$core.String, $1735.ListValue>? info,
     $core.String? phaseset,
     $core.Iterable<$core.double>? genotypeLikelihood,
     $core.Iterable<$core.int>? genotype,
@@ -570,7 +570,7 @@ class VariantCall extends $pb.GeneratedMessage {
   factory VariantCall.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VariantCall', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..m<$core.String, $1734.ListValue>(2, _omitFieldNames ? '' : 'info', entryClassName: 'VariantCall.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.ListValue.create, valueDefaultOrMaker: $1734.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..m<$core.String, $1735.ListValue>(2, _omitFieldNames ? '' : 'info', entryClassName: 'VariantCall.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.ListValue.create, valueDefaultOrMaker: $1735.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'phaseset')
     ..p<$core.double>(6, _omitFieldNames ? '' : 'genotypeLikelihood', $pb.PbFieldType.KD)
     ..p<$core.int>(7, _omitFieldNames ? '' : 'genotype', $pb.PbFieldType.K3)
@@ -603,7 +603,7 @@ class VariantCall extends $pb.GeneratedMessage {
   /// A map of additional variant call information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1734.ListValue> get info => $_getMap(0);
+  $core.Map<$core.String, $1735.ListValue> get info => $_getMap(0);
 
   /// If this field is present, this variant call's genotype ordering implies
   /// the phase of the bases and is consistent with any other variant calls in
@@ -673,7 +673,7 @@ class CallSet extends $pb.GeneratedMessage {
   factory CallSet({
     $core.String? id,
     $core.String? name,
-    $core.Map<$core.String, $1734.ListValue>? info,
+    $core.Map<$core.String, $1735.ListValue>? info,
     $fixnum.Int64? created,
     $core.Iterable<$core.String>? variantSetIds,
     $core.String? sampleId,
@@ -706,7 +706,7 @@ class CallSet extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CallSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..m<$core.String, $1734.ListValue>(4, _omitFieldNames ? '' : 'info', entryClassName: 'CallSet.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.ListValue.create, valueDefaultOrMaker: $1734.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..m<$core.String, $1735.ListValue>(4, _omitFieldNames ? '' : 'info', entryClassName: 'CallSet.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.ListValue.create, valueDefaultOrMaker: $1735.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
     ..aInt64(5, _omitFieldNames ? '' : 'created')
     ..pPS(6, _omitFieldNames ? '' : 'variantSetIds')
     ..aOS(7, _omitFieldNames ? '' : 'sampleId')
@@ -757,7 +757,7 @@ class CallSet extends $pb.GeneratedMessage {
   /// A map of additional call set information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $1734.ListValue> get info => $_getMap(2);
+  $core.Map<$core.String, $1735.ListValue> get info => $_getMap(2);
 
   /// The date this call set was created in milliseconds from the epoch.
   @$pb.TagNumber(5)
@@ -1449,7 +1449,7 @@ class UpdateVariantSetRequest extends $pb.GeneratedMessage {
   factory UpdateVariantSetRequest({
     $core.String? variantSetId,
     VariantSet? variantSet,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (variantSetId != null) {
@@ -1470,7 +1470,7 @@ class UpdateVariantSetRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVariantSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantSetId')
     ..aOM<VariantSet>(2, _omitFieldNames ? '' : 'variantSet', subBuilder: VariantSet.create)
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1527,15 +1527,15 @@ class UpdateVariantSetRequest extends $pb.GeneratedMessage {
   ///  Leaving `updateMask` unset is equivalent to specifying all mutable
   ///  fields.
   @$pb.TagNumber(5)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(5)
-  set updateMask($2209.FieldMask v) { setField(5, v); }
+  set updateMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(5)
   void clearUpdateMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The variant search request.
@@ -1830,7 +1830,7 @@ class UpdateVariantRequest extends $pb.GeneratedMessage {
   factory UpdateVariantRequest({
     $core.String? variantId,
     Variant? variant,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (variantId != null) {
@@ -1851,7 +1851,7 @@ class UpdateVariantRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVariantRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'variantId')
     ..aOM<Variant>(2, _omitFieldNames ? '' : 'variant', subBuilder: Variant.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1903,15 +1903,15 @@ class UpdateVariantRequest extends $pb.GeneratedMessage {
   /// [info][google.genomics.v1.Variant.info]. Acceptable values are "names" and
   /// "info". If unspecified, all mutable fields will be updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteVariantRequest extends $pb.GeneratedMessage {
@@ -2302,7 +2302,7 @@ class UpdateCallSetRequest extends $pb.GeneratedMessage {
   factory UpdateCallSetRequest({
     $core.String? callSetId,
     CallSet? callSet,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (callSetId != null) {
@@ -2323,7 +2323,7 @@ class UpdateCallSetRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCallSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'callSetId')
     ..aOM<CallSet>(2, _omitFieldNames ? '' : 'callSet', subBuilder: CallSet.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2375,15 +2375,15 @@ class UpdateCallSetRequest extends $pb.GeneratedMessage {
   /// acceptable value is "name". If unspecified, all mutable fields will be
   /// updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteCallSetRequest extends $pb.GeneratedMessage {

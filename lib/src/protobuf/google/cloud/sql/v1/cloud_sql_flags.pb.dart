@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'cloud_sql_flags.pbenum.dart';
 import 'cloud_sql_resources.pbenum.dart' as $1401;
 
@@ -141,11 +141,11 @@ class Flag extends $pb.GeneratedMessage {
     SqlFlagType? type,
     $core.Iterable<$1401.SqlDatabaseVersion>? appliesTo,
     $core.Iterable<$core.String>? allowedStringValues,
-    $1780.Int64Value? minValue,
-    $1780.Int64Value? maxValue,
-    $1780.BoolValue? requiresRestart,
+    $1781.Int64Value? minValue,
+    $1781.Int64Value? maxValue,
+    $1781.BoolValue? requiresRestart,
     $core.String? kind,
-    $1780.BoolValue? inBeta,
+    $1781.BoolValue? inBeta,
     $core.Iterable<$fixnum.Int64>? allowedIntValues,
   }) {
     final $result = create();
@@ -190,11 +190,11 @@ class Flag extends $pb.GeneratedMessage {
     ..e<SqlFlagType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: SqlFlagType.SQL_FLAG_TYPE_UNSPECIFIED, valueOf: SqlFlagType.valueOf, enumValues: SqlFlagType.values)
     ..pc<$1401.SqlDatabaseVersion>(3, _omitFieldNames ? '' : 'appliesTo', $pb.PbFieldType.KE, valueOf: $1401.SqlDatabaseVersion.valueOf, enumValues: $1401.SqlDatabaseVersion.values, defaultEnumValue: $1401.SqlDatabaseVersion.SQL_DATABASE_VERSION_UNSPECIFIED)
     ..pPS(4, _omitFieldNames ? '' : 'allowedStringValues')
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'minValue', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(6, _omitFieldNames ? '' : 'maxValue', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.BoolValue>(7, _omitFieldNames ? '' : 'requiresRestart', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'minValue', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(6, _omitFieldNames ? '' : 'maxValue', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.BoolValue>(7, _omitFieldNames ? '' : 'requiresRestart', subBuilder: $1781.BoolValue.create)
     ..aOS(8, _omitFieldNames ? '' : 'kind')
-    ..aOM<$1780.BoolValue>(9, _omitFieldNames ? '' : 'inBeta', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(9, _omitFieldNames ? '' : 'inBeta', subBuilder: $1781.BoolValue.create)
     ..p<$fixnum.Int64>(10, _omitFieldNames ? '' : 'allowedIntValues', $pb.PbFieldType.K6)
     ..hasRequiredFields = false
   ;
@@ -262,40 +262,40 @@ class Flag extends $pb.GeneratedMessage {
 
   /// For `INTEGER` flags, the minimum allowed value.
   @$pb.TagNumber(5)
-  $1780.Int64Value get minValue => $_getN(4);
+  $1781.Int64Value get minValue => $_getN(4);
   @$pb.TagNumber(5)
-  set minValue($1780.Int64Value v) { setField(5, v); }
+  set minValue($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMinValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearMinValue() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureMinValue() => $_ensure(4);
+  $1781.Int64Value ensureMinValue() => $_ensure(4);
 
   /// For `INTEGER` flags, the maximum allowed value.
   @$pb.TagNumber(6)
-  $1780.Int64Value get maxValue => $_getN(5);
+  $1781.Int64Value get maxValue => $_getN(5);
   @$pb.TagNumber(6)
-  set maxValue($1780.Int64Value v) { setField(6, v); }
+  set maxValue($1781.Int64Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMaxValue() => $_has(5);
   @$pb.TagNumber(6)
   void clearMaxValue() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int64Value ensureMaxValue() => $_ensure(5);
+  $1781.Int64Value ensureMaxValue() => $_ensure(5);
 
   /// Indicates whether changing this flag will trigger a database restart. Only
   /// applicable to Second Generation instances.
   @$pb.TagNumber(7)
-  $1780.BoolValue get requiresRestart => $_getN(6);
+  $1781.BoolValue get requiresRestart => $_getN(6);
   @$pb.TagNumber(7)
-  set requiresRestart($1780.BoolValue v) { setField(7, v); }
+  set requiresRestart($1781.BoolValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRequiresRestart() => $_has(6);
   @$pb.TagNumber(7)
   void clearRequiresRestart() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.BoolValue ensureRequiresRestart() => $_ensure(6);
+  $1781.BoolValue ensureRequiresRestart() => $_ensure(6);
 
   /// This is always `sql#flag`.
   @$pb.TagNumber(8)
@@ -309,15 +309,15 @@ class Flag extends $pb.GeneratedMessage {
 
   /// Whether or not the flag is considered in beta.
   @$pb.TagNumber(9)
-  $1780.BoolValue get inBeta => $_getN(8);
+  $1781.BoolValue get inBeta => $_getN(8);
   @$pb.TagNumber(9)
-  set inBeta($1780.BoolValue v) { setField(9, v); }
+  set inBeta($1781.BoolValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasInBeta() => $_has(8);
   @$pb.TagNumber(9)
   void clearInBeta() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.BoolValue ensureInBeta() => $_ensure(8);
+  $1781.BoolValue ensureInBeta() => $_ensure(8);
 
   /// Use this field if only certain integers are accepted. Can be combined
   /// with min_value and max_value to add additional values.

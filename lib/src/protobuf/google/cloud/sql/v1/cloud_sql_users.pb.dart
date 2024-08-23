@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'cloud_sql_users.pbenum.dart';
 
 export 'cloud_sql_users.pbenum.dart';
@@ -476,7 +476,7 @@ class SqlUsersUpdateRequest extends $pb.GeneratedMessage {
 class UserPasswordValidationPolicy extends $pb.GeneratedMessage {
   factory UserPasswordValidationPolicy({
     $core.int? allowedFailedAttempts,
-    $1737.Duration? passwordExpirationDuration,
+    $1738.Duration? passwordExpirationDuration,
     $core.bool? enableFailedAttemptsCheck,
     PasswordStatus? status,
     $core.bool? enablePasswordVerification,
@@ -505,7 +505,7 @@ class UserPasswordValidationPolicy extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserPasswordValidationPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'allowedFailedAttempts', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'passwordExpirationDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'passwordExpirationDuration', subBuilder: $1738.Duration.create)
     ..aOB(3, _omitFieldNames ? '' : 'enableFailedAttemptsCheck')
     ..aOM<PasswordStatus>(4, _omitFieldNames ? '' : 'status', subBuilder: PasswordStatus.create)
     ..aOB(5, _omitFieldNames ? '' : 'enablePasswordVerification')
@@ -545,15 +545,15 @@ class UserPasswordValidationPolicy extends $pb.GeneratedMessage {
 
   /// Expiration duration after password is updated.
   @$pb.TagNumber(2)
-  $1737.Duration get passwordExpirationDuration => $_getN(1);
+  $1738.Duration get passwordExpirationDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set passwordExpirationDuration($1737.Duration v) { setField(2, v); }
+  set passwordExpirationDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPasswordExpirationDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearPasswordExpirationDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensurePasswordExpirationDuration() => $_ensure(1);
+  $1738.Duration ensurePasswordExpirationDuration() => $_ensure(1);
 
   /// If true, failed login attempts check will be enabled.
   @$pb.TagNumber(3)
@@ -593,7 +593,7 @@ class UserPasswordValidationPolicy extends $pb.GeneratedMessage {
 class PasswordStatus extends $pb.GeneratedMessage {
   factory PasswordStatus({
     $core.bool? locked,
-    $1775.Timestamp? passwordExpirationTime,
+    $1776.Timestamp? passwordExpirationTime,
   }) {
     final $result = create();
     if (locked != null) {
@@ -610,7 +610,7 @@ class PasswordStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PasswordStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'locked')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'passwordExpirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'passwordExpirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -647,15 +647,15 @@ class PasswordStatus extends $pb.GeneratedMessage {
 
   /// The expiration time of the current password.
   @$pb.TagNumber(2)
-  $1775.Timestamp get passwordExpirationTime => $_getN(1);
+  $1776.Timestamp get passwordExpirationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set passwordExpirationTime($1775.Timestamp v) { setField(2, v); }
+  set passwordExpirationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPasswordExpirationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearPasswordExpirationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensurePasswordExpirationTime() => $_ensure(1);
+  $1776.Timestamp ensurePasswordExpirationTime() => $_ensure(1);
 }
 
 enum User_UserDetails {

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $2352;
-import '../resources/ad_group_customizer.pb.dart' as $2356;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $2353;
+import '../resources/ad_group_customizer.pb.dart' as $2357;
 
 /// Request message for
 /// [AdGroupCustomizerService.MutateAdGroupCustomizers][google.ads.googleads.v15.services.AdGroupCustomizerService.MutateAdGroupCustomizers].
@@ -25,7 +25,7 @@ class MutateAdGroupCustomizersRequest extends $pb.GeneratedMessage {
     $core.Iterable<AdGroupCustomizerOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $2352.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $2353.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateAdGroupCustomizersRequest extends $pb.GeneratedMessage {
     ..pc<AdGroupCustomizerOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: AdGroupCustomizerOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$2352.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2352.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2352.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2352.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$2353.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2353.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2353.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2353.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -122,9 +122,9 @@ class MutateAdGroupCustomizersRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $2352.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $2353.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($2352.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($2353.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,7 +140,7 @@ enum AdGroupCustomizerOperation_Operation {
 /// A single operation (create, remove) on a customizer attribute.
 class AdGroupCustomizerOperation extends $pb.GeneratedMessage {
   factory AdGroupCustomizerOperation({
-    $2356.AdGroupCustomizer? create_1,
+    $2357.AdGroupCustomizer? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -163,7 +163,7 @@ class AdGroupCustomizerOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupCustomizerOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$2356.AdGroupCustomizer>(1, _omitFieldNames ? '' : 'create', subBuilder: $2356.AdGroupCustomizer.create)
+    ..aOM<$2357.AdGroupCustomizer>(1, _omitFieldNames ? '' : 'create', subBuilder: $2357.AdGroupCustomizer.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -195,15 +195,15 @@ class AdGroupCustomizerOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new ad group
   /// customizer
   @$pb.TagNumber(1)
-  $2356.AdGroupCustomizer get create_1 => $_getN(0);
+  $2357.AdGroupCustomizer get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2356.AdGroupCustomizer v) { setField(1, v); }
+  set create_1($2357.AdGroupCustomizer v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2356.AdGroupCustomizer ensureCreate_1() => $_ensure(0);
+  $2357.AdGroupCustomizer ensureCreate_1() => $_ensure(0);
 
   /// Remove operation: A resource name for the removed ad group customizer is
   /// expected, in this format:
@@ -222,7 +222,7 @@ class AdGroupCustomizerOperation extends $pb.GeneratedMessage {
 class MutateAdGroupCustomizersResponse extends $pb.GeneratedMessage {
   factory MutateAdGroupCustomizersResponse({
     $core.Iterable<MutateAdGroupCustomizerResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -239,7 +239,7 @@ class MutateAdGroupCustomizersResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupCustomizersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<MutateAdGroupCustomizerResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAdGroupCustomizerResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -273,22 +273,22 @@ class MutateAdGroupCustomizersResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the ad group customizer mutate.
 class MutateAdGroupCustomizerResult extends $pb.GeneratedMessage {
   factory MutateAdGroupCustomizerResult({
     $core.String? resourceName,
-    $2356.AdGroupCustomizer? adGroupCustomizer,
+    $2357.AdGroupCustomizer? adGroupCustomizer,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -305,7 +305,7 @@ class MutateAdGroupCustomizerResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupCustomizerResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2356.AdGroupCustomizer>(2, _omitFieldNames ? '' : 'adGroupCustomizer', subBuilder: $2356.AdGroupCustomizer.create)
+    ..aOM<$2357.AdGroupCustomizer>(2, _omitFieldNames ? '' : 'adGroupCustomizer', subBuilder: $2357.AdGroupCustomizer.create)
     ..hasRequiredFields = false
   ;
 
@@ -344,15 +344,15 @@ class MutateAdGroupCustomizerResult extends $pb.GeneratedMessage {
   /// The field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $2356.AdGroupCustomizer get adGroupCustomizer => $_getN(1);
+  $2357.AdGroupCustomizer get adGroupCustomizer => $_getN(1);
   @$pb.TagNumber(2)
-  set adGroupCustomizer($2356.AdGroupCustomizer v) { setField(2, v); }
+  set adGroupCustomizer($2357.AdGroupCustomizer v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdGroupCustomizer() => $_has(1);
   @$pb.TagNumber(2)
   void clearAdGroupCustomizer() => clearField(2);
   @$pb.TagNumber(2)
-  $2356.AdGroupCustomizer ensureAdGroupCustomizer() => $_ensure(1);
+  $2357.AdGroupCustomizer ensureAdGroupCustomizer() => $_ensure(1);
 }
 
 

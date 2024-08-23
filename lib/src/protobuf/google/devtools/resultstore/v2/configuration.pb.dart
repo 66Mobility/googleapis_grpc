@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4769;
+import 'common.pb.dart' as $4771;
 
 /// The resource ID components that identify the Configuration.
 class Configuration_Id extends $pb.GeneratedMessage {
@@ -89,9 +89,9 @@ class Configuration extends $pb.GeneratedMessage {
   factory Configuration({
     $core.String? name,
     Configuration_Id? id,
-    $4769.StatusAttributes? statusAttributes,
+    $4771.StatusAttributes? statusAttributes,
     ConfigurationAttributes? configurationAttributes,
-    $core.Iterable<$4769.Property>? properties,
+    $core.Iterable<$4771.Property>? properties,
     $core.String? displayName,
   }) {
     final $result = create();
@@ -122,9 +122,9 @@ class Configuration extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Configuration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.resultstore.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Configuration_Id>(2, _omitFieldNames ? '' : 'id', subBuilder: Configuration_Id.create)
-    ..aOM<$4769.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4769.StatusAttributes.create)
+    ..aOM<$4771.StatusAttributes>(3, _omitFieldNames ? '' : 'statusAttributes', subBuilder: $4771.StatusAttributes.create)
     ..aOM<ConfigurationAttributes>(5, _omitFieldNames ? '' : 'configurationAttributes', subBuilder: ConfigurationAttributes.create)
-    ..pc<$4769.Property>(6, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4769.Property.create)
+    ..pc<$4771.Property>(6, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: $4771.Property.create)
     ..aOS(8, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
   ;
@@ -178,15 +178,15 @@ class Configuration extends $pb.GeneratedMessage {
 
   /// The aggregate status for this configuration.
   @$pb.TagNumber(3)
-  $4769.StatusAttributes get statusAttributes => $_getN(2);
+  $4771.StatusAttributes get statusAttributes => $_getN(2);
   @$pb.TagNumber(3)
-  set statusAttributes($4769.StatusAttributes v) { setField(3, v); }
+  set statusAttributes($4771.StatusAttributes v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatusAttributes() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatusAttributes() => clearField(3);
   @$pb.TagNumber(3)
-  $4769.StatusAttributes ensureStatusAttributes() => $_ensure(2);
+  $4771.StatusAttributes ensureStatusAttributes() => $_ensure(2);
 
   /// Attributes that apply only to this configuration.
   @$pb.TagNumber(5)
@@ -204,7 +204,7 @@ class Configuration extends $pb.GeneratedMessage {
   /// This is implemented as a multi-map. Multiple properties are allowed with
   /// the same key. Properties will be returned in lexicographical order by key.
   @$pb.TagNumber(6)
-  $core.List<$4769.Property> get properties => $_getList(4);
+  $core.List<$4771.Property> get properties => $_getList(4);
 
   /// A human-readable name for Configuration for UIs.
   /// It is recommended that this name be unique.

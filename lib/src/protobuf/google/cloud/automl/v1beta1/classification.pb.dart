@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'temporal.pb.dart' as $4341;
+import 'temporal.pb.dart' as $4342;
 
 export 'classification.pbenum.dart';
 
@@ -79,7 +79,7 @@ class VideoClassificationAnnotation extends $pb.GeneratedMessage {
   factory VideoClassificationAnnotation({
     $core.String? type,
     ClassificationAnnotation? classificationAnnotation,
-    $4341.TimeSegment? timeSegment,
+    $4342.TimeSegment? timeSegment,
   }) {
     final $result = create();
     if (type != null) {
@@ -100,7 +100,7 @@ class VideoClassificationAnnotation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoClassificationAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aOM<ClassificationAnnotation>(2, _omitFieldNames ? '' : 'classificationAnnotation', subBuilder: ClassificationAnnotation.create)
-    ..aOM<$4341.TimeSegment>(3, _omitFieldNames ? '' : 'timeSegment', subBuilder: $4341.TimeSegment.create)
+    ..aOM<$4342.TimeSegment>(3, _omitFieldNames ? '' : 'timeSegment', subBuilder: $4342.TimeSegment.create)
     ..hasRequiredFields = false
   ;
 
@@ -172,15 +172,15 @@ class VideoClassificationAnnotation extends $pb.GeneratedMessage {
   /// Output only . The time segment of the video to which the
   /// annotation applies.
   @$pb.TagNumber(3)
-  $4341.TimeSegment get timeSegment => $_getN(2);
+  $4342.TimeSegment get timeSegment => $_getN(2);
   @$pb.TagNumber(3)
-  set timeSegment($4341.TimeSegment v) { setField(3, v); }
+  set timeSegment($4342.TimeSegment v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTimeSegment() => $_has(2);
   @$pb.TagNumber(3)
   void clearTimeSegment() => clearField(3);
   @$pb.TagNumber(3)
-  $4341.TimeSegment ensureTimeSegment() => $_ensure(2);
+  $4342.TimeSegment ensureTimeSegment() => $_ensure(2);
 }
 
 /// Metrics for a single confidence threshold.

@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/access_invitation_status.pbenum.dart' as $3697;
-import '../enums/access_role.pbenum.dart' as $3696;
+import '../enums/access_invitation_status.pbenum.dart' as $3698;
+import '../enums/access_role.pbenum.dart' as $3697;
 
 /// Represent an invitation to a new user on this customer account.
 class CustomerUserAccessInvitation extends $pb.GeneratedMessage {
   factory CustomerUserAccessInvitation({
     $core.String? resourceName,
     $fixnum.Int64? invitationId,
-    $3696.AccessRoleEnum_AccessRole? accessRole,
+    $3697.AccessRoleEnum_AccessRole? accessRole,
     $core.String? emailAddress,
     $core.String? creationDateTime,
-    $3697.AccessInvitationStatusEnum_AccessInvitationStatus? invitationStatus,
+    $3698.AccessInvitationStatusEnum_AccessInvitationStatus? invitationStatus,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -55,10 +55,10 @@ class CustomerUserAccessInvitation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerUserAccessInvitation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'invitationId')
-    ..e<$3696.AccessRoleEnum_AccessRole>(3, _omitFieldNames ? '' : 'accessRole', $pb.PbFieldType.OE, defaultOrMaker: $3696.AccessRoleEnum_AccessRole.UNSPECIFIED, valueOf: $3696.AccessRoleEnum_AccessRole.valueOf, enumValues: $3696.AccessRoleEnum_AccessRole.values)
+    ..e<$3697.AccessRoleEnum_AccessRole>(3, _omitFieldNames ? '' : 'accessRole', $pb.PbFieldType.OE, defaultOrMaker: $3697.AccessRoleEnum_AccessRole.UNSPECIFIED, valueOf: $3697.AccessRoleEnum_AccessRole.valueOf, enumValues: $3697.AccessRoleEnum_AccessRole.values)
     ..aOS(4, _omitFieldNames ? '' : 'emailAddress')
     ..aOS(5, _omitFieldNames ? '' : 'creationDateTime')
-    ..e<$3697.AccessInvitationStatusEnum_AccessInvitationStatus>(6, _omitFieldNames ? '' : 'invitationStatus', $pb.PbFieldType.OE, defaultOrMaker: $3697.AccessInvitationStatusEnum_AccessInvitationStatus.UNSPECIFIED, valueOf: $3697.AccessInvitationStatusEnum_AccessInvitationStatus.valueOf, enumValues: $3697.AccessInvitationStatusEnum_AccessInvitationStatus.values)
+    ..e<$3698.AccessInvitationStatusEnum_AccessInvitationStatus>(6, _omitFieldNames ? '' : 'invitationStatus', $pb.PbFieldType.OE, defaultOrMaker: $3698.AccessInvitationStatusEnum_AccessInvitationStatus.UNSPECIFIED, valueOf: $3698.AccessInvitationStatusEnum_AccessInvitationStatus.valueOf, enumValues: $3698.AccessInvitationStatusEnum_AccessInvitationStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -108,9 +108,9 @@ class CustomerUserAccessInvitation extends $pb.GeneratedMessage {
 
   /// Immutable. Access role of the user.
   @$pb.TagNumber(3)
-  $3696.AccessRoleEnum_AccessRole get accessRole => $_getN(2);
+  $3697.AccessRoleEnum_AccessRole get accessRole => $_getN(2);
   @$pb.TagNumber(3)
-  set accessRole($3696.AccessRoleEnum_AccessRole v) { setField(3, v); }
+  set accessRole($3697.AccessRoleEnum_AccessRole v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAccessRole() => $_has(2);
   @$pb.TagNumber(3)
@@ -143,9 +143,9 @@ class CustomerUserAccessInvitation extends $pb.GeneratedMessage {
 
   /// Output only. Invitation status of the user.
   @$pb.TagNumber(6)
-  $3697.AccessInvitationStatusEnum_AccessInvitationStatus get invitationStatus => $_getN(5);
+  $3698.AccessInvitationStatusEnum_AccessInvitationStatus get invitationStatus => $_getN(5);
   @$pb.TagNumber(6)
-  set invitationStatus($3697.AccessInvitationStatusEnum_AccessInvitationStatus v) { setField(6, v); }
+  set invitationStatus($3698.AccessInvitationStatusEnum_AccessInvitationStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasInvitationStatus() => $_has(5);
   @$pb.TagNumber(6)

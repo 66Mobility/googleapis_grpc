@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import 'k8s.min.pb.dart' as $4600;
-import 'vendor_settings.pb.dart' as $4601;
-import 'vendor_settings.pbenum.dart' as $4601;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import 'k8s.min.pb.dart' as $4602;
+import 'vendor_settings.pb.dart' as $4603;
+import 'vendor_settings.pbenum.dart' as $4603;
 
 enum TaskTemplate_Retries {
   maxRetries, 
@@ -27,14 +27,14 @@ enum TaskTemplate_Retries {
 /// from a template.
 class TaskTemplate extends $pb.GeneratedMessage {
   factory TaskTemplate({
-    $core.Iterable<$4600.Container>? containers,
-    $core.Iterable<$4600.Volume>? volumes,
+    $core.Iterable<$4602.Container>? containers,
+    $core.Iterable<$4602.Volume>? volumes,
     $core.int? maxRetries,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     $core.String? serviceAccount,
-    $4601.ExecutionEnvironment? executionEnvironment,
+    $4603.ExecutionEnvironment? executionEnvironment,
     $core.String? encryptionKey,
-    $4601.VpcAccess? vpcAccess,
+    $4603.VpcAccess? vpcAccess,
   }) {
     final $result = create();
     if (containers != null) {
@@ -73,14 +73,14 @@ class TaskTemplate extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskTemplate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.run.v2'), createEmptyInstance: create)
     ..oo(0, [3])
-    ..pc<$4600.Container>(1, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4600.Container.create)
-    ..pc<$4600.Volume>(2, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4600.Volume.create)
+    ..pc<$4602.Container>(1, _omitFieldNames ? '' : 'containers', $pb.PbFieldType.PM, subBuilder: $4602.Container.create)
+    ..pc<$4602.Volume>(2, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4602.Volume.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'maxRetries', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOS(5, _omitFieldNames ? '' : 'serviceAccount')
-    ..e<$4601.ExecutionEnvironment>(6, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4601.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4601.ExecutionEnvironment.valueOf, enumValues: $4601.ExecutionEnvironment.values)
+    ..e<$4603.ExecutionEnvironment>(6, _omitFieldNames ? '' : 'executionEnvironment', $pb.PbFieldType.OE, defaultOrMaker: $4603.ExecutionEnvironment.EXECUTION_ENVIRONMENT_UNSPECIFIED, valueOf: $4603.ExecutionEnvironment.valueOf, enumValues: $4603.ExecutionEnvironment.values)
     ..aOS(7, _omitFieldNames ? '' : 'encryptionKey')
-    ..aOM<$4601.VpcAccess>(8, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4601.VpcAccess.create)
+    ..aOM<$4603.VpcAccess>(8, _omitFieldNames ? '' : 'vpcAccess', subBuilder: $4603.VpcAccess.create)
     ..hasRequiredFields = false
   ;
 
@@ -111,11 +111,11 @@ class TaskTemplate extends $pb.GeneratedMessage {
   /// Holds the single container that defines the unit of execution for this
   /// task.
   @$pb.TagNumber(1)
-  $core.List<$4600.Container> get containers => $_getList(0);
+  $core.List<$4602.Container> get containers => $_getList(0);
 
   /// Optional. A list of Volumes to make available to containers.
   @$pb.TagNumber(2)
-  $core.List<$4600.Volume> get volumes => $_getList(1);
+  $core.List<$4602.Volume> get volumes => $_getList(1);
 
   /// Number of retries allowed per Task, before marking this Task failed.
   /// Defaults to 3.
@@ -133,15 +133,15 @@ class TaskTemplate extends $pb.GeneratedMessage {
   /// This applies per attempt of a task, meaning each retry can run for the full
   /// timeout. Defaults to 600 seconds.
   @$pb.TagNumber(4)
-  $1737.Duration get timeout => $_getN(3);
+  $1738.Duration get timeout => $_getN(3);
   @$pb.TagNumber(4)
-  set timeout($1737.Duration v) { setField(4, v); }
+  set timeout($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeout() => $_has(3);
   @$pb.TagNumber(4)
   void clearTimeout() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureTimeout() => $_ensure(3);
+  $1738.Duration ensureTimeout() => $_ensure(3);
 
   /// Optional. Email address of the IAM service account associated with the Task
   /// of a Job. The service account represents the identity of the running task,
@@ -158,9 +158,9 @@ class TaskTemplate extends $pb.GeneratedMessage {
 
   /// Optional. The execution environment being used to host this Task.
   @$pb.TagNumber(6)
-  $4601.ExecutionEnvironment get executionEnvironment => $_getN(5);
+  $4603.ExecutionEnvironment get executionEnvironment => $_getN(5);
   @$pb.TagNumber(6)
-  set executionEnvironment($4601.ExecutionEnvironment v) { setField(6, v); }
+  set executionEnvironment($4603.ExecutionEnvironment v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExecutionEnvironment() => $_has(5);
   @$pb.TagNumber(6)
@@ -182,15 +182,15 @@ class TaskTemplate extends $pb.GeneratedMessage {
   /// information, visit
   /// https://cloud.google.com/run/docs/configuring/connecting-vpc.
   @$pb.TagNumber(8)
-  $4601.VpcAccess get vpcAccess => $_getN(7);
+  $4603.VpcAccess get vpcAccess => $_getN(7);
   @$pb.TagNumber(8)
-  set vpcAccess($4601.VpcAccess v) { setField(8, v); }
+  set vpcAccess($4603.VpcAccess v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasVpcAccess() => $_has(7);
   @$pb.TagNumber(8)
   void clearVpcAccess() => clearField(8);
   @$pb.TagNumber(8)
-  $4601.VpcAccess ensureVpcAccess() => $_ensure(7);
+  $4603.VpcAccess ensureVpcAccess() => $_ensure(7);
 }
 
 

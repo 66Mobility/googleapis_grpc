@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../resources/customer_sk_ad_network_conversion_value_schema.pb.dart' as $2512;
+import '../resources/customer_sk_ad_network_conversion_value_schema.pb.dart' as $2513;
 
 /// A single update operation for a CustomerSkAdNetworkConversionValueSchema.
 class CustomerSkAdNetworkConversionValueSchemaOperation extends $pb.GeneratedMessage {
   factory CustomerSkAdNetworkConversionValueSchemaOperation({
-    $2512.CustomerSkAdNetworkConversionValueSchema? update,
+    $2513.CustomerSkAdNetworkConversionValueSchema? update,
   }) {
     final $result = create();
     if (update != null) {
@@ -31,7 +31,7 @@ class CustomerSkAdNetworkConversionValueSchemaOperation extends $pb.GeneratedMes
   factory CustomerSkAdNetworkConversionValueSchemaOperation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerSkAdNetworkConversionValueSchemaOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..aOM<$2512.CustomerSkAdNetworkConversionValueSchema>(1, _omitFieldNames ? '' : 'update', subBuilder: $2512.CustomerSkAdNetworkConversionValueSchema.create)
+    ..aOM<$2513.CustomerSkAdNetworkConversionValueSchema>(1, _omitFieldNames ? '' : 'update', subBuilder: $2513.CustomerSkAdNetworkConversionValueSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -58,15 +58,15 @@ class CustomerSkAdNetworkConversionValueSchemaOperation extends $pb.GeneratedMes
 
   /// Update operation: The schema is expected to have a valid resource name.
   @$pb.TagNumber(1)
-  $2512.CustomerSkAdNetworkConversionValueSchema get update => $_getN(0);
+  $2513.CustomerSkAdNetworkConversionValueSchema get update => $_getN(0);
   @$pb.TagNumber(1)
-  set update($2512.CustomerSkAdNetworkConversionValueSchema v) { setField(1, v); }
+  set update($2513.CustomerSkAdNetworkConversionValueSchema v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdate() => clearField(1);
   @$pb.TagNumber(1)
-  $2512.CustomerSkAdNetworkConversionValueSchema ensureUpdate() => $_ensure(0);
+  $2513.CustomerSkAdNetworkConversionValueSchema ensureUpdate() => $_ensure(0);
 }
 
 /// Request message for

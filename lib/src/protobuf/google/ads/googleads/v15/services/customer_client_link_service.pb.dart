@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/customer_client_link.pb.dart' as $2433;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/customer_client_link.pb.dart' as $2434;
 
 /// Request message for
 /// [CustomerClientLinkService.MutateCustomerClientLink][google.ads.googleads.v15.services.CustomerClientLinkService.MutateCustomerClientLink].
@@ -111,9 +111,9 @@ enum CustomerClientLinkOperation_Operation {
 /// A single operation (create, update) on a CustomerClientLink.
 class CustomerClientLinkOperation extends $pb.GeneratedMessage {
   factory CustomerClientLinkOperation({
-    $2433.CustomerClientLink? create_1,
-    $2433.CustomerClientLink? update,
-    $2209.FieldMask? updateMask,
+    $2434.CustomerClientLink? create_1,
+    $2434.CustomerClientLink? update,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -138,9 +138,9 @@ class CustomerClientLinkOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerClientLinkOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$2433.CustomerClientLink>(1, _omitFieldNames ? '' : 'create', subBuilder: $2433.CustomerClientLink.create)
-    ..aOM<$2433.CustomerClientLink>(2, _omitFieldNames ? '' : 'update', subBuilder: $2433.CustomerClientLink.create)
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2434.CustomerClientLink>(1, _omitFieldNames ? '' : 'create', subBuilder: $2434.CustomerClientLink.create)
+    ..aOM<$2434.CustomerClientLink>(2, _omitFieldNames ? '' : 'update', subBuilder: $2434.CustomerClientLink.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -170,39 +170,39 @@ class CustomerClientLinkOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new link.
   @$pb.TagNumber(1)
-  $2433.CustomerClientLink get create_1 => $_getN(0);
+  $2434.CustomerClientLink get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2433.CustomerClientLink v) { setField(1, v); }
+  set create_1($2434.CustomerClientLink v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2433.CustomerClientLink ensureCreate_1() => $_ensure(0);
+  $2434.CustomerClientLink ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The link is expected to have a valid resource name.
   @$pb.TagNumber(2)
-  $2433.CustomerClientLink get update => $_getN(1);
+  $2434.CustomerClientLink get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($2433.CustomerClientLink v) { setField(2, v); }
+  set update($2434.CustomerClientLink v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $2433.CustomerClientLink ensureUpdate() => $_ensure(1);
+  $2434.CustomerClientLink ensureUpdate() => $_ensure(1);
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Response message for a CustomerClientLink mutate.

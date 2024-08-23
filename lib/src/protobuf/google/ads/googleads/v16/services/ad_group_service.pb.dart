@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/ad_group.pb.dart' as $2918;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/ad_group.pb.dart' as $2919;
 
 /// Request message for
 /// [AdGroupService.MutateAdGroups][google.ads.googleads.v16.services.AdGroupService.MutateAdGroups].
@@ -26,7 +26,7 @@ class MutateAdGroupsRequest extends $pb.GeneratedMessage {
     $core.Iterable<AdGroupOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateAdGroupsRequest extends $pb.GeneratedMessage {
     ..pc<AdGroupOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: AdGroupOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -121,9 +121,9 @@ class MutateAdGroupsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,10 +140,10 @@ enum AdGroupOperation_Operation {
 /// A single operation (create, update, remove) on an ad group.
 class AdGroupOperation extends $pb.GeneratedMessage {
   factory AdGroupOperation({
-    $2918.AdGroup? create_1,
-    $2918.AdGroup? update,
+    $2919.AdGroup? create_1,
+    $2919.AdGroup? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -172,10 +172,10 @@ class AdGroupOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$2918.AdGroup>(1, _omitFieldNames ? '' : 'create', subBuilder: $2918.AdGroup.create)
-    ..aOM<$2918.AdGroup>(2, _omitFieldNames ? '' : 'update', subBuilder: $2918.AdGroup.create)
+    ..aOM<$2919.AdGroup>(1, _omitFieldNames ? '' : 'create', subBuilder: $2919.AdGroup.create)
+    ..aOM<$2919.AdGroup>(2, _omitFieldNames ? '' : 'update', subBuilder: $2919.AdGroup.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -205,27 +205,27 @@ class AdGroupOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new ad group.
   @$pb.TagNumber(1)
-  $2918.AdGroup get create_1 => $_getN(0);
+  $2919.AdGroup get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2918.AdGroup v) { setField(1, v); }
+  set create_1($2919.AdGroup v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2918.AdGroup ensureCreate_1() => $_ensure(0);
+  $2919.AdGroup ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The ad group is expected to have a valid resource name.
   @$pb.TagNumber(2)
-  $2918.AdGroup get update => $_getN(1);
+  $2919.AdGroup get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($2918.AdGroup v) { setField(2, v); }
+  set update($2919.AdGroup v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $2918.AdGroup ensureUpdate() => $_ensure(1);
+  $2919.AdGroup ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed ad group is expected,
   ///  in this format:
@@ -242,22 +242,22 @@ class AdGroupOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for an ad group mutate.
 class MutateAdGroupsResponse extends $pb.GeneratedMessage {
   factory MutateAdGroupsResponse({
     $core.Iterable<MutateAdGroupResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -274,7 +274,7 @@ class MutateAdGroupsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateAdGroupResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAdGroupResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -308,22 +308,22 @@ class MutateAdGroupsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the ad group mutate.
 class MutateAdGroupResult extends $pb.GeneratedMessage {
   factory MutateAdGroupResult({
     $core.String? resourceName,
-    $2918.AdGroup? adGroup,
+    $2919.AdGroup? adGroup,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -340,7 +340,7 @@ class MutateAdGroupResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAdGroupResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2918.AdGroup>(2, _omitFieldNames ? '' : 'adGroup', subBuilder: $2918.AdGroup.create)
+    ..aOM<$2919.AdGroup>(2, _omitFieldNames ? '' : 'adGroup', subBuilder: $2919.AdGroup.create)
     ..hasRequiredFields = false
   ;
 
@@ -378,15 +378,15 @@ class MutateAdGroupResult extends $pb.GeneratedMessage {
   /// The mutated ad group with only mutable fields after mutate. The field will
   /// only be returned when response_content_type is set to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $2918.AdGroup get adGroup => $_getN(1);
+  $2919.AdGroup get adGroup => $_getN(1);
   @$pb.TagNumber(2)
-  set adGroup($2918.AdGroup v) { setField(2, v); }
+  set adGroup($2919.AdGroup v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdGroup() => $_has(1);
   @$pb.TagNumber(2)
   void clearAdGroup() => clearField(2);
   @$pb.TagNumber(2)
-  $2918.AdGroup ensureAdGroup() => $_ensure(1);
+  $2919.AdGroup ensureAdGroup() => $_ensure(1);
 }
 
 

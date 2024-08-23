@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'insight.pb.dart' as $1231;
 import 'insight_type_config.pb.dart' as $1234;
 import 'recommendation.pb.dart' as $1232;
@@ -984,7 +984,7 @@ class GetRecommenderConfigRequest extends $pb.GeneratedMessage {
 class UpdateRecommenderConfigRequest extends $pb.GeneratedMessage {
   factory UpdateRecommenderConfigRequest({
     $1233.RecommenderConfig? recommenderConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -1005,7 +1005,7 @@ class UpdateRecommenderConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRecommenderConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
     ..aOM<$1233.RecommenderConfig>(1, _omitFieldNames ? '' : 'recommenderConfig', subBuilder: $1233.RecommenderConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -1045,15 +1045,15 @@ class UpdateRecommenderConfigRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If true, validate the request and preview the change, but do not actually
   /// update it.
@@ -1133,7 +1133,7 @@ class GetInsightTypeConfigRequest extends $pb.GeneratedMessage {
 class UpdateInsightTypeConfigRequest extends $pb.GeneratedMessage {
   factory UpdateInsightTypeConfigRequest({
     $1234.InsightTypeConfig? insightTypeConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -1154,7 +1154,7 @@ class UpdateInsightTypeConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInsightTypeConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.recommender.v1'), createEmptyInstance: create)
     ..aOM<$1234.InsightTypeConfig>(1, _omitFieldNames ? '' : 'insightTypeConfig', subBuilder: $1234.InsightTypeConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -1194,15 +1194,15 @@ class UpdateInsightTypeConfigRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// If true, validate the request and preview the change, but do not actually
   /// update it.

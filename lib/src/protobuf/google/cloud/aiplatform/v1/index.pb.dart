@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'deployed_index_ref.pb.dart' as $4260;
-import 'encryption_spec.pb.dart' as $4240;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'deployed_index_ref.pb.dart' as $4261;
+import 'encryption_spec.pb.dart' as $4241;
 import 'index.pbenum.dart';
 
 export 'index.pbenum.dart';
@@ -30,15 +30,15 @@ class Index extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $core.String? metadataSchemaUri,
-    $1734.Value? metadata,
-    $core.Iterable<$4260.DeployedIndexRef>? deployedIndexes,
+    $1735.Value? metadata,
+    $core.Iterable<$4261.DeployedIndexRef>? deployedIndexes,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     IndexStats? indexStats,
     Index_IndexUpdateMethod? indexUpdateMethod,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
   }) {
@@ -99,15 +99,15 @@ class Index extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'metadataSchemaUri')
-    ..aOM<$1734.Value>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Value.create)
-    ..pc<$4260.DeployedIndexRef>(7, _omitFieldNames ? '' : 'deployedIndexes', $pb.PbFieldType.PM, subBuilder: $4260.DeployedIndexRef.create)
+    ..aOM<$1735.Value>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Value.create)
+    ..pc<$4261.DeployedIndexRef>(7, _omitFieldNames ? '' : 'deployedIndexes', $pb.PbFieldType.PM, subBuilder: $4261.DeployedIndexRef.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Index.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<IndexStats>(14, _omitFieldNames ? '' : 'indexStats', subBuilder: IndexStats.create)
     ..e<Index_IndexUpdateMethod>(16, _omitFieldNames ? '' : 'indexUpdateMethod', $pb.PbFieldType.OE, defaultOrMaker: Index_IndexUpdateMethod.INDEX_UPDATE_METHOD_UNSPECIFIED, valueOf: Index_IndexUpdateMethod.valueOf, enumValues: Index_IndexUpdateMethod.values)
-    ..aOM<$4240.EncryptionSpec>(17, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(17, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOB(18, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(19, _omitFieldNames ? '' : 'satisfiesPzi')
     ..hasRequiredFields = false
@@ -187,21 +187,21 @@ class Index extends $pb.GeneratedMessage {
   /// be found in
   /// [metadata_schema][google.cloud.aiplatform.v1.Index.metadata_schema_uri].
   @$pb.TagNumber(6)
-  $1734.Value get metadata => $_getN(4);
+  $1735.Value get metadata => $_getN(4);
   @$pb.TagNumber(6)
-  set metadata($1734.Value v) { setField(6, v); }
+  set metadata($1735.Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMetadata() => $_has(4);
   @$pb.TagNumber(6)
   void clearMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Value ensureMetadata() => $_ensure(4);
+  $1735.Value ensureMetadata() => $_ensure(4);
 
   /// Output only. The pointers to DeployedIndexes created from this Index.
   /// An Index can be only deleted if all its DeployedIndexes had been undeployed
   /// first.
   @$pb.TagNumber(7)
-  $core.List<$4260.DeployedIndexRef> get deployedIndexes => $_getList(5);
+  $core.List<$4261.DeployedIndexRef> get deployedIndexes => $_getList(5);
 
   /// Used to perform consistent read-modify-write updates. If not set, a blind
   /// "overwrite" update happens.
@@ -226,15 +226,15 @@ class Index extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Index was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. Timestamp when this Index was most recently updated.
   /// This also includes any update to the contents of the Index.
@@ -245,15 +245,15 @@ class Index extends $pb.GeneratedMessage {
   /// not already reflected in the Index. Result of any successfully completed
   /// Operation on the Index is reflected in it.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Output only. Stats of the index resource.
   @$pb.TagNumber(14)
@@ -281,15 +281,15 @@ class Index extends $pb.GeneratedMessage {
   /// Immutable. Customer-managed encryption key spec for an Index. If set, this
   /// Index and all sub-resources of this Index will be secured by this key.
   @$pb.TagNumber(17)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(12);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(12);
   @$pb.TagNumber(17)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(17, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasEncryptionSpec() => $_has(12);
   @$pb.TagNumber(17)
   void clearEncryptionSpec() => clearField(17);
   @$pb.TagNumber(17)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(12);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(12);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(18)

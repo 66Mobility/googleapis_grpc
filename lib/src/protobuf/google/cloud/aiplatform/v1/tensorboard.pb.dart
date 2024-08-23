@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4240;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4241;
 
 /// Tensorboard is a physical database that stores users' training metrics.
 /// A default Tensorboard is provided in each region of a Google Cloud project.
@@ -25,12 +25,12 @@ class Tensorboard extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $core.int? runCount,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? etag,
     $core.String? blobStoragePathPrefix,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.bool? isDefault,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -86,12 +86,12 @@ class Tensorboard extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'runCount', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'Tensorboard.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..aOS(10, _omitFieldNames ? '' : 'blobStoragePathPrefix')
-    ..aOM<$4240.EncryptionSpec>(11, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(11, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOB(12, _omitFieldNames ? '' : 'isDefault')
     ..aOB(13, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(14, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -163,27 +163,27 @@ class Tensorboard extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Tensorboard was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp when this Tensorboard was last updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   ///  The labels with user-defined metadata to organize your Tensorboards.
   ///
@@ -225,15 +225,15 @@ class Tensorboard extends $pb.GeneratedMessage {
   /// Tensorboard and all sub-resources of this Tensorboard will be secured by
   /// this key.
   @$pb.TagNumber(11)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(9);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(9);
   @$pb.TagNumber(11)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(11, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasEncryptionSpec() => $_has(9);
   @$pb.TagNumber(11)
   void clearEncryptionSpec() => clearField(11);
   @$pb.TagNumber(11)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(9);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(9);
 
   /// Used to indicate if the TensorBoard instance is the default one.
   /// Each project & region can have at most one default TensorBoard instance.

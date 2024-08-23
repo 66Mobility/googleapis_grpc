@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 
 /// The type of a struct parameter.
 class QueryParameterStructType extends $pb.GeneratedMessage {
@@ -272,10 +272,10 @@ class RangeValue extends $pb.GeneratedMessage {
 /// The value of a query parameter.
 class QueryParameterValue extends $pb.GeneratedMessage {
   factory QueryParameterValue({
-    $1780.StringValue? value,
+    $1781.StringValue? value,
     $core.Iterable<QueryParameterValue>? arrayValues,
     $core.Map<$core.String, QueryParameterValue>? structValues,
-    $core.Iterable<$1734.Value>? altStructValues,
+    $core.Iterable<$1735.Value>? altStructValues,
     RangeValue? rangeValue,
   }) {
     final $result = create();
@@ -301,10 +301,10 @@ class QueryParameterValue extends $pb.GeneratedMessage {
   factory QueryParameterValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryParameterValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(1, _omitFieldNames ? '' : 'value', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(1, _omitFieldNames ? '' : 'value', subBuilder: $1781.StringValue.create)
     ..pc<QueryParameterValue>(2, _omitFieldNames ? '' : 'arrayValues', $pb.PbFieldType.PM, subBuilder: QueryParameterValue.create)
     ..m<$core.String, QueryParameterValue>(3, _omitFieldNames ? '' : 'structValues', entryClassName: 'QueryParameterValue.StructValuesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: QueryParameterValue.create, valueDefaultOrMaker: QueryParameterValue.getDefault, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
-    ..pc<$1734.Value>(5, _omitFieldNames ? '' : 'altStructValues', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(5, _omitFieldNames ? '' : 'altStructValues', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..aOM<RangeValue>(6, _omitFieldNames ? '' : 'rangeValue', subBuilder: RangeValue.create)
     ..hasRequiredFields = false
   ;
@@ -332,15 +332,15 @@ class QueryParameterValue extends $pb.GeneratedMessage {
 
   /// Optional. The value of this value, if a simple scalar type.
   @$pb.TagNumber(1)
-  $1780.StringValue get value => $_getN(0);
+  $1781.StringValue get value => $_getN(0);
   @$pb.TagNumber(1)
-  set value($1780.StringValue v) { setField(1, v); }
+  set value($1781.StringValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
   void clearValue() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.StringValue ensureValue() => $_ensure(0);
+  $1781.StringValue ensureValue() => $_ensure(0);
 
   /// Optional. The array values, if this is an array type.
   @$pb.TagNumber(2)
@@ -352,7 +352,7 @@ class QueryParameterValue extends $pb.GeneratedMessage {
 
   /// This field should not be used.
   @$pb.TagNumber(5)
-  $core.List<$1734.Value> get altStructValues => $_getList(3);
+  $core.List<$1735.Value> get altStructValues => $_getList(3);
 
   /// Optional. The range value, if this is a range type.
   @$pb.TagNumber(6)

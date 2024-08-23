@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/local_services_lead_credit_state.pbenum.dart' as $3024;
-import '../enums/local_services_lead_status.pbenum.dart' as $3023;
-import '../enums/local_services_lead_type.pbenum.dart' as $3022;
+import '../enums/local_services_lead_credit_state.pbenum.dart' as $3025;
+import '../enums/local_services_lead_status.pbenum.dart' as $3024;
+import '../enums/local_services_lead_type.pbenum.dart' as $3023;
 
 /// Data from Local Services Lead.
 /// Contains details of Lead which is generated when user calls, messages or
@@ -29,8 +29,8 @@ class LocalServicesLead extends $pb.GeneratedMessage {
     $core.String? categoryId,
     $core.String? serviceId,
     ContactDetails? contactDetails,
-    $3022.LocalServicesLeadTypeEnum_LeadType? leadType,
-    $3023.LocalServicesLeadStatusEnum_LeadStatus? leadStatus,
+    $3023.LocalServicesLeadTypeEnum_LeadType? leadType,
+    $3024.LocalServicesLeadStatusEnum_LeadStatus? leadStatus,
     $core.String? creationDateTime,
     $core.String? locale,
     Note? note,
@@ -86,8 +86,8 @@ class LocalServicesLead extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'categoryId')
     ..aOS(4, _omitFieldNames ? '' : 'serviceId')
     ..aOM<ContactDetails>(5, _omitFieldNames ? '' : 'contactDetails', subBuilder: ContactDetails.create)
-    ..e<$3022.LocalServicesLeadTypeEnum_LeadType>(6, _omitFieldNames ? '' : 'leadType', $pb.PbFieldType.OE, defaultOrMaker: $3022.LocalServicesLeadTypeEnum_LeadType.UNSPECIFIED, valueOf: $3022.LocalServicesLeadTypeEnum_LeadType.valueOf, enumValues: $3022.LocalServicesLeadTypeEnum_LeadType.values)
-    ..e<$3023.LocalServicesLeadStatusEnum_LeadStatus>(7, _omitFieldNames ? '' : 'leadStatus', $pb.PbFieldType.OE, defaultOrMaker: $3023.LocalServicesLeadStatusEnum_LeadStatus.UNSPECIFIED, valueOf: $3023.LocalServicesLeadStatusEnum_LeadStatus.valueOf, enumValues: $3023.LocalServicesLeadStatusEnum_LeadStatus.values)
+    ..e<$3023.LocalServicesLeadTypeEnum_LeadType>(6, _omitFieldNames ? '' : 'leadType', $pb.PbFieldType.OE, defaultOrMaker: $3023.LocalServicesLeadTypeEnum_LeadType.UNSPECIFIED, valueOf: $3023.LocalServicesLeadTypeEnum_LeadType.valueOf, enumValues: $3023.LocalServicesLeadTypeEnum_LeadType.values)
+    ..e<$3024.LocalServicesLeadStatusEnum_LeadStatus>(7, _omitFieldNames ? '' : 'leadStatus', $pb.PbFieldType.OE, defaultOrMaker: $3024.LocalServicesLeadStatusEnum_LeadStatus.UNSPECIFIED, valueOf: $3024.LocalServicesLeadStatusEnum_LeadStatus.valueOf, enumValues: $3024.LocalServicesLeadStatusEnum_LeadStatus.values)
     ..aOS(8, _omitFieldNames ? '' : 'creationDateTime')
     ..aOS(9, _omitFieldNames ? '' : 'locale')
     ..aOM<Note>(10, _omitFieldNames ? '' : 'note', subBuilder: Note.create)
@@ -180,9 +180,9 @@ class LocalServicesLead extends $pb.GeneratedMessage {
 
   /// Output only. Type of Local Services lead: phone, message, booking, etc.
   @$pb.TagNumber(6)
-  $3022.LocalServicesLeadTypeEnum_LeadType get leadType => $_getN(5);
+  $3023.LocalServicesLeadTypeEnum_LeadType get leadType => $_getN(5);
   @$pb.TagNumber(6)
-  set leadType($3022.LocalServicesLeadTypeEnum_LeadType v) { setField(6, v); }
+  set leadType($3023.LocalServicesLeadTypeEnum_LeadType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLeadType() => $_has(5);
   @$pb.TagNumber(6)
@@ -190,9 +190,9 @@ class LocalServicesLead extends $pb.GeneratedMessage {
 
   /// Output only. Current status of lead.
   @$pb.TagNumber(7)
-  $3023.LocalServicesLeadStatusEnum_LeadStatus get leadStatus => $_getN(6);
+  $3024.LocalServicesLeadStatusEnum_LeadStatus get leadStatus => $_getN(6);
   @$pb.TagNumber(7)
-  set leadStatus($3023.LocalServicesLeadStatusEnum_LeadStatus v) { setField(7, v); }
+  set leadStatus($3024.LocalServicesLeadStatusEnum_LeadStatus v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLeadStatus() => $_has(6);
   @$pb.TagNumber(7)
@@ -412,7 +412,7 @@ class Note extends $pb.GeneratedMessage {
 /// Represents the credit details of a lead.
 class CreditDetails extends $pb.GeneratedMessage {
   factory CreditDetails({
-    $3024.LocalServicesCreditStateEnum_CreditState? creditState,
+    $3025.LocalServicesCreditStateEnum_CreditState? creditState,
     $core.String? creditStateLastUpdateDateTime,
   }) {
     final $result = create();
@@ -429,7 +429,7 @@ class CreditDetails extends $pb.GeneratedMessage {
   factory CreditDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreditDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..e<$3024.LocalServicesCreditStateEnum_CreditState>(1, _omitFieldNames ? '' : 'creditState', $pb.PbFieldType.OE, defaultOrMaker: $3024.LocalServicesCreditStateEnum_CreditState.UNSPECIFIED, valueOf: $3024.LocalServicesCreditStateEnum_CreditState.valueOf, enumValues: $3024.LocalServicesCreditStateEnum_CreditState.values)
+    ..e<$3025.LocalServicesCreditStateEnum_CreditState>(1, _omitFieldNames ? '' : 'creditState', $pb.PbFieldType.OE, defaultOrMaker: $3025.LocalServicesCreditStateEnum_CreditState.UNSPECIFIED, valueOf: $3025.LocalServicesCreditStateEnum_CreditState.valueOf, enumValues: $3025.LocalServicesCreditStateEnum_CreditState.values)
     ..aOS(2, _omitFieldNames ? '' : 'creditStateLastUpdateDateTime')
     ..hasRequiredFields = false
   ;
@@ -457,9 +457,9 @@ class CreditDetails extends $pb.GeneratedMessage {
 
   /// Output only. Credit state of the lead.
   @$pb.TagNumber(1)
-  $3024.LocalServicesCreditStateEnum_CreditState get creditState => $_getN(0);
+  $3025.LocalServicesCreditStateEnum_CreditState get creditState => $_getN(0);
   @$pb.TagNumber(1)
-  set creditState($3024.LocalServicesCreditStateEnum_CreditState v) { setField(1, v); }
+  set creditState($3025.LocalServicesCreditStateEnum_CreditState v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreditState() => $_has(0);
   @$pb.TagNumber(1)

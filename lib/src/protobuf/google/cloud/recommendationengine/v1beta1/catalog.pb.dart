@@ -15,7 +15,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'catalog.pbenum.dart';
-import 'common.pb.dart' as $4592;
+import 'common.pb.dart' as $4594;
 
 export 'catalog.pbenum.dart';
 
@@ -81,7 +81,7 @@ class CatalogItem extends $pb.GeneratedMessage {
     $core.Iterable<CatalogItem_CategoryHierarchy>? categoryHierarchies,
     $core.String? title,
     $core.String? description,
-    $4592.FeatureMap? itemAttributes,
+    $4594.FeatureMap? itemAttributes,
     $core.String? languageCode,
     $core.Iterable<$core.String>? tags,
     $core.String? itemGroupId,
@@ -131,7 +131,7 @@ class CatalogItem extends $pb.GeneratedMessage {
     ..pc<CatalogItem_CategoryHierarchy>(2, _omitFieldNames ? '' : 'categoryHierarchies', $pb.PbFieldType.PM, subBuilder: CatalogItem_CategoryHierarchy.create)
     ..aOS(3, _omitFieldNames ? '' : 'title')
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..aOM<$4592.FeatureMap>(5, _omitFieldNames ? '' : 'itemAttributes', subBuilder: $4592.FeatureMap.create)
+    ..aOM<$4594.FeatureMap>(5, _omitFieldNames ? '' : 'itemAttributes', subBuilder: $4594.FeatureMap.create)
     ..aOS(6, _omitFieldNames ? '' : 'languageCode')
     ..pPS(8, _omitFieldNames ? '' : 'tags')
     ..aOS(9, _omitFieldNames ? '' : 'itemGroupId')
@@ -221,15 +221,15 @@ class CatalogItem extends $pb.GeneratedMessage {
   /// very strong signals for recommendation model, thus we highly recommend
   /// providing the item attributes here.
   @$pb.TagNumber(5)
-  $4592.FeatureMap get itemAttributes => $_getN(4);
+  $4594.FeatureMap get itemAttributes => $_getN(4);
   @$pb.TagNumber(5)
-  set itemAttributes($4592.FeatureMap v) { setField(5, v); }
+  set itemAttributes($4594.FeatureMap v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasItemAttributes() => $_has(4);
   @$pb.TagNumber(5)
   void clearItemAttributes() => clearField(5);
   @$pb.TagNumber(5)
-  $4592.FeatureMap ensureItemAttributes() => $_ensure(4);
+  $4594.FeatureMap ensureItemAttributes() => $_ensure(4);
 
   /// Optional. Language of the title/description/item_attributes. Use language
   /// tags defined by BCP 47. https://www.rfc-editor.org/rfc/bcp/bcp47.txt. Our

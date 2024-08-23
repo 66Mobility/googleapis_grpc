@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// The request message for
 /// [Changelogs.ListChangelogs][google.cloud.dialogflow.cx.v3beta1.Changelogs.ListChangelogs].
@@ -260,7 +260,7 @@ class Changelog extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? userEmail,
     $core.String? resource,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? displayName,
     $core.String? type,
     $core.String? action,
@@ -301,7 +301,7 @@ class Changelog extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'userEmail')
     ..aOS(3, _omitFieldNames ? '' : 'resource')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
     ..aOS(8, _omitFieldNames ? '' : 'type')
     ..aOS(11, _omitFieldNames ? '' : 'action')
@@ -364,15 +364,15 @@ class Changelog extends $pb.GeneratedMessage {
 
   /// The timestamp of the change.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// The affected resource display name of the change.
   @$pb.TagNumber(7)

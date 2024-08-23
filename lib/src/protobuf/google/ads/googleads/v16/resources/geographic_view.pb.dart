@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/geo_targeting_type.pbenum.dart' as $3011;
+import '../enums/geo_targeting_type.pbenum.dart' as $3012;
 
 ///  A geographic view.
 ///
@@ -25,7 +25,7 @@ import '../enums/geo_targeting_type.pbenum.dart' as $3011;
 class GeographicView extends $pb.GeneratedMessage {
   factory GeographicView({
     $core.String? resourceName,
-    $3011.GeoTargetingTypeEnum_GeoTargetingType? locationType,
+    $3012.GeoTargetingTypeEnum_GeoTargetingType? locationType,
     $fixnum.Int64? countryCriterionId,
   }) {
     final $result = create();
@@ -46,7 +46,7 @@ class GeographicView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GeographicView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3011.GeoTargetingTypeEnum_GeoTargetingType>(3, _omitFieldNames ? '' : 'locationType', $pb.PbFieldType.OE, defaultOrMaker: $3011.GeoTargetingTypeEnum_GeoTargetingType.UNSPECIFIED, valueOf: $3011.GeoTargetingTypeEnum_GeoTargetingType.valueOf, enumValues: $3011.GeoTargetingTypeEnum_GeoTargetingType.values)
+    ..e<$3012.GeoTargetingTypeEnum_GeoTargetingType>(3, _omitFieldNames ? '' : 'locationType', $pb.PbFieldType.OE, defaultOrMaker: $3012.GeoTargetingTypeEnum_GeoTargetingType.UNSPECIFIED, valueOf: $3012.GeoTargetingTypeEnum_GeoTargetingType.valueOf, enumValues: $3012.GeoTargetingTypeEnum_GeoTargetingType.values)
     ..aInt64(5, _omitFieldNames ? '' : 'countryCriterionId')
     ..hasRequiredFields = false
   ;
@@ -87,9 +87,9 @@ class GeographicView extends $pb.GeneratedMessage {
 
   /// Output only. Type of the geo targeting of the campaign.
   @$pb.TagNumber(3)
-  $3011.GeoTargetingTypeEnum_GeoTargetingType get locationType => $_getN(1);
+  $3012.GeoTargetingTypeEnum_GeoTargetingType get locationType => $_getN(1);
   @$pb.TagNumber(3)
-  set locationType($3011.GeoTargetingTypeEnum_GeoTargetingType v) { setField(3, v); }
+  set locationType($3012.GeoTargetingTypeEnum_GeoTargetingType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLocationType() => $_has(1);
   @$pb.TagNumber(3)

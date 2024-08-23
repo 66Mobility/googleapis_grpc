@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'dataset.pbenum.dart';
-import 'encryption_spec.pb.dart' as $4240;
-import 'io.pb.dart' as $4235;
-import 'saved_query.pb.dart' as $4249;
+import 'encryption_spec.pb.dart' as $4241;
+import 'io.pb.dart' as $4236;
+import 'saved_query.pb.dart' as $4250;
 
 export 'dataset.pbenum.dart';
 
@@ -29,14 +29,14 @@ class Dataset extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? metadataSchemaUri,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $1734.Value? metadata,
-    $core.Iterable<$4249.SavedQuery>? savedQueries,
+    $1735.Value? metadata,
+    $core.Iterable<$4250.SavedQuery>? savedQueries,
     $fixnum.Int64? dataItemCount,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.String? description,
     $core.String? metadataArtifact,
     $core.String? modelReference,
@@ -102,14 +102,14 @@ class Dataset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'metadataSchemaUri')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'Dataset.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$1734.Value>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Value.create)
-    ..pc<$4249.SavedQuery>(9, _omitFieldNames ? '' : 'savedQueries', $pb.PbFieldType.PM, subBuilder: $4249.SavedQuery.create)
+    ..aOM<$1735.Value>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Value.create)
+    ..pc<$4250.SavedQuery>(9, _omitFieldNames ? '' : 'savedQueries', $pb.PbFieldType.PM, subBuilder: $4250.SavedQuery.create)
     ..aInt64(10, _omitFieldNames ? '' : 'dataItemCount')
-    ..aOM<$4240.EncryptionSpec>(11, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(11, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOS(16, _omitFieldNames ? '' : 'description')
     ..aOS(17, _omitFieldNames ? '' : 'metadataArtifact')
     ..aOS(18, _omitFieldNames ? '' : 'modelReference')
@@ -176,27 +176,27 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Dataset was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Timestamp when this Dataset was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Used to perform consistent read-modify-write updates. If not set, a blind
   /// "overwrite" update happens.
@@ -230,15 +230,15 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// Required. Additional information about the Dataset.
   @$pb.TagNumber(8)
-  $1734.Value get metadata => $_getN(7);
+  $1735.Value get metadata => $_getN(7);
   @$pb.TagNumber(8)
-  set metadata($1734.Value v) { setField(8, v); }
+  set metadata($1735.Value v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMetadata() => $_has(7);
   @$pb.TagNumber(8)
   void clearMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $1734.Value ensureMetadata() => $_ensure(7);
+  $1735.Value ensureMetadata() => $_ensure(7);
 
   /// All SavedQueries belong to the Dataset will be returned in List/Get
   /// Dataset response. The annotation_specs field
@@ -248,7 +248,7 @@ class Dataset extends $pb.GeneratedMessage {
   /// this field is set, up to one SavedQuery can be set in CreateDatasetRequest.
   /// The SavedQuery should not contain any AnnotationSpec.
   @$pb.TagNumber(9)
-  $core.List<$4249.SavedQuery> get savedQueries => $_getList(8);
+  $core.List<$4250.SavedQuery> get savedQueries => $_getList(8);
 
   /// Output only. The number of DataItems in this Dataset. Only apply for
   /// non-structured Dataset.
@@ -264,15 +264,15 @@ class Dataset extends $pb.GeneratedMessage {
   /// Customer-managed encryption key spec for a Dataset. If set, this Dataset
   /// and all sub-resources of this Dataset will be secured by this key.
   @$pb.TagNumber(11)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(10);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(10);
   @$pb.TagNumber(11)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(11, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasEncryptionSpec() => $_has(10);
   @$pb.TagNumber(11)
   void clearEncryptionSpec() => clearField(11);
   @$pb.TagNumber(11)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(10);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(10);
 
   /// The description of the Dataset.
   @$pb.TagNumber(16)
@@ -338,7 +338,7 @@ enum ImportDataConfig_Source {
 /// with the labels that will be applied to the DataItems and the Annotations.
 class ImportDataConfig extends $pb.GeneratedMessage {
   factory ImportDataConfig({
-    $4235.GcsSource? gcsSource,
+    $4236.GcsSource? gcsSource,
     $core.Map<$core.String, $core.String>? dataItemLabels,
     $core.Map<$core.String, $core.String>? annotationLabels,
     $core.String? importSchemaUri,
@@ -368,7 +368,7 @@ class ImportDataConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDataConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$4235.GcsSource>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4235.GcsSource.create)
+    ..aOM<$4236.GcsSource>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4236.GcsSource.create)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'dataItemLabels', entryClassName: 'ImportDataConfig.DataItemLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'annotationLabels', entryClassName: 'ImportDataConfig.AnnotationLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..aOS(4, _omitFieldNames ? '' : 'importSchemaUri')
@@ -401,15 +401,15 @@ class ImportDataConfig extends $pb.GeneratedMessage {
 
   /// The Google Cloud Storage location for the input content.
   @$pb.TagNumber(1)
-  $4235.GcsSource get gcsSource => $_getN(0);
+  $4236.GcsSource get gcsSource => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsSource($4235.GcsSource v) { setField(1, v); }
+  set gcsSource($4236.GcsSource v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGcsSource() => $_has(0);
   @$pb.TagNumber(1)
   void clearGcsSource() => clearField(1);
   @$pb.TagNumber(1)
-  $4235.GcsSource ensureGcsSource() => $_ensure(0);
+  $4236.GcsSource ensureGcsSource() => $_ensure(0);
 
   /// Labels that will be applied to newly imported DataItems. If an identical
   /// DataItem as one being imported already exists in the Dataset, then these
@@ -469,7 +469,7 @@ enum ExportDataConfig_Split {
 /// the export and how to export.
 class ExportDataConfig extends $pb.GeneratedMessage {
   factory ExportDataConfig({
-    $4235.GcsDestination? gcsDestination,
+    $4236.GcsDestination? gcsDestination,
     $core.String? annotationsFilter,
     ExportDataConfig_ExportUse? exportUse,
     ExportFractionSplit? fractionSplit,
@@ -517,7 +517,7 @@ class ExportDataConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDataConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [1])
     ..oo(1, [5, 7])
-    ..aOM<$4235.GcsDestination>(1, _omitFieldNames ? '' : 'gcsDestination', subBuilder: $4235.GcsDestination.create)
+    ..aOM<$4236.GcsDestination>(1, _omitFieldNames ? '' : 'gcsDestination', subBuilder: $4236.GcsDestination.create)
     ..aOS(2, _omitFieldNames ? '' : 'annotationsFilter')
     ..e<ExportDataConfig_ExportUse>(4, _omitFieldNames ? '' : 'exportUse', $pb.PbFieldType.OE, defaultOrMaker: ExportDataConfig_ExportUse.EXPORT_USE_UNSPECIFIED, valueOf: ExportDataConfig_ExportUse.valueOf, enumValues: ExportDataConfig_ExportUse.values)
     ..aOM<ExportFractionSplit>(5, _omitFieldNames ? '' : 'fractionSplit', subBuilder: ExportFractionSplit.create)
@@ -564,15 +564,15 @@ class ExportDataConfig extends $pb.GeneratedMessage {
   /// these sub directories, a schema.yaml will be created to describe the
   /// output format.
   @$pb.TagNumber(1)
-  $4235.GcsDestination get gcsDestination => $_getN(0);
+  $4236.GcsDestination get gcsDestination => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsDestination($4235.GcsDestination v) { setField(1, v); }
+  set gcsDestination($4236.GcsDestination v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGcsDestination() => $_has(0);
   @$pb.TagNumber(1)
   void clearGcsDestination() => clearField(1);
   @$pb.TagNumber(1)
-  $4235.GcsDestination ensureGcsDestination() => $_ensure(0);
+  $4236.GcsDestination ensureGcsDestination() => $_ensure(0);
 
   /// An expression for filtering what part of the Dataset is to be exported.
   /// Only Annotations that match this filter will be exported. The filter syntax

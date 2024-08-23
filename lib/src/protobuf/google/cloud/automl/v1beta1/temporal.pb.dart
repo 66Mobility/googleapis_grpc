@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 
 /// A time period inside of an example that has a time dimension (e.g. video).
 class TimeSegment extends $pb.GeneratedMessage {
   factory TimeSegment({
-    $1737.Duration? startTimeOffset,
-    $1737.Duration? endTimeOffset,
+    $1738.Duration? startTimeOffset,
+    $1738.Duration? endTimeOffset,
   }) {
     final $result = create();
     if (startTimeOffset != null) {
@@ -35,8 +35,8 @@ class TimeSegment extends $pb.GeneratedMessage {
   factory TimeSegment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSegment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTimeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endTimeOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -64,28 +64,28 @@ class TimeSegment extends $pb.GeneratedMessage {
   /// Start of the time segment (inclusive), represented as the duration since
   /// the example start.
   @$pb.TagNumber(1)
-  $1737.Duration get startTimeOffset => $_getN(0);
+  $1738.Duration get startTimeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimeOffset($1737.Duration v) { setField(1, v); }
+  set startTimeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTimeOffset() => $_ensure(0);
+  $1738.Duration ensureStartTimeOffset() => $_ensure(0);
 
   /// End of the time segment (exclusive), represented as the duration since the
   /// example start.
   @$pb.TagNumber(2)
-  $1737.Duration get endTimeOffset => $_getN(1);
+  $1738.Duration get endTimeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endTimeOffset($1737.Duration v) { setField(2, v); }
+  set endTimeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndTimeOffset() => $_ensure(1);
+  $1738.Duration ensureEndTimeOffset() => $_ensure(1);
 }
 
 

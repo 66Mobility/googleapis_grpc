@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../api/httpbody.pb.dart' as $518;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'content.pb.dart' as $4259;
-import 'explanation.pb.dart' as $4239;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'content.pb.dart' as $4260;
+import 'explanation.pb.dart' as $4240;
 import 'prediction_service.pbenum.dart';
-import 'tool.pb.dart' as $4248;
-import 'types.pb.dart' as $4258;
+import 'tool.pb.dart' as $4249;
+import 'types.pb.dart' as $4259;
 
 export 'prediction_service.pbenum.dart';
 
@@ -28,8 +28,8 @@ export 'prediction_service.pbenum.dart';
 class PredictRequest extends $pb.GeneratedMessage {
   factory PredictRequest({
     $core.String? endpoint,
-    $core.Iterable<$1734.Value>? instances,
-    $1734.Value? parameters,
+    $core.Iterable<$1735.Value>? instances,
+    $1735.Value? parameters,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -49,8 +49,8 @@ class PredictRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
-    ..pc<$1734.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -97,7 +97,7 @@ class PredictRequest extends $pb.GeneratedMessage {
   /// [PredictSchemata's][google.cloud.aiplatform.v1.Model.predict_schemata]
   /// [instance_schema_uri][google.cloud.aiplatform.v1.PredictSchemata.instance_schema_uri].
   @$pb.TagNumber(2)
-  $core.List<$1734.Value> get instances => $_getList(1);
+  $core.List<$1735.Value> get instances => $_getList(1);
 
   /// The parameters that govern the prediction. The schema of the parameters may
   /// be specified via Endpoint's DeployedModels' [Model's
@@ -105,27 +105,27 @@ class PredictRequest extends $pb.GeneratedMessage {
   /// [PredictSchemata's][google.cloud.aiplatform.v1.Model.predict_schemata]
   /// [parameters_schema_uri][google.cloud.aiplatform.v1.PredictSchemata.parameters_schema_uri].
   @$pb.TagNumber(3)
-  $1734.Value get parameters => $_getN(2);
+  $1735.Value get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($1734.Value v) { setField(3, v); }
+  set parameters($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensureParameters() => $_ensure(2);
+  $1735.Value ensureParameters() => $_ensure(2);
 }
 
 /// Response message for
 /// [PredictionService.Predict][google.cloud.aiplatform.v1.PredictionService.Predict].
 class PredictResponse extends $pb.GeneratedMessage {
   factory PredictResponse({
-    $core.Iterable<$1734.Value>? predictions,
+    $core.Iterable<$1735.Value>? predictions,
     $core.String? deployedModelId,
     $core.String? model,
     $core.String? modelDisplayName,
     $core.String? modelVersionId,
-    $1734.Value? metadata,
+    $1735.Value? metadata,
   }) {
     final $result = create();
     if (predictions != null) {
@@ -153,12 +153,12 @@ class PredictResponse extends $pb.GeneratedMessage {
   factory PredictResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$1734.Value>(1, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(1, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..aOS(2, _omitFieldNames ? '' : 'deployedModelId')
     ..aOS(3, _omitFieldNames ? '' : 'model')
     ..aOS(4, _omitFieldNames ? '' : 'modelDisplayName')
     ..aOS(5, _omitFieldNames ? '' : 'modelVersionId')
-    ..aOM<$1734.Value>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -189,7 +189,7 @@ class PredictResponse extends $pb.GeneratedMessage {
   /// [PredictSchemata's][google.cloud.aiplatform.v1.Model.predict_schemata]
   /// [prediction_schema_uri][google.cloud.aiplatform.v1.PredictSchemata.prediction_schema_uri].
   @$pb.TagNumber(1)
-  $core.List<$1734.Value> get predictions => $_getList(0);
+  $core.List<$1735.Value> get predictions => $_getList(0);
 
   /// ID of the Endpoint's DeployedModel that served this prediction.
   @$pb.TagNumber(2)
@@ -238,15 +238,15 @@ class PredictResponse extends $pb.GeneratedMessage {
   /// Output only. Request-level metadata returned by the model. The metadata
   /// type will be dependent upon the model implementation.
   @$pb.TagNumber(6)
-  $1734.Value get metadata => $_getN(5);
+  $1735.Value get metadata => $_getN(5);
   @$pb.TagNumber(6)
-  set metadata($1734.Value v) { setField(6, v); }
+  set metadata($1735.Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMetadata() => $_has(5);
   @$pb.TagNumber(6)
   void clearMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Value ensureMetadata() => $_ensure(5);
+  $1735.Value ensureMetadata() => $_ensure(5);
 }
 
 /// Request message for
@@ -412,8 +412,8 @@ class StreamRawPredictRequest extends $pb.GeneratedMessage {
 class DirectPredictRequest extends $pb.GeneratedMessage {
   factory DirectPredictRequest({
     $core.String? endpoint,
-    $core.Iterable<$4258.Tensor>? inputs,
-    $4258.Tensor? parameters,
+    $core.Iterable<$4259.Tensor>? inputs,
+    $4259.Tensor? parameters,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -433,8 +433,8 @@ class DirectPredictRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DirectPredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
-    ..pc<$4258.Tensor>(2, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM, subBuilder: $4258.Tensor.create)
-    ..aOM<$4258.Tensor>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4258.Tensor.create)
+    ..pc<$4259.Tensor>(2, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM, subBuilder: $4259.Tensor.create)
+    ..aOM<$4259.Tensor>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4259.Tensor.create)
     ..hasRequiredFields = false
   ;
 
@@ -473,27 +473,27 @@ class DirectPredictRequest extends $pb.GeneratedMessage {
 
   /// The prediction input.
   @$pb.TagNumber(2)
-  $core.List<$4258.Tensor> get inputs => $_getList(1);
+  $core.List<$4259.Tensor> get inputs => $_getList(1);
 
   /// The parameters that govern the prediction.
   @$pb.TagNumber(3)
-  $4258.Tensor get parameters => $_getN(2);
+  $4259.Tensor get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($4258.Tensor v) { setField(3, v); }
+  set parameters($4259.Tensor v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $4258.Tensor ensureParameters() => $_ensure(2);
+  $4259.Tensor ensureParameters() => $_ensure(2);
 }
 
 /// Response message for
 /// [PredictionService.DirectPredict][google.cloud.aiplatform.v1.PredictionService.DirectPredict].
 class DirectPredictResponse extends $pb.GeneratedMessage {
   factory DirectPredictResponse({
-    $core.Iterable<$4258.Tensor>? outputs,
-    $4258.Tensor? parameters,
+    $core.Iterable<$4259.Tensor>? outputs,
+    $4259.Tensor? parameters,
   }) {
     final $result = create();
     if (outputs != null) {
@@ -509,8 +509,8 @@ class DirectPredictResponse extends $pb.GeneratedMessage {
   factory DirectPredictResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DirectPredictResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$4258.Tensor>(1, _omitFieldNames ? '' : 'outputs', $pb.PbFieldType.PM, subBuilder: $4258.Tensor.create)
-    ..aOM<$4258.Tensor>(2, _omitFieldNames ? '' : 'parameters', subBuilder: $4258.Tensor.create)
+    ..pc<$4259.Tensor>(1, _omitFieldNames ? '' : 'outputs', $pb.PbFieldType.PM, subBuilder: $4259.Tensor.create)
+    ..aOM<$4259.Tensor>(2, _omitFieldNames ? '' : 'parameters', subBuilder: $4259.Tensor.create)
     ..hasRequiredFields = false
   ;
 
@@ -537,19 +537,19 @@ class DirectPredictResponse extends $pb.GeneratedMessage {
 
   /// The prediction output.
   @$pb.TagNumber(1)
-  $core.List<$4258.Tensor> get outputs => $_getList(0);
+  $core.List<$4259.Tensor> get outputs => $_getList(0);
 
   /// The parameters that govern the prediction.
   @$pb.TagNumber(2)
-  $4258.Tensor get parameters => $_getN(1);
+  $4259.Tensor get parameters => $_getN(1);
   @$pb.TagNumber(2)
-  set parameters($4258.Tensor v) { setField(2, v); }
+  set parameters($4259.Tensor v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasParameters() => $_has(1);
   @$pb.TagNumber(2)
   void clearParameters() => clearField(2);
   @$pb.TagNumber(2)
-  $4258.Tensor ensureParameters() => $_ensure(1);
+  $4259.Tensor ensureParameters() => $_ensure(1);
 }
 
 /// Request message for
@@ -706,8 +706,8 @@ class DirectRawPredictResponse extends $pb.GeneratedMessage {
 class StreamDirectPredictRequest extends $pb.GeneratedMessage {
   factory StreamDirectPredictRequest({
     $core.String? endpoint,
-    $core.Iterable<$4258.Tensor>? inputs,
-    $4258.Tensor? parameters,
+    $core.Iterable<$4259.Tensor>? inputs,
+    $4259.Tensor? parameters,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -727,8 +727,8 @@ class StreamDirectPredictRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamDirectPredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
-    ..pc<$4258.Tensor>(2, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM, subBuilder: $4258.Tensor.create)
-    ..aOM<$4258.Tensor>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4258.Tensor.create)
+    ..pc<$4259.Tensor>(2, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM, subBuilder: $4259.Tensor.create)
+    ..aOM<$4259.Tensor>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4259.Tensor.create)
     ..hasRequiredFields = false
   ;
 
@@ -767,27 +767,27 @@ class StreamDirectPredictRequest extends $pb.GeneratedMessage {
 
   /// Optional. The prediction input.
   @$pb.TagNumber(2)
-  $core.List<$4258.Tensor> get inputs => $_getList(1);
+  $core.List<$4259.Tensor> get inputs => $_getList(1);
 
   /// Optional. The parameters that govern the prediction.
   @$pb.TagNumber(3)
-  $4258.Tensor get parameters => $_getN(2);
+  $4259.Tensor get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($4258.Tensor v) { setField(3, v); }
+  set parameters($4259.Tensor v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $4258.Tensor ensureParameters() => $_ensure(2);
+  $4259.Tensor ensureParameters() => $_ensure(2);
 }
 
 /// Response message for
 /// [PredictionService.StreamDirectPredict][google.cloud.aiplatform.v1.PredictionService.StreamDirectPredict].
 class StreamDirectPredictResponse extends $pb.GeneratedMessage {
   factory StreamDirectPredictResponse({
-    $core.Iterable<$4258.Tensor>? outputs,
-    $4258.Tensor? parameters,
+    $core.Iterable<$4259.Tensor>? outputs,
+    $4259.Tensor? parameters,
   }) {
     final $result = create();
     if (outputs != null) {
@@ -803,8 +803,8 @@ class StreamDirectPredictResponse extends $pb.GeneratedMessage {
   factory StreamDirectPredictResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamDirectPredictResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$4258.Tensor>(1, _omitFieldNames ? '' : 'outputs', $pb.PbFieldType.PM, subBuilder: $4258.Tensor.create)
-    ..aOM<$4258.Tensor>(2, _omitFieldNames ? '' : 'parameters', subBuilder: $4258.Tensor.create)
+    ..pc<$4259.Tensor>(1, _omitFieldNames ? '' : 'outputs', $pb.PbFieldType.PM, subBuilder: $4259.Tensor.create)
+    ..aOM<$4259.Tensor>(2, _omitFieldNames ? '' : 'parameters', subBuilder: $4259.Tensor.create)
     ..hasRequiredFields = false
   ;
 
@@ -831,19 +831,19 @@ class StreamDirectPredictResponse extends $pb.GeneratedMessage {
 
   /// The prediction output.
   @$pb.TagNumber(1)
-  $core.List<$4258.Tensor> get outputs => $_getList(0);
+  $core.List<$4259.Tensor> get outputs => $_getList(0);
 
   /// The parameters that govern the prediction.
   @$pb.TagNumber(2)
-  $4258.Tensor get parameters => $_getN(1);
+  $4259.Tensor get parameters => $_getN(1);
   @$pb.TagNumber(2)
-  set parameters($4258.Tensor v) { setField(2, v); }
+  set parameters($4259.Tensor v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasParameters() => $_has(1);
   @$pb.TagNumber(2)
   void clearParameters() => clearField(2);
   @$pb.TagNumber(2)
-  $4258.Tensor ensureParameters() => $_ensure(1);
+  $4259.Tensor ensureParameters() => $_ensure(1);
 }
 
 ///  Request message for
@@ -1010,8 +1010,8 @@ class StreamDirectRawPredictResponse extends $pb.GeneratedMessage {
 class StreamingPredictRequest extends $pb.GeneratedMessage {
   factory StreamingPredictRequest({
     $core.String? endpoint,
-    $core.Iterable<$4258.Tensor>? inputs,
-    $4258.Tensor? parameters,
+    $core.Iterable<$4259.Tensor>? inputs,
+    $4259.Tensor? parameters,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -1031,8 +1031,8 @@ class StreamingPredictRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingPredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
-    ..pc<$4258.Tensor>(2, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM, subBuilder: $4258.Tensor.create)
-    ..aOM<$4258.Tensor>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4258.Tensor.create)
+    ..pc<$4259.Tensor>(2, _omitFieldNames ? '' : 'inputs', $pb.PbFieldType.PM, subBuilder: $4259.Tensor.create)
+    ..aOM<$4259.Tensor>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $4259.Tensor.create)
     ..hasRequiredFields = false
   ;
 
@@ -1071,27 +1071,27 @@ class StreamingPredictRequest extends $pb.GeneratedMessage {
 
   /// The prediction input.
   @$pb.TagNumber(2)
-  $core.List<$4258.Tensor> get inputs => $_getList(1);
+  $core.List<$4259.Tensor> get inputs => $_getList(1);
 
   /// The parameters that govern the prediction.
   @$pb.TagNumber(3)
-  $4258.Tensor get parameters => $_getN(2);
+  $4259.Tensor get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($4258.Tensor v) { setField(3, v); }
+  set parameters($4259.Tensor v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $4258.Tensor ensureParameters() => $_ensure(2);
+  $4259.Tensor ensureParameters() => $_ensure(2);
 }
 
 /// Response message for
 /// [PredictionService.StreamingPredict][google.cloud.aiplatform.v1.PredictionService.StreamingPredict].
 class StreamingPredictResponse extends $pb.GeneratedMessage {
   factory StreamingPredictResponse({
-    $core.Iterable<$4258.Tensor>? outputs,
-    $4258.Tensor? parameters,
+    $core.Iterable<$4259.Tensor>? outputs,
+    $4259.Tensor? parameters,
   }) {
     final $result = create();
     if (outputs != null) {
@@ -1107,8 +1107,8 @@ class StreamingPredictResponse extends $pb.GeneratedMessage {
   factory StreamingPredictResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingPredictResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$4258.Tensor>(1, _omitFieldNames ? '' : 'outputs', $pb.PbFieldType.PM, subBuilder: $4258.Tensor.create)
-    ..aOM<$4258.Tensor>(2, _omitFieldNames ? '' : 'parameters', subBuilder: $4258.Tensor.create)
+    ..pc<$4259.Tensor>(1, _omitFieldNames ? '' : 'outputs', $pb.PbFieldType.PM, subBuilder: $4259.Tensor.create)
+    ..aOM<$4259.Tensor>(2, _omitFieldNames ? '' : 'parameters', subBuilder: $4259.Tensor.create)
     ..hasRequiredFields = false
   ;
 
@@ -1135,19 +1135,19 @@ class StreamingPredictResponse extends $pb.GeneratedMessage {
 
   /// The prediction output.
   @$pb.TagNumber(1)
-  $core.List<$4258.Tensor> get outputs => $_getList(0);
+  $core.List<$4259.Tensor> get outputs => $_getList(0);
 
   /// The parameters that govern the prediction.
   @$pb.TagNumber(2)
-  $4258.Tensor get parameters => $_getN(1);
+  $4259.Tensor get parameters => $_getN(1);
   @$pb.TagNumber(2)
-  set parameters($4258.Tensor v) { setField(2, v); }
+  set parameters($4259.Tensor v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasParameters() => $_has(1);
   @$pb.TagNumber(2)
   void clearParameters() => clearField(2);
   @$pb.TagNumber(2)
-  $4258.Tensor ensureParameters() => $_ensure(1);
+  $4259.Tensor ensureParameters() => $_ensure(1);
 }
 
 ///  Request message for
@@ -1310,10 +1310,10 @@ class StreamingRawPredictResponse extends $pb.GeneratedMessage {
 class ExplainRequest extends $pb.GeneratedMessage {
   factory ExplainRequest({
     $core.String? endpoint,
-    $core.Iterable<$1734.Value>? instances,
+    $core.Iterable<$1735.Value>? instances,
     $core.String? deployedModelId,
-    $1734.Value? parameters,
-    $4239.ExplanationSpecOverride? explanationSpecOverride,
+    $1735.Value? parameters,
+    $4240.ExplanationSpecOverride? explanationSpecOverride,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -1339,10 +1339,10 @@ class ExplainRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplainRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
-    ..pc<$1734.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'deployedModelId')
-    ..aOM<$1734.Value>(4, _omitFieldNames ? '' : 'parameters', subBuilder: $1734.Value.create)
-    ..aOM<$4239.ExplanationSpecOverride>(5, _omitFieldNames ? '' : 'explanationSpecOverride', subBuilder: $4239.ExplanationSpecOverride.create)
+    ..aOM<$1735.Value>(4, _omitFieldNames ? '' : 'parameters', subBuilder: $1735.Value.create)
+    ..aOM<$4240.ExplanationSpecOverride>(5, _omitFieldNames ? '' : 'explanationSpecOverride', subBuilder: $4240.ExplanationSpecOverride.create)
     ..hasRequiredFields = false
   ;
 
@@ -1389,7 +1389,7 @@ class ExplainRequest extends $pb.GeneratedMessage {
   /// [PredictSchemata's][google.cloud.aiplatform.v1.Model.predict_schemata]
   /// [instance_schema_uri][google.cloud.aiplatform.v1.PredictSchemata.instance_schema_uri].
   @$pb.TagNumber(2)
-  $core.List<$1734.Value> get instances => $_getList(1);
+  $core.List<$1735.Value> get instances => $_getList(1);
 
   /// If specified, this ExplainRequest will be served by the chosen
   /// DeployedModel, overriding
@@ -1409,15 +1409,15 @@ class ExplainRequest extends $pb.GeneratedMessage {
   /// [PredictSchemata's][google.cloud.aiplatform.v1.Model.predict_schemata]
   /// [parameters_schema_uri][google.cloud.aiplatform.v1.PredictSchemata.parameters_schema_uri].
   @$pb.TagNumber(4)
-  $1734.Value get parameters => $_getN(3);
+  $1735.Value get parameters => $_getN(3);
   @$pb.TagNumber(4)
-  set parameters($1734.Value v) { setField(4, v); }
+  set parameters($1735.Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasParameters() => $_has(3);
   @$pb.TagNumber(4)
   void clearParameters() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Value ensureParameters() => $_ensure(3);
+  $1735.Value ensureParameters() => $_ensure(3);
 
   /// If specified, overrides the
   /// [explanation_spec][google.cloud.aiplatform.v1.DeployedModel.explanation_spec]
@@ -1428,24 +1428,24 @@ class ExplainRequest extends $pb.GeneratedMessage {
   ///    approximate errors;
   ///  - Using different baselines for explaining the prediction results.
   @$pb.TagNumber(5)
-  $4239.ExplanationSpecOverride get explanationSpecOverride => $_getN(4);
+  $4240.ExplanationSpecOverride get explanationSpecOverride => $_getN(4);
   @$pb.TagNumber(5)
-  set explanationSpecOverride($4239.ExplanationSpecOverride v) { setField(5, v); }
+  set explanationSpecOverride($4240.ExplanationSpecOverride v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExplanationSpecOverride() => $_has(4);
   @$pb.TagNumber(5)
   void clearExplanationSpecOverride() => clearField(5);
   @$pb.TagNumber(5)
-  $4239.ExplanationSpecOverride ensureExplanationSpecOverride() => $_ensure(4);
+  $4240.ExplanationSpecOverride ensureExplanationSpecOverride() => $_ensure(4);
 }
 
 /// Response message for
 /// [PredictionService.Explain][google.cloud.aiplatform.v1.PredictionService.Explain].
 class ExplainResponse extends $pb.GeneratedMessage {
   factory ExplainResponse({
-    $core.Iterable<$4239.Explanation>? explanations,
+    $core.Iterable<$4240.Explanation>? explanations,
     $core.String? deployedModelId,
-    $core.Iterable<$1734.Value>? predictions,
+    $core.Iterable<$1735.Value>? predictions,
   }) {
     final $result = create();
     if (explanations != null) {
@@ -1464,9 +1464,9 @@ class ExplainResponse extends $pb.GeneratedMessage {
   factory ExplainResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplainResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$4239.Explanation>(1, _omitFieldNames ? '' : 'explanations', $pb.PbFieldType.PM, subBuilder: $4239.Explanation.create)
+    ..pc<$4240.Explanation>(1, _omitFieldNames ? '' : 'explanations', $pb.PbFieldType.PM, subBuilder: $4240.Explanation.create)
     ..aOS(2, _omitFieldNames ? '' : 'deployedModelId')
-    ..pc<$1734.Value>(3, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(3, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1498,7 +1498,7 @@ class ExplainResponse extends $pb.GeneratedMessage {
   ///  [instances][google.cloud.aiplatform.v1.ExplainRequest.instances] to be
   ///  explained.
   @$pb.TagNumber(1)
-  $core.List<$4239.Explanation> get explanations => $_getList(0);
+  $core.List<$4240.Explanation> get explanations => $_getList(0);
 
   /// ID of the Endpoint's DeployedModel that served this explanation.
   @$pb.TagNumber(2)
@@ -1514,18 +1514,18 @@ class ExplainResponse extends $pb.GeneratedMessage {
   /// Same as
   /// [PredictResponse.predictions][google.cloud.aiplatform.v1.PredictResponse.predictions].
   @$pb.TagNumber(3)
-  $core.List<$1734.Value> get predictions => $_getList(2);
+  $core.List<$1735.Value> get predictions => $_getList(2);
 }
 
 /// Request message for [PredictionService.CountTokens][].
 class CountTokensRequest extends $pb.GeneratedMessage {
   factory CountTokensRequest({
     $core.String? endpoint,
-    $core.Iterable<$1734.Value>? instances,
+    $core.Iterable<$1735.Value>? instances,
     $core.String? model,
-    $core.Iterable<$4259.Content>? contents,
-    $4259.Content? systemInstruction,
-    $core.Iterable<$4248.Tool>? tools,
+    $core.Iterable<$4260.Content>? contents,
+    $4260.Content? systemInstruction,
+    $core.Iterable<$4249.Tool>? tools,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -1554,11 +1554,11 @@ class CountTokensRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CountTokensRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'endpoint')
-    ..pc<$1734.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1734.Value.create)
+    ..pc<$1735.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $1735.Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'model')
-    ..pc<$4259.Content>(4, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4259.Content.create)
-    ..aOM<$4259.Content>(5, _omitFieldNames ? '' : 'systemInstruction', subBuilder: $4259.Content.create)
-    ..pc<$4248.Tool>(6, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM, subBuilder: $4248.Tool.create)
+    ..pc<$4260.Content>(4, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4260.Content.create)
+    ..aOM<$4260.Content>(5, _omitFieldNames ? '' : 'systemInstruction', subBuilder: $4260.Content.create)
+    ..pc<$4249.Tool>(6, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM, subBuilder: $4249.Tool.create)
     ..hasRequiredFields = false
   ;
 
@@ -1598,7 +1598,7 @@ class CountTokensRequest extends $pb.GeneratedMessage {
   /// Optional. The instances that are the input to token counting call.
   /// Schema is identical to the prediction schema of the underlying model.
   @$pb.TagNumber(2)
-  $core.List<$1734.Value> get instances => $_getList(1);
+  $core.List<$1735.Value> get instances => $_getList(1);
 
   /// Optional. The name of the publisher model requested to serve the
   /// prediction. Format:
@@ -1614,21 +1614,21 @@ class CountTokensRequest extends $pb.GeneratedMessage {
 
   /// Optional. Input content.
   @$pb.TagNumber(4)
-  $core.List<$4259.Content> get contents => $_getList(3);
+  $core.List<$4260.Content> get contents => $_getList(3);
 
   /// Optional. The user provided system instructions for the model.
   /// Note: only text should be used in parts and content in each part will be in
   /// a separate paragraph.
   @$pb.TagNumber(5)
-  $4259.Content get systemInstruction => $_getN(4);
+  $4260.Content get systemInstruction => $_getN(4);
   @$pb.TagNumber(5)
-  set systemInstruction($4259.Content v) { setField(5, v); }
+  set systemInstruction($4260.Content v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSystemInstruction() => $_has(4);
   @$pb.TagNumber(5)
   void clearSystemInstruction() => clearField(5);
   @$pb.TagNumber(5)
-  $4259.Content ensureSystemInstruction() => $_ensure(4);
+  $4260.Content ensureSystemInstruction() => $_ensure(4);
 
   ///  Optional. A list of `Tools` the model may use to generate the next
   ///  response.
@@ -1637,7 +1637,7 @@ class CountTokensRequest extends $pb.GeneratedMessage {
   ///  external systems to perform an action, or set of actions, outside of
   ///  knowledge and scope of the model.
   @$pb.TagNumber(6)
-  $core.List<$4248.Tool> get tools => $_getList(5);
+  $core.List<$4249.Tool> get tools => $_getList(5);
 }
 
 /// Response message for [PredictionService.CountTokens][].
@@ -1711,13 +1711,13 @@ class CountTokensResponse extends $pb.GeneratedMessage {
 /// Request message for [PredictionService.GenerateContent].
 class GenerateContentRequest extends $pb.GeneratedMessage {
   factory GenerateContentRequest({
-    $core.Iterable<$4259.Content>? contents,
-    $core.Iterable<$4259.SafetySetting>? safetySettings,
-    $4259.GenerationConfig? generationConfig,
+    $core.Iterable<$4260.Content>? contents,
+    $core.Iterable<$4260.SafetySetting>? safetySettings,
+    $4260.GenerationConfig? generationConfig,
     $core.String? model,
-    $core.Iterable<$4248.Tool>? tools,
-    $4248.ToolConfig? toolConfig,
-    $4259.Content? systemInstruction,
+    $core.Iterable<$4249.Tool>? tools,
+    $4249.ToolConfig? toolConfig,
+    $4260.Content? systemInstruction,
   }) {
     final $result = create();
     if (contents != null) {
@@ -1748,13 +1748,13 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   factory GenerateContentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$4259.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4259.Content.create)
-    ..pc<$4259.SafetySetting>(3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM, subBuilder: $4259.SafetySetting.create)
-    ..aOM<$4259.GenerationConfig>(4, _omitFieldNames ? '' : 'generationConfig', subBuilder: $4259.GenerationConfig.create)
+    ..pc<$4260.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $4260.Content.create)
+    ..pc<$4260.SafetySetting>(3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM, subBuilder: $4260.SafetySetting.create)
+    ..aOM<$4260.GenerationConfig>(4, _omitFieldNames ? '' : 'generationConfig', subBuilder: $4260.GenerationConfig.create)
     ..aOS(5, _omitFieldNames ? '' : 'model')
-    ..pc<$4248.Tool>(6, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM, subBuilder: $4248.Tool.create)
-    ..aOM<$4248.ToolConfig>(7, _omitFieldNames ? '' : 'toolConfig', subBuilder: $4248.ToolConfig.create)
-    ..aOM<$4259.Content>(8, _omitFieldNames ? '' : 'systemInstruction', subBuilder: $4259.Content.create)
+    ..pc<$4249.Tool>(6, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM, subBuilder: $4249.Tool.create)
+    ..aOM<$4249.ToolConfig>(7, _omitFieldNames ? '' : 'toolConfig', subBuilder: $4249.ToolConfig.create)
+    ..aOM<$4260.Content>(8, _omitFieldNames ? '' : 'systemInstruction', subBuilder: $4260.Content.create)
     ..hasRequiredFields = false
   ;
 
@@ -1785,24 +1785,24 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  this is a repeated field that contains conversation history + latest
   ///  request.
   @$pb.TagNumber(2)
-  $core.List<$4259.Content> get contents => $_getList(0);
+  $core.List<$4260.Content> get contents => $_getList(0);
 
   /// Optional. Per request settings for blocking unsafe content.
   /// Enforced on GenerateContentResponse.candidates.
   @$pb.TagNumber(3)
-  $core.List<$4259.SafetySetting> get safetySettings => $_getList(1);
+  $core.List<$4260.SafetySetting> get safetySettings => $_getList(1);
 
   /// Optional. Generation config.
   @$pb.TagNumber(4)
-  $4259.GenerationConfig get generationConfig => $_getN(2);
+  $4260.GenerationConfig get generationConfig => $_getN(2);
   @$pb.TagNumber(4)
-  set generationConfig($4259.GenerationConfig v) { setField(4, v); }
+  set generationConfig($4260.GenerationConfig v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGenerationConfig() => $_has(2);
   @$pb.TagNumber(4)
   void clearGenerationConfig() => clearField(4);
   @$pb.TagNumber(4)
-  $4259.GenerationConfig ensureGenerationConfig() => $_ensure(2);
+  $4260.GenerationConfig ensureGenerationConfig() => $_ensure(2);
 
   ///  Required. The fully qualified name of the publisher model or tuned model
   ///  endpoint to use.
@@ -1828,41 +1828,41 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  external systems to perform an action, or set of actions, outside of
   ///  knowledge and scope of the model.
   @$pb.TagNumber(6)
-  $core.List<$4248.Tool> get tools => $_getList(4);
+  $core.List<$4249.Tool> get tools => $_getList(4);
 
   /// Optional. Tool config. This config is shared for all tools provided in the
   /// request.
   @$pb.TagNumber(7)
-  $4248.ToolConfig get toolConfig => $_getN(5);
+  $4249.ToolConfig get toolConfig => $_getN(5);
   @$pb.TagNumber(7)
-  set toolConfig($4248.ToolConfig v) { setField(7, v); }
+  set toolConfig($4249.ToolConfig v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasToolConfig() => $_has(5);
   @$pb.TagNumber(7)
   void clearToolConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $4248.ToolConfig ensureToolConfig() => $_ensure(5);
+  $4249.ToolConfig ensureToolConfig() => $_ensure(5);
 
   /// Optional. The user provided system instructions for the model.
   /// Note: only text should be used in parts and content in each part will be in
   /// a separate paragraph.
   @$pb.TagNumber(8)
-  $4259.Content get systemInstruction => $_getN(6);
+  $4260.Content get systemInstruction => $_getN(6);
   @$pb.TagNumber(8)
-  set systemInstruction($4259.Content v) { setField(8, v); }
+  set systemInstruction($4260.Content v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSystemInstruction() => $_has(6);
   @$pb.TagNumber(8)
   void clearSystemInstruction() => clearField(8);
   @$pb.TagNumber(8)
-  $4259.Content ensureSystemInstruction() => $_ensure(6);
+  $4260.Content ensureSystemInstruction() => $_ensure(6);
 }
 
 /// Content filter results for a prompt sent in the request.
 class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
   factory GenerateContentResponse_PromptFeedback({
     GenerateContentResponse_PromptFeedback_BlockedReason? blockReason,
-    $core.Iterable<$4259.SafetyRating>? safetyRatings,
+    $core.Iterable<$4260.SafetyRating>? safetyRatings,
     $core.String? blockReasonMessage,
   }) {
     final $result = create();
@@ -1883,7 +1883,7 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateContentResponse.PromptFeedback', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..e<GenerateContentResponse_PromptFeedback_BlockedReason>(1, _omitFieldNames ? '' : 'blockReason', $pb.PbFieldType.OE, defaultOrMaker: GenerateContentResponse_PromptFeedback_BlockedReason.BLOCKED_REASON_UNSPECIFIED, valueOf: GenerateContentResponse_PromptFeedback_BlockedReason.valueOf, enumValues: GenerateContentResponse_PromptFeedback_BlockedReason.values)
-    ..pc<$4259.SafetyRating>(2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $4259.SafetyRating.create)
+    ..pc<$4260.SafetyRating>(2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $4260.SafetyRating.create)
     ..aOS(3, _omitFieldNames ? '' : 'blockReasonMessage')
     ..hasRequiredFields = false
   ;
@@ -1921,7 +1921,7 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
 
   /// Output only. Safety ratings.
   @$pb.TagNumber(2)
-  $core.List<$4259.SafetyRating> get safetyRatings => $_getList(1);
+  $core.List<$4260.SafetyRating> get safetyRatings => $_getList(1);
 
   /// Output only. A readable block reason message.
   @$pb.TagNumber(3)
@@ -2020,7 +2020,7 @@ class GenerateContentResponse_UsageMetadata extends $pb.GeneratedMessage {
 /// Response message for [PredictionService.GenerateContent].
 class GenerateContentResponse extends $pb.GeneratedMessage {
   factory GenerateContentResponse({
-    $core.Iterable<$4259.Candidate>? candidates,
+    $core.Iterable<$4260.Candidate>? candidates,
     GenerateContentResponse_PromptFeedback? promptFeedback,
     GenerateContentResponse_UsageMetadata? usageMetadata,
   }) {
@@ -2041,7 +2041,7 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
   factory GenerateContentResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateContentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..pc<$4259.Candidate>(2, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: $4259.Candidate.create)
+    ..pc<$4260.Candidate>(2, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: $4260.Candidate.create)
     ..aOM<GenerateContentResponse_PromptFeedback>(3, _omitFieldNames ? '' : 'promptFeedback', subBuilder: GenerateContentResponse_PromptFeedback.create)
     ..aOM<GenerateContentResponse_UsageMetadata>(4, _omitFieldNames ? '' : 'usageMetadata', subBuilder: GenerateContentResponse_UsageMetadata.create)
     ..hasRequiredFields = false
@@ -2070,7 +2070,7 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
 
   /// Output only. Generated candidates.
   @$pb.TagNumber(2)
-  $core.List<$4259.Candidate> get candidates => $_getList(0);
+  $core.List<$4260.Candidate> get candidates => $_getList(0);
 
   /// Output only. Content filter results for a prompt sent in the request.
   /// Note: Sent only in the first stream chunk.

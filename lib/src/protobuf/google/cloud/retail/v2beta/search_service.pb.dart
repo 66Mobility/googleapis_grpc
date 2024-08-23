@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'common.pb.dart' as $4598;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'common.pb.dart' as $4600;
 import 'product.pb.dart' as $1306;
 import 'search_service.pbenum.dart';
 
@@ -26,7 +26,7 @@ export 'search_service.pbenum.dart';
 class SearchRequest_FacetSpec_FacetKey extends $pb.GeneratedMessage {
   factory SearchRequest_FacetSpec_FacetKey({
     $core.String? key,
-    $core.Iterable<$4598.Interval>? intervals,
+    $core.Iterable<$4600.Interval>? intervals,
     $core.Iterable<$core.String>? restrictedValues,
     $core.String? orderBy,
     $core.String? query,
@@ -71,7 +71,7 @@ class SearchRequest_FacetSpec_FacetKey extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchRequest.FacetSpec.FacetKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..pc<$4598.Interval>(2, _omitFieldNames ? '' : 'intervals', $pb.PbFieldType.PM, subBuilder: $4598.Interval.create)
+    ..pc<$4600.Interval>(2, _omitFieldNames ? '' : 'intervals', $pb.PbFieldType.PM, subBuilder: $4600.Interval.create)
     ..pPS(3, _omitFieldNames ? '' : 'restrictedValues')
     ..aOS(4, _omitFieldNames ? '' : 'orderBy')
     ..aOS(5, _omitFieldNames ? '' : 'query')
@@ -166,7 +166,7 @@ class SearchRequest_FacetSpec_FacetKey extends $pb.GeneratedMessage {
   ///  facet key intervals are specified in the request, then the specified
   ///  intervals are returned instead.
   @$pb.TagNumber(2)
-  $core.List<$4598.Interval> get intervals => $_getList(1);
+  $core.List<$4600.Interval> get intervals => $_getList(1);
 
   ///  Only get facet for the given restricted values. For example, when using
   ///  "pickupInStore" as key and set restricted values to
@@ -854,7 +854,7 @@ class SearchRequest extends $pb.GeneratedMessage {
     $core.String? branch,
     $core.String? query,
     $core.String? visitorId,
-    $4598.UserInfo? userInfo,
+    $4600.UserInfo? userInfo,
     $core.int? pageSize,
     $core.String? pageToken,
     $core.int? offset,
@@ -953,7 +953,7 @@ class SearchRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'branch')
     ..aOS(3, _omitFieldNames ? '' : 'query')
     ..aOS(4, _omitFieldNames ? '' : 'visitorId')
-    ..aOM<$4598.UserInfo>(5, _omitFieldNames ? '' : 'userInfo', subBuilder: $4598.UserInfo.create)
+    ..aOM<$4600.UserInfo>(5, _omitFieldNames ? '' : 'userInfo', subBuilder: $4600.UserInfo.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'pageToken')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
@@ -1060,15 +1060,15 @@ class SearchRequest extends $pb.GeneratedMessage {
 
   /// User information.
   @$pb.TagNumber(5)
-  $4598.UserInfo get userInfo => $_getN(4);
+  $4600.UserInfo get userInfo => $_getN(4);
   @$pb.TagNumber(5)
-  set userInfo($4598.UserInfo v) { setField(5, v); }
+  set userInfo($4600.UserInfo v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUserInfo() => $_has(4);
   @$pb.TagNumber(5)
   void clearUserInfo() => clearField(5);
   @$pb.TagNumber(5)
-  $4598.UserInfo ensureUserInfo() => $_ensure(4);
+  $4600.UserInfo ensureUserInfo() => $_ensure(4);
 
   ///  Maximum number of [Product][google.cloud.retail.v2beta.Product]s to return.
   ///  If unspecified, defaults to a reasonable value. The maximum allowed value
@@ -1409,8 +1409,8 @@ class SearchResponse_SearchResult extends $pb.GeneratedMessage {
     $core.String? id,
     $1306.Product? product,
     $core.int? matchingVariantCount,
-    $core.Map<$core.String, $2209.FieldMask>? matchingVariantFields,
-    $core.Map<$core.String, $1734.Value>? variantRollupValues,
+    $core.Map<$core.String, $2210.FieldMask>? matchingVariantFields,
+    $core.Map<$core.String, $1735.Value>? variantRollupValues,
     $core.Iterable<$core.String>? personalLabels,
   }) {
     final $result = create();
@@ -1442,8 +1442,8 @@ class SearchResponse_SearchResult extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOM<$1306.Product>(2, _omitFieldNames ? '' : 'product', subBuilder: $1306.Product.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'matchingVariantCount', $pb.PbFieldType.O3)
-    ..m<$core.String, $2209.FieldMask>(4, _omitFieldNames ? '' : 'matchingVariantFields', entryClassName: 'SearchResponse.SearchResult.MatchingVariantFieldsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $2209.FieldMask.create, valueDefaultOrMaker: $2209.FieldMask.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
-    ..m<$core.String, $1734.Value>(5, _omitFieldNames ? '' : 'variantRollupValues', entryClassName: 'SearchResponse.SearchResult.VariantRollupValuesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
+    ..m<$core.String, $2210.FieldMask>(4, _omitFieldNames ? '' : 'matchingVariantFields', entryClassName: 'SearchResponse.SearchResult.MatchingVariantFieldsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $2210.FieldMask.create, valueDefaultOrMaker: $2210.FieldMask.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
+    ..m<$core.String, $1735.Value>(5, _omitFieldNames ? '' : 'variantRollupValues', entryClassName: 'SearchResponse.SearchResult.VariantRollupValuesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2beta'))
     ..pPS(7, _omitFieldNames ? '' : 'personalLabels')
     ..hasRequiredFields = false
   ;
@@ -1530,7 +1530,7 @@ class SearchResponse_SearchResult extends $pb.GeneratedMessage {
   ///  "products.color_info" indicates there is a match between
   ///  "sku1" [ColorInfo][google.cloud.retail.v2beta.ColorInfo] and the query.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $2209.FieldMask> get matchingVariantFields => $_getMap(3);
+  $core.Map<$core.String, $2210.FieldMask> get matchingVariantFields => $_getMap(3);
 
   ///  The rollup matching
   ///  [variant][google.cloud.retail.v2beta.Product.Type.VARIANT]
@@ -1564,7 +1564,7 @@ class SearchResponse_SearchResult extends $pb.GeneratedMessage {
   ///  `{key: "pickupInStore.store1" value { number_value: 10 }}` means a there
   ///  are 10 variants in this product are available in the store "store1".
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $1734.Value> get variantRollupValues => $_getMap(4);
+  $core.Map<$core.String, $1735.Value> get variantRollupValues => $_getMap(4);
 
   ///  Specifies previous events related to this product for this user based on
   ///  [UserEvent][google.cloud.retail.v2beta.UserEvent] with same
@@ -1593,7 +1593,7 @@ enum SearchResponse_Facet_FacetValue_FacetValue {
 class SearchResponse_Facet_FacetValue extends $pb.GeneratedMessage {
   factory SearchResponse_Facet_FacetValue({
     $core.String? value,
-    $4598.Interval? interval,
+    $4600.Interval? interval,
     $fixnum.Int64? count,
     $core.double? minValue,
     $core.double? maxValue,
@@ -1628,7 +1628,7 @@ class SearchResponse_Facet_FacetValue extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchResponse.Facet.FacetValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'value')
-    ..aOM<$4598.Interval>(2, _omitFieldNames ? '' : 'interval', subBuilder: $4598.Interval.create)
+    ..aOM<$4600.Interval>(2, _omitFieldNames ? '' : 'interval', subBuilder: $4600.Interval.create)
     ..aInt64(3, _omitFieldNames ? '' : 'count')
     ..a<$core.double>(5, _omitFieldNames ? '' : 'minValue', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'maxValue', $pb.PbFieldType.OD)
@@ -1671,15 +1671,15 @@ class SearchResponse_Facet_FacetValue extends $pb.GeneratedMessage {
 
   /// Interval value for a facet, such as [10, 20) for facet "price".
   @$pb.TagNumber(2)
-  $4598.Interval get interval => $_getN(1);
+  $4600.Interval get interval => $_getN(1);
   @$pb.TagNumber(2)
-  set interval($4598.Interval v) { setField(2, v); }
+  set interval($4600.Interval v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInterval() => $_has(1);
   @$pb.TagNumber(2)
   void clearInterval() => clearField(2);
   @$pb.TagNumber(2)
-  $4598.Interval ensureInterval() => $_ensure(1);
+  $4600.Interval ensureInterval() => $_ensure(1);
 
   /// Number of items that have this facet value.
   @$pb.TagNumber(3)

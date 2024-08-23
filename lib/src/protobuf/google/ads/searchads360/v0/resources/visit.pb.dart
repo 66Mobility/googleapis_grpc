@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_field_type.pbenum.dart' as $4034;
-import '../enums/product_channel.pbenum.dart' as $3994;
+import '../enums/asset_field_type.pbenum.dart' as $4035;
+import '../enums/product_channel.pbenum.dart' as $3995;
 
 /// A visit.
 class Visit extends $pb.GeneratedMessage {
@@ -28,12 +28,12 @@ class Visit extends $pb.GeneratedMessage {
     $core.String? clickId,
     $core.String? visitDateTime,
     $core.String? productId,
-    $3994.ProductChannelEnum_ProductChannel? productChannel,
+    $3995.ProductChannelEnum_ProductChannel? productChannel,
     $core.String? productLanguageCode,
     $core.String? productStoreId,
     $core.String? productCountryCode,
     $fixnum.Int64? assetId,
-    $4034.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
+    $4035.AssetFieldTypeEnum_AssetFieldType? assetFieldType,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -93,12 +93,12 @@ class Visit extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'clickId')
     ..aOS(7, _omitFieldNames ? '' : 'visitDateTime')
     ..aOS(8, _omitFieldNames ? '' : 'productId')
-    ..e<$3994.ProductChannelEnum_ProductChannel>(9, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $3994.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3994.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3994.ProductChannelEnum_ProductChannel.values)
+    ..e<$3995.ProductChannelEnum_ProductChannel>(9, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $3995.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3995.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3995.ProductChannelEnum_ProductChannel.values)
     ..aOS(10, _omitFieldNames ? '' : 'productLanguageCode')
     ..aOS(11, _omitFieldNames ? '' : 'productStoreId')
     ..aOS(12, _omitFieldNames ? '' : 'productCountryCode')
     ..aInt64(13, _omitFieldNames ? '' : 'assetId')
-    ..e<$4034.AssetFieldTypeEnum_AssetFieldType>(14, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $4034.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $4034.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4034.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$4035.AssetFieldTypeEnum_AssetFieldType>(14, _omitFieldNames ? '' : 'assetFieldType', $pb.PbFieldType.OE, defaultOrMaker: $4035.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $4035.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $4035.AssetFieldTypeEnum_AssetFieldType.values)
     ..hasRequiredFields = false
   ;
 
@@ -214,9 +214,9 @@ class Visit extends $pb.GeneratedMessage {
   /// Output only. The sales channel of the product that was clicked on: Online
   /// or Local.
   @$pb.TagNumber(9)
-  $3994.ProductChannelEnum_ProductChannel get productChannel => $_getN(8);
+  $3995.ProductChannelEnum_ProductChannel get productChannel => $_getN(8);
   @$pb.TagNumber(9)
-  set productChannel($3994.ProductChannelEnum_ProductChannel v) { setField(9, v); }
+  set productChannel($3995.ProductChannelEnum_ProductChannel v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasProductChannel() => $_has(8);
   @$pb.TagNumber(9)
@@ -268,9 +268,9 @@ class Visit extends $pb.GeneratedMessage {
 
   /// Output only. Asset field type of the visit event.
   @$pb.TagNumber(14)
-  $4034.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(13);
+  $4035.AssetFieldTypeEnum_AssetFieldType get assetFieldType => $_getN(13);
   @$pb.TagNumber(14)
-  set assetFieldType($4034.AssetFieldTypeEnum_AssetFieldType v) { setField(14, v); }
+  set assetFieldType($4035.AssetFieldTypeEnum_AssetFieldType v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasAssetFieldType() => $_has(13);
   @$pb.TagNumber(14)

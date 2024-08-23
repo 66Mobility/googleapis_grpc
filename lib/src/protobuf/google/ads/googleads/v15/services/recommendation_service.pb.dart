@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../common/extensions.pb.dart' as $2272;
-import '../enums/keyword_match_type.pbenum.dart' as $1843;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../common/extensions.pb.dart' as $2273;
+import '../enums/keyword_match_type.pbenum.dart' as $1844;
 import '../resources/ad.pb.dart' as $41;
-import '../resources/asset.pb.dart' as $2221;
+import '../resources/asset.pb.dart' as $2222;
 import 'recommendation_service.pbenum.dart';
 
 export 'recommendation_service.pbenum.dart';
@@ -286,7 +286,7 @@ class ApplyRecommendationOperation_TextAdParameters extends $pb.GeneratedMessage
 /// Parameters to use when applying keyword recommendation.
 class ApplyRecommendationOperation_KeywordParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_KeywordParameters({
-    $1843.KeywordMatchTypeEnum_KeywordMatchType? matchType,
+    $1844.KeywordMatchTypeEnum_KeywordMatchType? matchType,
     $core.String? adGroup,
     $fixnum.Int64? cpcBidMicros,
   }) {
@@ -307,7 +307,7 @@ class ApplyRecommendationOperation_KeywordParameters extends $pb.GeneratedMessag
   factory ApplyRecommendationOperation_KeywordParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.KeywordParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..e<$1843.KeywordMatchTypeEnum_KeywordMatchType>(2, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $1843.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $1843.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $1843.KeywordMatchTypeEnum_KeywordMatchType.values)
+    ..e<$1844.KeywordMatchTypeEnum_KeywordMatchType>(2, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $1844.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $1844.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $1844.KeywordMatchTypeEnum_KeywordMatchType.values)
     ..aOS(4, _omitFieldNames ? '' : 'adGroup')
     ..aInt64(5, _omitFieldNames ? '' : 'cpcBidMicros')
     ..hasRequiredFields = false
@@ -336,9 +336,9 @@ class ApplyRecommendationOperation_KeywordParameters extends $pb.GeneratedMessag
 
   /// The match type of the keyword. This is a required field.
   @$pb.TagNumber(2)
-  $1843.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(0);
+  $1844.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(0);
   @$pb.TagNumber(2)
-  set matchType($1843.KeywordMatchTypeEnum_KeywordMatchType v) { setField(2, v); }
+  set matchType($1844.KeywordMatchTypeEnum_KeywordMatchType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMatchType() => $_has(0);
   @$pb.TagNumber(2)
@@ -506,7 +506,7 @@ class ApplyRecommendationOperation_TargetRoasOptInParameters extends $pb.Generat
 /// Parameters to use when applying callout extension recommendation.
 class ApplyRecommendationOperation_CalloutExtensionParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_CalloutExtensionParameters({
-    $core.Iterable<$2272.CalloutFeedItem>? calloutExtensions,
+    $core.Iterable<$2273.CalloutFeedItem>? calloutExtensions,
   }) {
     final $result = create();
     if (calloutExtensions != null) {
@@ -519,7 +519,7 @@ class ApplyRecommendationOperation_CalloutExtensionParameters extends $pb.Genera
   factory ApplyRecommendationOperation_CalloutExtensionParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.CalloutExtensionParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..pc<$2272.CalloutFeedItem>(1, _omitFieldNames ? '' : 'calloutExtensions', $pb.PbFieldType.PM, subBuilder: $2272.CalloutFeedItem.create)
+    ..pc<$2273.CalloutFeedItem>(1, _omitFieldNames ? '' : 'calloutExtensions', $pb.PbFieldType.PM, subBuilder: $2273.CalloutFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -546,13 +546,13 @@ class ApplyRecommendationOperation_CalloutExtensionParameters extends $pb.Genera
 
   /// Callout extensions to be added. This is a required field.
   @$pb.TagNumber(1)
-  $core.List<$2272.CalloutFeedItem> get calloutExtensions => $_getList(0);
+  $core.List<$2273.CalloutFeedItem> get calloutExtensions => $_getList(0);
 }
 
 /// Parameters to use when applying call extension recommendation.
 class ApplyRecommendationOperation_CallExtensionParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_CallExtensionParameters({
-    $core.Iterable<$2272.CallFeedItem>? callExtensions,
+    $core.Iterable<$2273.CallFeedItem>? callExtensions,
   }) {
     final $result = create();
     if (callExtensions != null) {
@@ -565,7 +565,7 @@ class ApplyRecommendationOperation_CallExtensionParameters extends $pb.Generated
   factory ApplyRecommendationOperation_CallExtensionParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.CallExtensionParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..pc<$2272.CallFeedItem>(1, _omitFieldNames ? '' : 'callExtensions', $pb.PbFieldType.PM, subBuilder: $2272.CallFeedItem.create)
+    ..pc<$2273.CallFeedItem>(1, _omitFieldNames ? '' : 'callExtensions', $pb.PbFieldType.PM, subBuilder: $2273.CallFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -592,13 +592,13 @@ class ApplyRecommendationOperation_CallExtensionParameters extends $pb.Generated
 
   /// Call extensions to be added. This is a required field.
   @$pb.TagNumber(1)
-  $core.List<$2272.CallFeedItem> get callExtensions => $_getList(0);
+  $core.List<$2273.CallFeedItem> get callExtensions => $_getList(0);
 }
 
 /// Parameters to use when applying sitelink recommendation.
 class ApplyRecommendationOperation_SitelinkExtensionParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_SitelinkExtensionParameters({
-    $core.Iterable<$2272.SitelinkFeedItem>? sitelinkExtensions,
+    $core.Iterable<$2273.SitelinkFeedItem>? sitelinkExtensions,
   }) {
     final $result = create();
     if (sitelinkExtensions != null) {
@@ -611,7 +611,7 @@ class ApplyRecommendationOperation_SitelinkExtensionParameters extends $pb.Gener
   factory ApplyRecommendationOperation_SitelinkExtensionParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.SitelinkExtensionParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..pc<$2272.SitelinkFeedItem>(1, _omitFieldNames ? '' : 'sitelinkExtensions', $pb.PbFieldType.PM, subBuilder: $2272.SitelinkFeedItem.create)
+    ..pc<$2273.SitelinkFeedItem>(1, _omitFieldNames ? '' : 'sitelinkExtensions', $pb.PbFieldType.PM, subBuilder: $2273.SitelinkFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -638,7 +638,7 @@ class ApplyRecommendationOperation_SitelinkExtensionParameters extends $pb.Gener
 
   /// Sitelinks to be added. This is a required field.
   @$pb.TagNumber(1)
-  $core.List<$2272.SitelinkFeedItem> get sitelinkExtensions => $_getList(0);
+  $core.List<$2273.SitelinkFeedItem> get sitelinkExtensions => $_getList(0);
 }
 
 /// Parameters to use when applying callout asset recommendations.
@@ -910,7 +910,7 @@ class ApplyRecommendationOperation_LowerTargetRoasParameters extends $pb.Generat
 /// Common parameters used when applying ad asset recommendations.
 class ApplyRecommendationOperation_AdAssetApplyParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_AdAssetApplyParameters({
-    $core.Iterable<$2221.Asset>? newAssets,
+    $core.Iterable<$2222.Asset>? newAssets,
     $core.Iterable<$core.String>? existingAssets,
     ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope? scope,
   }) {
@@ -931,7 +931,7 @@ class ApplyRecommendationOperation_AdAssetApplyParameters extends $pb.GeneratedM
   factory ApplyRecommendationOperation_AdAssetApplyParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.AdAssetApplyParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
-    ..pc<$2221.Asset>(1, _omitFieldNames ? '' : 'newAssets', $pb.PbFieldType.PM, subBuilder: $2221.Asset.create)
+    ..pc<$2222.Asset>(1, _omitFieldNames ? '' : 'newAssets', $pb.PbFieldType.PM, subBuilder: $2222.Asset.create)
     ..pPS(2, _omitFieldNames ? '' : 'existingAssets')
     ..e<ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope>(3, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope.UNSPECIFIED, valueOf: ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope.valueOf, enumValues: ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope.values)
     ..hasRequiredFields = false
@@ -961,7 +961,7 @@ class ApplyRecommendationOperation_AdAssetApplyParameters extends $pb.GeneratedM
   /// The assets to create and attach to a scope. This may be combined with
   /// existing_assets in the same call.
   @$pb.TagNumber(1)
-  $core.List<$2221.Asset> get newAssets => $_getList(0);
+  $core.List<$2222.Asset> get newAssets => $_getList(0);
 
   /// The resource names of existing assets to attach to a scope. This may be
   /// combined with new_assets in the same call.
@@ -1891,7 +1891,7 @@ class ApplyRecommendationOperation extends $pb.GeneratedMessage {
 class ApplyRecommendationResponse extends $pb.GeneratedMessage {
   factory ApplyRecommendationResponse({
     $core.Iterable<ApplyRecommendationResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -1908,7 +1908,7 @@ class ApplyRecommendationResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<ApplyRecommendationResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: ApplyRecommendationResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1942,15 +1942,15 @@ class ApplyRecommendationResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors) we return the RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result of applying a recommendation.
@@ -2196,7 +2196,7 @@ class DismissRecommendationResponse_DismissRecommendationResult extends $pb.Gene
 class DismissRecommendationResponse extends $pb.GeneratedMessage {
   factory DismissRecommendationResponse({
     $core.Iterable<DismissRecommendationResponse_DismissRecommendationResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -2213,7 +2213,7 @@ class DismissRecommendationResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DismissRecommendationResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<DismissRecommendationResponse_DismissRecommendationResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: DismissRecommendationResponse_DismissRecommendationResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2247,15 +2247,15 @@ class DismissRecommendationResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors) we return the RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 

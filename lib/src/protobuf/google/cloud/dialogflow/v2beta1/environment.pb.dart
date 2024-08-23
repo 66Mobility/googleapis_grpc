@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'audio_config.pb.dart' as $4497;
-import 'audio_config.pbenum.dart' as $4497;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'audio_config.pb.dart' as $4499;
+import 'audio_config.pbenum.dart' as $4499;
 import 'environment.pbenum.dart';
 import 'fulfillment.pb.dart' as $920;
 
@@ -46,7 +46,7 @@ class Environment extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? agentVersion,
     Environment_State? state,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     TextToSpeechSettings? textToSpeechSettings,
     $920.Fulfillment? fulfillment,
   }) {
@@ -83,7 +83,7 @@ class Environment extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'agentVersion')
     ..e<Environment_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Environment_State.STATE_UNSPECIFIED, valueOf: Environment_State.valueOf, enumValues: Environment_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<TextToSpeechSettings>(7, _omitFieldNames ? '' : 'textToSpeechSettings', subBuilder: TextToSpeechSettings.create)
     ..aOM<$920.Fulfillment>(8, _omitFieldNames ? '' : 'fulfillment', subBuilder: $920.Fulfillment.create)
     ..hasRequiredFields = false
@@ -163,15 +163,15 @@ class Environment extends $pb.GeneratedMessage {
   /// Output only. The last update time of this environment. This field is
   /// read-only, i.e., it cannot be set by create and update methods.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. Text to speech settings for this environment.
   @$pb.TagNumber(7)
@@ -202,9 +202,9 @@ class Environment extends $pb.GeneratedMessage {
 class TextToSpeechSettings extends $pb.GeneratedMessage {
   factory TextToSpeechSettings({
     $core.bool? enableTextToSpeech,
-    $4497.OutputAudioEncoding? outputAudioEncoding,
+    $4499.OutputAudioEncoding? outputAudioEncoding,
     $core.int? sampleRateHertz,
-    $core.Map<$core.String, $4497.SynthesizeSpeechConfig>? synthesizeSpeechConfigs,
+    $core.Map<$core.String, $4499.SynthesizeSpeechConfig>? synthesizeSpeechConfigs,
   }) {
     final $result = create();
     if (enableTextToSpeech != null) {
@@ -227,9 +227,9 @@ class TextToSpeechSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TextToSpeechSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enableTextToSpeech')
-    ..e<$4497.OutputAudioEncoding>(2, _omitFieldNames ? '' : 'outputAudioEncoding', $pb.PbFieldType.OE, defaultOrMaker: $4497.OutputAudioEncoding.OUTPUT_AUDIO_ENCODING_UNSPECIFIED, valueOf: $4497.OutputAudioEncoding.valueOf, enumValues: $4497.OutputAudioEncoding.values)
+    ..e<$4499.OutputAudioEncoding>(2, _omitFieldNames ? '' : 'outputAudioEncoding', $pb.PbFieldType.OE, defaultOrMaker: $4499.OutputAudioEncoding.OUTPUT_AUDIO_ENCODING_UNSPECIFIED, valueOf: $4499.OutputAudioEncoding.valueOf, enumValues: $4499.OutputAudioEncoding.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'sampleRateHertz', $pb.PbFieldType.O3)
-    ..m<$core.String, $4497.SynthesizeSpeechConfig>(4, _omitFieldNames ? '' : 'synthesizeSpeechConfigs', entryClassName: 'TextToSpeechSettings.SynthesizeSpeechConfigsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4497.SynthesizeSpeechConfig.create, valueDefaultOrMaker: $4497.SynthesizeSpeechConfig.getDefault, packageName: const $pb.PackageName('google.cloud.dialogflow.v2beta1'))
+    ..m<$core.String, $4499.SynthesizeSpeechConfig>(4, _omitFieldNames ? '' : 'synthesizeSpeechConfigs', entryClassName: 'TextToSpeechSettings.SynthesizeSpeechConfigsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4499.SynthesizeSpeechConfig.create, valueDefaultOrMaker: $4499.SynthesizeSpeechConfig.getDefault, packageName: const $pb.PackageName('google.cloud.dialogflow.v2beta1'))
     ..hasRequiredFields = false
   ;
 
@@ -267,9 +267,9 @@ class TextToSpeechSettings extends $pb.GeneratedMessage {
 
   /// Required. Audio encoding of the synthesized audio content.
   @$pb.TagNumber(2)
-  $4497.OutputAudioEncoding get outputAudioEncoding => $_getN(1);
+  $4499.OutputAudioEncoding get outputAudioEncoding => $_getN(1);
   @$pb.TagNumber(2)
-  set outputAudioEncoding($4497.OutputAudioEncoding v) { setField(2, v); }
+  set outputAudioEncoding($4499.OutputAudioEncoding v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOutputAudioEncoding() => $_has(1);
   @$pb.TagNumber(2)
@@ -293,7 +293,7 @@ class TextToSpeechSettings extends $pb.GeneratedMessage {
   /// language (https://cloud.google.com/dialogflow/docs/reference/language) to
   /// SynthesizeSpeechConfig.
   @$pb.TagNumber(4)
-  $core.Map<$core.String, $4497.SynthesizeSpeechConfig> get synthesizeSpeechConfigs => $_getMap(3);
+  $core.Map<$core.String, $4499.SynthesizeSpeechConfig> get synthesizeSpeechConfigs => $_getMap(3);
 }
 
 /// The request message for
@@ -597,7 +597,7 @@ class CreateEnvironmentRequest extends $pb.GeneratedMessage {
 class UpdateEnvironmentRequest extends $pb.GeneratedMessage {
   factory UpdateEnvironmentRequest({
     Environment? environment,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? allowLoadToDraftAndDiscardChanges,
   }) {
     final $result = create();
@@ -618,7 +618,7 @@ class UpdateEnvironmentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEnvironmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<Environment>(1, _omitFieldNames ? '' : 'environment', subBuilder: Environment.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowLoadToDraftAndDiscardChanges')
     ..hasRequiredFields = false
   ;
@@ -658,15 +658,15 @@ class UpdateEnvironmentRequest extends $pb.GeneratedMessage {
 
   /// Required. The mask to control which fields get updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. This field is used to prevent accidental overwrite of the draft
   /// environment, which is an operation that cannot be undone. To confirm that
@@ -832,7 +832,7 @@ class EnvironmentHistory_Entry extends $pb.GeneratedMessage {
   factory EnvironmentHistory_Entry({
     $core.String? agentVersion,
     $core.String? description,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (agentVersion != null) {
@@ -853,7 +853,7 @@ class EnvironmentHistory_Entry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnvironmentHistory.Entry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'agentVersion')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -900,15 +900,15 @@ class EnvironmentHistory_Entry extends $pb.GeneratedMessage {
 
   /// The creation time of this environment history entry.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 /// The response message for

@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'lva.pb.dart' as $4723;
-import 'lva.pbenum.dart' as $4723;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'lva.pb.dart' as $4725;
+import 'lva.pbenum.dart' as $4725;
 
 /// Message describing the Operator object.
 class Operator extends $pb.GeneratedMessage {
   factory Operator({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
-    $4723.OperatorDefinition? operatorDefinition,
+    $4725.OperatorDefinition? operatorDefinition,
     $core.String? dockerImage,
   }) {
     final $result = create();
@@ -54,10 +54,10 @@ class Operator extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Operator', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Operator.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1'))
-    ..aOM<$4723.OperatorDefinition>(5, _omitFieldNames ? '' : 'operatorDefinition', subBuilder: $4723.OperatorDefinition.create)
+    ..aOM<$4725.OperatorDefinition>(5, _omitFieldNames ? '' : 'operatorDefinition', subBuilder: $4725.OperatorDefinition.create)
     ..aOS(6, _omitFieldNames ? '' : 'dockerImage')
     ..hasRequiredFields = false
   ;
@@ -95,27 +95,27 @@ class Operator extends $pb.GeneratedMessage {
 
   /// Output only. The create timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels as key value pairs.
   @$pb.TagNumber(4)
@@ -123,15 +123,15 @@ class Operator extends $pb.GeneratedMessage {
 
   /// The definition of the operator.
   @$pb.TagNumber(5)
-  $4723.OperatorDefinition get operatorDefinition => $_getN(4);
+  $4725.OperatorDefinition get operatorDefinition => $_getN(4);
   @$pb.TagNumber(5)
-  set operatorDefinition($4723.OperatorDefinition v) { setField(5, v); }
+  set operatorDefinition($4725.OperatorDefinition v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOperatorDefinition() => $_has(4);
   @$pb.TagNumber(5)
   void clearOperatorDefinition() => clearField(5);
   @$pb.TagNumber(5)
-  $4723.OperatorDefinition ensureOperatorDefinition() => $_ensure(4);
+  $4725.OperatorDefinition ensureOperatorDefinition() => $_ensure(4);
 
   /// The link to the docker image of the operator.
   @$pb.TagNumber(6)
@@ -148,10 +148,10 @@ class Operator extends $pb.GeneratedMessage {
 class Analysis extends $pb.GeneratedMessage {
   factory Analysis({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
-    $4723.AnalysisDefinition? analysisDefinition,
+    $4725.AnalysisDefinition? analysisDefinition,
     $core.Map<$core.String, $core.String>? inputStreamsMapping,
     $core.Map<$core.String, $core.String>? outputStreamsMapping,
     $core.bool? disableEventWatch,
@@ -189,10 +189,10 @@ class Analysis extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Analysis', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Analysis.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1'))
-    ..aOM<$4723.AnalysisDefinition>(5, _omitFieldNames ? '' : 'analysisDefinition', subBuilder: $4723.AnalysisDefinition.create)
+    ..aOM<$4725.AnalysisDefinition>(5, _omitFieldNames ? '' : 'analysisDefinition', subBuilder: $4725.AnalysisDefinition.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'inputStreamsMapping', entryClassName: 'Analysis.InputStreamsMappingEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1'))
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'outputStreamsMapping', entryClassName: 'Analysis.OutputStreamsMappingEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.visionai.v1'))
     ..aOB(8, _omitFieldNames ? '' : 'disableEventWatch')
@@ -232,27 +232,27 @@ class Analysis extends $pb.GeneratedMessage {
 
   /// Output only. The create timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels as key value pairs.
   @$pb.TagNumber(4)
@@ -260,15 +260,15 @@ class Analysis extends $pb.GeneratedMessage {
 
   /// The definition of the analysis.
   @$pb.TagNumber(5)
-  $4723.AnalysisDefinition get analysisDefinition => $_getN(4);
+  $4725.AnalysisDefinition get analysisDefinition => $_getN(4);
   @$pb.TagNumber(5)
-  set analysisDefinition($4723.AnalysisDefinition v) { setField(5, v); }
+  set analysisDefinition($4725.AnalysisDefinition v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAnalysisDefinition() => $_has(4);
   @$pb.TagNumber(5)
   void clearAnalysisDefinition() => clearField(5);
   @$pb.TagNumber(5)
-  $4723.AnalysisDefinition ensureAnalysisDefinition() => $_ensure(4);
+  $4725.AnalysisDefinition ensureAnalysisDefinition() => $_ensure(4);
 
   /// Map from the input parameter in the definition to the real stream.
   /// E.g., suppose you had a stream source operator named "input-0" and you try
@@ -302,12 +302,12 @@ class Analysis extends $pb.GeneratedMessage {
 class Process extends $pb.GeneratedMessage {
   factory Process({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? analysis,
     $core.Iterable<$core.String>? attributeOverrides,
-    $4723.RunStatus? runStatus,
-    $4723.RunMode? runMode,
+    $4725.RunStatus? runStatus,
+    $4725.RunMode? runMode,
     $core.String? eventId,
     $core.String? batchId,
     $core.int? retryCount,
@@ -351,12 +351,12 @@ class Process extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Process', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'analysis')
     ..pPS(5, _omitFieldNames ? '' : 'attributeOverrides')
-    ..aOM<$4723.RunStatus>(6, _omitFieldNames ? '' : 'runStatus', subBuilder: $4723.RunStatus.create)
-    ..e<$4723.RunMode>(7, _omitFieldNames ? '' : 'runMode', $pb.PbFieldType.OE, defaultOrMaker: $4723.RunMode.RUN_MODE_UNSPECIFIED, valueOf: $4723.RunMode.valueOf, enumValues: $4723.RunMode.values)
+    ..aOM<$4725.RunStatus>(6, _omitFieldNames ? '' : 'runStatus', subBuilder: $4725.RunStatus.create)
+    ..e<$4725.RunMode>(7, _omitFieldNames ? '' : 'runMode', $pb.PbFieldType.OE, defaultOrMaker: $4725.RunMode.RUN_MODE_UNSPECIFIED, valueOf: $4725.RunMode.valueOf, enumValues: $4725.RunMode.values)
     ..aOS(8, _omitFieldNames ? '' : 'eventId')
     ..aOS(9, _omitFieldNames ? '' : 'batchId')
     ..a<$core.int>(10, _omitFieldNames ? '' : 'retryCount', $pb.PbFieldType.O3)
@@ -396,27 +396,27 @@ class Process extends $pb.GeneratedMessage {
 
   /// Output only. The create timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Required. Reference to an existing Analysis resource.
   @$pb.TagNumber(4)
@@ -436,21 +436,21 @@ class Process extends $pb.GeneratedMessage {
 
   /// Optional. Status of the Process.
   @$pb.TagNumber(6)
-  $4723.RunStatus get runStatus => $_getN(5);
+  $4725.RunStatus get runStatus => $_getN(5);
   @$pb.TagNumber(6)
-  set runStatus($4723.RunStatus v) { setField(6, v); }
+  set runStatus($4725.RunStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRunStatus() => $_has(5);
   @$pb.TagNumber(6)
   void clearRunStatus() => clearField(6);
   @$pb.TagNumber(6)
-  $4723.RunStatus ensureRunStatus() => $_ensure(5);
+  $4725.RunStatus ensureRunStatus() => $_ensure(5);
 
   /// Optional. Run mode of the Process.
   @$pb.TagNumber(7)
-  $4723.RunMode get runMode => $_getN(6);
+  $4725.RunMode get runMode => $_getN(6);
   @$pb.TagNumber(7)
-  set runMode($4723.RunMode v) { setField(7, v); }
+  set runMode($4725.RunMode v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRunMode() => $_has(6);
   @$pb.TagNumber(7)

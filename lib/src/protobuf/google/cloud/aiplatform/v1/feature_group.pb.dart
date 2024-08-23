@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'io.pb.dart' as $4235;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'io.pb.dart' as $4236;
 
 class FeatureGroup_BigQuery_TimeSeries extends $pb.GeneratedMessage {
   factory FeatureGroup_BigQuery_TimeSeries({
@@ -73,7 +73,7 @@ class FeatureGroup_BigQuery_TimeSeries extends $pb.GeneratedMessage {
 /// Input source type for BigQuery Tables and Views.
 class FeatureGroup_BigQuery extends $pb.GeneratedMessage {
   factory FeatureGroup_BigQuery({
-    $4235.BigQuerySource? bigQuerySource,
+    $4236.BigQuerySource? bigQuerySource,
     $core.Iterable<$core.String>? entityIdColumns,
     FeatureGroup_BigQuery_TimeSeries? timeSeries,
   }) {
@@ -94,7 +94,7 @@ class FeatureGroup_BigQuery extends $pb.GeneratedMessage {
   factory FeatureGroup_BigQuery.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureGroup.BigQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4235.BigQuerySource>(1, _omitFieldNames ? '' : 'bigQuerySource', subBuilder: $4235.BigQuerySource.create)
+    ..aOM<$4236.BigQuerySource>(1, _omitFieldNames ? '' : 'bigQuerySource', subBuilder: $4236.BigQuerySource.create)
     ..pPS(2, _omitFieldNames ? '' : 'entityIdColumns')
     ..aOM<FeatureGroup_BigQuery_TimeSeries>(4, _omitFieldNames ? '' : 'timeSeries', subBuilder: FeatureGroup_BigQuery_TimeSeries.create)
     ..hasRequiredFields = false
@@ -124,15 +124,15 @@ class FeatureGroup_BigQuery extends $pb.GeneratedMessage {
   /// Required. Immutable. The BigQuery source URI that points to either a
   /// BigQuery Table or View.
   @$pb.TagNumber(1)
-  $4235.BigQuerySource get bigQuerySource => $_getN(0);
+  $4236.BigQuerySource get bigQuerySource => $_getN(0);
   @$pb.TagNumber(1)
-  set bigQuerySource($4235.BigQuerySource v) { setField(1, v); }
+  set bigQuerySource($4236.BigQuerySource v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBigQuerySource() => $_has(0);
   @$pb.TagNumber(1)
   void clearBigQuerySource() => clearField(1);
   @$pb.TagNumber(1)
-  $4235.BigQuerySource ensureBigQuerySource() => $_ensure(0);
+  $4236.BigQuerySource ensureBigQuerySource() => $_ensure(0);
 
   /// Optional. Columns to construct entity_id / row keys.
   /// If not provided defaults to `entity_id`.
@@ -165,8 +165,8 @@ enum FeatureGroup_Source {
 class FeatureGroup extends $pb.GeneratedMessage {
   factory FeatureGroup({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
@@ -207,8 +207,8 @@ class FeatureGroup extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'FeatureGroup.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'description')
@@ -253,27 +253,27 @@ class FeatureGroup extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this FeatureGroup was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Timestamp when this FeatureGroup was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Used to perform consistent read-modify-write updates. If not set,
   /// a blind "overwrite" update happens.

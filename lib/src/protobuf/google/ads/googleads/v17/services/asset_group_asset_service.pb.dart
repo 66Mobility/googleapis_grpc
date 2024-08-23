@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/asset_group_asset.pb.dart' as $3804;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/asset_group_asset.pb.dart' as $3805;
 
 /// Request message for
 /// [AssetGroupAssetService.MutateAssetGroupAssets][google.ads.googleads.v17.services.AssetGroupAssetService.MutateAssetGroupAssets].
@@ -125,10 +125,10 @@ enum AssetGroupAssetOperation_Operation {
 /// A single operation (create, remove) on an asset group asset.
 class AssetGroupAssetOperation extends $pb.GeneratedMessage {
   factory AssetGroupAssetOperation({
-    $3804.AssetGroupAsset? create_1,
-    $3804.AssetGroupAsset? update,
+    $3805.AssetGroupAsset? create_1,
+    $3805.AssetGroupAsset? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -157,10 +157,10 @@ class AssetGroupAssetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetGroupAssetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3804.AssetGroupAsset>(1, _omitFieldNames ? '' : 'create', subBuilder: $3804.AssetGroupAsset.create)
-    ..aOM<$3804.AssetGroupAsset>(2, _omitFieldNames ? '' : 'update', subBuilder: $3804.AssetGroupAsset.create)
+    ..aOM<$3805.AssetGroupAsset>(1, _omitFieldNames ? '' : 'create', subBuilder: $3805.AssetGroupAsset.create)
+    ..aOM<$3805.AssetGroupAsset>(2, _omitFieldNames ? '' : 'update', subBuilder: $3805.AssetGroupAsset.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -191,28 +191,28 @@ class AssetGroupAssetOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new asset group
   /// asset.
   @$pb.TagNumber(1)
-  $3804.AssetGroupAsset get create_1 => $_getN(0);
+  $3805.AssetGroupAsset get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3804.AssetGroupAsset v) { setField(1, v); }
+  set create_1($3805.AssetGroupAsset v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3804.AssetGroupAsset ensureCreate_1() => $_ensure(0);
+  $3805.AssetGroupAsset ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The asset group asset is expected to have a valid
   /// resource name.
   @$pb.TagNumber(2)
-  $3804.AssetGroupAsset get update => $_getN(1);
+  $3805.AssetGroupAsset get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3804.AssetGroupAsset v) { setField(2, v); }
+  set update($3805.AssetGroupAsset v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3804.AssetGroupAsset ensureUpdate() => $_ensure(1);
+  $3805.AssetGroupAsset ensureUpdate() => $_ensure(1);
 
   /// Remove operation: A resource name for the removed asset group asset is
   /// expected, in this format:
@@ -228,22 +228,22 @@ class AssetGroupAssetOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for an asset group asset mutate.
 class MutateAssetGroupAssetsResponse extends $pb.GeneratedMessage {
   factory MutateAssetGroupAssetsResponse({
     $core.Iterable<MutateAssetGroupAssetResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -260,7 +260,7 @@ class MutateAssetGroupAssetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAssetGroupAssetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateAssetGroupAssetResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAssetGroupAssetResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -294,15 +294,15 @@ class MutateAssetGroupAssetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the asset group asset mutate.

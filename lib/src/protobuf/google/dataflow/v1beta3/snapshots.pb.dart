@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $1737;
-import '../../protobuf/timestamp.pb.dart' as $1775;
+import '../../protobuf/duration.pb.dart' as $1738;
+import '../../protobuf/timestamp.pb.dart' as $1776;
 import 'snapshots.pbenum.dart';
 
 export 'snapshots.pbenum.dart';
@@ -25,7 +25,7 @@ class PubsubSnapshotMetadata extends $pb.GeneratedMessage {
   factory PubsubSnapshotMetadata({
     $core.String? topicName,
     $core.String? snapshotName,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (topicName != null) {
@@ -46,7 +46,7 @@ class PubsubSnapshotMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PubsubSnapshotMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'topicName')
     ..aOS(2, _omitFieldNames ? '' : 'snapshotName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -93,15 +93,15 @@ class PubsubSnapshotMetadata extends $pb.GeneratedMessage {
 
   /// The expire time of the Pubsub snapshot.
   @$pb.TagNumber(3)
-  $1775.Timestamp get expireTime => $_getN(2);
+  $1776.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($1775.Timestamp v) { setField(3, v); }
+  set expireTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureExpireTime() => $_ensure(2);
+  $1776.Timestamp ensureExpireTime() => $_ensure(2);
 }
 
 /// Represents a snapshot of a job.
@@ -110,8 +110,8 @@ class Snapshot extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? projectId,
     $core.String? sourceJobId,
-    $1775.Timestamp? creationTime,
-    $1737.Duration? ttl,
+    $1776.Timestamp? creationTime,
+    $1738.Duration? ttl,
     SnapshotState? state,
     $core.Iterable<PubsubSnapshotMetadata>? pubsubMetadata,
     $core.String? description,
@@ -159,8 +159,8 @@ class Snapshot extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOS(3, _omitFieldNames ? '' : 'sourceJobId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'creationTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'creationTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..e<SnapshotState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: SnapshotState.UNKNOWN_SNAPSHOT_STATE, valueOf: SnapshotState.valueOf, enumValues: SnapshotState.values)
     ..pc<PubsubSnapshotMetadata>(7, _omitFieldNames ? '' : 'pubsubMetadata', $pb.PbFieldType.PM, subBuilder: PubsubSnapshotMetadata.create)
     ..aOS(8, _omitFieldNames ? '' : 'description')
@@ -222,27 +222,27 @@ class Snapshot extends $pb.GeneratedMessage {
 
   /// The time this snapshot was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get creationTime => $_getN(3);
+  $1776.Timestamp get creationTime => $_getN(3);
   @$pb.TagNumber(4)
-  set creationTime($1775.Timestamp v) { setField(4, v); }
+  set creationTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreationTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreationTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreationTime() => $_ensure(3);
+  $1776.Timestamp ensureCreationTime() => $_ensure(3);
 
   /// The time after which this snapshot will be automatically deleted.
   @$pb.TagNumber(5)
-  $1737.Duration get ttl => $_getN(4);
+  $1738.Duration get ttl => $_getN(4);
   @$pb.TagNumber(5)
-  set ttl($1737.Duration v) { setField(5, v); }
+  set ttl($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTtl() => $_has(4);
   @$pb.TagNumber(5)
   void clearTtl() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureTtl() => $_ensure(4);
+  $1738.Duration ensureTtl() => $_ensure(4);
 
   /// State of the snapshot.
   @$pb.TagNumber(6)

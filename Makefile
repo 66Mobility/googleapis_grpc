@@ -23,4 +23,6 @@ clone:
 
 protoc:
 	rm -rf lib/src/protobuf/*
+	rm lib/*.dart
 	zsh -c "protoc googleapis/**/*.proto -Igoogleapis --plugin=$$HOME/.pub-cache/bin/protoc-gen-dart --dart_out=grpc:lib/src/protobuf"
+	dart scripts/generate_libraries.dart

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/frequency_cap_event_type.pbenum.dart' as $3314;
-import '../enums/frequency_cap_level.pbenum.dart' as $3312;
-import '../enums/frequency_cap_time_unit.pbenum.dart' as $3313;
+import '../enums/frequency_cap_event_type.pbenum.dart' as $3315;
+import '../enums/frequency_cap_level.pbenum.dart' as $3313;
+import '../enums/frequency_cap_time_unit.pbenum.dart' as $3314;
 
 /// A rule specifying the maximum number of times an ad (or some set of ads) can
 /// be shown to a user over a particular time period.
@@ -92,9 +92,9 @@ class FrequencyCapEntry extends $pb.GeneratedMessage {
 /// There can be no more than one frequency cap with the same key.
 class FrequencyCapKey extends $pb.GeneratedMessage {
   factory FrequencyCapKey({
-    $3312.FrequencyCapLevelEnum_FrequencyCapLevel? level,
-    $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit? timeUnit,
-    $3314.FrequencyCapEventTypeEnum_FrequencyCapEventType? eventType,
+    $3313.FrequencyCapLevelEnum_FrequencyCapLevel? level,
+    $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit? timeUnit,
+    $3315.FrequencyCapEventTypeEnum_FrequencyCapEventType? eventType,
     $core.int? timeLength,
   }) {
     final $result = create();
@@ -117,9 +117,9 @@ class FrequencyCapKey extends $pb.GeneratedMessage {
   factory FrequencyCapKey.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FrequencyCapKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..e<$3312.FrequencyCapLevelEnum_FrequencyCapLevel>(1, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $3312.FrequencyCapLevelEnum_FrequencyCapLevel.UNSPECIFIED, valueOf: $3312.FrequencyCapLevelEnum_FrequencyCapLevel.valueOf, enumValues: $3312.FrequencyCapLevelEnum_FrequencyCapLevel.values)
-    ..e<$3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit>(2, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.UNSPECIFIED, valueOf: $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.valueOf, enumValues: $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.values)
-    ..e<$3314.FrequencyCapEventTypeEnum_FrequencyCapEventType>(3, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: $3314.FrequencyCapEventTypeEnum_FrequencyCapEventType.UNSPECIFIED, valueOf: $3314.FrequencyCapEventTypeEnum_FrequencyCapEventType.valueOf, enumValues: $3314.FrequencyCapEventTypeEnum_FrequencyCapEventType.values)
+    ..e<$3313.FrequencyCapLevelEnum_FrequencyCapLevel>(1, _omitFieldNames ? '' : 'level', $pb.PbFieldType.OE, defaultOrMaker: $3313.FrequencyCapLevelEnum_FrequencyCapLevel.UNSPECIFIED, valueOf: $3313.FrequencyCapLevelEnum_FrequencyCapLevel.valueOf, enumValues: $3313.FrequencyCapLevelEnum_FrequencyCapLevel.values)
+    ..e<$3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit>(2, _omitFieldNames ? '' : 'timeUnit', $pb.PbFieldType.OE, defaultOrMaker: $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.UNSPECIFIED, valueOf: $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.valueOf, enumValues: $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit.values)
+    ..e<$3315.FrequencyCapEventTypeEnum_FrequencyCapEventType>(3, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: $3315.FrequencyCapEventTypeEnum_FrequencyCapEventType.UNSPECIFIED, valueOf: $3315.FrequencyCapEventTypeEnum_FrequencyCapEventType.valueOf, enumValues: $3315.FrequencyCapEventTypeEnum_FrequencyCapEventType.values)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'timeLength', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -148,9 +148,9 @@ class FrequencyCapKey extends $pb.GeneratedMessage {
   /// The level on which the cap is to be applied (for example, ad group ad, ad
   /// group). The cap is applied to all the entities of this level.
   @$pb.TagNumber(1)
-  $3312.FrequencyCapLevelEnum_FrequencyCapLevel get level => $_getN(0);
+  $3313.FrequencyCapLevelEnum_FrequencyCapLevel get level => $_getN(0);
   @$pb.TagNumber(1)
-  set level($3312.FrequencyCapLevelEnum_FrequencyCapLevel v) { setField(1, v); }
+  set level($3313.FrequencyCapLevelEnum_FrequencyCapLevel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLevel() => $_has(0);
   @$pb.TagNumber(1)
@@ -158,9 +158,9 @@ class FrequencyCapKey extends $pb.GeneratedMessage {
 
   /// Unit of time the cap is defined at (for example, day, week).
   @$pb.TagNumber(2)
-  $3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit get timeUnit => $_getN(1);
+  $3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit get timeUnit => $_getN(1);
   @$pb.TagNumber(2)
-  set timeUnit($3313.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit v) { setField(2, v); }
+  set timeUnit($3314.FrequencyCapTimeUnitEnum_FrequencyCapTimeUnit v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeUnit() => $_has(1);
   @$pb.TagNumber(2)
@@ -168,9 +168,9 @@ class FrequencyCapKey extends $pb.GeneratedMessage {
 
   /// The type of event that the cap applies to (for example, impression).
   @$pb.TagNumber(3)
-  $3314.FrequencyCapEventTypeEnum_FrequencyCapEventType get eventType => $_getN(2);
+  $3315.FrequencyCapEventTypeEnum_FrequencyCapEventType get eventType => $_getN(2);
   @$pb.TagNumber(3)
-  set eventType($3314.FrequencyCapEventTypeEnum_FrequencyCapEventType v) { setField(3, v); }
+  set eventType($3315.FrequencyCapEventTypeEnum_FrequencyCapEventType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEventType() => $_has(2);
   @$pb.TagNumber(3)

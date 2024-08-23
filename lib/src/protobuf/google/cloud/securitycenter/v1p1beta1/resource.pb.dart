@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'folder.pb.dart' as $4649;
+import 'folder.pb.dart' as $4651;
 
 /// Information related to the Google Cloud resource.
 class Resource extends $pb.GeneratedMessage {
@@ -23,7 +23,7 @@ class Resource extends $pb.GeneratedMessage {
     $core.String? projectDisplayName,
     $core.String? parent,
     $core.String? parentDisplayName,
-    $core.Iterable<$4649.Folder>? folders,
+    $core.Iterable<$4651.Folder>? folders,
   }) {
     final $result = create();
     if (name != null) {
@@ -56,7 +56,7 @@ class Resource extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'projectDisplayName')
     ..aOS(4, _omitFieldNames ? '' : 'parent')
     ..aOS(5, _omitFieldNames ? '' : 'parentDisplayName')
-    ..pc<$4649.Folder>(7, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4649.Folder.create)
+    ..pc<$4651.Folder>(7, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4651.Folder.create)
     ..hasRequiredFields = false
   ;
 
@@ -136,7 +136,7 @@ class Resource extends $pb.GeneratedMessage {
   /// The first folder is the deepest nested folder, and the last folder is the
   /// folder directly under the Organization.
   @$pb.TagNumber(7)
-  $core.List<$4649.Folder> get folders => $_getList(5);
+  $core.List<$4651.Folder> get folders => $_getList(5);
 }
 
 

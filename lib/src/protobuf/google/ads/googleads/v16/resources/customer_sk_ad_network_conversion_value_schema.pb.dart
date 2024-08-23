@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/sk_ad_network_coarse_conversion_value.pbenum.dart' as $2629;
+import '../enums/sk_ad_network_coarse_conversion_value.pbenum.dart' as $2630;
 
 /// Mappings for fine grained conversion value.
 class CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_FineGrainedConversionValueMappings extends $pb.GeneratedMessage {
@@ -99,7 +99,7 @@ class CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_
   factory CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_PostbackMapping({
     $core.int? postbackSequenceIndex,
     CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_CoarseGrainedConversionValueMappings? coarseGrainedConversionValueMappings,
-    $2629.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue? lockWindowCoarseConversionValue,
+    $2630.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue? lockWindowCoarseConversionValue,
     $core.int? lockWindowFineConversionValue,
     $core.String? lockWindowEvent,
   }) {
@@ -135,7 +135,7 @@ class CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_
     ..oo(0, [3, 4, 5])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'postbackSequenceIndex', $pb.PbFieldType.O3)
     ..aOM<CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_CoarseGrainedConversionValueMappings>(2, _omitFieldNames ? '' : 'coarseGrainedConversionValueMappings', subBuilder: CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_CoarseGrainedConversionValueMappings.create)
-    ..e<$2629.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue>(3, _omitFieldNames ? '' : 'lockWindowCoarseConversionValue', $pb.PbFieldType.OE, defaultOrMaker: $2629.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.UNSPECIFIED, valueOf: $2629.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.valueOf, enumValues: $2629.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.values)
+    ..e<$2630.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue>(3, _omitFieldNames ? '' : 'lockWindowCoarseConversionValue', $pb.PbFieldType.OE, defaultOrMaker: $2630.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.UNSPECIFIED, valueOf: $2630.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.valueOf, enumValues: $2630.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue.values)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'lockWindowFineConversionValue', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'lockWindowEvent')
     ..hasRequiredFields = false
@@ -192,9 +192,9 @@ class CustomerSkAdNetworkConversionValueSchema_SkAdNetworkConversionValueSchema_
   /// Output only. Coarse grained conversion value that triggers conversion
   /// window lock.
   @$pb.TagNumber(3)
-  $2629.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue get lockWindowCoarseConversionValue => $_getN(2);
+  $2630.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue get lockWindowCoarseConversionValue => $_getN(2);
   @$pb.TagNumber(3)
-  set lockWindowCoarseConversionValue($2629.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue v) { setField(3, v); }
+  set lockWindowCoarseConversionValue($2630.SkAdNetworkCoarseConversionValueEnum_SkAdNetworkCoarseConversionValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLockWindowCoarseConversionValue() => $_has(2);
   @$pb.TagNumber(3)

@@ -13,24 +13,24 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_policy.pb.dart' as $2531;
-import '../enums/asset_field_type.pbenum.dart' as $2818;
-import '../enums/asset_link_primary_status.pbenum.dart' as $2529;
-import '../enums/asset_link_primary_status_reason.pbenum.dart' as $2528;
-import '../enums/asset_link_status.pbenum.dart' as $2828;
-import '../enums/asset_source.pbenum.dart' as $2827;
+import '../common/asset_policy.pb.dart' as $2532;
+import '../enums/asset_field_type.pbenum.dart' as $2819;
+import '../enums/asset_link_primary_status.pbenum.dart' as $2530;
+import '../enums/asset_link_primary_status_reason.pbenum.dart' as $2529;
+import '../enums/asset_link_status.pbenum.dart' as $2829;
+import '../enums/asset_source.pbenum.dart' as $2828;
 
 /// A link between a customer and an asset.
 class CustomerAsset extends $pb.GeneratedMessage {
   factory CustomerAsset({
     $core.String? resourceName,
     $core.String? asset,
-    $2818.AssetFieldTypeEnum_AssetFieldType? fieldType,
-    $2828.AssetLinkStatusEnum_AssetLinkStatus? status,
-    $2827.AssetSourceEnum_AssetSource? source,
-    $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? primaryStatus,
-    $core.Iterable<$2531.AssetLinkPrimaryStatusDetails>? primaryStatusDetails,
-    $core.Iterable<$2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>? primaryStatusReasons,
+    $2819.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $2829.AssetLinkStatusEnum_AssetLinkStatus? status,
+    $2828.AssetSourceEnum_AssetSource? source,
+    $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? primaryStatus,
+    $core.Iterable<$2532.AssetLinkPrimaryStatusDetails>? primaryStatusDetails,
+    $core.Iterable<$2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>? primaryStatusReasons,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -66,12 +66,12 @@ class CustomerAsset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'asset')
-    ..e<$2818.AssetFieldTypeEnum_AssetFieldType>(3, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $2818.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2818.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2818.AssetFieldTypeEnum_AssetFieldType.values)
-    ..e<$2828.AssetLinkStatusEnum_AssetLinkStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2828.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $2828.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $2828.AssetLinkStatusEnum_AssetLinkStatus.values)
-    ..e<$2827.AssetSourceEnum_AssetSource>(5, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2827.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2827.AssetSourceEnum_AssetSource.valueOf, enumValues: $2827.AssetSourceEnum_AssetSource.values)
-    ..e<$2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(6, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
-    ..pc<$2531.AssetLinkPrimaryStatusDetails>(7, _omitFieldNames ? '' : 'primaryStatusDetails', $pb.PbFieldType.PM, subBuilder: $2531.AssetLinkPrimaryStatusDetails.create)
-    ..pc<$2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(8, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values, defaultEnumValue: $2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED)
+    ..e<$2819.AssetFieldTypeEnum_AssetFieldType>(3, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $2819.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2819.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2819.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$2829.AssetLinkStatusEnum_AssetLinkStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2829.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $2829.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $2829.AssetLinkStatusEnum_AssetLinkStatus.values)
+    ..e<$2828.AssetSourceEnum_AssetSource>(5, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2828.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2828.AssetSourceEnum_AssetSource.valueOf, enumValues: $2828.AssetSourceEnum_AssetSource.values)
+    ..e<$2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(6, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
+    ..pc<$2532.AssetLinkPrimaryStatusDetails>(7, _omitFieldNames ? '' : 'primaryStatusDetails', $pb.PbFieldType.PM, subBuilder: $2532.AssetLinkPrimaryStatusDetails.create)
+    ..pc<$2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(8, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values, defaultEnumValue: $2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -121,9 +121,9 @@ class CustomerAsset extends $pb.GeneratedMessage {
 
   /// Required. Immutable. Role that the asset takes for the customer link.
   @$pb.TagNumber(3)
-  $2818.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(2);
+  $2819.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(2);
   @$pb.TagNumber(3)
-  set fieldType($2818.AssetFieldTypeEnum_AssetFieldType v) { setField(3, v); }
+  set fieldType($2819.AssetFieldTypeEnum_AssetFieldType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFieldType() => $_has(2);
   @$pb.TagNumber(3)
@@ -131,9 +131,9 @@ class CustomerAsset extends $pb.GeneratedMessage {
 
   /// Status of the customer asset.
   @$pb.TagNumber(4)
-  $2828.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(3);
+  $2829.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($2828.AssetLinkStatusEnum_AssetLinkStatus v) { setField(4, v); }
+  set status($2829.AssetLinkStatusEnum_AssetLinkStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -141,9 +141,9 @@ class CustomerAsset extends $pb.GeneratedMessage {
 
   /// Output only. Source of the customer asset link.
   @$pb.TagNumber(5)
-  $2827.AssetSourceEnum_AssetSource get source => $_getN(4);
+  $2828.AssetSourceEnum_AssetSource get source => $_getN(4);
   @$pb.TagNumber(5)
-  set source($2827.AssetSourceEnum_AssetSource v) { setField(5, v); }
+  set source($2828.AssetSourceEnum_AssetSource v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSource() => $_has(4);
   @$pb.TagNumber(5)
@@ -156,9 +156,9 @@ class CustomerAsset extends $pb.GeneratedMessage {
   /// its mainly policy and quality approvals) to come up with a more
   /// comprehensive status to indicate its serving state.
   @$pb.TagNumber(6)
-  $2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get primaryStatus => $_getN(5);
+  $2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get primaryStatus => $_getN(5);
   @$pb.TagNumber(6)
-  set primaryStatus($2529.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(6, v); }
+  set primaryStatus($2530.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPrimaryStatus() => $_has(5);
   @$pb.TagNumber(6)
@@ -167,12 +167,12 @@ class CustomerAsset extends $pb.GeneratedMessage {
   /// Output only. Provides the details of the primary status and its associated
   /// reasons.
   @$pb.TagNumber(7)
-  $core.List<$2531.AssetLinkPrimaryStatusDetails> get primaryStatusDetails => $_getList(6);
+  $core.List<$2532.AssetLinkPrimaryStatusDetails> get primaryStatusDetails => $_getList(6);
 
   /// Output only. Provides a list of reasons for why an asset is not serving or
   /// not serving at full capacity.
   @$pb.TagNumber(8)
-  $core.List<$2528.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason> get primaryStatusReasons => $_getList(7);
+  $core.List<$2529.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason> get primaryStatusReasons => $_getList(7);
 }
 
 

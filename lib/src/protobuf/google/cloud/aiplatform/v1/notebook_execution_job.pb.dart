@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'encryption_spec.pb.dart' as $4240;
-import 'job_state.pbenum.dart' as $4246;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'encryption_spec.pb.dart' as $4241;
+import 'job_state.pbenum.dart' as $4247;
 
 /// The Dataform Repository containing the input notebook.
 class NotebookExecutionJob_DataformRepositorySource extends $pb.GeneratedMessage {
@@ -240,19 +240,19 @@ class NotebookExecutionJob extends $pb.GeneratedMessage {
     $core.String? displayName,
     NotebookExecutionJob_DataformRepositorySource? dataformRepositorySource,
     NotebookExecutionJob_GcsNotebookSource? gcsNotebookSource,
-    $1737.Duration? executionTimeout,
+    $1738.Duration? executionTimeout,
     $core.String? scheduleResourceName,
     $core.String? gcsOutputUri,
     $core.String? executionUser,
-    $4246.JobState? jobState,
-    $1795.Status? status,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $4247.JobState? jobState,
+    $1796.Status? status,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? notebookRuntimeTemplateResourceName,
     NotebookExecutionJob_DirectNotebookSource? directNotebookSource,
     $core.String? serviceAccount,
     $core.Map<$core.String, $core.String>? labels,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
   }) {
     final $result = create();
     if (name != null) {
@@ -340,19 +340,19 @@ class NotebookExecutionJob extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<NotebookExecutionJob_DataformRepositorySource>(3, _omitFieldNames ? '' : 'dataformRepositorySource', subBuilder: NotebookExecutionJob_DataformRepositorySource.create)
     ..aOM<NotebookExecutionJob_GcsNotebookSource>(4, _omitFieldNames ? '' : 'gcsNotebookSource', subBuilder: NotebookExecutionJob_GcsNotebookSource.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'executionTimeout', subBuilder: $1738.Duration.create)
     ..aOS(6, _omitFieldNames ? '' : 'scheduleResourceName')
     ..aOS(8, _omitFieldNames ? '' : 'gcsOutputUri')
     ..aOS(9, _omitFieldNames ? '' : 'executionUser')
-    ..e<$4246.JobState>(10, _omitFieldNames ? '' : 'jobState', $pb.PbFieldType.OE, defaultOrMaker: $4246.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4246.JobState.valueOf, enumValues: $4246.JobState.values)
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4247.JobState>(10, _omitFieldNames ? '' : 'jobState', $pb.PbFieldType.OE, defaultOrMaker: $4247.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4247.JobState.valueOf, enumValues: $4247.JobState.values)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(14, _omitFieldNames ? '' : 'notebookRuntimeTemplateResourceName')
     ..aOM<NotebookExecutionJob_DirectNotebookSource>(17, _omitFieldNames ? '' : 'directNotebookSource', subBuilder: NotebookExecutionJob_DirectNotebookSource.create)
     ..aOS(18, _omitFieldNames ? '' : 'serviceAccount')
     ..m<$core.String, $core.String>(19, _omitFieldNames ? '' : 'labels', entryClassName: 'NotebookExecutionJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$4240.EncryptionSpec>(22, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(22, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -438,15 +438,15 @@ class NotebookExecutionJob extends $pb.GeneratedMessage {
 
   /// Max running time of the execution job in seconds (default 86400s / 24 hrs).
   @$pb.TagNumber(5)
-  $1737.Duration get executionTimeout => $_getN(4);
+  $1738.Duration get executionTimeout => $_getN(4);
   @$pb.TagNumber(5)
-  set executionTimeout($1737.Duration v) { setField(5, v); }
+  set executionTimeout($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExecutionTimeout() => $_has(4);
   @$pb.TagNumber(5)
   void clearExecutionTimeout() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureExecutionTimeout() => $_ensure(4);
+  $1738.Duration ensureExecutionTimeout() => $_ensure(4);
 
   /// Output only. The Schedule resource name if this job is triggered by one.
   /// Format:
@@ -483,9 +483,9 @@ class NotebookExecutionJob extends $pb.GeneratedMessage {
 
   /// Output only. The state of the NotebookExecutionJob.
   @$pb.TagNumber(10)
-  $4246.JobState get jobState => $_getN(8);
+  $4247.JobState get jobState => $_getN(8);
   @$pb.TagNumber(10)
-  set jobState($4246.JobState v) { setField(10, v); }
+  set jobState($4247.JobState v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasJobState() => $_has(8);
   @$pb.TagNumber(10)
@@ -495,40 +495,40 @@ class NotebookExecutionJob extends $pb.GeneratedMessage {
   /// there is an error during notebook execution, the error details are
   /// populated.
   @$pb.TagNumber(11)
-  $1795.Status get status => $_getN(9);
+  $1796.Status get status => $_getN(9);
   @$pb.TagNumber(11)
-  set status($1795.Status v) { setField(11, v); }
+  set status($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStatus() => $_has(9);
   @$pb.TagNumber(11)
   void clearStatus() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureStatus() => $_ensure(9);
+  $1796.Status ensureStatus() => $_ensure(9);
 
   /// Output only. Timestamp when this NotebookExecutionJob was created.
   @$pb.TagNumber(12)
-  $1775.Timestamp get createTime => $_getN(10);
+  $1776.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(12)
-  set createTime($1775.Timestamp v) { setField(12, v); }
+  set createTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(12)
   void clearCreateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureCreateTime() => $_ensure(10);
+  $1776.Timestamp ensureCreateTime() => $_ensure(10);
 
   /// Output only. Timestamp when this NotebookExecutionJob was most recently
   /// updated.
   @$pb.TagNumber(13)
-  $1775.Timestamp get updateTime => $_getN(11);
+  $1776.Timestamp get updateTime => $_getN(11);
   @$pb.TagNumber(13)
-  set updateTime($1775.Timestamp v) { setField(13, v); }
+  set updateTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasUpdateTime() => $_has(11);
   @$pb.TagNumber(13)
   void clearUpdateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(11);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(11);
 
   /// The NotebookRuntimeTemplate to source compute configuration from.
   @$pb.TagNumber(14)
@@ -578,15 +578,15 @@ class NotebookExecutionJob extends $pb.GeneratedMessage {
   /// This field is auto-populated if the
   /// [NotebookService.NotebookRuntimeTemplate][] has an encryption spec.
   @$pb.TagNumber(22)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(16);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(16);
   @$pb.TagNumber(22)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(22, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasEncryptionSpec() => $_has(16);
   @$pb.TagNumber(22)
   void clearEncryptionSpec() => clearField(22);
   @$pb.TagNumber(22)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(16);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(16);
 }
 
 

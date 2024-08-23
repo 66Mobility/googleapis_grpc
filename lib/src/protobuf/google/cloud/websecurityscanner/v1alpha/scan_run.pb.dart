@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'scan_run.pbenum.dart';
 
 export 'scan_run.pbenum.dart';
@@ -25,8 +25,8 @@ class ScanRun extends $pb.GeneratedMessage {
     $core.String? name,
     ScanRun_ExecutionState? executionState,
     ScanRun_ResultState? resultState,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $fixnum.Int64? urlsCrawledCount,
     $fixnum.Int64? urlsTestedCount,
     $core.bool? hasVulnerabilities,
@@ -70,8 +70,8 @@ class ScanRun extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<ScanRun_ExecutionState>(2, _omitFieldNames ? '' : 'executionState', $pb.PbFieldType.OE, defaultOrMaker: ScanRun_ExecutionState.EXECUTION_STATE_UNSPECIFIED, valueOf: ScanRun_ExecutionState.valueOf, enumValues: ScanRun_ExecutionState.values)
     ..e<ScanRun_ResultState>(3, _omitFieldNames ? '' : 'resultState', $pb.PbFieldType.OE, defaultOrMaker: ScanRun_ResultState.RESULT_STATE_UNSPECIFIED, valueOf: ScanRun_ResultState.valueOf, enumValues: ScanRun_ResultState.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(6, _omitFieldNames ? '' : 'urlsCrawledCount')
     ..aInt64(7, _omitFieldNames ? '' : 'urlsTestedCount')
     ..aOB(8, _omitFieldNames ? '' : 'hasVulnerabilities')
@@ -135,28 +135,28 @@ class ScanRun extends $pb.GeneratedMessage {
 
   /// The time at which the ScanRun started.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// The time at which the ScanRun reached termination state - that the ScanRun
   /// is either finished or stopped by user.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 
   /// The number of URLs crawled during this ScanRun. If the scan is in progress,
   /// the value represents the number of URLs crawled up to now.

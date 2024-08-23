@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/latlng.pb.dart' as $1798;
+import '../../type/latlng.pb.dart' as $1799;
 
 ///  A latitude-longitude viewport, represented as two diagonally opposite `low`
 ///  and `high` points. A viewport is considered a closed region, i.e. it includes
@@ -52,8 +52,8 @@ import '../../type/latlng.pb.dart' as $1798;
 ///  }
 class Viewport extends $pb.GeneratedMessage {
   factory Viewport({
-    $1798.LatLng? low,
-    $1798.LatLng? high,
+    $1799.LatLng? low,
+    $1799.LatLng? high,
   }) {
     final $result = create();
     if (low != null) {
@@ -69,8 +69,8 @@ class Viewport extends $pb.GeneratedMessage {
   factory Viewport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Viewport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.geo.type'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'low', subBuilder: $1798.LatLng.create)
-    ..aOM<$1798.LatLng>(2, _omitFieldNames ? '' : 'high', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'low', subBuilder: $1799.LatLng.create)
+    ..aOM<$1799.LatLng>(2, _omitFieldNames ? '' : 'high', subBuilder: $1799.LatLng.create)
     ..hasRequiredFields = false
   ;
 
@@ -97,27 +97,27 @@ class Viewport extends $pb.GeneratedMessage {
 
   /// Required. The low point of the viewport.
   @$pb.TagNumber(1)
-  $1798.LatLng get low => $_getN(0);
+  $1799.LatLng get low => $_getN(0);
   @$pb.TagNumber(1)
-  set low($1798.LatLng v) { setField(1, v); }
+  set low($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLow() => $_has(0);
   @$pb.TagNumber(1)
   void clearLow() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureLow() => $_ensure(0);
+  $1799.LatLng ensureLow() => $_ensure(0);
 
   /// Required. The high point of the viewport.
   @$pb.TagNumber(2)
-  $1798.LatLng get high => $_getN(1);
+  $1799.LatLng get high => $_getN(1);
   @$pb.TagNumber(2)
-  set high($1798.LatLng v) { setField(2, v); }
+  set high($1799.LatLng v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasHigh() => $_has(1);
   @$pb.TagNumber(2)
   void clearHigh() => clearField(2);
   @$pb.TagNumber(2)
-  $1798.LatLng ensureHigh() => $_ensure(1);
+  $1799.LatLng ensureHigh() => $_ensure(1);
 }
 
 

@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/policy.pb.dart' as $2525;
-import '../enums/asset_field_type.pbenum.dart' as $2818;
-import '../enums/asset_performance_label.pbenum.dart' as $2533;
-import '../enums/asset_source.pbenum.dart' as $2827;
-import '../enums/policy_approval_status.pbenum.dart' as $2527;
-import '../enums/policy_review_status.pbenum.dart' as $2526;
-import '../enums/served_asset_field_type.pbenum.dart' as $2532;
+import '../common/policy.pb.dart' as $2526;
+import '../enums/asset_field_type.pbenum.dart' as $2819;
+import '../enums/asset_performance_label.pbenum.dart' as $2534;
+import '../enums/asset_source.pbenum.dart' as $2828;
+import '../enums/policy_approval_status.pbenum.dart' as $2528;
+import '../enums/policy_review_status.pbenum.dart' as $2527;
+import '../enums/served_asset_field_type.pbenum.dart' as $2533;
 
 /// A link between an AdGroupAd and an Asset.
 /// Currently we only support AdGroupAdAssetView for AppAds and Responsive Search
@@ -27,14 +27,14 @@ import '../enums/served_asset_field_type.pbenum.dart' as $2532;
 class AdGroupAdAssetView extends $pb.GeneratedMessage {
   factory AdGroupAdAssetView({
     $core.String? resourceName,
-    $2818.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $2819.AssetFieldTypeEnum_AssetFieldType? fieldType,
     AdGroupAdAssetPolicySummary? policySummary,
-    $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel? performanceLabel,
+    $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel? performanceLabel,
     $core.bool? enabled,
     $core.String? adGroupAd,
     $core.String? asset,
-    $2532.ServedAssetFieldTypeEnum_ServedAssetFieldType? pinnedField,
-    $2827.AssetSourceEnum_AssetSource? source,
+    $2533.ServedAssetFieldTypeEnum_ServedAssetFieldType? pinnedField,
+    $2828.AssetSourceEnum_AssetSource? source,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -72,14 +72,14 @@ class AdGroupAdAssetView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupAdAssetView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2818.AssetFieldTypeEnum_AssetFieldType>(2, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $2818.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2818.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2818.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$2819.AssetFieldTypeEnum_AssetFieldType>(2, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $2819.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $2819.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2819.AssetFieldTypeEnum_AssetFieldType.values)
     ..aOM<AdGroupAdAssetPolicySummary>(3, _omitFieldNames ? '' : 'policySummary', subBuilder: AdGroupAdAssetPolicySummary.create)
-    ..e<$2533.AssetPerformanceLabelEnum_AssetPerformanceLabel>(4, _omitFieldNames ? '' : 'performanceLabel', $pb.PbFieldType.OE, defaultOrMaker: $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel.UNSPECIFIED, valueOf: $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel.valueOf, enumValues: $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel.values)
+    ..e<$2534.AssetPerformanceLabelEnum_AssetPerformanceLabel>(4, _omitFieldNames ? '' : 'performanceLabel', $pb.PbFieldType.OE, defaultOrMaker: $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel.UNSPECIFIED, valueOf: $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel.valueOf, enumValues: $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel.values)
     ..aOB(8, _omitFieldNames ? '' : 'enabled')
     ..aOS(9, _omitFieldNames ? '' : 'adGroupAd')
     ..aOS(10, _omitFieldNames ? '' : 'asset')
-    ..e<$2532.ServedAssetFieldTypeEnum_ServedAssetFieldType>(11, _omitFieldNames ? '' : 'pinnedField', $pb.PbFieldType.OE, defaultOrMaker: $2532.ServedAssetFieldTypeEnum_ServedAssetFieldType.UNSPECIFIED, valueOf: $2532.ServedAssetFieldTypeEnum_ServedAssetFieldType.valueOf, enumValues: $2532.ServedAssetFieldTypeEnum_ServedAssetFieldType.values)
-    ..e<$2827.AssetSourceEnum_AssetSource>(12, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2827.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2827.AssetSourceEnum_AssetSource.valueOf, enumValues: $2827.AssetSourceEnum_AssetSource.values)
+    ..e<$2533.ServedAssetFieldTypeEnum_ServedAssetFieldType>(11, _omitFieldNames ? '' : 'pinnedField', $pb.PbFieldType.OE, defaultOrMaker: $2533.ServedAssetFieldTypeEnum_ServedAssetFieldType.UNSPECIFIED, valueOf: $2533.ServedAssetFieldTypeEnum_ServedAssetFieldType.valueOf, enumValues: $2533.ServedAssetFieldTypeEnum_ServedAssetFieldType.values)
+    ..e<$2828.AssetSourceEnum_AssetSource>(12, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $2828.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $2828.AssetSourceEnum_AssetSource.valueOf, enumValues: $2828.AssetSourceEnum_AssetSource.values)
     ..hasRequiredFields = false
   ;
 
@@ -123,9 +123,9 @@ class AdGroupAdAssetView extends $pb.GeneratedMessage {
 
   /// Output only. Role that the asset takes in the ad.
   @$pb.TagNumber(2)
-  $2818.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(1);
+  $2819.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldType($2818.AssetFieldTypeEnum_AssetFieldType v) { setField(2, v); }
+  set fieldType($2819.AssetFieldTypeEnum_AssetFieldType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldType() => $_has(1);
   @$pb.TagNumber(2)
@@ -145,9 +145,9 @@ class AdGroupAdAssetView extends $pb.GeneratedMessage {
 
   /// Output only. Performance of an asset linkage.
   @$pb.TagNumber(4)
-  $2533.AssetPerformanceLabelEnum_AssetPerformanceLabel get performanceLabel => $_getN(3);
+  $2534.AssetPerformanceLabelEnum_AssetPerformanceLabel get performanceLabel => $_getN(3);
   @$pb.TagNumber(4)
-  set performanceLabel($2533.AssetPerformanceLabelEnum_AssetPerformanceLabel v) { setField(4, v); }
+  set performanceLabel($2534.AssetPerformanceLabelEnum_AssetPerformanceLabel v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPerformanceLabel() => $_has(3);
   @$pb.TagNumber(4)
@@ -188,9 +188,9 @@ class AdGroupAdAssetView extends $pb.GeneratedMessage {
 
   /// Output only. Pinned field.
   @$pb.TagNumber(11)
-  $2532.ServedAssetFieldTypeEnum_ServedAssetFieldType get pinnedField => $_getN(7);
+  $2533.ServedAssetFieldTypeEnum_ServedAssetFieldType get pinnedField => $_getN(7);
   @$pb.TagNumber(11)
-  set pinnedField($2532.ServedAssetFieldTypeEnum_ServedAssetFieldType v) { setField(11, v); }
+  set pinnedField($2533.ServedAssetFieldTypeEnum_ServedAssetFieldType v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasPinnedField() => $_has(7);
   @$pb.TagNumber(11)
@@ -198,9 +198,9 @@ class AdGroupAdAssetView extends $pb.GeneratedMessage {
 
   /// Output only. Source of the ad group ad asset.
   @$pb.TagNumber(12)
-  $2827.AssetSourceEnum_AssetSource get source => $_getN(8);
+  $2828.AssetSourceEnum_AssetSource get source => $_getN(8);
   @$pb.TagNumber(12)
-  set source($2827.AssetSourceEnum_AssetSource v) { setField(12, v); }
+  set source($2828.AssetSourceEnum_AssetSource v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSource() => $_has(8);
   @$pb.TagNumber(12)
@@ -210,9 +210,9 @@ class AdGroupAdAssetView extends $pb.GeneratedMessage {
 /// Contains policy information for an ad group ad asset.
 class AdGroupAdAssetPolicySummary extends $pb.GeneratedMessage {
   factory AdGroupAdAssetPolicySummary({
-    $core.Iterable<$2525.PolicyTopicEntry>? policyTopicEntries,
-    $2526.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
-    $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
+    $core.Iterable<$2526.PolicyTopicEntry>? policyTopicEntries,
+    $2527.PolicyReviewStatusEnum_PolicyReviewStatus? reviewStatus,
+    $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus? approvalStatus,
   }) {
     final $result = create();
     if (policyTopicEntries != null) {
@@ -231,9 +231,9 @@ class AdGroupAdAssetPolicySummary extends $pb.GeneratedMessage {
   factory AdGroupAdAssetPolicySummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupAdAssetPolicySummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..pc<$2525.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $2525.PolicyTopicEntry.create)
-    ..e<$2526.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $2526.PolicyReviewStatusEnum_PolicyReviewStatus.values)
-    ..e<$2527.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
+    ..pc<$2526.PolicyTopicEntry>(1, _omitFieldNames ? '' : 'policyTopicEntries', $pb.PbFieldType.PM, subBuilder: $2526.PolicyTopicEntry.create)
+    ..e<$2527.PolicyReviewStatusEnum_PolicyReviewStatus>(2, _omitFieldNames ? '' : 'reviewStatus', $pb.PbFieldType.OE, defaultOrMaker: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.UNSPECIFIED, valueOf: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.valueOf, enumValues: $2527.PolicyReviewStatusEnum_PolicyReviewStatus.values)
+    ..e<$2528.PolicyApprovalStatusEnum_PolicyApprovalStatus>(3, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.UNSPECIFIED, valueOf: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.valueOf, enumValues: $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -260,13 +260,13 @@ class AdGroupAdAssetPolicySummary extends $pb.GeneratedMessage {
 
   /// Output only. The list of policy findings for the ad group ad asset.
   @$pb.TagNumber(1)
-  $core.List<$2525.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
+  $core.List<$2526.PolicyTopicEntry> get policyTopicEntries => $_getList(0);
 
   /// Output only. Where in the review process this ad group ad asset is.
   @$pb.TagNumber(2)
-  $2526.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
+  $2527.PolicyReviewStatusEnum_PolicyReviewStatus get reviewStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set reviewStatus($2526.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
+  set reviewStatus($2527.PolicyReviewStatusEnum_PolicyReviewStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReviewStatus() => $_has(1);
   @$pb.TagNumber(2)
@@ -275,9 +275,9 @@ class AdGroupAdAssetPolicySummary extends $pb.GeneratedMessage {
   /// Output only. The overall approval status of this ad group ad asset,
   /// calculated based on the status of its individual policy topic entries.
   @$pb.TagNumber(3)
-  $2527.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
+  $2528.PolicyApprovalStatusEnum_PolicyApprovalStatus get approvalStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set approvalStatus($2527.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
+  set approvalStatus($2528.PolicyApprovalStatusEnum_PolicyApprovalStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApprovalStatus() => $_has(2);
   @$pb.TagNumber(3)

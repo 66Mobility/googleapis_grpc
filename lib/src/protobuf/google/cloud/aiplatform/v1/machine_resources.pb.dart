@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'accelerator_type.pbenum.dart' as $4237;
-import 'reservation_affinity.pb.dart' as $4236;
+import 'accelerator_type.pbenum.dart' as $4238;
+import 'reservation_affinity.pb.dart' as $4237;
 
 /// Specification of a single machine.
 class MachineSpec extends $pb.GeneratedMessage {
   factory MachineSpec({
     $core.String? machineType,
-    $4237.AcceleratorType? acceleratorType,
+    $4238.AcceleratorType? acceleratorType,
     $core.int? acceleratorCount,
     $core.String? tpuTopology,
-    $4236.ReservationAffinity? reservationAffinity,
+    $4237.ReservationAffinity? reservationAffinity,
   }) {
     final $result = create();
     if (machineType != null) {
@@ -50,10 +50,10 @@ class MachineSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MachineSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'machineType')
-    ..e<$4237.AcceleratorType>(2, _omitFieldNames ? '' : 'acceleratorType', $pb.PbFieldType.OE, defaultOrMaker: $4237.AcceleratorType.ACCELERATOR_TYPE_UNSPECIFIED, valueOf: $4237.AcceleratorType.valueOf, enumValues: $4237.AcceleratorType.values)
+    ..e<$4238.AcceleratorType>(2, _omitFieldNames ? '' : 'acceleratorType', $pb.PbFieldType.OE, defaultOrMaker: $4238.AcceleratorType.ACCELERATOR_TYPE_UNSPECIFIED, valueOf: $4238.AcceleratorType.valueOf, enumValues: $4238.AcceleratorType.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'acceleratorCount', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'tpuTopology')
-    ..aOM<$4236.ReservationAffinity>(5, _omitFieldNames ? '' : 'reservationAffinity', subBuilder: $4236.ReservationAffinity.create)
+    ..aOM<$4237.ReservationAffinity>(5, _omitFieldNames ? '' : 'reservationAffinity', subBuilder: $4237.ReservationAffinity.create)
     ..hasRequiredFields = false
   ;
 
@@ -104,9 +104,9 @@ class MachineSpec extends $pb.GeneratedMessage {
   /// as per
   /// [accelerator_count][google.cloud.aiplatform.v1.MachineSpec.accelerator_count].
   @$pb.TagNumber(2)
-  $4237.AcceleratorType get acceleratorType => $_getN(1);
+  $4238.AcceleratorType get acceleratorType => $_getN(1);
   @$pb.TagNumber(2)
-  set acceleratorType($4237.AcceleratorType v) { setField(2, v); }
+  set acceleratorType($4238.AcceleratorType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAcceleratorType() => $_has(1);
   @$pb.TagNumber(2)
@@ -136,15 +136,15 @@ class MachineSpec extends $pb.GeneratedMessage {
   /// Optional. Immutable. Configuration controlling how this resource pool
   /// consumes reservation.
   @$pb.TagNumber(5)
-  $4236.ReservationAffinity get reservationAffinity => $_getN(4);
+  $4237.ReservationAffinity get reservationAffinity => $_getN(4);
   @$pb.TagNumber(5)
-  set reservationAffinity($4236.ReservationAffinity v) { setField(5, v); }
+  set reservationAffinity($4237.ReservationAffinity v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReservationAffinity() => $_has(4);
   @$pb.TagNumber(5)
   void clearReservationAffinity() => clearField(5);
   @$pb.TagNumber(5)
-  $4236.ReservationAffinity ensureReservationAffinity() => $_ensure(4);
+  $4237.ReservationAffinity ensureReservationAffinity() => $_ensure(4);
 }
 
 /// A description of resources that are dedicated to a DeployedModel, and

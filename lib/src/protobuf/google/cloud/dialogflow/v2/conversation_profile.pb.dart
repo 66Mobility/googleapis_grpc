@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'audio_config.pb.dart' as $4495;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'audio_config.pb.dart' as $4497;
 import 'conversation_profile.pbenum.dart';
 import 'participant.pbenum.dart' as $893;
 
@@ -33,13 +33,13 @@ class ConversationProfile extends $pb.GeneratedMessage {
     NotificationConfig? notificationConfig,
     LoggingConfig? loggingConfig,
     NotificationConfig? newMessageEventNotificationConfig,
-    $4495.SpeechToTextConfig? sttConfig,
+    $4497.SpeechToTextConfig? sttConfig,
     $core.String? languageCode,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? securitySettings,
     $core.String? timeZone,
-    $4495.SynthesizeSpeechConfig? ttsConfig,
+    $4497.SynthesizeSpeechConfig? ttsConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -102,13 +102,13 @@ class ConversationProfile extends $pb.GeneratedMessage {
     ..aOM<NotificationConfig>(6, _omitFieldNames ? '' : 'notificationConfig', subBuilder: NotificationConfig.create)
     ..aOM<LoggingConfig>(7, _omitFieldNames ? '' : 'loggingConfig', subBuilder: LoggingConfig.create)
     ..aOM<NotificationConfig>(8, _omitFieldNames ? '' : 'newMessageEventNotificationConfig', subBuilder: NotificationConfig.create)
-    ..aOM<$4495.SpeechToTextConfig>(9, _omitFieldNames ? '' : 'sttConfig', subBuilder: $4495.SpeechToTextConfig.create)
+    ..aOM<$4497.SpeechToTextConfig>(9, _omitFieldNames ? '' : 'sttConfig', subBuilder: $4497.SpeechToTextConfig.create)
     ..aOS(10, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(13, _omitFieldNames ? '' : 'securitySettings')
     ..aOS(14, _omitFieldNames ? '' : 'timeZone')
-    ..aOM<$4495.SynthesizeSpeechConfig>(18, _omitFieldNames ? '' : 'ttsConfig', subBuilder: $4495.SynthesizeSpeechConfig.create)
+    ..aOM<$4497.SynthesizeSpeechConfig>(18, _omitFieldNames ? '' : 'ttsConfig', subBuilder: $4497.SynthesizeSpeechConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -233,15 +233,15 @@ class ConversationProfile extends $pb.GeneratedMessage {
 
   /// Settings for speech transcription.
   @$pb.TagNumber(9)
-  $4495.SpeechToTextConfig get sttConfig => $_getN(8);
+  $4497.SpeechToTextConfig get sttConfig => $_getN(8);
   @$pb.TagNumber(9)
-  set sttConfig($4495.SpeechToTextConfig v) { setField(9, v); }
+  set sttConfig($4497.SpeechToTextConfig v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSttConfig() => $_has(8);
   @$pb.TagNumber(9)
   void clearSttConfig() => clearField(9);
   @$pb.TagNumber(9)
-  $4495.SpeechToTextConfig ensureSttConfig() => $_ensure(8);
+  $4497.SpeechToTextConfig ensureSttConfig() => $_ensure(8);
 
   /// Language code for the conversation profile. If not specified, the language
   /// is en-US. Language at ConversationProfile should be set for all non en-US
@@ -259,27 +259,27 @@ class ConversationProfile extends $pb.GeneratedMessage {
 
   /// Output only. Create time of the conversation profile.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(10);
+  $1776.Timestamp get createTime => $_getN(10);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(10);
+  $1776.Timestamp ensureCreateTime() => $_ensure(10);
 
   /// Output only. Update time of the conversation profile.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(11);
+  $1776.Timestamp get updateTime => $_getN(11);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(11);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(11);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(11);
 
   /// Name of the CX SecuritySettings reference for the agent.
   /// Format: `projects/<Project ID>/locations/<Location
@@ -310,15 +310,15 @@ class ConversationProfile extends $pb.GeneratedMessage {
   ///  Used by Phone Gateway to specify synthesization options. If agent defines
   ///  synthesization options as well, agent settings overrides the option here.
   @$pb.TagNumber(18)
-  $4495.SynthesizeSpeechConfig get ttsConfig => $_getN(14);
+  $4497.SynthesizeSpeechConfig get ttsConfig => $_getN(14);
   @$pb.TagNumber(18)
-  set ttsConfig($4495.SynthesizeSpeechConfig v) { setField(18, v); }
+  set ttsConfig($4497.SynthesizeSpeechConfig v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasTtsConfig() => $_has(14);
   @$pb.TagNumber(18)
   void clearTtsConfig() => clearField(18);
   @$pb.TagNumber(18)
-  $4495.SynthesizeSpeechConfig ensureTtsConfig() => $_ensure(14);
+  $4497.SynthesizeSpeechConfig ensureTtsConfig() => $_ensure(14);
 }
 
 /// The request message for
@@ -601,7 +601,7 @@ class CreateConversationProfileRequest extends $pb.GeneratedMessage {
 class UpdateConversationProfileRequest extends $pb.GeneratedMessage {
   factory UpdateConversationProfileRequest({
     ConversationProfile? conversationProfile,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (conversationProfile != null) {
@@ -618,7 +618,7 @@ class UpdateConversationProfileRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConversationProfileRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOM<ConversationProfile>(1, _omitFieldNames ? '' : 'conversationProfile', subBuilder: ConversationProfile.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -657,15 +657,15 @@ class UpdateConversationProfileRequest extends $pb.GeneratedMessage {
 
   /// Required. The mask to control which fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 ///  The request message for
@@ -730,7 +730,7 @@ class DeleteConversationProfileRequest extends $pb.GeneratedMessage {
 class AutomatedAgentConfig extends $pb.GeneratedMessage {
   factory AutomatedAgentConfig({
     $core.String? agent,
-    $1737.Duration? sessionTtl,
+    $1738.Duration? sessionTtl,
   }) {
     final $result = create();
     if (agent != null) {
@@ -747,7 +747,7 @@ class AutomatedAgentConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutomatedAgentConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'agent')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'sessionTtl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'sessionTtl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -803,15 +803,15 @@ class AutomatedAgentConfig extends $pb.GeneratedMessage {
   /// for 30 minutes after the last request is sent for the session.
   /// This value should be no longer than 1 day.
   @$pb.TagNumber(3)
-  $1737.Duration get sessionTtl => $_getN(1);
+  $1738.Duration get sessionTtl => $_getN(1);
   @$pb.TagNumber(3)
-  set sessionTtl($1737.Duration v) { setField(3, v); }
+  set sessionTtl($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSessionTtl() => $_has(1);
   @$pb.TagNumber(3)
   void clearSessionTtl() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureSessionTtl() => $_ensure(1);
+  $1738.Duration ensureSessionTtl() => $_ensure(1);
 }
 
 /// Settings of suggestion trigger.
@@ -2699,7 +2699,7 @@ class SetSuggestionFeatureConfigOperationMetadata extends $pb.GeneratedMessage {
     $core.String? conversationProfile,
     $893.Participant_Role? participantRole,
     SuggestionFeature_Type? suggestionFeatureType,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (conversationProfile != null) {
@@ -2724,7 +2724,7 @@ class SetSuggestionFeatureConfigOperationMetadata extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'conversationProfile')
     ..e<$893.Participant_Role>(2, _omitFieldNames ? '' : 'participantRole', $pb.PbFieldType.OE, defaultOrMaker: $893.Participant_Role.ROLE_UNSPECIFIED, valueOf: $893.Participant_Role.valueOf, enumValues: $893.Participant_Role.values)
     ..e<SuggestionFeature_Type>(3, _omitFieldNames ? '' : 'suggestionFeatureType', $pb.PbFieldType.OE, defaultOrMaker: SuggestionFeature_Type.TYPE_UNSPECIFIED, valueOf: SuggestionFeature_Type.valueOf, enumValues: SuggestionFeature_Type.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2784,15 +2784,15 @@ class SetSuggestionFeatureConfigOperationMetadata extends $pb.GeneratedMessage {
 
   /// Timestamp whe the request was created. The time is measured on server side.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 }
 
 /// Metadata for a [ConversationProfile.ClearSuggestionFeatureConfig][]
@@ -2802,7 +2802,7 @@ class ClearSuggestionFeatureConfigOperationMetadata extends $pb.GeneratedMessage
     $core.String? conversationProfile,
     $893.Participant_Role? participantRole,
     SuggestionFeature_Type? suggestionFeatureType,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (conversationProfile != null) {
@@ -2827,7 +2827,7 @@ class ClearSuggestionFeatureConfigOperationMetadata extends $pb.GeneratedMessage
     ..aOS(1, _omitFieldNames ? '' : 'conversationProfile')
     ..e<$893.Participant_Role>(2, _omitFieldNames ? '' : 'participantRole', $pb.PbFieldType.OE, defaultOrMaker: $893.Participant_Role.ROLE_UNSPECIFIED, valueOf: $893.Participant_Role.valueOf, enumValues: $893.Participant_Role.values)
     ..e<SuggestionFeature_Type>(3, _omitFieldNames ? '' : 'suggestionFeatureType', $pb.PbFieldType.OE, defaultOrMaker: SuggestionFeature_Type.TYPE_UNSPECIFIED, valueOf: SuggestionFeature_Type.valueOf, enumValues: SuggestionFeature_Type.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2887,15 +2887,15 @@ class ClearSuggestionFeatureConfigOperationMetadata extends $pb.GeneratedMessage
 
   /// Timestamp whe the request was created. The time is measured on server side.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 }
 
 

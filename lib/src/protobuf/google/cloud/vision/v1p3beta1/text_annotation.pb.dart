@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'geometry.pb.dart' as $4714;
+import 'geometry.pb.dart' as $4716;
 import 'text_annotation.pbenum.dart';
 
 export 'text_annotation.pbenum.dart';
@@ -399,7 +399,7 @@ class Page extends $pb.GeneratedMessage {
 class Block extends $pb.GeneratedMessage {
   factory Block({
     TextAnnotation_TextProperty? property,
-    $4714.BoundingPoly? boundingBox,
+    $4716.BoundingPoly? boundingBox,
     $core.Iterable<Paragraph>? paragraphs,
     Block_BlockType? blockType,
     $core.double? confidence,
@@ -428,7 +428,7 @@ class Block extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Block', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p3beta1'), createEmptyInstance: create)
     ..aOM<TextAnnotation_TextProperty>(1, _omitFieldNames ? '' : 'property', subBuilder: TextAnnotation_TextProperty.create)
-    ..aOM<$4714.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4714.BoundingPoly.create)
+    ..aOM<$4716.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4716.BoundingPoly.create)
     ..pc<Paragraph>(3, _omitFieldNames ? '' : 'paragraphs', $pb.PbFieldType.PM, subBuilder: Paragraph.create)
     ..e<Block_BlockType>(4, _omitFieldNames ? '' : 'blockType', $pb.PbFieldType.OE, defaultOrMaker: Block_BlockType.UNKNOWN, valueOf: Block_BlockType.valueOf, enumValues: Block_BlockType.values)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
@@ -489,15 +489,15 @@ class Block extends $pb.GeneratedMessage {
   ///
   ///    and the vertice order will still be (0, 1, 2, 3).
   @$pb.TagNumber(2)
-  $4714.BoundingPoly get boundingBox => $_getN(1);
+  $4716.BoundingPoly get boundingBox => $_getN(1);
   @$pb.TagNumber(2)
-  set boundingBox($4714.BoundingPoly v) { setField(2, v); }
+  set boundingBox($4716.BoundingPoly v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBoundingBox() => $_has(1);
   @$pb.TagNumber(2)
   void clearBoundingBox() => clearField(2);
   @$pb.TagNumber(2)
-  $4714.BoundingPoly ensureBoundingBox() => $_ensure(1);
+  $4716.BoundingPoly ensureBoundingBox() => $_ensure(1);
 
   /// List of paragraphs in this block (if this blocks is of type text).
   @$pb.TagNumber(3)
@@ -528,7 +528,7 @@ class Block extends $pb.GeneratedMessage {
 class Paragraph extends $pb.GeneratedMessage {
   factory Paragraph({
     TextAnnotation_TextProperty? property,
-    $4714.BoundingPoly? boundingBox,
+    $4716.BoundingPoly? boundingBox,
     $core.Iterable<Word>? words,
     $core.double? confidence,
   }) {
@@ -553,7 +553,7 @@ class Paragraph extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Paragraph', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p3beta1'), createEmptyInstance: create)
     ..aOM<TextAnnotation_TextProperty>(1, _omitFieldNames ? '' : 'property', subBuilder: TextAnnotation_TextProperty.create)
-    ..aOM<$4714.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4714.BoundingPoly.create)
+    ..aOM<$4716.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4716.BoundingPoly.create)
     ..pc<Word>(3, _omitFieldNames ? '' : 'words', $pb.PbFieldType.PM, subBuilder: Word.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
@@ -608,15 +608,15 @@ class Paragraph extends $pb.GeneratedMessage {
   ///      1----0
   ///   and the vertice order will still be (0, 1, 2, 3).
   @$pb.TagNumber(2)
-  $4714.BoundingPoly get boundingBox => $_getN(1);
+  $4716.BoundingPoly get boundingBox => $_getN(1);
   @$pb.TagNumber(2)
-  set boundingBox($4714.BoundingPoly v) { setField(2, v); }
+  set boundingBox($4716.BoundingPoly v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBoundingBox() => $_has(1);
   @$pb.TagNumber(2)
   void clearBoundingBox() => clearField(2);
   @$pb.TagNumber(2)
-  $4714.BoundingPoly ensureBoundingBox() => $_ensure(1);
+  $4716.BoundingPoly ensureBoundingBox() => $_ensure(1);
 
   /// List of words in this paragraph.
   @$pb.TagNumber(3)
@@ -637,7 +637,7 @@ class Paragraph extends $pb.GeneratedMessage {
 class Word extends $pb.GeneratedMessage {
   factory Word({
     TextAnnotation_TextProperty? property,
-    $4714.BoundingPoly? boundingBox,
+    $4716.BoundingPoly? boundingBox,
     $core.Iterable<Symbol>? symbols,
     $core.double? confidence,
   }) {
@@ -662,7 +662,7 @@ class Word extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Word', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p3beta1'), createEmptyInstance: create)
     ..aOM<TextAnnotation_TextProperty>(1, _omitFieldNames ? '' : 'property', subBuilder: TextAnnotation_TextProperty.create)
-    ..aOM<$4714.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4714.BoundingPoly.create)
+    ..aOM<$4716.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4716.BoundingPoly.create)
     ..pc<Symbol>(3, _omitFieldNames ? '' : 'symbols', $pb.PbFieldType.PM, subBuilder: Symbol.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
@@ -717,15 +717,15 @@ class Word extends $pb.GeneratedMessage {
   ///      1----0
   ///   and the vertice order will still be (0, 1, 2, 3).
   @$pb.TagNumber(2)
-  $4714.BoundingPoly get boundingBox => $_getN(1);
+  $4716.BoundingPoly get boundingBox => $_getN(1);
   @$pb.TagNumber(2)
-  set boundingBox($4714.BoundingPoly v) { setField(2, v); }
+  set boundingBox($4716.BoundingPoly v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBoundingBox() => $_has(1);
   @$pb.TagNumber(2)
   void clearBoundingBox() => clearField(2);
   @$pb.TagNumber(2)
-  $4714.BoundingPoly ensureBoundingBox() => $_ensure(1);
+  $4716.BoundingPoly ensureBoundingBox() => $_ensure(1);
 
   /// List of symbols in the word.
   /// The order of the symbols follows the natural reading order.
@@ -747,7 +747,7 @@ class Word extends $pb.GeneratedMessage {
 class Symbol extends $pb.GeneratedMessage {
   factory Symbol({
     TextAnnotation_TextProperty? property,
-    $4714.BoundingPoly? boundingBox,
+    $4716.BoundingPoly? boundingBox,
     $core.String? text,
     $core.double? confidence,
   }) {
@@ -772,7 +772,7 @@ class Symbol extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Symbol', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p3beta1'), createEmptyInstance: create)
     ..aOM<TextAnnotation_TextProperty>(1, _omitFieldNames ? '' : 'property', subBuilder: TextAnnotation_TextProperty.create)
-    ..aOM<$4714.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4714.BoundingPoly.create)
+    ..aOM<$4716.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4716.BoundingPoly.create)
     ..aOS(3, _omitFieldNames ? '' : 'text')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
@@ -827,15 +827,15 @@ class Symbol extends $pb.GeneratedMessage {
   ///      1----0
   ///   and the vertice order will still be (0, 1, 2, 3).
   @$pb.TagNumber(2)
-  $4714.BoundingPoly get boundingBox => $_getN(1);
+  $4716.BoundingPoly get boundingBox => $_getN(1);
   @$pb.TagNumber(2)
-  set boundingBox($4714.BoundingPoly v) { setField(2, v); }
+  set boundingBox($4716.BoundingPoly v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBoundingBox() => $_has(1);
   @$pb.TagNumber(2)
   void clearBoundingBox() => clearField(2);
   @$pb.TagNumber(2)
-  $4714.BoundingPoly ensureBoundingBox() => $_ensure(1);
+  $4716.BoundingPoly ensureBoundingBox() => $_ensure(1);
 
   /// The actual UTF-8 representation of the symbol.
   @$pb.TagNumber(3)

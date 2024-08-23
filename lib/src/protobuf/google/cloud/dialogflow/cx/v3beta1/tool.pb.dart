@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import 'data_store_connection.pb.dart' as $4488;
-import 'inline.pb.dart' as $4493;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import 'data_store_connection.pb.dart' as $4490;
+import 'inline.pb.dart' as $4495;
 import 'tool.pbenum.dart';
 
 export 'tool.pbenum.dart';
@@ -442,7 +442,7 @@ enum ExportToolsResponse_Tools {
 class ExportToolsResponse extends $pb.GeneratedMessage {
   factory ExportToolsResponse({
     $core.String? toolsUri,
-    $4493.InlineDestination? toolsContent,
+    $4495.InlineDestination? toolsContent,
   }) {
     final $result = create();
     if (toolsUri != null) {
@@ -465,7 +465,7 @@ class ExportToolsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportToolsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'toolsUri')
-    ..aOM<$4493.InlineDestination>(2, _omitFieldNames ? '' : 'toolsContent', subBuilder: $4493.InlineDestination.create)
+    ..aOM<$4495.InlineDestination>(2, _omitFieldNames ? '' : 'toolsContent', subBuilder: $4495.InlineDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -509,15 +509,15 @@ class ExportToolsResponse extends $pb.GeneratedMessage {
   /// `tools_content_inline` is set to true in
   /// [ExportToolsRequest][google.cloud.dialogflow.cx.v3beta1.ExportToolsRequest].
   @$pb.TagNumber(2)
-  $4493.InlineDestination get toolsContent => $_getN(1);
+  $4495.InlineDestination get toolsContent => $_getN(1);
   @$pb.TagNumber(2)
-  set toolsContent($4493.InlineDestination v) { setField(2, v); }
+  set toolsContent($4495.InlineDestination v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasToolsContent() => $_has(1);
   @$pb.TagNumber(2)
   void clearToolsContent() => clearField(2);
   @$pb.TagNumber(2)
-  $4493.InlineDestination ensureToolsContent() => $_ensure(1);
+  $4495.InlineDestination ensureToolsContent() => $_ensure(1);
 }
 
 /// The request message for
@@ -525,7 +525,7 @@ class ExportToolsResponse extends $pb.GeneratedMessage {
 class UpdateToolRequest extends $pb.GeneratedMessage {
   factory UpdateToolRequest({
     Tool? tool,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (tool != null) {
@@ -542,7 +542,7 @@ class UpdateToolRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateToolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<Tool>(1, _omitFieldNames ? '' : 'tool', subBuilder: Tool.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -582,15 +582,15 @@ class UpdateToolRequest extends $pb.GeneratedMessage {
   /// The mask to control which fields get updated. If the mask is not present,
   /// all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for
@@ -824,7 +824,7 @@ class Tool_DataStoreTool_FallbackPrompt extends $pb.GeneratedMessage {
 /// list of data stores.
 class Tool_DataStoreTool extends $pb.GeneratedMessage {
   factory Tool_DataStoreTool({
-    $core.Iterable<$4488.DataStoreConnection>? dataStoreConnections,
+    $core.Iterable<$4490.DataStoreConnection>? dataStoreConnections,
     Tool_DataStoreTool_FallbackPrompt? fallbackPrompt,
   }) {
     final $result = create();
@@ -841,7 +841,7 @@ class Tool_DataStoreTool extends $pb.GeneratedMessage {
   factory Tool_DataStoreTool.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Tool.DataStoreTool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..pc<$4488.DataStoreConnection>(1, _omitFieldNames ? '' : 'dataStoreConnections', $pb.PbFieldType.PM, subBuilder: $4488.DataStoreConnection.create)
+    ..pc<$4490.DataStoreConnection>(1, _omitFieldNames ? '' : 'dataStoreConnections', $pb.PbFieldType.PM, subBuilder: $4490.DataStoreConnection.create)
     ..aOM<Tool_DataStoreTool_FallbackPrompt>(3, _omitFieldNames ? '' : 'fallbackPrompt', subBuilder: Tool_DataStoreTool_FallbackPrompt.create)
     ..hasRequiredFields = false
   ;
@@ -869,7 +869,7 @@ class Tool_DataStoreTool extends $pb.GeneratedMessage {
 
   /// Required. List of data stores to search.
   @$pb.TagNumber(1)
-  $core.List<$4488.DataStoreConnection> get dataStoreConnections => $_getList(0);
+  $core.List<$4490.DataStoreConnection> get dataStoreConnections => $_getList(0);
 
   /// Required. Fallback prompt configurations to use.
   @$pb.TagNumber(3)
@@ -941,8 +941,8 @@ class Tool_ExtensionTool extends $pb.GeneratedMessage {
 /// A Function tool describes the functions to be invoked on the client side.
 class Tool_FunctionTool extends $pb.GeneratedMessage {
   factory Tool_FunctionTool({
-    $1734.Struct? inputSchema,
-    $1734.Struct? outputSchema,
+    $1735.Struct? inputSchema,
+    $1735.Struct? outputSchema,
   }) {
     final $result = create();
     if (inputSchema != null) {
@@ -958,8 +958,8 @@ class Tool_FunctionTool extends $pb.GeneratedMessage {
   factory Tool_FunctionTool.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Tool.FunctionTool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'inputSchema', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'outputSchema', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'inputSchema', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'outputSchema', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -989,30 +989,30 @@ class Tool_FunctionTool extends $pb.GeneratedMessage {
   /// the function. This input is a JSON object that contains the function's
   /// parameters as properties of the object.
   @$pb.TagNumber(1)
-  $1734.Struct get inputSchema => $_getN(0);
+  $1735.Struct get inputSchema => $_getN(0);
   @$pb.TagNumber(1)
-  set inputSchema($1734.Struct v) { setField(1, v); }
+  set inputSchema($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInputSchema() => $_has(0);
   @$pb.TagNumber(1)
   void clearInputSchema() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureInputSchema() => $_ensure(0);
+  $1735.Struct ensureInputSchema() => $_ensure(0);
 
   /// Optional. The JSON schema is encapsulated in a
   /// [google.protobuf.Struct][google.protobuf.Struct] to describe the output
   /// of the function. This output is a JSON object that contains the
   /// function's parameters as properties of the object.
   @$pb.TagNumber(2)
-  $1734.Struct get outputSchema => $_getN(1);
+  $1735.Struct get outputSchema => $_getN(1);
   @$pb.TagNumber(2)
-  set outputSchema($1734.Struct v) { setField(2, v); }
+  set outputSchema($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOutputSchema() => $_has(1);
   @$pb.TagNumber(2)
   void clearOutputSchema() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureOutputSchema() => $_ensure(1);
+  $1735.Struct ensureOutputSchema() => $_ensure(1);
 }
 
 /// Config for authentication with API key.

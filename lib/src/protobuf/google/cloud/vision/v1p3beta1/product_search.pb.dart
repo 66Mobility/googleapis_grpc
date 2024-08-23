@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'geometry.pb.dart' as $4714;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'geometry.pb.dart' as $4716;
 import 'product_search_service.pb.dart' as $1484;
 
 /// Parameters for a product search request.
@@ -23,7 +23,7 @@ class ProductSearchParams extends $pb.GeneratedMessage {
     $core.String? productSet,
     $core.Iterable<$core.String>? productCategories,
     $core.String? filter,
-    $4714.BoundingPoly? boundingPoly,
+    $4716.BoundingPoly? boundingPoly,
   }) {
     final $result = create();
     if (productSet != null) {
@@ -48,7 +48,7 @@ class ProductSearchParams extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'productSet')
     ..pPS(7, _omitFieldNames ? '' : 'productCategories')
     ..aOS(8, _omitFieldNames ? '' : 'filter')
-    ..aOM<$4714.BoundingPoly>(9, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4714.BoundingPoly.create)
+    ..aOM<$4716.BoundingPoly>(9, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4716.BoundingPoly.create)
     ..hasRequiredFields = false
   ;
 
@@ -116,15 +116,15 @@ class ProductSearchParams extends $pb.GeneratedMessage {
   /// The bounding polygon around the area of interest in the image.
   /// If it is not specified, system discretion will be applied.
   @$pb.TagNumber(9)
-  $4714.BoundingPoly get boundingPoly => $_getN(3);
+  $4716.BoundingPoly get boundingPoly => $_getN(3);
   @$pb.TagNumber(9)
-  set boundingPoly($4714.BoundingPoly v) { setField(9, v); }
+  set boundingPoly($4716.BoundingPoly v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasBoundingPoly() => $_has(3);
   @$pb.TagNumber(9)
   void clearBoundingPoly() => clearField(9);
   @$pb.TagNumber(9)
-  $4714.BoundingPoly ensureBoundingPoly() => $_ensure(3);
+  $4716.BoundingPoly ensureBoundingPoly() => $_ensure(3);
 }
 
 /// Information about a product.
@@ -316,7 +316,7 @@ class ProductSearchResults_ObjectAnnotation extends $pb.GeneratedMessage {
 /// image.
 class ProductSearchResults_GroupedResult extends $pb.GeneratedMessage {
   factory ProductSearchResults_GroupedResult({
-    $4714.BoundingPoly? boundingPoly,
+    $4716.BoundingPoly? boundingPoly,
     $core.Iterable<ProductSearchResults_Result>? results,
     $core.Iterable<ProductSearchResults_ObjectAnnotation>? objectAnnotations,
   }) {
@@ -337,7 +337,7 @@ class ProductSearchResults_GroupedResult extends $pb.GeneratedMessage {
   factory ProductSearchResults_GroupedResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductSearchResults.GroupedResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p3beta1'), createEmptyInstance: create)
-    ..aOM<$4714.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4714.BoundingPoly.create)
+    ..aOM<$4716.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4716.BoundingPoly.create)
     ..pc<ProductSearchResults_Result>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: ProductSearchResults_Result.create)
     ..pc<ProductSearchResults_ObjectAnnotation>(3, _omitFieldNames ? '' : 'objectAnnotations', $pb.PbFieldType.PM, subBuilder: ProductSearchResults_ObjectAnnotation.create)
     ..hasRequiredFields = false
@@ -366,15 +366,15 @@ class ProductSearchResults_GroupedResult extends $pb.GeneratedMessage {
 
   /// The bounding polygon around the product detected in the query image.
   @$pb.TagNumber(1)
-  $4714.BoundingPoly get boundingPoly => $_getN(0);
+  $4716.BoundingPoly get boundingPoly => $_getN(0);
   @$pb.TagNumber(1)
-  set boundingPoly($4714.BoundingPoly v) { setField(1, v); }
+  set boundingPoly($4716.BoundingPoly v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBoundingPoly() => $_has(0);
   @$pb.TagNumber(1)
   void clearBoundingPoly() => clearField(1);
   @$pb.TagNumber(1)
-  $4714.BoundingPoly ensureBoundingPoly() => $_ensure(0);
+  $4716.BoundingPoly ensureBoundingPoly() => $_ensure(0);
 
   /// List of results, one for each product match.
   @$pb.TagNumber(2)
@@ -388,7 +388,7 @@ class ProductSearchResults_GroupedResult extends $pb.GeneratedMessage {
 /// Results for a product search request.
 class ProductSearchResults extends $pb.GeneratedMessage {
   factory ProductSearchResults({
-    $1775.Timestamp? indexTime,
+    $1776.Timestamp? indexTime,
     $core.Iterable<ProductSearchResults_Result>? results,
     $core.Iterable<ProductSearchResults_GroupedResult>? productGroupedResults,
   }) {
@@ -409,7 +409,7 @@ class ProductSearchResults extends $pb.GeneratedMessage {
   factory ProductSearchResults.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductSearchResults', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p3beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'indexTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'indexTime', subBuilder: $1776.Timestamp.create)
     ..pc<ProductSearchResults_Result>(5, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: ProductSearchResults_Result.create)
     ..pc<ProductSearchResults_GroupedResult>(6, _omitFieldNames ? '' : 'productGroupedResults', $pb.PbFieldType.PM, subBuilder: ProductSearchResults_GroupedResult.create)
     ..hasRequiredFields = false
@@ -440,15 +440,15 @@ class ProductSearchResults extends $pb.GeneratedMessage {
   /// product set and products removed from the product set after this time are
   /// not reflected in the current results.
   @$pb.TagNumber(2)
-  $1775.Timestamp get indexTime => $_getN(0);
+  $1776.Timestamp get indexTime => $_getN(0);
   @$pb.TagNumber(2)
-  set indexTime($1775.Timestamp v) { setField(2, v); }
+  set indexTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIndexTime() => $_has(0);
   @$pb.TagNumber(2)
   void clearIndexTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureIndexTime() => $_ensure(0);
+  $1776.Timestamp ensureIndexTime() => $_ensure(0);
 
   /// List of results, one for each product match.
   @$pb.TagNumber(5)

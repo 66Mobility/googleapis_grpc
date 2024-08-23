@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'gcs.pb.dart' as $4496;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'gcs.pb.dart' as $4498;
 
 /// Represents metadata of a conversation.
 class ConversationInfo extends $pb.GeneratedMessage {
@@ -81,7 +81,7 @@ enum InputConfig_Source {
 /// Google Cloud Storage.
 class InputConfig extends $pb.GeneratedMessage {
   factory InputConfig({
-    $4496.GcsSources? gcsSource,
+    $4498.GcsSources? gcsSource,
   }) {
     final $result = create();
     if (gcsSource != null) {
@@ -99,7 +99,7 @@ class InputConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$4496.GcsSources>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4496.GcsSources.create)
+    ..aOM<$4498.GcsSources>(1, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4498.GcsSources.create)
     ..hasRequiredFields = false
   ;
 
@@ -131,15 +131,15 @@ class InputConfig extends $pb.GeneratedMessage {
   /// name>//agent*.json. Wildcards are allowed and will be expanded into all
   /// matched JSON files, which will be read as one conversation per file.
   @$pb.TagNumber(1)
-  $4496.GcsSources get gcsSource => $_getN(0);
+  $4498.GcsSources get gcsSource => $_getN(0);
   @$pb.TagNumber(1)
-  set gcsSource($4496.GcsSources v) { setField(1, v); }
+  set gcsSource($4498.GcsSources v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGcsSource() => $_has(0);
   @$pb.TagNumber(1)
   void clearGcsSource() => clearField(1);
   @$pb.TagNumber(1)
-  $4496.GcsSources ensureGcsSource() => $_ensure(0);
+  $4498.GcsSources ensureGcsSource() => $_ensure(0);
 }
 
 /// Represents a conversation dataset that a user imports raw data into.
@@ -151,7 +151,7 @@ class ConversationDataset extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     InputConfig? inputConfig,
     ConversationInfo? conversationInfo,
     $fixnum.Int64? conversationCount,
@@ -188,7 +188,7 @@ class ConversationDataset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<InputConfig>(5, _omitFieldNames ? '' : 'inputConfig', subBuilder: InputConfig.create)
     ..aOM<ConversationInfo>(6, _omitFieldNames ? '' : 'conversationInfo', subBuilder: ConversationInfo.create)
     ..aInt64(7, _omitFieldNames ? '' : 'conversationCount')
@@ -250,15 +250,15 @@ class ConversationDataset extends $pb.GeneratedMessage {
 
   /// Output only. Creation time of this dataset.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Input configurations set during conversation data import.
   @$pb.TagNumber(5)
@@ -703,8 +703,8 @@ class ImportConversationDataRequest extends $pb.GeneratedMessage {
 class ImportConversationDataOperationMetadata extends $pb.GeneratedMessage {
   factory ImportConversationDataOperationMetadata({
     $core.String? conversationDataset,
-    $core.Iterable<$1795.Status>? partialFailures,
-    $1775.Timestamp? createTime,
+    $core.Iterable<$1796.Status>? partialFailures,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (conversationDataset != null) {
@@ -724,8 +724,8 @@ class ImportConversationDataOperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportConversationDataOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'conversationDataset')
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -765,20 +765,20 @@ class ImportConversationDataOperationMetadata extends $pb.GeneratedMessage {
   /// Partial failures are failures that don't fail the whole long running
   /// operation, e.g. single files that couldn't be read.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get partialFailures => $_getList(1);
+  $core.List<$1796.Status> get partialFailures => $_getList(1);
 
   /// Timestamp when import conversation data request was created. The time is
   /// measured on server side.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 /// Response used for

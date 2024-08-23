@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/campaign_shared_set_status.pbenum.dart' as $2199;
+import '../enums/campaign_shared_set_status.pbenum.dart' as $2200;
 
 /// CampaignSharedSets are used for managing the shared sets associated with a
 /// campaign.
 class CampaignSharedSet extends $pb.GeneratedMessage {
   factory CampaignSharedSet({
     $core.String? resourceName,
-    $2199.CampaignSharedSetStatusEnum_CampaignSharedSetStatus? status,
+    $2200.CampaignSharedSetStatusEnum_CampaignSharedSetStatus? status,
     $core.String? campaign,
     $core.String? sharedSet,
   }) {
@@ -45,7 +45,7 @@ class CampaignSharedSet extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignSharedSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2199.CampaignSharedSetStatusEnum_CampaignSharedSetStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2199.CampaignSharedSetStatusEnum_CampaignSharedSetStatus.UNSPECIFIED, valueOf: $2199.CampaignSharedSetStatusEnum_CampaignSharedSetStatus.valueOf, enumValues: $2199.CampaignSharedSetStatusEnum_CampaignSharedSetStatus.values)
+    ..e<$2200.CampaignSharedSetStatusEnum_CampaignSharedSetStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2200.CampaignSharedSetStatusEnum_CampaignSharedSetStatus.UNSPECIFIED, valueOf: $2200.CampaignSharedSetStatusEnum_CampaignSharedSetStatus.valueOf, enumValues: $2200.CampaignSharedSetStatusEnum_CampaignSharedSetStatus.values)
     ..aOS(5, _omitFieldNames ? '' : 'campaign')
     ..aOS(6, _omitFieldNames ? '' : 'sharedSet')
     ..hasRequiredFields = false
@@ -87,9 +87,9 @@ class CampaignSharedSet extends $pb.GeneratedMessage {
 
   /// Output only. The status of this campaign shared set. Read only.
   @$pb.TagNumber(2)
-  $2199.CampaignSharedSetStatusEnum_CampaignSharedSetStatus get status => $_getN(1);
+  $2200.CampaignSharedSetStatusEnum_CampaignSharedSetStatus get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($2199.CampaignSharedSetStatusEnum_CampaignSharedSetStatus v) { setField(2, v); }
+  set status($2200.CampaignSharedSetStatusEnum_CampaignSharedSetStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'citation.pb.dart' as $4145;
-import 'safety.pb.dart' as $4144;
+import 'citation.pb.dart' as $4146;
+import 'safety.pb.dart' as $4145;
 
 /// Request to generate a message response from the model.
 class GenerateMessageRequest extends $pb.GeneratedMessage {
@@ -177,7 +177,7 @@ class GenerateMessageResponse extends $pb.GeneratedMessage {
   factory GenerateMessageResponse({
     $core.Iterable<Message>? candidates,
     $core.Iterable<Message>? messages,
-    $core.Iterable<$4144.ContentFilter>? filters,
+    $core.Iterable<$4145.ContentFilter>? filters,
   }) {
     final $result = create();
     if (candidates != null) {
@@ -198,7 +198,7 @@ class GenerateMessageResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateMessageResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..pc<Message>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: Message.create)
     ..pc<Message>(2, _omitFieldNames ? '' : 'messages', $pb.PbFieldType.PM, subBuilder: Message.create)
-    ..pc<$4144.ContentFilter>(3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM, subBuilder: $4144.ContentFilter.create)
+    ..pc<$4145.ContentFilter>(3, _omitFieldNames ? '' : 'filters', $pb.PbFieldType.PM, subBuilder: $4145.ContentFilter.create)
     ..hasRequiredFields = false
   ;
 
@@ -238,7 +238,7 @@ class GenerateMessageResponse extends $pb.GeneratedMessage {
   ///  candidate from this response, the lowest `HarmProbability`
   ///  that triggered a block, and the HarmThreshold setting for that category.
   @$pb.TagNumber(3)
-  $core.List<$4144.ContentFilter> get filters => $_getList(2);
+  $core.List<$4145.ContentFilter> get filters => $_getList(2);
 }
 
 ///  The base unit of structured text.
@@ -252,7 +252,7 @@ class Message extends $pb.GeneratedMessage {
   factory Message({
     $core.String? author,
     $core.String? content,
-    $4145.CitationMetadata? citationMetadata,
+    $4146.CitationMetadata? citationMetadata,
   }) {
     final $result = create();
     if (author != null) {
@@ -273,7 +273,7 @@ class Message extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Message', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'author')
     ..aOS(2, _omitFieldNames ? '' : 'content')
-    ..aOM<$4145.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $4145.CitationMetadata.create)
+    ..aOM<$4146.CitationMetadata>(3, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $4146.CitationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -330,15 +330,15 @@ class Message extends $pb.GeneratedMessage {
   ///  populated with attribution information for any text included in the
   ///  `content`. This field is used only on output.
   @$pb.TagNumber(3)
-  $4145.CitationMetadata get citationMetadata => $_getN(2);
+  $4146.CitationMetadata get citationMetadata => $_getN(2);
   @$pb.TagNumber(3)
-  set citationMetadata($4145.CitationMetadata v) { setField(3, v); }
+  set citationMetadata($4146.CitationMetadata v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCitationMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearCitationMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $4145.CitationMetadata ensureCitationMetadata() => $_ensure(2);
+  $4146.CitationMetadata ensureCitationMetadata() => $_ensure(2);
 }
 
 ///  All of the structured input text passed to the model as a prompt.

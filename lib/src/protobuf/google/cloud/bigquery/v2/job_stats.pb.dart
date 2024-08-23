@@ -14,19 +14,19 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'dataset_reference.pb.dart' as $4389;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'dataset_reference.pb.dart' as $4390;
 import 'job_stats.pbenum.dart';
 import 'model.pb.dart' as $728;
 import 'model.pbenum.dart' as $728;
-import 'query_parameter.pb.dart' as $4404;
-import 'routine_reference.pb.dart' as $4391;
-import 'row_access_policy_reference.pb.dart' as $4411;
-import 'session_info.pb.dart' as $4412;
-import 'table_reference.pb.dart' as $4390;
-import 'table_schema.pb.dart' as $4396;
+import 'query_parameter.pb.dart' as $4405;
+import 'routine_reference.pb.dart' as $4392;
+import 'row_access_policy_reference.pb.dart' as $4412;
+import 'session_info.pb.dart' as $4413;
+import 'table_reference.pb.dart' as $4391;
+import 'table_schema.pb.dart' as $4397;
 
 export 'job_stats.pbenum.dart';
 
@@ -95,35 +95,35 @@ class ExplainQueryStep extends $pb.GeneratedMessage {
 class ExplainQueryStage extends $pb.GeneratedMessage {
   factory ExplainQueryStage({
     $core.String? name,
-    $1780.Int64Value? id,
+    $1781.Int64Value? id,
     $fixnum.Int64? startMs,
     $fixnum.Int64? endMs,
     $core.Iterable<$fixnum.Int64>? inputStages,
-    $1780.DoubleValue? waitRatioAvg,
-    $1780.Int64Value? waitMsAvg,
-    $1780.DoubleValue? waitRatioMax,
-    $1780.Int64Value? waitMsMax,
-    $1780.DoubleValue? readRatioAvg,
-    $1780.Int64Value? readMsAvg,
-    $1780.DoubleValue? readRatioMax,
-    $1780.Int64Value? readMsMax,
-    $1780.DoubleValue? computeRatioAvg,
-    $1780.Int64Value? computeMsAvg,
-    $1780.DoubleValue? computeRatioMax,
-    $1780.Int64Value? computeMsMax,
-    $1780.DoubleValue? writeRatioAvg,
-    $1780.Int64Value? writeMsAvg,
-    $1780.DoubleValue? writeRatioMax,
-    $1780.Int64Value? writeMsMax,
-    $1780.Int64Value? shuffleOutputBytes,
-    $1780.Int64Value? shuffleOutputBytesSpilled,
-    $1780.Int64Value? recordsRead,
-    $1780.Int64Value? recordsWritten,
-    $1780.Int64Value? parallelInputs,
-    $1780.Int64Value? completedParallelInputs,
+    $1781.DoubleValue? waitRatioAvg,
+    $1781.Int64Value? waitMsAvg,
+    $1781.DoubleValue? waitRatioMax,
+    $1781.Int64Value? waitMsMax,
+    $1781.DoubleValue? readRatioAvg,
+    $1781.Int64Value? readMsAvg,
+    $1781.DoubleValue? readRatioMax,
+    $1781.Int64Value? readMsMax,
+    $1781.DoubleValue? computeRatioAvg,
+    $1781.Int64Value? computeMsAvg,
+    $1781.DoubleValue? computeRatioMax,
+    $1781.Int64Value? computeMsMax,
+    $1781.DoubleValue? writeRatioAvg,
+    $1781.Int64Value? writeMsAvg,
+    $1781.DoubleValue? writeRatioMax,
+    $1781.Int64Value? writeMsMax,
+    $1781.Int64Value? shuffleOutputBytes,
+    $1781.Int64Value? shuffleOutputBytesSpilled,
+    $1781.Int64Value? recordsRead,
+    $1781.Int64Value? recordsWritten,
+    $1781.Int64Value? parallelInputs,
+    $1781.Int64Value? completedParallelInputs,
     $core.String? status,
     $core.Iterable<ExplainQueryStep>? steps,
-    $1780.Int64Value? slotMs,
+    $1781.Int64Value? slotMs,
     ExplainQueryStage_ComputeMode? computeMode,
   }) {
     final $result = create();
@@ -228,35 +228,35 @@ class ExplainQueryStage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExplainQueryStage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'id', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'id', subBuilder: $1781.Int64Value.create)
     ..aInt64(3, _omitFieldNames ? '' : 'startMs')
     ..aInt64(4, _omitFieldNames ? '' : 'endMs')
     ..p<$fixnum.Int64>(5, _omitFieldNames ? '' : 'inputStages', $pb.PbFieldType.K6)
-    ..aOM<$1780.DoubleValue>(6, _omitFieldNames ? '' : 'waitRatioAvg', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(7, _omitFieldNames ? '' : 'waitMsAvg', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(8, _omitFieldNames ? '' : 'waitRatioMax', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(9, _omitFieldNames ? '' : 'waitMsMax', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(10, _omitFieldNames ? '' : 'readRatioAvg', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(11, _omitFieldNames ? '' : 'readMsAvg', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(12, _omitFieldNames ? '' : 'readRatioMax', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(13, _omitFieldNames ? '' : 'readMsMax', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(14, _omitFieldNames ? '' : 'computeRatioAvg', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(15, _omitFieldNames ? '' : 'computeMsAvg', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(16, _omitFieldNames ? '' : 'computeRatioMax', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(17, _omitFieldNames ? '' : 'computeMsMax', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(18, _omitFieldNames ? '' : 'writeRatioAvg', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(19, _omitFieldNames ? '' : 'writeMsAvg', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(20, _omitFieldNames ? '' : 'writeRatioMax', subBuilder: $1780.DoubleValue.create)
-    ..aOM<$1780.Int64Value>(21, _omitFieldNames ? '' : 'writeMsMax', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(22, _omitFieldNames ? '' : 'shuffleOutputBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(23, _omitFieldNames ? '' : 'shuffleOutputBytesSpilled', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(24, _omitFieldNames ? '' : 'recordsRead', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(25, _omitFieldNames ? '' : 'recordsWritten', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(26, _omitFieldNames ? '' : 'parallelInputs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(27, _omitFieldNames ? '' : 'completedParallelInputs', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(6, _omitFieldNames ? '' : 'waitRatioAvg', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(7, _omitFieldNames ? '' : 'waitMsAvg', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(8, _omitFieldNames ? '' : 'waitRatioMax', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(9, _omitFieldNames ? '' : 'waitMsMax', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(10, _omitFieldNames ? '' : 'readRatioAvg', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(11, _omitFieldNames ? '' : 'readMsAvg', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(12, _omitFieldNames ? '' : 'readRatioMax', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(13, _omitFieldNames ? '' : 'readMsMax', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(14, _omitFieldNames ? '' : 'computeRatioAvg', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(15, _omitFieldNames ? '' : 'computeMsAvg', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(16, _omitFieldNames ? '' : 'computeRatioMax', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(17, _omitFieldNames ? '' : 'computeMsMax', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(18, _omitFieldNames ? '' : 'writeRatioAvg', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(19, _omitFieldNames ? '' : 'writeMsAvg', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(20, _omitFieldNames ? '' : 'writeRatioMax', subBuilder: $1781.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(21, _omitFieldNames ? '' : 'writeMsMax', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(22, _omitFieldNames ? '' : 'shuffleOutputBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(23, _omitFieldNames ? '' : 'shuffleOutputBytesSpilled', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(24, _omitFieldNames ? '' : 'recordsRead', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(25, _omitFieldNames ? '' : 'recordsWritten', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(26, _omitFieldNames ? '' : 'parallelInputs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(27, _omitFieldNames ? '' : 'completedParallelInputs', subBuilder: $1781.Int64Value.create)
     ..aOS(28, _omitFieldNames ? '' : 'status')
     ..pc<ExplainQueryStep>(29, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: ExplainQueryStep.create)
-    ..aOM<$1780.Int64Value>(30, _omitFieldNames ? '' : 'slotMs', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(30, _omitFieldNames ? '' : 'slotMs', subBuilder: $1781.Int64Value.create)
     ..e<ExplainQueryStage_ComputeMode>(31, _omitFieldNames ? '' : 'computeMode', $pb.PbFieldType.OE, defaultOrMaker: ExplainQueryStage_ComputeMode.COMPUTE_MODE_UNSPECIFIED, valueOf: ExplainQueryStage_ComputeMode.valueOf, enumValues: ExplainQueryStage_ComputeMode.values)
     ..hasRequiredFields = false
   ;
@@ -294,15 +294,15 @@ class ExplainQueryStage extends $pb.GeneratedMessage {
 
   /// Unique ID for the stage within the plan.
   @$pb.TagNumber(2)
-  $1780.Int64Value get id => $_getN(1);
+  $1781.Int64Value get id => $_getN(1);
   @$pb.TagNumber(2)
-  set id($1780.Int64Value v) { setField(2, v); }
+  set id($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
   void clearId() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureId() => $_ensure(1);
+  $1781.Int64Value ensureId() => $_ensure(1);
 
   /// Stage start time represented as milliseconds since the epoch.
   @$pb.TagNumber(3)
@@ -331,268 +331,268 @@ class ExplainQueryStage extends $pb.GeneratedMessage {
   /// Relative amount of time the average shard spent waiting to be
   /// scheduled.
   @$pb.TagNumber(6)
-  $1780.DoubleValue get waitRatioAvg => $_getN(5);
+  $1781.DoubleValue get waitRatioAvg => $_getN(5);
   @$pb.TagNumber(6)
-  set waitRatioAvg($1780.DoubleValue v) { setField(6, v); }
+  set waitRatioAvg($1781.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasWaitRatioAvg() => $_has(5);
   @$pb.TagNumber(6)
   void clearWaitRatioAvg() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.DoubleValue ensureWaitRatioAvg() => $_ensure(5);
+  $1781.DoubleValue ensureWaitRatioAvg() => $_ensure(5);
 
   /// Milliseconds the average shard spent waiting to be scheduled.
   @$pb.TagNumber(7)
-  $1780.Int64Value get waitMsAvg => $_getN(6);
+  $1781.Int64Value get waitMsAvg => $_getN(6);
   @$pb.TagNumber(7)
-  set waitMsAvg($1780.Int64Value v) { setField(7, v); }
+  set waitMsAvg($1781.Int64Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasWaitMsAvg() => $_has(6);
   @$pb.TagNumber(7)
   void clearWaitMsAvg() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int64Value ensureWaitMsAvg() => $_ensure(6);
+  $1781.Int64Value ensureWaitMsAvg() => $_ensure(6);
 
   /// Relative amount of time the slowest shard spent waiting to be
   /// scheduled.
   @$pb.TagNumber(8)
-  $1780.DoubleValue get waitRatioMax => $_getN(7);
+  $1781.DoubleValue get waitRatioMax => $_getN(7);
   @$pb.TagNumber(8)
-  set waitRatioMax($1780.DoubleValue v) { setField(8, v); }
+  set waitRatioMax($1781.DoubleValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasWaitRatioMax() => $_has(7);
   @$pb.TagNumber(8)
   void clearWaitRatioMax() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.DoubleValue ensureWaitRatioMax() => $_ensure(7);
+  $1781.DoubleValue ensureWaitRatioMax() => $_ensure(7);
 
   /// Milliseconds the slowest shard spent waiting to be scheduled.
   @$pb.TagNumber(9)
-  $1780.Int64Value get waitMsMax => $_getN(8);
+  $1781.Int64Value get waitMsMax => $_getN(8);
   @$pb.TagNumber(9)
-  set waitMsMax($1780.Int64Value v) { setField(9, v); }
+  set waitMsMax($1781.Int64Value v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasWaitMsMax() => $_has(8);
   @$pb.TagNumber(9)
   void clearWaitMsMax() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.Int64Value ensureWaitMsMax() => $_ensure(8);
+  $1781.Int64Value ensureWaitMsMax() => $_ensure(8);
 
   /// Relative amount of time the average shard spent reading input.
   @$pb.TagNumber(10)
-  $1780.DoubleValue get readRatioAvg => $_getN(9);
+  $1781.DoubleValue get readRatioAvg => $_getN(9);
   @$pb.TagNumber(10)
-  set readRatioAvg($1780.DoubleValue v) { setField(10, v); }
+  set readRatioAvg($1781.DoubleValue v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasReadRatioAvg() => $_has(9);
   @$pb.TagNumber(10)
   void clearReadRatioAvg() => clearField(10);
   @$pb.TagNumber(10)
-  $1780.DoubleValue ensureReadRatioAvg() => $_ensure(9);
+  $1781.DoubleValue ensureReadRatioAvg() => $_ensure(9);
 
   /// Milliseconds the average shard spent reading input.
   @$pb.TagNumber(11)
-  $1780.Int64Value get readMsAvg => $_getN(10);
+  $1781.Int64Value get readMsAvg => $_getN(10);
   @$pb.TagNumber(11)
-  set readMsAvg($1780.Int64Value v) { setField(11, v); }
+  set readMsAvg($1781.Int64Value v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasReadMsAvg() => $_has(10);
   @$pb.TagNumber(11)
   void clearReadMsAvg() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.Int64Value ensureReadMsAvg() => $_ensure(10);
+  $1781.Int64Value ensureReadMsAvg() => $_ensure(10);
 
   /// Relative amount of time the slowest shard spent reading input.
   @$pb.TagNumber(12)
-  $1780.DoubleValue get readRatioMax => $_getN(11);
+  $1781.DoubleValue get readRatioMax => $_getN(11);
   @$pb.TagNumber(12)
-  set readRatioMax($1780.DoubleValue v) { setField(12, v); }
+  set readRatioMax($1781.DoubleValue v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasReadRatioMax() => $_has(11);
   @$pb.TagNumber(12)
   void clearReadRatioMax() => clearField(12);
   @$pb.TagNumber(12)
-  $1780.DoubleValue ensureReadRatioMax() => $_ensure(11);
+  $1781.DoubleValue ensureReadRatioMax() => $_ensure(11);
 
   /// Milliseconds the slowest shard spent reading input.
   @$pb.TagNumber(13)
-  $1780.Int64Value get readMsMax => $_getN(12);
+  $1781.Int64Value get readMsMax => $_getN(12);
   @$pb.TagNumber(13)
-  set readMsMax($1780.Int64Value v) { setField(13, v); }
+  set readMsMax($1781.Int64Value v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasReadMsMax() => $_has(12);
   @$pb.TagNumber(13)
   void clearReadMsMax() => clearField(13);
   @$pb.TagNumber(13)
-  $1780.Int64Value ensureReadMsMax() => $_ensure(12);
+  $1781.Int64Value ensureReadMsMax() => $_ensure(12);
 
   /// Relative amount of time the average shard spent on CPU-bound tasks.
   @$pb.TagNumber(14)
-  $1780.DoubleValue get computeRatioAvg => $_getN(13);
+  $1781.DoubleValue get computeRatioAvg => $_getN(13);
   @$pb.TagNumber(14)
-  set computeRatioAvg($1780.DoubleValue v) { setField(14, v); }
+  set computeRatioAvg($1781.DoubleValue v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasComputeRatioAvg() => $_has(13);
   @$pb.TagNumber(14)
   void clearComputeRatioAvg() => clearField(14);
   @$pb.TagNumber(14)
-  $1780.DoubleValue ensureComputeRatioAvg() => $_ensure(13);
+  $1781.DoubleValue ensureComputeRatioAvg() => $_ensure(13);
 
   /// Milliseconds the average shard spent on CPU-bound tasks.
   @$pb.TagNumber(15)
-  $1780.Int64Value get computeMsAvg => $_getN(14);
+  $1781.Int64Value get computeMsAvg => $_getN(14);
   @$pb.TagNumber(15)
-  set computeMsAvg($1780.Int64Value v) { setField(15, v); }
+  set computeMsAvg($1781.Int64Value v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasComputeMsAvg() => $_has(14);
   @$pb.TagNumber(15)
   void clearComputeMsAvg() => clearField(15);
   @$pb.TagNumber(15)
-  $1780.Int64Value ensureComputeMsAvg() => $_ensure(14);
+  $1781.Int64Value ensureComputeMsAvg() => $_ensure(14);
 
   /// Relative amount of time the slowest shard spent on CPU-bound tasks.
   @$pb.TagNumber(16)
-  $1780.DoubleValue get computeRatioMax => $_getN(15);
+  $1781.DoubleValue get computeRatioMax => $_getN(15);
   @$pb.TagNumber(16)
-  set computeRatioMax($1780.DoubleValue v) { setField(16, v); }
+  set computeRatioMax($1781.DoubleValue v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasComputeRatioMax() => $_has(15);
   @$pb.TagNumber(16)
   void clearComputeRatioMax() => clearField(16);
   @$pb.TagNumber(16)
-  $1780.DoubleValue ensureComputeRatioMax() => $_ensure(15);
+  $1781.DoubleValue ensureComputeRatioMax() => $_ensure(15);
 
   /// Milliseconds the slowest shard spent on CPU-bound tasks.
   @$pb.TagNumber(17)
-  $1780.Int64Value get computeMsMax => $_getN(16);
+  $1781.Int64Value get computeMsMax => $_getN(16);
   @$pb.TagNumber(17)
-  set computeMsMax($1780.Int64Value v) { setField(17, v); }
+  set computeMsMax($1781.Int64Value v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasComputeMsMax() => $_has(16);
   @$pb.TagNumber(17)
   void clearComputeMsMax() => clearField(17);
   @$pb.TagNumber(17)
-  $1780.Int64Value ensureComputeMsMax() => $_ensure(16);
+  $1781.Int64Value ensureComputeMsMax() => $_ensure(16);
 
   /// Relative amount of time the average shard spent on writing output.
   @$pb.TagNumber(18)
-  $1780.DoubleValue get writeRatioAvg => $_getN(17);
+  $1781.DoubleValue get writeRatioAvg => $_getN(17);
   @$pb.TagNumber(18)
-  set writeRatioAvg($1780.DoubleValue v) { setField(18, v); }
+  set writeRatioAvg($1781.DoubleValue v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasWriteRatioAvg() => $_has(17);
   @$pb.TagNumber(18)
   void clearWriteRatioAvg() => clearField(18);
   @$pb.TagNumber(18)
-  $1780.DoubleValue ensureWriteRatioAvg() => $_ensure(17);
+  $1781.DoubleValue ensureWriteRatioAvg() => $_ensure(17);
 
   /// Milliseconds the average shard spent on writing output.
   @$pb.TagNumber(19)
-  $1780.Int64Value get writeMsAvg => $_getN(18);
+  $1781.Int64Value get writeMsAvg => $_getN(18);
   @$pb.TagNumber(19)
-  set writeMsAvg($1780.Int64Value v) { setField(19, v); }
+  set writeMsAvg($1781.Int64Value v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasWriteMsAvg() => $_has(18);
   @$pb.TagNumber(19)
   void clearWriteMsAvg() => clearField(19);
   @$pb.TagNumber(19)
-  $1780.Int64Value ensureWriteMsAvg() => $_ensure(18);
+  $1781.Int64Value ensureWriteMsAvg() => $_ensure(18);
 
   /// Relative amount of time the slowest shard spent on writing output.
   @$pb.TagNumber(20)
-  $1780.DoubleValue get writeRatioMax => $_getN(19);
+  $1781.DoubleValue get writeRatioMax => $_getN(19);
   @$pb.TagNumber(20)
-  set writeRatioMax($1780.DoubleValue v) { setField(20, v); }
+  set writeRatioMax($1781.DoubleValue v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasWriteRatioMax() => $_has(19);
   @$pb.TagNumber(20)
   void clearWriteRatioMax() => clearField(20);
   @$pb.TagNumber(20)
-  $1780.DoubleValue ensureWriteRatioMax() => $_ensure(19);
+  $1781.DoubleValue ensureWriteRatioMax() => $_ensure(19);
 
   /// Milliseconds the slowest shard spent on writing output.
   @$pb.TagNumber(21)
-  $1780.Int64Value get writeMsMax => $_getN(20);
+  $1781.Int64Value get writeMsMax => $_getN(20);
   @$pb.TagNumber(21)
-  set writeMsMax($1780.Int64Value v) { setField(21, v); }
+  set writeMsMax($1781.Int64Value v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasWriteMsMax() => $_has(20);
   @$pb.TagNumber(21)
   void clearWriteMsMax() => clearField(21);
   @$pb.TagNumber(21)
-  $1780.Int64Value ensureWriteMsMax() => $_ensure(20);
+  $1781.Int64Value ensureWriteMsMax() => $_ensure(20);
 
   /// Total number of bytes written to shuffle.
   @$pb.TagNumber(22)
-  $1780.Int64Value get shuffleOutputBytes => $_getN(21);
+  $1781.Int64Value get shuffleOutputBytes => $_getN(21);
   @$pb.TagNumber(22)
-  set shuffleOutputBytes($1780.Int64Value v) { setField(22, v); }
+  set shuffleOutputBytes($1781.Int64Value v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasShuffleOutputBytes() => $_has(21);
   @$pb.TagNumber(22)
   void clearShuffleOutputBytes() => clearField(22);
   @$pb.TagNumber(22)
-  $1780.Int64Value ensureShuffleOutputBytes() => $_ensure(21);
+  $1781.Int64Value ensureShuffleOutputBytes() => $_ensure(21);
 
   /// Total number of bytes written to shuffle and spilled to disk.
   @$pb.TagNumber(23)
-  $1780.Int64Value get shuffleOutputBytesSpilled => $_getN(22);
+  $1781.Int64Value get shuffleOutputBytesSpilled => $_getN(22);
   @$pb.TagNumber(23)
-  set shuffleOutputBytesSpilled($1780.Int64Value v) { setField(23, v); }
+  set shuffleOutputBytesSpilled($1781.Int64Value v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasShuffleOutputBytesSpilled() => $_has(22);
   @$pb.TagNumber(23)
   void clearShuffleOutputBytesSpilled() => clearField(23);
   @$pb.TagNumber(23)
-  $1780.Int64Value ensureShuffleOutputBytesSpilled() => $_ensure(22);
+  $1781.Int64Value ensureShuffleOutputBytesSpilled() => $_ensure(22);
 
   /// Number of records read into the stage.
   @$pb.TagNumber(24)
-  $1780.Int64Value get recordsRead => $_getN(23);
+  $1781.Int64Value get recordsRead => $_getN(23);
   @$pb.TagNumber(24)
-  set recordsRead($1780.Int64Value v) { setField(24, v); }
+  set recordsRead($1781.Int64Value v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasRecordsRead() => $_has(23);
   @$pb.TagNumber(24)
   void clearRecordsRead() => clearField(24);
   @$pb.TagNumber(24)
-  $1780.Int64Value ensureRecordsRead() => $_ensure(23);
+  $1781.Int64Value ensureRecordsRead() => $_ensure(23);
 
   /// Number of records written by the stage.
   @$pb.TagNumber(25)
-  $1780.Int64Value get recordsWritten => $_getN(24);
+  $1781.Int64Value get recordsWritten => $_getN(24);
   @$pb.TagNumber(25)
-  set recordsWritten($1780.Int64Value v) { setField(25, v); }
+  set recordsWritten($1781.Int64Value v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasRecordsWritten() => $_has(24);
   @$pb.TagNumber(25)
   void clearRecordsWritten() => clearField(25);
   @$pb.TagNumber(25)
-  $1780.Int64Value ensureRecordsWritten() => $_ensure(24);
+  $1781.Int64Value ensureRecordsWritten() => $_ensure(24);
 
   /// Number of parallel input segments to be processed
   @$pb.TagNumber(26)
-  $1780.Int64Value get parallelInputs => $_getN(25);
+  $1781.Int64Value get parallelInputs => $_getN(25);
   @$pb.TagNumber(26)
-  set parallelInputs($1780.Int64Value v) { setField(26, v); }
+  set parallelInputs($1781.Int64Value v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasParallelInputs() => $_has(25);
   @$pb.TagNumber(26)
   void clearParallelInputs() => clearField(26);
   @$pb.TagNumber(26)
-  $1780.Int64Value ensureParallelInputs() => $_ensure(25);
+  $1781.Int64Value ensureParallelInputs() => $_ensure(25);
 
   /// Number of parallel input segments completed.
   @$pb.TagNumber(27)
-  $1780.Int64Value get completedParallelInputs => $_getN(26);
+  $1781.Int64Value get completedParallelInputs => $_getN(26);
   @$pb.TagNumber(27)
-  set completedParallelInputs($1780.Int64Value v) { setField(27, v); }
+  set completedParallelInputs($1781.Int64Value v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasCompletedParallelInputs() => $_has(26);
   @$pb.TagNumber(27)
   void clearCompletedParallelInputs() => clearField(27);
   @$pb.TagNumber(27)
-  $1780.Int64Value ensureCompletedParallelInputs() => $_ensure(26);
+  $1781.Int64Value ensureCompletedParallelInputs() => $_ensure(26);
 
   /// Current status for this stage.
   @$pb.TagNumber(28)
@@ -611,15 +611,15 @@ class ExplainQueryStage extends $pb.GeneratedMessage {
 
   /// Slot-milliseconds used by the stage.
   @$pb.TagNumber(30)
-  $1780.Int64Value get slotMs => $_getN(29);
+  $1781.Int64Value get slotMs => $_getN(29);
   @$pb.TagNumber(30)
-  set slotMs($1780.Int64Value v) { setField(30, v); }
+  set slotMs($1781.Int64Value v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasSlotMs() => $_has(29);
   @$pb.TagNumber(30)
   void clearSlotMs() => clearField(30);
   @$pb.TagNumber(30)
-  $1780.Int64Value ensureSlotMs() => $_ensure(29);
+  $1781.Int64Value ensureSlotMs() => $_ensure(29);
 
   /// Output only. Compute mode for this stage.
   @$pb.TagNumber(31)
@@ -635,12 +635,12 @@ class ExplainQueryStage extends $pb.GeneratedMessage {
 /// Summary of the state of query execution at a given time.
 class QueryTimelineSample extends $pb.GeneratedMessage {
   factory QueryTimelineSample({
-    $1780.Int64Value? elapsedMs,
-    $1780.Int64Value? totalSlotMs,
-    $1780.Int64Value? pendingUnits,
-    $1780.Int64Value? completedUnits,
-    $1780.Int64Value? activeUnits,
-    $1780.Int64Value? estimatedRunnableUnits,
+    $1781.Int64Value? elapsedMs,
+    $1781.Int64Value? totalSlotMs,
+    $1781.Int64Value? pendingUnits,
+    $1781.Int64Value? completedUnits,
+    $1781.Int64Value? activeUnits,
+    $1781.Int64Value? estimatedRunnableUnits,
   }) {
     final $result = create();
     if (elapsedMs != null) {
@@ -668,12 +668,12 @@ class QueryTimelineSample extends $pb.GeneratedMessage {
   factory QueryTimelineSample.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryTimelineSample', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'elapsedMs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'totalSlotMs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'pendingUnits', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'completedUnits', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'activeUnits', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(7, _omitFieldNames ? '' : 'estimatedRunnableUnits', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'elapsedMs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'totalSlotMs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'pendingUnits', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'completedUnits', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'activeUnits', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(7, _omitFieldNames ? '' : 'estimatedRunnableUnits', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -700,79 +700,79 @@ class QueryTimelineSample extends $pb.GeneratedMessage {
 
   /// Milliseconds elapsed since the start of query execution.
   @$pb.TagNumber(1)
-  $1780.Int64Value get elapsedMs => $_getN(0);
+  $1781.Int64Value get elapsedMs => $_getN(0);
   @$pb.TagNumber(1)
-  set elapsedMs($1780.Int64Value v) { setField(1, v); }
+  set elapsedMs($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasElapsedMs() => $_has(0);
   @$pb.TagNumber(1)
   void clearElapsedMs() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureElapsedMs() => $_ensure(0);
+  $1781.Int64Value ensureElapsedMs() => $_ensure(0);
 
   /// Cumulative slot-ms consumed by the query.
   @$pb.TagNumber(2)
-  $1780.Int64Value get totalSlotMs => $_getN(1);
+  $1781.Int64Value get totalSlotMs => $_getN(1);
   @$pb.TagNumber(2)
-  set totalSlotMs($1780.Int64Value v) { setField(2, v); }
+  set totalSlotMs($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTotalSlotMs() => $_has(1);
   @$pb.TagNumber(2)
   void clearTotalSlotMs() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureTotalSlotMs() => $_ensure(1);
+  $1781.Int64Value ensureTotalSlotMs() => $_ensure(1);
 
   /// Total units of work remaining for the query. This number can be revised
   /// (increased or decreased) while the query is running.
   @$pb.TagNumber(3)
-  $1780.Int64Value get pendingUnits => $_getN(2);
+  $1781.Int64Value get pendingUnits => $_getN(2);
   @$pb.TagNumber(3)
-  set pendingUnits($1780.Int64Value v) { setField(3, v); }
+  set pendingUnits($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPendingUnits() => $_has(2);
   @$pb.TagNumber(3)
   void clearPendingUnits() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensurePendingUnits() => $_ensure(2);
+  $1781.Int64Value ensurePendingUnits() => $_ensure(2);
 
   /// Total parallel units of work completed by this query.
   @$pb.TagNumber(4)
-  $1780.Int64Value get completedUnits => $_getN(3);
+  $1781.Int64Value get completedUnits => $_getN(3);
   @$pb.TagNumber(4)
-  set completedUnits($1780.Int64Value v) { setField(4, v); }
+  set completedUnits($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCompletedUnits() => $_has(3);
   @$pb.TagNumber(4)
   void clearCompletedUnits() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureCompletedUnits() => $_ensure(3);
+  $1781.Int64Value ensureCompletedUnits() => $_ensure(3);
 
   /// Total number of active workers. This does not correspond directly to
   /// slot usage. This is the largest value observed since the last sample.
   @$pb.TagNumber(5)
-  $1780.Int64Value get activeUnits => $_getN(4);
+  $1781.Int64Value get activeUnits => $_getN(4);
   @$pb.TagNumber(5)
-  set activeUnits($1780.Int64Value v) { setField(5, v); }
+  set activeUnits($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasActiveUnits() => $_has(4);
   @$pb.TagNumber(5)
   void clearActiveUnits() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureActiveUnits() => $_ensure(4);
+  $1781.Int64Value ensureActiveUnits() => $_ensure(4);
 
   /// Units of work that can be scheduled immediately. Providing additional slots
   /// for these units of work will accelerate the query, if no other query in
   /// the reservation needs additional slots.
   @$pb.TagNumber(7)
-  $1780.Int64Value get estimatedRunnableUnits => $_getN(5);
+  $1781.Int64Value get estimatedRunnableUnits => $_getN(5);
   @$pb.TagNumber(7)
-  set estimatedRunnableUnits($1780.Int64Value v) { setField(7, v); }
+  set estimatedRunnableUnits($1781.Int64Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEstimatedRunnableUnits() => $_has(5);
   @$pb.TagNumber(7)
   void clearEstimatedRunnableUnits() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int64Value ensureEstimatedRunnableUnits() => $_ensure(5);
+  $1781.Int64Value ensureEstimatedRunnableUnits() => $_ensure(5);
 }
 
 /// The external service cost is a portion of the total cost, these costs are not
@@ -789,9 +789,9 @@ class QueryTimelineSample extends $pb.GeneratedMessage {
 class ExternalServiceCost extends $pb.GeneratedMessage {
   factory ExternalServiceCost({
     $core.String? externalService,
-    $1780.Int64Value? bytesProcessed,
-    $1780.Int64Value? bytesBilled,
-    $1780.Int64Value? slotMs,
+    $1781.Int64Value? bytesProcessed,
+    $1781.Int64Value? bytesBilled,
+    $1781.Int64Value? slotMs,
     $fixnum.Int64? reservedSlotCount,
   }) {
     final $result = create();
@@ -818,9 +818,9 @@ class ExternalServiceCost extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExternalServiceCost', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'externalService')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'bytesProcessed', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'bytesBilled', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'slotMs', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'bytesProcessed', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'bytesBilled', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'slotMs', subBuilder: $1781.Int64Value.create)
     ..aInt64(5, _omitFieldNames ? '' : 'reservedSlotCount')
     ..hasRequiredFields = false
   ;
@@ -858,39 +858,39 @@ class ExternalServiceCost extends $pb.GeneratedMessage {
 
   /// External service cost in terms of bigquery bytes processed.
   @$pb.TagNumber(2)
-  $1780.Int64Value get bytesProcessed => $_getN(1);
+  $1781.Int64Value get bytesProcessed => $_getN(1);
   @$pb.TagNumber(2)
-  set bytesProcessed($1780.Int64Value v) { setField(2, v); }
+  set bytesProcessed($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBytesProcessed() => $_has(1);
   @$pb.TagNumber(2)
   void clearBytesProcessed() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureBytesProcessed() => $_ensure(1);
+  $1781.Int64Value ensureBytesProcessed() => $_ensure(1);
 
   /// External service cost in terms of bigquery bytes billed.
   @$pb.TagNumber(3)
-  $1780.Int64Value get bytesBilled => $_getN(2);
+  $1781.Int64Value get bytesBilled => $_getN(2);
   @$pb.TagNumber(3)
-  set bytesBilled($1780.Int64Value v) { setField(3, v); }
+  set bytesBilled($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBytesBilled() => $_has(2);
   @$pb.TagNumber(3)
   void clearBytesBilled() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureBytesBilled() => $_ensure(2);
+  $1781.Int64Value ensureBytesBilled() => $_ensure(2);
 
   /// External service cost in terms of bigquery slot milliseconds.
   @$pb.TagNumber(4)
-  $1780.Int64Value get slotMs => $_getN(3);
+  $1781.Int64Value get slotMs => $_getN(3);
   @$pb.TagNumber(4)
-  set slotMs($1780.Int64Value v) { setField(4, v); }
+  set slotMs($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSlotMs() => $_has(3);
   @$pb.TagNumber(4)
   void clearSlotMs() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureSlotMs() => $_ensure(3);
+  $1781.Int64Value ensureSlotMs() => $_ensure(3);
 
   /// Non-preemptable reserved slots used for external job.
   /// For example, reserved slots for Cloua AI Platform job are the VM usages
@@ -909,8 +909,8 @@ class ExternalServiceCost extends $pb.GeneratedMessage {
 /// JOB statistics are populated in JobStatistics4.
 class ExportDataStatistics extends $pb.GeneratedMessage {
   factory ExportDataStatistics({
-    $1780.Int64Value? fileCount,
-    $1780.Int64Value? rowCount,
+    $1781.Int64Value? fileCount,
+    $1781.Int64Value? rowCount,
   }) {
     final $result = create();
     if (fileCount != null) {
@@ -926,8 +926,8 @@ class ExportDataStatistics extends $pb.GeneratedMessage {
   factory ExportDataStatistics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDataStatistics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'fileCount', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'rowCount', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'fileCount', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'rowCount', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -955,28 +955,28 @@ class ExportDataStatistics extends $pb.GeneratedMessage {
   /// Number of destination files generated in case of EXPORT DATA
   /// statement only.
   @$pb.TagNumber(1)
-  $1780.Int64Value get fileCount => $_getN(0);
+  $1781.Int64Value get fileCount => $_getN(0);
   @$pb.TagNumber(1)
-  set fileCount($1780.Int64Value v) { setField(1, v); }
+  set fileCount($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFileCount() => $_has(0);
   @$pb.TagNumber(1)
   void clearFileCount() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureFileCount() => $_ensure(0);
+  $1781.Int64Value ensureFileCount() => $_ensure(0);
 
   /// [Alpha] Number of destination rows generated in case of EXPORT DATA
   /// statement only.
   @$pb.TagNumber(2)
-  $1780.Int64Value get rowCount => $_getN(1);
+  $1781.Int64Value get rowCount => $_getN(1);
   @$pb.TagNumber(2)
-  set rowCount($1780.Int64Value v) { setField(2, v); }
+  set rowCount($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRowCount() => $_has(1);
   @$pb.TagNumber(2)
   void clearRowCount() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureRowCount() => $_ensure(1);
+  $1781.Int64Value ensureRowCount() => $_ensure(1);
 }
 
 /// Reason why BI Engine didn't accelerate the query (or sub-query).
@@ -1135,7 +1135,7 @@ class IndexUnusedReason extends $pb.GeneratedMessage {
   factory IndexUnusedReason({
     IndexUnusedReason_Code? code,
     $core.String? message,
-    $4390.TableReference? baseTable,
+    $4391.TableReference? baseTable,
     $core.String? indexName,
   }) {
     final $result = create();
@@ -1160,7 +1160,7 @@ class IndexUnusedReason extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IndexUnusedReason', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..e<IndexUnusedReason_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: IndexUnusedReason_Code.CODE_UNSPECIFIED, valueOf: IndexUnusedReason_Code.valueOf, enumValues: IndexUnusedReason_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aOM<$4390.TableReference>(3, _omitFieldNames ? '' : 'baseTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(3, _omitFieldNames ? '' : 'baseTable', subBuilder: $4391.TableReference.create)
     ..aOS(4, _omitFieldNames ? '' : 'indexName')
     ..hasRequiredFields = false
   ;
@@ -1211,15 +1211,15 @@ class IndexUnusedReason extends $pb.GeneratedMessage {
   /// Specifies the base table involved in the reason that no search index was
   /// used.
   @$pb.TagNumber(3)
-  $4390.TableReference get baseTable => $_getN(2);
+  $4391.TableReference get baseTable => $_getN(2);
   @$pb.TagNumber(3)
-  set baseTable($4390.TableReference v) { setField(3, v); }
+  set baseTable($4391.TableReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBaseTable() => $_has(2);
   @$pb.TagNumber(3)
   void clearBaseTable() => clearField(3);
   @$pb.TagNumber(3)
-  $4390.TableReference ensureBaseTable() => $_ensure(2);
+  $4391.TableReference ensureBaseTable() => $_ensure(2);
 
   /// Specifies the name of the unused search index, if available.
   @$pb.TagNumber(4)
@@ -1363,7 +1363,7 @@ class VectorSearchStatistics extends $pb.GeneratedMessage {
 /// Query optimization information for a QUERY job.
 class QueryInfo extends $pb.GeneratedMessage {
   factory QueryInfo({
-    $1734.Struct? optimizationDetails,
+    $1735.Struct? optimizationDetails,
   }) {
     final $result = create();
     if (optimizationDetails != null) {
@@ -1376,7 +1376,7 @@ class QueryInfo extends $pb.GeneratedMessage {
   factory QueryInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'optimizationDetails', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'optimizationDetails', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1403,25 +1403,25 @@ class QueryInfo extends $pb.GeneratedMessage {
 
   /// Output only. Information about query optimizations.
   @$pb.TagNumber(2)
-  $1734.Struct get optimizationDetails => $_getN(0);
+  $1735.Struct get optimizationDetails => $_getN(0);
   @$pb.TagNumber(2)
-  set optimizationDetails($1734.Struct v) { setField(2, v); }
+  set optimizationDetails($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOptimizationDetails() => $_has(0);
   @$pb.TagNumber(2)
   void clearOptimizationDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureOptimizationDetails() => $_ensure(0);
+  $1735.Struct ensureOptimizationDetails() => $_ensure(0);
 }
 
 /// Statistics for a LOAD query.
 class LoadQueryStatistics extends $pb.GeneratedMessage {
   factory LoadQueryStatistics({
-    $1780.Int64Value? inputFiles,
-    $1780.Int64Value? inputFileBytes,
-    $1780.Int64Value? outputRows,
-    $1780.Int64Value? outputBytes,
-    $1780.Int64Value? badRecords,
+    $1781.Int64Value? inputFiles,
+    $1781.Int64Value? inputFileBytes,
+    $1781.Int64Value? outputRows,
+    $1781.Int64Value? outputBytes,
+    $1781.Int64Value? badRecords,
   }) {
     final $result = create();
     if (inputFiles != null) {
@@ -1446,11 +1446,11 @@ class LoadQueryStatistics extends $pb.GeneratedMessage {
   factory LoadQueryStatistics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LoadQueryStatistics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'inputFiles', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'inputFileBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'outputRows', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'outputBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'badRecords', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'inputFiles', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'inputFileBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'outputRows', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'outputBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'badRecords', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1477,54 +1477,54 @@ class LoadQueryStatistics extends $pb.GeneratedMessage {
 
   /// Output only. Number of source files in a LOAD query.
   @$pb.TagNumber(1)
-  $1780.Int64Value get inputFiles => $_getN(0);
+  $1781.Int64Value get inputFiles => $_getN(0);
   @$pb.TagNumber(1)
-  set inputFiles($1780.Int64Value v) { setField(1, v); }
+  set inputFiles($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInputFiles() => $_has(0);
   @$pb.TagNumber(1)
   void clearInputFiles() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureInputFiles() => $_ensure(0);
+  $1781.Int64Value ensureInputFiles() => $_ensure(0);
 
   /// Output only. Number of bytes of source data in a LOAD query.
   @$pb.TagNumber(2)
-  $1780.Int64Value get inputFileBytes => $_getN(1);
+  $1781.Int64Value get inputFileBytes => $_getN(1);
   @$pb.TagNumber(2)
-  set inputFileBytes($1780.Int64Value v) { setField(2, v); }
+  set inputFileBytes($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInputFileBytes() => $_has(1);
   @$pb.TagNumber(2)
   void clearInputFileBytes() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureInputFileBytes() => $_ensure(1);
+  $1781.Int64Value ensureInputFileBytes() => $_ensure(1);
 
   /// Output only. Number of rows imported in a LOAD query.
   /// Note that while a LOAD query is in the running state, this value may
   /// change.
   @$pb.TagNumber(3)
-  $1780.Int64Value get outputRows => $_getN(2);
+  $1781.Int64Value get outputRows => $_getN(2);
   @$pb.TagNumber(3)
-  set outputRows($1780.Int64Value v) { setField(3, v); }
+  set outputRows($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOutputRows() => $_has(2);
   @$pb.TagNumber(3)
   void clearOutputRows() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureOutputRows() => $_ensure(2);
+  $1781.Int64Value ensureOutputRows() => $_ensure(2);
 
   /// Output only. Size of the loaded data in bytes. Note that while a LOAD query
   /// is in the running state, this value may change.
   @$pb.TagNumber(4)
-  $1780.Int64Value get outputBytes => $_getN(3);
+  $1781.Int64Value get outputBytes => $_getN(3);
   @$pb.TagNumber(4)
-  set outputBytes($1780.Int64Value v) { setField(4, v); }
+  set outputBytes($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasOutputBytes() => $_has(3);
   @$pb.TagNumber(4)
   void clearOutputBytes() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureOutputBytes() => $_ensure(3);
+  $1781.Int64Value ensureOutputBytes() => $_ensure(3);
 
   /// Output only. The number of bad records encountered while processing a LOAD
   /// query. Note that if the job has failed because of more bad records
@@ -1532,57 +1532,57 @@ class LoadQueryStatistics extends $pb.GeneratedMessage {
   /// this number can be less than the total number of bad records present in the
   /// input data.
   @$pb.TagNumber(5)
-  $1780.Int64Value get badRecords => $_getN(4);
+  $1781.Int64Value get badRecords => $_getN(4);
   @$pb.TagNumber(5)
-  set badRecords($1780.Int64Value v) { setField(5, v); }
+  set badRecords($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBadRecords() => $_has(4);
   @$pb.TagNumber(5)
   void clearBadRecords() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureBadRecords() => $_ensure(4);
+  $1781.Int64Value ensureBadRecords() => $_ensure(4);
 }
 
 /// Statistics for a query job.
 class JobStatistics2 extends $pb.GeneratedMessage {
   factory JobStatistics2({
     $core.Iterable<ExplainQueryStage>? queryPlan,
-    $1780.Int64Value? estimatedBytesProcessed,
+    $1781.Int64Value? estimatedBytesProcessed,
     $core.Iterable<QueryTimelineSample>? timeline,
-    $1780.Int64Value? totalPartitionsProcessed,
-    $1780.Int64Value? totalBytesProcessed,
-    $1780.Int64Value? totalBytesBilled,
-    $1780.Int32Value? billingTier,
-    $1780.Int64Value? totalSlotMs,
-    $1780.BoolValue? cacheHit,
-    $core.Iterable<$4390.TableReference>? referencedTables,
-    $4396.TableSchema? schema,
-    $1780.Int64Value? numDmlAffectedRows,
-    $core.Iterable<$4404.QueryParameter>? undeclaredQueryParameters,
+    $1781.Int64Value? totalPartitionsProcessed,
+    $1781.Int64Value? totalBytesProcessed,
+    $1781.Int64Value? totalBytesBilled,
+    $1781.Int32Value? billingTier,
+    $1781.Int64Value? totalSlotMs,
+    $1781.BoolValue? cacheHit,
+    $core.Iterable<$4391.TableReference>? referencedTables,
+    $4397.TableSchema? schema,
+    $1781.Int64Value? numDmlAffectedRows,
+    $core.Iterable<$4405.QueryParameter>? undeclaredQueryParameters,
     $core.String? statementType,
     $core.String? ddlOperationPerformed,
-    $4390.TableReference? ddlTargetTable,
+    $4391.TableReference? ddlTargetTable,
     $core.String? totalBytesProcessedAccuracy,
-    $4391.RoutineReference? ddlTargetRoutine,
+    $4392.RoutineReference? ddlTargetRoutine,
     MlStatistics? mlStatistics,
-    $core.Iterable<$4391.RoutineReference>? referencedRoutines,
+    $core.Iterable<$4392.RoutineReference>? referencedRoutines,
     ExportDataStatistics? exportDataStatistics,
-    $4411.RowAccessPolicyReference? ddlTargetRowAccessPolicy,
-    $1780.Int64Value? ddlAffectedRowAccessPolicyCount,
+    $4412.RowAccessPolicyReference? ddlTargetRowAccessPolicy,
+    $1781.Int64Value? ddlAffectedRowAccessPolicyCount,
     $core.Iterable<ExternalServiceCost>? externalServiceCosts,
     BiEngineStatistics? biEngineStatistics,
-    $4389.DatasetReference? ddlTargetDataset,
-    $4390.TableReference? ddlDestinationTable,
+    $4390.DatasetReference? ddlTargetDataset,
+    $4391.TableReference? ddlDestinationTable,
     DmlStats? dmlStats,
     LoadQueryStatistics? loadQueryStatistics,
-    $4390.TableReference? dclTargetTable,
-    $4390.TableReference? dclTargetView,
-    $4389.DatasetReference? dclTargetDataset,
+    $4391.TableReference? dclTargetTable,
+    $4391.TableReference? dclTargetView,
+    $4390.DatasetReference? dclTargetDataset,
     SearchStatistics? searchStatistics,
     PerformanceInsights? performanceInsights,
     QueryInfo? queryInfo,
     SparkStatistics? sparkStatistics,
-    $1780.Int64Value? transferredBytes,
+    $1781.Int64Value? transferredBytes,
     MaterializedViewStatistics? materializedViewStatistics,
     MetadataCacheStatistics? metadataCacheStatistics,
     VectorSearchStatistics? vectorSearchStatistics,
@@ -1716,42 +1716,42 @@ class JobStatistics2 extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobStatistics2', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..pc<ExplainQueryStage>(1, _omitFieldNames ? '' : 'queryPlan', $pb.PbFieldType.PM, subBuilder: ExplainQueryStage.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'estimatedBytesProcessed', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'estimatedBytesProcessed', subBuilder: $1781.Int64Value.create)
     ..pc<QueryTimelineSample>(3, _omitFieldNames ? '' : 'timeline', $pb.PbFieldType.PM, subBuilder: QueryTimelineSample.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'totalPartitionsProcessed', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(6, _omitFieldNames ? '' : 'totalBytesBilled', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int32Value>(7, _omitFieldNames ? '' : 'billingTier', subBuilder: $1780.Int32Value.create)
-    ..aOM<$1780.Int64Value>(8, _omitFieldNames ? '' : 'totalSlotMs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.BoolValue>(9, _omitFieldNames ? '' : 'cacheHit', subBuilder: $1780.BoolValue.create)
-    ..pc<$4390.TableReference>(10, _omitFieldNames ? '' : 'referencedTables', $pb.PbFieldType.PM, subBuilder: $4390.TableReference.create)
-    ..aOM<$4396.TableSchema>(11, _omitFieldNames ? '' : 'schema', subBuilder: $4396.TableSchema.create)
-    ..aOM<$1780.Int64Value>(12, _omitFieldNames ? '' : 'numDmlAffectedRows', subBuilder: $1780.Int64Value.create)
-    ..pc<$4404.QueryParameter>(13, _omitFieldNames ? '' : 'undeclaredQueryParameters', $pb.PbFieldType.PM, subBuilder: $4404.QueryParameter.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'totalPartitionsProcessed', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(6, _omitFieldNames ? '' : 'totalBytesBilled', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int32Value>(7, _omitFieldNames ? '' : 'billingTier', subBuilder: $1781.Int32Value.create)
+    ..aOM<$1781.Int64Value>(8, _omitFieldNames ? '' : 'totalSlotMs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.BoolValue>(9, _omitFieldNames ? '' : 'cacheHit', subBuilder: $1781.BoolValue.create)
+    ..pc<$4391.TableReference>(10, _omitFieldNames ? '' : 'referencedTables', $pb.PbFieldType.PM, subBuilder: $4391.TableReference.create)
+    ..aOM<$4397.TableSchema>(11, _omitFieldNames ? '' : 'schema', subBuilder: $4397.TableSchema.create)
+    ..aOM<$1781.Int64Value>(12, _omitFieldNames ? '' : 'numDmlAffectedRows', subBuilder: $1781.Int64Value.create)
+    ..pc<$4405.QueryParameter>(13, _omitFieldNames ? '' : 'undeclaredQueryParameters', $pb.PbFieldType.PM, subBuilder: $4405.QueryParameter.create)
     ..aOS(14, _omitFieldNames ? '' : 'statementType')
     ..aOS(15, _omitFieldNames ? '' : 'ddlOperationPerformed')
-    ..aOM<$4390.TableReference>(16, _omitFieldNames ? '' : 'ddlTargetTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(16, _omitFieldNames ? '' : 'ddlTargetTable', subBuilder: $4391.TableReference.create)
     ..aOS(21, _omitFieldNames ? '' : 'totalBytesProcessedAccuracy')
-    ..aOM<$4391.RoutineReference>(22, _omitFieldNames ? '' : 'ddlTargetRoutine', subBuilder: $4391.RoutineReference.create)
+    ..aOM<$4392.RoutineReference>(22, _omitFieldNames ? '' : 'ddlTargetRoutine', subBuilder: $4392.RoutineReference.create)
     ..aOM<MlStatistics>(23, _omitFieldNames ? '' : 'mlStatistics', subBuilder: MlStatistics.create)
-    ..pc<$4391.RoutineReference>(24, _omitFieldNames ? '' : 'referencedRoutines', $pb.PbFieldType.PM, subBuilder: $4391.RoutineReference.create)
+    ..pc<$4392.RoutineReference>(24, _omitFieldNames ? '' : 'referencedRoutines', $pb.PbFieldType.PM, subBuilder: $4392.RoutineReference.create)
     ..aOM<ExportDataStatistics>(25, _omitFieldNames ? '' : 'exportDataStatistics', subBuilder: ExportDataStatistics.create)
-    ..aOM<$4411.RowAccessPolicyReference>(26, _omitFieldNames ? '' : 'ddlTargetRowAccessPolicy', subBuilder: $4411.RowAccessPolicyReference.create)
-    ..aOM<$1780.Int64Value>(27, _omitFieldNames ? '' : 'ddlAffectedRowAccessPolicyCount', subBuilder: $1780.Int64Value.create)
+    ..aOM<$4412.RowAccessPolicyReference>(26, _omitFieldNames ? '' : 'ddlTargetRowAccessPolicy', subBuilder: $4412.RowAccessPolicyReference.create)
+    ..aOM<$1781.Int64Value>(27, _omitFieldNames ? '' : 'ddlAffectedRowAccessPolicyCount', subBuilder: $1781.Int64Value.create)
     ..pc<ExternalServiceCost>(28, _omitFieldNames ? '' : 'externalServiceCosts', $pb.PbFieldType.PM, subBuilder: ExternalServiceCost.create)
     ..aOM<BiEngineStatistics>(29, _omitFieldNames ? '' : 'biEngineStatistics', subBuilder: BiEngineStatistics.create)
-    ..aOM<$4389.DatasetReference>(30, _omitFieldNames ? '' : 'ddlTargetDataset', subBuilder: $4389.DatasetReference.create)
-    ..aOM<$4390.TableReference>(31, _omitFieldNames ? '' : 'ddlDestinationTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4390.DatasetReference>(30, _omitFieldNames ? '' : 'ddlTargetDataset', subBuilder: $4390.DatasetReference.create)
+    ..aOM<$4391.TableReference>(31, _omitFieldNames ? '' : 'ddlDestinationTable', subBuilder: $4391.TableReference.create)
     ..aOM<DmlStats>(32, _omitFieldNames ? '' : 'dmlStats', subBuilder: DmlStats.create)
     ..aOM<LoadQueryStatistics>(33, _omitFieldNames ? '' : 'loadQueryStatistics', subBuilder: LoadQueryStatistics.create)
-    ..aOM<$4390.TableReference>(34, _omitFieldNames ? '' : 'dclTargetTable', subBuilder: $4390.TableReference.create)
-    ..aOM<$4390.TableReference>(35, _omitFieldNames ? '' : 'dclTargetView', subBuilder: $4390.TableReference.create)
-    ..aOM<$4389.DatasetReference>(36, _omitFieldNames ? '' : 'dclTargetDataset', subBuilder: $4389.DatasetReference.create)
+    ..aOM<$4391.TableReference>(34, _omitFieldNames ? '' : 'dclTargetTable', subBuilder: $4391.TableReference.create)
+    ..aOM<$4391.TableReference>(35, _omitFieldNames ? '' : 'dclTargetView', subBuilder: $4391.TableReference.create)
+    ..aOM<$4390.DatasetReference>(36, _omitFieldNames ? '' : 'dclTargetDataset', subBuilder: $4390.DatasetReference.create)
     ..aOM<SearchStatistics>(37, _omitFieldNames ? '' : 'searchStatistics', subBuilder: SearchStatistics.create)
     ..aOM<PerformanceInsights>(38, _omitFieldNames ? '' : 'performanceInsights', subBuilder: PerformanceInsights.create)
     ..aOM<QueryInfo>(39, _omitFieldNames ? '' : 'queryInfo', subBuilder: QueryInfo.create)
     ..aOM<SparkStatistics>(40, _omitFieldNames ? '' : 'sparkStatistics', subBuilder: SparkStatistics.create)
-    ..aOM<$1780.Int64Value>(41, _omitFieldNames ? '' : 'transferredBytes', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(41, _omitFieldNames ? '' : 'transferredBytes', subBuilder: $1781.Int64Value.create)
     ..aOM<MaterializedViewStatistics>(42, _omitFieldNames ? '' : 'materializedViewStatistics', subBuilder: MaterializedViewStatistics.create)
     ..aOM<MetadataCacheStatistics>(43, _omitFieldNames ? '' : 'metadataCacheStatistics', subBuilder: MetadataCacheStatistics.create)
     ..aOM<VectorSearchStatistics>(44, _omitFieldNames ? '' : 'vectorSearchStatistics', subBuilder: VectorSearchStatistics.create)
@@ -1785,15 +1785,15 @@ class JobStatistics2 extends $pb.GeneratedMessage {
 
   /// Output only. The original estimate of bytes processed for the job.
   @$pb.TagNumber(2)
-  $1780.Int64Value get estimatedBytesProcessed => $_getN(1);
+  $1781.Int64Value get estimatedBytesProcessed => $_getN(1);
   @$pb.TagNumber(2)
-  set estimatedBytesProcessed($1780.Int64Value v) { setField(2, v); }
+  set estimatedBytesProcessed($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEstimatedBytesProcessed() => $_has(1);
   @$pb.TagNumber(2)
   void clearEstimatedBytesProcessed() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureEstimatedBytesProcessed() => $_ensure(1);
+  $1781.Int64Value ensureEstimatedBytesProcessed() => $_ensure(1);
 
   /// Output only. Describes a timeline of job execution.
   @$pb.TagNumber(3)
@@ -1802,42 +1802,42 @@ class JobStatistics2 extends $pb.GeneratedMessage {
   /// Output only. Total number of partitions processed from all partitioned
   /// tables referenced in the job.
   @$pb.TagNumber(4)
-  $1780.Int64Value get totalPartitionsProcessed => $_getN(3);
+  $1781.Int64Value get totalPartitionsProcessed => $_getN(3);
   @$pb.TagNumber(4)
-  set totalPartitionsProcessed($1780.Int64Value v) { setField(4, v); }
+  set totalPartitionsProcessed($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTotalPartitionsProcessed() => $_has(3);
   @$pb.TagNumber(4)
   void clearTotalPartitionsProcessed() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureTotalPartitionsProcessed() => $_ensure(3);
+  $1781.Int64Value ensureTotalPartitionsProcessed() => $_ensure(3);
 
   /// Output only. Total bytes processed for the job.
   @$pb.TagNumber(5)
-  $1780.Int64Value get totalBytesProcessed => $_getN(4);
+  $1781.Int64Value get totalBytesProcessed => $_getN(4);
   @$pb.TagNumber(5)
-  set totalBytesProcessed($1780.Int64Value v) { setField(5, v); }
+  set totalBytesProcessed($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTotalBytesProcessed() => $_has(4);
   @$pb.TagNumber(5)
   void clearTotalBytesProcessed() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureTotalBytesProcessed() => $_ensure(4);
+  $1781.Int64Value ensureTotalBytesProcessed() => $_ensure(4);
 
   /// Output only. If the project is configured to use on-demand pricing,
   /// then this field contains the total bytes billed for the job.
   /// If the project is configured to use flat-rate pricing, then you are
   /// not billed for bytes and this field is informational only.
   @$pb.TagNumber(6)
-  $1780.Int64Value get totalBytesBilled => $_getN(5);
+  $1781.Int64Value get totalBytesBilled => $_getN(5);
   @$pb.TagNumber(6)
-  set totalBytesBilled($1780.Int64Value v) { setField(6, v); }
+  set totalBytesBilled($1781.Int64Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTotalBytesBilled() => $_has(5);
   @$pb.TagNumber(6)
   void clearTotalBytesBilled() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int64Value ensureTotalBytesBilled() => $_ensure(5);
+  $1781.Int64Value ensureTotalBytesBilled() => $_ensure(5);
 
   /// Output only. Billing tier for the job. This is a BigQuery-specific concept
   /// which is not related to the Google Cloud notion of "free tier". The value
@@ -1847,75 +1847,75 @@ class JobStatistics2 extends $pb.GeneratedMessage {
   /// On-demand queries that exceed this limit will fail with a
   /// billingTierLimitExceeded error.
   @$pb.TagNumber(7)
-  $1780.Int32Value get billingTier => $_getN(6);
+  $1781.Int32Value get billingTier => $_getN(6);
   @$pb.TagNumber(7)
-  set billingTier($1780.Int32Value v) { setField(7, v); }
+  set billingTier($1781.Int32Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBillingTier() => $_has(6);
   @$pb.TagNumber(7)
   void clearBillingTier() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.Int32Value ensureBillingTier() => $_ensure(6);
+  $1781.Int32Value ensureBillingTier() => $_ensure(6);
 
   /// Output only. Slot-milliseconds for the job.
   @$pb.TagNumber(8)
-  $1780.Int64Value get totalSlotMs => $_getN(7);
+  $1781.Int64Value get totalSlotMs => $_getN(7);
   @$pb.TagNumber(8)
-  set totalSlotMs($1780.Int64Value v) { setField(8, v); }
+  set totalSlotMs($1781.Int64Value v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTotalSlotMs() => $_has(7);
   @$pb.TagNumber(8)
   void clearTotalSlotMs() => clearField(8);
   @$pb.TagNumber(8)
-  $1780.Int64Value ensureTotalSlotMs() => $_ensure(7);
+  $1781.Int64Value ensureTotalSlotMs() => $_ensure(7);
 
   /// Output only. Whether the query result was fetched from the query cache.
   @$pb.TagNumber(9)
-  $1780.BoolValue get cacheHit => $_getN(8);
+  $1781.BoolValue get cacheHit => $_getN(8);
   @$pb.TagNumber(9)
-  set cacheHit($1780.BoolValue v) { setField(9, v); }
+  set cacheHit($1781.BoolValue v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCacheHit() => $_has(8);
   @$pb.TagNumber(9)
   void clearCacheHit() => clearField(9);
   @$pb.TagNumber(9)
-  $1780.BoolValue ensureCacheHit() => $_ensure(8);
+  $1781.BoolValue ensureCacheHit() => $_ensure(8);
 
   /// Output only. Referenced tables for the job. Queries that reference more
   /// than 50 tables will not have a complete list.
   @$pb.TagNumber(10)
-  $core.List<$4390.TableReference> get referencedTables => $_getList(9);
+  $core.List<$4391.TableReference> get referencedTables => $_getList(9);
 
   /// Output only. The schema of the results. Present only for successful dry
   /// run of non-legacy SQL queries.
   @$pb.TagNumber(11)
-  $4396.TableSchema get schema => $_getN(10);
+  $4397.TableSchema get schema => $_getN(10);
   @$pb.TagNumber(11)
-  set schema($4396.TableSchema v) { setField(11, v); }
+  set schema($4397.TableSchema v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSchema() => $_has(10);
   @$pb.TagNumber(11)
   void clearSchema() => clearField(11);
   @$pb.TagNumber(11)
-  $4396.TableSchema ensureSchema() => $_ensure(10);
+  $4397.TableSchema ensureSchema() => $_ensure(10);
 
   /// Output only. The number of rows affected by a DML statement. Present
   /// only for DML statements INSERT, UPDATE or DELETE.
   @$pb.TagNumber(12)
-  $1780.Int64Value get numDmlAffectedRows => $_getN(11);
+  $1781.Int64Value get numDmlAffectedRows => $_getN(11);
   @$pb.TagNumber(12)
-  set numDmlAffectedRows($1780.Int64Value v) { setField(12, v); }
+  set numDmlAffectedRows($1781.Int64Value v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasNumDmlAffectedRows() => $_has(11);
   @$pb.TagNumber(12)
   void clearNumDmlAffectedRows() => clearField(12);
   @$pb.TagNumber(12)
-  $1780.Int64Value ensureNumDmlAffectedRows() => $_ensure(11);
+  $1781.Int64Value ensureNumDmlAffectedRows() => $_ensure(11);
 
   /// Output only. GoogleSQL only: list of undeclared query
   /// parameters detected during a dry run validation.
   @$pb.TagNumber(13)
-  $core.List<$4404.QueryParameter> get undeclaredQueryParameters => $_getList(12);
+  $core.List<$4405.QueryParameter> get undeclaredQueryParameters => $_getList(12);
 
   ///  Output only. The type of query statement, if valid.
   ///  Possible values:
@@ -2065,15 +2065,15 @@ class JobStatistics2 extends $pb.GeneratedMessage {
   /// Output only. The DDL target table. Present only for
   /// CREATE/DROP TABLE/VIEW and DROP ALL ROW ACCESS POLICIES queries.
   @$pb.TagNumber(16)
-  $4390.TableReference get ddlTargetTable => $_getN(15);
+  $4391.TableReference get ddlTargetTable => $_getN(15);
   @$pb.TagNumber(16)
-  set ddlTargetTable($4390.TableReference v) { setField(16, v); }
+  set ddlTargetTable($4391.TableReference v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasDdlTargetTable() => $_has(15);
   @$pb.TagNumber(16)
   void clearDdlTargetTable() => clearField(16);
   @$pb.TagNumber(16)
-  $4390.TableReference ensureDdlTargetTable() => $_ensure(15);
+  $4391.TableReference ensureDdlTargetTable() => $_ensure(15);
 
   /// Output only. For dry-run jobs, totalBytesProcessed is an estimate and this
   /// field specifies the accuracy of the estimate. Possible values can be:
@@ -2093,15 +2093,15 @@ class JobStatistics2 extends $pb.GeneratedMessage {
   /// Output only. [Beta] The DDL target routine. Present only for
   /// CREATE/DROP FUNCTION/PROCEDURE queries.
   @$pb.TagNumber(22)
-  $4391.RoutineReference get ddlTargetRoutine => $_getN(17);
+  $4392.RoutineReference get ddlTargetRoutine => $_getN(17);
   @$pb.TagNumber(22)
-  set ddlTargetRoutine($4391.RoutineReference v) { setField(22, v); }
+  set ddlTargetRoutine($4392.RoutineReference v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasDdlTargetRoutine() => $_has(17);
   @$pb.TagNumber(22)
   void clearDdlTargetRoutine() => clearField(22);
   @$pb.TagNumber(22)
-  $4391.RoutineReference ensureDdlTargetRoutine() => $_ensure(17);
+  $4392.RoutineReference ensureDdlTargetRoutine() => $_ensure(17);
 
   /// Output only. Statistics of a BigQuery ML training job.
   @$pb.TagNumber(23)
@@ -2117,7 +2117,7 @@ class JobStatistics2 extends $pb.GeneratedMessage {
 
   /// Output only. Referenced routines for the job.
   @$pb.TagNumber(24)
-  $core.List<$4391.RoutineReference> get referencedRoutines => $_getList(19);
+  $core.List<$4392.RoutineReference> get referencedRoutines => $_getList(19);
 
   /// Output only. Stats for EXPORT DATA statement.
   @$pb.TagNumber(25)
@@ -2134,28 +2134,28 @@ class JobStatistics2 extends $pb.GeneratedMessage {
   /// Output only. The DDL target row access policy. Present only for
   /// CREATE/DROP ROW ACCESS POLICY queries.
   @$pb.TagNumber(26)
-  $4411.RowAccessPolicyReference get ddlTargetRowAccessPolicy => $_getN(21);
+  $4412.RowAccessPolicyReference get ddlTargetRowAccessPolicy => $_getN(21);
   @$pb.TagNumber(26)
-  set ddlTargetRowAccessPolicy($4411.RowAccessPolicyReference v) { setField(26, v); }
+  set ddlTargetRowAccessPolicy($4412.RowAccessPolicyReference v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasDdlTargetRowAccessPolicy() => $_has(21);
   @$pb.TagNumber(26)
   void clearDdlTargetRowAccessPolicy() => clearField(26);
   @$pb.TagNumber(26)
-  $4411.RowAccessPolicyReference ensureDdlTargetRowAccessPolicy() => $_ensure(21);
+  $4412.RowAccessPolicyReference ensureDdlTargetRowAccessPolicy() => $_ensure(21);
 
   /// Output only. The number of row access policies affected by a DDL statement.
   /// Present only for DROP ALL ROW ACCESS POLICIES queries.
   @$pb.TagNumber(27)
-  $1780.Int64Value get ddlAffectedRowAccessPolicyCount => $_getN(22);
+  $1781.Int64Value get ddlAffectedRowAccessPolicyCount => $_getN(22);
   @$pb.TagNumber(27)
-  set ddlAffectedRowAccessPolicyCount($1780.Int64Value v) { setField(27, v); }
+  set ddlAffectedRowAccessPolicyCount($1781.Int64Value v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasDdlAffectedRowAccessPolicyCount() => $_has(22);
   @$pb.TagNumber(27)
   void clearDdlAffectedRowAccessPolicyCount() => clearField(27);
   @$pb.TagNumber(27)
-  $1780.Int64Value ensureDdlAffectedRowAccessPolicyCount() => $_ensure(22);
+  $1781.Int64Value ensureDdlAffectedRowAccessPolicyCount() => $_ensure(22);
 
   /// Output only. Job cost breakdown as bigquery internal cost and external
   /// service costs.
@@ -2177,28 +2177,28 @@ class JobStatistics2 extends $pb.GeneratedMessage {
   /// Output only. The DDL target dataset. Present only for CREATE/ALTER/DROP
   /// SCHEMA(dataset) queries.
   @$pb.TagNumber(30)
-  $4389.DatasetReference get ddlTargetDataset => $_getN(25);
+  $4390.DatasetReference get ddlTargetDataset => $_getN(25);
   @$pb.TagNumber(30)
-  set ddlTargetDataset($4389.DatasetReference v) { setField(30, v); }
+  set ddlTargetDataset($4390.DatasetReference v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasDdlTargetDataset() => $_has(25);
   @$pb.TagNumber(30)
   void clearDdlTargetDataset() => clearField(30);
   @$pb.TagNumber(30)
-  $4389.DatasetReference ensureDdlTargetDataset() => $_ensure(25);
+  $4390.DatasetReference ensureDdlTargetDataset() => $_ensure(25);
 
   /// Output only. The table after rename. Present only for ALTER TABLE RENAME TO
   /// query.
   @$pb.TagNumber(31)
-  $4390.TableReference get ddlDestinationTable => $_getN(26);
+  $4391.TableReference get ddlDestinationTable => $_getN(26);
   @$pb.TagNumber(31)
-  set ddlDestinationTable($4390.TableReference v) { setField(31, v); }
+  set ddlDestinationTable($4391.TableReference v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasDdlDestinationTable() => $_has(26);
   @$pb.TagNumber(31)
   void clearDdlDestinationTable() => clearField(31);
   @$pb.TagNumber(31)
-  $4390.TableReference ensureDdlDestinationTable() => $_ensure(26);
+  $4391.TableReference ensureDdlDestinationTable() => $_ensure(26);
 
   /// Output only. Detailed statistics for DML statements INSERT, UPDATE, DELETE,
   /// MERGE or TRUNCATE.
@@ -2227,39 +2227,39 @@ class JobStatistics2 extends $pb.GeneratedMessage {
 
   /// Output only. Referenced table for DCL statement.
   @$pb.TagNumber(34)
-  $4390.TableReference get dclTargetTable => $_getN(29);
+  $4391.TableReference get dclTargetTable => $_getN(29);
   @$pb.TagNumber(34)
-  set dclTargetTable($4390.TableReference v) { setField(34, v); }
+  set dclTargetTable($4391.TableReference v) { setField(34, v); }
   @$pb.TagNumber(34)
   $core.bool hasDclTargetTable() => $_has(29);
   @$pb.TagNumber(34)
   void clearDclTargetTable() => clearField(34);
   @$pb.TagNumber(34)
-  $4390.TableReference ensureDclTargetTable() => $_ensure(29);
+  $4391.TableReference ensureDclTargetTable() => $_ensure(29);
 
   /// Output only. Referenced view for DCL statement.
   @$pb.TagNumber(35)
-  $4390.TableReference get dclTargetView => $_getN(30);
+  $4391.TableReference get dclTargetView => $_getN(30);
   @$pb.TagNumber(35)
-  set dclTargetView($4390.TableReference v) { setField(35, v); }
+  set dclTargetView($4391.TableReference v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasDclTargetView() => $_has(30);
   @$pb.TagNumber(35)
   void clearDclTargetView() => clearField(35);
   @$pb.TagNumber(35)
-  $4390.TableReference ensureDclTargetView() => $_ensure(30);
+  $4391.TableReference ensureDclTargetView() => $_ensure(30);
 
   /// Output only. Referenced dataset for DCL statement.
   @$pb.TagNumber(36)
-  $4389.DatasetReference get dclTargetDataset => $_getN(31);
+  $4390.DatasetReference get dclTargetDataset => $_getN(31);
   @$pb.TagNumber(36)
-  set dclTargetDataset($4389.DatasetReference v) { setField(36, v); }
+  set dclTargetDataset($4390.DatasetReference v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasDclTargetDataset() => $_has(31);
   @$pb.TagNumber(36)
   void clearDclTargetDataset() => clearField(36);
   @$pb.TagNumber(36)
-  $4389.DatasetReference ensureDclTargetDataset() => $_ensure(31);
+  $4390.DatasetReference ensureDclTargetDataset() => $_ensure(31);
 
   /// Output only. Search query specific statistics.
   @$pb.TagNumber(37)
@@ -2312,15 +2312,15 @@ class JobStatistics2 extends $pb.GeneratedMessage {
   /// Output only. Total bytes transferred for cross-cloud queries such as Cross
   /// Cloud Transfer and CREATE TABLE AS SELECT (CTAS).
   @$pb.TagNumber(41)
-  $1780.Int64Value get transferredBytes => $_getN(36);
+  $1781.Int64Value get transferredBytes => $_getN(36);
   @$pb.TagNumber(41)
-  set transferredBytes($1780.Int64Value v) { setField(41, v); }
+  set transferredBytes($1781.Int64Value v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasTransferredBytes() => $_has(36);
   @$pb.TagNumber(41)
   void clearTransferredBytes() => clearField(41);
   @$pb.TagNumber(41)
-  $1780.Int64Value ensureTransferredBytes() => $_ensure(36);
+  $1781.Int64Value ensureTransferredBytes() => $_ensure(36);
 
   /// Output only. Statistics of materialized views of a query job.
   @$pb.TagNumber(42)
@@ -2363,11 +2363,11 @@ class JobStatistics2 extends $pb.GeneratedMessage {
 /// Statistics for a load job.
 class JobStatistics3 extends $pb.GeneratedMessage {
   factory JobStatistics3({
-    $1780.Int64Value? inputFiles,
-    $1780.Int64Value? inputFileBytes,
-    $1780.Int64Value? outputRows,
-    $1780.Int64Value? outputBytes,
-    $1780.Int64Value? badRecords,
+    $1781.Int64Value? inputFiles,
+    $1781.Int64Value? inputFileBytes,
+    $1781.Int64Value? outputRows,
+    $1781.Int64Value? outputBytes,
+    $1781.Int64Value? badRecords,
     $core.Iterable<QueryTimelineSample>? timeline,
   }) {
     final $result = create();
@@ -2396,11 +2396,11 @@ class JobStatistics3 extends $pb.GeneratedMessage {
   factory JobStatistics3.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobStatistics3', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'inputFiles', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'inputFileBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'outputRows', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'outputBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(5, _omitFieldNames ? '' : 'badRecords', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'inputFiles', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'inputFileBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'outputRows', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'outputBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(5, _omitFieldNames ? '' : 'badRecords', subBuilder: $1781.Int64Value.create)
     ..pc<QueryTimelineSample>(7, _omitFieldNames ? '' : 'timeline', $pb.PbFieldType.PM, subBuilder: QueryTimelineSample.create)
     ..hasRequiredFields = false
   ;
@@ -2428,69 +2428,69 @@ class JobStatistics3 extends $pb.GeneratedMessage {
 
   /// Output only. Number of source files in a load job.
   @$pb.TagNumber(1)
-  $1780.Int64Value get inputFiles => $_getN(0);
+  $1781.Int64Value get inputFiles => $_getN(0);
   @$pb.TagNumber(1)
-  set inputFiles($1780.Int64Value v) { setField(1, v); }
+  set inputFiles($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInputFiles() => $_has(0);
   @$pb.TagNumber(1)
   void clearInputFiles() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureInputFiles() => $_ensure(0);
+  $1781.Int64Value ensureInputFiles() => $_ensure(0);
 
   /// Output only. Number of bytes of source data in a load job.
   @$pb.TagNumber(2)
-  $1780.Int64Value get inputFileBytes => $_getN(1);
+  $1781.Int64Value get inputFileBytes => $_getN(1);
   @$pb.TagNumber(2)
-  set inputFileBytes($1780.Int64Value v) { setField(2, v); }
+  set inputFileBytes($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInputFileBytes() => $_has(1);
   @$pb.TagNumber(2)
   void clearInputFileBytes() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureInputFileBytes() => $_ensure(1);
+  $1781.Int64Value ensureInputFileBytes() => $_ensure(1);
 
   /// Output only. Number of rows imported in a load job.
   /// Note that while an import job is in the running state, this
   /// value may change.
   @$pb.TagNumber(3)
-  $1780.Int64Value get outputRows => $_getN(2);
+  $1781.Int64Value get outputRows => $_getN(2);
   @$pb.TagNumber(3)
-  set outputRows($1780.Int64Value v) { setField(3, v); }
+  set outputRows($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOutputRows() => $_has(2);
   @$pb.TagNumber(3)
   void clearOutputRows() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureOutputRows() => $_ensure(2);
+  $1781.Int64Value ensureOutputRows() => $_ensure(2);
 
   /// Output only. Size of the loaded data in bytes. Note
   /// that while a load job is in the running state, this value may change.
   @$pb.TagNumber(4)
-  $1780.Int64Value get outputBytes => $_getN(3);
+  $1781.Int64Value get outputBytes => $_getN(3);
   @$pb.TagNumber(4)
-  set outputBytes($1780.Int64Value v) { setField(4, v); }
+  set outputBytes($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasOutputBytes() => $_has(3);
   @$pb.TagNumber(4)
   void clearOutputBytes() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureOutputBytes() => $_ensure(3);
+  $1781.Int64Value ensureOutputBytes() => $_ensure(3);
 
   /// Output only. The number of bad records encountered. Note that if the job
   /// has failed because of more bad records encountered than the maximum
   /// allowed in the load job configuration, then this number can be less than
   /// the total number of bad records present in the input data.
   @$pb.TagNumber(5)
-  $1780.Int64Value get badRecords => $_getN(4);
+  $1781.Int64Value get badRecords => $_getN(4);
   @$pb.TagNumber(5)
-  set badRecords($1780.Int64Value v) { setField(5, v); }
+  set badRecords($1781.Int64Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBadRecords() => $_has(4);
   @$pb.TagNumber(5)
   void clearBadRecords() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int64Value ensureBadRecords() => $_ensure(4);
+  $1781.Int64Value ensureBadRecords() => $_ensure(4);
 
   /// Output only. Describes a timeline of job execution.
   @$pb.TagNumber(7)
@@ -2501,7 +2501,7 @@ class JobStatistics3 extends $pb.GeneratedMessage {
 class JobStatistics4 extends $pb.GeneratedMessage {
   factory JobStatistics4({
     $core.Iterable<$fixnum.Int64>? destinationUriFileCounts,
-    $1780.Int64Value? inputBytes,
+    $1781.Int64Value? inputBytes,
     $core.Iterable<QueryTimelineSample>? timeline,
   }) {
     final $result = create();
@@ -2522,7 +2522,7 @@ class JobStatistics4 extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobStatistics4', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..p<$fixnum.Int64>(1, _omitFieldNames ? '' : 'destinationUriFileCounts', $pb.PbFieldType.K6)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'inputBytes', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'inputBytes', subBuilder: $1781.Int64Value.create)
     ..pc<QueryTimelineSample>(3, _omitFieldNames ? '' : 'timeline', $pb.PbFieldType.PM, subBuilder: QueryTimelineSample.create)
     ..hasRequiredFields = false
   ;
@@ -2559,15 +2559,15 @@ class JobStatistics4 extends $pb.GeneratedMessage {
   /// and doesn't have any relationship with the number of actual
   /// result bytes extracted in the desired format.
   @$pb.TagNumber(2)
-  $1780.Int64Value get inputBytes => $_getN(1);
+  $1781.Int64Value get inputBytes => $_getN(1);
   @$pb.TagNumber(2)
-  set inputBytes($1780.Int64Value v) { setField(2, v); }
+  set inputBytes($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInputBytes() => $_has(1);
   @$pb.TagNumber(2)
   void clearInputBytes() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureInputBytes() => $_ensure(1);
+  $1781.Int64Value ensureInputBytes() => $_ensure(1);
 
   /// Output only. Describes a timeline of job execution.
   @$pb.TagNumber(3)
@@ -2577,8 +2577,8 @@ class JobStatistics4 extends $pb.GeneratedMessage {
 /// Statistics for a copy job.
 class CopyJobStatistics extends $pb.GeneratedMessage {
   factory CopyJobStatistics({
-    $1780.Int64Value? copiedRows,
-    $1780.Int64Value? copiedLogicalBytes,
+    $1781.Int64Value? copiedRows,
+    $1781.Int64Value? copiedLogicalBytes,
   }) {
     final $result = create();
     if (copiedRows != null) {
@@ -2594,8 +2594,8 @@ class CopyJobStatistics extends $pb.GeneratedMessage {
   factory CopyJobStatistics.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CopyJobStatistics', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'copiedRows', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'copiedLogicalBytes', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'copiedRows', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'copiedLogicalBytes', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2622,27 +2622,27 @@ class CopyJobStatistics extends $pb.GeneratedMessage {
 
   /// Output only. Number of rows copied to the destination table.
   @$pb.TagNumber(1)
-  $1780.Int64Value get copiedRows => $_getN(0);
+  $1781.Int64Value get copiedRows => $_getN(0);
   @$pb.TagNumber(1)
-  set copiedRows($1780.Int64Value v) { setField(1, v); }
+  set copiedRows($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCopiedRows() => $_has(0);
   @$pb.TagNumber(1)
   void clearCopiedRows() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureCopiedRows() => $_ensure(0);
+  $1781.Int64Value ensureCopiedRows() => $_ensure(0);
 
   /// Output only. Number of logical bytes copied to the destination table.
   @$pb.TagNumber(2)
-  $1780.Int64Value get copiedLogicalBytes => $_getN(1);
+  $1781.Int64Value get copiedLogicalBytes => $_getN(1);
   @$pb.TagNumber(2)
-  set copiedLogicalBytes($1780.Int64Value v) { setField(2, v); }
+  set copiedLogicalBytes($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCopiedLogicalBytes() => $_has(1);
   @$pb.TagNumber(2)
   void clearCopiedLogicalBytes() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureCopiedLogicalBytes() => $_ensure(1);
+  $1781.Int64Value ensureCopiedLogicalBytes() => $_ensure(1);
 }
 
 /// Job statistics specific to a BigQuery ML training job.
@@ -3118,20 +3118,20 @@ class JobStatistics extends $pb.GeneratedMessage {
     $fixnum.Int64? creationTime,
     $fixnum.Int64? startTime,
     $fixnum.Int64? endTime,
-    $1780.Int64Value? totalBytesProcessed,
-    $1780.DoubleValue? completionRatio,
+    $1781.Int64Value? totalBytesProcessed,
+    $1781.DoubleValue? completionRatio,
     JobStatistics2? query,
     JobStatistics3? load,
     JobStatistics4? extract,
     $core.Iterable<$core.String>? quotaDeferments,
-    $1780.Int64Value? totalSlotMs,
+    $1781.Int64Value? totalSlotMs,
     $fixnum.Int64? numChildJobs,
     $core.String? parentJobId,
     ScriptStatistics? scriptStatistics,
     $core.String? reservationId,
     RowLevelSecurityStatistics? rowLevelSecurityStatistics,
     JobStatistics_TransactionInfo? transactionInfo,
-    $4412.SessionInfo? sessionInfo,
+    $4413.SessionInfo? sessionInfo,
     DataMaskingStatistics? dataMaskingStatistics,
     CopyJobStatistics? copy,
     $fixnum.Int64? finalExecutionDurationMs,
@@ -3211,20 +3211,20 @@ class JobStatistics extends $pb.GeneratedMessage {
     ..aInt64(1, _omitFieldNames ? '' : 'creationTime')
     ..aInt64(2, _omitFieldNames ? '' : 'startTime')
     ..aInt64(3, _omitFieldNames ? '' : 'endTime')
-    ..aOM<$1780.Int64Value>(4, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.DoubleValue>(5, _omitFieldNames ? '' : 'completionRatio', subBuilder: $1780.DoubleValue.create)
+    ..aOM<$1781.Int64Value>(4, _omitFieldNames ? '' : 'totalBytesProcessed', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.DoubleValue>(5, _omitFieldNames ? '' : 'completionRatio', subBuilder: $1781.DoubleValue.create)
     ..aOM<JobStatistics2>(6, _omitFieldNames ? '' : 'query', subBuilder: JobStatistics2.create)
     ..aOM<JobStatistics3>(7, _omitFieldNames ? '' : 'load', subBuilder: JobStatistics3.create)
     ..aOM<JobStatistics4>(8, _omitFieldNames ? '' : 'extract', subBuilder: JobStatistics4.create)
     ..pPS(9, _omitFieldNames ? '' : 'quotaDeferments')
-    ..aOM<$1780.Int64Value>(10, _omitFieldNames ? '' : 'totalSlotMs', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(10, _omitFieldNames ? '' : 'totalSlotMs', subBuilder: $1781.Int64Value.create)
     ..aInt64(12, _omitFieldNames ? '' : 'numChildJobs')
     ..aOS(13, _omitFieldNames ? '' : 'parentJobId')
     ..aOM<ScriptStatistics>(14, _omitFieldNames ? '' : 'scriptStatistics', subBuilder: ScriptStatistics.create)
     ..aOS(15, _omitFieldNames ? '' : 'reservationId')
     ..aOM<RowLevelSecurityStatistics>(16, _omitFieldNames ? '' : 'rowLevelSecurityStatistics', subBuilder: RowLevelSecurityStatistics.create)
     ..aOM<JobStatistics_TransactionInfo>(17, _omitFieldNames ? '' : 'transactionInfo', subBuilder: JobStatistics_TransactionInfo.create)
-    ..aOM<$4412.SessionInfo>(18, _omitFieldNames ? '' : 'sessionInfo', subBuilder: $4412.SessionInfo.create)
+    ..aOM<$4413.SessionInfo>(18, _omitFieldNames ? '' : 'sessionInfo', subBuilder: $4413.SessionInfo.create)
     ..aOM<DataMaskingStatistics>(20, _omitFieldNames ? '' : 'dataMaskingStatistics', subBuilder: DataMaskingStatistics.create)
     ..aOM<CopyJobStatistics>(21, _omitFieldNames ? '' : 'copy', subBuilder: CopyJobStatistics.create)
     ..aInt64(22, _omitFieldNames ? '' : 'finalExecutionDurationMs')
@@ -3289,28 +3289,28 @@ class JobStatistics extends $pb.GeneratedMessage {
 
   /// Output only. Total bytes processed for the job.
   @$pb.TagNumber(4)
-  $1780.Int64Value get totalBytesProcessed => $_getN(3);
+  $1781.Int64Value get totalBytesProcessed => $_getN(3);
   @$pb.TagNumber(4)
-  set totalBytesProcessed($1780.Int64Value v) { setField(4, v); }
+  set totalBytesProcessed($1781.Int64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTotalBytesProcessed() => $_has(3);
   @$pb.TagNumber(4)
   void clearTotalBytesProcessed() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int64Value ensureTotalBytesProcessed() => $_ensure(3);
+  $1781.Int64Value ensureTotalBytesProcessed() => $_ensure(3);
 
   /// Output only. [TrustedTester] Job progress (0.0 -> 1.0) for LOAD and
   /// EXTRACT jobs.
   @$pb.TagNumber(5)
-  $1780.DoubleValue get completionRatio => $_getN(4);
+  $1781.DoubleValue get completionRatio => $_getN(4);
   @$pb.TagNumber(5)
-  set completionRatio($1780.DoubleValue v) { setField(5, v); }
+  set completionRatio($1781.DoubleValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCompletionRatio() => $_has(4);
   @$pb.TagNumber(5)
   void clearCompletionRatio() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.DoubleValue ensureCompletionRatio() => $_ensure(4);
+  $1781.DoubleValue ensureCompletionRatio() => $_ensure(4);
 
   /// Output only. Statistics for a query job.
   @$pb.TagNumber(6)
@@ -3354,15 +3354,15 @@ class JobStatistics extends $pb.GeneratedMessage {
 
   /// Output only. Slot-milliseconds for the job.
   @$pb.TagNumber(10)
-  $1780.Int64Value get totalSlotMs => $_getN(9);
+  $1781.Int64Value get totalSlotMs => $_getN(9);
   @$pb.TagNumber(10)
-  set totalSlotMs($1780.Int64Value v) { setField(10, v); }
+  set totalSlotMs($1781.Int64Value v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTotalSlotMs() => $_has(9);
   @$pb.TagNumber(10)
   void clearTotalSlotMs() => clearField(10);
   @$pb.TagNumber(10)
-  $1780.Int64Value ensureTotalSlotMs() => $_ensure(9);
+  $1781.Int64Value ensureTotalSlotMs() => $_ensure(9);
 
   /// Output only. Number of child jobs executed.
   @$pb.TagNumber(12)
@@ -3441,15 +3441,15 @@ class JobStatistics extends $pb.GeneratedMessage {
 
   /// Output only. Information of the session if this job is part of one.
   @$pb.TagNumber(18)
-  $4412.SessionInfo get sessionInfo => $_getN(16);
+  $4413.SessionInfo get sessionInfo => $_getN(16);
   @$pb.TagNumber(18)
-  set sessionInfo($4412.SessionInfo v) { setField(18, v); }
+  set sessionInfo($4413.SessionInfo v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasSessionInfo() => $_has(16);
   @$pb.TagNumber(18)
   void clearSessionInfo() => clearField(18);
   @$pb.TagNumber(18)
-  $4412.SessionInfo ensureSessionInfo() => $_ensure(16);
+  $4413.SessionInfo ensureSessionInfo() => $_ensure(16);
 
   /// Output only. Statistics for data-masking. Present only for query and
   /// extract jobs.
@@ -3503,9 +3503,9 @@ class JobStatistics extends $pb.GeneratedMessage {
 /// Detailed statistics for DML statements
 class DmlStats extends $pb.GeneratedMessage {
   factory DmlStats({
-    $1780.Int64Value? insertedRowCount,
-    $1780.Int64Value? deletedRowCount,
-    $1780.Int64Value? updatedRowCount,
+    $1781.Int64Value? insertedRowCount,
+    $1781.Int64Value? deletedRowCount,
+    $1781.Int64Value? updatedRowCount,
   }) {
     final $result = create();
     if (insertedRowCount != null) {
@@ -3524,9 +3524,9 @@ class DmlStats extends $pb.GeneratedMessage {
   factory DmlStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DmlStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'insertedRowCount', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'deletedRowCount', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'updatedRowCount', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'insertedRowCount', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'deletedRowCount', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'updatedRowCount', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -3554,41 +3554,41 @@ class DmlStats extends $pb.GeneratedMessage {
   /// Output only. Number of inserted Rows. Populated by DML INSERT and MERGE
   /// statements
   @$pb.TagNumber(1)
-  $1780.Int64Value get insertedRowCount => $_getN(0);
+  $1781.Int64Value get insertedRowCount => $_getN(0);
   @$pb.TagNumber(1)
-  set insertedRowCount($1780.Int64Value v) { setField(1, v); }
+  set insertedRowCount($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInsertedRowCount() => $_has(0);
   @$pb.TagNumber(1)
   void clearInsertedRowCount() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureInsertedRowCount() => $_ensure(0);
+  $1781.Int64Value ensureInsertedRowCount() => $_ensure(0);
 
   /// Output only. Number of deleted Rows. populated by DML DELETE, MERGE and
   /// TRUNCATE statements.
   @$pb.TagNumber(2)
-  $1780.Int64Value get deletedRowCount => $_getN(1);
+  $1781.Int64Value get deletedRowCount => $_getN(1);
   @$pb.TagNumber(2)
-  set deletedRowCount($1780.Int64Value v) { setField(2, v); }
+  set deletedRowCount($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeletedRowCount() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeletedRowCount() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureDeletedRowCount() => $_ensure(1);
+  $1781.Int64Value ensureDeletedRowCount() => $_ensure(1);
 
   /// Output only. Number of updated Rows. Populated by DML UPDATE and MERGE
   /// statements.
   @$pb.TagNumber(3)
-  $1780.Int64Value get updatedRowCount => $_getN(2);
+  $1781.Int64Value get updatedRowCount => $_getN(2);
   @$pb.TagNumber(3)
-  set updatedRowCount($1780.Int64Value v) { setField(3, v); }
+  set updatedRowCount($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdatedRowCount() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdatedRowCount() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureUpdatedRowCount() => $_ensure(2);
+  $1781.Int64Value ensureUpdatedRowCount() => $_ensure(2);
 }
 
 /// Performance insights for the job.
@@ -4369,7 +4369,7 @@ class MaterializedViewStatistics extends $pb.GeneratedMessage {
 /// A materialized view considered for a query job.
 class MaterializedView extends $pb.GeneratedMessage {
   factory MaterializedView({
-    $4390.TableReference? tableReference,
+    $4391.TableReference? tableReference,
     $core.bool? chosen,
     $fixnum.Int64? estimatedBytesSaved,
     MaterializedView_RejectedReason? rejectedReason,
@@ -4394,7 +4394,7 @@ class MaterializedView extends $pb.GeneratedMessage {
   factory MaterializedView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterializedView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'tableReference', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'tableReference', subBuilder: $4391.TableReference.create)
     ..aOB(2, _omitFieldNames ? '' : 'chosen')
     ..aInt64(3, _omitFieldNames ? '' : 'estimatedBytesSaved')
     ..e<MaterializedView_RejectedReason>(4, _omitFieldNames ? '' : 'rejectedReason', $pb.PbFieldType.OE, defaultOrMaker: MaterializedView_RejectedReason.REJECTED_REASON_UNSPECIFIED, valueOf: MaterializedView_RejectedReason.valueOf, enumValues: MaterializedView_RejectedReason.values)
@@ -4424,15 +4424,15 @@ class MaterializedView extends $pb.GeneratedMessage {
 
   /// The candidate materialized view.
   @$pb.TagNumber(1)
-  $4390.TableReference get tableReference => $_getN(0);
+  $4391.TableReference get tableReference => $_getN(0);
   @$pb.TagNumber(1)
-  set tableReference($4390.TableReference v) { setField(1, v); }
+  set tableReference($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTableReference() => $_has(0);
   @$pb.TagNumber(1)
   void clearTableReference() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureTableReference() => $_ensure(0);
+  $4391.TableReference ensureTableReference() => $_ensure(0);
 
   ///  Whether the materialized view is chosen for the query.
   ///
@@ -4476,10 +4476,10 @@ class MaterializedView extends $pb.GeneratedMessage {
 /// caching eligible tables referenced in the query.
 class TableMetadataCacheUsage extends $pb.GeneratedMessage {
   factory TableMetadataCacheUsage({
-    $4390.TableReference? tableReference,
+    $4391.TableReference? tableReference,
     TableMetadataCacheUsage_UnusedReason? unusedReason,
     $core.String? explanation,
-    $1737.Duration? staleness,
+    $1738.Duration? staleness,
     $core.String? tableType,
   }) {
     final $result = create();
@@ -4505,10 +4505,10 @@ class TableMetadataCacheUsage extends $pb.GeneratedMessage {
   factory TableMetadataCacheUsage.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TableMetadataCacheUsage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'tableReference', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'tableReference', subBuilder: $4391.TableReference.create)
     ..e<TableMetadataCacheUsage_UnusedReason>(2, _omitFieldNames ? '' : 'unusedReason', $pb.PbFieldType.OE, defaultOrMaker: TableMetadataCacheUsage_UnusedReason.UNUSED_REASON_UNSPECIFIED, valueOf: TableMetadataCacheUsage_UnusedReason.valueOf, enumValues: TableMetadataCacheUsage_UnusedReason.values)
     ..aOS(3, _omitFieldNames ? '' : 'explanation')
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'staleness', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'staleness', subBuilder: $1738.Duration.create)
     ..aOS(6, _omitFieldNames ? '' : 'tableType')
     ..hasRequiredFields = false
   ;
@@ -4536,15 +4536,15 @@ class TableMetadataCacheUsage extends $pb.GeneratedMessage {
 
   /// Metadata caching eligible table referenced in the query.
   @$pb.TagNumber(1)
-  $4390.TableReference get tableReference => $_getN(0);
+  $4391.TableReference get tableReference => $_getN(0);
   @$pb.TagNumber(1)
-  set tableReference($4390.TableReference v) { setField(1, v); }
+  set tableReference($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTableReference() => $_has(0);
   @$pb.TagNumber(1)
   void clearTableReference() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureTableReference() => $_ensure(0);
+  $4391.TableReference ensureTableReference() => $_ensure(0);
 
   /// Reason for not using metadata caching for the table.
   @$pb.TagNumber(2)
@@ -4570,15 +4570,15 @@ class TableMetadataCacheUsage extends $pb.GeneratedMessage {
   /// Duration since last refresh as of this job for managed tables (indicates
   /// metadata cache staleness as seen by this job).
   @$pb.TagNumber(5)
-  $1737.Duration get staleness => $_getN(3);
+  $1738.Duration get staleness => $_getN(3);
   @$pb.TagNumber(5)
-  set staleness($1737.Duration v) { setField(5, v); }
+  set staleness($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStaleness() => $_has(3);
   @$pb.TagNumber(5)
   void clearStaleness() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureStaleness() => $_ensure(3);
+  $1738.Duration ensureStaleness() => $_ensure(3);
 
   /// [Table type](/bigquery/docs/reference/rest/v2/tables#Table.FIELDS.type).
   @$pb.TagNumber(6)

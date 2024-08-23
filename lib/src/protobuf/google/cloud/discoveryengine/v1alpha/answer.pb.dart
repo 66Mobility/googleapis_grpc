@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'answer.pbenum.dart';
 
 export 'answer.pbenum.dart';
@@ -242,7 +242,7 @@ class Answer_Reference_UnstructuredDocumentInfo extends $pb.GeneratedMessage {
     $core.String? uri,
     $core.String? title,
     $core.Iterable<Answer_Reference_UnstructuredDocumentInfo_ChunkContent>? chunkContents,
-    $1734.Struct? structData,
+    $1735.Struct? structData,
   }) {
     final $result = create();
     if (document != null) {
@@ -271,7 +271,7 @@ class Answer_Reference_UnstructuredDocumentInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'uri')
     ..aOS(3, _omitFieldNames ? '' : 'title')
     ..pc<Answer_Reference_UnstructuredDocumentInfo_ChunkContent>(4, _omitFieldNames ? '' : 'chunkContents', $pb.PbFieldType.PM, subBuilder: Answer_Reference_UnstructuredDocumentInfo_ChunkContent.create)
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'structData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'structData', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -333,15 +333,15 @@ class Answer_Reference_UnstructuredDocumentInfo extends $pb.GeneratedMessage {
   /// The structured JSON metadata for the document.
   /// It is populated from the struct data from the Chunk in search result.
   @$pb.TagNumber(5)
-  $1734.Struct get structData => $_getN(4);
+  $1735.Struct get structData => $_getN(4);
   @$pb.TagNumber(5)
-  set structData($1734.Struct v) { setField(5, v); }
+  set structData($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStructData() => $_has(4);
   @$pb.TagNumber(5)
   void clearStructData() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureStructData() => $_ensure(4);
+  $1735.Struct ensureStructData() => $_ensure(4);
 }
 
 /// Document metadata.
@@ -351,7 +351,7 @@ class Answer_Reference_ChunkInfo_DocumentMetadata extends $pb.GeneratedMessage {
     $core.String? uri,
     $core.String? title,
     $core.String? pageIdentifier,
-    $1734.Struct? structData,
+    $1735.Struct? structData,
   }) {
     final $result = create();
     if (document != null) {
@@ -380,7 +380,7 @@ class Answer_Reference_ChunkInfo_DocumentMetadata extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'uri')
     ..aOS(3, _omitFieldNames ? '' : 'title')
     ..aOS(4, _omitFieldNames ? '' : 'pageIdentifier')
-    ..aOM<$1734.Struct>(5, _omitFieldNames ? '' : 'structData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(5, _omitFieldNames ? '' : 'structData', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -448,15 +448,15 @@ class Answer_Reference_ChunkInfo_DocumentMetadata extends $pb.GeneratedMessage {
   /// The structured JSON metadata for the document.
   /// It is populated from the struct data from the Chunk in search result.
   @$pb.TagNumber(5)
-  $1734.Struct get structData => $_getN(4);
+  $1735.Struct get structData => $_getN(4);
   @$pb.TagNumber(5)
-  set structData($1734.Struct v) { setField(5, v); }
+  set structData($1735.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStructData() => $_has(4);
   @$pb.TagNumber(5)
   void clearStructData() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Struct ensureStructData() => $_ensure(4);
+  $1735.Struct ensureStructData() => $_ensure(4);
 }
 
 /// Chunk information.
@@ -566,7 +566,7 @@ class Answer_Reference_ChunkInfo extends $pb.GeneratedMessage {
 class Answer_Reference_StructuredDocumentInfo extends $pb.GeneratedMessage {
   factory Answer_Reference_StructuredDocumentInfo({
     $core.String? document,
-    $1734.Struct? structData,
+    $1735.Struct? structData,
   }) {
     final $result = create();
     if (document != null) {
@@ -583,7 +583,7 @@ class Answer_Reference_StructuredDocumentInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Answer.Reference.StructuredDocumentInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'document')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'structData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'structData', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -620,15 +620,15 @@ class Answer_Reference_StructuredDocumentInfo extends $pb.GeneratedMessage {
 
   /// Structured search data.
   @$pb.TagNumber(2)
-  $1734.Struct get structData => $_getN(1);
+  $1735.Struct get structData => $_getN(1);
   @$pb.TagNumber(2)
-  set structData($1734.Struct v) { setField(2, v); }
+  set structData($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStructData() => $_has(1);
   @$pb.TagNumber(2)
   void clearStructData() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureStructData() => $_ensure(1);
+  $1735.Struct ensureStructData() => $_ensure(1);
 }
 
 enum Answer_Reference_Content {
@@ -948,7 +948,7 @@ class Answer_Step_Action_Observation_SearchResult extends $pb.GeneratedMessage {
     $core.String? title,
     $core.Iterable<Answer_Step_Action_Observation_SearchResult_SnippetInfo>? snippetInfo,
     $core.Iterable<Answer_Step_Action_Observation_SearchResult_ChunkInfo>? chunkInfo,
-    $1734.Struct? structData,
+    $1735.Struct? structData,
   }) {
     final $result = create();
     if (document != null) {
@@ -981,7 +981,7 @@ class Answer_Step_Action_Observation_SearchResult extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'title')
     ..pc<Answer_Step_Action_Observation_SearchResult_SnippetInfo>(4, _omitFieldNames ? '' : 'snippetInfo', $pb.PbFieldType.PM, subBuilder: Answer_Step_Action_Observation_SearchResult_SnippetInfo.create)
     ..pc<Answer_Step_Action_Observation_SearchResult_ChunkInfo>(5, _omitFieldNames ? '' : 'chunkInfo', $pb.PbFieldType.PM, subBuilder: Answer_Step_Action_Observation_SearchResult_ChunkInfo.create)
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'structData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'structData', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1053,15 +1053,15 @@ class Answer_Step_Action_Observation_SearchResult extends $pb.GeneratedMessage {
   /// search result
   /// .
   @$pb.TagNumber(6)
-  $1734.Struct get structData => $_getN(5);
+  $1735.Struct get structData => $_getN(5);
   @$pb.TagNumber(6)
-  set structData($1734.Struct v) { setField(6, v); }
+  set structData($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStructData() => $_has(5);
   @$pb.TagNumber(6)
   void clearStructData() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureStructData() => $_ensure(5);
+  $1735.Struct ensureStructData() => $_ensure(5);
 }
 
 /// Observation.
@@ -1409,8 +1409,8 @@ class Answer extends $pb.GeneratedMessage {
     $core.Iterable<Answer_Reference>? references,
     $core.Iterable<$core.String>? relatedQuestions,
     $core.Iterable<Answer_Step>? steps,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? completeTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? completeTime,
     Answer_QueryUnderstandingInfo? queryUnderstandingInfo,
     $core.Iterable<Answer_AnswerSkippedReason>? answerSkippedReasons,
   }) {
@@ -1462,8 +1462,8 @@ class Answer extends $pb.GeneratedMessage {
     ..pc<Answer_Reference>(5, _omitFieldNames ? '' : 'references', $pb.PbFieldType.PM, subBuilder: Answer_Reference.create)
     ..pPS(6, _omitFieldNames ? '' : 'relatedQuestions')
     ..pc<Answer_Step>(7, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: Answer_Step.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'completeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'completeTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Answer_QueryUnderstandingInfo>(10, _omitFieldNames ? '' : 'queryUnderstandingInfo', subBuilder: Answer_QueryUnderstandingInfo.create)
     ..pc<Answer_AnswerSkippedReason>(11, _omitFieldNames ? '' : 'answerSkippedReasons', $pb.PbFieldType.KE, valueOf: Answer_AnswerSkippedReason.valueOf, enumValues: Answer_AnswerSkippedReason.values, defaultEnumValue: Answer_AnswerSkippedReason.ANSWER_SKIPPED_REASON_UNSPECIFIED)
     ..hasRequiredFields = false
@@ -1539,27 +1539,27 @@ class Answer extends $pb.GeneratedMessage {
 
   /// Output only. Answer creation timestamp.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Answer completed timestamp.
   @$pb.TagNumber(9)
-  $1775.Timestamp get completeTime => $_getN(8);
+  $1776.Timestamp get completeTime => $_getN(8);
   @$pb.TagNumber(9)
-  set completeTime($1775.Timestamp v) { setField(9, v); }
+  set completeTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCompleteTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCompleteTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCompleteTime() => $_ensure(8);
+  $1776.Timestamp ensureCompleteTime() => $_ensure(8);
 
   /// Query understanding information.
   @$pb.TagNumber(10)

@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4360;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4361;
 import 'network.pb.dart' as $687;
 import 'provisioning.pbenum.dart';
 
@@ -35,7 +35,7 @@ class ProvisioningConfig extends $pb.GeneratedMessage {
     $core.String? email,
     ProvisioningConfig_State? state,
     $core.String? location,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? cloudConsoleUri,
     $core.bool? vpcScEnabled,
     $core.String? statusMessage,
@@ -101,7 +101,7 @@ class ProvisioningConfig extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'email')
     ..e<ProvisioningConfig_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ProvisioningConfig_State.STATE_UNSPECIFIED, valueOf: ProvisioningConfig_State.valueOf, enumValues: ProvisioningConfig_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'location')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'cloudConsoleUri')
     ..aOB(12, _omitFieldNames ? '' : 'vpcScEnabled')
     ..aOS(13, _omitFieldNames ? '' : 'statusMessage')
@@ -212,15 +212,15 @@ class ProvisioningConfig extends $pb.GeneratedMessage {
 
   /// Output only. Last update timestamp.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Output only. URI to Cloud Console UI view of this provisioning config.
   @$pb.TagNumber(11)
@@ -1325,7 +1325,7 @@ class VolumeConfig extends $pb.GeneratedMessage {
     $core.Iterable<VolumeConfig_NfsExport>? nfsExports,
     $core.String? userNote,
     $core.String? gcpService,
-    $4360.VolumePerformanceTier? performanceTier,
+    $4361.VolumePerformanceTier? performanceTier,
   }) {
     final $result = create();
     if (name != null) {
@@ -1382,7 +1382,7 @@ class VolumeConfig extends $pb.GeneratedMessage {
     ..pc<VolumeConfig_NfsExport>(9, _omitFieldNames ? '' : 'nfsExports', $pb.PbFieldType.PM, subBuilder: VolumeConfig_NfsExport.create)
     ..aOS(10, _omitFieldNames ? '' : 'userNote')
     ..aOS(11, _omitFieldNames ? '' : 'gcpService')
-    ..e<$4360.VolumePerformanceTier>(12, _omitFieldNames ? '' : 'performanceTier', $pb.PbFieldType.OE, defaultOrMaker: $4360.VolumePerformanceTier.VOLUME_PERFORMANCE_TIER_UNSPECIFIED, valueOf: $4360.VolumePerformanceTier.valueOf, enumValues: $4360.VolumePerformanceTier.values)
+    ..e<$4361.VolumePerformanceTier>(12, _omitFieldNames ? '' : 'performanceTier', $pb.PbFieldType.OE, defaultOrMaker: $4361.VolumePerformanceTier.VOLUME_PERFORMANCE_TIER_UNSPECIFIED, valueOf: $4361.VolumePerformanceTier.valueOf, enumValues: $4361.VolumePerformanceTier.values)
     ..hasRequiredFields = false
   ;
 
@@ -1506,9 +1506,9 @@ class VolumeConfig extends $pb.GeneratedMessage {
   /// Performance tier of the Volume.
   /// Default is SHARED.
   @$pb.TagNumber(12)
-  $4360.VolumePerformanceTier get performanceTier => $_getN(11);
+  $4361.VolumePerformanceTier get performanceTier => $_getN(11);
   @$pb.TagNumber(12)
-  set performanceTier($4360.VolumePerformanceTier v) { setField(12, v); }
+  set performanceTier($4361.VolumePerformanceTier v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasPerformanceTier() => $_has(11);
   @$pb.TagNumber(12)
@@ -2044,7 +2044,7 @@ class CreateProvisioningConfigRequest extends $pb.GeneratedMessage {
 class UpdateProvisioningConfigRequest extends $pb.GeneratedMessage {
   factory UpdateProvisioningConfigRequest({
     ProvisioningConfig? provisioningConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? email,
   }) {
     final $result = create();
@@ -2065,7 +2065,7 @@ class UpdateProvisioningConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProvisioningConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.baremetalsolution.v2'), createEmptyInstance: create)
     ..aOM<ProvisioningConfig>(1, _omitFieldNames ? '' : 'provisioningConfig', subBuilder: ProvisioningConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'email')
     ..hasRequiredFields = false
   ;
@@ -2105,15 +2105,15 @@ class UpdateProvisioningConfigRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. Email provided to send a confirmation with provisioning config
   /// to.

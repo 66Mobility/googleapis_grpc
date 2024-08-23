@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4508;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4510;
 
 /// UserEvent captures all metadata information Discovery Engine API needs to
 /// know about how end users interact with your website.
@@ -23,8 +23,8 @@ class UserEvent extends $pb.GeneratedMessage {
   factory UserEvent({
     $core.String? eventType,
     $core.String? userPseudoId,
-    $1775.Timestamp? eventTime,
-    $4508.UserInfo? userInfo,
+    $1776.Timestamp? eventTime,
+    $4510.UserInfo? userInfo,
     $core.bool? directUserRequest,
     $core.String? sessionId,
     PageInfo? pageInfo,
@@ -37,7 +37,7 @@ class UserEvent extends $pb.GeneratedMessage {
     TransactionInfo? transactionInfo,
     $core.Iterable<$core.String>? tagIds,
     $core.Iterable<$core.String>? promotionIds,
-    $core.Map<$core.String, $4508.CustomAttribute>? attributes,
+    $core.Map<$core.String, $4510.CustomAttribute>? attributes,
     MediaInfo? mediaInfo,
     $core.String? engine,
     $core.String? dataStore,
@@ -112,8 +112,8 @@ class UserEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'eventType')
     ..aOS(2, _omitFieldNames ? '' : 'userPseudoId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4508.UserInfo>(4, _omitFieldNames ? '' : 'userInfo', subBuilder: $4508.UserInfo.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4510.UserInfo>(4, _omitFieldNames ? '' : 'userInfo', subBuilder: $4510.UserInfo.create)
     ..aOB(5, _omitFieldNames ? '' : 'directUserRequest')
     ..aOS(6, _omitFieldNames ? '' : 'sessionId')
     ..aOM<PageInfo>(7, _omitFieldNames ? '' : 'pageInfo', subBuilder: PageInfo.create)
@@ -126,7 +126,7 @@ class UserEvent extends $pb.GeneratedMessage {
     ..aOM<TransactionInfo>(14, _omitFieldNames ? '' : 'transactionInfo', subBuilder: TransactionInfo.create)
     ..pPS(15, _omitFieldNames ? '' : 'tagIds')
     ..pPS(16, _omitFieldNames ? '' : 'promotionIds')
-    ..m<$core.String, $4508.CustomAttribute>(17, _omitFieldNames ? '' : 'attributes', entryClassName: 'UserEvent.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4508.CustomAttribute.create, valueDefaultOrMaker: $4508.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1beta'))
+    ..m<$core.String, $4510.CustomAttribute>(17, _omitFieldNames ? '' : 'attributes', entryClassName: 'UserEvent.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4510.CustomAttribute.create, valueDefaultOrMaker: $4510.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1beta'))
     ..aOM<MediaInfo>(18, _omitFieldNames ? '' : 'mediaInfo', subBuilder: MediaInfo.create)
     ..aOS(19, _omitFieldNames ? '' : 'engine')
     ..aOS(20, _omitFieldNames ? '' : 'dataStore')
@@ -212,27 +212,27 @@ class UserEvent extends $pb.GeneratedMessage {
   /// [UserEventService.ImportUserEvents][google.cloud.discoveryengine.v1beta.UserEventService.ImportUserEvents]
   /// method. Timestamp of when the user event happened.
   @$pb.TagNumber(3)
-  $1775.Timestamp get eventTime => $_getN(2);
+  $1776.Timestamp get eventTime => $_getN(2);
   @$pb.TagNumber(3)
-  set eventTime($1775.Timestamp v) { setField(3, v); }
+  set eventTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEventTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEventTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEventTime() => $_ensure(2);
+  $1776.Timestamp ensureEventTime() => $_ensure(2);
 
   /// Information about the end user.
   @$pb.TagNumber(4)
-  $4508.UserInfo get userInfo => $_getN(3);
+  $4510.UserInfo get userInfo => $_getN(3);
   @$pb.TagNumber(4)
-  set userInfo($4508.UserInfo v) { setField(4, v); }
+  set userInfo($4510.UserInfo v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUserInfo() => $_has(3);
   @$pb.TagNumber(4)
   void clearUserInfo() => clearField(4);
   @$pb.TagNumber(4)
-  $4508.UserInfo ensureUserInfo() => $_ensure(3);
+  $4510.UserInfo ensureUserInfo() => $_ensure(3);
 
   ///  Should set to true if the request is made directly from the end user, in
   ///  which case the
@@ -458,7 +458,7 @@ class UserEvent extends $pb.GeneratedMessage {
   ///  at the site by coming to the site directly, coming through Google
   ///  search, or in other ways.
   @$pb.TagNumber(17)
-  $core.Map<$core.String, $4508.CustomAttribute> get attributes => $_getMap(16);
+  $core.Map<$core.String, $4510.CustomAttribute> get attributes => $_getMap(16);
 
   /// Media-specific info.
   @$pb.TagNumber(18)
@@ -1217,7 +1217,7 @@ class PanelInfo extends $pb.GeneratedMessage {
 /// Media-specific user event information.
 class MediaInfo extends $pb.GeneratedMessage {
   factory MediaInfo({
-    $1737.Duration? mediaProgressDuration,
+    $1738.Duration? mediaProgressDuration,
     $core.double? mediaProgressPercentage,
   }) {
     final $result = create();
@@ -1234,7 +1234,7 @@ class MediaInfo extends $pb.GeneratedMessage {
   factory MediaInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MediaInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'mediaProgressDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'mediaProgressDuration', subBuilder: $1738.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'mediaProgressPercentage', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -1266,15 +1266,15 @@ class MediaInfo extends $pb.GeneratedMessage {
   /// [MediaInfo.media_progress_duration.seconds][google.protobuf.Duration.seconds]
   /// should be set to 90.
   @$pb.TagNumber(1)
-  $1737.Duration get mediaProgressDuration => $_getN(0);
+  $1738.Duration get mediaProgressDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set mediaProgressDuration($1737.Duration v) { setField(1, v); }
+  set mediaProgressDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMediaProgressDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearMediaProgressDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureMediaProgressDuration() => $_ensure(0);
+  $1738.Duration ensureMediaProgressDuration() => $_ensure(0);
 
   ///  Media progress should be computed using only the
   ///  [media_progress_duration][google.cloud.discoveryengine.v1beta.MediaInfo.media_progress_duration]

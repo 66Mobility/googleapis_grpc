@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'audience.pbenum.dart';
 
 export 'audience.pbenum.dart';
@@ -930,7 +930,7 @@ class AudienceSequenceFilter_AudienceSequenceStep extends $pb.GeneratedMessage {
   factory AudienceSequenceFilter_AudienceSequenceStep({
     AudienceFilterScope? scope,
     $core.bool? immediatelyFollows,
-    $1737.Duration? constraintDuration,
+    $1738.Duration? constraintDuration,
     AudienceFilterExpression? filterExpression,
   }) {
     final $result = create();
@@ -955,7 +955,7 @@ class AudienceSequenceFilter_AudienceSequenceStep extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudienceSequenceFilter.AudienceSequenceStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1alpha'), createEmptyInstance: create)
     ..e<AudienceFilterScope>(1, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: AudienceFilterScope.AUDIENCE_FILTER_SCOPE_UNSPECIFIED, valueOf: AudienceFilterScope.valueOf, enumValues: AudienceFilterScope.values)
     ..aOB(2, _omitFieldNames ? '' : 'immediatelyFollows')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'constraintDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'constraintDuration', subBuilder: $1738.Duration.create)
     ..aOM<AudienceFilterExpression>(4, _omitFieldNames ? '' : 'filterExpression', subBuilder: AudienceFilterExpression.create)
     ..hasRequiredFields = false
   ;
@@ -1010,15 +1010,15 @@ class AudienceSequenceFilter_AudienceSequenceStep extends $pb.GeneratedMessage {
   /// constraint_duration). If not set, there is no duration requirement (the
   /// duration is effectively unlimited). It is ignored for the first step.
   @$pb.TagNumber(3)
-  $1737.Duration get constraintDuration => $_getN(2);
+  $1738.Duration get constraintDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set constraintDuration($1737.Duration v) { setField(3, v); }
+  set constraintDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasConstraintDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearConstraintDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureConstraintDuration() => $_ensure(2);
+  $1738.Duration ensureConstraintDuration() => $_ensure(2);
 
   /// Required. Immutable. A logical expression of Audience dimension, metric,
   /// or event filters in each step.
@@ -1039,7 +1039,7 @@ class AudienceSequenceFilter_AudienceSequenceStep extends $pb.GeneratedMessage {
 class AudienceSequenceFilter extends $pb.GeneratedMessage {
   factory AudienceSequenceFilter({
     AudienceFilterScope? scope,
-    $1737.Duration? sequenceMaximumDuration,
+    $1738.Duration? sequenceMaximumDuration,
     $core.Iterable<AudienceSequenceFilter_AudienceSequenceStep>? sequenceSteps,
   }) {
     final $result = create();
@@ -1060,7 +1060,7 @@ class AudienceSequenceFilter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AudienceSequenceFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.admin.v1alpha'), createEmptyInstance: create)
     ..e<AudienceFilterScope>(1, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: AudienceFilterScope.AUDIENCE_FILTER_SCOPE_UNSPECIFIED, valueOf: AudienceFilterScope.valueOf, enumValues: AudienceFilterScope.values)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'sequenceMaximumDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'sequenceMaximumDuration', subBuilder: $1738.Duration.create)
     ..pc<AudienceSequenceFilter_AudienceSequenceStep>(3, _omitFieldNames ? '' : 'sequenceSteps', $pb.PbFieldType.PM, subBuilder: AudienceSequenceFilter_AudienceSequenceStep.create)
     ..hasRequiredFields = false
   ;
@@ -1098,15 +1098,15 @@ class AudienceSequenceFilter extends $pb.GeneratedMessage {
 
   /// Optional. Defines the time period in which the whole sequence must occur.
   @$pb.TagNumber(2)
-  $1737.Duration get sequenceMaximumDuration => $_getN(1);
+  $1738.Duration get sequenceMaximumDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set sequenceMaximumDuration($1737.Duration v) { setField(2, v); }
+  set sequenceMaximumDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSequenceMaximumDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearSequenceMaximumDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureSequenceMaximumDuration() => $_ensure(1);
+  $1738.Duration ensureSequenceMaximumDuration() => $_ensure(1);
 
   /// Required. An ordered sequence of steps. A user must complete each step in
   /// order to join the sequence filter.
@@ -1297,7 +1297,7 @@ class Audience extends $pb.GeneratedMessage {
     AudienceEventTrigger? eventTrigger,
     Audience_AudienceExclusionDurationMode? exclusionDurationMode,
     $core.Iterable<AudienceFilterClause>? filterClauses,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1342,7 +1342,7 @@ class Audience extends $pb.GeneratedMessage {
     ..aOM<AudienceEventTrigger>(6, _omitFieldNames ? '' : 'eventTrigger', subBuilder: AudienceEventTrigger.create)
     ..e<Audience_AudienceExclusionDurationMode>(7, _omitFieldNames ? '' : 'exclusionDurationMode', $pb.PbFieldType.OE, defaultOrMaker: Audience_AudienceExclusionDurationMode.AUDIENCE_EXCLUSION_DURATION_MODE_UNSPECIFIED, valueOf: Audience_AudienceExclusionDurationMode.valueOf, enumValues: Audience_AudienceExclusionDurationMode.values)
     ..pc<AudienceFilterClause>(8, _omitFieldNames ? '' : 'filterClauses', $pb.PbFieldType.PM, subBuilder: AudienceFilterClause.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1452,15 +1452,15 @@ class Audience extends $pb.GeneratedMessage {
 
   /// Output only. Time when the Audience was created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 }
 
 

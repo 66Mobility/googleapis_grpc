@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../servicemesh/v1beta/servicemesh.pb.dart' as $4544;
-import 'configmanagement/configmanagement.pb.dart' as $4543;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../servicemesh/v1beta/servicemesh.pb.dart' as $4546;
+import 'configmanagement/configmanagement.pb.dart' as $4545;
 import 'feature.pbenum.dart';
-import 'metering/metering.pb.dart' as $4545;
-import 'multiclusteringress/multiclusteringress.pb.dart' as $4542;
+import 'metering/metering.pb.dart' as $4547;
+import 'multiclusteringress/multiclusteringress.pb.dart' as $4544;
 
 export 'feature.pbenum.dart';
 
@@ -32,9 +32,9 @@ class Feature extends $pb.GeneratedMessage {
     $core.Map<$core.String, MembershipFeatureSpec>? membershipSpecs,
     CommonFeatureState? state,
     $core.Map<$core.String, MembershipFeatureState>? membershipStates,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -81,9 +81,9 @@ class Feature extends $pb.GeneratedMessage {
     ..m<$core.String, MembershipFeatureSpec>(5, _omitFieldNames ? '' : 'membershipSpecs', entryClassName: 'Feature.MembershipSpecsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: MembershipFeatureSpec.create, valueDefaultOrMaker: MembershipFeatureSpec.getDefault, packageName: const $pb.PackageName('google.cloud.gkehub.v1beta'))
     ..aOM<CommonFeatureState>(6, _omitFieldNames ? '' : 'state', subBuilder: CommonFeatureState.create)
     ..m<$core.String, MembershipFeatureState>(7, _omitFieldNames ? '' : 'membershipStates', entryClassName: 'Feature.MembershipStatesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: MembershipFeatureState.create, valueDefaultOrMaker: MembershipFeatureState.getDefault, packageName: const $pb.PackageName('google.cloud.gkehub.v1beta'))
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -196,39 +196,39 @@ class Feature extends $pb.GeneratedMessage {
 
   /// Output only. When the Feature resource was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. When the Feature resource was last updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. When the Feature resource was deleted.
   @$pb.TagNumber(10)
-  $1775.Timestamp get deleteTime => $_getN(9);
+  $1776.Timestamp get deleteTime => $_getN(9);
   @$pb.TagNumber(10)
-  set deleteTime($1775.Timestamp v) { setField(10, v); }
+  set deleteTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDeleteTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearDeleteTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(9);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(9);
 }
 
 /// FeatureResourceState describes the state of a Feature *resource* in the
@@ -292,7 +292,7 @@ class FeatureState extends $pb.GeneratedMessage {
   factory FeatureState({
     FeatureState_Code? code,
     $core.String? description,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (code != null) {
@@ -313,7 +313,7 @@ class FeatureState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta'), createEmptyInstance: create)
     ..e<FeatureState_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: FeatureState_Code.CODE_UNSPECIFIED, valueOf: FeatureState_Code.valueOf, enumValues: FeatureState_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -360,15 +360,15 @@ class FeatureState extends $pb.GeneratedMessage {
 
   /// The time this status and any related Feature-specific details were updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 enum CommonFeatureSpec_FeatureSpec {
@@ -379,7 +379,7 @@ enum CommonFeatureSpec_FeatureSpec {
 /// CommonFeatureSpec contains Hub-wide configuration information
 class CommonFeatureSpec extends $pb.GeneratedMessage {
   factory CommonFeatureSpec({
-    $4542.FeatureSpec? multiclusteringress,
+    $4544.FeatureSpec? multiclusteringress,
   }) {
     final $result = create();
     if (multiclusteringress != null) {
@@ -397,7 +397,7 @@ class CommonFeatureSpec extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommonFeatureSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta'), createEmptyInstance: create)
     ..oo(0, [102])
-    ..aOM<$4542.FeatureSpec>(102, _omitFieldNames ? '' : 'multiclusteringress', subBuilder: $4542.FeatureSpec.create)
+    ..aOM<$4544.FeatureSpec>(102, _omitFieldNames ? '' : 'multiclusteringress', subBuilder: $4544.FeatureSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -427,15 +427,15 @@ class CommonFeatureSpec extends $pb.GeneratedMessage {
 
   /// Multicluster Ingress-specific spec.
   @$pb.TagNumber(102)
-  $4542.FeatureSpec get multiclusteringress => $_getN(0);
+  $4544.FeatureSpec get multiclusteringress => $_getN(0);
   @$pb.TagNumber(102)
-  set multiclusteringress($4542.FeatureSpec v) { setField(102, v); }
+  set multiclusteringress($4544.FeatureSpec v) { setField(102, v); }
   @$pb.TagNumber(102)
   $core.bool hasMulticlusteringress() => $_has(0);
   @$pb.TagNumber(102)
   void clearMulticlusteringress() => clearField(102);
   @$pb.TagNumber(102)
-  $4542.FeatureSpec ensureMulticlusteringress() => $_ensure(0);
+  $4544.FeatureSpec ensureMulticlusteringress() => $_ensure(0);
 }
 
 /// CommonFeatureState contains Hub-wide Feature status information.
@@ -503,8 +503,8 @@ enum MembershipFeatureSpec_FeatureSpec {
 /// NOTE: Please use snake case in your feature name.
 class MembershipFeatureSpec extends $pb.GeneratedMessage {
   factory MembershipFeatureSpec({
-    $4543.MembershipSpec? configmanagement,
-    $4544.MembershipSpec? mesh,
+    $4545.MembershipSpec? configmanagement,
+    $4546.MembershipSpec? mesh,
   }) {
     final $result = create();
     if (configmanagement != null) {
@@ -526,8 +526,8 @@ class MembershipFeatureSpec extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipFeatureSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta'), createEmptyInstance: create)
     ..oo(0, [106, 116])
-    ..aOM<$4543.MembershipSpec>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4543.MembershipSpec.create)
-    ..aOM<$4544.MembershipSpec>(116, _omitFieldNames ? '' : 'mesh', subBuilder: $4544.MembershipSpec.create)
+    ..aOM<$4545.MembershipSpec>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4545.MembershipSpec.create)
+    ..aOM<$4546.MembershipSpec>(116, _omitFieldNames ? '' : 'mesh', subBuilder: $4546.MembershipSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -557,27 +557,27 @@ class MembershipFeatureSpec extends $pb.GeneratedMessage {
 
   /// Config Management-specific spec.
   @$pb.TagNumber(106)
-  $4543.MembershipSpec get configmanagement => $_getN(0);
+  $4545.MembershipSpec get configmanagement => $_getN(0);
   @$pb.TagNumber(106)
-  set configmanagement($4543.MembershipSpec v) { setField(106, v); }
+  set configmanagement($4545.MembershipSpec v) { setField(106, v); }
   @$pb.TagNumber(106)
   $core.bool hasConfigmanagement() => $_has(0);
   @$pb.TagNumber(106)
   void clearConfigmanagement() => clearField(106);
   @$pb.TagNumber(106)
-  $4543.MembershipSpec ensureConfigmanagement() => $_ensure(0);
+  $4545.MembershipSpec ensureConfigmanagement() => $_ensure(0);
 
   /// Anthos Service Mesh-specific spec
   @$pb.TagNumber(116)
-  $4544.MembershipSpec get mesh => $_getN(1);
+  $4546.MembershipSpec get mesh => $_getN(1);
   @$pb.TagNumber(116)
-  set mesh($4544.MembershipSpec v) { setField(116, v); }
+  set mesh($4546.MembershipSpec v) { setField(116, v); }
   @$pb.TagNumber(116)
   $core.bool hasMesh() => $_has(1);
   @$pb.TagNumber(116)
   void clearMesh() => clearField(116);
   @$pb.TagNumber(116)
-  $4544.MembershipSpec ensureMesh() => $_ensure(1);
+  $4546.MembershipSpec ensureMesh() => $_ensure(1);
 }
 
 enum MembershipFeatureState_FeatureState {
@@ -592,9 +592,9 @@ enum MembershipFeatureState_FeatureState {
 class MembershipFeatureState extends $pb.GeneratedMessage {
   factory MembershipFeatureState({
     FeatureState? state,
-    $4544.MembershipState? servicemesh,
-    $4545.MembershipState? metering,
-    $4543.MembershipState? configmanagement,
+    $4546.MembershipState? servicemesh,
+    $4547.MembershipState? metering,
+    $4545.MembershipState? configmanagement,
   }) {
     final $result = create();
     if (state != null) {
@@ -624,9 +624,9 @@ class MembershipFeatureState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipFeatureState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1beta'), createEmptyInstance: create)
     ..oo(0, [100, 104, 106])
     ..aOM<FeatureState>(1, _omitFieldNames ? '' : 'state', subBuilder: FeatureState.create)
-    ..aOM<$4544.MembershipState>(100, _omitFieldNames ? '' : 'servicemesh', subBuilder: $4544.MembershipState.create)
-    ..aOM<$4545.MembershipState>(104, _omitFieldNames ? '' : 'metering', subBuilder: $4545.MembershipState.create)
-    ..aOM<$4543.MembershipState>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4543.MembershipState.create)
+    ..aOM<$4546.MembershipState>(100, _omitFieldNames ? '' : 'servicemesh', subBuilder: $4546.MembershipState.create)
+    ..aOM<$4547.MembershipState>(104, _omitFieldNames ? '' : 'metering', subBuilder: $4547.MembershipState.create)
+    ..aOM<$4545.MembershipState>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4545.MembershipState.create)
     ..hasRequiredFields = false
   ;
 
@@ -668,39 +668,39 @@ class MembershipFeatureState extends $pb.GeneratedMessage {
 
   /// Service Mesh-specific state.
   @$pb.TagNumber(100)
-  $4544.MembershipState get servicemesh => $_getN(1);
+  $4546.MembershipState get servicemesh => $_getN(1);
   @$pb.TagNumber(100)
-  set servicemesh($4544.MembershipState v) { setField(100, v); }
+  set servicemesh($4546.MembershipState v) { setField(100, v); }
   @$pb.TagNumber(100)
   $core.bool hasServicemesh() => $_has(1);
   @$pb.TagNumber(100)
   void clearServicemesh() => clearField(100);
   @$pb.TagNumber(100)
-  $4544.MembershipState ensureServicemesh() => $_ensure(1);
+  $4546.MembershipState ensureServicemesh() => $_ensure(1);
 
   /// Metering-specific state.
   @$pb.TagNumber(104)
-  $4545.MembershipState get metering => $_getN(2);
+  $4547.MembershipState get metering => $_getN(2);
   @$pb.TagNumber(104)
-  set metering($4545.MembershipState v) { setField(104, v); }
+  set metering($4547.MembershipState v) { setField(104, v); }
   @$pb.TagNumber(104)
   $core.bool hasMetering() => $_has(2);
   @$pb.TagNumber(104)
   void clearMetering() => clearField(104);
   @$pb.TagNumber(104)
-  $4545.MembershipState ensureMetering() => $_ensure(2);
+  $4547.MembershipState ensureMetering() => $_ensure(2);
 
   /// Config Management-specific state.
   @$pb.TagNumber(106)
-  $4543.MembershipState get configmanagement => $_getN(3);
+  $4545.MembershipState get configmanagement => $_getN(3);
   @$pb.TagNumber(106)
-  set configmanagement($4543.MembershipState v) { setField(106, v); }
+  set configmanagement($4545.MembershipState v) { setField(106, v); }
   @$pb.TagNumber(106)
   $core.bool hasConfigmanagement() => $_has(3);
   @$pb.TagNumber(106)
   void clearConfigmanagement() => clearField(106);
   @$pb.TagNumber(106)
-  $4543.MembershipState ensureConfigmanagement() => $_ensure(3);
+  $4545.MembershipState ensureConfigmanagement() => $_ensure(3);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'tag.pb.dart' as $1558;
 import 'version.pbenum.dart';
 
@@ -27,10 +27,10 @@ class Version extends $pb.GeneratedMessage {
   factory Version({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$1558.Tag>? relatedTags,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -60,10 +60,10 @@ class Version extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Version', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.artifactregistry.v1beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pc<$1558.Tag>(7, _omitFieldNames ? '' : 'relatedTags', $pb.PbFieldType.PM, subBuilder: $1558.Tag.create)
-    ..aOM<$1734.Struct>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -113,27 +113,27 @@ class Version extends $pb.GeneratedMessage {
 
   /// The time when the version was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The time when the version was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. A list of related tags. Will contain up to 100 tags that
   /// reference this version.
@@ -145,15 +145,15 @@ class Version extends $pb.GeneratedMessage {
   /// resource. Currently, the only resource in use is
   /// [DockerImage][google.devtools.artifactregistry.v1.DockerImage]
   @$pb.TagNumber(8)
-  $1734.Struct get metadata => $_getN(5);
+  $1735.Struct get metadata => $_getN(5);
   @$pb.TagNumber(8)
-  set metadata($1734.Struct v) { setField(8, v); }
+  set metadata($1735.Struct v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMetadata() => $_has(5);
   @$pb.TagNumber(8)
   void clearMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $1734.Struct ensureMetadata() => $_ensure(5);
+  $1735.Struct ensureMetadata() => $_ensure(5);
 }
 
 /// The request to list versions.

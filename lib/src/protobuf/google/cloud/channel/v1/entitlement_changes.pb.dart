@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'entitlement_changes.pbenum.dart';
 import 'entitlements.pb.dart' as $751;
 import 'entitlements.pbenum.dart' as $751;
@@ -35,7 +35,7 @@ class EntitlementChange extends $pb.GeneratedMessage {
     $core.String? offer,
     $751.ProvisionedService? provisionedService,
     EntitlementChange_ChangeType? changeType,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     EntitlementChange_OperatorType? operatorType,
     $core.Iterable<$751.Parameter>? parameters,
     $751.Entitlement_SuspensionReason? suspensionReason,
@@ -100,7 +100,7 @@ class EntitlementChange extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'offer')
     ..aOM<$751.ProvisionedService>(3, _omitFieldNames ? '' : 'provisionedService', subBuilder: $751.ProvisionedService.create)
     ..e<EntitlementChange_ChangeType>(4, _omitFieldNames ? '' : 'changeType', $pb.PbFieldType.OE, defaultOrMaker: EntitlementChange_ChangeType.CHANGE_TYPE_UNSPECIFIED, valueOf: EntitlementChange_ChangeType.valueOf, enumValues: EntitlementChange_ChangeType.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<EntitlementChange_OperatorType>(6, _omitFieldNames ? '' : 'operatorType', $pb.PbFieldType.OE, defaultOrMaker: EntitlementChange_OperatorType.OPERATOR_TYPE_UNSPECIFIED, valueOf: EntitlementChange_OperatorType.valueOf, enumValues: EntitlementChange_OperatorType.values)
     ..pc<$751.Parameter>(8, _omitFieldNames ? '' : 'parameters', $pb.PbFieldType.PM, subBuilder: $751.Parameter.create)
     ..e<$751.Entitlement_SuspensionReason>(9, _omitFieldNames ? '' : 'suspensionReason', $pb.PbFieldType.OE, defaultOrMaker: $751.Entitlement_SuspensionReason.SUSPENSION_REASON_UNSPECIFIED, valueOf: $751.Entitlement_SuspensionReason.valueOf, enumValues: $751.Entitlement_SuspensionReason.values)
@@ -181,15 +181,15 @@ class EntitlementChange extends $pb.GeneratedMessage {
 
   /// The submitted time of the change.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Operator type responsible for the change.
   @$pb.TagNumber(6)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 enum LogEntry_LogEntry {
   cloudLoggingEntry, 
@@ -89,7 +89,7 @@ class CloudLoggingEntry extends $pb.GeneratedMessage {
     $core.String? insertId,
     $core.String? logId,
     $core.String? resourceContainer,
-    $1775.Timestamp? timestamp,
+    $1776.Timestamp? timestamp,
   }) {
     final $result = create();
     if (insertId != null) {
@@ -114,7 +114,7 @@ class CloudLoggingEntry extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'insertId')
     ..aOS(2, _omitFieldNames ? '' : 'logId')
     ..aOS(3, _omitFieldNames ? '' : 'resourceContainer')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'timestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'timestamp', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -175,15 +175,15 @@ class CloudLoggingEntry extends $pb.GeneratedMessage {
 
   /// The time the event described by the log entry occurred.
   @$pb.TagNumber(4)
-  $1775.Timestamp get timestamp => $_getN(3);
+  $1776.Timestamp get timestamp => $_getN(3);
   @$pb.TagNumber(4)
-  set timestamp($1775.Timestamp v) { setField(4, v); }
+  set timestamp($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimestamp() => $_has(3);
   @$pb.TagNumber(4)
   void clearTimestamp() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureTimestamp() => $_ensure(3);
+  $1776.Timestamp ensureTimestamp() => $_ensure(3);
 }
 
 

@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'assuredworkloads.pbenum.dart';
 
 export 'assuredworkloads.pbenum.dart';
@@ -113,7 +113,7 @@ class CreateWorkloadRequest extends $pb.GeneratedMessage {
 class UpdateWorkloadRequest extends $pb.GeneratedMessage {
   factory UpdateWorkloadRequest({
     Workload? workload,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (workload != null) {
@@ -130,7 +130,7 @@ class UpdateWorkloadRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkloadRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.assuredworkloads.v1'), createEmptyInstance: create)
     ..aOM<Workload>(1, _omitFieldNames ? '' : 'workload', subBuilder: Workload.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -172,15 +172,15 @@ class UpdateWorkloadRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for deleting a Workload.
@@ -545,8 +545,8 @@ class Workload_ResourceInfo extends $pb.GeneratedMessage {
 /// ENCRYPTION_KEYS_PROJECT or KEYRING in ResourceSettings.resource_type field.
 class Workload_KMSSettings extends $pb.GeneratedMessage {
   factory Workload_KMSSettings({
-    $1775.Timestamp? nextRotationTime,
-    $1737.Duration? rotationPeriod,
+    $1776.Timestamp? nextRotationTime,
+    $1738.Duration? rotationPeriod,
   }) {
     final $result = create();
     if (nextRotationTime != null) {
@@ -562,8 +562,8 @@ class Workload_KMSSettings extends $pb.GeneratedMessage {
   factory Workload_KMSSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Workload.KMSSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.assuredworkloads.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'nextRotationTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'rotationPeriod', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'nextRotationTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'rotationPeriod', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -591,29 +591,29 @@ class Workload_KMSSettings extends $pb.GeneratedMessage {
   /// Required. Input only. Immutable. The time at which the Key Management Service will automatically create a
   /// new version of the crypto key and mark it as the primary.
   @$pb.TagNumber(1)
-  $1775.Timestamp get nextRotationTime => $_getN(0);
+  $1776.Timestamp get nextRotationTime => $_getN(0);
   @$pb.TagNumber(1)
-  set nextRotationTime($1775.Timestamp v) { setField(1, v); }
+  set nextRotationTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNextRotationTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearNextRotationTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureNextRotationTime() => $_ensure(0);
+  $1776.Timestamp ensureNextRotationTime() => $_ensure(0);
 
   /// Required. Input only. Immutable. [next_rotation_time] will be advanced by this period when the Key
   /// Management Service automatically rotates a key. Must be at least 24 hours
   /// and at most 876,000 hours.
   @$pb.TagNumber(2)
-  $1737.Duration get rotationPeriod => $_getN(1);
+  $1738.Duration get rotationPeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set rotationPeriod($1737.Duration v) { setField(2, v); }
+  set rotationPeriod($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRotationPeriod() => $_has(1);
   @$pb.TagNumber(2)
   void clearRotationPeriod() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureRotationPeriod() => $_ensure(1);
+  $1738.Duration ensureRotationPeriod() => $_ensure(1);
 }
 
 /// Represent the custom settings for the resources to be created.
@@ -775,7 +775,7 @@ class Workload extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.Iterable<Workload_ResourceInfo>? resources,
     Workload_ComplianceRegime? complianceRegime,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? billingAccount,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
@@ -850,7 +850,7 @@ class Workload extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..pc<Workload_ResourceInfo>(3, _omitFieldNames ? '' : 'resources', $pb.PbFieldType.PM, subBuilder: Workload_ResourceInfo.create)
     ..e<Workload_ComplianceRegime>(4, _omitFieldNames ? '' : 'complianceRegime', $pb.PbFieldType.OE, defaultOrMaker: Workload_ComplianceRegime.COMPLIANCE_REGIME_UNSPECIFIED, valueOf: Workload_ComplianceRegime.valueOf, enumValues: Workload_ComplianceRegime.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'billingAccount')
     ..aOS(9, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(10, _omitFieldNames ? '' : 'labels', entryClassName: 'Workload.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.assuredworkloads.v1'))
@@ -934,15 +934,15 @@ class Workload extends $pb.GeneratedMessage {
 
   /// Output only. Immutable. The Workload creation timestamp.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Optional. The billing account used for the resources which are
   /// direct children of workload. This billing account is initially associated
@@ -1074,7 +1074,7 @@ class Workload extends $pb.GeneratedMessage {
 /// Operation metadata to give request details of CreateWorkload.
 class CreateWorkloadOperationMetadata extends $pb.GeneratedMessage {
   factory CreateWorkloadOperationMetadata({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? displayName,
     $core.String? parent,
     Workload_ComplianceRegime? complianceRegime,
@@ -1099,7 +1099,7 @@ class CreateWorkloadOperationMetadata extends $pb.GeneratedMessage {
   factory CreateWorkloadOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateWorkloadOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.assuredworkloads.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..e<Workload_ComplianceRegime>(4, _omitFieldNames ? '' : 'complianceRegime', $pb.PbFieldType.OE, defaultOrMaker: Workload_ComplianceRegime.COMPLIANCE_REGIME_UNSPECIFIED, valueOf: Workload_ComplianceRegime.valueOf, enumValues: Workload_ComplianceRegime.values)
@@ -1129,15 +1129,15 @@ class CreateWorkloadOperationMetadata extends $pb.GeneratedMessage {
 
   /// Optional. Time when the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Optional. The display name of the workload.
   @$pb.TagNumber(2)
@@ -1408,8 +1408,8 @@ class AcknowledgeViolationResponse extends $pb.GeneratedMessage {
 /// Interval defining a time window.
 class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -1425,8 +1425,8 @@ class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.assuredworkloads.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1453,27 +1453,27 @@ class TimeWindow extends $pb.GeneratedMessage {
 
   /// The start of the time window.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The end of the time window.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Request for fetching violations in an organization.
@@ -1993,9 +1993,9 @@ class Violation extends $pb.GeneratedMessage {
   factory Violation({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? beginTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? resolveTime,
+    $1776.Timestamp? beginTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? resolveTime,
     $core.String? category,
     Violation_State? state,
     $core.String? orgPolicyConstraint,
@@ -2003,7 +2003,7 @@ class Violation extends $pb.GeneratedMessage {
     $core.String? nonCompliantOrgPolicy,
     Violation_Remediation? remediation,
     $core.bool? acknowledged,
-    $1775.Timestamp? acknowledgementTime,
+    $1776.Timestamp? acknowledgementTime,
     $core.String? exceptionAuditLogLink,
   }) {
     final $result = create();
@@ -2058,9 +2058,9 @@ class Violation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Violation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.assuredworkloads.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'beginTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'resolveTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'beginTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'resolveTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'category')
     ..e<Violation_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Violation_State.STATE_UNSPECIFIED, valueOf: Violation_State.valueOf, enumValues: Violation_State.values)
     ..aOS(8, _omitFieldNames ? '' : 'orgPolicyConstraint')
@@ -2068,7 +2068,7 @@ class Violation extends $pb.GeneratedMessage {
     ..aOS(12, _omitFieldNames ? '' : 'nonCompliantOrgPolicy')
     ..aOM<Violation_Remediation>(13, _omitFieldNames ? '' : 'remediation', subBuilder: Violation_Remediation.create)
     ..aOB(14, _omitFieldNames ? '' : 'acknowledged')
-    ..aOM<$1775.Timestamp>(15, _omitFieldNames ? '' : 'acknowledgementTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(15, _omitFieldNames ? '' : 'acknowledgementTime', subBuilder: $1776.Timestamp.create)
     ..aOS(16, _omitFieldNames ? '' : 'exceptionAuditLogLink')
     ..hasRequiredFields = false
   ;
@@ -2119,40 +2119,40 @@ class Violation extends $pb.GeneratedMessage {
 
   /// Output only. Time of the event which triggered the Violation.
   @$pb.TagNumber(3)
-  $1775.Timestamp get beginTime => $_getN(2);
+  $1776.Timestamp get beginTime => $_getN(2);
   @$pb.TagNumber(3)
-  set beginTime($1775.Timestamp v) { setField(3, v); }
+  set beginTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBeginTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearBeginTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureBeginTime() => $_ensure(2);
+  $1776.Timestamp ensureBeginTime() => $_ensure(2);
 
   /// Output only. The last time when the Violation record was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Time of the event which fixed the Violation.
   /// If the violation is ACTIVE this will be empty.
   @$pb.TagNumber(5)
-  $1775.Timestamp get resolveTime => $_getN(4);
+  $1776.Timestamp get resolveTime => $_getN(4);
   @$pb.TagNumber(5)
-  set resolveTime($1775.Timestamp v) { setField(5, v); }
+  set resolveTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResolveTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearResolveTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureResolveTime() => $_ensure(4);
+  $1776.Timestamp ensureResolveTime() => $_ensure(4);
 
   /// Output only. Category under which this violation is mapped.
   /// e.g. Location, Service Usage, Access, Encryption, etc.
@@ -2238,15 +2238,15 @@ class Violation extends $pb.GeneratedMessage {
   /// Optional. Timestamp when this violation was acknowledged last.
   /// This will be absent when acknowledged field is marked as false.
   @$pb.TagNumber(15)
-  $1775.Timestamp get acknowledgementTime => $_getN(12);
+  $1776.Timestamp get acknowledgementTime => $_getN(12);
   @$pb.TagNumber(15)
-  set acknowledgementTime($1775.Timestamp v) { setField(15, v); }
+  set acknowledgementTime($1776.Timestamp v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasAcknowledgementTime() => $_has(12);
   @$pb.TagNumber(15)
   void clearAcknowledgementTime() => clearField(15);
   @$pb.TagNumber(15)
-  $1775.Timestamp ensureAcknowledgementTime() => $_ensure(12);
+  $1776.Timestamp ensureAcknowledgementTime() => $_ensure(12);
 
   /// Output only. Immutable. Audit Log link to find business justification provided for violation
   /// exception. Format:

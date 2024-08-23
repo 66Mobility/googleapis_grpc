@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'io.pb.dart' as $4277;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'io.pb.dart' as $4278;
 import 'vertex_rag_data.pbenum.dart';
 
 export 'vertex_rag_data.pbenum.dart';
@@ -187,8 +187,8 @@ class RagCorpus extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     RagEmbeddingModelConfig? ragEmbeddingModelConfig,
   }) {
     final $result = create();
@@ -220,8 +220,8 @@ class RagCorpus extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<RagEmbeddingModelConfig>(6, _omitFieldNames ? '' : 'ragEmbeddingModelConfig', subBuilder: RagEmbeddingModelConfig.create)
     ..hasRequiredFields = false
   ;
@@ -281,27 +281,27 @@ class RagCorpus extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this RagCorpus was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Timestamp when this RagCorpus was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. Immutable. The embedding model config of the RagCorpus.
   @$pb.TagNumber(6)
@@ -333,13 +333,13 @@ class RagFile extends $pb.GeneratedMessage {
     $core.String? description,
     $fixnum.Int64? sizeBytes,
     RagFile_RagFileType? ragFileType,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4277.GcsSource? gcsSource,
-    $4277.GoogleDriveSource? googleDriveSource,
-    $4277.DirectUploadSource? directUploadSource,
-    $4277.SlackSource? slackSource,
-    $4277.JiraSource? jiraSource,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4278.GcsSource? gcsSource,
+    $4278.GoogleDriveSource? googleDriveSource,
+    $4278.DirectUploadSource? directUploadSource,
+    $4278.SlackSource? slackSource,
+    $4278.JiraSource? jiraSource,
   }) {
     final $result = create();
     if (name != null) {
@@ -399,13 +399,13 @@ class RagFile extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aInt64(4, _omitFieldNames ? '' : 'sizeBytes')
     ..e<RagFile_RagFileType>(5, _omitFieldNames ? '' : 'ragFileType', $pb.PbFieldType.OE, defaultOrMaker: RagFile_RagFileType.RAG_FILE_TYPE_UNSPECIFIED, valueOf: RagFile_RagFileType.valueOf, enumValues: RagFile_RagFileType.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4277.GcsSource>(8, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4277.GcsSource.create)
-    ..aOM<$4277.GoogleDriveSource>(9, _omitFieldNames ? '' : 'googleDriveSource', subBuilder: $4277.GoogleDriveSource.create)
-    ..aOM<$4277.DirectUploadSource>(10, _omitFieldNames ? '' : 'directUploadSource', subBuilder: $4277.DirectUploadSource.create)
-    ..aOM<$4277.SlackSource>(11, _omitFieldNames ? '' : 'slackSource', subBuilder: $4277.SlackSource.create)
-    ..aOM<$4277.JiraSource>(12, _omitFieldNames ? '' : 'jiraSource', subBuilder: $4277.JiraSource.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4278.GcsSource>(8, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4278.GcsSource.create)
+    ..aOM<$4278.GoogleDriveSource>(9, _omitFieldNames ? '' : 'googleDriveSource', subBuilder: $4278.GoogleDriveSource.create)
+    ..aOM<$4278.DirectUploadSource>(10, _omitFieldNames ? '' : 'directUploadSource', subBuilder: $4278.DirectUploadSource.create)
+    ..aOM<$4278.SlackSource>(11, _omitFieldNames ? '' : 'slackSource', subBuilder: $4278.SlackSource.create)
+    ..aOM<$4278.JiraSource>(12, _omitFieldNames ? '' : 'jiraSource', subBuilder: $4278.JiraSource.create)
     ..hasRequiredFields = false
   ;
 
@@ -487,90 +487,90 @@ class RagFile extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this RagFile was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Timestamp when this RagFile was last updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. Google Cloud Storage location of the RagFile.
   /// It does not support wildcards in the Cloud Storage uri for now.
   @$pb.TagNumber(8)
-  $4277.GcsSource get gcsSource => $_getN(7);
+  $4278.GcsSource get gcsSource => $_getN(7);
   @$pb.TagNumber(8)
-  set gcsSource($4277.GcsSource v) { setField(8, v); }
+  set gcsSource($4278.GcsSource v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasGcsSource() => $_has(7);
   @$pb.TagNumber(8)
   void clearGcsSource() => clearField(8);
   @$pb.TagNumber(8)
-  $4277.GcsSource ensureGcsSource() => $_ensure(7);
+  $4278.GcsSource ensureGcsSource() => $_ensure(7);
 
   /// Output only. Google Drive location. Supports importing individual files
   /// as well as Google Drive folders.
   @$pb.TagNumber(9)
-  $4277.GoogleDriveSource get googleDriveSource => $_getN(8);
+  $4278.GoogleDriveSource get googleDriveSource => $_getN(8);
   @$pb.TagNumber(9)
-  set googleDriveSource($4277.GoogleDriveSource v) { setField(9, v); }
+  set googleDriveSource($4278.GoogleDriveSource v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasGoogleDriveSource() => $_has(8);
   @$pb.TagNumber(9)
   void clearGoogleDriveSource() => clearField(9);
   @$pb.TagNumber(9)
-  $4277.GoogleDriveSource ensureGoogleDriveSource() => $_ensure(8);
+  $4278.GoogleDriveSource ensureGoogleDriveSource() => $_ensure(8);
 
   /// Output only. The RagFile is encapsulated and uploaded in the
   /// UploadRagFile request.
   @$pb.TagNumber(10)
-  $4277.DirectUploadSource get directUploadSource => $_getN(9);
+  $4278.DirectUploadSource get directUploadSource => $_getN(9);
   @$pb.TagNumber(10)
-  set directUploadSource($4277.DirectUploadSource v) { setField(10, v); }
+  set directUploadSource($4278.DirectUploadSource v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDirectUploadSource() => $_has(9);
   @$pb.TagNumber(10)
   void clearDirectUploadSource() => clearField(10);
   @$pb.TagNumber(10)
-  $4277.DirectUploadSource ensureDirectUploadSource() => $_ensure(9);
+  $4278.DirectUploadSource ensureDirectUploadSource() => $_ensure(9);
 
   /// The RagFile is imported from a Slack channel.
   @$pb.TagNumber(11)
-  $4277.SlackSource get slackSource => $_getN(10);
+  $4278.SlackSource get slackSource => $_getN(10);
   @$pb.TagNumber(11)
-  set slackSource($4277.SlackSource v) { setField(11, v); }
+  set slackSource($4278.SlackSource v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSlackSource() => $_has(10);
   @$pb.TagNumber(11)
   void clearSlackSource() => clearField(11);
   @$pb.TagNumber(11)
-  $4277.SlackSource ensureSlackSource() => $_ensure(10);
+  $4278.SlackSource ensureSlackSource() => $_ensure(10);
 
   /// The RagFile is imported from a Jira query.
   @$pb.TagNumber(12)
-  $4277.JiraSource get jiraSource => $_getN(11);
+  $4278.JiraSource get jiraSource => $_getN(11);
   @$pb.TagNumber(12)
-  set jiraSource($4277.JiraSource v) { setField(12, v); }
+  set jiraSource($4278.JiraSource v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasJiraSource() => $_has(11);
   @$pb.TagNumber(12)
   void clearJiraSource() => clearField(12);
   @$pb.TagNumber(12)
-  $4277.JiraSource ensureJiraSource() => $_ensure(11);
+  $4278.JiraSource ensureJiraSource() => $_ensure(11);
 }
 
 /// Specifies the size and overlap of chunks for RagFiles.
@@ -757,12 +757,12 @@ enum ImportRagFilesConfig_ImportSource {
 /// Config for importing RagFiles.
 class ImportRagFilesConfig extends $pb.GeneratedMessage {
   factory ImportRagFilesConfig({
-    $4277.GcsSource? gcsSource,
-    $4277.GoogleDriveSource? googleDriveSource,
+    $4278.GcsSource? gcsSource,
+    $4278.GoogleDriveSource? googleDriveSource,
     RagFileChunkingConfig? ragFileChunkingConfig,
     $core.int? maxEmbeddingRequestsPerMin,
-    $4277.SlackSource? slackSource,
-    $4277.JiraSource? jiraSource,
+    $4278.SlackSource? slackSource,
+    $4278.JiraSource? jiraSource,
     RagFileParsingConfig? ragFileParsingConfig,
   }) {
     final $result = create();
@@ -802,12 +802,12 @@ class ImportRagFilesConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportRagFilesConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 6, 7])
-    ..aOM<$4277.GcsSource>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4277.GcsSource.create)
-    ..aOM<$4277.GoogleDriveSource>(3, _omitFieldNames ? '' : 'googleDriveSource', subBuilder: $4277.GoogleDriveSource.create)
+    ..aOM<$4278.GcsSource>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4278.GcsSource.create)
+    ..aOM<$4278.GoogleDriveSource>(3, _omitFieldNames ? '' : 'googleDriveSource', subBuilder: $4278.GoogleDriveSource.create)
     ..aOM<RagFileChunkingConfig>(4, _omitFieldNames ? '' : 'ragFileChunkingConfig', subBuilder: RagFileChunkingConfig.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'maxEmbeddingRequestsPerMin', $pb.PbFieldType.O3)
-    ..aOM<$4277.SlackSource>(6, _omitFieldNames ? '' : 'slackSource', subBuilder: $4277.SlackSource.create)
-    ..aOM<$4277.JiraSource>(7, _omitFieldNames ? '' : 'jiraSource', subBuilder: $4277.JiraSource.create)
+    ..aOM<$4278.SlackSource>(6, _omitFieldNames ? '' : 'slackSource', subBuilder: $4278.SlackSource.create)
+    ..aOM<$4278.JiraSource>(7, _omitFieldNames ? '' : 'jiraSource', subBuilder: $4278.JiraSource.create)
     ..aOM<RagFileParsingConfig>(8, _omitFieldNames ? '' : 'ragFileParsingConfig', subBuilder: RagFileParsingConfig.create)
     ..hasRequiredFields = false
   ;
@@ -841,28 +841,28 @@ class ImportRagFilesConfig extends $pb.GeneratedMessage {
   /// - `gs://bucket_name/my_directory/object_name/my_file.txt`
   /// - `gs://bucket_name/my_directory`
   @$pb.TagNumber(2)
-  $4277.GcsSource get gcsSource => $_getN(0);
+  $4278.GcsSource get gcsSource => $_getN(0);
   @$pb.TagNumber(2)
-  set gcsSource($4277.GcsSource v) { setField(2, v); }
+  set gcsSource($4278.GcsSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcsSource() => $_has(0);
   @$pb.TagNumber(2)
   void clearGcsSource() => clearField(2);
   @$pb.TagNumber(2)
-  $4277.GcsSource ensureGcsSource() => $_ensure(0);
+  $4278.GcsSource ensureGcsSource() => $_ensure(0);
 
   /// Google Drive location. Supports importing individual files as
   /// well as Google Drive folders.
   @$pb.TagNumber(3)
-  $4277.GoogleDriveSource get googleDriveSource => $_getN(1);
+  $4278.GoogleDriveSource get googleDriveSource => $_getN(1);
   @$pb.TagNumber(3)
-  set googleDriveSource($4277.GoogleDriveSource v) { setField(3, v); }
+  set googleDriveSource($4278.GoogleDriveSource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGoogleDriveSource() => $_has(1);
   @$pb.TagNumber(3)
   void clearGoogleDriveSource() => clearField(3);
   @$pb.TagNumber(3)
-  $4277.GoogleDriveSource ensureGoogleDriveSource() => $_ensure(1);
+  $4278.GoogleDriveSource ensureGoogleDriveSource() => $_ensure(1);
 
   /// Specifies the size and overlap of chunks after importing RagFiles.
   @$pb.TagNumber(4)
@@ -892,27 +892,27 @@ class ImportRagFilesConfig extends $pb.GeneratedMessage {
 
   /// Slack channels with their corresponding access tokens.
   @$pb.TagNumber(6)
-  $4277.SlackSource get slackSource => $_getN(4);
+  $4278.SlackSource get slackSource => $_getN(4);
   @$pb.TagNumber(6)
-  set slackSource($4277.SlackSource v) { setField(6, v); }
+  set slackSource($4278.SlackSource v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSlackSource() => $_has(4);
   @$pb.TagNumber(6)
   void clearSlackSource() => clearField(6);
   @$pb.TagNumber(6)
-  $4277.SlackSource ensureSlackSource() => $_ensure(4);
+  $4278.SlackSource ensureSlackSource() => $_ensure(4);
 
   /// Jira queries with their corresponding authentication.
   @$pb.TagNumber(7)
-  $4277.JiraSource get jiraSource => $_getN(5);
+  $4278.JiraSource get jiraSource => $_getN(5);
   @$pb.TagNumber(7)
-  set jiraSource($4277.JiraSource v) { setField(7, v); }
+  set jiraSource($4278.JiraSource v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasJiraSource() => $_has(5);
   @$pb.TagNumber(7)
   void clearJiraSource() => clearField(7);
   @$pb.TagNumber(7)
-  $4277.JiraSource ensureJiraSource() => $_ensure(5);
+  $4278.JiraSource ensureJiraSource() => $_ensure(5);
 
   /// Specifies the parsing config for RagFiles.
   @$pb.TagNumber(8)

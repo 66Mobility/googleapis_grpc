@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'timeseries_insights.pbenum.dart';
 
 export 'timeseries_insights.pbenum.dart';
@@ -188,8 +188,8 @@ class DataSet extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? dataNames,
     $core.Iterable<DataSource>? dataSources,
     DataSet_State? state,
-    $1795.Status? status,
-    $1737.Duration? ttl,
+    $1796.Status? status,
+    $1738.Duration? ttl,
   }) {
     final $result = create();
     if (name != null) {
@@ -221,8 +221,8 @@ class DataSet extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'dataNames')
     ..pc<DataSource>(3, _omitFieldNames ? '' : 'dataSources', $pb.PbFieldType.PM, subBuilder: DataSource.create)
     ..e<DataSet_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: DataSet_State.STATE_UNSPECIFIED, valueOf: DataSet_State.valueOf, enumValues: DataSet_State.values)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$1737.Duration>(6, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -281,29 +281,29 @@ class DataSet extends $pb.GeneratedMessage {
 
   /// Dataset processing status.
   @$pb.TagNumber(5)
-  $1795.Status get status => $_getN(4);
+  $1796.Status get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($1795.Status v) { setField(5, v); }
+  set status($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)
   void clearStatus() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureStatus() => $_ensure(4);
+  $1796.Status ensureStatus() => $_ensure(4);
 
   /// Periodically we discard dataset [Event][google.cloud.timeseriesinsights.v1.Event] objects that have
   /// timestamps older than 'ttl'.  Omitting this field or a zero value means no
   /// events are discarded.
   @$pb.TagNumber(6)
-  $1737.Duration get ttl => $_getN(5);
+  $1738.Duration get ttl => $_getN(5);
   @$pb.TagNumber(6)
-  set ttl($1737.Duration v) { setField(6, v); }
+  set ttl($1738.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTtl() => $_has(5);
   @$pb.TagNumber(6)
   void clearTtl() => clearField(6);
   @$pb.TagNumber(6)
-  $1737.Duration ensureTtl() => $_ensure(5);
+  $1738.Duration ensureTtl() => $_ensure(5);
 }
 
 enum EventDimension_Value {
@@ -469,7 +469,7 @@ class Event extends $pb.GeneratedMessage {
   factory Event({
     $core.Iterable<EventDimension>? dimensions,
     $fixnum.Int64? groupId,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
   }) {
     final $result = create();
     if (dimensions != null) {
@@ -490,7 +490,7 @@ class Event extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.timeseriesinsights.v1'), createEmptyInstance: create)
     ..pc<EventDimension>(1, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: EventDimension.create)
     ..aInt64(2, _omitFieldNames ? '' : 'groupId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -534,15 +534,15 @@ class Event extends $pb.GeneratedMessage {
 
   /// Event timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get eventTime => $_getN(2);
+  $1776.Timestamp get eventTime => $_getN(2);
   @$pb.TagNumber(3)
-  set eventTime($1775.Timestamp v) { setField(3, v); }
+  set eventTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEventTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEventTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEventTime() => $_ensure(2);
+  $1776.Timestamp ensureEventTime() => $_ensure(2);
 }
 
 /// Appends events to an existing DataSet.
@@ -1038,7 +1038,7 @@ class ForecastParams extends $pb.GeneratedMessage {
   factory ForecastParams({
     ForecastParams_Period? seasonalityHint,
     $core.double? noiseThreshold,
-    $1737.Duration? horizonDuration,
+    $1738.Duration? horizonDuration,
   }) {
     final $result = create();
     if (seasonalityHint != null) {
@@ -1059,7 +1059,7 @@ class ForecastParams extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ForecastParams', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.timeseriesinsights.v1'), createEmptyInstance: create)
     ..e<ForecastParams_Period>(10, _omitFieldNames ? '' : 'seasonalityHint', $pb.PbFieldType.OE, defaultOrMaker: ForecastParams_Period.PERIOD_UNSPECIFIED, valueOf: ForecastParams_Period.valueOf, enumValues: ForecastParams_Period.values)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'noiseThreshold', $pb.PbFieldType.OD)
-    ..aOM<$1737.Duration>(13, _omitFieldNames ? '' : 'horizonDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(13, _omitFieldNames ? '' : 'horizonDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1143,21 +1143,21 @@ class ForecastParams extends $pb.GeneratedMessage {
   ///  simply send multiple queries with those as
   ///  [detectionTime][google.cloud.timeseriesinsights.v1.QueryDataSetRequest.detection_time].
   @$pb.TagNumber(13)
-  $1737.Duration get horizonDuration => $_getN(2);
+  $1738.Duration get horizonDuration => $_getN(2);
   @$pb.TagNumber(13)
-  set horizonDuration($1737.Duration v) { setField(13, v); }
+  set horizonDuration($1738.Duration v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasHorizonDuration() => $_has(2);
   @$pb.TagNumber(13)
   void clearHorizonDuration() => clearField(13);
   @$pb.TagNumber(13)
-  $1737.Duration ensureHorizonDuration() => $_ensure(2);
+  $1738.Duration ensureHorizonDuration() => $_ensure(2);
 }
 
 /// A point in a time series.
 class TimeseriesPoint extends $pb.GeneratedMessage {
   factory TimeseriesPoint({
-    $1775.Timestamp? time,
+    $1776.Timestamp? time,
     $core.double? value,
   }) {
     final $result = create();
@@ -1174,7 +1174,7 @@ class TimeseriesPoint extends $pb.GeneratedMessage {
   factory TimeseriesPoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeseriesPoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.timeseriesinsights.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'time', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'time', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -1202,15 +1202,15 @@ class TimeseriesPoint extends $pb.GeneratedMessage {
 
   /// The timestamp of this point.
   @$pb.TagNumber(1)
-  $1775.Timestamp get time => $_getN(0);
+  $1776.Timestamp get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($1775.Timestamp v) { setField(1, v); }
+  set time($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureTime() => $_ensure(0);
+  $1776.Timestamp ensureTime() => $_ensure(0);
 
   ///  The value for this point.
   ///
@@ -1284,7 +1284,7 @@ class EvaluatedSlice extends $pb.GeneratedMessage {
     $core.double? detectionPointForecast,
     $core.double? expectedDeviation,
     $core.double? anomalyScore,
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (dimensions != null) {
@@ -1325,7 +1325,7 @@ class EvaluatedSlice extends $pb.GeneratedMessage {
     ..a<$core.double>(12, _omitFieldNames ? '' : 'detectionPointForecast', $pb.PbFieldType.OD)
     ..a<$core.double>(16, _omitFieldNames ? '' : 'expectedDeviation', $pb.PbFieldType.OD)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'anomalyScore', $pb.PbFieldType.OD)
-    ..aOM<$1795.Status>(18, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(18, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1487,15 +1487,15 @@ class EvaluatedSlice extends $pb.GeneratedMessage {
   ///  transient error.
   ///  - **"Internal server error"**: Internal unexpected error.
   @$pb.TagNumber(18)
-  $1795.Status get status => $_getN(7);
+  $1796.Status get status => $_getN(7);
   @$pb.TagNumber(18)
-  set status($1795.Status v) { setField(18, v); }
+  set status($1796.Status v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasStatus() => $_has(7);
   @$pb.TagNumber(18)
   void clearStatus() => clearField(18);
   @$pb.TagNumber(18)
-  $1795.Status ensureStatus() => $_ensure(7);
+  $1796.Status ensureStatus() => $_ensure(7);
 }
 
 /// Parameters that control how we slice the dataset and, optionally, filter
@@ -1599,8 +1599,8 @@ class SlicingParams extends $pb.GeneratedMessage {
 /// Parameters that control how we construct the time series for each slice.
 class TimeseriesParams extends $pb.GeneratedMessage {
   factory TimeseriesParams({
-    $1737.Duration? forecastHistory,
-    $1737.Duration? granularity,
+    $1738.Duration? forecastHistory,
+    $1738.Duration? granularity,
     $core.String? metric,
     TimeseriesParams_AggregationMethod? metricAggregationMethod,
   }) {
@@ -1624,8 +1624,8 @@ class TimeseriesParams extends $pb.GeneratedMessage {
   factory TimeseriesParams.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeseriesParams', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.timeseriesinsights.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'forecastHistory', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'granularity', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'forecastHistory', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'granularity', subBuilder: $1738.Duration.create)
     ..aOS(4, _omitFieldNames ? '' : 'metric')
     ..e<TimeseriesParams_AggregationMethod>(5, _omitFieldNames ? '' : 'metricAggregationMethod', $pb.PbFieldType.OE, defaultOrMaker: TimeseriesParams_AggregationMethod.AGGREGATION_METHOD_UNSPECIFIED, valueOf: TimeseriesParams_AggregationMethod.valueOf, enumValues: TimeseriesParams_AggregationMethod.values)
     ..hasRequiredFields = false
@@ -1668,15 +1668,15 @@ class TimeseriesParams extends $pb.GeneratedMessage {
   ///  interval, the slice evaluation can fail. For more information, see
   ///  [EvaluatedSlice.status][google.cloud.timeseriesinsights.v1.EvaluatedSlice.status].
   @$pb.TagNumber(1)
-  $1737.Duration get forecastHistory => $_getN(0);
+  $1738.Duration get forecastHistory => $_getN(0);
   @$pb.TagNumber(1)
-  set forecastHistory($1737.Duration v) { setField(1, v); }
+  set forecastHistory($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasForecastHistory() => $_has(0);
   @$pb.TagNumber(1)
   void clearForecastHistory() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureForecastHistory() => $_ensure(0);
+  $1738.Duration ensureForecastHistory() => $_ensure(0);
 
   ///  Required. The time granularity of the time series (on the x-axis). Each time series
   ///  point starting at time T will aggregate all events for a particular slice
@@ -1692,15 +1692,15 @@ class TimeseriesParams extends $pb.GeneratedMessage {
   ///
   ///  Currently, the minimal supported granularity is 10 seconds.
   @$pb.TagNumber(2)
-  $1737.Duration get granularity => $_getN(1);
+  $1738.Duration get granularity => $_getN(1);
   @$pb.TagNumber(2)
-  set granularity($1737.Duration v) { setField(2, v); }
+  set granularity($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGranularity() => $_has(1);
   @$pb.TagNumber(2)
   void clearGranularity() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureGranularity() => $_ensure(1);
+  $1738.Duration ensureGranularity() => $_ensure(1);
 
   ///  Optional. Denotes the [name][google.cloud.timeseriesinsights.v1.EventDimension.name] of a numerical
   ///  dimension that will have its values aggregated to compute the y-axis of the
@@ -1804,7 +1804,7 @@ class QueryDataSetRequest extends $pb.GeneratedMessage {
     $core.bool? returnTimeseries,
     SlicingParams? slicingParams,
     TimeseriesParams? timeseriesParams,
-    $1775.Timestamp? detectionTime,
+    $1776.Timestamp? detectionTime,
     $core.int? numReturnedSlices,
   }) {
     final $result = create();
@@ -1841,7 +1841,7 @@ class QueryDataSetRequest extends $pb.GeneratedMessage {
     ..aOB(8, _omitFieldNames ? '' : 'returnTimeseries')
     ..aOM<SlicingParams>(9, _omitFieldNames ? '' : 'slicingParams', subBuilder: SlicingParams.create)
     ..aOM<TimeseriesParams>(10, _omitFieldNames ? '' : 'timeseriesParams', subBuilder: TimeseriesParams.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'detectionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'detectionTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'numReturnedSlices', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -1943,15 +1943,15 @@ class QueryDataSetRequest extends $pb.GeneratedMessage {
   ///  the granularity is specified in the
   ///  [timeseriesParams.granularity][google.cloud.timeseriesinsights.v1.TimeseriesParams.granularity] field.
   @$pb.TagNumber(11)
-  $1775.Timestamp get detectionTime => $_getN(5);
+  $1776.Timestamp get detectionTime => $_getN(5);
   @$pb.TagNumber(11)
-  set detectionTime($1775.Timestamp v) { setField(11, v); }
+  set detectionTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDetectionTime() => $_has(5);
   @$pb.TagNumber(11)
   void clearDetectionTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureDetectionTime() => $_ensure(5);
+  $1776.Timestamp ensureDetectionTime() => $_ensure(5);
 
   ///  How many slices are returned in
   ///  [QueryDataSetResponse.slices][google.cloud.timeseriesinsights.v1.QueryDataSetResponse.slices].
@@ -2044,7 +2044,7 @@ class EvaluateSliceRequest extends $pb.GeneratedMessage {
   factory EvaluateSliceRequest({
     $core.String? dataset,
     $core.Iterable<PinnedDimension>? pinnedDimensions,
-    $1775.Timestamp? detectionTime,
+    $1776.Timestamp? detectionTime,
     TimeseriesParams? timeseriesParams,
     ForecastParams? forecastParams,
   }) {
@@ -2073,7 +2073,7 @@ class EvaluateSliceRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EvaluateSliceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.timeseriesinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'dataset')
     ..pc<PinnedDimension>(2, _omitFieldNames ? '' : 'pinnedDimensions', $pb.PbFieldType.PM, subBuilder: PinnedDimension.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'detectionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'detectionTime', subBuilder: $1776.Timestamp.create)
     ..aOM<TimeseriesParams>(4, _omitFieldNames ? '' : 'timeseriesParams', subBuilder: TimeseriesParams.create)
     ..aOM<ForecastParams>(5, _omitFieldNames ? '' : 'forecastParams', subBuilder: ForecastParams.create)
     ..hasRequiredFields = false
@@ -2121,15 +2121,15 @@ class EvaluateSliceRequest extends $pb.GeneratedMessage {
   ///  See documentation for
   ///  [QueryDataSetRequest.detectionTime][google.cloud.timeseriesinsights.v1.QueryDataSetRequest.detection_time].
   @$pb.TagNumber(3)
-  $1775.Timestamp get detectionTime => $_getN(2);
+  $1776.Timestamp get detectionTime => $_getN(2);
   @$pb.TagNumber(3)
-  set detectionTime($1775.Timestamp v) { setField(3, v); }
+  set detectionTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDetectionTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDetectionTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureDetectionTime() => $_ensure(2);
+  $1776.Timestamp ensureDetectionTime() => $_ensure(2);
 
   /// Parameters controlling how we will build the time series used to predict
   /// the [detectionTime][google.cloud.timeseriesinsights.v1.EvaluateSliceRequest.detection_time] value for this slice.
@@ -2163,7 +2163,7 @@ class EvaluateTimeseriesRequest extends $pb.GeneratedMessage {
   factory EvaluateTimeseriesRequest({
     $core.String? parent,
     Timeseries? timeseries,
-    $1737.Duration? granularity,
+    $1738.Duration? granularity,
     ForecastParams? forecastParams,
   }) {
     final $result = create();
@@ -2188,7 +2188,7 @@ class EvaluateTimeseriesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EvaluateTimeseriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.timeseriesinsights.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<Timeseries>(2, _omitFieldNames ? '' : 'timeseries', subBuilder: Timeseries.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'granularity', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'granularity', subBuilder: $1738.Duration.create)
     ..aOM<ForecastParams>(4, _omitFieldNames ? '' : 'forecastParams', subBuilder: ForecastParams.create)
     ..hasRequiredFields = false
   ;
@@ -2255,15 +2255,15 @@ class EvaluateTimeseriesRequest extends $pb.GeneratedMessage {
   /// The granularity of the time series (time distance between two consecutive
   /// points).
   @$pb.TagNumber(3)
-  $1737.Duration get granularity => $_getN(2);
+  $1738.Duration get granularity => $_getN(2);
   @$pb.TagNumber(3)
-  set granularity($1737.Duration v) { setField(3, v); }
+  set granularity($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGranularity() => $_has(2);
   @$pb.TagNumber(3)
   void clearGranularity() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureGranularity() => $_ensure(2);
+  $1738.Duration ensureGranularity() => $_ensure(2);
 
   /// The forecast parameters.
   @$pb.TagNumber(4)

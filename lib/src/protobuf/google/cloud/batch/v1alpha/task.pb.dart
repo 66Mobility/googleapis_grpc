@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'task.pbenum.dart';
-import 'volume.pb.dart' as $4362;
+import 'volume.pb.dart' as $4363;
 
 export 'task.pbenum.dart';
 
@@ -162,7 +162,7 @@ class ComputeResource extends $pb.GeneratedMessage {
 class StatusEvent extends $pb.GeneratedMessage {
   factory StatusEvent({
     $core.String? description,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     $core.String? type,
     TaskExecution? taskExecution,
     TaskStatus_State? taskState,
@@ -191,7 +191,7 @@ class StatusEvent extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StatusEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.batch.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'type')
     ..aOM<TaskExecution>(4, _omitFieldNames ? '' : 'taskExecution', subBuilder: TaskExecution.create)
     ..e<TaskStatus_State>(5, _omitFieldNames ? '' : 'taskState', $pb.PbFieldType.OE, defaultOrMaker: TaskStatus_State.STATE_UNSPECIFIED, valueOf: TaskStatus_State.valueOf, enumValues: TaskStatus_State.values)
@@ -231,15 +231,15 @@ class StatusEvent extends $pb.GeneratedMessage {
 
   /// The time this event occurred.
   @$pb.TagNumber(2)
-  $1775.Timestamp get eventTime => $_getN(1);
+  $1776.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventTime($1775.Timestamp v) { setField(2, v); }
+  set eventTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEventTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEventTime() => $_ensure(1);
+  $1776.Timestamp ensureEventTime() => $_ensure(1);
 
   /// Type of the event.
   @$pb.TagNumber(3)
@@ -882,7 +882,7 @@ class Runnable extends $pb.GeneratedMessage {
     $core.bool? alwaysRun,
     Runnable_Barrier? barrier,
     Environment? environment,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
   }) {
@@ -938,7 +938,7 @@ class Runnable extends $pb.GeneratedMessage {
     ..aOB(5, _omitFieldNames ? '' : 'alwaysRun')
     ..aOM<Runnable_Barrier>(6, _omitFieldNames ? '' : 'barrier', subBuilder: Runnable_Barrier.create)
     ..aOM<Environment>(7, _omitFieldNames ? '' : 'environment', subBuilder: Environment.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Runnable.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.batch.v1alpha'))
     ..aOS(10, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
@@ -1070,15 +1070,15 @@ class Runnable extends $pb.GeneratedMessage {
 
   /// Timeout for this Runnable.
   @$pb.TagNumber(8)
-  $1737.Duration get timeout => $_getN(7);
+  $1738.Duration get timeout => $_getN(7);
   @$pb.TagNumber(8)
-  set timeout($1737.Duration v) { setField(8, v); }
+  set timeout($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTimeout() => $_has(7);
   @$pb.TagNumber(8)
   void clearTimeout() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureTimeout() => $_ensure(7);
+  $1738.Duration ensureTimeout() => $_ensure(7);
 
   /// Labels for this Runnable.
   @$pb.TagNumber(9)
@@ -1102,11 +1102,11 @@ class Runnable extends $pb.GeneratedMessage {
 class TaskSpec extends $pb.GeneratedMessage {
   factory TaskSpec({
     ComputeResource? computeResource,
-    $1737.Duration? maxRunDuration,
+    $1738.Duration? maxRunDuration,
     $core.int? maxRetryCount,
   @$core.Deprecated('This field is deprecated.')
     $core.Map<$core.String, $core.String>? environments,
-    $core.Iterable<$4362.Volume>? volumes,
+    $core.Iterable<$4363.Volume>? volumes,
     $core.Iterable<Runnable>? runnables,
     $core.Iterable<LifecyclePolicy>? lifecyclePolicies,
     Environment? environment,
@@ -1145,10 +1145,10 @@ class TaskSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TaskSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.batch.v1alpha'), createEmptyInstance: create)
     ..aOM<ComputeResource>(3, _omitFieldNames ? '' : 'computeResource', subBuilder: ComputeResource.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'maxRunDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'maxRunDuration', subBuilder: $1738.Duration.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'maxRetryCount', $pb.PbFieldType.O3)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'environments', entryClassName: 'TaskSpec.EnvironmentsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.batch.v1alpha'))
-    ..pc<$4362.Volume>(7, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4362.Volume.create)
+    ..pc<$4363.Volume>(7, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: $4363.Volume.create)
     ..pc<Runnable>(8, _omitFieldNames ? '' : 'runnables', $pb.PbFieldType.PM, subBuilder: Runnable.create)
     ..pc<LifecyclePolicy>(9, _omitFieldNames ? '' : 'lifecyclePolicies', $pb.PbFieldType.PM, subBuilder: LifecyclePolicy.create)
     ..aOM<Environment>(10, _omitFieldNames ? '' : 'environment', subBuilder: Environment.create)
@@ -1198,15 +1198,15 @@ class TaskSpec extends $pb.GeneratedMessage {
   /// time for a job listed at
   /// https://cloud.google.com/batch/quotas#max-job-duration.
   @$pb.TagNumber(4)
-  $1737.Duration get maxRunDuration => $_getN(1);
+  $1738.Duration get maxRunDuration => $_getN(1);
   @$pb.TagNumber(4)
-  set maxRunDuration($1737.Duration v) { setField(4, v); }
+  set maxRunDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxRunDuration() => $_has(1);
   @$pb.TagNumber(4)
   void clearMaxRunDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureMaxRunDuration() => $_ensure(1);
+  $1738.Duration ensureMaxRunDuration() => $_ensure(1);
 
   /// Maximum number of retries on failures.
   /// The default, 0, which means never retry.
@@ -1227,7 +1227,7 @@ class TaskSpec extends $pb.GeneratedMessage {
 
   /// Volumes to mount before running Tasks using this TaskSpec.
   @$pb.TagNumber(7)
-  $core.List<$4362.Volume> get volumes => $_getList(4);
+  $core.List<$4363.Volume> get volumes => $_getList(4);
 
   ///  Required. The sequence of one or more runnables (executable scripts,
   ///  executable containers, and/or barriers) for each task in this task group to

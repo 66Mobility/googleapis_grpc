@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
-import '../../../type/datetime.pb.dart' as $1801;
-import '../../../type/dayofweek.pbenum.dart' as $4321;
-import '../../../type/postal_address.pb.dart' as $4427;
-import '../../../type/timeofday.pb.dart' as $4320;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
+import '../../../type/datetime.pb.dart' as $1802;
+import '../../../type/dayofweek.pbenum.dart' as $4322;
+import '../../../type/postal_address.pb.dart' as $4429;
+import '../../../type/timeofday.pb.dart' as $4321;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -27,19 +27,19 @@ export 'resources.pbenum.dart';
 class Order extends $pb.GeneratedMessage {
   factory Order({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     Order_State? state,
     OrganizationContact? organizationContact,
     $core.Iterable<$core.String>? targetWorkloads,
     $core.String? customerMotivation,
-    $1775.Timestamp? fulfillmentTime,
+    $1776.Timestamp? fulfillmentTime,
     $core.String? regionCode,
     $core.String? orderFormUri,
     Order_Type? type,
     $core.String? displayName,
-    $1775.Timestamp? submitTime,
+    $1776.Timestamp? submitTime,
     $core.String? billingId,
     $core.Iterable<HardwareLocation>? existingHardware,
   }) {
@@ -100,19 +100,19 @@ class Order extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Order', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Order.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gdchardwaremanagement.v1alpha'))
     ..e<Order_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Order_State.STATE_UNSPECIFIED, valueOf: Order_State.valueOf, enumValues: Order_State.values)
     ..aOM<OrganizationContact>(6, _omitFieldNames ? '' : 'organizationContact', subBuilder: OrganizationContact.create)
     ..pPS(7, _omitFieldNames ? '' : 'targetWorkloads')
     ..aOS(8, _omitFieldNames ? '' : 'customerMotivation')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'fulfillmentTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'fulfillmentTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'regionCode')
     ..aOS(11, _omitFieldNames ? '' : 'orderFormUri')
     ..e<Order_Type>(12, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Order_Type.TYPE_UNSPECIFIED, valueOf: Order_Type.valueOf, enumValues: Order_Type.values)
     ..aOS(13, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'submitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'submitTime', subBuilder: $1776.Timestamp.create)
     ..aOS(15, _omitFieldNames ? '' : 'billingId')
     ..pc<HardwareLocation>(16, _omitFieldNames ? '' : 'existingHardware', $pb.PbFieldType.PM, subBuilder: HardwareLocation.create)
     ..hasRequiredFields = false
@@ -152,27 +152,27 @@ class Order extends $pb.GeneratedMessage {
 
   /// Output only. Time when this order was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when this order was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Labels associated with this order as key value pairs.
   /// For more information about labels, see [Create and manage
@@ -223,15 +223,15 @@ class Order extends $pb.GeneratedMessage {
   /// Required. Customer specified deadline by when this order should be
   /// fulfilled.
   @$pb.TagNumber(9)
-  $1775.Timestamp get fulfillmentTime => $_getN(8);
+  $1776.Timestamp get fulfillmentTime => $_getN(8);
   @$pb.TagNumber(9)
-  set fulfillmentTime($1775.Timestamp v) { setField(9, v); }
+  set fulfillmentTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFulfillmentTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearFulfillmentTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureFulfillmentTime() => $_ensure(8);
+  $1776.Timestamp ensureFulfillmentTime() => $_ensure(8);
 
   /// Required. [Unicode CLDR](http://cldr.unicode.org/) region code where this
   /// order will be deployed. For a list of valid CLDR region codes, see the
@@ -279,15 +279,15 @@ class Order extends $pb.GeneratedMessage {
   /// Output only. Time when the order was submitted. Is auto-populated to the
   /// current time when an order is submitted.
   @$pb.TagNumber(14)
-  $1775.Timestamp get submitTime => $_getN(13);
+  $1776.Timestamp get submitTime => $_getN(13);
   @$pb.TagNumber(14)
-  set submitTime($1775.Timestamp v) { setField(14, v); }
+  set submitTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasSubmitTime() => $_has(13);
   @$pb.TagNumber(14)
   void clearSubmitTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureSubmitTime() => $_ensure(13);
+  $1776.Timestamp ensureSubmitTime() => $_ensure(13);
 
   /// Required. The Google Cloud Billing ID to be charged for this order.
   @$pb.TagNumber(15)
@@ -309,8 +309,8 @@ class Order extends $pb.GeneratedMessage {
 class Site extends $pb.GeneratedMessage {
   factory Site({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     OrganizationContact? organizationContact,
     $core.String? googleMapsPinUri,
@@ -358,8 +358,8 @@ class Site extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Site', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Site.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gdchardwaremanagement.v1alpha'))
     ..aOM<OrganizationContact>(5, _omitFieldNames ? '' : 'organizationContact', subBuilder: OrganizationContact.create)
     ..aOS(6, _omitFieldNames ? '' : 'googleMapsPinUri')
@@ -404,27 +404,27 @@ class Site extends $pb.GeneratedMessage {
 
   /// Output only. Time when this site was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when this site was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Labels associated with this site as key value pairs.
   /// For more information about labels, see [Create and manage
@@ -501,15 +501,15 @@ class Site extends $pb.GeneratedMessage {
 class HardwareGroup extends $pb.GeneratedMessage {
   factory HardwareGroup({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.int? hardwareCount,
     HardwareConfig? config,
     $core.String? site,
     HardwareGroup_State? state,
     $core.String? zone,
-    $1800.Date? requestedInstallationDate,
+    $1801.Date? requestedInstallationDate,
   }) {
     final $result = create();
     if (name != null) {
@@ -550,15 +550,15 @@ class HardwareGroup extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HardwareGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'HardwareGroup.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gdchardwaremanagement.v1alpha'))
     ..a<$core.int>(5, _omitFieldNames ? '' : 'hardwareCount', $pb.PbFieldType.O3)
     ..aOM<HardwareConfig>(6, _omitFieldNames ? '' : 'config', subBuilder: HardwareConfig.create)
     ..aOS(7, _omitFieldNames ? '' : 'site')
     ..e<HardwareGroup_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: HardwareGroup_State.STATE_UNSPECIFIED, valueOf: HardwareGroup_State.valueOf, enumValues: HardwareGroup_State.values)
     ..aOS(9, _omitFieldNames ? '' : 'zone')
-    ..aOM<$1800.Date>(10, _omitFieldNames ? '' : 'requestedInstallationDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(10, _omitFieldNames ? '' : 'requestedInstallationDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -597,27 +597,27 @@ class HardwareGroup extends $pb.GeneratedMessage {
 
   /// Output only. Time when this hardware group was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when this hardware group was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Labels associated with this hardware group as key value pairs.
   /// For more information about labels, see [Create and manage
@@ -683,15 +683,15 @@ class HardwareGroup extends $pb.GeneratedMessage {
   /// Optional. Requested installation date for the hardware in this
   /// HardwareGroup. Filled in by the customer.
   @$pb.TagNumber(10)
-  $1800.Date get requestedInstallationDate => $_getN(9);
+  $1801.Date get requestedInstallationDate => $_getN(9);
   @$pb.TagNumber(10)
-  set requestedInstallationDate($1800.Date v) { setField(10, v); }
+  set requestedInstallationDate($1801.Date v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasRequestedInstallationDate() => $_has(9);
   @$pb.TagNumber(10)
   void clearRequestedInstallationDate() => clearField(10);
   @$pb.TagNumber(10)
-  $1800.Date ensureRequestedInstallationDate() => $_ensure(9);
+  $1801.Date ensureRequestedInstallationDate() => $_ensure(9);
 }
 
 /// An instance of hardware installed at a site.
@@ -699,8 +699,8 @@ class Hardware extends $pb.GeneratedMessage {
   factory Hardware({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? order,
     $core.String? hardwareGroup,
@@ -708,12 +708,12 @@ class Hardware extends $pb.GeneratedMessage {
     Hardware_State? state,
     $core.String? ciqUri,
     HardwareConfig? config,
-    $1800.Date? estimatedInstallationDate,
+    $1801.Date? estimatedInstallationDate,
     HardwarePhysicalInfo? physicalInfo,
     HardwareInstallationInfo? installationInfo,
     $core.String? zone,
-    $1800.Date? requestedInstallationDate,
-    $1800.Date? actualInstallationDate,
+    $1801.Date? requestedInstallationDate,
+    $1801.Date? actualInstallationDate,
   }) {
     final $result = create();
     if (name != null) {
@@ -776,8 +776,8 @@ class Hardware extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Hardware', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'Hardware.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gdchardwaremanagement.v1alpha'))
     ..aOS(6, _omitFieldNames ? '' : 'order')
     ..aOS(7, _omitFieldNames ? '' : 'hardwareGroup')
@@ -785,12 +785,12 @@ class Hardware extends $pb.GeneratedMessage {
     ..e<Hardware_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Hardware_State.STATE_UNSPECIFIED, valueOf: Hardware_State.valueOf, enumValues: Hardware_State.values)
     ..aOS(10, _omitFieldNames ? '' : 'ciqUri')
     ..aOM<HardwareConfig>(11, _omitFieldNames ? '' : 'config', subBuilder: HardwareConfig.create)
-    ..aOM<$1800.Date>(12, _omitFieldNames ? '' : 'estimatedInstallationDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(12, _omitFieldNames ? '' : 'estimatedInstallationDate', subBuilder: $1801.Date.create)
     ..aOM<HardwarePhysicalInfo>(13, _omitFieldNames ? '' : 'physicalInfo', subBuilder: HardwarePhysicalInfo.create)
     ..aOM<HardwareInstallationInfo>(14, _omitFieldNames ? '' : 'installationInfo', subBuilder: HardwareInstallationInfo.create)
     ..aOS(15, _omitFieldNames ? '' : 'zone')
-    ..aOM<$1800.Date>(16, _omitFieldNames ? '' : 'requestedInstallationDate', subBuilder: $1800.Date.create)
-    ..aOM<$1800.Date>(17, _omitFieldNames ? '' : 'actualInstallationDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(16, _omitFieldNames ? '' : 'requestedInstallationDate', subBuilder: $1801.Date.create)
+    ..aOM<$1801.Date>(17, _omitFieldNames ? '' : 'actualInstallationDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -838,27 +838,27 @@ class Hardware extends $pb.GeneratedMessage {
 
   /// Output only. Time when this hardware was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Time when this hardware was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Optional. Labels associated with this hardware as key value pairs.
   /// For more information about labels, see [Create and manage
@@ -935,15 +935,15 @@ class Hardware extends $pb.GeneratedMessage {
 
   /// Output only. Estimated installation date for this hardware.
   @$pb.TagNumber(12)
-  $1800.Date get estimatedInstallationDate => $_getN(11);
+  $1801.Date get estimatedInstallationDate => $_getN(11);
   @$pb.TagNumber(12)
-  set estimatedInstallationDate($1800.Date v) { setField(12, v); }
+  set estimatedInstallationDate($1801.Date v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasEstimatedInstallationDate() => $_has(11);
   @$pb.TagNumber(12)
   void clearEstimatedInstallationDate() => clearField(12);
   @$pb.TagNumber(12)
-  $1800.Date ensureEstimatedInstallationDate() => $_ensure(11);
+  $1801.Date ensureEstimatedInstallationDate() => $_ensure(11);
 
   /// Optional. Physical properties of this hardware.
   @$pb.TagNumber(13)
@@ -984,35 +984,35 @@ class Hardware extends $pb.GeneratedMessage {
   /// auto-populated when the order is accepted, if the hardware's HardwareGroup
   /// specifies this. It can also be filled in by the customer.
   @$pb.TagNumber(16)
-  $1800.Date get requestedInstallationDate => $_getN(15);
+  $1801.Date get requestedInstallationDate => $_getN(15);
   @$pb.TagNumber(16)
-  set requestedInstallationDate($1800.Date v) { setField(16, v); }
+  set requestedInstallationDate($1801.Date v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasRequestedInstallationDate() => $_has(15);
   @$pb.TagNumber(16)
   void clearRequestedInstallationDate() => clearField(16);
   @$pb.TagNumber(16)
-  $1800.Date ensureRequestedInstallationDate() => $_ensure(15);
+  $1801.Date ensureRequestedInstallationDate() => $_ensure(15);
 
   /// Output only. Actual installation date for this hardware. Filled in by
   /// Google.
   @$pb.TagNumber(17)
-  $1800.Date get actualInstallationDate => $_getN(16);
+  $1801.Date get actualInstallationDate => $_getN(16);
   @$pb.TagNumber(17)
-  set actualInstallationDate($1800.Date v) { setField(17, v); }
+  set actualInstallationDate($1801.Date v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasActualInstallationDate() => $_has(16);
   @$pb.TagNumber(17)
   void clearActualInstallationDate() => clearField(17);
   @$pb.TagNumber(17)
-  $1800.Date ensureActualInstallationDate() => $_ensure(16);
+  $1801.Date ensureActualInstallationDate() => $_ensure(16);
 }
 
 /// A comment on an order.
 class Comment extends $pb.GeneratedMessage {
   factory Comment({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? author,
     $core.String? text,
@@ -1041,7 +1041,7 @@ class Comment extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Comment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'Comment.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gdchardwaremanagement.v1alpha'))
     ..aOS(4, _omitFieldNames ? '' : 'author')
     ..aOS(5, _omitFieldNames ? '' : 'text')
@@ -1083,15 +1083,15 @@ class Comment extends $pb.GeneratedMessage {
 
   /// Output only. Time when this comment was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Optional. Labels associated with this comment as key value pairs.
   /// For more information about labels, see [Create and manage
@@ -1126,7 +1126,7 @@ class Comment extends $pb.GeneratedMessage {
 class ChangeLogEntry extends $pb.GeneratedMessage {
   factory ChangeLogEntry({
     $core.String? name,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? log,
   }) {
@@ -1151,7 +1151,7 @@ class ChangeLogEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChangeLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'ChangeLogEntry.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gdchardwaremanagement.v1alpha'))
     ..aOS(4, _omitFieldNames ? '' : 'log')
     ..hasRequiredFields = false
@@ -1192,15 +1192,15 @@ class ChangeLogEntry extends $pb.GeneratedMessage {
 
   /// Output only. Time when this change log entry was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Optional. Labels associated with this change log entry as key value pairs.
   /// For more information about labels, see [Create and manage
@@ -1224,8 +1224,8 @@ class Sku extends $pb.GeneratedMessage {
   factory Sku({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     SkuConfig? config,
     $core.Iterable<SkuInstance>? instances,
     $core.String? description,
@@ -1277,8 +1277,8 @@ class Sku extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Sku', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SkuConfig>(6, _omitFieldNames ? '' : 'config', subBuilder: SkuConfig.create)
     ..pc<SkuInstance>(7, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: SkuInstance.create)
     ..aOS(8, _omitFieldNames ? '' : 'description')
@@ -1333,27 +1333,27 @@ class Sku extends $pb.GeneratedMessage {
 
   /// Output only. Time when this SKU was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Time when this SKU was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Configuration for this SKU.
   @$pb.TagNumber(6)
@@ -1430,8 +1430,8 @@ class Sku extends $pb.GeneratedMessage {
 class Zone extends $pb.GeneratedMessage {
   factory Zone({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     Zone_State? state,
@@ -1479,8 +1479,8 @@ class Zone extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Zone', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Zone.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.gdchardwaremanagement.v1alpha'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..e<Zone_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Zone_State.STATE_UNSPECIFIED, valueOf: Zone_State.valueOf, enumValues: Zone_State.values)
@@ -1525,27 +1525,27 @@ class Zone extends $pb.GeneratedMessage {
 
   /// Output only. Time when this zone was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Time when this zone was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Labels associated with this zone as key value pairs.
   /// For more information about labels, see [Create and manage
@@ -1614,7 +1614,7 @@ class Zone extends $pb.GeneratedMessage {
 /// Contact information of the customer organization.
 class OrganizationContact extends $pb.GeneratedMessage {
   factory OrganizationContact({
-    $4427.PostalAddress? address,
+    $4429.PostalAddress? address,
     $core.String? email,
     $core.String? phone,
     $core.Iterable<Contact>? contacts,
@@ -1639,7 +1639,7 @@ class OrganizationContact extends $pb.GeneratedMessage {
   factory OrganizationContact.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OrganizationContact', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4427.PostalAddress>(1, _omitFieldNames ? '' : 'address', subBuilder: $4427.PostalAddress.create)
+    ..aOM<$4429.PostalAddress>(1, _omitFieldNames ? '' : 'address', subBuilder: $4429.PostalAddress.create)
     ..aOS(2, _omitFieldNames ? '' : 'email')
     ..aOS(3, _omitFieldNames ? '' : 'phone')
     ..pc<Contact>(4, _omitFieldNames ? '' : 'contacts', $pb.PbFieldType.PM, subBuilder: Contact.create)
@@ -1669,15 +1669,15 @@ class OrganizationContact extends $pb.GeneratedMessage {
 
   /// Required. The organization's address.
   @$pb.TagNumber(1)
-  $4427.PostalAddress get address => $_getN(0);
+  $4429.PostalAddress get address => $_getN(0);
   @$pb.TagNumber(1)
-  set address($4427.PostalAddress v) { setField(1, v); }
+  set address($4429.PostalAddress v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
   void clearAddress() => clearField(1);
   @$pb.TagNumber(1)
-  $4427.PostalAddress ensureAddress() => $_ensure(0);
+  $4429.PostalAddress ensureAddress() => $_ensure(0);
 
   /// Optional. The organization's email.
   @$pb.TagNumber(2)
@@ -1712,7 +1712,7 @@ class Contact extends $pb.GeneratedMessage {
     $core.String? familyName,
     $core.String? email,
     $core.String? phone,
-    $1801.TimeZone? timeZone,
+    $1802.TimeZone? timeZone,
     $core.Iterable<TimePeriod>? reachableTimes,
   }) {
     final $result = create();
@@ -1745,7 +1745,7 @@ class Contact extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'familyName')
     ..aOS(3, _omitFieldNames ? '' : 'email')
     ..aOS(4, _omitFieldNames ? '' : 'phone')
-    ..aOM<$1801.TimeZone>(5, _omitFieldNames ? '' : 'timeZone', subBuilder: $1801.TimeZone.create)
+    ..aOM<$1802.TimeZone>(5, _omitFieldNames ? '' : 'timeZone', subBuilder: $1802.TimeZone.create)
     ..pc<TimePeriod>(6, _omitFieldNames ? '' : 'reachableTimes', $pb.PbFieldType.PM, subBuilder: TimePeriod.create)
     ..hasRequiredFields = false
   ;
@@ -1813,15 +1813,15 @@ class Contact extends $pb.GeneratedMessage {
 
   /// Optional. Time zone of the contact.
   @$pb.TagNumber(5)
-  $1801.TimeZone get timeZone => $_getN(4);
+  $1802.TimeZone get timeZone => $_getN(4);
   @$pb.TagNumber(5)
-  set timeZone($1801.TimeZone v) { setField(5, v); }
+  set timeZone($1802.TimeZone v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTimeZone() => $_has(4);
   @$pb.TagNumber(5)
   void clearTimeZone() => clearField(5);
   @$pb.TagNumber(5)
-  $1801.TimeZone ensureTimeZone() => $_ensure(4);
+  $1802.TimeZone ensureTimeZone() => $_ensure(4);
 
   /// Optional. The time periods when the contact is reachable.
   /// If this field is empty, the contact is reachable at all times.
@@ -2557,9 +2557,9 @@ class Subnet extends $pb.GeneratedMessage {
 /// Represents a time period in a week.
 class TimePeriod extends $pb.GeneratedMessage {
   factory TimePeriod({
-    $4320.TimeOfDay? startTime,
-    $4320.TimeOfDay? endTime,
-    $core.Iterable<$4321.DayOfWeek>? days,
+    $4321.TimeOfDay? startTime,
+    $4321.TimeOfDay? endTime,
+    $core.Iterable<$4322.DayOfWeek>? days,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -2578,9 +2578,9 @@ class TimePeriod extends $pb.GeneratedMessage {
   factory TimePeriod.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimePeriod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gdchardwaremanagement.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4320.TimeOfDay>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $4320.TimeOfDay.create)
-    ..aOM<$4320.TimeOfDay>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $4320.TimeOfDay.create)
-    ..pc<$4321.DayOfWeek>(3, _omitFieldNames ? '' : 'days', $pb.PbFieldType.KE, valueOf: $4321.DayOfWeek.valueOf, enumValues: $4321.DayOfWeek.values, defaultEnumValue: $4321.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED)
+    ..aOM<$4321.TimeOfDay>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $4321.TimeOfDay.create)
+    ..aOM<$4321.TimeOfDay>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $4321.TimeOfDay.create)
+    ..pc<$4322.DayOfWeek>(3, _omitFieldNames ? '' : 'days', $pb.PbFieldType.KE, valueOf: $4322.DayOfWeek.valueOf, enumValues: $4322.DayOfWeek.values, defaultEnumValue: $4322.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -2607,31 +2607,31 @@ class TimePeriod extends $pb.GeneratedMessage {
 
   /// Required. The start of the time period.
   @$pb.TagNumber(1)
-  $4320.TimeOfDay get startTime => $_getN(0);
+  $4321.TimeOfDay get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($4320.TimeOfDay v) { setField(1, v); }
+  set startTime($4321.TimeOfDay v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $4320.TimeOfDay ensureStartTime() => $_ensure(0);
+  $4321.TimeOfDay ensureStartTime() => $_ensure(0);
 
   /// Required. The end of the time period.
   @$pb.TagNumber(2)
-  $4320.TimeOfDay get endTime => $_getN(1);
+  $4321.TimeOfDay get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($4320.TimeOfDay v) { setField(2, v); }
+  set endTime($4321.TimeOfDay v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $4320.TimeOfDay ensureEndTime() => $_ensure(1);
+  $4321.TimeOfDay ensureEndTime() => $_ensure(1);
 
   /// Required. The days of the week that the time period is active.
   @$pb.TagNumber(3)
-  $core.List<$4321.DayOfWeek> get days => $_getList(2);
+  $core.List<$4322.DayOfWeek> get days => $_getList(2);
 }
 
 /// Represents the dimensions of an object.

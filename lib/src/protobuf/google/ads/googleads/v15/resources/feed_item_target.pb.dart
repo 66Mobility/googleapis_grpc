@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $1867;
-import '../enums/feed_item_target_device.pbenum.dart' as $2273;
-import '../enums/feed_item_target_status.pbenum.dart' as $2277;
-import '../enums/feed_item_target_type.pbenum.dart' as $2276;
+import '../common/criteria.pb.dart' as $1868;
+import '../enums/feed_item_target_device.pbenum.dart' as $2274;
+import '../enums/feed_item_target_status.pbenum.dart' as $2278;
+import '../enums/feed_item_target_type.pbenum.dart' as $2277;
 
 enum FeedItemTarget_Target {
   keyword, 
@@ -33,11 +33,11 @@ enum FeedItemTarget_Target {
 class FeedItemTarget extends $pb.GeneratedMessage {
   factory FeedItemTarget({
     $core.String? resourceName,
-    $2276.FeedItemTargetTypeEnum_FeedItemTargetType? feedItemTargetType,
-    $1867.KeywordInfo? keyword,
-    $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice? device,
-    $1867.AdScheduleInfo? adSchedule,
-    $2277.FeedItemTargetStatusEnum_FeedItemTargetStatus? status,
+    $2277.FeedItemTargetTypeEnum_FeedItemTargetType? feedItemTargetType,
+    $1868.KeywordInfo? keyword,
+    $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice? device,
+    $1868.AdScheduleInfo? adSchedule,
+    $2278.FeedItemTargetStatusEnum_FeedItemTargetStatus? status,
     $core.String? feedItem,
     $fixnum.Int64? feedItemTargetId,
     $core.String? campaign,
@@ -96,11 +96,11 @@ class FeedItemTarget extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItemTarget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..oo(0, [7, 9, 10, 14, 15, 16])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2276.FeedItemTargetTypeEnum_FeedItemTargetType>(3, _omitFieldNames ? '' : 'feedItemTargetType', $pb.PbFieldType.OE, defaultOrMaker: $2276.FeedItemTargetTypeEnum_FeedItemTargetType.UNSPECIFIED, valueOf: $2276.FeedItemTargetTypeEnum_FeedItemTargetType.valueOf, enumValues: $2276.FeedItemTargetTypeEnum_FeedItemTargetType.values)
-    ..aOM<$1867.KeywordInfo>(7, _omitFieldNames ? '' : 'keyword', subBuilder: $1867.KeywordInfo.create)
-    ..e<$2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice>(9, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice.UNSPECIFIED, valueOf: $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice.valueOf, enumValues: $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice.values)
-    ..aOM<$1867.AdScheduleInfo>(10, _omitFieldNames ? '' : 'adSchedule', subBuilder: $1867.AdScheduleInfo.create)
-    ..e<$2277.FeedItemTargetStatusEnum_FeedItemTargetStatus>(11, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2277.FeedItemTargetStatusEnum_FeedItemTargetStatus.UNSPECIFIED, valueOf: $2277.FeedItemTargetStatusEnum_FeedItemTargetStatus.valueOf, enumValues: $2277.FeedItemTargetStatusEnum_FeedItemTargetStatus.values)
+    ..e<$2277.FeedItemTargetTypeEnum_FeedItemTargetType>(3, _omitFieldNames ? '' : 'feedItemTargetType', $pb.PbFieldType.OE, defaultOrMaker: $2277.FeedItemTargetTypeEnum_FeedItemTargetType.UNSPECIFIED, valueOf: $2277.FeedItemTargetTypeEnum_FeedItemTargetType.valueOf, enumValues: $2277.FeedItemTargetTypeEnum_FeedItemTargetType.values)
+    ..aOM<$1868.KeywordInfo>(7, _omitFieldNames ? '' : 'keyword', subBuilder: $1868.KeywordInfo.create)
+    ..e<$2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice>(9, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice.UNSPECIFIED, valueOf: $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice.valueOf, enumValues: $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice.values)
+    ..aOM<$1868.AdScheduleInfo>(10, _omitFieldNames ? '' : 'adSchedule', subBuilder: $1868.AdScheduleInfo.create)
+    ..e<$2278.FeedItemTargetStatusEnum_FeedItemTargetStatus>(11, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2278.FeedItemTargetStatusEnum_FeedItemTargetStatus.UNSPECIFIED, valueOf: $2278.FeedItemTargetStatusEnum_FeedItemTargetStatus.valueOf, enumValues: $2278.FeedItemTargetStatusEnum_FeedItemTargetStatus.values)
     ..aOS(12, _omitFieldNames ? '' : 'feedItem')
     ..aInt64(13, _omitFieldNames ? '' : 'feedItemTargetId')
     ..aOS(14, _omitFieldNames ? '' : 'campaign')
@@ -148,9 +148,9 @@ class FeedItemTarget extends $pb.GeneratedMessage {
   /// Output only. The target type of this feed item target. This field is
   /// read-only.
   @$pb.TagNumber(3)
-  $2276.FeedItemTargetTypeEnum_FeedItemTargetType get feedItemTargetType => $_getN(1);
+  $2277.FeedItemTargetTypeEnum_FeedItemTargetType get feedItemTargetType => $_getN(1);
   @$pb.TagNumber(3)
-  set feedItemTargetType($2276.FeedItemTargetTypeEnum_FeedItemTargetType v) { setField(3, v); }
+  set feedItemTargetType($2277.FeedItemTargetTypeEnum_FeedItemTargetType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFeedItemTargetType() => $_has(1);
   @$pb.TagNumber(3)
@@ -158,21 +158,21 @@ class FeedItemTarget extends $pb.GeneratedMessage {
 
   /// Immutable. The targeted keyword.
   @$pb.TagNumber(7)
-  $1867.KeywordInfo get keyword => $_getN(2);
+  $1868.KeywordInfo get keyword => $_getN(2);
   @$pb.TagNumber(7)
-  set keyword($1867.KeywordInfo v) { setField(7, v); }
+  set keyword($1868.KeywordInfo v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasKeyword() => $_has(2);
   @$pb.TagNumber(7)
   void clearKeyword() => clearField(7);
   @$pb.TagNumber(7)
-  $1867.KeywordInfo ensureKeyword() => $_ensure(2);
+  $1868.KeywordInfo ensureKeyword() => $_ensure(2);
 
   /// Immutable. The targeted device.
   @$pb.TagNumber(9)
-  $2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice get device => $_getN(3);
+  $2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice get device => $_getN(3);
   @$pb.TagNumber(9)
-  set device($2273.FeedItemTargetDeviceEnum_FeedItemTargetDevice v) { setField(9, v); }
+  set device($2274.FeedItemTargetDeviceEnum_FeedItemTargetDevice v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDevice() => $_has(3);
   @$pb.TagNumber(9)
@@ -180,22 +180,22 @@ class FeedItemTarget extends $pb.GeneratedMessage {
 
   /// Immutable. The targeted schedule.
   @$pb.TagNumber(10)
-  $1867.AdScheduleInfo get adSchedule => $_getN(4);
+  $1868.AdScheduleInfo get adSchedule => $_getN(4);
   @$pb.TagNumber(10)
-  set adSchedule($1867.AdScheduleInfo v) { setField(10, v); }
+  set adSchedule($1868.AdScheduleInfo v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasAdSchedule() => $_has(4);
   @$pb.TagNumber(10)
   void clearAdSchedule() => clearField(10);
   @$pb.TagNumber(10)
-  $1867.AdScheduleInfo ensureAdSchedule() => $_ensure(4);
+  $1868.AdScheduleInfo ensureAdSchedule() => $_ensure(4);
 
   /// Output only. Status of the feed item target.
   /// This field is read-only.
   @$pb.TagNumber(11)
-  $2277.FeedItemTargetStatusEnum_FeedItemTargetStatus get status => $_getN(5);
+  $2278.FeedItemTargetStatusEnum_FeedItemTargetStatus get status => $_getN(5);
   @$pb.TagNumber(11)
-  set status($2277.FeedItemTargetStatusEnum_FeedItemTargetStatus v) { setField(11, v); }
+  set status($2278.FeedItemTargetStatusEnum_FeedItemTargetStatus v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(11)

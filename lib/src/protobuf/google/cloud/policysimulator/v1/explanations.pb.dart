@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../iam/v1/policy.pb.dart' as $463;
-import '../../../type/expr.pb.dart' as $4213;
+import '../../../type/expr.pb.dart' as $4214;
 import 'explanations.pbenum.dart';
 
 export 'explanations.pbenum.dart';
@@ -334,7 +334,7 @@ class BindingExplanation extends $pb.GeneratedMessage {
     HeuristicRelevance? rolePermissionRelevance,
     $core.Map<$core.String, BindingExplanation_AnnotatedMembership>? memberships,
     HeuristicRelevance? relevance,
-    $4213.Expr? condition,
+    $4214.Expr? condition,
   }) {
     final $result = create();
     if (access != null) {
@@ -371,7 +371,7 @@ class BindingExplanation extends $pb.GeneratedMessage {
     ..e<HeuristicRelevance>(4, _omitFieldNames ? '' : 'rolePermissionRelevance', $pb.PbFieldType.OE, defaultOrMaker: HeuristicRelevance.HEURISTIC_RELEVANCE_UNSPECIFIED, valueOf: HeuristicRelevance.valueOf, enumValues: HeuristicRelevance.values)
     ..m<$core.String, BindingExplanation_AnnotatedMembership>(5, _omitFieldNames ? '' : 'memberships', entryClassName: 'BindingExplanation.MembershipsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: BindingExplanation_AnnotatedMembership.create, valueDefaultOrMaker: BindingExplanation_AnnotatedMembership.getDefault, packageName: const $pb.PackageName('google.cloud.policysimulator.v1'))
     ..e<HeuristicRelevance>(6, _omitFieldNames ? '' : 'relevance', $pb.PbFieldType.OE, defaultOrMaker: HeuristicRelevance.HEURISTIC_RELEVANCE_UNSPECIFIED, valueOf: HeuristicRelevance.valueOf, enumValues: HeuristicRelevance.values)
-    ..aOM<$4213.Expr>(7, _omitFieldNames ? '' : 'condition', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(7, _omitFieldNames ? '' : 'condition', subBuilder: $4214.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -489,15 +489,15 @@ class BindingExplanation extends $pb.GeneratedMessage {
   ///  To learn about IAM Conditions, see
   ///  https://cloud.google.com/iam/docs/conditions-overview.
   @$pb.TagNumber(7)
-  $4213.Expr get condition => $_getN(6);
+  $4214.Expr get condition => $_getN(6);
   @$pb.TagNumber(7)
-  set condition($4213.Expr v) { setField(7, v); }
+  set condition($4214.Expr v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCondition() => $_has(6);
   @$pb.TagNumber(7)
   void clearCondition() => clearField(7);
   @$pb.TagNumber(7)
-  $4213.Expr ensureCondition() => $_ensure(6);
+  $4214.Expr ensureCondition() => $_ensure(6);
 }
 
 

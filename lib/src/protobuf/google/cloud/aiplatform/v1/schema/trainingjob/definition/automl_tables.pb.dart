@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'export_evaluated_data_items_config.pb.dart' as $4272;
+import 'export_evaluated_data_items_config.pb.dart' as $4273;
 
 /// A TrainingJob that trains and uploads an AutoML Tables Model.
 class AutoMlTables extends $pb.GeneratedMessage {
@@ -833,7 +833,7 @@ class AutoMlTablesInputs extends $pb.GeneratedMessage {
     $fixnum.Int64? trainBudgetMilliNodeHours,
     $core.bool? disableEarlyStopping,
     $core.String? weightColumnName,
-    $4272.ExportEvaluatedDataItemsConfig? exportEvaluatedDataItemsConfig,
+    $4273.ExportEvaluatedDataItemsConfig? exportEvaluatedDataItemsConfig,
     $core.Iterable<$core.String>? additionalExperiments,
   }) {
     final $result = create();
@@ -892,7 +892,7 @@ class AutoMlTablesInputs extends $pb.GeneratedMessage {
     ..aInt64(7, _omitFieldNames ? '' : 'trainBudgetMilliNodeHours')
     ..aOB(8, _omitFieldNames ? '' : 'disableEarlyStopping')
     ..aOS(9, _omitFieldNames ? '' : 'weightColumnName')
-    ..aOM<$4272.ExportEvaluatedDataItemsConfig>(10, _omitFieldNames ? '' : 'exportEvaluatedDataItemsConfig', subBuilder: $4272.ExportEvaluatedDataItemsConfig.create)
+    ..aOM<$4273.ExportEvaluatedDataItemsConfig>(10, _omitFieldNames ? '' : 'exportEvaluatedDataItemsConfig', subBuilder: $4273.ExportEvaluatedDataItemsConfig.create)
     ..pPS(11, _omitFieldNames ? '' : 'additionalExperiments')
     ..hasRequiredFields = false
   ;
@@ -1062,15 +1062,15 @@ class AutoMlTablesInputs extends $pb.GeneratedMessage {
   /// Configuration for exporting test set predictions to a BigQuery table. If
   /// this configuration is absent, then the export is not performed.
   @$pb.TagNumber(10)
-  $4272.ExportEvaluatedDataItemsConfig get exportEvaluatedDataItemsConfig => $_getN(9);
+  $4273.ExportEvaluatedDataItemsConfig get exportEvaluatedDataItemsConfig => $_getN(9);
   @$pb.TagNumber(10)
-  set exportEvaluatedDataItemsConfig($4272.ExportEvaluatedDataItemsConfig v) { setField(10, v); }
+  set exportEvaluatedDataItemsConfig($4273.ExportEvaluatedDataItemsConfig v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasExportEvaluatedDataItemsConfig() => $_has(9);
   @$pb.TagNumber(10)
   void clearExportEvaluatedDataItemsConfig() => clearField(10);
   @$pb.TagNumber(10)
-  $4272.ExportEvaluatedDataItemsConfig ensureExportEvaluatedDataItemsConfig() => $_ensure(9);
+  $4273.ExportEvaluatedDataItemsConfig ensureExportEvaluatedDataItemsConfig() => $_ensure(9);
 
   /// Additional experiment flags for the Tables training pipeline.
   @$pb.TagNumber(11)

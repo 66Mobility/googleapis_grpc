@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../grafeas/v1/attestation.pb.dart' as $4425;
+import '../../../../grafeas/v1/attestation.pb.dart' as $4427;
 import 'resources.pb.dart' as $741;
 import 'service.pbenum.dart';
 
@@ -583,7 +583,7 @@ class GetSystemPolicyRequest extends $pb.GeneratedMessage {
 class ValidateAttestationOccurrenceRequest extends $pb.GeneratedMessage {
   factory ValidateAttestationOccurrenceRequest({
     $core.String? attestor,
-    $4425.AttestationOccurrence? attestation,
+    $4427.AttestationOccurrence? attestation,
     $core.String? occurrenceNote,
     $core.String? occurrenceResourceUri,
   }) {
@@ -608,7 +608,7 @@ class ValidateAttestationOccurrenceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidateAttestationOccurrenceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.binaryauthorization.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'attestor')
-    ..aOM<$4425.AttestationOccurrence>(2, _omitFieldNames ? '' : 'attestation', subBuilder: $4425.AttestationOccurrence.create)
+    ..aOM<$4427.AttestationOccurrence>(2, _omitFieldNames ? '' : 'attestation', subBuilder: $4427.AttestationOccurrence.create)
     ..aOS(3, _omitFieldNames ? '' : 'occurrenceNote')
     ..aOS(4, _omitFieldNames ? '' : 'occurrenceResourceUri')
     ..hasRequiredFields = false
@@ -652,15 +652,15 @@ class ValidateAttestationOccurrenceRequest extends $pb.GeneratedMessage {
   /// an existing entity in Container Analysis. It must otherwise be a valid
   /// AttestationOccurrence.
   @$pb.TagNumber(2)
-  $4425.AttestationOccurrence get attestation => $_getN(1);
+  $4427.AttestationOccurrence get attestation => $_getN(1);
   @$pb.TagNumber(2)
-  set attestation($4425.AttestationOccurrence v) { setField(2, v); }
+  set attestation($4427.AttestationOccurrence v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAttestation() => $_has(1);
   @$pb.TagNumber(2)
   void clearAttestation() => clearField(2);
   @$pb.TagNumber(2)
-  $4425.AttestationOccurrence ensureAttestation() => $_ensure(1);
+  $4427.AttestationOccurrence ensureAttestation() => $_ensure(1);
 
   /// Required. The resource name of the [Note][grafeas.v1.Note] to which the
   /// containing [Occurrence][grafeas.v1.Occurrence] is associated.

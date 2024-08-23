@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'executions.pbenum.dart';
 
 export 'executions.pbenum.dart';
@@ -510,8 +510,8 @@ class Execution_StateError extends $pb.GeneratedMessage {
 class Execution extends $pb.GeneratedMessage {
   factory Execution({
     $core.String? name,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     Execution_State? state,
     $core.String? argument,
     $core.String? result,
@@ -520,7 +520,7 @@ class Execution extends $pb.GeneratedMessage {
     Execution_CallLogLevel? callLogLevel,
     Execution_Status? status,
     $core.Map<$core.String, $core.String>? labels,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     Execution_StateError? stateError,
   }) {
     final $result = create();
@@ -571,8 +571,8 @@ class Execution extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Execution', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.workflows.executions.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<Execution_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Execution_State.STATE_UNSPECIFIED, valueOf: Execution_State.valueOf, enumValues: Execution_State.values)
     ..aOS(5, _omitFieldNames ? '' : 'argument')
     ..aOS(6, _omitFieldNames ? '' : 'result')
@@ -581,7 +581,7 @@ class Execution extends $pb.GeneratedMessage {
     ..e<Execution_CallLogLevel>(9, _omitFieldNames ? '' : 'callLogLevel', $pb.PbFieldType.OE, defaultOrMaker: Execution_CallLogLevel.CALL_LOG_LEVEL_UNSPECIFIED, valueOf: Execution_CallLogLevel.valueOf, enumValues: Execution_CallLogLevel.values)
     ..aOM<Execution_Status>(10, _omitFieldNames ? '' : 'status', subBuilder: Execution_Status.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'Execution.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.workflows.executions.v1'))
-    ..aOM<$1737.Duration>(12, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(12, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aOM<Execution_StateError>(13, _omitFieldNames ? '' : 'stateError', subBuilder: Execution_StateError.create)
     ..hasRequiredFields = false
   ;
@@ -621,27 +621,27 @@ class Execution extends $pb.GeneratedMessage {
 
   /// Output only. Marks the beginning of execution.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Output only. Marks the end of execution, successful or not.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Output only. Current state of the execution.
   @$pb.TagNumber(4)
@@ -738,15 +738,15 @@ class Execution extends $pb.GeneratedMessage {
 
   /// Output only. Measures the duration of the execution.
   @$pb.TagNumber(12)
-  $1737.Duration get duration => $_getN(11);
+  $1738.Duration get duration => $_getN(11);
   @$pb.TagNumber(12)
-  set duration($1737.Duration v) { setField(12, v); }
+  set duration($1738.Duration v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDuration() => $_has(11);
   @$pb.TagNumber(12)
   void clearDuration() => clearField(12);
   @$pb.TagNumber(12)
-  $1737.Duration ensureDuration() => $_ensure(11);
+  $1738.Duration ensureDuration() => $_ensure(11);
 
   /// Output only. Error regarding the state of the Execution resource. For
   /// example, this field will have error details if the execution data is

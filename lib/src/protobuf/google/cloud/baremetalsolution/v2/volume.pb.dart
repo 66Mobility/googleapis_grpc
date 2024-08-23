@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4360;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4361;
 import 'volume.pbenum.dart';
 
 export 'volume.pbenum.dart';
@@ -147,10 +147,10 @@ class Volume extends $pb.GeneratedMessage {
     $fixnum.Int64? maxSizeGib,
     Volume_Protocol? protocol,
     $core.bool? bootVolume,
-    $4360.VolumePerformanceTier? performanceTier,
+    $4361.VolumePerformanceTier? performanceTier,
     $core.String? notes,
     Volume_WorkloadProfile? workloadProfile,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     $core.Iterable<$core.String>? instances,
     $core.bool? attached,
   }) {
@@ -252,10 +252,10 @@ class Volume extends $pb.GeneratedMessage {
     ..aInt64(17, _omitFieldNames ? '' : 'maxSizeGib')
     ..e<Volume_Protocol>(18, _omitFieldNames ? '' : 'protocol', $pb.PbFieldType.OE, defaultOrMaker: Volume_Protocol.PROTOCOL_UNSPECIFIED, valueOf: Volume_Protocol.valueOf, enumValues: Volume_Protocol.values)
     ..aOB(19, _omitFieldNames ? '' : 'bootVolume')
-    ..e<$4360.VolumePerformanceTier>(20, _omitFieldNames ? '' : 'performanceTier', $pb.PbFieldType.OE, defaultOrMaker: $4360.VolumePerformanceTier.VOLUME_PERFORMANCE_TIER_UNSPECIFIED, valueOf: $4360.VolumePerformanceTier.valueOf, enumValues: $4360.VolumePerformanceTier.values)
+    ..e<$4361.VolumePerformanceTier>(20, _omitFieldNames ? '' : 'performanceTier', $pb.PbFieldType.OE, defaultOrMaker: $4361.VolumePerformanceTier.VOLUME_PERFORMANCE_TIER_UNSPECIFIED, valueOf: $4361.VolumePerformanceTier.valueOf, enumValues: $4361.VolumePerformanceTier.values)
     ..aOS(21, _omitFieldNames ? '' : 'notes')
     ..e<Volume_WorkloadProfile>(22, _omitFieldNames ? '' : 'workloadProfile', $pb.PbFieldType.OE, defaultOrMaker: Volume_WorkloadProfile.WORKLOAD_PROFILE_UNSPECIFIED, valueOf: Volume_WorkloadProfile.valueOf, enumValues: Volume_WorkloadProfile.values)
-    ..aOM<$1775.Timestamp>(24, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(24, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..pPS(25, _omitFieldNames ? '' : 'instances')
     ..aOB(26, _omitFieldNames ? '' : 'attached')
     ..hasRequiredFields = false
@@ -471,9 +471,9 @@ class Volume extends $pb.GeneratedMessage {
   /// Immutable. Performance tier of the Volume.
   /// Default is SHARED.
   @$pb.TagNumber(20)
-  $4360.VolumePerformanceTier get performanceTier => $_getN(18);
+  $4361.VolumePerformanceTier get performanceTier => $_getN(18);
   @$pb.TagNumber(20)
-  set performanceTier($4360.VolumePerformanceTier v) { setField(20, v); }
+  set performanceTier($4361.VolumePerformanceTier v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasPerformanceTier() => $_has(18);
   @$pb.TagNumber(20)
@@ -503,15 +503,15 @@ class Volume extends $pb.GeneratedMessage {
   /// Output only. Time after which volume will be fully deleted.
   /// It is filled only for volumes in COOLOFF state.
   @$pb.TagNumber(24)
-  $1775.Timestamp get expireTime => $_getN(21);
+  $1776.Timestamp get expireTime => $_getN(21);
   @$pb.TagNumber(24)
-  set expireTime($1775.Timestamp v) { setField(24, v); }
+  set expireTime($1776.Timestamp v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasExpireTime() => $_has(21);
   @$pb.TagNumber(24)
   void clearExpireTime() => clearField(24);
   @$pb.TagNumber(24)
-  $1775.Timestamp ensureExpireTime() => $_ensure(21);
+  $1776.Timestamp ensureExpireTime() => $_ensure(21);
 
   /// Output only. Instances this Volume is attached to.
   /// This field is set only in Get requests.
@@ -755,7 +755,7 @@ class ListVolumesResponse extends $pb.GeneratedMessage {
 class UpdateVolumeRequest extends $pb.GeneratedMessage {
   factory UpdateVolumeRequest({
     Volume? volume,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (volume != null) {
@@ -772,7 +772,7 @@ class UpdateVolumeRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVolumeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.baremetalsolution.v2'), createEmptyInstance: create)
     ..aOM<Volume>(1, _omitFieldNames ? '' : 'volume', subBuilder: Volume.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -816,15 +816,15 @@ class UpdateVolumeRequest extends $pb.GeneratedMessage {
   /// The only currently supported fields are:
   ///   'labels'
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Message requesting rename of a server.

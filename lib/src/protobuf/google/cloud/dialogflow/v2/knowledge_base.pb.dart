@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 
 ///  A knowledge base represents a collection of knowledge documents that you
 ///  provide to Dialogflow. Your knowledge documents contain information that may
@@ -502,7 +502,7 @@ class DeleteKnowledgeBaseRequest extends $pb.GeneratedMessage {
 class UpdateKnowledgeBaseRequest extends $pb.GeneratedMessage {
   factory UpdateKnowledgeBaseRequest({
     KnowledgeBase? knowledgeBase,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (knowledgeBase != null) {
@@ -519,7 +519,7 @@ class UpdateKnowledgeBaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateKnowledgeBaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2'), createEmptyInstance: create)
     ..aOM<KnowledgeBase>(1, _omitFieldNames ? '' : 'knowledgeBase', subBuilder: KnowledgeBase.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -560,15 +560,15 @@ class UpdateKnowledgeBaseRequest extends $pb.GeneratedMessage {
   /// Currently, only `display_name` can be updated, an InvalidArgument will be
   /// returned for attempting to update other fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'common.pb.dart' as $1494;
 import 'streams_resources.pb.dart' as $1495;
 
@@ -367,7 +367,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
 /// Message for updating a Cluster.
 class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1494.Cluster? cluster,
     $core.String? requestId,
   }) {
@@ -388,7 +388,7 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1494.Cluster>(2, _omitFieldNames ? '' : 'cluster', subBuilder: $1494.Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -421,15 +421,15 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -894,7 +894,7 @@ class CreateStreamRequest extends $pb.GeneratedMessage {
 /// Message for updating a Stream.
 class UpdateStreamRequest extends $pb.GeneratedMessage {
   factory UpdateStreamRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1495.Stream? stream,
     $core.String? requestId,
   }) {
@@ -915,7 +915,7 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   factory UpdateStreamRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1495.Stream>(2, _omitFieldNames ? '' : 'stream', subBuilder: $1495.Stream.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -948,15 +948,15 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)
@@ -1272,7 +1272,7 @@ class GenerateStreamHlsTokenRequest extends $pb.GeneratedMessage {
 class GenerateStreamHlsTokenResponse extends $pb.GeneratedMessage {
   factory GenerateStreamHlsTokenResponse({
     $core.String? token,
-    $1775.Timestamp? expirationTime,
+    $1776.Timestamp? expirationTime,
   }) {
     final $result = create();
     if (token != null) {
@@ -1289,7 +1289,7 @@ class GenerateStreamHlsTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateStreamHlsTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'token')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1331,15 +1331,15 @@ class GenerateStreamHlsTokenResponse extends $pb.GeneratedMessage {
 
   /// The expiration time of the token.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expirationTime => $_getN(1);
+  $1776.Timestamp get expirationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expirationTime($1775.Timestamp v) { setField(2, v); }
+  set expirationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpirationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpirationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpirationTime() => $_ensure(1);
+  $1776.Timestamp ensureExpirationTime() => $_ensure(1);
 }
 
 /// Message for requesting list of Events.
@@ -1691,7 +1691,7 @@ class CreateEventRequest extends $pb.GeneratedMessage {
 /// Message for updating a Event.
 class UpdateEventRequest extends $pb.GeneratedMessage {
   factory UpdateEventRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1495.Event? event,
     $core.String? requestId,
   }) {
@@ -1712,7 +1712,7 @@ class UpdateEventRequest extends $pb.GeneratedMessage {
   factory UpdateEventRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEventRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1495.Event>(2, _omitFieldNames ? '' : 'event', subBuilder: $1495.Event.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1745,15 +1745,15 @@ class UpdateEventRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated.
   @$pb.TagNumber(2)
@@ -2218,7 +2218,7 @@ class CreateSeriesRequest extends $pb.GeneratedMessage {
 /// Message for updating a Series.
 class UpdateSeriesRequest extends $pb.GeneratedMessage {
   factory UpdateSeriesRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1495.Series? series,
     $core.String? requestId,
   }) {
@@ -2239,7 +2239,7 @@ class UpdateSeriesRequest extends $pb.GeneratedMessage {
   factory UpdateSeriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSeriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1495.Series>(2, _omitFieldNames ? '' : 'series', subBuilder: $1495.Series.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -2272,15 +2272,15 @@ class UpdateSeriesRequest extends $pb.GeneratedMessage {
   /// if it is in the mask. If the user does not provide a mask then all fields
   /// will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'attack_exposure.pbenum.dart';
 
 export 'attack_exposure.pbenum.dart';
@@ -22,7 +22,7 @@ export 'attack_exposure.pbenum.dart';
 class AttackExposure extends $pb.GeneratedMessage {
   factory AttackExposure({
     $core.double? score,
-    $1775.Timestamp? latestCalculationTime,
+    $1776.Timestamp? latestCalculationTime,
     $core.String? attackExposureResult,
     AttackExposure_State? state,
     $core.int? exposedHighValueResourcesCount,
@@ -59,7 +59,7 @@ class AttackExposure extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AttackExposure', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OD)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'latestCalculationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'latestCalculationTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'attackExposureResult')
     ..e<AttackExposure_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AttackExposure_State.STATE_UNSPECIFIED, valueOf: AttackExposure_State.valueOf, enumValues: AttackExposure_State.values)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'exposedHighValueResourcesCount', $pb.PbFieldType.O3)
@@ -103,15 +103,15 @@ class AttackExposure extends $pb.GeneratedMessage {
 
   /// The most recent time the attack exposure was updated on this finding.
   @$pb.TagNumber(2)
-  $1775.Timestamp get latestCalculationTime => $_getN(1);
+  $1776.Timestamp get latestCalculationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set latestCalculationTime($1775.Timestamp v) { setField(2, v); }
+  set latestCalculationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLatestCalculationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLatestCalculationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLatestCalculationTime() => $_ensure(1);
+  $1776.Timestamp ensureLatestCalculationTime() => $_ensure(1);
 
   /// The resource name of the attack path simulation result that contains the
   /// details regarding this attack exposure score.

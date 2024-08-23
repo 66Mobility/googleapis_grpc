@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'resources.pb.dart' as $1092;
 import 'resources.pbenum.dart' as $1092;
 
@@ -200,7 +200,7 @@ class DeleteDeviceRegistryRequest extends $pb.GeneratedMessage {
 class UpdateDeviceRegistryRequest extends $pb.GeneratedMessage {
   factory UpdateDeviceRegistryRequest({
     $1092.DeviceRegistry? deviceRegistry,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (deviceRegistry != null) {
@@ -217,7 +217,7 @@ class UpdateDeviceRegistryRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDeviceRegistryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iot.v1'), createEmptyInstance: create)
     ..aOM<$1092.DeviceRegistry>(1, _omitFieldNames ? '' : 'deviceRegistry', subBuilder: $1092.DeviceRegistry.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -262,15 +262,15 @@ class UpdateDeviceRegistryRequest extends $pb.GeneratedMessage {
   /// Mutable top-level fields: `event_notification_config`, `http_config`,
   /// `mqtt_config`, and `state_notification_config`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for `ListDeviceRegistries`.
@@ -501,7 +501,7 @@ class CreateDeviceRequest extends $pb.GeneratedMessage {
 class GetDeviceRequest extends $pb.GeneratedMessage {
   factory GetDeviceRequest({
     $core.String? name,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -518,7 +518,7 @@ class GetDeviceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDeviceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iot.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -559,22 +559,22 @@ class GetDeviceRequest extends $pb.GeneratedMessage {
   /// field mask is unset or empty, all fields are returned. Fields have to be
   /// provided in snake_case format, for example: `last_heartbeat_time`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get fieldMask => $_getN(1);
+  $2210.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($2209.FieldMask v) { setField(2, v); }
+  set fieldMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureFieldMask() => $_ensure(1);
+  $2210.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
 /// Request for `UpdateDevice`.
 class UpdateDeviceRequest extends $pb.GeneratedMessage {
   factory UpdateDeviceRequest({
     $1092.Device? device,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (device != null) {
@@ -591,7 +591,7 @@ class UpdateDeviceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDeviceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iot.v1'), createEmptyInstance: create)
     ..aOM<$1092.Device>(2, _omitFieldNames ? '' : 'device', subBuilder: $1092.Device.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -636,15 +636,15 @@ class UpdateDeviceRequest extends $pb.GeneratedMessage {
   /// are immutable or only set by the server.
   /// Mutable top-level fields: `credentials`, `blocked`, and `metadata`
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for `DeleteDevice`.
@@ -707,7 +707,7 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.Iterable<$fixnum.Int64>? deviceNumIds,
     $core.Iterable<$core.String>? deviceIds,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
     GatewayListOptions? gatewayListOptions,
     $core.int? pageSize,
     $core.String? pageToken,
@@ -744,7 +744,7 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..p<$fixnum.Int64>(2, _omitFieldNames ? '' : 'deviceNumIds', $pb.PbFieldType.KU6)
     ..pPS(3, _omitFieldNames ? '' : 'deviceIds')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOM<GatewayListOptions>(6, _omitFieldNames ? '' : 'gatewayListOptions', subBuilder: GatewayListOptions.create)
     ..a<$core.int>(100, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(101, _omitFieldNames ? '' : 'pageToken')
@@ -798,15 +798,15 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
   /// other fields specified in snake_case format, for example:
   /// `last_heartbeat_time`.
   @$pb.TagNumber(4)
-  $2209.FieldMask get fieldMask => $_getN(3);
+  $2210.FieldMask get fieldMask => $_getN(3);
   @$pb.TagNumber(4)
-  set fieldMask($2209.FieldMask v) { setField(4, v); }
+  set fieldMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFieldMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearFieldMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureFieldMask() => $_ensure(3);
+  $2210.FieldMask ensureFieldMask() => $_ensure(3);
 
   /// Options related to gateways.
   @$pb.TagNumber(6)

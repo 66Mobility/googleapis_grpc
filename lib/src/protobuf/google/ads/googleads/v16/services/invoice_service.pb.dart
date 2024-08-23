@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/month_of_year.pbenum.dart' as $2590;
-import '../resources/invoice.pb.dart' as $3228;
+import '../enums/month_of_year.pbenum.dart' as $2591;
+import '../resources/invoice.pb.dart' as $3229;
 
 /// Request message for fetching the invoices of a given billing setup that were
 /// issued during a given month.
@@ -23,7 +23,7 @@ class ListInvoicesRequest extends $pb.GeneratedMessage {
     $core.String? customerId,
     $core.String? billingSetup,
     $core.String? issueYear,
-    $2590.MonthOfYearEnum_MonthOfYear? issueMonth,
+    $2591.MonthOfYearEnum_MonthOfYear? issueMonth,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -48,7 +48,7 @@ class ListInvoicesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..aOS(2, _omitFieldNames ? '' : 'billingSetup')
     ..aOS(3, _omitFieldNames ? '' : 'issueYear')
-    ..e<$2590.MonthOfYearEnum_MonthOfYear>(4, _omitFieldNames ? '' : 'issueMonth', $pb.PbFieldType.OE, defaultOrMaker: $2590.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $2590.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $2590.MonthOfYearEnum_MonthOfYear.values)
+    ..e<$2591.MonthOfYearEnum_MonthOfYear>(4, _omitFieldNames ? '' : 'issueMonth', $pb.PbFieldType.OE, defaultOrMaker: $2591.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $2591.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $2591.MonthOfYearEnum_MonthOfYear.values)
     ..hasRequiredFields = false
   ;
 
@@ -108,9 +108,9 @@ class ListInvoicesRequest extends $pb.GeneratedMessage {
 
   /// Required. The issue month to retrieve invoices.
   @$pb.TagNumber(4)
-  $2590.MonthOfYearEnum_MonthOfYear get issueMonth => $_getN(3);
+  $2591.MonthOfYearEnum_MonthOfYear get issueMonth => $_getN(3);
   @$pb.TagNumber(4)
-  set issueMonth($2590.MonthOfYearEnum_MonthOfYear v) { setField(4, v); }
+  set issueMonth($2591.MonthOfYearEnum_MonthOfYear v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasIssueMonth() => $_has(3);
   @$pb.TagNumber(4)
@@ -121,7 +121,7 @@ class ListInvoicesRequest extends $pb.GeneratedMessage {
 /// [InvoiceService.ListInvoices][google.ads.googleads.v16.services.InvoiceService.ListInvoices].
 class ListInvoicesResponse extends $pb.GeneratedMessage {
   factory ListInvoicesResponse({
-    $core.Iterable<$3228.Invoice>? invoices,
+    $core.Iterable<$3229.Invoice>? invoices,
   }) {
     final $result = create();
     if (invoices != null) {
@@ -134,7 +134,7 @@ class ListInvoicesResponse extends $pb.GeneratedMessage {
   factory ListInvoicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListInvoicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..pc<$3228.Invoice>(1, _omitFieldNames ? '' : 'invoices', $pb.PbFieldType.PM, subBuilder: $3228.Invoice.create)
+    ..pc<$3229.Invoice>(1, _omitFieldNames ? '' : 'invoices', $pb.PbFieldType.PM, subBuilder: $3229.Invoice.create)
     ..hasRequiredFields = false
   ;
 
@@ -161,7 +161,7 @@ class ListInvoicesResponse extends $pb.GeneratedMessage {
 
   /// The list of invoices that match the billing setup and time period.
   @$pb.TagNumber(1)
-  $core.List<$3228.Invoice> get invoices => $_getList(0);
+  $core.List<$3229.Invoice> get invoices => $_getList(0);
 }
 
 

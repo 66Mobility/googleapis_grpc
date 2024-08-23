@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// The information required to auto-retrieve an SMS.
 class AutoRetrievalInfo extends $pb.GeneratedMessage {
@@ -355,7 +355,7 @@ class FinalizeMfaPhoneRequestInfo extends $pb.GeneratedMessage {
 class FinalizeMfaPhoneResponseInfo extends $pb.GeneratedMessage {
   factory FinalizeMfaPhoneResponseInfo({
     $core.String? androidVerificationProof,
-    $1775.Timestamp? androidVerificationProofExpireTime,
+    $1776.Timestamp? androidVerificationProofExpireTime,
     $core.String? phoneNumber,
   }) {
     final $result = create();
@@ -376,7 +376,7 @@ class FinalizeMfaPhoneResponseInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FinalizeMfaPhoneResponseInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.identitytoolkit.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'androidVerificationProof')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'androidVerificationProofExpireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'androidVerificationProofExpireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'phoneNumber')
     ..hasRequiredFields = false
   ;
@@ -414,15 +414,15 @@ class FinalizeMfaPhoneResponseInfo extends $pb.GeneratedMessage {
 
   /// Android only. Expiration time of verification proof in seconds.
   @$pb.TagNumber(2)
-  $1775.Timestamp get androidVerificationProofExpireTime => $_getN(1);
+  $1776.Timestamp get androidVerificationProofExpireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set androidVerificationProofExpireTime($1775.Timestamp v) { setField(2, v); }
+  set androidVerificationProofExpireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAndroidVerificationProofExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearAndroidVerificationProofExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureAndroidVerificationProofExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureAndroidVerificationProofExpireTime() => $_ensure(1);
 
   /// For Android verification proof.
   @$pb.TagNumber(3)

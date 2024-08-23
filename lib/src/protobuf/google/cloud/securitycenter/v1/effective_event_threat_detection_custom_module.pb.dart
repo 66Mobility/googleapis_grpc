@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'effective_event_threat_detection_custom_module.pbenum.dart';
 
 export 'effective_event_threat_detection_custom_module.pbenum.dart';
@@ -30,7 +30,7 @@ export 'effective_event_threat_detection_custom_module.pbenum.dart';
 class EffectiveEventThreatDetectionCustomModule extends $pb.GeneratedMessage {
   factory EffectiveEventThreatDetectionCustomModule({
     $core.String? name,
-    $1734.Struct? config,
+    $1735.Struct? config,
     EffectiveEventThreatDetectionCustomModule_EnablementState? enablementState,
     $core.String? type,
     $core.String? displayName,
@@ -63,7 +63,7 @@ class EffectiveEventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EffectiveEventThreatDetectionCustomModule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycenter.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1735.Struct.create)
     ..e<EffectiveEventThreatDetectionCustomModule_EnablementState>(3, _omitFieldNames ? '' : 'enablementState', $pb.PbFieldType.OE, defaultOrMaker: EffectiveEventThreatDetectionCustomModule_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: EffectiveEventThreatDetectionCustomModule_EnablementState.valueOf, enumValues: EffectiveEventThreatDetectionCustomModule_EnablementState.values)
     ..aOS(4, _omitFieldNames ? '' : 'type')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
@@ -110,15 +110,15 @@ class EffectiveEventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   /// Output only. Config for the effective module.
   @$pb.TagNumber(2)
-  $1734.Struct get config => $_getN(1);
+  $1735.Struct get config => $_getN(1);
   @$pb.TagNumber(2)
-  set config($1734.Struct v) { setField(2, v); }
+  set config($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureConfig() => $_ensure(1);
+  $1735.Struct ensureConfig() => $_ensure(1);
 
   /// Output only. The effective state of enablement for the module at the given
   /// level of the hierarchy.

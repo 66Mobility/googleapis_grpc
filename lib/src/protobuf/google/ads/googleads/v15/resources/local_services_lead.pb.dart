@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/local_services_lead_status.pbenum.dart' as $2313;
-import '../enums/local_services_lead_type.pbenum.dart' as $2312;
+import '../enums/local_services_lead_status.pbenum.dart' as $2314;
+import '../enums/local_services_lead_type.pbenum.dart' as $2313;
 
 /// Data from Local Services Lead.
 /// Contains details of Lead which is generated when user calls, messages or
@@ -28,8 +28,8 @@ class LocalServicesLead extends $pb.GeneratedMessage {
     $core.String? categoryId,
     $core.String? serviceId,
     ContactDetails? contactDetails,
-    $2312.LocalServicesLeadTypeEnum_LeadType? leadType,
-    $2313.LocalServicesLeadStatusEnum_LeadStatus? leadStatus,
+    $2313.LocalServicesLeadTypeEnum_LeadType? leadType,
+    $2314.LocalServicesLeadStatusEnum_LeadStatus? leadStatus,
     $core.String? creationDateTime,
     $core.String? locale,
     Note? note,
@@ -81,8 +81,8 @@ class LocalServicesLead extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'categoryId')
     ..aOS(4, _omitFieldNames ? '' : 'serviceId')
     ..aOM<ContactDetails>(5, _omitFieldNames ? '' : 'contactDetails', subBuilder: ContactDetails.create)
-    ..e<$2312.LocalServicesLeadTypeEnum_LeadType>(6, _omitFieldNames ? '' : 'leadType', $pb.PbFieldType.OE, defaultOrMaker: $2312.LocalServicesLeadTypeEnum_LeadType.UNSPECIFIED, valueOf: $2312.LocalServicesLeadTypeEnum_LeadType.valueOf, enumValues: $2312.LocalServicesLeadTypeEnum_LeadType.values)
-    ..e<$2313.LocalServicesLeadStatusEnum_LeadStatus>(7, _omitFieldNames ? '' : 'leadStatus', $pb.PbFieldType.OE, defaultOrMaker: $2313.LocalServicesLeadStatusEnum_LeadStatus.UNSPECIFIED, valueOf: $2313.LocalServicesLeadStatusEnum_LeadStatus.valueOf, enumValues: $2313.LocalServicesLeadStatusEnum_LeadStatus.values)
+    ..e<$2313.LocalServicesLeadTypeEnum_LeadType>(6, _omitFieldNames ? '' : 'leadType', $pb.PbFieldType.OE, defaultOrMaker: $2313.LocalServicesLeadTypeEnum_LeadType.UNSPECIFIED, valueOf: $2313.LocalServicesLeadTypeEnum_LeadType.valueOf, enumValues: $2313.LocalServicesLeadTypeEnum_LeadType.values)
+    ..e<$2314.LocalServicesLeadStatusEnum_LeadStatus>(7, _omitFieldNames ? '' : 'leadStatus', $pb.PbFieldType.OE, defaultOrMaker: $2314.LocalServicesLeadStatusEnum_LeadStatus.UNSPECIFIED, valueOf: $2314.LocalServicesLeadStatusEnum_LeadStatus.valueOf, enumValues: $2314.LocalServicesLeadStatusEnum_LeadStatus.values)
     ..aOS(8, _omitFieldNames ? '' : 'creationDateTime')
     ..aOS(9, _omitFieldNames ? '' : 'locale')
     ..aOM<Note>(10, _omitFieldNames ? '' : 'note', subBuilder: Note.create)
@@ -174,9 +174,9 @@ class LocalServicesLead extends $pb.GeneratedMessage {
 
   /// Output only. Type of Local Services lead: phone, message, booking, etc.
   @$pb.TagNumber(6)
-  $2312.LocalServicesLeadTypeEnum_LeadType get leadType => $_getN(5);
+  $2313.LocalServicesLeadTypeEnum_LeadType get leadType => $_getN(5);
   @$pb.TagNumber(6)
-  set leadType($2312.LocalServicesLeadTypeEnum_LeadType v) { setField(6, v); }
+  set leadType($2313.LocalServicesLeadTypeEnum_LeadType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLeadType() => $_has(5);
   @$pb.TagNumber(6)
@@ -184,9 +184,9 @@ class LocalServicesLead extends $pb.GeneratedMessage {
 
   /// Output only. Current status of lead.
   @$pb.TagNumber(7)
-  $2313.LocalServicesLeadStatusEnum_LeadStatus get leadStatus => $_getN(6);
+  $2314.LocalServicesLeadStatusEnum_LeadStatus get leadStatus => $_getN(6);
   @$pb.TagNumber(7)
-  set leadStatus($2313.LocalServicesLeadStatusEnum_LeadStatus v) { setField(7, v); }
+  set leadStatus($2314.LocalServicesLeadStatusEnum_LeadStatus v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLeadStatus() => $_has(6);
   @$pb.TagNumber(7)

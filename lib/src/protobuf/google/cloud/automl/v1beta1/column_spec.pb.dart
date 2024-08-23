@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'data_stats.pb.dart' as $4344;
-import 'data_types.pb.dart' as $4343;
+import 'data_stats.pb.dart' as $4345;
+import 'data_types.pb.dart' as $4344;
 
 /// Identifies the table's column, and its correlation with the column this
 /// ColumnSpec describes.
 class ColumnSpec_CorrelatedColumn extends $pb.GeneratedMessage {
   factory ColumnSpec_CorrelatedColumn({
     $core.String? columnSpecId,
-    $4344.CorrelationStats? correlationStats,
+    $4345.CorrelationStats? correlationStats,
   }) {
     final $result = create();
     if (columnSpecId != null) {
@@ -38,7 +38,7 @@ class ColumnSpec_CorrelatedColumn extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnSpec.CorrelatedColumn', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'columnSpecId')
-    ..aOM<$4344.CorrelationStats>(2, _omitFieldNames ? '' : 'correlationStats', subBuilder: $4344.CorrelationStats.create)
+    ..aOM<$4345.CorrelationStats>(2, _omitFieldNames ? '' : 'correlationStats', subBuilder: $4345.CorrelationStats.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,15 +76,15 @@ class ColumnSpec_CorrelatedColumn extends $pb.GeneratedMessage {
 
   /// Correlation between this and the in-context column.
   @$pb.TagNumber(2)
-  $4344.CorrelationStats get correlationStats => $_getN(1);
+  $4345.CorrelationStats get correlationStats => $_getN(1);
   @$pb.TagNumber(2)
-  set correlationStats($4344.CorrelationStats v) { setField(2, v); }
+  set correlationStats($4345.CorrelationStats v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCorrelationStats() => $_has(1);
   @$pb.TagNumber(2)
   void clearCorrelationStats() => clearField(2);
   @$pb.TagNumber(2)
-  $4344.CorrelationStats ensureCorrelationStats() => $_ensure(1);
+  $4345.CorrelationStats ensureCorrelationStats() => $_ensure(1);
 }
 
 /// A representation of a column in a relational table. When listing them, column specs are returned in the same order in which they were
@@ -94,9 +94,9 @@ class ColumnSpec_CorrelatedColumn extends $pb.GeneratedMessage {
 class ColumnSpec extends $pb.GeneratedMessage {
   factory ColumnSpec({
     $core.String? name,
-    $4343.DataType? dataType,
+    $4344.DataType? dataType,
     $core.String? displayName,
-    $4344.DataStats? dataStats,
+    $4345.DataStats? dataStats,
     $core.Iterable<ColumnSpec_CorrelatedColumn>? topCorrelatedColumns,
     $core.String? etag,
   }) {
@@ -127,9 +127,9 @@ class ColumnSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4343.DataType>(2, _omitFieldNames ? '' : 'dataType', subBuilder: $4343.DataType.create)
+    ..aOM<$4344.DataType>(2, _omitFieldNames ? '' : 'dataType', subBuilder: $4344.DataType.create)
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4344.DataStats>(4, _omitFieldNames ? '' : 'dataStats', subBuilder: $4344.DataStats.create)
+    ..aOM<$4345.DataStats>(4, _omitFieldNames ? '' : 'dataStats', subBuilder: $4345.DataStats.create)
     ..pc<ColumnSpec_CorrelatedColumn>(5, _omitFieldNames ? '' : 'topCorrelatedColumns', $pb.PbFieldType.PM, subBuilder: ColumnSpec_CorrelatedColumn.create)
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
@@ -171,15 +171,15 @@ class ColumnSpec extends $pb.GeneratedMessage {
 
   /// The data type of elements stored in the column.
   @$pb.TagNumber(2)
-  $4343.DataType get dataType => $_getN(1);
+  $4344.DataType get dataType => $_getN(1);
   @$pb.TagNumber(2)
-  set dataType($4343.DataType v) { setField(2, v); }
+  set dataType($4344.DataType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDataType() => $_has(1);
   @$pb.TagNumber(2)
   void clearDataType() => clearField(2);
   @$pb.TagNumber(2)
-  $4343.DataType ensureDataType() => $_ensure(1);
+  $4344.DataType ensureDataType() => $_ensure(1);
 
   /// Output only. The name of the column to show in the interface. The name can
   /// be up to 100 characters long and can consist only of ASCII Latin letters
@@ -199,15 +199,15 @@ class ColumnSpec extends $pb.GeneratedMessage {
   /// Dataset.tables_dataset_metadata.stats_update_time field
   /// for the timestamp at which these stats were last updated.
   @$pb.TagNumber(4)
-  $4344.DataStats get dataStats => $_getN(3);
+  $4345.DataStats get dataStats => $_getN(3);
   @$pb.TagNumber(4)
-  set dataStats($4344.DataStats v) { setField(4, v); }
+  set dataStats($4345.DataStats v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDataStats() => $_has(3);
   @$pb.TagNumber(4)
   void clearDataStats() => clearField(4);
   @$pb.TagNumber(4)
-  $4344.DataStats ensureDataStats() => $_ensure(3);
+  $4345.DataStats ensureDataStats() => $_ensure(3);
 
   /// Deprecated.
   @$pb.TagNumber(5)

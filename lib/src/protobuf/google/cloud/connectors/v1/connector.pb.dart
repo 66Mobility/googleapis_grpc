@@ -13,22 +13,22 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4434;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4436;
 
 /// Connectors indicates a specific connector type, e.x. Salesforce, SAP etc.
 class Connector extends $pb.GeneratedMessage {
   factory Connector({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? documentationUri,
     $core.String? externalUri,
     $core.String? description,
     $core.String? webAssetsLocation,
     $core.String? displayName,
-    $4434.LaunchStage? launchStage,
+    $4436.LaunchStage? launchStage,
   }) {
     final $result = create();
     if (name != null) {
@@ -69,15 +69,15 @@ class Connector extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Connector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.connectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Connector.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.connectors.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'documentationUri')
     ..aOS(7, _omitFieldNames ? '' : 'externalUri')
     ..aOS(8, _omitFieldNames ? '' : 'description')
     ..aOS(9, _omitFieldNames ? '' : 'webAssetsLocation')
     ..aOS(10, _omitFieldNames ? '' : 'displayName')
-    ..e<$4434.LaunchStage>(11, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $4434.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $4434.LaunchStage.valueOf, enumValues: $4434.LaunchStage.values)
+    ..e<$4436.LaunchStage>(11, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $4436.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $4436.LaunchStage.valueOf, enumValues: $4436.LaunchStage.values)
     ..hasRequiredFields = false
   ;
 
@@ -117,27 +117,27 @@ class Connector extends $pb.GeneratedMessage {
 
   /// Output only. Created time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Updated time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. Resource labels to represent user-provided metadata.
   /// Refer to cloud documentation on labels for more details.
@@ -197,9 +197,9 @@ class Connector extends $pb.GeneratedMessage {
 
   /// Output only. Flag to mark the version indicating the launch stage.
   @$pb.TagNumber(11)
-  $4434.LaunchStage get launchStage => $_getN(9);
+  $4436.LaunchStage get launchStage => $_getN(9);
   @$pb.TagNumber(11)
-  set launchStage($4434.LaunchStage v) { setField(11, v); }
+  set launchStage($4436.LaunchStage v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasLaunchStage() => $_has(9);
   @$pb.TagNumber(11)

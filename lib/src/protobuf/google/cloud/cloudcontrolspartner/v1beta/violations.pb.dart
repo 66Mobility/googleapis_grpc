@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/interval.pb.dart' as $4257;
 import 'violations.pbenum.dart';
 
 export 'violations.pbenum.dart';
@@ -306,9 +306,9 @@ class Violation extends $pb.GeneratedMessage {
   factory Violation({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? beginTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? resolveTime,
+    $1776.Timestamp? beginTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? resolveTime,
     $core.String? category,
     Violation_State? state,
     $core.String? nonCompliantOrgPolicy,
@@ -355,9 +355,9 @@ class Violation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Violation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.cloudcontrolspartner.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'beginTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'resolveTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'beginTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'resolveTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'category')
     ..e<Violation_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Violation_State.STATE_UNSPECIFIED, valueOf: Violation_State.valueOf, enumValues: Violation_State.values)
     ..aOS(8, _omitFieldNames ? '' : 'nonCompliantOrgPolicy')
@@ -411,40 +411,40 @@ class Violation extends $pb.GeneratedMessage {
 
   /// Output only. Time of the event which triggered the Violation.
   @$pb.TagNumber(3)
-  $1775.Timestamp get beginTime => $_getN(2);
+  $1776.Timestamp get beginTime => $_getN(2);
   @$pb.TagNumber(3)
-  set beginTime($1775.Timestamp v) { setField(3, v); }
+  set beginTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBeginTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearBeginTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureBeginTime() => $_ensure(2);
+  $1776.Timestamp ensureBeginTime() => $_ensure(2);
 
   /// Output only. The last time when the Violation record was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Time of the event which fixed the Violation.
   /// If the violation is ACTIVE this will be empty.
   @$pb.TagNumber(5)
-  $1775.Timestamp get resolveTime => $_getN(4);
+  $1776.Timestamp get resolveTime => $_getN(4);
   @$pb.TagNumber(5)
-  set resolveTime($1775.Timestamp v) { setField(5, v); }
+  set resolveTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResolveTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearResolveTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureResolveTime() => $_ensure(4);
+  $1776.Timestamp ensureResolveTime() => $_ensure(4);
 
   /// Output only. Category under which this violation is mapped.
   /// e.g. Location, Service Usage, Access, Encryption, etc.
@@ -512,7 +512,7 @@ class ListViolationsRequest extends $pb.GeneratedMessage {
     $core.String? pageToken,
     $core.String? filter,
     $core.String? orderBy,
-    $4256.Interval? interval,
+    $4257.Interval? interval,
   }) {
     final $result = create();
     if (parent != null) {
@@ -545,7 +545,7 @@ class ListViolationsRequest extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'filter')
     ..aOS(5, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$4256.Interval>(6, _omitFieldNames ? '' : 'interval', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(6, _omitFieldNames ? '' : 'interval', subBuilder: $4257.Interval.create)
     ..hasRequiredFields = false
   ;
 
@@ -628,15 +628,15 @@ class ListViolationsRequest extends $pb.GeneratedMessage {
   /// Optional. Specifies the interval for retrieving violations.
   /// if unspecified, all violations will be returned.
   @$pb.TagNumber(6)
-  $4256.Interval get interval => $_getN(5);
+  $4257.Interval get interval => $_getN(5);
   @$pb.TagNumber(6)
-  set interval($4256.Interval v) { setField(6, v); }
+  set interval($4257.Interval v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasInterval() => $_has(5);
   @$pb.TagNumber(6)
   void clearInterval() => clearField(6);
   @$pb.TagNumber(6)
-  $4256.Interval ensureInterval() => $_ensure(5);
+  $4257.Interval ensureInterval() => $_ensure(5);
 }
 
 /// Response message for list customer violation requests

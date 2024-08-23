@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/conversion_custom_variable_cardinality.pbenum.dart' as $4069;
-import '../enums/conversion_custom_variable_family.pbenum.dart' as $4068;
-import '../enums/conversion_custom_variable_status.pbenum.dart' as $4067;
-import '../enums/floodlight_variable_data_type.pbenum.dart' as $4071;
-import '../enums/floodlight_variable_type.pbenum.dart' as $4070;
+import '../enums/conversion_custom_variable_cardinality.pbenum.dart' as $4070;
+import '../enums/conversion_custom_variable_family.pbenum.dart' as $4069;
+import '../enums/conversion_custom_variable_status.pbenum.dart' as $4068;
+import '../enums/floodlight_variable_data_type.pbenum.dart' as $4072;
+import '../enums/floodlight_variable_type.pbenum.dart' as $4071;
 
 /// Information for Search Ads 360 Floodlight Conversion Custom Variables.
 class ConversionCustomVariable_FloodlightConversionCustomVariableInfo extends $pb.GeneratedMessage {
   factory ConversionCustomVariable_FloodlightConversionCustomVariableInfo({
-    $4070.FloodlightVariableTypeEnum_FloodlightVariableType? floodlightVariableType,
-    $4071.FloodlightVariableDataTypeEnum_FloodlightVariableDataType? floodlightVariableDataType,
+    $4071.FloodlightVariableTypeEnum_FloodlightVariableType? floodlightVariableType,
+    $4072.FloodlightVariableDataTypeEnum_FloodlightVariableDataType? floodlightVariableDataType,
   }) {
     final $result = create();
     if (floodlightVariableType != null) {
@@ -40,8 +40,8 @@ class ConversionCustomVariable_FloodlightConversionCustomVariableInfo extends $p
   factory ConversionCustomVariable_FloodlightConversionCustomVariableInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionCustomVariable.FloodlightConversionCustomVariableInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
-    ..e<$4070.FloodlightVariableTypeEnum_FloodlightVariableType>(1, _omitFieldNames ? '' : 'floodlightVariableType', $pb.PbFieldType.OE, defaultOrMaker: $4070.FloodlightVariableTypeEnum_FloodlightVariableType.UNSPECIFIED, valueOf: $4070.FloodlightVariableTypeEnum_FloodlightVariableType.valueOf, enumValues: $4070.FloodlightVariableTypeEnum_FloodlightVariableType.values)
-    ..e<$4071.FloodlightVariableDataTypeEnum_FloodlightVariableDataType>(2, _omitFieldNames ? '' : 'floodlightVariableDataType', $pb.PbFieldType.OE, defaultOrMaker: $4071.FloodlightVariableDataTypeEnum_FloodlightVariableDataType.UNSPECIFIED, valueOf: $4071.FloodlightVariableDataTypeEnum_FloodlightVariableDataType.valueOf, enumValues: $4071.FloodlightVariableDataTypeEnum_FloodlightVariableDataType.values)
+    ..e<$4071.FloodlightVariableTypeEnum_FloodlightVariableType>(1, _omitFieldNames ? '' : 'floodlightVariableType', $pb.PbFieldType.OE, defaultOrMaker: $4071.FloodlightVariableTypeEnum_FloodlightVariableType.UNSPECIFIED, valueOf: $4071.FloodlightVariableTypeEnum_FloodlightVariableType.valueOf, enumValues: $4071.FloodlightVariableTypeEnum_FloodlightVariableType.values)
+    ..e<$4072.FloodlightVariableDataTypeEnum_FloodlightVariableDataType>(2, _omitFieldNames ? '' : 'floodlightVariableDataType', $pb.PbFieldType.OE, defaultOrMaker: $4072.FloodlightVariableDataTypeEnum_FloodlightVariableDataType.UNSPECIFIED, valueOf: $4072.FloodlightVariableDataTypeEnum_FloodlightVariableDataType.valueOf, enumValues: $4072.FloodlightVariableDataTypeEnum_FloodlightVariableDataType.values)
     ..hasRequiredFields = false
   ;
 
@@ -68,9 +68,9 @@ class ConversionCustomVariable_FloodlightConversionCustomVariableInfo extends $p
 
   /// Output only. Floodlight variable type defined in Search Ads 360.
   @$pb.TagNumber(1)
-  $4070.FloodlightVariableTypeEnum_FloodlightVariableType get floodlightVariableType => $_getN(0);
+  $4071.FloodlightVariableTypeEnum_FloodlightVariableType get floodlightVariableType => $_getN(0);
   @$pb.TagNumber(1)
-  set floodlightVariableType($4070.FloodlightVariableTypeEnum_FloodlightVariableType v) { setField(1, v); }
+  set floodlightVariableType($4071.FloodlightVariableTypeEnum_FloodlightVariableType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFloodlightVariableType() => $_has(0);
   @$pb.TagNumber(1)
@@ -78,9 +78,9 @@ class ConversionCustomVariable_FloodlightConversionCustomVariableInfo extends $p
 
   /// Output only. Floodlight variable data type defined in Search Ads 360.
   @$pb.TagNumber(2)
-  $4071.FloodlightVariableDataTypeEnum_FloodlightVariableDataType get floodlightVariableDataType => $_getN(1);
+  $4072.FloodlightVariableDataTypeEnum_FloodlightVariableDataType get floodlightVariableDataType => $_getN(1);
   @$pb.TagNumber(2)
-  set floodlightVariableDataType($4071.FloodlightVariableDataTypeEnum_FloodlightVariableDataType v) { setField(2, v); }
+  set floodlightVariableDataType($4072.FloodlightVariableDataTypeEnum_FloodlightVariableDataType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFloodlightVariableDataType() => $_has(1);
   @$pb.TagNumber(2)
@@ -96,10 +96,10 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
     $fixnum.Int64? id,
     $core.String? name,
     $core.String? tag,
-    $4067.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus? status,
+    $4068.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus? status,
     $core.String? ownerCustomer,
-    $4068.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily? family,
-    $4069.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality? cardinality,
+    $4069.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily? family,
+    $4070.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality? cardinality,
     ConversionCustomVariable_FloodlightConversionCustomVariableInfo? floodlightConversionCustomVariableInfo,
     $core.Iterable<$fixnum.Int64>? customColumnIds,
   }) {
@@ -145,10 +145,10 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'tag')
-    ..e<$4067.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4067.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.UNSPECIFIED, valueOf: $4067.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.valueOf, enumValues: $4067.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.values)
+    ..e<$4068.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4068.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.UNSPECIFIED, valueOf: $4068.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.valueOf, enumValues: $4068.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.values)
     ..aOS(6, _omitFieldNames ? '' : 'ownerCustomer')
-    ..e<$4068.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily>(7, _omitFieldNames ? '' : 'family', $pb.PbFieldType.OE, defaultOrMaker: $4068.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily.UNSPECIFIED, valueOf: $4068.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily.valueOf, enumValues: $4068.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily.values)
-    ..e<$4069.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality>(8, _omitFieldNames ? '' : 'cardinality', $pb.PbFieldType.OE, defaultOrMaker: $4069.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality.UNSPECIFIED, valueOf: $4069.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality.valueOf, enumValues: $4069.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality.values)
+    ..e<$4069.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily>(7, _omitFieldNames ? '' : 'family', $pb.PbFieldType.OE, defaultOrMaker: $4069.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily.UNSPECIFIED, valueOf: $4069.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily.valueOf, enumValues: $4069.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily.values)
+    ..e<$4070.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality>(8, _omitFieldNames ? '' : 'cardinality', $pb.PbFieldType.OE, defaultOrMaker: $4070.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality.UNSPECIFIED, valueOf: $4070.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality.valueOf, enumValues: $4070.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality.values)
     ..aOM<ConversionCustomVariable_FloodlightConversionCustomVariableInfo>(9, _omitFieldNames ? '' : 'floodlightConversionCustomVariableInfo', subBuilder: ConversionCustomVariable_FloodlightConversionCustomVariableInfo.create)
     ..p<$fixnum.Int64>(10, _omitFieldNames ? '' : 'customColumnIds', $pb.PbFieldType.K6)
     ..hasRequiredFields = false
@@ -224,9 +224,9 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
 
   /// The status of the conversion custom variable for conversion event accrual.
   @$pb.TagNumber(5)
-  $4067.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus get status => $_getN(4);
+  $4068.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($4067.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus v) { setField(5, v); }
+  set status($4068.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)
@@ -245,9 +245,9 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
 
   /// Output only. Family of the conversion custom variable.
   @$pb.TagNumber(7)
-  $4068.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily get family => $_getN(6);
+  $4069.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily get family => $_getN(6);
   @$pb.TagNumber(7)
-  set family($4068.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily v) { setField(7, v); }
+  set family($4069.ConversionCustomVariableFamilyEnum_ConversionCustomVariableFamily v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFamily() => $_has(6);
   @$pb.TagNumber(7)
@@ -255,9 +255,9 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
 
   /// Output only. Cardinality of the conversion custom variable.
   @$pb.TagNumber(8)
-  $4069.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality get cardinality => $_getN(7);
+  $4070.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality get cardinality => $_getN(7);
   @$pb.TagNumber(8)
-  set cardinality($4069.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality v) { setField(8, v); }
+  set cardinality($4070.ConversionCustomVariableCardinalityEnum_ConversionCustomVariableCardinality v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCardinality() => $_has(7);
   @$pb.TagNumber(8)

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'webrisk.pbenum.dart';
 
 export 'webrisk.pbenum.dart';
@@ -244,7 +244,7 @@ class ComputeThreatListDiffResponse_Checksum extends $pb.GeneratedMessage {
 
 class ComputeThreatListDiffResponse extends $pb.GeneratedMessage {
   factory ComputeThreatListDiffResponse({
-    $1775.Timestamp? recommendedNextDiff,
+    $1776.Timestamp? recommendedNextDiff,
     ComputeThreatListDiffResponse_ResponseType? responseType,
     ThreatEntryAdditions? additions,
     ThreatEntryRemovals? removals,
@@ -277,7 +277,7 @@ class ComputeThreatListDiffResponse extends $pb.GeneratedMessage {
   factory ComputeThreatListDiffResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeThreatListDiffResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.webrisk.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'recommendedNextDiff', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'recommendedNextDiff', subBuilder: $1776.Timestamp.create)
     ..e<ComputeThreatListDiffResponse_ResponseType>(4, _omitFieldNames ? '' : 'responseType', $pb.PbFieldType.OE, defaultOrMaker: ComputeThreatListDiffResponse_ResponseType.RESPONSE_TYPE_UNSPECIFIED, valueOf: ComputeThreatListDiffResponse_ResponseType.valueOf, enumValues: ComputeThreatListDiffResponse_ResponseType.values)
     ..aOM<ThreatEntryAdditions>(5, _omitFieldNames ? '' : 'additions', subBuilder: ThreatEntryAdditions.create)
     ..aOM<ThreatEntryRemovals>(6, _omitFieldNames ? '' : 'removals', subBuilder: ThreatEntryRemovals.create)
@@ -312,15 +312,15 @@ class ComputeThreatListDiffResponse extends $pb.GeneratedMessage {
   /// Waiting longer is acceptable considering the use case.
   /// If this field is not set clients may update as soon as they want.
   @$pb.TagNumber(2)
-  $1775.Timestamp get recommendedNextDiff => $_getN(0);
+  $1776.Timestamp get recommendedNextDiff => $_getN(0);
   @$pb.TagNumber(2)
-  set recommendedNextDiff($1775.Timestamp v) { setField(2, v); }
+  set recommendedNextDiff($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRecommendedNextDiff() => $_has(0);
   @$pb.TagNumber(2)
   void clearRecommendedNextDiff() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureRecommendedNextDiff() => $_ensure(0);
+  $1776.Timestamp ensureRecommendedNextDiff() => $_ensure(0);
 
   /// The type of response. This may indicate that an action must be taken by the
   /// client when the response is received.
@@ -452,7 +452,7 @@ class SearchUrisRequest extends $pb.GeneratedMessage {
 class SearchUrisResponse_ThreatUri extends $pb.GeneratedMessage {
   factory SearchUrisResponse_ThreatUri({
     $core.Iterable<ThreatType>? threatTypes,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (threatTypes != null) {
@@ -469,7 +469,7 @@ class SearchUrisResponse_ThreatUri extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchUrisResponse.ThreatUri', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.webrisk.v1'), createEmptyInstance: create)
     ..pc<ThreatType>(1, _omitFieldNames ? '' : 'threatTypes', $pb.PbFieldType.KE, valueOf: ThreatType.valueOf, enumValues: ThreatType.values, defaultEnumValue: ThreatType.THREAT_TYPE_UNSPECIFIED)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -501,15 +501,15 @@ class SearchUrisResponse_ThreatUri extends $pb.GeneratedMessage {
   /// The cache lifetime for the returned match. Clients must not cache this
   /// response past this timestamp to avoid false positives.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 }
 
 class SearchUrisResponse extends $pb.GeneratedMessage {
@@ -635,7 +635,7 @@ class SearchHashesResponse_ThreatHash extends $pb.GeneratedMessage {
   factory SearchHashesResponse_ThreatHash({
     $core.Iterable<ThreatType>? threatTypes,
     $core.List<$core.int>? hash,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (threatTypes != null) {
@@ -656,7 +656,7 @@ class SearchHashesResponse_ThreatHash extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchHashesResponse.ThreatHash', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.webrisk.v1'), createEmptyInstance: create)
     ..pc<ThreatType>(1, _omitFieldNames ? '' : 'threatTypes', $pb.PbFieldType.KE, valueOf: ThreatType.valueOf, enumValues: ThreatType.values, defaultEnumValue: ThreatType.THREAT_TYPE_UNSPECIFIED)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'hash', $pb.PbFieldType.OY)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -700,21 +700,21 @@ class SearchHashesResponse_ThreatHash extends $pb.GeneratedMessage {
   /// The cache lifetime for the returned match. Clients must not cache this
   /// response past this timestamp to avoid false positives.
   @$pb.TagNumber(3)
-  $1775.Timestamp get expireTime => $_getN(2);
+  $1776.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($1775.Timestamp v) { setField(3, v); }
+  set expireTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureExpireTime() => $_ensure(2);
+  $1776.Timestamp ensureExpireTime() => $_ensure(2);
 }
 
 class SearchHashesResponse extends $pb.GeneratedMessage {
   factory SearchHashesResponse({
     $core.Iterable<SearchHashesResponse_ThreatHash>? threats,
-    $1775.Timestamp? negativeExpireTime,
+    $1776.Timestamp? negativeExpireTime,
   }) {
     final $result = create();
     if (threats != null) {
@@ -731,7 +731,7 @@ class SearchHashesResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchHashesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.webrisk.v1'), createEmptyInstance: create)
     ..pc<SearchHashesResponse_ThreatHash>(1, _omitFieldNames ? '' : 'threats', $pb.PbFieldType.PM, subBuilder: SearchHashesResponse_ThreatHash.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'negativeExpireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'negativeExpireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -764,15 +764,15 @@ class SearchHashesResponse extends $pb.GeneratedMessage {
   /// For requested entities that did not match the threat list, how long to
   /// cache the response until.
   @$pb.TagNumber(2)
-  $1775.Timestamp get negativeExpireTime => $_getN(1);
+  $1776.Timestamp get negativeExpireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set negativeExpireTime($1775.Timestamp v) { setField(2, v); }
+  set negativeExpireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasNegativeExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearNegativeExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureNegativeExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureNegativeExpireTime() => $_ensure(1);
 }
 
 /// Contains the set of entries to add to a local database.
@@ -1675,8 +1675,8 @@ class SubmitUriRequest extends $pb.GeneratedMessage {
 class SubmitUriMetadata extends $pb.GeneratedMessage {
   factory SubmitUriMetadata({
     SubmitUriMetadata_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -1696,8 +1696,8 @@ class SubmitUriMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SubmitUriMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.webrisk.v1'), createEmptyInstance: create)
     ..e<SubmitUriMetadata_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: SubmitUriMetadata_State.STATE_UNSPECIFIED, valueOf: SubmitUriMetadata_State.valueOf, enumValues: SubmitUriMetadata_State.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1734,27 +1734,27 @@ class SubmitUriMetadata extends $pb.GeneratedMessage {
 
   /// Creation time of the operation.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Latest update time of the operation.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 

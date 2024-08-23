@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'table_schema.pbenum.dart';
 
 export 'table_schema.pbenum.dart';
@@ -298,13 +298,13 @@ class TableFieldSchema extends $pb.GeneratedMessage {
     $core.String? type,
     $core.String? mode,
     $core.Iterable<TableFieldSchema>? fields,
-    $1780.StringValue? description,
+    $1781.StringValue? description,
     TableFieldSchema_PolicyTagList? policyTags,
     $fixnum.Int64? maxLength,
     $fixnum.Int64? precision,
     $fixnum.Int64? scale,
-    $1780.StringValue? collation,
-    $1780.StringValue? defaultValueExpression,
+    $1781.StringValue? collation,
+    $1781.StringValue? defaultValueExpression,
     TableFieldSchema_RoundingMode? roundingMode,
     TableFieldSchema_FieldElementType? rangeElementType,
     $core.Iterable<DataPolicyOption>? dataPolicies,
@@ -367,13 +367,13 @@ class TableFieldSchema extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'type')
     ..aOS(3, _omitFieldNames ? '' : 'mode')
     ..pc<TableFieldSchema>(4, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: TableFieldSchema.create)
-    ..aOM<$1780.StringValue>(6, _omitFieldNames ? '' : 'description', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(6, _omitFieldNames ? '' : 'description', subBuilder: $1781.StringValue.create)
     ..aOM<TableFieldSchema_PolicyTagList>(9, _omitFieldNames ? '' : 'policyTags', subBuilder: TableFieldSchema_PolicyTagList.create)
     ..aInt64(10, _omitFieldNames ? '' : 'maxLength')
     ..aInt64(11, _omitFieldNames ? '' : 'precision')
     ..aInt64(12, _omitFieldNames ? '' : 'scale')
-    ..aOM<$1780.StringValue>(13, _omitFieldNames ? '' : 'collation', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.StringValue>(14, _omitFieldNames ? '' : 'defaultValueExpression', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(13, _omitFieldNames ? '' : 'collation', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.StringValue>(14, _omitFieldNames ? '' : 'defaultValueExpression', subBuilder: $1781.StringValue.create)
     ..e<TableFieldSchema_RoundingMode>(15, _omitFieldNames ? '' : 'roundingMode', $pb.PbFieldType.OE, defaultOrMaker: TableFieldSchema_RoundingMode.ROUNDING_MODE_UNSPECIFIED, valueOf: TableFieldSchema_RoundingMode.valueOf, enumValues: TableFieldSchema_RoundingMode.values)
     ..aOM<TableFieldSchema_FieldElementType>(18, _omitFieldNames ? '' : 'rangeElementType', subBuilder: TableFieldSchema_FieldElementType.create)
     ..pc<DataPolicyOption>(21, _omitFieldNames ? '' : 'dataPolicies', $pb.PbFieldType.PM, subBuilder: DataPolicyOption.create)
@@ -460,15 +460,15 @@ class TableFieldSchema extends $pb.GeneratedMessage {
 
   /// Optional. The field description. The maximum length is 1,024 characters.
   @$pb.TagNumber(6)
-  $1780.StringValue get description => $_getN(4);
+  $1781.StringValue get description => $_getN(4);
   @$pb.TagNumber(6)
-  set description($1780.StringValue v) { setField(6, v); }
+  set description($1781.StringValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDescription() => $_has(4);
   @$pb.TagNumber(6)
   void clearDescription() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.StringValue ensureDescription() => $_ensure(4);
+  $1781.StringValue ensureDescription() => $_ensure(4);
 
   /// Optional. The policy tags attached to this field, used for field-level
   /// access control. If not set, defaults to empty policy_tags.
@@ -562,28 +562,28 @@ class TableFieldSchema extends $pb.GeneratedMessage {
   ///  * 'und:ci': undetermined locale, case insensitive.
   ///  * '': empty string. Default to case-sensitive behavior.
   @$pb.TagNumber(13)
-  $1780.StringValue get collation => $_getN(9);
+  $1781.StringValue get collation => $_getN(9);
   @$pb.TagNumber(13)
-  set collation($1780.StringValue v) { setField(13, v); }
+  set collation($1781.StringValue v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCollation() => $_has(9);
   @$pb.TagNumber(13)
   void clearCollation() => clearField(13);
   @$pb.TagNumber(13)
-  $1780.StringValue ensureCollation() => $_ensure(9);
+  $1781.StringValue ensureCollation() => $_ensure(9);
 
   /// Optional. A SQL expression to specify the [default value]
   /// (https://cloud.google.com/bigquery/docs/default-values) for this field.
   @$pb.TagNumber(14)
-  $1780.StringValue get defaultValueExpression => $_getN(10);
+  $1781.StringValue get defaultValueExpression => $_getN(10);
   @$pb.TagNumber(14)
-  set defaultValueExpression($1780.StringValue v) { setField(14, v); }
+  set defaultValueExpression($1781.StringValue v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasDefaultValueExpression() => $_has(10);
   @$pb.TagNumber(14)
   void clearDefaultValueExpression() => clearField(14);
   @$pb.TagNumber(14)
-  $1780.StringValue ensureDefaultValueExpression() => $_ensure(10);
+  $1781.StringValue ensureDefaultValueExpression() => $_ensure(10);
 
   /// Optional. Specifies the rounding mode to be used when storing values of
   /// NUMERIC and BIGNUMERIC type.

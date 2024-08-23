@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// The descriptor for a gstreamer buffer payload.
 class GstreamerBufferDescriptor extends $pb.GeneratedMessage {
   factory GstreamerBufferDescriptor({
     $core.String? capsString,
     $core.bool? isKeyFrame,
-    $1775.Timestamp? ptsTime,
-    $1775.Timestamp? dtsTime,
-    $1737.Duration? duration,
+    $1776.Timestamp? ptsTime,
+    $1776.Timestamp? dtsTime,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (capsString != null) {
@@ -52,9 +52,9 @@ class GstreamerBufferDescriptor extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GstreamerBufferDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'capsString')
     ..aOB(2, _omitFieldNames ? '' : 'isKeyFrame')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'ptsTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'dtsTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'ptsTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'dtsTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -101,39 +101,39 @@ class GstreamerBufferDescriptor extends $pb.GeneratedMessage {
 
   /// PTS of the frame.
   @$pb.TagNumber(3)
-  $1775.Timestamp get ptsTime => $_getN(2);
+  $1776.Timestamp get ptsTime => $_getN(2);
   @$pb.TagNumber(3)
-  set ptsTime($1775.Timestamp v) { setField(3, v); }
+  set ptsTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPtsTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearPtsTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensurePtsTime() => $_ensure(2);
+  $1776.Timestamp ensurePtsTime() => $_ensure(2);
 
   /// DTS of the frame.
   @$pb.TagNumber(4)
-  $1775.Timestamp get dtsTime => $_getN(3);
+  $1776.Timestamp get dtsTime => $_getN(3);
   @$pb.TagNumber(4)
-  set dtsTime($1775.Timestamp v) { setField(4, v); }
+  set dtsTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDtsTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDtsTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDtsTime() => $_ensure(3);
+  $1776.Timestamp ensureDtsTime() => $_ensure(3);
 
   /// Duration of the frame.
   @$pb.TagNumber(5)
-  $1737.Duration get duration => $_getN(4);
+  $1738.Duration get duration => $_getN(4);
   @$pb.TagNumber(5)
-  set duration($1737.Duration v) { setField(5, v); }
+  set duration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureDuration() => $_ensure(4);
+  $1738.Duration ensureDuration() => $_ensure(4);
 }
 
 /// The descriptor for a raw image.
@@ -402,7 +402,7 @@ class PacketType extends $pb.GeneratedMessage {
 class ServerMetadata extends $pb.GeneratedMessage {
   factory ServerMetadata({
     $fixnum.Int64? offset,
-    $1775.Timestamp? ingestTime,
+    $1776.Timestamp? ingestTime,
   }) {
     final $result = create();
     if (offset != null) {
@@ -419,7 +419,7 @@ class ServerMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServerMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'offset')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'ingestTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'ingestTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -461,15 +461,15 @@ class ServerMetadata extends $pb.GeneratedMessage {
   /// different sessions. Session here refers to one individual gRPC streaming
   /// request to the stream server.
   @$pb.TagNumber(2)
-  $1775.Timestamp get ingestTime => $_getN(1);
+  $1776.Timestamp get ingestTime => $_getN(1);
   @$pb.TagNumber(2)
-  set ingestTime($1775.Timestamp v) { setField(2, v); }
+  set ingestTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIngestTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearIngestTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureIngestTime() => $_ensure(1);
+  $1776.Timestamp ensureIngestTime() => $_ensure(1);
 }
 
 /// The message that represents series metadata.
@@ -528,9 +528,9 @@ class SeriesMetadata extends $pb.GeneratedMessage {
 /// The message that represents packet header.
 class PacketHeader extends $pb.GeneratedMessage {
   factory PacketHeader({
-    $1775.Timestamp? captureTime,
+    $1776.Timestamp? captureTime,
     PacketType? type,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
     ServerMetadata? serverMetadata,
     SeriesMetadata? seriesMetadata,
     $core.int? flags,
@@ -565,9 +565,9 @@ class PacketHeader extends $pb.GeneratedMessage {
   factory PacketHeader.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PacketHeader', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.visionai.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'captureTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'captureTime', subBuilder: $1776.Timestamp.create)
     ..aOM<PacketType>(2, _omitFieldNames ? '' : 'type', subBuilder: PacketType.create)
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..aOM<ServerMetadata>(4, _omitFieldNames ? '' : 'serverMetadata', subBuilder: ServerMetadata.create)
     ..aOM<SeriesMetadata>(5, _omitFieldNames ? '' : 'seriesMetadata', subBuilder: SeriesMetadata.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'flags', $pb.PbFieldType.O3)
@@ -598,15 +598,15 @@ class PacketHeader extends $pb.GeneratedMessage {
 
   /// Input only. The capture time of the packet.
   @$pb.TagNumber(1)
-  $1775.Timestamp get captureTime => $_getN(0);
+  $1776.Timestamp get captureTime => $_getN(0);
   @$pb.TagNumber(1)
-  set captureTime($1775.Timestamp v) { setField(1, v); }
+  set captureTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCaptureTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCaptureTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCaptureTime() => $_ensure(0);
+  $1776.Timestamp ensureCaptureTime() => $_ensure(0);
 
   /// Input only. Immutable. The type of the payload.
   @$pb.TagNumber(2)
@@ -622,15 +622,15 @@ class PacketHeader extends $pb.GeneratedMessage {
 
   /// Input only. This field is for users to attach user managed metadata.
   @$pb.TagNumber(3)
-  $1734.Struct get metadata => $_getN(2);
+  $1735.Struct get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata($1734.Struct v) { setField(3, v); }
+  set metadata($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureMetadata() => $_ensure(2);
+  $1735.Struct ensureMetadata() => $_ensure(2);
 
   /// Output only. Metadata that the server appends to each packet before sending
   /// it to receivers. You don't need to set a value for this field when sending

@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../../rpc/status.pb.dart' as $1795;
-import 'arrow.pb.dart' as $4386;
-import 'avro.pb.dart' as $4385;
-import 'protobuf.pb.dart' as $4388;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../../rpc/status.pb.dart' as $1796;
+import 'arrow.pb.dart' as $4387;
+import 'avro.pb.dart' as $4386;
+import 'protobuf.pb.dart' as $4389;
 import 'storage.pbenum.dart';
 import 'stream.pb.dart' as $726;
-import 'table.pb.dart' as $4387;
+import 'table.pb.dart' as $4388;
 
 export 'storage.pbenum.dart';
 
@@ -389,12 +389,12 @@ enum ReadRowsResponse_Schema {
 class ReadRowsResponse extends $pb.GeneratedMessage {
   factory ReadRowsResponse({
     StreamStats? stats,
-    $4385.AvroRows? avroRows,
-    $4386.ArrowRecordBatch? arrowRecordBatch,
+    $4386.AvroRows? avroRows,
+    $4387.ArrowRecordBatch? arrowRecordBatch,
     ThrottleState? throttleState,
     $fixnum.Int64? rowCount,
-    $4385.AvroSchema? avroSchema,
-    $4386.ArrowSchema? arrowSchema,
+    $4386.AvroSchema? avroSchema,
+    $4387.ArrowSchema? arrowSchema,
   }) {
     final $result = create();
     if (stats != null) {
@@ -438,12 +438,12 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
     ..oo(0, [3, 4])
     ..oo(1, [7, 8])
     ..aOM<StreamStats>(2, _omitFieldNames ? '' : 'stats', subBuilder: StreamStats.create)
-    ..aOM<$4385.AvroRows>(3, _omitFieldNames ? '' : 'avroRows', subBuilder: $4385.AvroRows.create)
-    ..aOM<$4386.ArrowRecordBatch>(4, _omitFieldNames ? '' : 'arrowRecordBatch', subBuilder: $4386.ArrowRecordBatch.create)
+    ..aOM<$4386.AvroRows>(3, _omitFieldNames ? '' : 'avroRows', subBuilder: $4386.AvroRows.create)
+    ..aOM<$4387.ArrowRecordBatch>(4, _omitFieldNames ? '' : 'arrowRecordBatch', subBuilder: $4387.ArrowRecordBatch.create)
     ..aOM<ThrottleState>(5, _omitFieldNames ? '' : 'throttleState', subBuilder: ThrottleState.create)
     ..aInt64(6, _omitFieldNames ? '' : 'rowCount')
-    ..aOM<$4385.AvroSchema>(7, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4385.AvroSchema.create)
-    ..aOM<$4386.ArrowSchema>(8, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4386.ArrowSchema.create)
+    ..aOM<$4386.AvroSchema>(7, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4386.AvroSchema.create)
+    ..aOM<$4387.ArrowSchema>(8, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4387.ArrowSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -488,27 +488,27 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
 
   /// Serialized row data in AVRO format.
   @$pb.TagNumber(3)
-  $4385.AvroRows get avroRows => $_getN(1);
+  $4386.AvroRows get avroRows => $_getN(1);
   @$pb.TagNumber(3)
-  set avroRows($4385.AvroRows v) { setField(3, v); }
+  set avroRows($4386.AvroRows v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAvroRows() => $_has(1);
   @$pb.TagNumber(3)
   void clearAvroRows() => clearField(3);
   @$pb.TagNumber(3)
-  $4385.AvroRows ensureAvroRows() => $_ensure(1);
+  $4386.AvroRows ensureAvroRows() => $_ensure(1);
 
   /// Serialized row data in Arrow RecordBatch format.
   @$pb.TagNumber(4)
-  $4386.ArrowRecordBatch get arrowRecordBatch => $_getN(2);
+  $4387.ArrowRecordBatch get arrowRecordBatch => $_getN(2);
   @$pb.TagNumber(4)
-  set arrowRecordBatch($4386.ArrowRecordBatch v) { setField(4, v); }
+  set arrowRecordBatch($4387.ArrowRecordBatch v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasArrowRecordBatch() => $_has(2);
   @$pb.TagNumber(4)
   void clearArrowRecordBatch() => clearField(4);
   @$pb.TagNumber(4)
-  $4386.ArrowRecordBatch ensureArrowRecordBatch() => $_ensure(2);
+  $4387.ArrowRecordBatch ensureArrowRecordBatch() => $_ensure(2);
 
   /// Throttling state. If unset, the latest response still describes
   /// the current throttling status.
@@ -535,27 +535,27 @@ class ReadRowsResponse extends $pb.GeneratedMessage {
 
   /// Output only. Avro schema.
   @$pb.TagNumber(7)
-  $4385.AvroSchema get avroSchema => $_getN(5);
+  $4386.AvroSchema get avroSchema => $_getN(5);
   @$pb.TagNumber(7)
-  set avroSchema($4385.AvroSchema v) { setField(7, v); }
+  set avroSchema($4386.AvroSchema v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAvroSchema() => $_has(5);
   @$pb.TagNumber(7)
   void clearAvroSchema() => clearField(7);
   @$pb.TagNumber(7)
-  $4385.AvroSchema ensureAvroSchema() => $_ensure(5);
+  $4386.AvroSchema ensureAvroSchema() => $_ensure(5);
 
   /// Output only. Arrow schema.
   @$pb.TagNumber(8)
-  $4386.ArrowSchema get arrowSchema => $_getN(6);
+  $4387.ArrowSchema get arrowSchema => $_getN(6);
   @$pb.TagNumber(8)
-  set arrowSchema($4386.ArrowSchema v) { setField(8, v); }
+  set arrowSchema($4387.ArrowSchema v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasArrowSchema() => $_has(6);
   @$pb.TagNumber(8)
   void clearArrowSchema() => clearField(8);
   @$pb.TagNumber(8)
-  $4386.ArrowSchema ensureArrowSchema() => $_ensure(6);
+  $4387.ArrowSchema ensureArrowSchema() => $_ensure(6);
 }
 
 /// Request message for `SplitReadStream`.
@@ -777,8 +777,8 @@ class CreateWriteStreamRequest extends $pb.GeneratedMessage {
 /// Proto schema and data.
 class AppendRowsRequest_ProtoData extends $pb.GeneratedMessage {
   factory AppendRowsRequest_ProtoData({
-    $4388.ProtoSchema? writerSchema,
-    $4388.ProtoRows? rows,
+    $4389.ProtoSchema? writerSchema,
+    $4389.ProtoRows? rows,
   }) {
     final $result = create();
     if (writerSchema != null) {
@@ -794,8 +794,8 @@ class AppendRowsRequest_ProtoData extends $pb.GeneratedMessage {
   factory AppendRowsRequest_ProtoData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppendRowsRequest.ProtoData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
-    ..aOM<$4388.ProtoSchema>(1, _omitFieldNames ? '' : 'writerSchema', subBuilder: $4388.ProtoSchema.create)
-    ..aOM<$4388.ProtoRows>(2, _omitFieldNames ? '' : 'rows', subBuilder: $4388.ProtoRows.create)
+    ..aOM<$4389.ProtoSchema>(1, _omitFieldNames ? '' : 'writerSchema', subBuilder: $4389.ProtoSchema.create)
+    ..aOM<$4389.ProtoRows>(2, _omitFieldNames ? '' : 'rows', subBuilder: $4389.ProtoRows.create)
   ;
 
   @$core.Deprecated(
@@ -821,27 +821,27 @@ class AppendRowsRequest_ProtoData extends $pb.GeneratedMessage {
 
   /// Proto schema used to serialize the data.
   @$pb.TagNumber(1)
-  $4388.ProtoSchema get writerSchema => $_getN(0);
+  $4389.ProtoSchema get writerSchema => $_getN(0);
   @$pb.TagNumber(1)
-  set writerSchema($4388.ProtoSchema v) { setField(1, v); }
+  set writerSchema($4389.ProtoSchema v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasWriterSchema() => $_has(0);
   @$pb.TagNumber(1)
   void clearWriterSchema() => clearField(1);
   @$pb.TagNumber(1)
-  $4388.ProtoSchema ensureWriterSchema() => $_ensure(0);
+  $4389.ProtoSchema ensureWriterSchema() => $_ensure(0);
 
   /// Serialized row data in protobuf message format.
   @$pb.TagNumber(2)
-  $4388.ProtoRows get rows => $_getN(1);
+  $4389.ProtoRows get rows => $_getN(1);
   @$pb.TagNumber(2)
-  set rows($4388.ProtoRows v) { setField(2, v); }
+  set rows($4389.ProtoRows v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRows() => $_has(1);
   @$pb.TagNumber(2)
   void clearRows() => clearField(2);
   @$pb.TagNumber(2)
-  $4388.ProtoRows ensureRows() => $_ensure(1);
+  $4389.ProtoRows ensureRows() => $_ensure(1);
 }
 
 enum AppendRowsRequest_Rows {
@@ -853,7 +853,7 @@ enum AppendRowsRequest_Rows {
 class AppendRowsRequest extends $pb.GeneratedMessage {
   factory AppendRowsRequest({
     $core.String? writeStream,
-    $1780.Int64Value? offset,
+    $1781.Int64Value? offset,
     AppendRowsRequest_ProtoData? protoRows,
     $core.String? traceId,
   }) {
@@ -883,7 +883,7 @@ class AppendRowsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppendRowsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'writeStream')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'offset', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'offset', subBuilder: $1781.Int64Value.create)
     ..aOM<AppendRowsRequest_ProtoData>(4, _omitFieldNames ? '' : 'protoRows', subBuilder: AppendRowsRequest_ProtoData.create)
     ..aOS(6, _omitFieldNames ? '' : 'traceId')
   ;
@@ -931,15 +931,15 @@ class AppendRowsRequest extends $pb.GeneratedMessage {
   /// current end of stream. Specifying a value for this field is not allowed
   /// when calling AppendRows for the '_default' stream.
   @$pb.TagNumber(2)
-  $1780.Int64Value get offset => $_getN(1);
+  $1781.Int64Value get offset => $_getN(1);
   @$pb.TagNumber(2)
-  set offset($1780.Int64Value v) { setField(2, v); }
+  set offset($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureOffset() => $_ensure(1);
+  $1781.Int64Value ensureOffset() => $_ensure(1);
 
   /// Rows in proto format.
   @$pb.TagNumber(4)
@@ -968,7 +968,7 @@ class AppendRowsRequest extends $pb.GeneratedMessage {
 /// AppendResult is returned for successful append requests.
 class AppendRowsResponse_AppendResult extends $pb.GeneratedMessage {
   factory AppendRowsResponse_AppendResult({
-    $1780.Int64Value? offset,
+    $1781.Int64Value? offset,
   }) {
     final $result = create();
     if (offset != null) {
@@ -981,7 +981,7 @@ class AppendRowsResponse_AppendResult extends $pb.GeneratedMessage {
   factory AppendRowsResponse_AppendResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppendRowsResponse.AppendResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(1, _omitFieldNames ? '' : 'offset', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(1, _omitFieldNames ? '' : 'offset', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1009,15 +1009,15 @@ class AppendRowsResponse_AppendResult extends $pb.GeneratedMessage {
   /// The row offset at which the last append occurred. The offset will not be
   /// set if appending using default streams.
   @$pb.TagNumber(1)
-  $1780.Int64Value get offset => $_getN(0);
+  $1781.Int64Value get offset => $_getN(0);
   @$pb.TagNumber(1)
-  set offset($1780.Int64Value v) { setField(1, v); }
+  set offset($1781.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.Int64Value ensureOffset() => $_ensure(0);
+  $1781.Int64Value ensureOffset() => $_ensure(0);
 }
 
 enum AppendRowsResponse_Response {
@@ -1030,8 +1030,8 @@ enum AppendRowsResponse_Response {
 class AppendRowsResponse extends $pb.GeneratedMessage {
   factory AppendRowsResponse({
     AppendRowsResponse_AppendResult? appendResult,
-    $1795.Status? error,
-    $4387.TableSchema? updatedSchema,
+    $1796.Status? error,
+    $4388.TableSchema? updatedSchema,
   }) {
     final $result = create();
     if (appendResult != null) {
@@ -1057,8 +1057,8 @@ class AppendRowsResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppendRowsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOM<AppendRowsResponse_AppendResult>(1, _omitFieldNames ? '' : 'appendResult', subBuilder: AppendRowsResponse_AppendResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..aOM<$4387.TableSchema>(3, _omitFieldNames ? '' : 'updatedSchema', subBuilder: $4387.TableSchema.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$4388.TableSchema>(3, _omitFieldNames ? '' : 'updatedSchema', subBuilder: $4388.TableSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -1119,29 +1119,29 @@ class AppendRowsResponse extends $pb.GeneratedMessage {
   ///
   ///  INTERNAL: Indicates server side error(s) that can be retried.
   @$pb.TagNumber(2)
-  $1795.Status get error => $_getN(1);
+  $1796.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($1795.Status v) { setField(2, v); }
+  set error($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureError() => $_ensure(1);
+  $1796.Status ensureError() => $_ensure(1);
 
   /// If backend detects a schema update, pass it to user so that user can
   /// use it to input new type of message. It will be empty when no schema
   /// updates have occurred.
   @$pb.TagNumber(3)
-  $4387.TableSchema get updatedSchema => $_getN(2);
+  $4388.TableSchema get updatedSchema => $_getN(2);
   @$pb.TagNumber(3)
-  set updatedSchema($4387.TableSchema v) { setField(3, v); }
+  set updatedSchema($4388.TableSchema v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdatedSchema() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdatedSchema() => clearField(3);
   @$pb.TagNumber(3)
-  $4387.TableSchema ensureUpdatedSchema() => $_ensure(2);
+  $4388.TableSchema ensureUpdatedSchema() => $_ensure(2);
 }
 
 /// Request message for `GetWriteStreamRequest`.
@@ -1262,7 +1262,7 @@ class BatchCommitWriteStreamsRequest extends $pb.GeneratedMessage {
 /// Response message for `BatchCommitWriteStreams`.
 class BatchCommitWriteStreamsResponse extends $pb.GeneratedMessage {
   factory BatchCommitWriteStreamsResponse({
-    $1775.Timestamp? commitTime,
+    $1776.Timestamp? commitTime,
     $core.Iterable<StorageError>? streamErrors,
   }) {
     final $result = create();
@@ -1279,7 +1279,7 @@ class BatchCommitWriteStreamsResponse extends $pb.GeneratedMessage {
   factory BatchCommitWriteStreamsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCommitWriteStreamsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'commitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'commitTime', subBuilder: $1776.Timestamp.create)
     ..pc<StorageError>(2, _omitFieldNames ? '' : 'streamErrors', $pb.PbFieldType.PM, subBuilder: StorageError.create)
     ..hasRequiredFields = false
   ;
@@ -1309,15 +1309,15 @@ class BatchCommitWriteStreamsResponse extends $pb.GeneratedMessage {
   /// This field will only exist when there are no stream errors.
   /// **Note** if this field is not set, it means the commit was not successful.
   @$pb.TagNumber(1)
-  $1775.Timestamp get commitTime => $_getN(0);
+  $1776.Timestamp get commitTime => $_getN(0);
   @$pb.TagNumber(1)
-  set commitTime($1775.Timestamp v) { setField(1, v); }
+  set commitTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommitTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommitTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCommitTime() => $_ensure(0);
+  $1776.Timestamp ensureCommitTime() => $_ensure(0);
 
   /// Stream level error if commit failed. Only streams with error will be in
   /// the list.
@@ -1437,7 +1437,7 @@ class FinalizeWriteStreamResponse extends $pb.GeneratedMessage {
 class FlushRowsRequest extends $pb.GeneratedMessage {
   factory FlushRowsRequest({
     $core.String? writeStream,
-    $1780.Int64Value? offset,
+    $1781.Int64Value? offset,
   }) {
     final $result = create();
     if (writeStream != null) {
@@ -1454,7 +1454,7 @@ class FlushRowsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlushRowsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'writeStream')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'offset', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'offset', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1492,15 +1492,15 @@ class FlushRowsRequest extends $pb.GeneratedMessage {
   /// Ending offset of the flush operation. Rows before this offset(including
   /// this offset) will be flushed.
   @$pb.TagNumber(2)
-  $1780.Int64Value get offset => $_getN(1);
+  $1781.Int64Value get offset => $_getN(1);
   @$pb.TagNumber(2)
-  set offset($1780.Int64Value v) { setField(2, v); }
+  set offset($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureOffset() => $_ensure(1);
+  $1781.Int64Value ensureOffset() => $_ensure(1);
 }
 
 /// Respond message for `FlushRows`.

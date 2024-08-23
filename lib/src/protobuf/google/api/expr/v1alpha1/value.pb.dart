@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/struct.pbenum.dart' as $1734;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/struct.pbenum.dart' as $1735;
 
 enum Value_Kind {
   nullValue, 
@@ -39,7 +39,7 @@ enum Value_Kind {
 ///  range of values.
 class Value extends $pb.GeneratedMessage {
   factory Value({
-    $1734.NullValue? nullValue,
+    $1735.NullValue? nullValue,
     $core.bool? boolValue,
     $fixnum.Int64? int64Value,
     $fixnum.Int64? uint64Value,
@@ -47,7 +47,7 @@ class Value extends $pb.GeneratedMessage {
     $core.String? stringValue,
     $core.List<$core.int>? bytesValue,
     EnumValue? enumValue,
-    $1794.Any? objectValue,
+    $1795.Any? objectValue,
     MapValue? mapValue,
     ListValue? listValue,
     $core.String? typeValue,
@@ -112,7 +112,7 @@ class Value extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Value', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.expr.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 15])
-    ..e<$1734.NullValue>(1, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $1734.NullValue.NULL_VALUE, valueOf: $1734.NullValue.valueOf, enumValues: $1734.NullValue.values)
+    ..e<$1735.NullValue>(1, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $1735.NullValue.NULL_VALUE, valueOf: $1735.NullValue.valueOf, enumValues: $1735.NullValue.values)
     ..aOB(2, _omitFieldNames ? '' : 'boolValue')
     ..aInt64(3, _omitFieldNames ? '' : 'int64Value')
     ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'uint64Value', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
@@ -120,7 +120,7 @@ class Value extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'stringValue')
     ..a<$core.List<$core.int>>(7, _omitFieldNames ? '' : 'bytesValue', $pb.PbFieldType.OY)
     ..aOM<EnumValue>(9, _omitFieldNames ? '' : 'enumValue', subBuilder: EnumValue.create)
-    ..aOM<$1794.Any>(10, _omitFieldNames ? '' : 'objectValue', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(10, _omitFieldNames ? '' : 'objectValue', subBuilder: $1795.Any.create)
     ..aOM<MapValue>(11, _omitFieldNames ? '' : 'mapValue', subBuilder: MapValue.create)
     ..aOM<ListValue>(12, _omitFieldNames ? '' : 'listValue', subBuilder: ListValue.create)
     ..aOS(15, _omitFieldNames ? '' : 'typeValue')
@@ -153,9 +153,9 @@ class Value extends $pb.GeneratedMessage {
 
   /// Null value.
   @$pb.TagNumber(1)
-  $1734.NullValue get nullValue => $_getN(0);
+  $1735.NullValue get nullValue => $_getN(0);
   @$pb.TagNumber(1)
-  set nullValue($1734.NullValue v) { setField(1, v); }
+  set nullValue($1735.NullValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNullValue() => $_has(0);
   @$pb.TagNumber(1)
@@ -235,15 +235,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// The proto message backing an object value.
   @$pb.TagNumber(10)
-  $1794.Any get objectValue => $_getN(8);
+  $1795.Any get objectValue => $_getN(8);
   @$pb.TagNumber(10)
-  set objectValue($1794.Any v) { setField(10, v); }
+  set objectValue($1795.Any v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasObjectValue() => $_has(8);
   @$pb.TagNumber(10)
   void clearObjectValue() => clearField(10);
   @$pb.TagNumber(10)
-  $1794.Any ensureObjectValue() => $_ensure(8);
+  $1795.Any ensureObjectValue() => $_ensure(8);
 
   /// Map value.
   @$pb.TagNumber(11)

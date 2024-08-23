@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $1775;
+import '../../protobuf/timestamp.pb.dart' as $1776;
 import 'undeliverable_first_gen_event.pbenum.dart';
 
 export 'undeliverable_first_gen_event.pbenum.dart';
@@ -28,7 +28,7 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
     $core.String? documentName,
     UndeliverableFirstGenEvent_DocumentChangeType? documentChangeType,
     $core.Iterable<$core.String>? functionName,
-    $1775.Timestamp? triggeredTime,
+    $1776.Timestamp? triggeredTime,
   }) {
     final $result = create();
     if (message != null) {
@@ -61,7 +61,7 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'documentName')
     ..e<UndeliverableFirstGenEvent_DocumentChangeType>(4, _omitFieldNames ? '' : 'documentChangeType', $pb.PbFieldType.OE, defaultOrMaker: UndeliverableFirstGenEvent_DocumentChangeType.DOCUMENT_CHANGE_TYPE_UNSPECIFIED, valueOf: UndeliverableFirstGenEvent_DocumentChangeType.valueOf, enumValues: UndeliverableFirstGenEvent_DocumentChangeType.values)
     ..pPS(5, _omitFieldNames ? '' : 'functionName')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'triggeredTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'triggeredTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -133,15 +133,15 @@ class UndeliverableFirstGenEvent extends $pb.GeneratedMessage {
 
   /// The commit time of triggered write operation.
   @$pb.TagNumber(6)
-  $1775.Timestamp get triggeredTime => $_getN(5);
+  $1776.Timestamp get triggeredTime => $_getN(5);
   @$pb.TagNumber(6)
-  set triggeredTime($1775.Timestamp v) { setField(6, v); }
+  set triggeredTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTriggeredTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearTriggeredTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureTriggeredTime() => $_ensure(5);
+  $1776.Timestamp ensureTriggeredTime() => $_ensure(5);
 }
 
 

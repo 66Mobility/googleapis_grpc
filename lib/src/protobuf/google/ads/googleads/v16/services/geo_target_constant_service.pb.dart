@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../resources/geo_target_constant.pb.dart' as $3128;
+import '../resources/geo_target_constant.pb.dart' as $3129;
 
 /// A list of location names.
 class SuggestGeoTargetConstantsRequest_LocationNames extends $pb.GeneratedMessage {
@@ -277,8 +277,8 @@ class SuggestGeoTargetConstantsResponse extends $pb.GeneratedMessage {
 /// A geo target constant suggestion.
 class GeoTargetConstantSuggestion extends $pb.GeneratedMessage {
   factory GeoTargetConstantSuggestion({
-    $3128.GeoTargetConstant? geoTargetConstant,
-    $core.Iterable<$3128.GeoTargetConstant>? geoTargetConstantParents,
+    $3129.GeoTargetConstant? geoTargetConstant,
+    $core.Iterable<$3129.GeoTargetConstant>? geoTargetConstantParents,
     $core.String? locale,
     $fixnum.Int64? reach,
     $core.String? searchTerm,
@@ -306,8 +306,8 @@ class GeoTargetConstantSuggestion extends $pb.GeneratedMessage {
   factory GeoTargetConstantSuggestion.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GeoTargetConstantSuggestion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..aOM<$3128.GeoTargetConstant>(4, _omitFieldNames ? '' : 'geoTargetConstant', subBuilder: $3128.GeoTargetConstant.create)
-    ..pc<$3128.GeoTargetConstant>(5, _omitFieldNames ? '' : 'geoTargetConstantParents', $pb.PbFieldType.PM, subBuilder: $3128.GeoTargetConstant.create)
+    ..aOM<$3129.GeoTargetConstant>(4, _omitFieldNames ? '' : 'geoTargetConstant', subBuilder: $3129.GeoTargetConstant.create)
+    ..pc<$3129.GeoTargetConstant>(5, _omitFieldNames ? '' : 'geoTargetConstantParents', $pb.PbFieldType.PM, subBuilder: $3129.GeoTargetConstant.create)
     ..aOS(6, _omitFieldNames ? '' : 'locale')
     ..aInt64(7, _omitFieldNames ? '' : 'reach')
     ..aOS(8, _omitFieldNames ? '' : 'searchTerm')
@@ -337,19 +337,19 @@ class GeoTargetConstantSuggestion extends $pb.GeneratedMessage {
 
   /// The GeoTargetConstant result.
   @$pb.TagNumber(4)
-  $3128.GeoTargetConstant get geoTargetConstant => $_getN(0);
+  $3129.GeoTargetConstant get geoTargetConstant => $_getN(0);
   @$pb.TagNumber(4)
-  set geoTargetConstant($3128.GeoTargetConstant v) { setField(4, v); }
+  set geoTargetConstant($3129.GeoTargetConstant v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasGeoTargetConstant() => $_has(0);
   @$pb.TagNumber(4)
   void clearGeoTargetConstant() => clearField(4);
   @$pb.TagNumber(4)
-  $3128.GeoTargetConstant ensureGeoTargetConstant() => $_ensure(0);
+  $3129.GeoTargetConstant ensureGeoTargetConstant() => $_ensure(0);
 
   /// The list of parents of the geo target constant.
   @$pb.TagNumber(5)
-  $core.List<$3128.GeoTargetConstant> get geoTargetConstantParents => $_getList(1);
+  $core.List<$3129.GeoTargetConstant> get geoTargetConstantParents => $_getList(1);
 
   /// The language this GeoTargetConstantSuggestion is currently translated to.
   /// It affects the name of geo target fields. For example, if locale=en, then

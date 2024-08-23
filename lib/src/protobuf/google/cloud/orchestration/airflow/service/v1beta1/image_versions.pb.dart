@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../type/date.pb.dart' as $1800;
+import '../../../../../type/date.pb.dart' as $1801;
 
 /// List ImageVersions in a project and location.
 class ListImageVersionsRequest extends $pb.GeneratedMessage {
@@ -180,7 +180,7 @@ class ImageVersion extends $pb.GeneratedMessage {
     $core.String? imageVersionId,
     $core.bool? isDefault,
     $core.Iterable<$core.String>? supportedPythonVersions,
-    $1800.Date? releaseDate,
+    $1801.Date? releaseDate,
     $core.bool? creationDisabled,
     $core.bool? upgradeDisabled,
   }) {
@@ -213,7 +213,7 @@ class ImageVersion extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'imageVersionId')
     ..aOB(2, _omitFieldNames ? '' : 'isDefault')
     ..pPS(3, _omitFieldNames ? '' : 'supportedPythonVersions')
-    ..aOM<$1800.Date>(4, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(4, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1801.Date.create)
     ..aOB(5, _omitFieldNames ? '' : 'creationDisabled')
     ..aOB(6, _omitFieldNames ? '' : 'upgradeDisabled')
     ..hasRequiredFields = false
@@ -268,15 +268,15 @@ class ImageVersion extends $pb.GeneratedMessage {
 
   /// The date of the version release.
   @$pb.TagNumber(4)
-  $1800.Date get releaseDate => $_getN(3);
+  $1801.Date get releaseDate => $_getN(3);
   @$pb.TagNumber(4)
-  set releaseDate($1800.Date v) { setField(4, v); }
+  set releaseDate($1801.Date v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReleaseDate() => $_has(3);
   @$pb.TagNumber(4)
   void clearReleaseDate() => clearField(4);
   @$pb.TagNumber(4)
-  $1800.Date ensureReleaseDate() => $_ensure(3);
+  $1801.Date ensureReleaseDate() => $_ensure(3);
 
   /// Whether it is impossible to create an environment with the image version.
   @$pb.TagNumber(5)

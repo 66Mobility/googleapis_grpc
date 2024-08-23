@@ -14,22 +14,22 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/call_conversion_reporting_state.pbenum.dart' as $3255;
-import '../enums/call_to_action_type.pbenum.dart' as $3296;
-import '../enums/lead_form_call_to_action_type.pbenum.dart' as $3286;
-import '../enums/lead_form_desired_intent.pbenum.dart' as $3288;
-import '../enums/lead_form_field_user_input_type.pbenum.dart' as $3289;
-import '../enums/lead_form_post_submit_call_to_action_type.pbenum.dart' as $3287;
-import '../enums/location_ownership_type.pbenum.dart' as $3256;
-import '../enums/mime_type.pbenum.dart' as $3250;
-import '../enums/mobile_app_vendor.pbenum.dart' as $3292;
-import '../enums/price_extension_price_qualifier.pbenum.dart' as $3294;
-import '../enums/price_extension_price_unit.pbenum.dart' as $3295;
-import '../enums/price_extension_type.pbenum.dart' as $3293;
-import '../enums/promotion_extension_discount_modifier.pbenum.dart' as $3290;
-import '../enums/promotion_extension_occasion.pbenum.dart' as $3291;
-import 'criteria.pb.dart' as $3285;
-import 'feed_common.pb.dart' as $3284;
+import '../enums/call_conversion_reporting_state.pbenum.dart' as $3256;
+import '../enums/call_to_action_type.pbenum.dart' as $3297;
+import '../enums/lead_form_call_to_action_type.pbenum.dart' as $3287;
+import '../enums/lead_form_desired_intent.pbenum.dart' as $3289;
+import '../enums/lead_form_field_user_input_type.pbenum.dart' as $3290;
+import '../enums/lead_form_post_submit_call_to_action_type.pbenum.dart' as $3288;
+import '../enums/location_ownership_type.pbenum.dart' as $3257;
+import '../enums/mime_type.pbenum.dart' as $3251;
+import '../enums/mobile_app_vendor.pbenum.dart' as $3293;
+import '../enums/price_extension_price_qualifier.pbenum.dart' as $3295;
+import '../enums/price_extension_price_unit.pbenum.dart' as $3296;
+import '../enums/price_extension_type.pbenum.dart' as $3294;
+import '../enums/promotion_extension_discount_modifier.pbenum.dart' as $3291;
+import '../enums/promotion_extension_occasion.pbenum.dart' as $3292;
+import 'criteria.pb.dart' as $3286;
+import 'feed_common.pb.dart' as $3285;
 
 /// A YouTube asset.
 class YoutubeVideoAsset extends $pb.GeneratedMessage {
@@ -157,7 +157,7 @@ class MediaBundleAsset extends $pb.GeneratedMessage {
 /// An Image asset.
 class ImageAsset extends $pb.GeneratedMessage {
   factory ImageAsset({
-    $3250.MimeTypeEnum_MimeType? mimeType,
+    $3251.MimeTypeEnum_MimeType? mimeType,
     ImageDimension? fullSize,
     $core.List<$core.int>? data,
     $fixnum.Int64? fileSize,
@@ -182,7 +182,7 @@ class ImageAsset extends $pb.GeneratedMessage {
   factory ImageAsset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..e<$3250.MimeTypeEnum_MimeType>(3, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $3250.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $3250.MimeTypeEnum_MimeType.valueOf, enumValues: $3250.MimeTypeEnum_MimeType.values)
+    ..e<$3251.MimeTypeEnum_MimeType>(3, _omitFieldNames ? '' : 'mimeType', $pb.PbFieldType.OE, defaultOrMaker: $3251.MimeTypeEnum_MimeType.UNSPECIFIED, valueOf: $3251.MimeTypeEnum_MimeType.valueOf, enumValues: $3251.MimeTypeEnum_MimeType.values)
     ..aOM<ImageDimension>(4, _omitFieldNames ? '' : 'fullSize', subBuilder: ImageDimension.create)
     ..a<$core.List<$core.int>>(5, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
     ..aInt64(6, _omitFieldNames ? '' : 'fileSize')
@@ -212,9 +212,9 @@ class ImageAsset extends $pb.GeneratedMessage {
 
   /// MIME type of the image asset.
   @$pb.TagNumber(3)
-  $3250.MimeTypeEnum_MimeType get mimeType => $_getN(0);
+  $3251.MimeTypeEnum_MimeType get mimeType => $_getN(0);
   @$pb.TagNumber(3)
-  set mimeType($3250.MimeTypeEnum_MimeType v) { setField(3, v); }
+  set mimeType($3251.MimeTypeEnum_MimeType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMimeType() => $_has(0);
   @$pb.TagNumber(3)
@@ -398,11 +398,11 @@ class LeadFormAsset extends $pb.GeneratedMessage {
     $core.String? privacyPolicyUrl,
     $core.String? postSubmitHeadline,
     $core.String? postSubmitDescription,
-    $3286.LeadFormCallToActionTypeEnum_LeadFormCallToActionType? callToActionType,
+    $3287.LeadFormCallToActionTypeEnum_LeadFormCallToActionType? callToActionType,
     $core.String? callToActionDescription,
-    $3287.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType? postSubmitCallToActionType,
+    $3288.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType? postSubmitCallToActionType,
     $core.String? backgroundImageAsset,
-    $3288.LeadFormDesiredIntentEnum_LeadFormDesiredIntent? desiredIntent,
+    $3289.LeadFormDesiredIntentEnum_LeadFormDesiredIntent? desiredIntent,
     $core.String? customDisclosure,
     $core.Iterable<LeadFormCustomQuestionField>? customQuestionFields,
   }) {
@@ -467,11 +467,11 @@ class LeadFormAsset extends $pb.GeneratedMessage {
     ..aOS(14, _omitFieldNames ? '' : 'privacyPolicyUrl')
     ..aOS(15, _omitFieldNames ? '' : 'postSubmitHeadline')
     ..aOS(16, _omitFieldNames ? '' : 'postSubmitDescription')
-    ..e<$3286.LeadFormCallToActionTypeEnum_LeadFormCallToActionType>(17, _omitFieldNames ? '' : 'callToActionType', $pb.PbFieldType.OE, defaultOrMaker: $3286.LeadFormCallToActionTypeEnum_LeadFormCallToActionType.UNSPECIFIED, valueOf: $3286.LeadFormCallToActionTypeEnum_LeadFormCallToActionType.valueOf, enumValues: $3286.LeadFormCallToActionTypeEnum_LeadFormCallToActionType.values)
+    ..e<$3287.LeadFormCallToActionTypeEnum_LeadFormCallToActionType>(17, _omitFieldNames ? '' : 'callToActionType', $pb.PbFieldType.OE, defaultOrMaker: $3287.LeadFormCallToActionTypeEnum_LeadFormCallToActionType.UNSPECIFIED, valueOf: $3287.LeadFormCallToActionTypeEnum_LeadFormCallToActionType.valueOf, enumValues: $3287.LeadFormCallToActionTypeEnum_LeadFormCallToActionType.values)
     ..aOS(18, _omitFieldNames ? '' : 'callToActionDescription')
-    ..e<$3287.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType>(19, _omitFieldNames ? '' : 'postSubmitCallToActionType', $pb.PbFieldType.OE, defaultOrMaker: $3287.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType.UNSPECIFIED, valueOf: $3287.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType.valueOf, enumValues: $3287.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType.values)
+    ..e<$3288.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType>(19, _omitFieldNames ? '' : 'postSubmitCallToActionType', $pb.PbFieldType.OE, defaultOrMaker: $3288.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType.UNSPECIFIED, valueOf: $3288.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType.valueOf, enumValues: $3288.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType.values)
     ..aOS(20, _omitFieldNames ? '' : 'backgroundImageAsset')
-    ..e<$3288.LeadFormDesiredIntentEnum_LeadFormDesiredIntent>(21, _omitFieldNames ? '' : 'desiredIntent', $pb.PbFieldType.OE, defaultOrMaker: $3288.LeadFormDesiredIntentEnum_LeadFormDesiredIntent.UNSPECIFIED, valueOf: $3288.LeadFormDesiredIntentEnum_LeadFormDesiredIntent.valueOf, enumValues: $3288.LeadFormDesiredIntentEnum_LeadFormDesiredIntent.values)
+    ..e<$3289.LeadFormDesiredIntentEnum_LeadFormDesiredIntent>(21, _omitFieldNames ? '' : 'desiredIntent', $pb.PbFieldType.OE, defaultOrMaker: $3289.LeadFormDesiredIntentEnum_LeadFormDesiredIntent.UNSPECIFIED, valueOf: $3289.LeadFormDesiredIntentEnum_LeadFormDesiredIntent.valueOf, enumValues: $3289.LeadFormDesiredIntentEnum_LeadFormDesiredIntent.values)
     ..aOS(22, _omitFieldNames ? '' : 'customDisclosure')
     ..pc<LeadFormCustomQuestionField>(23, _omitFieldNames ? '' : 'customQuestionFields', $pb.PbFieldType.PM, subBuilder: LeadFormCustomQuestionField.create)
     ..hasRequiredFields = false
@@ -575,9 +575,9 @@ class LeadFormAsset extends $pb.GeneratedMessage {
 
   /// Required. Pre-defined display text that encourages user to expand the form.
   @$pb.TagNumber(17)
-  $3286.LeadFormCallToActionTypeEnum_LeadFormCallToActionType get callToActionType => $_getN(8);
+  $3287.LeadFormCallToActionTypeEnum_LeadFormCallToActionType get callToActionType => $_getN(8);
   @$pb.TagNumber(17)
-  set callToActionType($3286.LeadFormCallToActionTypeEnum_LeadFormCallToActionType v) { setField(17, v); }
+  set callToActionType($3287.LeadFormCallToActionTypeEnum_LeadFormCallToActionType v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasCallToActionType() => $_has(8);
   @$pb.TagNumber(17)
@@ -597,9 +597,9 @@ class LeadFormAsset extends $pb.GeneratedMessage {
   /// Pre-defined display text that encourages user action after the form is
   /// submitted.
   @$pb.TagNumber(19)
-  $3287.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType get postSubmitCallToActionType => $_getN(10);
+  $3288.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType get postSubmitCallToActionType => $_getN(10);
   @$pb.TagNumber(19)
-  set postSubmitCallToActionType($3287.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType v) { setField(19, v); }
+  set postSubmitCallToActionType($3288.LeadFormPostSubmitCallToActionTypeEnum_LeadFormPostSubmitCallToActionType v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasPostSubmitCallToActionType() => $_has(10);
   @$pb.TagNumber(19)
@@ -619,9 +619,9 @@ class LeadFormAsset extends $pb.GeneratedMessage {
   /// Chosen intent for the lead form, for example, more volume or more
   /// qualified.
   @$pb.TagNumber(21)
-  $3288.LeadFormDesiredIntentEnum_LeadFormDesiredIntent get desiredIntent => $_getN(12);
+  $3289.LeadFormDesiredIntentEnum_LeadFormDesiredIntent get desiredIntent => $_getN(12);
   @$pb.TagNumber(21)
-  set desiredIntent($3288.LeadFormDesiredIntentEnum_LeadFormDesiredIntent v) { setField(21, v); }
+  set desiredIntent($3289.LeadFormDesiredIntentEnum_LeadFormDesiredIntent v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasDesiredIntent() => $_has(12);
   @$pb.TagNumber(21)
@@ -653,7 +653,7 @@ enum LeadFormField_Answers {
 /// One input field instance within a form.
 class LeadFormField extends $pb.GeneratedMessage {
   factory LeadFormField({
-    $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType? inputType,
+    $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType? inputType,
     LeadFormSingleChoiceAnswers? singleChoiceAnswers,
     $core.bool? hasLocationAnswer,
   }) {
@@ -680,7 +680,7 @@ class LeadFormField extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LeadFormField', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..e<$3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType>(1, _omitFieldNames ? '' : 'inputType', $pb.PbFieldType.OE, defaultOrMaker: $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.UNSPECIFIED, valueOf: $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.valueOf, enumValues: $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.values)
+    ..e<$3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType>(1, _omitFieldNames ? '' : 'inputType', $pb.PbFieldType.OE, defaultOrMaker: $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.UNSPECIFIED, valueOf: $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.valueOf, enumValues: $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType.values)
     ..aOM<LeadFormSingleChoiceAnswers>(2, _omitFieldNames ? '' : 'singleChoiceAnswers', subBuilder: LeadFormSingleChoiceAnswers.create)
     ..aOB(3, _omitFieldNames ? '' : 'hasLocationAnswer')
     ..hasRequiredFields = false
@@ -713,9 +713,9 @@ class LeadFormField extends $pb.GeneratedMessage {
   /// Describes the input type, which may be a predefined type such as "full
   /// name" or a pre-vetted question like "What kind of vehicle do you have?".
   @$pb.TagNumber(1)
-  $3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType get inputType => $_getN(0);
+  $3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType get inputType => $_getN(0);
   @$pb.TagNumber(1)
-  set inputType($3289.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType v) { setField(1, v); }
+  set inputType($3290.LeadFormFieldUserInputTypeEnum_LeadFormFieldUserInputType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInputType() => $_has(0);
   @$pb.TagNumber(1)
@@ -1107,18 +1107,18 @@ enum PromotionAsset_PromotionTrigger {
 class PromotionAsset extends $pb.GeneratedMessage {
   factory PromotionAsset({
     $core.String? promotionTarget,
-    $3290.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier? discountModifier,
+    $3291.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier? discountModifier,
     $fixnum.Int64? percentOff,
-    $3284.Money? moneyAmountOff,
+    $3285.Money? moneyAmountOff,
     $core.String? promotionCode,
-    $3284.Money? ordersOverAmount,
+    $3285.Money? ordersOverAmount,
     $core.String? redemptionStartDate,
     $core.String? redemptionEndDate,
-    $3291.PromotionExtensionOccasionEnum_PromotionExtensionOccasion? occasion,
+    $3292.PromotionExtensionOccasionEnum_PromotionExtensionOccasion? occasion,
     $core.String? languageCode,
     $core.String? startDate,
     $core.String? endDate,
-    $core.Iterable<$3285.AdScheduleInfo>? adScheduleTargets,
+    $core.Iterable<$3286.AdScheduleInfo>? adScheduleTargets,
   }) {
     final $result = create();
     if (promotionTarget != null) {
@@ -1180,18 +1180,18 @@ class PromotionAsset extends $pb.GeneratedMessage {
     ..oo(0, [3, 4])
     ..oo(1, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'promotionTarget')
-    ..e<$3290.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier>(2, _omitFieldNames ? '' : 'discountModifier', $pb.PbFieldType.OE, defaultOrMaker: $3290.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.UNSPECIFIED, valueOf: $3290.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.valueOf, enumValues: $3290.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.values)
+    ..e<$3291.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier>(2, _omitFieldNames ? '' : 'discountModifier', $pb.PbFieldType.OE, defaultOrMaker: $3291.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.UNSPECIFIED, valueOf: $3291.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.valueOf, enumValues: $3291.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier.values)
     ..aInt64(3, _omitFieldNames ? '' : 'percentOff')
-    ..aOM<$3284.Money>(4, _omitFieldNames ? '' : 'moneyAmountOff', subBuilder: $3284.Money.create)
+    ..aOM<$3285.Money>(4, _omitFieldNames ? '' : 'moneyAmountOff', subBuilder: $3285.Money.create)
     ..aOS(5, _omitFieldNames ? '' : 'promotionCode')
-    ..aOM<$3284.Money>(6, _omitFieldNames ? '' : 'ordersOverAmount', subBuilder: $3284.Money.create)
+    ..aOM<$3285.Money>(6, _omitFieldNames ? '' : 'ordersOverAmount', subBuilder: $3285.Money.create)
     ..aOS(7, _omitFieldNames ? '' : 'redemptionStartDate')
     ..aOS(8, _omitFieldNames ? '' : 'redemptionEndDate')
-    ..e<$3291.PromotionExtensionOccasionEnum_PromotionExtensionOccasion>(9, _omitFieldNames ? '' : 'occasion', $pb.PbFieldType.OE, defaultOrMaker: $3291.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.UNSPECIFIED, valueOf: $3291.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.valueOf, enumValues: $3291.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.values)
+    ..e<$3292.PromotionExtensionOccasionEnum_PromotionExtensionOccasion>(9, _omitFieldNames ? '' : 'occasion', $pb.PbFieldType.OE, defaultOrMaker: $3292.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.UNSPECIFIED, valueOf: $3292.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.valueOf, enumValues: $3292.PromotionExtensionOccasionEnum_PromotionExtensionOccasion.values)
     ..aOS(10, _omitFieldNames ? '' : 'languageCode')
     ..aOS(11, _omitFieldNames ? '' : 'startDate')
     ..aOS(12, _omitFieldNames ? '' : 'endDate')
-    ..pc<$3285.AdScheduleInfo>(13, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3285.AdScheduleInfo.create)
+    ..pc<$3286.AdScheduleInfo>(13, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3286.AdScheduleInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -1234,9 +1234,9 @@ class PromotionAsset extends $pb.GeneratedMessage {
 
   /// A modifier for qualification of the discount.
   @$pb.TagNumber(2)
-  $3290.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier get discountModifier => $_getN(1);
+  $3291.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier get discountModifier => $_getN(1);
   @$pb.TagNumber(2)
-  set discountModifier($3290.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier v) { setField(2, v); }
+  set discountModifier($3291.PromotionExtensionDiscountModifierEnum_PromotionExtensionDiscountModifier v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDiscountModifier() => $_has(1);
   @$pb.TagNumber(2)
@@ -1256,15 +1256,15 @@ class PromotionAsset extends $pb.GeneratedMessage {
   /// Money amount off for discount in the promotion.
   /// Either this or percent_off is required.
   @$pb.TagNumber(4)
-  $3284.Money get moneyAmountOff => $_getN(3);
+  $3285.Money get moneyAmountOff => $_getN(3);
   @$pb.TagNumber(4)
-  set moneyAmountOff($3284.Money v) { setField(4, v); }
+  set moneyAmountOff($3285.Money v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMoneyAmountOff() => $_has(3);
   @$pb.TagNumber(4)
   void clearMoneyAmountOff() => clearField(4);
   @$pb.TagNumber(4)
-  $3284.Money ensureMoneyAmountOff() => $_ensure(3);
+  $3285.Money ensureMoneyAmountOff() => $_ensure(3);
 
   /// A code the user should use in order to be eligible for the promotion.
   @$pb.TagNumber(5)
@@ -1279,15 +1279,15 @@ class PromotionAsset extends $pb.GeneratedMessage {
   /// The amount the total order needs to be for the user to be eligible for
   /// the promotion.
   @$pb.TagNumber(6)
-  $3284.Money get ordersOverAmount => $_getN(5);
+  $3285.Money get ordersOverAmount => $_getN(5);
   @$pb.TagNumber(6)
-  set ordersOverAmount($3284.Money v) { setField(6, v); }
+  set ordersOverAmount($3285.Money v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOrdersOverAmount() => $_has(5);
   @$pb.TagNumber(6)
   void clearOrdersOverAmount() => clearField(6);
   @$pb.TagNumber(6)
-  $3284.Money ensureOrdersOverAmount() => $_ensure(5);
+  $3285.Money ensureOrdersOverAmount() => $_ensure(5);
 
   /// Start date of when the promotion is eligible to be redeemed, in yyyy-MM-dd
   /// format.
@@ -1315,9 +1315,9 @@ class PromotionAsset extends $pb.GeneratedMessage {
   /// If an occasion is set, the redemption window will need to fall within the
   /// date range associated with the occasion.
   @$pb.TagNumber(9)
-  $3291.PromotionExtensionOccasionEnum_PromotionExtensionOccasion get occasion => $_getN(8);
+  $3292.PromotionExtensionOccasionEnum_PromotionExtensionOccasion get occasion => $_getN(8);
   @$pb.TagNumber(9)
-  set occasion($3291.PromotionExtensionOccasionEnum_PromotionExtensionOccasion v) { setField(9, v); }
+  set occasion($3292.PromotionExtensionOccasionEnum_PromotionExtensionOccasion v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasOccasion() => $_has(8);
   @$pb.TagNumber(9)
@@ -1360,7 +1360,7 @@ class PromotionAsset extends $pb.GeneratedMessage {
   /// the asset may serve. There can be a maximum of 6 schedules per day, 42 in
   /// total.
   @$pb.TagNumber(13)
-  $core.List<$3285.AdScheduleInfo> get adScheduleTargets => $_getList(12);
+  $core.List<$3286.AdScheduleInfo> get adScheduleTargets => $_getList(12);
 }
 
 /// A Callout asset.
@@ -1369,7 +1369,7 @@ class CalloutAsset extends $pb.GeneratedMessage {
     $core.String? calloutText,
     $core.String? startDate,
     $core.String? endDate,
-    $core.Iterable<$3285.AdScheduleInfo>? adScheduleTargets,
+    $core.Iterable<$3286.AdScheduleInfo>? adScheduleTargets,
   }) {
     final $result = create();
     if (calloutText != null) {
@@ -1394,7 +1394,7 @@ class CalloutAsset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'calloutText')
     ..aOS(2, _omitFieldNames ? '' : 'startDate')
     ..aOS(3, _omitFieldNames ? '' : 'endDate')
-    ..pc<$3285.AdScheduleInfo>(4, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3285.AdScheduleInfo.create)
+    ..pc<$3286.AdScheduleInfo>(4, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3286.AdScheduleInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -1456,7 +1456,7 @@ class CalloutAsset extends $pb.GeneratedMessage {
   /// the asset may serve. There can be a maximum of 6 schedules per day, 42 in
   /// total.
   @$pb.TagNumber(4)
-  $core.List<$3285.AdScheduleInfo> get adScheduleTargets => $_getList(3);
+  $core.List<$3286.AdScheduleInfo> get adScheduleTargets => $_getList(3);
 }
 
 /// A Structured Snippet asset.
@@ -1532,7 +1532,7 @@ class SitelinkAsset extends $pb.GeneratedMessage {
     $core.String? description2,
     $core.String? startDate,
     $core.String? endDate,
-    $core.Iterable<$3285.AdScheduleInfo>? adScheduleTargets,
+    $core.Iterable<$3286.AdScheduleInfo>? adScheduleTargets,
   }) {
     final $result = create();
     if (linkText != null) {
@@ -1565,7 +1565,7 @@ class SitelinkAsset extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description2')
     ..aOS(4, _omitFieldNames ? '' : 'startDate')
     ..aOS(5, _omitFieldNames ? '' : 'endDate')
-    ..pc<$3285.AdScheduleInfo>(6, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3285.AdScheduleInfo.create)
+    ..pc<$3286.AdScheduleInfo>(6, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3286.AdScheduleInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -1651,7 +1651,7 @@ class SitelinkAsset extends $pb.GeneratedMessage {
   /// the asset may serve. There can be a maximum of 6 schedules per day, 42 in
   /// total.
   @$pb.TagNumber(6)
-  $core.List<$3285.AdScheduleInfo> get adScheduleTargets => $_getList(5);
+  $core.List<$3286.AdScheduleInfo> get adScheduleTargets => $_getList(5);
 }
 
 /// A Page Feed asset.
@@ -1965,7 +1965,7 @@ class DynamicEducationAsset extends $pb.GeneratedMessage {
 class MobileAppAsset extends $pb.GeneratedMessage {
   factory MobileAppAsset({
     $core.String? appId,
-    $3292.MobileAppVendorEnum_MobileAppVendor? appStore,
+    $3293.MobileAppVendorEnum_MobileAppVendor? appStore,
     $core.String? linkText,
     $core.String? startDate,
     $core.String? endDate,
@@ -1994,7 +1994,7 @@ class MobileAppAsset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MobileAppAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appId')
-    ..e<$3292.MobileAppVendorEnum_MobileAppVendor>(2, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $3292.MobileAppVendorEnum_MobileAppVendor.UNSPECIFIED, valueOf: $3292.MobileAppVendorEnum_MobileAppVendor.valueOf, enumValues: $3292.MobileAppVendorEnum_MobileAppVendor.values)
+    ..e<$3293.MobileAppVendorEnum_MobileAppVendor>(2, _omitFieldNames ? '' : 'appStore', $pb.PbFieldType.OE, defaultOrMaker: $3293.MobileAppVendorEnum_MobileAppVendor.UNSPECIFIED, valueOf: $3293.MobileAppVendorEnum_MobileAppVendor.valueOf, enumValues: $3293.MobileAppVendorEnum_MobileAppVendor.values)
     ..aOS(3, _omitFieldNames ? '' : 'linkText')
     ..aOS(4, _omitFieldNames ? '' : 'startDate')
     ..aOS(5, _omitFieldNames ? '' : 'endDate')
@@ -2036,9 +2036,9 @@ class MobileAppAsset extends $pb.GeneratedMessage {
 
   /// Required. The application store that distributes this specific app.
   @$pb.TagNumber(2)
-  $3292.MobileAppVendorEnum_MobileAppVendor get appStore => $_getN(1);
+  $3293.MobileAppVendorEnum_MobileAppVendor get appStore => $_getN(1);
   @$pb.TagNumber(2)
-  set appStore($3292.MobileAppVendorEnum_MobileAppVendor v) { setField(2, v); }
+  set appStore($3293.MobileAppVendorEnum_MobileAppVendor v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAppStore() => $_has(1);
   @$pb.TagNumber(2)
@@ -2152,9 +2152,9 @@ class CallAsset extends $pb.GeneratedMessage {
   factory CallAsset({
     $core.String? countryCode,
     $core.String? phoneNumber,
-    $3255.CallConversionReportingStateEnum_CallConversionReportingState? callConversionReportingState,
+    $3256.CallConversionReportingStateEnum_CallConversionReportingState? callConversionReportingState,
     $core.String? callConversionAction,
-    $core.Iterable<$3285.AdScheduleInfo>? adScheduleTargets,
+    $core.Iterable<$3286.AdScheduleInfo>? adScheduleTargets,
   }) {
     final $result = create();
     if (countryCode != null) {
@@ -2181,9 +2181,9 @@ class CallAsset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CallAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'countryCode')
     ..aOS(2, _omitFieldNames ? '' : 'phoneNumber')
-    ..e<$3255.CallConversionReportingStateEnum_CallConversionReportingState>(3, _omitFieldNames ? '' : 'callConversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $3255.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $3255.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $3255.CallConversionReportingStateEnum_CallConversionReportingState.values)
+    ..e<$3256.CallConversionReportingStateEnum_CallConversionReportingState>(3, _omitFieldNames ? '' : 'callConversionReportingState', $pb.PbFieldType.OE, defaultOrMaker: $3256.CallConversionReportingStateEnum_CallConversionReportingState.UNSPECIFIED, valueOf: $3256.CallConversionReportingStateEnum_CallConversionReportingState.valueOf, enumValues: $3256.CallConversionReportingStateEnum_CallConversionReportingState.values)
     ..aOS(4, _omitFieldNames ? '' : 'callConversionAction')
-    ..pc<$3285.AdScheduleInfo>(5, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3285.AdScheduleInfo.create)
+    ..pc<$3286.AdScheduleInfo>(5, _omitFieldNames ? '' : 'adScheduleTargets', $pb.PbFieldType.PM, subBuilder: $3286.AdScheduleInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -2233,9 +2233,9 @@ class CallAsset extends $pb.GeneratedMessage {
   /// Indicates whether this CallAsset should use its own call conversion
   /// setting, follow the account level setting, or disable call conversion.
   @$pb.TagNumber(3)
-  $3255.CallConversionReportingStateEnum_CallConversionReportingState get callConversionReportingState => $_getN(2);
+  $3256.CallConversionReportingStateEnum_CallConversionReportingState get callConversionReportingState => $_getN(2);
   @$pb.TagNumber(3)
-  set callConversionReportingState($3255.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(3, v); }
+  set callConversionReportingState($3256.CallConversionReportingStateEnum_CallConversionReportingState v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCallConversionReportingState() => $_has(2);
   @$pb.TagNumber(3)
@@ -2258,14 +2258,14 @@ class CallAsset extends $pb.GeneratedMessage {
   /// the asset may serve. There can be a maximum of 6 schedules per day, 42 in
   /// total.
   @$pb.TagNumber(5)
-  $core.List<$3285.AdScheduleInfo> get adScheduleTargets => $_getList(4);
+  $core.List<$3286.AdScheduleInfo> get adScheduleTargets => $_getList(4);
 }
 
 /// An asset representing a list of price offers.
 class PriceAsset extends $pb.GeneratedMessage {
   factory PriceAsset({
-    $3293.PriceExtensionTypeEnum_PriceExtensionType? type,
-    $3294.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier? priceQualifier,
+    $3294.PriceExtensionTypeEnum_PriceExtensionType? type,
+    $3295.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier? priceQualifier,
     $core.String? languageCode,
     $core.Iterable<PriceOffering>? priceOfferings,
   }) {
@@ -2289,8 +2289,8 @@ class PriceAsset extends $pb.GeneratedMessage {
   factory PriceAsset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PriceAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..e<$3293.PriceExtensionTypeEnum_PriceExtensionType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3293.PriceExtensionTypeEnum_PriceExtensionType.UNSPECIFIED, valueOf: $3293.PriceExtensionTypeEnum_PriceExtensionType.valueOf, enumValues: $3293.PriceExtensionTypeEnum_PriceExtensionType.values)
-    ..e<$3294.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier>(2, _omitFieldNames ? '' : 'priceQualifier', $pb.PbFieldType.OE, defaultOrMaker: $3294.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.UNSPECIFIED, valueOf: $3294.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.valueOf, enumValues: $3294.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.values)
+    ..e<$3294.PriceExtensionTypeEnum_PriceExtensionType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3294.PriceExtensionTypeEnum_PriceExtensionType.UNSPECIFIED, valueOf: $3294.PriceExtensionTypeEnum_PriceExtensionType.valueOf, enumValues: $3294.PriceExtensionTypeEnum_PriceExtensionType.values)
+    ..e<$3295.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier>(2, _omitFieldNames ? '' : 'priceQualifier', $pb.PbFieldType.OE, defaultOrMaker: $3295.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.UNSPECIFIED, valueOf: $3295.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.valueOf, enumValues: $3295.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier.values)
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
     ..pc<PriceOffering>(4, _omitFieldNames ? '' : 'priceOfferings', $pb.PbFieldType.PM, subBuilder: PriceOffering.create)
     ..hasRequiredFields = false
@@ -2319,9 +2319,9 @@ class PriceAsset extends $pb.GeneratedMessage {
 
   /// Required. The type of the price asset.
   @$pb.TagNumber(1)
-  $3293.PriceExtensionTypeEnum_PriceExtensionType get type => $_getN(0);
+  $3294.PriceExtensionTypeEnum_PriceExtensionType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($3293.PriceExtensionTypeEnum_PriceExtensionType v) { setField(1, v); }
+  set type($3294.PriceExtensionTypeEnum_PriceExtensionType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2329,9 +2329,9 @@ class PriceAsset extends $pb.GeneratedMessage {
 
   /// The price qualifier of the price asset.
   @$pb.TagNumber(2)
-  $3294.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier get priceQualifier => $_getN(1);
+  $3295.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier get priceQualifier => $_getN(1);
   @$pb.TagNumber(2)
-  set priceQualifier($3294.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier v) { setField(2, v); }
+  set priceQualifier($3295.PriceExtensionPriceQualifierEnum_PriceExtensionPriceQualifier v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPriceQualifier() => $_has(1);
   @$pb.TagNumber(2)
@@ -2359,8 +2359,8 @@ class PriceOffering extends $pb.GeneratedMessage {
   factory PriceOffering({
     $core.String? header,
     $core.String? description,
-    $3284.Money? price,
-    $3295.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit? unit,
+    $3285.Money? price,
+    $3296.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit? unit,
     $core.String? finalUrl,
     $core.String? finalMobileUrl,
   }) {
@@ -2392,8 +2392,8 @@ class PriceOffering extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PriceOffering', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'header')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$3284.Money>(3, _omitFieldNames ? '' : 'price', subBuilder: $3284.Money.create)
-    ..e<$3295.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit>(4, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE, defaultOrMaker: $3295.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.UNSPECIFIED, valueOf: $3295.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.valueOf, enumValues: $3295.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.values)
+    ..aOM<$3285.Money>(3, _omitFieldNames ? '' : 'price', subBuilder: $3285.Money.create)
+    ..e<$3296.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit>(4, _omitFieldNames ? '' : 'unit', $pb.PbFieldType.OE, defaultOrMaker: $3296.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.UNSPECIFIED, valueOf: $3296.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.valueOf, enumValues: $3296.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit.values)
     ..aOS(5, _omitFieldNames ? '' : 'finalUrl')
     ..aOS(6, _omitFieldNames ? '' : 'finalMobileUrl')
     ..hasRequiredFields = false
@@ -2444,21 +2444,21 @@ class PriceOffering extends $pb.GeneratedMessage {
 
   /// Required. The price value of the price offering.
   @$pb.TagNumber(3)
-  $3284.Money get price => $_getN(2);
+  $3285.Money get price => $_getN(2);
   @$pb.TagNumber(3)
-  set price($3284.Money v) { setField(3, v); }
+  set price($3285.Money v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPrice() => $_has(2);
   @$pb.TagNumber(3)
   void clearPrice() => clearField(3);
   @$pb.TagNumber(3)
-  $3284.Money ensurePrice() => $_ensure(2);
+  $3285.Money ensurePrice() => $_ensure(2);
 
   /// The price unit of the price offering.
   @$pb.TagNumber(4)
-  $3295.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit get unit => $_getN(3);
+  $3296.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit get unit => $_getN(3);
   @$pb.TagNumber(4)
-  set unit($3295.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit v) { setField(4, v); }
+  set unit($3296.PriceExtensionPriceUnitEnum_PriceExtensionPriceUnit v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUnit() => $_has(3);
   @$pb.TagNumber(4)
@@ -2488,7 +2488,7 @@ class PriceOffering extends $pb.GeneratedMessage {
 /// A call to action asset.
 class CallToActionAsset extends $pb.GeneratedMessage {
   factory CallToActionAsset({
-    $3296.CallToActionTypeEnum_CallToActionType? callToAction,
+    $3297.CallToActionTypeEnum_CallToActionType? callToAction,
   }) {
     final $result = create();
     if (callToAction != null) {
@@ -2501,7 +2501,7 @@ class CallToActionAsset extends $pb.GeneratedMessage {
   factory CallToActionAsset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CallToActionAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..e<$3296.CallToActionTypeEnum_CallToActionType>(1, _omitFieldNames ? '' : 'callToAction', $pb.PbFieldType.OE, defaultOrMaker: $3296.CallToActionTypeEnum_CallToActionType.UNSPECIFIED, valueOf: $3296.CallToActionTypeEnum_CallToActionType.valueOf, enumValues: $3296.CallToActionTypeEnum_CallToActionType.values)
+    ..e<$3297.CallToActionTypeEnum_CallToActionType>(1, _omitFieldNames ? '' : 'callToAction', $pb.PbFieldType.OE, defaultOrMaker: $3297.CallToActionTypeEnum_CallToActionType.UNSPECIFIED, valueOf: $3297.CallToActionTypeEnum_CallToActionType.valueOf, enumValues: $3297.CallToActionTypeEnum_CallToActionType.values)
     ..hasRequiredFields = false
   ;
 
@@ -2528,9 +2528,9 @@ class CallToActionAsset extends $pb.GeneratedMessage {
 
   /// Call to action.
   @$pb.TagNumber(1)
-  $3296.CallToActionTypeEnum_CallToActionType get callToAction => $_getN(0);
+  $3297.CallToActionTypeEnum_CallToActionType get callToAction => $_getN(0);
   @$pb.TagNumber(1)
-  set callToAction($3296.CallToActionTypeEnum_CallToActionType v) { setField(1, v); }
+  set callToAction($3297.CallToActionTypeEnum_CallToActionType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCallToAction() => $_has(0);
   @$pb.TagNumber(1)
@@ -4592,7 +4592,7 @@ class LocationAsset extends $pb.GeneratedMessage {
   factory LocationAsset({
     $core.String? placeId,
     $core.Iterable<BusinessProfileLocation>? businessProfileLocations,
-    $3256.LocationOwnershipTypeEnum_LocationOwnershipType? locationOwnershipType,
+    $3257.LocationOwnershipTypeEnum_LocationOwnershipType? locationOwnershipType,
   }) {
     final $result = create();
     if (placeId != null) {
@@ -4613,7 +4613,7 @@ class LocationAsset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'placeId')
     ..pc<BusinessProfileLocation>(2, _omitFieldNames ? '' : 'businessProfileLocations', $pb.PbFieldType.PM, subBuilder: BusinessProfileLocation.create)
-    ..e<$3256.LocationOwnershipTypeEnum_LocationOwnershipType>(3, _omitFieldNames ? '' : 'locationOwnershipType', $pb.PbFieldType.OE, defaultOrMaker: $3256.LocationOwnershipTypeEnum_LocationOwnershipType.UNSPECIFIED, valueOf: $3256.LocationOwnershipTypeEnum_LocationOwnershipType.valueOf, enumValues: $3256.LocationOwnershipTypeEnum_LocationOwnershipType.values)
+    ..e<$3257.LocationOwnershipTypeEnum_LocationOwnershipType>(3, _omitFieldNames ? '' : 'locationOwnershipType', $pb.PbFieldType.OE, defaultOrMaker: $3257.LocationOwnershipTypeEnum_LocationOwnershipType.UNSPECIFIED, valueOf: $3257.LocationOwnershipTypeEnum_LocationOwnershipType.valueOf, enumValues: $3257.LocationOwnershipTypeEnum_LocationOwnershipType.values)
     ..hasRequiredFields = false
   ;
 
@@ -4663,9 +4663,9 @@ class LocationAsset extends $pb.GeneratedMessage {
   /// If the type is BUSINESS_OWNER, it will be served as a location extension.
   /// If the type is AFFILIATE, it will be served as an affiliate location.
   @$pb.TagNumber(3)
-  $3256.LocationOwnershipTypeEnum_LocationOwnershipType get locationOwnershipType => $_getN(2);
+  $3257.LocationOwnershipTypeEnum_LocationOwnershipType get locationOwnershipType => $_getN(2);
   @$pb.TagNumber(3)
-  set locationOwnershipType($3256.LocationOwnershipTypeEnum_LocationOwnershipType v) { setField(3, v); }
+  set locationOwnershipType($3257.LocationOwnershipTypeEnum_LocationOwnershipType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLocationOwnershipType() => $_has(2);
   @$pb.TagNumber(3)

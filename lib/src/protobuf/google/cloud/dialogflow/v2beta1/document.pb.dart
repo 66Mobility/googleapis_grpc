@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'document.pbenum.dart';
-import 'gcs.pb.dart' as $4498;
+import 'gcs.pb.dart' as $4500;
 
 export 'document.pbenum.dart';
 
 /// The status of a reload attempt.
 class Document_ReloadStatus extends $pb.GeneratedMessage {
   factory Document_ReloadStatus({
-    $1775.Timestamp? time,
-    $1795.Status? status,
+    $1776.Timestamp? time,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (time != null) {
@@ -41,8 +41,8 @@ class Document_ReloadStatus extends $pb.GeneratedMessage {
   factory Document_ReloadStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Document.ReloadStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'time', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'time', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -71,27 +71,27 @@ class Document_ReloadStatus extends $pb.GeneratedMessage {
   /// This reload may have been triggered automatically or manually and may
   /// not have succeeded.
   @$pb.TagNumber(1)
-  $1775.Timestamp get time => $_getN(0);
+  $1776.Timestamp get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($1775.Timestamp v) { setField(1, v); }
+  set time($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureTime() => $_ensure(0);
+  $1776.Timestamp ensureTime() => $_ensure(0);
 
   /// Output only. The status of a reload attempt or the initial load.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 }
 
 enum Document_Source {
@@ -689,7 +689,7 @@ enum ImportDocumentsRequest_Source {
 class ImportDocumentsRequest extends $pb.GeneratedMessage {
   factory ImportDocumentsRequest({
     $core.String? parent,
-    $4498.GcsSources? gcsSource,
+    $4500.GcsSources? gcsSource,
     ImportDocumentTemplate? documentTemplate,
     $core.bool? importGcsCustomMetadata,
   }) {
@@ -719,7 +719,7 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4498.GcsSources>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4498.GcsSources.create)
+    ..aOM<$4500.GcsSources>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4500.GcsSources.create)
     ..aOM<ImportDocumentTemplate>(3, _omitFieldNames ? '' : 'documentTemplate', subBuilder: ImportDocumentTemplate.create)
     ..aOB(4, _omitFieldNames ? '' : 'importGcsCustomMetadata')
     ..hasRequiredFields = false
@@ -768,15 +768,15 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
   ///  `gs://<bucket-name>/<object-name>`.
   ///  `gs://<bucket-name>/<object-path>/*.<extension>`.
   @$pb.TagNumber(2)
-  $4498.GcsSources get gcsSource => $_getN(1);
+  $4500.GcsSources get gcsSource => $_getN(1);
   @$pb.TagNumber(2)
-  set gcsSource($4498.GcsSources v) { setField(2, v); }
+  set gcsSource($4500.GcsSources v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcsSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearGcsSource() => clearField(2);
   @$pb.TagNumber(2)
-  $4498.GcsSources ensureGcsSource() => $_ensure(1);
+  $4500.GcsSources ensureGcsSource() => $_ensure(1);
 
   /// Required. Document template used for importing all the documents.
   @$pb.TagNumber(3)
@@ -879,7 +879,7 @@ class ImportDocumentTemplate extends $pb.GeneratedMessage {
 /// [Documents.ImportDocuments][google.cloud.dialogflow.v2beta1.Documents.ImportDocuments].
 class ImportDocumentsResponse extends $pb.GeneratedMessage {
   factory ImportDocumentsResponse({
-    $core.Iterable<$1795.Status>? warnings,
+    $core.Iterable<$1796.Status>? warnings,
   }) {
     final $result = create();
     if (warnings != null) {
@@ -892,7 +892,7 @@ class ImportDocumentsResponse extends $pb.GeneratedMessage {
   factory ImportDocumentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'warnings', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'warnings', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -919,7 +919,7 @@ class ImportDocumentsResponse extends $pb.GeneratedMessage {
 
   /// Includes details about skipped documents or any other warnings.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get warnings => $_getList(0);
+  $core.List<$1796.Status> get warnings => $_getList(0);
 }
 
 /// Request message for
@@ -982,7 +982,7 @@ class DeleteDocumentRequest extends $pb.GeneratedMessage {
 class UpdateDocumentRequest extends $pb.GeneratedMessage {
   factory UpdateDocumentRequest({
     Document? document,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (document != null) {
@@ -999,7 +999,7 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<Document>(1, _omitFieldNames ? '' : 'document', subBuilder: Document.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1040,21 +1040,21 @@ class UpdateDocumentRequest extends $pb.GeneratedMessage {
   /// Currently, only `display_name` can be updated, an InvalidArgument will be
   /// returned for attempting to update other fields.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Metadata related to the Export Data Operations (e.g. ExportDocument).
 class ExportOperationMetadata extends $pb.GeneratedMessage {
   factory ExportOperationMetadata({
-    $4498.GcsDestination? exportedGcsDestination,
+    $4500.GcsDestination? exportedGcsDestination,
   }) {
     final $result = create();
     if (exportedGcsDestination != null) {
@@ -1067,7 +1067,7 @@ class ExportOperationMetadata extends $pb.GeneratedMessage {
   factory ExportOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
-    ..aOM<$4498.GcsDestination>(1, _omitFieldNames ? '' : 'exportedGcsDestination', subBuilder: $4498.GcsDestination.create)
+    ..aOM<$4500.GcsDestination>(1, _omitFieldNames ? '' : 'exportedGcsDestination', subBuilder: $4500.GcsDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -1094,15 +1094,15 @@ class ExportOperationMetadata extends $pb.GeneratedMessage {
 
   /// Cloud Storage file path of the exported data.
   @$pb.TagNumber(1)
-  $4498.GcsDestination get exportedGcsDestination => $_getN(0);
+  $4500.GcsDestination get exportedGcsDestination => $_getN(0);
   @$pb.TagNumber(1)
-  set exportedGcsDestination($4498.GcsDestination v) { setField(1, v); }
+  set exportedGcsDestination($4500.GcsDestination v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasExportedGcsDestination() => $_has(0);
   @$pb.TagNumber(1)
   void clearExportedGcsDestination() => clearField(1);
   @$pb.TagNumber(1)
-  $4498.GcsDestination ensureExportedGcsDestination() => $_ensure(0);
+  $4500.GcsDestination ensureExportedGcsDestination() => $_ensure(0);
 }
 
 enum KnowledgeOperationMetadata_OperationMetadata {
@@ -1212,7 +1212,7 @@ enum ReloadDocumentRequest_Source {
 class ReloadDocumentRequest extends $pb.GeneratedMessage {
   factory ReloadDocumentRequest({
     $core.String? name,
-    $4498.GcsSource? gcsSource,
+    $4500.GcsSource? gcsSource,
     $core.bool? importGcsCustomMetadata,
   }) {
     final $result = create();
@@ -1238,7 +1238,7 @@ class ReloadDocumentRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReloadDocumentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4498.GcsSource>(3, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4498.GcsSource.create)
+    ..aOM<$4500.GcsSource>(3, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4500.GcsSource.create)
     ..aOB(4, _omitFieldNames ? '' : 'importGcsCustomMetadata')
     ..hasRequiredFields = false
   ;
@@ -1282,15 +1282,15 @@ class ReloadDocumentRequest extends $pb.GeneratedMessage {
   /// The path for a Cloud Storage source file for reloading document content.
   /// If not provided, the Document's existing source will be reloaded.
   @$pb.TagNumber(3)
-  $4498.GcsSource get gcsSource => $_getN(1);
+  $4500.GcsSource get gcsSource => $_getN(1);
   @$pb.TagNumber(3)
-  set gcsSource($4498.GcsSource v) { setField(3, v); }
+  set gcsSource($4500.GcsSource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGcsSource() => $_has(1);
   @$pb.TagNumber(3)
   void clearGcsSource() => clearField(3);
   @$pb.TagNumber(3)
-  $4498.GcsSource ensureGcsSource() => $_ensure(1);
+  $4500.GcsSource ensureGcsSource() => $_ensure(1);
 
   /// Whether to import custom metadata from Google Cloud Storage.
   /// Only valid when the document source is Google Cloud Storage URI.

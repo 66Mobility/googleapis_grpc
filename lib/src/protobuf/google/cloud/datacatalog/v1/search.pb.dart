@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pbenum.dart' as $4446;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pbenum.dart' as $4448;
 import 'search.pbenum.dart';
 
 export 'search.pbenum.dart';
@@ -34,8 +34,8 @@ class SearchCatalogResult extends $pb.GeneratedMessage {
     $core.String? searchResultSubtype,
     $core.String? relativeResourceName,
     $core.String? linkedResource,
-    $1775.Timestamp? modifyTime,
-    $4446.IntegratedSystem? integratedSystem,
+    $1776.Timestamp? modifyTime,
+    $4448.IntegratedSystem? integratedSystem,
     $core.String? userSpecifiedSystem,
     $core.String? fullyQualifiedName,
     $core.String? displayName,
@@ -89,8 +89,8 @@ class SearchCatalogResult extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'searchResultSubtype')
     ..aOS(3, _omitFieldNames ? '' : 'relativeResourceName')
     ..aOS(4, _omitFieldNames ? '' : 'linkedResource')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'modifyTime', subBuilder: $1775.Timestamp.create)
-    ..e<$4446.IntegratedSystem>(8, _omitFieldNames ? '' : 'integratedSystem', $pb.PbFieldType.OE, defaultOrMaker: $4446.IntegratedSystem.INTEGRATED_SYSTEM_UNSPECIFIED, valueOf: $4446.IntegratedSystem.valueOf, enumValues: $4446.IntegratedSystem.values)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'modifyTime', subBuilder: $1776.Timestamp.create)
+    ..e<$4448.IntegratedSystem>(8, _omitFieldNames ? '' : 'integratedSystem', $pb.PbFieldType.OE, defaultOrMaker: $4448.IntegratedSystem.INTEGRATED_SYSTEM_UNSPECIFIED, valueOf: $4448.IntegratedSystem.valueOf, enumValues: $4448.IntegratedSystem.values)
     ..aOS(9, _omitFieldNames ? '' : 'userSpecifiedSystem')
     ..aOS(10, _omitFieldNames ? '' : 'fullyQualifiedName')
     ..aOS(12, _omitFieldNames ? '' : 'displayName')
@@ -184,22 +184,22 @@ class SearchCatalogResult extends $pb.GeneratedMessage {
 
   /// The last modification timestamp of the entry in the source system.
   @$pb.TagNumber(7)
-  $1775.Timestamp get modifyTime => $_getN(4);
+  $1776.Timestamp get modifyTime => $_getN(4);
   @$pb.TagNumber(7)
-  set modifyTime($1775.Timestamp v) { setField(7, v); }
+  set modifyTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasModifyTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearModifyTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureModifyTime() => $_ensure(4);
+  $1776.Timestamp ensureModifyTime() => $_ensure(4);
 
   /// Output only. The source system that Data Catalog automatically integrates
   /// with, such as BigQuery, Cloud Pub/Sub, or Dataproc Metastore.
   @$pb.TagNumber(8)
-  $4446.IntegratedSystem get integratedSystem => $_getN(5);
+  $4448.IntegratedSystem get integratedSystem => $_getN(5);
   @$pb.TagNumber(8)
-  set integratedSystem($4446.IntegratedSystem v) { setField(8, v); }
+  set integratedSystem($4448.IntegratedSystem v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasIntegratedSystem() => $_has(5);
   @$pb.TagNumber(8)

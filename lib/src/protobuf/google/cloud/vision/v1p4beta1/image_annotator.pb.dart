@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/color.pb.dart' as $4199;
-import '../../../type/latlng.pb.dart' as $1798;
-import 'face.pb.dart' as $4719;
-import 'geometry.pb.dart' as $4718;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/color.pb.dart' as $4200;
+import '../../../type/latlng.pb.dart' as $1799;
+import 'face.pb.dart' as $4721;
+import 'geometry.pb.dart' as $4720;
 import 'image_annotator.pbenum.dart';
-import 'product_search.pb.dart' as $4720;
-import 'text_annotation.pb.dart' as $4721;
-import 'web_detection.pb.dart' as $4722;
+import 'product_search.pb.dart' as $4722;
+import 'text_annotation.pb.dart' as $4723;
+import 'web_detection.pb.dart' as $4724;
 
 export 'image_annotator.pbenum.dart';
 
@@ -280,7 +280,7 @@ class Image extends $pb.GeneratedMessage {
 class FaceAnnotation_Landmark extends $pb.GeneratedMessage {
   factory FaceAnnotation_Landmark({
     FaceAnnotation_Landmark_Type? type,
-    $4718.Position? position,
+    $4720.Position? position,
   }) {
     final $result = create();
     if (type != null) {
@@ -297,7 +297,7 @@ class FaceAnnotation_Landmark extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FaceAnnotation.Landmark', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p4beta1'), createEmptyInstance: create)
     ..e<FaceAnnotation_Landmark_Type>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: FaceAnnotation_Landmark_Type.UNKNOWN_LANDMARK, valueOf: FaceAnnotation_Landmark_Type.valueOf, enumValues: FaceAnnotation_Landmark_Type.values)
-    ..aOM<$4718.Position>(4, _omitFieldNames ? '' : 'position', subBuilder: $4718.Position.create)
+    ..aOM<$4720.Position>(4, _omitFieldNames ? '' : 'position', subBuilder: $4720.Position.create)
     ..hasRequiredFields = false
   ;
 
@@ -334,22 +334,22 @@ class FaceAnnotation_Landmark extends $pb.GeneratedMessage {
 
   /// Face landmark position.
   @$pb.TagNumber(4)
-  $4718.Position get position => $_getN(1);
+  $4720.Position get position => $_getN(1);
   @$pb.TagNumber(4)
-  set position($4718.Position v) { setField(4, v); }
+  set position($4720.Position v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPosition() => $_has(1);
   @$pb.TagNumber(4)
   void clearPosition() => clearField(4);
   @$pb.TagNumber(4)
-  $4718.Position ensurePosition() => $_ensure(1);
+  $4720.Position ensurePosition() => $_ensure(1);
 }
 
 /// A face annotation object contains the results of face detection.
 class FaceAnnotation extends $pb.GeneratedMessage {
   factory FaceAnnotation({
-    $4718.BoundingPoly? boundingPoly,
-    $4718.BoundingPoly? fdBoundingPoly,
+    $4720.BoundingPoly? boundingPoly,
+    $4720.BoundingPoly? fdBoundingPoly,
     $core.Iterable<FaceAnnotation_Landmark>? landmarks,
     $core.double? rollAngle,
     $core.double? panAngle,
@@ -363,7 +363,7 @@ class FaceAnnotation extends $pb.GeneratedMessage {
     Likelihood? underExposedLikelihood,
     Likelihood? blurredLikelihood,
     Likelihood? headwearLikelihood,
-    $core.Iterable<$4719.FaceRecognitionResult>? recognitionResult,
+    $core.Iterable<$4721.FaceRecognitionResult>? recognitionResult,
   }) {
     final $result = create();
     if (boundingPoly != null) {
@@ -421,8 +421,8 @@ class FaceAnnotation extends $pb.GeneratedMessage {
   factory FaceAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FaceAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p4beta1'), createEmptyInstance: create)
-    ..aOM<$4718.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4718.BoundingPoly.create)
-    ..aOM<$4718.BoundingPoly>(2, _omitFieldNames ? '' : 'fdBoundingPoly', subBuilder: $4718.BoundingPoly.create)
+    ..aOM<$4720.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4720.BoundingPoly.create)
+    ..aOM<$4720.BoundingPoly>(2, _omitFieldNames ? '' : 'fdBoundingPoly', subBuilder: $4720.BoundingPoly.create)
     ..pc<FaceAnnotation_Landmark>(3, _omitFieldNames ? '' : 'landmarks', $pb.PbFieldType.PM, subBuilder: FaceAnnotation_Landmark.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'rollAngle', $pb.PbFieldType.OF)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'panAngle', $pb.PbFieldType.OF)
@@ -436,7 +436,7 @@ class FaceAnnotation extends $pb.GeneratedMessage {
     ..e<Likelihood>(13, _omitFieldNames ? '' : 'underExposedLikelihood', $pb.PbFieldType.OE, defaultOrMaker: Likelihood.UNKNOWN, valueOf: Likelihood.valueOf, enumValues: Likelihood.values)
     ..e<Likelihood>(14, _omitFieldNames ? '' : 'blurredLikelihood', $pb.PbFieldType.OE, defaultOrMaker: Likelihood.UNKNOWN, valueOf: Likelihood.valueOf, enumValues: Likelihood.values)
     ..e<Likelihood>(15, _omitFieldNames ? '' : 'headwearLikelihood', $pb.PbFieldType.OE, defaultOrMaker: Likelihood.UNKNOWN, valueOf: Likelihood.valueOf, enumValues: Likelihood.values)
-    ..pc<$4719.FaceRecognitionResult>(16, _omitFieldNames ? '' : 'recognitionResult', $pb.PbFieldType.PM, subBuilder: $4719.FaceRecognitionResult.create)
+    ..pc<$4721.FaceRecognitionResult>(16, _omitFieldNames ? '' : 'recognitionResult', $pb.PbFieldType.PM, subBuilder: $4721.FaceRecognitionResult.create)
     ..hasRequiredFields = false
   ;
 
@@ -469,15 +469,15 @@ class FaceAnnotation extends $pb.GeneratedMessage {
   /// `BoundingPoly` (the polygon will be unbounded) if only a partial face
   /// appears in the image to be annotated.
   @$pb.TagNumber(1)
-  $4718.BoundingPoly get boundingPoly => $_getN(0);
+  $4720.BoundingPoly get boundingPoly => $_getN(0);
   @$pb.TagNumber(1)
-  set boundingPoly($4718.BoundingPoly v) { setField(1, v); }
+  set boundingPoly($4720.BoundingPoly v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBoundingPoly() => $_has(0);
   @$pb.TagNumber(1)
   void clearBoundingPoly() => clearField(1);
   @$pb.TagNumber(1)
-  $4718.BoundingPoly ensureBoundingPoly() => $_ensure(0);
+  $4720.BoundingPoly ensureBoundingPoly() => $_ensure(0);
 
   /// The `fd_bounding_poly` bounding polygon is tighter than the
   /// `boundingPoly`, and encloses only the skin part of the face. Typically, it
@@ -486,15 +486,15 @@ class FaceAnnotation extends $pb.GeneratedMessage {
   /// landmarker results, only on the initial face detection, hence
   /// the <code>fd</code> (face detection) prefix.
   @$pb.TagNumber(2)
-  $4718.BoundingPoly get fdBoundingPoly => $_getN(1);
+  $4720.BoundingPoly get fdBoundingPoly => $_getN(1);
   @$pb.TagNumber(2)
-  set fdBoundingPoly($4718.BoundingPoly v) { setField(2, v); }
+  set fdBoundingPoly($4720.BoundingPoly v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFdBoundingPoly() => $_has(1);
   @$pb.TagNumber(2)
   void clearFdBoundingPoly() => clearField(2);
   @$pb.TagNumber(2)
-  $4718.BoundingPoly ensureFdBoundingPoly() => $_ensure(1);
+  $4720.BoundingPoly ensureFdBoundingPoly() => $_ensure(1);
 
   /// Detected face landmarks.
   @$pb.TagNumber(3)
@@ -631,13 +631,13 @@ class FaceAnnotation extends $pb.GeneratedMessage {
   /// [CelebritySet][google.cloud.vision.v1p4beta1.CelebritySet]. This field is
   /// sorted in order of decreasing confidence values.
   @$pb.TagNumber(16)
-  $core.List<$4719.FaceRecognitionResult> get recognitionResult => $_getList(15);
+  $core.List<$4721.FaceRecognitionResult> get recognitionResult => $_getList(15);
 }
 
 /// Detected entity location information.
 class LocationInfo extends $pb.GeneratedMessage {
   factory LocationInfo({
-    $1798.LatLng? latLng,
+    $1799.LatLng? latLng,
   }) {
     final $result = create();
     if (latLng != null) {
@@ -650,7 +650,7 @@ class LocationInfo extends $pb.GeneratedMessage {
   factory LocationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p4beta1'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1799.LatLng.create)
     ..hasRequiredFields = false
   ;
 
@@ -677,15 +677,15 @@ class LocationInfo extends $pb.GeneratedMessage {
 
   /// lat/long location coordinates.
   @$pb.TagNumber(1)
-  $1798.LatLng get latLng => $_getN(0);
+  $1799.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($1798.LatLng v) { setField(1, v); }
+  set latLng($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
   void clearLatLng() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureLatLng() => $_ensure(0);
+  $1799.LatLng ensureLatLng() => $_ensure(0);
 }
 
 /// A `Property` consists of a user-supplied name/value pair.
@@ -780,7 +780,7 @@ class EntityAnnotation extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
     $core.double? confidence,
     $core.double? topicality,
-    $4718.BoundingPoly? boundingPoly,
+    $4720.BoundingPoly? boundingPoly,
     $core.Iterable<LocationInfo>? locations,
     $core.Iterable<Property>? properties,
   }) {
@@ -826,7 +826,7 @@ class EntityAnnotation extends $pb.GeneratedMessage {
     ..a<$core.double>(4, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'topicality', $pb.PbFieldType.OF)
-    ..aOM<$4718.BoundingPoly>(7, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4718.BoundingPoly.create)
+    ..aOM<$4720.BoundingPoly>(7, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4720.BoundingPoly.create)
     ..pc<LocationInfo>(8, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: LocationInfo.create)
     ..pc<Property>(9, _omitFieldNames ? '' : 'properties', $pb.PbFieldType.PM, subBuilder: Property.create)
     ..hasRequiredFields = false
@@ -931,15 +931,15 @@ class EntityAnnotation extends $pb.GeneratedMessage {
   /// Image region to which this entity belongs. Not produced
   /// for `LABEL_DETECTION` features.
   @$pb.TagNumber(7)
-  $4718.BoundingPoly get boundingPoly => $_getN(6);
+  $4720.BoundingPoly get boundingPoly => $_getN(6);
   @$pb.TagNumber(7)
-  set boundingPoly($4718.BoundingPoly v) { setField(7, v); }
+  set boundingPoly($4720.BoundingPoly v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBoundingPoly() => $_has(6);
   @$pb.TagNumber(7)
   void clearBoundingPoly() => clearField(7);
   @$pb.TagNumber(7)
-  $4718.BoundingPoly ensureBoundingPoly() => $_ensure(6);
+  $4720.BoundingPoly ensureBoundingPoly() => $_ensure(6);
 
   /// The location information for the detected entity. Multiple
   /// `LocationInfo` elements can be present because one location may
@@ -962,7 +962,7 @@ class LocalizedObjectAnnotation extends $pb.GeneratedMessage {
     $core.String? languageCode,
     $core.String? name,
     $core.double? score,
-    $4718.BoundingPoly? boundingPoly,
+    $4720.BoundingPoly? boundingPoly,
   }) {
     final $result = create();
     if (mid != null) {
@@ -991,7 +991,7 @@ class LocalizedObjectAnnotation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'languageCode')
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
-    ..aOM<$4718.BoundingPoly>(5, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4718.BoundingPoly.create)
+    ..aOM<$4720.BoundingPoly>(5, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4720.BoundingPoly.create)
     ..hasRequiredFields = false
   ;
 
@@ -1060,15 +1060,15 @@ class LocalizedObjectAnnotation extends $pb.GeneratedMessage {
 
   /// Image region to which this object belongs. This must be populated.
   @$pb.TagNumber(5)
-  $4718.BoundingPoly get boundingPoly => $_getN(4);
+  $4720.BoundingPoly get boundingPoly => $_getN(4);
   @$pb.TagNumber(5)
-  set boundingPoly($4718.BoundingPoly v) { setField(5, v); }
+  set boundingPoly($4720.BoundingPoly v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBoundingPoly() => $_has(4);
   @$pb.TagNumber(5)
   void clearBoundingPoly() => clearField(5);
   @$pb.TagNumber(5)
-  $4718.BoundingPoly ensureBoundingPoly() => $_ensure(4);
+  $4720.BoundingPoly ensureBoundingPoly() => $_ensure(4);
 }
 
 /// Set of features pertaining to the image, computed by computer vision
@@ -1195,8 +1195,8 @@ class SafeSearchAnnotation extends $pb.GeneratedMessage {
 /// Rectangle determined by min and max `LatLng` pairs.
 class LatLongRect extends $pb.GeneratedMessage {
   factory LatLongRect({
-    $1798.LatLng? minLatLng,
-    $1798.LatLng? maxLatLng,
+    $1799.LatLng? minLatLng,
+    $1799.LatLng? maxLatLng,
   }) {
     final $result = create();
     if (minLatLng != null) {
@@ -1212,8 +1212,8 @@ class LatLongRect extends $pb.GeneratedMessage {
   factory LatLongRect.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LatLongRect', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p4beta1'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'minLatLng', subBuilder: $1798.LatLng.create)
-    ..aOM<$1798.LatLng>(2, _omitFieldNames ? '' : 'maxLatLng', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'minLatLng', subBuilder: $1799.LatLng.create)
+    ..aOM<$1799.LatLng>(2, _omitFieldNames ? '' : 'maxLatLng', subBuilder: $1799.LatLng.create)
     ..hasRequiredFields = false
   ;
 
@@ -1240,34 +1240,34 @@ class LatLongRect extends $pb.GeneratedMessage {
 
   /// Min lat/long pair.
   @$pb.TagNumber(1)
-  $1798.LatLng get minLatLng => $_getN(0);
+  $1799.LatLng get minLatLng => $_getN(0);
   @$pb.TagNumber(1)
-  set minLatLng($1798.LatLng v) { setField(1, v); }
+  set minLatLng($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinLatLng() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinLatLng() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureMinLatLng() => $_ensure(0);
+  $1799.LatLng ensureMinLatLng() => $_ensure(0);
 
   /// Max lat/long pair.
   @$pb.TagNumber(2)
-  $1798.LatLng get maxLatLng => $_getN(1);
+  $1799.LatLng get maxLatLng => $_getN(1);
   @$pb.TagNumber(2)
-  set maxLatLng($1798.LatLng v) { setField(2, v); }
+  set maxLatLng($1799.LatLng v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxLatLng() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxLatLng() => clearField(2);
   @$pb.TagNumber(2)
-  $1798.LatLng ensureMaxLatLng() => $_ensure(1);
+  $1799.LatLng ensureMaxLatLng() => $_ensure(1);
 }
 
 /// Color information consists of RGB channels, score, and the fraction of
 /// the image that the color occupies in the image.
 class ColorInfo extends $pb.GeneratedMessage {
   factory ColorInfo({
-    $4199.Color? color,
+    $4200.Color? color,
     $core.double? score,
     $core.double? pixelFraction,
   }) {
@@ -1288,7 +1288,7 @@ class ColorInfo extends $pb.GeneratedMessage {
   factory ColorInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColorInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p4beta1'), createEmptyInstance: create)
-    ..aOM<$4199.Color>(1, _omitFieldNames ? '' : 'color', subBuilder: $4199.Color.create)
+    ..aOM<$4200.Color>(1, _omitFieldNames ? '' : 'color', subBuilder: $4200.Color.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'pixelFraction', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
@@ -1317,15 +1317,15 @@ class ColorInfo extends $pb.GeneratedMessage {
 
   /// RGB components of the color.
   @$pb.TagNumber(1)
-  $4199.Color get color => $_getN(0);
+  $4200.Color get color => $_getN(0);
   @$pb.TagNumber(1)
-  set color($4199.Color v) { setField(1, v); }
+  set color($4200.Color v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasColor() => $_has(0);
   @$pb.TagNumber(1)
   void clearColor() => clearField(1);
   @$pb.TagNumber(1)
-  $4199.Color ensureColor() => $_ensure(0);
+  $4200.Color ensureColor() => $_ensure(0);
 
   /// Image-specific score for this color. Value in range [0, 1].
   @$pb.TagNumber(2)
@@ -1452,7 +1452,7 @@ class ImageProperties extends $pb.GeneratedMessage {
 /// Single crop hint that is used to generate a new crop when serving an image.
 class CropHint extends $pb.GeneratedMessage {
   factory CropHint({
-    $4718.BoundingPoly? boundingPoly,
+    $4720.BoundingPoly? boundingPoly,
     $core.double? confidence,
     $core.double? importanceFraction,
   }) {
@@ -1473,7 +1473,7 @@ class CropHint extends $pb.GeneratedMessage {
   factory CropHint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CropHint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p4beta1'), createEmptyInstance: create)
-    ..aOM<$4718.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4718.BoundingPoly.create)
+    ..aOM<$4720.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingPoly', subBuilder: $4720.BoundingPoly.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'importanceFraction', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
@@ -1503,15 +1503,15 @@ class CropHint extends $pb.GeneratedMessage {
   /// The bounding polygon for the crop region. The coordinates of the bounding
   /// box are in the original image's scale.
   @$pb.TagNumber(1)
-  $4718.BoundingPoly get boundingPoly => $_getN(0);
+  $4720.BoundingPoly get boundingPoly => $_getN(0);
   @$pb.TagNumber(1)
-  set boundingPoly($4718.BoundingPoly v) { setField(1, v); }
+  set boundingPoly($4720.BoundingPoly v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBoundingPoly() => $_has(0);
   @$pb.TagNumber(1)
   void clearBoundingPoly() => clearField(1);
   @$pb.TagNumber(1)
-  $4718.BoundingPoly ensureBoundingPoly() => $_ensure(0);
+  $4720.BoundingPoly ensureBoundingPoly() => $_ensure(0);
 
   /// Confidence of this being a salient region.  Range [0, 1].
   @$pb.TagNumber(2)
@@ -1754,9 +1754,9 @@ class ImageContext extends $pb.GeneratedMessage {
     LatLongRect? latLongRect,
     $core.Iterable<$core.String>? languageHints,
     CropHintsParams? cropHintsParams,
-    $4720.ProductSearchParams? productSearchParams,
+    $4722.ProductSearchParams? productSearchParams,
     WebDetectionParams? webDetectionParams,
-    $4719.FaceRecognitionParams? faceRecognitionParams,
+    $4721.FaceRecognitionParams? faceRecognitionParams,
     TextDetectionParams? textDetectionParams,
   }) {
     final $result = create();
@@ -1791,9 +1791,9 @@ class ImageContext extends $pb.GeneratedMessage {
     ..aOM<LatLongRect>(1, _omitFieldNames ? '' : 'latLongRect', subBuilder: LatLongRect.create)
     ..pPS(2, _omitFieldNames ? '' : 'languageHints')
     ..aOM<CropHintsParams>(4, _omitFieldNames ? '' : 'cropHintsParams', subBuilder: CropHintsParams.create)
-    ..aOM<$4720.ProductSearchParams>(5, _omitFieldNames ? '' : 'productSearchParams', subBuilder: $4720.ProductSearchParams.create)
+    ..aOM<$4722.ProductSearchParams>(5, _omitFieldNames ? '' : 'productSearchParams', subBuilder: $4722.ProductSearchParams.create)
     ..aOM<WebDetectionParams>(6, _omitFieldNames ? '' : 'webDetectionParams', subBuilder: WebDetectionParams.create)
-    ..aOM<$4719.FaceRecognitionParams>(10, _omitFieldNames ? '' : 'faceRecognitionParams', subBuilder: $4719.FaceRecognitionParams.create)
+    ..aOM<$4721.FaceRecognitionParams>(10, _omitFieldNames ? '' : 'faceRecognitionParams', subBuilder: $4721.FaceRecognitionParams.create)
     ..aOM<TextDetectionParams>(12, _omitFieldNames ? '' : 'textDetectionParams', subBuilder: TextDetectionParams.create)
     ..hasRequiredFields = false
   ;
@@ -1856,15 +1856,15 @@ class ImageContext extends $pb.GeneratedMessage {
 
   /// Parameters for product search.
   @$pb.TagNumber(5)
-  $4720.ProductSearchParams get productSearchParams => $_getN(3);
+  $4722.ProductSearchParams get productSearchParams => $_getN(3);
   @$pb.TagNumber(5)
-  set productSearchParams($4720.ProductSearchParams v) { setField(5, v); }
+  set productSearchParams($4722.ProductSearchParams v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasProductSearchParams() => $_has(3);
   @$pb.TagNumber(5)
   void clearProductSearchParams() => clearField(5);
   @$pb.TagNumber(5)
-  $4720.ProductSearchParams ensureProductSearchParams() => $_ensure(3);
+  $4722.ProductSearchParams ensureProductSearchParams() => $_ensure(3);
 
   /// Parameters for web detection.
   @$pb.TagNumber(6)
@@ -1880,15 +1880,15 @@ class ImageContext extends $pb.GeneratedMessage {
 
   /// Parameters for face recognition.
   @$pb.TagNumber(10)
-  $4719.FaceRecognitionParams get faceRecognitionParams => $_getN(5);
+  $4721.FaceRecognitionParams get faceRecognitionParams => $_getN(5);
   @$pb.TagNumber(10)
-  set faceRecognitionParams($4719.FaceRecognitionParams v) { setField(10, v); }
+  set faceRecognitionParams($4721.FaceRecognitionParams v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasFaceRecognitionParams() => $_has(5);
   @$pb.TagNumber(10)
   void clearFaceRecognitionParams() => clearField(10);
   @$pb.TagNumber(10)
-  $4719.FaceRecognitionParams ensureFaceRecognitionParams() => $_ensure(5);
+  $4721.FaceRecognitionParams ensureFaceRecognitionParams() => $_ensure(5);
 
   /// Parameters for text detection and document text detection.
   @$pb.TagNumber(12)
@@ -2063,11 +2063,11 @@ class AnnotateImageResponse extends $pb.GeneratedMessage {
     $core.Iterable<EntityAnnotation>? textAnnotations,
     SafeSearchAnnotation? safeSearchAnnotation,
     ImageProperties? imagePropertiesAnnotation,
-    $1795.Status? error,
+    $1796.Status? error,
     CropHintsAnnotation? cropHintsAnnotation,
-    $4721.TextAnnotation? fullTextAnnotation,
-    $4722.WebDetection? webDetection,
-    $4720.ProductSearchResults? productSearchResults,
+    $4723.TextAnnotation? fullTextAnnotation,
+    $4724.WebDetection? webDetection,
+    $4722.ProductSearchResults? productSearchResults,
     ImageAnnotationContext? context,
     $core.Iterable<LocalizedObjectAnnotation>? localizedObjectAnnotations,
   }) {
@@ -2128,11 +2128,11 @@ class AnnotateImageResponse extends $pb.GeneratedMessage {
     ..pc<EntityAnnotation>(5, _omitFieldNames ? '' : 'textAnnotations', $pb.PbFieldType.PM, subBuilder: EntityAnnotation.create)
     ..aOM<SafeSearchAnnotation>(6, _omitFieldNames ? '' : 'safeSearchAnnotation', subBuilder: SafeSearchAnnotation.create)
     ..aOM<ImageProperties>(8, _omitFieldNames ? '' : 'imagePropertiesAnnotation', subBuilder: ImageProperties.create)
-    ..aOM<$1795.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<CropHintsAnnotation>(11, _omitFieldNames ? '' : 'cropHintsAnnotation', subBuilder: CropHintsAnnotation.create)
-    ..aOM<$4721.TextAnnotation>(12, _omitFieldNames ? '' : 'fullTextAnnotation', subBuilder: $4721.TextAnnotation.create)
-    ..aOM<$4722.WebDetection>(13, _omitFieldNames ? '' : 'webDetection', subBuilder: $4722.WebDetection.create)
-    ..aOM<$4720.ProductSearchResults>(14, _omitFieldNames ? '' : 'productSearchResults', subBuilder: $4720.ProductSearchResults.create)
+    ..aOM<$4723.TextAnnotation>(12, _omitFieldNames ? '' : 'fullTextAnnotation', subBuilder: $4723.TextAnnotation.create)
+    ..aOM<$4724.WebDetection>(13, _omitFieldNames ? '' : 'webDetection', subBuilder: $4724.WebDetection.create)
+    ..aOM<$4722.ProductSearchResults>(14, _omitFieldNames ? '' : 'productSearchResults', subBuilder: $4722.ProductSearchResults.create)
     ..aOM<ImageAnnotationContext>(21, _omitFieldNames ? '' : 'context', subBuilder: ImageAnnotationContext.create)
     ..pc<LocalizedObjectAnnotation>(22, _omitFieldNames ? '' : 'localizedObjectAnnotations', $pb.PbFieldType.PM, subBuilder: LocalizedObjectAnnotation.create)
     ..hasRequiredFields = false
@@ -2207,15 +2207,15 @@ class AnnotateImageResponse extends $pb.GeneratedMessage {
   /// Note that filled-in image annotations are guaranteed to be
   /// correct, even when `error` is set.
   @$pb.TagNumber(9)
-  $1795.Status get error => $_getN(7);
+  $1796.Status get error => $_getN(7);
   @$pb.TagNumber(9)
-  set error($1795.Status v) { setField(9, v); }
+  set error($1796.Status v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(9)
   void clearError() => clearField(9);
   @$pb.TagNumber(9)
-  $1795.Status ensureError() => $_ensure(7);
+  $1796.Status ensureError() => $_ensure(7);
 
   /// If present, crop hints have completed successfully.
   @$pb.TagNumber(11)
@@ -2234,39 +2234,39 @@ class AnnotateImageResponse extends $pb.GeneratedMessage {
   /// This annotation provides the structural hierarchy for the OCR detected
   /// text.
   @$pb.TagNumber(12)
-  $4721.TextAnnotation get fullTextAnnotation => $_getN(9);
+  $4723.TextAnnotation get fullTextAnnotation => $_getN(9);
   @$pb.TagNumber(12)
-  set fullTextAnnotation($4721.TextAnnotation v) { setField(12, v); }
+  set fullTextAnnotation($4723.TextAnnotation v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasFullTextAnnotation() => $_has(9);
   @$pb.TagNumber(12)
   void clearFullTextAnnotation() => clearField(12);
   @$pb.TagNumber(12)
-  $4721.TextAnnotation ensureFullTextAnnotation() => $_ensure(9);
+  $4723.TextAnnotation ensureFullTextAnnotation() => $_ensure(9);
 
   /// If present, web detection has completed successfully.
   @$pb.TagNumber(13)
-  $4722.WebDetection get webDetection => $_getN(10);
+  $4724.WebDetection get webDetection => $_getN(10);
   @$pb.TagNumber(13)
-  set webDetection($4722.WebDetection v) { setField(13, v); }
+  set webDetection($4724.WebDetection v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasWebDetection() => $_has(10);
   @$pb.TagNumber(13)
   void clearWebDetection() => clearField(13);
   @$pb.TagNumber(13)
-  $4722.WebDetection ensureWebDetection() => $_ensure(10);
+  $4724.WebDetection ensureWebDetection() => $_ensure(10);
 
   /// If present, product search has completed successfully.
   @$pb.TagNumber(14)
-  $4720.ProductSearchResults get productSearchResults => $_getN(11);
+  $4722.ProductSearchResults get productSearchResults => $_getN(11);
   @$pb.TagNumber(14)
-  set productSearchResults($4720.ProductSearchResults v) { setField(14, v); }
+  set productSearchResults($4722.ProductSearchResults v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasProductSearchResults() => $_has(11);
   @$pb.TagNumber(14)
   void clearProductSearchResults() => clearField(14);
   @$pb.TagNumber(14)
-  $4720.ProductSearchResults ensureProductSearchResults() => $_ensure(11);
+  $4722.ProductSearchResults ensureProductSearchResults() => $_ensure(11);
 
   /// If present, contextual information is needed to understand where this image
   /// comes from.
@@ -2488,7 +2488,7 @@ class AnnotateFileResponse extends $pb.GeneratedMessage {
     InputConfig? inputConfig,
     $core.Iterable<AnnotateImageResponse>? responses,
     $core.int? totalPages,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (inputConfig != null) {
@@ -2513,7 +2513,7 @@ class AnnotateFileResponse extends $pb.GeneratedMessage {
     ..aOM<InputConfig>(1, _omitFieldNames ? '' : 'inputConfig', subBuilder: InputConfig.create)
     ..pc<AnnotateImageResponse>(2, _omitFieldNames ? '' : 'responses', $pb.PbFieldType.PM, subBuilder: AnnotateImageResponse.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalPages', $pb.PbFieldType.O3)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2568,15 +2568,15 @@ class AnnotateFileResponse extends $pb.GeneratedMessage {
   /// If set, represents the error message for the failed request. The
   /// `responses` field will not be set in this case.
   @$pb.TagNumber(4)
-  $1795.Status get error => $_getN(3);
+  $1796.Status get error => $_getN(3);
   @$pb.TagNumber(4)
-  set error($1795.Status v) { setField(4, v); }
+  set error($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(3);
   @$pb.TagNumber(4)
   void clearError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureError() => $_ensure(3);
+  $1796.Status ensureError() => $_ensure(3);
 }
 
 /// A list of requests to annotate files using the BatchAnnotateFiles API.
@@ -3334,8 +3334,8 @@ class GcsDestination extends $pb.GeneratedMessage {
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
     OperationMetadata_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -3355,8 +3355,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.vision.v1p4beta1'), createEmptyInstance: create)
     ..e<OperationMetadata_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: OperationMetadata_State.STATE_UNSPECIFIED, valueOf: OperationMetadata_State.valueOf, enumValues: OperationMetadata_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3393,27 +3393,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the batch request was received.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The time when the operation result was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 

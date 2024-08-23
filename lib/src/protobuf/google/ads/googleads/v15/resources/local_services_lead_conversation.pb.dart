@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/local_services_conversation_type.pbenum.dart' as $2314;
-import '../enums/local_services_participant_type.pbenum.dart' as $2315;
+import '../enums/local_services_conversation_type.pbenum.dart' as $2315;
+import '../enums/local_services_participant_type.pbenum.dart' as $2316;
 
 /// Data from Local Services Lead Conversation.
 /// Contains details of Lead Conversation which is generated when user calls,
@@ -25,8 +25,8 @@ class LocalServicesLeadConversation extends $pb.GeneratedMessage {
   factory LocalServicesLeadConversation({
     $core.String? resourceName,
     $fixnum.Int64? id,
-    $2314.LocalServicesLeadConversationTypeEnum_ConversationType? conversationChannel,
-    $2315.LocalServicesParticipantTypeEnum_ParticipantType? participantType,
+    $2315.LocalServicesLeadConversationTypeEnum_ConversationType? conversationChannel,
+    $2316.LocalServicesParticipantTypeEnum_ParticipantType? participantType,
     $core.String? lead,
     $core.String? eventDateTime,
     PhoneCallDetails? phoneCallDetails,
@@ -66,8 +66,8 @@ class LocalServicesLeadConversation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocalServicesLeadConversation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
-    ..e<$2314.LocalServicesLeadConversationTypeEnum_ConversationType>(3, _omitFieldNames ? '' : 'conversationChannel', $pb.PbFieldType.OE, defaultOrMaker: $2314.LocalServicesLeadConversationTypeEnum_ConversationType.UNSPECIFIED, valueOf: $2314.LocalServicesLeadConversationTypeEnum_ConversationType.valueOf, enumValues: $2314.LocalServicesLeadConversationTypeEnum_ConversationType.values)
-    ..e<$2315.LocalServicesParticipantTypeEnum_ParticipantType>(4, _omitFieldNames ? '' : 'participantType', $pb.PbFieldType.OE, defaultOrMaker: $2315.LocalServicesParticipantTypeEnum_ParticipantType.UNSPECIFIED, valueOf: $2315.LocalServicesParticipantTypeEnum_ParticipantType.valueOf, enumValues: $2315.LocalServicesParticipantTypeEnum_ParticipantType.values)
+    ..e<$2315.LocalServicesLeadConversationTypeEnum_ConversationType>(3, _omitFieldNames ? '' : 'conversationChannel', $pb.PbFieldType.OE, defaultOrMaker: $2315.LocalServicesLeadConversationTypeEnum_ConversationType.UNSPECIFIED, valueOf: $2315.LocalServicesLeadConversationTypeEnum_ConversationType.valueOf, enumValues: $2315.LocalServicesLeadConversationTypeEnum_ConversationType.values)
+    ..e<$2316.LocalServicesParticipantTypeEnum_ParticipantType>(4, _omitFieldNames ? '' : 'participantType', $pb.PbFieldType.OE, defaultOrMaker: $2316.LocalServicesParticipantTypeEnum_ParticipantType.UNSPECIFIED, valueOf: $2316.LocalServicesParticipantTypeEnum_ParticipantType.valueOf, enumValues: $2316.LocalServicesParticipantTypeEnum_ParticipantType.values)
     ..aOS(5, _omitFieldNames ? '' : 'lead')
     ..aOS(6, _omitFieldNames ? '' : 'eventDateTime')
     ..aOM<PhoneCallDetails>(7, _omitFieldNames ? '' : 'phoneCallDetails', subBuilder: PhoneCallDetails.create)
@@ -122,9 +122,9 @@ class LocalServicesLeadConversation extends $pb.GeneratedMessage {
   /// Output only. Type of GLS lead conversation, EMAIL, MESSAGE, PHONE_CALL,
   /// SMS, etc.
   @$pb.TagNumber(3)
-  $2314.LocalServicesLeadConversationTypeEnum_ConversationType get conversationChannel => $_getN(2);
+  $2315.LocalServicesLeadConversationTypeEnum_ConversationType get conversationChannel => $_getN(2);
   @$pb.TagNumber(3)
-  set conversationChannel($2314.LocalServicesLeadConversationTypeEnum_ConversationType v) { setField(3, v); }
+  set conversationChannel($2315.LocalServicesLeadConversationTypeEnum_ConversationType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasConversationChannel() => $_has(2);
   @$pb.TagNumber(3)
@@ -133,9 +133,9 @@ class LocalServicesLeadConversation extends $pb.GeneratedMessage {
   /// Output only. Type of participant in the lead conversation, ADVERTISER or
   /// CONSUMER.
   @$pb.TagNumber(4)
-  $2315.LocalServicesParticipantTypeEnum_ParticipantType get participantType => $_getN(3);
+  $2316.LocalServicesParticipantTypeEnum_ParticipantType get participantType => $_getN(3);
   @$pb.TagNumber(4)
-  set participantType($2315.LocalServicesParticipantTypeEnum_ParticipantType v) { setField(4, v); }
+  set participantType($2316.LocalServicesParticipantTypeEnum_ParticipantType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasParticipantType() => $_has(3);
   @$pb.TagNumber(4)

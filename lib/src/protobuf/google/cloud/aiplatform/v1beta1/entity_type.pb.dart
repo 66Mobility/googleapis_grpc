@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'featurestore_monitoring.pb.dart' as $4299;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'featurestore_monitoring.pb.dart' as $4300;
 
 /// An entity type is a type of object in a system that needs to be modeled and
 /// have stored information about. For example, driver is an entity type, and
@@ -23,11 +23,11 @@ class EntityType extends $pb.GeneratedMessage {
   factory EntityType({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? etag,
-    $4299.FeaturestoreMonitoringConfig? monitoringConfig,
+    $4300.FeaturestoreMonitoringConfig? monitoringConfig,
     $core.int? offlineStorageTtlDays,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -72,11 +72,11 @@ class EntityType extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'EntityType.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..aOS(7, _omitFieldNames ? '' : 'etag')
-    ..aOM<$4299.FeaturestoreMonitoringConfig>(8, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4299.FeaturestoreMonitoringConfig.create)
+    ..aOM<$4300.FeaturestoreMonitoringConfig>(8, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4300.FeaturestoreMonitoringConfig.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'offlineStorageTtlDays', $pb.PbFieldType.O3)
     ..aOB(11, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(12, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -133,27 +133,27 @@ class EntityType extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this EntityType was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Timestamp when this EntityType was most recently updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   ///  Optional. The labels with user-defined metadata to organize your
   ///  EntityTypes.
@@ -191,15 +191,15 @@ class EntityType extends $pb.GeneratedMessage {
   ///  analysis monitoring is enabled. Otherwise, snapshot analysis monitoring is
   ///  disabled.
   @$pb.TagNumber(8)
-  $4299.FeaturestoreMonitoringConfig get monitoringConfig => $_getN(6);
+  $4300.FeaturestoreMonitoringConfig get monitoringConfig => $_getN(6);
   @$pb.TagNumber(8)
-  set monitoringConfig($4299.FeaturestoreMonitoringConfig v) { setField(8, v); }
+  set monitoringConfig($4300.FeaturestoreMonitoringConfig v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMonitoringConfig() => $_has(6);
   @$pb.TagNumber(8)
   void clearMonitoringConfig() => clearField(8);
   @$pb.TagNumber(8)
-  $4299.FeaturestoreMonitoringConfig ensureMonitoringConfig() => $_ensure(6);
+  $4300.FeaturestoreMonitoringConfig ensureMonitoringConfig() => $_ensure(6);
 
   /// Optional. Config for data retention policy in offline storage.
   /// TTL in days for feature values that will be stored in offline storage.

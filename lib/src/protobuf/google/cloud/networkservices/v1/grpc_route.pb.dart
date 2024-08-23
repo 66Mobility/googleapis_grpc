@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'grpc_route.pbenum.dart';
 
 export 'grpc_route.pbenum.dart';
@@ -368,7 +368,7 @@ class GrpcRoute_Destination extends $pb.GeneratedMessage {
 /// injection before being sent to a destination.
 class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory GrpcRoute_FaultInjectionPolicy_Delay({
-    $1737.Duration? fixedDelay,
+    $1738.Duration? fixedDelay,
     $core.int? percentage,
   }) {
     final $result = create();
@@ -385,7 +385,7 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
   factory GrpcRoute_FaultInjectionPolicy_Delay.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GrpcRoute.FaultInjectionPolicy.Delay', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'fixedDelay', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'fixedDelay', subBuilder: $1738.Duration.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'percentage', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -413,15 +413,15 @@ class GrpcRoute_FaultInjectionPolicy_Delay extends $pb.GeneratedMessage {
 
   /// Specify a fixed delay before forwarding the request.
   @$pb.TagNumber(1)
-  $1737.Duration get fixedDelay => $_getN(0);
+  $1738.Duration get fixedDelay => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedDelay($1737.Duration v) { setField(1, v); }
+  set fixedDelay($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFixedDelay() => $_has(0);
   @$pb.TagNumber(1)
   void clearFixedDelay() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureFixedDelay() => $_ensure(0);
+  $1738.Duration ensureFixedDelay() => $_ensure(0);
 
   ///  The percentage of traffic on which delay will be injected.
   ///
@@ -666,7 +666,7 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   factory GrpcRoute_RouteAction({
     $core.Iterable<GrpcRoute_Destination>? destinations,
     GrpcRoute_FaultInjectionPolicy? faultInjectionPolicy,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     GrpcRoute_RetryPolicy? retryPolicy,
   }) {
     final $result = create();
@@ -691,7 +691,7 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GrpcRoute.RouteAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
     ..pc<GrpcRoute_Destination>(1, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM, subBuilder: GrpcRoute_Destination.create)
     ..aOM<GrpcRoute_FaultInjectionPolicy>(3, _omitFieldNames ? '' : 'faultInjectionPolicy', subBuilder: GrpcRoute_FaultInjectionPolicy.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOM<GrpcRoute_RetryPolicy>(8, _omitFieldNames ? '' : 'retryPolicy', subBuilder: GrpcRoute_RetryPolicy.create)
     ..hasRequiredFields = false
   ;
@@ -748,15 +748,15 @@ class GrpcRoute_RouteAction extends $pb.GeneratedMessage {
   /// up until the response has been completely processed. Timeout includes all
   /// retries.
   @$pb.TagNumber(7)
-  $1737.Duration get timeout => $_getN(2);
+  $1738.Duration get timeout => $_getN(2);
   @$pb.TagNumber(7)
-  set timeout($1737.Duration v) { setField(7, v); }
+  set timeout($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(7)
   void clearTimeout() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureTimeout() => $_ensure(2);
+  $1738.Duration ensureTimeout() => $_ensure(2);
 
   /// Optional. Specifies the retry policy associated with this route.
   @$pb.TagNumber(8)
@@ -843,8 +843,8 @@ class GrpcRoute_RouteRule extends $pb.GeneratedMessage {
 class GrpcRoute extends $pb.GeneratedMessage {
   factory GrpcRoute({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? description,
     $core.Iterable<$core.String>? hostnames,
@@ -892,8 +892,8 @@ class GrpcRoute extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GrpcRoute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'GrpcRoute.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networkservices.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..pPS(6, _omitFieldNames ? '' : 'hostnames')
@@ -938,27 +938,27 @@ class GrpcRoute extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Set of label tags associated with the GrpcRoute resource.
   @$pb.TagNumber(4)
@@ -1334,7 +1334,7 @@ class CreateGrpcRouteRequest extends $pb.GeneratedMessage {
 /// Request used by the UpdateGrpcRoute method.
 class UpdateGrpcRouteRequest extends $pb.GeneratedMessage {
   factory UpdateGrpcRouteRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     GrpcRoute? grpcRoute,
   }) {
     final $result = create();
@@ -1351,7 +1351,7 @@ class UpdateGrpcRouteRequest extends $pb.GeneratedMessage {
   factory UpdateGrpcRouteRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGrpcRouteRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<GrpcRoute>(2, _omitFieldNames ? '' : 'grpcRoute', subBuilder: GrpcRoute.create)
     ..hasRequiredFields = false
   ;
@@ -1383,15 +1383,15 @@ class UpdateGrpcRouteRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Updated GrpcRoute resource.
   @$pb.TagNumber(2)

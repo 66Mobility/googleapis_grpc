@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'dep.pbenum.dart';
 
 export 'dep.pbenum.dart';
@@ -84,7 +84,7 @@ class ExtensionChain_Extension extends $pb.GeneratedMessage {
     $core.String? authority,
     $core.String? service,
     $core.Iterable<EventType>? supportedEvents,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     $core.bool? failOpen,
     $core.Iterable<$core.String>? forwardHeaders,
   }) {
@@ -121,7 +121,7 @@ class ExtensionChain_Extension extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'authority')
     ..aOS(3, _omitFieldNames ? '' : 'service')
     ..pc<EventType>(4, _omitFieldNames ? '' : 'supportedEvents', $pb.PbFieldType.KE, valueOf: EventType.valueOf, enumValues: EventType.values, defaultEnumValue: EventType.EVENT_TYPE_UNSPECIFIED)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOB(6, _omitFieldNames ? '' : 'failOpen')
     ..pPS(7, _omitFieldNames ? '' : 'forwardHeaders')
     ..hasRequiredFields = false
@@ -207,15 +207,15 @@ class ExtensionChain_Extension extends $pb.GeneratedMessage {
   /// stream. The timeout must be between 10-1000 milliseconds. Required for
   /// Callout extensions.
   @$pb.TagNumber(5)
-  $1737.Duration get timeout => $_getN(4);
+  $1738.Duration get timeout => $_getN(4);
   @$pb.TagNumber(5)
-  set timeout($1737.Duration v) { setField(5, v); }
+  set timeout($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTimeout() => $_has(4);
   @$pb.TagNumber(5)
   void clearTimeout() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureTimeout() => $_ensure(4);
+  $1738.Duration ensureTimeout() => $_ensure(4);
 
   ///  Optional. Determines how the proxy behaves if the call to the extension
   ///  fails or times out.
@@ -342,14 +342,14 @@ class ExtensionChain extends $pb.GeneratedMessage {
 class LbTrafficExtension extends $pb.GeneratedMessage {
   factory LbTrafficExtension({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<$core.String>? forwardingRules,
     $core.Iterable<ExtensionChain>? extensionChains,
     LoadBalancingScheme? loadBalancingScheme,
     $core.String? description,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -387,14 +387,14 @@ class LbTrafficExtension extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LbTrafficExtension', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'LbTrafficExtension.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networkservices.v1'))
     ..pPS(5, _omitFieldNames ? '' : 'forwardingRules')
     ..pc<ExtensionChain>(7, _omitFieldNames ? '' : 'extensionChains', $pb.PbFieldType.PM, subBuilder: ExtensionChain.create)
     ..e<LoadBalancingScheme>(8, _omitFieldNames ? '' : 'loadBalancingScheme', $pb.PbFieldType.OE, defaultOrMaker: LoadBalancingScheme.LOAD_BALANCING_SCHEME_UNSPECIFIED, valueOf: LoadBalancingScheme.valueOf, enumValues: LoadBalancingScheme.values)
     ..aOS(9, _omitFieldNames ? '' : 'description')
-    ..aOM<$1734.Struct>(10, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(10, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -433,27 +433,27 @@ class LbTrafficExtension extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   ///  Optional. Set of labels associated with the `LbTrafficExtension` resource.
   ///
@@ -511,15 +511,15 @@ class LbTrafficExtension extends $pb.GeneratedMessage {
   ///  `{forwarding_rule_id}` - substituted with the forwarding rule's fully
   ///    qualified resource name.
   @$pb.TagNumber(10)
-  $1734.Struct get metadata => $_getN(8);
+  $1735.Struct get metadata => $_getN(8);
   @$pb.TagNumber(10)
-  set metadata($1734.Struct v) { setField(10, v); }
+  set metadata($1735.Struct v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMetadata() => $_has(8);
   @$pb.TagNumber(10)
   void clearMetadata() => clearField(10);
   @$pb.TagNumber(10)
-  $1734.Struct ensureMetadata() => $_ensure(8);
+  $1735.Struct ensureMetadata() => $_ensure(8);
 }
 
 /// Message for requesting list of `LbTrafficExtension` resources.
@@ -877,7 +877,7 @@ class CreateLbTrafficExtensionRequest extends $pb.GeneratedMessage {
 /// Message for updating a `LbTrafficExtension` resource.
 class UpdateLbTrafficExtensionRequest extends $pb.GeneratedMessage {
   factory UpdateLbTrafficExtensionRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     LbTrafficExtension? lbTrafficExtension,
     $core.String? requestId,
   }) {
@@ -898,7 +898,7 @@ class UpdateLbTrafficExtensionRequest extends $pb.GeneratedMessage {
   factory UpdateLbTrafficExtensionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateLbTrafficExtensionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<LbTrafficExtension>(2, _omitFieldNames ? '' : 'lbTrafficExtension', subBuilder: LbTrafficExtension.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -931,15 +931,15 @@ class UpdateLbTrafficExtensionRequest extends $pb.GeneratedMessage {
   /// the full request. A field is overwritten if it is in the mask. If the
   /// user does not specify a mask, then all fields are overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. `LbTrafficExtension` resource being updated.
   @$pb.TagNumber(2)
@@ -1062,14 +1062,14 @@ class DeleteLbTrafficExtensionRequest extends $pb.GeneratedMessage {
 class LbRouteExtension extends $pb.GeneratedMessage {
   factory LbRouteExtension({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<$core.String>? forwardingRules,
     $core.Iterable<ExtensionChain>? extensionChains,
     LoadBalancingScheme? loadBalancingScheme,
     $core.String? description,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -1107,14 +1107,14 @@ class LbRouteExtension extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LbRouteExtension', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'LbRouteExtension.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networkservices.v1'))
     ..pPS(5, _omitFieldNames ? '' : 'forwardingRules')
     ..pc<ExtensionChain>(7, _omitFieldNames ? '' : 'extensionChains', $pb.PbFieldType.PM, subBuilder: ExtensionChain.create)
     ..e<LoadBalancingScheme>(8, _omitFieldNames ? '' : 'loadBalancingScheme', $pb.PbFieldType.OE, defaultOrMaker: LoadBalancingScheme.LOAD_BALANCING_SCHEME_UNSPECIFIED, valueOf: LoadBalancingScheme.valueOf, enumValues: LoadBalancingScheme.values)
     ..aOS(9, _omitFieldNames ? '' : 'description')
-    ..aOM<$1734.Struct>(10, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(10, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1153,27 +1153,27 @@ class LbRouteExtension extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the resource was updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   ///  Optional. Set of labels associated with the `LbRouteExtension` resource.
   ///
@@ -1232,15 +1232,15 @@ class LbRouteExtension extends $pb.GeneratedMessage {
   ///  `{forwarding_rule_id}` - substituted with the forwarding rule's fully
   ///    qualified resource name.
   @$pb.TagNumber(10)
-  $1734.Struct get metadata => $_getN(8);
+  $1735.Struct get metadata => $_getN(8);
   @$pb.TagNumber(10)
-  set metadata($1734.Struct v) { setField(10, v); }
+  set metadata($1735.Struct v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasMetadata() => $_has(8);
   @$pb.TagNumber(10)
   void clearMetadata() => clearField(10);
   @$pb.TagNumber(10)
-  $1734.Struct ensureMetadata() => $_ensure(8);
+  $1735.Struct ensureMetadata() => $_ensure(8);
 }
 
 /// Message for requesting list of `LbRouteExtension` resources.
@@ -1598,7 +1598,7 @@ class CreateLbRouteExtensionRequest extends $pb.GeneratedMessage {
 /// Message for updating a `LbRouteExtension` resource.
 class UpdateLbRouteExtensionRequest extends $pb.GeneratedMessage {
   factory UpdateLbRouteExtensionRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     LbRouteExtension? lbRouteExtension,
     $core.String? requestId,
   }) {
@@ -1619,7 +1619,7 @@ class UpdateLbRouteExtensionRequest extends $pb.GeneratedMessage {
   factory UpdateLbRouteExtensionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateLbRouteExtensionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkservices.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<LbRouteExtension>(2, _omitFieldNames ? '' : 'lbRouteExtension', subBuilder: LbRouteExtension.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1652,15 +1652,15 @@ class UpdateLbRouteExtensionRequest extends $pb.GeneratedMessage {
   /// the full request. A field is overwritten if it is in the mask. If the
   /// user does not specify a mask, then all fields are overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. `LbRouteExtension` resource being updated.
   @$pb.TagNumber(2)

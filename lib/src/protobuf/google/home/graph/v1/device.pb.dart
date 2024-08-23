@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 
 /// Third-party device definition.
 class Device extends $pb.GeneratedMessage {
@@ -26,8 +26,8 @@ class Device extends $pb.GeneratedMessage {
     $core.String? roomHint,
     $core.String? structureHint,
     DeviceInfo? deviceInfo,
-    $1734.Struct? attributes,
-    $1734.Struct? customData,
+    $1735.Struct? attributes,
+    $1735.Struct? customData,
     $core.Iterable<AgentOtherDeviceId>? otherDeviceIds,
     $core.bool? notificationSupportedByAgent,
   }) {
@@ -83,8 +83,8 @@ class Device extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'roomHint')
     ..aOS(7, _omitFieldNames ? '' : 'structureHint')
     ..aOM<DeviceInfo>(8, _omitFieldNames ? '' : 'deviceInfo', subBuilder: DeviceInfo.create)
-    ..aOM<$1734.Struct>(9, _omitFieldNames ? '' : 'attributes', subBuilder: $1734.Struct.create)
-    ..aOM<$1734.Struct>(10, _omitFieldNames ? '' : 'customData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(9, _omitFieldNames ? '' : 'attributes', subBuilder: $1735.Struct.create)
+    ..aOM<$1735.Struct>(10, _omitFieldNames ? '' : 'customData', subBuilder: $1735.Struct.create)
     ..pc<AgentOtherDeviceId>(11, _omitFieldNames ? '' : 'otherDeviceIds', $pb.PbFieldType.PM, subBuilder: AgentOtherDeviceId.create)
     ..aOB(12, _omitFieldNames ? '' : 'notificationSupportedByAgent')
     ..hasRequiredFields = false
@@ -199,15 +199,15 @@ class Device extends $pb.GeneratedMessage {
 
   /// Attributes for the traits supported by the device.
   @$pb.TagNumber(9)
-  $1734.Struct get attributes => $_getN(8);
+  $1735.Struct get attributes => $_getN(8);
   @$pb.TagNumber(9)
-  set attributes($1734.Struct v) { setField(9, v); }
+  set attributes($1735.Struct v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasAttributes() => $_has(8);
   @$pb.TagNumber(9)
   void clearAttributes() => clearField(9);
   @$pb.TagNumber(9)
-  $1734.Struct ensureAttributes() => $_ensure(8);
+  $1735.Struct ensureAttributes() => $_ensure(8);
 
   /// Custom device attributes stored in Home Graph and provided to your
   /// smart home Action in each
@@ -218,15 +218,15 @@ class Device extends $pb.GeneratedMessage {
   /// Data in this object has a few constraints: No sensitive information,
   /// including but not limited to Personally Identifiable Information.
   @$pb.TagNumber(10)
-  $1734.Struct get customData => $_getN(9);
+  $1735.Struct get customData => $_getN(9);
   @$pb.TagNumber(10)
-  set customData($1734.Struct v) { setField(10, v); }
+  set customData($1735.Struct v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCustomData() => $_has(9);
   @$pb.TagNumber(10)
   void clearCustomData() => clearField(10);
   @$pb.TagNumber(10)
-  $1734.Struct ensureCustomData() => $_ensure(9);
+  $1735.Struct ensureCustomData() => $_ensure(9);
 
   /// Alternate IDs associated with this device.
   /// This is used to identify cloud synced devices enabled for [local

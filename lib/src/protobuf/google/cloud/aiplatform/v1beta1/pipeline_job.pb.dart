@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'artifact.pb.dart' as $597;
 import 'context.pb.dart' as $598;
-import 'encryption_spec.pb.dart' as $4281;
+import 'encryption_spec.pb.dart' as $4282;
 import 'execution.pb.dart' as $600;
-import 'pipeline_failure_policy.pbenum.dart' as $4315;
+import 'pipeline_failure_policy.pbenum.dart' as $4316;
 import 'pipeline_job.pbenum.dart';
-import 'pipeline_state.pbenum.dart' as $4314;
-import 'value.pb.dart' as $4313;
+import 'pipeline_state.pbenum.dart' as $4315;
+import 'value.pb.dart' as $4314;
 
 export 'pipeline_job.pbenum.dart';
 
@@ -101,10 +101,10 @@ class PipelineJob_RuntimeConfig_InputArtifact extends $pb.GeneratedMessage {
 class PipelineJob_RuntimeConfig extends $pb.GeneratedMessage {
   factory PipelineJob_RuntimeConfig({
   @$core.Deprecated('This field is deprecated.')
-    $core.Map<$core.String, $4313.Value>? parameters,
+    $core.Map<$core.String, $4314.Value>? parameters,
     $core.String? gcsOutputDirectory,
-    $core.Map<$core.String, $1734.Value>? parameterValues,
-    $4315.PipelineFailurePolicy? failurePolicy,
+    $core.Map<$core.String, $1735.Value>? parameterValues,
+    $4316.PipelineFailurePolicy? failurePolicy,
     $core.Map<$core.String, PipelineJob_RuntimeConfig_InputArtifact>? inputArtifacts,
   }) {
     final $result = create();
@@ -131,10 +131,10 @@ class PipelineJob_RuntimeConfig extends $pb.GeneratedMessage {
   factory PipelineJob_RuntimeConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineJob.RuntimeConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..m<$core.String, $4313.Value>(1, _omitFieldNames ? '' : 'parameters', entryClassName: 'PipelineJob.RuntimeConfig.ParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4313.Value.create, valueDefaultOrMaker: $4313.Value.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
+    ..m<$core.String, $4314.Value>(1, _omitFieldNames ? '' : 'parameters', entryClassName: 'PipelineJob.RuntimeConfig.ParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4314.Value.create, valueDefaultOrMaker: $4314.Value.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..aOS(2, _omitFieldNames ? '' : 'gcsOutputDirectory')
-    ..m<$core.String, $1734.Value>(3, _omitFieldNames ? '' : 'parameterValues', entryClassName: 'PipelineJob.RuntimeConfig.ParameterValuesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..e<$4315.PipelineFailurePolicy>(4, _omitFieldNames ? '' : 'failurePolicy', $pb.PbFieldType.OE, defaultOrMaker: $4315.PipelineFailurePolicy.PIPELINE_FAILURE_POLICY_UNSPECIFIED, valueOf: $4315.PipelineFailurePolicy.valueOf, enumValues: $4315.PipelineFailurePolicy.values)
+    ..m<$core.String, $1735.Value>(3, _omitFieldNames ? '' : 'parameterValues', entryClassName: 'PipelineJob.RuntimeConfig.ParameterValuesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
+    ..e<$4316.PipelineFailurePolicy>(4, _omitFieldNames ? '' : 'failurePolicy', $pb.PbFieldType.OE, defaultOrMaker: $4316.PipelineFailurePolicy.PIPELINE_FAILURE_POLICY_UNSPECIFIED, valueOf: $4316.PipelineFailurePolicy.valueOf, enumValues: $4316.PipelineFailurePolicy.values)
     ..m<$core.String, PipelineJob_RuntimeConfig_InputArtifact>(5, _omitFieldNames ? '' : 'inputArtifacts', entryClassName: 'PipelineJob.RuntimeConfig.InputArtifactsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: PipelineJob_RuntimeConfig_InputArtifact.create, valueDefaultOrMaker: PipelineJob_RuntimeConfig_InputArtifact.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -170,7 +170,7 @@ class PipelineJob_RuntimeConfig extends $pb.GeneratedMessage {
   /// such as pipelines built using Kubeflow Pipelines SDK 1.8 or lower.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $4313.Value> get parameters => $_getMap(0);
+  $core.Map<$core.String, $4314.Value> get parameters => $_getMap(0);
 
   /// Required. A path in a Cloud Storage bucket, which will be treated as the
   /// root output directory of the pipeline. It is used by the system to
@@ -196,7 +196,7 @@ class PipelineJob_RuntimeConfig extends $pb.GeneratedMessage {
   /// pipelines built using Kubeflow Pipelines SDK 1.9 or higher and the v2
   /// DSL.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $1734.Value> get parameterValues => $_getMap(2);
+  $core.Map<$core.String, $1735.Value> get parameterValues => $_getMap(2);
 
   /// Represents the failure policy of a pipeline. Currently, the default of a
   /// pipeline is that the pipeline will continue to run until no more tasks
@@ -205,9 +205,9 @@ class PipelineJob_RuntimeConfig extends $pb.GeneratedMessage {
   /// will stop scheduling any new tasks when a task has failed. Any scheduled
   /// tasks will continue to completion.
   @$pb.TagNumber(4)
-  $4315.PipelineFailurePolicy get failurePolicy => $_getN(3);
+  $4316.PipelineFailurePolicy get failurePolicy => $_getN(3);
   @$pb.TagNumber(4)
-  set failurePolicy($4315.PipelineFailurePolicy v) { setField(4, v); }
+  set failurePolicy($4316.PipelineFailurePolicy v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFailurePolicy() => $_has(3);
   @$pb.TagNumber(4)
@@ -224,17 +224,17 @@ class PipelineJob extends $pb.GeneratedMessage {
   factory PipelineJob({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
-    $1734.Struct? pipelineSpec,
-    $4314.PipelineState? state,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
+    $1735.Struct? pipelineSpec,
+    $4315.PipelineState? state,
     PipelineJobDetail? jobDetail,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.Map<$core.String, $core.String>? labels,
     PipelineJob_RuntimeConfig? runtimeConfig,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4282.EncryptionSpec? encryptionSpec,
     $core.String? serviceAccount,
     $core.String? network,
     $core.String? templateUri,
@@ -321,17 +321,17 @@ class PipelineJob extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1734.Struct>(7, _omitFieldNames ? '' : 'pipelineSpec', subBuilder: $1734.Struct.create)
-    ..e<$4314.PipelineState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4314.PipelineState.PIPELINE_STATE_UNSPECIFIED, valueOf: $4314.PipelineState.valueOf, enumValues: $4314.PipelineState.values)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1735.Struct>(7, _omitFieldNames ? '' : 'pipelineSpec', subBuilder: $1735.Struct.create)
+    ..e<$4315.PipelineState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4315.PipelineState.PIPELINE_STATE_UNSPECIFIED, valueOf: $4315.PipelineState.valueOf, enumValues: $4315.PipelineState.values)
     ..aOM<PipelineJobDetail>(9, _omitFieldNames ? '' : 'jobDetail', subBuilder: PipelineJobDetail.create)
-    ..aOM<$1795.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'PipelineJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..aOM<PipelineJob_RuntimeConfig>(12, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: PipelineJob_RuntimeConfig.create)
-    ..aOM<$4281.EncryptionSpec>(16, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4282.EncryptionSpec>(16, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOS(17, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(18, _omitFieldNames ? '' : 'network')
     ..aOS(19, _omitFieldNames ? '' : 'templateUri')
@@ -389,69 +389,69 @@ class PipelineJob extends $pb.GeneratedMessage {
 
   /// Output only. Pipeline creation time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Pipeline start time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Output only. Pipeline end time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 
   /// Output only. Timestamp when this PipelineJob was most recently updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// The spec of the pipeline.
   @$pb.TagNumber(7)
-  $1734.Struct get pipelineSpec => $_getN(6);
+  $1735.Struct get pipelineSpec => $_getN(6);
   @$pb.TagNumber(7)
-  set pipelineSpec($1734.Struct v) { setField(7, v); }
+  set pipelineSpec($1735.Struct v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPipelineSpec() => $_has(6);
   @$pb.TagNumber(7)
   void clearPipelineSpec() => clearField(7);
   @$pb.TagNumber(7)
-  $1734.Struct ensurePipelineSpec() => $_ensure(6);
+  $1735.Struct ensurePipelineSpec() => $_ensure(6);
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(8)
-  $4314.PipelineState get state => $_getN(7);
+  $4315.PipelineState get state => $_getN(7);
   @$pb.TagNumber(8)
-  set state($4314.PipelineState v) { setField(8, v); }
+  set state($4315.PipelineState v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
@@ -472,15 +472,15 @@ class PipelineJob extends $pb.GeneratedMessage {
   /// Output only. The error that occurred during pipeline execution.
   /// Only populated when the pipeline's state is FAILED or CANCELLED.
   @$pb.TagNumber(10)
-  $1795.Status get error => $_getN(9);
+  $1796.Status get error => $_getN(9);
   @$pb.TagNumber(10)
-  set error($1795.Status v) { setField(10, v); }
+  set error($1796.Status v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasError() => $_has(9);
   @$pb.TagNumber(10)
   void clearError() => clearField(10);
   @$pb.TagNumber(10)
-  $1795.Status ensureError() => $_ensure(9);
+  $1796.Status ensureError() => $_ensure(9);
 
   ///  The labels with user-defined metadata to organize PipelineJob.
   ///
@@ -510,15 +510,15 @@ class PipelineJob extends $pb.GeneratedMessage {
   /// Customer-managed encryption key spec for a pipelineJob. If set, this
   /// PipelineJob and all of its sub-resources will be secured by this key.
   @$pb.TagNumber(16)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(12);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(12);
   @$pb.TagNumber(16)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(16, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasEncryptionSpec() => $_has(12);
   @$pb.TagNumber(16)
   void clearEncryptionSpec() => clearField(16);
   @$pb.TagNumber(16)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(12);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(12);
 
   ///  The service account that the pipeline workload runs as.
   ///  If not specified, the Compute Engine default service account in the project
@@ -785,9 +785,9 @@ class PipelineJobDetail extends $pb.GeneratedMessage {
 /// A single record of the task status.
 class PipelineTaskDetail_PipelineTaskStatus extends $pb.GeneratedMessage {
   factory PipelineTaskDetail_PipelineTaskStatus({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     PipelineTaskDetail_State? state,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (updateTime != null) {
@@ -806,9 +806,9 @@ class PipelineTaskDetail_PipelineTaskStatus extends $pb.GeneratedMessage {
   factory PipelineTaskDetail_PipelineTaskStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineTaskDetail.PipelineTaskStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<PipelineTaskDetail_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PipelineTaskDetail_State.STATE_UNSPECIFIED, valueOf: PipelineTaskDetail_State.valueOf, enumValues: PipelineTaskDetail_State.values)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -835,15 +835,15 @@ class PipelineTaskDetail_PipelineTaskStatus extends $pb.GeneratedMessage {
 
   /// Output only. Update time of this status.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// Output only. The state of the task.
   @$pb.TagNumber(2)
@@ -861,15 +861,15 @@ class PipelineTaskDetail_PipelineTaskStatus extends $pb.GeneratedMessage {
   /// going to be retried. If the state is a non-final state, the error
   /// indicates a system-error being retried.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// A list of artifact metadata.
@@ -923,13 +923,13 @@ class PipelineTaskDetail extends $pb.GeneratedMessage {
   factory PipelineTaskDetail({
     $fixnum.Int64? taskId,
     $core.String? taskName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     PipelineTaskExecutorDetail? executorDetail,
     PipelineTaskDetail_State? state,
     $600.Execution? execution,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.Map<$core.String, PipelineTaskDetail_ArtifactList>? inputs,
     $core.Map<$core.String, PipelineTaskDetail_ArtifactList>? outputs,
     $fixnum.Int64? parentTaskId,
@@ -984,13 +984,13 @@ class PipelineTaskDetail extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PipelineTaskDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'taskId')
     ..aOS(2, _omitFieldNames ? '' : 'taskName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<PipelineTaskExecutorDetail>(6, _omitFieldNames ? '' : 'executorDetail', subBuilder: PipelineTaskExecutorDetail.create)
     ..e<PipelineTaskDetail_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PipelineTaskDetail_State.STATE_UNSPECIFIED, valueOf: PipelineTaskDetail_State.valueOf, enumValues: PipelineTaskDetail_State.values)
     ..aOM<$600.Execution>(8, _omitFieldNames ? '' : 'execution', subBuilder: $600.Execution.create)
-    ..aOM<$1795.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..m<$core.String, PipelineTaskDetail_ArtifactList>(10, _omitFieldNames ? '' : 'inputs', entryClassName: 'PipelineTaskDetail.InputsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: PipelineTaskDetail_ArtifactList.create, valueDefaultOrMaker: PipelineTaskDetail_ArtifactList.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..m<$core.String, PipelineTaskDetail_ArtifactList>(11, _omitFieldNames ? '' : 'outputs', entryClassName: 'PipelineTaskDetail.OutputsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: PipelineTaskDetail_ArtifactList.create, valueDefaultOrMaker: PipelineTaskDetail_ArtifactList.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..aInt64(12, _omitFieldNames ? '' : 'parentTaskId')
@@ -1042,39 +1042,39 @@ class PipelineTaskDetail extends $pb.GeneratedMessage {
 
   /// Output only. Task create time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Task start time.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Output only. Task end time.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 
   /// Output only. The detailed execution info.
   @$pb.TagNumber(6)
@@ -1113,15 +1113,15 @@ class PipelineTaskDetail extends $pb.GeneratedMessage {
   /// Output only. The error that occurred during task execution.
   /// Only populated when the task's state is FAILED or CANCELLED.
   @$pb.TagNumber(9)
-  $1795.Status get error => $_getN(8);
+  $1796.Status get error => $_getN(8);
   @$pb.TagNumber(9)
-  set error($1795.Status v) { setField(9, v); }
+  set error($1796.Status v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(9)
   void clearError() => clearField(9);
   @$pb.TagNumber(9)
-  $1795.Status ensureError() => $_ensure(8);
+  $1796.Status ensureError() => $_ensure(8);
 
   /// Output only. The runtime input artifacts of the task.
   @$pb.TagNumber(10)

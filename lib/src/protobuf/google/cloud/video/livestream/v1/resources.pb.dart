@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
-import 'outputs.pb.dart' as $4700;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
+import 'outputs.pb.dart' as $4702;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -76,12 +76,12 @@ class Input_SecurityRule extends $pb.GeneratedMessage {
 class Input extends $pb.GeneratedMessage {
   factory Input({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     Input_Type? type,
     $core.String? uri,
-    $4700.PreprocessingConfig? preprocessingConfig,
+    $4702.PreprocessingConfig? preprocessingConfig,
     Input_SecurityRule? securityRules,
     Input_Tier? tier,
     InputStreamProperty? inputStreamProperty,
@@ -125,12 +125,12 @@ class Input extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Input', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Input.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.video.livestream.v1'))
     ..e<Input_Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Input_Type.TYPE_UNSPECIFIED, valueOf: Input_Type.valueOf, enumValues: Input_Type.values)
     ..aOS(6, _omitFieldNames ? '' : 'uri')
-    ..aOM<$4700.PreprocessingConfig>(9, _omitFieldNames ? '' : 'preprocessingConfig', subBuilder: $4700.PreprocessingConfig.create)
+    ..aOM<$4702.PreprocessingConfig>(9, _omitFieldNames ? '' : 'preprocessingConfig', subBuilder: $4702.PreprocessingConfig.create)
     ..aOM<Input_SecurityRule>(12, _omitFieldNames ? '' : 'securityRules', subBuilder: Input_SecurityRule.create)
     ..e<Input_Tier>(14, _omitFieldNames ? '' : 'tier', $pb.PbFieldType.OE, defaultOrMaker: Input_Tier.TIER_UNSPECIFIED, valueOf: Input_Tier.valueOf, enumValues: Input_Tier.values)
     ..aOM<InputStreamProperty>(15, _omitFieldNames ? '' : 'inputStreamProperty', subBuilder: InputStreamProperty.create)
@@ -171,27 +171,27 @@ class Input extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined key/value metadata.
   @$pb.TagNumber(4)
@@ -224,15 +224,15 @@ class Input extends $pb.GeneratedMessage {
 
   /// Preprocessing configurations.
   @$pb.TagNumber(9)
-  $4700.PreprocessingConfig get preprocessingConfig => $_getN(6);
+  $4702.PreprocessingConfig get preprocessingConfig => $_getN(6);
   @$pb.TagNumber(9)
-  set preprocessingConfig($4700.PreprocessingConfig v) { setField(9, v); }
+  set preprocessingConfig($4702.PreprocessingConfig v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasPreprocessingConfig() => $_has(6);
   @$pb.TagNumber(9)
   void clearPreprocessingConfig() => clearField(9);
   @$pb.TagNumber(9)
-  $4700.PreprocessingConfig ensurePreprocessingConfig() => $_ensure(6);
+  $4702.PreprocessingConfig ensurePreprocessingConfig() => $_ensure(6);
 
   /// Security rule for access control.
   @$pb.TagNumber(12)
@@ -333,20 +333,20 @@ class Channel_Output extends $pb.GeneratedMessage {
 class Channel extends $pb.GeneratedMessage {
   factory Channel({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? activeInput,
     Channel_Output? output,
-    $core.Iterable<$4700.ElementaryStream>? elementaryStreams,
-    $core.Iterable<$4700.MuxStream>? muxStreams,
-    $core.Iterable<$4700.Manifest>? manifests,
-    $core.Iterable<$4700.SpriteSheet>? spriteSheets,
+    $core.Iterable<$4702.ElementaryStream>? elementaryStreams,
+    $core.Iterable<$4702.MuxStream>? muxStreams,
+    $core.Iterable<$4702.Manifest>? manifests,
+    $core.Iterable<$4702.SpriteSheet>? spriteSheets,
     Channel_StreamingState? streamingState,
     $core.Iterable<InputAttachment>? inputAttachments,
-    $1795.Status? streamingError,
+    $1796.Status? streamingError,
     LogConfig? logConfig,
-    $4700.TimecodeConfig? timecodeConfig,
+    $4702.TimecodeConfig? timecodeConfig,
     $core.Iterable<Encryption>? encryptions,
     InputConfig? inputConfig,
     RetentionConfig? retentionConfig,
@@ -418,20 +418,20 @@ class Channel extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Channel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Channel.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.video.livestream.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'activeInput')
     ..aOM<Channel_Output>(9, _omitFieldNames ? '' : 'output', subBuilder: Channel_Output.create)
-    ..pc<$4700.ElementaryStream>(10, _omitFieldNames ? '' : 'elementaryStreams', $pb.PbFieldType.PM, subBuilder: $4700.ElementaryStream.create)
-    ..pc<$4700.MuxStream>(11, _omitFieldNames ? '' : 'muxStreams', $pb.PbFieldType.PM, subBuilder: $4700.MuxStream.create)
-    ..pc<$4700.Manifest>(12, _omitFieldNames ? '' : 'manifests', $pb.PbFieldType.PM, subBuilder: $4700.Manifest.create)
-    ..pc<$4700.SpriteSheet>(13, _omitFieldNames ? '' : 'spriteSheets', $pb.PbFieldType.PM, subBuilder: $4700.SpriteSheet.create)
+    ..pc<$4702.ElementaryStream>(10, _omitFieldNames ? '' : 'elementaryStreams', $pb.PbFieldType.PM, subBuilder: $4702.ElementaryStream.create)
+    ..pc<$4702.MuxStream>(11, _omitFieldNames ? '' : 'muxStreams', $pb.PbFieldType.PM, subBuilder: $4702.MuxStream.create)
+    ..pc<$4702.Manifest>(12, _omitFieldNames ? '' : 'manifests', $pb.PbFieldType.PM, subBuilder: $4702.Manifest.create)
+    ..pc<$4702.SpriteSheet>(13, _omitFieldNames ? '' : 'spriteSheets', $pb.PbFieldType.PM, subBuilder: $4702.SpriteSheet.create)
     ..e<Channel_StreamingState>(14, _omitFieldNames ? '' : 'streamingState', $pb.PbFieldType.OE, defaultOrMaker: Channel_StreamingState.STREAMING_STATE_UNSPECIFIED, valueOf: Channel_StreamingState.valueOf, enumValues: Channel_StreamingState.values)
     ..pc<InputAttachment>(16, _omitFieldNames ? '' : 'inputAttachments', $pb.PbFieldType.PM, subBuilder: InputAttachment.create)
-    ..aOM<$1795.Status>(18, _omitFieldNames ? '' : 'streamingError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(18, _omitFieldNames ? '' : 'streamingError', subBuilder: $1796.Status.create)
     ..aOM<LogConfig>(19, _omitFieldNames ? '' : 'logConfig', subBuilder: LogConfig.create)
-    ..aOM<$4700.TimecodeConfig>(21, _omitFieldNames ? '' : 'timecodeConfig', subBuilder: $4700.TimecodeConfig.create)
+    ..aOM<$4702.TimecodeConfig>(21, _omitFieldNames ? '' : 'timecodeConfig', subBuilder: $4702.TimecodeConfig.create)
     ..pc<Encryption>(24, _omitFieldNames ? '' : 'encryptions', $pb.PbFieldType.PM, subBuilder: Encryption.create)
     ..aOM<InputConfig>(25, _omitFieldNames ? '' : 'inputConfig', subBuilder: InputConfig.create)
     ..aOM<RetentionConfig>(26, _omitFieldNames ? '' : 'retentionConfig', subBuilder: RetentionConfig.create)
@@ -473,27 +473,27 @@ class Channel extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined key/value metadata.
   @$pb.TagNumber(4)
@@ -528,19 +528,19 @@ class Channel extends $pb.GeneratedMessage {
 
   /// List of elementary streams.
   @$pb.TagNumber(10)
-  $core.List<$4700.ElementaryStream> get elementaryStreams => $_getList(6);
+  $core.List<$4702.ElementaryStream> get elementaryStreams => $_getList(6);
 
   /// List of multiplexing settings for output streams.
   @$pb.TagNumber(11)
-  $core.List<$4700.MuxStream> get muxStreams => $_getList(7);
+  $core.List<$4702.MuxStream> get muxStreams => $_getList(7);
 
   /// List of output manifests.
   @$pb.TagNumber(12)
-  $core.List<$4700.Manifest> get manifests => $_getList(8);
+  $core.List<$4702.Manifest> get manifests => $_getList(8);
 
   /// List of output sprite sheets.
   @$pb.TagNumber(13)
-  $core.List<$4700.SpriteSheet> get spriteSheets => $_getList(9);
+  $core.List<$4702.SpriteSheet> get spriteSheets => $_getList(9);
 
   /// Output only. State of the streaming operation.
   @$pb.TagNumber(14)
@@ -564,15 +564,15 @@ class Channel extends $pb.GeneratedMessage {
   /// is
   /// [STREAMING_ERROR][google.cloud.video.livestream.v1.Channel.StreamingState.STREAMING_ERROR].
   @$pb.TagNumber(18)
-  $1795.Status get streamingError => $_getN(12);
+  $1796.Status get streamingError => $_getN(12);
   @$pb.TagNumber(18)
-  set streamingError($1795.Status v) { setField(18, v); }
+  set streamingError($1796.Status v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasStreamingError() => $_has(12);
   @$pb.TagNumber(18)
   void clearStreamingError() => clearField(18);
   @$pb.TagNumber(18)
-  $1795.Status ensureStreamingError() => $_ensure(12);
+  $1796.Status ensureStreamingError() => $_ensure(12);
 
   /// Configuration of platform logs for this channel.
   @$pb.TagNumber(19)
@@ -588,15 +588,15 @@ class Channel extends $pb.GeneratedMessage {
 
   /// Configuration of timecode for this channel.
   @$pb.TagNumber(21)
-  $4700.TimecodeConfig get timecodeConfig => $_getN(14);
+  $4702.TimecodeConfig get timecodeConfig => $_getN(14);
   @$pb.TagNumber(21)
-  set timecodeConfig($4700.TimecodeConfig v) { setField(21, v); }
+  set timecodeConfig($4702.TimecodeConfig v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasTimecodeConfig() => $_has(14);
   @$pb.TagNumber(21)
   void clearTimecodeConfig() => clearField(21);
   @$pb.TagNumber(21)
-  $4700.TimecodeConfig ensureTimecodeConfig() => $_ensure(14);
+  $4702.TimecodeConfig ensureTimecodeConfig() => $_ensure(14);
 
   /// Encryption configurations for this channel. Each configuration has an ID
   /// which is referred to by each MuxStream to indicate which configuration is
@@ -991,7 +991,7 @@ class LogConfig extends $pb.GeneratedMessage {
 /// Configuration for retention of output files.
 class RetentionConfig extends $pb.GeneratedMessage {
   factory RetentionConfig({
-    $1737.Duration? retentionWindowDuration,
+    $1738.Duration? retentionWindowDuration,
   }) {
     final $result = create();
     if (retentionWindowDuration != null) {
@@ -1004,7 +1004,7 @@ class RetentionConfig extends $pb.GeneratedMessage {
   factory RetentionConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetentionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'retentionWindowDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'retentionWindowDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1047,21 +1047,21 @@ class RetentionConfig extends $pb.GeneratedMessage {
   ///  [Manifest.segment_keep_duration][google.cloud.video.livestream.v1.Manifest.segment_keep_duration]
   ///  is ignored.
   @$pb.TagNumber(1)
-  $1737.Duration get retentionWindowDuration => $_getN(0);
+  $1738.Duration get retentionWindowDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set retentionWindowDuration($1737.Duration v) { setField(1, v); }
+  set retentionWindowDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRetentionWindowDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearRetentionWindowDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureRetentionWindowDuration() => $_ensure(0);
+  $1738.Duration ensureRetentionWindowDuration() => $_ensure(0);
 }
 
 /// Properties of the input stream.
 class InputStreamProperty extends $pb.GeneratedMessage {
   factory InputStreamProperty({
-    $1775.Timestamp? lastEstablishTime,
+    $1776.Timestamp? lastEstablishTime,
     $core.Iterable<VideoStreamProperty>? videoStreams,
     $core.Iterable<AudioStreamProperty>? audioStreams,
   }) {
@@ -1082,7 +1082,7 @@ class InputStreamProperty extends $pb.GeneratedMessage {
   factory InputStreamProperty.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InputStreamProperty', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'lastEstablishTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'lastEstablishTime', subBuilder: $1776.Timestamp.create)
     ..pc<VideoStreamProperty>(2, _omitFieldNames ? '' : 'videoStreams', $pb.PbFieldType.PM, subBuilder: VideoStreamProperty.create)
     ..pc<AudioStreamProperty>(3, _omitFieldNames ? '' : 'audioStreams', $pb.PbFieldType.PM, subBuilder: AudioStreamProperty.create)
     ..hasRequiredFields = false
@@ -1112,15 +1112,15 @@ class InputStreamProperty extends $pb.GeneratedMessage {
   /// The time that the current input stream is accepted and the connection is
   /// established.
   @$pb.TagNumber(1)
-  $1775.Timestamp get lastEstablishTime => $_getN(0);
+  $1776.Timestamp get lastEstablishTime => $_getN(0);
   @$pb.TagNumber(1)
-  set lastEstablishTime($1775.Timestamp v) { setField(1, v); }
+  set lastEstablishTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLastEstablishTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearLastEstablishTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureLastEstablishTime() => $_ensure(0);
+  $1776.Timestamp ensureLastEstablishTime() => $_ensure(0);
 
   /// Properties of the video streams.
   @$pb.TagNumber(2)
@@ -1635,7 +1635,7 @@ class Event_InputSwitchTask extends $pb.GeneratedMessage {
 /// Inserts a new ad opportunity.
 class Event_AdBreakTask extends $pb.GeneratedMessage {
   factory Event_AdBreakTask({
-    $1737.Duration? duration,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (duration != null) {
@@ -1648,7 +1648,7 @@ class Event_AdBreakTask extends $pb.GeneratedMessage {
   factory Event_AdBreakTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event.AdBreakTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1675,21 +1675,21 @@ class Event_AdBreakTask extends $pb.GeneratedMessage {
 
   /// Duration of an ad opportunity. Must be greater than 0.
   @$pb.TagNumber(1)
-  $1737.Duration get duration => $_getN(0);
+  $1738.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($1737.Duration v) { setField(1, v); }
+  set duration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDuration() => $_ensure(0);
+  $1738.Duration ensureDuration() => $_ensure(0);
 }
 
 /// Inserts a slate.
 class Event_SlateTask extends $pb.GeneratedMessage {
   factory Event_SlateTask({
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $core.String? asset,
   }) {
     final $result = create();
@@ -1706,7 +1706,7 @@ class Event_SlateTask extends $pb.GeneratedMessage {
   factory Event_SlateTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event.SlateTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aOS(2, _omitFieldNames ? '' : 'asset')
     ..hasRequiredFields = false
   ;
@@ -1735,15 +1735,15 @@ class Event_SlateTask extends $pb.GeneratedMessage {
   /// Optional. Duration of the slate. Must be greater than 0 if specified.
   /// Omit this field for a long running slate.
   @$pb.TagNumber(1)
-  $1737.Duration get duration => $_getN(0);
+  $1738.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($1737.Duration v) { setField(1, v); }
+  set duration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDuration() => $_ensure(0);
+  $1738.Duration ensureDuration() => $_ensure(0);
 
   /// Slate asset to use for the duration. If its duration is less than the
   /// duration of the SlateTask, then the slate loops. The slate must be
@@ -1796,7 +1796,7 @@ class Event_ReturnToProgramTask extends $pb.GeneratedMessage {
 /// Mutes the stream.
 class Event_MuteTask extends $pb.GeneratedMessage {
   factory Event_MuteTask({
-    $1737.Duration? duration,
+    $1738.Duration? duration,
   }) {
     final $result = create();
     if (duration != null) {
@@ -1809,7 +1809,7 @@ class Event_MuteTask extends $pb.GeneratedMessage {
   factory Event_MuteTask.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event.MuteTask', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1837,15 +1837,15 @@ class Event_MuteTask extends $pb.GeneratedMessage {
   /// Duration for which the stream should be muted. If omitted, the stream
   /// will be muted until an UnmuteTask event is sent.
   @$pb.TagNumber(1)
-  $1737.Duration get duration => $_getN(0);
+  $1738.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($1737.Duration v) { setField(1, v); }
+  set duration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDuration() => $_ensure(0);
+  $1738.Duration ensureDuration() => $_ensure(0);
 }
 
 /// Unmutes the stream. The task fails if the stream is not currently muted.
@@ -1896,15 +1896,15 @@ enum Event_Task {
 class Event extends $pb.GeneratedMessage {
   factory Event({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     Event_InputSwitchTask? inputSwitch,
     Event_AdBreakTask? adBreak,
     $core.bool? executeNow,
-    $1775.Timestamp? executionTime,
+    $1776.Timestamp? executionTime,
     Event_State? state,
-    $1795.Status? error,
+    $1796.Status? error,
     Event_ReturnToProgramTask? returnToProgram,
     Event_SlateTask? slate,
     Event_MuteTask? mute,
@@ -1971,15 +1971,15 @@ class Event extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
     ..oo(0, [5, 6, 13, 14, 15, 16])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Event.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.video.livestream.v1'))
     ..aOM<Event_InputSwitchTask>(5, _omitFieldNames ? '' : 'inputSwitch', subBuilder: Event_InputSwitchTask.create)
     ..aOM<Event_AdBreakTask>(6, _omitFieldNames ? '' : 'adBreak', subBuilder: Event_AdBreakTask.create)
     ..aOB(9, _omitFieldNames ? '' : 'executeNow')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'executionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'executionTime', subBuilder: $1776.Timestamp.create)
     ..e<Event_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Event_State.STATE_UNSPECIFIED, valueOf: Event_State.valueOf, enumValues: Event_State.values)
-    ..aOM<$1795.Status>(12, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(12, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..aOM<Event_ReturnToProgramTask>(13, _omitFieldNames ? '' : 'returnToProgram', subBuilder: Event_ReturnToProgramTask.create)
     ..aOM<Event_SlateTask>(14, _omitFieldNames ? '' : 'slate', subBuilder: Event_SlateTask.create)
     ..aOM<Event_MuteTask>(15, _omitFieldNames ? '' : 'mute', subBuilder: Event_MuteTask.create)
@@ -2024,27 +2024,27 @@ class Event extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined key/value metadata.
   @$pb.TagNumber(4)
@@ -2096,15 +2096,15 @@ class Event extends $pb.GeneratedMessage {
   /// `false`, then you must set this field to at least 10 seconds in the future
   /// or else the event can't be created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get executionTime => $_getN(7);
+  $1776.Timestamp get executionTime => $_getN(7);
   @$pb.TagNumber(10)
-  set executionTime($1775.Timestamp v) { setField(10, v); }
+  set executionTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasExecutionTime() => $_has(7);
   @$pb.TagNumber(10)
   void clearExecutionTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureExecutionTime() => $_ensure(7);
+  $1776.Timestamp ensureExecutionTime() => $_ensure(7);
 
   /// Output only. The state of the event.
   @$pb.TagNumber(11)
@@ -2119,15 +2119,15 @@ class Event extends $pb.GeneratedMessage {
   /// Output only. An error object that describes the reason for the failure.
   /// This property is always present when `state` is `FAILED`.
   @$pb.TagNumber(12)
-  $1795.Status get error => $_getN(9);
+  $1796.Status get error => $_getN(9);
   @$pb.TagNumber(12)
-  set error($1795.Status v) { setField(12, v); }
+  set error($1796.Status v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasError() => $_has(9);
   @$pb.TagNumber(12)
   void clearError() => clearField(12);
   @$pb.TagNumber(12)
-  $1795.Status ensureError() => $_ensure(9);
+  $1796.Status ensureError() => $_ensure(9);
 
   /// Stops any running ad break.
   @$pb.TagNumber(13)
@@ -2182,8 +2182,8 @@ class Event extends $pb.GeneratedMessage {
 /// range.
 class Clip_TimeSlice extends $pb.GeneratedMessage {
   factory Clip_TimeSlice({
-    $1775.Timestamp? markinTime,
-    $1775.Timestamp? markoutTime,
+    $1776.Timestamp? markinTime,
+    $1776.Timestamp? markoutTime,
   }) {
     final $result = create();
     if (markinTime != null) {
@@ -2199,8 +2199,8 @@ class Clip_TimeSlice extends $pb.GeneratedMessage {
   factory Clip_TimeSlice.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Clip.TimeSlice', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'markinTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'markoutTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'markinTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'markoutTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2227,27 +2227,27 @@ class Clip_TimeSlice extends $pb.GeneratedMessage {
 
   /// The mark-in Unix epoch time in the original live stream manifest.
   @$pb.TagNumber(1)
-  $1775.Timestamp get markinTime => $_getN(0);
+  $1776.Timestamp get markinTime => $_getN(0);
   @$pb.TagNumber(1)
-  set markinTime($1775.Timestamp v) { setField(1, v); }
+  set markinTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMarkinTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearMarkinTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureMarkinTime() => $_ensure(0);
+  $1776.Timestamp ensureMarkinTime() => $_ensure(0);
 
   /// The mark-out Unix epoch time in the original live stream manifest.
   @$pb.TagNumber(2)
-  $1775.Timestamp get markoutTime => $_getN(1);
+  $1776.Timestamp get markoutTime => $_getN(1);
   @$pb.TagNumber(2)
-  set markoutTime($1775.Timestamp v) { setField(2, v); }
+  set markoutTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMarkoutTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearMarkoutTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureMarkoutTime() => $_ensure(1);
+  $1776.Timestamp ensureMarkoutTime() => $_ensure(1);
 }
 
 enum Clip_Slice_Kind {
@@ -2397,13 +2397,13 @@ class Clip_ClipManifest extends $pb.GeneratedMessage {
 class Clip extends $pb.GeneratedMessage {
   factory Clip({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     Clip_State? state,
     $core.String? outputUri,
-    $1795.Status? error,
+    $1796.Status? error,
     $core.Iterable<Clip_Slice>? slices,
     $core.Iterable<Clip_ClipManifest>? clipManifests,
   }) {
@@ -2446,13 +2446,13 @@ class Clip extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Clip', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'Clip.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.video.livestream.v1'))
     ..e<Clip_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Clip_State.STATE_UNSPECIFIED, valueOf: Clip_State.valueOf, enumValues: Clip_State.values)
     ..aOS(7, _omitFieldNames ? '' : 'outputUri')
-    ..aOM<$1795.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..pc<Clip_Slice>(10, _omitFieldNames ? '' : 'slices', $pb.PbFieldType.PM, subBuilder: Clip_Slice.create)
     ..pc<Clip_ClipManifest>(12, _omitFieldNames ? '' : 'clipManifests', $pb.PbFieldType.PM, subBuilder: Clip_ClipManifest.create)
     ..hasRequiredFields = false
@@ -2497,39 +2497,39 @@ class Clip extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of the clip resource.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The timestamp when the clip request starts to be processed.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Output only. The update timestamp of the clip resource.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The labels associated with this resource. Each label is a key-value pair.
   @$pb.TagNumber(5)
@@ -2565,15 +2565,15 @@ class Clip extends $pb.GeneratedMessage {
   /// Output only. An error object that describes the reason for the failure.
   /// This property only presents when `state` is `FAILED`.
   @$pb.TagNumber(9)
-  $1795.Status get error => $_getN(7);
+  $1796.Status get error => $_getN(7);
   @$pb.TagNumber(9)
-  set error($1795.Status v) { setField(9, v); }
+  set error($1796.Status v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(7);
   @$pb.TagNumber(9)
   void clearError() => clearField(9);
   @$pb.TagNumber(9)
-  $1795.Status ensureError() => $_ensure(7);
+  $1796.Status ensureError() => $_ensure(7);
 
   /// The specified ranges of segments to generate a clip.
   @$pb.TagNumber(10)
@@ -2701,14 +2701,14 @@ enum Asset_Resource {
 class Asset extends $pb.GeneratedMessage {
   factory Asset({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     Asset_VideoAsset? video,
     Asset_ImageAsset? image,
     $core.String? crc32c,
     Asset_State? state,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (name != null) {
@@ -2752,14 +2752,14 @@ class Asset extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Asset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Asset.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.video.livestream.v1'))
     ..aOM<Asset_VideoAsset>(5, _omitFieldNames ? '' : 'video', subBuilder: Asset_VideoAsset.create)
     ..aOM<Asset_ImageAsset>(6, _omitFieldNames ? '' : 'image', subBuilder: Asset_ImageAsset.create)
     ..aOS(7, _omitFieldNames ? '' : 'crc32c')
     ..e<Asset_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Asset_State.STATE_UNSPECIFIED, valueOf: Asset_State.valueOf, enumValues: Asset_State.values)
-    ..aOM<$1795.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(9, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2800,27 +2800,27 @@ class Asset extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined key/value metadata.
   @$pb.TagNumber(4)
@@ -2883,15 +2883,15 @@ class Asset extends $pb.GeneratedMessage {
   /// Output only. Only present when `state` is `ERROR`. The reason for the error
   /// state of the asset.
   @$pb.TagNumber(9)
-  $1795.Status get error => $_getN(8);
+  $1796.Status get error => $_getN(8);
   @$pb.TagNumber(9)
-  set error($1795.Status v) { setField(9, v); }
+  set error($1796.Status v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(9)
   void clearError() => clearField(9);
   @$pb.TagNumber(9)
-  $1795.Status ensureError() => $_ensure(8);
+  $1796.Status ensureError() => $_ensure(8);
 }
 
 /// Configuration for secrets stored in Google Secret Manager.
@@ -3540,8 +3540,8 @@ class Pool_NetworkConfig extends $pb.GeneratedMessage {
 class Pool extends $pb.GeneratedMessage {
   factory Pool({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     Pool_NetworkConfig? networkConfig,
   }) {
@@ -3569,8 +3569,8 @@ class Pool extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Pool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Pool.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.video.livestream.v1'))
     ..aOM<Pool_NetworkConfig>(5, _omitFieldNames ? '' : 'networkConfig', subBuilder: Pool_NetworkConfig.create)
     ..hasRequiredFields = false
@@ -3610,27 +3610,27 @@ class Pool extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The update time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// User-defined key/value metadata.
   @$pb.TagNumber(4)

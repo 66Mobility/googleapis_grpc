@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/billing_setup_status.pbenum.dart' as $3596;
-import '../enums/time_type.pbenum.dart' as $3524;
+import '../enums/billing_setup_status.pbenum.dart' as $3597;
+import '../enums/time_type.pbenum.dart' as $3525;
 
 /// Container of payments account information for this billing.
 class BillingSetup_PaymentsAccountInfo extends $pb.GeneratedMessage {
@@ -163,10 +163,10 @@ enum BillingSetup_EndTime {
 class BillingSetup extends $pb.GeneratedMessage {
   factory BillingSetup({
     $core.String? resourceName,
-    $3596.BillingSetupStatusEnum_BillingSetupStatus? status,
-    $3524.TimeTypeEnum_TimeType? startTimeType,
+    $3597.BillingSetupStatusEnum_BillingSetupStatus? status,
+    $3525.TimeTypeEnum_TimeType? startTimeType,
     BillingSetup_PaymentsAccountInfo? paymentsAccountInfo,
-    $3524.TimeTypeEnum_TimeType? endTimeType,
+    $3525.TimeTypeEnum_TimeType? endTimeType,
     $fixnum.Int64? id,
     $core.String? startDateTime,
     $core.String? endDateTime,
@@ -220,10 +220,10 @@ class BillingSetup extends $pb.GeneratedMessage {
     ..oo(0, [10, 16])
     ..oo(1, [14, 17])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3596.BillingSetupStatusEnum_BillingSetupStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3596.BillingSetupStatusEnum_BillingSetupStatus.UNSPECIFIED, valueOf: $3596.BillingSetupStatusEnum_BillingSetupStatus.valueOf, enumValues: $3596.BillingSetupStatusEnum_BillingSetupStatus.values)
-    ..e<$3524.TimeTypeEnum_TimeType>(10, _omitFieldNames ? '' : 'startTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3524.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3524.TimeTypeEnum_TimeType.valueOf, enumValues: $3524.TimeTypeEnum_TimeType.values)
+    ..e<$3597.BillingSetupStatusEnum_BillingSetupStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3597.BillingSetupStatusEnum_BillingSetupStatus.UNSPECIFIED, valueOf: $3597.BillingSetupStatusEnum_BillingSetupStatus.valueOf, enumValues: $3597.BillingSetupStatusEnum_BillingSetupStatus.values)
+    ..e<$3525.TimeTypeEnum_TimeType>(10, _omitFieldNames ? '' : 'startTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3525.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3525.TimeTypeEnum_TimeType.valueOf, enumValues: $3525.TimeTypeEnum_TimeType.values)
     ..aOM<BillingSetup_PaymentsAccountInfo>(12, _omitFieldNames ? '' : 'paymentsAccountInfo', subBuilder: BillingSetup_PaymentsAccountInfo.create)
-    ..e<$3524.TimeTypeEnum_TimeType>(14, _omitFieldNames ? '' : 'endTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3524.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3524.TimeTypeEnum_TimeType.valueOf, enumValues: $3524.TimeTypeEnum_TimeType.values)
+    ..e<$3525.TimeTypeEnum_TimeType>(14, _omitFieldNames ? '' : 'endTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3525.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3525.TimeTypeEnum_TimeType.valueOf, enumValues: $3525.TimeTypeEnum_TimeType.values)
     ..aInt64(15, _omitFieldNames ? '' : 'id')
     ..aOS(16, _omitFieldNames ? '' : 'startDateTime')
     ..aOS(17, _omitFieldNames ? '' : 'endDateTime')
@@ -273,9 +273,9 @@ class BillingSetup extends $pb.GeneratedMessage {
 
   /// Output only. The status of the billing setup.
   @$pb.TagNumber(3)
-  $3596.BillingSetupStatusEnum_BillingSetupStatus get status => $_getN(1);
+  $3597.BillingSetupStatusEnum_BillingSetupStatus get status => $_getN(1);
   @$pb.TagNumber(3)
-  set status($3596.BillingSetupStatusEnum_BillingSetupStatus v) { setField(3, v); }
+  set status($3597.BillingSetupStatusEnum_BillingSetupStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(3)
@@ -283,9 +283,9 @@ class BillingSetup extends $pb.GeneratedMessage {
 
   /// Immutable. The start time as a type. Only NOW is allowed.
   @$pb.TagNumber(10)
-  $3524.TimeTypeEnum_TimeType get startTimeType => $_getN(2);
+  $3525.TimeTypeEnum_TimeType get startTimeType => $_getN(2);
   @$pb.TagNumber(10)
-  set startTimeType($3524.TimeTypeEnum_TimeType v) { setField(10, v); }
+  set startTimeType($3525.TimeTypeEnum_TimeType v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasStartTimeType() => $_has(2);
   @$pb.TagNumber(10)
@@ -308,9 +308,9 @@ class BillingSetup extends $pb.GeneratedMessage {
 
   /// Output only. The end time as a type.  The only possible value is FOREVER.
   @$pb.TagNumber(14)
-  $3524.TimeTypeEnum_TimeType get endTimeType => $_getN(4);
+  $3525.TimeTypeEnum_TimeType get endTimeType => $_getN(4);
   @$pb.TagNumber(14)
-  set endTimeType($3524.TimeTypeEnum_TimeType v) { setField(14, v); }
+  set endTimeType($3525.TimeTypeEnum_TimeType v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasEndTimeType() => $_has(4);
   @$pb.TagNumber(14)

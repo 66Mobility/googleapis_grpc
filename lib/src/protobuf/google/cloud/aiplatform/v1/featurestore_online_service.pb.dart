@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'feature_selector.pb.dart' as $4257;
-import 'types.pb.dart' as $4258;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'feature_selector.pb.dart' as $4258;
+import 'types.pb.dart' as $4259;
 
 /// Request message for
 /// [FeaturestoreOnlineServingService.WriteFeatureValues][google.cloud.aiplatform.v1.FeaturestoreOnlineServingService.WriteFeatureValues].
@@ -190,7 +190,7 @@ class ReadFeatureValuesRequest extends $pb.GeneratedMessage {
   factory ReadFeatureValuesRequest({
     $core.String? entityType,
     $core.String? entityId,
-    $4257.FeatureSelector? featureSelector,
+    $4258.FeatureSelector? featureSelector,
   }) {
     final $result = create();
     if (entityType != null) {
@@ -211,7 +211,7 @@ class ReadFeatureValuesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadFeatureValuesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'entityType')
     ..aOS(2, _omitFieldNames ? '' : 'entityId')
-    ..aOM<$4257.FeatureSelector>(3, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4257.FeatureSelector.create)
+    ..aOM<$4258.FeatureSelector>(3, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4258.FeatureSelector.create)
     ..hasRequiredFields = false
   ;
 
@@ -264,15 +264,15 @@ class ReadFeatureValuesRequest extends $pb.GeneratedMessage {
 
   /// Required. Selector choosing Features of the target EntityType.
   @$pb.TagNumber(3)
-  $4257.FeatureSelector get featureSelector => $_getN(2);
+  $4258.FeatureSelector get featureSelector => $_getN(2);
   @$pb.TagNumber(3)
-  set featureSelector($4257.FeatureSelector v) { setField(3, v); }
+  set featureSelector($4258.FeatureSelector v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFeatureSelector() => $_has(2);
   @$pb.TagNumber(3)
   void clearFeatureSelector() => clearField(3);
   @$pb.TagNumber(3)
-  $4257.FeatureSelector ensureFeatureSelector() => $_ensure(2);
+  $4258.FeatureSelector ensureFeatureSelector() => $_ensure(2);
 }
 
 /// Metadata for requested Features.
@@ -631,7 +631,7 @@ class StreamingReadFeatureValuesRequest extends $pb.GeneratedMessage {
   factory StreamingReadFeatureValuesRequest({
     $core.String? entityType,
     $core.Iterable<$core.String>? entityIds,
-    $4257.FeatureSelector? featureSelector,
+    $4258.FeatureSelector? featureSelector,
   }) {
     final $result = create();
     if (entityType != null) {
@@ -652,7 +652,7 @@ class StreamingReadFeatureValuesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingReadFeatureValuesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'entityType')
     ..pPS(2, _omitFieldNames ? '' : 'entityIds')
-    ..aOM<$4257.FeatureSelector>(3, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4257.FeatureSelector.create)
+    ..aOM<$4258.FeatureSelector>(3, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4258.FeatureSelector.create)
     ..hasRequiredFields = false
   ;
 
@@ -701,21 +701,21 @@ class StreamingReadFeatureValuesRequest extends $pb.GeneratedMessage {
   /// Required. Selector choosing Features of the target EntityType. Feature IDs
   /// will be deduplicated.
   @$pb.TagNumber(3)
-  $4257.FeatureSelector get featureSelector => $_getN(2);
+  $4258.FeatureSelector get featureSelector => $_getN(2);
   @$pb.TagNumber(3)
-  set featureSelector($4257.FeatureSelector v) { setField(3, v); }
+  set featureSelector($4258.FeatureSelector v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFeatureSelector() => $_has(2);
   @$pb.TagNumber(3)
   void clearFeatureSelector() => clearField(3);
   @$pb.TagNumber(3)
-  $4257.FeatureSelector ensureFeatureSelector() => $_ensure(2);
+  $4258.FeatureSelector ensureFeatureSelector() => $_ensure(2);
 }
 
 /// Metadata of feature value.
 class FeatureValue_Metadata extends $pb.GeneratedMessage {
   factory FeatureValue_Metadata({
-    $1775.Timestamp? generateTime,
+    $1776.Timestamp? generateTime,
   }) {
     final $result = create();
     if (generateTime != null) {
@@ -728,7 +728,7 @@ class FeatureValue_Metadata extends $pb.GeneratedMessage {
   factory FeatureValue_Metadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureValue.Metadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'generateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'generateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -760,15 +760,15 @@ class FeatureValue_Metadata extends $pb.GeneratedMessage {
   /// older than five years (1825 days) and no later than one year (366 days)
   /// in the future.
   @$pb.TagNumber(1)
-  $1775.Timestamp get generateTime => $_getN(0);
+  $1776.Timestamp get generateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set generateTime($1775.Timestamp v) { setField(1, v); }
+  set generateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenerateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenerateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureGenerateTime() => $_ensure(0);
+  $1776.Timestamp ensureGenerateTime() => $_ensure(0);
 }
 
 enum FeatureValue_Value {
@@ -792,10 +792,10 @@ class FeatureValue extends $pb.GeneratedMessage {
     $core.double? doubleValue,
     $fixnum.Int64? int64Value,
     $core.String? stringValue,
-    $4258.BoolArray? boolArrayValue,
-    $4258.DoubleArray? doubleArrayValue,
-    $4258.Int64Array? int64ArrayValue,
-    $4258.StringArray? stringArrayValue,
+    $4259.BoolArray? boolArrayValue,
+    $4259.DoubleArray? doubleArrayValue,
+    $4259.Int64Array? int64ArrayValue,
+    $4259.StringArray? stringArrayValue,
     $core.List<$core.int>? bytesValue,
     FeatureValue_Metadata? metadata,
     StructValue? structValue,
@@ -859,10 +859,10 @@ class FeatureValue extends $pb.GeneratedMessage {
     ..a<$core.double>(2, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aInt64(5, _omitFieldNames ? '' : 'int64Value')
     ..aOS(6, _omitFieldNames ? '' : 'stringValue')
-    ..aOM<$4258.BoolArray>(7, _omitFieldNames ? '' : 'boolArrayValue', subBuilder: $4258.BoolArray.create)
-    ..aOM<$4258.DoubleArray>(8, _omitFieldNames ? '' : 'doubleArrayValue', subBuilder: $4258.DoubleArray.create)
-    ..aOM<$4258.Int64Array>(11, _omitFieldNames ? '' : 'int64ArrayValue', subBuilder: $4258.Int64Array.create)
-    ..aOM<$4258.StringArray>(12, _omitFieldNames ? '' : 'stringArrayValue', subBuilder: $4258.StringArray.create)
+    ..aOM<$4259.BoolArray>(7, _omitFieldNames ? '' : 'boolArrayValue', subBuilder: $4259.BoolArray.create)
+    ..aOM<$4259.DoubleArray>(8, _omitFieldNames ? '' : 'doubleArrayValue', subBuilder: $4259.DoubleArray.create)
+    ..aOM<$4259.Int64Array>(11, _omitFieldNames ? '' : 'int64ArrayValue', subBuilder: $4259.Int64Array.create)
+    ..aOM<$4259.StringArray>(12, _omitFieldNames ? '' : 'stringArrayValue', subBuilder: $4259.StringArray.create)
     ..a<$core.List<$core.int>>(13, _omitFieldNames ? '' : 'bytesValue', $pb.PbFieldType.OY)
     ..aOM<FeatureValue_Metadata>(14, _omitFieldNames ? '' : 'metadata', subBuilder: FeatureValue_Metadata.create)
     ..aOM<StructValue>(15, _omitFieldNames ? '' : 'structValue', subBuilder: StructValue.create)
@@ -935,51 +935,51 @@ class FeatureValue extends $pb.GeneratedMessage {
 
   /// A list of bool type feature value.
   @$pb.TagNumber(7)
-  $4258.BoolArray get boolArrayValue => $_getN(4);
+  $4259.BoolArray get boolArrayValue => $_getN(4);
   @$pb.TagNumber(7)
-  set boolArrayValue($4258.BoolArray v) { setField(7, v); }
+  set boolArrayValue($4259.BoolArray v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBoolArrayValue() => $_has(4);
   @$pb.TagNumber(7)
   void clearBoolArrayValue() => clearField(7);
   @$pb.TagNumber(7)
-  $4258.BoolArray ensureBoolArrayValue() => $_ensure(4);
+  $4259.BoolArray ensureBoolArrayValue() => $_ensure(4);
 
   /// A list of double type feature value.
   @$pb.TagNumber(8)
-  $4258.DoubleArray get doubleArrayValue => $_getN(5);
+  $4259.DoubleArray get doubleArrayValue => $_getN(5);
   @$pb.TagNumber(8)
-  set doubleArrayValue($4258.DoubleArray v) { setField(8, v); }
+  set doubleArrayValue($4259.DoubleArray v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDoubleArrayValue() => $_has(5);
   @$pb.TagNumber(8)
   void clearDoubleArrayValue() => clearField(8);
   @$pb.TagNumber(8)
-  $4258.DoubleArray ensureDoubleArrayValue() => $_ensure(5);
+  $4259.DoubleArray ensureDoubleArrayValue() => $_ensure(5);
 
   /// A list of int64 type feature value.
   @$pb.TagNumber(11)
-  $4258.Int64Array get int64ArrayValue => $_getN(6);
+  $4259.Int64Array get int64ArrayValue => $_getN(6);
   @$pb.TagNumber(11)
-  set int64ArrayValue($4258.Int64Array v) { setField(11, v); }
+  set int64ArrayValue($4259.Int64Array v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasInt64ArrayValue() => $_has(6);
   @$pb.TagNumber(11)
   void clearInt64ArrayValue() => clearField(11);
   @$pb.TagNumber(11)
-  $4258.Int64Array ensureInt64ArrayValue() => $_ensure(6);
+  $4259.Int64Array ensureInt64ArrayValue() => $_ensure(6);
 
   /// A list of string type feature value.
   @$pb.TagNumber(12)
-  $4258.StringArray get stringArrayValue => $_getN(7);
+  $4259.StringArray get stringArrayValue => $_getN(7);
   @$pb.TagNumber(12)
-  set stringArrayValue($4258.StringArray v) { setField(12, v); }
+  set stringArrayValue($4259.StringArray v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasStringArrayValue() => $_has(7);
   @$pb.TagNumber(12)
   void clearStringArrayValue() => clearField(12);
   @$pb.TagNumber(12)
-  $4258.StringArray ensureStringArrayValue() => $_ensure(7);
+  $4259.StringArray ensureStringArrayValue() => $_ensure(7);
 
   /// Bytes feature value.
   @$pb.TagNumber(13)

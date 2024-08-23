@@ -15,11 +15,11 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../iam/v1/policy.pb.dart' as $463;
 import '../../../protobuf/empty.pb.dart' as $3;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/expr.pb.dart' as $4213;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/expr.pb.dart' as $4214;
 import 'security_center_management.pbenum.dart';
 
 export 'security_center_management.pbenum.dart';
@@ -108,8 +108,8 @@ class SecurityCenterService extends $pb.GeneratedMessage {
     SecurityCenterService_EnablementState? intendedEnablementState,
     SecurityCenterService_EnablementState? effectiveEnablementState,
     $core.Map<$core.String, SecurityCenterService_ModuleSettings>? modules,
-    $1775.Timestamp? updateTime,
-    $1734.Struct? serviceConfig,
+    $1776.Timestamp? updateTime,
+    $1735.Struct? serviceConfig,
   }) {
     final $result = create();
     if (name != null) {
@@ -141,8 +141,8 @@ class SecurityCenterService extends $pb.GeneratedMessage {
     ..e<SecurityCenterService_EnablementState>(2, _omitFieldNames ? '' : 'intendedEnablementState', $pb.PbFieldType.OE, defaultOrMaker: SecurityCenterService_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: SecurityCenterService_EnablementState.valueOf, enumValues: SecurityCenterService_EnablementState.values)
     ..e<SecurityCenterService_EnablementState>(3, _omitFieldNames ? '' : 'effectiveEnablementState', $pb.PbFieldType.OE, defaultOrMaker: SecurityCenterService_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: SecurityCenterService_EnablementState.valueOf, enumValues: SecurityCenterService_EnablementState.values)
     ..m<$core.String, SecurityCenterService_ModuleSettings>(4, _omitFieldNames ? '' : 'modules', entryClassName: 'SecurityCenterService.ModulesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: SecurityCenterService_ModuleSettings.create, valueDefaultOrMaker: SecurityCenterService_ModuleSettings.getDefault, packageName: const $pb.PackageName('google.cloud.securitycentermanagement.v1'))
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'serviceConfig', subBuilder: $1734.Struct.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'serviceConfig', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -227,28 +227,28 @@ class SecurityCenterService extends $pb.GeneratedMessage {
   /// explicit user update or due to a side effect of another system change such
   /// as billing subscription expiry.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Optional. Additional service specific configuration. Not all services will
   /// utilize this field.
   @$pb.TagNumber(6)
-  $1734.Struct get serviceConfig => $_getN(5);
+  $1735.Struct get serviceConfig => $_getN(5);
   @$pb.TagNumber(6)
-  set serviceConfig($1734.Struct v) { setField(6, v); }
+  set serviceConfig($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasServiceConfig() => $_has(5);
   @$pb.TagNumber(6)
   void clearServiceConfig() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureServiceConfig() => $_ensure(5);
+  $1735.Struct ensureServiceConfig() => $_ensure(5);
 }
 
 /// An EffectiveSecurityHealthAnalyticsCustomModule is the representation of
@@ -584,7 +584,7 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     SecurityHealthAnalyticsCustomModule_EnablementState? enablementState,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? lastEditor,
     $core.String? ancestorModule,
     CustomConfig? customConfig,
@@ -621,7 +621,7 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..e<SecurityHealthAnalyticsCustomModule_EnablementState>(3, _omitFieldNames ? '' : 'enablementState', $pb.PbFieldType.OE, defaultOrMaker: SecurityHealthAnalyticsCustomModule_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: SecurityHealthAnalyticsCustomModule_EnablementState.valueOf, enumValues: SecurityHealthAnalyticsCustomModule_EnablementState.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'lastEditor')
     ..aOS(6, _omitFieldNames ? '' : 'ancestorModule')
     ..aOM<CustomConfig>(7, _omitFieldNames ? '' : 'customConfig', subBuilder: CustomConfig.create)
@@ -689,15 +689,15 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the custom module was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. The editor that last updated the custom module.
   @$pb.TagNumber(5)
@@ -739,7 +739,7 @@ class SecurityHealthAnalyticsCustomModule extends $pb.GeneratedMessage {
 class CustomConfig_CustomOutputSpec_Property extends $pb.GeneratedMessage {
   factory CustomConfig_CustomOutputSpec_Property({
     $core.String? name,
-    $4213.Expr? valueExpression,
+    $4214.Expr? valueExpression,
   }) {
     final $result = create();
     if (name != null) {
@@ -756,7 +756,7 @@ class CustomConfig_CustomOutputSpec_Property extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomConfig.CustomOutputSpec.Property', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4213.Expr>(2, _omitFieldNames ? '' : 'valueExpression', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(2, _omitFieldNames ? '' : 'valueExpression', subBuilder: $4214.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -795,15 +795,15 @@ class CustomConfig_CustomOutputSpec_Property extends $pb.GeneratedMessage {
   /// can be specified to return the value of the property or a text string
   /// enclosed in quotation marks.
   @$pb.TagNumber(2)
-  $4213.Expr get valueExpression => $_getN(1);
+  $4214.Expr get valueExpression => $_getN(1);
   @$pb.TagNumber(2)
-  set valueExpression($4213.Expr v) { setField(2, v); }
+  set valueExpression($4214.Expr v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValueExpression() => $_has(1);
   @$pb.TagNumber(2)
   void clearValueExpression() => clearField(2);
   @$pb.TagNumber(2)
-  $4213.Expr ensureValueExpression() => $_ensure(1);
+  $4214.Expr ensureValueExpression() => $_ensure(1);
 }
 
 /// A set of optional name-value pairs that define custom source properties to
@@ -906,7 +906,7 @@ class CustomConfig_ResourceSelector extends $pb.GeneratedMessage {
 /// detectors that generate custom findings for resources that you specify.
 class CustomConfig extends $pb.GeneratedMessage {
   factory CustomConfig({
-    $4213.Expr? predicate,
+    $4214.Expr? predicate,
     CustomConfig_CustomOutputSpec? customOutput,
     CustomConfig_ResourceSelector? resourceSelector,
     CustomConfig_Severity? severity,
@@ -939,7 +939,7 @@ class CustomConfig extends $pb.GeneratedMessage {
   factory CustomConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
-    ..aOM<$4213.Expr>(1, _omitFieldNames ? '' : 'predicate', subBuilder: $4213.Expr.create)
+    ..aOM<$4214.Expr>(1, _omitFieldNames ? '' : 'predicate', subBuilder: $4214.Expr.create)
     ..aOM<CustomConfig_CustomOutputSpec>(2, _omitFieldNames ? '' : 'customOutput', subBuilder: CustomConfig_CustomOutputSpec.create)
     ..aOM<CustomConfig_ResourceSelector>(3, _omitFieldNames ? '' : 'resourceSelector', subBuilder: CustomConfig_ResourceSelector.create)
     ..e<CustomConfig_Severity>(4, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: CustomConfig_Severity.SEVERITY_UNSPECIFIED, valueOf: CustomConfig_Severity.valueOf, enumValues: CustomConfig_Severity.values)
@@ -972,15 +972,15 @@ class CustomConfig extends $pb.GeneratedMessage {
   /// Optional. The CEL expression to evaluate to produce findings. When the
   /// expression evaluates to true against a resource, a finding is generated.
   @$pb.TagNumber(1)
-  $4213.Expr get predicate => $_getN(0);
+  $4214.Expr get predicate => $_getN(0);
   @$pb.TagNumber(1)
-  set predicate($4213.Expr v) { setField(1, v); }
+  set predicate($4214.Expr v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPredicate() => $_has(0);
   @$pb.TagNumber(1)
   void clearPredicate() => clearField(1);
   @$pb.TagNumber(1)
-  $4213.Expr ensurePredicate() => $_ensure(0);
+  $4214.Expr ensurePredicate() => $_ensure(0);
 
   /// Optional. Custom output properties.
   @$pb.TagNumber(2)
@@ -1497,7 +1497,7 @@ class CreateSecurityHealthAnalyticsCustomModuleRequest extends $pb.GeneratedMess
 /// Message for updating a SecurityHealthAnalyticsCustomModule
 class UpdateSecurityHealthAnalyticsCustomModuleRequest extends $pb.GeneratedMessage {
   factory UpdateSecurityHealthAnalyticsCustomModuleRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     SecurityHealthAnalyticsCustomModule? securityHealthAnalyticsCustomModule,
     $core.bool? validateOnly,
   }) {
@@ -1518,7 +1518,7 @@ class UpdateSecurityHealthAnalyticsCustomModuleRequest extends $pb.GeneratedMess
   factory UpdateSecurityHealthAnalyticsCustomModuleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSecurityHealthAnalyticsCustomModuleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<SecurityHealthAnalyticsCustomModule>(2, _omitFieldNames ? '' : 'securityHealthAnalyticsCustomModule', subBuilder: SecurityHealthAnalyticsCustomModule.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -1550,15 +1550,15 @@ class UpdateSecurityHealthAnalyticsCustomModuleRequest extends $pb.GeneratedMess
   /// wildcard value `*`, both `enablement_state` and `custom_config` are
   /// updated.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
@@ -1674,7 +1674,7 @@ class DeleteSecurityHealthAnalyticsCustomModuleRequest extends $pb.GeneratedMess
 class SimulateSecurityHealthAnalyticsCustomModuleRequest_SimulatedResource extends $pb.GeneratedMessage {
   factory SimulateSecurityHealthAnalyticsCustomModuleRequest_SimulatedResource({
     $core.String? resourceType,
-    $1734.Struct? resourceData,
+    $1735.Struct? resourceData,
     $463.Policy? iamPolicyData,
   }) {
     final $result = create();
@@ -1695,7 +1695,7 @@ class SimulateSecurityHealthAnalyticsCustomModuleRequest_SimulatedResource exten
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SimulateSecurityHealthAnalyticsCustomModuleRequest.SimulatedResource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceType')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'resourceData', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'resourceData', subBuilder: $1735.Struct.create)
     ..aOM<$463.Policy>(3, _omitFieldNames ? '' : 'iamPolicyData', subBuilder: $463.Policy.create)
     ..hasRequiredFields = false
   ;
@@ -1735,15 +1735,15 @@ class SimulateSecurityHealthAnalyticsCustomModuleRequest_SimulatedResource exten
   /// Optional. A representation of the Google Cloud resource. Should match the
   /// Google Cloud resource JSON format.
   @$pb.TagNumber(2)
-  $1734.Struct get resourceData => $_getN(1);
+  $1735.Struct get resourceData => $_getN(1);
   @$pb.TagNumber(2)
-  set resourceData($1734.Struct v) { setField(2, v); }
+  set resourceData($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResourceData() => $_has(1);
   @$pb.TagNumber(2)
   void clearResourceData() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureResourceData() => $_ensure(1);
+  $1735.Struct ensureResourceData() => $_ensure(1);
 
   /// Optional. A representation of the IAM policy.
   @$pb.TagNumber(3)
@@ -1858,8 +1858,8 @@ class SimulatedFinding extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? category,
     SimulatedFinding_State? state,
-    $core.Map<$core.String, $1734.Value>? sourceProperties,
-    $1775.Timestamp? eventTime,
+    $core.Map<$core.String, $1735.Value>? sourceProperties,
+    $1776.Timestamp? eventTime,
     SimulatedFinding_Severity? severity,
     SimulatedFinding_FindingClass? findingClass,
   }) {
@@ -1903,8 +1903,8 @@ class SimulatedFinding extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'resourceName')
     ..aOS(4, _omitFieldNames ? '' : 'category')
     ..e<SimulatedFinding_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: SimulatedFinding_State.STATE_UNSPECIFIED, valueOf: SimulatedFinding_State.valueOf, enumValues: SimulatedFinding_State.values)
-    ..m<$core.String, $1734.Value>(6, _omitFieldNames ? '' : 'sourceProperties', entryClassName: 'SimulatedFinding.SourcePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycentermanagement.v1'))
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..m<$core.String, $1735.Value>(6, _omitFieldNames ? '' : 'sourceProperties', entryClassName: 'SimulatedFinding.SourcePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.securitycentermanagement.v1'))
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..e<SimulatedFinding_Severity>(8, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: SimulatedFinding_Severity.SEVERITY_UNSPECIFIED, valueOf: SimulatedFinding_Severity.valueOf, enumValues: SimulatedFinding_Severity.values)
     ..e<SimulatedFinding_FindingClass>(9, _omitFieldNames ? '' : 'findingClass', $pb.PbFieldType.OE, defaultOrMaker: SimulatedFinding_FindingClass.FINDING_CLASS_UNSPECIFIED, valueOf: SimulatedFinding_FindingClass.valueOf, enumValues: SimulatedFinding_FindingClass.values)
     ..hasRequiredFields = false
@@ -2002,7 +2002,7 @@ class SimulatedFinding extends $pb.GeneratedMessage {
   /// between 1 and 255 characters, and must start with a letter and contain
   /// alphanumeric characters or underscores only.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $1734.Value> get sourceProperties => $_getMap(5);
+  $core.Map<$core.String, $1735.Value> get sourceProperties => $_getMap(5);
 
   /// The time the finding was first detected. If an existing finding is updated,
   /// then this is the time the update occurred.
@@ -2012,15 +2012,15 @@ class SimulatedFinding extends $pb.GeneratedMessage {
   /// then this time reflects when the finding was resolved. This must not
   /// be set to a value greater than the current timestamp.
   @$pb.TagNumber(7)
-  $1775.Timestamp get eventTime => $_getN(6);
+  $1776.Timestamp get eventTime => $_getN(6);
   @$pb.TagNumber(7)
-  set eventTime($1775.Timestamp v) { setField(7, v); }
+  set eventTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEventTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEventTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureEventTime() => $_ensure(6);
+  $1776.Timestamp ensureEventTime() => $_ensure(6);
 
   /// The severity of the finding. This field is managed by the source that
   /// writes the finding.
@@ -2056,7 +2056,7 @@ class SimulateSecurityHealthAnalyticsCustomModuleResponse_SimulatedResult extend
   factory SimulateSecurityHealthAnalyticsCustomModuleResponse_SimulatedResult({
     SimulatedFinding? finding,
     $3.Empty? noViolation,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (finding != null) {
@@ -2084,7 +2084,7 @@ class SimulateSecurityHealthAnalyticsCustomModuleResponse_SimulatedResult extend
     ..oo(0, [1, 2, 3])
     ..aOM<SimulatedFinding>(1, _omitFieldNames ? '' : 'finding', subBuilder: SimulatedFinding.create)
     ..aOM<$3.Empty>(2, _omitFieldNames ? '' : 'noViolation', subBuilder: $3.Empty.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2139,15 +2139,15 @@ class SimulateSecurityHealthAnalyticsCustomModuleResponse_SimulatedResult extend
 
   /// Error encountered during the test.
   @$pb.TagNumber(3)
-  $1795.Status get error => $_getN(2);
+  $1796.Status get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error($1795.Status v) { setField(3, v); }
+  set error($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
   void clearError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureError() => $_ensure(2);
+  $1796.Status ensureError() => $_ensure(2);
 }
 
 /// Response message for simulating a `SecurityHealthAnalyticsCustomModule`
@@ -2215,7 +2215,7 @@ class SimulateSecurityHealthAnalyticsCustomModuleResponse extends $pb.GeneratedM
 class EffectiveEventThreatDetectionCustomModule extends $pb.GeneratedMessage {
   factory EffectiveEventThreatDetectionCustomModule({
     $core.String? name,
-    $1734.Struct? config,
+    $1735.Struct? config,
     EffectiveEventThreatDetectionCustomModule_EnablementState? enablementState,
     $core.String? type,
     $core.String? displayName,
@@ -2248,7 +2248,7 @@ class EffectiveEventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EffectiveEventThreatDetectionCustomModule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1735.Struct.create)
     ..e<EffectiveEventThreatDetectionCustomModule_EnablementState>(3, _omitFieldNames ? '' : 'enablementState', $pb.PbFieldType.OE, defaultOrMaker: EffectiveEventThreatDetectionCustomModule_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: EffectiveEventThreatDetectionCustomModule_EnablementState.valueOf, enumValues: EffectiveEventThreatDetectionCustomModule_EnablementState.values)
     ..aOS(4, _omitFieldNames ? '' : 'type')
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
@@ -2295,15 +2295,15 @@ class EffectiveEventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   /// Output only. Config for the effective module.
   @$pb.TagNumber(2)
-  $1734.Struct get config => $_getN(1);
+  $1735.Struct get config => $_getN(1);
   @$pb.TagNumber(2)
-  set config($1734.Struct v) { setField(2, v); }
+  set config($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureConfig() => $_ensure(1);
+  $1735.Struct ensureConfig() => $_ensure(1);
 
   /// Output only. The effective state of enablement for the module at the given
   /// level of the hierarchy.
@@ -2561,13 +2561,13 @@ class GetEffectiveEventThreatDetectionCustomModuleRequest extends $pb.GeneratedM
 class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
   factory EventThreatDetectionCustomModule({
     $core.String? name,
-    $1734.Struct? config,
+    $1735.Struct? config,
     $core.String? ancestorModule,
     EventThreatDetectionCustomModule_EnablementState? enablementState,
     $core.String? type,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? lastEditor,
   }) {
     final $result = create();
@@ -2606,13 +2606,13 @@ class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EventThreatDetectionCustomModule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'config', subBuilder: $1735.Struct.create)
     ..aOS(3, _omitFieldNames ? '' : 'ancestorModule')
     ..e<EventThreatDetectionCustomModule_EnablementState>(4, _omitFieldNames ? '' : 'enablementState', $pb.PbFieldType.OE, defaultOrMaker: EventThreatDetectionCustomModule_EnablementState.ENABLEMENT_STATE_UNSPECIFIED, valueOf: EventThreatDetectionCustomModule_EnablementState.valueOf, enumValues: EventThreatDetectionCustomModule_EnablementState.values)
     ..aOS(5, _omitFieldNames ? '' : 'type')
     ..aOS(6, _omitFieldNames ? '' : 'displayName')
     ..aOS(7, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'lastEditor')
     ..hasRequiredFields = false
   ;
@@ -2658,15 +2658,15 @@ class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
   /// is defined at this level. For the inherited module, its config value is
   /// inherited from the ancestor module.
   @$pb.TagNumber(2)
-  $1734.Struct get config => $_getN(1);
+  $1735.Struct get config => $_getN(1);
   @$pb.TagNumber(2)
-  set config($1734.Struct v) { setField(2, v); }
+  set config($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureConfig() => $_ensure(1);
+  $1735.Struct ensureConfig() => $_ensure(1);
 
   /// Output only. The closest ancestor module that this module inherits the
   /// enablement state from. If empty, indicates that the custom module was
@@ -2724,15 +2724,15 @@ class EventThreatDetectionCustomModule extends $pb.GeneratedMessage {
 
   /// Output only. The time the module was last updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The editor the module was last updated by.
   @$pb.TagNumber(9)
@@ -3208,7 +3208,7 @@ class CreateEventThreatDetectionCustomModuleRequest extends $pb.GeneratedMessage
 /// Message for updating a EventThreatDetectionCustomModule
 class UpdateEventThreatDetectionCustomModuleRequest extends $pb.GeneratedMessage {
   factory UpdateEventThreatDetectionCustomModuleRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     EventThreatDetectionCustomModule? eventThreatDetectionCustomModule,
     $core.bool? validateOnly,
   }) {
@@ -3229,7 +3229,7 @@ class UpdateEventThreatDetectionCustomModuleRequest extends $pb.GeneratedMessage
   factory UpdateEventThreatDetectionCustomModuleRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEventThreatDetectionCustomModuleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<EventThreatDetectionCustomModule>(2, _omitFieldNames ? '' : 'eventThreatDetectionCustomModule', subBuilder: EventThreatDetectionCustomModule.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -3262,15 +3262,15 @@ class UpdateEventThreatDetectionCustomModuleRequest extends $pb.GeneratedMessage
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The module being updated
   @$pb.TagNumber(2)
@@ -3940,7 +3940,7 @@ class ListSecurityCenterServicesResponse extends $pb.GeneratedMessage {
 class UpdateSecurityCenterServiceRequest extends $pb.GeneratedMessage {
   factory UpdateSecurityCenterServiceRequest({
     SecurityCenterService? securityCenterService,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -3961,7 +3961,7 @@ class UpdateSecurityCenterServiceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSecurityCenterServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securitycentermanagement.v1'), createEmptyInstance: create)
     ..aOM<SecurityCenterService>(1, _omitFieldNames ? '' : 'securityCenterService', subBuilder: SecurityCenterService.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -4004,15 +4004,15 @@ class UpdateSecurityCenterServiceRequest extends $pb.GeneratedMessage {
   ///    * "intended_enablement_state"
   ///    * "modules"
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. When set to true, only validations (including IAM checks) will be
   /// done for the request (service will not be updated). An OK response

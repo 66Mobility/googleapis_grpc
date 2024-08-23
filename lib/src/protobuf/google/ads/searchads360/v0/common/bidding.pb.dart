@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
-import '../enums/target_impression_share_location.pbenum.dart' as $3989;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
+import '../enums/target_impression_share_location.pbenum.dart' as $3990;
 
 ///  An automated bidding strategy that raises bids for clicks
 ///  that seem more likely to lead to a conversion and lowers
@@ -485,7 +485,7 @@ class TargetCpm extends $pb.GeneratedMessage {
 /// location).
 class TargetImpressionShare extends $pb.GeneratedMessage {
   factory TargetImpressionShare({
-    $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation? location,
+    $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation? location,
     $fixnum.Int64? locationFractionMicros,
     $fixnum.Int64? cpcBidCeilingMicros,
   }) {
@@ -506,7 +506,7 @@ class TargetImpressionShare extends $pb.GeneratedMessage {
   factory TargetImpressionShare.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetImpressionShare', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation>(1, _omitFieldNames ? '' : 'location', $pb.PbFieldType.OE, defaultOrMaker: $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.UNSPECIFIED, valueOf: $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.valueOf, enumValues: $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.values)
+    ..e<$3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation>(1, _omitFieldNames ? '' : 'location', $pb.PbFieldType.OE, defaultOrMaker: $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.UNSPECIFIED, valueOf: $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.valueOf, enumValues: $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.values)
     ..aInt64(4, _omitFieldNames ? '' : 'locationFractionMicros')
     ..aInt64(5, _omitFieldNames ? '' : 'cpcBidCeilingMicros')
     ..hasRequiredFields = false
@@ -535,9 +535,9 @@ class TargetImpressionShare extends $pb.GeneratedMessage {
 
   /// The targeted location on the search results page.
   @$pb.TagNumber(1)
-  $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation get location => $_getN(0);
+  $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation v) { setField(1, v); }
+  set location($3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -572,7 +572,7 @@ class TargetImpressionShare extends $pb.GeneratedMessage {
 /// This strategy is deprecated.
 class TargetOutrankShare extends $pb.GeneratedMessage {
   factory TargetOutrankShare({
-    $1780.Int64Value? cpcBidCeilingMicros,
+    $1781.Int64Value? cpcBidCeilingMicros,
   }) {
     final $result = create();
     if (cpcBidCeilingMicros != null) {
@@ -585,7 +585,7 @@ class TargetOutrankShare extends $pb.GeneratedMessage {
   factory TargetOutrankShare.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetOutrankShare', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..aOM<$1780.Int64Value>(3, _omitFieldNames ? '' : 'cpcBidCeilingMicros', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(3, _omitFieldNames ? '' : 'cpcBidCeilingMicros', subBuilder: $1781.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -613,15 +613,15 @@ class TargetOutrankShare extends $pb.GeneratedMessage {
   /// Maximum bid limit that can be set by the bid strategy.
   /// The limit applies to all keywords managed by the strategy.
   @$pb.TagNumber(3)
-  $1780.Int64Value get cpcBidCeilingMicros => $_getN(0);
+  $1781.Int64Value get cpcBidCeilingMicros => $_getN(0);
   @$pb.TagNumber(3)
-  set cpcBidCeilingMicros($1780.Int64Value v) { setField(3, v); }
+  set cpcBidCeilingMicros($1781.Int64Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCpcBidCeilingMicros() => $_has(0);
   @$pb.TagNumber(3)
   void clearCpcBidCeilingMicros() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.Int64Value ensureCpcBidCeilingMicros() => $_ensure(0);
+  $1781.Int64Value ensureCpcBidCeilingMicros() => $_ensure(0);
 }
 
 /// An automated bidding strategy that helps you maximize revenue while

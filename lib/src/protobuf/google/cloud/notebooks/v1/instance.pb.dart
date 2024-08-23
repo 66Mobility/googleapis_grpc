@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'environment.pb.dart' as $1162;
 import 'instance.pbenum.dart';
 
@@ -570,7 +570,7 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
     $core.String? framework,
     $core.String? version,
     Instance_UpgradeHistoryEntry_State? state,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
   @$core.Deprecated('This field is deprecated.')
     $core.String? targetImage,
     Instance_UpgradeHistoryEntry_Action? action,
@@ -621,7 +621,7 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'framework')
     ..aOS(5, _omitFieldNames ? '' : 'version')
     ..e<Instance_UpgradeHistoryEntry_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Instance_UpgradeHistoryEntry_State.STATE_UNSPECIFIED, valueOf: Instance_UpgradeHistoryEntry_State.valueOf, enumValues: Instance_UpgradeHistoryEntry_State.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'targetImage')
     ..e<Instance_UpgradeHistoryEntry_Action>(9, _omitFieldNames ? '' : 'action', $pb.PbFieldType.OE, defaultOrMaker: Instance_UpgradeHistoryEntry_Action.ACTION_UNSPECIFIED, valueOf: Instance_UpgradeHistoryEntry_Action.valueOf, enumValues: Instance_UpgradeHistoryEntry_Action.values)
     ..aOS(10, _omitFieldNames ? '' : 'targetVersion')
@@ -711,15 +711,15 @@ class Instance_UpgradeHistoryEntry extends $pb.GeneratedMessage {
 
   /// The time that this instance upgrade history entry is created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Target VM Image. Format: `ainotebooks-vm/project/image-name/name`.
   @$core.Deprecated('This field is deprecated.')
@@ -787,8 +787,8 @@ class Instance extends $pb.GeneratedMessage {
     $core.String? subnet,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? metadata,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Instance_DiskType? dataDiskType,
     $fixnum.Int64? dataDiskSizeGb,
     $core.bool? noRemoveDataDisk,
@@ -946,8 +946,8 @@ class Instance extends $pb.GeneratedMessage {
     ..aOS(20, _omitFieldNames ? '' : 'subnet')
     ..m<$core.String, $core.String>(21, _omitFieldNames ? '' : 'labels', entryClassName: 'Instance.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.notebooks.v1'))
     ..m<$core.String, $core.String>(22, _omitFieldNames ? '' : 'metadata', entryClassName: 'Instance.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.notebooks.v1'))
-    ..aOM<$1775.Timestamp>(23, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(24, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(23, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(24, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Instance_DiskType>(25, _omitFieldNames ? '' : 'dataDiskType', $pb.PbFieldType.OE, defaultOrMaker: Instance_DiskType.DISK_TYPE_UNSPECIFIED, valueOf: Instance_DiskType.valueOf, enumValues: Instance_DiskType.values)
     ..aInt64(26, _omitFieldNames ? '' : 'dataDiskSizeGb')
     ..aOB(27, _omitFieldNames ? '' : 'noRemoveDataDisk')
@@ -1233,27 +1233,27 @@ class Instance extends $pb.GeneratedMessage {
 
   /// Output only. Instance creation time.
   @$pb.TagNumber(23)
-  $1775.Timestamp get createTime => $_getN(22);
+  $1776.Timestamp get createTime => $_getN(22);
   @$pb.TagNumber(23)
-  set createTime($1775.Timestamp v) { setField(23, v); }
+  set createTime($1776.Timestamp v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasCreateTime() => $_has(22);
   @$pb.TagNumber(23)
   void clearCreateTime() => clearField(23);
   @$pb.TagNumber(23)
-  $1775.Timestamp ensureCreateTime() => $_ensure(22);
+  $1776.Timestamp ensureCreateTime() => $_ensure(22);
 
   /// Output only. Instance update time.
   @$pb.TagNumber(24)
-  $1775.Timestamp get updateTime => $_getN(23);
+  $1776.Timestamp get updateTime => $_getN(23);
   @$pb.TagNumber(24)
-  set updateTime($1775.Timestamp v) { setField(24, v); }
+  set updateTime($1776.Timestamp v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasUpdateTime() => $_has(23);
   @$pb.TagNumber(24)
   void clearUpdateTime() => clearField(24);
   @$pb.TagNumber(24)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(23);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(23);
 
   /// Input only. The type of the data disk attached to this instance, defaults to
   /// standard persistent disk (`PD_STANDARD`).

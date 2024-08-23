@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/customizer_value.pb.dart' as $2835;
-import '../enums/customizer_value_status.pbenum.dart' as $2836;
+import '../common/customizer_value.pb.dart' as $2836;
+import '../enums/customizer_value_status.pbenum.dart' as $2837;
 
 /// A customizer value for the associated CustomizerAttribute at the Customer
 /// level.
@@ -22,8 +22,8 @@ class CustomerCustomizer extends $pb.GeneratedMessage {
   factory CustomerCustomizer({
     $core.String? resourceName,
     $core.String? customizerAttribute,
-    $2836.CustomizerValueStatusEnum_CustomizerValueStatus? status,
-    $2835.CustomizerValue? value,
+    $2837.CustomizerValueStatusEnum_CustomizerValueStatus? status,
+    $2836.CustomizerValue? value,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -47,8 +47,8 @@ class CustomerCustomizer extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerCustomizer', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'customizerAttribute')
-    ..e<$2836.CustomizerValueStatusEnum_CustomizerValueStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2836.CustomizerValueStatusEnum_CustomizerValueStatus.UNSPECIFIED, valueOf: $2836.CustomizerValueStatusEnum_CustomizerValueStatus.valueOf, enumValues: $2836.CustomizerValueStatusEnum_CustomizerValueStatus.values)
-    ..aOM<$2835.CustomizerValue>(4, _omitFieldNames ? '' : 'value', subBuilder: $2835.CustomizerValue.create)
+    ..e<$2837.CustomizerValueStatusEnum_CustomizerValueStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2837.CustomizerValueStatusEnum_CustomizerValueStatus.UNSPECIFIED, valueOf: $2837.CustomizerValueStatusEnum_CustomizerValueStatus.valueOf, enumValues: $2837.CustomizerValueStatusEnum_CustomizerValueStatus.values)
+    ..aOM<$2836.CustomizerValue>(4, _omitFieldNames ? '' : 'value', subBuilder: $2836.CustomizerValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -99,9 +99,9 @@ class CustomerCustomizer extends $pb.GeneratedMessage {
 
   /// Output only. The status of the customer customizer attribute.
   @$pb.TagNumber(3)
-  $2836.CustomizerValueStatusEnum_CustomizerValueStatus get status => $_getN(2);
+  $2837.CustomizerValueStatusEnum_CustomizerValueStatus get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($2836.CustomizerValueStatusEnum_CustomizerValueStatus v) { setField(3, v); }
+  set status($2837.CustomizerValueStatusEnum_CustomizerValueStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -110,15 +110,15 @@ class CustomerCustomizer extends $pb.GeneratedMessage {
   /// Required. The value to associate with the customizer attribute at this
   /// level. The value must be of the type specified for the CustomizerAttribute.
   @$pb.TagNumber(4)
-  $2835.CustomizerValue get value => $_getN(3);
+  $2836.CustomizerValue get value => $_getN(3);
   @$pb.TagNumber(4)
-  set value($2835.CustomizerValue v) { setField(4, v); }
+  set value($2836.CustomizerValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasValue() => $_has(3);
   @$pb.TagNumber(4)
   void clearValue() => clearField(4);
   @$pb.TagNumber(4)
-  $2835.CustomizerValue ensureValue() => $_ensure(3);
+  $2836.CustomizerValue ensureValue() => $_ensure(3);
 }
 
 

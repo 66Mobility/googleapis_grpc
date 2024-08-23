@@ -15,8 +15,8 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $17;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'private_catalog.pbenum.dart';
 
 export 'private_catalog.pbenum.dart';
@@ -528,8 +528,8 @@ class Catalog extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -557,8 +557,8 @@ class Catalog extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -616,27 +616,27 @@ class Catalog extends $pb.GeneratedMessage {
 
   /// Output only. The time when the catalog was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time when the catalog was last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 }
 
 /// The readonly representation of a product computed with a given resource
@@ -645,10 +645,10 @@ class Product extends $pb.GeneratedMessage {
   factory Product({
     $core.String? name,
     $core.String? assetType,
-    $1734.Struct? displayMetadata,
+    $1735.Struct? displayMetadata,
     $core.String? iconUri,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<AssetReference>? assetReferences,
   }) {
     final $result = create();
@@ -682,10 +682,10 @@ class Product extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Product', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privatecatalog.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'assetType')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'displayMetadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'displayMetadata', subBuilder: $1735.Struct.create)
     ..aOS(4, _omitFieldNames ? '' : 'iconUri')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pc<AssetReference>(10, _omitFieldNames ? '' : 'assetReferences', $pb.PbFieldType.PM, subBuilder: AssetReference.create)
     ..hasRequiredFields = false
   ;
@@ -896,15 +896,15 @@ class Product extends $pb.GeneratedMessage {
   ///  - description
   ///  additionalProperties: true
   @$pb.TagNumber(3)
-  $1734.Struct get displayMetadata => $_getN(2);
+  $1735.Struct get displayMetadata => $_getN(2);
   @$pb.TagNumber(3)
-  set displayMetadata($1734.Struct v) { setField(3, v); }
+  set displayMetadata($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDisplayMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearDisplayMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureDisplayMetadata() => $_ensure(2);
+  $1735.Struct ensureDisplayMetadata() => $_ensure(2);
 
   /// Output only. The icon URI of the product.
   @$pb.TagNumber(4)
@@ -918,27 +918,27 @@ class Product extends $pb.GeneratedMessage {
 
   /// Output only. The time when the product was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The time when the product was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. A collection of assets referred by a product.
   /// This field is set for Terraform Products only.
@@ -964,8 +964,8 @@ class AssetReference extends $pb.GeneratedMessage {
     $core.String? asset,
   @$core.Deprecated('This field is deprecated.')
     $core.String? gcsPath,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   @$core.Deprecated('This field is deprecated.')
     $core.String? version,
     GitSource? gitSource,
@@ -1031,8 +1031,8 @@ class AssetReference extends $pb.GeneratedMessage {
     ..aOM<$17.Operation>(8, _omitFieldNames ? '' : 'validationOperation', subBuilder: $17.Operation.create)
     ..aOS(10, _omitFieldNames ? '' : 'asset')
     ..aOS(11, _omitFieldNames ? '' : 'gcsPath')
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(14, _omitFieldNames ? '' : 'version')
     ..aOM<GitSource>(15, _omitFieldNames ? '' : 'gitSource', subBuilder: GitSource.create)
     ..aOM<GcsSource>(16, _omitFieldNames ? '' : 'gcsSource', subBuilder: GcsSource.create)
@@ -1144,27 +1144,27 @@ class AssetReference extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of the asset reference.
   @$pb.TagNumber(12)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(12)
-  set createTime($1775.Timestamp v) { setField(12, v); }
+  set createTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(12)
   void clearCreateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The last update timestamp of the asset reference.
   @$pb.TagNumber(13)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(13)
-  set updateTime($1775.Timestamp v) { setField(13, v); }
+  set updateTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(13)
   void clearUpdateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// The version of the source used for this asset reference.
   @$core.Deprecated('This field is deprecated.')
@@ -1208,7 +1208,7 @@ class AssetReference extends $pb.GeneratedMessage {
 /// Defines definition of input parameters of asset templates.
 class Inputs extends $pb.GeneratedMessage {
   factory Inputs({
-    $1734.Struct? parameters,
+    $1735.Struct? parameters,
   }) {
     final $result = create();
     if (parameters != null) {
@@ -1221,7 +1221,7 @@ class Inputs extends $pb.GeneratedMessage {
   factory Inputs.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Inputs', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privatecatalog.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(1, _omitFieldNames ? '' : 'parameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'parameters', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1248,15 +1248,15 @@ class Inputs extends $pb.GeneratedMessage {
 
   /// Output only. The JSON schema defining the inputs and their formats.
   @$pb.TagNumber(1)
-  $1734.Struct get parameters => $_getN(0);
+  $1735.Struct get parameters => $_getN(0);
   @$pb.TagNumber(1)
-  set parameters($1734.Struct v) { setField(1, v); }
+  set parameters($1735.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasParameters() => $_has(0);
   @$pb.TagNumber(1)
   void clearParameters() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Struct ensureParameters() => $_ensure(0);
+  $1735.Struct ensureParameters() => $_ensure(0);
 }
 
 /// Defines how to access Cloud Storage source.
@@ -1264,7 +1264,7 @@ class GcsSource extends $pb.GeneratedMessage {
   factory GcsSource({
     $core.String? gcsPath,
     $fixnum.Int64? generation,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (gcsPath != null) {
@@ -1285,7 +1285,7 @@ class GcsSource extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcsSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privatecatalog.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'gcsPath')
     ..aInt64(2, _omitFieldNames ? '' : 'generation')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1333,15 +1333,15 @@ class GcsSource extends $pb.GeneratedMessage {
 
   /// Output only. The time when the object metadata was last changed.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 enum GitSource_Ref {
@@ -1482,9 +1482,9 @@ class Version extends $pb.GeneratedMessage {
   factory Version({
     $core.String? name,
     $core.String? description,
-    $1734.Struct? asset,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1735.Struct? asset,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1511,9 +1511,9 @@ class Version extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Version', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.privatecatalog.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1734.Struct>(3, _omitFieldNames ? '' : 'asset', subBuilder: $1734.Struct.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'asset', subBuilder: $1735.Struct.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1566,39 +1566,39 @@ class Version extends $pb.GeneratedMessage {
   /// provisioned. See
   /// [google.cloud.privatecatalogproducer.v1beta.Version.asset][] for details.
   @$pb.TagNumber(3)
-  $1734.Struct get asset => $_getN(2);
+  $1735.Struct get asset => $_getN(2);
   @$pb.TagNumber(3)
-  set asset($1734.Struct v) { setField(3, v); }
+  set asset($1735.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAsset() => $_has(2);
   @$pb.TagNumber(3)
   void clearAsset() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Struct ensureAsset() => $_ensure(2);
+  $1735.Struct ensureAsset() => $_ensure(2);
 
   /// Output only. The time when the version was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The time when the version was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 }
 
 

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../../../protobuf/struct.pb.dart' as $1735;
 
 /// Prediction output format for Image Object Detection.
 class ImageObjectDetectionPredictionResult extends $pb.GeneratedMessage {
@@ -22,7 +22,7 @@ class ImageObjectDetectionPredictionResult extends $pb.GeneratedMessage {
     $core.Iterable<$fixnum.Int64>? ids,
     $core.Iterable<$core.String>? displayNames,
     $core.Iterable<$core.double>? confidences,
-    $core.Iterable<$1734.ListValue>? bboxes,
+    $core.Iterable<$1735.ListValue>? bboxes,
   }) {
     final $result = create();
     if (ids != null) {
@@ -47,7 +47,7 @@ class ImageObjectDetectionPredictionResult extends $pb.GeneratedMessage {
     ..p<$fixnum.Int64>(1, _omitFieldNames ? '' : 'ids', $pb.PbFieldType.K6)
     ..pPS(2, _omitFieldNames ? '' : 'displayNames')
     ..p<$core.double>(3, _omitFieldNames ? '' : 'confidences', $pb.PbFieldType.KF)
-    ..pc<$1734.ListValue>(4, _omitFieldNames ? '' : 'bboxes', $pb.PbFieldType.PM, subBuilder: $1734.ListValue.create)
+    ..pc<$1735.ListValue>(4, _omitFieldNames ? '' : 'bboxes', $pb.PbFieldType.PM, subBuilder: $1735.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -94,7 +94,7 @@ class ImageObjectDetectionPredictionResult extends $pb.GeneratedMessage {
   /// relative to the image size, and the point 0,0 is in the top left
   /// of the image.
   @$pb.TagNumber(4)
-  $core.List<$1734.ListValue> get bboxes => $_getList(3);
+  $core.List<$1735.ListValue> get bboxes => $_getList(3);
 }
 
 

@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/any.pb.dart' as $1794;
+import '../../../../protobuf/any.pb.dart' as $1795;
 
 /// The request message for the PublishChannelConnectionEvents method.
 class PublishChannelConnectionEventsRequest extends $pb.GeneratedMessage {
   factory PublishChannelConnectionEventsRequest({
     $core.String? channelConnection,
-    $core.Iterable<$1794.Any>? events,
+    $core.Iterable<$1795.Any>? events,
     $core.Iterable<$core.String>? textEvents,
   }) {
     final $result = create();
@@ -40,7 +40,7 @@ class PublishChannelConnectionEventsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PublishChannelConnectionEventsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.eventarc.publishing.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'channelConnection')
-    ..pc<$1794.Any>(2, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $1794.Any.create)
+    ..pc<$1795.Any>(2, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $1795.Any.create)
     ..pPS(3, _omitFieldNames ? '' : 'textEvents')
     ..hasRequiredFields = false
   ;
@@ -80,7 +80,7 @@ class PublishChannelConnectionEventsRequest extends $pb.GeneratedMessage {
   /// The CloudEvents v1.0 events to publish. No other types are allowed.
   /// If this field is set, then the `text_events` fields must not be set.
   @$pb.TagNumber(2)
-  $core.List<$1794.Any> get events => $_getList(1);
+  $core.List<$1795.Any> get events => $_getList(1);
 
   /// The text representation of events to publish.
   /// CloudEvent v1.0 in JSON format is the only allowed type. Refer to
@@ -128,7 +128,7 @@ class PublishChannelConnectionEventsResponse extends $pb.GeneratedMessage {
 class PublishEventsRequest extends $pb.GeneratedMessage {
   factory PublishEventsRequest({
     $core.String? channel,
-    $core.Iterable<$1794.Any>? events,
+    $core.Iterable<$1795.Any>? events,
     $core.Iterable<$core.String>? textEvents,
   }) {
     final $result = create();
@@ -149,7 +149,7 @@ class PublishEventsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PublishEventsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.eventarc.publishing.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'channel')
-    ..pc<$1794.Any>(2, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $1794.Any.create)
+    ..pc<$1795.Any>(2, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: $1795.Any.create)
     ..pPS(3, _omitFieldNames ? '' : 'textEvents')
     ..hasRequiredFields = false
   ;
@@ -189,7 +189,7 @@ class PublishEventsRequest extends $pb.GeneratedMessage {
   /// The CloudEvents v1.0 events to publish. No other types are allowed.
   /// If this field is set, then the `text_events` fields must not be set.
   @$pb.TagNumber(2)
-  $core.List<$1794.Any> get events => $_getList(1);
+  $core.List<$1795.Any> get events => $_getList(1);
 
   /// The text representation of events to publish.
   /// CloudEvent v1.0 in JSON format is the only allowed type. Refer to

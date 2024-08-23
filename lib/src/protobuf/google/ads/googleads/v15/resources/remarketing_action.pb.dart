@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/tag_snippet.pb.dart' as $2235;
+import '../common/tag_snippet.pb.dart' as $2236;
 
 /// A remarketing action. A snippet of JavaScript code that will collect the
 /// product id and the type of page people visited (product page, shopping cart
@@ -22,7 +22,7 @@ import '../common/tag_snippet.pb.dart' as $2235;
 class RemarketingAction extends $pb.GeneratedMessage {
   factory RemarketingAction({
     $core.String? resourceName,
-    $core.Iterable<$2235.TagSnippet>? tagSnippets,
+    $core.Iterable<$2236.TagSnippet>? tagSnippets,
     $fixnum.Int64? id,
     $core.String? name,
   }) {
@@ -47,7 +47,7 @@ class RemarketingAction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RemarketingAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..pc<$2235.TagSnippet>(4, _omitFieldNames ? '' : 'tagSnippets', $pb.PbFieldType.PM, subBuilder: $2235.TagSnippet.create)
+    ..pc<$2236.TagSnippet>(4, _omitFieldNames ? '' : 'tagSnippets', $pb.PbFieldType.PM, subBuilder: $2236.TagSnippet.create)
     ..aInt64(5, _omitFieldNames ? '' : 'id')
     ..aOS(6, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
@@ -89,7 +89,7 @@ class RemarketingAction extends $pb.GeneratedMessage {
 
   /// Output only. The snippets used for tracking remarketing actions.
   @$pb.TagNumber(4)
-  $core.List<$2235.TagSnippet> get tagSnippets => $_getList(1);
+  $core.List<$2236.TagSnippet> get tagSnippets => $_getList(1);
 
   /// Output only. Id of the remarketing action.
   @$pb.TagNumber(5)

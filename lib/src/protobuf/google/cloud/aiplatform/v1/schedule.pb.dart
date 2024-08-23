@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'pipeline_service.pb.dart' as $540;
 import 'schedule.pbenum.dart';
 
@@ -23,7 +23,7 @@ export 'schedule.pbenum.dart';
 /// Status of a scheduled run.
 class Schedule_RunResponse extends $pb.GeneratedMessage {
   factory Schedule_RunResponse({
-    $1775.Timestamp? scheduledRunTime,
+    $1776.Timestamp? scheduledRunTime,
     $core.String? runResponse,
   }) {
     final $result = create();
@@ -40,7 +40,7 @@ class Schedule_RunResponse extends $pb.GeneratedMessage {
   factory Schedule_RunResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Schedule.RunResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'scheduledRunTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'scheduledRunTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'runResponse')
     ..hasRequiredFields = false
   ;
@@ -68,15 +68,15 @@ class Schedule_RunResponse extends $pb.GeneratedMessage {
 
   /// The scheduled run time based on the user-specified schedule.
   @$pb.TagNumber(1)
-  $1775.Timestamp get scheduledRunTime => $_getN(0);
+  $1776.Timestamp get scheduledRunTime => $_getN(0);
   @$pb.TagNumber(1)
-  set scheduledRunTime($1775.Timestamp v) { setField(1, v); }
+  set scheduledRunTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasScheduledRunTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearScheduledRunTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureScheduledRunTime() => $_ensure(0);
+  $1776.Timestamp ensureScheduledRunTime() => $_ensure(0);
 
   /// The response of the scheduled run.
   @$pb.TagNumber(2)
@@ -105,13 +105,13 @@ class Schedule extends $pb.GeneratedMessage {
   factory Schedule({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     Schedule_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? nextRunTime,
-    $1775.Timestamp? lastPauseTime,
-    $1775.Timestamp? lastResumeTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? nextRunTime,
+    $1776.Timestamp? lastPauseTime,
+    $1776.Timestamp? lastResumeTime,
     $core.String? cron,
     $fixnum.Int64? maxConcurrentRunCount,
     $core.bool? allowQueueing,
@@ -120,7 +120,7 @@ class Schedule extends $pb.GeneratedMessage {
     $fixnum.Int64? maxRunCount,
     $fixnum.Int64? startedRunCount,
     Schedule_RunResponse? lastScheduledRunResponse,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -196,13 +196,13 @@ class Schedule extends $pb.GeneratedMessage {
     ..oo(1, [14])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<Schedule_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Schedule_State.STATE_UNSPECIFIED, valueOf: Schedule_State.valueOf, enumValues: Schedule_State.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'nextRunTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'lastPauseTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'lastResumeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'nextRunTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'lastPauseTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'lastResumeTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'cron')
     ..aInt64(11, _omitFieldNames ? '' : 'maxConcurrentRunCount')
     ..aOB(12, _omitFieldNames ? '' : 'allowQueueing')
@@ -211,7 +211,7 @@ class Schedule extends $pb.GeneratedMessage {
     ..aInt64(16, _omitFieldNames ? '' : 'maxRunCount')
     ..aInt64(17, _omitFieldNames ? '' : 'startedRunCount')
     ..aOM<Schedule_RunResponse>(18, _omitFieldNames ? '' : 'lastScheduledRunResponse', subBuilder: Schedule_RunResponse.create)
-    ..aOM<$1775.Timestamp>(19, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(19, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -267,15 +267,15 @@ class Schedule extends $pb.GeneratedMessage {
   /// Optional. Timestamp after which the first run can be scheduled.
   /// Default to Schedule create time if not specified.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Optional. Timestamp after which no new runs can be scheduled.
   /// If specified, The schedule will be completed when either
@@ -284,15 +284,15 @@ class Schedule extends $pb.GeneratedMessage {
   /// is paused or deleted. Already scheduled runs will be allowed to complete.
   /// Unset if not specified.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 
   /// Output only. The state of this Schedule.
   @$pb.TagNumber(5)
@@ -306,55 +306,55 @@ class Schedule extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Schedule was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Timestamp when this Schedule should schedule the next run.
   /// Having a next_run_time in the past means the runs are being started
   /// behind schedule.
   @$pb.TagNumber(7)
-  $1775.Timestamp get nextRunTime => $_getN(6);
+  $1776.Timestamp get nextRunTime => $_getN(6);
   @$pb.TagNumber(7)
-  set nextRunTime($1775.Timestamp v) { setField(7, v); }
+  set nextRunTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasNextRunTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearNextRunTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureNextRunTime() => $_ensure(6);
+  $1776.Timestamp ensureNextRunTime() => $_ensure(6);
 
   /// Output only. Timestamp when this Schedule was last paused.
   /// Unset if never paused.
   @$pb.TagNumber(8)
-  $1775.Timestamp get lastPauseTime => $_getN(7);
+  $1776.Timestamp get lastPauseTime => $_getN(7);
   @$pb.TagNumber(8)
-  set lastPauseTime($1775.Timestamp v) { setField(8, v); }
+  set lastPauseTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasLastPauseTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearLastPauseTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureLastPauseTime() => $_ensure(7);
+  $1776.Timestamp ensureLastPauseTime() => $_ensure(7);
 
   /// Output only. Timestamp when this Schedule was last resumed.
   /// Unset if never resumed from pause.
   @$pb.TagNumber(9)
-  $1775.Timestamp get lastResumeTime => $_getN(8);
+  $1776.Timestamp get lastResumeTime => $_getN(8);
   @$pb.TagNumber(9)
-  set lastResumeTime($1775.Timestamp v) { setField(9, v); }
+  set lastResumeTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasLastResumeTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearLastResumeTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureLastResumeTime() => $_ensure(8);
+  $1776.Timestamp ensureLastResumeTime() => $_ensure(8);
 
   /// Cron schedule (https://en.wikipedia.org/wiki/Cron) to launch scheduled
   /// runs. To explicitly set a timezone to the cron tab, apply a prefix in the
@@ -464,15 +464,15 @@ class Schedule extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Schedule was updated.
   @$pb.TagNumber(19)
-  $1775.Timestamp get updateTime => $_getN(17);
+  $1776.Timestamp get updateTime => $_getN(17);
   @$pb.TagNumber(19)
-  set updateTime($1775.Timestamp v) { setField(19, v); }
+  set updateTime($1776.Timestamp v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasUpdateTime() => $_has(17);
   @$pb.TagNumber(19)
   void clearUpdateTime() => clearField(19);
   @$pb.TagNumber(19)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(17);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(17);
 }
 
 

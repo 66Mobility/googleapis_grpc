@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/struct.pb.dart' as $1735;
 
 /// Information related to the interstitial of a VOD session. This resource is
 /// only available for VOD sessions that do not implement Google Ad Manager ad
@@ -85,9 +85,9 @@ class AdStitchDetail extends $pb.GeneratedMessage {
   factory AdStitchDetail({
     $core.String? adBreakId,
     $core.String? adId,
-    $1737.Duration? adTimeOffset,
+    $1738.Duration? adTimeOffset,
     $core.String? skipReason,
-    $core.Map<$core.String, $1734.Value>? media,
+    $core.Map<$core.String, $1735.Value>? media,
   }) {
     final $result = create();
     if (adBreakId != null) {
@@ -114,9 +114,9 @@ class AdStitchDetail extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdStitchDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'adBreakId')
     ..aOS(2, _omitFieldNames ? '' : 'adId')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'adTimeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'adTimeOffset', subBuilder: $1738.Duration.create)
     ..aOS(4, _omitFieldNames ? '' : 'skipReason')
-    ..m<$core.String, $1734.Value>(5, _omitFieldNames ? '' : 'media', entryClassName: 'AdStitchDetail.MediaEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.video.stitcher.v1'))
+    ..m<$core.String, $1735.Value>(5, _omitFieldNames ? '' : 'media', entryClassName: 'AdStitchDetail.MediaEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.video.stitcher.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -163,15 +163,15 @@ class AdStitchDetail extends $pb.GeneratedMessage {
 
   /// Required. The time offset of the processed ad.
   @$pb.TagNumber(3)
-  $1737.Duration get adTimeOffset => $_getN(2);
+  $1738.Duration get adTimeOffset => $_getN(2);
   @$pb.TagNumber(3)
-  set adTimeOffset($1737.Duration v) { setField(3, v); }
+  set adTimeOffset($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAdTimeOffset() => $_has(2);
   @$pb.TagNumber(3)
   void clearAdTimeOffset() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureAdTimeOffset() => $_ensure(2);
+  $1738.Duration ensureAdTimeOffset() => $_ensure(2);
 
   /// Optional. Indicates the reason why the ad has been skipped.
   @$pb.TagNumber(4)
@@ -185,7 +185,7 @@ class AdStitchDetail extends $pb.GeneratedMessage {
 
   /// Optional. The metadata of the chosen media file for the ad.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $1734.Value> get media => $_getMap(4);
+  $core.Map<$core.String, $1735.Value> get media => $_getMap(4);
 }
 
 

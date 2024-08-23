@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 
 class TimePartitioning extends $pb.GeneratedMessage {
   factory TimePartitioning({
     $core.String? type,
-    $1780.Int64Value? expirationMs,
-    $1780.StringValue? field_3,
+    $1781.Int64Value? expirationMs,
+    $1781.StringValue? field_3,
   }) {
     final $result = create();
     if (type != null) {
@@ -39,8 +39,8 @@ class TimePartitioning extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimePartitioning', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
-    ..aOM<$1780.Int64Value>(2, _omitFieldNames ? '' : 'expirationMs', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.StringValue>(3, _omitFieldNames ? '' : 'field', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.Int64Value>(2, _omitFieldNames ? '' : 'expirationMs', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.StringValue>(3, _omitFieldNames ? '' : 'field', subBuilder: $1781.StringValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -80,15 +80,15 @@ class TimePartitioning extends $pb.GeneratedMessage {
   /// partition.
   /// A wrapper is used here because 0 is an invalid value.
   @$pb.TagNumber(2)
-  $1780.Int64Value get expirationMs => $_getN(1);
+  $1781.Int64Value get expirationMs => $_getN(1);
   @$pb.TagNumber(2)
-  set expirationMs($1780.Int64Value v) { setField(2, v); }
+  set expirationMs($1781.Int64Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpirationMs() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpirationMs() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int64Value ensureExpirationMs() => $_ensure(1);
+  $1781.Int64Value ensureExpirationMs() => $_ensure(1);
 
   /// Optional. If not set, the table is partitioned by pseudo
   /// column '_PARTITIONTIME'; if set, the table is partitioned by this field.
@@ -96,15 +96,15 @@ class TimePartitioning extends $pb.GeneratedMessage {
   /// NULLABLE or REQUIRED.
   /// A wrapper is used here because an empty string is an invalid value.
   @$pb.TagNumber(3)
-  $1780.StringValue get field_3 => $_getN(2);
+  $1781.StringValue get field_3 => $_getN(2);
   @$pb.TagNumber(3)
-  set field_3($1780.StringValue v) { setField(3, v); }
+  set field_3($1781.StringValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasField_3() => $_has(2);
   @$pb.TagNumber(3)
   void clearField_3() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.StringValue ensureField_3() => $_ensure(2);
+  $1781.StringValue ensureField_3() => $_ensure(2);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'snapshot.pbenum.dart';
 
 export 'snapshot.pbenum.dart';
@@ -402,7 +402,7 @@ class DeleteSnapshotRequest extends $pb.GeneratedMessage {
 /// UpdateSnapshotRequest updates description and/or labels for a snapshot.
 class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   factory UpdateSnapshotRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Snapshot? snapshot,
   }) {
     final $result = create();
@@ -419,7 +419,7 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   factory UpdateSnapshotRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSnapshotRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.netapp.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Snapshot>(2, _omitFieldNames ? '' : 'snapshot', subBuilder: Snapshot.create)
     ..hasRequiredFields = false
   ;
@@ -448,15 +448,15 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   /// Required. Mask of fields to update.  At least one path must be supplied in
   /// this field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. A snapshot resource
   @$pb.TagNumber(2)
@@ -479,7 +479,7 @@ class Snapshot extends $pb.GeneratedMessage {
     $core.String? stateDetails,
     $core.String? description,
     $core.double? usedBytes,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -516,7 +516,7 @@ class Snapshot extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'stateDetails')
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..a<$core.double>(5, _omitFieldNames ? '' : 'usedBytes', $pb.PbFieldType.OD)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'Snapshot.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.netapp.v1'))
     ..hasRequiredFields = false
   ;
@@ -597,15 +597,15 @@ class Snapshot extends $pb.GeneratedMessage {
 
   /// Output only. The time when the snapshot was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Resource labels to represent user provided metadata.
   @$pb.TagNumber(7)

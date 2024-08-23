@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'scan_config_error.pb.dart' as $4730;
+import 'scan_config_error.pb.dart' as $4732;
 import 'scan_run_error_trace.pbenum.dart';
 
 export 'scan_run_error_trace.pbenum.dart';
@@ -23,7 +23,7 @@ export 'scan_run_error_trace.pbenum.dart';
 class ScanRunErrorTrace extends $pb.GeneratedMessage {
   factory ScanRunErrorTrace({
     ScanRunErrorTrace_Code? code,
-    $4730.ScanConfigError? scanConfigError,
+    $4732.ScanConfigError? scanConfigError,
     $core.int? mostCommonHttpErrorCode,
   }) {
     final $result = create();
@@ -44,7 +44,7 @@ class ScanRunErrorTrace extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScanRunErrorTrace', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.websecurityscanner.v1'), createEmptyInstance: create)
     ..e<ScanRunErrorTrace_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: ScanRunErrorTrace_Code.CODE_UNSPECIFIED, valueOf: ScanRunErrorTrace_Code.valueOf, enumValues: ScanRunErrorTrace_Code.values)
-    ..aOM<$4730.ScanConfigError>(2, _omitFieldNames ? '' : 'scanConfigError', subBuilder: $4730.ScanConfigError.create)
+    ..aOM<$4732.ScanConfigError>(2, _omitFieldNames ? '' : 'scanConfigError', subBuilder: $4732.ScanConfigError.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'mostCommonHttpErrorCode', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -84,15 +84,15 @@ class ScanRunErrorTrace extends $pb.GeneratedMessage {
   /// message encountered during scan configuration validation that is performed
   /// before each scan run.
   @$pb.TagNumber(2)
-  $4730.ScanConfigError get scanConfigError => $_getN(1);
+  $4732.ScanConfigError get scanConfigError => $_getN(1);
   @$pb.TagNumber(2)
-  set scanConfigError($4730.ScanConfigError v) { setField(2, v); }
+  set scanConfigError($4732.ScanConfigError v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasScanConfigError() => $_has(1);
   @$pb.TagNumber(2)
   void clearScanConfigError() => clearField(2);
   @$pb.TagNumber(2)
-  $4730.ScanConfigError ensureScanConfigError() => $_ensure(1);
+  $4732.ScanConfigError ensureScanConfigError() => $_ensure(1);
 
   /// Output only. If the scan encounters TOO_MANY_HTTP_ERRORS, this field indicates the most
   /// common HTTP error code, if such is available. For example, if this code is

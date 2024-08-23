@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../rpc/status.pb.dart' as $1796;
 import 'flow.pb.dart' as $865;
 import 'intent.pb.dart' as $869;
 import 'page.pb.dart' as $864;
-import 'response_message.pb.dart' as $4485;
+import 'response_message.pb.dart' as $4487;
 import 'session.pb.dart' as $873;
 import 'test_case.pbenum.dart';
 import 'transition_route_group.pb.dart' as $874;
@@ -35,7 +35,7 @@ class TestCase extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? notes,
     $core.Iterable<ConversationTurn>? testCaseConversationTurns,
-    $1775.Timestamp? creationTime,
+    $1776.Timestamp? creationTime,
     TestCaseResult? lastTestResult,
     TestConfig? testConfig,
   }) {
@@ -76,7 +76,7 @@ class TestCase extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'notes')
     ..pc<ConversationTurn>(5, _omitFieldNames ? '' : 'testCaseConversationTurns', $pb.PbFieldType.PM, subBuilder: ConversationTurn.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'creationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'creationTime', subBuilder: $1776.Timestamp.create)
     ..aOM<TestCaseResult>(12, _omitFieldNames ? '' : 'lastTestResult', subBuilder: TestCaseResult.create)
     ..aOM<TestConfig>(13, _omitFieldNames ? '' : 'testConfig', subBuilder: TestConfig.create)
     ..hasRequiredFields = false
@@ -152,15 +152,15 @@ class TestCase extends $pb.GeneratedMessage {
 
   /// Output only. When the test was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get creationTime => $_getN(5);
+  $1776.Timestamp get creationTime => $_getN(5);
   @$pb.TagNumber(10)
-  set creationTime($1775.Timestamp v) { setField(10, v); }
+  set creationTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreationTime() => $_has(5);
   @$pb.TagNumber(10)
   void clearCreationTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreationTime() => $_ensure(5);
+  $1776.Timestamp ensureCreationTime() => $_ensure(5);
 
   /// The latest test result.
   @$pb.TagNumber(12)
@@ -194,7 +194,7 @@ class TestCaseResult extends $pb.GeneratedMessage {
     $core.String? environment,
     $core.Iterable<ConversationTurn>? conversationTurns,
     TestResult? testResult,
-    $1775.Timestamp? testTime,
+    $1776.Timestamp? testTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -223,7 +223,7 @@ class TestCaseResult extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'environment')
     ..pc<ConversationTurn>(3, _omitFieldNames ? '' : 'conversationTurns', $pb.PbFieldType.PM, subBuilder: ConversationTurn.create)
     ..e<TestResult>(4, _omitFieldNames ? '' : 'testResult', $pb.PbFieldType.OE, defaultOrMaker: TestResult.TEST_RESULT_UNSPECIFIED, valueOf: TestResult.valueOf, enumValues: TestResult.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'testTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'testTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -288,15 +288,15 @@ class TestCaseResult extends $pb.GeneratedMessage {
 
   /// The time that the test was run.
   @$pb.TagNumber(5)
-  $1775.Timestamp get testTime => $_getN(4);
+  $1776.Timestamp get testTime => $_getN(4);
   @$pb.TagNumber(5)
-  set testTime($1775.Timestamp v) { setField(5, v); }
+  set testTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTestTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearTestTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureTestTime() => $_ensure(4);
+  $1776.Timestamp ensureTestTime() => $_ensure(4);
 }
 
 /// Represents configurations for a test case.
@@ -390,7 +390,7 @@ class TestConfig extends $pb.GeneratedMessage {
 /// The input from the human user.
 class ConversationTurn_UserInput extends $pb.GeneratedMessage {
   factory ConversationTurn_UserInput({
-    $1734.Struct? injectedParameters,
+    $1735.Struct? injectedParameters,
     $core.bool? isWebhookEnabled,
     $873.QueryInput? input,
     $core.bool? enableSentimentAnalysis,
@@ -415,7 +415,7 @@ class ConversationTurn_UserInput extends $pb.GeneratedMessage {
   factory ConversationTurn_UserInput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversationTurn.UserInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'injectedParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'injectedParameters', subBuilder: $1735.Struct.create)
     ..aOB(3, _omitFieldNames ? '' : 'isWebhookEnabled')
     ..aOM<$873.QueryInput>(5, _omitFieldNames ? '' : 'input', subBuilder: $873.QueryInput.create)
     ..aOB(7, _omitFieldNames ? '' : 'enableSentimentAnalysis')
@@ -446,15 +446,15 @@ class ConversationTurn_UserInput extends $pb.GeneratedMessage {
   /// Parameters that need to be injected into the conversation during intent
   /// detection.
   @$pb.TagNumber(2)
-  $1734.Struct get injectedParameters => $_getN(0);
+  $1735.Struct get injectedParameters => $_getN(0);
   @$pb.TagNumber(2)
-  set injectedParameters($1734.Struct v) { setField(2, v); }
+  set injectedParameters($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInjectedParameters() => $_has(0);
   @$pb.TagNumber(2)
   void clearInjectedParameters() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureInjectedParameters() => $_ensure(0);
+  $1735.Struct ensureInjectedParameters() => $_ensure(0);
 
   /// If webhooks should be allowed to trigger in response to the user
   /// utterance. Often if parameters are injected, webhooks should not be
@@ -498,13 +498,13 @@ class ConversationTurn_UserInput extends $pb.GeneratedMessage {
 /// The output from the virtual agent.
 class ConversationTurn_VirtualAgentOutput extends $pb.GeneratedMessage {
   factory ConversationTurn_VirtualAgentOutput({
-    $1734.Struct? sessionParameters,
+    $1735.Struct? sessionParameters,
     $core.Iterable<TestRunDifference>? differences,
-    $1734.Struct? diagnosticInfo,
+    $1735.Struct? diagnosticInfo,
     $869.Intent? triggeredIntent,
     $864.Page? currentPage,
-    $core.Iterable<$4485.ResponseMessage_Text>? textResponses,
-    $1795.Status? status,
+    $core.Iterable<$4487.ResponseMessage_Text>? textResponses,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (sessionParameters != null) {
@@ -535,13 +535,13 @@ class ConversationTurn_VirtualAgentOutput extends $pb.GeneratedMessage {
   factory ConversationTurn_VirtualAgentOutput.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversationTurn.VirtualAgentOutput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'sessionParameters', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'sessionParameters', subBuilder: $1735.Struct.create)
     ..pc<TestRunDifference>(5, _omitFieldNames ? '' : 'differences', $pb.PbFieldType.PM, subBuilder: TestRunDifference.create)
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'diagnosticInfo', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'diagnosticInfo', subBuilder: $1735.Struct.create)
     ..aOM<$869.Intent>(7, _omitFieldNames ? '' : 'triggeredIntent', subBuilder: $869.Intent.create)
     ..aOM<$864.Page>(8, _omitFieldNames ? '' : 'currentPage', subBuilder: $864.Page.create)
-    ..pc<$4485.ResponseMessage_Text>(9, _omitFieldNames ? '' : 'textResponses', $pb.PbFieldType.PM, subBuilder: $4485.ResponseMessage_Text.create)
-    ..aOM<$1795.Status>(10, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..pc<$4487.ResponseMessage_Text>(9, _omitFieldNames ? '' : 'textResponses', $pb.PbFieldType.PM, subBuilder: $4487.ResponseMessage_Text.create)
+    ..aOM<$1796.Status>(10, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -568,15 +568,15 @@ class ConversationTurn_VirtualAgentOutput extends $pb.GeneratedMessage {
 
   /// The session parameters available to the bot at this point.
   @$pb.TagNumber(4)
-  $1734.Struct get sessionParameters => $_getN(0);
+  $1735.Struct get sessionParameters => $_getN(0);
   @$pb.TagNumber(4)
-  set sessionParameters($1734.Struct v) { setField(4, v); }
+  set sessionParameters($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSessionParameters() => $_has(0);
   @$pb.TagNumber(4)
   void clearSessionParameters() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureSessionParameters() => $_ensure(0);
+  $1735.Struct ensureSessionParameters() => $_ensure(0);
 
   /// Output only. If this is part of a [result conversation
   /// turn][TestCaseResult.conversation_turns], the list of differences
@@ -588,15 +588,15 @@ class ConversationTurn_VirtualAgentOutput extends $pb.GeneratedMessage {
   /// [info][Session.DetectIntentResponse.QueryResult.diagnostic_info]
   /// output for the turn. Required to calculate the testing coverage.
   @$pb.TagNumber(6)
-  $1734.Struct get diagnosticInfo => $_getN(2);
+  $1735.Struct get diagnosticInfo => $_getN(2);
   @$pb.TagNumber(6)
-  set diagnosticInfo($1734.Struct v) { setField(6, v); }
+  set diagnosticInfo($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDiagnosticInfo() => $_has(2);
   @$pb.TagNumber(6)
   void clearDiagnosticInfo() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureDiagnosticInfo() => $_ensure(2);
+  $1735.Struct ensureDiagnosticInfo() => $_ensure(2);
 
   /// The [Intent][google.cloud.dialogflow.cx.v3beta1.Intent] that triggered
   /// the response. Only name and displayName will be set.
@@ -627,20 +627,20 @@ class ConversationTurn_VirtualAgentOutput extends $pb.GeneratedMessage {
   /// The [text][google.cloud.dialogflow.cx.v3beta1.ResponseMessage.Text]
   /// responses from the agent for the turn.
   @$pb.TagNumber(9)
-  $core.List<$4485.ResponseMessage_Text> get textResponses => $_getList(5);
+  $core.List<$4487.ResponseMessage_Text> get textResponses => $_getList(5);
 
   /// Response error from the agent in the test result. If set, other output
   /// is empty.
   @$pb.TagNumber(10)
-  $1795.Status get status => $_getN(6);
+  $1796.Status get status => $_getN(6);
   @$pb.TagNumber(10)
-  set status($1795.Status v) { setField(10, v); }
+  set status($1796.Status v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasStatus() => $_has(6);
   @$pb.TagNumber(10)
   void clearStatus() => clearField(10);
   @$pb.TagNumber(10)
-  $1795.Status ensureStatus() => $_ensure(6);
+  $1796.Status ensureStatus() => $_ensure(6);
 }
 
 /// One interaction between a human and virtual agent. The human provides some
@@ -1926,7 +1926,7 @@ class CreateTestCaseRequest extends $pb.GeneratedMessage {
 class UpdateTestCaseRequest extends $pb.GeneratedMessage {
   factory UpdateTestCaseRequest({
     TestCase? testCase,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (testCase != null) {
@@ -1943,7 +1943,7 @@ class UpdateTestCaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTestCaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<TestCase>(1, _omitFieldNames ? '' : 'testCase', subBuilder: TestCase.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1986,15 +1986,15 @@ class UpdateTestCaseRequest extends $pb.GeneratedMessage {
   /// [`lastTestResult`][google.cloud.dialogflow.cx.v3beta1.TestCase.last_test_result]
   /// cannot be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for
@@ -2396,8 +2396,8 @@ class BatchRunTestCasesMetadata extends $pb.GeneratedMessage {
 class TestError extends $pb.GeneratedMessage {
   factory TestError({
     $core.String? testCase,
-    $1795.Status? status,
-    $1775.Timestamp? testTime,
+    $1796.Status? status,
+    $1776.Timestamp? testTime,
   }) {
     final $result = create();
     if (testCase != null) {
@@ -2417,8 +2417,8 @@ class TestError extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'testCase')
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'testTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'testTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2455,27 +2455,27 @@ class TestError extends $pb.GeneratedMessage {
 
   /// The status associated with the test.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 
   /// The timestamp when the test was completed.
   @$pb.TagNumber(3)
-  $1775.Timestamp get testTime => $_getN(2);
+  $1776.Timestamp get testTime => $_getN(2);
   @$pb.TagNumber(3)
-  set testTime($1775.Timestamp v) { setField(3, v); }
+  set testTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTestTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearTestTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureTestTime() => $_ensure(2);
+  $1776.Timestamp ensureTestTime() => $_ensure(2);
 }
 
 enum ImportTestCasesRequest_Source {
@@ -2686,7 +2686,7 @@ class ImportTestCasesMetadata extends $pb.GeneratedMessage {
 class TestCaseError extends $pb.GeneratedMessage {
   factory TestCaseError({
     TestCase? testCase,
-    $1795.Status? status,
+    $1796.Status? status,
   }) {
     final $result = create();
     if (testCase != null) {
@@ -2703,7 +2703,7 @@ class TestCaseError extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestCaseError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<TestCase>(1, _omitFieldNames ? '' : 'testCase', subBuilder: TestCase.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2742,15 +2742,15 @@ class TestCaseError extends $pb.GeneratedMessage {
 
   /// The status associated with the test case.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 }
 
 enum ExportTestCasesRequest_Destination {

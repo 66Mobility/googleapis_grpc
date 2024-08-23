@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/text_label.pb.dart' as $2310;
-import '../enums/label_status.pbenum.dart' as $2311;
+import '../common/text_label.pb.dart' as $2311;
+import '../enums/label_status.pbenum.dart' as $2312;
 
 /// A label.
 class Label extends $pb.GeneratedMessage {
   factory Label({
     $core.String? resourceName,
-    $2311.LabelStatusEnum_LabelStatus? status,
-    $2310.TextLabel? textLabel,
+    $2312.LabelStatusEnum_LabelStatus? status,
+    $2311.TextLabel? textLabel,
     $fixnum.Int64? id,
     $core.String? name,
   }) {
@@ -50,8 +50,8 @@ class Label extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Label', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2311.LabelStatusEnum_LabelStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2311.LabelStatusEnum_LabelStatus.UNSPECIFIED, valueOf: $2311.LabelStatusEnum_LabelStatus.valueOf, enumValues: $2311.LabelStatusEnum_LabelStatus.values)
-    ..aOM<$2310.TextLabel>(5, _omitFieldNames ? '' : 'textLabel', subBuilder: $2310.TextLabel.create)
+    ..e<$2312.LabelStatusEnum_LabelStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2312.LabelStatusEnum_LabelStatus.UNSPECIFIED, valueOf: $2312.LabelStatusEnum_LabelStatus.valueOf, enumValues: $2312.LabelStatusEnum_LabelStatus.values)
+    ..aOM<$2311.TextLabel>(5, _omitFieldNames ? '' : 'textLabel', subBuilder: $2311.TextLabel.create)
     ..aInt64(6, _omitFieldNames ? '' : 'id')
     ..aOS(7, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
@@ -92,9 +92,9 @@ class Label extends $pb.GeneratedMessage {
 
   /// Output only. Status of the label. Read only.
   @$pb.TagNumber(4)
-  $2311.LabelStatusEnum_LabelStatus get status => $_getN(1);
+  $2312.LabelStatusEnum_LabelStatus get status => $_getN(1);
   @$pb.TagNumber(4)
-  set status($2311.LabelStatusEnum_LabelStatus v) { setField(4, v); }
+  set status($2312.LabelStatusEnum_LabelStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(4)
@@ -102,15 +102,15 @@ class Label extends $pb.GeneratedMessage {
 
   /// A type of label displaying text on a colored background.
   @$pb.TagNumber(5)
-  $2310.TextLabel get textLabel => $_getN(2);
+  $2311.TextLabel get textLabel => $_getN(2);
   @$pb.TagNumber(5)
-  set textLabel($2310.TextLabel v) { setField(5, v); }
+  set textLabel($2311.TextLabel v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTextLabel() => $_has(2);
   @$pb.TagNumber(5)
   void clearTextLabel() => clearField(5);
   @$pb.TagNumber(5)
-  $2310.TextLabel ensureTextLabel() => $_ensure(2);
+  $2311.TextLabel ensureTextLabel() => $_ensure(2);
 
   /// Output only. ID of the label. Read only.
   @$pb.TagNumber(6)

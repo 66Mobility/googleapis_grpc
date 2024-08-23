@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4240;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4241;
 import 'featurestore.pbenum.dart';
 
 export 'featurestore.pbenum.dart';
@@ -192,13 +192,13 @@ class Featurestore_OnlineServingConfig extends $pb.GeneratedMessage {
 class Featurestore extends $pb.GeneratedMessage {
   factory Featurestore({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
     Featurestore_OnlineServingConfig? onlineServingConfig,
     Featurestore_State? state,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.int? onlineStorageTtlDays,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -245,13 +245,13 @@ class Featurestore extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Featurestore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Featurestore.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..aOM<Featurestore_OnlineServingConfig>(7, _omitFieldNames ? '' : 'onlineServingConfig', subBuilder: Featurestore_OnlineServingConfig.create)
     ..e<Featurestore_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Featurestore_State.STATE_UNSPECIFIED, valueOf: Featurestore_State.valueOf, enumValues: Featurestore_State.values)
-    ..aOM<$4240.EncryptionSpec>(10, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(10, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..a<$core.int>(13, _omitFieldNames ? '' : 'onlineStorageTtlDays', $pb.PbFieldType.O3)
     ..aOB(14, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(15, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -292,27 +292,27 @@ class Featurestore extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Featurestore was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Timestamp when this Featurestore was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Used to perform consistent read-modify-write updates. If not set,
   /// a blind "overwrite" update happens.
@@ -368,15 +368,15 @@ class Featurestore extends $pb.GeneratedMessage {
   /// Optional. Customer-managed encryption key spec for data storage. If set,
   /// both of the online and offline data storage will be secured by this key.
   @$pb.TagNumber(10)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(7);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(7);
   @$pb.TagNumber(10)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(10, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasEncryptionSpec() => $_has(7);
   @$pb.TagNumber(10)
   void clearEncryptionSpec() => clearField(10);
   @$pb.TagNumber(10)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(7);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(7);
 
   /// Optional. TTL in days for feature values that will be stored in online
   /// serving storage. The Feature Store online storage periodically removes

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -114,7 +114,7 @@ class Variable extends $pb.GeneratedMessage {
   factory Variable({
     $core.String? name,
     $core.List<$core.int>? value,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     VariableState? state,
     $core.String? text,
   }) {
@@ -149,7 +149,7 @@ class Variable extends $pb.GeneratedMessage {
     ..oo(0, [2, 5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OY)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<VariableState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: VariableState.VARIABLE_STATE_UNSPECIFIED, valueOf: VariableState.valueOf, enumValues: VariableState.values)
     ..aOS(5, _omitFieldNames ? '' : 'text')
     ..hasRequiredFields = false
@@ -218,15 +218,15 @@ class Variable extends $pb.GeneratedMessage {
 
   /// [Output Only] The time of the last variable update.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// [Ouput only] The current state of the variable. The variable state
   /// indicates the outcome of the `variables().watch` call and is visible
@@ -420,12 +420,12 @@ class EndCondition extends $pb.GeneratedMessage {
 class Waiter extends $pb.GeneratedMessage {
   factory Waiter({
     $core.String? name,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
     EndCondition? failure,
     EndCondition? success,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.bool? done,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (name != null) {
@@ -457,12 +457,12 @@ class Waiter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Waiter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.runtimeconfig.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..aOM<EndCondition>(3, _omitFieldNames ? '' : 'failure', subBuilder: EndCondition.create)
     ..aOM<EndCondition>(4, _omitFieldNames ? '' : 'success', subBuilder: EndCondition.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOB(6, _omitFieldNames ? '' : 'done')
-    ..aOM<$1795.Status>(7, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(7, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -511,15 +511,15 @@ class Waiter extends $pb.GeneratedMessage {
   /// before the success or failure conditions are met, the waiter fails and sets
   /// the `error` code to `DEADLINE_EXCEEDED`.
   @$pb.TagNumber(2)
-  $1737.Duration get timeout => $_getN(1);
+  $1738.Duration get timeout => $_getN(1);
   @$pb.TagNumber(2)
-  set timeout($1737.Duration v) { setField(2, v); }
+  set timeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeout() => $_ensure(1);
+  $1738.Duration ensureTimeout() => $_ensure(1);
 
   /// [Optional] The failure condition of this waiter. If this condition is met,
   /// `done` will be set to `true` and the `error` code will be set to `ABORTED`.
@@ -556,15 +556,15 @@ class Waiter extends $pb.GeneratedMessage {
   /// the value of `timeout` to this instant yields the timeout deadline for the
   /// waiter.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   ///  [Output Only] If the value is `false`, it means the waiter is still waiting
   ///  for one of its conditions to be met.
@@ -583,15 +583,15 @@ class Waiter extends $pb.GeneratedMessage {
   /// [Output Only] If the waiter ended due to a failure or timeout, this value
   /// will be set.
   @$pb.TagNumber(7)
-  $1795.Status get error => $_getN(6);
+  $1796.Status get error => $_getN(6);
   @$pb.TagNumber(7)
-  set error($1795.Status v) { setField(7, v); }
+  set error($1796.Status v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasError() => $_has(6);
   @$pb.TagNumber(7)
   void clearError() => clearField(7);
   @$pb.TagNumber(7)
-  $1795.Status ensureError() => $_ensure(6);
+  $1796.Status ensureError() => $_ensure(6);
 }
 
 

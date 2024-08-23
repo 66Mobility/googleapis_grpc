@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/bidding_strategy_type.pbenum.dart' as $4012;
-import '../enums/target_impression_share_location.pbenum.dart' as $3989;
+import '../enums/bidding_strategy_type.pbenum.dart' as $4013;
+import '../enums/target_impression_share_location.pbenum.dart' as $3990;
 
 /// An automated bidding strategy to help get the most conversion value for
 /// your campaigns while spending your budget.
@@ -204,7 +204,7 @@ class AccessibleBiddingStrategy_TargetCpa extends $pb.GeneratedMessage {
 /// location).
 class AccessibleBiddingStrategy_TargetImpressionShare extends $pb.GeneratedMessage {
   factory AccessibleBiddingStrategy_TargetImpressionShare({
-    $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation? location,
+    $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation? location,
     $fixnum.Int64? locationFractionMicros,
     $fixnum.Int64? cpcBidCeilingMicros,
   }) {
@@ -225,7 +225,7 @@ class AccessibleBiddingStrategy_TargetImpressionShare extends $pb.GeneratedMessa
   factory AccessibleBiddingStrategy_TargetImpressionShare.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccessibleBiddingStrategy.TargetImpressionShare', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
-    ..e<$3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation>(1, _omitFieldNames ? '' : 'location', $pb.PbFieldType.OE, defaultOrMaker: $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.UNSPECIFIED, valueOf: $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.valueOf, enumValues: $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.values)
+    ..e<$3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation>(1, _omitFieldNames ? '' : 'location', $pb.PbFieldType.OE, defaultOrMaker: $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.UNSPECIFIED, valueOf: $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.valueOf, enumValues: $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation.values)
     ..aInt64(2, _omitFieldNames ? '' : 'locationFractionMicros')
     ..aInt64(3, _omitFieldNames ? '' : 'cpcBidCeilingMicros')
     ..hasRequiredFields = false
@@ -254,9 +254,9 @@ class AccessibleBiddingStrategy_TargetImpressionShare extends $pb.GeneratedMessa
 
   /// Output only. The targeted location on the search results page.
   @$pb.TagNumber(1)
-  $3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation get location => $_getN(0);
+  $3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($3989.TargetImpressionShareLocationEnum_TargetImpressionShareLocation v) { setField(1, v); }
+  set location($3990.TargetImpressionShareLocationEnum_TargetImpressionShareLocation v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
@@ -442,7 +442,7 @@ class AccessibleBiddingStrategy extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? id,
     $core.String? name,
-    $4012.BiddingStrategyTypeEnum_BiddingStrategyType? type,
+    $4013.BiddingStrategyTypeEnum_BiddingStrategyType? type,
     $fixnum.Int64? ownerCustomerId,
     $core.String? ownerDescriptiveName,
     AccessibleBiddingStrategy_MaximizeConversionValue? maximizeConversionValue,
@@ -509,7 +509,7 @@ class AccessibleBiddingStrategy extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..e<$4012.BiddingStrategyTypeEnum_BiddingStrategyType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4012.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $4012.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $4012.BiddingStrategyTypeEnum_BiddingStrategyType.values)
+    ..e<$4013.BiddingStrategyTypeEnum_BiddingStrategyType>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4013.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $4013.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $4013.BiddingStrategyTypeEnum_BiddingStrategyType.values)
     ..aInt64(5, _omitFieldNames ? '' : 'ownerCustomerId')
     ..aOS(6, _omitFieldNames ? '' : 'ownerDescriptiveName')
     ..aOM<AccessibleBiddingStrategy_MaximizeConversionValue>(7, _omitFieldNames ? '' : 'maximizeConversionValue', subBuilder: AccessibleBiddingStrategy_MaximizeConversionValue.create)
@@ -580,9 +580,9 @@ class AccessibleBiddingStrategy extends $pb.GeneratedMessage {
 
   /// Output only. The type of the bidding strategy.
   @$pb.TagNumber(4)
-  $4012.BiddingStrategyTypeEnum_BiddingStrategyType get type => $_getN(3);
+  $4013.BiddingStrategyTypeEnum_BiddingStrategyType get type => $_getN(3);
   @$pb.TagNumber(4)
-  set type($4012.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(4, v); }
+  set type($4013.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(4)

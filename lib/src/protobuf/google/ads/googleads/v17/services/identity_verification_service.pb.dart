@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/identity_verification_program.pbenum.dart' as $3961;
-import '../enums/identity_verification_program_status.pbenum.dart' as $3962;
+import '../enums/identity_verification_program.pbenum.dart' as $3962;
+import '../enums/identity_verification_program_status.pbenum.dart' as $3963;
 
 /// Request message for
 ///  [IdentityVerificationService.StartIdentityVerification].
 class StartIdentityVerificationRequest extends $pb.GeneratedMessage {
   factory StartIdentityVerificationRequest({
     $core.String? customerId,
-    $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram? verificationProgram,
+    $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram? verificationProgram,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -38,7 +38,7 @@ class StartIdentityVerificationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartIdentityVerificationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..e<$3961.IdentityVerificationProgramEnum_IdentityVerificationProgram>(2, _omitFieldNames ? '' : 'verificationProgram', $pb.PbFieldType.OE, defaultOrMaker: $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram.UNSPECIFIED, valueOf: $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram.valueOf, enumValues: $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram.values)
+    ..e<$3962.IdentityVerificationProgramEnum_IdentityVerificationProgram>(2, _omitFieldNames ? '' : 'verificationProgram', $pb.PbFieldType.OE, defaultOrMaker: $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram.UNSPECIFIED, valueOf: $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram.valueOf, enumValues: $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram.values)
     ..hasRequiredFields = false
   ;
 
@@ -77,9 +77,9 @@ class StartIdentityVerificationRequest extends $pb.GeneratedMessage {
   /// Required. The verification program type for which we want to start the
   /// verification.
   @$pb.TagNumber(2)
-  $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram get verificationProgram => $_getN(1);
+  $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram get verificationProgram => $_getN(1);
   @$pb.TagNumber(2)
-  set verificationProgram($3961.IdentityVerificationProgramEnum_IdentityVerificationProgram v) { setField(2, v); }
+  set verificationProgram($3962.IdentityVerificationProgramEnum_IdentityVerificationProgram v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVerificationProgram() => $_has(1);
   @$pb.TagNumber(2)
@@ -190,7 +190,7 @@ class GetIdentityVerificationResponse extends $pb.GeneratedMessage {
 /// An identity verification for a customer.
 class IdentityVerification extends $pb.GeneratedMessage {
   factory IdentityVerification({
-    $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram? verificationProgram,
+    $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram? verificationProgram,
     IdentityVerificationRequirement? identityVerificationRequirement,
     IdentityVerificationProgress? verificationProgress,
   }) {
@@ -211,7 +211,7 @@ class IdentityVerification extends $pb.GeneratedMessage {
   factory IdentityVerification.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IdentityVerification', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3961.IdentityVerificationProgramEnum_IdentityVerificationProgram>(1, _omitFieldNames ? '' : 'verificationProgram', $pb.PbFieldType.OE, defaultOrMaker: $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram.UNSPECIFIED, valueOf: $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram.valueOf, enumValues: $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram.values)
+    ..e<$3962.IdentityVerificationProgramEnum_IdentityVerificationProgram>(1, _omitFieldNames ? '' : 'verificationProgram', $pb.PbFieldType.OE, defaultOrMaker: $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram.UNSPECIFIED, valueOf: $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram.valueOf, enumValues: $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram.values)
     ..aOM<IdentityVerificationRequirement>(2, _omitFieldNames ? '' : 'identityVerificationRequirement', subBuilder: IdentityVerificationRequirement.create)
     ..aOM<IdentityVerificationProgress>(3, _omitFieldNames ? '' : 'verificationProgress', subBuilder: IdentityVerificationProgress.create)
     ..hasRequiredFields = false
@@ -240,9 +240,9 @@ class IdentityVerification extends $pb.GeneratedMessage {
 
   /// The verification program type.
   @$pb.TagNumber(1)
-  $3961.IdentityVerificationProgramEnum_IdentityVerificationProgram get verificationProgram => $_getN(0);
+  $3962.IdentityVerificationProgramEnum_IdentityVerificationProgram get verificationProgram => $_getN(0);
   @$pb.TagNumber(1)
-  set verificationProgram($3961.IdentityVerificationProgramEnum_IdentityVerificationProgram v) { setField(1, v); }
+  set verificationProgram($3962.IdentityVerificationProgramEnum_IdentityVerificationProgram v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasVerificationProgram() => $_has(0);
   @$pb.TagNumber(1)
@@ -279,7 +279,7 @@ class IdentityVerification extends $pb.GeneratedMessage {
 /// type.
 class IdentityVerificationProgress extends $pb.GeneratedMessage {
   factory IdentityVerificationProgress({
-    $3962.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus? programStatus,
+    $3963.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus? programStatus,
     $core.String? invitationLinkExpirationTime,
     $core.String? actionUrl,
   }) {
@@ -300,7 +300,7 @@ class IdentityVerificationProgress extends $pb.GeneratedMessage {
   factory IdentityVerificationProgress.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IdentityVerificationProgress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
-    ..e<$3962.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus>(1, _omitFieldNames ? '' : 'programStatus', $pb.PbFieldType.OE, defaultOrMaker: $3962.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus.UNSPECIFIED, valueOf: $3962.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus.valueOf, enumValues: $3962.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus.values)
+    ..e<$3963.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus>(1, _omitFieldNames ? '' : 'programStatus', $pb.PbFieldType.OE, defaultOrMaker: $3963.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus.UNSPECIFIED, valueOf: $3963.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus.valueOf, enumValues: $3963.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus.values)
     ..aOS(2, _omitFieldNames ? '' : 'invitationLinkExpirationTime')
     ..aOS(3, _omitFieldNames ? '' : 'actionUrl')
     ..hasRequiredFields = false
@@ -329,9 +329,9 @@ class IdentityVerificationProgress extends $pb.GeneratedMessage {
 
   /// Current Status (PENDING_USER_ACTION, SUCCESS, FAILURE etc)
   @$pb.TagNumber(1)
-  $3962.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus get programStatus => $_getN(0);
+  $3963.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus get programStatus => $_getN(0);
   @$pb.TagNumber(1)
-  set programStatus($3962.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus v) { setField(1, v); }
+  set programStatus($3963.IdentityVerificationProgramStatusEnum_IdentityVerificationProgramStatus v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasProgramStatus() => $_has(0);
   @$pb.TagNumber(1)

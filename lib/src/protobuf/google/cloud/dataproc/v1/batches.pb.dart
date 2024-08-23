@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'batches.pbenum.dart';
-import 'shared.pb.dart' as $4470;
+import 'shared.pb.dart' as $4472;
 
 export 'batches.pbenum.dart';
 
@@ -438,7 +438,7 @@ class Batch_StateHistory extends $pb.GeneratedMessage {
   factory Batch_StateHistory({
     Batch_State? state,
     $core.String? stateMessage,
-    $1775.Timestamp? stateStartTime,
+    $1776.Timestamp? stateStartTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -459,7 +459,7 @@ class Batch_StateHistory extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Batch.StateHistory', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..e<Batch_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Batch_State.STATE_UNSPECIFIED, valueOf: Batch_State.valueOf, enumValues: Batch_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'stateMessage')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -506,15 +506,15 @@ class Batch_StateHistory extends $pb.GeneratedMessage {
 
   /// Output only. The time when the batch entered the historical state.
   @$pb.TagNumber(3)
-  $1775.Timestamp get stateStartTime => $_getN(2);
+  $1776.Timestamp get stateStartTime => $_getN(2);
   @$pb.TagNumber(3)
-  set stateStartTime($1775.Timestamp v) { setField(3, v); }
+  set stateStartTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStateStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStateStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStateStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStateStartTime() => $_ensure(2);
 }
 
 enum Batch_BatchConfig {
@@ -530,19 +530,19 @@ class Batch extends $pb.GeneratedMessage {
   factory Batch({
     $core.String? name,
     $core.String? uuid,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     PySparkBatch? pysparkBatch,
     SparkBatch? sparkBatch,
     SparkRBatch? sparkRBatch,
     SparkSqlBatch? sparkSqlBatch,
-    $4470.RuntimeInfo? runtimeInfo,
+    $4472.RuntimeInfo? runtimeInfo,
     Batch_State? state,
     $core.String? stateMessage,
-    $1775.Timestamp? stateTime,
+    $1776.Timestamp? stateTime,
     $core.String? creator,
     $core.Map<$core.String, $core.String>? labels,
-    $4470.RuntimeConfig? runtimeConfig,
-    $4470.EnvironmentConfig? environmentConfig,
+    $4472.RuntimeConfig? runtimeConfig,
+    $4472.EnvironmentConfig? environmentConfig,
     $core.String? operation,
     $core.Iterable<Batch_StateHistory>? stateHistory,
   }) {
@@ -615,19 +615,19 @@ class Batch extends $pb.GeneratedMessage {
     ..oo(0, [4, 5, 6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'uuid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<PySparkBatch>(4, _omitFieldNames ? '' : 'pysparkBatch', subBuilder: PySparkBatch.create)
     ..aOM<SparkBatch>(5, _omitFieldNames ? '' : 'sparkBatch', subBuilder: SparkBatch.create)
     ..aOM<SparkRBatch>(6, _omitFieldNames ? '' : 'sparkRBatch', subBuilder: SparkRBatch.create)
     ..aOM<SparkSqlBatch>(7, _omitFieldNames ? '' : 'sparkSqlBatch', subBuilder: SparkSqlBatch.create)
-    ..aOM<$4470.RuntimeInfo>(8, _omitFieldNames ? '' : 'runtimeInfo', subBuilder: $4470.RuntimeInfo.create)
+    ..aOM<$4472.RuntimeInfo>(8, _omitFieldNames ? '' : 'runtimeInfo', subBuilder: $4472.RuntimeInfo.create)
     ..e<Batch_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Batch_State.STATE_UNSPECIFIED, valueOf: Batch_State.valueOf, enumValues: Batch_State.values)
     ..aOS(10, _omitFieldNames ? '' : 'stateMessage')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'stateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'stateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'creator')
     ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'labels', entryClassName: 'Batch.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
-    ..aOM<$4470.RuntimeConfig>(14, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: $4470.RuntimeConfig.create)
-    ..aOM<$4470.EnvironmentConfig>(15, _omitFieldNames ? '' : 'environmentConfig', subBuilder: $4470.EnvironmentConfig.create)
+    ..aOM<$4472.RuntimeConfig>(14, _omitFieldNames ? '' : 'runtimeConfig', subBuilder: $4472.RuntimeConfig.create)
+    ..aOM<$4472.EnvironmentConfig>(15, _omitFieldNames ? '' : 'environmentConfig', subBuilder: $4472.EnvironmentConfig.create)
     ..aOS(16, _omitFieldNames ? '' : 'operation')
     ..pc<Batch_StateHistory>(17, _omitFieldNames ? '' : 'stateHistory', $pb.PbFieldType.PM, subBuilder: Batch_StateHistory.create)
     ..hasRequiredFields = false
@@ -680,15 +680,15 @@ class Batch extends $pb.GeneratedMessage {
 
   /// Output only. The time when the batch was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Optional. PySpark batch config.
   @$pb.TagNumber(4)
@@ -740,15 +740,15 @@ class Batch extends $pb.GeneratedMessage {
 
   /// Output only. Runtime information about batch execution.
   @$pb.TagNumber(8)
-  $4470.RuntimeInfo get runtimeInfo => $_getN(7);
+  $4472.RuntimeInfo get runtimeInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set runtimeInfo($4470.RuntimeInfo v) { setField(8, v); }
+  set runtimeInfo($4472.RuntimeInfo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRuntimeInfo() => $_has(7);
   @$pb.TagNumber(8)
   void clearRuntimeInfo() => clearField(8);
   @$pb.TagNumber(8)
-  $4470.RuntimeInfo ensureRuntimeInfo() => $_ensure(7);
+  $4472.RuntimeInfo ensureRuntimeInfo() => $_ensure(7);
 
   /// Output only. The state of the batch.
   @$pb.TagNumber(9)
@@ -773,15 +773,15 @@ class Batch extends $pb.GeneratedMessage {
 
   /// Output only. The time when the batch entered a current state.
   @$pb.TagNumber(11)
-  $1775.Timestamp get stateTime => $_getN(10);
+  $1776.Timestamp get stateTime => $_getN(10);
   @$pb.TagNumber(11)
-  set stateTime($1775.Timestamp v) { setField(11, v); }
+  set stateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStateTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearStateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureStateTime() => $_ensure(10);
+  $1776.Timestamp ensureStateTime() => $_ensure(10);
 
   /// Output only. The email address of the user who created the batch.
   @$pb.TagNumber(12)
@@ -805,27 +805,27 @@ class Batch extends $pb.GeneratedMessage {
 
   /// Optional. Runtime configuration for the batch execution.
   @$pb.TagNumber(14)
-  $4470.RuntimeConfig get runtimeConfig => $_getN(13);
+  $4472.RuntimeConfig get runtimeConfig => $_getN(13);
   @$pb.TagNumber(14)
-  set runtimeConfig($4470.RuntimeConfig v) { setField(14, v); }
+  set runtimeConfig($4472.RuntimeConfig v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasRuntimeConfig() => $_has(13);
   @$pb.TagNumber(14)
   void clearRuntimeConfig() => clearField(14);
   @$pb.TagNumber(14)
-  $4470.RuntimeConfig ensureRuntimeConfig() => $_ensure(13);
+  $4472.RuntimeConfig ensureRuntimeConfig() => $_ensure(13);
 
   /// Optional. Environment configuration for the batch execution.
   @$pb.TagNumber(15)
-  $4470.EnvironmentConfig get environmentConfig => $_getN(14);
+  $4472.EnvironmentConfig get environmentConfig => $_getN(14);
   @$pb.TagNumber(15)
-  set environmentConfig($4470.EnvironmentConfig v) { setField(15, v); }
+  set environmentConfig($4472.EnvironmentConfig v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasEnvironmentConfig() => $_has(14);
   @$pb.TagNumber(15)
   void clearEnvironmentConfig() => clearField(15);
   @$pb.TagNumber(15)
-  $4470.EnvironmentConfig ensureEnvironmentConfig() => $_ensure(14);
+  $4472.EnvironmentConfig ensureEnvironmentConfig() => $_ensure(14);
 
   /// Output only. The resource name of the operation associated with this batch.
   @$pb.TagNumber(16)

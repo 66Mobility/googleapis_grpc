@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../resources/billing_setup.pb.dart' as $3864;
+import '../resources/billing_setup.pb.dart' as $3865;
 
 /// Request message for billing setup mutate operations.
 class MutateBillingSetupRequest extends $pb.GeneratedMessage {
@@ -96,7 +96,7 @@ enum BillingSetupOperation_Operation {
 class BillingSetupOperation extends $pb.GeneratedMessage {
   factory BillingSetupOperation({
     $core.String? remove,
-    $3864.BillingSetup? create_2,
+    $3865.BillingSetup? create_2,
   }) {
     final $result = create();
     if (remove != null) {
@@ -119,7 +119,7 @@ class BillingSetupOperation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BillingSetupOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'remove')
-    ..aOM<$3864.BillingSetup>(2, _omitFieldNames ? '' : 'create', subBuilder: $3864.BillingSetup.create)
+    ..aOM<$3865.BillingSetup>(2, _omitFieldNames ? '' : 'create', subBuilder: $3865.BillingSetup.create)
     ..hasRequiredFields = false
   ;
 
@@ -163,15 +163,15 @@ class BillingSetupOperation extends $pb.GeneratedMessage {
   /// Creates a billing setup. No resource name is expected for the new billing
   /// setup.
   @$pb.TagNumber(2)
-  $3864.BillingSetup get create_2 => $_getN(1);
+  $3865.BillingSetup get create_2 => $_getN(1);
   @$pb.TagNumber(2)
-  set create_2($3864.BillingSetup v) { setField(2, v); }
+  set create_2($3865.BillingSetup v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreate_2() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreate_2() => clearField(2);
   @$pb.TagNumber(2)
-  $3864.BillingSetup ensureCreate_2() => $_ensure(1);
+  $3865.BillingSetup ensureCreate_2() => $_ensure(1);
 }
 
 /// Response message for a billing setup operation.

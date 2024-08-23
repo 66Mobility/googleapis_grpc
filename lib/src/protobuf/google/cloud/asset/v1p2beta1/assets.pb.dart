@@ -17,9 +17,9 @@ import '../../../iam/v1/policy.pb.dart' as $463;
 import '../../../identity/accesscontextmanager/v1/access_level.pb.dart' as $1628;
 import '../../../identity/accesscontextmanager/v1/access_policy.pb.dart' as $1627;
 import '../../../identity/accesscontextmanager/v1/service_perimeter.pb.dart' as $1629;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../orgpolicy/v1/orgpolicy.pb.dart' as $4324;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../orgpolicy/v1/orgpolicy.pb.dart' as $4325;
 
 /// An asset in Google Cloud and its temporal metadata, including the time window
 /// when it was observed and its status during that window.
@@ -111,8 +111,8 @@ class TemporalAsset extends $pb.GeneratedMessage {
 /// A time window specified by its `start_time` and `end_time`.
 class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -128,8 +128,8 @@ class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.asset.v1p2beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -156,28 +156,28 @@ class TimeWindow extends $pb.GeneratedMessage {
 
   /// Start time of the time window (exclusive).
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// End time of the time window (inclusive). If not specified, the current
   /// timestamp is used instead.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 enum Asset_AccessContextPolicy {
@@ -205,7 +205,7 @@ class Asset extends $pb.GeneratedMessage {
     $1627.AccessPolicy? accessPolicy,
     $1628.AccessLevel? accessLevel,
     $1629.ServicePerimeter? servicePerimeter,
-    $core.Iterable<$4324.Policy>? orgPolicy,
+    $core.Iterable<$4325.Policy>? orgPolicy,
   }) {
     final $result = create();
     if (name != null) {
@@ -257,7 +257,7 @@ class Asset extends $pb.GeneratedMessage {
     ..aOM<$1627.AccessPolicy>(7, _omitFieldNames ? '' : 'accessPolicy', subBuilder: $1627.AccessPolicy.create)
     ..aOM<$1628.AccessLevel>(8, _omitFieldNames ? '' : 'accessLevel', subBuilder: $1628.AccessLevel.create)
     ..aOM<$1629.ServicePerimeter>(9, _omitFieldNames ? '' : 'servicePerimeter', subBuilder: $1629.ServicePerimeter.create)
-    ..pc<$4324.Policy>(10, _omitFieldNames ? '' : 'orgPolicy', $pb.PbFieldType.PM, subBuilder: $4324.Policy.create)
+    ..pc<$4325.Policy>(10, _omitFieldNames ? '' : 'orgPolicy', $pb.PbFieldType.PM, subBuilder: $4325.Policy.create)
     ..hasRequiredFields = false
   ;
 
@@ -401,7 +401,7 @@ class Asset extends $pb.GeneratedMessage {
   /// There can be more than one organization policy with different constraints
   /// set on a given resource.
   @$pb.TagNumber(10)
-  $core.List<$4324.Policy> get orgPolicy => $_getList(8);
+  $core.List<$4325.Policy> get orgPolicy => $_getList(8);
 }
 
 /// A representation of a Google Cloud resource.
@@ -412,7 +412,7 @@ class Resource extends $pb.GeneratedMessage {
     $core.String? discoveryName,
     $core.String? resourceUrl,
     $core.String? parent,
-    $1734.Struct? data,
+    $1735.Struct? data,
   }) {
     final $result = create();
     if (version != null) {
@@ -445,7 +445,7 @@ class Resource extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'discoveryName')
     ..aOS(4, _omitFieldNames ? '' : 'resourceUrl')
     ..aOS(5, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1734.Struct>(6, _omitFieldNames ? '' : 'data', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'data', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -547,15 +547,15 @@ class Resource extends $pb.GeneratedMessage {
   /// The content of the resource, in which some sensitive fields are removed
   /// and may not be present.
   @$pb.TagNumber(6)
-  $1734.Struct get data => $_getN(5);
+  $1735.Struct get data => $_getN(5);
   @$pb.TagNumber(6)
-  set data($1734.Struct v) { setField(6, v); }
+  set data($1735.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasData() => $_has(5);
   @$pb.TagNumber(6)
   void clearData() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Struct ensureData() => $_ensure(5);
+  $1735.Struct ensureData() => $_ensure(5);
 }
 
 

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/recommendation_subscription.pb.dart' as $3117;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/recommendation_subscription.pb.dart' as $3118;
 
 /// Request message for
 /// [RecommendationSubscriptionService.MutateRecommendationSubscription]
@@ -26,7 +26,7 @@ class MutateRecommendationSubscriptionRequest extends $pb.GeneratedMessage {
     $core.Iterable<RecommendationSubscriptionOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateRecommendationSubscriptionRequest extends $pb.GeneratedMessage {
     ..pc<RecommendationSubscriptionOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: RecommendationSubscriptionOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -123,9 +123,9 @@ class MutateRecommendationSubscriptionRequest extends $pb.GeneratedMessage {
   /// resource will only be returned if the resource has the appropriate response
   /// field. For example, MutateCampaignResult.campaign.
   @$pb.TagNumber(5)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -142,9 +142,9 @@ enum RecommendationSubscriptionOperation_Operation {
 /// [RecommendationSubscriptionService.MutateRecommendationSubscription]
 class RecommendationSubscriptionOperation extends $pb.GeneratedMessage {
   factory RecommendationSubscriptionOperation({
-    $3117.RecommendationSubscription? create_1,
-    $3117.RecommendationSubscription? update,
-    $2209.FieldMask? updateMask,
+    $3118.RecommendationSubscription? create_1,
+    $3118.RecommendationSubscription? update,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -169,9 +169,9 @@ class RecommendationSubscriptionOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecommendationSubscriptionOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3117.RecommendationSubscription>(1, _omitFieldNames ? '' : 'create', subBuilder: $3117.RecommendationSubscription.create)
-    ..aOM<$3117.RecommendationSubscription>(2, _omitFieldNames ? '' : 'update', subBuilder: $3117.RecommendationSubscription.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$3118.RecommendationSubscription>(1, _omitFieldNames ? '' : 'create', subBuilder: $3118.RecommendationSubscription.create)
+    ..aOM<$3118.RecommendationSubscription>(2, _omitFieldNames ? '' : 'update', subBuilder: $3118.RecommendationSubscription.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -201,41 +201,41 @@ class RecommendationSubscriptionOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new subscription.
   @$pb.TagNumber(1)
-  $3117.RecommendationSubscription get create_1 => $_getN(0);
+  $3118.RecommendationSubscription get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3117.RecommendationSubscription v) { setField(1, v); }
+  set create_1($3118.RecommendationSubscription v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3117.RecommendationSubscription ensureCreate_1() => $_ensure(0);
+  $3118.RecommendationSubscription ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The subscription is expected to have a valid
   /// resource name.
   @$pb.TagNumber(2)
-  $3117.RecommendationSubscription get update => $_getN(1);
+  $3118.RecommendationSubscription get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3117.RecommendationSubscription v) { setField(2, v); }
+  set update($3118.RecommendationSubscription v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3117.RecommendationSubscription ensureUpdate() => $_ensure(1);
+  $3118.RecommendationSubscription ensureUpdate() => $_ensure(1);
 
   /// Optional. FieldMask that determines which resource fields are modified in
   /// an update.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Response message for
@@ -243,7 +243,7 @@ class RecommendationSubscriptionOperation extends $pb.GeneratedMessage {
 class MutateRecommendationSubscriptionResponse extends $pb.GeneratedMessage {
   factory MutateRecommendationSubscriptionResponse({
     $core.Iterable<MutateRecommendationSubscriptionResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -260,7 +260,7 @@ class MutateRecommendationSubscriptionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRecommendationSubscriptionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateRecommendationSubscriptionResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateRecommendationSubscriptionResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -294,15 +294,15 @@ class MutateRecommendationSubscriptionResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors) we return the RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// Result message for
@@ -310,7 +310,7 @@ class MutateRecommendationSubscriptionResponse extends $pb.GeneratedMessage {
 class MutateRecommendationSubscriptionResult extends $pb.GeneratedMessage {
   factory MutateRecommendationSubscriptionResult({
     $core.String? resourceName,
-    $3117.RecommendationSubscription? recommendationSubscription,
+    $3118.RecommendationSubscription? recommendationSubscription,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -327,7 +327,7 @@ class MutateRecommendationSubscriptionResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateRecommendationSubscriptionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3117.RecommendationSubscription>(2, _omitFieldNames ? '' : 'recommendationSubscription', subBuilder: $3117.RecommendationSubscription.create)
+    ..aOM<$3118.RecommendationSubscription>(2, _omitFieldNames ? '' : 'recommendationSubscription', subBuilder: $3118.RecommendationSubscription.create)
     ..hasRequiredFields = false
   ;
 
@@ -366,15 +366,15 @@ class MutateRecommendationSubscriptionResult extends $pb.GeneratedMessage {
   /// mutate. The field will only be returned when response_content_type is set
   /// to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3117.RecommendationSubscription get recommendationSubscription => $_getN(1);
+  $3118.RecommendationSubscription get recommendationSubscription => $_getN(1);
   @$pb.TagNumber(2)
-  set recommendationSubscription($3117.RecommendationSubscription v) { setField(2, v); }
+  set recommendationSubscription($3118.RecommendationSubscription v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRecommendationSubscription() => $_has(1);
   @$pb.TagNumber(2)
   void clearRecommendationSubscription() => clearField(2);
   @$pb.TagNumber(2)
-  $3117.RecommendationSubscription ensureRecommendationSubscription() => $_ensure(1);
+  $3118.RecommendationSubscription ensureRecommendationSubscription() => $_ensure(1);
 }
 
 

@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'common.pb.dart' as $4593;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'common.pb.dart' as $4595;
 import 'product.pbenum.dart';
-import 'promotion.pb.dart' as $4594;
+import 'promotion.pb.dart' as $4596;
 
 export 'product.pbenum.dart';
 
@@ -44,30 +44,30 @@ class Product extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? brands,
     $core.String? description,
     $core.String? languageCode,
-    $core.Map<$core.String, $4593.CustomAttribute>? attributes,
+    $core.Map<$core.String, $4595.CustomAttribute>? attributes,
     $core.Iterable<$core.String>? tags,
-    $4593.PriceInfo? priceInfo,
-    $4593.Rating? rating,
-    $1775.Timestamp? expireTime,
-    $1737.Duration? ttl,
-    $1775.Timestamp? availableTime,
+    $4595.PriceInfo? priceInfo,
+    $4595.Rating? rating,
+    $1776.Timestamp? expireTime,
+    $1738.Duration? ttl,
+    $1776.Timestamp? availableTime,
     Product_Availability? availability,
-    $1780.Int32Value? availableQuantity,
-    $core.Iterable<$4593.FulfillmentInfo>? fulfillmentInfo,
+    $1781.Int32Value? availableQuantity,
+    $core.Iterable<$4595.FulfillmentInfo>? fulfillmentInfo,
     $core.String? uri,
-    $core.Iterable<$4593.Image>? images,
-    $4593.Audience? audience,
-    $4593.ColorInfo? colorInfo,
+    $core.Iterable<$4595.Image>? images,
+    $4595.Audience? audience,
+    $4595.ColorInfo? colorInfo,
     $core.Iterable<$core.String>? sizes,
     $core.Iterable<$core.String>? materials,
     $core.Iterable<$core.String>? patterns,
     $core.Iterable<$core.String>? conditions,
   @$core.Deprecated('This field is deprecated.')
-    $2209.FieldMask? retrievableFields,
+    $2210.FieldMask? retrievableFields,
     $core.Iterable<Product>? variants,
-    $1775.Timestamp? publishTime,
-    $core.Iterable<$4594.Promotion>? promotions,
-    $core.Iterable<$4593.LocalInventory>? localInventories,
+    $1776.Timestamp? publishTime,
+    $core.Iterable<$4596.Promotion>? promotions,
+    $core.Iterable<$4595.LocalInventory>? localInventories,
   }) {
     final $result = create();
     if (name != null) {
@@ -197,29 +197,29 @@ class Product extends $pb.GeneratedMessage {
     ..pPS(9, _omitFieldNames ? '' : 'brands')
     ..aOS(10, _omitFieldNames ? '' : 'description')
     ..aOS(11, _omitFieldNames ? '' : 'languageCode')
-    ..m<$core.String, $4593.CustomAttribute>(12, _omitFieldNames ? '' : 'attributes', entryClassName: 'Product.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4593.CustomAttribute.create, valueDefaultOrMaker: $4593.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2'))
+    ..m<$core.String, $4595.CustomAttribute>(12, _omitFieldNames ? '' : 'attributes', entryClassName: 'Product.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4595.CustomAttribute.create, valueDefaultOrMaker: $4595.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2'))
     ..pPS(13, _omitFieldNames ? '' : 'tags')
-    ..aOM<$4593.PriceInfo>(14, _omitFieldNames ? '' : 'priceInfo', subBuilder: $4593.PriceInfo.create)
-    ..aOM<$4593.Rating>(15, _omitFieldNames ? '' : 'rating', subBuilder: $4593.Rating.create)
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(17, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(18, _omitFieldNames ? '' : 'availableTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4595.PriceInfo>(14, _omitFieldNames ? '' : 'priceInfo', subBuilder: $4595.PriceInfo.create)
+    ..aOM<$4595.Rating>(15, _omitFieldNames ? '' : 'rating', subBuilder: $4595.Rating.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(17, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(18, _omitFieldNames ? '' : 'availableTime', subBuilder: $1776.Timestamp.create)
     ..e<Product_Availability>(19, _omitFieldNames ? '' : 'availability', $pb.PbFieldType.OE, defaultOrMaker: Product_Availability.AVAILABILITY_UNSPECIFIED, valueOf: Product_Availability.valueOf, enumValues: Product_Availability.values)
-    ..aOM<$1780.Int32Value>(20, _omitFieldNames ? '' : 'availableQuantity', subBuilder: $1780.Int32Value.create)
-    ..pc<$4593.FulfillmentInfo>(21, _omitFieldNames ? '' : 'fulfillmentInfo', $pb.PbFieldType.PM, subBuilder: $4593.FulfillmentInfo.create)
+    ..aOM<$1781.Int32Value>(20, _omitFieldNames ? '' : 'availableQuantity', subBuilder: $1781.Int32Value.create)
+    ..pc<$4595.FulfillmentInfo>(21, _omitFieldNames ? '' : 'fulfillmentInfo', $pb.PbFieldType.PM, subBuilder: $4595.FulfillmentInfo.create)
     ..aOS(22, _omitFieldNames ? '' : 'uri')
-    ..pc<$4593.Image>(23, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $4593.Image.create)
-    ..aOM<$4593.Audience>(24, _omitFieldNames ? '' : 'audience', subBuilder: $4593.Audience.create)
-    ..aOM<$4593.ColorInfo>(25, _omitFieldNames ? '' : 'colorInfo', subBuilder: $4593.ColorInfo.create)
+    ..pc<$4595.Image>(23, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: $4595.Image.create)
+    ..aOM<$4595.Audience>(24, _omitFieldNames ? '' : 'audience', subBuilder: $4595.Audience.create)
+    ..aOM<$4595.ColorInfo>(25, _omitFieldNames ? '' : 'colorInfo', subBuilder: $4595.ColorInfo.create)
     ..pPS(26, _omitFieldNames ? '' : 'sizes')
     ..pPS(27, _omitFieldNames ? '' : 'materials')
     ..pPS(28, _omitFieldNames ? '' : 'patterns')
     ..pPS(29, _omitFieldNames ? '' : 'conditions')
-    ..aOM<$2209.FieldMask>(30, _omitFieldNames ? '' : 'retrievableFields', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(30, _omitFieldNames ? '' : 'retrievableFields', subBuilder: $2210.FieldMask.create)
     ..pc<Product>(31, _omitFieldNames ? '' : 'variants', $pb.PbFieldType.PM, subBuilder: Product.create)
-    ..aOM<$1775.Timestamp>(33, _omitFieldNames ? '' : 'publishTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$4594.Promotion>(34, _omitFieldNames ? '' : 'promotions', $pb.PbFieldType.PM, subBuilder: $4594.Promotion.create)
-    ..pc<$4593.LocalInventory>(35, _omitFieldNames ? '' : 'localInventories', $pb.PbFieldType.PM, subBuilder: $4593.LocalInventory.create)
+    ..aOM<$1776.Timestamp>(33, _omitFieldNames ? '' : 'publishTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$4596.Promotion>(34, _omitFieldNames ? '' : 'promotions', $pb.PbFieldType.PM, subBuilder: $4596.Promotion.create)
+    ..pc<$4595.LocalInventory>(35, _omitFieldNames ? '' : 'localInventories', $pb.PbFieldType.PM, subBuilder: $4595.LocalInventory.create)
     ..hasRequiredFields = false
   ;
 
@@ -493,7 +493,7 @@ class Product extends $pb.GeneratedMessage {
   ///    length limit of 256 characters.
   ///  * For number attributes, at most 400 values are allowed.
   @$pb.TagNumber(12)
-  $core.Map<$core.String, $4593.CustomAttribute> get attributes => $_getMap(11);
+  $core.Map<$core.String, $4595.CustomAttribute> get attributes => $_getMap(11);
 
   ///  Custom tags associated with the product.
   ///
@@ -516,27 +516,27 @@ class Product extends $pb.GeneratedMessage {
   ///  Corresponding properties: Google Merchant Center property
   ///  [price](https://support.google.com/merchants/answer/6324371).
   @$pb.TagNumber(14)
-  $4593.PriceInfo get priceInfo => $_getN(13);
+  $4595.PriceInfo get priceInfo => $_getN(13);
   @$pb.TagNumber(14)
-  set priceInfo($4593.PriceInfo v) { setField(14, v); }
+  set priceInfo($4595.PriceInfo v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasPriceInfo() => $_has(13);
   @$pb.TagNumber(14)
   void clearPriceInfo() => clearField(14);
   @$pb.TagNumber(14)
-  $4593.PriceInfo ensurePriceInfo() => $_ensure(13);
+  $4595.PriceInfo ensurePriceInfo() => $_ensure(13);
 
   /// The rating of this product.
   @$pb.TagNumber(15)
-  $4593.Rating get rating => $_getN(14);
+  $4595.Rating get rating => $_getN(14);
   @$pb.TagNumber(15)
-  set rating($4593.Rating v) { setField(15, v); }
+  set rating($4595.Rating v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasRating() => $_has(14);
   @$pb.TagNumber(15)
   void clearRating() => clearField(15);
   @$pb.TagNumber(15)
-  $4593.Rating ensureRating() => $_ensure(14);
+  $4595.Rating ensureRating() => $_ensure(14);
 
   ///  Note that this field is applied in the following ways:
   ///
@@ -563,15 +563,15 @@ class Product extends $pb.GeneratedMessage {
   ///  Corresponding properties: Google Merchant Center property
   ///  [expiration_date](https://support.google.com/merchants/answer/6324499).
   @$pb.TagNumber(16)
-  $1775.Timestamp get expireTime => $_getN(15);
+  $1776.Timestamp get expireTime => $_getN(15);
   @$pb.TagNumber(16)
-  set expireTime($1775.Timestamp v) { setField(16, v); }
+  set expireTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasExpireTime() => $_has(15);
   @$pb.TagNumber(16)
   void clearExpireTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureExpireTime() => $_ensure(15);
+  $1776.Timestamp ensureExpireTime() => $_ensure(15);
 
   ///  Input only. The TTL (time to live) of the product. Note that this is only
   ///  applicable to [Type.PRIMARY][google.cloud.retail.v2.Product.Type.PRIMARY]
@@ -596,15 +596,15 @@ class Product extends $pb.GeneratedMessage {
   ///  and
   ///  [ProductService.ListProducts][google.cloud.retail.v2.ProductService.ListProducts].
   @$pb.TagNumber(17)
-  $1737.Duration get ttl => $_getN(16);
+  $1738.Duration get ttl => $_getN(16);
   @$pb.TagNumber(17)
-  set ttl($1737.Duration v) { setField(17, v); }
+  set ttl($1738.Duration v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasTtl() => $_has(16);
   @$pb.TagNumber(17)
   void clearTtl() => clearField(17);
   @$pb.TagNumber(17)
-  $1737.Duration ensureTtl() => $_ensure(16);
+  $1738.Duration ensureTtl() => $_ensure(16);
 
   /// The timestamp when this [Product][google.cloud.retail.v2.Product] becomes
   /// available for
@@ -614,15 +614,15 @@ class Product extends $pb.GeneratedMessage {
   /// [Type.COLLECTION][google.cloud.retail.v2.Product.Type.COLLECTION], and
   /// ignored for [Type.VARIANT][google.cloud.retail.v2.Product.Type.VARIANT].
   @$pb.TagNumber(18)
-  $1775.Timestamp get availableTime => $_getN(17);
+  $1776.Timestamp get availableTime => $_getN(17);
   @$pb.TagNumber(18)
-  set availableTime($1775.Timestamp v) { setField(18, v); }
+  set availableTime($1776.Timestamp v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasAvailableTime() => $_has(17);
   @$pb.TagNumber(18)
   void clearAvailableTime() => clearField(18);
   @$pb.TagNumber(18)
-  $1775.Timestamp ensureAvailableTime() => $_ensure(17);
+  $1776.Timestamp ensureAvailableTime() => $_ensure(17);
 
   ///  The online availability of the [Product][google.cloud.retail.v2.Product].
   ///  Default to
@@ -642,15 +642,15 @@ class Product extends $pb.GeneratedMessage {
 
   /// The available quantity of the item.
   @$pb.TagNumber(20)
-  $1780.Int32Value get availableQuantity => $_getN(19);
+  $1781.Int32Value get availableQuantity => $_getN(19);
   @$pb.TagNumber(20)
-  set availableQuantity($1780.Int32Value v) { setField(20, v); }
+  set availableQuantity($1781.Int32Value v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasAvailableQuantity() => $_has(19);
   @$pb.TagNumber(20)
   void clearAvailableQuantity() => clearField(20);
   @$pb.TagNumber(20)
-  $1780.Int32Value ensureAvailableQuantity() => $_ensure(19);
+  $1781.Int32Value ensureAvailableQuantity() => $_ensure(19);
 
   ///  Fulfillment information, such as the store IDs for in-store pickup or
   ///  region IDs for different shipping methods.
@@ -659,7 +659,7 @@ class Product extends $pb.GeneratedMessage {
   ///  [FulfillmentInfo.type][google.cloud.retail.v2.FulfillmentInfo.type].
   ///  Otherwise, an INVALID_ARGUMENT error is returned.
   @$pb.TagNumber(21)
-  $core.List<$4593.FulfillmentInfo> get fulfillmentInfo => $_getList(20);
+  $core.List<$4595.FulfillmentInfo> get fulfillmentInfo => $_getList(20);
 
   ///  Canonical URL directly linking to the product detail page.
   ///
@@ -690,20 +690,20 @@ class Product extends $pb.GeneratedMessage {
   ///  [image_link](https://support.google.com/merchants/answer/6324350).
   ///  Schema.org property [Product.image](https://schema.org/image).
   @$pb.TagNumber(23)
-  $core.List<$4593.Image> get images => $_getList(22);
+  $core.List<$4595.Image> get images => $_getList(22);
 
   /// The target group associated with a given audience (e.g. male, veterans,
   /// car owners, musicians, etc.) of the product.
   @$pb.TagNumber(24)
-  $4593.Audience get audience => $_getN(23);
+  $4595.Audience get audience => $_getN(23);
   @$pb.TagNumber(24)
-  set audience($4593.Audience v) { setField(24, v); }
+  set audience($4595.Audience v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasAudience() => $_has(23);
   @$pb.TagNumber(24)
   void clearAudience() => clearField(24);
   @$pb.TagNumber(24)
-  $4593.Audience ensureAudience() => $_ensure(23);
+  $4595.Audience ensureAudience() => $_ensure(23);
 
   ///  The color of the product.
   ///
@@ -711,15 +711,15 @@ class Product extends $pb.GeneratedMessage {
   ///  [color](https://support.google.com/merchants/answer/6324487). Schema.org
   ///  property [Product.color](https://schema.org/color).
   @$pb.TagNumber(25)
-  $4593.ColorInfo get colorInfo => $_getN(24);
+  $4595.ColorInfo get colorInfo => $_getN(24);
   @$pb.TagNumber(25)
-  set colorInfo($4593.ColorInfo v) { setField(25, v); }
+  set colorInfo($4595.ColorInfo v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasColorInfo() => $_has(24);
   @$pb.TagNumber(25)
   void clearColorInfo() => clearField(25);
   @$pb.TagNumber(25)
-  $4593.ColorInfo ensureColorInfo() => $_ensure(24);
+  $4595.ColorInfo ensureColorInfo() => $_ensure(24);
 
   ///  The size of the product. To represent different size systems or size types,
   ///  consider using this format: [[[size_system:]size_type:]size_value].
@@ -844,10 +844,10 @@ class Product extends $pb.GeneratedMessage {
   ///  This field is deprecated. Use the retrievable site-wide control instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(30)
-  $2209.FieldMask get retrievableFields => $_getN(29);
+  $2210.FieldMask get retrievableFields => $_getN(29);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(30)
-  set retrievableFields($2209.FieldMask v) { setField(30, v); }
+  set retrievableFields($2210.FieldMask v) { setField(30, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(30)
   $core.bool hasRetrievableFields() => $_has(29);
@@ -856,7 +856,7 @@ class Product extends $pb.GeneratedMessage {
   void clearRetrievableFields() => clearField(30);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(30)
-  $2209.FieldMask ensureRetrievableFields() => $_ensure(29);
+  $2210.FieldMask ensureRetrievableFields() => $_ensure(29);
 
   ///  Output only. Product variants grouped together on primary product which
   ///  share similar product attributes. It's automatically grouped by
@@ -878,22 +878,22 @@ class Product extends $pb.GeneratedMessage {
   /// purely describes product freshness regardless of when it is available on
   /// search and recommendation.
   @$pb.TagNumber(33)
-  $1775.Timestamp get publishTime => $_getN(31);
+  $1776.Timestamp get publishTime => $_getN(31);
   @$pb.TagNumber(33)
-  set publishTime($1775.Timestamp v) { setField(33, v); }
+  set publishTime($1776.Timestamp v) { setField(33, v); }
   @$pb.TagNumber(33)
   $core.bool hasPublishTime() => $_has(31);
   @$pb.TagNumber(33)
   void clearPublishTime() => clearField(33);
   @$pb.TagNumber(33)
-  $1775.Timestamp ensurePublishTime() => $_ensure(31);
+  $1776.Timestamp ensurePublishTime() => $_ensure(31);
 
   /// The promotions applied to the product. A maximum of 10 values are allowed
   /// per [Product][google.cloud.retail.v2.Product]. Only
   /// [Promotion.promotion_id][google.cloud.retail.v2.Promotion.promotion_id]
   /// will be used, other fields will be ignored if set.
   @$pb.TagNumber(34)
-  $core.List<$4594.Promotion> get promotions => $_getList(32);
+  $core.List<$4596.Promotion> get promotions => $_getList(32);
 
   ///  Output only. A list of local inventories specific to different places.
   ///
@@ -903,7 +903,7 @@ class Product extends $pb.GeneratedMessage {
   ///  [ProductService.RemoveLocalInventories][google.cloud.retail.v2.ProductService.RemoveLocalInventories]
   ///  APIs if fine-grained, high-volume updates are necessary.
   @$pb.TagNumber(35)
-  $core.List<$4593.LocalInventory> get localInventories => $_getList(33);
+  $core.List<$4595.LocalInventory> get localInventories => $_getList(33);
 }
 
 

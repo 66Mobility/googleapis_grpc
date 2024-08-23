@@ -13,53 +13,53 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../enums/change_client_type.pbenum.dart' as $3663;
-import '../enums/change_event_resource_type.pbenum.dart' as $3662;
-import '../enums/resource_change_operation.pbenum.dart' as $3664;
-import 'ad.pb.dart' as $3544;
-import 'ad_group.pb.dart' as $3644;
-import 'ad_group_ad.pb.dart' as $3654;
-import 'ad_group_asset.pb.dart' as $3658;
-import 'ad_group_bid_modifier.pb.dart' as $3648;
-import 'ad_group_criterion.pb.dart' as $3645;
-import 'ad_group_feed.pb.dart' as $3653;
-import 'asset.pb.dart' as $3655;
-import 'asset_set.pb.dart' as $3659;
-import 'asset_set_asset.pb.dart' as $3660;
-import 'campaign.pb.dart' as $3646;
-import 'campaign_asset.pb.dart' as $3657;
-import 'campaign_asset_set.pb.dart' as $3661;
-import 'campaign_budget.pb.dart' as $3647;
-import 'campaign_criterion.pb.dart' as $3649;
-import 'campaign_feed.pb.dart' as $3652;
-import 'customer_asset.pb.dart' as $3656;
-import 'feed.pb.dart' as $3650;
-import 'feed_item.pb.dart' as $3651;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../enums/change_client_type.pbenum.dart' as $3664;
+import '../enums/change_event_resource_type.pbenum.dart' as $3663;
+import '../enums/resource_change_operation.pbenum.dart' as $3665;
+import 'ad.pb.dart' as $3545;
+import 'ad_group.pb.dart' as $3645;
+import 'ad_group_ad.pb.dart' as $3655;
+import 'ad_group_asset.pb.dart' as $3659;
+import 'ad_group_bid_modifier.pb.dart' as $3649;
+import 'ad_group_criterion.pb.dart' as $3646;
+import 'ad_group_feed.pb.dart' as $3654;
+import 'asset.pb.dart' as $3656;
+import 'asset_set.pb.dart' as $3660;
+import 'asset_set_asset.pb.dart' as $3661;
+import 'campaign.pb.dart' as $3647;
+import 'campaign_asset.pb.dart' as $3658;
+import 'campaign_asset_set.pb.dart' as $3662;
+import 'campaign_budget.pb.dart' as $3648;
+import 'campaign_criterion.pb.dart' as $3650;
+import 'campaign_feed.pb.dart' as $3653;
+import 'customer_asset.pb.dart' as $3657;
+import 'feed.pb.dart' as $3651;
+import 'feed_item.pb.dart' as $3652;
 
 /// A wrapper proto presenting all supported resources.
 /// Only the resource of the change_resource_type will be set.
 class ChangeEvent_ChangedResource extends $pb.GeneratedMessage {
   factory ChangeEvent_ChangedResource({
-    $3544.Ad? ad,
-    $3644.AdGroup? adGroup,
-    $3645.AdGroupCriterion? adGroupCriterion,
-    $3646.Campaign? campaign,
-    $3647.CampaignBudget? campaignBudget,
-    $3648.AdGroupBidModifier? adGroupBidModifier,
-    $3649.CampaignCriterion? campaignCriterion,
-    $3650.Feed? feed,
-    $3651.FeedItem? feedItem,
-    $3652.CampaignFeed? campaignFeed,
-    $3653.AdGroupFeed? adGroupFeed,
-    $3654.AdGroupAd? adGroupAd,
-    $3655.Asset? asset,
-    $3656.CustomerAsset? customerAsset,
-    $3657.CampaignAsset? campaignAsset,
-    $3658.AdGroupAsset? adGroupAsset,
-    $3659.AssetSet? assetSet,
-    $3660.AssetSetAsset? assetSetAsset,
-    $3661.CampaignAssetSet? campaignAssetSet,
+    $3545.Ad? ad,
+    $3645.AdGroup? adGroup,
+    $3646.AdGroupCriterion? adGroupCriterion,
+    $3647.Campaign? campaign,
+    $3648.CampaignBudget? campaignBudget,
+    $3649.AdGroupBidModifier? adGroupBidModifier,
+    $3650.CampaignCriterion? campaignCriterion,
+    $3651.Feed? feed,
+    $3652.FeedItem? feedItem,
+    $3653.CampaignFeed? campaignFeed,
+    $3654.AdGroupFeed? adGroupFeed,
+    $3655.AdGroupAd? adGroupAd,
+    $3656.Asset? asset,
+    $3657.CustomerAsset? customerAsset,
+    $3658.CampaignAsset? campaignAsset,
+    $3659.AdGroupAsset? adGroupAsset,
+    $3660.AssetSet? assetSet,
+    $3661.AssetSetAsset? assetSetAsset,
+    $3662.CampaignAssetSet? campaignAssetSet,
   }) {
     final $result = create();
     if (ad != null) {
@@ -126,25 +126,25 @@ class ChangeEvent_ChangedResource extends $pb.GeneratedMessage {
   factory ChangeEvent_ChangedResource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChangeEvent.ChangedResource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..aOM<$3544.Ad>(1, _omitFieldNames ? '' : 'ad', subBuilder: $3544.Ad.create)
-    ..aOM<$3644.AdGroup>(2, _omitFieldNames ? '' : 'adGroup', subBuilder: $3644.AdGroup.create)
-    ..aOM<$3645.AdGroupCriterion>(3, _omitFieldNames ? '' : 'adGroupCriterion', subBuilder: $3645.AdGroupCriterion.create)
-    ..aOM<$3646.Campaign>(4, _omitFieldNames ? '' : 'campaign', subBuilder: $3646.Campaign.create)
-    ..aOM<$3647.CampaignBudget>(5, _omitFieldNames ? '' : 'campaignBudget', subBuilder: $3647.CampaignBudget.create)
-    ..aOM<$3648.AdGroupBidModifier>(6, _omitFieldNames ? '' : 'adGroupBidModifier', subBuilder: $3648.AdGroupBidModifier.create)
-    ..aOM<$3649.CampaignCriterion>(7, _omitFieldNames ? '' : 'campaignCriterion', subBuilder: $3649.CampaignCriterion.create)
-    ..aOM<$3650.Feed>(8, _omitFieldNames ? '' : 'feed', subBuilder: $3650.Feed.create)
-    ..aOM<$3651.FeedItem>(9, _omitFieldNames ? '' : 'feedItem', subBuilder: $3651.FeedItem.create)
-    ..aOM<$3652.CampaignFeed>(10, _omitFieldNames ? '' : 'campaignFeed', subBuilder: $3652.CampaignFeed.create)
-    ..aOM<$3653.AdGroupFeed>(11, _omitFieldNames ? '' : 'adGroupFeed', subBuilder: $3653.AdGroupFeed.create)
-    ..aOM<$3654.AdGroupAd>(12, _omitFieldNames ? '' : 'adGroupAd', subBuilder: $3654.AdGroupAd.create)
-    ..aOM<$3655.Asset>(13, _omitFieldNames ? '' : 'asset', subBuilder: $3655.Asset.create)
-    ..aOM<$3656.CustomerAsset>(14, _omitFieldNames ? '' : 'customerAsset', subBuilder: $3656.CustomerAsset.create)
-    ..aOM<$3657.CampaignAsset>(15, _omitFieldNames ? '' : 'campaignAsset', subBuilder: $3657.CampaignAsset.create)
-    ..aOM<$3658.AdGroupAsset>(16, _omitFieldNames ? '' : 'adGroupAsset', subBuilder: $3658.AdGroupAsset.create)
-    ..aOM<$3659.AssetSet>(17, _omitFieldNames ? '' : 'assetSet', subBuilder: $3659.AssetSet.create)
-    ..aOM<$3660.AssetSetAsset>(18, _omitFieldNames ? '' : 'assetSetAsset', subBuilder: $3660.AssetSetAsset.create)
-    ..aOM<$3661.CampaignAssetSet>(19, _omitFieldNames ? '' : 'campaignAssetSet', subBuilder: $3661.CampaignAssetSet.create)
+    ..aOM<$3545.Ad>(1, _omitFieldNames ? '' : 'ad', subBuilder: $3545.Ad.create)
+    ..aOM<$3645.AdGroup>(2, _omitFieldNames ? '' : 'adGroup', subBuilder: $3645.AdGroup.create)
+    ..aOM<$3646.AdGroupCriterion>(3, _omitFieldNames ? '' : 'adGroupCriterion', subBuilder: $3646.AdGroupCriterion.create)
+    ..aOM<$3647.Campaign>(4, _omitFieldNames ? '' : 'campaign', subBuilder: $3647.Campaign.create)
+    ..aOM<$3648.CampaignBudget>(5, _omitFieldNames ? '' : 'campaignBudget', subBuilder: $3648.CampaignBudget.create)
+    ..aOM<$3649.AdGroupBidModifier>(6, _omitFieldNames ? '' : 'adGroupBidModifier', subBuilder: $3649.AdGroupBidModifier.create)
+    ..aOM<$3650.CampaignCriterion>(7, _omitFieldNames ? '' : 'campaignCriterion', subBuilder: $3650.CampaignCriterion.create)
+    ..aOM<$3651.Feed>(8, _omitFieldNames ? '' : 'feed', subBuilder: $3651.Feed.create)
+    ..aOM<$3652.FeedItem>(9, _omitFieldNames ? '' : 'feedItem', subBuilder: $3652.FeedItem.create)
+    ..aOM<$3653.CampaignFeed>(10, _omitFieldNames ? '' : 'campaignFeed', subBuilder: $3653.CampaignFeed.create)
+    ..aOM<$3654.AdGroupFeed>(11, _omitFieldNames ? '' : 'adGroupFeed', subBuilder: $3654.AdGroupFeed.create)
+    ..aOM<$3655.AdGroupAd>(12, _omitFieldNames ? '' : 'adGroupAd', subBuilder: $3655.AdGroupAd.create)
+    ..aOM<$3656.Asset>(13, _omitFieldNames ? '' : 'asset', subBuilder: $3656.Asset.create)
+    ..aOM<$3657.CustomerAsset>(14, _omitFieldNames ? '' : 'customerAsset', subBuilder: $3657.CustomerAsset.create)
+    ..aOM<$3658.CampaignAsset>(15, _omitFieldNames ? '' : 'campaignAsset', subBuilder: $3658.CampaignAsset.create)
+    ..aOM<$3659.AdGroupAsset>(16, _omitFieldNames ? '' : 'adGroupAsset', subBuilder: $3659.AdGroupAsset.create)
+    ..aOM<$3660.AssetSet>(17, _omitFieldNames ? '' : 'assetSet', subBuilder: $3660.AssetSet.create)
+    ..aOM<$3661.AssetSetAsset>(18, _omitFieldNames ? '' : 'assetSetAsset', subBuilder: $3661.AssetSetAsset.create)
+    ..aOM<$3662.CampaignAssetSet>(19, _omitFieldNames ? '' : 'campaignAssetSet', subBuilder: $3662.CampaignAssetSet.create)
     ..hasRequiredFields = false
   ;
 
@@ -171,231 +171,231 @@ class ChangeEvent_ChangedResource extends $pb.GeneratedMessage {
 
   /// Output only. Set if change_resource_type == AD.
   @$pb.TagNumber(1)
-  $3544.Ad get ad => $_getN(0);
+  $3545.Ad get ad => $_getN(0);
   @$pb.TagNumber(1)
-  set ad($3544.Ad v) { setField(1, v); }
+  set ad($3545.Ad v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAd() => $_has(0);
   @$pb.TagNumber(1)
   void clearAd() => clearField(1);
   @$pb.TagNumber(1)
-  $3544.Ad ensureAd() => $_ensure(0);
+  $3545.Ad ensureAd() => $_ensure(0);
 
   /// Output only. Set if change_resource_type == AD_GROUP.
   @$pb.TagNumber(2)
-  $3644.AdGroup get adGroup => $_getN(1);
+  $3645.AdGroup get adGroup => $_getN(1);
   @$pb.TagNumber(2)
-  set adGroup($3644.AdGroup v) { setField(2, v); }
+  set adGroup($3645.AdGroup v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdGroup() => $_has(1);
   @$pb.TagNumber(2)
   void clearAdGroup() => clearField(2);
   @$pb.TagNumber(2)
-  $3644.AdGroup ensureAdGroup() => $_ensure(1);
+  $3645.AdGroup ensureAdGroup() => $_ensure(1);
 
   /// Output only. Set if change_resource_type == AD_GROUP_CRITERION.
   @$pb.TagNumber(3)
-  $3645.AdGroupCriterion get adGroupCriterion => $_getN(2);
+  $3646.AdGroupCriterion get adGroupCriterion => $_getN(2);
   @$pb.TagNumber(3)
-  set adGroupCriterion($3645.AdGroupCriterion v) { setField(3, v); }
+  set adGroupCriterion($3646.AdGroupCriterion v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAdGroupCriterion() => $_has(2);
   @$pb.TagNumber(3)
   void clearAdGroupCriterion() => clearField(3);
   @$pb.TagNumber(3)
-  $3645.AdGroupCriterion ensureAdGroupCriterion() => $_ensure(2);
+  $3646.AdGroupCriterion ensureAdGroupCriterion() => $_ensure(2);
 
   /// Output only. Set if change_resource_type == CAMPAIGN.
   @$pb.TagNumber(4)
-  $3646.Campaign get campaign => $_getN(3);
+  $3647.Campaign get campaign => $_getN(3);
   @$pb.TagNumber(4)
-  set campaign($3646.Campaign v) { setField(4, v); }
+  set campaign($3647.Campaign v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCampaign() => $_has(3);
   @$pb.TagNumber(4)
   void clearCampaign() => clearField(4);
   @$pb.TagNumber(4)
-  $3646.Campaign ensureCampaign() => $_ensure(3);
+  $3647.Campaign ensureCampaign() => $_ensure(3);
 
   /// Output only. Set if change_resource_type == CAMPAIGN_BUDGET.
   @$pb.TagNumber(5)
-  $3647.CampaignBudget get campaignBudget => $_getN(4);
+  $3648.CampaignBudget get campaignBudget => $_getN(4);
   @$pb.TagNumber(5)
-  set campaignBudget($3647.CampaignBudget v) { setField(5, v); }
+  set campaignBudget($3648.CampaignBudget v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCampaignBudget() => $_has(4);
   @$pb.TagNumber(5)
   void clearCampaignBudget() => clearField(5);
   @$pb.TagNumber(5)
-  $3647.CampaignBudget ensureCampaignBudget() => $_ensure(4);
+  $3648.CampaignBudget ensureCampaignBudget() => $_ensure(4);
 
   /// Output only. Set if change_resource_type == AD_GROUP_BID_MODIFIER.
   @$pb.TagNumber(6)
-  $3648.AdGroupBidModifier get adGroupBidModifier => $_getN(5);
+  $3649.AdGroupBidModifier get adGroupBidModifier => $_getN(5);
   @$pb.TagNumber(6)
-  set adGroupBidModifier($3648.AdGroupBidModifier v) { setField(6, v); }
+  set adGroupBidModifier($3649.AdGroupBidModifier v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAdGroupBidModifier() => $_has(5);
   @$pb.TagNumber(6)
   void clearAdGroupBidModifier() => clearField(6);
   @$pb.TagNumber(6)
-  $3648.AdGroupBidModifier ensureAdGroupBidModifier() => $_ensure(5);
+  $3649.AdGroupBidModifier ensureAdGroupBidModifier() => $_ensure(5);
 
   /// Output only. Set if change_resource_type == CAMPAIGN_CRITERION.
   @$pb.TagNumber(7)
-  $3649.CampaignCriterion get campaignCriterion => $_getN(6);
+  $3650.CampaignCriterion get campaignCriterion => $_getN(6);
   @$pb.TagNumber(7)
-  set campaignCriterion($3649.CampaignCriterion v) { setField(7, v); }
+  set campaignCriterion($3650.CampaignCriterion v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCampaignCriterion() => $_has(6);
   @$pb.TagNumber(7)
   void clearCampaignCriterion() => clearField(7);
   @$pb.TagNumber(7)
-  $3649.CampaignCriterion ensureCampaignCriterion() => $_ensure(6);
+  $3650.CampaignCriterion ensureCampaignCriterion() => $_ensure(6);
 
   /// Output only. Set if change_resource_type == FEED.
   @$pb.TagNumber(8)
-  $3650.Feed get feed => $_getN(7);
+  $3651.Feed get feed => $_getN(7);
   @$pb.TagNumber(8)
-  set feed($3650.Feed v) { setField(8, v); }
+  set feed($3651.Feed v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasFeed() => $_has(7);
   @$pb.TagNumber(8)
   void clearFeed() => clearField(8);
   @$pb.TagNumber(8)
-  $3650.Feed ensureFeed() => $_ensure(7);
+  $3651.Feed ensureFeed() => $_ensure(7);
 
   /// Output only. Set if change_resource_type == FEED_ITEM.
   @$pb.TagNumber(9)
-  $3651.FeedItem get feedItem => $_getN(8);
+  $3652.FeedItem get feedItem => $_getN(8);
   @$pb.TagNumber(9)
-  set feedItem($3651.FeedItem v) { setField(9, v); }
+  set feedItem($3652.FeedItem v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFeedItem() => $_has(8);
   @$pb.TagNumber(9)
   void clearFeedItem() => clearField(9);
   @$pb.TagNumber(9)
-  $3651.FeedItem ensureFeedItem() => $_ensure(8);
+  $3652.FeedItem ensureFeedItem() => $_ensure(8);
 
   /// Output only. Set if change_resource_type == CAMPAIGN_FEED.
   @$pb.TagNumber(10)
-  $3652.CampaignFeed get campaignFeed => $_getN(9);
+  $3653.CampaignFeed get campaignFeed => $_getN(9);
   @$pb.TagNumber(10)
-  set campaignFeed($3652.CampaignFeed v) { setField(10, v); }
+  set campaignFeed($3653.CampaignFeed v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCampaignFeed() => $_has(9);
   @$pb.TagNumber(10)
   void clearCampaignFeed() => clearField(10);
   @$pb.TagNumber(10)
-  $3652.CampaignFeed ensureCampaignFeed() => $_ensure(9);
+  $3653.CampaignFeed ensureCampaignFeed() => $_ensure(9);
 
   /// Output only. Set if change_resource_type == AD_GROUP_FEED.
   @$pb.TagNumber(11)
-  $3653.AdGroupFeed get adGroupFeed => $_getN(10);
+  $3654.AdGroupFeed get adGroupFeed => $_getN(10);
   @$pb.TagNumber(11)
-  set adGroupFeed($3653.AdGroupFeed v) { setField(11, v); }
+  set adGroupFeed($3654.AdGroupFeed v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasAdGroupFeed() => $_has(10);
   @$pb.TagNumber(11)
   void clearAdGroupFeed() => clearField(11);
   @$pb.TagNumber(11)
-  $3653.AdGroupFeed ensureAdGroupFeed() => $_ensure(10);
+  $3654.AdGroupFeed ensureAdGroupFeed() => $_ensure(10);
 
   /// Output only. Set if change_resource_type == AD_GROUP_AD.
   @$pb.TagNumber(12)
-  $3654.AdGroupAd get adGroupAd => $_getN(11);
+  $3655.AdGroupAd get adGroupAd => $_getN(11);
   @$pb.TagNumber(12)
-  set adGroupAd($3654.AdGroupAd v) { setField(12, v); }
+  set adGroupAd($3655.AdGroupAd v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasAdGroupAd() => $_has(11);
   @$pb.TagNumber(12)
   void clearAdGroupAd() => clearField(12);
   @$pb.TagNumber(12)
-  $3654.AdGroupAd ensureAdGroupAd() => $_ensure(11);
+  $3655.AdGroupAd ensureAdGroupAd() => $_ensure(11);
 
   /// Output only. Set if change_resource_type == ASSET.
   @$pb.TagNumber(13)
-  $3655.Asset get asset => $_getN(12);
+  $3656.Asset get asset => $_getN(12);
   @$pb.TagNumber(13)
-  set asset($3655.Asset v) { setField(13, v); }
+  set asset($3656.Asset v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasAsset() => $_has(12);
   @$pb.TagNumber(13)
   void clearAsset() => clearField(13);
   @$pb.TagNumber(13)
-  $3655.Asset ensureAsset() => $_ensure(12);
+  $3656.Asset ensureAsset() => $_ensure(12);
 
   /// Output only. Set if change_resource_type == CUSTOMER_ASSET.
   @$pb.TagNumber(14)
-  $3656.CustomerAsset get customerAsset => $_getN(13);
+  $3657.CustomerAsset get customerAsset => $_getN(13);
   @$pb.TagNumber(14)
-  set customerAsset($3656.CustomerAsset v) { setField(14, v); }
+  set customerAsset($3657.CustomerAsset v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasCustomerAsset() => $_has(13);
   @$pb.TagNumber(14)
   void clearCustomerAsset() => clearField(14);
   @$pb.TagNumber(14)
-  $3656.CustomerAsset ensureCustomerAsset() => $_ensure(13);
+  $3657.CustomerAsset ensureCustomerAsset() => $_ensure(13);
 
   /// Output only. Set if change_resource_type == CAMPAIGN_ASSET.
   @$pb.TagNumber(15)
-  $3657.CampaignAsset get campaignAsset => $_getN(14);
+  $3658.CampaignAsset get campaignAsset => $_getN(14);
   @$pb.TagNumber(15)
-  set campaignAsset($3657.CampaignAsset v) { setField(15, v); }
+  set campaignAsset($3658.CampaignAsset v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasCampaignAsset() => $_has(14);
   @$pb.TagNumber(15)
   void clearCampaignAsset() => clearField(15);
   @$pb.TagNumber(15)
-  $3657.CampaignAsset ensureCampaignAsset() => $_ensure(14);
+  $3658.CampaignAsset ensureCampaignAsset() => $_ensure(14);
 
   /// Output only. Set if change_resource_type == AD_GROUP_ASSET.
   @$pb.TagNumber(16)
-  $3658.AdGroupAsset get adGroupAsset => $_getN(15);
+  $3659.AdGroupAsset get adGroupAsset => $_getN(15);
   @$pb.TagNumber(16)
-  set adGroupAsset($3658.AdGroupAsset v) { setField(16, v); }
+  set adGroupAsset($3659.AdGroupAsset v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasAdGroupAsset() => $_has(15);
   @$pb.TagNumber(16)
   void clearAdGroupAsset() => clearField(16);
   @$pb.TagNumber(16)
-  $3658.AdGroupAsset ensureAdGroupAsset() => $_ensure(15);
+  $3659.AdGroupAsset ensureAdGroupAsset() => $_ensure(15);
 
   /// Output only. Set if change_resource_type == ASSET_SET.
   @$pb.TagNumber(17)
-  $3659.AssetSet get assetSet => $_getN(16);
+  $3660.AssetSet get assetSet => $_getN(16);
   @$pb.TagNumber(17)
-  set assetSet($3659.AssetSet v) { setField(17, v); }
+  set assetSet($3660.AssetSet v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasAssetSet() => $_has(16);
   @$pb.TagNumber(17)
   void clearAssetSet() => clearField(17);
   @$pb.TagNumber(17)
-  $3659.AssetSet ensureAssetSet() => $_ensure(16);
+  $3660.AssetSet ensureAssetSet() => $_ensure(16);
 
   /// Output only. Set if change_resource_type == ASSET_SET_ASSET.
   @$pb.TagNumber(18)
-  $3660.AssetSetAsset get assetSetAsset => $_getN(17);
+  $3661.AssetSetAsset get assetSetAsset => $_getN(17);
   @$pb.TagNumber(18)
-  set assetSetAsset($3660.AssetSetAsset v) { setField(18, v); }
+  set assetSetAsset($3661.AssetSetAsset v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasAssetSetAsset() => $_has(17);
   @$pb.TagNumber(18)
   void clearAssetSetAsset() => clearField(18);
   @$pb.TagNumber(18)
-  $3660.AssetSetAsset ensureAssetSetAsset() => $_ensure(17);
+  $3661.AssetSetAsset ensureAssetSetAsset() => $_ensure(17);
 
   /// Output only. Set if change_resource_type == CAMPAIGN_ASSET_SET.
   @$pb.TagNumber(19)
-  $3661.CampaignAssetSet get campaignAssetSet => $_getN(18);
+  $3662.CampaignAssetSet get campaignAssetSet => $_getN(18);
   @$pb.TagNumber(19)
-  set campaignAssetSet($3661.CampaignAssetSet v) { setField(19, v); }
+  set campaignAssetSet($3662.CampaignAssetSet v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasCampaignAssetSet() => $_has(18);
   @$pb.TagNumber(19)
   void clearCampaignAssetSet() => clearField(19);
   @$pb.TagNumber(19)
-  $3661.CampaignAssetSet ensureCampaignAssetSet() => $_ensure(18);
+  $3662.CampaignAssetSet ensureCampaignAssetSet() => $_ensure(18);
 }
 
 /// Describes the granular change of returned resources of certain resource
@@ -406,14 +406,14 @@ class ChangeEvent extends $pb.GeneratedMessage {
   factory ChangeEvent({
     $core.String? resourceName,
     $core.String? changeDateTime,
-    $3662.ChangeEventResourceTypeEnum_ChangeEventResourceType? changeResourceType,
+    $3663.ChangeEventResourceTypeEnum_ChangeEventResourceType? changeResourceType,
     $core.String? changeResourceName,
-    $3663.ChangeClientTypeEnum_ChangeClientType? clientType,
+    $3664.ChangeClientTypeEnum_ChangeClientType? clientType,
     $core.String? userEmail,
     ChangeEvent_ChangedResource? oldResource,
     ChangeEvent_ChangedResource? newResource,
-    $3664.ResourceChangeOperationEnum_ResourceChangeOperation? resourceChangeOperation,
-    $2209.FieldMask? changedFields,
+    $3665.ResourceChangeOperationEnum_ResourceChangeOperation? resourceChangeOperation,
+    $2210.FieldMask? changedFields,
     $core.String? campaign,
     $core.String? adGroup,
     $core.String? feed,
@@ -475,14 +475,14 @@ class ChangeEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChangeEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'changeDateTime')
-    ..e<$3662.ChangeEventResourceTypeEnum_ChangeEventResourceType>(3, _omitFieldNames ? '' : 'changeResourceType', $pb.PbFieldType.OE, defaultOrMaker: $3662.ChangeEventResourceTypeEnum_ChangeEventResourceType.UNSPECIFIED, valueOf: $3662.ChangeEventResourceTypeEnum_ChangeEventResourceType.valueOf, enumValues: $3662.ChangeEventResourceTypeEnum_ChangeEventResourceType.values)
+    ..e<$3663.ChangeEventResourceTypeEnum_ChangeEventResourceType>(3, _omitFieldNames ? '' : 'changeResourceType', $pb.PbFieldType.OE, defaultOrMaker: $3663.ChangeEventResourceTypeEnum_ChangeEventResourceType.UNSPECIFIED, valueOf: $3663.ChangeEventResourceTypeEnum_ChangeEventResourceType.valueOf, enumValues: $3663.ChangeEventResourceTypeEnum_ChangeEventResourceType.values)
     ..aOS(4, _omitFieldNames ? '' : 'changeResourceName')
-    ..e<$3663.ChangeClientTypeEnum_ChangeClientType>(5, _omitFieldNames ? '' : 'clientType', $pb.PbFieldType.OE, defaultOrMaker: $3663.ChangeClientTypeEnum_ChangeClientType.UNSPECIFIED, valueOf: $3663.ChangeClientTypeEnum_ChangeClientType.valueOf, enumValues: $3663.ChangeClientTypeEnum_ChangeClientType.values)
+    ..e<$3664.ChangeClientTypeEnum_ChangeClientType>(5, _omitFieldNames ? '' : 'clientType', $pb.PbFieldType.OE, defaultOrMaker: $3664.ChangeClientTypeEnum_ChangeClientType.UNSPECIFIED, valueOf: $3664.ChangeClientTypeEnum_ChangeClientType.valueOf, enumValues: $3664.ChangeClientTypeEnum_ChangeClientType.values)
     ..aOS(6, _omitFieldNames ? '' : 'userEmail')
     ..aOM<ChangeEvent_ChangedResource>(7, _omitFieldNames ? '' : 'oldResource', subBuilder: ChangeEvent_ChangedResource.create)
     ..aOM<ChangeEvent_ChangedResource>(8, _omitFieldNames ? '' : 'newResource', subBuilder: ChangeEvent_ChangedResource.create)
-    ..e<$3664.ResourceChangeOperationEnum_ResourceChangeOperation>(9, _omitFieldNames ? '' : 'resourceChangeOperation', $pb.PbFieldType.OE, defaultOrMaker: $3664.ResourceChangeOperationEnum_ResourceChangeOperation.UNSPECIFIED, valueOf: $3664.ResourceChangeOperationEnum_ResourceChangeOperation.valueOf, enumValues: $3664.ResourceChangeOperationEnum_ResourceChangeOperation.values)
-    ..aOM<$2209.FieldMask>(10, _omitFieldNames ? '' : 'changedFields', subBuilder: $2209.FieldMask.create)
+    ..e<$3665.ResourceChangeOperationEnum_ResourceChangeOperation>(9, _omitFieldNames ? '' : 'resourceChangeOperation', $pb.PbFieldType.OE, defaultOrMaker: $3665.ResourceChangeOperationEnum_ResourceChangeOperation.UNSPECIFIED, valueOf: $3665.ResourceChangeOperationEnum_ResourceChangeOperation.valueOf, enumValues: $3665.ResourceChangeOperationEnum_ResourceChangeOperation.values)
+    ..aOM<$2210.FieldMask>(10, _omitFieldNames ? '' : 'changedFields', subBuilder: $2210.FieldMask.create)
     ..aOS(11, _omitFieldNames ? '' : 'campaign')
     ..aOS(12, _omitFieldNames ? '' : 'adGroup')
     ..aOS(13, _omitFieldNames ? '' : 'feed')
@@ -538,9 +538,9 @@ class ChangeEvent extends $pb.GeneratedMessage {
   /// Output only. The type of the changed resource. This dictates what resource
   /// will be set in old_resource and new_resource.
   @$pb.TagNumber(3)
-  $3662.ChangeEventResourceTypeEnum_ChangeEventResourceType get changeResourceType => $_getN(2);
+  $3663.ChangeEventResourceTypeEnum_ChangeEventResourceType get changeResourceType => $_getN(2);
   @$pb.TagNumber(3)
-  set changeResourceType($3662.ChangeEventResourceTypeEnum_ChangeEventResourceType v) { setField(3, v); }
+  set changeResourceType($3663.ChangeEventResourceTypeEnum_ChangeEventResourceType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasChangeResourceType() => $_has(2);
   @$pb.TagNumber(3)
@@ -558,9 +558,9 @@ class ChangeEvent extends $pb.GeneratedMessage {
 
   /// Output only. Where the change was made through.
   @$pb.TagNumber(5)
-  $3663.ChangeClientTypeEnum_ChangeClientType get clientType => $_getN(4);
+  $3664.ChangeClientTypeEnum_ChangeClientType get clientType => $_getN(4);
   @$pb.TagNumber(5)
-  set clientType($3663.ChangeClientTypeEnum_ChangeClientType v) { setField(5, v); }
+  set clientType($3664.ChangeClientTypeEnum_ChangeClientType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasClientType() => $_has(4);
   @$pb.TagNumber(5)
@@ -604,9 +604,9 @@ class ChangeEvent extends $pb.GeneratedMessage {
 
   /// Output only. The operation on the changed resource.
   @$pb.TagNumber(9)
-  $3664.ResourceChangeOperationEnum_ResourceChangeOperation get resourceChangeOperation => $_getN(8);
+  $3665.ResourceChangeOperationEnum_ResourceChangeOperation get resourceChangeOperation => $_getN(8);
   @$pb.TagNumber(9)
-  set resourceChangeOperation($3664.ResourceChangeOperationEnum_ResourceChangeOperation v) { setField(9, v); }
+  set resourceChangeOperation($3665.ResourceChangeOperationEnum_ResourceChangeOperation v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasResourceChangeOperation() => $_has(8);
   @$pb.TagNumber(9)
@@ -614,15 +614,15 @@ class ChangeEvent extends $pb.GeneratedMessage {
 
   /// Output only. A list of fields that are changed in the returned resource.
   @$pb.TagNumber(10)
-  $2209.FieldMask get changedFields => $_getN(9);
+  $2210.FieldMask get changedFields => $_getN(9);
   @$pb.TagNumber(10)
-  set changedFields($2209.FieldMask v) { setField(10, v); }
+  set changedFields($2210.FieldMask v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasChangedFields() => $_has(9);
   @$pb.TagNumber(10)
   void clearChangedFields() => clearField(10);
   @$pb.TagNumber(10)
-  $2209.FieldMask ensureChangedFields() => $_ensure(9);
+  $2210.FieldMask ensureChangedFields() => $_ensure(9);
 
   /// Output only. The Campaign affected by this change.
   @$pb.TagNumber(11)

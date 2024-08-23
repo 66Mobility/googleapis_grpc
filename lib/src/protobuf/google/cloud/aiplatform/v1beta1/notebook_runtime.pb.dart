@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4281;
-import 'machine_resources.pb.dart' as $4287;
-import 'network_spec.pb.dart' as $4309;
-import 'notebook_euc_config.pb.dart' as $4311;
-import 'notebook_idle_shutdown_config.pb.dart' as $4310;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4282;
+import 'machine_resources.pb.dart' as $4288;
+import 'network_spec.pb.dart' as $4310;
+import 'notebook_euc_config.pb.dart' as $4312;
+import 'notebook_idle_shutdown_config.pb.dart' as $4311;
 import 'notebook_runtime.pbenum.dart';
-import 'notebook_runtime_template_ref.pb.dart' as $4312;
+import 'notebook_runtime_template_ref.pb.dart' as $4313;
 
 export 'notebook_runtime.pbenum.dart';
 
@@ -33,20 +33,20 @@ class NotebookRuntimeTemplate extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $core.bool? isDefault,
-    $4287.MachineSpec? machineSpec,
-    $4287.PersistentDiskSpec? dataPersistentDiskSpec,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4309.NetworkSpec? networkSpec,
+    $4288.MachineSpec? machineSpec,
+    $4288.PersistentDiskSpec? dataPersistentDiskSpec,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4310.NetworkSpec? networkSpec,
     $core.String? serviceAccount,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $4310.NotebookIdleShutdownConfig? idleShutdownConfig,
-    $4311.NotebookEucConfig? eucConfig,
+    $4311.NotebookIdleShutdownConfig? idleShutdownConfig,
+    $4312.NotebookEucConfig? eucConfig,
     NotebookRuntimeType? notebookRuntimeType,
-    $4287.ShieldedVmConfig? shieldedVmConfig,
+    $4288.ShieldedVmConfig? shieldedVmConfig,
     $core.Iterable<$core.String>? networkTags,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4282.EncryptionSpec? encryptionSpec,
   }) {
     final $result = create();
     if (name != null) {
@@ -114,20 +114,20 @@ class NotebookRuntimeTemplate extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOB(4, _omitFieldNames ? '' : 'isDefault')
-    ..aOM<$4287.MachineSpec>(5, _omitFieldNames ? '' : 'machineSpec', subBuilder: $4287.MachineSpec.create)
-    ..aOM<$4287.PersistentDiskSpec>(8, _omitFieldNames ? '' : 'dataPersistentDiskSpec', subBuilder: $4287.PersistentDiskSpec.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4309.NetworkSpec>(12, _omitFieldNames ? '' : 'networkSpec', subBuilder: $4309.NetworkSpec.create)
+    ..aOM<$4288.MachineSpec>(5, _omitFieldNames ? '' : 'machineSpec', subBuilder: $4288.MachineSpec.create)
+    ..aOM<$4288.PersistentDiskSpec>(8, _omitFieldNames ? '' : 'dataPersistentDiskSpec', subBuilder: $4288.PersistentDiskSpec.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4310.NetworkSpec>(12, _omitFieldNames ? '' : 'networkSpec', subBuilder: $4310.NetworkSpec.create)
     ..aOS(13, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(14, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(15, _omitFieldNames ? '' : 'labels', entryClassName: 'NotebookRuntimeTemplate.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$4310.NotebookIdleShutdownConfig>(17, _omitFieldNames ? '' : 'idleShutdownConfig', subBuilder: $4310.NotebookIdleShutdownConfig.create)
-    ..aOM<$4311.NotebookEucConfig>(18, _omitFieldNames ? '' : 'eucConfig', subBuilder: $4311.NotebookEucConfig.create)
+    ..aOM<$4311.NotebookIdleShutdownConfig>(17, _omitFieldNames ? '' : 'idleShutdownConfig', subBuilder: $4311.NotebookIdleShutdownConfig.create)
+    ..aOM<$4312.NotebookEucConfig>(18, _omitFieldNames ? '' : 'eucConfig', subBuilder: $4312.NotebookEucConfig.create)
     ..e<NotebookRuntimeType>(19, _omitFieldNames ? '' : 'notebookRuntimeType', $pb.PbFieldType.OE, defaultOrMaker: NotebookRuntimeType.NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED, valueOf: NotebookRuntimeType.valueOf, enumValues: NotebookRuntimeType.values)
-    ..aOM<$4287.ShieldedVmConfig>(20, _omitFieldNames ? '' : 'shieldedVmConfig', subBuilder: $4287.ShieldedVmConfig.create)
+    ..aOM<$4288.ShieldedVmConfig>(20, _omitFieldNames ? '' : 'shieldedVmConfig', subBuilder: $4288.ShieldedVmConfig.create)
     ..pPS(21, _omitFieldNames ? '' : 'networkTags')
-    ..aOM<$4281.EncryptionSpec>(23, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4282.EncryptionSpec>(23, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -197,66 +197,66 @@ class NotebookRuntimeTemplate extends $pb.GeneratedMessage {
   /// Optional. Immutable. The specification of a single machine for the
   /// template.
   @$pb.TagNumber(5)
-  $4287.MachineSpec get machineSpec => $_getN(4);
+  $4288.MachineSpec get machineSpec => $_getN(4);
   @$pb.TagNumber(5)
-  set machineSpec($4287.MachineSpec v) { setField(5, v); }
+  set machineSpec($4288.MachineSpec v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMachineSpec() => $_has(4);
   @$pb.TagNumber(5)
   void clearMachineSpec() => clearField(5);
   @$pb.TagNumber(5)
-  $4287.MachineSpec ensureMachineSpec() => $_ensure(4);
+  $4288.MachineSpec ensureMachineSpec() => $_ensure(4);
 
   /// Optional. The specification of [persistent
   /// disk][https://cloud.google.com/compute/docs/disks/persistent-disks]
   /// attached to the runtime as data disk storage.
   @$pb.TagNumber(8)
-  $4287.PersistentDiskSpec get dataPersistentDiskSpec => $_getN(5);
+  $4288.PersistentDiskSpec get dataPersistentDiskSpec => $_getN(5);
   @$pb.TagNumber(8)
-  set dataPersistentDiskSpec($4287.PersistentDiskSpec v) { setField(8, v); }
+  set dataPersistentDiskSpec($4288.PersistentDiskSpec v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDataPersistentDiskSpec() => $_has(5);
   @$pb.TagNumber(8)
   void clearDataPersistentDiskSpec() => clearField(8);
   @$pb.TagNumber(8)
-  $4287.PersistentDiskSpec ensureDataPersistentDiskSpec() => $_ensure(5);
+  $4288.PersistentDiskSpec ensureDataPersistentDiskSpec() => $_ensure(5);
 
   /// Output only. Timestamp when this NotebookRuntimeTemplate was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Timestamp when this NotebookRuntimeTemplate was most recently
   /// updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Optional. Network spec.
   @$pb.TagNumber(12)
-  $4309.NetworkSpec get networkSpec => $_getN(8);
+  $4310.NetworkSpec get networkSpec => $_getN(8);
   @$pb.TagNumber(12)
-  set networkSpec($4309.NetworkSpec v) { setField(12, v); }
+  set networkSpec($4310.NetworkSpec v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasNetworkSpec() => $_has(8);
   @$pb.TagNumber(12)
   void clearNetworkSpec() => clearField(12);
   @$pb.TagNumber(12)
-  $4309.NetworkSpec ensureNetworkSpec() => $_ensure(8);
+  $4310.NetworkSpec ensureNetworkSpec() => $_ensure(8);
 
   ///  The service account that the runtime workload runs as.
   ///  You can use any service account within the same project, but you
@@ -299,27 +299,27 @@ class NotebookRuntimeTemplate extends $pb.GeneratedMessage {
   /// The idle shutdown configuration of NotebookRuntimeTemplate. This config
   /// will only be set when idle shutdown is enabled.
   @$pb.TagNumber(17)
-  $4310.NotebookIdleShutdownConfig get idleShutdownConfig => $_getN(12);
+  $4311.NotebookIdleShutdownConfig get idleShutdownConfig => $_getN(12);
   @$pb.TagNumber(17)
-  set idleShutdownConfig($4310.NotebookIdleShutdownConfig v) { setField(17, v); }
+  set idleShutdownConfig($4311.NotebookIdleShutdownConfig v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasIdleShutdownConfig() => $_has(12);
   @$pb.TagNumber(17)
   void clearIdleShutdownConfig() => clearField(17);
   @$pb.TagNumber(17)
-  $4310.NotebookIdleShutdownConfig ensureIdleShutdownConfig() => $_ensure(12);
+  $4311.NotebookIdleShutdownConfig ensureIdleShutdownConfig() => $_ensure(12);
 
   /// EUC configuration of the NotebookRuntimeTemplate.
   @$pb.TagNumber(18)
-  $4311.NotebookEucConfig get eucConfig => $_getN(13);
+  $4312.NotebookEucConfig get eucConfig => $_getN(13);
   @$pb.TagNumber(18)
-  set eucConfig($4311.NotebookEucConfig v) { setField(18, v); }
+  set eucConfig($4312.NotebookEucConfig v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasEucConfig() => $_has(13);
   @$pb.TagNumber(18)
   void clearEucConfig() => clearField(18);
   @$pb.TagNumber(18)
-  $4311.NotebookEucConfig ensureEucConfig() => $_ensure(13);
+  $4312.NotebookEucConfig ensureEucConfig() => $_ensure(13);
 
   /// Optional. Immutable. The type of the notebook runtime template.
   @$pb.TagNumber(19)
@@ -333,15 +333,15 @@ class NotebookRuntimeTemplate extends $pb.GeneratedMessage {
 
   /// Optional. Immutable. Runtime Shielded VM spec.
   @$pb.TagNumber(20)
-  $4287.ShieldedVmConfig get shieldedVmConfig => $_getN(15);
+  $4288.ShieldedVmConfig get shieldedVmConfig => $_getN(15);
   @$pb.TagNumber(20)
-  set shieldedVmConfig($4287.ShieldedVmConfig v) { setField(20, v); }
+  set shieldedVmConfig($4288.ShieldedVmConfig v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasShieldedVmConfig() => $_has(15);
   @$pb.TagNumber(20)
   void clearShieldedVmConfig() => clearField(20);
   @$pb.TagNumber(20)
-  $4287.ShieldedVmConfig ensureShieldedVmConfig() => $_ensure(15);
+  $4288.ShieldedVmConfig ensureShieldedVmConfig() => $_ensure(15);
 
   /// Optional. The Compute Engine tags to add to runtime (see [Tagging
   /// instances](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
@@ -350,15 +350,15 @@ class NotebookRuntimeTemplate extends $pb.GeneratedMessage {
 
   /// Customer-managed encryption key spec for the notebook runtime.
   @$pb.TagNumber(23)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(17);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(17);
   @$pb.TagNumber(23)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(23, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasEncryptionSpec() => $_has(17);
   @$pb.TagNumber(23)
   void clearEncryptionSpec() => clearField(23);
   @$pb.TagNumber(23)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(17);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(17);
 }
 
 /// A runtime is a virtual machine allocated to a particular user for a
@@ -368,10 +368,10 @@ class NotebookRuntime extends $pb.GeneratedMessage {
   factory NotebookRuntime({
     $core.String? name,
     $core.String? runtimeUser,
-    $4312.NotebookRuntimeTemplateRef? notebookRuntimeTemplateRef,
+    $4313.NotebookRuntimeTemplateRef? notebookRuntimeTemplateRef,
     $core.String? proxyUri,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     NotebookRuntime_HealthState? healthState,
     $core.String? displayName,
     $core.String? description,
@@ -379,12 +379,12 @@ class NotebookRuntime extends $pb.GeneratedMessage {
     NotebookRuntime_RuntimeState? runtimeState,
     $core.bool? isUpgradable,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? expirationTime,
+    $1776.Timestamp? expirationTime,
     $core.String? version,
     NotebookRuntimeType? notebookRuntimeType,
-    $4310.NotebookIdleShutdownConfig? idleShutdownConfig,
+    $4311.NotebookIdleShutdownConfig? idleShutdownConfig,
     $core.Iterable<$core.String>? networkTags,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4282.EncryptionSpec? encryptionSpec,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
   }) {
@@ -461,10 +461,10 @@ class NotebookRuntime extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotebookRuntime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'runtimeUser')
-    ..aOM<$4312.NotebookRuntimeTemplateRef>(3, _omitFieldNames ? '' : 'notebookRuntimeTemplateRef', subBuilder: $4312.NotebookRuntimeTemplateRef.create)
+    ..aOM<$4313.NotebookRuntimeTemplateRef>(3, _omitFieldNames ? '' : 'notebookRuntimeTemplateRef', subBuilder: $4313.NotebookRuntimeTemplateRef.create)
     ..aOS(5, _omitFieldNames ? '' : 'proxyUri')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<NotebookRuntime_HealthState>(8, _omitFieldNames ? '' : 'healthState', $pb.PbFieldType.OE, defaultOrMaker: NotebookRuntime_HealthState.HEALTH_STATE_UNSPECIFIED, valueOf: NotebookRuntime_HealthState.valueOf, enumValues: NotebookRuntime_HealthState.values)
     ..aOS(10, _omitFieldNames ? '' : 'displayName')
     ..aOS(11, _omitFieldNames ? '' : 'description')
@@ -472,12 +472,12 @@ class NotebookRuntime extends $pb.GeneratedMessage {
     ..e<NotebookRuntime_RuntimeState>(14, _omitFieldNames ? '' : 'runtimeState', $pb.PbFieldType.OE, defaultOrMaker: NotebookRuntime_RuntimeState.RUNTIME_STATE_UNSPECIFIED, valueOf: NotebookRuntime_RuntimeState.valueOf, enumValues: NotebookRuntime_RuntimeState.values)
     ..aOB(15, _omitFieldNames ? '' : 'isUpgradable')
     ..m<$core.String, $core.String>(16, _omitFieldNames ? '' : 'labels', entryClassName: 'NotebookRuntime.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$1775.Timestamp>(17, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(17, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1776.Timestamp.create)
     ..aOS(18, _omitFieldNames ? '' : 'version')
     ..e<NotebookRuntimeType>(19, _omitFieldNames ? '' : 'notebookRuntimeType', $pb.PbFieldType.OE, defaultOrMaker: NotebookRuntimeType.NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED, valueOf: NotebookRuntimeType.valueOf, enumValues: NotebookRuntimeType.values)
-    ..aOM<$4310.NotebookIdleShutdownConfig>(23, _omitFieldNames ? '' : 'idleShutdownConfig', subBuilder: $4310.NotebookIdleShutdownConfig.create)
+    ..aOM<$4311.NotebookIdleShutdownConfig>(23, _omitFieldNames ? '' : 'idleShutdownConfig', subBuilder: $4311.NotebookIdleShutdownConfig.create)
     ..pPS(25, _omitFieldNames ? '' : 'networkTags')
-    ..aOM<$4281.EncryptionSpec>(28, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4282.EncryptionSpec>(28, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOB(29, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(30, _omitFieldNames ? '' : 'satisfiesPzi')
     ..hasRequiredFields = false
@@ -527,15 +527,15 @@ class NotebookRuntime extends $pb.GeneratedMessage {
   /// Output only. The pointer to NotebookRuntimeTemplate this NotebookRuntime is
   /// created from.
   @$pb.TagNumber(3)
-  $4312.NotebookRuntimeTemplateRef get notebookRuntimeTemplateRef => $_getN(2);
+  $4313.NotebookRuntimeTemplateRef get notebookRuntimeTemplateRef => $_getN(2);
   @$pb.TagNumber(3)
-  set notebookRuntimeTemplateRef($4312.NotebookRuntimeTemplateRef v) { setField(3, v); }
+  set notebookRuntimeTemplateRef($4313.NotebookRuntimeTemplateRef v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasNotebookRuntimeTemplateRef() => $_has(2);
   @$pb.TagNumber(3)
   void clearNotebookRuntimeTemplateRef() => clearField(3);
   @$pb.TagNumber(3)
-  $4312.NotebookRuntimeTemplateRef ensureNotebookRuntimeTemplateRef() => $_ensure(2);
+  $4313.NotebookRuntimeTemplateRef ensureNotebookRuntimeTemplateRef() => $_ensure(2);
 
   /// Output only. The proxy endpoint used to access the NotebookRuntime.
   @$pb.TagNumber(5)
@@ -549,27 +549,27 @@ class NotebookRuntime extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this NotebookRuntime was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp when this NotebookRuntime was most recently updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. The health state of the NotebookRuntime.
   @$pb.TagNumber(8)
@@ -660,15 +660,15 @@ class NotebookRuntime extends $pb.GeneratedMessage {
   /// 2. User created NotebookRuntime: 6 months after last upgrade. After
   /// expiration, user created runtime will be stopped and allowed for upgrade.
   @$pb.TagNumber(17)
-  $1775.Timestamp get expirationTime => $_getN(13);
+  $1776.Timestamp get expirationTime => $_getN(13);
   @$pb.TagNumber(17)
-  set expirationTime($1775.Timestamp v) { setField(17, v); }
+  set expirationTime($1776.Timestamp v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasExpirationTime() => $_has(13);
   @$pb.TagNumber(17)
   void clearExpirationTime() => clearField(17);
   @$pb.TagNumber(17)
-  $1775.Timestamp ensureExpirationTime() => $_ensure(13);
+  $1776.Timestamp ensureExpirationTime() => $_ensure(13);
 
   /// Output only. The VM os image version of NotebookRuntime.
   @$pb.TagNumber(18)
@@ -692,15 +692,15 @@ class NotebookRuntime extends $pb.GeneratedMessage {
 
   /// Output only. The idle shutdown configuration of the notebook runtime.
   @$pb.TagNumber(23)
-  $4310.NotebookIdleShutdownConfig get idleShutdownConfig => $_getN(16);
+  $4311.NotebookIdleShutdownConfig get idleShutdownConfig => $_getN(16);
   @$pb.TagNumber(23)
-  set idleShutdownConfig($4310.NotebookIdleShutdownConfig v) { setField(23, v); }
+  set idleShutdownConfig($4311.NotebookIdleShutdownConfig v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasIdleShutdownConfig() => $_has(16);
   @$pb.TagNumber(23)
   void clearIdleShutdownConfig() => clearField(23);
   @$pb.TagNumber(23)
-  $4310.NotebookIdleShutdownConfig ensureIdleShutdownConfig() => $_ensure(16);
+  $4311.NotebookIdleShutdownConfig ensureIdleShutdownConfig() => $_ensure(16);
 
   /// Optional. The Compute Engine tags to add to runtime (see [Tagging
   /// instances](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
@@ -709,15 +709,15 @@ class NotebookRuntime extends $pb.GeneratedMessage {
 
   /// Output only. Customer-managed encryption key spec for the notebook runtime.
   @$pb.TagNumber(28)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(18);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(18);
   @$pb.TagNumber(28)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(28, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasEncryptionSpec() => $_has(18);
   @$pb.TagNumber(28)
   void clearEncryptionSpec() => clearField(28);
   @$pb.TagNumber(28)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(18);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(18);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(29)

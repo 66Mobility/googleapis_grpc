@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'ad_asset.pb.dart' as $3971;
+import 'ad_asset.pb.dart' as $3972;
 
 /// A Search Ads 360 text ad.
 class SearchAds360TextAdInfo extends $pb.GeneratedMessage {
@@ -421,8 +421,8 @@ class SearchAds360ResponsiveSearchAdInfo extends $pb.GeneratedMessage {
     $core.String? path1,
     $core.String? path2,
     $fixnum.Int64? adTrackingId,
-    $core.Iterable<$3971.AdTextAsset>? headlines,
-    $core.Iterable<$3971.AdTextAsset>? descriptions,
+    $core.Iterable<$3972.AdTextAsset>? headlines,
+    $core.Iterable<$3972.AdTextAsset>? descriptions,
   }) {
     final $result = create();
     if (path1 != null) {
@@ -450,8 +450,8 @@ class SearchAds360ResponsiveSearchAdInfo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'path1')
     ..aOS(2, _omitFieldNames ? '' : 'path2')
     ..aInt64(3, _omitFieldNames ? '' : 'adTrackingId')
-    ..pc<$3971.AdTextAsset>(4, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $3971.AdTextAsset.create)
-    ..pc<$3971.AdTextAsset>(5, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $3971.AdTextAsset.create)
+    ..pc<$3972.AdTextAsset>(4, _omitFieldNames ? '' : 'headlines', $pb.PbFieldType.PM, subBuilder: $3972.AdTextAsset.create)
+    ..pc<$3972.AdTextAsset>(5, _omitFieldNames ? '' : 'descriptions', $pb.PbFieldType.PM, subBuilder: $3972.AdTextAsset.create)
     ..hasRequiredFields = false
   ;
 
@@ -509,12 +509,12 @@ class SearchAds360ResponsiveSearchAdInfo extends $pb.GeneratedMessage {
   /// List of text assets for headlines. When the ad serves the headlines will
   /// be selected from this list.
   @$pb.TagNumber(4)
-  $core.List<$3971.AdTextAsset> get headlines => $_getList(3);
+  $core.List<$3972.AdTextAsset> get headlines => $_getList(3);
 
   /// List of text assets for descriptions. When the ad serves the descriptions
   /// will be selected from this list.
   @$pb.TagNumber(5)
-  $core.List<$3971.AdTextAsset> get descriptions => $_getList(4);
+  $core.List<$3972.AdTextAsset> get descriptions => $_getList(4);
 }
 
 

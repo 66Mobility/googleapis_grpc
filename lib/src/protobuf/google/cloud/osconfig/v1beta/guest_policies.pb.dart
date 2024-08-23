@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'guest_policies.pbenum.dart';
 
 export 'guest_policies.pbenum.dart';
@@ -28,8 +28,8 @@ class GuestPolicy extends $pb.GeneratedMessage {
   factory GuestPolicy({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Assignment? assignment,
     $core.Iterable<Package>? packages,
     $core.Iterable<PackageRepository>? packageRepositories,
@@ -73,8 +73,8 @@ class GuestPolicy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GuestPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Assignment>(6, _omitFieldNames ? '' : 'assignment', subBuilder: Assignment.create)
     ..pc<Package>(7, _omitFieldNames ? '' : 'packages', $pb.PbFieldType.PM, subBuilder: Package.create)
     ..pc<PackageRepository>(8, _omitFieldNames ? '' : 'packageRepositories', $pb.PbFieldType.PM, subBuilder: PackageRepository.create)
@@ -129,27 +129,27 @@ class GuestPolicy extends $pb.GeneratedMessage {
 
   /// Output only. Time this guest policy was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Last time this guest policy was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   ///  Required. Specifies the VM instances that are assigned to this policy. This allows
   ///  you to target sets or groups of VM instances by different parameters such
@@ -2514,7 +2514,7 @@ class ListGuestPoliciesResponse extends $pb.GeneratedMessage {
 class UpdateGuestPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateGuestPolicyRequest({
     GuestPolicy? guestPolicy,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (guestPolicy != null) {
@@ -2531,7 +2531,7 @@ class UpdateGuestPolicyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGuestPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1beta'), createEmptyInstance: create)
     ..aOM<GuestPolicy>(1, _omitFieldNames ? '' : 'guestPolicy', subBuilder: GuestPolicy.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2571,15 +2571,15 @@ class UpdateGuestPolicyRequest extends $pb.GeneratedMessage {
   /// Field mask that controls which fields of the guest policy should be
   /// updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A request message for deleting a guest policy.

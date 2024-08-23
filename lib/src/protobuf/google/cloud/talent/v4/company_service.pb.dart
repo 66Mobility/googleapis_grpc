@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import 'common.pb.dart' as $4691;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import 'common.pb.dart' as $4693;
 import 'company.pb.dart' as $1422;
 
 /// The Request of the CreateCompany method.
@@ -149,7 +149,7 @@ class GetCompanyRequest extends $pb.GeneratedMessage {
 class UpdateCompanyRequest extends $pb.GeneratedMessage {
   factory UpdateCompanyRequest({
     $1422.Company? company,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (company != null) {
@@ -166,7 +166,7 @@ class UpdateCompanyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCompanyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4'), createEmptyInstance: create)
     ..aOM<$1422.Company>(1, _omitFieldNames ? '' : 'company', subBuilder: $1422.Company.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -215,15 +215,15 @@ class UpdateCompanyRequest extends $pb.GeneratedMessage {
   ///  top level fields of [Company][google.cloud.talent.v4.Company] are
   ///  supported.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete a company.
@@ -394,7 +394,7 @@ class ListCompaniesResponse extends $pb.GeneratedMessage {
   factory ListCompaniesResponse({
     $core.Iterable<$1422.Company>? companies,
     $core.String? nextPageToken,
-    $4691.ResponseMetadata? metadata,
+    $4693.ResponseMetadata? metadata,
   }) {
     final $result = create();
     if (companies != null) {
@@ -415,7 +415,7 @@ class ListCompaniesResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCompaniesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.talent.v4'), createEmptyInstance: create)
     ..pc<$1422.Company>(1, _omitFieldNames ? '' : 'companies', $pb.PbFieldType.PM, subBuilder: $1422.Company.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..aOM<$4691.ResponseMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $4691.ResponseMetadata.create)
+    ..aOM<$4693.ResponseMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $4693.ResponseMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -457,15 +457,15 @@ class ListCompaniesResponse extends $pb.GeneratedMessage {
   /// Additional information for the API invocation, such as the request
   /// tracking id.
   @$pb.TagNumber(3)
-  $4691.ResponseMetadata get metadata => $_getN(2);
+  $4693.ResponseMetadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata($4691.ResponseMetadata v) { setField(3, v); }
+  set metadata($4693.ResponseMetadata v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $4691.ResponseMetadata ensureMetadata() => $_ensure(2);
+  $4693.ResponseMetadata ensureMetadata() => $_ensure(2);
 }
 
 

@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'image.pb.dart' as $4338;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'image.pb.dart' as $4339;
 import 'model.pbenum.dart';
-import 'text.pb.dart' as $4339;
-import 'translation.pb.dart' as $4334;
+import 'text.pb.dart' as $4340;
+import 'translation.pb.dart' as $4335;
 
 export 'model.pbenum.dart';
 
@@ -37,16 +37,16 @@ class Model extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? datasetId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Model_DeploymentState? deploymentState,
     $core.String? etag,
-    $1775.Timestamp? updateTime,
-    $4338.ImageClassificationModelMetadata? imageClassificationModelMetadata,
-    $4339.TextClassificationModelMetadata? textClassificationModelMetadata,
-    $4334.TranslationModelMetadata? translationModelMetadata,
-    $4339.TextExtractionModelMetadata? textExtractionModelMetadata,
-    $4338.ImageObjectDetectionModelMetadata? imageObjectDetectionModelMetadata,
-    $4339.TextSentimentModelMetadata? textSentimentModelMetadata,
+    $1776.Timestamp? updateTime,
+    $4339.ImageClassificationModelMetadata? imageClassificationModelMetadata,
+    $4340.TextClassificationModelMetadata? textClassificationModelMetadata,
+    $4335.TranslationModelMetadata? translationModelMetadata,
+    $4340.TextExtractionModelMetadata? textExtractionModelMetadata,
+    $4339.ImageObjectDetectionModelMetadata? imageObjectDetectionModelMetadata,
+    $4340.TextSentimentModelMetadata? textSentimentModelMetadata,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -112,16 +112,16 @@ class Model extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'datasetId')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Model_DeploymentState>(8, _omitFieldNames ? '' : 'deploymentState', $pb.PbFieldType.OE, defaultOrMaker: Model_DeploymentState.DEPLOYMENT_STATE_UNSPECIFIED, valueOf: Model_DeploymentState.valueOf, enumValues: Model_DeploymentState.values)
     ..aOS(10, _omitFieldNames ? '' : 'etag')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4338.ImageClassificationModelMetadata>(13, _omitFieldNames ? '' : 'imageClassificationModelMetadata', subBuilder: $4338.ImageClassificationModelMetadata.create)
-    ..aOM<$4339.TextClassificationModelMetadata>(14, _omitFieldNames ? '' : 'textClassificationModelMetadata', subBuilder: $4339.TextClassificationModelMetadata.create)
-    ..aOM<$4334.TranslationModelMetadata>(15, _omitFieldNames ? '' : 'translationModelMetadata', subBuilder: $4334.TranslationModelMetadata.create)
-    ..aOM<$4339.TextExtractionModelMetadata>(19, _omitFieldNames ? '' : 'textExtractionModelMetadata', subBuilder: $4339.TextExtractionModelMetadata.create)
-    ..aOM<$4338.ImageObjectDetectionModelMetadata>(20, _omitFieldNames ? '' : 'imageObjectDetectionModelMetadata', subBuilder: $4338.ImageObjectDetectionModelMetadata.create)
-    ..aOM<$4339.TextSentimentModelMetadata>(22, _omitFieldNames ? '' : 'textSentimentModelMetadata', subBuilder: $4339.TextSentimentModelMetadata.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4339.ImageClassificationModelMetadata>(13, _omitFieldNames ? '' : 'imageClassificationModelMetadata', subBuilder: $4339.ImageClassificationModelMetadata.create)
+    ..aOM<$4340.TextClassificationModelMetadata>(14, _omitFieldNames ? '' : 'textClassificationModelMetadata', subBuilder: $4340.TextClassificationModelMetadata.create)
+    ..aOM<$4335.TranslationModelMetadata>(15, _omitFieldNames ? '' : 'translationModelMetadata', subBuilder: $4335.TranslationModelMetadata.create)
+    ..aOM<$4340.TextExtractionModelMetadata>(19, _omitFieldNames ? '' : 'textExtractionModelMetadata', subBuilder: $4340.TextExtractionModelMetadata.create)
+    ..aOM<$4339.ImageObjectDetectionModelMetadata>(20, _omitFieldNames ? '' : 'imageObjectDetectionModelMetadata', subBuilder: $4339.ImageObjectDetectionModelMetadata.create)
+    ..aOM<$4340.TextSentimentModelMetadata>(22, _omitFieldNames ? '' : 'textSentimentModelMetadata', subBuilder: $4340.TextSentimentModelMetadata.create)
     ..m<$core.String, $core.String>(34, _omitFieldNames ? '' : 'labels', entryClassName: 'Model.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.automl.v1'))
     ..hasRequiredFields = false
   ;
@@ -187,15 +187,15 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the model training finished  and can be used for prediction.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Deployment state of the model. A model can only serve
   /// prediction requests after it gets deployed.
@@ -221,87 +221,87 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this model was last updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Metadata for image classification models.
   @$pb.TagNumber(13)
-  $4338.ImageClassificationModelMetadata get imageClassificationModelMetadata => $_getN(7);
+  $4339.ImageClassificationModelMetadata get imageClassificationModelMetadata => $_getN(7);
   @$pb.TagNumber(13)
-  set imageClassificationModelMetadata($4338.ImageClassificationModelMetadata v) { setField(13, v); }
+  set imageClassificationModelMetadata($4339.ImageClassificationModelMetadata v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasImageClassificationModelMetadata() => $_has(7);
   @$pb.TagNumber(13)
   void clearImageClassificationModelMetadata() => clearField(13);
   @$pb.TagNumber(13)
-  $4338.ImageClassificationModelMetadata ensureImageClassificationModelMetadata() => $_ensure(7);
+  $4339.ImageClassificationModelMetadata ensureImageClassificationModelMetadata() => $_ensure(7);
 
   /// Metadata for text classification models.
   @$pb.TagNumber(14)
-  $4339.TextClassificationModelMetadata get textClassificationModelMetadata => $_getN(8);
+  $4340.TextClassificationModelMetadata get textClassificationModelMetadata => $_getN(8);
   @$pb.TagNumber(14)
-  set textClassificationModelMetadata($4339.TextClassificationModelMetadata v) { setField(14, v); }
+  set textClassificationModelMetadata($4340.TextClassificationModelMetadata v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTextClassificationModelMetadata() => $_has(8);
   @$pb.TagNumber(14)
   void clearTextClassificationModelMetadata() => clearField(14);
   @$pb.TagNumber(14)
-  $4339.TextClassificationModelMetadata ensureTextClassificationModelMetadata() => $_ensure(8);
+  $4340.TextClassificationModelMetadata ensureTextClassificationModelMetadata() => $_ensure(8);
 
   /// Metadata for translation models.
   @$pb.TagNumber(15)
-  $4334.TranslationModelMetadata get translationModelMetadata => $_getN(9);
+  $4335.TranslationModelMetadata get translationModelMetadata => $_getN(9);
   @$pb.TagNumber(15)
-  set translationModelMetadata($4334.TranslationModelMetadata v) { setField(15, v); }
+  set translationModelMetadata($4335.TranslationModelMetadata v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasTranslationModelMetadata() => $_has(9);
   @$pb.TagNumber(15)
   void clearTranslationModelMetadata() => clearField(15);
   @$pb.TagNumber(15)
-  $4334.TranslationModelMetadata ensureTranslationModelMetadata() => $_ensure(9);
+  $4335.TranslationModelMetadata ensureTranslationModelMetadata() => $_ensure(9);
 
   /// Metadata for text extraction models.
   @$pb.TagNumber(19)
-  $4339.TextExtractionModelMetadata get textExtractionModelMetadata => $_getN(10);
+  $4340.TextExtractionModelMetadata get textExtractionModelMetadata => $_getN(10);
   @$pb.TagNumber(19)
-  set textExtractionModelMetadata($4339.TextExtractionModelMetadata v) { setField(19, v); }
+  set textExtractionModelMetadata($4340.TextExtractionModelMetadata v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasTextExtractionModelMetadata() => $_has(10);
   @$pb.TagNumber(19)
   void clearTextExtractionModelMetadata() => clearField(19);
   @$pb.TagNumber(19)
-  $4339.TextExtractionModelMetadata ensureTextExtractionModelMetadata() => $_ensure(10);
+  $4340.TextExtractionModelMetadata ensureTextExtractionModelMetadata() => $_ensure(10);
 
   /// Metadata for image object detection models.
   @$pb.TagNumber(20)
-  $4338.ImageObjectDetectionModelMetadata get imageObjectDetectionModelMetadata => $_getN(11);
+  $4339.ImageObjectDetectionModelMetadata get imageObjectDetectionModelMetadata => $_getN(11);
   @$pb.TagNumber(20)
-  set imageObjectDetectionModelMetadata($4338.ImageObjectDetectionModelMetadata v) { setField(20, v); }
+  set imageObjectDetectionModelMetadata($4339.ImageObjectDetectionModelMetadata v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasImageObjectDetectionModelMetadata() => $_has(11);
   @$pb.TagNumber(20)
   void clearImageObjectDetectionModelMetadata() => clearField(20);
   @$pb.TagNumber(20)
-  $4338.ImageObjectDetectionModelMetadata ensureImageObjectDetectionModelMetadata() => $_ensure(11);
+  $4339.ImageObjectDetectionModelMetadata ensureImageObjectDetectionModelMetadata() => $_ensure(11);
 
   /// Metadata for text sentiment models.
   @$pb.TagNumber(22)
-  $4339.TextSentimentModelMetadata get textSentimentModelMetadata => $_getN(12);
+  $4340.TextSentimentModelMetadata get textSentimentModelMetadata => $_getN(12);
   @$pb.TagNumber(22)
-  set textSentimentModelMetadata($4339.TextSentimentModelMetadata v) { setField(22, v); }
+  set textSentimentModelMetadata($4340.TextSentimentModelMetadata v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasTextSentimentModelMetadata() => $_has(12);
   @$pb.TagNumber(22)
   void clearTextSentimentModelMetadata() => clearField(22);
   @$pb.TagNumber(22)
-  $4339.TextSentimentModelMetadata ensureTextSentimentModelMetadata() => $_ensure(12);
+  $4340.TextSentimentModelMetadata ensureTextSentimentModelMetadata() => $_ensure(12);
 
   ///  Optional. The labels with user-defined metadata to organize your model.
   ///

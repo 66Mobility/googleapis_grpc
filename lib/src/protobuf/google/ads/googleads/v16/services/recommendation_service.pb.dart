@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../common/criteria.pb.dart' as $2570;
-import '../common/extensions.pb.dart' as $2980;
-import '../enums/ad_group_type.pbenum.dart' as $2815;
-import '../enums/advertising_channel_type.pbenum.dart' as $2586;
-import '../enums/bidding_strategy_type.pbenum.dart' as $2800;
-import '../enums/conversion_tracking_status_enum.pbenum.dart' as $2967;
-import '../enums/keyword_match_type.pbenum.dart' as $2544;
-import '../enums/recommendation_type.pbenum.dart' as $2625;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../common/criteria.pb.dart' as $2571;
+import '../common/extensions.pb.dart' as $2981;
+import '../enums/ad_group_type.pbenum.dart' as $2816;
+import '../enums/advertising_channel_type.pbenum.dart' as $2587;
+import '../enums/bidding_strategy_type.pbenum.dart' as $2801;
+import '../enums/conversion_tracking_status_enum.pbenum.dart' as $2968;
+import '../enums/keyword_match_type.pbenum.dart' as $2545;
+import '../enums/recommendation_type.pbenum.dart' as $2626;
 import '../resources/ad.pb.dart' as $153;
-import '../resources/asset.pb.dart' as $2929;
-import '../resources/recommendation.pb.dart' as $3127;
+import '../resources/asset.pb.dart' as $2930;
+import '../resources/recommendation.pb.dart' as $3128;
 import 'recommendation_service.pbenum.dart';
 
 export 'recommendation_service.pbenum.dart';
@@ -293,7 +293,7 @@ class ApplyRecommendationOperation_TextAdParameters extends $pb.GeneratedMessage
 /// Parameters to use when applying keyword recommendation.
 class ApplyRecommendationOperation_KeywordParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_KeywordParameters({
-    $2544.KeywordMatchTypeEnum_KeywordMatchType? matchType,
+    $2545.KeywordMatchTypeEnum_KeywordMatchType? matchType,
     $core.String? adGroup,
     $fixnum.Int64? cpcBidMicros,
   }) {
@@ -314,7 +314,7 @@ class ApplyRecommendationOperation_KeywordParameters extends $pb.GeneratedMessag
   factory ApplyRecommendationOperation_KeywordParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.KeywordParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..e<$2544.KeywordMatchTypeEnum_KeywordMatchType>(2, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $2544.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $2544.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $2544.KeywordMatchTypeEnum_KeywordMatchType.values)
+    ..e<$2545.KeywordMatchTypeEnum_KeywordMatchType>(2, _omitFieldNames ? '' : 'matchType', $pb.PbFieldType.OE, defaultOrMaker: $2545.KeywordMatchTypeEnum_KeywordMatchType.UNSPECIFIED, valueOf: $2545.KeywordMatchTypeEnum_KeywordMatchType.valueOf, enumValues: $2545.KeywordMatchTypeEnum_KeywordMatchType.values)
     ..aOS(4, _omitFieldNames ? '' : 'adGroup')
     ..aInt64(5, _omitFieldNames ? '' : 'cpcBidMicros')
     ..hasRequiredFields = false
@@ -343,9 +343,9 @@ class ApplyRecommendationOperation_KeywordParameters extends $pb.GeneratedMessag
 
   /// The match type of the keyword. This is a required field.
   @$pb.TagNumber(2)
-  $2544.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(0);
+  $2545.KeywordMatchTypeEnum_KeywordMatchType get matchType => $_getN(0);
   @$pb.TagNumber(2)
-  set matchType($2544.KeywordMatchTypeEnum_KeywordMatchType v) { setField(2, v); }
+  set matchType($2545.KeywordMatchTypeEnum_KeywordMatchType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMatchType() => $_has(0);
   @$pb.TagNumber(2)
@@ -513,7 +513,7 @@ class ApplyRecommendationOperation_TargetRoasOptInParameters extends $pb.Generat
 /// Parameters to use when applying callout extension recommendation.
 class ApplyRecommendationOperation_CalloutExtensionParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_CalloutExtensionParameters({
-    $core.Iterable<$2980.CalloutFeedItem>? calloutExtensions,
+    $core.Iterable<$2981.CalloutFeedItem>? calloutExtensions,
   }) {
     final $result = create();
     if (calloutExtensions != null) {
@@ -526,7 +526,7 @@ class ApplyRecommendationOperation_CalloutExtensionParameters extends $pb.Genera
   factory ApplyRecommendationOperation_CalloutExtensionParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.CalloutExtensionParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..pc<$2980.CalloutFeedItem>(1, _omitFieldNames ? '' : 'calloutExtensions', $pb.PbFieldType.PM, subBuilder: $2980.CalloutFeedItem.create)
+    ..pc<$2981.CalloutFeedItem>(1, _omitFieldNames ? '' : 'calloutExtensions', $pb.PbFieldType.PM, subBuilder: $2981.CalloutFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -553,13 +553,13 @@ class ApplyRecommendationOperation_CalloutExtensionParameters extends $pb.Genera
 
   /// Callout extensions to be added. This is a required field.
   @$pb.TagNumber(1)
-  $core.List<$2980.CalloutFeedItem> get calloutExtensions => $_getList(0);
+  $core.List<$2981.CalloutFeedItem> get calloutExtensions => $_getList(0);
 }
 
 /// Parameters to use when applying call extension recommendation.
 class ApplyRecommendationOperation_CallExtensionParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_CallExtensionParameters({
-    $core.Iterable<$2980.CallFeedItem>? callExtensions,
+    $core.Iterable<$2981.CallFeedItem>? callExtensions,
   }) {
     final $result = create();
     if (callExtensions != null) {
@@ -572,7 +572,7 @@ class ApplyRecommendationOperation_CallExtensionParameters extends $pb.Generated
   factory ApplyRecommendationOperation_CallExtensionParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.CallExtensionParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..pc<$2980.CallFeedItem>(1, _omitFieldNames ? '' : 'callExtensions', $pb.PbFieldType.PM, subBuilder: $2980.CallFeedItem.create)
+    ..pc<$2981.CallFeedItem>(1, _omitFieldNames ? '' : 'callExtensions', $pb.PbFieldType.PM, subBuilder: $2981.CallFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -599,13 +599,13 @@ class ApplyRecommendationOperation_CallExtensionParameters extends $pb.Generated
 
   /// Call extensions to be added. This is a required field.
   @$pb.TagNumber(1)
-  $core.List<$2980.CallFeedItem> get callExtensions => $_getList(0);
+  $core.List<$2981.CallFeedItem> get callExtensions => $_getList(0);
 }
 
 /// Parameters to use when applying sitelink recommendation.
 class ApplyRecommendationOperation_SitelinkExtensionParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_SitelinkExtensionParameters({
-    $core.Iterable<$2980.SitelinkFeedItem>? sitelinkExtensions,
+    $core.Iterable<$2981.SitelinkFeedItem>? sitelinkExtensions,
   }) {
     final $result = create();
     if (sitelinkExtensions != null) {
@@ -618,7 +618,7 @@ class ApplyRecommendationOperation_SitelinkExtensionParameters extends $pb.Gener
   factory ApplyRecommendationOperation_SitelinkExtensionParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.SitelinkExtensionParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..pc<$2980.SitelinkFeedItem>(1, _omitFieldNames ? '' : 'sitelinkExtensions', $pb.PbFieldType.PM, subBuilder: $2980.SitelinkFeedItem.create)
+    ..pc<$2981.SitelinkFeedItem>(1, _omitFieldNames ? '' : 'sitelinkExtensions', $pb.PbFieldType.PM, subBuilder: $2981.SitelinkFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -645,7 +645,7 @@ class ApplyRecommendationOperation_SitelinkExtensionParameters extends $pb.Gener
 
   /// Sitelinks to be added. This is a required field.
   @$pb.TagNumber(1)
-  $core.List<$2980.SitelinkFeedItem> get sitelinkExtensions => $_getList(0);
+  $core.List<$2981.SitelinkFeedItem> get sitelinkExtensions => $_getList(0);
 }
 
 /// Parameters to use when applying callout asset recommendations.
@@ -917,7 +917,7 @@ class ApplyRecommendationOperation_LowerTargetRoasParameters extends $pb.Generat
 /// Common parameters used when applying ad asset recommendations.
 class ApplyRecommendationOperation_AdAssetApplyParameters extends $pb.GeneratedMessage {
   factory ApplyRecommendationOperation_AdAssetApplyParameters({
-    $core.Iterable<$2929.Asset>? newAssets,
+    $core.Iterable<$2930.Asset>? newAssets,
     $core.Iterable<$core.String>? existingAssets,
     ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope? scope,
   }) {
@@ -938,7 +938,7 @@ class ApplyRecommendationOperation_AdAssetApplyParameters extends $pb.GeneratedM
   factory ApplyRecommendationOperation_AdAssetApplyParameters.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationOperation.AdAssetApplyParameters', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..pc<$2929.Asset>(1, _omitFieldNames ? '' : 'newAssets', $pb.PbFieldType.PM, subBuilder: $2929.Asset.create)
+    ..pc<$2930.Asset>(1, _omitFieldNames ? '' : 'newAssets', $pb.PbFieldType.PM, subBuilder: $2930.Asset.create)
     ..pPS(2, _omitFieldNames ? '' : 'existingAssets')
     ..e<ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope>(3, _omitFieldNames ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope.UNSPECIFIED, valueOf: ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope.valueOf, enumValues: ApplyRecommendationOperation_AdAssetApplyParameters_ApplyScope.values)
     ..hasRequiredFields = false
@@ -968,7 +968,7 @@ class ApplyRecommendationOperation_AdAssetApplyParameters extends $pb.GeneratedM
   /// The assets to create and attach to a scope. This may be combined with
   /// existing_assets in the same call.
   @$pb.TagNumber(1)
-  $core.List<$2929.Asset> get newAssets => $_getList(0);
+  $core.List<$2930.Asset> get newAssets => $_getList(0);
 
   /// The resource names of existing assets to attach to a scope. This may be
   /// combined with new_assets in the same call.
@@ -1989,7 +1989,7 @@ class ApplyRecommendationOperation extends $pb.GeneratedMessage {
 class ApplyRecommendationResponse extends $pb.GeneratedMessage {
   factory ApplyRecommendationResponse({
     $core.Iterable<ApplyRecommendationResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -2006,7 +2006,7 @@ class ApplyRecommendationResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ApplyRecommendationResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<ApplyRecommendationResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: ApplyRecommendationResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2040,15 +2040,15 @@ class ApplyRecommendationResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors) we return the RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result of applying a recommendation.
@@ -2294,7 +2294,7 @@ class DismissRecommendationResponse_DismissRecommendationResult extends $pb.Gene
 class DismissRecommendationResponse extends $pb.GeneratedMessage {
   factory DismissRecommendationResponse({
     $core.Iterable<DismissRecommendationResponse_DismissRecommendationResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -2311,7 +2311,7 @@ class DismissRecommendationResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DismissRecommendationResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<DismissRecommendationResponse_DismissRecommendationResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: DismissRecommendationResponse_DismissRecommendationResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -2345,15 +2345,15 @@ class DismissRecommendationResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors) we return the RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 enum GenerateRecommendationsRequest_BiddingInfo_BiddingStrategyTargetInfo {
@@ -2366,7 +2366,7 @@ enum GenerateRecommendationsRequest_BiddingInfo_BiddingStrategyTargetInfo {
 /// bidding-related signals that inform recommendations.
 class GenerateRecommendationsRequest_BiddingInfo extends $pb.GeneratedMessage {
   factory GenerateRecommendationsRequest_BiddingInfo({
-    $2800.BiddingStrategyTypeEnum_BiddingStrategyType? biddingStrategyType,
+    $2801.BiddingStrategyTypeEnum_BiddingStrategyType? biddingStrategyType,
     $fixnum.Int64? targetCpaMicros,
     $core.double? targetRoas,
   }) {
@@ -2393,7 +2393,7 @@ class GenerateRecommendationsRequest_BiddingInfo extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateRecommendationsRequest.BiddingInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..e<$2800.BiddingStrategyTypeEnum_BiddingStrategyType>(1, _omitFieldNames ? '' : 'biddingStrategyType', $pb.PbFieldType.OE, defaultOrMaker: $2800.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $2800.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $2800.BiddingStrategyTypeEnum_BiddingStrategyType.values)
+    ..e<$2801.BiddingStrategyTypeEnum_BiddingStrategyType>(1, _omitFieldNames ? '' : 'biddingStrategyType', $pb.PbFieldType.OE, defaultOrMaker: $2801.BiddingStrategyTypeEnum_BiddingStrategyType.UNSPECIFIED, valueOf: $2801.BiddingStrategyTypeEnum_BiddingStrategyType.valueOf, enumValues: $2801.BiddingStrategyTypeEnum_BiddingStrategyType.values)
     ..aInt64(2, _omitFieldNames ? '' : 'targetCpaMicros')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'targetRoas', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -2429,9 +2429,9 @@ class GenerateRecommendationsRequest_BiddingInfo extends $pb.GeneratedMessage {
   /// MAXIMIZE_CONVERSION_VALUE_OPT_IN, SET_TARGET_CPA, SET_TARGET_ROAS,
   /// TARGET_CPA_OPT_IN, TARGET_ROAS_OPT_IN
   @$pb.TagNumber(1)
-  $2800.BiddingStrategyTypeEnum_BiddingStrategyType get biddingStrategyType => $_getN(0);
+  $2801.BiddingStrategyTypeEnum_BiddingStrategyType get biddingStrategyType => $_getN(0);
   @$pb.TagNumber(1)
-  set biddingStrategyType($2800.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(1, v); }
+  set biddingStrategyType($2801.BiddingStrategyTypeEnum_BiddingStrategyType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBiddingStrategyType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2465,8 +2465,8 @@ class GenerateRecommendationsRequest_BiddingInfo extends $pb.GeneratedMessage {
 /// Current AdGroup Information of the campaign.
 class GenerateRecommendationsRequest_AdGroupInfo extends $pb.GeneratedMessage {
   factory GenerateRecommendationsRequest_AdGroupInfo({
-    $2815.AdGroupTypeEnum_AdGroupType? adGroupType,
-    $core.Iterable<$2570.KeywordInfo>? keywords,
+    $2816.AdGroupTypeEnum_AdGroupType? adGroupType,
+    $core.Iterable<$2571.KeywordInfo>? keywords,
   }) {
     final $result = create();
     if (adGroupType != null) {
@@ -2482,8 +2482,8 @@ class GenerateRecommendationsRequest_AdGroupInfo extends $pb.GeneratedMessage {
   factory GenerateRecommendationsRequest_AdGroupInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateRecommendationsRequest.AdGroupInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..e<$2815.AdGroupTypeEnum_AdGroupType>(1, _omitFieldNames ? '' : 'adGroupType', $pb.PbFieldType.OE, defaultOrMaker: $2815.AdGroupTypeEnum_AdGroupType.UNSPECIFIED, valueOf: $2815.AdGroupTypeEnum_AdGroupType.valueOf, enumValues: $2815.AdGroupTypeEnum_AdGroupType.values)
-    ..pc<$2570.KeywordInfo>(2, _omitFieldNames ? '' : 'keywords', $pb.PbFieldType.PM, subBuilder: $2570.KeywordInfo.create)
+    ..e<$2816.AdGroupTypeEnum_AdGroupType>(1, _omitFieldNames ? '' : 'adGroupType', $pb.PbFieldType.OE, defaultOrMaker: $2816.AdGroupTypeEnum_AdGroupType.UNSPECIFIED, valueOf: $2816.AdGroupTypeEnum_AdGroupType.valueOf, enumValues: $2816.AdGroupTypeEnum_AdGroupType.values)
+    ..pc<$2571.KeywordInfo>(2, _omitFieldNames ? '' : 'keywords', $pb.PbFieldType.PM, subBuilder: $2571.KeywordInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -2513,9 +2513,9 @@ class GenerateRecommendationsRequest_AdGroupInfo extends $pb.GeneratedMessage {
   /// ad_group_info is set:
   /// KEYWORD
   @$pb.TagNumber(1)
-  $2815.AdGroupTypeEnum_AdGroupType get adGroupType => $_getN(0);
+  $2816.AdGroupTypeEnum_AdGroupType get adGroupType => $_getN(0);
   @$pb.TagNumber(1)
-  set adGroupType($2815.AdGroupTypeEnum_AdGroupType v) { setField(1, v); }
+  set adGroupType($2816.AdGroupTypeEnum_AdGroupType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAdGroupType() => $_has(0);
   @$pb.TagNumber(1)
@@ -2526,7 +2526,7 @@ class GenerateRecommendationsRequest_AdGroupInfo extends $pb.GeneratedMessage {
   /// ad_group_info is set:
   /// KEYWORD
   @$pb.TagNumber(2)
-  $core.List<$2570.KeywordInfo> get keywords => $_getList(1);
+  $core.List<$2571.KeywordInfo> get keywords => $_getList(1);
 }
 
 /// A keyword seed and a specific url to generate keywords from.
@@ -2596,10 +2596,10 @@ class GenerateRecommendationsRequest_SeedInfo extends $pb.GeneratedMessage {
 class GenerateRecommendationsRequest extends $pb.GeneratedMessage {
   factory GenerateRecommendationsRequest({
     $core.String? customerId,
-    $core.Iterable<$2625.RecommendationTypeEnum_RecommendationType>? recommendationTypes,
-    $2586.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
+    $core.Iterable<$2626.RecommendationTypeEnum_RecommendationType>? recommendationTypes,
+    $2587.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
     $core.int? campaignSitelinkCount,
-    $2967.ConversionTrackingStatusEnum_ConversionTrackingStatus? conversionTrackingStatus,
+    $2968.ConversionTrackingStatusEnum_ConversionTrackingStatus? conversionTrackingStatus,
     GenerateRecommendationsRequest_BiddingInfo? biddingInfo,
     $core.Iterable<GenerateRecommendationsRequest_AdGroupInfo>? adGroupInfo,
     GenerateRecommendationsRequest_SeedInfo? seedInfo,
@@ -2637,10 +2637,10 @@ class GenerateRecommendationsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateRecommendationsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..pc<$2625.RecommendationTypeEnum_RecommendationType>(2, _omitFieldNames ? '' : 'recommendationTypes', $pb.PbFieldType.KE, valueOf: $2625.RecommendationTypeEnum_RecommendationType.valueOf, enumValues: $2625.RecommendationTypeEnum_RecommendationType.values, defaultEnumValue: $2625.RecommendationTypeEnum_RecommendationType.UNSPECIFIED)
-    ..e<$2586.AdvertisingChannelTypeEnum_AdvertisingChannelType>(3, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $2586.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $2586.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $2586.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
+    ..pc<$2626.RecommendationTypeEnum_RecommendationType>(2, _omitFieldNames ? '' : 'recommendationTypes', $pb.PbFieldType.KE, valueOf: $2626.RecommendationTypeEnum_RecommendationType.valueOf, enumValues: $2626.RecommendationTypeEnum_RecommendationType.values, defaultEnumValue: $2626.RecommendationTypeEnum_RecommendationType.UNSPECIFIED)
+    ..e<$2587.AdvertisingChannelTypeEnum_AdvertisingChannelType>(3, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $2587.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $2587.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $2587.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'campaignSitelinkCount', $pb.PbFieldType.O3)
-    ..e<$2967.ConversionTrackingStatusEnum_ConversionTrackingStatus>(5, _omitFieldNames ? '' : 'conversionTrackingStatus', $pb.PbFieldType.OE, defaultOrMaker: $2967.ConversionTrackingStatusEnum_ConversionTrackingStatus.UNSPECIFIED, valueOf: $2967.ConversionTrackingStatusEnum_ConversionTrackingStatus.valueOf, enumValues: $2967.ConversionTrackingStatusEnum_ConversionTrackingStatus.values)
+    ..e<$2968.ConversionTrackingStatusEnum_ConversionTrackingStatus>(5, _omitFieldNames ? '' : 'conversionTrackingStatus', $pb.PbFieldType.OE, defaultOrMaker: $2968.ConversionTrackingStatusEnum_ConversionTrackingStatus.UNSPECIFIED, valueOf: $2968.ConversionTrackingStatusEnum_ConversionTrackingStatus.valueOf, enumValues: $2968.ConversionTrackingStatusEnum_ConversionTrackingStatus.values)
     ..aOM<GenerateRecommendationsRequest_BiddingInfo>(6, _omitFieldNames ? '' : 'biddingInfo', subBuilder: GenerateRecommendationsRequest_BiddingInfo.create)
     ..pc<GenerateRecommendationsRequest_AdGroupInfo>(7, _omitFieldNames ? '' : 'adGroupInfo', $pb.PbFieldType.PM, subBuilder: GenerateRecommendationsRequest_AdGroupInfo.create)
     ..aOM<GenerateRecommendationsRequest_SeedInfo>(8, _omitFieldNames ? '' : 'seedInfo', subBuilder: GenerateRecommendationsRequest_SeedInfo.create)
@@ -2691,16 +2691,16 @@ class GenerateRecommendationsRequest extends $pb.GeneratedMessage {
   ///  MAXIMIZE_CONVERSION_VALUE_OPT_IN, SET_TARGET_CPA, SET_TARGET_ROAS,
   ///  SITELINK_ASSET, TARGET_CPA_OPT_IN, TARGET_ROAS_OPT_IN
   @$pb.TagNumber(2)
-  $core.List<$2625.RecommendationTypeEnum_RecommendationType> get recommendationTypes => $_getList(1);
+  $core.List<$2626.RecommendationTypeEnum_RecommendationType> get recommendationTypes => $_getList(1);
 
   /// Required. Advertising channel type of the campaign.
   /// The following advertising_channel_types are supported for recommendation
   /// generation:
   /// PERFORMANCE_MAX and SEARCH
   @$pb.TagNumber(3)
-  $2586.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(2);
+  $2587.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(2);
   @$pb.TagNumber(3)
-  set advertisingChannelType($2586.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(3, v); }
+  set advertisingChannelType($2587.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAdvertisingChannelType() => $_has(2);
   @$pb.TagNumber(3)
@@ -2724,9 +2724,9 @@ class GenerateRecommendationsRequest extends $pb.GeneratedMessage {
   /// MAXIMIZE_CONVERSION_VALUE_OPT_IN, SET_TARGET_CPA, SET_TARGET_ROAS,
   /// TARGET_CPA_OPT_IN, TARGET_ROAS_OPT_IN
   @$pb.TagNumber(5)
-  $2967.ConversionTrackingStatusEnum_ConversionTrackingStatus get conversionTrackingStatus => $_getN(4);
+  $2968.ConversionTrackingStatusEnum_ConversionTrackingStatus get conversionTrackingStatus => $_getN(4);
   @$pb.TagNumber(5)
-  set conversionTrackingStatus($2967.ConversionTrackingStatusEnum_ConversionTrackingStatus v) { setField(5, v); }
+  set conversionTrackingStatus($2968.ConversionTrackingStatusEnum_ConversionTrackingStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasConversionTrackingStatus() => $_has(4);
   @$pb.TagNumber(5)
@@ -2774,7 +2774,7 @@ class GenerateRecommendationsRequest extends $pb.GeneratedMessage {
 /// [RecommendationService.GenerateRecommendations][google.ads.googleads.v16.services.RecommendationService.GenerateRecommendations].
 class GenerateRecommendationsResponse extends $pb.GeneratedMessage {
   factory GenerateRecommendationsResponse({
-    $core.Iterable<$3127.Recommendation>? recommendations,
+    $core.Iterable<$3128.Recommendation>? recommendations,
   }) {
     final $result = create();
     if (recommendations != null) {
@@ -2787,7 +2787,7 @@ class GenerateRecommendationsResponse extends $pb.GeneratedMessage {
   factory GenerateRecommendationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateRecommendationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
-    ..pc<$3127.Recommendation>(1, _omitFieldNames ? '' : 'recommendations', $pb.PbFieldType.PM, subBuilder: $3127.Recommendation.create)
+    ..pc<$3128.Recommendation>(1, _omitFieldNames ? '' : 'recommendations', $pb.PbFieldType.PM, subBuilder: $3128.Recommendation.create)
     ..hasRequiredFields = false
   ;
 
@@ -2817,7 +2817,7 @@ class GenerateRecommendationsResponse extends $pb.GeneratedMessage {
   /// recommendation for the requested recommendation_types, the result set won't
   /// contain a recommendation for that type.
   @$pb.TagNumber(1)
-  $core.List<$3127.Recommendation> get recommendations => $_getList(0);
+  $core.List<$3128.Recommendation> get recommendations => $_getList(0);
 }
 
 

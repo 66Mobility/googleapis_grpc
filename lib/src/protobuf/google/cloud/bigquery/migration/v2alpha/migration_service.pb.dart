@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
 import 'migration_entities.pb.dart' as $718;
 
 /// Request to create a migration workflow resource.
@@ -90,7 +90,7 @@ class CreateMigrationWorkflowRequest extends $pb.GeneratedMessage {
 class GetMigrationWorkflowRequest extends $pb.GeneratedMessage {
   factory GetMigrationWorkflowRequest({
     $core.String? name,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -107,7 +107,7 @@ class GetMigrationWorkflowRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetMigrationWorkflowRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -145,22 +145,22 @@ class GetMigrationWorkflowRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be retrieved.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 }
 
 /// A request to list previously created migration workflows.
 class ListMigrationWorkflowsRequest extends $pb.GeneratedMessage {
   factory ListMigrationWorkflowsRequest({
     $core.String? parent,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
     $core.int? pageSize,
     $core.String? pageToken,
   }) {
@@ -185,7 +185,7 @@ class ListMigrationWorkflowsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMigrationWorkflowsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false
@@ -225,15 +225,15 @@ class ListMigrationWorkflowsRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be retrieved.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 
   /// The maximum number of migration workflows to return. The service may return
   /// fewer than this number.
@@ -433,7 +433,7 @@ class StartMigrationWorkflowRequest extends $pb.GeneratedMessage {
 class GetMigrationSubtaskRequest extends $pb.GeneratedMessage {
   factory GetMigrationSubtaskRequest({
     $core.String? name,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -450,7 +450,7 @@ class GetMigrationSubtaskRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetMigrationSubtaskRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -488,22 +488,22 @@ class GetMigrationSubtaskRequest extends $pb.GeneratedMessage {
 
   /// Optional. The list of fields to be retrieved.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 }
 
 /// A request to list previously created migration subtasks.
 class ListMigrationSubtasksRequest extends $pb.GeneratedMessage {
   factory ListMigrationSubtasksRequest({
     $core.String? parent,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? filter,
@@ -532,7 +532,7 @@ class ListMigrationSubtasksRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMigrationSubtasksRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.migration.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'filter')
@@ -573,15 +573,15 @@ class ListMigrationSubtasksRequest extends $pb.GeneratedMessage {
 
   /// Optional. The list of fields to be retrieved.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 
   /// Optional. The maximum number of migration tasks to return. The service may return
   /// fewer than this number.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resources.pb.dart' as $1318;
 
 /// Request for the `ListConfigs()` method.
@@ -635,7 +635,7 @@ class ListVariablesResponse extends $pb.GeneratedMessage {
 class WatchVariableRequest extends $pb.GeneratedMessage {
   factory WatchVariableRequest({
     $core.String? name,
-    $1775.Timestamp? newerThan,
+    $1776.Timestamp? newerThan,
   }) {
     final $result = create();
     if (name != null) {
@@ -652,7 +652,7 @@ class WatchVariableRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WatchVariableRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.runtimeconfig.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'newerThan', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'newerThan', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -696,15 +696,15 @@ class WatchVariableRequest extends $pb.GeneratedMessage {
   ///  If not specified or the variable has an older timestamp, the watcher waits
   ///  for a the value to change before returning.
   @$pb.TagNumber(4)
-  $1775.Timestamp get newerThan => $_getN(1);
+  $1776.Timestamp get newerThan => $_getN(1);
   @$pb.TagNumber(4)
-  set newerThan($1775.Timestamp v) { setField(4, v); }
+  set newerThan($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasNewerThan() => $_has(1);
   @$pb.TagNumber(4)
   void clearNewerThan() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureNewerThan() => $_ensure(1);
+  $1776.Timestamp ensureNewerThan() => $_ensure(1);
 }
 
 /// Request for the `GetVariable()` method.

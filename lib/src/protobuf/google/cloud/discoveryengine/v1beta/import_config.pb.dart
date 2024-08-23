@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/date.pb.dart' as $1800;
-import 'completion.pb.dart' as $4509;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/date.pb.dart' as $1801;
+import 'completion.pb.dart' as $4511;
 import 'document.pb.dart' as $1005;
 import 'import_config.pbenum.dart';
 import 'sample_query.pb.dart' as $1015;
@@ -129,7 +129,7 @@ class BigQuerySource extends $pb.GeneratedMessage {
     $core.String? datasetId,
     $core.String? tableId,
     $core.String? gcsStagingDir,
-    $1800.Date? partitionDate,
+    $1801.Date? partitionDate,
     $core.String? dataSchema,
   }) {
     final $result = create();
@@ -167,7 +167,7 @@ class BigQuerySource extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
     ..aOS(3, _omitFieldNames ? '' : 'tableId')
     ..aOS(4, _omitFieldNames ? '' : 'gcsStagingDir')
-    ..aOM<$1800.Date>(5, _omitFieldNames ? '' : 'partitionDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(5, _omitFieldNames ? '' : 'partitionDate', subBuilder: $1801.Date.create)
     ..aOS(6, _omitFieldNames ? '' : 'dataSchema')
     ..hasRequiredFields = false
   ;
@@ -244,15 +244,15 @@ class BigQuerySource extends $pb.GeneratedMessage {
 
   /// BigQuery time partitioned table's _PARTITIONDATE in YYYY-MM-DD format.
   @$pb.TagNumber(5)
-  $1800.Date get partitionDate => $_getN(4);
+  $1801.Date get partitionDate => $_getN(4);
   @$pb.TagNumber(5)
-  set partitionDate($1800.Date v) { setField(5, v); }
+  set partitionDate($1801.Date v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPartitionDate() => $_has(4);
   @$pb.TagNumber(5)
   void clearPartitionDate() => clearField(5);
   @$pb.TagNumber(5)
-  $1800.Date ensurePartitionDate() => $_ensure(4);
+  $1801.Date ensurePartitionDate() => $_ensure(4);
 
   ///  The schema to use when parsing the data from the source.
   ///
@@ -1492,7 +1492,7 @@ class ImportUserEventsRequest extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ImportUserEventsResponse extends $pb.GeneratedMessage {
   factory ImportUserEventsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorConfig? errorConfig,
     $fixnum.Int64? joinedEventsCount,
     $fixnum.Int64? unjoinedEventsCount,
@@ -1517,7 +1517,7 @@ class ImportUserEventsResponse extends $pb.GeneratedMessage {
   factory ImportUserEventsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportUserEventsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorConfig>(2, _omitFieldNames ? '' : 'errorConfig', subBuilder: ImportErrorConfig.create)
     ..aInt64(3, _omitFieldNames ? '' : 'joinedEventsCount')
     ..aInt64(4, _omitFieldNames ? '' : 'unjoinedEventsCount')
@@ -1547,7 +1547,7 @@ class ImportUserEventsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Echoes the destination for the complete errors if this field was set in
   /// the request.
@@ -1588,8 +1588,8 @@ class ImportUserEventsResponse extends $pb.GeneratedMessage {
 /// returned by the google.longrunning.Operation.metadata field.
 class ImportUserEventsMetadata extends $pb.GeneratedMessage {
   factory ImportUserEventsMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? successCount,
     $fixnum.Int64? failureCount,
   }) {
@@ -1613,8 +1613,8 @@ class ImportUserEventsMetadata extends $pb.GeneratedMessage {
   factory ImportUserEventsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportUserEventsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'successCount')
     ..aInt64(4, _omitFieldNames ? '' : 'failureCount')
     ..hasRequiredFields = false
@@ -1643,28 +1643,28 @@ class ImportUserEventsMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Count of entries that were processed successfully.
   @$pb.TagNumber(3)
@@ -1691,8 +1691,8 @@ class ImportUserEventsMetadata extends $pb.GeneratedMessage {
 /// returned by the google.longrunning.Operation.metadata field.
 class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? successCount,
     $fixnum.Int64? failureCount,
     $fixnum.Int64? totalCount,
@@ -1720,8 +1720,8 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'successCount')
     ..aInt64(4, _omitFieldNames ? '' : 'failureCount')
     ..aInt64(5, _omitFieldNames ? '' : 'totalCount')
@@ -1751,28 +1751,28 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Count of entries that were processed successfully.
   @$pb.TagNumber(3)
@@ -1875,7 +1875,7 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
     BigQuerySource? bigquerySource,
     ImportErrorConfig? errorConfig,
     ImportDocumentsRequest_ReconciliationMode? reconciliationMode,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? autoGenerateIds,
     $core.String? idField,
     FhirStoreSource? fhirStoreSource,
@@ -1957,7 +1957,7 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
     ..aOM<BigQuerySource>(4, _omitFieldNames ? '' : 'bigquerySource', subBuilder: BigQuerySource.create)
     ..aOM<ImportErrorConfig>(5, _omitFieldNames ? '' : 'errorConfig', subBuilder: ImportErrorConfig.create)
     ..e<ImportDocumentsRequest_ReconciliationMode>(6, _omitFieldNames ? '' : 'reconciliationMode', $pb.PbFieldType.OE, defaultOrMaker: ImportDocumentsRequest_ReconciliationMode.RECONCILIATION_MODE_UNSPECIFIED, valueOf: ImportDocumentsRequest_ReconciliationMode.valueOf, enumValues: ImportDocumentsRequest_ReconciliationMode.values)
-    ..aOM<$2209.FieldMask>(7, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(7, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(8, _omitFieldNames ? '' : 'autoGenerateIds')
     ..aOS(9, _omitFieldNames ? '' : 'idField')
     ..aOM<FhirStoreSource>(10, _omitFieldNames ? '' : 'fhirStoreSource', subBuilder: FhirStoreSource.create)
@@ -2068,15 +2068,15 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
   /// Indicates which fields in the provided imported documents to update. If
   /// not set, the default is to update all fields.
   @$pb.TagNumber(7)
-  $2209.FieldMask get updateMask => $_getN(6);
+  $2210.FieldMask get updateMask => $_getN(6);
   @$pb.TagNumber(7)
-  set updateMask($2209.FieldMask v) { setField(7, v); }
+  set updateMask($2210.FieldMask v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateMask() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateMask() => clearField(7);
   @$pb.TagNumber(7)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(6);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(6);
 
   ///  Whether to automatically generate IDs for the documents if absent.
   ///
@@ -2234,7 +2234,7 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ImportDocumentsResponse extends $pb.GeneratedMessage {
   factory ImportDocumentsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorConfig? errorConfig,
   }) {
     final $result = create();
@@ -2251,7 +2251,7 @@ class ImportDocumentsResponse extends $pb.GeneratedMessage {
   factory ImportDocumentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorConfig>(2, _omitFieldNames ? '' : 'errorConfig', subBuilder: ImportErrorConfig.create)
     ..hasRequiredFields = false
   ;
@@ -2279,7 +2279,7 @@ class ImportDocumentsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Echoes the destination for the complete errors in the request if set.
   @$pb.TagNumber(2)
@@ -2297,7 +2297,7 @@ class ImportDocumentsResponse extends $pb.GeneratedMessage {
 /// The inline source for SuggestionDenyListEntry.
 class ImportSuggestionDenyListEntriesRequest_InlineSource extends $pb.GeneratedMessage {
   factory ImportSuggestionDenyListEntriesRequest_InlineSource({
-    $core.Iterable<$4509.SuggestionDenyListEntry>? entries,
+    $core.Iterable<$4511.SuggestionDenyListEntry>? entries,
   }) {
     final $result = create();
     if (entries != null) {
@@ -2310,7 +2310,7 @@ class ImportSuggestionDenyListEntriesRequest_InlineSource extends $pb.GeneratedM
   factory ImportSuggestionDenyListEntriesRequest_InlineSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportSuggestionDenyListEntriesRequest.InlineSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..pc<$4509.SuggestionDenyListEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $4509.SuggestionDenyListEntry.create)
+    ..pc<$4511.SuggestionDenyListEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $4511.SuggestionDenyListEntry.create)
     ..hasRequiredFields = false
   ;
 
@@ -2337,7 +2337,7 @@ class ImportSuggestionDenyListEntriesRequest_InlineSource extends $pb.GeneratedM
 
   /// Required. A list of all denylist entries to import. Max of 1000 items.
   @$pb.TagNumber(1)
-  $core.List<$4509.SuggestionDenyListEntry> get entries => $_getList(0);
+  $core.List<$4511.SuggestionDenyListEntry> get entries => $_getList(0);
 }
 
 enum ImportSuggestionDenyListEntriesRequest_Source {
@@ -2456,7 +2456,7 @@ class ImportSuggestionDenyListEntriesRequest extends $pb.GeneratedMessage {
 /// method.
 class ImportSuggestionDenyListEntriesResponse extends $pb.GeneratedMessage {
   factory ImportSuggestionDenyListEntriesResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     $fixnum.Int64? importedEntriesCount,
     $fixnum.Int64? failedEntriesCount,
   }) {
@@ -2477,7 +2477,7 @@ class ImportSuggestionDenyListEntriesResponse extends $pb.GeneratedMessage {
   factory ImportSuggestionDenyListEntriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportSuggestionDenyListEntriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aInt64(2, _omitFieldNames ? '' : 'importedEntriesCount')
     ..aInt64(3, _omitFieldNames ? '' : 'failedEntriesCount')
     ..hasRequiredFields = false
@@ -2506,7 +2506,7 @@ class ImportSuggestionDenyListEntriesResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Count of deny list entries successfully imported.
   @$pb.TagNumber(2)
@@ -2534,8 +2534,8 @@ class ImportSuggestionDenyListEntriesResponse extends $pb.GeneratedMessage {
 /// field.
 class ImportSuggestionDenyListEntriesMetadata extends $pb.GeneratedMessage {
   factory ImportSuggestionDenyListEntriesMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -2551,8 +2551,8 @@ class ImportSuggestionDenyListEntriesMetadata extends $pb.GeneratedMessage {
   factory ImportSuggestionDenyListEntriesMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportSuggestionDenyListEntriesMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2579,34 +2579,34 @@ class ImportSuggestionDenyListEntriesMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// The inline source for CompletionSuggestions.
 class ImportCompletionSuggestionsRequest_InlineSource extends $pb.GeneratedMessage {
   factory ImportCompletionSuggestionsRequest_InlineSource({
-    $core.Iterable<$4509.CompletionSuggestion>? suggestions,
+    $core.Iterable<$4511.CompletionSuggestion>? suggestions,
   }) {
     final $result = create();
     if (suggestions != null) {
@@ -2619,7 +2619,7 @@ class ImportCompletionSuggestionsRequest_InlineSource extends $pb.GeneratedMessa
   factory ImportCompletionSuggestionsRequest_InlineSource.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportCompletionSuggestionsRequest.InlineSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..pc<$4509.CompletionSuggestion>(1, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM, subBuilder: $4509.CompletionSuggestion.create)
+    ..pc<$4511.CompletionSuggestion>(1, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM, subBuilder: $4511.CompletionSuggestion.create)
     ..hasRequiredFields = false
   ;
 
@@ -2646,7 +2646,7 @@ class ImportCompletionSuggestionsRequest_InlineSource extends $pb.GeneratedMessa
 
   /// Required. A list of all denylist entries to import. Max of 1000 items.
   @$pb.TagNumber(1)
-  $core.List<$4509.CompletionSuggestion> get suggestions => $_getList(0);
+  $core.List<$4511.CompletionSuggestion> get suggestions => $_getList(0);
 }
 
 enum ImportCompletionSuggestionsRequest_Source {
@@ -2798,7 +2798,7 @@ class ImportCompletionSuggestionsRequest extends $pb.GeneratedMessage {
 /// successful.
 class ImportCompletionSuggestionsResponse extends $pb.GeneratedMessage {
   factory ImportCompletionSuggestionsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorConfig? errorConfig,
   }) {
     final $result = create();
@@ -2815,7 +2815,7 @@ class ImportCompletionSuggestionsResponse extends $pb.GeneratedMessage {
   factory ImportCompletionSuggestionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportCompletionSuggestionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorConfig>(2, _omitFieldNames ? '' : 'errorConfig', subBuilder: ImportErrorConfig.create)
     ..hasRequiredFields = false
   ;
@@ -2843,7 +2843,7 @@ class ImportCompletionSuggestionsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// The desired location of errors incurred during the Import.
   @$pb.TagNumber(2)
@@ -2863,8 +2863,8 @@ class ImportCompletionSuggestionsResponse extends $pb.GeneratedMessage {
 /// field.
 class ImportCompletionSuggestionsMetadata extends $pb.GeneratedMessage {
   factory ImportCompletionSuggestionsMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? successCount,
     $fixnum.Int64? failureCount,
   }) {
@@ -2888,8 +2888,8 @@ class ImportCompletionSuggestionsMetadata extends $pb.GeneratedMessage {
   factory ImportCompletionSuggestionsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportCompletionSuggestionsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'successCount')
     ..aInt64(4, _omitFieldNames ? '' : 'failureCount')
     ..hasRequiredFields = false
@@ -2918,28 +2918,28 @@ class ImportCompletionSuggestionsMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Count of
   /// [CompletionSuggestion][google.cloud.discoveryengine.v1beta.CompletionSuggestion]s
@@ -3167,7 +3167,7 @@ class ImportSampleQueriesRequest extends $pb.GeneratedMessage {
 /// successful.
 class ImportSampleQueriesResponse extends $pb.GeneratedMessage {
   factory ImportSampleQueriesResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorConfig? errorConfig,
   }) {
     final $result = create();
@@ -3184,7 +3184,7 @@ class ImportSampleQueriesResponse extends $pb.GeneratedMessage {
   factory ImportSampleQueriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportSampleQueriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorConfig>(2, _omitFieldNames ? '' : 'errorConfig', subBuilder: ImportErrorConfig.create)
     ..hasRequiredFields = false
   ;
@@ -3212,7 +3212,7 @@ class ImportSampleQueriesResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// The desired location of errors incurred during the Import.
   @$pb.TagNumber(2)
@@ -3232,8 +3232,8 @@ class ImportSampleQueriesResponse extends $pb.GeneratedMessage {
 /// field.
 class ImportSampleQueriesMetadata extends $pb.GeneratedMessage {
   factory ImportSampleQueriesMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? successCount,
     $fixnum.Int64? failureCount,
     $fixnum.Int64? totalCount,
@@ -3261,8 +3261,8 @@ class ImportSampleQueriesMetadata extends $pb.GeneratedMessage {
   factory ImportSampleQueriesMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportSampleQueriesMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'successCount')
     ..aInt64(4, _omitFieldNames ? '' : 'failureCount')
     ..aInt64(5, _omitFieldNames ? '' : 'totalCount')
@@ -3292,28 +3292,28 @@ class ImportSampleQueriesMetadata extends $pb.GeneratedMessage {
 
   /// ImportSampleQueries operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// ImportSampleQueries operation last update time. If the operation is done,
   /// this is also the finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Count of [SampleQuery][google.cloud.discoveryengine.v1beta.SampleQuery]s
   /// successfully imported.

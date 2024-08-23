@@ -14,20 +14,20 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/targeting_setting.pb.dart' as $4015;
-import '../enums/ad_group_ad_rotation_mode.pbenum.dart' as $4018;
-import '../enums/ad_group_engine_status.pbenum.dart' as $4019;
-import '../enums/ad_group_status.pbenum.dart' as $4016;
-import '../enums/ad_group_type.pbenum.dart' as $4017;
+import '../common/targeting_setting.pb.dart' as $4016;
+import '../enums/ad_group_ad_rotation_mode.pbenum.dart' as $4019;
+import '../enums/ad_group_engine_status.pbenum.dart' as $4020;
+import '../enums/ad_group_status.pbenum.dart' as $4017;
+import '../enums/ad_group_type.pbenum.dart' as $4018;
 
 /// An ad group.
 class AdGroup extends $pb.GeneratedMessage {
   factory AdGroup({
     $core.String? resourceName,
-    $4016.AdGroupStatusEnum_AdGroupStatus? status,
-    $4017.AdGroupTypeEnum_AdGroupType? type,
-    $4018.AdGroupAdRotationModeEnum_AdGroupAdRotationMode? adRotationMode,
-    $4015.TargetingSetting? targetingSetting,
+    $4017.AdGroupStatusEnum_AdGroupStatus? status,
+    $4018.AdGroupTypeEnum_AdGroupType? type,
+    $4019.AdGroupAdRotationModeEnum_AdGroupAdRotationMode? adRotationMode,
+    $4016.TargetingSetting? targetingSetting,
     $fixnum.Int64? id,
     $core.String? name,
     $fixnum.Int64? cpcBidMicros,
@@ -38,7 +38,7 @@ class AdGroup extends $pb.GeneratedMessage {
     $core.String? languageCode,
     $core.String? lastModifiedTime,
     $core.String? creationTime,
-    $4019.AdGroupEngineStatusEnum_AdGroupEngineStatus? engineStatus,
+    $4020.AdGroupEngineStatusEnum_AdGroupEngineStatus? engineStatus,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -97,10 +97,10 @@ class AdGroup extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4016.AdGroupStatusEnum_AdGroupStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4016.AdGroupStatusEnum_AdGroupStatus.UNSPECIFIED, valueOf: $4016.AdGroupStatusEnum_AdGroupStatus.valueOf, enumValues: $4016.AdGroupStatusEnum_AdGroupStatus.values)
-    ..e<$4017.AdGroupTypeEnum_AdGroupType>(12, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4017.AdGroupTypeEnum_AdGroupType.UNSPECIFIED, valueOf: $4017.AdGroupTypeEnum_AdGroupType.valueOf, enumValues: $4017.AdGroupTypeEnum_AdGroupType.values)
-    ..e<$4018.AdGroupAdRotationModeEnum_AdGroupAdRotationMode>(22, _omitFieldNames ? '' : 'adRotationMode', $pb.PbFieldType.OE, defaultOrMaker: $4018.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.UNSPECIFIED, valueOf: $4018.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.valueOf, enumValues: $4018.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.values)
-    ..aOM<$4015.TargetingSetting>(25, _omitFieldNames ? '' : 'targetingSetting', subBuilder: $4015.TargetingSetting.create)
+    ..e<$4017.AdGroupStatusEnum_AdGroupStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4017.AdGroupStatusEnum_AdGroupStatus.UNSPECIFIED, valueOf: $4017.AdGroupStatusEnum_AdGroupStatus.valueOf, enumValues: $4017.AdGroupStatusEnum_AdGroupStatus.values)
+    ..e<$4018.AdGroupTypeEnum_AdGroupType>(12, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4018.AdGroupTypeEnum_AdGroupType.UNSPECIFIED, valueOf: $4018.AdGroupTypeEnum_AdGroupType.valueOf, enumValues: $4018.AdGroupTypeEnum_AdGroupType.values)
+    ..e<$4019.AdGroupAdRotationModeEnum_AdGroupAdRotationMode>(22, _omitFieldNames ? '' : 'adRotationMode', $pb.PbFieldType.OE, defaultOrMaker: $4019.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.UNSPECIFIED, valueOf: $4019.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.valueOf, enumValues: $4019.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.values)
+    ..aOM<$4016.TargetingSetting>(25, _omitFieldNames ? '' : 'targetingSetting', subBuilder: $4016.TargetingSetting.create)
     ..aInt64(34, _omitFieldNames ? '' : 'id')
     ..aOS(35, _omitFieldNames ? '' : 'name')
     ..aInt64(39, _omitFieldNames ? '' : 'cpcBidMicros')
@@ -111,7 +111,7 @@ class AdGroup extends $pb.GeneratedMessage {
     ..aOS(53, _omitFieldNames ? '' : 'languageCode')
     ..aOS(55, _omitFieldNames ? '' : 'lastModifiedTime')
     ..aOS(60, _omitFieldNames ? '' : 'creationTime')
-    ..e<$4019.AdGroupEngineStatusEnum_AdGroupEngineStatus>(61, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4019.AdGroupEngineStatusEnum_AdGroupEngineStatus.UNSPECIFIED, valueOf: $4019.AdGroupEngineStatusEnum_AdGroupEngineStatus.valueOf, enumValues: $4019.AdGroupEngineStatusEnum_AdGroupEngineStatus.values)
+    ..e<$4020.AdGroupEngineStatusEnum_AdGroupEngineStatus>(61, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4020.AdGroupEngineStatusEnum_AdGroupEngineStatus.UNSPECIFIED, valueOf: $4020.AdGroupEngineStatusEnum_AdGroupEngineStatus.valueOf, enumValues: $4020.AdGroupEngineStatusEnum_AdGroupEngineStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -151,9 +151,9 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// The status of the ad group.
   @$pb.TagNumber(5)
-  $4016.AdGroupStatusEnum_AdGroupStatus get status => $_getN(1);
+  $4017.AdGroupStatusEnum_AdGroupStatus get status => $_getN(1);
   @$pb.TagNumber(5)
-  set status($4016.AdGroupStatusEnum_AdGroupStatus v) { setField(5, v); }
+  set status($4017.AdGroupStatusEnum_AdGroupStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(5)
@@ -161,9 +161,9 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// Immutable. The type of the ad group.
   @$pb.TagNumber(12)
-  $4017.AdGroupTypeEnum_AdGroupType get type => $_getN(2);
+  $4018.AdGroupTypeEnum_AdGroupType get type => $_getN(2);
   @$pb.TagNumber(12)
-  set type($4017.AdGroupTypeEnum_AdGroupType v) { setField(12, v); }
+  set type($4018.AdGroupTypeEnum_AdGroupType v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(12)
@@ -171,9 +171,9 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// The ad rotation mode of the ad group.
   @$pb.TagNumber(22)
-  $4018.AdGroupAdRotationModeEnum_AdGroupAdRotationMode get adRotationMode => $_getN(3);
+  $4019.AdGroupAdRotationModeEnum_AdGroupAdRotationMode get adRotationMode => $_getN(3);
   @$pb.TagNumber(22)
-  set adRotationMode($4018.AdGroupAdRotationModeEnum_AdGroupAdRotationMode v) { setField(22, v); }
+  set adRotationMode($4019.AdGroupAdRotationModeEnum_AdGroupAdRotationMode v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasAdRotationMode() => $_has(3);
   @$pb.TagNumber(22)
@@ -181,15 +181,15 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// Setting for targeting related features.
   @$pb.TagNumber(25)
-  $4015.TargetingSetting get targetingSetting => $_getN(4);
+  $4016.TargetingSetting get targetingSetting => $_getN(4);
   @$pb.TagNumber(25)
-  set targetingSetting($4015.TargetingSetting v) { setField(25, v); }
+  set targetingSetting($4016.TargetingSetting v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasTargetingSetting() => $_has(4);
   @$pb.TagNumber(25)
   void clearTargetingSetting() => clearField(25);
   @$pb.TagNumber(25)
-  $4015.TargetingSetting ensureTargetingSetting() => $_ensure(4);
+  $4016.TargetingSetting ensureTargetingSetting() => $_ensure(4);
 
   /// Output only. The ID of the ad group.
   @$pb.TagNumber(34)
@@ -316,9 +316,9 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// Output only. The Engine Status for ad group.
   @$pb.TagNumber(61)
-  $4019.AdGroupEngineStatusEnum_AdGroupEngineStatus get engineStatus => $_getN(15);
+  $4020.AdGroupEngineStatusEnum_AdGroupEngineStatus get engineStatus => $_getN(15);
   @$pb.TagNumber(61)
-  set engineStatus($4019.AdGroupEngineStatusEnum_AdGroupEngineStatus v) { setField(61, v); }
+  set engineStatus($4020.AdGroupEngineStatusEnum_AdGroupEngineStatus v) { setField(61, v); }
   @$pb.TagNumber(61)
   $core.bool hasEngineStatus() => $_has(15);
   @$pb.TagNumber(61)

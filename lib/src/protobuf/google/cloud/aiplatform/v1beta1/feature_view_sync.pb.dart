@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/interval.pb.dart' as $4257;
 
 /// Summary from the Sync job. For continuous syncs, the summary is updated
 /// periodically. For batch syncs, it gets updated on completion of the sync.
@@ -91,9 +91,9 @@ class FeatureViewSync_SyncSummary extends $pb.GeneratedMessage {
 class FeatureViewSync extends $pb.GeneratedMessage {
   factory FeatureViewSync({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1795.Status? finalStatus,
-    $4256.Interval? runTime,
+    $1776.Timestamp? createTime,
+    $1796.Status? finalStatus,
+    $4257.Interval? runTime,
     FeatureViewSync_SyncSummary? syncSummary,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
@@ -128,9 +128,9 @@ class FeatureViewSync extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureViewSync', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'finalStatus', subBuilder: $1795.Status.create)
-    ..aOM<$4256.Interval>(5, _omitFieldNames ? '' : 'runTime', subBuilder: $4256.Interval.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'finalStatus', subBuilder: $1796.Status.create)
+    ..aOM<$4257.Interval>(5, _omitFieldNames ? '' : 'runTime', subBuilder: $4257.Interval.create)
     ..aOM<FeatureViewSync_SyncSummary>(6, _omitFieldNames ? '' : 'syncSummary', subBuilder: FeatureViewSync_SyncSummary.create)
     ..aOB(7, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(8, _omitFieldNames ? '' : 'satisfiesPzi')
@@ -173,39 +173,39 @@ class FeatureViewSync extends $pb.GeneratedMessage {
   /// FeatureViewSync means that the job is pending / waiting for sufficient
   /// resources but may not have started the actual data transfer yet.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Final status of the FeatureViewSync.
   @$pb.TagNumber(4)
-  $1795.Status get finalStatus => $_getN(2);
+  $1796.Status get finalStatus => $_getN(2);
   @$pb.TagNumber(4)
-  set finalStatus($1795.Status v) { setField(4, v); }
+  set finalStatus($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFinalStatus() => $_has(2);
   @$pb.TagNumber(4)
   void clearFinalStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureFinalStatus() => $_ensure(2);
+  $1796.Status ensureFinalStatus() => $_ensure(2);
 
   /// Output only. Time when this FeatureViewSync is finished.
   @$pb.TagNumber(5)
-  $4256.Interval get runTime => $_getN(3);
+  $4257.Interval get runTime => $_getN(3);
   @$pb.TagNumber(5)
-  set runTime($4256.Interval v) { setField(5, v); }
+  set runTime($4257.Interval v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRunTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearRunTime() => clearField(5);
   @$pb.TagNumber(5)
-  $4256.Interval ensureRunTime() => $_ensure(3);
+  $4257.Interval ensureRunTime() => $_ensure(3);
 
   /// Output only. Summary of the sync job.
   @$pb.TagNumber(6)

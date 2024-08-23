@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../protobuf/struct.pb.dart' as $1735;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../../rpc/status.pb.dart' as $1796;
 import 'transfer.pbenum.dart';
 
 export 'transfer.pbenum.dart';
@@ -78,8 +78,8 @@ class EmailPreferences extends $pb.GeneratedMessage {
 /// Options customizing the data transfer schedule.
 class ScheduleOptions extends $pb.GeneratedMessage {
   factory ScheduleOptions({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.bool? disableAutoScheduling,
   }) {
     final $result = create();
@@ -99,8 +99,8 @@ class ScheduleOptions extends $pb.GeneratedMessage {
   factory ScheduleOptions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScheduleOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.datatransfer.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOB(3, _omitFieldNames ? '' : 'disableAutoScheduling')
     ..hasRequiredFields = false
   ;
@@ -132,30 +132,30 @@ class ScheduleOptions extends $pb.GeneratedMessage {
   /// moment. The time when a data transfer can be triggered manually is not
   /// limited by this option.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Defines time to stop scheduling transfer runs. A transfer run cannot be
   /// scheduled at or after the end time. The end time can be changed at any
   /// moment. The time when a data transfer can be triggered manually is not
   /// limited by this option.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// If true, automatic scheduling of data transfer runs for this configuration
   /// will be disabled. The runs can be started on ad-hoc basis using
@@ -239,11 +239,11 @@ class TransferConfig extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? destinationDatasetId,
     $core.String? displayName,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? dataSourceId,
     $core.String? schedule,
-    $1775.Timestamp? nextRunTime,
-    $1734.Struct? params,
+    $1776.Timestamp? nextRunTime,
+    $1735.Struct? params,
     TransferState? state,
     $fixnum.Int64? userId,
     $core.int? dataRefreshWindowDays,
@@ -325,11 +325,11 @@ class TransferConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'destinationDatasetId')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'dataSourceId')
     ..aOS(7, _omitFieldNames ? '' : 'schedule')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'nextRunTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1734.Struct>(9, _omitFieldNames ? '' : 'params', subBuilder: $1734.Struct.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'nextRunTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1735.Struct>(9, _omitFieldNames ? '' : 'params', subBuilder: $1735.Struct.create)
     ..e<TransferState>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: TransferState.TRANSFER_STATE_UNSPECIFIED, valueOf: TransferState.valueOf, enumValues: TransferState.values)
     ..aInt64(11, _omitFieldNames ? '' : 'userId')
     ..a<$core.int>(12, _omitFieldNames ? '' : 'dataRefreshWindowDays', $pb.PbFieldType.O3)
@@ -405,15 +405,15 @@ class TransferConfig extends $pb.GeneratedMessage {
 
   /// Output only. Data transfer modification time. Ignored by server on input.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Data source ID. This cannot be changed once data transfer is created. The
   /// full list of available data source IDs can be returned through an API call:
@@ -451,30 +451,30 @@ class TransferConfig extends $pb.GeneratedMessage {
 
   /// Output only. Next time when data transfer will run.
   @$pb.TagNumber(8)
-  $1775.Timestamp get nextRunTime => $_getN(6);
+  $1776.Timestamp get nextRunTime => $_getN(6);
   @$pb.TagNumber(8)
-  set nextRunTime($1775.Timestamp v) { setField(8, v); }
+  set nextRunTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasNextRunTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearNextRunTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureNextRunTime() => $_ensure(6);
+  $1776.Timestamp ensureNextRunTime() => $_ensure(6);
 
   /// Parameters specific to each data source. For more information see the
   /// bq tab in the 'Setting up a data transfer' section for each data source.
   /// For example the parameters for Cloud Storage transfers are listed here:
   /// https://cloud.google.com/bigquery-transfer/docs/cloud-storage-transfer#bq
   @$pb.TagNumber(9)
-  $1734.Struct get params => $_getN(7);
+  $1735.Struct get params => $_getN(7);
   @$pb.TagNumber(9)
-  set params($1734.Struct v) { setField(9, v); }
+  set params($1735.Struct v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasParams() => $_has(7);
   @$pb.TagNumber(9)
   void clearParams() => clearField(9);
   @$pb.TagNumber(9)
-  $1734.Struct ensureParams() => $_ensure(7);
+  $1735.Struct ensureParams() => $_ensure(7);
 
   /// Output only. State of the most recently updated transfer run.
   @$pb.TagNumber(10)
@@ -605,7 +605,7 @@ class TransferConfig extends $pb.GeneratedMessage {
 /// Represents the encryption configuration for a transfer.
 class EncryptionConfiguration extends $pb.GeneratedMessage {
   factory EncryptionConfiguration({
-    $1780.StringValue? kmsKeyName,
+    $1781.StringValue? kmsKeyName,
   }) {
     final $result = create();
     if (kmsKeyName != null) {
@@ -618,7 +618,7 @@ class EncryptionConfiguration extends $pb.GeneratedMessage {
   factory EncryptionConfiguration.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptionConfiguration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.datatransfer.v1'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(1, _omitFieldNames ? '' : 'kmsKeyName', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(1, _omitFieldNames ? '' : 'kmsKeyName', subBuilder: $1781.StringValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -645,15 +645,15 @@ class EncryptionConfiguration extends $pb.GeneratedMessage {
 
   /// The name of the KMS key used for encrypting BigQuery data.
   @$pb.TagNumber(1)
-  $1780.StringValue get kmsKeyName => $_getN(0);
+  $1781.StringValue get kmsKeyName => $_getN(0);
   @$pb.TagNumber(1)
-  set kmsKeyName($1780.StringValue v) { setField(1, v); }
+  set kmsKeyName($1781.StringValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasKmsKeyName() => $_has(0);
   @$pb.TagNumber(1)
   void clearKmsKeyName() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.StringValue ensureKmsKeyName() => $_ensure(0);
+  $1781.StringValue ensureKmsKeyName() => $_ensure(0);
 }
 
 enum TransferRun_Destination {
@@ -666,17 +666,17 @@ class TransferRun extends $pb.GeneratedMessage {
   factory TransferRun({
     $core.String? name,
     $core.String? destinationDatasetId,
-    $1775.Timestamp? scheduleTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? scheduleTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
     $core.String? dataSourceId,
     TransferState? state,
-    $1734.Struct? params,
-    $1775.Timestamp? runTime,
+    $1735.Struct? params,
+    $1776.Timestamp? runTime,
     $fixnum.Int64? userId,
     $core.String? schedule,
-    $1795.Status? errorStatus,
+    $1796.Status? errorStatus,
     $core.String? notificationPubsubTopic,
     EmailPreferences? emailPreferences,
   }) {
@@ -740,17 +740,17 @@ class TransferRun extends $pb.GeneratedMessage {
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'destinationDatasetId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'dataSourceId')
     ..e<TransferState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: TransferState.TRANSFER_STATE_UNSPECIFIED, valueOf: TransferState.valueOf, enumValues: TransferState.values)
-    ..aOM<$1734.Struct>(9, _omitFieldNames ? '' : 'params', subBuilder: $1734.Struct.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'runTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1735.Struct>(9, _omitFieldNames ? '' : 'params', subBuilder: $1735.Struct.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'runTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(11, _omitFieldNames ? '' : 'userId')
     ..aOS(12, _omitFieldNames ? '' : 'schedule')
-    ..aOM<$1795.Status>(21, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(21, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1796.Status.create)
     ..aOS(23, _omitFieldNames ? '' : 'notificationPubsubTopic')
     ..aOM<EmailPreferences>(25, _omitFieldNames ? '' : 'emailPreferences', subBuilder: EmailPreferences.create)
     ..hasRequiredFields = false
@@ -805,53 +805,53 @@ class TransferRun extends $pb.GeneratedMessage {
 
   /// Minimum time after which a transfer run can be started.
   @$pb.TagNumber(3)
-  $1775.Timestamp get scheduleTime => $_getN(2);
+  $1776.Timestamp get scheduleTime => $_getN(2);
   @$pb.TagNumber(3)
-  set scheduleTime($1775.Timestamp v) { setField(3, v); }
+  set scheduleTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasScheduleTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearScheduleTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(2);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(2);
 
   /// Output only. Time when transfer run was started.
   /// Parameter ignored by server for input requests.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Output only. Time when transfer run ended.
   /// Parameter ignored by server for input requests.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 
   /// Output only. Last time the data transfer run state was updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. Data source id.
   @$pb.TagNumber(7)
@@ -879,28 +879,28 @@ class TransferRun extends $pb.GeneratedMessage {
   /// here:
   /// https://cloud.google.com/bigquery-transfer/docs/cloud-storage-transfer#bq
   @$pb.TagNumber(9)
-  $1734.Struct get params => $_getN(8);
+  $1735.Struct get params => $_getN(8);
   @$pb.TagNumber(9)
-  set params($1734.Struct v) { setField(9, v); }
+  set params($1735.Struct v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasParams() => $_has(8);
   @$pb.TagNumber(9)
   void clearParams() => clearField(9);
   @$pb.TagNumber(9)
-  $1734.Struct ensureParams() => $_ensure(8);
+  $1735.Struct ensureParams() => $_ensure(8);
 
   /// For batch transfer runs, specifies the date and time of the data should be
   /// ingested.
   @$pb.TagNumber(10)
-  $1775.Timestamp get runTime => $_getN(9);
+  $1776.Timestamp get runTime => $_getN(9);
   @$pb.TagNumber(10)
-  set runTime($1775.Timestamp v) { setField(10, v); }
+  set runTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasRunTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearRunTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureRunTime() => $_ensure(9);
+  $1776.Timestamp ensureRunTime() => $_ensure(9);
 
   /// Deprecated. Unique ID of the user on whose behalf transfer is done.
   @$pb.TagNumber(11)
@@ -928,15 +928,15 @@ class TransferRun extends $pb.GeneratedMessage {
 
   /// Status of the transfer run.
   @$pb.TagNumber(21)
-  $1795.Status get errorStatus => $_getN(12);
+  $1796.Status get errorStatus => $_getN(12);
   @$pb.TagNumber(21)
-  set errorStatus($1795.Status v) { setField(21, v); }
+  set errorStatus($1796.Status v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasErrorStatus() => $_has(12);
   @$pb.TagNumber(21)
   void clearErrorStatus() => clearField(21);
   @$pb.TagNumber(21)
-  $1795.Status ensureErrorStatus() => $_ensure(12);
+  $1796.Status ensureErrorStatus() => $_ensure(12);
 
   ///  Output only. Pub/Sub topic where a notification will be sent after this
   ///  transfer run finishes.
@@ -970,7 +970,7 @@ class TransferRun extends $pb.GeneratedMessage {
 /// Represents a user facing message for a particular data transfer run.
 class TransferMessage extends $pb.GeneratedMessage {
   factory TransferMessage({
-    $1775.Timestamp? messageTime,
+    $1776.Timestamp? messageTime,
     TransferMessage_MessageSeverity? severity,
     $core.String? messageText,
   }) {
@@ -991,7 +991,7 @@ class TransferMessage extends $pb.GeneratedMessage {
   factory TransferMessage.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.datatransfer.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'messageTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'messageTime', subBuilder: $1776.Timestamp.create)
     ..e<TransferMessage_MessageSeverity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: TransferMessage_MessageSeverity.MESSAGE_SEVERITY_UNSPECIFIED, valueOf: TransferMessage_MessageSeverity.valueOf, enumValues: TransferMessage_MessageSeverity.values)
     ..aOS(3, _omitFieldNames ? '' : 'messageText')
     ..hasRequiredFields = false
@@ -1020,15 +1020,15 @@ class TransferMessage extends $pb.GeneratedMessage {
 
   /// Time when message was logged.
   @$pb.TagNumber(1)
-  $1775.Timestamp get messageTime => $_getN(0);
+  $1776.Timestamp get messageTime => $_getN(0);
   @$pb.TagNumber(1)
-  set messageTime($1775.Timestamp v) { setField(1, v); }
+  set messageTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMessageTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearMessageTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureMessageTime() => $_ensure(0);
+  $1776.Timestamp ensureMessageTime() => $_ensure(0);
 
   /// Message severity.
   @$pb.TagNumber(2)

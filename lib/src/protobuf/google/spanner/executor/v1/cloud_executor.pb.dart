@@ -15,14 +15,14 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $17;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import '../../admin/database/v1/backup.pb.dart' as $1719;
-import '../../admin/database/v1/common.pb.dart' as $4884;
+import '../../admin/database/v1/common.pb.dart' as $4886;
 import '../../admin/database/v1/spanner_database_admin.pb.dart' as $1718;
 import '../../admin/instance/v1/spanner_instance_admin.pb.dart' as $1721;
 import '../../v1/spanner.pbenum.dart' as $1722;
-import '../../v1/type.pb.dart' as $4887;
+import '../../v1/type.pb.dart' as $4889;
 import 'cloud_executor.pbenum.dart';
 
 export 'cloud_executor.pbenum.dart';
@@ -686,7 +686,7 @@ class ReadAction extends $pb.GeneratedMessage {
 class QueryAction_Parameter extends $pb.GeneratedMessage {
   factory QueryAction_Parameter({
     $core.String? name,
-    $4887.Type? type,
+    $4889.Type? type,
     Value? value,
   }) {
     final $result = create();
@@ -707,7 +707,7 @@ class QueryAction_Parameter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryAction.Parameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4887.Type>(2, _omitFieldNames ? '' : 'type', subBuilder: $4887.Type.create)
+    ..aOM<$4889.Type>(2, _omitFieldNames ? '' : 'type', subBuilder: $4889.Type.create)
     ..aOM<Value>(3, _omitFieldNames ? '' : 'value', subBuilder: Value.create)
     ..hasRequiredFields = false
   ;
@@ -745,15 +745,15 @@ class QueryAction_Parameter extends $pb.GeneratedMessage {
 
   /// Type of the parameter.
   @$pb.TagNumber(2)
-  $4887.Type get type => $_getN(1);
+  $4889.Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($4887.Type v) { setField(2, v); }
+  set type($4889.Type v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $4887.Type ensureType() => $_ensure(1);
+  $4889.Type ensureType() => $_ensure(1);
 
   /// Value of the parameter.
   @$pb.TagNumber(3)
@@ -971,11 +971,11 @@ class Value extends $pb.GeneratedMessage {
     $core.List<$core.int>? bytesValue,
     $core.String? stringValue,
     ValueList? structValue,
-    $1775.Timestamp? timestampValue,
+    $1776.Timestamp? timestampValue,
     $core.int? dateDaysValue,
     $core.bool? isCommitTimestamp,
     ValueList? arrayValue,
-    $4887.Type? arrayType,
+    $4889.Type? arrayType,
   }) {
     final $result = create();
     if (isNull != null) {
@@ -1043,11 +1043,11 @@ class Value extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(5, _omitFieldNames ? '' : 'bytesValue', $pb.PbFieldType.OY)
     ..aOS(6, _omitFieldNames ? '' : 'stringValue')
     ..aOM<ValueList>(7, _omitFieldNames ? '' : 'structValue', subBuilder: ValueList.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'dateDaysValue', $pb.PbFieldType.O3)
     ..aOB(10, _omitFieldNames ? '' : 'isCommitTimestamp')
     ..aOM<ValueList>(11, _omitFieldNames ? '' : 'arrayValue', subBuilder: ValueList.create)
-    ..aOM<$4887.Type>(12, _omitFieldNames ? '' : 'arrayType', subBuilder: $4887.Type.create)
+    ..aOM<$4889.Type>(12, _omitFieldNames ? '' : 'arrayType', subBuilder: $4889.Type.create)
     ..hasRequiredFields = false
   ;
 
@@ -1152,15 +1152,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// Timestamp type value.
   @$pb.TagNumber(8)
-  $1775.Timestamp get timestampValue => $_getN(7);
+  $1776.Timestamp get timestampValue => $_getN(7);
   @$pb.TagNumber(8)
-  set timestampValue($1775.Timestamp v) { setField(8, v); }
+  set timestampValue($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTimestampValue() => $_has(7);
   @$pb.TagNumber(8)
   void clearTimestampValue() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureTimestampValue() => $_ensure(7);
+  $1776.Timestamp ensureTimestampValue() => $_ensure(7);
 
   /// Date type value. Date is specified as a number of days since Unix epoch.
   @$pb.TagNumber(9)
@@ -1197,15 +1197,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// Type of array element. Only set if value is an array.
   @$pb.TagNumber(12)
-  $4887.Type get arrayType => $_getN(11);
+  $4889.Type get arrayType => $_getN(11);
   @$pb.TagNumber(12)
-  set arrayType($4887.Type v) { setField(12, v); }
+  set arrayType($4889.Type v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasArrayType() => $_has(11);
   @$pb.TagNumber(12)
   void clearArrayType() => clearField(12);
   @$pb.TagNumber(12)
-  $4887.Type ensureArrayType() => $_ensure(11);
+  $4889.Type ensureArrayType() => $_ensure(11);
 }
 
 ///  KeyRange represents a range of rows in a table or index.
@@ -1428,7 +1428,7 @@ class ValueList extends $pb.GeneratedMessage {
 class MutationAction_InsertArgs extends $pb.GeneratedMessage {
   factory MutationAction_InsertArgs({
     $core.Iterable<$core.String>? column,
-    $core.Iterable<$4887.Type>? type,
+    $core.Iterable<$4889.Type>? type,
     $core.Iterable<ValueList>? values,
   }) {
     final $result = create();
@@ -1449,7 +1449,7 @@ class MutationAction_InsertArgs extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutationAction.InsertArgs', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'column')
-    ..pc<$4887.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM, subBuilder: $4887.Type.create)
+    ..pc<$4889.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM, subBuilder: $4889.Type.create)
     ..pc<ValueList>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: ValueList.create)
     ..hasRequiredFields = false
   ;
@@ -1481,7 +1481,7 @@ class MutationAction_InsertArgs extends $pb.GeneratedMessage {
 
   /// Type information for the "values" entries below.
   @$pb.TagNumber(2)
-  $core.List<$4887.Type> get type => $_getList(1);
+  $core.List<$4889.Type> get type => $_getList(1);
 
   /// The values to be written.
   @$pb.TagNumber(3)
@@ -1492,7 +1492,7 @@ class MutationAction_InsertArgs extends $pb.GeneratedMessage {
 class MutationAction_UpdateArgs extends $pb.GeneratedMessage {
   factory MutationAction_UpdateArgs({
     $core.Iterable<$core.String>? column,
-    $core.Iterable<$4887.Type>? type,
+    $core.Iterable<$4889.Type>? type,
     $core.Iterable<ValueList>? values,
   }) {
     final $result = create();
@@ -1513,7 +1513,7 @@ class MutationAction_UpdateArgs extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutationAction.UpdateArgs', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'column')
-    ..pc<$4887.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM, subBuilder: $4887.Type.create)
+    ..pc<$4889.Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.PM, subBuilder: $4889.Type.create)
     ..pc<ValueList>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: ValueList.create)
     ..hasRequiredFields = false
   ;
@@ -1545,7 +1545,7 @@ class MutationAction_UpdateArgs extends $pb.GeneratedMessage {
 
   /// Type information for "values". Identical to InsertArgs.type.
   @$pb.TagNumber(2)
-  $core.List<$4887.Type> get type => $_getList(1);
+  $core.List<$4889.Type> get type => $_getList(1);
 
   /// The values to be updated. Identical to InsertArgs.values.
   @$pb.TagNumber(3)
@@ -2303,7 +2303,7 @@ class TableMetadata extends $pb.GeneratedMessage {
 class ColumnMetadata extends $pb.GeneratedMessage {
   factory ColumnMetadata({
     $core.String? name,
-    $4887.Type? type,
+    $4889.Type? type,
   }) {
     final $result = create();
     if (name != null) {
@@ -2320,7 +2320,7 @@ class ColumnMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4887.Type>(2, _omitFieldNames ? '' : 'type', subBuilder: $4887.Type.create)
+    ..aOM<$4889.Type>(2, _omitFieldNames ? '' : 'type', subBuilder: $4889.Type.create)
     ..hasRequiredFields = false
   ;
 
@@ -2357,15 +2357,15 @@ class ColumnMetadata extends $pb.GeneratedMessage {
 
   /// Column type.
   @$pb.TagNumber(2)
-  $4887.Type get type => $_getN(1);
+  $4889.Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($4887.Type v) { setField(2, v); }
+  set type($4889.Type v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $4887.Type ensureType() => $_ensure(1);
+  $4889.Type ensureType() => $_ensure(1);
 }
 
 /// Options for executing the transaction.
@@ -3811,7 +3811,7 @@ class CreateCloudDatabaseAction extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.String? databaseId,
     $core.Iterable<$core.String>? sdlStatement,
-    $4884.EncryptionConfig? encryptionConfig,
+    $4886.EncryptionConfig? encryptionConfig,
     $core.String? dialect,
     $core.List<$core.int>? protoDescriptors,
   }) {
@@ -3848,7 +3848,7 @@ class CreateCloudDatabaseAction extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOS(3, _omitFieldNames ? '' : 'databaseId')
     ..pPS(4, _omitFieldNames ? '' : 'sdlStatement')
-    ..aOM<$4884.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $4884.EncryptionConfig.create)
+    ..aOM<$4886.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $4886.EncryptionConfig.create)
     ..aOS(6, _omitFieldNames ? '' : 'dialect')
     ..a<$core.List<$core.int>>(7, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
@@ -3912,15 +3912,15 @@ class CreateCloudDatabaseAction extends $pb.GeneratedMessage {
   /// The KMS key used to encrypt the database to be created if the database
   /// should be CMEK protected.
   @$pb.TagNumber(5)
-  $4884.EncryptionConfig get encryptionConfig => $_getN(4);
+  $4886.EncryptionConfig get encryptionConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set encryptionConfig($4884.EncryptionConfig v) { setField(5, v); }
+  set encryptionConfig($4886.EncryptionConfig v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEncryptionConfig() => $_has(4);
   @$pb.TagNumber(5)
   void clearEncryptionConfig() => clearField(5);
   @$pb.TagNumber(5)
-  $4884.EncryptionConfig ensureEncryptionConfig() => $_ensure(4);
+  $4886.EncryptionConfig ensureEncryptionConfig() => $_ensure(4);
 
   /// Optional SQL dialect (GOOGLESQL or POSTGRESQL).  Default: GOOGLESQL.
   @$pb.TagNumber(6)
@@ -4707,7 +4707,7 @@ class RestoreCloudDatabaseAction extends $pb.GeneratedMessage {
     $core.String? backupId,
     $core.String? databaseInstanceId,
     $core.String? databaseId,
-    $4884.EncryptionConfig? encryptionConfig,
+    $4886.EncryptionConfig? encryptionConfig,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -4740,7 +4740,7 @@ class RestoreCloudDatabaseAction extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
     ..aOS(4, _omitFieldNames ? '' : 'databaseInstanceId')
     ..aOS(5, _omitFieldNames ? '' : 'databaseId')
-    ..aOM<$4884.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $4884.EncryptionConfig.create)
+    ..aOM<$4886.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $4886.EncryptionConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -4820,15 +4820,15 @@ class RestoreCloudDatabaseAction extends $pb.GeneratedMessage {
   /// The KMS key(s) used to encrypt the restored database to be created if the
   /// restored database should be CMEK protected.
   @$pb.TagNumber(7)
-  $4884.EncryptionConfig get encryptionConfig => $_getN(5);
+  $4886.EncryptionConfig get encryptionConfig => $_getN(5);
   @$pb.TagNumber(7)
-  set encryptionConfig($4884.EncryptionConfig v) { setField(7, v); }
+  set encryptionConfig($4886.EncryptionConfig v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEncryptionConfig() => $_has(5);
   @$pb.TagNumber(7)
   void clearEncryptionConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $4884.EncryptionConfig ensureEncryptionConfig() => $_ensure(5);
+  $4886.EncryptionConfig ensureEncryptionConfig() => $_ensure(5);
 }
 
 /// Action that gets a Cloud Spanner database.
@@ -4920,9 +4920,9 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
     $core.String? instanceId,
     $core.String? backupId,
     $core.String? databaseId,
-    $1775.Timestamp? expireTime,
-    $1775.Timestamp? versionTime,
-    $4884.EncryptionConfig? encryptionConfig,
+    $1776.Timestamp? expireTime,
+    $1776.Timestamp? versionTime,
+    $4886.EncryptionConfig? encryptionConfig,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -4957,9 +4957,9 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
     ..aOS(4, _omitFieldNames ? '' : 'databaseId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'versionTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4884.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $4884.EncryptionConfig.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'versionTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4886.EncryptionConfig>(7, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $4886.EncryptionConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -5029,42 +5029,42 @@ class CreateCloudBackupAction extends $pb.GeneratedMessage {
   /// Output only. The expiration time of the backup, which must be at least 6
   /// hours and at most 366 days from the time the request is received.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(4);
+  $1776.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(4);
+  $1776.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// The version time of the backup, which must be within the time range of
   /// [earliest_version_time, NOW], where earliest_version_time is retrieved by
   /// cloud spanner frontend API (See details: go/cs-pitr-lite-design).
   @$pb.TagNumber(6)
-  $1775.Timestamp get versionTime => $_getN(5);
+  $1776.Timestamp get versionTime => $_getN(5);
   @$pb.TagNumber(6)
-  set versionTime($1775.Timestamp v) { setField(6, v); }
+  set versionTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasVersionTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearVersionTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureVersionTime() => $_ensure(5);
+  $1776.Timestamp ensureVersionTime() => $_ensure(5);
 
   /// The KMS key(s) used to encrypt the backup to be created if the backup
   /// should be CMEK protected.
   @$pb.TagNumber(7)
-  $4884.EncryptionConfig get encryptionConfig => $_getN(6);
+  $4886.EncryptionConfig get encryptionConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set encryptionConfig($4884.EncryptionConfig v) { setField(7, v); }
+  set encryptionConfig($4886.EncryptionConfig v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEncryptionConfig() => $_has(6);
   @$pb.TagNumber(7)
   void clearEncryptionConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $4884.EncryptionConfig ensureEncryptionConfig() => $_ensure(6);
+  $4886.EncryptionConfig ensureEncryptionConfig() => $_ensure(6);
 }
 
 /// Action that copies a Cloud Spanner database backup.
@@ -5074,7 +5074,7 @@ class CopyCloudBackupAction extends $pb.GeneratedMessage {
     $core.String? instanceId,
     $core.String? backupId,
     $core.String? sourceBackup,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -5103,7 +5103,7 @@ class CopyCloudBackupAction extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
     ..aOS(4, _omitFieldNames ? '' : 'sourceBackup')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -5173,15 +5173,15 @@ class CopyCloudBackupAction extends $pb.GeneratedMessage {
   /// Output only. The expiration time of the backup, which must be at least 6
   /// hours and at most 366 days from the time the request is received.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(4);
+  $1776.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(4);
+  $1776.Timestamp ensureExpireTime() => $_ensure(4);
 }
 
 /// Action that gets a Cloud Spanner database backup.
@@ -5272,7 +5272,7 @@ class UpdateCloudBackupAction extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.String? instanceId,
     $core.String? backupId,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
   }) {
     final $result = create();
     if (projectId != null) {
@@ -5297,7 +5297,7 @@ class UpdateCloudBackupAction extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'instanceId')
     ..aOS(3, _omitFieldNames ? '' : 'backupId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -5355,15 +5355,15 @@ class UpdateCloudBackupAction extends $pb.GeneratedMessage {
   /// Output only. Updated value of expire_time, this is the only field
   /// that supported to be updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expireTime($1775.Timestamp v) { setField(4, v); }
+  set expireTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearExpireTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 }
 
 /// Action that deletes a Cloud Spanner database backup.
@@ -5898,7 +5898,7 @@ enum StartBatchTransactionAction_Param {
 ///  Cleaning up is optional, but recommended.
 class StartBatchTransactionAction extends $pb.GeneratedMessage {
   factory StartBatchTransactionAction({
-    $1775.Timestamp? batchTxnTime,
+    $1776.Timestamp? batchTxnTime,
     $core.List<$core.int>? tid,
     $core.String? cloudDatabaseRole,
   }) {
@@ -5925,7 +5925,7 @@ class StartBatchTransactionAction extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartBatchTransactionAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'batchTxnTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'batchTxnTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'tid', $pb.PbFieldType.OY)
     ..aOS(3, _omitFieldNames ? '' : 'cloudDatabaseRole')
     ..hasRequiredFields = false
@@ -5957,15 +5957,15 @@ class StartBatchTransactionAction extends $pb.GeneratedMessage {
 
   /// The exact timestamp to start the batch transaction.
   @$pb.TagNumber(1)
-  $1775.Timestamp get batchTxnTime => $_getN(0);
+  $1776.Timestamp get batchTxnTime => $_getN(0);
   @$pb.TagNumber(1)
-  set batchTxnTime($1775.Timestamp v) { setField(1, v); }
+  set batchTxnTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBatchTxnTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearBatchTxnTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureBatchTxnTime() => $_ensure(0);
+  $1776.Timestamp ensureBatchTxnTime() => $_ensure(0);
 
   /// ID of a batch read-only transaction. It can be used to start the same
   /// batch transaction on multiple executors and parallelize partition
@@ -6378,8 +6378,8 @@ class ExecutePartitionAction extends $pb.GeneratedMessage {
 class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
   factory ExecuteChangeStreamQuery({
     $core.String? name,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? partitionToken,
     $core.Iterable<$core.String>? readOptions,
     $core.int? heartbeatMilliseconds,
@@ -6419,8 +6419,8 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteChangeStreamQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'partitionToken')
     ..pPS(5, _omitFieldNames ? '' : 'readOptions')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'heartbeatMilliseconds', $pb.PbFieldType.O3)
@@ -6463,28 +6463,28 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
   /// Specifies that records with commit_timestamp greater than or equal to
   /// start_time should be returned.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Specifies that records with commit_timestamp less than or equal to
   /// end_time should be returned.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Specifies which change stream partition to query, based on the content of
   /// child partitions records.
@@ -6538,8 +6538,8 @@ class ExecuteChangeStreamQuery extends $pb.GeneratedMessage {
 /// SpannerActionOutcome defines a result of execution of a single SpannerAction.
 class SpannerActionOutcome extends $pb.GeneratedMessage {
   factory SpannerActionOutcome({
-    $1795.Status? status,
-    $1775.Timestamp? commitTime,
+    $1796.Status? status,
+    $1776.Timestamp? commitTime,
     ReadResult? readResult,
     QueryResult? queryResult,
     $core.bool? transactionRestarted,
@@ -6587,8 +6587,8 @@ class SpannerActionOutcome extends $pb.GeneratedMessage {
   factory SpannerActionOutcome.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpannerActionOutcome', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'commitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'commitTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ReadResult>(3, _omitFieldNames ? '' : 'readResult', subBuilder: ReadResult.create)
     ..aOM<QueryResult>(4, _omitFieldNames ? '' : 'queryResult', subBuilder: QueryResult.create)
     ..aOB(5, _omitFieldNames ? '' : 'transactionRestarted')
@@ -6624,27 +6624,27 @@ class SpannerActionOutcome extends $pb.GeneratedMessage {
   /// If an outcome is split into multiple parts, status will be set only in the
   /// last part.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// Transaction timestamp. It must be set for successful committed actions.
   @$pb.TagNumber(2)
-  $1775.Timestamp get commitTime => $_getN(1);
+  $1776.Timestamp get commitTime => $_getN(1);
   @$pb.TagNumber(2)
-  set commitTime($1775.Timestamp v) { setField(2, v); }
+  set commitTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCommitTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCommitTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCommitTime() => $_ensure(1);
+  $1776.Timestamp ensureCommitTime() => $_ensure(1);
 
   /// Result of a ReadAction. This field must be set for ReadActions even if
   /// no rows were read.
@@ -7269,7 +7269,7 @@ class ReadResult extends $pb.GeneratedMessage {
     $core.String? index,
     $core.int? requestIndex,
     $core.Iterable<ValueList>? row,
-    $4887.StructType? rowType,
+    $4889.StructType? rowType,
   }) {
     final $result = create();
     if (table != null) {
@@ -7298,7 +7298,7 @@ class ReadResult extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'index')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'requestIndex', $pb.PbFieldType.O3)
     ..pc<ValueList>(4, _omitFieldNames ? '' : 'row', $pb.PbFieldType.PM, subBuilder: ValueList.create)
-    ..aOM<$4887.StructType>(5, _omitFieldNames ? '' : 'rowType', subBuilder: $4887.StructType.create)
+    ..aOM<$4889.StructType>(5, _omitFieldNames ? '' : 'rowType', subBuilder: $4889.StructType.create)
     ..hasRequiredFields = false
   ;
 
@@ -7360,22 +7360,22 @@ class ReadResult extends $pb.GeneratedMessage {
 
   /// The type of rows read. It must be set if at least one row was read.
   @$pb.TagNumber(5)
-  $4887.StructType get rowType => $_getN(4);
+  $4889.StructType get rowType => $_getN(4);
   @$pb.TagNumber(5)
-  set rowType($4887.StructType v) { setField(5, v); }
+  set rowType($4889.StructType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRowType() => $_has(4);
   @$pb.TagNumber(5)
   void clearRowType() => clearField(5);
   @$pb.TagNumber(5)
-  $4887.StructType ensureRowType() => $_ensure(4);
+  $4889.StructType ensureRowType() => $_ensure(4);
 }
 
 /// QueryResult contains result of a Query.
 class QueryResult extends $pb.GeneratedMessage {
   factory QueryResult({
     $core.Iterable<ValueList>? row,
-    $4887.StructType? rowType,
+    $4889.StructType? rowType,
   }) {
     final $result = create();
     if (row != null) {
@@ -7392,7 +7392,7 @@ class QueryResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
     ..pc<ValueList>(1, _omitFieldNames ? '' : 'row', $pb.PbFieldType.PM, subBuilder: ValueList.create)
-    ..aOM<$4887.StructType>(2, _omitFieldNames ? '' : 'rowType', subBuilder: $4887.StructType.create)
+    ..aOM<$4889.StructType>(2, _omitFieldNames ? '' : 'rowType', subBuilder: $4889.StructType.create)
     ..hasRequiredFields = false
   ;
 
@@ -7424,15 +7424,15 @@ class QueryResult extends $pb.GeneratedMessage {
 
   /// The type of rows read. It must be set if at least one row was read.
   @$pb.TagNumber(2)
-  $4887.StructType get rowType => $_getN(1);
+  $4889.StructType get rowType => $_getN(1);
   @$pb.TagNumber(2)
-  set rowType($4887.StructType v) { setField(2, v); }
+  set rowType($4889.StructType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRowType() => $_has(1);
   @$pb.TagNumber(2)
   void clearRowType() => clearField(2);
   @$pb.TagNumber(2)
-  $4887.StructType ensureRowType() => $_ensure(1);
+  $4889.StructType ensureRowType() => $_ensure(1);
 }
 
 enum ChangeStreamRecord_Record {
@@ -7726,7 +7726,7 @@ class DataChangeRecord_Mod extends $pb.GeneratedMessage {
 /// ChangeStream data change record.
 class DataChangeRecord extends $pb.GeneratedMessage {
   factory DataChangeRecord({
-    $1775.Timestamp? commitTime,
+    $1776.Timestamp? commitTime,
     $core.String? recordSequence,
     $core.String? transactionId,
     $core.bool? isLastRecord,
@@ -7787,7 +7787,7 @@ class DataChangeRecord extends $pb.GeneratedMessage {
   factory DataChangeRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataChangeRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'commitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'commitTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'recordSequence')
     ..aOS(3, _omitFieldNames ? '' : 'transactionId')
     ..aOB(4, _omitFieldNames ? '' : 'isLastRecord')
@@ -7826,15 +7826,15 @@ class DataChangeRecord extends $pb.GeneratedMessage {
 
   /// The timestamp in which the change was committed.
   @$pb.TagNumber(1)
-  $1775.Timestamp get commitTime => $_getN(0);
+  $1776.Timestamp get commitTime => $_getN(0);
   @$pb.TagNumber(1)
-  set commitTime($1775.Timestamp v) { setField(1, v); }
+  set commitTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommitTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommitTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCommitTime() => $_ensure(0);
+  $1776.Timestamp ensureCommitTime() => $_ensure(0);
 
   /// The sequence number for the record within the transaction.
   @$pb.TagNumber(2)
@@ -8011,7 +8011,7 @@ class ChildPartitionsRecord_ChildPartition extends $pb.GeneratedMessage {
 /// ChangeStream child partition record.
 class ChildPartitionsRecord extends $pb.GeneratedMessage {
   factory ChildPartitionsRecord({
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
     $core.String? recordSequence,
     $core.Iterable<ChildPartitionsRecord_ChildPartition>? childPartitions,
   }) {
@@ -8032,7 +8032,7 @@ class ChildPartitionsRecord extends $pb.GeneratedMessage {
   factory ChildPartitionsRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChildPartitionsRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'recordSequence')
     ..pc<ChildPartitionsRecord_ChildPartition>(3, _omitFieldNames ? '' : 'childPartitions', $pb.PbFieldType.PM, subBuilder: ChildPartitionsRecord_ChildPartition.create)
     ..hasRequiredFields = false
@@ -8062,15 +8062,15 @@ class ChildPartitionsRecord extends $pb.GeneratedMessage {
   /// Data change records returned from child partitions in this child partitions
   /// record will have a commit timestamp greater than or equal to start_time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// A monotonically increasing sequence number that can be used to define the
   /// ordering of the child partitions record when there are multiple child
@@ -8093,7 +8093,7 @@ class ChildPartitionsRecord extends $pb.GeneratedMessage {
 /// ChangeStream heartbeat record.
 class HeartbeatRecord extends $pb.GeneratedMessage {
   factory HeartbeatRecord({
-    $1775.Timestamp? heartbeatTime,
+    $1776.Timestamp? heartbeatTime,
   }) {
     final $result = create();
     if (heartbeatTime != null) {
@@ -8106,7 +8106,7 @@ class HeartbeatRecord extends $pb.GeneratedMessage {
   factory HeartbeatRecord.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HeartbeatRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.executor.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'heartbeatTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'heartbeatTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -8133,15 +8133,15 @@ class HeartbeatRecord extends $pb.GeneratedMessage {
 
   /// Timestamp for this heartbeat check.
   @$pb.TagNumber(1)
-  $1775.Timestamp get heartbeatTime => $_getN(0);
+  $1776.Timestamp get heartbeatTime => $_getN(0);
   @$pb.TagNumber(1)
-  set heartbeatTime($1775.Timestamp v) { setField(1, v); }
+  set heartbeatTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHeartbeatTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearHeartbeatTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureHeartbeatTime() => $_ensure(0);
+  $1776.Timestamp ensureHeartbeatTime() => $_ensure(0);
 }
 
 /// Options for Cloud Spanner Service.

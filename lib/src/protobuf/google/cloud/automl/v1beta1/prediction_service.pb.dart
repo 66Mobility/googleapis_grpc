@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'annotation_payload.pb.dart' as $4359;
-import 'data_items.pb.dart' as $4349;
-import 'io.pb.dart' as $4345;
+import 'annotation_payload.pb.dart' as $4360;
+import 'data_items.pb.dart' as $4350;
+import 'io.pb.dart' as $4346;
 
 /// Request message for [PredictionService.Predict][google.cloud.automl.v1beta1.PredictionService.Predict].
 class PredictRequest extends $pb.GeneratedMessage {
   factory PredictRequest({
     $core.String? name,
-    $4349.ExamplePayload? payload,
+    $4350.ExamplePayload? payload,
     $core.Map<$core.String, $core.String>? params,
   }) {
     final $result = create();
@@ -42,7 +42,7 @@ class PredictRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4349.ExamplePayload>(2, _omitFieldNames ? '' : 'payload', subBuilder: $4349.ExamplePayload.create)
+    ..aOM<$4350.ExamplePayload>(2, _omitFieldNames ? '' : 'payload', subBuilder: $4350.ExamplePayload.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'params', entryClassName: 'PredictRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.automl.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -81,15 +81,15 @@ class PredictRequest extends $pb.GeneratedMessage {
   /// Required. Payload to perform a prediction on. The payload must match the
   /// problem type that the model was trained to solve.
   @$pb.TagNumber(2)
-  $4349.ExamplePayload get payload => $_getN(1);
+  $4350.ExamplePayload get payload => $_getN(1);
   @$pb.TagNumber(2)
-  set payload($4349.ExamplePayload v) { setField(2, v); }
+  set payload($4350.ExamplePayload v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPayload() => $_has(1);
   @$pb.TagNumber(2)
   void clearPayload() => clearField(2);
   @$pb.TagNumber(2)
-  $4349.ExamplePayload ensurePayload() => $_ensure(1);
+  $4350.ExamplePayload ensurePayload() => $_ensure(1);
 
   ///  Additional domain-specific parameters, any string must be up to 25000
   ///  characters long.
@@ -118,9 +118,9 @@ class PredictRequest extends $pb.GeneratedMessage {
 /// Response message for [PredictionService.Predict][google.cloud.automl.v1beta1.PredictionService.Predict].
 class PredictResponse extends $pb.GeneratedMessage {
   factory PredictResponse({
-    $core.Iterable<$4359.AnnotationPayload>? payload,
+    $core.Iterable<$4360.AnnotationPayload>? payload,
     $core.Map<$core.String, $core.String>? metadata,
-    $4349.ExamplePayload? preprocessedInput,
+    $4350.ExamplePayload? preprocessedInput,
   }) {
     final $result = create();
     if (payload != null) {
@@ -139,9 +139,9 @@ class PredictResponse extends $pb.GeneratedMessage {
   factory PredictResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
-    ..pc<$4359.AnnotationPayload>(1, _omitFieldNames ? '' : 'payload', $pb.PbFieldType.PM, subBuilder: $4359.AnnotationPayload.create)
+    ..pc<$4360.AnnotationPayload>(1, _omitFieldNames ? '' : 'payload', $pb.PbFieldType.PM, subBuilder: $4360.AnnotationPayload.create)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'metadata', entryClassName: 'PredictResponse.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.automl.v1beta1'))
-    ..aOM<$4349.ExamplePayload>(3, _omitFieldNames ? '' : 'preprocessedInput', subBuilder: $4349.ExamplePayload.create)
+    ..aOM<$4350.ExamplePayload>(3, _omitFieldNames ? '' : 'preprocessedInput', subBuilder: $4350.ExamplePayload.create)
     ..hasRequiredFields = false
   ;
 
@@ -169,7 +169,7 @@ class PredictResponse extends $pb.GeneratedMessage {
   /// Prediction result.
   /// Translation and Text Sentiment will return precisely one payload.
   @$pb.TagNumber(1)
-  $core.List<$4359.AnnotationPayload> get payload => $_getList(0);
+  $core.List<$4360.AnnotationPayload> get payload => $_getList(0);
 
   ///  Additional domain-specific prediction response metadata.
   ///
@@ -195,23 +195,23 @@ class PredictResponse extends $pb.GeneratedMessage {
   ///   If the input is a .pdf file, the OCR'ed text will be provided in
   ///   [document_text][google.cloud.automl.v1beta1.Document.document_text].
   @$pb.TagNumber(3)
-  $4349.ExamplePayload get preprocessedInput => $_getN(2);
+  $4350.ExamplePayload get preprocessedInput => $_getN(2);
   @$pb.TagNumber(3)
-  set preprocessedInput($4349.ExamplePayload v) { setField(3, v); }
+  set preprocessedInput($4350.ExamplePayload v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPreprocessedInput() => $_has(2);
   @$pb.TagNumber(3)
   void clearPreprocessedInput() => clearField(3);
   @$pb.TagNumber(3)
-  $4349.ExamplePayload ensurePreprocessedInput() => $_ensure(2);
+  $4350.ExamplePayload ensurePreprocessedInput() => $_ensure(2);
 }
 
 /// Request message for [PredictionService.BatchPredict][google.cloud.automl.v1beta1.PredictionService.BatchPredict].
 class BatchPredictRequest extends $pb.GeneratedMessage {
   factory BatchPredictRequest({
     $core.String? name,
-    $4345.BatchPredictInputConfig? inputConfig,
-    $4345.BatchPredictOutputConfig? outputConfig,
+    $4346.BatchPredictInputConfig? inputConfig,
+    $4346.BatchPredictOutputConfig? outputConfig,
     $core.Map<$core.String, $core.String>? params,
   }) {
     final $result = create();
@@ -235,8 +235,8 @@ class BatchPredictRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchPredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4345.BatchPredictInputConfig>(3, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4345.BatchPredictInputConfig.create)
-    ..aOM<$4345.BatchPredictOutputConfig>(4, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4345.BatchPredictOutputConfig.create)
+    ..aOM<$4346.BatchPredictInputConfig>(3, _omitFieldNames ? '' : 'inputConfig', subBuilder: $4346.BatchPredictInputConfig.create)
+    ..aOM<$4346.BatchPredictOutputConfig>(4, _omitFieldNames ? '' : 'outputConfig', subBuilder: $4346.BatchPredictOutputConfig.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'params', entryClassName: 'BatchPredictRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.automl.v1beta1'))
     ..hasRequiredFields = false
   ;
@@ -274,28 +274,28 @@ class BatchPredictRequest extends $pb.GeneratedMessage {
 
   /// Required. The input configuration for batch prediction.
   @$pb.TagNumber(3)
-  $4345.BatchPredictInputConfig get inputConfig => $_getN(1);
+  $4346.BatchPredictInputConfig get inputConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set inputConfig($4345.BatchPredictInputConfig v) { setField(3, v); }
+  set inputConfig($4346.BatchPredictInputConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInputConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearInputConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4345.BatchPredictInputConfig ensureInputConfig() => $_ensure(1);
+  $4346.BatchPredictInputConfig ensureInputConfig() => $_ensure(1);
 
   /// Required. The Configuration specifying where output predictions should
   /// be written.
   @$pb.TagNumber(4)
-  $4345.BatchPredictOutputConfig get outputConfig => $_getN(2);
+  $4346.BatchPredictOutputConfig get outputConfig => $_getN(2);
   @$pb.TagNumber(4)
-  set outputConfig($4345.BatchPredictOutputConfig v) { setField(4, v); }
+  set outputConfig($4346.BatchPredictOutputConfig v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasOutputConfig() => $_has(2);
   @$pb.TagNumber(4)
   void clearOutputConfig() => clearField(4);
   @$pb.TagNumber(4)
-  $4345.BatchPredictOutputConfig ensureOutputConfig() => $_ensure(2);
+  $4346.BatchPredictOutputConfig ensureOutputConfig() => $_ensure(2);
 
   ///  Required. Additional domain-specific parameters for the predictions, any string must
   ///  be up to 25000 characters long.

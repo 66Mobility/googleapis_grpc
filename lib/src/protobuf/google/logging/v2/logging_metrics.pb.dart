@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/distribution.pb.dart' as $4181;
+import '../../api/distribution.pb.dart' as $4182;
 import '../../api/metric.pb.dart' as $1673;
-import '../../protobuf/timestamp.pb.dart' as $1775;
+import '../../protobuf/timestamp.pb.dart' as $1776;
 import 'logging_metrics.pbenum.dart';
 
 export 'logging_metrics.pbenum.dart';
@@ -37,9 +37,9 @@ class LogMetric extends $pb.GeneratedMessage {
     $1673.MetricDescriptor? metricDescriptor,
     $core.String? valueExtractor,
     $core.Map<$core.String, $core.String>? labelExtractors,
-    $4181.Distribution_BucketOptions? bucketOptions,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $4182.Distribution_BucketOptions? bucketOptions,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.bool? disabled,
     $core.String? bucketName,
   }) {
@@ -95,9 +95,9 @@ class LogMetric extends $pb.GeneratedMessage {
     ..aOM<$1673.MetricDescriptor>(5, _omitFieldNames ? '' : 'metricDescriptor', subBuilder: $1673.MetricDescriptor.create)
     ..aOS(6, _omitFieldNames ? '' : 'valueExtractor')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labelExtractors', entryClassName: 'LogMetric.LabelExtractorsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.logging.v2'))
-    ..aOM<$4181.Distribution_BucketOptions>(8, _omitFieldNames ? '' : 'bucketOptions', subBuilder: $4181.Distribution_BucketOptions.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4182.Distribution_BucketOptions>(8, _omitFieldNames ? '' : 'bucketOptions', subBuilder: $4182.Distribution_BucketOptions.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOB(12, _omitFieldNames ? '' : 'disabled')
     ..aOS(13, _omitFieldNames ? '' : 'bucketName')
     ..hasRequiredFields = false
@@ -270,43 +270,43 @@ class LogMetric extends $pb.GeneratedMessage {
   /// using a DISTRIBUTION value type and it describes the bucket boundaries
   /// used to create a histogram of the extracted values.
   @$pb.TagNumber(8)
-  $4181.Distribution_BucketOptions get bucketOptions => $_getN(7);
+  $4182.Distribution_BucketOptions get bucketOptions => $_getN(7);
   @$pb.TagNumber(8)
-  set bucketOptions($4181.Distribution_BucketOptions v) { setField(8, v); }
+  set bucketOptions($4182.Distribution_BucketOptions v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasBucketOptions() => $_has(7);
   @$pb.TagNumber(8)
   void clearBucketOptions() => clearField(8);
   @$pb.TagNumber(8)
-  $4181.Distribution_BucketOptions ensureBucketOptions() => $_ensure(7);
+  $4182.Distribution_BucketOptions ensureBucketOptions() => $_ensure(7);
 
   ///  Output only. The creation timestamp of the metric.
   ///
   ///  This field may not be present for older metrics.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   ///  Output only. The last update timestamp of the metric.
   ///
   ///  This field may not be present for older metrics.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Optional. If set to True, then this metric is disabled and it does not
   /// generate any points.

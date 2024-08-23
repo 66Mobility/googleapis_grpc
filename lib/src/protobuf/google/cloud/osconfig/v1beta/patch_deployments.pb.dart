@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/datetime.pb.dart' as $1801;
-import '../../../type/dayofweek.pbenum.dart' as $4321;
-import '../../../type/timeofday.pb.dart' as $4320;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/datetime.pb.dart' as $1802;
+import '../../../type/dayofweek.pbenum.dart' as $4322;
+import '../../../type/timeofday.pb.dart' as $4321;
 import 'patch_deployments.pbenum.dart';
 import 'patch_jobs.pb.dart' as $1191;
 
@@ -41,12 +41,12 @@ class PatchDeployment extends $pb.GeneratedMessage {
     $core.String? description,
     $1191.PatchInstanceFilter? instanceFilter,
     $1191.PatchConfig? patchConfig,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     OneTimeSchedule? oneTimeSchedule,
     RecurringSchedule? recurringSchedule,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? lastExecuteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? lastExecuteTime,
     $1191.PatchRollout? rollout,
     PatchDeployment_State? state,
   }) {
@@ -104,12 +104,12 @@ class PatchDeployment extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<$1191.PatchInstanceFilter>(3, _omitFieldNames ? '' : 'instanceFilter', subBuilder: $1191.PatchInstanceFilter.create)
     ..aOM<$1191.PatchConfig>(4, _omitFieldNames ? '' : 'patchConfig', subBuilder: $1191.PatchConfig.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aOM<OneTimeSchedule>(6, _omitFieldNames ? '' : 'oneTimeSchedule', subBuilder: OneTimeSchedule.create)
     ..aOM<RecurringSchedule>(7, _omitFieldNames ? '' : 'recurringSchedule', subBuilder: RecurringSchedule.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'lastExecuteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'lastExecuteTime', subBuilder: $1776.Timestamp.create)
     ..aOM<$1191.PatchRollout>(11, _omitFieldNames ? '' : 'rollout', subBuilder: $1191.PatchRollout.create)
     ..e<PatchDeployment_State>(12, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PatchDeployment_State.STATE_UNSPECIFIED, valueOf: PatchDeployment_State.valueOf, enumValues: PatchDeployment_State.values)
     ..hasRequiredFields = false
@@ -189,15 +189,15 @@ class PatchDeployment extends $pb.GeneratedMessage {
 
   /// Optional. Duration of the patch. After the duration ends, the patch times out.
   @$pb.TagNumber(5)
-  $1737.Duration get duration => $_getN(4);
+  $1738.Duration get duration => $_getN(4);
   @$pb.TagNumber(5)
-  set duration($1737.Duration v) { setField(5, v); }
+  set duration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureDuration() => $_ensure(4);
+  $1738.Duration ensureDuration() => $_ensure(4);
 
   /// Required. Schedule a one-time execution.
   @$pb.TagNumber(6)
@@ -226,42 +226,42 @@ class PatchDeployment extends $pb.GeneratedMessage {
   /// Output only. Time the patch deployment was created. Timestamp is in
   /// [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Time the patch deployment was last updated. Timestamp is in
   /// [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. The last time a patch job was started by this deployment.
   /// Timestamp is in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text
   /// format.
   @$pb.TagNumber(10)
-  $1775.Timestamp get lastExecuteTime => $_getN(9);
+  $1776.Timestamp get lastExecuteTime => $_getN(9);
   @$pb.TagNumber(10)
-  set lastExecuteTime($1775.Timestamp v) { setField(10, v); }
+  set lastExecuteTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasLastExecuteTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearLastExecuteTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureLastExecuteTime() => $_ensure(9);
+  $1776.Timestamp ensureLastExecuteTime() => $_ensure(9);
 
   /// Optional. Rollout strategy of the patch job.
   @$pb.TagNumber(11)
@@ -290,7 +290,7 @@ class PatchDeployment extends $pb.GeneratedMessage {
 /// [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
 class OneTimeSchedule extends $pb.GeneratedMessage {
   factory OneTimeSchedule({
-    $1775.Timestamp? executeTime,
+    $1776.Timestamp? executeTime,
   }) {
     final $result = create();
     if (executeTime != null) {
@@ -303,7 +303,7 @@ class OneTimeSchedule extends $pb.GeneratedMessage {
   factory OneTimeSchedule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OneTimeSchedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'executeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'executeTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -330,15 +330,15 @@ class OneTimeSchedule extends $pb.GeneratedMessage {
 
   /// Required. The desired patch job execution time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get executeTime => $_getN(0);
+  $1776.Timestamp get executeTime => $_getN(0);
   @$pb.TagNumber(1)
-  set executeTime($1775.Timestamp v) { setField(1, v); }
+  set executeTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasExecuteTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearExecuteTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureExecuteTime() => $_ensure(0);
+  $1776.Timestamp ensureExecuteTime() => $_ensure(0);
 }
 
 enum RecurringSchedule_ScheduleConfig {
@@ -350,15 +350,15 @@ enum RecurringSchedule_ScheduleConfig {
 /// Sets the time for recurring patch deployments.
 class RecurringSchedule extends $pb.GeneratedMessage {
   factory RecurringSchedule({
-    $1801.TimeZone? timeZone,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $4320.TimeOfDay? timeOfDay,
+    $1802.TimeZone? timeZone,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $4321.TimeOfDay? timeOfDay,
     RecurringSchedule_Frequency? frequency,
     WeeklySchedule? weekly,
     MonthlySchedule? monthly,
-    $1775.Timestamp? lastExecuteTime,
-    $1775.Timestamp? nextExecuteTime,
+    $1776.Timestamp? lastExecuteTime,
+    $1776.Timestamp? nextExecuteTime,
   }) {
     final $result = create();
     if (timeZone != null) {
@@ -401,15 +401,15 @@ class RecurringSchedule extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecurringSchedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1beta'), createEmptyInstance: create)
     ..oo(0, [6, 7])
-    ..aOM<$1801.TimeZone>(1, _omitFieldNames ? '' : 'timeZone', subBuilder: $1801.TimeZone.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4320.TimeOfDay>(4, _omitFieldNames ? '' : 'timeOfDay', subBuilder: $4320.TimeOfDay.create)
+    ..aOM<$1802.TimeZone>(1, _omitFieldNames ? '' : 'timeZone', subBuilder: $1802.TimeZone.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4321.TimeOfDay>(4, _omitFieldNames ? '' : 'timeOfDay', subBuilder: $4321.TimeOfDay.create)
     ..e<RecurringSchedule_Frequency>(5, _omitFieldNames ? '' : 'frequency', $pb.PbFieldType.OE, defaultOrMaker: RecurringSchedule_Frequency.FREQUENCY_UNSPECIFIED, valueOf: RecurringSchedule_Frequency.valueOf, enumValues: RecurringSchedule_Frequency.values)
     ..aOM<WeeklySchedule>(6, _omitFieldNames ? '' : 'weekly', subBuilder: WeeklySchedule.create)
     ..aOM<MonthlySchedule>(7, _omitFieldNames ? '' : 'monthly', subBuilder: MonthlySchedule.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'lastExecuteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'nextExecuteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'lastExecuteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'nextExecuteTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -440,53 +440,53 @@ class RecurringSchedule extends $pb.GeneratedMessage {
   /// Required. Defines the time zone that `time_of_day` is relative to.
   /// The rules for daylight saving time are determined by the chosen time zone.
   @$pb.TagNumber(1)
-  $1801.TimeZone get timeZone => $_getN(0);
+  $1802.TimeZone get timeZone => $_getN(0);
   @$pb.TagNumber(1)
-  set timeZone($1801.TimeZone v) { setField(1, v); }
+  set timeZone($1802.TimeZone v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeZone() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeZone() => clearField(1);
   @$pb.TagNumber(1)
-  $1801.TimeZone ensureTimeZone() => $_ensure(0);
+  $1802.TimeZone ensureTimeZone() => $_ensure(0);
 
   /// Optional. The time that the recurring schedule becomes effective.
   /// Defaults to `create_time` of the patch deployment.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Optional. The end time at which a recurring patch deployment schedule is no longer
   /// active.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Required. Time of the day to run a recurring deployment.
   @$pb.TagNumber(4)
-  $4320.TimeOfDay get timeOfDay => $_getN(3);
+  $4321.TimeOfDay get timeOfDay => $_getN(3);
   @$pb.TagNumber(4)
-  set timeOfDay($4320.TimeOfDay v) { setField(4, v); }
+  set timeOfDay($4321.TimeOfDay v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeOfDay() => $_has(3);
   @$pb.TagNumber(4)
   void clearTimeOfDay() => clearField(4);
   @$pb.TagNumber(4)
-  $4320.TimeOfDay ensureTimeOfDay() => $_ensure(3);
+  $4321.TimeOfDay ensureTimeOfDay() => $_ensure(3);
 
   /// Required. The frequency unit of this recurring schedule.
   @$pb.TagNumber(5)
@@ -524,33 +524,33 @@ class RecurringSchedule extends $pb.GeneratedMessage {
 
   /// Output only. The time the last patch job ran successfully.
   @$pb.TagNumber(9)
-  $1775.Timestamp get lastExecuteTime => $_getN(7);
+  $1776.Timestamp get lastExecuteTime => $_getN(7);
   @$pb.TagNumber(9)
-  set lastExecuteTime($1775.Timestamp v) { setField(9, v); }
+  set lastExecuteTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasLastExecuteTime() => $_has(7);
   @$pb.TagNumber(9)
   void clearLastExecuteTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureLastExecuteTime() => $_ensure(7);
+  $1776.Timestamp ensureLastExecuteTime() => $_ensure(7);
 
   /// Output only. The time the next patch job is scheduled to run.
   @$pb.TagNumber(10)
-  $1775.Timestamp get nextExecuteTime => $_getN(8);
+  $1776.Timestamp get nextExecuteTime => $_getN(8);
   @$pb.TagNumber(10)
-  set nextExecuteTime($1775.Timestamp v) { setField(10, v); }
+  set nextExecuteTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasNextExecuteTime() => $_has(8);
   @$pb.TagNumber(10)
   void clearNextExecuteTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureNextExecuteTime() => $_ensure(8);
+  $1776.Timestamp ensureNextExecuteTime() => $_ensure(8);
 }
 
 /// Represents a weekly schedule.
 class WeeklySchedule extends $pb.GeneratedMessage {
   factory WeeklySchedule({
-    $4321.DayOfWeek? dayOfWeek,
+    $4322.DayOfWeek? dayOfWeek,
   }) {
     final $result = create();
     if (dayOfWeek != null) {
@@ -563,7 +563,7 @@ class WeeklySchedule extends $pb.GeneratedMessage {
   factory WeeklySchedule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WeeklySchedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1beta'), createEmptyInstance: create)
-    ..e<$4321.DayOfWeek>(1, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $4321.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4321.DayOfWeek.valueOf, enumValues: $4321.DayOfWeek.values)
+    ..e<$4322.DayOfWeek>(1, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $4322.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4322.DayOfWeek.valueOf, enumValues: $4322.DayOfWeek.values)
     ..hasRequiredFields = false
   ;
 
@@ -590,9 +590,9 @@ class WeeklySchedule extends $pb.GeneratedMessage {
 
   /// Required. Day of the week.
   @$pb.TagNumber(1)
-  $4321.DayOfWeek get dayOfWeek => $_getN(0);
+  $4322.DayOfWeek get dayOfWeek => $_getN(0);
   @$pb.TagNumber(1)
-  set dayOfWeek($4321.DayOfWeek v) { setField(1, v); }
+  set dayOfWeek($4322.DayOfWeek v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDayOfWeek() => $_has(0);
   @$pb.TagNumber(1)
@@ -691,7 +691,7 @@ class MonthlySchedule extends $pb.GeneratedMessage {
 class WeekDayOfMonth extends $pb.GeneratedMessage {
   factory WeekDayOfMonth({
     $core.int? weekOrdinal,
-    $4321.DayOfWeek? dayOfWeek,
+    $4322.DayOfWeek? dayOfWeek,
     $core.int? dayOffset,
   }) {
     final $result = create();
@@ -712,7 +712,7 @@ class WeekDayOfMonth extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WeekDayOfMonth', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1beta'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'weekOrdinal', $pb.PbFieldType.O3)
-    ..e<$4321.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $4321.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4321.DayOfWeek.valueOf, enumValues: $4321.DayOfWeek.values)
+    ..e<$4322.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $4322.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $4322.DayOfWeek.valueOf, enumValues: $4322.DayOfWeek.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'dayOffset', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -751,9 +751,9 @@ class WeekDayOfMonth extends $pb.GeneratedMessage {
 
   /// Required. A day of the week.
   @$pb.TagNumber(2)
-  $4321.DayOfWeek get dayOfWeek => $_getN(1);
+  $4322.DayOfWeek get dayOfWeek => $_getN(1);
   @$pb.TagNumber(2)
-  set dayOfWeek($4321.DayOfWeek v) { setField(2, v); }
+  set dayOfWeek($4322.DayOfWeek v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDayOfWeek() => $_has(1);
   @$pb.TagNumber(2)
@@ -1121,7 +1121,7 @@ class DeletePatchDeploymentRequest extends $pb.GeneratedMessage {
 class UpdatePatchDeploymentRequest extends $pb.GeneratedMessage {
   factory UpdatePatchDeploymentRequest({
     PatchDeployment? patchDeployment,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (patchDeployment != null) {
@@ -1138,7 +1138,7 @@ class UpdatePatchDeploymentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePatchDeploymentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1beta'), createEmptyInstance: create)
     ..aOM<PatchDeployment>(1, _omitFieldNames ? '' : 'patchDeployment', subBuilder: PatchDeployment.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1178,15 +1178,15 @@ class UpdatePatchDeploymentRequest extends $pb.GeneratedMessage {
   /// Optional. Field mask that controls which fields of the patch deployment should be
   /// updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A request message for pausing a patch deployment.

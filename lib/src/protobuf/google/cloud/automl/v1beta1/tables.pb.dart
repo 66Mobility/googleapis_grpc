@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'column_spec.pb.dart' as $680;
-import 'data_stats.pb.dart' as $4344;
-import 'ranges.pb.dart' as $4347;
+import 'data_stats.pb.dart' as $4345;
+import 'ranges.pb.dart' as $4348;
 
 /// Metadata for a dataset used for AutoML Tables.
 class TablesDatasetMetadata extends $pb.GeneratedMessage {
@@ -27,8 +27,8 @@ class TablesDatasetMetadata extends $pb.GeneratedMessage {
     $core.String? targetColumnSpecId,
     $core.String? weightColumnSpecId,
     $core.String? mlUseColumnSpecId,
-    $core.Map<$core.String, $4344.CorrelationStats>? targetColumnCorrelations,
-    $1775.Timestamp? statsUpdateTime,
+    $core.Map<$core.String, $4345.CorrelationStats>? targetColumnCorrelations,
+    $1776.Timestamp? statsUpdateTime,
   }) {
     final $result = create();
     if (primaryTableSpecId != null) {
@@ -60,8 +60,8 @@ class TablesDatasetMetadata extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'targetColumnSpecId')
     ..aOS(3, _omitFieldNames ? '' : 'weightColumnSpecId')
     ..aOS(4, _omitFieldNames ? '' : 'mlUseColumnSpecId')
-    ..m<$core.String, $4344.CorrelationStats>(6, _omitFieldNames ? '' : 'targetColumnCorrelations', entryClassName: 'TablesDatasetMetadata.TargetColumnCorrelationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4344.CorrelationStats.create, valueDefaultOrMaker: $4344.CorrelationStats.getDefault, packageName: const $pb.PackageName('google.cloud.automl.v1beta1'))
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'statsUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..m<$core.String, $4345.CorrelationStats>(6, _omitFieldNames ? '' : 'targetColumnCorrelations', entryClassName: 'TablesDatasetMetadata.TargetColumnCorrelationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4345.CorrelationStats.create, valueDefaultOrMaker: $4345.CorrelationStats.getDefault, packageName: const $pb.PackageName('google.cloud.automl.v1beta1'))
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'statsUpdateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -170,7 +170,7 @@ class TablesDatasetMetadata extends $pb.GeneratedMessage {
   ///  This field may be stale, see the stats_update_time field for
   ///  for the timestamp at which these stats were last updated.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $4344.CorrelationStats> get targetColumnCorrelations => $_getMap(4);
+  $core.Map<$core.String, $4345.CorrelationStats> get targetColumnCorrelations => $_getMap(4);
 
   /// Output only. The most recent timestamp when target_column_correlations
   /// field and all descendant ColumnSpec.data_stats and
@@ -179,15 +179,15 @@ class TablesDatasetMetadata extends $pb.GeneratedMessage {
   /// fields values. The regeneration happens in the background on a best effort
   /// basis.
   @$pb.TagNumber(7)
-  $1775.Timestamp get statsUpdateTime => $_getN(5);
+  $1776.Timestamp get statsUpdateTime => $_getN(5);
   @$pb.TagNumber(7)
-  set statsUpdateTime($1775.Timestamp v) { setField(7, v); }
+  set statsUpdateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasStatsUpdateTime() => $_has(5);
   @$pb.TagNumber(7)
   void clearStatsUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureStatsUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureStatsUpdateTime() => $_ensure(5);
 }
 
 enum TablesModelMetadata_AdditionalOptimizationObjectiveConfig {
@@ -444,9 +444,9 @@ class TablesModelMetadata extends $pb.GeneratedMessage {
 class TablesAnnotation extends $pb.GeneratedMessage {
   factory TablesAnnotation({
     $core.double? score,
-    $1734.Value? value,
+    $1735.Value? value,
     $core.Iterable<TablesModelColumnInfo>? tablesModelColumnInfo,
-    $4347.DoubleRange? predictionInterval,
+    $4348.DoubleRange? predictionInterval,
     $core.double? baselineScore,
   }) {
     final $result = create();
@@ -473,9 +473,9 @@ class TablesAnnotation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TablesAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $1735.Value.create)
     ..pc<TablesModelColumnInfo>(3, _omitFieldNames ? '' : 'tablesModelColumnInfo', $pb.PbFieldType.PM, subBuilder: TablesModelColumnInfo.create)
-    ..aOM<$4347.DoubleRange>(4, _omitFieldNames ? '' : 'predictionInterval', subBuilder: $4347.DoubleRange.create)
+    ..aOM<$4348.DoubleRange>(4, _omitFieldNames ? '' : 'predictionInterval', subBuilder: $4348.DoubleRange.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'baselineScore', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -526,15 +526,15 @@ class TablesAnnotation extends $pb.GeneratedMessage {
   ///
   ///  * FLOAT64 - the predicted (with above `prediction_interval`) FLOAT64 value.
   @$pb.TagNumber(2)
-  $1734.Value get value => $_getN(1);
+  $1735.Value get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($1734.Value v) { setField(2, v); }
+  set value($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureValue() => $_ensure(1);
+  $1735.Value ensureValue() => $_ensure(1);
 
   ///  Output only. Auxiliary information for each of the model's
   ///
@@ -556,15 +556,15 @@ class TablesAnnotation extends $pb.GeneratedMessage {
   ///  has FLOAT64 data type. An interval in which the exactly correct target
   ///  value has 95% chance to be in.
   @$pb.TagNumber(4)
-  $4347.DoubleRange get predictionInterval => $_getN(3);
+  $4348.DoubleRange get predictionInterval => $_getN(3);
   @$pb.TagNumber(4)
-  set predictionInterval($4347.DoubleRange v) { setField(4, v); }
+  set predictionInterval($4348.DoubleRange v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPredictionInterval() => $_has(3);
   @$pb.TagNumber(4)
   void clearPredictionInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $4347.DoubleRange ensurePredictionInterval() => $_ensure(3);
+  $4348.DoubleRange ensurePredictionInterval() => $_ensure(3);
 
   /// Output only. Stores the prediction score for the baseline example, which
   /// is defined as the example with all values set to their baseline values.

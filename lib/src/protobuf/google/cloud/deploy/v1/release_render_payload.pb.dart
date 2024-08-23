@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'cloud_deploy.pbenum.dart' as $844;
-import 'log_enums.pbenum.dart' as $4472;
+import 'log_enums.pbenum.dart' as $4474;
 
 /// Payload proto for "clouddeploy.googleapis.com/release_render"
 /// Platform Log event that describes the render status change.
@@ -24,7 +24,7 @@ class ReleaseRenderEvent extends $pb.GeneratedMessage {
     $core.String? release,
     $844.Release_RenderState? releaseRenderState,
     $core.String? pipelineUid,
-    $4472.Type? type,
+    $4474.Type? type,
   }) {
     final $result = create();
     if (message != null) {
@@ -53,7 +53,7 @@ class ReleaseRenderEvent extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'release')
     ..e<$844.Release_RenderState>(3, _omitFieldNames ? '' : 'releaseRenderState', $pb.PbFieldType.OE, defaultOrMaker: $844.Release_RenderState.RENDER_STATE_UNSPECIFIED, valueOf: $844.Release_RenderState.valueOf, enumValues: $844.Release_RenderState.values)
     ..aOS(4, _omitFieldNames ? '' : 'pipelineUid')
-    ..e<$4472.Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4472.Type.TYPE_UNSPECIFIED, valueOf: $4472.Type.valueOf, enumValues: $4472.Type.values)
+    ..e<$4474.Type>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4474.Type.TYPE_UNSPECIFIED, valueOf: $4474.Type.valueOf, enumValues: $4474.Type.values)
     ..hasRequiredFields = false
   ;
 
@@ -123,9 +123,9 @@ class ReleaseRenderEvent extends $pb.GeneratedMessage {
 
   /// Type of this notification, e.g. for a release render state change event.
   @$pb.TagNumber(5)
-  $4472.Type get type => $_getN(4);
+  $4474.Type get type => $_getN(4);
   @$pb.TagNumber(5)
-  set type($4472.Type v) { setField(5, v); }
+  set type($4474.Type v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(5)

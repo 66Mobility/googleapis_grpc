@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'applied_label.pb.dart' as $1805;
-import 'size.pb.dart' as $1802;
+import 'applied_label.pb.dart' as $1806;
+import 'size.pb.dart' as $1803;
 
 /// Describes a slot that a creative is expected to fill. This is used in
 /// forecasting and to validate that the correct creatives are associated with
 /// the line item.
 class CreativePlaceholder extends $pb.GeneratedMessage {
   factory CreativePlaceholder({
-    $1802.Size? size,
-    $core.Iterable<$1802.Size>? companionSizes,
+    $1803.Size? size,
+    $core.Iterable<$1803.Size>? companionSizes,
     $core.int? expectedCreativeCount,
-    $core.Iterable<$1805.AppliedLabel>? appliedLabels,
+    $core.Iterable<$1806.AppliedLabel>? appliedLabels,
     $core.bool? ampOnly,
     $core.String? creativeTargetingDisplayName,
   }) {
@@ -54,10 +54,10 @@ class CreativePlaceholder extends $pb.GeneratedMessage {
   factory CreativePlaceholder.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreativePlaceholder', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.admanager.v1'), createEmptyInstance: create)
-    ..aOM<$1802.Size>(1, _omitFieldNames ? '' : 'size', subBuilder: $1802.Size.create)
-    ..pc<$1802.Size>(2, _omitFieldNames ? '' : 'companionSizes', $pb.PbFieldType.PM, subBuilder: $1802.Size.create)
+    ..aOM<$1803.Size>(1, _omitFieldNames ? '' : 'size', subBuilder: $1803.Size.create)
+    ..pc<$1803.Size>(2, _omitFieldNames ? '' : 'companionSizes', $pb.PbFieldType.PM, subBuilder: $1803.Size.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'expectedCreativeCount', $pb.PbFieldType.O3)
-    ..pc<$1805.AppliedLabel>(4, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1805.AppliedLabel.create)
+    ..pc<$1806.AppliedLabel>(4, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1806.AppliedLabel.create)
     ..aOB(5, _omitFieldNames ? '' : 'ampOnly')
     ..aOS(6, _omitFieldNames ? '' : 'creativeTargetingDisplayName')
     ..hasRequiredFields = false
@@ -86,15 +86,15 @@ class CreativePlaceholder extends $pb.GeneratedMessage {
 
   /// Required. The size that the creative is expected to have.
   @$pb.TagNumber(1)
-  $1802.Size get size => $_getN(0);
+  $1803.Size get size => $_getN(0);
   @$pb.TagNumber(1)
-  set size($1802.Size v) { setField(1, v); }
+  set size($1803.Size v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSize() => $_has(0);
   @$pb.TagNumber(1)
   void clearSize() => clearField(1);
   @$pb.TagNumber(1)
-  $1802.Size ensureSize() => $_ensure(0);
+  $1803.Size ensureSize() => $_ensure(0);
 
   /// The companions that the creative is expected to have. This attribute can
   /// only be set if the line item it belongs to has an
@@ -102,7 +102,7 @@ class CreativePlaceholder extends $pb.GeneratedMessage {
   /// of VIDEO_PLAYER or [roadblocking_type][LineItem.roadblocking_type] of
   /// CREATIVE_SET.
   @$pb.TagNumber(2)
-  $core.List<$1802.Size> get companionSizes => $_getList(1);
+  $core.List<$1803.Size> get companionSizes => $_getList(1);
 
   /// Expected number of creatives that will be uploaded corresponding to this
   /// creative placeholder.  This estimate is used to improve the accuracy of
@@ -119,7 +119,7 @@ class CreativePlaceholder extends $pb.GeneratedMessage {
 
   /// Set of labels applied directly to this CreativePlaceholder.
   @$pb.TagNumber(4)
-  $core.List<$1805.AppliedLabel> get appliedLabels => $_getList(3);
+  $core.List<$1806.AppliedLabel> get appliedLabels => $_getList(3);
 
   /// Indicates if the expected creative of this placeholder has an AMP only
   /// variant. This is used to improve the accuracy of forecasting and has no

@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'deployed_model_ref.pb.dart' as $4238;
-import 'encryption_spec.pb.dart' as $4240;
-import 'env_var.pb.dart' as $4241;
-import 'explanation.pb.dart' as $4239;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'deployed_model_ref.pb.dart' as $4239;
+import 'encryption_spec.pb.dart' as $4241;
+import 'env_var.pb.dart' as $4242;
+import 'explanation.pb.dart' as $4240;
 import 'model.pbenum.dart';
 
 export 'model.pbenum.dart';
@@ -391,27 +391,27 @@ class Model extends $pb.GeneratedMessage {
     $core.String? description,
     PredictSchemata? predictSchemata,
     $core.String? metadataSchemaUri,
-    $1734.Value? metadata,
+    $1735.Value? metadata,
     $core.String? trainingPipeline,
     ModelContainerSpec? containerSpec,
     $core.Iterable<Model_DeploymentResourcesType>? supportedDeploymentResourcesTypes,
     $core.Iterable<$core.String>? supportedInputStorageFormats,
     $core.Iterable<$core.String>? supportedOutputStorageFormats,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $core.Iterable<$4238.DeployedModelRef>? deployedModels,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $core.Iterable<$4239.DeployedModelRef>? deployedModels,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
     $core.Iterable<Model_ExportFormat>? supportedExportFormats,
     Model_DataStats? dataStats,
-    $4239.ExplanationSpec? explanationSpec,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4240.ExplanationSpec? explanationSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.String? artifactUri,
     $core.String? versionId,
     $core.Iterable<$core.String>? versionAliases,
     $core.String? versionDescription,
-    $1775.Timestamp? versionCreateTime,
-    $1775.Timestamp? versionUpdateTime,
+    $1776.Timestamp? versionCreateTime,
+    $1776.Timestamp? versionUpdateTime,
     Model_OriginalModelInfo? originalModelInfo,
     ModelSourceInfo? modelSourceInfo,
     $core.String? metadataArtifact,
@@ -532,27 +532,27 @@ class Model extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<PredictSchemata>(4, _omitFieldNames ? '' : 'predictSchemata', subBuilder: PredictSchemata.create)
     ..aOS(5, _omitFieldNames ? '' : 'metadataSchemaUri')
-    ..aOM<$1734.Value>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Value.create)
     ..aOS(7, _omitFieldNames ? '' : 'trainingPipeline')
     ..aOM<ModelContainerSpec>(9, _omitFieldNames ? '' : 'containerSpec', subBuilder: ModelContainerSpec.create)
     ..pc<Model_DeploymentResourcesType>(10, _omitFieldNames ? '' : 'supportedDeploymentResourcesTypes', $pb.PbFieldType.KE, valueOf: Model_DeploymentResourcesType.valueOf, enumValues: Model_DeploymentResourcesType.values, defaultEnumValue: Model_DeploymentResourcesType.DEPLOYMENT_RESOURCES_TYPE_UNSPECIFIED)
     ..pPS(11, _omitFieldNames ? '' : 'supportedInputStorageFormats')
     ..pPS(12, _omitFieldNames ? '' : 'supportedOutputStorageFormats')
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$4238.DeployedModelRef>(15, _omitFieldNames ? '' : 'deployedModels', $pb.PbFieldType.PM, subBuilder: $4238.DeployedModelRef.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$4239.DeployedModelRef>(15, _omitFieldNames ? '' : 'deployedModels', $pb.PbFieldType.PM, subBuilder: $4239.DeployedModelRef.create)
     ..aOS(16, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(17, _omitFieldNames ? '' : 'labels', entryClassName: 'Model.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..pc<Model_ExportFormat>(20, _omitFieldNames ? '' : 'supportedExportFormats', $pb.PbFieldType.PM, subBuilder: Model_ExportFormat.create)
     ..aOM<Model_DataStats>(21, _omitFieldNames ? '' : 'dataStats', subBuilder: Model_DataStats.create)
-    ..aOM<$4239.ExplanationSpec>(23, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4239.ExplanationSpec.create)
-    ..aOM<$4240.EncryptionSpec>(24, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4240.ExplanationSpec>(23, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4240.ExplanationSpec.create)
+    ..aOM<$4241.EncryptionSpec>(24, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOS(26, _omitFieldNames ? '' : 'artifactUri')
     ..aOS(28, _omitFieldNames ? '' : 'versionId')
     ..pPS(29, _omitFieldNames ? '' : 'versionAliases')
     ..aOS(30, _omitFieldNames ? '' : 'versionDescription')
-    ..aOM<$1775.Timestamp>(31, _omitFieldNames ? '' : 'versionCreateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(32, _omitFieldNames ? '' : 'versionUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(31, _omitFieldNames ? '' : 'versionCreateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(32, _omitFieldNames ? '' : 'versionUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<Model_OriginalModelInfo>(34, _omitFieldNames ? '' : 'originalModelInfo', subBuilder: Model_OriginalModelInfo.create)
     ..aOM<ModelSourceInfo>(38, _omitFieldNames ? '' : 'modelSourceInfo', subBuilder: ModelSourceInfo.create)
     ..aOS(44, _omitFieldNames ? '' : 'metadataArtifact')
@@ -656,15 +656,15 @@ class Model extends $pb.GeneratedMessage {
   /// [metadata_schema][google.cloud.aiplatform.v1.Model.metadata_schema_uri].
   /// Unset if the Model does not have any additional information.
   @$pb.TagNumber(6)
-  $1734.Value get metadata => $_getN(5);
+  $1735.Value get metadata => $_getN(5);
   @$pb.TagNumber(6)
-  set metadata($1734.Value v) { setField(6, v); }
+  set metadata($1735.Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMetadata() => $_has(5);
   @$pb.TagNumber(6)
   void clearMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Value ensureMetadata() => $_ensure(5);
+  $1735.Value ensureMetadata() => $_ensure(5);
 
   /// Output only. The resource name of the TrainingPipeline that uploaded this
   /// Model, if any.
@@ -805,32 +805,32 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Model was uploaded into Vertex AI.
   @$pb.TagNumber(13)
-  $1775.Timestamp get createTime => $_getN(11);
+  $1776.Timestamp get createTime => $_getN(11);
   @$pb.TagNumber(13)
-  set createTime($1775.Timestamp v) { setField(13, v); }
+  set createTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCreateTime() => $_has(11);
   @$pb.TagNumber(13)
   void clearCreateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureCreateTime() => $_ensure(11);
+  $1776.Timestamp ensureCreateTime() => $_ensure(11);
 
   /// Output only. Timestamp when this Model was most recently updated.
   @$pb.TagNumber(14)
-  $1775.Timestamp get updateTime => $_getN(12);
+  $1776.Timestamp get updateTime => $_getN(12);
   @$pb.TagNumber(14)
-  set updateTime($1775.Timestamp v) { setField(14, v); }
+  set updateTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasUpdateTime() => $_has(12);
   @$pb.TagNumber(14)
   void clearUpdateTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(12);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(12);
 
   /// Output only. The pointers to DeployedModels created from this Model. Note
   /// that Model could have been deployed to Endpoints in different Locations.
   @$pb.TagNumber(15)
-  $core.List<$4238.DeployedModelRef> get deployedModels => $_getList(13);
+  $core.List<$4239.DeployedModelRef> get deployedModels => $_getList(13);
 
   /// Used to perform consistent read-modify-write updates. If not set, a blind
   /// "overwrite" update happens.
@@ -905,28 +905,28 @@ class Model extends $pb.GeneratedMessage {
   ///  [explanation_spec][google.cloud.aiplatform.v1.BatchPredictionJob.explanation_spec]
   ///  of [BatchPredictionJob][google.cloud.aiplatform.v1.BatchPredictionJob].
   @$pb.TagNumber(23)
-  $4239.ExplanationSpec get explanationSpec => $_getN(18);
+  $4240.ExplanationSpec get explanationSpec => $_getN(18);
   @$pb.TagNumber(23)
-  set explanationSpec($4239.ExplanationSpec v) { setField(23, v); }
+  set explanationSpec($4240.ExplanationSpec v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasExplanationSpec() => $_has(18);
   @$pb.TagNumber(23)
   void clearExplanationSpec() => clearField(23);
   @$pb.TagNumber(23)
-  $4239.ExplanationSpec ensureExplanationSpec() => $_ensure(18);
+  $4240.ExplanationSpec ensureExplanationSpec() => $_ensure(18);
 
   /// Customer-managed encryption key spec for a Model. If set, this
   /// Model and all sub-resources of this Model will be secured by this key.
   @$pb.TagNumber(24)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(19);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(19);
   @$pb.TagNumber(24)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(24, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasEncryptionSpec() => $_has(19);
   @$pb.TagNumber(24)
   void clearEncryptionSpec() => clearField(24);
   @$pb.TagNumber(24)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(19);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(19);
 
   /// Immutable. The path to the directory containing the Model artifact and any
   /// of its supporting files. Not required for AutoML Models.
@@ -976,27 +976,27 @@ class Model extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this version was created.
   @$pb.TagNumber(31)
-  $1775.Timestamp get versionCreateTime => $_getN(24);
+  $1776.Timestamp get versionCreateTime => $_getN(24);
   @$pb.TagNumber(31)
-  set versionCreateTime($1775.Timestamp v) { setField(31, v); }
+  set versionCreateTime($1776.Timestamp v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasVersionCreateTime() => $_has(24);
   @$pb.TagNumber(31)
   void clearVersionCreateTime() => clearField(31);
   @$pb.TagNumber(31)
-  $1775.Timestamp ensureVersionCreateTime() => $_ensure(24);
+  $1776.Timestamp ensureVersionCreateTime() => $_ensure(24);
 
   /// Output only. Timestamp when this version was most recently updated.
   @$pb.TagNumber(32)
-  $1775.Timestamp get versionUpdateTime => $_getN(25);
+  $1776.Timestamp get versionUpdateTime => $_getN(25);
   @$pb.TagNumber(32)
-  set versionUpdateTime($1775.Timestamp v) { setField(32, v); }
+  set versionUpdateTime($1776.Timestamp v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasVersionUpdateTime() => $_has(25);
   @$pb.TagNumber(32)
   void clearVersionUpdateTime() => clearField(32);
   @$pb.TagNumber(32)
-  $1775.Timestamp ensureVersionUpdateTime() => $_ensure(25);
+  $1776.Timestamp ensureVersionUpdateTime() => $_ensure(25);
 
   /// Output only. If this Model is a copy of another Model, this contains info
   /// about the original.
@@ -1371,12 +1371,12 @@ class ModelContainerSpec extends $pb.GeneratedMessage {
     $core.String? imageUri,
     $core.Iterable<$core.String>? command,
     $core.Iterable<$core.String>? args,
-    $core.Iterable<$4241.EnvVar>? env,
+    $core.Iterable<$4242.EnvVar>? env,
     $core.Iterable<Port>? ports,
     $core.String? predictRoute,
     $core.String? healthRoute,
     $core.Iterable<Port>? grpcPorts,
-    $1737.Duration? deploymentTimeout,
+    $1738.Duration? deploymentTimeout,
     $fixnum.Int64? sharedMemorySizeMb,
     Probe? startupProbe,
     Probe? healthProbe,
@@ -1428,12 +1428,12 @@ class ModelContainerSpec extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'imageUri')
     ..pPS(2, _omitFieldNames ? '' : 'command')
     ..pPS(3, _omitFieldNames ? '' : 'args')
-    ..pc<$4241.EnvVar>(4, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4241.EnvVar.create)
+    ..pc<$4242.EnvVar>(4, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4242.EnvVar.create)
     ..pc<Port>(5, _omitFieldNames ? '' : 'ports', $pb.PbFieldType.PM, subBuilder: Port.create)
     ..aOS(6, _omitFieldNames ? '' : 'predictRoute')
     ..aOS(7, _omitFieldNames ? '' : 'healthRoute')
     ..pc<Port>(9, _omitFieldNames ? '' : 'grpcPorts', $pb.PbFieldType.PM, subBuilder: Port.create)
-    ..aOM<$1737.Duration>(10, _omitFieldNames ? '' : 'deploymentTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(10, _omitFieldNames ? '' : 'deploymentTimeout', subBuilder: $1738.Duration.create)
     ..aInt64(11, _omitFieldNames ? '' : 'sharedMemorySizeMb')
     ..aOM<Probe>(12, _omitFieldNames ? '' : 'startupProbe', subBuilder: Probe.create)
     ..aOM<Probe>(13, _omitFieldNames ? '' : 'healthProbe', subBuilder: Probe.create)
@@ -1594,7 +1594,7 @@ class ModelContainerSpec extends $pb.GeneratedMessage {
   ///  [v1 core
   ///  API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.23/#container-v1-core).
   @$pb.TagNumber(4)
-  $core.List<$4241.EnvVar> get env => $_getList(3);
+  $core.List<$4242.EnvVar> get env => $_getList(3);
 
   ///  Immutable. List of ports to expose from the container. Vertex AI sends any
   ///  prediction requests that it receives to the first port on this list. Vertex
@@ -1712,15 +1712,15 @@ class ModelContainerSpec extends $pb.GeneratedMessage {
   /// Immutable. Deployment timeout.
   /// Limit for deployment timeout is 2 hours.
   @$pb.TagNumber(10)
-  $1737.Duration get deploymentTimeout => $_getN(8);
+  $1738.Duration get deploymentTimeout => $_getN(8);
   @$pb.TagNumber(10)
-  set deploymentTimeout($1737.Duration v) { setField(10, v); }
+  set deploymentTimeout($1738.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDeploymentTimeout() => $_has(8);
   @$pb.TagNumber(10)
   void clearDeploymentTimeout() => clearField(10);
   @$pb.TagNumber(10)
-  $1737.Duration ensureDeploymentTimeout() => $_ensure(8);
+  $1738.Duration ensureDeploymentTimeout() => $_ensure(8);
 
   /// Immutable. The amount of the VM memory to reserve as the shared memory for
   /// the model in megabytes.

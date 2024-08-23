@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1734;
+import '../../../../protobuf/struct.pb.dart' as $1735;
 import 'servicemesh.pbenum.dart';
 
 export 'servicemesh.pbenum.dart';
@@ -281,7 +281,7 @@ class AnalysisMessage extends $pb.GeneratedMessage {
     AnalysisMessageBase? messageBase,
     $core.String? description,
     $core.Iterable<$core.String>? resourcePaths,
-    $1734.Struct? args,
+    $1735.Struct? args,
   }) {
     final $result = create();
     if (messageBase != null) {
@@ -306,7 +306,7 @@ class AnalysisMessage extends $pb.GeneratedMessage {
     ..aOM<AnalysisMessageBase>(1, _omitFieldNames ? '' : 'messageBase', subBuilder: AnalysisMessageBase.create)
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..pPS(3, _omitFieldNames ? '' : 'resourcePaths')
-    ..aOM<$1734.Struct>(4, _omitFieldNames ? '' : 'args', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(4, _omitFieldNames ? '' : 'args', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -366,15 +366,15 @@ class AnalysisMessage extends $pb.GeneratedMessage {
   /// A UI can combine these args with a template (based on message_base.type)
   /// to produce an internationalized message.
   @$pb.TagNumber(4)
-  $1734.Struct get args => $_getN(3);
+  $1735.Struct get args => $_getN(3);
   @$pb.TagNumber(4)
-  set args($1734.Struct v) { setField(4, v); }
+  set args($1735.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasArgs() => $_has(3);
   @$pb.TagNumber(4)
   void clearArgs() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Struct ensureArgs() => $_ensure(3);
+  $1735.Struct ensureArgs() => $_ensure(3);
 }
 
 

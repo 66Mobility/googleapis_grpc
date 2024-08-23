@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'organizations.pbenum.dart';
 
 export 'organizations.pbenum.dart';
@@ -31,9 +31,9 @@ class Organization extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? directoryCustomerId,
     Organization_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? etag,
   }) {
     final $result = create();
@@ -77,9 +77,9 @@ class Organization extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'directoryCustomerId')
     ..e<Organization_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Organization_State.STATE_UNSPECIFIED, valueOf: Organization_State.valueOf, enumValues: Organization_State.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
   ;
@@ -155,39 +155,39 @@ class Organization extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the Organization was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp when the Organization was last modified.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. Timestamp when the Organization was requested for deletion.
   @$pb.TagNumber(7)
-  $1775.Timestamp get deleteTime => $_getN(6);
+  $1776.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(7)
-  set deleteTime($1775.Timestamp v) { setField(7, v); }
+  set deleteTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearDeleteTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(6);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(6);
 
   /// Output only. A checksum computed by the server based on the current value
   /// of the Organization resource. This may be sent on update and delete

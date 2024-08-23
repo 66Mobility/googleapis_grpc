@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4595;
+import 'common.pb.dart' as $4597;
 import 'search_service.pb.dart' as $1276;
 
 /// Autocomplete parameters.
@@ -244,7 +244,7 @@ class CompleteQueryRequest extends $pb.GeneratedMessage {
 class CompleteQueryResponse_CompletionResult extends $pb.GeneratedMessage {
   factory CompleteQueryResponse_CompletionResult({
     $core.String? suggestion,
-    $core.Map<$core.String, $4595.CustomAttribute>? attributes,
+    $core.Map<$core.String, $4597.CustomAttribute>? attributes,
     $core.Iterable<$1276.SearchResponse_Facet>? facets,
     $core.int? totalProductCount,
   }) {
@@ -269,7 +269,7 @@ class CompleteQueryResponse_CompletionResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CompleteQueryResponse.CompletionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'suggestion')
-    ..m<$core.String, $4595.CustomAttribute>(2, _omitFieldNames ? '' : 'attributes', entryClassName: 'CompleteQueryResponse.CompletionResult.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4595.CustomAttribute.create, valueDefaultOrMaker: $4595.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2alpha'))
+    ..m<$core.String, $4597.CustomAttribute>(2, _omitFieldNames ? '' : 'attributes', entryClassName: 'CompleteQueryResponse.CompletionResult.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4597.CustomAttribute.create, valueDefaultOrMaker: $4597.CustomAttribute.getDefault, packageName: const $pb.PackageName('google.cloud.retail.v2alpha'))
     ..pc<$1276.SearchResponse_Facet>(3, _omitFieldNames ? '' : 'facets', $pb.PbFieldType.PM, subBuilder: $1276.SearchResponse_Facet.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalProductCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -316,7 +316,7 @@ class CompleteQueryResponse_CompletionResult extends $pb.GeneratedMessage {
   ///  [UserEvent.product_details][google.cloud.retail.v2alpha.UserEvent.product_details]
   ///  is imported properly.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $4595.CustomAttribute> get attributes => $_getMap(1);
+  $core.Map<$core.String, $4597.CustomAttribute> get attributes => $_getMap(1);
 
   ///  Facet information for the suggestion term. Gives the number of items
   ///  resulting from a search with this suggestion term for each facet.

@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'job.pbenum.dart';
-import 'target.pb.dart' as $4609;
+import 'target.pb.dart' as $4611;
 
 export 'job.pbenum.dart';
 
@@ -34,18 +34,18 @@ class Job extends $pb.GeneratedMessage {
   factory Job({
     $core.String? name,
     $core.String? description,
-    $4609.PubsubTarget? pubsubTarget,
-    $4609.AppEngineHttpTarget? appEngineHttpTarget,
-    $4609.HttpTarget? httpTarget,
-    $1775.Timestamp? userUpdateTime,
+    $4611.PubsubTarget? pubsubTarget,
+    $4611.AppEngineHttpTarget? appEngineHttpTarget,
+    $4611.HttpTarget? httpTarget,
+    $1776.Timestamp? userUpdateTime,
     Job_State? state,
-    $1795.Status? status,
-    $1775.Timestamp? scheduleTime,
-    $1775.Timestamp? lastAttemptTime,
+    $1796.Status? status,
+    $1776.Timestamp? scheduleTime,
+    $1776.Timestamp? lastAttemptTime,
     RetryConfig? retryConfig,
     $core.String? schedule,
     $core.String? timeZone,
-    $1737.Duration? attemptDeadline,
+    $1738.Duration? attemptDeadline,
     $core.bool? legacyAppEngineCron,
   }) {
     final $result = create();
@@ -110,18 +110,18 @@ class Job extends $pb.GeneratedMessage {
     ..oo(0, [4, 5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$4609.PubsubTarget>(4, _omitFieldNames ? '' : 'pubsubTarget', subBuilder: $4609.PubsubTarget.create)
-    ..aOM<$4609.AppEngineHttpTarget>(5, _omitFieldNames ? '' : 'appEngineHttpTarget', subBuilder: $4609.AppEngineHttpTarget.create)
-    ..aOM<$4609.HttpTarget>(6, _omitFieldNames ? '' : 'httpTarget', subBuilder: $4609.HttpTarget.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'userUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4611.PubsubTarget>(4, _omitFieldNames ? '' : 'pubsubTarget', subBuilder: $4611.PubsubTarget.create)
+    ..aOM<$4611.AppEngineHttpTarget>(5, _omitFieldNames ? '' : 'appEngineHttpTarget', subBuilder: $4611.AppEngineHttpTarget.create)
+    ..aOM<$4611.HttpTarget>(6, _omitFieldNames ? '' : 'httpTarget', subBuilder: $4611.HttpTarget.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'userUpdateTime', subBuilder: $1776.Timestamp.create)
     ..e<Job_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Job_State.STATE_UNSPECIFIED, valueOf: Job_State.valueOf, enumValues: Job_State.values)
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(17, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(18, _omitFieldNames ? '' : 'lastAttemptTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(17, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(18, _omitFieldNames ? '' : 'lastAttemptTime', subBuilder: $1776.Timestamp.create)
     ..aOM<RetryConfig>(19, _omitFieldNames ? '' : 'retryConfig', subBuilder: RetryConfig.create)
     ..aOS(20, _omitFieldNames ? '' : 'schedule')
     ..aOS(21, _omitFieldNames ? '' : 'timeZone')
-    ..aOM<$1737.Duration>(22, _omitFieldNames ? '' : 'attemptDeadline', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(22, _omitFieldNames ? '' : 'attemptDeadline', subBuilder: $1738.Duration.create)
     ..aOB(23, _omitFieldNames ? '' : 'legacyAppEngineCron')
     ..hasRequiredFields = false
   ;
@@ -194,51 +194,51 @@ class Job extends $pb.GeneratedMessage {
 
   /// Pub/Sub target.
   @$pb.TagNumber(4)
-  $4609.PubsubTarget get pubsubTarget => $_getN(2);
+  $4611.PubsubTarget get pubsubTarget => $_getN(2);
   @$pb.TagNumber(4)
-  set pubsubTarget($4609.PubsubTarget v) { setField(4, v); }
+  set pubsubTarget($4611.PubsubTarget v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPubsubTarget() => $_has(2);
   @$pb.TagNumber(4)
   void clearPubsubTarget() => clearField(4);
   @$pb.TagNumber(4)
-  $4609.PubsubTarget ensurePubsubTarget() => $_ensure(2);
+  $4611.PubsubTarget ensurePubsubTarget() => $_ensure(2);
 
   /// App Engine HTTP target.
   @$pb.TagNumber(5)
-  $4609.AppEngineHttpTarget get appEngineHttpTarget => $_getN(3);
+  $4611.AppEngineHttpTarget get appEngineHttpTarget => $_getN(3);
   @$pb.TagNumber(5)
-  set appEngineHttpTarget($4609.AppEngineHttpTarget v) { setField(5, v); }
+  set appEngineHttpTarget($4611.AppEngineHttpTarget v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAppEngineHttpTarget() => $_has(3);
   @$pb.TagNumber(5)
   void clearAppEngineHttpTarget() => clearField(5);
   @$pb.TagNumber(5)
-  $4609.AppEngineHttpTarget ensureAppEngineHttpTarget() => $_ensure(3);
+  $4611.AppEngineHttpTarget ensureAppEngineHttpTarget() => $_ensure(3);
 
   /// HTTP target.
   @$pb.TagNumber(6)
-  $4609.HttpTarget get httpTarget => $_getN(4);
+  $4611.HttpTarget get httpTarget => $_getN(4);
   @$pb.TagNumber(6)
-  set httpTarget($4609.HttpTarget v) { setField(6, v); }
+  set httpTarget($4611.HttpTarget v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasHttpTarget() => $_has(4);
   @$pb.TagNumber(6)
   void clearHttpTarget() => clearField(6);
   @$pb.TagNumber(6)
-  $4609.HttpTarget ensureHttpTarget() => $_ensure(4);
+  $4611.HttpTarget ensureHttpTarget() => $_ensure(4);
 
   /// Output only. The creation time of the job.
   @$pb.TagNumber(9)
-  $1775.Timestamp get userUpdateTime => $_getN(5);
+  $1776.Timestamp get userUpdateTime => $_getN(5);
   @$pb.TagNumber(9)
-  set userUpdateTime($1775.Timestamp v) { setField(9, v); }
+  set userUpdateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUserUpdateTime() => $_has(5);
   @$pb.TagNumber(9)
   void clearUserUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUserUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUserUpdateTime() => $_ensure(5);
 
   /// Output only. State of the job.
   @$pb.TagNumber(10)
@@ -252,41 +252,41 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. The response from the target for the last attempted execution.
   @$pb.TagNumber(11)
-  $1795.Status get status => $_getN(7);
+  $1796.Status get status => $_getN(7);
   @$pb.TagNumber(11)
-  set status($1795.Status v) { setField(11, v); }
+  set status($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStatus() => $_has(7);
   @$pb.TagNumber(11)
   void clearStatus() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureStatus() => $_ensure(7);
+  $1796.Status ensureStatus() => $_ensure(7);
 
   /// Output only. The next time the job is scheduled. Note that this may be a
   /// retry of a previously failed attempt or the next execution time
   /// according to the schedule.
   @$pb.TagNumber(17)
-  $1775.Timestamp get scheduleTime => $_getN(8);
+  $1776.Timestamp get scheduleTime => $_getN(8);
   @$pb.TagNumber(17)
-  set scheduleTime($1775.Timestamp v) { setField(17, v); }
+  set scheduleTime($1776.Timestamp v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasScheduleTime() => $_has(8);
   @$pb.TagNumber(17)
   void clearScheduleTime() => clearField(17);
   @$pb.TagNumber(17)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(8);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(8);
 
   /// Output only. The time the last job attempt started.
   @$pb.TagNumber(18)
-  $1775.Timestamp get lastAttemptTime => $_getN(9);
+  $1776.Timestamp get lastAttemptTime => $_getN(9);
   @$pb.TagNumber(18)
-  set lastAttemptTime($1775.Timestamp v) { setField(18, v); }
+  set lastAttemptTime($1776.Timestamp v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasLastAttemptTime() => $_has(9);
   @$pb.TagNumber(18)
   void clearLastAttemptTime() => clearField(18);
   @$pb.TagNumber(18)
-  $1775.Timestamp ensureLastAttemptTime() => $_ensure(9);
+  $1776.Timestamp ensureLastAttemptTime() => $_ensure(9);
 
   /// Settings that determine the retry behavior.
   @$pb.TagNumber(19)
@@ -376,15 +376,15 @@ class Job extends $pb.GeneratedMessage {
   ///  * For [Pub/Sub targets][google.cloud.scheduler.v1beta1.Job.pubsub_target],
   ///  this field is ignored.
   @$pb.TagNumber(22)
-  $1737.Duration get attemptDeadline => $_getN(13);
+  $1738.Duration get attemptDeadline => $_getN(13);
   @$pb.TagNumber(22)
-  set attemptDeadline($1737.Duration v) { setField(22, v); }
+  set attemptDeadline($1738.Duration v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasAttemptDeadline() => $_has(13);
   @$pb.TagNumber(22)
   void clearAttemptDeadline() => clearField(22);
   @$pb.TagNumber(22)
-  $1737.Duration ensureAttemptDeadline() => $_ensure(13);
+  $1738.Duration ensureAttemptDeadline() => $_ensure(13);
 
   /// Immutable. This field is used to manage the legacy App Engine Cron jobs
   /// using the Cloud Scheduler API. If the field is set to true, the job will be
@@ -410,9 +410,9 @@ class Job extends $pb.GeneratedMessage {
 class RetryConfig extends $pb.GeneratedMessage {
   factory RetryConfig({
     $core.int? retryCount,
-    $1737.Duration? maxRetryDuration,
-    $1737.Duration? minBackoffDuration,
-    $1737.Duration? maxBackoffDuration,
+    $1738.Duration? maxRetryDuration,
+    $1738.Duration? minBackoffDuration,
+    $1738.Duration? maxBackoffDuration,
     $core.int? maxDoublings,
   }) {
     final $result = create();
@@ -439,9 +439,9 @@ class RetryConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.scheduler.v1beta1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'retryCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'minBackoffDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'maxBackoffDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'minBackoffDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'maxBackoffDuration', subBuilder: $1738.Duration.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'maxDoublings', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -500,45 +500,45 @@ class RetryConfig extends $pb.GeneratedMessage {
   ///  The default value for max_retry_duration is zero, which means retry
   ///  duration is unlimited.
   @$pb.TagNumber(2)
-  $1737.Duration get maxRetryDuration => $_getN(1);
+  $1738.Duration get maxRetryDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set maxRetryDuration($1737.Duration v) { setField(2, v); }
+  set maxRetryDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxRetryDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxRetryDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMaxRetryDuration() => $_ensure(1);
+  $1738.Duration ensureMaxRetryDuration() => $_ensure(1);
 
   ///  The minimum amount of time to wait before retrying a job after
   ///  it fails.
   ///
   ///  The default value of this field is 5 seconds.
   @$pb.TagNumber(3)
-  $1737.Duration get minBackoffDuration => $_getN(2);
+  $1738.Duration get minBackoffDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set minBackoffDuration($1737.Duration v) { setField(3, v); }
+  set minBackoffDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinBackoffDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinBackoffDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureMinBackoffDuration() => $_ensure(2);
+  $1738.Duration ensureMinBackoffDuration() => $_ensure(2);
 
   ///  The maximum amount of time to wait before retrying a job after
   ///  it fails.
   ///
   ///  The default value of this field is 1 hour.
   @$pb.TagNumber(4)
-  $1737.Duration get maxBackoffDuration => $_getN(3);
+  $1738.Duration get maxBackoffDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set maxBackoffDuration($1737.Duration v) { setField(4, v); }
+  set maxBackoffDuration($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxBackoffDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearMaxBackoffDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureMaxBackoffDuration() => $_ensure(3);
+  $1738.Duration ensureMaxBackoffDuration() => $_ensure(3);
 
   ///  The time between retries will double `max_doublings` times.
   ///

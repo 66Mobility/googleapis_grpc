@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
+import '../../../protobuf/duration.pb.dart' as $1738;
 import 'autoscaler_log.pbenum.dart';
 
 export 'autoscaler_log.pbenum.dart';
@@ -358,7 +358,7 @@ class AutoscalerRecommendation_Outputs extends $pb.GeneratedMessage {
   factory AutoscalerRecommendation_Outputs({
     ScalingDecisionType? decision,
     ClusterSize? recommendedClusterSize,
-    $1737.Duration? gracefulDecommissionTimeout,
+    $1738.Duration? gracefulDecommissionTimeout,
     $core.Iterable<ConstrainingFactor>? constraintsReached,
     $core.Iterable<$core.String>? additionalRecommendationDetails,
     $core.String? recommendationId,
@@ -395,7 +395,7 @@ class AutoscalerRecommendation_Outputs extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AutoscalerRecommendation.Outputs', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.logging'), createEmptyInstance: create)
     ..e<ScalingDecisionType>(1, _omitFieldNames ? '' : 'decision', $pb.PbFieldType.OE, defaultOrMaker: ScalingDecisionType.SCALING_DECISION_TYPE_UNSPECIFIED, valueOf: ScalingDecisionType.valueOf, enumValues: ScalingDecisionType.values)
     ..aOM<ClusterSize>(2, _omitFieldNames ? '' : 'recommendedClusterSize', subBuilder: ClusterSize.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'gracefulDecommissionTimeout', subBuilder: $1738.Duration.create)
     ..pc<ConstrainingFactor>(4, _omitFieldNames ? '' : 'constraintsReached', $pb.PbFieldType.KE, valueOf: ConstrainingFactor.valueOf, enumValues: ConstrainingFactor.values, defaultEnumValue: ConstrainingFactor.CONSTRAINING_FACTOR_UNSPECIFIED)
     ..pPS(5, _omitFieldNames ? '' : 'additionalRecommendationDetails')
     ..aOS(6, _omitFieldNames ? '' : 'recommendationId')
@@ -449,15 +449,15 @@ class AutoscalerRecommendation_Outputs extends $pb.GeneratedMessage {
 
   /// The graceful decommission timeout for downscaling operations.
   @$pb.TagNumber(3)
-  $1737.Duration get gracefulDecommissionTimeout => $_getN(2);
+  $1738.Duration get gracefulDecommissionTimeout => $_getN(2);
   @$pb.TagNumber(3)
-  set gracefulDecommissionTimeout($1737.Duration v) { setField(3, v); }
+  set gracefulDecommissionTimeout($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGracefulDecommissionTimeout() => $_has(2);
   @$pb.TagNumber(3)
   void clearGracefulDecommissionTimeout() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureGracefulDecommissionTimeout() => $_ensure(2);
+  $1738.Duration ensureGracefulDecommissionTimeout() => $_ensure(2);
 
   /// Reasons why the Autoscaler didn't add or remove more workers.
   @$pb.TagNumber(4)

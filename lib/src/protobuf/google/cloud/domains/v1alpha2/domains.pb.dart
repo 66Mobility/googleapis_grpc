@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/money.pb.dart' as $1814;
-import '../../../type/postal_address.pb.dart' as $4427;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/money.pb.dart' as $1815;
+import '../../../type/postal_address.pb.dart' as $4429;
 import 'domains.pbenum.dart';
 
 export 'domains.pbenum.dart';
@@ -41,8 +41,8 @@ class Registration extends $pb.GeneratedMessage {
   factory Registration({
     $core.String? name,
     $core.String? domainName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? expireTime,
     Registration_State? state,
     $core.Iterable<Registration_Issue>? issues,
     $core.Map<$core.String, $core.String>? labels,
@@ -98,8 +98,8 @@ class Registration extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Registration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.domains.v1alpha2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'domainName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..e<Registration_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Registration_State.STATE_UNSPECIFIED, valueOf: Registration_State.valueOf, enumValues: Registration_State.values)
     ..pc<Registration_Issue>(8, _omitFieldNames ? '' : 'issues', $pb.PbFieldType.KE, valueOf: Registration_Issue.valueOf, enumValues: Registration_Issue.values, defaultEnumValue: Registration_Issue.ISSUE_UNSPECIFIED)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Registration.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.domains.v1alpha2'))
@@ -155,27 +155,27 @@ class Registration extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of the `Registration` resource.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The expiration timestamp of the `Registration`.
   @$pb.TagNumber(6)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(6)
-  set expireTime($1775.Timestamp v) { setField(6, v); }
+  set expireTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearExpireTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// Output only. The state of the `Registration`
   @$pb.TagNumber(7)
@@ -745,7 +745,7 @@ class DnsSettings extends $pb.GeneratedMessage {
 /// Details required for a contact associated with a `Registration`.
 class ContactSettings_Contact extends $pb.GeneratedMessage {
   factory ContactSettings_Contact({
-    $4427.PostalAddress? postalAddress,
+    $4429.PostalAddress? postalAddress,
     $core.String? email,
     $core.String? phoneNumber,
     $core.String? faxNumber,
@@ -770,7 +770,7 @@ class ContactSettings_Contact extends $pb.GeneratedMessage {
   factory ContactSettings_Contact.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContactSettings.Contact', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.domains.v1alpha2'), createEmptyInstance: create)
-    ..aOM<$4427.PostalAddress>(1, _omitFieldNames ? '' : 'postalAddress', subBuilder: $4427.PostalAddress.create)
+    ..aOM<$4429.PostalAddress>(1, _omitFieldNames ? '' : 'postalAddress', subBuilder: $4429.PostalAddress.create)
     ..aOS(2, _omitFieldNames ? '' : 'email')
     ..aOS(3, _omitFieldNames ? '' : 'phoneNumber')
     ..aOS(4, _omitFieldNames ? '' : 'faxNumber')
@@ -800,15 +800,15 @@ class ContactSettings_Contact extends $pb.GeneratedMessage {
 
   /// Required. Postal address of the contact.
   @$pb.TagNumber(1)
-  $4427.PostalAddress get postalAddress => $_getN(0);
+  $4429.PostalAddress get postalAddress => $_getN(0);
   @$pb.TagNumber(1)
-  set postalAddress($4427.PostalAddress v) { setField(1, v); }
+  set postalAddress($4429.PostalAddress v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPostalAddress() => $_has(0);
   @$pb.TagNumber(1)
   void clearPostalAddress() => clearField(1);
   @$pb.TagNumber(1)
-  $4427.PostalAddress ensurePostalAddress() => $_ensure(0);
+  $4429.PostalAddress ensurePostalAddress() => $_ensure(0);
 
   /// Required. Email address of the contact.
   @$pb.TagNumber(2)
@@ -1198,7 +1198,7 @@ class RegisterDomainRequest extends $pb.GeneratedMessage {
     Registration? registration,
     $core.Iterable<DomainNotice>? domainNotices,
     $core.Iterable<ContactNotice>? contactNotices,
-    $1814.Money? yearlyPrice,
+    $1815.Money? yearlyPrice,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -1231,7 +1231,7 @@ class RegisterDomainRequest extends $pb.GeneratedMessage {
     ..aOM<Registration>(2, _omitFieldNames ? '' : 'registration', subBuilder: Registration.create)
     ..pc<DomainNotice>(3, _omitFieldNames ? '' : 'domainNotices', $pb.PbFieldType.KE, valueOf: DomainNotice.valueOf, enumValues: DomainNotice.values, defaultEnumValue: DomainNotice.DOMAIN_NOTICE_UNSPECIFIED)
     ..pc<ContactNotice>(4, _omitFieldNames ? '' : 'contactNotices', $pb.PbFieldType.KE, valueOf: ContactNotice.valueOf, enumValues: ContactNotice.values, defaultEnumValue: ContactNotice.CONTACT_NOTICE_UNSPECIFIED)
-    ..aOM<$1814.Money>(5, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(5, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1815.Money.create)
     ..aOB(6, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -1295,15 +1295,15 @@ class RegisterDomainRequest extends $pb.GeneratedMessage {
   /// The value that should be put here can be obtained from
   /// RetrieveRegisterParameters or SearchDomains calls.
   @$pb.TagNumber(5)
-  $1814.Money get yearlyPrice => $_getN(4);
+  $1815.Money get yearlyPrice => $_getN(4);
   @$pb.TagNumber(5)
-  set yearlyPrice($1814.Money v) { setField(5, v); }
+  set yearlyPrice($1815.Money v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasYearlyPrice() => $_has(4);
   @$pb.TagNumber(5)
   void clearYearlyPrice() => clearField(5);
   @$pb.TagNumber(5)
-  $1814.Money ensureYearlyPrice() => $_ensure(4);
+  $1815.Money ensureYearlyPrice() => $_ensure(4);
 
   /// When true, only validation is performed, without actually registering
   /// the domain. Follows:
@@ -1445,7 +1445,7 @@ class TransferDomainRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     Registration? registration,
     $core.Iterable<ContactNotice>? contactNotices,
-    $1814.Money? yearlyPrice,
+    $1815.Money? yearlyPrice,
     AuthorizationCode? authorizationCode,
     $core.bool? validateOnly,
   }) {
@@ -1478,7 +1478,7 @@ class TransferDomainRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<Registration>(2, _omitFieldNames ? '' : 'registration', subBuilder: Registration.create)
     ..pc<ContactNotice>(3, _omitFieldNames ? '' : 'contactNotices', $pb.PbFieldType.KE, valueOf: ContactNotice.valueOf, enumValues: ContactNotice.values, defaultEnumValue: ContactNotice.CONTACT_NOTICE_UNSPECIFIED)
-    ..aOM<$1814.Money>(4, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(4, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1815.Money.create)
     ..aOM<AuthorizationCode>(5, _omitFieldNames ? '' : 'authorizationCode', subBuilder: AuthorizationCode.create)
     ..aOB(6, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -1544,15 +1544,15 @@ class TransferDomainRequest extends $pb.GeneratedMessage {
   /// Call `RetrieveTransferParameters` to obtain the price, which you must
   /// acknowledge.
   @$pb.TagNumber(4)
-  $1814.Money get yearlyPrice => $_getN(3);
+  $1815.Money get yearlyPrice => $_getN(3);
   @$pb.TagNumber(4)
-  set yearlyPrice($1814.Money v) { setField(4, v); }
+  set yearlyPrice($1815.Money v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasYearlyPrice() => $_has(3);
   @$pb.TagNumber(4)
   void clearYearlyPrice() => clearField(4);
   @$pb.TagNumber(4)
-  $1814.Money ensureYearlyPrice() => $_ensure(3);
+  $1815.Money ensureYearlyPrice() => $_ensure(3);
 
   /// The domain's transfer authorization code. You can obtain this from the
   /// domain's current registrar.
@@ -1811,7 +1811,7 @@ class GetRegistrationRequest extends $pb.GeneratedMessage {
 class UpdateRegistrationRequest extends $pb.GeneratedMessage {
   factory UpdateRegistrationRequest({
     Registration? registration,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (registration != null) {
@@ -1828,7 +1828,7 @@ class UpdateRegistrationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRegistrationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.domains.v1alpha2'), createEmptyInstance: create)
     ..aOM<Registration>(1, _omitFieldNames ? '' : 'registration', subBuilder: Registration.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1869,15 +1869,15 @@ class UpdateRegistrationRequest extends $pb.GeneratedMessage {
   /// For example, if only the labels are being updated, the `update_mask` is
   /// `"labels"`.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the `ConfigureManagementSettings` method.
@@ -1885,7 +1885,7 @@ class ConfigureManagementSettingsRequest extends $pb.GeneratedMessage {
   factory ConfigureManagementSettingsRequest({
     $core.String? registration,
     ManagementSettings? managementSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (registration != null) {
@@ -1906,7 +1906,7 @@ class ConfigureManagementSettingsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfigureManagementSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.domains.v1alpha2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'registration')
     ..aOM<ManagementSettings>(2, _omitFieldNames ? '' : 'managementSettings', subBuilder: ManagementSettings.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1958,15 +1958,15 @@ class ConfigureManagementSettingsRequest extends $pb.GeneratedMessage {
   /// For example, if only the transfer lock is being updated, the `update_mask`
   /// is `"transfer_lock_state"`.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request for the `ConfigureDnsSettings` method.
@@ -1974,7 +1974,7 @@ class ConfigureDnsSettingsRequest extends $pb.GeneratedMessage {
   factory ConfigureDnsSettingsRequest({
     $core.String? registration,
     DnsSettings? dnsSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -1999,7 +1999,7 @@ class ConfigureDnsSettingsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfigureDnsSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.domains.v1alpha2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'registration')
     ..aOM<DnsSettings>(2, _omitFieldNames ? '' : 'dnsSettings', subBuilder: DnsSettings.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -2058,15 +2058,15 @@ class ConfigureDnsSettingsRequest extends $pb.GeneratedMessage {
   ///  from a Google Domains DNS configuration to a Custom DNS configuration, the
   ///  `update_mask` is `"custom_dns"`. //
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 
   /// Validate the request without actually updating the DNS settings.
   @$pb.TagNumber(4)
@@ -2084,7 +2084,7 @@ class ConfigureContactSettingsRequest extends $pb.GeneratedMessage {
   factory ConfigureContactSettingsRequest({
     $core.String? registration,
     ContactSettings? contactSettings,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.Iterable<ContactNotice>? contactNotices,
     $core.bool? validateOnly,
   }) {
@@ -2113,7 +2113,7 @@ class ConfigureContactSettingsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConfigureContactSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.domains.v1alpha2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'registration')
     ..aOM<ContactSettings>(2, _omitFieldNames ? '' : 'contactSettings', subBuilder: ContactSettings.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..pc<ContactNotice>(4, _omitFieldNames ? '' : 'contactNotices', $pb.PbFieldType.KE, valueOf: ContactNotice.valueOf, enumValues: ContactNotice.values, defaultEnumValue: ContactNotice.CONTACT_NOTICE_UNSPECIFIED)
     ..aOB(5, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -2167,15 +2167,15 @@ class ConfigureContactSettingsRequest extends $pb.GeneratedMessage {
   /// For example, if only the registrant contact is being updated, the
   /// `update_mask` is `"registrant_contact"`.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 
   /// The list of contact notices that the caller acknowledges. The notices
   /// needed here depend on the values specified in `contact_settings`.
@@ -2412,7 +2412,7 @@ class RegisterParameters extends $pb.GeneratedMessage {
     RegisterParameters_Availability? availability,
     $core.Iterable<ContactPrivacy>? supportedPrivacy,
     $core.Iterable<DomainNotice>? domainNotices,
-    $1814.Money? yearlyPrice,
+    $1815.Money? yearlyPrice,
   }) {
     final $result = create();
     if (domainName != null) {
@@ -2441,7 +2441,7 @@ class RegisterParameters extends $pb.GeneratedMessage {
     ..e<RegisterParameters_Availability>(2, _omitFieldNames ? '' : 'availability', $pb.PbFieldType.OE, defaultOrMaker: RegisterParameters_Availability.AVAILABILITY_UNSPECIFIED, valueOf: RegisterParameters_Availability.valueOf, enumValues: RegisterParameters_Availability.values)
     ..pc<ContactPrivacy>(3, _omitFieldNames ? '' : 'supportedPrivacy', $pb.PbFieldType.KE, valueOf: ContactPrivacy.valueOf, enumValues: ContactPrivacy.values, defaultEnumValue: ContactPrivacy.CONTACT_PRIVACY_UNSPECIFIED)
     ..pc<DomainNotice>(4, _omitFieldNames ? '' : 'domainNotices', $pb.PbFieldType.KE, valueOf: DomainNotice.valueOf, enumValues: DomainNotice.values, defaultEnumValue: DomainNotice.DOMAIN_NOTICE_UNSPECIFIED)
-    ..aOM<$1814.Money>(5, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(5, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -2498,15 +2498,15 @@ class RegisterParameters extends $pb.GeneratedMessage {
 
   /// Price to register or renew the domain for one year.
   @$pb.TagNumber(5)
-  $1814.Money get yearlyPrice => $_getN(4);
+  $1815.Money get yearlyPrice => $_getN(4);
   @$pb.TagNumber(5)
-  set yearlyPrice($1814.Money v) { setField(5, v); }
+  set yearlyPrice($1815.Money v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasYearlyPrice() => $_has(4);
   @$pb.TagNumber(5)
   void clearYearlyPrice() => clearField(5);
   @$pb.TagNumber(5)
-  $1814.Money ensureYearlyPrice() => $_ensure(4);
+  $1815.Money ensureYearlyPrice() => $_ensure(4);
 }
 
 /// Parameters required to transfer a domain from another registrar.
@@ -2517,7 +2517,7 @@ class TransferParameters extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? nameServers,
     TransferLockState? transferLockState,
     $core.Iterable<ContactPrivacy>? supportedPrivacy,
-    $1814.Money? yearlyPrice,
+    $1815.Money? yearlyPrice,
   }) {
     final $result = create();
     if (domainName != null) {
@@ -2550,7 +2550,7 @@ class TransferParameters extends $pb.GeneratedMessage {
     ..pPS(3, _omitFieldNames ? '' : 'nameServers')
     ..e<TransferLockState>(4, _omitFieldNames ? '' : 'transferLockState', $pb.PbFieldType.OE, defaultOrMaker: TransferLockState.TRANSFER_LOCK_STATE_UNSPECIFIED, valueOf: TransferLockState.valueOf, enumValues: TransferLockState.values)
     ..pc<ContactPrivacy>(5, _omitFieldNames ? '' : 'supportedPrivacy', $pb.PbFieldType.KE, valueOf: ContactPrivacy.valueOf, enumValues: ContactPrivacy.values, defaultEnumValue: ContactPrivacy.CONTACT_PRIVACY_UNSPECIFIED)
-    ..aOM<$1814.Money>(6, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(6, _omitFieldNames ? '' : 'yearlyPrice', subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -2617,15 +2617,15 @@ class TransferParameters extends $pb.GeneratedMessage {
 
   /// Price to transfer or renew the domain for one year.
   @$pb.TagNumber(6)
-  $1814.Money get yearlyPrice => $_getN(5);
+  $1815.Money get yearlyPrice => $_getN(5);
   @$pb.TagNumber(6)
-  set yearlyPrice($1814.Money v) { setField(6, v); }
+  set yearlyPrice($1815.Money v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasYearlyPrice() => $_has(5);
   @$pb.TagNumber(6)
   void clearYearlyPrice() => clearField(6);
   @$pb.TagNumber(6)
-  $1814.Money ensureYearlyPrice() => $_ensure(5);
+  $1815.Money ensureYearlyPrice() => $_ensure(5);
 }
 
 /// Defines an authorization code.
@@ -2684,8 +2684,8 @@ class AuthorizationCode extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation. Output only.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusDetail,
@@ -2717,8 +2717,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.domains.v1alpha2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusDetail')
@@ -2749,27 +2749,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

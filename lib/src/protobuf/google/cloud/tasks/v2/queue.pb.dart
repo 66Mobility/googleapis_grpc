@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'queue.pbenum.dart';
-import 'target.pb.dart' as $4697;
+import 'target.pb.dart' as $4699;
 
 export 'queue.pbenum.dart';
 
@@ -26,11 +26,11 @@ export 'queue.pbenum.dart';
 class Queue extends $pb.GeneratedMessage {
   factory Queue({
     $core.String? name,
-    $4697.AppEngineRouting? appEngineRoutingOverride,
+    $4699.AppEngineRouting? appEngineRoutingOverride,
     RateLimits? rateLimits,
     RetryConfig? retryConfig,
     Queue_State? state,
-    $1775.Timestamp? purgeTime,
+    $1776.Timestamp? purgeTime,
     StackdriverLoggingConfig? stackdriverLoggingConfig,
   }) {
     final $result = create();
@@ -63,11 +63,11 @@ class Queue extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Queue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4697.AppEngineRouting>(2, _omitFieldNames ? '' : 'appEngineRoutingOverride', subBuilder: $4697.AppEngineRouting.create)
+    ..aOM<$4699.AppEngineRouting>(2, _omitFieldNames ? '' : 'appEngineRoutingOverride', subBuilder: $4699.AppEngineRouting.create)
     ..aOM<RateLimits>(3, _omitFieldNames ? '' : 'rateLimits', subBuilder: RateLimits.create)
     ..aOM<RetryConfig>(4, _omitFieldNames ? '' : 'retryConfig', subBuilder: RetryConfig.create)
     ..e<Queue_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Queue_State.STATE_UNSPECIFIED, valueOf: Queue_State.valueOf, enumValues: Queue_State.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'purgeTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'purgeTime', subBuilder: $1776.Timestamp.create)
     ..aOM<StackdriverLoggingConfig>(9, _omitFieldNames ? '' : 'stackdriverLoggingConfig', subBuilder: StackdriverLoggingConfig.create)
     ..hasRequiredFields = false
   ;
@@ -134,15 +134,15 @@ class Queue extends $pb.GeneratedMessage {
   ///  queue, no matter what the setting is for the [task-level
   ///  app_engine_routing][google.cloud.tasks.v2.AppEngineHttpRequest.app_engine_routing].
   @$pb.TagNumber(2)
-  $4697.AppEngineRouting get appEngineRoutingOverride => $_getN(1);
+  $4699.AppEngineRouting get appEngineRoutingOverride => $_getN(1);
   @$pb.TagNumber(2)
-  set appEngineRoutingOverride($4697.AppEngineRouting v) { setField(2, v); }
+  set appEngineRoutingOverride($4699.AppEngineRouting v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAppEngineRoutingOverride() => $_has(1);
   @$pb.TagNumber(2)
   void clearAppEngineRoutingOverride() => clearField(2);
   @$pb.TagNumber(2)
-  $4697.AppEngineRouting ensureAppEngineRoutingOverride() => $_ensure(1);
+  $4699.AppEngineRouting ensureAppEngineRoutingOverride() => $_ensure(1);
 
   ///  Rate limits for task dispatches.
   ///
@@ -234,15 +234,15 @@ class Queue extends $pb.GeneratedMessage {
   ///  Purge time will be truncated to the nearest microsecond. Purge
   ///  time will be unset if the queue has never been purged.
   @$pb.TagNumber(6)
-  $1775.Timestamp get purgeTime => $_getN(5);
+  $1776.Timestamp get purgeTime => $_getN(5);
   @$pb.TagNumber(6)
-  set purgeTime($1775.Timestamp v) { setField(6, v); }
+  set purgeTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPurgeTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearPurgeTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensurePurgeTime() => $_ensure(5);
+  $1776.Timestamp ensurePurgeTime() => $_ensure(5);
 
   /// Configuration options for writing logs to
   /// [Stackdriver Logging](https://cloud.google.com/logging/docs/). If this
@@ -409,9 +409,9 @@ class RateLimits extends $pb.GeneratedMessage {
 class RetryConfig extends $pb.GeneratedMessage {
   factory RetryConfig({
     $core.int? maxAttempts,
-    $1737.Duration? maxRetryDuration,
-    $1737.Duration? minBackoff,
-    $1737.Duration? maxBackoff,
+    $1738.Duration? maxRetryDuration,
+    $1738.Duration? minBackoff,
+    $1738.Duration? maxBackoff,
     $core.int? maxDoublings,
   }) {
     final $result = create();
@@ -438,9 +438,9 @@ class RetryConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tasks.v2'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'maxAttempts', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'minBackoff', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'maxBackoff', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'maxRetryDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'minBackoff', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'maxBackoff', subBuilder: $1738.Duration.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'maxDoublings', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -508,15 +508,15 @@ class RetryConfig extends $pb.GeneratedMessage {
   ///  [task_age_limit in
   ///  queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
   @$pb.TagNumber(2)
-  $1737.Duration get maxRetryDuration => $_getN(1);
+  $1738.Duration get maxRetryDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set maxRetryDuration($1737.Duration v) { setField(2, v); }
+  set maxRetryDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxRetryDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxRetryDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMaxRetryDuration() => $_ensure(1);
+  $1738.Duration ensureMaxRetryDuration() => $_ensure(1);
 
   ///  A task will be [scheduled][google.cloud.tasks.v2.Task.schedule_time] for
   ///  retry between [min_backoff][google.cloud.tasks.v2.RetryConfig.min_backoff]
@@ -535,15 +535,15 @@ class RetryConfig extends $pb.GeneratedMessage {
   ///  [min_backoff_seconds in
   ///  queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
   @$pb.TagNumber(3)
-  $1737.Duration get minBackoff => $_getN(2);
+  $1738.Duration get minBackoff => $_getN(2);
   @$pb.TagNumber(3)
-  set minBackoff($1737.Duration v) { setField(3, v); }
+  set minBackoff($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinBackoff() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinBackoff() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureMinBackoff() => $_ensure(2);
+  $1738.Duration ensureMinBackoff() => $_ensure(2);
 
   ///  A task will be [scheduled][google.cloud.tasks.v2.Task.schedule_time] for
   ///  retry between [min_backoff][google.cloud.tasks.v2.RetryConfig.min_backoff]
@@ -562,15 +562,15 @@ class RetryConfig extends $pb.GeneratedMessage {
   ///  [max_backoff_seconds in
   ///  queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
   @$pb.TagNumber(4)
-  $1737.Duration get maxBackoff => $_getN(3);
+  $1738.Duration get maxBackoff => $_getN(3);
   @$pb.TagNumber(4)
-  set maxBackoff($1737.Duration v) { setField(4, v); }
+  set maxBackoff($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMaxBackoff() => $_has(3);
   @$pb.TagNumber(4)
   void clearMaxBackoff() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureMaxBackoff() => $_ensure(3);
+  $1738.Duration ensureMaxBackoff() => $_ensure(3);
 
   ///  The time between retries will double `max_doublings` times.
   ///

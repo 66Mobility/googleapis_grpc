@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'completion_state.pbenum.dart' as $4433;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'completion_state.pbenum.dart' as $4435;
 import 'customer_workloads.pbenum.dart';
 
 export 'customer_workloads.pbenum.dart';
@@ -27,7 +27,7 @@ class Workload extends $pb.GeneratedMessage {
   factory Workload({
     $core.String? name,
     $fixnum.Int64? folderId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.String? folder,
     WorkloadOnboardingState? workloadOnboardingState,
     $core.bool? isOnboarded,
@@ -72,7 +72,7 @@ class Workload extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Workload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.cloudcontrolspartner.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'folderId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'folder')
     ..aOM<WorkloadOnboardingState>(5, _omitFieldNames ? '' : 'workloadOnboardingState', subBuilder: WorkloadOnboardingState.create)
     ..aOB(6, _omitFieldNames ? '' : 'isOnboarded')
@@ -126,15 +126,15 @@ class Workload extends $pb.GeneratedMessage {
 
   /// Output only. Time the resource was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The name of container folder of the assured workload
   @$pb.TagNumber(4)
@@ -489,9 +489,9 @@ class WorkloadOnboardingState extends $pb.GeneratedMessage {
 class WorkloadOnboardingStep extends $pb.GeneratedMessage {
   factory WorkloadOnboardingStep({
     WorkloadOnboardingStep_Step? step,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? completionTime,
-    $4433.CompletionState? completionState,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? completionTime,
+    $4435.CompletionState? completionState,
   }) {
     final $result = create();
     if (step != null) {
@@ -514,9 +514,9 @@ class WorkloadOnboardingStep extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WorkloadOnboardingStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.cloudcontrolspartner.v1beta'), createEmptyInstance: create)
     ..e<WorkloadOnboardingStep_Step>(1, _omitFieldNames ? '' : 'step', $pb.PbFieldType.OE, defaultOrMaker: WorkloadOnboardingStep_Step.STEP_UNSPECIFIED, valueOf: WorkloadOnboardingStep_Step.valueOf, enumValues: WorkloadOnboardingStep_Step.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'completionTime', subBuilder: $1775.Timestamp.create)
-    ..e<$4433.CompletionState>(4, _omitFieldNames ? '' : 'completionState', $pb.PbFieldType.OE, defaultOrMaker: $4433.CompletionState.COMPLETION_STATE_UNSPECIFIED, valueOf: $4433.CompletionState.valueOf, enumValues: $4433.CompletionState.values)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'completionTime', subBuilder: $1776.Timestamp.create)
+    ..e<$4435.CompletionState>(4, _omitFieldNames ? '' : 'completionState', $pb.PbFieldType.OE, defaultOrMaker: $4435.CompletionState.COMPLETION_STATE_UNSPECIFIED, valueOf: $4435.CompletionState.valueOf, enumValues: $4435.CompletionState.values)
     ..hasRequiredFields = false
   ;
 
@@ -553,33 +553,33 @@ class WorkloadOnboardingStep extends $pb.GeneratedMessage {
 
   /// The starting time of the onboarding step.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// The completion time of the onboarding step.
   @$pb.TagNumber(3)
-  $1775.Timestamp get completionTime => $_getN(2);
+  $1776.Timestamp get completionTime => $_getN(2);
   @$pb.TagNumber(3)
-  set completionTime($1775.Timestamp v) { setField(3, v); }
+  set completionTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCompletionTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCompletionTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCompletionTime() => $_ensure(2);
+  $1776.Timestamp ensureCompletionTime() => $_ensure(2);
 
   /// Output only. The completion state of the onboarding step.
   @$pb.TagNumber(4)
-  $4433.CompletionState get completionState => $_getN(3);
+  $4435.CompletionState get completionState => $_getN(3);
   @$pb.TagNumber(4)
-  set completionState($4433.CompletionState v) { setField(4, v); }
+  set completionState($4435.CompletionState v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCompletionState() => $_has(3);
   @$pb.TagNumber(4)

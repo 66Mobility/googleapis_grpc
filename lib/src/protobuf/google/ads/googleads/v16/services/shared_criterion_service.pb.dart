@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/shared_criterion.pb.dart' as $3119;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/shared_criterion.pb.dart' as $3120;
 
 /// Request message for
 /// [SharedCriterionService.MutateSharedCriteria][google.ads.googleads.v16.services.SharedCriterionService.MutateSharedCriteria].
@@ -25,7 +25,7 @@ class MutateSharedCriteriaRequest extends $pb.GeneratedMessage {
     $core.Iterable<SharedCriterionOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateSharedCriteriaRequest extends $pb.GeneratedMessage {
     ..pc<SharedCriterionOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: SharedCriterionOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -120,9 +120,9 @@ class MutateSharedCriteriaRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -138,7 +138,7 @@ enum SharedCriterionOperation_Operation {
 /// A single operation (create, remove) on an shared criterion.
 class SharedCriterionOperation extends $pb.GeneratedMessage {
   factory SharedCriterionOperation({
-    $3119.SharedCriterion? create_1,
+    $3120.SharedCriterion? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -161,7 +161,7 @@ class SharedCriterionOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SharedCriterionOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 3])
-    ..aOM<$3119.SharedCriterion>(1, _omitFieldNames ? '' : 'create', subBuilder: $3119.SharedCriterion.create)
+    ..aOM<$3120.SharedCriterion>(1, _omitFieldNames ? '' : 'create', subBuilder: $3120.SharedCriterion.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -193,15 +193,15 @@ class SharedCriterionOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new shared
   /// criterion.
   @$pb.TagNumber(1)
-  $3119.SharedCriterion get create_1 => $_getN(0);
+  $3120.SharedCriterion get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3119.SharedCriterion v) { setField(1, v); }
+  set create_1($3120.SharedCriterion v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3119.SharedCriterion ensureCreate_1() => $_ensure(0);
+  $3120.SharedCriterion ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed shared criterion is
   ///  expected, in this format:
@@ -221,7 +221,7 @@ class SharedCriterionOperation extends $pb.GeneratedMessage {
 class MutateSharedCriteriaResponse extends $pb.GeneratedMessage {
   factory MutateSharedCriteriaResponse({
     $core.Iterable<MutateSharedCriterionResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -238,7 +238,7 @@ class MutateSharedCriteriaResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateSharedCriteriaResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateSharedCriterionResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateSharedCriterionResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -272,22 +272,22 @@ class MutateSharedCriteriaResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the shared criterion mutate.
 class MutateSharedCriterionResult extends $pb.GeneratedMessage {
   factory MutateSharedCriterionResult({
     $core.String? resourceName,
-    $3119.SharedCriterion? sharedCriterion,
+    $3120.SharedCriterion? sharedCriterion,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -304,7 +304,7 @@ class MutateSharedCriterionResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateSharedCriterionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3119.SharedCriterion>(2, _omitFieldNames ? '' : 'sharedCriterion', subBuilder: $3119.SharedCriterion.create)
+    ..aOM<$3120.SharedCriterion>(2, _omitFieldNames ? '' : 'sharedCriterion', subBuilder: $3120.SharedCriterion.create)
     ..hasRequiredFields = false
   ;
 
@@ -343,15 +343,15 @@ class MutateSharedCriterionResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3119.SharedCriterion get sharedCriterion => $_getN(1);
+  $3120.SharedCriterion get sharedCriterion => $_getN(1);
   @$pb.TagNumber(2)
-  set sharedCriterion($3119.SharedCriterion v) { setField(2, v); }
+  set sharedCriterion($3120.SharedCriterion v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSharedCriterion() => $_has(1);
   @$pb.TagNumber(2)
   void clearSharedCriterion() => clearField(2);
   @$pb.TagNumber(2)
-  $3119.SharedCriterion ensureSharedCriterion() => $_ensure(1);
+  $3120.SharedCriterion ensureSharedCriterion() => $_ensure(1);
 }
 
 

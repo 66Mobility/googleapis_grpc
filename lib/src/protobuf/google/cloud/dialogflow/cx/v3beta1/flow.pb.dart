@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import 'advanced_settings.pb.dart' as $4486;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import 'advanced_settings.pb.dart' as $4488;
 import 'flow.pbenum.dart';
-import 'import_strategy.pbenum.dart' as $4490;
+import 'import_strategy.pbenum.dart' as $4492;
 import 'page.pb.dart' as $864;
-import 'validation_message.pb.dart' as $4489;
+import 'validation_message.pb.dart' as $4491;
 
 export 'flow.pbenum.dart';
 
@@ -202,7 +202,7 @@ class Flow extends $pb.GeneratedMessage {
     $core.Iterable<$864.TransitionRoute>? transitionRoutes,
     $core.Iterable<$864.EventHandler>? eventHandlers,
     NluSettings? nluSettings,
-    $4486.AdvancedSettings? advancedSettings,
+    $4488.AdvancedSettings? advancedSettings,
     $core.Iterable<$core.String>? transitionRouteGroups,
     $864.KnowledgeConnectorSettings? knowledgeConnectorSettings,
     Flow_MultiLanguageSettings? multiLanguageSettings,
@@ -255,7 +255,7 @@ class Flow extends $pb.GeneratedMessage {
     ..pc<$864.TransitionRoute>(4, _omitFieldNames ? '' : 'transitionRoutes', $pb.PbFieldType.PM, subBuilder: $864.TransitionRoute.create)
     ..pc<$864.EventHandler>(10, _omitFieldNames ? '' : 'eventHandlers', $pb.PbFieldType.PM, subBuilder: $864.EventHandler.create)
     ..aOM<NluSettings>(11, _omitFieldNames ? '' : 'nluSettings', subBuilder: NluSettings.create)
-    ..aOM<$4486.AdvancedSettings>(14, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4486.AdvancedSettings.create)
+    ..aOM<$4488.AdvancedSettings>(14, _omitFieldNames ? '' : 'advancedSettings', subBuilder: $4488.AdvancedSettings.create)
     ..pPS(15, _omitFieldNames ? '' : 'transitionRouteGroups')
     ..aOM<$864.KnowledgeConnectorSettings>(18, _omitFieldNames ? '' : 'knowledgeConnectorSettings', subBuilder: $864.KnowledgeConnectorSettings.create)
     ..aOM<Flow_MultiLanguageSettings>(28, _omitFieldNames ? '' : 'multiLanguageSettings', subBuilder: Flow_MultiLanguageSettings.create)
@@ -367,15 +367,15 @@ class Flow extends $pb.GeneratedMessage {
   /// Hierarchical advanced settings for this flow. The settings exposed at the
   /// lower level overrides the settings exposed at the higher level.
   @$pb.TagNumber(14)
-  $4486.AdvancedSettings get advancedSettings => $_getN(6);
+  $4488.AdvancedSettings get advancedSettings => $_getN(6);
   @$pb.TagNumber(14)
-  set advancedSettings($4486.AdvancedSettings v) { setField(14, v); }
+  set advancedSettings($4488.AdvancedSettings v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasAdvancedSettings() => $_has(6);
   @$pb.TagNumber(14)
   void clearAdvancedSettings() => clearField(14);
   @$pb.TagNumber(14)
-  $4486.AdvancedSettings ensureAdvancedSettings() => $_ensure(6);
+  $4488.AdvancedSettings ensureAdvancedSettings() => $_ensure(6);
 
   ///  A flow's transition route group serve two purposes:
   ///
@@ -868,7 +868,7 @@ class GetFlowRequest extends $pb.GeneratedMessage {
 class UpdateFlowRequest extends $pb.GeneratedMessage {
   factory UpdateFlowRequest({
     Flow? flow,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $core.String? languageCode,
   }) {
     final $result = create();
@@ -889,7 +889,7 @@ class UpdateFlowRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFlowRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<Flow>(1, _omitFieldNames ? '' : 'flow', subBuilder: Flow.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOS(3, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
   ;
@@ -930,15 +930,15 @@ class UpdateFlowRequest extends $pb.GeneratedMessage {
   /// The mask to control which fields get updated. If the mask is not present,
   /// all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  The language of the following fields in `flow`:
   ///
@@ -1162,8 +1162,8 @@ class GetFlowValidationResultRequest extends $pb.GeneratedMessage {
 class FlowValidationResult extends $pb.GeneratedMessage {
   factory FlowValidationResult({
     $core.String? name,
-    $core.Iterable<$4489.ValidationMessage>? validationMessages,
-    $1775.Timestamp? updateTime,
+    $core.Iterable<$4491.ValidationMessage>? validationMessages,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1183,8 +1183,8 @@ class FlowValidationResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlowValidationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$4489.ValidationMessage>(2, _omitFieldNames ? '' : 'validationMessages', $pb.PbFieldType.PM, subBuilder: $4489.ValidationMessage.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..pc<$4491.ValidationMessage>(2, _omitFieldNames ? '' : 'validationMessages', $pb.PbFieldType.PM, subBuilder: $4491.ValidationMessage.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1223,19 +1223,19 @@ class FlowValidationResult extends $pb.GeneratedMessage {
 
   /// Contains all validation messages.
   @$pb.TagNumber(2)
-  $core.List<$4489.ValidationMessage> get validationMessages => $_getList(1);
+  $core.List<$4491.ValidationMessage> get validationMessages => $_getList(1);
 
   /// Last time the flow was validated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 enum ImportFlowRequest_Flow {
@@ -1383,7 +1383,7 @@ class ImportFlowRequest extends $pb.GeneratedMessage {
 /// [ImportFlowRequest][google.cloud.dialogflow.cx.v3beta1.ImportFlowRequest].
 class FlowImportStrategy extends $pb.GeneratedMessage {
   factory FlowImportStrategy({
-    $4490.ImportStrategy? globalImportStrategy,
+    $4492.ImportStrategy? globalImportStrategy,
   }) {
     final $result = create();
     if (globalImportStrategy != null) {
@@ -1396,7 +1396,7 @@ class FlowImportStrategy extends $pb.GeneratedMessage {
   factory FlowImportStrategy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlowImportStrategy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
-    ..e<$4490.ImportStrategy>(1, _omitFieldNames ? '' : 'globalImportStrategy', $pb.PbFieldType.OE, defaultOrMaker: $4490.ImportStrategy.IMPORT_STRATEGY_UNSPECIFIED, valueOf: $4490.ImportStrategy.valueOf, enumValues: $4490.ImportStrategy.values)
+    ..e<$4492.ImportStrategy>(1, _omitFieldNames ? '' : 'globalImportStrategy', $pb.PbFieldType.OE, defaultOrMaker: $4492.ImportStrategy.IMPORT_STRATEGY_UNSPECIFIED, valueOf: $4492.ImportStrategy.valueOf, enumValues: $4492.ImportStrategy.values)
     ..hasRequiredFields = false
   ;
 
@@ -1427,9 +1427,9 @@ class FlowImportStrategy extends $pb.GeneratedMessage {
   /// display name conflicts in the imported content. If not specified,
   /// 'CREATE_NEW' is assumed.
   @$pb.TagNumber(1)
-  $4490.ImportStrategy get globalImportStrategy => $_getN(0);
+  $4492.ImportStrategy get globalImportStrategy => $_getN(0);
   @$pb.TagNumber(1)
-  set globalImportStrategy($4490.ImportStrategy v) { setField(1, v); }
+  set globalImportStrategy($4492.ImportStrategy v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGlobalImportStrategy() => $_has(0);
   @$pb.TagNumber(1)

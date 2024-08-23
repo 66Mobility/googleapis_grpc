@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'log_enums.pbenum.dart' as $4472;
+import 'log_enums.pbenum.dart' as $4474;
 
 /// Payload proto for "clouddeploy.googleapis.com/target_notification"
 /// Platform Log event that describes the failure to send target status change
@@ -22,7 +22,7 @@ class TargetNotificationEvent extends $pb.GeneratedMessage {
   factory TargetNotificationEvent({
     $core.String? message,
     $core.String? target,
-    $4472.Type? type,
+    $4474.Type? type,
   }) {
     final $result = create();
     if (message != null) {
@@ -43,7 +43,7 @@ class TargetNotificationEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TargetNotificationEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.deploy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'message')
     ..aOS(2, _omitFieldNames ? '' : 'target')
-    ..e<$4472.Type>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4472.Type.TYPE_UNSPECIFIED, valueOf: $4472.Type.valueOf, enumValues: $4472.Type.values)
+    ..e<$4474.Type>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $4474.Type.TYPE_UNSPECIFIED, valueOf: $4474.Type.valueOf, enumValues: $4474.Type.values)
     ..hasRequiredFields = false
   ;
 
@@ -90,9 +90,9 @@ class TargetNotificationEvent extends $pb.GeneratedMessage {
 
   /// Type of this notification, e.g. for a Pub/Sub failure.
   @$pb.TagNumber(3)
-  $4472.Type get type => $_getN(2);
+  $4474.Type get type => $_getN(2);
   @$pb.TagNumber(3)
-  set type($4472.Type v) { setField(3, v); }
+  set type($4474.Type v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(2);
   @$pb.TagNumber(3)

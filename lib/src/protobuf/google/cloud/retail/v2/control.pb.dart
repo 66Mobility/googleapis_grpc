@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4593;
-import 'common.pbenum.dart' as $4593;
+import 'common.pb.dart' as $4595;
+import 'common.pbenum.dart' as $4595;
 
 enum Control_Control {
   rule, 
@@ -28,10 +28,10 @@ class Control extends $pb.GeneratedMessage {
   factory Control({
     $core.String? name,
     $core.String? displayName,
-    $4593.Rule? rule,
+    $4595.Rule? rule,
     $core.Iterable<$core.String>? associatedServingConfigIds,
-    $core.Iterable<$4593.SolutionType>? solutionTypes,
-    $core.Iterable<$4593.SearchSolutionUseCase>? searchSolutionUseCase,
+    $core.Iterable<$4595.SolutionType>? solutionTypes,
+    $core.Iterable<$4595.SearchSolutionUseCase>? searchSolutionUseCase,
   }) {
     final $result = create();
     if (name != null) {
@@ -66,10 +66,10 @@ class Control extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4593.Rule>(4, _omitFieldNames ? '' : 'rule', subBuilder: $4593.Rule.create)
+    ..aOM<$4595.Rule>(4, _omitFieldNames ? '' : 'rule', subBuilder: $4595.Rule.create)
     ..pPS(5, _omitFieldNames ? '' : 'associatedServingConfigIds')
-    ..pc<$4593.SolutionType>(6, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4593.SolutionType.valueOf, enumValues: $4593.SolutionType.values, defaultEnumValue: $4593.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
-    ..pc<$4593.SearchSolutionUseCase>(7, _omitFieldNames ? '' : 'searchSolutionUseCase', $pb.PbFieldType.KE, valueOf: $4593.SearchSolutionUseCase.valueOf, enumValues: $4593.SearchSolutionUseCase.values, defaultEnumValue: $4593.SearchSolutionUseCase.SEARCH_SOLUTION_USE_CASE_UNSPECIFIED)
+    ..pc<$4595.SolutionType>(6, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4595.SolutionType.valueOf, enumValues: $4595.SolutionType.values, defaultEnumValue: $4595.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
+    ..pc<$4595.SearchSolutionUseCase>(7, _omitFieldNames ? '' : 'searchSolutionUseCase', $pb.PbFieldType.KE, valueOf: $4595.SearchSolutionUseCase.valueOf, enumValues: $4595.SearchSolutionUseCase.values, defaultEnumValue: $4595.SearchSolutionUseCase.SEARCH_SOLUTION_USE_CASE_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -125,15 +125,15 @@ class Control extends $pb.GeneratedMessage {
   /// Enacts a set action when the condition is triggered.
   /// For example: Boost "gShoe" when query full matches "Running Shoes".
   @$pb.TagNumber(4)
-  $4593.Rule get rule => $_getN(2);
+  $4595.Rule get rule => $_getN(2);
   @$pb.TagNumber(4)
-  set rule($4593.Rule v) { setField(4, v); }
+  set rule($4595.Rule v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRule() => $_has(2);
   @$pb.TagNumber(4)
   void clearRule() => clearField(4);
   @$pb.TagNumber(4)
-  $4593.Rule ensureRule() => $_ensure(2);
+  $4595.Rule ensureRule() => $_ensure(2);
 
   ///  Output only. List of [serving config][google.cloud.retail.v2.ServingConfig]
   ///  ids that are associated with this control in the same
@@ -152,7 +152,7 @@ class Control extends $pb.GeneratedMessage {
   ///  If no solution type is provided at creation time, will default to
   ///  [SOLUTION_TYPE_SEARCH][google.cloud.retail.v2.SolutionType.SOLUTION_TYPE_SEARCH].
   @$pb.TagNumber(6)
-  $core.List<$4593.SolutionType> get solutionTypes => $_getList(4);
+  $core.List<$4595.SolutionType> get solutionTypes => $_getList(4);
 
   /// Specifies the use case for the control.
   /// Affects what condition fields can be set.
@@ -162,7 +162,7 @@ class Control extends $pb.GeneratedMessage {
   /// if not specified. Currently only allow one search_solution_use_case per
   /// control.
   @$pb.TagNumber(7)
-  $core.List<$4593.SearchSolutionUseCase> get searchSolutionUseCase => $_getList(5);
+  $core.List<$4595.SearchSolutionUseCase> get searchSolutionUseCase => $_getList(5);
 }
 
 

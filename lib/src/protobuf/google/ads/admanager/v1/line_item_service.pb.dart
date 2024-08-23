@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/money.pb.dart' as $1814;
-import 'computed_status_enum.pbenum.dart' as $1818;
-import 'creative_placeholder.pb.dart' as $1815;
-import 'environment_type_enum.pbenum.dart' as $1803;
-import 'goal.pb.dart' as $1816;
-import 'line_item_enums.pbenum.dart' as $1817;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/money.pb.dart' as $1815;
+import 'computed_status_enum.pbenum.dart' as $1819;
+import 'creative_placeholder.pb.dart' as $1816;
+import 'environment_type_enum.pbenum.dart' as $1804;
+import 'goal.pb.dart' as $1817;
+import 'line_item_enums.pbenum.dart' as $1818;
 
 /// The LineItem resource.
 class LineItem extends $pb.GeneratedMessage {
@@ -28,32 +28,32 @@ class LineItem extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? externalId,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.int? autoExtensionDays,
     $core.bool? unlimitedEndTime,
-    $1817.LineItemTypeEnum_LineItemType? lineItemType,
+    $1818.LineItemTypeEnum_LineItemType? lineItemType,
     $fixnum.Int64? priority,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.double? discount,
     $core.bool? archived,
-    $1814.Money? costPerUnit,
+    $1815.Money? costPerUnit,
     $core.bool? missingCreatives,
     $core.String? lastModifiedByApp,
     $fixnum.Int64? contractedUnitsBought,
-    $1817.LineItemCostTypeEnum_LineItemCostType? costType,
+    $1818.LineItemCostTypeEnum_LineItemCostType? costType,
     $core.String? notes,
     $core.String? webPropertyCode,
-    $1817.CreativeRotationTypeEnum_CreativeRotationType? creativeRotationType,
-    $1817.DeliveryRateTypeEnum_DeliveryRateType? deliveryRateType,
-    $1817.LineItemDiscountTypeEnum_LineItemDiscountType? discountType,
-    $1803.EnvironmentTypeEnum_EnvironmentType? environmentType,
-    $1817.ReservationStatusEnum_ReservationStatus? reservationStatus,
-    $core.Iterable<$1815.CreativePlaceholder>? creativePlaceholders,
-    $1818.ComputedStatusEnum_ComputedStatus? status,
-    $1816.Goal? primaryGoal,
-    $1816.Goal? impressionLimit,
-    $1775.Timestamp? updateTime,
+    $1818.CreativeRotationTypeEnum_CreativeRotationType? creativeRotationType,
+    $1818.DeliveryRateTypeEnum_DeliveryRateType? deliveryRateType,
+    $1818.LineItemDiscountTypeEnum_LineItemDiscountType? discountType,
+    $1804.EnvironmentTypeEnum_EnvironmentType? environmentType,
+    $1818.ReservationStatusEnum_ReservationStatus? reservationStatus,
+    $core.Iterable<$1816.CreativePlaceholder>? creativePlaceholders,
+    $1819.ComputedStatusEnum_ComputedStatus? status,
+    $1817.Goal? primaryGoal,
+    $1817.Goal? impressionLimit,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -153,32 +153,32 @@ class LineItem extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(5, _omitFieldNames ? '' : 'externalId')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'autoExtensionDays', $pb.PbFieldType.O3)
     ..aOB(9, _omitFieldNames ? '' : 'unlimitedEndTime')
-    ..e<$1817.LineItemTypeEnum_LineItemType>(10, _omitFieldNames ? '' : 'lineItemType', $pb.PbFieldType.OE, defaultOrMaker: $1817.LineItemTypeEnum_LineItemType.LINE_ITEM_TYPE_UNSPECIFIED, valueOf: $1817.LineItemTypeEnum_LineItemType.valueOf, enumValues: $1817.LineItemTypeEnum_LineItemType.values)
+    ..e<$1818.LineItemTypeEnum_LineItemType>(10, _omitFieldNames ? '' : 'lineItemType', $pb.PbFieldType.OE, defaultOrMaker: $1818.LineItemTypeEnum_LineItemType.LINE_ITEM_TYPE_UNSPECIFIED, valueOf: $1818.LineItemTypeEnum_LineItemType.valueOf, enumValues: $1818.LineItemTypeEnum_LineItemType.values)
     ..aInt64(11, _omitFieldNames ? '' : 'priority')
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'discount', $pb.PbFieldType.OD)
     ..aOB(14, _omitFieldNames ? '' : 'archived')
-    ..aOM<$1814.Money>(15, _omitFieldNames ? '' : 'costPerUnit', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(15, _omitFieldNames ? '' : 'costPerUnit', subBuilder: $1815.Money.create)
     ..aOB(16, _omitFieldNames ? '' : 'missingCreatives')
     ..aOS(17, _omitFieldNames ? '' : 'lastModifiedByApp')
     ..aInt64(18, _omitFieldNames ? '' : 'contractedUnitsBought')
-    ..e<$1817.LineItemCostTypeEnum_LineItemCostType>(19, _omitFieldNames ? '' : 'costType', $pb.PbFieldType.OE, defaultOrMaker: $1817.LineItemCostTypeEnum_LineItemCostType.LINE_ITEM_COST_TYPE_UNSPECIFIED, valueOf: $1817.LineItemCostTypeEnum_LineItemCostType.valueOf, enumValues: $1817.LineItemCostTypeEnum_LineItemCostType.values)
+    ..e<$1818.LineItemCostTypeEnum_LineItemCostType>(19, _omitFieldNames ? '' : 'costType', $pb.PbFieldType.OE, defaultOrMaker: $1818.LineItemCostTypeEnum_LineItemCostType.LINE_ITEM_COST_TYPE_UNSPECIFIED, valueOf: $1818.LineItemCostTypeEnum_LineItemCostType.valueOf, enumValues: $1818.LineItemCostTypeEnum_LineItemCostType.values)
     ..aOS(20, _omitFieldNames ? '' : 'notes')
     ..aOS(21, _omitFieldNames ? '' : 'webPropertyCode')
-    ..e<$1817.CreativeRotationTypeEnum_CreativeRotationType>(22, _omitFieldNames ? '' : 'creativeRotationType', $pb.PbFieldType.OE, defaultOrMaker: $1817.CreativeRotationTypeEnum_CreativeRotationType.CREATIVE_ROTATION_TYPE_UNSPECIFIED, valueOf: $1817.CreativeRotationTypeEnum_CreativeRotationType.valueOf, enumValues: $1817.CreativeRotationTypeEnum_CreativeRotationType.values)
-    ..e<$1817.DeliveryRateTypeEnum_DeliveryRateType>(23, _omitFieldNames ? '' : 'deliveryRateType', $pb.PbFieldType.OE, defaultOrMaker: $1817.DeliveryRateTypeEnum_DeliveryRateType.DELIVERY_RATE_TYPE_UNSPECIFIED, valueOf: $1817.DeliveryRateTypeEnum_DeliveryRateType.valueOf, enumValues: $1817.DeliveryRateTypeEnum_DeliveryRateType.values)
-    ..e<$1817.LineItemDiscountTypeEnum_LineItemDiscountType>(24, _omitFieldNames ? '' : 'discountType', $pb.PbFieldType.OE, defaultOrMaker: $1817.LineItemDiscountTypeEnum_LineItemDiscountType.LINE_ITEM_DISCOUNT_TYPE_UNSPECIFIED, valueOf: $1817.LineItemDiscountTypeEnum_LineItemDiscountType.valueOf, enumValues: $1817.LineItemDiscountTypeEnum_LineItemDiscountType.values)
-    ..e<$1803.EnvironmentTypeEnum_EnvironmentType>(25, _omitFieldNames ? '' : 'environmentType', $pb.PbFieldType.OE, defaultOrMaker: $1803.EnvironmentTypeEnum_EnvironmentType.ENVIRONMENT_TYPE_UNSPECIFIED, valueOf: $1803.EnvironmentTypeEnum_EnvironmentType.valueOf, enumValues: $1803.EnvironmentTypeEnum_EnvironmentType.values)
-    ..e<$1817.ReservationStatusEnum_ReservationStatus>(26, _omitFieldNames ? '' : 'reservationStatus', $pb.PbFieldType.OE, defaultOrMaker: $1817.ReservationStatusEnum_ReservationStatus.RESERVATION_STATUS_UNSPECIFIED, valueOf: $1817.ReservationStatusEnum_ReservationStatus.valueOf, enumValues: $1817.ReservationStatusEnum_ReservationStatus.values)
-    ..pc<$1815.CreativePlaceholder>(27, _omitFieldNames ? '' : 'creativePlaceholders', $pb.PbFieldType.PM, subBuilder: $1815.CreativePlaceholder.create)
-    ..e<$1818.ComputedStatusEnum_ComputedStatus>(28, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1818.ComputedStatusEnum_ComputedStatus.COMPUTED_STATUS_UNSPECIFIED, valueOf: $1818.ComputedStatusEnum_ComputedStatus.valueOf, enumValues: $1818.ComputedStatusEnum_ComputedStatus.values)
-    ..aOM<$1816.Goal>(29, _omitFieldNames ? '' : 'primaryGoal', subBuilder: $1816.Goal.create)
-    ..aOM<$1816.Goal>(30, _omitFieldNames ? '' : 'impressionLimit', subBuilder: $1816.Goal.create)
-    ..aOM<$1775.Timestamp>(31, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..e<$1818.CreativeRotationTypeEnum_CreativeRotationType>(22, _omitFieldNames ? '' : 'creativeRotationType', $pb.PbFieldType.OE, defaultOrMaker: $1818.CreativeRotationTypeEnum_CreativeRotationType.CREATIVE_ROTATION_TYPE_UNSPECIFIED, valueOf: $1818.CreativeRotationTypeEnum_CreativeRotationType.valueOf, enumValues: $1818.CreativeRotationTypeEnum_CreativeRotationType.values)
+    ..e<$1818.DeliveryRateTypeEnum_DeliveryRateType>(23, _omitFieldNames ? '' : 'deliveryRateType', $pb.PbFieldType.OE, defaultOrMaker: $1818.DeliveryRateTypeEnum_DeliveryRateType.DELIVERY_RATE_TYPE_UNSPECIFIED, valueOf: $1818.DeliveryRateTypeEnum_DeliveryRateType.valueOf, enumValues: $1818.DeliveryRateTypeEnum_DeliveryRateType.values)
+    ..e<$1818.LineItemDiscountTypeEnum_LineItemDiscountType>(24, _omitFieldNames ? '' : 'discountType', $pb.PbFieldType.OE, defaultOrMaker: $1818.LineItemDiscountTypeEnum_LineItemDiscountType.LINE_ITEM_DISCOUNT_TYPE_UNSPECIFIED, valueOf: $1818.LineItemDiscountTypeEnum_LineItemDiscountType.valueOf, enumValues: $1818.LineItemDiscountTypeEnum_LineItemDiscountType.values)
+    ..e<$1804.EnvironmentTypeEnum_EnvironmentType>(25, _omitFieldNames ? '' : 'environmentType', $pb.PbFieldType.OE, defaultOrMaker: $1804.EnvironmentTypeEnum_EnvironmentType.ENVIRONMENT_TYPE_UNSPECIFIED, valueOf: $1804.EnvironmentTypeEnum_EnvironmentType.valueOf, enumValues: $1804.EnvironmentTypeEnum_EnvironmentType.values)
+    ..e<$1818.ReservationStatusEnum_ReservationStatus>(26, _omitFieldNames ? '' : 'reservationStatus', $pb.PbFieldType.OE, defaultOrMaker: $1818.ReservationStatusEnum_ReservationStatus.RESERVATION_STATUS_UNSPECIFIED, valueOf: $1818.ReservationStatusEnum_ReservationStatus.valueOf, enumValues: $1818.ReservationStatusEnum_ReservationStatus.values)
+    ..pc<$1816.CreativePlaceholder>(27, _omitFieldNames ? '' : 'creativePlaceholders', $pb.PbFieldType.PM, subBuilder: $1816.CreativePlaceholder.create)
+    ..e<$1819.ComputedStatusEnum_ComputedStatus>(28, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $1819.ComputedStatusEnum_ComputedStatus.COMPUTED_STATUS_UNSPECIFIED, valueOf: $1819.ComputedStatusEnum_ComputedStatus.valueOf, enumValues: $1819.ComputedStatusEnum_ComputedStatus.values)
+    ..aOM<$1817.Goal>(29, _omitFieldNames ? '' : 'primaryGoal', subBuilder: $1817.Goal.create)
+    ..aOM<$1817.Goal>(30, _omitFieldNames ? '' : 'impressionLimit', subBuilder: $1817.Goal.create)
+    ..aOM<$1776.Timestamp>(31, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -240,15 +240,15 @@ class LineItem extends $pb.GeneratedMessage {
   /// Required. Time at which the LineItem will begin serving. This attribute
   /// must be in the future when creating a LineItem.
   @$pb.TagNumber(6)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(6)
-  set startTime($1775.Timestamp v) { setField(6, v); }
+  set startTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Optional. Time at which the LineItem will stop serving. This attribute is
   /// ignored when
@@ -258,15 +258,15 @@ class LineItem extends $pb.GeneratedMessage {
   /// does not include
   /// [auto_extension_days][google.ads.admanager.v1.LineItem.auto_extension_days].
   @$pb.TagNumber(7)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(7)
-  set endTime($1775.Timestamp v) { setField(7, v); }
+  set endTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 
   /// Optional. Number of days to allow a LineItem to deliver past its
   /// [end_time][google.ads.admanager.v1.LineItem.end_time]. A maximum of 7 days
@@ -300,9 +300,9 @@ class LineItem extends $pb.GeneratedMessage {
   /// More information can be found on the [Ad Manager Help
   /// Center](https://support.google.com/dfp_premium/answer/177279).
   @$pb.TagNumber(10)
-  $1817.LineItemTypeEnum_LineItemType get lineItemType => $_getN(7);
+  $1818.LineItemTypeEnum_LineItemType get lineItemType => $_getN(7);
   @$pb.TagNumber(10)
-  set lineItemType($1817.LineItemTypeEnum_LineItemType v) { setField(10, v); }
+  set lineItemType($1818.LineItemTypeEnum_LineItemType v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasLineItemType() => $_has(7);
   @$pb.TagNumber(10)
@@ -338,15 +338,15 @@ class LineItem extends $pb.GeneratedMessage {
   /// Output only. The instant at which the LineItem was created. This attribute
   /// may be null for line items created before this feature was introduced.
   @$pb.TagNumber(12)
-  $1775.Timestamp get createTime => $_getN(9);
+  $1776.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(12)
-  set createTime($1775.Timestamp v) { setField(12, v); }
+  set createTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(12)
   void clearCreateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCreateTime() => $_ensure(9);
 
   /// Optional. The number here is either a percentage or an absolute value
   /// depending on the
@@ -374,15 +374,15 @@ class LineItem extends $pb.GeneratedMessage {
 
   /// Required. The amount of money to spend per impression or click.
   @$pb.TagNumber(15)
-  $1814.Money get costPerUnit => $_getN(12);
+  $1815.Money get costPerUnit => $_getN(12);
   @$pb.TagNumber(15)
-  set costPerUnit($1814.Money v) { setField(15, v); }
+  set costPerUnit($1815.Money v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasCostPerUnit() => $_has(12);
   @$pb.TagNumber(15)
   void clearCostPerUnit() => clearField(15);
   @$pb.TagNumber(15)
-  $1814.Money ensureCostPerUnit() => $_ensure(12);
+  $1815.Money ensureCostPerUnit() => $_ensure(12);
 
   ///  Output only. Indicates if a line item is missing any
   ///  [creatives][google.ads.admanager.v1.Creative] for the
@@ -448,9 +448,9 @@ class LineItem extends $pb.GeneratedMessage {
 
   /// Required. The method used for billing this line item.
   @$pb.TagNumber(19)
-  $1817.LineItemCostTypeEnum_LineItemCostType get costType => $_getN(16);
+  $1818.LineItemCostTypeEnum_LineItemCostType get costType => $_getN(16);
   @$pb.TagNumber(19)
-  set costType($1817.LineItemCostTypeEnum_LineItemCostType v) { setField(19, v); }
+  set costType($1818.LineItemCostTypeEnum_LineItemCostType v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasCostType() => $_has(16);
   @$pb.TagNumber(19)
@@ -484,9 +484,9 @@ class LineItem extends $pb.GeneratedMessage {
   /// [creatives][google.ads.admanager.v1.Creative] that are associated with the
   /// line item.
   @$pb.TagNumber(22)
-  $1817.CreativeRotationTypeEnum_CreativeRotationType get creativeRotationType => $_getN(19);
+  $1818.CreativeRotationTypeEnum_CreativeRotationType get creativeRotationType => $_getN(19);
   @$pb.TagNumber(22)
-  set creativeRotationType($1817.CreativeRotationTypeEnum_CreativeRotationType v) { setField(22, v); }
+  set creativeRotationType($1818.CreativeRotationTypeEnum_CreativeRotationType v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasCreativeRotationType() => $_has(19);
   @$pb.TagNumber(22)
@@ -497,9 +497,9 @@ class LineItem extends $pb.GeneratedMessage {
   /// [FRONTLOADED][DeliveryRatetype.FRONTLOADED] depending on the network's
   /// configuration.
   @$pb.TagNumber(23)
-  $1817.DeliveryRateTypeEnum_DeliveryRateType get deliveryRateType => $_getN(20);
+  $1818.DeliveryRateTypeEnum_DeliveryRateType get deliveryRateType => $_getN(20);
   @$pb.TagNumber(23)
-  set deliveryRateType($1817.DeliveryRateTypeEnum_DeliveryRateType v) { setField(23, v); }
+  set deliveryRateType($1818.DeliveryRateTypeEnum_DeliveryRateType v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasDeliveryRateType() => $_has(20);
   @$pb.TagNumber(23)
@@ -508,9 +508,9 @@ class LineItem extends $pb.GeneratedMessage {
   /// Non-empty default. The type of discount applied to the line item. Defaults
   /// to [PERCENTAGE][LineItemDiscountType.PERCENTAGE].
   @$pb.TagNumber(24)
-  $1817.LineItemDiscountTypeEnum_LineItemDiscountType get discountType => $_getN(21);
+  $1818.LineItemDiscountTypeEnum_LineItemDiscountType get discountType => $_getN(21);
   @$pb.TagNumber(24)
-  set discountType($1817.LineItemDiscountTypeEnum_LineItemDiscountType v) { setField(24, v); }
+  set discountType($1818.LineItemDiscountTypeEnum_LineItemDiscountType v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasDiscountType() => $_has(21);
   @$pb.TagNumber(24)
@@ -522,9 +522,9 @@ class LineItem extends $pb.GeneratedMessage {
   /// target [AdUnits][google.ads.admanager.v1.AdUnit] that have `AdUnitSizes`
   /// whose `environment_type` is also `VIDEO_PLAYER`.
   @$pb.TagNumber(25)
-  $1803.EnvironmentTypeEnum_EnvironmentType get environmentType => $_getN(22);
+  $1804.EnvironmentTypeEnum_EnvironmentType get environmentType => $_getN(22);
   @$pb.TagNumber(25)
-  set environmentType($1803.EnvironmentTypeEnum_EnvironmentType v) { setField(25, v); }
+  set environmentType($1804.EnvironmentTypeEnum_EnvironmentType v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasEnvironmentType() => $_has(22);
   @$pb.TagNumber(25)
@@ -533,9 +533,9 @@ class LineItem extends $pb.GeneratedMessage {
   /// Output only. Describes whether or not inventory has been reserved for the
   /// line item.
   @$pb.TagNumber(26)
-  $1817.ReservationStatusEnum_ReservationStatus get reservationStatus => $_getN(23);
+  $1818.ReservationStatusEnum_ReservationStatus get reservationStatus => $_getN(23);
   @$pb.TagNumber(26)
-  set reservationStatus($1817.ReservationStatusEnum_ReservationStatus v) { setField(26, v); }
+  set reservationStatus($1818.ReservationStatusEnum_ReservationStatus v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasReservationStatus() => $_has(23);
   @$pb.TagNumber(26)
@@ -544,13 +544,13 @@ class LineItem extends $pb.GeneratedMessage {
   /// Required. Details about the creatives that are expected to serve through
   /// this LineItem.
   @$pb.TagNumber(27)
-  $core.List<$1815.CreativePlaceholder> get creativePlaceholders => $_getList(24);
+  $core.List<$1816.CreativePlaceholder> get creativePlaceholders => $_getList(24);
 
   /// Output only. The status of the LineItem.
   @$pb.TagNumber(28)
-  $1818.ComputedStatusEnum_ComputedStatus get status => $_getN(25);
+  $1819.ComputedStatusEnum_ComputedStatus get status => $_getN(25);
   @$pb.TagNumber(28)
-  set status($1818.ComputedStatusEnum_ComputedStatus v) { setField(28, v); }
+  set status($1819.ComputedStatusEnum_ComputedStatus v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasStatus() => $_has(25);
   @$pb.TagNumber(28)
@@ -559,15 +559,15 @@ class LineItem extends $pb.GeneratedMessage {
   /// Required. The primary goal that this LineItem is associated with, which is
   /// used in its pacing and budgeting.
   @$pb.TagNumber(29)
-  $1816.Goal get primaryGoal => $_getN(26);
+  $1817.Goal get primaryGoal => $_getN(26);
   @$pb.TagNumber(29)
-  set primaryGoal($1816.Goal v) { setField(29, v); }
+  set primaryGoal($1817.Goal v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasPrimaryGoal() => $_has(26);
   @$pb.TagNumber(29)
   void clearPrimaryGoal() => clearField(29);
   @$pb.TagNumber(29)
-  $1816.Goal ensurePrimaryGoal() => $_ensure(26);
+  $1817.Goal ensurePrimaryGoal() => $_ensure(26);
 
   /// Optional. The impression limit for the LineItem. This field is meaningful
   /// only if the
@@ -576,27 +576,27 @@ class LineItem extends $pb.GeneratedMessage {
   /// [LineItem.cost_type][google.ads.admanager.v1.LineItem.cost_type] is
   /// [CostType.CPM][].
   @$pb.TagNumber(30)
-  $1816.Goal get impressionLimit => $_getN(27);
+  $1817.Goal get impressionLimit => $_getN(27);
   @$pb.TagNumber(30)
-  set impressionLimit($1816.Goal v) { setField(30, v); }
+  set impressionLimit($1817.Goal v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasImpressionLimit() => $_has(27);
   @$pb.TagNumber(30)
   void clearImpressionLimit() => clearField(30);
   @$pb.TagNumber(30)
-  $1816.Goal ensureImpressionLimit() => $_ensure(27);
+  $1817.Goal ensureImpressionLimit() => $_ensure(27);
 
   /// Output only. The instant at which the LineItem was last updated
   @$pb.TagNumber(31)
-  $1775.Timestamp get updateTime => $_getN(28);
+  $1776.Timestamp get updateTime => $_getN(28);
   @$pb.TagNumber(31)
-  set updateTime($1775.Timestamp v) { setField(31, v); }
+  set updateTime($1776.Timestamp v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasUpdateTime() => $_has(28);
   @$pb.TagNumber(31)
   void clearUpdateTime() => clearField(31);
   @$pb.TagNumber(31)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(28);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(28);
 }
 
 /// Request object for GetLineItem method.

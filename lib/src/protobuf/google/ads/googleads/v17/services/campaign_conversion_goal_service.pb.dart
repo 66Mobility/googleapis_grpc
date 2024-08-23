@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/campaign_conversion_goal.pb.dart' as $3814;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/campaign_conversion_goal.pb.dart' as $3815;
 
 /// Request message for
 /// [CampaignConversionGoalService.MutateCampaignConversionGoals][google.ads.googleads.v17.services.CampaignConversionGoalService.MutateCampaignConversionGoals].
@@ -104,8 +104,8 @@ enum CampaignConversionGoalOperation_Operation {
 /// A single operation (update) on a campaign conversion goal.
 class CampaignConversionGoalOperation extends $pb.GeneratedMessage {
   factory CampaignConversionGoalOperation({
-    $3814.CampaignConversionGoal? update,
-    $2209.FieldMask? updateMask,
+    $3815.CampaignConversionGoal? update,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (update != null) {
@@ -126,8 +126,8 @@ class CampaignConversionGoalOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignConversionGoalOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$3814.CampaignConversionGoal>(1, _omitFieldNames ? '' : 'update', subBuilder: $3814.CampaignConversionGoal.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$3815.CampaignConversionGoal>(1, _omitFieldNames ? '' : 'update', subBuilder: $3815.CampaignConversionGoal.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -158,27 +158,27 @@ class CampaignConversionGoalOperation extends $pb.GeneratedMessage {
   /// Update operation: The customer conversion goal is expected to have a
   /// valid resource name.
   @$pb.TagNumber(1)
-  $3814.CampaignConversionGoal get update => $_getN(0);
+  $3815.CampaignConversionGoal get update => $_getN(0);
   @$pb.TagNumber(1)
-  set update($3814.CampaignConversionGoal v) { setField(1, v); }
+  set update($3815.CampaignConversionGoal v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdate() => clearField(1);
   @$pb.TagNumber(1)
-  $3814.CampaignConversionGoal ensureUpdate() => $_ensure(0);
+  $3815.CampaignConversionGoal ensureUpdate() => $_ensure(0);
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Response message for a campaign conversion goal mutate.

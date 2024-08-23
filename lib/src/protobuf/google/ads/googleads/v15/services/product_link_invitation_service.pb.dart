@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/product_link_invitation_status.pbenum.dart' as $2333;
+import '../enums/product_link_invitation_status.pbenum.dart' as $2334;
 
 /// Request message for
 /// [ProductLinkInvitationService.UpdateProductLinkInvitation][google.ads.googleads.v15.services.ProductLinkInvitationService.UpdateProductLinkInvitation].
 class UpdateProductLinkInvitationRequest extends $pb.GeneratedMessage {
   factory UpdateProductLinkInvitationRequest({
     $core.String? customerId,
-    $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus? productLinkInvitationStatus,
+    $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus? productLinkInvitationStatus,
     $core.String? resourceName,
   }) {
     final $result = create();
@@ -41,7 +41,7 @@ class UpdateProductLinkInvitationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProductLinkInvitationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
-    ..e<$2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus>(2, _omitFieldNames ? '' : 'productLinkInvitationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.UNSPECIFIED, valueOf: $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.valueOf, enumValues: $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.values)
+    ..e<$2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus>(2, _omitFieldNames ? '' : 'productLinkInvitationStatus', $pb.PbFieldType.OE, defaultOrMaker: $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.UNSPECIFIED, valueOf: $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.valueOf, enumValues: $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus.values)
     ..aOS(3, _omitFieldNames ? '' : 'resourceName')
     ..hasRequiredFields = false
   ;
@@ -79,9 +79,9 @@ class UpdateProductLinkInvitationRequest extends $pb.GeneratedMessage {
 
   /// Required. The product link invitation to be created.
   @$pb.TagNumber(2)
-  $2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus get productLinkInvitationStatus => $_getN(1);
+  $2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus get productLinkInvitationStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set productLinkInvitationStatus($2333.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus v) { setField(2, v); }
+  set productLinkInvitationStatus($2334.ProductLinkInvitationStatusEnum_ProductLinkInvitationStatus v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProductLinkInvitationStatus() => $_has(1);
   @$pb.TagNumber(2)

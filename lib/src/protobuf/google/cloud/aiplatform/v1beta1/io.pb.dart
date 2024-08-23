@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'api_auth.pb.dart' as $4275;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'api_auth.pb.dart' as $4276;
 import 'io.pbenum.dart';
 
 export 'io.pbenum.dart';
@@ -667,8 +667,8 @@ class DirectUploadSource extends $pb.GeneratedMessage {
 class SlackSource_SlackChannels_SlackChannel extends $pb.GeneratedMessage {
   factory SlackSource_SlackChannels_SlackChannel({
     $core.String? channelId,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (channelId != null) {
@@ -688,8 +688,8 @@ class SlackSource_SlackChannels_SlackChannel extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlackSource.SlackChannels.SlackChannel', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'channelId')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -726,34 +726,34 @@ class SlackSource_SlackChannels_SlackChannel extends $pb.GeneratedMessage {
 
   /// Optional. The starting timestamp for messages to import.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Optional. The ending timestamp for messages to import.
   @$pb.TagNumber(3)
-  $1775.Timestamp get endTime => $_getN(2);
+  $1776.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($1775.Timestamp v) { setField(3, v); }
+  set endTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEndTime() => $_ensure(2);
+  $1776.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// SlackChannels contains the Slack channels and corresponding access token.
 class SlackSource_SlackChannels extends $pb.GeneratedMessage {
   factory SlackSource_SlackChannels({
     $core.Iterable<SlackSource_SlackChannels_SlackChannel>? channels,
-    $4275.ApiAuth_ApiKeyConfig? apiKeyConfig,
+    $4276.ApiAuth_ApiKeyConfig? apiKeyConfig,
   }) {
     final $result = create();
     if (channels != null) {
@@ -770,7 +770,7 @@ class SlackSource_SlackChannels extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlackSource.SlackChannels', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..pc<SlackSource_SlackChannels_SlackChannel>(1, _omitFieldNames ? '' : 'channels', $pb.PbFieldType.PM, subBuilder: SlackSource_SlackChannels_SlackChannel.create)
-    ..aOM<$4275.ApiAuth_ApiKeyConfig>(3, _omitFieldNames ? '' : 'apiKeyConfig', subBuilder: $4275.ApiAuth_ApiKeyConfig.create)
+    ..aOM<$4276.ApiAuth_ApiKeyConfig>(3, _omitFieldNames ? '' : 'apiKeyConfig', subBuilder: $4276.ApiAuth_ApiKeyConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -804,15 +804,15 @@ class SlackSource_SlackChannels extends $pb.GeneratedMessage {
   /// Slack channel access token that has access to the slack channel IDs.
   /// See: https://api.slack.com/tutorials/tracks/getting-a-token.
   @$pb.TagNumber(3)
-  $4275.ApiAuth_ApiKeyConfig get apiKeyConfig => $_getN(1);
+  $4276.ApiAuth_ApiKeyConfig get apiKeyConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set apiKeyConfig($4275.ApiAuth_ApiKeyConfig v) { setField(3, v); }
+  set apiKeyConfig($4276.ApiAuth_ApiKeyConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasApiKeyConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearApiKeyConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $4275.ApiAuth_ApiKeyConfig ensureApiKeyConfig() => $_ensure(1);
+  $4276.ApiAuth_ApiKeyConfig ensureApiKeyConfig() => $_ensure(1);
 }
 
 /// The Slack source for the ImportRagFilesRequest.
@@ -868,7 +868,7 @@ class JiraSource_JiraQueries extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? customQueries,
     $core.String? email,
     $core.String? serverUri,
-    $4275.ApiAuth_ApiKeyConfig? apiKeyConfig,
+    $4276.ApiAuth_ApiKeyConfig? apiKeyConfig,
   }) {
     final $result = create();
     if (projects != null) {
@@ -897,7 +897,7 @@ class JiraSource_JiraQueries extends $pb.GeneratedMessage {
     ..pPS(4, _omitFieldNames ? '' : 'customQueries')
     ..aOS(5, _omitFieldNames ? '' : 'email')
     ..aOS(6, _omitFieldNames ? '' : 'serverUri')
-    ..aOM<$4275.ApiAuth_ApiKeyConfig>(7, _omitFieldNames ? '' : 'apiKeyConfig', subBuilder: $4275.ApiAuth_ApiKeyConfig.create)
+    ..aOM<$4276.ApiAuth_ApiKeyConfig>(7, _omitFieldNames ? '' : 'apiKeyConfig', subBuilder: $4276.ApiAuth_ApiKeyConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -957,15 +957,15 @@ class JiraSource_JiraQueries extends $pb.GeneratedMessage {
   /// Jira API key
   /// (https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/).
   @$pb.TagNumber(7)
-  $4275.ApiAuth_ApiKeyConfig get apiKeyConfig => $_getN(4);
+  $4276.ApiAuth_ApiKeyConfig get apiKeyConfig => $_getN(4);
   @$pb.TagNumber(7)
-  set apiKeyConfig($4275.ApiAuth_ApiKeyConfig v) { setField(7, v); }
+  set apiKeyConfig($4276.ApiAuth_ApiKeyConfig v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasApiKeyConfig() => $_has(4);
   @$pb.TagNumber(7)
   void clearApiKeyConfig() => clearField(7);
   @$pb.TagNumber(7)
-  $4275.ApiAuth_ApiKeyConfig ensureApiKeyConfig() => $_ensure(4);
+  $4276.ApiAuth_ApiKeyConfig ensureApiKeyConfig() => $_ensure(4);
 }
 
 /// The Jira source for the ImportRagFilesRequest.

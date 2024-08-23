@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/change_status_operation.pbenum.dart' as $2232;
-import '../enums/change_status_resource_type.pbenum.dart' as $2231;
+import '../enums/change_status_operation.pbenum.dart' as $2233;
+import '../enums/change_status_resource_type.pbenum.dart' as $2232;
 
 /// Describes the status of returned resource. ChangeStatus could have up to 3
 /// minutes delay to reflect a new change.
 class ChangeStatus extends $pb.GeneratedMessage {
   factory ChangeStatus({
     $core.String? resourceName,
-    $2231.ChangeStatusResourceTypeEnum_ChangeStatusResourceType? resourceType,
-    $2232.ChangeStatusOperationEnum_ChangeStatusOperation? resourceStatus,
+    $2232.ChangeStatusResourceTypeEnum_ChangeStatusResourceType? resourceType,
+    $2233.ChangeStatusOperationEnum_ChangeStatusOperation? resourceStatus,
     $core.String? campaign,
     $core.String? adGroup,
     $core.String? lastChangeDateTime,
@@ -114,8 +114,8 @@ class ChangeStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChangeStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2231.ChangeStatusResourceTypeEnum_ChangeStatusResourceType>(4, _omitFieldNames ? '' : 'resourceType', $pb.PbFieldType.OE, defaultOrMaker: $2231.ChangeStatusResourceTypeEnum_ChangeStatusResourceType.UNSPECIFIED, valueOf: $2231.ChangeStatusResourceTypeEnum_ChangeStatusResourceType.valueOf, enumValues: $2231.ChangeStatusResourceTypeEnum_ChangeStatusResourceType.values)
-    ..e<$2232.ChangeStatusOperationEnum_ChangeStatusOperation>(8, _omitFieldNames ? '' : 'resourceStatus', $pb.PbFieldType.OE, defaultOrMaker: $2232.ChangeStatusOperationEnum_ChangeStatusOperation.UNSPECIFIED, valueOf: $2232.ChangeStatusOperationEnum_ChangeStatusOperation.valueOf, enumValues: $2232.ChangeStatusOperationEnum_ChangeStatusOperation.values)
+    ..e<$2232.ChangeStatusResourceTypeEnum_ChangeStatusResourceType>(4, _omitFieldNames ? '' : 'resourceType', $pb.PbFieldType.OE, defaultOrMaker: $2232.ChangeStatusResourceTypeEnum_ChangeStatusResourceType.UNSPECIFIED, valueOf: $2232.ChangeStatusResourceTypeEnum_ChangeStatusResourceType.valueOf, enumValues: $2232.ChangeStatusResourceTypeEnum_ChangeStatusResourceType.values)
+    ..e<$2233.ChangeStatusOperationEnum_ChangeStatusOperation>(8, _omitFieldNames ? '' : 'resourceStatus', $pb.PbFieldType.OE, defaultOrMaker: $2233.ChangeStatusOperationEnum_ChangeStatusOperation.UNSPECIFIED, valueOf: $2233.ChangeStatusOperationEnum_ChangeStatusOperation.valueOf, enumValues: $2233.ChangeStatusOperationEnum_ChangeStatusOperation.values)
     ..aOS(17, _omitFieldNames ? '' : 'campaign')
     ..aOS(18, _omitFieldNames ? '' : 'adGroup')
     ..aOS(24, _omitFieldNames ? '' : 'lastChangeDateTime')
@@ -175,9 +175,9 @@ class ChangeStatus extends $pb.GeneratedMessage {
   /// what fields will be set. For example, for AD_GROUP, campaign and ad_group
   /// fields will be set.
   @$pb.TagNumber(4)
-  $2231.ChangeStatusResourceTypeEnum_ChangeStatusResourceType get resourceType => $_getN(1);
+  $2232.ChangeStatusResourceTypeEnum_ChangeStatusResourceType get resourceType => $_getN(1);
   @$pb.TagNumber(4)
-  set resourceType($2231.ChangeStatusResourceTypeEnum_ChangeStatusResourceType v) { setField(4, v); }
+  set resourceType($2232.ChangeStatusResourceTypeEnum_ChangeStatusResourceType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResourceType() => $_has(1);
   @$pb.TagNumber(4)
@@ -185,9 +185,9 @@ class ChangeStatus extends $pb.GeneratedMessage {
 
   /// Output only. Represents the status of the changed resource.
   @$pb.TagNumber(8)
-  $2232.ChangeStatusOperationEnum_ChangeStatusOperation get resourceStatus => $_getN(2);
+  $2233.ChangeStatusOperationEnum_ChangeStatusOperation get resourceStatus => $_getN(2);
   @$pb.TagNumber(8)
-  set resourceStatus($2232.ChangeStatusOperationEnum_ChangeStatusOperation v) { setField(8, v); }
+  set resourceStatus($2233.ChangeStatusOperationEnum_ChangeStatusOperation v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasResourceStatus() => $_has(2);
   @$pb.TagNumber(8)

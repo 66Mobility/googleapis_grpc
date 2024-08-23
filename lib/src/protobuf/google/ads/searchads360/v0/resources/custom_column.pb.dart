@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/custom_column_value_type.pbenum.dart' as $4072;
+import '../enums/custom_column_value_type.pbenum.dart' as $4073;
 
 /// A custom column.
 /// See Search Ads 360 custom column at
@@ -25,7 +25,7 @@ class CustomColumn extends $pb.GeneratedMessage {
     $fixnum.Int64? id,
     $core.String? name,
     $core.String? description,
-    $4072.CustomColumnValueTypeEnum_CustomColumnValueType? valueType,
+    $4073.CustomColumnValueTypeEnum_CustomColumnValueType? valueType,
     $core.bool? referencesAttributes,
     $core.bool? referencesMetrics,
     $core.bool? queryable,
@@ -70,7 +70,7 @@ class CustomColumn extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..e<$4072.CustomColumnValueTypeEnum_CustomColumnValueType>(5, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: $4072.CustomColumnValueTypeEnum_CustomColumnValueType.UNSPECIFIED, valueOf: $4072.CustomColumnValueTypeEnum_CustomColumnValueType.valueOf, enumValues: $4072.CustomColumnValueTypeEnum_CustomColumnValueType.values)
+    ..e<$4073.CustomColumnValueTypeEnum_CustomColumnValueType>(5, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: $4073.CustomColumnValueTypeEnum_CustomColumnValueType.UNSPECIFIED, valueOf: $4073.CustomColumnValueTypeEnum_CustomColumnValueType.valueOf, enumValues: $4073.CustomColumnValueTypeEnum_CustomColumnValueType.values)
     ..aOB(6, _omitFieldNames ? '' : 'referencesAttributes')
     ..aOB(7, _omitFieldNames ? '' : 'referencesMetrics')
     ..aOB(8, _omitFieldNames ? '' : 'queryable')
@@ -144,9 +144,9 @@ class CustomColumn extends $pb.GeneratedMessage {
 
   /// Output only. The type of the result value of the custom column.
   @$pb.TagNumber(5)
-  $4072.CustomColumnValueTypeEnum_CustomColumnValueType get valueType => $_getN(4);
+  $4073.CustomColumnValueTypeEnum_CustomColumnValueType get valueType => $_getN(4);
   @$pb.TagNumber(5)
-  set valueType($4072.CustomColumnValueTypeEnum_CustomColumnValueType v) { setField(5, v); }
+  set valueType($4073.CustomColumnValueTypeEnum_CustomColumnValueType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasValueType() => $_has(4);
   @$pb.TagNumber(5)

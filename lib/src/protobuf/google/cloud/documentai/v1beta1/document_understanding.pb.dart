@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'document_understanding.pbenum.dart';
-import 'geometry.pb.dart' as $4517;
+import 'geometry.pb.dart' as $4519;
 
 export 'document_understanding.pbenum.dart';
 
@@ -509,7 +509,7 @@ class TableExtractionParams extends $pb.GeneratedMessage {
 class TableBoundHint extends $pb.GeneratedMessage {
   factory TableBoundHint({
     $core.int? pageNumber,
-    $4517.BoundingPoly? boundingBox,
+    $4519.BoundingPoly? boundingBox,
   }) {
     final $result = create();
     if (pageNumber != null) {
@@ -526,7 +526,7 @@ class TableBoundHint extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TableBoundHint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'pageNumber', $pb.PbFieldType.O3)
-    ..aOM<$4517.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4517.BoundingPoly.create)
+    ..aOM<$4519.BoundingPoly>(2, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4519.BoundingPoly.create)
     ..hasRequiredFields = false
   ;
 
@@ -566,15 +566,15 @@ class TableBoundHint extends $pb.GeneratedMessage {
   /// Bounding box hint for a table on this page. The coordinates must be
   /// normalized to [0,1] and the bounding box must be an axis-aligned rectangle.
   @$pb.TagNumber(2)
-  $4517.BoundingPoly get boundingBox => $_getN(1);
+  $4519.BoundingPoly get boundingBox => $_getN(1);
   @$pb.TagNumber(2)
-  set boundingBox($4517.BoundingPoly v) { setField(2, v); }
+  set boundingBox($4519.BoundingPoly v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBoundingBox() => $_has(1);
   @$pb.TagNumber(2)
   void clearBoundingBox() => clearField(2);
   @$pb.TagNumber(2)
-  $4517.BoundingPoly ensureBoundingBox() => $_ensure(1);
+  $4519.BoundingPoly ensureBoundingBox() => $_ensure(1);
 }
 
 /// Parameters to control form extraction behavior.
@@ -1086,8 +1086,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
     OperationMetadata_State? state,
     $core.String? stateMessage,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -1111,8 +1111,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.documentai.v1beta1'), createEmptyInstance: create)
     ..e<OperationMetadata_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: OperationMetadata_State.STATE_UNSPECIFIED, valueOf: OperationMetadata_State.valueOf, enumValues: OperationMetadata_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'stateMessage')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1159,27 +1159,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The creation time of the operation.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The last update time of the operation.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
 

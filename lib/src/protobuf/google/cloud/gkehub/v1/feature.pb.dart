@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'configmanagement/configmanagement.pb.dart' as $4536;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'configmanagement/configmanagement.pb.dart' as $4538;
 import 'feature.pbenum.dart';
-import 'multiclusteringress/multiclusteringress.pb.dart' as $4535;
+import 'multiclusteringress/multiclusteringress.pb.dart' as $4537;
 
 export 'feature.pbenum.dart';
 
@@ -30,9 +30,9 @@ class Feature extends $pb.GeneratedMessage {
     $core.Map<$core.String, MembershipFeatureSpec>? membershipSpecs,
     CommonFeatureState? state,
     $core.Map<$core.String, MembershipFeatureState>? membershipStates,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -79,9 +79,9 @@ class Feature extends $pb.GeneratedMessage {
     ..m<$core.String, MembershipFeatureSpec>(5, _omitFieldNames ? '' : 'membershipSpecs', entryClassName: 'Feature.MembershipSpecsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: MembershipFeatureSpec.create, valueDefaultOrMaker: MembershipFeatureSpec.getDefault, packageName: const $pb.PackageName('google.cloud.gkehub.v1'))
     ..aOM<CommonFeatureState>(6, _omitFieldNames ? '' : 'state', subBuilder: CommonFeatureState.create)
     ..m<$core.String, MembershipFeatureState>(7, _omitFieldNames ? '' : 'membershipStates', entryClassName: 'Feature.MembershipStatesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: MembershipFeatureState.create, valueDefaultOrMaker: MembershipFeatureState.getDefault, packageName: const $pb.PackageName('google.cloud.gkehub.v1'))
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -193,39 +193,39 @@ class Feature extends $pb.GeneratedMessage {
 
   /// Output only. When the Feature resource was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. When the Feature resource was last updated.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. When the Feature resource was deleted.
   @$pb.TagNumber(10)
-  $1775.Timestamp get deleteTime => $_getN(9);
+  $1776.Timestamp get deleteTime => $_getN(9);
   @$pb.TagNumber(10)
-  set deleteTime($1775.Timestamp v) { setField(10, v); }
+  set deleteTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDeleteTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearDeleteTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(9);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(9);
 }
 
 /// FeatureResourceState describes the state of a Feature *resource* in the
@@ -289,7 +289,7 @@ class FeatureState extends $pb.GeneratedMessage {
   factory FeatureState({
     FeatureState_Code? code,
     $core.String? description,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (code != null) {
@@ -310,7 +310,7 @@ class FeatureState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1'), createEmptyInstance: create)
     ..e<FeatureState_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: FeatureState_Code.CODE_UNSPECIFIED, valueOf: FeatureState_Code.valueOf, enumValues: FeatureState_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -357,15 +357,15 @@ class FeatureState extends $pb.GeneratedMessage {
 
   /// The time this status and any related Feature-specific details were updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 enum CommonFeatureSpec_FeatureSpec {
@@ -376,7 +376,7 @@ enum CommonFeatureSpec_FeatureSpec {
 /// CommonFeatureSpec contains Hub-wide configuration information
 class CommonFeatureSpec extends $pb.GeneratedMessage {
   factory CommonFeatureSpec({
-    $4535.FeatureSpec? multiclusteringress,
+    $4537.FeatureSpec? multiclusteringress,
   }) {
     final $result = create();
     if (multiclusteringress != null) {
@@ -394,7 +394,7 @@ class CommonFeatureSpec extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommonFeatureSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1'), createEmptyInstance: create)
     ..oo(0, [102])
-    ..aOM<$4535.FeatureSpec>(102, _omitFieldNames ? '' : 'multiclusteringress', subBuilder: $4535.FeatureSpec.create)
+    ..aOM<$4537.FeatureSpec>(102, _omitFieldNames ? '' : 'multiclusteringress', subBuilder: $4537.FeatureSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -424,15 +424,15 @@ class CommonFeatureSpec extends $pb.GeneratedMessage {
 
   /// Multicluster Ingress-specific spec.
   @$pb.TagNumber(102)
-  $4535.FeatureSpec get multiclusteringress => $_getN(0);
+  $4537.FeatureSpec get multiclusteringress => $_getN(0);
   @$pb.TagNumber(102)
-  set multiclusteringress($4535.FeatureSpec v) { setField(102, v); }
+  set multiclusteringress($4537.FeatureSpec v) { setField(102, v); }
   @$pb.TagNumber(102)
   $core.bool hasMulticlusteringress() => $_has(0);
   @$pb.TagNumber(102)
   void clearMulticlusteringress() => clearField(102);
   @$pb.TagNumber(102)
-  $4535.FeatureSpec ensureMulticlusteringress() => $_ensure(0);
+  $4537.FeatureSpec ensureMulticlusteringress() => $_ensure(0);
 }
 
 /// CommonFeatureState contains Hub-wide Feature status information.
@@ -498,7 +498,7 @@ enum MembershipFeatureSpec_FeatureSpec {
 /// Membership.
 class MembershipFeatureSpec extends $pb.GeneratedMessage {
   factory MembershipFeatureSpec({
-    $4536.MembershipSpec? configmanagement,
+    $4538.MembershipSpec? configmanagement,
   }) {
     final $result = create();
     if (configmanagement != null) {
@@ -516,7 +516,7 @@ class MembershipFeatureSpec extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipFeatureSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1'), createEmptyInstance: create)
     ..oo(0, [106])
-    ..aOM<$4536.MembershipSpec>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4536.MembershipSpec.create)
+    ..aOM<$4538.MembershipSpec>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4538.MembershipSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -546,15 +546,15 @@ class MembershipFeatureSpec extends $pb.GeneratedMessage {
 
   /// Config Management-specific spec.
   @$pb.TagNumber(106)
-  $4536.MembershipSpec get configmanagement => $_getN(0);
+  $4538.MembershipSpec get configmanagement => $_getN(0);
   @$pb.TagNumber(106)
-  set configmanagement($4536.MembershipSpec v) { setField(106, v); }
+  set configmanagement($4538.MembershipSpec v) { setField(106, v); }
   @$pb.TagNumber(106)
   $core.bool hasConfigmanagement() => $_has(0);
   @$pb.TagNumber(106)
   void clearConfigmanagement() => clearField(106);
   @$pb.TagNumber(106)
-  $4536.MembershipSpec ensureConfigmanagement() => $_ensure(0);
+  $4538.MembershipSpec ensureConfigmanagement() => $_ensure(0);
 }
 
 enum MembershipFeatureState_FeatureState {
@@ -567,7 +567,7 @@ enum MembershipFeatureState_FeatureState {
 class MembershipFeatureState extends $pb.GeneratedMessage {
   factory MembershipFeatureState({
     FeatureState? state,
-    $4536.MembershipState? configmanagement,
+    $4538.MembershipState? configmanagement,
   }) {
     final $result = create();
     if (state != null) {
@@ -589,7 +589,7 @@ class MembershipFeatureState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipFeatureState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.gkehub.v1'), createEmptyInstance: create)
     ..oo(0, [106])
     ..aOM<FeatureState>(1, _omitFieldNames ? '' : 'state', subBuilder: FeatureState.create)
-    ..aOM<$4536.MembershipState>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4536.MembershipState.create)
+    ..aOM<$4538.MembershipState>(106, _omitFieldNames ? '' : 'configmanagement', subBuilder: $4538.MembershipState.create)
     ..hasRequiredFields = false
   ;
 
@@ -631,15 +631,15 @@ class MembershipFeatureState extends $pb.GeneratedMessage {
 
   /// Config Management-specific state.
   @$pb.TagNumber(106)
-  $4536.MembershipState get configmanagement => $_getN(1);
+  $4538.MembershipState get configmanagement => $_getN(1);
   @$pb.TagNumber(106)
-  set configmanagement($4536.MembershipState v) { setField(106, v); }
+  set configmanagement($4538.MembershipState v) { setField(106, v); }
   @$pb.TagNumber(106)
   $core.bool hasConfigmanagement() => $_has(1);
   @$pb.TagNumber(106)
   void clearConfigmanagement() => clearField(106);
   @$pb.TagNumber(106)
-  $4536.MembershipState ensureConfigmanagement() => $_ensure(1);
+  $4538.MembershipState ensureConfigmanagement() => $_ensure(1);
 }
 
 

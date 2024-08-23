@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $2352;
-import '../resources/asset_set.pb.dart' as $2225;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $2353;
+import '../resources/asset_set.pb.dart' as $2226;
 
 /// Request message for
 /// [AssetSetService.MutateAssetSets][google.ads.googleads.v15.services.AssetSetService.MutateAssetSets].
@@ -26,7 +26,7 @@ class MutateAssetSetsRequest extends $pb.GeneratedMessage {
     $core.Iterable<AssetSetOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $2352.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $2353.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateAssetSetsRequest extends $pb.GeneratedMessage {
     ..pc<AssetSetOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: AssetSetOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$2352.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2352.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2352.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2352.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$2353.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2353.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2353.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2353.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -121,9 +121,9 @@ class MutateAssetSetsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $2352.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $2353.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($2352.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($2353.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,10 +140,10 @@ enum AssetSetOperation_Operation {
 /// A single operation (create, remove) on an asset set.
 class AssetSetOperation extends $pb.GeneratedMessage {
   factory AssetSetOperation({
-    $2225.AssetSet? create_1,
-    $2225.AssetSet? update,
+    $2226.AssetSet? create_1,
+    $2226.AssetSet? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -172,10 +172,10 @@ class AssetSetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetSetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$2225.AssetSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $2225.AssetSet.create)
-    ..aOM<$2225.AssetSet>(2, _omitFieldNames ? '' : 'update', subBuilder: $2225.AssetSet.create)
+    ..aOM<$2226.AssetSet>(1, _omitFieldNames ? '' : 'create', subBuilder: $2226.AssetSet.create)
+    ..aOM<$2226.AssetSet>(2, _omitFieldNames ? '' : 'update', subBuilder: $2226.AssetSet.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -205,28 +205,28 @@ class AssetSetOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new asset set
   @$pb.TagNumber(1)
-  $2225.AssetSet get create_1 => $_getN(0);
+  $2226.AssetSet get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2225.AssetSet v) { setField(1, v); }
+  set create_1($2226.AssetSet v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2225.AssetSet ensureCreate_1() => $_ensure(0);
+  $2226.AssetSet ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The asset set is expected to have a valid resource
   /// name.
   @$pb.TagNumber(2)
-  $2225.AssetSet get update => $_getN(1);
+  $2226.AssetSet get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($2225.AssetSet v) { setField(2, v); }
+  set update($2226.AssetSet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $2225.AssetSet ensureUpdate() => $_ensure(1);
+  $2226.AssetSet ensureUpdate() => $_ensure(1);
 
   /// Remove operation: A resource name for the removed asset set is
   /// expected, in this format:
@@ -242,22 +242,22 @@ class AssetSetOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for an asset set mutate.
 class MutateAssetSetsResponse extends $pb.GeneratedMessage {
   factory MutateAssetSetsResponse({
     $core.Iterable<MutateAssetSetResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -274,7 +274,7 @@ class MutateAssetSetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAssetSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<MutateAssetSetResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateAssetSetResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -308,22 +308,22 @@ class MutateAssetSetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the asset set mutate.
 class MutateAssetSetResult extends $pb.GeneratedMessage {
   factory MutateAssetSetResult({
     $core.String? resourceName,
-    $2225.AssetSet? assetSet,
+    $2226.AssetSet? assetSet,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -340,7 +340,7 @@ class MutateAssetSetResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAssetSetResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2225.AssetSet>(2, _omitFieldNames ? '' : 'assetSet', subBuilder: $2225.AssetSet.create)
+    ..aOM<$2226.AssetSet>(2, _omitFieldNames ? '' : 'assetSet', subBuilder: $2226.AssetSet.create)
     ..hasRequiredFields = false
   ;
 
@@ -378,15 +378,15 @@ class MutateAssetSetResult extends $pb.GeneratedMessage {
   /// The mutated asset set with only mutable fields after mutate. The field will
   /// only be returned when response_content_type is set to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $2225.AssetSet get assetSet => $_getN(1);
+  $2226.AssetSet get assetSet => $_getN(1);
   @$pb.TagNumber(2)
-  set assetSet($2225.AssetSet v) { setField(2, v); }
+  set assetSet($2226.AssetSet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAssetSet() => $_has(1);
   @$pb.TagNumber(2)
   void clearAssetSet() => clearField(2);
   @$pb.TagNumber(2)
-  $2225.AssetSet ensureAssetSet() => $_ensure(1);
+  $2226.AssetSet ensureAssetSet() => $_ensure(1);
 }
 
 

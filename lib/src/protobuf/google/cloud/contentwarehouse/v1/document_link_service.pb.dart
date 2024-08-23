@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4441;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4443;
 import 'document.pb.dart' as $794;
 import 'document_link_service.pbenum.dart';
 
@@ -86,7 +86,7 @@ class ListLinkedTargetsResponse extends $pb.GeneratedMessage {
 class ListLinkedTargetsRequest extends $pb.GeneratedMessage {
   factory ListLinkedTargetsRequest({
     $core.String? parent,
-    $4441.RequestMetadata? requestMetadata,
+    $4443.RequestMetadata? requestMetadata,
   }) {
     final $result = create();
     if (parent != null) {
@@ -103,7 +103,7 @@ class ListLinkedTargetsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLinkedTargetsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4441.RequestMetadata>(2, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4441.RequestMetadata.create)
+    ..aOM<$4443.RequestMetadata>(2, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4443.RequestMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -143,15 +143,15 @@ class ListLinkedTargetsRequest extends $pb.GeneratedMessage {
   /// The meta information collected about the document creator, used to enforce
   /// access control for the service.
   @$pb.TagNumber(2)
-  $4441.RequestMetadata get requestMetadata => $_getN(1);
+  $4443.RequestMetadata get requestMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set requestMetadata($4441.RequestMetadata v) { setField(2, v); }
+  set requestMetadata($4443.RequestMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4441.RequestMetadata ensureRequestMetadata() => $_ensure(1);
+  $4443.RequestMetadata ensureRequestMetadata() => $_ensure(1);
 }
 
 /// Response message for DocumentLinkService.ListLinkedSources.
@@ -220,7 +220,7 @@ class ListLinkedSourcesResponse extends $pb.GeneratedMessage {
 class ListLinkedSourcesRequest extends $pb.GeneratedMessage {
   factory ListLinkedSourcesRequest({
     $core.String? parent,
-    $4441.RequestMetadata? requestMetadata,
+    $4443.RequestMetadata? requestMetadata,
     $core.int? pageSize,
     $core.String? pageToken,
   }) {
@@ -245,7 +245,7 @@ class ListLinkedSourcesRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLinkedSourcesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$4441.RequestMetadata>(2, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4441.RequestMetadata.create)
+    ..aOM<$4443.RequestMetadata>(2, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4443.RequestMetadata.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false
@@ -287,15 +287,15 @@ class ListLinkedSourcesRequest extends $pb.GeneratedMessage {
   /// The meta information collected about the document creator, used to enforce
   /// access control for the service.
   @$pb.TagNumber(2)
-  $4441.RequestMetadata get requestMetadata => $_getN(1);
+  $4443.RequestMetadata get requestMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set requestMetadata($4441.RequestMetadata v) { setField(2, v); }
+  set requestMetadata($4443.RequestMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4441.RequestMetadata ensureRequestMetadata() => $_ensure(1);
+  $4443.RequestMetadata ensureRequestMetadata() => $_ensure(1);
 
   ///  The maximum number of document-links to return. The service may return
   ///  fewer than this value.
@@ -333,8 +333,8 @@ class DocumentLink extends $pb.GeneratedMessage {
     $794.DocumentReference? sourceDocumentReference,
     $794.DocumentReference? targetDocumentReference,
     $core.String? description,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
     DocumentLink_State? state,
   }) {
     final $result = create();
@@ -370,8 +370,8 @@ class DocumentLink extends $pb.GeneratedMessage {
     ..aOM<$794.DocumentReference>(2, _omitFieldNames ? '' : 'sourceDocumentReference', subBuilder: $794.DocumentReference.create)
     ..aOM<$794.DocumentReference>(3, _omitFieldNames ? '' : 'targetDocumentReference', subBuilder: $794.DocumentReference.create)
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<DocumentLink_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: DocumentLink_State.STATE_UNSPECIFIED, valueOf: DocumentLink_State.valueOf, enumValues: DocumentLink_State.values)
     ..hasRequiredFields = false
   ;
@@ -447,27 +447,27 @@ class DocumentLink extends $pb.GeneratedMessage {
 
   /// Output only. The time when the documentLink is last updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Output only. The time when the documentLink is created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// The state of the documentlink. If target node has been deleted, the
   /// link is marked as invalid. Removing a source node will result in removal
@@ -487,7 +487,7 @@ class CreateDocumentLinkRequest extends $pb.GeneratedMessage {
   factory CreateDocumentLinkRequest({
     $core.String? parent,
     DocumentLink? documentLink,
-    $4441.RequestMetadata? requestMetadata,
+    $4443.RequestMetadata? requestMetadata,
   }) {
     final $result = create();
     if (parent != null) {
@@ -508,7 +508,7 @@ class CreateDocumentLinkRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDocumentLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<DocumentLink>(2, _omitFieldNames ? '' : 'documentLink', subBuilder: DocumentLink.create)
-    ..aOM<$4441.RequestMetadata>(3, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4441.RequestMetadata.create)
+    ..aOM<$4443.RequestMetadata>(3, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4443.RequestMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -562,22 +562,22 @@ class CreateDocumentLinkRequest extends $pb.GeneratedMessage {
   /// The meta information collected about the document creator, used to enforce
   /// access control for the service.
   @$pb.TagNumber(3)
-  $4441.RequestMetadata get requestMetadata => $_getN(2);
+  $4443.RequestMetadata get requestMetadata => $_getN(2);
   @$pb.TagNumber(3)
-  set requestMetadata($4441.RequestMetadata v) { setField(3, v); }
+  set requestMetadata($4443.RequestMetadata v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRequestMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearRequestMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $4441.RequestMetadata ensureRequestMetadata() => $_ensure(2);
+  $4443.RequestMetadata ensureRequestMetadata() => $_ensure(2);
 }
 
 /// Request message for DocumentLinkService.DeleteDocumentLink.
 class DeleteDocumentLinkRequest extends $pb.GeneratedMessage {
   factory DeleteDocumentLinkRequest({
     $core.String? name,
-    $4441.RequestMetadata? requestMetadata,
+    $4443.RequestMetadata? requestMetadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -594,7 +594,7 @@ class DeleteDocumentLinkRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteDocumentLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4441.RequestMetadata>(2, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4441.RequestMetadata.create)
+    ..aOM<$4443.RequestMetadata>(2, _omitFieldNames ? '' : 'requestMetadata', subBuilder: $4443.RequestMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -634,15 +634,15 @@ class DeleteDocumentLinkRequest extends $pb.GeneratedMessage {
   /// The meta information collected about the document creator, used to enforce
   /// access control for the service.
   @$pb.TagNumber(2)
-  $4441.RequestMetadata get requestMetadata => $_getN(1);
+  $4443.RequestMetadata get requestMetadata => $_getN(1);
   @$pb.TagNumber(2)
-  set requestMetadata($4441.RequestMetadata v) { setField(2, v); }
+  set requestMetadata($4443.RequestMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4441.RequestMetadata ensureRequestMetadata() => $_ensure(1);
+  $4443.RequestMetadata ensureRequestMetadata() => $_ensure(1);
 }
 
 

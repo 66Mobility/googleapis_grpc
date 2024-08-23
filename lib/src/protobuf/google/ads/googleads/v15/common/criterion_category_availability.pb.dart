@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/advertising_channel_sub_type.pbenum.dart' as $1884;
-import '../enums/advertising_channel_type.pbenum.dart' as $1883;
-import '../enums/criterion_category_channel_availability_mode.pbenum.dart' as $1882;
-import '../enums/criterion_category_locale_availability_mode.pbenum.dart' as $1885;
+import '../enums/advertising_channel_sub_type.pbenum.dart' as $1885;
+import '../enums/advertising_channel_type.pbenum.dart' as $1884;
+import '../enums/criterion_category_channel_availability_mode.pbenum.dart' as $1883;
+import '../enums/criterion_category_locale_availability_mode.pbenum.dart' as $1886;
 
 /// Information of category availability, per advertising channel.
 class CriterionCategoryAvailability extends $pb.GeneratedMessage {
@@ -85,9 +85,9 @@ class CriterionCategoryAvailability extends $pb.GeneratedMessage {
 /// in.
 class CriterionCategoryChannelAvailability extends $pb.GeneratedMessage {
   factory CriterionCategoryChannelAvailability({
-    $1882.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode? availabilityMode,
-    $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
-    $core.Iterable<$1884.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType>? advertisingChannelSubType,
+    $1883.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode? availabilityMode,
+    $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType? advertisingChannelType,
+    $core.Iterable<$1885.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType>? advertisingChannelSubType,
     $core.bool? includeDefaultChannelSubType,
   }) {
     final $result = create();
@@ -110,9 +110,9 @@ class CriterionCategoryChannelAvailability extends $pb.GeneratedMessage {
   factory CriterionCategoryChannelAvailability.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CriterionCategoryChannelAvailability', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1882.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode>(1, _omitFieldNames ? '' : 'availabilityMode', $pb.PbFieldType.OE, defaultOrMaker: $1882.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode.UNSPECIFIED, valueOf: $1882.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode.valueOf, enumValues: $1882.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode.values)
-    ..e<$1883.AdvertisingChannelTypeEnum_AdvertisingChannelType>(2, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
-    ..pc<$1884.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType>(3, _omitFieldNames ? '' : 'advertisingChannelSubType', $pb.PbFieldType.KE, valueOf: $1884.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.valueOf, enumValues: $1884.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.values, defaultEnumValue: $1884.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.UNSPECIFIED)
+    ..e<$1883.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode>(1, _omitFieldNames ? '' : 'availabilityMode', $pb.PbFieldType.OE, defaultOrMaker: $1883.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode.UNSPECIFIED, valueOf: $1883.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode.valueOf, enumValues: $1883.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode.values)
+    ..e<$1884.AdvertisingChannelTypeEnum_AdvertisingChannelType>(2, _omitFieldNames ? '' : 'advertisingChannelType', $pb.PbFieldType.OE, defaultOrMaker: $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType.UNSPECIFIED, valueOf: $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType.valueOf, enumValues: $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType.values)
+    ..pc<$1885.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType>(3, _omitFieldNames ? '' : 'advertisingChannelSubType', $pb.PbFieldType.KE, valueOf: $1885.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.valueOf, enumValues: $1885.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.values, defaultEnumValue: $1885.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType.UNSPECIFIED)
     ..aOB(5, _omitFieldNames ? '' : 'includeDefaultChannelSubType')
     ..hasRequiredFields = false
   ;
@@ -145,9 +145,9 @@ class CriterionCategoryChannelAvailability extends $pb.GeneratedMessage {
   /// advertising_channel_sub_type, and include_default_channel_sub_type will all
   /// be set).
   @$pb.TagNumber(1)
-  $1882.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode get availabilityMode => $_getN(0);
+  $1883.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode get availabilityMode => $_getN(0);
   @$pb.TagNumber(1)
-  set availabilityMode($1882.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode v) { setField(1, v); }
+  set availabilityMode($1883.CriterionCategoryChannelAvailabilityModeEnum_CriterionCategoryChannelAvailabilityMode v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAvailabilityMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -155,9 +155,9 @@ class CriterionCategoryChannelAvailability extends $pb.GeneratedMessage {
 
   /// Channel type the category is available to.
   @$pb.TagNumber(2)
-  $1883.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(1);
+  $1884.AdvertisingChannelTypeEnum_AdvertisingChannelType get advertisingChannelType => $_getN(1);
   @$pb.TagNumber(2)
-  set advertisingChannelType($1883.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(2, v); }
+  set advertisingChannelType($1884.AdvertisingChannelTypeEnum_AdvertisingChannelType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdvertisingChannelType() => $_has(1);
   @$pb.TagNumber(2)
@@ -165,7 +165,7 @@ class CriterionCategoryChannelAvailability extends $pb.GeneratedMessage {
 
   /// Channel subtypes under the channel type the category is available to.
   @$pb.TagNumber(3)
-  $core.List<$1884.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType> get advertisingChannelSubType => $_getList(2);
+  $core.List<$1885.AdvertisingChannelSubTypeEnum_AdvertisingChannelSubType> get advertisingChannelSubType => $_getList(2);
 
   /// Whether default channel sub type is included. For example,
   /// advertising_channel_type being DISPLAY and include_default_channel_sub_type
@@ -184,7 +184,7 @@ class CriterionCategoryChannelAvailability extends $pb.GeneratedMessage {
 /// Information about which locales a category is available in.
 class CriterionCategoryLocaleAvailability extends $pb.GeneratedMessage {
   factory CriterionCategoryLocaleAvailability({
-    $1885.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode? availabilityMode,
+    $1886.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode? availabilityMode,
     $core.String? countryCode,
     $core.String? languageCode,
   }) {
@@ -205,7 +205,7 @@ class CriterionCategoryLocaleAvailability extends $pb.GeneratedMessage {
   factory CriterionCategoryLocaleAvailability.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CriterionCategoryLocaleAvailability', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1885.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode>(1, _omitFieldNames ? '' : 'availabilityMode', $pb.PbFieldType.OE, defaultOrMaker: $1885.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode.UNSPECIFIED, valueOf: $1885.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode.valueOf, enumValues: $1885.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode.values)
+    ..e<$1886.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode>(1, _omitFieldNames ? '' : 'availabilityMode', $pb.PbFieldType.OE, defaultOrMaker: $1886.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode.UNSPECIFIED, valueOf: $1886.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode.valueOf, enumValues: $1886.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode.values)
     ..aOS(4, _omitFieldNames ? '' : 'countryCode')
     ..aOS(5, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
@@ -237,9 +237,9 @@ class CriterionCategoryLocaleAvailability extends $pb.GeneratedMessage {
   /// language wil be set), COUNTRY_AND_LANGUAGE (both country and language will
   /// be set).
   @$pb.TagNumber(1)
-  $1885.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode get availabilityMode => $_getN(0);
+  $1886.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode get availabilityMode => $_getN(0);
   @$pb.TagNumber(1)
-  set availabilityMode($1885.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode v) { setField(1, v); }
+  set availabilityMode($1886.CriterionCategoryLocaleAvailabilityModeEnum_CriterionCategoryLocaleAvailabilityMode v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAvailabilityMode() => $_has(0);
   @$pb.TagNumber(1)

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 enum ModelMonitoringAlertCondition_Condition {
   threshold, 
@@ -87,8 +87,8 @@ class ModelMonitoringAnomaly_TabularAnomaly extends $pb.GeneratedMessage {
   factory ModelMonitoringAnomaly_TabularAnomaly({
     $core.String? anomalyUri,
     $core.String? summary,
-    $1734.Value? anomaly,
-    $1775.Timestamp? triggerTime,
+    $1735.Value? anomaly,
+    $1776.Timestamp? triggerTime,
     ModelMonitoringAlertCondition? condition,
   }) {
     final $result = create();
@@ -116,8 +116,8 @@ class ModelMonitoringAnomaly_TabularAnomaly extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringAnomaly.TabularAnomaly', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'anomalyUri')
     ..aOS(2, _omitFieldNames ? '' : 'summary')
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'anomaly', subBuilder: $1734.Value.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'triggerTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'anomaly', subBuilder: $1735.Value.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'triggerTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ModelMonitoringAlertCondition>(5, _omitFieldNames ? '' : 'condition', subBuilder: ModelMonitoringAlertCondition.create)
     ..hasRequiredFields = false
   ;
@@ -165,27 +165,27 @@ class ModelMonitoringAnomaly_TabularAnomaly extends $pb.GeneratedMessage {
 
   /// Anomaly body.
   @$pb.TagNumber(3)
-  $1734.Value get anomaly => $_getN(2);
+  $1735.Value get anomaly => $_getN(2);
   @$pb.TagNumber(3)
-  set anomaly($1734.Value v) { setField(3, v); }
+  set anomaly($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnomaly() => $_has(2);
   @$pb.TagNumber(3)
   void clearAnomaly() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensureAnomaly() => $_ensure(2);
+  $1735.Value ensureAnomaly() => $_ensure(2);
 
   /// The time the anomaly was triggered.
   @$pb.TagNumber(4)
-  $1775.Timestamp get triggerTime => $_getN(3);
+  $1776.Timestamp get triggerTime => $_getN(3);
   @$pb.TagNumber(4)
-  set triggerTime($1775.Timestamp v) { setField(4, v); }
+  set triggerTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTriggerTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearTriggerTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureTriggerTime() => $_ensure(3);
+  $1776.Timestamp ensureTriggerTime() => $_ensure(3);
 
   /// The alert condition associated with this anomaly.
   @$pb.TagNumber(5)
@@ -305,7 +305,7 @@ class ModelMonitoringAlert extends $pb.GeneratedMessage {
   factory ModelMonitoringAlert({
     $core.String? statsName,
     $core.String? objectiveType,
-    $1775.Timestamp? alertTime,
+    $1776.Timestamp? alertTime,
     ModelMonitoringAnomaly? anomaly,
   }) {
     final $result = create();
@@ -330,7 +330,7 @@ class ModelMonitoringAlert extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringAlert', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'statsName')
     ..aOS(2, _omitFieldNames ? '' : 'objectiveType')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'alertTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'alertTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ModelMonitoringAnomaly>(4, _omitFieldNames ? '' : 'anomaly', subBuilder: ModelMonitoringAnomaly.create)
     ..hasRequiredFields = false
   ;
@@ -381,15 +381,15 @@ class ModelMonitoringAlert extends $pb.GeneratedMessage {
 
   /// Alert creation time.
   @$pb.TagNumber(3)
-  $1775.Timestamp get alertTime => $_getN(2);
+  $1776.Timestamp get alertTime => $_getN(2);
   @$pb.TagNumber(3)
-  set alertTime($1775.Timestamp v) { setField(3, v); }
+  set alertTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAlertTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearAlertTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureAlertTime() => $_ensure(2);
+  $1776.Timestamp ensureAlertTime() => $_ensure(2);
 
   /// Anomaly details.
   @$pb.TagNumber(4)

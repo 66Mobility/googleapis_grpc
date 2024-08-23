@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'classification.pb.dart' as $4331;
-import 'detection.pb.dart' as $4335;
-import 'text_extraction.pb.dart' as $4336;
-import 'text_sentiment.pb.dart' as $4337;
-import 'translation.pb.dart' as $4334;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'classification.pb.dart' as $4332;
+import 'detection.pb.dart' as $4336;
+import 'text_extraction.pb.dart' as $4337;
+import 'text_sentiment.pb.dart' as $4338;
+import 'translation.pb.dart' as $4335;
 
 enum ModelEvaluation_Metrics {
   classificationEvaluationMetrics, 
@@ -34,13 +34,13 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   factory ModelEvaluation({
     $core.String? name,
     $core.String? annotationSpecId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     $core.int? evaluatedExampleCount,
-    $4331.ClassificationEvaluationMetrics? classificationEvaluationMetrics,
-    $4334.TranslationEvaluationMetrics? translationEvaluationMetrics,
-    $4337.TextSentimentEvaluationMetrics? textSentimentEvaluationMetrics,
-    $4335.ImageObjectDetectionEvaluationMetrics? imageObjectDetectionEvaluationMetrics,
-    $4336.TextExtractionEvaluationMetrics? textExtractionEvaluationMetrics,
+    $4332.ClassificationEvaluationMetrics? classificationEvaluationMetrics,
+    $4335.TranslationEvaluationMetrics? translationEvaluationMetrics,
+    $4338.TextSentimentEvaluationMetrics? textSentimentEvaluationMetrics,
+    $4336.ImageObjectDetectionEvaluationMetrics? imageObjectDetectionEvaluationMetrics,
+    $4337.TextExtractionEvaluationMetrics? textExtractionEvaluationMetrics,
     $core.String? displayName,
   }) {
     final $result = create();
@@ -92,13 +92,13 @@ class ModelEvaluation extends $pb.GeneratedMessage {
     ..oo(0, [8, 9, 11, 12, 13])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'annotationSpecId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'evaluatedExampleCount', $pb.PbFieldType.O3)
-    ..aOM<$4331.ClassificationEvaluationMetrics>(8, _omitFieldNames ? '' : 'classificationEvaluationMetrics', subBuilder: $4331.ClassificationEvaluationMetrics.create)
-    ..aOM<$4334.TranslationEvaluationMetrics>(9, _omitFieldNames ? '' : 'translationEvaluationMetrics', subBuilder: $4334.TranslationEvaluationMetrics.create)
-    ..aOM<$4337.TextSentimentEvaluationMetrics>(11, _omitFieldNames ? '' : 'textSentimentEvaluationMetrics', subBuilder: $4337.TextSentimentEvaluationMetrics.create)
-    ..aOM<$4335.ImageObjectDetectionEvaluationMetrics>(12, _omitFieldNames ? '' : 'imageObjectDetectionEvaluationMetrics', subBuilder: $4335.ImageObjectDetectionEvaluationMetrics.create)
-    ..aOM<$4336.TextExtractionEvaluationMetrics>(13, _omitFieldNames ? '' : 'textExtractionEvaluationMetrics', subBuilder: $4336.TextExtractionEvaluationMetrics.create)
+    ..aOM<$4332.ClassificationEvaluationMetrics>(8, _omitFieldNames ? '' : 'classificationEvaluationMetrics', subBuilder: $4332.ClassificationEvaluationMetrics.create)
+    ..aOM<$4335.TranslationEvaluationMetrics>(9, _omitFieldNames ? '' : 'translationEvaluationMetrics', subBuilder: $4335.TranslationEvaluationMetrics.create)
+    ..aOM<$4338.TextSentimentEvaluationMetrics>(11, _omitFieldNames ? '' : 'textSentimentEvaluationMetrics', subBuilder: $4338.TextSentimentEvaluationMetrics.create)
+    ..aOM<$4336.ImageObjectDetectionEvaluationMetrics>(12, _omitFieldNames ? '' : 'imageObjectDetectionEvaluationMetrics', subBuilder: $4336.ImageObjectDetectionEvaluationMetrics.create)
+    ..aOM<$4337.TextExtractionEvaluationMetrics>(13, _omitFieldNames ? '' : 'textExtractionEvaluationMetrics', subBuilder: $4337.TextExtractionEvaluationMetrics.create)
     ..aOS(15, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
   ;
@@ -158,15 +158,15 @@ class ModelEvaluation extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this model evaluation was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The number of examples used for model evaluation, i.e. for
   /// which ground truth from time of model creation is compared against the
@@ -190,63 +190,63 @@ class ModelEvaluation extends $pb.GeneratedMessage {
   /// Tables problem is considered a classification when the target column
   /// is CATEGORY DataType.
   @$pb.TagNumber(8)
-  $4331.ClassificationEvaluationMetrics get classificationEvaluationMetrics => $_getN(4);
+  $4332.ClassificationEvaluationMetrics get classificationEvaluationMetrics => $_getN(4);
   @$pb.TagNumber(8)
-  set classificationEvaluationMetrics($4331.ClassificationEvaluationMetrics v) { setField(8, v); }
+  set classificationEvaluationMetrics($4332.ClassificationEvaluationMetrics v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasClassificationEvaluationMetrics() => $_has(4);
   @$pb.TagNumber(8)
   void clearClassificationEvaluationMetrics() => clearField(8);
   @$pb.TagNumber(8)
-  $4331.ClassificationEvaluationMetrics ensureClassificationEvaluationMetrics() => $_ensure(4);
+  $4332.ClassificationEvaluationMetrics ensureClassificationEvaluationMetrics() => $_ensure(4);
 
   /// Model evaluation metrics for translation.
   @$pb.TagNumber(9)
-  $4334.TranslationEvaluationMetrics get translationEvaluationMetrics => $_getN(5);
+  $4335.TranslationEvaluationMetrics get translationEvaluationMetrics => $_getN(5);
   @$pb.TagNumber(9)
-  set translationEvaluationMetrics($4334.TranslationEvaluationMetrics v) { setField(9, v); }
+  set translationEvaluationMetrics($4335.TranslationEvaluationMetrics v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTranslationEvaluationMetrics() => $_has(5);
   @$pb.TagNumber(9)
   void clearTranslationEvaluationMetrics() => clearField(9);
   @$pb.TagNumber(9)
-  $4334.TranslationEvaluationMetrics ensureTranslationEvaluationMetrics() => $_ensure(5);
+  $4335.TranslationEvaluationMetrics ensureTranslationEvaluationMetrics() => $_ensure(5);
 
   /// Evaluation metrics for text sentiment models.
   @$pb.TagNumber(11)
-  $4337.TextSentimentEvaluationMetrics get textSentimentEvaluationMetrics => $_getN(6);
+  $4338.TextSentimentEvaluationMetrics get textSentimentEvaluationMetrics => $_getN(6);
   @$pb.TagNumber(11)
-  set textSentimentEvaluationMetrics($4337.TextSentimentEvaluationMetrics v) { setField(11, v); }
+  set textSentimentEvaluationMetrics($4338.TextSentimentEvaluationMetrics v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTextSentimentEvaluationMetrics() => $_has(6);
   @$pb.TagNumber(11)
   void clearTextSentimentEvaluationMetrics() => clearField(11);
   @$pb.TagNumber(11)
-  $4337.TextSentimentEvaluationMetrics ensureTextSentimentEvaluationMetrics() => $_ensure(6);
+  $4338.TextSentimentEvaluationMetrics ensureTextSentimentEvaluationMetrics() => $_ensure(6);
 
   /// Model evaluation metrics for image object detection.
   @$pb.TagNumber(12)
-  $4335.ImageObjectDetectionEvaluationMetrics get imageObjectDetectionEvaluationMetrics => $_getN(7);
+  $4336.ImageObjectDetectionEvaluationMetrics get imageObjectDetectionEvaluationMetrics => $_getN(7);
   @$pb.TagNumber(12)
-  set imageObjectDetectionEvaluationMetrics($4335.ImageObjectDetectionEvaluationMetrics v) { setField(12, v); }
+  set imageObjectDetectionEvaluationMetrics($4336.ImageObjectDetectionEvaluationMetrics v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasImageObjectDetectionEvaluationMetrics() => $_has(7);
   @$pb.TagNumber(12)
   void clearImageObjectDetectionEvaluationMetrics() => clearField(12);
   @$pb.TagNumber(12)
-  $4335.ImageObjectDetectionEvaluationMetrics ensureImageObjectDetectionEvaluationMetrics() => $_ensure(7);
+  $4336.ImageObjectDetectionEvaluationMetrics ensureImageObjectDetectionEvaluationMetrics() => $_ensure(7);
 
   /// Evaluation metrics for text extraction models.
   @$pb.TagNumber(13)
-  $4336.TextExtractionEvaluationMetrics get textExtractionEvaluationMetrics => $_getN(8);
+  $4337.TextExtractionEvaluationMetrics get textExtractionEvaluationMetrics => $_getN(8);
   @$pb.TagNumber(13)
-  set textExtractionEvaluationMetrics($4336.TextExtractionEvaluationMetrics v) { setField(13, v); }
+  set textExtractionEvaluationMetrics($4337.TextExtractionEvaluationMetrics v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasTextExtractionEvaluationMetrics() => $_has(8);
   @$pb.TagNumber(13)
   void clearTextExtractionEvaluationMetrics() => clearField(13);
   @$pb.TagNumber(13)
-  $4336.TextExtractionEvaluationMetrics ensureTextExtractionEvaluationMetrics() => $_ensure(8);
+  $4337.TextExtractionEvaluationMetrics ensureTextExtractionEvaluationMetrics() => $_ensure(8);
 
   /// Output only. The value of
   /// [display_name][google.cloud.automl.v1.AnnotationSpec.display_name]

@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'ad_partner_declaration.pb.dart' as $1810;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'ad_partner_declaration.pb.dart' as $1811;
 
 /// The Creative resource.
 class Creative extends $pb.GeneratedMessage {
   factory Creative({
     $core.String? name,
     $core.String? advertiser,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? previewUrl,
-    $1810.AdPartnerDeclaration? adPartnerDeclaration,
+    $1811.AdPartnerDeclaration? adPartnerDeclaration,
     $fixnum.Int64? creativeId,
     $core.String? displayName,
     $core.String? sizeLabel,
@@ -63,9 +63,9 @@ class Creative extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Creative', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.admanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'advertiser')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'previewUrl')
-    ..aOM<$1810.AdPartnerDeclaration>(6, _omitFieldNames ? '' : 'adPartnerDeclaration', subBuilder: $1810.AdPartnerDeclaration.create)
+    ..aOM<$1811.AdPartnerDeclaration>(6, _omitFieldNames ? '' : 'adPartnerDeclaration', subBuilder: $1811.AdPartnerDeclaration.create)
     ..aInt64(7, _omitFieldNames ? '' : 'creativeId')
     ..aOS(8, _omitFieldNames ? '' : 'displayName')
     ..aOS(9, _omitFieldNames ? '' : 'sizeLabel')
@@ -118,15 +118,15 @@ class Creative extends $pb.GeneratedMessage {
 
   /// Output only. The instant this Creative was last modified.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The URL of the creative for previewing the media.
   @$pb.TagNumber(4)
@@ -142,15 +142,15 @@ class Creative extends $pb.GeneratedMessage {
   /// This is distinct from any associated companies that Google may detect
   /// programmatically.
   @$pb.TagNumber(6)
-  $1810.AdPartnerDeclaration get adPartnerDeclaration => $_getN(4);
+  $1811.AdPartnerDeclaration get adPartnerDeclaration => $_getN(4);
   @$pb.TagNumber(6)
-  set adPartnerDeclaration($1810.AdPartnerDeclaration v) { setField(6, v); }
+  set adPartnerDeclaration($1811.AdPartnerDeclaration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAdPartnerDeclaration() => $_has(4);
   @$pb.TagNumber(6)
   void clearAdPartnerDeclaration() => clearField(6);
   @$pb.TagNumber(6)
-  $1810.AdPartnerDeclaration ensureAdPartnerDeclaration() => $_ensure(4);
+  $1811.AdPartnerDeclaration ensureAdPartnerDeclaration() => $_ensure(4);
 
   /// Output only. `Creative` ID.
   @$pb.TagNumber(7)

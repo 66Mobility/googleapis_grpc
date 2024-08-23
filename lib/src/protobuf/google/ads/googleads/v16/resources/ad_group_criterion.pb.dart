@@ -14,21 +14,21 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $2570;
-import '../common/custom_parameter.pb.dart' as $2591;
-import '../enums/ad_group_criterion_approval_status.pbenum.dart' as $2834;
-import '../enums/ad_group_criterion_status.pbenum.dart' as $2831;
-import '../enums/bidding_source.pbenum.dart' as $2817;
-import '../enums/criterion_system_serving_status.pbenum.dart' as $2833;
-import '../enums/criterion_type.pbenum.dart' as $2832;
-import '../enums/quality_score_bucket.pbenum.dart' as $2606;
+import '../common/criteria.pb.dart' as $2571;
+import '../common/custom_parameter.pb.dart' as $2592;
+import '../enums/ad_group_criterion_approval_status.pbenum.dart' as $2835;
+import '../enums/ad_group_criterion_status.pbenum.dart' as $2832;
+import '../enums/bidding_source.pbenum.dart' as $2818;
+import '../enums/criterion_system_serving_status.pbenum.dart' as $2834;
+import '../enums/criterion_type.pbenum.dart' as $2833;
+import '../enums/quality_score_bucket.pbenum.dart' as $2607;
 
 /// A container for ad group criterion quality information.
 class AdGroupCriterion_QualityInfo extends $pb.GeneratedMessage {
   factory AdGroupCriterion_QualityInfo({
-    $2606.QualityScoreBucketEnum_QualityScoreBucket? creativeQualityScore,
-    $2606.QualityScoreBucketEnum_QualityScoreBucket? postClickQualityScore,
-    $2606.QualityScoreBucketEnum_QualityScoreBucket? searchPredictedCtr,
+    $2607.QualityScoreBucketEnum_QualityScoreBucket? creativeQualityScore,
+    $2607.QualityScoreBucketEnum_QualityScoreBucket? postClickQualityScore,
+    $2607.QualityScoreBucketEnum_QualityScoreBucket? searchPredictedCtr,
     $core.int? qualityScore,
   }) {
     final $result = create();
@@ -51,9 +51,9 @@ class AdGroupCriterion_QualityInfo extends $pb.GeneratedMessage {
   factory AdGroupCriterion_QualityInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupCriterion.QualityInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
-    ..e<$2606.QualityScoreBucketEnum_QualityScoreBucket>(2, _omitFieldNames ? '' : 'creativeQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2606.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2606.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2606.QualityScoreBucketEnum_QualityScoreBucket.values)
-    ..e<$2606.QualityScoreBucketEnum_QualityScoreBucket>(3, _omitFieldNames ? '' : 'postClickQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2606.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2606.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2606.QualityScoreBucketEnum_QualityScoreBucket.values)
-    ..e<$2606.QualityScoreBucketEnum_QualityScoreBucket>(4, _omitFieldNames ? '' : 'searchPredictedCtr', $pb.PbFieldType.OE, defaultOrMaker: $2606.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2606.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2606.QualityScoreBucketEnum_QualityScoreBucket.values)
+    ..e<$2607.QualityScoreBucketEnum_QualityScoreBucket>(2, _omitFieldNames ? '' : 'creativeQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2607.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2607.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2607.QualityScoreBucketEnum_QualityScoreBucket.values)
+    ..e<$2607.QualityScoreBucketEnum_QualityScoreBucket>(3, _omitFieldNames ? '' : 'postClickQualityScore', $pb.PbFieldType.OE, defaultOrMaker: $2607.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2607.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2607.QualityScoreBucketEnum_QualityScoreBucket.values)
+    ..e<$2607.QualityScoreBucketEnum_QualityScoreBucket>(4, _omitFieldNames ? '' : 'searchPredictedCtr', $pb.PbFieldType.OE, defaultOrMaker: $2607.QualityScoreBucketEnum_QualityScoreBucket.UNSPECIFIED, valueOf: $2607.QualityScoreBucketEnum_QualityScoreBucket.valueOf, enumValues: $2607.QualityScoreBucketEnum_QualityScoreBucket.values)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'qualityScore', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -81,9 +81,9 @@ class AdGroupCriterion_QualityInfo extends $pb.GeneratedMessage {
 
   /// Output only. The performance of the ad compared to other advertisers.
   @$pb.TagNumber(2)
-  $2606.QualityScoreBucketEnum_QualityScoreBucket get creativeQualityScore => $_getN(0);
+  $2607.QualityScoreBucketEnum_QualityScoreBucket get creativeQualityScore => $_getN(0);
   @$pb.TagNumber(2)
-  set creativeQualityScore($2606.QualityScoreBucketEnum_QualityScoreBucket v) { setField(2, v); }
+  set creativeQualityScore($2607.QualityScoreBucketEnum_QualityScoreBucket v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreativeQualityScore() => $_has(0);
   @$pb.TagNumber(2)
@@ -91,9 +91,9 @@ class AdGroupCriterion_QualityInfo extends $pb.GeneratedMessage {
 
   /// Output only. The quality score of the landing page.
   @$pb.TagNumber(3)
-  $2606.QualityScoreBucketEnum_QualityScoreBucket get postClickQualityScore => $_getN(1);
+  $2607.QualityScoreBucketEnum_QualityScoreBucket get postClickQualityScore => $_getN(1);
   @$pb.TagNumber(3)
-  set postClickQualityScore($2606.QualityScoreBucketEnum_QualityScoreBucket v) { setField(3, v); }
+  set postClickQualityScore($2607.QualityScoreBucketEnum_QualityScoreBucket v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPostClickQualityScore() => $_has(1);
   @$pb.TagNumber(3)
@@ -102,9 +102,9 @@ class AdGroupCriterion_QualityInfo extends $pb.GeneratedMessage {
   /// Output only. The click-through rate compared to that of other
   /// advertisers.
   @$pb.TagNumber(4)
-  $2606.QualityScoreBucketEnum_QualityScoreBucket get searchPredictedCtr => $_getN(2);
+  $2607.QualityScoreBucketEnum_QualityScoreBucket get searchPredictedCtr => $_getN(2);
   @$pb.TagNumber(4)
-  set searchPredictedCtr($2606.QualityScoreBucketEnum_QualityScoreBucket v) { setField(4, v); }
+  set searchPredictedCtr($2607.QualityScoreBucketEnum_QualityScoreBucket v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSearchPredictedCtr() => $_has(2);
   @$pb.TagNumber(4)
@@ -274,35 +274,35 @@ enum AdGroupCriterion_Criterion {
 class AdGroupCriterion extends $pb.GeneratedMessage {
   factory AdGroupCriterion({
     $core.String? resourceName,
-    $2831.AdGroupCriterionStatusEnum_AdGroupCriterionStatus? status,
+    $2832.AdGroupCriterionStatusEnum_AdGroupCriterionStatus? status,
     AdGroupCriterion_QualityInfo? qualityInfo,
     AdGroupCriterion_PositionEstimates? positionEstimates,
-    $core.Iterable<$2591.CustomParameter>? urlCustomParameters,
-    $2817.BiddingSourceEnum_BiddingSource? effectiveCpcBidSource,
-    $2817.BiddingSourceEnum_BiddingSource? effectiveCpmBidSource,
-    $2817.BiddingSourceEnum_BiddingSource? effectiveCpvBidSource,
-    $2832.CriterionTypeEnum_CriterionType? type,
-    $2570.KeywordInfo? keyword,
-    $2570.PlacementInfo? placement,
-    $2570.MobileAppCategoryInfo? mobileAppCategory,
-    $2570.MobileApplicationInfo? mobileApplication,
-    $2570.ListingGroupInfo? listingGroup,
-    $2817.BiddingSourceEnum_BiddingSource? effectivePercentCpcBidSource,
-    $2570.AgeRangeInfo? ageRange,
-    $2570.GenderInfo? gender,
-    $2570.IncomeRangeInfo? incomeRange,
-    $2570.ParentalStatusInfo? parentalStatus,
-    $2570.YouTubeVideoInfo? youtubeVideo,
-    $2570.YouTubeChannelInfo? youtubeChannel,
-    $2570.UserListInfo? userList,
-    $2570.TopicInfo? topic,
-    $2570.UserInterestInfo? userInterest,
-    $2570.WebpageInfo? webpage,
-    $2570.AppPaymentModelInfo? appPaymentModel,
-    $2570.CustomAffinityInfo? customAffinity,
-    $2570.CustomIntentInfo? customIntent,
-    $2833.CriterionSystemServingStatusEnum_CriterionSystemServingStatus? systemServingStatus,
-    $2834.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus? approvalStatus,
+    $core.Iterable<$2592.CustomParameter>? urlCustomParameters,
+    $2818.BiddingSourceEnum_BiddingSource? effectiveCpcBidSource,
+    $2818.BiddingSourceEnum_BiddingSource? effectiveCpmBidSource,
+    $2818.BiddingSourceEnum_BiddingSource? effectiveCpvBidSource,
+    $2833.CriterionTypeEnum_CriterionType? type,
+    $2571.KeywordInfo? keyword,
+    $2571.PlacementInfo? placement,
+    $2571.MobileAppCategoryInfo? mobileAppCategory,
+    $2571.MobileApplicationInfo? mobileApplication,
+    $2571.ListingGroupInfo? listingGroup,
+    $2818.BiddingSourceEnum_BiddingSource? effectivePercentCpcBidSource,
+    $2571.AgeRangeInfo? ageRange,
+    $2571.GenderInfo? gender,
+    $2571.IncomeRangeInfo? incomeRange,
+    $2571.ParentalStatusInfo? parentalStatus,
+    $2571.YouTubeVideoInfo? youtubeVideo,
+    $2571.YouTubeChannelInfo? youtubeChannel,
+    $2571.UserListInfo? userList,
+    $2571.TopicInfo? topic,
+    $2571.UserInterestInfo? userInterest,
+    $2571.WebpageInfo? webpage,
+    $2571.AppPaymentModelInfo? appPaymentModel,
+    $2571.CustomAffinityInfo? customAffinity,
+    $2571.CustomIntentInfo? customIntent,
+    $2834.CriterionSystemServingStatusEnum_CriterionSystemServingStatus? systemServingStatus,
+    $2835.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus? approvalStatus,
     $fixnum.Int64? criterionId,
     $core.String? adGroup,
     $core.bool? negative,
@@ -321,12 +321,12 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? finalMobileUrls,
     $core.String? finalUrlSuffix,
     $core.String? trackingUrlTemplate,
-    $2570.CustomAudienceInfo? customAudience,
-    $2570.CombinedAudienceInfo? combinedAudience,
+    $2571.CustomAudienceInfo? customAudience,
+    $2571.CombinedAudienceInfo? combinedAudience,
     $core.String? displayName,
-    $2570.AudienceInfo? audience,
-    $2570.LocationInfo? location,
-    $2570.LanguageInfo? language,
+    $2571.AudienceInfo? audience,
+    $2571.LocationInfo? location,
+    $2571.LanguageInfo? language,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -526,35 +526,35 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupCriterion', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..oo(0, [27, 28, 29, 30, 32, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 74, 75, 79, 82, 83])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2831.AdGroupCriterionStatusEnum_AdGroupCriterionStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2831.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.UNSPECIFIED, valueOf: $2831.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.valueOf, enumValues: $2831.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.values)
+    ..e<$2832.AdGroupCriterionStatusEnum_AdGroupCriterionStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2832.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.UNSPECIFIED, valueOf: $2832.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.valueOf, enumValues: $2832.AdGroupCriterionStatusEnum_AdGroupCriterionStatus.values)
     ..aOM<AdGroupCriterion_QualityInfo>(4, _omitFieldNames ? '' : 'qualityInfo', subBuilder: AdGroupCriterion_QualityInfo.create)
     ..aOM<AdGroupCriterion_PositionEstimates>(10, _omitFieldNames ? '' : 'positionEstimates', subBuilder: AdGroupCriterion_PositionEstimates.create)
-    ..pc<$2591.CustomParameter>(14, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $2591.CustomParameter.create)
-    ..e<$2817.BiddingSourceEnum_BiddingSource>(21, _omitFieldNames ? '' : 'effectiveCpcBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2817.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2817.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2817.BiddingSourceEnum_BiddingSource.values)
-    ..e<$2817.BiddingSourceEnum_BiddingSource>(22, _omitFieldNames ? '' : 'effectiveCpmBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2817.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2817.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2817.BiddingSourceEnum_BiddingSource.values)
-    ..e<$2817.BiddingSourceEnum_BiddingSource>(23, _omitFieldNames ? '' : 'effectiveCpvBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2817.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2817.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2817.BiddingSourceEnum_BiddingSource.values)
-    ..e<$2832.CriterionTypeEnum_CriterionType>(25, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2832.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $2832.CriterionTypeEnum_CriterionType.valueOf, enumValues: $2832.CriterionTypeEnum_CriterionType.values)
-    ..aOM<$2570.KeywordInfo>(27, _omitFieldNames ? '' : 'keyword', subBuilder: $2570.KeywordInfo.create)
-    ..aOM<$2570.PlacementInfo>(28, _omitFieldNames ? '' : 'placement', subBuilder: $2570.PlacementInfo.create)
-    ..aOM<$2570.MobileAppCategoryInfo>(29, _omitFieldNames ? '' : 'mobileAppCategory', subBuilder: $2570.MobileAppCategoryInfo.create)
-    ..aOM<$2570.MobileApplicationInfo>(30, _omitFieldNames ? '' : 'mobileApplication', subBuilder: $2570.MobileApplicationInfo.create)
-    ..aOM<$2570.ListingGroupInfo>(32, _omitFieldNames ? '' : 'listingGroup', subBuilder: $2570.ListingGroupInfo.create)
-    ..e<$2817.BiddingSourceEnum_BiddingSource>(35, _omitFieldNames ? '' : 'effectivePercentCpcBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2817.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2817.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2817.BiddingSourceEnum_BiddingSource.values)
-    ..aOM<$2570.AgeRangeInfo>(36, _omitFieldNames ? '' : 'ageRange', subBuilder: $2570.AgeRangeInfo.create)
-    ..aOM<$2570.GenderInfo>(37, _omitFieldNames ? '' : 'gender', subBuilder: $2570.GenderInfo.create)
-    ..aOM<$2570.IncomeRangeInfo>(38, _omitFieldNames ? '' : 'incomeRange', subBuilder: $2570.IncomeRangeInfo.create)
-    ..aOM<$2570.ParentalStatusInfo>(39, _omitFieldNames ? '' : 'parentalStatus', subBuilder: $2570.ParentalStatusInfo.create)
-    ..aOM<$2570.YouTubeVideoInfo>(40, _omitFieldNames ? '' : 'youtubeVideo', subBuilder: $2570.YouTubeVideoInfo.create)
-    ..aOM<$2570.YouTubeChannelInfo>(41, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $2570.YouTubeChannelInfo.create)
-    ..aOM<$2570.UserListInfo>(42, _omitFieldNames ? '' : 'userList', subBuilder: $2570.UserListInfo.create)
-    ..aOM<$2570.TopicInfo>(43, _omitFieldNames ? '' : 'topic', subBuilder: $2570.TopicInfo.create)
-    ..aOM<$2570.UserInterestInfo>(45, _omitFieldNames ? '' : 'userInterest', subBuilder: $2570.UserInterestInfo.create)
-    ..aOM<$2570.WebpageInfo>(46, _omitFieldNames ? '' : 'webpage', subBuilder: $2570.WebpageInfo.create)
-    ..aOM<$2570.AppPaymentModelInfo>(47, _omitFieldNames ? '' : 'appPaymentModel', subBuilder: $2570.AppPaymentModelInfo.create)
-    ..aOM<$2570.CustomAffinityInfo>(48, _omitFieldNames ? '' : 'customAffinity', subBuilder: $2570.CustomAffinityInfo.create)
-    ..aOM<$2570.CustomIntentInfo>(49, _omitFieldNames ? '' : 'customIntent', subBuilder: $2570.CustomIntentInfo.create)
-    ..e<$2833.CriterionSystemServingStatusEnum_CriterionSystemServingStatus>(52, _omitFieldNames ? '' : 'systemServingStatus', $pb.PbFieldType.OE, defaultOrMaker: $2833.CriterionSystemServingStatusEnum_CriterionSystemServingStatus.UNSPECIFIED, valueOf: $2833.CriterionSystemServingStatusEnum_CriterionSystemServingStatus.valueOf, enumValues: $2833.CriterionSystemServingStatusEnum_CriterionSystemServingStatus.values)
-    ..e<$2834.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus>(53, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2834.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus.UNSPECIFIED, valueOf: $2834.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus.valueOf, enumValues: $2834.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus.values)
+    ..pc<$2592.CustomParameter>(14, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $2592.CustomParameter.create)
+    ..e<$2818.BiddingSourceEnum_BiddingSource>(21, _omitFieldNames ? '' : 'effectiveCpcBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2818.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2818.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2818.BiddingSourceEnum_BiddingSource.values)
+    ..e<$2818.BiddingSourceEnum_BiddingSource>(22, _omitFieldNames ? '' : 'effectiveCpmBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2818.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2818.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2818.BiddingSourceEnum_BiddingSource.values)
+    ..e<$2818.BiddingSourceEnum_BiddingSource>(23, _omitFieldNames ? '' : 'effectiveCpvBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2818.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2818.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2818.BiddingSourceEnum_BiddingSource.values)
+    ..e<$2833.CriterionTypeEnum_CriterionType>(25, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2833.CriterionTypeEnum_CriterionType.UNSPECIFIED, valueOf: $2833.CriterionTypeEnum_CriterionType.valueOf, enumValues: $2833.CriterionTypeEnum_CriterionType.values)
+    ..aOM<$2571.KeywordInfo>(27, _omitFieldNames ? '' : 'keyword', subBuilder: $2571.KeywordInfo.create)
+    ..aOM<$2571.PlacementInfo>(28, _omitFieldNames ? '' : 'placement', subBuilder: $2571.PlacementInfo.create)
+    ..aOM<$2571.MobileAppCategoryInfo>(29, _omitFieldNames ? '' : 'mobileAppCategory', subBuilder: $2571.MobileAppCategoryInfo.create)
+    ..aOM<$2571.MobileApplicationInfo>(30, _omitFieldNames ? '' : 'mobileApplication', subBuilder: $2571.MobileApplicationInfo.create)
+    ..aOM<$2571.ListingGroupInfo>(32, _omitFieldNames ? '' : 'listingGroup', subBuilder: $2571.ListingGroupInfo.create)
+    ..e<$2818.BiddingSourceEnum_BiddingSource>(35, _omitFieldNames ? '' : 'effectivePercentCpcBidSource', $pb.PbFieldType.OE, defaultOrMaker: $2818.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2818.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2818.BiddingSourceEnum_BiddingSource.values)
+    ..aOM<$2571.AgeRangeInfo>(36, _omitFieldNames ? '' : 'ageRange', subBuilder: $2571.AgeRangeInfo.create)
+    ..aOM<$2571.GenderInfo>(37, _omitFieldNames ? '' : 'gender', subBuilder: $2571.GenderInfo.create)
+    ..aOM<$2571.IncomeRangeInfo>(38, _omitFieldNames ? '' : 'incomeRange', subBuilder: $2571.IncomeRangeInfo.create)
+    ..aOM<$2571.ParentalStatusInfo>(39, _omitFieldNames ? '' : 'parentalStatus', subBuilder: $2571.ParentalStatusInfo.create)
+    ..aOM<$2571.YouTubeVideoInfo>(40, _omitFieldNames ? '' : 'youtubeVideo', subBuilder: $2571.YouTubeVideoInfo.create)
+    ..aOM<$2571.YouTubeChannelInfo>(41, _omitFieldNames ? '' : 'youtubeChannel', subBuilder: $2571.YouTubeChannelInfo.create)
+    ..aOM<$2571.UserListInfo>(42, _omitFieldNames ? '' : 'userList', subBuilder: $2571.UserListInfo.create)
+    ..aOM<$2571.TopicInfo>(43, _omitFieldNames ? '' : 'topic', subBuilder: $2571.TopicInfo.create)
+    ..aOM<$2571.UserInterestInfo>(45, _omitFieldNames ? '' : 'userInterest', subBuilder: $2571.UserInterestInfo.create)
+    ..aOM<$2571.WebpageInfo>(46, _omitFieldNames ? '' : 'webpage', subBuilder: $2571.WebpageInfo.create)
+    ..aOM<$2571.AppPaymentModelInfo>(47, _omitFieldNames ? '' : 'appPaymentModel', subBuilder: $2571.AppPaymentModelInfo.create)
+    ..aOM<$2571.CustomAffinityInfo>(48, _omitFieldNames ? '' : 'customAffinity', subBuilder: $2571.CustomAffinityInfo.create)
+    ..aOM<$2571.CustomIntentInfo>(49, _omitFieldNames ? '' : 'customIntent', subBuilder: $2571.CustomIntentInfo.create)
+    ..e<$2834.CriterionSystemServingStatusEnum_CriterionSystemServingStatus>(52, _omitFieldNames ? '' : 'systemServingStatus', $pb.PbFieldType.OE, defaultOrMaker: $2834.CriterionSystemServingStatusEnum_CriterionSystemServingStatus.UNSPECIFIED, valueOf: $2834.CriterionSystemServingStatusEnum_CriterionSystemServingStatus.valueOf, enumValues: $2834.CriterionSystemServingStatusEnum_CriterionSystemServingStatus.values)
+    ..e<$2835.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus>(53, _omitFieldNames ? '' : 'approvalStatus', $pb.PbFieldType.OE, defaultOrMaker: $2835.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus.UNSPECIFIED, valueOf: $2835.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus.valueOf, enumValues: $2835.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus.values)
     ..aInt64(56, _omitFieldNames ? '' : 'criterionId')
     ..aOS(57, _omitFieldNames ? '' : 'adGroup')
     ..aOB(58, _omitFieldNames ? '' : 'negative')
@@ -573,12 +573,12 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
     ..pPS(71, _omitFieldNames ? '' : 'finalMobileUrls')
     ..aOS(72, _omitFieldNames ? '' : 'finalUrlSuffix')
     ..aOS(73, _omitFieldNames ? '' : 'trackingUrlTemplate')
-    ..aOM<$2570.CustomAudienceInfo>(74, _omitFieldNames ? '' : 'customAudience', subBuilder: $2570.CustomAudienceInfo.create)
-    ..aOM<$2570.CombinedAudienceInfo>(75, _omitFieldNames ? '' : 'combinedAudience', subBuilder: $2570.CombinedAudienceInfo.create)
+    ..aOM<$2571.CustomAudienceInfo>(74, _omitFieldNames ? '' : 'customAudience', subBuilder: $2571.CustomAudienceInfo.create)
+    ..aOM<$2571.CombinedAudienceInfo>(75, _omitFieldNames ? '' : 'combinedAudience', subBuilder: $2571.CombinedAudienceInfo.create)
     ..aOS(77, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$2570.AudienceInfo>(79, _omitFieldNames ? '' : 'audience', subBuilder: $2570.AudienceInfo.create)
-    ..aOM<$2570.LocationInfo>(82, _omitFieldNames ? '' : 'location', subBuilder: $2570.LocationInfo.create)
-    ..aOM<$2570.LanguageInfo>(83, _omitFieldNames ? '' : 'language', subBuilder: $2570.LanguageInfo.create)
+    ..aOM<$2571.AudienceInfo>(79, _omitFieldNames ? '' : 'audience', subBuilder: $2571.AudienceInfo.create)
+    ..aOM<$2571.LocationInfo>(82, _omitFieldNames ? '' : 'location', subBuilder: $2571.LocationInfo.create)
+    ..aOM<$2571.LanguageInfo>(83, _omitFieldNames ? '' : 'language', subBuilder: $2571.LanguageInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -630,9 +630,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
   ///  eligible to see the ads; but AdGroupCriterion.status will show "removed",
   ///  since no positive criterion was added.
   @$pb.TagNumber(3)
-  $2831.AdGroupCriterionStatusEnum_AdGroupCriterionStatus get status => $_getN(1);
+  $2832.AdGroupCriterionStatusEnum_AdGroupCriterionStatus get status => $_getN(1);
   @$pb.TagNumber(3)
-  set status($2831.AdGroupCriterionStatusEnum_AdGroupCriterionStatus v) { setField(3, v); }
+  set status($2832.AdGroupCriterionStatusEnum_AdGroupCriterionStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(3)
@@ -665,13 +665,13 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
   /// The list of mappings used to substitute custom parameter tags in a
   /// `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
   @$pb.TagNumber(14)
-  $core.List<$2591.CustomParameter> get urlCustomParameters => $_getList(4);
+  $core.List<$2592.CustomParameter> get urlCustomParameters => $_getList(4);
 
   /// Output only. Source of the effective CPC bid.
   @$pb.TagNumber(21)
-  $2817.BiddingSourceEnum_BiddingSource get effectiveCpcBidSource => $_getN(5);
+  $2818.BiddingSourceEnum_BiddingSource get effectiveCpcBidSource => $_getN(5);
   @$pb.TagNumber(21)
-  set effectiveCpcBidSource($2817.BiddingSourceEnum_BiddingSource v) { setField(21, v); }
+  set effectiveCpcBidSource($2818.BiddingSourceEnum_BiddingSource v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasEffectiveCpcBidSource() => $_has(5);
   @$pb.TagNumber(21)
@@ -679,9 +679,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Output only. Source of the effective CPM bid.
   @$pb.TagNumber(22)
-  $2817.BiddingSourceEnum_BiddingSource get effectiveCpmBidSource => $_getN(6);
+  $2818.BiddingSourceEnum_BiddingSource get effectiveCpmBidSource => $_getN(6);
   @$pb.TagNumber(22)
-  set effectiveCpmBidSource($2817.BiddingSourceEnum_BiddingSource v) { setField(22, v); }
+  set effectiveCpmBidSource($2818.BiddingSourceEnum_BiddingSource v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasEffectiveCpmBidSource() => $_has(6);
   @$pb.TagNumber(22)
@@ -689,9 +689,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Output only. Source of the effective CPV bid.
   @$pb.TagNumber(23)
-  $2817.BiddingSourceEnum_BiddingSource get effectiveCpvBidSource => $_getN(7);
+  $2818.BiddingSourceEnum_BiddingSource get effectiveCpvBidSource => $_getN(7);
   @$pb.TagNumber(23)
-  set effectiveCpvBidSource($2817.BiddingSourceEnum_BiddingSource v) { setField(23, v); }
+  set effectiveCpvBidSource($2818.BiddingSourceEnum_BiddingSource v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasEffectiveCpvBidSource() => $_has(7);
   @$pb.TagNumber(23)
@@ -699,9 +699,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Output only. The type of the criterion.
   @$pb.TagNumber(25)
-  $2832.CriterionTypeEnum_CriterionType get type => $_getN(8);
+  $2833.CriterionTypeEnum_CriterionType get type => $_getN(8);
   @$pb.TagNumber(25)
-  set type($2832.CriterionTypeEnum_CriterionType v) { setField(25, v); }
+  set type($2833.CriterionTypeEnum_CriterionType v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasType() => $_has(8);
   @$pb.TagNumber(25)
@@ -709,69 +709,69 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Keyword.
   @$pb.TagNumber(27)
-  $2570.KeywordInfo get keyword => $_getN(9);
+  $2571.KeywordInfo get keyword => $_getN(9);
   @$pb.TagNumber(27)
-  set keyword($2570.KeywordInfo v) { setField(27, v); }
+  set keyword($2571.KeywordInfo v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasKeyword() => $_has(9);
   @$pb.TagNumber(27)
   void clearKeyword() => clearField(27);
   @$pb.TagNumber(27)
-  $2570.KeywordInfo ensureKeyword() => $_ensure(9);
+  $2571.KeywordInfo ensureKeyword() => $_ensure(9);
 
   /// Immutable. Placement.
   @$pb.TagNumber(28)
-  $2570.PlacementInfo get placement => $_getN(10);
+  $2571.PlacementInfo get placement => $_getN(10);
   @$pb.TagNumber(28)
-  set placement($2570.PlacementInfo v) { setField(28, v); }
+  set placement($2571.PlacementInfo v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasPlacement() => $_has(10);
   @$pb.TagNumber(28)
   void clearPlacement() => clearField(28);
   @$pb.TagNumber(28)
-  $2570.PlacementInfo ensurePlacement() => $_ensure(10);
+  $2571.PlacementInfo ensurePlacement() => $_ensure(10);
 
   /// Immutable. Mobile app category.
   @$pb.TagNumber(29)
-  $2570.MobileAppCategoryInfo get mobileAppCategory => $_getN(11);
+  $2571.MobileAppCategoryInfo get mobileAppCategory => $_getN(11);
   @$pb.TagNumber(29)
-  set mobileAppCategory($2570.MobileAppCategoryInfo v) { setField(29, v); }
+  set mobileAppCategory($2571.MobileAppCategoryInfo v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasMobileAppCategory() => $_has(11);
   @$pb.TagNumber(29)
   void clearMobileAppCategory() => clearField(29);
   @$pb.TagNumber(29)
-  $2570.MobileAppCategoryInfo ensureMobileAppCategory() => $_ensure(11);
+  $2571.MobileAppCategoryInfo ensureMobileAppCategory() => $_ensure(11);
 
   /// Immutable. Mobile application.
   @$pb.TagNumber(30)
-  $2570.MobileApplicationInfo get mobileApplication => $_getN(12);
+  $2571.MobileApplicationInfo get mobileApplication => $_getN(12);
   @$pb.TagNumber(30)
-  set mobileApplication($2570.MobileApplicationInfo v) { setField(30, v); }
+  set mobileApplication($2571.MobileApplicationInfo v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasMobileApplication() => $_has(12);
   @$pb.TagNumber(30)
   void clearMobileApplication() => clearField(30);
   @$pb.TagNumber(30)
-  $2570.MobileApplicationInfo ensureMobileApplication() => $_ensure(12);
+  $2571.MobileApplicationInfo ensureMobileApplication() => $_ensure(12);
 
   /// Immutable. Listing group.
   @$pb.TagNumber(32)
-  $2570.ListingGroupInfo get listingGroup => $_getN(13);
+  $2571.ListingGroupInfo get listingGroup => $_getN(13);
   @$pb.TagNumber(32)
-  set listingGroup($2570.ListingGroupInfo v) { setField(32, v); }
+  set listingGroup($2571.ListingGroupInfo v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasListingGroup() => $_has(13);
   @$pb.TagNumber(32)
   void clearListingGroup() => clearField(32);
   @$pb.TagNumber(32)
-  $2570.ListingGroupInfo ensureListingGroup() => $_ensure(13);
+  $2571.ListingGroupInfo ensureListingGroup() => $_ensure(13);
 
   /// Output only. Source of the effective Percent CPC bid.
   @$pb.TagNumber(35)
-  $2817.BiddingSourceEnum_BiddingSource get effectivePercentCpcBidSource => $_getN(14);
+  $2818.BiddingSourceEnum_BiddingSource get effectivePercentCpcBidSource => $_getN(14);
   @$pb.TagNumber(35)
-  set effectivePercentCpcBidSource($2817.BiddingSourceEnum_BiddingSource v) { setField(35, v); }
+  set effectivePercentCpcBidSource($2818.BiddingSourceEnum_BiddingSource v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasEffectivePercentCpcBidSource() => $_has(14);
   @$pb.TagNumber(35)
@@ -779,165 +779,165 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Age range.
   @$pb.TagNumber(36)
-  $2570.AgeRangeInfo get ageRange => $_getN(15);
+  $2571.AgeRangeInfo get ageRange => $_getN(15);
   @$pb.TagNumber(36)
-  set ageRange($2570.AgeRangeInfo v) { setField(36, v); }
+  set ageRange($2571.AgeRangeInfo v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasAgeRange() => $_has(15);
   @$pb.TagNumber(36)
   void clearAgeRange() => clearField(36);
   @$pb.TagNumber(36)
-  $2570.AgeRangeInfo ensureAgeRange() => $_ensure(15);
+  $2571.AgeRangeInfo ensureAgeRange() => $_ensure(15);
 
   /// Immutable. Gender.
   @$pb.TagNumber(37)
-  $2570.GenderInfo get gender => $_getN(16);
+  $2571.GenderInfo get gender => $_getN(16);
   @$pb.TagNumber(37)
-  set gender($2570.GenderInfo v) { setField(37, v); }
+  set gender($2571.GenderInfo v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasGender() => $_has(16);
   @$pb.TagNumber(37)
   void clearGender() => clearField(37);
   @$pb.TagNumber(37)
-  $2570.GenderInfo ensureGender() => $_ensure(16);
+  $2571.GenderInfo ensureGender() => $_ensure(16);
 
   /// Immutable. Income range.
   @$pb.TagNumber(38)
-  $2570.IncomeRangeInfo get incomeRange => $_getN(17);
+  $2571.IncomeRangeInfo get incomeRange => $_getN(17);
   @$pb.TagNumber(38)
-  set incomeRange($2570.IncomeRangeInfo v) { setField(38, v); }
+  set incomeRange($2571.IncomeRangeInfo v) { setField(38, v); }
   @$pb.TagNumber(38)
   $core.bool hasIncomeRange() => $_has(17);
   @$pb.TagNumber(38)
   void clearIncomeRange() => clearField(38);
   @$pb.TagNumber(38)
-  $2570.IncomeRangeInfo ensureIncomeRange() => $_ensure(17);
+  $2571.IncomeRangeInfo ensureIncomeRange() => $_ensure(17);
 
   /// Immutable. Parental status.
   @$pb.TagNumber(39)
-  $2570.ParentalStatusInfo get parentalStatus => $_getN(18);
+  $2571.ParentalStatusInfo get parentalStatus => $_getN(18);
   @$pb.TagNumber(39)
-  set parentalStatus($2570.ParentalStatusInfo v) { setField(39, v); }
+  set parentalStatus($2571.ParentalStatusInfo v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasParentalStatus() => $_has(18);
   @$pb.TagNumber(39)
   void clearParentalStatus() => clearField(39);
   @$pb.TagNumber(39)
-  $2570.ParentalStatusInfo ensureParentalStatus() => $_ensure(18);
+  $2571.ParentalStatusInfo ensureParentalStatus() => $_ensure(18);
 
   /// Immutable. YouTube Video.
   @$pb.TagNumber(40)
-  $2570.YouTubeVideoInfo get youtubeVideo => $_getN(19);
+  $2571.YouTubeVideoInfo get youtubeVideo => $_getN(19);
   @$pb.TagNumber(40)
-  set youtubeVideo($2570.YouTubeVideoInfo v) { setField(40, v); }
+  set youtubeVideo($2571.YouTubeVideoInfo v) { setField(40, v); }
   @$pb.TagNumber(40)
   $core.bool hasYoutubeVideo() => $_has(19);
   @$pb.TagNumber(40)
   void clearYoutubeVideo() => clearField(40);
   @$pb.TagNumber(40)
-  $2570.YouTubeVideoInfo ensureYoutubeVideo() => $_ensure(19);
+  $2571.YouTubeVideoInfo ensureYoutubeVideo() => $_ensure(19);
 
   /// Immutable. YouTube Channel.
   @$pb.TagNumber(41)
-  $2570.YouTubeChannelInfo get youtubeChannel => $_getN(20);
+  $2571.YouTubeChannelInfo get youtubeChannel => $_getN(20);
   @$pb.TagNumber(41)
-  set youtubeChannel($2570.YouTubeChannelInfo v) { setField(41, v); }
+  set youtubeChannel($2571.YouTubeChannelInfo v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasYoutubeChannel() => $_has(20);
   @$pb.TagNumber(41)
   void clearYoutubeChannel() => clearField(41);
   @$pb.TagNumber(41)
-  $2570.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(20);
+  $2571.YouTubeChannelInfo ensureYoutubeChannel() => $_ensure(20);
 
   /// Immutable. User List.
   @$pb.TagNumber(42)
-  $2570.UserListInfo get userList => $_getN(21);
+  $2571.UserListInfo get userList => $_getN(21);
   @$pb.TagNumber(42)
-  set userList($2570.UserListInfo v) { setField(42, v); }
+  set userList($2571.UserListInfo v) { setField(42, v); }
   @$pb.TagNumber(42)
   $core.bool hasUserList() => $_has(21);
   @$pb.TagNumber(42)
   void clearUserList() => clearField(42);
   @$pb.TagNumber(42)
-  $2570.UserListInfo ensureUserList() => $_ensure(21);
+  $2571.UserListInfo ensureUserList() => $_ensure(21);
 
   /// Immutable. Topic.
   @$pb.TagNumber(43)
-  $2570.TopicInfo get topic => $_getN(22);
+  $2571.TopicInfo get topic => $_getN(22);
   @$pb.TagNumber(43)
-  set topic($2570.TopicInfo v) { setField(43, v); }
+  set topic($2571.TopicInfo v) { setField(43, v); }
   @$pb.TagNumber(43)
   $core.bool hasTopic() => $_has(22);
   @$pb.TagNumber(43)
   void clearTopic() => clearField(43);
   @$pb.TagNumber(43)
-  $2570.TopicInfo ensureTopic() => $_ensure(22);
+  $2571.TopicInfo ensureTopic() => $_ensure(22);
 
   /// Immutable. User Interest.
   @$pb.TagNumber(45)
-  $2570.UserInterestInfo get userInterest => $_getN(23);
+  $2571.UserInterestInfo get userInterest => $_getN(23);
   @$pb.TagNumber(45)
-  set userInterest($2570.UserInterestInfo v) { setField(45, v); }
+  set userInterest($2571.UserInterestInfo v) { setField(45, v); }
   @$pb.TagNumber(45)
   $core.bool hasUserInterest() => $_has(23);
   @$pb.TagNumber(45)
   void clearUserInterest() => clearField(45);
   @$pb.TagNumber(45)
-  $2570.UserInterestInfo ensureUserInterest() => $_ensure(23);
+  $2571.UserInterestInfo ensureUserInterest() => $_ensure(23);
 
   /// Immutable. Webpage
   @$pb.TagNumber(46)
-  $2570.WebpageInfo get webpage => $_getN(24);
+  $2571.WebpageInfo get webpage => $_getN(24);
   @$pb.TagNumber(46)
-  set webpage($2570.WebpageInfo v) { setField(46, v); }
+  set webpage($2571.WebpageInfo v) { setField(46, v); }
   @$pb.TagNumber(46)
   $core.bool hasWebpage() => $_has(24);
   @$pb.TagNumber(46)
   void clearWebpage() => clearField(46);
   @$pb.TagNumber(46)
-  $2570.WebpageInfo ensureWebpage() => $_ensure(24);
+  $2571.WebpageInfo ensureWebpage() => $_ensure(24);
 
   /// Immutable. App Payment Model.
   @$pb.TagNumber(47)
-  $2570.AppPaymentModelInfo get appPaymentModel => $_getN(25);
+  $2571.AppPaymentModelInfo get appPaymentModel => $_getN(25);
   @$pb.TagNumber(47)
-  set appPaymentModel($2570.AppPaymentModelInfo v) { setField(47, v); }
+  set appPaymentModel($2571.AppPaymentModelInfo v) { setField(47, v); }
   @$pb.TagNumber(47)
   $core.bool hasAppPaymentModel() => $_has(25);
   @$pb.TagNumber(47)
   void clearAppPaymentModel() => clearField(47);
   @$pb.TagNumber(47)
-  $2570.AppPaymentModelInfo ensureAppPaymentModel() => $_ensure(25);
+  $2571.AppPaymentModelInfo ensureAppPaymentModel() => $_ensure(25);
 
   /// Immutable. Custom Affinity.
   @$pb.TagNumber(48)
-  $2570.CustomAffinityInfo get customAffinity => $_getN(26);
+  $2571.CustomAffinityInfo get customAffinity => $_getN(26);
   @$pb.TagNumber(48)
-  set customAffinity($2570.CustomAffinityInfo v) { setField(48, v); }
+  set customAffinity($2571.CustomAffinityInfo v) { setField(48, v); }
   @$pb.TagNumber(48)
   $core.bool hasCustomAffinity() => $_has(26);
   @$pb.TagNumber(48)
   void clearCustomAffinity() => clearField(48);
   @$pb.TagNumber(48)
-  $2570.CustomAffinityInfo ensureCustomAffinity() => $_ensure(26);
+  $2571.CustomAffinityInfo ensureCustomAffinity() => $_ensure(26);
 
   /// Immutable. Custom Intent.
   @$pb.TagNumber(49)
-  $2570.CustomIntentInfo get customIntent => $_getN(27);
+  $2571.CustomIntentInfo get customIntent => $_getN(27);
   @$pb.TagNumber(49)
-  set customIntent($2570.CustomIntentInfo v) { setField(49, v); }
+  set customIntent($2571.CustomIntentInfo v) { setField(49, v); }
   @$pb.TagNumber(49)
   $core.bool hasCustomIntent() => $_has(27);
   @$pb.TagNumber(49)
   void clearCustomIntent() => clearField(49);
   @$pb.TagNumber(49)
-  $2570.CustomIntentInfo ensureCustomIntent() => $_ensure(27);
+  $2571.CustomIntentInfo ensureCustomIntent() => $_ensure(27);
 
   /// Output only. Serving status of the criterion.
   @$pb.TagNumber(52)
-  $2833.CriterionSystemServingStatusEnum_CriterionSystemServingStatus get systemServingStatus => $_getN(28);
+  $2834.CriterionSystemServingStatusEnum_CriterionSystemServingStatus get systemServingStatus => $_getN(28);
   @$pb.TagNumber(52)
-  set systemServingStatus($2833.CriterionSystemServingStatusEnum_CriterionSystemServingStatus v) { setField(52, v); }
+  set systemServingStatus($2834.CriterionSystemServingStatusEnum_CriterionSystemServingStatus v) { setField(52, v); }
   @$pb.TagNumber(52)
   $core.bool hasSystemServingStatus() => $_has(28);
   @$pb.TagNumber(52)
@@ -945,9 +945,9 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Output only. Approval status of the criterion.
   @$pb.TagNumber(53)
-  $2834.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus get approvalStatus => $_getN(29);
+  $2835.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus get approvalStatus => $_getN(29);
   @$pb.TagNumber(53)
-  set approvalStatus($2834.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus v) { setField(53, v); }
+  set approvalStatus($2835.AdGroupCriterionApprovalStatusEnum_AdGroupCriterionApprovalStatus v) { setField(53, v); }
   @$pb.TagNumber(53)
   $core.bool hasApprovalStatus() => $_has(29);
   @$pb.TagNumber(53)
@@ -1127,27 +1127,27 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Custom Audience.
   @$pb.TagNumber(74)
-  $2570.CustomAudienceInfo get customAudience => $_getN(48);
+  $2571.CustomAudienceInfo get customAudience => $_getN(48);
   @$pb.TagNumber(74)
-  set customAudience($2570.CustomAudienceInfo v) { setField(74, v); }
+  set customAudience($2571.CustomAudienceInfo v) { setField(74, v); }
   @$pb.TagNumber(74)
   $core.bool hasCustomAudience() => $_has(48);
   @$pb.TagNumber(74)
   void clearCustomAudience() => clearField(74);
   @$pb.TagNumber(74)
-  $2570.CustomAudienceInfo ensureCustomAudience() => $_ensure(48);
+  $2571.CustomAudienceInfo ensureCustomAudience() => $_ensure(48);
 
   /// Immutable. Combined Audience.
   @$pb.TagNumber(75)
-  $2570.CombinedAudienceInfo get combinedAudience => $_getN(49);
+  $2571.CombinedAudienceInfo get combinedAudience => $_getN(49);
   @$pb.TagNumber(75)
-  set combinedAudience($2570.CombinedAudienceInfo v) { setField(75, v); }
+  set combinedAudience($2571.CombinedAudienceInfo v) { setField(75, v); }
   @$pb.TagNumber(75)
   $core.bool hasCombinedAudience() => $_has(49);
   @$pb.TagNumber(75)
   void clearCombinedAudience() => clearField(75);
   @$pb.TagNumber(75)
-  $2570.CombinedAudienceInfo ensureCombinedAudience() => $_ensure(49);
+  $2571.CombinedAudienceInfo ensureCombinedAudience() => $_ensure(49);
 
   ///  Output only. The display name of the criterion.
   ///
@@ -1163,39 +1163,39 @@ class AdGroupCriterion extends $pb.GeneratedMessage {
 
   /// Immutable. Audience.
   @$pb.TagNumber(79)
-  $2570.AudienceInfo get audience => $_getN(51);
+  $2571.AudienceInfo get audience => $_getN(51);
   @$pb.TagNumber(79)
-  set audience($2570.AudienceInfo v) { setField(79, v); }
+  set audience($2571.AudienceInfo v) { setField(79, v); }
   @$pb.TagNumber(79)
   $core.bool hasAudience() => $_has(51);
   @$pb.TagNumber(79)
   void clearAudience() => clearField(79);
   @$pb.TagNumber(79)
-  $2570.AudienceInfo ensureAudience() => $_ensure(51);
+  $2571.AudienceInfo ensureAudience() => $_ensure(51);
 
   /// Immutable. Location.
   @$pb.TagNumber(82)
-  $2570.LocationInfo get location => $_getN(52);
+  $2571.LocationInfo get location => $_getN(52);
   @$pb.TagNumber(82)
-  set location($2570.LocationInfo v) { setField(82, v); }
+  set location($2571.LocationInfo v) { setField(82, v); }
   @$pb.TagNumber(82)
   $core.bool hasLocation() => $_has(52);
   @$pb.TagNumber(82)
   void clearLocation() => clearField(82);
   @$pb.TagNumber(82)
-  $2570.LocationInfo ensureLocation() => $_ensure(52);
+  $2571.LocationInfo ensureLocation() => $_ensure(52);
 
   /// Immutable. Language.
   @$pb.TagNumber(83)
-  $2570.LanguageInfo get language => $_getN(53);
+  $2571.LanguageInfo get language => $_getN(53);
   @$pb.TagNumber(83)
-  set language($2570.LanguageInfo v) { setField(83, v); }
+  set language($2571.LanguageInfo v) { setField(83, v); }
   @$pb.TagNumber(83)
   $core.bool hasLanguage() => $_has(53);
   @$pb.TagNumber(83)
   void clearLanguage() => clearField(83);
   @$pb.TagNumber(83)
-  $2570.LanguageInfo ensureLanguage() => $_ensure(53);
+  $2571.LanguageInfo ensureLanguage() => $_ensure(53);
 }
 
 

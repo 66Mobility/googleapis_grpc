@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'cloud_tpu.pbenum.dart';
 
 export 'cloud_tpu.pbenum.dart';
@@ -670,7 +670,7 @@ class Node extends $pb.GeneratedMessage {
     $core.String? healthDescription,
     $core.String? runtimeVersion,
     $core.String? cidrBlock,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     SchedulingConfig? schedulingConfig,
     $core.Iterable<NetworkEndpoint>? networkEndpoints,
     Node_Health? health,
@@ -775,7 +775,7 @@ class Node extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'healthDescription')
     ..aOS(11, _omitFieldNames ? '' : 'runtimeVersion')
     ..aOS(13, _omitFieldNames ? '' : 'cidrBlock')
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<SchedulingConfig>(17, _omitFieldNames ? '' : 'schedulingConfig', subBuilder: SchedulingConfig.create)
     ..pc<NetworkEndpoint>(21, _omitFieldNames ? '' : 'networkEndpoints', $pb.PbFieldType.PM, subBuilder: NetworkEndpoint.create)
     ..e<Node_Health>(22, _omitFieldNames ? '' : 'health', $pb.PbFieldType.OE, defaultOrMaker: Node_Health.HEALTH_UNSPECIFIED, valueOf: Node_Health.valueOf, enumValues: Node_Health.values)
@@ -896,15 +896,15 @@ class Node extends $pb.GeneratedMessage {
 
   /// Output only. The time when the node was created.
   @$pb.TagNumber(16)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(16)
-  set createTime($1775.Timestamp v) { setField(16, v); }
+  set createTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(16)
   void clearCreateTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// The scheduling options for this node.
   @$pb.TagNumber(17)
@@ -1494,7 +1494,7 @@ class StartNodeRequest extends $pb.GeneratedMessage {
 /// Request for [UpdateNode][google.cloud.tpu.v2.Tpu.UpdateNode].
 class UpdateNodeRequest extends $pb.GeneratedMessage {
   factory UpdateNodeRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Node? node,
   }) {
     final $result = create();
@@ -1511,7 +1511,7 @@ class UpdateNodeRequest extends $pb.GeneratedMessage {
   factory UpdateNodeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNodeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Node>(2, _omitFieldNames ? '' : 'node', subBuilder: Node.create)
     ..hasRequiredFields = false
   ;
@@ -1541,15 +1541,15 @@ class UpdateNodeRequest extends $pb.GeneratedMessage {
   /// Supported fields: [description, tags, labels, metadata,
   /// network_config.enable_external_ips].
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The node. Only fields specified in update_mask are updated.
   @$pb.TagNumber(2)
@@ -2342,8 +2342,8 @@ class ListRuntimeVersionsResponse extends $pb.GeneratedMessage {
 /// Metadata describing an [Operation][google.longrunning.Operation]
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusDetail,
@@ -2379,8 +2379,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusDetail')
@@ -2412,27 +2412,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Target of the operation - for example
   /// projects/project-1/connectivityTests/test-1
@@ -2489,7 +2489,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
 /// A Symptom instance.
 class Symptom extends $pb.GeneratedMessage {
   factory Symptom({
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     Symptom_SymptomType? symptomType,
     $core.String? details,
     $core.String? workerId,
@@ -2514,7 +2514,7 @@ class Symptom extends $pb.GeneratedMessage {
   factory Symptom.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Symptom', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.tpu.v2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<Symptom_SymptomType>(2, _omitFieldNames ? '' : 'symptomType', $pb.PbFieldType.OE, defaultOrMaker: Symptom_SymptomType.SYMPTOM_TYPE_UNSPECIFIED, valueOf: Symptom_SymptomType.valueOf, enumValues: Symptom_SymptomType.values)
     ..aOS(3, _omitFieldNames ? '' : 'details')
     ..aOS(4, _omitFieldNames ? '' : 'workerId')
@@ -2544,15 +2544,15 @@ class Symptom extends $pb.GeneratedMessage {
 
   /// Timestamp when the Symptom is created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Type of the Symptom.
   @$pb.TagNumber(2)

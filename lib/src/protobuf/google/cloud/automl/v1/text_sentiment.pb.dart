@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'classification.pb.dart' as $4331;
+import 'classification.pb.dart' as $4332;
 
 /// Contains annotation details specific to text sentiment.
 class TextSentimentAnnotation extends $pb.GeneratedMessage {
@@ -88,7 +88,7 @@ class TextSentimentEvaluationMetrics extends $pb.GeneratedMessage {
     $core.double? meanSquaredError,
     $core.double? linearKappa,
     $core.double? quadraticKappa,
-    $4331.ClassificationEvaluationMetrics_ConfusionMatrix? confusionMatrix,
+    $4332.ClassificationEvaluationMetrics_ConfusionMatrix? confusionMatrix,
   }) {
     final $result = create();
     if (precision != null) {
@@ -129,7 +129,7 @@ class TextSentimentEvaluationMetrics extends $pb.GeneratedMessage {
     ..a<$core.double>(5, _omitFieldNames ? '' : 'meanSquaredError', $pb.PbFieldType.OF)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'linearKappa', $pb.PbFieldType.OF)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'quadraticKappa', $pb.PbFieldType.OF)
-    ..aOM<$4331.ClassificationEvaluationMetrics_ConfusionMatrix>(8, _omitFieldNames ? '' : 'confusionMatrix', subBuilder: $4331.ClassificationEvaluationMetrics_ConfusionMatrix.create)
+    ..aOM<$4332.ClassificationEvaluationMetrics_ConfusionMatrix>(8, _omitFieldNames ? '' : 'confusionMatrix', subBuilder: $4332.ClassificationEvaluationMetrics_ConfusionMatrix.create)
     ..hasRequiredFields = false
   ;
 
@@ -232,15 +232,15 @@ class TextSentimentEvaluationMetrics extends $pb.GeneratedMessage {
   /// Only set for the overall model evaluation, not for evaluation of a single
   /// annotation spec.
   @$pb.TagNumber(8)
-  $4331.ClassificationEvaluationMetrics_ConfusionMatrix get confusionMatrix => $_getN(7);
+  $4332.ClassificationEvaluationMetrics_ConfusionMatrix get confusionMatrix => $_getN(7);
   @$pb.TagNumber(8)
-  set confusionMatrix($4331.ClassificationEvaluationMetrics_ConfusionMatrix v) { setField(8, v); }
+  set confusionMatrix($4332.ClassificationEvaluationMetrics_ConfusionMatrix v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasConfusionMatrix() => $_has(7);
   @$pb.TagNumber(8)
   void clearConfusionMatrix() => clearField(8);
   @$pb.TagNumber(8)
-  $4331.ClassificationEvaluationMetrics_ConfusionMatrix ensureConfusionMatrix() => $_ensure(7);
+  $4332.ClassificationEvaluationMetrics_ConfusionMatrix ensureConfusionMatrix() => $_ensure(7);
 }
 
 

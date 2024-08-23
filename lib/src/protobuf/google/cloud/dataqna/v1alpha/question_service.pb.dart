@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'question.pb.dart' as $838;
 import 'user_feedback.pb.dart' as $839;
 
@@ -21,7 +21,7 @@ import 'user_feedback.pb.dart' as $839;
 class GetQuestionRequest extends $pb.GeneratedMessage {
   factory GetQuestionRequest({
     $core.String? name,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -38,7 +38,7 @@ class GetQuestionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetQuestionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataqna.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,15 +76,15 @@ class GetQuestionRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be retrieved.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 }
 
 /// Request to create a question resource.
@@ -283,7 +283,7 @@ class GetUserFeedbackRequest extends $pb.GeneratedMessage {
 class UpdateUserFeedbackRequest extends $pb.GeneratedMessage {
   factory UpdateUserFeedbackRequest({
     $839.UserFeedback? userFeedback,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (userFeedback != null) {
@@ -300,7 +300,7 @@ class UpdateUserFeedbackRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateUserFeedbackRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataqna.v1alpha'), createEmptyInstance: create)
     ..aOM<$839.UserFeedback>(1, _omitFieldNames ? '' : 'userFeedback', subBuilder: $839.UserFeedback.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -342,15 +342,15 @@ class UpdateUserFeedbackRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

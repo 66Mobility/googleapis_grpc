@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/operating_system_version_operator_type.pbenum.dart' as $2330;
+import '../enums/operating_system_version_operator_type.pbenum.dart' as $2331;
 
 /// A mobile operating system version or a range of versions, depending on
 /// `operator_type`. List of available mobile platforms at
@@ -22,7 +22,7 @@ import '../enums/operating_system_version_operator_type.pbenum.dart' as $2330;
 class OperatingSystemVersionConstant extends $pb.GeneratedMessage {
   factory OperatingSystemVersionConstant({
     $core.String? resourceName,
-    $2330.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType? operatorType,
+    $2331.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType? operatorType,
     $fixnum.Int64? id,
     $core.String? name,
     $core.int? osMajorVersion,
@@ -55,7 +55,7 @@ class OperatingSystemVersionConstant extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperatingSystemVersionConstant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2330.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType>(6, _omitFieldNames ? '' : 'operatorType', $pb.PbFieldType.OE, defaultOrMaker: $2330.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType.UNSPECIFIED, valueOf: $2330.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType.valueOf, enumValues: $2330.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType.values)
+    ..e<$2331.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType>(6, _omitFieldNames ? '' : 'operatorType', $pb.PbFieldType.OE, defaultOrMaker: $2331.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType.UNSPECIFIED, valueOf: $2331.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType.valueOf, enumValues: $2331.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType.values)
     ..aInt64(7, _omitFieldNames ? '' : 'id')
     ..aOS(8, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'osMajorVersion', $pb.PbFieldType.O3)
@@ -100,9 +100,9 @@ class OperatingSystemVersionConstant extends $pb.GeneratedMessage {
   /// Output only. Determines whether this constant represents a single version
   /// or a range of versions.
   @$pb.TagNumber(6)
-  $2330.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType get operatorType => $_getN(1);
+  $2331.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType get operatorType => $_getN(1);
   @$pb.TagNumber(6)
-  set operatorType($2330.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType v) { setField(6, v); }
+  set operatorType($2331.OperatingSystemVersionOperatorTypeEnum_OperatingSystemVersionOperatorType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOperatorType() => $_has(1);
   @$pb.TagNumber(6)

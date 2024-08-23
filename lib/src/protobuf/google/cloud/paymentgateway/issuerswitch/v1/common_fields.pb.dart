@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/latlng.pb.dart' as $1798;
-import '../../../../type/money.pb.dart' as $1814;
+import '../../../../type/latlng.pb.dart' as $1799;
+import '../../../../type/money.pb.dart' as $1815;
 import 'common_fields.pbenum.dart';
 
 export 'common_fields.pbenum.dart';
@@ -108,7 +108,7 @@ class SettlementParticipant_SettlementDetails extends $pb.GeneratedMessage {
     $core.String? backendSettlementId,
     $core.String? code,
     $core.String? reversalCode,
-    $1814.Money? settledAmount,
+    $1815.Money? settledAmount,
   }) {
     final $result = create();
     if (backendSettlementId != null) {
@@ -133,7 +133,7 @@ class SettlementParticipant_SettlementDetails extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'backendSettlementId')
     ..aOS(2, _omitFieldNames ? '' : 'code')
     ..aOS(3, _omitFieldNames ? '' : 'reversalCode')
-    ..aOM<$1814.Money>(4, _omitFieldNames ? '' : 'settledAmount', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(4, _omitFieldNames ? '' : 'settledAmount', subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -195,15 +195,15 @@ class SettlementParticipant_SettlementDetails extends $pb.GeneratedMessage {
   /// Output only. The amount settled as part of this API transaction. If the
   /// settlement had failed, then this value will be 0.00.
   @$pb.TagNumber(4)
-  $1814.Money get settledAmount => $_getN(3);
+  $1815.Money get settledAmount => $_getN(3);
   @$pb.TagNumber(4)
-  set settledAmount($1814.Money v) { setField(4, v); }
+  set settledAmount($1815.Money v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSettledAmount() => $_has(3);
   @$pb.TagNumber(4)
   void clearSettledAmount() => clearField(4);
   @$pb.TagNumber(4)
-  $1814.Money ensureSettledAmount() => $_ensure(3);
+  $1815.Money ensureSettledAmount() => $_ensure(3);
 }
 
 /// A participant in a payment settlement transaction processed by the issuer
@@ -325,7 +325,7 @@ class DeviceDetails extends $pb.GeneratedMessage {
   factory DeviceDetails({
     $core.String? paymentApp,
     $core.String? capability,
-    $1798.LatLng? geoCode,
+    $1799.LatLng? geoCode,
     $core.String? id,
     $core.String? ipAddress,
     $core.String? location,
@@ -370,7 +370,7 @@ class DeviceDetails extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'paymentApp')
     ..aOS(2, _omitFieldNames ? '' : 'capability')
-    ..aOM<$1798.LatLng>(3, _omitFieldNames ? '' : 'geoCode', subBuilder: $1798.LatLng.create)
+    ..aOM<$1799.LatLng>(3, _omitFieldNames ? '' : 'geoCode', subBuilder: $1799.LatLng.create)
     ..aOS(4, _omitFieldNames ? '' : 'id')
     ..aOS(5, _omitFieldNames ? '' : 'ipAddress')
     ..aOS(6, _omitFieldNames ? '' : 'location')
@@ -423,15 +423,15 @@ class DeviceDetails extends $pb.GeneratedMessage {
 
   /// The geo-code of the device.
   @$pb.TagNumber(3)
-  $1798.LatLng get geoCode => $_getN(2);
+  $1799.LatLng get geoCode => $_getN(2);
   @$pb.TagNumber(3)
-  set geoCode($1798.LatLng v) { setField(3, v); }
+  set geoCode($1799.LatLng v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGeoCode() => $_has(2);
   @$pb.TagNumber(3)
   void clearGeoCode() => clearField(3);
   @$pb.TagNumber(3)
-  $1798.LatLng ensureGeoCode() => $_ensure(2);
+  $1799.LatLng ensureGeoCode() => $_ensure(2);
 
   /// The device's ID.
   @$pb.TagNumber(4)

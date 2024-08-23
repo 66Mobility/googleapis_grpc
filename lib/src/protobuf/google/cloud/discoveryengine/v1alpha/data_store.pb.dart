@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4504;
-import 'common.pbenum.dart' as $4504;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4506;
+import 'common.pbenum.dart' as $4506;
 import 'data_store.pbenum.dart';
 import 'document_processing_config.pb.dart' as $966;
 import 'schema.pb.dart' as $984;
@@ -27,13 +27,13 @@ class DataStore extends $pb.GeneratedMessage {
   factory DataStore({
     $core.String? name,
     $core.String? displayName,
-    $4504.IndustryVertical? industryVertical,
-    $1775.Timestamp? createTime,
-    $core.Iterable<$4504.SolutionType>? solutionTypes,
+    $4506.IndustryVertical? industryVertical,
+    $1776.Timestamp? createTime,
+    $core.Iterable<$4506.SolutionType>? solutionTypes,
     DataStore_ContentConfig? contentConfig,
     $core.String? defaultSchemaId,
     LanguageInfo? languageInfo,
-    $4504.IdpConfig? idpConfig,
+    $4506.IdpConfig? idpConfig,
     $core.bool? aclEnabled,
     $966.DocumentProcessingConfig? documentProcessingConfig,
     $984.Schema? startingSchema,
@@ -84,13 +84,13 @@ class DataStore extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataStore', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..e<$4504.IndustryVertical>(3, _omitFieldNames ? '' : 'industryVertical', $pb.PbFieldType.OE, defaultOrMaker: $4504.IndustryVertical.INDUSTRY_VERTICAL_UNSPECIFIED, valueOf: $4504.IndustryVertical.valueOf, enumValues: $4504.IndustryVertical.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..pc<$4504.SolutionType>(5, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4504.SolutionType.valueOf, enumValues: $4504.SolutionType.values, defaultEnumValue: $4504.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
+    ..e<$4506.IndustryVertical>(3, _omitFieldNames ? '' : 'industryVertical', $pb.PbFieldType.OE, defaultOrMaker: $4506.IndustryVertical.INDUSTRY_VERTICAL_UNSPECIFIED, valueOf: $4506.IndustryVertical.valueOf, enumValues: $4506.IndustryVertical.values)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..pc<$4506.SolutionType>(5, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4506.SolutionType.valueOf, enumValues: $4506.SolutionType.values, defaultEnumValue: $4506.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
     ..e<DataStore_ContentConfig>(6, _omitFieldNames ? '' : 'contentConfig', $pb.PbFieldType.OE, defaultOrMaker: DataStore_ContentConfig.CONTENT_CONFIG_UNSPECIFIED, valueOf: DataStore_ContentConfig.valueOf, enumValues: DataStore_ContentConfig.values)
     ..aOS(7, _omitFieldNames ? '' : 'defaultSchemaId')
     ..aOM<LanguageInfo>(14, _omitFieldNames ? '' : 'languageInfo', subBuilder: LanguageInfo.create)
-    ..aOM<$4504.IdpConfig>(21, _omitFieldNames ? '' : 'idpConfig', subBuilder: $4504.IdpConfig.create)
+    ..aOM<$4506.IdpConfig>(21, _omitFieldNames ? '' : 'idpConfig', subBuilder: $4506.IdpConfig.create)
     ..aOB(24, _omitFieldNames ? '' : 'aclEnabled')
     ..aOM<$966.DocumentProcessingConfig>(27, _omitFieldNames ? '' : 'documentProcessingConfig', subBuilder: $966.DocumentProcessingConfig.create)
     ..aOM<$984.Schema>(28, _omitFieldNames ? '' : 'startingSchema', subBuilder: $984.Schema.create)
@@ -148,9 +148,9 @@ class DataStore extends $pb.GeneratedMessage {
 
   /// Immutable. The industry vertical that the data store registers.
   @$pb.TagNumber(3)
-  $4504.IndustryVertical get industryVertical => $_getN(2);
+  $4506.IndustryVertical get industryVertical => $_getN(2);
   @$pb.TagNumber(3)
-  set industryVertical($4504.IndustryVertical v) { setField(3, v); }
+  set industryVertical($4506.IndustryVertical v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIndustryVertical() => $_has(2);
   @$pb.TagNumber(3)
@@ -159,15 +159,15 @@ class DataStore extends $pb.GeneratedMessage {
   /// Output only. Timestamp the
   /// [DataStore][google.cloud.discoveryengine.v1alpha.DataStore] was created at.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   ///  The solutions that the data store enrolls. Available solutions for each
   ///  [industry_vertical][google.cloud.discoveryengine.v1alpha.DataStore.industry_vertical]:
@@ -176,7 +176,7 @@ class DataStore extends $pb.GeneratedMessage {
   ///  * `SITE_SEARCH`: `SOLUTION_TYPE_SEARCH` is automatically enrolled. Other
   ///    solutions cannot be enrolled.
   @$pb.TagNumber(5)
-  $core.List<$4504.SolutionType> get solutionTypes => $_getList(4);
+  $core.List<$4506.SolutionType> get solutionTypes => $_getList(4);
 
   /// Immutable. The content config of the data store. If this field is unset,
   /// the server behavior defaults to
@@ -216,15 +216,15 @@ class DataStore extends $pb.GeneratedMessage {
 
   /// Output only. Data store level identity provider config.
   @$pb.TagNumber(21)
-  $4504.IdpConfig get idpConfig => $_getN(8);
+  $4506.IdpConfig get idpConfig => $_getN(8);
   @$pb.TagNumber(21)
-  set idpConfig($4504.IdpConfig v) { setField(21, v); }
+  set idpConfig($4506.IdpConfig v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasIdpConfig() => $_has(8);
   @$pb.TagNumber(21)
   void clearIdpConfig() => clearField(21);
   @$pb.TagNumber(21)
-  $4504.IdpConfig ensureIdpConfig() => $_ensure(8);
+  $4506.IdpConfig ensureIdpConfig() => $_ensure(8);
 
   ///  Immutable. Whether data in the
   ///  [DataStore][google.cloud.discoveryengine.v1alpha.DataStore] has ACL

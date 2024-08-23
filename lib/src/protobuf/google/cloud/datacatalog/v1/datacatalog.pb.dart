@@ -14,21 +14,21 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'bigquery.pb.dart' as $4455;
-import 'common.pb.dart' as $4446;
-import 'common.pbenum.dart' as $4446;
-import 'data_source.pb.dart' as $4453;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'bigquery.pb.dart' as $4457;
+import 'common.pb.dart' as $4448;
+import 'common.pbenum.dart' as $4448;
+import 'data_source.pb.dart' as $4455;
 import 'datacatalog.pbenum.dart';
-import 'dataplex_spec.pb.dart' as $4454;
-import 'gcs_fileset_spec.pb.dart' as $4450;
-import 'schema.pb.dart' as $4449;
-import 'search.pb.dart' as $4448;
-import 'table_spec.pb.dart' as $4451;
+import 'dataplex_spec.pb.dart' as $4456;
+import 'gcs_fileset_spec.pb.dart' as $4452;
+import 'schema.pb.dart' as $4451;
+import 'search.pb.dart' as $4450;
+import 'table_spec.pb.dart' as $4453;
 import 'tags.pb.dart' as $802;
-import 'timestamps.pb.dart' as $4447;
-import 'usage.pb.dart' as $4452;
+import 'timestamps.pb.dart' as $4449;
+import 'usage.pb.dart' as $4454;
 
 export 'datacatalog.pbenum.dart';
 
@@ -349,7 +349,7 @@ class SearchCatalogRequest extends $pb.GeneratedMessage {
 /// [SearchCatalog][google.cloud.datacatalog.v1.DataCatalog.SearchCatalog].
 class SearchCatalogResponse extends $pb.GeneratedMessage {
   factory SearchCatalogResponse({
-    $core.Iterable<$4448.SearchCatalogResult>? results,
+    $core.Iterable<$4450.SearchCatalogResult>? results,
     $core.int? totalSize,
     $core.String? nextPageToken,
     $core.Iterable<$core.String>? unreachable,
@@ -374,7 +374,7 @@ class SearchCatalogResponse extends $pb.GeneratedMessage {
   factory SearchCatalogResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchCatalogResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
-    ..pc<$4448.SearchCatalogResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4448.SearchCatalogResult.create)
+    ..pc<$4450.SearchCatalogResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: $4450.SearchCatalogResult.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(6, _omitFieldNames ? '' : 'unreachable')
@@ -404,7 +404,7 @@ class SearchCatalogResponse extends $pb.GeneratedMessage {
 
   /// Search results.
   @$pb.TagNumber(1)
-  $core.List<$4448.SearchCatalogResult> get results => $_getList(0);
+  $core.List<$4450.SearchCatalogResult> get results => $_getList(0);
 
   /// The approximate total number of entries matched by the query.
   @$pb.TagNumber(2)
@@ -535,7 +535,7 @@ class CreateEntryGroupRequest extends $pb.GeneratedMessage {
 class UpdateEntryGroupRequest extends $pb.GeneratedMessage {
   factory UpdateEntryGroupRequest({
     EntryGroup? entryGroup,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (entryGroup != null) {
@@ -552,7 +552,7 @@ class UpdateEntryGroupRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEntryGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOM<EntryGroup>(1, _omitFieldNames ? '' : 'entryGroup', subBuilder: EntryGroup.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -595,15 +595,15 @@ class UpdateEntryGroupRequest extends $pb.GeneratedMessage {
   ///  are overwritten. If such fields are non-required and omitted in the
   ///  request body, their values are emptied.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -611,7 +611,7 @@ class UpdateEntryGroupRequest extends $pb.GeneratedMessage {
 class GetEntryGroupRequest extends $pb.GeneratedMessage {
   factory GetEntryGroupRequest({
     $core.String? name,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -628,7 +628,7 @@ class GetEntryGroupRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetEntryGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -665,15 +665,15 @@ class GetEntryGroupRequest extends $pb.GeneratedMessage {
 
   /// The fields to return. If empty or omitted, all fields are returned.
   @$pb.TagNumber(2)
-  $2209.FieldMask get readMask => $_getN(1);
+  $2210.FieldMask get readMask => $_getN(1);
   @$pb.TagNumber(2)
-  set readMask($2209.FieldMask v) { setField(2, v); }
+  set readMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureReadMask() => $_ensure(1);
+  $2210.FieldMask ensureReadMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -993,7 +993,7 @@ class CreateEntryRequest extends $pb.GeneratedMessage {
 class UpdateEntryRequest extends $pb.GeneratedMessage {
   factory UpdateEntryRequest({
     Entry? entry,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (entry != null) {
@@ -1010,7 +1010,7 @@ class UpdateEntryRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEntryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOM<Entry>(1, _omitFieldNames ? '' : 'entry', subBuilder: Entry.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1077,15 +1077,15 @@ class UpdateEntryRequest extends $pb.GeneratedMessage {
   ///  * `linked_resource`
   ///  * `source_system_timestamps`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -1416,20 +1416,20 @@ class Entry extends $pb.GeneratedMessage {
     EntryType? type,
     $core.String? displayName,
     $core.String? description,
-    $4449.Schema? schema,
-    $4450.GcsFilesetSpec? gcsFilesetSpec,
-    $4447.SystemTimestamps? sourceSystemTimestamps,
+    $4451.Schema? schema,
+    $4452.GcsFilesetSpec? gcsFilesetSpec,
+    $4449.SystemTimestamps? sourceSystemTimestamps,
     $core.String? linkedResource,
-    $4451.BigQueryTableSpec? bigqueryTableSpec,
-    $4452.UsageSignal? usageSignal,
+    $4453.BigQueryTableSpec? bigqueryTableSpec,
+    $4454.UsageSignal? usageSignal,
     $core.Map<$core.String, $core.String>? labels,
-    $4451.BigQueryDateShardedSpec? bigqueryDateShardedSpec,
+    $4453.BigQueryDateShardedSpec? bigqueryDateShardedSpec,
     $core.String? userSpecifiedType,
-    $4446.IntegratedSystem? integratedSystem,
+    $4448.IntegratedSystem? integratedSystem,
     $core.String? userSpecifiedSystem,
-    $4453.DataSource? dataSource,
+    $4455.DataSource? dataSource,
     DatabaseTableSpec? databaseTableSpec,
-    $4446.PersonalDetails? personalDetails,
+    $4448.PersonalDetails? personalDetails,
     DataSourceConnectionSpec? dataSourceConnectionSpec,
     RoutineSpec? routineSpec,
     $core.String? fullyQualifiedName,
@@ -1578,20 +1578,20 @@ class Entry extends $pb.GeneratedMessage {
     ..e<EntryType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: EntryType.ENTRY_TYPE_UNSPECIFIED, valueOf: EntryType.valueOf, enumValues: EntryType.values)
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'description')
-    ..aOM<$4449.Schema>(5, _omitFieldNames ? '' : 'schema', subBuilder: $4449.Schema.create)
-    ..aOM<$4450.GcsFilesetSpec>(6, _omitFieldNames ? '' : 'gcsFilesetSpec', subBuilder: $4450.GcsFilesetSpec.create)
-    ..aOM<$4447.SystemTimestamps>(7, _omitFieldNames ? '' : 'sourceSystemTimestamps', subBuilder: $4447.SystemTimestamps.create)
+    ..aOM<$4451.Schema>(5, _omitFieldNames ? '' : 'schema', subBuilder: $4451.Schema.create)
+    ..aOM<$4452.GcsFilesetSpec>(6, _omitFieldNames ? '' : 'gcsFilesetSpec', subBuilder: $4452.GcsFilesetSpec.create)
+    ..aOM<$4449.SystemTimestamps>(7, _omitFieldNames ? '' : 'sourceSystemTimestamps', subBuilder: $4449.SystemTimestamps.create)
     ..aOS(9, _omitFieldNames ? '' : 'linkedResource')
-    ..aOM<$4451.BigQueryTableSpec>(12, _omitFieldNames ? '' : 'bigqueryTableSpec', subBuilder: $4451.BigQueryTableSpec.create)
-    ..aOM<$4452.UsageSignal>(13, _omitFieldNames ? '' : 'usageSignal', subBuilder: $4452.UsageSignal.create)
+    ..aOM<$4453.BigQueryTableSpec>(12, _omitFieldNames ? '' : 'bigqueryTableSpec', subBuilder: $4453.BigQueryTableSpec.create)
+    ..aOM<$4454.UsageSignal>(13, _omitFieldNames ? '' : 'usageSignal', subBuilder: $4454.UsageSignal.create)
     ..m<$core.String, $core.String>(14, _omitFieldNames ? '' : 'labels', entryClassName: 'Entry.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.datacatalog.v1'))
-    ..aOM<$4451.BigQueryDateShardedSpec>(15, _omitFieldNames ? '' : 'bigqueryDateShardedSpec', subBuilder: $4451.BigQueryDateShardedSpec.create)
+    ..aOM<$4453.BigQueryDateShardedSpec>(15, _omitFieldNames ? '' : 'bigqueryDateShardedSpec', subBuilder: $4453.BigQueryDateShardedSpec.create)
     ..aOS(16, _omitFieldNames ? '' : 'userSpecifiedType')
-    ..e<$4446.IntegratedSystem>(17, _omitFieldNames ? '' : 'integratedSystem', $pb.PbFieldType.OE, defaultOrMaker: $4446.IntegratedSystem.INTEGRATED_SYSTEM_UNSPECIFIED, valueOf: $4446.IntegratedSystem.valueOf, enumValues: $4446.IntegratedSystem.values)
+    ..e<$4448.IntegratedSystem>(17, _omitFieldNames ? '' : 'integratedSystem', $pb.PbFieldType.OE, defaultOrMaker: $4448.IntegratedSystem.INTEGRATED_SYSTEM_UNSPECIFIED, valueOf: $4448.IntegratedSystem.valueOf, enumValues: $4448.IntegratedSystem.values)
     ..aOS(18, _omitFieldNames ? '' : 'userSpecifiedSystem')
-    ..aOM<$4453.DataSource>(20, _omitFieldNames ? '' : 'dataSource', subBuilder: $4453.DataSource.create)
+    ..aOM<$4455.DataSource>(20, _omitFieldNames ? '' : 'dataSource', subBuilder: $4455.DataSource.create)
     ..aOM<DatabaseTableSpec>(24, _omitFieldNames ? '' : 'databaseTableSpec', subBuilder: DatabaseTableSpec.create)
-    ..aOM<$4446.PersonalDetails>(26, _omitFieldNames ? '' : 'personalDetails', subBuilder: $4446.PersonalDetails.create)
+    ..aOM<$4448.PersonalDetails>(26, _omitFieldNames ? '' : 'personalDetails', subBuilder: $4448.PersonalDetails.create)
     ..aOM<DataSourceConnectionSpec>(27, _omitFieldNames ? '' : 'dataSourceConnectionSpec', subBuilder: DataSourceConnectionSpec.create)
     ..aOM<RoutineSpec>(28, _omitFieldNames ? '' : 'routineSpec', subBuilder: RoutineSpec.create)
     ..aOS(29, _omitFieldNames ? '' : 'fullyQualifiedName')
@@ -1699,28 +1699,28 @@ class Entry extends $pb.GeneratedMessage {
 
   /// Schema of the entry. An entry might not have any schema attached to it.
   @$pb.TagNumber(5)
-  $4449.Schema get schema => $_getN(4);
+  $4451.Schema get schema => $_getN(4);
   @$pb.TagNumber(5)
-  set schema($4449.Schema v) { setField(5, v); }
+  set schema($4451.Schema v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSchema() => $_has(4);
   @$pb.TagNumber(5)
   void clearSchema() => clearField(5);
   @$pb.TagNumber(5)
-  $4449.Schema ensureSchema() => $_ensure(4);
+  $4451.Schema ensureSchema() => $_ensure(4);
 
   /// Specification that applies to a Cloud Storage fileset. Valid only
   /// for entries with the `FILESET` type.
   @$pb.TagNumber(6)
-  $4450.GcsFilesetSpec get gcsFilesetSpec => $_getN(5);
+  $4452.GcsFilesetSpec get gcsFilesetSpec => $_getN(5);
   @$pb.TagNumber(6)
-  set gcsFilesetSpec($4450.GcsFilesetSpec v) { setField(6, v); }
+  set gcsFilesetSpec($4452.GcsFilesetSpec v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasGcsFilesetSpec() => $_has(5);
   @$pb.TagNumber(6)
   void clearGcsFilesetSpec() => clearField(6);
   @$pb.TagNumber(6)
-  $4450.GcsFilesetSpec ensureGcsFilesetSpec() => $_ensure(5);
+  $4452.GcsFilesetSpec ensureGcsFilesetSpec() => $_ensure(5);
 
   ///  Timestamps from the underlying resource, not from the Data Catalog
   ///  entry.
@@ -1729,15 +1729,15 @@ class Entry extends $pb.GeneratedMessage {
   ///  enum. For entries with `user_specified_system`, this field is optional
   ///  and defaults to an empty timestamp.
   @$pb.TagNumber(7)
-  $4447.SystemTimestamps get sourceSystemTimestamps => $_getN(6);
+  $4449.SystemTimestamps get sourceSystemTimestamps => $_getN(6);
   @$pb.TagNumber(7)
-  set sourceSystemTimestamps($4447.SystemTimestamps v) { setField(7, v); }
+  set sourceSystemTimestamps($4449.SystemTimestamps v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSourceSystemTimestamps() => $_has(6);
   @$pb.TagNumber(7)
   void clearSourceSystemTimestamps() => clearField(7);
   @$pb.TagNumber(7)
-  $4447.SystemTimestamps ensureSourceSystemTimestamps() => $_ensure(6);
+  $4449.SystemTimestamps ensureSourceSystemTimestamps() => $_ensure(6);
 
   ///  The resource this metadata entry refers to.
   ///
@@ -1769,27 +1769,27 @@ class Entry extends $pb.GeneratedMessage {
   /// Output only. Specification that applies to a BigQuery table. Valid only
   /// for entries with the `TABLE` type.
   @$pb.TagNumber(12)
-  $4451.BigQueryTableSpec get bigqueryTableSpec => $_getN(8);
+  $4453.BigQueryTableSpec get bigqueryTableSpec => $_getN(8);
   @$pb.TagNumber(12)
-  set bigqueryTableSpec($4451.BigQueryTableSpec v) { setField(12, v); }
+  set bigqueryTableSpec($4453.BigQueryTableSpec v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasBigqueryTableSpec() => $_has(8);
   @$pb.TagNumber(12)
   void clearBigqueryTableSpec() => clearField(12);
   @$pb.TagNumber(12)
-  $4451.BigQueryTableSpec ensureBigqueryTableSpec() => $_ensure(8);
+  $4453.BigQueryTableSpec ensureBigqueryTableSpec() => $_ensure(8);
 
   /// Resource usage statistics.
   @$pb.TagNumber(13)
-  $4452.UsageSignal get usageSignal => $_getN(9);
+  $4454.UsageSignal get usageSignal => $_getN(9);
   @$pb.TagNumber(13)
-  set usageSignal($4452.UsageSignal v) { setField(13, v); }
+  set usageSignal($4454.UsageSignal v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasUsageSignal() => $_has(9);
   @$pb.TagNumber(13)
   void clearUsageSignal() => clearField(13);
   @$pb.TagNumber(13)
-  $4452.UsageSignal ensureUsageSignal() => $_ensure(9);
+  $4454.UsageSignal ensureUsageSignal() => $_ensure(9);
 
   ///  Cloud labels attached to the entry.
   ///
@@ -1805,15 +1805,15 @@ class Entry extends $pb.GeneratedMessage {
   ///  For more information, see [Introduction to partitioned tables]
   ///  (https://cloud.google.com/bigquery/docs/partitioned-tables#partitioning_versus_sharding).
   @$pb.TagNumber(15)
-  $4451.BigQueryDateShardedSpec get bigqueryDateShardedSpec => $_getN(11);
+  $4453.BigQueryDateShardedSpec get bigqueryDateShardedSpec => $_getN(11);
   @$pb.TagNumber(15)
-  set bigqueryDateShardedSpec($4451.BigQueryDateShardedSpec v) { setField(15, v); }
+  set bigqueryDateShardedSpec($4453.BigQueryDateShardedSpec v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasBigqueryDateShardedSpec() => $_has(11);
   @$pb.TagNumber(15)
   void clearBigqueryDateShardedSpec() => clearField(15);
   @$pb.TagNumber(15)
-  $4451.BigQueryDateShardedSpec ensureBigqueryDateShardedSpec() => $_ensure(11);
+  $4453.BigQueryDateShardedSpec ensureBigqueryDateShardedSpec() => $_ensure(11);
 
   ///  Custom entry type that doesn't match any of the values allowed for input
   ///  and listed in the `EntryType` enum.
@@ -1840,9 +1840,9 @@ class Entry extends $pb.GeneratedMessage {
   /// Output only. Indicates the entry's source system that Data Catalog
   /// integrates with, such as BigQuery, Pub/Sub, or Dataproc Metastore.
   @$pb.TagNumber(17)
-  $4446.IntegratedSystem get integratedSystem => $_getN(13);
+  $4448.IntegratedSystem get integratedSystem => $_getN(13);
   @$pb.TagNumber(17)
-  set integratedSystem($4446.IntegratedSystem v) { setField(17, v); }
+  set integratedSystem($4448.IntegratedSystem v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasIntegratedSystem() => $_has(13);
   @$pb.TagNumber(17)
@@ -1868,15 +1868,15 @@ class Entry extends $pb.GeneratedMessage {
 
   /// Output only. Physical location of the entry.
   @$pb.TagNumber(20)
-  $4453.DataSource get dataSource => $_getN(15);
+  $4455.DataSource get dataSource => $_getN(15);
   @$pb.TagNumber(20)
-  set dataSource($4453.DataSource v) { setField(20, v); }
+  set dataSource($4455.DataSource v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasDataSource() => $_has(15);
   @$pb.TagNumber(20)
   void clearDataSource() => clearField(20);
   @$pb.TagNumber(20)
-  $4453.DataSource ensureDataSource() => $_ensure(15);
+  $4455.DataSource ensureDataSource() => $_ensure(15);
 
   /// Specification that applies to a table resource. Valid only
   /// for entries with the `TABLE` or `EXPLORE` type.
@@ -1894,15 +1894,15 @@ class Entry extends $pb.GeneratedMessage {
   /// Output only. Additional information related to the entry. Private to the
   /// current user.
   @$pb.TagNumber(26)
-  $4446.PersonalDetails get personalDetails => $_getN(17);
+  $4448.PersonalDetails get personalDetails => $_getN(17);
   @$pb.TagNumber(26)
-  set personalDetails($4446.PersonalDetails v) { setField(26, v); }
+  set personalDetails($4448.PersonalDetails v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasPersonalDetails() => $_has(17);
   @$pb.TagNumber(26)
   void clearPersonalDetails() => clearField(26);
   @$pb.TagNumber(26)
-  $4446.PersonalDetails ensurePersonalDetails() => $_ensure(17);
+  $4448.PersonalDetails ensurePersonalDetails() => $_ensure(17);
 
   /// Specification that applies to a data source connection. Valid only
   /// for entries with the `DATA_SOURCE_CONNECTION` type.
@@ -2147,7 +2147,7 @@ class DatabaseTableSpec_DatabaseViewSpec extends $pb.GeneratedMessage {
 class DatabaseTableSpec extends $pb.GeneratedMessage {
   factory DatabaseTableSpec({
     DatabaseTableSpec_TableType? type,
-    $4454.DataplexTableSpec? dataplexTable,
+    $4456.DataplexTableSpec? dataplexTable,
     DatabaseTableSpec_DatabaseViewSpec? databaseViewSpec,
   }) {
     final $result = create();
@@ -2168,7 +2168,7 @@ class DatabaseTableSpec extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DatabaseTableSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..e<DatabaseTableSpec_TableType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: DatabaseTableSpec_TableType.TABLE_TYPE_UNSPECIFIED, valueOf: DatabaseTableSpec_TableType.valueOf, enumValues: DatabaseTableSpec_TableType.values)
-    ..aOM<$4454.DataplexTableSpec>(2, _omitFieldNames ? '' : 'dataplexTable', subBuilder: $4454.DataplexTableSpec.create)
+    ..aOM<$4456.DataplexTableSpec>(2, _omitFieldNames ? '' : 'dataplexTable', subBuilder: $4456.DataplexTableSpec.create)
     ..aOM<DatabaseTableSpec_DatabaseViewSpec>(3, _omitFieldNames ? '' : 'databaseViewSpec', subBuilder: DatabaseTableSpec_DatabaseViewSpec.create)
     ..hasRequiredFields = false
   ;
@@ -2207,15 +2207,15 @@ class DatabaseTableSpec extends $pb.GeneratedMessage {
   /// Output only. Fields specific to a Dataplex table and present only in the
   /// Dataplex table entries.
   @$pb.TagNumber(2)
-  $4454.DataplexTableSpec get dataplexTable => $_getN(1);
+  $4456.DataplexTableSpec get dataplexTable => $_getN(1);
   @$pb.TagNumber(2)
-  set dataplexTable($4454.DataplexTableSpec v) { setField(2, v); }
+  set dataplexTable($4456.DataplexTableSpec v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDataplexTable() => $_has(1);
   @$pb.TagNumber(2)
   void clearDataplexTable() => clearField(2);
   @$pb.TagNumber(2)
-  $4454.DataplexTableSpec ensureDataplexTable() => $_ensure(1);
+  $4456.DataplexTableSpec ensureDataplexTable() => $_ensure(1);
 
   /// Spec what aplies to tables that are actually views.
   /// Not set for "real" tables.
@@ -2235,7 +2235,7 @@ class DatabaseTableSpec extends $pb.GeneratedMessage {
 /// 'FILESET' type.
 class FilesetSpec extends $pb.GeneratedMessage {
   factory FilesetSpec({
-    $4454.DataplexFilesetSpec? dataplexFileset,
+    $4456.DataplexFilesetSpec? dataplexFileset,
   }) {
     final $result = create();
     if (dataplexFileset != null) {
@@ -2248,7 +2248,7 @@ class FilesetSpec extends $pb.GeneratedMessage {
   factory FilesetSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FilesetSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
-    ..aOM<$4454.DataplexFilesetSpec>(1, _omitFieldNames ? '' : 'dataplexFileset', subBuilder: $4454.DataplexFilesetSpec.create)
+    ..aOM<$4456.DataplexFilesetSpec>(1, _omitFieldNames ? '' : 'dataplexFileset', subBuilder: $4456.DataplexFilesetSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -2276,15 +2276,15 @@ class FilesetSpec extends $pb.GeneratedMessage {
   /// Fields specific to a Dataplex fileset and present only in the Dataplex
   /// fileset entries.
   @$pb.TagNumber(1)
-  $4454.DataplexFilesetSpec get dataplexFileset => $_getN(0);
+  $4456.DataplexFilesetSpec get dataplexFileset => $_getN(0);
   @$pb.TagNumber(1)
-  set dataplexFileset($4454.DataplexFilesetSpec v) { setField(1, v); }
+  set dataplexFileset($4456.DataplexFilesetSpec v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDataplexFileset() => $_has(0);
   @$pb.TagNumber(1)
   void clearDataplexFileset() => clearField(1);
   @$pb.TagNumber(1)
-  $4454.DataplexFilesetSpec ensureDataplexFileset() => $_ensure(0);
+  $4456.DataplexFilesetSpec ensureDataplexFileset() => $_ensure(0);
 }
 
 /// Specification that applies to a data source connection. Valid only for
@@ -2293,7 +2293,7 @@ class FilesetSpec extends $pb.GeneratedMessage {
 /// be changed later.
 class DataSourceConnectionSpec extends $pb.GeneratedMessage {
   factory DataSourceConnectionSpec({
-    $4455.BigQueryConnectionSpec? bigqueryConnectionSpec,
+    $4457.BigQueryConnectionSpec? bigqueryConnectionSpec,
   }) {
     final $result = create();
     if (bigqueryConnectionSpec != null) {
@@ -2306,7 +2306,7 @@ class DataSourceConnectionSpec extends $pb.GeneratedMessage {
   factory DataSourceConnectionSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataSourceConnectionSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
-    ..aOM<$4455.BigQueryConnectionSpec>(1, _omitFieldNames ? '' : 'bigqueryConnectionSpec', subBuilder: $4455.BigQueryConnectionSpec.create)
+    ..aOM<$4457.BigQueryConnectionSpec>(1, _omitFieldNames ? '' : 'bigqueryConnectionSpec', subBuilder: $4457.BigQueryConnectionSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -2333,15 +2333,15 @@ class DataSourceConnectionSpec extends $pb.GeneratedMessage {
 
   /// Output only. Fields specific to BigQuery connections.
   @$pb.TagNumber(1)
-  $4455.BigQueryConnectionSpec get bigqueryConnectionSpec => $_getN(0);
+  $4457.BigQueryConnectionSpec get bigqueryConnectionSpec => $_getN(0);
   @$pb.TagNumber(1)
-  set bigqueryConnectionSpec($4455.BigQueryConnectionSpec v) { setField(1, v); }
+  set bigqueryConnectionSpec($4457.BigQueryConnectionSpec v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBigqueryConnectionSpec() => $_has(0);
   @$pb.TagNumber(1)
   void clearBigqueryConnectionSpec() => clearField(1);
   @$pb.TagNumber(1)
-  $4455.BigQueryConnectionSpec ensureBigqueryConnectionSpec() => $_ensure(0);
+  $4457.BigQueryConnectionSpec ensureBigqueryConnectionSpec() => $_ensure(0);
 }
 
 /// Input or output argument of a function or stored procedure.
@@ -2442,7 +2442,7 @@ class RoutineSpec extends $pb.GeneratedMessage {
     $core.Iterable<RoutineSpec_Argument>? routineArguments,
     $core.String? returnType,
     $core.String? definitionBody,
-    $4455.BigQueryRoutineSpec? bigqueryRoutineSpec,
+    $4457.BigQueryRoutineSpec? bigqueryRoutineSpec,
   }) {
     final $result = create();
     if (routineType != null) {
@@ -2480,7 +2480,7 @@ class RoutineSpec extends $pb.GeneratedMessage {
     ..pc<RoutineSpec_Argument>(3, _omitFieldNames ? '' : 'routineArguments', $pb.PbFieldType.PM, subBuilder: RoutineSpec_Argument.create)
     ..aOS(4, _omitFieldNames ? '' : 'returnType')
     ..aOS(5, _omitFieldNames ? '' : 'definitionBody')
-    ..aOM<$4455.BigQueryRoutineSpec>(6, _omitFieldNames ? '' : 'bigqueryRoutineSpec', subBuilder: $4455.BigQueryRoutineSpec.create)
+    ..aOM<$4457.BigQueryRoutineSpec>(6, _omitFieldNames ? '' : 'bigqueryRoutineSpec', subBuilder: $4457.BigQueryRoutineSpec.create)
     ..hasRequiredFields = false
   ;
 
@@ -2559,15 +2559,15 @@ class RoutineSpec extends $pb.GeneratedMessage {
 
   /// Fields specific for BigQuery routines.
   @$pb.TagNumber(6)
-  $4455.BigQueryRoutineSpec get bigqueryRoutineSpec => $_getN(5);
+  $4457.BigQueryRoutineSpec get bigqueryRoutineSpec => $_getN(5);
   @$pb.TagNumber(6)
-  set bigqueryRoutineSpec($4455.BigQueryRoutineSpec v) { setField(6, v); }
+  set bigqueryRoutineSpec($4457.BigQueryRoutineSpec v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBigqueryRoutineSpec() => $_has(5);
   @$pb.TagNumber(6)
   void clearBigqueryRoutineSpec() => clearField(6);
   @$pb.TagNumber(6)
-  $4455.BigQueryRoutineSpec ensureBigqueryRoutineSpec() => $_ensure(5);
+  $4457.BigQueryRoutineSpec ensureBigqueryRoutineSpec() => $_ensure(5);
 }
 
 enum DatasetSpec_SystemSpec {
@@ -3703,7 +3703,7 @@ class EntryGroup extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $4447.SystemTimestamps? dataCatalogTimestamps,
+    $4449.SystemTimestamps? dataCatalogTimestamps,
   }) {
     final $result = create();
     if (name != null) {
@@ -3728,7 +3728,7 @@ class EntryGroup extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$4447.SystemTimestamps>(4, _omitFieldNames ? '' : 'dataCatalogTimestamps', subBuilder: $4447.SystemTimestamps.create)
+    ..aOM<$4449.SystemTimestamps>(4, _omitFieldNames ? '' : 'dataCatalogTimestamps', subBuilder: $4449.SystemTimestamps.create)
     ..hasRequiredFields = false
   ;
 
@@ -3791,15 +3791,15 @@ class EntryGroup extends $pb.GeneratedMessage {
 
   /// Output only. Timestamps of the entry group. Default value is empty.
   @$pb.TagNumber(4)
-  $4447.SystemTimestamps get dataCatalogTimestamps => $_getN(3);
+  $4449.SystemTimestamps get dataCatalogTimestamps => $_getN(3);
   @$pb.TagNumber(4)
-  set dataCatalogTimestamps($4447.SystemTimestamps v) { setField(4, v); }
+  set dataCatalogTimestamps($4449.SystemTimestamps v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDataCatalogTimestamps() => $_has(3);
   @$pb.TagNumber(4)
   void clearDataCatalogTimestamps() => clearField(4);
   @$pb.TagNumber(4)
-  $4447.SystemTimestamps ensureDataCatalogTimestamps() => $_ensure(3);
+  $4449.SystemTimestamps ensureDataCatalogTimestamps() => $_ensure(3);
 }
 
 /// Request message for
@@ -3950,7 +3950,7 @@ class GetTagTemplateRequest extends $pb.GeneratedMessage {
 class UpdateTagTemplateRequest extends $pb.GeneratedMessage {
   factory UpdateTagTemplateRequest({
     $802.TagTemplate? tagTemplate,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (tagTemplate != null) {
@@ -3967,7 +3967,7 @@ class UpdateTagTemplateRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTagTemplateRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOM<$802.TagTemplate>(1, _omitFieldNames ? '' : 'tagTemplate', subBuilder: $802.TagTemplate.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4014,15 +4014,15 @@ class UpdateTagTemplateRequest extends $pb.GeneratedMessage {
   ///  Note: Updating the `is_publicly_readable` field may require up to 12
   ///  hours to take effect in search results.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -4176,7 +4176,7 @@ class CreateTagRequest extends $pb.GeneratedMessage {
 class UpdateTagRequest extends $pb.GeneratedMessage {
   factory UpdateTagRequest({
     $802.Tag? tag,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (tag != null) {
@@ -4193,7 +4193,7 @@ class UpdateTagRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTagRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOM<$802.Tag>(1, _omitFieldNames ? '' : 'tag', subBuilder: $802.Tag.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4237,15 +4237,15 @@ class UpdateTagRequest extends $pb.GeneratedMessage {
   ///  are overwritten. If such fields are non-required and omitted in the
   ///  request body, their values are emptied.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -4400,7 +4400,7 @@ class UpdateTagTemplateFieldRequest extends $pb.GeneratedMessage {
   factory UpdateTagTemplateFieldRequest({
     $core.String? name,
     $802.TagTemplateField? tagTemplateField,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -4421,7 +4421,7 @@ class UpdateTagTemplateFieldRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTagTemplateFieldRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<$802.TagTemplateField>(2, _omitFieldNames ? '' : 'tagTemplateField', subBuilder: $802.TagTemplateField.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4485,15 +4485,15 @@ class UpdateTagTemplateFieldRequest extends $pb.GeneratedMessage {
   ///  Additionally, updating a template field from optional to required is
   ///  *not* allowed.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Request message for
@@ -5042,7 +5042,7 @@ class ReconcileTagsResponse extends $pb.GeneratedMessage {
 class ReconcileTagsMetadata extends $pb.GeneratedMessage {
   factory ReconcileTagsMetadata({
     ReconcileTagsMetadata_ReconciliationState? state,
-    $core.Map<$core.String, $1795.Status>? errors,
+    $core.Map<$core.String, $1796.Status>? errors,
   }) {
     final $result = create();
     if (state != null) {
@@ -5059,7 +5059,7 @@ class ReconcileTagsMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReconcileTagsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..e<ReconcileTagsMetadata_ReconciliationState>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ReconcileTagsMetadata_ReconciliationState.RECONCILIATION_STATE_UNSPECIFIED, valueOf: ReconcileTagsMetadata_ReconciliationState.valueOf, enumValues: ReconcileTagsMetadata_ReconciliationState.values)
-    ..m<$core.String, $1795.Status>(2, _omitFieldNames ? '' : 'errors', entryClassName: 'ReconcileTagsMetadata.ErrorsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1795.Status.create, valueDefaultOrMaker: $1795.Status.getDefault, packageName: const $pb.PackageName('google.cloud.datacatalog.v1'))
+    ..m<$core.String, $1796.Status>(2, _omitFieldNames ? '' : 'errors', entryClassName: 'ReconcileTagsMetadata.ErrorsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1796.Status.create, valueDefaultOrMaker: $1796.Status.getDefault, packageName: const $pb.PackageName('google.cloud.datacatalog.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -5097,7 +5097,7 @@ class ReconcileTagsMetadata extends $pb.GeneratedMessage {
   /// Maps the name of each tagged column (or empty string for a
   /// sole entry) to tagging operation [status][google.rpc.Status].
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1795.Status> get errors => $_getMap(1);
+  $core.Map<$core.String, $1796.Status> get errors => $_getMap(1);
 }
 
 /// Request message for
@@ -5107,7 +5107,7 @@ class ListEntriesRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -5132,7 +5132,7 @@ class ListEntriesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -5197,15 +5197,15 @@ class ListEntriesRequest extends $pb.GeneratedMessage {
   ///  For example, to return a list of entries with only the `name` field,
   ///  set `read_mask` to only one path with the `name` value.
   @$pb.TagNumber(4)
-  $2209.FieldMask get readMask => $_getN(3);
+  $2210.FieldMask get readMask => $_getN(3);
   @$pb.TagNumber(4)
-  set readMask($2209.FieldMask v) { setField(4, v); }
+  set readMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReadMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearReadMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureReadMask() => $_ensure(3);
+  $2210.FieldMask ensureReadMask() => $_ensure(3);
 }
 
 /// Response message for
@@ -5621,7 +5621,7 @@ class ImportEntriesResponse extends $pb.GeneratedMessage {
 class ImportEntriesMetadata extends $pb.GeneratedMessage {
   factory ImportEntriesMetadata({
     ImportEntriesMetadata_ImportState? state,
-    $core.Iterable<$1795.Status>? errors,
+    $core.Iterable<$1796.Status>? errors,
   }) {
     final $result = create();
     if (state != null) {
@@ -5638,7 +5638,7 @@ class ImportEntriesMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportEntriesMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datacatalog.v1'), createEmptyInstance: create)
     ..e<ImportEntriesMetadata_ImportState>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ImportEntriesMetadata_ImportState.IMPORT_STATE_UNSPECIFIED, valueOf: ImportEntriesMetadata_ImportState.valueOf, enumValues: ImportEntriesMetadata_ImportState.values)
-    ..pc<$1795.Status>(2, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(2, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -5678,7 +5678,7 @@ class ImportEntriesMetadata extends $pb.GeneratedMessage {
   /// However, if no errors are reported, it means that no errors were
   /// encountered.
   @$pb.TagNumber(2)
-  $core.List<$1795.Status> get errors => $_getList(1);
+  $core.List<$1796.Status> get errors => $_getList(1);
 }
 
 /// Request message for

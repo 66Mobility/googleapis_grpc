@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/local_services.pb.dart' as $2316;
-import '../enums/local_services_insurance_rejection_reason.pbenum.dart' as $2319;
-import '../enums/local_services_license_rejection_reason.pbenum.dart' as $2320;
-import '../enums/local_services_verification_artifact_status.pbenum.dart' as $2317;
-import '../enums/local_services_verification_artifact_type.pbenum.dart' as $2318;
+import '../common/local_services.pb.dart' as $2317;
+import '../enums/local_services_insurance_rejection_reason.pbenum.dart' as $2320;
+import '../enums/local_services_license_rejection_reason.pbenum.dart' as $2321;
+import '../enums/local_services_verification_artifact_status.pbenum.dart' as $2318;
+import '../enums/local_services_verification_artifact_type.pbenum.dart' as $2319;
 
 enum LocalServicesVerificationArtifact_ArtifactData {
   backgroundCheckVerificationArtifact, 
@@ -33,8 +33,8 @@ class LocalServicesVerificationArtifact extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $fixnum.Int64? id,
     $core.String? creationDateTime,
-    $2317.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus? status,
-    $2318.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType? artifactType,
+    $2318.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus? status,
+    $2319.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType? artifactType,
     BackgroundCheckVerificationArtifact? backgroundCheckVerificationArtifact,
     InsuranceVerificationArtifact? insuranceVerificationArtifact,
     LicenseVerificationArtifact? licenseVerificationArtifact,
@@ -81,8 +81,8 @@ class LocalServicesVerificationArtifact extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'creationDateTime')
-    ..e<$2317.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2317.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus.UNSPECIFIED, valueOf: $2317.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus.valueOf, enumValues: $2317.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus.values)
-    ..e<$2318.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType>(5, _omitFieldNames ? '' : 'artifactType', $pb.PbFieldType.OE, defaultOrMaker: $2318.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType.UNSPECIFIED, valueOf: $2318.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType.valueOf, enumValues: $2318.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType.values)
+    ..e<$2318.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2318.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus.UNSPECIFIED, valueOf: $2318.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus.valueOf, enumValues: $2318.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus.values)
+    ..e<$2319.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType>(5, _omitFieldNames ? '' : 'artifactType', $pb.PbFieldType.OE, defaultOrMaker: $2319.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType.UNSPECIFIED, valueOf: $2319.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType.valueOf, enumValues: $2319.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType.values)
     ..aOM<BackgroundCheckVerificationArtifact>(6, _omitFieldNames ? '' : 'backgroundCheckVerificationArtifact', subBuilder: BackgroundCheckVerificationArtifact.create)
     ..aOM<InsuranceVerificationArtifact>(7, _omitFieldNames ? '' : 'insuranceVerificationArtifact', subBuilder: InsuranceVerificationArtifact.create)
     ..aOM<LicenseVerificationArtifact>(8, _omitFieldNames ? '' : 'licenseVerificationArtifact', subBuilder: LicenseVerificationArtifact.create)
@@ -150,9 +150,9 @@ class LocalServicesVerificationArtifact extends $pb.GeneratedMessage {
 
   /// Output only. The status of the verification artifact.
   @$pb.TagNumber(4)
-  $2317.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus get status => $_getN(3);
+  $2318.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($2317.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus v) { setField(4, v); }
+  set status($2318.LocalServicesVerificationArtifactStatusEnum_LocalServicesVerificationArtifactStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
@@ -160,9 +160,9 @@ class LocalServicesVerificationArtifact extends $pb.GeneratedMessage {
 
   /// Output only. The type of the verification artifact.
   @$pb.TagNumber(5)
-  $2318.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType get artifactType => $_getN(4);
+  $2319.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType get artifactType => $_getN(4);
   @$pb.TagNumber(5)
-  set artifactType($2318.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType v) { setField(5, v); }
+  set artifactType($2319.LocalServicesVerificationArtifactTypeEnum_LocalServicesVerificationArtifactType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasArtifactType() => $_has(4);
   @$pb.TagNumber(5)
@@ -279,8 +279,8 @@ class BackgroundCheckVerificationArtifact extends $pb.GeneratedMessage {
 class InsuranceVerificationArtifact extends $pb.GeneratedMessage {
   factory InsuranceVerificationArtifact({
     $fixnum.Int64? amountMicros,
-    $2319.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason? rejectionReason,
-    $2316.LocalServicesDocumentReadOnly? insuranceDocumentReadonly,
+    $2320.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason? rejectionReason,
+    $2317.LocalServicesDocumentReadOnly? insuranceDocumentReadonly,
   }) {
     final $result = create();
     if (amountMicros != null) {
@@ -300,8 +300,8 @@ class InsuranceVerificationArtifact extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsuranceVerificationArtifact', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'amountMicros')
-    ..e<$2319.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason>(2, _omitFieldNames ? '' : 'rejectionReason', $pb.PbFieldType.OE, defaultOrMaker: $2319.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason.UNSPECIFIED, valueOf: $2319.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason.valueOf, enumValues: $2319.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason.values)
-    ..aOM<$2316.LocalServicesDocumentReadOnly>(3, _omitFieldNames ? '' : 'insuranceDocumentReadonly', subBuilder: $2316.LocalServicesDocumentReadOnly.create)
+    ..e<$2320.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason>(2, _omitFieldNames ? '' : 'rejectionReason', $pb.PbFieldType.OE, defaultOrMaker: $2320.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason.UNSPECIFIED, valueOf: $2320.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason.valueOf, enumValues: $2320.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason.values)
+    ..aOM<$2317.LocalServicesDocumentReadOnly>(3, _omitFieldNames ? '' : 'insuranceDocumentReadonly', subBuilder: $2317.LocalServicesDocumentReadOnly.create)
     ..hasRequiredFields = false
   ;
 
@@ -339,9 +339,9 @@ class InsuranceVerificationArtifact extends $pb.GeneratedMessage {
 
   /// Output only. Insurance document's rejection reason.
   @$pb.TagNumber(2)
-  $2319.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason get rejectionReason => $_getN(1);
+  $2320.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason get rejectionReason => $_getN(1);
   @$pb.TagNumber(2)
-  set rejectionReason($2319.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason v) { setField(2, v); }
+  set rejectionReason($2320.LocalServicesInsuranceRejectionReasonEnum_LocalServicesInsuranceRejectionReason v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRejectionReason() => $_has(1);
   @$pb.TagNumber(2)
@@ -350,15 +350,15 @@ class InsuranceVerificationArtifact extends $pb.GeneratedMessage {
   /// Output only. The readonly field containing the information for an uploaded
   /// insurance document.
   @$pb.TagNumber(3)
-  $2316.LocalServicesDocumentReadOnly get insuranceDocumentReadonly => $_getN(2);
+  $2317.LocalServicesDocumentReadOnly get insuranceDocumentReadonly => $_getN(2);
   @$pb.TagNumber(3)
-  set insuranceDocumentReadonly($2316.LocalServicesDocumentReadOnly v) { setField(3, v); }
+  set insuranceDocumentReadonly($2317.LocalServicesDocumentReadOnly v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInsuranceDocumentReadonly() => $_has(2);
   @$pb.TagNumber(3)
   void clearInsuranceDocumentReadonly() => clearField(3);
   @$pb.TagNumber(3)
-  $2316.LocalServicesDocumentReadOnly ensureInsuranceDocumentReadonly() => $_ensure(2);
+  $2317.LocalServicesDocumentReadOnly ensureInsuranceDocumentReadonly() => $_ensure(2);
 }
 
 /// A proto holding information specific to a local services license.
@@ -368,8 +368,8 @@ class LicenseVerificationArtifact extends $pb.GeneratedMessage {
     $core.String? licenseNumber,
     $core.String? licenseeFirstName,
     $core.String? licenseeLastName,
-    $2320.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason? rejectionReason,
-    $2316.LocalServicesDocumentReadOnly? licenseDocumentReadonly,
+    $2321.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason? rejectionReason,
+    $2317.LocalServicesDocumentReadOnly? licenseDocumentReadonly,
   }) {
     final $result = create();
     if (licenseType != null) {
@@ -401,8 +401,8 @@ class LicenseVerificationArtifact extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'licenseNumber')
     ..aOS(3, _omitFieldNames ? '' : 'licenseeFirstName')
     ..aOS(4, _omitFieldNames ? '' : 'licenseeLastName')
-    ..e<$2320.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason>(5, _omitFieldNames ? '' : 'rejectionReason', $pb.PbFieldType.OE, defaultOrMaker: $2320.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason.UNSPECIFIED, valueOf: $2320.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason.valueOf, enumValues: $2320.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason.values)
-    ..aOM<$2316.LocalServicesDocumentReadOnly>(6, _omitFieldNames ? '' : 'licenseDocumentReadonly', subBuilder: $2316.LocalServicesDocumentReadOnly.create)
+    ..e<$2321.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason>(5, _omitFieldNames ? '' : 'rejectionReason', $pb.PbFieldType.OE, defaultOrMaker: $2321.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason.UNSPECIFIED, valueOf: $2321.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason.valueOf, enumValues: $2321.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason.values)
+    ..aOM<$2317.LocalServicesDocumentReadOnly>(6, _omitFieldNames ? '' : 'licenseDocumentReadonly', subBuilder: $2317.LocalServicesDocumentReadOnly.create)
     ..hasRequiredFields = false
   ;
 
@@ -469,9 +469,9 @@ class LicenseVerificationArtifact extends $pb.GeneratedMessage {
 
   /// Output only. License rejection reason.
   @$pb.TagNumber(5)
-  $2320.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason get rejectionReason => $_getN(4);
+  $2321.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason get rejectionReason => $_getN(4);
   @$pb.TagNumber(5)
-  set rejectionReason($2320.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason v) { setField(5, v); }
+  set rejectionReason($2321.LocalServicesLicenseRejectionReasonEnum_LocalServicesLicenseRejectionReason v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRejectionReason() => $_has(4);
   @$pb.TagNumber(5)
@@ -480,15 +480,15 @@ class LicenseVerificationArtifact extends $pb.GeneratedMessage {
   /// Output only. The readonly field containing the information for an uploaded
   /// license document.
   @$pb.TagNumber(6)
-  $2316.LocalServicesDocumentReadOnly get licenseDocumentReadonly => $_getN(5);
+  $2317.LocalServicesDocumentReadOnly get licenseDocumentReadonly => $_getN(5);
   @$pb.TagNumber(6)
-  set licenseDocumentReadonly($2316.LocalServicesDocumentReadOnly v) { setField(6, v); }
+  set licenseDocumentReadonly($2317.LocalServicesDocumentReadOnly v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLicenseDocumentReadonly() => $_has(5);
   @$pb.TagNumber(6)
   void clearLicenseDocumentReadonly() => clearField(6);
   @$pb.TagNumber(6)
-  $2316.LocalServicesDocumentReadOnly ensureLicenseDocumentReadonly() => $_ensure(5);
+  $2317.LocalServicesDocumentReadOnly ensureLicenseDocumentReadonly() => $_ensure(5);
 }
 
 

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $2352;
-import '../resources/campaign_budget.pb.dart' as $2213;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $2353;
+import '../resources/campaign_budget.pb.dart' as $2214;
 
 /// Request message for
 /// [CampaignBudgetService.MutateCampaignBudgets][google.ads.googleads.v15.services.CampaignBudgetService.MutateCampaignBudgets].
@@ -26,7 +26,7 @@ class MutateCampaignBudgetsRequest extends $pb.GeneratedMessage {
     $core.Iterable<CampaignBudgetOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $2352.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $2353.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateCampaignBudgetsRequest extends $pb.GeneratedMessage {
     ..pc<CampaignBudgetOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: CampaignBudgetOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$2352.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2352.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2352.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2352.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$2353.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2353.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2353.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2353.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -121,9 +121,9 @@ class MutateCampaignBudgetsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $2352.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $2353.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($2352.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($2353.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,10 +140,10 @@ enum CampaignBudgetOperation_Operation {
 /// A single operation (create, update, remove) on a campaign budget.
 class CampaignBudgetOperation extends $pb.GeneratedMessage {
   factory CampaignBudgetOperation({
-    $2213.CampaignBudget? create_1,
-    $2213.CampaignBudget? update,
+    $2214.CampaignBudget? create_1,
+    $2214.CampaignBudget? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -172,10 +172,10 @@ class CampaignBudgetOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignBudgetOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$2213.CampaignBudget>(1, _omitFieldNames ? '' : 'create', subBuilder: $2213.CampaignBudget.create)
-    ..aOM<$2213.CampaignBudget>(2, _omitFieldNames ? '' : 'update', subBuilder: $2213.CampaignBudget.create)
+    ..aOM<$2214.CampaignBudget>(1, _omitFieldNames ? '' : 'create', subBuilder: $2214.CampaignBudget.create)
+    ..aOM<$2214.CampaignBudget>(2, _omitFieldNames ? '' : 'update', subBuilder: $2214.CampaignBudget.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -205,28 +205,28 @@ class CampaignBudgetOperation extends $pb.GeneratedMessage {
 
   /// Create operation: No resource name is expected for the new budget.
   @$pb.TagNumber(1)
-  $2213.CampaignBudget get create_1 => $_getN(0);
+  $2214.CampaignBudget get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($2213.CampaignBudget v) { setField(1, v); }
+  set create_1($2214.CampaignBudget v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $2213.CampaignBudget ensureCreate_1() => $_ensure(0);
+  $2214.CampaignBudget ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The campaign budget is expected to have a valid
   /// resource name.
   @$pb.TagNumber(2)
-  $2213.CampaignBudget get update => $_getN(1);
+  $2214.CampaignBudget get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($2213.CampaignBudget v) { setField(2, v); }
+  set update($2214.CampaignBudget v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $2213.CampaignBudget ensureUpdate() => $_ensure(1);
+  $2214.CampaignBudget ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed budget is expected, in
   ///  this format:
@@ -243,22 +243,22 @@ class CampaignBudgetOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for campaign budget mutate.
 class MutateCampaignBudgetsResponse extends $pb.GeneratedMessage {
   factory MutateCampaignBudgetsResponse({
     $core.Iterable<MutateCampaignBudgetResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -275,7 +275,7 @@ class MutateCampaignBudgetsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCampaignBudgetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..pc<MutateCampaignBudgetResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateCampaignBudgetResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -309,22 +309,22 @@ class MutateCampaignBudgetsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the campaign budget mutate.
 class MutateCampaignBudgetResult extends $pb.GeneratedMessage {
   factory MutateCampaignBudgetResult({
     $core.String? resourceName,
-    $2213.CampaignBudget? campaignBudget,
+    $2214.CampaignBudget? campaignBudget,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -341,7 +341,7 @@ class MutateCampaignBudgetResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCampaignBudgetResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2213.CampaignBudget>(2, _omitFieldNames ? '' : 'campaignBudget', subBuilder: $2213.CampaignBudget.create)
+    ..aOM<$2214.CampaignBudget>(2, _omitFieldNames ? '' : 'campaignBudget', subBuilder: $2214.CampaignBudget.create)
     ..hasRequiredFields = false
   ;
 
@@ -380,15 +380,15 @@ class MutateCampaignBudgetResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $2213.CampaignBudget get campaignBudget => $_getN(1);
+  $2214.CampaignBudget get campaignBudget => $_getN(1);
   @$pb.TagNumber(2)
-  set campaignBudget($2213.CampaignBudget v) { setField(2, v); }
+  set campaignBudget($2214.CampaignBudget v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCampaignBudget() => $_has(1);
   @$pb.TagNumber(2)
   void clearCampaignBudget() => clearField(2);
   @$pb.TagNumber(2)
-  $2213.CampaignBudget ensureCampaignBudget() => $_ensure(1);
+  $2214.CampaignBudget ensureCampaignBudget() => $_ensure(1);
 }
 
 

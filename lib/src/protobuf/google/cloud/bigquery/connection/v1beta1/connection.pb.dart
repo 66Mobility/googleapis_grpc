@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/wrappers.pb.dart' as $1781;
 import 'connection.pbenum.dart';
 
 export 'connection.pbenum.dart';
@@ -165,7 +165,7 @@ class GetConnectionRequest extends $pb.GeneratedMessage {
 class ListConnectionsRequest extends $pb.GeneratedMessage {
   factory ListConnectionsRequest({
     $core.String? parent,
-    $1780.UInt32Value? maxResults,
+    $1781.UInt32Value? maxResults,
     $core.String? pageToken,
   }) {
     final $result = create();
@@ -186,7 +186,7 @@ class ListConnectionsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListConnectionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.connection.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1780.UInt32Value>(2, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(2, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.UInt32Value.create)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false
   ;
@@ -225,15 +225,15 @@ class ListConnectionsRequest extends $pb.GeneratedMessage {
 
   /// Required. Maximum number of results per page.
   @$pb.TagNumber(2)
-  $1780.UInt32Value get maxResults => $_getN(1);
+  $1781.UInt32Value get maxResults => $_getN(1);
   @$pb.TagNumber(2)
-  set maxResults($1780.UInt32Value v) { setField(2, v); }
+  set maxResults($1781.UInt32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxResults() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxResults() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.UInt32Value ensureMaxResults() => $_ensure(1);
+  $1781.UInt32Value ensureMaxResults() => $_ensure(1);
 
   /// Page token.
   @$pb.TagNumber(3)
@@ -314,7 +314,7 @@ class UpdateConnectionRequest extends $pb.GeneratedMessage {
   factory UpdateConnectionRequest({
     $core.String? name,
     Connection? connection,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -335,7 +335,7 @@ class UpdateConnectionRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConnectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.connection.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Connection>(2, _omitFieldNames ? '' : 'connection', subBuilder: Connection.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -385,15 +385,15 @@ class UpdateConnectionRequest extends $pb.GeneratedMessage {
 
   /// Required. Update mask for the connection fields to be updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The request for

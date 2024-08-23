@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'logged_common.pb.dart' as $4529;
+import 'logged_common.pb.dart' as $4531;
 import 'logged_restore_plan.pbenum.dart';
 
 export 'logged_restore_plan.pbenum.dart';
@@ -399,8 +399,8 @@ class RestoreConfig extends $pb.GeneratedMessage {
     RestoreConfig_NamespacedResourceRestoreMode? namespacedResourceRestoreMode,
     RestoreConfig_ClusterResourceRestoreScope? clusterResourceRestoreScope,
     $core.bool? allNamespaces,
-    $4529.Namespaces? selectedNamespaces,
-    $4529.NamespacedNames? selectedApplications,
+    $4531.Namespaces? selectedNamespaces,
+    $4531.NamespacedNames? selectedApplications,
     $core.Iterable<RestoreConfig_SubstitutionRule>? substitutionRules,
   }) {
     final $result = create();
@@ -447,8 +447,8 @@ class RestoreConfig extends $pb.GeneratedMessage {
     ..e<RestoreConfig_NamespacedResourceRestoreMode>(3, _omitFieldNames ? '' : 'namespacedResourceRestoreMode', $pb.PbFieldType.OE, defaultOrMaker: RestoreConfig_NamespacedResourceRestoreMode.NAMESPACED_RESOURCE_RESTORE_MODE_UNSPECIFIED, valueOf: RestoreConfig_NamespacedResourceRestoreMode.valueOf, enumValues: RestoreConfig_NamespacedResourceRestoreMode.values)
     ..aOM<RestoreConfig_ClusterResourceRestoreScope>(4, _omitFieldNames ? '' : 'clusterResourceRestoreScope', subBuilder: RestoreConfig_ClusterResourceRestoreScope.create)
     ..aOB(5, _omitFieldNames ? '' : 'allNamespaces')
-    ..aOM<$4529.Namespaces>(6, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4529.Namespaces.create)
-    ..aOM<$4529.NamespacedNames>(7, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4529.NamespacedNames.create)
+    ..aOM<$4531.Namespaces>(6, _omitFieldNames ? '' : 'selectedNamespaces', subBuilder: $4531.Namespaces.create)
+    ..aOM<$4531.NamespacedNames>(7, _omitFieldNames ? '' : 'selectedApplications', subBuilder: $4531.NamespacedNames.create)
     ..pc<RestoreConfig_SubstitutionRule>(8, _omitFieldNames ? '' : 'substitutionRules', $pb.PbFieldType.PM, subBuilder: RestoreConfig_SubstitutionRule.create)
     ..hasRequiredFields = false
   ;
@@ -543,29 +543,29 @@ class RestoreConfig extends $pb.GeneratedMessage {
   /// A list of selected Namespaces to restore from the Backup. The listed
   /// Namespaces and all resources contained in them will be restored.
   @$pb.TagNumber(6)
-  $4529.Namespaces get selectedNamespaces => $_getN(5);
+  $4531.Namespaces get selectedNamespaces => $_getN(5);
   @$pb.TagNumber(6)
-  set selectedNamespaces($4529.Namespaces v) { setField(6, v); }
+  set selectedNamespaces($4531.Namespaces v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSelectedNamespaces() => $_has(5);
   @$pb.TagNumber(6)
   void clearSelectedNamespaces() => clearField(6);
   @$pb.TagNumber(6)
-  $4529.Namespaces ensureSelectedNamespaces() => $_ensure(5);
+  $4531.Namespaces ensureSelectedNamespaces() => $_ensure(5);
 
   /// A list of selected ProtectedApplications to restore. The listed
   /// ProtectedApplications and all the resources to which they refer will be
   /// restored.
   @$pb.TagNumber(7)
-  $4529.NamespacedNames get selectedApplications => $_getN(6);
+  $4531.NamespacedNames get selectedApplications => $_getN(6);
   @$pb.TagNumber(7)
-  set selectedApplications($4529.NamespacedNames v) { setField(7, v); }
+  set selectedApplications($4531.NamespacedNames v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSelectedApplications() => $_has(6);
   @$pb.TagNumber(7)
   void clearSelectedApplications() => clearField(7);
   @$pb.TagNumber(7)
-  $4529.NamespacedNames ensureSelectedApplications() => $_ensure(6);
+  $4531.NamespacedNames ensureSelectedApplications() => $_ensure(6);
 
   /// A list of transformation rules to be applied against Kubernetes resources
   /// as they are selected for restoration from a Backup. Rules are executed in

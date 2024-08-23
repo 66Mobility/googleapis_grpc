@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3065;
-import '../resources/extension_feed_item.pb.dart' as $3106;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3066;
+import '../resources/extension_feed_item.pb.dart' as $3107;
 
 /// Request message for
 /// [ExtensionFeedItemService.MutateExtensionFeedItems][google.ads.googleads.v16.services.ExtensionFeedItemService.MutateExtensionFeedItems].
@@ -26,7 +26,7 @@ class MutateExtensionFeedItemsRequest extends $pb.GeneratedMessage {
     $core.Iterable<ExtensionFeedItemOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3065.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3066.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateExtensionFeedItemsRequest extends $pb.GeneratedMessage {
     ..pc<ExtensionFeedItemOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: ExtensionFeedItemOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3065.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3065.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3065.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3065.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3066.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3066.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3066.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3066.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -123,9 +123,9 @@ class MutateExtensionFeedItemsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3065.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3066.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3065.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3066.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -142,10 +142,10 @@ enum ExtensionFeedItemOperation_Operation {
 /// A single operation (create, update, remove) on an extension feed item.
 class ExtensionFeedItemOperation extends $pb.GeneratedMessage {
   factory ExtensionFeedItemOperation({
-    $3106.ExtensionFeedItem? create_1,
-    $3106.ExtensionFeedItem? update,
+    $3107.ExtensionFeedItem? create_1,
+    $3107.ExtensionFeedItem? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -174,10 +174,10 @@ class ExtensionFeedItemOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExtensionFeedItemOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3106.ExtensionFeedItem>(1, _omitFieldNames ? '' : 'create', subBuilder: $3106.ExtensionFeedItem.create)
-    ..aOM<$3106.ExtensionFeedItem>(2, _omitFieldNames ? '' : 'update', subBuilder: $3106.ExtensionFeedItem.create)
+    ..aOM<$3107.ExtensionFeedItem>(1, _omitFieldNames ? '' : 'create', subBuilder: $3107.ExtensionFeedItem.create)
+    ..aOM<$3107.ExtensionFeedItem>(2, _omitFieldNames ? '' : 'update', subBuilder: $3107.ExtensionFeedItem.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -208,28 +208,28 @@ class ExtensionFeedItemOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new extension
   /// feed item.
   @$pb.TagNumber(1)
-  $3106.ExtensionFeedItem get create_1 => $_getN(0);
+  $3107.ExtensionFeedItem get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3106.ExtensionFeedItem v) { setField(1, v); }
+  set create_1($3107.ExtensionFeedItem v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3106.ExtensionFeedItem ensureCreate_1() => $_ensure(0);
+  $3107.ExtensionFeedItem ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The extension feed item is expected to have a
   /// valid resource name.
   @$pb.TagNumber(2)
-  $3106.ExtensionFeedItem get update => $_getN(1);
+  $3107.ExtensionFeedItem get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3106.ExtensionFeedItem v) { setField(2, v); }
+  set update($3107.ExtensionFeedItem v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3106.ExtensionFeedItem ensureUpdate() => $_ensure(1);
+  $3107.ExtensionFeedItem ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed extension feed item
   ///  is expected, in this format:
@@ -246,22 +246,22 @@ class ExtensionFeedItemOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for an extension feed item mutate.
 class MutateExtensionFeedItemsResponse extends $pb.GeneratedMessage {
   factory MutateExtensionFeedItemsResponse({
     $core.Iterable<MutateExtensionFeedItemResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -278,7 +278,7 @@ class MutateExtensionFeedItemsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateExtensionFeedItemsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateExtensionFeedItemResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateExtensionFeedItemResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -312,22 +312,22 @@ class MutateExtensionFeedItemsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the extension feed item mutate.
 class MutateExtensionFeedItemResult extends $pb.GeneratedMessage {
   factory MutateExtensionFeedItemResult({
     $core.String? resourceName,
-    $3106.ExtensionFeedItem? extensionFeedItem,
+    $3107.ExtensionFeedItem? extensionFeedItem,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -344,7 +344,7 @@ class MutateExtensionFeedItemResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateExtensionFeedItemResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3106.ExtensionFeedItem>(2, _omitFieldNames ? '' : 'extensionFeedItem', subBuilder: $3106.ExtensionFeedItem.create)
+    ..aOM<$3107.ExtensionFeedItem>(2, _omitFieldNames ? '' : 'extensionFeedItem', subBuilder: $3107.ExtensionFeedItem.create)
     ..hasRequiredFields = false
   ;
 
@@ -383,15 +383,15 @@ class MutateExtensionFeedItemResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3106.ExtensionFeedItem get extensionFeedItem => $_getN(1);
+  $3107.ExtensionFeedItem get extensionFeedItem => $_getN(1);
   @$pb.TagNumber(2)
-  set extensionFeedItem($3106.ExtensionFeedItem v) { setField(2, v); }
+  set extensionFeedItem($3107.ExtensionFeedItem v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExtensionFeedItem() => $_has(1);
   @$pb.TagNumber(2)
   void clearExtensionFeedItem() => clearField(2);
   @$pb.TagNumber(2)
-  $3106.ExtensionFeedItem ensureExtensionFeedItem() => $_ensure(1);
+  $3107.ExtensionFeedItem ensureExtensionFeedItem() => $_ensure(1);
 }
 
 

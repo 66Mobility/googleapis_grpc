@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'classification.pb.dart' as $4331;
-import 'detection.pb.dart' as $4335;
-import 'text_extraction.pb.dart' as $4336;
-import 'text_sentiment.pb.dart' as $4337;
-import 'translation.pb.dart' as $4334;
+import 'classification.pb.dart' as $4332;
+import 'detection.pb.dart' as $4336;
+import 'text_extraction.pb.dart' as $4337;
+import 'text_sentiment.pb.dart' as $4338;
+import 'translation.pb.dart' as $4335;
 
 enum AnnotationPayload_Detail {
   translation, 
@@ -32,12 +32,12 @@ enum AnnotationPayload_Detail {
 class AnnotationPayload extends $pb.GeneratedMessage {
   factory AnnotationPayload({
     $core.String? annotationSpecId,
-    $4334.TranslationAnnotation? translation,
-    $4331.ClassificationAnnotation? classification,
-    $4335.ImageObjectDetectionAnnotation? imageObjectDetection,
+    $4335.TranslationAnnotation? translation,
+    $4332.ClassificationAnnotation? classification,
+    $4336.ImageObjectDetectionAnnotation? imageObjectDetection,
     $core.String? displayName,
-    $4336.TextExtractionAnnotation? textExtraction,
-    $4337.TextSentimentAnnotation? textSentiment,
+    $4337.TextExtractionAnnotation? textExtraction,
+    $4338.TextSentimentAnnotation? textSentiment,
   }) {
     final $result = create();
     if (annotationSpecId != null) {
@@ -78,12 +78,12 @@ class AnnotationPayload extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnnotationPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'annotationSpecId')
-    ..aOM<$4334.TranslationAnnotation>(2, _omitFieldNames ? '' : 'translation', subBuilder: $4334.TranslationAnnotation.create)
-    ..aOM<$4331.ClassificationAnnotation>(3, _omitFieldNames ? '' : 'classification', subBuilder: $4331.ClassificationAnnotation.create)
-    ..aOM<$4335.ImageObjectDetectionAnnotation>(4, _omitFieldNames ? '' : 'imageObjectDetection', subBuilder: $4335.ImageObjectDetectionAnnotation.create)
+    ..aOM<$4335.TranslationAnnotation>(2, _omitFieldNames ? '' : 'translation', subBuilder: $4335.TranslationAnnotation.create)
+    ..aOM<$4332.ClassificationAnnotation>(3, _omitFieldNames ? '' : 'classification', subBuilder: $4332.ClassificationAnnotation.create)
+    ..aOM<$4336.ImageObjectDetectionAnnotation>(4, _omitFieldNames ? '' : 'imageObjectDetection', subBuilder: $4336.ImageObjectDetectionAnnotation.create)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4336.TextExtractionAnnotation>(6, _omitFieldNames ? '' : 'textExtraction', subBuilder: $4336.TextExtractionAnnotation.create)
-    ..aOM<$4337.TextSentimentAnnotation>(7, _omitFieldNames ? '' : 'textSentiment', subBuilder: $4337.TextSentimentAnnotation.create)
+    ..aOM<$4337.TextExtractionAnnotation>(6, _omitFieldNames ? '' : 'textExtraction', subBuilder: $4337.TextExtractionAnnotation.create)
+    ..aOM<$4338.TextSentimentAnnotation>(7, _omitFieldNames ? '' : 'textSentiment', subBuilder: $4338.TextSentimentAnnotation.create)
     ..hasRequiredFields = false
   ;
 
@@ -125,39 +125,39 @@ class AnnotationPayload extends $pb.GeneratedMessage {
 
   /// Annotation details for translation.
   @$pb.TagNumber(2)
-  $4334.TranslationAnnotation get translation => $_getN(1);
+  $4335.TranslationAnnotation get translation => $_getN(1);
   @$pb.TagNumber(2)
-  set translation($4334.TranslationAnnotation v) { setField(2, v); }
+  set translation($4335.TranslationAnnotation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTranslation() => $_has(1);
   @$pb.TagNumber(2)
   void clearTranslation() => clearField(2);
   @$pb.TagNumber(2)
-  $4334.TranslationAnnotation ensureTranslation() => $_ensure(1);
+  $4335.TranslationAnnotation ensureTranslation() => $_ensure(1);
 
   /// Annotation details for content or image classification.
   @$pb.TagNumber(3)
-  $4331.ClassificationAnnotation get classification => $_getN(2);
+  $4332.ClassificationAnnotation get classification => $_getN(2);
   @$pb.TagNumber(3)
-  set classification($4331.ClassificationAnnotation v) { setField(3, v); }
+  set classification($4332.ClassificationAnnotation v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasClassification() => $_has(2);
   @$pb.TagNumber(3)
   void clearClassification() => clearField(3);
   @$pb.TagNumber(3)
-  $4331.ClassificationAnnotation ensureClassification() => $_ensure(2);
+  $4332.ClassificationAnnotation ensureClassification() => $_ensure(2);
 
   /// Annotation details for image object detection.
   @$pb.TagNumber(4)
-  $4335.ImageObjectDetectionAnnotation get imageObjectDetection => $_getN(3);
+  $4336.ImageObjectDetectionAnnotation get imageObjectDetection => $_getN(3);
   @$pb.TagNumber(4)
-  set imageObjectDetection($4335.ImageObjectDetectionAnnotation v) { setField(4, v); }
+  set imageObjectDetection($4336.ImageObjectDetectionAnnotation v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImageObjectDetection() => $_has(3);
   @$pb.TagNumber(4)
   void clearImageObjectDetection() => clearField(4);
   @$pb.TagNumber(4)
-  $4335.ImageObjectDetectionAnnotation ensureImageObjectDetection() => $_ensure(3);
+  $4336.ImageObjectDetectionAnnotation ensureImageObjectDetection() => $_ensure(3);
 
   /// Output only. The value of
   /// [display_name][google.cloud.automl.v1.AnnotationSpec.display_name]
@@ -176,27 +176,27 @@ class AnnotationPayload extends $pb.GeneratedMessage {
 
   /// Annotation details for text extraction.
   @$pb.TagNumber(6)
-  $4336.TextExtractionAnnotation get textExtraction => $_getN(5);
+  $4337.TextExtractionAnnotation get textExtraction => $_getN(5);
   @$pb.TagNumber(6)
-  set textExtraction($4336.TextExtractionAnnotation v) { setField(6, v); }
+  set textExtraction($4337.TextExtractionAnnotation v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTextExtraction() => $_has(5);
   @$pb.TagNumber(6)
   void clearTextExtraction() => clearField(6);
   @$pb.TagNumber(6)
-  $4336.TextExtractionAnnotation ensureTextExtraction() => $_ensure(5);
+  $4337.TextExtractionAnnotation ensureTextExtraction() => $_ensure(5);
 
   /// Annotation details for text sentiment.
   @$pb.TagNumber(7)
-  $4337.TextSentimentAnnotation get textSentiment => $_getN(6);
+  $4338.TextSentimentAnnotation get textSentiment => $_getN(6);
   @$pb.TagNumber(7)
-  set textSentiment($4337.TextSentimentAnnotation v) { setField(7, v); }
+  set textSentiment($4338.TextSentimentAnnotation v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTextSentiment() => $_has(6);
   @$pb.TagNumber(7)
   void clearTextSentiment() => clearField(7);
   @$pb.TagNumber(7)
-  $4337.TextSentimentAnnotation ensureTextSentiment() => $_ensure(6);
+  $4338.TextSentimentAnnotation ensureTextSentiment() => $_ensure(6);
 }
 
 

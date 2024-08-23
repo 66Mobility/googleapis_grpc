@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/interval.pb.dart' as $4257;
 import 'entity_type.pb.dart' as $500;
 import 'feature.pb.dart' as $501;
-import 'feature_selector.pb.dart' as $4257;
+import 'feature_selector.pb.dart' as $4258;
 import 'featurestore.pb.dart' as $499;
-import 'io.pb.dart' as $4235;
-import 'operation.pb.dart' as $4250;
+import 'io.pb.dart' as $4236;
+import 'operation.pb.dart' as $4251;
 
 /// Request message for
 /// [FeaturestoreService.CreateFeaturestore][google.cloud.aiplatform.v1.FeaturestoreService.CreateFeaturestore].
@@ -179,7 +179,7 @@ class ListFeaturestoresRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? orderBy,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -212,7 +212,7 @@ class ListFeaturestoresRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$2209.FieldMask>(6, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(6, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -324,15 +324,15 @@ class ListFeaturestoresRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(6)
-  $2209.FieldMask get readMask => $_getN(5);
+  $2210.FieldMask get readMask => $_getN(5);
   @$pb.TagNumber(6)
-  set readMask($2209.FieldMask v) { setField(6, v); }
+  set readMask($2210.FieldMask v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasReadMask() => $_has(5);
   @$pb.TagNumber(6)
   void clearReadMask() => clearField(6);
   @$pb.TagNumber(6)
-  $2209.FieldMask ensureReadMask() => $_ensure(5);
+  $2210.FieldMask ensureReadMask() => $_ensure(5);
 }
 
 /// Response message for
@@ -405,7 +405,7 @@ class ListFeaturestoresResponse extends $pb.GeneratedMessage {
 class UpdateFeaturestoreRequest extends $pb.GeneratedMessage {
   factory UpdateFeaturestoreRequest({
     $499.Featurestore? featurestore,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (featurestore != null) {
@@ -422,7 +422,7 @@ class UpdateFeaturestoreRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeaturestoreRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$499.Featurestore>(1, _omitFieldNames ? '' : 'featurestore', subBuilder: $499.Featurestore.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -476,15 +476,15 @@ class UpdateFeaturestoreRequest extends $pb.GeneratedMessage {
   ///    * `online_serving_config.scaling`
   ///    * `online_storage_ttl_days`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -646,12 +646,12 @@ enum ImportFeatureValuesRequest_FeatureTimeSource {
 class ImportFeatureValuesRequest extends $pb.GeneratedMessage {
   factory ImportFeatureValuesRequest({
     $core.String? entityType,
-    $4235.AvroSource? avroSource,
-    $4235.BigQuerySource? bigquerySource,
-    $4235.CsvSource? csvSource,
+    $4236.AvroSource? avroSource,
+    $4236.BigQuerySource? bigquerySource,
+    $4236.CsvSource? csvSource,
     $core.String? entityIdField,
     $core.String? featureTimeField,
-    $1775.Timestamp? featureTime,
+    $1776.Timestamp? featureTime,
     $core.Iterable<ImportFeatureValuesRequest_FeatureSpec>? featureSpecs,
     $core.bool? disableOnlineServing,
     $core.int? workerCount,
@@ -712,12 +712,12 @@ class ImportFeatureValuesRequest extends $pb.GeneratedMessage {
     ..oo(0, [2, 3, 4])
     ..oo(1, [6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'entityType')
-    ..aOM<$4235.AvroSource>(2, _omitFieldNames ? '' : 'avroSource', subBuilder: $4235.AvroSource.create)
-    ..aOM<$4235.BigQuerySource>(3, _omitFieldNames ? '' : 'bigquerySource', subBuilder: $4235.BigQuerySource.create)
-    ..aOM<$4235.CsvSource>(4, _omitFieldNames ? '' : 'csvSource', subBuilder: $4235.CsvSource.create)
+    ..aOM<$4236.AvroSource>(2, _omitFieldNames ? '' : 'avroSource', subBuilder: $4236.AvroSource.create)
+    ..aOM<$4236.BigQuerySource>(3, _omitFieldNames ? '' : 'bigquerySource', subBuilder: $4236.BigQuerySource.create)
+    ..aOM<$4236.CsvSource>(4, _omitFieldNames ? '' : 'csvSource', subBuilder: $4236.CsvSource.create)
     ..aOS(5, _omitFieldNames ? '' : 'entityIdField')
     ..aOS(6, _omitFieldNames ? '' : 'featureTimeField')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'featureTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'featureTime', subBuilder: $1776.Timestamp.create)
     ..pc<ImportFeatureValuesRequest_FeatureSpec>(8, _omitFieldNames ? '' : 'featureSpecs', $pb.PbFieldType.PM, subBuilder: ImportFeatureValuesRequest_FeatureSpec.create)
     ..aOB(9, _omitFieldNames ? '' : 'disableOnlineServing')
     ..a<$core.int>(11, _omitFieldNames ? '' : 'workerCount', $pb.PbFieldType.O3)
@@ -765,37 +765,37 @@ class ImportFeatureValuesRequest extends $pb.GeneratedMessage {
   void clearEntityType() => clearField(1);
 
   @$pb.TagNumber(2)
-  $4235.AvroSource get avroSource => $_getN(1);
+  $4236.AvroSource get avroSource => $_getN(1);
   @$pb.TagNumber(2)
-  set avroSource($4235.AvroSource v) { setField(2, v); }
+  set avroSource($4236.AvroSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAvroSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearAvroSource() => clearField(2);
   @$pb.TagNumber(2)
-  $4235.AvroSource ensureAvroSource() => $_ensure(1);
+  $4236.AvroSource ensureAvroSource() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $4235.BigQuerySource get bigquerySource => $_getN(2);
+  $4236.BigQuerySource get bigquerySource => $_getN(2);
   @$pb.TagNumber(3)
-  set bigquerySource($4235.BigQuerySource v) { setField(3, v); }
+  set bigquerySource($4236.BigQuerySource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBigquerySource() => $_has(2);
   @$pb.TagNumber(3)
   void clearBigquerySource() => clearField(3);
   @$pb.TagNumber(3)
-  $4235.BigQuerySource ensureBigquerySource() => $_ensure(2);
+  $4236.BigQuerySource ensureBigquerySource() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $4235.CsvSource get csvSource => $_getN(3);
+  $4236.CsvSource get csvSource => $_getN(3);
   @$pb.TagNumber(4)
-  set csvSource($4235.CsvSource v) { setField(4, v); }
+  set csvSource($4236.CsvSource v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCsvSource() => $_has(3);
   @$pb.TagNumber(4)
   void clearCsvSource() => clearField(4);
   @$pb.TagNumber(4)
-  $4235.CsvSource ensureCsvSource() => $_ensure(3);
+  $4236.CsvSource ensureCsvSource() => $_ensure(3);
 
   /// Source column that holds entity IDs. If not provided, entity IDs are
   /// extracted from the column named entity_id.
@@ -822,15 +822,15 @@ class ImportFeatureValuesRequest extends $pb.GeneratedMessage {
   /// Single Feature timestamp for all entities being imported. The
   /// timestamp must not have higher than millisecond precision.
   @$pb.TagNumber(7)
-  $1775.Timestamp get featureTime => $_getN(6);
+  $1776.Timestamp get featureTime => $_getN(6);
   @$pb.TagNumber(7)
-  set featureTime($1775.Timestamp v) { setField(7, v); }
+  set featureTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFeatureTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearFeatureTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureFeatureTime() => $_ensure(6);
+  $1776.Timestamp ensureFeatureTime() => $_ensure(6);
 
   /// Required. Specifications defining which Feature values to import from the
   /// entity. The request fails if no feature_specs are provided, and having
@@ -1038,7 +1038,7 @@ class BatchReadFeatureValuesRequest_PassThroughField extends $pb.GeneratedMessag
 class BatchReadFeatureValuesRequest_EntityTypeSpec extends $pb.GeneratedMessage {
   factory BatchReadFeatureValuesRequest_EntityTypeSpec({
     $core.String? entityTypeId,
-    $4257.FeatureSelector? featureSelector,
+    $4258.FeatureSelector? featureSelector,
     $core.Iterable<DestinationFeatureSetting>? settings,
   }) {
     final $result = create();
@@ -1059,7 +1059,7 @@ class BatchReadFeatureValuesRequest_EntityTypeSpec extends $pb.GeneratedMessage 
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchReadFeatureValuesRequest.EntityTypeSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'entityTypeId')
-    ..aOM<$4257.FeatureSelector>(2, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4257.FeatureSelector.create)
+    ..aOM<$4258.FeatureSelector>(2, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4258.FeatureSelector.create)
     ..pc<DestinationFeatureSetting>(3, _omitFieldNames ? '' : 'settings', $pb.PbFieldType.PM, subBuilder: DestinationFeatureSetting.create)
     ..hasRequiredFields = false
   ;
@@ -1101,15 +1101,15 @@ class BatchReadFeatureValuesRequest_EntityTypeSpec extends $pb.GeneratedMessage 
   /// Required. Selectors choosing which Feature values to read from the
   /// EntityType.
   @$pb.TagNumber(2)
-  $4257.FeatureSelector get featureSelector => $_getN(1);
+  $4258.FeatureSelector get featureSelector => $_getN(1);
   @$pb.TagNumber(2)
-  set featureSelector($4257.FeatureSelector v) { setField(2, v); }
+  set featureSelector($4258.FeatureSelector v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFeatureSelector() => $_has(1);
   @$pb.TagNumber(2)
   void clearFeatureSelector() => clearField(2);
   @$pb.TagNumber(2)
-  $4257.FeatureSelector ensureFeatureSelector() => $_ensure(1);
+  $4258.FeatureSelector ensureFeatureSelector() => $_ensure(1);
 
   /// Per-Feature settings for the batch read.
   @$pb.TagNumber(3)
@@ -1127,12 +1127,12 @@ enum BatchReadFeatureValuesRequest_ReadOption {
 class BatchReadFeatureValuesRequest extends $pb.GeneratedMessage {
   factory BatchReadFeatureValuesRequest({
     $core.String? featurestore,
-    $4235.CsvSource? csvReadInstances,
+    $4236.CsvSource? csvReadInstances,
     FeatureValueDestination? destination,
-    $4235.BigQuerySource? bigqueryReadInstances,
+    $4236.BigQuerySource? bigqueryReadInstances,
     $core.Iterable<BatchReadFeatureValuesRequest_EntityTypeSpec>? entityTypeSpecs,
     $core.Iterable<BatchReadFeatureValuesRequest_PassThroughField>? passThroughFields,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (featurestore != null) {
@@ -1170,12 +1170,12 @@ class BatchReadFeatureValuesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchReadFeatureValuesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [3, 5])
     ..aOS(1, _omitFieldNames ? '' : 'featurestore')
-    ..aOM<$4235.CsvSource>(3, _omitFieldNames ? '' : 'csvReadInstances', subBuilder: $4235.CsvSource.create)
+    ..aOM<$4236.CsvSource>(3, _omitFieldNames ? '' : 'csvReadInstances', subBuilder: $4236.CsvSource.create)
     ..aOM<FeatureValueDestination>(4, _omitFieldNames ? '' : 'destination', subBuilder: FeatureValueDestination.create)
-    ..aOM<$4235.BigQuerySource>(5, _omitFieldNames ? '' : 'bigqueryReadInstances', subBuilder: $4235.BigQuerySource.create)
+    ..aOM<$4236.BigQuerySource>(5, _omitFieldNames ? '' : 'bigqueryReadInstances', subBuilder: $4236.BigQuerySource.create)
     ..pc<BatchReadFeatureValuesRequest_EntityTypeSpec>(7, _omitFieldNames ? '' : 'entityTypeSpecs', $pb.PbFieldType.PM, subBuilder: BatchReadFeatureValuesRequest_EntityTypeSpec.create)
     ..pc<BatchReadFeatureValuesRequest_PassThroughField>(8, _omitFieldNames ? '' : 'passThroughFields', $pb.PbFieldType.PM, subBuilder: BatchReadFeatureValuesRequest_PassThroughField.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1240,15 +1240,15 @@ class BatchReadFeatureValuesRequest extends $pb.GeneratedMessage {
   ///  Values in the timestamp column must use the RFC 3339 format, e.g.
   ///  `2012-07-30T10:43:17.123Z`.
   @$pb.TagNumber(3)
-  $4235.CsvSource get csvReadInstances => $_getN(1);
+  $4236.CsvSource get csvReadInstances => $_getN(1);
   @$pb.TagNumber(3)
-  set csvReadInstances($4235.CsvSource v) { setField(3, v); }
+  set csvReadInstances($4236.CsvSource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCsvReadInstances() => $_has(1);
   @$pb.TagNumber(3)
   void clearCsvReadInstances() => clearField(3);
   @$pb.TagNumber(3)
-  $4235.CsvSource ensureCsvReadInstances() => $_ensure(1);
+  $4236.CsvSource ensureCsvReadInstances() => $_ensure(1);
 
   /// Required. Specifies output location and format.
   @$pb.TagNumber(4)
@@ -1264,15 +1264,15 @@ class BatchReadFeatureValuesRequest extends $pb.GeneratedMessage {
 
   /// Similar to csv_read_instances, but from BigQuery source.
   @$pb.TagNumber(5)
-  $4235.BigQuerySource get bigqueryReadInstances => $_getN(3);
+  $4236.BigQuerySource get bigqueryReadInstances => $_getN(3);
   @$pb.TagNumber(5)
-  set bigqueryReadInstances($4235.BigQuerySource v) { setField(5, v); }
+  set bigqueryReadInstances($4236.BigQuerySource v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBigqueryReadInstances() => $_has(3);
   @$pb.TagNumber(5)
   void clearBigqueryReadInstances() => clearField(5);
   @$pb.TagNumber(5)
-  $4235.BigQuerySource ensureBigqueryReadInstances() => $_ensure(3);
+  $4236.BigQuerySource ensureBigqueryReadInstances() => $_ensure(3);
 
   /// Required. Specifies EntityType grouping Features to read values of and
   /// settings.
@@ -1293,23 +1293,23 @@ class BatchReadFeatureValuesRequest extends $pb.GeneratedMessage {
   /// this timestamp. If not set, retrieve oldest values kept in Feature Store.
   /// Timestamp, if present, must not have higher than millisecond precision.
   @$pb.TagNumber(11)
-  $1775.Timestamp get startTime => $_getN(6);
+  $1776.Timestamp get startTime => $_getN(6);
   @$pb.TagNumber(11)
-  set startTime($1775.Timestamp v) { setField(11, v); }
+  set startTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasStartTime() => $_has(6);
   @$pb.TagNumber(11)
   void clearStartTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureStartTime() => $_ensure(6);
+  $1776.Timestamp ensureStartTime() => $_ensure(6);
 }
 
 /// Describes exporting the latest Feature values of all entities of the
 /// EntityType between [start_time, snapshot_time].
 class ExportFeatureValuesRequest_SnapshotExport extends $pb.GeneratedMessage {
   factory ExportFeatureValuesRequest_SnapshotExport({
-    $1775.Timestamp? snapshotTime,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? snapshotTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (snapshotTime != null) {
@@ -1325,8 +1325,8 @@ class ExportFeatureValuesRequest_SnapshotExport extends $pb.GeneratedMessage {
   factory ExportFeatureValuesRequest_SnapshotExport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportFeatureValuesRequest.SnapshotExport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1355,37 +1355,37 @@ class ExportFeatureValuesRequest_SnapshotExport extends $pb.GeneratedMessage {
   /// retrieve values as of now. Timestamp, if present, must not have higher
   /// than millisecond precision.
   @$pb.TagNumber(1)
-  $1775.Timestamp get snapshotTime => $_getN(0);
+  $1776.Timestamp get snapshotTime => $_getN(0);
   @$pb.TagNumber(1)
-  set snapshotTime($1775.Timestamp v) { setField(1, v); }
+  set snapshotTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSnapshotTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearSnapshotTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureSnapshotTime() => $_ensure(0);
+  $1776.Timestamp ensureSnapshotTime() => $_ensure(0);
 
   /// Excludes Feature values with feature generation timestamp before this
   /// timestamp. If not set, retrieve oldest values kept in Feature Store.
   /// Timestamp, if present, must not have higher than millisecond precision.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 }
 
 /// Describes exporting all historical Feature values of all entities of the
 /// EntityType between [start_time, end_time].
 class ExportFeatureValuesRequest_FullExport extends $pb.GeneratedMessage {
   factory ExportFeatureValuesRequest_FullExport({
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? startTime,
   }) {
     final $result = create();
     if (endTime != null) {
@@ -1401,8 +1401,8 @@ class ExportFeatureValuesRequest_FullExport extends $pb.GeneratedMessage {
   factory ExportFeatureValuesRequest_FullExport.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportFeatureValuesRequest.FullExport', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1431,29 +1431,29 @@ class ExportFeatureValuesRequest_FullExport extends $pb.GeneratedMessage {
   /// retrieve values as of now. Timestamp, if present, must not have higher
   /// than millisecond precision.
   @$pb.TagNumber(1)
-  $1775.Timestamp get endTime => $_getN(0);
+  $1776.Timestamp get endTime => $_getN(0);
   @$pb.TagNumber(1)
-  set endTime($1775.Timestamp v) { setField(1, v); }
+  set endTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEndTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearEndTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureEndTime() => $_ensure(0);
+  $1776.Timestamp ensureEndTime() => $_ensure(0);
 
   /// Excludes Feature values with feature generation timestamp before this
   /// timestamp. If not set, retrieve oldest values kept in Feature Store.
   /// Timestamp, if present, must not have higher than millisecond precision.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 }
 
 enum ExportFeatureValuesRequest_Mode {
@@ -1469,7 +1469,7 @@ class ExportFeatureValuesRequest extends $pb.GeneratedMessage {
     $core.String? entityType,
     ExportFeatureValuesRequest_SnapshotExport? snapshotExport,
     FeatureValueDestination? destination,
-    $4257.FeatureSelector? featureSelector,
+    $4258.FeatureSelector? featureSelector,
     $core.Iterable<DestinationFeatureSetting>? settings,
     ExportFeatureValuesRequest_FullExport? fullExport,
   }) {
@@ -1508,7 +1508,7 @@ class ExportFeatureValuesRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'entityType')
     ..aOM<ExportFeatureValuesRequest_SnapshotExport>(3, _omitFieldNames ? '' : 'snapshotExport', subBuilder: ExportFeatureValuesRequest_SnapshotExport.create)
     ..aOM<FeatureValueDestination>(4, _omitFieldNames ? '' : 'destination', subBuilder: FeatureValueDestination.create)
-    ..aOM<$4257.FeatureSelector>(5, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4257.FeatureSelector.create)
+    ..aOM<$4258.FeatureSelector>(5, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4258.FeatureSelector.create)
     ..pc<DestinationFeatureSetting>(6, _omitFieldNames ? '' : 'settings', $pb.PbFieldType.PM, subBuilder: DestinationFeatureSetting.create)
     ..aOM<ExportFeatureValuesRequest_FullExport>(7, _omitFieldNames ? '' : 'fullExport', subBuilder: ExportFeatureValuesRequest_FullExport.create)
     ..hasRequiredFields = false
@@ -1577,15 +1577,15 @@ class ExportFeatureValuesRequest extends $pb.GeneratedMessage {
 
   /// Required. Selects Features to export values of.
   @$pb.TagNumber(5)
-  $4257.FeatureSelector get featureSelector => $_getN(3);
+  $4258.FeatureSelector get featureSelector => $_getN(3);
   @$pb.TagNumber(5)
-  set featureSelector($4257.FeatureSelector v) { setField(5, v); }
+  set featureSelector($4258.FeatureSelector v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFeatureSelector() => $_has(3);
   @$pb.TagNumber(5)
   void clearFeatureSelector() => clearField(5);
   @$pb.TagNumber(5)
-  $4257.FeatureSelector ensureFeatureSelector() => $_ensure(3);
+  $4258.FeatureSelector ensureFeatureSelector() => $_ensure(3);
 
   /// Per-Feature export settings.
   @$pb.TagNumber(6)
@@ -1682,9 +1682,9 @@ enum FeatureValueDestination_Destination {
 /// A destination location for Feature values and format.
 class FeatureValueDestination extends $pb.GeneratedMessage {
   factory FeatureValueDestination({
-    $4235.BigQueryDestination? bigqueryDestination,
-    $4235.TFRecordDestination? tfrecordDestination,
-    $4235.CsvDestination? csvDestination,
+    $4236.BigQueryDestination? bigqueryDestination,
+    $4236.TFRecordDestination? tfrecordDestination,
+    $4236.CsvDestination? csvDestination,
   }) {
     final $result = create();
     if (bigqueryDestination != null) {
@@ -1710,9 +1710,9 @@ class FeatureValueDestination extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeatureValueDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$4235.BigQueryDestination>(1, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4235.BigQueryDestination.create)
-    ..aOM<$4235.TFRecordDestination>(2, _omitFieldNames ? '' : 'tfrecordDestination', subBuilder: $4235.TFRecordDestination.create)
-    ..aOM<$4235.CsvDestination>(3, _omitFieldNames ? '' : 'csvDestination', subBuilder: $4235.CsvDestination.create)
+    ..aOM<$4236.BigQueryDestination>(1, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4236.BigQueryDestination.create)
+    ..aOM<$4236.TFRecordDestination>(2, _omitFieldNames ? '' : 'tfrecordDestination', subBuilder: $4236.TFRecordDestination.create)
+    ..aOM<$4236.CsvDestination>(3, _omitFieldNames ? '' : 'csvDestination', subBuilder: $4236.CsvDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -1746,15 +1746,15 @@ class FeatureValueDestination extends $pb.GeneratedMessage {
   /// [FeatureValueDestination.bigquery_destination][google.cloud.aiplatform.v1.FeatureValueDestination.bigquery_destination]
   /// must refer to a table.
   @$pb.TagNumber(1)
-  $4235.BigQueryDestination get bigqueryDestination => $_getN(0);
+  $4236.BigQueryDestination get bigqueryDestination => $_getN(0);
   @$pb.TagNumber(1)
-  set bigqueryDestination($4235.BigQueryDestination v) { setField(1, v); }
+  set bigqueryDestination($4236.BigQueryDestination v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBigqueryDestination() => $_has(0);
   @$pb.TagNumber(1)
   void clearBigqueryDestination() => clearField(1);
   @$pb.TagNumber(1)
-  $4235.BigQueryDestination ensureBigqueryDestination() => $_ensure(0);
+  $4236.BigQueryDestination ensureBigqueryDestination() => $_ensure(0);
 
   ///  Output in TFRecord format.
   ///
@@ -1768,28 +1768,28 @@ class FeatureValueDestination extends $pb.GeneratedMessage {
   ///      true -> byte_string("true"), false -> byte_string("false")
   ///      BOOL, BOOL_ARRAY (true, false)             | BYTES_LIST
   @$pb.TagNumber(2)
-  $4235.TFRecordDestination get tfrecordDestination => $_getN(1);
+  $4236.TFRecordDestination get tfrecordDestination => $_getN(1);
   @$pb.TagNumber(2)
-  set tfrecordDestination($4235.TFRecordDestination v) { setField(2, v); }
+  set tfrecordDestination($4236.TFRecordDestination v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTfrecordDestination() => $_has(1);
   @$pb.TagNumber(2)
   void clearTfrecordDestination() => clearField(2);
   @$pb.TagNumber(2)
-  $4235.TFRecordDestination ensureTfrecordDestination() => $_ensure(1);
+  $4236.TFRecordDestination ensureTfrecordDestination() => $_ensure(1);
 
   /// Output in CSV format. Array Feature value types are not allowed in CSV
   /// format.
   @$pb.TagNumber(3)
-  $4235.CsvDestination get csvDestination => $_getN(2);
+  $4236.CsvDestination get csvDestination => $_getN(2);
   @$pb.TagNumber(3)
-  set csvDestination($4235.CsvDestination v) { setField(3, v); }
+  set csvDestination($4236.CsvDestination v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCsvDestination() => $_has(2);
   @$pb.TagNumber(3)
   void clearCsvDestination() => clearField(3);
   @$pb.TagNumber(3)
-  $4235.CsvDestination ensureCsvDestination() => $_ensure(2);
+  $4236.CsvDestination ensureCsvDestination() => $_ensure(2);
 }
 
 /// Response message for
@@ -2017,7 +2017,7 @@ class ListEntityTypesRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? orderBy,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
   }) {
     final $result = create();
     if (parent != null) {
@@ -2050,7 +2050,7 @@ class ListEntityTypesRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$2209.FieldMask>(6, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(6, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2162,15 +2162,15 @@ class ListEntityTypesRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(6)
-  $2209.FieldMask get readMask => $_getN(5);
+  $2210.FieldMask get readMask => $_getN(5);
   @$pb.TagNumber(6)
-  set readMask($2209.FieldMask v) { setField(6, v); }
+  set readMask($2210.FieldMask v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasReadMask() => $_has(5);
   @$pb.TagNumber(6)
   void clearReadMask() => clearField(6);
   @$pb.TagNumber(6)
-  $2209.FieldMask ensureReadMask() => $_ensure(5);
+  $2210.FieldMask ensureReadMask() => $_ensure(5);
 }
 
 /// Response message for
@@ -2243,7 +2243,7 @@ class ListEntityTypesResponse extends $pb.GeneratedMessage {
 class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
   factory UpdateEntityTypeRequest({
     $500.EntityType? entityType,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (entityType != null) {
@@ -2260,7 +2260,7 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEntityTypeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$500.EntityType>(1, _omitFieldNames ? '' : 'entityType', subBuilder: $500.EntityType.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2320,15 +2320,15 @@ class UpdateEntityTypeRequest extends $pb.GeneratedMessage {
   ///    * `monitoring_config.categorical_threshold_config.value`
   ///    * `offline_storage_ttl_days`
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for [FeaturestoreService.DeleteEntityTypes][].
@@ -2683,7 +2683,7 @@ class ListFeaturesRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? orderBy,
-    $2209.FieldMask? readMask,
+    $2210.FieldMask? readMask,
     $core.int? latestStatsCount,
   }) {
     final $result = create();
@@ -2720,7 +2720,7 @@ class ListFeaturesRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'orderBy')
-    ..aOM<$2209.FieldMask>(6, _omitFieldNames ? '' : 'readMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(6, _omitFieldNames ? '' : 'readMask', subBuilder: $2210.FieldMask.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'latestStatsCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -2841,15 +2841,15 @@ class ListFeaturesRequest extends $pb.GeneratedMessage {
 
   /// Mask specifying which fields to read.
   @$pb.TagNumber(6)
-  $2209.FieldMask get readMask => $_getN(5);
+  $2210.FieldMask get readMask => $_getN(5);
   @$pb.TagNumber(6)
-  set readMask($2209.FieldMask v) { setField(6, v); }
+  set readMask($2210.FieldMask v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasReadMask() => $_has(5);
   @$pb.TagNumber(6)
   void clearReadMask() => clearField(6);
   @$pb.TagNumber(6)
-  $2209.FieldMask ensureReadMask() => $_ensure(5);
+  $2210.FieldMask ensureReadMask() => $_ensure(5);
 
   /// Only applicable for Vertex AI Feature Store (Legacy).
   /// If set, return the most recent
@@ -3183,7 +3183,7 @@ class SearchFeaturesResponse extends $pb.GeneratedMessage {
 class UpdateFeatureRequest extends $pb.GeneratedMessage {
   factory UpdateFeatureRequest({
     $501.Feature? feature,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (feature != null) {
@@ -3200,7 +3200,7 @@ class UpdateFeatureRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeatureRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOM<$501.Feature>(1, _omitFieldNames ? '' : 'feature', subBuilder: $501.Feature.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3256,15 +3256,15 @@ class UpdateFeatureRequest extends $pb.GeneratedMessage {
   ///    * `disable_monitoring` (Not supported for FeatureRegistryService Feature)
   ///    * `point_of_contact` (Not supported for FeaturestoreService FeatureStore)
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for
@@ -3328,7 +3328,7 @@ class DeleteFeatureRequest extends $pb.GeneratedMessage {
 /// Details of operations that perform create Featurestore.
 class CreateFeaturestoreOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeaturestoreOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3341,7 +3341,7 @@ class CreateFeaturestoreOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeaturestoreOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateFeaturestoreOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3368,21 +3368,21 @@ class CreateFeaturestoreOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Featurestore.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform update Featurestore.
 class UpdateFeaturestoreOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateFeaturestoreOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3395,7 +3395,7 @@ class UpdateFeaturestoreOperationMetadata extends $pb.GeneratedMessage {
   factory UpdateFeaturestoreOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFeaturestoreOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3422,21 +3422,21 @@ class UpdateFeaturestoreOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Featurestore.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform import Feature values.
 class ImportFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory ImportFeatureValuesOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
     $fixnum.Int64? importedEntityCount,
     $fixnum.Int64? importedFeatureValueCount,
     $core.Iterable<$core.String>? sourceUris,
@@ -3473,7 +3473,7 @@ class ImportFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory ImportFeatureValuesOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportFeatureValuesOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..aInt64(2, _omitFieldNames ? '' : 'importedEntityCount')
     ..aInt64(3, _omitFieldNames ? '' : 'importedFeatureValueCount')
     ..pPS(4, _omitFieldNames ? '' : 'sourceUris')
@@ -3506,15 +3506,15 @@ class ImportFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Featurestore import Feature values.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 
   /// Number of entities that have been imported by the operation.
   @$pb.TagNumber(2)
@@ -3574,7 +3574,7 @@ class ImportFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
 /// Details of operations that exports Features values.
 class ExportFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory ExportFeatureValuesOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3587,7 +3587,7 @@ class ExportFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory ExportFeatureValuesOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportFeatureValuesOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3614,21 +3614,21 @@ class ExportFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Featurestore export Feature values.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that batch reads Feature values.
 class BatchReadFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory BatchReadFeatureValuesOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3641,7 +3641,7 @@ class BatchReadFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory BatchReadFeatureValuesOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchReadFeatureValuesOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3668,21 +3668,21 @@ class BatchReadFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Featurestore batch read Features values.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that delete Feature values.
 class DeleteFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory DeleteFeatureValuesOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3695,7 +3695,7 @@ class DeleteFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
   factory DeleteFeatureValuesOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteFeatureValuesOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3722,21 +3722,21 @@ class DeleteFeatureValuesOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Featurestore delete Features values.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform create EntityType.
 class CreateEntityTypeOperationMetadata extends $pb.GeneratedMessage {
   factory CreateEntityTypeOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3749,7 +3749,7 @@ class CreateEntityTypeOperationMetadata extends $pb.GeneratedMessage {
   factory CreateEntityTypeOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateEntityTypeOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3776,21 +3776,21 @@ class CreateEntityTypeOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for EntityType.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform create Feature.
 class CreateFeatureOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeatureOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3803,7 +3803,7 @@ class CreateFeatureOperationMetadata extends $pb.GeneratedMessage {
   factory CreateFeatureOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateFeatureOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3830,21 +3830,21 @@ class CreateFeatureOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Feature.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Details of operations that perform batch create Features.
 class BatchCreateFeaturesOperationMetadata extends $pb.GeneratedMessage {
   factory BatchCreateFeaturesOperationMetadata({
-    $4250.GenericOperationMetadata? genericMetadata,
+    $4251.GenericOperationMetadata? genericMetadata,
   }) {
     final $result = create();
     if (genericMetadata != null) {
@@ -3857,7 +3857,7 @@ class BatchCreateFeaturesOperationMetadata extends $pb.GeneratedMessage {
   factory BatchCreateFeaturesOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateFeaturesOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4250.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4250.GenericOperationMetadata.create)
+    ..aOM<$4251.GenericOperationMetadata>(1, _omitFieldNames ? '' : 'genericMetadata', subBuilder: $4251.GenericOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -3884,15 +3884,15 @@ class BatchCreateFeaturesOperationMetadata extends $pb.GeneratedMessage {
 
   /// Operation metadata for Feature.
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata get genericMetadata => $_getN(0);
+  $4251.GenericOperationMetadata get genericMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set genericMetadata($4250.GenericOperationMetadata v) { setField(1, v); }
+  set genericMetadata($4251.GenericOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGenericMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearGenericMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4250.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
+  $4251.GenericOperationMetadata ensureGenericMetadata() => $_ensure(0);
 }
 
 /// Message to select entity.
@@ -3960,8 +3960,8 @@ class DeleteFeatureValuesRequest_SelectEntity extends $pb.GeneratedMessage {
 /// any deleted historical data in the online storage, you must re-ingest it.
 class DeleteFeatureValuesRequest_SelectTimeRangeAndFeature extends $pb.GeneratedMessage {
   factory DeleteFeatureValuesRequest_SelectTimeRangeAndFeature({
-    $4256.Interval? timeRange,
-    $4257.FeatureSelector? featureSelector,
+    $4257.Interval? timeRange,
+    $4258.FeatureSelector? featureSelector,
     $core.bool? skipOnlineStorageDelete,
   }) {
     final $result = create();
@@ -3981,8 +3981,8 @@ class DeleteFeatureValuesRequest_SelectTimeRangeAndFeature extends $pb.Generated
   factory DeleteFeatureValuesRequest_SelectTimeRangeAndFeature.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteFeatureValuesRequest.SelectTimeRangeAndFeature', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
-    ..aOM<$4256.Interval>(1, _omitFieldNames ? '' : 'timeRange', subBuilder: $4256.Interval.create)
-    ..aOM<$4257.FeatureSelector>(2, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4257.FeatureSelector.create)
+    ..aOM<$4257.Interval>(1, _omitFieldNames ? '' : 'timeRange', subBuilder: $4257.Interval.create)
+    ..aOM<$4258.FeatureSelector>(2, _omitFieldNames ? '' : 'featureSelector', subBuilder: $4258.FeatureSelector.create)
     ..aOB(3, _omitFieldNames ? '' : 'skipOnlineStorageDelete')
     ..hasRequiredFields = false
   ;
@@ -4011,28 +4011,28 @@ class DeleteFeatureValuesRequest_SelectTimeRangeAndFeature extends $pb.Generated
   /// Required. Select feature generated within a half-inclusive time range.
   /// The time range is lower inclusive and upper exclusive.
   @$pb.TagNumber(1)
-  $4256.Interval get timeRange => $_getN(0);
+  $4257.Interval get timeRange => $_getN(0);
   @$pb.TagNumber(1)
-  set timeRange($4256.Interval v) { setField(1, v); }
+  set timeRange($4257.Interval v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeRange() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeRange() => clearField(1);
   @$pb.TagNumber(1)
-  $4256.Interval ensureTimeRange() => $_ensure(0);
+  $4257.Interval ensureTimeRange() => $_ensure(0);
 
   /// Required. Selectors choosing which feature values to be deleted from the
   /// EntityType.
   @$pb.TagNumber(2)
-  $4257.FeatureSelector get featureSelector => $_getN(1);
+  $4258.FeatureSelector get featureSelector => $_getN(1);
   @$pb.TagNumber(2)
-  set featureSelector($4257.FeatureSelector v) { setField(2, v); }
+  set featureSelector($4258.FeatureSelector v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFeatureSelector() => $_has(1);
   @$pb.TagNumber(2)
   void clearFeatureSelector() => clearField(2);
   @$pb.TagNumber(2)
-  $4257.FeatureSelector ensureFeatureSelector() => $_ensure(1);
+  $4258.FeatureSelector ensureFeatureSelector() => $_ensure(1);
 
   /// If set, data will not be deleted from online storage.
   /// When time range is older than the data in online storage, setting this to
@@ -4407,7 +4407,7 @@ enum EntityIdSelector_EntityIdsSource {
 /// Selector for entityId. Getting ids from the given source.
 class EntityIdSelector extends $pb.GeneratedMessage {
   factory EntityIdSelector({
-    $4235.CsvSource? csvSource,
+    $4236.CsvSource? csvSource,
     $core.String? entityIdField,
   }) {
     final $result = create();
@@ -4429,7 +4429,7 @@ class EntityIdSelector extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityIdSelector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [3])
-    ..aOM<$4235.CsvSource>(3, _omitFieldNames ? '' : 'csvSource', subBuilder: $4235.CsvSource.create)
+    ..aOM<$4236.CsvSource>(3, _omitFieldNames ? '' : 'csvSource', subBuilder: $4236.CsvSource.create)
     ..aOS(5, _omitFieldNames ? '' : 'entityIdField')
     ..hasRequiredFields = false
   ;
@@ -4460,15 +4460,15 @@ class EntityIdSelector extends $pb.GeneratedMessage {
 
   /// Source of Csv
   @$pb.TagNumber(3)
-  $4235.CsvSource get csvSource => $_getN(0);
+  $4236.CsvSource get csvSource => $_getN(0);
   @$pb.TagNumber(3)
-  set csvSource($4235.CsvSource v) { setField(3, v); }
+  set csvSource($4236.CsvSource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCsvSource() => $_has(0);
   @$pb.TagNumber(3)
   void clearCsvSource() => clearField(3);
   @$pb.TagNumber(3)
-  $4235.CsvSource ensureCsvSource() => $_ensure(0);
+  $4236.CsvSource ensureCsvSource() => $_ensure(0);
 
   /// Source column that holds entity IDs. If not provided, entity IDs are
   /// extracted from the column named entity_id.

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'classification.pb.dart' as $4348;
-import 'detection.pb.dart' as $4351;
-import 'tables.pb.dart' as $4354;
-import 'text_extraction.pb.dart' as $4352;
-import 'text_sentiment.pb.dart' as $4353;
-import 'translation.pb.dart' as $4350;
+import 'classification.pb.dart' as $4349;
+import 'detection.pb.dart' as $4352;
+import 'tables.pb.dart' as $4355;
+import 'text_extraction.pb.dart' as $4353;
+import 'text_sentiment.pb.dart' as $4354;
+import 'translation.pb.dart' as $4351;
 
 enum AnnotationPayload_Detail {
   translation, 
@@ -36,15 +36,15 @@ enum AnnotationPayload_Detail {
 class AnnotationPayload extends $pb.GeneratedMessage {
   factory AnnotationPayload({
     $core.String? annotationSpecId,
-    $4350.TranslationAnnotation? translation,
-    $4348.ClassificationAnnotation? classification,
-    $4351.ImageObjectDetectionAnnotation? imageObjectDetection,
+    $4351.TranslationAnnotation? translation,
+    $4349.ClassificationAnnotation? classification,
+    $4352.ImageObjectDetectionAnnotation? imageObjectDetection,
     $core.String? displayName,
-    $4352.TextExtractionAnnotation? textExtraction,
-    $4353.TextSentimentAnnotation? textSentiment,
-    $4351.VideoObjectTrackingAnnotation? videoObjectTracking,
-    $4348.VideoClassificationAnnotation? videoClassification,
-    $4354.TablesAnnotation? tables,
+    $4353.TextExtractionAnnotation? textExtraction,
+    $4354.TextSentimentAnnotation? textSentiment,
+    $4352.VideoObjectTrackingAnnotation? videoObjectTracking,
+    $4349.VideoClassificationAnnotation? videoClassification,
+    $4355.TablesAnnotation? tables,
   }) {
     final $result = create();
     if (annotationSpecId != null) {
@@ -97,15 +97,15 @@ class AnnotationPayload extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnnotationPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 6, 7, 8, 9, 10])
     ..aOS(1, _omitFieldNames ? '' : 'annotationSpecId')
-    ..aOM<$4350.TranslationAnnotation>(2, _omitFieldNames ? '' : 'translation', subBuilder: $4350.TranslationAnnotation.create)
-    ..aOM<$4348.ClassificationAnnotation>(3, _omitFieldNames ? '' : 'classification', subBuilder: $4348.ClassificationAnnotation.create)
-    ..aOM<$4351.ImageObjectDetectionAnnotation>(4, _omitFieldNames ? '' : 'imageObjectDetection', subBuilder: $4351.ImageObjectDetectionAnnotation.create)
+    ..aOM<$4351.TranslationAnnotation>(2, _omitFieldNames ? '' : 'translation', subBuilder: $4351.TranslationAnnotation.create)
+    ..aOM<$4349.ClassificationAnnotation>(3, _omitFieldNames ? '' : 'classification', subBuilder: $4349.ClassificationAnnotation.create)
+    ..aOM<$4352.ImageObjectDetectionAnnotation>(4, _omitFieldNames ? '' : 'imageObjectDetection', subBuilder: $4352.ImageObjectDetectionAnnotation.create)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4352.TextExtractionAnnotation>(6, _omitFieldNames ? '' : 'textExtraction', subBuilder: $4352.TextExtractionAnnotation.create)
-    ..aOM<$4353.TextSentimentAnnotation>(7, _omitFieldNames ? '' : 'textSentiment', subBuilder: $4353.TextSentimentAnnotation.create)
-    ..aOM<$4351.VideoObjectTrackingAnnotation>(8, _omitFieldNames ? '' : 'videoObjectTracking', subBuilder: $4351.VideoObjectTrackingAnnotation.create)
-    ..aOM<$4348.VideoClassificationAnnotation>(9, _omitFieldNames ? '' : 'videoClassification', subBuilder: $4348.VideoClassificationAnnotation.create)
-    ..aOM<$4354.TablesAnnotation>(10, _omitFieldNames ? '' : 'tables', subBuilder: $4354.TablesAnnotation.create)
+    ..aOM<$4353.TextExtractionAnnotation>(6, _omitFieldNames ? '' : 'textExtraction', subBuilder: $4353.TextExtractionAnnotation.create)
+    ..aOM<$4354.TextSentimentAnnotation>(7, _omitFieldNames ? '' : 'textSentiment', subBuilder: $4354.TextSentimentAnnotation.create)
+    ..aOM<$4352.VideoObjectTrackingAnnotation>(8, _omitFieldNames ? '' : 'videoObjectTracking', subBuilder: $4352.VideoObjectTrackingAnnotation.create)
+    ..aOM<$4349.VideoClassificationAnnotation>(9, _omitFieldNames ? '' : 'videoClassification', subBuilder: $4349.VideoClassificationAnnotation.create)
+    ..aOM<$4355.TablesAnnotation>(10, _omitFieldNames ? '' : 'tables', subBuilder: $4355.TablesAnnotation.create)
     ..hasRequiredFields = false
   ;
 
@@ -147,39 +147,39 @@ class AnnotationPayload extends $pb.GeneratedMessage {
 
   /// Annotation details for translation.
   @$pb.TagNumber(2)
-  $4350.TranslationAnnotation get translation => $_getN(1);
+  $4351.TranslationAnnotation get translation => $_getN(1);
   @$pb.TagNumber(2)
-  set translation($4350.TranslationAnnotation v) { setField(2, v); }
+  set translation($4351.TranslationAnnotation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTranslation() => $_has(1);
   @$pb.TagNumber(2)
   void clearTranslation() => clearField(2);
   @$pb.TagNumber(2)
-  $4350.TranslationAnnotation ensureTranslation() => $_ensure(1);
+  $4351.TranslationAnnotation ensureTranslation() => $_ensure(1);
 
   /// Annotation details for content or image classification.
   @$pb.TagNumber(3)
-  $4348.ClassificationAnnotation get classification => $_getN(2);
+  $4349.ClassificationAnnotation get classification => $_getN(2);
   @$pb.TagNumber(3)
-  set classification($4348.ClassificationAnnotation v) { setField(3, v); }
+  set classification($4349.ClassificationAnnotation v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasClassification() => $_has(2);
   @$pb.TagNumber(3)
   void clearClassification() => clearField(3);
   @$pb.TagNumber(3)
-  $4348.ClassificationAnnotation ensureClassification() => $_ensure(2);
+  $4349.ClassificationAnnotation ensureClassification() => $_ensure(2);
 
   /// Annotation details for image object detection.
   @$pb.TagNumber(4)
-  $4351.ImageObjectDetectionAnnotation get imageObjectDetection => $_getN(3);
+  $4352.ImageObjectDetectionAnnotation get imageObjectDetection => $_getN(3);
   @$pb.TagNumber(4)
-  set imageObjectDetection($4351.ImageObjectDetectionAnnotation v) { setField(4, v); }
+  set imageObjectDetection($4352.ImageObjectDetectionAnnotation v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImageObjectDetection() => $_has(3);
   @$pb.TagNumber(4)
   void clearImageObjectDetection() => clearField(4);
   @$pb.TagNumber(4)
-  $4351.ImageObjectDetectionAnnotation ensureImageObjectDetection() => $_ensure(3);
+  $4352.ImageObjectDetectionAnnotation ensureImageObjectDetection() => $_ensure(3);
 
   /// Output only. The value of
   /// [display_name][google.cloud.automl.v1beta1.AnnotationSpec.display_name]
@@ -198,64 +198,64 @@ class AnnotationPayload extends $pb.GeneratedMessage {
 
   /// Annotation details for text extraction.
   @$pb.TagNumber(6)
-  $4352.TextExtractionAnnotation get textExtraction => $_getN(5);
+  $4353.TextExtractionAnnotation get textExtraction => $_getN(5);
   @$pb.TagNumber(6)
-  set textExtraction($4352.TextExtractionAnnotation v) { setField(6, v); }
+  set textExtraction($4353.TextExtractionAnnotation v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTextExtraction() => $_has(5);
   @$pb.TagNumber(6)
   void clearTextExtraction() => clearField(6);
   @$pb.TagNumber(6)
-  $4352.TextExtractionAnnotation ensureTextExtraction() => $_ensure(5);
+  $4353.TextExtractionAnnotation ensureTextExtraction() => $_ensure(5);
 
   /// Annotation details for text sentiment.
   @$pb.TagNumber(7)
-  $4353.TextSentimentAnnotation get textSentiment => $_getN(6);
+  $4354.TextSentimentAnnotation get textSentiment => $_getN(6);
   @$pb.TagNumber(7)
-  set textSentiment($4353.TextSentimentAnnotation v) { setField(7, v); }
+  set textSentiment($4354.TextSentimentAnnotation v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTextSentiment() => $_has(6);
   @$pb.TagNumber(7)
   void clearTextSentiment() => clearField(7);
   @$pb.TagNumber(7)
-  $4353.TextSentimentAnnotation ensureTextSentiment() => $_ensure(6);
+  $4354.TextSentimentAnnotation ensureTextSentiment() => $_ensure(6);
 
   /// Annotation details for video object tracking.
   @$pb.TagNumber(8)
-  $4351.VideoObjectTrackingAnnotation get videoObjectTracking => $_getN(7);
+  $4352.VideoObjectTrackingAnnotation get videoObjectTracking => $_getN(7);
   @$pb.TagNumber(8)
-  set videoObjectTracking($4351.VideoObjectTrackingAnnotation v) { setField(8, v); }
+  set videoObjectTracking($4352.VideoObjectTrackingAnnotation v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasVideoObjectTracking() => $_has(7);
   @$pb.TagNumber(8)
   void clearVideoObjectTracking() => clearField(8);
   @$pb.TagNumber(8)
-  $4351.VideoObjectTrackingAnnotation ensureVideoObjectTracking() => $_ensure(7);
+  $4352.VideoObjectTrackingAnnotation ensureVideoObjectTracking() => $_ensure(7);
 
   /// Annotation details for video classification.
   /// Returned for Video Classification predictions.
   @$pb.TagNumber(9)
-  $4348.VideoClassificationAnnotation get videoClassification => $_getN(8);
+  $4349.VideoClassificationAnnotation get videoClassification => $_getN(8);
   @$pb.TagNumber(9)
-  set videoClassification($4348.VideoClassificationAnnotation v) { setField(9, v); }
+  set videoClassification($4349.VideoClassificationAnnotation v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasVideoClassification() => $_has(8);
   @$pb.TagNumber(9)
   void clearVideoClassification() => clearField(9);
   @$pb.TagNumber(9)
-  $4348.VideoClassificationAnnotation ensureVideoClassification() => $_ensure(8);
+  $4349.VideoClassificationAnnotation ensureVideoClassification() => $_ensure(8);
 
   /// Annotation details for Tables.
   @$pb.TagNumber(10)
-  $4354.TablesAnnotation get tables => $_getN(9);
+  $4355.TablesAnnotation get tables => $_getN(9);
   @$pb.TagNumber(10)
-  set tables($4354.TablesAnnotation v) { setField(10, v); }
+  set tables($4355.TablesAnnotation v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTables() => $_has(9);
   @$pb.TagNumber(10)
   void clearTables() => clearField(10);
   @$pb.TagNumber(10)
-  $4354.TablesAnnotation ensureTables() => $_ensure(9);
+  $4355.TablesAnnotation ensureTables() => $_ensure(9);
 }
 
 

@@ -13,21 +13,21 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/ad_group_ad_engine_status.pbenum.dart' as $4022;
-import '../enums/ad_group_ad_status.pbenum.dart' as $4021;
-import 'ad.pb.dart' as $4020;
+import '../enums/ad_group_ad_engine_status.pbenum.dart' as $4023;
+import '../enums/ad_group_ad_status.pbenum.dart' as $4022;
+import 'ad.pb.dart' as $4021;
 
 /// An ad group ad.
 class AdGroupAd extends $pb.GeneratedMessage {
   factory AdGroupAd({
     $core.String? resourceName,
-    $4021.AdGroupAdStatusEnum_AdGroupAdStatus? status,
-    $4020.Ad? ad,
+    $4022.AdGroupAdStatusEnum_AdGroupAdStatus? status,
+    $4021.Ad? ad,
     $core.Iterable<$core.String>? labels,
     $core.String? engineId,
     $core.String? lastModifiedTime,
     $core.String? creationTime,
-    $4022.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus? engineStatus,
+    $4023.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus? engineStatus,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -62,13 +62,13 @@ class AdGroupAd extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupAd', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4021.AdGroupAdStatusEnum_AdGroupAdStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4021.AdGroupAdStatusEnum_AdGroupAdStatus.UNSPECIFIED, valueOf: $4021.AdGroupAdStatusEnum_AdGroupAdStatus.valueOf, enumValues: $4021.AdGroupAdStatusEnum_AdGroupAdStatus.values)
-    ..aOM<$4020.Ad>(5, _omitFieldNames ? '' : 'ad', subBuilder: $4020.Ad.create)
+    ..e<$4022.AdGroupAdStatusEnum_AdGroupAdStatus>(3, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4022.AdGroupAdStatusEnum_AdGroupAdStatus.UNSPECIFIED, valueOf: $4022.AdGroupAdStatusEnum_AdGroupAdStatus.valueOf, enumValues: $4022.AdGroupAdStatusEnum_AdGroupAdStatus.values)
+    ..aOM<$4021.Ad>(5, _omitFieldNames ? '' : 'ad', subBuilder: $4021.Ad.create)
     ..pPS(10, _omitFieldNames ? '' : 'labels')
     ..aOS(11, _omitFieldNames ? '' : 'engineId')
     ..aOS(12, _omitFieldNames ? '' : 'lastModifiedTime')
     ..aOS(14, _omitFieldNames ? '' : 'creationTime')
-    ..e<$4022.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus>(15, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4022.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus.UNSPECIFIED, valueOf: $4022.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus.valueOf, enumValues: $4022.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus.values)
+    ..e<$4023.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus>(15, _omitFieldNames ? '' : 'engineStatus', $pb.PbFieldType.OE, defaultOrMaker: $4023.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus.UNSPECIFIED, valueOf: $4023.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus.valueOf, enumValues: $4023.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -108,9 +108,9 @@ class AdGroupAd extends $pb.GeneratedMessage {
 
   /// The status of the ad.
   @$pb.TagNumber(3)
-  $4021.AdGroupAdStatusEnum_AdGroupAdStatus get status => $_getN(1);
+  $4022.AdGroupAdStatusEnum_AdGroupAdStatus get status => $_getN(1);
   @$pb.TagNumber(3)
-  set status($4021.AdGroupAdStatusEnum_AdGroupAdStatus v) { setField(3, v); }
+  set status($4022.AdGroupAdStatusEnum_AdGroupAdStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(3)
@@ -118,15 +118,15 @@ class AdGroupAd extends $pb.GeneratedMessage {
 
   /// Immutable. The ad.
   @$pb.TagNumber(5)
-  $4020.Ad get ad => $_getN(2);
+  $4021.Ad get ad => $_getN(2);
   @$pb.TagNumber(5)
-  set ad($4020.Ad v) { setField(5, v); }
+  set ad($4021.Ad v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAd() => $_has(2);
   @$pb.TagNumber(5)
   void clearAd() => clearField(5);
   @$pb.TagNumber(5)
-  $4020.Ad ensureAd() => $_ensure(2);
+  $4021.Ad ensureAd() => $_ensure(2);
 
   /// Output only. The resource names of labels attached to this ad group ad.
   @$pb.TagNumber(10)
@@ -171,9 +171,9 @@ class AdGroupAd extends $pb.GeneratedMessage {
   /// Possible statuses (depending on the type of external account) include
   /// active, eligible, pending review, etc.
   @$pb.TagNumber(15)
-  $4022.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus get engineStatus => $_getN(7);
+  $4023.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus get engineStatus => $_getN(7);
   @$pb.TagNumber(15)
-  set engineStatus($4022.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus v) { setField(15, v); }
+  set engineStatus($4023.AdGroupAdEngineStatusEnum_AdGroupAdEngineStatus v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasEngineStatus() => $_has(7);
   @$pb.TagNumber(15)

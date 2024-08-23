@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'backup.pb.dart' as $1719;
 
 enum BackupScheduleSpec_ScheduleSpec {
@@ -97,12 +97,12 @@ enum BackupSchedule_BackupTypeSpec {
 class BackupSchedule extends $pb.GeneratedMessage {
   factory BackupSchedule({
     $core.String? name,
-    $1737.Duration? retentionDuration,
+    $1738.Duration? retentionDuration,
     $1719.CreateBackupEncryptionConfig? encryptionConfig,
     BackupScheduleSpec? spec,
     $1719.FullBackupSpec? fullBackupSpec,
     $1719.IncrementalBackupSpec? incrementalBackupSpec,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -140,12 +140,12 @@ class BackupSchedule extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupSchedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..oo(0, [7, 8])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'retentionDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'retentionDuration', subBuilder: $1738.Duration.create)
     ..aOM<$1719.CreateBackupEncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $1719.CreateBackupEncryptionConfig.create)
     ..aOM<BackupScheduleSpec>(6, _omitFieldNames ? '' : 'spec', subBuilder: BackupScheduleSpec.create)
     ..aOM<$1719.FullBackupSpec>(7, _omitFieldNames ? '' : 'fullBackupSpec', subBuilder: $1719.FullBackupSpec.create)
     ..aOM<$1719.IncrementalBackupSpec>(8, _omitFieldNames ? '' : 'incrementalBackupSpec', subBuilder: $1719.IncrementalBackupSpec.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -195,15 +195,15 @@ class BackupSchedule extends $pb.GeneratedMessage {
   /// and at most 366 days. The backup is eligible to be automatically deleted
   /// once the retention period has elapsed.
   @$pb.TagNumber(3)
-  $1737.Duration get retentionDuration => $_getN(1);
+  $1738.Duration get retentionDuration => $_getN(1);
   @$pb.TagNumber(3)
-  set retentionDuration($1737.Duration v) { setField(3, v); }
+  set retentionDuration($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRetentionDuration() => $_has(1);
   @$pb.TagNumber(3)
   void clearRetentionDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureRetentionDuration() => $_ensure(1);
+  $1738.Duration ensureRetentionDuration() => $_ensure(1);
 
   /// Optional. The encryption configuration that will be used to encrypt the
   /// backup. If this field is not specified, the backup will use the same
@@ -260,15 +260,15 @@ class BackupSchedule extends $pb.GeneratedMessage {
   /// If the schedule has never been updated, this field contains the timestamp
   /// when the schedule was first created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 }
 
 /// CrontabSpec can be used to specify the version time and frequency at
@@ -277,7 +277,7 @@ class CrontabSpec extends $pb.GeneratedMessage {
   factory CrontabSpec({
     $core.String? text,
     $core.String? timeZone,
-    $1737.Duration? creationWindow,
+    $1738.Duration? creationWindow,
   }) {
     final $result = create();
     if (text != null) {
@@ -298,7 +298,7 @@ class CrontabSpec extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CrontabSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'text')
     ..aOS(2, _omitFieldNames ? '' : 'timeZone')
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'creationWindow', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'creationWindow', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -363,15 +363,15 @@ class CrontabSpec extends $pb.GeneratedMessage {
   /// version_time specified in `schedule_spec.cron_spec` and version_time +
   /// `creation_window`.
   @$pb.TagNumber(3)
-  $1737.Duration get creationWindow => $_getN(2);
+  $1738.Duration get creationWindow => $_getN(2);
   @$pb.TagNumber(3)
-  set creationWindow($1737.Duration v) { setField(3, v); }
+  set creationWindow($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreationWindow() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreationWindow() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureCreationWindow() => $_ensure(2);
+  $1738.Duration ensureCreationWindow() => $_ensure(2);
 }
 
 /// The request for
@@ -730,7 +730,7 @@ class ListBackupSchedulesResponse extends $pb.GeneratedMessage {
 class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
   factory UpdateBackupScheduleRequest({
     BackupSchedule? backupSchedule,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (backupSchedule != null) {
@@ -747,7 +747,7 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBackupScheduleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOM<BackupSchedule>(1, _omitFieldNames ? '' : 'backupSchedule', subBuilder: BackupSchedule.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -792,15 +792,15 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
   /// specified; this prevents any future fields from being erased
   /// accidentally.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../api/launch_stage.pbenum.dart' as $1777;
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'condition.pb.dart' as $4603;
-import 'execution_template.pb.dart' as $4604;
+import '../../../api/launch_stage.pbenum.dart' as $1778;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'condition.pb.dart' as $4605;
+import 'execution_template.pb.dart' as $4606;
 import 'job.pbenum.dart';
-import 'k8s.min.pb.dart' as $4600;
-import 'vendor_settings.pb.dart' as $4601;
+import 'k8s.min.pb.dart' as $4602;
+import 'vendor_settings.pb.dart' as $4603;
 
 export 'job.pbenum.dart';
 
@@ -522,7 +522,7 @@ class RunJobRequest_Overrides_ContainerOverride extends $pb.GeneratedMessage {
   factory RunJobRequest_Overrides_ContainerOverride({
     $core.String? name,
     $core.Iterable<$core.String>? args,
-    $core.Iterable<$4600.EnvVar>? env,
+    $core.Iterable<$4602.EnvVar>? env,
     $core.bool? clearArgs,
   }) {
     final $result = create();
@@ -547,7 +547,7 @@ class RunJobRequest_Overrides_ContainerOverride extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunJobRequest.Overrides.ContainerOverride', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.run.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(2, _omitFieldNames ? '' : 'args')
-    ..pc<$4600.EnvVar>(3, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4600.EnvVar.create)
+    ..pc<$4602.EnvVar>(3, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: $4602.EnvVar.create)
     ..aOB(4, _omitFieldNames ? '' : 'clearArgs')
     ..hasRequiredFields = false
   ;
@@ -591,7 +591,7 @@ class RunJobRequest_Overrides_ContainerOverride extends $pb.GeneratedMessage {
   /// List of environment variables to set in the container. Will be merged
   /// with existing env for override.
   @$pb.TagNumber(3)
-  $core.List<$4600.EnvVar> get env => $_getList(2);
+  $core.List<$4602.EnvVar> get env => $_getList(2);
 
   /// Optional. True if the intention is to clear out existing args list.
   @$pb.TagNumber(4)
@@ -609,7 +609,7 @@ class RunJobRequest_Overrides extends $pb.GeneratedMessage {
   factory RunJobRequest_Overrides({
     $core.Iterable<RunJobRequest_Overrides_ContainerOverride>? containerOverrides,
     $core.int? taskCount,
-    $1737.Duration? timeout,
+    $1738.Duration? timeout,
   }) {
     final $result = create();
     if (containerOverrides != null) {
@@ -630,7 +630,7 @@ class RunJobRequest_Overrides extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunJobRequest.Overrides', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.run.v2'), createEmptyInstance: create)
     ..pc<RunJobRequest_Overrides_ContainerOverride>(1, _omitFieldNames ? '' : 'containerOverrides', $pb.PbFieldType.PM, subBuilder: RunJobRequest_Overrides_ContainerOverride.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'taskCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'timeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'timeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -674,15 +674,15 @@ class RunJobRequest_Overrides extends $pb.GeneratedMessage {
   /// actively try to mark it failed and kill associated containers. Will
   /// replace existing timeout_seconds value.
   @$pb.TagNumber(4)
-  $1737.Duration get timeout => $_getN(2);
+  $1738.Duration get timeout => $_getN(2);
   @$pb.TagNumber(4)
-  set timeout($1737.Duration v) { setField(4, v); }
+  set timeout($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(4)
   void clearTimeout() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureTimeout() => $_ensure(2);
+  $1738.Duration ensureTimeout() => $_ensure(2);
 }
 
 /// Request message to create a new Execution of a Job.
@@ -804,20 +804,20 @@ class Job extends $pb.GeneratedMessage {
     $fixnum.Int64? generation,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? annotations,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
+    $1776.Timestamp? expireTime,
     $core.String? creator,
     $core.String? lastModifier,
     $core.String? client,
     $core.String? clientVersion,
-    $1777.LaunchStage? launchStage,
-    $4601.BinaryAuthorization? binaryAuthorization,
-    $4604.ExecutionTemplate? template,
+    $1778.LaunchStage? launchStage,
+    $4603.BinaryAuthorization? binaryAuthorization,
+    $4606.ExecutionTemplate? template,
     $fixnum.Int64? observedGeneration,
-    $4603.Condition? terminalCondition,
-    $core.Iterable<$4603.Condition>? conditions,
+    $4605.Condition? terminalCondition,
+    $core.Iterable<$4605.Condition>? conditions,
     $core.int? executionCount,
     ExecutionReference? latestCreatedExecution,
     $core.bool? reconciling,
@@ -923,20 +923,20 @@ class Job extends $pb.GeneratedMessage {
     ..aInt64(3, _omitFieldNames ? '' : 'generation')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Job.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Job.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.run.v2'))
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'creator')
     ..aOS(11, _omitFieldNames ? '' : 'lastModifier')
     ..aOS(12, _omitFieldNames ? '' : 'client')
     ..aOS(13, _omitFieldNames ? '' : 'clientVersion')
-    ..e<$1777.LaunchStage>(14, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1777.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1777.LaunchStage.valueOf, enumValues: $1777.LaunchStage.values)
-    ..aOM<$4601.BinaryAuthorization>(15, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4601.BinaryAuthorization.create)
-    ..aOM<$4604.ExecutionTemplate>(16, _omitFieldNames ? '' : 'template', subBuilder: $4604.ExecutionTemplate.create)
+    ..e<$1778.LaunchStage>(14, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1778.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1778.LaunchStage.valueOf, enumValues: $1778.LaunchStage.values)
+    ..aOM<$4603.BinaryAuthorization>(15, _omitFieldNames ? '' : 'binaryAuthorization', subBuilder: $4603.BinaryAuthorization.create)
+    ..aOM<$4606.ExecutionTemplate>(16, _omitFieldNames ? '' : 'template', subBuilder: $4606.ExecutionTemplate.create)
     ..aInt64(17, _omitFieldNames ? '' : 'observedGeneration')
-    ..aOM<$4603.Condition>(18, _omitFieldNames ? '' : 'terminalCondition', subBuilder: $4603.Condition.create)
-    ..pc<$4603.Condition>(19, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4603.Condition.create)
+    ..aOM<$4605.Condition>(18, _omitFieldNames ? '' : 'terminalCondition', subBuilder: $4605.Condition.create)
+    ..pc<$4605.Condition>(19, _omitFieldNames ? '' : 'conditions', $pb.PbFieldType.PM, subBuilder: $4605.Condition.create)
     ..a<$core.int>(20, _omitFieldNames ? '' : 'executionCount', $pb.PbFieldType.O3)
     ..aOM<ExecutionReference>(22, _omitFieldNames ? '' : 'latestCreatedExecution', subBuilder: ExecutionReference.create)
     ..aOB(23, _omitFieldNames ? '' : 'reconciling')
@@ -1039,53 +1039,53 @@ class Job extends $pb.GeneratedMessage {
 
   /// Output only. The creation time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The last-modified time.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. The deletion time. It is only populated as a response to a
   /// Delete request.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   /// Output only. For a deleted resource, the time after which it will be
   /// permamently deleted.
   @$pb.TagNumber(9)
-  $1775.Timestamp get expireTime => $_getN(8);
+  $1776.Timestamp get expireTime => $_getN(8);
   @$pb.TagNumber(9)
-  set expireTime($1775.Timestamp v) { setField(9, v); }
+  set expireTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpireTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearExpireTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureExpireTime() => $_ensure(8);
+  $1776.Timestamp ensureExpireTime() => $_ensure(8);
 
   /// Output only. Email address of the authenticated creator.
   @$pb.TagNumber(10)
@@ -1138,9 +1138,9 @@ class Job extends $pb.GeneratedMessage {
   /// For example, if ALPHA is provided as input, but only BETA and GA-level
   /// features are used, this field will be BETA on output.
   @$pb.TagNumber(14)
-  $1777.LaunchStage get launchStage => $_getN(13);
+  $1778.LaunchStage get launchStage => $_getN(13);
   @$pb.TagNumber(14)
-  set launchStage($1777.LaunchStage v) { setField(14, v); }
+  set launchStage($1778.LaunchStage v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasLaunchStage() => $_has(13);
   @$pb.TagNumber(14)
@@ -1148,27 +1148,27 @@ class Job extends $pb.GeneratedMessage {
 
   /// Settings for the Binary Authorization feature.
   @$pb.TagNumber(15)
-  $4601.BinaryAuthorization get binaryAuthorization => $_getN(14);
+  $4603.BinaryAuthorization get binaryAuthorization => $_getN(14);
   @$pb.TagNumber(15)
-  set binaryAuthorization($4601.BinaryAuthorization v) { setField(15, v); }
+  set binaryAuthorization($4603.BinaryAuthorization v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasBinaryAuthorization() => $_has(14);
   @$pb.TagNumber(15)
   void clearBinaryAuthorization() => clearField(15);
   @$pb.TagNumber(15)
-  $4601.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(14);
+  $4603.BinaryAuthorization ensureBinaryAuthorization() => $_ensure(14);
 
   /// Required. The template used to create executions for this Job.
   @$pb.TagNumber(16)
-  $4604.ExecutionTemplate get template => $_getN(15);
+  $4606.ExecutionTemplate get template => $_getN(15);
   @$pb.TagNumber(16)
-  set template($4604.ExecutionTemplate v) { setField(16, v); }
+  set template($4606.ExecutionTemplate v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasTemplate() => $_has(15);
   @$pb.TagNumber(16)
   void clearTemplate() => clearField(16);
   @$pb.TagNumber(16)
-  $4604.ExecutionTemplate ensureTemplate() => $_ensure(15);
+  $4606.ExecutionTemplate ensureTemplate() => $_ensure(15);
 
   /// Output only. The generation of this Job. See comments in `reconciling` for
   /// additional information on reconciliation process in Cloud Run.
@@ -1184,22 +1184,22 @@ class Job extends $pb.GeneratedMessage {
   /// Output only. The Condition of this Job, containing its readiness status,
   /// and detailed error information in case it did not reach the desired state.
   @$pb.TagNumber(18)
-  $4603.Condition get terminalCondition => $_getN(17);
+  $4605.Condition get terminalCondition => $_getN(17);
   @$pb.TagNumber(18)
-  set terminalCondition($4603.Condition v) { setField(18, v); }
+  set terminalCondition($4605.Condition v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasTerminalCondition() => $_has(17);
   @$pb.TagNumber(18)
   void clearTerminalCondition() => clearField(18);
   @$pb.TagNumber(18)
-  $4603.Condition ensureTerminalCondition() => $_ensure(17);
+  $4605.Condition ensureTerminalCondition() => $_ensure(17);
 
   /// Output only. The Conditions of all other associated sub-resources. They
   /// contain additional diagnostics information in case the Job does not reach
   /// its desired state. See comments in `reconciling` for additional information
   /// on reconciliation process in Cloud Run.
   @$pb.TagNumber(19)
-  $core.List<$4603.Condition> get conditions => $_getList(18);
+  $core.List<$4605.Condition> get conditions => $_getList(18);
 
   /// Output only. Number of executions created for this job.
   @$pb.TagNumber(20)
@@ -1304,10 +1304,10 @@ class Job extends $pb.GeneratedMessage {
 class ExecutionReference extends $pb.GeneratedMessage {
   factory ExecutionReference({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? completionTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? completionTime,
     ExecutionReference_CompletionStatus? completionStatus,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? deleteTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1333,10 +1333,10 @@ class ExecutionReference extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecutionReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.run.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'completionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'completionTime', subBuilder: $1776.Timestamp.create)
     ..e<ExecutionReference_CompletionStatus>(4, _omitFieldNames ? '' : 'completionStatus', $pb.PbFieldType.OE, defaultOrMaker: ExecutionReference_CompletionStatus.COMPLETION_STATUS_UNSPECIFIED, valueOf: ExecutionReference_CompletionStatus.valueOf, enumValues: ExecutionReference_CompletionStatus.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1373,27 +1373,27 @@ class ExecutionReference extends $pb.GeneratedMessage {
 
   /// Creation timestamp of the execution.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Creation timestamp of the execution.
   @$pb.TagNumber(3)
-  $1775.Timestamp get completionTime => $_getN(2);
+  $1776.Timestamp get completionTime => $_getN(2);
   @$pb.TagNumber(3)
-  set completionTime($1775.Timestamp v) { setField(3, v); }
+  set completionTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCompletionTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCompletionTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCompletionTime() => $_ensure(2);
+  $1776.Timestamp ensureCompletionTime() => $_ensure(2);
 
   /// Status for the execution completion.
   @$pb.TagNumber(4)
@@ -1408,15 +1408,15 @@ class ExecutionReference extends $pb.GeneratedMessage {
   /// The deletion time of the execution. It is only
   /// populated as a response to a Delete request.
   @$pb.TagNumber(5)
-  $1775.Timestamp get deleteTime => $_getN(4);
+  $1776.Timestamp get deleteTime => $_getN(4);
   @$pb.TagNumber(5)
-  set deleteTime($1775.Timestamp v) { setField(5, v); }
+  set deleteTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDeleteTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearDeleteTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(4);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(4);
 }
 
 

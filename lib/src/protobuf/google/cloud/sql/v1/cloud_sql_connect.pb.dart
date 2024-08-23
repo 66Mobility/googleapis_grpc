@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'cloud_sql_connect.pbenum.dart';
 import 'cloud_sql_resources.pb.dart' as $1401;
 import 'cloud_sql_resources.pbenum.dart' as $1401;
@@ -26,7 +26,7 @@ class GetConnectSettingsRequest extends $pb.GeneratedMessage {
   factory GetConnectSettingsRequest({
     $core.String? instance,
     $core.String? project,
-    $1775.Timestamp? readTime,
+    $1776.Timestamp? readTime,
   }) {
     final $result = create();
     if (instance != null) {
@@ -47,7 +47,7 @@ class GetConnectSettingsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetConnectSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sql.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instance')
     ..aOS(2, _omitFieldNames ? '' : 'project')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -95,15 +95,15 @@ class GetConnectSettingsRequest extends $pb.GeneratedMessage {
   /// Optional. Optional snapshot read timestamp to trade freshness for
   /// performance.
   @$pb.TagNumber(7)
-  $1775.Timestamp get readTime => $_getN(2);
+  $1776.Timestamp get readTime => $_getN(2);
   @$pb.TagNumber(7)
-  set readTime($1775.Timestamp v) { setField(7, v); }
+  set readTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasReadTime() => $_has(2);
   @$pb.TagNumber(7)
   void clearReadTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureReadTime() => $_ensure(2);
+  $1776.Timestamp ensureReadTime() => $_ensure(2);
 }
 
 /// Connect settings retrieval response.
@@ -295,8 +295,8 @@ class GenerateEphemeralCertRequest extends $pb.GeneratedMessage {
     $core.String? project,
     $core.String? publicKey,
     $core.String? accessToken,
-    $1775.Timestamp? readTime,
-    $1737.Duration? validDuration,
+    $1776.Timestamp? readTime,
+    $1738.Duration? validDuration,
   }) {
     final $result = create();
     if (instance != null) {
@@ -328,8 +328,8 @@ class GenerateEphemeralCertRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'project')
     ..aOS(3, _omitFieldNames ? '' : 'publicKey')
     ..aOS(4, _omitFieldNames ? '' : 'accessToken')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'readTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(12, _omitFieldNames ? '' : 'validDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'readTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(12, _omitFieldNames ? '' : 'validDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -397,27 +397,27 @@ class GenerateEphemeralCertRequest extends $pb.GeneratedMessage {
   /// Optional. Optional snapshot read timestamp to trade freshness for
   /// performance.
   @$pb.TagNumber(7)
-  $1775.Timestamp get readTime => $_getN(4);
+  $1776.Timestamp get readTime => $_getN(4);
   @$pb.TagNumber(7)
-  set readTime($1775.Timestamp v) { setField(7, v); }
+  set readTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasReadTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearReadTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureReadTime() => $_ensure(4);
+  $1776.Timestamp ensureReadTime() => $_ensure(4);
 
   /// Optional. If set, it will contain the cert valid duration.
   @$pb.TagNumber(12)
-  $1737.Duration get validDuration => $_getN(5);
+  $1738.Duration get validDuration => $_getN(5);
   @$pb.TagNumber(12)
-  set validDuration($1737.Duration v) { setField(12, v); }
+  set validDuration($1738.Duration v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasValidDuration() => $_has(5);
   @$pb.TagNumber(12)
   void clearValidDuration() => clearField(12);
   @$pb.TagNumber(12)
-  $1737.Duration ensureValidDuration() => $_ensure(5);
+  $1738.Duration ensureValidDuration() => $_ensure(5);
 }
 
 /// Ephemeral certificate creation request.

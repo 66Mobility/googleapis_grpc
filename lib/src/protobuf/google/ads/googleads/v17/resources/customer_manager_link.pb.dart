@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/manager_link_status.pbenum.dart' as $3695;
+import '../enums/manager_link_status.pbenum.dart' as $3696;
 
 /// Represents customer-manager link relationship.
 class CustomerManagerLink extends $pb.GeneratedMessage {
   factory CustomerManagerLink({
     $core.String? resourceName,
-    $3695.ManagerLinkStatusEnum_ManagerLinkStatus? status,
+    $3696.ManagerLinkStatusEnum_ManagerLinkStatus? status,
     $core.String? managerCustomer,
     $fixnum.Int64? managerLinkId,
   }) {
@@ -45,7 +45,7 @@ class CustomerManagerLink extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerManagerLink', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3695.ManagerLinkStatusEnum_ManagerLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3695.ManagerLinkStatusEnum_ManagerLinkStatus.UNSPECIFIED, valueOf: $3695.ManagerLinkStatusEnum_ManagerLinkStatus.valueOf, enumValues: $3695.ManagerLinkStatusEnum_ManagerLinkStatus.values)
+    ..e<$3696.ManagerLinkStatusEnum_ManagerLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3696.ManagerLinkStatusEnum_ManagerLinkStatus.UNSPECIFIED, valueOf: $3696.ManagerLinkStatusEnum_ManagerLinkStatus.valueOf, enumValues: $3696.ManagerLinkStatusEnum_ManagerLinkStatus.values)
     ..aOS(6, _omitFieldNames ? '' : 'managerCustomer')
     ..aInt64(7, _omitFieldNames ? '' : 'managerLinkId')
     ..hasRequiredFields = false
@@ -86,9 +86,9 @@ class CustomerManagerLink extends $pb.GeneratedMessage {
 
   /// Status of the link between the customer and the manager.
   @$pb.TagNumber(5)
-  $3695.ManagerLinkStatusEnum_ManagerLinkStatus get status => $_getN(1);
+  $3696.ManagerLinkStatusEnum_ManagerLinkStatus get status => $_getN(1);
   @$pb.TagNumber(5)
-  set status($3695.ManagerLinkStatusEnum_ManagerLinkStatus v) { setField(5, v); }
+  set status($3696.ManagerLinkStatusEnum_ManagerLinkStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(5)

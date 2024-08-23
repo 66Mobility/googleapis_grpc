@@ -16,9 +16,9 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../iam/v1/policy.pb.dart' as $463;
 import '../../../longrunning/operations.pb.dart' as $17;
-import 'common.pb.dart' as $4441;
+import 'common.pb.dart' as $4443;
 import 'document.pb.dart' as $794;
-import 'histogram.pb.dart' as $4443;
+import 'histogram.pb.dart' as $4445;
 import 'rule_engine.pb.dart' as $797;
 
 /// Response message for DocumentService.CreateDocument.
@@ -26,7 +26,7 @@ class CreateDocumentResponse extends $pb.GeneratedMessage {
   factory CreateDocumentResponse({
     $794.Document? document,
     $797.RuleEngineOutput? ruleEngineOutput,
-    $4441.ResponseMetadata? metadata,
+    $4443.ResponseMetadata? metadata,
     $core.Iterable<$17.Operation>? longRunningOperations,
   }) {
     final $result = create();
@@ -51,7 +51,7 @@ class CreateDocumentResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDocumentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOM<$794.Document>(1, _omitFieldNames ? '' : 'document', subBuilder: $794.Document.create)
     ..aOM<$797.RuleEngineOutput>(2, _omitFieldNames ? '' : 'ruleEngineOutput', subBuilder: $797.RuleEngineOutput.create)
-    ..aOM<$4441.ResponseMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $4441.ResponseMetadata.create)
+    ..aOM<$4443.ResponseMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $4443.ResponseMetadata.create)
     ..pc<$17.Operation>(4, _omitFieldNames ? '' : 'longRunningOperations', $pb.PbFieldType.PM, subBuilder: $17.Operation.create)
     ..hasRequiredFields = false
   ;
@@ -107,15 +107,15 @@ class CreateDocumentResponse extends $pb.GeneratedMessage {
   /// Additional information for the API invocation, such as the request tracking
   /// id.
   @$pb.TagNumber(3)
-  $4441.ResponseMetadata get metadata => $_getN(2);
+  $4443.ResponseMetadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata($4441.ResponseMetadata v) { setField(3, v); }
+  set metadata($4443.ResponseMetadata v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $4441.ResponseMetadata ensureMetadata() => $_ensure(2);
+  $4443.ResponseMetadata ensureMetadata() => $_ensure(2);
 
   /// post-processing LROs
   @$pb.TagNumber(4)
@@ -127,7 +127,7 @@ class UpdateDocumentResponse extends $pb.GeneratedMessage {
   factory UpdateDocumentResponse({
     $794.Document? document,
     $797.RuleEngineOutput? ruleEngineOutput,
-    $4441.ResponseMetadata? metadata,
+    $4443.ResponseMetadata? metadata,
   }) {
     final $result = create();
     if (document != null) {
@@ -148,7 +148,7 @@ class UpdateDocumentResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDocumentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOM<$794.Document>(1, _omitFieldNames ? '' : 'document', subBuilder: $794.Document.create)
     ..aOM<$797.RuleEngineOutput>(2, _omitFieldNames ? '' : 'ruleEngineOutput', subBuilder: $797.RuleEngineOutput.create)
-    ..aOM<$4441.ResponseMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $4441.ResponseMetadata.create)
+    ..aOM<$4443.ResponseMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $4443.ResponseMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -203,15 +203,15 @@ class UpdateDocumentResponse extends $pb.GeneratedMessage {
   /// Additional information for the API invocation, such as the request tracking
   /// id.
   @$pb.TagNumber(3)
-  $4441.ResponseMetadata get metadata => $_getN(2);
+  $4443.ResponseMetadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata($4441.ResponseMetadata v) { setField(3, v); }
+  set metadata($4443.ResponseMetadata v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $4441.ResponseMetadata ensureMetadata() => $_ensure(2);
+  $4443.ResponseMetadata ensureMetadata() => $_ensure(2);
 }
 
 /// A text span in the search text snippet that represents a highlighted
@@ -460,8 +460,8 @@ class SearchDocumentsResponse extends $pb.GeneratedMessage {
     $core.Iterable<SearchDocumentsResponse_MatchingDocument>? matchingDocuments,
     $core.String? nextPageToken,
     $core.int? totalSize,
-    $4441.ResponseMetadata? metadata,
-    $core.Iterable<$4443.HistogramQueryResult>? histogramQueryResults,
+    $4443.ResponseMetadata? metadata,
+    $core.Iterable<$4445.HistogramQueryResult>? histogramQueryResults,
     $core.String? questionAnswer,
   }) {
     final $result = create();
@@ -493,8 +493,8 @@ class SearchDocumentsResponse extends $pb.GeneratedMessage {
     ..pc<SearchDocumentsResponse_MatchingDocument>(1, _omitFieldNames ? '' : 'matchingDocuments', $pb.PbFieldType.PM, subBuilder: SearchDocumentsResponse_MatchingDocument.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
-    ..aOM<$4441.ResponseMetadata>(4, _omitFieldNames ? '' : 'metadata', subBuilder: $4441.ResponseMetadata.create)
-    ..pc<$4443.HistogramQueryResult>(6, _omitFieldNames ? '' : 'histogramQueryResults', $pb.PbFieldType.PM, subBuilder: $4443.HistogramQueryResult.create)
+    ..aOM<$4443.ResponseMetadata>(4, _omitFieldNames ? '' : 'metadata', subBuilder: $4443.ResponseMetadata.create)
+    ..pc<$4445.HistogramQueryResult>(6, _omitFieldNames ? '' : 'histogramQueryResults', $pb.PbFieldType.PM, subBuilder: $4445.HistogramQueryResult.create)
     ..aOS(7, _omitFieldNames ? '' : 'questionAnswer')
     ..hasRequiredFields = false
   ;
@@ -556,20 +556,20 @@ class SearchDocumentsResponse extends $pb.GeneratedMessage {
   /// Additional information for the API invocation, such as the request tracking
   /// id.
   @$pb.TagNumber(4)
-  $4441.ResponseMetadata get metadata => $_getN(3);
+  $4443.ResponseMetadata get metadata => $_getN(3);
   @$pb.TagNumber(4)
-  set metadata($4441.ResponseMetadata v) { setField(4, v); }
+  set metadata($4443.ResponseMetadata v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMetadata() => $_has(3);
   @$pb.TagNumber(4)
   void clearMetadata() => clearField(4);
   @$pb.TagNumber(4)
-  $4441.ResponseMetadata ensureMetadata() => $_ensure(3);
+  $4443.ResponseMetadata ensureMetadata() => $_ensure(3);
 
   /// The histogram results that match with the specified
   /// [SearchDocumentsRequest.histogram_queries][google.cloud.contentwarehouse.v1.SearchDocumentsRequest.histogram_queries].
   @$pb.TagNumber(6)
-  $core.List<$4443.HistogramQueryResult> get histogramQueryResults => $_getList(4);
+  $core.List<$4445.HistogramQueryResult> get histogramQueryResults => $_getList(4);
 
   /// Experimental.
   /// Question answer from the query against the document.
@@ -587,7 +587,7 @@ class SearchDocumentsResponse extends $pb.GeneratedMessage {
 class FetchAclResponse extends $pb.GeneratedMessage {
   factory FetchAclResponse({
     $463.Policy? policy,
-    $4441.ResponseMetadata? metadata,
+    $4443.ResponseMetadata? metadata,
   }) {
     final $result = create();
     if (policy != null) {
@@ -604,7 +604,7 @@ class FetchAclResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchAclResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOM<$463.Policy>(1, _omitFieldNames ? '' : 'policy', subBuilder: $463.Policy.create)
-    ..aOM<$4441.ResponseMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4441.ResponseMetadata.create)
+    ..aOM<$4443.ResponseMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4443.ResponseMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -644,22 +644,22 @@ class FetchAclResponse extends $pb.GeneratedMessage {
   /// Additional information for the API invocation, such as the request tracking
   /// id.
   @$pb.TagNumber(2)
-  $4441.ResponseMetadata get metadata => $_getN(1);
+  $4443.ResponseMetadata get metadata => $_getN(1);
   @$pb.TagNumber(2)
-  set metadata($4441.ResponseMetadata v) { setField(2, v); }
+  set metadata($4443.ResponseMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4441.ResponseMetadata ensureMetadata() => $_ensure(1);
+  $4443.ResponseMetadata ensureMetadata() => $_ensure(1);
 }
 
 /// Response message for DocumentService.SetAcl.
 class SetAclResponse extends $pb.GeneratedMessage {
   factory SetAclResponse({
     $463.Policy? policy,
-    $4441.ResponseMetadata? metadata,
+    $4443.ResponseMetadata? metadata,
   }) {
     final $result = create();
     if (policy != null) {
@@ -676,7 +676,7 @@ class SetAclResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetAclResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.contentwarehouse.v1'), createEmptyInstance: create)
     ..aOM<$463.Policy>(1, _omitFieldNames ? '' : 'policy', subBuilder: $463.Policy.create)
-    ..aOM<$4441.ResponseMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4441.ResponseMetadata.create)
+    ..aOM<$4443.ResponseMetadata>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $4443.ResponseMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -716,15 +716,15 @@ class SetAclResponse extends $pb.GeneratedMessage {
   /// Additional information for the API invocation, such as the request tracking
   /// id.
   @$pb.TagNumber(2)
-  $4441.ResponseMetadata get metadata => $_getN(1);
+  $4443.ResponseMetadata get metadata => $_getN(1);
   @$pb.TagNumber(2)
-  set metadata($4441.ResponseMetadata v) { setField(2, v); }
+  set metadata($4443.ResponseMetadata v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $4441.ResponseMetadata ensureMetadata() => $_ensure(1);
+  $4443.ResponseMetadata ensureMetadata() => $_ensure(1);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'answer_record.pbenum.dart';
 import 'participant.pb.dart' as $913;
 
@@ -271,8 +271,8 @@ class AnswerFeedback extends $pb.GeneratedMessage {
     AgentAssistantFeedback? agentAssistantDetailFeedback,
     $core.bool? clicked,
     $core.bool? displayed,
-    $1775.Timestamp? clickTime,
-    $1775.Timestamp? displayTime,
+    $1776.Timestamp? clickTime,
+    $1776.Timestamp? displayTime,
   }) {
     final $result = create();
     if (correctnessLevel != null) {
@@ -309,8 +309,8 @@ class AnswerFeedback extends $pb.GeneratedMessage {
     ..aOM<AgentAssistantFeedback>(2, _omitFieldNames ? '' : 'agentAssistantDetailFeedback', subBuilder: AgentAssistantFeedback.create)
     ..aOB(3, _omitFieldNames ? '' : 'clicked')
     ..aOB(4, _omitFieldNames ? '' : 'displayed')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'clickTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'displayTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'clickTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'displayTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -386,34 +386,34 @@ class AnswerFeedback extends $pb.GeneratedMessage {
 
   /// Time when the answer/item was clicked.
   @$pb.TagNumber(5)
-  $1775.Timestamp get clickTime => $_getN(4);
+  $1776.Timestamp get clickTime => $_getN(4);
   @$pb.TagNumber(5)
-  set clickTime($1775.Timestamp v) { setField(5, v); }
+  set clickTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasClickTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearClickTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureClickTime() => $_ensure(4);
+  $1776.Timestamp ensureClickTime() => $_ensure(4);
 
   /// Time when the answer/item was displayed.
   @$pb.TagNumber(6)
-  $1775.Timestamp get displayTime => $_getN(5);
+  $1776.Timestamp get displayTime => $_getN(5);
   @$pb.TagNumber(6)
-  set displayTime($1775.Timestamp v) { setField(6, v); }
+  set displayTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDisplayTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearDisplayTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureDisplayTime() => $_ensure(5);
+  $1776.Timestamp ensureDisplayTime() => $_ensure(5);
 }
 
 /// Feedback for conversation summarization.
 class AgentAssistantFeedback_SummarizationFeedback extends $pb.GeneratedMessage {
   factory AgentAssistantFeedback_SummarizationFeedback({
-    $1775.Timestamp? startTimestamp,
-    $1775.Timestamp? submitTimestamp,
+    $1776.Timestamp? startTimestamp,
+    $1776.Timestamp? submitTimestamp,
     $core.String? summaryText,
     $core.Map<$core.String, $core.String>? textSections,
   }) {
@@ -437,8 +437,8 @@ class AgentAssistantFeedback_SummarizationFeedback extends $pb.GeneratedMessage 
   factory AgentAssistantFeedback_SummarizationFeedback.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AgentAssistantFeedback.SummarizationFeedback', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTimestamp', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'submitTimestamp', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTimestamp', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'submitTimestamp', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'summaryText')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'textSections', entryClassName: 'AgentAssistantFeedback.SummarizationFeedback.TextSectionsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dialogflow.v2beta1'))
     ..hasRequiredFields = false
@@ -467,27 +467,27 @@ class AgentAssistantFeedback_SummarizationFeedback extends $pb.GeneratedMessage 
 
   /// Timestamp when composing of the summary starts.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTimestamp => $_getN(0);
+  $1776.Timestamp get startTimestamp => $_getN(0);
   @$pb.TagNumber(1)
-  set startTimestamp($1775.Timestamp v) { setField(1, v); }
+  set startTimestamp($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTimestamp() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTimestamp() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTimestamp() => $_ensure(0);
+  $1776.Timestamp ensureStartTimestamp() => $_ensure(0);
 
   /// Timestamp when the summary was submitted.
   @$pb.TagNumber(2)
-  $1775.Timestamp get submitTimestamp => $_getN(1);
+  $1776.Timestamp get submitTimestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set submitTimestamp($1775.Timestamp v) { setField(2, v); }
+  set submitTimestamp($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSubmitTimestamp() => $_has(1);
   @$pb.TagNumber(2)
   void clearSubmitTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSubmitTimestamp() => $_ensure(1);
+  $1776.Timestamp ensureSubmitTimestamp() => $_ensure(1);
 
   /// Text of actual submitted summary.
   @$pb.TagNumber(3)
@@ -1034,7 +1034,7 @@ class ListAnswerRecordsResponse extends $pb.GeneratedMessage {
 class UpdateAnswerRecordRequest extends $pb.GeneratedMessage {
   factory UpdateAnswerRecordRequest({
     AnswerRecord? answerRecord,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (answerRecord != null) {
@@ -1051,7 +1051,7 @@ class UpdateAnswerRecordRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAnswerRecordRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.v2beta1'), createEmptyInstance: create)
     ..aOM<AnswerRecord>(1, _omitFieldNames ? '' : 'answerRecord', subBuilder: AnswerRecord.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1090,15 +1090,15 @@ class UpdateAnswerRecordRequest extends $pb.GeneratedMessage {
 
   /// Required. The mask to control which fields get updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

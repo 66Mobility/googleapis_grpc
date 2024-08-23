@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'vpc_flow_logs_config.pbenum.dart';
 
 export 'vpc_flow_logs_config.pbenum.dart';
@@ -35,8 +35,8 @@ class VpcFlowLogsConfig extends $pb.GeneratedMessage {
     VpcFlowLogsConfig_Metadata? metadata,
     $core.Iterable<$core.String>? metadataFields,
     $core.String? filterExpr,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? interconnectAttachment,
     $core.String? vpnTunnel,
@@ -102,8 +102,8 @@ class VpcFlowLogsConfig extends $pb.GeneratedMessage {
     ..e<VpcFlowLogsConfig_Metadata>(6, _omitFieldNames ? '' : 'metadata', $pb.PbFieldType.OE, defaultOrMaker: VpcFlowLogsConfig_Metadata.METADATA_UNSPECIFIED, valueOf: VpcFlowLogsConfig_Metadata.valueOf, enumValues: VpcFlowLogsConfig_Metadata.values)
     ..pPS(7, _omitFieldNames ? '' : 'metadataFields')
     ..aOS(8, _omitFieldNames ? '' : 'filterExpr')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'VpcFlowLogsConfig.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.networkmanagement.v1beta1'))
     ..aOS(102, _omitFieldNames ? '' : 'interconnectAttachment')
     ..aOS(103, _omitFieldNames ? '' : 'vpnTunnel')
@@ -221,27 +221,27 @@ class VpcFlowLogsConfig extends $pb.GeneratedMessage {
 
   /// Output only. The time the config was created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. The time the config was updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Optional. Resource labels to represent user-provided metadata.
   @$pb.TagNumber(11)

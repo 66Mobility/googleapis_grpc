@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pbenum.dart' as $4598;
+import 'common.pbenum.dart' as $4600;
 import 'search_service.pb.dart' as $1299;
 import 'serving_config.pbenum.dart';
 
@@ -39,7 +39,7 @@ class ServingConfig extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? ignoreControlIds,
     $core.String? enableCategoryFilterLevel,
     $core.Iterable<$core.String>? twowaySynonymsControlIds,
-    $core.Iterable<$4598.SolutionType>? solutionTypes,
+    $core.Iterable<$4600.SolutionType>? solutionTypes,
     ServingConfig_DiversityType? diversityType,
     $1299.SearchRequest_PersonalizationSpec? personalizationSpec,
     $core.bool? ignoreRecsDenylist,
@@ -128,7 +128,7 @@ class ServingConfig extends $pb.GeneratedMessage {
     ..pPS(15, _omitFieldNames ? '' : 'ignoreControlIds')
     ..aOS(16, _omitFieldNames ? '' : 'enableCategoryFilterLevel')
     ..pPS(18, _omitFieldNames ? '' : 'twowaySynonymsControlIds')
-    ..pc<$4598.SolutionType>(19, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4598.SolutionType.valueOf, enumValues: $4598.SolutionType.values, defaultEnumValue: $4598.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
+    ..pc<$4600.SolutionType>(19, _omitFieldNames ? '' : 'solutionTypes', $pb.PbFieldType.KE, valueOf: $4600.SolutionType.valueOf, enumValues: $4600.SolutionType.values, defaultEnumValue: $4600.SolutionType.SOLUTION_TYPE_UNSPECIFIED)
     ..e<ServingConfig_DiversityType>(20, _omitFieldNames ? '' : 'diversityType', $pb.PbFieldType.OE, defaultOrMaker: ServingConfig_DiversityType.DIVERSITY_TYPE_UNSPECIFIED, valueOf: ServingConfig_DiversityType.valueOf, enumValues: ServingConfig_DiversityType.values)
     ..aOM<$1299.SearchRequest_PersonalizationSpec>(21, _omitFieldNames ? '' : 'personalizationSpec', subBuilder: $1299.SearchRequest_PersonalizationSpec.create)
     ..aOB(24, _omitFieldNames ? '' : 'ignoreRecsDenylist')
@@ -419,7 +419,7 @@ class ServingConfig extends $pb.GeneratedMessage {
   /// Required. Immutable. Specifies the solution types that a serving config can
   /// be associated with. Currently we support setting only one type of solution.
   @$pb.TagNumber(19)
-  $core.List<$4598.SolutionType> get solutionTypes => $_getList(16);
+  $core.List<$4600.SolutionType> get solutionTypes => $_getList(16);
 
   /// What kind of diversity to use - data driven or rule based. If unset, the
   /// server behavior defaults to

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/date.pb.dart' as $1800;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/date.pb.dart' as $1801;
 import 'import_config.pbenum.dart';
 import 'product.pb.dart' as $1306;
 import 'user_event.pb.dart' as $1311;
@@ -130,7 +130,7 @@ class BigQuerySource extends $pb.GeneratedMessage {
     $core.String? gcsStagingDir,
     $core.String? dataSchema,
     $core.String? projectId,
-    $1800.Date? partitionDate,
+    $1801.Date? partitionDate,
   }) {
     final $result = create();
     if (datasetId != null) {
@@ -168,7 +168,7 @@ class BigQuerySource extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'gcsStagingDir')
     ..aOS(4, _omitFieldNames ? '' : 'dataSchema')
     ..aOS(5, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$1800.Date>(6, _omitFieldNames ? '' : 'partitionDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(6, _omitFieldNames ? '' : 'partitionDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -282,15 +282,15 @@ class BigQuerySource extends $pb.GeneratedMessage {
   ///  Only supported in
   ///  [ImportProductsRequest][google.cloud.retail.v2beta.ImportProductsRequest].
   @$pb.TagNumber(6)
-  $1800.Date get partitionDate => $_getN(5);
+  $1801.Date get partitionDate => $_getN(5);
   @$pb.TagNumber(6)
-  set partitionDate($1800.Date v) { setField(6, v); }
+  set partitionDate($1801.Date v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPartitionDate() => $_has(5);
   @$pb.TagNumber(6)
   void clearPartitionDate() => clearField(6);
   @$pb.TagNumber(6)
-  $1800.Date ensurePartitionDate() => $_ensure(5);
+  $1801.Date ensurePartitionDate() => $_ensure(5);
 }
 
 /// The inline source for the input config for ImportProducts method.
@@ -461,7 +461,7 @@ class ImportProductsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     ProductInputConfig? inputConfig,
     ImportErrorsConfig? errorsConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     ImportProductsRequest_ReconciliationMode? reconciliationMode,
   @$core.Deprecated('This field is deprecated.')
     $core.String? requestId,
@@ -500,7 +500,7 @@ class ImportProductsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<ProductInputConfig>(2, _omitFieldNames ? '' : 'inputConfig', subBuilder: ProductInputConfig.create)
     ..aOM<ImportErrorsConfig>(3, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ImportErrorsConfig.create)
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..e<ImportProductsRequest_ReconciliationMode>(5, _omitFieldNames ? '' : 'reconciliationMode', $pb.PbFieldType.OE, defaultOrMaker: ImportProductsRequest_ReconciliationMode.RECONCILIATION_MODE_UNSPECIFIED, valueOf: ImportProductsRequest_ReconciliationMode.valueOf, enumValues: ImportProductsRequest_ReconciliationMode.values)
     ..aOS(6, _omitFieldNames ? '' : 'requestId')
     ..aOS(7, _omitFieldNames ? '' : 'notificationPubsubTopic')
@@ -570,15 +570,15 @@ class ImportProductsRequest extends $pb.GeneratedMessage {
   /// not set, all fields are updated. If provided, only the existing product
   /// fields are updated. Missing products will not be created.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The mode of reconciliation between existing products and the products to be
   /// imported. Defaults to
@@ -1094,8 +1094,8 @@ class CompletionDataInputConfig extends $pb.GeneratedMessage {
 /// returned by the google.longrunning.Operation.metadata field.
 class ImportMetadata extends $pb.GeneratedMessage {
   factory ImportMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $fixnum.Int64? successCount,
     $fixnum.Int64? failureCount,
   @$core.Deprecated('This field is deprecated.')
@@ -1129,8 +1129,8 @@ class ImportMetadata extends $pb.GeneratedMessage {
   factory ImportMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aInt64(3, _omitFieldNames ? '' : 'successCount')
     ..aInt64(4, _omitFieldNames ? '' : 'failureCount')
     ..aOS(5, _omitFieldNames ? '' : 'requestId')
@@ -1161,28 +1161,28 @@ class ImportMetadata extends $pb.GeneratedMessage {
 
   /// Operation create time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Operation last update time. If the operation is done, this is also the
   /// finish time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($1775.Timestamp v) { setField(2, v); }
+  set updateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   /// Count of entries that were processed successfully.
   @$pb.TagNumber(3)
@@ -1239,7 +1239,7 @@ class ImportMetadata extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ImportProductsResponse extends $pb.GeneratedMessage {
   factory ImportProductsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorsConfig? errorsConfig,
   }) {
     final $result = create();
@@ -1256,7 +1256,7 @@ class ImportProductsResponse extends $pb.GeneratedMessage {
   factory ImportProductsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportProductsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorsConfig>(2, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ImportErrorsConfig.create)
     ..hasRequiredFields = false
   ;
@@ -1284,7 +1284,7 @@ class ImportProductsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Echoes the destination for the complete errors in the request if set.
   @$pb.TagNumber(2)
@@ -1304,7 +1304,7 @@ class ImportProductsResponse extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation was successful.
 class ImportUserEventsResponse extends $pb.GeneratedMessage {
   factory ImportUserEventsResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
     ImportErrorsConfig? errorsConfig,
     UserEventImportSummary? importSummary,
   }) {
@@ -1325,7 +1325,7 @@ class ImportUserEventsResponse extends $pb.GeneratedMessage {
   factory ImportUserEventsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportUserEventsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..aOM<ImportErrorsConfig>(2, _omitFieldNames ? '' : 'errorsConfig', subBuilder: ImportErrorsConfig.create)
     ..aOM<UserEventImportSummary>(3, _omitFieldNames ? '' : 'importSummary', subBuilder: UserEventImportSummary.create)
     ..hasRequiredFields = false
@@ -1354,7 +1354,7 @@ class ImportUserEventsResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 
   /// Echoes the destination for the complete errors if this field was set in
   /// the request.
@@ -1457,7 +1457,7 @@ class UserEventImportSummary extends $pb.GeneratedMessage {
 /// google.longrunning.Operations.response field if the operation is successful.
 class ImportCompletionDataResponse extends $pb.GeneratedMessage {
   factory ImportCompletionDataResponse({
-    $core.Iterable<$1795.Status>? errorSamples,
+    $core.Iterable<$1796.Status>? errorSamples,
   }) {
     final $result = create();
     if (errorSamples != null) {
@@ -1470,7 +1470,7 @@ class ImportCompletionDataResponse extends $pb.GeneratedMessage {
   factory ImportCompletionDataResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportCompletionDataResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
-    ..pc<$1795.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(1, _omitFieldNames ? '' : 'errorSamples', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1497,7 +1497,7 @@ class ImportCompletionDataResponse extends $pb.GeneratedMessage {
 
   /// A sample of errors encountered while processing the request.
   @$pb.TagNumber(1)
-  $core.List<$1795.Status> get errorSamples => $_getList(0);
+  $core.List<$1796.Status> get errorSamples => $_getList(0);
 }
 
 

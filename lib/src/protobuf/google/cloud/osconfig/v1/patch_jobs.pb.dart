@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'osconfig_common.pb.dart' as $4583;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'osconfig_common.pb.dart' as $4585;
 import 'patch_jobs.pbenum.dart';
 
 export 'patch_jobs.pbenum.dart';
@@ -28,7 +28,7 @@ class ExecutePatchJobRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? description,
     PatchConfig? patchConfig,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     $core.bool? dryRun,
     PatchInstanceFilter? instanceFilter,
     $core.String? displayName,
@@ -69,7 +69,7 @@ class ExecutePatchJobRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<PatchConfig>(4, _omitFieldNames ? '' : 'patchConfig', subBuilder: PatchConfig.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aOB(6, _omitFieldNames ? '' : 'dryRun')
     ..aOM<PatchInstanceFilter>(7, _omitFieldNames ? '' : 'instanceFilter', subBuilder: PatchInstanceFilter.create)
     ..aOS(8, _omitFieldNames ? '' : 'displayName')
@@ -135,15 +135,15 @@ class ExecutePatchJobRequest extends $pb.GeneratedMessage {
   /// Duration of the patch job. After the duration ends, the patch job
   /// times out.
   @$pb.TagNumber(5)
-  $1737.Duration get duration => $_getN(3);
+  $1738.Duration get duration => $_getN(3);
   @$pb.TagNumber(5)
-  set duration($1737.Duration v) { setField(5, v); }
+  set duration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(5)
   void clearDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureDuration() => $_ensure(3);
+  $1738.Duration ensureDuration() => $_ensure(3);
 
   /// If this patch is a dry-run only, instances are contacted but
   /// will do nothing.
@@ -963,11 +963,11 @@ class PatchJob extends $pb.GeneratedMessage {
   factory PatchJob({
     $core.String? name,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     PatchJob_State? state,
     PatchConfig? patchConfig,
-    $1737.Duration? duration,
+    $1738.Duration? duration,
     PatchJob_InstanceDetailsSummary? instanceDetailsSummary,
     $core.bool? dryRun,
     $core.String? errorMessage,
@@ -1032,11 +1032,11 @@ class PatchJob extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PatchJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<PatchJob_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: PatchJob_State.STATE_UNSPECIFIED, valueOf: PatchJob_State.valueOf, enumValues: PatchJob_State.values)
     ..aOM<PatchConfig>(7, _omitFieldNames ? '' : 'patchConfig', subBuilder: PatchConfig.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
     ..aOM<PatchJob_InstanceDetailsSummary>(9, _omitFieldNames ? '' : 'instanceDetailsSummary', subBuilder: PatchJob_InstanceDetailsSummary.create)
     ..aOB(10, _omitFieldNames ? '' : 'dryRun')
     ..aOS(11, _omitFieldNames ? '' : 'errorMessage')
@@ -1093,27 +1093,27 @@ class PatchJob extends $pb.GeneratedMessage {
 
   /// Time this patch job was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Last time this patch job was updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The current state of the PatchJob.
   @$pb.TagNumber(5)
@@ -1140,15 +1140,15 @@ class PatchJob extends $pb.GeneratedMessage {
   /// Duration of the patch job. After the duration ends, the
   /// patch job times out.
   @$pb.TagNumber(8)
-  $1737.Duration get duration => $_getN(6);
+  $1738.Duration get duration => $_getN(6);
   @$pb.TagNumber(8)
-  set duration($1737.Duration v) { setField(8, v); }
+  set duration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDuration() => $_has(6);
   @$pb.TagNumber(8)
   void clearDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureDuration() => $_ensure(6);
+  $1738.Duration ensureDuration() => $_ensure(6);
 
   /// Summary of instance details.
   @$pb.TagNumber(9)
@@ -2316,7 +2316,7 @@ class PatchInstanceFilter extends $pb.GeneratedMessage {
 class PatchRollout extends $pb.GeneratedMessage {
   factory PatchRollout({
     PatchRollout_Mode? mode,
-    $4583.FixedOrPercent? disruptionBudget,
+    $4585.FixedOrPercent? disruptionBudget,
   }) {
     final $result = create();
     if (mode != null) {
@@ -2333,7 +2333,7 @@ class PatchRollout extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PatchRollout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1'), createEmptyInstance: create)
     ..e<PatchRollout_Mode>(1, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: PatchRollout_Mode.MODE_UNSPECIFIED, valueOf: PatchRollout_Mode.valueOf, enumValues: PatchRollout_Mode.values)
-    ..aOM<$4583.FixedOrPercent>(2, _omitFieldNames ? '' : 'disruptionBudget', subBuilder: $4583.FixedOrPercent.create)
+    ..aOM<$4585.FixedOrPercent>(2, _omitFieldNames ? '' : 'disruptionBudget', subBuilder: $4585.FixedOrPercent.create)
     ..hasRequiredFields = false
   ;
 
@@ -2392,15 +2392,15 @@ class PatchRollout extends $pb.GeneratedMessage {
   ///  successfully, patching begins with 10 VMs at a time in the next zone. If 10
   ///  VMs in the next zone fail to patch, the patch job stops.
   @$pb.TagNumber(2)
-  $4583.FixedOrPercent get disruptionBudget => $_getN(1);
+  $4585.FixedOrPercent get disruptionBudget => $_getN(1);
   @$pb.TagNumber(2)
-  set disruptionBudget($4583.FixedOrPercent v) { setField(2, v); }
+  set disruptionBudget($4585.FixedOrPercent v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDisruptionBudget() => $_has(1);
   @$pb.TagNumber(2)
   void clearDisruptionBudget() => clearField(2);
   @$pb.TagNumber(2)
-  $4583.FixedOrPercent ensureDisruptionBudget() => $_ensure(1);
+  $4585.FixedOrPercent ensureDisruptionBudget() => $_ensure(1);
 }
 
 

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../securitycenter/v1/access.pb.dart' as $4621;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../securitycenter/v1/access.pb.dart' as $4623;
 
 /// Used to reference a specific Cloud Logging LogEntry.
 class SensitiveAction_SourceLogId extends $pb.GeneratedMessage {
   factory SensitiveAction_SourceLogId({
     $core.String? resourceContainer,
-    $1775.Timestamp? logTime,
+    $1776.Timestamp? logTime,
     $core.String? insertId,
     $core.String? queryUri,
   }) {
@@ -45,7 +45,7 @@ class SensitiveAction_SourceLogId extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SensitiveAction.SourceLogId', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sensitiveaction.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceContainer')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'logTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'logTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'insertId')
     ..aOS(4, _omitFieldNames ? '' : 'queryUri')
     ..hasRequiredFields = false
@@ -85,15 +85,15 @@ class SensitiveAction_SourceLogId extends $pb.GeneratedMessage {
 
   /// The timestamp of the LogEntry.
   @$pb.TagNumber(2)
-  $1775.Timestamp get logTime => $_getN(1);
+  $1776.Timestamp get logTime => $_getN(1);
   @$pb.TagNumber(2)
-  set logTime($1775.Timestamp v) { setField(2, v); }
+  set logTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLogTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLogTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureLogTime() => $_ensure(1);
+  $1776.Timestamp ensureLogTime() => $_ensure(1);
 
   /// The insert_id of the LogEntry.
   @$pb.TagNumber(3)
@@ -121,11 +121,11 @@ class SensitiveAction_SourceLogId extends $pb.GeneratedMessage {
 class SensitiveAction extends $pb.GeneratedMessage {
   factory SensitiveAction({
     $core.String? actionType,
-    $1775.Timestamp? actionTime,
+    $1776.Timestamp? actionTime,
     $core.Iterable<$core.String>? affectedResources,
     $core.Iterable<SensitiveAction_SourceLogId>? sourceLogIds,
     $core.String? learnMoreUri,
-    $4621.Access? access,
+    $4623.Access? access,
   }) {
     final $result = create();
     if (actionType != null) {
@@ -154,11 +154,11 @@ class SensitiveAction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SensitiveAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.sensitiveaction.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'actionType')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'actionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'actionTime', subBuilder: $1776.Timestamp.create)
     ..pPS(3, _omitFieldNames ? '' : 'affectedResources')
     ..pc<SensitiveAction_SourceLogId>(4, _omitFieldNames ? '' : 'sourceLogIds', $pb.PbFieldType.PM, subBuilder: SensitiveAction_SourceLogId.create)
     ..aOS(5, _omitFieldNames ? '' : 'learnMoreUri')
-    ..aOM<$4621.Access>(6, _omitFieldNames ? '' : 'access', subBuilder: $4621.Access.create)
+    ..aOM<$4623.Access>(6, _omitFieldNames ? '' : 'access', subBuilder: $4623.Access.create)
     ..hasRequiredFields = false
   ;
 
@@ -195,15 +195,15 @@ class SensitiveAction extends $pb.GeneratedMessage {
 
   /// The time this action was detected.
   @$pb.TagNumber(2)
-  $1775.Timestamp get actionTime => $_getN(1);
+  $1776.Timestamp get actionTime => $_getN(1);
   @$pb.TagNumber(2)
-  set actionTime($1775.Timestamp v) { setField(2, v); }
+  set actionTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasActionTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearActionTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureActionTime() => $_ensure(1);
+  $1776.Timestamp ensureActionTime() => $_ensure(1);
 
   /// GCP resources that are involved in the action.
   @$pb.TagNumber(3)
@@ -225,15 +225,15 @@ class SensitiveAction extends $pb.GeneratedMessage {
 
   /// Access details associated to the sensitive action.
   @$pb.TagNumber(6)
-  $4621.Access get access => $_getN(5);
+  $4623.Access get access => $_getN(5);
   @$pb.TagNumber(6)
-  set access($4621.Access v) { setField(6, v); }
+  set access($4623.Access v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAccess() => $_has(5);
   @$pb.TagNumber(6)
   void clearAccess() => clearField(6);
   @$pb.TagNumber(6)
-  $4621.Access ensureAccess() => $_ensure(5);
+  $4623.Access ensureAccess() => $_ensure(5);
 }
 
 

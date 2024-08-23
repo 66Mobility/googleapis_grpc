@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/customer_label.pb.dart' as $3100;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/customer_label.pb.dart' as $3101;
 
 /// Request message for
 /// [CustomerLabelService.MutateCustomerLabels][google.ads.googleads.v16.services.CustomerLabelService.MutateCustomerLabels].
@@ -123,7 +123,7 @@ enum CustomerLabelOperation_Operation {
 /// A single operation (create, remove) on a customer-label relationship.
 class CustomerLabelOperation extends $pb.GeneratedMessage {
   factory CustomerLabelOperation({
-    $3100.CustomerLabel? create_1,
+    $3101.CustomerLabel? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -146,7 +146,7 @@ class CustomerLabelOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerLabelOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3100.CustomerLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3100.CustomerLabel.create)
+    ..aOM<$3101.CustomerLabel>(1, _omitFieldNames ? '' : 'create', subBuilder: $3101.CustomerLabel.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -178,15 +178,15 @@ class CustomerLabelOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new customer-label
   /// relationship.
   @$pb.TagNumber(1)
-  $3100.CustomerLabel get create_1 => $_getN(0);
+  $3101.CustomerLabel get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3100.CustomerLabel v) { setField(1, v); }
+  set create_1($3101.CustomerLabel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3100.CustomerLabel ensureCreate_1() => $_ensure(0);
+  $3101.CustomerLabel ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the customer-label relationship
   ///  being removed, in this format:
@@ -206,7 +206,7 @@ class CustomerLabelOperation extends $pb.GeneratedMessage {
 class MutateCustomerLabelsResponse extends $pb.GeneratedMessage {
   factory MutateCustomerLabelsResponse({
     $core.Iterable<MutateCustomerLabelResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -223,7 +223,7 @@ class MutateCustomerLabelsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerLabelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.services'), createEmptyInstance: create)
     ..pc<MutateCustomerLabelResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateCustomerLabelResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -257,15 +257,15 @@ class MutateCustomerLabelsResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for a customer label mutate.

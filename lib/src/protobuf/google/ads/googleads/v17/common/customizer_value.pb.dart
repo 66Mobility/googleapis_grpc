@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/customizer_attribute_type.pbenum.dart' as $3306;
+import '../enums/customizer_attribute_type.pbenum.dart' as $3307;
 
 /// A customizer value that is referenced in customizer linkage entities
 /// like CustomerCustomizer, CampaignCustomizer, etc.
 class CustomizerValue extends $pb.GeneratedMessage {
   factory CustomizerValue({
-    $3306.CustomizerAttributeTypeEnum_CustomizerAttributeType? type,
+    $3307.CustomizerAttributeTypeEnum_CustomizerAttributeType? type,
     $core.String? stringValue,
   }) {
     final $result = create();
@@ -36,7 +36,7 @@ class CustomizerValue extends $pb.GeneratedMessage {
   factory CustomizerValue.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomizerValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.common'), createEmptyInstance: create)
-    ..e<$3306.CustomizerAttributeTypeEnum_CustomizerAttributeType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3306.CustomizerAttributeTypeEnum_CustomizerAttributeType.UNSPECIFIED, valueOf: $3306.CustomizerAttributeTypeEnum_CustomizerAttributeType.valueOf, enumValues: $3306.CustomizerAttributeTypeEnum_CustomizerAttributeType.values)
+    ..e<$3307.CustomizerAttributeTypeEnum_CustomizerAttributeType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3307.CustomizerAttributeTypeEnum_CustomizerAttributeType.UNSPECIFIED, valueOf: $3307.CustomizerAttributeTypeEnum_CustomizerAttributeType.valueOf, enumValues: $3307.CustomizerAttributeTypeEnum_CustomizerAttributeType.values)
     ..aOS(2, _omitFieldNames ? '' : 'stringValue')
     ..hasRequiredFields = false
   ;
@@ -66,9 +66,9 @@ class CustomizerValue extends $pb.GeneratedMessage {
   /// attribute type. The string_value content must match the constraints
   /// associated with the type.
   @$pb.TagNumber(1)
-  $3306.CustomizerAttributeTypeEnum_CustomizerAttributeType get type => $_getN(0);
+  $3307.CustomizerAttributeTypeEnum_CustomizerAttributeType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type($3306.CustomizerAttributeTypeEnum_CustomizerAttributeType v) { setField(1, v); }
+  set type($3307.CustomizerAttributeTypeEnum_CustomizerAttributeType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)

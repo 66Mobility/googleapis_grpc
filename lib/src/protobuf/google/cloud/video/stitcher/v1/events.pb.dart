@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
+import '../../../../protobuf/duration.pb.dart' as $1738;
 import 'events.pbenum.dart';
 
 export 'events.pbenum.dart';
@@ -24,7 +24,7 @@ class Event extends $pb.GeneratedMessage {
     Event_EventType? type,
     $core.String? uri,
     $core.String? id,
-    $1737.Duration? offset,
+    $1738.Duration? offset,
   }) {
     final $result = create();
     if (type != null) {
@@ -49,7 +49,7 @@ class Event extends $pb.GeneratedMessage {
     ..e<Event_EventType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Event_EventType.EVENT_TYPE_UNSPECIFIED, valueOf: Event_EventType.valueOf, enumValues: Event_EventType.values)
     ..aOS(2, _omitFieldNames ? '' : 'uri')
     ..aOS(3, _omitFieldNames ? '' : 'id')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'offset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'offset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -106,22 +106,22 @@ class Event extends $pb.GeneratedMessage {
 
   /// The offset in seconds if the event type is `PROGRESS`.
   @$pb.TagNumber(4)
-  $1737.Duration get offset => $_getN(3);
+  $1738.Duration get offset => $_getN(3);
   @$pb.TagNumber(4)
-  set offset($1737.Duration v) { setField(4, v); }
+  set offset($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasOffset() => $_has(3);
   @$pb.TagNumber(4)
   void clearOffset() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureOffset() => $_ensure(3);
+  $1738.Duration ensureOffset() => $_ensure(3);
 }
 
 /// Indicates a time in which a list of events should be triggered
 /// during media playback.
 class ProgressEvent extends $pb.GeneratedMessage {
   factory ProgressEvent({
-    $1737.Duration? timeOffset,
+    $1738.Duration? timeOffset,
     $core.Iterable<Event>? events,
   }) {
     final $result = create();
@@ -138,7 +138,7 @@ class ProgressEvent extends $pb.GeneratedMessage {
   factory ProgressEvent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProgressEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.stitcher.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
     ..pc<Event>(2, _omitFieldNames ? '' : 'events', $pb.PbFieldType.PM, subBuilder: Event.create)
     ..hasRequiredFields = false
   ;
@@ -167,15 +167,15 @@ class ProgressEvent extends $pb.GeneratedMessage {
   /// The time when the following tracking events occurs. The time is in
   /// seconds relative to the start of the VOD asset.
   @$pb.TagNumber(1)
-  $1737.Duration get timeOffset => $_getN(0);
+  $1738.Duration get timeOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set timeOffset($1737.Duration v) { setField(1, v); }
+  set timeOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureTimeOffset() => $_ensure(0);
+  $1738.Duration ensureTimeOffset() => $_ensure(0);
 
   /// The list of progress tracking events for the ad break. These can be of
   /// the following IAB types: `BREAK_START`, `BREAK_END`, `IMPRESSION`,

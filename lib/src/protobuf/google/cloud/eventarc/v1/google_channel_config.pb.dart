@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// A GoogleChannelConfig is a resource that stores the custom settings
 /// respected by Eventarc first-party triggers in the matching region.
@@ -23,7 +23,7 @@ import '../../../protobuf/timestamp.pb.dart' as $1775;
 class GoogleChannelConfig extends $pb.GeneratedMessage {
   factory GoogleChannelConfig({
     $core.String? name,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? cryptoKeyName,
   }) {
     final $result = create();
@@ -44,7 +44,7 @@ class GoogleChannelConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GoogleChannelConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.eventarc.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'cryptoKeyName')
     ..hasRequiredFields = false
   ;
@@ -83,15 +83,15 @@ class GoogleChannelConfig extends $pb.GeneratedMessage {
 
   /// Output only. The last-modified time.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(1);
+  $1776.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(1);
 
   ///  Optional. Resource name of a KMS crypto key (managed by the user) used to
   ///  encrypt/decrypt their event data.

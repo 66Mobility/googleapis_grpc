@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/product_availability.pbenum.dart' as $3781;
-import '../enums/product_channel.pbenum.dart' as $3263;
-import '../enums/product_channel_exclusivity.pbenum.dart' as $3264;
-import '../enums/product_condition.pbenum.dart' as $3265;
-import '../enums/product_issue_severity.pbenum.dart' as $3783;
-import '../enums/product_status.pbenum.dart' as $3782;
+import '../enums/product_availability.pbenum.dart' as $3782;
+import '../enums/product_channel.pbenum.dart' as $3264;
+import '../enums/product_channel_exclusivity.pbenum.dart' as $3265;
+import '../enums/product_condition.pbenum.dart' as $3266;
+import '../enums/product_issue_severity.pbenum.dart' as $3784;
+import '../enums/product_status.pbenum.dart' as $3783;
 
 /// An issue affecting whether a product can show in ads.
 class ShoppingProduct_ProductIssue extends $pb.GeneratedMessage {
   factory ShoppingProduct_ProductIssue({
     $core.String? errorCode,
-    $3783.ProductIssueSeverityEnum_ProductIssueSeverity? adsSeverity,
+    $3784.ProductIssueSeverityEnum_ProductIssueSeverity? adsSeverity,
     $core.String? attributeName,
     $core.String? description,
     $core.String? detail,
@@ -62,7 +62,7 @@ class ShoppingProduct_ProductIssue extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShoppingProduct.ProductIssue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'errorCode')
-    ..e<$3783.ProductIssueSeverityEnum_ProductIssueSeverity>(2, _omitFieldNames ? '' : 'adsSeverity', $pb.PbFieldType.OE, defaultOrMaker: $3783.ProductIssueSeverityEnum_ProductIssueSeverity.UNSPECIFIED, valueOf: $3783.ProductIssueSeverityEnum_ProductIssueSeverity.valueOf, enumValues: $3783.ProductIssueSeverityEnum_ProductIssueSeverity.values)
+    ..e<$3784.ProductIssueSeverityEnum_ProductIssueSeverity>(2, _omitFieldNames ? '' : 'adsSeverity', $pb.PbFieldType.OE, defaultOrMaker: $3784.ProductIssueSeverityEnum_ProductIssueSeverity.UNSPECIFIED, valueOf: $3784.ProductIssueSeverityEnum_ProductIssueSeverity.valueOf, enumValues: $3784.ProductIssueSeverityEnum_ProductIssueSeverity.values)
     ..aOS(3, _omitFieldNames ? '' : 'attributeName')
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..aOS(5, _omitFieldNames ? '' : 'detail')
@@ -104,9 +104,9 @@ class ShoppingProduct_ProductIssue extends $pb.GeneratedMessage {
 
   /// Output only. The severity of the issue in Google Ads.
   @$pb.TagNumber(2)
-  $3783.ProductIssueSeverityEnum_ProductIssueSeverity get adsSeverity => $_getN(1);
+  $3784.ProductIssueSeverityEnum_ProductIssueSeverity get adsSeverity => $_getN(1);
   @$pb.TagNumber(2)
-  set adsSeverity($3783.ProductIssueSeverityEnum_ProductIssueSeverity v) { setField(2, v); }
+  set adsSeverity($3784.ProductIssueSeverityEnum_ProductIssueSeverity v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAdsSeverity() => $_has(1);
   @$pb.TagNumber(2)
@@ -195,7 +195,7 @@ class ShoppingProduct extends $pb.GeneratedMessage {
   factory ShoppingProduct({
     $core.String? resourceName,
     $fixnum.Int64? merchantCenterId,
-    $3263.ProductChannelEnum_ProductChannel? channel,
+    $3264.ProductChannelEnum_ProductChannel? channel,
     $core.String? languageCode,
     $core.String? feedLabel,
     $core.String? itemId,
@@ -204,9 +204,9 @@ class ShoppingProduct extends $pb.GeneratedMessage {
     $core.String? brand,
     $fixnum.Int64? priceMicros,
     $core.String? currencyCode,
-    $3264.ProductChannelExclusivityEnum_ProductChannelExclusivity? channelExclusivity,
-    $3265.ProductConditionEnum_ProductCondition? condition,
-    $3781.ProductAvailabilityEnum_ProductAvailability? availability,
+    $3265.ProductChannelExclusivityEnum_ProductChannelExclusivity? channelExclusivity,
+    $3266.ProductConditionEnum_ProductCondition? condition,
+    $3782.ProductAvailabilityEnum_ProductAvailability? availability,
     $core.Iterable<$core.String>? targetCountries,
     $core.String? customAttribute0,
     $core.String? customAttribute1,
@@ -224,7 +224,7 @@ class ShoppingProduct extends $pb.GeneratedMessage {
     $core.String? productTypeLevel4,
     $core.String? productTypeLevel5,
     $fixnum.Int64? effectiveMaxCpcMicros,
-    $3782.ProductStatusEnum_ProductStatus? status,
+    $3783.ProductStatusEnum_ProductStatus? status,
     $core.Iterable<ShoppingProduct_ProductIssue>? issues,
     $core.String? campaign,
     $core.String? adGroup,
@@ -344,7 +344,7 @@ class ShoppingProduct extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShoppingProduct', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aInt64(2, _omitFieldNames ? '' : 'merchantCenterId')
-    ..e<$3263.ProductChannelEnum_ProductChannel>(3, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $3263.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3263.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3263.ProductChannelEnum_ProductChannel.values)
+    ..e<$3264.ProductChannelEnum_ProductChannel>(3, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $3264.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3264.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3264.ProductChannelEnum_ProductChannel.values)
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
     ..aOS(5, _omitFieldNames ? '' : 'feedLabel')
     ..aOS(6, _omitFieldNames ? '' : 'itemId')
@@ -353,9 +353,9 @@ class ShoppingProduct extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'brand')
     ..aInt64(10, _omitFieldNames ? '' : 'priceMicros')
     ..aOS(11, _omitFieldNames ? '' : 'currencyCode')
-    ..e<$3264.ProductChannelExclusivityEnum_ProductChannelExclusivity>(12, _omitFieldNames ? '' : 'channelExclusivity', $pb.PbFieldType.OE, defaultOrMaker: $3264.ProductChannelExclusivityEnum_ProductChannelExclusivity.UNSPECIFIED, valueOf: $3264.ProductChannelExclusivityEnum_ProductChannelExclusivity.valueOf, enumValues: $3264.ProductChannelExclusivityEnum_ProductChannelExclusivity.values)
-    ..e<$3265.ProductConditionEnum_ProductCondition>(13, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE, defaultOrMaker: $3265.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $3265.ProductConditionEnum_ProductCondition.valueOf, enumValues: $3265.ProductConditionEnum_ProductCondition.values)
-    ..e<$3781.ProductAvailabilityEnum_ProductAvailability>(14, _omitFieldNames ? '' : 'availability', $pb.PbFieldType.OE, defaultOrMaker: $3781.ProductAvailabilityEnum_ProductAvailability.UNSPECIFIED, valueOf: $3781.ProductAvailabilityEnum_ProductAvailability.valueOf, enumValues: $3781.ProductAvailabilityEnum_ProductAvailability.values)
+    ..e<$3265.ProductChannelExclusivityEnum_ProductChannelExclusivity>(12, _omitFieldNames ? '' : 'channelExclusivity', $pb.PbFieldType.OE, defaultOrMaker: $3265.ProductChannelExclusivityEnum_ProductChannelExclusivity.UNSPECIFIED, valueOf: $3265.ProductChannelExclusivityEnum_ProductChannelExclusivity.valueOf, enumValues: $3265.ProductChannelExclusivityEnum_ProductChannelExclusivity.values)
+    ..e<$3266.ProductConditionEnum_ProductCondition>(13, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE, defaultOrMaker: $3266.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $3266.ProductConditionEnum_ProductCondition.valueOf, enumValues: $3266.ProductConditionEnum_ProductCondition.values)
+    ..e<$3782.ProductAvailabilityEnum_ProductAvailability>(14, _omitFieldNames ? '' : 'availability', $pb.PbFieldType.OE, defaultOrMaker: $3782.ProductAvailabilityEnum_ProductAvailability.UNSPECIFIED, valueOf: $3782.ProductAvailabilityEnum_ProductAvailability.valueOf, enumValues: $3782.ProductAvailabilityEnum_ProductAvailability.values)
     ..pPS(15, _omitFieldNames ? '' : 'targetCountries')
     ..aOS(16, _omitFieldNames ? '' : 'customAttribute0')
     ..aOS(17, _omitFieldNames ? '' : 'customAttribute1')
@@ -373,7 +373,7 @@ class ShoppingProduct extends $pb.GeneratedMessage {
     ..aOS(29, _omitFieldNames ? '' : 'productTypeLevel4')
     ..aOS(30, _omitFieldNames ? '' : 'productTypeLevel5')
     ..aInt64(31, _omitFieldNames ? '' : 'effectiveMaxCpcMicros')
-    ..e<$3782.ProductStatusEnum_ProductStatus>(32, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3782.ProductStatusEnum_ProductStatus.UNSPECIFIED, valueOf: $3782.ProductStatusEnum_ProductStatus.valueOf, enumValues: $3782.ProductStatusEnum_ProductStatus.values)
+    ..e<$3783.ProductStatusEnum_ProductStatus>(32, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3783.ProductStatusEnum_ProductStatus.UNSPECIFIED, valueOf: $3783.ProductStatusEnum_ProductStatus.valueOf, enumValues: $3783.ProductStatusEnum_ProductStatus.values)
     ..pc<ShoppingProduct_ProductIssue>(33, _omitFieldNames ? '' : 'issues', $pb.PbFieldType.PM, subBuilder: ShoppingProduct_ProductIssue.create)
     ..aOS(34, _omitFieldNames ? '' : 'campaign')
     ..aOS(35, _omitFieldNames ? '' : 'adGroup')
@@ -426,9 +426,9 @@ class ShoppingProduct extends $pb.GeneratedMessage {
 
   /// Output only. The product channel describing the locality of the product.
   @$pb.TagNumber(3)
-  $3263.ProductChannelEnum_ProductChannel get channel => $_getN(2);
+  $3264.ProductChannelEnum_ProductChannel get channel => $_getN(2);
   @$pb.TagNumber(3)
-  set channel($3263.ProductChannelEnum_ProductChannel v) { setField(3, v); }
+  set channel($3264.ProductChannelEnum_ProductChannel v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasChannel() => $_has(2);
   @$pb.TagNumber(3)
@@ -522,9 +522,9 @@ class ShoppingProduct extends $pb.GeneratedMessage {
   /// Output only. The channel exclusivity of the product as provided by the
   /// merchant.
   @$pb.TagNumber(12)
-  $3264.ProductChannelExclusivityEnum_ProductChannelExclusivity get channelExclusivity => $_getN(11);
+  $3265.ProductChannelExclusivityEnum_ProductChannelExclusivity get channelExclusivity => $_getN(11);
   @$pb.TagNumber(12)
-  set channelExclusivity($3264.ProductChannelExclusivityEnum_ProductChannelExclusivity v) { setField(12, v); }
+  set channelExclusivity($3265.ProductChannelExclusivityEnum_ProductChannelExclusivity v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasChannelExclusivity() => $_has(11);
   @$pb.TagNumber(12)
@@ -532,9 +532,9 @@ class ShoppingProduct extends $pb.GeneratedMessage {
 
   /// Output only. The condition of the product as provided by the merchant.
   @$pb.TagNumber(13)
-  $3265.ProductConditionEnum_ProductCondition get condition => $_getN(12);
+  $3266.ProductConditionEnum_ProductCondition get condition => $_getN(12);
   @$pb.TagNumber(13)
-  set condition($3265.ProductConditionEnum_ProductCondition v) { setField(13, v); }
+  set condition($3266.ProductConditionEnum_ProductCondition v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCondition() => $_has(12);
   @$pb.TagNumber(13)
@@ -542,9 +542,9 @@ class ShoppingProduct extends $pb.GeneratedMessage {
 
   /// Output only. The availability of the product as provided by the merchant.
   @$pb.TagNumber(14)
-  $3781.ProductAvailabilityEnum_ProductAvailability get availability => $_getN(13);
+  $3782.ProductAvailabilityEnum_ProductAvailability get availability => $_getN(13);
   @$pb.TagNumber(14)
-  set availability($3781.ProductAvailabilityEnum_ProductAvailability v) { setField(14, v); }
+  set availability($3782.ProductAvailabilityEnum_ProductAvailability v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasAvailability() => $_has(13);
   @$pb.TagNumber(14)
@@ -730,9 +730,9 @@ class ShoppingProduct extends $pb.GeneratedMessage {
   /// see the documentation of the resource.
   /// This field can take up to 24 hours to update.
   @$pb.TagNumber(32)
-  $3782.ProductStatusEnum_ProductStatus get status => $_getN(31);
+  $3783.ProductStatusEnum_ProductStatus get status => $_getN(31);
   @$pb.TagNumber(32)
-  set status($3782.ProductStatusEnum_ProductStatus v) { setField(32, v); }
+  set status($3783.ProductStatusEnum_ProductStatus v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasStatus() => $_has(31);
   @$pb.TagNumber(32)

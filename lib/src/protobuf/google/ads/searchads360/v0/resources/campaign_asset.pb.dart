@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_link_status.pbenum.dart' as $4023;
+import '../enums/asset_link_status.pbenum.dart' as $4024;
 
 /// A link between a Campaign and an Asset.
 class CampaignAsset extends $pb.GeneratedMessage {
   factory CampaignAsset({
     $core.String? resourceName,
-    $4023.AssetLinkStatusEnum_AssetLinkStatus? status,
+    $4024.AssetLinkStatusEnum_AssetLinkStatus? status,
     $core.String? campaign,
     $core.String? asset,
   }) {
@@ -44,7 +44,7 @@ class CampaignAsset extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignAsset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$4023.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4023.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4023.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4023.AssetLinkStatusEnum_AssetLinkStatus.values)
+    ..e<$4024.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4024.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4024.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4024.AssetLinkStatusEnum_AssetLinkStatus.values)
     ..aOS(6, _omitFieldNames ? '' : 'campaign')
     ..aOS(7, _omitFieldNames ? '' : 'asset')
     ..hasRequiredFields = false
@@ -86,9 +86,9 @@ class CampaignAsset extends $pb.GeneratedMessage {
 
   /// Output only. Status of the campaign asset.
   @$pb.TagNumber(5)
-  $4023.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(1);
+  $4024.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(1);
   @$pb.TagNumber(5)
-  set status($4023.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
+  set status($4024.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(5)

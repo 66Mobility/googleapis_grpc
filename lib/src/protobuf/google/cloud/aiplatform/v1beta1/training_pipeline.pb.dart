@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'encryption_spec.pb.dart' as $4281;
-import 'io.pb.dart' as $4277;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'encryption_spec.pb.dart' as $4282;
+import 'io.pb.dart' as $4278;
 import 'model.pb.dart' as $609;
-import 'pipeline_state.pbenum.dart' as $4314;
+import 'pipeline_state.pbenum.dart' as $4315;
 
 /// The TrainingPipeline orchestrates tasks associated with training a Model. It
 /// always executes the training task, and optionally may also
@@ -32,17 +32,17 @@ class TrainingPipeline extends $pb.GeneratedMessage {
     $core.String? displayName,
     InputDataConfig? inputDataConfig,
     $core.String? trainingTaskDefinition,
-    $1734.Value? trainingTaskInputs,
-    $1734.Value? trainingTaskMetadata,
+    $1735.Value? trainingTaskInputs,
+    $1735.Value? trainingTaskMetadata,
     $609.Model? modelToUpload,
-    $4314.PipelineState? state,
-    $1795.Status? error,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
+    $4315.PipelineState? state,
+    $1796.Status? error,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
-    $4281.EncryptionSpec? encryptionSpec,
+    $4282.EncryptionSpec? encryptionSpec,
     $core.String? parentModel,
     $core.String? modelId,
   }) {
@@ -109,17 +109,17 @@ class TrainingPipeline extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<InputDataConfig>(3, _omitFieldNames ? '' : 'inputDataConfig', subBuilder: InputDataConfig.create)
     ..aOS(4, _omitFieldNames ? '' : 'trainingTaskDefinition')
-    ..aOM<$1734.Value>(5, _omitFieldNames ? '' : 'trainingTaskInputs', subBuilder: $1734.Value.create)
-    ..aOM<$1734.Value>(6, _omitFieldNames ? '' : 'trainingTaskMetadata', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(5, _omitFieldNames ? '' : 'trainingTaskInputs', subBuilder: $1735.Value.create)
+    ..aOM<$1735.Value>(6, _omitFieldNames ? '' : 'trainingTaskMetadata', subBuilder: $1735.Value.create)
     ..aOM<$609.Model>(7, _omitFieldNames ? '' : 'modelToUpload', subBuilder: $609.Model.create)
-    ..e<$4314.PipelineState>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4314.PipelineState.PIPELINE_STATE_UNSPECIFIED, valueOf: $4314.PipelineState.valueOf, enumValues: $4314.PipelineState.values)
-    ..aOM<$1795.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4315.PipelineState>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4315.PipelineState.PIPELINE_STATE_UNSPECIFIED, valueOf: $4315.PipelineState.valueOf, enumValues: $4315.PipelineState.values)
+    ..aOM<$1796.Status>(10, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(15, _omitFieldNames ? '' : 'labels', entryClassName: 'TrainingPipeline.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$4281.EncryptionSpec>(18, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4281.EncryptionSpec.create)
+    ..aOM<$4282.EncryptionSpec>(18, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4282.EncryptionSpec.create)
     ..aOS(21, _omitFieldNames ? '' : 'parentModel')
     ..aOS(22, _omitFieldNames ? '' : 'modelId')
     ..hasRequiredFields = false
@@ -207,15 +207,15 @@ class TrainingPipeline extends $pb.GeneratedMessage {
   /// [training_task_definition][google.cloud.aiplatform.v1beta1.TrainingPipeline.training_task_definition]'s
   /// `inputs`.
   @$pb.TagNumber(5)
-  $1734.Value get trainingTaskInputs => $_getN(4);
+  $1735.Value get trainingTaskInputs => $_getN(4);
   @$pb.TagNumber(5)
-  set trainingTaskInputs($1734.Value v) { setField(5, v); }
+  set trainingTaskInputs($1735.Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTrainingTaskInputs() => $_has(4);
   @$pb.TagNumber(5)
   void clearTrainingTaskInputs() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Value ensureTrainingTaskInputs() => $_ensure(4);
+  $1735.Value ensureTrainingTaskInputs() => $_ensure(4);
 
   /// Output only. The metadata information as specified in the
   /// [training_task_definition][google.cloud.aiplatform.v1beta1.TrainingPipeline.training_task_definition]'s
@@ -226,15 +226,15 @@ class TrainingPipeline extends $pb.GeneratedMessage {
   /// [training_task_definition][google.cloud.aiplatform.v1beta1.TrainingPipeline.training_task_definition]
   /// contains `metadata` object.
   @$pb.TagNumber(6)
-  $1734.Value get trainingTaskMetadata => $_getN(5);
+  $1735.Value get trainingTaskMetadata => $_getN(5);
   @$pb.TagNumber(6)
-  set trainingTaskMetadata($1734.Value v) { setField(6, v); }
+  set trainingTaskMetadata($1735.Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTrainingTaskMetadata() => $_has(5);
   @$pb.TagNumber(6)
   void clearTrainingTaskMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $1734.Value ensureTrainingTaskMetadata() => $_ensure(5);
+  $1735.Value ensureTrainingTaskMetadata() => $_ensure(5);
 
   /// Describes the Model that may be uploaded (via
   /// [ModelService.UploadModel][google.cloud.aiplatform.v1beta1.ModelService.UploadModel])
@@ -266,9 +266,9 @@ class TrainingPipeline extends $pb.GeneratedMessage {
 
   /// Output only. The detailed state of the pipeline.
   @$pb.TagNumber(9)
-  $4314.PipelineState get state => $_getN(7);
+  $4315.PipelineState get state => $_getN(7);
   @$pb.TagNumber(9)
-  set state($4314.PipelineState v) { setField(9, v); }
+  set state($4315.PipelineState v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(9)
@@ -277,66 +277,66 @@ class TrainingPipeline extends $pb.GeneratedMessage {
   /// Output only. Only populated when the pipeline's state is
   /// `PIPELINE_STATE_FAILED` or `PIPELINE_STATE_CANCELLED`.
   @$pb.TagNumber(10)
-  $1795.Status get error => $_getN(8);
+  $1796.Status get error => $_getN(8);
   @$pb.TagNumber(10)
-  set error($1795.Status v) { setField(10, v); }
+  set error($1796.Status v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasError() => $_has(8);
   @$pb.TagNumber(10)
   void clearError() => clearField(10);
   @$pb.TagNumber(10)
-  $1795.Status ensureError() => $_ensure(8);
+  $1796.Status ensureError() => $_ensure(8);
 
   /// Output only. Time when the TrainingPipeline was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(9);
+  $1776.Timestamp get createTime => $_getN(9);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(9);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(9);
+  $1776.Timestamp ensureCreateTime() => $_ensure(9);
 
   /// Output only. Time when the TrainingPipeline for the first time entered the
   /// `PIPELINE_STATE_RUNNING` state.
   @$pb.TagNumber(12)
-  $1775.Timestamp get startTime => $_getN(10);
+  $1776.Timestamp get startTime => $_getN(10);
   @$pb.TagNumber(12)
-  set startTime($1775.Timestamp v) { setField(12, v); }
+  set startTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasStartTime() => $_has(10);
   @$pb.TagNumber(12)
   void clearStartTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureStartTime() => $_ensure(10);
+  $1776.Timestamp ensureStartTime() => $_ensure(10);
 
   /// Output only. Time when the TrainingPipeline entered any of the following
   /// states: `PIPELINE_STATE_SUCCEEDED`, `PIPELINE_STATE_FAILED`,
   /// `PIPELINE_STATE_CANCELLED`.
   @$pb.TagNumber(13)
-  $1775.Timestamp get endTime => $_getN(11);
+  $1776.Timestamp get endTime => $_getN(11);
   @$pb.TagNumber(13)
-  set endTime($1775.Timestamp v) { setField(13, v); }
+  set endTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasEndTime() => $_has(11);
   @$pb.TagNumber(13)
   void clearEndTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureEndTime() => $_ensure(11);
+  $1776.Timestamp ensureEndTime() => $_ensure(11);
 
   /// Output only. Time when the TrainingPipeline was most recently updated.
   @$pb.TagNumber(14)
-  $1775.Timestamp get updateTime => $_getN(12);
+  $1776.Timestamp get updateTime => $_getN(12);
   @$pb.TagNumber(14)
-  set updateTime($1775.Timestamp v) { setField(14, v); }
+  set updateTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasUpdateTime() => $_has(12);
   @$pb.TagNumber(14)
   void clearUpdateTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(12);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(12);
 
   ///  The labels with user-defined metadata to organize TrainingPipelines.
   ///
@@ -355,15 +355,15 @@ class TrainingPipeline extends $pb.GeneratedMessage {
   ///  [model_to_upload][google.cloud.aiplatform.v1beta1.TrainingPipeline.encryption_spec]
   ///  is not set separately.
   @$pb.TagNumber(18)
-  $4281.EncryptionSpec get encryptionSpec => $_getN(14);
+  $4282.EncryptionSpec get encryptionSpec => $_getN(14);
   @$pb.TagNumber(18)
-  set encryptionSpec($4281.EncryptionSpec v) { setField(18, v); }
+  set encryptionSpec($4282.EncryptionSpec v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasEncryptionSpec() => $_has(14);
   @$pb.TagNumber(18)
   void clearEncryptionSpec() => clearField(18);
   @$pb.TagNumber(18)
-  $4281.EncryptionSpec ensureEncryptionSpec() => $_ensure(14);
+  $4282.EncryptionSpec ensureEncryptionSpec() => $_ensure(14);
 
   /// Optional. When specify this field, the `model_to_upload` will not be
   /// uploaded as a new model, instead, it will become a new version of this
@@ -418,9 +418,9 @@ class InputDataConfig extends $pb.GeneratedMessage {
     TimestampSplit? timestampSplit,
     $core.String? annotationsFilter,
     $core.String? savedQueryId,
-    $4277.GcsDestination? gcsDestination,
+    $4278.GcsDestination? gcsDestination,
     $core.String? annotationSchemaUri,
-    $4277.BigQueryDestination? bigqueryDestination,
+    $4278.BigQueryDestination? bigqueryDestination,
     $core.bool? persistMlUseAssignment,
     StratifiedSplit? stratifiedSplit,
   }) {
@@ -490,9 +490,9 @@ class InputDataConfig extends $pb.GeneratedMessage {
     ..aOM<TimestampSplit>(5, _omitFieldNames ? '' : 'timestampSplit', subBuilder: TimestampSplit.create)
     ..aOS(6, _omitFieldNames ? '' : 'annotationsFilter')
     ..aOS(7, _omitFieldNames ? '' : 'savedQueryId')
-    ..aOM<$4277.GcsDestination>(8, _omitFieldNames ? '' : 'gcsDestination', subBuilder: $4277.GcsDestination.create)
+    ..aOM<$4278.GcsDestination>(8, _omitFieldNames ? '' : 'gcsDestination', subBuilder: $4278.GcsDestination.create)
     ..aOS(9, _omitFieldNames ? '' : 'annotationSchemaUri')
-    ..aOM<$4277.BigQueryDestination>(10, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4277.BigQueryDestination.create)
+    ..aOM<$4278.BigQueryDestination>(10, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4278.BigQueryDestination.create)
     ..aOB(11, _omitFieldNames ? '' : 'persistMlUseAssignment')
     ..aOM<StratifiedSplit>(12, _omitFieldNames ? '' : 'stratifiedSplit', subBuilder: StratifiedSplit.create)
     ..hasRequiredFields = false
@@ -661,15 +661,15 @@ class InputDataConfig extends $pb.GeneratedMessage {
   ///  * AIP_TEST_DATA_URI =
   ///  "gcs_destination/dataset-<dataset-id>-<annotation-type>-<time>/test-*.${AIP_DATA_FORMAT}"
   @$pb.TagNumber(8)
-  $4277.GcsDestination get gcsDestination => $_getN(7);
+  $4278.GcsDestination get gcsDestination => $_getN(7);
   @$pb.TagNumber(8)
-  set gcsDestination($4277.GcsDestination v) { setField(8, v); }
+  set gcsDestination($4278.GcsDestination v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasGcsDestination() => $_has(7);
   @$pb.TagNumber(8)
   void clearGcsDestination() => clearField(8);
   @$pb.TagNumber(8)
-  $4277.GcsDestination ensureGcsDestination() => $_ensure(7);
+  $4278.GcsDestination ensureGcsDestination() => $_ensure(7);
 
   ///  Applicable only to custom training with Datasets that have DataItems and
   ///  Annotations.
@@ -723,15 +723,15 @@ class InputDataConfig extends $pb.GeneratedMessage {
   ///  * AIP_TEST_DATA_URI =
   ///  "bigquery_destination.dataset_<dataset-id>_<annotation-type>_<time>.test"
   @$pb.TagNumber(10)
-  $4277.BigQueryDestination get bigqueryDestination => $_getN(9);
+  $4278.BigQueryDestination get bigqueryDestination => $_getN(9);
   @$pb.TagNumber(10)
-  set bigqueryDestination($4277.BigQueryDestination v) { setField(10, v); }
+  set bigqueryDestination($4278.BigQueryDestination v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBigqueryDestination() => $_has(9);
   @$pb.TagNumber(10)
   void clearBigqueryDestination() => clearField(10);
   @$pb.TagNumber(10)
-  $4277.BigQueryDestination ensureBigqueryDestination() => $_ensure(9);
+  $4278.BigQueryDestination ensureBigqueryDestination() => $_ensure(9);
 
   /// Whether to persist the ML use assignment to data item system labels.
   @$pb.TagNumber(11)

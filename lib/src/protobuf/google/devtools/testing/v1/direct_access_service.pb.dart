@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'direct_access_service.pbenum.dart';
 import 'test_execution.pb.dart' as $1589;
 
@@ -362,7 +362,7 @@ class CancelDeviceSessionRequest extends $pb.GeneratedMessage {
 class UpdateDeviceSessionRequest extends $pb.GeneratedMessage {
   factory UpdateDeviceSessionRequest({
     DeviceSession? deviceSession,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (deviceSession != null) {
@@ -379,7 +379,7 @@ class UpdateDeviceSessionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDeviceSessionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
     ..aOM<DeviceSession>(1, _omitFieldNames ? '' : 'deviceSession', subBuilder: DeviceSession.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -420,15 +420,15 @@ class UpdateDeviceSessionRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A message encapsulating a series of Session states and the time that the
@@ -436,7 +436,7 @@ class UpdateDeviceSessionRequest extends $pb.GeneratedMessage {
 class DeviceSession_SessionStateEvent extends $pb.GeneratedMessage {
   factory DeviceSession_SessionStateEvent({
     DeviceSession_SessionState? sessionState,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     $core.String? stateMessage,
   }) {
     final $result = create();
@@ -457,7 +457,7 @@ class DeviceSession_SessionStateEvent extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceSession.SessionStateEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
     ..e<DeviceSession_SessionState>(1, _omitFieldNames ? '' : 'sessionState', $pb.PbFieldType.OE, defaultOrMaker: DeviceSession_SessionState.SESSION_STATE_UNSPECIFIED, valueOf: DeviceSession_SessionState.valueOf, enumValues: DeviceSession_SessionState.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'stateMessage')
     ..hasRequiredFields = false
   ;
@@ -496,15 +496,15 @@ class DeviceSession_SessionStateEvent extends $pb.GeneratedMessage {
   /// Output only. The time that the session_state first encountered that
   /// state.
   @$pb.TagNumber(2)
-  $1775.Timestamp get eventTime => $_getN(1);
+  $1776.Timestamp get eventTime => $_getN(1);
   @$pb.TagNumber(2)
-  set eventTime($1775.Timestamp v) { setField(2, v); }
+  set eventTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEventTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEventTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEventTime() => $_ensure(1);
+  $1776.Timestamp ensureEventTime() => $_ensure(1);
 
   /// Output only. A human-readable message to explain the state.
   @$pb.TagNumber(3)
@@ -529,11 +529,11 @@ class DeviceSession extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     DeviceSession_SessionState? state,
-    $1775.Timestamp? expireTime,
-    $1737.Duration? inactivityTimeout,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? activeStartTime,
-    $1737.Duration? ttl,
+    $1776.Timestamp? expireTime,
+    $1738.Duration? inactivityTimeout,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? activeStartTime,
+    $1738.Duration? ttl,
     $core.Iterable<DeviceSession_SessionStateEvent>? stateHistories,
     $1589.AndroidDevice? androidDevice,
   }) {
@@ -584,11 +584,11 @@ class DeviceSession extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..e<DeviceSession_SessionState>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: DeviceSession_SessionState.SESSION_STATE_UNSPECIFIED, valueOf: DeviceSession_SessionState.valueOf, enumValues: DeviceSession_SessionState.values)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'inactivityTimeout', subBuilder: $1737.Duration.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'activeStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1737.Duration>(13, _omitFieldNames ? '' : 'ttl', subBuilder: $1737.Duration.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'inactivityTimeout', subBuilder: $1738.Duration.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'activeStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1738.Duration>(13, _omitFieldNames ? '' : 'ttl', subBuilder: $1738.Duration.create)
     ..pc<DeviceSession_SessionStateEvent>(14, _omitFieldNames ? '' : 'stateHistories', $pb.PbFieldType.PM, subBuilder: DeviceSession_SessionStateEvent.create)
     ..aOM<$1589.AndroidDevice>(15, _omitFieldNames ? '' : 'androidDevice', subBuilder: $1589.AndroidDevice.create)
     ..hasRequiredFields = false
@@ -653,66 +653,66 @@ class DeviceSession extends $pb.GeneratedMessage {
   /// will be ended and the SessionState will transition from ACTIVE to
   /// FINISHED.
   @$pb.TagNumber(5)
-  $1775.Timestamp get expireTime => $_getN(3);
+  $1776.Timestamp get expireTime => $_getN(3);
   @$pb.TagNumber(5)
-  set expireTime($1775.Timestamp v) { setField(5, v); }
+  set expireTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpireTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearExpireTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureExpireTime() => $_ensure(3);
+  $1776.Timestamp ensureExpireTime() => $_ensure(3);
 
   /// Output only. The interval of time that this device must be interacted with
   /// before it transitions from ACTIVE to TIMEOUT_INACTIVITY.
   @$pb.TagNumber(7)
-  $1737.Duration get inactivityTimeout => $_getN(4);
+  $1738.Duration get inactivityTimeout => $_getN(4);
   @$pb.TagNumber(7)
-  set inactivityTimeout($1737.Duration v) { setField(7, v); }
+  set inactivityTimeout($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInactivityTimeout() => $_has(4);
   @$pb.TagNumber(7)
   void clearInactivityTimeout() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureInactivityTimeout() => $_ensure(4);
+  $1738.Duration ensureInactivityTimeout() => $_ensure(4);
 
   /// Output only. The time that the Session was created.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. The timestamp that the session first became ACTIVE.
   @$pb.TagNumber(9)
-  $1775.Timestamp get activeStartTime => $_getN(6);
+  $1776.Timestamp get activeStartTime => $_getN(6);
   @$pb.TagNumber(9)
-  set activeStartTime($1775.Timestamp v) { setField(9, v); }
+  set activeStartTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasActiveStartTime() => $_has(6);
   @$pb.TagNumber(9)
   void clearActiveStartTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureActiveStartTime() => $_ensure(6);
+  $1776.Timestamp ensureActiveStartTime() => $_ensure(6);
 
   /// Optional. The amount of time that a device will be initially allocated
   /// for. This can eventually be extended with the UpdateDeviceSession RPC.
   /// Default: 15 minutes.
   @$pb.TagNumber(13)
-  $1737.Duration get ttl => $_getN(7);
+  $1738.Duration get ttl => $_getN(7);
   @$pb.TagNumber(13)
-  set ttl($1737.Duration v) { setField(13, v); }
+  set ttl($1738.Duration v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasTtl() => $_has(7);
   @$pb.TagNumber(13)
   void clearTtl() => clearField(13);
   @$pb.TagNumber(13)
-  $1737.Duration ensureTtl() => $_ensure(7);
+  $1738.Duration ensureTtl() => $_ensure(7);
 
   /// Output only. The historical state transitions of the session_state message
   /// including the current session state.

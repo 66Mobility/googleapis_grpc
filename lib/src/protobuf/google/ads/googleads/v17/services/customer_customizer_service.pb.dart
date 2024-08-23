@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3796;
-import '../resources/customer_customizer.pb.dart' as $3828;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3797;
+import '../resources/customer_customizer.pb.dart' as $3829;
 
 /// Request message for
 /// [CustomerCustomizerService.MutateCustomerCustomizers][google.ads.googleads.v17.services.CustomerCustomizerService.MutateCustomerCustomizers].
@@ -25,7 +25,7 @@ class MutateCustomerCustomizersRequest extends $pb.GeneratedMessage {
     $core.Iterable<CustomerCustomizerOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3796.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3797.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -54,7 +54,7 @@ class MutateCustomerCustomizersRequest extends $pb.GeneratedMessage {
     ..pc<CustomerCustomizerOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: CustomerCustomizerOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3796.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3796.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3796.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3796.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3797.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3797.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3797.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3797.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -122,9 +122,9 @@ class MutateCustomerCustomizersRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3796.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3797.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3796.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3797.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -140,7 +140,7 @@ enum CustomerCustomizerOperation_Operation {
 /// A single operation (create, remove) on a customizer attribute.
 class CustomerCustomizerOperation extends $pb.GeneratedMessage {
   factory CustomerCustomizerOperation({
-    $3828.CustomerCustomizer? create_1,
+    $3829.CustomerCustomizer? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -163,7 +163,7 @@ class CustomerCustomizerOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerCustomizerOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3828.CustomerCustomizer>(1, _omitFieldNames ? '' : 'create', subBuilder: $3828.CustomerCustomizer.create)
+    ..aOM<$3829.CustomerCustomizer>(1, _omitFieldNames ? '' : 'create', subBuilder: $3829.CustomerCustomizer.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -195,15 +195,15 @@ class CustomerCustomizerOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new customer
   /// customizer
   @$pb.TagNumber(1)
-  $3828.CustomerCustomizer get create_1 => $_getN(0);
+  $3829.CustomerCustomizer get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3828.CustomerCustomizer v) { setField(1, v); }
+  set create_1($3829.CustomerCustomizer v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3828.CustomerCustomizer ensureCreate_1() => $_ensure(0);
+  $3829.CustomerCustomizer ensureCreate_1() => $_ensure(0);
 
   /// Remove operation: A resource name for the removed customer customizer is
   /// expected, in this format:
@@ -222,7 +222,7 @@ class CustomerCustomizerOperation extends $pb.GeneratedMessage {
 class MutateCustomerCustomizersResponse extends $pb.GeneratedMessage {
   factory MutateCustomerCustomizersResponse({
     $core.Iterable<MutateCustomerCustomizerResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -239,7 +239,7 @@ class MutateCustomerCustomizersResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerCustomizersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateCustomerCustomizerResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateCustomerCustomizerResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -273,22 +273,22 @@ class MutateCustomerCustomizersResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the customizer attribute mutate.
 class MutateCustomerCustomizerResult extends $pb.GeneratedMessage {
   factory MutateCustomerCustomizerResult({
     $core.String? resourceName,
-    $3828.CustomerCustomizer? customerCustomizer,
+    $3829.CustomerCustomizer? customerCustomizer,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -305,7 +305,7 @@ class MutateCustomerCustomizerResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateCustomerCustomizerResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3828.CustomerCustomizer>(2, _omitFieldNames ? '' : 'customerCustomizer', subBuilder: $3828.CustomerCustomizer.create)
+    ..aOM<$3829.CustomerCustomizer>(2, _omitFieldNames ? '' : 'customerCustomizer', subBuilder: $3829.CustomerCustomizer.create)
     ..hasRequiredFields = false
   ;
 
@@ -344,15 +344,15 @@ class MutateCustomerCustomizerResult extends $pb.GeneratedMessage {
   /// The field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3828.CustomerCustomizer get customerCustomizer => $_getN(1);
+  $3829.CustomerCustomizer get customerCustomizer => $_getN(1);
   @$pb.TagNumber(2)
-  set customerCustomizer($3828.CustomerCustomizer v) { setField(2, v); }
+  set customerCustomizer($3829.CustomerCustomizer v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCustomerCustomizer() => $_has(1);
   @$pb.TagNumber(2)
   void clearCustomerCustomizer() => clearField(2);
   @$pb.TagNumber(2)
-  $3828.CustomerCustomizer ensureCustomerCustomizer() => $_ensure(1);
+  $3829.CustomerCustomizer ensureCustomerCustomizer() => $_ensure(1);
 }
 
 

@@ -13,26 +13,26 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/ad_network_type.pbenum.dart' as $3993;
-import '../enums/conversion_action_category.pbenum.dart' as $3997;
-import '../enums/day_of_week.pbenum.dart' as $3976;
-import '../enums/device.pbenum.dart' as $3973;
-import '../enums/product_channel.pbenum.dart' as $3994;
-import '../enums/product_channel_exclusivity.pbenum.dart' as $3995;
-import '../enums/product_condition.pbenum.dart' as $3996;
-import 'criteria.pb.dart' as $3982;
-import 'value.pb.dart' as $3990;
+import '../enums/ad_network_type.pbenum.dart' as $3994;
+import '../enums/conversion_action_category.pbenum.dart' as $3998;
+import '../enums/day_of_week.pbenum.dart' as $3977;
+import '../enums/device.pbenum.dart' as $3974;
+import '../enums/product_channel.pbenum.dart' as $3995;
+import '../enums/product_channel_exclusivity.pbenum.dart' as $3996;
+import '../enums/product_condition.pbenum.dart' as $3997;
+import 'criteria.pb.dart' as $3983;
+import 'value.pb.dart' as $3991;
 
 /// Segment only fields.
 class Segments extends $pb.GeneratedMessage {
   factory Segments({
-    $3973.DeviceEnum_Device? device,
-    $3993.AdNetworkTypeEnum_AdNetworkType? adNetworkType,
-    $3976.DayOfWeekEnum_DayOfWeek? dayOfWeek,
-    $3994.ProductChannelEnum_ProductChannel? productChannel,
-    $3995.ProductChannelExclusivityEnum_ProductChannelExclusivity? productChannelExclusivity,
-    $3996.ProductConditionEnum_ProductCondition? productCondition,
-    $3997.ConversionActionCategoryEnum_ConversionActionCategory? conversionActionCategory,
+    $3974.DeviceEnum_Device? device,
+    $3994.AdNetworkTypeEnum_AdNetworkType? adNetworkType,
+    $3977.DayOfWeekEnum_DayOfWeek? dayOfWeek,
+    $3995.ProductChannelEnum_ProductChannel? productChannel,
+    $3996.ProductChannelExclusivityEnum_ProductChannelExclusivity? productChannelExclusivity,
+    $3997.ProductConditionEnum_ProductCondition? productCondition,
+    $3998.ConversionActionCategoryEnum_ConversionActionCategory? conversionActionCategory,
     Keyword? keyword,
     $core.String? date,
     $core.int? hour,
@@ -74,7 +74,7 @@ class Segments extends $pb.GeneratedMessage {
     $core.String? productSoldBiddingCategoryLevel4,
     $core.String? productSoldBiddingCategoryLevel5,
     $core.String? productSoldBrand,
-    $3996.ProductConditionEnum_ProductCondition? productSoldCondition,
+    $3997.ProductConditionEnum_ProductCondition? productSoldCondition,
     $core.String? productSoldCustomAttribute0,
     $core.String? productSoldCustomAttribute1,
     $core.String? productSoldCustomAttribute2,
@@ -87,8 +87,8 @@ class Segments extends $pb.GeneratedMessage {
     $core.String? productSoldTypeL3,
     $core.String? productSoldTypeL4,
     $core.String? productSoldTypeL5,
-    $core.Iterable<$3990.Value>? conversionCustomDimensions,
-    $core.Iterable<$3990.Value>? rawEventConversionDimensions,
+    $core.Iterable<$3991.Value>? conversionCustomDimensions,
+    $core.Iterable<$3991.Value>? rawEventConversionDimensions,
   }) {
     final $result = create();
     if (device != null) {
@@ -287,13 +287,13 @@ class Segments extends $pb.GeneratedMessage {
   factory Segments.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Segments', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..e<$3973.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $3973.DeviceEnum_Device.UNSPECIFIED, valueOf: $3973.DeviceEnum_Device.valueOf, enumValues: $3973.DeviceEnum_Device.values)
-    ..e<$3993.AdNetworkTypeEnum_AdNetworkType>(3, _omitFieldNames ? '' : 'adNetworkType', $pb.PbFieldType.OE, defaultOrMaker: $3993.AdNetworkTypeEnum_AdNetworkType.UNSPECIFIED, valueOf: $3993.AdNetworkTypeEnum_AdNetworkType.valueOf, enumValues: $3993.AdNetworkTypeEnum_AdNetworkType.values)
-    ..e<$3976.DayOfWeekEnum_DayOfWeek>(5, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $3976.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $3976.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $3976.DayOfWeekEnum_DayOfWeek.values)
-    ..e<$3994.ProductChannelEnum_ProductChannel>(30, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $3994.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3994.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3994.ProductChannelEnum_ProductChannel.values)
-    ..e<$3995.ProductChannelExclusivityEnum_ProductChannelExclusivity>(31, _omitFieldNames ? '' : 'productChannelExclusivity', $pb.PbFieldType.OE, defaultOrMaker: $3995.ProductChannelExclusivityEnum_ProductChannelExclusivity.UNSPECIFIED, valueOf: $3995.ProductChannelExclusivityEnum_ProductChannelExclusivity.valueOf, enumValues: $3995.ProductChannelExclusivityEnum_ProductChannelExclusivity.values)
-    ..e<$3996.ProductConditionEnum_ProductCondition>(32, _omitFieldNames ? '' : 'productCondition', $pb.PbFieldType.OE, defaultOrMaker: $3996.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $3996.ProductConditionEnum_ProductCondition.valueOf, enumValues: $3996.ProductConditionEnum_ProductCondition.values)
-    ..e<$3997.ConversionActionCategoryEnum_ConversionActionCategory>(53, _omitFieldNames ? '' : 'conversionActionCategory', $pb.PbFieldType.OE, defaultOrMaker: $3997.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $3997.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $3997.ConversionActionCategoryEnum_ConversionActionCategory.values)
+    ..e<$3974.DeviceEnum_Device>(1, _omitFieldNames ? '' : 'device', $pb.PbFieldType.OE, defaultOrMaker: $3974.DeviceEnum_Device.UNSPECIFIED, valueOf: $3974.DeviceEnum_Device.valueOf, enumValues: $3974.DeviceEnum_Device.values)
+    ..e<$3994.AdNetworkTypeEnum_AdNetworkType>(3, _omitFieldNames ? '' : 'adNetworkType', $pb.PbFieldType.OE, defaultOrMaker: $3994.AdNetworkTypeEnum_AdNetworkType.UNSPECIFIED, valueOf: $3994.AdNetworkTypeEnum_AdNetworkType.valueOf, enumValues: $3994.AdNetworkTypeEnum_AdNetworkType.values)
+    ..e<$3977.DayOfWeekEnum_DayOfWeek>(5, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $3977.DayOfWeekEnum_DayOfWeek.UNSPECIFIED, valueOf: $3977.DayOfWeekEnum_DayOfWeek.valueOf, enumValues: $3977.DayOfWeekEnum_DayOfWeek.values)
+    ..e<$3995.ProductChannelEnum_ProductChannel>(30, _omitFieldNames ? '' : 'productChannel', $pb.PbFieldType.OE, defaultOrMaker: $3995.ProductChannelEnum_ProductChannel.UNSPECIFIED, valueOf: $3995.ProductChannelEnum_ProductChannel.valueOf, enumValues: $3995.ProductChannelEnum_ProductChannel.values)
+    ..e<$3996.ProductChannelExclusivityEnum_ProductChannelExclusivity>(31, _omitFieldNames ? '' : 'productChannelExclusivity', $pb.PbFieldType.OE, defaultOrMaker: $3996.ProductChannelExclusivityEnum_ProductChannelExclusivity.UNSPECIFIED, valueOf: $3996.ProductChannelExclusivityEnum_ProductChannelExclusivity.valueOf, enumValues: $3996.ProductChannelExclusivityEnum_ProductChannelExclusivity.values)
+    ..e<$3997.ProductConditionEnum_ProductCondition>(32, _omitFieldNames ? '' : 'productCondition', $pb.PbFieldType.OE, defaultOrMaker: $3997.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $3997.ProductConditionEnum_ProductCondition.valueOf, enumValues: $3997.ProductConditionEnum_ProductCondition.values)
+    ..e<$3998.ConversionActionCategoryEnum_ConversionActionCategory>(53, _omitFieldNames ? '' : 'conversionActionCategory', $pb.PbFieldType.OE, defaultOrMaker: $3998.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $3998.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $3998.ConversionActionCategoryEnum_ConversionActionCategory.values)
     ..aOM<Keyword>(61, _omitFieldNames ? '' : 'keyword', subBuilder: Keyword.create)
     ..aOS(79, _omitFieldNames ? '' : 'date')
     ..a<$core.int>(88, _omitFieldNames ? '' : 'hour', $pb.PbFieldType.O3)
@@ -335,7 +335,7 @@ class Segments extends $pb.GeneratedMessage {
     ..aOS(169, _omitFieldNames ? '' : 'productSoldBiddingCategoryLevel4')
     ..aOS(170, _omitFieldNames ? '' : 'productSoldBiddingCategoryLevel5')
     ..aOS(171, _omitFieldNames ? '' : 'productSoldBrand')
-    ..e<$3996.ProductConditionEnum_ProductCondition>(172, _omitFieldNames ? '' : 'productSoldCondition', $pb.PbFieldType.OE, defaultOrMaker: $3996.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $3996.ProductConditionEnum_ProductCondition.valueOf, enumValues: $3996.ProductConditionEnum_ProductCondition.values)
+    ..e<$3997.ProductConditionEnum_ProductCondition>(172, _omitFieldNames ? '' : 'productSoldCondition', $pb.PbFieldType.OE, defaultOrMaker: $3997.ProductConditionEnum_ProductCondition.UNSPECIFIED, valueOf: $3997.ProductConditionEnum_ProductCondition.valueOf, enumValues: $3997.ProductConditionEnum_ProductCondition.values)
     ..aOS(173, _omitFieldNames ? '' : 'productSoldCustomAttribute0')
     ..aOS(174, _omitFieldNames ? '' : 'productSoldCustomAttribute1')
     ..aOS(175, _omitFieldNames ? '' : 'productSoldCustomAttribute2')
@@ -348,8 +348,8 @@ class Segments extends $pb.GeneratedMessage {
     ..aOS(182, _omitFieldNames ? '' : 'productSoldTypeL3')
     ..aOS(183, _omitFieldNames ? '' : 'productSoldTypeL4')
     ..aOS(184, _omitFieldNames ? '' : 'productSoldTypeL5')
-    ..pc<$3990.Value>(188, _omitFieldNames ? '' : 'conversionCustomDimensions', $pb.PbFieldType.PM, subBuilder: $3990.Value.create)
-    ..pc<$3990.Value>(189, _omitFieldNames ? '' : 'rawEventConversionDimensions', $pb.PbFieldType.PM, subBuilder: $3990.Value.create)
+    ..pc<$3991.Value>(188, _omitFieldNames ? '' : 'conversionCustomDimensions', $pb.PbFieldType.PM, subBuilder: $3991.Value.create)
+    ..pc<$3991.Value>(189, _omitFieldNames ? '' : 'rawEventConversionDimensions', $pb.PbFieldType.PM, subBuilder: $3991.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -376,9 +376,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Device to which metrics apply.
   @$pb.TagNumber(1)
-  $3973.DeviceEnum_Device get device => $_getN(0);
+  $3974.DeviceEnum_Device get device => $_getN(0);
   @$pb.TagNumber(1)
-  set device($3973.DeviceEnum_Device v) { setField(1, v); }
+  set device($3974.DeviceEnum_Device v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDevice() => $_has(0);
   @$pb.TagNumber(1)
@@ -386,9 +386,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Ad network type.
   @$pb.TagNumber(3)
-  $3993.AdNetworkTypeEnum_AdNetworkType get adNetworkType => $_getN(1);
+  $3994.AdNetworkTypeEnum_AdNetworkType get adNetworkType => $_getN(1);
   @$pb.TagNumber(3)
-  set adNetworkType($3993.AdNetworkTypeEnum_AdNetworkType v) { setField(3, v); }
+  set adNetworkType($3994.AdNetworkTypeEnum_AdNetworkType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAdNetworkType() => $_has(1);
   @$pb.TagNumber(3)
@@ -396,9 +396,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Day of the week, for example, MONDAY.
   @$pb.TagNumber(5)
-  $3976.DayOfWeekEnum_DayOfWeek get dayOfWeek => $_getN(2);
+  $3977.DayOfWeekEnum_DayOfWeek get dayOfWeek => $_getN(2);
   @$pb.TagNumber(5)
-  set dayOfWeek($3976.DayOfWeekEnum_DayOfWeek v) { setField(5, v); }
+  set dayOfWeek($3977.DayOfWeekEnum_DayOfWeek v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDayOfWeek() => $_has(2);
   @$pb.TagNumber(5)
@@ -406,9 +406,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Channel of the product.
   @$pb.TagNumber(30)
-  $3994.ProductChannelEnum_ProductChannel get productChannel => $_getN(3);
+  $3995.ProductChannelEnum_ProductChannel get productChannel => $_getN(3);
   @$pb.TagNumber(30)
-  set productChannel($3994.ProductChannelEnum_ProductChannel v) { setField(30, v); }
+  set productChannel($3995.ProductChannelEnum_ProductChannel v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasProductChannel() => $_has(3);
   @$pb.TagNumber(30)
@@ -416,9 +416,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Channel exclusivity of the product.
   @$pb.TagNumber(31)
-  $3995.ProductChannelExclusivityEnum_ProductChannelExclusivity get productChannelExclusivity => $_getN(4);
+  $3996.ProductChannelExclusivityEnum_ProductChannelExclusivity get productChannelExclusivity => $_getN(4);
   @$pb.TagNumber(31)
-  set productChannelExclusivity($3995.ProductChannelExclusivityEnum_ProductChannelExclusivity v) { setField(31, v); }
+  set productChannelExclusivity($3996.ProductChannelExclusivityEnum_ProductChannelExclusivity v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasProductChannelExclusivity() => $_has(4);
   @$pb.TagNumber(31)
@@ -426,9 +426,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Condition of the product.
   @$pb.TagNumber(32)
-  $3996.ProductConditionEnum_ProductCondition get productCondition => $_getN(5);
+  $3997.ProductConditionEnum_ProductCondition get productCondition => $_getN(5);
   @$pb.TagNumber(32)
-  set productCondition($3996.ProductConditionEnum_ProductCondition v) { setField(32, v); }
+  set productCondition($3997.ProductConditionEnum_ProductCondition v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasProductCondition() => $_has(5);
   @$pb.TagNumber(32)
@@ -436,9 +436,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Conversion action category.
   @$pb.TagNumber(53)
-  $3997.ConversionActionCategoryEnum_ConversionActionCategory get conversionActionCategory => $_getN(6);
+  $3998.ConversionActionCategoryEnum_ConversionActionCategory get conversionActionCategory => $_getN(6);
   @$pb.TagNumber(53)
-  set conversionActionCategory($3997.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(53, v); }
+  set conversionActionCategory($3998.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(53, v); }
   @$pb.TagNumber(53)
   $core.bool hasConversionActionCategory() => $_has(6);
   @$pb.TagNumber(53)
@@ -875,9 +875,9 @@ class Segments extends $pb.GeneratedMessage {
 
   /// Condition of the product sold.
   @$pb.TagNumber(172)
-  $3996.ProductConditionEnum_ProductCondition get productSoldCondition => $_getN(48);
+  $3997.ProductConditionEnum_ProductCondition get productSoldCondition => $_getN(48);
   @$pb.TagNumber(172)
-  set productSoldCondition($3996.ProductConditionEnum_ProductCondition v) { setField(172, v); }
+  set productSoldCondition($3997.ProductConditionEnum_ProductCondition v) { setField(172, v); }
   @$pb.TagNumber(172)
   $core.bool hasProductSoldCondition() => $_has(48);
   @$pb.TagNumber(172)
@@ -1005,17 +1005,17 @@ class Segments extends $pb.GeneratedMessage {
 
   /// The conversion custom dimensions.
   @$pb.TagNumber(188)
-  $core.List<$3990.Value> get conversionCustomDimensions => $_getList(61);
+  $core.List<$3991.Value> get conversionCustomDimensions => $_getList(61);
 
   /// The raw event conversion dimensions.
   @$pb.TagNumber(189)
-  $core.List<$3990.Value> get rawEventConversionDimensions => $_getList(62);
+  $core.List<$3991.Value> get rawEventConversionDimensions => $_getList(62);
 }
 
 /// A Keyword criterion segment.
 class Keyword extends $pb.GeneratedMessage {
   factory Keyword({
-    $3982.KeywordInfo? info,
+    $3983.KeywordInfo? info,
     $core.String? adGroupCriterion,
   }) {
     final $result = create();
@@ -1032,7 +1032,7 @@ class Keyword extends $pb.GeneratedMessage {
   factory Keyword.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Keyword', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.common'), createEmptyInstance: create)
-    ..aOM<$3982.KeywordInfo>(2, _omitFieldNames ? '' : 'info', subBuilder: $3982.KeywordInfo.create)
+    ..aOM<$3983.KeywordInfo>(2, _omitFieldNames ? '' : 'info', subBuilder: $3983.KeywordInfo.create)
     ..aOS(3, _omitFieldNames ? '' : 'adGroupCriterion')
     ..hasRequiredFields = false
   ;
@@ -1060,15 +1060,15 @@ class Keyword extends $pb.GeneratedMessage {
 
   /// Keyword info.
   @$pb.TagNumber(2)
-  $3982.KeywordInfo get info => $_getN(0);
+  $3983.KeywordInfo get info => $_getN(0);
   @$pb.TagNumber(2)
-  set info($3982.KeywordInfo v) { setField(2, v); }
+  set info($3983.KeywordInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInfo() => $_has(0);
   @$pb.TagNumber(2)
   void clearInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $3982.KeywordInfo ensureInfo() => $_ensure(0);
+  $3983.KeywordInfo ensureInfo() => $_ensure(0);
 
   /// The AdGroupCriterion resource name.
   @$pb.TagNumber(3)

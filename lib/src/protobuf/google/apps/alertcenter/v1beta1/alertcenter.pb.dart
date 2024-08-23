@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'alertcenter.pbenum.dart';
 
 export 'alertcenter.pbenum.dart';
@@ -25,16 +25,16 @@ class Alert extends $pb.GeneratedMessage {
   factory Alert({
     $core.String? customerId,
     $core.String? alertId,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     $core.String? type,
     $core.String? source,
-    $1794.Any? data,
+    $1795.Any? data,
     $core.String? securityInvestigationToolLink,
     $core.bool? deleted,
     AlertMetadata? metadata,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
   }) {
     final $result = create();
@@ -86,16 +86,16 @@ class Alert extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Alert', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.alertcenter.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..aOS(2, _omitFieldNames ? '' : 'alertId')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'type')
     ..aOS(7, _omitFieldNames ? '' : 'source')
-    ..aOM<$1794.Any>(8, _omitFieldNames ? '' : 'data', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(8, _omitFieldNames ? '' : 'data', subBuilder: $1795.Any.create)
     ..aOS(9, _omitFieldNames ? '' : 'securityInvestigationToolLink')
     ..aOB(11, _omitFieldNames ? '' : 'deleted')
     ..aOM<AlertMetadata>(12, _omitFieldNames ? '' : 'metadata', subBuilder: AlertMetadata.create)
-    ..aOM<$1775.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(13, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(14, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
   ;
@@ -144,42 +144,42 @@ class Alert extends $pb.GeneratedMessage {
 
   /// Output only. The time this alert was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Required. The time the event that caused this alert was started or
   /// detected.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(3);
+  $1776.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Optional. The time the event that caused this alert ceased being active.
   /// If provided, the end time must not be earlier than the start time.
   /// If not provided, it indicates an ongoing alert.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(4);
+  $1776.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(4);
+  $1776.Timestamp ensureEndTime() => $_ensure(4);
 
   /// Required. The type of the alert.
   /// This is output only after alert is created.
@@ -221,15 +221,15 @@ class Alert extends $pb.GeneratedMessage {
   /// [google.apps.alertcenter.type.DeviceCompromised]
   /// [google.apps.alertcenter.type.DeviceCompromised].
   @$pb.TagNumber(8)
-  $1794.Any get data => $_getN(7);
+  $1795.Any get data => $_getN(7);
   @$pb.TagNumber(8)
-  set data($1794.Any v) { setField(8, v); }
+  set data($1795.Any v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasData() => $_has(7);
   @$pb.TagNumber(8)
   void clearData() => clearField(8);
   @$pb.TagNumber(8)
-  $1794.Any ensureData() => $_ensure(7);
+  $1795.Any ensureData() => $_ensure(7);
 
   /// Output only. An optional
   /// [Security Investigation Tool](https://support.google.com/a/answer/7575955)
@@ -267,15 +267,15 @@ class Alert extends $pb.GeneratedMessage {
 
   /// Output only. The time this alert was last updated.
   @$pb.TagNumber(13)
-  $1775.Timestamp get updateTime => $_getN(11);
+  $1776.Timestamp get updateTime => $_getN(11);
   @$pb.TagNumber(13)
-  set updateTime($1775.Timestamp v) { setField(13, v); }
+  set updateTime($1776.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasUpdateTime() => $_has(11);
   @$pb.TagNumber(13)
   void clearUpdateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(11);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(11);
 
   ///  Optional. `etag` is used for optimistic concurrency control as a way to
   ///  help prevent simultaneous updates of an alert from overwriting each other.
@@ -303,7 +303,7 @@ class AlertFeedback extends $pb.GeneratedMessage {
     $core.String? customerId,
     $core.String? alertId,
     $core.String? feedbackId,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     AlertFeedbackType? type,
     $core.String? email,
   }) {
@@ -336,7 +336,7 @@ class AlertFeedback extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..aOS(2, _omitFieldNames ? '' : 'alertId')
     ..aOS(3, _omitFieldNames ? '' : 'feedbackId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..e<AlertFeedbackType>(5, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: AlertFeedbackType.ALERT_FEEDBACK_TYPE_UNSPECIFIED, valueOf: AlertFeedbackType.valueOf, enumValues: AlertFeedbackType.values)
     ..aOS(6, _omitFieldNames ? '' : 'email')
     ..hasRequiredFields = false
@@ -396,15 +396,15 @@ class AlertFeedback extends $pb.GeneratedMessage {
 
   /// Output only. The time this feedback was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Required. The type of the feedback.
   @$pb.TagNumber(5)
@@ -434,7 +434,7 @@ class AlertMetadata extends $pb.GeneratedMessage {
     $core.String? alertId,
     $core.String? status,
     $core.String? assignee,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? severity,
     $core.String? etag,
   }) {
@@ -471,7 +471,7 @@ class AlertMetadata extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'alertId')
     ..aOS(4, _omitFieldNames ? '' : 'status')
     ..aOS(5, _omitFieldNames ? '' : 'assignee')
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'severity')
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
@@ -546,15 +546,15 @@ class AlertMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time this metadata was last updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   ///  The severity value of the alert. Alert Center will set this field at alert
   ///  creation time, default's to an empty string when it could not be
@@ -851,7 +851,7 @@ class BatchDeleteAlertsRequest extends $pb.GeneratedMessage {
 class BatchDeleteAlertsResponse extends $pb.GeneratedMessage {
   factory BatchDeleteAlertsResponse({
     $core.Iterable<$core.String>? successAlertIds,
-    $core.Map<$core.String, $1795.Status>? failedAlertStatus,
+    $core.Map<$core.String, $1796.Status>? failedAlertStatus,
   }) {
     final $result = create();
     if (successAlertIds != null) {
@@ -868,7 +868,7 @@ class BatchDeleteAlertsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchDeleteAlertsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.alertcenter.v1beta1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'successAlertIds')
-    ..m<$core.String, $1795.Status>(2, _omitFieldNames ? '' : 'failedAlertStatus', entryClassName: 'BatchDeleteAlertsResponse.FailedAlertStatusEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1795.Status.create, valueDefaultOrMaker: $1795.Status.getDefault, packageName: const $pb.PackageName('google.apps.alertcenter.v1beta1'))
+    ..m<$core.String, $1796.Status>(2, _omitFieldNames ? '' : 'failedAlertStatus', entryClassName: 'BatchDeleteAlertsResponse.FailedAlertStatusEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1796.Status.create, valueDefaultOrMaker: $1796.Status.getDefault, packageName: const $pb.PackageName('google.apps.alertcenter.v1beta1'))
     ..hasRequiredFields = false
   ;
 
@@ -899,7 +899,7 @@ class BatchDeleteAlertsResponse extends $pb.GeneratedMessage {
 
   /// The status details for each failed `alert_id`.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1795.Status> get failedAlertStatus => $_getMap(1);
+  $core.Map<$core.String, $1796.Status> get failedAlertStatus => $_getMap(1);
 }
 
 /// A request to perform batch undelete on alerts.
@@ -971,7 +971,7 @@ class BatchUndeleteAlertsRequest extends $pb.GeneratedMessage {
 class BatchUndeleteAlertsResponse extends $pb.GeneratedMessage {
   factory BatchUndeleteAlertsResponse({
     $core.Iterable<$core.String>? successAlertIds,
-    $core.Map<$core.String, $1795.Status>? failedAlertStatus,
+    $core.Map<$core.String, $1796.Status>? failedAlertStatus,
   }) {
     final $result = create();
     if (successAlertIds != null) {
@@ -988,7 +988,7 @@ class BatchUndeleteAlertsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchUndeleteAlertsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.alertcenter.v1beta1'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'successAlertIds')
-    ..m<$core.String, $1795.Status>(2, _omitFieldNames ? '' : 'failedAlertStatus', entryClassName: 'BatchUndeleteAlertsResponse.FailedAlertStatusEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1795.Status.create, valueDefaultOrMaker: $1795.Status.getDefault, packageName: const $pb.PackageName('google.apps.alertcenter.v1beta1'))
+    ..m<$core.String, $1796.Status>(2, _omitFieldNames ? '' : 'failedAlertStatus', entryClassName: 'BatchUndeleteAlertsResponse.FailedAlertStatusEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1796.Status.create, valueDefaultOrMaker: $1796.Status.getDefault, packageName: const $pb.PackageName('google.apps.alertcenter.v1beta1'))
     ..hasRequiredFields = false
   ;
 
@@ -1019,7 +1019,7 @@ class BatchUndeleteAlertsResponse extends $pb.GeneratedMessage {
 
   /// The status details for each failed `alert_id`.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $1795.Status> get failedAlertStatus => $_getMap(1);
+  $core.Map<$core.String, $1796.Status> get failedAlertStatus => $_getMap(1);
 }
 
 /// An alert listing request.

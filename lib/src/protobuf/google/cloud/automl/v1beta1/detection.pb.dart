@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import 'geometry.pb.dart' as $4342;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import 'geometry.pb.dart' as $4343;
 
 /// Annotation details for image object detection.
 class ImageObjectDetectionAnnotation extends $pb.GeneratedMessage {
   factory ImageObjectDetectionAnnotation({
-    $4342.BoundingPoly? boundingBox,
+    $4343.BoundingPoly? boundingBox,
     $core.double? score,
   }) {
     final $result = create();
@@ -36,7 +36,7 @@ class ImageObjectDetectionAnnotation extends $pb.GeneratedMessage {
   factory ImageObjectDetectionAnnotation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageObjectDetectionAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
-    ..aOM<$4342.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4342.BoundingPoly.create)
+    ..aOM<$4343.BoundingPoly>(1, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4343.BoundingPoly.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -64,15 +64,15 @@ class ImageObjectDetectionAnnotation extends $pb.GeneratedMessage {
 
   /// Output only. The rectangle representing the object location.
   @$pb.TagNumber(1)
-  $4342.BoundingPoly get boundingBox => $_getN(0);
+  $4343.BoundingPoly get boundingBox => $_getN(0);
   @$pb.TagNumber(1)
-  set boundingBox($4342.BoundingPoly v) { setField(1, v); }
+  set boundingBox($4343.BoundingPoly v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBoundingBox() => $_has(0);
   @$pb.TagNumber(1)
   void clearBoundingBox() => clearField(1);
   @$pb.TagNumber(1)
-  $4342.BoundingPoly ensureBoundingBox() => $_ensure(0);
+  $4343.BoundingPoly ensureBoundingBox() => $_ensure(0);
 
   /// Output only. The confidence that this annotation is positive for the parent example,
   /// value in [0, 1], higher means higher positivity confidence.
@@ -90,8 +90,8 @@ class ImageObjectDetectionAnnotation extends $pb.GeneratedMessage {
 class VideoObjectTrackingAnnotation extends $pb.GeneratedMessage {
   factory VideoObjectTrackingAnnotation({
     $core.String? instanceId,
-    $1737.Duration? timeOffset,
-    $4342.BoundingPoly? boundingBox,
+    $1738.Duration? timeOffset,
+    $4343.BoundingPoly? boundingBox,
     $core.double? score,
   }) {
     final $result = create();
@@ -115,8 +115,8 @@ class VideoObjectTrackingAnnotation extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoObjectTrackingAnnotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceId')
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$4342.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4342.BoundingPoly.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'timeOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$4343.BoundingPoly>(3, _omitFieldNames ? '' : 'boundingBox', subBuilder: $4343.BoundingPoly.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'score', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -161,28 +161,28 @@ class VideoObjectTrackingAnnotation extends $pb.GeneratedMessage {
   /// Required. A time (frame) of a video to which this annotation pertains.
   /// Represented as the duration since the video's start.
   @$pb.TagNumber(2)
-  $1737.Duration get timeOffset => $_getN(1);
+  $1738.Duration get timeOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set timeOffset($1737.Duration v) { setField(2, v); }
+  set timeOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureTimeOffset() => $_ensure(1);
+  $1738.Duration ensureTimeOffset() => $_ensure(1);
 
   /// Required. The rectangle representing the object location on the frame (i.e.
   /// at the time_offset of the video).
   @$pb.TagNumber(3)
-  $4342.BoundingPoly get boundingBox => $_getN(2);
+  $4343.BoundingPoly get boundingBox => $_getN(2);
   @$pb.TagNumber(3)
-  set boundingBox($4342.BoundingPoly v) { setField(3, v); }
+  set boundingBox($4343.BoundingPoly v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBoundingBox() => $_has(2);
   @$pb.TagNumber(3)
   void clearBoundingBox() => clearField(3);
   @$pb.TagNumber(3)
-  $4342.BoundingPoly ensureBoundingBox() => $_ensure(2);
+  $4343.BoundingPoly ensureBoundingBox() => $_ensure(2);
 
   /// Output only. The confidence that this annotation is positive for the video at
   /// the time_offset, value in [0, 1], higher means higher positivity

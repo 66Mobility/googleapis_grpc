@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/shared_set_status.pbenum.dart' as $3780;
-import '../enums/shared_set_type.pbenum.dart' as $3779;
+import '../enums/shared_set_status.pbenum.dart' as $3781;
+import '../enums/shared_set_type.pbenum.dart' as $3780;
 
 /// SharedSets are used for sharing criterion exclusions across multiple
 /// campaigns.
 class SharedSet extends $pb.GeneratedMessage {
   factory SharedSet({
     $core.String? resourceName,
-    $3779.SharedSetTypeEnum_SharedSetType? type,
-    $3780.SharedSetStatusEnum_SharedSetStatus? status,
+    $3780.SharedSetTypeEnum_SharedSetType? type,
+    $3781.SharedSetStatusEnum_SharedSetStatus? status,
     $fixnum.Int64? id,
     $core.String? name,
     $fixnum.Int64? memberCount,
@@ -59,8 +59,8 @@ class SharedSet extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SharedSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3779.SharedSetTypeEnum_SharedSetType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3779.SharedSetTypeEnum_SharedSetType.UNSPECIFIED, valueOf: $3779.SharedSetTypeEnum_SharedSetType.valueOf, enumValues: $3779.SharedSetTypeEnum_SharedSetType.values)
-    ..e<$3780.SharedSetStatusEnum_SharedSetStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3780.SharedSetStatusEnum_SharedSetStatus.UNSPECIFIED, valueOf: $3780.SharedSetStatusEnum_SharedSetStatus.valueOf, enumValues: $3780.SharedSetStatusEnum_SharedSetStatus.values)
+    ..e<$3780.SharedSetTypeEnum_SharedSetType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3780.SharedSetTypeEnum_SharedSetType.UNSPECIFIED, valueOf: $3780.SharedSetTypeEnum_SharedSetType.valueOf, enumValues: $3780.SharedSetTypeEnum_SharedSetType.values)
+    ..e<$3781.SharedSetStatusEnum_SharedSetStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3781.SharedSetStatusEnum_SharedSetStatus.UNSPECIFIED, valueOf: $3781.SharedSetStatusEnum_SharedSetStatus.valueOf, enumValues: $3781.SharedSetStatusEnum_SharedSetStatus.values)
     ..aInt64(8, _omitFieldNames ? '' : 'id')
     ..aOS(9, _omitFieldNames ? '' : 'name')
     ..aInt64(10, _omitFieldNames ? '' : 'memberCount')
@@ -105,9 +105,9 @@ class SharedSet extends $pb.GeneratedMessage {
   /// Immutable. The type of this shared set: each shared set holds only a single
   /// kind of resource. Required. Immutable.
   @$pb.TagNumber(3)
-  $3779.SharedSetTypeEnum_SharedSetType get type => $_getN(1);
+  $3780.SharedSetTypeEnum_SharedSetType get type => $_getN(1);
   @$pb.TagNumber(3)
-  set type($3779.SharedSetTypeEnum_SharedSetType v) { setField(3, v); }
+  set type($3780.SharedSetTypeEnum_SharedSetType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(3)
@@ -115,9 +115,9 @@ class SharedSet extends $pb.GeneratedMessage {
 
   /// Output only. The status of this shared set. Read only.
   @$pb.TagNumber(5)
-  $3780.SharedSetStatusEnum_SharedSetStatus get status => $_getN(2);
+  $3781.SharedSetStatusEnum_SharedSetStatus get status => $_getN(2);
   @$pb.TagNumber(5)
-  set status($3780.SharedSetStatusEnum_SharedSetStatus v) { setField(5, v); }
+  set status($3781.SharedSetStatusEnum_SharedSetStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(5)

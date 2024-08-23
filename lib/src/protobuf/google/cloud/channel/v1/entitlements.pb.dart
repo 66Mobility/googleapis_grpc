@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'common.pb.dart' as $4426;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'common.pb.dart' as $4428;
 import 'entitlements.pbenum.dart';
 import 'offers.pb.dart' as $754;
 import 'offers.pbenum.dart' as $754;
-import 'products.pb.dart' as $4428;
+import 'products.pb.dart' as $4430;
 
 export 'entitlements.pbenum.dart';
 
@@ -26,8 +26,8 @@ export 'entitlements.pbenum.dart';
 class Entitlement extends $pb.GeneratedMessage {
   factory Entitlement({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? offer,
     CommitmentSettings? commitmentSettings,
     Entitlement_ProvisioningState? provisioningState,
@@ -87,8 +87,8 @@ class Entitlement extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Entitlement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'offer')
     ..aOM<CommitmentSettings>(12, _omitFieldNames ? '' : 'commitmentSettings', subBuilder: CommitmentSettings.create)
     ..e<Entitlement_ProvisioningState>(13, _omitFieldNames ? '' : 'provisioningState', $pb.PbFieldType.OE, defaultOrMaker: Entitlement_ProvisioningState.PROVISIONING_STATE_UNSPECIFIED, valueOf: Entitlement_ProvisioningState.valueOf, enumValues: Entitlement_ProvisioningState.values)
@@ -136,27 +136,27 @@ class Entitlement extends $pb.GeneratedMessage {
 
   /// Output only. The time at which the entitlement is created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which the entitlement is updated.
   @$pb.TagNumber(6)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(6)
-  set updateTime($1775.Timestamp v) { setField(6, v); }
+  set updateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Required. The offer resource name for which the entitlement is to be
   /// created. Takes the form: accounts/{account_id}/offers/{offer_id}.
@@ -286,7 +286,7 @@ class Entitlement extends $pb.GeneratedMessage {
 class Parameter extends $pb.GeneratedMessage {
   factory Parameter({
     $core.String? name,
-    $4426.Value? value,
+    $4428.Value? value,
     $core.bool? editable,
   }) {
     final $result = create();
@@ -307,7 +307,7 @@ class Parameter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Parameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4426.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $4426.Value.create)
+    ..aOM<$4428.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $4428.Value.create)
     ..aOB(3, _omitFieldNames ? '' : 'editable')
     ..hasRequiredFields = false
   ;
@@ -345,15 +345,15 @@ class Parameter extends $pb.GeneratedMessage {
 
   /// Value of the parameter.
   @$pb.TagNumber(2)
-  $4426.Value get value => $_getN(1);
+  $4428.Value get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($4426.Value v) { setField(2, v); }
+  set value($4428.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $4426.Value ensureValue() => $_ensure(1);
+  $4428.Value ensureValue() => $_ensure(1);
 
   /// Output only. Specifies whether this parameter is allowed to be changed. For
   /// example, for a Google Workspace Business Starter entitlement in commitment
@@ -509,8 +509,8 @@ class ProvisionedService extends $pb.GeneratedMessage {
 /// Commitment settings for commitment-based offers.
 class CommitmentSettings extends $pb.GeneratedMessage {
   factory CommitmentSettings({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     RenewalSettings? renewalSettings,
   }) {
     final $result = create();
@@ -530,8 +530,8 @@ class CommitmentSettings extends $pb.GeneratedMessage {
   factory CommitmentSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommitmentSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOM<RenewalSettings>(4, _omitFieldNames ? '' : 'renewalSettings', subBuilder: RenewalSettings.create)
     ..hasRequiredFields = false
   ;
@@ -559,27 +559,27 @@ class CommitmentSettings extends $pb.GeneratedMessage {
 
   /// Output only. Commitment start timestamp.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Output only. Commitment end timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Optional. Renewal settings applicable for a commitment-based Offer.
   @$pb.TagNumber(4)
@@ -699,7 +699,7 @@ class RenewalSettings extends $pb.GeneratedMessage {
 class TrialSettings extends $pb.GeneratedMessage {
   factory TrialSettings({
     $core.bool? trial,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (trial != null) {
@@ -716,7 +716,7 @@ class TrialSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrialSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'trial')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -758,15 +758,15 @@ class TrialSettings extends $pb.GeneratedMessage {
   /// using the UNIX Epoch format. See an example [Epoch
   /// converter](https://www.epochconverter.com).
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// TransferableSku represents information a reseller needs to view existing
@@ -775,8 +775,8 @@ class TrialSettings extends $pb.GeneratedMessage {
 class TransferableSku extends $pb.GeneratedMessage {
   factory TransferableSku({
     TransferEligibility? transferEligibility,
-    $4428.Sku? sku,
-    $4428.Sku? legacySku,
+    $4430.Sku? sku,
+    $4430.Sku? legacySku,
   }) {
     final $result = create();
     if (transferEligibility != null) {
@@ -796,8 +796,8 @@ class TransferableSku extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransferableSku', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.channel.v1'), createEmptyInstance: create)
     ..aOM<TransferEligibility>(9, _omitFieldNames ? '' : 'transferEligibility', subBuilder: TransferEligibility.create)
-    ..aOM<$4428.Sku>(11, _omitFieldNames ? '' : 'sku', subBuilder: $4428.Sku.create)
-    ..aOM<$4428.Sku>(12, _omitFieldNames ? '' : 'legacySku', subBuilder: $4428.Sku.create)
+    ..aOM<$4430.Sku>(11, _omitFieldNames ? '' : 'sku', subBuilder: $4430.Sku.create)
+    ..aOM<$4430.Sku>(12, _omitFieldNames ? '' : 'legacySku', subBuilder: $4430.Sku.create)
     ..hasRequiredFields = false
   ;
 
@@ -836,28 +836,28 @@ class TransferableSku extends $pb.GeneratedMessage {
 
   /// The SKU pertaining to the provisioning resource as specified in the Offer.
   @$pb.TagNumber(11)
-  $4428.Sku get sku => $_getN(1);
+  $4430.Sku get sku => $_getN(1);
   @$pb.TagNumber(11)
-  set sku($4428.Sku v) { setField(11, v); }
+  set sku($4430.Sku v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSku() => $_has(1);
   @$pb.TagNumber(11)
   void clearSku() => clearField(11);
   @$pb.TagNumber(11)
-  $4428.Sku ensureSku() => $_ensure(1);
+  $4430.Sku ensureSku() => $_ensure(1);
 
   /// Optional. The customer to transfer has an entitlement with the populated
   /// legacy SKU.
   @$pb.TagNumber(12)
-  $4428.Sku get legacySku => $_getN(2);
+  $4430.Sku get legacySku => $_getN(2);
   @$pb.TagNumber(12)
-  set legacySku($4428.Sku v) { setField(12, v); }
+  set legacySku($4430.Sku v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasLegacySku() => $_has(2);
   @$pb.TagNumber(12)
   void clearLegacySku() => clearField(12);
   @$pb.TagNumber(12)
-  $4428.Sku ensureLegacySku() => $_ensure(2);
+  $4430.Sku ensureLegacySku() => $_ensure(2);
 }
 
 /// Specifies transfer eligibility of a SKU.

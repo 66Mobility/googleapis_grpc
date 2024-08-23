@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/asset_policy.pb.dart' as $3246;
-import '../enums/asset_field_type.pbenum.dart' as $3540;
-import '../enums/asset_link_primary_status.pbenum.dart' as $3244;
-import '../enums/asset_link_primary_status_reason.pbenum.dart' as $3243;
-import '../enums/asset_link_status.pbenum.dart' as $3551;
-import '../enums/asset_source.pbenum.dart' as $3550;
+import '../common/asset_policy.pb.dart' as $3247;
+import '../enums/asset_field_type.pbenum.dart' as $3541;
+import '../enums/asset_link_primary_status.pbenum.dart' as $3245;
+import '../enums/asset_link_primary_status_reason.pbenum.dart' as $3244;
+import '../enums/asset_link_status.pbenum.dart' as $3552;
+import '../enums/asset_source.pbenum.dart' as $3551;
 
 /// A link between an ad group and an asset.
 class AdGroupAsset extends $pb.GeneratedMessage {
@@ -26,12 +26,12 @@ class AdGroupAsset extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? adGroup,
     $core.String? asset,
-    $3540.AssetFieldTypeEnum_AssetFieldType? fieldType,
-    $3551.AssetLinkStatusEnum_AssetLinkStatus? status,
-    $3550.AssetSourceEnum_AssetSource? source,
-    $3244.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? primaryStatus,
-    $core.Iterable<$3246.AssetLinkPrimaryStatusDetails>? primaryStatusDetails,
-    $core.Iterable<$3243.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>? primaryStatusReasons,
+    $3541.AssetFieldTypeEnum_AssetFieldType? fieldType,
+    $3552.AssetLinkStatusEnum_AssetLinkStatus? status,
+    $3551.AssetSourceEnum_AssetSource? source,
+    $3245.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus? primaryStatus,
+    $core.Iterable<$3247.AssetLinkPrimaryStatusDetails>? primaryStatusDetails,
+    $core.Iterable<$3244.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>? primaryStatusReasons,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -71,12 +71,12 @@ class AdGroupAsset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'adGroup')
     ..aOS(3, _omitFieldNames ? '' : 'asset')
-    ..e<$3540.AssetFieldTypeEnum_AssetFieldType>(4, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3540.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3540.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3540.AssetFieldTypeEnum_AssetFieldType.values)
-    ..e<$3551.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3551.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $3551.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $3551.AssetLinkStatusEnum_AssetLinkStatus.values)
-    ..e<$3550.AssetSourceEnum_AssetSource>(6, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $3550.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $3550.AssetSourceEnum_AssetSource.valueOf, enumValues: $3550.AssetSourceEnum_AssetSource.values)
-    ..e<$3244.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(7, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $3244.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $3244.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $3244.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
-    ..pc<$3246.AssetLinkPrimaryStatusDetails>(8, _omitFieldNames ? '' : 'primaryStatusDetails', $pb.PbFieldType.PM, subBuilder: $3246.AssetLinkPrimaryStatusDetails.create)
-    ..pc<$3243.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(9, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $3243.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $3243.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values, defaultEnumValue: $3243.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED)
+    ..e<$3541.AssetFieldTypeEnum_AssetFieldType>(4, _omitFieldNames ? '' : 'fieldType', $pb.PbFieldType.OE, defaultOrMaker: $3541.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED, valueOf: $3541.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $3541.AssetFieldTypeEnum_AssetFieldType.values)
+    ..e<$3552.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3552.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $3552.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $3552.AssetLinkStatusEnum_AssetLinkStatus.values)
+    ..e<$3551.AssetSourceEnum_AssetSource>(6, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: $3551.AssetSourceEnum_AssetSource.UNSPECIFIED, valueOf: $3551.AssetSourceEnum_AssetSource.valueOf, enumValues: $3551.AssetSourceEnum_AssetSource.values)
+    ..e<$3245.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus>(7, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $3245.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.UNSPECIFIED, valueOf: $3245.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.valueOf, enumValues: $3245.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus.values)
+    ..pc<$3247.AssetLinkPrimaryStatusDetails>(8, _omitFieldNames ? '' : 'primaryStatusDetails', $pb.PbFieldType.PM, subBuilder: $3247.AssetLinkPrimaryStatusDetails.create)
+    ..pc<$3244.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason>(9, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $3244.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.valueOf, enumValues: $3244.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.values, defaultEnumValue: $3244.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -136,9 +136,9 @@ class AdGroupAsset extends $pb.GeneratedMessage {
 
   /// Required. Immutable. Role that the asset takes under the linked ad group.
   @$pb.TagNumber(4)
-  $3540.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(3);
+  $3541.AssetFieldTypeEnum_AssetFieldType get fieldType => $_getN(3);
   @$pb.TagNumber(4)
-  set fieldType($3540.AssetFieldTypeEnum_AssetFieldType v) { setField(4, v); }
+  set fieldType($3541.AssetFieldTypeEnum_AssetFieldType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFieldType() => $_has(3);
   @$pb.TagNumber(4)
@@ -146,9 +146,9 @@ class AdGroupAsset extends $pb.GeneratedMessage {
 
   /// Status of the ad group asset.
   @$pb.TagNumber(5)
-  $3551.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(4);
+  $3552.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($3551.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
+  set status($3552.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)
@@ -156,9 +156,9 @@ class AdGroupAsset extends $pb.GeneratedMessage {
 
   /// Output only. Source of the adgroup asset link.
   @$pb.TagNumber(6)
-  $3550.AssetSourceEnum_AssetSource get source => $_getN(5);
+  $3551.AssetSourceEnum_AssetSource get source => $_getN(5);
   @$pb.TagNumber(6)
-  set source($3550.AssetSourceEnum_AssetSource v) { setField(6, v); }
+  set source($3551.AssetSourceEnum_AssetSource v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSource() => $_has(5);
   @$pb.TagNumber(6)
@@ -171,9 +171,9 @@ class AdGroupAsset extends $pb.GeneratedMessage {
   /// its mainly policy and quality approvals) to come up with a more
   /// comprehensive status to indicate its serving state.
   @$pb.TagNumber(7)
-  $3244.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get primaryStatus => $_getN(6);
+  $3245.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus get primaryStatus => $_getN(6);
   @$pb.TagNumber(7)
-  set primaryStatus($3244.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(7, v); }
+  set primaryStatus($3245.AssetLinkPrimaryStatusEnum_AssetLinkPrimaryStatus v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPrimaryStatus() => $_has(6);
   @$pb.TagNumber(7)
@@ -182,12 +182,12 @@ class AdGroupAsset extends $pb.GeneratedMessage {
   /// Output only. Provides the details of the primary status and its associated
   /// reasons.
   @$pb.TagNumber(8)
-  $core.List<$3246.AssetLinkPrimaryStatusDetails> get primaryStatusDetails => $_getList(7);
+  $core.List<$3247.AssetLinkPrimaryStatusDetails> get primaryStatusDetails => $_getList(7);
 
   /// Output only. Provides a list of reasons for why an asset is not serving or
   /// not serving at full capacity.
   @$pb.TagNumber(9)
-  $core.List<$3243.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason> get primaryStatusReasons => $_getList(8);
+  $core.List<$3244.AssetLinkPrimaryStatusReasonEnum_AssetLinkPrimaryStatusReason> get primaryStatusReasons => $_getList(8);
 }
 
 

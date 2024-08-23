@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/call_tracking_display_location.pbenum.dart' as $2872;
-import '../enums/call_type.pbenum.dart' as $2873;
-import '../enums/google_voice_call_status.pbenum.dart' as $2874;
+import '../enums/call_tracking_display_location.pbenum.dart' as $2873;
+import '../enums/call_type.pbenum.dart' as $2874;
+import '../enums/google_voice_call_status.pbenum.dart' as $2875;
 
 /// A call view that includes data for call tracking of call-only ads or call
 /// extensions.
@@ -28,9 +28,9 @@ class CallView extends $pb.GeneratedMessage {
     $fixnum.Int64? callDurationSeconds,
     $core.String? startCallDateTime,
     $core.String? endCallDateTime,
-    $2872.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation? callTrackingDisplayLocation,
-    $2873.CallTypeEnum_CallType? type,
-    $2874.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus? callStatus,
+    $2873.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation? callTrackingDisplayLocation,
+    $2874.CallTypeEnum_CallType? type,
+    $2875.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus? callStatus,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -73,9 +73,9 @@ class CallView extends $pb.GeneratedMessage {
     ..aInt64(4, _omitFieldNames ? '' : 'callDurationSeconds')
     ..aOS(5, _omitFieldNames ? '' : 'startCallDateTime')
     ..aOS(6, _omitFieldNames ? '' : 'endCallDateTime')
-    ..e<$2872.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation>(7, _omitFieldNames ? '' : 'callTrackingDisplayLocation', $pb.PbFieldType.OE, defaultOrMaker: $2872.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation.UNSPECIFIED, valueOf: $2872.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation.valueOf, enumValues: $2872.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation.values)
-    ..e<$2873.CallTypeEnum_CallType>(8, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2873.CallTypeEnum_CallType.UNSPECIFIED, valueOf: $2873.CallTypeEnum_CallType.valueOf, enumValues: $2873.CallTypeEnum_CallType.values)
-    ..e<$2874.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus>(9, _omitFieldNames ? '' : 'callStatus', $pb.PbFieldType.OE, defaultOrMaker: $2874.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus.UNSPECIFIED, valueOf: $2874.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus.valueOf, enumValues: $2874.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus.values)
+    ..e<$2873.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation>(7, _omitFieldNames ? '' : 'callTrackingDisplayLocation', $pb.PbFieldType.OE, defaultOrMaker: $2873.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation.UNSPECIFIED, valueOf: $2873.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation.valueOf, enumValues: $2873.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation.values)
+    ..e<$2874.CallTypeEnum_CallType>(8, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2874.CallTypeEnum_CallType.UNSPECIFIED, valueOf: $2874.CallTypeEnum_CallType.valueOf, enumValues: $2874.CallTypeEnum_CallType.values)
+    ..e<$2875.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus>(9, _omitFieldNames ? '' : 'callStatus', $pb.PbFieldType.OE, defaultOrMaker: $2875.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus.UNSPECIFIED, valueOf: $2875.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus.valueOf, enumValues: $2875.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -166,9 +166,9 @@ class CallView extends $pb.GeneratedMessage {
 
   /// Output only. The call tracking display location.
   @$pb.TagNumber(7)
-  $2872.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation get callTrackingDisplayLocation => $_getN(6);
+  $2873.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation get callTrackingDisplayLocation => $_getN(6);
   @$pb.TagNumber(7)
-  set callTrackingDisplayLocation($2872.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation v) { setField(7, v); }
+  set callTrackingDisplayLocation($2873.CallTrackingDisplayLocationEnum_CallTrackingDisplayLocation v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCallTrackingDisplayLocation() => $_has(6);
   @$pb.TagNumber(7)
@@ -176,9 +176,9 @@ class CallView extends $pb.GeneratedMessage {
 
   /// Output only. The type of the call.
   @$pb.TagNumber(8)
-  $2873.CallTypeEnum_CallType get type => $_getN(7);
+  $2874.CallTypeEnum_CallType get type => $_getN(7);
   @$pb.TagNumber(8)
-  set type($2873.CallTypeEnum_CallType v) { setField(8, v); }
+  set type($2874.CallTypeEnum_CallType v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasType() => $_has(7);
   @$pb.TagNumber(8)
@@ -186,9 +186,9 @@ class CallView extends $pb.GeneratedMessage {
 
   /// Output only. The status of the call.
   @$pb.TagNumber(9)
-  $2874.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus get callStatus => $_getN(8);
+  $2875.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus get callStatus => $_getN(8);
   @$pb.TagNumber(9)
-  set callStatus($2874.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus v) { setField(9, v); }
+  set callStatus($2875.GoogleVoiceCallStatusEnum_GoogleVoiceCallStatus v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCallStatus() => $_has(8);
   @$pb.TagNumber(9)

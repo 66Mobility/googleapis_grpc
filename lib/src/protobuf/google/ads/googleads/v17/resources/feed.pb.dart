@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/affiliate_location_feed_relationship_type.pbenum.dart' as $3637;
-import '../enums/feed_attribute_type.pbenum.dart' as $3638;
-import '../enums/feed_origin.pbenum.dart' as $3635;
-import '../enums/feed_status.pbenum.dart' as $3636;
+import '../enums/affiliate_location_feed_relationship_type.pbenum.dart' as $3638;
+import '../enums/feed_attribute_type.pbenum.dart' as $3639;
+import '../enums/feed_origin.pbenum.dart' as $3636;
+import '../enums/feed_status.pbenum.dart' as $3637;
 import 'feed.pbenum.dart';
 
 export 'feed.pbenum.dart';
@@ -239,7 +239,7 @@ class Feed_PlacesLocationFeedData extends $pb.GeneratedMessage {
 /// specified chains.
 class Feed_AffiliateLocationFeedData extends $pb.GeneratedMessage {
   factory Feed_AffiliateLocationFeedData({
-    $3637.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType? relationshipType,
+    $3638.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType? relationshipType,
     $core.Iterable<$fixnum.Int64>? chainIds,
   }) {
     final $result = create();
@@ -256,7 +256,7 @@ class Feed_AffiliateLocationFeedData extends $pb.GeneratedMessage {
   factory Feed_AffiliateLocationFeedData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Feed.AffiliateLocationFeedData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..e<$3637.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType>(2, _omitFieldNames ? '' : 'relationshipType', $pb.PbFieldType.OE, defaultOrMaker: $3637.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType.UNSPECIFIED, valueOf: $3637.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType.valueOf, enumValues: $3637.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType.values)
+    ..e<$3638.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType>(2, _omitFieldNames ? '' : 'relationshipType', $pb.PbFieldType.OE, defaultOrMaker: $3638.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType.UNSPECIFIED, valueOf: $3638.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType.valueOf, enumValues: $3638.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType.values)
     ..p<$fixnum.Int64>(3, _omitFieldNames ? '' : 'chainIds', $pb.PbFieldType.K6)
     ..hasRequiredFields = false
   ;
@@ -284,9 +284,9 @@ class Feed_AffiliateLocationFeedData extends $pb.GeneratedMessage {
 
   /// The relationship the chains have with the advertiser.
   @$pb.TagNumber(2)
-  $3637.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType get relationshipType => $_getN(0);
+  $3638.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType get relationshipType => $_getN(0);
   @$pb.TagNumber(2)
-  set relationshipType($3637.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType v) { setField(2, v); }
+  set relationshipType($3638.AffiliateLocationFeedRelationshipTypeEnum_AffiliateLocationFeedRelationshipType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRelationshipType() => $_has(0);
   @$pb.TagNumber(2)
@@ -309,10 +309,10 @@ class Feed extends $pb.GeneratedMessage {
   factory Feed({
     $core.String? resourceName,
     $core.Iterable<FeedAttribute>? attributes,
-    $3635.FeedOriginEnum_FeedOrigin? origin,
+    $3636.FeedOriginEnum_FeedOrigin? origin,
     Feed_PlacesLocationFeedData? placesLocationFeedData,
     Feed_AffiliateLocationFeedData? affiliateLocationFeedData,
-    $3636.FeedStatusEnum_FeedStatus? status,
+    $3637.FeedStatusEnum_FeedStatus? status,
     $core.Iterable<FeedAttributeOperation>? attributeOperations,
     $fixnum.Int64? id,
     $core.String? name,
@@ -360,10 +360,10 @@ class Feed extends $pb.GeneratedMessage {
     ..oo(0, [6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..pc<FeedAttribute>(4, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: FeedAttribute.create)
-    ..e<$3635.FeedOriginEnum_FeedOrigin>(5, _omitFieldNames ? '' : 'origin', $pb.PbFieldType.OE, defaultOrMaker: $3635.FeedOriginEnum_FeedOrigin.UNSPECIFIED, valueOf: $3635.FeedOriginEnum_FeedOrigin.valueOf, enumValues: $3635.FeedOriginEnum_FeedOrigin.values)
+    ..e<$3636.FeedOriginEnum_FeedOrigin>(5, _omitFieldNames ? '' : 'origin', $pb.PbFieldType.OE, defaultOrMaker: $3636.FeedOriginEnum_FeedOrigin.UNSPECIFIED, valueOf: $3636.FeedOriginEnum_FeedOrigin.valueOf, enumValues: $3636.FeedOriginEnum_FeedOrigin.values)
     ..aOM<Feed_PlacesLocationFeedData>(6, _omitFieldNames ? '' : 'placesLocationFeedData', subBuilder: Feed_PlacesLocationFeedData.create)
     ..aOM<Feed_AffiliateLocationFeedData>(7, _omitFieldNames ? '' : 'affiliateLocationFeedData', subBuilder: Feed_AffiliateLocationFeedData.create)
-    ..e<$3636.FeedStatusEnum_FeedStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3636.FeedStatusEnum_FeedStatus.UNSPECIFIED, valueOf: $3636.FeedStatusEnum_FeedStatus.valueOf, enumValues: $3636.FeedStatusEnum_FeedStatus.values)
+    ..e<$3637.FeedStatusEnum_FeedStatus>(8, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3637.FeedStatusEnum_FeedStatus.UNSPECIFIED, valueOf: $3637.FeedStatusEnum_FeedStatus.valueOf, enumValues: $3637.FeedStatusEnum_FeedStatus.values)
     ..pc<FeedAttributeOperation>(9, _omitFieldNames ? '' : 'attributeOperations', $pb.PbFieldType.PM, subBuilder: FeedAttributeOperation.create)
     ..aInt64(11, _omitFieldNames ? '' : 'id')
     ..aOS(12, _omitFieldNames ? '' : 'name')
@@ -416,9 +416,9 @@ class Feed extends $pb.GeneratedMessage {
 
   /// Immutable. Specifies who manages the FeedAttributes for the Feed.
   @$pb.TagNumber(5)
-  $3635.FeedOriginEnum_FeedOrigin get origin => $_getN(2);
+  $3636.FeedOriginEnum_FeedOrigin get origin => $_getN(2);
   @$pb.TagNumber(5)
-  set origin($3635.FeedOriginEnum_FeedOrigin v) { setField(5, v); }
+  set origin($3636.FeedOriginEnum_FeedOrigin v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOrigin() => $_has(2);
   @$pb.TagNumber(5)
@@ -452,9 +452,9 @@ class Feed extends $pb.GeneratedMessage {
   /// Output only. Status of the feed.
   /// This field is read-only.
   @$pb.TagNumber(8)
-  $3636.FeedStatusEnum_FeedStatus get status => $_getN(5);
+  $3637.FeedStatusEnum_FeedStatus get status => $_getN(5);
   @$pb.TagNumber(8)
-  set status($3636.FeedStatusEnum_FeedStatus v) { setField(8, v); }
+  set status($3637.FeedStatusEnum_FeedStatus v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStatus() => $_has(5);
   @$pb.TagNumber(8)
@@ -493,7 +493,7 @@ class Feed extends $pb.GeneratedMessage {
 /// being part of a FeedItem's unique key.
 class FeedAttribute extends $pb.GeneratedMessage {
   factory FeedAttribute({
-    $3638.FeedAttributeTypeEnum_FeedAttributeType? type,
+    $3639.FeedAttributeTypeEnum_FeedAttributeType? type,
     $fixnum.Int64? id,
     $core.String? name,
     $core.bool? isPartOfKey,
@@ -518,7 +518,7 @@ class FeedAttribute extends $pb.GeneratedMessage {
   factory FeedAttribute.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedAttribute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..e<$3638.FeedAttributeTypeEnum_FeedAttributeType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3638.FeedAttributeTypeEnum_FeedAttributeType.UNSPECIFIED, valueOf: $3638.FeedAttributeTypeEnum_FeedAttributeType.valueOf, enumValues: $3638.FeedAttributeTypeEnum_FeedAttributeType.values)
+    ..e<$3639.FeedAttributeTypeEnum_FeedAttributeType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3639.FeedAttributeTypeEnum_FeedAttributeType.UNSPECIFIED, valueOf: $3639.FeedAttributeTypeEnum_FeedAttributeType.valueOf, enumValues: $3639.FeedAttributeTypeEnum_FeedAttributeType.values)
     ..aInt64(5, _omitFieldNames ? '' : 'id')
     ..aOS(6, _omitFieldNames ? '' : 'name')
     ..aOB(7, _omitFieldNames ? '' : 'isPartOfKey')
@@ -548,9 +548,9 @@ class FeedAttribute extends $pb.GeneratedMessage {
 
   /// Data type for feed attribute. Required.
   @$pb.TagNumber(3)
-  $3638.FeedAttributeTypeEnum_FeedAttributeType get type => $_getN(0);
+  $3639.FeedAttributeTypeEnum_FeedAttributeType get type => $_getN(0);
   @$pb.TagNumber(3)
-  set type($3638.FeedAttributeTypeEnum_FeedAttributeType v) { setField(3, v); }
+  set type($3639.FeedAttributeTypeEnum_FeedAttributeType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(3)

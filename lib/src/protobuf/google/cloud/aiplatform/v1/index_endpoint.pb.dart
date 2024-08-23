@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'encryption_spec.pb.dart' as $4240;
-import 'machine_resources.pb.dart' as $4242;
-import 'service_networking.pb.dart' as $4253;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'encryption_spec.pb.dart' as $4241;
+import 'machine_resources.pb.dart' as $4243;
+import 'service_networking.pb.dart' as $4254;
 
 /// Indexes are deployed into it. An IndexEndpoint can have multiple
 /// DeployedIndexes.
@@ -28,15 +28,15 @@ class IndexEndpoint extends $pb.GeneratedMessage {
     $core.Iterable<DeployedIndex>? deployedIndexes,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? network,
   @$core.Deprecated('This field is deprecated.')
     $core.bool? enablePrivateServiceConnect,
-    $4253.PrivateServiceConnectConfig? privateServiceConnectConfig,
+    $4254.PrivateServiceConnectConfig? privateServiceConnectConfig,
     $core.bool? publicEndpointEnabled,
     $core.String? publicEndpointDomainName,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
   }) {
@@ -103,14 +103,14 @@ class IndexEndpoint extends $pb.GeneratedMessage {
     ..pc<DeployedIndex>(4, _omitFieldNames ? '' : 'deployedIndexes', $pb.PbFieldType.PM, subBuilder: DeployedIndex.create)
     ..aOS(5, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'IndexEndpoint.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'network')
     ..aOB(10, _omitFieldNames ? '' : 'enablePrivateServiceConnect')
-    ..aOM<$4253.PrivateServiceConnectConfig>(12, _omitFieldNames ? '' : 'privateServiceConnectConfig', subBuilder: $4253.PrivateServiceConnectConfig.create)
+    ..aOM<$4254.PrivateServiceConnectConfig>(12, _omitFieldNames ? '' : 'privateServiceConnectConfig', subBuilder: $4254.PrivateServiceConnectConfig.create)
     ..aOB(13, _omitFieldNames ? '' : 'publicEndpointEnabled')
     ..aOS(14, _omitFieldNames ? '' : 'publicEndpointDomainName')
-    ..aOM<$4240.EncryptionSpec>(15, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(15, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOB(17, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(18, _omitFieldNames ? '' : 'satisfiesPzi')
     ..hasRequiredFields = false
@@ -196,30 +196,30 @@ class IndexEndpoint extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this IndexEndpoint was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Timestamp when this IndexEndpoint was last updated.
   /// This timestamp is not updated when the endpoint's DeployedIndexes are
   /// updated, e.g. due to updates of the original Indexes they are the
   /// deployments of.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   ///  Optional. The full name of the Google Compute Engine
   ///  [network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks)
@@ -271,15 +271,15 @@ class IndexEndpoint extends $pb.GeneratedMessage {
   ///  [private_service_connect_config][google.cloud.aiplatform.v1.IndexEndpoint.private_service_connect_config]
   ///  are mutually exclusive.
   @$pb.TagNumber(12)
-  $4253.PrivateServiceConnectConfig get privateServiceConnectConfig => $_getN(10);
+  $4254.PrivateServiceConnectConfig get privateServiceConnectConfig => $_getN(10);
   @$pb.TagNumber(12)
-  set privateServiceConnectConfig($4253.PrivateServiceConnectConfig v) { setField(12, v); }
+  set privateServiceConnectConfig($4254.PrivateServiceConnectConfig v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasPrivateServiceConnectConfig() => $_has(10);
   @$pb.TagNumber(12)
   void clearPrivateServiceConnectConfig() => clearField(12);
   @$pb.TagNumber(12)
-  $4253.PrivateServiceConnectConfig ensurePrivateServiceConnectConfig() => $_ensure(10);
+  $4254.PrivateServiceConnectConfig ensurePrivateServiceConnectConfig() => $_ensure(10);
 
   /// Optional. If true, the deployed index will be accessible through public
   /// endpoint.
@@ -309,15 +309,15 @@ class IndexEndpoint extends $pb.GeneratedMessage {
   /// set, this IndexEndpoint and all sub-resources of this IndexEndpoint will be
   /// secured by this key.
   @$pb.TagNumber(15)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(13);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(13);
   @$pb.TagNumber(15)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(15, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasEncryptionSpec() => $_has(13);
   @$pb.TagNumber(15)
   void clearEncryptionSpec() => clearField(15);
   @$pb.TagNumber(15)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(13);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(13);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(17)
@@ -346,15 +346,15 @@ class DeployedIndex extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? index,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     IndexPrivateEndpoints? privateEndpoints,
-    $1775.Timestamp? indexSyncTime,
-    $4242.AutomaticResources? automaticResources,
+    $1776.Timestamp? indexSyncTime,
+    $4243.AutomaticResources? automaticResources,
     $core.bool? enableAccessLogging,
     DeployedIndexAuthConfig? deployedIndexAuthConfig,
     $core.Iterable<$core.String>? reservedIpRanges,
     $core.String? deploymentGroup,
-    $4242.DedicatedResources? dedicatedResources,
+    $4243.DedicatedResources? dedicatedResources,
   }) {
     final $result = create();
     if (id != null) {
@@ -403,15 +403,15 @@ class DeployedIndex extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'index')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<IndexPrivateEndpoints>(5, _omitFieldNames ? '' : 'privateEndpoints', subBuilder: IndexPrivateEndpoints.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'indexSyncTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4242.AutomaticResources>(7, _omitFieldNames ? '' : 'automaticResources', subBuilder: $4242.AutomaticResources.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'indexSyncTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4243.AutomaticResources>(7, _omitFieldNames ? '' : 'automaticResources', subBuilder: $4243.AutomaticResources.create)
     ..aOB(8, _omitFieldNames ? '' : 'enableAccessLogging')
     ..aOM<DeployedIndexAuthConfig>(9, _omitFieldNames ? '' : 'deployedIndexAuthConfig', subBuilder: DeployedIndexAuthConfig.create)
     ..pPS(10, _omitFieldNames ? '' : 'reservedIpRanges')
     ..aOS(11, _omitFieldNames ? '' : 'deploymentGroup')
-    ..aOM<$4242.DedicatedResources>(16, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4242.DedicatedResources.create)
+    ..aOM<$4243.DedicatedResources>(16, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4243.DedicatedResources.create)
     ..hasRequiredFields = false
   ;
 
@@ -473,15 +473,15 @@ class DeployedIndex extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the DeployedIndex was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Provides paths for users to send requests directly to the
   /// deployed index services running on Cloud via private services access. This
@@ -513,15 +513,15 @@ class DeployedIndex extends $pb.GeneratedMessage {
   /// [update_time][google.cloud.aiplatform.v1.GenericOperationMetadata.update_time]
   /// equal or before this sync time are contained in this DeployedIndex.
   @$pb.TagNumber(6)
-  $1775.Timestamp get indexSyncTime => $_getN(5);
+  $1776.Timestamp get indexSyncTime => $_getN(5);
   @$pb.TagNumber(6)
-  set indexSyncTime($1775.Timestamp v) { setField(6, v); }
+  set indexSyncTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasIndexSyncTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearIndexSyncTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureIndexSyncTime() => $_ensure(5);
+  $1776.Timestamp ensureIndexSyncTime() => $_ensure(5);
 
   /// Optional. A description of resources that the DeployedIndex uses, which to
   /// large degree are decided by Vertex AI, and optionally allows only a modest
@@ -531,15 +531,15 @@ class DeployedIndex extends $pb.GeneratedMessage {
   /// default value is min_replica_count. The max allowed replica count is
   /// 1000.
   @$pb.TagNumber(7)
-  $4242.AutomaticResources get automaticResources => $_getN(6);
+  $4243.AutomaticResources get automaticResources => $_getN(6);
   @$pb.TagNumber(7)
-  set automaticResources($4242.AutomaticResources v) { setField(7, v); }
+  set automaticResources($4243.AutomaticResources v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAutomaticResources() => $_has(6);
   @$pb.TagNumber(7)
   void clearAutomaticResources() => clearField(7);
   @$pb.TagNumber(7)
-  $4242.AutomaticResources ensureAutomaticResources() => $_ensure(6);
+  $4243.AutomaticResources ensureAutomaticResources() => $_ensure(6);
 
   ///  Optional. If true, private endpoint's access logs are sent to Cloud
   ///  Logging.
@@ -627,15 +627,15 @@ class DeployedIndex extends $pb.GeneratedMessage {
   ///  n1-standard-16 and n1-standard-32 are still available, but we recommend
   ///  e2-standard-16 and e2-highmem-16 for cost efficiency.
   @$pb.TagNumber(16)
-  $4242.DedicatedResources get dedicatedResources => $_getN(11);
+  $4243.DedicatedResources get dedicatedResources => $_getN(11);
   @$pb.TagNumber(16)
-  set dedicatedResources($4242.DedicatedResources v) { setField(16, v); }
+  set dedicatedResources($4243.DedicatedResources v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasDedicatedResources() => $_has(11);
   @$pb.TagNumber(16)
   void clearDedicatedResources() => clearField(16);
   @$pb.TagNumber(16)
-  $4242.DedicatedResources ensureDedicatedResources() => $_ensure(11);
+  $4243.DedicatedResources ensureDedicatedResources() => $_ensure(11);
 }
 
 /// Configuration for an authentication provider, including support for
@@ -764,7 +764,7 @@ class IndexPrivateEndpoints extends $pb.GeneratedMessage {
   factory IndexPrivateEndpoints({
     $core.String? matchGrpcAddress,
     $core.String? serviceAttachment,
-    $core.Iterable<$4253.PscAutomatedEndpoints>? pscAutomatedEndpoints,
+    $core.Iterable<$4254.PscAutomatedEndpoints>? pscAutomatedEndpoints,
   }) {
     final $result = create();
     if (matchGrpcAddress != null) {
@@ -785,7 +785,7 @@ class IndexPrivateEndpoints extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IndexPrivateEndpoints', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'matchGrpcAddress')
     ..aOS(2, _omitFieldNames ? '' : 'serviceAttachment')
-    ..pc<$4253.PscAutomatedEndpoints>(3, _omitFieldNames ? '' : 'pscAutomatedEndpoints', $pb.PbFieldType.PM, subBuilder: $4253.PscAutomatedEndpoints.create)
+    ..pc<$4254.PscAutomatedEndpoints>(3, _omitFieldNames ? '' : 'pscAutomatedEndpoints', $pb.PbFieldType.PM, subBuilder: $4254.PscAutomatedEndpoints.create)
     ..hasRequiredFields = false
   ;
 
@@ -834,7 +834,7 @@ class IndexPrivateEndpoints extends $pb.GeneratedMessage {
   /// Output only. PscAutomatedEndpoints is populated if private service connect
   /// is enabled if PscAutomatedConfig is set.
   @$pb.TagNumber(3)
-  $core.List<$4253.PscAutomatedEndpoints> get pscAutomatedEndpoints => $_getList(2);
+  $core.List<$4254.PscAutomatedEndpoints> get pscAutomatedEndpoints => $_getList(2);
 }
 
 

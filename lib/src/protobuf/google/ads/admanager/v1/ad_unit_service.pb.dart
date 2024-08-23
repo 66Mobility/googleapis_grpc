@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'ad_unit_enums.pbenum.dart' as $1807;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'ad_unit_enums.pbenum.dart' as $1808;
 import 'ad_unit_service.pbenum.dart';
-import 'ad_unit_size.pb.dart' as $1804;
-import 'applied_label.pb.dart' as $1805;
-import 'frequency_cap.pb.dart' as $1806;
+import 'ad_unit_size.pb.dart' as $1805;
+import 'applied_label.pb.dart' as $1806;
+import 'frequency_cap.pb.dart' as $1807;
 
 export 'ad_unit_service.pbenum.dart';
 
@@ -34,23 +34,23 @@ class AdUnit extends $pb.GeneratedMessage {
     $core.String? description,
     $core.bool? explicitlyTargeted,
     $core.bool? hasChildren,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? displayName,
     $core.String? parentAdUnit,
     $core.Iterable<AdUnitParent>? parentPath,
     TargetWindowEnum_TargetWindow? targetWindow,
     AdUnit_Status? status,
-    $core.Iterable<$1804.AdUnitSize>? adUnitSizes,
+    $core.Iterable<$1805.AdUnitSize>? adUnitSizes,
     $fixnum.Int64? adUnitId,
     $core.String? externalSetTopBoxChannelId,
-    $1737.Duration? refreshDelay,
+    $1738.Duration? refreshDelay,
     $fixnum.Int64? ctvApplicationId,
-    $core.Iterable<$1805.AppliedLabel>? appliedLabels,
-    $core.Iterable<$1805.AppliedLabel>? effectiveAppliedLabels,
+    $core.Iterable<$1806.AppliedLabel>? appliedLabels,
+    $core.Iterable<$1806.AppliedLabel>? effectiveAppliedLabels,
     $core.Iterable<LabelFrequencyCap>? appliedLabelFrequencyCaps,
     $core.Iterable<LabelFrequencyCap>? effectiveLabelFrequencyCaps,
     SmartSizeModeEnum_SmartSizeMode? smartSizeMode,
-    $1807.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled? appliedAdsenseEnabled,
+    $1808.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled? appliedAdsenseEnabled,
     $core.bool? effectiveAdsenseEnabled,
   }) {
     final $result = create();
@@ -143,23 +143,23 @@ class AdUnit extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'description')
     ..aOB(6, _omitFieldNames ? '' : 'explicitlyTargeted')
     ..aOB(7, _omitFieldNames ? '' : 'hasChildren')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'displayName')
     ..aOS(10, _omitFieldNames ? '' : 'parentAdUnit')
     ..pc<AdUnitParent>(11, _omitFieldNames ? '' : 'parentPath', $pb.PbFieldType.PM, subBuilder: AdUnitParent.create)
     ..e<TargetWindowEnum_TargetWindow>(12, _omitFieldNames ? '' : 'targetWindow', $pb.PbFieldType.OE, defaultOrMaker: TargetWindowEnum_TargetWindow.TARGET_WINDOW_UNSPECIFIED, valueOf: TargetWindowEnum_TargetWindow.valueOf, enumValues: TargetWindowEnum_TargetWindow.values)
     ..e<AdUnit_Status>(13, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: AdUnit_Status.STATUS_UNSPECIFIED, valueOf: AdUnit_Status.valueOf, enumValues: AdUnit_Status.values)
-    ..pc<$1804.AdUnitSize>(14, _omitFieldNames ? '' : 'adUnitSizes', $pb.PbFieldType.PM, subBuilder: $1804.AdUnitSize.create)
+    ..pc<$1805.AdUnitSize>(14, _omitFieldNames ? '' : 'adUnitSizes', $pb.PbFieldType.PM, subBuilder: $1805.AdUnitSize.create)
     ..aInt64(15, _omitFieldNames ? '' : 'adUnitId')
     ..aOS(17, _omitFieldNames ? '' : 'externalSetTopBoxChannelId')
-    ..aOM<$1737.Duration>(19, _omitFieldNames ? '' : 'refreshDelay', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(19, _omitFieldNames ? '' : 'refreshDelay', subBuilder: $1738.Duration.create)
     ..aInt64(20, _omitFieldNames ? '' : 'ctvApplicationId')
-    ..pc<$1805.AppliedLabel>(21, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1805.AppliedLabel.create)
-    ..pc<$1805.AppliedLabel>(22, _omitFieldNames ? '' : 'effectiveAppliedLabels', $pb.PbFieldType.PM, subBuilder: $1805.AppliedLabel.create)
+    ..pc<$1806.AppliedLabel>(21, _omitFieldNames ? '' : 'appliedLabels', $pb.PbFieldType.PM, subBuilder: $1806.AppliedLabel.create)
+    ..pc<$1806.AppliedLabel>(22, _omitFieldNames ? '' : 'effectiveAppliedLabels', $pb.PbFieldType.PM, subBuilder: $1806.AppliedLabel.create)
     ..pc<LabelFrequencyCap>(23, _omitFieldNames ? '' : 'appliedLabelFrequencyCaps', $pb.PbFieldType.PM, subBuilder: LabelFrequencyCap.create)
     ..pc<LabelFrequencyCap>(24, _omitFieldNames ? '' : 'effectiveLabelFrequencyCaps', $pb.PbFieldType.PM, subBuilder: LabelFrequencyCap.create)
     ..e<SmartSizeModeEnum_SmartSizeMode>(25, _omitFieldNames ? '' : 'smartSizeMode', $pb.PbFieldType.OE, defaultOrMaker: SmartSizeModeEnum_SmartSizeMode.SMART_SIZE_MODE_UNSPECIFIED, valueOf: SmartSizeModeEnum_SmartSizeMode.valueOf, enumValues: SmartSizeModeEnum_SmartSizeMode.values)
-    ..e<$1807.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled>(26, _omitFieldNames ? '' : 'appliedAdsenseEnabled', $pb.PbFieldType.OE, defaultOrMaker: $1807.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled.APPLIED_ADSENSE_ENABLED_UNSPECIFIED, valueOf: $1807.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled.valueOf, enumValues: $1807.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled.values)
+    ..e<$1808.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled>(26, _omitFieldNames ? '' : 'appliedAdsenseEnabled', $pb.PbFieldType.OE, defaultOrMaker: $1808.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled.APPLIED_ADSENSE_ENABLED_UNSPECIFIED, valueOf: $1808.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled.valueOf, enumValues: $1808.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled.values)
     ..aOB(27, _omitFieldNames ? '' : 'effectiveAdsenseEnabled')
     ..hasRequiredFields = false
   ;
@@ -256,15 +256,15 @@ class AdUnit extends $pb.GeneratedMessage {
 
   /// Output only. The instant this AdUnit was last modified.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Required. The display name of the ad unit. Its maximum length is 255
   /// characters.
@@ -318,7 +318,7 @@ class AdUnit extends $pb.GeneratedMessage {
 
   /// Optional. The sizes that can be served inside this ad unit.
   @$pb.TagNumber(14)
-  $core.List<$1804.AdUnitSize> get adUnitSizes => $_getList(13);
+  $core.List<$1805.AdUnitSize> get adUnitSizes => $_getList(13);
 
   /// Output only. AdUnit ID.
   @$pb.TagNumber(15)
@@ -345,15 +345,15 @@ class AdUnit extends $pb.GeneratedMessage {
   /// This is only valid for ad units in mobile apps. If not set, the ad unit
   /// will not refresh.
   @$pb.TagNumber(19)
-  $1737.Duration get refreshDelay => $_getN(16);
+  $1738.Duration get refreshDelay => $_getN(16);
   @$pb.TagNumber(19)
-  set refreshDelay($1737.Duration v) { setField(19, v); }
+  set refreshDelay($1738.Duration v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasRefreshDelay() => $_has(16);
   @$pb.TagNumber(19)
   void clearRefreshDelay() => clearField(19);
   @$pb.TagNumber(19)
-  $1737.Duration ensureRefreshDelay() => $_ensure(16);
+  $1738.Duration ensureRefreshDelay() => $_ensure(16);
 
   /// Optional. The ID of the CTV application that this ad unit is within.
   @$pb.TagNumber(20)
@@ -367,14 +367,14 @@ class AdUnit extends $pb.GeneratedMessage {
 
   /// Optional. The set of labels applied directly to this ad unit.
   @$pb.TagNumber(21)
-  $core.List<$1805.AppliedLabel> get appliedLabels => $_getList(18);
+  $core.List<$1806.AppliedLabel> get appliedLabels => $_getList(18);
 
   /// Output only. Contains the set of labels applied directly to the ad unit as
   /// well as those inherited from the parent ad units. If a label has been
   /// negated, only the negated label is returned. This field is readonly and is
   /// assigned by Google.
   @$pb.TagNumber(22)
-  $core.List<$1805.AppliedLabel> get effectiveAppliedLabels => $_getList(19);
+  $core.List<$1806.AppliedLabel> get effectiveAppliedLabels => $_getList(19);
 
   /// Optional. The set of label frequency caps applied directly to this ad unit.
   /// There is a limit of 10 label frequency caps per ad unit.
@@ -401,9 +401,9 @@ class AdUnit extends $pb.GeneratedMessage {
   /// This attribute is optional and if not specified this ad unit will inherit
   /// the value of effectiveAdsenseEnabled from its ancestors.
   @$pb.TagNumber(26)
-  $1807.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled get appliedAdsenseEnabled => $_getN(23);
+  $1808.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled get appliedAdsenseEnabled => $_getN(23);
   @$pb.TagNumber(26)
-  set appliedAdsenseEnabled($1807.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled v) { setField(26, v); }
+  set appliedAdsenseEnabled($1808.AppliedAdsenseEnabledEnum_AppliedAdsenseEnabled v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasAppliedAdsenseEnabled() => $_has(23);
   @$pb.TagNumber(26)
@@ -545,7 +545,7 @@ class TargetWindowEnum extends $pb.GeneratedMessage {
 class LabelFrequencyCap extends $pb.GeneratedMessage {
   factory LabelFrequencyCap({
     $core.String? label,
-    $1806.FrequencyCap? frequencyCap,
+    $1807.FrequencyCap? frequencyCap,
   }) {
     final $result = create();
     if (label != null) {
@@ -562,7 +562,7 @@ class LabelFrequencyCap extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LabelFrequencyCap', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.admanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'label')
-    ..aOM<$1806.FrequencyCap>(2, _omitFieldNames ? '' : 'frequencyCap', subBuilder: $1806.FrequencyCap.create)
+    ..aOM<$1807.FrequencyCap>(2, _omitFieldNames ? '' : 'frequencyCap', subBuilder: $1807.FrequencyCap.create)
     ..hasRequiredFields = false
   ;
 
@@ -600,15 +600,15 @@ class LabelFrequencyCap extends $pb.GeneratedMessage {
 
   /// The frequency cap.
   @$pb.TagNumber(2)
-  $1806.FrequencyCap get frequencyCap => $_getN(1);
+  $1807.FrequencyCap get frequencyCap => $_getN(1);
   @$pb.TagNumber(2)
-  set frequencyCap($1806.FrequencyCap v) { setField(2, v); }
+  set frequencyCap($1807.FrequencyCap v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFrequencyCap() => $_has(1);
   @$pb.TagNumber(2)
   void clearFrequencyCap() => clearField(2);
   @$pb.TagNumber(2)
-  $1806.FrequencyCap ensureFrequencyCap() => $_ensure(1);
+  $1807.FrequencyCap ensureFrequencyCap() => $_ensure(1);
 }
 
 /// Wrapper message for

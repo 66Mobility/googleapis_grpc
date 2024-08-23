@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -26,18 +26,18 @@ class Device extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? name,
     $fixnum.Int64? numId,
-    $1775.Timestamp? lastHeartbeatTime,
-    $1775.Timestamp? lastEventTime,
-    $1775.Timestamp? lastErrorTime,
-    $1795.Status? lastErrorStatus,
+    $1776.Timestamp? lastHeartbeatTime,
+    $1776.Timestamp? lastEventTime,
+    $1776.Timestamp? lastErrorTime,
+    $1796.Status? lastErrorStatus,
     $core.Iterable<DeviceCredential>? credentials,
     DeviceConfig? config,
-    $1775.Timestamp? lastConfigAckTime,
+    $1776.Timestamp? lastConfigAckTime,
     DeviceState? state,
     $core.Map<$core.String, $core.String>? metadata,
-    $1775.Timestamp? lastConfigSendTime,
+    $1776.Timestamp? lastConfigSendTime,
     $core.bool? blocked,
-    $1775.Timestamp? lastStateTime,
+    $1776.Timestamp? lastStateTime,
     LogLevel? logLevel,
     GatewayConfig? gatewayConfig,
   }) {
@@ -103,18 +103,18 @@ class Device extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..a<$fixnum.Int64>(3, _omitFieldNames ? '' : 'numId', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'lastHeartbeatTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'lastEventTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'lastErrorTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'lastErrorStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'lastHeartbeatTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'lastEventTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'lastErrorTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'lastErrorStatus', subBuilder: $1796.Status.create)
     ..pc<DeviceCredential>(12, _omitFieldNames ? '' : 'credentials', $pb.PbFieldType.PM, subBuilder: DeviceCredential.create)
     ..aOM<DeviceConfig>(13, _omitFieldNames ? '' : 'config', subBuilder: DeviceConfig.create)
-    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'lastConfigAckTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(14, _omitFieldNames ? '' : 'lastConfigAckTime', subBuilder: $1776.Timestamp.create)
     ..aOM<DeviceState>(16, _omitFieldNames ? '' : 'state', subBuilder: DeviceState.create)
     ..m<$core.String, $core.String>(17, _omitFieldNames ? '' : 'metadata', entryClassName: 'Device.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.iot.v1'))
-    ..aOM<$1775.Timestamp>(18, _omitFieldNames ? '' : 'lastConfigSendTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(18, _omitFieldNames ? '' : 'lastConfigSendTime', subBuilder: $1776.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'blocked')
-    ..aOM<$1775.Timestamp>(20, _omitFieldNames ? '' : 'lastStateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(20, _omitFieldNames ? '' : 'lastStateTime', subBuilder: $1776.Timestamp.create)
     ..e<LogLevel>(21, _omitFieldNames ? '' : 'logLevel', $pb.PbFieldType.OE, defaultOrMaker: LogLevel.LOG_LEVEL_UNSPECIFIED, valueOf: LogLevel.valueOf, enumValues: LogLevel.values)
     ..aOM<GatewayConfig>(24, _omitFieldNames ? '' : 'gatewayConfig', subBuilder: GatewayConfig.create)
     ..hasRequiredFields = false
@@ -183,43 +183,43 @@ class Device extends $pb.GeneratedMessage {
   /// have been sent. Timestamps are periodically collected and written to
   /// storage; they may be stale by a few minutes.
   @$pb.TagNumber(7)
-  $1775.Timestamp get lastHeartbeatTime => $_getN(3);
+  $1776.Timestamp get lastHeartbeatTime => $_getN(3);
   @$pb.TagNumber(7)
-  set lastHeartbeatTime($1775.Timestamp v) { setField(7, v); }
+  set lastHeartbeatTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLastHeartbeatTime() => $_has(3);
   @$pb.TagNumber(7)
   void clearLastHeartbeatTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureLastHeartbeatTime() => $_ensure(3);
+  $1776.Timestamp ensureLastHeartbeatTime() => $_ensure(3);
 
   /// [Output only] The last time a telemetry event was received. Timestamps are
   /// periodically collected and written to storage; they may be stale by a few
   /// minutes.
   @$pb.TagNumber(8)
-  $1775.Timestamp get lastEventTime => $_getN(4);
+  $1776.Timestamp get lastEventTime => $_getN(4);
   @$pb.TagNumber(8)
-  set lastEventTime($1775.Timestamp v) { setField(8, v); }
+  set lastEventTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasLastEventTime() => $_has(4);
   @$pb.TagNumber(8)
   void clearLastEventTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureLastEventTime() => $_ensure(4);
+  $1776.Timestamp ensureLastEventTime() => $_ensure(4);
 
   /// [Output only] The time the most recent error occurred, such as a failure to
   /// publish to Cloud Pub/Sub. This field is the timestamp of
   /// 'last_error_status'.
   @$pb.TagNumber(10)
-  $1775.Timestamp get lastErrorTime => $_getN(5);
+  $1776.Timestamp get lastErrorTime => $_getN(5);
   @$pb.TagNumber(10)
-  set lastErrorTime($1775.Timestamp v) { setField(10, v); }
+  set lastErrorTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasLastErrorTime() => $_has(5);
   @$pb.TagNumber(10)
   void clearLastErrorTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureLastErrorTime() => $_ensure(5);
+  $1776.Timestamp ensureLastErrorTime() => $_ensure(5);
 
   /// [Output only] The error message of the most recent error, such as a failure
   /// to publish to Cloud Pub/Sub. 'last_error_time' is the timestamp of this
@@ -227,15 +227,15 @@ class Device extends $pb.GeneratedMessage {
   /// and the status code 0 == OK. Otherwise, this field is expected to have a
   /// status code other than OK.
   @$pb.TagNumber(11)
-  $1795.Status get lastErrorStatus => $_getN(6);
+  $1796.Status get lastErrorStatus => $_getN(6);
   @$pb.TagNumber(11)
-  set lastErrorStatus($1795.Status v) { setField(11, v); }
+  set lastErrorStatus($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasLastErrorStatus() => $_has(6);
   @$pb.TagNumber(11)
   void clearLastErrorStatus() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureLastErrorStatus() => $_ensure(6);
+  $1796.Status ensureLastErrorStatus() => $_ensure(6);
 
   /// The credentials used to authenticate this device. To allow credential
   /// rotation without interruption, multiple device credentials can be bound to
@@ -266,15 +266,15 @@ class Device extends $pb.GeneratedMessage {
   /// was received from the device. This field is only for configurations
   /// sent through MQTT.
   @$pb.TagNumber(14)
-  $1775.Timestamp get lastConfigAckTime => $_getN(9);
+  $1776.Timestamp get lastConfigAckTime => $_getN(9);
   @$pb.TagNumber(14)
-  set lastConfigAckTime($1775.Timestamp v) { setField(14, v); }
+  set lastConfigAckTime($1776.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasLastConfigAckTime() => $_has(9);
   @$pb.TagNumber(14)
   void clearLastConfigAckTime() => clearField(14);
   @$pb.TagNumber(14)
-  $1775.Timestamp ensureLastConfigAckTime() => $_ensure(9);
+  $1776.Timestamp ensureLastConfigAckTime() => $_ensure(9);
 
   /// [Output only] The state most recently received from the device. If no state
   /// has been reported, this field is not present.
@@ -307,15 +307,15 @@ class Device extends $pb.GeneratedMessage {
   /// [Output only] The last time a cloud-to-device config version was sent to
   /// the device.
   @$pb.TagNumber(18)
-  $1775.Timestamp get lastConfigSendTime => $_getN(12);
+  $1776.Timestamp get lastConfigSendTime => $_getN(12);
   @$pb.TagNumber(18)
-  set lastConfigSendTime($1775.Timestamp v) { setField(18, v); }
+  set lastConfigSendTime($1776.Timestamp v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasLastConfigSendTime() => $_has(12);
   @$pb.TagNumber(18)
   void clearLastConfigSendTime() => clearField(18);
   @$pb.TagNumber(18)
-  $1775.Timestamp ensureLastConfigSendTime() => $_ensure(12);
+  $1776.Timestamp ensureLastConfigSendTime() => $_ensure(12);
 
   /// If a device is blocked, connections or requests from this device will fail.
   /// Can be used to temporarily prevent the device from connecting if, for
@@ -333,15 +333,15 @@ class Device extends $pb.GeneratedMessage {
   /// periodically collected and written to storage; they may be stale by a few
   /// minutes.
   @$pb.TagNumber(20)
-  $1775.Timestamp get lastStateTime => $_getN(14);
+  $1776.Timestamp get lastStateTime => $_getN(14);
   @$pb.TagNumber(20)
-  set lastStateTime($1775.Timestamp v) { setField(20, v); }
+  set lastStateTime($1776.Timestamp v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasLastStateTime() => $_has(14);
   @$pb.TagNumber(20)
   void clearLastStateTime() => clearField(20);
   @$pb.TagNumber(20)
-  $1775.Timestamp ensureLastStateTime() => $_ensure(14);
+  $1776.Timestamp ensureLastStateTime() => $_ensure(14);
 
   ///  **Beta Feature**
   ///
@@ -375,7 +375,7 @@ class GatewayConfig extends $pb.GeneratedMessage {
     GatewayType? gatewayType,
     GatewayAuthMethod? gatewayAuthMethod,
     $core.String? lastAccessedGatewayId,
-    $1775.Timestamp? lastAccessedGatewayTime,
+    $1776.Timestamp? lastAccessedGatewayTime,
   }) {
     final $result = create();
     if (gatewayType != null) {
@@ -400,7 +400,7 @@ class GatewayConfig extends $pb.GeneratedMessage {
     ..e<GatewayType>(1, _omitFieldNames ? '' : 'gatewayType', $pb.PbFieldType.OE, defaultOrMaker: GatewayType.GATEWAY_TYPE_UNSPECIFIED, valueOf: GatewayType.valueOf, enumValues: GatewayType.values)
     ..e<GatewayAuthMethod>(2, _omitFieldNames ? '' : 'gatewayAuthMethod', $pb.PbFieldType.OE, defaultOrMaker: GatewayAuthMethod.GATEWAY_AUTH_METHOD_UNSPECIFIED, valueOf: GatewayAuthMethod.valueOf, enumValues: GatewayAuthMethod.values)
     ..aOS(3, _omitFieldNames ? '' : 'lastAccessedGatewayId')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'lastAccessedGatewayTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'lastAccessedGatewayTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -459,15 +459,15 @@ class GatewayConfig extends $pb.GeneratedMessage {
   /// [Output only] The most recent time at which the device accessed the gateway
   /// specified in `last_accessed_gateway`.
   @$pb.TagNumber(4)
-  $1775.Timestamp get lastAccessedGatewayTime => $_getN(3);
+  $1776.Timestamp get lastAccessedGatewayTime => $_getN(3);
   @$pb.TagNumber(4)
-  set lastAccessedGatewayTime($1775.Timestamp v) { setField(4, v); }
+  set lastAccessedGatewayTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastAccessedGatewayTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastAccessedGatewayTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureLastAccessedGatewayTime() => $_ensure(3);
+  $1776.Timestamp ensureLastAccessedGatewayTime() => $_ensure(3);
 }
 
 /// A container for a group of devices.
@@ -950,8 +950,8 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
   factory X509CertificateDetails({
     $core.String? issuer,
     $core.String? subject,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? expiryTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? expiryTime,
     $core.String? signatureAlgorithm,
     $core.String? publicKeyType,
   }) {
@@ -983,8 +983,8 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'X509CertificateDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iot.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'issuer')
     ..aOS(2, _omitFieldNames ? '' : 'subject')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'expiryTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'expiryTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'signatureAlgorithm')
     ..aOS(6, _omitFieldNames ? '' : 'publicKeyType')
     ..hasRequiredFields = false
@@ -1033,27 +1033,27 @@ class X509CertificateDetails extends $pb.GeneratedMessage {
 
   /// The time the certificate becomes valid.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// The time the certificate becomes invalid.
   @$pb.TagNumber(4)
-  $1775.Timestamp get expiryTime => $_getN(3);
+  $1776.Timestamp get expiryTime => $_getN(3);
   @$pb.TagNumber(4)
-  set expiryTime($1775.Timestamp v) { setField(4, v); }
+  set expiryTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasExpiryTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearExpiryTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureExpiryTime() => $_ensure(3);
+  $1776.Timestamp ensureExpiryTime() => $_ensure(3);
 
   /// The algorithm used to sign the certificate.
   @$pb.TagNumber(5)
@@ -1169,7 +1169,7 @@ enum DeviceCredential_Credential {
 class DeviceCredential extends $pb.GeneratedMessage {
   factory DeviceCredential({
     PublicKeyCredential? publicKey,
-    $1775.Timestamp? expirationTime,
+    $1776.Timestamp? expirationTime,
   }) {
     final $result = create();
     if (publicKey != null) {
@@ -1191,7 +1191,7 @@ class DeviceCredential extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceCredential', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iot.v1'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOM<PublicKeyCredential>(2, _omitFieldNames ? '' : 'publicKey', subBuilder: PublicKeyCredential.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1245,15 +1245,15 @@ class DeviceCredential extends $pb.GeneratedMessage {
   /// credential will be ignored for new client authentication requests after
   /// this timestamp; however, it will not be automatically deleted.
   @$pb.TagNumber(6)
-  $1775.Timestamp get expirationTime => $_getN(1);
+  $1776.Timestamp get expirationTime => $_getN(1);
   @$pb.TagNumber(6)
-  set expirationTime($1775.Timestamp v) { setField(6, v); }
+  set expirationTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExpirationTime() => $_has(1);
   @$pb.TagNumber(6)
   void clearExpirationTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureExpirationTime() => $_ensure(1);
+  $1776.Timestamp ensureExpirationTime() => $_ensure(1);
 }
 
 /// A public key format and data.
@@ -1327,8 +1327,8 @@ class PublicKeyCredential extends $pb.GeneratedMessage {
 class DeviceConfig extends $pb.GeneratedMessage {
   factory DeviceConfig({
     $fixnum.Int64? version,
-    $1775.Timestamp? cloudUpdateTime,
-    $1775.Timestamp? deviceAckTime,
+    $1776.Timestamp? cloudUpdateTime,
+    $1776.Timestamp? deviceAckTime,
     $core.List<$core.int>? binaryData,
   }) {
     final $result = create();
@@ -1352,8 +1352,8 @@ class DeviceConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iot.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'version')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'cloudUpdateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'deviceAckTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'cloudUpdateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'deviceAckTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'binaryData', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -1395,15 +1395,15 @@ class DeviceConfig extends $pb.GeneratedMessage {
   /// [Output only] The time at which this configuration version was updated in
   /// Cloud IoT Core. This timestamp is set by the server.
   @$pb.TagNumber(2)
-  $1775.Timestamp get cloudUpdateTime => $_getN(1);
+  $1776.Timestamp get cloudUpdateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudUpdateTime($1775.Timestamp v) { setField(2, v); }
+  set cloudUpdateTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCloudUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCloudUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCloudUpdateTime() => $_ensure(1);
+  $1776.Timestamp ensureCloudUpdateTime() => $_ensure(1);
 
   /// [Output only] The time at which Cloud IoT Core received the
   /// acknowledgment from the device, indicating that the device has received
@@ -1415,15 +1415,15 @@ class DeviceConfig extends $pb.GeneratedMessage {
   /// versions may never be sent to the device, and therefore are never
   /// acknowledged. This timestamp is set by Cloud IoT Core.
   @$pb.TagNumber(3)
-  $1775.Timestamp get deviceAckTime => $_getN(2);
+  $1776.Timestamp get deviceAckTime => $_getN(2);
   @$pb.TagNumber(3)
-  set deviceAckTime($1775.Timestamp v) { setField(3, v); }
+  set deviceAckTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDeviceAckTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearDeviceAckTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureDeviceAckTime() => $_ensure(2);
+  $1776.Timestamp ensureDeviceAckTime() => $_ensure(2);
 
   /// The device configuration data.
   @$pb.TagNumber(4)
@@ -1439,7 +1439,7 @@ class DeviceConfig extends $pb.GeneratedMessage {
 /// The device state, as reported by the device.
 class DeviceState extends $pb.GeneratedMessage {
   factory DeviceState({
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.List<$core.int>? binaryData,
   }) {
     final $result = create();
@@ -1456,7 +1456,7 @@ class DeviceState extends $pb.GeneratedMessage {
   factory DeviceState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.iot.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'binaryData', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -1485,15 +1485,15 @@ class DeviceState extends $pb.GeneratedMessage {
   /// [Output only] The time at which this state version was updated in Cloud
   /// IoT Core.
   @$pb.TagNumber(1)
-  $1775.Timestamp get updateTime => $_getN(0);
+  $1776.Timestamp get updateTime => $_getN(0);
   @$pb.TagNumber(1)
-  set updateTime($1775.Timestamp v) { setField(1, v); }
+  set updateTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(0);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(0);
 
   /// The device state data.
   @$pb.TagNumber(2)

@@ -14,62 +14,62 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../common/metrics.pb.dart' as $4089;
-import '../common/segments.pb.dart' as $4108;
-import '../common/value.pb.dart' as $3990;
-import '../enums/summary_row_setting.pbenum.dart' as $4139;
-import '../resources/accessible_bidding_strategy.pb.dart' as $4124;
-import '../resources/ad_group.pb.dart' as $4088;
-import '../resources/ad_group_ad.pb.dart' as $4090;
-import '../resources/ad_group_ad_label.pb.dart' as $4116;
-import '../resources/ad_group_asset.pb.dart' as $4121;
-import '../resources/ad_group_asset_set.pb.dart' as $4134;
-import '../resources/ad_group_audience_view.pb.dart' as $4104;
-import '../resources/ad_group_bid_modifier.pb.dart' as $4097;
-import '../resources/ad_group_criterion.pb.dart' as $4091;
-import '../resources/ad_group_criterion_label.pb.dart' as $4117;
-import '../resources/ad_group_label.pb.dart' as $4114;
-import '../resources/age_range_view.pb.dart' as $4100;
-import '../resources/asset.pb.dart' as $4110;
-import '../resources/asset_group.pb.dart' as $4125;
-import '../resources/asset_group_asset.pb.dart' as $4126;
-import '../resources/asset_group_listing_group_filter.pb.dart' as $4130;
-import '../resources/asset_group_signal.pb.dart' as $4132;
-import '../resources/asset_group_top_combination_view.pb.dart' as $4135;
-import '../resources/asset_set.pb.dart' as $4127;
-import '../resources/asset_set_asset.pb.dart' as $4128;
-import '../resources/audience.pb.dart' as $4131;
-import '../resources/bidding_strategy.pb.dart' as $4092;
-import '../resources/campaign.pb.dart' as $4087;
-import '../resources/campaign_asset.pb.dart' as $4119;
-import '../resources/campaign_asset_set.pb.dart' as $4129;
-import '../resources/campaign_audience_view.pb.dart' as $4106;
-import '../resources/campaign_budget.pb.dart' as $4093;
-import '../resources/campaign_criterion.pb.dart' as $4094;
-import '../resources/campaign_label.pb.dart' as $4112;
-import '../resources/cart_data_sales_view.pb.dart' as $4138;
-import '../resources/conversion.pb.dart' as $4137;
-import '../resources/conversion_action.pb.dart' as $4109;
-import '../resources/conversion_custom_variable.pb.dart' as $4120;
-import '../resources/customer.pb.dart' as $4086;
-import '../resources/customer_asset.pb.dart' as $4122;
-import '../resources/customer_asset_set.pb.dart' as $4133;
-import '../resources/customer_client.pb.dart' as $4107;
-import '../resources/customer_manager_link.pb.dart' as $4105;
-import '../resources/dynamic_search_ads_search_term_view.pb.dart' as $4111;
-import '../resources/gender_view.pb.dart' as $4099;
-import '../resources/geo_target_constant.pb.dart' as $4096;
-import '../resources/keyword_view.pb.dart' as $4095;
-import '../resources/label.pb.dart' as $4101;
-import '../resources/language_constant.pb.dart' as $4103;
-import '../resources/location_view.pb.dart' as $4118;
-import '../resources/product_bidding_category_constant.pb.dart' as $4113;
-import '../resources/product_group_view.pb.dart' as $4102;
-import '../resources/shopping_performance_view.pb.dart' as $4115;
-import '../resources/user_list.pb.dart' as $4098;
-import '../resources/visit.pb.dart' as $4136;
-import '../resources/webpage_view.pb.dart' as $4123;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../common/metrics.pb.dart' as $4090;
+import '../common/segments.pb.dart' as $4109;
+import '../common/value.pb.dart' as $3991;
+import '../enums/summary_row_setting.pbenum.dart' as $4140;
+import '../resources/accessible_bidding_strategy.pb.dart' as $4125;
+import '../resources/ad_group.pb.dart' as $4089;
+import '../resources/ad_group_ad.pb.dart' as $4091;
+import '../resources/ad_group_ad_label.pb.dart' as $4117;
+import '../resources/ad_group_asset.pb.dart' as $4122;
+import '../resources/ad_group_asset_set.pb.dart' as $4135;
+import '../resources/ad_group_audience_view.pb.dart' as $4105;
+import '../resources/ad_group_bid_modifier.pb.dart' as $4098;
+import '../resources/ad_group_criterion.pb.dart' as $4092;
+import '../resources/ad_group_criterion_label.pb.dart' as $4118;
+import '../resources/ad_group_label.pb.dart' as $4115;
+import '../resources/age_range_view.pb.dart' as $4101;
+import '../resources/asset.pb.dart' as $4111;
+import '../resources/asset_group.pb.dart' as $4126;
+import '../resources/asset_group_asset.pb.dart' as $4127;
+import '../resources/asset_group_listing_group_filter.pb.dart' as $4131;
+import '../resources/asset_group_signal.pb.dart' as $4133;
+import '../resources/asset_group_top_combination_view.pb.dart' as $4136;
+import '../resources/asset_set.pb.dart' as $4128;
+import '../resources/asset_set_asset.pb.dart' as $4129;
+import '../resources/audience.pb.dart' as $4132;
+import '../resources/bidding_strategy.pb.dart' as $4093;
+import '../resources/campaign.pb.dart' as $4088;
+import '../resources/campaign_asset.pb.dart' as $4120;
+import '../resources/campaign_asset_set.pb.dart' as $4130;
+import '../resources/campaign_audience_view.pb.dart' as $4107;
+import '../resources/campaign_budget.pb.dart' as $4094;
+import '../resources/campaign_criterion.pb.dart' as $4095;
+import '../resources/campaign_label.pb.dart' as $4113;
+import '../resources/cart_data_sales_view.pb.dart' as $4139;
+import '../resources/conversion.pb.dart' as $4138;
+import '../resources/conversion_action.pb.dart' as $4110;
+import '../resources/conversion_custom_variable.pb.dart' as $4121;
+import '../resources/customer.pb.dart' as $4087;
+import '../resources/customer_asset.pb.dart' as $4123;
+import '../resources/customer_asset_set.pb.dart' as $4134;
+import '../resources/customer_client.pb.dart' as $4108;
+import '../resources/customer_manager_link.pb.dart' as $4106;
+import '../resources/dynamic_search_ads_search_term_view.pb.dart' as $4112;
+import '../resources/gender_view.pb.dart' as $4100;
+import '../resources/geo_target_constant.pb.dart' as $4097;
+import '../resources/keyword_view.pb.dart' as $4096;
+import '../resources/label.pb.dart' as $4102;
+import '../resources/language_constant.pb.dart' as $4104;
+import '../resources/location_view.pb.dart' as $4119;
+import '../resources/product_bidding_category_constant.pb.dart' as $4114;
+import '../resources/product_group_view.pb.dart' as $4103;
+import '../resources/shopping_performance_view.pb.dart' as $4116;
+import '../resources/user_list.pb.dart' as $4099;
+import '../resources/visit.pb.dart' as $4137;
+import '../resources/webpage_view.pb.dart' as $4124;
 
 /// Request message for
 /// [SearchAds360Service.Search][google.ads.searchads360.v0.services.SearchAds360Service.Search].
@@ -81,7 +81,7 @@ class SearchSearchAds360Request extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.bool? validateOnly,
     $core.bool? returnTotalResultsCount,
-    $4139.SummaryRowSettingEnum_SummaryRowSetting? summaryRowSetting,
+    $4140.SummaryRowSettingEnum_SummaryRowSetting? summaryRowSetting,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -118,7 +118,7 @@ class SearchSearchAds360Request extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOB(5, _omitFieldNames ? '' : 'validateOnly')
     ..aOB(7, _omitFieldNames ? '' : 'returnTotalResultsCount')
-    ..e<$4139.SummaryRowSettingEnum_SummaryRowSetting>(8, _omitFieldNames ? '' : 'summaryRowSetting', $pb.PbFieldType.OE, defaultOrMaker: $4139.SummaryRowSettingEnum_SummaryRowSetting.UNSPECIFIED, valueOf: $4139.SummaryRowSettingEnum_SummaryRowSetting.valueOf, enumValues: $4139.SummaryRowSettingEnum_SummaryRowSetting.values)
+    ..e<$4140.SummaryRowSettingEnum_SummaryRowSetting>(8, _omitFieldNames ? '' : 'summaryRowSetting', $pb.PbFieldType.OE, defaultOrMaker: $4140.SummaryRowSettingEnum_SummaryRowSetting.UNSPECIFIED, valueOf: $4140.SummaryRowSettingEnum_SummaryRowSetting.valueOf, enumValues: $4140.SummaryRowSettingEnum_SummaryRowSetting.values)
     ..hasRequiredFields = false
   ;
 
@@ -214,9 +214,9 @@ class SearchSearchAds360Request extends $pb.GeneratedMessage {
   /// is not returned. If requested, the summary row will be sent in a response
   /// by itself after all other query results are returned.
   @$pb.TagNumber(8)
-  $4139.SummaryRowSettingEnum_SummaryRowSetting get summaryRowSetting => $_getN(6);
+  $4140.SummaryRowSettingEnum_SummaryRowSetting get summaryRowSetting => $_getN(6);
   @$pb.TagNumber(8)
-  set summaryRowSetting($4139.SummaryRowSettingEnum_SummaryRowSetting v) { setField(8, v); }
+  set summaryRowSetting($4140.SummaryRowSettingEnum_SummaryRowSetting v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSummaryRowSetting() => $_has(6);
   @$pb.TagNumber(8)
@@ -230,7 +230,7 @@ class SearchSearchAds360Response extends $pb.GeneratedMessage {
     $core.Iterable<SearchAds360Row>? results,
     $core.String? nextPageToken,
     $fixnum.Int64? totalResultsCount,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
     SearchAds360Row? summaryRow,
     $core.Iterable<CustomColumnHeader>? customColumnHeaders,
     $core.Iterable<ConversionCustomMetricHeader>? conversionCustomMetricHeaders,
@@ -279,7 +279,7 @@ class SearchSearchAds360Response extends $pb.GeneratedMessage {
     ..pc<SearchAds360Row>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: SearchAds360Row.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..aInt64(3, _omitFieldNames ? '' : 'totalResultsCount')
-    ..aOM<$2209.FieldMask>(5, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(5, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOM<SearchAds360Row>(6, _omitFieldNames ? '' : 'summaryRow', subBuilder: SearchAds360Row.create)
     ..pc<CustomColumnHeader>(7, _omitFieldNames ? '' : 'customColumnHeaders', $pb.PbFieldType.PM, subBuilder: CustomColumnHeader.create)
     ..pc<ConversionCustomMetricHeader>(9, _omitFieldNames ? '' : 'conversionCustomMetricHeaders', $pb.PbFieldType.PM, subBuilder: ConversionCustomMetricHeader.create)
@@ -340,15 +340,15 @@ class SearchSearchAds360Response extends $pb.GeneratedMessage {
 
   /// FieldMask that represents what fields were requested by the user.
   @$pb.TagNumber(5)
-  $2209.FieldMask get fieldMask => $_getN(3);
+  $2210.FieldMask get fieldMask => $_getN(3);
   @$pb.TagNumber(5)
-  set fieldMask($2209.FieldMask v) { setField(5, v); }
+  set fieldMask($2210.FieldMask v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFieldMask() => $_has(3);
   @$pb.TagNumber(5)
   void clearFieldMask() => clearField(5);
   @$pb.TagNumber(5)
-  $2209.FieldMask ensureFieldMask() => $_ensure(3);
+  $2210.FieldMask ensureFieldMask() => $_ensure(3);
 
   /// Summary row that contains summary of metrics in results.
   /// Summary of metrics means aggregation of metrics across all results,
@@ -391,7 +391,7 @@ class SearchSearchAds360StreamRequest extends $pb.GeneratedMessage {
   factory SearchSearchAds360StreamRequest({
     $core.String? customerId,
     $core.String? query,
-    $4139.SummaryRowSettingEnum_SummaryRowSetting? summaryRowSetting,
+    $4140.SummaryRowSettingEnum_SummaryRowSetting? summaryRowSetting,
     $core.int? batchSize,
   }) {
     final $result = create();
@@ -416,7 +416,7 @@ class SearchSearchAds360StreamRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchSearchAds360StreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..aOS(2, _omitFieldNames ? '' : 'query')
-    ..e<$4139.SummaryRowSettingEnum_SummaryRowSetting>(3, _omitFieldNames ? '' : 'summaryRowSetting', $pb.PbFieldType.OE, defaultOrMaker: $4139.SummaryRowSettingEnum_SummaryRowSetting.UNSPECIFIED, valueOf: $4139.SummaryRowSettingEnum_SummaryRowSetting.valueOf, enumValues: $4139.SummaryRowSettingEnum_SummaryRowSetting.values)
+    ..e<$4140.SummaryRowSettingEnum_SummaryRowSetting>(3, _omitFieldNames ? '' : 'summaryRowSetting', $pb.PbFieldType.OE, defaultOrMaker: $4140.SummaryRowSettingEnum_SummaryRowSetting.UNSPECIFIED, valueOf: $4140.SummaryRowSettingEnum_SummaryRowSetting.valueOf, enumValues: $4140.SummaryRowSettingEnum_SummaryRowSetting.values)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'batchSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -466,9 +466,9 @@ class SearchSearchAds360StreamRequest extends $pb.GeneratedMessage {
   /// is not returned. If requested, the summary row will be sent in a response
   /// by itself after all other query results are returned.
   @$pb.TagNumber(3)
-  $4139.SummaryRowSettingEnum_SummaryRowSetting get summaryRowSetting => $_getN(2);
+  $4140.SummaryRowSettingEnum_SummaryRowSetting get summaryRowSetting => $_getN(2);
   @$pb.TagNumber(3)
-  set summaryRowSetting($4139.SummaryRowSettingEnum_SummaryRowSetting v) { setField(3, v); }
+  set summaryRowSetting($4140.SummaryRowSettingEnum_SummaryRowSetting v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSummaryRowSetting() => $_has(2);
   @$pb.TagNumber(3)
@@ -492,7 +492,7 @@ class SearchSearchAds360StreamRequest extends $pb.GeneratedMessage {
 class SearchSearchAds360StreamResponse extends $pb.GeneratedMessage {
   factory SearchSearchAds360StreamResponse({
     $core.Iterable<SearchAds360Row>? results,
-    $2209.FieldMask? fieldMask,
+    $2210.FieldMask? fieldMask,
     SearchAds360Row? summaryRow,
     $core.String? requestId,
     $core.Iterable<CustomColumnHeader>? customColumnHeaders,
@@ -537,7 +537,7 @@ class SearchSearchAds360StreamResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchSearchAds360StreamResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.services'), createEmptyInstance: create)
     ..pc<SearchAds360Row>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: SearchAds360Row.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $2210.FieldMask.create)
     ..aOM<SearchAds360Row>(3, _omitFieldNames ? '' : 'summaryRow', subBuilder: SearchAds360Row.create)
     ..aOS(4, _omitFieldNames ? '' : 'requestId')
     ..pc<CustomColumnHeader>(5, _omitFieldNames ? '' : 'customColumnHeaders', $pb.PbFieldType.PM, subBuilder: CustomColumnHeader.create)
@@ -575,15 +575,15 @@ class SearchSearchAds360StreamResponse extends $pb.GeneratedMessage {
 
   /// FieldMask that represents what fields were requested by the user.
   @$pb.TagNumber(2)
-  $2209.FieldMask get fieldMask => $_getN(1);
+  $2210.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($2209.FieldMask v) { setField(2, v); }
+  set fieldMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureFieldMask() => $_ensure(1);
+  $2210.FieldMask ensureFieldMask() => $_ensure(1);
 
   /// Summary row that contains summary of metrics in results.
   /// Summary of metrics means aggregation of metrics across all results,
@@ -633,60 +633,60 @@ class SearchSearchAds360StreamResponse extends $pb.GeneratedMessage {
 /// A returned row from the query.
 class SearchAds360Row extends $pb.GeneratedMessage {
   factory SearchAds360Row({
-    $4086.Customer? customer,
-    $4087.Campaign? campaign,
-    $4088.AdGroup? adGroup,
-    $4089.Metrics? metrics,
-    $4090.AdGroupAd? adGroupAd,
-    $4091.AdGroupCriterion? adGroupCriterion,
-    $4092.BiddingStrategy? biddingStrategy,
-    $4093.CampaignBudget? campaignBudget,
-    $4094.CampaignCriterion? campaignCriterion,
-    $4095.KeywordView? keywordView,
-    $4096.GeoTargetConstant? geoTargetConstant,
-    $4097.AdGroupBidModifier? adGroupBidModifier,
-    $4098.UserList? userList,
-    $4099.GenderView? genderView,
-    $4100.AgeRangeView? ageRangeView,
-    $4101.Label? label,
-    $4102.ProductGroupView? productGroupView,
-    $4103.LanguageConstant? languageConstant,
-    $4104.AdGroupAudienceView? adGroupAudienceView,
-    $4105.CustomerManagerLink? customerManagerLink,
-    $4106.CampaignAudienceView? campaignAudienceView,
-    $4107.CustomerClient? customerClient,
-    $4108.Segments? segments,
-    $4109.ConversionAction? conversionAction,
-    $4110.Asset? asset,
-    $4111.DynamicSearchAdsSearchTermView? dynamicSearchAdsSearchTermView,
-    $4112.CampaignLabel? campaignLabel,
-    $4113.ProductBiddingCategoryConstant? productBiddingCategoryConstant,
-    $4114.AdGroupLabel? adGroupLabel,
-    $4115.ShoppingPerformanceView? shoppingPerformanceView,
-    $4116.AdGroupAdLabel? adGroupAdLabel,
-    $4117.AdGroupCriterionLabel? adGroupCriterionLabel,
-    $4118.LocationView? locationView,
-    $4119.CampaignAsset? campaignAsset,
-    $4120.ConversionCustomVariable? conversionCustomVariable,
-    $4121.AdGroupAsset? adGroupAsset,
-    $4122.CustomerAsset? customerAsset,
-    $core.Iterable<$3990.Value>? customColumns,
-    $4123.WebpageView? webpageView,
-    $4124.AccessibleBiddingStrategy? accessibleBiddingStrategy,
-    $4125.AssetGroup? assetGroup,
-    $4126.AssetGroupAsset? assetGroupAsset,
-    $4127.AssetSet? assetSet,
-    $4128.AssetSetAsset? assetSetAsset,
-    $4129.CampaignAssetSet? campaignAssetSet,
-    $4130.AssetGroupListingGroupFilter? assetGroupListingGroupFilter,
-    $4131.Audience? audience,
-    $4132.AssetGroupSignal? assetGroupSignal,
-    $4133.CustomerAssetSet? customerAssetSet,
-    $4134.AdGroupAssetSet? adGroupAssetSet,
-    $4135.AssetGroupTopCombinationView? assetGroupTopCombinationView,
-    $4136.Visit? visit,
-    $4137.Conversion? conversion,
-    $4138.CartDataSalesView? cartDataSalesView,
+    $4087.Customer? customer,
+    $4088.Campaign? campaign,
+    $4089.AdGroup? adGroup,
+    $4090.Metrics? metrics,
+    $4091.AdGroupAd? adGroupAd,
+    $4092.AdGroupCriterion? adGroupCriterion,
+    $4093.BiddingStrategy? biddingStrategy,
+    $4094.CampaignBudget? campaignBudget,
+    $4095.CampaignCriterion? campaignCriterion,
+    $4096.KeywordView? keywordView,
+    $4097.GeoTargetConstant? geoTargetConstant,
+    $4098.AdGroupBidModifier? adGroupBidModifier,
+    $4099.UserList? userList,
+    $4100.GenderView? genderView,
+    $4101.AgeRangeView? ageRangeView,
+    $4102.Label? label,
+    $4103.ProductGroupView? productGroupView,
+    $4104.LanguageConstant? languageConstant,
+    $4105.AdGroupAudienceView? adGroupAudienceView,
+    $4106.CustomerManagerLink? customerManagerLink,
+    $4107.CampaignAudienceView? campaignAudienceView,
+    $4108.CustomerClient? customerClient,
+    $4109.Segments? segments,
+    $4110.ConversionAction? conversionAction,
+    $4111.Asset? asset,
+    $4112.DynamicSearchAdsSearchTermView? dynamicSearchAdsSearchTermView,
+    $4113.CampaignLabel? campaignLabel,
+    $4114.ProductBiddingCategoryConstant? productBiddingCategoryConstant,
+    $4115.AdGroupLabel? adGroupLabel,
+    $4116.ShoppingPerformanceView? shoppingPerformanceView,
+    $4117.AdGroupAdLabel? adGroupAdLabel,
+    $4118.AdGroupCriterionLabel? adGroupCriterionLabel,
+    $4119.LocationView? locationView,
+    $4120.CampaignAsset? campaignAsset,
+    $4121.ConversionCustomVariable? conversionCustomVariable,
+    $4122.AdGroupAsset? adGroupAsset,
+    $4123.CustomerAsset? customerAsset,
+    $core.Iterable<$3991.Value>? customColumns,
+    $4124.WebpageView? webpageView,
+    $4125.AccessibleBiddingStrategy? accessibleBiddingStrategy,
+    $4126.AssetGroup? assetGroup,
+    $4127.AssetGroupAsset? assetGroupAsset,
+    $4128.AssetSet? assetSet,
+    $4129.AssetSetAsset? assetSetAsset,
+    $4130.CampaignAssetSet? campaignAssetSet,
+    $4131.AssetGroupListingGroupFilter? assetGroupListingGroupFilter,
+    $4132.Audience? audience,
+    $4133.AssetGroupSignal? assetGroupSignal,
+    $4134.CustomerAssetSet? customerAssetSet,
+    $4135.AdGroupAssetSet? adGroupAssetSet,
+    $4136.AssetGroupTopCombinationView? assetGroupTopCombinationView,
+    $4137.Visit? visit,
+    $4138.Conversion? conversion,
+    $4139.CartDataSalesView? cartDataSalesView,
   }) {
     final $result = create();
     if (customer != null) {
@@ -858,60 +858,60 @@ class SearchAds360Row extends $pb.GeneratedMessage {
   factory SearchAds360Row.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchAds360Row', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.services'), createEmptyInstance: create)
-    ..aOM<$4086.Customer>(1, _omitFieldNames ? '' : 'customer', subBuilder: $4086.Customer.create)
-    ..aOM<$4087.Campaign>(2, _omitFieldNames ? '' : 'campaign', subBuilder: $4087.Campaign.create)
-    ..aOM<$4088.AdGroup>(3, _omitFieldNames ? '' : 'adGroup', subBuilder: $4088.AdGroup.create)
-    ..aOM<$4089.Metrics>(4, _omitFieldNames ? '' : 'metrics', subBuilder: $4089.Metrics.create)
-    ..aOM<$4090.AdGroupAd>(16, _omitFieldNames ? '' : 'adGroupAd', subBuilder: $4090.AdGroupAd.create)
-    ..aOM<$4091.AdGroupCriterion>(17, _omitFieldNames ? '' : 'adGroupCriterion', subBuilder: $4091.AdGroupCriterion.create)
-    ..aOM<$4092.BiddingStrategy>(18, _omitFieldNames ? '' : 'biddingStrategy', subBuilder: $4092.BiddingStrategy.create)
-    ..aOM<$4093.CampaignBudget>(19, _omitFieldNames ? '' : 'campaignBudget', subBuilder: $4093.CampaignBudget.create)
-    ..aOM<$4094.CampaignCriterion>(20, _omitFieldNames ? '' : 'campaignCriterion', subBuilder: $4094.CampaignCriterion.create)
-    ..aOM<$4095.KeywordView>(21, _omitFieldNames ? '' : 'keywordView', subBuilder: $4095.KeywordView.create)
-    ..aOM<$4096.GeoTargetConstant>(23, _omitFieldNames ? '' : 'geoTargetConstant', subBuilder: $4096.GeoTargetConstant.create)
-    ..aOM<$4097.AdGroupBidModifier>(24, _omitFieldNames ? '' : 'adGroupBidModifier', subBuilder: $4097.AdGroupBidModifier.create)
-    ..aOM<$4098.UserList>(38, _omitFieldNames ? '' : 'userList', subBuilder: $4098.UserList.create)
-    ..aOM<$4099.GenderView>(40, _omitFieldNames ? '' : 'genderView', subBuilder: $4099.GenderView.create)
-    ..aOM<$4100.AgeRangeView>(48, _omitFieldNames ? '' : 'ageRangeView', subBuilder: $4100.AgeRangeView.create)
-    ..aOM<$4101.Label>(52, _omitFieldNames ? '' : 'label', subBuilder: $4101.Label.create)
-    ..aOM<$4102.ProductGroupView>(54, _omitFieldNames ? '' : 'productGroupView', subBuilder: $4102.ProductGroupView.create)
-    ..aOM<$4103.LanguageConstant>(55, _omitFieldNames ? '' : 'languageConstant', subBuilder: $4103.LanguageConstant.create)
-    ..aOM<$4104.AdGroupAudienceView>(57, _omitFieldNames ? '' : 'adGroupAudienceView', subBuilder: $4104.AdGroupAudienceView.create)
-    ..aOM<$4105.CustomerManagerLink>(61, _omitFieldNames ? '' : 'customerManagerLink', subBuilder: $4105.CustomerManagerLink.create)
-    ..aOM<$4106.CampaignAudienceView>(69, _omitFieldNames ? '' : 'campaignAudienceView', subBuilder: $4106.CampaignAudienceView.create)
-    ..aOM<$4107.CustomerClient>(70, _omitFieldNames ? '' : 'customerClient', subBuilder: $4107.CustomerClient.create)
-    ..aOM<$4108.Segments>(102, _omitFieldNames ? '' : 'segments', subBuilder: $4108.Segments.create)
-    ..aOM<$4109.ConversionAction>(103, _omitFieldNames ? '' : 'conversionAction', subBuilder: $4109.ConversionAction.create)
-    ..aOM<$4110.Asset>(105, _omitFieldNames ? '' : 'asset', subBuilder: $4110.Asset.create)
-    ..aOM<$4111.DynamicSearchAdsSearchTermView>(106, _omitFieldNames ? '' : 'dynamicSearchAdsSearchTermView', subBuilder: $4111.DynamicSearchAdsSearchTermView.create)
-    ..aOM<$4112.CampaignLabel>(108, _omitFieldNames ? '' : 'campaignLabel', subBuilder: $4112.CampaignLabel.create)
-    ..aOM<$4113.ProductBiddingCategoryConstant>(109, _omitFieldNames ? '' : 'productBiddingCategoryConstant', subBuilder: $4113.ProductBiddingCategoryConstant.create)
-    ..aOM<$4114.AdGroupLabel>(115, _omitFieldNames ? '' : 'adGroupLabel', subBuilder: $4114.AdGroupLabel.create)
-    ..aOM<$4115.ShoppingPerformanceView>(117, _omitFieldNames ? '' : 'shoppingPerformanceView', subBuilder: $4115.ShoppingPerformanceView.create)
-    ..aOM<$4116.AdGroupAdLabel>(120, _omitFieldNames ? '' : 'adGroupAdLabel', subBuilder: $4116.AdGroupAdLabel.create)
-    ..aOM<$4117.AdGroupCriterionLabel>(121, _omitFieldNames ? '' : 'adGroupCriterionLabel', subBuilder: $4117.AdGroupCriterionLabel.create)
-    ..aOM<$4118.LocationView>(123, _omitFieldNames ? '' : 'locationView', subBuilder: $4118.LocationView.create)
-    ..aOM<$4119.CampaignAsset>(142, _omitFieldNames ? '' : 'campaignAsset', subBuilder: $4119.CampaignAsset.create)
-    ..aOM<$4120.ConversionCustomVariable>(153, _omitFieldNames ? '' : 'conversionCustomVariable', subBuilder: $4120.ConversionCustomVariable.create)
-    ..aOM<$4121.AdGroupAsset>(154, _omitFieldNames ? '' : 'adGroupAsset', subBuilder: $4121.AdGroupAsset.create)
-    ..aOM<$4122.CustomerAsset>(155, _omitFieldNames ? '' : 'customerAsset', subBuilder: $4122.CustomerAsset.create)
-    ..pc<$3990.Value>(156, _omitFieldNames ? '' : 'customColumns', $pb.PbFieldType.PM, subBuilder: $3990.Value.create)
-    ..aOM<$4123.WebpageView>(162, _omitFieldNames ? '' : 'webpageView', subBuilder: $4123.WebpageView.create)
-    ..aOM<$4124.AccessibleBiddingStrategy>(169, _omitFieldNames ? '' : 'accessibleBiddingStrategy', subBuilder: $4124.AccessibleBiddingStrategy.create)
-    ..aOM<$4125.AssetGroup>(172, _omitFieldNames ? '' : 'assetGroup', subBuilder: $4125.AssetGroup.create)
-    ..aOM<$4126.AssetGroupAsset>(173, _omitFieldNames ? '' : 'assetGroupAsset', subBuilder: $4126.AssetGroupAsset.create)
-    ..aOM<$4127.AssetSet>(179, _omitFieldNames ? '' : 'assetSet', subBuilder: $4127.AssetSet.create)
-    ..aOM<$4128.AssetSetAsset>(180, _omitFieldNames ? '' : 'assetSetAsset', subBuilder: $4128.AssetSetAsset.create)
-    ..aOM<$4129.CampaignAssetSet>(181, _omitFieldNames ? '' : 'campaignAssetSet', subBuilder: $4129.CampaignAssetSet.create)
-    ..aOM<$4130.AssetGroupListingGroupFilter>(182, _omitFieldNames ? '' : 'assetGroupListingGroupFilter', subBuilder: $4130.AssetGroupListingGroupFilter.create)
-    ..aOM<$4131.Audience>(190, _omitFieldNames ? '' : 'audience', subBuilder: $4131.Audience.create)
-    ..aOM<$4132.AssetGroupSignal>(191, _omitFieldNames ? '' : 'assetGroupSignal', subBuilder: $4132.AssetGroupSignal.create)
-    ..aOM<$4133.CustomerAssetSet>(195, _omitFieldNames ? '' : 'customerAssetSet', subBuilder: $4133.CustomerAssetSet.create)
-    ..aOM<$4134.AdGroupAssetSet>(196, _omitFieldNames ? '' : 'adGroupAssetSet', subBuilder: $4134.AdGroupAssetSet.create)
-    ..aOM<$4135.AssetGroupTopCombinationView>(199, _omitFieldNames ? '' : 'assetGroupTopCombinationView', subBuilder: $4135.AssetGroupTopCombinationView.create)
-    ..aOM<$4136.Visit>(203, _omitFieldNames ? '' : 'visit', subBuilder: $4136.Visit.create)
-    ..aOM<$4137.Conversion>(206, _omitFieldNames ? '' : 'conversion', subBuilder: $4137.Conversion.create)
-    ..aOM<$4138.CartDataSalesView>(221, _omitFieldNames ? '' : 'cartDataSalesView', subBuilder: $4138.CartDataSalesView.create)
+    ..aOM<$4087.Customer>(1, _omitFieldNames ? '' : 'customer', subBuilder: $4087.Customer.create)
+    ..aOM<$4088.Campaign>(2, _omitFieldNames ? '' : 'campaign', subBuilder: $4088.Campaign.create)
+    ..aOM<$4089.AdGroup>(3, _omitFieldNames ? '' : 'adGroup', subBuilder: $4089.AdGroup.create)
+    ..aOM<$4090.Metrics>(4, _omitFieldNames ? '' : 'metrics', subBuilder: $4090.Metrics.create)
+    ..aOM<$4091.AdGroupAd>(16, _omitFieldNames ? '' : 'adGroupAd', subBuilder: $4091.AdGroupAd.create)
+    ..aOM<$4092.AdGroupCriterion>(17, _omitFieldNames ? '' : 'adGroupCriterion', subBuilder: $4092.AdGroupCriterion.create)
+    ..aOM<$4093.BiddingStrategy>(18, _omitFieldNames ? '' : 'biddingStrategy', subBuilder: $4093.BiddingStrategy.create)
+    ..aOM<$4094.CampaignBudget>(19, _omitFieldNames ? '' : 'campaignBudget', subBuilder: $4094.CampaignBudget.create)
+    ..aOM<$4095.CampaignCriterion>(20, _omitFieldNames ? '' : 'campaignCriterion', subBuilder: $4095.CampaignCriterion.create)
+    ..aOM<$4096.KeywordView>(21, _omitFieldNames ? '' : 'keywordView', subBuilder: $4096.KeywordView.create)
+    ..aOM<$4097.GeoTargetConstant>(23, _omitFieldNames ? '' : 'geoTargetConstant', subBuilder: $4097.GeoTargetConstant.create)
+    ..aOM<$4098.AdGroupBidModifier>(24, _omitFieldNames ? '' : 'adGroupBidModifier', subBuilder: $4098.AdGroupBidModifier.create)
+    ..aOM<$4099.UserList>(38, _omitFieldNames ? '' : 'userList', subBuilder: $4099.UserList.create)
+    ..aOM<$4100.GenderView>(40, _omitFieldNames ? '' : 'genderView', subBuilder: $4100.GenderView.create)
+    ..aOM<$4101.AgeRangeView>(48, _omitFieldNames ? '' : 'ageRangeView', subBuilder: $4101.AgeRangeView.create)
+    ..aOM<$4102.Label>(52, _omitFieldNames ? '' : 'label', subBuilder: $4102.Label.create)
+    ..aOM<$4103.ProductGroupView>(54, _omitFieldNames ? '' : 'productGroupView', subBuilder: $4103.ProductGroupView.create)
+    ..aOM<$4104.LanguageConstant>(55, _omitFieldNames ? '' : 'languageConstant', subBuilder: $4104.LanguageConstant.create)
+    ..aOM<$4105.AdGroupAudienceView>(57, _omitFieldNames ? '' : 'adGroupAudienceView', subBuilder: $4105.AdGroupAudienceView.create)
+    ..aOM<$4106.CustomerManagerLink>(61, _omitFieldNames ? '' : 'customerManagerLink', subBuilder: $4106.CustomerManagerLink.create)
+    ..aOM<$4107.CampaignAudienceView>(69, _omitFieldNames ? '' : 'campaignAudienceView', subBuilder: $4107.CampaignAudienceView.create)
+    ..aOM<$4108.CustomerClient>(70, _omitFieldNames ? '' : 'customerClient', subBuilder: $4108.CustomerClient.create)
+    ..aOM<$4109.Segments>(102, _omitFieldNames ? '' : 'segments', subBuilder: $4109.Segments.create)
+    ..aOM<$4110.ConversionAction>(103, _omitFieldNames ? '' : 'conversionAction', subBuilder: $4110.ConversionAction.create)
+    ..aOM<$4111.Asset>(105, _omitFieldNames ? '' : 'asset', subBuilder: $4111.Asset.create)
+    ..aOM<$4112.DynamicSearchAdsSearchTermView>(106, _omitFieldNames ? '' : 'dynamicSearchAdsSearchTermView', subBuilder: $4112.DynamicSearchAdsSearchTermView.create)
+    ..aOM<$4113.CampaignLabel>(108, _omitFieldNames ? '' : 'campaignLabel', subBuilder: $4113.CampaignLabel.create)
+    ..aOM<$4114.ProductBiddingCategoryConstant>(109, _omitFieldNames ? '' : 'productBiddingCategoryConstant', subBuilder: $4114.ProductBiddingCategoryConstant.create)
+    ..aOM<$4115.AdGroupLabel>(115, _omitFieldNames ? '' : 'adGroupLabel', subBuilder: $4115.AdGroupLabel.create)
+    ..aOM<$4116.ShoppingPerformanceView>(117, _omitFieldNames ? '' : 'shoppingPerformanceView', subBuilder: $4116.ShoppingPerformanceView.create)
+    ..aOM<$4117.AdGroupAdLabel>(120, _omitFieldNames ? '' : 'adGroupAdLabel', subBuilder: $4117.AdGroupAdLabel.create)
+    ..aOM<$4118.AdGroupCriterionLabel>(121, _omitFieldNames ? '' : 'adGroupCriterionLabel', subBuilder: $4118.AdGroupCriterionLabel.create)
+    ..aOM<$4119.LocationView>(123, _omitFieldNames ? '' : 'locationView', subBuilder: $4119.LocationView.create)
+    ..aOM<$4120.CampaignAsset>(142, _omitFieldNames ? '' : 'campaignAsset', subBuilder: $4120.CampaignAsset.create)
+    ..aOM<$4121.ConversionCustomVariable>(153, _omitFieldNames ? '' : 'conversionCustomVariable', subBuilder: $4121.ConversionCustomVariable.create)
+    ..aOM<$4122.AdGroupAsset>(154, _omitFieldNames ? '' : 'adGroupAsset', subBuilder: $4122.AdGroupAsset.create)
+    ..aOM<$4123.CustomerAsset>(155, _omitFieldNames ? '' : 'customerAsset', subBuilder: $4123.CustomerAsset.create)
+    ..pc<$3991.Value>(156, _omitFieldNames ? '' : 'customColumns', $pb.PbFieldType.PM, subBuilder: $3991.Value.create)
+    ..aOM<$4124.WebpageView>(162, _omitFieldNames ? '' : 'webpageView', subBuilder: $4124.WebpageView.create)
+    ..aOM<$4125.AccessibleBiddingStrategy>(169, _omitFieldNames ? '' : 'accessibleBiddingStrategy', subBuilder: $4125.AccessibleBiddingStrategy.create)
+    ..aOM<$4126.AssetGroup>(172, _omitFieldNames ? '' : 'assetGroup', subBuilder: $4126.AssetGroup.create)
+    ..aOM<$4127.AssetGroupAsset>(173, _omitFieldNames ? '' : 'assetGroupAsset', subBuilder: $4127.AssetGroupAsset.create)
+    ..aOM<$4128.AssetSet>(179, _omitFieldNames ? '' : 'assetSet', subBuilder: $4128.AssetSet.create)
+    ..aOM<$4129.AssetSetAsset>(180, _omitFieldNames ? '' : 'assetSetAsset', subBuilder: $4129.AssetSetAsset.create)
+    ..aOM<$4130.CampaignAssetSet>(181, _omitFieldNames ? '' : 'campaignAssetSet', subBuilder: $4130.CampaignAssetSet.create)
+    ..aOM<$4131.AssetGroupListingGroupFilter>(182, _omitFieldNames ? '' : 'assetGroupListingGroupFilter', subBuilder: $4131.AssetGroupListingGroupFilter.create)
+    ..aOM<$4132.Audience>(190, _omitFieldNames ? '' : 'audience', subBuilder: $4132.Audience.create)
+    ..aOM<$4133.AssetGroupSignal>(191, _omitFieldNames ? '' : 'assetGroupSignal', subBuilder: $4133.AssetGroupSignal.create)
+    ..aOM<$4134.CustomerAssetSet>(195, _omitFieldNames ? '' : 'customerAssetSet', subBuilder: $4134.CustomerAssetSet.create)
+    ..aOM<$4135.AdGroupAssetSet>(196, _omitFieldNames ? '' : 'adGroupAssetSet', subBuilder: $4135.AdGroupAssetSet.create)
+    ..aOM<$4136.AssetGroupTopCombinationView>(199, _omitFieldNames ? '' : 'assetGroupTopCombinationView', subBuilder: $4136.AssetGroupTopCombinationView.create)
+    ..aOM<$4137.Visit>(203, _omitFieldNames ? '' : 'visit', subBuilder: $4137.Visit.create)
+    ..aOM<$4138.Conversion>(206, _omitFieldNames ? '' : 'conversion', subBuilder: $4138.Conversion.create)
+    ..aOM<$4139.CartDataSalesView>(221, _omitFieldNames ? '' : 'cartDataSalesView', subBuilder: $4139.CartDataSalesView.create)
     ..hasRequiredFields = false
   ;
 
@@ -938,643 +938,643 @@ class SearchAds360Row extends $pb.GeneratedMessage {
 
   /// The customer referenced in the query.
   @$pb.TagNumber(1)
-  $4086.Customer get customer => $_getN(0);
+  $4087.Customer get customer => $_getN(0);
   @$pb.TagNumber(1)
-  set customer($4086.Customer v) { setField(1, v); }
+  set customer($4087.Customer v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCustomer() => $_has(0);
   @$pb.TagNumber(1)
   void clearCustomer() => clearField(1);
   @$pb.TagNumber(1)
-  $4086.Customer ensureCustomer() => $_ensure(0);
+  $4087.Customer ensureCustomer() => $_ensure(0);
 
   /// The campaign referenced in the query.
   @$pb.TagNumber(2)
-  $4087.Campaign get campaign => $_getN(1);
+  $4088.Campaign get campaign => $_getN(1);
   @$pb.TagNumber(2)
-  set campaign($4087.Campaign v) { setField(2, v); }
+  set campaign($4088.Campaign v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCampaign() => $_has(1);
   @$pb.TagNumber(2)
   void clearCampaign() => clearField(2);
   @$pb.TagNumber(2)
-  $4087.Campaign ensureCampaign() => $_ensure(1);
+  $4088.Campaign ensureCampaign() => $_ensure(1);
 
   /// The ad group referenced in the query.
   @$pb.TagNumber(3)
-  $4088.AdGroup get adGroup => $_getN(2);
+  $4089.AdGroup get adGroup => $_getN(2);
   @$pb.TagNumber(3)
-  set adGroup($4088.AdGroup v) { setField(3, v); }
+  set adGroup($4089.AdGroup v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAdGroup() => $_has(2);
   @$pb.TagNumber(3)
   void clearAdGroup() => clearField(3);
   @$pb.TagNumber(3)
-  $4088.AdGroup ensureAdGroup() => $_ensure(2);
+  $4089.AdGroup ensureAdGroup() => $_ensure(2);
 
   /// The metrics.
   @$pb.TagNumber(4)
-  $4089.Metrics get metrics => $_getN(3);
+  $4090.Metrics get metrics => $_getN(3);
   @$pb.TagNumber(4)
-  set metrics($4089.Metrics v) { setField(4, v); }
+  set metrics($4090.Metrics v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMetrics() => $_has(3);
   @$pb.TagNumber(4)
   void clearMetrics() => clearField(4);
   @$pb.TagNumber(4)
-  $4089.Metrics ensureMetrics() => $_ensure(3);
+  $4090.Metrics ensureMetrics() => $_ensure(3);
 
   /// The ad referenced in the query.
   @$pb.TagNumber(16)
-  $4090.AdGroupAd get adGroupAd => $_getN(4);
+  $4091.AdGroupAd get adGroupAd => $_getN(4);
   @$pb.TagNumber(16)
-  set adGroupAd($4090.AdGroupAd v) { setField(16, v); }
+  set adGroupAd($4091.AdGroupAd v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasAdGroupAd() => $_has(4);
   @$pb.TagNumber(16)
   void clearAdGroupAd() => clearField(16);
   @$pb.TagNumber(16)
-  $4090.AdGroupAd ensureAdGroupAd() => $_ensure(4);
+  $4091.AdGroupAd ensureAdGroupAd() => $_ensure(4);
 
   /// The criterion referenced in the query.
   @$pb.TagNumber(17)
-  $4091.AdGroupCriterion get adGroupCriterion => $_getN(5);
+  $4092.AdGroupCriterion get adGroupCriterion => $_getN(5);
   @$pb.TagNumber(17)
-  set adGroupCriterion($4091.AdGroupCriterion v) { setField(17, v); }
+  set adGroupCriterion($4092.AdGroupCriterion v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasAdGroupCriterion() => $_has(5);
   @$pb.TagNumber(17)
   void clearAdGroupCriterion() => clearField(17);
   @$pb.TagNumber(17)
-  $4091.AdGroupCriterion ensureAdGroupCriterion() => $_ensure(5);
+  $4092.AdGroupCriterion ensureAdGroupCriterion() => $_ensure(5);
 
   /// The bidding strategy referenced in the query.
   @$pb.TagNumber(18)
-  $4092.BiddingStrategy get biddingStrategy => $_getN(6);
+  $4093.BiddingStrategy get biddingStrategy => $_getN(6);
   @$pb.TagNumber(18)
-  set biddingStrategy($4092.BiddingStrategy v) { setField(18, v); }
+  set biddingStrategy($4093.BiddingStrategy v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasBiddingStrategy() => $_has(6);
   @$pb.TagNumber(18)
   void clearBiddingStrategy() => clearField(18);
   @$pb.TagNumber(18)
-  $4092.BiddingStrategy ensureBiddingStrategy() => $_ensure(6);
+  $4093.BiddingStrategy ensureBiddingStrategy() => $_ensure(6);
 
   /// The campaign budget referenced in the query.
   @$pb.TagNumber(19)
-  $4093.CampaignBudget get campaignBudget => $_getN(7);
+  $4094.CampaignBudget get campaignBudget => $_getN(7);
   @$pb.TagNumber(19)
-  set campaignBudget($4093.CampaignBudget v) { setField(19, v); }
+  set campaignBudget($4094.CampaignBudget v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasCampaignBudget() => $_has(7);
   @$pb.TagNumber(19)
   void clearCampaignBudget() => clearField(19);
   @$pb.TagNumber(19)
-  $4093.CampaignBudget ensureCampaignBudget() => $_ensure(7);
+  $4094.CampaignBudget ensureCampaignBudget() => $_ensure(7);
 
   /// The campaign criterion referenced in the query.
   @$pb.TagNumber(20)
-  $4094.CampaignCriterion get campaignCriterion => $_getN(8);
+  $4095.CampaignCriterion get campaignCriterion => $_getN(8);
   @$pb.TagNumber(20)
-  set campaignCriterion($4094.CampaignCriterion v) { setField(20, v); }
+  set campaignCriterion($4095.CampaignCriterion v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasCampaignCriterion() => $_has(8);
   @$pb.TagNumber(20)
   void clearCampaignCriterion() => clearField(20);
   @$pb.TagNumber(20)
-  $4094.CampaignCriterion ensureCampaignCriterion() => $_ensure(8);
+  $4095.CampaignCriterion ensureCampaignCriterion() => $_ensure(8);
 
   /// The keyword view referenced in the query.
   @$pb.TagNumber(21)
-  $4095.KeywordView get keywordView => $_getN(9);
+  $4096.KeywordView get keywordView => $_getN(9);
   @$pb.TagNumber(21)
-  set keywordView($4095.KeywordView v) { setField(21, v); }
+  set keywordView($4096.KeywordView v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasKeywordView() => $_has(9);
   @$pb.TagNumber(21)
   void clearKeywordView() => clearField(21);
   @$pb.TagNumber(21)
-  $4095.KeywordView ensureKeywordView() => $_ensure(9);
+  $4096.KeywordView ensureKeywordView() => $_ensure(9);
 
   /// The geo target constant referenced in the query.
   @$pb.TagNumber(23)
-  $4096.GeoTargetConstant get geoTargetConstant => $_getN(10);
+  $4097.GeoTargetConstant get geoTargetConstant => $_getN(10);
   @$pb.TagNumber(23)
-  set geoTargetConstant($4096.GeoTargetConstant v) { setField(23, v); }
+  set geoTargetConstant($4097.GeoTargetConstant v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasGeoTargetConstant() => $_has(10);
   @$pb.TagNumber(23)
   void clearGeoTargetConstant() => clearField(23);
   @$pb.TagNumber(23)
-  $4096.GeoTargetConstant ensureGeoTargetConstant() => $_ensure(10);
+  $4097.GeoTargetConstant ensureGeoTargetConstant() => $_ensure(10);
 
   /// The bid modifier referenced in the query.
   @$pb.TagNumber(24)
-  $4097.AdGroupBidModifier get adGroupBidModifier => $_getN(11);
+  $4098.AdGroupBidModifier get adGroupBidModifier => $_getN(11);
   @$pb.TagNumber(24)
-  set adGroupBidModifier($4097.AdGroupBidModifier v) { setField(24, v); }
+  set adGroupBidModifier($4098.AdGroupBidModifier v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasAdGroupBidModifier() => $_has(11);
   @$pb.TagNumber(24)
   void clearAdGroupBidModifier() => clearField(24);
   @$pb.TagNumber(24)
-  $4097.AdGroupBidModifier ensureAdGroupBidModifier() => $_ensure(11);
+  $4098.AdGroupBidModifier ensureAdGroupBidModifier() => $_ensure(11);
 
   /// The user list referenced in the query.
   @$pb.TagNumber(38)
-  $4098.UserList get userList => $_getN(12);
+  $4099.UserList get userList => $_getN(12);
   @$pb.TagNumber(38)
-  set userList($4098.UserList v) { setField(38, v); }
+  set userList($4099.UserList v) { setField(38, v); }
   @$pb.TagNumber(38)
   $core.bool hasUserList() => $_has(12);
   @$pb.TagNumber(38)
   void clearUserList() => clearField(38);
   @$pb.TagNumber(38)
-  $4098.UserList ensureUserList() => $_ensure(12);
+  $4099.UserList ensureUserList() => $_ensure(12);
 
   /// The gender view referenced in the query.
   @$pb.TagNumber(40)
-  $4099.GenderView get genderView => $_getN(13);
+  $4100.GenderView get genderView => $_getN(13);
   @$pb.TagNumber(40)
-  set genderView($4099.GenderView v) { setField(40, v); }
+  set genderView($4100.GenderView v) { setField(40, v); }
   @$pb.TagNumber(40)
   $core.bool hasGenderView() => $_has(13);
   @$pb.TagNumber(40)
   void clearGenderView() => clearField(40);
   @$pb.TagNumber(40)
-  $4099.GenderView ensureGenderView() => $_ensure(13);
+  $4100.GenderView ensureGenderView() => $_ensure(13);
 
   /// The age range view referenced in the query.
   @$pb.TagNumber(48)
-  $4100.AgeRangeView get ageRangeView => $_getN(14);
+  $4101.AgeRangeView get ageRangeView => $_getN(14);
   @$pb.TagNumber(48)
-  set ageRangeView($4100.AgeRangeView v) { setField(48, v); }
+  set ageRangeView($4101.AgeRangeView v) { setField(48, v); }
   @$pb.TagNumber(48)
   $core.bool hasAgeRangeView() => $_has(14);
   @$pb.TagNumber(48)
   void clearAgeRangeView() => clearField(48);
   @$pb.TagNumber(48)
-  $4100.AgeRangeView ensureAgeRangeView() => $_ensure(14);
+  $4101.AgeRangeView ensureAgeRangeView() => $_ensure(14);
 
   /// The label referenced in the query.
   @$pb.TagNumber(52)
-  $4101.Label get label => $_getN(15);
+  $4102.Label get label => $_getN(15);
   @$pb.TagNumber(52)
-  set label($4101.Label v) { setField(52, v); }
+  set label($4102.Label v) { setField(52, v); }
   @$pb.TagNumber(52)
   $core.bool hasLabel() => $_has(15);
   @$pb.TagNumber(52)
   void clearLabel() => clearField(52);
   @$pb.TagNumber(52)
-  $4101.Label ensureLabel() => $_ensure(15);
+  $4102.Label ensureLabel() => $_ensure(15);
 
   /// The product group view referenced in the query.
   @$pb.TagNumber(54)
-  $4102.ProductGroupView get productGroupView => $_getN(16);
+  $4103.ProductGroupView get productGroupView => $_getN(16);
   @$pb.TagNumber(54)
-  set productGroupView($4102.ProductGroupView v) { setField(54, v); }
+  set productGroupView($4103.ProductGroupView v) { setField(54, v); }
   @$pb.TagNumber(54)
   $core.bool hasProductGroupView() => $_has(16);
   @$pb.TagNumber(54)
   void clearProductGroupView() => clearField(54);
   @$pb.TagNumber(54)
-  $4102.ProductGroupView ensureProductGroupView() => $_ensure(16);
+  $4103.ProductGroupView ensureProductGroupView() => $_ensure(16);
 
   /// The language constant referenced in the query.
   @$pb.TagNumber(55)
-  $4103.LanguageConstant get languageConstant => $_getN(17);
+  $4104.LanguageConstant get languageConstant => $_getN(17);
   @$pb.TagNumber(55)
-  set languageConstant($4103.LanguageConstant v) { setField(55, v); }
+  set languageConstant($4104.LanguageConstant v) { setField(55, v); }
   @$pb.TagNumber(55)
   $core.bool hasLanguageConstant() => $_has(17);
   @$pb.TagNumber(55)
   void clearLanguageConstant() => clearField(55);
   @$pb.TagNumber(55)
-  $4103.LanguageConstant ensureLanguageConstant() => $_ensure(17);
+  $4104.LanguageConstant ensureLanguageConstant() => $_ensure(17);
 
   /// The ad group audience view referenced in the query.
   @$pb.TagNumber(57)
-  $4104.AdGroupAudienceView get adGroupAudienceView => $_getN(18);
+  $4105.AdGroupAudienceView get adGroupAudienceView => $_getN(18);
   @$pb.TagNumber(57)
-  set adGroupAudienceView($4104.AdGroupAudienceView v) { setField(57, v); }
+  set adGroupAudienceView($4105.AdGroupAudienceView v) { setField(57, v); }
   @$pb.TagNumber(57)
   $core.bool hasAdGroupAudienceView() => $_has(18);
   @$pb.TagNumber(57)
   void clearAdGroupAudienceView() => clearField(57);
   @$pb.TagNumber(57)
-  $4104.AdGroupAudienceView ensureAdGroupAudienceView() => $_ensure(18);
+  $4105.AdGroupAudienceView ensureAdGroupAudienceView() => $_ensure(18);
 
   /// The CustomerManagerLink referenced in the query.
   @$pb.TagNumber(61)
-  $4105.CustomerManagerLink get customerManagerLink => $_getN(19);
+  $4106.CustomerManagerLink get customerManagerLink => $_getN(19);
   @$pb.TagNumber(61)
-  set customerManagerLink($4105.CustomerManagerLink v) { setField(61, v); }
+  set customerManagerLink($4106.CustomerManagerLink v) { setField(61, v); }
   @$pb.TagNumber(61)
   $core.bool hasCustomerManagerLink() => $_has(19);
   @$pb.TagNumber(61)
   void clearCustomerManagerLink() => clearField(61);
   @$pb.TagNumber(61)
-  $4105.CustomerManagerLink ensureCustomerManagerLink() => $_ensure(19);
+  $4106.CustomerManagerLink ensureCustomerManagerLink() => $_ensure(19);
 
   /// The campaign audience view referenced in the query.
   @$pb.TagNumber(69)
-  $4106.CampaignAudienceView get campaignAudienceView => $_getN(20);
+  $4107.CampaignAudienceView get campaignAudienceView => $_getN(20);
   @$pb.TagNumber(69)
-  set campaignAudienceView($4106.CampaignAudienceView v) { setField(69, v); }
+  set campaignAudienceView($4107.CampaignAudienceView v) { setField(69, v); }
   @$pb.TagNumber(69)
   $core.bool hasCampaignAudienceView() => $_has(20);
   @$pb.TagNumber(69)
   void clearCampaignAudienceView() => clearField(69);
   @$pb.TagNumber(69)
-  $4106.CampaignAudienceView ensureCampaignAudienceView() => $_ensure(20);
+  $4107.CampaignAudienceView ensureCampaignAudienceView() => $_ensure(20);
 
   /// The CustomerClient referenced in the query.
   @$pb.TagNumber(70)
-  $4107.CustomerClient get customerClient => $_getN(21);
+  $4108.CustomerClient get customerClient => $_getN(21);
   @$pb.TagNumber(70)
-  set customerClient($4107.CustomerClient v) { setField(70, v); }
+  set customerClient($4108.CustomerClient v) { setField(70, v); }
   @$pb.TagNumber(70)
   $core.bool hasCustomerClient() => $_has(21);
   @$pb.TagNumber(70)
   void clearCustomerClient() => clearField(70);
   @$pb.TagNumber(70)
-  $4107.CustomerClient ensureCustomerClient() => $_ensure(21);
+  $4108.CustomerClient ensureCustomerClient() => $_ensure(21);
 
   /// The segments.
   @$pb.TagNumber(102)
-  $4108.Segments get segments => $_getN(22);
+  $4109.Segments get segments => $_getN(22);
   @$pb.TagNumber(102)
-  set segments($4108.Segments v) { setField(102, v); }
+  set segments($4109.Segments v) { setField(102, v); }
   @$pb.TagNumber(102)
   $core.bool hasSegments() => $_has(22);
   @$pb.TagNumber(102)
   void clearSegments() => clearField(102);
   @$pb.TagNumber(102)
-  $4108.Segments ensureSegments() => $_ensure(22);
+  $4109.Segments ensureSegments() => $_ensure(22);
 
   /// The conversion action referenced in the query.
   @$pb.TagNumber(103)
-  $4109.ConversionAction get conversionAction => $_getN(23);
+  $4110.ConversionAction get conversionAction => $_getN(23);
   @$pb.TagNumber(103)
-  set conversionAction($4109.ConversionAction v) { setField(103, v); }
+  set conversionAction($4110.ConversionAction v) { setField(103, v); }
   @$pb.TagNumber(103)
   $core.bool hasConversionAction() => $_has(23);
   @$pb.TagNumber(103)
   void clearConversionAction() => clearField(103);
   @$pb.TagNumber(103)
-  $4109.ConversionAction ensureConversionAction() => $_ensure(23);
+  $4110.ConversionAction ensureConversionAction() => $_ensure(23);
 
   /// The asset referenced in the query.
   @$pb.TagNumber(105)
-  $4110.Asset get asset => $_getN(24);
+  $4111.Asset get asset => $_getN(24);
   @$pb.TagNumber(105)
-  set asset($4110.Asset v) { setField(105, v); }
+  set asset($4111.Asset v) { setField(105, v); }
   @$pb.TagNumber(105)
   $core.bool hasAsset() => $_has(24);
   @$pb.TagNumber(105)
   void clearAsset() => clearField(105);
   @$pb.TagNumber(105)
-  $4110.Asset ensureAsset() => $_ensure(24);
+  $4111.Asset ensureAsset() => $_ensure(24);
 
   /// The dynamic search ads search term view referenced in the query.
   @$pb.TagNumber(106)
-  $4111.DynamicSearchAdsSearchTermView get dynamicSearchAdsSearchTermView => $_getN(25);
+  $4112.DynamicSearchAdsSearchTermView get dynamicSearchAdsSearchTermView => $_getN(25);
   @$pb.TagNumber(106)
-  set dynamicSearchAdsSearchTermView($4111.DynamicSearchAdsSearchTermView v) { setField(106, v); }
+  set dynamicSearchAdsSearchTermView($4112.DynamicSearchAdsSearchTermView v) { setField(106, v); }
   @$pb.TagNumber(106)
   $core.bool hasDynamicSearchAdsSearchTermView() => $_has(25);
   @$pb.TagNumber(106)
   void clearDynamicSearchAdsSearchTermView() => clearField(106);
   @$pb.TagNumber(106)
-  $4111.DynamicSearchAdsSearchTermView ensureDynamicSearchAdsSearchTermView() => $_ensure(25);
+  $4112.DynamicSearchAdsSearchTermView ensureDynamicSearchAdsSearchTermView() => $_ensure(25);
 
   /// The campaign label referenced in the query.
   @$pb.TagNumber(108)
-  $4112.CampaignLabel get campaignLabel => $_getN(26);
+  $4113.CampaignLabel get campaignLabel => $_getN(26);
   @$pb.TagNumber(108)
-  set campaignLabel($4112.CampaignLabel v) { setField(108, v); }
+  set campaignLabel($4113.CampaignLabel v) { setField(108, v); }
   @$pb.TagNumber(108)
   $core.bool hasCampaignLabel() => $_has(26);
   @$pb.TagNumber(108)
   void clearCampaignLabel() => clearField(108);
   @$pb.TagNumber(108)
-  $4112.CampaignLabel ensureCampaignLabel() => $_ensure(26);
+  $4113.CampaignLabel ensureCampaignLabel() => $_ensure(26);
 
   /// The Product Bidding Category referenced in the query.
   @$pb.TagNumber(109)
-  $4113.ProductBiddingCategoryConstant get productBiddingCategoryConstant => $_getN(27);
+  $4114.ProductBiddingCategoryConstant get productBiddingCategoryConstant => $_getN(27);
   @$pb.TagNumber(109)
-  set productBiddingCategoryConstant($4113.ProductBiddingCategoryConstant v) { setField(109, v); }
+  set productBiddingCategoryConstant($4114.ProductBiddingCategoryConstant v) { setField(109, v); }
   @$pb.TagNumber(109)
   $core.bool hasProductBiddingCategoryConstant() => $_has(27);
   @$pb.TagNumber(109)
   void clearProductBiddingCategoryConstant() => clearField(109);
   @$pb.TagNumber(109)
-  $4113.ProductBiddingCategoryConstant ensureProductBiddingCategoryConstant() => $_ensure(27);
+  $4114.ProductBiddingCategoryConstant ensureProductBiddingCategoryConstant() => $_ensure(27);
 
   /// The ad group label referenced in the query.
   @$pb.TagNumber(115)
-  $4114.AdGroupLabel get adGroupLabel => $_getN(28);
+  $4115.AdGroupLabel get adGroupLabel => $_getN(28);
   @$pb.TagNumber(115)
-  set adGroupLabel($4114.AdGroupLabel v) { setField(115, v); }
+  set adGroupLabel($4115.AdGroupLabel v) { setField(115, v); }
   @$pb.TagNumber(115)
   $core.bool hasAdGroupLabel() => $_has(28);
   @$pb.TagNumber(115)
   void clearAdGroupLabel() => clearField(115);
   @$pb.TagNumber(115)
-  $4114.AdGroupLabel ensureAdGroupLabel() => $_ensure(28);
+  $4115.AdGroupLabel ensureAdGroupLabel() => $_ensure(28);
 
   /// The shopping performance view referenced in the query.
   @$pb.TagNumber(117)
-  $4115.ShoppingPerformanceView get shoppingPerformanceView => $_getN(29);
+  $4116.ShoppingPerformanceView get shoppingPerformanceView => $_getN(29);
   @$pb.TagNumber(117)
-  set shoppingPerformanceView($4115.ShoppingPerformanceView v) { setField(117, v); }
+  set shoppingPerformanceView($4116.ShoppingPerformanceView v) { setField(117, v); }
   @$pb.TagNumber(117)
   $core.bool hasShoppingPerformanceView() => $_has(29);
   @$pb.TagNumber(117)
   void clearShoppingPerformanceView() => clearField(117);
   @$pb.TagNumber(117)
-  $4115.ShoppingPerformanceView ensureShoppingPerformanceView() => $_ensure(29);
+  $4116.ShoppingPerformanceView ensureShoppingPerformanceView() => $_ensure(29);
 
   /// The ad group ad label referenced in the query.
   @$pb.TagNumber(120)
-  $4116.AdGroupAdLabel get adGroupAdLabel => $_getN(30);
+  $4117.AdGroupAdLabel get adGroupAdLabel => $_getN(30);
   @$pb.TagNumber(120)
-  set adGroupAdLabel($4116.AdGroupAdLabel v) { setField(120, v); }
+  set adGroupAdLabel($4117.AdGroupAdLabel v) { setField(120, v); }
   @$pb.TagNumber(120)
   $core.bool hasAdGroupAdLabel() => $_has(30);
   @$pb.TagNumber(120)
   void clearAdGroupAdLabel() => clearField(120);
   @$pb.TagNumber(120)
-  $4116.AdGroupAdLabel ensureAdGroupAdLabel() => $_ensure(30);
+  $4117.AdGroupAdLabel ensureAdGroupAdLabel() => $_ensure(30);
 
   /// The ad group criterion label referenced in the query.
   @$pb.TagNumber(121)
-  $4117.AdGroupCriterionLabel get adGroupCriterionLabel => $_getN(31);
+  $4118.AdGroupCriterionLabel get adGroupCriterionLabel => $_getN(31);
   @$pb.TagNumber(121)
-  set adGroupCriterionLabel($4117.AdGroupCriterionLabel v) { setField(121, v); }
+  set adGroupCriterionLabel($4118.AdGroupCriterionLabel v) { setField(121, v); }
   @$pb.TagNumber(121)
   $core.bool hasAdGroupCriterionLabel() => $_has(31);
   @$pb.TagNumber(121)
   void clearAdGroupCriterionLabel() => clearField(121);
   @$pb.TagNumber(121)
-  $4117.AdGroupCriterionLabel ensureAdGroupCriterionLabel() => $_ensure(31);
+  $4118.AdGroupCriterionLabel ensureAdGroupCriterionLabel() => $_ensure(31);
 
   /// The location view referenced in the query.
   @$pb.TagNumber(123)
-  $4118.LocationView get locationView => $_getN(32);
+  $4119.LocationView get locationView => $_getN(32);
   @$pb.TagNumber(123)
-  set locationView($4118.LocationView v) { setField(123, v); }
+  set locationView($4119.LocationView v) { setField(123, v); }
   @$pb.TagNumber(123)
   $core.bool hasLocationView() => $_has(32);
   @$pb.TagNumber(123)
   void clearLocationView() => clearField(123);
   @$pb.TagNumber(123)
-  $4118.LocationView ensureLocationView() => $_ensure(32);
+  $4119.LocationView ensureLocationView() => $_ensure(32);
 
   /// The campaign asset referenced in the query.
   @$pb.TagNumber(142)
-  $4119.CampaignAsset get campaignAsset => $_getN(33);
+  $4120.CampaignAsset get campaignAsset => $_getN(33);
   @$pb.TagNumber(142)
-  set campaignAsset($4119.CampaignAsset v) { setField(142, v); }
+  set campaignAsset($4120.CampaignAsset v) { setField(142, v); }
   @$pb.TagNumber(142)
   $core.bool hasCampaignAsset() => $_has(33);
   @$pb.TagNumber(142)
   void clearCampaignAsset() => clearField(142);
   @$pb.TagNumber(142)
-  $4119.CampaignAsset ensureCampaignAsset() => $_ensure(33);
+  $4120.CampaignAsset ensureCampaignAsset() => $_ensure(33);
 
   /// The conversion custom variable referenced in the query.
   @$pb.TagNumber(153)
-  $4120.ConversionCustomVariable get conversionCustomVariable => $_getN(34);
+  $4121.ConversionCustomVariable get conversionCustomVariable => $_getN(34);
   @$pb.TagNumber(153)
-  set conversionCustomVariable($4120.ConversionCustomVariable v) { setField(153, v); }
+  set conversionCustomVariable($4121.ConversionCustomVariable v) { setField(153, v); }
   @$pb.TagNumber(153)
   $core.bool hasConversionCustomVariable() => $_has(34);
   @$pb.TagNumber(153)
   void clearConversionCustomVariable() => clearField(153);
   @$pb.TagNumber(153)
-  $4120.ConversionCustomVariable ensureConversionCustomVariable() => $_ensure(34);
+  $4121.ConversionCustomVariable ensureConversionCustomVariable() => $_ensure(34);
 
   /// The ad group asset referenced in the query.
   @$pb.TagNumber(154)
-  $4121.AdGroupAsset get adGroupAsset => $_getN(35);
+  $4122.AdGroupAsset get adGroupAsset => $_getN(35);
   @$pb.TagNumber(154)
-  set adGroupAsset($4121.AdGroupAsset v) { setField(154, v); }
+  set adGroupAsset($4122.AdGroupAsset v) { setField(154, v); }
   @$pb.TagNumber(154)
   $core.bool hasAdGroupAsset() => $_has(35);
   @$pb.TagNumber(154)
   void clearAdGroupAsset() => clearField(154);
   @$pb.TagNumber(154)
-  $4121.AdGroupAsset ensureAdGroupAsset() => $_ensure(35);
+  $4122.AdGroupAsset ensureAdGroupAsset() => $_ensure(35);
 
   /// The customer asset referenced in the query.
   @$pb.TagNumber(155)
-  $4122.CustomerAsset get customerAsset => $_getN(36);
+  $4123.CustomerAsset get customerAsset => $_getN(36);
   @$pb.TagNumber(155)
-  set customerAsset($4122.CustomerAsset v) { setField(155, v); }
+  set customerAsset($4123.CustomerAsset v) { setField(155, v); }
   @$pb.TagNumber(155)
   $core.bool hasCustomerAsset() => $_has(36);
   @$pb.TagNumber(155)
   void clearCustomerAsset() => clearField(155);
   @$pb.TagNumber(155)
-  $4122.CustomerAsset ensureCustomerAsset() => $_ensure(36);
+  $4123.CustomerAsset ensureCustomerAsset() => $_ensure(36);
 
   /// The custom columns.
   @$pb.TagNumber(156)
-  $core.List<$3990.Value> get customColumns => $_getList(37);
+  $core.List<$3991.Value> get customColumns => $_getList(37);
 
   /// The webpage view referenced in the query.
   @$pb.TagNumber(162)
-  $4123.WebpageView get webpageView => $_getN(38);
+  $4124.WebpageView get webpageView => $_getN(38);
   @$pb.TagNumber(162)
-  set webpageView($4123.WebpageView v) { setField(162, v); }
+  set webpageView($4124.WebpageView v) { setField(162, v); }
   @$pb.TagNumber(162)
   $core.bool hasWebpageView() => $_has(38);
   @$pb.TagNumber(162)
   void clearWebpageView() => clearField(162);
   @$pb.TagNumber(162)
-  $4123.WebpageView ensureWebpageView() => $_ensure(38);
+  $4124.WebpageView ensureWebpageView() => $_ensure(38);
 
   /// The accessible bidding strategy referenced in the query.
   @$pb.TagNumber(169)
-  $4124.AccessibleBiddingStrategy get accessibleBiddingStrategy => $_getN(39);
+  $4125.AccessibleBiddingStrategy get accessibleBiddingStrategy => $_getN(39);
   @$pb.TagNumber(169)
-  set accessibleBiddingStrategy($4124.AccessibleBiddingStrategy v) { setField(169, v); }
+  set accessibleBiddingStrategy($4125.AccessibleBiddingStrategy v) { setField(169, v); }
   @$pb.TagNumber(169)
   $core.bool hasAccessibleBiddingStrategy() => $_has(39);
   @$pb.TagNumber(169)
   void clearAccessibleBiddingStrategy() => clearField(169);
   @$pb.TagNumber(169)
-  $4124.AccessibleBiddingStrategy ensureAccessibleBiddingStrategy() => $_ensure(39);
+  $4125.AccessibleBiddingStrategy ensureAccessibleBiddingStrategy() => $_ensure(39);
 
   /// The asset group referenced in the query.
   @$pb.TagNumber(172)
-  $4125.AssetGroup get assetGroup => $_getN(40);
+  $4126.AssetGroup get assetGroup => $_getN(40);
   @$pb.TagNumber(172)
-  set assetGroup($4125.AssetGroup v) { setField(172, v); }
+  set assetGroup($4126.AssetGroup v) { setField(172, v); }
   @$pb.TagNumber(172)
   $core.bool hasAssetGroup() => $_has(40);
   @$pb.TagNumber(172)
   void clearAssetGroup() => clearField(172);
   @$pb.TagNumber(172)
-  $4125.AssetGroup ensureAssetGroup() => $_ensure(40);
+  $4126.AssetGroup ensureAssetGroup() => $_ensure(40);
 
   /// The asset group asset referenced in the query.
   @$pb.TagNumber(173)
-  $4126.AssetGroupAsset get assetGroupAsset => $_getN(41);
+  $4127.AssetGroupAsset get assetGroupAsset => $_getN(41);
   @$pb.TagNumber(173)
-  set assetGroupAsset($4126.AssetGroupAsset v) { setField(173, v); }
+  set assetGroupAsset($4127.AssetGroupAsset v) { setField(173, v); }
   @$pb.TagNumber(173)
   $core.bool hasAssetGroupAsset() => $_has(41);
   @$pb.TagNumber(173)
   void clearAssetGroupAsset() => clearField(173);
   @$pb.TagNumber(173)
-  $4126.AssetGroupAsset ensureAssetGroupAsset() => $_ensure(41);
+  $4127.AssetGroupAsset ensureAssetGroupAsset() => $_ensure(41);
 
   /// The asset set referenced in the query.
   @$pb.TagNumber(179)
-  $4127.AssetSet get assetSet => $_getN(42);
+  $4128.AssetSet get assetSet => $_getN(42);
   @$pb.TagNumber(179)
-  set assetSet($4127.AssetSet v) { setField(179, v); }
+  set assetSet($4128.AssetSet v) { setField(179, v); }
   @$pb.TagNumber(179)
   $core.bool hasAssetSet() => $_has(42);
   @$pb.TagNumber(179)
   void clearAssetSet() => clearField(179);
   @$pb.TagNumber(179)
-  $4127.AssetSet ensureAssetSet() => $_ensure(42);
+  $4128.AssetSet ensureAssetSet() => $_ensure(42);
 
   /// The asset set asset referenced in the query.
   @$pb.TagNumber(180)
-  $4128.AssetSetAsset get assetSetAsset => $_getN(43);
+  $4129.AssetSetAsset get assetSetAsset => $_getN(43);
   @$pb.TagNumber(180)
-  set assetSetAsset($4128.AssetSetAsset v) { setField(180, v); }
+  set assetSetAsset($4129.AssetSetAsset v) { setField(180, v); }
   @$pb.TagNumber(180)
   $core.bool hasAssetSetAsset() => $_has(43);
   @$pb.TagNumber(180)
   void clearAssetSetAsset() => clearField(180);
   @$pb.TagNumber(180)
-  $4128.AssetSetAsset ensureAssetSetAsset() => $_ensure(43);
+  $4129.AssetSetAsset ensureAssetSetAsset() => $_ensure(43);
 
   /// The campaign asset set referenced in the query.
   @$pb.TagNumber(181)
-  $4129.CampaignAssetSet get campaignAssetSet => $_getN(44);
+  $4130.CampaignAssetSet get campaignAssetSet => $_getN(44);
   @$pb.TagNumber(181)
-  set campaignAssetSet($4129.CampaignAssetSet v) { setField(181, v); }
+  set campaignAssetSet($4130.CampaignAssetSet v) { setField(181, v); }
   @$pb.TagNumber(181)
   $core.bool hasCampaignAssetSet() => $_has(44);
   @$pb.TagNumber(181)
   void clearCampaignAssetSet() => clearField(181);
   @$pb.TagNumber(181)
-  $4129.CampaignAssetSet ensureCampaignAssetSet() => $_ensure(44);
+  $4130.CampaignAssetSet ensureCampaignAssetSet() => $_ensure(44);
 
   /// The asset group listing group filter referenced in the query.
   @$pb.TagNumber(182)
-  $4130.AssetGroupListingGroupFilter get assetGroupListingGroupFilter => $_getN(45);
+  $4131.AssetGroupListingGroupFilter get assetGroupListingGroupFilter => $_getN(45);
   @$pb.TagNumber(182)
-  set assetGroupListingGroupFilter($4130.AssetGroupListingGroupFilter v) { setField(182, v); }
+  set assetGroupListingGroupFilter($4131.AssetGroupListingGroupFilter v) { setField(182, v); }
   @$pb.TagNumber(182)
   $core.bool hasAssetGroupListingGroupFilter() => $_has(45);
   @$pb.TagNumber(182)
   void clearAssetGroupListingGroupFilter() => clearField(182);
   @$pb.TagNumber(182)
-  $4130.AssetGroupListingGroupFilter ensureAssetGroupListingGroupFilter() => $_ensure(45);
+  $4131.AssetGroupListingGroupFilter ensureAssetGroupListingGroupFilter() => $_ensure(45);
 
   /// The Audience referenced in the query.
   @$pb.TagNumber(190)
-  $4131.Audience get audience => $_getN(46);
+  $4132.Audience get audience => $_getN(46);
   @$pb.TagNumber(190)
-  set audience($4131.Audience v) { setField(190, v); }
+  set audience($4132.Audience v) { setField(190, v); }
   @$pb.TagNumber(190)
   $core.bool hasAudience() => $_has(46);
   @$pb.TagNumber(190)
   void clearAudience() => clearField(190);
   @$pb.TagNumber(190)
-  $4131.Audience ensureAudience() => $_ensure(46);
+  $4132.Audience ensureAudience() => $_ensure(46);
 
   /// The asset group signal referenced in the query.
   @$pb.TagNumber(191)
-  $4132.AssetGroupSignal get assetGroupSignal => $_getN(47);
+  $4133.AssetGroupSignal get assetGroupSignal => $_getN(47);
   @$pb.TagNumber(191)
-  set assetGroupSignal($4132.AssetGroupSignal v) { setField(191, v); }
+  set assetGroupSignal($4133.AssetGroupSignal v) { setField(191, v); }
   @$pb.TagNumber(191)
   $core.bool hasAssetGroupSignal() => $_has(47);
   @$pb.TagNumber(191)
   void clearAssetGroupSignal() => clearField(191);
   @$pb.TagNumber(191)
-  $4132.AssetGroupSignal ensureAssetGroupSignal() => $_ensure(47);
+  $4133.AssetGroupSignal ensureAssetGroupSignal() => $_ensure(47);
 
   /// The customer asset set referenced in the query.
   @$pb.TagNumber(195)
-  $4133.CustomerAssetSet get customerAssetSet => $_getN(48);
+  $4134.CustomerAssetSet get customerAssetSet => $_getN(48);
   @$pb.TagNumber(195)
-  set customerAssetSet($4133.CustomerAssetSet v) { setField(195, v); }
+  set customerAssetSet($4134.CustomerAssetSet v) { setField(195, v); }
   @$pb.TagNumber(195)
   $core.bool hasCustomerAssetSet() => $_has(48);
   @$pb.TagNumber(195)
   void clearCustomerAssetSet() => clearField(195);
   @$pb.TagNumber(195)
-  $4133.CustomerAssetSet ensureCustomerAssetSet() => $_ensure(48);
+  $4134.CustomerAssetSet ensureCustomerAssetSet() => $_ensure(48);
 
   /// The ad group asset set referenced in the query.
   @$pb.TagNumber(196)
-  $4134.AdGroupAssetSet get adGroupAssetSet => $_getN(49);
+  $4135.AdGroupAssetSet get adGroupAssetSet => $_getN(49);
   @$pb.TagNumber(196)
-  set adGroupAssetSet($4134.AdGroupAssetSet v) { setField(196, v); }
+  set adGroupAssetSet($4135.AdGroupAssetSet v) { setField(196, v); }
   @$pb.TagNumber(196)
   $core.bool hasAdGroupAssetSet() => $_has(49);
   @$pb.TagNumber(196)
   void clearAdGroupAssetSet() => clearField(196);
   @$pb.TagNumber(196)
-  $4134.AdGroupAssetSet ensureAdGroupAssetSet() => $_ensure(49);
+  $4135.AdGroupAssetSet ensureAdGroupAssetSet() => $_ensure(49);
 
   /// The asset group top combination view referenced in the query.
   @$pb.TagNumber(199)
-  $4135.AssetGroupTopCombinationView get assetGroupTopCombinationView => $_getN(50);
+  $4136.AssetGroupTopCombinationView get assetGroupTopCombinationView => $_getN(50);
   @$pb.TagNumber(199)
-  set assetGroupTopCombinationView($4135.AssetGroupTopCombinationView v) { setField(199, v); }
+  set assetGroupTopCombinationView($4136.AssetGroupTopCombinationView v) { setField(199, v); }
   @$pb.TagNumber(199)
   $core.bool hasAssetGroupTopCombinationView() => $_has(50);
   @$pb.TagNumber(199)
   void clearAssetGroupTopCombinationView() => clearField(199);
   @$pb.TagNumber(199)
-  $4135.AssetGroupTopCombinationView ensureAssetGroupTopCombinationView() => $_ensure(50);
+  $4136.AssetGroupTopCombinationView ensureAssetGroupTopCombinationView() => $_ensure(50);
 
   /// The event level visit referenced in the query.
   @$pb.TagNumber(203)
-  $4136.Visit get visit => $_getN(51);
+  $4137.Visit get visit => $_getN(51);
   @$pb.TagNumber(203)
-  set visit($4136.Visit v) { setField(203, v); }
+  set visit($4137.Visit v) { setField(203, v); }
   @$pb.TagNumber(203)
   $core.bool hasVisit() => $_has(51);
   @$pb.TagNumber(203)
   void clearVisit() => clearField(203);
   @$pb.TagNumber(203)
-  $4136.Visit ensureVisit() => $_ensure(51);
+  $4137.Visit ensureVisit() => $_ensure(51);
 
   /// The event level conversion referenced in the query.
   @$pb.TagNumber(206)
-  $4137.Conversion get conversion => $_getN(52);
+  $4138.Conversion get conversion => $_getN(52);
   @$pb.TagNumber(206)
-  set conversion($4137.Conversion v) { setField(206, v); }
+  set conversion($4138.Conversion v) { setField(206, v); }
   @$pb.TagNumber(206)
   $core.bool hasConversion() => $_has(52);
   @$pb.TagNumber(206)
   void clearConversion() => clearField(206);
   @$pb.TagNumber(206)
-  $4137.Conversion ensureConversion() => $_ensure(52);
+  $4138.Conversion ensureConversion() => $_ensure(52);
 
   /// The cart data sales view referenced in the query.
   @$pb.TagNumber(221)
-  $4138.CartDataSalesView get cartDataSalesView => $_getN(53);
+  $4139.CartDataSalesView get cartDataSalesView => $_getN(53);
   @$pb.TagNumber(221)
-  set cartDataSalesView($4138.CartDataSalesView v) { setField(221, v); }
+  set cartDataSalesView($4139.CartDataSalesView v) { setField(221, v); }
   @$pb.TagNumber(221)
   $core.bool hasCartDataSalesView() => $_has(53);
   @$pb.TagNumber(221)
   void clearCartDataSalesView() => clearField(221);
   @$pb.TagNumber(221)
-  $4138.CartDataSalesView ensureCartDataSalesView() => $_ensure(53);
+  $4139.CartDataSalesView ensureCartDataSalesView() => $_ensure(53);
 }
 
 /// Message for custom column header.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'endpoint.pb.dart' as $1385;
 import 'namespace.pb.dart' as $1383;
 import 'service.pb.dart' as $1384;
@@ -382,7 +382,7 @@ class GetNamespaceRequest extends $pb.GeneratedMessage {
 class UpdateNamespaceRequest extends $pb.GeneratedMessage {
   factory UpdateNamespaceRequest({
     $1383.Namespace? namespace,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (namespace != null) {
@@ -399,7 +399,7 @@ class UpdateNamespaceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNamespaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.servicedirectory.v1'), createEmptyInstance: create)
     ..aOM<$1383.Namespace>(1, _omitFieldNames ? '' : 'namespace', subBuilder: $1383.Namespace.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -438,15 +438,15 @@ class UpdateNamespaceRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for
@@ -869,7 +869,7 @@ class GetServiceRequest extends $pb.GeneratedMessage {
 class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest({
     $1384.Service? service,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (service != null) {
@@ -886,7 +886,7 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.servicedirectory.v1'), createEmptyInstance: create)
     ..aOM<$1384.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $1384.Service.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -925,15 +925,15 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for
@@ -1359,7 +1359,7 @@ class GetEndpointRequest extends $pb.GeneratedMessage {
 class UpdateEndpointRequest extends $pb.GeneratedMessage {
   factory UpdateEndpointRequest({
     $1385.Endpoint? endpoint,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (endpoint != null) {
@@ -1376,7 +1376,7 @@ class UpdateEndpointRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateEndpointRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.servicedirectory.v1'), createEmptyInstance: create)
     ..aOM<$1385.Endpoint>(1, _omitFieldNames ? '' : 'endpoint', subBuilder: $1385.Endpoint.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1415,15 +1415,15 @@ class UpdateEndpointRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields to be updated in this request.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request message for

@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/interval.pb.dart' as $4256;
-import 'job_state.pbenum.dart' as $4283;
-import 'model_monitoring_spec.pb.dart' as $4306;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/interval.pb.dart' as $4257;
+import 'job_state.pbenum.dart' as $4284;
+import 'model_monitoring_spec.pb.dart' as $4307;
 
 /// Represents a model monitoring job that analyze dataset using different
 /// monitoring algorithm.
@@ -25,13 +25,13 @@ class ModelMonitoringJob extends $pb.GeneratedMessage {
   factory ModelMonitoringJob({
     $core.String? name,
     $core.String? displayName,
-    $4306.ModelMonitoringSpec? modelMonitoringSpec,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $4283.JobState? state,
+    $4307.ModelMonitoringSpec? modelMonitoringSpec,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $4284.JobState? state,
     $core.String? schedule,
     ModelMonitoringJobExecutionDetail? jobExecutionDetail,
-    $1775.Timestamp? scheduleTime,
+    $1776.Timestamp? scheduleTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -70,13 +70,13 @@ class ModelMonitoringJob extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringJob', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$4306.ModelMonitoringSpec>(3, _omitFieldNames ? '' : 'modelMonitoringSpec', subBuilder: $4306.ModelMonitoringSpec.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..e<$4283.JobState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4283.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4283.JobState.valueOf, enumValues: $4283.JobState.values)
+    ..aOM<$4307.ModelMonitoringSpec>(3, _omitFieldNames ? '' : 'modelMonitoringSpec', subBuilder: $4307.ModelMonitoringSpec.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..e<$4284.JobState>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4284.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4284.JobState.valueOf, enumValues: $4284.JobState.values)
     ..aOS(7, _omitFieldNames ? '' : 'schedule')
     ..aOM<ModelMonitoringJobExecutionDetail>(8, _omitFieldNames ? '' : 'jobExecutionDetail', subBuilder: ModelMonitoringJobExecutionDetail.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'scheduleTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -129,40 +129,40 @@ class ModelMonitoringJob extends $pb.GeneratedMessage {
   /// 'ModelMonitor' will be applied. If provided, we will use the specification
   /// defined here rather than the default one.
   @$pb.TagNumber(3)
-  $4306.ModelMonitoringSpec get modelMonitoringSpec => $_getN(2);
+  $4307.ModelMonitoringSpec get modelMonitoringSpec => $_getN(2);
   @$pb.TagNumber(3)
-  set modelMonitoringSpec($4306.ModelMonitoringSpec v) { setField(3, v); }
+  set modelMonitoringSpec($4307.ModelMonitoringSpec v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasModelMonitoringSpec() => $_has(2);
   @$pb.TagNumber(3)
   void clearModelMonitoringSpec() => clearField(3);
   @$pb.TagNumber(3)
-  $4306.ModelMonitoringSpec ensureModelMonitoringSpec() => $_ensure(2);
+  $4307.ModelMonitoringSpec ensureModelMonitoringSpec() => $_ensure(2);
 
   /// Output only. Timestamp when this ModelMonitoringJob was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Timestamp when this ModelMonitoringJob was updated most
   /// recently.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Output only. The state of the monitoring job.
   ///  * When the job is still creating, the state will be 'JOB_STATE_PENDING'.
@@ -172,9 +172,9 @@ class ModelMonitoringJob extends $pb.GeneratedMessage {
   ///    'JOB_STATE_FAILED', 'JOB_STATE_SUCCEEDED',
   ///    'JOB_STATE_PARTIALLY_SUCCEEDED'.
   @$pb.TagNumber(6)
-  $4283.JobState get state => $_getN(5);
+  $4284.JobState get state => $_getN(5);
   @$pb.TagNumber(6)
-  set state($4283.JobState v) { setField(6, v); }
+  set state($4284.JobState v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasState() => $_has(5);
   @$pb.TagNumber(6)
@@ -206,22 +206,22 @@ class ModelMonitoringJob extends $pb.GeneratedMessage {
   /// Output only. Timestamp when this ModelMonitoringJob was scheduled. It will
   /// only appear when this job is triggered by a schedule.
   @$pb.TagNumber(9)
-  $1775.Timestamp get scheduleTime => $_getN(8);
+  $1776.Timestamp get scheduleTime => $_getN(8);
   @$pb.TagNumber(9)
-  set scheduleTime($1775.Timestamp v) { setField(9, v); }
+  set scheduleTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasScheduleTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearScheduleTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureScheduleTime() => $_ensure(8);
+  $1776.Timestamp ensureScheduleTime() => $_ensure(8);
 }
 
 /// Processed dataset information.
 class ModelMonitoringJobExecutionDetail_ProcessedDataset extends $pb.GeneratedMessage {
   factory ModelMonitoringJobExecutionDetail_ProcessedDataset({
     $core.String? location,
-    $4256.Interval? timeRange,
+    $4257.Interval? timeRange,
   }) {
     final $result = create();
     if (location != null) {
@@ -238,7 +238,7 @@ class ModelMonitoringJobExecutionDetail_ProcessedDataset extends $pb.GeneratedMe
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringJobExecutionDetail.ProcessedDataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'location')
-    ..aOM<$4256.Interval>(2, _omitFieldNames ? '' : 'timeRange', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(2, _omitFieldNames ? '' : 'timeRange', subBuilder: $4257.Interval.create)
     ..hasRequiredFields = false
   ;
 
@@ -275,15 +275,15 @@ class ModelMonitoringJobExecutionDetail_ProcessedDataset extends $pb.GeneratedMe
 
   /// Dataset time range information if any.
   @$pb.TagNumber(2)
-  $4256.Interval get timeRange => $_getN(1);
+  $4257.Interval get timeRange => $_getN(1);
   @$pb.TagNumber(2)
-  set timeRange($4256.Interval v) { setField(2, v); }
+  set timeRange($4257.Interval v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeRange() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeRange() => clearField(2);
   @$pb.TagNumber(2)
-  $4256.Interval ensureTimeRange() => $_ensure(1);
+  $4257.Interval ensureTimeRange() => $_ensure(1);
 }
 
 /// Represent the execution details of the job.
@@ -291,8 +291,8 @@ class ModelMonitoringJobExecutionDetail extends $pb.GeneratedMessage {
   factory ModelMonitoringJobExecutionDetail({
     $core.Iterable<ModelMonitoringJobExecutionDetail_ProcessedDataset>? baselineDatasets,
     $core.Iterable<ModelMonitoringJobExecutionDetail_ProcessedDataset>? targetDatasets,
-    $core.Map<$core.String, $1795.Status>? objectiveStatus,
-    $1795.Status? error,
+    $core.Map<$core.String, $1796.Status>? objectiveStatus,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (baselineDatasets != null) {
@@ -316,8 +316,8 @@ class ModelMonitoringJobExecutionDetail extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModelMonitoringJobExecutionDetail', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..pc<ModelMonitoringJobExecutionDetail_ProcessedDataset>(1, _omitFieldNames ? '' : 'baselineDatasets', $pb.PbFieldType.PM, subBuilder: ModelMonitoringJobExecutionDetail_ProcessedDataset.create)
     ..pc<ModelMonitoringJobExecutionDetail_ProcessedDataset>(2, _omitFieldNames ? '' : 'targetDatasets', $pb.PbFieldType.PM, subBuilder: ModelMonitoringJobExecutionDetail_ProcessedDataset.create)
-    ..m<$core.String, $1795.Status>(3, _omitFieldNames ? '' : 'objectiveStatus', entryClassName: 'ModelMonitoringJobExecutionDetail.ObjectiveStatusEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1795.Status.create, valueDefaultOrMaker: $1795.Status.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..m<$core.String, $1796.Status>(3, _omitFieldNames ? '' : 'objectiveStatus', entryClassName: 'ModelMonitoringJobExecutionDetail.ObjectiveStatusEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1796.Status.create, valueDefaultOrMaker: $1796.Status.getDefault, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -353,19 +353,19 @@ class ModelMonitoringJobExecutionDetail extends $pb.GeneratedMessage {
   /// Status of data processing for each monitoring objective.
   /// Key is the objective.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $1795.Status> get objectiveStatus => $_getMap(2);
+  $core.Map<$core.String, $1796.Status> get objectiveStatus => $_getMap(2);
 
   /// Additional job error status.
   @$pb.TagNumber(4)
-  $1795.Status get error => $_getN(3);
+  $1796.Status get error => $_getN(3);
   @$pb.TagNumber(4)
-  set error($1795.Status v) { setField(4, v); }
+  set error($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(3);
   @$pb.TagNumber(4)
   void clearError() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureError() => $_ensure(3);
+  $1796.Status ensureError() => $_ensure(3);
 }
 
 

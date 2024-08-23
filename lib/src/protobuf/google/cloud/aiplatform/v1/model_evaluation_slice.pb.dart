@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'explanation.pb.dart' as $4239;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'explanation.pb.dart' as $4240;
 
 enum ModelEvaluationSlice_Slice_SliceSpec_SliceConfig_Kind {
   value, 
@@ -84,7 +84,7 @@ class ModelEvaluationSlice_Slice_SliceSpec_SliceConfig extends $pb.GeneratedMess
   factory ModelEvaluationSlice_Slice_SliceSpec_SliceConfig({
     ModelEvaluationSlice_Slice_SliceSpec_Value? value,
     ModelEvaluationSlice_Slice_SliceSpec_Range? range,
-    $1780.BoolValue? allValues,
+    $1781.BoolValue? allValues,
   }) {
     final $result = create();
     if (value != null) {
@@ -112,7 +112,7 @@ class ModelEvaluationSlice_Slice_SliceSpec_SliceConfig extends $pb.GeneratedMess
     ..oo(0, [1, 2, 3])
     ..aOM<ModelEvaluationSlice_Slice_SliceSpec_Value>(1, _omitFieldNames ? '' : 'value', subBuilder: ModelEvaluationSlice_Slice_SliceSpec_Value.create)
     ..aOM<ModelEvaluationSlice_Slice_SliceSpec_Range>(2, _omitFieldNames ? '' : 'range', subBuilder: ModelEvaluationSlice_Slice_SliceSpec_Range.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'allValues', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'allValues', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -171,15 +171,15 @@ class ModelEvaluationSlice_Slice_SliceSpec_SliceConfig extends $pb.GeneratedMess
   /// feature will have another slice computed.
   /// Example: `{"all_values":{"value":true}}`
   @$pb.TagNumber(3)
-  $1780.BoolValue get allValues => $_getN(2);
+  $1781.BoolValue get allValues => $_getN(2);
   @$pb.TagNumber(3)
-  set allValues($1780.BoolValue v) { setField(3, v); }
+  set allValues($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAllValues() => $_has(2);
   @$pb.TagNumber(3)
   void clearAllValues() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureAllValues() => $_ensure(2);
+  $1781.BoolValue ensureAllValues() => $_ensure(2);
 }
 
 /// A range of values for slice(s).
@@ -480,9 +480,9 @@ class ModelEvaluationSlice extends $pb.GeneratedMessage {
     $core.String? name,
     ModelEvaluationSlice_Slice? slice,
     $core.String? metricsSchemaUri,
-    $1734.Value? metrics,
-    $1775.Timestamp? createTime,
-    $4239.ModelExplanation? modelExplanation,
+    $1735.Value? metrics,
+    $1776.Timestamp? createTime,
+    $4240.ModelExplanation? modelExplanation,
   }) {
     final $result = create();
     if (name != null) {
@@ -513,9 +513,9 @@ class ModelEvaluationSlice extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<ModelEvaluationSlice_Slice>(2, _omitFieldNames ? '' : 'slice', subBuilder: ModelEvaluationSlice_Slice.create)
     ..aOS(3, _omitFieldNames ? '' : 'metricsSchemaUri')
-    ..aOM<$1734.Value>(4, _omitFieldNames ? '' : 'metrics', subBuilder: $1734.Value.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4239.ModelExplanation>(6, _omitFieldNames ? '' : 'modelExplanation', subBuilder: $4239.ModelExplanation.create)
+    ..aOM<$1735.Value>(4, _omitFieldNames ? '' : 'metrics', subBuilder: $1735.Value.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4240.ModelExplanation>(6, _omitFieldNames ? '' : 'modelExplanation', subBuilder: $4240.ModelExplanation.create)
     ..hasRequiredFields = false
   ;
 
@@ -580,42 +580,42 @@ class ModelEvaluationSlice extends $pb.GeneratedMessage {
   /// metrics is stored in
   /// [metrics_schema_uri][google.cloud.aiplatform.v1.ModelEvaluationSlice.metrics_schema_uri]
   @$pb.TagNumber(4)
-  $1734.Value get metrics => $_getN(3);
+  $1735.Value get metrics => $_getN(3);
   @$pb.TagNumber(4)
-  set metrics($1734.Value v) { setField(4, v); }
+  set metrics($1735.Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMetrics() => $_has(3);
   @$pb.TagNumber(4)
   void clearMetrics() => clearField(4);
   @$pb.TagNumber(4)
-  $1734.Value ensureMetrics() => $_ensure(3);
+  $1735.Value ensureMetrics() => $_ensure(3);
 
   /// Output only. Timestamp when this ModelEvaluationSlice was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Aggregated explanation metrics for the Model's prediction
   /// output over the data this ModelEvaluation uses. This field is populated
   /// only if the Model is evaluated with explanations, and only for tabular
   /// Models.
   @$pb.TagNumber(6)
-  $4239.ModelExplanation get modelExplanation => $_getN(5);
+  $4240.ModelExplanation get modelExplanation => $_getN(5);
   @$pb.TagNumber(6)
-  set modelExplanation($4239.ModelExplanation v) { setField(6, v); }
+  set modelExplanation($4240.ModelExplanation v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasModelExplanation() => $_has(5);
   @$pb.TagNumber(6)
   void clearModelExplanation() => clearField(6);
   @$pb.TagNumber(6)
-  $4239.ModelExplanation ensureModelExplanation() => $_ensure(5);
+  $4240.ModelExplanation ensureModelExplanation() => $_ensure(5);
 }
 
 

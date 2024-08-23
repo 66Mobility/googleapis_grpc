@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/criteria.pb.dart' as $3982;
+import '../common/criteria.pb.dart' as $3983;
 
 enum AdGroupBidModifier_Criterion {
   device, 
@@ -24,7 +24,7 @@ enum AdGroupBidModifier_Criterion {
 class AdGroupBidModifier extends $pb.GeneratedMessage {
   factory AdGroupBidModifier({
     $core.String? resourceName,
-    $3982.DeviceInfo? device,
+    $3983.DeviceInfo? device,
     $core.double? bidModifier,
   }) {
     final $result = create();
@@ -50,7 +50,7 @@ class AdGroupBidModifier extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroupBidModifier', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.searchads360.v0.resources'), createEmptyInstance: create)
     ..oo(0, [11])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3982.DeviceInfo>(11, _omitFieldNames ? '' : 'device', subBuilder: $3982.DeviceInfo.create)
+    ..aOM<$3983.DeviceInfo>(11, _omitFieldNames ? '' : 'device', subBuilder: $3983.DeviceInfo.create)
     ..a<$core.double>(15, _omitFieldNames ? '' : 'bidModifier', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -94,15 +94,15 @@ class AdGroupBidModifier extends $pb.GeneratedMessage {
 
   /// Immutable. A device criterion.
   @$pb.TagNumber(11)
-  $3982.DeviceInfo get device => $_getN(1);
+  $3983.DeviceInfo get device => $_getN(1);
   @$pb.TagNumber(11)
-  set device($3982.DeviceInfo v) { setField(11, v); }
+  set device($3983.DeviceInfo v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDevice() => $_has(1);
   @$pb.TagNumber(11)
   void clearDevice() => clearField(11);
   @$pb.TagNumber(11)
-  $3982.DeviceInfo ensureDevice() => $_ensure(1);
+  $3983.DeviceInfo ensureDevice() => $_ensure(1);
 
   /// The modifier for the bid when the criterion matches. The modifier must be
   /// in the range: 0.1 - 10.0. The range is 1.0 - 6.0 for PreferredContent.

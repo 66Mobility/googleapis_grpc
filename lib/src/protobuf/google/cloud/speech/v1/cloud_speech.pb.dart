@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'cloud_speech.pbenum.dart';
 import 'resource.pb.dart' as $1395;
 
@@ -352,8 +352,8 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
 /// Events that a timeout can be set on for voice activity.
 class StreamingRecognitionConfig_VoiceActivityTimeout extends $pb.GeneratedMessage {
   factory StreamingRecognitionConfig_VoiceActivityTimeout({
-    $1737.Duration? speechStartTimeout,
-    $1737.Duration? speechEndTimeout,
+    $1738.Duration? speechStartTimeout,
+    $1738.Duration? speechEndTimeout,
   }) {
     final $result = create();
     if (speechStartTimeout != null) {
@@ -369,8 +369,8 @@ class StreamingRecognitionConfig_VoiceActivityTimeout extends $pb.GeneratedMessa
   factory StreamingRecognitionConfig_VoiceActivityTimeout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingRecognitionConfig.VoiceActivityTimeout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'speechStartTimeout', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'speechEndTimeout', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'speechStartTimeout', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'speechEndTimeout', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -397,27 +397,27 @@ class StreamingRecognitionConfig_VoiceActivityTimeout extends $pb.GeneratedMessa
 
   /// Duration to timeout the stream if no speech begins.
   @$pb.TagNumber(1)
-  $1737.Duration get speechStartTimeout => $_getN(0);
+  $1738.Duration get speechStartTimeout => $_getN(0);
   @$pb.TagNumber(1)
-  set speechStartTimeout($1737.Duration v) { setField(1, v); }
+  set speechStartTimeout($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpeechStartTimeout() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpeechStartTimeout() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureSpeechStartTimeout() => $_ensure(0);
+  $1738.Duration ensureSpeechStartTimeout() => $_ensure(0);
 
   /// Duration to timeout the stream after speech ends.
   @$pb.TagNumber(2)
-  $1737.Duration get speechEndTimeout => $_getN(1);
+  $1738.Duration get speechEndTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set speechEndTimeout($1737.Duration v) { setField(2, v); }
+  set speechEndTimeout($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpeechEndTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpeechEndTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureSpeechEndTimeout() => $_ensure(1);
+  $1738.Duration ensureSpeechEndTimeout() => $_ensure(1);
 }
 
 /// Provides information to the recognizer that specifies how to process the
@@ -585,8 +585,8 @@ class RecognitionConfig extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? alternativeLanguageCodes,
     SpeakerDiarizationConfig? diarizationConfig,
     $1395.SpeechAdaptation? adaptation,
-    $1780.BoolValue? enableSpokenPunctuation,
-    $1780.BoolValue? enableSpokenEmojis,
+    $1781.BoolValue? enableSpokenPunctuation,
+    $1781.BoolValue? enableSpokenEmojis,
     $1395.TranscriptNormalization? transcriptNormalization,
   }) {
     final $result = create();
@@ -674,8 +674,8 @@ class RecognitionConfig extends $pb.GeneratedMessage {
     ..pPS(18, _omitFieldNames ? '' : 'alternativeLanguageCodes')
     ..aOM<SpeakerDiarizationConfig>(19, _omitFieldNames ? '' : 'diarizationConfig', subBuilder: SpeakerDiarizationConfig.create)
     ..aOM<$1395.SpeechAdaptation>(20, _omitFieldNames ? '' : 'adaptation', subBuilder: $1395.SpeechAdaptation.create)
-    ..aOM<$1780.BoolValue>(22, _omitFieldNames ? '' : 'enableSpokenPunctuation', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.BoolValue>(23, _omitFieldNames ? '' : 'enableSpokenEmojis', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(22, _omitFieldNames ? '' : 'enableSpokenPunctuation', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.BoolValue>(23, _omitFieldNames ? '' : 'enableSpokenEmojis', subBuilder: $1781.BoolValue.create)
     ..aOM<$1395.TranscriptNormalization>(24, _omitFieldNames ? '' : 'transcriptNormalization', subBuilder: $1395.TranscriptNormalization.create)
     ..hasRequiredFields = false
   ;
@@ -999,15 +999,15 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   /// you?". See https://cloud.google.com/speech-to-text/docs/spoken-punctuation
   /// for support. If 'false', spoken punctuation is not replaced.
   @$pb.TagNumber(22)
-  $1780.BoolValue get enableSpokenPunctuation => $_getN(17);
+  $1781.BoolValue get enableSpokenPunctuation => $_getN(17);
   @$pb.TagNumber(22)
-  set enableSpokenPunctuation($1780.BoolValue v) { setField(22, v); }
+  set enableSpokenPunctuation($1781.BoolValue v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasEnableSpokenPunctuation() => $_has(17);
   @$pb.TagNumber(22)
   void clearEnableSpokenPunctuation() => clearField(22);
   @$pb.TagNumber(22)
-  $1780.BoolValue ensureEnableSpokenPunctuation() => $_ensure(17);
+  $1781.BoolValue ensureEnableSpokenPunctuation() => $_ensure(17);
 
   /// The spoken emoji behavior for the call
   /// If not set, uses default behavior based on model of choice
@@ -1015,15 +1015,15 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   /// spoken emojis with the corresponding Unicode symbols in the final
   /// transcript. If 'false', spoken emojis are not replaced.
   @$pb.TagNumber(23)
-  $1780.BoolValue get enableSpokenEmojis => $_getN(18);
+  $1781.BoolValue get enableSpokenEmojis => $_getN(18);
   @$pb.TagNumber(23)
-  set enableSpokenEmojis($1780.BoolValue v) { setField(23, v); }
+  set enableSpokenEmojis($1781.BoolValue v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasEnableSpokenEmojis() => $_has(18);
   @$pb.TagNumber(23)
   void clearEnableSpokenEmojis() => clearField(23);
   @$pb.TagNumber(23)
-  $1780.BoolValue ensureEnableSpokenEmojis() => $_ensure(18);
+  $1781.BoolValue ensureEnableSpokenEmojis() => $_ensure(18);
 
   /// Optional. Use transcription normalization to automatically replace parts of
   /// the transcript with phrases of your choosing. For StreamingRecognize, this
@@ -1496,7 +1496,7 @@ class RecognitionAudio extends $pb.GeneratedMessage {
 class RecognizeResponse extends $pb.GeneratedMessage {
   factory RecognizeResponse({
     $core.Iterable<SpeechRecognitionResult>? results,
-    $1737.Duration? totalBilledTime,
+    $1738.Duration? totalBilledTime,
     SpeechAdaptationInfo? speechAdaptationInfo,
     $fixnum.Int64? requestId,
   }) {
@@ -1521,7 +1521,7 @@ class RecognizeResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecognizeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v1'), createEmptyInstance: create)
     ..pc<SpeechRecognitionResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: SpeechRecognitionResult.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'totalBilledTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'totalBilledTime', subBuilder: $1738.Duration.create)
     ..aOM<SpeechAdaptationInfo>(7, _omitFieldNames ? '' : 'speechAdaptationInfo', subBuilder: SpeechAdaptationInfo.create)
     ..aInt64(8, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1555,15 +1555,15 @@ class RecognizeResponse extends $pb.GeneratedMessage {
 
   /// When available, billed audio seconds for the corresponding request.
   @$pb.TagNumber(3)
-  $1737.Duration get totalBilledTime => $_getN(1);
+  $1738.Duration get totalBilledTime => $_getN(1);
   @$pb.TagNumber(3)
-  set totalBilledTime($1737.Duration v) { setField(3, v); }
+  set totalBilledTime($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTotalBilledTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearTotalBilledTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTotalBilledTime() => $_ensure(1);
+  $1738.Duration ensureTotalBilledTime() => $_ensure(1);
 
   /// Provides information on adaptation behavior in response
   @$pb.TagNumber(7)
@@ -1597,9 +1597,9 @@ class RecognizeResponse extends $pb.GeneratedMessage {
 class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
   factory LongRunningRecognizeResponse({
     $core.Iterable<SpeechRecognitionResult>? results,
-    $1737.Duration? totalBilledTime,
+    $1738.Duration? totalBilledTime,
     TranscriptOutputConfig? outputConfig,
-    $1795.Status? outputError,
+    $1796.Status? outputError,
     SpeechAdaptationInfo? speechAdaptationInfo,
     $fixnum.Int64? requestId,
   }) {
@@ -1630,9 +1630,9 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LongRunningRecognizeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v1'), createEmptyInstance: create)
     ..pc<SpeechRecognitionResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: SpeechRecognitionResult.create)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'totalBilledTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'totalBilledTime', subBuilder: $1738.Duration.create)
     ..aOM<TranscriptOutputConfig>(6, _omitFieldNames ? '' : 'outputConfig', subBuilder: TranscriptOutputConfig.create)
-    ..aOM<$1795.Status>(7, _omitFieldNames ? '' : 'outputError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(7, _omitFieldNames ? '' : 'outputError', subBuilder: $1796.Status.create)
     ..aOM<SpeechAdaptationInfo>(8, _omitFieldNames ? '' : 'speechAdaptationInfo', subBuilder: SpeechAdaptationInfo.create)
     ..aInt64(9, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1666,15 +1666,15 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
 
   /// When available, billed audio seconds for the corresponding request.
   @$pb.TagNumber(3)
-  $1737.Duration get totalBilledTime => $_getN(1);
+  $1738.Duration get totalBilledTime => $_getN(1);
   @$pb.TagNumber(3)
-  set totalBilledTime($1737.Duration v) { setField(3, v); }
+  set totalBilledTime($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTotalBilledTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearTotalBilledTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureTotalBilledTime() => $_ensure(1);
+  $1738.Duration ensureTotalBilledTime() => $_ensure(1);
 
   /// Original output config if present in the request.
   @$pb.TagNumber(6)
@@ -1690,15 +1690,15 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
 
   /// If the transcript output fails this field contains the relevant error.
   @$pb.TagNumber(7)
-  $1795.Status get outputError => $_getN(3);
+  $1796.Status get outputError => $_getN(3);
   @$pb.TagNumber(7)
-  set outputError($1795.Status v) { setField(7, v); }
+  set outputError($1796.Status v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasOutputError() => $_has(3);
   @$pb.TagNumber(7)
   void clearOutputError() => clearField(7);
   @$pb.TagNumber(7)
-  $1795.Status ensureOutputError() => $_ensure(3);
+  $1796.Status ensureOutputError() => $_ensure(3);
 
   /// Provides information on speech adaptation behavior in response
   @$pb.TagNumber(8)
@@ -1730,8 +1730,8 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
 class LongRunningRecognizeMetadata extends $pb.GeneratedMessage {
   factory LongRunningRecognizeMetadata({
     $core.int? progressPercent,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? lastUpdateTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? lastUpdateTime,
     $core.String? uri,
   }) {
     final $result = create();
@@ -1755,8 +1755,8 @@ class LongRunningRecognizeMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LongRunningRecognizeMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'lastUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'uri')
     ..hasRequiredFields = false
   ;
@@ -1795,27 +1795,27 @@ class LongRunningRecognizeMetadata extends $pb.GeneratedMessage {
 
   /// Time when the request was received.
   @$pb.TagNumber(2)
-  $1775.Timestamp get startTime => $_getN(1);
+  $1776.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($1775.Timestamp v) { setField(2, v); }
+  set startTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureStartTime() => $_ensure(1);
+  $1776.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Time of the most recent processing update.
   @$pb.TagNumber(3)
-  $1775.Timestamp get lastUpdateTime => $_getN(2);
+  $1776.Timestamp get lastUpdateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set lastUpdateTime($1775.Timestamp v) { setField(3, v); }
+  set lastUpdateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLastUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearLastUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureLastUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureLastUpdateTime() => $_ensure(2);
 
   /// Output only. The URI of the audio file being transcribed. Empty if the
   /// audio was sent as byte content.
@@ -1880,11 +1880,11 @@ class LongRunningRecognizeMetadata extends $pb.GeneratedMessage {
 ///      one or more (repeated) `results`.
 class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   factory StreamingRecognizeResponse({
-    $1795.Status? error,
+    $1796.Status? error,
     $core.Iterable<StreamingRecognitionResult>? results,
     StreamingRecognizeResponse_SpeechEventType? speechEventType,
-    $1737.Duration? totalBilledTime,
-    $1737.Duration? speechEventTime,
+    $1738.Duration? totalBilledTime,
+    $1738.Duration? speechEventTime,
     SpeechAdaptationInfo? speechAdaptationInfo,
     $fixnum.Int64? requestId,
   }) {
@@ -1917,11 +1917,11 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   factory StreamingRecognizeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamingRecognizeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..pc<StreamingRecognitionResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: StreamingRecognitionResult.create)
     ..e<StreamingRecognizeResponse_SpeechEventType>(4, _omitFieldNames ? '' : 'speechEventType', $pb.PbFieldType.OE, defaultOrMaker: StreamingRecognizeResponse_SpeechEventType.SPEECH_EVENT_UNSPECIFIED, valueOf: StreamingRecognizeResponse_SpeechEventType.valueOf, enumValues: StreamingRecognizeResponse_SpeechEventType.values)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'totalBilledTime', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'speechEventTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'totalBilledTime', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'speechEventTime', subBuilder: $1738.Duration.create)
     ..aOM<SpeechAdaptationInfo>(9, _omitFieldNames ? '' : 'speechAdaptationInfo', subBuilder: SpeechAdaptationInfo.create)
     ..aInt64(10, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1951,15 +1951,15 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   /// If set, returns a [google.rpc.Status][google.rpc.Status] message that
   /// specifies the error for the operation.
   @$pb.TagNumber(1)
-  $1795.Status get error => $_getN(0);
+  $1796.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($1795.Status v) { setField(1, v); }
+  set error($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureError() => $_ensure(0);
+  $1796.Status ensureError() => $_ensure(0);
 
   /// This repeated list contains zero or more results that
   /// correspond to consecutive portions of the audio currently being processed.
@@ -1981,27 +1981,27 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   /// When available, billed audio seconds for the stream.
   /// Set only if this is the last response in the stream.
   @$pb.TagNumber(5)
-  $1737.Duration get totalBilledTime => $_getN(3);
+  $1738.Duration get totalBilledTime => $_getN(3);
   @$pb.TagNumber(5)
-  set totalBilledTime($1737.Duration v) { setField(5, v); }
+  set totalBilledTime($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTotalBilledTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearTotalBilledTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureTotalBilledTime() => $_ensure(3);
+  $1738.Duration ensureTotalBilledTime() => $_ensure(3);
 
   /// Time offset between the beginning of the audio and event emission.
   @$pb.TagNumber(8)
-  $1737.Duration get speechEventTime => $_getN(4);
+  $1738.Duration get speechEventTime => $_getN(4);
   @$pb.TagNumber(8)
-  set speechEventTime($1737.Duration v) { setField(8, v); }
+  set speechEventTime($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSpeechEventTime() => $_has(4);
   @$pb.TagNumber(8)
   void clearSpeechEventTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureSpeechEventTime() => $_ensure(4);
+  $1738.Duration ensureSpeechEventTime() => $_ensure(4);
 
   /// Provides information on adaptation behavior in response
   @$pb.TagNumber(9)
@@ -2034,7 +2034,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
     $core.Iterable<SpeechRecognitionAlternative>? alternatives,
     $core.bool? isFinal,
     $core.double? stability,
-    $1737.Duration? resultEndTime,
+    $1738.Duration? resultEndTime,
     $core.int? channelTag,
     $core.String? languageCode,
   }) {
@@ -2067,7 +2067,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
     ..pc<SpeechRecognitionAlternative>(1, _omitFieldNames ? '' : 'alternatives', $pb.PbFieldType.PM, subBuilder: SpeechRecognitionAlternative.create)
     ..aOB(2, _omitFieldNames ? '' : 'isFinal')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'stability', $pb.PbFieldType.OF)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'resultEndTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'resultEndTime', subBuilder: $1738.Duration.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'channelTag', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
@@ -2132,15 +2132,15 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   /// Time offset of the end of this result relative to the
   /// beginning of the audio.
   @$pb.TagNumber(4)
-  $1737.Duration get resultEndTime => $_getN(3);
+  $1738.Duration get resultEndTime => $_getN(3);
   @$pb.TagNumber(4)
-  set resultEndTime($1737.Duration v) { setField(4, v); }
+  set resultEndTime($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResultEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearResultEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureResultEndTime() => $_ensure(3);
+  $1738.Duration ensureResultEndTime() => $_ensure(3);
 
   /// For multi-channel audio, this is the channel number corresponding to the
   /// recognized result for the audio from that channel.
@@ -2172,7 +2172,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   factory SpeechRecognitionResult({
     $core.Iterable<SpeechRecognitionAlternative>? alternatives,
     $core.int? channelTag,
-    $1737.Duration? resultEndTime,
+    $1738.Duration? resultEndTime,
     $core.String? languageCode,
   }) {
     final $result = create();
@@ -2197,7 +2197,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpeechRecognitionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v1'), createEmptyInstance: create)
     ..pc<SpeechRecognitionAlternative>(1, _omitFieldNames ? '' : 'alternatives', $pb.PbFieldType.PM, subBuilder: SpeechRecognitionAlternative.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'channelTag', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'resultEndTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'resultEndTime', subBuilder: $1738.Duration.create)
     ..aOS(5, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
   ;
@@ -2245,15 +2245,15 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   /// Time offset of the end of this result relative to the
   /// beginning of the audio.
   @$pb.TagNumber(4)
-  $1737.Duration get resultEndTime => $_getN(2);
+  $1738.Duration get resultEndTime => $_getN(2);
   @$pb.TagNumber(4)
-  set resultEndTime($1737.Duration v) { setField(4, v); }
+  set resultEndTime($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResultEndTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearResultEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureResultEndTime() => $_ensure(2);
+  $1738.Duration ensureResultEndTime() => $_ensure(2);
 
   /// Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
   /// language tag of the language in this result. This language code was
@@ -2358,8 +2358,8 @@ class SpeechRecognitionAlternative extends $pb.GeneratedMessage {
 /// Word-specific information for recognized words.
 class WordInfo extends $pb.GeneratedMessage {
   factory WordInfo({
-    $1737.Duration? startTime,
-    $1737.Duration? endTime,
+    $1738.Duration? startTime,
+    $1738.Duration? endTime,
     $core.String? word,
     $core.double? confidence,
   @$core.Deprecated('This field is deprecated.')
@@ -2393,8 +2393,8 @@ class WordInfo extends $pb.GeneratedMessage {
   factory WordInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WordInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.speech.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1738.Duration.create)
     ..aOS(3, _omitFieldNames ? '' : 'word')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'speakerTag', $pb.PbFieldType.O3)
@@ -2430,15 +2430,15 @@ class WordInfo extends $pb.GeneratedMessage {
   /// This is an experimental feature and the accuracy of the time offset can
   /// vary.
   @$pb.TagNumber(1)
-  $1737.Duration get startTime => $_getN(0);
+  $1738.Duration get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1737.Duration v) { setField(1, v); }
+  set startTime($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartTime() => $_ensure(0);
+  $1738.Duration ensureStartTime() => $_ensure(0);
 
   /// Time offset relative to the beginning of the audio,
   /// and corresponding to the end of the spoken word.
@@ -2447,15 +2447,15 @@ class WordInfo extends $pb.GeneratedMessage {
   /// This is an experimental feature and the accuracy of the time offset can
   /// vary.
   @$pb.TagNumber(2)
-  $1737.Duration get endTime => $_getN(1);
+  $1738.Duration get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1737.Duration v) { setField(2, v); }
+  set endTime($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndTime() => $_ensure(1);
+  $1738.Duration ensureEndTime() => $_ensure(1);
 
   /// The word corresponding to this set of information.
   @$pb.TagNumber(3)

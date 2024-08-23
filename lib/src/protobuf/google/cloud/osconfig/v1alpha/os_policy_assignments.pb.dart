@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'os_policy.pb.dart' as $4585;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'os_policy.pb.dart' as $4587;
 import 'os_policy_assignments.pbenum.dart';
-import 'osconfig_common.pb.dart' as $4586;
+import 'osconfig_common.pb.dart' as $4588;
 
 export 'os_policy_assignments.pbenum.dart';
 
@@ -261,8 +261,8 @@ class OSPolicyAssignment_InstanceFilter extends $pb.GeneratedMessage {
 /// assignment.
 class OSPolicyAssignment_Rollout extends $pb.GeneratedMessage {
   factory OSPolicyAssignment_Rollout({
-    $4586.FixedOrPercent? disruptionBudget,
-    $1737.Duration? minWaitDuration,
+    $4588.FixedOrPercent? disruptionBudget,
+    $1738.Duration? minWaitDuration,
   }) {
     final $result = create();
     if (disruptionBudget != null) {
@@ -278,8 +278,8 @@ class OSPolicyAssignment_Rollout extends $pb.GeneratedMessage {
   factory OSPolicyAssignment_Rollout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OSPolicyAssignment.Rollout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1alpha'), createEmptyInstance: create)
-    ..aOM<$4586.FixedOrPercent>(1, _omitFieldNames ? '' : 'disruptionBudget', subBuilder: $4586.FixedOrPercent.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'minWaitDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$4588.FixedOrPercent>(1, _omitFieldNames ? '' : 'disruptionBudget', subBuilder: $4588.FixedOrPercent.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'minWaitDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -307,15 +307,15 @@ class OSPolicyAssignment_Rollout extends $pb.GeneratedMessage {
   /// Required. The maximum number (or percentage) of VMs per zone to disrupt at
   /// any given moment.
   @$pb.TagNumber(1)
-  $4586.FixedOrPercent get disruptionBudget => $_getN(0);
+  $4588.FixedOrPercent get disruptionBudget => $_getN(0);
   @$pb.TagNumber(1)
-  set disruptionBudget($4586.FixedOrPercent v) { setField(1, v); }
+  set disruptionBudget($4588.FixedOrPercent v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDisruptionBudget() => $_has(0);
   @$pb.TagNumber(1)
   void clearDisruptionBudget() => clearField(1);
   @$pb.TagNumber(1)
-  $4586.FixedOrPercent ensureDisruptionBudget() => $_ensure(0);
+  $4588.FixedOrPercent ensureDisruptionBudget() => $_ensure(0);
 
   /// Required. This determines the minimum duration of time to wait after the
   /// configuration changes are applied through the current rollout. A
@@ -323,15 +323,15 @@ class OSPolicyAssignment_Rollout extends $pb.GeneratedMessage {
   /// until this duration of time has passed after configuration changes are
   /// applied.
   @$pb.TagNumber(2)
-  $1737.Duration get minWaitDuration => $_getN(1);
+  $1738.Duration get minWaitDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set minWaitDuration($1737.Duration v) { setField(2, v); }
+  set minWaitDuration($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMinWaitDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearMinWaitDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureMinWaitDuration() => $_ensure(1);
+  $1738.Duration ensureMinWaitDuration() => $_ensure(1);
 }
 
 ///  OS policy assignment is an API resource that is used to
@@ -349,11 +349,11 @@ class OSPolicyAssignment extends $pb.GeneratedMessage {
   factory OSPolicyAssignment({
     $core.String? name,
     $core.String? description,
-    $core.Iterable<$4585.OSPolicy>? osPolicies,
+    $core.Iterable<$4587.OSPolicy>? osPolicies,
     OSPolicyAssignment_InstanceFilter? instanceFilter,
     OSPolicyAssignment_Rollout? rollout,
     $core.String? revisionId,
-    $1775.Timestamp? revisionCreateTime,
+    $1776.Timestamp? revisionCreateTime,
     $core.String? etag,
     OSPolicyAssignment_RolloutState? rolloutState,
     $core.bool? baseline,
@@ -410,11 +410,11 @@ class OSPolicyAssignment extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OSPolicyAssignment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..pc<$4585.OSPolicy>(3, _omitFieldNames ? '' : 'osPolicies', $pb.PbFieldType.PM, subBuilder: $4585.OSPolicy.create)
+    ..pc<$4587.OSPolicy>(3, _omitFieldNames ? '' : 'osPolicies', $pb.PbFieldType.PM, subBuilder: $4587.OSPolicy.create)
     ..aOM<OSPolicyAssignment_InstanceFilter>(4, _omitFieldNames ? '' : 'instanceFilter', subBuilder: OSPolicyAssignment_InstanceFilter.create)
     ..aOM<OSPolicyAssignment_Rollout>(5, _omitFieldNames ? '' : 'rollout', subBuilder: OSPolicyAssignment_Rollout.create)
     ..aOS(6, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..e<OSPolicyAssignment_RolloutState>(9, _omitFieldNames ? '' : 'rolloutState', $pb.PbFieldType.OE, defaultOrMaker: OSPolicyAssignment_RolloutState.ROLLOUT_STATE_UNSPECIFIED, valueOf: OSPolicyAssignment_RolloutState.valueOf, enumValues: OSPolicyAssignment_RolloutState.values)
     ..aOB(10, _omitFieldNames ? '' : 'baseline')
@@ -473,7 +473,7 @@ class OSPolicyAssignment extends $pb.GeneratedMessage {
 
   /// Required. List of OS policies to be applied to the VMs.
   @$pb.TagNumber(3)
-  $core.List<$4585.OSPolicy> get osPolicies => $_getList(2);
+  $core.List<$4587.OSPolicy> get osPolicies => $_getList(2);
 
   /// Required. Filter to select VMs.
   @$pb.TagNumber(4)
@@ -520,15 +520,15 @@ class OSPolicyAssignment extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp that the revision was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get revisionCreateTime => $_getN(6);
+  $1776.Timestamp get revisionCreateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set revisionCreateTime($1775.Timestamp v) { setField(7, v); }
+  set revisionCreateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRevisionCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearRevisionCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureRevisionCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureRevisionCreateTime() => $_ensure(6);
 
   /// The etag for this OS policy assignment.
   /// If this is provided on update, it must match the server's etag.
@@ -606,8 +606,8 @@ class OSPolicyAssignmentOperationMetadata extends $pb.GeneratedMessage {
     $core.String? osPolicyAssignment,
     OSPolicyAssignmentOperationMetadata_APIMethod? apiMethod,
     OSPolicyAssignmentOperationMetadata_RolloutState? rolloutState,
-    $1775.Timestamp? rolloutStartTime,
-    $1775.Timestamp? rolloutUpdateTime,
+    $1776.Timestamp? rolloutStartTime,
+    $1776.Timestamp? rolloutUpdateTime,
   }) {
     final $result = create();
     if (osPolicyAssignment != null) {
@@ -635,8 +635,8 @@ class OSPolicyAssignmentOperationMetadata extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'osPolicyAssignment')
     ..e<OSPolicyAssignmentOperationMetadata_APIMethod>(2, _omitFieldNames ? '' : 'apiMethod', $pb.PbFieldType.OE, defaultOrMaker: OSPolicyAssignmentOperationMetadata_APIMethod.API_METHOD_UNSPECIFIED, valueOf: OSPolicyAssignmentOperationMetadata_APIMethod.valueOf, enumValues: OSPolicyAssignmentOperationMetadata_APIMethod.values)
     ..e<OSPolicyAssignmentOperationMetadata_RolloutState>(3, _omitFieldNames ? '' : 'rolloutState', $pb.PbFieldType.OE, defaultOrMaker: OSPolicyAssignmentOperationMetadata_RolloutState.ROLLOUT_STATE_UNSPECIFIED, valueOf: OSPolicyAssignmentOperationMetadata_RolloutState.valueOf, enumValues: OSPolicyAssignmentOperationMetadata_RolloutState.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'rolloutStartTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'rolloutUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'rolloutStartTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'rolloutUpdateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -696,27 +696,27 @@ class OSPolicyAssignmentOperationMetadata extends $pb.GeneratedMessage {
 
   /// Rollout start time
   @$pb.TagNumber(4)
-  $1775.Timestamp get rolloutStartTime => $_getN(3);
+  $1776.Timestamp get rolloutStartTime => $_getN(3);
   @$pb.TagNumber(4)
-  set rolloutStartTime($1775.Timestamp v) { setField(4, v); }
+  set rolloutStartTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRolloutStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearRolloutStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureRolloutStartTime() => $_ensure(3);
+  $1776.Timestamp ensureRolloutStartTime() => $_ensure(3);
 
   /// Rollout update time
   @$pb.TagNumber(5)
-  $1775.Timestamp get rolloutUpdateTime => $_getN(4);
+  $1776.Timestamp get rolloutUpdateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set rolloutUpdateTime($1775.Timestamp v) { setField(5, v); }
+  set rolloutUpdateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRolloutUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearRolloutUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureRolloutUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureRolloutUpdateTime() => $_ensure(4);
 }
 
 /// A request message to create an OS policy assignment
@@ -815,7 +815,7 @@ class CreateOSPolicyAssignmentRequest extends $pb.GeneratedMessage {
 class UpdateOSPolicyAssignmentRequest extends $pb.GeneratedMessage {
   factory UpdateOSPolicyAssignmentRequest({
     OSPolicyAssignment? osPolicyAssignment,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (osPolicyAssignment != null) {
@@ -832,7 +832,7 @@ class UpdateOSPolicyAssignmentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateOSPolicyAssignmentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.osconfig.v1alpha'), createEmptyInstance: create)
     ..aOM<OSPolicyAssignment>(1, _omitFieldNames ? '' : 'osPolicyAssignment', subBuilder: OSPolicyAssignment.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -871,15 +871,15 @@ class UpdateOSPolicyAssignmentRequest extends $pb.GeneratedMessage {
 
   /// Optional. Field mask that controls which fields of the assignment should be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A request message to get an OS policy assignment

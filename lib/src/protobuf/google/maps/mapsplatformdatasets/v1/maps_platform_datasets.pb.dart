@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'dataset.pb.dart' as $1646;
 
 /// Request to create a maps dataset.
@@ -91,7 +91,7 @@ class CreateDatasetRequest extends $pb.GeneratedMessage {
 class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetMetadataRequest({
     $1646.Dataset? dataset,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -108,7 +108,7 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatasetMetadataRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
     ..aOM<$1646.Dataset>(1, _omitFieldNames ? '' : 'dataset', subBuilder: $1646.Dataset.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -150,15 +150,15 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   ///
   ///  The value "*" is used for full replacement (default).
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to get the specified dataset.
@@ -485,7 +485,7 @@ class FetchDatasetErrorsRequest extends $pb.GeneratedMessage {
 class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
   factory FetchDatasetErrorsResponse({
     $core.String? nextPageToken,
-    $core.Iterable<$1795.Status>? errors,
+    $core.Iterable<$1796.Status>? errors,
   }) {
     final $result = create();
     if (nextPageToken != null) {
@@ -502,7 +502,7 @@ class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchDatasetErrorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$1795.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
+    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -541,7 +541,7 @@ class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
 
   /// The errors associated with a dataset.
   @$pb.TagNumber(3)
-  $core.List<$1795.Status> get errors => $_getList(1);
+  $core.List<$1796.Status> get errors => $_getList(1);
 }
 
 /// Request to delete a dataset.

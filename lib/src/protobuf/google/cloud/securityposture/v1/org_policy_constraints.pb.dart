@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'org_policy_config.pb.dart' as $4684;
+import 'org_policy_config.pb.dart' as $4686;
 
 /// Message for Org Policy Canned Constraint.
 class OrgPolicyConstraint extends $pb.GeneratedMessage {
   factory OrgPolicyConstraint({
     $core.String? cannedConstraintId,
-    $core.Iterable<$4684.PolicyRule>? policyRules,
+    $core.Iterable<$4686.PolicyRule>? policyRules,
   }) {
     final $result = create();
     if (cannedConstraintId != null) {
@@ -36,7 +36,7 @@ class OrgPolicyConstraint extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OrgPolicyConstraint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securityposture.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cannedConstraintId')
-    ..pc<$4684.PolicyRule>(2, _omitFieldNames ? '' : 'policyRules', $pb.PbFieldType.PM, subBuilder: $4684.PolicyRule.create)
+    ..pc<$4686.PolicyRule>(2, _omitFieldNames ? '' : 'policyRules', $pb.PbFieldType.PM, subBuilder: $4686.PolicyRule.create)
     ..hasRequiredFields = false
   ;
 
@@ -73,14 +73,14 @@ class OrgPolicyConstraint extends $pb.GeneratedMessage {
 
   /// Required. Org PolicySpec rules.
   @$pb.TagNumber(2)
-  $core.List<$4684.PolicyRule> get policyRules => $_getList(1);
+  $core.List<$4686.PolicyRule> get policyRules => $_getList(1);
 }
 
 /// Message for Org Policy Custom Constraint.
 class OrgPolicyConstraintCustom extends $pb.GeneratedMessage {
   factory OrgPolicyConstraintCustom({
-    $4684.CustomConstraint? customConstraint,
-    $core.Iterable<$4684.PolicyRule>? policyRules,
+    $4686.CustomConstraint? customConstraint,
+    $core.Iterable<$4686.PolicyRule>? policyRules,
   }) {
     final $result = create();
     if (customConstraint != null) {
@@ -96,8 +96,8 @@ class OrgPolicyConstraintCustom extends $pb.GeneratedMessage {
   factory OrgPolicyConstraintCustom.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OrgPolicyConstraintCustom', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.securityposture.v1'), createEmptyInstance: create)
-    ..aOM<$4684.CustomConstraint>(1, _omitFieldNames ? '' : 'customConstraint', subBuilder: $4684.CustomConstraint.create)
-    ..pc<$4684.PolicyRule>(2, _omitFieldNames ? '' : 'policyRules', $pb.PbFieldType.PM, subBuilder: $4684.PolicyRule.create)
+    ..aOM<$4686.CustomConstraint>(1, _omitFieldNames ? '' : 'customConstraint', subBuilder: $4686.CustomConstraint.create)
+    ..pc<$4686.PolicyRule>(2, _omitFieldNames ? '' : 'policyRules', $pb.PbFieldType.PM, subBuilder: $4686.PolicyRule.create)
     ..hasRequiredFields = false
   ;
 
@@ -124,19 +124,19 @@ class OrgPolicyConstraintCustom extends $pb.GeneratedMessage {
 
   /// Required. Org Policy Custom Constraint.
   @$pb.TagNumber(1)
-  $4684.CustomConstraint get customConstraint => $_getN(0);
+  $4686.CustomConstraint get customConstraint => $_getN(0);
   @$pb.TagNumber(1)
-  set customConstraint($4684.CustomConstraint v) { setField(1, v); }
+  set customConstraint($4686.CustomConstraint v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCustomConstraint() => $_has(0);
   @$pb.TagNumber(1)
   void clearCustomConstraint() => clearField(1);
   @$pb.TagNumber(1)
-  $4684.CustomConstraint ensureCustomConstraint() => $_ensure(0);
+  $4686.CustomConstraint ensureCustomConstraint() => $_ensure(0);
 
   /// Required. Org Policyspec rules.
   @$pb.TagNumber(2)
-  $core.List<$4684.PolicyRule> get policyRules => $_getList(1);
+  $core.List<$4686.PolicyRule> get policyRules => $_getList(1);
 }
 
 

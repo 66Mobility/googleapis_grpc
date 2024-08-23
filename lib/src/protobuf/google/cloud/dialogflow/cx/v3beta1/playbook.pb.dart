@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'example.pb.dart' as $870;
 import 'generative_settings.pb.dart' as $867;
-import 'parameter_definition.pb.dart' as $4494;
+import 'parameter_definition.pb.dart' as $4496;
 
 /// The request message for
 /// [Playbooks.CreatePlaybook][google.cloud.dialogflow.cx.v3beta1.Playbooks.CreatePlaybook].
@@ -355,7 +355,7 @@ class GetPlaybookRequest extends $pb.GeneratedMessage {
 class UpdatePlaybookRequest extends $pb.GeneratedMessage {
   factory UpdatePlaybookRequest({
     Playbook? playbook,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (playbook != null) {
@@ -372,7 +372,7 @@ class UpdatePlaybookRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePlaybookRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dialogflow.cx.v3beta1'), createEmptyInstance: create)
     ..aOM<Playbook>(1, _omitFieldNames ? '' : 'playbook', subBuilder: Playbook.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -412,15 +412,15 @@ class UpdatePlaybookRequest extends $pb.GeneratedMessage {
   /// The mask to control which fields get updated. If the mask is not present,
   /// all fields will be updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 enum Playbook_Step_Instruction {
@@ -557,11 +557,11 @@ class Playbook extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? goal,
-    $core.Iterable<$4494.ParameterDefinition>? inputParameterDefinitions,
-    $core.Iterable<$4494.ParameterDefinition>? outputParameterDefinitions,
+    $core.Iterable<$4496.ParameterDefinition>? inputParameterDefinitions,
+    $core.Iterable<$4496.ParameterDefinition>? outputParameterDefinitions,
     $fixnum.Int64? tokenCount,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$core.String>? referencedPlaybooks,
     $core.Iterable<$core.String>? referencedFlows,
     $core.Iterable<$core.String>? referencedTools,
@@ -618,11 +618,11 @@ class Playbook extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'goal')
-    ..pc<$4494.ParameterDefinition>(5, _omitFieldNames ? '' : 'inputParameterDefinitions', $pb.PbFieldType.PM, subBuilder: $4494.ParameterDefinition.create)
-    ..pc<$4494.ParameterDefinition>(6, _omitFieldNames ? '' : 'outputParameterDefinitions', $pb.PbFieldType.PM, subBuilder: $4494.ParameterDefinition.create)
+    ..pc<$4496.ParameterDefinition>(5, _omitFieldNames ? '' : 'inputParameterDefinitions', $pb.PbFieldType.PM, subBuilder: $4496.ParameterDefinition.create)
+    ..pc<$4496.ParameterDefinition>(6, _omitFieldNames ? '' : 'outputParameterDefinitions', $pb.PbFieldType.PM, subBuilder: $4496.ParameterDefinition.create)
     ..aInt64(8, _omitFieldNames ? '' : 'tokenCount')
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pPS(11, _omitFieldNames ? '' : 'referencedPlaybooks')
     ..pPS(12, _omitFieldNames ? '' : 'referencedFlows')
     ..pPS(13, _omitFieldNames ? '' : 'referencedTools')
@@ -687,11 +687,11 @@ class Playbook extends $pb.GeneratedMessage {
 
   /// Optional. Defined structured input parameters for this playbook.
   @$pb.TagNumber(5)
-  $core.List<$4494.ParameterDefinition> get inputParameterDefinitions => $_getList(3);
+  $core.List<$4496.ParameterDefinition> get inputParameterDefinitions => $_getList(3);
 
   /// Optional. Defined structured output parameters for this playbook.
   @$pb.TagNumber(6)
-  $core.List<$4494.ParameterDefinition> get outputParameterDefinitions => $_getList(4);
+  $core.List<$4496.ParameterDefinition> get outputParameterDefinitions => $_getList(4);
 
   /// Output only. Estimated number of tokes current playbook takes when sent to
   /// the LLM.
@@ -706,27 +706,27 @@ class Playbook extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp of initial playbook creation.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. Last time the playbook version was updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The resource name of other playbooks referenced by the current
   /// playbook in the instructions.
@@ -848,7 +848,7 @@ class PlaybookVersion extends $pb.GeneratedMessage {
     $core.String? description,
     Playbook? playbook,
     $core.Iterable<$870.Example>? examples,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -877,7 +877,7 @@ class PlaybookVersion extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<Playbook>(3, _omitFieldNames ? '' : 'playbook', subBuilder: Playbook.create)
     ..pc<$870.Example>(4, _omitFieldNames ? '' : 'examples', $pb.PbFieldType.PM, subBuilder: $870.Example.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -943,15 +943,15 @@ class PlaybookVersion extends $pb.GeneratedMessage {
 
   /// Output only. Last time the playbook version was created or modified.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 }
 
 /// The request message for

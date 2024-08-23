@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'attributes.pb.dart' as $4322;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'attributes.pb.dart' as $4323;
 import 'service.pbenum.dart';
 
 export 'service.pbenum.dart';
@@ -29,10 +29,10 @@ class Service extends $pb.GeneratedMessage {
     $core.String? description,
     ServiceReference? serviceReference,
     ServiceProperties? serviceProperties,
-    $4322.Attributes? attributes,
+    $4323.Attributes? attributes,
     $core.String? discoveredService,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? uid,
     Service_State? state,
   }) {
@@ -82,10 +82,10 @@ class Service extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<ServiceReference>(4, _omitFieldNames ? '' : 'serviceReference', subBuilder: ServiceReference.create)
     ..aOM<ServiceProperties>(5, _omitFieldNames ? '' : 'serviceProperties', subBuilder: ServiceProperties.create)
-    ..aOM<$4322.Attributes>(6, _omitFieldNames ? '' : 'attributes', subBuilder: $4322.Attributes.create)
+    ..aOM<$4323.Attributes>(6, _omitFieldNames ? '' : 'attributes', subBuilder: $4323.Attributes.create)
     ..aOS(7, _omitFieldNames ? '' : 'discoveredService')
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(10, _omitFieldNames ? '' : 'uid')
     ..e<Service_State>(11, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Service_State.STATE_UNSPECIFIED, valueOf: Service_State.valueOf, enumValues: Service_State.values)
     ..hasRequiredFields = false
@@ -173,15 +173,15 @@ class Service extends $pb.GeneratedMessage {
 
   /// Optional. Consumer provided attributes.
   @$pb.TagNumber(6)
-  $4322.Attributes get attributes => $_getN(5);
+  $4323.Attributes get attributes => $_getN(5);
   @$pb.TagNumber(6)
-  set attributes($4322.Attributes v) { setField(6, v); }
+  set attributes($4323.Attributes v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAttributes() => $_has(5);
   @$pb.TagNumber(6)
   void clearAttributes() => clearField(6);
   @$pb.TagNumber(6)
-  $4322.Attributes ensureAttributes() => $_ensure(5);
+  $4323.Attributes ensureAttributes() => $_ensure(5);
 
   /// Required. Immutable. The resource name of the original discovered service.
   @$pb.TagNumber(7)
@@ -195,27 +195,27 @@ class Service extends $pb.GeneratedMessage {
 
   /// Output only. Create time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1775.Timestamp v) { setField(8, v); }
+  set createTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Update time.
   @$pb.TagNumber(9)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1775.Timestamp v) { setField(9, v); }
+  set updateTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. A universally unique identifier (UUID) for the `Service` in
   /// the UUID4 format.

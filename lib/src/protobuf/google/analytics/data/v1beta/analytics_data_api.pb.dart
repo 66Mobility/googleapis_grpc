@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'analytics_data_api.pbenum.dart';
-import 'data.pb.dart' as $4153;
-import 'data.pbenum.dart' as $4153;
+import 'data.pb.dart' as $4154;
+import 'data.pbenum.dart' as $4154;
 
 export 'analytics_data_api.pbenum.dart';
 
@@ -28,11 +28,11 @@ export 'analytics_data_api.pbenum.dart';
 class CheckCompatibilityRequest extends $pb.GeneratedMessage {
   factory CheckCompatibilityRequest({
     $core.String? property,
-    $core.Iterable<$4153.Dimension>? dimensions,
-    $core.Iterable<$4153.Metric>? metrics,
-    $4153.FilterExpression? dimensionFilter,
-    $4153.FilterExpression? metricFilter,
-    $4153.Compatibility? compatibilityFilter,
+    $core.Iterable<$4154.Dimension>? dimensions,
+    $core.Iterable<$4154.Metric>? metrics,
+    $4154.FilterExpression? dimensionFilter,
+    $4154.FilterExpression? metricFilter,
+    $4154.Compatibility? compatibilityFilter,
   }) {
     final $result = create();
     if (property != null) {
@@ -61,11 +61,11 @@ class CheckCompatibilityRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckCompatibilityRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'property')
-    ..pc<$4153.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4153.Dimension.create)
-    ..pc<$4153.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4153.Metric.create)
-    ..aOM<$4153.FilterExpression>(4, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4153.FilterExpression.create)
-    ..aOM<$4153.FilterExpression>(5, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4153.FilterExpression.create)
-    ..e<$4153.Compatibility>(6, _omitFieldNames ? '' : 'compatibilityFilter', $pb.PbFieldType.OE, defaultOrMaker: $4153.Compatibility.COMPATIBILITY_UNSPECIFIED, valueOf: $4153.Compatibility.valueOf, enumValues: $4153.Compatibility.values)
+    ..pc<$4154.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4154.Dimension.create)
+    ..pc<$4154.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4154.Metric.create)
+    ..aOM<$4154.FilterExpression>(4, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4154.FilterExpression.create)
+    ..aOM<$4154.FilterExpression>(5, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4154.FilterExpression.create)
+    ..e<$4154.Compatibility>(6, _omitFieldNames ? '' : 'compatibilityFilter', $pb.PbFieldType.OE, defaultOrMaker: $4154.Compatibility.COMPATIBILITY_UNSPECIFIED, valueOf: $4154.Compatibility.valueOf, enumValues: $4154.Compatibility.values)
     ..hasRequiredFields = false
   ;
 
@@ -108,46 +108,46 @@ class CheckCompatibilityRequest extends $pb.GeneratedMessage {
   /// The dimensions in this report. `dimensions` should be the same value as in
   /// your `runReport` request.
   @$pb.TagNumber(2)
-  $core.List<$4153.Dimension> get dimensions => $_getList(1);
+  $core.List<$4154.Dimension> get dimensions => $_getList(1);
 
   /// The metrics in this report. `metrics` should be the same value as in your
   /// `runReport` request.
   @$pb.TagNumber(3)
-  $core.List<$4153.Metric> get metrics => $_getList(2);
+  $core.List<$4154.Metric> get metrics => $_getList(2);
 
   /// The filter clause of dimensions. `dimensionFilter` should be the same value
   /// as in your `runReport` request.
   @$pb.TagNumber(4)
-  $4153.FilterExpression get dimensionFilter => $_getN(3);
+  $4154.FilterExpression get dimensionFilter => $_getN(3);
   @$pb.TagNumber(4)
-  set dimensionFilter($4153.FilterExpression v) { setField(4, v); }
+  set dimensionFilter($4154.FilterExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDimensionFilter() => $_has(3);
   @$pb.TagNumber(4)
   void clearDimensionFilter() => clearField(4);
   @$pb.TagNumber(4)
-  $4153.FilterExpression ensureDimensionFilter() => $_ensure(3);
+  $4154.FilterExpression ensureDimensionFilter() => $_ensure(3);
 
   /// The filter clause of metrics. `metricFilter` should be the same value as in
   /// your `runReport` request
   @$pb.TagNumber(5)
-  $4153.FilterExpression get metricFilter => $_getN(4);
+  $4154.FilterExpression get metricFilter => $_getN(4);
   @$pb.TagNumber(5)
-  set metricFilter($4153.FilterExpression v) { setField(5, v); }
+  set metricFilter($4154.FilterExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMetricFilter() => $_has(4);
   @$pb.TagNumber(5)
   void clearMetricFilter() => clearField(5);
   @$pb.TagNumber(5)
-  $4153.FilterExpression ensureMetricFilter() => $_ensure(4);
+  $4154.FilterExpression ensureMetricFilter() => $_ensure(4);
 
   /// Filters the dimensions and metrics in the response to just this
   /// compatibility. Commonly used as `”compatibilityFilter”: “COMPATIBLE”`
   /// to only return compatible dimensions & metrics.
   @$pb.TagNumber(6)
-  $4153.Compatibility get compatibilityFilter => $_getN(5);
+  $4154.Compatibility get compatibilityFilter => $_getN(5);
   @$pb.TagNumber(6)
-  set compatibilityFilter($4153.Compatibility v) { setField(6, v); }
+  set compatibilityFilter($4154.Compatibility v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCompatibilityFilter() => $_has(5);
   @$pb.TagNumber(6)
@@ -157,8 +157,8 @@ class CheckCompatibilityRequest extends $pb.GeneratedMessage {
 /// The compatibility response with the compatibility of each dimension & metric.
 class CheckCompatibilityResponse extends $pb.GeneratedMessage {
   factory CheckCompatibilityResponse({
-    $core.Iterable<$4153.DimensionCompatibility>? dimensionCompatibilities,
-    $core.Iterable<$4153.MetricCompatibility>? metricCompatibilities,
+    $core.Iterable<$4154.DimensionCompatibility>? dimensionCompatibilities,
+    $core.Iterable<$4154.MetricCompatibility>? metricCompatibilities,
   }) {
     final $result = create();
     if (dimensionCompatibilities != null) {
@@ -174,8 +174,8 @@ class CheckCompatibilityResponse extends $pb.GeneratedMessage {
   factory CheckCompatibilityResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckCompatibilityResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
-    ..pc<$4153.DimensionCompatibility>(1, _omitFieldNames ? '' : 'dimensionCompatibilities', $pb.PbFieldType.PM, subBuilder: $4153.DimensionCompatibility.create)
-    ..pc<$4153.MetricCompatibility>(2, _omitFieldNames ? '' : 'metricCompatibilities', $pb.PbFieldType.PM, subBuilder: $4153.MetricCompatibility.create)
+    ..pc<$4154.DimensionCompatibility>(1, _omitFieldNames ? '' : 'dimensionCompatibilities', $pb.PbFieldType.PM, subBuilder: $4154.DimensionCompatibility.create)
+    ..pc<$4154.MetricCompatibility>(2, _omitFieldNames ? '' : 'metricCompatibilities', $pb.PbFieldType.PM, subBuilder: $4154.MetricCompatibility.create)
     ..hasRequiredFields = false
   ;
 
@@ -202,21 +202,21 @@ class CheckCompatibilityResponse extends $pb.GeneratedMessage {
 
   /// The compatibility of each dimension.
   @$pb.TagNumber(1)
-  $core.List<$4153.DimensionCompatibility> get dimensionCompatibilities => $_getList(0);
+  $core.List<$4154.DimensionCompatibility> get dimensionCompatibilities => $_getList(0);
 
   /// The compatibility of each metric.
   @$pb.TagNumber(2)
-  $core.List<$4153.MetricCompatibility> get metricCompatibilities => $_getList(1);
+  $core.List<$4154.MetricCompatibility> get metricCompatibilities => $_getList(1);
 }
 
 /// The dimensions, metrics and comparisons currently accepted in reporting
 /// methods.
 class Metadata extends $pb.GeneratedMessage {
   factory Metadata({
-    $core.Iterable<$4153.DimensionMetadata>? dimensions,
-    $core.Iterable<$4153.MetricMetadata>? metrics,
+    $core.Iterable<$4154.DimensionMetadata>? dimensions,
+    $core.Iterable<$4154.MetricMetadata>? metrics,
     $core.String? name,
-    $core.Iterable<$4153.ComparisonMetadata>? comparisons,
+    $core.Iterable<$4154.ComparisonMetadata>? comparisons,
   }) {
     final $result = create();
     if (dimensions != null) {
@@ -238,10 +238,10 @@ class Metadata extends $pb.GeneratedMessage {
   factory Metadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Metadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
-    ..pc<$4153.DimensionMetadata>(1, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4153.DimensionMetadata.create)
-    ..pc<$4153.MetricMetadata>(2, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4153.MetricMetadata.create)
+    ..pc<$4154.DimensionMetadata>(1, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4154.DimensionMetadata.create)
+    ..pc<$4154.MetricMetadata>(2, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4154.MetricMetadata.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..pc<$4153.ComparisonMetadata>(4, _omitFieldNames ? '' : 'comparisons', $pb.PbFieldType.PM, subBuilder: $4153.ComparisonMetadata.create)
+    ..pc<$4154.ComparisonMetadata>(4, _omitFieldNames ? '' : 'comparisons', $pb.PbFieldType.PM, subBuilder: $4154.ComparisonMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -268,11 +268,11 @@ class Metadata extends $pb.GeneratedMessage {
 
   /// The dimension descriptions.
   @$pb.TagNumber(1)
-  $core.List<$4153.DimensionMetadata> get dimensions => $_getList(0);
+  $core.List<$4154.DimensionMetadata> get dimensions => $_getList(0);
 
   /// The metric descriptions.
   @$pb.TagNumber(2)
-  $core.List<$4153.MetricMetadata> get metrics => $_getList(1);
+  $core.List<$4154.MetricMetadata> get metrics => $_getList(1);
 
   /// Resource name of this metadata.
   @$pb.TagNumber(3)
@@ -286,27 +286,27 @@ class Metadata extends $pb.GeneratedMessage {
 
   /// The comparison descriptions.
   @$pb.TagNumber(4)
-  $core.List<$4153.ComparisonMetadata> get comparisons => $_getList(3);
+  $core.List<$4154.ComparisonMetadata> get comparisons => $_getList(3);
 }
 
 /// The request to generate a report.
 class RunReportRequest extends $pb.GeneratedMessage {
   factory RunReportRequest({
     $core.String? property,
-    $core.Iterable<$4153.Dimension>? dimensions,
-    $core.Iterable<$4153.Metric>? metrics,
-    $core.Iterable<$4153.DateRange>? dateRanges,
-    $4153.FilterExpression? dimensionFilter,
-    $4153.FilterExpression? metricFilter,
+    $core.Iterable<$4154.Dimension>? dimensions,
+    $core.Iterable<$4154.Metric>? metrics,
+    $core.Iterable<$4154.DateRange>? dateRanges,
+    $4154.FilterExpression? dimensionFilter,
+    $4154.FilterExpression? metricFilter,
     $fixnum.Int64? offset,
     $fixnum.Int64? limit,
-    $core.Iterable<$4153.MetricAggregation>? metricAggregations,
-    $core.Iterable<$4153.OrderBy>? orderBys,
+    $core.Iterable<$4154.MetricAggregation>? metricAggregations,
+    $core.Iterable<$4154.OrderBy>? orderBys,
     $core.String? currencyCode,
-    $4153.CohortSpec? cohortSpec,
+    $4154.CohortSpec? cohortSpec,
     $core.bool? keepEmptyRows,
     $core.bool? returnPropertyQuota,
-    $core.Iterable<$4153.Comparison>? comparisons,
+    $core.Iterable<$4154.Comparison>? comparisons,
   }) {
     final $result = create();
     if (property != null) {
@@ -362,20 +362,20 @@ class RunReportRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunReportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'property')
-    ..pc<$4153.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4153.Dimension.create)
-    ..pc<$4153.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4153.Metric.create)
-    ..pc<$4153.DateRange>(4, _omitFieldNames ? '' : 'dateRanges', $pb.PbFieldType.PM, subBuilder: $4153.DateRange.create)
-    ..aOM<$4153.FilterExpression>(5, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4153.FilterExpression.create)
-    ..aOM<$4153.FilterExpression>(6, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4153.FilterExpression.create)
+    ..pc<$4154.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4154.Dimension.create)
+    ..pc<$4154.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4154.Metric.create)
+    ..pc<$4154.DateRange>(4, _omitFieldNames ? '' : 'dateRanges', $pb.PbFieldType.PM, subBuilder: $4154.DateRange.create)
+    ..aOM<$4154.FilterExpression>(5, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4154.FilterExpression.create)
+    ..aOM<$4154.FilterExpression>(6, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4154.FilterExpression.create)
     ..aInt64(7, _omitFieldNames ? '' : 'offset')
     ..aInt64(8, _omitFieldNames ? '' : 'limit')
-    ..pc<$4153.MetricAggregation>(9, _omitFieldNames ? '' : 'metricAggregations', $pb.PbFieldType.KE, valueOf: $4153.MetricAggregation.valueOf, enumValues: $4153.MetricAggregation.values, defaultEnumValue: $4153.MetricAggregation.METRIC_AGGREGATION_UNSPECIFIED)
-    ..pc<$4153.OrderBy>(10, _omitFieldNames ? '' : 'orderBys', $pb.PbFieldType.PM, subBuilder: $4153.OrderBy.create)
+    ..pc<$4154.MetricAggregation>(9, _omitFieldNames ? '' : 'metricAggregations', $pb.PbFieldType.KE, valueOf: $4154.MetricAggregation.valueOf, enumValues: $4154.MetricAggregation.values, defaultEnumValue: $4154.MetricAggregation.METRIC_AGGREGATION_UNSPECIFIED)
+    ..pc<$4154.OrderBy>(10, _omitFieldNames ? '' : 'orderBys', $pb.PbFieldType.PM, subBuilder: $4154.OrderBy.create)
     ..aOS(11, _omitFieldNames ? '' : 'currencyCode')
-    ..aOM<$4153.CohortSpec>(12, _omitFieldNames ? '' : 'cohortSpec', subBuilder: $4153.CohortSpec.create)
+    ..aOM<$4154.CohortSpec>(12, _omitFieldNames ? '' : 'cohortSpec', subBuilder: $4154.CohortSpec.create)
     ..aOB(13, _omitFieldNames ? '' : 'keepEmptyRows')
     ..aOB(14, _omitFieldNames ? '' : 'returnPropertyQuota')
-    ..pc<$4153.Comparison>(15, _omitFieldNames ? '' : 'comparisons', $pb.PbFieldType.PM, subBuilder: $4153.Comparison.create)
+    ..pc<$4154.Comparison>(15, _omitFieldNames ? '' : 'comparisons', $pb.PbFieldType.PM, subBuilder: $4154.Comparison.create)
     ..hasRequiredFields = false
   ;
 
@@ -419,11 +419,11 @@ class RunReportRequest extends $pb.GeneratedMessage {
 
   /// The dimensions requested and displayed.
   @$pb.TagNumber(2)
-  $core.List<$4153.Dimension> get dimensions => $_getList(1);
+  $core.List<$4154.Dimension> get dimensions => $_getList(1);
 
   /// The metrics requested and displayed.
   @$pb.TagNumber(3)
-  $core.List<$4153.Metric> get metrics => $_getList(2);
+  $core.List<$4154.Metric> get metrics => $_getList(2);
 
   /// Date ranges of data to read. If multiple date ranges are requested, each
   /// response row will contain a zero based date range index. If two date
@@ -431,35 +431,35 @@ class RunReportRequest extends $pb.GeneratedMessage {
   /// response rows for both date ranges. In a cohort request, this `dateRanges`
   /// must be unspecified.
   @$pb.TagNumber(4)
-  $core.List<$4153.DateRange> get dateRanges => $_getList(3);
+  $core.List<$4154.DateRange> get dateRanges => $_getList(3);
 
   /// Dimension filters let you ask for only specific dimension values in
   /// the report. To learn more, see [Fundamentals of Dimension
   /// Filters](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#dimension_filters)
   /// for examples. Metrics cannot be used in this filter.
   @$pb.TagNumber(5)
-  $4153.FilterExpression get dimensionFilter => $_getN(4);
+  $4154.FilterExpression get dimensionFilter => $_getN(4);
   @$pb.TagNumber(5)
-  set dimensionFilter($4153.FilterExpression v) { setField(5, v); }
+  set dimensionFilter($4154.FilterExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDimensionFilter() => $_has(4);
   @$pb.TagNumber(5)
   void clearDimensionFilter() => clearField(5);
   @$pb.TagNumber(5)
-  $4153.FilterExpression ensureDimensionFilter() => $_ensure(4);
+  $4154.FilterExpression ensureDimensionFilter() => $_ensure(4);
 
   /// The filter clause of metrics. Applied after aggregating the report's rows,
   /// similar to SQL having-clause. Dimensions cannot be used in this filter.
   @$pb.TagNumber(6)
-  $4153.FilterExpression get metricFilter => $_getN(5);
+  $4154.FilterExpression get metricFilter => $_getN(5);
   @$pb.TagNumber(6)
-  set metricFilter($4153.FilterExpression v) { setField(6, v); }
+  set metricFilter($4154.FilterExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMetricFilter() => $_has(5);
   @$pb.TagNumber(6)
   void clearMetricFilter() => clearField(6);
   @$pb.TagNumber(6)
-  $4153.FilterExpression ensureMetricFilter() => $_ensure(5);
+  $4154.FilterExpression ensureMetricFilter() => $_ensure(5);
 
   ///  The row count of the start row. The first row is counted as row 0.
   ///
@@ -503,11 +503,11 @@ class RunReportRequest extends $pb.GeneratedMessage {
   /// Aggregation of metrics. Aggregated metric values will be shown in rows
   /// where the dimension_values are set to "RESERVED_(MetricAggregation)".
   @$pb.TagNumber(9)
-  $core.List<$4153.MetricAggregation> get metricAggregations => $_getList(8);
+  $core.List<$4154.MetricAggregation> get metricAggregations => $_getList(8);
 
   /// Specifies how rows are ordered in the response.
   @$pb.TagNumber(10)
-  $core.List<$4153.OrderBy> get orderBys => $_getList(9);
+  $core.List<$4154.OrderBy> get orderBys => $_getList(9);
 
   /// A currency code in ISO4217 format, such as "AED", "USD", "JPY".
   /// If the field is empty, the report uses the property's default currency.
@@ -523,15 +523,15 @@ class RunReportRequest extends $pb.GeneratedMessage {
   /// Cohort group associated with this request. If there is a cohort group
   /// in the request the 'cohort' dimension must be present.
   @$pb.TagNumber(12)
-  $4153.CohortSpec get cohortSpec => $_getN(11);
+  $4154.CohortSpec get cohortSpec => $_getN(11);
   @$pb.TagNumber(12)
-  set cohortSpec($4153.CohortSpec v) { setField(12, v); }
+  set cohortSpec($4154.CohortSpec v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasCohortSpec() => $_has(11);
   @$pb.TagNumber(12)
   void clearCohortSpec() => clearField(12);
   @$pb.TagNumber(12)
-  $4153.CohortSpec ensureCohortSpec() => $_ensure(11);
+  $4154.CohortSpec ensureCohortSpec() => $_ensure(11);
 
   ///  If false or unspecified, each row with all metrics equal to 0 will not be
   ///  returned. If true, these rows will be returned if they are not separately
@@ -567,21 +567,21 @@ class RunReportRequest extends $pb.GeneratedMessage {
   /// request only requires a comparisons field in order to receive a comparison
   /// column in the response.
   @$pb.TagNumber(15)
-  $core.List<$4153.Comparison> get comparisons => $_getList(14);
+  $core.List<$4154.Comparison> get comparisons => $_getList(14);
 }
 
 /// The response report table corresponding to a request.
 class RunReportResponse extends $pb.GeneratedMessage {
   factory RunReportResponse({
-    $core.Iterable<$4153.DimensionHeader>? dimensionHeaders,
-    $core.Iterable<$4153.MetricHeader>? metricHeaders,
-    $core.Iterable<$4153.Row>? rows,
-    $core.Iterable<$4153.Row>? totals,
-    $core.Iterable<$4153.Row>? maximums,
-    $core.Iterable<$4153.Row>? minimums,
+    $core.Iterable<$4154.DimensionHeader>? dimensionHeaders,
+    $core.Iterable<$4154.MetricHeader>? metricHeaders,
+    $core.Iterable<$4154.Row>? rows,
+    $core.Iterable<$4154.Row>? totals,
+    $core.Iterable<$4154.Row>? maximums,
+    $core.Iterable<$4154.Row>? minimums,
     $core.int? rowCount,
-    $4153.ResponseMetaData? metadata,
-    $4153.PropertyQuota? propertyQuota,
+    $4154.ResponseMetaData? metadata,
+    $4154.PropertyQuota? propertyQuota,
     $core.String? kind,
   }) {
     final $result = create();
@@ -622,15 +622,15 @@ class RunReportResponse extends $pb.GeneratedMessage {
   factory RunReportResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunReportResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
-    ..pc<$4153.DimensionHeader>(1, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4153.DimensionHeader.create)
-    ..pc<$4153.MetricHeader>(2, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4153.MetricHeader.create)
-    ..pc<$4153.Row>(3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..pc<$4153.Row>(4, _omitFieldNames ? '' : 'totals', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..pc<$4153.Row>(5, _omitFieldNames ? '' : 'maximums', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..pc<$4153.Row>(6, _omitFieldNames ? '' : 'minimums', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
+    ..pc<$4154.DimensionHeader>(1, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4154.DimensionHeader.create)
+    ..pc<$4154.MetricHeader>(2, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4154.MetricHeader.create)
+    ..pc<$4154.Row>(3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..pc<$4154.Row>(4, _omitFieldNames ? '' : 'totals', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..pc<$4154.Row>(5, _omitFieldNames ? '' : 'maximums', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..pc<$4154.Row>(6, _omitFieldNames ? '' : 'minimums', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'rowCount', $pb.PbFieldType.O3)
-    ..aOM<$4153.ResponseMetaData>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $4153.ResponseMetaData.create)
-    ..aOM<$4153.PropertyQuota>(9, _omitFieldNames ? '' : 'propertyQuota', subBuilder: $4153.PropertyQuota.create)
+    ..aOM<$4154.ResponseMetaData>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $4154.ResponseMetaData.create)
+    ..aOM<$4154.PropertyQuota>(9, _omitFieldNames ? '' : 'propertyQuota', subBuilder: $4154.PropertyQuota.create)
     ..aOS(10, _omitFieldNames ? '' : 'kind')
     ..hasRequiredFields = false
   ;
@@ -659,28 +659,28 @@ class RunReportResponse extends $pb.GeneratedMessage {
   /// Describes dimension columns. The number of DimensionHeaders and ordering of
   /// DimensionHeaders matches the dimensions present in rows.
   @$pb.TagNumber(1)
-  $core.List<$4153.DimensionHeader> get dimensionHeaders => $_getList(0);
+  $core.List<$4154.DimensionHeader> get dimensionHeaders => $_getList(0);
 
   /// Describes metric columns. The number of MetricHeaders and ordering of
   /// MetricHeaders matches the metrics present in rows.
   @$pb.TagNumber(2)
-  $core.List<$4153.MetricHeader> get metricHeaders => $_getList(1);
+  $core.List<$4154.MetricHeader> get metricHeaders => $_getList(1);
 
   /// Rows of dimension value combinations and metric values in the report.
   @$pb.TagNumber(3)
-  $core.List<$4153.Row> get rows => $_getList(2);
+  $core.List<$4154.Row> get rows => $_getList(2);
 
   /// If requested, the totaled values of metrics.
   @$pb.TagNumber(4)
-  $core.List<$4153.Row> get totals => $_getList(3);
+  $core.List<$4154.Row> get totals => $_getList(3);
 
   /// If requested, the maximum values of metrics.
   @$pb.TagNumber(5)
-  $core.List<$4153.Row> get maximums => $_getList(4);
+  $core.List<$4154.Row> get maximums => $_getList(4);
 
   /// If requested, the minimum values of metrics.
   @$pb.TagNumber(6)
-  $core.List<$4153.Row> get minimums => $_getList(5);
+  $core.List<$4154.Row> get minimums => $_getList(5);
 
   ///  The total number of rows in the query result. `rowCount` is independent of
   ///  the number of rows returned in the response, the `limit` request
@@ -701,27 +701,27 @@ class RunReportResponse extends $pb.GeneratedMessage {
 
   /// Metadata for the report.
   @$pb.TagNumber(8)
-  $4153.ResponseMetaData get metadata => $_getN(7);
+  $4154.ResponseMetaData get metadata => $_getN(7);
   @$pb.TagNumber(8)
-  set metadata($4153.ResponseMetaData v) { setField(8, v); }
+  set metadata($4154.ResponseMetaData v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMetadata() => $_has(7);
   @$pb.TagNumber(8)
   void clearMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $4153.ResponseMetaData ensureMetadata() => $_ensure(7);
+  $4154.ResponseMetaData ensureMetadata() => $_ensure(7);
 
   /// This Analytics Property's quota state including this request.
   @$pb.TagNumber(9)
-  $4153.PropertyQuota get propertyQuota => $_getN(8);
+  $4154.PropertyQuota get propertyQuota => $_getN(8);
   @$pb.TagNumber(9)
-  set propertyQuota($4153.PropertyQuota v) { setField(9, v); }
+  set propertyQuota($4154.PropertyQuota v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasPropertyQuota() => $_has(8);
   @$pb.TagNumber(9)
   void clearPropertyQuota() => clearField(9);
   @$pb.TagNumber(9)
-  $4153.PropertyQuota ensurePropertyQuota() => $_ensure(8);
+  $4154.PropertyQuota ensurePropertyQuota() => $_ensure(8);
 
   /// Identifies what kind of resource this message is. This `kind` is always the
   /// fixed string "analyticsData#runReport". Useful to distinguish between
@@ -740,17 +740,17 @@ class RunReportResponse extends $pb.GeneratedMessage {
 class RunPivotReportRequest extends $pb.GeneratedMessage {
   factory RunPivotReportRequest({
     $core.String? property,
-    $core.Iterable<$4153.Dimension>? dimensions,
-    $core.Iterable<$4153.Metric>? metrics,
-    $core.Iterable<$4153.DateRange>? dateRanges,
-    $core.Iterable<$4153.Pivot>? pivots,
-    $4153.FilterExpression? dimensionFilter,
-    $4153.FilterExpression? metricFilter,
+    $core.Iterable<$4154.Dimension>? dimensions,
+    $core.Iterable<$4154.Metric>? metrics,
+    $core.Iterable<$4154.DateRange>? dateRanges,
+    $core.Iterable<$4154.Pivot>? pivots,
+    $4154.FilterExpression? dimensionFilter,
+    $4154.FilterExpression? metricFilter,
     $core.String? currencyCode,
-    $4153.CohortSpec? cohortSpec,
+    $4154.CohortSpec? cohortSpec,
     $core.bool? keepEmptyRows,
     $core.bool? returnPropertyQuota,
-    $core.Iterable<$4153.Comparison>? comparisons,
+    $core.Iterable<$4154.Comparison>? comparisons,
   }) {
     final $result = create();
     if (property != null) {
@@ -797,17 +797,17 @@ class RunPivotReportRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunPivotReportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'property')
-    ..pc<$4153.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4153.Dimension.create)
-    ..pc<$4153.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4153.Metric.create)
-    ..pc<$4153.DateRange>(4, _omitFieldNames ? '' : 'dateRanges', $pb.PbFieldType.PM, subBuilder: $4153.DateRange.create)
-    ..pc<$4153.Pivot>(5, _omitFieldNames ? '' : 'pivots', $pb.PbFieldType.PM, subBuilder: $4153.Pivot.create)
-    ..aOM<$4153.FilterExpression>(6, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4153.FilterExpression.create)
-    ..aOM<$4153.FilterExpression>(7, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4153.FilterExpression.create)
+    ..pc<$4154.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4154.Dimension.create)
+    ..pc<$4154.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4154.Metric.create)
+    ..pc<$4154.DateRange>(4, _omitFieldNames ? '' : 'dateRanges', $pb.PbFieldType.PM, subBuilder: $4154.DateRange.create)
+    ..pc<$4154.Pivot>(5, _omitFieldNames ? '' : 'pivots', $pb.PbFieldType.PM, subBuilder: $4154.Pivot.create)
+    ..aOM<$4154.FilterExpression>(6, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4154.FilterExpression.create)
+    ..aOM<$4154.FilterExpression>(7, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4154.FilterExpression.create)
     ..aOS(8, _omitFieldNames ? '' : 'currencyCode')
-    ..aOM<$4153.CohortSpec>(9, _omitFieldNames ? '' : 'cohortSpec', subBuilder: $4153.CohortSpec.create)
+    ..aOM<$4154.CohortSpec>(9, _omitFieldNames ? '' : 'cohortSpec', subBuilder: $4154.CohortSpec.create)
     ..aOB(10, _omitFieldNames ? '' : 'keepEmptyRows')
     ..aOB(11, _omitFieldNames ? '' : 'returnPropertyQuota')
-    ..pc<$4153.Comparison>(12, _omitFieldNames ? '' : 'comparisons', $pb.PbFieldType.PM, subBuilder: $4153.Comparison.create)
+    ..pc<$4154.Comparison>(12, _omitFieldNames ? '' : 'comparisons', $pb.PbFieldType.PM, subBuilder: $4154.Comparison.create)
     ..hasRequiredFields = false
   ;
 
@@ -852,13 +852,13 @@ class RunPivotReportRequest extends $pb.GeneratedMessage {
   /// The dimensions requested. All defined dimensions must be used by one of the
   /// following: dimension_expression, dimension_filter, pivots, order_bys.
   @$pb.TagNumber(2)
-  $core.List<$4153.Dimension> get dimensions => $_getList(1);
+  $core.List<$4154.Dimension> get dimensions => $_getList(1);
 
   /// The metrics requested, at least one metric needs to be specified. All
   /// defined metrics must be used by one of the following: metric_expression,
   /// metric_filter, order_bys.
   @$pb.TagNumber(3)
-  $core.List<$4153.Metric> get metrics => $_getList(2);
+  $core.List<$4154.Metric> get metrics => $_getList(2);
 
   /// The date range to retrieve event data for the report. If multiple date
   /// ranges are specified, event data from each date range is used in the
@@ -866,41 +866,41 @@ class RunPivotReportRequest extends $pb.GeneratedMessage {
   /// a Pivot's field names; if included, the report compares between date
   /// ranges. In a cohort request, this `dateRanges` must be unspecified.
   @$pb.TagNumber(4)
-  $core.List<$4153.DateRange> get dateRanges => $_getList(3);
+  $core.List<$4154.DateRange> get dateRanges => $_getList(3);
 
   /// Describes the visual format of the report's dimensions in columns or rows.
   /// The union of the fieldNames (dimension names) in all pivots must be a
   /// subset of dimension names defined in Dimensions. No two pivots can share a
   /// dimension. A dimension is only visible if it appears in a pivot.
   @$pb.TagNumber(5)
-  $core.List<$4153.Pivot> get pivots => $_getList(4);
+  $core.List<$4154.Pivot> get pivots => $_getList(4);
 
   /// The filter clause of dimensions. Dimensions must be requested to be used in
   /// this filter. Metrics cannot be used in this filter.
   @$pb.TagNumber(6)
-  $4153.FilterExpression get dimensionFilter => $_getN(5);
+  $4154.FilterExpression get dimensionFilter => $_getN(5);
   @$pb.TagNumber(6)
-  set dimensionFilter($4153.FilterExpression v) { setField(6, v); }
+  set dimensionFilter($4154.FilterExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDimensionFilter() => $_has(5);
   @$pb.TagNumber(6)
   void clearDimensionFilter() => clearField(6);
   @$pb.TagNumber(6)
-  $4153.FilterExpression ensureDimensionFilter() => $_ensure(5);
+  $4154.FilterExpression ensureDimensionFilter() => $_ensure(5);
 
   /// The filter clause of metrics. Applied at post aggregation phase, similar to
   /// SQL having-clause. Metrics must be requested to be used in this filter.
   /// Dimensions cannot be used in this filter.
   @$pb.TagNumber(7)
-  $4153.FilterExpression get metricFilter => $_getN(6);
+  $4154.FilterExpression get metricFilter => $_getN(6);
   @$pb.TagNumber(7)
-  set metricFilter($4153.FilterExpression v) { setField(7, v); }
+  set metricFilter($4154.FilterExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasMetricFilter() => $_has(6);
   @$pb.TagNumber(7)
   void clearMetricFilter() => clearField(7);
   @$pb.TagNumber(7)
-  $4153.FilterExpression ensureMetricFilter() => $_ensure(6);
+  $4154.FilterExpression ensureMetricFilter() => $_ensure(6);
 
   /// A currency code in ISO4217 format, such as "AED", "USD", "JPY".
   /// If the field is empty, the report uses the property's default currency.
@@ -916,15 +916,15 @@ class RunPivotReportRequest extends $pb.GeneratedMessage {
   /// Cohort group associated with this request. If there is a cohort group
   /// in the request the 'cohort' dimension must be present.
   @$pb.TagNumber(9)
-  $4153.CohortSpec get cohortSpec => $_getN(8);
+  $4154.CohortSpec get cohortSpec => $_getN(8);
   @$pb.TagNumber(9)
-  set cohortSpec($4153.CohortSpec v) { setField(9, v); }
+  set cohortSpec($4154.CohortSpec v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCohortSpec() => $_has(8);
   @$pb.TagNumber(9)
   void clearCohortSpec() => clearField(9);
   @$pb.TagNumber(9)
-  $4153.CohortSpec ensureCohortSpec() => $_ensure(8);
+  $4154.CohortSpec ensureCohortSpec() => $_ensure(8);
 
   ///  If false or unspecified, each row with all metrics equal to 0 will not be
   ///  returned. If true, these rows will be returned if they are not separately
@@ -960,19 +960,19 @@ class RunPivotReportRequest extends $pb.GeneratedMessage {
   /// request requires both a comparisons field and a comparisons dimension to
   /// receive a comparison column in the response.
   @$pb.TagNumber(12)
-  $core.List<$4153.Comparison> get comparisons => $_getList(11);
+  $core.List<$4154.Comparison> get comparisons => $_getList(11);
 }
 
 /// The response pivot report table corresponding to a pivot request.
 class RunPivotReportResponse extends $pb.GeneratedMessage {
   factory RunPivotReportResponse({
-    $core.Iterable<$4153.PivotHeader>? pivotHeaders,
-    $core.Iterable<$4153.DimensionHeader>? dimensionHeaders,
-    $core.Iterable<$4153.MetricHeader>? metricHeaders,
-    $core.Iterable<$4153.Row>? rows,
-    $core.Iterable<$4153.Row>? aggregates,
-    $4153.ResponseMetaData? metadata,
-    $4153.PropertyQuota? propertyQuota,
+    $core.Iterable<$4154.PivotHeader>? pivotHeaders,
+    $core.Iterable<$4154.DimensionHeader>? dimensionHeaders,
+    $core.Iterable<$4154.MetricHeader>? metricHeaders,
+    $core.Iterable<$4154.Row>? rows,
+    $core.Iterable<$4154.Row>? aggregates,
+    $4154.ResponseMetaData? metadata,
+    $4154.PropertyQuota? propertyQuota,
     $core.String? kind,
   }) {
     final $result = create();
@@ -1007,13 +1007,13 @@ class RunPivotReportResponse extends $pb.GeneratedMessage {
   factory RunPivotReportResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunPivotReportResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
-    ..pc<$4153.PivotHeader>(1, _omitFieldNames ? '' : 'pivotHeaders', $pb.PbFieldType.PM, subBuilder: $4153.PivotHeader.create)
-    ..pc<$4153.DimensionHeader>(2, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4153.DimensionHeader.create)
-    ..pc<$4153.MetricHeader>(3, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4153.MetricHeader.create)
-    ..pc<$4153.Row>(4, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..pc<$4153.Row>(5, _omitFieldNames ? '' : 'aggregates', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..aOM<$4153.ResponseMetaData>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $4153.ResponseMetaData.create)
-    ..aOM<$4153.PropertyQuota>(7, _omitFieldNames ? '' : 'propertyQuota', subBuilder: $4153.PropertyQuota.create)
+    ..pc<$4154.PivotHeader>(1, _omitFieldNames ? '' : 'pivotHeaders', $pb.PbFieldType.PM, subBuilder: $4154.PivotHeader.create)
+    ..pc<$4154.DimensionHeader>(2, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4154.DimensionHeader.create)
+    ..pc<$4154.MetricHeader>(3, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4154.MetricHeader.create)
+    ..pc<$4154.Row>(4, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..pc<$4154.Row>(5, _omitFieldNames ? '' : 'aggregates', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..aOM<$4154.ResponseMetaData>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $4154.ResponseMetaData.create)
+    ..aOM<$4154.PropertyQuota>(7, _omitFieldNames ? '' : 'propertyQuota', subBuilder: $4154.PropertyQuota.create)
     ..aOS(8, _omitFieldNames ? '' : 'kind')
     ..hasRequiredFields = false
   ;
@@ -1076,52 +1076,52 @@ class RunPivotReportResponse extends $pb.GeneratedMessage {
   ///        }]
   ///      }]
   @$pb.TagNumber(1)
-  $core.List<$4153.PivotHeader> get pivotHeaders => $_getList(0);
+  $core.List<$4154.PivotHeader> get pivotHeaders => $_getList(0);
 
   /// Describes dimension columns. The number of DimensionHeaders and ordering of
   /// DimensionHeaders matches the dimensions present in rows.
   @$pb.TagNumber(2)
-  $core.List<$4153.DimensionHeader> get dimensionHeaders => $_getList(1);
+  $core.List<$4154.DimensionHeader> get dimensionHeaders => $_getList(1);
 
   /// Describes metric columns. The number of MetricHeaders and ordering of
   /// MetricHeaders matches the metrics present in rows.
   @$pb.TagNumber(3)
-  $core.List<$4153.MetricHeader> get metricHeaders => $_getList(2);
+  $core.List<$4154.MetricHeader> get metricHeaders => $_getList(2);
 
   /// Rows of dimension value combinations and metric values in the report.
   @$pb.TagNumber(4)
-  $core.List<$4153.Row> get rows => $_getList(3);
+  $core.List<$4154.Row> get rows => $_getList(3);
 
   /// Aggregation of metric values. Can be totals, minimums, or maximums. The
   /// returned aggregations are controlled by the metric_aggregations in the
   /// pivot. The type of aggregation returned in each row is shown by the
   /// dimension_values which are set to "RESERVED_<MetricAggregation>".
   @$pb.TagNumber(5)
-  $core.List<$4153.Row> get aggregates => $_getList(4);
+  $core.List<$4154.Row> get aggregates => $_getList(4);
 
   /// Metadata for the report.
   @$pb.TagNumber(6)
-  $4153.ResponseMetaData get metadata => $_getN(5);
+  $4154.ResponseMetaData get metadata => $_getN(5);
   @$pb.TagNumber(6)
-  set metadata($4153.ResponseMetaData v) { setField(6, v); }
+  set metadata($4154.ResponseMetaData v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMetadata() => $_has(5);
   @$pb.TagNumber(6)
   void clearMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $4153.ResponseMetaData ensureMetadata() => $_ensure(5);
+  $4154.ResponseMetaData ensureMetadata() => $_ensure(5);
 
   /// This Analytics Property's quota state including this request.
   @$pb.TagNumber(7)
-  $4153.PropertyQuota get propertyQuota => $_getN(6);
+  $4154.PropertyQuota get propertyQuota => $_getN(6);
   @$pb.TagNumber(7)
-  set propertyQuota($4153.PropertyQuota v) { setField(7, v); }
+  set propertyQuota($4154.PropertyQuota v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasPropertyQuota() => $_has(6);
   @$pb.TagNumber(7)
   void clearPropertyQuota() => clearField(7);
   @$pb.TagNumber(7)
-  $4153.PropertyQuota ensurePropertyQuota() => $_ensure(6);
+  $4154.PropertyQuota ensurePropertyQuota() => $_ensure(6);
 
   /// Identifies what kind of resource this message is. This `kind` is always the
   /// fixed string "analyticsData#runPivotReport". Useful to distinguish between
@@ -1468,15 +1468,15 @@ class GetMetadataRequest extends $pb.GeneratedMessage {
 class RunRealtimeReportRequest extends $pb.GeneratedMessage {
   factory RunRealtimeReportRequest({
     $core.String? property,
-    $core.Iterable<$4153.Dimension>? dimensions,
-    $core.Iterable<$4153.Metric>? metrics,
-    $4153.FilterExpression? dimensionFilter,
-    $4153.FilterExpression? metricFilter,
+    $core.Iterable<$4154.Dimension>? dimensions,
+    $core.Iterable<$4154.Metric>? metrics,
+    $4154.FilterExpression? dimensionFilter,
+    $4154.FilterExpression? metricFilter,
     $fixnum.Int64? limit,
-    $core.Iterable<$4153.MetricAggregation>? metricAggregations,
-    $core.Iterable<$4153.OrderBy>? orderBys,
+    $core.Iterable<$4154.MetricAggregation>? metricAggregations,
+    $core.Iterable<$4154.OrderBy>? orderBys,
     $core.bool? returnPropertyQuota,
-    $core.Iterable<$4153.MinuteRange>? minuteRanges,
+    $core.Iterable<$4154.MinuteRange>? minuteRanges,
   }) {
     final $result = create();
     if (property != null) {
@@ -1517,15 +1517,15 @@ class RunRealtimeReportRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunRealtimeReportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'property')
-    ..pc<$4153.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4153.Dimension.create)
-    ..pc<$4153.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4153.Metric.create)
-    ..aOM<$4153.FilterExpression>(4, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4153.FilterExpression.create)
-    ..aOM<$4153.FilterExpression>(5, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4153.FilterExpression.create)
+    ..pc<$4154.Dimension>(2, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: $4154.Dimension.create)
+    ..pc<$4154.Metric>(3, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $4154.Metric.create)
+    ..aOM<$4154.FilterExpression>(4, _omitFieldNames ? '' : 'dimensionFilter', subBuilder: $4154.FilterExpression.create)
+    ..aOM<$4154.FilterExpression>(5, _omitFieldNames ? '' : 'metricFilter', subBuilder: $4154.FilterExpression.create)
     ..aInt64(6, _omitFieldNames ? '' : 'limit')
-    ..pc<$4153.MetricAggregation>(7, _omitFieldNames ? '' : 'metricAggregations', $pb.PbFieldType.KE, valueOf: $4153.MetricAggregation.valueOf, enumValues: $4153.MetricAggregation.values, defaultEnumValue: $4153.MetricAggregation.METRIC_AGGREGATION_UNSPECIFIED)
-    ..pc<$4153.OrderBy>(8, _omitFieldNames ? '' : 'orderBys', $pb.PbFieldType.PM, subBuilder: $4153.OrderBy.create)
+    ..pc<$4154.MetricAggregation>(7, _omitFieldNames ? '' : 'metricAggregations', $pb.PbFieldType.KE, valueOf: $4154.MetricAggregation.valueOf, enumValues: $4154.MetricAggregation.values, defaultEnumValue: $4154.MetricAggregation.METRIC_AGGREGATION_UNSPECIFIED)
+    ..pc<$4154.OrderBy>(8, _omitFieldNames ? '' : 'orderBys', $pb.PbFieldType.PM, subBuilder: $4154.OrderBy.create)
     ..aOB(9, _omitFieldNames ? '' : 'returnPropertyQuota')
-    ..pc<$4153.MinuteRange>(10, _omitFieldNames ? '' : 'minuteRanges', $pb.PbFieldType.PM, subBuilder: $4153.MinuteRange.create)
+    ..pc<$4154.MinuteRange>(10, _omitFieldNames ? '' : 'minuteRanges', $pb.PbFieldType.PM, subBuilder: $4154.MinuteRange.create)
     ..hasRequiredFields = false
   ;
 
@@ -1567,36 +1567,36 @@ class RunRealtimeReportRequest extends $pb.GeneratedMessage {
 
   /// The dimensions requested and displayed.
   @$pb.TagNumber(2)
-  $core.List<$4153.Dimension> get dimensions => $_getList(1);
+  $core.List<$4154.Dimension> get dimensions => $_getList(1);
 
   /// The metrics requested and displayed.
   @$pb.TagNumber(3)
-  $core.List<$4153.Metric> get metrics => $_getList(2);
+  $core.List<$4154.Metric> get metrics => $_getList(2);
 
   /// The filter clause of dimensions. Metrics cannot be used in this filter.
   @$pb.TagNumber(4)
-  $4153.FilterExpression get dimensionFilter => $_getN(3);
+  $4154.FilterExpression get dimensionFilter => $_getN(3);
   @$pb.TagNumber(4)
-  set dimensionFilter($4153.FilterExpression v) { setField(4, v); }
+  set dimensionFilter($4154.FilterExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDimensionFilter() => $_has(3);
   @$pb.TagNumber(4)
   void clearDimensionFilter() => clearField(4);
   @$pb.TagNumber(4)
-  $4153.FilterExpression ensureDimensionFilter() => $_ensure(3);
+  $4154.FilterExpression ensureDimensionFilter() => $_ensure(3);
 
   /// The filter clause of metrics. Applied at post aggregation phase, similar to
   /// SQL having-clause. Dimensions cannot be used in this filter.
   @$pb.TagNumber(5)
-  $4153.FilterExpression get metricFilter => $_getN(4);
+  $4154.FilterExpression get metricFilter => $_getN(4);
   @$pb.TagNumber(5)
-  set metricFilter($4153.FilterExpression v) { setField(5, v); }
+  set metricFilter($4154.FilterExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasMetricFilter() => $_has(4);
   @$pb.TagNumber(5)
   void clearMetricFilter() => clearField(5);
   @$pb.TagNumber(5)
-  $4153.FilterExpression ensureMetricFilter() => $_ensure(4);
+  $4154.FilterExpression ensureMetricFilter() => $_ensure(4);
 
   ///  The number of rows to return. If unspecified, 10,000 rows are returned. The
   ///  API returns a maximum of 250,000 rows per request, no matter how many you
@@ -1619,11 +1619,11 @@ class RunRealtimeReportRequest extends $pb.GeneratedMessage {
   /// Aggregation of metrics. Aggregated metric values will be shown in rows
   /// where the dimension_values are set to "RESERVED_(MetricAggregation)".
   @$pb.TagNumber(7)
-  $core.List<$4153.MetricAggregation> get metricAggregations => $_getList(6);
+  $core.List<$4154.MetricAggregation> get metricAggregations => $_getList(6);
 
   /// Specifies how rows are ordered in the response.
   @$pb.TagNumber(8)
-  $core.List<$4153.OrderBy> get orderBys => $_getList(7);
+  $core.List<$4154.OrderBy> get orderBys => $_getList(7);
 
   /// Toggles whether to return the current state of this Analytics Property's
   /// Realtime quota. Quota is returned in [PropertyQuota](#PropertyQuota).
@@ -1642,20 +1642,20 @@ class RunRealtimeReportRequest extends $pb.GeneratedMessage {
   /// If two minute ranges overlap, the event data for the overlapping minutes is
   /// included in the response rows for both minute ranges.
   @$pb.TagNumber(10)
-  $core.List<$4153.MinuteRange> get minuteRanges => $_getList(9);
+  $core.List<$4154.MinuteRange> get minuteRanges => $_getList(9);
 }
 
 /// The response realtime report table corresponding to a request.
 class RunRealtimeReportResponse extends $pb.GeneratedMessage {
   factory RunRealtimeReportResponse({
-    $core.Iterable<$4153.DimensionHeader>? dimensionHeaders,
-    $core.Iterable<$4153.MetricHeader>? metricHeaders,
-    $core.Iterable<$4153.Row>? rows,
-    $core.Iterable<$4153.Row>? totals,
-    $core.Iterable<$4153.Row>? maximums,
-    $core.Iterable<$4153.Row>? minimums,
+    $core.Iterable<$4154.DimensionHeader>? dimensionHeaders,
+    $core.Iterable<$4154.MetricHeader>? metricHeaders,
+    $core.Iterable<$4154.Row>? rows,
+    $core.Iterable<$4154.Row>? totals,
+    $core.Iterable<$4154.Row>? maximums,
+    $core.Iterable<$4154.Row>? minimums,
     $core.int? rowCount,
-    $4153.PropertyQuota? propertyQuota,
+    $4154.PropertyQuota? propertyQuota,
     $core.String? kind,
   }) {
     final $result = create();
@@ -1693,14 +1693,14 @@ class RunRealtimeReportResponse extends $pb.GeneratedMessage {
   factory RunRealtimeReportResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunRealtimeReportResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.analytics.data.v1beta'), createEmptyInstance: create)
-    ..pc<$4153.DimensionHeader>(1, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4153.DimensionHeader.create)
-    ..pc<$4153.MetricHeader>(2, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4153.MetricHeader.create)
-    ..pc<$4153.Row>(3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..pc<$4153.Row>(4, _omitFieldNames ? '' : 'totals', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..pc<$4153.Row>(5, _omitFieldNames ? '' : 'maximums', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
-    ..pc<$4153.Row>(6, _omitFieldNames ? '' : 'minimums', $pb.PbFieldType.PM, subBuilder: $4153.Row.create)
+    ..pc<$4154.DimensionHeader>(1, _omitFieldNames ? '' : 'dimensionHeaders', $pb.PbFieldType.PM, subBuilder: $4154.DimensionHeader.create)
+    ..pc<$4154.MetricHeader>(2, _omitFieldNames ? '' : 'metricHeaders', $pb.PbFieldType.PM, subBuilder: $4154.MetricHeader.create)
+    ..pc<$4154.Row>(3, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..pc<$4154.Row>(4, _omitFieldNames ? '' : 'totals', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..pc<$4154.Row>(5, _omitFieldNames ? '' : 'maximums', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
+    ..pc<$4154.Row>(6, _omitFieldNames ? '' : 'minimums', $pb.PbFieldType.PM, subBuilder: $4154.Row.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'rowCount', $pb.PbFieldType.O3)
-    ..aOM<$4153.PropertyQuota>(8, _omitFieldNames ? '' : 'propertyQuota', subBuilder: $4153.PropertyQuota.create)
+    ..aOM<$4154.PropertyQuota>(8, _omitFieldNames ? '' : 'propertyQuota', subBuilder: $4154.PropertyQuota.create)
     ..aOS(9, _omitFieldNames ? '' : 'kind')
     ..hasRequiredFields = false
   ;
@@ -1729,28 +1729,28 @@ class RunRealtimeReportResponse extends $pb.GeneratedMessage {
   /// Describes dimension columns. The number of DimensionHeaders and ordering of
   /// DimensionHeaders matches the dimensions present in rows.
   @$pb.TagNumber(1)
-  $core.List<$4153.DimensionHeader> get dimensionHeaders => $_getList(0);
+  $core.List<$4154.DimensionHeader> get dimensionHeaders => $_getList(0);
 
   /// Describes metric columns. The number of MetricHeaders and ordering of
   /// MetricHeaders matches the metrics present in rows.
   @$pb.TagNumber(2)
-  $core.List<$4153.MetricHeader> get metricHeaders => $_getList(1);
+  $core.List<$4154.MetricHeader> get metricHeaders => $_getList(1);
 
   /// Rows of dimension value combinations and metric values in the report.
   @$pb.TagNumber(3)
-  $core.List<$4153.Row> get rows => $_getList(2);
+  $core.List<$4154.Row> get rows => $_getList(2);
 
   /// If requested, the totaled values of metrics.
   @$pb.TagNumber(4)
-  $core.List<$4153.Row> get totals => $_getList(3);
+  $core.List<$4154.Row> get totals => $_getList(3);
 
   /// If requested, the maximum values of metrics.
   @$pb.TagNumber(5)
-  $core.List<$4153.Row> get maximums => $_getList(4);
+  $core.List<$4154.Row> get maximums => $_getList(4);
 
   /// If requested, the minimum values of metrics.
   @$pb.TagNumber(6)
-  $core.List<$4153.Row> get minimums => $_getList(5);
+  $core.List<$4154.Row> get minimums => $_getList(5);
 
   /// The total number of rows in the query result. `rowCount` is independent of
   /// the number of rows returned in the response and the `limit` request
@@ -1768,15 +1768,15 @@ class RunRealtimeReportResponse extends $pb.GeneratedMessage {
 
   /// This Analytics Property's Realtime quota state including this request.
   @$pb.TagNumber(8)
-  $4153.PropertyQuota get propertyQuota => $_getN(7);
+  $4154.PropertyQuota get propertyQuota => $_getN(7);
   @$pb.TagNumber(8)
-  set propertyQuota($4153.PropertyQuota v) { setField(8, v); }
+  set propertyQuota($4154.PropertyQuota v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPropertyQuota() => $_has(7);
   @$pb.TagNumber(8)
   void clearPropertyQuota() => clearField(8);
   @$pb.TagNumber(8)
-  $4153.PropertyQuota ensurePropertyQuota() => $_ensure(7);
+  $4154.PropertyQuota ensurePropertyQuota() => $_ensure(7);
 
   /// Identifies what kind of resource this message is. This `kind` is always the
   /// fixed string "analyticsData#runRealtimeReport". Useful to distinguish
@@ -2077,7 +2077,7 @@ class AudienceExport extends $pb.GeneratedMessage {
     $core.String? audienceDisplayName,
     $core.Iterable<AudienceDimension>? dimensions,
     AudienceExport_State? state,
-    $1775.Timestamp? beginCreatingTime,
+    $1776.Timestamp? beginCreatingTime,
     $core.int? creationQuotaTokensCharged,
     $core.int? rowCount,
     $core.String? errorMessage,
@@ -2126,7 +2126,7 @@ class AudienceExport extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'audienceDisplayName')
     ..pc<AudienceDimension>(4, _omitFieldNames ? '' : 'dimensions', $pb.PbFieldType.PM, subBuilder: AudienceDimension.create)
     ..e<AudienceExport_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AudienceExport_State.STATE_UNSPECIFIED, valueOf: AudienceExport_State.valueOf, enumValues: AudienceExport_State.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'beginCreatingTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'beginCreatingTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'creationQuotaTokensCharged', $pb.PbFieldType.O3)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'rowCount', $pb.PbFieldType.O3)
     ..aOS(9, _omitFieldNames ? '' : 'errorMessage')
@@ -2210,15 +2210,15 @@ class AudienceExport extends $pb.GeneratedMessage {
   /// Output only. The time when CreateAudienceExport was called and the
   /// AudienceExport began the `CREATING` state.
   @$pb.TagNumber(6)
-  $1775.Timestamp get beginCreatingTime => $_getN(5);
+  $1776.Timestamp get beginCreatingTime => $_getN(5);
   @$pb.TagNumber(6)
-  set beginCreatingTime($1775.Timestamp v) { setField(6, v); }
+  set beginCreatingTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBeginCreatingTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearBeginCreatingTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureBeginCreatingTime() => $_ensure(5);
+  $1776.Timestamp ensureBeginCreatingTime() => $_ensure(5);
 
   /// Output only. The total quota tokens charged during creation of the
   /// AudienceExport. Because this token count is based on activity from the

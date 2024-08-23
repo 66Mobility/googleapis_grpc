@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
-import 'arrow.pb.dart' as $4386;
-import 'avro.pb.dart' as $4385;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import 'arrow.pb.dart' as $4387;
+import 'avro.pb.dart' as $4386;
 import 'stream.pbenum.dart';
-import 'table.pb.dart' as $4387;
+import 'table.pb.dart' as $4388;
 
 export 'stream.pbenum.dart';
 
 /// Additional attributes when reading a table.
 class ReadSession_TableModifiers extends $pb.GeneratedMessage {
   factory ReadSession_TableModifiers({
-    $1775.Timestamp? snapshotTime,
+    $1776.Timestamp? snapshotTime,
   }) {
     final $result = create();
     if (snapshotTime != null) {
@@ -37,7 +37,7 @@ class ReadSession_TableModifiers extends $pb.GeneratedMessage {
   factory ReadSession_TableModifiers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadSession.TableModifiers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -64,15 +64,15 @@ class ReadSession_TableModifiers extends $pb.GeneratedMessage {
 
   /// The snapshot time of the table. If not set, interpreted as now.
   @$pb.TagNumber(1)
-  $1775.Timestamp get snapshotTime => $_getN(0);
+  $1776.Timestamp get snapshotTime => $_getN(0);
   @$pb.TagNumber(1)
-  set snapshotTime($1775.Timestamp v) { setField(1, v); }
+  set snapshotTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSnapshotTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearSnapshotTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureSnapshotTime() => $_ensure(0);
+  $1776.Timestamp ensureSnapshotTime() => $_ensure(0);
 }
 
 /// Options dictating how we read a table.
@@ -80,7 +80,7 @@ class ReadSession_TableReadOptions extends $pb.GeneratedMessage {
   factory ReadSession_TableReadOptions({
     $core.Iterable<$core.String>? selectedFields,
     $core.String? rowRestriction,
-    $4386.ArrowSerializationOptions? arrowSerializationOptions,
+    $4387.ArrowSerializationOptions? arrowSerializationOptions,
   }) {
     final $result = create();
     if (selectedFields != null) {
@@ -101,7 +101,7 @@ class ReadSession_TableReadOptions extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadSession.TableReadOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'selectedFields')
     ..aOS(2, _omitFieldNames ? '' : 'rowRestriction')
-    ..aOM<$4386.ArrowSerializationOptions>(3, _omitFieldNames ? '' : 'arrowSerializationOptions', subBuilder: $4386.ArrowSerializationOptions.create)
+    ..aOM<$4387.ArrowSerializationOptions>(3, _omitFieldNames ? '' : 'arrowSerializationOptions', subBuilder: $4387.ArrowSerializationOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -154,15 +154,15 @@ class ReadSession_TableReadOptions extends $pb.GeneratedMessage {
 
   /// Optional. Options specific to the Apache Arrow output format.
   @$pb.TagNumber(3)
-  $4386.ArrowSerializationOptions get arrowSerializationOptions => $_getN(2);
+  $4387.ArrowSerializationOptions get arrowSerializationOptions => $_getN(2);
   @$pb.TagNumber(3)
-  set arrowSerializationOptions($4386.ArrowSerializationOptions v) { setField(3, v); }
+  set arrowSerializationOptions($4387.ArrowSerializationOptions v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasArrowSerializationOptions() => $_has(2);
   @$pb.TagNumber(3)
   void clearArrowSerializationOptions() => clearField(3);
   @$pb.TagNumber(3)
-  $4386.ArrowSerializationOptions ensureArrowSerializationOptions() => $_ensure(2);
+  $4387.ArrowSerializationOptions ensureArrowSerializationOptions() => $_ensure(2);
 }
 
 enum ReadSession_Schema {
@@ -175,10 +175,10 @@ enum ReadSession_Schema {
 class ReadSession extends $pb.GeneratedMessage {
   factory ReadSession({
     $core.String? name,
-    $1775.Timestamp? expireTime,
+    $1776.Timestamp? expireTime,
     DataFormat? dataFormat,
-    $4385.AvroSchema? avroSchema,
-    $4386.ArrowSchema? arrowSchema,
+    $4386.AvroSchema? avroSchema,
+    $4387.ArrowSchema? arrowSchema,
     $core.String? table,
     ReadSession_TableModifiers? tableModifiers,
     ReadSession_TableReadOptions? readOptions,
@@ -226,10 +226,10 @@ class ReadSession extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadSession', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
     ..oo(0, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
     ..e<DataFormat>(3, _omitFieldNames ? '' : 'dataFormat', $pb.PbFieldType.OE, defaultOrMaker: DataFormat.DATA_FORMAT_UNSPECIFIED, valueOf: DataFormat.valueOf, enumValues: DataFormat.values)
-    ..aOM<$4385.AvroSchema>(4, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4385.AvroSchema.create)
-    ..aOM<$4386.ArrowSchema>(5, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4386.ArrowSchema.create)
+    ..aOM<$4386.AvroSchema>(4, _omitFieldNames ? '' : 'avroSchema', subBuilder: $4386.AvroSchema.create)
+    ..aOM<$4387.ArrowSchema>(5, _omitFieldNames ? '' : 'arrowSchema', subBuilder: $4387.ArrowSchema.create)
     ..aOS(6, _omitFieldNames ? '' : 'table')
     ..aOM<ReadSession_TableModifiers>(7, _omitFieldNames ? '' : 'tableModifiers', subBuilder: ReadSession_TableModifiers.create)
     ..aOM<ReadSession_TableReadOptions>(8, _omitFieldNames ? '' : 'readOptions', subBuilder: ReadSession_TableReadOptions.create)
@@ -276,15 +276,15 @@ class ReadSession extends $pb.GeneratedMessage {
   /// requests to read this Session will return errors. The expire_time is
   /// automatically assigned and currently cannot be specified or updated.
   @$pb.TagNumber(2)
-  $1775.Timestamp get expireTime => $_getN(1);
+  $1776.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($1775.Timestamp v) { setField(2, v); }
+  set expireTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureExpireTime() => $_ensure(1);
+  $1776.Timestamp ensureExpireTime() => $_ensure(1);
 
   /// Immutable. Data format of the output data.
   @$pb.TagNumber(3)
@@ -298,27 +298,27 @@ class ReadSession extends $pb.GeneratedMessage {
 
   /// Output only. Avro schema.
   @$pb.TagNumber(4)
-  $4385.AvroSchema get avroSchema => $_getN(3);
+  $4386.AvroSchema get avroSchema => $_getN(3);
   @$pb.TagNumber(4)
-  set avroSchema($4385.AvroSchema v) { setField(4, v); }
+  set avroSchema($4386.AvroSchema v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAvroSchema() => $_has(3);
   @$pb.TagNumber(4)
   void clearAvroSchema() => clearField(4);
   @$pb.TagNumber(4)
-  $4385.AvroSchema ensureAvroSchema() => $_ensure(3);
+  $4386.AvroSchema ensureAvroSchema() => $_ensure(3);
 
   /// Output only. Arrow schema.
   @$pb.TagNumber(5)
-  $4386.ArrowSchema get arrowSchema => $_getN(4);
+  $4387.ArrowSchema get arrowSchema => $_getN(4);
   @$pb.TagNumber(5)
-  set arrowSchema($4386.ArrowSchema v) { setField(5, v); }
+  set arrowSchema($4387.ArrowSchema v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasArrowSchema() => $_has(4);
   @$pb.TagNumber(5)
   void clearArrowSchema() => clearField(5);
   @$pb.TagNumber(5)
-  $4386.ArrowSchema ensureArrowSchema() => $_ensure(4);
+  $4387.ArrowSchema ensureArrowSchema() => $_ensure(4);
 
   /// Immutable. Table that this ReadSession is reading from, in the form
   /// `projects/{project_id}/datasets/{dataset_id}/tables/{table_id}
@@ -425,9 +425,9 @@ class WriteStream extends $pb.GeneratedMessage {
   factory WriteStream({
     $core.String? name,
     WriteStream_Type? type,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? commitTime,
-    $4387.TableSchema? tableSchema,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? commitTime,
+    $4388.TableSchema? tableSchema,
   }) {
     final $result = create();
     if (name != null) {
@@ -454,9 +454,9 @@ class WriteStream extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteStream', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1beta2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<WriteStream_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: WriteStream_Type.TYPE_UNSPECIFIED, valueOf: WriteStream_Type.valueOf, enumValues: WriteStream_Type.values)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'commitTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4387.TableSchema>(5, _omitFieldNames ? '' : 'tableSchema', subBuilder: $4387.TableSchema.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'commitTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4388.TableSchema>(5, _omitFieldNames ? '' : 'tableSchema', subBuilder: $4388.TableSchema.create)
     ..hasRequiredFields = false
   ;
 
@@ -505,45 +505,45 @@ class WriteStream extends $pb.GeneratedMessage {
   /// Output only. Create time of the stream. For the _default stream, this is the
   /// creation_time of the table.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Commit time of the stream.
   /// If a stream is of `COMMITTED` type, then it will have a commit_time same as
   /// `create_time`. If the stream is of `PENDING` type, commit_time being empty
   /// means it is not committed.
   @$pb.TagNumber(4)
-  $1775.Timestamp get commitTime => $_getN(3);
+  $1776.Timestamp get commitTime => $_getN(3);
   @$pb.TagNumber(4)
-  set commitTime($1775.Timestamp v) { setField(4, v); }
+  set commitTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCommitTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCommitTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCommitTime() => $_ensure(3);
+  $1776.Timestamp ensureCommitTime() => $_ensure(3);
 
   /// Output only. The schema of the destination table. It is only returned in
   /// `CreateWriteStream` response. Caller should generate data that's
   /// compatible with this schema to send in initial `AppendRowsRequest`.
   /// The table schema could go out of date during the life time of the stream.
   @$pb.TagNumber(5)
-  $4387.TableSchema get tableSchema => $_getN(4);
+  $4388.TableSchema get tableSchema => $_getN(4);
   @$pb.TagNumber(5)
-  set tableSchema($4387.TableSchema v) { setField(5, v); }
+  set tableSchema($4388.TableSchema v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTableSchema() => $_has(4);
   @$pb.TagNumber(5)
   void clearTableSchema() => clearField(5);
   @$pb.TagNumber(5)
-  $4387.TableSchema ensureTableSchema() => $_ensure(4);
+  $4388.TableSchema ensureTableSchema() => $_ensure(4);
 }
 
 

@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/conversion_action_category.pbenum.dart' as $1915;
-import '../enums/conversion_origin.pbenum.dart' as $2193;
+import '../enums/conversion_action_category.pbenum.dart' as $1916;
+import '../enums/conversion_origin.pbenum.dart' as $2194;
 
 /// Biddability control for conversion actions with a matching category and
 /// origin.
 class CustomerConversionGoal extends $pb.GeneratedMessage {
   factory CustomerConversionGoal({
     $core.String? resourceName,
-    $1915.ConversionActionCategoryEnum_ConversionActionCategory? category,
-    $2193.ConversionOriginEnum_ConversionOrigin? origin,
+    $1916.ConversionActionCategoryEnum_ConversionActionCategory? category,
+    $2194.ConversionOriginEnum_ConversionOrigin? origin,
     $core.bool? biddable,
   }) {
     final $result = create();
@@ -46,8 +46,8 @@ class CustomerConversionGoal extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerConversionGoal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$1915.ConversionActionCategoryEnum_ConversionActionCategory>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $1915.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $1915.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $1915.ConversionActionCategoryEnum_ConversionActionCategory.values)
-    ..e<$2193.ConversionOriginEnum_ConversionOrigin>(3, _omitFieldNames ? '' : 'origin', $pb.PbFieldType.OE, defaultOrMaker: $2193.ConversionOriginEnum_ConversionOrigin.UNSPECIFIED, valueOf: $2193.ConversionOriginEnum_ConversionOrigin.valueOf, enumValues: $2193.ConversionOriginEnum_ConversionOrigin.values)
+    ..e<$1916.ConversionActionCategoryEnum_ConversionActionCategory>(2, _omitFieldNames ? '' : 'category', $pb.PbFieldType.OE, defaultOrMaker: $1916.ConversionActionCategoryEnum_ConversionActionCategory.UNSPECIFIED, valueOf: $1916.ConversionActionCategoryEnum_ConversionActionCategory.valueOf, enumValues: $1916.ConversionActionCategoryEnum_ConversionActionCategory.values)
+    ..e<$2194.ConversionOriginEnum_ConversionOrigin>(3, _omitFieldNames ? '' : 'origin', $pb.PbFieldType.OE, defaultOrMaker: $2194.ConversionOriginEnum_ConversionOrigin.UNSPECIFIED, valueOf: $2194.ConversionOriginEnum_ConversionOrigin.valueOf, enumValues: $2194.ConversionOriginEnum_ConversionOrigin.values)
     ..aOB(4, _omitFieldNames ? '' : 'biddable')
     ..hasRequiredFields = false
   ;
@@ -89,9 +89,9 @@ class CustomerConversionGoal extends $pb.GeneratedMessage {
   /// The conversion category of this customer conversion goal. Only
   /// conversion actions that have this category will be included in this goal.
   @$pb.TagNumber(2)
-  $1915.ConversionActionCategoryEnum_ConversionActionCategory get category => $_getN(1);
+  $1916.ConversionActionCategoryEnum_ConversionActionCategory get category => $_getN(1);
   @$pb.TagNumber(2)
-  set category($1915.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(2, v); }
+  set category($1916.ConversionActionCategoryEnum_ConversionActionCategory v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -101,9 +101,9 @@ class CustomerConversionGoal extends $pb.GeneratedMessage {
   /// conversion actions that have this conversion origin will be included in
   /// this goal.
   @$pb.TagNumber(3)
-  $2193.ConversionOriginEnum_ConversionOrigin get origin => $_getN(2);
+  $2194.ConversionOriginEnum_ConversionOrigin get origin => $_getN(2);
   @$pb.TagNumber(3)
-  set origin($2193.ConversionOriginEnum_ConversionOrigin v) { setField(3, v); }
+  set origin($2194.ConversionOriginEnum_ConversionOrigin v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOrigin() => $_has(2);
   @$pb.TagNumber(3)

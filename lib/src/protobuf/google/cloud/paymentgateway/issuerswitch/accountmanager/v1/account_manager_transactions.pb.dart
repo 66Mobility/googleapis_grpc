@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../../type/money.pb.dart' as $1814;
-import '../../v1/common_fields.pb.dart' as $4588;
+import '../../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../../type/money.pb.dart' as $1815;
+import '../../v1/common_fields.pb.dart' as $4590;
 import 'account_manager_transactions.pbenum.dart';
 
 export 'account_manager_transactions.pbenum.dart';
@@ -29,7 +29,7 @@ class AccountManagerTransaction extends $pb.GeneratedMessage {
     AccountManagerSettlementParticipant? payer,
     AccountManagerSettlementParticipant? payee,
     AccountManagerTransactionReconciliationInfo? reconciliationInfo,
-    $1814.Money? amount,
+    $1815.Money? amount,
   }) {
     final $result = create();
     if (name != null) {
@@ -66,7 +66,7 @@ class AccountManagerTransaction extends $pb.GeneratedMessage {
     ..aOM<AccountManagerSettlementParticipant>(4, _omitFieldNames ? '' : 'payer', subBuilder: AccountManagerSettlementParticipant.create)
     ..aOM<AccountManagerSettlementParticipant>(5, _omitFieldNames ? '' : 'payee', subBuilder: AccountManagerSettlementParticipant.create)
     ..aOM<AccountManagerTransactionReconciliationInfo>(6, _omitFieldNames ? '' : 'reconciliationInfo', subBuilder: AccountManagerTransactionReconciliationInfo.create)
-    ..aOM<$1814.Money>(7, _omitFieldNames ? '' : 'amount', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(7, _omitFieldNames ? '' : 'amount', subBuilder: $1815.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -163,23 +163,23 @@ class AccountManagerTransaction extends $pb.GeneratedMessage {
 
   /// The amount for payment settlement in the transaction.
   @$pb.TagNumber(7)
-  $1814.Money get amount => $_getN(6);
+  $1815.Money get amount => $_getN(6);
   @$pb.TagNumber(7)
-  set amount($1814.Money v) { setField(7, v); }
+  set amount($1815.Money v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAmount() => $_has(6);
   @$pb.TagNumber(7)
   void clearAmount() => clearField(7);
   @$pb.TagNumber(7)
-  $1814.Money ensureAmount() => $_ensure(6);
+  $1815.Money ensureAmount() => $_ensure(6);
 }
 
 /// Common metadata about a transaction.
 class AccountManagerTransactionInfo_AccountManagerTransactionMetadata extends $pb.GeneratedMessage {
   factory AccountManagerTransactionInfo_AccountManagerTransactionMetadata({
-    $1775.Timestamp? transactionTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? transactionTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? retrievalReferenceNumber,
     $core.String? initiationMode,
     $core.String? purposeCode,
@@ -210,9 +210,9 @@ class AccountManagerTransactionInfo_AccountManagerTransactionMetadata extends $p
   factory AccountManagerTransactionInfo_AccountManagerTransactionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountManagerTransactionInfo.AccountManagerTransactionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.accountmanager.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'transactionTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'transactionTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'retrievalReferenceNumber')
     ..aOS(5, _omitFieldNames ? '' : 'initiationMode')
     ..aOS(6, _omitFieldNames ? '' : 'purposeCode')
@@ -242,41 +242,41 @@ class AccountManagerTransactionInfo_AccountManagerTransactionMetadata extends $p
 
   /// The time at which the transaction took place.
   @$pb.TagNumber(1)
-  $1775.Timestamp get transactionTime => $_getN(0);
+  $1776.Timestamp get transactionTime => $_getN(0);
   @$pb.TagNumber(1)
-  set transactionTime($1775.Timestamp v) { setField(1, v); }
+  set transactionTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTransactionTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearTransactionTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureTransactionTime() => $_ensure(0);
+  $1776.Timestamp ensureTransactionTime() => $_ensure(0);
 
   /// Output only. The time at which the transaction resource was created by
   /// the account manager.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which the transaction resource was last updated
   /// by the account manager.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Retrieval reference number (RRN) for the transaction.
   @$pb.TagNumber(4)
@@ -573,7 +573,7 @@ class AccountManagerParticipant extends $pb.GeneratedMessage {
   factory AccountManagerParticipant({
     $core.String? paymentAddress,
     AccountManagerParticipant_Persona? persona,
-    $4588.AccountReference? account,
+    $4590.AccountReference? account,
   }) {
     final $result = create();
     if (paymentAddress != null) {
@@ -594,7 +594,7 @@ class AccountManagerParticipant extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountManagerParticipant', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.accountmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'paymentAddress')
     ..e<AccountManagerParticipant_Persona>(2, _omitFieldNames ? '' : 'persona', $pb.PbFieldType.OE, defaultOrMaker: AccountManagerParticipant_Persona.PERSONA_UNSPECIFIED, valueOf: AccountManagerParticipant_Persona.valueOf, enumValues: AccountManagerParticipant_Persona.values)
-    ..aOM<$4588.AccountReference>(3, _omitFieldNames ? '' : 'account', subBuilder: $4588.AccountReference.create)
+    ..aOM<$4590.AccountReference>(3, _omitFieldNames ? '' : 'account', subBuilder: $4590.AccountReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -642,15 +642,15 @@ class AccountManagerParticipant extends $pb.GeneratedMessage {
 
   /// Unique identification of an account.
   @$pb.TagNumber(3)
-  $4588.AccountReference get account => $_getN(2);
+  $4590.AccountReference get account => $_getN(2);
   @$pb.TagNumber(3)
-  set account($4588.AccountReference v) { setField(3, v); }
+  set account($4590.AccountReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAccount() => $_has(2);
   @$pb.TagNumber(3)
   void clearAccount() => clearField(3);
   @$pb.TagNumber(3)
-  $4588.AccountReference ensureAccount() => $_ensure(2);
+  $4590.AccountReference ensureAccount() => $_ensure(2);
 }
 
 /// A merchant in a transaction processed by the account manager.
@@ -725,7 +725,7 @@ class AccountManagerMerchantInfo extends $pb.GeneratedMessage {
 class AccountManagerTransactionReconciliationInfo extends $pb.GeneratedMessage {
   factory AccountManagerTransactionReconciliationInfo({
     AccountManagerTransactionReconciliationInfo_ReconciliationState? state,
-    $1775.Timestamp? reconciliationTime,
+    $1776.Timestamp? reconciliationTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -742,7 +742,7 @@ class AccountManagerTransactionReconciliationInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountManagerTransactionReconciliationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.accountmanager.v1'), createEmptyInstance: create)
     ..e<AccountManagerTransactionReconciliationInfo_ReconciliationState>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AccountManagerTransactionReconciliationInfo_ReconciliationState.RECONCILIATION_STATE_UNSPECIFIED, valueOf: AccountManagerTransactionReconciliationInfo_ReconciliationState.valueOf, enumValues: AccountManagerTransactionReconciliationInfo_ReconciliationState.values)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'reconciliationTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'reconciliationTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -779,15 +779,15 @@ class AccountManagerTransactionReconciliationInfo extends $pb.GeneratedMessage {
 
   /// Time at which reconciliation was performed for the transaction.
   @$pb.TagNumber(2)
-  $1775.Timestamp get reconciliationTime => $_getN(1);
+  $1776.Timestamp get reconciliationTime => $_getN(1);
   @$pb.TagNumber(2)
-  set reconciliationTime($1775.Timestamp v) { setField(2, v); }
+  set reconciliationTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReconciliationTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReconciliationTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureReconciliationTime() => $_ensure(1);
+  $1776.Timestamp ensureReconciliationTime() => $_ensure(1);
 }
 
 /// Request for the `ExportAccountManagerTransactions` method.
@@ -795,8 +795,8 @@ class ExportAccountManagerTransactionsRequest extends $pb.GeneratedMessage {
   factory ExportAccountManagerTransactionsRequest({
     $core.String? parent,
     AccountManagerTransactionType? transactionType,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (parent != null) {
@@ -820,8 +820,8 @@ class ExportAccountManagerTransactionsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportAccountManagerTransactionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.accountmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..e<AccountManagerTransactionType>(3, _omitFieldNames ? '' : 'transactionType', $pb.PbFieldType.OE, defaultOrMaker: AccountManagerTransactionType.ACCOUNT_MANAGER_TRANSACTION_TYPE_UNSPECIFIED, valueOf: AccountManagerTransactionType.valueOf, enumValues: AccountManagerTransactionType.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -878,27 +878,27 @@ class ExportAccountManagerTransactionsRequest extends $pb.GeneratedMessage {
 
   /// Optional. The start time for the query.
   @$pb.TagNumber(4)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(4)
-  set startTime($1775.Timestamp v) { setField(4, v); }
+  set startTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Optional. The end time for the query.
   @$pb.TagNumber(5)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(5)
-  set endTime($1775.Timestamp v) { setField(5, v); }
+  set endTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 }
 
 /// Request for the `ListAccountManagerTransactions` method. Callers can request

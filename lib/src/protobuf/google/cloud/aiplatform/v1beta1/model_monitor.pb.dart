@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'explanation.pb.dart' as $4285;
-import 'model_monitoring_spec.pb.dart' as $4306;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'explanation.pb.dart' as $4286;
+import 'model_monitoring_spec.pb.dart' as $4307;
 
 /// Model in Vertex AI Model Registry.
 class ModelMonitor_ModelMonitoringTarget_VertexModelSource extends $pb.GeneratedMessage {
@@ -167,14 +167,14 @@ class ModelMonitor extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     ModelMonitor_ModelMonitoringTarget? modelMonitoringTarget,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     ModelMonitoringSchema? modelMonitoringSchema,
-    $4306.ModelMonitoringInput? trainingDataset,
-    $4306.ModelMonitoringObjectiveSpec_TabularObjective? tabularObjective,
-    $4306.ModelMonitoringNotificationSpec? notificationSpec,
-    $4306.ModelMonitoringOutputSpec? outputSpec,
-    $4285.ExplanationSpec? explanationSpec,
+    $4307.ModelMonitoringInput? trainingDataset,
+    $4307.ModelMonitoringObjectiveSpec_TabularObjective? tabularObjective,
+    $4307.ModelMonitoringNotificationSpec? notificationSpec,
+    $4307.ModelMonitoringOutputSpec? outputSpec,
+    $4286.ExplanationSpec? explanationSpec,
     $core.bool? satisfiesPzs,
     $core.bool? satisfiesPzi,
   }) {
@@ -233,14 +233,14 @@ class ModelMonitor extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOM<ModelMonitor_ModelMonitoringTarget>(3, _omitFieldNames ? '' : 'modelMonitoringTarget', subBuilder: ModelMonitor_ModelMonitoringTarget.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ModelMonitoringSchema>(9, _omitFieldNames ? '' : 'modelMonitoringSchema', subBuilder: ModelMonitoringSchema.create)
-    ..aOM<$4306.ModelMonitoringInput>(10, _omitFieldNames ? '' : 'trainingDataset', subBuilder: $4306.ModelMonitoringInput.create)
-    ..aOM<$4306.ModelMonitoringObjectiveSpec_TabularObjective>(11, _omitFieldNames ? '' : 'tabularObjective', subBuilder: $4306.ModelMonitoringObjectiveSpec_TabularObjective.create)
-    ..aOM<$4306.ModelMonitoringNotificationSpec>(12, _omitFieldNames ? '' : 'notificationSpec', subBuilder: $4306.ModelMonitoringNotificationSpec.create)
-    ..aOM<$4306.ModelMonitoringOutputSpec>(13, _omitFieldNames ? '' : 'outputSpec', subBuilder: $4306.ModelMonitoringOutputSpec.create)
-    ..aOM<$4285.ExplanationSpec>(16, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4285.ExplanationSpec.create)
+    ..aOM<$4307.ModelMonitoringInput>(10, _omitFieldNames ? '' : 'trainingDataset', subBuilder: $4307.ModelMonitoringInput.create)
+    ..aOM<$4307.ModelMonitoringObjectiveSpec_TabularObjective>(11, _omitFieldNames ? '' : 'tabularObjective', subBuilder: $4307.ModelMonitoringObjectiveSpec_TabularObjective.create)
+    ..aOM<$4307.ModelMonitoringNotificationSpec>(12, _omitFieldNames ? '' : 'notificationSpec', subBuilder: $4307.ModelMonitoringNotificationSpec.create)
+    ..aOM<$4307.ModelMonitoringOutputSpec>(13, _omitFieldNames ? '' : 'outputSpec', subBuilder: $4307.ModelMonitoringOutputSpec.create)
+    ..aOM<$4286.ExplanationSpec>(16, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4286.ExplanationSpec.create)
     ..aOB(17, _omitFieldNames ? '' : 'satisfiesPzs')
     ..aOB(18, _omitFieldNames ? '' : 'satisfiesPzi')
     ..hasRequiredFields = false
@@ -309,27 +309,27 @@ class ModelMonitor extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this ModelMonitor was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Timestamp when this ModelMonitor was updated most recently.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Monitoring Schema is to specify the model's features, prediction outputs
   /// and ground truth properties. It is used to extract pertinent data from the
@@ -352,68 +352,68 @@ class ModelMonitor extends $pb.GeneratedMessage {
   /// Optional training dataset used to train the model.
   /// It can serve as a reference dataset to identify changes in production.
   @$pb.TagNumber(10)
-  $4306.ModelMonitoringInput get trainingDataset => $_getN(6);
+  $4307.ModelMonitoringInput get trainingDataset => $_getN(6);
   @$pb.TagNumber(10)
-  set trainingDataset($4306.ModelMonitoringInput v) { setField(10, v); }
+  set trainingDataset($4307.ModelMonitoringInput v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTrainingDataset() => $_has(6);
   @$pb.TagNumber(10)
   void clearTrainingDataset() => clearField(10);
   @$pb.TagNumber(10)
-  $4306.ModelMonitoringInput ensureTrainingDataset() => $_ensure(6);
+  $4307.ModelMonitoringInput ensureTrainingDataset() => $_ensure(6);
 
   /// Optional default tabular model monitoring objective.
   @$pb.TagNumber(11)
-  $4306.ModelMonitoringObjectiveSpec_TabularObjective get tabularObjective => $_getN(7);
+  $4307.ModelMonitoringObjectiveSpec_TabularObjective get tabularObjective => $_getN(7);
   @$pb.TagNumber(11)
-  set tabularObjective($4306.ModelMonitoringObjectiveSpec_TabularObjective v) { setField(11, v); }
+  set tabularObjective($4307.ModelMonitoringObjectiveSpec_TabularObjective v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTabularObjective() => $_has(7);
   @$pb.TagNumber(11)
   void clearTabularObjective() => clearField(11);
   @$pb.TagNumber(11)
-  $4306.ModelMonitoringObjectiveSpec_TabularObjective ensureTabularObjective() => $_ensure(7);
+  $4307.ModelMonitoringObjectiveSpec_TabularObjective ensureTabularObjective() => $_ensure(7);
 
   /// Optional default notification spec, it can be overridden in the
   /// ModelMonitoringJob notification spec.
   @$pb.TagNumber(12)
-  $4306.ModelMonitoringNotificationSpec get notificationSpec => $_getN(8);
+  $4307.ModelMonitoringNotificationSpec get notificationSpec => $_getN(8);
   @$pb.TagNumber(12)
-  set notificationSpec($4306.ModelMonitoringNotificationSpec v) { setField(12, v); }
+  set notificationSpec($4307.ModelMonitoringNotificationSpec v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasNotificationSpec() => $_has(8);
   @$pb.TagNumber(12)
   void clearNotificationSpec() => clearField(12);
   @$pb.TagNumber(12)
-  $4306.ModelMonitoringNotificationSpec ensureNotificationSpec() => $_ensure(8);
+  $4307.ModelMonitoringNotificationSpec ensureNotificationSpec() => $_ensure(8);
 
   /// Optional default monitoring metrics/logs export spec, it can be overridden
   /// in the ModelMonitoringJob output spec.
   /// If not specified, a default Google Cloud Storage bucket will be created
   /// under your project.
   @$pb.TagNumber(13)
-  $4306.ModelMonitoringOutputSpec get outputSpec => $_getN(9);
+  $4307.ModelMonitoringOutputSpec get outputSpec => $_getN(9);
   @$pb.TagNumber(13)
-  set outputSpec($4306.ModelMonitoringOutputSpec v) { setField(13, v); }
+  set outputSpec($4307.ModelMonitoringOutputSpec v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasOutputSpec() => $_has(9);
   @$pb.TagNumber(13)
   void clearOutputSpec() => clearField(13);
   @$pb.TagNumber(13)
-  $4306.ModelMonitoringOutputSpec ensureOutputSpec() => $_ensure(9);
+  $4307.ModelMonitoringOutputSpec ensureOutputSpec() => $_ensure(9);
 
   /// Optional model explanation spec. It is used for feature attribution
   /// monitoring.
   @$pb.TagNumber(16)
-  $4285.ExplanationSpec get explanationSpec => $_getN(10);
+  $4286.ExplanationSpec get explanationSpec => $_getN(10);
   @$pb.TagNumber(16)
-  set explanationSpec($4285.ExplanationSpec v) { setField(16, v); }
+  set explanationSpec($4286.ExplanationSpec v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasExplanationSpec() => $_has(10);
   @$pb.TagNumber(16)
   void clearExplanationSpec() => clearField(16);
   @$pb.TagNumber(16)
-  $4285.ExplanationSpec ensureExplanationSpec() => $_ensure(10);
+  $4286.ExplanationSpec ensureExplanationSpec() => $_ensure(10);
 
   /// Output only. Reserved for future use.
   @$pb.TagNumber(17)

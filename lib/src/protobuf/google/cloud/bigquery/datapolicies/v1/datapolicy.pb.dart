@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
 import 'datapolicy.pbenum.dart';
 
 export 'datapolicy.pbenum.dart';
@@ -93,7 +93,7 @@ class CreateDataPolicyRequest extends $pb.GeneratedMessage {
 class UpdateDataPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateDataPolicyRequest({
     DataPolicy? dataPolicy,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataPolicy != null) {
@@ -110,7 +110,7 @@ class UpdateDataPolicyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.datapolicies.v1'), createEmptyInstance: create)
     ..aOM<DataPolicy>(1, _omitFieldNames ? '' : 'dataPolicy', subBuilder: DataPolicy.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -157,15 +157,15 @@ class UpdateDataPolicyRequest extends $pb.GeneratedMessage {
   ///
   ///  Updates to the `name` and `dataPolicyId` fields are not allowed.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the RenameDataPolicy method.

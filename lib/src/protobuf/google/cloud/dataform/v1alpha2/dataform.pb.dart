@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../type/interval.pb.dart' as $4257;
 import 'dataform.pbenum.dart';
 
 export 'dataform.pbenum.dart';
@@ -520,7 +520,7 @@ class CreateRepositoryRequest extends $pb.GeneratedMessage {
 /// `UpdateRepository` request message.
 class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   factory UpdateRepositoryRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Repository? repository,
   }) {
     final $result = create();
@@ -537,7 +537,7 @@ class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   factory UpdateRepositoryRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRepositoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataform.v1alpha2'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Repository>(2, _omitFieldNames ? '' : 'repository', subBuilder: Repository.create)
     ..hasRequiredFields = false
   ;
@@ -566,15 +566,15 @@ class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   /// Optional. Specifies the fields to be updated in the repository. If left unset,
   /// all fields will be updated.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The repository to update.
   @$pb.TagNumber(2)
@@ -5028,7 +5028,7 @@ class WorkflowInvocation extends $pb.GeneratedMessage {
     $core.String? compilationResult,
     WorkflowInvocation_InvocationConfig? invocationConfig,
     WorkflowInvocation_State? state,
-    $4256.Interval? invocationTiming,
+    $4257.Interval? invocationTiming,
   }) {
     final $result = create();
     if (name != null) {
@@ -5057,7 +5057,7 @@ class WorkflowInvocation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'compilationResult')
     ..aOM<WorkflowInvocation_InvocationConfig>(3, _omitFieldNames ? '' : 'invocationConfig', subBuilder: WorkflowInvocation_InvocationConfig.create)
     ..e<WorkflowInvocation_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: WorkflowInvocation_State.STATE_UNSPECIFIED, valueOf: WorkflowInvocation_State.valueOf, enumValues: WorkflowInvocation_State.values)
-    ..aOM<$4256.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4257.Interval.create)
     ..hasRequiredFields = false
   ;
 
@@ -5127,15 +5127,15 @@ class WorkflowInvocation extends $pb.GeneratedMessage {
 
   /// Output only. This workflow invocation's timing details.
   @$pb.TagNumber(5)
-  $4256.Interval get invocationTiming => $_getN(4);
+  $4257.Interval get invocationTiming => $_getN(4);
   @$pb.TagNumber(5)
-  set invocationTiming($4256.Interval v) { setField(5, v); }
+  set invocationTiming($4257.Interval v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInvocationTiming() => $_has(4);
   @$pb.TagNumber(5)
   void clearInvocationTiming() => clearField(5);
   @$pb.TagNumber(5)
-  $4256.Interval ensureInvocationTiming() => $_ensure(4);
+  $4257.Interval ensureInvocationTiming() => $_ensure(4);
 }
 
 /// `ListWorkflowInvocations` request message.
@@ -5581,7 +5581,7 @@ class WorkflowInvocationAction extends $pb.GeneratedMessage {
     Target? target,
     Target? canonicalTarget,
     WorkflowInvocationAction_State? state,
-    $4256.Interval? invocationTiming,
+    $4257.Interval? invocationTiming,
     WorkflowInvocationAction_BigQueryAction? bigqueryAction,
     $core.String? failureReason,
   }) {
@@ -5614,7 +5614,7 @@ class WorkflowInvocationAction extends $pb.GeneratedMessage {
     ..aOM<Target>(1, _omitFieldNames ? '' : 'target', subBuilder: Target.create)
     ..aOM<Target>(2, _omitFieldNames ? '' : 'canonicalTarget', subBuilder: Target.create)
     ..e<WorkflowInvocationAction_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: WorkflowInvocationAction_State.PENDING, valueOf: WorkflowInvocationAction_State.valueOf, enumValues: WorkflowInvocationAction_State.values)
-    ..aOM<$4256.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4257.Interval.create)
     ..aOM<WorkflowInvocationAction_BigQueryAction>(6, _omitFieldNames ? '' : 'bigqueryAction', subBuilder: WorkflowInvocationAction_BigQueryAction.create)
     ..aOS(7, _omitFieldNames ? '' : 'failureReason')
     ..hasRequiredFields = false
@@ -5682,15 +5682,15 @@ class WorkflowInvocationAction extends $pb.GeneratedMessage {
   /// `end_time` will be set if the action is in [SUCCEEDED, CANCELLED, FAILED]
   /// state.
   @$pb.TagNumber(5)
-  $4256.Interval get invocationTiming => $_getN(3);
+  $4257.Interval get invocationTiming => $_getN(3);
   @$pb.TagNumber(5)
-  set invocationTiming($4256.Interval v) { setField(5, v); }
+  set invocationTiming($4257.Interval v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInvocationTiming() => $_has(3);
   @$pb.TagNumber(5)
   void clearInvocationTiming() => clearField(5);
   @$pb.TagNumber(5)
-  $4256.Interval ensureInvocationTiming() => $_ensure(3);
+  $4257.Interval ensureInvocationTiming() => $_ensure(3);
 
   /// Output only. The workflow action's bigquery action details.
   @$pb.TagNumber(6)

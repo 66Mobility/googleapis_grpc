@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/dates.pb.dart' as $3315;
-import '../enums/invoice_type.pbenum.dart' as $3741;
-import '../enums/month_of_year.pbenum.dart' as $3307;
+import '../common/dates.pb.dart' as $3316;
+import '../enums/invoice_type.pbenum.dart' as $3742;
+import '../enums/month_of_year.pbenum.dart' as $3308;
 
 /// Represents a summarized view at account level.
 class Invoice_AccountSummary extends $pb.GeneratedMessage {
@@ -347,7 +347,7 @@ class Invoice_AccountSummary extends $pb.GeneratedMessage {
 /// Represents a summarized account budget billable cost.
 class Invoice_AccountBudgetSummary extends $pb.GeneratedMessage {
   factory Invoice_AccountBudgetSummary({
-    $3315.DateRange? billableActivityDateRange,
+    $3316.DateRange? billableActivityDateRange,
     $core.String? customer,
     $core.String? customerDescriptiveName,
     $core.String? accountBudget,
@@ -412,7 +412,7 @@ class Invoice_AccountBudgetSummary extends $pb.GeneratedMessage {
   factory Invoice_AccountBudgetSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Invoice.AccountBudgetSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..aOM<$3315.DateRange>(9, _omitFieldNames ? '' : 'billableActivityDateRange', subBuilder: $3315.DateRange.create)
+    ..aOM<$3316.DateRange>(9, _omitFieldNames ? '' : 'billableActivityDateRange', subBuilder: $3316.DateRange.create)
     ..aOS(10, _omitFieldNames ? '' : 'customer')
     ..aOS(11, _omitFieldNames ? '' : 'customerDescriptiveName')
     ..aOS(12, _omitFieldNames ? '' : 'accountBudget')
@@ -454,15 +454,15 @@ class Invoice_AccountBudgetSummary extends $pb.GeneratedMessage {
   /// within the service date range of this invoice. The end date is inclusive.
   /// This can be different from the account budget's start and end time.
   @$pb.TagNumber(9)
-  $3315.DateRange get billableActivityDateRange => $_getN(0);
+  $3316.DateRange get billableActivityDateRange => $_getN(0);
   @$pb.TagNumber(9)
-  set billableActivityDateRange($3315.DateRange v) { setField(9, v); }
+  set billableActivityDateRange($3316.DateRange v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasBillableActivityDateRange() => $_has(0);
   @$pb.TagNumber(9)
   void clearBillableActivityDateRange() => clearField(9);
   @$pb.TagNumber(9)
-  $3315.DateRange ensureBillableActivityDateRange() => $_ensure(0);
+  $3316.DateRange ensureBillableActivityDateRange() => $_ensure(0);
 
   ///  Output only. The resource name of the customer associated with this
   ///  account budget. This contains the customer ID, which appears on the
@@ -613,7 +613,7 @@ class Invoice_AccountBudgetSummary extends $pb.GeneratedMessage {
 /// additional details about invoice against which corrections are made.
 class Invoice_InvalidActivitySummary extends $pb.GeneratedMessage {
   factory Invoice_InvalidActivitySummary({
-    $3307.MonthOfYearEnum_MonthOfYear? originalMonthOfService,
+    $3308.MonthOfYearEnum_MonthOfYear? originalMonthOfService,
     $core.String? originalYearOfService,
     $core.String? originalInvoiceId,
     $core.String? originalAccountBudgetName,
@@ -646,7 +646,7 @@ class Invoice_InvalidActivitySummary extends $pb.GeneratedMessage {
   factory Invoice_InvalidActivitySummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Invoice.InvalidActivitySummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
-    ..e<$3307.MonthOfYearEnum_MonthOfYear>(1, _omitFieldNames ? '' : 'originalMonthOfService', $pb.PbFieldType.OE, defaultOrMaker: $3307.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $3307.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $3307.MonthOfYearEnum_MonthOfYear.values)
+    ..e<$3308.MonthOfYearEnum_MonthOfYear>(1, _omitFieldNames ? '' : 'originalMonthOfService', $pb.PbFieldType.OE, defaultOrMaker: $3308.MonthOfYearEnum_MonthOfYear.UNSPECIFIED, valueOf: $3308.MonthOfYearEnum_MonthOfYear.valueOf, enumValues: $3308.MonthOfYearEnum_MonthOfYear.values)
     ..aOS(2, _omitFieldNames ? '' : 'originalYearOfService')
     ..aOS(3, _omitFieldNames ? '' : 'originalInvoiceId')
     ..aOS(4, _omitFieldNames ? '' : 'originalAccountBudgetName')
@@ -679,9 +679,9 @@ class Invoice_InvalidActivitySummary extends $pb.GeneratedMessage {
   /// Output only. Original month of service related to this invalid activity
   /// credit.
   @$pb.TagNumber(1)
-  $3307.MonthOfYearEnum_MonthOfYear get originalMonthOfService => $_getN(0);
+  $3308.MonthOfYearEnum_MonthOfYear get originalMonthOfService => $_getN(0);
   @$pb.TagNumber(1)
-  set originalMonthOfService($3307.MonthOfYearEnum_MonthOfYear v) { setField(1, v); }
+  set originalMonthOfService($3308.MonthOfYearEnum_MonthOfYear v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOriginalMonthOfService() => $_has(0);
   @$pb.TagNumber(1)
@@ -748,8 +748,8 @@ class Invoice_InvalidActivitySummary extends $pb.GeneratedMessage {
 class Invoice extends $pb.GeneratedMessage {
   factory Invoice({
     $core.String? resourceName,
-    $3741.InvoiceTypeEnum_InvoiceType? type,
-    $3315.DateRange? serviceDateRange,
+    $3742.InvoiceTypeEnum_InvoiceType? type,
+    $3316.DateRange? serviceDateRange,
     $core.Iterable<Invoice_AccountBudgetSummary>? accountBudgetSummaries,
     $fixnum.Int64? adjustmentsSubtotalAmountMicros,
     $fixnum.Int64? adjustmentsTaxAmountMicros,
@@ -865,8 +865,8 @@ class Invoice extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Invoice', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3741.InvoiceTypeEnum_InvoiceType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3741.InvoiceTypeEnum_InvoiceType.UNSPECIFIED, valueOf: $3741.InvoiceTypeEnum_InvoiceType.valueOf, enumValues: $3741.InvoiceTypeEnum_InvoiceType.values)
-    ..aOM<$3315.DateRange>(9, _omitFieldNames ? '' : 'serviceDateRange', subBuilder: $3315.DateRange.create)
+    ..e<$3742.InvoiceTypeEnum_InvoiceType>(3, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $3742.InvoiceTypeEnum_InvoiceType.UNSPECIFIED, valueOf: $3742.InvoiceTypeEnum_InvoiceType.valueOf, enumValues: $3742.InvoiceTypeEnum_InvoiceType.values)
+    ..aOM<$3316.DateRange>(9, _omitFieldNames ? '' : 'serviceDateRange', subBuilder: $3316.DateRange.create)
     ..pc<Invoice_AccountBudgetSummary>(18, _omitFieldNames ? '' : 'accountBudgetSummaries', $pb.PbFieldType.PM, subBuilder: Invoice_AccountBudgetSummary.create)
     ..aInt64(19, _omitFieldNames ? '' : 'adjustmentsSubtotalAmountMicros')
     ..aInt64(20, _omitFieldNames ? '' : 'adjustmentsTaxAmountMicros')
@@ -931,9 +931,9 @@ class Invoice extends $pb.GeneratedMessage {
 
   /// Output only. The type of invoice.
   @$pb.TagNumber(3)
-  $3741.InvoiceTypeEnum_InvoiceType get type => $_getN(1);
+  $3742.InvoiceTypeEnum_InvoiceType get type => $_getN(1);
   @$pb.TagNumber(3)
-  set type($3741.InvoiceTypeEnum_InvoiceType v) { setField(3, v); }
+  set type($3742.InvoiceTypeEnum_InvoiceType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(3)
@@ -942,15 +942,15 @@ class Invoice extends $pb.GeneratedMessage {
   /// Output only. The service period date range of this invoice. The end date is
   /// inclusive.
   @$pb.TagNumber(9)
-  $3315.DateRange get serviceDateRange => $_getN(2);
+  $3316.DateRange get serviceDateRange => $_getN(2);
   @$pb.TagNumber(9)
-  set serviceDateRange($3315.DateRange v) { setField(9, v); }
+  set serviceDateRange($3316.DateRange v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasServiceDateRange() => $_has(2);
   @$pb.TagNumber(9)
   void clearServiceDateRange() => clearField(9);
   @$pb.TagNumber(9)
-  $3315.DateRange ensureServiceDateRange() => $_ensure(2);
+  $3316.DateRange ensureServiceDateRange() => $_ensure(2);
 
   /// Output only. The list of summarized account budget information associated
   /// with this invoice.

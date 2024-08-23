@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// A top-level description of an API.
 /// Produced by producers and are commitments to provide services.
@@ -22,8 +22,8 @@ class Api extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? availability,
     $core.String? recommendedVersion,
     $core.String? recommendedDeployment,
@@ -71,8 +71,8 @@ class Api extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'availability')
     ..aOS(7, _omitFieldNames ? '' : 'recommendedVersion')
     ..aOS(8, _omitFieldNames ? '' : 'recommendedDeployment')
@@ -134,27 +134,27 @@ class Api extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Last update timestamp.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// A user-definable description of the availability of this service.
   /// Format: free-form, but we expect single words that describe availability,
@@ -221,8 +221,8 @@ class ApiVersion extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? description,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? state,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? annotations,
@@ -262,8 +262,8 @@ class ApiVersion extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'state')
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'ApiVersion.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.apigeeregistry.v1'))
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'annotations', entryClassName: 'ApiVersion.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.apigeeregistry.v1'))
@@ -323,27 +323,27 @@ class ApiVersion extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Last update timestamp.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// A user-definable description of the lifecycle phase of this API version.
   /// Format: free-form, but we expect single words that describe API maturity,
@@ -396,9 +396,9 @@ class ApiSpec extends $pb.GeneratedMessage {
     $core.String? filename,
     $core.String? description,
     $core.String? revisionId,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? revisionCreateTime,
-    $1775.Timestamp? revisionUpdateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? revisionCreateTime,
+    $1776.Timestamp? revisionUpdateTime,
     $core.String? mimeType,
     $core.int? sizeBytes,
     $core.String? hash,
@@ -461,9 +461,9 @@ class ApiSpec extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filename')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'mimeType')
     ..a<$core.int>(9, _omitFieldNames ? '' : 'sizeBytes', $pb.PbFieldType.O3)
     ..aOS(10, _omitFieldNames ? '' : 'hash')
@@ -539,39 +539,39 @@ class ApiSpec extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp; when the spec resource was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Revision creation timestamp; when the represented revision was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get revisionCreateTime => $_getN(5);
+  $1776.Timestamp get revisionCreateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set revisionCreateTime($1775.Timestamp v) { setField(6, v); }
+  set revisionCreateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRevisionCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearRevisionCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureRevisionCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureRevisionCreateTime() => $_ensure(5);
 
   /// Output only. Last update timestamp: when the represented revision was last modified.
   @$pb.TagNumber(7)
-  $1775.Timestamp get revisionUpdateTime => $_getN(6);
+  $1776.Timestamp get revisionUpdateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set revisionUpdateTime($1775.Timestamp v) { setField(7, v); }
+  set revisionUpdateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRevisionUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearRevisionUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
 
   /// A style (format) descriptor for this spec that is specified as a Media Type
   /// (https://en.wikipedia.org/wiki/Media_type). Possible values include
@@ -672,9 +672,9 @@ class ApiDeployment extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     $core.String? revisionId,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? revisionCreateTime,
-    $1775.Timestamp? revisionUpdateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? revisionCreateTime,
+    $1776.Timestamp? revisionUpdateTime,
     $core.String? apiSpecRevision,
     $core.String? endpointUri,
     $core.String? externalChannelUri,
@@ -737,9 +737,9 @@ class ApiDeployment extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'revisionUpdateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'apiSpecRevision')
     ..aOS(9, _omitFieldNames ? '' : 'endpointUri')
     ..aOS(10, _omitFieldNames ? '' : 'externalChannelUri')
@@ -815,39 +815,39 @@ class ApiDeployment extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp; when the deployment resource was created.
   @$pb.TagNumber(5)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1775.Timestamp v) { setField(5, v); }
+  set createTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Revision creation timestamp; when the represented revision was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get revisionCreateTime => $_getN(5);
+  $1776.Timestamp get revisionCreateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set revisionCreateTime($1775.Timestamp v) { setField(6, v); }
+  set revisionCreateTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRevisionCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearRevisionCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureRevisionCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureRevisionCreateTime() => $_ensure(5);
 
   /// Output only. Last update timestamp: when the represented revision was last modified.
   @$pb.TagNumber(7)
-  $1775.Timestamp get revisionUpdateTime => $_getN(6);
+  $1776.Timestamp get revisionUpdateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set revisionUpdateTime($1775.Timestamp v) { setField(7, v); }
+  set revisionUpdateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRevisionUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearRevisionUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureRevisionUpdateTime() => $_ensure(6);
 
   /// The full resource name (including revision ID) of the spec of the API being
   /// served by the deployment. Changes to this value will update the revision.
@@ -940,8 +940,8 @@ class ApiDeployment extends $pb.GeneratedMessage {
 class Artifact extends $pb.GeneratedMessage {
   factory Artifact({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? mimeType,
     $core.int? sizeBytes,
     $core.String? hash,
@@ -977,8 +977,8 @@ class Artifact extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Artifact', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.apigeeregistry.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'mimeType')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'sizeBytes', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'hash')
@@ -1019,27 +1019,27 @@ class Artifact extends $pb.GeneratedMessage {
 
   /// Output only. Creation timestamp.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Last update timestamp.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// A content type specifier for the artifact.
   /// Content type specifiers are Media Types

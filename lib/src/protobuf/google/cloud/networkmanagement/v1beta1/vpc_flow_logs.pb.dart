@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
 import 'vpc_flow_logs_config.pb.dart' as $1140;
 
 /// Request for the `ListVpcFlowLogsConfigs` method.
@@ -343,7 +343,7 @@ class CreateVpcFlowLogsConfigRequest extends $pb.GeneratedMessage {
 /// Request for the `UpdateVpcFlowLogsConfig` method.
 class UpdateVpcFlowLogsConfigRequest extends $pb.GeneratedMessage {
   factory UpdateVpcFlowLogsConfigRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     $1140.VpcFlowLogsConfig? vpcFlowLogsConfig,
   }) {
     final $result = create();
@@ -360,7 +360,7 @@ class UpdateVpcFlowLogsConfigRequest extends $pb.GeneratedMessage {
   factory UpdateVpcFlowLogsConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateVpcFlowLogsConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.networkmanagement.v1beta1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<$1140.VpcFlowLogsConfig>(2, _omitFieldNames ? '' : 'vpcFlowLogsConfig', subBuilder: $1140.VpcFlowLogsConfig.create)
     ..hasRequiredFields = false
   ;
@@ -389,15 +389,15 @@ class UpdateVpcFlowLogsConfigRequest extends $pb.GeneratedMessage {
   /// Required. Mask of fields to update. At least one path must be supplied in
   /// this field.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. Only fields specified in update_mask are updated.
   @$pb.TagNumber(2)

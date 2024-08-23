@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/interval.pb.dart' as $4256;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/interval.pb.dart' as $4257;
 import 'dataform.pbenum.dart';
 
 export 'dataform.pbenum.dart';
@@ -803,7 +803,7 @@ class CreateRepositoryRequest extends $pb.GeneratedMessage {
 /// `UpdateRepository` request message.
 class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   factory UpdateRepositoryRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     Repository? repository,
   }) {
     final $result = create();
@@ -820,7 +820,7 @@ class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   factory UpdateRepositoryRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateRepositoryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<Repository>(2, _omitFieldNames ? '' : 'repository', subBuilder: Repository.create)
     ..hasRequiredFields = false
   ;
@@ -849,15 +849,15 @@ class UpdateRepositoryRequest extends $pb.GeneratedMessage {
   /// Optional. Specifies the fields to be updated in the repository. If left
   /// unset, all fields will be updated.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The repository to update.
   @$pb.TagNumber(2)
@@ -1680,7 +1680,7 @@ class FetchRepositoryHistoryResponse extends $pb.GeneratedMessage {
 /// Represents a single commit log.
 class CommitLogEntry extends $pb.GeneratedMessage {
   factory CommitLogEntry({
-    $1775.Timestamp? commitTime,
+    $1776.Timestamp? commitTime,
     $core.String? commitSha,
     CommitAuthor? author,
     $core.String? commitMessage,
@@ -1705,7 +1705,7 @@ class CommitLogEntry extends $pb.GeneratedMessage {
   factory CommitLogEntry.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommitLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'commitTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'commitTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'commitSha')
     ..aOM<CommitAuthor>(3, _omitFieldNames ? '' : 'author', subBuilder: CommitAuthor.create)
     ..aOS(4, _omitFieldNames ? '' : 'commitMessage')
@@ -1735,15 +1735,15 @@ class CommitLogEntry extends $pb.GeneratedMessage {
 
   /// Commit timestamp.
   @$pb.TagNumber(1)
-  $1775.Timestamp get commitTime => $_getN(0);
+  $1776.Timestamp get commitTime => $_getN(0);
   @$pb.TagNumber(1)
-  set commitTime($1775.Timestamp v) { setField(1, v); }
+  set commitTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommitTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommitTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCommitTime() => $_ensure(0);
+  $1776.Timestamp ensureCommitTime() => $_ensure(0);
 
   /// The commit SHA for this commit log entry.
   @$pb.TagNumber(2)
@@ -4348,9 +4348,9 @@ enum ReleaseConfig_ScheduledReleaseRecord_Result {
 /// config.
 class ReleaseConfig_ScheduledReleaseRecord extends $pb.GeneratedMessage {
   factory ReleaseConfig_ScheduledReleaseRecord({
-    $1775.Timestamp? releaseTime,
+    $1776.Timestamp? releaseTime,
     $core.String? compilationResult,
-    $1795.Status? errorStatus,
+    $1796.Status? errorStatus,
   }) {
     final $result = create();
     if (releaseTime != null) {
@@ -4375,9 +4375,9 @@ class ReleaseConfig_ScheduledReleaseRecord extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReleaseConfig.ScheduledReleaseRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'releaseTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'releaseTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'compilationResult')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -4407,15 +4407,15 @@ class ReleaseConfig_ScheduledReleaseRecord extends $pb.GeneratedMessage {
 
   /// The timestamp of this release attempt.
   @$pb.TagNumber(1)
-  $1775.Timestamp get releaseTime => $_getN(0);
+  $1776.Timestamp get releaseTime => $_getN(0);
   @$pb.TagNumber(1)
-  set releaseTime($1775.Timestamp v) { setField(1, v); }
+  set releaseTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReleaseTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearReleaseTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureReleaseTime() => $_ensure(0);
+  $1776.Timestamp ensureReleaseTime() => $_ensure(0);
 
   /// The name of the created compilation result, if one was successfully
   /// created. Must be in the format
@@ -4432,15 +4432,15 @@ class ReleaseConfig_ScheduledReleaseRecord extends $pb.GeneratedMessage {
   /// The error status encountered upon this attempt to create the
   /// compilation result, if the attempt was unsuccessful.
   @$pb.TagNumber(3)
-  $1795.Status get errorStatus => $_getN(2);
+  $1796.Status get errorStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set errorStatus($1795.Status v) { setField(3, v); }
+  set errorStatus($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasErrorStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearErrorStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureErrorStatus() => $_ensure(2);
+  $1796.Status ensureErrorStatus() => $_ensure(2);
 }
 
 /// Represents a Dataform release configuration.
@@ -4898,7 +4898,7 @@ class CreateReleaseConfigRequest extends $pb.GeneratedMessage {
 /// `UpdateReleaseConfig` request message.
 class UpdateReleaseConfigRequest extends $pb.GeneratedMessage {
   factory UpdateReleaseConfigRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     ReleaseConfig? releaseConfig,
   }) {
     final $result = create();
@@ -4915,7 +4915,7 @@ class UpdateReleaseConfigRequest extends $pb.GeneratedMessage {
   factory UpdateReleaseConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateReleaseConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<ReleaseConfig>(2, _omitFieldNames ? '' : 'releaseConfig', subBuilder: ReleaseConfig.create)
     ..hasRequiredFields = false
   ;
@@ -4944,15 +4944,15 @@ class UpdateReleaseConfigRequest extends $pb.GeneratedMessage {
   /// Optional. Specifies the fields to be updated in the release config. If left
   /// unset, all fields will be updated.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The release config to update.
   @$pb.TagNumber(2)
@@ -6944,9 +6944,9 @@ enum WorkflowConfig_ScheduledExecutionRecord_Result {
 /// config.
 class WorkflowConfig_ScheduledExecutionRecord extends $pb.GeneratedMessage {
   factory WorkflowConfig_ScheduledExecutionRecord({
-    $1775.Timestamp? executionTime,
+    $1776.Timestamp? executionTime,
     $core.String? workflowInvocation,
-    $1795.Status? errorStatus,
+    $1796.Status? errorStatus,
   }) {
     final $result = create();
     if (executionTime != null) {
@@ -6971,9 +6971,9 @@ class WorkflowConfig_ScheduledExecutionRecord extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WorkflowConfig.ScheduledExecutionRecord', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataform.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'executionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'executionTime', subBuilder: $1776.Timestamp.create)
     ..aOS(2, _omitFieldNames ? '' : 'workflowInvocation')
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'errorStatus', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -7003,15 +7003,15 @@ class WorkflowConfig_ScheduledExecutionRecord extends $pb.GeneratedMessage {
 
   /// The timestamp of this execution attempt.
   @$pb.TagNumber(1)
-  $1775.Timestamp get executionTime => $_getN(0);
+  $1776.Timestamp get executionTime => $_getN(0);
   @$pb.TagNumber(1)
-  set executionTime($1775.Timestamp v) { setField(1, v); }
+  set executionTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasExecutionTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearExecutionTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureExecutionTime() => $_ensure(0);
+  $1776.Timestamp ensureExecutionTime() => $_ensure(0);
 
   /// The name of the created workflow invocation, if one was successfully
   /// created. Must be in the format
@@ -7028,15 +7028,15 @@ class WorkflowConfig_ScheduledExecutionRecord extends $pb.GeneratedMessage {
   /// The error status encountered upon this attempt to create the
   /// workflow invocation, if the attempt was unsuccessful.
   @$pb.TagNumber(3)
-  $1795.Status get errorStatus => $_getN(2);
+  $1796.Status get errorStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set errorStatus($1795.Status v) { setField(3, v); }
+  set errorStatus($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasErrorStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearErrorStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensureErrorStatus() => $_ensure(2);
+  $1796.Status ensureErrorStatus() => $_ensure(2);
 }
 
 /// Represents a Dataform workflow configuration.
@@ -7590,7 +7590,7 @@ class CreateWorkflowConfigRequest extends $pb.GeneratedMessage {
 /// `UpdateWorkflowConfig` request message.
 class UpdateWorkflowConfigRequest extends $pb.GeneratedMessage {
   factory UpdateWorkflowConfigRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     WorkflowConfig? workflowConfig,
   }) {
     final $result = create();
@@ -7607,7 +7607,7 @@ class UpdateWorkflowConfigRequest extends $pb.GeneratedMessage {
   factory UpdateWorkflowConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkflowConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<WorkflowConfig>(2, _omitFieldNames ? '' : 'workflowConfig', subBuilder: WorkflowConfig.create)
     ..hasRequiredFields = false
   ;
@@ -7636,15 +7636,15 @@ class UpdateWorkflowConfigRequest extends $pb.GeneratedMessage {
   /// Optional. Specifies the fields to be updated in the workflow config. If
   /// left unset, all fields will be updated.
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The workflow config to update.
   @$pb.TagNumber(2)
@@ -7724,7 +7724,7 @@ class WorkflowInvocation extends $pb.GeneratedMessage {
     $core.String? compilationResult,
     InvocationConfig? invocationConfig,
     WorkflowInvocation_State? state,
-    $4256.Interval? invocationTiming,
+    $4257.Interval? invocationTiming,
     $core.String? workflowConfig,
   }) {
     final $result = create();
@@ -7763,7 +7763,7 @@ class WorkflowInvocation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'compilationResult')
     ..aOM<InvocationConfig>(3, _omitFieldNames ? '' : 'invocationConfig', subBuilder: InvocationConfig.create)
     ..e<WorkflowInvocation_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: WorkflowInvocation_State.STATE_UNSPECIFIED, valueOf: WorkflowInvocation_State.valueOf, enumValues: WorkflowInvocation_State.values)
-    ..aOM<$4256.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4257.Interval.create)
     ..aOS(6, _omitFieldNames ? '' : 'workflowConfig')
     ..hasRequiredFields = false
   ;
@@ -7838,15 +7838,15 @@ class WorkflowInvocation extends $pb.GeneratedMessage {
 
   /// Output only. This workflow invocation's timing details.
   @$pb.TagNumber(5)
-  $4256.Interval get invocationTiming => $_getN(4);
+  $4257.Interval get invocationTiming => $_getN(4);
   @$pb.TagNumber(5)
-  set invocationTiming($4256.Interval v) { setField(5, v); }
+  set invocationTiming($4257.Interval v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInvocationTiming() => $_has(4);
   @$pb.TagNumber(5)
   void clearInvocationTiming() => clearField(5);
   @$pb.TagNumber(5)
-  $4256.Interval ensureInvocationTiming() => $_ensure(4);
+  $4257.Interval ensureInvocationTiming() => $_ensure(4);
 
   /// Immutable. The name of the workflow config to invoke. Must be in the
   /// format `projects/*/locations/*/repositories/*/workflowConfigs/*`.
@@ -8336,7 +8336,7 @@ class WorkflowInvocationAction extends $pb.GeneratedMessage {
     Target? target,
     Target? canonicalTarget,
     WorkflowInvocationAction_State? state,
-    $4256.Interval? invocationTiming,
+    $4257.Interval? invocationTiming,
     WorkflowInvocationAction_BigQueryAction? bigqueryAction,
     $core.String? failureReason,
   }) {
@@ -8369,7 +8369,7 @@ class WorkflowInvocationAction extends $pb.GeneratedMessage {
     ..aOM<Target>(1, _omitFieldNames ? '' : 'target', subBuilder: Target.create)
     ..aOM<Target>(2, _omitFieldNames ? '' : 'canonicalTarget', subBuilder: Target.create)
     ..e<WorkflowInvocationAction_State>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: WorkflowInvocationAction_State.PENDING, valueOf: WorkflowInvocationAction_State.valueOf, enumValues: WorkflowInvocationAction_State.values)
-    ..aOM<$4256.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4256.Interval.create)
+    ..aOM<$4257.Interval>(5, _omitFieldNames ? '' : 'invocationTiming', subBuilder: $4257.Interval.create)
     ..aOM<WorkflowInvocationAction_BigQueryAction>(6, _omitFieldNames ? '' : 'bigqueryAction', subBuilder: WorkflowInvocationAction_BigQueryAction.create)
     ..aOS(7, _omitFieldNames ? '' : 'failureReason')
     ..hasRequiredFields = false
@@ -8438,15 +8438,15 @@ class WorkflowInvocationAction extends $pb.GeneratedMessage {
   /// `end_time` will be set if the action is in [SUCCEEDED, CANCELLED, FAILED]
   /// state.
   @$pb.TagNumber(5)
-  $4256.Interval get invocationTiming => $_getN(3);
+  $4257.Interval get invocationTiming => $_getN(3);
   @$pb.TagNumber(5)
-  set invocationTiming($4256.Interval v) { setField(5, v); }
+  set invocationTiming($4257.Interval v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInvocationTiming() => $_has(3);
   @$pb.TagNumber(5)
   void clearInvocationTiming() => clearField(5);
   @$pb.TagNumber(5)
-  $4256.Interval ensureInvocationTiming() => $_ensure(3);
+  $4257.Interval ensureInvocationTiming() => $_ensure(3);
 
   /// Output only. The workflow action's bigquery action details.
   @$pb.TagNumber(6)

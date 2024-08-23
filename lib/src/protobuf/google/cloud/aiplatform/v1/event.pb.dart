@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'event.pbenum.dart';
 
 export 'event.pbenum.dart';
@@ -24,7 +24,7 @@ class Event extends $pb.GeneratedMessage {
   factory Event({
     $core.String? artifact,
     $core.String? execution,
-    $1775.Timestamp? eventTime,
+    $1776.Timestamp? eventTime,
     Event_Type? type,
     $core.Map<$core.String, $core.String>? labels,
   }) {
@@ -53,7 +53,7 @@ class Event extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'artifact')
     ..aOS(2, _omitFieldNames ? '' : 'execution')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'eventTime', subBuilder: $1776.Timestamp.create)
     ..e<Event_Type>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Event_Type.TYPE_UNSPECIFIED, valueOf: Event_Type.valueOf, enumValues: Event_Type.values)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'Event.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..hasRequiredFields = false
@@ -102,15 +102,15 @@ class Event extends $pb.GeneratedMessage {
 
   /// Output only. Time the Event occurred.
   @$pb.TagNumber(3)
-  $1775.Timestamp get eventTime => $_getN(2);
+  $1776.Timestamp get eventTime => $_getN(2);
   @$pb.TagNumber(3)
-  set eventTime($1775.Timestamp v) { setField(3, v); }
+  set eventTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEventTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEventTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureEventTime() => $_ensure(2);
+  $1776.Timestamp ensureEventTime() => $_ensure(2);
 
   /// Required. The type of the Event.
   @$pb.TagNumber(4)

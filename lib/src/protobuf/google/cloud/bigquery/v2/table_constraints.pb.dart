@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'table_reference.pb.dart' as $4390;
+import 'table_reference.pb.dart' as $4391;
 
 /// Represents the primary key constraint on a table's columns.
 class PrimaryKey extends $pb.GeneratedMessage {
@@ -133,7 +133,7 @@ class ColumnReference extends $pb.GeneratedMessage {
 class ForeignKey extends $pb.GeneratedMessage {
   factory ForeignKey({
     $core.String? name,
-    $4390.TableReference? referencedTable,
+    $4391.TableReference? referencedTable,
     $core.Iterable<ColumnReference>? columnReferences,
   }) {
     final $result = create();
@@ -154,7 +154,7 @@ class ForeignKey extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ForeignKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4390.TableReference>(2, _omitFieldNames ? '' : 'referencedTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(2, _omitFieldNames ? '' : 'referencedTable', subBuilder: $4391.TableReference.create)
     ..pc<ColumnReference>(3, _omitFieldNames ? '' : 'columnReferences', $pb.PbFieldType.PM, subBuilder: ColumnReference.create)
     ..hasRequiredFields = false
   ;
@@ -193,15 +193,15 @@ class ForeignKey extends $pb.GeneratedMessage {
   /// Required. The table that holds the primary key and is referenced by this
   /// foreign key.
   @$pb.TagNumber(2)
-  $4390.TableReference get referencedTable => $_getN(1);
+  $4391.TableReference get referencedTable => $_getN(1);
   @$pb.TagNumber(2)
-  set referencedTable($4390.TableReference v) { setField(2, v); }
+  set referencedTable($4391.TableReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReferencedTable() => $_has(1);
   @$pb.TagNumber(2)
   void clearReferencedTable() => clearField(2);
   @$pb.TagNumber(2)
-  $4390.TableReference ensureReferencedTable() => $_ensure(1);
+  $4391.TableReference ensureReferencedTable() => $_ensure(1);
 
   /// Required. The columns that compose the foreign key.
   @$pb.TagNumber(3)

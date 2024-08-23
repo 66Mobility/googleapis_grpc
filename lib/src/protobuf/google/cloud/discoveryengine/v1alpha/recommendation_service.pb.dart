@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
+import '../../../protobuf/struct.pb.dart' as $1735;
 import 'document.pb.dart' as $968;
 import 'user_event.pb.dart' as $991;
 
@@ -25,7 +25,7 @@ class RecommendRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? filter,
     $core.bool? validateOnly,
-    $core.Map<$core.String, $1734.Value>? params,
+    $core.Map<$core.String, $1735.Value>? params,
     $core.Map<$core.String, $core.String>? userLabels,
   }) {
     final $result = create();
@@ -62,7 +62,7 @@ class RecommendRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'filter')
     ..aOB(5, _omitFieldNames ? '' : 'validateOnly')
-    ..m<$core.String, $1734.Value>(6, _omitFieldNames ? '' : 'params', entryClassName: 'RecommendRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
+    ..m<$core.String, $1735.Value>(6, _omitFieldNames ? '' : 'params', entryClassName: 'RecommendRequest.ParamsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'userLabels', entryClassName: 'RecommendRequest.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
     ..hasRequiredFields = false
   ;
@@ -228,7 +228,7 @@ class RecommendRequest extends $pb.GeneratedMessage {
   ///     the `filter` field is interpreted according to the new,
   ///     attribute-based syntax.
   @$pb.TagNumber(6)
-  $core.Map<$core.String, $1734.Value> get params => $_getMap(5);
+  $core.Map<$core.String, $1735.Value> get params => $_getMap(5);
 
   ///  The user labels applied to a resource must meet the following requirements:
   ///
@@ -257,7 +257,7 @@ class RecommendResponse_RecommendationResult extends $pb.GeneratedMessage {
   factory RecommendResponse_RecommendationResult({
     $core.String? id,
     $968.Document? document,
-    $core.Map<$core.String, $1734.Value>? metadata,
+    $core.Map<$core.String, $1735.Value>? metadata,
   }) {
     final $result = create();
     if (id != null) {
@@ -278,7 +278,7 @@ class RecommendResponse_RecommendationResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecommendResponse.RecommendationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.discoveryengine.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOM<$968.Document>(2, _omitFieldNames ? '' : 'document', subBuilder: $968.Document.create)
-    ..m<$core.String, $1734.Value>(3, _omitFieldNames ? '' : 'metadata', entryClassName: 'RecommendResponse.RecommendationResult.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1734.Value.create, valueDefaultOrMaker: $1734.Value.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
+    ..m<$core.String, $1735.Value>(3, _omitFieldNames ? '' : 'metadata', entryClassName: 'RecommendResponse.RecommendationResult.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.Value.create, valueDefaultOrMaker: $1735.Value.getDefault, packageName: const $pb.PackageName('google.cloud.discoveryengine.v1alpha'))
     ..hasRequiredFields = false
   ;
 
@@ -334,7 +334,7 @@ class RecommendResponse_RecommendationResult extends $pb.GeneratedMessage {
   ///    `returnScore` is set to true in
   ///    [RecommendRequest.params][google.cloud.discoveryengine.v1alpha.RecommendRequest.params].
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $1734.Value> get metadata => $_getMap(2);
+  $core.Map<$core.String, $1735.Value> get metadata => $_getMap(2);
 }
 
 /// Response message for Recommend method.

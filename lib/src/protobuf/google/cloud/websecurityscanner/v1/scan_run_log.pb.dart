@@ -15,7 +15,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'scan_run.pbenum.dart' as $1513;
-import 'scan_run_error_trace.pb.dart' as $4731;
+import 'scan_run_error_trace.pb.dart' as $4733;
 
 /// A ScanRunLog is an output-only proto used for Stackdriver customer logging.
 /// It is used for logs covering the start and end of scan pipelines.
@@ -31,7 +31,7 @@ class ScanRunLog extends $pb.GeneratedMessage {
     $fixnum.Int64? urlsCrawledCount,
     $fixnum.Int64? urlsTestedCount,
     $core.bool? hasFindings,
-    $4731.ScanRunErrorTrace? errorTrace,
+    $4733.ScanRunErrorTrace? errorTrace,
   }) {
     final $result = create();
     if (summary != null) {
@@ -72,7 +72,7 @@ class ScanRunLog extends $pb.GeneratedMessage {
     ..aInt64(5, _omitFieldNames ? '' : 'urlsCrawledCount')
     ..aInt64(6, _omitFieldNames ? '' : 'urlsTestedCount')
     ..aOB(7, _omitFieldNames ? '' : 'hasFindings')
-    ..aOM<$4731.ScanRunErrorTrace>(8, _omitFieldNames ? '' : 'errorTrace', subBuilder: $4731.ScanRunErrorTrace.create)
+    ..aOM<$4733.ScanRunErrorTrace>(8, _omitFieldNames ? '' : 'errorTrace', subBuilder: $4733.ScanRunErrorTrace.create)
     ..hasRequiredFields = false
   ;
 
@@ -165,15 +165,15 @@ class ScanRunLog extends $pb.GeneratedMessage {
   void clearHasFindings() => clearField(7);
 
   @$pb.TagNumber(8)
-  $4731.ScanRunErrorTrace get errorTrace => $_getN(7);
+  $4733.ScanRunErrorTrace get errorTrace => $_getN(7);
   @$pb.TagNumber(8)
-  set errorTrace($4731.ScanRunErrorTrace v) { setField(8, v); }
+  set errorTrace($4733.ScanRunErrorTrace v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasErrorTrace() => $_has(7);
   @$pb.TagNumber(8)
   void clearErrorTrace() => clearField(8);
   @$pb.TagNumber(8)
-  $4731.ScanRunErrorTrace ensureErrorTrace() => $_ensure(7);
+  $4733.ScanRunErrorTrace ensureErrorTrace() => $_ensure(7);
 }
 
 

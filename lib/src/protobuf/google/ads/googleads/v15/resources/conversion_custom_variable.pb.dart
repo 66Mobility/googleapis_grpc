@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/conversion_custom_variable_status.pbenum.dart' as $2241;
+import '../enums/conversion_custom_variable_status.pbenum.dart' as $2242;
 
 /// A conversion custom variable
 /// See "About custom variables for conversions" at
@@ -25,7 +25,7 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
     $fixnum.Int64? id,
     $core.String? name,
     $core.String? tag,
-    $2241.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus? status,
+    $2242.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus? status,
     $core.String? ownerCustomer,
   }) {
     final $result = create();
@@ -58,7 +58,7 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'id')
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..aOS(4, _omitFieldNames ? '' : 'tag')
-    ..e<$2241.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2241.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.UNSPECIFIED, valueOf: $2241.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.valueOf, enumValues: $2241.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.values)
+    ..e<$2242.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2242.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.UNSPECIFIED, valueOf: $2242.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.valueOf, enumValues: $2242.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus.values)
     ..aOS(6, _omitFieldNames ? '' : 'ownerCustomer')
     ..hasRequiredFields = false
   ;
@@ -137,9 +137,9 @@ class ConversionCustomVariable extends $pb.GeneratedMessage {
 
   /// The status of the conversion custom variable for conversion event accrual.
   @$pb.TagNumber(5)
-  $2241.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus get status => $_getN(4);
+  $2242.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus get status => $_getN(4);
   @$pb.TagNumber(5)
-  set status($2241.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus v) { setField(5, v); }
+  set status($2242.ConversionCustomVariableStatusEnum_ConversionCustomVariableStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(4);
   @$pb.TagNumber(5)

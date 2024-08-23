@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../../../type/money.pb.dart' as $1814;
-import '../../v1/common_fields.pb.dart' as $4588;
+import '../../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../../type/money.pb.dart' as $1815;
+import '../../v1/common_fields.pb.dart' as $4590;
 import 'managed_accounts.pbenum.dart';
 
 export 'managed_accounts.pbenum.dart';
@@ -24,13 +24,13 @@ export 'managed_accounts.pbenum.dart';
 class ManagedAccount extends $pb.GeneratedMessage {
   factory ManagedAccount({
     $core.String? name,
-    $4588.AccountReference? accountReference,
+    $4590.AccountReference? accountReference,
     ManagedAccount_State? state,
-    $1814.Money? balance,
+    $1815.Money? balance,
     ManagedAccount_AccountReconciliationState? lastReconciliationState,
-    $1775.Timestamp? lastReconciliationTime,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? lastReconciliationTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -65,13 +65,13 @@ class ManagedAccount extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ManagedAccount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.accountmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4588.AccountReference>(2, _omitFieldNames ? '' : 'accountReference', subBuilder: $4588.AccountReference.create)
+    ..aOM<$4590.AccountReference>(2, _omitFieldNames ? '' : 'accountReference', subBuilder: $4590.AccountReference.create)
     ..e<ManagedAccount_State>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ManagedAccount_State.STATE_UNSPECIFIED, valueOf: ManagedAccount_State.valueOf, enumValues: ManagedAccount_State.values)
-    ..aOM<$1814.Money>(4, _omitFieldNames ? '' : 'balance', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(4, _omitFieldNames ? '' : 'balance', subBuilder: $1815.Money.create)
     ..e<ManagedAccount_AccountReconciliationState>(5, _omitFieldNames ? '' : 'lastReconciliationState', $pb.PbFieldType.OE, defaultOrMaker: ManagedAccount_AccountReconciliationState.ACCOUNT_RECONCILIATION_STATE_UNSPECIFIED, valueOf: ManagedAccount_AccountReconciliationState.valueOf, enumValues: ManagedAccount_AccountReconciliationState.values)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'lastReconciliationTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'lastReconciliationTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -112,15 +112,15 @@ class ManagedAccount extends $pb.GeneratedMessage {
 
   /// Required. The associated bank account information.
   @$pb.TagNumber(2)
-  $4588.AccountReference get accountReference => $_getN(1);
+  $4590.AccountReference get accountReference => $_getN(1);
   @$pb.TagNumber(2)
-  set accountReference($4588.AccountReference v) { setField(2, v); }
+  set accountReference($4590.AccountReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountReference() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountReference() => clearField(2);
   @$pb.TagNumber(2)
-  $4588.AccountReference ensureAccountReference() => $_ensure(1);
+  $4590.AccountReference ensureAccountReference() => $_ensure(1);
 
   /// Output only. State of the account.
   @$pb.TagNumber(3)
@@ -134,15 +134,15 @@ class ManagedAccount extends $pb.GeneratedMessage {
 
   /// Required. Current balance of the account.
   @$pb.TagNumber(4)
-  $1814.Money get balance => $_getN(3);
+  $1815.Money get balance => $_getN(3);
   @$pb.TagNumber(4)
-  set balance($1814.Money v) { setField(4, v); }
+  set balance($1815.Money v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBalance() => $_has(3);
   @$pb.TagNumber(4)
   void clearBalance() => clearField(4);
   @$pb.TagNumber(4)
-  $1814.Money ensureBalance() => $_ensure(3);
+  $1815.Money ensureBalance() => $_ensure(3);
 
   /// Output only. State of the last reconciliation done on the account.
   @$pb.TagNumber(5)
@@ -156,49 +156,49 @@ class ManagedAccount extends $pb.GeneratedMessage {
 
   /// Output only. Time at which last reconciliation was done on the account.
   @$pb.TagNumber(6)
-  $1775.Timestamp get lastReconciliationTime => $_getN(5);
+  $1776.Timestamp get lastReconciliationTime => $_getN(5);
   @$pb.TagNumber(6)
-  set lastReconciliationTime($1775.Timestamp v) { setField(6, v); }
+  set lastReconciliationTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLastReconciliationTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearLastReconciliationTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureLastReconciliationTime() => $_ensure(5);
+  $1776.Timestamp ensureLastReconciliationTime() => $_ensure(5);
 
   /// Output only. The time at which the account was created by the account
   /// manager.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time at which the account was last updated by the account
   /// manager.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 }
 
 /// Reconciliation request for an account balance.
 class ReconcileManagedAccountBalanceRequest extends $pb.GeneratedMessage {
   factory ReconcileManagedAccountBalanceRequest({
     ManagedAccount? account,
-    $1814.Money? expectedBalance,
-    $1775.Timestamp? referenceTime,
+    $1815.Money? expectedBalance,
+    $1776.Timestamp? referenceTime,
   }) {
     final $result = create();
     if (account != null) {
@@ -218,8 +218,8 @@ class ReconcileManagedAccountBalanceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReconcileManagedAccountBalanceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.paymentgateway.issuerswitch.accountmanager.v1'), createEmptyInstance: create)
     ..aOM<ManagedAccount>(1, _omitFieldNames ? '' : 'account', subBuilder: ManagedAccount.create)
-    ..aOM<$1814.Money>(2, _omitFieldNames ? '' : 'expectedBalance', subBuilder: $1814.Money.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'referenceTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1815.Money>(2, _omitFieldNames ? '' : 'expectedBalance', subBuilder: $1815.Money.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'referenceTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -258,28 +258,28 @@ class ReconcileManagedAccountBalanceRequest extends $pb.GeneratedMessage {
 
   /// Required. Expected balance amount for the account.
   @$pb.TagNumber(2)
-  $1814.Money get expectedBalance => $_getN(1);
+  $1815.Money get expectedBalance => $_getN(1);
   @$pb.TagNumber(2)
-  set expectedBalance($1814.Money v) { setField(2, v); }
+  set expectedBalance($1815.Money v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpectedBalance() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpectedBalance() => clearField(2);
   @$pb.TagNumber(2)
-  $1814.Money ensureExpectedBalance() => $_ensure(1);
+  $1815.Money ensureExpectedBalance() => $_ensure(1);
 
   /// Required. Timestamp to be taken as reference for reconciling the balance
   /// amount.
   @$pb.TagNumber(3)
-  $1775.Timestamp get referenceTime => $_getN(2);
+  $1776.Timestamp get referenceTime => $_getN(2);
   @$pb.TagNumber(3)
-  set referenceTime($1775.Timestamp v) { setField(3, v); }
+  set referenceTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReferenceTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearReferenceTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureReferenceTime() => $_ensure(2);
+  $1776.Timestamp ensureReferenceTime() => $_ensure(2);
 }
 
 /// Request for the `BatchReconcileManagedAccountBalance` method.

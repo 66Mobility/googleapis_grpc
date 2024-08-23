@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'expanded_data_set.pbenum.dart';
 
 export 'expanded_data_set.pbenum.dart';
@@ -435,7 +435,7 @@ class ExpandedDataSet extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? dimensionNames,
     $core.Iterable<$core.String>? metricNames,
     ExpandedDataSetFilterExpression? dimensionFilterExpression,
-    $1775.Timestamp? dataCollectionStartTime,
+    $1776.Timestamp? dataCollectionStartTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -472,7 +472,7 @@ class ExpandedDataSet extends $pb.GeneratedMessage {
     ..pPS(4, _omitFieldNames ? '' : 'dimensionNames')
     ..pPS(5, _omitFieldNames ? '' : 'metricNames')
     ..aOM<ExpandedDataSetFilterExpression>(6, _omitFieldNames ? '' : 'dimensionFilterExpression', subBuilder: ExpandedDataSetFilterExpression.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'dataCollectionStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'dataCollectionStartTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -561,15 +561,15 @@ class ExpandedDataSet extends $pb.GeneratedMessage {
   /// Output only. Time when expanded data set began (or will begin) collecing
   /// data.
   @$pb.TagNumber(7)
-  $1775.Timestamp get dataCollectionStartTime => $_getN(6);
+  $1776.Timestamp get dataCollectionStartTime => $_getN(6);
   @$pb.TagNumber(7)
-  set dataCollectionStartTime($1775.Timestamp v) { setField(7, v); }
+  set dataCollectionStartTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDataCollectionStartTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearDataCollectionStartTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureDataCollectionStartTime() => $_ensure(6);
+  $1776.Timestamp ensureDataCollectionStartTime() => $_ensure(6);
 }
 
 

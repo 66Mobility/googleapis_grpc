@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/matching_function_context_type.pbenum.dart' as $1900;
-import '../enums/matching_function_operator.pbenum.dart' as $1899;
+import '../enums/matching_function_context_type.pbenum.dart' as $1901;
+import '../enums/matching_function_operator.pbenum.dart' as $1900;
 
 /// Matching function associated with a
 /// CustomerFeed, CampaignFeed, or AdGroupFeed. The matching function is used
@@ -24,7 +24,7 @@ class MatchingFunction extends $pb.GeneratedMessage {
   factory MatchingFunction({
     $core.Iterable<Operand>? leftOperands,
     $core.Iterable<Operand>? rightOperands,
-    $1899.MatchingFunctionOperatorEnum_MatchingFunctionOperator? operator,
+    $1900.MatchingFunctionOperatorEnum_MatchingFunctionOperator? operator,
     $core.String? functionString,
   }) {
     final $result = create();
@@ -49,7 +49,7 @@ class MatchingFunction extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MatchingFunction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
     ..pc<Operand>(2, _omitFieldNames ? '' : 'leftOperands', $pb.PbFieldType.PM, subBuilder: Operand.create)
     ..pc<Operand>(3, _omitFieldNames ? '' : 'rightOperands', $pb.PbFieldType.PM, subBuilder: Operand.create)
-    ..e<$1899.MatchingFunctionOperatorEnum_MatchingFunctionOperator>(4, _omitFieldNames ? '' : 'operator', $pb.PbFieldType.OE, defaultOrMaker: $1899.MatchingFunctionOperatorEnum_MatchingFunctionOperator.UNSPECIFIED, valueOf: $1899.MatchingFunctionOperatorEnum_MatchingFunctionOperator.valueOf, enumValues: $1899.MatchingFunctionOperatorEnum_MatchingFunctionOperator.values)
+    ..e<$1900.MatchingFunctionOperatorEnum_MatchingFunctionOperator>(4, _omitFieldNames ? '' : 'operator', $pb.PbFieldType.OE, defaultOrMaker: $1900.MatchingFunctionOperatorEnum_MatchingFunctionOperator.UNSPECIFIED, valueOf: $1900.MatchingFunctionOperatorEnum_MatchingFunctionOperator.valueOf, enumValues: $1900.MatchingFunctionOperatorEnum_MatchingFunctionOperator.values)
     ..aOS(5, _omitFieldNames ? '' : 'functionString')
     ..hasRequiredFields = false
   ;
@@ -86,9 +86,9 @@ class MatchingFunction extends $pb.GeneratedMessage {
 
   /// Operator for a function.
   @$pb.TagNumber(4)
-  $1899.MatchingFunctionOperatorEnum_MatchingFunctionOperator get operator => $_getN(2);
+  $1900.MatchingFunctionOperatorEnum_MatchingFunctionOperator get operator => $_getN(2);
   @$pb.TagNumber(4)
-  set operator($1899.MatchingFunctionOperatorEnum_MatchingFunctionOperator v) { setField(4, v); }
+  set operator($1900.MatchingFunctionOperatorEnum_MatchingFunctionOperator v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasOperator() => $_has(2);
   @$pb.TagNumber(4)
@@ -363,7 +363,7 @@ class Operand_FunctionOperand extends $pb.GeneratedMessage {
 /// An operand in a function referring to a value in the request context.
 class Operand_RequestContextOperand extends $pb.GeneratedMessage {
   factory Operand_RequestContextOperand({
-    $1900.MatchingFunctionContextTypeEnum_MatchingFunctionContextType? contextType,
+    $1901.MatchingFunctionContextTypeEnum_MatchingFunctionContextType? contextType,
   }) {
     final $result = create();
     if (contextType != null) {
@@ -376,7 +376,7 @@ class Operand_RequestContextOperand extends $pb.GeneratedMessage {
   factory Operand_RequestContextOperand.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Operand.RequestContextOperand', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.common'), createEmptyInstance: create)
-    ..e<$1900.MatchingFunctionContextTypeEnum_MatchingFunctionContextType>(1, _omitFieldNames ? '' : 'contextType', $pb.PbFieldType.OE, defaultOrMaker: $1900.MatchingFunctionContextTypeEnum_MatchingFunctionContextType.UNSPECIFIED, valueOf: $1900.MatchingFunctionContextTypeEnum_MatchingFunctionContextType.valueOf, enumValues: $1900.MatchingFunctionContextTypeEnum_MatchingFunctionContextType.values)
+    ..e<$1901.MatchingFunctionContextTypeEnum_MatchingFunctionContextType>(1, _omitFieldNames ? '' : 'contextType', $pb.PbFieldType.OE, defaultOrMaker: $1901.MatchingFunctionContextTypeEnum_MatchingFunctionContextType.UNSPECIFIED, valueOf: $1901.MatchingFunctionContextTypeEnum_MatchingFunctionContextType.valueOf, enumValues: $1901.MatchingFunctionContextTypeEnum_MatchingFunctionContextType.values)
     ..hasRequiredFields = false
   ;
 
@@ -403,9 +403,9 @@ class Operand_RequestContextOperand extends $pb.GeneratedMessage {
 
   /// Type of value to be referred in the request context.
   @$pb.TagNumber(1)
-  $1900.MatchingFunctionContextTypeEnum_MatchingFunctionContextType get contextType => $_getN(0);
+  $1901.MatchingFunctionContextTypeEnum_MatchingFunctionContextType get contextType => $_getN(0);
   @$pb.TagNumber(1)
-  set contextType($1900.MatchingFunctionContextTypeEnum_MatchingFunctionContextType v) { setField(1, v); }
+  set contextType($1901.MatchingFunctionContextTypeEnum_MatchingFunctionContextType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasContextType() => $_has(0);
   @$pb.TagNumber(1)

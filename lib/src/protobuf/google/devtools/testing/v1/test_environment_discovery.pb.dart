@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../type/date.pb.dart' as $1800;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../type/date.pb.dart' as $1801;
 import 'test_environment_discovery.pbenum.dart';
 
 export 'test_environment_discovery.pbenum.dart';
@@ -25,7 +25,7 @@ class DeviceIpBlock extends $pb.GeneratedMessage {
   factory DeviceIpBlock({
     $core.String? block,
     DeviceForm? form,
-    $1800.Date? addedDate,
+    $1801.Date? addedDate,
   }) {
     final $result = create();
     if (block != null) {
@@ -46,7 +46,7 @@ class DeviceIpBlock extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceIpBlock', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'block')
     ..e<DeviceForm>(2, _omitFieldNames ? '' : 'form', $pb.PbFieldType.OE, defaultOrMaker: DeviceForm.DEVICE_FORM_UNSPECIFIED, valueOf: DeviceForm.valueOf, enumValues: DeviceForm.values)
-    ..aOM<$1800.Date>(3, _omitFieldNames ? '' : 'addedDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(3, _omitFieldNames ? '' : 'addedDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -93,15 +93,15 @@ class DeviceIpBlock extends $pb.GeneratedMessage {
 
   /// The date this block was added to Firebase Test Lab
   @$pb.TagNumber(3)
-  $1800.Date get addedDate => $_getN(2);
+  $1801.Date get addedDate => $_getN(2);
   @$pb.TagNumber(3)
-  set addedDate($1800.Date v) { setField(3, v); }
+  set addedDate($1801.Date v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAddedDate() => $_has(2);
   @$pb.TagNumber(3)
   void clearAddedDate() => clearField(3);
   @$pb.TagNumber(3)
-  $1800.Date ensureAddedDate() => $_ensure(2);
+  $1801.Date ensureAddedDate() => $_ensure(2);
 }
 
 /// Request to list the currently supported values for an environment type.
@@ -761,7 +761,7 @@ class AndroidVersion extends $pb.GeneratedMessage {
     $core.String? versionString,
     $core.int? apiLevel,
     $core.String? codeName,
-    $1800.Date? releaseDate,
+    $1801.Date? releaseDate,
     Distribution? distribution,
     $core.Iterable<$core.String>? tags,
   }) {
@@ -798,7 +798,7 @@ class AndroidVersion extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'versionString')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'apiLevel', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'codeName')
-    ..aOM<$1800.Date>(5, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(5, _omitFieldNames ? '' : 'releaseDate', subBuilder: $1801.Date.create)
     ..aOM<Distribution>(6, _omitFieldNames ? '' : 'distribution', subBuilder: Distribution.create)
     ..pPS(7, _omitFieldNames ? '' : 'tags')
     ..hasRequiredFields = false
@@ -871,15 +871,15 @@ class AndroidVersion extends $pb.GeneratedMessage {
 
   /// The date this Android version became available in the market.
   @$pb.TagNumber(5)
-  $1800.Date get releaseDate => $_getN(4);
+  $1801.Date get releaseDate => $_getN(4);
   @$pb.TagNumber(5)
-  set releaseDate($1800.Date v) { setField(5, v); }
+  set releaseDate($1801.Date v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReleaseDate() => $_has(4);
   @$pb.TagNumber(5)
   void clearReleaseDate() => clearField(5);
   @$pb.TagNumber(5)
-  $1800.Date ensureReleaseDate() => $_ensure(4);
+  $1801.Date ensureReleaseDate() => $_ensure(4);
 
   /// Market share for this version.
   @$pb.TagNumber(6)
@@ -904,7 +904,7 @@ class PerAndroidVersionInfo extends $pb.GeneratedMessage {
   factory PerAndroidVersionInfo({
     $core.String? versionId,
     DeviceCapacity? deviceCapacity,
-    $1737.Duration? interactiveDeviceAvailabilityEstimate,
+    $1738.Duration? interactiveDeviceAvailabilityEstimate,
     DirectAccessVersionInfo? directAccessVersionInfo,
   }) {
     final $result = create();
@@ -929,7 +929,7 @@ class PerAndroidVersionInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PerAndroidVersionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'versionId')
     ..e<DeviceCapacity>(2, _omitFieldNames ? '' : 'deviceCapacity', $pb.PbFieldType.OE, defaultOrMaker: DeviceCapacity.DEVICE_CAPACITY_UNSPECIFIED, valueOf: DeviceCapacity.valueOf, enumValues: DeviceCapacity.values)
-    ..aOM<$1737.Duration>(3, _omitFieldNames ? '' : 'interactiveDeviceAvailabilityEstimate', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'interactiveDeviceAvailabilityEstimate', subBuilder: $1738.Duration.create)
     ..aOM<DirectAccessVersionInfo>(4, _omitFieldNames ? '' : 'directAccessVersionInfo', subBuilder: DirectAccessVersionInfo.create)
     ..hasRequiredFields = false
   ;
@@ -978,15 +978,15 @@ class PerAndroidVersionInfo extends $pb.GeneratedMessage {
   /// Output only. The estimated wait time for a single interactive device
   /// session using Direct Access.
   @$pb.TagNumber(3)
-  $1737.Duration get interactiveDeviceAvailabilityEstimate => $_getN(2);
+  $1738.Duration get interactiveDeviceAvailabilityEstimate => $_getN(2);
   @$pb.TagNumber(3)
-  set interactiveDeviceAvailabilityEstimate($1737.Duration v) { setField(3, v); }
+  set interactiveDeviceAvailabilityEstimate($1738.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasInteractiveDeviceAvailabilityEstimate() => $_has(2);
   @$pb.TagNumber(3)
   void clearInteractiveDeviceAvailabilityEstimate() => clearField(3);
   @$pb.TagNumber(3)
-  $1737.Duration ensureInteractiveDeviceAvailabilityEstimate() => $_ensure(2);
+  $1738.Duration ensureInteractiveDeviceAvailabilityEstimate() => $_ensure(2);
 
   /// Output only. Identifies supported clients for DirectAccess for this Android
   /// version.
@@ -1082,7 +1082,7 @@ class DirectAccessVersionInfo extends $pb.GeneratedMessage {
 /// given configuration of the Android platform.
 class Distribution extends $pb.GeneratedMessage {
   factory Distribution({
-    $1775.Timestamp? measurementTime,
+    $1776.Timestamp? measurementTime,
     $core.double? marketShare,
   }) {
     final $result = create();
@@ -1099,7 +1099,7 @@ class Distribution extends $pb.GeneratedMessage {
   factory Distribution.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Distribution', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'measurementTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'measurementTime', subBuilder: $1776.Timestamp.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'marketShare', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -1127,15 +1127,15 @@ class Distribution extends $pb.GeneratedMessage {
 
   /// Output only. The time this distribution was measured.
   @$pb.TagNumber(1)
-  $1775.Timestamp get measurementTime => $_getN(0);
+  $1776.Timestamp get measurementTime => $_getN(0);
   @$pb.TagNumber(1)
-  set measurementTime($1775.Timestamp v) { setField(1, v); }
+  set measurementTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMeasurementTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearMeasurementTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureMeasurementTime() => $_ensure(0);
+  $1776.Timestamp ensureMeasurementTime() => $_ensure(0);
 
   /// Output only. The estimated fraction (0-1) of the total market with this
   /// configuration.
@@ -1993,7 +1993,7 @@ class NetworkConfiguration extends $pb.GeneratedMessage {
 /// Network emulation parameters.
 class TrafficRule extends $pb.GeneratedMessage {
   factory TrafficRule({
-    $1737.Duration? delay,
+    $1738.Duration? delay,
     $core.double? packetLossRatio,
     $core.double? packetDuplicationRatio,
     $core.double? bandwidth,
@@ -2022,7 +2022,7 @@ class TrafficRule extends $pb.GeneratedMessage {
   factory TrafficRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TrafficRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.testing.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'delay', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'delay', subBuilder: $1738.Duration.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'packetLossRatio', $pb.PbFieldType.OF)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'packetDuplicationRatio', $pb.PbFieldType.OF)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'bandwidth', $pb.PbFieldType.OF)
@@ -2053,15 +2053,15 @@ class TrafficRule extends $pb.GeneratedMessage {
 
   /// Packet delay, must be >= 0.
   @$pb.TagNumber(1)
-  $1737.Duration get delay => $_getN(0);
+  $1738.Duration get delay => $_getN(0);
   @$pb.TagNumber(1)
-  set delay($1737.Duration v) { setField(1, v); }
+  set delay($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDelay() => $_has(0);
   @$pb.TagNumber(1)
   void clearDelay() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureDelay() => $_ensure(0);
+  $1738.Duration ensureDelay() => $_ensure(0);
 
   /// Packet loss ratio (0.0 - 1.0).
   @$pb.TagNumber(2)

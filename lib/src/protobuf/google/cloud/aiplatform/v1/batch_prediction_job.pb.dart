@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'completion_stats.pb.dart' as $4244;
-import 'encryption_spec.pb.dart' as $4240;
-import 'explanation.pb.dart' as $4239;
-import 'io.pb.dart' as $4235;
-import 'job_state.pbenum.dart' as $4246;
-import 'machine_resources.pb.dart' as $4242;
-import 'manual_batch_tuning_parameters.pb.dart' as $4243;
-import 'unmanaged_container_model.pb.dart' as $4245;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'completion_stats.pb.dart' as $4245;
+import 'encryption_spec.pb.dart' as $4241;
+import 'explanation.pb.dart' as $4240;
+import 'io.pb.dart' as $4236;
+import 'job_state.pbenum.dart' as $4247;
+import 'machine_resources.pb.dart' as $4243;
+import 'manual_batch_tuning_parameters.pb.dart' as $4244;
+import 'unmanaged_container_model.pb.dart' as $4246;
 
 enum BatchPredictionJob_InputConfig_Source {
   gcsSource, 
@@ -39,8 +39,8 @@ enum BatchPredictionJob_InputConfig_Source {
 class BatchPredictionJob_InputConfig extends $pb.GeneratedMessage {
   factory BatchPredictionJob_InputConfig({
     $core.String? instancesFormat,
-    $4235.GcsSource? gcsSource,
-    $4235.BigQuerySource? bigquerySource,
+    $4236.GcsSource? gcsSource,
+    $4236.BigQuerySource? bigquerySource,
   }) {
     final $result = create();
     if (instancesFormat != null) {
@@ -66,8 +66,8 @@ class BatchPredictionJob_InputConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchPredictionJob.InputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'instancesFormat')
-    ..aOM<$4235.GcsSource>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4235.GcsSource.create)
-    ..aOM<$4235.BigQuerySource>(3, _omitFieldNames ? '' : 'bigquerySource', subBuilder: $4235.BigQuerySource.create)
+    ..aOM<$4236.GcsSource>(2, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4236.GcsSource.create)
+    ..aOM<$4236.BigQuerySource>(3, _omitFieldNames ? '' : 'bigquerySource', subBuilder: $4236.BigQuerySource.create)
     ..hasRequiredFields = false
   ;
 
@@ -109,15 +109,15 @@ class BatchPredictionJob_InputConfig extends $pb.GeneratedMessage {
 
   /// The Cloud Storage location for the input instances.
   @$pb.TagNumber(2)
-  $4235.GcsSource get gcsSource => $_getN(1);
+  $4236.GcsSource get gcsSource => $_getN(1);
   @$pb.TagNumber(2)
-  set gcsSource($4235.GcsSource v) { setField(2, v); }
+  set gcsSource($4236.GcsSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcsSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearGcsSource() => clearField(2);
   @$pb.TagNumber(2)
-  $4235.GcsSource ensureGcsSource() => $_ensure(1);
+  $4236.GcsSource ensureGcsSource() => $_ensure(1);
 
   /// The BigQuery location of the input table.
   /// The schema of the table should be in the format described by the given
@@ -125,15 +125,15 @@ class BatchPredictionJob_InputConfig extends $pb.GeneratedMessage {
   /// additional columns that are not described by the schema, and they will
   /// be ignored.
   @$pb.TagNumber(3)
-  $4235.BigQuerySource get bigquerySource => $_getN(2);
+  $4236.BigQuerySource get bigquerySource => $_getN(2);
   @$pb.TagNumber(3)
-  set bigquerySource($4235.BigQuerySource v) { setField(3, v); }
+  set bigquerySource($4236.BigQuerySource v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBigquerySource() => $_has(2);
   @$pb.TagNumber(3)
   void clearBigquerySource() => clearField(3);
   @$pb.TagNumber(3)
-  $4235.BigQuerySource ensureBigquerySource() => $_ensure(2);
+  $4236.BigQuerySource ensureBigquerySource() => $_ensure(2);
 }
 
 /// Configuration defining how to transform batch prediction input instances to
@@ -318,8 +318,8 @@ enum BatchPredictionJob_OutputConfig_Destination {
 class BatchPredictionJob_OutputConfig extends $pb.GeneratedMessage {
   factory BatchPredictionJob_OutputConfig({
     $core.String? predictionsFormat,
-    $4235.GcsDestination? gcsDestination,
-    $4235.BigQueryDestination? bigqueryDestination,
+    $4236.GcsDestination? gcsDestination,
+    $4236.BigQueryDestination? bigqueryDestination,
   }) {
     final $result = create();
     if (predictionsFormat != null) {
@@ -345,8 +345,8 @@ class BatchPredictionJob_OutputConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchPredictionJob.OutputConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'predictionsFormat')
-    ..aOM<$4235.GcsDestination>(2, _omitFieldNames ? '' : 'gcsDestination', subBuilder: $4235.GcsDestination.create)
-    ..aOM<$4235.BigQueryDestination>(3, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4235.BigQueryDestination.create)
+    ..aOM<$4236.GcsDestination>(2, _omitFieldNames ? '' : 'gcsDestination', subBuilder: $4236.GcsDestination.create)
+    ..aOM<$4236.BigQueryDestination>(3, _omitFieldNames ? '' : 'bigqueryDestination', subBuilder: $4236.BigQueryDestination.create)
     ..hasRequiredFields = false
   ;
 
@@ -409,15 +409,15 @@ class BatchPredictionJob_OutputConfig extends $pb.GeneratedMessage {
   /// value has [google.rpc.Status][google.rpc.Status]
   /// containing only `code` and `message` fields.
   @$pb.TagNumber(2)
-  $4235.GcsDestination get gcsDestination => $_getN(1);
+  $4236.GcsDestination get gcsDestination => $_getN(1);
   @$pb.TagNumber(2)
-  set gcsDestination($4235.GcsDestination v) { setField(2, v); }
+  set gcsDestination($4236.GcsDestination v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGcsDestination() => $_has(1);
   @$pb.TagNumber(2)
   void clearGcsDestination() => clearField(2);
   @$pb.TagNumber(2)
-  $4235.GcsDestination ensureGcsDestination() => $_ensure(1);
+  $4236.GcsDestination ensureGcsDestination() => $_ensure(1);
 
   /// The BigQuery project or dataset location where the output is to be
   /// written to. If project is provided, a new dataset is created with name
@@ -440,15 +440,15 @@ class BatchPredictionJob_OutputConfig extends $pb.GeneratedMessage {
   /// has [google.rpc.Status][google.rpc.Status]
   /// represented as a STRUCT, and containing only `code` and `message`.
   @$pb.TagNumber(3)
-  $4235.BigQueryDestination get bigqueryDestination => $_getN(2);
+  $4236.BigQueryDestination get bigqueryDestination => $_getN(2);
   @$pb.TagNumber(3)
-  set bigqueryDestination($4235.BigQueryDestination v) { setField(3, v); }
+  set bigqueryDestination($4236.BigQueryDestination v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBigqueryDestination() => $_has(2);
   @$pb.TagNumber(3)
   void clearBigqueryDestination() => clearField(3);
   @$pb.TagNumber(3)
-  $4235.BigQueryDestination ensureBigqueryDestination() => $_ensure(2);
+  $4236.BigQueryDestination ensureBigqueryDestination() => $_ensure(2);
 }
 
 enum BatchPredictionJob_OutputInfo_OutputLocation {
@@ -568,26 +568,26 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? model,
     BatchPredictionJob_InputConfig? inputConfig,
-    $1734.Value? modelParameters,
+    $1735.Value? modelParameters,
     BatchPredictionJob_OutputConfig? outputConfig,
-    $4242.BatchDedicatedResources? dedicatedResources,
-    $4243.ManualBatchTuningParameters? manualBatchTuningParameters,
+    $4243.BatchDedicatedResources? dedicatedResources,
+    $4244.ManualBatchTuningParameters? manualBatchTuningParameters,
     BatchPredictionJob_OutputInfo? outputInfo,
-    $4246.JobState? state,
-    $1795.Status? error,
-    $core.Iterable<$1795.Status>? partialFailures,
-    $4242.ResourcesConsumed? resourcesConsumed,
-    $4244.CompletionStats? completionStats,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
+    $4247.JobState? state,
+    $1796.Status? error,
+    $core.Iterable<$1796.Status>? partialFailures,
+    $4243.ResourcesConsumed? resourcesConsumed,
+    $4245.CompletionStats? completionStats,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.bool? generateExplanation,
-    $4240.EncryptionSpec? encryptionSpec,
-    $4239.ExplanationSpec? explanationSpec,
+    $4241.EncryptionSpec? encryptionSpec,
+    $4240.ExplanationSpec? explanationSpec,
     BatchPredictionJob_InstanceConfig? instanceConfig,
-    $4245.UnmanagedContainerModel? unmanagedContainerModel,
+    $4246.UnmanagedContainerModel? unmanagedContainerModel,
     $core.String? serviceAccount,
     $core.String? modelVersionId,
     $core.bool? disableContainerLogging,
@@ -693,26 +693,26 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'model')
     ..aOM<BatchPredictionJob_InputConfig>(4, _omitFieldNames ? '' : 'inputConfig', subBuilder: BatchPredictionJob_InputConfig.create)
-    ..aOM<$1734.Value>(5, _omitFieldNames ? '' : 'modelParameters', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(5, _omitFieldNames ? '' : 'modelParameters', subBuilder: $1735.Value.create)
     ..aOM<BatchPredictionJob_OutputConfig>(6, _omitFieldNames ? '' : 'outputConfig', subBuilder: BatchPredictionJob_OutputConfig.create)
-    ..aOM<$4242.BatchDedicatedResources>(7, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4242.BatchDedicatedResources.create)
-    ..aOM<$4243.ManualBatchTuningParameters>(8, _omitFieldNames ? '' : 'manualBatchTuningParameters', subBuilder: $4243.ManualBatchTuningParameters.create)
+    ..aOM<$4243.BatchDedicatedResources>(7, _omitFieldNames ? '' : 'dedicatedResources', subBuilder: $4243.BatchDedicatedResources.create)
+    ..aOM<$4244.ManualBatchTuningParameters>(8, _omitFieldNames ? '' : 'manualBatchTuningParameters', subBuilder: $4244.ManualBatchTuningParameters.create)
     ..aOM<BatchPredictionJob_OutputInfo>(9, _omitFieldNames ? '' : 'outputInfo', subBuilder: BatchPredictionJob_OutputInfo.create)
-    ..e<$4246.JobState>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4246.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4246.JobState.valueOf, enumValues: $4246.JobState.values)
-    ..aOM<$1795.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..pc<$1795.Status>(12, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1795.Status.create)
-    ..aOM<$4242.ResourcesConsumed>(13, _omitFieldNames ? '' : 'resourcesConsumed', subBuilder: $4242.ResourcesConsumed.create)
-    ..aOM<$4244.CompletionStats>(14, _omitFieldNames ? '' : 'completionStats', subBuilder: $4244.CompletionStats.create)
-    ..aOM<$1775.Timestamp>(15, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(16, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(17, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(18, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4247.JobState>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4247.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4247.JobState.valueOf, enumValues: $4247.JobState.values)
+    ..aOM<$1796.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..pc<$1796.Status>(12, _omitFieldNames ? '' : 'partialFailures', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..aOM<$4243.ResourcesConsumed>(13, _omitFieldNames ? '' : 'resourcesConsumed', subBuilder: $4243.ResourcesConsumed.create)
+    ..aOM<$4245.CompletionStats>(14, _omitFieldNames ? '' : 'completionStats', subBuilder: $4245.CompletionStats.create)
+    ..aOM<$1776.Timestamp>(15, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(17, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(18, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(19, _omitFieldNames ? '' : 'labels', entryClassName: 'BatchPredictionJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..aOB(23, _omitFieldNames ? '' : 'generateExplanation')
-    ..aOM<$4240.EncryptionSpec>(24, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
-    ..aOM<$4239.ExplanationSpec>(25, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4239.ExplanationSpec.create)
+    ..aOM<$4241.EncryptionSpec>(24, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
+    ..aOM<$4240.ExplanationSpec>(25, _omitFieldNames ? '' : 'explanationSpec', subBuilder: $4240.ExplanationSpec.create)
     ..aOM<BatchPredictionJob_InstanceConfig>(27, _omitFieldNames ? '' : 'instanceConfig', subBuilder: BatchPredictionJob_InstanceConfig.create)
-    ..aOM<$4245.UnmanagedContainerModel>(28, _omitFieldNames ? '' : 'unmanagedContainerModel', subBuilder: $4245.UnmanagedContainerModel.create)
+    ..aOM<$4246.UnmanagedContainerModel>(28, _omitFieldNames ? '' : 'unmanagedContainerModel', subBuilder: $4246.UnmanagedContainerModel.create)
     ..aOS(29, _omitFieldNames ? '' : 'serviceAccount')
     ..aOS(30, _omitFieldNames ? '' : 'modelVersionId')
     ..aOB(34, _omitFieldNames ? '' : 'disableContainerLogging')
@@ -810,15 +810,15 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
   /// [PredictSchemata's][google.cloud.aiplatform.v1.Model.predict_schemata]
   /// [parameters_schema_uri][google.cloud.aiplatform.v1.PredictSchemata.parameters_schema_uri].
   @$pb.TagNumber(5)
-  $1734.Value get modelParameters => $_getN(4);
+  $1735.Value get modelParameters => $_getN(4);
   @$pb.TagNumber(5)
-  set modelParameters($1734.Value v) { setField(5, v); }
+  set modelParameters($1735.Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasModelParameters() => $_has(4);
   @$pb.TagNumber(5)
   void clearModelParameters() => clearField(5);
   @$pb.TagNumber(5)
-  $1734.Value ensureModelParameters() => $_ensure(4);
+  $1735.Value ensureModelParameters() => $_ensure(4);
 
   /// Required. The Configuration specifying where output predictions should
   /// be written.
@@ -846,30 +846,30 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
   /// resources), if the Model doesn't support AUTOMATIC_RESOURCES, this config
   /// must be provided.
   @$pb.TagNumber(7)
-  $4242.BatchDedicatedResources get dedicatedResources => $_getN(6);
+  $4243.BatchDedicatedResources get dedicatedResources => $_getN(6);
   @$pb.TagNumber(7)
-  set dedicatedResources($4242.BatchDedicatedResources v) { setField(7, v); }
+  set dedicatedResources($4243.BatchDedicatedResources v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDedicatedResources() => $_has(6);
   @$pb.TagNumber(7)
   void clearDedicatedResources() => clearField(7);
   @$pb.TagNumber(7)
-  $4242.BatchDedicatedResources ensureDedicatedResources() => $_ensure(6);
+  $4243.BatchDedicatedResources ensureDedicatedResources() => $_ensure(6);
 
   /// Immutable. Parameters configuring the batch behavior. Currently only
   /// applicable when
   /// [dedicated_resources][google.cloud.aiplatform.v1.BatchPredictionJob.dedicated_resources]
   /// are used (in other cases Vertex AI does the tuning itself).
   @$pb.TagNumber(8)
-  $4243.ManualBatchTuningParameters get manualBatchTuningParameters => $_getN(7);
+  $4244.ManualBatchTuningParameters get manualBatchTuningParameters => $_getN(7);
   @$pb.TagNumber(8)
-  set manualBatchTuningParameters($4243.ManualBatchTuningParameters v) { setField(8, v); }
+  set manualBatchTuningParameters($4244.ManualBatchTuningParameters v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasManualBatchTuningParameters() => $_has(7);
   @$pb.TagNumber(8)
   void clearManualBatchTuningParameters() => clearField(8);
   @$pb.TagNumber(8)
-  $4243.ManualBatchTuningParameters ensureManualBatchTuningParameters() => $_ensure(7);
+  $4244.ManualBatchTuningParameters ensureManualBatchTuningParameters() => $_ensure(7);
 
   /// Output only. Information further describing the output of this job.
   @$pb.TagNumber(9)
@@ -885,9 +885,9 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(10)
-  $4246.JobState get state => $_getN(9);
+  $4247.JobState get state => $_getN(9);
   @$pb.TagNumber(10)
-  set state($4246.JobState v) { setField(10, v); }
+  set state($4247.JobState v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasState() => $_has(9);
   @$pb.TagNumber(10)
@@ -896,22 +896,22 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
   /// Output only. Only populated when the job's state is JOB_STATE_FAILED or
   /// JOB_STATE_CANCELLED.
   @$pb.TagNumber(11)
-  $1795.Status get error => $_getN(10);
+  $1796.Status get error => $_getN(10);
   @$pb.TagNumber(11)
-  set error($1795.Status v) { setField(11, v); }
+  set error($1796.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasError() => $_has(10);
   @$pb.TagNumber(11)
   void clearError() => clearField(11);
   @$pb.TagNumber(11)
-  $1795.Status ensureError() => $_ensure(10);
+  $1796.Status ensureError() => $_ensure(10);
 
   /// Output only. Partial failures encountered.
   /// For example, single files that can't be read.
   /// This field never exceeds 20 entries.
   /// Status details fields contain standard Google Cloud error details.
   @$pb.TagNumber(12)
-  $core.List<$1795.Status> get partialFailures => $_getList(11);
+  $core.List<$1796.Status> get partialFailures => $_getList(11);
 
   ///  Output only. Information about resources that had been consumed by this
   ///  job. Provided in real time at best effort basis, as well as a final value
@@ -920,77 +920,77 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
   ///  Note: This field currently may be not populated for batch predictions that
   ///  use AutoML Models.
   @$pb.TagNumber(13)
-  $4242.ResourcesConsumed get resourcesConsumed => $_getN(12);
+  $4243.ResourcesConsumed get resourcesConsumed => $_getN(12);
   @$pb.TagNumber(13)
-  set resourcesConsumed($4242.ResourcesConsumed v) { setField(13, v); }
+  set resourcesConsumed($4243.ResourcesConsumed v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasResourcesConsumed() => $_has(12);
   @$pb.TagNumber(13)
   void clearResourcesConsumed() => clearField(13);
   @$pb.TagNumber(13)
-  $4242.ResourcesConsumed ensureResourcesConsumed() => $_ensure(12);
+  $4243.ResourcesConsumed ensureResourcesConsumed() => $_ensure(12);
 
   /// Output only. Statistics on completed and failed prediction instances.
   @$pb.TagNumber(14)
-  $4244.CompletionStats get completionStats => $_getN(13);
+  $4245.CompletionStats get completionStats => $_getN(13);
   @$pb.TagNumber(14)
-  set completionStats($4244.CompletionStats v) { setField(14, v); }
+  set completionStats($4245.CompletionStats v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasCompletionStats() => $_has(13);
   @$pb.TagNumber(14)
   void clearCompletionStats() => clearField(14);
   @$pb.TagNumber(14)
-  $4244.CompletionStats ensureCompletionStats() => $_ensure(13);
+  $4245.CompletionStats ensureCompletionStats() => $_ensure(13);
 
   /// Output only. Time when the BatchPredictionJob was created.
   @$pb.TagNumber(15)
-  $1775.Timestamp get createTime => $_getN(14);
+  $1776.Timestamp get createTime => $_getN(14);
   @$pb.TagNumber(15)
-  set createTime($1775.Timestamp v) { setField(15, v); }
+  set createTime($1776.Timestamp v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasCreateTime() => $_has(14);
   @$pb.TagNumber(15)
   void clearCreateTime() => clearField(15);
   @$pb.TagNumber(15)
-  $1775.Timestamp ensureCreateTime() => $_ensure(14);
+  $1776.Timestamp ensureCreateTime() => $_ensure(14);
 
   /// Output only. Time when the BatchPredictionJob for the first time entered
   /// the `JOB_STATE_RUNNING` state.
   @$pb.TagNumber(16)
-  $1775.Timestamp get startTime => $_getN(15);
+  $1776.Timestamp get startTime => $_getN(15);
   @$pb.TagNumber(16)
-  set startTime($1775.Timestamp v) { setField(16, v); }
+  set startTime($1776.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasStartTime() => $_has(15);
   @$pb.TagNumber(16)
   void clearStartTime() => clearField(16);
   @$pb.TagNumber(16)
-  $1775.Timestamp ensureStartTime() => $_ensure(15);
+  $1776.Timestamp ensureStartTime() => $_ensure(15);
 
   /// Output only. Time when the BatchPredictionJob entered any of the following
   /// states: `JOB_STATE_SUCCEEDED`, `JOB_STATE_FAILED`, `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(17)
-  $1775.Timestamp get endTime => $_getN(16);
+  $1776.Timestamp get endTime => $_getN(16);
   @$pb.TagNumber(17)
-  set endTime($1775.Timestamp v) { setField(17, v); }
+  set endTime($1776.Timestamp v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasEndTime() => $_has(16);
   @$pb.TagNumber(17)
   void clearEndTime() => clearField(17);
   @$pb.TagNumber(17)
-  $1775.Timestamp ensureEndTime() => $_ensure(16);
+  $1776.Timestamp ensureEndTime() => $_ensure(16);
 
   /// Output only. Time when the BatchPredictionJob was most recently updated.
   @$pb.TagNumber(18)
-  $1775.Timestamp get updateTime => $_getN(17);
+  $1776.Timestamp get updateTime => $_getN(17);
   @$pb.TagNumber(18)
-  set updateTime($1775.Timestamp v) { setField(18, v); }
+  set updateTime($1776.Timestamp v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasUpdateTime() => $_has(17);
   @$pb.TagNumber(18)
   void clearUpdateTime() => clearField(18);
   @$pb.TagNumber(18)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(17);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(17);
 
   ///  The labels with user-defined metadata to organize BatchPredictionJobs.
   ///
@@ -1036,15 +1036,15 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
   /// is set, then all resources created by the BatchPredictionJob will be
   /// encrypted with the provided encryption key.
   @$pb.TagNumber(24)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(20);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(20);
   @$pb.TagNumber(24)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(24, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasEncryptionSpec() => $_has(20);
   @$pb.TagNumber(24)
   void clearEncryptionSpec() => clearField(24);
   @$pb.TagNumber(24)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(20);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(20);
 
   ///  Explanation configuration for this BatchPredictionJob. Can be
   ///  specified only if
@@ -1061,15 +1061,15 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
   ///  [Model.explanation_spec][google.cloud.aiplatform.v1.Model.explanation_spec]
   ///  object is inherited.
   @$pb.TagNumber(25)
-  $4239.ExplanationSpec get explanationSpec => $_getN(21);
+  $4240.ExplanationSpec get explanationSpec => $_getN(21);
   @$pb.TagNumber(25)
-  set explanationSpec($4239.ExplanationSpec v) { setField(25, v); }
+  set explanationSpec($4240.ExplanationSpec v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasExplanationSpec() => $_has(21);
   @$pb.TagNumber(25)
   void clearExplanationSpec() => clearField(25);
   @$pb.TagNumber(25)
-  $4239.ExplanationSpec ensureExplanationSpec() => $_ensure(21);
+  $4240.ExplanationSpec ensureExplanationSpec() => $_ensure(21);
 
   /// Configuration for how to convert batch prediction input instances to the
   /// prediction instances that are sent to the Model.
@@ -1088,15 +1088,15 @@ class BatchPredictionJob extends $pb.GeneratedMessage {
   /// requiring uploading to model registry.
   /// Exactly one of model and unmanaged_container_model must be set.
   @$pb.TagNumber(28)
-  $4245.UnmanagedContainerModel get unmanagedContainerModel => $_getN(23);
+  $4246.UnmanagedContainerModel get unmanagedContainerModel => $_getN(23);
   @$pb.TagNumber(28)
-  set unmanagedContainerModel($4245.UnmanagedContainerModel v) { setField(28, v); }
+  set unmanagedContainerModel($4246.UnmanagedContainerModel v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasUnmanagedContainerModel() => $_has(23);
   @$pb.TagNumber(28)
   void clearUnmanagedContainerModel() => clearField(28);
   @$pb.TagNumber(28)
-  $4245.UnmanagedContainerModel ensureUnmanagedContainerModel() => $_ensure(23);
+  $4246.UnmanagedContainerModel ensureUnmanagedContainerModel() => $_ensure(23);
 
   ///  The service account that the DeployedModel's container runs as. If not
   ///  specified, a system generated one will be used, which

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'tags.pbenum.dart';
 
 export 'tags.pbenum.dart';
@@ -229,7 +229,7 @@ class TagField extends $pb.GeneratedMessage {
     $core.double? doubleValue,
     $core.String? stringValue,
     $core.bool? boolValue,
-    $1775.Timestamp? timestampValue,
+    $1776.Timestamp? timestampValue,
     TagField_EnumValue? enumValue,
     $core.int? order,
   }) {
@@ -275,7 +275,7 @@ class TagField extends $pb.GeneratedMessage {
     ..a<$core.double>(2, _omitFieldNames ? '' : 'doubleValue', $pb.PbFieldType.OD)
     ..aOS(3, _omitFieldNames ? '' : 'stringValue')
     ..aOB(4, _omitFieldNames ? '' : 'boolValue')
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'timestampValue', subBuilder: $1776.Timestamp.create)
     ..aOM<TagField_EnumValue>(6, _omitFieldNames ? '' : 'enumValue', subBuilder: TagField_EnumValue.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'order', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -347,15 +347,15 @@ class TagField extends $pb.GeneratedMessage {
 
   /// Holds the value for a tag field with timestamp type.
   @$pb.TagNumber(5)
-  $1775.Timestamp get timestampValue => $_getN(4);
+  $1776.Timestamp get timestampValue => $_getN(4);
   @$pb.TagNumber(5)
-  set timestampValue($1775.Timestamp v) { setField(5, v); }
+  set timestampValue($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTimestampValue() => $_has(4);
   @$pb.TagNumber(5)
   void clearTimestampValue() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureTimestampValue() => $_ensure(4);
+  $1776.Timestamp ensureTimestampValue() => $_ensure(4);
 
   /// Holds the value for a tag field with enum type. This value must be
   /// one of the allowed values in the definition of this enum.

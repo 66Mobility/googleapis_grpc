@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../enums/response_content_type.pbenum.dart' as $3796;
-import '../resources/asset_group_listing_group_filter.pb.dart' as $3805;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../enums/response_content_type.pbenum.dart' as $3797;
+import '../resources/asset_group_listing_group_filter.pb.dart' as $3806;
 
 /// Request message for
 /// [AssetGroupListingGroupFilterService.MutateAssetGroupListingGroupFilters][google.ads.googleads.v17.services.AssetGroupListingGroupFilterService.MutateAssetGroupListingGroupFilters].
@@ -26,7 +26,7 @@ class MutateAssetGroupListingGroupFiltersRequest extends $pb.GeneratedMessage {
     $core.String? customerId,
     $core.Iterable<AssetGroupListingGroupFilterOperation>? operations,
     $core.bool? validateOnly,
-    $3796.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3797.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -51,7 +51,7 @@ class MutateAssetGroupListingGroupFiltersRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..pc<AssetGroupListingGroupFilterOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: AssetGroupListingGroupFilterOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3796.ResponseContentTypeEnum_ResponseContentType>(4, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3796.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3796.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3796.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3797.ResponseContentTypeEnum_ResponseContentType>(4, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3797.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3797.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3797.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -106,9 +106,9 @@ class MutateAssetGroupListingGroupFiltersRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(4)
-  $3796.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
+  $3797.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
   @$pb.TagNumber(4)
-  set responseContentType($3796.ResponseContentTypeEnum_ResponseContentType v) { setField(4, v); }
+  set responseContentType($3797.ResponseContentTypeEnum_ResponseContentType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResponseContentType() => $_has(3);
   @$pb.TagNumber(4)
@@ -125,10 +125,10 @@ enum AssetGroupListingGroupFilterOperation_Operation {
 /// A single operation (create, remove) on an asset group listing group filter.
 class AssetGroupListingGroupFilterOperation extends $pb.GeneratedMessage {
   factory AssetGroupListingGroupFilterOperation({
-    $3805.AssetGroupListingGroupFilter? create_1,
-    $3805.AssetGroupListingGroupFilter? update,
+    $3806.AssetGroupListingGroupFilter? create_1,
+    $3806.AssetGroupListingGroupFilter? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -157,10 +157,10 @@ class AssetGroupListingGroupFilterOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AssetGroupListingGroupFilterOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3805.AssetGroupListingGroupFilter>(1, _omitFieldNames ? '' : 'create', subBuilder: $3805.AssetGroupListingGroupFilter.create)
-    ..aOM<$3805.AssetGroupListingGroupFilter>(2, _omitFieldNames ? '' : 'update', subBuilder: $3805.AssetGroupListingGroupFilter.create)
+    ..aOM<$3806.AssetGroupListingGroupFilter>(1, _omitFieldNames ? '' : 'create', subBuilder: $3806.AssetGroupListingGroupFilter.create)
+    ..aOM<$3806.AssetGroupListingGroupFilter>(2, _omitFieldNames ? '' : 'update', subBuilder: $3806.AssetGroupListingGroupFilter.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -191,28 +191,28 @@ class AssetGroupListingGroupFilterOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new asset group
   /// listing group filter.
   @$pb.TagNumber(1)
-  $3805.AssetGroupListingGroupFilter get create_1 => $_getN(0);
+  $3806.AssetGroupListingGroupFilter get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3805.AssetGroupListingGroupFilter v) { setField(1, v); }
+  set create_1($3806.AssetGroupListingGroupFilter v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3805.AssetGroupListingGroupFilter ensureCreate_1() => $_ensure(0);
+  $3806.AssetGroupListingGroupFilter ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The asset group listing group filter is expected to
   /// have a valid resource name.
   @$pb.TagNumber(2)
-  $3805.AssetGroupListingGroupFilter get update => $_getN(1);
+  $3806.AssetGroupListingGroupFilter get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3805.AssetGroupListingGroupFilter v) { setField(2, v); }
+  set update($3806.AssetGroupListingGroupFilter v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3805.AssetGroupListingGroupFilter ensureUpdate() => $_ensure(1);
+  $3806.AssetGroupListingGroupFilter ensureUpdate() => $_ensure(1);
 
   /// Remove operation: A resource name for the removed asset group listing
   /// group filter is expected, in this format:
@@ -231,15 +231,15 @@ class AssetGroupListingGroupFilterOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for an asset group listing group filter mutate.
@@ -292,7 +292,7 @@ class MutateAssetGroupListingGroupFiltersResponse extends $pb.GeneratedMessage {
 class MutateAssetGroupListingGroupFilterResult extends $pb.GeneratedMessage {
   factory MutateAssetGroupListingGroupFilterResult({
     $core.String? resourceName,
-    $3805.AssetGroupListingGroupFilter? assetGroupListingGroupFilter,
+    $3806.AssetGroupListingGroupFilter? assetGroupListingGroupFilter,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -309,7 +309,7 @@ class MutateAssetGroupListingGroupFilterResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateAssetGroupListingGroupFilterResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3805.AssetGroupListingGroupFilter>(2, _omitFieldNames ? '' : 'assetGroupListingGroupFilter', subBuilder: $3805.AssetGroupListingGroupFilter.create)
+    ..aOM<$3806.AssetGroupListingGroupFilter>(2, _omitFieldNames ? '' : 'assetGroupListingGroupFilter', subBuilder: $3806.AssetGroupListingGroupFilter.create)
     ..hasRequiredFields = false
   ;
 
@@ -348,15 +348,15 @@ class MutateAssetGroupListingGroupFilterResult extends $pb.GeneratedMessage {
   /// mutate. The field will only be returned when response_content_type is set
   /// to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3805.AssetGroupListingGroupFilter get assetGroupListingGroupFilter => $_getN(1);
+  $3806.AssetGroupListingGroupFilter get assetGroupListingGroupFilter => $_getN(1);
   @$pb.TagNumber(2)
-  set assetGroupListingGroupFilter($3805.AssetGroupListingGroupFilter v) { setField(2, v); }
+  set assetGroupListingGroupFilter($3806.AssetGroupListingGroupFilter v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAssetGroupListingGroupFilter() => $_has(1);
   @$pb.TagNumber(2)
   void clearAssetGroupListingGroupFilter() => clearField(2);
   @$pb.TagNumber(2)
-  $3805.AssetGroupListingGroupFilter ensureAssetGroupListingGroupFilter() => $_ensure(1);
+  $3806.AssetGroupListingGroupFilter ensureAssetGroupListingGroupFilter() => $_ensure(1);
 }
 
 

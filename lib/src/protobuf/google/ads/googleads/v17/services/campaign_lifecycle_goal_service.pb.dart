@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../resources/campaign_lifecycle_goal.pb.dart' as $3946;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../resources/campaign_lifecycle_goal.pb.dart' as $3947;
 
 /// Request message for
 /// [CampaignLifecycleGoalService.configureCampaignLifecycleGoals][].
@@ -111,9 +111,9 @@ enum CampaignLifecycleGoalOperation_Operation {
 /// A single operation on a campaign lifecycle goal.
 class CampaignLifecycleGoalOperation extends $pb.GeneratedMessage {
   factory CampaignLifecycleGoalOperation({
-    $3946.CampaignLifecycleGoal? create_1,
-    $2209.FieldMask? updateMask,
-    $3946.CampaignLifecycleGoal? update,
+    $3947.CampaignLifecycleGoal? create_1,
+    $2210.FieldMask? updateMask,
+    $3947.CampaignLifecycleGoal? update,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -138,9 +138,9 @@ class CampaignLifecycleGoalOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CampaignLifecycleGoalOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 3])
-    ..aOM<$3946.CampaignLifecycleGoal>(1, _omitFieldNames ? '' : 'create', subBuilder: $3946.CampaignLifecycleGoal.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
-    ..aOM<$3946.CampaignLifecycleGoal>(3, _omitFieldNames ? '' : 'update', subBuilder: $3946.CampaignLifecycleGoal.create)
+    ..aOM<$3947.CampaignLifecycleGoal>(1, _omitFieldNames ? '' : 'create', subBuilder: $3947.CampaignLifecycleGoal.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$3947.CampaignLifecycleGoal>(3, _omitFieldNames ? '' : 'update', subBuilder: $3947.CampaignLifecycleGoal.create)
     ..hasRequiredFields = false
   ;
 
@@ -171,41 +171,41 @@ class CampaignLifecycleGoalOperation extends $pb.GeneratedMessage {
   /// Create operation: Create a new campaign lifecycle goal. The campaign
   /// field should be set for this operation.
   @$pb.TagNumber(1)
-  $3946.CampaignLifecycleGoal get create_1 => $_getN(0);
+  $3947.CampaignLifecycleGoal get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3946.CampaignLifecycleGoal v) { setField(1, v); }
+  set create_1($3947.CampaignLifecycleGoal v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3946.CampaignLifecycleGoal ensureCreate_1() => $_ensure(0);
+  $3947.CampaignLifecycleGoal ensureCreate_1() => $_ensure(0);
 
   /// Optional. FieldMask that determines which resource fields are modified in
   /// an update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Update operation: Update an existing campaign lifecycle goal. The
   /// campaign field should not be set for this operation.
   @$pb.TagNumber(3)
-  $3946.CampaignLifecycleGoal get update => $_getN(2);
+  $3947.CampaignLifecycleGoal get update => $_getN(2);
   @$pb.TagNumber(3)
-  set update($3946.CampaignLifecycleGoal v) { setField(3, v); }
+  set update($3947.CampaignLifecycleGoal v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdate() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdate() => clearField(3);
   @$pb.TagNumber(3)
-  $3946.CampaignLifecycleGoal ensureUpdate() => $_ensure(2);
+  $3947.CampaignLifecycleGoal ensureUpdate() => $_ensure(2);
 }
 
 /// Response message for

@@ -1,0 +1,47 @@
+// Generated file. Do not modify.
+
+library google_maps_routes_v1;
+
+export 'src/protobuf/google/maps/routes/v1/compute_custom_routes_response.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/route.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_custom_routes_request.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_routes_request.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/toll_passes.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/custom_route.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/polyline.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_routes_request.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_custom_routes_response.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/vehicle_emission_type.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/fallback_info.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/toll_passes.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/waypoint.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_routes_response.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/route_matrix_element.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_route_matrix_request.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/route_service.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/route_matrix_element.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/route_service.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_route_matrix_request.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/custom_route.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/route_service.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/waypoint.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_custom_routes_request.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/vehicle_emission_type.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/route.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_custom_routes_response.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/fallback_info.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/polyline.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/waypoint.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/route_matrix_element.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_routes_response.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/route_service.pbgrpc.dart';
+export 'src/protobuf/google/maps/routes/v1/polyline.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_routes_response.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_route_matrix_request.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_routes_request.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/compute_custom_routes_request.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/route.pbjson.dart';
+export 'src/protobuf/google/maps/routes/v1/vehicle_emission_type.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/custom_route.pbenum.dart';
+export 'src/protobuf/google/maps/routes/v1/fallback_info.pb.dart';
+export 'src/protobuf/google/maps/routes/v1/toll_passes.pbjson.dart';

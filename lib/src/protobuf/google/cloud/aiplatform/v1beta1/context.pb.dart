@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Instance of a general context.
 class Context extends $pb.GeneratedMessage {
@@ -23,12 +23,12 @@ class Context extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? etag,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Iterable<$core.String>? parentContexts,
     $core.String? schemaTitle,
     $core.String? schemaVersion,
-    $1734.Struct? metadata,
+    $1735.Struct? metadata,
     $core.String? description,
   }) {
     final $result = create();
@@ -76,12 +76,12 @@ class Context extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Context.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..pPS(12, _omitFieldNames ? '' : 'parentContexts')
     ..aOS(13, _omitFieldNames ? '' : 'schemaTitle')
     ..aOS(14, _omitFieldNames ? '' : 'schemaVersion')
-    ..aOM<$1734.Struct>(15, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Struct.create)
+    ..aOM<$1735.Struct>(15, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
     ..aOS(16, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
   ;
@@ -151,27 +151,27 @@ class Context extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Context was created.
   @$pb.TagNumber(10)
-  $1775.Timestamp get createTime => $_getN(4);
+  $1776.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(10)
-  set createTime($1775.Timestamp v) { setField(10, v); }
+  set createTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(10)
   void clearCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureCreateTime() => $_ensure(4);
+  $1776.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. Timestamp when this Context was last updated.
   @$pb.TagNumber(11)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(11)
-  set updateTime($1775.Timestamp v) { setField(11, v); }
+  set updateTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(11)
   void clearUpdateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. A list of resource names of Contexts that are parents of this
   /// Context. A Context may have at most 10 parent_contexts.
@@ -210,15 +210,15 @@ class Context extends $pb.GeneratedMessage {
   /// Top level metadata keys' heading and trailing spaces will be trimmed.
   /// The size of this field should not exceed 200KB.
   @$pb.TagNumber(15)
-  $1734.Struct get metadata => $_getN(9);
+  $1735.Struct get metadata => $_getN(9);
   @$pb.TagNumber(15)
-  set metadata($1734.Struct v) { setField(15, v); }
+  set metadata($1735.Struct v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasMetadata() => $_has(9);
   @$pb.TagNumber(15)
   void clearMetadata() => clearField(15);
   @$pb.TagNumber(15)
-  $1734.Struct ensureMetadata() => $_ensure(9);
+  $1735.Struct ensureMetadata() => $_ensure(9);
 
   /// Description of the Context
   @$pb.TagNumber(16)

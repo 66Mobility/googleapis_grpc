@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../rpc/status.pb.dart' as $1795;
-import 'job_state.pbenum.dart' as $4527;
-import 'operation_metadata.pb.dart' as $4526;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../rpc/status.pb.dart' as $1796;
+import 'job_state.pbenum.dart' as $4529;
+import 'operation_metadata.pb.dart' as $4528;
 import 'service.pbenum.dart';
 
 export 'service.pbenum.dart';
@@ -575,7 +575,7 @@ class AffinityClusteringConfig extends $pb.GeneratedMessage {
 /// Details of operations that perform deletes of any entities.
 class DeleteOperationMetadata extends $pb.GeneratedMessage {
   factory DeleteOperationMetadata({
-    $4526.CommonOperationMetadata? commonMetadata,
+    $4528.CommonOperationMetadata? commonMetadata,
   }) {
     final $result = create();
     if (commonMetadata != null) {
@@ -588,7 +588,7 @@ class DeleteOperationMetadata extends $pb.GeneratedMessage {
   factory DeleteOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.enterpriseknowledgegraph.v1'), createEmptyInstance: create)
-    ..aOM<$4526.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4526.CommonOperationMetadata.create)
+    ..aOM<$4528.CommonOperationMetadata>(1, _omitFieldNames ? '' : 'commonMetadata', subBuilder: $4528.CommonOperationMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -615,15 +615,15 @@ class DeleteOperationMetadata extends $pb.GeneratedMessage {
 
   /// The common part of the operation metadata.
   @$pb.TagNumber(1)
-  $4526.CommonOperationMetadata get commonMetadata => $_getN(0);
+  $4528.CommonOperationMetadata get commonMetadata => $_getN(0);
   @$pb.TagNumber(1)
-  set commonMetadata($4526.CommonOperationMetadata v) { setField(1, v); }
+  set commonMetadata($4528.CommonOperationMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCommonMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearCommonMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $4526.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
+  $4528.CommonOperationMetadata ensureCommonMetadata() => $_ensure(0);
 }
 
 /// Request message for CreateEntityReconciliationJob.
@@ -1028,11 +1028,11 @@ class EntityReconciliationJob extends $pb.GeneratedMessage {
     $core.String? name,
     InputConfig? inputConfig,
     OutputConfig? outputConfig,
-    $4527.JobState? state,
-    $1795.Status? error,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
+    $4529.JobState? state,
+    $1796.Status? error,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
     ReconConfig? reconConfig,
   }) {
     final $result = create();
@@ -1073,11 +1073,11 @@ class EntityReconciliationJob extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<InputConfig>(2, _omitFieldNames ? '' : 'inputConfig', subBuilder: InputConfig.create)
     ..aOM<OutputConfig>(3, _omitFieldNames ? '' : 'outputConfig', subBuilder: OutputConfig.create)
-    ..e<$4527.JobState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4527.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4527.JobState.valueOf, enumValues: $4527.JobState.values)
-    ..aOM<$1795.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..e<$4529.JobState>(4, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4529.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4529.JobState.valueOf, enumValues: $4529.JobState.values)
+    ..aOM<$1796.Status>(5, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOM<ReconConfig>(9, _omitFieldNames ? '' : 'reconConfig', subBuilder: ReconConfig.create)
     ..hasRequiredFields = false
   ;
@@ -1139,9 +1139,9 @@ class EntityReconciliationJob extends $pb.GeneratedMessage {
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(4)
-  $4527.JobState get state => $_getN(3);
+  $4529.JobState get state => $_getN(3);
   @$pb.TagNumber(4)
-  set state($4527.JobState v) { setField(4, v); }
+  set state($4529.JobState v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasState() => $_has(3);
   @$pb.TagNumber(4)
@@ -1150,54 +1150,54 @@ class EntityReconciliationJob extends $pb.GeneratedMessage {
   /// Output only. Only populated when the job's state is JOB_STATE_FAILED or
   /// JOB_STATE_CANCELLED.
   @$pb.TagNumber(5)
-  $1795.Status get error => $_getN(4);
+  $1796.Status get error => $_getN(4);
   @$pb.TagNumber(5)
-  set error($1795.Status v) { setField(5, v); }
+  set error($1796.Status v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasError() => $_has(4);
   @$pb.TagNumber(5)
   void clearError() => clearField(5);
   @$pb.TagNumber(5)
-  $1795.Status ensureError() => $_ensure(4);
+  $1796.Status ensureError() => $_ensure(4);
 
   /// Output only. Time when the EntityReconciliationJob was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. Time when the EntityReconciliationJob entered any of the
   /// following states: `JOB_STATE_SUCCEEDED`, `JOB_STATE_FAILED`,
   /// `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(7)
-  $1775.Timestamp get endTime => $_getN(6);
+  $1776.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
-  set endTime($1775.Timestamp v) { setField(7, v); }
+  set endTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureEndTime() => $_ensure(6);
+  $1776.Timestamp ensureEndTime() => $_ensure(6);
 
   /// Output only. Time when the EntityReconciliationJob was most recently
   /// updated.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Optional. Recon configs to adjust the clustering behavior.
   @$pb.TagNumber(9)
@@ -1290,9 +1290,9 @@ class LookupRequest extends $pb.GeneratedMessage {
 /// [EnterpriseKnowledgeGraphService.Lookup][google.cloud.enterpriseknowledgegraph.v1.EnterpriseKnowledgeGraphService.Lookup].
 class LookupResponse extends $pb.GeneratedMessage {
   factory LookupResponse({
-    $1734.Value? context,
-    $1734.Value? type,
-    $1734.ListValue? itemListElement,
+    $1735.Value? context,
+    $1735.Value? type,
+    $1735.ListValue? itemListElement,
   }) {
     final $result = create();
     if (context != null) {
@@ -1311,9 +1311,9 @@ class LookupResponse extends $pb.GeneratedMessage {
   factory LookupResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LookupResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.enterpriseknowledgegraph.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1734.Value.create)
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1734.Value.create)
-    ..aOM<$1734.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1734.ListValue.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1735.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1735.Value.create)
+    ..aOM<$1735.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1735.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1341,39 +1341,39 @@ class LookupResponse extends $pb.GeneratedMessage {
   /// The local context applicable for the response. See more details at
   /// http://www.w3.org/TR/json-ld/#context-definitions.
   @$pb.TagNumber(1)
-  $1734.Value get context => $_getN(0);
+  $1735.Value get context => $_getN(0);
   @$pb.TagNumber(1)
-  set context($1734.Value v) { setField(1, v); }
+  set context($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasContext() => $_has(0);
   @$pb.TagNumber(1)
   void clearContext() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureContext() => $_ensure(0);
+  $1735.Value ensureContext() => $_ensure(0);
 
   /// The schema type of top-level JSON-LD object, e.g. ItemList.
   @$pb.TagNumber(2)
-  $1734.Value get type => $_getN(1);
+  $1735.Value get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($1734.Value v) { setField(2, v); }
+  set type($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureType() => $_ensure(1);
+  $1735.Value ensureType() => $_ensure(1);
 
   /// The item list of search results.
   @$pb.TagNumber(3)
-  $1734.ListValue get itemListElement => $_getN(2);
+  $1735.ListValue get itemListElement => $_getN(2);
   @$pb.TagNumber(3)
-  set itemListElement($1734.ListValue v) { setField(3, v); }
+  set itemListElement($1735.ListValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasItemListElement() => $_has(2);
   @$pb.TagNumber(3)
   void clearItemListElement() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.ListValue ensureItemListElement() => $_ensure(2);
+  $1735.ListValue ensureItemListElement() => $_ensure(2);
 }
 
 /// Request message for
@@ -1384,7 +1384,7 @@ class SearchRequest extends $pb.GeneratedMessage {
     $core.String? query,
     $core.Iterable<$core.String>? languages,
     $core.Iterable<$core.String>? types,
-    $1780.Int32Value? limit,
+    $1781.Int32Value? limit,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1413,7 +1413,7 @@ class SearchRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'query')
     ..pPS(3, _omitFieldNames ? '' : 'languages')
     ..pPS(4, _omitFieldNames ? '' : 'types')
-    ..aOM<$1780.Int32Value>(6, _omitFieldNames ? '' : 'limit', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(6, _omitFieldNames ? '' : 'limit', subBuilder: $1781.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1473,24 +1473,24 @@ class SearchRequest extends $pb.GeneratedMessage {
 
   /// Limits the number of entities to be returned.
   @$pb.TagNumber(6)
-  $1780.Int32Value get limit => $_getN(4);
+  $1781.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(6)
-  set limit($1780.Int32Value v) { setField(6, v); }
+  set limit($1781.Int32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLimit() => $_has(4);
   @$pb.TagNumber(6)
   void clearLimit() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int32Value ensureLimit() => $_ensure(4);
+  $1781.Int32Value ensureLimit() => $_ensure(4);
 }
 
 /// Response message for
 /// [EnterpriseKnowledgeGraphService.Search][google.cloud.enterpriseknowledgegraph.v1.EnterpriseKnowledgeGraphService.Search].
 class SearchResponse extends $pb.GeneratedMessage {
   factory SearchResponse({
-    $1734.Value? context,
-    $1734.Value? type,
-    $1734.ListValue? itemListElement,
+    $1735.Value? context,
+    $1735.Value? type,
+    $1735.ListValue? itemListElement,
   }) {
     final $result = create();
     if (context != null) {
@@ -1509,9 +1509,9 @@ class SearchResponse extends $pb.GeneratedMessage {
   factory SearchResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.enterpriseknowledgegraph.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1734.Value.create)
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1734.Value.create)
-    ..aOM<$1734.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1734.ListValue.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1735.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1735.Value.create)
+    ..aOM<$1735.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1735.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1539,39 +1539,39 @@ class SearchResponse extends $pb.GeneratedMessage {
   /// The local context applicable for the response. See more details at
   /// http://www.w3.org/TR/json-ld/#context-definitions.
   @$pb.TagNumber(1)
-  $1734.Value get context => $_getN(0);
+  $1735.Value get context => $_getN(0);
   @$pb.TagNumber(1)
-  set context($1734.Value v) { setField(1, v); }
+  set context($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasContext() => $_has(0);
   @$pb.TagNumber(1)
   void clearContext() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureContext() => $_ensure(0);
+  $1735.Value ensureContext() => $_ensure(0);
 
   /// The schema type of top-level JSON-LD object, e.g. ItemList.
   @$pb.TagNumber(2)
-  $1734.Value get type => $_getN(1);
+  $1735.Value get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($1734.Value v) { setField(2, v); }
+  set type($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureType() => $_ensure(1);
+  $1735.Value ensureType() => $_ensure(1);
 
   /// The item list of search results.
   @$pb.TagNumber(3)
-  $1734.ListValue get itemListElement => $_getN(2);
+  $1735.ListValue get itemListElement => $_getN(2);
   @$pb.TagNumber(3)
-  set itemListElement($1734.ListValue v) { setField(3, v); }
+  set itemListElement($1735.ListValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasItemListElement() => $_has(2);
   @$pb.TagNumber(3)
   void clearItemListElement() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.ListValue ensureItemListElement() => $_ensure(2);
+  $1735.ListValue ensureItemListElement() => $_ensure(2);
 }
 
 /// Request message for
@@ -1652,9 +1652,9 @@ class LookupPublicKgRequest extends $pb.GeneratedMessage {
 /// [EnterpriseKnowledgeGraphService.LookupPublicKg][google.cloud.enterpriseknowledgegraph.v1.EnterpriseKnowledgeGraphService.LookupPublicKg].
 class LookupPublicKgResponse extends $pb.GeneratedMessage {
   factory LookupPublicKgResponse({
-    $1734.Value? context,
-    $1734.Value? type,
-    $1734.ListValue? itemListElement,
+    $1735.Value? context,
+    $1735.Value? type,
+    $1735.ListValue? itemListElement,
   }) {
     final $result = create();
     if (context != null) {
@@ -1673,9 +1673,9 @@ class LookupPublicKgResponse extends $pb.GeneratedMessage {
   factory LookupPublicKgResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LookupPublicKgResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.enterpriseknowledgegraph.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1734.Value.create)
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1734.Value.create)
-    ..aOM<$1734.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1734.ListValue.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1735.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1735.Value.create)
+    ..aOM<$1735.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1735.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1703,39 +1703,39 @@ class LookupPublicKgResponse extends $pb.GeneratedMessage {
   /// The local context applicable for the response. See more details at
   /// http://www.w3.org/TR/json-ld/#context-definitions.
   @$pb.TagNumber(1)
-  $1734.Value get context => $_getN(0);
+  $1735.Value get context => $_getN(0);
   @$pb.TagNumber(1)
-  set context($1734.Value v) { setField(1, v); }
+  set context($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasContext() => $_has(0);
   @$pb.TagNumber(1)
   void clearContext() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureContext() => $_ensure(0);
+  $1735.Value ensureContext() => $_ensure(0);
 
   /// The schema type of top-level JSON-LD object, e.g. ItemList.
   @$pb.TagNumber(2)
-  $1734.Value get type => $_getN(1);
+  $1735.Value get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($1734.Value v) { setField(2, v); }
+  set type($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureType() => $_ensure(1);
+  $1735.Value ensureType() => $_ensure(1);
 
   /// The item list of search results.
   @$pb.TagNumber(3)
-  $1734.ListValue get itemListElement => $_getN(2);
+  $1735.ListValue get itemListElement => $_getN(2);
   @$pb.TagNumber(3)
-  set itemListElement($1734.ListValue v) { setField(3, v); }
+  set itemListElement($1735.ListValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasItemListElement() => $_has(2);
   @$pb.TagNumber(3)
   void clearItemListElement() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.ListValue ensureItemListElement() => $_ensure(2);
+  $1735.ListValue ensureItemListElement() => $_ensure(2);
 }
 
 /// Request message for
@@ -1746,7 +1746,7 @@ class SearchPublicKgRequest extends $pb.GeneratedMessage {
     $core.String? query,
     $core.Iterable<$core.String>? languages,
     $core.Iterable<$core.String>? types,
-    $1780.Int32Value? limit,
+    $1781.Int32Value? limit,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1775,7 +1775,7 @@ class SearchPublicKgRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'query')
     ..pPS(3, _omitFieldNames ? '' : 'languages')
     ..pPS(4, _omitFieldNames ? '' : 'types')
-    ..aOM<$1780.Int32Value>(6, _omitFieldNames ? '' : 'limit', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(6, _omitFieldNames ? '' : 'limit', subBuilder: $1781.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1835,24 +1835,24 @@ class SearchPublicKgRequest extends $pb.GeneratedMessage {
 
   /// Limits the number of entities to be returned.
   @$pb.TagNumber(6)
-  $1780.Int32Value get limit => $_getN(4);
+  $1781.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(6)
-  set limit($1780.Int32Value v) { setField(6, v); }
+  set limit($1781.Int32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLimit() => $_has(4);
   @$pb.TagNumber(6)
   void clearLimit() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.Int32Value ensureLimit() => $_ensure(4);
+  $1781.Int32Value ensureLimit() => $_ensure(4);
 }
 
 /// Response message for
 /// [EnterpriseKnowledgeGraphService.Search][google.cloud.enterpriseknowledgegraph.v1.EnterpriseKnowledgeGraphService.Search].
 class SearchPublicKgResponse extends $pb.GeneratedMessage {
   factory SearchPublicKgResponse({
-    $1734.Value? context,
-    $1734.Value? type,
-    $1734.ListValue? itemListElement,
+    $1735.Value? context,
+    $1735.Value? type,
+    $1735.ListValue? itemListElement,
   }) {
     final $result = create();
     if (context != null) {
@@ -1871,9 +1871,9 @@ class SearchPublicKgResponse extends $pb.GeneratedMessage {
   factory SearchPublicKgResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchPublicKgResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.enterpriseknowledgegraph.v1'), createEmptyInstance: create)
-    ..aOM<$1734.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1734.Value.create)
-    ..aOM<$1734.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1734.Value.create)
-    ..aOM<$1734.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1734.ListValue.create)
+    ..aOM<$1735.Value>(1, _omitFieldNames ? '' : 'context', subBuilder: $1735.Value.create)
+    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'type', subBuilder: $1735.Value.create)
+    ..aOM<$1735.ListValue>(3, _omitFieldNames ? '' : 'itemListElement', subBuilder: $1735.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -1901,39 +1901,39 @@ class SearchPublicKgResponse extends $pb.GeneratedMessage {
   /// The local context applicable for the response. See more details at
   /// http://www.w3.org/TR/json-ld/#context-definitions.
   @$pb.TagNumber(1)
-  $1734.Value get context => $_getN(0);
+  $1735.Value get context => $_getN(0);
   @$pb.TagNumber(1)
-  set context($1734.Value v) { setField(1, v); }
+  set context($1735.Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasContext() => $_has(0);
   @$pb.TagNumber(1)
   void clearContext() => clearField(1);
   @$pb.TagNumber(1)
-  $1734.Value ensureContext() => $_ensure(0);
+  $1735.Value ensureContext() => $_ensure(0);
 
   /// The schema type of top-level JSON-LD object, e.g. ItemList.
   @$pb.TagNumber(2)
-  $1734.Value get type => $_getN(1);
+  $1735.Value get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($1734.Value v) { setField(2, v); }
+  set type($1735.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Value ensureType() => $_ensure(1);
+  $1735.Value ensureType() => $_ensure(1);
 
   /// The item list of search results.
   @$pb.TagNumber(3)
-  $1734.ListValue get itemListElement => $_getN(2);
+  $1735.ListValue get itemListElement => $_getN(2);
   @$pb.TagNumber(3)
-  set itemListElement($1734.ListValue v) { setField(3, v); }
+  set itemListElement($1735.ListValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasItemListElement() => $_has(2);
   @$pb.TagNumber(3)
   void clearItemListElement() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.ListValue ensureItemListElement() => $_ensure(2);
+  $1735.ListValue ensureItemListElement() => $_ensure(2);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1794;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/any.pb.dart' as $1795;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 import 'build_status.pbenum.dart';
 
 export 'build_status.pbenum.dart';
@@ -23,9 +23,9 @@ export 'build_status.pbenum.dart';
 class BuildStatus extends $pb.GeneratedMessage {
   factory BuildStatus({
     BuildStatus_Result? result,
-    $1794.Any? details,
+    $1795.Any? details,
     $core.String? finalInvocationId,
-    $1780.Int32Value? buildToolExitCode,
+    $1781.Int32Value? buildToolExitCode,
     $core.String? errorMessage,
   }) {
     final $result = create();
@@ -52,9 +52,9 @@ class BuildStatus extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.devtools.build.v1'), createEmptyInstance: create)
     ..e<BuildStatus_Result>(1, _omitFieldNames ? '' : 'result', $pb.PbFieldType.OE, defaultOrMaker: BuildStatus_Result.UNKNOWN_STATUS, valueOf: BuildStatus_Result.valueOf, enumValues: BuildStatus_Result.values)
-    ..aOM<$1794.Any>(2, _omitFieldNames ? '' : 'details', subBuilder: $1794.Any.create)
+    ..aOM<$1795.Any>(2, _omitFieldNames ? '' : 'details', subBuilder: $1795.Any.create)
     ..aOS(3, _omitFieldNames ? '' : 'finalInvocationId')
-    ..aOM<$1780.Int32Value>(4, _omitFieldNames ? '' : 'buildToolExitCode', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(4, _omitFieldNames ? '' : 'buildToolExitCode', subBuilder: $1781.Int32Value.create)
     ..aOS(5, _omitFieldNames ? '' : 'errorMessage')
     ..hasRequiredFields = false
   ;
@@ -92,15 +92,15 @@ class BuildStatus extends $pb.GeneratedMessage {
 
   /// Fine-grained diagnostic information to complement the status.
   @$pb.TagNumber(2)
-  $1794.Any get details => $_getN(1);
+  $1795.Any get details => $_getN(1);
   @$pb.TagNumber(2)
-  set details($1794.Any v) { setField(2, v); }
+  set details($1795.Any v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $1794.Any ensureDetails() => $_ensure(1);
+  $1795.Any ensureDetails() => $_ensure(1);
 
   /// Final invocation ID of the build, if there was one.
   /// This field is only set on a status in BuildFinished event.
@@ -116,15 +116,15 @@ class BuildStatus extends $pb.GeneratedMessage {
   /// Build tool exit code. Integer value returned by the executed build tool.
   /// Might not be available in some cases, e.g., a build timeout.
   @$pb.TagNumber(4)
-  $1780.Int32Value get buildToolExitCode => $_getN(3);
+  $1781.Int32Value get buildToolExitCode => $_getN(3);
   @$pb.TagNumber(4)
-  set buildToolExitCode($1780.Int32Value v) { setField(4, v); }
+  set buildToolExitCode($1781.Int32Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBuildToolExitCode() => $_has(3);
   @$pb.TagNumber(4)
   void clearBuildToolExitCode() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.Int32Value ensureBuildToolExitCode() => $_ensure(3);
+  $1781.Int32Value ensureBuildToolExitCode() => $_ensure(3);
 
   /// Human-readable error message. Do not use for programmatic purposes.
   @$pb.TagNumber(5)

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import 'user_action_reference.pb.dart' as $4274;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import 'user_action_reference.pb.dart' as $4275;
 
 /// Used to assign specific AnnotationSpec to a particular area of a DataItem or
 /// the whole part of the DataItem.
@@ -23,11 +23,11 @@ class Annotation extends $pb.GeneratedMessage {
   factory Annotation({
     $core.String? name,
     $core.String? payloadSchemaUri,
-    $1734.Value? payload,
-    $1775.Timestamp? createTime,
-    $4274.UserActionReference? annotationSource,
+    $1735.Value? payload,
+    $1776.Timestamp? createTime,
+    $4275.UserActionReference? annotationSource,
     $core.Map<$core.String, $core.String>? labels,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
     $core.String? etag,
   }) {
     final $result = create();
@@ -64,11 +64,11 @@ class Annotation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Annotation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'payloadSchemaUri')
-    ..aOM<$1734.Value>(3, _omitFieldNames ? '' : 'payload', subBuilder: $1734.Value.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4274.UserActionReference>(5, _omitFieldNames ? '' : 'annotationSource', subBuilder: $4274.UserActionReference.create)
+    ..aOM<$1735.Value>(3, _omitFieldNames ? '' : 'payload', subBuilder: $1735.Value.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4275.UserActionReference>(5, _omitFieldNames ? '' : 'annotationSource', subBuilder: $4275.UserActionReference.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Annotation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..hasRequiredFields = false
   ;
@@ -124,39 +124,39 @@ class Annotation extends $pb.GeneratedMessage {
   /// Required. The schema of the payload can be found in
   /// [payload_schema][google.cloud.aiplatform.v1beta1.Annotation.payload_schema_uri].
   @$pb.TagNumber(3)
-  $1734.Value get payload => $_getN(2);
+  $1735.Value get payload => $_getN(2);
   @$pb.TagNumber(3)
-  set payload($1734.Value v) { setField(3, v); }
+  set payload($1735.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPayload() => $_has(2);
   @$pb.TagNumber(3)
   void clearPayload() => clearField(3);
   @$pb.TagNumber(3)
-  $1734.Value ensurePayload() => $_ensure(2);
+  $1735.Value ensurePayload() => $_ensure(2);
 
   /// Output only. Timestamp when this Annotation was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The source of the Annotation.
   @$pb.TagNumber(5)
-  $4274.UserActionReference get annotationSource => $_getN(4);
+  $4275.UserActionReference get annotationSource => $_getN(4);
   @$pb.TagNumber(5)
-  set annotationSource($4274.UserActionReference v) { setField(5, v); }
+  set annotationSource($4275.UserActionReference v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAnnotationSource() => $_has(4);
   @$pb.TagNumber(5)
   void clearAnnotationSource() => clearField(5);
   @$pb.TagNumber(5)
-  $4274.UserActionReference ensureAnnotationSource() => $_ensure(4);
+  $4275.UserActionReference ensureAnnotationSource() => $_ensure(4);
 
   ///  Optional. The labels with user-defined metadata to organize your
   ///  Annotations.
@@ -184,15 +184,15 @@ class Annotation extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this Annotation was last updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Optional. Used to perform consistent read-modify-write updates. If not set,
   /// a blind "overwrite" update happens.

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../enums/response_content_type.pbenum.dart' as $2352;
-import '../resources/conversion_goal_campaign_config.pb.dart' as $2379;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../enums/response_content_type.pbenum.dart' as $2353;
+import '../resources/conversion_goal_campaign_config.pb.dart' as $2380;
 
 /// Request message for
 /// [ConversionGoalCampaignConfigService.MutateConversionGoalCampaignConfigs][google.ads.googleads.v15.services.ConversionGoalCampaignConfigService.MutateConversionGoalCampaignConfigs].
@@ -24,7 +24,7 @@ class MutateConversionGoalCampaignConfigsRequest extends $pb.GeneratedMessage {
     $core.String? customerId,
     $core.Iterable<ConversionGoalCampaignConfigOperation>? operations,
     $core.bool? validateOnly,
-    $2352.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $2353.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -49,7 +49,7 @@ class MutateConversionGoalCampaignConfigsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'customerId')
     ..pc<ConversionGoalCampaignConfigOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: ConversionGoalCampaignConfigOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$2352.ResponseContentTypeEnum_ResponseContentType>(4, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2352.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2352.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2352.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$2353.ResponseContentTypeEnum_ResponseContentType>(4, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $2353.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $2353.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $2353.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -104,9 +104,9 @@ class MutateConversionGoalCampaignConfigsRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(4)
-  $2352.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
+  $2353.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(3);
   @$pb.TagNumber(4)
-  set responseContentType($2352.ResponseContentTypeEnum_ResponseContentType v) { setField(4, v); }
+  set responseContentType($2353.ResponseContentTypeEnum_ResponseContentType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasResponseContentType() => $_has(3);
   @$pb.TagNumber(4)
@@ -121,8 +121,8 @@ enum ConversionGoalCampaignConfigOperation_Operation {
 /// A single operation (update) on a conversion goal campaign config.
 class ConversionGoalCampaignConfigOperation extends $pb.GeneratedMessage {
   factory ConversionGoalCampaignConfigOperation({
-    $2379.ConversionGoalCampaignConfig? update,
-    $2209.FieldMask? updateMask,
+    $2380.ConversionGoalCampaignConfig? update,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (update != null) {
@@ -143,8 +143,8 @@ class ConversionGoalCampaignConfigOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionGoalCampaignConfigOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$2379.ConversionGoalCampaignConfig>(1, _omitFieldNames ? '' : 'update', subBuilder: $2379.ConversionGoalCampaignConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2380.ConversionGoalCampaignConfig>(1, _omitFieldNames ? '' : 'update', subBuilder: $2380.ConversionGoalCampaignConfig.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -175,27 +175,27 @@ class ConversionGoalCampaignConfigOperation extends $pb.GeneratedMessage {
   /// Update operation: The conversion goal campaign config is expected to have
   /// a valid resource name.
   @$pb.TagNumber(1)
-  $2379.ConversionGoalCampaignConfig get update => $_getN(0);
+  $2380.ConversionGoalCampaignConfig get update => $_getN(0);
   @$pb.TagNumber(1)
-  set update($2379.ConversionGoalCampaignConfig v) { setField(1, v); }
+  set update($2380.ConversionGoalCampaignConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdate() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdate() => clearField(1);
   @$pb.TagNumber(1)
-  $2379.ConversionGoalCampaignConfig ensureUpdate() => $_ensure(0);
+  $2380.ConversionGoalCampaignConfig ensureUpdate() => $_ensure(0);
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Response message for a conversion goal campaign config mutate.
@@ -248,7 +248,7 @@ class MutateConversionGoalCampaignConfigsResponse extends $pb.GeneratedMessage {
 class MutateConversionGoalCampaignConfigResult extends $pb.GeneratedMessage {
   factory MutateConversionGoalCampaignConfigResult({
     $core.String? resourceName,
-    $2379.ConversionGoalCampaignConfig? conversionGoalCampaignConfig,
+    $2380.ConversionGoalCampaignConfig? conversionGoalCampaignConfig,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -265,7 +265,7 @@ class MutateConversionGoalCampaignConfigResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateConversionGoalCampaignConfigResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$2379.ConversionGoalCampaignConfig>(2, _omitFieldNames ? '' : 'conversionGoalCampaignConfig', subBuilder: $2379.ConversionGoalCampaignConfig.create)
+    ..aOM<$2380.ConversionGoalCampaignConfig>(2, _omitFieldNames ? '' : 'conversionGoalCampaignConfig', subBuilder: $2380.ConversionGoalCampaignConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -304,15 +304,15 @@ class MutateConversionGoalCampaignConfigResult extends $pb.GeneratedMessage {
   /// mutate. The field will only be returned when response_content_type is set
   /// to "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $2379.ConversionGoalCampaignConfig get conversionGoalCampaignConfig => $_getN(1);
+  $2380.ConversionGoalCampaignConfig get conversionGoalCampaignConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set conversionGoalCampaignConfig($2379.ConversionGoalCampaignConfig v) { setField(2, v); }
+  set conversionGoalCampaignConfig($2380.ConversionGoalCampaignConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConversionGoalCampaignConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearConversionGoalCampaignConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $2379.ConversionGoalCampaignConfig ensureConversionGoalCampaignConfig() => $_ensure(1);
+  $2380.ConversionGoalCampaignConfig ensureConversionGoalCampaignConfig() => $_ensure(1);
 }
 
 

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/account_budget_proposal_type.pbenum.dart' as $3526;
-import '../enums/account_budget_status.pbenum.dart' as $3523;
-import '../enums/spending_limit_type.pbenum.dart' as $3525;
-import '../enums/time_type.pbenum.dart' as $3524;
+import '../enums/account_budget_proposal_type.pbenum.dart' as $3527;
+import '../enums/account_budget_status.pbenum.dart' as $3524;
+import '../enums/spending_limit_type.pbenum.dart' as $3526;
+import '../enums/time_type.pbenum.dart' as $3525;
 
 enum AccountBudget_PendingAccountBudgetProposal_EndTime {
   endTimeType, 
@@ -35,9 +35,9 @@ enum AccountBudget_PendingAccountBudgetProposal_SpendingLimit {
 /// if applicable.
 class AccountBudget_PendingAccountBudgetProposal extends $pb.GeneratedMessage {
   factory AccountBudget_PendingAccountBudgetProposal({
-    $3526.AccountBudgetProposalTypeEnum_AccountBudgetProposalType? proposalType,
-    $3524.TimeTypeEnum_TimeType? endTimeType,
-    $3525.SpendingLimitTypeEnum_SpendingLimitType? spendingLimitType,
+    $3527.AccountBudgetProposalTypeEnum_AccountBudgetProposalType? proposalType,
+    $3525.TimeTypeEnum_TimeType? endTimeType,
+    $3526.SpendingLimitTypeEnum_SpendingLimitType? spendingLimitType,
     $core.String? accountBudgetProposal,
     $core.String? name,
     $core.String? startDateTime,
@@ -100,9 +100,9 @@ class AccountBudget_PendingAccountBudgetProposal extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountBudget.PendingAccountBudgetProposal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..oo(0, [6, 15])
     ..oo(1, [8, 16])
-    ..e<$3526.AccountBudgetProposalTypeEnum_AccountBudgetProposalType>(2, _omitFieldNames ? '' : 'proposalType', $pb.PbFieldType.OE, defaultOrMaker: $3526.AccountBudgetProposalTypeEnum_AccountBudgetProposalType.UNSPECIFIED, valueOf: $3526.AccountBudgetProposalTypeEnum_AccountBudgetProposalType.valueOf, enumValues: $3526.AccountBudgetProposalTypeEnum_AccountBudgetProposalType.values)
-    ..e<$3524.TimeTypeEnum_TimeType>(6, _omitFieldNames ? '' : 'endTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3524.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3524.TimeTypeEnum_TimeType.valueOf, enumValues: $3524.TimeTypeEnum_TimeType.values)
-    ..e<$3525.SpendingLimitTypeEnum_SpendingLimitType>(8, _omitFieldNames ? '' : 'spendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3525.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3525.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3525.SpendingLimitTypeEnum_SpendingLimitType.values)
+    ..e<$3527.AccountBudgetProposalTypeEnum_AccountBudgetProposalType>(2, _omitFieldNames ? '' : 'proposalType', $pb.PbFieldType.OE, defaultOrMaker: $3527.AccountBudgetProposalTypeEnum_AccountBudgetProposalType.UNSPECIFIED, valueOf: $3527.AccountBudgetProposalTypeEnum_AccountBudgetProposalType.valueOf, enumValues: $3527.AccountBudgetProposalTypeEnum_AccountBudgetProposalType.values)
+    ..e<$3525.TimeTypeEnum_TimeType>(6, _omitFieldNames ? '' : 'endTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3525.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3525.TimeTypeEnum_TimeType.valueOf, enumValues: $3525.TimeTypeEnum_TimeType.values)
+    ..e<$3526.SpendingLimitTypeEnum_SpendingLimitType>(8, _omitFieldNames ? '' : 'spendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3526.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3526.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3526.SpendingLimitTypeEnum_SpendingLimitType.values)
     ..aOS(12, _omitFieldNames ? '' : 'accountBudgetProposal')
     ..aOS(13, _omitFieldNames ? '' : 'name')
     ..aOS(14, _omitFieldNames ? '' : 'startDateTime')
@@ -144,9 +144,9 @@ class AccountBudget_PendingAccountBudgetProposal extends $pb.GeneratedMessage {
   /// Output only. The type of this proposal, for example, END to end the
   /// budget associated with this proposal.
   @$pb.TagNumber(2)
-  $3526.AccountBudgetProposalTypeEnum_AccountBudgetProposalType get proposalType => $_getN(0);
+  $3527.AccountBudgetProposalTypeEnum_AccountBudgetProposalType get proposalType => $_getN(0);
   @$pb.TagNumber(2)
-  set proposalType($3526.AccountBudgetProposalTypeEnum_AccountBudgetProposalType v) { setField(2, v); }
+  set proposalType($3527.AccountBudgetProposalTypeEnum_AccountBudgetProposalType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProposalType() => $_has(0);
   @$pb.TagNumber(2)
@@ -154,9 +154,9 @@ class AccountBudget_PendingAccountBudgetProposal extends $pb.GeneratedMessage {
 
   /// Output only. The end time as a well-defined type, for example, FOREVER.
   @$pb.TagNumber(6)
-  $3524.TimeTypeEnum_TimeType get endTimeType => $_getN(1);
+  $3525.TimeTypeEnum_TimeType get endTimeType => $_getN(1);
   @$pb.TagNumber(6)
-  set endTimeType($3524.TimeTypeEnum_TimeType v) { setField(6, v); }
+  set endTimeType($3525.TimeTypeEnum_TimeType v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndTimeType() => $_has(1);
   @$pb.TagNumber(6)
@@ -165,9 +165,9 @@ class AccountBudget_PendingAccountBudgetProposal extends $pb.GeneratedMessage {
   /// Output only. The spending limit as a well-defined type, for example,
   /// INFINITE.
   @$pb.TagNumber(8)
-  $3525.SpendingLimitTypeEnum_SpendingLimitType get spendingLimitType => $_getN(2);
+  $3526.SpendingLimitTypeEnum_SpendingLimitType get spendingLimitType => $_getN(2);
   @$pb.TagNumber(8)
-  set spendingLimitType($3525.SpendingLimitTypeEnum_SpendingLimitType v) { setField(8, v); }
+  set spendingLimitType($3526.SpendingLimitTypeEnum_SpendingLimitType v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSpendingLimitType() => $_has(2);
   @$pb.TagNumber(8)
@@ -309,12 +309,12 @@ enum AccountBudget_AdjustedSpendingLimit {
 class AccountBudget extends $pb.GeneratedMessage {
   factory AccountBudget({
     $core.String? resourceName,
-    $3523.AccountBudgetStatusEnum_AccountBudgetStatus? status,
-    $3524.TimeTypeEnum_TimeType? proposedEndTimeType,
-    $3524.TimeTypeEnum_TimeType? approvedEndTimeType,
-    $3525.SpendingLimitTypeEnum_SpendingLimitType? proposedSpendingLimitType,
-    $3525.SpendingLimitTypeEnum_SpendingLimitType? approvedSpendingLimitType,
-    $3525.SpendingLimitTypeEnum_SpendingLimitType? adjustedSpendingLimitType,
+    $3524.AccountBudgetStatusEnum_AccountBudgetStatus? status,
+    $3525.TimeTypeEnum_TimeType? proposedEndTimeType,
+    $3525.TimeTypeEnum_TimeType? approvedEndTimeType,
+    $3526.SpendingLimitTypeEnum_SpendingLimitType? proposedSpendingLimitType,
+    $3526.SpendingLimitTypeEnum_SpendingLimitType? approvedSpendingLimitType,
+    $3526.SpendingLimitTypeEnum_SpendingLimitType? adjustedSpendingLimitType,
     AccountBudget_PendingAccountBudgetProposal? pendingProposal,
     $fixnum.Int64? id,
     $core.String? billingSetup,
@@ -436,12 +436,12 @@ class AccountBudget extends $pb.GeneratedMessage {
     ..oo(3, [15, 31])
     ..oo(4, [17, 32])
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3523.AccountBudgetStatusEnum_AccountBudgetStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3523.AccountBudgetStatusEnum_AccountBudgetStatus.UNSPECIFIED, valueOf: $3523.AccountBudgetStatusEnum_AccountBudgetStatus.valueOf, enumValues: $3523.AccountBudgetStatusEnum_AccountBudgetStatus.values)
-    ..e<$3524.TimeTypeEnum_TimeType>(9, _omitFieldNames ? '' : 'proposedEndTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3524.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3524.TimeTypeEnum_TimeType.valueOf, enumValues: $3524.TimeTypeEnum_TimeType.values)
-    ..e<$3524.TimeTypeEnum_TimeType>(11, _omitFieldNames ? '' : 'approvedEndTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3524.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3524.TimeTypeEnum_TimeType.valueOf, enumValues: $3524.TimeTypeEnum_TimeType.values)
-    ..e<$3525.SpendingLimitTypeEnum_SpendingLimitType>(13, _omitFieldNames ? '' : 'proposedSpendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3525.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3525.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3525.SpendingLimitTypeEnum_SpendingLimitType.values)
-    ..e<$3525.SpendingLimitTypeEnum_SpendingLimitType>(15, _omitFieldNames ? '' : 'approvedSpendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3525.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3525.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3525.SpendingLimitTypeEnum_SpendingLimitType.values)
-    ..e<$3525.SpendingLimitTypeEnum_SpendingLimitType>(17, _omitFieldNames ? '' : 'adjustedSpendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3525.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3525.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3525.SpendingLimitTypeEnum_SpendingLimitType.values)
+    ..e<$3524.AccountBudgetStatusEnum_AccountBudgetStatus>(4, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $3524.AccountBudgetStatusEnum_AccountBudgetStatus.UNSPECIFIED, valueOf: $3524.AccountBudgetStatusEnum_AccountBudgetStatus.valueOf, enumValues: $3524.AccountBudgetStatusEnum_AccountBudgetStatus.values)
+    ..e<$3525.TimeTypeEnum_TimeType>(9, _omitFieldNames ? '' : 'proposedEndTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3525.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3525.TimeTypeEnum_TimeType.valueOf, enumValues: $3525.TimeTypeEnum_TimeType.values)
+    ..e<$3525.TimeTypeEnum_TimeType>(11, _omitFieldNames ? '' : 'approvedEndTimeType', $pb.PbFieldType.OE, defaultOrMaker: $3525.TimeTypeEnum_TimeType.UNSPECIFIED, valueOf: $3525.TimeTypeEnum_TimeType.valueOf, enumValues: $3525.TimeTypeEnum_TimeType.values)
+    ..e<$3526.SpendingLimitTypeEnum_SpendingLimitType>(13, _omitFieldNames ? '' : 'proposedSpendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3526.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3526.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3526.SpendingLimitTypeEnum_SpendingLimitType.values)
+    ..e<$3526.SpendingLimitTypeEnum_SpendingLimitType>(15, _omitFieldNames ? '' : 'approvedSpendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3526.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3526.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3526.SpendingLimitTypeEnum_SpendingLimitType.values)
+    ..e<$3526.SpendingLimitTypeEnum_SpendingLimitType>(17, _omitFieldNames ? '' : 'adjustedSpendingLimitType', $pb.PbFieldType.OE, defaultOrMaker: $3526.SpendingLimitTypeEnum_SpendingLimitType.UNSPECIFIED, valueOf: $3526.SpendingLimitTypeEnum_SpendingLimitType.valueOf, enumValues: $3526.SpendingLimitTypeEnum_SpendingLimitType.values)
     ..aOM<AccountBudget_PendingAccountBudgetProposal>(22, _omitFieldNames ? '' : 'pendingProposal', subBuilder: AccountBudget_PendingAccountBudgetProposal.create)
     ..aInt64(23, _omitFieldNames ? '' : 'id')
     ..aOS(24, _omitFieldNames ? '' : 'billingSetup')
@@ -511,9 +511,9 @@ class AccountBudget extends $pb.GeneratedMessage {
 
   /// Output only. The status of this account-level budget.
   @$pb.TagNumber(4)
-  $3523.AccountBudgetStatusEnum_AccountBudgetStatus get status => $_getN(1);
+  $3524.AccountBudgetStatusEnum_AccountBudgetStatus get status => $_getN(1);
   @$pb.TagNumber(4)
-  set status($3523.AccountBudgetStatusEnum_AccountBudgetStatus v) { setField(4, v); }
+  set status($3524.AccountBudgetStatusEnum_AccountBudgetStatus v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(4)
@@ -522,9 +522,9 @@ class AccountBudget extends $pb.GeneratedMessage {
   /// Output only. The proposed end time as a well-defined type, for example,
   /// FOREVER.
   @$pb.TagNumber(9)
-  $3524.TimeTypeEnum_TimeType get proposedEndTimeType => $_getN(2);
+  $3525.TimeTypeEnum_TimeType get proposedEndTimeType => $_getN(2);
   @$pb.TagNumber(9)
-  set proposedEndTimeType($3524.TimeTypeEnum_TimeType v) { setField(9, v); }
+  set proposedEndTimeType($3525.TimeTypeEnum_TimeType v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasProposedEndTimeType() => $_has(2);
   @$pb.TagNumber(9)
@@ -533,9 +533,9 @@ class AccountBudget extends $pb.GeneratedMessage {
   /// Output only. The approved end time as a well-defined type, for example,
   /// FOREVER.
   @$pb.TagNumber(11)
-  $3524.TimeTypeEnum_TimeType get approvedEndTimeType => $_getN(3);
+  $3525.TimeTypeEnum_TimeType get approvedEndTimeType => $_getN(3);
   @$pb.TagNumber(11)
-  set approvedEndTimeType($3524.TimeTypeEnum_TimeType v) { setField(11, v); }
+  set approvedEndTimeType($3525.TimeTypeEnum_TimeType v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasApprovedEndTimeType() => $_has(3);
   @$pb.TagNumber(11)
@@ -544,9 +544,9 @@ class AccountBudget extends $pb.GeneratedMessage {
   /// Output only. The proposed spending limit as a well-defined type, for
   /// example, INFINITE.
   @$pb.TagNumber(13)
-  $3525.SpendingLimitTypeEnum_SpendingLimitType get proposedSpendingLimitType => $_getN(4);
+  $3526.SpendingLimitTypeEnum_SpendingLimitType get proposedSpendingLimitType => $_getN(4);
   @$pb.TagNumber(13)
-  set proposedSpendingLimitType($3525.SpendingLimitTypeEnum_SpendingLimitType v) { setField(13, v); }
+  set proposedSpendingLimitType($3526.SpendingLimitTypeEnum_SpendingLimitType v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasProposedSpendingLimitType() => $_has(4);
   @$pb.TagNumber(13)
@@ -556,9 +556,9 @@ class AccountBudget extends $pb.GeneratedMessage {
   /// example, INFINITE.  This will only be populated if the approved spending
   /// limit is INFINITE.
   @$pb.TagNumber(15)
-  $3525.SpendingLimitTypeEnum_SpendingLimitType get approvedSpendingLimitType => $_getN(5);
+  $3526.SpendingLimitTypeEnum_SpendingLimitType get approvedSpendingLimitType => $_getN(5);
   @$pb.TagNumber(15)
-  set approvedSpendingLimitType($3525.SpendingLimitTypeEnum_SpendingLimitType v) { setField(15, v); }
+  set approvedSpendingLimitType($3526.SpendingLimitTypeEnum_SpendingLimitType v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasApprovedSpendingLimitType() => $_has(5);
   @$pb.TagNumber(15)
@@ -569,9 +569,9 @@ class AccountBudget extends $pb.GeneratedMessage {
   /// limit is INFINITE, which is guaranteed to be true if the approved
   /// spending limit is INFINITE.
   @$pb.TagNumber(17)
-  $3525.SpendingLimitTypeEnum_SpendingLimitType get adjustedSpendingLimitType => $_getN(6);
+  $3526.SpendingLimitTypeEnum_SpendingLimitType get adjustedSpendingLimitType => $_getN(6);
   @$pb.TagNumber(17)
-  set adjustedSpendingLimitType($3525.SpendingLimitTypeEnum_SpendingLimitType v) { setField(17, v); }
+  set adjustedSpendingLimitType($3526.SpendingLimitTypeEnum_SpendingLimitType v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasAdjustedSpendingLimitType() => $_has(6);
   @$pb.TagNumber(17)

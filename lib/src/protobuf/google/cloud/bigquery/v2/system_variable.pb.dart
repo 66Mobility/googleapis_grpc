@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import 'standard_sql.pb.dart' as $4402;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import 'standard_sql.pb.dart' as $4403;
 
 /// System variables given to a query.
 class SystemVariables extends $pb.GeneratedMessage {
   factory SystemVariables({
-    $core.Map<$core.String, $4402.StandardSqlDataType>? types,
-    $1734.Struct? values,
+    $core.Map<$core.String, $4403.StandardSqlDataType>? types,
+    $1735.Struct? values,
   }) {
     final $result = create();
     if (types != null) {
@@ -36,8 +36,8 @@ class SystemVariables extends $pb.GeneratedMessage {
   factory SystemVariables.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SystemVariables', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..m<$core.String, $4402.StandardSqlDataType>(1, _omitFieldNames ? '' : 'types', entryClassName: 'SystemVariables.TypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4402.StandardSqlDataType.create, valueDefaultOrMaker: $4402.StandardSqlDataType.getDefault, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
-    ..aOM<$1734.Struct>(2, _omitFieldNames ? '' : 'values', subBuilder: $1734.Struct.create)
+    ..m<$core.String, $4403.StandardSqlDataType>(1, _omitFieldNames ? '' : 'types', entryClassName: 'SystemVariables.TypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $4403.StandardSqlDataType.create, valueDefaultOrMaker: $4403.StandardSqlDataType.getDefault, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
+    ..aOM<$1735.Struct>(2, _omitFieldNames ? '' : 'values', subBuilder: $1735.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -64,19 +64,19 @@ class SystemVariables extends $pb.GeneratedMessage {
 
   /// Output only. Data type for each system variable.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $4402.StandardSqlDataType> get types => $_getMap(0);
+  $core.Map<$core.String, $4403.StandardSqlDataType> get types => $_getMap(0);
 
   /// Output only. Value for each system variable.
   @$pb.TagNumber(2)
-  $1734.Struct get values => $_getN(1);
+  $1735.Struct get values => $_getN(1);
   @$pb.TagNumber(2)
-  set values($1734.Struct v) { setField(2, v); }
+  set values($1735.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValues() => $_has(1);
   @$pb.TagNumber(2)
   void clearValues() => clearField(2);
   @$pb.TagNumber(2)
-  $1734.Struct ensureValues() => $_ensure(1);
+  $1735.Struct ensureValues() => $_ensure(1);
 }
 
 

@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../type/date.pb.dart' as $1800;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../type/date.pb.dart' as $1801;
 import 'content.pbenum.dart';
-import 'openapi.pb.dart' as $4291;
-import 'tool.pb.dart' as $4292;
+import 'openapi.pb.dart' as $4292;
+import 'tool.pb.dart' as $4293;
 
 export 'content.pbenum.dart';
 
@@ -117,8 +117,8 @@ class Part extends $pb.GeneratedMessage {
     Blob? inlineData,
     FileData? fileData,
     VideoMetadata? videoMetadata,
-    $4292.FunctionCall? functionCall,
-    $4292.FunctionResponse? functionResponse,
+    $4293.FunctionCall? functionCall,
+    $4293.FunctionResponse? functionResponse,
   }) {
     final $result = create();
     if (text != null) {
@@ -164,8 +164,8 @@ class Part extends $pb.GeneratedMessage {
     ..aOM<Blob>(2, _omitFieldNames ? '' : 'inlineData', subBuilder: Blob.create)
     ..aOM<FileData>(3, _omitFieldNames ? '' : 'fileData', subBuilder: FileData.create)
     ..aOM<VideoMetadata>(4, _omitFieldNames ? '' : 'videoMetadata', subBuilder: VideoMetadata.create)
-    ..aOM<$4292.FunctionCall>(5, _omitFieldNames ? '' : 'functionCall', subBuilder: $4292.FunctionCall.create)
-    ..aOM<$4292.FunctionResponse>(6, _omitFieldNames ? '' : 'functionResponse', subBuilder: $4292.FunctionResponse.create)
+    ..aOM<$4293.FunctionCall>(5, _omitFieldNames ? '' : 'functionCall', subBuilder: $4293.FunctionCall.create)
+    ..aOM<$4293.FunctionResponse>(6, _omitFieldNames ? '' : 'functionResponse', subBuilder: $4293.FunctionResponse.create)
     ..hasRequiredFields = false
   ;
 
@@ -247,30 +247,30 @@ class Part extends $pb.GeneratedMessage {
   /// contains a string representing the [FunctionDeclaration.name] with the
   /// parameters and their values.
   @$pb.TagNumber(5)
-  $4292.FunctionCall get functionCall => $_getN(4);
+  $4293.FunctionCall get functionCall => $_getN(4);
   @$pb.TagNumber(5)
-  set functionCall($4292.FunctionCall v) { setField(5, v); }
+  set functionCall($4293.FunctionCall v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFunctionCall() => $_has(4);
   @$pb.TagNumber(5)
   void clearFunctionCall() => clearField(5);
   @$pb.TagNumber(5)
-  $4292.FunctionCall ensureFunctionCall() => $_ensure(4);
+  $4293.FunctionCall ensureFunctionCall() => $_ensure(4);
 
   /// Optional. The result output of a [FunctionCall] that contains a string
   /// representing the [FunctionDeclaration.name] and a structured JSON object
   /// containing any output from the function call. It is used as context to
   /// the model.
   @$pb.TagNumber(6)
-  $4292.FunctionResponse get functionResponse => $_getN(5);
+  $4293.FunctionResponse get functionResponse => $_getN(5);
   @$pb.TagNumber(6)
-  set functionResponse($4292.FunctionResponse v) { setField(6, v); }
+  set functionResponse($4293.FunctionResponse v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFunctionResponse() => $_has(5);
   @$pb.TagNumber(6)
   void clearFunctionResponse() => clearField(6);
   @$pb.TagNumber(6)
-  $4292.FunctionResponse ensureFunctionResponse() => $_ensure(5);
+  $4293.FunctionResponse ensureFunctionResponse() => $_ensure(5);
 }
 
 ///  Content blob.
@@ -413,8 +413,8 @@ class FileData extends $pb.GeneratedMessage {
 /// Metadata describes the input video content.
 class VideoMetadata extends $pb.GeneratedMessage {
   factory VideoMetadata({
-    $1737.Duration? startOffset,
-    $1737.Duration? endOffset,
+    $1738.Duration? startOffset,
+    $1738.Duration? endOffset,
   }) {
     final $result = create();
     if (startOffset != null) {
@@ -430,8 +430,8 @@ class VideoMetadata extends $pb.GeneratedMessage {
   factory VideoMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'startOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'endOffset', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -458,27 +458,27 @@ class VideoMetadata extends $pb.GeneratedMessage {
 
   /// Optional. The start offset of the video.
   @$pb.TagNumber(1)
-  $1737.Duration get startOffset => $_getN(0);
+  $1738.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(1)
-  set startOffset($1737.Duration v) { setField(1, v); }
+  set startOffset($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartOffset() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureStartOffset() => $_ensure(0);
+  $1738.Duration ensureStartOffset() => $_ensure(0);
 
   /// Optional. The end offset of the video.
   @$pb.TagNumber(2)
-  $1737.Duration get endOffset => $_getN(1);
+  $1738.Duration get endOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set endOffset($1737.Duration v) { setField(2, v); }
+  set endOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureEndOffset() => $_ensure(1);
+  $1738.Duration ensureEndOffset() => $_ensure(1);
 }
 
 /// When automated routing is specified, the routing will be determined by
@@ -687,7 +687,7 @@ class GenerationConfig extends $pb.GeneratedMessage {
     $core.double? frequencyPenalty,
     $core.int? seed,
     $core.String? responseMimeType,
-    $4291.Schema? responseSchema,
+    $4292.Schema? responseSchema,
     GenerationConfig_RoutingConfig? routingConfig,
   }) {
     final $result = create();
@@ -744,7 +744,7 @@ class GenerationConfig extends $pb.GeneratedMessage {
     ..a<$core.double>(9, _omitFieldNames ? '' : 'frequencyPenalty', $pb.PbFieldType.OF)
     ..a<$core.int>(12, _omitFieldNames ? '' : 'seed', $pb.PbFieldType.O3)
     ..aOS(13, _omitFieldNames ? '' : 'responseMimeType')
-    ..aOM<$4291.Schema>(16, _omitFieldNames ? '' : 'responseSchema', subBuilder: $4291.Schema.create)
+    ..aOM<$4292.Schema>(16, _omitFieldNames ? '' : 'responseSchema', subBuilder: $4292.Schema.create)
     ..aOM<GenerationConfig_RoutingConfig>(17, _omitFieldNames ? '' : 'routingConfig', subBuilder: GenerationConfig_RoutingConfig.create)
     ..hasRequiredFields = false
   ;
@@ -878,15 +878,15 @@ class GenerationConfig extends $pb.GeneratedMessage {
   /// Compatible mimetypes:
   /// `application/json`: Schema for JSON response.
   @$pb.TagNumber(16)
-  $4291.Schema get responseSchema => $_getN(10);
+  $4292.Schema get responseSchema => $_getN(10);
   @$pb.TagNumber(16)
-  set responseSchema($4291.Schema v) { setField(16, v); }
+  set responseSchema($4292.Schema v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasResponseSchema() => $_has(10);
   @$pb.TagNumber(16)
   void clearResponseSchema() => clearField(16);
   @$pb.TagNumber(16)
-  $4291.Schema ensureResponseSchema() => $_ensure(10);
+  $4292.Schema ensureResponseSchema() => $_ensure(10);
 
   /// Optional. Routing configuration.
   @$pb.TagNumber(17)
@@ -1166,7 +1166,7 @@ class Citation extends $pb.GeneratedMessage {
     $core.String? uri,
     $core.String? title,
     $core.String? license,
-    $1800.Date? publicationDate,
+    $1801.Date? publicationDate,
   }) {
     final $result = create();
     if (startIndex != null) {
@@ -1199,7 +1199,7 @@ class Citation extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'uri')
     ..aOS(4, _omitFieldNames ? '' : 'title')
     ..aOS(5, _omitFieldNames ? '' : 'license')
-    ..aOM<$1800.Date>(6, _omitFieldNames ? '' : 'publicationDate', subBuilder: $1800.Date.create)
+    ..aOM<$1801.Date>(6, _omitFieldNames ? '' : 'publicationDate', subBuilder: $1801.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -1276,15 +1276,15 @@ class Citation extends $pb.GeneratedMessage {
 
   /// Output only. Publication date of the attribution.
   @$pb.TagNumber(6)
-  $1800.Date get publicationDate => $_getN(5);
+  $1801.Date get publicationDate => $_getN(5);
   @$pb.TagNumber(6)
-  set publicationDate($1800.Date v) { setField(6, v); }
+  set publicationDate($1801.Date v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPublicationDate() => $_has(5);
   @$pb.TagNumber(6)
   void clearPublicationDate() => clearField(6);
   @$pb.TagNumber(6)
-  $1800.Date ensurePublicationDate() => $_ensure(5);
+  $1801.Date ensurePublicationDate() => $_ensure(5);
 }
 
 /// A response candidate generated from the model.

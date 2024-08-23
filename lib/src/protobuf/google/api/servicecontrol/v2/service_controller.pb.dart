@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/context/attribute_context.pb.dart' as $4189;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../rpc/context/attribute_context.pb.dart' as $4190;
+import '../../../rpc/status.pb.dart' as $1796;
 
 /// Request message for the Check method.
 class CheckRequest extends $pb.GeneratedMessage {
   factory CheckRequest({
     $core.String? serviceName,
     $core.String? serviceConfigId,
-    $4189.AttributeContext? attributes,
+    $4190.AttributeContext? attributes,
     $core.Iterable<ResourceInfo>? resources,
     $core.String? flags,
   }) {
@@ -50,7 +50,7 @@ class CheckRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicecontrol.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
     ..aOS(2, _omitFieldNames ? '' : 'serviceConfigId')
-    ..aOM<$4189.AttributeContext>(3, _omitFieldNames ? '' : 'attributes', subBuilder: $4189.AttributeContext.create)
+    ..aOM<$4190.AttributeContext>(3, _omitFieldNames ? '' : 'attributes', subBuilder: $4190.AttributeContext.create)
     ..pc<ResourceInfo>(4, _omitFieldNames ? '' : 'resources', $pb.PbFieldType.PM, subBuilder: ResourceInfo.create)
     ..aOS(5, _omitFieldNames ? '' : 'flags')
     ..hasRequiredFields = false
@@ -106,15 +106,15 @@ class CheckRequest extends $pb.GeneratedMessage {
 
   /// Describes attributes about the operation being executed by the service.
   @$pb.TagNumber(3)
-  $4189.AttributeContext get attributes => $_getN(2);
+  $4190.AttributeContext get attributes => $_getN(2);
   @$pb.TagNumber(3)
-  set attributes($4189.AttributeContext v) { setField(3, v); }
+  set attributes($4190.AttributeContext v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAttributes() => $_has(2);
   @$pb.TagNumber(3)
   void clearAttributes() => clearField(3);
   @$pb.TagNumber(3)
-  $4189.AttributeContext ensureAttributes() => $_ensure(2);
+  $4190.AttributeContext ensureAttributes() => $_ensure(2);
 
   /// Describes the resources and the policies applied to each resource.
   @$pb.TagNumber(4)
@@ -256,7 +256,7 @@ class ResourceInfo extends $pb.GeneratedMessage {
 /// Response message for the Check method.
 class CheckResponse extends $pb.GeneratedMessage {
   factory CheckResponse({
-    $1795.Status? status,
+    $1796.Status? status,
     $core.Map<$core.String, $core.String>? headers,
   }) {
     final $result = create();
@@ -273,7 +273,7 @@ class CheckResponse extends $pb.GeneratedMessage {
   factory CheckResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicecontrol.v2'), createEmptyInstance: create)
-    ..aOM<$1795.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'headers', entryClassName: 'CheckResponse.HeadersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.servicecontrol.v2'))
     ..hasRequiredFields = false
   ;
@@ -303,15 +303,15 @@ class CheckResponse extends $pb.GeneratedMessage {
   /// indicates a denial; [google.rpc.Status.details][google.rpc.Status.details]
   /// would contain additional details about the denial.
   @$pb.TagNumber(1)
-  $1795.Status get status => $_getN(0);
+  $1796.Status get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status($1795.Status v) { setField(1, v); }
+  set status($1796.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Status ensureStatus() => $_ensure(0);
+  $1796.Status ensureStatus() => $_ensure(0);
 
   /// Returns a set of request contexts generated from the `CheckRequest`.
   @$pb.TagNumber(2)
@@ -323,7 +323,7 @@ class ReportRequest extends $pb.GeneratedMessage {
   factory ReportRequest({
     $core.String? serviceName,
     $core.String? serviceConfigId,
-    $core.Iterable<$4189.AttributeContext>? operations,
+    $core.Iterable<$4190.AttributeContext>? operations,
   }) {
     final $result = create();
     if (serviceName != null) {
@@ -344,7 +344,7 @@ class ReportRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicecontrol.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
     ..aOS(2, _omitFieldNames ? '' : 'serviceConfigId')
-    ..pc<$4189.AttributeContext>(3, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: $4189.AttributeContext.create)
+    ..pc<$4190.AttributeContext>(3, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: $4190.AttributeContext.create)
     ..hasRequiredFields = false
   ;
 
@@ -400,7 +400,7 @@ class ReportRequest extends $pb.GeneratedMessage {
   /// represented as an AttributeContext, and contains all attributes around an
   /// API access.
   @$pb.TagNumber(3)
-  $core.List<$4189.AttributeContext> get operations => $_getList(2);
+  $core.List<$4190.AttributeContext> get operations => $_getList(2);
 }
 
 /// Response message for the Report method.

@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/custom_parameter.pb.dart' as $2591;
-import '../common/targeting_setting.pb.dart' as $2813;
-import '../enums/ad_group_ad_rotation_mode.pbenum.dart' as $2816;
-import '../enums/ad_group_primary_status.pbenum.dart' as $2820;
-import '../enums/ad_group_primary_status_reason.pbenum.dart' as $2821;
-import '../enums/ad_group_status.pbenum.dart' as $2814;
-import '../enums/ad_group_type.pbenum.dart' as $2815;
-import '../enums/asset_field_type.pbenum.dart' as $2818;
-import '../enums/asset_set_type.pbenum.dart' as $2819;
-import '../enums/bidding_source.pbenum.dart' as $2817;
-import '../enums/targeting_dimension.pbenum.dart' as $2635;
+import '../common/custom_parameter.pb.dart' as $2592;
+import '../common/targeting_setting.pb.dart' as $2814;
+import '../enums/ad_group_ad_rotation_mode.pbenum.dart' as $2817;
+import '../enums/ad_group_primary_status.pbenum.dart' as $2821;
+import '../enums/ad_group_primary_status_reason.pbenum.dart' as $2822;
+import '../enums/ad_group_status.pbenum.dart' as $2815;
+import '../enums/ad_group_type.pbenum.dart' as $2816;
+import '../enums/asset_field_type.pbenum.dart' as $2819;
+import '../enums/asset_set_type.pbenum.dart' as $2820;
+import '../enums/bidding_source.pbenum.dart' as $2818;
+import '../enums/targeting_dimension.pbenum.dart' as $2636;
 
 /// Settings for the audience targeting.
 class AdGroup_AudienceSetting extends $pb.GeneratedMessage {
@@ -84,14 +84,14 @@ class AdGroup_AudienceSetting extends $pb.GeneratedMessage {
 class AdGroup extends $pb.GeneratedMessage {
   factory AdGroup({
     $core.String? resourceName,
-    $2814.AdGroupStatusEnum_AdGroupStatus? status,
-    $core.Iterable<$2591.CustomParameter>? urlCustomParameters,
-    $2815.AdGroupTypeEnum_AdGroupType? type,
-    $2816.AdGroupAdRotationModeEnum_AdGroupAdRotationMode? adRotationMode,
-    $2635.TargetingDimensionEnum_TargetingDimension? displayCustomBidDimension,
-    $2813.TargetingSetting? targetingSetting,
-    $2817.BiddingSourceEnum_BiddingSource? effectiveTargetCpaSource,
-    $2817.BiddingSourceEnum_BiddingSource? effectiveTargetRoasSource,
+    $2815.AdGroupStatusEnum_AdGroupStatus? status,
+    $core.Iterable<$2592.CustomParameter>? urlCustomParameters,
+    $2816.AdGroupTypeEnum_AdGroupType? type,
+    $2817.AdGroupAdRotationModeEnum_AdGroupAdRotationMode? adRotationMode,
+    $2636.TargetingDimensionEnum_TargetingDimension? displayCustomBidDimension,
+    $2814.TargetingSetting? targetingSetting,
+    $2818.BiddingSourceEnum_BiddingSource? effectiveTargetCpaSource,
+    $2818.BiddingSourceEnum_BiddingSource? effectiveTargetRoasSource,
     $fixnum.Int64? id,
     $core.String? name,
     $core.String? baseAdGroup,
@@ -108,13 +108,13 @@ class AdGroup extends $pb.GeneratedMessage {
     $fixnum.Int64? effectiveTargetCpaMicros,
     $core.double? effectiveTargetRoas,
     $core.Iterable<$core.String>? labels,
-    $core.Iterable<$2818.AssetFieldTypeEnum_AssetFieldType>? excludedParentAssetFieldTypes,
+    $core.Iterable<$2819.AssetFieldTypeEnum_AssetFieldType>? excludedParentAssetFieldTypes,
     AdGroup_AudienceSetting? audienceSetting,
     $fixnum.Int64? effectiveCpcBidMicros,
-    $core.Iterable<$2819.AssetSetTypeEnum_AssetSetType>? excludedParentAssetSetTypes,
+    $core.Iterable<$2820.AssetSetTypeEnum_AssetSetType>? excludedParentAssetSetTypes,
     $core.bool? optimizedTargetingEnabled,
-    $2820.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus? primaryStatus,
-    $core.Iterable<$2821.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason>? primaryStatusReasons,
+    $2821.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus? primaryStatus,
+    $core.Iterable<$2822.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason>? primaryStatusReasons,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -221,14 +221,14 @@ class AdGroup extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AdGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2814.AdGroupStatusEnum_AdGroupStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2814.AdGroupStatusEnum_AdGroupStatus.UNSPECIFIED, valueOf: $2814.AdGroupStatusEnum_AdGroupStatus.valueOf, enumValues: $2814.AdGroupStatusEnum_AdGroupStatus.values)
-    ..pc<$2591.CustomParameter>(6, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $2591.CustomParameter.create)
-    ..e<$2815.AdGroupTypeEnum_AdGroupType>(12, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2815.AdGroupTypeEnum_AdGroupType.UNSPECIFIED, valueOf: $2815.AdGroupTypeEnum_AdGroupType.valueOf, enumValues: $2815.AdGroupTypeEnum_AdGroupType.values)
-    ..e<$2816.AdGroupAdRotationModeEnum_AdGroupAdRotationMode>(22, _omitFieldNames ? '' : 'adRotationMode', $pb.PbFieldType.OE, defaultOrMaker: $2816.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.UNSPECIFIED, valueOf: $2816.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.valueOf, enumValues: $2816.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.values)
-    ..e<$2635.TargetingDimensionEnum_TargetingDimension>(23, _omitFieldNames ? '' : 'displayCustomBidDimension', $pb.PbFieldType.OE, defaultOrMaker: $2635.TargetingDimensionEnum_TargetingDimension.UNSPECIFIED, valueOf: $2635.TargetingDimensionEnum_TargetingDimension.valueOf, enumValues: $2635.TargetingDimensionEnum_TargetingDimension.values)
-    ..aOM<$2813.TargetingSetting>(25, _omitFieldNames ? '' : 'targetingSetting', subBuilder: $2813.TargetingSetting.create)
-    ..e<$2817.BiddingSourceEnum_BiddingSource>(29, _omitFieldNames ? '' : 'effectiveTargetCpaSource', $pb.PbFieldType.OE, defaultOrMaker: $2817.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2817.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2817.BiddingSourceEnum_BiddingSource.values)
-    ..e<$2817.BiddingSourceEnum_BiddingSource>(32, _omitFieldNames ? '' : 'effectiveTargetRoasSource', $pb.PbFieldType.OE, defaultOrMaker: $2817.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2817.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2817.BiddingSourceEnum_BiddingSource.values)
+    ..e<$2815.AdGroupStatusEnum_AdGroupStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2815.AdGroupStatusEnum_AdGroupStatus.UNSPECIFIED, valueOf: $2815.AdGroupStatusEnum_AdGroupStatus.valueOf, enumValues: $2815.AdGroupStatusEnum_AdGroupStatus.values)
+    ..pc<$2592.CustomParameter>(6, _omitFieldNames ? '' : 'urlCustomParameters', $pb.PbFieldType.PM, subBuilder: $2592.CustomParameter.create)
+    ..e<$2816.AdGroupTypeEnum_AdGroupType>(12, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2816.AdGroupTypeEnum_AdGroupType.UNSPECIFIED, valueOf: $2816.AdGroupTypeEnum_AdGroupType.valueOf, enumValues: $2816.AdGroupTypeEnum_AdGroupType.values)
+    ..e<$2817.AdGroupAdRotationModeEnum_AdGroupAdRotationMode>(22, _omitFieldNames ? '' : 'adRotationMode', $pb.PbFieldType.OE, defaultOrMaker: $2817.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.UNSPECIFIED, valueOf: $2817.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.valueOf, enumValues: $2817.AdGroupAdRotationModeEnum_AdGroupAdRotationMode.values)
+    ..e<$2636.TargetingDimensionEnum_TargetingDimension>(23, _omitFieldNames ? '' : 'displayCustomBidDimension', $pb.PbFieldType.OE, defaultOrMaker: $2636.TargetingDimensionEnum_TargetingDimension.UNSPECIFIED, valueOf: $2636.TargetingDimensionEnum_TargetingDimension.valueOf, enumValues: $2636.TargetingDimensionEnum_TargetingDimension.values)
+    ..aOM<$2814.TargetingSetting>(25, _omitFieldNames ? '' : 'targetingSetting', subBuilder: $2814.TargetingSetting.create)
+    ..e<$2818.BiddingSourceEnum_BiddingSource>(29, _omitFieldNames ? '' : 'effectiveTargetCpaSource', $pb.PbFieldType.OE, defaultOrMaker: $2818.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2818.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2818.BiddingSourceEnum_BiddingSource.values)
+    ..e<$2818.BiddingSourceEnum_BiddingSource>(32, _omitFieldNames ? '' : 'effectiveTargetRoasSource', $pb.PbFieldType.OE, defaultOrMaker: $2818.BiddingSourceEnum_BiddingSource.UNSPECIFIED, valueOf: $2818.BiddingSourceEnum_BiddingSource.valueOf, enumValues: $2818.BiddingSourceEnum_BiddingSource.values)
     ..aInt64(34, _omitFieldNames ? '' : 'id')
     ..aOS(35, _omitFieldNames ? '' : 'name')
     ..aOS(36, _omitFieldNames ? '' : 'baseAdGroup')
@@ -245,13 +245,13 @@ class AdGroup extends $pb.GeneratedMessage {
     ..aInt64(47, _omitFieldNames ? '' : 'effectiveTargetCpaMicros')
     ..a<$core.double>(48, _omitFieldNames ? '' : 'effectiveTargetRoas', $pb.PbFieldType.OD)
     ..pPS(49, _omitFieldNames ? '' : 'labels')
-    ..pc<$2818.AssetFieldTypeEnum_AssetFieldType>(54, _omitFieldNames ? '' : 'excludedParentAssetFieldTypes', $pb.PbFieldType.KE, valueOf: $2818.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2818.AssetFieldTypeEnum_AssetFieldType.values, defaultEnumValue: $2818.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED)
+    ..pc<$2819.AssetFieldTypeEnum_AssetFieldType>(54, _omitFieldNames ? '' : 'excludedParentAssetFieldTypes', $pb.PbFieldType.KE, valueOf: $2819.AssetFieldTypeEnum_AssetFieldType.valueOf, enumValues: $2819.AssetFieldTypeEnum_AssetFieldType.values, defaultEnumValue: $2819.AssetFieldTypeEnum_AssetFieldType.UNSPECIFIED)
     ..aOM<AdGroup_AudienceSetting>(56, _omitFieldNames ? '' : 'audienceSetting', subBuilder: AdGroup_AudienceSetting.create)
     ..aInt64(57, _omitFieldNames ? '' : 'effectiveCpcBidMicros')
-    ..pc<$2819.AssetSetTypeEnum_AssetSetType>(58, _omitFieldNames ? '' : 'excludedParentAssetSetTypes', $pb.PbFieldType.KE, valueOf: $2819.AssetSetTypeEnum_AssetSetType.valueOf, enumValues: $2819.AssetSetTypeEnum_AssetSetType.values, defaultEnumValue: $2819.AssetSetTypeEnum_AssetSetType.UNSPECIFIED)
+    ..pc<$2820.AssetSetTypeEnum_AssetSetType>(58, _omitFieldNames ? '' : 'excludedParentAssetSetTypes', $pb.PbFieldType.KE, valueOf: $2820.AssetSetTypeEnum_AssetSetType.valueOf, enumValues: $2820.AssetSetTypeEnum_AssetSetType.values, defaultEnumValue: $2820.AssetSetTypeEnum_AssetSetType.UNSPECIFIED)
     ..aOB(59, _omitFieldNames ? '' : 'optimizedTargetingEnabled')
-    ..e<$2820.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus>(62, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $2820.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus.UNSPECIFIED, valueOf: $2820.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus.valueOf, enumValues: $2820.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus.values)
-    ..pc<$2821.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason>(63, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $2821.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason.valueOf, enumValues: $2821.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason.values, defaultEnumValue: $2821.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason.UNSPECIFIED)
+    ..e<$2821.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus>(62, _omitFieldNames ? '' : 'primaryStatus', $pb.PbFieldType.OE, defaultOrMaker: $2821.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus.UNSPECIFIED, valueOf: $2821.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus.valueOf, enumValues: $2821.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus.values)
+    ..pc<$2822.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason>(63, _omitFieldNames ? '' : 'primaryStatusReasons', $pb.PbFieldType.KE, valueOf: $2822.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason.valueOf, enumValues: $2822.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason.values, defaultEnumValue: $2822.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason.UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -291,9 +291,9 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// The status of the ad group.
   @$pb.TagNumber(5)
-  $2814.AdGroupStatusEnum_AdGroupStatus get status => $_getN(1);
+  $2815.AdGroupStatusEnum_AdGroupStatus get status => $_getN(1);
   @$pb.TagNumber(5)
-  set status($2814.AdGroupStatusEnum_AdGroupStatus v) { setField(5, v); }
+  set status($2815.AdGroupStatusEnum_AdGroupStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(5)
@@ -302,13 +302,13 @@ class AdGroup extends $pb.GeneratedMessage {
   /// The list of mappings used to substitute custom parameter tags in a
   /// `tracking_url_template`, `final_urls`, or `mobile_final_urls`.
   @$pb.TagNumber(6)
-  $core.List<$2591.CustomParameter> get urlCustomParameters => $_getList(2);
+  $core.List<$2592.CustomParameter> get urlCustomParameters => $_getList(2);
 
   /// Immutable. The type of the ad group.
   @$pb.TagNumber(12)
-  $2815.AdGroupTypeEnum_AdGroupType get type => $_getN(3);
+  $2816.AdGroupTypeEnum_AdGroupType get type => $_getN(3);
   @$pb.TagNumber(12)
-  set type($2815.AdGroupTypeEnum_AdGroupType v) { setField(12, v); }
+  set type($2816.AdGroupTypeEnum_AdGroupType v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasType() => $_has(3);
   @$pb.TagNumber(12)
@@ -316,9 +316,9 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// The ad rotation mode of the ad group.
   @$pb.TagNumber(22)
-  $2816.AdGroupAdRotationModeEnum_AdGroupAdRotationMode get adRotationMode => $_getN(4);
+  $2817.AdGroupAdRotationModeEnum_AdGroupAdRotationMode get adRotationMode => $_getN(4);
   @$pb.TagNumber(22)
-  set adRotationMode($2816.AdGroupAdRotationModeEnum_AdGroupAdRotationMode v) { setField(22, v); }
+  set adRotationMode($2817.AdGroupAdRotationModeEnum_AdGroupAdRotationMode v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasAdRotationMode() => $_has(4);
   @$pb.TagNumber(22)
@@ -328,9 +328,9 @@ class AdGroup extends $pb.GeneratedMessage {
   /// absolute bids. This is only applicable for campaigns that target only the
   /// display network and not search.
   @$pb.TagNumber(23)
-  $2635.TargetingDimensionEnum_TargetingDimension get displayCustomBidDimension => $_getN(5);
+  $2636.TargetingDimensionEnum_TargetingDimension get displayCustomBidDimension => $_getN(5);
   @$pb.TagNumber(23)
-  set displayCustomBidDimension($2635.TargetingDimensionEnum_TargetingDimension v) { setField(23, v); }
+  set displayCustomBidDimension($2636.TargetingDimensionEnum_TargetingDimension v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasDisplayCustomBidDimension() => $_has(5);
   @$pb.TagNumber(23)
@@ -338,22 +338,22 @@ class AdGroup extends $pb.GeneratedMessage {
 
   /// Setting for targeting related features.
   @$pb.TagNumber(25)
-  $2813.TargetingSetting get targetingSetting => $_getN(6);
+  $2814.TargetingSetting get targetingSetting => $_getN(6);
   @$pb.TagNumber(25)
-  set targetingSetting($2813.TargetingSetting v) { setField(25, v); }
+  set targetingSetting($2814.TargetingSetting v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasTargetingSetting() => $_has(6);
   @$pb.TagNumber(25)
   void clearTargetingSetting() => clearField(25);
   @$pb.TagNumber(25)
-  $2813.TargetingSetting ensureTargetingSetting() => $_ensure(6);
+  $2814.TargetingSetting ensureTargetingSetting() => $_ensure(6);
 
   /// Output only. Source of the effective target CPA.
   /// This field is read-only.
   @$pb.TagNumber(29)
-  $2817.BiddingSourceEnum_BiddingSource get effectiveTargetCpaSource => $_getN(7);
+  $2818.BiddingSourceEnum_BiddingSource get effectiveTargetCpaSource => $_getN(7);
   @$pb.TagNumber(29)
-  set effectiveTargetCpaSource($2817.BiddingSourceEnum_BiddingSource v) { setField(29, v); }
+  set effectiveTargetCpaSource($2818.BiddingSourceEnum_BiddingSource v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasEffectiveTargetCpaSource() => $_has(7);
   @$pb.TagNumber(29)
@@ -362,9 +362,9 @@ class AdGroup extends $pb.GeneratedMessage {
   /// Output only. Source of the effective target ROAS.
   /// This field is read-only.
   @$pb.TagNumber(32)
-  $2817.BiddingSourceEnum_BiddingSource get effectiveTargetRoasSource => $_getN(8);
+  $2818.BiddingSourceEnum_BiddingSource get effectiveTargetRoasSource => $_getN(8);
   @$pb.TagNumber(32)
-  set effectiveTargetRoasSource($2817.BiddingSourceEnum_BiddingSource v) { setField(32, v); }
+  set effectiveTargetRoasSource($2818.BiddingSourceEnum_BiddingSource v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasEffectiveTargetRoasSource() => $_has(8);
   @$pb.TagNumber(32)
@@ -556,7 +556,7 @@ class AdGroup extends $pb.GeneratedMessage {
   /// links with these field types will not be inherited by this ad group from
   /// the upper levels.
   @$pb.TagNumber(54)
-  $core.List<$2818.AssetFieldTypeEnum_AssetFieldType> get excludedParentAssetFieldTypes => $_getList(25);
+  $core.List<$2819.AssetFieldTypeEnum_AssetFieldType> get excludedParentAssetFieldTypes => $_getList(25);
 
   /// Immutable. Setting for audience related features.
   @$pb.TagNumber(56)
@@ -593,7 +593,7 @@ class AdGroup extends $pb.GeneratedMessage {
   /// will not be served under this ad group.
   /// Only LOCATION_SYNC is currently supported.
   @$pb.TagNumber(58)
-  $core.List<$2819.AssetSetTypeEnum_AssetSetType> get excludedParentAssetSetTypes => $_getList(28);
+  $core.List<$2820.AssetSetTypeEnum_AssetSetType> get excludedParentAssetSetTypes => $_getList(28);
 
   /// True if optimized targeting is enabled. Optimized Targeting is the
   /// replacement for Audience Expansion.
@@ -609,9 +609,9 @@ class AdGroup extends $pb.GeneratedMessage {
   /// Output only. Provides aggregated view into why an ad group is not serving
   /// or not serving optimally.
   @$pb.TagNumber(62)
-  $2820.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus get primaryStatus => $_getN(30);
+  $2821.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus get primaryStatus => $_getN(30);
   @$pb.TagNumber(62)
-  set primaryStatus($2820.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus v) { setField(62, v); }
+  set primaryStatus($2821.AdGroupPrimaryStatusEnum_AdGroupPrimaryStatus v) { setField(62, v); }
   @$pb.TagNumber(62)
   $core.bool hasPrimaryStatus() => $_has(30);
   @$pb.TagNumber(62)
@@ -620,7 +620,7 @@ class AdGroup extends $pb.GeneratedMessage {
   /// Output only. Provides reasons for why an ad group is not serving or not
   /// serving optimally.
   @$pb.TagNumber(63)
-  $core.List<$2821.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason> get primaryStatusReasons => $_getList(31);
+  $core.List<$2822.AdGroupPrimaryStatusReasonEnum_AdGroupPrimaryStatusReason> get primaryStatusReasons => $_getList(31);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'folder.pb.dart' as $4681;
+import 'folder.pb.dart' as $4683;
 import 'resource.pbenum.dart';
 
 export 'resource.pbenum.dart';
@@ -263,7 +263,7 @@ class GcpMetadata extends $pb.GeneratedMessage {
     $core.String? projectDisplayName,
     $core.String? parent,
     $core.String? parentDisplayName,
-    $core.Iterable<$4681.Folder>? folders,
+    $core.Iterable<$4683.Folder>? folders,
     $core.String? organization,
   }) {
     final $result = create();
@@ -296,7 +296,7 @@ class GcpMetadata extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'projectDisplayName')
     ..aOS(3, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'parentDisplayName')
-    ..pc<$4681.Folder>(5, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4681.Folder.create)
+    ..pc<$4683.Folder>(5, _omitFieldNames ? '' : 'folders', $pb.PbFieldType.PM, subBuilder: $4683.Folder.create)
     ..aOS(6, _omitFieldNames ? '' : 'organization')
     ..hasRequiredFields = false
   ;
@@ -366,7 +366,7 @@ class GcpMetadata extends $pb.GeneratedMessage {
   /// ancestry. The first folder is the deepest nested folder, and the last
   /// folder is the folder directly under the Organization.
   @$pb.TagNumber(5)
-  $core.List<$4681.Folder> get folders => $_getList(4);
+  $core.List<$4683.Folder> get folders => $_getList(4);
 
   /// The name of the organization that the resource belongs to.
   @$pb.TagNumber(6)

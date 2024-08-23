@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'classification.pbenum.dart' as $4348;
+import 'classification.pbenum.dart' as $4349;
 
 /// Dataset metadata that is specific to image classification.
 class ImageClassificationDatasetMetadata extends $pb.GeneratedMessage {
   factory ImageClassificationDatasetMetadata({
-    $4348.ClassificationType? classificationType,
+    $4349.ClassificationType? classificationType,
   }) {
     final $result = create();
     if (classificationType != null) {
@@ -32,7 +32,7 @@ class ImageClassificationDatasetMetadata extends $pb.GeneratedMessage {
   factory ImageClassificationDatasetMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageClassificationDatasetMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
-    ..e<$4348.ClassificationType>(1, _omitFieldNames ? '' : 'classificationType', $pb.PbFieldType.OE, defaultOrMaker: $4348.ClassificationType.CLASSIFICATION_TYPE_UNSPECIFIED, valueOf: $4348.ClassificationType.valueOf, enumValues: $4348.ClassificationType.values)
+    ..e<$4349.ClassificationType>(1, _omitFieldNames ? '' : 'classificationType', $pb.PbFieldType.OE, defaultOrMaker: $4349.ClassificationType.CLASSIFICATION_TYPE_UNSPECIFIED, valueOf: $4349.ClassificationType.valueOf, enumValues: $4349.ClassificationType.values)
     ..hasRequiredFields = false
   ;
 
@@ -59,9 +59,9 @@ class ImageClassificationDatasetMetadata extends $pb.GeneratedMessage {
 
   /// Required. Type of the classification problem.
   @$pb.TagNumber(1)
-  $4348.ClassificationType get classificationType => $_getN(0);
+  $4349.ClassificationType get classificationType => $_getN(0);
   @$pb.TagNumber(1)
-  set classificationType($4348.ClassificationType v) { setField(1, v); }
+  set classificationType($4349.ClassificationType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasClassificationType() => $_has(0);
   @$pb.TagNumber(1)

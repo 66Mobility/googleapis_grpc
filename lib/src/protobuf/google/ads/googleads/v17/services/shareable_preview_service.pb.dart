@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../rpc/status.pb.dart' as $1796;
 
 /// Request message for
 /// [ShareablePreviewService.GenerateShareablePreviews][google.ads.googleads.v17.services.ShareablePreviewService.GenerateShareablePreviews].
@@ -241,7 +241,7 @@ enum ShareablePreviewOrError_GenerateShareablePreviewResponse {
 class ShareablePreviewOrError extends $pb.GeneratedMessage {
   factory ShareablePreviewOrError({
     ShareablePreviewResult? shareablePreviewResult,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
     AssetGroupIdentifier? assetGroupIdentifier,
   }) {
     final $result = create();
@@ -268,7 +268,7 @@ class ShareablePreviewOrError extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ShareablePreviewOrError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOM<ShareablePreviewResult>(1, _omitFieldNames ? '' : 'shareablePreviewResult', subBuilder: ShareablePreviewResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..aOM<AssetGroupIdentifier>(3, _omitFieldNames ? '' : 'assetGroupIdentifier', subBuilder: AssetGroupIdentifier.create)
     ..hasRequiredFields = false
   ;
@@ -311,15 +311,15 @@ class ShareablePreviewOrError extends $pb.GeneratedMessage {
 
   /// The shareable preview partial failure error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 
   /// The asset group of the shareable preview.
   @$pb.TagNumber(3)

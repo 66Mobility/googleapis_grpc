@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../../../protobuf/wrappers.pb.dart' as $1781;
 
 /// Prediction output format for Video Action Recognition.
 class VideoActionRecognitionPredictionResult extends $pb.GeneratedMessage {
   factory VideoActionRecognitionPredictionResult({
     $core.String? id,
     $core.String? displayName,
-    $1737.Duration? timeSegmentStart,
-    $1737.Duration? timeSegmentEnd,
-    $1780.FloatValue? confidence,
+    $1738.Duration? timeSegmentStart,
+    $1738.Duration? timeSegmentEnd,
+    $1781.FloatValue? confidence,
   }) {
     final $result = create();
     if (id != null) {
@@ -50,9 +50,9 @@ class VideoActionRecognitionPredictionResult extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoActionRecognitionPredictionResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1.schema.predict.prediction'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1737.Duration>(4, _omitFieldNames ? '' : 'timeSegmentStart', subBuilder: $1737.Duration.create)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'timeSegmentEnd', subBuilder: $1737.Duration.create)
-    ..aOM<$1780.FloatValue>(6, _omitFieldNames ? '' : 'confidence', subBuilder: $1780.FloatValue.create)
+    ..aOM<$1738.Duration>(4, _omitFieldNames ? '' : 'timeSegmentStart', subBuilder: $1738.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'timeSegmentEnd', subBuilder: $1738.Duration.create)
+    ..aOM<$1781.FloatValue>(6, _omitFieldNames ? '' : 'confidence', subBuilder: $1781.FloatValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -102,43 +102,43 @@ class VideoActionRecognitionPredictionResult extends $pb.GeneratedMessage {
   /// measured from the start of the video, with fractions up to a microsecond
   /// precision, and with "s" appended at the end.
   @$pb.TagNumber(4)
-  $1737.Duration get timeSegmentStart => $_getN(2);
+  $1738.Duration get timeSegmentStart => $_getN(2);
   @$pb.TagNumber(4)
-  set timeSegmentStart($1737.Duration v) { setField(4, v); }
+  set timeSegmentStart($1738.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTimeSegmentStart() => $_has(2);
   @$pb.TagNumber(4)
   void clearTimeSegmentStart() => clearField(4);
   @$pb.TagNumber(4)
-  $1737.Duration ensureTimeSegmentStart() => $_ensure(2);
+  $1738.Duration ensureTimeSegmentStart() => $_ensure(2);
 
   /// The end, exclusive, of the video's time segment in which the
   /// AnnotationSpec has been identified. Expressed as a number of seconds as
   /// measured from the start of the video, with fractions up to a microsecond
   /// precision, and with "s" appended at the end.
   @$pb.TagNumber(5)
-  $1737.Duration get timeSegmentEnd => $_getN(3);
+  $1738.Duration get timeSegmentEnd => $_getN(3);
   @$pb.TagNumber(5)
-  set timeSegmentEnd($1737.Duration v) { setField(5, v); }
+  set timeSegmentEnd($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTimeSegmentEnd() => $_has(3);
   @$pb.TagNumber(5)
   void clearTimeSegmentEnd() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureTimeSegmentEnd() => $_ensure(3);
+  $1738.Duration ensureTimeSegmentEnd() => $_ensure(3);
 
   /// The Model's confidence in correction of this prediction, higher
   /// value means higher confidence.
   @$pb.TagNumber(6)
-  $1780.FloatValue get confidence => $_getN(4);
+  $1781.FloatValue get confidence => $_getN(4);
   @$pb.TagNumber(6)
-  set confidence($1780.FloatValue v) { setField(6, v); }
+  set confidence($1781.FloatValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasConfidence() => $_has(4);
   @$pb.TagNumber(6)
   void clearConfidence() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.FloatValue ensureConfidence() => $_ensure(4);
+  $1781.FloatValue ensureConfidence() => $_ensure(4);
 }
 
 

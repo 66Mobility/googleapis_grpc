@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../common/metric_goal.pb.dart' as $2976;
-import '../enums/async_action_status.pbenum.dart' as $2979;
-import '../enums/experiment_status.pbenum.dart' as $2978;
-import '../enums/experiment_type.pbenum.dart' as $2977;
+import '../common/metric_goal.pb.dart' as $2977;
+import '../enums/async_action_status.pbenum.dart' as $2980;
+import '../enums/experiment_status.pbenum.dart' as $2979;
+import '../enums/experiment_type.pbenum.dart' as $2978;
 
 /// A Google ads experiment for users to experiment changes on multiple
 /// campaigns, compare the performance, and apply the effective changes.
@@ -28,13 +28,13 @@ class Experiment extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     $core.String? suffix,
-    $2977.ExperimentTypeEnum_ExperimentType? type,
-    $2978.ExperimentStatusEnum_ExperimentStatus? status,
+    $2978.ExperimentTypeEnum_ExperimentType? type,
+    $2979.ExperimentStatusEnum_ExperimentStatus? status,
     $core.String? startDate,
     $core.String? endDate,
-    $core.Iterable<$2976.MetricGoal>? goals,
+    $core.Iterable<$2977.MetricGoal>? goals,
     $core.String? longRunningOperation,
-    $2979.AsyncActionStatusEnum_AsyncActionStatus? promoteStatus,
+    $2980.AsyncActionStatusEnum_AsyncActionStatus? promoteStatus,
     $core.bool? syncEnabled,
   }) {
     final $result = create();
@@ -89,13 +89,13 @@ class Experiment extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'name')
     ..aOS(11, _omitFieldNames ? '' : 'description')
     ..aOS(12, _omitFieldNames ? '' : 'suffix')
-    ..e<$2977.ExperimentTypeEnum_ExperimentType>(13, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2977.ExperimentTypeEnum_ExperimentType.UNSPECIFIED, valueOf: $2977.ExperimentTypeEnum_ExperimentType.valueOf, enumValues: $2977.ExperimentTypeEnum_ExperimentType.values)
-    ..e<$2978.ExperimentStatusEnum_ExperimentStatus>(14, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2978.ExperimentStatusEnum_ExperimentStatus.UNSPECIFIED, valueOf: $2978.ExperimentStatusEnum_ExperimentStatus.valueOf, enumValues: $2978.ExperimentStatusEnum_ExperimentStatus.values)
+    ..e<$2978.ExperimentTypeEnum_ExperimentType>(13, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: $2978.ExperimentTypeEnum_ExperimentType.UNSPECIFIED, valueOf: $2978.ExperimentTypeEnum_ExperimentType.valueOf, enumValues: $2978.ExperimentTypeEnum_ExperimentType.values)
+    ..e<$2979.ExperimentStatusEnum_ExperimentStatus>(14, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $2979.ExperimentStatusEnum_ExperimentStatus.UNSPECIFIED, valueOf: $2979.ExperimentStatusEnum_ExperimentStatus.valueOf, enumValues: $2979.ExperimentStatusEnum_ExperimentStatus.values)
     ..aOS(15, _omitFieldNames ? '' : 'startDate')
     ..aOS(16, _omitFieldNames ? '' : 'endDate')
-    ..pc<$2976.MetricGoal>(17, _omitFieldNames ? '' : 'goals', $pb.PbFieldType.PM, subBuilder: $2976.MetricGoal.create)
+    ..pc<$2977.MetricGoal>(17, _omitFieldNames ? '' : 'goals', $pb.PbFieldType.PM, subBuilder: $2977.MetricGoal.create)
     ..aOS(18, _omitFieldNames ? '' : 'longRunningOperation')
-    ..e<$2979.AsyncActionStatusEnum_AsyncActionStatus>(19, _omitFieldNames ? '' : 'promoteStatus', $pb.PbFieldType.OE, defaultOrMaker: $2979.AsyncActionStatusEnum_AsyncActionStatus.UNSPECIFIED, valueOf: $2979.AsyncActionStatusEnum_AsyncActionStatus.valueOf, enumValues: $2979.AsyncActionStatusEnum_AsyncActionStatus.values)
+    ..e<$2980.AsyncActionStatusEnum_AsyncActionStatus>(19, _omitFieldNames ? '' : 'promoteStatus', $pb.PbFieldType.OE, defaultOrMaker: $2980.AsyncActionStatusEnum_AsyncActionStatus.UNSPECIFIED, valueOf: $2980.AsyncActionStatusEnum_AsyncActionStatus.valueOf, enumValues: $2980.AsyncActionStatusEnum_AsyncActionStatus.values)
     ..aOB(20, _omitFieldNames ? '' : 'syncEnabled')
     ..hasRequiredFields = false
   ;
@@ -181,9 +181,9 @@ class Experiment extends $pb.GeneratedMessage {
 
   /// Required. The product/feature that uses this experiment.
   @$pb.TagNumber(13)
-  $2977.ExperimentTypeEnum_ExperimentType get type => $_getN(5);
+  $2978.ExperimentTypeEnum_ExperimentType get type => $_getN(5);
   @$pb.TagNumber(13)
-  set type($2977.ExperimentTypeEnum_ExperimentType v) { setField(13, v); }
+  set type($2978.ExperimentTypeEnum_ExperimentType v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasType() => $_has(5);
   @$pb.TagNumber(13)
@@ -191,9 +191,9 @@ class Experiment extends $pb.GeneratedMessage {
 
   /// The Advertiser-chosen status of this experiment.
   @$pb.TagNumber(14)
-  $2978.ExperimentStatusEnum_ExperimentStatus get status => $_getN(6);
+  $2979.ExperimentStatusEnum_ExperimentStatus get status => $_getN(6);
   @$pb.TagNumber(14)
-  set status($2978.ExperimentStatusEnum_ExperimentStatus v) { setField(14, v); }
+  set status($2979.ExperimentStatusEnum_ExperimentStatus v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasStatus() => $_has(6);
   @$pb.TagNumber(14)
@@ -232,7 +232,7 @@ class Experiment extends $pb.GeneratedMessage {
 
   /// The goals of this experiment.
   @$pb.TagNumber(17)
-  $core.List<$2976.MetricGoal> get goals => $_getList(9);
+  $core.List<$2977.MetricGoal> get goals => $_getList(9);
 
   /// Output only. The resource name of the long-running operation that can be
   /// used to poll for completion of experiment schedule or promote. The most
@@ -248,9 +248,9 @@ class Experiment extends $pb.GeneratedMessage {
 
   /// Output only. The status of the experiment promotion process.
   @$pb.TagNumber(19)
-  $2979.AsyncActionStatusEnum_AsyncActionStatus get promoteStatus => $_getN(11);
+  $2980.AsyncActionStatusEnum_AsyncActionStatus get promoteStatus => $_getN(11);
   @$pb.TagNumber(19)
-  set promoteStatus($2979.AsyncActionStatusEnum_AsyncActionStatus v) { setField(19, v); }
+  set promoteStatus($2980.AsyncActionStatusEnum_AsyncActionStatus v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasPromoteStatus() => $_has(11);
   @$pb.TagNumber(19)

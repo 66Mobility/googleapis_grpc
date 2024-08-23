@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'app_connectors_service.pbenum.dart';
-import 'resource_info.pb.dart' as $4364;
+import 'resource_info.pb.dart' as $4365;
 
 export 'app_connectors_service.pbenum.dart';
 
@@ -401,7 +401,7 @@ class CreateAppConnectorRequest extends $pb.GeneratedMessage {
 /// Request message for BeyondCorp.UpdateAppConnector.
 class UpdateAppConnectorRequest extends $pb.GeneratedMessage {
   factory UpdateAppConnectorRequest({
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
     AppConnector? appConnector,
     $core.String? requestId,
     $core.bool? validateOnly,
@@ -426,7 +426,7 @@ class UpdateAppConnectorRequest extends $pb.GeneratedMessage {
   factory UpdateAppConnectorRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAppConnectorRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.beyondcorp.appconnectors.v1'), createEmptyInstance: create)
-    ..aOM<$2209.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..aOM<AppConnector>(2, _omitFieldNames ? '' : 'appConnector', subBuilder: AppConnector.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -460,15 +460,15 @@ class UpdateAppConnectorRequest extends $pb.GeneratedMessage {
   /// * `labels`
   /// * `display_name`
   @$pb.TagNumber(1)
-  $2209.FieldMask get updateMask => $_getN(0);
+  $2210.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2209.FieldMask v) { setField(1, v); }
+  set updateMask($2210.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(0);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. AppConnector message with updated fields. Only supported fields
   /// specified in update_mask are updated.
@@ -617,7 +617,7 @@ class DeleteAppConnectorRequest extends $pb.GeneratedMessage {
 class ReportStatusRequest extends $pb.GeneratedMessage {
   factory ReportStatusRequest({
     $core.String? appConnector,
-    $4364.ResourceInfo? resourceInfo,
+    $4365.ResourceInfo? resourceInfo,
     $core.String? requestId,
     $core.bool? validateOnly,
   }) {
@@ -642,7 +642,7 @@ class ReportStatusRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportStatusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.beyondcorp.appconnectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appConnector')
-    ..aOM<$4364.ResourceInfo>(2, _omitFieldNames ? '' : 'resourceInfo', subBuilder: $4364.ResourceInfo.create)
+    ..aOM<$4365.ResourceInfo>(2, _omitFieldNames ? '' : 'resourceInfo', subBuilder: $4365.ResourceInfo.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
@@ -682,15 +682,15 @@ class ReportStatusRequest extends $pb.GeneratedMessage {
 
   /// Required. Resource info of the connector.
   @$pb.TagNumber(2)
-  $4364.ResourceInfo get resourceInfo => $_getN(1);
+  $4365.ResourceInfo get resourceInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set resourceInfo($4364.ResourceInfo v) { setField(2, v); }
+  set resourceInfo($4365.ResourceInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResourceInfo() => $_has(1);
   @$pb.TagNumber(2)
   void clearResourceInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $4364.ResourceInfo ensureResourceInfo() => $_ensure(1);
+  $4365.ResourceInfo ensureResourceInfo() => $_ensure(1);
 
   ///  Optional. An optional request ID to identify requests. Specify a unique
   ///  request ID so that if you must retry your request, the server will know to
@@ -853,14 +853,14 @@ class AppConnector_PrincipalInfo extends $pb.GeneratedMessage {
 class AppConnector extends $pb.GeneratedMessage {
   factory AppConnector({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? displayName,
     $core.String? uid,
     AppConnector_State? state,
     AppConnector_PrincipalInfo? principalInfo,
-    $4364.ResourceInfo? resourceInfo,
+    $4365.ResourceInfo? resourceInfo,
   }) {
     final $result = create();
     if (name != null) {
@@ -898,14 +898,14 @@ class AppConnector extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppConnector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.beyondcorp.appconnectors.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'AppConnector.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.beyondcorp.appconnectors.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..aOS(6, _omitFieldNames ? '' : 'uid')
     ..e<AppConnector_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: AppConnector_State.STATE_UNSPECIFIED, valueOf: AppConnector_State.valueOf, enumValues: AppConnector_State.values)
     ..aOM<AppConnector_PrincipalInfo>(8, _omitFieldNames ? '' : 'principalInfo', subBuilder: AppConnector_PrincipalInfo.create)
-    ..aOM<$4364.ResourceInfo>(11, _omitFieldNames ? '' : 'resourceInfo', subBuilder: $4364.ResourceInfo.create)
+    ..aOM<$4365.ResourceInfo>(11, _omitFieldNames ? '' : 'resourceInfo', subBuilder: $4365.ResourceInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -943,27 +943,27 @@ class AppConnector extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when the resource was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. Timestamp when the resource was last modified.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Optional. Resource labels to represent user provided metadata.
   @$pb.TagNumber(4)
@@ -1015,22 +1015,22 @@ class AppConnector extends $pb.GeneratedMessage {
 
   /// Optional. Resource info of the connector.
   @$pb.TagNumber(11)
-  $4364.ResourceInfo get resourceInfo => $_getN(8);
+  $4365.ResourceInfo get resourceInfo => $_getN(8);
   @$pb.TagNumber(11)
-  set resourceInfo($4364.ResourceInfo v) { setField(11, v); }
+  set resourceInfo($4365.ResourceInfo v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasResourceInfo() => $_has(8);
   @$pb.TagNumber(11)
   void clearResourceInfo() => clearField(11);
   @$pb.TagNumber(11)
-  $4364.ResourceInfo ensureResourceInfo() => $_ensure(8);
+  $4365.ResourceInfo ensureResourceInfo() => $_ensure(8);
 }
 
 /// Represents the metadata of the long-running operation.
 class AppConnectorOperationMetadata extends $pb.GeneratedMessage {
   factory AppConnectorOperationMetadata({
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -1066,8 +1066,8 @@ class AppConnectorOperationMetadata extends $pb.GeneratedMessage {
   factory AppConnectorOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppConnectorOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.beyondcorp.appconnectors.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -1099,27 +1099,27 @@ class AppConnectorOperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1775.Timestamp get createTime => $_getN(0);
+  $1776.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1775.Timestamp v) { setField(1, v); }
+  set createTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureCreateTime() => $_ensure(0);
+  $1776.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

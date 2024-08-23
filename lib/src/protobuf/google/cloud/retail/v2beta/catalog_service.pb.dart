@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'catalog.pb.dart' as $1296;
 
 /// Request for
@@ -191,7 +191,7 @@ class ListCatalogsResponse extends $pb.GeneratedMessage {
 class UpdateCatalogRequest extends $pb.GeneratedMessage {
   factory UpdateCatalogRequest({
     $1296.Catalog? catalog,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (catalog != null) {
@@ -208,7 +208,7 @@ class UpdateCatalogRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCatalogRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOM<$1296.Catalog>(1, _omitFieldNames ? '' : 'catalog', subBuilder: $1296.Catalog.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -258,15 +258,15 @@ class UpdateCatalogRequest extends $pb.GeneratedMessage {
   ///  If an unsupported or unknown field is provided, an INVALID_ARGUMENT error
   ///  is returned.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message to set a specified branch as new default_branch.
@@ -439,7 +439,7 @@ class GetDefaultBranchRequest extends $pb.GeneratedMessage {
 class GetDefaultBranchResponse extends $pb.GeneratedMessage {
   factory GetDefaultBranchResponse({
     $core.String? branch,
-    $1775.Timestamp? setTime,
+    $1776.Timestamp? setTime,
     $core.String? note,
   }) {
     final $result = create();
@@ -460,7 +460,7 @@ class GetDefaultBranchResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDefaultBranchResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'branch')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'setTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'setTime', subBuilder: $1776.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'note')
     ..hasRequiredFields = false
   ;
@@ -498,15 +498,15 @@ class GetDefaultBranchResponse extends $pb.GeneratedMessage {
 
   /// The time when this branch is set to default.
   @$pb.TagNumber(2)
-  $1775.Timestamp get setTime => $_getN(1);
+  $1776.Timestamp get setTime => $_getN(1);
   @$pb.TagNumber(2)
-  set setTime($1775.Timestamp v) { setField(2, v); }
+  set setTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSetTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSetTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSetTime() => $_ensure(1);
+  $1776.Timestamp ensureSetTime() => $_ensure(1);
 
   /// This corresponds to
   /// [SetDefaultBranchRequest.note][google.cloud.retail.v2beta.SetDefaultBranchRequest.note]
@@ -582,7 +582,7 @@ class GetCompletionConfigRequest extends $pb.GeneratedMessage {
 class UpdateCompletionConfigRequest extends $pb.GeneratedMessage {
   factory UpdateCompletionConfigRequest({
     $1296.CompletionConfig? completionConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (completionConfig != null) {
@@ -599,7 +599,7 @@ class UpdateCompletionConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCompletionConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOM<$1296.CompletionConfig>(1, _omitFieldNames ? '' : 'completionConfig', subBuilder: $1296.CompletionConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -655,15 +655,15 @@ class UpdateCompletionConfigRequest extends $pb.GeneratedMessage {
   ///
   ///  If not set, all supported fields are updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for
@@ -727,7 +727,7 @@ class GetAttributesConfigRequest extends $pb.GeneratedMessage {
 class UpdateAttributesConfigRequest extends $pb.GeneratedMessage {
   factory UpdateAttributesConfigRequest({
     $1296.AttributesConfig? attributesConfig,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (attributesConfig != null) {
@@ -744,7 +744,7 @@ class UpdateAttributesConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAttributesConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOM<$1296.AttributesConfig>(1, _omitFieldNames ? '' : 'attributesConfig', subBuilder: $1296.AttributesConfig.create)
-    ..aOM<$2209.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -790,15 +790,15 @@ class UpdateAttributesConfigRequest extends $pb.GeneratedMessage {
   ///
   ///  If not set, all supported fields are updated.
   @$pb.TagNumber(2)
-  $2209.FieldMask get updateMask => $_getN(1);
+  $2210.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2209.FieldMask v) { setField(2, v); }
+  set updateMask($2210.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(1);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for
@@ -1083,7 +1083,7 @@ class ReplaceCatalogAttributeRequest extends $pb.GeneratedMessage {
   factory ReplaceCatalogAttributeRequest({
     $core.String? attributesConfig,
     $1296.CatalogAttribute? catalogAttribute,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (attributesConfig != null) {
@@ -1104,7 +1104,7 @@ class ReplaceCatalogAttributeRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReplaceCatalogAttributeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.retail.v2beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'attributesConfig')
     ..aOM<$1296.CatalogAttribute>(2, _omitFieldNames ? '' : 'catalogAttribute', subBuilder: $1296.CatalogAttribute.create)
-    ..aOM<$2209.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1161,15 +1161,15 @@ class ReplaceCatalogAttributeRequest extends $pb.GeneratedMessage {
   ///
   ///  If not set, all supported fields are updated.
   @$pb.TagNumber(3)
-  $2209.FieldMask get updateMask => $_getN(2);
+  $2210.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($2209.FieldMask v) { setField(3, v); }
+  set updateMask($2210.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(2);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 

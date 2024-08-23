@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/keyword_plan_network.pbenum.dart' as $2309;
+import '../enums/keyword_plan_network.pbenum.dart' as $2310;
 
 /// A Keyword Plan campaign.
 /// Max number of keyword plan campaigns per plan allowed: 1.
 class KeywordPlanCampaign extends $pb.GeneratedMessage {
   factory KeywordPlanCampaign({
     $core.String? resourceName,
-    $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
+    $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork? keywordPlanNetwork,
     $core.Iterable<KeywordPlanGeoTarget>? geoTargets,
     $core.String? keywordPlan,
     $fixnum.Int64? id,
@@ -62,7 +62,7 @@ class KeywordPlanCampaign extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeywordPlanCampaign', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v15.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$2309.KeywordPlanNetworkEnum_KeywordPlanNetwork>(6, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
+    ..e<$2310.KeywordPlanNetworkEnum_KeywordPlanNetwork>(6, _omitFieldNames ? '' : 'keywordPlanNetwork', $pb.PbFieldType.OE, defaultOrMaker: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.UNSPECIFIED, valueOf: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.valueOf, enumValues: $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork.values)
     ..pc<KeywordPlanGeoTarget>(8, _omitFieldNames ? '' : 'geoTargets', $pb.PbFieldType.PM, subBuilder: KeywordPlanGeoTarget.create)
     ..aOS(9, _omitFieldNames ? '' : 'keywordPlan')
     ..aInt64(10, _omitFieldNames ? '' : 'id')
@@ -111,9 +111,9 @@ class KeywordPlanCampaign extends $pb.GeneratedMessage {
   ///  This field is required and should not be empty when creating Keyword Plan
   ///  campaigns.
   @$pb.TagNumber(6)
-  $2309.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(1);
+  $2310.KeywordPlanNetworkEnum_KeywordPlanNetwork get keywordPlanNetwork => $_getN(1);
   @$pb.TagNumber(6)
-  set keywordPlanNetwork($2309.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(6, v); }
+  set keywordPlanNetwork($2310.KeywordPlanNetworkEnum_KeywordPlanNetwork v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasKeywordPlanNetwork() => $_has(1);
   @$pb.TagNumber(6)

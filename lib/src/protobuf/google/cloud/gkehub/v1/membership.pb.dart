@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'membership.pbenum.dart';
 
 export 'membership.pbenum.dart';
@@ -31,11 +31,11 @@ class Membership extends $pb.GeneratedMessage {
     $core.String? description,
     MembershipEndpoint? endpoint,
     MembershipState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
-    $1775.Timestamp? deleteTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
+    $1776.Timestamp? deleteTime,
     $core.String? externalId,
-    $1775.Timestamp? lastConnectionTime,
+    $1776.Timestamp? lastConnectionTime,
     $core.String? uniqueId,
     Authority? authority,
     MonitoringConfig? monitoringConfig,
@@ -97,11 +97,11 @@ class Membership extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<MembershipEndpoint>(4, _omitFieldNames ? '' : 'endpoint', subBuilder: MembershipEndpoint.create)
     ..aOM<MembershipState>(5, _omitFieldNames ? '' : 'state', subBuilder: MembershipState.create)
-    ..aOM<$1775.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $1776.Timestamp.create)
     ..aOS(9, _omitFieldNames ? '' : 'externalId')
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'lastConnectionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'lastConnectionTime', subBuilder: $1776.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'uniqueId')
     ..aOM<Authority>(12, _omitFieldNames ? '' : 'authority', subBuilder: Authority.create)
     ..aOM<MonitoringConfig>(14, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: MonitoringConfig.create)
@@ -196,39 +196,39 @@ class Membership extends $pb.GeneratedMessage {
 
   /// Output only. When the Membership was created.
   @$pb.TagNumber(6)
-  $1775.Timestamp get createTime => $_getN(5);
+  $1776.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
-  set createTime($1775.Timestamp v) { setField(6, v); }
+  set createTime($1776.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1775.Timestamp ensureCreateTime() => $_ensure(5);
+  $1776.Timestamp ensureCreateTime() => $_ensure(5);
 
   /// Output only. When the Membership was last updated.
   @$pb.TagNumber(7)
-  $1775.Timestamp get updateTime => $_getN(6);
+  $1776.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
-  set updateTime($1775.Timestamp v) { setField(7, v); }
+  set updateTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearUpdateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(6);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(6);
 
   /// Output only. When the Membership was deleted.
   @$pb.TagNumber(8)
-  $1775.Timestamp get deleteTime => $_getN(7);
+  $1776.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteTime($1775.Timestamp v) { setField(8, v); }
+  set deleteTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureDeleteTime() => $_ensure(7);
+  $1776.Timestamp ensureDeleteTime() => $_ensure(7);
 
   ///  Optional. An externally-generated and managed ID for this Membership. This
   ///  ID may be modified after creation, but this is not recommended.
@@ -252,15 +252,15 @@ class Membership extends $pb.GeneratedMessage {
   /// Connect, or that have never connected successfully, this field will be
   /// unset.
   @$pb.TagNumber(10)
-  $1775.Timestamp get lastConnectionTime => $_getN(9);
+  $1776.Timestamp get lastConnectionTime => $_getN(9);
   @$pb.TagNumber(10)
-  set lastConnectionTime($1775.Timestamp v) { setField(10, v); }
+  set lastConnectionTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasLastConnectionTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearLastConnectionTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureLastConnectionTime() => $_ensure(9);
+  $1776.Timestamp ensureLastConnectionTime() => $_ensure(9);
 
   /// Output only. Google-generated UUID for this resource. This is unique across
   /// all Membership resources. If a Membership resource is deleted and another
@@ -764,7 +764,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
     $core.int? nodeCount,
     $core.int? vcpuCount,
     $core.int? memoryMb,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (kubernetesApiServerVersion != null) {
@@ -797,7 +797,7 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'vcpuCount', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'memoryMb', $pb.PbFieldType.O3)
-    ..aOM<$1775.Timestamp>(100, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(100, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -881,15 +881,15 @@ class KubernetesMetadata extends $pb.GeneratedMessage {
   /// update_time is different from the Membership-level update_time since
   /// EndpointDetails are updated internally for API consumers.
   @$pb.TagNumber(100)
-  $1775.Timestamp get updateTime => $_getN(5);
+  $1776.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(100)
-  set updateTime($1775.Timestamp v) { setField(100, v); }
+  set updateTime($1776.Timestamp v) { setField(100, v); }
   @$pb.TagNumber(100)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(100)
   void clearUpdateTime() => clearField(100);
   @$pb.TagNumber(100)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(5);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 /// This field informs Fleet-based applications/services/UIs with the necessary

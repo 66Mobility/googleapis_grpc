@@ -13,24 +13,24 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'content/static_canvas_prompt.pb.dart' as $1747;
-import 'content/static_content_prompt.pb.dart' as $1745;
-import 'content/static_link_prompt.pb.dart' as $1736;
-import 'static_simple_prompt.pb.dart' as $1744;
-import 'suggestion.pb.dart' as $1746;
-import 'surface_capabilities.pb.dart' as $1748;
+import 'content/static_canvas_prompt.pb.dart' as $1748;
+import 'content/static_content_prompt.pb.dart' as $1746;
+import 'content/static_link_prompt.pb.dart' as $1737;
+import 'static_simple_prompt.pb.dart' as $1745;
+import 'suggestion.pb.dart' as $1747;
+import 'surface_capabilities.pb.dart' as $1749;
 
 /// Represents structured responses to send to the user, such as text,
 /// speech, cards, canvas data, suggestion chips, etc.
 class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.GeneratedMessage {
   factory StaticPrompt_StaticPromptCandidate_StaticPromptResponse({
-    $1744.StaticSimplePrompt? firstSimple,
-    $1745.StaticContentPrompt? content,
-    $1744.StaticSimplePrompt? lastSimple,
-    $core.Iterable<$1746.Suggestion>? suggestions,
-    $1736.StaticLinkPrompt? link,
+    $1745.StaticSimplePrompt? firstSimple,
+    $1746.StaticContentPrompt? content,
+    $1745.StaticSimplePrompt? lastSimple,
+    $core.Iterable<$1747.Suggestion>? suggestions,
+    $1737.StaticLinkPrompt? link,
     $core.bool? override,
-    $1747.StaticCanvasPrompt? canvas,
+    $1748.StaticCanvasPrompt? canvas,
   }) {
     final $result = create();
     if (firstSimple != null) {
@@ -61,13 +61,13 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
   factory StaticPrompt_StaticPromptCandidate_StaticPromptResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticPrompt.StaticPromptCandidate.StaticPromptResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..aOM<$1744.StaticSimplePrompt>(2, _omitFieldNames ? '' : 'firstSimple', subBuilder: $1744.StaticSimplePrompt.create)
-    ..aOM<$1745.StaticContentPrompt>(3, _omitFieldNames ? '' : 'content', subBuilder: $1745.StaticContentPrompt.create)
-    ..aOM<$1744.StaticSimplePrompt>(4, _omitFieldNames ? '' : 'lastSimple', subBuilder: $1744.StaticSimplePrompt.create)
-    ..pc<$1746.Suggestion>(5, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM, subBuilder: $1746.Suggestion.create)
-    ..aOM<$1736.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'link', subBuilder: $1736.StaticLinkPrompt.create)
+    ..aOM<$1745.StaticSimplePrompt>(2, _omitFieldNames ? '' : 'firstSimple', subBuilder: $1745.StaticSimplePrompt.create)
+    ..aOM<$1746.StaticContentPrompt>(3, _omitFieldNames ? '' : 'content', subBuilder: $1746.StaticContentPrompt.create)
+    ..aOM<$1745.StaticSimplePrompt>(4, _omitFieldNames ? '' : 'lastSimple', subBuilder: $1745.StaticSimplePrompt.create)
+    ..pc<$1747.Suggestion>(5, _omitFieldNames ? '' : 'suggestions', $pb.PbFieldType.PM, subBuilder: $1747.Suggestion.create)
+    ..aOM<$1737.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'link', subBuilder: $1737.StaticLinkPrompt.create)
     ..aOB(7, _omitFieldNames ? '' : 'override')
-    ..aOM<$1747.StaticCanvasPrompt>(8, _omitFieldNames ? '' : 'canvas', subBuilder: $1747.StaticCanvasPrompt.create)
+    ..aOM<$1748.StaticCanvasPrompt>(8, _omitFieldNames ? '' : 'canvas', subBuilder: $1748.StaticCanvasPrompt.create)
     ..hasRequiredFields = false
   ;
 
@@ -94,39 +94,39 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
 
   /// Optional. The first voice and text-only response.
   @$pb.TagNumber(2)
-  $1744.StaticSimplePrompt get firstSimple => $_getN(0);
+  $1745.StaticSimplePrompt get firstSimple => $_getN(0);
   @$pb.TagNumber(2)
-  set firstSimple($1744.StaticSimplePrompt v) { setField(2, v); }
+  set firstSimple($1745.StaticSimplePrompt v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFirstSimple() => $_has(0);
   @$pb.TagNumber(2)
   void clearFirstSimple() => clearField(2);
   @$pb.TagNumber(2)
-  $1744.StaticSimplePrompt ensureFirstSimple() => $_ensure(0);
+  $1745.StaticSimplePrompt ensureFirstSimple() => $_ensure(0);
 
   /// Optional. A content like a card, list or media to display to the user.
   @$pb.TagNumber(3)
-  $1745.StaticContentPrompt get content => $_getN(1);
+  $1746.StaticContentPrompt get content => $_getN(1);
   @$pb.TagNumber(3)
-  set content($1745.StaticContentPrompt v) { setField(3, v); }
+  set content($1746.StaticContentPrompt v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(3)
   void clearContent() => clearField(3);
   @$pb.TagNumber(3)
-  $1745.StaticContentPrompt ensureContent() => $_ensure(1);
+  $1746.StaticContentPrompt ensureContent() => $_ensure(1);
 
   /// Optional. The last voice and text-only response.
   @$pb.TagNumber(4)
-  $1744.StaticSimplePrompt get lastSimple => $_getN(2);
+  $1745.StaticSimplePrompt get lastSimple => $_getN(2);
   @$pb.TagNumber(4)
-  set lastSimple($1744.StaticSimplePrompt v) { setField(4, v); }
+  set lastSimple($1745.StaticSimplePrompt v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastSimple() => $_has(2);
   @$pb.TagNumber(4)
   void clearLastSimple() => clearField(4);
   @$pb.TagNumber(4)
-  $1744.StaticSimplePrompt ensureLastSimple() => $_ensure(2);
+  $1745.StaticSimplePrompt ensureLastSimple() => $_ensure(2);
 
   /// Optional. Suggestions to be displayed to the user which will always
   /// appear at the end of the response. If the `append` field in the
@@ -134,21 +134,21 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
   /// added to titles defined in any previously defined suggestions prompts
   /// and duplicate values will be removed.
   @$pb.TagNumber(5)
-  $core.List<$1746.Suggestion> get suggestions => $_getList(3);
+  $core.List<$1747.Suggestion> get suggestions => $_getList(3);
 
   /// Optional. An additional suggestion chip that can link out to the associated app
   /// or site.
   /// The chip will be rendered with the title "Open <name>". Max 20 chars.
   @$pb.TagNumber(6)
-  $1736.StaticLinkPrompt get link => $_getN(4);
+  $1737.StaticLinkPrompt get link => $_getN(4);
   @$pb.TagNumber(6)
-  set link($1736.StaticLinkPrompt v) { setField(6, v); }
+  set link($1737.StaticLinkPrompt v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLink() => $_has(4);
   @$pb.TagNumber(6)
   void clearLink() => clearField(6);
   @$pb.TagNumber(6)
-  $1736.StaticLinkPrompt ensureLink() => $_ensure(4);
+  $1737.StaticLinkPrompt ensureLink() => $_ensure(4);
 
   /// Optional. Mode for how this messages should be merged with previously defined
   /// messages.
@@ -171,15 +171,15 @@ class StaticPrompt_StaticPromptCandidate_StaticPromptResponse extends $pb.Genera
 
   /// A response to be used for interactive canvas experience.
   @$pb.TagNumber(8)
-  $1747.StaticCanvasPrompt get canvas => $_getN(6);
+  $1748.StaticCanvasPrompt get canvas => $_getN(6);
   @$pb.TagNumber(8)
-  set canvas($1747.StaticCanvasPrompt v) { setField(8, v); }
+  set canvas($1748.StaticCanvasPrompt v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCanvas() => $_has(6);
   @$pb.TagNumber(8)
   void clearCanvas() => clearField(8);
   @$pb.TagNumber(8)
-  $1747.StaticCanvasPrompt ensureCanvas() => $_ensure(6);
+  $1748.StaticCanvasPrompt ensureCanvas() => $_ensure(6);
 }
 
 /// Represents a static prompt candidate.
@@ -257,7 +257,7 @@ class StaticPrompt_StaticPromptCandidate extends $pb.GeneratedMessage {
 /// Defines the criteria for whether a prompt matches a request.
 class StaticPrompt_Selector extends $pb.GeneratedMessage {
   factory StaticPrompt_Selector({
-    $1748.SurfaceCapabilities? surfaceCapabilities,
+    $1749.SurfaceCapabilities? surfaceCapabilities,
   }) {
     final $result = create();
     if (surfaceCapabilities != null) {
@@ -270,7 +270,7 @@ class StaticPrompt_Selector extends $pb.GeneratedMessage {
   factory StaticPrompt_Selector.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticPrompt.Selector', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..aOM<$1748.SurfaceCapabilities>(1, _omitFieldNames ? '' : 'surfaceCapabilities', subBuilder: $1748.SurfaceCapabilities.create)
+    ..aOM<$1749.SurfaceCapabilities>(1, _omitFieldNames ? '' : 'surfaceCapabilities', subBuilder: $1749.SurfaceCapabilities.create)
     ..hasRequiredFields = false
   ;
 
@@ -297,15 +297,15 @@ class StaticPrompt_Selector extends $pb.GeneratedMessage {
 
   /// The set of required surface capabilities.
   @$pb.TagNumber(1)
-  $1748.SurfaceCapabilities get surfaceCapabilities => $_getN(0);
+  $1749.SurfaceCapabilities get surfaceCapabilities => $_getN(0);
   @$pb.TagNumber(1)
-  set surfaceCapabilities($1748.SurfaceCapabilities v) { setField(1, v); }
+  set surfaceCapabilities($1749.SurfaceCapabilities v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSurfaceCapabilities() => $_has(0);
   @$pb.TagNumber(1)
   void clearSurfaceCapabilities() => clearField(1);
   @$pb.TagNumber(1)
-  $1748.SurfaceCapabilities ensureSurfaceCapabilities() => $_ensure(0);
+  $1749.SurfaceCapabilities ensureSurfaceCapabilities() => $_ensure(0);
 }
 
 /// Represents a list of prompt candidates, one of which will be selected as the

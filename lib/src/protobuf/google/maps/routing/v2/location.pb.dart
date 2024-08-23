@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import '../../../type/latlng.pb.dart' as $1798;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import '../../../type/latlng.pb.dart' as $1799;
 
 /// Encapsulates a location (a geographic point, and an optional heading).
 class Location extends $pb.GeneratedMessage {
   factory Location({
-    $1798.LatLng? latLng,
-    $1780.Int32Value? heading,
+    $1799.LatLng? latLng,
+    $1781.Int32Value? heading,
   }) {
     final $result = create();
     if (latLng != null) {
@@ -36,8 +36,8 @@ class Location extends $pb.GeneratedMessage {
   factory Location.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Location', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$1798.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1798.LatLng.create)
-    ..aOM<$1780.Int32Value>(2, _omitFieldNames ? '' : 'heading', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'latLng', subBuilder: $1799.LatLng.create)
+    ..aOM<$1781.Int32Value>(2, _omitFieldNames ? '' : 'heading', subBuilder: $1781.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -64,15 +64,15 @@ class Location extends $pb.GeneratedMessage {
 
   /// The waypoint's geographic coordinates.
   @$pb.TagNumber(1)
-  $1798.LatLng get latLng => $_getN(0);
+  $1799.LatLng get latLng => $_getN(0);
   @$pb.TagNumber(1)
-  set latLng($1798.LatLng v) { setField(1, v); }
+  set latLng($1799.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLatLng() => $_has(0);
   @$pb.TagNumber(1)
   void clearLatLng() => clearField(1);
   @$pb.TagNumber(1)
-  $1798.LatLng ensureLatLng() => $_ensure(0);
+  $1799.LatLng ensureLatLng() => $_ensure(0);
 
   /// The compass heading associated with the direction of the flow of traffic.
   /// This value specifies the side of the road for pickup and drop-off. Heading
@@ -81,15 +81,15 @@ class Location extends $pb.GeneratedMessage {
   /// `DRIVE` and `TWO_WHEELER`
   /// [`RouteTravelMode`][google.maps.routing.v2.RouteTravelMode].
   @$pb.TagNumber(2)
-  $1780.Int32Value get heading => $_getN(1);
+  $1781.Int32Value get heading => $_getN(1);
   @$pb.TagNumber(2)
-  set heading($1780.Int32Value v) { setField(2, v); }
+  set heading($1781.Int32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasHeading() => $_has(1);
   @$pb.TagNumber(2)
   void clearHeading() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.Int32Value ensureHeading() => $_ensure(1);
+  $1781.Int32Value ensureHeading() => $_ensure(1);
 }
 
 

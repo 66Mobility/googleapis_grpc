@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
+import '../../../../rpc/status.pb.dart' as $1796;
 import 'logging.pbenum.dart';
 
 export 'logging.pbenum.dart';
@@ -23,7 +23,7 @@ export 'logging.pbenum.dart';
 class RequestLogEntry extends $pb.GeneratedMessage {
   factory RequestLogEntry({
     RequestLogEntry_RequestType? requestType,
-    $1795.Status? status,
+    $1796.Status? status,
     RequestLogEntry_ErrorCause? errorCause,
   }) {
     final $result = create();
@@ -44,7 +44,7 @@ class RequestLogEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.datapipelines.logging.v1'), createEmptyInstance: create)
     ..e<RequestLogEntry_RequestType>(1, _omitFieldNames ? '' : 'requestType', $pb.PbFieldType.OE, defaultOrMaker: RequestLogEntry_RequestType.REQUEST_TYPE_UNSPECIFIED, valueOf: RequestLogEntry_RequestType.valueOf, enumValues: RequestLogEntry_RequestType.values)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
     ..e<RequestLogEntry_ErrorCause>(3, _omitFieldNames ? '' : 'errorCause', $pb.PbFieldType.OE, defaultOrMaker: RequestLogEntry_ErrorCause.ERROR_CAUSE_UNSPECIFIED, valueOf: RequestLogEntry_ErrorCause.valueOf, enumValues: RequestLogEntry_ErrorCause.values)
     ..hasRequiredFields = false
   ;
@@ -82,15 +82,15 @@ class RequestLogEntry extends $pb.GeneratedMessage {
 
   /// The resulting status of the Data Pipelines API request.
   @$pb.TagNumber(2)
-  $1795.Status get status => $_getN(1);
+  $1796.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($1795.Status v) { setField(2, v); }
+  set status($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensureStatus() => $_ensure(1);
+  $1796.Status ensureStatus() => $_ensure(1);
 
   /// Cause of the error status.
   @$pb.TagNumber(3)

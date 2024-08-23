@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../resources/feed_item_set_link.pb.dart' as $3838;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../resources/feed_item_set_link.pb.dart' as $3839;
 
 /// Request message for
 /// [FeedItemSetLinkService.MutateFeedItemSetLinks][google.ads.googleads.v17.services.FeedItemSetLinkService.MutateFeedItemSetLinks].
@@ -123,7 +123,7 @@ enum FeedItemSetLinkOperation_Operation {
 /// A single operation (create, update, remove) on a feed item set link.
 class FeedItemSetLinkOperation extends $pb.GeneratedMessage {
   factory FeedItemSetLinkOperation({
-    $3838.FeedItemSetLink? create_1,
+    $3839.FeedItemSetLink? create_1,
     $core.String? remove,
   }) {
     final $result = create();
@@ -146,7 +146,7 @@ class FeedItemSetLinkOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FeedItemSetLinkOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$3838.FeedItemSetLink>(1, _omitFieldNames ? '' : 'create', subBuilder: $3838.FeedItemSetLink.create)
+    ..aOM<$3839.FeedItemSetLink>(1, _omitFieldNames ? '' : 'create', subBuilder: $3839.FeedItemSetLink.create)
     ..aOS(2, _omitFieldNames ? '' : 'remove')
     ..hasRequiredFields = false
   ;
@@ -178,15 +178,15 @@ class FeedItemSetLinkOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the
   /// new feed item set link.
   @$pb.TagNumber(1)
-  $3838.FeedItemSetLink get create_1 => $_getN(0);
+  $3839.FeedItemSetLink get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3838.FeedItemSetLink v) { setField(1, v); }
+  set create_1($3839.FeedItemSetLink v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3838.FeedItemSetLink ensureCreate_1() => $_ensure(0);
+  $3839.FeedItemSetLink ensureCreate_1() => $_ensure(0);
 
   ///  Remove operation: A resource name for the removed feed item set link is
   ///  expected, in this format:
@@ -206,7 +206,7 @@ class FeedItemSetLinkOperation extends $pb.GeneratedMessage {
 class MutateFeedItemSetLinksResponse extends $pb.GeneratedMessage {
   factory MutateFeedItemSetLinksResponse({
     $core.Iterable<MutateFeedItemSetLinkResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -223,7 +223,7 @@ class MutateFeedItemSetLinksResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateFeedItemSetLinksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateFeedItemSetLinkResult>(1, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateFeedItemSetLinkResult.create)
-    ..aOM<$1795.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(2, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -257,15 +257,15 @@ class MutateFeedItemSetLinksResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(2)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(2)
-  set partialFailureError($1795.Status v) { setField(2, v); }
+  set partialFailureError($1796.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartialFailureError() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the feed item set link mutate.

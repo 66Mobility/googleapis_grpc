@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1737;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
+import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -381,7 +381,7 @@ class Cluster_ControlPlaneEncryption extends $pb.GeneratedMessage {
     $core.String? kmsKey,
     $core.String? kmsKeyActiveVersion,
     KmsKeyState? kmsKeyState,
-    $1795.Status? kmsStatus,
+    $1796.Status? kmsStatus,
   }) {
     final $result = create();
     if (kmsKey != null) {
@@ -406,7 +406,7 @@ class Cluster_ControlPlaneEncryption extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'kmsKey')
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyActiveVersion')
     ..e<KmsKeyState>(3, _omitFieldNames ? '' : 'kmsKeyState', $pb.PbFieldType.OE, defaultOrMaker: KmsKeyState.KMS_KEY_STATE_UNSPECIFIED, valueOf: KmsKeyState.valueOf, enumValues: KmsKeyState.values)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'kmsStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'kmsStatus', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -473,15 +473,15 @@ class Cluster_ControlPlaneEncryption extends $pb.GeneratedMessage {
   /// `KMS_KEY_STATE_KEY_AVAILABLE`. If populated, this field contains the
   /// error status reported by Cloud KMS.
   @$pb.TagNumber(4)
-  $1795.Status get kmsStatus => $_getN(3);
+  $1796.Status get kmsStatus => $_getN(3);
   @$pb.TagNumber(4)
-  set kmsStatus($1795.Status v) { setField(4, v); }
+  set kmsStatus($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasKmsStatus() => $_has(3);
   @$pb.TagNumber(4)
   void clearKmsStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureKmsStatus() => $_ensure(3);
+  $1796.Status ensureKmsStatus() => $_ensure(3);
 }
 
 /// A Maintenance Event is an operation that could cause temporary disruptions
@@ -496,10 +496,10 @@ class Cluster_MaintenanceEvent extends $pb.GeneratedMessage {
     Cluster_MaintenanceEvent_Type? type,
     Cluster_MaintenanceEvent_Schedule? schedule,
     Cluster_MaintenanceEvent_State? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
+    $1776.Timestamp? updateTime,
   }) {
     final $result = create();
     if (uuid != null) {
@@ -545,10 +545,10 @@ class Cluster_MaintenanceEvent extends $pb.GeneratedMessage {
     ..e<Cluster_MaintenanceEvent_Type>(4, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Cluster_MaintenanceEvent_Type.TYPE_UNSPECIFIED, valueOf: Cluster_MaintenanceEvent_Type.valueOf, enumValues: Cluster_MaintenanceEvent_Type.values)
     ..e<Cluster_MaintenanceEvent_Schedule>(5, _omitFieldNames ? '' : 'schedule', $pb.PbFieldType.OE, defaultOrMaker: Cluster_MaintenanceEvent_Schedule.SCHEDULE_UNSPECIFIED, valueOf: Cluster_MaintenanceEvent_Schedule.valueOf, enumValues: Cluster_MaintenanceEvent_Schedule.values)
     ..e<Cluster_MaintenanceEvent_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Cluster_MaintenanceEvent_State.STATE_UNSPECIFIED, valueOf: Cluster_MaintenanceEvent_State.valueOf, enumValues: Cluster_MaintenanceEvent_State.values)
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -638,60 +638,60 @@ class Cluster_MaintenanceEvent extends $pb.GeneratedMessage {
 
   /// Output only. The time when the maintenance event request was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time when the maintenance event started.
   @$pb.TagNumber(8)
-  $1775.Timestamp get startTime => $_getN(7);
+  $1776.Timestamp get startTime => $_getN(7);
   @$pb.TagNumber(8)
-  set startTime($1775.Timestamp v) { setField(8, v); }
+  set startTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearStartTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureStartTime() => $_ensure(7);
+  $1776.Timestamp ensureStartTime() => $_ensure(7);
 
   /// Output only. The time when the maintenance event ended, either
   /// successfully or not. If the maintenance event is split into multiple
   /// maintenance windows, end_time is only updated when the whole flow ends.
   @$pb.TagNumber(9)
-  $1775.Timestamp get endTime => $_getN(8);
+  $1776.Timestamp get endTime => $_getN(8);
   @$pb.TagNumber(9)
-  set endTime($1775.Timestamp v) { setField(9, v); }
+  set endTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasEndTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearEndTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureEndTime() => $_ensure(8);
+  $1776.Timestamp ensureEndTime() => $_ensure(8);
 
   /// Output only. The time when the maintenance event message was updated.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 }
 
 /// Configuration of the cluster survivability, e.g., for the case when network
 /// connectivity is lost.
 class Cluster_SurvivabilityConfig extends $pb.GeneratedMessage {
   factory Cluster_SurvivabilityConfig({
-    $1737.Duration? offlineRebootTtl,
+    $1738.Duration? offlineRebootTtl,
   }) {
     final $result = create();
     if (offlineRebootTtl != null) {
@@ -704,7 +704,7 @@ class Cluster_SurvivabilityConfig extends $pb.GeneratedMessage {
   factory Cluster_SurvivabilityConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cluster.SurvivabilityConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgecontainer.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'offlineRebootTtl', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'offlineRebootTtl', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -733,23 +733,23 @@ class Cluster_SurvivabilityConfig extends $pb.GeneratedMessage {
   /// become functional without network connectivity to Google. The default 0
   /// means not allowed. The maximum is 7 days.
   @$pb.TagNumber(1)
-  $1737.Duration get offlineRebootTtl => $_getN(0);
+  $1738.Duration get offlineRebootTtl => $_getN(0);
   @$pb.TagNumber(1)
-  set offlineRebootTtl($1737.Duration v) { setField(1, v); }
+  set offlineRebootTtl($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOfflineRebootTtl() => $_has(0);
   @$pb.TagNumber(1)
   void clearOfflineRebootTtl() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureOfflineRebootTtl() => $_ensure(0);
+  $1738.Duration ensureOfflineRebootTtl() => $_ensure(0);
 }
 
 /// A Google Distributed Cloud Edge Kubernetes cluster.
 class Cluster extends $pb.GeneratedMessage {
   factory Cluster({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? endpoint,
     ClusterNetworking? networking,
@@ -853,8 +853,8 @@ class Cluster extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cluster', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgecontainer.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Cluster.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgecontainer.v1'))
     ..aOS(6, _omitFieldNames ? '' : 'endpoint')
     ..aOM<ClusterNetworking>(7, _omitFieldNames ? '' : 'networking', subBuilder: ClusterNetworking.create)
@@ -912,27 +912,27 @@ class Cluster extends $pb.GeneratedMessage {
 
   /// Output only. The time when the cluster was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the cluster was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -1399,7 +1399,7 @@ class NodePool_LocalDiskEncryption extends $pb.GeneratedMessage {
     $core.String? kmsKey,
     $core.String? kmsKeyActiveVersion,
     KmsKeyState? kmsKeyState,
-    $1795.Status? kmsStatus,
+    $1796.Status? kmsStatus,
   }) {
     final $result = create();
     if (kmsKey != null) {
@@ -1424,7 +1424,7 @@ class NodePool_LocalDiskEncryption extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'kmsKey')
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyActiveVersion')
     ..e<KmsKeyState>(3, _omitFieldNames ? '' : 'kmsKeyState', $pb.PbFieldType.OE, defaultOrMaker: KmsKeyState.KMS_KEY_STATE_UNSPECIFIED, valueOf: KmsKeyState.valueOf, enumValues: KmsKeyState.values)
-    ..aOM<$1795.Status>(4, _omitFieldNames ? '' : 'kmsStatus', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(4, _omitFieldNames ? '' : 'kmsStatus', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1491,15 +1491,15 @@ class NodePool_LocalDiskEncryption extends $pb.GeneratedMessage {
   /// `KMS_KEY_STATE_KEY_AVAILABLE`. If populated, this field contains the
   /// error status reported by Cloud KMS.
   @$pb.TagNumber(4)
-  $1795.Status get kmsStatus => $_getN(3);
+  $1796.Status get kmsStatus => $_getN(3);
   @$pb.TagNumber(4)
-  set kmsStatus($1795.Status v) { setField(4, v); }
+  set kmsStatus($1796.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasKmsStatus() => $_has(3);
   @$pb.TagNumber(4)
   void clearKmsStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $1795.Status ensureKmsStatus() => $_ensure(3);
+  $1796.Status ensureKmsStatus() => $_ensure(3);
 }
 
 /// Configuration for each node in the NodePool
@@ -1553,8 +1553,8 @@ class NodePool_NodeConfig extends $pb.GeneratedMessage {
 class NodePool extends $pb.GeneratedMessage {
   factory NodePool({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.int? nodeCount,
     $core.String? machineFilter,
@@ -1602,8 +1602,8 @@ class NodePool extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NodePool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgecontainer.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'NodePool.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgecontainer.v1'))
     ..a<$core.int>(6, _omitFieldNames ? '' : 'nodeCount', $pb.PbFieldType.O3)
     ..aOS(7, _omitFieldNames ? '' : 'machineFilter')
@@ -1647,27 +1647,27 @@ class NodePool extends $pb.GeneratedMessage {
 
   /// Output only. The time when the node pool was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the node pool was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -1747,8 +1747,8 @@ class NodePool extends $pb.GeneratedMessage {
 class Machine extends $pb.GeneratedMessage {
   factory Machine({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? hostedNode,
     $core.String? zone,
@@ -1788,8 +1788,8 @@ class Machine extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Machine', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgecontainer.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Machine.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgecontainer.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'hostedNode')
     ..aOS(6, _omitFieldNames ? '' : 'zone')
@@ -1831,27 +1831,27 @@ class Machine extends $pb.GeneratedMessage {
 
   /// Output only. The time when the node pool was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the node pool was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -2186,8 +2186,8 @@ class VpnConnection_Details extends $pb.GeneratedMessage {
 class VpnConnection extends $pb.GeneratedMessage {
   factory VpnConnection({
     $core.String? name,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? natGatewayIp,
   @$core.Deprecated('This field is deprecated.')
@@ -2245,8 +2245,8 @@ class VpnConnection extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VpnConnection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgecontainer.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'VpnConnection.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.edgecontainer.v1'))
     ..aOS(5, _omitFieldNames ? '' : 'natGatewayIp')
     ..e<VpnConnection_BgpRoutingMode>(6, _omitFieldNames ? '' : 'bgpRoutingMode', $pb.PbFieldType.OE, defaultOrMaker: VpnConnection_BgpRoutingMode.BGP_ROUTING_MODE_UNSPECIFIED, valueOf: VpnConnection_BgpRoutingMode.valueOf, enumValues: VpnConnection_BgpRoutingMode.values)
@@ -2292,27 +2292,27 @@ class VpnConnection extends $pb.GeneratedMessage {
 
   /// Output only. The time when the VPN connection was created.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when the VPN connection was last updated.
   @$pb.TagNumber(3)
-  $1775.Timestamp get updateTime => $_getN(2);
+  $1776.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1775.Timestamp v) { setField(3, v); }
+  set updateTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(2);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels associated with this resource.
   @$pb.TagNumber(4)
@@ -2779,8 +2779,8 @@ class RecurringTimeWindow extends $pb.GeneratedMessage {
 /// Represents an arbitrary window of time.
 class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow({
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -2796,8 +2796,8 @@ class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeWindow', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.edgecontainer.v1'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2824,28 +2824,28 @@ class TimeWindow extends $pb.GeneratedMessage {
 
   /// The time that the window first starts.
   @$pb.TagNumber(1)
-  $1775.Timestamp get startTime => $_getN(0);
+  $1776.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1775.Timestamp v) { setField(1, v); }
+  set startTime($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureStartTime() => $_ensure(0);
+  $1776.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time that the window ends. The end time must take place after the
   /// start time.
   @$pb.TagNumber(2)
-  $1775.Timestamp get endTime => $_getN(1);
+  $1776.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1775.Timestamp v) { setField(2, v); }
+  set endTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureEndTime() => $_ensure(1);
+  $1776.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Server configuration for supported versions and release channels.

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'resource.pbenum.dart';
 
 export 'resource.pbenum.dart';
@@ -28,8 +28,8 @@ class Domain extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? locations,
     $core.String? admin,
     $core.String? fqdn,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Domain_State? state,
     $core.String? statusMessage,
     $core.Iterable<Trust>? trusts,
@@ -85,8 +85,8 @@ class Domain extends $pb.GeneratedMessage {
     ..pPS(5, _omitFieldNames ? '' : 'locations')
     ..aOS(6, _omitFieldNames ? '' : 'admin')
     ..aOS(10, _omitFieldNames ? '' : 'fqdn')
-    ..aOM<$1775.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Domain_State>(13, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Domain_State.STATE_UNSPECIFIED, valueOf: Domain_State.valueOf, enumValues: Domain_State.values)
     ..aOS(14, _omitFieldNames ? '' : 'statusMessage')
     ..pc<Trust>(15, _omitFieldNames ? '' : 'trusts', $pb.PbFieldType.PM, subBuilder: Trust.create)
@@ -183,27 +183,27 @@ class Domain extends $pb.GeneratedMessage {
 
   /// Output only. The time the instance was created.
   @$pb.TagNumber(11)
-  $1775.Timestamp get createTime => $_getN(7);
+  $1776.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(11)
-  set createTime($1775.Timestamp v) { setField(11, v); }
+  set createTime($1776.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $1775.Timestamp ensureCreateTime() => $_ensure(7);
+  $1776.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. The last update time.
   @$pb.TagNumber(12)
-  $1775.Timestamp get updateTime => $_getN(8);
+  $1776.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(12)
-  set updateTime($1775.Timestamp v) { setField(12, v); }
+  set updateTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(8);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. The current state of this domain.
   @$pb.TagNumber(13)
@@ -241,11 +241,11 @@ class Trust extends $pb.GeneratedMessage {
     $core.bool? selectiveAuthentication,
     $core.Iterable<$core.String>? targetDnsIpAddresses,
     $core.String? trustHandshakeSecret,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     Trust_State? state,
     $core.String? stateDescription,
-    $1775.Timestamp? lastTrustHeartbeatTime,
+    $1776.Timestamp? lastTrustHeartbeatTime,
   }) {
     final $result = create();
     if (targetDomainName != null) {
@@ -294,11 +294,11 @@ class Trust extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'selectiveAuthentication')
     ..pPS(5, _omitFieldNames ? '' : 'targetDnsIpAddresses')
     ..aOS(6, _omitFieldNames ? '' : 'trustHandshakeSecret')
-    ..aOM<$1775.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..e<Trust_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Trust_State.STATE_UNSPECIFIED, valueOf: Trust_State.valueOf, enumValues: Trust_State.values)
     ..aOS(11, _omitFieldNames ? '' : 'stateDescription')
-    ..aOM<$1775.Timestamp>(12, _omitFieldNames ? '' : 'lastTrustHeartbeatTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(12, _omitFieldNames ? '' : 'lastTrustHeartbeatTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -385,27 +385,27 @@ class Trust extends $pb.GeneratedMessage {
 
   /// Output only. The time the instance was created.
   @$pb.TagNumber(7)
-  $1775.Timestamp get createTime => $_getN(6);
+  $1776.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($1775.Timestamp v) { setField(7, v); }
+  set createTime($1776.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1775.Timestamp ensureCreateTime() => $_ensure(6);
+  $1776.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The last update time.
   @$pb.TagNumber(8)
-  $1775.Timestamp get updateTime => $_getN(7);
+  $1776.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($1775.Timestamp v) { setField(8, v); }
+  set updateTime($1776.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(7);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The current state of the trust.
   @$pb.TagNumber(9)
@@ -429,15 +429,15 @@ class Trust extends $pb.GeneratedMessage {
 
   /// Output only. The last heartbeat time when the trust was known to be connected.
   @$pb.TagNumber(12)
-  $1775.Timestamp get lastTrustHeartbeatTime => $_getN(10);
+  $1776.Timestamp get lastTrustHeartbeatTime => $_getN(10);
   @$pb.TagNumber(12)
-  set lastTrustHeartbeatTime($1775.Timestamp v) { setField(12, v); }
+  set lastTrustHeartbeatTime($1776.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasLastTrustHeartbeatTime() => $_has(10);
   @$pb.TagNumber(12)
   void clearLastTrustHeartbeatTime() => clearField(12);
   @$pb.TagNumber(12)
-  $1775.Timestamp ensureLastTrustHeartbeatTime() => $_ensure(10);
+  $1776.Timestamp ensureLastTrustHeartbeatTime() => $_ensure(10);
 }
 
 

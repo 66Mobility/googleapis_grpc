@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// A SavedQuery is a view of the dataset. It references a subset of annotations
 /// by problem type and filters.
@@ -22,14 +22,14 @@ class SavedQuery extends $pb.GeneratedMessage {
   factory SavedQuery({
     $core.String? name,
     $core.String? displayName,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.String? annotationFilter,
     $core.String? problemType,
     $core.String? etag,
     $core.bool? supportAutomlTraining,
     $core.int? annotationSpecCount,
-    $1734.Value? metadata,
+    $1735.Value? metadata,
   }) {
     final $result = create();
     if (name != null) {
@@ -71,14 +71,14 @@ class SavedQuery extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SavedQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'annotationFilter')
     ..aOS(6, _omitFieldNames ? '' : 'problemType')
     ..aOS(8, _omitFieldNames ? '' : 'etag')
     ..aOB(9, _omitFieldNames ? '' : 'supportAutomlTraining')
     ..a<$core.int>(10, _omitFieldNames ? '' : 'annotationSpecCount', $pb.PbFieldType.O3)
-    ..aOM<$1734.Value>(12, _omitFieldNames ? '' : 'metadata', subBuilder: $1734.Value.create)
+    ..aOM<$1735.Value>(12, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -127,27 +127,27 @@ class SavedQuery extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this SavedQuery was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Timestamp when SavedQuery was last updated.
   @$pb.TagNumber(4)
-  $1775.Timestamp get updateTime => $_getN(3);
+  $1776.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1775.Timestamp v) { setField(4, v); }
+  set updateTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(3);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Filters on the Annotations in the dataset.
   @$pb.TagNumber(5)
@@ -215,15 +215,15 @@ class SavedQuery extends $pb.GeneratedMessage {
 
   /// Some additional information about the SavedQuery.
   @$pb.TagNumber(12)
-  $1734.Value get metadata => $_getN(9);
+  $1735.Value get metadata => $_getN(9);
   @$pb.TagNumber(12)
-  set metadata($1734.Value v) { setField(12, v); }
+  set metadata($1735.Value v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasMetadata() => $_has(9);
   @$pb.TagNumber(12)
   void clearMetadata() => clearField(12);
   @$pb.TagNumber(12)
-  $1734.Value ensureMetadata() => $_ensure(9);
+  $1735.Value ensureMetadata() => $_ensure(9);
 }
 
 

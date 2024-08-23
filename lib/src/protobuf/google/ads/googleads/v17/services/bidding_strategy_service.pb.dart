@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2209;
-import '../../../../rpc/status.pb.dart' as $1795;
-import '../enums/response_content_type.pbenum.dart' as $3796;
-import '../resources/bidding_strategy.pb.dart' as $3812;
+import '../../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../../rpc/status.pb.dart' as $1796;
+import '../enums/response_content_type.pbenum.dart' as $3797;
+import '../resources/bidding_strategy.pb.dart' as $3813;
 
 /// Request message for
 /// [BiddingStrategyService.MutateBiddingStrategies][google.ads.googleads.v17.services.BiddingStrategyService.MutateBiddingStrategies].
@@ -26,7 +26,7 @@ class MutateBiddingStrategiesRequest extends $pb.GeneratedMessage {
     $core.Iterable<BiddingStrategyOperation>? operations,
     $core.bool? partialFailure,
     $core.bool? validateOnly,
-    $3796.ResponseContentTypeEnum_ResponseContentType? responseContentType,
+    $3797.ResponseContentTypeEnum_ResponseContentType? responseContentType,
   }) {
     final $result = create();
     if (customerId != null) {
@@ -55,7 +55,7 @@ class MutateBiddingStrategiesRequest extends $pb.GeneratedMessage {
     ..pc<BiddingStrategyOperation>(2, _omitFieldNames ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: BiddingStrategyOperation.create)
     ..aOB(3, _omitFieldNames ? '' : 'partialFailure')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..e<$3796.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3796.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3796.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3796.ResponseContentTypeEnum_ResponseContentType.values)
+    ..e<$3797.ResponseContentTypeEnum_ResponseContentType>(5, _omitFieldNames ? '' : 'responseContentType', $pb.PbFieldType.OE, defaultOrMaker: $3797.ResponseContentTypeEnum_ResponseContentType.UNSPECIFIED, valueOf: $3797.ResponseContentTypeEnum_ResponseContentType.valueOf, enumValues: $3797.ResponseContentTypeEnum_ResponseContentType.values)
     ..hasRequiredFields = false
   ;
 
@@ -123,9 +123,9 @@ class MutateBiddingStrategiesRequest extends $pb.GeneratedMessage {
   /// The response content type setting. Determines whether the mutable resource
   /// or just the resource name should be returned post mutation.
   @$pb.TagNumber(5)
-  $3796.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
+  $3797.ResponseContentTypeEnum_ResponseContentType get responseContentType => $_getN(4);
   @$pb.TagNumber(5)
-  set responseContentType($3796.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
+  set responseContentType($3797.ResponseContentTypeEnum_ResponseContentType v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponseContentType() => $_has(4);
   @$pb.TagNumber(5)
@@ -142,10 +142,10 @@ enum BiddingStrategyOperation_Operation {
 /// A single operation (create, update, remove) on a bidding strategy.
 class BiddingStrategyOperation extends $pb.GeneratedMessage {
   factory BiddingStrategyOperation({
-    $3812.BiddingStrategy? create_1,
-    $3812.BiddingStrategy? update,
+    $3813.BiddingStrategy? create_1,
+    $3813.BiddingStrategy? update,
     $core.String? remove,
-    $2209.FieldMask? updateMask,
+    $2210.FieldMask? updateMask,
   }) {
     final $result = create();
     if (create_1 != null) {
@@ -174,10 +174,10 @@ class BiddingStrategyOperation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BiddingStrategyOperation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$3812.BiddingStrategy>(1, _omitFieldNames ? '' : 'create', subBuilder: $3812.BiddingStrategy.create)
-    ..aOM<$3812.BiddingStrategy>(2, _omitFieldNames ? '' : 'update', subBuilder: $3812.BiddingStrategy.create)
+    ..aOM<$3813.BiddingStrategy>(1, _omitFieldNames ? '' : 'create', subBuilder: $3813.BiddingStrategy.create)
+    ..aOM<$3813.BiddingStrategy>(2, _omitFieldNames ? '' : 'update', subBuilder: $3813.BiddingStrategy.create)
     ..aOS(3, _omitFieldNames ? '' : 'remove')
-    ..aOM<$2209.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2209.FieldMask.create)
+    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -208,28 +208,28 @@ class BiddingStrategyOperation extends $pb.GeneratedMessage {
   /// Create operation: No resource name is expected for the new bidding
   /// strategy.
   @$pb.TagNumber(1)
-  $3812.BiddingStrategy get create_1 => $_getN(0);
+  $3813.BiddingStrategy get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($3812.BiddingStrategy v) { setField(1, v); }
+  set create_1($3813.BiddingStrategy v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $3812.BiddingStrategy ensureCreate_1() => $_ensure(0);
+  $3813.BiddingStrategy ensureCreate_1() => $_ensure(0);
 
   /// Update operation: The bidding strategy is expected to have a valid
   /// resource name.
   @$pb.TagNumber(2)
-  $3812.BiddingStrategy get update => $_getN(1);
+  $3813.BiddingStrategy get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($3812.BiddingStrategy v) { setField(2, v); }
+  set update($3813.BiddingStrategy v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $3812.BiddingStrategy ensureUpdate() => $_ensure(1);
+  $3813.BiddingStrategy ensureUpdate() => $_ensure(1);
 
   ///  Remove operation: A resource name for the removed bidding strategy is
   ///  expected, in this format:
@@ -246,22 +246,22 @@ class BiddingStrategyOperation extends $pb.GeneratedMessage {
 
   /// FieldMask that determines which resource fields are modified in an update.
   @$pb.TagNumber(4)
-  $2209.FieldMask get updateMask => $_getN(3);
+  $2210.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2209.FieldMask v) { setField(4, v); }
+  set updateMask($2210.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2209.FieldMask ensureUpdateMask() => $_ensure(3);
+  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// Response message for bidding strategy mutate.
 class MutateBiddingStrategiesResponse extends $pb.GeneratedMessage {
   factory MutateBiddingStrategiesResponse({
     $core.Iterable<MutateBiddingStrategyResult>? results,
-    $1795.Status? partialFailureError,
+    $1796.Status? partialFailureError,
   }) {
     final $result = create();
     if (results != null) {
@@ -278,7 +278,7 @@ class MutateBiddingStrategiesResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateBiddingStrategiesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..pc<MutateBiddingStrategyResult>(2, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: MutateBiddingStrategyResult.create)
-    ..aOM<$1795.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'partialFailureError', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -312,22 +312,22 @@ class MutateBiddingStrategiesResponse extends $pb.GeneratedMessage {
   /// operations. If any errors occur outside the operations (for example, auth
   /// errors), we return an RPC level error.
   @$pb.TagNumber(3)
-  $1795.Status get partialFailureError => $_getN(1);
+  $1796.Status get partialFailureError => $_getN(1);
   @$pb.TagNumber(3)
-  set partialFailureError($1795.Status v) { setField(3, v); }
+  set partialFailureError($1796.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPartialFailureError() => $_has(1);
   @$pb.TagNumber(3)
   void clearPartialFailureError() => clearField(3);
   @$pb.TagNumber(3)
-  $1795.Status ensurePartialFailureError() => $_ensure(1);
+  $1796.Status ensurePartialFailureError() => $_ensure(1);
 }
 
 /// The result for the bidding strategy mutate.
 class MutateBiddingStrategyResult extends $pb.GeneratedMessage {
   factory MutateBiddingStrategyResult({
     $core.String? resourceName,
-    $3812.BiddingStrategy? biddingStrategy,
+    $3813.BiddingStrategy? biddingStrategy,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -344,7 +344,7 @@ class MutateBiddingStrategyResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutateBiddingStrategyResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.services'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..aOM<$3812.BiddingStrategy>(2, _omitFieldNames ? '' : 'biddingStrategy', subBuilder: $3812.BiddingStrategy.create)
+    ..aOM<$3813.BiddingStrategy>(2, _omitFieldNames ? '' : 'biddingStrategy', subBuilder: $3813.BiddingStrategy.create)
     ..hasRequiredFields = false
   ;
 
@@ -383,15 +383,15 @@ class MutateBiddingStrategyResult extends $pb.GeneratedMessage {
   /// field will only be returned when response_content_type is set to
   /// "MUTABLE_RESOURCE".
   @$pb.TagNumber(2)
-  $3812.BiddingStrategy get biddingStrategy => $_getN(1);
+  $3813.BiddingStrategy get biddingStrategy => $_getN(1);
   @$pb.TagNumber(2)
-  set biddingStrategy($3812.BiddingStrategy v) { setField(2, v); }
+  set biddingStrategy($3813.BiddingStrategy v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBiddingStrategy() => $_has(1);
   @$pb.TagNumber(2)
   void clearBiddingStrategy() => clearField(2);
   @$pb.TagNumber(2)
-  $3812.BiddingStrategy ensureBiddingStrategy() => $_ensure(1);
+  $3813.BiddingStrategy ensureBiddingStrategy() => $_ensure(1);
 }
 
 

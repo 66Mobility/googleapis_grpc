@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'condition.pbenum.dart';
 
 export 'condition.pbenum.dart';
@@ -31,7 +31,7 @@ class Condition extends $pb.GeneratedMessage {
     $core.String? type,
     Condition_State? state,
     $core.String? message,
-    $1775.Timestamp? lastTransitionTime,
+    $1776.Timestamp? lastTransitionTime,
     Condition_Severity? severity,
     Condition_CommonReason? reason,
     Condition_RevisionReason? revisionReason,
@@ -79,7 +79,7 @@ class Condition extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..e<Condition_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Condition_State.STATE_UNSPECIFIED, valueOf: Condition_State.valueOf, enumValues: Condition_State.values)
     ..aOS(3, _omitFieldNames ? '' : 'message')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'lastTransitionTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'lastTransitionTime', subBuilder: $1776.Timestamp.create)
     ..e<Condition_Severity>(5, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: Condition_Severity.SEVERITY_UNSPECIFIED, valueOf: Condition_Severity.valueOf, enumValues: Condition_Severity.values)
     ..e<Condition_CommonReason>(6, _omitFieldNames ? '' : 'reason', $pb.PbFieldType.OE, defaultOrMaker: Condition_CommonReason.COMMON_REASON_UNDEFINED, valueOf: Condition_CommonReason.valueOf, enumValues: Condition_CommonReason.values)
     ..e<Condition_RevisionReason>(9, _omitFieldNames ? '' : 'revisionReason', $pb.PbFieldType.OE, defaultOrMaker: Condition_RevisionReason.REVISION_REASON_UNDEFINED, valueOf: Condition_RevisionReason.valueOf, enumValues: Condition_RevisionReason.values)
@@ -147,15 +147,15 @@ class Condition extends $pb.GeneratedMessage {
 
   /// Last time the condition transitioned from one status to another.
   @$pb.TagNumber(4)
-  $1775.Timestamp get lastTransitionTime => $_getN(3);
+  $1776.Timestamp get lastTransitionTime => $_getN(3);
   @$pb.TagNumber(4)
-  set lastTransitionTime($1775.Timestamp v) { setField(4, v); }
+  set lastTransitionTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastTransitionTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastTransitionTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureLastTransitionTime() => $_ensure(3);
+  $1776.Timestamp ensureLastTransitionTime() => $_ensure(3);
 
   /// How to interpret failures of this condition, one of Error, Warning, Info
   @$pb.TagNumber(5)

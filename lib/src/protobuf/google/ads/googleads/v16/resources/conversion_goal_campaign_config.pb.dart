@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/goal_config_level.pbenum.dart' as $2950;
+import '../enums/goal_config_level.pbenum.dart' as $2951;
 
 /// Conversion goal settings for a Campaign.
 class ConversionGoalCampaignConfig extends $pb.GeneratedMessage {
   factory ConversionGoalCampaignConfig({
     $core.String? resourceName,
     $core.String? campaign,
-    $2950.GoalConfigLevelEnum_GoalConfigLevel? goalConfigLevel,
+    $2951.GoalConfigLevelEnum_GoalConfigLevel? goalConfigLevel,
     $core.String? customConversionGoal,
   }) {
     final $result = create();
@@ -45,7 +45,7 @@ class ConversionGoalCampaignConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConversionGoalCampaignConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v16.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'campaign')
-    ..e<$2950.GoalConfigLevelEnum_GoalConfigLevel>(3, _omitFieldNames ? '' : 'goalConfigLevel', $pb.PbFieldType.OE, defaultOrMaker: $2950.GoalConfigLevelEnum_GoalConfigLevel.UNSPECIFIED, valueOf: $2950.GoalConfigLevelEnum_GoalConfigLevel.valueOf, enumValues: $2950.GoalConfigLevelEnum_GoalConfigLevel.values)
+    ..e<$2951.GoalConfigLevelEnum_GoalConfigLevel>(3, _omitFieldNames ? '' : 'goalConfigLevel', $pb.PbFieldType.OE, defaultOrMaker: $2951.GoalConfigLevelEnum_GoalConfigLevel.UNSPECIFIED, valueOf: $2951.GoalConfigLevelEnum_GoalConfigLevel.valueOf, enumValues: $2951.GoalConfigLevelEnum_GoalConfigLevel.values)
     ..aOS(4, _omitFieldNames ? '' : 'customConversionGoal')
     ..hasRequiredFields = false
   ;
@@ -97,9 +97,9 @@ class ConversionGoalCampaignConfig extends $pb.GeneratedMessage {
 
   /// The level of goal config the campaign is using.
   @$pb.TagNumber(3)
-  $2950.GoalConfigLevelEnum_GoalConfigLevel get goalConfigLevel => $_getN(2);
+  $2951.GoalConfigLevelEnum_GoalConfigLevel get goalConfigLevel => $_getN(2);
   @$pb.TagNumber(3)
-  set goalConfigLevel($2950.GoalConfigLevelEnum_GoalConfigLevel v) { setField(3, v); }
+  set goalConfigLevel($2951.GoalConfigLevelEnum_GoalConfigLevel v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGoalConfigLevel() => $_has(2);
   @$pb.TagNumber(3)

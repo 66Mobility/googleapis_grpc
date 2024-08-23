@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1737;
-import '../../../../type/datetime.pb.dart' as $1801;
+import '../../../../protobuf/duration.pb.dart' as $1738;
+import '../../../../type/datetime.pb.dart' as $1802;
 import 'outputs.pbenum.dart';
 
 export 'outputs.pbenum.dart';
@@ -272,7 +272,7 @@ class Manifest extends $pb.GeneratedMessage {
     Manifest_ManifestType? type,
     $core.Iterable<$core.String>? muxStreams,
     $core.int? maxSegmentCount,
-    $1737.Duration? segmentKeepDuration,
+    $1738.Duration? segmentKeepDuration,
     $core.bool? useTimecodeAsTimeline,
     $core.String? key,
   }) {
@@ -309,7 +309,7 @@ class Manifest extends $pb.GeneratedMessage {
     ..e<Manifest_ManifestType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Manifest_ManifestType.MANIFEST_TYPE_UNSPECIFIED, valueOf: Manifest_ManifestType.valueOf, enumValues: Manifest_ManifestType.values)
     ..pPS(3, _omitFieldNames ? '' : 'muxStreams')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'maxSegmentCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(5, _omitFieldNames ? '' : 'segmentKeepDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'segmentKeepDuration', subBuilder: $1738.Duration.create)
     ..aOB(6, _omitFieldNames ? '' : 'useTimecodeAsTimeline')
     ..aOS(7, _omitFieldNames ? '' : 'key')
     ..hasRequiredFields = false
@@ -395,15 +395,15 @@ class Manifest extends $pb.GeneratedMessage {
   ///  [RetentionConfig.retention_window_duration][google.cloud.video.livestream.v1.RetentionConfig.retention_window_duration]
   ///  is used and segment_keep_duration is ignored.
   @$pb.TagNumber(5)
-  $1737.Duration get segmentKeepDuration => $_getN(4);
+  $1738.Duration get segmentKeepDuration => $_getN(4);
   @$pb.TagNumber(5)
-  set segmentKeepDuration($1737.Duration v) { setField(5, v); }
+  set segmentKeepDuration($1738.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSegmentKeepDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearSegmentKeepDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.Duration ensureSegmentKeepDuration() => $_ensure(4);
+  $1738.Duration ensureSegmentKeepDuration() => $_ensure(4);
 
   ///  Whether to use the timecode, as specified in timecode config, when setting:
   ///
@@ -441,7 +441,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
     $core.int? spriteHeightPixels,
     $core.int? columnCount,
     $core.int? rowCount,
-    $1737.Duration? interval,
+    $1738.Duration? interval,
     $core.int? quality,
   }) {
     final $result = create();
@@ -482,7 +482,7 @@ class SpriteSheet extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'spriteHeightPixels', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'columnCount', $pb.PbFieldType.O3)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'rowCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(7, _omitFieldNames ? '' : 'interval', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'interval', subBuilder: $1738.Duration.create)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'quality', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -582,15 +582,15 @@ class SpriteSheet extends $pb.GeneratedMessage {
   /// Create sprites at regular intervals. Valid range is [1 second, 1 hour] and
   /// the default value is `10s`.
   @$pb.TagNumber(7)
-  $1737.Duration get interval => $_getN(6);
+  $1738.Duration get interval => $_getN(6);
   @$pb.TagNumber(7)
-  set interval($1737.Duration v) { setField(7, v); }
+  set interval($1738.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInterval() => $_has(6);
   @$pb.TagNumber(7)
   void clearInterval() => clearField(7);
   @$pb.TagNumber(7)
-  $1737.Duration ensureInterval() => $_ensure(6);
+  $1738.Duration ensureInterval() => $_ensure(6);
 
   /// The quality of the generated sprite sheet. Enter a value between 1
   /// and 100, where 1 is the lowest quality and 100 is the highest quality.
@@ -967,7 +967,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
     $core.int? bitrateBps,
     $core.bool? allowOpenGop,
     $core.int? gopFrameCount,
-    $1737.Duration? gopDuration,
+    $1738.Duration? gopDuration,
     $core.int? vbvSizeBits,
     $core.int? vbvFullnessBits,
     $core.String? entropyCoder,
@@ -1042,7 +1042,7 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'bitrateBps', $pb.PbFieldType.O3)
     ..aOB(6, _omitFieldNames ? '' : 'allowOpenGop')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'gopFrameCount', $pb.PbFieldType.O3)
-    ..aOM<$1737.Duration>(8, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(8, _omitFieldNames ? '' : 'gopDuration', subBuilder: $1738.Duration.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'vbvSizeBits', $pb.PbFieldType.O3)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'vbvFullnessBits', $pb.PbFieldType.O3)
     ..aOS(11, _omitFieldNames ? '' : 'entropyCoder')
@@ -1163,15 +1163,15 @@ class VideoStream_H264CodecSettings extends $pb.GeneratedMessage {
   ///
   ///  All video streams in the same channel must have the same GOP size.
   @$pb.TagNumber(8)
-  $1737.Duration get gopDuration => $_getN(6);
+  $1738.Duration get gopDuration => $_getN(6);
   @$pb.TagNumber(8)
-  set gopDuration($1737.Duration v) { setField(8, v); }
+  set gopDuration($1738.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasGopDuration() => $_has(6);
   @$pb.TagNumber(8)
   void clearGopDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1737.Duration ensureGopDuration() => $_ensure(6);
+  $1738.Duration ensureGopDuration() => $_ensure(6);
 
   /// Size of the Video Buffering Verifier (VBV) buffer in bits. Must be
   /// greater than zero. The default is equal to
@@ -1684,7 +1684,7 @@ class TextStream extends $pb.GeneratedMessage {
 /// Segment settings for `fmp4` and `ts`.
 class SegmentSettings extends $pb.GeneratedMessage {
   factory SegmentSettings({
-    $1737.Duration? segmentDuration,
+    $1738.Duration? segmentDuration,
   }) {
     final $result = create();
     if (segmentDuration != null) {
@@ -1697,7 +1697,7 @@ class SegmentSettings extends $pb.GeneratedMessage {
   factory SegmentSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SegmentSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
-    ..aOM<$1737.Duration>(1, _omitFieldNames ? '' : 'segmentDuration', subBuilder: $1737.Duration.create)
+    ..aOM<$1738.Duration>(1, _omitFieldNames ? '' : 'segmentDuration', subBuilder: $1738.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1732,15 +1732,15 @@ class SegmentSettings extends $pb.GeneratedMessage {
   ///  All [mux_streams][google.cloud.video.livestream.v1.Manifest.mux_streams] in
   ///  the same manifest must have the same segment duration.
   @$pb.TagNumber(1)
-  $1737.Duration get segmentDuration => $_getN(0);
+  $1738.Duration get segmentDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set segmentDuration($1737.Duration v) { setField(1, v); }
+  set segmentDuration($1738.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSegmentDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearSegmentDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $1737.Duration ensureSegmentDuration() => $_ensure(0);
+  $1738.Duration ensureSegmentDuration() => $_ensure(0);
 }
 
 enum TimecodeConfig_TimeOffset {
@@ -1753,8 +1753,8 @@ enum TimecodeConfig_TimeOffset {
 class TimecodeConfig extends $pb.GeneratedMessage {
   factory TimecodeConfig({
     TimecodeConfig_TimecodeSource? source,
-    $1737.Duration? utcOffset,
-    $1801.TimeZone? timeZone,
+    $1738.Duration? utcOffset,
+    $1802.TimeZone? timeZone,
   }) {
     final $result = create();
     if (source != null) {
@@ -1780,8 +1780,8 @@ class TimecodeConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimecodeConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.video.livestream.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..e<TimecodeConfig_TimecodeSource>(1, _omitFieldNames ? '' : 'source', $pb.PbFieldType.OE, defaultOrMaker: TimecodeConfig_TimecodeSource.TIMECODE_SOURCE_UNSPECIFIED, valueOf: TimecodeConfig_TimecodeSource.valueOf, enumValues: TimecodeConfig_TimecodeSource.values)
-    ..aOM<$1737.Duration>(2, _omitFieldNames ? '' : 'utcOffset', subBuilder: $1737.Duration.create)
-    ..aOM<$1801.TimeZone>(3, _omitFieldNames ? '' : 'timeZone', subBuilder: $1801.TimeZone.create)
+    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'utcOffset', subBuilder: $1738.Duration.create)
+    ..aOM<$1802.TimeZone>(3, _omitFieldNames ? '' : 'timeZone', subBuilder: $1802.TimeZone.create)
     ..hasRequiredFields = false
   ;
 
@@ -1823,27 +1823,27 @@ class TimecodeConfig extends $pb.GeneratedMessage {
 
   /// UTC offset. Must be whole seconds, between -18 hours and +18 hours.
   @$pb.TagNumber(2)
-  $1737.Duration get utcOffset => $_getN(1);
+  $1738.Duration get utcOffset => $_getN(1);
   @$pb.TagNumber(2)
-  set utcOffset($1737.Duration v) { setField(2, v); }
+  set utcOffset($1738.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUtcOffset() => $_has(1);
   @$pb.TagNumber(2)
   void clearUtcOffset() => clearField(2);
   @$pb.TagNumber(2)
-  $1737.Duration ensureUtcOffset() => $_ensure(1);
+  $1738.Duration ensureUtcOffset() => $_ensure(1);
 
   /// Time zone e.g. "America/Los_Angeles".
   @$pb.TagNumber(3)
-  $1801.TimeZone get timeZone => $_getN(2);
+  $1802.TimeZone get timeZone => $_getN(2);
   @$pb.TagNumber(3)
-  set timeZone($1801.TimeZone v) { setField(3, v); }
+  set timeZone($1802.TimeZone v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTimeZone() => $_has(2);
   @$pb.TagNumber(3)
   void clearTimeZone() => clearField(3);
   @$pb.TagNumber(3)
-  $1801.TimeZone ensureTimeZone() => $_ensure(2);
+  $1802.TimeZone ensureTimeZone() => $_ensure(2);
 }
 
 

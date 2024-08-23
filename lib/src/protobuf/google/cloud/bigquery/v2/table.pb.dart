@@ -14,25 +14,25 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../protobuf/wrappers.pb.dart' as $1780;
-import 'biglake_config.pb.dart' as $4421;
-import 'clustering.pb.dart' as $4406;
-import 'encryption_config.pb.dart' as $4392;
-import 'error.pb.dart' as $4413;
-import 'external_catalog_table_options.pb.dart' as $4424;
-import 'external_data_config.pb.dart' as $4409;
-import 'partitioning_definition.pb.dart' as $4423;
-import 'privacy_policy.pb.dart' as $4420;
-import 'range_partitioning.pb.dart' as $4407;
-import 'restriction_config.pb.dart' as $4394;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
+import 'biglake_config.pb.dart' as $4422;
+import 'clustering.pb.dart' as $4407;
+import 'encryption_config.pb.dart' as $4393;
+import 'error.pb.dart' as $4414;
+import 'external_catalog_table_options.pb.dart' as $4425;
+import 'external_data_config.pb.dart' as $4410;
+import 'partitioning_definition.pb.dart' as $4424;
+import 'privacy_policy.pb.dart' as $4421;
+import 'range_partitioning.pb.dart' as $4408;
+import 'restriction_config.pb.dart' as $4395;
 import 'table.pbenum.dart';
-import 'table_constraints.pb.dart' as $4422;
-import 'table_reference.pb.dart' as $4390;
-import 'table_schema.pb.dart' as $4396;
-import 'table_schema.pbenum.dart' as $4396;
-import 'time_partitioning.pb.dart' as $4405;
-import 'udf_resource.pb.dart' as $4403;
+import 'table_constraints.pb.dart' as $4423;
+import 'table_reference.pb.dart' as $4391;
+import 'table_schema.pb.dart' as $4397;
+import 'table_schema.pbenum.dart' as $4397;
+import 'time_partitioning.pb.dart' as $4406;
+import 'udf_resource.pb.dart' as $4404;
 
 export 'table.pbenum.dart';
 
@@ -40,11 +40,11 @@ export 'table.pbenum.dart';
 /// `CREATE MATERIALIZED VIEW mv1 AS REPLICA OF src_mv`
 class TableReplicationInfo extends $pb.GeneratedMessage {
   factory TableReplicationInfo({
-    $4390.TableReference? sourceTable,
+    $4391.TableReference? sourceTable,
     $fixnum.Int64? replicationIntervalMs,
     $fixnum.Int64? replicatedSourceLastRefreshTime,
     TableReplicationInfo_ReplicationStatus? replicationStatus,
-    $4413.ErrorProto? replicationError,
+    $4414.ErrorProto? replicationError,
   }) {
     final $result = create();
     if (sourceTable != null) {
@@ -69,11 +69,11 @@ class TableReplicationInfo extends $pb.GeneratedMessage {
   factory TableReplicationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TableReplicationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'sourceTable', subBuilder: $4390.TableReference.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'sourceTable', subBuilder: $4391.TableReference.create)
     ..aInt64(2, _omitFieldNames ? '' : 'replicationIntervalMs')
     ..aInt64(3, _omitFieldNames ? '' : 'replicatedSourceLastRefreshTime')
     ..e<TableReplicationInfo_ReplicationStatus>(4, _omitFieldNames ? '' : 'replicationStatus', $pb.PbFieldType.OE, defaultOrMaker: TableReplicationInfo_ReplicationStatus.REPLICATION_STATUS_UNSPECIFIED, valueOf: TableReplicationInfo_ReplicationStatus.valueOf, enumValues: TableReplicationInfo_ReplicationStatus.values)
-    ..aOM<$4413.ErrorProto>(5, _omitFieldNames ? '' : 'replicationError', subBuilder: $4413.ErrorProto.create)
+    ..aOM<$4414.ErrorProto>(5, _omitFieldNames ? '' : 'replicationError', subBuilder: $4414.ErrorProto.create)
     ..hasRequiredFields = false
   ;
 
@@ -100,15 +100,15 @@ class TableReplicationInfo extends $pb.GeneratedMessage {
 
   /// Required. Source table reference that is replicated.
   @$pb.TagNumber(1)
-  $4390.TableReference get sourceTable => $_getN(0);
+  $4391.TableReference get sourceTable => $_getN(0);
   @$pb.TagNumber(1)
-  set sourceTable($4390.TableReference v) { setField(1, v); }
+  set sourceTable($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSourceTable() => $_has(0);
   @$pb.TagNumber(1)
   void clearSourceTable() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureSourceTable() => $_ensure(0);
+  $4391.TableReference ensureSourceTable() => $_ensure(0);
 
   /// Optional. Specifies the interval at which the source table is polled for
   /// updates.
@@ -147,25 +147,25 @@ class TableReplicationInfo extends $pb.GeneratedMessage {
   /// Optional. Output only. Replication error that will permanently stopped
   /// table replication.
   @$pb.TagNumber(5)
-  $4413.ErrorProto get replicationError => $_getN(4);
+  $4414.ErrorProto get replicationError => $_getN(4);
   @$pb.TagNumber(5)
-  set replicationError($4413.ErrorProto v) { setField(5, v); }
+  set replicationError($4414.ErrorProto v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReplicationError() => $_has(4);
   @$pb.TagNumber(5)
   void clearReplicationError() => clearField(5);
   @$pb.TagNumber(5)
-  $4413.ErrorProto ensureReplicationError() => $_ensure(4);
+  $4414.ErrorProto ensureReplicationError() => $_ensure(4);
 }
 
 /// Describes the definition of a logical view.
 class ViewDefinition extends $pb.GeneratedMessage {
   factory ViewDefinition({
     $core.String? query,
-    $core.Iterable<$4403.UserDefinedFunctionResource>? userDefinedFunctionResources,
-    $1780.BoolValue? useLegacySql,
+    $core.Iterable<$4404.UserDefinedFunctionResource>? userDefinedFunctionResources,
+    $1781.BoolValue? useLegacySql,
     $core.bool? useExplicitColumnNames,
-    $4420.PrivacyPolicy? privacyPolicy,
+    $4421.PrivacyPolicy? privacyPolicy,
     $core.Iterable<ForeignViewDefinition>? foreignDefinitions,
   }) {
     final $result = create();
@@ -195,10 +195,10 @@ class ViewDefinition extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ViewDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
-    ..pc<$4403.UserDefinedFunctionResource>(2, _omitFieldNames ? '' : 'userDefinedFunctionResources', $pb.PbFieldType.PM, subBuilder: $4403.UserDefinedFunctionResource.create)
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1780.BoolValue.create)
+    ..pc<$4404.UserDefinedFunctionResource>(2, _omitFieldNames ? '' : 'userDefinedFunctionResources', $pb.PbFieldType.PM, subBuilder: $4404.UserDefinedFunctionResource.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1781.BoolValue.create)
     ..aOB(4, _omitFieldNames ? '' : 'useExplicitColumnNames')
-    ..aOM<$4420.PrivacyPolicy>(5, _omitFieldNames ? '' : 'privacyPolicy', subBuilder: $4420.PrivacyPolicy.create)
+    ..aOM<$4421.PrivacyPolicy>(5, _omitFieldNames ? '' : 'privacyPolicy', subBuilder: $4421.PrivacyPolicy.create)
     ..pc<ForeignViewDefinition>(6, _omitFieldNames ? '' : 'foreignDefinitions', $pb.PbFieldType.PM, subBuilder: ForeignViewDefinition.create)
     ..hasRequiredFields = false
   ;
@@ -236,7 +236,7 @@ class ViewDefinition extends $pb.GeneratedMessage {
 
   /// Describes user-defined function resources used in the query.
   @$pb.TagNumber(2)
-  $core.List<$4403.UserDefinedFunctionResource> get userDefinedFunctionResources => $_getList(1);
+  $core.List<$4404.UserDefinedFunctionResource> get userDefinedFunctionResources => $_getList(1);
 
   ///  Specifies whether to use BigQuery's legacy SQL for this view.
   ///  The default value is true. If set to false, the view will use
@@ -246,15 +246,15 @@ class ViewDefinition extends $pb.GeneratedMessage {
   ///  Queries and views that reference this view must use the same flag value.
   ///  A wrapper is used here because the default value is True.
   @$pb.TagNumber(3)
-  $1780.BoolValue get useLegacySql => $_getN(2);
+  $1781.BoolValue get useLegacySql => $_getN(2);
   @$pb.TagNumber(3)
-  set useLegacySql($1780.BoolValue v) { setField(3, v); }
+  set useLegacySql($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUseLegacySql() => $_has(2);
   @$pb.TagNumber(3)
   void clearUseLegacySql() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureUseLegacySql() => $_ensure(2);
+  $1781.BoolValue ensureUseLegacySql() => $_ensure(2);
 
   /// True if the column names are explicitly specified. For example by using the
   /// 'CREATE VIEW v(c1, c2) AS ...' syntax.
@@ -270,15 +270,15 @@ class ViewDefinition extends $pb.GeneratedMessage {
 
   /// Optional. Specifices the privacy policy for the view.
   @$pb.TagNumber(5)
-  $4420.PrivacyPolicy get privacyPolicy => $_getN(4);
+  $4421.PrivacyPolicy get privacyPolicy => $_getN(4);
   @$pb.TagNumber(5)
-  set privacyPolicy($4420.PrivacyPolicy v) { setField(5, v); }
+  set privacyPolicy($4421.PrivacyPolicy v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPrivacyPolicy() => $_has(4);
   @$pb.TagNumber(5)
   void clearPrivacyPolicy() => clearField(5);
   @$pb.TagNumber(5)
-  $4420.PrivacyPolicy ensurePrivacyPolicy() => $_ensure(4);
+  $4421.PrivacyPolicy ensurePrivacyPolicy() => $_ensure(4);
 
   /// Optional. Foreign view representations.
   @$pb.TagNumber(6)
@@ -358,9 +358,9 @@ class MaterializedViewDefinition extends $pb.GeneratedMessage {
   factory MaterializedViewDefinition({
     $core.String? query,
     $fixnum.Int64? lastRefreshTime,
-    $1780.BoolValue? enableRefresh,
-    $1780.UInt64Value? refreshIntervalMs,
-    $1780.BoolValue? allowNonIncrementalDefinition,
+    $1781.BoolValue? enableRefresh,
+    $1781.UInt64Value? refreshIntervalMs,
+    $1781.BoolValue? allowNonIncrementalDefinition,
   }) {
     final $result = create();
     if (query != null) {
@@ -387,9 +387,9 @@ class MaterializedViewDefinition extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterializedViewDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'query')
     ..aInt64(2, _omitFieldNames ? '' : 'lastRefreshTime')
-    ..aOM<$1780.BoolValue>(3, _omitFieldNames ? '' : 'enableRefresh', subBuilder: $1780.BoolValue.create)
-    ..aOM<$1780.UInt64Value>(4, _omitFieldNames ? '' : 'refreshIntervalMs', subBuilder: $1780.UInt64Value.create)
-    ..aOM<$1780.BoolValue>(6, _omitFieldNames ? '' : 'allowNonIncrementalDefinition', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.BoolValue>(3, _omitFieldNames ? '' : 'enableRefresh', subBuilder: $1781.BoolValue.create)
+    ..aOM<$1781.UInt64Value>(4, _omitFieldNames ? '' : 'refreshIntervalMs', subBuilder: $1781.UInt64Value.create)
+    ..aOM<$1781.BoolValue>(6, _omitFieldNames ? '' : 'allowNonIncrementalDefinition', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -438,41 +438,41 @@ class MaterializedViewDefinition extends $pb.GeneratedMessage {
   /// Optional. Enable automatic refresh of the materialized view when the base
   /// table is updated. The default value is "true".
   @$pb.TagNumber(3)
-  $1780.BoolValue get enableRefresh => $_getN(2);
+  $1781.BoolValue get enableRefresh => $_getN(2);
   @$pb.TagNumber(3)
-  set enableRefresh($1780.BoolValue v) { setField(3, v); }
+  set enableRefresh($1781.BoolValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEnableRefresh() => $_has(2);
   @$pb.TagNumber(3)
   void clearEnableRefresh() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.BoolValue ensureEnableRefresh() => $_ensure(2);
+  $1781.BoolValue ensureEnableRefresh() => $_ensure(2);
 
   /// Optional. The maximum frequency at which this materialized view will be
   /// refreshed. The default value is "1800000" (30 minutes).
   @$pb.TagNumber(4)
-  $1780.UInt64Value get refreshIntervalMs => $_getN(3);
+  $1781.UInt64Value get refreshIntervalMs => $_getN(3);
   @$pb.TagNumber(4)
-  set refreshIntervalMs($1780.UInt64Value v) { setField(4, v); }
+  set refreshIntervalMs($1781.UInt64Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasRefreshIntervalMs() => $_has(3);
   @$pb.TagNumber(4)
   void clearRefreshIntervalMs() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.UInt64Value ensureRefreshIntervalMs() => $_ensure(3);
+  $1781.UInt64Value ensureRefreshIntervalMs() => $_ensure(3);
 
   /// Optional. This option declares the intention to construct a materialized
   /// view that isn't refreshed incrementally.
   @$pb.TagNumber(6)
-  $1780.BoolValue get allowNonIncrementalDefinition => $_getN(4);
+  $1781.BoolValue get allowNonIncrementalDefinition => $_getN(4);
   @$pb.TagNumber(6)
-  set allowNonIncrementalDefinition($1780.BoolValue v) { setField(6, v); }
+  set allowNonIncrementalDefinition($1781.BoolValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAllowNonIncrementalDefinition() => $_has(4);
   @$pb.TagNumber(6)
   void clearAllowNonIncrementalDefinition() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.BoolValue ensureAllowNonIncrementalDefinition() => $_ensure(4);
+  $1781.BoolValue ensureAllowNonIncrementalDefinition() => $_ensure(4);
 }
 
 /// Status of a materialized view.
@@ -480,8 +480,8 @@ class MaterializedViewDefinition extends $pb.GeneratedMessage {
 /// MaterializedViewDefinition message.
 class MaterializedViewStatus extends $pb.GeneratedMessage {
   factory MaterializedViewStatus({
-    $1775.Timestamp? refreshWatermark,
-    $4413.ErrorProto? lastRefreshStatus,
+    $1776.Timestamp? refreshWatermark,
+    $4414.ErrorProto? lastRefreshStatus,
   }) {
     final $result = create();
     if (refreshWatermark != null) {
@@ -497,8 +497,8 @@ class MaterializedViewStatus extends $pb.GeneratedMessage {
   factory MaterializedViewStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterializedViewStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1775.Timestamp>(1, _omitFieldNames ? '' : 'refreshWatermark', subBuilder: $1775.Timestamp.create)
-    ..aOM<$4413.ErrorProto>(2, _omitFieldNames ? '' : 'lastRefreshStatus', subBuilder: $4413.ErrorProto.create)
+    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'refreshWatermark', subBuilder: $1776.Timestamp.create)
+    ..aOM<$4414.ErrorProto>(2, _omitFieldNames ? '' : 'lastRefreshStatus', subBuilder: $4414.ErrorProto.create)
     ..hasRequiredFields = false
   ;
 
@@ -526,35 +526,35 @@ class MaterializedViewStatus extends $pb.GeneratedMessage {
   /// Output only. Refresh watermark of materialized view. The base tables' data
   /// were collected into the materialized view cache until this time.
   @$pb.TagNumber(1)
-  $1775.Timestamp get refreshWatermark => $_getN(0);
+  $1776.Timestamp get refreshWatermark => $_getN(0);
   @$pb.TagNumber(1)
-  set refreshWatermark($1775.Timestamp v) { setField(1, v); }
+  set refreshWatermark($1776.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRefreshWatermark() => $_has(0);
   @$pb.TagNumber(1)
   void clearRefreshWatermark() => clearField(1);
   @$pb.TagNumber(1)
-  $1775.Timestamp ensureRefreshWatermark() => $_ensure(0);
+  $1776.Timestamp ensureRefreshWatermark() => $_ensure(0);
 
   /// Output only. Error result of the last automatic refresh. If present,
   /// indicates that the last automatic refresh was unsuccessful.
   @$pb.TagNumber(2)
-  $4413.ErrorProto get lastRefreshStatus => $_getN(1);
+  $4414.ErrorProto get lastRefreshStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set lastRefreshStatus($4413.ErrorProto v) { setField(2, v); }
+  set lastRefreshStatus($4414.ErrorProto v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLastRefreshStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearLastRefreshStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $4413.ErrorProto ensureLastRefreshStatus() => $_ensure(1);
+  $4414.ErrorProto ensureLastRefreshStatus() => $_ensure(1);
 }
 
 /// Information about base table and snapshot time of the snapshot.
 class SnapshotDefinition extends $pb.GeneratedMessage {
   factory SnapshotDefinition({
-    $4390.TableReference? baseTableReference,
-    $1775.Timestamp? snapshotTime,
+    $4391.TableReference? baseTableReference,
+    $1776.Timestamp? snapshotTime,
   }) {
     final $result = create();
     if (baseTableReference != null) {
@@ -570,8 +570,8 @@ class SnapshotDefinition extends $pb.GeneratedMessage {
   factory SnapshotDefinition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SnapshotDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'baseTableReference', subBuilder: $4390.TableReference.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'baseTableReference', subBuilder: $4391.TableReference.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -598,35 +598,35 @@ class SnapshotDefinition extends $pb.GeneratedMessage {
 
   /// Required. Reference describing the ID of the table that was snapshot.
   @$pb.TagNumber(1)
-  $4390.TableReference get baseTableReference => $_getN(0);
+  $4391.TableReference get baseTableReference => $_getN(0);
   @$pb.TagNumber(1)
-  set baseTableReference($4390.TableReference v) { setField(1, v); }
+  set baseTableReference($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBaseTableReference() => $_has(0);
   @$pb.TagNumber(1)
   void clearBaseTableReference() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureBaseTableReference() => $_ensure(0);
+  $4391.TableReference ensureBaseTableReference() => $_ensure(0);
 
   /// Required. The time at which the base table was snapshot. This value is
   /// reported in the JSON response using RFC3339 format.
   @$pb.TagNumber(2)
-  $1775.Timestamp get snapshotTime => $_getN(1);
+  $1776.Timestamp get snapshotTime => $_getN(1);
   @$pb.TagNumber(2)
-  set snapshotTime($1775.Timestamp v) { setField(2, v); }
+  set snapshotTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSnapshotTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearSnapshotTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureSnapshotTime() => $_ensure(1);
+  $1776.Timestamp ensureSnapshotTime() => $_ensure(1);
 }
 
 /// Information about base table and clone time of a table clone.
 class CloneDefinition extends $pb.GeneratedMessage {
   factory CloneDefinition({
-    $4390.TableReference? baseTableReference,
-    $1775.Timestamp? cloneTime,
+    $4391.TableReference? baseTableReference,
+    $1776.Timestamp? cloneTime,
   }) {
     final $result = create();
     if (baseTableReference != null) {
@@ -642,8 +642,8 @@ class CloneDefinition extends $pb.GeneratedMessage {
   factory CloneDefinition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CloneDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$4390.TableReference>(1, _omitFieldNames ? '' : 'baseTableReference', subBuilder: $4390.TableReference.create)
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'cloneTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$4391.TableReference>(1, _omitFieldNames ? '' : 'baseTableReference', subBuilder: $4391.TableReference.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'cloneTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -670,28 +670,28 @@ class CloneDefinition extends $pb.GeneratedMessage {
 
   /// Required. Reference describing the ID of the table that was cloned.
   @$pb.TagNumber(1)
-  $4390.TableReference get baseTableReference => $_getN(0);
+  $4391.TableReference get baseTableReference => $_getN(0);
   @$pb.TagNumber(1)
-  set baseTableReference($4390.TableReference v) { setField(1, v); }
+  set baseTableReference($4391.TableReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBaseTableReference() => $_has(0);
   @$pb.TagNumber(1)
   void clearBaseTableReference() => clearField(1);
   @$pb.TagNumber(1)
-  $4390.TableReference ensureBaseTableReference() => $_ensure(0);
+  $4391.TableReference ensureBaseTableReference() => $_ensure(0);
 
   /// Required. The time at which the base table was cloned. This value is
   /// reported in the JSON response using RFC3339 format.
   @$pb.TagNumber(2)
-  $1775.Timestamp get cloneTime => $_getN(1);
+  $1776.Timestamp get cloneTime => $_getN(1);
   @$pb.TagNumber(2)
-  set cloneTime($1775.Timestamp v) { setField(2, v); }
+  set cloneTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCloneTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCloneTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCloneTime() => $_ensure(1);
+  $1776.Timestamp ensureCloneTime() => $_ensure(1);
 }
 
 class Streamingbuffer extends $pb.GeneratedMessage {
@@ -785,52 +785,52 @@ class Table extends $pb.GeneratedMessage {
     $core.String? etag,
     $core.String? id,
     $core.String? selfLink,
-    $4390.TableReference? tableReference,
-    $1780.StringValue? friendlyName,
-    $1780.StringValue? description,
+    $4391.TableReference? tableReference,
+    $1781.StringValue? friendlyName,
+    $1781.StringValue? description,
     $core.Map<$core.String, $core.String>? labels,
-    $4396.TableSchema? schema,
-    $4405.TimePartitioning? timePartitioning,
-    $1780.Int64Value? numBytes,
-    $1780.Int64Value? numLongTermBytes,
-    $1780.UInt64Value? numRows,
+    $4397.TableSchema? schema,
+    $4406.TimePartitioning? timePartitioning,
+    $1781.Int64Value? numBytes,
+    $1781.Int64Value? numLongTermBytes,
+    $1781.UInt64Value? numRows,
     $fixnum.Int64? creationTime,
-    $1780.Int64Value? expirationTime,
+    $1781.Int64Value? expirationTime,
     $fixnum.Int64? lastModifiedTime,
     $core.String? type,
     ViewDefinition? view,
-    $4409.ExternalDataConfiguration? externalDataConfiguration,
+    $4410.ExternalDataConfiguration? externalDataConfiguration,
     $core.String? location,
     Streamingbuffer? streamingBuffer,
-    $4392.EncryptionConfiguration? encryptionConfiguration,
-    $4406.Clustering? clustering,
+    $4393.EncryptionConfiguration? encryptionConfiguration,
+    $4407.Clustering? clustering,
     MaterializedViewDefinition? materializedView,
-    $1780.Int64Value? numPhysicalBytes,
-    $4407.RangePartitioning? rangePartitioning,
-    $1780.BoolValue? requirePartitionFilter,
+    $1781.Int64Value? numPhysicalBytes,
+    $4408.RangePartitioning? rangePartitioning,
+    $1781.BoolValue? requirePartitionFilter,
     SnapshotDefinition? snapshotDefinition,
-    $1780.StringValue? defaultCollation,
+    $1781.StringValue? defaultCollation,
     CloneDefinition? cloneDefinition,
-    $1780.Int64Value? numTimeTravelPhysicalBytes,
-    $1780.Int64Value? numTotalLogicalBytes,
-    $1780.Int64Value? numActiveLogicalBytes,
-    $1780.Int64Value? numLongTermLogicalBytes,
-    $1780.Int64Value? numTotalPhysicalBytes,
-    $1780.Int64Value? numActivePhysicalBytes,
-    $1780.Int64Value? numLongTermPhysicalBytes,
-    $1780.Int64Value? numPartitions,
+    $1781.Int64Value? numTimeTravelPhysicalBytes,
+    $1781.Int64Value? numTotalLogicalBytes,
+    $1781.Int64Value? numActiveLogicalBytes,
+    $1781.Int64Value? numLongTermLogicalBytes,
+    $1781.Int64Value? numTotalPhysicalBytes,
+    $1781.Int64Value? numActivePhysicalBytes,
+    $1781.Int64Value? numLongTermPhysicalBytes,
+    $1781.Int64Value? numPartitions,
     $core.String? maxStaleness,
     MaterializedViewStatus? materializedViewStatus,
-    $4396.TableFieldSchema_RoundingMode? defaultRoundingMode,
-    $4421.BigLakeConfiguration? biglakeConfiguration,
-    $4394.RestrictionConfig? restrictions,
-    $4422.TableConstraints? tableConstraints,
+    $4397.TableFieldSchema_RoundingMode? defaultRoundingMode,
+    $4422.BigLakeConfiguration? biglakeConfiguration,
+    $4395.RestrictionConfig? restrictions,
+    $4423.TableConstraints? tableConstraints,
     $core.Map<$core.String, $core.String>? resourceTags,
     TableReplicationInfo? tableReplicationInfo,
-    $core.Iterable<$4390.TableReference>? replicas,
-    $4423.PartitioningDefinition? partitionDefinition,
-    $1780.Int64Value? numCurrentPhysicalBytes,
-    $4424.ExternalCatalogTableOptions? externalCatalogTableOptions,
+    $core.Iterable<$4391.TableReference>? replicas,
+    $4424.PartitioningDefinition? partitionDefinition,
+    $1781.Int64Value? numCurrentPhysicalBytes,
+    $4425.ExternalCatalogTableOptions? externalCatalogTableOptions,
   }) {
     final $result = create();
     if (kind != null) {
@@ -994,52 +994,52 @@ class Table extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'etag')
     ..aOS(3, _omitFieldNames ? '' : 'id')
     ..aOS(4, _omitFieldNames ? '' : 'selfLink')
-    ..aOM<$4390.TableReference>(5, _omitFieldNames ? '' : 'tableReference', subBuilder: $4390.TableReference.create)
-    ..aOM<$1780.StringValue>(6, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1780.StringValue.create)
-    ..aOM<$1780.StringValue>(7, _omitFieldNames ? '' : 'description', subBuilder: $1780.StringValue.create)
+    ..aOM<$4391.TableReference>(5, _omitFieldNames ? '' : 'tableReference', subBuilder: $4391.TableReference.create)
+    ..aOM<$1781.StringValue>(6, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1781.StringValue.create)
+    ..aOM<$1781.StringValue>(7, _omitFieldNames ? '' : 'description', subBuilder: $1781.StringValue.create)
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'Table.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
-    ..aOM<$4396.TableSchema>(9, _omitFieldNames ? '' : 'schema', subBuilder: $4396.TableSchema.create)
-    ..aOM<$4405.TimePartitioning>(10, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4405.TimePartitioning.create)
-    ..aOM<$1780.Int64Value>(11, _omitFieldNames ? '' : 'numBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(12, _omitFieldNames ? '' : 'numLongTermBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.UInt64Value>(13, _omitFieldNames ? '' : 'numRows', subBuilder: $1780.UInt64Value.create)
+    ..aOM<$4397.TableSchema>(9, _omitFieldNames ? '' : 'schema', subBuilder: $4397.TableSchema.create)
+    ..aOM<$4406.TimePartitioning>(10, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4406.TimePartitioning.create)
+    ..aOM<$1781.Int64Value>(11, _omitFieldNames ? '' : 'numBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(12, _omitFieldNames ? '' : 'numLongTermBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.UInt64Value>(13, _omitFieldNames ? '' : 'numRows', subBuilder: $1781.UInt64Value.create)
     ..aInt64(14, _omitFieldNames ? '' : 'creationTime')
-    ..aOM<$1780.Int64Value>(15, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(15, _omitFieldNames ? '' : 'expirationTime', subBuilder: $1781.Int64Value.create)
     ..a<$fixnum.Int64>(16, _omitFieldNames ? '' : 'lastModifiedTime', $pb.PbFieldType.OF6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOS(17, _omitFieldNames ? '' : 'type')
     ..aOM<ViewDefinition>(18, _omitFieldNames ? '' : 'view', subBuilder: ViewDefinition.create)
-    ..aOM<$4409.ExternalDataConfiguration>(19, _omitFieldNames ? '' : 'externalDataConfiguration', subBuilder: $4409.ExternalDataConfiguration.create)
+    ..aOM<$4410.ExternalDataConfiguration>(19, _omitFieldNames ? '' : 'externalDataConfiguration', subBuilder: $4410.ExternalDataConfiguration.create)
     ..aOS(20, _omitFieldNames ? '' : 'location')
     ..aOM<Streamingbuffer>(21, _omitFieldNames ? '' : 'streamingBuffer', subBuilder: Streamingbuffer.create)
-    ..aOM<$4392.EncryptionConfiguration>(22, _omitFieldNames ? '' : 'encryptionConfiguration', subBuilder: $4392.EncryptionConfiguration.create)
-    ..aOM<$4406.Clustering>(23, _omitFieldNames ? '' : 'clustering', subBuilder: $4406.Clustering.create)
+    ..aOM<$4393.EncryptionConfiguration>(22, _omitFieldNames ? '' : 'encryptionConfiguration', subBuilder: $4393.EncryptionConfiguration.create)
+    ..aOM<$4407.Clustering>(23, _omitFieldNames ? '' : 'clustering', subBuilder: $4407.Clustering.create)
     ..aOM<MaterializedViewDefinition>(25, _omitFieldNames ? '' : 'materializedView', subBuilder: MaterializedViewDefinition.create)
-    ..aOM<$1780.Int64Value>(26, _omitFieldNames ? '' : 'numPhysicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$4407.RangePartitioning>(27, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4407.RangePartitioning.create)
-    ..aOM<$1780.BoolValue>(28, _omitFieldNames ? '' : 'requirePartitionFilter', subBuilder: $1780.BoolValue.create)
+    ..aOM<$1781.Int64Value>(26, _omitFieldNames ? '' : 'numPhysicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$4408.RangePartitioning>(27, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4408.RangePartitioning.create)
+    ..aOM<$1781.BoolValue>(28, _omitFieldNames ? '' : 'requirePartitionFilter', subBuilder: $1781.BoolValue.create)
     ..aOM<SnapshotDefinition>(29, _omitFieldNames ? '' : 'snapshotDefinition', subBuilder: SnapshotDefinition.create)
-    ..aOM<$1780.StringValue>(30, _omitFieldNames ? '' : 'defaultCollation', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(30, _omitFieldNames ? '' : 'defaultCollation', subBuilder: $1781.StringValue.create)
     ..aOM<CloneDefinition>(31, _omitFieldNames ? '' : 'cloneDefinition', subBuilder: CloneDefinition.create)
-    ..aOM<$1780.Int64Value>(33, _omitFieldNames ? '' : 'numTimeTravelPhysicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(34, _omitFieldNames ? '' : 'numTotalLogicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(35, _omitFieldNames ? '' : 'numActiveLogicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(36, _omitFieldNames ? '' : 'numLongTermLogicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(37, _omitFieldNames ? '' : 'numTotalPhysicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(38, _omitFieldNames ? '' : 'numActivePhysicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(39, _omitFieldNames ? '' : 'numLongTermPhysicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$1780.Int64Value>(40, _omitFieldNames ? '' : 'numPartitions', subBuilder: $1780.Int64Value.create)
+    ..aOM<$1781.Int64Value>(33, _omitFieldNames ? '' : 'numTimeTravelPhysicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(34, _omitFieldNames ? '' : 'numTotalLogicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(35, _omitFieldNames ? '' : 'numActiveLogicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(36, _omitFieldNames ? '' : 'numLongTermLogicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(37, _omitFieldNames ? '' : 'numTotalPhysicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(38, _omitFieldNames ? '' : 'numActivePhysicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(39, _omitFieldNames ? '' : 'numLongTermPhysicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$1781.Int64Value>(40, _omitFieldNames ? '' : 'numPartitions', subBuilder: $1781.Int64Value.create)
     ..aOS(41, _omitFieldNames ? '' : 'maxStaleness')
     ..aOM<MaterializedViewStatus>(42, _omitFieldNames ? '' : 'materializedViewStatus', subBuilder: MaterializedViewStatus.create)
-    ..e<$4396.TableFieldSchema_RoundingMode>(44, _omitFieldNames ? '' : 'defaultRoundingMode', $pb.PbFieldType.OE, defaultOrMaker: $4396.TableFieldSchema_RoundingMode.ROUNDING_MODE_UNSPECIFIED, valueOf: $4396.TableFieldSchema_RoundingMode.valueOf, enumValues: $4396.TableFieldSchema_RoundingMode.values)
-    ..aOM<$4421.BigLakeConfiguration>(45, _omitFieldNames ? '' : 'biglakeConfiguration', subBuilder: $4421.BigLakeConfiguration.create)
-    ..aOM<$4394.RestrictionConfig>(46, _omitFieldNames ? '' : 'restrictions', subBuilder: $4394.RestrictionConfig.create)
-    ..aOM<$4422.TableConstraints>(47, _omitFieldNames ? '' : 'tableConstraints', subBuilder: $4422.TableConstraints.create)
+    ..e<$4397.TableFieldSchema_RoundingMode>(44, _omitFieldNames ? '' : 'defaultRoundingMode', $pb.PbFieldType.OE, defaultOrMaker: $4397.TableFieldSchema_RoundingMode.ROUNDING_MODE_UNSPECIFIED, valueOf: $4397.TableFieldSchema_RoundingMode.valueOf, enumValues: $4397.TableFieldSchema_RoundingMode.values)
+    ..aOM<$4422.BigLakeConfiguration>(45, _omitFieldNames ? '' : 'biglakeConfiguration', subBuilder: $4422.BigLakeConfiguration.create)
+    ..aOM<$4395.RestrictionConfig>(46, _omitFieldNames ? '' : 'restrictions', subBuilder: $4395.RestrictionConfig.create)
+    ..aOM<$4423.TableConstraints>(47, _omitFieldNames ? '' : 'tableConstraints', subBuilder: $4423.TableConstraints.create)
     ..m<$core.String, $core.String>(48, _omitFieldNames ? '' : 'resourceTags', entryClassName: 'Table.ResourceTagsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
     ..aOM<TableReplicationInfo>(49, _omitFieldNames ? '' : 'tableReplicationInfo', subBuilder: TableReplicationInfo.create)
-    ..pc<$4390.TableReference>(50, _omitFieldNames ? '' : 'replicas', $pb.PbFieldType.PM, subBuilder: $4390.TableReference.create)
-    ..aOM<$4423.PartitioningDefinition>(51, _omitFieldNames ? '' : 'partitionDefinition', subBuilder: $4423.PartitioningDefinition.create)
-    ..aOM<$1780.Int64Value>(53, _omitFieldNames ? '' : 'numCurrentPhysicalBytes', subBuilder: $1780.Int64Value.create)
-    ..aOM<$4424.ExternalCatalogTableOptions>(54, _omitFieldNames ? '' : 'externalCatalogTableOptions', subBuilder: $4424.ExternalCatalogTableOptions.create)
+    ..pc<$4391.TableReference>(50, _omitFieldNames ? '' : 'replicas', $pb.PbFieldType.PM, subBuilder: $4391.TableReference.create)
+    ..aOM<$4424.PartitioningDefinition>(51, _omitFieldNames ? '' : 'partitionDefinition', subBuilder: $4424.PartitioningDefinition.create)
+    ..aOM<$1781.Int64Value>(53, _omitFieldNames ? '' : 'numCurrentPhysicalBytes', subBuilder: $1781.Int64Value.create)
+    ..aOM<$4425.ExternalCatalogTableOptions>(54, _omitFieldNames ? '' : 'externalCatalogTableOptions', subBuilder: $4425.ExternalCatalogTableOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -1106,39 +1106,39 @@ class Table extends $pb.GeneratedMessage {
 
   /// Required. Reference describing the ID of this table.
   @$pb.TagNumber(5)
-  $4390.TableReference get tableReference => $_getN(4);
+  $4391.TableReference get tableReference => $_getN(4);
   @$pb.TagNumber(5)
-  set tableReference($4390.TableReference v) { setField(5, v); }
+  set tableReference($4391.TableReference v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTableReference() => $_has(4);
   @$pb.TagNumber(5)
   void clearTableReference() => clearField(5);
   @$pb.TagNumber(5)
-  $4390.TableReference ensureTableReference() => $_ensure(4);
+  $4391.TableReference ensureTableReference() => $_ensure(4);
 
   /// Optional. A descriptive name for this table.
   @$pb.TagNumber(6)
-  $1780.StringValue get friendlyName => $_getN(5);
+  $1781.StringValue get friendlyName => $_getN(5);
   @$pb.TagNumber(6)
-  set friendlyName($1780.StringValue v) { setField(6, v); }
+  set friendlyName($1781.StringValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFriendlyName() => $_has(5);
   @$pb.TagNumber(6)
   void clearFriendlyName() => clearField(6);
   @$pb.TagNumber(6)
-  $1780.StringValue ensureFriendlyName() => $_ensure(5);
+  $1781.StringValue ensureFriendlyName() => $_ensure(5);
 
   /// Optional. A user-friendly description of this table.
   @$pb.TagNumber(7)
-  $1780.StringValue get description => $_getN(6);
+  $1781.StringValue get description => $_getN(6);
   @$pb.TagNumber(7)
-  set description($1780.StringValue v) { setField(7, v); }
+  set description($1781.StringValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDescription() => $_has(6);
   @$pb.TagNumber(7)
   void clearDescription() => clearField(7);
   @$pb.TagNumber(7)
-  $1780.StringValue ensureDescription() => $_ensure(6);
+  $1781.StringValue ensureDescription() => $_ensure(6);
 
   /// The labels associated with this table. You can use these to organize and
   /// group your tables. Label keys and values can be no longer than 63
@@ -1151,66 +1151,66 @@ class Table extends $pb.GeneratedMessage {
 
   /// Optional. Describes the schema of this table.
   @$pb.TagNumber(9)
-  $4396.TableSchema get schema => $_getN(8);
+  $4397.TableSchema get schema => $_getN(8);
   @$pb.TagNumber(9)
-  set schema($4396.TableSchema v) { setField(9, v); }
+  set schema($4397.TableSchema v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSchema() => $_has(8);
   @$pb.TagNumber(9)
   void clearSchema() => clearField(9);
   @$pb.TagNumber(9)
-  $4396.TableSchema ensureSchema() => $_ensure(8);
+  $4397.TableSchema ensureSchema() => $_ensure(8);
 
   /// If specified, configures time-based partitioning for this table.
   @$pb.TagNumber(10)
-  $4405.TimePartitioning get timePartitioning => $_getN(9);
+  $4406.TimePartitioning get timePartitioning => $_getN(9);
   @$pb.TagNumber(10)
-  set timePartitioning($4405.TimePartitioning v) { setField(10, v); }
+  set timePartitioning($4406.TimePartitioning v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTimePartitioning() => $_has(9);
   @$pb.TagNumber(10)
   void clearTimePartitioning() => clearField(10);
   @$pb.TagNumber(10)
-  $4405.TimePartitioning ensureTimePartitioning() => $_ensure(9);
+  $4406.TimePartitioning ensureTimePartitioning() => $_ensure(9);
 
   /// Output only. The size of this table in logical bytes, excluding any data in
   /// the streaming buffer.
   @$pb.TagNumber(11)
-  $1780.Int64Value get numBytes => $_getN(10);
+  $1781.Int64Value get numBytes => $_getN(10);
   @$pb.TagNumber(11)
-  set numBytes($1780.Int64Value v) { setField(11, v); }
+  set numBytes($1781.Int64Value v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasNumBytes() => $_has(10);
   @$pb.TagNumber(11)
   void clearNumBytes() => clearField(11);
   @$pb.TagNumber(11)
-  $1780.Int64Value ensureNumBytes() => $_ensure(10);
+  $1781.Int64Value ensureNumBytes() => $_ensure(10);
 
   /// Output only. The number of logical bytes in the table that are considered
   /// "long-term storage".
   @$pb.TagNumber(12)
-  $1780.Int64Value get numLongTermBytes => $_getN(11);
+  $1781.Int64Value get numLongTermBytes => $_getN(11);
   @$pb.TagNumber(12)
-  set numLongTermBytes($1780.Int64Value v) { setField(12, v); }
+  set numLongTermBytes($1781.Int64Value v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasNumLongTermBytes() => $_has(11);
   @$pb.TagNumber(12)
   void clearNumLongTermBytes() => clearField(12);
   @$pb.TagNumber(12)
-  $1780.Int64Value ensureNumLongTermBytes() => $_ensure(11);
+  $1781.Int64Value ensureNumLongTermBytes() => $_ensure(11);
 
   /// Output only. The number of rows of data in this table, excluding any data
   /// in the streaming buffer.
   @$pb.TagNumber(13)
-  $1780.UInt64Value get numRows => $_getN(12);
+  $1781.UInt64Value get numRows => $_getN(12);
   @$pb.TagNumber(13)
-  set numRows($1780.UInt64Value v) { setField(13, v); }
+  set numRows($1781.UInt64Value v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasNumRows() => $_has(12);
   @$pb.TagNumber(13)
   void clearNumRows() => clearField(13);
   @$pb.TagNumber(13)
-  $1780.UInt64Value ensureNumRows() => $_ensure(12);
+  $1781.UInt64Value ensureNumRows() => $_ensure(12);
 
   /// Output only. The time when this table was created, in milliseconds since
   /// the epoch.
@@ -1229,15 +1229,15 @@ class Table extends $pb.GeneratedMessage {
   /// property of the encapsulating dataset can be used to set a default
   /// expirationTime on newly created tables.
   @$pb.TagNumber(15)
-  $1780.Int64Value get expirationTime => $_getN(14);
+  $1781.Int64Value get expirationTime => $_getN(14);
   @$pb.TagNumber(15)
-  set expirationTime($1780.Int64Value v) { setField(15, v); }
+  set expirationTime($1781.Int64Value v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasExpirationTime() => $_has(14);
   @$pb.TagNumber(15)
   void clearExpirationTime() => clearField(15);
   @$pb.TagNumber(15)
-  $1780.Int64Value ensureExpirationTime() => $_ensure(14);
+  $1781.Int64Value ensureExpirationTime() => $_ensure(14);
 
   /// Output only. The time when this table was last modified, in milliseconds
   /// since the epoch.
@@ -1287,15 +1287,15 @@ class Table extends $pb.GeneratedMessage {
   /// a table stored outside of BigQuery. By defining these properties, the data
   /// source can then be queried as if it were a standard BigQuery table.
   @$pb.TagNumber(19)
-  $4409.ExternalDataConfiguration get externalDataConfiguration => $_getN(18);
+  $4410.ExternalDataConfiguration get externalDataConfiguration => $_getN(18);
   @$pb.TagNumber(19)
-  set externalDataConfiguration($4409.ExternalDataConfiguration v) { setField(19, v); }
+  set externalDataConfiguration($4410.ExternalDataConfiguration v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasExternalDataConfiguration() => $_has(18);
   @$pb.TagNumber(19)
   void clearExternalDataConfiguration() => clearField(19);
   @$pb.TagNumber(19)
-  $4409.ExternalDataConfiguration ensureExternalDataConfiguration() => $_ensure(18);
+  $4410.ExternalDataConfiguration ensureExternalDataConfiguration() => $_ensure(18);
 
   /// Output only. The geographic location where the table resides. This value
   /// is inherited from the dataset.
@@ -1324,29 +1324,29 @@ class Table extends $pb.GeneratedMessage {
 
   /// Custom encryption configuration (e.g., Cloud KMS keys).
   @$pb.TagNumber(22)
-  $4392.EncryptionConfiguration get encryptionConfiguration => $_getN(21);
+  $4393.EncryptionConfiguration get encryptionConfiguration => $_getN(21);
   @$pb.TagNumber(22)
-  set encryptionConfiguration($4392.EncryptionConfiguration v) { setField(22, v); }
+  set encryptionConfiguration($4393.EncryptionConfiguration v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasEncryptionConfiguration() => $_has(21);
   @$pb.TagNumber(22)
   void clearEncryptionConfiguration() => clearField(22);
   @$pb.TagNumber(22)
-  $4392.EncryptionConfiguration ensureEncryptionConfiguration() => $_ensure(21);
+  $4393.EncryptionConfiguration ensureEncryptionConfiguration() => $_ensure(21);
 
   /// Clustering specification for the table. Must be specified with time-based
   /// partitioning, data in the table will be first partitioned and subsequently
   /// clustered.
   @$pb.TagNumber(23)
-  $4406.Clustering get clustering => $_getN(22);
+  $4407.Clustering get clustering => $_getN(22);
   @$pb.TagNumber(23)
-  set clustering($4406.Clustering v) { setField(23, v); }
+  set clustering($4407.Clustering v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasClustering() => $_has(22);
   @$pb.TagNumber(23)
   void clearClustering() => clearField(23);
   @$pb.TagNumber(23)
-  $4406.Clustering ensureClustering() => $_ensure(22);
+  $4407.Clustering ensureClustering() => $_ensure(22);
 
   /// Optional. The materialized view definition.
   @$pb.TagNumber(25)
@@ -1363,41 +1363,41 @@ class Table extends $pb.GeneratedMessage {
   /// Output only. The physical size of this table in bytes. This includes
   /// storage used for time travel.
   @$pb.TagNumber(26)
-  $1780.Int64Value get numPhysicalBytes => $_getN(24);
+  $1781.Int64Value get numPhysicalBytes => $_getN(24);
   @$pb.TagNumber(26)
-  set numPhysicalBytes($1780.Int64Value v) { setField(26, v); }
+  set numPhysicalBytes($1781.Int64Value v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasNumPhysicalBytes() => $_has(24);
   @$pb.TagNumber(26)
   void clearNumPhysicalBytes() => clearField(26);
   @$pb.TagNumber(26)
-  $1780.Int64Value ensureNumPhysicalBytes() => $_ensure(24);
+  $1781.Int64Value ensureNumPhysicalBytes() => $_ensure(24);
 
   /// If specified, configures range partitioning for this table.
   @$pb.TagNumber(27)
-  $4407.RangePartitioning get rangePartitioning => $_getN(25);
+  $4408.RangePartitioning get rangePartitioning => $_getN(25);
   @$pb.TagNumber(27)
-  set rangePartitioning($4407.RangePartitioning v) { setField(27, v); }
+  set rangePartitioning($4408.RangePartitioning v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasRangePartitioning() => $_has(25);
   @$pb.TagNumber(27)
   void clearRangePartitioning() => clearField(27);
   @$pb.TagNumber(27)
-  $4407.RangePartitioning ensureRangePartitioning() => $_ensure(25);
+  $4408.RangePartitioning ensureRangePartitioning() => $_ensure(25);
 
   /// Optional. If set to true, queries over this table require
   /// a partition filter that can be used for partition elimination to be
   /// specified.
   @$pb.TagNumber(28)
-  $1780.BoolValue get requirePartitionFilter => $_getN(26);
+  $1781.BoolValue get requirePartitionFilter => $_getN(26);
   @$pb.TagNumber(28)
-  set requirePartitionFilter($1780.BoolValue v) { setField(28, v); }
+  set requirePartitionFilter($1781.BoolValue v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasRequirePartitionFilter() => $_has(26);
   @$pb.TagNumber(28)
   void clearRequirePartitionFilter() => clearField(28);
   @$pb.TagNumber(28)
-  $1780.BoolValue ensureRequirePartitionFilter() => $_ensure(26);
+  $1781.BoolValue ensureRequirePartitionFilter() => $_ensure(26);
 
   /// Output only. Contains information about the snapshot. This value is set via
   /// snapshot creation.
@@ -1422,15 +1422,15 @@ class Table extends $pb.GeneratedMessage {
   ///  * 'und:ci': undetermined locale, case insensitive.
   ///  * '': empty string. Default to case-sensitive behavior.
   @$pb.TagNumber(30)
-  $1780.StringValue get defaultCollation => $_getN(28);
+  $1781.StringValue get defaultCollation => $_getN(28);
   @$pb.TagNumber(30)
-  set defaultCollation($1780.StringValue v) { setField(30, v); }
+  set defaultCollation($1781.StringValue v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasDefaultCollation() => $_has(28);
   @$pb.TagNumber(30)
   void clearDefaultCollation() => clearField(30);
   @$pb.TagNumber(30)
-  $1780.StringValue ensureDefaultCollation() => $_ensure(28);
+  $1781.StringValue ensureDefaultCollation() => $_ensure(28);
 
   /// Output only. Contains information about the clone. This value is set via
   /// the clone operation.
@@ -1449,108 +1449,108 @@ class Table extends $pb.GeneratedMessage {
   /// or changed data). This data is not kept in real time, and might be delayed
   /// by a few seconds to a few minutes.
   @$pb.TagNumber(33)
-  $1780.Int64Value get numTimeTravelPhysicalBytes => $_getN(30);
+  $1781.Int64Value get numTimeTravelPhysicalBytes => $_getN(30);
   @$pb.TagNumber(33)
-  set numTimeTravelPhysicalBytes($1780.Int64Value v) { setField(33, v); }
+  set numTimeTravelPhysicalBytes($1781.Int64Value v) { setField(33, v); }
   @$pb.TagNumber(33)
   $core.bool hasNumTimeTravelPhysicalBytes() => $_has(30);
   @$pb.TagNumber(33)
   void clearNumTimeTravelPhysicalBytes() => clearField(33);
   @$pb.TagNumber(33)
-  $1780.Int64Value ensureNumTimeTravelPhysicalBytes() => $_ensure(30);
+  $1781.Int64Value ensureNumTimeTravelPhysicalBytes() => $_ensure(30);
 
   /// Output only. Total number of logical bytes in the table or materialized
   /// view.
   @$pb.TagNumber(34)
-  $1780.Int64Value get numTotalLogicalBytes => $_getN(31);
+  $1781.Int64Value get numTotalLogicalBytes => $_getN(31);
   @$pb.TagNumber(34)
-  set numTotalLogicalBytes($1780.Int64Value v) { setField(34, v); }
+  set numTotalLogicalBytes($1781.Int64Value v) { setField(34, v); }
   @$pb.TagNumber(34)
   $core.bool hasNumTotalLogicalBytes() => $_has(31);
   @$pb.TagNumber(34)
   void clearNumTotalLogicalBytes() => clearField(34);
   @$pb.TagNumber(34)
-  $1780.Int64Value ensureNumTotalLogicalBytes() => $_ensure(31);
+  $1781.Int64Value ensureNumTotalLogicalBytes() => $_ensure(31);
 
   /// Output only. Number of logical bytes that are less than 90 days old.
   @$pb.TagNumber(35)
-  $1780.Int64Value get numActiveLogicalBytes => $_getN(32);
+  $1781.Int64Value get numActiveLogicalBytes => $_getN(32);
   @$pb.TagNumber(35)
-  set numActiveLogicalBytes($1780.Int64Value v) { setField(35, v); }
+  set numActiveLogicalBytes($1781.Int64Value v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasNumActiveLogicalBytes() => $_has(32);
   @$pb.TagNumber(35)
   void clearNumActiveLogicalBytes() => clearField(35);
   @$pb.TagNumber(35)
-  $1780.Int64Value ensureNumActiveLogicalBytes() => $_ensure(32);
+  $1781.Int64Value ensureNumActiveLogicalBytes() => $_ensure(32);
 
   /// Output only. Number of logical bytes that are more than 90 days old.
   @$pb.TagNumber(36)
-  $1780.Int64Value get numLongTermLogicalBytes => $_getN(33);
+  $1781.Int64Value get numLongTermLogicalBytes => $_getN(33);
   @$pb.TagNumber(36)
-  set numLongTermLogicalBytes($1780.Int64Value v) { setField(36, v); }
+  set numLongTermLogicalBytes($1781.Int64Value v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasNumLongTermLogicalBytes() => $_has(33);
   @$pb.TagNumber(36)
   void clearNumLongTermLogicalBytes() => clearField(36);
   @$pb.TagNumber(36)
-  $1780.Int64Value ensureNumLongTermLogicalBytes() => $_ensure(33);
+  $1781.Int64Value ensureNumLongTermLogicalBytes() => $_ensure(33);
 
   /// Output only. The physical size of this table in bytes. This also includes
   /// storage used for time travel. This data is not kept in real time, and might
   /// be delayed by a few seconds to a few minutes.
   @$pb.TagNumber(37)
-  $1780.Int64Value get numTotalPhysicalBytes => $_getN(34);
+  $1781.Int64Value get numTotalPhysicalBytes => $_getN(34);
   @$pb.TagNumber(37)
-  set numTotalPhysicalBytes($1780.Int64Value v) { setField(37, v); }
+  set numTotalPhysicalBytes($1781.Int64Value v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasNumTotalPhysicalBytes() => $_has(34);
   @$pb.TagNumber(37)
   void clearNumTotalPhysicalBytes() => clearField(37);
   @$pb.TagNumber(37)
-  $1780.Int64Value ensureNumTotalPhysicalBytes() => $_ensure(34);
+  $1781.Int64Value ensureNumTotalPhysicalBytes() => $_ensure(34);
 
   /// Output only. Number of physical bytes less than 90 days old. This data is
   /// not kept in real time, and might be delayed by a few seconds to a few
   /// minutes.
   @$pb.TagNumber(38)
-  $1780.Int64Value get numActivePhysicalBytes => $_getN(35);
+  $1781.Int64Value get numActivePhysicalBytes => $_getN(35);
   @$pb.TagNumber(38)
-  set numActivePhysicalBytes($1780.Int64Value v) { setField(38, v); }
+  set numActivePhysicalBytes($1781.Int64Value v) { setField(38, v); }
   @$pb.TagNumber(38)
   $core.bool hasNumActivePhysicalBytes() => $_has(35);
   @$pb.TagNumber(38)
   void clearNumActivePhysicalBytes() => clearField(38);
   @$pb.TagNumber(38)
-  $1780.Int64Value ensureNumActivePhysicalBytes() => $_ensure(35);
+  $1781.Int64Value ensureNumActivePhysicalBytes() => $_ensure(35);
 
   /// Output only. Number of physical bytes more than 90 days old.
   /// This data is not kept in real time, and might be delayed by a few seconds
   /// to a few minutes.
   @$pb.TagNumber(39)
-  $1780.Int64Value get numLongTermPhysicalBytes => $_getN(36);
+  $1781.Int64Value get numLongTermPhysicalBytes => $_getN(36);
   @$pb.TagNumber(39)
-  set numLongTermPhysicalBytes($1780.Int64Value v) { setField(39, v); }
+  set numLongTermPhysicalBytes($1781.Int64Value v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasNumLongTermPhysicalBytes() => $_has(36);
   @$pb.TagNumber(39)
   void clearNumLongTermPhysicalBytes() => clearField(39);
   @$pb.TagNumber(39)
-  $1780.Int64Value ensureNumLongTermPhysicalBytes() => $_ensure(36);
+  $1781.Int64Value ensureNumLongTermPhysicalBytes() => $_ensure(36);
 
   /// Output only. The number of partitions present in the table or materialized
   /// view. This data is not kept in real time, and might be delayed by a few
   /// seconds to a few minutes.
   @$pb.TagNumber(40)
-  $1780.Int64Value get numPartitions => $_getN(37);
+  $1781.Int64Value get numPartitions => $_getN(37);
   @$pb.TagNumber(40)
-  set numPartitions($1780.Int64Value v) { setField(40, v); }
+  set numPartitions($1781.Int64Value v) { setField(40, v); }
   @$pb.TagNumber(40)
   $core.bool hasNumPartitions() => $_has(37);
   @$pb.TagNumber(40)
   void clearNumPartitions() => clearField(40);
   @$pb.TagNumber(40)
-  $1780.Int64Value ensureNumPartitions() => $_ensure(37);
+  $1781.Int64Value ensureNumPartitions() => $_ensure(37);
 
   /// Optional. The maximum staleness of data that could be returned when the
   /// table (or stale MV) is queried. Staleness encoded as a string encoding
@@ -1582,9 +1582,9 @@ class Table extends $pb.GeneratedMessage {
   /// rounding mode specified, then the field inherits the table default
   /// rounding mode. Changing this field doesn't affect existing fields.
   @$pb.TagNumber(44)
-  $4396.TableFieldSchema_RoundingMode get defaultRoundingMode => $_getN(40);
+  $4397.TableFieldSchema_RoundingMode get defaultRoundingMode => $_getN(40);
   @$pb.TagNumber(44)
-  set defaultRoundingMode($4396.TableFieldSchema_RoundingMode v) { setField(44, v); }
+  set defaultRoundingMode($4397.TableFieldSchema_RoundingMode v) { setField(44, v); }
   @$pb.TagNumber(44)
   $core.bool hasDefaultRoundingMode() => $_has(40);
   @$pb.TagNumber(44)
@@ -1592,42 +1592,42 @@ class Table extends $pb.GeneratedMessage {
 
   /// Optional. Specifies the configuration of a BigLake managed table.
   @$pb.TagNumber(45)
-  $4421.BigLakeConfiguration get biglakeConfiguration => $_getN(41);
+  $4422.BigLakeConfiguration get biglakeConfiguration => $_getN(41);
   @$pb.TagNumber(45)
-  set biglakeConfiguration($4421.BigLakeConfiguration v) { setField(45, v); }
+  set biglakeConfiguration($4422.BigLakeConfiguration v) { setField(45, v); }
   @$pb.TagNumber(45)
   $core.bool hasBiglakeConfiguration() => $_has(41);
   @$pb.TagNumber(45)
   void clearBiglakeConfiguration() => clearField(45);
   @$pb.TagNumber(45)
-  $4421.BigLakeConfiguration ensureBiglakeConfiguration() => $_ensure(41);
+  $4422.BigLakeConfiguration ensureBiglakeConfiguration() => $_ensure(41);
 
   /// Optional. Output only. Restriction config for table. If set, restrict
   /// certain accesses on the table based on the config. See [Data
   /// egress](/bigquery/docs/analytics-hub-introduction#data_egress) for more
   /// details.
   @$pb.TagNumber(46)
-  $4394.RestrictionConfig get restrictions => $_getN(42);
+  $4395.RestrictionConfig get restrictions => $_getN(42);
   @$pb.TagNumber(46)
-  set restrictions($4394.RestrictionConfig v) { setField(46, v); }
+  set restrictions($4395.RestrictionConfig v) { setField(46, v); }
   @$pb.TagNumber(46)
   $core.bool hasRestrictions() => $_has(42);
   @$pb.TagNumber(46)
   void clearRestrictions() => clearField(46);
   @$pb.TagNumber(46)
-  $4394.RestrictionConfig ensureRestrictions() => $_ensure(42);
+  $4395.RestrictionConfig ensureRestrictions() => $_ensure(42);
 
   /// Optional. Tables Primary Key and Foreign Key information
   @$pb.TagNumber(47)
-  $4422.TableConstraints get tableConstraints => $_getN(43);
+  $4423.TableConstraints get tableConstraints => $_getN(43);
   @$pb.TagNumber(47)
-  set tableConstraints($4422.TableConstraints v) { setField(47, v); }
+  set tableConstraints($4423.TableConstraints v) { setField(47, v); }
   @$pb.TagNumber(47)
   $core.bool hasTableConstraints() => $_has(43);
   @$pb.TagNumber(47)
   void clearTableConstraints() => clearField(47);
   @$pb.TagNumber(47)
-  $4422.TableConstraints ensureTableConstraints() => $_ensure(43);
+  $4423.TableConstraints ensureTableConstraints() => $_ensure(43);
 
   /// Optional. The [tags](/bigquery/docs/tags) attached to this table. Tag keys
   /// are globally unique. Tag key is expected to be in the namespaced format,
@@ -1654,7 +1654,7 @@ class Table extends $pb.GeneratedMessage {
   /// Optional. Output only. Table references of all replicas currently active on
   /// the table.
   @$pb.TagNumber(50)
-  $core.List<$4390.TableReference> get replicas => $_getList(46);
+  $core.List<$4391.TableReference> get replicas => $_getList(46);
 
   /// Optional. The partition information for all table formats, including
   /// managed partitioned tables, hive partitioned tables, iceberg partitioned,
@@ -1662,41 +1662,41 @@ class Table extends $pb.GeneratedMessage {
   /// metastore partitioned tables. For other table formats, this is an output
   /// only field.
   @$pb.TagNumber(51)
-  $4423.PartitioningDefinition get partitionDefinition => $_getN(47);
+  $4424.PartitioningDefinition get partitionDefinition => $_getN(47);
   @$pb.TagNumber(51)
-  set partitionDefinition($4423.PartitioningDefinition v) { setField(51, v); }
+  set partitionDefinition($4424.PartitioningDefinition v) { setField(51, v); }
   @$pb.TagNumber(51)
   $core.bool hasPartitionDefinition() => $_has(47);
   @$pb.TagNumber(51)
   void clearPartitionDefinition() => clearField(51);
   @$pb.TagNumber(51)
-  $4423.PartitioningDefinition ensurePartitionDefinition() => $_ensure(47);
+  $4424.PartitioningDefinition ensurePartitionDefinition() => $_ensure(47);
 
   /// Output only. Number of physical bytes used by current live data storage.
   /// This data is not kept in real time, and might be delayed by a few seconds
   /// to a few minutes.
   @$pb.TagNumber(53)
-  $1780.Int64Value get numCurrentPhysicalBytes => $_getN(48);
+  $1781.Int64Value get numCurrentPhysicalBytes => $_getN(48);
   @$pb.TagNumber(53)
-  set numCurrentPhysicalBytes($1780.Int64Value v) { setField(53, v); }
+  set numCurrentPhysicalBytes($1781.Int64Value v) { setField(53, v); }
   @$pb.TagNumber(53)
   $core.bool hasNumCurrentPhysicalBytes() => $_has(48);
   @$pb.TagNumber(53)
   void clearNumCurrentPhysicalBytes() => clearField(53);
   @$pb.TagNumber(53)
-  $1780.Int64Value ensureNumCurrentPhysicalBytes() => $_ensure(48);
+  $1781.Int64Value ensureNumCurrentPhysicalBytes() => $_ensure(48);
 
   /// Optional. Options defining open source compatible table.
   @$pb.TagNumber(54)
-  $4424.ExternalCatalogTableOptions get externalCatalogTableOptions => $_getN(49);
+  $4425.ExternalCatalogTableOptions get externalCatalogTableOptions => $_getN(49);
   @$pb.TagNumber(54)
-  set externalCatalogTableOptions($4424.ExternalCatalogTableOptions v) { setField(54, v); }
+  set externalCatalogTableOptions($4425.ExternalCatalogTableOptions v) { setField(54, v); }
   @$pb.TagNumber(54)
   $core.bool hasExternalCatalogTableOptions() => $_has(49);
   @$pb.TagNumber(54)
   void clearExternalCatalogTableOptions() => clearField(54);
   @$pb.TagNumber(54)
-  $4424.ExternalCatalogTableOptions ensureExternalCatalogTableOptions() => $_ensure(49);
+  $4425.ExternalCatalogTableOptions ensureExternalCatalogTableOptions() => $_ensure(49);
 }
 
 /// Request format for getting table metadata.
@@ -2102,7 +2102,7 @@ class ListTablesRequest extends $pb.GeneratedMessage {
   factory ListTablesRequest({
     $core.String? projectId,
     $core.String? datasetId,
-    $1780.UInt32Value? maxResults,
+    $1781.UInt32Value? maxResults,
     $core.String? pageToken,
   }) {
     final $result = create();
@@ -2127,7 +2127,7 @@ class ListTablesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTablesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'projectId')
     ..aOS(2, _omitFieldNames ? '' : 'datasetId')
-    ..aOM<$1780.UInt32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1780.UInt32Value.create)
+    ..aOM<$1781.UInt32Value>(3, _omitFieldNames ? '' : 'maxResults', subBuilder: $1781.UInt32Value.create)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..hasRequiredFields = false
   ;
@@ -2176,15 +2176,15 @@ class ListTablesRequest extends $pb.GeneratedMessage {
   /// The maximum number of results to return in a single response page.
   /// Leverage the page tokens to iterate through the entire collection.
   @$pb.TagNumber(3)
-  $1780.UInt32Value get maxResults => $_getN(2);
+  $1781.UInt32Value get maxResults => $_getN(2);
   @$pb.TagNumber(3)
-  set maxResults($1780.UInt32Value v) { setField(3, v); }
+  set maxResults($1781.UInt32Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMaxResults() => $_has(2);
   @$pb.TagNumber(3)
   void clearMaxResults() => clearField(3);
   @$pb.TagNumber(3)
-  $1780.UInt32Value ensureMaxResults() => $_ensure(2);
+  $1781.UInt32Value ensureMaxResults() => $_ensure(2);
 
   /// Page token, returned by a previous call, to request the next page of
   /// results
@@ -2201,8 +2201,8 @@ class ListTablesRequest extends $pb.GeneratedMessage {
 /// Information about a logical view.
 class ListFormatView extends $pb.GeneratedMessage {
   factory ListFormatView({
-    $1780.BoolValue? useLegacySql,
-    $4420.PrivacyPolicy? privacyPolicy,
+    $1781.BoolValue? useLegacySql,
+    $4421.PrivacyPolicy? privacyPolicy,
   }) {
     final $result = create();
     if (useLegacySql != null) {
@@ -2218,8 +2218,8 @@ class ListFormatView extends $pb.GeneratedMessage {
   factory ListFormatView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListFormatView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.BoolValue>(1, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1780.BoolValue.create)
-    ..aOM<$4420.PrivacyPolicy>(2, _omitFieldNames ? '' : 'privacyPolicy', subBuilder: $4420.PrivacyPolicy.create)
+    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'useLegacySql', subBuilder: $1781.BoolValue.create)
+    ..aOM<$4421.PrivacyPolicy>(2, _omitFieldNames ? '' : 'privacyPolicy', subBuilder: $4421.PrivacyPolicy.create)
     ..hasRequiredFields = false
   ;
 
@@ -2247,44 +2247,44 @@ class ListFormatView extends $pb.GeneratedMessage {
   /// True if view is defined in legacy SQL dialect,
   /// false if in GoogleSQL.
   @$pb.TagNumber(1)
-  $1780.BoolValue get useLegacySql => $_getN(0);
+  $1781.BoolValue get useLegacySql => $_getN(0);
   @$pb.TagNumber(1)
-  set useLegacySql($1780.BoolValue v) { setField(1, v); }
+  set useLegacySql($1781.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUseLegacySql() => $_has(0);
   @$pb.TagNumber(1)
   void clearUseLegacySql() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.BoolValue ensureUseLegacySql() => $_ensure(0);
+  $1781.BoolValue ensureUseLegacySql() => $_ensure(0);
 
   /// Specifices the privacy policy for the view.
   @$pb.TagNumber(2)
-  $4420.PrivacyPolicy get privacyPolicy => $_getN(1);
+  $4421.PrivacyPolicy get privacyPolicy => $_getN(1);
   @$pb.TagNumber(2)
-  set privacyPolicy($4420.PrivacyPolicy v) { setField(2, v); }
+  set privacyPolicy($4421.PrivacyPolicy v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPrivacyPolicy() => $_has(1);
   @$pb.TagNumber(2)
   void clearPrivacyPolicy() => clearField(2);
   @$pb.TagNumber(2)
-  $4420.PrivacyPolicy ensurePrivacyPolicy() => $_ensure(1);
+  $4421.PrivacyPolicy ensurePrivacyPolicy() => $_ensure(1);
 }
 
 class ListFormatTable extends $pb.GeneratedMessage {
   factory ListFormatTable({
     $core.String? kind,
     $core.String? id,
-    $4390.TableReference? tableReference,
-    $1780.StringValue? friendlyName,
+    $4391.TableReference? tableReference,
+    $1781.StringValue? friendlyName,
     $core.String? type,
-    $4405.TimePartitioning? timePartitioning,
+    $4406.TimePartitioning? timePartitioning,
     $core.Map<$core.String, $core.String>? labels,
     ListFormatView? view,
     $fixnum.Int64? creationTime,
     $fixnum.Int64? expirationTime,
-    $4406.Clustering? clustering,
-    $4407.RangePartitioning? rangePartitioning,
-    $1780.BoolValue? requirePartitionFilter,
+    $4407.Clustering? clustering,
+    $4408.RangePartitioning? rangePartitioning,
+    $1781.BoolValue? requirePartitionFilter,
   }) {
     final $result = create();
     if (kind != null) {
@@ -2335,17 +2335,17 @@ class ListFormatTable extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListFormatTable', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'kind')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<$4390.TableReference>(3, _omitFieldNames ? '' : 'tableReference', subBuilder: $4390.TableReference.create)
-    ..aOM<$1780.StringValue>(4, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1780.StringValue.create)
+    ..aOM<$4391.TableReference>(3, _omitFieldNames ? '' : 'tableReference', subBuilder: $4391.TableReference.create)
+    ..aOM<$1781.StringValue>(4, _omitFieldNames ? '' : 'friendlyName', subBuilder: $1781.StringValue.create)
     ..aOS(5, _omitFieldNames ? '' : 'type')
-    ..aOM<$4405.TimePartitioning>(6, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4405.TimePartitioning.create)
+    ..aOM<$4406.TimePartitioning>(6, _omitFieldNames ? '' : 'timePartitioning', subBuilder: $4406.TimePartitioning.create)
     ..m<$core.String, $core.String>(7, _omitFieldNames ? '' : 'labels', entryClassName: 'ListFormatTable.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.v2'))
     ..aOM<ListFormatView>(8, _omitFieldNames ? '' : 'view', subBuilder: ListFormatView.create)
     ..aInt64(9, _omitFieldNames ? '' : 'creationTime')
     ..aInt64(10, _omitFieldNames ? '' : 'expirationTime')
-    ..aOM<$4406.Clustering>(11, _omitFieldNames ? '' : 'clustering', subBuilder: $4406.Clustering.create)
-    ..aOM<$4407.RangePartitioning>(12, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4407.RangePartitioning.create)
-    ..aOM<$1780.BoolValue>(14, _omitFieldNames ? '' : 'requirePartitionFilter', subBuilder: $1780.BoolValue.create)
+    ..aOM<$4407.Clustering>(11, _omitFieldNames ? '' : 'clustering', subBuilder: $4407.Clustering.create)
+    ..aOM<$4408.RangePartitioning>(12, _omitFieldNames ? '' : 'rangePartitioning', subBuilder: $4408.RangePartitioning.create)
+    ..aOM<$1781.BoolValue>(14, _omitFieldNames ? '' : 'requirePartitionFilter', subBuilder: $1781.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -2392,27 +2392,27 @@ class ListFormatTable extends $pb.GeneratedMessage {
 
   /// A reference uniquely identifying table.
   @$pb.TagNumber(3)
-  $4390.TableReference get tableReference => $_getN(2);
+  $4391.TableReference get tableReference => $_getN(2);
   @$pb.TagNumber(3)
-  set tableReference($4390.TableReference v) { setField(3, v); }
+  set tableReference($4391.TableReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTableReference() => $_has(2);
   @$pb.TagNumber(3)
   void clearTableReference() => clearField(3);
   @$pb.TagNumber(3)
-  $4390.TableReference ensureTableReference() => $_ensure(2);
+  $4391.TableReference ensureTableReference() => $_ensure(2);
 
   /// The user-friendly name for this table.
   @$pb.TagNumber(4)
-  $1780.StringValue get friendlyName => $_getN(3);
+  $1781.StringValue get friendlyName => $_getN(3);
   @$pb.TagNumber(4)
-  set friendlyName($1780.StringValue v) { setField(4, v); }
+  set friendlyName($1781.StringValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFriendlyName() => $_has(3);
   @$pb.TagNumber(4)
   void clearFriendlyName() => clearField(4);
   @$pb.TagNumber(4)
-  $1780.StringValue ensureFriendlyName() => $_ensure(3);
+  $1781.StringValue ensureFriendlyName() => $_ensure(3);
 
   /// The type of table.
   @$pb.TagNumber(5)
@@ -2426,15 +2426,15 @@ class ListFormatTable extends $pb.GeneratedMessage {
 
   /// The time-based partitioning for this table.
   @$pb.TagNumber(6)
-  $4405.TimePartitioning get timePartitioning => $_getN(5);
+  $4406.TimePartitioning get timePartitioning => $_getN(5);
   @$pb.TagNumber(6)
-  set timePartitioning($4405.TimePartitioning v) { setField(6, v); }
+  set timePartitioning($4406.TimePartitioning v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimePartitioning() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimePartitioning() => clearField(6);
   @$pb.TagNumber(6)
-  $4405.TimePartitioning ensureTimePartitioning() => $_ensure(5);
+  $4406.TimePartitioning ensureTimePartitioning() => $_ensure(5);
 
   /// The labels associated with this table. You can use these to organize
   /// and group your tables.
@@ -2478,40 +2478,40 @@ class ListFormatTable extends $pb.GeneratedMessage {
 
   /// Clustering specification for this table, if configured.
   @$pb.TagNumber(11)
-  $4406.Clustering get clustering => $_getN(10);
+  $4407.Clustering get clustering => $_getN(10);
   @$pb.TagNumber(11)
-  set clustering($4406.Clustering v) { setField(11, v); }
+  set clustering($4407.Clustering v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasClustering() => $_has(10);
   @$pb.TagNumber(11)
   void clearClustering() => clearField(11);
   @$pb.TagNumber(11)
-  $4406.Clustering ensureClustering() => $_ensure(10);
+  $4407.Clustering ensureClustering() => $_ensure(10);
 
   /// The range partitioning for this table.
   @$pb.TagNumber(12)
-  $4407.RangePartitioning get rangePartitioning => $_getN(11);
+  $4408.RangePartitioning get rangePartitioning => $_getN(11);
   @$pb.TagNumber(12)
-  set rangePartitioning($4407.RangePartitioning v) { setField(12, v); }
+  set rangePartitioning($4408.RangePartitioning v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasRangePartitioning() => $_has(11);
   @$pb.TagNumber(12)
   void clearRangePartitioning() => clearField(12);
   @$pb.TagNumber(12)
-  $4407.RangePartitioning ensureRangePartitioning() => $_ensure(11);
+  $4408.RangePartitioning ensureRangePartitioning() => $_ensure(11);
 
   /// Optional. If set to true, queries including this table must specify a
   /// partition filter. This filter is used for partition elimination.
   @$pb.TagNumber(14)
-  $1780.BoolValue get requirePartitionFilter => $_getN(12);
+  $1781.BoolValue get requirePartitionFilter => $_getN(12);
   @$pb.TagNumber(14)
-  set requirePartitionFilter($1780.BoolValue v) { setField(14, v); }
+  set requirePartitionFilter($1781.BoolValue v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasRequirePartitionFilter() => $_has(12);
   @$pb.TagNumber(14)
   void clearRequirePartitionFilter() => clearField(14);
   @$pb.TagNumber(14)
-  $1780.BoolValue ensureRequirePartitionFilter() => $_ensure(12);
+  $1781.BoolValue ensureRequirePartitionFilter() => $_ensure(12);
 }
 
 /// Partial projection of the metadata for a given table in a list response.
@@ -2521,7 +2521,7 @@ class TableList extends $pb.GeneratedMessage {
     $core.String? etag,
     $core.String? nextPageToken,
     $core.Iterable<ListFormatTable>? tables,
-    $1780.Int32Value? totalItems,
+    $1781.Int32Value? totalItems,
   }) {
     final $result = create();
     if (kind != null) {
@@ -2550,7 +2550,7 @@ class TableList extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'etag')
     ..aOS(3, _omitFieldNames ? '' : 'nextPageToken')
     ..pc<ListFormatTable>(4, _omitFieldNames ? '' : 'tables', $pb.PbFieldType.PM, subBuilder: ListFormatTable.create)
-    ..aOM<$1780.Int32Value>(5, _omitFieldNames ? '' : 'totalItems', subBuilder: $1780.Int32Value.create)
+    ..aOM<$1781.Int32Value>(5, _omitFieldNames ? '' : 'totalItems', subBuilder: $1781.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -2611,15 +2611,15 @@ class TableList extends $pb.GeneratedMessage {
 
   /// The total number of tables in the dataset.
   @$pb.TagNumber(5)
-  $1780.Int32Value get totalItems => $_getN(4);
+  $1781.Int32Value get totalItems => $_getN(4);
   @$pb.TagNumber(5)
-  set totalItems($1780.Int32Value v) { setField(5, v); }
+  set totalItems($1781.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTotalItems() => $_has(4);
   @$pb.TagNumber(5)
   void clearTotalItems() => clearField(5);
   @$pb.TagNumber(5)
-  $1780.Int32Value ensureTotalItems() => $_ensure(4);
+  $1781.Int32Value ensureTotalItems() => $_ensure(4);
 }
 
 

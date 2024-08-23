@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/distance_bucket.pbenum.dart' as $3701;
+import '../enums/distance_bucket.pbenum.dart' as $3702;
 
 /// A distance view with metrics aggregated by the user's distance from an
 /// advertiser's location extensions. Each DistanceBucket includes all
@@ -23,7 +23,7 @@ import '../enums/distance_bucket.pbenum.dart' as $3701;
 class DistanceView extends $pb.GeneratedMessage {
   factory DistanceView({
     $core.String? resourceName,
-    $3701.DistanceBucketEnum_DistanceBucket? distanceBucket,
+    $3702.DistanceBucketEnum_DistanceBucket? distanceBucket,
     $core.bool? metricSystem,
   }) {
     final $result = create();
@@ -44,7 +44,7 @@ class DistanceView extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DistanceView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ads.googleads.v17.resources'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
-    ..e<$3701.DistanceBucketEnum_DistanceBucket>(2, _omitFieldNames ? '' : 'distanceBucket', $pb.PbFieldType.OE, defaultOrMaker: $3701.DistanceBucketEnum_DistanceBucket.UNSPECIFIED, valueOf: $3701.DistanceBucketEnum_DistanceBucket.valueOf, enumValues: $3701.DistanceBucketEnum_DistanceBucket.values)
+    ..e<$3702.DistanceBucketEnum_DistanceBucket>(2, _omitFieldNames ? '' : 'distanceBucket', $pb.PbFieldType.OE, defaultOrMaker: $3702.DistanceBucketEnum_DistanceBucket.UNSPECIFIED, valueOf: $3702.DistanceBucketEnum_DistanceBucket.valueOf, enumValues: $3702.DistanceBucketEnum_DistanceBucket.values)
     ..aOB(4, _omitFieldNames ? '' : 'metricSystem')
     ..hasRequiredFields = false
   ;
@@ -85,9 +85,9 @@ class DistanceView extends $pb.GeneratedMessage {
 
   /// Output only. Grouping of user distance from location extensions.
   @$pb.TagNumber(2)
-  $3701.DistanceBucketEnum_DistanceBucket get distanceBucket => $_getN(1);
+  $3702.DistanceBucketEnum_DistanceBucket get distanceBucket => $_getN(1);
   @$pb.TagNumber(2)
-  set distanceBucket($3701.DistanceBucketEnum_DistanceBucket v) { setField(2, v); }
+  set distanceBucket($3702.DistanceBucketEnum_DistanceBucket v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDistanceBucket() => $_has(1);
   @$pb.TagNumber(2)

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $1781;
 
 /// Configuration for Cloud KMS encryption settings.
 class EncryptionConfiguration extends $pb.GeneratedMessage {
   factory EncryptionConfiguration({
-    $1780.StringValue? kmsKeyName,
+    $1781.StringValue? kmsKeyName,
   }) {
     final $result = create();
     if (kmsKeyName != null) {
@@ -31,7 +31,7 @@ class EncryptionConfiguration extends $pb.GeneratedMessage {
   factory EncryptionConfiguration.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptionConfiguration', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.v2'), createEmptyInstance: create)
-    ..aOM<$1780.StringValue>(1, _omitFieldNames ? '' : 'kmsKeyName', subBuilder: $1780.StringValue.create)
+    ..aOM<$1781.StringValue>(1, _omitFieldNames ? '' : 'kmsKeyName', subBuilder: $1781.StringValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -60,15 +60,15 @@ class EncryptionConfiguration extends $pb.GeneratedMessage {
   /// protect destination BigQuery table. The BigQuery Service Account associated
   /// with your project requires access to this encryption key.
   @$pb.TagNumber(1)
-  $1780.StringValue get kmsKeyName => $_getN(0);
+  $1781.StringValue get kmsKeyName => $_getN(0);
   @$pb.TagNumber(1)
-  set kmsKeyName($1780.StringValue v) { setField(1, v); }
+  set kmsKeyName($1781.StringValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasKmsKeyName() => $_has(0);
   @$pb.TagNumber(1)
   void clearKmsKeyName() => clearField(1);
   @$pb.TagNumber(1)
-  $1780.StringValue ensureKmsKeyName() => $_ensure(0);
+  $1781.StringValue ensureKmsKeyName() => $_ensure(0);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../enums/asset_link_status.pbenum.dart' as $4023;
+import '../enums/asset_link_status.pbenum.dart' as $4024;
 
 /// A link between an ad group and an asset.
 class AdGroupAsset extends $pb.GeneratedMessage {
@@ -21,7 +21,7 @@ class AdGroupAsset extends $pb.GeneratedMessage {
     $core.String? resourceName,
     $core.String? adGroup,
     $core.String? asset,
-    $4023.AssetLinkStatusEnum_AssetLinkStatus? status,
+    $4024.AssetLinkStatusEnum_AssetLinkStatus? status,
   }) {
     final $result = create();
     if (resourceName != null) {
@@ -46,7 +46,7 @@ class AdGroupAsset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'resourceName')
     ..aOS(2, _omitFieldNames ? '' : 'adGroup')
     ..aOS(3, _omitFieldNames ? '' : 'asset')
-    ..e<$4023.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4023.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4023.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4023.AssetLinkStatusEnum_AssetLinkStatus.values)
+    ..e<$4024.AssetLinkStatusEnum_AssetLinkStatus>(5, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: $4024.AssetLinkStatusEnum_AssetLinkStatus.UNSPECIFIED, valueOf: $4024.AssetLinkStatusEnum_AssetLinkStatus.valueOf, enumValues: $4024.AssetLinkStatusEnum_AssetLinkStatus.values)
     ..hasRequiredFields = false
   ;
 
@@ -106,9 +106,9 @@ class AdGroupAsset extends $pb.GeneratedMessage {
 
   /// Status of the ad group asset.
   @$pb.TagNumber(5)
-  $4023.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(3);
+  $4024.AssetLinkStatusEnum_AssetLinkStatus get status => $_getN(3);
   @$pb.TagNumber(5)
-  set status($4023.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
+  set status($4024.AssetLinkStatusEnum_AssetLinkStatus v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(5)

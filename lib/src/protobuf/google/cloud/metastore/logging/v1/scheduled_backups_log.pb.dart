@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 import 'scheduled_backups_log.pbenum.dart';
 
 export 'scheduled_backups_log.pbenum.dart';
@@ -24,8 +24,8 @@ class ScheduledBackupLogEntry extends $pb.GeneratedMessage {
   factory ScheduledBackupLogEntry({
     $core.String? backupId,
     $core.String? service,
-    $1775.Timestamp? startTime,
-    $1775.Timestamp? endTime,
+    $1776.Timestamp? startTime,
+    $1776.Timestamp? endTime,
     ScheduledBackupLogEntry_State? state,
     $fixnum.Int64? backupSizeBytes,
     $core.String? backupLocation,
@@ -65,8 +65,8 @@ class ScheduledBackupLogEntry extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ScheduledBackupLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.metastore.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'backupId')
     ..aOS(2, _omitFieldNames ? '' : 'service')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
     ..e<ScheduledBackupLogEntry_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ScheduledBackupLogEntry_State.STATE_UNSPECIFIED, valueOf: ScheduledBackupLogEntry_State.valueOf, enumValues: ScheduledBackupLogEntry_State.values)
     ..aInt64(6, _omitFieldNames ? '' : 'backupSizeBytes')
     ..aOS(7, _omitFieldNames ? '' : 'backupLocation')
@@ -118,27 +118,27 @@ class ScheduledBackupLogEntry extends $pb.GeneratedMessage {
 
   /// Timestamp when the backup was started.
   @$pb.TagNumber(3)
-  $1775.Timestamp get startTime => $_getN(2);
+  $1776.Timestamp get startTime => $_getN(2);
   @$pb.TagNumber(3)
-  set startTime($1775.Timestamp v) { setField(3, v); }
+  set startTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureStartTime() => $_ensure(2);
+  $1776.Timestamp ensureStartTime() => $_ensure(2);
 
   /// Timestamp when the backup was completed.
   @$pb.TagNumber(4)
-  $1775.Timestamp get endTime => $_getN(3);
+  $1776.Timestamp get endTime => $_getN(3);
   @$pb.TagNumber(4)
-  set endTime($1775.Timestamp v) { setField(4, v); }
+  set endTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureEndTime() => $_ensure(3);
+  $1776.Timestamp ensureEndTime() => $_ensure(3);
 
   /// Output only. The current state of the backup.
   @$pb.TagNumber(5)

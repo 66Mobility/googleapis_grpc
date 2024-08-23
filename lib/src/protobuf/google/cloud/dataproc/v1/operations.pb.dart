@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'operations.pbenum.dart';
 
 export 'operations.pbenum.dart';
@@ -23,8 +23,8 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
   factory BatchOperationMetadata({
     $core.String? batch,
     $core.String? batchUuid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? doneTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? doneTime,
     BatchOperationMetadata_BatchOperationType? operationType,
     $core.String? description,
     $core.Map<$core.String, $core.String>? labels,
@@ -64,8 +64,8 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'batch')
     ..aOS(2, _omitFieldNames ? '' : 'batchUuid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'doneTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'doneTime', subBuilder: $1776.Timestamp.create)
     ..e<BatchOperationMetadata_BatchOperationType>(6, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: BatchOperationMetadata_BatchOperationType.BATCH_OPERATION_TYPE_UNSPECIFIED, valueOf: BatchOperationMetadata_BatchOperationType.valueOf, enumValues: BatchOperationMetadata_BatchOperationType.values)
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'BatchOperationMetadata.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
@@ -116,27 +116,27 @@ class BatchOperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the operation was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The time when the operation finished.
   @$pb.TagNumber(4)
-  $1775.Timestamp get doneTime => $_getN(3);
+  $1776.Timestamp get doneTime => $_getN(3);
   @$pb.TagNumber(4)
-  set doneTime($1775.Timestamp v) { setField(4, v); }
+  set doneTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDoneTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDoneTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDoneTime() => $_ensure(3);
+  $1776.Timestamp ensureDoneTime() => $_ensure(3);
 
   /// The operation type.
   @$pb.TagNumber(6)
@@ -172,8 +172,8 @@ class SessionOperationMetadata extends $pb.GeneratedMessage {
   factory SessionOperationMetadata({
     $core.String? session,
     $core.String? sessionUuid,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? doneTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? doneTime,
     SessionOperationMetadata_SessionOperationType? operationType,
     $core.String? description,
     $core.Map<$core.String, $core.String>? labels,
@@ -213,8 +213,8 @@ class SessionOperationMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SessionOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.dataproc.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'session')
     ..aOS(2, _omitFieldNames ? '' : 'sessionUuid')
-    ..aOM<$1775.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'doneTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'doneTime', subBuilder: $1776.Timestamp.create)
     ..e<SessionOperationMetadata_SessionOperationType>(6, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: SessionOperationMetadata_SessionOperationType.SESSION_OPERATION_TYPE_UNSPECIFIED, valueOf: SessionOperationMetadata_SessionOperationType.valueOf, enumValues: SessionOperationMetadata_SessionOperationType.values)
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'labels', entryClassName: 'SessionOperationMetadata.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.dataproc.v1'))
@@ -265,27 +265,27 @@ class SessionOperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the operation was created.
   @$pb.TagNumber(3)
-  $1775.Timestamp get createTime => $_getN(2);
+  $1776.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1775.Timestamp v) { setField(3, v); }
+  set createTime($1776.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1775.Timestamp ensureCreateTime() => $_ensure(2);
+  $1776.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// The time when the operation was finished.
   @$pb.TagNumber(4)
-  $1775.Timestamp get doneTime => $_getN(3);
+  $1776.Timestamp get doneTime => $_getN(3);
   @$pb.TagNumber(4)
-  set doneTime($1775.Timestamp v) { setField(4, v); }
+  set doneTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDoneTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearDoneTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureDoneTime() => $_ensure(3);
+  $1776.Timestamp ensureDoneTime() => $_ensure(3);
 
   /// The operation type.
   @$pb.TagNumber(6)
@@ -322,7 +322,7 @@ class ClusterOperationStatus extends $pb.GeneratedMessage {
     ClusterOperationStatus_State? state,
     $core.String? innerState,
     $core.String? details,
-    $1775.Timestamp? stateStartTime,
+    $1776.Timestamp? stateStartTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -347,7 +347,7 @@ class ClusterOperationStatus extends $pb.GeneratedMessage {
     ..e<ClusterOperationStatus_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ClusterOperationStatus_State.UNKNOWN, valueOf: ClusterOperationStatus_State.valueOf, enumValues: ClusterOperationStatus_State.values)
     ..aOS(2, _omitFieldNames ? '' : 'innerState')
     ..aOS(3, _omitFieldNames ? '' : 'details')
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'stateStartTime', subBuilder: $1776.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -404,15 +404,15 @@ class ClusterOperationStatus extends $pb.GeneratedMessage {
 
   /// Output only. The time this state was entered.
   @$pb.TagNumber(4)
-  $1775.Timestamp get stateStartTime => $_getN(3);
+  $1776.Timestamp get stateStartTime => $_getN(3);
   @$pb.TagNumber(4)
-  set stateStartTime($1775.Timestamp v) { setField(4, v); }
+  set stateStartTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStateStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStateStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureStateStartTime() => $_ensure(3);
+  $1776.Timestamp ensureStateStartTime() => $_ensure(3);
 }
 
 /// Metadata describing the operation.

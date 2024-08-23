@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../../protobuf/timestamp.pb.dart' as $1776;
 
 /// Schema description of a metastore partition column.
 class FieldSchema extends $pb.GeneratedMessage {
@@ -276,7 +276,7 @@ class SerDeInfo extends $pb.GeneratedMessage {
 class MetastorePartition extends $pb.GeneratedMessage {
   factory MetastorePartition({
     $core.Iterable<$core.String>? values,
-    $1775.Timestamp? createTime,
+    $1776.Timestamp? createTime,
     StorageDescriptor? storageDescriptor,
     $core.Map<$core.String, $core.String>? parameters,
     $core.Iterable<FieldSchema>? fields,
@@ -305,7 +305,7 @@ class MetastorePartition extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetastorePartition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.bigquery.storage.v1alpha'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'values')
-    ..aOM<$1775.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
     ..aOM<StorageDescriptor>(3, _omitFieldNames ? '' : 'storageDescriptor', subBuilder: StorageDescriptor.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'parameters', entryClassName: 'MetastorePartition.ParametersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.bigquery.storage.v1alpha'))
     ..pc<FieldSchema>(5, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: FieldSchema.create)
@@ -341,15 +341,15 @@ class MetastorePartition extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the partition.
   @$pb.TagNumber(2)
-  $1775.Timestamp get createTime => $_getN(1);
+  $1776.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1775.Timestamp v) { setField(2, v); }
+  set createTime($1776.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1775.Timestamp ensureCreateTime() => $_ensure(1);
+  $1776.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Optional. Contains information about the physical storage of the data in
   /// the partition.

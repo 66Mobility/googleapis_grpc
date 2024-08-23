@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1775;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
 import 'feature.pbenum.dart';
-import 'feature_monitoring_stats.pb.dart' as $4282;
-import 'featurestore_monitoring.pb.dart' as $4299;
+import 'feature_monitoring_stats.pb.dart' as $4283;
+import 'featurestore_monitoring.pb.dart' as $4300;
 
 export 'feature.pbenum.dart';
 
@@ -30,7 +30,7 @@ export 'feature.pbenum.dart';
 class Feature_MonitoringStatsAnomaly extends $pb.GeneratedMessage {
   factory Feature_MonitoringStatsAnomaly({
     Feature_MonitoringStatsAnomaly_Objective? objective,
-    $4282.FeatureStatsAnomaly? featureStatsAnomaly,
+    $4283.FeatureStatsAnomaly? featureStatsAnomaly,
   }) {
     final $result = create();
     if (objective != null) {
@@ -47,7 +47,7 @@ class Feature_MonitoringStatsAnomaly extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Feature.MonitoringStatsAnomaly', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.aiplatform.v1beta1'), createEmptyInstance: create)
     ..e<Feature_MonitoringStatsAnomaly_Objective>(1, _omitFieldNames ? '' : 'objective', $pb.PbFieldType.OE, defaultOrMaker: Feature_MonitoringStatsAnomaly_Objective.OBJECTIVE_UNSPECIFIED, valueOf: Feature_MonitoringStatsAnomaly_Objective.valueOf, enumValues: Feature_MonitoringStatsAnomaly_Objective.values)
-    ..aOM<$4282.FeatureStatsAnomaly>(2, _omitFieldNames ? '' : 'featureStatsAnomaly', subBuilder: $4282.FeatureStatsAnomaly.create)
+    ..aOM<$4283.FeatureStatsAnomaly>(2, _omitFieldNames ? '' : 'featureStatsAnomaly', subBuilder: $4283.FeatureStatsAnomaly.create)
     ..hasRequiredFields = false
   ;
 
@@ -84,15 +84,15 @@ class Feature_MonitoringStatsAnomaly extends $pb.GeneratedMessage {
 
   /// Output only. The stats and anomalies generated at specific timestamp.
   @$pb.TagNumber(2)
-  $4282.FeatureStatsAnomaly get featureStatsAnomaly => $_getN(1);
+  $4283.FeatureStatsAnomaly get featureStatsAnomaly => $_getN(1);
   @$pb.TagNumber(2)
-  set featureStatsAnomaly($4282.FeatureStatsAnomaly v) { setField(2, v); }
+  set featureStatsAnomaly($4283.FeatureStatsAnomaly v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFeatureStatsAnomaly() => $_has(1);
   @$pb.TagNumber(2)
   void clearFeatureStatsAnomaly() => clearField(2);
   @$pb.TagNumber(2)
-  $4282.FeatureStatsAnomaly ensureFeatureStatsAnomaly() => $_ensure(1);
+  $4283.FeatureStatsAnomaly ensureFeatureStatsAnomaly() => $_ensure(1);
 }
 
 /// Feature Metadata information.
@@ -102,13 +102,13 @@ class Feature extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     Feature_ValueType? valueType,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? etag,
   @$core.Deprecated('This field is deprecated.')
-    $4299.FeaturestoreMonitoringConfig? monitoringConfig,
-    $core.Iterable<$4282.FeatureStatsAnomaly>? monitoringStats,
+    $4300.FeaturestoreMonitoringConfig? monitoringConfig,
+    $core.Iterable<$4283.FeatureStatsAnomaly>? monitoringStats,
     $core.Iterable<Feature_MonitoringStatsAnomaly>? monitoringStatsAnomalies,
     $core.bool? disableMonitoring,
     $core.String? versionColumnName,
@@ -165,12 +165,12 @@ class Feature extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..e<Feature_ValueType>(3, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: Feature_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: Feature_ValueType.valueOf, enumValues: Feature_ValueType.values)
-    ..aOM<$1775.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Feature.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1beta1'))
     ..aOS(7, _omitFieldNames ? '' : 'etag')
-    ..aOM<$4299.FeaturestoreMonitoringConfig>(9, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4299.FeaturestoreMonitoringConfig.create)
-    ..pc<$4282.FeatureStatsAnomaly>(10, _omitFieldNames ? '' : 'monitoringStats', $pb.PbFieldType.PM, subBuilder: $4282.FeatureStatsAnomaly.create)
+    ..aOM<$4300.FeaturestoreMonitoringConfig>(9, _omitFieldNames ? '' : 'monitoringConfig', subBuilder: $4300.FeaturestoreMonitoringConfig.create)
+    ..pc<$4283.FeatureStatsAnomaly>(10, _omitFieldNames ? '' : 'monitoringStats', $pb.PbFieldType.PM, subBuilder: $4283.FeatureStatsAnomaly.create)
     ..pc<Feature_MonitoringStatsAnomaly>(11, _omitFieldNames ? '' : 'monitoringStatsAnomalies', $pb.PbFieldType.PM, subBuilder: Feature_MonitoringStatsAnomaly.create)
     ..aOB(12, _omitFieldNames ? '' : 'disableMonitoring')
     ..aOS(106, _omitFieldNames ? '' : 'versionColumnName')
@@ -241,28 +241,28 @@ class Feature extends $pb.GeneratedMessage {
   /// Output only. Only applicable for Vertex AI Feature Store (Legacy).
   /// Timestamp when this EntityType was created.
   @$pb.TagNumber(4)
-  $1775.Timestamp get createTime => $_getN(3);
+  $1776.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1775.Timestamp v) { setField(4, v); }
+  set createTime($1776.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+  $1776.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Only applicable for Vertex AI Feature Store (Legacy).
   /// Timestamp when this EntityType was most recently updated.
   @$pb.TagNumber(5)
-  $1775.Timestamp get updateTime => $_getN(4);
+  $1776.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1775.Timestamp v) { setField(5, v); }
+  set updateTime($1776.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(4);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
 
   ///  Optional. The labels with user-defined metadata to organize your Features.
   ///
@@ -305,10 +305,10 @@ class Feature extends $pb.GeneratedMessage {
   ///  config is same as the EntityType's this Feature belongs to.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $4299.FeaturestoreMonitoringConfig get monitoringConfig => $_getN(7);
+  $4300.FeaturestoreMonitoringConfig get monitoringConfig => $_getN(7);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  set monitoringConfig($4299.FeaturestoreMonitoringConfig v) { setField(9, v); }
+  set monitoringConfig($4300.FeaturestoreMonitoringConfig v) { setField(9, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
   $core.bool hasMonitoringConfig() => $_has(7);
@@ -317,7 +317,7 @@ class Feature extends $pb.GeneratedMessage {
   void clearMonitoringConfig() => clearField(9);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $4299.FeaturestoreMonitoringConfig ensureMonitoringConfig() => $_ensure(7);
+  $4300.FeaturestoreMonitoringConfig ensureMonitoringConfig() => $_ensure(7);
 
   /// Output only. Only applicable for Vertex AI Feature Store (Legacy).
   /// A list of historical
@@ -326,7 +326,7 @@ class Feature extends $pb.GeneratedMessage {
   /// [FeatureStatsAnomaly.start_time][google.cloud.aiplatform.v1beta1.FeatureStatsAnomaly.start_time]
   /// descending.
   @$pb.TagNumber(10)
-  $core.List<$4282.FeatureStatsAnomaly> get monitoringStats => $_getList(8);
+  $core.List<$4283.FeatureStatsAnomaly> get monitoringStats => $_getList(8);
 
   /// Output only. Only applicable for Vertex AI Feature Store (Legacy).
   /// The list of historical stats and anomalies with specified objectives.

@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $1734;
-import '../../../protobuf/timestamp.pb.dart' as $1775;
-import '../../../rpc/status.pb.dart' as $1795;
-import '../../../type/money.pb.dart' as $1814;
+import '../../../protobuf/struct.pb.dart' as $1735;
+import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../rpc/status.pb.dart' as $1796;
+import '../../../type/money.pb.dart' as $1815;
 import 'data_labeling_job.pbenum.dart';
-import 'encryption_spec.pb.dart' as $4240;
-import 'job_state.pbenum.dart' as $4246;
+import 'encryption_spec.pb.dart' as $4241;
+import 'job_state.pbenum.dart' as $4247;
 
 export 'data_labeling_job.pbenum.dart';
 
@@ -34,18 +34,18 @@ class DataLabelingJob extends $pb.GeneratedMessage {
     $core.int? labelerCount,
     $core.String? instructionUri,
     $core.String? inputsSchemaUri,
-    $1734.Value? inputs,
-    $4246.JobState? state,
-    $1775.Timestamp? createTime,
-    $1775.Timestamp? updateTime,
+    $1735.Value? inputs,
+    $4247.JobState? state,
+    $1776.Timestamp? createTime,
+    $1776.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.Map<$core.String, $core.String>? annotationLabels,
     $core.int? labelingProgress,
-    $1814.Money? currentSpend,
+    $1815.Money? currentSpend,
     $core.Iterable<$core.String>? specialistPools,
-    $4240.EncryptionSpec? encryptionSpec,
+    $4241.EncryptionSpec? encryptionSpec,
     ActiveLearningConfig? activeLearningConfig,
-    $1795.Status? error,
+    $1796.Status? error,
   }) {
     final $result = create();
     if (name != null) {
@@ -115,18 +115,18 @@ class DataLabelingJob extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'labelerCount', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'instructionUri')
     ..aOS(6, _omitFieldNames ? '' : 'inputsSchemaUri')
-    ..aOM<$1734.Value>(7, _omitFieldNames ? '' : 'inputs', subBuilder: $1734.Value.create)
-    ..e<$4246.JobState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4246.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4246.JobState.valueOf, enumValues: $4246.JobState.values)
-    ..aOM<$1775.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
-    ..aOM<$1775.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1775.Timestamp.create)
+    ..aOM<$1735.Value>(7, _omitFieldNames ? '' : 'inputs', subBuilder: $1735.Value.create)
+    ..e<$4247.JobState>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: $4247.JobState.JOB_STATE_UNSPECIFIED, valueOf: $4247.JobState.valueOf, enumValues: $4247.JobState.values)
+    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'DataLabelingJob.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'annotationLabels', entryClassName: 'DataLabelingJob.AnnotationLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.cloud.aiplatform.v1'))
     ..a<$core.int>(13, _omitFieldNames ? '' : 'labelingProgress', $pb.PbFieldType.O3)
-    ..aOM<$1814.Money>(14, _omitFieldNames ? '' : 'currentSpend', subBuilder: $1814.Money.create)
+    ..aOM<$1815.Money>(14, _omitFieldNames ? '' : 'currentSpend', subBuilder: $1815.Money.create)
     ..pPS(16, _omitFieldNames ? '' : 'specialistPools')
-    ..aOM<$4240.EncryptionSpec>(20, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4240.EncryptionSpec.create)
+    ..aOM<$4241.EncryptionSpec>(20, _omitFieldNames ? '' : 'encryptionSpec', subBuilder: $4241.EncryptionSpec.create)
     ..aOM<ActiveLearningConfig>(21, _omitFieldNames ? '' : 'activeLearningConfig', subBuilder: ActiveLearningConfig.create)
-    ..aOM<$1795.Status>(22, _omitFieldNames ? '' : 'error', subBuilder: $1795.Status.create)
+    ..aOM<$1796.Status>(22, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -218,21 +218,21 @@ class DataLabelingJob extends $pb.GeneratedMessage {
 
   /// Required. Input config parameters for the DataLabelingJob.
   @$pb.TagNumber(7)
-  $1734.Value get inputs => $_getN(6);
+  $1735.Value get inputs => $_getN(6);
   @$pb.TagNumber(7)
-  set inputs($1734.Value v) { setField(7, v); }
+  set inputs($1735.Value v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInputs() => $_has(6);
   @$pb.TagNumber(7)
   void clearInputs() => clearField(7);
   @$pb.TagNumber(7)
-  $1734.Value ensureInputs() => $_ensure(6);
+  $1735.Value ensureInputs() => $_ensure(6);
 
   /// Output only. The detailed state of the job.
   @$pb.TagNumber(8)
-  $4246.JobState get state => $_getN(7);
+  $4247.JobState get state => $_getN(7);
   @$pb.TagNumber(8)
-  set state($4246.JobState v) { setField(8, v); }
+  set state($4247.JobState v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(7);
   @$pb.TagNumber(8)
@@ -240,27 +240,27 @@ class DataLabelingJob extends $pb.GeneratedMessage {
 
   /// Output only. Timestamp when this DataLabelingJob was created.
   @$pb.TagNumber(9)
-  $1775.Timestamp get createTime => $_getN(8);
+  $1776.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(9)
-  set createTime($1775.Timestamp v) { setField(9, v); }
+  set createTime($1776.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearCreateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1775.Timestamp ensureCreateTime() => $_ensure(8);
+  $1776.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. Timestamp when this DataLabelingJob was updated most recently.
   @$pb.TagNumber(10)
-  $1775.Timestamp get updateTime => $_getN(9);
+  $1776.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set updateTime($1775.Timestamp v) { setField(10, v); }
+  set updateTime($1776.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearUpdateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1775.Timestamp ensureUpdateTime() => $_ensure(9);
+  $1776.Timestamp ensureUpdateTime() => $_ensure(9);
 
   ///  The labels with user-defined metadata to organize your DataLabelingJobs.
   ///
@@ -303,15 +303,15 @@ class DataLabelingJob extends $pb.GeneratedMessage {
   /// Output only. Estimated cost(in US dollars) that the DataLabelingJob has
   /// incurred to date.
   @$pb.TagNumber(14)
-  $1814.Money get currentSpend => $_getN(13);
+  $1815.Money get currentSpend => $_getN(13);
   @$pb.TagNumber(14)
-  set currentSpend($1814.Money v) { setField(14, v); }
+  set currentSpend($1815.Money v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasCurrentSpend() => $_has(13);
   @$pb.TagNumber(14)
   void clearCurrentSpend() => clearField(14);
   @$pb.TagNumber(14)
-  $1814.Money ensureCurrentSpend() => $_ensure(13);
+  $1815.Money ensureCurrentSpend() => $_ensure(13);
 
   /// The SpecialistPools' resource names associated with this job.
   @$pb.TagNumber(16)
@@ -323,15 +323,15 @@ class DataLabelingJob extends $pb.GeneratedMessage {
   ///  Note: Annotations created in the DataLabelingJob are associated with
   ///  the EncryptionSpec of the Dataset they are exported to.
   @$pb.TagNumber(20)
-  $4240.EncryptionSpec get encryptionSpec => $_getN(15);
+  $4241.EncryptionSpec get encryptionSpec => $_getN(15);
   @$pb.TagNumber(20)
-  set encryptionSpec($4240.EncryptionSpec v) { setField(20, v); }
+  set encryptionSpec($4241.EncryptionSpec v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasEncryptionSpec() => $_has(15);
   @$pb.TagNumber(20)
   void clearEncryptionSpec() => clearField(20);
   @$pb.TagNumber(20)
-  $4240.EncryptionSpec ensureEncryptionSpec() => $_ensure(15);
+  $4241.EncryptionSpec ensureEncryptionSpec() => $_ensure(15);
 
   /// Parameters that configure the active learning pipeline. Active learning
   /// will label the data incrementally via several iterations. For every
@@ -350,15 +350,15 @@ class DataLabelingJob extends $pb.GeneratedMessage {
   /// Output only. DataLabelingJob errors. It is only populated when job's state
   /// is `JOB_STATE_FAILED` or `JOB_STATE_CANCELLED`.
   @$pb.TagNumber(22)
-  $1795.Status get error => $_getN(17);
+  $1796.Status get error => $_getN(17);
   @$pb.TagNumber(22)
-  set error($1795.Status v) { setField(22, v); }
+  set error($1796.Status v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasError() => $_has(17);
   @$pb.TagNumber(22)
   void clearError() => clearField(22);
   @$pb.TagNumber(22)
-  $1795.Status ensureError() => $_ensure(17);
+  $1796.Status ensureError() => $_ensure(17);
 }
 
 enum ActiveLearningConfig_HumanLabelingBudget {
