@@ -16,56 +16,56 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'alertcenter.pb.dart' as $440;
+import 'alertcenter.pb.dart' as $64;
 
 export 'alertcenter.pb.dart';
 
 @$pb.GrpcServiceName('google.apps.alertcenter.v1beta1.AlertCenterService')
 class AlertCenterServiceClient extends $grpc.Client {
-  static final _$listAlerts = $grpc.ClientMethod<$440.ListAlertsRequest, $440.ListAlertsResponse>(
+  static final _$listAlerts = $grpc.ClientMethod<$64.ListAlertsRequest, $64.ListAlertsResponse>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/ListAlerts',
-      ($440.ListAlertsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.ListAlertsResponse.fromBuffer(value));
-  static final _$getAlert = $grpc.ClientMethod<$440.GetAlertRequest, $440.Alert>(
+      ($64.ListAlertsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.ListAlertsResponse.fromBuffer(value));
+  static final _$getAlert = $grpc.ClientMethod<$64.GetAlertRequest, $64.Alert>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/GetAlert',
-      ($440.GetAlertRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.Alert.fromBuffer(value));
-  static final _$deleteAlert = $grpc.ClientMethod<$440.DeleteAlertRequest, $3.Empty>(
+      ($64.GetAlertRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.Alert.fromBuffer(value));
+  static final _$deleteAlert = $grpc.ClientMethod<$64.DeleteAlertRequest, $3.Empty>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/DeleteAlert',
-      ($440.DeleteAlertRequest value) => value.writeToBuffer(),
+      ($64.DeleteAlertRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$undeleteAlert = $grpc.ClientMethod<$440.UndeleteAlertRequest, $440.Alert>(
+  static final _$undeleteAlert = $grpc.ClientMethod<$64.UndeleteAlertRequest, $64.Alert>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/UndeleteAlert',
-      ($440.UndeleteAlertRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.Alert.fromBuffer(value));
-  static final _$createAlertFeedback = $grpc.ClientMethod<$440.CreateAlertFeedbackRequest, $440.AlertFeedback>(
+      ($64.UndeleteAlertRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.Alert.fromBuffer(value));
+  static final _$createAlertFeedback = $grpc.ClientMethod<$64.CreateAlertFeedbackRequest, $64.AlertFeedback>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/CreateAlertFeedback',
-      ($440.CreateAlertFeedbackRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.AlertFeedback.fromBuffer(value));
-  static final _$listAlertFeedback = $grpc.ClientMethod<$440.ListAlertFeedbackRequest, $440.ListAlertFeedbackResponse>(
+      ($64.CreateAlertFeedbackRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.AlertFeedback.fromBuffer(value));
+  static final _$listAlertFeedback = $grpc.ClientMethod<$64.ListAlertFeedbackRequest, $64.ListAlertFeedbackResponse>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/ListAlertFeedback',
-      ($440.ListAlertFeedbackRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.ListAlertFeedbackResponse.fromBuffer(value));
-  static final _$getAlertMetadata = $grpc.ClientMethod<$440.GetAlertMetadataRequest, $440.AlertMetadata>(
+      ($64.ListAlertFeedbackRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.ListAlertFeedbackResponse.fromBuffer(value));
+  static final _$getAlertMetadata = $grpc.ClientMethod<$64.GetAlertMetadataRequest, $64.AlertMetadata>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/GetAlertMetadata',
-      ($440.GetAlertMetadataRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.AlertMetadata.fromBuffer(value));
-  static final _$getSettings = $grpc.ClientMethod<$440.GetSettingsRequest, $440.Settings>(
+      ($64.GetAlertMetadataRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.AlertMetadata.fromBuffer(value));
+  static final _$getSettings = $grpc.ClientMethod<$64.GetSettingsRequest, $64.Settings>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/GetSettings',
-      ($440.GetSettingsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.Settings.fromBuffer(value));
-  static final _$updateSettings = $grpc.ClientMethod<$440.UpdateSettingsRequest, $440.Settings>(
+      ($64.GetSettingsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.Settings.fromBuffer(value));
+  static final _$updateSettings = $grpc.ClientMethod<$64.UpdateSettingsRequest, $64.Settings>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/UpdateSettings',
-      ($440.UpdateSettingsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.Settings.fromBuffer(value));
-  static final _$batchDeleteAlerts = $grpc.ClientMethod<$440.BatchDeleteAlertsRequest, $440.BatchDeleteAlertsResponse>(
+      ($64.UpdateSettingsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.Settings.fromBuffer(value));
+  static final _$batchDeleteAlerts = $grpc.ClientMethod<$64.BatchDeleteAlertsRequest, $64.BatchDeleteAlertsResponse>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/BatchDeleteAlerts',
-      ($440.BatchDeleteAlertsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.BatchDeleteAlertsResponse.fromBuffer(value));
-  static final _$batchUndeleteAlerts = $grpc.ClientMethod<$440.BatchUndeleteAlertsRequest, $440.BatchUndeleteAlertsResponse>(
+      ($64.BatchDeleteAlertsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.BatchDeleteAlertsResponse.fromBuffer(value));
+  static final _$batchUndeleteAlerts = $grpc.ClientMethod<$64.BatchUndeleteAlertsRequest, $64.BatchUndeleteAlertsResponse>(
       '/google.apps.alertcenter.v1beta1.AlertCenterService/BatchUndeleteAlerts',
-      ($440.BatchUndeleteAlertsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $440.BatchUndeleteAlertsResponse.fromBuffer(value));
+      ($64.BatchUndeleteAlertsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $64.BatchUndeleteAlertsResponse.fromBuffer(value));
 
   AlertCenterServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -73,47 +73,47 @@ class AlertCenterServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$440.ListAlertsResponse> listAlerts($440.ListAlertsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.ListAlertsResponse> listAlerts($64.ListAlertsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listAlerts, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.Alert> getAlert($440.GetAlertRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.Alert> getAlert($64.GetAlertRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getAlert, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteAlert($440.DeleteAlertRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteAlert($64.DeleteAlertRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteAlert, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.Alert> undeleteAlert($440.UndeleteAlertRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.Alert> undeleteAlert($64.UndeleteAlertRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$undeleteAlert, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.AlertFeedback> createAlertFeedback($440.CreateAlertFeedbackRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.AlertFeedback> createAlertFeedback($64.CreateAlertFeedbackRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createAlertFeedback, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.ListAlertFeedbackResponse> listAlertFeedback($440.ListAlertFeedbackRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.ListAlertFeedbackResponse> listAlertFeedback($64.ListAlertFeedbackRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listAlertFeedback, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.AlertMetadata> getAlertMetadata($440.GetAlertMetadataRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.AlertMetadata> getAlertMetadata($64.GetAlertMetadataRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getAlertMetadata, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.Settings> getSettings($440.GetSettingsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.Settings> getSettings($64.GetSettingsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSettings, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.Settings> updateSettings($440.UpdateSettingsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.Settings> updateSettings($64.UpdateSettingsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateSettings, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.BatchDeleteAlertsResponse> batchDeleteAlerts($440.BatchDeleteAlertsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.BatchDeleteAlertsResponse> batchDeleteAlerts($64.BatchDeleteAlertsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchDeleteAlerts, request, options: options);
   }
 
-  $grpc.ResponseFuture<$440.BatchUndeleteAlertsResponse> batchUndeleteAlerts($440.BatchUndeleteAlertsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.BatchUndeleteAlertsResponse> batchUndeleteAlerts($64.BatchUndeleteAlertsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchUndeleteAlerts, request, options: options);
   }
 }
@@ -123,138 +123,138 @@ abstract class AlertCenterServiceBase extends $grpc.Service {
   $core.String get $name => 'google.apps.alertcenter.v1beta1.AlertCenterService';
 
   AlertCenterServiceBase() {
-    $addMethod($grpc.ServiceMethod<$440.ListAlertsRequest, $440.ListAlertsResponse>(
+    $addMethod($grpc.ServiceMethod<$64.ListAlertsRequest, $64.ListAlertsResponse>(
         'ListAlerts',
         listAlerts_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.ListAlertsRequest.fromBuffer(value),
-        ($440.ListAlertsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.GetAlertRequest, $440.Alert>(
+        ($core.List<$core.int> value) => $64.ListAlertsRequest.fromBuffer(value),
+        ($64.ListAlertsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.GetAlertRequest, $64.Alert>(
         'GetAlert',
         getAlert_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.GetAlertRequest.fromBuffer(value),
-        ($440.Alert value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.DeleteAlertRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $64.GetAlertRequest.fromBuffer(value),
+        ($64.Alert value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.DeleteAlertRequest, $3.Empty>(
         'DeleteAlert',
         deleteAlert_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.DeleteAlertRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $64.DeleteAlertRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.UndeleteAlertRequest, $440.Alert>(
+    $addMethod($grpc.ServiceMethod<$64.UndeleteAlertRequest, $64.Alert>(
         'UndeleteAlert',
         undeleteAlert_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.UndeleteAlertRequest.fromBuffer(value),
-        ($440.Alert value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.CreateAlertFeedbackRequest, $440.AlertFeedback>(
+        ($core.List<$core.int> value) => $64.UndeleteAlertRequest.fromBuffer(value),
+        ($64.Alert value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.CreateAlertFeedbackRequest, $64.AlertFeedback>(
         'CreateAlertFeedback',
         createAlertFeedback_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.CreateAlertFeedbackRequest.fromBuffer(value),
-        ($440.AlertFeedback value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.ListAlertFeedbackRequest, $440.ListAlertFeedbackResponse>(
+        ($core.List<$core.int> value) => $64.CreateAlertFeedbackRequest.fromBuffer(value),
+        ($64.AlertFeedback value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.ListAlertFeedbackRequest, $64.ListAlertFeedbackResponse>(
         'ListAlertFeedback',
         listAlertFeedback_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.ListAlertFeedbackRequest.fromBuffer(value),
-        ($440.ListAlertFeedbackResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.GetAlertMetadataRequest, $440.AlertMetadata>(
+        ($core.List<$core.int> value) => $64.ListAlertFeedbackRequest.fromBuffer(value),
+        ($64.ListAlertFeedbackResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.GetAlertMetadataRequest, $64.AlertMetadata>(
         'GetAlertMetadata',
         getAlertMetadata_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.GetAlertMetadataRequest.fromBuffer(value),
-        ($440.AlertMetadata value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.GetSettingsRequest, $440.Settings>(
+        ($core.List<$core.int> value) => $64.GetAlertMetadataRequest.fromBuffer(value),
+        ($64.AlertMetadata value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.GetSettingsRequest, $64.Settings>(
         'GetSettings',
         getSettings_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.GetSettingsRequest.fromBuffer(value),
-        ($440.Settings value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.UpdateSettingsRequest, $440.Settings>(
+        ($core.List<$core.int> value) => $64.GetSettingsRequest.fromBuffer(value),
+        ($64.Settings value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.UpdateSettingsRequest, $64.Settings>(
         'UpdateSettings',
         updateSettings_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.UpdateSettingsRequest.fromBuffer(value),
-        ($440.Settings value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.BatchDeleteAlertsRequest, $440.BatchDeleteAlertsResponse>(
+        ($core.List<$core.int> value) => $64.UpdateSettingsRequest.fromBuffer(value),
+        ($64.Settings value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.BatchDeleteAlertsRequest, $64.BatchDeleteAlertsResponse>(
         'BatchDeleteAlerts',
         batchDeleteAlerts_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.BatchDeleteAlertsRequest.fromBuffer(value),
-        ($440.BatchDeleteAlertsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$440.BatchUndeleteAlertsRequest, $440.BatchUndeleteAlertsResponse>(
+        ($core.List<$core.int> value) => $64.BatchDeleteAlertsRequest.fromBuffer(value),
+        ($64.BatchDeleteAlertsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$64.BatchUndeleteAlertsRequest, $64.BatchUndeleteAlertsResponse>(
         'BatchUndeleteAlerts',
         batchUndeleteAlerts_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $440.BatchUndeleteAlertsRequest.fromBuffer(value),
-        ($440.BatchUndeleteAlertsResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $64.BatchUndeleteAlertsRequest.fromBuffer(value),
+        ($64.BatchUndeleteAlertsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$440.ListAlertsResponse> listAlerts_Pre($grpc.ServiceCall call, $async.Future<$440.ListAlertsRequest> request) async {
+  $async.Future<$64.ListAlertsResponse> listAlerts_Pre($grpc.ServiceCall call, $async.Future<$64.ListAlertsRequest> request) async {
     return listAlerts(call, await request);
   }
 
-  $async.Future<$440.Alert> getAlert_Pre($grpc.ServiceCall call, $async.Future<$440.GetAlertRequest> request) async {
+  $async.Future<$64.Alert> getAlert_Pre($grpc.ServiceCall call, $async.Future<$64.GetAlertRequest> request) async {
     return getAlert(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteAlert_Pre($grpc.ServiceCall call, $async.Future<$440.DeleteAlertRequest> request) async {
+  $async.Future<$3.Empty> deleteAlert_Pre($grpc.ServiceCall call, $async.Future<$64.DeleteAlertRequest> request) async {
     return deleteAlert(call, await request);
   }
 
-  $async.Future<$440.Alert> undeleteAlert_Pre($grpc.ServiceCall call, $async.Future<$440.UndeleteAlertRequest> request) async {
+  $async.Future<$64.Alert> undeleteAlert_Pre($grpc.ServiceCall call, $async.Future<$64.UndeleteAlertRequest> request) async {
     return undeleteAlert(call, await request);
   }
 
-  $async.Future<$440.AlertFeedback> createAlertFeedback_Pre($grpc.ServiceCall call, $async.Future<$440.CreateAlertFeedbackRequest> request) async {
+  $async.Future<$64.AlertFeedback> createAlertFeedback_Pre($grpc.ServiceCall call, $async.Future<$64.CreateAlertFeedbackRequest> request) async {
     return createAlertFeedback(call, await request);
   }
 
-  $async.Future<$440.ListAlertFeedbackResponse> listAlertFeedback_Pre($grpc.ServiceCall call, $async.Future<$440.ListAlertFeedbackRequest> request) async {
+  $async.Future<$64.ListAlertFeedbackResponse> listAlertFeedback_Pre($grpc.ServiceCall call, $async.Future<$64.ListAlertFeedbackRequest> request) async {
     return listAlertFeedback(call, await request);
   }
 
-  $async.Future<$440.AlertMetadata> getAlertMetadata_Pre($grpc.ServiceCall call, $async.Future<$440.GetAlertMetadataRequest> request) async {
+  $async.Future<$64.AlertMetadata> getAlertMetadata_Pre($grpc.ServiceCall call, $async.Future<$64.GetAlertMetadataRequest> request) async {
     return getAlertMetadata(call, await request);
   }
 
-  $async.Future<$440.Settings> getSettings_Pre($grpc.ServiceCall call, $async.Future<$440.GetSettingsRequest> request) async {
+  $async.Future<$64.Settings> getSettings_Pre($grpc.ServiceCall call, $async.Future<$64.GetSettingsRequest> request) async {
     return getSettings(call, await request);
   }
 
-  $async.Future<$440.Settings> updateSettings_Pre($grpc.ServiceCall call, $async.Future<$440.UpdateSettingsRequest> request) async {
+  $async.Future<$64.Settings> updateSettings_Pre($grpc.ServiceCall call, $async.Future<$64.UpdateSettingsRequest> request) async {
     return updateSettings(call, await request);
   }
 
-  $async.Future<$440.BatchDeleteAlertsResponse> batchDeleteAlerts_Pre($grpc.ServiceCall call, $async.Future<$440.BatchDeleteAlertsRequest> request) async {
+  $async.Future<$64.BatchDeleteAlertsResponse> batchDeleteAlerts_Pre($grpc.ServiceCall call, $async.Future<$64.BatchDeleteAlertsRequest> request) async {
     return batchDeleteAlerts(call, await request);
   }
 
-  $async.Future<$440.BatchUndeleteAlertsResponse> batchUndeleteAlerts_Pre($grpc.ServiceCall call, $async.Future<$440.BatchUndeleteAlertsRequest> request) async {
+  $async.Future<$64.BatchUndeleteAlertsResponse> batchUndeleteAlerts_Pre($grpc.ServiceCall call, $async.Future<$64.BatchUndeleteAlertsRequest> request) async {
     return batchUndeleteAlerts(call, await request);
   }
 
-  $async.Future<$440.ListAlertsResponse> listAlerts($grpc.ServiceCall call, $440.ListAlertsRequest request);
-  $async.Future<$440.Alert> getAlert($grpc.ServiceCall call, $440.GetAlertRequest request);
-  $async.Future<$3.Empty> deleteAlert($grpc.ServiceCall call, $440.DeleteAlertRequest request);
-  $async.Future<$440.Alert> undeleteAlert($grpc.ServiceCall call, $440.UndeleteAlertRequest request);
-  $async.Future<$440.AlertFeedback> createAlertFeedback($grpc.ServiceCall call, $440.CreateAlertFeedbackRequest request);
-  $async.Future<$440.ListAlertFeedbackResponse> listAlertFeedback($grpc.ServiceCall call, $440.ListAlertFeedbackRequest request);
-  $async.Future<$440.AlertMetadata> getAlertMetadata($grpc.ServiceCall call, $440.GetAlertMetadataRequest request);
-  $async.Future<$440.Settings> getSettings($grpc.ServiceCall call, $440.GetSettingsRequest request);
-  $async.Future<$440.Settings> updateSettings($grpc.ServiceCall call, $440.UpdateSettingsRequest request);
-  $async.Future<$440.BatchDeleteAlertsResponse> batchDeleteAlerts($grpc.ServiceCall call, $440.BatchDeleteAlertsRequest request);
-  $async.Future<$440.BatchUndeleteAlertsResponse> batchUndeleteAlerts($grpc.ServiceCall call, $440.BatchUndeleteAlertsRequest request);
+  $async.Future<$64.ListAlertsResponse> listAlerts($grpc.ServiceCall call, $64.ListAlertsRequest request);
+  $async.Future<$64.Alert> getAlert($grpc.ServiceCall call, $64.GetAlertRequest request);
+  $async.Future<$3.Empty> deleteAlert($grpc.ServiceCall call, $64.DeleteAlertRequest request);
+  $async.Future<$64.Alert> undeleteAlert($grpc.ServiceCall call, $64.UndeleteAlertRequest request);
+  $async.Future<$64.AlertFeedback> createAlertFeedback($grpc.ServiceCall call, $64.CreateAlertFeedbackRequest request);
+  $async.Future<$64.ListAlertFeedbackResponse> listAlertFeedback($grpc.ServiceCall call, $64.ListAlertFeedbackRequest request);
+  $async.Future<$64.AlertMetadata> getAlertMetadata($grpc.ServiceCall call, $64.GetAlertMetadataRequest request);
+  $async.Future<$64.Settings> getSettings($grpc.ServiceCall call, $64.GetSettingsRequest request);
+  $async.Future<$64.Settings> updateSettings($grpc.ServiceCall call, $64.UpdateSettingsRequest request);
+  $async.Future<$64.BatchDeleteAlertsResponse> batchDeleteAlerts($grpc.ServiceCall call, $64.BatchDeleteAlertsRequest request);
+  $async.Future<$64.BatchUndeleteAlertsResponse> batchUndeleteAlerts($grpc.ServiceCall call, $64.BatchUndeleteAlertsRequest request);
 }

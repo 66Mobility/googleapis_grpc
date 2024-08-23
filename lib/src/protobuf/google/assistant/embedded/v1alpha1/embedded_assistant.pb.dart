@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1796;
+import '../../../rpc/status.pb.dart' as $319;
 import 'embedded_assistant.pbenum.dart';
 
 export 'embedded_assistant.pbenum.dart';
@@ -612,7 +612,7 @@ enum ConverseResponse_ConverseResponse {
 /// `ConverseResponse` messages are streamed back to the client.
 class ConverseResponse extends $pb.GeneratedMessage {
   factory ConverseResponse({
-    $1796.Status? error,
+    $319.Status? error,
     ConverseResponse_EventType? eventType,
     AudioOut? audioOut,
     ConverseResult? result,
@@ -645,7 +645,7 @@ class ConverseResponse extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConverseResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 5])
-    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $1796.Status.create)
+    ..aOM<$319.Status>(1, _omitFieldNames ? '' : 'error', subBuilder: $319.Status.create)
     ..e<ConverseResponse_EventType>(2, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: ConverseResponse_EventType.EVENT_TYPE_UNSPECIFIED, valueOf: ConverseResponse_EventType.valueOf, enumValues: ConverseResponse_EventType.values)
     ..aOM<AudioOut>(3, _omitFieldNames ? '' : 'audioOut', subBuilder: AudioOut.create)
     ..aOM<ConverseResult>(5, _omitFieldNames ? '' : 'result', subBuilder: ConverseResult.create)
@@ -681,15 +681,15 @@ class ConverseResponse extends $pb.GeneratedMessage {
   /// during processing, this message will be set and there will be no further
   /// messages sent.
   @$pb.TagNumber(1)
-  $1796.Status get error => $_getN(0);
+  $319.Status get error => $_getN(0);
   @$pb.TagNumber(1)
-  set error($1796.Status v) { setField(1, v); }
+  set error($319.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => clearField(1);
   @$pb.TagNumber(1)
-  $1796.Status ensureError() => $_ensure(0);
+  $319.Status ensureError() => $_ensure(0);
 
   /// *Output-only* Indicates the type of event.
   @$pb.TagNumber(2)

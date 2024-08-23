@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../policy.pb.dart' as $463;
+import '../policy.pb.dart' as $87;
 
 /// Audit log information specific to Cloud IAM. This message is serialized
 /// as an `Any` type in the `ServiceData` message of an
 /// `AuditLog` message.
 class AuditData extends $pb.GeneratedMessage {
   factory AuditData({
-    $463.PolicyDelta? policyDelta,
+    $87.PolicyDelta? policyDelta,
   }) {
     final $result = create();
     if (policyDelta != null) {
@@ -33,7 +33,7 @@ class AuditData extends $pb.GeneratedMessage {
   factory AuditData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuditData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1.logging'), createEmptyInstance: create)
-    ..aOM<$463.PolicyDelta>(2, _omitFieldNames ? '' : 'policyDelta', subBuilder: $463.PolicyDelta.create)
+    ..aOM<$87.PolicyDelta>(2, _omitFieldNames ? '' : 'policyDelta', subBuilder: $87.PolicyDelta.create)
     ..hasRequiredFields = false
   ;
 
@@ -60,15 +60,15 @@ class AuditData extends $pb.GeneratedMessage {
 
   /// Policy delta between the original policy and the newly set policy.
   @$pb.TagNumber(2)
-  $463.PolicyDelta get policyDelta => $_getN(0);
+  $87.PolicyDelta get policyDelta => $_getN(0);
   @$pb.TagNumber(2)
-  set policyDelta($463.PolicyDelta v) { setField(2, v); }
+  set policyDelta($87.PolicyDelta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPolicyDelta() => $_has(0);
   @$pb.TagNumber(2)
   void clearPolicyDelta() => clearField(2);
   @$pb.TagNumber(2)
-  $463.PolicyDelta ensurePolicyDelta() => $_ensure(0);
+  $87.PolicyDelta ensurePolicyDelta() => $_ensure(0);
 }
 
 

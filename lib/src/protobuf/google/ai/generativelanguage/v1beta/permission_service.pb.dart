@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2210;
-import 'permission.pb.dart' as $383;
+import '../../../protobuf/field_mask.pb.dart' as $330;
+import 'permission.pb.dart' as $18;
 
 /// Request to create a `Permission`.
 class CreatePermissionRequest extends $pb.GeneratedMessage {
   factory CreatePermissionRequest({
     $core.String? parent,
-    $383.Permission? permission,
+    $18.Permission? permission,
   }) {
     final $result = create();
     if (parent != null) {
@@ -37,7 +37,7 @@ class CreatePermissionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreatePermissionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$383.Permission>(2, _omitFieldNames ? '' : 'permission', subBuilder: $383.Permission.create)
+    ..aOM<$18.Permission>(2, _omitFieldNames ? '' : 'permission', subBuilder: $18.Permission.create)
     ..hasRequiredFields = false
   ;
 
@@ -77,15 +77,15 @@ class CreatePermissionRequest extends $pb.GeneratedMessage {
 
   /// Required. The permission to create.
   @$pb.TagNumber(2)
-  $383.Permission get permission => $_getN(1);
+  $18.Permission get permission => $_getN(1);
   @$pb.TagNumber(2)
-  set permission($383.Permission v) { setField(2, v); }
+  set permission($18.Permission v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPermission() => $_has(1);
   @$pb.TagNumber(2)
   void clearPermission() => clearField(2);
   @$pb.TagNumber(2)
-  $383.Permission ensurePermission() => $_ensure(1);
+  $18.Permission ensurePermission() => $_ensure(1);
 }
 
 /// Request for getting information about a specific `Permission`.
@@ -244,7 +244,7 @@ class ListPermissionsRequest extends $pb.GeneratedMessage {
 /// permissions.
 class ListPermissionsResponse extends $pb.GeneratedMessage {
   factory ListPermissionsResponse({
-    $core.Iterable<$383.Permission>? permissions,
+    $core.Iterable<$18.Permission>? permissions,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -261,7 +261,7 @@ class ListPermissionsResponse extends $pb.GeneratedMessage {
   factory ListPermissionsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListPermissionsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$383.Permission>(1, _omitFieldNames ? '' : 'permissions', $pb.PbFieldType.PM, subBuilder: $383.Permission.create)
+    ..pc<$18.Permission>(1, _omitFieldNames ? '' : 'permissions', $pb.PbFieldType.PM, subBuilder: $18.Permission.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -289,7 +289,7 @@ class ListPermissionsResponse extends $pb.GeneratedMessage {
 
   /// Returned permissions.
   @$pb.TagNumber(1)
-  $core.List<$383.Permission> get permissions => $_getList(0);
+  $core.List<$18.Permission> get permissions => $_getList(0);
 
   ///  A token, which can be sent as `page_token` to retrieve the next page.
   ///
@@ -307,8 +307,8 @@ class ListPermissionsResponse extends $pb.GeneratedMessage {
 /// Request to update the `Permission`.
 class UpdatePermissionRequest extends $pb.GeneratedMessage {
   factory UpdatePermissionRequest({
-    $383.Permission? permission,
-    $2210.FieldMask? updateMask,
+    $18.Permission? permission,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (permission != null) {
@@ -324,8 +324,8 @@ class UpdatePermissionRequest extends $pb.GeneratedMessage {
   factory UpdatePermissionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePermissionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$383.Permission>(1, _omitFieldNames ? '' : 'permission', subBuilder: $383.Permission.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$18.Permission>(1, _omitFieldNames ? '' : 'permission', subBuilder: $18.Permission.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -354,28 +354,28 @@ class UpdatePermissionRequest extends $pb.GeneratedMessage {
   ///
   ///  The permission's `name` field is used to identify the permission to update.
   @$pb.TagNumber(1)
-  $383.Permission get permission => $_getN(0);
+  $18.Permission get permission => $_getN(0);
   @$pb.TagNumber(1)
-  set permission($383.Permission v) { setField(1, v); }
+  set permission($18.Permission v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPermission() => $_has(0);
   @$pb.TagNumber(1)
   void clearPermission() => clearField(1);
   @$pb.TagNumber(1)
-  $383.Permission ensurePermission() => $_ensure(0);
+  $18.Permission ensurePermission() => $_ensure(0);
 
   /// Required. The list of fields to update. Accepted ones:
   ///  - role (`Permission.role` field)
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete the `Permission`.

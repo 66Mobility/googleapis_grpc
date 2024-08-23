@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../api/monitored_resource.pb.dart' as $1672;
+import '../../../api/monitored_resource.pb.dart' as $195;
 
 /// A widget that displays a list of incidents
 class IncidentList extends $pb.GeneratedMessage {
   factory IncidentList({
-    $core.Iterable<$1672.MonitoredResource>? monitoredResources,
+    $core.Iterable<$195.MonitoredResource>? monitoredResources,
     $core.Iterable<$core.String>? policyNames,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class IncidentList extends $pb.GeneratedMessage {
   factory IncidentList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IncidentList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<$1672.MonitoredResource>(1, _omitFieldNames ? '' : 'monitoredResources', $pb.PbFieldType.PM, subBuilder: $1672.MonitoredResource.create)
+    ..pc<$195.MonitoredResource>(1, _omitFieldNames ? '' : 'monitoredResources', $pb.PbFieldType.PM, subBuilder: $195.MonitoredResource.create)
     ..pPS(2, _omitFieldNames ? '' : 'policyNames')
     ..hasRequiredFields = false
   ;
@@ -66,7 +66,7 @@ class IncidentList extends $pb.GeneratedMessage {
   /// the resource type but not the values of the resource labels.
   /// The resource type and labels are used for filtering.
   @$pb.TagNumber(1)
-  $core.List<$1672.MonitoredResource> get monitoredResources => $_getList(0);
+  $core.List<$195.MonitoredResource> get monitoredResources => $_getList(0);
 
   /// Optional. A list of alert policy names to filter the incident list by.
   /// Don't include the project ID prefix in the policy name. For

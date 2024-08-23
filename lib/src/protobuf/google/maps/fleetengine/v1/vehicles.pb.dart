@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
-import '../../../protobuf/wrappers.pb.dart' as $1781;
-import 'fleetengine.pb.dart' as $4803;
-import 'fleetengine.pbenum.dart' as $4803;
+import '../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../protobuf/wrappers.pb.dart' as $304;
+import 'fleetengine.pb.dart' as $454;
+import 'fleetengine.pbenum.dart' as $454;
 import 'vehicles.pbenum.dart';
 
 export 'vehicles.pbenum.dart';
@@ -78,25 +78,25 @@ class Vehicle extends $pb.GeneratedMessage {
   factory Vehicle({
     $core.String? name,
     VehicleState? vehicleState,
-    $core.Iterable<$4803.TripType>? supportedTripTypes,
+    $core.Iterable<$454.TripType>? supportedTripTypes,
     $core.Iterable<$core.String>? currentTrips,
-    $4803.VehicleLocation? lastLocation,
+    $454.VehicleLocation? lastLocation,
     $core.int? maximumCapacity,
-    $core.Iterable<$4803.VehicleAttribute>? attributes,
+    $core.Iterable<$454.VehicleAttribute>? attributes,
     Vehicle_VehicleType? vehicleType,
     LicensePlate? licensePlate,
   @$core.Deprecated('This field is deprecated.')
-    $core.Iterable<$4803.TerminalLocation>? route,
-    $1776.Timestamp? currentRouteSegmentVersion,
-    $1776.Timestamp? waypointsVersion,
-    $1781.Int32Value? remainingDistanceMeters,
-    $1776.Timestamp? etaToFirstWaypoint,
+    $core.Iterable<$454.TerminalLocation>? route,
+    $299.Timestamp? currentRouteSegmentVersion,
+    $299.Timestamp? waypointsVersion,
+    $304.Int32Value? remainingDistanceMeters,
+    $299.Timestamp? etaToFirstWaypoint,
     $core.String? currentRouteSegment,
-    $core.Iterable<$4803.TripWaypoint>? waypoints,
+    $core.Iterable<$454.TripWaypoint>? waypoints,
     $core.bool? backToBackEnabled,
-    $4803.TripWaypoint? currentRouteSegmentEndPoint,
-    $1781.Int32Value? remainingTimeSeconds,
-    $4803.NavigationStatus? navigationStatus,
+    $454.TripWaypoint? currentRouteSegmentEndPoint,
+    $304.Int32Value? remainingTimeSeconds,
+    $454.NavigationStatus? navigationStatus,
     DeviceSettings? deviceSettings,
     TrafficPolylineData? currentRouteSegmentTraffic,
   }) {
@@ -177,24 +177,24 @@ class Vehicle extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<VehicleState>(2, _omitFieldNames ? '' : 'vehicleState', $pb.PbFieldType.OE, defaultOrMaker: VehicleState.UNKNOWN_VEHICLE_STATE, valueOf: VehicleState.valueOf, enumValues: VehicleState.values)
-    ..pc<$4803.TripType>(3, _omitFieldNames ? '' : 'supportedTripTypes', $pb.PbFieldType.KE, valueOf: $4803.TripType.valueOf, enumValues: $4803.TripType.values, defaultEnumValue: $4803.TripType.UNKNOWN_TRIP_TYPE)
+    ..pc<$454.TripType>(3, _omitFieldNames ? '' : 'supportedTripTypes', $pb.PbFieldType.KE, valueOf: $454.TripType.valueOf, enumValues: $454.TripType.values, defaultEnumValue: $454.TripType.UNKNOWN_TRIP_TYPE)
     ..pPS(4, _omitFieldNames ? '' : 'currentTrips')
-    ..aOM<$4803.VehicleLocation>(5, _omitFieldNames ? '' : 'lastLocation', subBuilder: $4803.VehicleLocation.create)
+    ..aOM<$454.VehicleLocation>(5, _omitFieldNames ? '' : 'lastLocation', subBuilder: $454.VehicleLocation.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'maximumCapacity', $pb.PbFieldType.O3)
-    ..pc<$4803.VehicleAttribute>(8, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4803.VehicleAttribute.create)
+    ..pc<$454.VehicleAttribute>(8, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $454.VehicleAttribute.create)
     ..aOM<Vehicle_VehicleType>(9, _omitFieldNames ? '' : 'vehicleType', subBuilder: Vehicle_VehicleType.create)
     ..aOM<LicensePlate>(10, _omitFieldNames ? '' : 'licensePlate', subBuilder: LicensePlate.create)
-    ..pc<$4803.TerminalLocation>(12, _omitFieldNames ? '' : 'route', $pb.PbFieldType.PM, subBuilder: $4803.TerminalLocation.create)
-    ..aOM<$1776.Timestamp>(15, _omitFieldNames ? '' : 'currentRouteSegmentVersion', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'waypointsVersion', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1781.Int32Value>(18, _omitFieldNames ? '' : 'remainingDistanceMeters', subBuilder: $1781.Int32Value.create)
-    ..aOM<$1776.Timestamp>(19, _omitFieldNames ? '' : 'etaToFirstWaypoint', subBuilder: $1776.Timestamp.create)
+    ..pc<$454.TerminalLocation>(12, _omitFieldNames ? '' : 'route', $pb.PbFieldType.PM, subBuilder: $454.TerminalLocation.create)
+    ..aOM<$299.Timestamp>(15, _omitFieldNames ? '' : 'currentRouteSegmentVersion', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(16, _omitFieldNames ? '' : 'waypointsVersion', subBuilder: $299.Timestamp.create)
+    ..aOM<$304.Int32Value>(18, _omitFieldNames ? '' : 'remainingDistanceMeters', subBuilder: $304.Int32Value.create)
+    ..aOM<$299.Timestamp>(19, _omitFieldNames ? '' : 'etaToFirstWaypoint', subBuilder: $299.Timestamp.create)
     ..aOS(20, _omitFieldNames ? '' : 'currentRouteSegment')
-    ..pc<$4803.TripWaypoint>(22, _omitFieldNames ? '' : 'waypoints', $pb.PbFieldType.PM, subBuilder: $4803.TripWaypoint.create)
+    ..pc<$454.TripWaypoint>(22, _omitFieldNames ? '' : 'waypoints', $pb.PbFieldType.PM, subBuilder: $454.TripWaypoint.create)
     ..aOB(23, _omitFieldNames ? '' : 'backToBackEnabled')
-    ..aOM<$4803.TripWaypoint>(24, _omitFieldNames ? '' : 'currentRouteSegmentEndPoint', subBuilder: $4803.TripWaypoint.create)
-    ..aOM<$1781.Int32Value>(25, _omitFieldNames ? '' : 'remainingTimeSeconds', subBuilder: $1781.Int32Value.create)
-    ..e<$4803.NavigationStatus>(26, _omitFieldNames ? '' : 'navigationStatus', $pb.PbFieldType.OE, defaultOrMaker: $4803.NavigationStatus.UNKNOWN_NAVIGATION_STATUS, valueOf: $4803.NavigationStatus.valueOf, enumValues: $4803.NavigationStatus.values)
+    ..aOM<$454.TripWaypoint>(24, _omitFieldNames ? '' : 'currentRouteSegmentEndPoint', subBuilder: $454.TripWaypoint.create)
+    ..aOM<$304.Int32Value>(25, _omitFieldNames ? '' : 'remainingTimeSeconds', subBuilder: $304.Int32Value.create)
+    ..e<$454.NavigationStatus>(26, _omitFieldNames ? '' : 'navigationStatus', $pb.PbFieldType.OE, defaultOrMaker: $454.NavigationStatus.UNKNOWN_NAVIGATION_STATUS, valueOf: $454.NavigationStatus.valueOf, enumValues: $454.NavigationStatus.values)
     ..aOM<DeviceSettings>(27, _omitFieldNames ? '' : 'deviceSettings', subBuilder: DeviceSettings.create)
     ..aOM<TrafficPolylineData>(28, _omitFieldNames ? '' : 'currentRouteSegmentTraffic', subBuilder: TrafficPolylineData.create)
     ..hasRequiredFields = false
@@ -244,7 +244,7 @@ class Vehicle extends $pb.GeneratedMessage {
 
   /// Trip types supported by this vehicle.
   @$pb.TagNumber(3)
-  $core.List<$4803.TripType> get supportedTripTypes => $_getList(2);
+  $core.List<$454.TripType> get supportedTripTypes => $_getList(2);
 
   /// Output only. List of `trip_id`'s for trips currently assigned to this
   /// vehicle.
@@ -253,15 +253,15 @@ class Vehicle extends $pb.GeneratedMessage {
 
   /// Last reported location of the vehicle.
   @$pb.TagNumber(5)
-  $4803.VehicleLocation get lastLocation => $_getN(4);
+  $454.VehicleLocation get lastLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set lastLocation($4803.VehicleLocation v) { setField(5, v); }
+  set lastLocation($454.VehicleLocation v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLastLocation() => $_has(4);
   @$pb.TagNumber(5)
   void clearLastLocation() => clearField(5);
   @$pb.TagNumber(5)
-  $4803.VehicleLocation ensureLastLocation() => $_ensure(4);
+  $454.VehicleLocation ensureLastLocation() => $_ensure(4);
 
   /// The total numbers of riders this vehicle can carry.  The driver is not
   /// considered in this value. This value must be greater than or equal to one.
@@ -277,7 +277,7 @@ class Vehicle extends $pb.GeneratedMessage {
   /// List of vehicle attributes. A vehicle can have at most 100
   /// attributes, and each attribute must have a unique key.
   @$pb.TagNumber(8)
-  $core.List<$4803.VehicleAttribute> get attributes => $_getList(6);
+  $core.List<$454.VehicleAttribute> get attributes => $_getList(6);
 
   /// Required. The type of this vehicle.  Can be used to filter vehicles in
   /// `SearchVehicles` results.  Also influences ETA and route calculations.
@@ -307,50 +307,50 @@ class Vehicle extends $pb.GeneratedMessage {
   /// Deprecated: Use `Vehicle.waypoints` instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(12)
-  $core.List<$4803.TerminalLocation> get route => $_getList(9);
+  $core.List<$454.TerminalLocation> get route => $_getList(9);
 
   /// Output only. Time when `current_route_segment` was set. It can be stored by
   /// the client and passed in future `GetVehicle` requests to prevent returning
   /// routes that haven't changed.
   @$pb.TagNumber(15)
-  $1776.Timestamp get currentRouteSegmentVersion => $_getN(10);
+  $299.Timestamp get currentRouteSegmentVersion => $_getN(10);
   @$pb.TagNumber(15)
-  set currentRouteSegmentVersion($1776.Timestamp v) { setField(15, v); }
+  set currentRouteSegmentVersion($299.Timestamp v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasCurrentRouteSegmentVersion() => $_has(10);
   @$pb.TagNumber(15)
   void clearCurrentRouteSegmentVersion() => clearField(15);
   @$pb.TagNumber(15)
-  $1776.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(10);
+  $299.Timestamp ensureCurrentRouteSegmentVersion() => $_ensure(10);
 
   /// Output only. Last time the `waypoints` field was updated. Clients should
   /// cache this value and pass it in `GetVehicleRequest` to ensure the
   /// `waypoints` field is only returned if it is updated.
   @$pb.TagNumber(16)
-  $1776.Timestamp get waypointsVersion => $_getN(11);
+  $299.Timestamp get waypointsVersion => $_getN(11);
   @$pb.TagNumber(16)
-  set waypointsVersion($1776.Timestamp v) { setField(16, v); }
+  set waypointsVersion($299.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasWaypointsVersion() => $_has(11);
   @$pb.TagNumber(16)
   void clearWaypointsVersion() => clearField(16);
   @$pb.TagNumber(16)
-  $1776.Timestamp ensureWaypointsVersion() => $_ensure(11);
+  $299.Timestamp ensureWaypointsVersion() => $_ensure(11);
 
   /// The remaining driving distance for the `current_route_segment`.
   /// This value is also returned in `Trip.remaining_distance_meters` for all
   /// active trips assigned to the vehicle. The value is unspecified if the
   /// `current_route_segment` field is empty.
   @$pb.TagNumber(18)
-  $1781.Int32Value get remainingDistanceMeters => $_getN(12);
+  $304.Int32Value get remainingDistanceMeters => $_getN(12);
   @$pb.TagNumber(18)
-  set remainingDistanceMeters($1781.Int32Value v) { setField(18, v); }
+  set remainingDistanceMeters($304.Int32Value v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasRemainingDistanceMeters() => $_has(12);
   @$pb.TagNumber(18)
   void clearRemainingDistanceMeters() => clearField(18);
   @$pb.TagNumber(18)
-  $1781.Int32Value ensureRemainingDistanceMeters() => $_ensure(12);
+  $304.Int32Value ensureRemainingDistanceMeters() => $_ensure(12);
 
   ///  The ETA to the first entry in the `waypoints` field.  The value is
   ///  unspecified if the `waypoints` field is empty or the
@@ -359,15 +359,15 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  When updating a vehicle, `remaining_time_seconds` takes precedence over
   ///  `eta_to_first_waypoint` in the same request.
   @$pb.TagNumber(19)
-  $1776.Timestamp get etaToFirstWaypoint => $_getN(13);
+  $299.Timestamp get etaToFirstWaypoint => $_getN(13);
   @$pb.TagNumber(19)
-  set etaToFirstWaypoint($1776.Timestamp v) { setField(19, v); }
+  set etaToFirstWaypoint($299.Timestamp v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasEtaToFirstWaypoint() => $_has(13);
   @$pb.TagNumber(19)
   void clearEtaToFirstWaypoint() => clearField(19);
   @$pb.TagNumber(19)
-  $1776.Timestamp ensureEtaToFirstWaypoint() => $_ensure(13);
+  $299.Timestamp ensureEtaToFirstWaypoint() => $_ensure(13);
 
   ///  The polyline specifying the route the driver app intends to take to
   ///  the next waypoint. This list is also returned in
@@ -386,7 +386,7 @@ class Vehicle extends $pb.GeneratedMessage {
 
   /// The remaining waypoints assigned to this Vehicle.
   @$pb.TagNumber(22)
-  $core.List<$4803.TripWaypoint> get waypoints => $_getList(15);
+  $core.List<$454.TripWaypoint> get waypoints => $_getList(15);
 
   /// Indicates if the driver accepts back-to-back trips. If `true`,
   /// `SearchVehicles` may include the vehicle even if it is currently assigned
@@ -407,15 +407,15 @@ class Vehicle extends $pb.GeneratedMessage {
   /// not fully specified. This field is ignored in `UpdateVehicle` calls unless
   /// `current_route_segment` is also specified.
   @$pb.TagNumber(24)
-  $4803.TripWaypoint get currentRouteSegmentEndPoint => $_getN(17);
+  $454.TripWaypoint get currentRouteSegmentEndPoint => $_getN(17);
   @$pb.TagNumber(24)
-  set currentRouteSegmentEndPoint($4803.TripWaypoint v) { setField(24, v); }
+  set currentRouteSegmentEndPoint($454.TripWaypoint v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasCurrentRouteSegmentEndPoint() => $_has(17);
   @$pb.TagNumber(24)
   void clearCurrentRouteSegmentEndPoint() => clearField(24);
   @$pb.TagNumber(24)
-  $4803.TripWaypoint ensureCurrentRouteSegmentEndPoint() => $_ensure(17);
+  $454.TripWaypoint ensureCurrentRouteSegmentEndPoint() => $_ensure(17);
 
   ///  Input only. The remaining driving time for the `current_route_segment`. The
   ///  value is unspecified if the `waypoints` field is empty or the
@@ -426,21 +426,21 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  When updating a vehicle, `remaining_time_seconds` takes precedence over
   ///  `eta_to_first_waypoint` in the same request.
   @$pb.TagNumber(25)
-  $1781.Int32Value get remainingTimeSeconds => $_getN(18);
+  $304.Int32Value get remainingTimeSeconds => $_getN(18);
   @$pb.TagNumber(25)
-  set remainingTimeSeconds($1781.Int32Value v) { setField(25, v); }
+  set remainingTimeSeconds($304.Int32Value v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasRemainingTimeSeconds() => $_has(18);
   @$pb.TagNumber(25)
   void clearRemainingTimeSeconds() => clearField(25);
   @$pb.TagNumber(25)
-  $1781.Int32Value ensureRemainingTimeSeconds() => $_ensure(18);
+  $304.Int32Value ensureRemainingTimeSeconds() => $_ensure(18);
 
   /// The vehicle's navigation status.
   @$pb.TagNumber(26)
-  $4803.NavigationStatus get navigationStatus => $_getN(19);
+  $454.NavigationStatus get navigationStatus => $_getN(19);
   @$pb.TagNumber(26)
-  set navigationStatus($4803.NavigationStatus v) { setField(26, v); }
+  set navigationStatus($454.NavigationStatus v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasNavigationStatus() => $_has(19);
   @$pb.TagNumber(26)

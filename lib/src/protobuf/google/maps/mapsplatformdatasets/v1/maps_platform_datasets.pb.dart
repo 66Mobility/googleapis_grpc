@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2210;
-import '../../../rpc/status.pb.dart' as $1796;
-import 'dataset.pb.dart' as $1646;
+import '../../../protobuf/field_mask.pb.dart' as $330;
+import '../../../rpc/status.pb.dart' as $319;
+import 'dataset.pb.dart' as $168;
 
 /// Request to create a maps dataset.
 class CreateDatasetRequest extends $pb.GeneratedMessage {
   factory CreateDatasetRequest({
     $core.String? parent,
-    $1646.Dataset? dataset,
+    $168.Dataset? dataset,
   }) {
     final $result = create();
     if (parent != null) {
@@ -38,7 +38,7 @@ class CreateDatasetRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDatasetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1646.Dataset>(2, _omitFieldNames ? '' : 'dataset', subBuilder: $1646.Dataset.create)
+    ..aOM<$168.Dataset>(2, _omitFieldNames ? '' : 'dataset', subBuilder: $168.Dataset.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,22 +76,22 @@ class CreateDatasetRequest extends $pb.GeneratedMessage {
 
   /// Required. The dataset version to create.
   @$pb.TagNumber(2)
-  $1646.Dataset get dataset => $_getN(1);
+  $168.Dataset get dataset => $_getN(1);
   @$pb.TagNumber(2)
-  set dataset($1646.Dataset v) { setField(2, v); }
+  set dataset($168.Dataset v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDataset() => $_has(1);
   @$pb.TagNumber(2)
   void clearDataset() => clearField(2);
   @$pb.TagNumber(2)
-  $1646.Dataset ensureDataset() => $_ensure(1);
+  $168.Dataset ensureDataset() => $_ensure(1);
 }
 
 /// Request to update the metadata fields of the dataset.
 class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetMetadataRequest({
-    $1646.Dataset? dataset,
-    $2210.FieldMask? updateMask,
+    $168.Dataset? dataset,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataset != null) {
@@ -107,8 +107,8 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetMetadataRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatasetMetadataRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
-    ..aOM<$1646.Dataset>(1, _omitFieldNames ? '' : 'dataset', subBuilder: $1646.Dataset.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$168.Dataset>(1, _omitFieldNames ? '' : 'dataset', subBuilder: $168.Dataset.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -136,29 +136,29 @@ class UpdateDatasetMetadataRequest extends $pb.GeneratedMessage {
   /// Required. Resource name of the dataset to update.
   /// Format: projects/{project}/datasets/{dataset_id}
   @$pb.TagNumber(1)
-  $1646.Dataset get dataset => $_getN(0);
+  $168.Dataset get dataset => $_getN(0);
   @$pb.TagNumber(1)
-  set dataset($1646.Dataset v) { setField(1, v); }
+  set dataset($168.Dataset v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDataset() => $_has(0);
   @$pb.TagNumber(1)
   void clearDataset() => clearField(1);
   @$pb.TagNumber(1)
-  $1646.Dataset ensureDataset() => $_ensure(0);
+  $168.Dataset ensureDataset() => $_ensure(0);
 
   ///  The list of fields to be updated.
   ///
   ///  The value "*" is used for full replacement (default).
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to get the specified dataset.
@@ -333,7 +333,7 @@ class ListDatasetsRequest extends $pb.GeneratedMessage {
 /// Response object of ListDatasets.
 class ListDatasetsResponse extends $pb.GeneratedMessage {
   factory ListDatasetsResponse({
-    $core.Iterable<$1646.Dataset>? datasets,
+    $core.Iterable<$168.Dataset>? datasets,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -350,7 +350,7 @@ class ListDatasetsResponse extends $pb.GeneratedMessage {
   factory ListDatasetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDatasetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
-    ..pc<$1646.Dataset>(1, _omitFieldNames ? '' : 'datasets', $pb.PbFieldType.PM, subBuilder: $1646.Dataset.create)
+    ..pc<$168.Dataset>(1, _omitFieldNames ? '' : 'datasets', $pb.PbFieldType.PM, subBuilder: $168.Dataset.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -378,7 +378,7 @@ class ListDatasetsResponse extends $pb.GeneratedMessage {
 
   /// All the datasets for the project.
   @$pb.TagNumber(1)
-  $core.List<$1646.Dataset> get datasets => $_getList(0);
+  $core.List<$168.Dataset> get datasets => $_getList(0);
 
   ///  A token that can be sent as `page_token` to retrieve the next page.
   ///
@@ -485,7 +485,7 @@ class FetchDatasetErrorsRequest extends $pb.GeneratedMessage {
 class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
   factory FetchDatasetErrorsResponse({
     $core.String? nextPageToken,
-    $core.Iterable<$1796.Status>? errors,
+    $core.Iterable<$319.Status>? errors,
   }) {
     final $result = create();
     if (nextPageToken != null) {
@@ -502,7 +502,7 @@ class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FetchDatasetErrorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.mapsplatformdatasets.v1'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$1796.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $1796.Status.create)
+    ..pc<$319.Status>(3, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $319.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -541,7 +541,7 @@ class FetchDatasetErrorsResponse extends $pb.GeneratedMessage {
 
   /// The errors associated with a dataset.
   @$pb.TagNumber(3)
-  $core.List<$1796.Status> get errors => $_getList(1);
+  $core.List<$319.Status> get errors => $_getList(1);
 }
 
 /// Request to delete a dataset.

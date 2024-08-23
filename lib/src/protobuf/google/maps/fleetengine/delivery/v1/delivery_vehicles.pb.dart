@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $1738;
-import '../../../../protobuf/wrappers.pb.dart' as $1781;
-import '../../../../type/latlng.pb.dart' as $1799;
-import 'common.pb.dart' as $4800;
-import 'common.pbenum.dart' as $4800;
+import '../../../../protobuf/duration.pb.dart' as $261;
+import '../../../../protobuf/wrappers.pb.dart' as $304;
+import '../../../../type/latlng.pb.dart' as $322;
+import 'common.pb.dart' as $451;
+import 'common.pbenum.dart' as $451;
 import 'delivery_vehicles.pbenum.dart';
 
 export 'delivery_vehicles.pbenum.dart';
@@ -34,14 +34,14 @@ export 'delivery_vehicles.pbenum.dart';
 class DeliveryVehicle extends $pb.GeneratedMessage {
   factory DeliveryVehicle({
     $core.String? name,
-    $4800.DeliveryVehicleLocation? lastLocation,
-    $4800.DeliveryVehicleNavigationStatus? navigationStatus,
+    $451.DeliveryVehicleLocation? lastLocation,
+    $451.DeliveryVehicleNavigationStatus? navigationStatus,
     $core.List<$core.int>? currentRouteSegment,
-    $1799.LatLng? currentRouteSegmentEndPoint,
-    $1781.Int32Value? remainingDistanceMeters,
-    $1738.Duration? remainingDuration,
+    $322.LatLng? currentRouteSegmentEndPoint,
+    $304.Int32Value? remainingDistanceMeters,
+    $261.Duration? remainingDuration,
     $core.Iterable<VehicleJourneySegment>? remainingVehicleJourneySegments,
-    $core.Iterable<$4800.DeliveryVehicleAttribute>? attributes,
+    $core.Iterable<$451.DeliveryVehicleAttribute>? attributes,
     DeliveryVehicle_DeliveryVehicleType? type,
   }) {
     final $result = create();
@@ -83,14 +83,14 @@ class DeliveryVehicle extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeliveryVehicle', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4800.DeliveryVehicleLocation>(2, _omitFieldNames ? '' : 'lastLocation', subBuilder: $4800.DeliveryVehicleLocation.create)
-    ..e<$4800.DeliveryVehicleNavigationStatus>(3, _omitFieldNames ? '' : 'navigationStatus', $pb.PbFieldType.OE, defaultOrMaker: $4800.DeliveryVehicleNavigationStatus.UNKNOWN_NAVIGATION_STATUS, valueOf: $4800.DeliveryVehicleNavigationStatus.valueOf, enumValues: $4800.DeliveryVehicleNavigationStatus.values)
+    ..aOM<$451.DeliveryVehicleLocation>(2, _omitFieldNames ? '' : 'lastLocation', subBuilder: $451.DeliveryVehicleLocation.create)
+    ..e<$451.DeliveryVehicleNavigationStatus>(3, _omitFieldNames ? '' : 'navigationStatus', $pb.PbFieldType.OE, defaultOrMaker: $451.DeliveryVehicleNavigationStatus.UNKNOWN_NAVIGATION_STATUS, valueOf: $451.DeliveryVehicleNavigationStatus.valueOf, enumValues: $451.DeliveryVehicleNavigationStatus.values)
     ..a<$core.List<$core.int>>(4, _omitFieldNames ? '' : 'currentRouteSegment', $pb.PbFieldType.OY)
-    ..aOM<$1799.LatLng>(5, _omitFieldNames ? '' : 'currentRouteSegmentEndPoint', subBuilder: $1799.LatLng.create)
-    ..aOM<$1781.Int32Value>(6, _omitFieldNames ? '' : 'remainingDistanceMeters', subBuilder: $1781.Int32Value.create)
-    ..aOM<$1738.Duration>(7, _omitFieldNames ? '' : 'remainingDuration', subBuilder: $1738.Duration.create)
+    ..aOM<$322.LatLng>(5, _omitFieldNames ? '' : 'currentRouteSegmentEndPoint', subBuilder: $322.LatLng.create)
+    ..aOM<$304.Int32Value>(6, _omitFieldNames ? '' : 'remainingDistanceMeters', subBuilder: $304.Int32Value.create)
+    ..aOM<$261.Duration>(7, _omitFieldNames ? '' : 'remainingDuration', subBuilder: $261.Duration.create)
     ..pc<VehicleJourneySegment>(8, _omitFieldNames ? '' : 'remainingVehicleJourneySegments', $pb.PbFieldType.PM, subBuilder: VehicleJourneySegment.create)
-    ..pc<$4800.DeliveryVehicleAttribute>(9, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $4800.DeliveryVehicleAttribute.create)
+    ..pc<$451.DeliveryVehicleAttribute>(9, _omitFieldNames ? '' : 'attributes', $pb.PbFieldType.PM, subBuilder: $451.DeliveryVehicleAttribute.create)
     ..e<DeliveryVehicle_DeliveryVehicleType>(10, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: DeliveryVehicle_DeliveryVehicleType.DELIVERY_VEHICLE_TYPE_UNSPECIFIED, valueOf: DeliveryVehicle_DeliveryVehicleType.valueOf, enumValues: DeliveryVehicle_DeliveryVehicleType.values)
     ..hasRequiredFields = false
   ;
@@ -129,21 +129,21 @@ class DeliveryVehicle extends $pb.GeneratedMessage {
 
   /// The last reported location of the Delivery Vehicle.
   @$pb.TagNumber(2)
-  $4800.DeliveryVehicleLocation get lastLocation => $_getN(1);
+  $451.DeliveryVehicleLocation get lastLocation => $_getN(1);
   @$pb.TagNumber(2)
-  set lastLocation($4800.DeliveryVehicleLocation v) { setField(2, v); }
+  set lastLocation($451.DeliveryVehicleLocation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLastLocation() => $_has(1);
   @$pb.TagNumber(2)
   void clearLastLocation() => clearField(2);
   @$pb.TagNumber(2)
-  $4800.DeliveryVehicleLocation ensureLastLocation() => $_ensure(1);
+  $451.DeliveryVehicleLocation ensureLastLocation() => $_ensure(1);
 
   /// The Delivery Vehicle's navigation status.
   @$pb.TagNumber(3)
-  $4800.DeliveryVehicleNavigationStatus get navigationStatus => $_getN(2);
+  $451.DeliveryVehicleNavigationStatus get navigationStatus => $_getN(2);
   @$pb.TagNumber(3)
-  set navigationStatus($4800.DeliveryVehicleNavigationStatus v) { setField(3, v); }
+  set navigationStatus($451.DeliveryVehicleNavigationStatus v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasNavigationStatus() => $_has(2);
   @$pb.TagNumber(3)
@@ -194,15 +194,15 @@ class DeliveryVehicle extends $pb.GeneratedMessage {
   ///  This field is ignored in `UpdateDeliveryVehicle` calls if the
   ///  `current_route_segment` field is empty.
   @$pb.TagNumber(5)
-  $1799.LatLng get currentRouteSegmentEndPoint => $_getN(4);
+  $322.LatLng get currentRouteSegmentEndPoint => $_getN(4);
   @$pb.TagNumber(5)
-  set currentRouteSegmentEndPoint($1799.LatLng v) { setField(5, v); }
+  set currentRouteSegmentEndPoint($322.LatLng v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCurrentRouteSegmentEndPoint() => $_has(4);
   @$pb.TagNumber(5)
   void clearCurrentRouteSegmentEndPoint() => clearField(5);
   @$pb.TagNumber(5)
-  $1799.LatLng ensureCurrentRouteSegmentEndPoint() => $_ensure(4);
+  $322.LatLng ensureCurrentRouteSegmentEndPoint() => $_ensure(4);
 
   ///  The remaining driving distance for the `current_route_segment`.
   ///  The Driver app typically provides this field, but there are some
@@ -217,15 +217,15 @@ class DeliveryVehicle extends $pb.GeneratedMessage {
   ///  Fleet Engine ignores this field in `UpdateDeliveryVehicleRequest` if the
   ///  `current_route_segment` field is empty.
   @$pb.TagNumber(6)
-  $1781.Int32Value get remainingDistanceMeters => $_getN(5);
+  $304.Int32Value get remainingDistanceMeters => $_getN(5);
   @$pb.TagNumber(6)
-  set remainingDistanceMeters($1781.Int32Value v) { setField(6, v); }
+  set remainingDistanceMeters($304.Int32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRemainingDistanceMeters() => $_has(5);
   @$pb.TagNumber(6)
   void clearRemainingDistanceMeters() => clearField(6);
   @$pb.TagNumber(6)
-  $1781.Int32Value ensureRemainingDistanceMeters() => $_ensure(5);
+  $304.Int32Value ensureRemainingDistanceMeters() => $_ensure(5);
 
   ///  The remaining driving time for the `current_route_segment`.
   ///  The Driver app typically provides this field, but there are some
@@ -240,15 +240,15 @@ class DeliveryVehicle extends $pb.GeneratedMessage {
   ///  Fleet Engine ignores this field in `UpdateDeliveryVehicleRequest` if the
   ///  `current_route_segment` field is empty.
   @$pb.TagNumber(7)
-  $1738.Duration get remainingDuration => $_getN(6);
+  $261.Duration get remainingDuration => $_getN(6);
   @$pb.TagNumber(7)
-  set remainingDuration($1738.Duration v) { setField(7, v); }
+  set remainingDuration($261.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRemainingDuration() => $_has(6);
   @$pb.TagNumber(7)
   void clearRemainingDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1738.Duration ensureRemainingDuration() => $_ensure(6);
+  $261.Duration ensureRemainingDuration() => $_ensure(6);
 
   /// The journey segments assigned to this Delivery Vehicle, starting from the
   /// Vehicle's most recently reported location. This field won't be populated
@@ -259,7 +259,7 @@ class DeliveryVehicle extends $pb.GeneratedMessage {
   /// A list of custom Delivery Vehicle attributes. A Delivery Vehicle can have
   /// at most 100 attributes, and each attribute must have a unique key.
   @$pb.TagNumber(9)
-  $core.List<$4800.DeliveryVehicleAttribute> get attributes => $_getList(8);
+  $core.List<$451.DeliveryVehicleAttribute> get attributes => $_getList(8);
 
   /// The type of this delivery vehicle. If unset, this will default to `AUTO`.
   @$pb.TagNumber(10)
@@ -275,7 +275,7 @@ class DeliveryVehicle extends $pb.GeneratedMessage {
 /// A location with any additional identifiers.
 class LocationInfo extends $pb.GeneratedMessage {
   factory LocationInfo({
-    $1799.LatLng? point,
+    $322.LatLng? point,
   }) {
     final $result = create();
     if (point != null) {
@@ -288,7 +288,7 @@ class LocationInfo extends $pb.GeneratedMessage {
   factory LocationInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocationInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
-    ..aOM<$1799.LatLng>(1, _omitFieldNames ? '' : 'point', subBuilder: $1799.LatLng.create)
+    ..aOM<$322.LatLng>(1, _omitFieldNames ? '' : 'point', subBuilder: $322.LatLng.create)
     ..hasRequiredFields = false
   ;
 
@@ -315,15 +315,15 @@ class LocationInfo extends $pb.GeneratedMessage {
 
   /// The location's coordinates.
   @$pb.TagNumber(1)
-  $1799.LatLng get point => $_getN(0);
+  $322.LatLng get point => $_getN(0);
   @$pb.TagNumber(1)
-  set point($1799.LatLng v) { setField(1, v); }
+  set point($322.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPoint() => $_has(0);
   @$pb.TagNumber(1)
   void clearPoint() => clearField(1);
   @$pb.TagNumber(1)
-  $1799.LatLng ensurePoint() => $_ensure(0);
+  $322.LatLng ensurePoint() => $_ensure(0);
 }
 
 /// Represents a Vehicle’s travel segment - from its previous stop to the
@@ -332,9 +332,9 @@ class LocationInfo extends $pb.GeneratedMessage {
 class VehicleJourneySegment extends $pb.GeneratedMessage {
   factory VehicleJourneySegment({
     VehicleStop? stop,
-    $1781.Int32Value? drivingDistanceMeters,
-    $1738.Duration? drivingDuration,
-    $core.Iterable<$1799.LatLng>? path,
+    $304.Int32Value? drivingDistanceMeters,
+    $261.Duration? drivingDuration,
+    $core.Iterable<$322.LatLng>? path,
   }) {
     final $result = create();
     if (stop != null) {
@@ -357,9 +357,9 @@ class VehicleJourneySegment extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleJourneySegment', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
     ..aOM<VehicleStop>(1, _omitFieldNames ? '' : 'stop', subBuilder: VehicleStop.create)
-    ..aOM<$1781.Int32Value>(2, _omitFieldNames ? '' : 'drivingDistanceMeters', subBuilder: $1781.Int32Value.create)
-    ..aOM<$1738.Duration>(3, _omitFieldNames ? '' : 'drivingDuration', subBuilder: $1738.Duration.create)
-    ..pc<$1799.LatLng>(5, _omitFieldNames ? '' : 'path', $pb.PbFieldType.PM, subBuilder: $1799.LatLng.create)
+    ..aOM<$304.Int32Value>(2, _omitFieldNames ? '' : 'drivingDistanceMeters', subBuilder: $304.Int32Value.create)
+    ..aOM<$261.Duration>(3, _omitFieldNames ? '' : 'drivingDuration', subBuilder: $261.Duration.create)
+    ..pc<$322.LatLng>(5, _omitFieldNames ? '' : 'path', $pb.PbFieldType.PM, subBuilder: $322.LatLng.create)
     ..hasRequiredFields = false
   ;
 
@@ -404,15 +404,15 @@ class VehicleJourneySegment extends $pb.GeneratedMessage {
   /// at the time that this stop was added to the list. This field might not be
   /// present if this journey segment is part of `JourneySharingInfo`.
   @$pb.TagNumber(2)
-  $1781.Int32Value get drivingDistanceMeters => $_getN(1);
+  $304.Int32Value get drivingDistanceMeters => $_getN(1);
   @$pb.TagNumber(2)
-  set drivingDistanceMeters($1781.Int32Value v) { setField(2, v); }
+  set drivingDistanceMeters($304.Int32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDrivingDistanceMeters() => $_has(1);
   @$pb.TagNumber(2)
   void clearDrivingDistanceMeters() => clearField(2);
   @$pb.TagNumber(2)
-  $1781.Int32Value ensureDrivingDistanceMeters() => $_ensure(1);
+  $304.Int32Value ensureDrivingDistanceMeters() => $_ensure(1);
 
   ///  Output only. The travel time from the previous stop to this stop.
   ///  If the current stop is the first stop in the list of journey
@@ -428,15 +428,15 @@ class VehicleJourneySegment extends $pb.GeneratedMessage {
   ///  This provides the remaining driving duration from the driver app's latest
   ///  known location rather than the driving time from the previous stop.
   @$pb.TagNumber(3)
-  $1738.Duration get drivingDuration => $_getN(2);
+  $261.Duration get drivingDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set drivingDuration($1738.Duration v) { setField(3, v); }
+  set drivingDuration($261.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDrivingDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearDrivingDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1738.Duration ensureDrivingDuration() => $_ensure(2);
+  $261.Duration ensureDrivingDuration() => $_ensure(2);
 
   ///  Output only. The path from the previous stop to this stop. If the current
   ///  stop is the first stop in the list of journey segments, then this is the
@@ -453,15 +453,15 @@ class VehicleJourneySegment extends $pb.GeneratedMessage {
   ///  path from the driver app's latest known location rather than the path from
   ///  the previous stop.
   @$pb.TagNumber(5)
-  $core.List<$1799.LatLng> get path => $_getList(3);
+  $core.List<$322.LatLng> get path => $_getList(3);
 }
 
 /// Additional information about the Task performed at this stop.
 class VehicleStop_TaskInfo extends $pb.GeneratedMessage {
   factory VehicleStop_TaskInfo({
     $core.String? taskId,
-    $1738.Duration? taskDuration,
-    $4800.TimeWindow? targetTimeWindow,
+    $261.Duration? taskDuration,
+    $451.TimeWindow? targetTimeWindow,
   }) {
     final $result = create();
     if (taskId != null) {
@@ -481,8 +481,8 @@ class VehicleStop_TaskInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleStop.TaskInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.delivery.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'taskId')
-    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'taskDuration', subBuilder: $1738.Duration.create)
-    ..aOM<$4800.TimeWindow>(3, _omitFieldNames ? '' : 'targetTimeWindow', subBuilder: $4800.TimeWindow.create)
+    ..aOM<$261.Duration>(2, _omitFieldNames ? '' : 'taskDuration', subBuilder: $261.Duration.create)
+    ..aOM<$451.TimeWindow>(3, _omitFieldNames ? '' : 'targetTimeWindow', subBuilder: $451.TimeWindow.create)
     ..hasRequiredFields = false
   ;
 
@@ -527,28 +527,28 @@ class VehicleStop_TaskInfo extends $pb.GeneratedMessage {
 
   /// Output only. The time required to perform the Task.
   @$pb.TagNumber(2)
-  $1738.Duration get taskDuration => $_getN(1);
+  $261.Duration get taskDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set taskDuration($1738.Duration v) { setField(2, v); }
+  set taskDuration($261.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTaskDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearTaskDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $1738.Duration ensureTaskDuration() => $_ensure(1);
+  $261.Duration ensureTaskDuration() => $_ensure(1);
 
   /// Output only. The time window during which the task should be completed.
   /// This is only set in the response to `GetDeliveryVehicle`.
   @$pb.TagNumber(3)
-  $4800.TimeWindow get targetTimeWindow => $_getN(2);
+  $451.TimeWindow get targetTimeWindow => $_getN(2);
   @$pb.TagNumber(3)
-  set targetTimeWindow($4800.TimeWindow v) { setField(3, v); }
+  set targetTimeWindow($451.TimeWindow v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTargetTimeWindow() => $_has(2);
   @$pb.TagNumber(3)
   void clearTargetTimeWindow() => clearField(3);
   @$pb.TagNumber(3)
-  $4800.TimeWindow ensureTargetTimeWindow() => $_ensure(2);
+  $451.TimeWindow ensureTargetTimeWindow() => $_ensure(2);
 }
 
 /// Describes a point where a Vehicle stops to perform one or more `Task`s.

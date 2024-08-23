@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $1735;
+import '../../protobuf/struct.pb.dart' as $258;
 import 'query_plan.pbenum.dart';
 
 export 'query_plan.pbenum.dart';
@@ -185,8 +185,8 @@ class PlanNode extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.Iterable<PlanNode_ChildLink>? childLinks,
     PlanNode_ShortRepresentation? shortRepresentation,
-    $1735.Struct? metadata,
-    $1735.Struct? executionStats,
+    $258.Struct? metadata,
+    $258.Struct? executionStats,
   }) {
     final $result = create();
     if (index != null) {
@@ -222,8 +222,8 @@ class PlanNode extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
     ..pc<PlanNode_ChildLink>(4, _omitFieldNames ? '' : 'childLinks', $pb.PbFieldType.PM, subBuilder: PlanNode_ChildLink.create)
     ..aOM<PlanNode_ShortRepresentation>(5, _omitFieldNames ? '' : 'shortRepresentation', subBuilder: PlanNode_ShortRepresentation.create)
-    ..aOM<$1735.Struct>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $1735.Struct.create)
-    ..aOM<$1735.Struct>(7, _omitFieldNames ? '' : 'executionStats', subBuilder: $1735.Struct.create)
+    ..aOM<$258.Struct>(6, _omitFieldNames ? '' : 'metadata', subBuilder: $258.Struct.create)
+    ..aOM<$258.Struct>(7, _omitFieldNames ? '' : 'executionStats', subBuilder: $258.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -307,30 +307,30 @@ class PlanNode extends $pb.GeneratedMessage {
   ///        "parameter_type": "array"
   ///      }
   @$pb.TagNumber(6)
-  $1735.Struct get metadata => $_getN(5);
+  $258.Struct get metadata => $_getN(5);
   @$pb.TagNumber(6)
-  set metadata($1735.Struct v) { setField(6, v); }
+  set metadata($258.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMetadata() => $_has(5);
   @$pb.TagNumber(6)
   void clearMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $1735.Struct ensureMetadata() => $_ensure(5);
+  $258.Struct ensureMetadata() => $_ensure(5);
 
   /// The execution statistics associated with the node, contained in a group of
   /// key-value pairs. Only present if the plan was returned as a result of a
   /// profile query. For example, number of executions, number of rows/time per
   /// execution etc.
   @$pb.TagNumber(7)
-  $1735.Struct get executionStats => $_getN(6);
+  $258.Struct get executionStats => $_getN(6);
   @$pb.TagNumber(7)
-  set executionStats($1735.Struct v) { setField(7, v); }
+  set executionStats($258.Struct v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasExecutionStats() => $_has(6);
   @$pb.TagNumber(7)
   void clearExecutionStats() => clearField(7);
   @$pb.TagNumber(7)
-  $1735.Struct ensureExecutionStats() => $_ensure(6);
+  $258.Struct ensureExecutionStats() => $_ensure(6);
 }
 
 /// Contains an ordered list of nodes appearing in the query plan.

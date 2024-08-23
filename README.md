@@ -7,11 +7,15 @@ It is almost the same as [googleapis](https://pub.dev/packages/googleapis). Key 
 - gRPC instead of REST api
 - More APIs available. (ex: google maps routing v2)
 
-Caveats:
+Some APIs are missing because they are heavy (up to 100 megabytes). List of disabled APIs:
 
-- The package is quite heavy: 240mb uncompressed, 25 mb compressed. Because it includes so much generated code.
-- But the resulting binary (iOS, Android, etc) **isn't** heavier than before this package is installed.
-- I don't know how it will affect web.
+- `cloud`
+- `ads`
+- `devtools`
+- `analytics`
+- `container`
+
+It is easy to enabled them back. Just go to the `Makefile` and comment the `rm -rf` line you want.
 
 ## Installing
 
@@ -74,17 +78,16 @@ void main() async {
 
 All the generation tooling is in the `Makefile`. Run `make` to regenerate the repository.
 
-Auto-generation takes ~20 minutes. Be patient!
-
 **You must have `protoc` from `protobuf` installed from `brew`. [Official guide of installation](https://grpc.io/docs/protoc-installation/)**
 
 If you install `protobuf` without `brew`, you must edit the Makefile. It is simple to do. (The Makefile is barely 30 lines).
 
-How it works:
+What the Makefile do:
 
 1. Globally install the dart plugin [protoc_plugin](https://pub.dev/packages/protoc_plugin)
 2. Git clone the [googleapis](https://github.com/googleapis/googleapis) repository. It contains all the `proto` definitions.
-3. Copy some official Google types from `protobuf` installation folder to the cloned repository.
-4. Run `protoc` from `protobuf` with the dart `protoc_plugin` to generate the
+3. Delete some API from the cloned repository because they are heavy.
+4. Copy some official Google types from `protobuf` installation folder to the cloned repository.
+5. Run `protoc` from `protobuf` with the dart `protoc_plugin` to generate the
    thousands of dart files.
-5. Generate all the libraries in `lib/` with a custom script.
+6. Generate all the libraries in `lib/` with a custom script.

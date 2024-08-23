@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'accountissue.pb.dart' as $1692;
+import 'accountissue.pb.dart' as $215;
 
 export 'accountissue.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.AccountIssueService')
 class AccountIssueServiceClient extends $grpc.Client {
-  static final _$listAccountIssues = $grpc.ClientMethod<$1692.ListAccountIssuesRequest, $1692.ListAccountIssuesResponse>(
+  static final _$listAccountIssues = $grpc.ClientMethod<$215.ListAccountIssuesRequest, $215.ListAccountIssuesResponse>(
       '/google.shopping.merchant.accounts.v1beta.AccountIssueService/ListAccountIssues',
-      ($1692.ListAccountIssuesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1692.ListAccountIssuesResponse.fromBuffer(value));
+      ($215.ListAccountIssuesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $215.ListAccountIssuesResponse.fromBuffer(value));
 
   AccountIssueServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class AccountIssueServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1692.ListAccountIssuesResponse> listAccountIssues($1692.ListAccountIssuesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$215.ListAccountIssuesResponse> listAccountIssues($215.ListAccountIssuesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listAccountIssues, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class AccountIssueServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.accounts.v1beta.AccountIssueService';
 
   AccountIssueServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1692.ListAccountIssuesRequest, $1692.ListAccountIssuesResponse>(
+    $addMethod($grpc.ServiceMethod<$215.ListAccountIssuesRequest, $215.ListAccountIssuesResponse>(
         'ListAccountIssues',
         listAccountIssues_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1692.ListAccountIssuesRequest.fromBuffer(value),
-        ($1692.ListAccountIssuesResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $215.ListAccountIssuesRequest.fromBuffer(value),
+        ($215.ListAccountIssuesResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1692.ListAccountIssuesResponse> listAccountIssues_Pre($grpc.ServiceCall call, $async.Future<$1692.ListAccountIssuesRequest> request) async {
+  $async.Future<$215.ListAccountIssuesResponse> listAccountIssues_Pre($grpc.ServiceCall call, $async.Future<$215.ListAccountIssuesRequest> request) async {
     return listAccountIssues(call, await request);
   }
 
-  $async.Future<$1692.ListAccountIssuesResponse> listAccountIssues($grpc.ServiceCall call, $1692.ListAccountIssuesRequest request);
+  $async.Future<$215.ListAccountIssuesResponse> listAccountIssues($grpc.ServiceCall call, $215.ListAccountIssuesRequest request);
 }

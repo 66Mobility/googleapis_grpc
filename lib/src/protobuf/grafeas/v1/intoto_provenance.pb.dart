@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/any.pb.dart' as $1795;
-import '../../google/protobuf/timestamp.pb.dart' as $1776;
+import '../../google/protobuf/any.pb.dart' as $318;
+import '../../google/protobuf/timestamp.pb.dart' as $299;
 
 /// Steps taken to build the artifact.
 /// For a TaskRun, typically each container corresponds to one step in the
@@ -25,8 +25,8 @@ class Recipe extends $pb.GeneratedMessage {
     $core.String? type,
     $fixnum.Int64? definedInMaterial,
     $core.String? entryPoint,
-    $core.Iterable<$1795.Any>? arguments,
-    $core.Iterable<$1795.Any>? environment,
+    $core.Iterable<$318.Any>? arguments,
+    $core.Iterable<$318.Any>? environment,
   }) {
     final $result = create();
     if (type != null) {
@@ -54,8 +54,8 @@ class Recipe extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aInt64(2, _omitFieldNames ? '' : 'definedInMaterial')
     ..aOS(3, _omitFieldNames ? '' : 'entryPoint')
-    ..pc<$1795.Any>(4, _omitFieldNames ? '' : 'arguments', $pb.PbFieldType.PM, subBuilder: $1795.Any.create)
-    ..pc<$1795.Any>(5, _omitFieldNames ? '' : 'environment', $pb.PbFieldType.PM, subBuilder: $1795.Any.create)
+    ..pc<$318.Any>(4, _omitFieldNames ? '' : 'arguments', $pb.PbFieldType.PM, subBuilder: $318.Any.create)
+    ..pc<$318.Any>(5, _omitFieldNames ? '' : 'environment', $pb.PbFieldType.PM, subBuilder: $318.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -126,14 +126,14 @@ class Recipe extends $pb.GeneratedMessage {
   /// field can greatly vary in structure, depending on the builder and recipe
   /// type, this is of form "Any".
   @$pb.TagNumber(4)
-  $core.List<$1795.Any> get arguments => $_getList(3);
+  $core.List<$318.Any> get arguments => $_getList(3);
 
   /// Any other builder-controlled inputs necessary for correctly evaluating the
   /// recipe. Usually only needed for reproducing the build but not evaluated as
   /// part of policy. Since the environment field can greatly vary in structure,
   /// depending on the builder and recipe type, this is of form "Any".
   @$pb.TagNumber(5)
-  $core.List<$1795.Any> get environment => $_getList(4);
+  $core.List<$318.Any> get environment => $_getList(4);
 }
 
 /// Indicates that the builder claims certain fields in this message to be
@@ -226,8 +226,8 @@ class Completeness extends $pb.GeneratedMessage {
 class Metadata extends $pb.GeneratedMessage {
   factory Metadata({
     $core.String? buildInvocationId,
-    $1776.Timestamp? buildStartedOn,
-    $1776.Timestamp? buildFinishedOn,
+    $299.Timestamp? buildStartedOn,
+    $299.Timestamp? buildFinishedOn,
     Completeness? completeness,
     $core.bool? reproducible,
   }) {
@@ -255,8 +255,8 @@ class Metadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Metadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'buildInvocationId')
-    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'buildStartedOn', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'buildFinishedOn', subBuilder: $299.Timestamp.create)
     ..aOM<Completeness>(4, _omitFieldNames ? '' : 'completeness', subBuilder: Completeness.create)
     ..aOB(5, _omitFieldNames ? '' : 'reproducible')
     ..hasRequiredFields = false
@@ -297,27 +297,27 @@ class Metadata extends $pb.GeneratedMessage {
 
   /// The timestamp of when the build started.
   @$pb.TagNumber(2)
-  $1776.Timestamp get buildStartedOn => $_getN(1);
+  $299.Timestamp get buildStartedOn => $_getN(1);
   @$pb.TagNumber(2)
-  set buildStartedOn($1776.Timestamp v) { setField(2, v); }
+  set buildStartedOn($299.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBuildStartedOn() => $_has(1);
   @$pb.TagNumber(2)
   void clearBuildStartedOn() => clearField(2);
   @$pb.TagNumber(2)
-  $1776.Timestamp ensureBuildStartedOn() => $_ensure(1);
+  $299.Timestamp ensureBuildStartedOn() => $_ensure(1);
 
   /// The timestamp of when the build completed.
   @$pb.TagNumber(3)
-  $1776.Timestamp get buildFinishedOn => $_getN(2);
+  $299.Timestamp get buildFinishedOn => $_getN(2);
   @$pb.TagNumber(3)
-  set buildFinishedOn($1776.Timestamp v) { setField(3, v); }
+  set buildFinishedOn($299.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBuildFinishedOn() => $_has(2);
   @$pb.TagNumber(3)
   void clearBuildFinishedOn() => clearField(3);
   @$pb.TagNumber(3)
-  $1776.Timestamp ensureBuildFinishedOn() => $_ensure(2);
+  $299.Timestamp ensureBuildFinishedOn() => $_ensure(2);
 
   /// Indicates that the builder claims certain fields in this message to be
   /// complete.

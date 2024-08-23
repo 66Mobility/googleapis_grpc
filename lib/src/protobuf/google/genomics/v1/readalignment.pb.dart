@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $1735;
-import 'cigar.pb.dart' as $4787;
-import 'position.pb.dart' as $4786;
+import '../../protobuf/struct.pb.dart' as $258;
+import 'cigar.pb.dart' as $435;
+import 'position.pb.dart' as $434;
 
 /// A linear alignment can be represented by one CIGAR string. Describes the
 /// mapped position and local alignment of the read to the reference.
 class LinearAlignment extends $pb.GeneratedMessage {
   factory LinearAlignment({
-    $4786.Position? position,
+    $434.Position? position,
     $core.int? mappingQuality,
-    $core.Iterable<$4787.CigarUnit>? cigar,
+    $core.Iterable<$435.CigarUnit>? cigar,
   }) {
     final $result = create();
     if (position != null) {
@@ -42,9 +42,9 @@ class LinearAlignment extends $pb.GeneratedMessage {
   factory LinearAlignment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LinearAlignment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..aOM<$4786.Position>(1, _omitFieldNames ? '' : 'position', subBuilder: $4786.Position.create)
+    ..aOM<$434.Position>(1, _omitFieldNames ? '' : 'position', subBuilder: $434.Position.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'mappingQuality', $pb.PbFieldType.O3)
-    ..pc<$4787.CigarUnit>(3, _omitFieldNames ? '' : 'cigar', $pb.PbFieldType.PM, subBuilder: $4787.CigarUnit.create)
+    ..pc<$435.CigarUnit>(3, _omitFieldNames ? '' : 'cigar', $pb.PbFieldType.PM, subBuilder: $435.CigarUnit.create)
     ..hasRequiredFields = false
   ;
 
@@ -71,15 +71,15 @@ class LinearAlignment extends $pb.GeneratedMessage {
 
   /// The position of this alignment.
   @$pb.TagNumber(1)
-  $4786.Position get position => $_getN(0);
+  $434.Position get position => $_getN(0);
   @$pb.TagNumber(1)
-  set position($4786.Position v) { setField(1, v); }
+  set position($434.Position v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPosition() => $_has(0);
   @$pb.TagNumber(1)
   void clearPosition() => clearField(1);
   @$pb.TagNumber(1)
-  $4786.Position ensurePosition() => $_ensure(0);
+  $434.Position ensurePosition() => $_ensure(0);
 
   ///  The mapping quality of this alignment. Represents how likely
   ///  the read maps to this position as opposed to other locations.
@@ -98,7 +98,7 @@ class LinearAlignment extends $pb.GeneratedMessage {
   /// Represents the local alignment of this sequence (alignment matches, indels,
   /// etc) against the reference.
   @$pb.TagNumber(3)
-  $core.List<$4787.CigarUnit> get cigar => $_getList(2);
+  $core.List<$435.CigarUnit> get cigar => $_getList(2);
 }
 
 ///  A read alignment describes a linear alignment of a string of DNA to a
@@ -200,8 +200,8 @@ class Read extends $pb.GeneratedMessage {
     $core.bool? supplementaryAlignment,
     $core.String? alignedSequence,
     $core.Iterable<$core.int>? alignedQuality,
-    $4786.Position? nextMatePosition,
-    $core.Map<$core.String, $1735.ListValue>? info,
+    $434.Position? nextMatePosition,
+    $core.Map<$core.String, $258.ListValue>? info,
   }) {
     final $result = create();
     if (id != null) {
@@ -277,8 +277,8 @@ class Read extends $pb.GeneratedMessage {
     ..aOB(13, _omitFieldNames ? '' : 'supplementaryAlignment')
     ..aOS(14, _omitFieldNames ? '' : 'alignedSequence')
     ..p<$core.int>(15, _omitFieldNames ? '' : 'alignedQuality', $pb.PbFieldType.K3)
-    ..aOM<$4786.Position>(16, _omitFieldNames ? '' : 'nextMatePosition', subBuilder: $4786.Position.create)
-    ..m<$core.String, $1735.ListValue>(17, _omitFieldNames ? '' : 'info', entryClassName: 'Read.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.ListValue.create, valueDefaultOrMaker: $1735.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..aOM<$434.Position>(16, _omitFieldNames ? '' : 'nextMatePosition', subBuilder: $434.Position.create)
+    ..m<$core.String, $258.ListValue>(17, _omitFieldNames ? '' : 'info', entryClassName: 'Read.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $258.ListValue.create, valueDefaultOrMaker: $258.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -489,20 +489,20 @@ class Read extends $pb.GeneratedMessage {
   /// `(readNumber+1)%numberReads` read in the fragment. It replaces
   /// mate position and mate strand in SAM.
   @$pb.TagNumber(16)
-  $4786.Position get nextMatePosition => $_getN(15);
+  $434.Position get nextMatePosition => $_getN(15);
   @$pb.TagNumber(16)
-  set nextMatePosition($4786.Position v) { setField(16, v); }
+  set nextMatePosition($434.Position v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasNextMatePosition() => $_has(15);
   @$pb.TagNumber(16)
   void clearNextMatePosition() => clearField(16);
   @$pb.TagNumber(16)
-  $4786.Position ensureNextMatePosition() => $_ensure(15);
+  $434.Position ensureNextMatePosition() => $_ensure(15);
 
   /// A map of additional read alignment information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(17)
-  $core.Map<$core.String, $1735.ListValue> get info => $_getMap(16);
+  $core.Map<$core.String, $258.ListValue> get info => $_getMap(16);
 }
 
 

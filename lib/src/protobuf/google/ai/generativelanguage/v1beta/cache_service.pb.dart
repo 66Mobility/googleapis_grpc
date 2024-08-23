@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2210;
-import 'cached_content.pb.dart' as $374;
+import '../../../protobuf/field_mask.pb.dart' as $330;
+import 'cached_content.pb.dart' as $8;
 
 /// Request to list CachedContents.
 class ListCachedContentsRequest extends $pb.GeneratedMessage {
@@ -93,7 +93,7 @@ class ListCachedContentsRequest extends $pb.GeneratedMessage {
 /// Response with CachedContents list.
 class ListCachedContentsResponse extends $pb.GeneratedMessage {
   factory ListCachedContentsResponse({
-    $core.Iterable<$374.CachedContent>? cachedContents,
+    $core.Iterable<$8.CachedContent>? cachedContents,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -110,7 +110,7 @@ class ListCachedContentsResponse extends $pb.GeneratedMessage {
   factory ListCachedContentsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListCachedContentsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$374.CachedContent>(1, _omitFieldNames ? '' : 'cachedContents', $pb.PbFieldType.PM, subBuilder: $374.CachedContent.create)
+    ..pc<$8.CachedContent>(1, _omitFieldNames ? '' : 'cachedContents', $pb.PbFieldType.PM, subBuilder: $8.CachedContent.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -138,7 +138,7 @@ class ListCachedContentsResponse extends $pb.GeneratedMessage {
 
   /// List of cached contents.
   @$pb.TagNumber(1)
-  $core.List<$374.CachedContent> get cachedContents => $_getList(0);
+  $core.List<$8.CachedContent> get cachedContents => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.
@@ -155,7 +155,7 @@ class ListCachedContentsResponse extends $pb.GeneratedMessage {
 /// Request to create CachedContent.
 class CreateCachedContentRequest extends $pb.GeneratedMessage {
   factory CreateCachedContentRequest({
-    $374.CachedContent? cachedContent,
+    $8.CachedContent? cachedContent,
   }) {
     final $result = create();
     if (cachedContent != null) {
@@ -168,7 +168,7 @@ class CreateCachedContentRequest extends $pb.GeneratedMessage {
   factory CreateCachedContentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateCachedContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$374.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent', subBuilder: $374.CachedContent.create)
+    ..aOM<$8.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent', subBuilder: $8.CachedContent.create)
     ..hasRequiredFields = false
   ;
 
@@ -195,15 +195,15 @@ class CreateCachedContentRequest extends $pb.GeneratedMessage {
 
   /// Required. The cached content to create.
   @$pb.TagNumber(1)
-  $374.CachedContent get cachedContent => $_getN(0);
+  $8.CachedContent get cachedContent => $_getN(0);
   @$pb.TagNumber(1)
-  set cachedContent($374.CachedContent v) { setField(1, v); }
+  set cachedContent($8.CachedContent v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCachedContent() => $_has(0);
   @$pb.TagNumber(1)
   void clearCachedContent() => clearField(1);
   @$pb.TagNumber(1)
-  $374.CachedContent ensureCachedContent() => $_ensure(0);
+  $8.CachedContent ensureCachedContent() => $_ensure(0);
 }
 
 /// Request to read CachedContent.
@@ -262,8 +262,8 @@ class GetCachedContentRequest extends $pb.GeneratedMessage {
 /// Request to update CachedContent.
 class UpdateCachedContentRequest extends $pb.GeneratedMessage {
   factory UpdateCachedContentRequest({
-    $374.CachedContent? cachedContent,
-    $2210.FieldMask? updateMask,
+    $8.CachedContent? cachedContent,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (cachedContent != null) {
@@ -279,8 +279,8 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
   factory UpdateCachedContentRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCachedContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$374.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent', subBuilder: $374.CachedContent.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$8.CachedContent>(1, _omitFieldNames ? '' : 'cachedContent', subBuilder: $8.CachedContent.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -307,27 +307,27 @@ class UpdateCachedContentRequest extends $pb.GeneratedMessage {
 
   /// Required. The content cache entry to update
   @$pb.TagNumber(1)
-  $374.CachedContent get cachedContent => $_getN(0);
+  $8.CachedContent get cachedContent => $_getN(0);
   @$pb.TagNumber(1)
-  set cachedContent($374.CachedContent v) { setField(1, v); }
+  set cachedContent($8.CachedContent v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCachedContent() => $_has(0);
   @$pb.TagNumber(1)
   void clearCachedContent() => clearField(1);
   @$pb.TagNumber(1)
-  $374.CachedContent ensureCachedContent() => $_ensure(0);
+  $8.CachedContent ensureCachedContent() => $_ensure(0);
 
   /// The list of fields to update.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete CachedContent.

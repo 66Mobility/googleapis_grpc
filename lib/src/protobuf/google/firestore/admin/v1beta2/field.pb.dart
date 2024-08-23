@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'index.pb.dart' as $1605;
+import 'index.pb.dart' as $126;
 
 /// The index configuration for this field.
 class Field_IndexConfig extends $pb.GeneratedMessage {
   factory Field_IndexConfig({
-    $core.Iterable<$1605.Index>? indexes,
+    $core.Iterable<$126.Index>? indexes,
     $core.bool? usesAncestorConfig,
     $core.String? ancestorField,
     $core.bool? reverting,
@@ -43,7 +43,7 @@ class Field_IndexConfig extends $pb.GeneratedMessage {
   factory Field_IndexConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Field.IndexConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta2'), createEmptyInstance: create)
-    ..pc<$1605.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM, subBuilder: $1605.Index.create)
+    ..pc<$126.Index>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.PM, subBuilder: $126.Index.create)
     ..aOB(2, _omitFieldNames ? '' : 'usesAncestorConfig')
     ..aOS(3, _omitFieldNames ? '' : 'ancestorField')
     ..aOB(4, _omitFieldNames ? '' : 'reverting')
@@ -73,7 +73,7 @@ class Field_IndexConfig extends $pb.GeneratedMessage {
 
   /// The indexes supported for this field.
   @$pb.TagNumber(1)
-  $core.List<$1605.Index> get indexes => $_getList(0);
+  $core.List<$126.Index> get indexes => $_getList(0);
 
   /// Output only. When true, the `Field`'s index configuration is set from the
   /// configuration specified by the `ancestor_field`.

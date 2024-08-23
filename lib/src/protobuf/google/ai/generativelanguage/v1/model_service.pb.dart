@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'model.pb.dart' as $372;
+import 'model.pb.dart' as $6;
 
 /// Request for getting information about a specific Model.
 class GetModelRequest extends $pb.GeneratedMessage {
@@ -151,7 +151,7 @@ class ListModelsRequest extends $pb.GeneratedMessage {
 /// Response from `ListModel` containing a paginated list of Models.
 class ListModelsResponse extends $pb.GeneratedMessage {
   factory ListModelsResponse({
-    $core.Iterable<$372.Model>? models,
+    $core.Iterable<$6.Model>? models,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -168,7 +168,7 @@ class ListModelsResponse extends $pb.GeneratedMessage {
   factory ListModelsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListModelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
-    ..pc<$372.Model>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM, subBuilder: $372.Model.create)
+    ..pc<$6.Model>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM, subBuilder: $6.Model.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -196,7 +196,7 @@ class ListModelsResponse extends $pb.GeneratedMessage {
 
   /// The returned Models.
   @$pb.TagNumber(1)
-  $core.List<$372.Model> get models => $_getList(0);
+  $core.List<$6.Model> get models => $_getList(0);
 
   ///  A token, which can be sent as `page_token` to retrieve the next page.
   ///

@@ -16,19 +16,19 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'productinputs.pb.dart' as $1713;
+import 'productinputs.pb.dart' as $236;
 
 export 'productinputs.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.products.v1beta.ProductInputsService')
 class ProductInputsServiceClient extends $grpc.Client {
-  static final _$insertProductInput = $grpc.ClientMethod<$1713.InsertProductInputRequest, $1713.ProductInput>(
+  static final _$insertProductInput = $grpc.ClientMethod<$236.InsertProductInputRequest, $236.ProductInput>(
       '/google.shopping.merchant.products.v1beta.ProductInputsService/InsertProductInput',
-      ($1713.InsertProductInputRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1713.ProductInput.fromBuffer(value));
-  static final _$deleteProductInput = $grpc.ClientMethod<$1713.DeleteProductInputRequest, $3.Empty>(
+      ($236.InsertProductInputRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $236.ProductInput.fromBuffer(value));
+  static final _$deleteProductInput = $grpc.ClientMethod<$236.DeleteProductInputRequest, $3.Empty>(
       '/google.shopping.merchant.products.v1beta.ProductInputsService/DeleteProductInput',
-      ($1713.DeleteProductInputRequest value) => value.writeToBuffer(),
+      ($236.DeleteProductInputRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   ProductInputsServiceClient($grpc.ClientChannel channel,
@@ -37,11 +37,11 @@ class ProductInputsServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1713.ProductInput> insertProductInput($1713.InsertProductInputRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$236.ProductInput> insertProductInput($236.InsertProductInputRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertProductInput, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteProductInput($1713.DeleteProductInputRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteProductInput($236.DeleteProductInputRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteProductInput, request, options: options);
   }
 }
@@ -51,30 +51,30 @@ abstract class ProductInputsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.products.v1beta.ProductInputsService';
 
   ProductInputsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1713.InsertProductInputRequest, $1713.ProductInput>(
+    $addMethod($grpc.ServiceMethod<$236.InsertProductInputRequest, $236.ProductInput>(
         'InsertProductInput',
         insertProductInput_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1713.InsertProductInputRequest.fromBuffer(value),
-        ($1713.ProductInput value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1713.DeleteProductInputRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $236.InsertProductInputRequest.fromBuffer(value),
+        ($236.ProductInput value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$236.DeleteProductInputRequest, $3.Empty>(
         'DeleteProductInput',
         deleteProductInput_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1713.DeleteProductInputRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $236.DeleteProductInputRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1713.ProductInput> insertProductInput_Pre($grpc.ServiceCall call, $async.Future<$1713.InsertProductInputRequest> request) async {
+  $async.Future<$236.ProductInput> insertProductInput_Pre($grpc.ServiceCall call, $async.Future<$236.InsertProductInputRequest> request) async {
     return insertProductInput(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteProductInput_Pre($grpc.ServiceCall call, $async.Future<$1713.DeleteProductInputRequest> request) async {
+  $async.Future<$3.Empty> deleteProductInput_Pre($grpc.ServiceCall call, $async.Future<$236.DeleteProductInputRequest> request) async {
     return deleteProductInput(call, await request);
   }
 
-  $async.Future<$1713.ProductInput> insertProductInput($grpc.ServiceCall call, $1713.InsertProductInputRequest request);
-  $async.Future<$3.Empty> deleteProductInput($grpc.ServiceCall call, $1713.DeleteProductInputRequest request);
+  $async.Future<$236.ProductInput> insertProductInput($grpc.ServiceCall call, $236.InsertProductInputRequest request);
+  $async.Future<$3.Empty> deleteProductInput($grpc.ServiceCall call, $236.DeleteProductInputRequest request);
 }

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1776;
-import '../../../../type/interval.pb.dart' as $4257;
-import '../../../type/types.pb.dart' as $4874;
-import '../../../type/types.pbenum.dart' as $4874;
+import '../../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../../type/interval.pb.dart' as $503;
+import '../../../type/types.pb.dart' as $528;
+import '../../../type/types.pbenum.dart' as $528;
 import 'products_common.pbenum.dart';
 
 export 'products_common.pbenum.dart';
@@ -37,11 +37,11 @@ class Attributes extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? additionalImageLinks,
     $core.String? pause,
     $core.Iterable<$core.String>? lifestyleImageLinks,
-    $1776.Timestamp? expirationDate,
+    $299.Timestamp? expirationDate,
     $core.bool? adult,
     $core.String? ageGroup,
     $core.String? availability,
-    $1776.Timestamp? availabilityDate,
+    $299.Timestamp? availabilityDate,
     $core.String? brand,
     $core.String? color,
     $core.String? condition,
@@ -52,13 +52,13 @@ class Attributes extends $pb.GeneratedMessage {
     $core.String? material,
     $core.String? mpn,
     $core.String? pattern,
-    $4874.Price? price,
+    $528.Price? price,
     Installment? installment,
     SubscriptionCost? subscriptionCost,
     LoyaltyPoints? loyaltyPoints,
     $core.Iterable<$core.String>? productTypes,
-    $4874.Price? salePrice,
-    $4257.Interval? salePriceEffectiveDate,
+    $528.Price? salePrice,
+    $503.Interval? salePriceEffectiveDate,
     $fixnum.Int64? sellOnGoogleQuantity,
     $core.Iterable<Shipping>? shipping,
     ShippingWeight? shippingWeight,
@@ -83,7 +83,7 @@ class Attributes extends $pb.GeneratedMessage {
     $core.String? adsGrouping,
     $core.Iterable<$core.String>? adsLabels,
     $core.String? adsRedirect,
-    $4874.Price? costOfGoodsSold,
+    $528.Price? costOfGoodsSold,
     $core.Iterable<ProductDetail>? productDetails,
     $core.Iterable<$core.String>? productHighlights,
     $core.String? displayAdsId,
@@ -100,7 +100,7 @@ class Attributes extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? includedDestinations,
     $core.Iterable<$core.String>? excludedDestinations,
     $core.Iterable<$core.String>? shoppingAdsExcludedCountries,
-    $1776.Timestamp? disclosureDate,
+    $299.Timestamp? disclosureDate,
     $core.String? pickupMethod,
     $core.String? pickupSla,
     $core.String? linkTemplate,
@@ -111,7 +111,7 @@ class Attributes extends $pb.GeneratedMessage {
     ProductDimension? productWidth,
     ProductWeight? productWeight,
     $core.Iterable<Certification>? certifications,
-    $4874.Price? autoPricingMinPrice,
+    $528.Price? autoPricingMinPrice,
     $core.String? virtualModelLink,
     ProductStructuredTitle? structuredTitle,
     ProductStructuredDescription? structuredDescription,
@@ -414,11 +414,11 @@ class Attributes extends $pb.GeneratedMessage {
     ..pPS(12, _omitFieldNames ? '' : 'additionalImageLinks')
     ..aOS(13, _omitFieldNames ? '' : 'pause')
     ..pPS(14, _omitFieldNames ? '' : 'lifestyleImageLinks')
-    ..aOM<$1776.Timestamp>(16, _omitFieldNames ? '' : 'expirationDate', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(16, _omitFieldNames ? '' : 'expirationDate', subBuilder: $299.Timestamp.create)
     ..aOB(17, _omitFieldNames ? '' : 'adult')
     ..aOS(18, _omitFieldNames ? '' : 'ageGroup')
     ..aOS(19, _omitFieldNames ? '' : 'availability')
-    ..aOM<$1776.Timestamp>(20, _omitFieldNames ? '' : 'availabilityDate', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(20, _omitFieldNames ? '' : 'availabilityDate', subBuilder: $299.Timestamp.create)
     ..aOS(21, _omitFieldNames ? '' : 'brand')
     ..aOS(22, _omitFieldNames ? '' : 'color')
     ..aOS(23, _omitFieldNames ? '' : 'condition')
@@ -429,13 +429,13 @@ class Attributes extends $pb.GeneratedMessage {
     ..aOS(28, _omitFieldNames ? '' : 'material')
     ..aOS(29, _omitFieldNames ? '' : 'mpn')
     ..aOS(30, _omitFieldNames ? '' : 'pattern')
-    ..aOM<$4874.Price>(31, _omitFieldNames ? '' : 'price', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(31, _omitFieldNames ? '' : 'price', subBuilder: $528.Price.create)
     ..aOM<Installment>(32, _omitFieldNames ? '' : 'installment', subBuilder: Installment.create)
     ..aOM<SubscriptionCost>(33, _omitFieldNames ? '' : 'subscriptionCost', subBuilder: SubscriptionCost.create)
     ..aOM<LoyaltyPoints>(34, _omitFieldNames ? '' : 'loyaltyPoints', subBuilder: LoyaltyPoints.create)
     ..pPS(35, _omitFieldNames ? '' : 'productTypes')
-    ..aOM<$4874.Price>(36, _omitFieldNames ? '' : 'salePrice', subBuilder: $4874.Price.create)
-    ..aOM<$4257.Interval>(37, _omitFieldNames ? '' : 'salePriceEffectiveDate', subBuilder: $4257.Interval.create)
+    ..aOM<$528.Price>(36, _omitFieldNames ? '' : 'salePrice', subBuilder: $528.Price.create)
+    ..aOM<$503.Interval>(37, _omitFieldNames ? '' : 'salePriceEffectiveDate', subBuilder: $503.Interval.create)
     ..aInt64(38, _omitFieldNames ? '' : 'sellOnGoogleQuantity')
     ..pc<Shipping>(39, _omitFieldNames ? '' : 'shipping', $pb.PbFieldType.PM, subBuilder: Shipping.create)
     ..aOM<ShippingWeight>(40, _omitFieldNames ? '' : 'shippingWeight', subBuilder: ShippingWeight.create)
@@ -460,7 +460,7 @@ class Attributes extends $pb.GeneratedMessage {
     ..aOS(59, _omitFieldNames ? '' : 'adsGrouping')
     ..pPS(60, _omitFieldNames ? '' : 'adsLabels')
     ..aOS(61, _omitFieldNames ? '' : 'adsRedirect')
-    ..aOM<$4874.Price>(62, _omitFieldNames ? '' : 'costOfGoodsSold', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(62, _omitFieldNames ? '' : 'costOfGoodsSold', subBuilder: $528.Price.create)
     ..pc<ProductDetail>(63, _omitFieldNames ? '' : 'productDetails', $pb.PbFieldType.PM, subBuilder: ProductDetail.create)
     ..pPS(64, _omitFieldNames ? '' : 'productHighlights')
     ..aOS(65, _omitFieldNames ? '' : 'displayAdsId')
@@ -477,7 +477,7 @@ class Attributes extends $pb.GeneratedMessage {
     ..pPS(76, _omitFieldNames ? '' : 'includedDestinations')
     ..pPS(77, _omitFieldNames ? '' : 'excludedDestinations')
     ..pPS(78, _omitFieldNames ? '' : 'shoppingAdsExcludedCountries')
-    ..aOM<$1776.Timestamp>(79, _omitFieldNames ? '' : 'disclosureDate', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(79, _omitFieldNames ? '' : 'disclosureDate', subBuilder: $299.Timestamp.create)
     ..aOS(80, _omitFieldNames ? '' : 'pickupMethod')
     ..aOS(81, _omitFieldNames ? '' : 'pickupSla')
     ..aOS(82, _omitFieldNames ? '' : 'linkTemplate')
@@ -488,7 +488,7 @@ class Attributes extends $pb.GeneratedMessage {
     ..aOM<ProductDimension>(121, _omitFieldNames ? '' : 'productWidth', subBuilder: ProductDimension.create)
     ..aOM<ProductWeight>(122, _omitFieldNames ? '' : 'productWeight', subBuilder: ProductWeight.create)
     ..pc<Certification>(123, _omitFieldNames ? '' : 'certifications', $pb.PbFieldType.PM, subBuilder: Certification.create)
-    ..aOM<$4874.Price>(124, _omitFieldNames ? '' : 'autoPricingMinPrice', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(124, _omitFieldNames ? '' : 'autoPricingMinPrice', subBuilder: $528.Price.create)
     ..aOS(130, _omitFieldNames ? '' : 'virtualModelLink')
     ..aOM<ProductStructuredTitle>(132, _omitFieldNames ? '' : 'structuredTitle', subBuilder: ProductStructuredTitle.create)
     ..aOM<ProductStructuredDescription>(133, _omitFieldNames ? '' : 'structuredDescription', subBuilder: ProductStructuredDescription.create)
@@ -642,15 +642,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// [googleExpirationDate](https://support.google.com/merchants/answer/6324499)
   /// and might be earlier if `expirationDate` is too far in the future.
   @$pb.TagNumber(16)
-  $1776.Timestamp get expirationDate => $_getN(12);
+  $299.Timestamp get expirationDate => $_getN(12);
   @$pb.TagNumber(16)
-  set expirationDate($1776.Timestamp v) { setField(16, v); }
+  set expirationDate($299.Timestamp v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasExpirationDate() => $_has(12);
   @$pb.TagNumber(16)
   void clearExpirationDate() => clearField(16);
   @$pb.TagNumber(16)
-  $1776.Timestamp ensureExpirationDate() => $_ensure(12);
+  $299.Timestamp ensureExpirationDate() => $_ensure(12);
 
   /// Set to true if the item is targeted towards adults.
   @$pb.TagNumber(17)
@@ -686,15 +686,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// The day a pre-ordered product becomes available for delivery, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(20)
-  $1776.Timestamp get availabilityDate => $_getN(16);
+  $299.Timestamp get availabilityDate => $_getN(16);
   @$pb.TagNumber(20)
-  set availabilityDate($1776.Timestamp v) { setField(20, v); }
+  set availabilityDate($299.Timestamp v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasAvailabilityDate() => $_has(16);
   @$pb.TagNumber(20)
   void clearAvailabilityDate() => clearField(20);
   @$pb.TagNumber(20)
-  $1776.Timestamp ensureAvailabilityDate() => $_ensure(16);
+  $299.Timestamp ensureAvailabilityDate() => $_ensure(16);
 
   /// Brand of the item.
   @$pb.TagNumber(21)
@@ -806,15 +806,15 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Price of the item.
   @$pb.TagNumber(31)
-  $4874.Price get price => $_getN(27);
+  $528.Price get price => $_getN(27);
   @$pb.TagNumber(31)
-  set price($4874.Price v) { setField(31, v); }
+  set price($528.Price v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasPrice() => $_has(27);
   @$pb.TagNumber(31)
   void clearPrice() => clearField(31);
   @$pb.TagNumber(31)
-  $4874.Price ensurePrice() => $_ensure(27);
+  $528.Price ensurePrice() => $_ensure(27);
 
   /// Number and amount of installments to pay for an item.
   @$pb.TagNumber(32)
@@ -860,28 +860,28 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Advertised sale price of the item.
   @$pb.TagNumber(36)
-  $4874.Price get salePrice => $_getN(32);
+  $528.Price get salePrice => $_getN(32);
   @$pb.TagNumber(36)
-  set salePrice($4874.Price v) { setField(36, v); }
+  set salePrice($528.Price v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasSalePrice() => $_has(32);
   @$pb.TagNumber(36)
   void clearSalePrice() => clearField(36);
   @$pb.TagNumber(36)
-  $4874.Price ensureSalePrice() => $_ensure(32);
+  $528.Price ensureSalePrice() => $_ensure(32);
 
   /// Date range during which the item is on sale (see [product data
   /// specification](https://support.google.com/merchants/answer/188494#sale_price_effective_date)).
   @$pb.TagNumber(37)
-  $4257.Interval get salePriceEffectiveDate => $_getN(33);
+  $503.Interval get salePriceEffectiveDate => $_getN(33);
   @$pb.TagNumber(37)
-  set salePriceEffectiveDate($4257.Interval v) { setField(37, v); }
+  set salePriceEffectiveDate($503.Interval v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasSalePriceEffectiveDate() => $_has(33);
   @$pb.TagNumber(37)
   void clearSalePriceEffectiveDate() => clearField(37);
   @$pb.TagNumber(37)
-  $4257.Interval ensureSalePriceEffectiveDate() => $_ensure(33);
+  $503.Interval ensureSalePriceEffectiveDate() => $_ensure(33);
 
   /// The quantity of the product that is available for selling on Google.
   /// Supported only for online products.
@@ -1124,15 +1124,15 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Cost of goods sold. Used for gross profit reporting.
   @$pb.TagNumber(62)
-  $4874.Price get costOfGoodsSold => $_getN(58);
+  $528.Price get costOfGoodsSold => $_getN(58);
   @$pb.TagNumber(62)
-  set costOfGoodsSold($4874.Price v) { setField(62, v); }
+  set costOfGoodsSold($528.Price v) { setField(62, v); }
   @$pb.TagNumber(62)
   $core.bool hasCostOfGoodsSold() => $_has(58);
   @$pb.TagNumber(62)
   void clearCostOfGoodsSold() => clearField(62);
   @$pb.TagNumber(62)
-  $4874.Price ensureCostOfGoodsSold() => $_ensure(58);
+  $528.Price ensureCostOfGoodsSold() => $_ensure(58);
 
   /// Technical specification or additional product details.
   @$pb.TagNumber(63)
@@ -1264,15 +1264,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format. See [Disclosure date](
   /// https://support.google.com/merchants/answer/13034208) for more information.
   @$pb.TagNumber(79)
-  $1776.Timestamp get disclosureDate => $_getN(75);
+  $299.Timestamp get disclosureDate => $_getN(75);
   @$pb.TagNumber(79)
-  set disclosureDate($1776.Timestamp v) { setField(79, v); }
+  set disclosureDate($299.Timestamp v) { setField(79, v); }
   @$pb.TagNumber(79)
   $core.bool hasDisclosureDate() => $_has(75);
   @$pb.TagNumber(79)
   void clearDisclosureDate() => clearField(79);
   @$pb.TagNumber(79)
-  $1776.Timestamp ensureDisclosureDate() => $_ensure(75);
+  $299.Timestamp ensureDisclosureDate() => $_ensure(75);
 
   /// The pick up option for the item.
   @$pb.TagNumber(80)
@@ -1387,15 +1387,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// ensuring that discounts on merchants' offers do not fall below this value,
   /// thereby preserving the offer's value and profitability.
   @$pb.TagNumber(124)
-  $4874.Price get autoPricingMinPrice => $_getN(86);
+  $528.Price get autoPricingMinPrice => $_getN(86);
   @$pb.TagNumber(124)
-  set autoPricingMinPrice($4874.Price v) { setField(124, v); }
+  set autoPricingMinPrice($528.Price v) { setField(124, v); }
   @$pb.TagNumber(124)
   $core.bool hasAutoPricingMinPrice() => $_has(86);
   @$pb.TagNumber(124)
   void clearAutoPricingMinPrice() => clearField(124);
   @$pb.TagNumber(124)
-  $4874.Price ensureAutoPricingMinPrice() => $_ensure(86);
+  $528.Price ensureAutoPricingMinPrice() => $_ensure(86);
 
   /// URL of the 3D image of the item. See the
   /// [Help Center article](https://support.google.com/merchants/answer/13674896)
@@ -1853,7 +1853,7 @@ class SubscriptionCost extends $pb.GeneratedMessage {
   factory SubscriptionCost({
     SubscriptionPeriod? period,
     $fixnum.Int64? periodLength,
-    $4874.Price? amount,
+    $528.Price? amount,
   }) {
     final $result = create();
     if (period != null) {
@@ -1874,7 +1874,7 @@ class SubscriptionCost extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SubscriptionCost', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
     ..e<SubscriptionPeriod>(1, _omitFieldNames ? '' : 'period', $pb.PbFieldType.OE, defaultOrMaker: SubscriptionPeriod.SUBSCRIPTION_PERIOD_UNSPECIFIED, valueOf: SubscriptionPeriod.valueOf, enumValues: SubscriptionPeriod.values)
     ..aInt64(2, _omitFieldNames ? '' : 'periodLength')
-    ..aOM<$4874.Price>(3, _omitFieldNames ? '' : 'amount', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(3, _omitFieldNames ? '' : 'amount', subBuilder: $528.Price.create)
     ..hasRequiredFields = false
   ;
 
@@ -1924,23 +1924,23 @@ class SubscriptionCost extends $pb.GeneratedMessage {
 
   /// The amount the buyer has to pay per subscription period.
   @$pb.TagNumber(3)
-  $4874.Price get amount => $_getN(2);
+  $528.Price get amount => $_getN(2);
   @$pb.TagNumber(3)
-  set amount($4874.Price v) { setField(3, v); }
+  set amount($528.Price v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAmount() => $_has(2);
   @$pb.TagNumber(3)
   void clearAmount() => clearField(3);
   @$pb.TagNumber(3)
-  $4874.Price ensureAmount() => $_ensure(2);
+  $528.Price ensureAmount() => $_ensure(2);
 }
 
 /// A message that represents installment.
 class Installment extends $pb.GeneratedMessage {
   factory Installment({
     $fixnum.Int64? months,
-    $4874.Price? amount,
-    $4874.Price? downpayment,
+    $528.Price? amount,
+    $528.Price? downpayment,
     $core.String? creditType,
   }) {
     final $result = create();
@@ -1964,8 +1964,8 @@ class Installment extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Installment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'months')
-    ..aOM<$4874.Price>(2, _omitFieldNames ? '' : 'amount', subBuilder: $4874.Price.create)
-    ..aOM<$4874.Price>(3, _omitFieldNames ? '' : 'downpayment', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(2, _omitFieldNames ? '' : 'amount', subBuilder: $528.Price.create)
+    ..aOM<$528.Price>(3, _omitFieldNames ? '' : 'downpayment', subBuilder: $528.Price.create)
     ..aOS(4, _omitFieldNames ? '' : 'creditType')
     ..hasRequiredFields = false
   ;
@@ -2003,27 +2003,27 @@ class Installment extends $pb.GeneratedMessage {
 
   /// The amount the buyer has to pay per month.
   @$pb.TagNumber(2)
-  $4874.Price get amount => $_getN(1);
+  $528.Price get amount => $_getN(1);
   @$pb.TagNumber(2)
-  set amount($4874.Price v) { setField(2, v); }
+  set amount($528.Price v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAmount() => $_has(1);
   @$pb.TagNumber(2)
   void clearAmount() => clearField(2);
   @$pb.TagNumber(2)
-  $4874.Price ensureAmount() => $_ensure(1);
+  $528.Price ensureAmount() => $_ensure(1);
 
   /// The up-front down payment amount the buyer has to pay.
   @$pb.TagNumber(3)
-  $4874.Price get downpayment => $_getN(2);
+  $528.Price get downpayment => $_getN(2);
   @$pb.TagNumber(3)
-  set downpayment($4874.Price v) { setField(3, v); }
+  set downpayment($528.Price v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDownpayment() => $_has(2);
   @$pb.TagNumber(3)
   void clearDownpayment() => clearField(3);
   @$pb.TagNumber(3)
-  $4874.Price ensureDownpayment() => $_ensure(2);
+  $528.Price ensureDownpayment() => $_ensure(2);
 
   /// Type of installment payments.
   /// Supported values are:
@@ -2129,8 +2129,8 @@ class LoyaltyProgram extends $pb.GeneratedMessage {
   factory LoyaltyProgram({
     $core.String? programLabel,
     $core.String? tierLabel,
-    $4874.Price? price,
-    $4874.Price? cashbackForFutureUse,
+    $528.Price? price,
+    $528.Price? cashbackForFutureUse,
     $fixnum.Int64? loyaltyPoints,
   }) {
     final $result = create();
@@ -2158,8 +2158,8 @@ class LoyaltyProgram extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LoyaltyProgram', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'programLabel')
     ..aOS(2, _omitFieldNames ? '' : 'tierLabel')
-    ..aOM<$4874.Price>(3, _omitFieldNames ? '' : 'price', subBuilder: $4874.Price.create)
-    ..aOM<$4874.Price>(4, _omitFieldNames ? '' : 'cashbackForFutureUse', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(3, _omitFieldNames ? '' : 'price', subBuilder: $528.Price.create)
+    ..aOM<$528.Price>(4, _omitFieldNames ? '' : 'cashbackForFutureUse', subBuilder: $528.Price.create)
     ..aInt64(5, _omitFieldNames ? '' : 'loyaltyPoints')
     ..hasRequiredFields = false
   ;
@@ -2213,27 +2213,27 @@ class LoyaltyProgram extends $pb.GeneratedMessage {
   /// The price for members of the given tier, that is, the instant discount
   /// price. Must be smaller or equal to the regular price.
   @$pb.TagNumber(3)
-  $4874.Price get price => $_getN(2);
+  $528.Price get price => $_getN(2);
   @$pb.TagNumber(3)
-  set price($4874.Price v) { setField(3, v); }
+  set price($528.Price v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPrice() => $_has(2);
   @$pb.TagNumber(3)
   void clearPrice() => clearField(3);
   @$pb.TagNumber(3)
-  $4874.Price ensurePrice() => $_ensure(2);
+  $528.Price ensurePrice() => $_ensure(2);
 
   /// The cashback that can be used for future purchases.
   @$pb.TagNumber(4)
-  $4874.Price get cashbackForFutureUse => $_getN(3);
+  $528.Price get cashbackForFutureUse => $_getN(3);
   @$pb.TagNumber(4)
-  set cashbackForFutureUse($4874.Price v) { setField(4, v); }
+  set cashbackForFutureUse($528.Price v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCashbackForFutureUse() => $_has(3);
   @$pb.TagNumber(4)
   void clearCashbackForFutureUse() => clearField(4);
   @$pb.TagNumber(4)
-  $4874.Price ensureCashbackForFutureUse() => $_ensure(3);
+  $528.Price ensureCashbackForFutureUse() => $_ensure(3);
 
   /// The amount of loyalty points earned on a purchase.
   @$pb.TagNumber(5)
@@ -2249,7 +2249,7 @@ class LoyaltyProgram extends $pb.GeneratedMessage {
 /// The Shipping of the product.
 class Shipping extends $pb.GeneratedMessage {
   factory Shipping({
-    $4874.Price? price,
+    $528.Price? price,
     $core.String? country,
     $core.String? region,
     $core.String? service,
@@ -2302,7 +2302,7 @@ class Shipping extends $pb.GeneratedMessage {
   factory Shipping.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Shipping', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
-    ..aOM<$4874.Price>(1, _omitFieldNames ? '' : 'price', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(1, _omitFieldNames ? '' : 'price', subBuilder: $528.Price.create)
     ..aOS(2, _omitFieldNames ? '' : 'country')
     ..aOS(3, _omitFieldNames ? '' : 'region')
     ..aOS(4, _omitFieldNames ? '' : 'service')
@@ -2339,15 +2339,15 @@ class Shipping extends $pb.GeneratedMessage {
 
   /// Fixed shipping price, represented as a number.
   @$pb.TagNumber(1)
-  $4874.Price get price => $_getN(0);
+  $528.Price get price => $_getN(0);
   @$pb.TagNumber(1)
-  set price($4874.Price v) { setField(1, v); }
+  set price($528.Price v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPrice() => $_has(0);
   @$pb.TagNumber(1)
   void clearPrice() => clearField(1);
   @$pb.TagNumber(1)
-  $4874.Price ensurePrice() => $_ensure(0);
+  $528.Price ensurePrice() => $_ensure(0);
 
   /// The [CLDR territory
   /// code](http://www.unicode.org/repos/cldr/tags/latest/common/main/en.xml)
@@ -2499,7 +2499,7 @@ class Shipping extends $pb.GeneratedMessage {
 class FreeShippingThreshold extends $pb.GeneratedMessage {
   factory FreeShippingThreshold({
     $core.String? country,
-    $4874.Price? priceThreshold,
+    $528.Price? priceThreshold,
   }) {
     final $result = create();
     if (country != null) {
@@ -2516,7 +2516,7 @@ class FreeShippingThreshold extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FreeShippingThreshold', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'country')
-    ..aOM<$4874.Price>(2, _omitFieldNames ? '' : 'priceThreshold', subBuilder: $4874.Price.create)
+    ..aOM<$528.Price>(2, _omitFieldNames ? '' : 'priceThreshold', subBuilder: $528.Price.create)
     ..hasRequiredFields = false
   ;
 
@@ -2556,15 +2556,15 @@ class FreeShippingThreshold extends $pb.GeneratedMessage {
   /// The minimum product price for the shipping cost to become free. Represented
   /// as a number.
   @$pb.TagNumber(2)
-  $4874.Price get priceThreshold => $_getN(1);
+  $528.Price get priceThreshold => $_getN(1);
   @$pb.TagNumber(2)
-  set priceThreshold($4874.Price v) { setField(2, v); }
+  set priceThreshold($528.Price v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPriceThreshold() => $_has(1);
   @$pb.TagNumber(2)
   void clearPriceThreshold() => clearField(2);
   @$pb.TagNumber(2)
-  $4874.Price ensurePriceThreshold() => $_ensure(1);
+  $528.Price ensurePriceThreshold() => $_ensure(1);
 }
 
 /// The product details.
@@ -3041,7 +3041,7 @@ class ProductWeight extends $pb.GeneratedMessage {
 /// The destination status of the product status.
 class ProductStatus_DestinationStatus extends $pb.GeneratedMessage {
   factory ProductStatus_DestinationStatus({
-    $4874.ReportingContext_ReportingContextEnum? reportingContext,
+    $528.ReportingContext_ReportingContextEnum? reportingContext,
     $core.Iterable<$core.String>? approvedCountries,
     $core.Iterable<$core.String>? pendingCountries,
     $core.Iterable<$core.String>? disapprovedCountries,
@@ -3066,7 +3066,7 @@ class ProductStatus_DestinationStatus extends $pb.GeneratedMessage {
   factory ProductStatus_DestinationStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductStatus.DestinationStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
-    ..e<$4874.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $4874.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $4874.ReportingContext_ReportingContextEnum.valueOf, enumValues: $4874.ReportingContext_ReportingContextEnum.values)
+    ..e<$528.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $528.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $528.ReportingContext_ReportingContextEnum.valueOf, enumValues: $528.ReportingContext_ReportingContextEnum.values)
     ..pPS(2, _omitFieldNames ? '' : 'approvedCountries')
     ..pPS(3, _omitFieldNames ? '' : 'pendingCountries')
     ..pPS(4, _omitFieldNames ? '' : 'disapprovedCountries')
@@ -3096,9 +3096,9 @@ class ProductStatus_DestinationStatus extends $pb.GeneratedMessage {
 
   /// The name of the reporting context.
   @$pb.TagNumber(1)
-  $4874.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $528.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($4874.ReportingContext_ReportingContextEnum v) { setField(1, v); }
+  set reportingContext($528.ReportingContext_ReportingContextEnum v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReportingContext() => $_has(0);
   @$pb.TagNumber(1)
@@ -3126,7 +3126,7 @@ class ProductStatus_ItemLevelIssue extends $pb.GeneratedMessage {
     ProductStatus_ItemLevelIssue_Severity? severity,
     $core.String? resolution,
     $core.String? attribute,
-    $4874.ReportingContext_ReportingContextEnum? reportingContext,
+    $528.ReportingContext_ReportingContextEnum? reportingContext,
     $core.String? description,
     $core.String? detail,
     $core.String? documentation,
@@ -3171,7 +3171,7 @@ class ProductStatus_ItemLevelIssue extends $pb.GeneratedMessage {
     ..e<ProductStatus_ItemLevelIssue_Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: ProductStatus_ItemLevelIssue_Severity.SEVERITY_UNSPECIFIED, valueOf: ProductStatus_ItemLevelIssue_Severity.valueOf, enumValues: ProductStatus_ItemLevelIssue_Severity.values)
     ..aOS(3, _omitFieldNames ? '' : 'resolution')
     ..aOS(4, _omitFieldNames ? '' : 'attribute')
-    ..e<$4874.ReportingContext_ReportingContextEnum>(5, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $4874.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $4874.ReportingContext_ReportingContextEnum.valueOf, enumValues: $4874.ReportingContext_ReportingContextEnum.values)
+    ..e<$528.ReportingContext_ReportingContextEnum>(5, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $528.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $528.ReportingContext_ReportingContextEnum.valueOf, enumValues: $528.ReportingContext_ReportingContextEnum.values)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOS(7, _omitFieldNames ? '' : 'detail')
     ..aOS(8, _omitFieldNames ? '' : 'documentation')
@@ -3242,9 +3242,9 @@ class ProductStatus_ItemLevelIssue extends $pb.GeneratedMessage {
 
   /// The reporting context the issue applies to.
   @$pb.TagNumber(5)
-  $4874.ReportingContext_ReportingContextEnum get reportingContext => $_getN(4);
+  $528.ReportingContext_ReportingContextEnum get reportingContext => $_getN(4);
   @$pb.TagNumber(5)
-  set reportingContext($4874.ReportingContext_ReportingContextEnum v) { setField(5, v); }
+  set reportingContext($528.ReportingContext_ReportingContextEnum v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReportingContext() => $_has(4);
   @$pb.TagNumber(5)
@@ -3292,9 +3292,9 @@ class ProductStatus extends $pb.GeneratedMessage {
   factory ProductStatus({
     $core.Iterable<ProductStatus_DestinationStatus>? destinationStatuses,
     $core.Iterable<ProductStatus_ItemLevelIssue>? itemLevelIssues,
-    $1776.Timestamp? creationDate,
-    $1776.Timestamp? lastUpdateDate,
-    $1776.Timestamp? googleExpirationDate,
+    $299.Timestamp? creationDate,
+    $299.Timestamp? lastUpdateDate,
+    $299.Timestamp? googleExpirationDate,
   }) {
     final $result = create();
     if (destinationStatuses != null) {
@@ -3321,9 +3321,9 @@ class ProductStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
     ..pc<ProductStatus_DestinationStatus>(3, _omitFieldNames ? '' : 'destinationStatuses', $pb.PbFieldType.PM, subBuilder: ProductStatus_DestinationStatus.create)
     ..pc<ProductStatus_ItemLevelIssue>(4, _omitFieldNames ? '' : 'itemLevelIssues', $pb.PbFieldType.PM, subBuilder: ProductStatus_ItemLevelIssue.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'creationDate', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateDate', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'googleExpirationDate', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'creationDate', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateDate', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'googleExpirationDate', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3359,41 +3359,41 @@ class ProductStatus extends $pb.GeneratedMessage {
   /// Date on which the item has been created, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(5)
-  $1776.Timestamp get creationDate => $_getN(2);
+  $299.Timestamp get creationDate => $_getN(2);
   @$pb.TagNumber(5)
-  set creationDate($1776.Timestamp v) { setField(5, v); }
+  set creationDate($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreationDate() => $_has(2);
   @$pb.TagNumber(5)
   void clearCreationDate() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureCreationDate() => $_ensure(2);
+  $299.Timestamp ensureCreationDate() => $_ensure(2);
 
   /// Date on which the item has been last updated, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(6)
-  $1776.Timestamp get lastUpdateDate => $_getN(3);
+  $299.Timestamp get lastUpdateDate => $_getN(3);
   @$pb.TagNumber(6)
-  set lastUpdateDate($1776.Timestamp v) { setField(6, v); }
+  set lastUpdateDate($299.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLastUpdateDate() => $_has(3);
   @$pb.TagNumber(6)
   void clearLastUpdateDate() => clearField(6);
   @$pb.TagNumber(6)
-  $1776.Timestamp ensureLastUpdateDate() => $_ensure(3);
+  $299.Timestamp ensureLastUpdateDate() => $_ensure(3);
 
   /// Date on which the item expires, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(7)
-  $1776.Timestamp get googleExpirationDate => $_getN(4);
+  $299.Timestamp get googleExpirationDate => $_getN(4);
   @$pb.TagNumber(7)
-  set googleExpirationDate($1776.Timestamp v) { setField(7, v); }
+  set googleExpirationDate($299.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGoogleExpirationDate() => $_has(4);
   @$pb.TagNumber(7)
   void clearGoogleExpirationDate() => clearField(7);
   @$pb.TagNumber(7)
-  $1776.Timestamp ensureGoogleExpirationDate() => $_ensure(4);
+  $299.Timestamp ensureGoogleExpirationDate() => $_ensure(4);
 }
 
 /// Product property for the Cloud Retail API.

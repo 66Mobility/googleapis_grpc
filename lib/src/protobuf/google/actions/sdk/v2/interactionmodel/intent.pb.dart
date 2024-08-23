@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'type/class_reference.pb.dart' as $1752;
+import 'type/class_reference.pb.dart' as $275;
 
 /// A reference to the set of allowed entities for this intent parameter.
 class Intent_IntentParameter_EntitySetReferences_EntitySetReference extends $pb.GeneratedMessage {
@@ -125,7 +125,7 @@ enum Intent_IntentParameter_ParameterType {
 class Intent_IntentParameter extends $pb.GeneratedMessage {
   factory Intent_IntentParameter({
     $core.String? name,
-    $1752.ClassReference? type,
+    $275.ClassReference? type,
     Intent_IntentParameter_EntitySetReferences? entitySetReferences,
   }) {
     final $result = create();
@@ -152,7 +152,7 @@ class Intent_IntentParameter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Intent.IntentParameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1752.ClassReference>(2, _omitFieldNames ? '' : 'type', subBuilder: $1752.ClassReference.create)
+    ..aOM<$275.ClassReference>(2, _omitFieldNames ? '' : 'type', subBuilder: $275.ClassReference.create)
     ..aOM<Intent_IntentParameter_EntitySetReferences>(3, _omitFieldNames ? '' : 'entitySetReferences', subBuilder: Intent_IntentParameter_EntitySetReferences.create)
     ..hasRequiredFields = false
   ;
@@ -196,15 +196,15 @@ class Intent_IntentParameter extends $pb.GeneratedMessage {
   /// Optional. Declares the data type of this parameter.
   /// This should not be set for built-in intents.
   @$pb.TagNumber(2)
-  $1752.ClassReference get type => $_getN(1);
+  $275.ClassReference get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($1752.ClassReference v) { setField(2, v); }
+  set type($275.ClassReference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $1752.ClassReference ensureType() => $_ensure(1);
+  $275.ClassReference ensureType() => $_ensure(1);
 
   /// Optional. References to the sets of allowed entities for this intent parameter.
   /// Only valid for parameters of a built-in intent. These

@@ -16,28 +16,28 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'lfpstore.pb.dart' as $1711;
+import 'lfpstore.pb.dart' as $234;
 
 export 'lfpstore.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.lfp.v1beta.LfpStoreService')
 class LfpStoreServiceClient extends $grpc.Client {
-  static final _$getLfpStore = $grpc.ClientMethod<$1711.GetLfpStoreRequest, $1711.LfpStore>(
+  static final _$getLfpStore = $grpc.ClientMethod<$234.GetLfpStoreRequest, $234.LfpStore>(
       '/google.shopping.merchant.lfp.v1beta.LfpStoreService/GetLfpStore',
-      ($1711.GetLfpStoreRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1711.LfpStore.fromBuffer(value));
-  static final _$insertLfpStore = $grpc.ClientMethod<$1711.InsertLfpStoreRequest, $1711.LfpStore>(
+      ($234.GetLfpStoreRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $234.LfpStore.fromBuffer(value));
+  static final _$insertLfpStore = $grpc.ClientMethod<$234.InsertLfpStoreRequest, $234.LfpStore>(
       '/google.shopping.merchant.lfp.v1beta.LfpStoreService/InsertLfpStore',
-      ($1711.InsertLfpStoreRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1711.LfpStore.fromBuffer(value));
-  static final _$deleteLfpStore = $grpc.ClientMethod<$1711.DeleteLfpStoreRequest, $3.Empty>(
+      ($234.InsertLfpStoreRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $234.LfpStore.fromBuffer(value));
+  static final _$deleteLfpStore = $grpc.ClientMethod<$234.DeleteLfpStoreRequest, $3.Empty>(
       '/google.shopping.merchant.lfp.v1beta.LfpStoreService/DeleteLfpStore',
-      ($1711.DeleteLfpStoreRequest value) => value.writeToBuffer(),
+      ($234.DeleteLfpStoreRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$listLfpStores = $grpc.ClientMethod<$1711.ListLfpStoresRequest, $1711.ListLfpStoresResponse>(
+  static final _$listLfpStores = $grpc.ClientMethod<$234.ListLfpStoresRequest, $234.ListLfpStoresResponse>(
       '/google.shopping.merchant.lfp.v1beta.LfpStoreService/ListLfpStores',
-      ($1711.ListLfpStoresRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1711.ListLfpStoresResponse.fromBuffer(value));
+      ($234.ListLfpStoresRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $234.ListLfpStoresResponse.fromBuffer(value));
 
   LfpStoreServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -45,19 +45,19 @@ class LfpStoreServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1711.LfpStore> getLfpStore($1711.GetLfpStoreRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$234.LfpStore> getLfpStore($234.GetLfpStoreRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getLfpStore, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1711.LfpStore> insertLfpStore($1711.InsertLfpStoreRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$234.LfpStore> insertLfpStore($234.InsertLfpStoreRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertLfpStore, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteLfpStore($1711.DeleteLfpStoreRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteLfpStore($234.DeleteLfpStoreRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteLfpStore, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1711.ListLfpStoresResponse> listLfpStores($1711.ListLfpStoresRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$234.ListLfpStoresResponse> listLfpStores($234.ListLfpStoresRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listLfpStores, request, options: options);
   }
 }
@@ -67,54 +67,54 @@ abstract class LfpStoreServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.lfp.v1beta.LfpStoreService';
 
   LfpStoreServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1711.GetLfpStoreRequest, $1711.LfpStore>(
+    $addMethod($grpc.ServiceMethod<$234.GetLfpStoreRequest, $234.LfpStore>(
         'GetLfpStore',
         getLfpStore_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1711.GetLfpStoreRequest.fromBuffer(value),
-        ($1711.LfpStore value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1711.InsertLfpStoreRequest, $1711.LfpStore>(
+        ($core.List<$core.int> value) => $234.GetLfpStoreRequest.fromBuffer(value),
+        ($234.LfpStore value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$234.InsertLfpStoreRequest, $234.LfpStore>(
         'InsertLfpStore',
         insertLfpStore_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1711.InsertLfpStoreRequest.fromBuffer(value),
-        ($1711.LfpStore value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1711.DeleteLfpStoreRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $234.InsertLfpStoreRequest.fromBuffer(value),
+        ($234.LfpStore value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$234.DeleteLfpStoreRequest, $3.Empty>(
         'DeleteLfpStore',
         deleteLfpStore_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1711.DeleteLfpStoreRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $234.DeleteLfpStoreRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1711.ListLfpStoresRequest, $1711.ListLfpStoresResponse>(
+    $addMethod($grpc.ServiceMethod<$234.ListLfpStoresRequest, $234.ListLfpStoresResponse>(
         'ListLfpStores',
         listLfpStores_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1711.ListLfpStoresRequest.fromBuffer(value),
-        ($1711.ListLfpStoresResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $234.ListLfpStoresRequest.fromBuffer(value),
+        ($234.ListLfpStoresResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1711.LfpStore> getLfpStore_Pre($grpc.ServiceCall call, $async.Future<$1711.GetLfpStoreRequest> request) async {
+  $async.Future<$234.LfpStore> getLfpStore_Pre($grpc.ServiceCall call, $async.Future<$234.GetLfpStoreRequest> request) async {
     return getLfpStore(call, await request);
   }
 
-  $async.Future<$1711.LfpStore> insertLfpStore_Pre($grpc.ServiceCall call, $async.Future<$1711.InsertLfpStoreRequest> request) async {
+  $async.Future<$234.LfpStore> insertLfpStore_Pre($grpc.ServiceCall call, $async.Future<$234.InsertLfpStoreRequest> request) async {
     return insertLfpStore(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteLfpStore_Pre($grpc.ServiceCall call, $async.Future<$1711.DeleteLfpStoreRequest> request) async {
+  $async.Future<$3.Empty> deleteLfpStore_Pre($grpc.ServiceCall call, $async.Future<$234.DeleteLfpStoreRequest> request) async {
     return deleteLfpStore(call, await request);
   }
 
-  $async.Future<$1711.ListLfpStoresResponse> listLfpStores_Pre($grpc.ServiceCall call, $async.Future<$1711.ListLfpStoresRequest> request) async {
+  $async.Future<$234.ListLfpStoresResponse> listLfpStores_Pre($grpc.ServiceCall call, $async.Future<$234.ListLfpStoresRequest> request) async {
     return listLfpStores(call, await request);
   }
 
-  $async.Future<$1711.LfpStore> getLfpStore($grpc.ServiceCall call, $1711.GetLfpStoreRequest request);
-  $async.Future<$1711.LfpStore> insertLfpStore($grpc.ServiceCall call, $1711.InsertLfpStoreRequest request);
-  $async.Future<$3.Empty> deleteLfpStore($grpc.ServiceCall call, $1711.DeleteLfpStoreRequest request);
-  $async.Future<$1711.ListLfpStoresResponse> listLfpStores($grpc.ServiceCall call, $1711.ListLfpStoresRequest request);
+  $async.Future<$234.LfpStore> getLfpStore($grpc.ServiceCall call, $234.GetLfpStoreRequest request);
+  $async.Future<$234.LfpStore> insertLfpStore($grpc.ServiceCall call, $234.InsertLfpStoreRequest request);
+  $async.Future<$3.Empty> deleteLfpStore($grpc.ServiceCall call, $234.DeleteLfpStoreRequest request);
+  $async.Future<$234.ListLfpStoresResponse> listLfpStores($grpc.ServiceCall call, $234.ListLfpStoresRequest request);
 }

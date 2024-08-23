@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $1735;
-import '../../protobuf/timestamp.pb.dart' as $1776;
+import '../../protobuf/struct.pb.dart' as $258;
+import '../../protobuf/timestamp.pb.dart' as $299;
 import 'messages.pbenum.dart';
 
 export 'messages.pbenum.dart';
@@ -24,7 +24,7 @@ export 'messages.pbenum.dart';
 class JobMessage extends $pb.GeneratedMessage {
   factory JobMessage({
     $core.String? id,
-    $1776.Timestamp? time,
+    $299.Timestamp? time,
     $core.String? messageText,
     JobMessageImportance? messageImportance,
   }) {
@@ -49,7 +49,7 @@ class JobMessage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'JobMessage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'time', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'time', subBuilder: $299.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'messageText')
     ..e<JobMessageImportance>(4, _omitFieldNames ? '' : 'messageImportance', $pb.PbFieldType.OE, defaultOrMaker: JobMessageImportance.JOB_MESSAGE_IMPORTANCE_UNKNOWN, valueOf: JobMessageImportance.valueOf, enumValues: JobMessageImportance.values)
     ..hasRequiredFields = false
@@ -88,15 +88,15 @@ class JobMessage extends $pb.GeneratedMessage {
 
   /// The timestamp of the message.
   @$pb.TagNumber(2)
-  $1776.Timestamp get time => $_getN(1);
+  $299.Timestamp get time => $_getN(1);
   @$pb.TagNumber(2)
-  set time($1776.Timestamp v) { setField(2, v); }
+  set time($299.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1776.Timestamp ensureTime() => $_ensure(1);
+  $299.Timestamp ensureTime() => $_ensure(1);
 
   /// The text of the message.
   @$pb.TagNumber(3)
@@ -123,7 +123,7 @@ class JobMessage extends $pb.GeneratedMessage {
 class StructuredMessage_Parameter extends $pb.GeneratedMessage {
   factory StructuredMessage_Parameter({
     $core.String? key,
-    $1735.Value? value,
+    $258.Value? value,
   }) {
     final $result = create();
     if (key != null) {
@@ -140,7 +140,7 @@ class StructuredMessage_Parameter extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredMessage.Parameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.dataflow.v1beta3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..aOM<$1735.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $1735.Value.create)
+    ..aOM<$258.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $258.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -177,15 +177,15 @@ class StructuredMessage_Parameter extends $pb.GeneratedMessage {
 
   /// Value for this parameter.
   @$pb.TagNumber(2)
-  $1735.Value get value => $_getN(1);
+  $258.Value get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($1735.Value v) { setField(2, v); }
+  set value($258.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $1735.Value ensureValue() => $_ensure(1);
+  $258.Value ensureValue() => $_ensure(1);
 }
 
 /// A rich message format, including a human readable string, a key for
@@ -275,7 +275,7 @@ class AutoscalingEvent extends $pb.GeneratedMessage {
     $fixnum.Int64? targetNumWorkers,
     AutoscalingEvent_AutoscalingEventType? eventType,
     StructuredMessage? description,
-    $1776.Timestamp? time,
+    $299.Timestamp? time,
     $core.String? workerPool,
   }) {
     final $result = create();
@@ -308,7 +308,7 @@ class AutoscalingEvent extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'targetNumWorkers')
     ..e<AutoscalingEvent_AutoscalingEventType>(3, _omitFieldNames ? '' : 'eventType', $pb.PbFieldType.OE, defaultOrMaker: AutoscalingEvent_AutoscalingEventType.TYPE_UNKNOWN, valueOf: AutoscalingEvent_AutoscalingEventType.valueOf, enumValues: AutoscalingEvent_AutoscalingEventType.values)
     ..aOM<StructuredMessage>(4, _omitFieldNames ? '' : 'description', subBuilder: StructuredMessage.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'time', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'time', subBuilder: $299.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'workerPool')
     ..hasRequiredFields = false
   ;
@@ -381,15 +381,15 @@ class AutoscalingEvent extends $pb.GeneratedMessage {
   /// The time this event was emitted to indicate a new target or current
   /// num_workers value.
   @$pb.TagNumber(5)
-  $1776.Timestamp get time => $_getN(4);
+  $299.Timestamp get time => $_getN(4);
   @$pb.TagNumber(5)
-  set time($1776.Timestamp v) { setField(5, v); }
+  set time($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureTime() => $_ensure(4);
+  $299.Timestamp ensureTime() => $_ensure(4);
 
   /// A short and friendly name for the worker pool this event refers to.
   @$pb.TagNumber(7)
@@ -413,8 +413,8 @@ class ListJobMessagesRequest extends $pb.GeneratedMessage {
     JobMessageImportance? minimumImportance,
     $core.int? pageSize,
     $core.String? pageToken,
-    $1776.Timestamp? startTime,
-    $1776.Timestamp? endTime,
+    $299.Timestamp? startTime,
+    $299.Timestamp? endTime,
     $core.String? location,
   }) {
     final $result = create();
@@ -454,8 +454,8 @@ class ListJobMessagesRequest extends $pb.GeneratedMessage {
     ..e<JobMessageImportance>(3, _omitFieldNames ? '' : 'minimumImportance', $pb.PbFieldType.OE, defaultOrMaker: JobMessageImportance.JOB_MESSAGE_IMPORTANCE_UNKNOWN, valueOf: JobMessageImportance.valueOf, enumValues: JobMessageImportance.values)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
-    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'location')
     ..hasRequiredFields = false
   ;
@@ -538,28 +538,28 @@ class ListJobMessagesRequest extends $pb.GeneratedMessage {
   /// If specified, return only messages with timestamps >= start_time.
   /// The default is the job creation time (i.e. beginning of messages).
   @$pb.TagNumber(6)
-  $1776.Timestamp get startTime => $_getN(5);
+  $299.Timestamp get startTime => $_getN(5);
   @$pb.TagNumber(6)
-  set startTime($1776.Timestamp v) { setField(6, v); }
+  set startTime($299.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStartTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1776.Timestamp ensureStartTime() => $_ensure(5);
+  $299.Timestamp ensureStartTime() => $_ensure(5);
 
   /// Return only messages with timestamps < end_time. The default is now
   /// (i.e. return up to the latest messages available).
   @$pb.TagNumber(7)
-  $1776.Timestamp get endTime => $_getN(6);
+  $299.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
-  set endTime($1776.Timestamp v) { setField(7, v); }
+  set endTime($299.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $1776.Timestamp ensureEndTime() => $_ensure(6);
+  $299.Timestamp ensureEndTime() => $_ensure(6);
 
   /// The [regional endpoint]
   /// (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
-import 'metrics_scope.pb.dart' as $1666;
+import '../../../protobuf/timestamp.pb.dart' as $299;
+import 'metrics_scope.pb.dart' as $189;
 import 'metrics_scopes.pbenum.dart';
 
 export 'metrics_scopes.pbenum.dart';
@@ -130,7 +130,7 @@ class ListMetricsScopesByMonitoredProjectRequest extends $pb.GeneratedMessage {
 /// Response for the `ListMetricsScopesByMonitoredProject` method.
 class ListMetricsScopesByMonitoredProjectResponse extends $pb.GeneratedMessage {
   factory ListMetricsScopesByMonitoredProjectResponse({
-    $core.Iterable<$1666.MetricsScope>? metricsScopes,
+    $core.Iterable<$189.MetricsScope>? metricsScopes,
   }) {
     final $result = create();
     if (metricsScopes != null) {
@@ -143,7 +143,7 @@ class ListMetricsScopesByMonitoredProjectResponse extends $pb.GeneratedMessage {
   factory ListMetricsScopesByMonitoredProjectResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMetricsScopesByMonitoredProjectResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'), createEmptyInstance: create)
-    ..pc<$1666.MetricsScope>(1, _omitFieldNames ? '' : 'metricsScopes', $pb.PbFieldType.PM, subBuilder: $1666.MetricsScope.create)
+    ..pc<$189.MetricsScope>(1, _omitFieldNames ? '' : 'metricsScopes', $pb.PbFieldType.PM, subBuilder: $189.MetricsScope.create)
     ..hasRequiredFields = false
   ;
 
@@ -171,14 +171,14 @@ class ListMetricsScopesByMonitoredProjectResponse extends $pb.GeneratedMessage {
   /// A set of all metrics scopes that the specified monitored project has been
   /// added to.
   @$pb.TagNumber(1)
-  $core.List<$1666.MetricsScope> get metricsScopes => $_getList(0);
+  $core.List<$189.MetricsScope> get metricsScopes => $_getList(0);
 }
 
 /// Request for the `CreateMonitoredProject` method.
 class CreateMonitoredProjectRequest extends $pb.GeneratedMessage {
   factory CreateMonitoredProjectRequest({
     $core.String? parent,
-    $1666.MonitoredProject? monitoredProject,
+    $189.MonitoredProject? monitoredProject,
   }) {
     final $result = create();
     if (parent != null) {
@@ -195,7 +195,7 @@ class CreateMonitoredProjectRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateMonitoredProjectRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1666.MonitoredProject>(2, _omitFieldNames ? '' : 'monitoredProject', subBuilder: $1666.MonitoredProject.create)
+    ..aOM<$189.MonitoredProject>(2, _omitFieldNames ? '' : 'monitoredProject', subBuilder: $189.MonitoredProject.create)
     ..hasRequiredFields = false
   ;
 
@@ -238,15 +238,15 @@ class CreateMonitoredProjectRequest extends $pb.GeneratedMessage {
   /// ignored. The `monitored_project.name` must be in the format:
   /// `locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}/projects/{MONITORED_PROJECT_ID_OR_NUMBER}`
   @$pb.TagNumber(2)
-  $1666.MonitoredProject get monitoredProject => $_getN(1);
+  $189.MonitoredProject get monitoredProject => $_getN(1);
   @$pb.TagNumber(2)
-  set monitoredProject($1666.MonitoredProject v) { setField(2, v); }
+  set monitoredProject($189.MonitoredProject v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMonitoredProject() => $_has(1);
   @$pb.TagNumber(2)
   void clearMonitoredProject() => clearField(2);
   @$pb.TagNumber(2)
-  $1666.MonitoredProject ensureMonitoredProject() => $_ensure(1);
+  $189.MonitoredProject ensureMonitoredProject() => $_ensure(1);
 }
 
 /// Request for the `DeleteMonitoredProject` method.
@@ -312,8 +312,8 @@ class DeleteMonitoredProjectRequest extends $pb.GeneratedMessage {
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
     OperationMetadata_State? state,
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -333,8 +333,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'), createEmptyInstance: create)
     ..e<OperationMetadata_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: OperationMetadata_State.STATE_UNSPECIFIED, valueOf: OperationMetadata_State.valueOf, enumValues: OperationMetadata_State.values)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -371,27 +371,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the batch request was received.
   @$pb.TagNumber(5)
-  $1776.Timestamp get createTime => $_getN(1);
+  $299.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(5)
-  set createTime($1776.Timestamp v) { setField(5, v); }
+  set createTime($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureCreateTime() => $_ensure(1);
+  $299.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The time when the operation result was last updated.
   @$pb.TagNumber(6)
-  $1776.Timestamp get updateTime => $_getN(2);
+  $299.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(6)
-  set updateTime($1776.Timestamp v) { setField(6, v); }
+  set updateTime($299.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
+  $299.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 

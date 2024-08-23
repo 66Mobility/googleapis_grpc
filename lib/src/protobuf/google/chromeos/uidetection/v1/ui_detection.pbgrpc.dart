@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'ui_detection.pb.dart' as $480;
+import 'ui_detection.pb.dart' as $104;
 
 export 'ui_detection.pb.dart';
 
 @$pb.GrpcServiceName('google.chromeos.uidetection.v1.UiDetectionService')
 class UiDetectionServiceClient extends $grpc.Client {
-  static final _$executeDetection = $grpc.ClientMethod<$480.UiDetectionRequest, $480.UiDetectionResponse>(
+  static final _$executeDetection = $grpc.ClientMethod<$104.UiDetectionRequest, $104.UiDetectionResponse>(
       '/google.chromeos.uidetection.v1.UiDetectionService/ExecuteDetection',
-      ($480.UiDetectionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $480.UiDetectionResponse.fromBuffer(value));
+      ($104.UiDetectionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $104.UiDetectionResponse.fromBuffer(value));
 
   UiDetectionServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class UiDetectionServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$480.UiDetectionResponse> executeDetection($480.UiDetectionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$104.UiDetectionResponse> executeDetection($104.UiDetectionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$executeDetection, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class UiDetectionServiceBase extends $grpc.Service {
   $core.String get $name => 'google.chromeos.uidetection.v1.UiDetectionService';
 
   UiDetectionServiceBase() {
-    $addMethod($grpc.ServiceMethod<$480.UiDetectionRequest, $480.UiDetectionResponse>(
+    $addMethod($grpc.ServiceMethod<$104.UiDetectionRequest, $104.UiDetectionResponse>(
         'ExecuteDetection',
         executeDetection_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $480.UiDetectionRequest.fromBuffer(value),
-        ($480.UiDetectionResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $104.UiDetectionRequest.fromBuffer(value),
+        ($104.UiDetectionResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$480.UiDetectionResponse> executeDetection_Pre($grpc.ServiceCall call, $async.Future<$480.UiDetectionRequest> request) async {
+  $async.Future<$104.UiDetectionResponse> executeDetection_Pre($grpc.ServiceCall call, $async.Future<$104.UiDetectionRequest> request) async {
     return executeDetection(call, await request);
   }
 
-  $async.Future<$480.UiDetectionResponse> executeDetection($grpc.ServiceCall call, $480.UiDetectionRequest request);
+  $async.Future<$104.UiDetectionResponse> executeDetection($grpc.ServiceCall call, $104.UiDetectionRequest request);
 }

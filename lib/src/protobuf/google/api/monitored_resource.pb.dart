@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/struct.pb.dart' as $1735;
-import 'label.pb.dart' as $4163;
-import 'launch_stage.pbenum.dart' as $1778;
+import '../protobuf/struct.pb.dart' as $258;
+import 'label.pb.dart' as $345;
+import 'launch_stage.pbenum.dart' as $301;
 
 ///  An object that describes the schema of a
 ///  [MonitoredResource][google.api.MonitoredResource] object using a type name
@@ -32,9 +32,9 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
     $core.String? type,
     $core.String? displayName,
     $core.String? description,
-    $core.Iterable<$4163.LabelDescriptor>? labels,
+    $core.Iterable<$345.LabelDescriptor>? labels,
     $core.String? name,
-    $1778.LaunchStage? launchStage,
+    $301.LaunchStage? launchStage,
   }) {
     final $result = create();
     if (type != null) {
@@ -65,9 +65,9 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..pc<$4163.LabelDescriptor>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $4163.LabelDescriptor.create)
+    ..pc<$345.LabelDescriptor>(4, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $345.LabelDescriptor.create)
     ..aOS(5, _omitFieldNames ? '' : 'name')
-    ..e<$1778.LaunchStage>(7, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $1778.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $1778.LaunchStage.valueOf, enumValues: $1778.LaunchStage.values)
+    ..e<$301.LaunchStage>(7, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $301.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $301.LaunchStage.valueOf, enumValues: $301.LaunchStage.values)
     ..hasRequiredFields = false
   ;
 
@@ -135,7 +135,7 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
   /// resource type. For example, an individual Google Cloud SQL database is
   /// identified by values for the labels `"database_id"` and `"zone"`.
   @$pb.TagNumber(4)
-  $core.List<$4163.LabelDescriptor> get labels => $_getList(3);
+  $core.List<$345.LabelDescriptor> get labels => $_getList(3);
 
   /// Optional. The resource name of the monitored resource descriptor:
   /// `"projects/{project_id}/monitoredResourceDescriptors/{type}"` where
@@ -154,9 +154,9 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
 
   /// Optional. The launch stage of the monitored resource definition.
   @$pb.TagNumber(7)
-  $1778.LaunchStage get launchStage => $_getN(5);
+  $301.LaunchStage get launchStage => $_getN(5);
   @$pb.TagNumber(7)
-  set launchStage($1778.LaunchStage v) { setField(7, v); }
+  set launchStage($301.LaunchStage v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLaunchStage() => $_has(5);
   @$pb.TagNumber(7)
@@ -255,7 +255,7 @@ class MonitoredResource extends $pb.GeneratedMessage {
 /// all types, and store the metadata in this message.
 class MonitoredResourceMetadata extends $pb.GeneratedMessage {
   factory MonitoredResourceMetadata({
-    $1735.Struct? systemLabels,
+    $258.Struct? systemLabels,
     $core.Map<$core.String, $core.String>? userLabels,
   }) {
     final $result = create();
@@ -272,7 +272,7 @@ class MonitoredResourceMetadata extends $pb.GeneratedMessage {
   factory MonitoredResourceMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MonitoredResourceMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'systemLabels', subBuilder: $1735.Struct.create)
+    ..aOM<$258.Struct>(1, _omitFieldNames ? '' : 'systemLabels', subBuilder: $258.Struct.create)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'userLabels', entryClassName: 'MonitoredResourceMetadata.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api'))
     ..hasRequiredFields = false
   ;
@@ -309,15 +309,15 @@ class MonitoredResourceMetadata extends $pb.GeneratedMessage {
   ///        "security_group": ["a", "b", "c"],
   ///        "spot_instance": false }
   @$pb.TagNumber(1)
-  $1735.Struct get systemLabels => $_getN(0);
+  $258.Struct get systemLabels => $_getN(0);
   @$pb.TagNumber(1)
-  set systemLabels($1735.Struct v) { setField(1, v); }
+  set systemLabels($258.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSystemLabels() => $_has(0);
   @$pb.TagNumber(1)
   void clearSystemLabels() => clearField(1);
   @$pb.TagNumber(1)
-  $1735.Struct ensureSystemLabels() => $_ensure(0);
+  $258.Struct ensureSystemLabels() => $_ensure(0);
 
   /// Output only. A map of user-defined metadata labels.
   @$pb.TagNumber(2)

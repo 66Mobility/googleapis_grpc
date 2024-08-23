@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/wrappers.pb.dart' as $1781;
-import 'account_linking_secret.pb.dart' as $1772;
-import 'files.pb.dart' as $1779;
-import 'release_channel.pb.dart' as $1782;
-import 'validation_results.pb.dart' as $1780;
+import '../../../protobuf/wrappers.pb.dart' as $304;
+import 'account_linking_secret.pb.dart' as $295;
+import 'files.pb.dart' as $302;
+import 'release_channel.pb.dart' as $305;
+import 'validation_results.pb.dart' as $303;
 import 'version.pb.dart' as $1;
 
 /// Streaming RPC request for WriteDraft.
 class WriteDraftRequest extends $pb.GeneratedMessage {
   factory WriteDraftRequest({
     $core.String? parent,
-    $1779.Files? files,
+    $302.Files? files,
   }) {
     final $result = create();
     if (parent != null) {
@@ -41,7 +41,7 @@ class WriteDraftRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteDraftRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1779.Files>(4, _omitFieldNames ? '' : 'files', subBuilder: $1779.Files.create)
+    ..aOM<$302.Files>(4, _omitFieldNames ? '' : 'files', subBuilder: $302.Files.create)
     ..hasRequiredFields = false
   ;
 
@@ -85,22 +85,22 @@ class WriteDraftRequest extends $pb.GeneratedMessage {
   /// 4. The webhook ConfigFile corresponding to inline cloud function must be
   ///    streamed before the DataFile corresponding to its source code.
   @$pb.TagNumber(4)
-  $1779.Files get files => $_getN(1);
+  $302.Files get files => $_getN(1);
   @$pb.TagNumber(4)
-  set files($1779.Files v) { setField(4, v); }
+  set files($302.Files v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFiles() => $_has(1);
   @$pb.TagNumber(4)
   void clearFiles() => clearField(4);
   @$pb.TagNumber(4)
-  $1779.Files ensureFiles() => $_ensure(1);
+  $302.Files ensureFiles() => $_ensure(1);
 }
 
 /// Definition of draft resource.
 class Draft extends $pb.GeneratedMessage {
   factory Draft({
     $core.String? name,
-    $1780.ValidationResults? validationResults,
+    $303.ValidationResults? validationResults,
   }) {
     final $result = create();
     if (name != null) {
@@ -117,7 +117,7 @@ class Draft extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Draft', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1780.ValidationResults>(2, _omitFieldNames ? '' : 'validationResults', subBuilder: $1780.ValidationResults.create)
+    ..aOM<$303.ValidationResults>(2, _omitFieldNames ? '' : 'validationResults', subBuilder: $303.ValidationResults.create)
     ..hasRequiredFields = false
   ;
 
@@ -157,15 +157,15 @@ class Draft extends $pb.GeneratedMessage {
   /// WriteDraft updates the draft despite the warnings as warnings are not draft
   /// blocking.
   @$pb.TagNumber(2)
-  $1780.ValidationResults get validationResults => $_getN(1);
+  $303.ValidationResults get validationResults => $_getN(1);
   @$pb.TagNumber(2)
-  set validationResults($1780.ValidationResults v) { setField(2, v); }
+  set validationResults($303.ValidationResults v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValidationResults() => $_has(1);
   @$pb.TagNumber(2)
   void clearValidationResults() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.ValidationResults ensureValidationResults() => $_ensure(1);
+  $303.ValidationResults ensureValidationResults() => $_ensure(1);
 }
 
 /// Indicates the preview content will be coming from the Draft.
@@ -257,7 +257,7 @@ class WritePreviewRequest_ContentFromSubmittedVersion extends $pb.GeneratedMessa
 /// Settings for updating the preview.
 class WritePreviewRequest_PreviewSettings extends $pb.GeneratedMessage {
   factory WritePreviewRequest_PreviewSettings({
-    $1781.BoolValue? sandbox,
+    $304.BoolValue? sandbox,
   }) {
     final $result = create();
     if (sandbox != null) {
@@ -270,7 +270,7 @@ class WritePreviewRequest_PreviewSettings extends $pb.GeneratedMessage {
   factory WritePreviewRequest_PreviewSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WritePreviewRequest.PreviewSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..aOM<$1781.BoolValue>(1, _omitFieldNames ? '' : 'sandbox', subBuilder: $1781.BoolValue.create)
+    ..aOM<$304.BoolValue>(1, _omitFieldNames ? '' : 'sandbox', subBuilder: $304.BoolValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -299,15 +299,15 @@ class WritePreviewRequest_PreviewSettings extends $pb.GeneratedMessage {
   /// in sandbox mode. By default, preview requests run these operations in
   /// sandbox mode. In other words, the default value for `sandbox` is `true`.
   @$pb.TagNumber(1)
-  $1781.BoolValue get sandbox => $_getN(0);
+  $304.BoolValue get sandbox => $_getN(0);
   @$pb.TagNumber(1)
-  set sandbox($1781.BoolValue v) { setField(1, v); }
+  set sandbox($304.BoolValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSandbox() => $_has(0);
   @$pb.TagNumber(1)
   void clearSandbox() => clearField(1);
   @$pb.TagNumber(1)
-  $1781.BoolValue ensureSandbox() => $_ensure(0);
+  $304.BoolValue ensureSandbox() => $_ensure(0);
 }
 
 enum WritePreviewRequest_Source {
@@ -322,7 +322,7 @@ class WritePreviewRequest extends $pb.GeneratedMessage {
   factory WritePreviewRequest({
     $core.String? parent,
     WritePreviewRequest_PreviewSettings? previewSettings,
-    $1779.Files? files,
+    $302.Files? files,
     WritePreviewRequest_ContentFromDraft? draft,
     WritePreviewRequest_ContentFromSubmittedVersion? submittedVersion,
   }) {
@@ -358,7 +358,7 @@ class WritePreviewRequest extends $pb.GeneratedMessage {
     ..oo(0, [5, 6, 7])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<WritePreviewRequest_PreviewSettings>(4, _omitFieldNames ? '' : 'previewSettings', subBuilder: WritePreviewRequest_PreviewSettings.create)
-    ..aOM<$1779.Files>(5, _omitFieldNames ? '' : 'files', subBuilder: $1779.Files.create)
+    ..aOM<$302.Files>(5, _omitFieldNames ? '' : 'files', subBuilder: $302.Files.create)
     ..aOM<WritePreviewRequest_ContentFromDraft>(6, _omitFieldNames ? '' : 'draft', subBuilder: WritePreviewRequest_ContentFromDraft.create)
     ..aOM<WritePreviewRequest_ContentFromSubmittedVersion>(7, _omitFieldNames ? '' : 'submittedVersion', subBuilder: WritePreviewRequest_ContentFromSubmittedVersion.create)
     ..hasRequiredFields = false
@@ -419,15 +419,15 @@ class WritePreviewRequest extends $pb.GeneratedMessage {
   /// 4. The webhook ConfigFile corresponding to inline cloud function must be
   ///    streamed before the DataFile corresponding to its source code.
   @$pb.TagNumber(5)
-  $1779.Files get files => $_getN(2);
+  $302.Files get files => $_getN(2);
   @$pb.TagNumber(5)
-  set files($1779.Files v) { setField(5, v); }
+  set files($302.Files v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFiles() => $_has(2);
   @$pb.TagNumber(5)
   void clearFiles() => clearField(5);
   @$pb.TagNumber(5)
-  $1779.Files ensureFiles() => $_ensure(2);
+  $302.Files ensureFiles() => $_ensure(2);
 
   /// Content sourced from the project draft.
   @$pb.TagNumber(6)
@@ -458,7 +458,7 @@ class WritePreviewRequest extends $pb.GeneratedMessage {
 class Preview extends $pb.GeneratedMessage {
   factory Preview({
     $core.String? name,
-    $1780.ValidationResults? validationResults,
+    $303.ValidationResults? validationResults,
     $core.String? simulatorUrl,
   }) {
     final $result = create();
@@ -479,7 +479,7 @@ class Preview extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Preview', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1780.ValidationResults>(2, _omitFieldNames ? '' : 'validationResults', subBuilder: $1780.ValidationResults.create)
+    ..aOM<$303.ValidationResults>(2, _omitFieldNames ? '' : 'validationResults', subBuilder: $303.ValidationResults.create)
     ..aOS(3, _omitFieldNames ? '' : 'simulatorUrl')
     ..hasRequiredFields = false
   ;
@@ -518,15 +518,15 @@ class Preview extends $pb.GeneratedMessage {
 
   /// Validation results associated with the user project preview content.
   @$pb.TagNumber(2)
-  $1780.ValidationResults get validationResults => $_getN(1);
+  $303.ValidationResults get validationResults => $_getN(1);
   @$pb.TagNumber(2)
-  set validationResults($1780.ValidationResults v) { setField(2, v); }
+  set validationResults($303.ValidationResults v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValidationResults() => $_has(1);
   @$pb.TagNumber(2)
   void clearValidationResults() => clearField(2);
   @$pb.TagNumber(2)
-  $1780.ValidationResults ensureValidationResults() => $_ensure(1);
+  $303.ValidationResults ensureValidationResults() => $_ensure(1);
 
   /// The simulator URL to test the user preview.
   @$pb.TagNumber(3)
@@ -544,7 +544,7 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
   factory CreateVersionRequest({
     $core.String? parent,
     $core.String? releaseChannel,
-    $1779.Files? files,
+    $302.Files? files,
   }) {
     final $result = create();
     if (parent != null) {
@@ -565,7 +565,7 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateVersionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(4, _omitFieldNames ? '' : 'releaseChannel')
-    ..aOM<$1779.Files>(5, _omitFieldNames ? '' : 'files', subBuilder: $1779.Files.create)
+    ..aOM<$302.Files>(5, _omitFieldNames ? '' : 'files', subBuilder: $302.Files.create)
     ..hasRequiredFields = false
   ;
 
@@ -622,15 +622,15 @@ class CreateVersionRequest extends $pb.GeneratedMessage {
   /// 4. The webhook ConfigFile corresponding to inline cloud function must be
   ///    streamed before the DataFile corresponding to its source code.
   @$pb.TagNumber(5)
-  $1779.Files get files => $_getN(2);
+  $302.Files get files => $_getN(2);
   @$pb.TagNumber(5)
-  set files($1779.Files v) { setField(5, v); }
+  set files($302.Files v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFiles() => $_has(2);
   @$pb.TagNumber(5)
   void clearFiles() => clearField(5);
   @$pb.TagNumber(5)
-  $1779.Files ensureFiles() => $_ensure(2);
+  $302.Files ensureFiles() => $_ensure(2);
 }
 
 /// RPC request for ReadDraft.
@@ -707,7 +707,7 @@ class ReadDraftRequest extends $pb.GeneratedMessage {
 /// Streaming RPC response for ReadDraft.
 class ReadDraftResponse extends $pb.GeneratedMessage {
   factory ReadDraftResponse({
-    $1779.Files? files,
+    $302.Files? files,
   }) {
     final $result = create();
     if (files != null) {
@@ -720,7 +720,7 @@ class ReadDraftResponse extends $pb.GeneratedMessage {
   factory ReadDraftResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadDraftResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..aOM<$1779.Files>(3, _omitFieldNames ? '' : 'files', subBuilder: $1779.Files.create)
+    ..aOM<$302.Files>(3, _omitFieldNames ? '' : 'files', subBuilder: $302.Files.create)
     ..hasRequiredFields = false
   ;
 
@@ -747,15 +747,15 @@ class ReadDraftResponse extends $pb.GeneratedMessage {
 
   /// List of files sent from the server at a time.
   @$pb.TagNumber(3)
-  $1779.Files get files => $_getN(0);
+  $302.Files get files => $_getN(0);
   @$pb.TagNumber(3)
-  set files($1779.Files v) { setField(3, v); }
+  set files($302.Files v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFiles() => $_has(0);
   @$pb.TagNumber(3)
   void clearFiles() => clearField(3);
   @$pb.TagNumber(3)
-  $1779.Files ensureFiles() => $_ensure(0);
+  $302.Files ensureFiles() => $_ensure(0);
 }
 
 /// RPC request for ReadVersion.
@@ -834,7 +834,7 @@ class ReadVersionRequest extends $pb.GeneratedMessage {
 /// Streaming RPC response for ReadVersion.
 class ReadVersionResponse extends $pb.GeneratedMessage {
   factory ReadVersionResponse({
-    $1779.Files? files,
+    $302.Files? files,
   }) {
     final $result = create();
     if (files != null) {
@@ -847,7 +847,7 @@ class ReadVersionResponse extends $pb.GeneratedMessage {
   factory ReadVersionResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadVersionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..aOM<$1779.Files>(1, _omitFieldNames ? '' : 'files', subBuilder: $1779.Files.create)
+    ..aOM<$302.Files>(1, _omitFieldNames ? '' : 'files', subBuilder: $302.Files.create)
     ..hasRequiredFields = false
   ;
 
@@ -874,15 +874,15 @@ class ReadVersionResponse extends $pb.GeneratedMessage {
 
   /// List of files sent from the server at a time.
   @$pb.TagNumber(1)
-  $1779.Files get files => $_getN(0);
+  $302.Files get files => $_getN(0);
   @$pb.TagNumber(1)
-  set files($1779.Files v) { setField(1, v); }
+  set files($302.Files v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFiles() => $_has(0);
   @$pb.TagNumber(1)
   void clearFiles() => clearField(1);
   @$pb.TagNumber(1)
-  $1779.Files ensureFiles() => $_ensure(0);
+  $302.Files ensureFiles() => $_ensure(0);
 }
 
 /// RPC request for EncryptSecret.
@@ -940,7 +940,7 @@ class EncryptSecretRequest extends $pb.GeneratedMessage {
 /// RPC response for EncryptSecret.
 class EncryptSecretResponse extends $pb.GeneratedMessage {
   factory EncryptSecretResponse({
-    $1772.AccountLinkingSecret? accountLinkingSecret,
+    $295.AccountLinkingSecret? accountLinkingSecret,
   }) {
     final $result = create();
     if (accountLinkingSecret != null) {
@@ -953,7 +953,7 @@ class EncryptSecretResponse extends $pb.GeneratedMessage {
   factory EncryptSecretResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptSecretResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..aOM<$1772.AccountLinkingSecret>(1, _omitFieldNames ? '' : 'accountLinkingSecret', subBuilder: $1772.AccountLinkingSecret.create)
+    ..aOM<$295.AccountLinkingSecret>(1, _omitFieldNames ? '' : 'accountLinkingSecret', subBuilder: $295.AccountLinkingSecret.create)
     ..hasRequiredFields = false
   ;
 
@@ -981,15 +981,15 @@ class EncryptSecretResponse extends $pb.GeneratedMessage {
   /// Contains the encrypted account linking client secret and the key version
   /// used to encrypt the secret.
   @$pb.TagNumber(1)
-  $1772.AccountLinkingSecret get accountLinkingSecret => $_getN(0);
+  $295.AccountLinkingSecret get accountLinkingSecret => $_getN(0);
   @$pb.TagNumber(1)
-  set accountLinkingSecret($1772.AccountLinkingSecret v) { setField(1, v); }
+  set accountLinkingSecret($295.AccountLinkingSecret v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccountLinkingSecret() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccountLinkingSecret() => clearField(1);
   @$pb.TagNumber(1)
-  $1772.AccountLinkingSecret ensureAccountLinkingSecret() => $_ensure(0);
+  $295.AccountLinkingSecret ensureAccountLinkingSecret() => $_ensure(0);
 }
 
 /// RPC request for DecryptSecret.
@@ -1403,7 +1403,7 @@ class ListReleaseChannelsRequest extends $pb.GeneratedMessage {
 /// RPC response for listing release channels
 class ListReleaseChannelsResponse extends $pb.GeneratedMessage {
   factory ListReleaseChannelsResponse({
-    $core.Iterable<$1782.ReleaseChannel>? releaseChannels,
+    $core.Iterable<$305.ReleaseChannel>? releaseChannels,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1420,7 +1420,7 @@ class ListReleaseChannelsResponse extends $pb.GeneratedMessage {
   factory ListReleaseChannelsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListReleaseChannelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
-    ..pc<$1782.ReleaseChannel>(1, _omitFieldNames ? '' : 'releaseChannels', $pb.PbFieldType.PM, subBuilder: $1782.ReleaseChannel.create)
+    ..pc<$305.ReleaseChannel>(1, _omitFieldNames ? '' : 'releaseChannels', $pb.PbFieldType.PM, subBuilder: $305.ReleaseChannel.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1448,7 +1448,7 @@ class ListReleaseChannelsResponse extends $pb.GeneratedMessage {
 
   /// List of the release channels for the given project id.
   @$pb.TagNumber(1)
-  $core.List<$1782.ReleaseChannel> get releaseChannels => $_getList(0);
+  $core.List<$305.ReleaseChannel> get releaseChannels => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1738;
+import '../../../protobuf/duration.pb.dart' as $261;
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'metrics.pb.dart' as $4852;
-import 'metrics.pbenum.dart' as $4852;
+import 'metrics.pb.dart' as $505;
+import 'metrics.pbenum.dart' as $505;
 
 /// A gauge chart shows where the current value sits within a pre-defined
 /// range. The upper and lower bounds should define the possible range of
@@ -95,8 +95,8 @@ class Scorecard_GaugeView extends $pb.GeneratedMessage {
 /// timeseries.
 class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   factory Scorecard_SparkChartView({
-    $4852.SparkChartType? sparkChartType,
-    $1738.Duration? minAlignmentPeriod,
+    $505.SparkChartType? sparkChartType,
+    $261.Duration? minAlignmentPeriod,
   }) {
     final $result = create();
     if (sparkChartType != null) {
@@ -112,8 +112,8 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   factory Scorecard_SparkChartView.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Scorecard.SparkChartView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..e<$4852.SparkChartType>(1, _omitFieldNames ? '' : 'sparkChartType', $pb.PbFieldType.OE, defaultOrMaker: $4852.SparkChartType.SPARK_CHART_TYPE_UNSPECIFIED, valueOf: $4852.SparkChartType.valueOf, enumValues: $4852.SparkChartType.values)
-    ..aOM<$1738.Duration>(2, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $1738.Duration.create)
+    ..e<$505.SparkChartType>(1, _omitFieldNames ? '' : 'sparkChartType', $pb.PbFieldType.OE, defaultOrMaker: $505.SparkChartType.SPARK_CHART_TYPE_UNSPECIFIED, valueOf: $505.SparkChartType.valueOf, enumValues: $505.SparkChartType.values)
+    ..aOM<$261.Duration>(2, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $261.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -140,9 +140,9 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
 
   /// Required. The type of sparkchart to show in this chartView.
   @$pb.TagNumber(1)
-  $4852.SparkChartType get sparkChartType => $_getN(0);
+  $505.SparkChartType get sparkChartType => $_getN(0);
   @$pb.TagNumber(1)
-  set sparkChartType($4852.SparkChartType v) { setField(1, v); }
+  set sparkChartType($505.SparkChartType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSparkChartType() => $_has(0);
   @$pb.TagNumber(1)
@@ -154,15 +154,15 @@ class Scorecard_SparkChartView extends $pb.GeneratedMessage {
   /// make sense to fetch and align data at one minute intervals. This field is
   /// optional and exists only as a hint.
   @$pb.TagNumber(2)
-  $1738.Duration get minAlignmentPeriod => $_getN(1);
+  $261.Duration get minAlignmentPeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set minAlignmentPeriod($1738.Duration v) { setField(2, v); }
+  set minAlignmentPeriod($261.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMinAlignmentPeriod() => $_has(1);
   @$pb.TagNumber(2)
   void clearMinAlignmentPeriod() => clearField(2);
   @$pb.TagNumber(2)
-  $1738.Duration ensureMinAlignmentPeriod() => $_ensure(1);
+  $261.Duration ensureMinAlignmentPeriod() => $_ensure(1);
 }
 
 enum Scorecard_DataView {
@@ -176,10 +176,10 @@ enum Scorecard_DataView {
 /// one or more thresholds.
 class Scorecard extends $pb.GeneratedMessage {
   factory Scorecard({
-    $4852.TimeSeriesQuery? timeSeriesQuery,
+    $505.TimeSeriesQuery? timeSeriesQuery,
     Scorecard_GaugeView? gaugeView,
     Scorecard_SparkChartView? sparkChartView,
-    $core.Iterable<$4852.Threshold>? thresholds,
+    $core.Iterable<$505.Threshold>? thresholds,
     $3.Empty? blankView,
   }) {
     final $result = create();
@@ -212,10 +212,10 @@ class Scorecard extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Scorecard', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..oo(0, [4, 5, 7])
-    ..aOM<$4852.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $4852.TimeSeriesQuery.create)
+    ..aOM<$505.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $505.TimeSeriesQuery.create)
     ..aOM<Scorecard_GaugeView>(4, _omitFieldNames ? '' : 'gaugeView', subBuilder: Scorecard_GaugeView.create)
     ..aOM<Scorecard_SparkChartView>(5, _omitFieldNames ? '' : 'sparkChartView', subBuilder: Scorecard_SparkChartView.create)
-    ..pc<$4852.Threshold>(6, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM, subBuilder: $4852.Threshold.create)
+    ..pc<$505.Threshold>(6, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM, subBuilder: $505.Threshold.create)
     ..aOM<$3.Empty>(7, _omitFieldNames ? '' : 'blankView', subBuilder: $3.Empty.create)
     ..hasRequiredFields = false
   ;
@@ -247,15 +247,15 @@ class Scorecard extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $4852.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $505.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($4852.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($505.TimeSeriesQuery v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $4852.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $505.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Will cause the scorecard to show a gauge chart.
   @$pb.TagNumber(4)
@@ -320,7 +320,7 @@ class Scorecard extends $pb.GeneratedMessage {
   ///  to 70 but less than 90 a WARNING state, and values greater than or equal to
   ///  90 a DANGER state.
   @$pb.TagNumber(6)
-  $core.List<$4852.Threshold> get thresholds => $_getList(3);
+  $core.List<$505.Threshold> get thresholds => $_getList(3);
 
   /// Will cause the `Scorecard` to show only the value, with no indicator to
   /// its value relative to its thresholds.

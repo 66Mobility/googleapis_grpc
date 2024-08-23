@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'appengine.pb.dart' as $424;
+import 'appengine.pb.dart' as $48;
 
 enum AuditData_Method {
   updateService, 
@@ -104,7 +104,7 @@ class AuditData extends $pb.GeneratedMessage {
 /// Detailed information about UpdateService call.
 class UpdateServiceMethod extends $pb.GeneratedMessage {
   factory UpdateServiceMethod({
-    $424.UpdateServiceRequest? request,
+    $48.UpdateServiceRequest? request,
   }) {
     final $result = create();
     if (request != null) {
@@ -117,7 +117,7 @@ class UpdateServiceMethod extends $pb.GeneratedMessage {
   factory UpdateServiceMethod.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceMethod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
-    ..aOM<$424.UpdateServiceRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: $424.UpdateServiceRequest.create)
+    ..aOM<$48.UpdateServiceRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: $48.UpdateServiceRequest.create)
     ..hasRequiredFields = false
   ;
 
@@ -144,21 +144,21 @@ class UpdateServiceMethod extends $pb.GeneratedMessage {
 
   /// Update service request.
   @$pb.TagNumber(1)
-  $424.UpdateServiceRequest get request => $_getN(0);
+  $48.UpdateServiceRequest get request => $_getN(0);
   @$pb.TagNumber(1)
-  set request($424.UpdateServiceRequest v) { setField(1, v); }
+  set request($48.UpdateServiceRequest v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRequest() => $_has(0);
   @$pb.TagNumber(1)
   void clearRequest() => clearField(1);
   @$pb.TagNumber(1)
-  $424.UpdateServiceRequest ensureRequest() => $_ensure(0);
+  $48.UpdateServiceRequest ensureRequest() => $_ensure(0);
 }
 
 /// Detailed information about CreateVersion call.
 class CreateVersionMethod extends $pb.GeneratedMessage {
   factory CreateVersionMethod({
-    $424.CreateVersionRequest? request,
+    $48.CreateVersionRequest? request,
   }) {
     final $result = create();
     if (request != null) {
@@ -171,7 +171,7 @@ class CreateVersionMethod extends $pb.GeneratedMessage {
   factory CreateVersionMethod.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateVersionMethod', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1'), createEmptyInstance: create)
-    ..aOM<$424.CreateVersionRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: $424.CreateVersionRequest.create)
+    ..aOM<$48.CreateVersionRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: $48.CreateVersionRequest.create)
     ..hasRequiredFields = false
   ;
 
@@ -198,15 +198,15 @@ class CreateVersionMethod extends $pb.GeneratedMessage {
 
   /// Create version request.
   @$pb.TagNumber(1)
-  $424.CreateVersionRequest get request => $_getN(0);
+  $48.CreateVersionRequest get request => $_getN(0);
   @$pb.TagNumber(1)
-  set request($424.CreateVersionRequest v) { setField(1, v); }
+  set request($48.CreateVersionRequest v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRequest() => $_has(0);
   @$pb.TagNumber(1)
   void clearRequest() => clearField(1);
   @$pb.TagNumber(1)
-  $424.CreateVersionRequest ensureRequest() => $_ensure(0);
+  $48.CreateVersionRequest ensureRequest() => $_ensure(0);
 }
 
 

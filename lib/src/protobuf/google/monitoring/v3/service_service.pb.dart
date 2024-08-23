@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $2210;
-import 'service.pb.dart' as $1677;
-import 'service.pbenum.dart' as $1677;
+import '../../protobuf/field_mask.pb.dart' as $330;
+import 'service.pb.dart' as $200;
+import 'service.pbenum.dart' as $200;
 
 /// The `CreateService` request.
 class CreateServiceRequest extends $pb.GeneratedMessage {
   factory CreateServiceRequest({
     $core.String? parent,
-    $1677.Service? service,
+    $200.Service? service,
     $core.String? serviceId,
   }) {
     final $result = create();
@@ -42,7 +42,7 @@ class CreateServiceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1677.Service>(2, _omitFieldNames ? '' : 'service', subBuilder: $1677.Service.create)
+    ..aOM<$200.Service>(2, _omitFieldNames ? '' : 'service', subBuilder: $200.Service.create)
     ..aOS(3, _omitFieldNames ? '' : 'serviceId')
     ..hasRequiredFields = false
   ;
@@ -84,15 +84,15 @@ class CreateServiceRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Service` to create.
   @$pb.TagNumber(2)
-  $1677.Service get service => $_getN(1);
+  $200.Service get service => $_getN(1);
   @$pb.TagNumber(2)
-  set service($1677.Service v) { setField(2, v); }
+  set service($200.Service v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasService() => $_has(1);
   @$pb.TagNumber(2)
   void clearService() => clearField(2);
   @$pb.TagNumber(2)
-  $1677.Service ensureService() => $_ensure(1);
+  $200.Service ensureService() => $_ensure(1);
 
   /// Optional. The Service id to use for this Service. If omitted, an id will be
   /// generated instead. Must match the pattern `[a-z0-9\-]+`
@@ -285,7 +285,7 @@ class ListServicesRequest extends $pb.GeneratedMessage {
 /// The `ListServices` response.
 class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse({
-    $core.Iterable<$1677.Service>? services,
+    $core.Iterable<$200.Service>? services,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -302,7 +302,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListServicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$1677.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $1677.Service.create)
+    ..pc<$200.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $200.Service.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -330,7 +330,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 
   /// The `Service`s matching the specified filter.
   @$pb.TagNumber(1)
-  $core.List<$1677.Service> get services => $_getList(0);
+  $core.List<$200.Service> get services => $_getList(0);
 
   /// If there are more results than have been returned, then this field is set
   /// to a non-empty value.  To see the additional results,
@@ -348,8 +348,8 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 /// The `UpdateService` request.
 class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest({
-    $1677.Service? service,
-    $2210.FieldMask? updateMask,
+    $200.Service? service,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (service != null) {
@@ -365,8 +365,8 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$1677.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $1677.Service.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$200.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $200.Service.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -394,27 +394,27 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
   /// Required. The `Service` to draw updates from.
   /// The given `name` specifies the resource to update.
   @$pb.TagNumber(1)
-  $1677.Service get service => $_getN(0);
+  $200.Service get service => $_getN(0);
   @$pb.TagNumber(1)
-  set service($1677.Service v) { setField(1, v); }
+  set service($200.Service v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
   void clearService() => clearField(1);
   @$pb.TagNumber(1)
-  $1677.Service ensureService() => $_ensure(0);
+  $200.Service ensureService() => $_ensure(0);
 
   /// A set of field paths defining which fields to use for the update.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The `DeleteService` request.
@@ -475,7 +475,7 @@ class DeleteServiceRequest extends $pb.GeneratedMessage {
 class CreateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   factory CreateServiceLevelObjectiveRequest({
     $core.String? parent,
-    $1677.ServiceLevelObjective? serviceLevelObjective,
+    $200.ServiceLevelObjective? serviceLevelObjective,
     $core.String? serviceLevelObjectiveId,
   }) {
     final $result = create();
@@ -496,7 +496,7 @@ class CreateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateServiceLevelObjectiveRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1677.ServiceLevelObjective>(2, _omitFieldNames ? '' : 'serviceLevelObjective', subBuilder: $1677.ServiceLevelObjective.create)
+    ..aOM<$200.ServiceLevelObjective>(2, _omitFieldNames ? '' : 'serviceLevelObjective', subBuilder: $200.ServiceLevelObjective.create)
     ..aOS(3, _omitFieldNames ? '' : 'serviceLevelObjectiveId')
     ..hasRequiredFields = false
   ;
@@ -538,15 +538,15 @@ class CreateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   /// The provided `name` will be respected if no `ServiceLevelObjective` exists
   /// with this name.
   @$pb.TagNumber(2)
-  $1677.ServiceLevelObjective get serviceLevelObjective => $_getN(1);
+  $200.ServiceLevelObjective get serviceLevelObjective => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceLevelObjective($1677.ServiceLevelObjective v) { setField(2, v); }
+  set serviceLevelObjective($200.ServiceLevelObjective v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasServiceLevelObjective() => $_has(1);
   @$pb.TagNumber(2)
   void clearServiceLevelObjective() => clearField(2);
   @$pb.TagNumber(2)
-  $1677.ServiceLevelObjective ensureServiceLevelObjective() => $_ensure(1);
+  $200.ServiceLevelObjective ensureServiceLevelObjective() => $_ensure(1);
 
   /// Optional. The ServiceLevelObjective id to use for this
   /// ServiceLevelObjective. If omitted, an id will be generated instead. Must
@@ -565,7 +565,7 @@ class CreateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
 class GetServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   factory GetServiceLevelObjectiveRequest({
     $core.String? name,
-    $1677.ServiceLevelObjective_View? view,
+    $200.ServiceLevelObjective_View? view,
   }) {
     final $result = create();
     if (name != null) {
@@ -582,7 +582,7 @@ class GetServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetServiceLevelObjectiveRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<$1677.ServiceLevelObjective_View>(2, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $1677.ServiceLevelObjective_View.VIEW_UNSPECIFIED, valueOf: $1677.ServiceLevelObjective_View.valueOf, enumValues: $1677.ServiceLevelObjective_View.values)
+    ..e<$200.ServiceLevelObjective_View>(2, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $200.ServiceLevelObjective_View.VIEW_UNSPECIFIED, valueOf: $200.ServiceLevelObjective_View.valueOf, enumValues: $200.ServiceLevelObjective_View.values)
     ..hasRequiredFields = false
   ;
 
@@ -625,9 +625,9 @@ class GetServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   /// `ServiceLevelObjective` is defined in terms of a `BasicSli`, replace the
   /// `BasicSli` with a `RequestBasedSli` spelling out how the SLI is computed.
   @$pb.TagNumber(2)
-  $1677.ServiceLevelObjective_View get view => $_getN(1);
+  $200.ServiceLevelObjective_View get view => $_getN(1);
   @$pb.TagNumber(2)
-  set view($1677.ServiceLevelObjective_View v) { setField(2, v); }
+  set view($200.ServiceLevelObjective_View v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasView() => $_has(1);
   @$pb.TagNumber(2)
@@ -641,7 +641,7 @@ class ListServiceLevelObjectivesRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.int? pageSize,
     $core.String? pageToken,
-    $1677.ServiceLevelObjective_View? view,
+    $200.ServiceLevelObjective_View? view,
   }) {
     final $result = create();
     if (parent != null) {
@@ -670,7 +670,7 @@ class ListServiceLevelObjectivesRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'filter')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
-    ..e<$1677.ServiceLevelObjective_View>(5, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $1677.ServiceLevelObjective_View.VIEW_UNSPECIFIED, valueOf: $1677.ServiceLevelObjective_View.valueOf, enumValues: $1677.ServiceLevelObjective_View.values)
+    ..e<$200.ServiceLevelObjective_View>(5, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $200.ServiceLevelObjective_View.VIEW_UNSPECIFIED, valueOf: $200.ServiceLevelObjective_View.valueOf, enumValues: $200.ServiceLevelObjective_View.values)
     ..hasRequiredFields = false
   ;
 
@@ -747,9 +747,9 @@ class ListServiceLevelObjectivesRequest extends $pb.GeneratedMessage {
   /// `ServiceLevelObjective` is defined in terms of a `BasicSli`, replace the
   /// `BasicSli` with a `RequestBasedSli` spelling out how the SLI is computed.
   @$pb.TagNumber(5)
-  $1677.ServiceLevelObjective_View get view => $_getN(4);
+  $200.ServiceLevelObjective_View get view => $_getN(4);
   @$pb.TagNumber(5)
-  set view($1677.ServiceLevelObjective_View v) { setField(5, v); }
+  set view($200.ServiceLevelObjective_View v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasView() => $_has(4);
   @$pb.TagNumber(5)
@@ -759,7 +759,7 @@ class ListServiceLevelObjectivesRequest extends $pb.GeneratedMessage {
 /// The `ListServiceLevelObjectives` response.
 class ListServiceLevelObjectivesResponse extends $pb.GeneratedMessage {
   factory ListServiceLevelObjectivesResponse({
-    $core.Iterable<$1677.ServiceLevelObjective>? serviceLevelObjectives,
+    $core.Iterable<$200.ServiceLevelObjective>? serviceLevelObjectives,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -776,7 +776,7 @@ class ListServiceLevelObjectivesResponse extends $pb.GeneratedMessage {
   factory ListServiceLevelObjectivesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListServiceLevelObjectivesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$1677.ServiceLevelObjective>(1, _omitFieldNames ? '' : 'serviceLevelObjectives', $pb.PbFieldType.PM, subBuilder: $1677.ServiceLevelObjective.create)
+    ..pc<$200.ServiceLevelObjective>(1, _omitFieldNames ? '' : 'serviceLevelObjectives', $pb.PbFieldType.PM, subBuilder: $200.ServiceLevelObjective.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -804,7 +804,7 @@ class ListServiceLevelObjectivesResponse extends $pb.GeneratedMessage {
 
   /// The `ServiceLevelObjective`s matching the specified filter.
   @$pb.TagNumber(1)
-  $core.List<$1677.ServiceLevelObjective> get serviceLevelObjectives => $_getList(0);
+  $core.List<$200.ServiceLevelObjective> get serviceLevelObjectives => $_getList(0);
 
   /// If there are more results than have been returned, then this field is set
   /// to a non-empty value.  To see the additional results,
@@ -822,8 +822,8 @@ class ListServiceLevelObjectivesResponse extends $pb.GeneratedMessage {
 /// The `UpdateServiceLevelObjective` request.
 class UpdateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   factory UpdateServiceLevelObjectiveRequest({
-    $1677.ServiceLevelObjective? serviceLevelObjective,
-    $2210.FieldMask? updateMask,
+    $200.ServiceLevelObjective? serviceLevelObjective,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (serviceLevelObjective != null) {
@@ -839,8 +839,8 @@ class UpdateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   factory UpdateServiceLevelObjectiveRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceLevelObjectiveRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$1677.ServiceLevelObjective>(1, _omitFieldNames ? '' : 'serviceLevelObjective', subBuilder: $1677.ServiceLevelObjective.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$200.ServiceLevelObjective>(1, _omitFieldNames ? '' : 'serviceLevelObjective', subBuilder: $200.ServiceLevelObjective.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -868,27 +868,27 @@ class UpdateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   /// Required. The `ServiceLevelObjective` to draw updates from.
   /// The given `name` specifies the resource to update.
   @$pb.TagNumber(1)
-  $1677.ServiceLevelObjective get serviceLevelObjective => $_getN(0);
+  $200.ServiceLevelObjective get serviceLevelObjective => $_getN(0);
   @$pb.TagNumber(1)
-  set serviceLevelObjective($1677.ServiceLevelObjective v) { setField(1, v); }
+  set serviceLevelObjective($200.ServiceLevelObjective v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasServiceLevelObjective() => $_has(0);
   @$pb.TagNumber(1)
   void clearServiceLevelObjective() => clearField(1);
   @$pb.TagNumber(1)
-  $1677.ServiceLevelObjective ensureServiceLevelObjective() => $_ensure(0);
+  $200.ServiceLevelObjective ensureServiceLevelObjective() => $_ensure(0);
 
   /// A set of field paths defining which fields to use for the update.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The `DeleteServiceLevelObjective` request.

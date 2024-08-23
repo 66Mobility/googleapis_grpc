@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'lfpinventory.pb.dart' as $1709;
+import 'lfpinventory.pb.dart' as $232;
 
 export 'lfpinventory.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.lfp.v1beta.LfpInventoryService')
 class LfpInventoryServiceClient extends $grpc.Client {
-  static final _$insertLfpInventory = $grpc.ClientMethod<$1709.InsertLfpInventoryRequest, $1709.LfpInventory>(
+  static final _$insertLfpInventory = $grpc.ClientMethod<$232.InsertLfpInventoryRequest, $232.LfpInventory>(
       '/google.shopping.merchant.lfp.v1beta.LfpInventoryService/InsertLfpInventory',
-      ($1709.InsertLfpInventoryRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1709.LfpInventory.fromBuffer(value));
+      ($232.InsertLfpInventoryRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $232.LfpInventory.fromBuffer(value));
 
   LfpInventoryServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class LfpInventoryServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1709.LfpInventory> insertLfpInventory($1709.InsertLfpInventoryRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$232.LfpInventory> insertLfpInventory($232.InsertLfpInventoryRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertLfpInventory, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class LfpInventoryServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.lfp.v1beta.LfpInventoryService';
 
   LfpInventoryServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1709.InsertLfpInventoryRequest, $1709.LfpInventory>(
+    $addMethod($grpc.ServiceMethod<$232.InsertLfpInventoryRequest, $232.LfpInventory>(
         'InsertLfpInventory',
         insertLfpInventory_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1709.InsertLfpInventoryRequest.fromBuffer(value),
-        ($1709.LfpInventory value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $232.InsertLfpInventoryRequest.fromBuffer(value),
+        ($232.LfpInventory value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1709.LfpInventory> insertLfpInventory_Pre($grpc.ServiceCall call, $async.Future<$1709.InsertLfpInventoryRequest> request) async {
+  $async.Future<$232.LfpInventory> insertLfpInventory_Pre($grpc.ServiceCall call, $async.Future<$232.InsertLfpInventoryRequest> request) async {
     return insertLfpInventory(call, await request);
   }
 
-  $async.Future<$1709.LfpInventory> insertLfpInventory($grpc.ServiceCall call, $1709.InsertLfpInventoryRequest request);
+  $async.Future<$232.LfpInventory> insertLfpInventory($grpc.ServiceCall call, $232.InsertLfpInventoryRequest request);
 }

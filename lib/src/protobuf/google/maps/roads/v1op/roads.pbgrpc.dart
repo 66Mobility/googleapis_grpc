@@ -15,20 +15,20 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'roads.pb.dart' as $1651;
+import 'roads.pb.dart' as $173;
 
 export 'roads.pb.dart';
 
 @$pb.GrpcServiceName('google.maps.roads.v1op.RoadsService')
 class RoadsServiceClient extends $grpc.Client {
-  static final _$snapToRoads = $grpc.ClientMethod<$1651.SnapToRoadsRequest, $1651.SnapToRoadsResponse>(
+  static final _$snapToRoads = $grpc.ClientMethod<$173.SnapToRoadsRequest, $173.SnapToRoadsResponse>(
       '/google.maps.roads.v1op.RoadsService/SnapToRoads',
-      ($1651.SnapToRoadsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1651.SnapToRoadsResponse.fromBuffer(value));
-  static final _$listNearestRoads = $grpc.ClientMethod<$1651.ListNearestRoadsRequest, $1651.ListNearestRoadsResponse>(
+      ($173.SnapToRoadsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $173.SnapToRoadsResponse.fromBuffer(value));
+  static final _$listNearestRoads = $grpc.ClientMethod<$173.ListNearestRoadsRequest, $173.ListNearestRoadsResponse>(
       '/google.maps.roads.v1op.RoadsService/ListNearestRoads',
-      ($1651.ListNearestRoadsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1651.ListNearestRoadsResponse.fromBuffer(value));
+      ($173.ListNearestRoadsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $173.ListNearestRoadsResponse.fromBuffer(value));
 
   RoadsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -36,11 +36,11 @@ class RoadsServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1651.SnapToRoadsResponse> snapToRoads($1651.SnapToRoadsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$173.SnapToRoadsResponse> snapToRoads($173.SnapToRoadsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$snapToRoads, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1651.ListNearestRoadsResponse> listNearestRoads($1651.ListNearestRoadsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$173.ListNearestRoadsResponse> listNearestRoads($173.ListNearestRoadsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listNearestRoads, request, options: options);
   }
 }
@@ -50,30 +50,30 @@ abstract class RoadsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.maps.roads.v1op.RoadsService';
 
   RoadsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1651.SnapToRoadsRequest, $1651.SnapToRoadsResponse>(
+    $addMethod($grpc.ServiceMethod<$173.SnapToRoadsRequest, $173.SnapToRoadsResponse>(
         'SnapToRoads',
         snapToRoads_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1651.SnapToRoadsRequest.fromBuffer(value),
-        ($1651.SnapToRoadsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1651.ListNearestRoadsRequest, $1651.ListNearestRoadsResponse>(
+        ($core.List<$core.int> value) => $173.SnapToRoadsRequest.fromBuffer(value),
+        ($173.SnapToRoadsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$173.ListNearestRoadsRequest, $173.ListNearestRoadsResponse>(
         'ListNearestRoads',
         listNearestRoads_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1651.ListNearestRoadsRequest.fromBuffer(value),
-        ($1651.ListNearestRoadsResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $173.ListNearestRoadsRequest.fromBuffer(value),
+        ($173.ListNearestRoadsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1651.SnapToRoadsResponse> snapToRoads_Pre($grpc.ServiceCall call, $async.Future<$1651.SnapToRoadsRequest> request) async {
+  $async.Future<$173.SnapToRoadsResponse> snapToRoads_Pre($grpc.ServiceCall call, $async.Future<$173.SnapToRoadsRequest> request) async {
     return snapToRoads(call, await request);
   }
 
-  $async.Future<$1651.ListNearestRoadsResponse> listNearestRoads_Pre($grpc.ServiceCall call, $async.Future<$1651.ListNearestRoadsRequest> request) async {
+  $async.Future<$173.ListNearestRoadsResponse> listNearestRoads_Pre($grpc.ServiceCall call, $async.Future<$173.ListNearestRoadsRequest> request) async {
     return listNearestRoads(call, await request);
   }
 
-  $async.Future<$1651.SnapToRoadsResponse> snapToRoads($grpc.ServiceCall call, $1651.SnapToRoadsRequest request);
-  $async.Future<$1651.ListNearestRoadsResponse> listNearestRoads($grpc.ServiceCall call, $1651.ListNearestRoadsRequest request);
+  $async.Future<$173.SnapToRoadsResponse> snapToRoads($grpc.ServiceCall call, $173.SnapToRoadsRequest request);
+  $async.Future<$173.ListNearestRoadsResponse> listNearestRoads($grpc.ServiceCall call, $173.ListNearestRoadsRequest request);
 }

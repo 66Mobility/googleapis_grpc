@@ -15,28 +15,28 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $1623;
+import 'common.pb.dart' as $144;
 
 export 'iamcredentials.pb.dart';
 
 @$pb.GrpcServiceName('google.iam.credentials.v1.IAMCredentials')
 class IAMCredentialsClient extends $grpc.Client {
-  static final _$generateAccessToken = $grpc.ClientMethod<$1623.GenerateAccessTokenRequest, $1623.GenerateAccessTokenResponse>(
+  static final _$generateAccessToken = $grpc.ClientMethod<$144.GenerateAccessTokenRequest, $144.GenerateAccessTokenResponse>(
       '/google.iam.credentials.v1.IAMCredentials/GenerateAccessToken',
-      ($1623.GenerateAccessTokenRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1623.GenerateAccessTokenResponse.fromBuffer(value));
-  static final _$generateIdToken = $grpc.ClientMethod<$1623.GenerateIdTokenRequest, $1623.GenerateIdTokenResponse>(
+      ($144.GenerateAccessTokenRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $144.GenerateAccessTokenResponse.fromBuffer(value));
+  static final _$generateIdToken = $grpc.ClientMethod<$144.GenerateIdTokenRequest, $144.GenerateIdTokenResponse>(
       '/google.iam.credentials.v1.IAMCredentials/GenerateIdToken',
-      ($1623.GenerateIdTokenRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1623.GenerateIdTokenResponse.fromBuffer(value));
-  static final _$signBlob = $grpc.ClientMethod<$1623.SignBlobRequest, $1623.SignBlobResponse>(
+      ($144.GenerateIdTokenRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $144.GenerateIdTokenResponse.fromBuffer(value));
+  static final _$signBlob = $grpc.ClientMethod<$144.SignBlobRequest, $144.SignBlobResponse>(
       '/google.iam.credentials.v1.IAMCredentials/SignBlob',
-      ($1623.SignBlobRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1623.SignBlobResponse.fromBuffer(value));
-  static final _$signJwt = $grpc.ClientMethod<$1623.SignJwtRequest, $1623.SignJwtResponse>(
+      ($144.SignBlobRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $144.SignBlobResponse.fromBuffer(value));
+  static final _$signJwt = $grpc.ClientMethod<$144.SignJwtRequest, $144.SignJwtResponse>(
       '/google.iam.credentials.v1.IAMCredentials/SignJwt',
-      ($1623.SignJwtRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1623.SignJwtResponse.fromBuffer(value));
+      ($144.SignJwtRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $144.SignJwtResponse.fromBuffer(value));
 
   IAMCredentialsClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -44,19 +44,19 @@ class IAMCredentialsClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1623.GenerateAccessTokenResponse> generateAccessToken($1623.GenerateAccessTokenRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$144.GenerateAccessTokenResponse> generateAccessToken($144.GenerateAccessTokenRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateAccessToken, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1623.GenerateIdTokenResponse> generateIdToken($1623.GenerateIdTokenRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$144.GenerateIdTokenResponse> generateIdToken($144.GenerateIdTokenRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateIdToken, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1623.SignBlobResponse> signBlob($1623.SignBlobRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$144.SignBlobResponse> signBlob($144.SignBlobRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$signBlob, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1623.SignJwtResponse> signJwt($1623.SignJwtRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$144.SignJwtResponse> signJwt($144.SignJwtRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$signJwt, request, options: options);
   }
 }
@@ -66,54 +66,54 @@ abstract class IAMCredentialsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.iam.credentials.v1.IAMCredentials';
 
   IAMCredentialsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1623.GenerateAccessTokenRequest, $1623.GenerateAccessTokenResponse>(
+    $addMethod($grpc.ServiceMethod<$144.GenerateAccessTokenRequest, $144.GenerateAccessTokenResponse>(
         'GenerateAccessToken',
         generateAccessToken_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1623.GenerateAccessTokenRequest.fromBuffer(value),
-        ($1623.GenerateAccessTokenResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1623.GenerateIdTokenRequest, $1623.GenerateIdTokenResponse>(
+        ($core.List<$core.int> value) => $144.GenerateAccessTokenRequest.fromBuffer(value),
+        ($144.GenerateAccessTokenResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$144.GenerateIdTokenRequest, $144.GenerateIdTokenResponse>(
         'GenerateIdToken',
         generateIdToken_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1623.GenerateIdTokenRequest.fromBuffer(value),
-        ($1623.GenerateIdTokenResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1623.SignBlobRequest, $1623.SignBlobResponse>(
+        ($core.List<$core.int> value) => $144.GenerateIdTokenRequest.fromBuffer(value),
+        ($144.GenerateIdTokenResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$144.SignBlobRequest, $144.SignBlobResponse>(
         'SignBlob',
         signBlob_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1623.SignBlobRequest.fromBuffer(value),
-        ($1623.SignBlobResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1623.SignJwtRequest, $1623.SignJwtResponse>(
+        ($core.List<$core.int> value) => $144.SignBlobRequest.fromBuffer(value),
+        ($144.SignBlobResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$144.SignJwtRequest, $144.SignJwtResponse>(
         'SignJwt',
         signJwt_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1623.SignJwtRequest.fromBuffer(value),
-        ($1623.SignJwtResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $144.SignJwtRequest.fromBuffer(value),
+        ($144.SignJwtResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1623.GenerateAccessTokenResponse> generateAccessToken_Pre($grpc.ServiceCall call, $async.Future<$1623.GenerateAccessTokenRequest> request) async {
+  $async.Future<$144.GenerateAccessTokenResponse> generateAccessToken_Pre($grpc.ServiceCall call, $async.Future<$144.GenerateAccessTokenRequest> request) async {
     return generateAccessToken(call, await request);
   }
 
-  $async.Future<$1623.GenerateIdTokenResponse> generateIdToken_Pre($grpc.ServiceCall call, $async.Future<$1623.GenerateIdTokenRequest> request) async {
+  $async.Future<$144.GenerateIdTokenResponse> generateIdToken_Pre($grpc.ServiceCall call, $async.Future<$144.GenerateIdTokenRequest> request) async {
     return generateIdToken(call, await request);
   }
 
-  $async.Future<$1623.SignBlobResponse> signBlob_Pre($grpc.ServiceCall call, $async.Future<$1623.SignBlobRequest> request) async {
+  $async.Future<$144.SignBlobResponse> signBlob_Pre($grpc.ServiceCall call, $async.Future<$144.SignBlobRequest> request) async {
     return signBlob(call, await request);
   }
 
-  $async.Future<$1623.SignJwtResponse> signJwt_Pre($grpc.ServiceCall call, $async.Future<$1623.SignJwtRequest> request) async {
+  $async.Future<$144.SignJwtResponse> signJwt_Pre($grpc.ServiceCall call, $async.Future<$144.SignJwtRequest> request) async {
     return signJwt(call, await request);
   }
 
-  $async.Future<$1623.GenerateAccessTokenResponse> generateAccessToken($grpc.ServiceCall call, $1623.GenerateAccessTokenRequest request);
-  $async.Future<$1623.GenerateIdTokenResponse> generateIdToken($grpc.ServiceCall call, $1623.GenerateIdTokenRequest request);
-  $async.Future<$1623.SignBlobResponse> signBlob($grpc.ServiceCall call, $1623.SignBlobRequest request);
-  $async.Future<$1623.SignJwtResponse> signJwt($grpc.ServiceCall call, $1623.SignJwtRequest request);
+  $async.Future<$144.GenerateAccessTokenResponse> generateAccessToken($grpc.ServiceCall call, $144.GenerateAccessTokenRequest request);
+  $async.Future<$144.GenerateIdTokenResponse> generateIdToken($grpc.ServiceCall call, $144.GenerateIdTokenRequest request);
+  $async.Future<$144.SignBlobResponse> signBlob($grpc.ServiceCall call, $144.SignBlobRequest request);
+  $async.Future<$144.SignJwtResponse> signJwt($grpc.ServiceCall call, $144.SignJwtRequest request);
 }

@@ -1,4 +1,3 @@
-# This will take 10 minutes.
 all: generate
 
 generate:
@@ -20,6 +19,13 @@ clone:
 	# Copy missing files
 	mkdir googleapis/google/protobuf
 	cp $$(brew --prefix protobuf)/include/google/protobuf/*.proto googleapis/google/protobuf
+
+	# Delete cloud and ads sub-folders as they are enourmous (200mb)
+	rm -rf googleapis/google/cloud
+	rm -rf googleapis/google/ads
+	rm -rf googleapis/google/devtools
+	rm -rf googleapis/google/analytics
+	rm -rf googleapis/google/container
 
 protoc:
 	rm -rf lib/src/protobuf/*

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2210;
-import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/field_mask.pb.dart' as $330;
+import '../../../../protobuf/timestamp.pb.dart' as $299;
 import 'conversionsources.pbenum.dart';
 
 export 'conversionsources.pbenum.dart';
@@ -34,7 +34,7 @@ class ConversionSource extends $pb.GeneratedMessage {
     GoogleAnalyticsLink? googleAnalyticsLink,
     MerchantCenterDestination? merchantCenterDestination,
     ConversionSource_State? state,
-    $1776.Timestamp? expireTime,
+    $299.Timestamp? expireTime,
     ConversionSource_Controller? controller,
   }) {
     final $result = create();
@@ -73,7 +73,7 @@ class ConversionSource extends $pb.GeneratedMessage {
     ..aOM<GoogleAnalyticsLink>(3, _omitFieldNames ? '' : 'googleAnalyticsLink', subBuilder: GoogleAnalyticsLink.create)
     ..aOM<MerchantCenterDestination>(4, _omitFieldNames ? '' : 'merchantCenterDestination', subBuilder: MerchantCenterDestination.create)
     ..e<ConversionSource_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: ConversionSource_State.STATE_UNSPECIFIED, valueOf: ConversionSource_State.valueOf, enumValues: ConversionSource_State.values)
-    ..aOM<$1776.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'expireTime', subBuilder: $299.Timestamp.create)
     ..e<ConversionSource_Controller>(7, _omitFieldNames ? '' : 'controller', $pb.PbFieldType.OE, defaultOrMaker: ConversionSource_Controller.CONTROLLER_UNSPECIFIED, valueOf: ConversionSource_Controller.valueOf, enumValues: ConversionSource_Controller.values)
     ..hasRequiredFields = false
   ;
@@ -157,15 +157,15 @@ class ConversionSource extends $pb.GeneratedMessage {
   /// Output only. The time when an archived conversion source becomes
   /// permanently deleted and is no longer available to undelete.
   @$pb.TagNumber(6)
-  $1776.Timestamp get expireTime => $_getN(4);
+  $299.Timestamp get expireTime => $_getN(4);
   @$pb.TagNumber(6)
-  set expireTime($1776.Timestamp v) { setField(6, v); }
+  set expireTime($299.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasExpireTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearExpireTime() => clearField(6);
   @$pb.TagNumber(6)
-  $1776.Timestamp ensureExpireTime() => $_ensure(4);
+  $299.Timestamp ensureExpireTime() => $_ensure(4);
 
   /// Output only. Controller of the conversion source.
   @$pb.TagNumber(7)
@@ -594,7 +594,7 @@ class CreateConversionSourceRequest extends $pb.GeneratedMessage {
 class UpdateConversionSourceRequest extends $pb.GeneratedMessage {
   factory UpdateConversionSourceRequest({
     ConversionSource? conversionSource,
-    $2210.FieldMask? updateMask,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (conversionSource != null) {
@@ -611,7 +611,7 @@ class UpdateConversionSourceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConversionSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.conversions.v1beta'), createEmptyInstance: create)
     ..aOM<ConversionSource>(1, _omitFieldNames ? '' : 'conversionSource', subBuilder: ConversionSource.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -651,15 +651,15 @@ class UpdateConversionSourceRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the DeleteConversionSource method.

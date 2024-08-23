@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'marketingplatform_admin.pbenum.dart';
-import 'resources.pb.dart' as $1662;
+import 'resources.pb.dart' as $185;
 
 export 'marketingplatform_admin.pbenum.dart';
 
@@ -166,7 +166,7 @@ class ListAnalyticsAccountLinksRequest extends $pb.GeneratedMessage {
 /// Response message for ListAnalyticsAccountLinks RPC.
 class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
   factory ListAnalyticsAccountLinksResponse({
-    $core.Iterable<$1662.AnalyticsAccountLink>? analyticsAccountLinks,
+    $core.Iterable<$185.AnalyticsAccountLink>? analyticsAccountLinks,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -183,7 +183,7 @@ class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
   factory ListAnalyticsAccountLinksResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAnalyticsAccountLinksResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'), createEmptyInstance: create)
-    ..pc<$1662.AnalyticsAccountLink>(1, _omitFieldNames ? '' : 'analyticsAccountLinks', $pb.PbFieldType.PM, subBuilder: $1662.AnalyticsAccountLink.create)
+    ..pc<$185.AnalyticsAccountLink>(1, _omitFieldNames ? '' : 'analyticsAccountLinks', $pb.PbFieldType.PM, subBuilder: $185.AnalyticsAccountLink.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -211,7 +211,7 @@ class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
 
   /// Analytics account links in this organization.
   @$pb.TagNumber(1)
-  $core.List<$1662.AnalyticsAccountLink> get analyticsAccountLinks => $_getList(0);
+  $core.List<$185.AnalyticsAccountLink> get analyticsAccountLinks => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.
@@ -229,7 +229,7 @@ class ListAnalyticsAccountLinksResponse extends $pb.GeneratedMessage {
 class CreateAnalyticsAccountLinkRequest extends $pb.GeneratedMessage {
   factory CreateAnalyticsAccountLinkRequest({
     $core.String? parent,
-    $1662.AnalyticsAccountLink? analyticsAccountLink,
+    $185.AnalyticsAccountLink? analyticsAccountLink,
   }) {
     final $result = create();
     if (parent != null) {
@@ -246,7 +246,7 @@ class CreateAnalyticsAccountLinkRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAnalyticsAccountLinkRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.marketingplatform.admin.v1alpha'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$1662.AnalyticsAccountLink>(2, _omitFieldNames ? '' : 'analyticsAccountLink', subBuilder: $1662.AnalyticsAccountLink.create)
+    ..aOM<$185.AnalyticsAccountLink>(2, _omitFieldNames ? '' : 'analyticsAccountLink', subBuilder: $185.AnalyticsAccountLink.create)
     ..hasRequiredFields = false
   ;
 
@@ -284,15 +284,15 @@ class CreateAnalyticsAccountLinkRequest extends $pb.GeneratedMessage {
 
   /// Required. The Analytics account link to create.
   @$pb.TagNumber(2)
-  $1662.AnalyticsAccountLink get analyticsAccountLink => $_getN(1);
+  $185.AnalyticsAccountLink get analyticsAccountLink => $_getN(1);
   @$pb.TagNumber(2)
-  set analyticsAccountLink($1662.AnalyticsAccountLink v) { setField(2, v); }
+  set analyticsAccountLink($185.AnalyticsAccountLink v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAnalyticsAccountLink() => $_has(1);
   @$pb.TagNumber(2)
   void clearAnalyticsAccountLink() => clearField(2);
   @$pb.TagNumber(2)
-  $1662.AnalyticsAccountLink ensureAnalyticsAccountLink() => $_ensure(1);
+  $185.AnalyticsAccountLink ensureAnalyticsAccountLink() => $_ensure(1);
 }
 
 /// Request message for DeleteAnalyticsAccountLink RPC.

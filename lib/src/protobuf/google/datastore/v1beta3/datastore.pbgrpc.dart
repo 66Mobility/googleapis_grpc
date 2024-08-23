@@ -15,40 +15,40 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'datastore.pb.dart' as $1541;
+import 'datastore.pb.dart' as $114;
 
 export 'datastore.pb.dart';
 
 @$pb.GrpcServiceName('google.datastore.v1beta3.Datastore')
 class DatastoreClient extends $grpc.Client {
-  static final _$lookup = $grpc.ClientMethod<$1541.LookupRequest, $1541.LookupResponse>(
+  static final _$lookup = $grpc.ClientMethod<$114.LookupRequest, $114.LookupResponse>(
       '/google.datastore.v1beta3.Datastore/Lookup',
-      ($1541.LookupRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1541.LookupResponse.fromBuffer(value));
-  static final _$runQuery = $grpc.ClientMethod<$1541.RunQueryRequest, $1541.RunQueryResponse>(
+      ($114.LookupRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $114.LookupResponse.fromBuffer(value));
+  static final _$runQuery = $grpc.ClientMethod<$114.RunQueryRequest, $114.RunQueryResponse>(
       '/google.datastore.v1beta3.Datastore/RunQuery',
-      ($1541.RunQueryRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1541.RunQueryResponse.fromBuffer(value));
-  static final _$beginTransaction = $grpc.ClientMethod<$1541.BeginTransactionRequest, $1541.BeginTransactionResponse>(
+      ($114.RunQueryRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $114.RunQueryResponse.fromBuffer(value));
+  static final _$beginTransaction = $grpc.ClientMethod<$114.BeginTransactionRequest, $114.BeginTransactionResponse>(
       '/google.datastore.v1beta3.Datastore/BeginTransaction',
-      ($1541.BeginTransactionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1541.BeginTransactionResponse.fromBuffer(value));
-  static final _$commit = $grpc.ClientMethod<$1541.CommitRequest, $1541.CommitResponse>(
+      ($114.BeginTransactionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $114.BeginTransactionResponse.fromBuffer(value));
+  static final _$commit = $grpc.ClientMethod<$114.CommitRequest, $114.CommitResponse>(
       '/google.datastore.v1beta3.Datastore/Commit',
-      ($1541.CommitRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1541.CommitResponse.fromBuffer(value));
-  static final _$rollback = $grpc.ClientMethod<$1541.RollbackRequest, $1541.RollbackResponse>(
+      ($114.CommitRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $114.CommitResponse.fromBuffer(value));
+  static final _$rollback = $grpc.ClientMethod<$114.RollbackRequest, $114.RollbackResponse>(
       '/google.datastore.v1beta3.Datastore/Rollback',
-      ($1541.RollbackRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1541.RollbackResponse.fromBuffer(value));
-  static final _$allocateIds = $grpc.ClientMethod<$1541.AllocateIdsRequest, $1541.AllocateIdsResponse>(
+      ($114.RollbackRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $114.RollbackResponse.fromBuffer(value));
+  static final _$allocateIds = $grpc.ClientMethod<$114.AllocateIdsRequest, $114.AllocateIdsResponse>(
       '/google.datastore.v1beta3.Datastore/AllocateIds',
-      ($1541.AllocateIdsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1541.AllocateIdsResponse.fromBuffer(value));
-  static final _$reserveIds = $grpc.ClientMethod<$1541.ReserveIdsRequest, $1541.ReserveIdsResponse>(
+      ($114.AllocateIdsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $114.AllocateIdsResponse.fromBuffer(value));
+  static final _$reserveIds = $grpc.ClientMethod<$114.ReserveIdsRequest, $114.ReserveIdsResponse>(
       '/google.datastore.v1beta3.Datastore/ReserveIds',
-      ($1541.ReserveIdsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1541.ReserveIdsResponse.fromBuffer(value));
+      ($114.ReserveIdsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $114.ReserveIdsResponse.fromBuffer(value));
 
   DatastoreClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -56,31 +56,31 @@ class DatastoreClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1541.LookupResponse> lookup($1541.LookupRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$114.LookupResponse> lookup($114.LookupRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$lookup, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1541.RunQueryResponse> runQuery($1541.RunQueryRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$114.RunQueryResponse> runQuery($114.RunQueryRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$runQuery, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1541.BeginTransactionResponse> beginTransaction($1541.BeginTransactionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$114.BeginTransactionResponse> beginTransaction($114.BeginTransactionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$beginTransaction, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1541.CommitResponse> commit($1541.CommitRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$114.CommitResponse> commit($114.CommitRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$commit, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1541.RollbackResponse> rollback($1541.RollbackRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$114.RollbackResponse> rollback($114.RollbackRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$rollback, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1541.AllocateIdsResponse> allocateIds($1541.AllocateIdsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$114.AllocateIdsResponse> allocateIds($114.AllocateIdsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$allocateIds, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1541.ReserveIdsResponse> reserveIds($1541.ReserveIdsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$114.ReserveIdsResponse> reserveIds($114.ReserveIdsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$reserveIds, request, options: options);
   }
 }
@@ -90,90 +90,90 @@ abstract class DatastoreServiceBase extends $grpc.Service {
   $core.String get $name => 'google.datastore.v1beta3.Datastore';
 
   DatastoreServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1541.LookupRequest, $1541.LookupResponse>(
+    $addMethod($grpc.ServiceMethod<$114.LookupRequest, $114.LookupResponse>(
         'Lookup',
         lookup_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1541.LookupRequest.fromBuffer(value),
-        ($1541.LookupResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1541.RunQueryRequest, $1541.RunQueryResponse>(
+        ($core.List<$core.int> value) => $114.LookupRequest.fromBuffer(value),
+        ($114.LookupResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.RunQueryRequest, $114.RunQueryResponse>(
         'RunQuery',
         runQuery_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1541.RunQueryRequest.fromBuffer(value),
-        ($1541.RunQueryResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1541.BeginTransactionRequest, $1541.BeginTransactionResponse>(
+        ($core.List<$core.int> value) => $114.RunQueryRequest.fromBuffer(value),
+        ($114.RunQueryResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.BeginTransactionRequest, $114.BeginTransactionResponse>(
         'BeginTransaction',
         beginTransaction_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1541.BeginTransactionRequest.fromBuffer(value),
-        ($1541.BeginTransactionResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1541.CommitRequest, $1541.CommitResponse>(
+        ($core.List<$core.int> value) => $114.BeginTransactionRequest.fromBuffer(value),
+        ($114.BeginTransactionResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.CommitRequest, $114.CommitResponse>(
         'Commit',
         commit_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1541.CommitRequest.fromBuffer(value),
-        ($1541.CommitResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1541.RollbackRequest, $1541.RollbackResponse>(
+        ($core.List<$core.int> value) => $114.CommitRequest.fromBuffer(value),
+        ($114.CommitResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.RollbackRequest, $114.RollbackResponse>(
         'Rollback',
         rollback_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1541.RollbackRequest.fromBuffer(value),
-        ($1541.RollbackResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1541.AllocateIdsRequest, $1541.AllocateIdsResponse>(
+        ($core.List<$core.int> value) => $114.RollbackRequest.fromBuffer(value),
+        ($114.RollbackResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.AllocateIdsRequest, $114.AllocateIdsResponse>(
         'AllocateIds',
         allocateIds_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1541.AllocateIdsRequest.fromBuffer(value),
-        ($1541.AllocateIdsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1541.ReserveIdsRequest, $1541.ReserveIdsResponse>(
+        ($core.List<$core.int> value) => $114.AllocateIdsRequest.fromBuffer(value),
+        ($114.AllocateIdsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$114.ReserveIdsRequest, $114.ReserveIdsResponse>(
         'ReserveIds',
         reserveIds_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1541.ReserveIdsRequest.fromBuffer(value),
-        ($1541.ReserveIdsResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $114.ReserveIdsRequest.fromBuffer(value),
+        ($114.ReserveIdsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1541.LookupResponse> lookup_Pre($grpc.ServiceCall call, $async.Future<$1541.LookupRequest> request) async {
+  $async.Future<$114.LookupResponse> lookup_Pre($grpc.ServiceCall call, $async.Future<$114.LookupRequest> request) async {
     return lookup(call, await request);
   }
 
-  $async.Future<$1541.RunQueryResponse> runQuery_Pre($grpc.ServiceCall call, $async.Future<$1541.RunQueryRequest> request) async {
+  $async.Future<$114.RunQueryResponse> runQuery_Pre($grpc.ServiceCall call, $async.Future<$114.RunQueryRequest> request) async {
     return runQuery(call, await request);
   }
 
-  $async.Future<$1541.BeginTransactionResponse> beginTransaction_Pre($grpc.ServiceCall call, $async.Future<$1541.BeginTransactionRequest> request) async {
+  $async.Future<$114.BeginTransactionResponse> beginTransaction_Pre($grpc.ServiceCall call, $async.Future<$114.BeginTransactionRequest> request) async {
     return beginTransaction(call, await request);
   }
 
-  $async.Future<$1541.CommitResponse> commit_Pre($grpc.ServiceCall call, $async.Future<$1541.CommitRequest> request) async {
+  $async.Future<$114.CommitResponse> commit_Pre($grpc.ServiceCall call, $async.Future<$114.CommitRequest> request) async {
     return commit(call, await request);
   }
 
-  $async.Future<$1541.RollbackResponse> rollback_Pre($grpc.ServiceCall call, $async.Future<$1541.RollbackRequest> request) async {
+  $async.Future<$114.RollbackResponse> rollback_Pre($grpc.ServiceCall call, $async.Future<$114.RollbackRequest> request) async {
     return rollback(call, await request);
   }
 
-  $async.Future<$1541.AllocateIdsResponse> allocateIds_Pre($grpc.ServiceCall call, $async.Future<$1541.AllocateIdsRequest> request) async {
+  $async.Future<$114.AllocateIdsResponse> allocateIds_Pre($grpc.ServiceCall call, $async.Future<$114.AllocateIdsRequest> request) async {
     return allocateIds(call, await request);
   }
 
-  $async.Future<$1541.ReserveIdsResponse> reserveIds_Pre($grpc.ServiceCall call, $async.Future<$1541.ReserveIdsRequest> request) async {
+  $async.Future<$114.ReserveIdsResponse> reserveIds_Pre($grpc.ServiceCall call, $async.Future<$114.ReserveIdsRequest> request) async {
     return reserveIds(call, await request);
   }
 
-  $async.Future<$1541.LookupResponse> lookup($grpc.ServiceCall call, $1541.LookupRequest request);
-  $async.Future<$1541.RunQueryResponse> runQuery($grpc.ServiceCall call, $1541.RunQueryRequest request);
-  $async.Future<$1541.BeginTransactionResponse> beginTransaction($grpc.ServiceCall call, $1541.BeginTransactionRequest request);
-  $async.Future<$1541.CommitResponse> commit($grpc.ServiceCall call, $1541.CommitRequest request);
-  $async.Future<$1541.RollbackResponse> rollback($grpc.ServiceCall call, $1541.RollbackRequest request);
-  $async.Future<$1541.AllocateIdsResponse> allocateIds($grpc.ServiceCall call, $1541.AllocateIdsRequest request);
-  $async.Future<$1541.ReserveIdsResponse> reserveIds($grpc.ServiceCall call, $1541.ReserveIdsRequest request);
+  $async.Future<$114.LookupResponse> lookup($grpc.ServiceCall call, $114.LookupRequest request);
+  $async.Future<$114.RunQueryResponse> runQuery($grpc.ServiceCall call, $114.RunQueryRequest request);
+  $async.Future<$114.BeginTransactionResponse> beginTransaction($grpc.ServiceCall call, $114.BeginTransactionRequest request);
+  $async.Future<$114.CommitResponse> commit($grpc.ServiceCall call, $114.CommitRequest request);
+  $async.Future<$114.RollbackResponse> rollback($grpc.ServiceCall call, $114.RollbackRequest request);
+  $async.Future<$114.AllocateIdsResponse> allocateIds($grpc.ServiceCall call, $114.AllocateIdsRequest request);
+  $async.Future<$114.ReserveIdsResponse> reserveIds($grpc.ServiceCall call, $114.ReserveIdsRequest request);
 }

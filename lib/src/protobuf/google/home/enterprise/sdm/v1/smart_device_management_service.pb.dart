@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $1735;
-import 'device.pb.dart' as $1619;
-import 'site.pb.dart' as $1620;
+import '../../../../protobuf/struct.pb.dart' as $258;
+import 'device.pb.dart' as $140;
+import 'site.pb.dart' as $141;
 
 /// Request message for SmartDeviceManagementService.GetDevice
 class GetDeviceRequest extends $pb.GeneratedMessage {
@@ -175,7 +175,7 @@ class ListDevicesRequest extends $pb.GeneratedMessage {
 /// Response message for SmartDeviceManagementService.ListDevices
 class ListDevicesResponse extends $pb.GeneratedMessage {
   factory ListDevicesResponse({
-    $core.Iterable<$1619.Device>? devices,
+    $core.Iterable<$140.Device>? devices,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -192,7 +192,7 @@ class ListDevicesResponse extends $pb.GeneratedMessage {
   factory ListDevicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDevicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..pc<$1619.Device>(1, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $1619.Device.create)
+    ..pc<$140.Device>(1, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $140.Device.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -220,7 +220,7 @@ class ListDevicesResponse extends $pb.GeneratedMessage {
 
   /// The list of devices.
   @$pb.TagNumber(1)
-  $core.List<$1619.Device> get devices => $_getList(0);
+  $core.List<$140.Device> get devices => $_getList(0);
 
   /// The pagination token to retrieve the next page of results.
   @$pb.TagNumber(2)
@@ -238,7 +238,7 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandRequest({
     $core.String? name,
     $core.String? command,
-    $1735.Struct? params,
+    $258.Struct? params,
   }) {
     final $result = create();
     if (name != null) {
@@ -259,7 +259,7 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteDeviceCommandRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'command')
-    ..aOM<$1735.Struct>(3, _omitFieldNames ? '' : 'params', subBuilder: $1735.Struct.create)
+    ..aOM<$258.Struct>(3, _omitFieldNames ? '' : 'params', subBuilder: $258.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -308,21 +308,21 @@ class ExecuteDeviceCommandRequest extends $pb.GeneratedMessage {
 
   /// The command message to execute, represented as a Struct.
   @$pb.TagNumber(3)
-  $1735.Struct get params => $_getN(2);
+  $258.Struct get params => $_getN(2);
   @$pb.TagNumber(3)
-  set params($1735.Struct v) { setField(3, v); }
+  set params($258.Struct v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParams() => $_has(2);
   @$pb.TagNumber(3)
   void clearParams() => clearField(3);
   @$pb.TagNumber(3)
-  $1735.Struct ensureParams() => $_ensure(2);
+  $258.Struct ensureParams() => $_ensure(2);
 }
 
 /// Response message for SmartDeviceManagementService.ExecuteDeviceCommand
 class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandResponse({
-    $1735.Struct? results,
+    $258.Struct? results,
   }) {
     final $result = create();
     if (results != null) {
@@ -335,7 +335,7 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
   factory ExecuteDeviceCommandResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteDeviceCommandResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..aOM<$1735.Struct>(1, _omitFieldNames ? '' : 'results', subBuilder: $1735.Struct.create)
+    ..aOM<$258.Struct>(1, _omitFieldNames ? '' : 'results', subBuilder: $258.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -362,15 +362,15 @@ class ExecuteDeviceCommandResponse extends $pb.GeneratedMessage {
 
   /// The results of executing the command.
   @$pb.TagNumber(1)
-  $1735.Struct get results => $_getN(0);
+  $258.Struct get results => $_getN(0);
   @$pb.TagNumber(1)
-  set results($1735.Struct v) { setField(1, v); }
+  set results($258.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResults() => $_has(0);
   @$pb.TagNumber(1)
   void clearResults() => clearField(1);
   @$pb.TagNumber(1)
-  $1735.Struct ensureResults() => $_ensure(0);
+  $258.Struct ensureResults() => $_ensure(0);
 }
 
 /// Request message for SmartDeviceManagementService.GetStructure
@@ -527,7 +527,7 @@ class ListStructuresRequest extends $pb.GeneratedMessage {
 /// Response message for SmartDeviceManagementService.ListStructures
 class ListStructuresResponse extends $pb.GeneratedMessage {
   factory ListStructuresResponse({
-    $core.Iterable<$1620.Structure>? structures,
+    $core.Iterable<$141.Structure>? structures,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -544,7 +544,7 @@ class ListStructuresResponse extends $pb.GeneratedMessage {
   factory ListStructuresResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListStructuresResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..pc<$1620.Structure>(1, _omitFieldNames ? '' : 'structures', $pb.PbFieldType.PM, subBuilder: $1620.Structure.create)
+    ..pc<$141.Structure>(1, _omitFieldNames ? '' : 'structures', $pb.PbFieldType.PM, subBuilder: $141.Structure.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -572,7 +572,7 @@ class ListStructuresResponse extends $pb.GeneratedMessage {
 
   /// The list of structures.
   @$pb.TagNumber(1)
-  $core.List<$1620.Structure> get structures => $_getList(0);
+  $core.List<$141.Structure> get structures => $_getList(0);
 
   /// The pagination token to retrieve the next page of results.
   /// If this field is omitted, there are no subsequent pages.
@@ -726,7 +726,7 @@ class ListRoomsRequest extends $pb.GeneratedMessage {
 /// Response message for SmartDeviceManagementService.ListRooms
 class ListRoomsResponse extends $pb.GeneratedMessage {
   factory ListRoomsResponse({
-    $core.Iterable<$1620.Room>? rooms,
+    $core.Iterable<$141.Room>? rooms,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -743,7 +743,7 @@ class ListRoomsResponse extends $pb.GeneratedMessage {
   factory ListRoomsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListRoomsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
-    ..pc<$1620.Room>(1, _omitFieldNames ? '' : 'rooms', $pb.PbFieldType.PM, subBuilder: $1620.Room.create)
+    ..pc<$141.Room>(1, _omitFieldNames ? '' : 'rooms', $pb.PbFieldType.PM, subBuilder: $141.Room.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -771,7 +771,7 @@ class ListRoomsResponse extends $pb.GeneratedMessage {
 
   /// The list of rooms.
   @$pb.TagNumber(1)
-  $core.List<$1620.Room> get rooms => $_getList(0);
+  $core.List<$141.Room> get rooms => $_getList(0);
 
   /// The pagination token to retrieve the next page of results.
   /// If this field is omitted, there are no subsequent pages.

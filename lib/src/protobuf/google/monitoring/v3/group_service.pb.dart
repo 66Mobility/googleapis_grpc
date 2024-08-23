@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/monitored_resource.pb.dart' as $1672;
-import 'common.pb.dart' as $4870;
-import 'group.pb.dart' as $1670;
+import '../../api/monitored_resource.pb.dart' as $195;
+import 'common.pb.dart' as $523;
+import 'group.pb.dart' as $193;
 
 enum ListGroupsRequest_Filter {
   childrenOfGroup, 
@@ -188,7 +188,7 @@ class ListGroupsRequest extends $pb.GeneratedMessage {
 /// The `ListGroups` response.
 class ListGroupsResponse extends $pb.GeneratedMessage {
   factory ListGroupsResponse({
-    $core.Iterable<$1670.Group>? group,
+    $core.Iterable<$193.Group>? group,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -205,7 +205,7 @@ class ListGroupsResponse extends $pb.GeneratedMessage {
   factory ListGroupsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListGroupsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$1670.Group>(1, _omitFieldNames ? '' : 'group', $pb.PbFieldType.PM, subBuilder: $1670.Group.create)
+    ..pc<$193.Group>(1, _omitFieldNames ? '' : 'group', $pb.PbFieldType.PM, subBuilder: $193.Group.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -233,7 +233,7 @@ class ListGroupsResponse extends $pb.GeneratedMessage {
 
   /// The groups that match the specified filters.
   @$pb.TagNumber(1)
-  $core.List<$1670.Group> get group => $_getList(0);
+  $core.List<$193.Group> get group => $_getList(0);
 
   /// If there are more results than have been returned, then this field is set
   /// to a non-empty value.  To see the additional results,
@@ -305,7 +305,7 @@ class GetGroupRequest extends $pb.GeneratedMessage {
 /// The `CreateGroup` request.
 class CreateGroupRequest extends $pb.GeneratedMessage {
   factory CreateGroupRequest({
-    $1670.Group? group,
+    $193.Group? group,
     $core.bool? validateOnly,
     $core.String? name,
   }) {
@@ -326,7 +326,7 @@ class CreateGroupRequest extends $pb.GeneratedMessage {
   factory CreateGroupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$1670.Group>(2, _omitFieldNames ? '' : 'group', subBuilder: $1670.Group.create)
+    ..aOM<$193.Group>(2, _omitFieldNames ? '' : 'group', subBuilder: $193.Group.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
@@ -356,15 +356,15 @@ class CreateGroupRequest extends $pb.GeneratedMessage {
   /// Required. A group definition. It is an error to define the `name` field
   /// because the system assigns the name.
   @$pb.TagNumber(2)
-  $1670.Group get group => $_getN(0);
+  $193.Group get group => $_getN(0);
   @$pb.TagNumber(2)
-  set group($1670.Group v) { setField(2, v); }
+  set group($193.Group v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGroup() => $_has(0);
   @$pb.TagNumber(2)
   void clearGroup() => clearField(2);
   @$pb.TagNumber(2)
-  $1670.Group ensureGroup() => $_ensure(0);
+  $193.Group ensureGroup() => $_ensure(0);
 
   /// If true, validate this request but do not create the group.
   @$pb.TagNumber(3)
@@ -394,7 +394,7 @@ class CreateGroupRequest extends $pb.GeneratedMessage {
 /// The `UpdateGroup` request.
 class UpdateGroupRequest extends $pb.GeneratedMessage {
   factory UpdateGroupRequest({
-    $1670.Group? group,
+    $193.Group? group,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -411,7 +411,7 @@ class UpdateGroupRequest extends $pb.GeneratedMessage {
   factory UpdateGroupRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateGroupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$1670.Group>(2, _omitFieldNames ? '' : 'group', subBuilder: $1670.Group.create)
+    ..aOM<$193.Group>(2, _omitFieldNames ? '' : 'group', subBuilder: $193.Group.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -441,15 +441,15 @@ class UpdateGroupRequest extends $pb.GeneratedMessage {
   /// group, excepting `name`, are replaced with the corresponding fields of this
   /// group.
   @$pb.TagNumber(2)
-  $1670.Group get group => $_getN(0);
+  $193.Group get group => $_getN(0);
   @$pb.TagNumber(2)
-  set group($1670.Group v) { setField(2, v); }
+  set group($193.Group v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGroup() => $_has(0);
   @$pb.TagNumber(2)
   void clearGroup() => clearField(2);
   @$pb.TagNumber(2)
-  $1670.Group ensureGroup() => $_ensure(0);
+  $193.Group ensureGroup() => $_ensure(0);
 
   /// If true, validate this request but do not update the existing group.
   @$pb.TagNumber(3)
@@ -540,7 +540,7 @@ class ListGroupMembersRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? filter,
-    $4870.TimeInterval? interval,
+    $523.TimeInterval? interval,
     $core.String? name,
   }) {
     final $result = create();
@@ -569,7 +569,7 @@ class ListGroupMembersRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'filter')
-    ..aOM<$4870.TimeInterval>(6, _omitFieldNames ? '' : 'interval', subBuilder: $4870.TimeInterval.create)
+    ..aOM<$523.TimeInterval>(6, _omitFieldNames ? '' : 'interval', subBuilder: $523.TimeInterval.create)
     ..aOS(7, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
   ;
@@ -639,15 +639,15 @@ class ListGroupMembersRequest extends $pb.GeneratedMessage {
   /// included in the response.  If no interval is provided then the group
   /// membership over the last minute is returned.
   @$pb.TagNumber(6)
-  $4870.TimeInterval get interval => $_getN(3);
+  $523.TimeInterval get interval => $_getN(3);
   @$pb.TagNumber(6)
-  set interval($4870.TimeInterval v) { setField(6, v); }
+  set interval($523.TimeInterval v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasInterval() => $_has(3);
   @$pb.TagNumber(6)
   void clearInterval() => clearField(6);
   @$pb.TagNumber(6)
-  $4870.TimeInterval ensureInterval() => $_ensure(3);
+  $523.TimeInterval ensureInterval() => $_ensure(3);
 
   ///  Required. The group whose members are listed. The format is:
   ///
@@ -665,7 +665,7 @@ class ListGroupMembersRequest extends $pb.GeneratedMessage {
 /// The `ListGroupMembers` response.
 class ListGroupMembersResponse extends $pb.GeneratedMessage {
   factory ListGroupMembersResponse({
-    $core.Iterable<$1672.MonitoredResource>? members,
+    $core.Iterable<$195.MonitoredResource>? members,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -686,7 +686,7 @@ class ListGroupMembersResponse extends $pb.GeneratedMessage {
   factory ListGroupMembersResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListGroupMembersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$1672.MonitoredResource>(1, _omitFieldNames ? '' : 'members', $pb.PbFieldType.PM, subBuilder: $1672.MonitoredResource.create)
+    ..pc<$195.MonitoredResource>(1, _omitFieldNames ? '' : 'members', $pb.PbFieldType.PM, subBuilder: $195.MonitoredResource.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -715,7 +715,7 @@ class ListGroupMembersResponse extends $pb.GeneratedMessage {
 
   /// A set of monitored resources in the group.
   @$pb.TagNumber(1)
-  $core.List<$1672.MonitoredResource> get members => $_getList(0);
+  $core.List<$195.MonitoredResource> get members => $_getList(0);
 
   /// If there are more results than have been returned, then this field is
   /// set to a non-empty value.  To see the additional results, use that value as

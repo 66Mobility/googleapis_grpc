@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'network_settings.pb.dart' as $4192;
+import 'network_settings.pb.dart' as $374;
 import 'service.pbenum.dart';
 
 export 'service.pbenum.dart';
@@ -31,7 +31,7 @@ class Service extends $pb.GeneratedMessage {
     $core.String? id,
     TrafficSplit? split,
     $core.Map<$core.String, $core.String>? labels,
-    $4192.NetworkSettings? networkSettings,
+    $374.NetworkSettings? networkSettings,
   }) {
     final $result = create();
     if (name != null) {
@@ -60,7 +60,7 @@ class Service extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOM<TrafficSplit>(3, _omitFieldNames ? '' : 'split', subBuilder: TrafficSplit.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Service.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.appengine.v1'))
-    ..aOM<$4192.NetworkSettings>(6, _omitFieldNames ? '' : 'networkSettings', subBuilder: $4192.NetworkSettings.create)
+    ..aOM<$374.NetworkSettings>(6, _omitFieldNames ? '' : 'networkSettings', subBuilder: $374.NetworkSettings.create)
     ..hasRequiredFields = false
   ;
 
@@ -140,15 +140,15 @@ class Service extends $pb.GeneratedMessage {
 
   /// Ingress settings for this service. Will apply to all versions.
   @$pb.TagNumber(6)
-  $4192.NetworkSettings get networkSettings => $_getN(4);
+  $374.NetworkSettings get networkSettings => $_getN(4);
   @$pb.TagNumber(6)
-  set networkSettings($4192.NetworkSettings v) { setField(6, v); }
+  set networkSettings($374.NetworkSettings v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasNetworkSettings() => $_has(4);
   @$pb.TagNumber(6)
   void clearNetworkSettings() => clearField(6);
   @$pb.TagNumber(6)
-  $4192.NetworkSettings ensureNetworkSettings() => $_ensure(4);
+  $374.NetworkSettings ensureNetworkSettings() => $_ensure(4);
 }
 
 /// Traffic routing configuration for versions within a single service. Traffic

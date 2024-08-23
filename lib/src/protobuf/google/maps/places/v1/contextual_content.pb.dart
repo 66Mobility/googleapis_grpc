@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'photo.pb.dart' as $4810;
-import 'review.pb.dart' as $4808;
+import 'photo.pb.dart' as $461;
+import 'review.pb.dart' as $459;
 
 /// The range of highlighted text.
 class ContextualContent_Justification_ReviewJustification_HighlightedText_HighlightedTextRange extends $pb.GeneratedMessage {
@@ -155,7 +155,7 @@ class ContextualContent_Justification_ReviewJustification_HighlightedText extend
 class ContextualContent_Justification_ReviewJustification extends $pb.GeneratedMessage {
   factory ContextualContent_Justification_ReviewJustification({
     ContextualContent_Justification_ReviewJustification_HighlightedText? highlightedText,
-    $4808.Review? review,
+    $459.Review? review,
   }) {
     final $result = create();
     if (highlightedText != null) {
@@ -172,7 +172,7 @@ class ContextualContent_Justification_ReviewJustification extends $pb.GeneratedM
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualContent.Justification.ReviewJustification', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
     ..aOM<ContextualContent_Justification_ReviewJustification_HighlightedText>(1, _omitFieldNames ? '' : 'highlightedText', subBuilder: ContextualContent_Justification_ReviewJustification_HighlightedText.create)
-    ..aOM<$4808.Review>(2, _omitFieldNames ? '' : 'review', subBuilder: $4808.Review.create)
+    ..aOM<$459.Review>(2, _omitFieldNames ? '' : 'review', subBuilder: $459.Review.create)
     ..hasRequiredFields = false
   ;
 
@@ -210,15 +210,15 @@ class ContextualContent_Justification_ReviewJustification extends $pb.GeneratedM
 
   /// The review that the highlighted text is generated from.
   @$pb.TagNumber(2)
-  $4808.Review get review => $_getN(1);
+  $459.Review get review => $_getN(1);
   @$pb.TagNumber(2)
-  set review($4808.Review v) { setField(2, v); }
+  set review($459.Review v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReview() => $_has(1);
   @$pb.TagNumber(2)
   void clearReview() => clearField(2);
   @$pb.TagNumber(2)
-  $4808.Review ensureReview() => $_ensure(1);
+  $459.Review ensureReview() => $_ensure(1);
 }
 
 /// Experimental: See
@@ -409,8 +409,8 @@ class ContextualContent_Justification extends $pb.GeneratedMessage {
 ///  Content that is contextual to the place query.
 class ContextualContent extends $pb.GeneratedMessage {
   factory ContextualContent({
-    $core.Iterable<$4808.Review>? reviews,
-    $core.Iterable<$4810.Photo>? photos,
+    $core.Iterable<$459.Review>? reviews,
+    $core.Iterable<$461.Photo>? photos,
     $core.Iterable<ContextualContent_Justification>? justifications,
   }) {
     final $result = create();
@@ -430,8 +430,8 @@ class ContextualContent extends $pb.GeneratedMessage {
   factory ContextualContent.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualContent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<$4808.Review>(1, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM, subBuilder: $4808.Review.create)
-    ..pc<$4810.Photo>(2, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM, subBuilder: $4810.Photo.create)
+    ..pc<$459.Review>(1, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM, subBuilder: $459.Review.create)
+    ..pc<$461.Photo>(2, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM, subBuilder: $461.Photo.create)
     ..pc<ContextualContent_Justification>(3, _omitFieldNames ? '' : 'justifications', $pb.PbFieldType.PM, subBuilder: ContextualContent_Justification.create)
     ..hasRequiredFields = false
   ;
@@ -459,12 +459,12 @@ class ContextualContent extends $pb.GeneratedMessage {
 
   /// List of reviews about this place, contexual to the place query.
   @$pb.TagNumber(1)
-  $core.List<$4808.Review> get reviews => $_getList(0);
+  $core.List<$459.Review> get reviews => $_getList(0);
 
   /// Information (including references) about photos of this place, contexual to
   /// the place query.
   @$pb.TagNumber(2)
-  $core.List<$4810.Photo> get photos => $_getList(1);
+  $core.List<$461.Photo> get photos => $_getList(1);
 
   ///  Experimental: See
   ///  https://developers.google.com/maps/documentation/places/web-service/experimental/places-generative

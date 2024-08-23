@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'entity_display.pb.dart' as $1756;
+import 'entity_display.pb.dart' as $279;
 
 /// Type that matches any text if surrounding words context is close to provided
 /// training examples.
 class FreeTextType extends $pb.GeneratedMessage {
   factory FreeTextType({
-    $1756.EntityDisplay? display,
+    $279.EntityDisplay? display,
   }) {
     final $result = create();
     if (display != null) {
@@ -32,7 +32,7 @@ class FreeTextType extends $pb.GeneratedMessage {
   factory FreeTextType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FreeTextType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
-    ..aOM<$1756.EntityDisplay>(2, _omitFieldNames ? '' : 'display', subBuilder: $1756.EntityDisplay.create)
+    ..aOM<$279.EntityDisplay>(2, _omitFieldNames ? '' : 'display', subBuilder: $279.EntityDisplay.create)
     ..hasRequiredFields = false
   ;
 
@@ -60,15 +60,15 @@ class FreeTextType extends $pb.GeneratedMessage {
   /// Optional. Elements that will be displayed on the canvas once an entity is extracted
   /// from a query. Only relevant for canvas enabled apps.
   @$pb.TagNumber(2)
-  $1756.EntityDisplay get display => $_getN(0);
+  $279.EntityDisplay get display => $_getN(0);
   @$pb.TagNumber(2)
-  set display($1756.EntityDisplay v) { setField(2, v); }
+  set display($279.EntityDisplay v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDisplay() => $_has(0);
   @$pb.TagNumber(2)
   void clearDisplay() => clearField(2);
   @$pb.TagNumber(2)
-  $1756.EntityDisplay ensureDisplay() => $_ensure(0);
+  $279.EntityDisplay ensureDisplay() => $_ensure(0);
 }
 
 

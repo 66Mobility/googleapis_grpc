@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2210;
-import 'accessright.pbenum.dart' as $4877;
+import '../../../../protobuf/field_mask.pb.dart' as $330;
+import 'accessright.pbenum.dart' as $531;
 import 'user.pbenum.dart';
 
 export 'user.pbenum.dart';
@@ -24,7 +24,7 @@ class User extends $pb.GeneratedMessage {
   factory User({
     $core.String? name,
     User_State? state,
-    $core.Iterable<$4877.AccessRight>? accessRights,
+    $core.Iterable<$531.AccessRight>? accessRights,
   }) {
     final $result = create();
     if (name != null) {
@@ -45,7 +45,7 @@ class User extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'User', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<User_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: User_State.STATE_UNSPECIFIED, valueOf: User_State.valueOf, enumValues: User_State.values)
-    ..pc<$4877.AccessRight>(4, _omitFieldNames ? '' : 'accessRights', $pb.PbFieldType.KE, valueOf: $4877.AccessRight.valueOf, enumValues: $4877.AccessRight.values, defaultEnumValue: $4877.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
+    ..pc<$531.AccessRight>(4, _omitFieldNames ? '' : 'accessRights', $pb.PbFieldType.KE, valueOf: $531.AccessRight.valueOf, enumValues: $531.AccessRight.values, defaultEnumValue: $531.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -98,7 +98,7 @@ class User extends $pb.GeneratedMessage {
   /// rights](https://support.google.com/merchants/answer/12160472?sjid=6789834943175119429-EU#accesstypes)
   /// the user has.
   @$pb.TagNumber(4)
-  $core.List<$4877.AccessRight> get accessRights => $_getList(2);
+  $core.List<$531.AccessRight> get accessRights => $_getList(2);
 }
 
 /// Request message for the `GetUser` method.
@@ -304,7 +304,7 @@ class DeleteUserRequest extends $pb.GeneratedMessage {
 class UpdateUserRequest extends $pb.GeneratedMessage {
   factory UpdateUserRequest({
     User? user,
-    $2210.FieldMask? updateMask,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (user != null) {
@@ -321,7 +321,7 @@ class UpdateUserRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateUserRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<User>(1, _omitFieldNames ? '' : 'user', subBuilder: User.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -363,15 +363,15 @@ class UpdateUserRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `ListUsers` method.

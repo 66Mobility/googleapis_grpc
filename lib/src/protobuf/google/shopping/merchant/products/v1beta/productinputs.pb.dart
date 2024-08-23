@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $4874;
-import '../../../type/types.pbenum.dart' as $4874;
-import 'products_common.pb.dart' as $4884;
+import '../../../type/types.pb.dart' as $528;
+import '../../../type/types.pbenum.dart' as $528;
+import 'products_common.pb.dart' as $538;
 
 ///  This resource represents input data you submit for a product, not the
 ///  processed product that you see in Merchant Center, in Shopping ads, or across
@@ -43,13 +43,13 @@ class ProductInput extends $pb.GeneratedMessage {
   factory ProductInput({
     $core.String? name,
     $core.String? product,
-    $4874.Channel_ChannelEnum? channel,
+    $528.Channel_ChannelEnum? channel,
     $core.String? offerId,
     $core.String? contentLanguage,
     $core.String? feedLabel,
     $fixnum.Int64? versionNumber,
-    $4884.Attributes? attributes,
-    $core.Iterable<$4874.CustomAttribute>? customAttributes,
+    $538.Attributes? attributes,
+    $core.Iterable<$528.CustomAttribute>? customAttributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -88,13 +88,13 @@ class ProductInput extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProductInput', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'product')
-    ..e<$4874.Channel_ChannelEnum>(3, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $4874.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED, valueOf: $4874.Channel_ChannelEnum.valueOf, enumValues: $4874.Channel_ChannelEnum.values)
+    ..e<$528.Channel_ChannelEnum>(3, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $528.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED, valueOf: $528.Channel_ChannelEnum.valueOf, enumValues: $528.Channel_ChannelEnum.values)
     ..aOS(4, _omitFieldNames ? '' : 'offerId')
     ..aOS(5, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(6, _omitFieldNames ? '' : 'feedLabel')
     ..aInt64(7, _omitFieldNames ? '' : 'versionNumber')
-    ..aOM<$4884.Attributes>(8, _omitFieldNames ? '' : 'attributes', subBuilder: $4884.Attributes.create)
-    ..pc<$4874.CustomAttribute>(9, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $4874.CustomAttribute.create)
+    ..aOM<$538.Attributes>(8, _omitFieldNames ? '' : 'attributes', subBuilder: $538.Attributes.create)
+    ..pc<$528.CustomAttribute>(9, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $528.CustomAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -147,9 +147,9 @@ class ProductInput extends $pb.GeneratedMessage {
   /// [channel](https://support.google.com/merchants/answer/7361332) of the
   /// product.
   @$pb.TagNumber(3)
-  $4874.Channel_ChannelEnum get channel => $_getN(2);
+  $528.Channel_ChannelEnum get channel => $_getN(2);
   @$pb.TagNumber(3)
-  set channel($4874.Channel_ChannelEnum v) { setField(3, v); }
+  set channel($528.Channel_ChannelEnum v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasChannel() => $_has(2);
   @$pb.TagNumber(3)
@@ -218,15 +218,15 @@ class ProductInput extends $pb.GeneratedMessage {
 
   /// Optional. A list of product attributes.
   @$pb.TagNumber(8)
-  $4884.Attributes get attributes => $_getN(7);
+  $538.Attributes get attributes => $_getN(7);
   @$pb.TagNumber(8)
-  set attributes($4884.Attributes v) { setField(8, v); }
+  set attributes($538.Attributes v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAttributes() => $_has(7);
   @$pb.TagNumber(8)
   void clearAttributes() => clearField(8);
   @$pb.TagNumber(8)
-  $4884.Attributes ensureAttributes() => $_ensure(7);
+  $538.Attributes ensureAttributes() => $_ensure(7);
 
   /// Optional. A list of custom (merchant-provided) attributes. It can also be
   /// used for submitting any attribute of the data specification in its generic
@@ -240,7 +240,7 @@ class ProductInput extends $pb.GeneratedMessage {
   /// size of 102.4kB. Underscores in custom attribute names are replaced by
   /// spaces upon insertion.
   @$pb.TagNumber(9)
-  $core.List<$4874.CustomAttribute> get customAttributes => $_getList(8);
+  $core.List<$528.CustomAttribute> get customAttributes => $_getList(8);
 }
 
 /// Request message for the InsertProductInput method.

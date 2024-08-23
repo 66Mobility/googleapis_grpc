@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $1776;
+import '../../protobuf/timestamp.pb.dart' as $299;
 import 'instance.pbenum.dart';
 
 export 'instance.pbenum.dart';
@@ -63,7 +63,7 @@ class Instance extends $pb.GeneratedMessage {
     $core.String? vmName,
     $core.String? vmZoneName,
     $core.String? vmId,
-    $1776.Timestamp? startTime,
+    $299.Timestamp? startTime,
     $core.int? requests,
     $core.int? errors,
     $core.double? qps,
@@ -140,7 +140,7 @@ class Instance extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'vmName')
     ..aOS(6, _omitFieldNames ? '' : 'vmZoneName')
     ..aOS(7, _omitFieldNames ? '' : 'vmId')
-    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(8, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'requests', $pb.PbFieldType.O3)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.O3)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'qps', $pb.PbFieldType.OF)
@@ -253,15 +253,15 @@ class Instance extends $pb.GeneratedMessage {
   ///
   ///  @OutputOnly
   @$pb.TagNumber(8)
-  $1776.Timestamp get startTime => $_getN(7);
+  $299.Timestamp get startTime => $_getN(7);
   @$pb.TagNumber(8)
-  set startTime($1776.Timestamp v) { setField(8, v); }
+  set startTime($299.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasStartTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearStartTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1776.Timestamp ensureStartTime() => $_ensure(7);
+  $299.Timestamp ensureStartTime() => $_ensure(7);
 
   /// Output only. Number of requests since this instance was started.
   @$pb.TagNumber(9)

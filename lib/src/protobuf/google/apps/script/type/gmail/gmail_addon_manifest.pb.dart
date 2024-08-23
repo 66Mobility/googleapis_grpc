@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../extension_point.pb.dart' as $4211;
+import '../extension_point.pb.dart' as $393;
 import 'gmail_addon_manifest.pbenum.dart';
 
 export 'gmail_addon_manifest.pbenum.dart';
@@ -25,7 +25,7 @@ class GmailAddOnManifest extends $pb.GeneratedMessage {
     $core.Iterable<UniversalAction>? universalActions,
     $core.String? authorizationCheckFunction,
     ComposeTrigger? composeTrigger,
-    $4211.HomepageExtensionPoint? homepageTrigger,
+    $393.HomepageExtensionPoint? homepageTrigger,
   }) {
     final $result = create();
     if (contextualTriggers != null) {
@@ -54,7 +54,7 @@ class GmailAddOnManifest extends $pb.GeneratedMessage {
     ..pc<UniversalAction>(4, _omitFieldNames ? '' : 'universalActions', $pb.PbFieldType.PM, subBuilder: UniversalAction.create)
     ..aOS(7, _omitFieldNames ? '' : 'authorizationCheckFunction')
     ..aOM<ComposeTrigger>(12, _omitFieldNames ? '' : 'composeTrigger', subBuilder: ComposeTrigger.create)
-    ..aOM<$4211.HomepageExtensionPoint>(14, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $4211.HomepageExtensionPoint.create)
+    ..aOM<$393.HomepageExtensionPoint>(14, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $393.HomepageExtensionPoint.create)
     ..hasRequiredFields = false
   ;
 
@@ -128,15 +128,15 @@ class GmailAddOnManifest extends $pb.GeneratedMessage {
   ///  If present, this overrides the configuration from
   ///  `addOns.common.homepageTrigger`.
   @$pb.TagNumber(14)
-  $4211.HomepageExtensionPoint get homepageTrigger => $_getN(4);
+  $393.HomepageExtensionPoint get homepageTrigger => $_getN(4);
   @$pb.TagNumber(14)
-  set homepageTrigger($4211.HomepageExtensionPoint v) { setField(14, v); }
+  set homepageTrigger($393.HomepageExtensionPoint v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasHomepageTrigger() => $_has(4);
   @$pb.TagNumber(14)
   void clearHomepageTrigger() => clearField(14);
   @$pb.TagNumber(14)
-  $4211.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(4);
+  $393.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(4);
 }
 
 enum UniversalAction_ActionType {
@@ -244,7 +244,7 @@ class UniversalAction extends $pb.GeneratedMessage {
 class ComposeTrigger extends $pb.GeneratedMessage {
   factory ComposeTrigger({
     ComposeTrigger_DraftAccess? draftAccess,
-    $core.Iterable<$4211.MenuItemExtensionPoint>? actions,
+    $core.Iterable<$393.MenuItemExtensionPoint>? actions,
   }) {
     final $result = create();
     if (draftAccess != null) {
@@ -261,7 +261,7 @@ class ComposeTrigger extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComposeTrigger', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.script.type.gmail'), createEmptyInstance: create)
     ..e<ComposeTrigger_DraftAccess>(4, _omitFieldNames ? '' : 'draftAccess', $pb.PbFieldType.OE, defaultOrMaker: ComposeTrigger_DraftAccess.UNSPECIFIED, valueOf: ComposeTrigger_DraftAccess.valueOf, enumValues: ComposeTrigger_DraftAccess.values)
-    ..pc<$4211.MenuItemExtensionPoint>(5, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: $4211.MenuItemExtensionPoint.create)
+    ..pc<$393.MenuItemExtensionPoint>(5, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: $393.MenuItemExtensionPoint.create)
     ..hasRequiredFields = false
   ;
 
@@ -299,7 +299,7 @@ class ComposeTrigger extends $pb.GeneratedMessage {
   /// Defines the set of actions for compose time add-on. These are actions
   /// that user can trigger on a compose time addon.
   @$pb.TagNumber(5)
-  $core.List<$4211.MenuItemExtensionPoint> get actions => $_getList(1);
+  $core.List<$393.MenuItemExtensionPoint> get actions => $_getList(1);
 }
 
 enum ContextualTrigger_Trigger {

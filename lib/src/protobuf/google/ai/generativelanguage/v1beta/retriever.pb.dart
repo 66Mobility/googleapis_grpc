@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/timestamp.pb.dart' as $299;
 import 'retriever.pbenum.dart';
 
 export 'retriever.pbenum.dart';
@@ -24,8 +24,8 @@ class Corpus extends $pb.GeneratedMessage {
   factory Corpus({
     $core.String? name,
     $core.String? displayName,
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -49,8 +49,8 @@ class Corpus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Corpus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -105,27 +105,27 @@ class Corpus extends $pb.GeneratedMessage {
 
   /// Output only. The Timestamp of when the `Corpus` was created.
   @$pb.TagNumber(3)
-  $1776.Timestamp get createTime => $_getN(2);
+  $299.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($1776.Timestamp v) { setField(3, v); }
+  set createTime($299.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1776.Timestamp ensureCreateTime() => $_ensure(2);
+  $299.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The Timestamp of when the `Corpus` was last updated.
   @$pb.TagNumber(4)
-  $1776.Timestamp get updateTime => $_getN(3);
+  $299.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1776.Timestamp v) { setField(4, v); }
+  set updateTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
+  $299.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
 /// A `Document` is a collection of `Chunk`s.
@@ -135,8 +135,8 @@ class Document extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.Iterable<CustomMetadata>? customMetadata,
-    $1776.Timestamp? updateTime,
-    $1776.Timestamp? createTime,
+    $299.Timestamp? updateTime,
+    $299.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -164,8 +164,8 @@ class Document extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..pc<CustomMetadata>(3, _omitFieldNames ? '' : 'customMetadata', $pb.PbFieldType.PM, subBuilder: CustomMetadata.create)
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -224,27 +224,27 @@ class Document extends $pb.GeneratedMessage {
 
   /// Output only. The Timestamp of when the `Document` was last updated.
   @$pb.TagNumber(4)
-  $1776.Timestamp get updateTime => $_getN(3);
+  $299.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1776.Timestamp v) { setField(4, v); }
+  set updateTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
+  $299.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. The Timestamp of when the `Document` was created.
   @$pb.TagNumber(5)
-  $1776.Timestamp get createTime => $_getN(4);
+  $299.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($1776.Timestamp v) { setField(5, v); }
+  set createTime($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureCreateTime() => $_ensure(4);
+  $299.Timestamp ensureCreateTime() => $_ensure(4);
 }
 
 /// User provided string values assigned to a single metadata key.
@@ -582,8 +582,8 @@ class Chunk extends $pb.GeneratedMessage {
     $core.String? name,
     ChunkData? data,
     $core.Iterable<CustomMetadata>? customMetadata,
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
     Chunk_State? state,
   }) {
     final $result = create();
@@ -615,8 +615,8 @@ class Chunk extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<ChunkData>(2, _omitFieldNames ? '' : 'data', subBuilder: ChunkData.create)
     ..pc<CustomMetadata>(3, _omitFieldNames ? '' : 'customMetadata', $pb.PbFieldType.PM, subBuilder: CustomMetadata.create)
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..e<Chunk_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Chunk_State.STATE_UNSPECIFIED, valueOf: Chunk_State.valueOf, enumValues: Chunk_State.values)
     ..hasRequiredFields = false
   ;
@@ -677,27 +677,27 @@ class Chunk extends $pb.GeneratedMessage {
 
   /// Output only. The Timestamp of when the `Chunk` was created.
   @$pb.TagNumber(4)
-  $1776.Timestamp get createTime => $_getN(3);
+  $299.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1776.Timestamp v) { setField(4, v); }
+  set createTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureCreateTime() => $_ensure(3);
+  $299.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. The Timestamp of when the `Chunk` was last updated.
   @$pb.TagNumber(5)
-  $1776.Timestamp get updateTime => $_getN(4);
+  $299.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1776.Timestamp v) { setField(5, v); }
+  set updateTime($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
+  $299.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Output only. Current state of the `Chunk`.
   @$pb.TagNumber(6)

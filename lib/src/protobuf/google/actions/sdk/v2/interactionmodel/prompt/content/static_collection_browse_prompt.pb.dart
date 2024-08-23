@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'static_image_prompt.pb.dart' as $1736;
-import 'static_image_prompt.pbenum.dart' as $1736;
-import 'static_link_prompt.pb.dart' as $1737;
+import 'static_image_prompt.pb.dart' as $259;
+import 'static_image_prompt.pbenum.dart' as $259;
+import 'static_link_prompt.pb.dart' as $260;
 
 /// Item in the collection.
 class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMessage {
@@ -23,8 +23,8 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
     $core.String? title,
     $core.String? description,
     $core.String? footer,
-    $1736.StaticImagePrompt? image,
-    $1737.OpenUrl? openUriAction,
+    $259.StaticImagePrompt? image,
+    $260.OpenUrl? openUriAction,
   }) {
     final $result = create();
     if (title != null) {
@@ -52,8 +52,8 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'footer')
-    ..aOM<$1736.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $1736.StaticImagePrompt.create)
-    ..aOM<$1737.OpenUrl>(5, _omitFieldNames ? '' : 'openUriAction', subBuilder: $1737.OpenUrl.create)
+    ..aOM<$259.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $259.StaticImagePrompt.create)
+    ..aOM<$260.OpenUrl>(5, _omitFieldNames ? '' : 'openUriAction', subBuilder: $260.OpenUrl.create)
     ..hasRequiredFields = false
   ;
 
@@ -111,27 +111,27 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
 
   /// Image for the collection item.
   @$pb.TagNumber(4)
-  $1736.StaticImagePrompt get image => $_getN(3);
+  $259.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($1736.StaticImagePrompt v) { setField(4, v); }
+  set image($259.StaticImagePrompt v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $1736.StaticImagePrompt ensureImage() => $_ensure(3);
+  $259.StaticImagePrompt ensureImage() => $_ensure(3);
 
   /// Required. URI to open if the item selected.
   @$pb.TagNumber(5)
-  $1737.OpenUrl get openUriAction => $_getN(4);
+  $260.OpenUrl get openUriAction => $_getN(4);
   @$pb.TagNumber(5)
-  set openUriAction($1737.OpenUrl v) { setField(5, v); }
+  set openUriAction($260.OpenUrl v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOpenUriAction() => $_has(4);
   @$pb.TagNumber(5)
   void clearOpenUriAction() => clearField(5);
   @$pb.TagNumber(5)
-  $1737.OpenUrl ensureOpenUriAction() => $_ensure(4);
+  $260.OpenUrl ensureOpenUriAction() => $_ensure(4);
 }
 
 /// Presents a set of web documents as a collection of large-tile items. Items
@@ -139,7 +139,7 @@ class StaticCollectionBrowsePrompt_CollectionBrowseItem extends $pb.GeneratedMes
 class StaticCollectionBrowsePrompt extends $pb.GeneratedMessage {
   factory StaticCollectionBrowsePrompt({
     $core.Iterable<StaticCollectionBrowsePrompt_CollectionBrowseItem>? items,
-    $1736.StaticImagePrompt_ImageFill? imageFill,
+    $259.StaticImagePrompt_ImageFill? imageFill,
   }) {
     final $result = create();
     if (items != null) {
@@ -156,7 +156,7 @@ class StaticCollectionBrowsePrompt extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticCollectionBrowsePrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
     ..pc<StaticCollectionBrowsePrompt_CollectionBrowseItem>(1, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: StaticCollectionBrowsePrompt_CollectionBrowseItem.create)
-    ..e<$1736.StaticImagePrompt_ImageFill>(2, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $1736.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $1736.StaticImagePrompt_ImageFill.valueOf, enumValues: $1736.StaticImagePrompt_ImageFill.values)
+    ..e<$259.StaticImagePrompt_ImageFill>(2, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $259.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $259.StaticImagePrompt_ImageFill.valueOf, enumValues: $259.StaticImagePrompt_ImageFill.values)
     ..hasRequiredFields = false
   ;
 
@@ -188,9 +188,9 @@ class StaticCollectionBrowsePrompt extends $pb.GeneratedMessage {
 
   /// Image display option for images in the collection.
   @$pb.TagNumber(2)
-  $1736.StaticImagePrompt_ImageFill get imageFill => $_getN(1);
+  $259.StaticImagePrompt_ImageFill get imageFill => $_getN(1);
   @$pb.TagNumber(2)
-  set imageFill($1736.StaticImagePrompt_ImageFill v) { setField(2, v); }
+  set imageFill($259.StaticImagePrompt_ImageFill v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasImageFill() => $_has(1);
   @$pb.TagNumber(2)

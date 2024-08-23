@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $1738;
+import '../../protobuf/duration.pb.dart' as $261;
 
 /// A common proto for logging HTTP requests. Only contains semantics
 /// defined by the HTTP specification. Product-specific logging
@@ -34,7 +34,7 @@ class HttpRequest extends $pb.GeneratedMessage {
     $core.bool? cacheLookup,
     $fixnum.Int64? cacheFillBytes,
     $core.String? serverIp,
-    $1738.Duration? latency,
+    $261.Duration? latency,
     $core.String? protocol,
   }) {
     final $result = create();
@@ -103,7 +103,7 @@ class HttpRequest extends $pb.GeneratedMessage {
     ..aOB(11, _omitFieldNames ? '' : 'cacheLookup')
     ..aInt64(12, _omitFieldNames ? '' : 'cacheFillBytes')
     ..aOS(13, _omitFieldNames ? '' : 'serverIp')
-    ..aOM<$1738.Duration>(14, _omitFieldNames ? '' : 'latency', subBuilder: $1738.Duration.create)
+    ..aOM<$261.Duration>(14, _omitFieldNames ? '' : 'latency', subBuilder: $261.Duration.create)
     ..aOS(15, _omitFieldNames ? '' : 'protocol')
     ..hasRequiredFields = false
   ;
@@ -279,15 +279,15 @@ class HttpRequest extends $pb.GeneratedMessage {
   /// The request processing latency on the server, from the time the request was
   /// received until the response was sent.
   @$pb.TagNumber(14)
-  $1738.Duration get latency => $_getN(13);
+  $261.Duration get latency => $_getN(13);
   @$pb.TagNumber(14)
-  set latency($1738.Duration v) { setField(14, v); }
+  set latency($261.Duration v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasLatency() => $_has(13);
   @$pb.TagNumber(14)
   void clearLatency() => clearField(14);
   @$pb.TagNumber(14)
-  $1738.Duration ensureLatency() => $_ensure(13);
+  $261.Duration ensureLatency() => $_ensure(13);
 
   /// Protocol used for the request. Examples: "HTTP/1.1", "HTTP/2", "websocket"
   @$pb.TagNumber(15)

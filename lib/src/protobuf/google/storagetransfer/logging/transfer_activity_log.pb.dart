@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $1776;
+import '../../protobuf/timestamp.pb.dart' as $299;
 import 'transfer_activity_log.pbenum.dart';
 
 export 'transfer_activity_log.pbenum.dart';
@@ -24,7 +24,7 @@ class AwsS3ObjectMetadata extends $pb.GeneratedMessage {
   factory AwsS3ObjectMetadata({
     $core.String? bucket,
     $core.String? objectKey,
-    $1776.Timestamp? lastModifiedTime,
+    $299.Timestamp? lastModifiedTime,
     $core.String? md5,
     $fixnum.Int64? size,
   }) {
@@ -53,7 +53,7 @@ class AwsS3ObjectMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsS3ObjectMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOS(2, _omitFieldNames ? '' : 'objectKey')
-    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $299.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'md5')
     ..aInt64(5, _omitFieldNames ? '' : 'size')
     ..hasRequiredFields = false
@@ -102,15 +102,15 @@ class AwsS3ObjectMetadata extends $pb.GeneratedMessage {
 
   /// Last modified time of the object.
   @$pb.TagNumber(3)
-  $1776.Timestamp get lastModifiedTime => $_getN(2);
+  $299.Timestamp get lastModifiedTime => $_getN(2);
   @$pb.TagNumber(3)
-  set lastModifiedTime($1776.Timestamp v) { setField(3, v); }
+  set lastModifiedTime($299.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLastModifiedTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearLastModifiedTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1776.Timestamp ensureLastModifiedTime() => $_ensure(2);
+  $299.Timestamp ensureLastModifiedTime() => $_ensure(2);
 
   /// The MD5 checksum of the object's content.
   @$pb.TagNumber(4)
@@ -205,7 +205,7 @@ class GcsObjectMetadata extends $pb.GeneratedMessage {
   factory GcsObjectMetadata({
     $core.String? bucket,
     $core.String? objectKey,
-    $1776.Timestamp? lastModifiedTime,
+    $299.Timestamp? lastModifiedTime,
     $core.String? md5,
     $core.String? crc32c,
     $fixnum.Int64? size,
@@ -238,7 +238,7 @@ class GcsObjectMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcsObjectMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOS(2, _omitFieldNames ? '' : 'objectKey')
-    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $299.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'md5')
     ..aOS(5, _omitFieldNames ? '' : 'crc32c')
     ..aInt64(6, _omitFieldNames ? '' : 'size')
@@ -288,15 +288,15 @@ class GcsObjectMetadata extends $pb.GeneratedMessage {
 
   /// Last modified time of the object.
   @$pb.TagNumber(3)
-  $1776.Timestamp get lastModifiedTime => $_getN(2);
+  $299.Timestamp get lastModifiedTime => $_getN(2);
   @$pb.TagNumber(3)
-  set lastModifiedTime($1776.Timestamp v) { setField(3, v); }
+  set lastModifiedTime($299.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLastModifiedTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearLastModifiedTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1776.Timestamp ensureLastModifiedTime() => $_ensure(2);
+  $299.Timestamp ensureLastModifiedTime() => $_ensure(2);
 
   /// The MD5 checksum of the object's content.
   @$pb.TagNumber(4)
@@ -402,7 +402,7 @@ class AzureBlobMetadata extends $pb.GeneratedMessage {
     $core.String? account,
     $core.String? container,
     $core.String? blobName,
-    $1776.Timestamp? lastModifiedTime,
+    $299.Timestamp? lastModifiedTime,
     $core.String? md5,
     $fixnum.Int64? size,
   }) {
@@ -435,7 +435,7 @@ class AzureBlobMetadata extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'account')
     ..aOS(2, _omitFieldNames ? '' : 'container')
     ..aOS(3, _omitFieldNames ? '' : 'blobName')
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $299.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'md5')
     ..aInt64(6, _omitFieldNames ? '' : 'size')
     ..hasRequiredFields = false
@@ -494,15 +494,15 @@ class AzureBlobMetadata extends $pb.GeneratedMessage {
 
   /// Last modified time of the blob.
   @$pb.TagNumber(4)
-  $1776.Timestamp get lastModifiedTime => $_getN(3);
+  $299.Timestamp get lastModifiedTime => $_getN(3);
   @$pb.TagNumber(4)
-  set lastModifiedTime($1776.Timestamp v) { setField(4, v); }
+  set lastModifiedTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLastModifiedTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearLastModifiedTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureLastModifiedTime() => $_ensure(3);
+  $299.Timestamp ensureLastModifiedTime() => $_ensure(3);
 
   /// The MD5 checksum of the object's content.
   @$pb.TagNumber(5)
@@ -611,7 +611,7 @@ class AzureBlobContainerMetadata extends $pb.GeneratedMessage {
 class PosixFileMetadata extends $pb.GeneratedMessage {
   factory PosixFileMetadata({
     $core.String? path,
-    $1776.Timestamp? lastModifiedTime,
+    $299.Timestamp? lastModifiedTime,
     $core.String? crc32c,
     $fixnum.Int64? size,
   }) {
@@ -636,7 +636,7 @@ class PosixFileMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PosixFileMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.logging'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'path')
-    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $299.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'crc32c')
     ..aInt64(4, _omitFieldNames ? '' : 'size')
     ..hasRequiredFields = false
@@ -675,15 +675,15 @@ class PosixFileMetadata extends $pb.GeneratedMessage {
 
   /// Last modified time (mtime) of the file.
   @$pb.TagNumber(2)
-  $1776.Timestamp get lastModifiedTime => $_getN(1);
+  $299.Timestamp get lastModifiedTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lastModifiedTime($1776.Timestamp v) { setField(2, v); }
+  set lastModifiedTime($299.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLastModifiedTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLastModifiedTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1776.Timestamp ensureLastModifiedTime() => $_ensure(1);
+  $299.Timestamp ensureLastModifiedTime() => $_ensure(1);
 
   /// The CRC32C checksum of the object's content.
   @$pb.TagNumber(3)
@@ -1252,7 +1252,7 @@ class TransferActivityLog extends $pb.GeneratedMessage {
     ContainerMetadata? destinationContainer,
     ObjectMetadata? sourceObject,
     ObjectMetadata? destinationObject,
-    $1776.Timestamp? completeTime,
+    $299.Timestamp? completeTime,
   }) {
     final $result = create();
     if (operation != null) {
@@ -1293,7 +1293,7 @@ class TransferActivityLog extends $pb.GeneratedMessage {
     ..aOM<ContainerMetadata>(5, _omitFieldNames ? '' : 'destinationContainer', subBuilder: ContainerMetadata.create)
     ..aOM<ObjectMetadata>(6, _omitFieldNames ? '' : 'sourceObject', subBuilder: ObjectMetadata.create)
     ..aOM<ObjectMetadata>(7, _omitFieldNames ? '' : 'destinationObject', subBuilder: ObjectMetadata.create)
-    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'completeTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(8, _omitFieldNames ? '' : 'completeTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1404,15 +1404,15 @@ class TransferActivityLog extends $pb.GeneratedMessage {
 
   /// Required. Completion time of the action.
   @$pb.TagNumber(8)
-  $1776.Timestamp get completeTime => $_getN(7);
+  $299.Timestamp get completeTime => $_getN(7);
   @$pb.TagNumber(8)
-  set completeTime($1776.Timestamp v) { setField(8, v); }
+  set completeTime($299.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCompleteTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCompleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1776.Timestamp ensureCompleteTime() => $_ensure(7);
+  $299.Timestamp ensureCompleteTime() => $_ensure(7);
 }
 
 

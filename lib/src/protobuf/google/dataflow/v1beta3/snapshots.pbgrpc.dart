@@ -15,24 +15,24 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'snapshots.pb.dart' as $1532;
+import 'snapshots.pb.dart' as $105;
 
 export 'snapshots.pb.dart';
 
 @$pb.GrpcServiceName('google.dataflow.v1beta3.SnapshotsV1Beta3')
 class SnapshotsV1Beta3Client extends $grpc.Client {
-  static final _$getSnapshot = $grpc.ClientMethod<$1532.GetSnapshotRequest, $1532.Snapshot>(
+  static final _$getSnapshot = $grpc.ClientMethod<$105.GetSnapshotRequest, $105.Snapshot>(
       '/google.dataflow.v1beta3.SnapshotsV1Beta3/GetSnapshot',
-      ($1532.GetSnapshotRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1532.Snapshot.fromBuffer(value));
-  static final _$deleteSnapshot = $grpc.ClientMethod<$1532.DeleteSnapshotRequest, $1532.DeleteSnapshotResponse>(
+      ($105.GetSnapshotRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $105.Snapshot.fromBuffer(value));
+  static final _$deleteSnapshot = $grpc.ClientMethod<$105.DeleteSnapshotRequest, $105.DeleteSnapshotResponse>(
       '/google.dataflow.v1beta3.SnapshotsV1Beta3/DeleteSnapshot',
-      ($1532.DeleteSnapshotRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1532.DeleteSnapshotResponse.fromBuffer(value));
-  static final _$listSnapshots = $grpc.ClientMethod<$1532.ListSnapshotsRequest, $1532.ListSnapshotsResponse>(
+      ($105.DeleteSnapshotRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $105.DeleteSnapshotResponse.fromBuffer(value));
+  static final _$listSnapshots = $grpc.ClientMethod<$105.ListSnapshotsRequest, $105.ListSnapshotsResponse>(
       '/google.dataflow.v1beta3.SnapshotsV1Beta3/ListSnapshots',
-      ($1532.ListSnapshotsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1532.ListSnapshotsResponse.fromBuffer(value));
+      ($105.ListSnapshotsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $105.ListSnapshotsResponse.fromBuffer(value));
 
   SnapshotsV1Beta3Client($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -40,15 +40,15 @@ class SnapshotsV1Beta3Client extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1532.Snapshot> getSnapshot($1532.GetSnapshotRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$105.Snapshot> getSnapshot($105.GetSnapshotRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSnapshot, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1532.DeleteSnapshotResponse> deleteSnapshot($1532.DeleteSnapshotRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$105.DeleteSnapshotResponse> deleteSnapshot($105.DeleteSnapshotRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteSnapshot, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1532.ListSnapshotsResponse> listSnapshots($1532.ListSnapshotsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$105.ListSnapshotsResponse> listSnapshots($105.ListSnapshotsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listSnapshots, request, options: options);
   }
 }
@@ -58,42 +58,42 @@ abstract class SnapshotsV1Beta3ServiceBase extends $grpc.Service {
   $core.String get $name => 'google.dataflow.v1beta3.SnapshotsV1Beta3';
 
   SnapshotsV1Beta3ServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1532.GetSnapshotRequest, $1532.Snapshot>(
+    $addMethod($grpc.ServiceMethod<$105.GetSnapshotRequest, $105.Snapshot>(
         'GetSnapshot',
         getSnapshot_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1532.GetSnapshotRequest.fromBuffer(value),
-        ($1532.Snapshot value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1532.DeleteSnapshotRequest, $1532.DeleteSnapshotResponse>(
+        ($core.List<$core.int> value) => $105.GetSnapshotRequest.fromBuffer(value),
+        ($105.Snapshot value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$105.DeleteSnapshotRequest, $105.DeleteSnapshotResponse>(
         'DeleteSnapshot',
         deleteSnapshot_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1532.DeleteSnapshotRequest.fromBuffer(value),
-        ($1532.DeleteSnapshotResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1532.ListSnapshotsRequest, $1532.ListSnapshotsResponse>(
+        ($core.List<$core.int> value) => $105.DeleteSnapshotRequest.fromBuffer(value),
+        ($105.DeleteSnapshotResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$105.ListSnapshotsRequest, $105.ListSnapshotsResponse>(
         'ListSnapshots',
         listSnapshots_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1532.ListSnapshotsRequest.fromBuffer(value),
-        ($1532.ListSnapshotsResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $105.ListSnapshotsRequest.fromBuffer(value),
+        ($105.ListSnapshotsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1532.Snapshot> getSnapshot_Pre($grpc.ServiceCall call, $async.Future<$1532.GetSnapshotRequest> request) async {
+  $async.Future<$105.Snapshot> getSnapshot_Pre($grpc.ServiceCall call, $async.Future<$105.GetSnapshotRequest> request) async {
     return getSnapshot(call, await request);
   }
 
-  $async.Future<$1532.DeleteSnapshotResponse> deleteSnapshot_Pre($grpc.ServiceCall call, $async.Future<$1532.DeleteSnapshotRequest> request) async {
+  $async.Future<$105.DeleteSnapshotResponse> deleteSnapshot_Pre($grpc.ServiceCall call, $async.Future<$105.DeleteSnapshotRequest> request) async {
     return deleteSnapshot(call, await request);
   }
 
-  $async.Future<$1532.ListSnapshotsResponse> listSnapshots_Pre($grpc.ServiceCall call, $async.Future<$1532.ListSnapshotsRequest> request) async {
+  $async.Future<$105.ListSnapshotsResponse> listSnapshots_Pre($grpc.ServiceCall call, $async.Future<$105.ListSnapshotsRequest> request) async {
     return listSnapshots(call, await request);
   }
 
-  $async.Future<$1532.Snapshot> getSnapshot($grpc.ServiceCall call, $1532.GetSnapshotRequest request);
-  $async.Future<$1532.DeleteSnapshotResponse> deleteSnapshot($grpc.ServiceCall call, $1532.DeleteSnapshotRequest request);
-  $async.Future<$1532.ListSnapshotsResponse> listSnapshots($grpc.ServiceCall call, $1532.ListSnapshotsRequest request);
+  $async.Future<$105.Snapshot> getSnapshot($grpc.ServiceCall call, $105.GetSnapshotRequest request);
+  $async.Future<$105.DeleteSnapshotResponse> deleteSnapshot($grpc.ServiceCall call, $105.DeleteSnapshotRequest request);
+  $async.Future<$105.ListSnapshotsResponse> listSnapshots($grpc.ServiceCall call, $105.ListSnapshotsRequest request);
 }

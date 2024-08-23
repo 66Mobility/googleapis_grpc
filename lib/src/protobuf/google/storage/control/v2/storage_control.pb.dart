@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/timestamp.pb.dart' as $299;
 
 /// Contains information about a pending rename operation.
 class PendingRenameInfo extends $pb.GeneratedMessage {
@@ -74,8 +74,8 @@ class Folder extends $pb.GeneratedMessage {
   factory Folder({
     $core.String? name,
     $fixnum.Int64? metageneration,
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
     PendingRenameInfo? pendingRenameInfo,
   }) {
     final $result = create();
@@ -103,8 +103,8 @@ class Folder extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Folder', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.control.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(3, _omitFieldNames ? '' : 'metageneration')
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..aOM<PendingRenameInfo>(7, _omitFieldNames ? '' : 'pendingRenameInfo', subBuilder: PendingRenameInfo.create)
     ..hasRequiredFields = false
   ;
@@ -154,27 +154,27 @@ class Folder extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the folder.
   @$pb.TagNumber(4)
-  $1776.Timestamp get createTime => $_getN(2);
+  $299.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($1776.Timestamp v) { setField(4, v); }
+  set createTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureCreateTime() => $_ensure(2);
+  $299.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The modification time of the folder.
   @$pb.TagNumber(5)
-  $1776.Timestamp get updateTime => $_getN(3);
+  $299.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($1776.Timestamp v) { setField(5, v); }
+  set updateTime($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
+  $299.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Output only. Only present if the folder is part of an ongoing RenameFolder
   /// operation. Contains information which can be used to query the operation
@@ -878,9 +878,9 @@ class RenameFolderRequest extends $pb.GeneratedMessage {
 /// messages, and accessible via `metadata.common_metadata`.
 class CommonLongRunningOperationMetadata extends $pb.GeneratedMessage {
   factory CommonLongRunningOperationMetadata({
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? endTime,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? createTime,
+    $299.Timestamp? endTime,
+    $299.Timestamp? updateTime,
     $core.String? type,
     $core.bool? requestedCancellation,
     $core.int? progressPercent,
@@ -911,9 +911,9 @@ class CommonLongRunningOperationMetadata extends $pb.GeneratedMessage {
   factory CommonLongRunningOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommonLongRunningOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.control.v2'), createEmptyInstance: create)
-    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'type')
     ..aOB(5, _omitFieldNames ? '' : 'requestedCancellation')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
@@ -943,39 +943,39 @@ class CommonLongRunningOperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $1776.Timestamp get createTime => $_getN(0);
+  $299.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($1776.Timestamp v) { setField(1, v); }
+  set createTime($299.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1776.Timestamp ensureCreateTime() => $_ensure(0);
+  $299.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $1776.Timestamp get endTime => $_getN(1);
+  $299.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1776.Timestamp v) { setField(2, v); }
+  set endTime($299.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1776.Timestamp ensureEndTime() => $_ensure(1);
+  $299.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. The time the operation was last modified.
   @$pb.TagNumber(3)
-  $1776.Timestamp get updateTime => $_getN(2);
+  $299.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($1776.Timestamp v) { setField(3, v); }
+  set updateTime($299.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(2);
+  $299.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The type of operation invoked.
   @$pb.TagNumber(4)
@@ -1404,8 +1404,8 @@ class ManagedFolder extends $pb.GeneratedMessage {
   factory ManagedFolder({
     $core.String? name,
     $fixnum.Int64? metageneration,
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1429,8 +1429,8 @@ class ManagedFolder extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ManagedFolder', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.control.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(3, _omitFieldNames ? '' : 'metageneration')
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1481,27 +1481,27 @@ class ManagedFolder extends $pb.GeneratedMessage {
 
   /// Output only. The creation time of the managed folder.
   @$pb.TagNumber(4)
-  $1776.Timestamp get createTime => $_getN(2);
+  $299.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($1776.Timestamp v) { setField(4, v); }
+  set createTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureCreateTime() => $_ensure(2);
+  $299.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The modification time of the managed folder.
   @$pb.TagNumber(5)
-  $1776.Timestamp get updateTime => $_getN(3);
+  $299.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($1776.Timestamp v) { setField(5, v); }
+  set updateTime($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
+  $299.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
 /// Request message for GetManagedFolder.

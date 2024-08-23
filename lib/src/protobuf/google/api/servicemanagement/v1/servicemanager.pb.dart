@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $1795;
-import '../../service.pb.dart' as $419;
-import 'resources.pb.dart' as $418;
+import '../../../protobuf/any.pb.dart' as $318;
+import '../../service.pb.dart' as $43;
+import 'resources.pb.dart' as $42;
 import 'servicemanager.pbenum.dart';
 
 export 'servicemanager.pbenum.dart';
@@ -132,7 +132,7 @@ class ListServicesRequest extends $pb.GeneratedMessage {
 /// Response message for `ListServices` method.
 class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse({
-    $core.Iterable<$418.ManagedService>? services,
+    $core.Iterable<$42.ManagedService>? services,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -149,7 +149,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListServicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
-    ..pc<$418.ManagedService>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $418.ManagedService.create)
+    ..pc<$42.ManagedService>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $42.ManagedService.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -177,7 +177,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 
   /// The returned services will only have the name field set.
   @$pb.TagNumber(1)
-  $core.List<$418.ManagedService> get services => $_getList(0);
+  $core.List<$42.ManagedService> get services => $_getList(0);
 
   /// Token that can be passed to `ListServices` to resume a paginated query.
   @$pb.TagNumber(2)
@@ -246,7 +246,7 @@ class GetServiceRequest extends $pb.GeneratedMessage {
 /// Request message for CreateService method.
 class CreateServiceRequest extends $pb.GeneratedMessage {
   factory CreateServiceRequest({
-    $418.ManagedService? service,
+    $42.ManagedService? service,
   }) {
     final $result = create();
     if (service != null) {
@@ -259,7 +259,7 @@ class CreateServiceRequest extends $pb.GeneratedMessage {
   factory CreateServiceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
-    ..aOM<$418.ManagedService>(1, _omitFieldNames ? '' : 'service', subBuilder: $418.ManagedService.create)
+    ..aOM<$42.ManagedService>(1, _omitFieldNames ? '' : 'service', subBuilder: $42.ManagedService.create)
     ..hasRequiredFields = false
   ;
 
@@ -286,15 +286,15 @@ class CreateServiceRequest extends $pb.GeneratedMessage {
 
   /// Required. Initial values for the service resource.
   @$pb.TagNumber(1)
-  $418.ManagedService get service => $_getN(0);
+  $42.ManagedService get service => $_getN(0);
   @$pb.TagNumber(1)
-  set service($418.ManagedService v) { setField(1, v); }
+  set service($42.ManagedService v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
   void clearService() => clearField(1);
   @$pb.TagNumber(1)
-  $418.ManagedService ensureService() => $_ensure(0);
+  $42.ManagedService ensureService() => $_ensure(0);
 }
 
 /// Request message for DeleteService method.
@@ -408,7 +408,7 @@ class UndeleteServiceRequest extends $pb.GeneratedMessage {
 /// Response message for UndeleteService method.
 class UndeleteServiceResponse extends $pb.GeneratedMessage {
   factory UndeleteServiceResponse({
-    $418.ManagedService? service,
+    $42.ManagedService? service,
   }) {
     final $result = create();
     if (service != null) {
@@ -421,7 +421,7 @@ class UndeleteServiceResponse extends $pb.GeneratedMessage {
   factory UndeleteServiceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UndeleteServiceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
-    ..aOM<$418.ManagedService>(1, _omitFieldNames ? '' : 'service', subBuilder: $418.ManagedService.create)
+    ..aOM<$42.ManagedService>(1, _omitFieldNames ? '' : 'service', subBuilder: $42.ManagedService.create)
     ..hasRequiredFields = false
   ;
 
@@ -448,15 +448,15 @@ class UndeleteServiceResponse extends $pb.GeneratedMessage {
 
   /// Revived service resource.
   @$pb.TagNumber(1)
-  $418.ManagedService get service => $_getN(0);
+  $42.ManagedService get service => $_getN(0);
   @$pb.TagNumber(1)
-  set service($418.ManagedService v) { setField(1, v); }
+  set service($42.ManagedService v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
   void clearService() => clearField(1);
   @$pb.TagNumber(1)
-  $418.ManagedService ensureService() => $_ensure(0);
+  $42.ManagedService ensureService() => $_ensure(0);
 }
 
 /// Request message for GetServiceConfig method.
@@ -635,7 +635,7 @@ class ListServiceConfigsRequest extends $pb.GeneratedMessage {
 /// Response message for ListServiceConfigs method.
 class ListServiceConfigsResponse extends $pb.GeneratedMessage {
   factory ListServiceConfigsResponse({
-    $core.Iterable<$419.Service>? serviceConfigs,
+    $core.Iterable<$43.Service>? serviceConfigs,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -652,7 +652,7 @@ class ListServiceConfigsResponse extends $pb.GeneratedMessage {
   factory ListServiceConfigsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListServiceConfigsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
-    ..pc<$419.Service>(1, _omitFieldNames ? '' : 'serviceConfigs', $pb.PbFieldType.PM, subBuilder: $419.Service.create)
+    ..pc<$43.Service>(1, _omitFieldNames ? '' : 'serviceConfigs', $pb.PbFieldType.PM, subBuilder: $43.Service.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -680,7 +680,7 @@ class ListServiceConfigsResponse extends $pb.GeneratedMessage {
 
   /// The list of service configuration resources.
   @$pb.TagNumber(1)
-  $core.List<$419.Service> get serviceConfigs => $_getList(0);
+  $core.List<$43.Service> get serviceConfigs => $_getList(0);
 
   /// The token of the next page of results.
   @$pb.TagNumber(2)
@@ -697,7 +697,7 @@ class ListServiceConfigsResponse extends $pb.GeneratedMessage {
 class CreateServiceConfigRequest extends $pb.GeneratedMessage {
   factory CreateServiceConfigRequest({
     $core.String? serviceName,
-    $419.Service? serviceConfig,
+    $43.Service? serviceConfig,
   }) {
     final $result = create();
     if (serviceName != null) {
@@ -714,7 +714,7 @@ class CreateServiceConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateServiceConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..aOM<$419.Service>(2, _omitFieldNames ? '' : 'serviceConfig', subBuilder: $419.Service.create)
+    ..aOM<$43.Service>(2, _omitFieldNames ? '' : 'serviceConfig', subBuilder: $43.Service.create)
     ..hasRequiredFields = false
   ;
 
@@ -753,22 +753,22 @@ class CreateServiceConfigRequest extends $pb.GeneratedMessage {
 
   /// Required. The service configuration resource.
   @$pb.TagNumber(2)
-  $419.Service get serviceConfig => $_getN(1);
+  $43.Service get serviceConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceConfig($419.Service v) { setField(2, v); }
+  set serviceConfig($43.Service v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasServiceConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearServiceConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $419.Service ensureServiceConfig() => $_ensure(1);
+  $43.Service ensureServiceConfig() => $_ensure(1);
 }
 
 /// Request message for SubmitConfigSource method.
 class SubmitConfigSourceRequest extends $pb.GeneratedMessage {
   factory SubmitConfigSourceRequest({
     $core.String? serviceName,
-    $418.ConfigSource? configSource,
+    $42.ConfigSource? configSource,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -789,7 +789,7 @@ class SubmitConfigSourceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SubmitConfigSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..aOM<$418.ConfigSource>(2, _omitFieldNames ? '' : 'configSource', subBuilder: $418.ConfigSource.create)
+    ..aOM<$42.ConfigSource>(2, _omitFieldNames ? '' : 'configSource', subBuilder: $42.ConfigSource.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -829,15 +829,15 @@ class SubmitConfigSourceRequest extends $pb.GeneratedMessage {
 
   /// Required. The source configuration for the service.
   @$pb.TagNumber(2)
-  $418.ConfigSource get configSource => $_getN(1);
+  $42.ConfigSource get configSource => $_getN(1);
   @$pb.TagNumber(2)
-  set configSource($418.ConfigSource v) { setField(2, v); }
+  set configSource($42.ConfigSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConfigSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearConfigSource() => clearField(2);
   @$pb.TagNumber(2)
-  $418.ConfigSource ensureConfigSource() => $_ensure(1);
+  $42.ConfigSource ensureConfigSource() => $_ensure(1);
 
   /// Optional. If set, this will result in the generation of a
   /// `google.api.Service` configuration based on the `ConfigSource` provided,
@@ -855,7 +855,7 @@ class SubmitConfigSourceRequest extends $pb.GeneratedMessage {
 /// Response message for SubmitConfigSource method.
 class SubmitConfigSourceResponse extends $pb.GeneratedMessage {
   factory SubmitConfigSourceResponse({
-    $419.Service? serviceConfig,
+    $43.Service? serviceConfig,
   }) {
     final $result = create();
     if (serviceConfig != null) {
@@ -868,7 +868,7 @@ class SubmitConfigSourceResponse extends $pb.GeneratedMessage {
   factory SubmitConfigSourceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SubmitConfigSourceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
-    ..aOM<$419.Service>(1, _omitFieldNames ? '' : 'serviceConfig', subBuilder: $419.Service.create)
+    ..aOM<$43.Service>(1, _omitFieldNames ? '' : 'serviceConfig', subBuilder: $43.Service.create)
     ..hasRequiredFields = false
   ;
 
@@ -895,15 +895,15 @@ class SubmitConfigSourceResponse extends $pb.GeneratedMessage {
 
   /// The generated service configuration.
   @$pb.TagNumber(1)
-  $419.Service get serviceConfig => $_getN(0);
+  $43.Service get serviceConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set serviceConfig($419.Service v) { setField(1, v); }
+  set serviceConfig($43.Service v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasServiceConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearServiceConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $419.Service ensureServiceConfig() => $_ensure(0);
+  $43.Service ensureServiceConfig() => $_ensure(0);
 }
 
 ///
@@ -911,7 +911,7 @@ class SubmitConfigSourceResponse extends $pb.GeneratedMessage {
 class CreateServiceRolloutRequest extends $pb.GeneratedMessage {
   factory CreateServiceRolloutRequest({
     $core.String? serviceName,
-    $418.Rollout? rollout,
+    $42.Rollout? rollout,
   }) {
     final $result = create();
     if (serviceName != null) {
@@ -928,7 +928,7 @@ class CreateServiceRolloutRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateServiceRolloutRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
-    ..aOM<$418.Rollout>(2, _omitFieldNames ? '' : 'rollout', subBuilder: $418.Rollout.create)
+    ..aOM<$42.Rollout>(2, _omitFieldNames ? '' : 'rollout', subBuilder: $42.Rollout.create)
     ..hasRequiredFields = false
   ;
 
@@ -967,15 +967,15 @@ class CreateServiceRolloutRequest extends $pb.GeneratedMessage {
 
   /// Required. The rollout resource. The `service_name` field is output only.
   @$pb.TagNumber(2)
-  $418.Rollout get rollout => $_getN(1);
+  $42.Rollout get rollout => $_getN(1);
   @$pb.TagNumber(2)
-  set rollout($418.Rollout v) { setField(2, v); }
+  set rollout($42.Rollout v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRollout() => $_has(1);
   @$pb.TagNumber(2)
   void clearRollout() => clearField(2);
   @$pb.TagNumber(2)
-  $418.Rollout ensureRollout() => $_ensure(1);
+  $42.Rollout ensureRollout() => $_ensure(1);
 }
 
 /// Request message for 'ListServiceRollouts'
@@ -1090,7 +1090,7 @@ class ListServiceRolloutsRequest extends $pb.GeneratedMessage {
 /// Response message for ListServiceRollouts method.
 class ListServiceRolloutsResponse extends $pb.GeneratedMessage {
   factory ListServiceRolloutsResponse({
-    $core.Iterable<$418.Rollout>? rollouts,
+    $core.Iterable<$42.Rollout>? rollouts,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1107,7 +1107,7 @@ class ListServiceRolloutsResponse extends $pb.GeneratedMessage {
   factory ListServiceRolloutsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListServiceRolloutsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
-    ..pc<$418.Rollout>(1, _omitFieldNames ? '' : 'rollouts', $pb.PbFieldType.PM, subBuilder: $418.Rollout.create)
+    ..pc<$42.Rollout>(1, _omitFieldNames ? '' : 'rollouts', $pb.PbFieldType.PM, subBuilder: $42.Rollout.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1135,7 +1135,7 @@ class ListServiceRolloutsResponse extends $pb.GeneratedMessage {
 
   /// The list of rollout resources.
   @$pb.TagNumber(1)
-  $core.List<$418.Rollout> get rollouts => $_getList(0);
+  $core.List<$42.Rollout> get rollouts => $_getList(0);
 
   /// The token of the next page of results.
   @$pb.TagNumber(2)
@@ -1253,8 +1253,8 @@ class EnableServiceResponse extends $pb.GeneratedMessage {
 /// Request message for GenerateConfigReport method.
 class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   factory GenerateConfigReportRequest({
-    $1795.Any? newConfig,
-    $1795.Any? oldConfig,
+    $318.Any? newConfig,
+    $318.Any? oldConfig,
   }) {
     final $result = create();
     if (newConfig != null) {
@@ -1270,8 +1270,8 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   factory GenerateConfigReportRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateConfigReportRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
-    ..aOM<$1795.Any>(1, _omitFieldNames ? '' : 'newConfig', subBuilder: $1795.Any.create)
-    ..aOM<$1795.Any>(2, _omitFieldNames ? '' : 'oldConfig', subBuilder: $1795.Any.create)
+    ..aOM<$318.Any>(1, _omitFieldNames ? '' : 'newConfig', subBuilder: $318.Any.create)
+    ..aOM<$318.Any>(2, _omitFieldNames ? '' : 'oldConfig', subBuilder: $318.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -1302,15 +1302,15 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   /// [google.api.servicemanagement.v1.ConfigSource][google.api.servicemanagement.v1.ConfigSource],
   /// and [google.api.Service][google.api.Service]
   @$pb.TagNumber(1)
-  $1795.Any get newConfig => $_getN(0);
+  $318.Any get newConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set newConfig($1795.Any v) { setField(1, v); }
+  set newConfig($318.Any v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNewConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearNewConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $1795.Any ensureNewConfig() => $_ensure(0);
+  $318.Any ensureNewConfig() => $_ensure(0);
 
   /// Optional. Service configuration against which the comparison will be done.
   /// For this version of API, the supported types are
@@ -1318,15 +1318,15 @@ class GenerateConfigReportRequest extends $pb.GeneratedMessage {
   /// [google.api.servicemanagement.v1.ConfigSource][google.api.servicemanagement.v1.ConfigSource],
   /// and [google.api.Service][google.api.Service]
   @$pb.TagNumber(2)
-  $1795.Any get oldConfig => $_getN(1);
+  $318.Any get oldConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set oldConfig($1795.Any v) { setField(2, v); }
+  set oldConfig($318.Any v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOldConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearOldConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $1795.Any ensureOldConfig() => $_ensure(1);
+  $318.Any ensureOldConfig() => $_ensure(1);
 }
 
 /// Response message for GenerateConfigReport method.
@@ -1334,8 +1334,8 @@ class GenerateConfigReportResponse extends $pb.GeneratedMessage {
   factory GenerateConfigReportResponse({
     $core.String? serviceName,
     $core.String? id,
-    $core.Iterable<$418.ChangeReport>? changeReports,
-    $core.Iterable<$418.Diagnostic>? diagnostics,
+    $core.Iterable<$42.ChangeReport>? changeReports,
+    $core.Iterable<$42.Diagnostic>? diagnostics,
   }) {
     final $result = create();
     if (serviceName != null) {
@@ -1359,8 +1359,8 @@ class GenerateConfigReportResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateConfigReportResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicemanagement.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'serviceName')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..pc<$418.ChangeReport>(3, _omitFieldNames ? '' : 'changeReports', $pb.PbFieldType.PM, subBuilder: $418.ChangeReport.create)
-    ..pc<$418.Diagnostic>(4, _omitFieldNames ? '' : 'diagnostics', $pb.PbFieldType.PM, subBuilder: $418.Diagnostic.create)
+    ..pc<$42.ChangeReport>(3, _omitFieldNames ? '' : 'changeReports', $pb.PbFieldType.PM, subBuilder: $42.ChangeReport.create)
+    ..pc<$42.Diagnostic>(4, _omitFieldNames ? '' : 'diagnostics', $pb.PbFieldType.PM, subBuilder: $42.Diagnostic.create)
     ..hasRequiredFields = false
   ;
 
@@ -1408,13 +1408,13 @@ class GenerateConfigReportResponse extends $pb.GeneratedMessage {
   /// list of ChangeReport, each corresponding to comparison between two
   /// service configurations.
   @$pb.TagNumber(3)
-  $core.List<$418.ChangeReport> get changeReports => $_getList(2);
+  $core.List<$42.ChangeReport> get changeReports => $_getList(2);
 
   /// Errors / Linter warnings associated with the service definition this
   /// report
   /// belongs to.
   @$pb.TagNumber(4)
-  $core.List<$418.Diagnostic> get diagnostics => $_getList(3);
+  $core.List<$42.Diagnostic> get diagnostics => $_getList(3);
 }
 
 

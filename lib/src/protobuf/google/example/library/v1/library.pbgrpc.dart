@@ -16,56 +16,56 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'library.pb.dart' as $1594;
+import 'library.pb.dart' as $115;
 
 export 'library.pb.dart';
 
 @$pb.GrpcServiceName('google.example.library.v1.LibraryService')
 class LibraryServiceClient extends $grpc.Client {
-  static final _$createShelf = $grpc.ClientMethod<$1594.CreateShelfRequest, $1594.Shelf>(
+  static final _$createShelf = $grpc.ClientMethod<$115.CreateShelfRequest, $115.Shelf>(
       '/google.example.library.v1.LibraryService/CreateShelf',
-      ($1594.CreateShelfRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.Shelf.fromBuffer(value));
-  static final _$getShelf = $grpc.ClientMethod<$1594.GetShelfRequest, $1594.Shelf>(
+      ($115.CreateShelfRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.Shelf.fromBuffer(value));
+  static final _$getShelf = $grpc.ClientMethod<$115.GetShelfRequest, $115.Shelf>(
       '/google.example.library.v1.LibraryService/GetShelf',
-      ($1594.GetShelfRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.Shelf.fromBuffer(value));
-  static final _$listShelves = $grpc.ClientMethod<$1594.ListShelvesRequest, $1594.ListShelvesResponse>(
+      ($115.GetShelfRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.Shelf.fromBuffer(value));
+  static final _$listShelves = $grpc.ClientMethod<$115.ListShelvesRequest, $115.ListShelvesResponse>(
       '/google.example.library.v1.LibraryService/ListShelves',
-      ($1594.ListShelvesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.ListShelvesResponse.fromBuffer(value));
-  static final _$deleteShelf = $grpc.ClientMethod<$1594.DeleteShelfRequest, $3.Empty>(
+      ($115.ListShelvesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.ListShelvesResponse.fromBuffer(value));
+  static final _$deleteShelf = $grpc.ClientMethod<$115.DeleteShelfRequest, $3.Empty>(
       '/google.example.library.v1.LibraryService/DeleteShelf',
-      ($1594.DeleteShelfRequest value) => value.writeToBuffer(),
+      ($115.DeleteShelfRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$mergeShelves = $grpc.ClientMethod<$1594.MergeShelvesRequest, $1594.Shelf>(
+  static final _$mergeShelves = $grpc.ClientMethod<$115.MergeShelvesRequest, $115.Shelf>(
       '/google.example.library.v1.LibraryService/MergeShelves',
-      ($1594.MergeShelvesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.Shelf.fromBuffer(value));
-  static final _$createBook = $grpc.ClientMethod<$1594.CreateBookRequest, $1594.Book>(
+      ($115.MergeShelvesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.Shelf.fromBuffer(value));
+  static final _$createBook = $grpc.ClientMethod<$115.CreateBookRequest, $115.Book>(
       '/google.example.library.v1.LibraryService/CreateBook',
-      ($1594.CreateBookRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.Book.fromBuffer(value));
-  static final _$getBook = $grpc.ClientMethod<$1594.GetBookRequest, $1594.Book>(
+      ($115.CreateBookRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.Book.fromBuffer(value));
+  static final _$getBook = $grpc.ClientMethod<$115.GetBookRequest, $115.Book>(
       '/google.example.library.v1.LibraryService/GetBook',
-      ($1594.GetBookRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.Book.fromBuffer(value));
-  static final _$listBooks = $grpc.ClientMethod<$1594.ListBooksRequest, $1594.ListBooksResponse>(
+      ($115.GetBookRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.Book.fromBuffer(value));
+  static final _$listBooks = $grpc.ClientMethod<$115.ListBooksRequest, $115.ListBooksResponse>(
       '/google.example.library.v1.LibraryService/ListBooks',
-      ($1594.ListBooksRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.ListBooksResponse.fromBuffer(value));
-  static final _$deleteBook = $grpc.ClientMethod<$1594.DeleteBookRequest, $3.Empty>(
+      ($115.ListBooksRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.ListBooksResponse.fromBuffer(value));
+  static final _$deleteBook = $grpc.ClientMethod<$115.DeleteBookRequest, $3.Empty>(
       '/google.example.library.v1.LibraryService/DeleteBook',
-      ($1594.DeleteBookRequest value) => value.writeToBuffer(),
+      ($115.DeleteBookRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$updateBook = $grpc.ClientMethod<$1594.UpdateBookRequest, $1594.Book>(
+  static final _$updateBook = $grpc.ClientMethod<$115.UpdateBookRequest, $115.Book>(
       '/google.example.library.v1.LibraryService/UpdateBook',
-      ($1594.UpdateBookRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.Book.fromBuffer(value));
-  static final _$moveBook = $grpc.ClientMethod<$1594.MoveBookRequest, $1594.Book>(
+      ($115.UpdateBookRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.Book.fromBuffer(value));
+  static final _$moveBook = $grpc.ClientMethod<$115.MoveBookRequest, $115.Book>(
       '/google.example.library.v1.LibraryService/MoveBook',
-      ($1594.MoveBookRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1594.Book.fromBuffer(value));
+      ($115.MoveBookRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $115.Book.fromBuffer(value));
 
   LibraryServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -73,47 +73,47 @@ class LibraryServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1594.Shelf> createShelf($1594.CreateShelfRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.Shelf> createShelf($115.CreateShelfRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createShelf, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.Shelf> getShelf($1594.GetShelfRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.Shelf> getShelf($115.GetShelfRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getShelf, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.ListShelvesResponse> listShelves($1594.ListShelvesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.ListShelvesResponse> listShelves($115.ListShelvesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listShelves, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteShelf($1594.DeleteShelfRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteShelf($115.DeleteShelfRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteShelf, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.Shelf> mergeShelves($1594.MergeShelvesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.Shelf> mergeShelves($115.MergeShelvesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$mergeShelves, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.Book> createBook($1594.CreateBookRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.Book> createBook($115.CreateBookRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createBook, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.Book> getBook($1594.GetBookRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.Book> getBook($115.GetBookRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getBook, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.ListBooksResponse> listBooks($1594.ListBooksRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.ListBooksResponse> listBooks($115.ListBooksRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listBooks, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteBook($1594.DeleteBookRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteBook($115.DeleteBookRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteBook, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.Book> updateBook($1594.UpdateBookRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.Book> updateBook($115.UpdateBookRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateBook, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1594.Book> moveBook($1594.MoveBookRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$115.Book> moveBook($115.MoveBookRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$moveBook, request, options: options);
   }
 }
@@ -123,138 +123,138 @@ abstract class LibraryServiceBase extends $grpc.Service {
   $core.String get $name => 'google.example.library.v1.LibraryService';
 
   LibraryServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1594.CreateShelfRequest, $1594.Shelf>(
+    $addMethod($grpc.ServiceMethod<$115.CreateShelfRequest, $115.Shelf>(
         'CreateShelf',
         createShelf_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.CreateShelfRequest.fromBuffer(value),
-        ($1594.Shelf value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.GetShelfRequest, $1594.Shelf>(
+        ($core.List<$core.int> value) => $115.CreateShelfRequest.fromBuffer(value),
+        ($115.Shelf value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.GetShelfRequest, $115.Shelf>(
         'GetShelf',
         getShelf_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.GetShelfRequest.fromBuffer(value),
-        ($1594.Shelf value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.ListShelvesRequest, $1594.ListShelvesResponse>(
+        ($core.List<$core.int> value) => $115.GetShelfRequest.fromBuffer(value),
+        ($115.Shelf value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.ListShelvesRequest, $115.ListShelvesResponse>(
         'ListShelves',
         listShelves_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.ListShelvesRequest.fromBuffer(value),
-        ($1594.ListShelvesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.DeleteShelfRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $115.ListShelvesRequest.fromBuffer(value),
+        ($115.ListShelvesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.DeleteShelfRequest, $3.Empty>(
         'DeleteShelf',
         deleteShelf_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.DeleteShelfRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $115.DeleteShelfRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.MergeShelvesRequest, $1594.Shelf>(
+    $addMethod($grpc.ServiceMethod<$115.MergeShelvesRequest, $115.Shelf>(
         'MergeShelves',
         mergeShelves_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.MergeShelvesRequest.fromBuffer(value),
-        ($1594.Shelf value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.CreateBookRequest, $1594.Book>(
+        ($core.List<$core.int> value) => $115.MergeShelvesRequest.fromBuffer(value),
+        ($115.Shelf value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.CreateBookRequest, $115.Book>(
         'CreateBook',
         createBook_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.CreateBookRequest.fromBuffer(value),
-        ($1594.Book value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.GetBookRequest, $1594.Book>(
+        ($core.List<$core.int> value) => $115.CreateBookRequest.fromBuffer(value),
+        ($115.Book value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.GetBookRequest, $115.Book>(
         'GetBook',
         getBook_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.GetBookRequest.fromBuffer(value),
-        ($1594.Book value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.ListBooksRequest, $1594.ListBooksResponse>(
+        ($core.List<$core.int> value) => $115.GetBookRequest.fromBuffer(value),
+        ($115.Book value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.ListBooksRequest, $115.ListBooksResponse>(
         'ListBooks',
         listBooks_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.ListBooksRequest.fromBuffer(value),
-        ($1594.ListBooksResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.DeleteBookRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $115.ListBooksRequest.fromBuffer(value),
+        ($115.ListBooksResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.DeleteBookRequest, $3.Empty>(
         'DeleteBook',
         deleteBook_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.DeleteBookRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $115.DeleteBookRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.UpdateBookRequest, $1594.Book>(
+    $addMethod($grpc.ServiceMethod<$115.UpdateBookRequest, $115.Book>(
         'UpdateBook',
         updateBook_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.UpdateBookRequest.fromBuffer(value),
-        ($1594.Book value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1594.MoveBookRequest, $1594.Book>(
+        ($core.List<$core.int> value) => $115.UpdateBookRequest.fromBuffer(value),
+        ($115.Book value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$115.MoveBookRequest, $115.Book>(
         'MoveBook',
         moveBook_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1594.MoveBookRequest.fromBuffer(value),
-        ($1594.Book value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $115.MoveBookRequest.fromBuffer(value),
+        ($115.Book value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1594.Shelf> createShelf_Pre($grpc.ServiceCall call, $async.Future<$1594.CreateShelfRequest> request) async {
+  $async.Future<$115.Shelf> createShelf_Pre($grpc.ServiceCall call, $async.Future<$115.CreateShelfRequest> request) async {
     return createShelf(call, await request);
   }
 
-  $async.Future<$1594.Shelf> getShelf_Pre($grpc.ServiceCall call, $async.Future<$1594.GetShelfRequest> request) async {
+  $async.Future<$115.Shelf> getShelf_Pre($grpc.ServiceCall call, $async.Future<$115.GetShelfRequest> request) async {
     return getShelf(call, await request);
   }
 
-  $async.Future<$1594.ListShelvesResponse> listShelves_Pre($grpc.ServiceCall call, $async.Future<$1594.ListShelvesRequest> request) async {
+  $async.Future<$115.ListShelvesResponse> listShelves_Pre($grpc.ServiceCall call, $async.Future<$115.ListShelvesRequest> request) async {
     return listShelves(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteShelf_Pre($grpc.ServiceCall call, $async.Future<$1594.DeleteShelfRequest> request) async {
+  $async.Future<$3.Empty> deleteShelf_Pre($grpc.ServiceCall call, $async.Future<$115.DeleteShelfRequest> request) async {
     return deleteShelf(call, await request);
   }
 
-  $async.Future<$1594.Shelf> mergeShelves_Pre($grpc.ServiceCall call, $async.Future<$1594.MergeShelvesRequest> request) async {
+  $async.Future<$115.Shelf> mergeShelves_Pre($grpc.ServiceCall call, $async.Future<$115.MergeShelvesRequest> request) async {
     return mergeShelves(call, await request);
   }
 
-  $async.Future<$1594.Book> createBook_Pre($grpc.ServiceCall call, $async.Future<$1594.CreateBookRequest> request) async {
+  $async.Future<$115.Book> createBook_Pre($grpc.ServiceCall call, $async.Future<$115.CreateBookRequest> request) async {
     return createBook(call, await request);
   }
 
-  $async.Future<$1594.Book> getBook_Pre($grpc.ServiceCall call, $async.Future<$1594.GetBookRequest> request) async {
+  $async.Future<$115.Book> getBook_Pre($grpc.ServiceCall call, $async.Future<$115.GetBookRequest> request) async {
     return getBook(call, await request);
   }
 
-  $async.Future<$1594.ListBooksResponse> listBooks_Pre($grpc.ServiceCall call, $async.Future<$1594.ListBooksRequest> request) async {
+  $async.Future<$115.ListBooksResponse> listBooks_Pre($grpc.ServiceCall call, $async.Future<$115.ListBooksRequest> request) async {
     return listBooks(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteBook_Pre($grpc.ServiceCall call, $async.Future<$1594.DeleteBookRequest> request) async {
+  $async.Future<$3.Empty> deleteBook_Pre($grpc.ServiceCall call, $async.Future<$115.DeleteBookRequest> request) async {
     return deleteBook(call, await request);
   }
 
-  $async.Future<$1594.Book> updateBook_Pre($grpc.ServiceCall call, $async.Future<$1594.UpdateBookRequest> request) async {
+  $async.Future<$115.Book> updateBook_Pre($grpc.ServiceCall call, $async.Future<$115.UpdateBookRequest> request) async {
     return updateBook(call, await request);
   }
 
-  $async.Future<$1594.Book> moveBook_Pre($grpc.ServiceCall call, $async.Future<$1594.MoveBookRequest> request) async {
+  $async.Future<$115.Book> moveBook_Pre($grpc.ServiceCall call, $async.Future<$115.MoveBookRequest> request) async {
     return moveBook(call, await request);
   }
 
-  $async.Future<$1594.Shelf> createShelf($grpc.ServiceCall call, $1594.CreateShelfRequest request);
-  $async.Future<$1594.Shelf> getShelf($grpc.ServiceCall call, $1594.GetShelfRequest request);
-  $async.Future<$1594.ListShelvesResponse> listShelves($grpc.ServiceCall call, $1594.ListShelvesRequest request);
-  $async.Future<$3.Empty> deleteShelf($grpc.ServiceCall call, $1594.DeleteShelfRequest request);
-  $async.Future<$1594.Shelf> mergeShelves($grpc.ServiceCall call, $1594.MergeShelvesRequest request);
-  $async.Future<$1594.Book> createBook($grpc.ServiceCall call, $1594.CreateBookRequest request);
-  $async.Future<$1594.Book> getBook($grpc.ServiceCall call, $1594.GetBookRequest request);
-  $async.Future<$1594.ListBooksResponse> listBooks($grpc.ServiceCall call, $1594.ListBooksRequest request);
-  $async.Future<$3.Empty> deleteBook($grpc.ServiceCall call, $1594.DeleteBookRequest request);
-  $async.Future<$1594.Book> updateBook($grpc.ServiceCall call, $1594.UpdateBookRequest request);
-  $async.Future<$1594.Book> moveBook($grpc.ServiceCall call, $1594.MoveBookRequest request);
+  $async.Future<$115.Shelf> createShelf($grpc.ServiceCall call, $115.CreateShelfRequest request);
+  $async.Future<$115.Shelf> getShelf($grpc.ServiceCall call, $115.GetShelfRequest request);
+  $async.Future<$115.ListShelvesResponse> listShelves($grpc.ServiceCall call, $115.ListShelvesRequest request);
+  $async.Future<$3.Empty> deleteShelf($grpc.ServiceCall call, $115.DeleteShelfRequest request);
+  $async.Future<$115.Shelf> mergeShelves($grpc.ServiceCall call, $115.MergeShelvesRequest request);
+  $async.Future<$115.Book> createBook($grpc.ServiceCall call, $115.CreateBookRequest request);
+  $async.Future<$115.Book> getBook($grpc.ServiceCall call, $115.GetBookRequest request);
+  $async.Future<$115.ListBooksResponse> listBooks($grpc.ServiceCall call, $115.ListBooksRequest request);
+  $async.Future<$3.Empty> deleteBook($grpc.ServiceCall call, $115.DeleteBookRequest request);
+  $async.Future<$115.Book> updateBook($grpc.ServiceCall call, $115.UpdateBookRequest request);
+  $async.Future<$115.Book> moveBook($grpc.ServiceCall call, $115.MoveBookRequest request);
 }

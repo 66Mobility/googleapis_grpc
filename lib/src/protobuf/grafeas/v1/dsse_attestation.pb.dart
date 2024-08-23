@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $4426;
-import 'intoto_statement.pb.dart' as $4897;
+import 'common.pb.dart' as $547;
+import 'intoto_statement.pb.dart' as $552;
 
 /// This submessage provides human-readable hints about the purpose of the
 /// authority. Because the name of a note acts as its resource reference, it is
@@ -137,8 +137,8 @@ enum DSSEAttestationOccurrence_DecodedPayload {
 /// Envelope at the top level of the Occurrence.
 class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   factory DSSEAttestationOccurrence({
-    $4426.Envelope? envelope,
-    $4897.InTotoStatement? statement,
+    $547.Envelope? envelope,
+    $552.InTotoStatement? statement,
   }) {
     final $result = create();
     if (envelope != null) {
@@ -159,8 +159,8 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DSSEAttestationOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$4426.Envelope>(1, _omitFieldNames ? '' : 'envelope', subBuilder: $4426.Envelope.create)
-    ..aOM<$4897.InTotoStatement>(2, _omitFieldNames ? '' : 'statement', subBuilder: $4897.InTotoStatement.create)
+    ..aOM<$547.Envelope>(1, _omitFieldNames ? '' : 'envelope', subBuilder: $547.Envelope.create)
+    ..aOM<$552.InTotoStatement>(2, _omitFieldNames ? '' : 'statement', subBuilder: $552.InTotoStatement.create)
     ..hasRequiredFields = false
   ;
 
@@ -191,26 +191,26 @@ class DSSEAttestationOccurrence extends $pb.GeneratedMessage {
   /// If doing something security critical, make sure to verify the signatures in
   /// this metadata.
   @$pb.TagNumber(1)
-  $4426.Envelope get envelope => $_getN(0);
+  $547.Envelope get envelope => $_getN(0);
   @$pb.TagNumber(1)
-  set envelope($4426.Envelope v) { setField(1, v); }
+  set envelope($547.Envelope v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEnvelope() => $_has(0);
   @$pb.TagNumber(1)
   void clearEnvelope() => clearField(1);
   @$pb.TagNumber(1)
-  $4426.Envelope ensureEnvelope() => $_ensure(0);
+  $547.Envelope ensureEnvelope() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $4897.InTotoStatement get statement => $_getN(1);
+  $552.InTotoStatement get statement => $_getN(1);
   @$pb.TagNumber(2)
-  set statement($4897.InTotoStatement v) { setField(2, v); }
+  set statement($552.InTotoStatement v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatement() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatement() => clearField(2);
   @$pb.TagNumber(2)
-  $4897.InTotoStatement ensureStatement() => $_ensure(1);
+  $552.InTotoStatement ensureStatement() => $_ensure(1);
 }
 
 

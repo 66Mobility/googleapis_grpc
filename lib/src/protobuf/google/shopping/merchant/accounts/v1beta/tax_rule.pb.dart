@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/interval.pb.dart' as $4257;
+import '../../../../type/interval.pb.dart' as $503;
 
 /// A range of postal codes that defines the area.
 class TaxRule_TaxPostalCodeRange extends $pb.GeneratedMessage {
@@ -117,7 +117,7 @@ class TaxRule extends $pb.GeneratedMessage {
     $core.bool? useGoogleRate,
     $fixnum.Int64? selfSpecifiedRateMicros,
     $core.bool? shippingTaxed,
-    $4257.Interval? effectiveTimePeriod,
+    $503.Interval? effectiveTimePeriod,
   }) {
     final $result = create();
     if (regionCode != null) {
@@ -166,7 +166,7 @@ class TaxRule extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'useGoogleRate')
     ..aInt64(5, _omitFieldNames ? '' : 'selfSpecifiedRateMicros')
     ..aOB(6, _omitFieldNames ? '' : 'shippingTaxed')
-    ..aOM<$4257.Interval>(7, _omitFieldNames ? '' : 'effectiveTimePeriod', subBuilder: $4257.Interval.create)
+    ..aOM<$503.Interval>(7, _omitFieldNames ? '' : 'effectiveTimePeriod', subBuilder: $503.Interval.create)
     ..hasRequiredFields = false
   ;
 
@@ -269,15 +269,15 @@ class TaxRule extends $pb.GeneratedMessage {
   /// missing from effective_time listed, then it is open ended to the future.
   /// The start of this time period is inclusive, and the end is exclusive.
   @$pb.TagNumber(7)
-  $4257.Interval get effectiveTimePeriod => $_getN(6);
+  $503.Interval get effectiveTimePeriod => $_getN(6);
   @$pb.TagNumber(7)
-  set effectiveTimePeriod($4257.Interval v) { setField(7, v); }
+  set effectiveTimePeriod($503.Interval v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEffectiveTimePeriod() => $_has(6);
   @$pb.TagNumber(7)
   void clearEffectiveTimePeriod() => clearField(7);
   @$pb.TagNumber(7)
-  $4257.Interval ensureEffectiveTimePeriod() => $_ensure(6);
+  $503.Interval ensureEffectiveTimePeriod() => $_ensure(6);
 }
 
 

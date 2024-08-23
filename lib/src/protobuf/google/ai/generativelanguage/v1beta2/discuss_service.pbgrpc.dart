@@ -15,20 +15,20 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'discuss_service.pb.dart' as $387;
+import 'discuss_service.pb.dart' as $22;
 
 export 'discuss_service.pb.dart';
 
 @$pb.GrpcServiceName('google.ai.generativelanguage.v1beta2.DiscussService')
 class DiscussServiceClient extends $grpc.Client {
-  static final _$generateMessage = $grpc.ClientMethod<$387.GenerateMessageRequest, $387.GenerateMessageResponse>(
+  static final _$generateMessage = $grpc.ClientMethod<$22.GenerateMessageRequest, $22.GenerateMessageResponse>(
       '/google.ai.generativelanguage.v1beta2.DiscussService/GenerateMessage',
-      ($387.GenerateMessageRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $387.GenerateMessageResponse.fromBuffer(value));
-  static final _$countMessageTokens = $grpc.ClientMethod<$387.CountMessageTokensRequest, $387.CountMessageTokensResponse>(
+      ($22.GenerateMessageRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $22.GenerateMessageResponse.fromBuffer(value));
+  static final _$countMessageTokens = $grpc.ClientMethod<$22.CountMessageTokensRequest, $22.CountMessageTokensResponse>(
       '/google.ai.generativelanguage.v1beta2.DiscussService/CountMessageTokens',
-      ($387.CountMessageTokensRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $387.CountMessageTokensResponse.fromBuffer(value));
+      ($22.CountMessageTokensRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $22.CountMessageTokensResponse.fromBuffer(value));
 
   DiscussServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -36,11 +36,11 @@ class DiscussServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$387.GenerateMessageResponse> generateMessage($387.GenerateMessageRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$22.GenerateMessageResponse> generateMessage($22.GenerateMessageRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateMessage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$387.CountMessageTokensResponse> countMessageTokens($387.CountMessageTokensRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$22.CountMessageTokensResponse> countMessageTokens($22.CountMessageTokensRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$countMessageTokens, request, options: options);
   }
 }
@@ -50,30 +50,30 @@ abstract class DiscussServiceBase extends $grpc.Service {
   $core.String get $name => 'google.ai.generativelanguage.v1beta2.DiscussService';
 
   DiscussServiceBase() {
-    $addMethod($grpc.ServiceMethod<$387.GenerateMessageRequest, $387.GenerateMessageResponse>(
+    $addMethod($grpc.ServiceMethod<$22.GenerateMessageRequest, $22.GenerateMessageResponse>(
         'GenerateMessage',
         generateMessage_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $387.GenerateMessageRequest.fromBuffer(value),
-        ($387.GenerateMessageResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$387.CountMessageTokensRequest, $387.CountMessageTokensResponse>(
+        ($core.List<$core.int> value) => $22.GenerateMessageRequest.fromBuffer(value),
+        ($22.GenerateMessageResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$22.CountMessageTokensRequest, $22.CountMessageTokensResponse>(
         'CountMessageTokens',
         countMessageTokens_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $387.CountMessageTokensRequest.fromBuffer(value),
-        ($387.CountMessageTokensResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $22.CountMessageTokensRequest.fromBuffer(value),
+        ($22.CountMessageTokensResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$387.GenerateMessageResponse> generateMessage_Pre($grpc.ServiceCall call, $async.Future<$387.GenerateMessageRequest> request) async {
+  $async.Future<$22.GenerateMessageResponse> generateMessage_Pre($grpc.ServiceCall call, $async.Future<$22.GenerateMessageRequest> request) async {
     return generateMessage(call, await request);
   }
 
-  $async.Future<$387.CountMessageTokensResponse> countMessageTokens_Pre($grpc.ServiceCall call, $async.Future<$387.CountMessageTokensRequest> request) async {
+  $async.Future<$22.CountMessageTokensResponse> countMessageTokens_Pre($grpc.ServiceCall call, $async.Future<$22.CountMessageTokensRequest> request) async {
     return countMessageTokens(call, await request);
   }
 
-  $async.Future<$387.GenerateMessageResponse> generateMessage($grpc.ServiceCall call, $387.GenerateMessageRequest request);
-  $async.Future<$387.CountMessageTokensResponse> countMessageTokens($grpc.ServiceCall call, $387.CountMessageTokensRequest request);
+  $async.Future<$22.GenerateMessageResponse> generateMessage($grpc.ServiceCall call, $22.GenerateMessageRequest request);
+  $async.Future<$22.CountMessageTokensResponse> countMessageTokens($grpc.ServiceCall call, $22.CountMessageTokensRequest request);
 }

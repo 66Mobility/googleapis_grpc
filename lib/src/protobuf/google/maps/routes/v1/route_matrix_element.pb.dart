@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $1738;
-import '../../../rpc/status.pb.dart' as $1796;
-import 'fallback_info.pb.dart' as $4828;
-import 'route.pb.dart' as $4826;
+import '../../../protobuf/duration.pb.dart' as $261;
+import '../../../rpc/status.pb.dart' as $319;
+import 'fallback_info.pb.dart' as $480;
+import 'route.pb.dart' as $478;
 import 'route_matrix_element.pbenum.dart';
 
 export 'route_matrix_element.pbenum.dart';
@@ -27,12 +27,12 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   factory RouteMatrixElement({
     $core.int? originIndex,
     $core.int? destinationIndex,
-    $1796.Status? status,
+    $319.Status? status,
     $core.int? distanceMeters,
-    $1738.Duration? duration,
-    $1738.Duration? staticDuration,
-    $4826.RouteTravelAdvisory? travelAdvisory,
-    $4828.FallbackInfo? fallbackInfo,
+    $261.Duration? duration,
+    $261.Duration? staticDuration,
+    $478.RouteTravelAdvisory? travelAdvisory,
+    $480.FallbackInfo? fallbackInfo,
     RouteMatrixElementCondition? condition,
   }) {
     final $result = create();
@@ -72,12 +72,12 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteMatrixElement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'originIndex', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'destinationIndex', $pb.PbFieldType.O3)
-    ..aOM<$1796.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $1796.Status.create)
+    ..aOM<$319.Status>(3, _omitFieldNames ? '' : 'status', subBuilder: $319.Status.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$1738.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $1738.Duration.create)
-    ..aOM<$1738.Duration>(6, _omitFieldNames ? '' : 'staticDuration', subBuilder: $1738.Duration.create)
-    ..aOM<$4826.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: $4826.RouteTravelAdvisory.create)
-    ..aOM<$4828.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo', subBuilder: $4828.FallbackInfo.create)
+    ..aOM<$261.Duration>(5, _omitFieldNames ? '' : 'duration', subBuilder: $261.Duration.create)
+    ..aOM<$261.Duration>(6, _omitFieldNames ? '' : 'staticDuration', subBuilder: $261.Duration.create)
+    ..aOM<$478.RouteTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: $478.RouteTravelAdvisory.create)
+    ..aOM<$480.FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo', subBuilder: $480.FallbackInfo.create)
     ..e<RouteMatrixElementCondition>(9, _omitFieldNames ? '' : 'condition', $pb.PbFieldType.OE, defaultOrMaker: RouteMatrixElementCondition.ROUTE_MATRIX_ELEMENT_CONDITION_UNSPECIFIED, valueOf: RouteMatrixElementCondition.valueOf, enumValues: RouteMatrixElementCondition.values)
     ..hasRequiredFields = false
   ;
@@ -125,15 +125,15 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
 
   /// Error status code for this element.
   @$pb.TagNumber(3)
-  $1796.Status get status => $_getN(2);
+  $319.Status get status => $_getN(2);
   @$pb.TagNumber(3)
-  set status($1796.Status v) { setField(3, v); }
+  set status($319.Status v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStatus() => $_has(2);
   @$pb.TagNumber(3)
   void clearStatus() => clearField(3);
   @$pb.TagNumber(3)
-  $1796.Status ensureStatus() => $_ensure(2);
+  $319.Status ensureStatus() => $_ensure(2);
 
   /// The travel distance of the route, in meters.
   @$pb.TagNumber(4)
@@ -151,41 +151,41 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   /// `TRAFFIC_AWARE` or `TRAFFIC_AWARE_OPTIMAL`, then this value is calculated
   /// taking traffic conditions into account.
   @$pb.TagNumber(5)
-  $1738.Duration get duration => $_getN(4);
+  $261.Duration get duration => $_getN(4);
   @$pb.TagNumber(5)
-  set duration($1738.Duration v) { setField(5, v); }
+  set duration($261.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDuration() => $_has(4);
   @$pb.TagNumber(5)
   void clearDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1738.Duration ensureDuration() => $_ensure(4);
+  $261.Duration ensureDuration() => $_ensure(4);
 
   /// The duration of traveling through the route without taking traffic
   /// conditions into consideration.
   @$pb.TagNumber(6)
-  $1738.Duration get staticDuration => $_getN(5);
+  $261.Duration get staticDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set staticDuration($1738.Duration v) { setField(6, v); }
+  set staticDuration($261.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStaticDuration() => $_has(5);
   @$pb.TagNumber(6)
   void clearStaticDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1738.Duration ensureStaticDuration() => $_ensure(5);
+  $261.Duration ensureStaticDuration() => $_ensure(5);
 
   /// Additional information about the route. For example: restriction
   /// information and toll information
   @$pb.TagNumber(7)
-  $4826.RouteTravelAdvisory get travelAdvisory => $_getN(6);
+  $478.RouteTravelAdvisory get travelAdvisory => $_getN(6);
   @$pb.TagNumber(7)
-  set travelAdvisory($4826.RouteTravelAdvisory v) { setField(7, v); }
+  set travelAdvisory($478.RouteTravelAdvisory v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTravelAdvisory() => $_has(6);
   @$pb.TagNumber(7)
   void clearTravelAdvisory() => clearField(7);
   @$pb.TagNumber(7)
-  $4826.RouteTravelAdvisory ensureTravelAdvisory() => $_ensure(6);
+  $478.RouteTravelAdvisory ensureTravelAdvisory() => $_ensure(6);
 
   /// In some cases when the server is not able to compute the route with the
   /// given preferences for this particular origin/destination pair, it may
@@ -193,15 +193,15 @@ class RouteMatrixElement extends $pb.GeneratedMessage {
   /// used, this field contains detailed information about the fallback response.
   /// Otherwise this field is unset.
   @$pb.TagNumber(8)
-  $4828.FallbackInfo get fallbackInfo => $_getN(7);
+  $480.FallbackInfo get fallbackInfo => $_getN(7);
   @$pb.TagNumber(8)
-  set fallbackInfo($4828.FallbackInfo v) { setField(8, v); }
+  set fallbackInfo($480.FallbackInfo v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasFallbackInfo() => $_has(7);
   @$pb.TagNumber(8)
   void clearFallbackInfo() => clearField(8);
   @$pb.TagNumber(8)
-  $4828.FallbackInfo ensureFallbackInfo() => $_ensure(7);
+  $480.FallbackInfo ensureFallbackInfo() => $_ensure(7);
 
   /// Indicates whether the route was found or not. Independent of status.
   @$pb.TagNumber(9)

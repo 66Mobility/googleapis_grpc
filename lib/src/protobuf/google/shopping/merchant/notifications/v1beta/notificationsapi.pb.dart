@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2210;
-import '../../../type/types.pbenum.dart' as $4874;
+import '../../../../protobuf/field_mask.pb.dart' as $330;
+import '../../../type/types.pbenum.dart' as $528;
 import 'notificationsapi.pbenum.dart';
 
 export 'notificationsapi.pbenum.dart';
@@ -145,7 +145,7 @@ class CreateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
 class UpdateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
   factory UpdateNotificationSubscriptionRequest({
     NotificationSubscription? notificationSubscription,
-    $2210.FieldMask? updateMask,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (notificationSubscription != null) {
@@ -162,7 +162,7 @@ class UpdateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNotificationSubscriptionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.notifications.v1beta'), createEmptyInstance: create)
     ..aOM<NotificationSubscription>(1, _omitFieldNames ? '' : 'notificationSubscription', subBuilder: NotificationSubscription.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -202,15 +202,15 @@ class UpdateNotificationSubscriptionRequest extends $pb.GeneratedMessage {
 
   /// List of fields being updated.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the DeleteNotificationSubscription method.
@@ -554,7 +554,7 @@ class ProductChange extends $pb.GeneratedMessage {
     $core.String? oldValue,
     $core.String? newValue,
     $core.String? regionCode,
-    $4874.ReportingContext_ReportingContextEnum? reportingContext,
+    $528.ReportingContext_ReportingContextEnum? reportingContext,
   }) {
     final $result = create();
     if (oldValue != null) {
@@ -579,7 +579,7 @@ class ProductChange extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'oldValue')
     ..aOS(2, _omitFieldNames ? '' : 'newValue')
     ..aOS(3, _omitFieldNames ? '' : 'regionCode')
-    ..e<$4874.ReportingContext_ReportingContextEnum>(4, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $4874.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $4874.ReportingContext_ReportingContextEnum.valueOf, enumValues: $4874.ReportingContext_ReportingContextEnum.values)
+    ..e<$528.ReportingContext_ReportingContextEnum>(4, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $528.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $528.ReportingContext_ReportingContextEnum.valueOf, enumValues: $528.ReportingContext_ReportingContextEnum.values)
     ..hasRequiredFields = false
   ;
 
@@ -636,9 +636,9 @@ class ProductChange extends $pb.GeneratedMessage {
 
   /// Reporting contexts that have the change (if applicable)
   @$pb.TagNumber(4)
-  $4874.ReportingContext_ReportingContextEnum get reportingContext => $_getN(3);
+  $528.ReportingContext_ReportingContextEnum get reportingContext => $_getN(3);
   @$pb.TagNumber(4)
-  set reportingContext($4874.ReportingContext_ReportingContextEnum v) { setField(4, v); }
+  set reportingContext($528.ReportingContext_ReportingContextEnum v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReportingContext() => $_has(3);
   @$pb.TagNumber(4)

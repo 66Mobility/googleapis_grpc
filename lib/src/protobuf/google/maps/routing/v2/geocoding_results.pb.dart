@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $1796;
+import '../../../rpc/status.pb.dart' as $319;
 
 /// Contains [`GeocodedWaypoints`][google.maps.routing.v2.GeocodedWaypoint] for
 /// origin, destination and intermediate waypoints. Only populated for address
@@ -104,7 +104,7 @@ class GeocodingResults extends $pb.GeneratedMessage {
 /// determining what the address was geocoded to.
 class GeocodedWaypoint extends $pb.GeneratedMessage {
   factory GeocodedWaypoint({
-    $1796.Status? geocoderStatus,
+    $319.Status? geocoderStatus,
     $core.int? intermediateWaypointRequestIndex,
     $core.Iterable<$core.String>? type,
     $core.bool? partialMatch,
@@ -133,7 +133,7 @@ class GeocodedWaypoint extends $pb.GeneratedMessage {
   factory GeocodedWaypoint.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GeocodedWaypoint', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$1796.Status>(1, _omitFieldNames ? '' : 'geocoderStatus', subBuilder: $1796.Status.create)
+    ..aOM<$319.Status>(1, _omitFieldNames ? '' : 'geocoderStatus', subBuilder: $319.Status.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'intermediateWaypointRequestIndex', $pb.PbFieldType.O3)
     ..pPS(3, _omitFieldNames ? '' : 'type')
     ..aOB(4, _omitFieldNames ? '' : 'partialMatch')
@@ -164,15 +164,15 @@ class GeocodedWaypoint extends $pb.GeneratedMessage {
 
   /// Indicates the status code resulting from the geocoding operation.
   @$pb.TagNumber(1)
-  $1796.Status get geocoderStatus => $_getN(0);
+  $319.Status get geocoderStatus => $_getN(0);
   @$pb.TagNumber(1)
-  set geocoderStatus($1796.Status v) { setField(1, v); }
+  set geocoderStatus($319.Status v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGeocoderStatus() => $_has(0);
   @$pb.TagNumber(1)
   void clearGeocoderStatus() => clearField(1);
   @$pb.TagNumber(1)
-  $1796.Status ensureGeocoderStatus() => $_ensure(0);
+  $319.Status ensureGeocoderStatus() => $_ensure(0);
 
   /// The index of the corresponding intermediate waypoint in the request.
   /// Only populated if the corresponding waypoint is an intermediate

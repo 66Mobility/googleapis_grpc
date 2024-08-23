@@ -13,20 +13,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $2210;
-import '../../../../type/phone_number.pb.dart' as $4878;
-import '../../../../type/postal_address.pb.dart' as $4429;
-import 'customerservice.pb.dart' as $4879;
-import 'phoneverificationstate.pbenum.dart' as $4880;
+import '../../../../protobuf/field_mask.pb.dart' as $330;
+import '../../../../type/phone_number.pb.dart' as $532;
+import '../../../../type/postal_address.pb.dart' as $445;
+import 'customerservice.pb.dart' as $533;
+import 'phoneverificationstate.pbenum.dart' as $534;
 
 /// Collection of information related to a business.
 class BusinessInfo extends $pb.GeneratedMessage {
   factory BusinessInfo({
     $core.String? name,
-    $4429.PostalAddress? address,
-    $4878.PhoneNumber? phone,
-    $4880.PhoneVerificationState? phoneVerificationState,
-    $4879.CustomerService? customerService,
+    $445.PostalAddress? address,
+    $532.PhoneNumber? phone,
+    $534.PhoneVerificationState? phoneVerificationState,
+    $533.CustomerService? customerService,
   }) {
     final $result = create();
     if (name != null) {
@@ -52,10 +52,10 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BusinessInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$4429.PostalAddress>(2, _omitFieldNames ? '' : 'address', subBuilder: $4429.PostalAddress.create)
-    ..aOM<$4878.PhoneNumber>(3, _omitFieldNames ? '' : 'phone', subBuilder: $4878.PhoneNumber.create)
-    ..e<$4880.PhoneVerificationState>(4, _omitFieldNames ? '' : 'phoneVerificationState', $pb.PbFieldType.OE, defaultOrMaker: $4880.PhoneVerificationState.PHONE_VERIFICATION_STATE_UNSPECIFIED, valueOf: $4880.PhoneVerificationState.valueOf, enumValues: $4880.PhoneVerificationState.values)
-    ..aOM<$4879.CustomerService>(5, _omitFieldNames ? '' : 'customerService', subBuilder: $4879.CustomerService.create)
+    ..aOM<$445.PostalAddress>(2, _omitFieldNames ? '' : 'address', subBuilder: $445.PostalAddress.create)
+    ..aOM<$532.PhoneNumber>(3, _omitFieldNames ? '' : 'phone', subBuilder: $532.PhoneNumber.create)
+    ..e<$534.PhoneVerificationState>(4, _omitFieldNames ? '' : 'phoneVerificationState', $pb.PbFieldType.OE, defaultOrMaker: $534.PhoneVerificationState.PHONE_VERIFICATION_STATE_UNSPECIFIED, valueOf: $534.PhoneVerificationState.valueOf, enumValues: $534.PhoneVerificationState.values)
+    ..aOM<$533.CustomerService>(5, _omitFieldNames ? '' : 'customerService', subBuilder: $533.CustomerService.create)
     ..hasRequiredFields = false
   ;
 
@@ -93,33 +93,33 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   /// Optional. The address of the business.
   @$pb.TagNumber(2)
-  $4429.PostalAddress get address => $_getN(1);
+  $445.PostalAddress get address => $_getN(1);
   @$pb.TagNumber(2)
-  set address($4429.PostalAddress v) { setField(2, v); }
+  set address($445.PostalAddress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAddress() => $_has(1);
   @$pb.TagNumber(2)
   void clearAddress() => clearField(2);
   @$pb.TagNumber(2)
-  $4429.PostalAddress ensureAddress() => $_ensure(1);
+  $445.PostalAddress ensureAddress() => $_ensure(1);
 
   /// Output only. The phone number of the business.
   @$pb.TagNumber(3)
-  $4878.PhoneNumber get phone => $_getN(2);
+  $532.PhoneNumber get phone => $_getN(2);
   @$pb.TagNumber(3)
-  set phone($4878.PhoneNumber v) { setField(3, v); }
+  set phone($532.PhoneNumber v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPhone() => $_has(2);
   @$pb.TagNumber(3)
   void clearPhone() => clearField(3);
   @$pb.TagNumber(3)
-  $4878.PhoneNumber ensurePhone() => $_ensure(2);
+  $532.PhoneNumber ensurePhone() => $_ensure(2);
 
   /// Output only. The phone verification state of the business.
   @$pb.TagNumber(4)
-  $4880.PhoneVerificationState get phoneVerificationState => $_getN(3);
+  $534.PhoneVerificationState get phoneVerificationState => $_getN(3);
   @$pb.TagNumber(4)
-  set phoneVerificationState($4880.PhoneVerificationState v) { setField(4, v); }
+  set phoneVerificationState($534.PhoneVerificationState v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPhoneVerificationState() => $_has(3);
   @$pb.TagNumber(4)
@@ -127,15 +127,15 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   /// Optional. The customer service of the business.
   @$pb.TagNumber(5)
-  $4879.CustomerService get customerService => $_getN(4);
+  $533.CustomerService get customerService => $_getN(4);
   @$pb.TagNumber(5)
-  set customerService($4879.CustomerService v) { setField(5, v); }
+  set customerService($533.CustomerService v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCustomerService() => $_has(4);
   @$pb.TagNumber(5)
   void clearCustomerService() => clearField(5);
   @$pb.TagNumber(5)
-  $4879.CustomerService ensureCustomerService() => $_ensure(4);
+  $533.CustomerService ensureCustomerService() => $_ensure(4);
 }
 
 /// Request message for the `GetBusinessInfo` method.
@@ -195,7 +195,7 @@ class GetBusinessInfoRequest extends $pb.GeneratedMessage {
 class UpdateBusinessInfoRequest extends $pb.GeneratedMessage {
   factory UpdateBusinessInfoRequest({
     BusinessInfo? businessInfo,
-    $2210.FieldMask? updateMask,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (businessInfo != null) {
@@ -212,7 +212,7 @@ class UpdateBusinessInfoRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBusinessInfoRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<BusinessInfo>(1, _omitFieldNames ? '' : 'businessInfo', subBuilder: BusinessInfo.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -251,15 +251,15 @@ class UpdateBusinessInfoRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

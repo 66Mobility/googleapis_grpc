@@ -15,24 +15,24 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'account_tax.pb.dart' as $1691;
+import 'account_tax.pb.dart' as $214;
 
 export 'account_tax.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.AccountTaxService')
 class AccountTaxServiceClient extends $grpc.Client {
-  static final _$getAccountTax = $grpc.ClientMethod<$1691.GetAccountTaxRequest, $1691.AccountTax>(
+  static final _$getAccountTax = $grpc.ClientMethod<$214.GetAccountTaxRequest, $214.AccountTax>(
       '/google.shopping.merchant.accounts.v1beta.AccountTaxService/GetAccountTax',
-      ($1691.GetAccountTaxRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1691.AccountTax.fromBuffer(value));
-  static final _$listAccountTax = $grpc.ClientMethod<$1691.ListAccountTaxRequest, $1691.ListAccountTaxResponse>(
+      ($214.GetAccountTaxRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $214.AccountTax.fromBuffer(value));
+  static final _$listAccountTax = $grpc.ClientMethod<$214.ListAccountTaxRequest, $214.ListAccountTaxResponse>(
       '/google.shopping.merchant.accounts.v1beta.AccountTaxService/ListAccountTax',
-      ($1691.ListAccountTaxRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1691.ListAccountTaxResponse.fromBuffer(value));
-  static final _$updateAccountTax = $grpc.ClientMethod<$1691.UpdateAccountTaxRequest, $1691.AccountTax>(
+      ($214.ListAccountTaxRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $214.ListAccountTaxResponse.fromBuffer(value));
+  static final _$updateAccountTax = $grpc.ClientMethod<$214.UpdateAccountTaxRequest, $214.AccountTax>(
       '/google.shopping.merchant.accounts.v1beta.AccountTaxService/UpdateAccountTax',
-      ($1691.UpdateAccountTaxRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1691.AccountTax.fromBuffer(value));
+      ($214.UpdateAccountTaxRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $214.AccountTax.fromBuffer(value));
 
   AccountTaxServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -40,15 +40,15 @@ class AccountTaxServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1691.AccountTax> getAccountTax($1691.GetAccountTaxRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$214.AccountTax> getAccountTax($214.GetAccountTaxRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getAccountTax, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1691.ListAccountTaxResponse> listAccountTax($1691.ListAccountTaxRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$214.ListAccountTaxResponse> listAccountTax($214.ListAccountTaxRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listAccountTax, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1691.AccountTax> updateAccountTax($1691.UpdateAccountTaxRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$214.AccountTax> updateAccountTax($214.UpdateAccountTaxRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateAccountTax, request, options: options);
   }
 }
@@ -58,42 +58,42 @@ abstract class AccountTaxServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.accounts.v1beta.AccountTaxService';
 
   AccountTaxServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1691.GetAccountTaxRequest, $1691.AccountTax>(
+    $addMethod($grpc.ServiceMethod<$214.GetAccountTaxRequest, $214.AccountTax>(
         'GetAccountTax',
         getAccountTax_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1691.GetAccountTaxRequest.fromBuffer(value),
-        ($1691.AccountTax value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1691.ListAccountTaxRequest, $1691.ListAccountTaxResponse>(
+        ($core.List<$core.int> value) => $214.GetAccountTaxRequest.fromBuffer(value),
+        ($214.AccountTax value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$214.ListAccountTaxRequest, $214.ListAccountTaxResponse>(
         'ListAccountTax',
         listAccountTax_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1691.ListAccountTaxRequest.fromBuffer(value),
-        ($1691.ListAccountTaxResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1691.UpdateAccountTaxRequest, $1691.AccountTax>(
+        ($core.List<$core.int> value) => $214.ListAccountTaxRequest.fromBuffer(value),
+        ($214.ListAccountTaxResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$214.UpdateAccountTaxRequest, $214.AccountTax>(
         'UpdateAccountTax',
         updateAccountTax_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1691.UpdateAccountTaxRequest.fromBuffer(value),
-        ($1691.AccountTax value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $214.UpdateAccountTaxRequest.fromBuffer(value),
+        ($214.AccountTax value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1691.AccountTax> getAccountTax_Pre($grpc.ServiceCall call, $async.Future<$1691.GetAccountTaxRequest> request) async {
+  $async.Future<$214.AccountTax> getAccountTax_Pre($grpc.ServiceCall call, $async.Future<$214.GetAccountTaxRequest> request) async {
     return getAccountTax(call, await request);
   }
 
-  $async.Future<$1691.ListAccountTaxResponse> listAccountTax_Pre($grpc.ServiceCall call, $async.Future<$1691.ListAccountTaxRequest> request) async {
+  $async.Future<$214.ListAccountTaxResponse> listAccountTax_Pre($grpc.ServiceCall call, $async.Future<$214.ListAccountTaxRequest> request) async {
     return listAccountTax(call, await request);
   }
 
-  $async.Future<$1691.AccountTax> updateAccountTax_Pre($grpc.ServiceCall call, $async.Future<$1691.UpdateAccountTaxRequest> request) async {
+  $async.Future<$214.AccountTax> updateAccountTax_Pre($grpc.ServiceCall call, $async.Future<$214.UpdateAccountTaxRequest> request) async {
     return updateAccountTax(call, await request);
   }
 
-  $async.Future<$1691.AccountTax> getAccountTax($grpc.ServiceCall call, $1691.GetAccountTaxRequest request);
-  $async.Future<$1691.ListAccountTaxResponse> listAccountTax($grpc.ServiceCall call, $1691.ListAccountTaxRequest request);
-  $async.Future<$1691.AccountTax> updateAccountTax($grpc.ServiceCall call, $1691.UpdateAccountTaxRequest request);
+  $async.Future<$214.AccountTax> getAccountTax($grpc.ServiceCall call, $214.GetAccountTaxRequest request);
+  $async.Future<$214.ListAccountTaxResponse> listAccountTax($grpc.ServiceCall call, $214.ListAccountTaxRequest request);
+  $async.Future<$214.AccountTax> updateAccountTax($grpc.ServiceCall call, $214.UpdateAccountTaxRequest request);
 }

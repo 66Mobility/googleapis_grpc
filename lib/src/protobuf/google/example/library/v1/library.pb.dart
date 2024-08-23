@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2210;
+import '../../../protobuf/field_mask.pb.dart' as $330;
 
 /// A single book in the library.
 class Book extends $pb.GeneratedMessage {
@@ -821,7 +821,7 @@ class ListBooksResponse extends $pb.GeneratedMessage {
 class UpdateBookRequest extends $pb.GeneratedMessage {
   factory UpdateBookRequest({
     Book? book,
-    $2210.FieldMask? updateMask,
+    $330.FieldMask? updateMask,
   }) {
     final $result = create();
     if (book != null) {
@@ -838,7 +838,7 @@ class UpdateBookRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBookRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.example.library.v1'), createEmptyInstance: create)
     ..aOM<Book>(1, _omitFieldNames ? '' : 'book', subBuilder: Book.create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -877,15 +877,15 @@ class UpdateBookRequest extends $pb.GeneratedMessage {
 
   /// Required. Mask of fields to update.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(1);
+  $330.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(1);
+  $330.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for LibraryService.DeleteBook.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
-import 'data_source.pb.dart' as $4805;
+import '../../../protobuf/timestamp.pb.dart' as $299;
+import 'data_source.pb.dart' as $456;
 import 'dataset.pbenum.dart';
 
 export 'dataset.pbenum.dart';
@@ -33,11 +33,11 @@ class Dataset extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? versionId,
     $core.Iterable<Usage>? usage,
-    $4805.LocalFileSource? localFileSource,
-    $4805.GcsSource? gcsSource,
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? updateTime,
-    $1776.Timestamp? versionCreateTime,
+    $456.LocalFileSource? localFileSource,
+    $456.GcsSource? gcsSource,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
+    $299.Timestamp? versionCreateTime,
     $core.String? versionDescription,
     Status? status,
   }) {
@@ -96,11 +96,11 @@ class Dataset extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'versionId')
     ..pc<Usage>(5, _omitFieldNames ? '' : 'usage', $pb.PbFieldType.KE, valueOf: Usage.valueOf, enumValues: Usage.values, defaultEnumValue: Usage.USAGE_UNSPECIFIED)
-    ..aOM<$4805.LocalFileSource>(6, _omitFieldNames ? '' : 'localFileSource', subBuilder: $4805.LocalFileSource.create)
-    ..aOM<$4805.GcsSource>(7, _omitFieldNames ? '' : 'gcsSource', subBuilder: $4805.GcsSource.create)
-    ..aOM<$1776.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(10, _omitFieldNames ? '' : 'versionCreateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$456.LocalFileSource>(6, _omitFieldNames ? '' : 'localFileSource', subBuilder: $456.LocalFileSource.create)
+    ..aOM<$456.GcsSource>(7, _omitFieldNames ? '' : 'gcsSource', subBuilder: $456.GcsSource.create)
+    ..aOM<$299.Timestamp>(8, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(9, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(10, _omitFieldNames ? '' : 'versionCreateTime', subBuilder: $299.Timestamp.create)
     ..aOS(11, _omitFieldNames ? '' : 'versionDescription')
     ..aOM<Status>(12, _omitFieldNames ? '' : 'status', subBuilder: Status.create)
     ..hasRequiredFields = false
@@ -179,63 +179,63 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// A local file source for the dataset for a single upload.
   @$pb.TagNumber(6)
-  $4805.LocalFileSource get localFileSource => $_getN(5);
+  $456.LocalFileSource get localFileSource => $_getN(5);
   @$pb.TagNumber(6)
-  set localFileSource($4805.LocalFileSource v) { setField(6, v); }
+  set localFileSource($456.LocalFileSource v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLocalFileSource() => $_has(5);
   @$pb.TagNumber(6)
   void clearLocalFileSource() => clearField(6);
   @$pb.TagNumber(6)
-  $4805.LocalFileSource ensureLocalFileSource() => $_ensure(5);
+  $456.LocalFileSource ensureLocalFileSource() => $_ensure(5);
 
   /// A Google Cloud Storage file source for the dataset for a single upload.
   @$pb.TagNumber(7)
-  $4805.GcsSource get gcsSource => $_getN(6);
+  $456.GcsSource get gcsSource => $_getN(6);
   @$pb.TagNumber(7)
-  set gcsSource($4805.GcsSource v) { setField(7, v); }
+  set gcsSource($456.GcsSource v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGcsSource() => $_has(6);
   @$pb.TagNumber(7)
   void clearGcsSource() => clearField(7);
   @$pb.TagNumber(7)
-  $4805.GcsSource ensureGcsSource() => $_ensure(6);
+  $456.GcsSource ensureGcsSource() => $_ensure(6);
 
   /// Output only. Time when the dataset was first created.
   @$pb.TagNumber(8)
-  $1776.Timestamp get createTime => $_getN(7);
+  $299.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(8)
-  set createTime($1776.Timestamp v) { setField(8, v); }
+  set createTime($299.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearCreateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $1776.Timestamp ensureCreateTime() => $_ensure(7);
+  $299.Timestamp ensureCreateTime() => $_ensure(7);
 
   /// Output only. Time when the dataset metadata was last updated.
   @$pb.TagNumber(9)
-  $1776.Timestamp get updateTime => $_getN(8);
+  $299.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(9)
-  set updateTime($1776.Timestamp v) { setField(9, v); }
+  set updateTime($299.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearUpdateTime() => clearField(9);
   @$pb.TagNumber(9)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(8);
+  $299.Timestamp ensureUpdateTime() => $_ensure(8);
 
   /// Output only. Time when this version was created.
   @$pb.TagNumber(10)
-  $1776.Timestamp get versionCreateTime => $_getN(9);
+  $299.Timestamp get versionCreateTime => $_getN(9);
   @$pb.TagNumber(10)
-  set versionCreateTime($1776.Timestamp v) { setField(10, v); }
+  set versionCreateTime($299.Timestamp v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasVersionCreateTime() => $_has(9);
   @$pb.TagNumber(10)
   void clearVersionCreateTime() => clearField(10);
   @$pb.TagNumber(10)
-  $1776.Timestamp ensureVersionCreateTime() => $_ensure(9);
+  $299.Timestamp ensureVersionCreateTime() => $_ensure(9);
 
   /// Output only. The description for this version of dataset. It is provided
   /// when importing data to the dataset.

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'file.pb.dart' as $377;
+import 'file.pb.dart' as $11;
 
 /// Request for `CreateFile`.
 class CreateFileRequest extends $pb.GeneratedMessage {
   factory CreateFileRequest({
-    $377.File? file,
+    $11.File? file,
   }) {
     final $result = create();
     if (file != null) {
@@ -31,7 +31,7 @@ class CreateFileRequest extends $pb.GeneratedMessage {
   factory CreateFileRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateFileRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$377.File>(1, _omitFieldNames ? '' : 'file', subBuilder: $377.File.create)
+    ..aOM<$11.File>(1, _omitFieldNames ? '' : 'file', subBuilder: $11.File.create)
     ..hasRequiredFields = false
   ;
 
@@ -58,21 +58,21 @@ class CreateFileRequest extends $pb.GeneratedMessage {
 
   /// Optional. Metadata for the file to create.
   @$pb.TagNumber(1)
-  $377.File get file => $_getN(0);
+  $11.File get file => $_getN(0);
   @$pb.TagNumber(1)
-  set file($377.File v) { setField(1, v); }
+  set file($11.File v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFile() => $_has(0);
   @$pb.TagNumber(1)
   void clearFile() => clearField(1);
   @$pb.TagNumber(1)
-  $377.File ensureFile() => $_ensure(0);
+  $11.File ensureFile() => $_ensure(0);
 }
 
 /// Response for `CreateFile`.
 class CreateFileResponse extends $pb.GeneratedMessage {
   factory CreateFileResponse({
-    $377.File? file,
+    $11.File? file,
   }) {
     final $result = create();
     if (file != null) {
@@ -85,7 +85,7 @@ class CreateFileResponse extends $pb.GeneratedMessage {
   factory CreateFileResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateFileResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$377.File>(1, _omitFieldNames ? '' : 'file', subBuilder: $377.File.create)
+    ..aOM<$11.File>(1, _omitFieldNames ? '' : 'file', subBuilder: $11.File.create)
     ..hasRequiredFields = false
   ;
 
@@ -112,15 +112,15 @@ class CreateFileResponse extends $pb.GeneratedMessage {
 
   /// Metadata for the created file.
   @$pb.TagNumber(1)
-  $377.File get file => $_getN(0);
+  $11.File get file => $_getN(0);
   @$pb.TagNumber(1)
-  set file($377.File v) { setField(1, v); }
+  set file($11.File v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFile() => $_has(0);
   @$pb.TagNumber(1)
   void clearFile() => clearField(1);
   @$pb.TagNumber(1)
-  $377.File ensureFile() => $_ensure(0);
+  $11.File ensureFile() => $_ensure(0);
 }
 
 /// Request for `ListFiles`.
@@ -194,7 +194,7 @@ class ListFilesRequest extends $pb.GeneratedMessage {
 /// Response for `ListFiles`.
 class ListFilesResponse extends $pb.GeneratedMessage {
   factory ListFilesResponse({
-    $core.Iterable<$377.File>? files,
+    $core.Iterable<$11.File>? files,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -211,7 +211,7 @@ class ListFilesResponse extends $pb.GeneratedMessage {
   factory ListFilesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListFilesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$377.File>(1, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $377.File.create)
+    ..pc<$11.File>(1, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $11.File.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -239,7 +239,7 @@ class ListFilesResponse extends $pb.GeneratedMessage {
 
   /// The list of `File`s.
   @$pb.TagNumber(1)
-  $core.List<$377.File> get files => $_getList(0);
+  $core.List<$11.File> get files => $_getList(0);
 
   /// A token that can be sent as a `page_token` into a subsequent `ListFiles`
   /// call.

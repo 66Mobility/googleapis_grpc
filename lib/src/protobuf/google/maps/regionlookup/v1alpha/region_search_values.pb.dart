@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/latlng.pb.dart' as $1799;
+import '../../../type/latlng.pb.dart' as $322;
 import 'region_search_values.pbenum.dart';
 
 export 'region_search_values.pbenum.dart';
@@ -67,7 +67,7 @@ enum RegionSearchValue_Location {
 class RegionSearchValue extends $pb.GeneratedMessage {
   factory RegionSearchValue({
     $core.String? address,
-    $1799.LatLng? latlng,
+    $322.LatLng? latlng,
     $core.String? placeId,
     RegionSearchValue_PlaceType? placeType,
     $core.String? languageCode,
@@ -107,7 +107,7 @@ class RegionSearchValue extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegionSearchValue', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.regionlookup.v1alpha'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'address')
-    ..aOM<$1799.LatLng>(2, _omitFieldNames ? '' : 'latlng', subBuilder: $1799.LatLng.create)
+    ..aOM<$322.LatLng>(2, _omitFieldNames ? '' : 'latlng', subBuilder: $322.LatLng.create)
     ..aOS(3, _omitFieldNames ? '' : 'placeId')
     ..e<RegionSearchValue_PlaceType>(6, _omitFieldNames ? '' : 'placeType', $pb.PbFieldType.OE, defaultOrMaker: RegionSearchValue_PlaceType.PLACE_TYPE_UNSPECIFIED, valueOf: RegionSearchValue_PlaceType.valueOf, enumValues: RegionSearchValue_PlaceType.values)
     ..aOS(7, _omitFieldNames ? '' : 'languageCode')
@@ -152,15 +152,15 @@ class RegionSearchValue extends $pb.GeneratedMessage {
 
   /// The latitude and longitude that is contained inside a region to match.
   @$pb.TagNumber(2)
-  $1799.LatLng get latlng => $_getN(1);
+  $322.LatLng get latlng => $_getN(1);
   @$pb.TagNumber(2)
-  set latlng($1799.LatLng v) { setField(2, v); }
+  set latlng($322.LatLng v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLatlng() => $_has(1);
   @$pb.TagNumber(2)
   void clearLatlng() => clearField(2);
   @$pb.TagNumber(2)
-  $1799.LatLng ensureLatlng() => $_ensure(1);
+  $322.LatLng ensureLatlng() => $_ensure(1);
 
   /// The Place ID that is contained inside a region to match.
   @$pb.TagNumber(3)

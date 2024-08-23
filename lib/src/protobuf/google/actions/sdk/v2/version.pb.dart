@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/timestamp.pb.dart' as $299;
 import 'version.pbenum.dart';
 
 export 'version.pbenum.dart';
@@ -91,7 +91,7 @@ class Version extends $pb.GeneratedMessage {
     $core.String? name,
     Version_VersionState? versionState,
     $core.String? creator,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -116,7 +116,7 @@ class Version extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Version_VersionState>(2, _omitFieldNames ? '' : 'versionState', subBuilder: Version_VersionState.create)
     ..aOS(3, _omitFieldNames ? '' : 'creator')
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -176,15 +176,15 @@ class Version extends $pb.GeneratedMessage {
 
   /// Timestamp of the last change to this version.
   @$pb.TagNumber(4)
-  $1776.Timestamp get updateTime => $_getN(3);
+  $299.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($1776.Timestamp v) { setField(4, v); }
+  set updateTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(3);
+  $299.Timestamp ensureUpdateTime() => $_ensure(3);
 }
 
 

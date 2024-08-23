@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'static_image_prompt.pb.dart' as $1736;
-import 'static_image_prompt.pbenum.dart' as $1736;
+import 'static_image_prompt.pb.dart' as $259;
+import 'static_image_prompt.pbenum.dart' as $259;
 
 /// An item in the collection.
 class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
@@ -22,7 +22,7 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
     $core.String? key,
     $core.String? title,
     $core.String? description,
-    $1736.StaticImagePrompt? image,
+    $259.StaticImagePrompt? image,
   }) {
     final $result = create();
     if (key != null) {
@@ -47,7 +47,7 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'title')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$1736.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $1736.StaticImagePrompt.create)
+    ..aOM<$259.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $259.StaticImagePrompt.create)
     ..hasRequiredFields = false
   ;
 
@@ -108,15 +108,15 @@ class StaticCollectionPrompt_CollectionItem extends $pb.GeneratedMessage {
 
   /// Optional. Item image.
   @$pb.TagNumber(4)
-  $1736.StaticImagePrompt get image => $_getN(3);
+  $259.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($1736.StaticImagePrompt v) { setField(4, v); }
+  set image($259.StaticImagePrompt v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $1736.StaticImagePrompt ensureImage() => $_ensure(3);
+  $259.StaticImagePrompt ensureImage() => $_ensure(3);
 }
 
 /// A card for presenting a collection of options to select from.
@@ -125,7 +125,7 @@ class StaticCollectionPrompt extends $pb.GeneratedMessage {
     $core.String? title,
     $core.String? subtitle,
     $core.Iterable<StaticCollectionPrompt_CollectionItem>? items,
-    $1736.StaticImagePrompt_ImageFill? imageFill,
+    $259.StaticImagePrompt_ImageFill? imageFill,
   }) {
     final $result = create();
     if (title != null) {
@@ -150,7 +150,7 @@ class StaticCollectionPrompt extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
     ..pc<StaticCollectionPrompt_CollectionItem>(3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: StaticCollectionPrompt_CollectionItem.create)
-    ..e<$1736.StaticImagePrompt_ImageFill>(4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $1736.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $1736.StaticImagePrompt_ImageFill.valueOf, enumValues: $1736.StaticImagePrompt_ImageFill.values)
+    ..e<$259.StaticImagePrompt_ImageFill>(4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $259.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $259.StaticImagePrompt_ImageFill.valueOf, enumValues: $259.StaticImagePrompt_ImageFill.values)
     ..hasRequiredFields = false
   ;
 
@@ -201,9 +201,9 @@ class StaticCollectionPrompt extends $pb.GeneratedMessage {
 
   /// Optional. Type of image display option.
   @$pb.TagNumber(4)
-  $1736.StaticImagePrompt_ImageFill get imageFill => $_getN(3);
+  $259.StaticImagePrompt_ImageFill get imageFill => $_getN(3);
   @$pb.TagNumber(4)
-  set imageFill($1736.StaticImagePrompt_ImageFill v) { setField(4, v); }
+  set imageFill($259.StaticImagePrompt_ImageFill v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImageFill() => $_has(3);
   @$pb.TagNumber(4)

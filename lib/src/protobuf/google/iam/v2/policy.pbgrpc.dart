@@ -15,33 +15,33 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../longrunning/operations.pb.dart' as $17;
-import 'policy.pb.dart' as $1207;
+import '../../longrunning/operations.pb.dart' as $13;
+import 'policy.pb.dart' as $146;
 
 export 'policy.pb.dart';
 
 @$pb.GrpcServiceName('google.iam.v2.Policies')
 class PoliciesClient extends $grpc.Client {
-  static final _$listPolicies = $grpc.ClientMethod<$1207.ListPoliciesRequest, $1207.ListPoliciesResponse>(
+  static final _$listPolicies = $grpc.ClientMethod<$146.ListPoliciesRequest, $146.ListPoliciesResponse>(
       '/google.iam.v2.Policies/ListPolicies',
-      ($1207.ListPoliciesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1207.ListPoliciesResponse.fromBuffer(value));
-  static final _$getPolicy = $grpc.ClientMethod<$1207.GetPolicyRequest, $1207.Policy>(
+      ($146.ListPoliciesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $146.ListPoliciesResponse.fromBuffer(value));
+  static final _$getPolicy = $grpc.ClientMethod<$146.GetPolicyRequest, $146.Policy>(
       '/google.iam.v2.Policies/GetPolicy',
-      ($1207.GetPolicyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1207.Policy.fromBuffer(value));
-  static final _$createPolicy = $grpc.ClientMethod<$1207.CreatePolicyRequest, $17.Operation>(
+      ($146.GetPolicyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $146.Policy.fromBuffer(value));
+  static final _$createPolicy = $grpc.ClientMethod<$146.CreatePolicyRequest, $13.Operation>(
       '/google.iam.v2.Policies/CreatePolicy',
-      ($1207.CreatePolicyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $17.Operation.fromBuffer(value));
-  static final _$updatePolicy = $grpc.ClientMethod<$1207.UpdatePolicyRequest, $17.Operation>(
+      ($146.CreatePolicyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
+  static final _$updatePolicy = $grpc.ClientMethod<$146.UpdatePolicyRequest, $13.Operation>(
       '/google.iam.v2.Policies/UpdatePolicy',
-      ($1207.UpdatePolicyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $17.Operation.fromBuffer(value));
-  static final _$deletePolicy = $grpc.ClientMethod<$1207.DeletePolicyRequest, $17.Operation>(
+      ($146.UpdatePolicyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
+  static final _$deletePolicy = $grpc.ClientMethod<$146.DeletePolicyRequest, $13.Operation>(
       '/google.iam.v2.Policies/DeletePolicy',
-      ($1207.DeletePolicyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $17.Operation.fromBuffer(value));
+      ($146.DeletePolicyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
 
   PoliciesClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -49,23 +49,23 @@ class PoliciesClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1207.ListPoliciesResponse> listPolicies($1207.ListPoliciesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$146.ListPoliciesResponse> listPolicies($146.ListPoliciesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listPolicies, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1207.Policy> getPolicy($1207.GetPolicyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$146.Policy> getPolicy($146.GetPolicyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getPolicy, request, options: options);
   }
 
-  $grpc.ResponseFuture<$17.Operation> createPolicy($1207.CreatePolicyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> createPolicy($146.CreatePolicyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createPolicy, request, options: options);
   }
 
-  $grpc.ResponseFuture<$17.Operation> updatePolicy($1207.UpdatePolicyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> updatePolicy($146.UpdatePolicyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updatePolicy, request, options: options);
   }
 
-  $grpc.ResponseFuture<$17.Operation> deletePolicy($1207.DeletePolicyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> deletePolicy($146.DeletePolicyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deletePolicy, request, options: options);
   }
 }
@@ -75,66 +75,66 @@ abstract class PoliciesServiceBase extends $grpc.Service {
   $core.String get $name => 'google.iam.v2.Policies';
 
   PoliciesServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1207.ListPoliciesRequest, $1207.ListPoliciesResponse>(
+    $addMethod($grpc.ServiceMethod<$146.ListPoliciesRequest, $146.ListPoliciesResponse>(
         'ListPolicies',
         listPolicies_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1207.ListPoliciesRequest.fromBuffer(value),
-        ($1207.ListPoliciesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1207.GetPolicyRequest, $1207.Policy>(
+        ($core.List<$core.int> value) => $146.ListPoliciesRequest.fromBuffer(value),
+        ($146.ListPoliciesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$146.GetPolicyRequest, $146.Policy>(
         'GetPolicy',
         getPolicy_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1207.GetPolicyRequest.fromBuffer(value),
-        ($1207.Policy value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1207.CreatePolicyRequest, $17.Operation>(
+        ($core.List<$core.int> value) => $146.GetPolicyRequest.fromBuffer(value),
+        ($146.Policy value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$146.CreatePolicyRequest, $13.Operation>(
         'CreatePolicy',
         createPolicy_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1207.CreatePolicyRequest.fromBuffer(value),
-        ($17.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1207.UpdatePolicyRequest, $17.Operation>(
+        ($core.List<$core.int> value) => $146.CreatePolicyRequest.fromBuffer(value),
+        ($13.Operation value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$146.UpdatePolicyRequest, $13.Operation>(
         'UpdatePolicy',
         updatePolicy_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1207.UpdatePolicyRequest.fromBuffer(value),
-        ($17.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1207.DeletePolicyRequest, $17.Operation>(
+        ($core.List<$core.int> value) => $146.UpdatePolicyRequest.fromBuffer(value),
+        ($13.Operation value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$146.DeletePolicyRequest, $13.Operation>(
         'DeletePolicy',
         deletePolicy_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1207.DeletePolicyRequest.fromBuffer(value),
-        ($17.Operation value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $146.DeletePolicyRequest.fromBuffer(value),
+        ($13.Operation value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1207.ListPoliciesResponse> listPolicies_Pre($grpc.ServiceCall call, $async.Future<$1207.ListPoliciesRequest> request) async {
+  $async.Future<$146.ListPoliciesResponse> listPolicies_Pre($grpc.ServiceCall call, $async.Future<$146.ListPoliciesRequest> request) async {
     return listPolicies(call, await request);
   }
 
-  $async.Future<$1207.Policy> getPolicy_Pre($grpc.ServiceCall call, $async.Future<$1207.GetPolicyRequest> request) async {
+  $async.Future<$146.Policy> getPolicy_Pre($grpc.ServiceCall call, $async.Future<$146.GetPolicyRequest> request) async {
     return getPolicy(call, await request);
   }
 
-  $async.Future<$17.Operation> createPolicy_Pre($grpc.ServiceCall call, $async.Future<$1207.CreatePolicyRequest> request) async {
+  $async.Future<$13.Operation> createPolicy_Pre($grpc.ServiceCall call, $async.Future<$146.CreatePolicyRequest> request) async {
     return createPolicy(call, await request);
   }
 
-  $async.Future<$17.Operation> updatePolicy_Pre($grpc.ServiceCall call, $async.Future<$1207.UpdatePolicyRequest> request) async {
+  $async.Future<$13.Operation> updatePolicy_Pre($grpc.ServiceCall call, $async.Future<$146.UpdatePolicyRequest> request) async {
     return updatePolicy(call, await request);
   }
 
-  $async.Future<$17.Operation> deletePolicy_Pre($grpc.ServiceCall call, $async.Future<$1207.DeletePolicyRequest> request) async {
+  $async.Future<$13.Operation> deletePolicy_Pre($grpc.ServiceCall call, $async.Future<$146.DeletePolicyRequest> request) async {
     return deletePolicy(call, await request);
   }
 
-  $async.Future<$1207.ListPoliciesResponse> listPolicies($grpc.ServiceCall call, $1207.ListPoliciesRequest request);
-  $async.Future<$1207.Policy> getPolicy($grpc.ServiceCall call, $1207.GetPolicyRequest request);
-  $async.Future<$17.Operation> createPolicy($grpc.ServiceCall call, $1207.CreatePolicyRequest request);
-  $async.Future<$17.Operation> updatePolicy($grpc.ServiceCall call, $1207.UpdatePolicyRequest request);
-  $async.Future<$17.Operation> deletePolicy($grpc.ServiceCall call, $1207.DeletePolicyRequest request);
+  $async.Future<$146.ListPoliciesResponse> listPolicies($grpc.ServiceCall call, $146.ListPoliciesRequest request);
+  $async.Future<$146.Policy> getPolicy($grpc.ServiceCall call, $146.GetPolicyRequest request);
+  $async.Future<$13.Operation> createPolicy($grpc.ServiceCall call, $146.CreatePolicyRequest request);
+  $async.Future<$13.Operation> updatePolicy($grpc.ServiceCall call, $146.UpdatePolicyRequest request);
+  $async.Future<$13.Operation> deletePolicy($grpc.ServiceCall call, $146.DeletePolicyRequest request);
 }

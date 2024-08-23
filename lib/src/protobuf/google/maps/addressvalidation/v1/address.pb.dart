@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/postal_address.pb.dart' as $4429;
+import '../../../type/postal_address.pb.dart' as $445;
 import 'address.pbenum.dart';
 
 export 'address.pbenum.dart';
@@ -24,7 +24,7 @@ export 'address.pbenum.dart';
 class Address extends $pb.GeneratedMessage {
   factory Address({
     $core.String? formattedAddress,
-    $4429.PostalAddress? postalAddress,
+    $445.PostalAddress? postalAddress,
     $core.Iterable<AddressComponent>? addressComponents,
     $core.Iterable<$core.String>? missingComponentTypes,
     $core.Iterable<$core.String>? unconfirmedComponentTypes,
@@ -57,7 +57,7 @@ class Address extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Address', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'formattedAddress')
-    ..aOM<$4429.PostalAddress>(3, _omitFieldNames ? '' : 'postalAddress', subBuilder: $4429.PostalAddress.create)
+    ..aOM<$445.PostalAddress>(3, _omitFieldNames ? '' : 'postalAddress', subBuilder: $445.PostalAddress.create)
     ..pc<AddressComponent>(4, _omitFieldNames ? '' : 'addressComponents', $pb.PbFieldType.PM, subBuilder: AddressComponent.create)
     ..pPS(5, _omitFieldNames ? '' : 'missingComponentTypes')
     ..pPS(6, _omitFieldNames ? '' : 'unconfirmedComponentTypes')
@@ -99,15 +99,15 @@ class Address extends $pb.GeneratedMessage {
 
   /// The post-processed address represented as a postal address.
   @$pb.TagNumber(3)
-  $4429.PostalAddress get postalAddress => $_getN(1);
+  $445.PostalAddress get postalAddress => $_getN(1);
   @$pb.TagNumber(3)
-  set postalAddress($4429.PostalAddress v) { setField(3, v); }
+  set postalAddress($445.PostalAddress v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPostalAddress() => $_has(1);
   @$pb.TagNumber(3)
   void clearPostalAddress() => clearField(3);
   @$pb.TagNumber(3)
-  $4429.PostalAddress ensurePostalAddress() => $_ensure(1);
+  $445.PostalAddress ensurePostalAddress() => $_ensure(1);
 
   ///  Unordered list. The individual address components of the formatted and
   ///  corrected address, along with validation information. This provides

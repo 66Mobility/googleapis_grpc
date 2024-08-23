@@ -16,88 +16,88 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'label.pb.dart' as $445;
-import 'label_limits.pb.dart' as $446;
-import 'label_permission.pb.dart' as $447;
-import 'requests.pb.dart' as $443;
-import 'user_capabilities.pb.dart' as $444;
+import 'label.pb.dart' as $69;
+import 'label_limits.pb.dart' as $70;
+import 'label_permission.pb.dart' as $71;
+import 'requests.pb.dart' as $67;
+import 'user_capabilities.pb.dart' as $68;
 
 export 'label_service.pb.dart';
 
 @$pb.GrpcServiceName('google.apps.drive.labels.v2.LabelService')
 class LabelServiceClient extends $grpc.Client {
-  static final _$getUserCapabilities = $grpc.ClientMethod<$443.GetUserCapabilitiesRequest, $444.UserCapabilities>(
+  static final _$getUserCapabilities = $grpc.ClientMethod<$67.GetUserCapabilitiesRequest, $68.UserCapabilities>(
       '/google.apps.drive.labels.v2.LabelService/GetUserCapabilities',
-      ($443.GetUserCapabilitiesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $444.UserCapabilities.fromBuffer(value));
-  static final _$listLabels = $grpc.ClientMethod<$443.ListLabelsRequest, $443.ListLabelsResponse>(
+      ($67.GetUserCapabilitiesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $68.UserCapabilities.fromBuffer(value));
+  static final _$listLabels = $grpc.ClientMethod<$67.ListLabelsRequest, $67.ListLabelsResponse>(
       '/google.apps.drive.labels.v2.LabelService/ListLabels',
-      ($443.ListLabelsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $443.ListLabelsResponse.fromBuffer(value));
-  static final _$getLabel = $grpc.ClientMethod<$443.GetLabelRequest, $445.Label>(
+      ($67.ListLabelsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $67.ListLabelsResponse.fromBuffer(value));
+  static final _$getLabel = $grpc.ClientMethod<$67.GetLabelRequest, $69.Label>(
       '/google.apps.drive.labels.v2.LabelService/GetLabel',
-      ($443.GetLabelRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $445.Label.fromBuffer(value));
-  static final _$getLabelLimits = $grpc.ClientMethod<$443.GetLabelLimitsRequest, $446.LabelLimits>(
+      ($67.GetLabelRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $69.Label.fromBuffer(value));
+  static final _$getLabelLimits = $grpc.ClientMethod<$67.GetLabelLimitsRequest, $70.LabelLimits>(
       '/google.apps.drive.labels.v2.LabelService/GetLabelLimits',
-      ($443.GetLabelLimitsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $446.LabelLimits.fromBuffer(value));
-  static final _$createLabel = $grpc.ClientMethod<$443.CreateLabelRequest, $445.Label>(
+      ($67.GetLabelLimitsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $70.LabelLimits.fromBuffer(value));
+  static final _$createLabel = $grpc.ClientMethod<$67.CreateLabelRequest, $69.Label>(
       '/google.apps.drive.labels.v2.LabelService/CreateLabel',
-      ($443.CreateLabelRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $445.Label.fromBuffer(value));
-  static final _$deltaUpdateLabel = $grpc.ClientMethod<$443.DeltaUpdateLabelRequest, $443.DeltaUpdateLabelResponse>(
+      ($67.CreateLabelRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $69.Label.fromBuffer(value));
+  static final _$deltaUpdateLabel = $grpc.ClientMethod<$67.DeltaUpdateLabelRequest, $67.DeltaUpdateLabelResponse>(
       '/google.apps.drive.labels.v2.LabelService/DeltaUpdateLabel',
-      ($443.DeltaUpdateLabelRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $443.DeltaUpdateLabelResponse.fromBuffer(value));
-  static final _$updateLabelCopyMode = $grpc.ClientMethod<$443.UpdateLabelCopyModeRequest, $445.Label>(
+      ($67.DeltaUpdateLabelRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $67.DeltaUpdateLabelResponse.fromBuffer(value));
+  static final _$updateLabelCopyMode = $grpc.ClientMethod<$67.UpdateLabelCopyModeRequest, $69.Label>(
       '/google.apps.drive.labels.v2.LabelService/UpdateLabelCopyMode',
-      ($443.UpdateLabelCopyModeRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $445.Label.fromBuffer(value));
-  static final _$publishLabel = $grpc.ClientMethod<$443.PublishLabelRequest, $445.Label>(
+      ($67.UpdateLabelCopyModeRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $69.Label.fromBuffer(value));
+  static final _$publishLabel = $grpc.ClientMethod<$67.PublishLabelRequest, $69.Label>(
       '/google.apps.drive.labels.v2.LabelService/PublishLabel',
-      ($443.PublishLabelRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $445.Label.fromBuffer(value));
-  static final _$disableLabel = $grpc.ClientMethod<$443.DisableLabelRequest, $445.Label>(
+      ($67.PublishLabelRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $69.Label.fromBuffer(value));
+  static final _$disableLabel = $grpc.ClientMethod<$67.DisableLabelRequest, $69.Label>(
       '/google.apps.drive.labels.v2.LabelService/DisableLabel',
-      ($443.DisableLabelRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $445.Label.fromBuffer(value));
-  static final _$enableLabel = $grpc.ClientMethod<$443.EnableLabelRequest, $445.Label>(
+      ($67.DisableLabelRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $69.Label.fromBuffer(value));
+  static final _$enableLabel = $grpc.ClientMethod<$67.EnableLabelRequest, $69.Label>(
       '/google.apps.drive.labels.v2.LabelService/EnableLabel',
-      ($443.EnableLabelRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $445.Label.fromBuffer(value));
-  static final _$deleteLabel = $grpc.ClientMethod<$443.DeleteLabelRequest, $3.Empty>(
+      ($67.EnableLabelRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $69.Label.fromBuffer(value));
+  static final _$deleteLabel = $grpc.ClientMethod<$67.DeleteLabelRequest, $3.Empty>(
       '/google.apps.drive.labels.v2.LabelService/DeleteLabel',
-      ($443.DeleteLabelRequest value) => value.writeToBuffer(),
+      ($67.DeleteLabelRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$listLabelPermissions = $grpc.ClientMethod<$443.ListLabelPermissionsRequest, $443.ListLabelPermissionsResponse>(
+  static final _$listLabelPermissions = $grpc.ClientMethod<$67.ListLabelPermissionsRequest, $67.ListLabelPermissionsResponse>(
       '/google.apps.drive.labels.v2.LabelService/ListLabelPermissions',
-      ($443.ListLabelPermissionsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $443.ListLabelPermissionsResponse.fromBuffer(value));
-  static final _$createLabelPermission = $grpc.ClientMethod<$443.CreateLabelPermissionRequest, $447.LabelPermission>(
+      ($67.ListLabelPermissionsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $67.ListLabelPermissionsResponse.fromBuffer(value));
+  static final _$createLabelPermission = $grpc.ClientMethod<$67.CreateLabelPermissionRequest, $71.LabelPermission>(
       '/google.apps.drive.labels.v2.LabelService/CreateLabelPermission',
-      ($443.CreateLabelPermissionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $447.LabelPermission.fromBuffer(value));
-  static final _$updateLabelPermission = $grpc.ClientMethod<$443.UpdateLabelPermissionRequest, $447.LabelPermission>(
+      ($67.CreateLabelPermissionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $71.LabelPermission.fromBuffer(value));
+  static final _$updateLabelPermission = $grpc.ClientMethod<$67.UpdateLabelPermissionRequest, $71.LabelPermission>(
       '/google.apps.drive.labels.v2.LabelService/UpdateLabelPermission',
-      ($443.UpdateLabelPermissionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $447.LabelPermission.fromBuffer(value));
-  static final _$deleteLabelPermission = $grpc.ClientMethod<$443.DeleteLabelPermissionRequest, $3.Empty>(
+      ($67.UpdateLabelPermissionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $71.LabelPermission.fromBuffer(value));
+  static final _$deleteLabelPermission = $grpc.ClientMethod<$67.DeleteLabelPermissionRequest, $3.Empty>(
       '/google.apps.drive.labels.v2.LabelService/DeleteLabelPermission',
-      ($443.DeleteLabelPermissionRequest value) => value.writeToBuffer(),
+      ($67.DeleteLabelPermissionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$batchUpdateLabelPermissions = $grpc.ClientMethod<$443.BatchUpdateLabelPermissionsRequest, $443.BatchUpdateLabelPermissionsResponse>(
+  static final _$batchUpdateLabelPermissions = $grpc.ClientMethod<$67.BatchUpdateLabelPermissionsRequest, $67.BatchUpdateLabelPermissionsResponse>(
       '/google.apps.drive.labels.v2.LabelService/BatchUpdateLabelPermissions',
-      ($443.BatchUpdateLabelPermissionsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $443.BatchUpdateLabelPermissionsResponse.fromBuffer(value));
-  static final _$batchDeleteLabelPermissions = $grpc.ClientMethod<$443.BatchDeleteLabelPermissionsRequest, $3.Empty>(
+      ($67.BatchUpdateLabelPermissionsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $67.BatchUpdateLabelPermissionsResponse.fromBuffer(value));
+  static final _$batchDeleteLabelPermissions = $grpc.ClientMethod<$67.BatchDeleteLabelPermissionsRequest, $3.Empty>(
       '/google.apps.drive.labels.v2.LabelService/BatchDeleteLabelPermissions',
-      ($443.BatchDeleteLabelPermissionsRequest value) => value.writeToBuffer(),
+      ($67.BatchDeleteLabelPermissionsRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$listLabelLocks = $grpc.ClientMethod<$443.ListLabelLocksRequest, $443.ListLabelLocksResponse>(
+  static final _$listLabelLocks = $grpc.ClientMethod<$67.ListLabelLocksRequest, $67.ListLabelLocksResponse>(
       '/google.apps.drive.labels.v2.LabelService/ListLabelLocks',
-      ($443.ListLabelLocksRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $443.ListLabelLocksResponse.fromBuffer(value));
+      ($67.ListLabelLocksRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $67.ListLabelLocksResponse.fromBuffer(value));
 
   LabelServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -105,75 +105,75 @@ class LabelServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$444.UserCapabilities> getUserCapabilities($443.GetUserCapabilitiesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$68.UserCapabilities> getUserCapabilities($67.GetUserCapabilitiesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getUserCapabilities, request, options: options);
   }
 
-  $grpc.ResponseFuture<$443.ListLabelsResponse> listLabels($443.ListLabelsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$67.ListLabelsResponse> listLabels($67.ListLabelsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listLabels, request, options: options);
   }
 
-  $grpc.ResponseFuture<$445.Label> getLabel($443.GetLabelRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$69.Label> getLabel($67.GetLabelRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getLabel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$446.LabelLimits> getLabelLimits($443.GetLabelLimitsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$70.LabelLimits> getLabelLimits($67.GetLabelLimitsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getLabelLimits, request, options: options);
   }
 
-  $grpc.ResponseFuture<$445.Label> createLabel($443.CreateLabelRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$69.Label> createLabel($67.CreateLabelRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createLabel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$443.DeltaUpdateLabelResponse> deltaUpdateLabel($443.DeltaUpdateLabelRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$67.DeltaUpdateLabelResponse> deltaUpdateLabel($67.DeltaUpdateLabelRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deltaUpdateLabel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$445.Label> updateLabelCopyMode($443.UpdateLabelCopyModeRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$69.Label> updateLabelCopyMode($67.UpdateLabelCopyModeRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateLabelCopyMode, request, options: options);
   }
 
-  $grpc.ResponseFuture<$445.Label> publishLabel($443.PublishLabelRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$69.Label> publishLabel($67.PublishLabelRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$publishLabel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$445.Label> disableLabel($443.DisableLabelRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$69.Label> disableLabel($67.DisableLabelRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$disableLabel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$445.Label> enableLabel($443.EnableLabelRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$69.Label> enableLabel($67.EnableLabelRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$enableLabel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteLabel($443.DeleteLabelRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteLabel($67.DeleteLabelRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteLabel, request, options: options);
   }
 
-  $grpc.ResponseFuture<$443.ListLabelPermissionsResponse> listLabelPermissions($443.ListLabelPermissionsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$67.ListLabelPermissionsResponse> listLabelPermissions($67.ListLabelPermissionsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listLabelPermissions, request, options: options);
   }
 
-  $grpc.ResponseFuture<$447.LabelPermission> createLabelPermission($443.CreateLabelPermissionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$71.LabelPermission> createLabelPermission($67.CreateLabelPermissionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createLabelPermission, request, options: options);
   }
 
-  $grpc.ResponseFuture<$447.LabelPermission> updateLabelPermission($443.UpdateLabelPermissionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$71.LabelPermission> updateLabelPermission($67.UpdateLabelPermissionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateLabelPermission, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteLabelPermission($443.DeleteLabelPermissionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteLabelPermission($67.DeleteLabelPermissionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteLabelPermission, request, options: options);
   }
 
-  $grpc.ResponseFuture<$443.BatchUpdateLabelPermissionsResponse> batchUpdateLabelPermissions($443.BatchUpdateLabelPermissionsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$67.BatchUpdateLabelPermissionsResponse> batchUpdateLabelPermissions($67.BatchUpdateLabelPermissionsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchUpdateLabelPermissions, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> batchDeleteLabelPermissions($443.BatchDeleteLabelPermissionsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> batchDeleteLabelPermissions($67.BatchDeleteLabelPermissionsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$batchDeleteLabelPermissions, request, options: options);
   }
 
-  $grpc.ResponseFuture<$443.ListLabelLocksResponse> listLabelLocks($443.ListLabelLocksRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$67.ListLabelLocksResponse> listLabelLocks($67.ListLabelLocksRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listLabelLocks, request, options: options);
   }
 }
@@ -183,222 +183,222 @@ abstract class LabelServiceBase extends $grpc.Service {
   $core.String get $name => 'google.apps.drive.labels.v2.LabelService';
 
   LabelServiceBase() {
-    $addMethod($grpc.ServiceMethod<$443.GetUserCapabilitiesRequest, $444.UserCapabilities>(
+    $addMethod($grpc.ServiceMethod<$67.GetUserCapabilitiesRequest, $68.UserCapabilities>(
         'GetUserCapabilities',
         getUserCapabilities_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.GetUserCapabilitiesRequest.fromBuffer(value),
-        ($444.UserCapabilities value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.ListLabelsRequest, $443.ListLabelsResponse>(
+        ($core.List<$core.int> value) => $67.GetUserCapabilitiesRequest.fromBuffer(value),
+        ($68.UserCapabilities value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.ListLabelsRequest, $67.ListLabelsResponse>(
         'ListLabels',
         listLabels_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.ListLabelsRequest.fromBuffer(value),
-        ($443.ListLabelsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.GetLabelRequest, $445.Label>(
+        ($core.List<$core.int> value) => $67.ListLabelsRequest.fromBuffer(value),
+        ($67.ListLabelsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.GetLabelRequest, $69.Label>(
         'GetLabel',
         getLabel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.GetLabelRequest.fromBuffer(value),
-        ($445.Label value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.GetLabelLimitsRequest, $446.LabelLimits>(
+        ($core.List<$core.int> value) => $67.GetLabelRequest.fromBuffer(value),
+        ($69.Label value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.GetLabelLimitsRequest, $70.LabelLimits>(
         'GetLabelLimits',
         getLabelLimits_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.GetLabelLimitsRequest.fromBuffer(value),
-        ($446.LabelLimits value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.CreateLabelRequest, $445.Label>(
+        ($core.List<$core.int> value) => $67.GetLabelLimitsRequest.fromBuffer(value),
+        ($70.LabelLimits value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.CreateLabelRequest, $69.Label>(
         'CreateLabel',
         createLabel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.CreateLabelRequest.fromBuffer(value),
-        ($445.Label value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.DeltaUpdateLabelRequest, $443.DeltaUpdateLabelResponse>(
+        ($core.List<$core.int> value) => $67.CreateLabelRequest.fromBuffer(value),
+        ($69.Label value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.DeltaUpdateLabelRequest, $67.DeltaUpdateLabelResponse>(
         'DeltaUpdateLabel',
         deltaUpdateLabel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.DeltaUpdateLabelRequest.fromBuffer(value),
-        ($443.DeltaUpdateLabelResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.UpdateLabelCopyModeRequest, $445.Label>(
+        ($core.List<$core.int> value) => $67.DeltaUpdateLabelRequest.fromBuffer(value),
+        ($67.DeltaUpdateLabelResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.UpdateLabelCopyModeRequest, $69.Label>(
         'UpdateLabelCopyMode',
         updateLabelCopyMode_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.UpdateLabelCopyModeRequest.fromBuffer(value),
-        ($445.Label value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.PublishLabelRequest, $445.Label>(
+        ($core.List<$core.int> value) => $67.UpdateLabelCopyModeRequest.fromBuffer(value),
+        ($69.Label value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.PublishLabelRequest, $69.Label>(
         'PublishLabel',
         publishLabel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.PublishLabelRequest.fromBuffer(value),
-        ($445.Label value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.DisableLabelRequest, $445.Label>(
+        ($core.List<$core.int> value) => $67.PublishLabelRequest.fromBuffer(value),
+        ($69.Label value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.DisableLabelRequest, $69.Label>(
         'DisableLabel',
         disableLabel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.DisableLabelRequest.fromBuffer(value),
-        ($445.Label value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.EnableLabelRequest, $445.Label>(
+        ($core.List<$core.int> value) => $67.DisableLabelRequest.fromBuffer(value),
+        ($69.Label value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.EnableLabelRequest, $69.Label>(
         'EnableLabel',
         enableLabel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.EnableLabelRequest.fromBuffer(value),
-        ($445.Label value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.DeleteLabelRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $67.EnableLabelRequest.fromBuffer(value),
+        ($69.Label value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.DeleteLabelRequest, $3.Empty>(
         'DeleteLabel',
         deleteLabel_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.DeleteLabelRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $67.DeleteLabelRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.ListLabelPermissionsRequest, $443.ListLabelPermissionsResponse>(
+    $addMethod($grpc.ServiceMethod<$67.ListLabelPermissionsRequest, $67.ListLabelPermissionsResponse>(
         'ListLabelPermissions',
         listLabelPermissions_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.ListLabelPermissionsRequest.fromBuffer(value),
-        ($443.ListLabelPermissionsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.CreateLabelPermissionRequest, $447.LabelPermission>(
+        ($core.List<$core.int> value) => $67.ListLabelPermissionsRequest.fromBuffer(value),
+        ($67.ListLabelPermissionsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.CreateLabelPermissionRequest, $71.LabelPermission>(
         'CreateLabelPermission',
         createLabelPermission_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.CreateLabelPermissionRequest.fromBuffer(value),
-        ($447.LabelPermission value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.UpdateLabelPermissionRequest, $447.LabelPermission>(
+        ($core.List<$core.int> value) => $67.CreateLabelPermissionRequest.fromBuffer(value),
+        ($71.LabelPermission value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.UpdateLabelPermissionRequest, $71.LabelPermission>(
         'UpdateLabelPermission',
         updateLabelPermission_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.UpdateLabelPermissionRequest.fromBuffer(value),
-        ($447.LabelPermission value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.DeleteLabelPermissionRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $67.UpdateLabelPermissionRequest.fromBuffer(value),
+        ($71.LabelPermission value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.DeleteLabelPermissionRequest, $3.Empty>(
         'DeleteLabelPermission',
         deleteLabelPermission_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.DeleteLabelPermissionRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $67.DeleteLabelPermissionRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.BatchUpdateLabelPermissionsRequest, $443.BatchUpdateLabelPermissionsResponse>(
+    $addMethod($grpc.ServiceMethod<$67.BatchUpdateLabelPermissionsRequest, $67.BatchUpdateLabelPermissionsResponse>(
         'BatchUpdateLabelPermissions',
         batchUpdateLabelPermissions_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.BatchUpdateLabelPermissionsRequest.fromBuffer(value),
-        ($443.BatchUpdateLabelPermissionsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.BatchDeleteLabelPermissionsRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $67.BatchUpdateLabelPermissionsRequest.fromBuffer(value),
+        ($67.BatchUpdateLabelPermissionsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$67.BatchDeleteLabelPermissionsRequest, $3.Empty>(
         'BatchDeleteLabelPermissions',
         batchDeleteLabelPermissions_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.BatchDeleteLabelPermissionsRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $67.BatchDeleteLabelPermissionsRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$443.ListLabelLocksRequest, $443.ListLabelLocksResponse>(
+    $addMethod($grpc.ServiceMethod<$67.ListLabelLocksRequest, $67.ListLabelLocksResponse>(
         'ListLabelLocks',
         listLabelLocks_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $443.ListLabelLocksRequest.fromBuffer(value),
-        ($443.ListLabelLocksResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $67.ListLabelLocksRequest.fromBuffer(value),
+        ($67.ListLabelLocksResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$444.UserCapabilities> getUserCapabilities_Pre($grpc.ServiceCall call, $async.Future<$443.GetUserCapabilitiesRequest> request) async {
+  $async.Future<$68.UserCapabilities> getUserCapabilities_Pre($grpc.ServiceCall call, $async.Future<$67.GetUserCapabilitiesRequest> request) async {
     return getUserCapabilities(call, await request);
   }
 
-  $async.Future<$443.ListLabelsResponse> listLabels_Pre($grpc.ServiceCall call, $async.Future<$443.ListLabelsRequest> request) async {
+  $async.Future<$67.ListLabelsResponse> listLabels_Pre($grpc.ServiceCall call, $async.Future<$67.ListLabelsRequest> request) async {
     return listLabels(call, await request);
   }
 
-  $async.Future<$445.Label> getLabel_Pre($grpc.ServiceCall call, $async.Future<$443.GetLabelRequest> request) async {
+  $async.Future<$69.Label> getLabel_Pre($grpc.ServiceCall call, $async.Future<$67.GetLabelRequest> request) async {
     return getLabel(call, await request);
   }
 
-  $async.Future<$446.LabelLimits> getLabelLimits_Pre($grpc.ServiceCall call, $async.Future<$443.GetLabelLimitsRequest> request) async {
+  $async.Future<$70.LabelLimits> getLabelLimits_Pre($grpc.ServiceCall call, $async.Future<$67.GetLabelLimitsRequest> request) async {
     return getLabelLimits(call, await request);
   }
 
-  $async.Future<$445.Label> createLabel_Pre($grpc.ServiceCall call, $async.Future<$443.CreateLabelRequest> request) async {
+  $async.Future<$69.Label> createLabel_Pre($grpc.ServiceCall call, $async.Future<$67.CreateLabelRequest> request) async {
     return createLabel(call, await request);
   }
 
-  $async.Future<$443.DeltaUpdateLabelResponse> deltaUpdateLabel_Pre($grpc.ServiceCall call, $async.Future<$443.DeltaUpdateLabelRequest> request) async {
+  $async.Future<$67.DeltaUpdateLabelResponse> deltaUpdateLabel_Pre($grpc.ServiceCall call, $async.Future<$67.DeltaUpdateLabelRequest> request) async {
     return deltaUpdateLabel(call, await request);
   }
 
-  $async.Future<$445.Label> updateLabelCopyMode_Pre($grpc.ServiceCall call, $async.Future<$443.UpdateLabelCopyModeRequest> request) async {
+  $async.Future<$69.Label> updateLabelCopyMode_Pre($grpc.ServiceCall call, $async.Future<$67.UpdateLabelCopyModeRequest> request) async {
     return updateLabelCopyMode(call, await request);
   }
 
-  $async.Future<$445.Label> publishLabel_Pre($grpc.ServiceCall call, $async.Future<$443.PublishLabelRequest> request) async {
+  $async.Future<$69.Label> publishLabel_Pre($grpc.ServiceCall call, $async.Future<$67.PublishLabelRequest> request) async {
     return publishLabel(call, await request);
   }
 
-  $async.Future<$445.Label> disableLabel_Pre($grpc.ServiceCall call, $async.Future<$443.DisableLabelRequest> request) async {
+  $async.Future<$69.Label> disableLabel_Pre($grpc.ServiceCall call, $async.Future<$67.DisableLabelRequest> request) async {
     return disableLabel(call, await request);
   }
 
-  $async.Future<$445.Label> enableLabel_Pre($grpc.ServiceCall call, $async.Future<$443.EnableLabelRequest> request) async {
+  $async.Future<$69.Label> enableLabel_Pre($grpc.ServiceCall call, $async.Future<$67.EnableLabelRequest> request) async {
     return enableLabel(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteLabel_Pre($grpc.ServiceCall call, $async.Future<$443.DeleteLabelRequest> request) async {
+  $async.Future<$3.Empty> deleteLabel_Pre($grpc.ServiceCall call, $async.Future<$67.DeleteLabelRequest> request) async {
     return deleteLabel(call, await request);
   }
 
-  $async.Future<$443.ListLabelPermissionsResponse> listLabelPermissions_Pre($grpc.ServiceCall call, $async.Future<$443.ListLabelPermissionsRequest> request) async {
+  $async.Future<$67.ListLabelPermissionsResponse> listLabelPermissions_Pre($grpc.ServiceCall call, $async.Future<$67.ListLabelPermissionsRequest> request) async {
     return listLabelPermissions(call, await request);
   }
 
-  $async.Future<$447.LabelPermission> createLabelPermission_Pre($grpc.ServiceCall call, $async.Future<$443.CreateLabelPermissionRequest> request) async {
+  $async.Future<$71.LabelPermission> createLabelPermission_Pre($grpc.ServiceCall call, $async.Future<$67.CreateLabelPermissionRequest> request) async {
     return createLabelPermission(call, await request);
   }
 
-  $async.Future<$447.LabelPermission> updateLabelPermission_Pre($grpc.ServiceCall call, $async.Future<$443.UpdateLabelPermissionRequest> request) async {
+  $async.Future<$71.LabelPermission> updateLabelPermission_Pre($grpc.ServiceCall call, $async.Future<$67.UpdateLabelPermissionRequest> request) async {
     return updateLabelPermission(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteLabelPermission_Pre($grpc.ServiceCall call, $async.Future<$443.DeleteLabelPermissionRequest> request) async {
+  $async.Future<$3.Empty> deleteLabelPermission_Pre($grpc.ServiceCall call, $async.Future<$67.DeleteLabelPermissionRequest> request) async {
     return deleteLabelPermission(call, await request);
   }
 
-  $async.Future<$443.BatchUpdateLabelPermissionsResponse> batchUpdateLabelPermissions_Pre($grpc.ServiceCall call, $async.Future<$443.BatchUpdateLabelPermissionsRequest> request) async {
+  $async.Future<$67.BatchUpdateLabelPermissionsResponse> batchUpdateLabelPermissions_Pre($grpc.ServiceCall call, $async.Future<$67.BatchUpdateLabelPermissionsRequest> request) async {
     return batchUpdateLabelPermissions(call, await request);
   }
 
-  $async.Future<$3.Empty> batchDeleteLabelPermissions_Pre($grpc.ServiceCall call, $async.Future<$443.BatchDeleteLabelPermissionsRequest> request) async {
+  $async.Future<$3.Empty> batchDeleteLabelPermissions_Pre($grpc.ServiceCall call, $async.Future<$67.BatchDeleteLabelPermissionsRequest> request) async {
     return batchDeleteLabelPermissions(call, await request);
   }
 
-  $async.Future<$443.ListLabelLocksResponse> listLabelLocks_Pre($grpc.ServiceCall call, $async.Future<$443.ListLabelLocksRequest> request) async {
+  $async.Future<$67.ListLabelLocksResponse> listLabelLocks_Pre($grpc.ServiceCall call, $async.Future<$67.ListLabelLocksRequest> request) async {
     return listLabelLocks(call, await request);
   }
 
-  $async.Future<$444.UserCapabilities> getUserCapabilities($grpc.ServiceCall call, $443.GetUserCapabilitiesRequest request);
-  $async.Future<$443.ListLabelsResponse> listLabels($grpc.ServiceCall call, $443.ListLabelsRequest request);
-  $async.Future<$445.Label> getLabel($grpc.ServiceCall call, $443.GetLabelRequest request);
-  $async.Future<$446.LabelLimits> getLabelLimits($grpc.ServiceCall call, $443.GetLabelLimitsRequest request);
-  $async.Future<$445.Label> createLabel($grpc.ServiceCall call, $443.CreateLabelRequest request);
-  $async.Future<$443.DeltaUpdateLabelResponse> deltaUpdateLabel($grpc.ServiceCall call, $443.DeltaUpdateLabelRequest request);
-  $async.Future<$445.Label> updateLabelCopyMode($grpc.ServiceCall call, $443.UpdateLabelCopyModeRequest request);
-  $async.Future<$445.Label> publishLabel($grpc.ServiceCall call, $443.PublishLabelRequest request);
-  $async.Future<$445.Label> disableLabel($grpc.ServiceCall call, $443.DisableLabelRequest request);
-  $async.Future<$445.Label> enableLabel($grpc.ServiceCall call, $443.EnableLabelRequest request);
-  $async.Future<$3.Empty> deleteLabel($grpc.ServiceCall call, $443.DeleteLabelRequest request);
-  $async.Future<$443.ListLabelPermissionsResponse> listLabelPermissions($grpc.ServiceCall call, $443.ListLabelPermissionsRequest request);
-  $async.Future<$447.LabelPermission> createLabelPermission($grpc.ServiceCall call, $443.CreateLabelPermissionRequest request);
-  $async.Future<$447.LabelPermission> updateLabelPermission($grpc.ServiceCall call, $443.UpdateLabelPermissionRequest request);
-  $async.Future<$3.Empty> deleteLabelPermission($grpc.ServiceCall call, $443.DeleteLabelPermissionRequest request);
-  $async.Future<$443.BatchUpdateLabelPermissionsResponse> batchUpdateLabelPermissions($grpc.ServiceCall call, $443.BatchUpdateLabelPermissionsRequest request);
-  $async.Future<$3.Empty> batchDeleteLabelPermissions($grpc.ServiceCall call, $443.BatchDeleteLabelPermissionsRequest request);
-  $async.Future<$443.ListLabelLocksResponse> listLabelLocks($grpc.ServiceCall call, $443.ListLabelLocksRequest request);
+  $async.Future<$68.UserCapabilities> getUserCapabilities($grpc.ServiceCall call, $67.GetUserCapabilitiesRequest request);
+  $async.Future<$67.ListLabelsResponse> listLabels($grpc.ServiceCall call, $67.ListLabelsRequest request);
+  $async.Future<$69.Label> getLabel($grpc.ServiceCall call, $67.GetLabelRequest request);
+  $async.Future<$70.LabelLimits> getLabelLimits($grpc.ServiceCall call, $67.GetLabelLimitsRequest request);
+  $async.Future<$69.Label> createLabel($grpc.ServiceCall call, $67.CreateLabelRequest request);
+  $async.Future<$67.DeltaUpdateLabelResponse> deltaUpdateLabel($grpc.ServiceCall call, $67.DeltaUpdateLabelRequest request);
+  $async.Future<$69.Label> updateLabelCopyMode($grpc.ServiceCall call, $67.UpdateLabelCopyModeRequest request);
+  $async.Future<$69.Label> publishLabel($grpc.ServiceCall call, $67.PublishLabelRequest request);
+  $async.Future<$69.Label> disableLabel($grpc.ServiceCall call, $67.DisableLabelRequest request);
+  $async.Future<$69.Label> enableLabel($grpc.ServiceCall call, $67.EnableLabelRequest request);
+  $async.Future<$3.Empty> deleteLabel($grpc.ServiceCall call, $67.DeleteLabelRequest request);
+  $async.Future<$67.ListLabelPermissionsResponse> listLabelPermissions($grpc.ServiceCall call, $67.ListLabelPermissionsRequest request);
+  $async.Future<$71.LabelPermission> createLabelPermission($grpc.ServiceCall call, $67.CreateLabelPermissionRequest request);
+  $async.Future<$71.LabelPermission> updateLabelPermission($grpc.ServiceCall call, $67.UpdateLabelPermissionRequest request);
+  $async.Future<$3.Empty> deleteLabelPermission($grpc.ServiceCall call, $67.DeleteLabelPermissionRequest request);
+  $async.Future<$67.BatchUpdateLabelPermissionsResponse> batchUpdateLabelPermissions($grpc.ServiceCall call, $67.BatchUpdateLabelPermissionsRequest request);
+  $async.Future<$3.Empty> batchDeleteLabelPermissions($grpc.ServiceCall call, $67.BatchDeleteLabelPermissionsRequest request);
+  $async.Future<$67.ListLabelLocksResponse> listLabelLocks($grpc.ServiceCall call, $67.ListLabelLocksRequest request);
 }

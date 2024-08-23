@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../../protobuf/timestamp.pb.dart' as $299;
 import 'action.pbenum.dart';
-import 'actor.pb.dart' as $4201;
-import 'common.pb.dart' as $4202;
-import 'target.pb.dart' as $4203;
+import 'actor.pb.dart' as $383;
+import 'common.pb.dart' as $384;
+import 'target.pb.dart' as $385;
 
 export 'action.pbenum.dart';
 
@@ -32,10 +32,10 @@ enum Action_Time {
 class Action extends $pb.GeneratedMessage {
   factory Action({
     ActionDetail? detail,
-    $4201.Actor? actor,
-    $4203.Target? target,
-    $1776.Timestamp? timestamp,
-    $4202.TimeRange? timeRange,
+    $383.Actor? actor,
+    $385.Target? target,
+    $299.Timestamp? timestamp,
+    $384.TimeRange? timeRange,
   }) {
     final $result = create();
     if (detail != null) {
@@ -67,10 +67,10 @@ class Action extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Action', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
     ..oo(0, [5, 6])
     ..aOM<ActionDetail>(1, _omitFieldNames ? '' : 'detail', subBuilder: ActionDetail.create)
-    ..aOM<$4201.Actor>(3, _omitFieldNames ? '' : 'actor', subBuilder: $4201.Actor.create)
-    ..aOM<$4203.Target>(4, _omitFieldNames ? '' : 'target', subBuilder: $4203.Target.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'timestamp', subBuilder: $1776.Timestamp.create)
-    ..aOM<$4202.TimeRange>(6, _omitFieldNames ? '' : 'timeRange', subBuilder: $4202.TimeRange.create)
+    ..aOM<$383.Actor>(3, _omitFieldNames ? '' : 'actor', subBuilder: $383.Actor.create)
+    ..aOM<$385.Target>(4, _omitFieldNames ? '' : 'target', subBuilder: $385.Target.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'timestamp', subBuilder: $299.Timestamp.create)
+    ..aOM<$384.TimeRange>(6, _omitFieldNames ? '' : 'timeRange', subBuilder: $384.TimeRange.create)
     ..hasRequiredFields = false
   ;
 
@@ -113,52 +113,52 @@ class Action extends $pb.GeneratedMessage {
   /// The actor responsible for this action (or empty if all actors are
   /// responsible).
   @$pb.TagNumber(3)
-  $4201.Actor get actor => $_getN(1);
+  $383.Actor get actor => $_getN(1);
   @$pb.TagNumber(3)
-  set actor($4201.Actor v) { setField(3, v); }
+  set actor($383.Actor v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasActor() => $_has(1);
   @$pb.TagNumber(3)
   void clearActor() => clearField(3);
   @$pb.TagNumber(3)
-  $4201.Actor ensureActor() => $_ensure(1);
+  $383.Actor ensureActor() => $_ensure(1);
 
   /// The target this action affects (or empty if affecting all targets). This
   /// represents the state of the target immediately after this action occurred.
   @$pb.TagNumber(4)
-  $4203.Target get target => $_getN(2);
+  $385.Target get target => $_getN(2);
   @$pb.TagNumber(4)
-  set target($4203.Target v) { setField(4, v); }
+  set target($385.Target v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTarget() => $_has(2);
   @$pb.TagNumber(4)
   void clearTarget() => clearField(4);
   @$pb.TagNumber(4)
-  $4203.Target ensureTarget() => $_ensure(2);
+  $385.Target ensureTarget() => $_ensure(2);
 
   /// The action occurred at this specific time.
   @$pb.TagNumber(5)
-  $1776.Timestamp get timestamp => $_getN(3);
+  $299.Timestamp get timestamp => $_getN(3);
   @$pb.TagNumber(5)
-  set timestamp($1776.Timestamp v) { setField(5, v); }
+  set timestamp($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTimestamp() => $_has(3);
   @$pb.TagNumber(5)
   void clearTimestamp() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureTimestamp() => $_ensure(3);
+  $299.Timestamp ensureTimestamp() => $_ensure(3);
 
   /// The action occurred over this time range.
   @$pb.TagNumber(6)
-  $4202.TimeRange get timeRange => $_getN(4);
+  $384.TimeRange get timeRange => $_getN(4);
   @$pb.TagNumber(6)
-  set timeRange($4202.TimeRange v) { setField(6, v); }
+  set timeRange($384.TimeRange v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeRange() => $_has(4);
   @$pb.TagNumber(6)
   void clearTimeRange() => clearField(6);
   @$pb.TagNumber(6)
-  $4202.TimeRange ensureTimeRange() => $_ensure(4);
+  $384.TimeRange ensureTimeRange() => $_ensure(4);
 }
 
 enum ActionDetail_ActionDetail {
@@ -506,7 +506,7 @@ class Create_Upload extends $pb.GeneratedMessage {
 /// An object was created by copying an existing object.
 class Create_Copy extends $pb.GeneratedMessage {
   factory Create_Copy({
-    $4203.TargetReference? originalObject,
+    $385.TargetReference? originalObject,
   }) {
     final $result = create();
     if (originalObject != null) {
@@ -519,7 +519,7 @@ class Create_Copy extends $pb.GeneratedMessage {
   factory Create_Copy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Create.Copy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..aOM<$4203.TargetReference>(1, _omitFieldNames ? '' : 'originalObject', subBuilder: $4203.TargetReference.create)
+    ..aOM<$385.TargetReference>(1, _omitFieldNames ? '' : 'originalObject', subBuilder: $385.TargetReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -546,15 +546,15 @@ class Create_Copy extends $pb.GeneratedMessage {
 
   /// The original object.
   @$pb.TagNumber(1)
-  $4203.TargetReference get originalObject => $_getN(0);
+  $385.TargetReference get originalObject => $_getN(0);
   @$pb.TagNumber(1)
-  set originalObject($4203.TargetReference v) { setField(1, v); }
+  set originalObject($385.TargetReference v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOriginalObject() => $_has(0);
   @$pb.TagNumber(1)
   void clearOriginalObject() => clearField(1);
   @$pb.TagNumber(1)
-  $4203.TargetReference ensureOriginalObject() => $_ensure(0);
+  $385.TargetReference ensureOriginalObject() => $_ensure(0);
 }
 
 enum Create_Origin {
@@ -701,8 +701,8 @@ class Edit extends $pb.GeneratedMessage {
 /// An object was moved.
 class Move extends $pb.GeneratedMessage {
   factory Move({
-    $core.Iterable<$4203.TargetReference>? addedParents,
-    $core.Iterable<$4203.TargetReference>? removedParents,
+    $core.Iterable<$385.TargetReference>? addedParents,
+    $core.Iterable<$385.TargetReference>? removedParents,
   }) {
     final $result = create();
     if (addedParents != null) {
@@ -718,8 +718,8 @@ class Move extends $pb.GeneratedMessage {
   factory Move.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Move', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..pc<$4203.TargetReference>(1, _omitFieldNames ? '' : 'addedParents', $pb.PbFieldType.PM, subBuilder: $4203.TargetReference.create)
-    ..pc<$4203.TargetReference>(2, _omitFieldNames ? '' : 'removedParents', $pb.PbFieldType.PM, subBuilder: $4203.TargetReference.create)
+    ..pc<$385.TargetReference>(1, _omitFieldNames ? '' : 'addedParents', $pb.PbFieldType.PM, subBuilder: $385.TargetReference.create)
+    ..pc<$385.TargetReference>(2, _omitFieldNames ? '' : 'removedParents', $pb.PbFieldType.PM, subBuilder: $385.TargetReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -746,11 +746,11 @@ class Move extends $pb.GeneratedMessage {
 
   /// The added parent object(s).
   @$pb.TagNumber(1)
-  $core.List<$4203.TargetReference> get addedParents => $_getList(0);
+  $core.List<$385.TargetReference> get addedParents => $_getList(0);
 
   /// The removed parent object(s).
   @$pb.TagNumber(2)
-  $core.List<$4203.TargetReference> get removedParents => $_getList(1);
+  $core.List<$385.TargetReference> get removedParents => $_getList(1);
 }
 
 /// An object was renamed.
@@ -1024,9 +1024,9 @@ enum Permission_Scope {
 class Permission extends $pb.GeneratedMessage {
   factory Permission({
     Permission_Role? role,
-    $4201.User? user,
-    $4202.Group? group,
-    $4202.Domain? domain,
+    $383.User? user,
+    $384.Group? group,
+    $384.Domain? domain,
     Permission_Anyone? anyone,
     $core.bool? allowDiscovery,
   }) {
@@ -1065,9 +1065,9 @@ class Permission extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Permission', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5])
     ..e<Permission_Role>(1, _omitFieldNames ? '' : 'role', $pb.PbFieldType.OE, defaultOrMaker: Permission_Role.ROLE_UNSPECIFIED, valueOf: Permission_Role.valueOf, enumValues: Permission_Role.values)
-    ..aOM<$4201.User>(2, _omitFieldNames ? '' : 'user', subBuilder: $4201.User.create)
-    ..aOM<$4202.Group>(3, _omitFieldNames ? '' : 'group', subBuilder: $4202.Group.create)
-    ..aOM<$4202.Domain>(4, _omitFieldNames ? '' : 'domain', subBuilder: $4202.Domain.create)
+    ..aOM<$383.User>(2, _omitFieldNames ? '' : 'user', subBuilder: $383.User.create)
+    ..aOM<$384.Group>(3, _omitFieldNames ? '' : 'group', subBuilder: $384.Group.create)
+    ..aOM<$384.Domain>(4, _omitFieldNames ? '' : 'domain', subBuilder: $384.Domain.create)
     ..aOM<Permission_Anyone>(5, _omitFieldNames ? '' : 'anyone', subBuilder: Permission_Anyone.create)
     ..aOB(6, _omitFieldNames ? '' : 'allowDiscovery')
     ..hasRequiredFields = false
@@ -1112,39 +1112,39 @@ class Permission extends $pb.GeneratedMessage {
 
   /// The user to whom this permission applies.
   @$pb.TagNumber(2)
-  $4201.User get user => $_getN(1);
+  $383.User get user => $_getN(1);
   @$pb.TagNumber(2)
-  set user($4201.User v) { setField(2, v); }
+  set user($383.User v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUser() => $_has(1);
   @$pb.TagNumber(2)
   void clearUser() => clearField(2);
   @$pb.TagNumber(2)
-  $4201.User ensureUser() => $_ensure(1);
+  $383.User ensureUser() => $_ensure(1);
 
   /// The group to whom this permission applies.
   @$pb.TagNumber(3)
-  $4202.Group get group => $_getN(2);
+  $384.Group get group => $_getN(2);
   @$pb.TagNumber(3)
-  set group($4202.Group v) { setField(3, v); }
+  set group($384.Group v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGroup() => $_has(2);
   @$pb.TagNumber(3)
   void clearGroup() => clearField(3);
   @$pb.TagNumber(3)
-  $4202.Group ensureGroup() => $_ensure(2);
+  $384.Group ensureGroup() => $_ensure(2);
 
   /// The domain to whom this permission applies.
   @$pb.TagNumber(4)
-  $4202.Domain get domain => $_getN(3);
+  $384.Domain get domain => $_getN(3);
   @$pb.TagNumber(4)
-  set domain($4202.Domain v) { setField(4, v); }
+  set domain($384.Domain v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDomain() => $_has(3);
   @$pb.TagNumber(4)
   void clearDomain() => clearField(4);
   @$pb.TagNumber(4)
-  $4202.Domain ensureDomain() => $_ensure(3);
+  $384.Domain ensureDomain() => $_ensure(3);
 
   /// If set, this permission applies to anyone, even logged out users.
   @$pb.TagNumber(5)
@@ -1226,7 +1226,7 @@ class Comment_Post extends $pb.GeneratedMessage {
 class Comment_Assignment extends $pb.GeneratedMessage {
   factory Comment_Assignment({
     Comment_Assignment_Subtype? subtype,
-    $4201.User? assignedUser,
+    $383.User? assignedUser,
   }) {
     final $result = create();
     if (subtype != null) {
@@ -1243,7 +1243,7 @@ class Comment_Assignment extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Comment.Assignment', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
     ..e<Comment_Assignment_Subtype>(1, _omitFieldNames ? '' : 'subtype', $pb.PbFieldType.OE, defaultOrMaker: Comment_Assignment_Subtype.SUBTYPE_UNSPECIFIED, valueOf: Comment_Assignment_Subtype.valueOf, enumValues: Comment_Assignment_Subtype.values)
-    ..aOM<$4201.User>(7, _omitFieldNames ? '' : 'assignedUser', subBuilder: $4201.User.create)
+    ..aOM<$383.User>(7, _omitFieldNames ? '' : 'assignedUser', subBuilder: $383.User.create)
     ..hasRequiredFields = false
   ;
 
@@ -1280,15 +1280,15 @@ class Comment_Assignment extends $pb.GeneratedMessage {
 
   /// The user to whom the comment was assigned.
   @$pb.TagNumber(7)
-  $4201.User get assignedUser => $_getN(1);
+  $383.User get assignedUser => $_getN(1);
   @$pb.TagNumber(7)
-  set assignedUser($4201.User v) { setField(7, v); }
+  set assignedUser($383.User v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAssignedUser() => $_has(1);
   @$pb.TagNumber(7)
   void clearAssignedUser() => clearField(7);
   @$pb.TagNumber(7)
-  $4201.User ensureAssignedUser() => $_ensure(1);
+  $383.User ensureAssignedUser() => $_ensure(1);
 }
 
 /// A suggestion.
@@ -1356,7 +1356,7 @@ class Comment extends $pb.GeneratedMessage {
     Comment_Post? post,
     Comment_Assignment? assignment,
     Comment_Suggestion? suggestion,
-    $core.Iterable<$4201.User>? mentionedUsers,
+    $core.Iterable<$383.User>? mentionedUsers,
   }) {
     final $result = create();
     if (post != null) {
@@ -1388,7 +1388,7 @@ class Comment extends $pb.GeneratedMessage {
     ..aOM<Comment_Post>(1, _omitFieldNames ? '' : 'post', subBuilder: Comment_Post.create)
     ..aOM<Comment_Assignment>(2, _omitFieldNames ? '' : 'assignment', subBuilder: Comment_Assignment.create)
     ..aOM<Comment_Suggestion>(3, _omitFieldNames ? '' : 'suggestion', subBuilder: Comment_Suggestion.create)
-    ..pc<$4201.User>(7, _omitFieldNames ? '' : 'mentionedUsers', $pb.PbFieldType.PM, subBuilder: $4201.User.create)
+    ..pc<$383.User>(7, _omitFieldNames ? '' : 'mentionedUsers', $pb.PbFieldType.PM, subBuilder: $383.User.create)
     ..hasRequiredFields = false
   ;
 
@@ -1454,7 +1454,7 @@ class Comment extends $pb.GeneratedMessage {
 
   /// Users who are mentioned in this comment.
   @$pb.TagNumber(7)
-  $core.List<$4201.User> get mentionedUsers => $_getList(3);
+  $core.List<$383.User> get mentionedUsers => $_getList(3);
 }
 
 /// A change in the object's data leak prevention status.
@@ -2039,7 +2039,7 @@ class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Us
 /// Wrapper for Date Field value.
 class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date extends $pb.GeneratedMessage {
   factory AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date({
-    $1776.Timestamp? value,
+    $299.Timestamp? value,
   }) {
     final $result = create();
     if (value != null) {
@@ -2052,7 +2052,7 @@ class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Da
   factory AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Date.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppliedLabelChange.AppliedLabelChangeDetail.FieldValueChange.FieldValue.Date', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'value', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(1, _omitFieldNames ? '' : 'value', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -2079,15 +2079,15 @@ class AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Da
 
   /// Date value.
   @$pb.TagNumber(1)
-  $1776.Timestamp get value => $_getN(0);
+  $299.Timestamp get value => $_getN(0);
   @$pb.TagNumber(1)
-  set value($1776.Timestamp v) { setField(1, v); }
+  set value($299.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
   void clearValue() => clearField(1);
   @$pb.TagNumber(1)
-  $1776.Timestamp ensureValue() => $_ensure(0);
+  $299.Timestamp ensureValue() => $_ensure(0);
 }
 
 enum AppliedLabelChange_AppliedLabelChangeDetail_FieldValueChange_FieldValue_Value {

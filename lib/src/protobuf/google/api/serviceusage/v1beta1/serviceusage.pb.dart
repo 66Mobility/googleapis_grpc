@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2210;
-import 'resources.pb.dart' as $423;
-import 'resources.pbenum.dart' as $423;
+import '../../../protobuf/field_mask.pb.dart' as $330;
+import 'resources.pb.dart' as $47;
+import 'resources.pbenum.dart' as $47;
 import 'serviceusage.pbenum.dart';
 
 export 'serviceusage.pbenum.dart';
@@ -304,7 +304,7 @@ class ListServicesRequest extends $pb.GeneratedMessage {
 /// Response message for the `ListServices` method.
 class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse({
-    $core.Iterable<$423.Service>? services,
+    $core.Iterable<$47.Service>? services,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -321,7 +321,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListServicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $423.Service.create)
+    ..pc<$47.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $47.Service.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -349,7 +349,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 
   /// The available services for the requested project.
   @$pb.TagNumber(1)
-  $core.List<$423.Service> get services => $_getList(0);
+  $core.List<$47.Service> get services => $_getList(0);
 
   /// Token that can be passed to `ListServices` to resume a paginated
   /// query.
@@ -449,7 +449,7 @@ class ListConsumerQuotaMetricsRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.int? pageSize,
     $core.String? pageToken,
-    $423.QuotaView? view,
+    $47.QuotaView? view,
   }) {
     final $result = create();
     if (parent != null) {
@@ -474,7 +474,7 @@ class ListConsumerQuotaMetricsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..e<$423.QuotaView>(4, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $423.QuotaView.QUOTA_VIEW_UNSPECIFIED, valueOf: $423.QuotaView.valueOf, enumValues: $423.QuotaView.values)
+    ..e<$47.QuotaView>(4, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $47.QuotaView.QUOTA_VIEW_UNSPECIFIED, valueOf: $47.QuotaView.valueOf, enumValues: $47.QuotaView.values)
     ..hasRequiredFields = false
   ;
 
@@ -537,9 +537,9 @@ class ListConsumerQuotaMetricsRequest extends $pb.GeneratedMessage {
 
   /// Specifies the level of detail for quota information in the response.
   @$pb.TagNumber(4)
-  $423.QuotaView get view => $_getN(3);
+  $47.QuotaView get view => $_getN(3);
   @$pb.TagNumber(4)
-  set view($423.QuotaView v) { setField(4, v); }
+  set view($47.QuotaView v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasView() => $_has(3);
   @$pb.TagNumber(4)
@@ -549,7 +549,7 @@ class ListConsumerQuotaMetricsRequest extends $pb.GeneratedMessage {
 /// Response message for ListConsumerQuotaMetrics
 class ListConsumerQuotaMetricsResponse extends $pb.GeneratedMessage {
   factory ListConsumerQuotaMetricsResponse({
-    $core.Iterable<$423.ConsumerQuotaMetric>? metrics,
+    $core.Iterable<$47.ConsumerQuotaMetric>? metrics,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -566,7 +566,7 @@ class ListConsumerQuotaMetricsResponse extends $pb.GeneratedMessage {
   factory ListConsumerQuotaMetricsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListConsumerQuotaMetricsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.ConsumerQuotaMetric>(1, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $423.ConsumerQuotaMetric.create)
+    ..pc<$47.ConsumerQuotaMetric>(1, _omitFieldNames ? '' : 'metrics', $pb.PbFieldType.PM, subBuilder: $47.ConsumerQuotaMetric.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -594,7 +594,7 @@ class ListConsumerQuotaMetricsResponse extends $pb.GeneratedMessage {
 
   /// Quota settings for the consumer, organized by quota metric.
   @$pb.TagNumber(1)
-  $core.List<$423.ConsumerQuotaMetric> get metrics => $_getList(0);
+  $core.List<$47.ConsumerQuotaMetric> get metrics => $_getList(0);
 
   /// Token identifying which result to start with; returned by a previous list
   /// call.
@@ -612,7 +612,7 @@ class ListConsumerQuotaMetricsResponse extends $pb.GeneratedMessage {
 class GetConsumerQuotaMetricRequest extends $pb.GeneratedMessage {
   factory GetConsumerQuotaMetricRequest({
     $core.String? name,
-    $423.QuotaView? view,
+    $47.QuotaView? view,
   }) {
     final $result = create();
     if (name != null) {
@@ -629,7 +629,7 @@ class GetConsumerQuotaMetricRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetConsumerQuotaMetricRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<$423.QuotaView>(2, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $423.QuotaView.QUOTA_VIEW_UNSPECIFIED, valueOf: $423.QuotaView.valueOf, enumValues: $423.QuotaView.values)
+    ..e<$47.QuotaView>(2, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $47.QuotaView.QUOTA_VIEW_UNSPECIFIED, valueOf: $47.QuotaView.valueOf, enumValues: $47.QuotaView.values)
     ..hasRequiredFields = false
   ;
 
@@ -669,9 +669,9 @@ class GetConsumerQuotaMetricRequest extends $pb.GeneratedMessage {
 
   /// Specifies the level of detail for quota information in the response.
   @$pb.TagNumber(2)
-  $423.QuotaView get view => $_getN(1);
+  $47.QuotaView get view => $_getN(1);
   @$pb.TagNumber(2)
-  set view($423.QuotaView v) { setField(2, v); }
+  set view($47.QuotaView v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasView() => $_has(1);
   @$pb.TagNumber(2)
@@ -682,7 +682,7 @@ class GetConsumerQuotaMetricRequest extends $pb.GeneratedMessage {
 class GetConsumerQuotaLimitRequest extends $pb.GeneratedMessage {
   factory GetConsumerQuotaLimitRequest({
     $core.String? name,
-    $423.QuotaView? view,
+    $47.QuotaView? view,
   }) {
     final $result = create();
     if (name != null) {
@@ -699,7 +699,7 @@ class GetConsumerQuotaLimitRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetConsumerQuotaLimitRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<$423.QuotaView>(2, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $423.QuotaView.QUOTA_VIEW_UNSPECIFIED, valueOf: $423.QuotaView.valueOf, enumValues: $423.QuotaView.values)
+    ..e<$47.QuotaView>(2, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: $47.QuotaView.QUOTA_VIEW_UNSPECIFIED, valueOf: $47.QuotaView.valueOf, enumValues: $47.QuotaView.values)
     ..hasRequiredFields = false
   ;
 
@@ -739,9 +739,9 @@ class GetConsumerQuotaLimitRequest extends $pb.GeneratedMessage {
 
   /// Specifies the level of detail for quota information in the response.
   @$pb.TagNumber(2)
-  $423.QuotaView get view => $_getN(1);
+  $47.QuotaView get view => $_getN(1);
   @$pb.TagNumber(2)
-  set view($423.QuotaView v) { setField(2, v); }
+  set view($47.QuotaView v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasView() => $_has(1);
   @$pb.TagNumber(2)
@@ -752,9 +752,9 @@ class GetConsumerQuotaLimitRequest extends $pb.GeneratedMessage {
 class CreateAdminOverrideRequest extends $pb.GeneratedMessage {
   factory CreateAdminOverrideRequest({
     $core.String? parent,
-    $423.QuotaOverride? override,
+    $47.QuotaOverride? override,
     $core.bool? force,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (parent != null) {
@@ -777,9 +777,9 @@ class CreateAdminOverrideRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAdminOverrideRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$423.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $423.QuotaOverride.create)
+    ..aOM<$47.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $47.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..pc<$423.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..pc<$47.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -820,15 +820,15 @@ class CreateAdminOverrideRequest extends $pb.GeneratedMessage {
 
   /// The admin override to create.
   @$pb.TagNumber(2)
-  $423.QuotaOverride get override => $_getN(1);
+  $47.QuotaOverride get override => $_getN(1);
   @$pb.TagNumber(2)
-  set override($423.QuotaOverride v) { setField(2, v); }
+  set override($47.QuotaOverride v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOverride() => $_has(1);
   @$pb.TagNumber(2)
   void clearOverride() => clearField(2);
   @$pb.TagNumber(2)
-  $423.QuotaOverride ensureOverride() => $_ensure(1);
+  $47.QuotaOverride ensureOverride() => $_ensure(1);
 
   /// Whether to force the creation of the quota override.
   /// Setting the force parameter to 'true' ignores all quota safety checks that
@@ -847,17 +847,17 @@ class CreateAdminOverrideRequest extends $pb.GeneratedMessage {
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(4)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(3);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(3);
 }
 
 /// Request message for UpdateAdminOverride.
 class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
   factory UpdateAdminOverrideRequest({
     $core.String? name,
-    $423.QuotaOverride? override,
+    $47.QuotaOverride? override,
     $core.bool? force,
-    $2210.FieldMask? updateMask,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $330.FieldMask? updateMask,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (name != null) {
@@ -883,10 +883,10 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAdminOverrideRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$423.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $423.QuotaOverride.create)
+    ..aOM<$47.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $47.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
-    ..pc<$423.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..aOM<$330.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..pc<$47.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -927,15 +927,15 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
   /// The new override.
   /// Only the override_value is updated; all other fields are ignored.
   @$pb.TagNumber(2)
-  $423.QuotaOverride get override => $_getN(1);
+  $47.QuotaOverride get override => $_getN(1);
   @$pb.TagNumber(2)
-  set override($423.QuotaOverride v) { setField(2, v); }
+  set override($47.QuotaOverride v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOverride() => $_has(1);
   @$pb.TagNumber(2)
   void clearOverride() => clearField(2);
   @$pb.TagNumber(2)
-  $423.QuotaOverride ensureOverride() => $_ensure(1);
+  $47.QuotaOverride ensureOverride() => $_ensure(1);
 
   /// Whether to force the update of the quota override.
   /// Setting the force parameter to 'true' ignores all quota safety checks that
@@ -952,22 +952,22 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
   /// Update only the specified fields of the override.
   /// If unset, all fields will be updated.
   @$pb.TagNumber(4)
-  $2210.FieldMask get updateMask => $_getN(3);
+  $330.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2210.FieldMask v) { setField(4, v); }
+  set updateMask($330.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
+  $330.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The list of quota safety checks to ignore before the override mutation.
   /// Unlike 'force' field that ignores all the quota safety checks, the
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(5)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(4);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(4);
 }
 
 /// Request message for DeleteAdminOverride.
@@ -975,7 +975,7 @@ class DeleteAdminOverrideRequest extends $pb.GeneratedMessage {
   factory DeleteAdminOverrideRequest({
     $core.String? name,
     $core.bool? force,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (name != null) {
@@ -996,7 +996,7 @@ class DeleteAdminOverrideRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteAdminOverrideRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'force')
-    ..pc<$423.QuotaSafetyCheck>(3, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..pc<$47.QuotaSafetyCheck>(3, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -1051,7 +1051,7 @@ class DeleteAdminOverrideRequest extends $pb.GeneratedMessage {
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(3)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(2);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(2);
 }
 
 /// Request message for ListAdminOverrides
@@ -1144,7 +1144,7 @@ class ListAdminOverridesRequest extends $pb.GeneratedMessage {
 /// Response message for ListAdminOverrides.
 class ListAdminOverridesResponse extends $pb.GeneratedMessage {
   factory ListAdminOverridesResponse({
-    $core.Iterable<$423.QuotaOverride>? overrides,
+    $core.Iterable<$47.QuotaOverride>? overrides,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1161,7 +1161,7 @@ class ListAdminOverridesResponse extends $pb.GeneratedMessage {
   factory ListAdminOverridesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAdminOverridesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $423.QuotaOverride.create)
+    ..pc<$47.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $47.QuotaOverride.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1189,7 +1189,7 @@ class ListAdminOverridesResponse extends $pb.GeneratedMessage {
 
   /// Admin overrides on this limit.
   @$pb.TagNumber(1)
-  $core.List<$423.QuotaOverride> get overrides => $_getList(0);
+  $core.List<$47.QuotaOverride> get overrides => $_getList(0);
 
   /// Token identifying which result to start with; returned by a previous list
   /// call.
@@ -1206,7 +1206,7 @@ class ListAdminOverridesResponse extends $pb.GeneratedMessage {
 /// Response message for BatchCreateAdminOverrides
 class BatchCreateAdminOverridesResponse extends $pb.GeneratedMessage {
   factory BatchCreateAdminOverridesResponse({
-    $core.Iterable<$423.QuotaOverride>? overrides,
+    $core.Iterable<$47.QuotaOverride>? overrides,
   }) {
     final $result = create();
     if (overrides != null) {
@@ -1219,7 +1219,7 @@ class BatchCreateAdminOverridesResponse extends $pb.GeneratedMessage {
   factory BatchCreateAdminOverridesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateAdminOverridesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $423.QuotaOverride.create)
+    ..pc<$47.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $47.QuotaOverride.create)
     ..hasRequiredFields = false
   ;
 
@@ -1246,7 +1246,7 @@ class BatchCreateAdminOverridesResponse extends $pb.GeneratedMessage {
 
   /// The overrides that were created.
   @$pb.TagNumber(1)
-  $core.List<$423.QuotaOverride> get overrides => $_getList(0);
+  $core.List<$47.QuotaOverride> get overrides => $_getList(0);
 }
 
 enum ImportAdminOverridesRequest_Source {
@@ -1258,9 +1258,9 @@ enum ImportAdminOverridesRequest_Source {
 class ImportAdminOverridesRequest extends $pb.GeneratedMessage {
   factory ImportAdminOverridesRequest({
     $core.String? parent,
-    $423.OverrideInlineSource? inlineSource,
+    $47.OverrideInlineSource? inlineSource,
     $core.bool? force,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1288,9 +1288,9 @@ class ImportAdminOverridesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportAdminOverridesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$423.OverrideInlineSource>(2, _omitFieldNames ? '' : 'inlineSource', subBuilder: $423.OverrideInlineSource.create)
+    ..aOM<$47.OverrideInlineSource>(2, _omitFieldNames ? '' : 'inlineSource', subBuilder: $47.OverrideInlineSource.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..pc<$423.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..pc<$47.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -1333,15 +1333,15 @@ class ImportAdminOverridesRequest extends $pb.GeneratedMessage {
 
   /// The import data is specified in the request message itself
   @$pb.TagNumber(2)
-  $423.OverrideInlineSource get inlineSource => $_getN(1);
+  $47.OverrideInlineSource get inlineSource => $_getN(1);
   @$pb.TagNumber(2)
-  set inlineSource($423.OverrideInlineSource v) { setField(2, v); }
+  set inlineSource($47.OverrideInlineSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInlineSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearInlineSource() => clearField(2);
   @$pb.TagNumber(2)
-  $423.OverrideInlineSource ensureInlineSource() => $_ensure(1);
+  $47.OverrideInlineSource ensureInlineSource() => $_ensure(1);
 
   /// Whether to force the creation of the quota overrides.
   /// Setting the force parameter to 'true' ignores all quota safety checks that
@@ -1360,13 +1360,13 @@ class ImportAdminOverridesRequest extends $pb.GeneratedMessage {
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(4)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(3);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(3);
 }
 
 /// Response message for ImportAdminOverrides
 class ImportAdminOverridesResponse extends $pb.GeneratedMessage {
   factory ImportAdminOverridesResponse({
-    $core.Iterable<$423.QuotaOverride>? overrides,
+    $core.Iterable<$47.QuotaOverride>? overrides,
   }) {
     final $result = create();
     if (overrides != null) {
@@ -1379,7 +1379,7 @@ class ImportAdminOverridesResponse extends $pb.GeneratedMessage {
   factory ImportAdminOverridesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportAdminOverridesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $423.QuotaOverride.create)
+    ..pc<$47.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $47.QuotaOverride.create)
     ..hasRequiredFields = false
   ;
 
@@ -1406,7 +1406,7 @@ class ImportAdminOverridesResponse extends $pb.GeneratedMessage {
 
   /// The overrides that were created from the imported data.
   @$pb.TagNumber(1)
-  $core.List<$423.QuotaOverride> get overrides => $_getList(0);
+  $core.List<$47.QuotaOverride> get overrides => $_getList(0);
 }
 
 /// Metadata message that provides information such as progress,
@@ -1448,9 +1448,9 @@ class ImportAdminOverridesMetadata extends $pb.GeneratedMessage {
 class CreateConsumerOverrideRequest extends $pb.GeneratedMessage {
   factory CreateConsumerOverrideRequest({
     $core.String? parent,
-    $423.QuotaOverride? override,
+    $47.QuotaOverride? override,
     $core.bool? force,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1473,9 +1473,9 @@ class CreateConsumerOverrideRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateConsumerOverrideRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$423.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $423.QuotaOverride.create)
+    ..aOM<$47.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $47.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..pc<$423.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..pc<$47.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -1516,15 +1516,15 @@ class CreateConsumerOverrideRequest extends $pb.GeneratedMessage {
 
   /// The override to create.
   @$pb.TagNumber(2)
-  $423.QuotaOverride get override => $_getN(1);
+  $47.QuotaOverride get override => $_getN(1);
   @$pb.TagNumber(2)
-  set override($423.QuotaOverride v) { setField(2, v); }
+  set override($47.QuotaOverride v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOverride() => $_has(1);
   @$pb.TagNumber(2)
   void clearOverride() => clearField(2);
   @$pb.TagNumber(2)
-  $423.QuotaOverride ensureOverride() => $_ensure(1);
+  $47.QuotaOverride ensureOverride() => $_ensure(1);
 
   /// Whether to force the creation of the quota override.
   /// Setting the force parameter to 'true' ignores all quota safety checks that
@@ -1543,17 +1543,17 @@ class CreateConsumerOverrideRequest extends $pb.GeneratedMessage {
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(4)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(3);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(3);
 }
 
 /// Request message for UpdateConsumerOverride.
 class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
   factory UpdateConsumerOverrideRequest({
     $core.String? name,
-    $423.QuotaOverride? override,
+    $47.QuotaOverride? override,
     $core.bool? force,
-    $2210.FieldMask? updateMask,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $330.FieldMask? updateMask,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (name != null) {
@@ -1579,10 +1579,10 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateConsumerOverrideRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$423.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $423.QuotaOverride.create)
+    ..aOM<$47.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $47.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..aOM<$2210.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
-    ..pc<$423.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..aOM<$330.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..pc<$47.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -1623,15 +1623,15 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
   /// The new override.
   /// Only the override_value is updated; all other fields are ignored.
   @$pb.TagNumber(2)
-  $423.QuotaOverride get override => $_getN(1);
+  $47.QuotaOverride get override => $_getN(1);
   @$pb.TagNumber(2)
-  set override($423.QuotaOverride v) { setField(2, v); }
+  set override($47.QuotaOverride v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOverride() => $_has(1);
   @$pb.TagNumber(2)
   void clearOverride() => clearField(2);
   @$pb.TagNumber(2)
-  $423.QuotaOverride ensureOverride() => $_ensure(1);
+  $47.QuotaOverride ensureOverride() => $_ensure(1);
 
   /// Whether to force the update of the quota override.
   /// Setting the force parameter to 'true' ignores all quota safety checks that
@@ -1648,22 +1648,22 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
   /// Update only the specified fields of the override.
   /// If unset, all fields will be updated.
   @$pb.TagNumber(4)
-  $2210.FieldMask get updateMask => $_getN(3);
+  $330.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($2210.FieldMask v) { setField(4, v); }
+  set updateMask($330.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(3);
+  $330.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The list of quota safety checks to ignore before the override mutation.
   /// Unlike 'force' field that ignores all the quota safety checks, the
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(5)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(4);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(4);
 }
 
 /// Request message for DeleteConsumerOverride.
@@ -1671,7 +1671,7 @@ class DeleteConsumerOverrideRequest extends $pb.GeneratedMessage {
   factory DeleteConsumerOverrideRequest({
     $core.String? name,
     $core.bool? force,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (name != null) {
@@ -1692,7 +1692,7 @@ class DeleteConsumerOverrideRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteConsumerOverrideRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOB(2, _omitFieldNames ? '' : 'force')
-    ..pc<$423.QuotaSafetyCheck>(3, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..pc<$47.QuotaSafetyCheck>(3, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -1747,7 +1747,7 @@ class DeleteConsumerOverrideRequest extends $pb.GeneratedMessage {
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(3)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(2);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(2);
 }
 
 /// Request message for ListConsumerOverrides
@@ -1840,7 +1840,7 @@ class ListConsumerOverridesRequest extends $pb.GeneratedMessage {
 /// Response message for ListConsumerOverrides.
 class ListConsumerOverridesResponse extends $pb.GeneratedMessage {
   factory ListConsumerOverridesResponse({
-    $core.Iterable<$423.QuotaOverride>? overrides,
+    $core.Iterable<$47.QuotaOverride>? overrides,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1857,7 +1857,7 @@ class ListConsumerOverridesResponse extends $pb.GeneratedMessage {
   factory ListConsumerOverridesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListConsumerOverridesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $423.QuotaOverride.create)
+    ..pc<$47.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $47.QuotaOverride.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1885,7 +1885,7 @@ class ListConsumerOverridesResponse extends $pb.GeneratedMessage {
 
   /// Consumer overrides on this limit.
   @$pb.TagNumber(1)
-  $core.List<$423.QuotaOverride> get overrides => $_getList(0);
+  $core.List<$47.QuotaOverride> get overrides => $_getList(0);
 
   /// Token identifying which result to start with; returned by a previous list
   /// call.
@@ -1902,7 +1902,7 @@ class ListConsumerOverridesResponse extends $pb.GeneratedMessage {
 /// Response message for BatchCreateConsumerOverrides
 class BatchCreateConsumerOverridesResponse extends $pb.GeneratedMessage {
   factory BatchCreateConsumerOverridesResponse({
-    $core.Iterable<$423.QuotaOverride>? overrides,
+    $core.Iterable<$47.QuotaOverride>? overrides,
   }) {
     final $result = create();
     if (overrides != null) {
@@ -1915,7 +1915,7 @@ class BatchCreateConsumerOverridesResponse extends $pb.GeneratedMessage {
   factory BatchCreateConsumerOverridesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchCreateConsumerOverridesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $423.QuotaOverride.create)
+    ..pc<$47.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $47.QuotaOverride.create)
     ..hasRequiredFields = false
   ;
 
@@ -1942,7 +1942,7 @@ class BatchCreateConsumerOverridesResponse extends $pb.GeneratedMessage {
 
   /// The overrides that were created.
   @$pb.TagNumber(1)
-  $core.List<$423.QuotaOverride> get overrides => $_getList(0);
+  $core.List<$47.QuotaOverride> get overrides => $_getList(0);
 }
 
 enum ImportConsumerOverridesRequest_Source {
@@ -1954,9 +1954,9 @@ enum ImportConsumerOverridesRequest_Source {
 class ImportConsumerOverridesRequest extends $pb.GeneratedMessage {
   factory ImportConsumerOverridesRequest({
     $core.String? parent,
-    $423.OverrideInlineSource? inlineSource,
+    $47.OverrideInlineSource? inlineSource,
     $core.bool? force,
-    $core.Iterable<$423.QuotaSafetyCheck>? forceOnly,
+    $core.Iterable<$47.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
     if (parent != null) {
@@ -1984,9 +1984,9 @@ class ImportConsumerOverridesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportConsumerOverridesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$423.OverrideInlineSource>(2, _omitFieldNames ? '' : 'inlineSource', subBuilder: $423.OverrideInlineSource.create)
+    ..aOM<$47.OverrideInlineSource>(2, _omitFieldNames ? '' : 'inlineSource', subBuilder: $47.OverrideInlineSource.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..pc<$423.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $423.QuotaSafetyCheck.valueOf, enumValues: $423.QuotaSafetyCheck.values, defaultEnumValue: $423.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..pc<$47.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $47.QuotaSafetyCheck.valueOf, enumValues: $47.QuotaSafetyCheck.values, defaultEnumValue: $47.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -2029,15 +2029,15 @@ class ImportConsumerOverridesRequest extends $pb.GeneratedMessage {
 
   /// The import data is specified in the request message itself
   @$pb.TagNumber(2)
-  $423.OverrideInlineSource get inlineSource => $_getN(1);
+  $47.OverrideInlineSource get inlineSource => $_getN(1);
   @$pb.TagNumber(2)
-  set inlineSource($423.OverrideInlineSource v) { setField(2, v); }
+  set inlineSource($47.OverrideInlineSource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInlineSource() => $_has(1);
   @$pb.TagNumber(2)
   void clearInlineSource() => clearField(2);
   @$pb.TagNumber(2)
-  $423.OverrideInlineSource ensureInlineSource() => $_ensure(1);
+  $47.OverrideInlineSource ensureInlineSource() => $_ensure(1);
 
   /// Whether to force the creation of the quota overrides.
   /// Setting the force parameter to 'true' ignores all quota safety checks that
@@ -2056,13 +2056,13 @@ class ImportConsumerOverridesRequest extends $pb.GeneratedMessage {
   /// 'force_only' field ignores only the specified checks; other checks are
   /// still enforced. The 'force' and 'force_only' fields cannot both be set.
   @$pb.TagNumber(4)
-  $core.List<$423.QuotaSafetyCheck> get forceOnly => $_getList(3);
+  $core.List<$47.QuotaSafetyCheck> get forceOnly => $_getList(3);
 }
 
 /// Response message for ImportConsumerOverrides
 class ImportConsumerOverridesResponse extends $pb.GeneratedMessage {
   factory ImportConsumerOverridesResponse({
-    $core.Iterable<$423.QuotaOverride>? overrides,
+    $core.Iterable<$47.QuotaOverride>? overrides,
   }) {
     final $result = create();
     if (overrides != null) {
@@ -2075,7 +2075,7 @@ class ImportConsumerOverridesResponse extends $pb.GeneratedMessage {
   factory ImportConsumerOverridesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportConsumerOverridesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $423.QuotaOverride.create)
+    ..pc<$47.QuotaOverride>(1, _omitFieldNames ? '' : 'overrides', $pb.PbFieldType.PM, subBuilder: $47.QuotaOverride.create)
     ..hasRequiredFields = false
   ;
 
@@ -2102,7 +2102,7 @@ class ImportConsumerOverridesResponse extends $pb.GeneratedMessage {
 
   /// The overrides that were created from the imported data.
   @$pb.TagNumber(1)
-  $core.List<$423.QuotaOverride> get overrides => $_getList(0);
+  $core.List<$47.QuotaOverride> get overrides => $_getList(0);
 }
 
 /// Metadata message that provides information such as progress,
@@ -2143,7 +2143,7 @@ class ImportConsumerOverridesMetadata extends $pb.GeneratedMessage {
 /// Response message for ImportAdminQuotaPolicies
 class ImportAdminQuotaPoliciesResponse extends $pb.GeneratedMessage {
   factory ImportAdminQuotaPoliciesResponse({
-    $core.Iterable<$423.AdminQuotaPolicy>? policies,
+    $core.Iterable<$47.AdminQuotaPolicy>? policies,
   }) {
     final $result = create();
     if (policies != null) {
@@ -2156,7 +2156,7 @@ class ImportAdminQuotaPoliciesResponse extends $pb.GeneratedMessage {
   factory ImportAdminQuotaPoliciesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportAdminQuotaPoliciesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..pc<$423.AdminQuotaPolicy>(1, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: $423.AdminQuotaPolicy.create)
+    ..pc<$47.AdminQuotaPolicy>(1, _omitFieldNames ? '' : 'policies', $pb.PbFieldType.PM, subBuilder: $47.AdminQuotaPolicy.create)
     ..hasRequiredFields = false
   ;
 
@@ -2183,7 +2183,7 @@ class ImportAdminQuotaPoliciesResponse extends $pb.GeneratedMessage {
 
   /// The policies that were created from the imported data.
   @$pb.TagNumber(1)
-  $core.List<$423.AdminQuotaPolicy> get policies => $_getList(0);
+  $core.List<$47.AdminQuotaPolicy> get policies => $_getList(0);
 }
 
 /// Metadata message that provides information such as progress,
@@ -2389,7 +2389,7 @@ class GenerateServiceIdentityRequest extends $pb.GeneratedMessage {
 /// Response message for getting service identity.
 class GetServiceIdentityResponse extends $pb.GeneratedMessage {
   factory GetServiceIdentityResponse({
-    $423.ServiceIdentity? identity,
+    $47.ServiceIdentity? identity,
     GetServiceIdentityResponse_IdentityState? state,
   }) {
     final $result = create();
@@ -2406,7 +2406,7 @@ class GetServiceIdentityResponse extends $pb.GeneratedMessage {
   factory GetServiceIdentityResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetServiceIdentityResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1beta1'), createEmptyInstance: create)
-    ..aOM<$423.ServiceIdentity>(1, _omitFieldNames ? '' : 'identity', subBuilder: $423.ServiceIdentity.create)
+    ..aOM<$47.ServiceIdentity>(1, _omitFieldNames ? '' : 'identity', subBuilder: $47.ServiceIdentity.create)
     ..e<GetServiceIdentityResponse_IdentityState>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: GetServiceIdentityResponse_IdentityState.IDENTITY_STATE_UNSPECIFIED, valueOf: GetServiceIdentityResponse_IdentityState.valueOf, enumValues: GetServiceIdentityResponse_IdentityState.values)
     ..hasRequiredFields = false
   ;
@@ -2436,15 +2436,15 @@ class GetServiceIdentityResponse extends $pb.GeneratedMessage {
   /// resources. If exists is true, it contains email and unique_id. If exists is
   /// false, it contains pre-constructed email and empty unique_id.
   @$pb.TagNumber(1)
-  $423.ServiceIdentity get identity => $_getN(0);
+  $47.ServiceIdentity get identity => $_getN(0);
   @$pb.TagNumber(1)
-  set identity($423.ServiceIdentity v) { setField(1, v); }
+  set identity($47.ServiceIdentity v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIdentity() => $_has(0);
   @$pb.TagNumber(1)
   void clearIdentity() => clearField(1);
   @$pb.TagNumber(1)
-  $423.ServiceIdentity ensureIdentity() => $_ensure(0);
+  $47.ServiceIdentity ensureIdentity() => $_ensure(0);
 
   /// Service identity state.
   @$pb.TagNumber(2)

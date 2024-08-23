@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/timestamp.pb.dart' as $299;
 
 /// `AccessPolicy` is a container for `AccessLevels` (which define the necessary
 /// attributes to use Google Cloud services) and `ServicePerimeters` (which
@@ -25,8 +25,8 @@ class AccessPolicy extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? parent,
     $core.String? title,
-    $1776.Timestamp? createTime,
-    $1776.Timestamp? updateTime,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
     $core.String? etag,
     $core.Iterable<$core.String>? scopes,
   }) {
@@ -62,8 +62,8 @@ class AccessPolicy extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'parent')
     ..aOS(3, _omitFieldNames ? '' : 'title')
-    ..aOM<$1776.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'etag')
     ..pPS(7, _omitFieldNames ? '' : 'scopes')
     ..hasRequiredFields = false
@@ -125,27 +125,27 @@ class AccessPolicy extends $pb.GeneratedMessage {
 
   /// Output only. Time the `AccessPolicy` was created in UTC.
   @$pb.TagNumber(4)
-  $1776.Timestamp get createTime => $_getN(3);
+  $299.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($1776.Timestamp v) { setField(4, v); }
+  set createTime($299.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $1776.Timestamp ensureCreateTime() => $_ensure(3);
+  $299.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Time the `AccessPolicy` was updated in UTC.
   @$pb.TagNumber(5)
-  $1776.Timestamp get updateTime => $_getN(4);
+  $299.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($1776.Timestamp v) { setField(5, v); }
+  set updateTime($299.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $1776.Timestamp ensureUpdateTime() => $_ensure(4);
+  $299.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Output only. An opaque identifier for the current version of the
   /// `AccessPolicy`. This will always be a strongly validated etag, meaning that

@@ -16,52 +16,52 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/empty.pb.dart' as $3;
-import 'service.pb.dart' as $1677;
-import 'service_service.pb.dart' as $1676;
+import 'service.pb.dart' as $200;
+import 'service_service.pb.dart' as $199;
 
 export 'service_service.pb.dart';
 
 @$pb.GrpcServiceName('google.monitoring.v3.ServiceMonitoringService')
 class ServiceMonitoringServiceClient extends $grpc.Client {
-  static final _$createService = $grpc.ClientMethod<$1676.CreateServiceRequest, $1677.Service>(
+  static final _$createService = $grpc.ClientMethod<$199.CreateServiceRequest, $200.Service>(
       '/google.monitoring.v3.ServiceMonitoringService/CreateService',
-      ($1676.CreateServiceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1677.Service.fromBuffer(value));
-  static final _$getService = $grpc.ClientMethod<$1676.GetServiceRequest, $1677.Service>(
+      ($199.CreateServiceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $200.Service.fromBuffer(value));
+  static final _$getService = $grpc.ClientMethod<$199.GetServiceRequest, $200.Service>(
       '/google.monitoring.v3.ServiceMonitoringService/GetService',
-      ($1676.GetServiceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1677.Service.fromBuffer(value));
-  static final _$listServices = $grpc.ClientMethod<$1676.ListServicesRequest, $1676.ListServicesResponse>(
+      ($199.GetServiceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $200.Service.fromBuffer(value));
+  static final _$listServices = $grpc.ClientMethod<$199.ListServicesRequest, $199.ListServicesResponse>(
       '/google.monitoring.v3.ServiceMonitoringService/ListServices',
-      ($1676.ListServicesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1676.ListServicesResponse.fromBuffer(value));
-  static final _$updateService = $grpc.ClientMethod<$1676.UpdateServiceRequest, $1677.Service>(
+      ($199.ListServicesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $199.ListServicesResponse.fromBuffer(value));
+  static final _$updateService = $grpc.ClientMethod<$199.UpdateServiceRequest, $200.Service>(
       '/google.monitoring.v3.ServiceMonitoringService/UpdateService',
-      ($1676.UpdateServiceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1677.Service.fromBuffer(value));
-  static final _$deleteService = $grpc.ClientMethod<$1676.DeleteServiceRequest, $3.Empty>(
+      ($199.UpdateServiceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $200.Service.fromBuffer(value));
+  static final _$deleteService = $grpc.ClientMethod<$199.DeleteServiceRequest, $3.Empty>(
       '/google.monitoring.v3.ServiceMonitoringService/DeleteService',
-      ($1676.DeleteServiceRequest value) => value.writeToBuffer(),
+      ($199.DeleteServiceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$createServiceLevelObjective = $grpc.ClientMethod<$1676.CreateServiceLevelObjectiveRequest, $1677.ServiceLevelObjective>(
+  static final _$createServiceLevelObjective = $grpc.ClientMethod<$199.CreateServiceLevelObjectiveRequest, $200.ServiceLevelObjective>(
       '/google.monitoring.v3.ServiceMonitoringService/CreateServiceLevelObjective',
-      ($1676.CreateServiceLevelObjectiveRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1677.ServiceLevelObjective.fromBuffer(value));
-  static final _$getServiceLevelObjective = $grpc.ClientMethod<$1676.GetServiceLevelObjectiveRequest, $1677.ServiceLevelObjective>(
+      ($199.CreateServiceLevelObjectiveRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $200.ServiceLevelObjective.fromBuffer(value));
+  static final _$getServiceLevelObjective = $grpc.ClientMethod<$199.GetServiceLevelObjectiveRequest, $200.ServiceLevelObjective>(
       '/google.monitoring.v3.ServiceMonitoringService/GetServiceLevelObjective',
-      ($1676.GetServiceLevelObjectiveRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1677.ServiceLevelObjective.fromBuffer(value));
-  static final _$listServiceLevelObjectives = $grpc.ClientMethod<$1676.ListServiceLevelObjectivesRequest, $1676.ListServiceLevelObjectivesResponse>(
+      ($199.GetServiceLevelObjectiveRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $200.ServiceLevelObjective.fromBuffer(value));
+  static final _$listServiceLevelObjectives = $grpc.ClientMethod<$199.ListServiceLevelObjectivesRequest, $199.ListServiceLevelObjectivesResponse>(
       '/google.monitoring.v3.ServiceMonitoringService/ListServiceLevelObjectives',
-      ($1676.ListServiceLevelObjectivesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1676.ListServiceLevelObjectivesResponse.fromBuffer(value));
-  static final _$updateServiceLevelObjective = $grpc.ClientMethod<$1676.UpdateServiceLevelObjectiveRequest, $1677.ServiceLevelObjective>(
+      ($199.ListServiceLevelObjectivesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $199.ListServiceLevelObjectivesResponse.fromBuffer(value));
+  static final _$updateServiceLevelObjective = $grpc.ClientMethod<$199.UpdateServiceLevelObjectiveRequest, $200.ServiceLevelObjective>(
       '/google.monitoring.v3.ServiceMonitoringService/UpdateServiceLevelObjective',
-      ($1676.UpdateServiceLevelObjectiveRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1677.ServiceLevelObjective.fromBuffer(value));
-  static final _$deleteServiceLevelObjective = $grpc.ClientMethod<$1676.DeleteServiceLevelObjectiveRequest, $3.Empty>(
+      ($199.UpdateServiceLevelObjectiveRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $200.ServiceLevelObjective.fromBuffer(value));
+  static final _$deleteServiceLevelObjective = $grpc.ClientMethod<$199.DeleteServiceLevelObjectiveRequest, $3.Empty>(
       '/google.monitoring.v3.ServiceMonitoringService/DeleteServiceLevelObjective',
-      ($1676.DeleteServiceLevelObjectiveRequest value) => value.writeToBuffer(),
+      ($199.DeleteServiceLevelObjectiveRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   ServiceMonitoringServiceClient($grpc.ClientChannel channel,
@@ -70,43 +70,43 @@ class ServiceMonitoringServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1677.Service> createService($1676.CreateServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$200.Service> createService($199.CreateServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1677.Service> getService($1676.GetServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$200.Service> getService($199.GetServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1676.ListServicesResponse> listServices($1676.ListServicesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$199.ListServicesResponse> listServices($199.ListServicesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listServices, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1677.Service> updateService($1676.UpdateServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$200.Service> updateService($199.UpdateServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteService($1676.DeleteServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteService($199.DeleteServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1677.ServiceLevelObjective> createServiceLevelObjective($1676.CreateServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$200.ServiceLevelObjective> createServiceLevelObjective($199.CreateServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createServiceLevelObjective, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1677.ServiceLevelObjective> getServiceLevelObjective($1676.GetServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$200.ServiceLevelObjective> getServiceLevelObjective($199.GetServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getServiceLevelObjective, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1676.ListServiceLevelObjectivesResponse> listServiceLevelObjectives($1676.ListServiceLevelObjectivesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$199.ListServiceLevelObjectivesResponse> listServiceLevelObjectives($199.ListServiceLevelObjectivesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listServiceLevelObjectives, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1677.ServiceLevelObjective> updateServiceLevelObjective($1676.UpdateServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$200.ServiceLevelObjective> updateServiceLevelObjective($199.UpdateServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateServiceLevelObjective, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteServiceLevelObjective($1676.DeleteServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteServiceLevelObjective($199.DeleteServiceLevelObjectiveRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteServiceLevelObjective, request, options: options);
   }
 }
@@ -116,126 +116,126 @@ abstract class ServiceMonitoringServiceBase extends $grpc.Service {
   $core.String get $name => 'google.monitoring.v3.ServiceMonitoringService';
 
   ServiceMonitoringServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1676.CreateServiceRequest, $1677.Service>(
+    $addMethod($grpc.ServiceMethod<$199.CreateServiceRequest, $200.Service>(
         'CreateService',
         createService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.CreateServiceRequest.fromBuffer(value),
-        ($1677.Service value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.GetServiceRequest, $1677.Service>(
+        ($core.List<$core.int> value) => $199.CreateServiceRequest.fromBuffer(value),
+        ($200.Service value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.GetServiceRequest, $200.Service>(
         'GetService',
         getService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.GetServiceRequest.fromBuffer(value),
-        ($1677.Service value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.ListServicesRequest, $1676.ListServicesResponse>(
+        ($core.List<$core.int> value) => $199.GetServiceRequest.fromBuffer(value),
+        ($200.Service value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.ListServicesRequest, $199.ListServicesResponse>(
         'ListServices',
         listServices_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.ListServicesRequest.fromBuffer(value),
-        ($1676.ListServicesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.UpdateServiceRequest, $1677.Service>(
+        ($core.List<$core.int> value) => $199.ListServicesRequest.fromBuffer(value),
+        ($199.ListServicesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.UpdateServiceRequest, $200.Service>(
         'UpdateService',
         updateService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.UpdateServiceRequest.fromBuffer(value),
-        ($1677.Service value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.DeleteServiceRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $199.UpdateServiceRequest.fromBuffer(value),
+        ($200.Service value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.DeleteServiceRequest, $3.Empty>(
         'DeleteService',
         deleteService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.DeleteServiceRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $199.DeleteServiceRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.CreateServiceLevelObjectiveRequest, $1677.ServiceLevelObjective>(
+    $addMethod($grpc.ServiceMethod<$199.CreateServiceLevelObjectiveRequest, $200.ServiceLevelObjective>(
         'CreateServiceLevelObjective',
         createServiceLevelObjective_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.CreateServiceLevelObjectiveRequest.fromBuffer(value),
-        ($1677.ServiceLevelObjective value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.GetServiceLevelObjectiveRequest, $1677.ServiceLevelObjective>(
+        ($core.List<$core.int> value) => $199.CreateServiceLevelObjectiveRequest.fromBuffer(value),
+        ($200.ServiceLevelObjective value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.GetServiceLevelObjectiveRequest, $200.ServiceLevelObjective>(
         'GetServiceLevelObjective',
         getServiceLevelObjective_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.GetServiceLevelObjectiveRequest.fromBuffer(value),
-        ($1677.ServiceLevelObjective value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.ListServiceLevelObjectivesRequest, $1676.ListServiceLevelObjectivesResponse>(
+        ($core.List<$core.int> value) => $199.GetServiceLevelObjectiveRequest.fromBuffer(value),
+        ($200.ServiceLevelObjective value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.ListServiceLevelObjectivesRequest, $199.ListServiceLevelObjectivesResponse>(
         'ListServiceLevelObjectives',
         listServiceLevelObjectives_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.ListServiceLevelObjectivesRequest.fromBuffer(value),
-        ($1676.ListServiceLevelObjectivesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.UpdateServiceLevelObjectiveRequest, $1677.ServiceLevelObjective>(
+        ($core.List<$core.int> value) => $199.ListServiceLevelObjectivesRequest.fromBuffer(value),
+        ($199.ListServiceLevelObjectivesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.UpdateServiceLevelObjectiveRequest, $200.ServiceLevelObjective>(
         'UpdateServiceLevelObjective',
         updateServiceLevelObjective_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.UpdateServiceLevelObjectiveRequest.fromBuffer(value),
-        ($1677.ServiceLevelObjective value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1676.DeleteServiceLevelObjectiveRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $199.UpdateServiceLevelObjectiveRequest.fromBuffer(value),
+        ($200.ServiceLevelObjective value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$199.DeleteServiceLevelObjectiveRequest, $3.Empty>(
         'DeleteServiceLevelObjective',
         deleteServiceLevelObjective_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1676.DeleteServiceLevelObjectiveRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $199.DeleteServiceLevelObjectiveRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1677.Service> createService_Pre($grpc.ServiceCall call, $async.Future<$1676.CreateServiceRequest> request) async {
+  $async.Future<$200.Service> createService_Pre($grpc.ServiceCall call, $async.Future<$199.CreateServiceRequest> request) async {
     return createService(call, await request);
   }
 
-  $async.Future<$1677.Service> getService_Pre($grpc.ServiceCall call, $async.Future<$1676.GetServiceRequest> request) async {
+  $async.Future<$200.Service> getService_Pre($grpc.ServiceCall call, $async.Future<$199.GetServiceRequest> request) async {
     return getService(call, await request);
   }
 
-  $async.Future<$1676.ListServicesResponse> listServices_Pre($grpc.ServiceCall call, $async.Future<$1676.ListServicesRequest> request) async {
+  $async.Future<$199.ListServicesResponse> listServices_Pre($grpc.ServiceCall call, $async.Future<$199.ListServicesRequest> request) async {
     return listServices(call, await request);
   }
 
-  $async.Future<$1677.Service> updateService_Pre($grpc.ServiceCall call, $async.Future<$1676.UpdateServiceRequest> request) async {
+  $async.Future<$200.Service> updateService_Pre($grpc.ServiceCall call, $async.Future<$199.UpdateServiceRequest> request) async {
     return updateService(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteService_Pre($grpc.ServiceCall call, $async.Future<$1676.DeleteServiceRequest> request) async {
+  $async.Future<$3.Empty> deleteService_Pre($grpc.ServiceCall call, $async.Future<$199.DeleteServiceRequest> request) async {
     return deleteService(call, await request);
   }
 
-  $async.Future<$1677.ServiceLevelObjective> createServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$1676.CreateServiceLevelObjectiveRequest> request) async {
+  $async.Future<$200.ServiceLevelObjective> createServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$199.CreateServiceLevelObjectiveRequest> request) async {
     return createServiceLevelObjective(call, await request);
   }
 
-  $async.Future<$1677.ServiceLevelObjective> getServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$1676.GetServiceLevelObjectiveRequest> request) async {
+  $async.Future<$200.ServiceLevelObjective> getServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$199.GetServiceLevelObjectiveRequest> request) async {
     return getServiceLevelObjective(call, await request);
   }
 
-  $async.Future<$1676.ListServiceLevelObjectivesResponse> listServiceLevelObjectives_Pre($grpc.ServiceCall call, $async.Future<$1676.ListServiceLevelObjectivesRequest> request) async {
+  $async.Future<$199.ListServiceLevelObjectivesResponse> listServiceLevelObjectives_Pre($grpc.ServiceCall call, $async.Future<$199.ListServiceLevelObjectivesRequest> request) async {
     return listServiceLevelObjectives(call, await request);
   }
 
-  $async.Future<$1677.ServiceLevelObjective> updateServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$1676.UpdateServiceLevelObjectiveRequest> request) async {
+  $async.Future<$200.ServiceLevelObjective> updateServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$199.UpdateServiceLevelObjectiveRequest> request) async {
     return updateServiceLevelObjective(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$1676.DeleteServiceLevelObjectiveRequest> request) async {
+  $async.Future<$3.Empty> deleteServiceLevelObjective_Pre($grpc.ServiceCall call, $async.Future<$199.DeleteServiceLevelObjectiveRequest> request) async {
     return deleteServiceLevelObjective(call, await request);
   }
 
-  $async.Future<$1677.Service> createService($grpc.ServiceCall call, $1676.CreateServiceRequest request);
-  $async.Future<$1677.Service> getService($grpc.ServiceCall call, $1676.GetServiceRequest request);
-  $async.Future<$1676.ListServicesResponse> listServices($grpc.ServiceCall call, $1676.ListServicesRequest request);
-  $async.Future<$1677.Service> updateService($grpc.ServiceCall call, $1676.UpdateServiceRequest request);
-  $async.Future<$3.Empty> deleteService($grpc.ServiceCall call, $1676.DeleteServiceRequest request);
-  $async.Future<$1677.ServiceLevelObjective> createServiceLevelObjective($grpc.ServiceCall call, $1676.CreateServiceLevelObjectiveRequest request);
-  $async.Future<$1677.ServiceLevelObjective> getServiceLevelObjective($grpc.ServiceCall call, $1676.GetServiceLevelObjectiveRequest request);
-  $async.Future<$1676.ListServiceLevelObjectivesResponse> listServiceLevelObjectives($grpc.ServiceCall call, $1676.ListServiceLevelObjectivesRequest request);
-  $async.Future<$1677.ServiceLevelObjective> updateServiceLevelObjective($grpc.ServiceCall call, $1676.UpdateServiceLevelObjectiveRequest request);
-  $async.Future<$3.Empty> deleteServiceLevelObjective($grpc.ServiceCall call, $1676.DeleteServiceLevelObjectiveRequest request);
+  $async.Future<$200.Service> createService($grpc.ServiceCall call, $199.CreateServiceRequest request);
+  $async.Future<$200.Service> getService($grpc.ServiceCall call, $199.GetServiceRequest request);
+  $async.Future<$199.ListServicesResponse> listServices($grpc.ServiceCall call, $199.ListServicesRequest request);
+  $async.Future<$200.Service> updateService($grpc.ServiceCall call, $199.UpdateServiceRequest request);
+  $async.Future<$3.Empty> deleteService($grpc.ServiceCall call, $199.DeleteServiceRequest request);
+  $async.Future<$200.ServiceLevelObjective> createServiceLevelObjective($grpc.ServiceCall call, $199.CreateServiceLevelObjectiveRequest request);
+  $async.Future<$200.ServiceLevelObjective> getServiceLevelObjective($grpc.ServiceCall call, $199.GetServiceLevelObjectiveRequest request);
+  $async.Future<$199.ListServiceLevelObjectivesResponse> listServiceLevelObjectives($grpc.ServiceCall call, $199.ListServiceLevelObjectivesRequest request);
+  $async.Future<$200.ServiceLevelObjective> updateServiceLevelObjective($grpc.ServiceCall call, $199.UpdateServiceLevelObjectiveRequest request);
+  $async.Future<$3.Empty> deleteServiceLevelObjective($grpc.ServiceCall call, $199.DeleteServiceLevelObjectiveRequest request);
 }

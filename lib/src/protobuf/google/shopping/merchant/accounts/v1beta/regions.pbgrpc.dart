@@ -16,32 +16,32 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'regions.pb.dart' as $1701;
+import 'regions.pb.dart' as $224;
 
 export 'regions.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.RegionsService')
 class RegionsServiceClient extends $grpc.Client {
-  static final _$getRegion = $grpc.ClientMethod<$1701.GetRegionRequest, $1701.Region>(
+  static final _$getRegion = $grpc.ClientMethod<$224.GetRegionRequest, $224.Region>(
       '/google.shopping.merchant.accounts.v1beta.RegionsService/GetRegion',
-      ($1701.GetRegionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1701.Region.fromBuffer(value));
-  static final _$createRegion = $grpc.ClientMethod<$1701.CreateRegionRequest, $1701.Region>(
+      ($224.GetRegionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $224.Region.fromBuffer(value));
+  static final _$createRegion = $grpc.ClientMethod<$224.CreateRegionRequest, $224.Region>(
       '/google.shopping.merchant.accounts.v1beta.RegionsService/CreateRegion',
-      ($1701.CreateRegionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1701.Region.fromBuffer(value));
-  static final _$updateRegion = $grpc.ClientMethod<$1701.UpdateRegionRequest, $1701.Region>(
+      ($224.CreateRegionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $224.Region.fromBuffer(value));
+  static final _$updateRegion = $grpc.ClientMethod<$224.UpdateRegionRequest, $224.Region>(
       '/google.shopping.merchant.accounts.v1beta.RegionsService/UpdateRegion',
-      ($1701.UpdateRegionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1701.Region.fromBuffer(value));
-  static final _$deleteRegion = $grpc.ClientMethod<$1701.DeleteRegionRequest, $3.Empty>(
+      ($224.UpdateRegionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $224.Region.fromBuffer(value));
+  static final _$deleteRegion = $grpc.ClientMethod<$224.DeleteRegionRequest, $3.Empty>(
       '/google.shopping.merchant.accounts.v1beta.RegionsService/DeleteRegion',
-      ($1701.DeleteRegionRequest value) => value.writeToBuffer(),
+      ($224.DeleteRegionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$listRegions = $grpc.ClientMethod<$1701.ListRegionsRequest, $1701.ListRegionsResponse>(
+  static final _$listRegions = $grpc.ClientMethod<$224.ListRegionsRequest, $224.ListRegionsResponse>(
       '/google.shopping.merchant.accounts.v1beta.RegionsService/ListRegions',
-      ($1701.ListRegionsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $1701.ListRegionsResponse.fromBuffer(value));
+      ($224.ListRegionsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $224.ListRegionsResponse.fromBuffer(value));
 
   RegionsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -49,23 +49,23 @@ class RegionsServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$1701.Region> getRegion($1701.GetRegionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$224.Region> getRegion($224.GetRegionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getRegion, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1701.Region> createRegion($1701.CreateRegionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$224.Region> createRegion($224.CreateRegionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createRegion, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1701.Region> updateRegion($1701.UpdateRegionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$224.Region> updateRegion($224.UpdateRegionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateRegion, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteRegion($1701.DeleteRegionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteRegion($224.DeleteRegionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteRegion, request, options: options);
   }
 
-  $grpc.ResponseFuture<$1701.ListRegionsResponse> listRegions($1701.ListRegionsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$224.ListRegionsResponse> listRegions($224.ListRegionsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listRegions, request, options: options);
   }
 }
@@ -75,66 +75,66 @@ abstract class RegionsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.accounts.v1beta.RegionsService';
 
   RegionsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$1701.GetRegionRequest, $1701.Region>(
+    $addMethod($grpc.ServiceMethod<$224.GetRegionRequest, $224.Region>(
         'GetRegion',
         getRegion_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1701.GetRegionRequest.fromBuffer(value),
-        ($1701.Region value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1701.CreateRegionRequest, $1701.Region>(
+        ($core.List<$core.int> value) => $224.GetRegionRequest.fromBuffer(value),
+        ($224.Region value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$224.CreateRegionRequest, $224.Region>(
         'CreateRegion',
         createRegion_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1701.CreateRegionRequest.fromBuffer(value),
-        ($1701.Region value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1701.UpdateRegionRequest, $1701.Region>(
+        ($core.List<$core.int> value) => $224.CreateRegionRequest.fromBuffer(value),
+        ($224.Region value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$224.UpdateRegionRequest, $224.Region>(
         'UpdateRegion',
         updateRegion_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1701.UpdateRegionRequest.fromBuffer(value),
-        ($1701.Region value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1701.DeleteRegionRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $224.UpdateRegionRequest.fromBuffer(value),
+        ($224.Region value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$224.DeleteRegionRequest, $3.Empty>(
         'DeleteRegion',
         deleteRegion_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1701.DeleteRegionRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $224.DeleteRegionRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$1701.ListRegionsRequest, $1701.ListRegionsResponse>(
+    $addMethod($grpc.ServiceMethod<$224.ListRegionsRequest, $224.ListRegionsResponse>(
         'ListRegions',
         listRegions_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $1701.ListRegionsRequest.fromBuffer(value),
-        ($1701.ListRegionsResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $224.ListRegionsRequest.fromBuffer(value),
+        ($224.ListRegionsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1701.Region> getRegion_Pre($grpc.ServiceCall call, $async.Future<$1701.GetRegionRequest> request) async {
+  $async.Future<$224.Region> getRegion_Pre($grpc.ServiceCall call, $async.Future<$224.GetRegionRequest> request) async {
     return getRegion(call, await request);
   }
 
-  $async.Future<$1701.Region> createRegion_Pre($grpc.ServiceCall call, $async.Future<$1701.CreateRegionRequest> request) async {
+  $async.Future<$224.Region> createRegion_Pre($grpc.ServiceCall call, $async.Future<$224.CreateRegionRequest> request) async {
     return createRegion(call, await request);
   }
 
-  $async.Future<$1701.Region> updateRegion_Pre($grpc.ServiceCall call, $async.Future<$1701.UpdateRegionRequest> request) async {
+  $async.Future<$224.Region> updateRegion_Pre($grpc.ServiceCall call, $async.Future<$224.UpdateRegionRequest> request) async {
     return updateRegion(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteRegion_Pre($grpc.ServiceCall call, $async.Future<$1701.DeleteRegionRequest> request) async {
+  $async.Future<$3.Empty> deleteRegion_Pre($grpc.ServiceCall call, $async.Future<$224.DeleteRegionRequest> request) async {
     return deleteRegion(call, await request);
   }
 
-  $async.Future<$1701.ListRegionsResponse> listRegions_Pre($grpc.ServiceCall call, $async.Future<$1701.ListRegionsRequest> request) async {
+  $async.Future<$224.ListRegionsResponse> listRegions_Pre($grpc.ServiceCall call, $async.Future<$224.ListRegionsRequest> request) async {
     return listRegions(call, await request);
   }
 
-  $async.Future<$1701.Region> getRegion($grpc.ServiceCall call, $1701.GetRegionRequest request);
-  $async.Future<$1701.Region> createRegion($grpc.ServiceCall call, $1701.CreateRegionRequest request);
-  $async.Future<$1701.Region> updateRegion($grpc.ServiceCall call, $1701.UpdateRegionRequest request);
-  $async.Future<$3.Empty> deleteRegion($grpc.ServiceCall call, $1701.DeleteRegionRequest request);
-  $async.Future<$1701.ListRegionsResponse> listRegions($grpc.ServiceCall call, $1701.ListRegionsRequest request);
+  $async.Future<$224.Region> getRegion($grpc.ServiceCall call, $224.GetRegionRequest request);
+  $async.Future<$224.Region> createRegion($grpc.ServiceCall call, $224.CreateRegionRequest request);
+  $async.Future<$224.Region> updateRegion($grpc.ServiceCall call, $224.UpdateRegionRequest request);
+  $async.Future<$3.Empty> deleteRegion($grpc.ServiceCall call, $224.DeleteRegionRequest request);
+  $async.Future<$224.ListRegionsResponse> listRegions($grpc.ServiceCall call, $224.ListRegionsRequest request);
 }

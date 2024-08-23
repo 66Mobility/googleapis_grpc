@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $1735;
-import 'readgroup.pb.dart' as $4788;
+import '../../protobuf/struct.pb.dart' as $258;
+import 'readgroup.pb.dart' as $436;
 
 ///  A read group set is a logical collection of read groups, which are
 ///  collections of reads produced by a sequencer. A read group set typically
@@ -34,8 +34,8 @@ class ReadGroupSet extends $pb.GeneratedMessage {
     $core.String? referenceSetId,
     $core.String? name,
     $core.String? filename,
-    $core.Iterable<$4788.ReadGroup>? readGroups,
-    $core.Map<$core.String, $1735.ListValue>? info,
+    $core.Iterable<$436.ReadGroup>? readGroups,
+    $core.Map<$core.String, $258.ListValue>? info,
   }) {
     final $result = create();
     if (id != null) {
@@ -71,8 +71,8 @@ class ReadGroupSet extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'referenceSetId')
     ..aOS(4, _omitFieldNames ? '' : 'name')
     ..aOS(5, _omitFieldNames ? '' : 'filename')
-    ..pc<$4788.ReadGroup>(6, _omitFieldNames ? '' : 'readGroups', $pb.PbFieldType.PM, subBuilder: $4788.ReadGroup.create)
-    ..m<$core.String, $1735.ListValue>(7, _omitFieldNames ? '' : 'info', entryClassName: 'ReadGroupSet.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $1735.ListValue.create, valueDefaultOrMaker: $1735.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..pc<$436.ReadGroup>(6, _omitFieldNames ? '' : 'readGroups', $pb.PbFieldType.PM, subBuilder: $436.ReadGroup.create)
+    ..m<$core.String, $258.ListValue>(7, _omitFieldNames ? '' : 'info', entryClassName: 'ReadGroupSet.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $258.ListValue.create, valueDefaultOrMaker: $258.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -151,11 +151,11 @@ class ReadGroupSet extends $pb.GeneratedMessage {
   /// The read groups in this set. There are typically 1-10 read groups in a read
   /// group set.
   @$pb.TagNumber(6)
-  $core.List<$4788.ReadGroup> get readGroups => $_getList(5);
+  $core.List<$436.ReadGroup> get readGroups => $_getList(5);
 
   /// A map of additional read group set information.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $1735.ListValue> get info => $_getMap(6);
+  $core.Map<$core.String, $258.ListValue> get info => $_getMap(6);
 }
 
 

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'fallback_info.pb.dart' as $4828;
-import 'route.pb.dart' as $4826;
+import 'fallback_info.pb.dart' as $480;
+import 'route.pb.dart' as $478;
 
 /// ComputeRoutes the response message.
 class ComputeRoutesResponse extends $pb.GeneratedMessage {
   factory ComputeRoutesResponse({
-    $core.Iterable<$4826.Route>? routes,
-    $4828.FallbackInfo? fallbackInfo,
+    $core.Iterable<$478.Route>? routes,
+    $480.FallbackInfo? fallbackInfo,
   }) {
     final $result = create();
     if (routes != null) {
@@ -36,8 +36,8 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   factory ComputeRoutesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeRoutesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..pc<$4826.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM, subBuilder: $4826.Route.create)
-    ..aOM<$4828.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo', subBuilder: $4828.FallbackInfo.create)
+    ..pc<$478.Route>(1, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM, subBuilder: $478.Route.create)
+    ..aOM<$480.FallbackInfo>(2, _omitFieldNames ? '' : 'fallbackInfo', subBuilder: $480.FallbackInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -68,22 +68,22 @@ class ComputeRoutesResponse extends $pb.GeneratedMessage {
   /// recommended route. If the array is empty, then it means no route could be
   /// found.
   @$pb.TagNumber(1)
-  $core.List<$4826.Route> get routes => $_getList(0);
+  $core.List<$478.Route> get routes => $_getList(0);
 
   /// In some cases when the server is not able to compute the route results with
   /// all of the input preferences, it may fallback to using a different way of
   /// computation. When fallback mode is used, this field contains detailed info
   /// about the fallback response. Otherwise this field is unset.
   @$pb.TagNumber(2)
-  $4828.FallbackInfo get fallbackInfo => $_getN(1);
+  $480.FallbackInfo get fallbackInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set fallbackInfo($4828.FallbackInfo v) { setField(2, v); }
+  set fallbackInfo($480.FallbackInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFallbackInfo() => $_has(1);
   @$pb.TagNumber(2)
   void clearFallbackInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $4828.FallbackInfo ensureFallbackInfo() => $_ensure(1);
+  $480.FallbackInfo ensureFallbackInfo() => $_ensure(1);
 }
 
 

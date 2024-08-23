@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'embedded_assistant.pb.dart' as $460;
+import 'embedded_assistant.pb.dart' as $84;
 
 export 'embedded_assistant.pb.dart';
 
 @$pb.GrpcServiceName('google.assistant.embedded.v1alpha1.EmbeddedAssistant')
 class EmbeddedAssistantClient extends $grpc.Client {
-  static final _$converse = $grpc.ClientMethod<$460.ConverseRequest, $460.ConverseResponse>(
+  static final _$converse = $grpc.ClientMethod<$84.ConverseRequest, $84.ConverseResponse>(
       '/google.assistant.embedded.v1alpha1.EmbeddedAssistant/Converse',
-      ($460.ConverseRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $460.ConverseResponse.fromBuffer(value));
+      ($84.ConverseRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $84.ConverseResponse.fromBuffer(value));
 
   EmbeddedAssistantClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class EmbeddedAssistantClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseStream<$460.ConverseResponse> converse($async.Stream<$460.ConverseRequest> request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseStream<$84.ConverseResponse> converse($async.Stream<$84.ConverseRequest> request, {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$converse, request, options: options);
   }
 }
@@ -42,14 +42,14 @@ abstract class EmbeddedAssistantServiceBase extends $grpc.Service {
   $core.String get $name => 'google.assistant.embedded.v1alpha1.EmbeddedAssistant';
 
   EmbeddedAssistantServiceBase() {
-    $addMethod($grpc.ServiceMethod<$460.ConverseRequest, $460.ConverseResponse>(
+    $addMethod($grpc.ServiceMethod<$84.ConverseRequest, $84.ConverseResponse>(
         'Converse',
         converse,
         true,
         true,
-        ($core.List<$core.int> value) => $460.ConverseRequest.fromBuffer(value),
-        ($460.ConverseResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $84.ConverseRequest.fromBuffer(value),
+        ($84.ConverseResponse value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$460.ConverseResponse> converse($grpc.ServiceCall call, $async.Stream<$460.ConverseRequest> request);
+  $async.Stream<$84.ConverseResponse> converse($grpc.ServiceCall call, $async.Stream<$84.ConverseRequest> request);
 }

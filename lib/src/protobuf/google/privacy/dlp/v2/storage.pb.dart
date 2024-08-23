@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $1776;
+import '../../../protobuf/timestamp.pb.dart' as $299;
 import 'storage.pbenum.dart';
 
 export 'storage.pbenum.dart';
@@ -167,7 +167,7 @@ class SensitivityScore extends $pb.GeneratedMessage {
 class StoredType extends $pb.GeneratedMessage {
   factory StoredType({
     $core.String? name,
-    $1776.Timestamp? createTime,
+    $299.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -184,7 +184,7 @@ class StoredType extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StoredType', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -224,15 +224,15 @@ class StoredType extends $pb.GeneratedMessage {
   /// Timestamp indicating when the version of the `StoredInfoType` used for
   /// inspection was created. Output-only field, populated by the system.
   @$pb.TagNumber(2)
-  $1776.Timestamp get createTime => $_getN(1);
+  $299.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($1776.Timestamp v) { setField(2, v); }
+  set createTime($299.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1776.Timestamp ensureCreateTime() => $_ensure(1);
+  $299.Timestamp ensureCreateTime() => $_ensure(1);
 }
 
 /// Message defining a list of words or phrases to search for in the data.
@@ -1889,8 +1889,8 @@ class BigQueryOptions extends $pb.GeneratedMessage {
 /// Currently only supported when inspecting Cloud Storage and BigQuery.
 class StorageConfig_TimespanConfig extends $pb.GeneratedMessage {
   factory StorageConfig_TimespanConfig({
-    $1776.Timestamp? startTime,
-    $1776.Timestamp? endTime,
+    $299.Timestamp? startTime,
+    $299.Timestamp? endTime,
     FieldId? timestampField,
     $core.bool? enableAutoPopulationOfTimespanConfig,
   }) {
@@ -1914,8 +1914,8 @@ class StorageConfig_TimespanConfig extends $pb.GeneratedMessage {
   factory StorageConfig_TimespanConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StorageConfig.TimespanConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$1776.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $1776.Timestamp.create)
-    ..aOM<$1776.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $1776.Timestamp.create)
+    ..aOM<$299.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
     ..aOM<FieldId>(3, _omitFieldNames ? '' : 'timestampField', subBuilder: FieldId.create)
     ..aOB(4, _omitFieldNames ? '' : 'enableAutoPopulationOfTimespanConfig')
     ..hasRequiredFields = false
@@ -1945,28 +1945,28 @@ class StorageConfig_TimespanConfig extends $pb.GeneratedMessage {
   /// Exclude files, tables, or rows older than this value.
   /// If not set, no lower time limit is applied.
   @$pb.TagNumber(1)
-  $1776.Timestamp get startTime => $_getN(0);
+  $299.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($1776.Timestamp v) { setField(1, v); }
+  set startTime($299.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $1776.Timestamp ensureStartTime() => $_ensure(0);
+  $299.Timestamp ensureStartTime() => $_ensure(0);
 
   /// Exclude files, tables, or rows newer than this value.
   /// If not set, no upper time limit is applied.
   @$pb.TagNumber(2)
-  $1776.Timestamp get endTime => $_getN(1);
+  $299.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($1776.Timestamp v) { setField(2, v); }
+  set endTime($299.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $1776.Timestamp ensureEndTime() => $_ensure(1);
+  $299.Timestamp ensureEndTime() => $_ensure(1);
 
   ///  Specification of the field containing the timestamp of scanned items.
   ///  Used for data sources like Datastore and BigQuery.

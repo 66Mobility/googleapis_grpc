@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pbenum.dart' as $1735;
-import 'source.pb.dart' as $4160;
+import '../../../protobuf/struct.pbenum.dart' as $258;
+import 'source.pb.dart' as $342;
 
 /// An expression together with source information as returned by the parser.
 class ParsedExpr extends $pb.GeneratedMessage {
   factory ParsedExpr({
     Expr? expr,
-    $4160.SourceInfo? sourceInfo,
+    $342.SourceInfo? sourceInfo,
     $core.String? syntaxVersion,
   }) {
     final $result = create();
@@ -42,7 +42,7 @@ class ParsedExpr extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ParsedExpr', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.expr.v1beta1'), createEmptyInstance: create)
     ..aOM<Expr>(2, _omitFieldNames ? '' : 'expr', subBuilder: Expr.create)
-    ..aOM<$4160.SourceInfo>(3, _omitFieldNames ? '' : 'sourceInfo', subBuilder: $4160.SourceInfo.create)
+    ..aOM<$342.SourceInfo>(3, _omitFieldNames ? '' : 'sourceInfo', subBuilder: $342.SourceInfo.create)
     ..aOS(4, _omitFieldNames ? '' : 'syntaxVersion')
     ..hasRequiredFields = false
   ;
@@ -82,15 +82,15 @@ class ParsedExpr extends $pb.GeneratedMessage {
 
   /// The source info derived from input that generated the parsed `expr`.
   @$pb.TagNumber(3)
-  $4160.SourceInfo get sourceInfo => $_getN(1);
+  $342.SourceInfo get sourceInfo => $_getN(1);
   @$pb.TagNumber(3)
-  set sourceInfo($4160.SourceInfo v) { setField(3, v); }
+  set sourceInfo($342.SourceInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSourceInfo() => $_has(1);
   @$pb.TagNumber(3)
   void clearSourceInfo() => clearField(3);
   @$pb.TagNumber(3)
-  $4160.SourceInfo ensureSourceInfo() => $_ensure(1);
+  $342.SourceInfo ensureSourceInfo() => $_ensure(1);
 
   /// The syntax version of the source, e.g. `cel1`.
   @$pb.TagNumber(4)
@@ -984,7 +984,7 @@ enum Literal_ConstantKind {
 ///  `true`, `null`.
 class Literal extends $pb.GeneratedMessage {
   factory Literal({
-    $1735.NullValue? nullValue,
+    $258.NullValue? nullValue,
     $core.bool? boolValue,
     $fixnum.Int64? int64Value,
     $fixnum.Int64? uint64Value,
@@ -1032,7 +1032,7 @@ class Literal extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Literal', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.expr.v1beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4, 5, 6, 7])
-    ..e<$1735.NullValue>(1, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $1735.NullValue.NULL_VALUE, valueOf: $1735.NullValue.valueOf, enumValues: $1735.NullValue.values)
+    ..e<$258.NullValue>(1, _omitFieldNames ? '' : 'nullValue', $pb.PbFieldType.OE, defaultOrMaker: $258.NullValue.NULL_VALUE, valueOf: $258.NullValue.valueOf, enumValues: $258.NullValue.values)
     ..aOB(2, _omitFieldNames ? '' : 'boolValue')
     ..aInt64(3, _omitFieldNames ? '' : 'int64Value')
     ..a<$fixnum.Int64>(4, _omitFieldNames ? '' : 'uint64Value', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
@@ -1068,9 +1068,9 @@ class Literal extends $pb.GeneratedMessage {
 
   /// null value.
   @$pb.TagNumber(1)
-  $1735.NullValue get nullValue => $_getN(0);
+  $258.NullValue get nullValue => $_getN(0);
   @$pb.TagNumber(1)
-  set nullValue($1735.NullValue v) { setField(1, v); }
+  set nullValue($258.NullValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNullValue() => $_has(0);
   @$pb.TagNumber(1)

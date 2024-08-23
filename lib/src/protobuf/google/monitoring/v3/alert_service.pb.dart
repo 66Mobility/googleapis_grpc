@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $2210;
-import 'alert.pb.dart' as $1668;
+import '../../protobuf/field_mask.pb.dart' as $330;
+import 'alert.pb.dart' as $191;
 
 /// The protocol for the `CreateAlertPolicy` request.
 class CreateAlertPolicyRequest extends $pb.GeneratedMessage {
   factory CreateAlertPolicyRequest({
-    $1668.AlertPolicy? alertPolicy,
+    $191.AlertPolicy? alertPolicy,
     $core.String? name,
   }) {
     final $result = create();
@@ -36,7 +36,7 @@ class CreateAlertPolicyRequest extends $pb.GeneratedMessage {
   factory CreateAlertPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAlertPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$1668.AlertPolicy>(2, _omitFieldNames ? '' : 'alertPolicy', subBuilder: $1668.AlertPolicy.create)
+    ..aOM<$191.AlertPolicy>(2, _omitFieldNames ? '' : 'alertPolicy', subBuilder: $191.AlertPolicy.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
   ;
@@ -66,15 +66,15 @@ class CreateAlertPolicyRequest extends $pb.GeneratedMessage {
   /// in this policy. The name will be returned in the new policy, including a
   /// new `[ALERT_POLICY_ID]` value.
   @$pb.TagNumber(2)
-  $1668.AlertPolicy get alertPolicy => $_getN(0);
+  $191.AlertPolicy get alertPolicy => $_getN(0);
   @$pb.TagNumber(2)
-  set alertPolicy($1668.AlertPolicy v) { setField(2, v); }
+  set alertPolicy($191.AlertPolicy v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAlertPolicy() => $_has(0);
   @$pb.TagNumber(2)
   void clearAlertPolicy() => clearField(2);
   @$pb.TagNumber(2)
-  $1668.AlertPolicy ensureAlertPolicy() => $_ensure(0);
+  $191.AlertPolicy ensureAlertPolicy() => $_ensure(0);
 
   ///  Required. The
   ///  [project](https://cloud.google.com/monitoring/api/v3#project_name) in which
@@ -290,7 +290,7 @@ class ListAlertPoliciesRequest extends $pb.GeneratedMessage {
 class ListAlertPoliciesResponse extends $pb.GeneratedMessage {
   factory ListAlertPoliciesResponse({
     $core.String? nextPageToken,
-    $core.Iterable<$1668.AlertPolicy>? alertPolicies,
+    $core.Iterable<$191.AlertPolicy>? alertPolicies,
     $core.int? totalSize,
   }) {
     final $result = create();
@@ -311,7 +311,7 @@ class ListAlertPoliciesResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAlertPoliciesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$1668.AlertPolicy>(3, _omitFieldNames ? '' : 'alertPolicies', $pb.PbFieldType.PM, subBuilder: $1668.AlertPolicy.create)
+    ..pc<$191.AlertPolicy>(3, _omitFieldNames ? '' : 'alertPolicies', $pb.PbFieldType.PM, subBuilder: $191.AlertPolicy.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -351,7 +351,7 @@ class ListAlertPoliciesResponse extends $pb.GeneratedMessage {
 
   /// The returned alert policies.
   @$pb.TagNumber(3)
-  $core.List<$1668.AlertPolicy> get alertPolicies => $_getList(1);
+  $core.List<$191.AlertPolicy> get alertPolicies => $_getList(1);
 
   /// The total number of alert policies in all pages. This number is only an
   /// estimate, and may change in subsequent pages. https://aip.dev/158
@@ -368,8 +368,8 @@ class ListAlertPoliciesResponse extends $pb.GeneratedMessage {
 /// The protocol for the `UpdateAlertPolicy` request.
 class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateAlertPolicyRequest({
-    $2210.FieldMask? updateMask,
-    $1668.AlertPolicy? alertPolicy,
+    $330.FieldMask? updateMask,
+    $191.AlertPolicy? alertPolicy,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -385,8 +385,8 @@ class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   factory UpdateAlertPolicyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAlertPolicyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$2210.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
-    ..aOM<$1668.AlertPolicy>(3, _omitFieldNames ? '' : 'alertPolicy', subBuilder: $1668.AlertPolicy.create)
+    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$191.AlertPolicy>(3, _omitFieldNames ? '' : 'alertPolicy', subBuilder: $191.AlertPolicy.create)
     ..hasRequiredFields = false
   ;
 
@@ -433,30 +433,30 @@ class UpdateAlertPolicyRequest extends $pb.GeneratedMessage {
   ///      `[CONDITION_ID]`. If the supplied condition omits the `name` field,
   ///      then a new `[CONDITION_ID]` is created.
   @$pb.TagNumber(2)
-  $2210.FieldMask get updateMask => $_getN(0);
+  $330.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($2210.FieldMask v) { setField(2, v); }
+  set updateMask($330.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
+  $330.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The updated alerting policy or the updated values for the
   /// fields listed in `update_mask`.
   /// If `update_mask` is not empty, any fields in this policy that are
   /// not in `update_mask` are ignored.
   @$pb.TagNumber(3)
-  $1668.AlertPolicy get alertPolicy => $_getN(1);
+  $191.AlertPolicy get alertPolicy => $_getN(1);
   @$pb.TagNumber(3)
-  set alertPolicy($1668.AlertPolicy v) { setField(3, v); }
+  set alertPolicy($191.AlertPolicy v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAlertPolicy() => $_has(1);
   @$pb.TagNumber(3)
   void clearAlertPolicy() => clearField(3);
   @$pb.TagNumber(3)
-  $1668.AlertPolicy ensureAlertPolicy() => $_ensure(1);
+  $191.AlertPolicy ensureAlertPolicy() => $_ensure(1);
 }
 
 /// The protocol for the `DeleteAlertPolicy` request.

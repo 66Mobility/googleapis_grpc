@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $2210;
-import 'resources.pb.dart' as $412;
-import 'resources.pbenum.dart' as $412;
+import '../../../protobuf/field_mask.pb.dart' as $330;
+import 'resources.pb.dart' as $36;
+import 'resources.pbenum.dart' as $36;
 
 /// Message for requesting list of QuotaInfos
 class ListQuotaInfosRequest extends $pb.GeneratedMessage {
@@ -110,7 +110,7 @@ class ListQuotaInfosRequest extends $pb.GeneratedMessage {
 /// Message for response to listing QuotaInfos
 class ListQuotaInfosResponse extends $pb.GeneratedMessage {
   factory ListQuotaInfosResponse({
-    $core.Iterable<$412.QuotaInfo>? quotaInfos,
+    $core.Iterable<$36.QuotaInfo>? quotaInfos,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -127,7 +127,7 @@ class ListQuotaInfosResponse extends $pb.GeneratedMessage {
   factory ListQuotaInfosResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListQuotaInfosResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.cloudquotas.v1'), createEmptyInstance: create)
-    ..pc<$412.QuotaInfo>(1, _omitFieldNames ? '' : 'quotaInfos', $pb.PbFieldType.PM, subBuilder: $412.QuotaInfo.create)
+    ..pc<$36.QuotaInfo>(1, _omitFieldNames ? '' : 'quotaInfos', $pb.PbFieldType.PM, subBuilder: $36.QuotaInfo.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -155,7 +155,7 @@ class ListQuotaInfosResponse extends $pb.GeneratedMessage {
 
   /// The list of QuotaInfo
   @$pb.TagNumber(1)
-  $core.List<$412.QuotaInfo> get quotaInfos => $_getList(0);
+  $core.List<$36.QuotaInfo> get quotaInfos => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.
@@ -359,7 +359,7 @@ class ListQuotaPreferencesRequest extends $pb.GeneratedMessage {
 /// Message for response to listing QuotaPreferences
 class ListQuotaPreferencesResponse extends $pb.GeneratedMessage {
   factory ListQuotaPreferencesResponse({
-    $core.Iterable<$412.QuotaPreference>? quotaPreferences,
+    $core.Iterable<$36.QuotaPreference>? quotaPreferences,
     $core.String? nextPageToken,
     $core.Iterable<$core.String>? unreachable,
   }) {
@@ -380,7 +380,7 @@ class ListQuotaPreferencesResponse extends $pb.GeneratedMessage {
   factory ListQuotaPreferencesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListQuotaPreferencesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.cloudquotas.v1'), createEmptyInstance: create)
-    ..pc<$412.QuotaPreference>(1, _omitFieldNames ? '' : 'quotaPreferences', $pb.PbFieldType.PM, subBuilder: $412.QuotaPreference.create)
+    ..pc<$36.QuotaPreference>(1, _omitFieldNames ? '' : 'quotaPreferences', $pb.PbFieldType.PM, subBuilder: $36.QuotaPreference.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pPS(3, _omitFieldNames ? '' : 'unreachable')
     ..hasRequiredFields = false
@@ -409,7 +409,7 @@ class ListQuotaPreferencesResponse extends $pb.GeneratedMessage {
 
   /// The list of QuotaPreference
   @$pb.TagNumber(1)
-  $core.List<$412.QuotaPreference> get quotaPreferences => $_getList(0);
+  $core.List<$36.QuotaPreference> get quotaPreferences => $_getList(0);
 
   /// A token, which can be sent as `page_token` to retrieve the next page.
   /// If this field is omitted, there are no subsequent pages.
@@ -487,8 +487,8 @@ class CreateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   factory CreateQuotaPreferenceRequest({
     $core.String? parent,
     $core.String? quotaPreferenceId,
-    $412.QuotaPreference? quotaPreference,
-    $core.Iterable<$412.QuotaSafetyCheck>? ignoreSafetyChecks,
+    $36.QuotaPreference? quotaPreference,
+    $core.Iterable<$36.QuotaSafetyCheck>? ignoreSafetyChecks,
   }) {
     final $result = create();
     if (parent != null) {
@@ -512,8 +512,8 @@ class CreateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateQuotaPreferenceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.cloudquotas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'quotaPreferenceId')
-    ..aOM<$412.QuotaPreference>(3, _omitFieldNames ? '' : 'quotaPreference', subBuilder: $412.QuotaPreference.create)
-    ..pc<$412.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'ignoreSafetyChecks', $pb.PbFieldType.KE, valueOf: $412.QuotaSafetyCheck.valueOf, enumValues: $412.QuotaSafetyCheck.values, defaultEnumValue: $412.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..aOM<$36.QuotaPreference>(3, _omitFieldNames ? '' : 'quotaPreference', subBuilder: $36.QuotaPreference.create)
+    ..pc<$36.QuotaSafetyCheck>(4, _omitFieldNames ? '' : 'ignoreSafetyChecks', $pb.PbFieldType.KE, valueOf: $36.QuotaSafetyCheck.valueOf, enumValues: $36.QuotaSafetyCheck.values, defaultEnumValue: $36.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -564,29 +564,29 @@ class CreateQuotaPreferenceRequest extends $pb.GeneratedMessage {
 
   /// Required. The resource being created
   @$pb.TagNumber(3)
-  $412.QuotaPreference get quotaPreference => $_getN(2);
+  $36.QuotaPreference get quotaPreference => $_getN(2);
   @$pb.TagNumber(3)
-  set quotaPreference($412.QuotaPreference v) { setField(3, v); }
+  set quotaPreference($36.QuotaPreference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasQuotaPreference() => $_has(2);
   @$pb.TagNumber(3)
   void clearQuotaPreference() => clearField(3);
   @$pb.TagNumber(3)
-  $412.QuotaPreference ensureQuotaPreference() => $_ensure(2);
+  $36.QuotaPreference ensureQuotaPreference() => $_ensure(2);
 
   /// The list of quota safety checks to be ignored.
   @$pb.TagNumber(4)
-  $core.List<$412.QuotaSafetyCheck> get ignoreSafetyChecks => $_getList(3);
+  $core.List<$36.QuotaSafetyCheck> get ignoreSafetyChecks => $_getList(3);
 }
 
 /// Message for updating a QuotaPreference
 class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   factory UpdateQuotaPreferenceRequest({
-    $2210.FieldMask? updateMask,
-    $412.QuotaPreference? quotaPreference,
+    $330.FieldMask? updateMask,
+    $36.QuotaPreference? quotaPreference,
     $core.bool? allowMissing,
     $core.bool? validateOnly,
-    $core.Iterable<$412.QuotaSafetyCheck>? ignoreSafetyChecks,
+    $core.Iterable<$36.QuotaSafetyCheck>? ignoreSafetyChecks,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -611,11 +611,11 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   factory UpdateQuotaPreferenceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateQuotaPreferenceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.cloudquotas.v1'), createEmptyInstance: create)
-    ..aOM<$2210.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $2210.FieldMask.create)
-    ..aOM<$412.QuotaPreference>(2, _omitFieldNames ? '' : 'quotaPreference', subBuilder: $412.QuotaPreference.create)
+    ..aOM<$330.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$36.QuotaPreference>(2, _omitFieldNames ? '' : 'quotaPreference', subBuilder: $36.QuotaPreference.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
-    ..pc<$412.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'ignoreSafetyChecks', $pb.PbFieldType.KE, valueOf: $412.QuotaSafetyCheck.valueOf, enumValues: $412.QuotaSafetyCheck.values, defaultEnumValue: $412.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
+    ..pc<$36.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'ignoreSafetyChecks', $pb.PbFieldType.KE, valueOf: $36.QuotaSafetyCheck.valueOf, enumValues: $36.QuotaSafetyCheck.values, defaultEnumValue: $36.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -646,27 +646,27 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $2210.FieldMask get updateMask => $_getN(0);
+  $330.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($2210.FieldMask v) { setField(1, v); }
+  set updateMask($330.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $2210.FieldMask ensureUpdateMask() => $_ensure(0);
+  $330.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)
-  $412.QuotaPreference get quotaPreference => $_getN(1);
+  $36.QuotaPreference get quotaPreference => $_getN(1);
   @$pb.TagNumber(2)
-  set quotaPreference($412.QuotaPreference v) { setField(2, v); }
+  set quotaPreference($36.QuotaPreference v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasQuotaPreference() => $_has(1);
   @$pb.TagNumber(2)
   void clearQuotaPreference() => clearField(2);
   @$pb.TagNumber(2)
-  $412.QuotaPreference ensureQuotaPreference() => $_ensure(1);
+  $36.QuotaPreference ensureQuotaPreference() => $_ensure(1);
 
   /// Optional. If set to true, and the quota preference is not found, a new one
   /// will be created. In this situation, `update_mask` is ignored.
@@ -693,7 +693,7 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
 
   /// The list of quota safety checks to be ignored.
   @$pb.TagNumber(5)
-  $core.List<$412.QuotaSafetyCheck> get ignoreSafetyChecks => $_getList(4);
+  $core.List<$36.QuotaSafetyCheck> get ignoreSafetyChecks => $_getList(4);
 }
 
 
