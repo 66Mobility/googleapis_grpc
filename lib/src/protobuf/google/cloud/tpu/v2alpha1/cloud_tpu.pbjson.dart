@@ -1,0 +1,1104 @@
+//
+//  Generated code. Do not modify.
+//  source: google/cloud/tpu/v2alpha1/cloud_tpu.proto
+//
+// @dart = 2.12
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+
+import 'dart:convert' as $convert;
+import 'dart:core' as $core;
+import 'dart:typed_data' as $typed_data;
+
+@$core.Deprecated('Use guestAttributesDescriptor instead')
+const GuestAttributes$json = {
+  '1': 'GuestAttributes',
+  '2': [
+    {'1': 'query_path', '3': 1, '4': 1, '5': 9, '10': 'queryPath'},
+    {'1': 'query_value', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.GuestAttributesValue', '10': 'queryValue'},
+  ],
+};
+
+/// Descriptor for `GuestAttributes`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List guestAttributesDescriptor = $convert.base64Decode(
+    'Cg9HdWVzdEF0dHJpYnV0ZXMSHQoKcXVlcnlfcGF0aBgBIAEoCVIJcXVlcnlQYXRoElAKC3F1ZX'
+    'J5X3ZhbHVlGAIgASgLMi8uZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5HdWVzdEF0dHJpYnV0'
+    'ZXNWYWx1ZVIKcXVlcnlWYWx1ZQ==');
+
+@$core.Deprecated('Use guestAttributesValueDescriptor instead')
+const GuestAttributesValue$json = {
+  '1': 'GuestAttributesValue',
+  '2': [
+    {'1': 'items', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.GuestAttributesEntry', '10': 'items'},
+  ],
+};
+
+/// Descriptor for `GuestAttributesValue`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List guestAttributesValueDescriptor = $convert.base64Decode(
+    'ChRHdWVzdEF0dHJpYnV0ZXNWYWx1ZRJFCgVpdGVtcxgBIAMoCzIvLmdvb2dsZS5jbG91ZC50cH'
+    'UudjJhbHBoYTEuR3Vlc3RBdHRyaWJ1dGVzRW50cnlSBWl0ZW1z');
+
+@$core.Deprecated('Use guestAttributesEntryDescriptor instead')
+const GuestAttributesEntry$json = {
+  '1': 'GuestAttributesEntry',
+  '2': [
+    {'1': 'namespace', '3': 1, '4': 1, '5': 9, '10': 'namespace'},
+    {'1': 'key', '3': 2, '4': 1, '5': 9, '10': 'key'},
+    {'1': 'value', '3': 3, '4': 1, '5': 9, '10': 'value'},
+  ],
+};
+
+/// Descriptor for `GuestAttributesEntry`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List guestAttributesEntryDescriptor = $convert.base64Decode(
+    'ChRHdWVzdEF0dHJpYnV0ZXNFbnRyeRIcCgluYW1lc3BhY2UYASABKAlSCW5hbWVzcGFjZRIQCg'
+    'NrZXkYAiABKAlSA2tleRIUCgV2YWx1ZRgDIAEoCVIFdmFsdWU=');
+
+@$core.Deprecated('Use attachedDiskDescriptor instead')
+const AttachedDisk$json = {
+  '1': 'AttachedDisk',
+  '2': [
+    {'1': 'source_disk', '3': 3, '4': 1, '5': 9, '10': 'sourceDisk'},
+    {'1': 'mode', '3': 4, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.AttachedDisk.DiskMode', '10': 'mode'},
+  ],
+  '4': [AttachedDisk_DiskMode$json],
+};
+
+@$core.Deprecated('Use attachedDiskDescriptor instead')
+const AttachedDisk_DiskMode$json = {
+  '1': 'DiskMode',
+  '2': [
+    {'1': 'DISK_MODE_UNSPECIFIED', '2': 0},
+    {'1': 'READ_WRITE', '2': 1},
+    {'1': 'READ_ONLY', '2': 2},
+  ],
+};
+
+/// Descriptor for `AttachedDisk`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List attachedDiskDescriptor = $convert.base64Decode(
+    'CgxBdHRhY2hlZERpc2sSHwoLc291cmNlX2Rpc2sYAyABKAlSCnNvdXJjZURpc2sSRAoEbW9kZR'
+    'gEIAEoDjIwLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuQXR0YWNoZWREaXNrLkRpc2tNb2Rl'
+    'UgRtb2RlIkQKCERpc2tNb2RlEhkKFURJU0tfTU9ERV9VTlNQRUNJRklFRBAAEg4KClJFQURfV1'
+    'JJVEUQARINCglSRUFEX09OTFkQAg==');
+
+@$core.Deprecated('Use schedulingConfigDescriptor instead')
+const SchedulingConfig$json = {
+  '1': 'SchedulingConfig',
+  '2': [
+    {'1': 'preemptible', '3': 1, '4': 1, '5': 8, '10': 'preemptible'},
+    {'1': 'reserved', '3': 2, '4': 1, '5': 8, '10': 'reserved'},
+  ],
+};
+
+/// Descriptor for `SchedulingConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List schedulingConfigDescriptor = $convert.base64Decode(
+    'ChBTY2hlZHVsaW5nQ29uZmlnEiAKC3ByZWVtcHRpYmxlGAEgASgIUgtwcmVlbXB0aWJsZRIaCg'
+    'hyZXNlcnZlZBgCIAEoCFIIcmVzZXJ2ZWQ=');
+
+@$core.Deprecated('Use networkEndpointDescriptor instead')
+const NetworkEndpoint$json = {
+  '1': 'NetworkEndpoint',
+  '2': [
+    {'1': 'ip_address', '3': 1, '4': 1, '5': 9, '10': 'ipAddress'},
+    {'1': 'port', '3': 2, '4': 1, '5': 5, '10': 'port'},
+    {'1': 'access_config', '3': 5, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.AccessConfig', '10': 'accessConfig'},
+  ],
+};
+
+/// Descriptor for `NetworkEndpoint`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List networkEndpointDescriptor = $convert.base64Decode(
+    'Cg9OZXR3b3JrRW5kcG9pbnQSHQoKaXBfYWRkcmVzcxgBIAEoCVIJaXBBZGRyZXNzEhIKBHBvcn'
+    'QYAiABKAVSBHBvcnQSTAoNYWNjZXNzX2NvbmZpZxgFIAEoCzInLmdvb2dsZS5jbG91ZC50cHUu'
+    'djJhbHBoYTEuQWNjZXNzQ29uZmlnUgxhY2Nlc3NDb25maWc=');
+
+@$core.Deprecated('Use accessConfigDescriptor instead')
+const AccessConfig$json = {
+  '1': 'AccessConfig',
+  '2': [
+    {'1': 'external_ip', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'externalIp'},
+  ],
+};
+
+/// Descriptor for `AccessConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List accessConfigDescriptor = $convert.base64Decode(
+    'CgxBY2Nlc3NDb25maWcSJAoLZXh0ZXJuYWxfaXAYASABKAlCA+BBA1IKZXh0ZXJuYWxJcA==');
+
+@$core.Deprecated('Use networkConfigDescriptor instead')
+const NetworkConfig$json = {
+  '1': 'NetworkConfig',
+  '2': [
+    {'1': 'network', '3': 1, '4': 1, '5': 9, '10': 'network'},
+    {'1': 'subnetwork', '3': 2, '4': 1, '5': 9, '10': 'subnetwork'},
+    {'1': 'enable_external_ips', '3': 3, '4': 1, '5': 8, '10': 'enableExternalIps'},
+    {'1': 'can_ip_forward', '3': 4, '4': 1, '5': 8, '10': 'canIpForward'},
+  ],
+};
+
+/// Descriptor for `NetworkConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List networkConfigDescriptor = $convert.base64Decode(
+    'Cg1OZXR3b3JrQ29uZmlnEhgKB25ldHdvcmsYASABKAlSB25ldHdvcmsSHgoKc3VibmV0d29yax'
+    'gCIAEoCVIKc3VibmV0d29yaxIuChNlbmFibGVfZXh0ZXJuYWxfaXBzGAMgASgIUhFlbmFibGVF'
+    'eHRlcm5hbElwcxIkCg5jYW5faXBfZm9yd2FyZBgEIAEoCFIMY2FuSXBGb3J3YXJk');
+
+@$core.Deprecated('Use serviceAccountDescriptor instead')
+const ServiceAccount$json = {
+  '1': 'ServiceAccount',
+  '2': [
+    {'1': 'email', '3': 1, '4': 1, '5': 9, '10': 'email'},
+    {'1': 'scope', '3': 2, '4': 3, '5': 9, '10': 'scope'},
+  ],
+};
+
+/// Descriptor for `ServiceAccount`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List serviceAccountDescriptor = $convert.base64Decode(
+    'Cg5TZXJ2aWNlQWNjb3VudBIUCgVlbWFpbBgBIAEoCVIFZW1haWwSFAoFc2NvcGUYAiADKAlSBX'
+    'Njb3Bl');
+
+@$core.Deprecated('Use nodeDescriptor instead')
+const Node$json = {
+  '1': 'Node',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
+    {'1': 'accelerator_type', '3': 5, '4': 1, '5': 9, '10': 'acceleratorType'},
+    {'1': 'state', '3': 9, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.Node.State', '8': {}, '10': 'state'},
+    {'1': 'health_description', '3': 10, '4': 1, '5': 9, '8': {}, '10': 'healthDescription'},
+    {'1': 'runtime_version', '3': 11, '4': 1, '5': 9, '8': {}, '10': 'runtimeVersion'},
+    {'1': 'network_config', '3': 36, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.NetworkConfig', '10': 'networkConfig'},
+    {'1': 'cidr_block', '3': 13, '4': 1, '5': 9, '10': 'cidrBlock'},
+    {'1': 'service_account', '3': 37, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.ServiceAccount', '10': 'serviceAccount'},
+    {'1': 'create_time', '3': 16, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
+    {'1': 'scheduling_config', '3': 17, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.SchedulingConfig', '10': 'schedulingConfig'},
+    {'1': 'network_endpoints', '3': 21, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.NetworkEndpoint', '8': {}, '10': 'networkEndpoints'},
+    {'1': 'health', '3': 22, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.Node.Health', '10': 'health'},
+    {'1': 'labels', '3': 24, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.Node.LabelsEntry', '10': 'labels'},
+    {'1': 'metadata', '3': 34, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.Node.MetadataEntry', '10': 'metadata'},
+    {'1': 'tags', '3': 40, '4': 3, '5': 9, '10': 'tags'},
+    {'1': 'id', '3': 33, '4': 1, '5': 3, '8': {}, '10': 'id'},
+    {'1': 'data_disks', '3': 41, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.AttachedDisk', '10': 'dataDisks'},
+    {'1': 'api_version', '3': 38, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.Node.ApiVersion', '8': {}, '10': 'apiVersion'},
+    {'1': 'symptoms', '3': 39, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.Symptom', '8': {}, '10': 'symptoms'},
+    {'1': 'queued_resource', '3': 43, '4': 1, '5': 9, '8': {}, '10': 'queuedResource'},
+    {'1': 'accelerator_config', '3': 44, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.AcceleratorConfig', '10': 'acceleratorConfig'},
+    {'1': 'shielded_instance_config', '3': 45, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.ShieldedInstanceConfig', '10': 'shieldedInstanceConfig'},
+    {'1': 'multislice_node', '3': 47, '4': 1, '5': 8, '8': {}, '10': 'multisliceNode'},
+    {'1': 'boot_disk_config', '3': 49, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.BootDiskConfig', '8': {}, '10': 'bootDiskConfig'},
+  ],
+  '3': [Node_LabelsEntry$json, Node_MetadataEntry$json],
+  '4': [Node_State$json, Node_Health$json, Node_ApiVersion$json],
+  '7': {},
+};
+
+@$core.Deprecated('Use nodeDescriptor instead')
+const Node_LabelsEntry$json = {
+  '1': 'LabelsEntry',
+  '2': [
+    {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
+    {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
+  ],
+  '7': {'7': true},
+};
+
+@$core.Deprecated('Use nodeDescriptor instead')
+const Node_MetadataEntry$json = {
+  '1': 'MetadataEntry',
+  '2': [
+    {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
+    {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
+  ],
+  '7': {'7': true},
+};
+
+@$core.Deprecated('Use nodeDescriptor instead')
+const Node_State$json = {
+  '1': 'State',
+  '2': [
+    {'1': 'STATE_UNSPECIFIED', '2': 0},
+    {'1': 'CREATING', '2': 1},
+    {'1': 'READY', '2': 2},
+    {'1': 'RESTARTING', '2': 3},
+    {'1': 'REIMAGING', '2': 4},
+    {'1': 'DELETING', '2': 5},
+    {'1': 'REPAIRING', '2': 6},
+    {'1': 'STOPPED', '2': 8},
+    {'1': 'STOPPING', '2': 9},
+    {'1': 'STARTING', '2': 10},
+    {'1': 'PREEMPTED', '2': 11},
+    {'1': 'TERMINATED', '2': 12},
+    {'1': 'HIDING', '2': 13},
+    {'1': 'HIDDEN', '2': 14},
+    {'1': 'UNHIDING', '2': 15},
+  ],
+};
+
+@$core.Deprecated('Use nodeDescriptor instead')
+const Node_Health$json = {
+  '1': 'Health',
+  '2': [
+    {'1': 'HEALTH_UNSPECIFIED', '2': 0},
+    {'1': 'HEALTHY', '2': 1},
+    {'1': 'TIMEOUT', '2': 3},
+    {'1': 'UNHEALTHY_TENSORFLOW', '2': 4},
+    {'1': 'UNHEALTHY_MAINTENANCE', '2': 5},
+  ],
+};
+
+@$core.Deprecated('Use nodeDescriptor instead')
+const Node_ApiVersion$json = {
+  '1': 'ApiVersion',
+  '2': [
+    {'1': 'API_VERSION_UNSPECIFIED', '2': 0},
+    {'1': 'V1_ALPHA1', '2': 1},
+    {'1': 'V1', '2': 2},
+    {'1': 'V2_ALPHA1', '2': 3},
+  ],
+};
+
+/// Descriptor for `Node`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List nodeDescriptor = $convert.base64Decode(
+    'CgROb2RlEhoKBG5hbWUYASABKAlCBuBBA+BBBVIEbmFtZRIgCgtkZXNjcmlwdGlvbhgDIAEoCV'
+    'ILZGVzY3JpcHRpb24SKQoQYWNjZWxlcmF0b3JfdHlwZRgFIAEoCVIPYWNjZWxlcmF0b3JUeXBl'
+    'EkAKBXN0YXRlGAkgASgOMiUuZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5Ob2RlLlN0YXRlQg'
+    'PgQQNSBXN0YXRlEjIKEmhlYWx0aF9kZXNjcmlwdGlvbhgKIAEoCUID4EEDUhFoZWFsdGhEZXNj'
+    'cmlwdGlvbhIsCg9ydW50aW1lX3ZlcnNpb24YCyABKAlCA+BBAlIOcnVudGltZVZlcnNpb24STw'
+    'oObmV0d29ya19jb25maWcYJCABKAsyKC5nb29nbGUuY2xvdWQudHB1LnYyYWxwaGExLk5ldHdv'
+    'cmtDb25maWdSDW5ldHdvcmtDb25maWcSHQoKY2lkcl9ibG9jaxgNIAEoCVIJY2lkckJsb2NrEl'
+    'IKD3NlcnZpY2VfYWNjb3VudBglIAEoCzIpLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuU2Vy'
+    'dmljZUFjY291bnRSDnNlcnZpY2VBY2NvdW50EkAKC2NyZWF0ZV90aW1lGBAgASgLMhouZ29vZ2'
+    'xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDUgpjcmVhdGVUaW1lElgKEXNjaGVkdWxpbmdfY29u'
+    'ZmlnGBEgASgLMisuZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5TY2hlZHVsaW5nQ29uZmlnUh'
+    'BzY2hlZHVsaW5nQ29uZmlnElwKEW5ldHdvcmtfZW5kcG9pbnRzGBUgAygLMiouZ29vZ2xlLmNs'
+    'b3VkLnRwdS52MmFscGhhMS5OZXR3b3JrRW5kcG9pbnRCA+BBA1IQbmV0d29ya0VuZHBvaW50cx'
+    'I+CgZoZWFsdGgYFiABKA4yJi5nb29nbGUuY2xvdWQudHB1LnYyYWxwaGExLk5vZGUuSGVhbHRo'
+    'UgZoZWFsdGgSQwoGbGFiZWxzGBggAygLMisuZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5Ob2'
+    'RlLkxhYmVsc0VudHJ5UgZsYWJlbHMSSQoIbWV0YWRhdGEYIiADKAsyLS5nb29nbGUuY2xvdWQu'
+    'dHB1LnYyYWxwaGExLk5vZGUuTWV0YWRhdGFFbnRyeVIIbWV0YWRhdGESEgoEdGFncxgoIAMoCV'
+    'IEdGFncxITCgJpZBghIAEoA0ID4EEDUgJpZBJGCgpkYXRhX2Rpc2tzGCkgAygLMicuZ29vZ2xl'
+    'LmNsb3VkLnRwdS52MmFscGhhMS5BdHRhY2hlZERpc2tSCWRhdGFEaXNrcxJQCgthcGlfdmVyc2'
+    'lvbhgmIAEoDjIqLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuTm9kZS5BcGlWZXJzaW9uQgPg'
+    'QQNSCmFwaVZlcnNpb24SQwoIc3ltcHRvbXMYJyADKAsyIi5nb29nbGUuY2xvdWQudHB1LnYyYW'
+    'xwaGExLlN5bXB0b21CA+BBA1IIc3ltcHRvbXMSLAoPcXVldWVkX3Jlc291cmNlGCsgASgJQgPg'
+    'QQNSDnF1ZXVlZFJlc291cmNlElsKEmFjY2VsZXJhdG9yX2NvbmZpZxgsIAEoCzIsLmdvb2dsZS'
+    '5jbG91ZC50cHUudjJhbHBoYTEuQWNjZWxlcmF0b3JDb25maWdSEWFjY2VsZXJhdG9yQ29uZmln'
+    'EmsKGHNoaWVsZGVkX2luc3RhbmNlX2NvbmZpZxgtIAEoCzIxLmdvb2dsZS5jbG91ZC50cHUudj'
+    'JhbHBoYTEuU2hpZWxkZWRJbnN0YW5jZUNvbmZpZ1IWc2hpZWxkZWRJbnN0YW5jZUNvbmZpZxIs'
+    'Cg9tdWx0aXNsaWNlX25vZGUYLyABKAhCA+BBA1IObXVsdGlzbGljZU5vZGUSWAoQYm9vdF9kaX'
+    'NrX2NvbmZpZxgxIAEoCzIpLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuQm9vdERpc2tDb25m'
+    'aWdCA+BBAVIOYm9vdERpc2tDb25maWcaOQoLTGFiZWxzRW50cnkSEAoDa2V5GAEgASgJUgNrZX'
+    'kSFAoFdmFsdWUYAiABKAlSBXZhbHVlOgI4ARo7Cg1NZXRhZGF0YUVudHJ5EhAKA2tleRgBIAEo'
+    'CVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAEi4QEKBVN0YXRlEhUKEVNUQVRFX1VOU1'
+    'BFQ0lGSUVEEAASDAoIQ1JFQVRJTkcQARIJCgVSRUFEWRACEg4KClJFU1RBUlRJTkcQAxINCglS'
+    'RUlNQUdJTkcQBBIMCghERUxFVElORxAFEg0KCVJFUEFJUklORxAGEgsKB1NUT1BQRUQQCBIMCg'
+    'hTVE9QUElORxAJEgwKCFNUQVJUSU5HEAoSDQoJUFJFRU1QVEVEEAsSDgoKVEVSTUlOQVRFRBAM'
+    'EgoKBkhJRElORxANEgoKBkhJRERFThAOEgwKCFVOSElESU5HEA8ibwoGSGVhbHRoEhYKEkhFQU'
+    'xUSF9VTlNQRUNJRklFRBAAEgsKB0hFQUxUSFkQARILCgdUSU1FT1VUEAMSGAoUVU5IRUFMVEhZ'
+    'X1RFTlNPUkZMT1cQBBIZChVVTkhFQUxUSFlfTUFJTlRFTkFOQ0UQBSJPCgpBcGlWZXJzaW9uEh'
+    'sKF0FQSV9WRVJTSU9OX1VOU1BFQ0lGSUVEEAASDQoJVjFfQUxQSEExEAESBgoCVjEQAhINCglW'
+    'Ml9BTFBIQTEQAzpS6kFPChd0cHUuZ29vZ2xlYXBpcy5jb20vTm9kZRI0cHJvamVjdHMve3Byb2'
+    'plY3R9L2xvY2F0aW9ucy97bG9jYXRpb259L25vZGVzL3tub2RlfQ==');
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource$json = {
+  '1': 'QueuedResource',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'tpu', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource.Tpu', '9': 0, '10': 'tpu'},
+    {'1': 'best_effort', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource.BestEffort', '9': 1, '10': 'bestEffort'},
+    {'1': 'guaranteed', '3': 4, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource.Guaranteed', '9': 1, '10': 'guaranteed'},
+    {'1': 'spot', '3': 9, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource.Spot', '8': {}, '9': 1, '10': 'spot'},
+    {'1': 'queueing_policy', '3': 5, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource.QueueingPolicy', '10': 'queueingPolicy'},
+    {'1': 'state', '3': 6, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState', '8': {}, '10': 'state'},
+    {'1': 'reservation_name', '3': 8, '4': 1, '5': 9, '10': 'reservationName'},
+  ],
+  '3': [QueuedResource_Tpu$json, QueuedResource_BestEffort$json, QueuedResource_Spot$json, QueuedResource_Guaranteed$json, QueuedResource_QueueingPolicy$json],
+  '7': {},
+  '8': [
+    {'1': 'resource'},
+    {'1': 'tier'},
+  ],
+};
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource_Tpu$json = {
+  '1': 'Tpu',
+  '2': [
+    {'1': 'node_spec', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource.Tpu.NodeSpec', '10': 'nodeSpec'},
+  ],
+  '3': [QueuedResource_Tpu_NodeSpec$json],
+};
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource_Tpu_NodeSpec$json = {
+  '1': 'NodeSpec',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'node_id', '3': 2, '4': 1, '5': 9, '10': 'nodeId'},
+    {'1': 'multi_node_params', '3': 6, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource.Tpu.NodeSpec.MultiNodeParams', '8': {}, '10': 'multiNodeParams'},
+    {'1': 'node', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.Node', '8': {}, '10': 'node'},
+  ],
+  '3': [QueuedResource_Tpu_NodeSpec_MultiNodeParams$json],
+};
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource_Tpu_NodeSpec_MultiNodeParams$json = {
+  '1': 'MultiNodeParams',
+  '2': [
+    {'1': 'node_count', '3': 1, '4': 1, '5': 5, '8': {}, '10': 'nodeCount'},
+    {'1': 'node_id_prefix', '3': 2, '4': 1, '5': 9, '10': 'nodeIdPrefix'},
+  ],
+};
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource_BestEffort$json = {
+  '1': 'BestEffort',
+};
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource_Spot$json = {
+  '1': 'Spot',
+};
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource_Guaranteed$json = {
+  '1': 'Guaranteed',
+  '2': [
+    {'1': 'min_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'minDuration'},
+    {'1': 'reserved', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'reserved'},
+  ],
+};
+
+@$core.Deprecated('Use queuedResourceDescriptor instead')
+const QueuedResource_QueueingPolicy$json = {
+  '1': 'QueueingPolicy',
+  '2': [
+    {'1': 'valid_until_duration', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'validUntilDuration'},
+    {'1': 'valid_until_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'validUntilTime'},
+    {'1': 'valid_after_duration', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '9': 0, '10': 'validAfterDuration'},
+    {'1': 'valid_after_time', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '9': 0, '10': 'validAfterTime'},
+    {'1': 'valid_interval', '3': 5, '4': 1, '5': 11, '6': '.google.type.Interval', '9': 0, '10': 'validInterval'},
+  ],
+  '8': [
+    {'1': 'start_timing_constraints'},
+  ],
+};
+
+/// Descriptor for `QueuedResource`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List queuedResourceDescriptor = $convert.base64Decode(
+    'Cg5RdWV1ZWRSZXNvdXJjZRIaCgRuYW1lGAEgASgJQgbgQQPgQQVSBG5hbWUSQQoDdHB1GAIgAS'
+    'gLMi0uZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5RdWV1ZWRSZXNvdXJjZS5UcHVIAFIDdHB1'
+    'ElcKC2Jlc3RfZWZmb3J0GAMgASgLMjQuZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5RdWV1ZW'
+    'RSZXNvdXJjZS5CZXN0RWZmb3J0SAFSCmJlc3RFZmZvcnQSVgoKZ3VhcmFudGVlZBgEIAEoCzI0'
+    'Lmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuUXVldWVkUmVzb3VyY2UuR3VhcmFudGVlZEgBUg'
+    'pndWFyYW50ZWVkEkkKBHNwb3QYCSABKAsyLi5nb29nbGUuY2xvdWQudHB1LnYyYWxwaGExLlF1'
+    'ZXVlZFJlc291cmNlLlNwb3RCA+BBAUgBUgRzcG90EmEKD3F1ZXVlaW5nX3BvbGljeRgFIAEoCz'
+    'I4Lmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuUXVldWVkUmVzb3VyY2UuUXVldWVpbmdQb2xp'
+    'Y3lSDnF1ZXVlaW5nUG9saWN5EkkKBXN0YXRlGAYgASgLMi4uZ29vZ2xlLmNsb3VkLnRwdS52Mm'
+    'FscGhhMS5RdWV1ZWRSZXNvdXJjZVN0YXRlQgPgQQNSBXN0YXRlEikKEHJlc2VydmF0aW9uX25h'
+    'bWUYCCABKAlSD3Jlc2VydmF0aW9uTmFtZRrTAwoDVHB1ElMKCW5vZGVfc3BlYxgBIAMoCzI2Lm'
+    'dvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuUXVldWVkUmVzb3VyY2UuVHB1Lk5vZGVTcGVjUghu'
+    'b2RlU3BlYxr2AgoITm9kZVNwZWMSQQoGcGFyZW50GAEgASgJQingQQL6QSMKIWxvY2F0aW9ucy'
+    '5nb29nbGVhcGlzLmNvbS9Mb2NhdGlvblIGcGFyZW50EhcKB25vZGVfaWQYAiABKAlSBm5vZGVJ'
+    'ZBJ3ChFtdWx0aV9ub2RlX3BhcmFtcxgGIAEoCzJGLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYT'
+    'EuUXVldWVkUmVzb3VyY2UuVHB1Lk5vZGVTcGVjLk11bHRpTm9kZVBhcmFtc0ID4EEBUg9tdWx0'
+    'aU5vZGVQYXJhbXMSOAoEbm9kZRgDIAEoCzIfLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuTm'
+    '9kZUID4EECUgRub2RlGlsKD011bHRpTm9kZVBhcmFtcxIiCgpub2RlX2NvdW50GAEgASgFQgPg'
+    'QQJSCW5vZGVDb3VudBIkCg5ub2RlX2lkX3ByZWZpeBgCIAEoCVIMbm9kZUlkUHJlZml4GgwKCk'
+    'Jlc3RFZmZvcnQaBgoEU3BvdBpwCgpHdWFyYW50ZWVkEkEKDG1pbl9kdXJhdGlvbhgBIAEoCzIZ'
+    'Lmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkID4EEBUgttaW5EdXJhdGlvbhIfCghyZXNlcnZlZB'
+    'gCIAEoCEID4EEBUghyZXNlcnZlZBqaAwoOUXVldWVpbmdQb2xpY3kSTQoUdmFsaWRfdW50aWxf'
+    'ZHVyYXRpb24YASABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25IAFISdmFsaWRVbnRpbE'
+    'R1cmF0aW9uEkYKEHZhbGlkX3VudGlsX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt'
+    'ZXN0YW1wSABSDnZhbGlkVW50aWxUaW1lEk0KFHZhbGlkX2FmdGVyX2R1cmF0aW9uGAMgASgLMh'
+    'kuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uSABSEnZhbGlkQWZ0ZXJEdXJhdGlvbhJGChB2YWxp'
+    'ZF9hZnRlcl90aW1lGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgAUg52YWxpZE'
+    'FmdGVyVGltZRI+Cg52YWxpZF9pbnRlcnZhbBgFIAEoCzIVLmdvb2dsZS50eXBlLkludGVydmFs'
+    'SABSDXZhbGlkSW50ZXJ2YWxCGgoYc3RhcnRfdGltaW5nX2NvbnN0cmFpbnRzOnHqQW4KIXRwdS'
+    '5nb29nbGVhcGlzLmNvbS9RdWV1ZWRSZXNvdXJjZRJJcHJvamVjdHMve3Byb2plY3R9L2xvY2F0'
+    'aW9ucy97bG9jYXRpb259L3F1ZXVlZFJlc291cmNlcy97cXVldWVkX3Jlc291cmNlfUIKCghyZX'
+    'NvdXJjZUIGCgR0aWVy');
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState$json = {
+  '1': 'QueuedResourceState',
+  '2': [
+    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.State', '10': 'state'},
+    {'1': 'creating_data', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.CreatingData', '9': 0, '10': 'creatingData'},
+    {'1': 'accepted_data', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.AcceptedData', '9': 0, '10': 'acceptedData'},
+    {'1': 'provisioning_data', '3': 4, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.ProvisioningData', '9': 0, '10': 'provisioningData'},
+    {'1': 'failed_data', '3': 5, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.FailedData', '9': 0, '10': 'failedData'},
+    {'1': 'deleting_data', '3': 6, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.DeletingData', '9': 0, '10': 'deletingData'},
+    {'1': 'active_data', '3': 7, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.ActiveData', '9': 0, '10': 'activeData'},
+    {'1': 'suspending_data', '3': 8, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.SuspendingData', '9': 0, '10': 'suspendingData'},
+    {'1': 'suspended_data', '3': 9, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.SuspendedData', '9': 0, '10': 'suspendedData'},
+    {'1': 'state_initiator', '3': 10, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.QueuedResourceState.StateInitiator', '8': {}, '10': 'stateInitiator'},
+  ],
+  '3': [QueuedResourceState_CreatingData$json, QueuedResourceState_AcceptedData$json, QueuedResourceState_ProvisioningData$json, QueuedResourceState_FailedData$json, QueuedResourceState_DeletingData$json, QueuedResourceState_ActiveData$json, QueuedResourceState_SuspendingData$json, QueuedResourceState_SuspendedData$json],
+  '4': [QueuedResourceState_State$json, QueuedResourceState_StateInitiator$json],
+  '8': [
+    {'1': 'state_data'},
+  ],
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_CreatingData$json = {
+  '1': 'CreatingData',
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_AcceptedData$json = {
+  '1': 'AcceptedData',
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_ProvisioningData$json = {
+  '1': 'ProvisioningData',
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_FailedData$json = {
+  '1': 'FailedData',
+  '2': [
+    {'1': 'error', '3': 1, '4': 1, '5': 11, '6': '.google.rpc.Status', '10': 'error'},
+  ],
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_DeletingData$json = {
+  '1': 'DeletingData',
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_ActiveData$json = {
+  '1': 'ActiveData',
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_SuspendingData$json = {
+  '1': 'SuspendingData',
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_SuspendedData$json = {
+  '1': 'SuspendedData',
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_State$json = {
+  '1': 'State',
+  '2': [
+    {'1': 'STATE_UNSPECIFIED', '2': 0},
+    {'1': 'CREATING', '2': 1},
+    {'1': 'ACCEPTED', '2': 2},
+    {'1': 'PROVISIONING', '2': 3},
+    {'1': 'FAILED', '2': 4},
+    {'1': 'DELETING', '2': 5},
+    {'1': 'ACTIVE', '2': 6},
+    {'1': 'SUSPENDING', '2': 7},
+    {'1': 'SUSPENDED', '2': 8},
+    {'1': 'WAITING_FOR_RESOURCES', '2': 9},
+  ],
+};
+
+@$core.Deprecated('Use queuedResourceStateDescriptor instead')
+const QueuedResourceState_StateInitiator$json = {
+  '1': 'StateInitiator',
+  '2': [
+    {'1': 'STATE_INITIATOR_UNSPECIFIED', '2': 0},
+    {'1': 'USER', '2': 1},
+    {'1': 'SERVICE', '2': 2},
+  ],
+};
+
+/// Descriptor for `QueuedResourceState`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List queuedResourceStateDescriptor = $convert.base64Decode(
+    'ChNRdWV1ZWRSZXNvdXJjZVN0YXRlEkoKBXN0YXRlGAEgASgOMjQuZ29vZ2xlLmNsb3VkLnRwdS'
+    '52MmFscGhhMS5RdWV1ZWRSZXNvdXJjZVN0YXRlLlN0YXRlUgVzdGF0ZRJiCg1jcmVhdGluZ19k'
+    'YXRhGAIgASgLMjsuZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5RdWV1ZWRSZXNvdXJjZVN0YX'
+    'RlLkNyZWF0aW5nRGF0YUgAUgxjcmVhdGluZ0RhdGESYgoNYWNjZXB0ZWRfZGF0YRgDIAEoCzI7'
+    'Lmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuUXVldWVkUmVzb3VyY2VTdGF0ZS5BY2NlcHRlZE'
+    'RhdGFIAFIMYWNjZXB0ZWREYXRhEm4KEXByb3Zpc2lvbmluZ19kYXRhGAQgASgLMj8uZ29vZ2xl'
+    'LmNsb3VkLnRwdS52MmFscGhhMS5RdWV1ZWRSZXNvdXJjZVN0YXRlLlByb3Zpc2lvbmluZ0RhdG'
+    'FIAFIQcHJvdmlzaW9uaW5nRGF0YRJcCgtmYWlsZWRfZGF0YRgFIAEoCzI5Lmdvb2dsZS5jbG91'
+    'ZC50cHUudjJhbHBoYTEuUXVldWVkUmVzb3VyY2VTdGF0ZS5GYWlsZWREYXRhSABSCmZhaWxlZE'
+    'RhdGESYgoNZGVsZXRpbmdfZGF0YRgGIAEoCzI7Lmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEu'
+    'UXVldWVkUmVzb3VyY2VTdGF0ZS5EZWxldGluZ0RhdGFIAFIMZGVsZXRpbmdEYXRhElwKC2FjdG'
+    'l2ZV9kYXRhGAcgASgLMjkuZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5RdWV1ZWRSZXNvdXJj'
+    'ZVN0YXRlLkFjdGl2ZURhdGFIAFIKYWN0aXZlRGF0YRJoCg9zdXNwZW5kaW5nX2RhdGEYCCABKA'
+    'syPS5nb29nbGUuY2xvdWQudHB1LnYyYWxwaGExLlF1ZXVlZFJlc291cmNlU3RhdGUuU3VzcGVu'
+    'ZGluZ0RhdGFIAFIOc3VzcGVuZGluZ0RhdGESZQoOc3VzcGVuZGVkX2RhdGEYCSABKAsyPC5nb2'
+    '9nbGUuY2xvdWQudHB1LnYyYWxwaGExLlF1ZXVlZFJlc291cmNlU3RhdGUuU3VzcGVuZGVkRGF0'
+    'YUgAUg1zdXNwZW5kZWREYXRhEmsKD3N0YXRlX2luaXRpYXRvchgKIAEoDjI9Lmdvb2dsZS5jbG'
+    '91ZC50cHUudjJhbHBoYTEuUXVldWVkUmVzb3VyY2VTdGF0ZS5TdGF0ZUluaXRpYXRvckID4EED'
+    'Ug5zdGF0ZUluaXRpYXRvchoOCgxDcmVhdGluZ0RhdGEaDgoMQWNjZXB0ZWREYXRhGhIKEFByb3'
+    'Zpc2lvbmluZ0RhdGEaNgoKRmFpbGVkRGF0YRIoCgVlcnJvchgBIAEoCzISLmdvb2dsZS5ycGMu'
+    'U3RhdHVzUgVlcnJvchoOCgxEZWxldGluZ0RhdGEaDAoKQWN0aXZlRGF0YRoQCg5TdXNwZW5kaW'
+    '5nRGF0YRoPCg1TdXNwZW5kZWREYXRhIqwBCgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAA'
+    'EgwKCENSRUFUSU5HEAESDAoIQUNDRVBURUQQAhIQCgxQUk9WSVNJT05JTkcQAxIKCgZGQUlMRU'
+    'QQBBIMCghERUxFVElORxAFEgoKBkFDVElWRRAGEg4KClNVU1BFTkRJTkcQBxINCglTVVNQRU5E'
+    'RUQQCBIZChVXQUlUSU5HX0ZPUl9SRVNPVVJDRVMQCSJICg5TdGF0ZUluaXRpYXRvchIfChtTVE'
+    'FURV9JTklUSUFUT1JfVU5TUEVDSUZJRUQQABIICgRVU0VSEAESCwoHU0VSVklDRRACQgwKCnN0'
+    'YXRlX2RhdGE=');
+
+@$core.Deprecated('Use listNodesRequestDescriptor instead')
+const ListNodesRequest$json = {
+  '1': 'ListNodesRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
+    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
+  ],
+};
+
+/// Descriptor for `ListNodesRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listNodesRequestDescriptor = $convert.base64Decode(
+    'ChBMaXN0Tm9kZXNSZXF1ZXN0EjcKBnBhcmVudBgBIAEoCUIf4EEC+kEZEhd0cHUuZ29vZ2xlYX'
+    'Bpcy5jb20vTm9kZVIGcGFyZW50EhsKCXBhZ2Vfc2l6ZRgCIAEoBVIIcGFnZVNpemUSHQoKcGFn'
+    'ZV90b2tlbhgDIAEoCVIJcGFnZVRva2Vu');
+
+@$core.Deprecated('Use listNodesResponseDescriptor instead')
+const ListNodesResponse$json = {
+  '1': 'ListNodesResponse',
+  '2': [
+    {'1': 'nodes', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.Node', '10': 'nodes'},
+    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
+    {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
+  ],
+};
+
+/// Descriptor for `ListNodesResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listNodesResponseDescriptor = $convert.base64Decode(
+    'ChFMaXN0Tm9kZXNSZXNwb25zZRI1CgVub2RlcxgBIAMoCzIfLmdvb2dsZS5jbG91ZC50cHUudj'
+    'JhbHBoYTEuTm9kZVIFbm9kZXMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRv'
+    'a2VuEiAKC3VucmVhY2hhYmxlGAMgAygJUgt1bnJlYWNoYWJsZQ==');
+
+@$core.Deprecated('Use getNodeRequestDescriptor instead')
+const GetNodeRequest$json = {
+  '1': 'GetNodeRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `GetNodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List getNodeRequestDescriptor = $convert.base64Decode(
+    'Cg5HZXROb2RlUmVxdWVzdBIzCgRuYW1lGAEgASgJQh/gQQL6QRkKF3RwdS5nb29nbGVhcGlzLm'
+    'NvbS9Ob2RlUgRuYW1l');
+
+@$core.Deprecated('Use createNodeRequestDescriptor instead')
+const CreateNodeRequest$json = {
+  '1': 'CreateNodeRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'node_id', '3': 2, '4': 1, '5': 9, '10': 'nodeId'},
+    {'1': 'node', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.Node', '8': {}, '10': 'node'},
+    {'1': 'request_id', '3': 6, '4': 1, '5': 9, '10': 'requestId'},
+  ],
+};
+
+/// Descriptor for `CreateNodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List createNodeRequestDescriptor = $convert.base64Decode(
+    'ChFDcmVhdGVOb2RlUmVxdWVzdBJBCgZwYXJlbnQYASABKAlCKeBBAvpBIwohbG9jYXRpb25zLm'
+    'dvb2dsZWFwaXMuY29tL0xvY2F0aW9uUgZwYXJlbnQSFwoHbm9kZV9pZBgCIAEoCVIGbm9kZUlk'
+    'EjgKBG5vZGUYAyABKAsyHy5nb29nbGUuY2xvdWQudHB1LnYyYWxwaGExLk5vZGVCA+BBAlIEbm'
+    '9kZRIdCgpyZXF1ZXN0X2lkGAYgASgJUglyZXF1ZXN0SWQ=');
+
+@$core.Deprecated('Use deleteNodeRequestDescriptor instead')
+const DeleteNodeRequest$json = {
+  '1': 'DeleteNodeRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'request_id', '3': 3, '4': 1, '5': 9, '10': 'requestId'},
+  ],
+};
+
+/// Descriptor for `DeleteNodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List deleteNodeRequestDescriptor = $convert.base64Decode(
+    'ChFEZWxldGVOb2RlUmVxdWVzdBIzCgRuYW1lGAEgASgJQh/gQQL6QRkKF3RwdS5nb29nbGVhcG'
+    'lzLmNvbS9Ob2RlUgRuYW1lEh0KCnJlcXVlc3RfaWQYAyABKAlSCXJlcXVlc3RJZA==');
+
+@$core.Deprecated('Use stopNodeRequestDescriptor instead')
+const StopNodeRequest$json = {
+  '1': 'StopNodeRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `StopNodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List stopNodeRequestDescriptor = $convert.base64Decode(
+    'Cg9TdG9wTm9kZVJlcXVlc3QSMwoEbmFtZRgBIAEoCUIf4EEC+kEZChd0cHUuZ29vZ2xlYXBpcy'
+    '5jb20vTm9kZVIEbmFtZQ==');
+
+@$core.Deprecated('Use startNodeRequestDescriptor instead')
+const StartNodeRequest$json = {
+  '1': 'StartNodeRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `StartNodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List startNodeRequestDescriptor = $convert.base64Decode(
+    'ChBTdGFydE5vZGVSZXF1ZXN0EjMKBG5hbWUYASABKAlCH+BBAvpBGQoXdHB1Lmdvb2dsZWFwaX'
+    'MuY29tL05vZGVSBG5hbWU=');
+
+@$core.Deprecated('Use updateNodeRequestDescriptor instead')
+const UpdateNodeRequest$json = {
+  '1': 'UpdateNodeRequest',
+  '2': [
+    {'1': 'update_mask', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {'1': 'node', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.Node', '8': {}, '10': 'node'},
+  ],
+};
+
+/// Descriptor for `UpdateNodeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List updateNodeRequestDescriptor = $convert.base64Decode(
+    'ChFVcGRhdGVOb2RlUmVxdWVzdBJACgt1cGRhdGVfbWFzaxgBIAEoCzIaLmdvb2dsZS5wcm90b2'
+    'J1Zi5GaWVsZE1hc2tCA+BBAlIKdXBkYXRlTWFzaxI4CgRub2RlGAIgASgLMh8uZ29vZ2xlLmNs'
+    'b3VkLnRwdS52MmFscGhhMS5Ob2RlQgPgQQJSBG5vZGU=');
+
+@$core.Deprecated('Use listQueuedResourcesRequestDescriptor instead')
+const ListQueuedResourcesRequest$json = {
+  '1': 'ListQueuedResourcesRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
+    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
+  ],
+};
+
+/// Descriptor for `ListQueuedResourcesRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listQueuedResourcesRequestDescriptor = $convert.base64Decode(
+    'ChpMaXN0UXVldWVkUmVzb3VyY2VzUmVxdWVzdBJBCgZwYXJlbnQYASABKAlCKeBBAvpBIxIhdH'
+    'B1Lmdvb2dsZWFwaXMuY29tL1F1ZXVlZFJlc291cmNlUgZwYXJlbnQSGwoJcGFnZV9zaXplGAIg'
+    'ASgFUghwYWdlU2l6ZRIdCgpwYWdlX3Rva2VuGAMgASgJUglwYWdlVG9rZW4=');
+
+@$core.Deprecated('Use listQueuedResourcesResponseDescriptor instead')
+const ListQueuedResourcesResponse$json = {
+  '1': 'ListQueuedResourcesResponse',
+  '2': [
+    {'1': 'queued_resources', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource', '10': 'queuedResources'},
+    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
+    {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
+  ],
+};
+
+/// Descriptor for `ListQueuedResourcesResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listQueuedResourcesResponseDescriptor = $convert.base64Decode(
+    'ChtMaXN0UXVldWVkUmVzb3VyY2VzUmVzcG9uc2USVAoQcXVldWVkX3Jlc291cmNlcxgBIAMoCz'
+    'IpLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuUXVldWVkUmVzb3VyY2VSD3F1ZXVlZFJlc291'
+    'cmNlcxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4SIAoLdW5yZWFjaG'
+    'FibGUYAyADKAlSC3VucmVhY2hhYmxl');
+
+@$core.Deprecated('Use getQueuedResourceRequestDescriptor instead')
+const GetQueuedResourceRequest$json = {
+  '1': 'GetQueuedResourceRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `GetQueuedResourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List getQueuedResourceRequestDescriptor = $convert.base64Decode(
+    'ChhHZXRRdWV1ZWRSZXNvdXJjZVJlcXVlc3QSPQoEbmFtZRgBIAEoCUIp4EEC+kEjCiF0cHUuZ2'
+    '9vZ2xlYXBpcy5jb20vUXVldWVkUmVzb3VyY2VSBG5hbWU=');
+
+@$core.Deprecated('Use createQueuedResourceRequestDescriptor instead')
+const CreateQueuedResourceRequest$json = {
+  '1': 'CreateQueuedResourceRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'queued_resource_id', '3': 2, '4': 1, '5': 9, '10': 'queuedResourceId'},
+    {'1': 'queued_resource', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.QueuedResource', '8': {}, '10': 'queuedResource'},
+    {'1': 'request_id', '3': 4, '4': 1, '5': 9, '10': 'requestId'},
+  ],
+};
+
+/// Descriptor for `CreateQueuedResourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List createQueuedResourceRequestDescriptor = $convert.base64Decode(
+    'ChtDcmVhdGVRdWV1ZWRSZXNvdXJjZVJlcXVlc3QSQQoGcGFyZW50GAEgASgJQingQQL6QSMKIW'
+    'xvY2F0aW9ucy5nb29nbGVhcGlzLmNvbS9Mb2NhdGlvblIGcGFyZW50EiwKEnF1ZXVlZF9yZXNv'
+    'dXJjZV9pZBgCIAEoCVIQcXVldWVkUmVzb3VyY2VJZBJXCg9xdWV1ZWRfcmVzb3VyY2UYAyABKA'
+    'syKS5nb29nbGUuY2xvdWQudHB1LnYyYWxwaGExLlF1ZXVlZFJlc291cmNlQgPgQQJSDnF1ZXVl'
+    'ZFJlc291cmNlEh0KCnJlcXVlc3RfaWQYBCABKAlSCXJlcXVlc3RJZA==');
+
+@$core.Deprecated('Use deleteQueuedResourceRequestDescriptor instead')
+const DeleteQueuedResourceRequest$json = {
+  '1': 'DeleteQueuedResourceRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'request_id', '3': 2, '4': 1, '5': 9, '10': 'requestId'},
+    {'1': 'force', '3': 3, '4': 1, '5': 8, '10': 'force'},
+  ],
+};
+
+/// Descriptor for `DeleteQueuedResourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List deleteQueuedResourceRequestDescriptor = $convert.base64Decode(
+    'ChtEZWxldGVRdWV1ZWRSZXNvdXJjZVJlcXVlc3QSPQoEbmFtZRgBIAEoCUIp4EEC+kEjCiF0cH'
+    'UuZ29vZ2xlYXBpcy5jb20vUXVldWVkUmVzb3VyY2VSBG5hbWUSHQoKcmVxdWVzdF9pZBgCIAEo'
+    'CVIJcmVxdWVzdElkEhQKBWZvcmNlGAMgASgIUgVmb3JjZQ==');
+
+@$core.Deprecated('Use resetQueuedResourceRequestDescriptor instead')
+const ResetQueuedResourceRequest$json = {
+  '1': 'ResetQueuedResourceRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `ResetQueuedResourceRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List resetQueuedResourceRequestDescriptor = $convert.base64Decode(
+    'ChpSZXNldFF1ZXVlZFJlc291cmNlUmVxdWVzdBI9CgRuYW1lGAEgASgJQingQQL6QSMKIXRwdS'
+    '5nb29nbGVhcGlzLmNvbS9RdWV1ZWRSZXNvdXJjZVIEbmFtZQ==');
+
+@$core.Deprecated('Use serviceIdentityDescriptor instead')
+const ServiceIdentity$json = {
+  '1': 'ServiceIdentity',
+  '2': [
+    {'1': 'email', '3': 1, '4': 1, '5': 9, '10': 'email'},
+  ],
+};
+
+/// Descriptor for `ServiceIdentity`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List serviceIdentityDescriptor = $convert.base64Decode(
+    'Cg9TZXJ2aWNlSWRlbnRpdHkSFAoFZW1haWwYASABKAlSBWVtYWls');
+
+@$core.Deprecated('Use generateServiceIdentityRequestDescriptor instead')
+const GenerateServiceIdentityRequest$json = {
+  '1': 'GenerateServiceIdentityRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+  ],
+};
+
+/// Descriptor for `GenerateServiceIdentityRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List generateServiceIdentityRequestDescriptor = $convert.base64Decode(
+    'Ch5HZW5lcmF0ZVNlcnZpY2VJZGVudGl0eVJlcXVlc3QSQQoGcGFyZW50GAEgASgJQingQQL6QS'
+    'MKIWxvY2F0aW9ucy5nb29nbGVhcGlzLmNvbS9Mb2NhdGlvblIGcGFyZW50');
+
+@$core.Deprecated('Use generateServiceIdentityResponseDescriptor instead')
+const GenerateServiceIdentityResponse$json = {
+  '1': 'GenerateServiceIdentityResponse',
+  '2': [
+    {'1': 'identity', '3': 1, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.ServiceIdentity', '10': 'identity'},
+  ],
+};
+
+/// Descriptor for `GenerateServiceIdentityResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List generateServiceIdentityResponseDescriptor = $convert.base64Decode(
+    'Ch9HZW5lcmF0ZVNlcnZpY2VJZGVudGl0eVJlc3BvbnNlEkYKCGlkZW50aXR5GAEgASgLMiouZ2'
+    '9vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5TZXJ2aWNlSWRlbnRpdHlSCGlkZW50aXR5');
+
+@$core.Deprecated('Use acceleratorTypeDescriptor instead')
+const AcceleratorType$json = {
+  '1': 'AcceleratorType',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'type', '3': 2, '4': 1, '5': 9, '10': 'type'},
+    {'1': 'accelerator_configs', '3': 3, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.AcceleratorConfig', '10': 'acceleratorConfigs'},
+  ],
+  '7': {},
+};
+
+/// Descriptor for `AcceleratorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List acceleratorTypeDescriptor = $convert.base64Decode(
+    'Cg9BY2NlbGVyYXRvclR5cGUSEgoEbmFtZRgBIAEoCVIEbmFtZRISCgR0eXBlGAIgASgJUgR0eX'
+    'BlEl0KE2FjY2VsZXJhdG9yX2NvbmZpZ3MYAyADKAsyLC5nb29nbGUuY2xvdWQudHB1LnYyYWxw'
+    'aGExLkFjY2VsZXJhdG9yQ29uZmlnUhJhY2NlbGVyYXRvckNvbmZpZ3M6dOpBcQoidHB1Lmdvb2'
+    'dsZWFwaXMuY29tL0FjY2VsZXJhdG9yVHlwZRJLcHJvamVjdHMve3Byb2plY3R9L2xvY2F0aW9u'
+    'cy97bG9jYXRpb259L2FjY2VsZXJhdG9yVHlwZXMve2FjY2VsZXJhdG9yX3R5cGV9');
+
+@$core.Deprecated('Use getAcceleratorTypeRequestDescriptor instead')
+const GetAcceleratorTypeRequest$json = {
+  '1': 'GetAcceleratorTypeRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `GetAcceleratorTypeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List getAcceleratorTypeRequestDescriptor = $convert.base64Decode(
+    'ChlHZXRBY2NlbGVyYXRvclR5cGVSZXF1ZXN0Ej4KBG5hbWUYASABKAlCKuBBAvpBJAoidHB1Lm'
+    'dvb2dsZWFwaXMuY29tL0FjY2VsZXJhdG9yVHlwZVIEbmFtZQ==');
+
+@$core.Deprecated('Use listAcceleratorTypesRequestDescriptor instead')
+const ListAcceleratorTypesRequest$json = {
+  '1': 'ListAcceleratorTypesRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
+    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
+    {'1': 'filter', '3': 5, '4': 1, '5': 9, '10': 'filter'},
+    {'1': 'order_by', '3': 6, '4': 1, '5': 9, '10': 'orderBy'},
+  ],
+};
+
+/// Descriptor for `ListAcceleratorTypesRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listAcceleratorTypesRequestDescriptor = $convert.base64Decode(
+    'ChtMaXN0QWNjZWxlcmF0b3JUeXBlc1JlcXVlc3QSQgoGcGFyZW50GAEgASgJQirgQQL6QSQSIn'
+    'RwdS5nb29nbGVhcGlzLmNvbS9BY2NlbGVyYXRvclR5cGVSBnBhcmVudBIbCglwYWdlX3NpemUY'
+    'AiABKAVSCHBhZ2VTaXplEh0KCnBhZ2VfdG9rZW4YAyABKAlSCXBhZ2VUb2tlbhIWCgZmaWx0ZX'
+    'IYBSABKAlSBmZpbHRlchIZCghvcmRlcl9ieRgGIAEoCVIHb3JkZXJCeQ==');
+
+@$core.Deprecated('Use listAcceleratorTypesResponseDescriptor instead')
+const ListAcceleratorTypesResponse$json = {
+  '1': 'ListAcceleratorTypesResponse',
+  '2': [
+    {'1': 'accelerator_types', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.AcceleratorType', '10': 'acceleratorTypes'},
+    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
+    {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
+  ],
+};
+
+/// Descriptor for `ListAcceleratorTypesResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listAcceleratorTypesResponseDescriptor = $convert.base64Decode(
+    'ChxMaXN0QWNjZWxlcmF0b3JUeXBlc1Jlc3BvbnNlElcKEWFjY2VsZXJhdG9yX3R5cGVzGAEgAy'
+    'gLMiouZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5BY2NlbGVyYXRvclR5cGVSEGFjY2VsZXJh'
+    'dG9yVHlwZXMSJgoPbmV4dF9wYWdlX3Rva2VuGAIgASgJUg1uZXh0UGFnZVRva2VuEiAKC3Vucm'
+    'VhY2hhYmxlGAMgAygJUgt1bnJlYWNoYWJsZQ==');
+
+@$core.Deprecated('Use runtimeVersionDescriptor instead')
+const RuntimeVersion$json = {
+  '1': 'RuntimeVersion',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
+    {'1': 'version', '3': 2, '4': 1, '5': 9, '10': 'version'},
+  ],
+  '7': {},
+};
+
+/// Descriptor for `RuntimeVersion`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List runtimeVersionDescriptor = $convert.base64Decode(
+    'Cg5SdW50aW1lVmVyc2lvbhISCgRuYW1lGAEgASgJUgRuYW1lEhgKB3ZlcnNpb24YAiABKAlSB3'
+    'ZlcnNpb246cepBbgohdHB1Lmdvb2dsZWFwaXMuY29tL1J1bnRpbWVWZXJzaW9uEklwcm9qZWN0'
+    'cy97cHJvamVjdH0vbG9jYXRpb25zL3tsb2NhdGlvbn0vcnVudGltZVZlcnNpb25zL3tydW50aW'
+    '1lX3ZlcnNpb259');
+
+@$core.Deprecated('Use getRuntimeVersionRequestDescriptor instead')
+const GetRuntimeVersionRequest$json = {
+  '1': 'GetRuntimeVersionRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `GetRuntimeVersionRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List getRuntimeVersionRequestDescriptor = $convert.base64Decode(
+    'ChhHZXRSdW50aW1lVmVyc2lvblJlcXVlc3QSPQoEbmFtZRgBIAEoCUIp4EEC+kEjCiF0cHUuZ2'
+    '9vZ2xlYXBpcy5jb20vUnVudGltZVZlcnNpb25SBG5hbWU=');
+
+@$core.Deprecated('Use listRuntimeVersionsRequestDescriptor instead')
+const ListRuntimeVersionsRequest$json = {
+  '1': 'ListRuntimeVersionsRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
+    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
+    {'1': 'filter', '3': 5, '4': 1, '5': 9, '10': 'filter'},
+    {'1': 'order_by', '3': 6, '4': 1, '5': 9, '10': 'orderBy'},
+  ],
+};
+
+/// Descriptor for `ListRuntimeVersionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listRuntimeVersionsRequestDescriptor = $convert.base64Decode(
+    'ChpMaXN0UnVudGltZVZlcnNpb25zUmVxdWVzdBJBCgZwYXJlbnQYASABKAlCKeBBAvpBIxIhdH'
+    'B1Lmdvb2dsZWFwaXMuY29tL1J1bnRpbWVWZXJzaW9uUgZwYXJlbnQSGwoJcGFnZV9zaXplGAIg'
+    'ASgFUghwYWdlU2l6ZRIdCgpwYWdlX3Rva2VuGAMgASgJUglwYWdlVG9rZW4SFgoGZmlsdGVyGA'
+    'UgASgJUgZmaWx0ZXISGQoIb3JkZXJfYnkYBiABKAlSB29yZGVyQnk=');
+
+@$core.Deprecated('Use listRuntimeVersionsResponseDescriptor instead')
+const ListRuntimeVersionsResponse$json = {
+  '1': 'ListRuntimeVersionsResponse',
+  '2': [
+    {'1': 'runtime_versions', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.RuntimeVersion', '10': 'runtimeVersions'},
+    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
+    {'1': 'unreachable', '3': 3, '4': 3, '5': 9, '10': 'unreachable'},
+  ],
+};
+
+/// Descriptor for `ListRuntimeVersionsResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listRuntimeVersionsResponseDescriptor = $convert.base64Decode(
+    'ChtMaXN0UnVudGltZVZlcnNpb25zUmVzcG9uc2USVAoQcnVudGltZV92ZXJzaW9ucxgBIAMoCz'
+    'IpLmdvb2dsZS5jbG91ZC50cHUudjJhbHBoYTEuUnVudGltZVZlcnNpb25SD3J1bnRpbWVWZXJz'
+    'aW9ucxImCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlSDW5leHRQYWdlVG9rZW4SIAoLdW5yZWFjaG'
+    'FibGUYAyADKAlSC3VucmVhY2hhYmxl');
+
+@$core.Deprecated('Use operationMetadataDescriptor instead')
+const OperationMetadata$json = {
+  '1': 'OperationMetadata',
+  '2': [
+    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {'1': 'end_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'endTime'},
+    {'1': 'target', '3': 3, '4': 1, '5': 9, '10': 'target'},
+    {'1': 'verb', '3': 4, '4': 1, '5': 9, '10': 'verb'},
+    {'1': 'status_detail', '3': 5, '4': 1, '5': 9, '10': 'statusDetail'},
+    {'1': 'cancel_requested', '3': 6, '4': 1, '5': 8, '10': 'cancelRequested'},
+    {'1': 'api_version', '3': 7, '4': 1, '5': 9, '10': 'apiVersion'},
+  ],
+};
+
+/// Descriptor for `OperationMetadata`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List operationMetadataDescriptor = $convert.base64Decode(
+    'ChFPcGVyYXRpb25NZXRhZGF0YRI7CgtjcmVhdGVfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2'
+    'J1Zi5UaW1lc3RhbXBSCmNyZWF0ZVRpbWUSNQoIZW5kX3RpbWUYAiABKAsyGi5nb29nbGUucHJv'
+    'dG9idWYuVGltZXN0YW1wUgdlbmRUaW1lEhYKBnRhcmdldBgDIAEoCVIGdGFyZ2V0EhIKBHZlcm'
+    'IYBCABKAlSBHZlcmISIwoNc3RhdHVzX2RldGFpbBgFIAEoCVIMc3RhdHVzRGV0YWlsEikKEGNh'
+    'bmNlbF9yZXF1ZXN0ZWQYBiABKAhSD2NhbmNlbFJlcXVlc3RlZBIfCgthcGlfdmVyc2lvbhgHIA'
+    'EoCVIKYXBpVmVyc2lvbg==');
+
+@$core.Deprecated('Use symptomDescriptor instead')
+const Symptom$json = {
+  '1': 'Symptom',
+  '2': [
+    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {'1': 'symptom_type', '3': 2, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.Symptom.SymptomType', '10': 'symptomType'},
+    {'1': 'details', '3': 3, '4': 1, '5': 9, '10': 'details'},
+    {'1': 'worker_id', '3': 4, '4': 1, '5': 9, '10': 'workerId'},
+  ],
+  '4': [Symptom_SymptomType$json],
+};
+
+@$core.Deprecated('Use symptomDescriptor instead')
+const Symptom_SymptomType$json = {
+  '1': 'SymptomType',
+  '2': [
+    {'1': 'SYMPTOM_TYPE_UNSPECIFIED', '2': 0},
+    {'1': 'LOW_MEMORY', '2': 1},
+    {'1': 'OUT_OF_MEMORY', '2': 2},
+    {'1': 'EXECUTE_TIMED_OUT', '2': 3},
+    {'1': 'MESH_BUILD_FAIL', '2': 4},
+    {'1': 'HBM_OUT_OF_MEMORY', '2': 5},
+    {'1': 'PROJECT_ABUSE', '2': 6},
+  ],
+};
+
+/// Descriptor for `Symptom`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List symptomDescriptor = $convert.base64Decode(
+    'CgdTeW1wdG9tEjsKC2NyZWF0ZV90aW1lGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdG'
+    'FtcFIKY3JlYXRlVGltZRJRCgxzeW1wdG9tX3R5cGUYAiABKA4yLi5nb29nbGUuY2xvdWQudHB1'
+    'LnYyYWxwaGExLlN5bXB0b20uU3ltcHRvbVR5cGVSC3N5bXB0b21UeXBlEhgKB2RldGFpbHMYAy'
+    'ABKAlSB2RldGFpbHMSGwoJd29ya2VyX2lkGAQgASgJUgh3b3JrZXJJZCKkAQoLU3ltcHRvbVR5'
+    'cGUSHAoYU1lNUFRPTV9UWVBFX1VOU1BFQ0lGSUVEEAASDgoKTE9XX01FTU9SWRABEhEKDU9VVF'
+    '9PRl9NRU1PUlkQAhIVChFFWEVDVVRFX1RJTUVEX09VVBADEhMKD01FU0hfQlVJTERfRkFJTBAE'
+    'EhUKEUhCTV9PVVRfT0ZfTUVNT1JZEAUSEQoNUFJPSkVDVF9BQlVTRRAG');
+
+@$core.Deprecated('Use getGuestAttributesRequestDescriptor instead')
+const GetGuestAttributesRequest$json = {
+  '1': 'GetGuestAttributesRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'query_path', '3': 2, '4': 1, '5': 9, '10': 'queryPath'},
+    {'1': 'worker_ids', '3': 3, '4': 3, '5': 9, '10': 'workerIds'},
+  ],
+};
+
+/// Descriptor for `GetGuestAttributesRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List getGuestAttributesRequestDescriptor = $convert.base64Decode(
+    'ChlHZXRHdWVzdEF0dHJpYnV0ZXNSZXF1ZXN0EjMKBG5hbWUYASABKAlCH+BBAvpBGQoXdHB1Lm'
+    'dvb2dsZWFwaXMuY29tL05vZGVSBG5hbWUSHQoKcXVlcnlfcGF0aBgCIAEoCVIJcXVlcnlQYXRo'
+    'Eh0KCndvcmtlcl9pZHMYAyADKAlSCXdvcmtlcklkcw==');
+
+@$core.Deprecated('Use getGuestAttributesResponseDescriptor instead')
+const GetGuestAttributesResponse$json = {
+  '1': 'GetGuestAttributesResponse',
+  '2': [
+    {'1': 'guest_attributes', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.tpu.v2alpha1.GuestAttributes', '10': 'guestAttributes'},
+  ],
+};
+
+/// Descriptor for `GetGuestAttributesResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List getGuestAttributesResponseDescriptor = $convert.base64Decode(
+    'ChpHZXRHdWVzdEF0dHJpYnV0ZXNSZXNwb25zZRJVChBndWVzdF9hdHRyaWJ1dGVzGAEgAygLMi'
+    'ouZ29vZ2xlLmNsb3VkLnRwdS52MmFscGhhMS5HdWVzdEF0dHJpYnV0ZXNSD2d1ZXN0QXR0cmli'
+    'dXRlcw==');
+
+@$core.Deprecated('Use simulateMaintenanceEventRequestDescriptor instead')
+const SimulateMaintenanceEventRequest$json = {
+  '1': 'SimulateMaintenanceEventRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'worker_ids', '3': 2, '4': 3, '5': 9, '10': 'workerIds'},
+  ],
+};
+
+/// Descriptor for `SimulateMaintenanceEventRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List simulateMaintenanceEventRequestDescriptor = $convert.base64Decode(
+    'Ch9TaW11bGF0ZU1haW50ZW5hbmNlRXZlbnRSZXF1ZXN0EjMKBG5hbWUYASABKAlCH+BBAvpBGQ'
+    'oXdHB1Lmdvb2dsZWFwaXMuY29tL05vZGVSBG5hbWUSHQoKd29ya2VyX2lkcxgCIAMoCVIJd29y'
+    'a2VySWRz');
+
+@$core.Deprecated('Use acceleratorConfigDescriptor instead')
+const AcceleratorConfig$json = {
+  '1': 'AcceleratorConfig',
+  '2': [
+    {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.google.cloud.tpu.v2alpha1.AcceleratorConfig.Type', '8': {}, '10': 'type'},
+    {'1': 'topology', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'topology'},
+  ],
+  '4': [AcceleratorConfig_Type$json],
+};
+
+@$core.Deprecated('Use acceleratorConfigDescriptor instead')
+const AcceleratorConfig_Type$json = {
+  '1': 'Type',
+  '2': [
+    {'1': 'TYPE_UNSPECIFIED', '2': 0},
+    {'1': 'V2', '2': 2},
+    {'1': 'V3', '2': 4},
+    {'1': 'V4', '2': 7},
+  ],
+};
+
+/// Descriptor for `AcceleratorConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List acceleratorConfigDescriptor = $convert.base64Decode(
+    'ChFBY2NlbGVyYXRvckNvbmZpZxJKCgR0eXBlGAEgASgOMjEuZ29vZ2xlLmNsb3VkLnRwdS52Mm'
+    'FscGhhMS5BY2NlbGVyYXRvckNvbmZpZy5UeXBlQgPgQQJSBHR5cGUSHwoIdG9wb2xvZ3kYAiAB'
+    'KAlCA+BBAlIIdG9wb2xvZ3kiNAoEVHlwZRIUChBUWVBFX1VOU1BFQ0lGSUVEEAASBgoCVjIQAh'
+    'IGCgJWMxAEEgYKAlY0EAc=');
+
+@$core.Deprecated('Use shieldedInstanceConfigDescriptor instead')
+const ShieldedInstanceConfig$json = {
+  '1': 'ShieldedInstanceConfig',
+  '2': [
+    {'1': 'enable_secure_boot', '3': 1, '4': 1, '5': 8, '10': 'enableSecureBoot'},
+  ],
+};
+
+/// Descriptor for `ShieldedInstanceConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List shieldedInstanceConfigDescriptor = $convert.base64Decode(
+    'ChZTaGllbGRlZEluc3RhbmNlQ29uZmlnEiwKEmVuYWJsZV9zZWN1cmVfYm9vdBgBIAEoCFIQZW'
+    '5hYmxlU2VjdXJlQm9vdA==');
+
+@$core.Deprecated('Use bootDiskConfigDescriptor instead')
+const BootDiskConfig$json = {
+  '1': 'BootDiskConfig',
+  '2': [
+    {'1': 'customer_encryption_key', '3': 1, '4': 1, '5': 11, '6': '.google.cloud.tpu.v2alpha1.CustomerEncryptionKey', '8': {}, '10': 'customerEncryptionKey'},
+    {'1': 'enable_confidential_compute', '3': 2, '4': 1, '5': 8, '8': {}, '10': 'enableConfidentialCompute'},
+  ],
+};
+
+/// Descriptor for `BootDiskConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bootDiskConfigDescriptor = $convert.base64Decode(
+    'Cg5Cb290RGlza0NvbmZpZxJtChdjdXN0b21lcl9lbmNyeXB0aW9uX2tleRgBIAEoCzIwLmdvb2'
+    'dsZS5jbG91ZC50cHUudjJhbHBoYTEuQ3VzdG9tZXJFbmNyeXB0aW9uS2V5QgPgQQFSFWN1c3Rv'
+    'bWVyRW5jcnlwdGlvbktleRJDChtlbmFibGVfY29uZmlkZW50aWFsX2NvbXB1dGUYAiABKAhCA+'
+    'BBAVIZZW5hYmxlQ29uZmlkZW50aWFsQ29tcHV0ZQ==');
+
+@$core.Deprecated('Use customerEncryptionKeyDescriptor instead')
+const CustomerEncryptionKey$json = {
+  '1': 'CustomerEncryptionKey',
+  '2': [
+    {'1': 'kms_key_name', '3': 7, '4': 1, '5': 9, '9': 0, '10': 'kmsKeyName'},
+  ],
+  '8': [
+    {'1': 'key'},
+  ],
+};
+
+/// Descriptor for `CustomerEncryptionKey`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List customerEncryptionKeyDescriptor = $convert.base64Decode(
+    'ChVDdXN0b21lckVuY3J5cHRpb25LZXkSIgoMa21zX2tleV9uYW1lGAcgASgJSABSCmttc0tleU'
+    '5hbWVCBQoDa2V5');
+

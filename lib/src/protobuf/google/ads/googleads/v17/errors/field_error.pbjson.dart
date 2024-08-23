@@ -1,0 +1,46 @@
+//
+//  Generated code. Do not modify.
+//  source: google/ads/googleads/v17/errors/field_error.proto
+//
+// @dart = 2.12
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+
+import 'dart:convert' as $convert;
+import 'dart:core' as $core;
+import 'dart:typed_data' as $typed_data;
+
+@$core.Deprecated('Use fieldErrorEnumDescriptor instead')
+const FieldErrorEnum$json = {
+  '1': 'FieldErrorEnum',
+  '4': [FieldErrorEnum_FieldError$json],
+};
+
+@$core.Deprecated('Use fieldErrorEnumDescriptor instead')
+const FieldErrorEnum_FieldError$json = {
+  '1': 'FieldError',
+  '2': [
+    {'1': 'UNSPECIFIED', '2': 0},
+    {'1': 'UNKNOWN', '2': 1},
+    {'1': 'REQUIRED', '2': 2},
+    {'1': 'IMMUTABLE_FIELD', '2': 3},
+    {'1': 'INVALID_VALUE', '2': 4},
+    {'1': 'VALUE_MUST_BE_UNSET', '2': 5},
+    {'1': 'REQUIRED_NONEMPTY_LIST', '2': 6},
+    {'1': 'FIELD_CANNOT_BE_CLEARED', '2': 7},
+    {'1': 'BLOCKED_VALUE', '2': 9},
+    {'1': 'FIELD_CAN_ONLY_BE_CLEARED', '2': 10},
+  ],
+};
+
+/// Descriptor for `FieldErrorEnum`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List fieldErrorEnumDescriptor = $convert.base64Decode(
+    'Cg5GaWVsZEVycm9yRW51bSLkAQoKRmllbGRFcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS0'
+    '5PV04QARIMCghSRVFVSVJFRBACEhMKD0lNTVVUQUJMRV9GSUVMRBADEhEKDUlOVkFMSURfVkFM'
+    'VUUQBBIXChNWQUxVRV9NVVNUX0JFX1VOU0VUEAUSGgoWUkVRVUlSRURfTk9ORU1QVFlfTElTVB'
+    'AGEhsKF0ZJRUxEX0NBTk5PVF9CRV9DTEVBUkVEEAcSEQoNQkxPQ0tFRF9WQUxVRRAJEh0KGUZJ'
+    'RUxEX0NBTl9PTkxZX0JFX0NMRUFSRUQQCg==');
+

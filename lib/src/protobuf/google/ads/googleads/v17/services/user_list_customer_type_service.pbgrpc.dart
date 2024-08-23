@@ -1,0 +1,59 @@
+//
+//  Generated code. Do not modify.
+//  source: google/ads/googleads/v17/services/user_list_customer_type_service.proto
+//
+// @dart = 2.12
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+
+import 'dart:async' as $async;
+import 'dart:core' as $core;
+
+import 'package:grpc/service_api.dart' as $grpc;
+import 'package:protobuf/protobuf.dart' as $pb;
+
+import 'user_list_customer_type_service.pb.dart' as $363;
+
+export 'user_list_customer_type_service.pb.dart';
+
+@$pb.GrpcServiceName('google.ads.googleads.v17.services.UserListCustomerTypeService')
+class UserListCustomerTypeServiceClient extends $grpc.Client {
+  static final _$mutateUserListCustomerTypes = $grpc.ClientMethod<$363.MutateUserListCustomerTypesRequest, $363.MutateUserListCustomerTypesResponse>(
+      '/google.ads.googleads.v17.services.UserListCustomerTypeService/MutateUserListCustomerTypes',
+      ($363.MutateUserListCustomerTypesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $363.MutateUserListCustomerTypesResponse.fromBuffer(value));
+
+  UserListCustomerTypeServiceClient($grpc.ClientChannel channel,
+      {$grpc.CallOptions? options,
+      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
+      : super(channel, options: options,
+        interceptors: interceptors);
+
+  $grpc.ResponseFuture<$363.MutateUserListCustomerTypesResponse> mutateUserListCustomerTypes($363.MutateUserListCustomerTypesRequest request, {$grpc.CallOptions? options}) {
+    return $createUnaryCall(_$mutateUserListCustomerTypes, request, options: options);
+  }
+}
+
+@$pb.GrpcServiceName('google.ads.googleads.v17.services.UserListCustomerTypeService')
+abstract class UserListCustomerTypeServiceBase extends $grpc.Service {
+  $core.String get $name => 'google.ads.googleads.v17.services.UserListCustomerTypeService';
+
+  UserListCustomerTypeServiceBase() {
+    $addMethod($grpc.ServiceMethod<$363.MutateUserListCustomerTypesRequest, $363.MutateUserListCustomerTypesResponse>(
+        'MutateUserListCustomerTypes',
+        mutateUserListCustomerTypes_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $363.MutateUserListCustomerTypesRequest.fromBuffer(value),
+        ($363.MutateUserListCustomerTypesResponse value) => value.writeToBuffer()));
+  }
+
+  $async.Future<$363.MutateUserListCustomerTypesResponse> mutateUserListCustomerTypes_Pre($grpc.ServiceCall call, $async.Future<$363.MutateUserListCustomerTypesRequest> request) async {
+    return mutateUserListCustomerTypes(call, await request);
+  }
+
+  $async.Future<$363.MutateUserListCustomerTypesResponse> mutateUserListCustomerTypes($grpc.ServiceCall call, $363.MutateUserListCustomerTypesRequest request);
+}

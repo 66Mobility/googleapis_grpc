@@ -1,0 +1,328 @@
+//
+//  Generated code. Do not modify.
+//  source: google/cloud/retail/v2/import_config.proto
+//
+// @dart = 2.12
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+
+import 'dart:convert' as $convert;
+import 'dart:core' as $core;
+import 'dart:typed_data' as $typed_data;
+
+@$core.Deprecated('Use gcsSourceDescriptor instead')
+const GcsSource$json = {
+  '1': 'GcsSource',
+  '2': [
+    {'1': 'input_uris', '3': 1, '4': 3, '5': 9, '8': {}, '10': 'inputUris'},
+    {'1': 'data_schema', '3': 2, '4': 1, '5': 9, '10': 'dataSchema'},
+  ],
+};
+
+/// Descriptor for `GcsSource`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List gcsSourceDescriptor = $convert.base64Decode(
+    'CglHY3NTb3VyY2USIgoKaW5wdXRfdXJpcxgBIAMoCUID4EECUglpbnB1dFVyaXMSHwoLZGF0YV'
+    '9zY2hlbWEYAiABKAlSCmRhdGFTY2hlbWE=');
+
+@$core.Deprecated('Use bigQuerySourceDescriptor instead')
+const BigQuerySource$json = {
+  '1': 'BigQuerySource',
+  '2': [
+    {'1': 'partition_date', '3': 6, '4': 1, '5': 11, '6': '.google.type.Date', '9': 0, '10': 'partitionDate'},
+    {'1': 'project_id', '3': 5, '4': 1, '5': 9, '10': 'projectId'},
+    {'1': 'dataset_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'datasetId'},
+    {'1': 'table_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'tableId'},
+    {'1': 'gcs_staging_dir', '3': 3, '4': 1, '5': 9, '10': 'gcsStagingDir'},
+    {'1': 'data_schema', '3': 4, '4': 1, '5': 9, '10': 'dataSchema'},
+  ],
+  '8': [
+    {'1': 'partition'},
+  ],
+};
+
+/// Descriptor for `BigQuerySource`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List bigQuerySourceDescriptor = $convert.base64Decode(
+    'Cg5CaWdRdWVyeVNvdXJjZRI6Cg5wYXJ0aXRpb25fZGF0ZRgGIAEoCzIRLmdvb2dsZS50eXBlLk'
+    'RhdGVIAFINcGFydGl0aW9uRGF0ZRIdCgpwcm9qZWN0X2lkGAUgASgJUglwcm9qZWN0SWQSIgoK'
+    'ZGF0YXNldF9pZBgBIAEoCUID4EECUglkYXRhc2V0SWQSHgoIdGFibGVfaWQYAiABKAlCA+BBAl'
+    'IHdGFibGVJZBImCg9nY3Nfc3RhZ2luZ19kaXIYAyABKAlSDWdjc1N0YWdpbmdEaXISHwoLZGF0'
+    'YV9zY2hlbWEYBCABKAlSCmRhdGFTY2hlbWFCCwoJcGFydGl0aW9u');
+
+@$core.Deprecated('Use productInlineSourceDescriptor instead')
+const ProductInlineSource$json = {
+  '1': 'ProductInlineSource',
+  '2': [
+    {'1': 'products', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.retail.v2.Product', '8': {}, '10': 'products'},
+  ],
+};
+
+/// Descriptor for `ProductInlineSource`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List productInlineSourceDescriptor = $convert.base64Decode(
+    'ChNQcm9kdWN0SW5saW5lU291cmNlEkAKCHByb2R1Y3RzGAEgAygLMh8uZ29vZ2xlLmNsb3VkLn'
+    'JldGFpbC52Mi5Qcm9kdWN0QgPgQQJSCHByb2R1Y3Rz');
+
+@$core.Deprecated('Use userEventInlineSourceDescriptor instead')
+const UserEventInlineSource$json = {
+  '1': 'UserEventInlineSource',
+  '2': [
+    {'1': 'user_events', '3': 1, '4': 3, '5': 11, '6': '.google.cloud.retail.v2.UserEvent', '8': {}, '10': 'userEvents'},
+  ],
+};
+
+/// Descriptor for `UserEventInlineSource`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List userEventInlineSourceDescriptor = $convert.base64Decode(
+    'ChVVc2VyRXZlbnRJbmxpbmVTb3VyY2USRwoLdXNlcl9ldmVudHMYASADKAsyIS5nb29nbGUuY2'
+    'xvdWQucmV0YWlsLnYyLlVzZXJFdmVudEID4EECUgp1c2VyRXZlbnRz');
+
+@$core.Deprecated('Use importErrorsConfigDescriptor instead')
+const ImportErrorsConfig$json = {
+  '1': 'ImportErrorsConfig',
+  '2': [
+    {'1': 'gcs_prefix', '3': 1, '4': 1, '5': 9, '9': 0, '10': 'gcsPrefix'},
+  ],
+  '8': [
+    {'1': 'destination'},
+  ],
+};
+
+/// Descriptor for `ImportErrorsConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importErrorsConfigDescriptor = $convert.base64Decode(
+    'ChJJbXBvcnRFcnJvcnNDb25maWcSHwoKZ2NzX3ByZWZpeBgBIAEoCUgAUglnY3NQcmVmaXhCDQ'
+    'oLZGVzdGluYXRpb24=');
+
+@$core.Deprecated('Use importProductsRequestDescriptor instead')
+const ImportProductsRequest$json = {
+  '1': 'ImportProductsRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {
+      '1': 'request_id',
+      '3': 6,
+      '4': 1,
+      '5': 9,
+      '8': {'3': true},
+      '10': 'requestId',
+    },
+    {'1': 'input_config', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.ProductInputConfig', '8': {}, '10': 'inputConfig'},
+    {'1': 'errors_config', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.ImportErrorsConfig', '10': 'errorsConfig'},
+    {'1': 'update_mask', '3': 4, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'updateMask'},
+    {'1': 'reconciliation_mode', '3': 5, '4': 1, '5': 14, '6': '.google.cloud.retail.v2.ImportProductsRequest.ReconciliationMode', '10': 'reconciliationMode'},
+    {'1': 'notification_pubsub_topic', '3': 7, '4': 1, '5': 9, '10': 'notificationPubsubTopic'},
+  ],
+  '4': [ImportProductsRequest_ReconciliationMode$json],
+};
+
+@$core.Deprecated('Use importProductsRequestDescriptor instead')
+const ImportProductsRequest_ReconciliationMode$json = {
+  '1': 'ReconciliationMode',
+  '2': [
+    {'1': 'RECONCILIATION_MODE_UNSPECIFIED', '2': 0},
+    {'1': 'INCREMENTAL', '2': 1},
+    {'1': 'FULL', '2': 2},
+  ],
+};
+
+/// Descriptor for `ImportProductsRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importProductsRequestDescriptor = $convert.base64Decode(
+    'ChVJbXBvcnRQcm9kdWN0c1JlcXVlc3QSPAoGcGFyZW50GAEgASgJQiTgQQL6QR4KHHJldGFpbC'
+    '5nb29nbGVhcGlzLmNvbS9CcmFuY2hSBnBhcmVudBIhCgpyZXF1ZXN0X2lkGAYgASgJQgIYAVIJ'
+    'cmVxdWVzdElkElIKDGlucHV0X2NvbmZpZxgCIAEoCzIqLmdvb2dsZS5jbG91ZC5yZXRhaWwudj'
+    'IuUHJvZHVjdElucHV0Q29uZmlnQgPgQQJSC2lucHV0Q29uZmlnEk8KDWVycm9yc19jb25maWcY'
+    'AyABKAsyKi5nb29nbGUuY2xvdWQucmV0YWlsLnYyLkltcG9ydEVycm9yc0NvbmZpZ1IMZXJyb3'
+    'JzQ29uZmlnEjsKC3VwZGF0ZV9tYXNrGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFz'
+    'a1IKdXBkYXRlTWFzaxJxChNyZWNvbmNpbGlhdGlvbl9tb2RlGAUgASgOMkAuZ29vZ2xlLmNsb3'
+    'VkLnJldGFpbC52Mi5JbXBvcnRQcm9kdWN0c1JlcXVlc3QuUmVjb25jaWxpYXRpb25Nb2RlUhJy'
+    'ZWNvbmNpbGlhdGlvbk1vZGUSOgoZbm90aWZpY2F0aW9uX3B1YnN1Yl90b3BpYxgHIAEoCVIXbm'
+    '90aWZpY2F0aW9uUHVic3ViVG9waWMiVAoSUmVjb25jaWxpYXRpb25Nb2RlEiMKH1JFQ09OQ0lM'
+    'SUFUSU9OX01PREVfVU5TUEVDSUZJRUQQABIPCgtJTkNSRU1FTlRBTBABEggKBEZVTEwQAg==');
+
+@$core.Deprecated('Use importUserEventsRequestDescriptor instead')
+const ImportUserEventsRequest$json = {
+  '1': 'ImportUserEventsRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'input_config', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.UserEventInputConfig', '8': {}, '10': 'inputConfig'},
+    {'1': 'errors_config', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.ImportErrorsConfig', '10': 'errorsConfig'},
+  ],
+};
+
+/// Descriptor for `ImportUserEventsRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importUserEventsRequestDescriptor = $convert.base64Decode(
+    'ChdJbXBvcnRVc2VyRXZlbnRzUmVxdWVzdBI9CgZwYXJlbnQYASABKAlCJeBBAvpBHwodcmV0YW'
+    'lsLmdvb2dsZWFwaXMuY29tL0NhdGFsb2dSBnBhcmVudBJUCgxpbnB1dF9jb25maWcYAiABKAsy'
+    'LC5nb29nbGUuY2xvdWQucmV0YWlsLnYyLlVzZXJFdmVudElucHV0Q29uZmlnQgPgQQJSC2lucH'
+    'V0Q29uZmlnEk8KDWVycm9yc19jb25maWcYAyABKAsyKi5nb29nbGUuY2xvdWQucmV0YWlsLnYy'
+    'LkltcG9ydEVycm9yc0NvbmZpZ1IMZXJyb3JzQ29uZmln');
+
+@$core.Deprecated('Use importCompletionDataRequestDescriptor instead')
+const ImportCompletionDataRequest$json = {
+  '1': 'ImportCompletionDataRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'input_config', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.CompletionDataInputConfig', '8': {}, '10': 'inputConfig'},
+    {'1': 'notification_pubsub_topic', '3': 3, '4': 1, '5': 9, '10': 'notificationPubsubTopic'},
+  ],
+};
+
+/// Descriptor for `ImportCompletionDataRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importCompletionDataRequestDescriptor = $convert.base64Decode(
+    'ChtJbXBvcnRDb21wbGV0aW9uRGF0YVJlcXVlc3QSPQoGcGFyZW50GAEgASgJQiXgQQL6QR8KHX'
+    'JldGFpbC5nb29nbGVhcGlzLmNvbS9DYXRhbG9nUgZwYXJlbnQSWQoMaW5wdXRfY29uZmlnGAIg'
+    'ASgLMjEuZ29vZ2xlLmNsb3VkLnJldGFpbC52Mi5Db21wbGV0aW9uRGF0YUlucHV0Q29uZmlnQg'
+    'PgQQJSC2lucHV0Q29uZmlnEjoKGW5vdGlmaWNhdGlvbl9wdWJzdWJfdG9waWMYAyABKAlSF25v'
+    'dGlmaWNhdGlvblB1YnN1YlRvcGlj');
+
+@$core.Deprecated('Use productInputConfigDescriptor instead')
+const ProductInputConfig$json = {
+  '1': 'ProductInputConfig',
+  '2': [
+    {'1': 'product_inline_source', '3': 1, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.ProductInlineSource', '9': 0, '10': 'productInlineSource'},
+    {'1': 'gcs_source', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.GcsSource', '9': 0, '10': 'gcsSource'},
+    {'1': 'big_query_source', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.BigQuerySource', '9': 0, '10': 'bigQuerySource'},
+  ],
+  '8': [
+    {'1': 'source'},
+  ],
+};
+
+/// Descriptor for `ProductInputConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List productInputConfigDescriptor = $convert.base64Decode(
+    'ChJQcm9kdWN0SW5wdXRDb25maWcSYQoVcHJvZHVjdF9pbmxpbmVfc291cmNlGAEgASgLMisuZ2'
+    '9vZ2xlLmNsb3VkLnJldGFpbC52Mi5Qcm9kdWN0SW5saW5lU291cmNlSABSE3Byb2R1Y3RJbmxp'
+    'bmVTb3VyY2USQgoKZ2NzX3NvdXJjZRgCIAEoCzIhLmdvb2dsZS5jbG91ZC5yZXRhaWwudjIuR2'
+    'NzU291cmNlSABSCWdjc1NvdXJjZRJSChBiaWdfcXVlcnlfc291cmNlGAMgASgLMiYuZ29vZ2xl'
+    'LmNsb3VkLnJldGFpbC52Mi5CaWdRdWVyeVNvdXJjZUgAUg5iaWdRdWVyeVNvdXJjZUIICgZzb3'
+    'VyY2U=');
+
+@$core.Deprecated('Use userEventInputConfigDescriptor instead')
+const UserEventInputConfig$json = {
+  '1': 'UserEventInputConfig',
+  '2': [
+    {'1': 'user_event_inline_source', '3': 1, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.UserEventInlineSource', '8': {}, '9': 0, '10': 'userEventInlineSource'},
+    {'1': 'gcs_source', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.GcsSource', '8': {}, '9': 0, '10': 'gcsSource'},
+    {'1': 'big_query_source', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.BigQuerySource', '8': {}, '9': 0, '10': 'bigQuerySource'},
+  ],
+  '8': [
+    {'1': 'source'},
+  ],
+};
+
+/// Descriptor for `UserEventInputConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List userEventInputConfigDescriptor = $convert.base64Decode(
+    'ChRVc2VyRXZlbnRJbnB1dENvbmZpZxJtChh1c2VyX2V2ZW50X2lubGluZV9zb3VyY2UYASABKA'
+    'syLS5nb29nbGUuY2xvdWQucmV0YWlsLnYyLlVzZXJFdmVudElubGluZVNvdXJjZUID4EECSABS'
+    'FXVzZXJFdmVudElubGluZVNvdXJjZRJHCgpnY3Nfc291cmNlGAIgASgLMiEuZ29vZ2xlLmNsb3'
+    'VkLnJldGFpbC52Mi5HY3NTb3VyY2VCA+BBAkgAUglnY3NTb3VyY2USVwoQYmlnX3F1ZXJ5X3Nv'
+    'dXJjZRgDIAEoCzImLmdvb2dsZS5jbG91ZC5yZXRhaWwudjIuQmlnUXVlcnlTb3VyY2VCA+BBAk'
+    'gAUg5iaWdRdWVyeVNvdXJjZUIICgZzb3VyY2U=');
+
+@$core.Deprecated('Use completionDataInputConfigDescriptor instead')
+const CompletionDataInputConfig$json = {
+  '1': 'CompletionDataInputConfig',
+  '2': [
+    {'1': 'big_query_source', '3': 1, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.BigQuerySource', '8': {}, '9': 0, '10': 'bigQuerySource'},
+  ],
+  '8': [
+    {'1': 'source'},
+  ],
+};
+
+/// Descriptor for `CompletionDataInputConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List completionDataInputConfigDescriptor = $convert.base64Decode(
+    'ChlDb21wbGV0aW9uRGF0YUlucHV0Q29uZmlnElcKEGJpZ19xdWVyeV9zb3VyY2UYASABKAsyJi'
+    '5nb29nbGUuY2xvdWQucmV0YWlsLnYyLkJpZ1F1ZXJ5U291cmNlQgPgQQJIAFIOYmlnUXVlcnlT'
+    'b3VyY2VCCAoGc291cmNl');
+
+@$core.Deprecated('Use importMetadataDescriptor instead')
+const ImportMetadata$json = {
+  '1': 'ImportMetadata',
+  '2': [
+    {'1': 'create_time', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'createTime'},
+    {'1': 'update_time', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'updateTime'},
+    {'1': 'success_count', '3': 3, '4': 1, '5': 3, '10': 'successCount'},
+    {'1': 'failure_count', '3': 4, '4': 1, '5': 3, '10': 'failureCount'},
+    {
+      '1': 'request_id',
+      '3': 5,
+      '4': 1,
+      '5': 9,
+      '8': {'3': true},
+      '10': 'requestId',
+    },
+    {'1': 'notification_pubsub_topic', '3': 6, '4': 1, '5': 9, '10': 'notificationPubsubTopic'},
+  ],
+};
+
+/// Descriptor for `ImportMetadata`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importMetadataDescriptor = $convert.base64Decode(
+    'Cg5JbXBvcnRNZXRhZGF0YRI7CgtjcmVhdGVfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi'
+    '5UaW1lc3RhbXBSCmNyZWF0ZVRpbWUSOwoLdXBkYXRlX3RpbWUYAiABKAsyGi5nb29nbGUucHJv'
+    'dG9idWYuVGltZXN0YW1wUgp1cGRhdGVUaW1lEiMKDXN1Y2Nlc3NfY291bnQYAyABKANSDHN1Y2'
+    'Nlc3NDb3VudBIjCg1mYWlsdXJlX2NvdW50GAQgASgDUgxmYWlsdXJlQ291bnQSIQoKcmVxdWVz'
+    'dF9pZBgFIAEoCUICGAFSCXJlcXVlc3RJZBI6Chlub3RpZmljYXRpb25fcHVic3ViX3RvcGljGA'
+    'YgASgJUhdub3RpZmljYXRpb25QdWJzdWJUb3BpYw==');
+
+@$core.Deprecated('Use importProductsResponseDescriptor instead')
+const ImportProductsResponse$json = {
+  '1': 'ImportProductsResponse',
+  '2': [
+    {'1': 'error_samples', '3': 1, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'errorSamples'},
+    {'1': 'errors_config', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.ImportErrorsConfig', '10': 'errorsConfig'},
+  ],
+};
+
+/// Descriptor for `ImportProductsResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importProductsResponseDescriptor = $convert.base64Decode(
+    'ChZJbXBvcnRQcm9kdWN0c1Jlc3BvbnNlEjcKDWVycm9yX3NhbXBsZXMYASADKAsyEi5nb29nbG'
+    'UucnBjLlN0YXR1c1IMZXJyb3JTYW1wbGVzEk8KDWVycm9yc19jb25maWcYAiABKAsyKi5nb29n'
+    'bGUuY2xvdWQucmV0YWlsLnYyLkltcG9ydEVycm9yc0NvbmZpZ1IMZXJyb3JzQ29uZmln');
+
+@$core.Deprecated('Use importUserEventsResponseDescriptor instead')
+const ImportUserEventsResponse$json = {
+  '1': 'ImportUserEventsResponse',
+  '2': [
+    {'1': 'error_samples', '3': 1, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'errorSamples'},
+    {'1': 'errors_config', '3': 2, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.ImportErrorsConfig', '10': 'errorsConfig'},
+    {'1': 'import_summary', '3': 3, '4': 1, '5': 11, '6': '.google.cloud.retail.v2.UserEventImportSummary', '10': 'importSummary'},
+  ],
+};
+
+/// Descriptor for `ImportUserEventsResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importUserEventsResponseDescriptor = $convert.base64Decode(
+    'ChhJbXBvcnRVc2VyRXZlbnRzUmVzcG9uc2USNwoNZXJyb3Jfc2FtcGxlcxgBIAMoCzISLmdvb2'
+    'dsZS5ycGMuU3RhdHVzUgxlcnJvclNhbXBsZXMSTwoNZXJyb3JzX2NvbmZpZxgCIAEoCzIqLmdv'
+    'b2dsZS5jbG91ZC5yZXRhaWwudjIuSW1wb3J0RXJyb3JzQ29uZmlnUgxlcnJvcnNDb25maWcSVQ'
+    'oOaW1wb3J0X3N1bW1hcnkYAyABKAsyLi5nb29nbGUuY2xvdWQucmV0YWlsLnYyLlVzZXJFdmVu'
+    'dEltcG9ydFN1bW1hcnlSDWltcG9ydFN1bW1hcnk=');
+
+@$core.Deprecated('Use userEventImportSummaryDescriptor instead')
+const UserEventImportSummary$json = {
+  '1': 'UserEventImportSummary',
+  '2': [
+    {'1': 'joined_events_count', '3': 1, '4': 1, '5': 3, '10': 'joinedEventsCount'},
+    {'1': 'unjoined_events_count', '3': 2, '4': 1, '5': 3, '10': 'unjoinedEventsCount'},
+  ],
+};
+
+/// Descriptor for `UserEventImportSummary`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List userEventImportSummaryDescriptor = $convert.base64Decode(
+    'ChZVc2VyRXZlbnRJbXBvcnRTdW1tYXJ5Ei4KE2pvaW5lZF9ldmVudHNfY291bnQYASABKANSEW'
+    'pvaW5lZEV2ZW50c0NvdW50EjIKFXVuam9pbmVkX2V2ZW50c19jb3VudBgCIAEoA1ITdW5qb2lu'
+    'ZWRFdmVudHNDb3VudA==');
+
+@$core.Deprecated('Use importCompletionDataResponseDescriptor instead')
+const ImportCompletionDataResponse$json = {
+  '1': 'ImportCompletionDataResponse',
+  '2': [
+    {'1': 'error_samples', '3': 1, '4': 3, '5': 11, '6': '.google.rpc.Status', '10': 'errorSamples'},
+  ],
+};
+
+/// Descriptor for `ImportCompletionDataResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List importCompletionDataResponseDescriptor = $convert.base64Decode(
+    'ChxJbXBvcnRDb21wbGV0aW9uRGF0YVJlc3BvbnNlEjcKDWVycm9yX3NhbXBsZXMYASADKAsyEi'
+    '5nb29nbGUucnBjLlN0YXR1c1IMZXJyb3JTYW1wbGVz');
+

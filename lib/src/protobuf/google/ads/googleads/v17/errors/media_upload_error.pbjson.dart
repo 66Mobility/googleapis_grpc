@@ -1,0 +1,88 @@
+//
+//  Generated code. Do not modify.
+//  source: google/ads/googleads/v17/errors/media_upload_error.proto
+//
+// @dart = 2.12
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+
+import 'dart:convert' as $convert;
+import 'dart:core' as $core;
+import 'dart:typed_data' as $typed_data;
+
+@$core.Deprecated('Use mediaUploadErrorEnumDescriptor instead')
+const MediaUploadErrorEnum$json = {
+  '1': 'MediaUploadErrorEnum',
+  '4': [MediaUploadErrorEnum_MediaUploadError$json],
+};
+
+@$core.Deprecated('Use mediaUploadErrorEnumDescriptor instead')
+const MediaUploadErrorEnum_MediaUploadError$json = {
+  '1': 'MediaUploadError',
+  '2': [
+    {'1': 'UNSPECIFIED', '2': 0},
+    {'1': 'UNKNOWN', '2': 1},
+    {'1': 'FILE_TOO_BIG', '2': 2},
+    {'1': 'UNPARSEABLE_IMAGE', '2': 3},
+    {'1': 'ANIMATED_IMAGE_NOT_ALLOWED', '2': 4},
+    {'1': 'FORMAT_NOT_ALLOWED', '2': 5},
+    {'1': 'EXTERNAL_URL_NOT_ALLOWED', '2': 6},
+    {'1': 'INVALID_URL_REFERENCE', '2': 7},
+    {'1': 'MISSING_PRIMARY_MEDIA_BUNDLE_ENTRY', '2': 8},
+    {'1': 'ANIMATED_VISUAL_EFFECT', '2': 9},
+    {'1': 'ANIMATION_TOO_LONG', '2': 10},
+    {'1': 'ASPECT_RATIO_NOT_ALLOWED', '2': 11},
+    {'1': 'AUDIO_NOT_ALLOWED_IN_MEDIA_BUNDLE', '2': 12},
+    {'1': 'CMYK_JPEG_NOT_ALLOWED', '2': 13},
+    {'1': 'FLASH_NOT_ALLOWED', '2': 14},
+    {'1': 'FRAME_RATE_TOO_HIGH', '2': 15},
+    {'1': 'GOOGLE_WEB_DESIGNER_ZIP_FILE_NOT_PUBLISHED', '2': 16},
+    {'1': 'IMAGE_CONSTRAINTS_VIOLATED', '2': 17},
+    {'1': 'INVALID_MEDIA_BUNDLE', '2': 18},
+    {'1': 'INVALID_MEDIA_BUNDLE_ENTRY', '2': 19},
+    {'1': 'INVALID_MIME_TYPE', '2': 20},
+    {'1': 'INVALID_PATH', '2': 21},
+    {'1': 'LAYOUT_PROBLEM', '2': 22},
+    {'1': 'MALFORMED_URL', '2': 23},
+    {'1': 'MEDIA_BUNDLE_NOT_ALLOWED', '2': 24},
+    {'1': 'MEDIA_BUNDLE_NOT_COMPATIBLE_TO_PRODUCT_TYPE', '2': 25},
+    {'1': 'MEDIA_BUNDLE_REJECTED_BY_MULTIPLE_ASSET_SPECS', '2': 26},
+    {'1': 'TOO_MANY_FILES_IN_MEDIA_BUNDLE', '2': 27},
+    {'1': 'UNSUPPORTED_GOOGLE_WEB_DESIGNER_ENVIRONMENT', '2': 28},
+    {'1': 'UNSUPPORTED_HTML5_FEATURE', '2': 29},
+    {'1': 'URL_IN_MEDIA_BUNDLE_NOT_SSL_COMPLIANT', '2': 30},
+    {'1': 'VIDEO_FILE_NAME_TOO_LONG', '2': 31},
+    {'1': 'VIDEO_MULTIPLE_FILES_WITH_SAME_NAME', '2': 32},
+    {'1': 'VIDEO_NOT_ALLOWED_IN_MEDIA_BUNDLE', '2': 33},
+    {'1': 'CANNOT_UPLOAD_MEDIA_TYPE_THROUGH_API', '2': 34},
+    {'1': 'DIMENSIONS_NOT_ALLOWED', '2': 35},
+  ],
+};
+
+/// Descriptor for `MediaUploadErrorEnum`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List mediaUploadErrorEnumDescriptor = $convert.base64Decode(
+    'ChRNZWRpYVVwbG9hZEVycm9yRW51bSLlCAoQTWVkaWFVcGxvYWRFcnJvchIPCgtVTlNQRUNJRk'
+    'lFRBAAEgsKB1VOS05PV04QARIQCgxGSUxFX1RPT19CSUcQAhIVChFVTlBBUlNFQUJMRV9JTUFH'
+    'RRADEh4KGkFOSU1BVEVEX0lNQUdFX05PVF9BTExPV0VEEAQSFgoSRk9STUFUX05PVF9BTExPV0'
+    'VEEAUSHAoYRVhURVJOQUxfVVJMX05PVF9BTExPV0VEEAYSGQoVSU5WQUxJRF9VUkxfUkVGRVJF'
+    'TkNFEAcSJgoiTUlTU0lOR19QUklNQVJZX01FRElBX0JVTkRMRV9FTlRSWRAIEhoKFkFOSU1BVE'
+    'VEX1ZJU1VBTF9FRkZFQ1QQCRIWChJBTklNQVRJT05fVE9PX0xPTkcQChIcChhBU1BFQ1RfUkFU'
+    'SU9fTk9UX0FMTE9XRUQQCxIlCiFBVURJT19OT1RfQUxMT1dFRF9JTl9NRURJQV9CVU5ETEUQDB'
+    'IZChVDTVlLX0pQRUdfTk9UX0FMTE9XRUQQDRIVChFGTEFTSF9OT1RfQUxMT1dFRBAOEhcKE0ZS'
+    'QU1FX1JBVEVfVE9PX0hJR0gQDxIuCipHT09HTEVfV0VCX0RFU0lHTkVSX1pJUF9GSUxFX05PVF'
+    '9QVUJMSVNIRUQQEBIeChpJTUFHRV9DT05TVFJBSU5UU19WSU9MQVRFRBAREhgKFElOVkFMSURf'
+    'TUVESUFfQlVORExFEBISHgoaSU5WQUxJRF9NRURJQV9CVU5ETEVfRU5UUlkQExIVChFJTlZBTE'
+    'lEX01JTUVfVFlQRRAUEhAKDElOVkFMSURfUEFUSBAVEhIKDkxBWU9VVF9QUk9CTEVNEBYSEQoN'
+    'TUFMRk9STUVEX1VSTBAXEhwKGE1FRElBX0JVTkRMRV9OT1RfQUxMT1dFRBAYEi8KK01FRElBX0'
+    'JVTkRMRV9OT1RfQ09NUEFUSUJMRV9UT19QUk9EVUNUX1RZUEUQGRIxCi1NRURJQV9CVU5ETEVf'
+    'UkVKRUNURURfQllfTVVMVElQTEVfQVNTRVRfU1BFQ1MQGhIiCh5UT09fTUFOWV9GSUxFU19JTl'
+    '9NRURJQV9CVU5ETEUQGxIvCitVTlNVUFBPUlRFRF9HT09HTEVfV0VCX0RFU0lHTkVSX0VOVklS'
+    'T05NRU5UEBwSHQoZVU5TVVBQT1JURURfSFRNTDVfRkVBVFVSRRAdEikKJVVSTF9JTl9NRURJQV'
+    '9CVU5ETEVfTk9UX1NTTF9DT01QTElBTlQQHhIcChhWSURFT19GSUxFX05BTUVfVE9PX0xPTkcQ'
+    'HxInCiNWSURFT19NVUxUSVBMRV9GSUxFU19XSVRIX1NBTUVfTkFNRRAgEiUKIVZJREVPX05PVF'
+    '9BTExPV0VEX0lOX01FRElBX0JVTkRMRRAhEigKJENBTk5PVF9VUExPQURfTUVESUFfVFlQRV9U'
+    'SFJPVUdIX0FQSRAiEhoKFkRJTUVOU0lPTlNfTk9UX0FMTE9XRUQQIw==');
+

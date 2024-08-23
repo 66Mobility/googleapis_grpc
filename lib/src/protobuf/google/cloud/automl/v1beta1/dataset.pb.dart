@@ -1,0 +1,343 @@
+//
+//  Generated code. Do not modify.
+//  source: google/cloud/automl/v1beta1/dataset.proto
+//
+// @dart = 2.12
+
+// ignore_for_file: annotate_overrides, camel_case_types, comment_references
+// ignore_for_file: constant_identifier_names, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_final_fields
+// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+
+import 'dart:core' as $core;
+
+import 'package:protobuf/protobuf.dart' as $pb;
+
+import '../../../protobuf/timestamp.pb.dart' as $1775;
+import 'image.pb.dart' as $4355;
+import 'tables.pb.dart' as $4354;
+import 'text.pb.dart' as $4356;
+import 'translation.pb.dart' as $4350;
+import 'video.pb.dart' as $4357;
+
+enum Dataset_DatasetMetadata {
+  translationDatasetMetadata, 
+  imageClassificationDatasetMetadata, 
+  textClassificationDatasetMetadata, 
+  imageObjectDetectionDatasetMetadata, 
+  textExtractionDatasetMetadata, 
+  videoObjectTrackingDatasetMetadata, 
+  textSentimentDatasetMetadata, 
+  videoClassificationDatasetMetadata, 
+  tablesDatasetMetadata, 
+  notSet
+}
+
+/// A workspace for solving a single, particular machine learning (ML) problem.
+/// A workspace contains examples that may be annotated.
+class Dataset extends $pb.GeneratedMessage {
+  factory Dataset({
+    $core.String? name,
+    $core.String? displayName,
+    $core.String? description,
+    $1775.Timestamp? createTime,
+    $core.String? etag,
+    $core.int? exampleCount,
+    $4350.TranslationDatasetMetadata? translationDatasetMetadata,
+    $4355.ImageClassificationDatasetMetadata? imageClassificationDatasetMetadata,
+    $4356.TextClassificationDatasetMetadata? textClassificationDatasetMetadata,
+    $4355.ImageObjectDetectionDatasetMetadata? imageObjectDetectionDatasetMetadata,
+    $4356.TextExtractionDatasetMetadata? textExtractionDatasetMetadata,
+    $4357.VideoObjectTrackingDatasetMetadata? videoObjectTrackingDatasetMetadata,
+    $4356.TextSentimentDatasetMetadata? textSentimentDatasetMetadata,
+    $4357.VideoClassificationDatasetMetadata? videoClassificationDatasetMetadata,
+    $4354.TablesDatasetMetadata? tablesDatasetMetadata,
+  }) {
+    final $result = create();
+    if (name != null) {
+      $result.name = name;
+    }
+    if (displayName != null) {
+      $result.displayName = displayName;
+    }
+    if (description != null) {
+      $result.description = description;
+    }
+    if (createTime != null) {
+      $result.createTime = createTime;
+    }
+    if (etag != null) {
+      $result.etag = etag;
+    }
+    if (exampleCount != null) {
+      $result.exampleCount = exampleCount;
+    }
+    if (translationDatasetMetadata != null) {
+      $result.translationDatasetMetadata = translationDatasetMetadata;
+    }
+    if (imageClassificationDatasetMetadata != null) {
+      $result.imageClassificationDatasetMetadata = imageClassificationDatasetMetadata;
+    }
+    if (textClassificationDatasetMetadata != null) {
+      $result.textClassificationDatasetMetadata = textClassificationDatasetMetadata;
+    }
+    if (imageObjectDetectionDatasetMetadata != null) {
+      $result.imageObjectDetectionDatasetMetadata = imageObjectDetectionDatasetMetadata;
+    }
+    if (textExtractionDatasetMetadata != null) {
+      $result.textExtractionDatasetMetadata = textExtractionDatasetMetadata;
+    }
+    if (videoObjectTrackingDatasetMetadata != null) {
+      $result.videoObjectTrackingDatasetMetadata = videoObjectTrackingDatasetMetadata;
+    }
+    if (textSentimentDatasetMetadata != null) {
+      $result.textSentimentDatasetMetadata = textSentimentDatasetMetadata;
+    }
+    if (videoClassificationDatasetMetadata != null) {
+      $result.videoClassificationDatasetMetadata = videoClassificationDatasetMetadata;
+    }
+    if (tablesDatasetMetadata != null) {
+      $result.tablesDatasetMetadata = tablesDatasetMetadata;
+    }
+    return $result;
+  }
+  Dataset._() : super();
+  factory Dataset.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Dataset.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, Dataset_DatasetMetadata> _Dataset_DatasetMetadataByTag = {
+    23 : Dataset_DatasetMetadata.translationDatasetMetadata,
+    24 : Dataset_DatasetMetadata.imageClassificationDatasetMetadata,
+    25 : Dataset_DatasetMetadata.textClassificationDatasetMetadata,
+    26 : Dataset_DatasetMetadata.imageObjectDetectionDatasetMetadata,
+    28 : Dataset_DatasetMetadata.textExtractionDatasetMetadata,
+    29 : Dataset_DatasetMetadata.videoObjectTrackingDatasetMetadata,
+    30 : Dataset_DatasetMetadata.textSentimentDatasetMetadata,
+    31 : Dataset_DatasetMetadata.videoClassificationDatasetMetadata,
+    33 : Dataset_DatasetMetadata.tablesDatasetMetadata,
+    0 : Dataset_DatasetMetadata.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Dataset', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.cloud.automl.v1beta1'), createEmptyInstance: create)
+    ..oo(0, [23, 24, 25, 26, 28, 29, 30, 31, 33])
+    ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOS(2, _omitFieldNames ? '' : 'displayName')
+    ..aOS(3, _omitFieldNames ? '' : 'description')
+    ..aOM<$1775.Timestamp>(14, _omitFieldNames ? '' : 'createTime', subBuilder: $1775.Timestamp.create)
+    ..aOS(17, _omitFieldNames ? '' : 'etag')
+    ..a<$core.int>(21, _omitFieldNames ? '' : 'exampleCount', $pb.PbFieldType.O3)
+    ..aOM<$4350.TranslationDatasetMetadata>(23, _omitFieldNames ? '' : 'translationDatasetMetadata', subBuilder: $4350.TranslationDatasetMetadata.create)
+    ..aOM<$4355.ImageClassificationDatasetMetadata>(24, _omitFieldNames ? '' : 'imageClassificationDatasetMetadata', subBuilder: $4355.ImageClassificationDatasetMetadata.create)
+    ..aOM<$4356.TextClassificationDatasetMetadata>(25, _omitFieldNames ? '' : 'textClassificationDatasetMetadata', subBuilder: $4356.TextClassificationDatasetMetadata.create)
+    ..aOM<$4355.ImageObjectDetectionDatasetMetadata>(26, _omitFieldNames ? '' : 'imageObjectDetectionDatasetMetadata', subBuilder: $4355.ImageObjectDetectionDatasetMetadata.create)
+    ..aOM<$4356.TextExtractionDatasetMetadata>(28, _omitFieldNames ? '' : 'textExtractionDatasetMetadata', subBuilder: $4356.TextExtractionDatasetMetadata.create)
+    ..aOM<$4357.VideoObjectTrackingDatasetMetadata>(29, _omitFieldNames ? '' : 'videoObjectTrackingDatasetMetadata', subBuilder: $4357.VideoObjectTrackingDatasetMetadata.create)
+    ..aOM<$4356.TextSentimentDatasetMetadata>(30, _omitFieldNames ? '' : 'textSentimentDatasetMetadata', subBuilder: $4356.TextSentimentDatasetMetadata.create)
+    ..aOM<$4357.VideoClassificationDatasetMetadata>(31, _omitFieldNames ? '' : 'videoClassificationDatasetMetadata', subBuilder: $4357.VideoClassificationDatasetMetadata.create)
+    ..aOM<$4354.TablesDatasetMetadata>(33, _omitFieldNames ? '' : 'tablesDatasetMetadata', subBuilder: $4354.TablesDatasetMetadata.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  Dataset clone() => Dataset()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Dataset copyWith(void Function(Dataset) updates) => super.copyWith((message) => updates(message as Dataset)) as Dataset;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Dataset create() => Dataset._();
+  Dataset createEmptyInstance() => create();
+  static $pb.PbList<Dataset> createRepeated() => $pb.PbList<Dataset>();
+  @$core.pragma('dart2js:noInline')
+  static Dataset getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Dataset>(create);
+  static Dataset? _defaultInstance;
+
+  Dataset_DatasetMetadata whichDatasetMetadata() => _Dataset_DatasetMetadataByTag[$_whichOneof(0)]!;
+  void clearDatasetMetadata() => clearField($_whichOneof(0));
+
+  /// Output only. The resource name of the dataset.
+  /// Form: `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`
+  @$pb.TagNumber(1)
+  $core.String get name => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set name($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasName() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearName() => clearField(1);
+
+  /// Required. The name of the dataset to show in the interface. The name can be
+  /// up to 32 characters long and can consist only of ASCII Latin letters A-Z
+  /// and a-z, underscores
+  /// (_), and ASCII digits 0-9.
+  @$pb.TagNumber(2)
+  $core.String get displayName => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set displayName($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasDisplayName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearDisplayName() => clearField(2);
+
+  /// User-provided description of the dataset. The description can be up to
+  /// 25000 characters long.
+  @$pb.TagNumber(3)
+  $core.String get description => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set description($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasDescription() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDescription() => clearField(3);
+
+  /// Output only. Timestamp when this dataset was created.
+  @$pb.TagNumber(14)
+  $1775.Timestamp get createTime => $_getN(3);
+  @$pb.TagNumber(14)
+  set createTime($1775.Timestamp v) { setField(14, v); }
+  @$pb.TagNumber(14)
+  $core.bool hasCreateTime() => $_has(3);
+  @$pb.TagNumber(14)
+  void clearCreateTime() => clearField(14);
+  @$pb.TagNumber(14)
+  $1775.Timestamp ensureCreateTime() => $_ensure(3);
+
+  /// Used to perform consistent read-modify-write updates. If not set, a blind
+  /// "overwrite" update happens.
+  @$pb.TagNumber(17)
+  $core.String get etag => $_getSZ(4);
+  @$pb.TagNumber(17)
+  set etag($core.String v) { $_setString(4, v); }
+  @$pb.TagNumber(17)
+  $core.bool hasEtag() => $_has(4);
+  @$pb.TagNumber(17)
+  void clearEtag() => clearField(17);
+
+  /// Output only. The number of examples in the dataset.
+  @$pb.TagNumber(21)
+  $core.int get exampleCount => $_getIZ(5);
+  @$pb.TagNumber(21)
+  set exampleCount($core.int v) { $_setSignedInt32(5, v); }
+  @$pb.TagNumber(21)
+  $core.bool hasExampleCount() => $_has(5);
+  @$pb.TagNumber(21)
+  void clearExampleCount() => clearField(21);
+
+  /// Metadata for a dataset used for translation.
+  @$pb.TagNumber(23)
+  $4350.TranslationDatasetMetadata get translationDatasetMetadata => $_getN(6);
+  @$pb.TagNumber(23)
+  set translationDatasetMetadata($4350.TranslationDatasetMetadata v) { setField(23, v); }
+  @$pb.TagNumber(23)
+  $core.bool hasTranslationDatasetMetadata() => $_has(6);
+  @$pb.TagNumber(23)
+  void clearTranslationDatasetMetadata() => clearField(23);
+  @$pb.TagNumber(23)
+  $4350.TranslationDatasetMetadata ensureTranslationDatasetMetadata() => $_ensure(6);
+
+  /// Metadata for a dataset used for image classification.
+  @$pb.TagNumber(24)
+  $4355.ImageClassificationDatasetMetadata get imageClassificationDatasetMetadata => $_getN(7);
+  @$pb.TagNumber(24)
+  set imageClassificationDatasetMetadata($4355.ImageClassificationDatasetMetadata v) { setField(24, v); }
+  @$pb.TagNumber(24)
+  $core.bool hasImageClassificationDatasetMetadata() => $_has(7);
+  @$pb.TagNumber(24)
+  void clearImageClassificationDatasetMetadata() => clearField(24);
+  @$pb.TagNumber(24)
+  $4355.ImageClassificationDatasetMetadata ensureImageClassificationDatasetMetadata() => $_ensure(7);
+
+  /// Metadata for a dataset used for text classification.
+  @$pb.TagNumber(25)
+  $4356.TextClassificationDatasetMetadata get textClassificationDatasetMetadata => $_getN(8);
+  @$pb.TagNumber(25)
+  set textClassificationDatasetMetadata($4356.TextClassificationDatasetMetadata v) { setField(25, v); }
+  @$pb.TagNumber(25)
+  $core.bool hasTextClassificationDatasetMetadata() => $_has(8);
+  @$pb.TagNumber(25)
+  void clearTextClassificationDatasetMetadata() => clearField(25);
+  @$pb.TagNumber(25)
+  $4356.TextClassificationDatasetMetadata ensureTextClassificationDatasetMetadata() => $_ensure(8);
+
+  /// Metadata for a dataset used for image object detection.
+  @$pb.TagNumber(26)
+  $4355.ImageObjectDetectionDatasetMetadata get imageObjectDetectionDatasetMetadata => $_getN(9);
+  @$pb.TagNumber(26)
+  set imageObjectDetectionDatasetMetadata($4355.ImageObjectDetectionDatasetMetadata v) { setField(26, v); }
+  @$pb.TagNumber(26)
+  $core.bool hasImageObjectDetectionDatasetMetadata() => $_has(9);
+  @$pb.TagNumber(26)
+  void clearImageObjectDetectionDatasetMetadata() => clearField(26);
+  @$pb.TagNumber(26)
+  $4355.ImageObjectDetectionDatasetMetadata ensureImageObjectDetectionDatasetMetadata() => $_ensure(9);
+
+  /// Metadata for a dataset used for text extraction.
+  @$pb.TagNumber(28)
+  $4356.TextExtractionDatasetMetadata get textExtractionDatasetMetadata => $_getN(10);
+  @$pb.TagNumber(28)
+  set textExtractionDatasetMetadata($4356.TextExtractionDatasetMetadata v) { setField(28, v); }
+  @$pb.TagNumber(28)
+  $core.bool hasTextExtractionDatasetMetadata() => $_has(10);
+  @$pb.TagNumber(28)
+  void clearTextExtractionDatasetMetadata() => clearField(28);
+  @$pb.TagNumber(28)
+  $4356.TextExtractionDatasetMetadata ensureTextExtractionDatasetMetadata() => $_ensure(10);
+
+  /// Metadata for a dataset used for video object tracking.
+  @$pb.TagNumber(29)
+  $4357.VideoObjectTrackingDatasetMetadata get videoObjectTrackingDatasetMetadata => $_getN(11);
+  @$pb.TagNumber(29)
+  set videoObjectTrackingDatasetMetadata($4357.VideoObjectTrackingDatasetMetadata v) { setField(29, v); }
+  @$pb.TagNumber(29)
+  $core.bool hasVideoObjectTrackingDatasetMetadata() => $_has(11);
+  @$pb.TagNumber(29)
+  void clearVideoObjectTrackingDatasetMetadata() => clearField(29);
+  @$pb.TagNumber(29)
+  $4357.VideoObjectTrackingDatasetMetadata ensureVideoObjectTrackingDatasetMetadata() => $_ensure(11);
+
+  /// Metadata for a dataset used for text sentiment.
+  @$pb.TagNumber(30)
+  $4356.TextSentimentDatasetMetadata get textSentimentDatasetMetadata => $_getN(12);
+  @$pb.TagNumber(30)
+  set textSentimentDatasetMetadata($4356.TextSentimentDatasetMetadata v) { setField(30, v); }
+  @$pb.TagNumber(30)
+  $core.bool hasTextSentimentDatasetMetadata() => $_has(12);
+  @$pb.TagNumber(30)
+  void clearTextSentimentDatasetMetadata() => clearField(30);
+  @$pb.TagNumber(30)
+  $4356.TextSentimentDatasetMetadata ensureTextSentimentDatasetMetadata() => $_ensure(12);
+
+  /// Metadata for a dataset used for video classification.
+  @$pb.TagNumber(31)
+  $4357.VideoClassificationDatasetMetadata get videoClassificationDatasetMetadata => $_getN(13);
+  @$pb.TagNumber(31)
+  set videoClassificationDatasetMetadata($4357.VideoClassificationDatasetMetadata v) { setField(31, v); }
+  @$pb.TagNumber(31)
+  $core.bool hasVideoClassificationDatasetMetadata() => $_has(13);
+  @$pb.TagNumber(31)
+  void clearVideoClassificationDatasetMetadata() => clearField(31);
+  @$pb.TagNumber(31)
+  $4357.VideoClassificationDatasetMetadata ensureVideoClassificationDatasetMetadata() => $_ensure(13);
+
+  /// Metadata for a dataset used for Tables.
+  @$pb.TagNumber(33)
+  $4354.TablesDatasetMetadata get tablesDatasetMetadata => $_getN(14);
+  @$pb.TagNumber(33)
+  set tablesDatasetMetadata($4354.TablesDatasetMetadata v) { setField(33, v); }
+  @$pb.TagNumber(33)
+  $core.bool hasTablesDatasetMetadata() => $_has(14);
+  @$pb.TagNumber(33)
+  void clearTablesDatasetMetadata() => clearField(33);
+  @$pb.TagNumber(33)
+  $4354.TablesDatasetMetadata ensureTablesDatasetMetadata() => $_ensure(14);
+}
+
+
+const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
