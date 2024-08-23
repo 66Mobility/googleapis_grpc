@@ -74,7 +74,10 @@ void main() async {
 }
 ```
 
-## How it works
+## How the code generation works.
+
+_If you simply want to use the package, you do not need to follow these steps. The following steps are only required
+to build the package from scratch._
 
 All the generation tooling is in the `Makefile`. Run `make` to regenerate the repository.
 
