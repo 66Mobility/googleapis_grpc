@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Nothing changed, just to trigger the pub.dev analysis
+
 ## 1.0.2
 
 - Fix .pubignore
