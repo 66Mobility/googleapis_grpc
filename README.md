@@ -74,6 +74,14 @@ void main() async {
 }
 ```
 
+## Notes
+
+You may need to import the following if you have any missing types.
+
+```dart
+import 'package:googleapis_grpc/google_type.dart';
+```
+
 ## How the code generation works.
 
 _If you simply want to use the package, you do not need to follow these steps. The following steps are only required

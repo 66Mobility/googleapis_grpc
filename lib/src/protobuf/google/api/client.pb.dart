@@ -714,14 +714,75 @@ class PhpSettings extends $pb.GeneratedMessage {
   CommonLanguageSettings ensureCommon() => $_ensure(0);
 }
 
+/// Experimental features to be included during client library generation.
+/// These fields will be deprecated once the feature graduates and is enabled
+/// by default.
+class PythonSettings_ExperimentalFeatures extends $pb.GeneratedMessage {
+  factory PythonSettings_ExperimentalFeatures({
+    $core.bool? restAsyncIoEnabled,
+  }) {
+    final $result = create();
+    if (restAsyncIoEnabled != null) {
+      $result.restAsyncIoEnabled = restAsyncIoEnabled;
+    }
+    return $result;
+  }
+  PythonSettings_ExperimentalFeatures._() : super();
+  factory PythonSettings_ExperimentalFeatures.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PythonSettings_ExperimentalFeatures.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PythonSettings.ExperimentalFeatures', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
+    ..aOB(1, _omitFieldNames ? '' : 'restAsyncIoEnabled')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PythonSettings_ExperimentalFeatures clone() => PythonSettings_ExperimentalFeatures()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PythonSettings_ExperimentalFeatures copyWith(void Function(PythonSettings_ExperimentalFeatures) updates) => super.copyWith((message) => updates(message as PythonSettings_ExperimentalFeatures)) as PythonSettings_ExperimentalFeatures;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PythonSettings_ExperimentalFeatures create() => PythonSettings_ExperimentalFeatures._();
+  PythonSettings_ExperimentalFeatures createEmptyInstance() => create();
+  static $pb.PbList<PythonSettings_ExperimentalFeatures> createRepeated() => $pb.PbList<PythonSettings_ExperimentalFeatures>();
+  @$core.pragma('dart2js:noInline')
+  static PythonSettings_ExperimentalFeatures getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PythonSettings_ExperimentalFeatures>(create);
+  static PythonSettings_ExperimentalFeatures? _defaultInstance;
+
+  /// Enables generation of asynchronous REST clients if `rest` transport is
+  /// enabled. By default, asynchronous REST clients will not be generated.
+  /// This feature will be enabled by default 1 month after launching the
+  /// feature in preview packages.
+  @$pb.TagNumber(1)
+  $core.bool get restAsyncIoEnabled => $_getBF(0);
+  @$pb.TagNumber(1)
+  set restAsyncIoEnabled($core.bool v) { $_setBool(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasRestAsyncIoEnabled() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearRestAsyncIoEnabled() => clearField(1);
+}
+
 /// Settings for Python client libraries.
 class PythonSettings extends $pb.GeneratedMessage {
   factory PythonSettings({
     CommonLanguageSettings? common,
+    PythonSettings_ExperimentalFeatures? experimentalFeatures,
   }) {
     final $result = create();
     if (common != null) {
       $result.common = common;
+    }
+    if (experimentalFeatures != null) {
+      $result.experimentalFeatures = experimentalFeatures;
     }
     return $result;
   }
@@ -731,6 +792,7 @@ class PythonSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PythonSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
     ..aOM<CommonLanguageSettings>(1, _omitFieldNames ? '' : 'common', subBuilder: CommonLanguageSettings.create)
+    ..aOM<PythonSettings_ExperimentalFeatures>(2, _omitFieldNames ? '' : 'experimentalFeatures', subBuilder: PythonSettings_ExperimentalFeatures.create)
     ..hasRequiredFields = false
   ;
 
@@ -766,6 +828,18 @@ class PythonSettings extends $pb.GeneratedMessage {
   void clearCommon() => clearField(1);
   @$pb.TagNumber(1)
   CommonLanguageSettings ensureCommon() => $_ensure(0);
+
+  /// Experimental features to be included during client library generation.
+  @$pb.TagNumber(2)
+  PythonSettings_ExperimentalFeatures get experimentalFeatures => $_getN(1);
+  @$pb.TagNumber(2)
+  set experimentalFeatures(PythonSettings_ExperimentalFeatures v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasExperimentalFeatures() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearExperimentalFeatures() => clearField(2);
+  @$pb.TagNumber(2)
+  PythonSettings_ExperimentalFeatures ensureExperimentalFeatures() => $_ensure(1);
 }
 
 /// Settings for Node client libraries.
