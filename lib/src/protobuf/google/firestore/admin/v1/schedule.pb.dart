@@ -132,8 +132,10 @@ class BackupSchedule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $299.Timestamp ensureCreateTime() => $_ensure(1);
 
-  /// At what relative time in the future, compared to its creation time,
-  /// the backup should be deleted, e.g. keep backups for 7 days.
+  ///  At what relative time in the future, compared to its creation time,
+  ///  the backup should be deleted, e.g. keep backups for 7 days.
+  ///
+  ///  The maximum supported retention period is 14 weeks.
   @$pb.TagNumber(6)
   $261.Duration get retention => $_getN(2);
   @$pb.TagNumber(6)
@@ -184,7 +186,7 @@ class BackupSchedule extends $pb.GeneratedMessage {
   $299.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
-///  Represents a recurring schedule that runs at a specific time every day.
+///  Represents a recurring schedule that runs every day.
 ///
 ///  The time zone is UTC.
 class DailyRecurrence extends $pb.GeneratedMessage {

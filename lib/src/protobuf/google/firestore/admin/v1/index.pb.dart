@@ -335,11 +335,11 @@ class Index extends $pb.GeneratedMessage {
 
   ///  Indexes with a collection query scope specified allow queries
   ///  against a collection that is the child of a specific document, specified at
-  ///  query time, and that has the same collection id.
+  ///  query time, and that has the same collection ID.
   ///
   ///  Indexes with a collection group query scope specified allow queries against
   ///  all collections descended from a specific document, specified at query
-  ///  time, and that have the same collection id as this index.
+  ///  time, and that have the same collection ID as this index.
   @$pb.TagNumber(2)
   Index_QueryScope get queryScope => $_getN(1);
   @$pb.TagNumber(2)

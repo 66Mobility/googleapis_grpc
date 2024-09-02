@@ -589,7 +589,7 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Progress ensureProgressBytes() => $_ensure(4);
 
-  /// Which collection ids are being exported.
+  /// Which collection IDs are being exported.
   @$pb.TagNumber(6)
   $core.List<$core.String> get collectionIds => $_getList(5);
 
@@ -603,7 +603,7 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearOutputUriPrefix() => clearField(7);
 
-  /// Which namespace ids are being exported.
+  /// Which namespace IDs are being exported.
   @$pb.TagNumber(8)
   $core.List<$core.String> get namespaceIds => $_getList(7);
 
@@ -759,7 +759,7 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Progress ensureProgressBytes() => $_ensure(4);
 
-  /// Which collection ids are being imported.
+  /// Which collection IDs are being imported.
   @$pb.TagNumber(6)
   $core.List<$core.String> get collectionIds => $_getList(5);
 
@@ -773,7 +773,7 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearInputUriPrefix() => clearField(7);
 
-  /// Which namespace ids are being imported.
+  /// Which namespace IDs are being imported.
   @$pb.TagNumber(8)
   $core.List<$core.String> get namespaceIds => $_getList(7);
 }
@@ -915,11 +915,11 @@ class BulkDeleteDocumentsMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   Progress ensureProgressBytes() => $_ensure(4);
 
-  /// The ids of the collection groups that are being deleted.
+  /// The IDs of the collection groups that are being deleted.
   @$pb.TagNumber(6)
   $core.List<$core.String> get collectionIds => $_getList(5);
 
-  /// Which namespace ids are being deleted.
+  /// Which namespace IDs are being deleted.
   @$pb.TagNumber(7)
   $core.List<$core.String> get namespaceIds => $_getList(6);
 
