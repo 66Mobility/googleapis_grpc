@@ -171,7 +171,7 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
   ///  with first character a letter and the last a letter or a number. Must not
   ///  be UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
   ///
-  ///  "(default)" database id is also valid.
+  ///  "(default)" database ID is also valid.
   @$pb.TagNumber(3)
   $core.String get databaseId => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -1611,8 +1611,8 @@ class ExportDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  /// Which collection ids to export. Unspecified means all collections. Each
-  /// collection id in this list must be unique.
+  /// Which collection IDs to export. Unspecified means all collections. Each
+  /// collection ID in this list must be unique.
   @$pb.TagNumber(2)
   $core.List<$core.String> get collectionIds => $_getList(1);
 
@@ -1729,8 +1729,8 @@ class ImportDocumentsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  /// Which collection ids to import. Unspecified means all collections included
-  /// in the import. Each collection id in this list must be unique.
+  /// Which collection IDs to import. Unspecified means all collections included
+  /// in the import. Each collection ID in this list must be unique.
   @$pb.TagNumber(2)
   $core.List<$core.String> get collectionIds => $_getList(1);
 
@@ -2114,12 +2114,13 @@ class DeleteBackupRequest extends $pb.GeneratedMessage {
 }
 
 /// The request message for
-/// [FirestoreAdmin.RestoreDatabase][google.firestore.admin.v1.RestoreDatabase].
+/// [FirestoreAdmin.RestoreDatabase][google.firestore.admin.v1.FirestoreAdmin.RestoreDatabase].
 class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   factory RestoreDatabaseRequest({
     $core.String? parent,
     $core.String? databaseId,
     $core.String? backup,
+    $120.Database_EncryptionConfig? encryptionConfig,
   }) {
     final $result = create();
     if (parent != null) {
@@ -2131,6 +2132,9 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
     if (backup != null) {
       $result.backup = backup;
     }
+    if (encryptionConfig != null) {
+      $result.encryptionConfig = encryptionConfig;
+    }
     return $result;
   }
   RestoreDatabaseRequest._() : super();
@@ -2141,6 +2145,7 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'databaseId')
     ..aOS(3, _omitFieldNames ? '' : 'backup')
+    ..aOM<$120.Database_EncryptionConfig>(9, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $120.Database_EncryptionConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -2177,14 +2182,14 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   void clearParent() => clearField(1);
 
   ///  Required. The ID to use for the database, which will become the final
-  ///  component of the database's resource name. This database id must not be
+  ///  component of the database's resource name. This database ID must not be
   ///  associated with an existing database.
   ///
   ///  This value should be 4-63 characters. Valid characters are /[a-z][0-9]-/
   ///  with first character a letter and the last a letter or a number. Must not
   ///  be UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
   ///
-  ///  "(default)" database id is also valid.
+  ///  "(default)" database ID is also valid.
   @$pb.TagNumber(2)
   $core.String get databaseId => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -2197,6 +2202,9 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   ///  Required. Backup to restore from. Must be from the same project as the
   ///  parent.
   ///
+  ///  The restored database will be created in the same location as the source
+  ///  backup.
+  ///
   ///  Format is: `projects/{project_id}/locations/{location}/backups/{backup}`
   @$pb.TagNumber(3)
   $core.String get backup => $_getSZ(2);
@@ -2206,6 +2214,22 @@ class RestoreDatabaseRequest extends $pb.GeneratedMessage {
   $core.bool hasBackup() => $_has(2);
   @$pb.TagNumber(3)
   void clearBackup() => clearField(3);
+
+  ///  Optional. Encryption configuration for the restored database.
+  ///
+  ///  If this field is not specified, the restored database will use
+  ///  the same encryption configuration as the backup, namely
+  ///  [use_source_encryption][google.firestore.admin.v1.Database.EncryptionConfig.use_source_encryption].
+  @$pb.TagNumber(9)
+  $120.Database_EncryptionConfig get encryptionConfig => $_getN(3);
+  @$pb.TagNumber(9)
+  set encryptionConfig($120.Database_EncryptionConfig v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasEncryptionConfig() => $_has(3);
+  @$pb.TagNumber(9)
+  void clearEncryptionConfig() => clearField(9);
+  @$pb.TagNumber(9)
+  $120.Database_EncryptionConfig ensureEncryptionConfig() => $_ensure(3);
 }
 
 

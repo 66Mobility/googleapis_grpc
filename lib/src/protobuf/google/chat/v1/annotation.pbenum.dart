@@ -71,10 +71,12 @@ class SlashCommandMetadata_Type extends $pb.ProtobufEnum {
 class RichLinkMetadata_RichLinkType extends $pb.ProtobufEnum {
   static const RichLinkMetadata_RichLinkType RICH_LINK_TYPE_UNSPECIFIED = RichLinkMetadata_RichLinkType._(0, _omitEnumNames ? '' : 'RICH_LINK_TYPE_UNSPECIFIED');
   static const RichLinkMetadata_RichLinkType DRIVE_FILE = RichLinkMetadata_RichLinkType._(1, _omitEnumNames ? '' : 'DRIVE_FILE');
+  static const RichLinkMetadata_RichLinkType CHAT_SPACE = RichLinkMetadata_RichLinkType._(2, _omitEnumNames ? '' : 'CHAT_SPACE');
 
   static const $core.List<RichLinkMetadata_RichLinkType> values = <RichLinkMetadata_RichLinkType> [
     RICH_LINK_TYPE_UNSPECIFIED,
     DRIVE_FILE,
+    CHAT_SPACE,
   ];
 
   static final $core.Map<$core.int, RichLinkMetadata_RichLinkType> _byValue = $pb.ProtobufEnum.initByValue(values);

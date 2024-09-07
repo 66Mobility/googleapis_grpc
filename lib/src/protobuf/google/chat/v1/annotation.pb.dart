@@ -383,6 +383,7 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
 
 enum RichLinkMetadata_Data {
   driveLinkData, 
+  chatSpaceLinkData, 
   notSet
 }
 
@@ -392,6 +393,7 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
     $core.String? uri,
     RichLinkMetadata_RichLinkType? richLinkType,
     DriveLinkData? driveLinkData,
+    ChatSpaceLinkData? chatSpaceLinkData,
   }) {
     final $result = create();
     if (uri != null) {
@@ -403,6 +405,9 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
     if (driveLinkData != null) {
       $result.driveLinkData = driveLinkData;
     }
+    if (chatSpaceLinkData != null) {
+      $result.chatSpaceLinkData = chatSpaceLinkData;
+    }
     return $result;
   }
   RichLinkMetadata._() : super();
@@ -411,13 +416,15 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
 
   static const $core.Map<$core.int, RichLinkMetadata_Data> _RichLinkMetadata_DataByTag = {
     3 : RichLinkMetadata_Data.driveLinkData,
+    4 : RichLinkMetadata_Data.chatSpaceLinkData,
     0 : RichLinkMetadata_Data.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RichLinkMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..oo(0, [3])
+    ..oo(0, [3, 4])
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..e<RichLinkMetadata_RichLinkType>(2, _omitFieldNames ? '' : 'richLinkType', $pb.PbFieldType.OE, defaultOrMaker: RichLinkMetadata_RichLinkType.RICH_LINK_TYPE_UNSPECIFIED, valueOf: RichLinkMetadata_RichLinkType.valueOf, enumValues: RichLinkMetadata_RichLinkType.values)
     ..aOM<DriveLinkData>(3, _omitFieldNames ? '' : 'driveLinkData', subBuilder: DriveLinkData.create)
+    ..aOM<ChatSpaceLinkData>(4, _omitFieldNames ? '' : 'chatSpaceLinkData', subBuilder: ChatSpaceLinkData.create)
     ..hasRequiredFields = false
   ;
 
@@ -476,6 +483,18 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
   void clearDriveLinkData() => clearField(3);
   @$pb.TagNumber(3)
   DriveLinkData ensureDriveLinkData() => $_ensure(2);
+
+  /// Data for a chat space link.
+  @$pb.TagNumber(4)
+  ChatSpaceLinkData get chatSpaceLinkData => $_getN(3);
+  @$pb.TagNumber(4)
+  set chatSpaceLinkData(ChatSpaceLinkData v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasChatSpaceLinkData() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearChatSpaceLinkData() => clearField(4);
+  @$pb.TagNumber(4)
+  ChatSpaceLinkData ensureChatSpaceLinkData() => $_ensure(3);
 }
 
 /// Data for Google Drive links.
@@ -547,6 +566,94 @@ class DriveLinkData extends $pb.GeneratedMessage {
   $core.bool hasMimeType() => $_has(1);
   @$pb.TagNumber(2)
   void clearMimeType() => clearField(2);
+}
+
+/// Data for Chat space links.
+class ChatSpaceLinkData extends $pb.GeneratedMessage {
+  factory ChatSpaceLinkData({
+    $core.String? space,
+    $core.String? thread,
+    $core.String? message,
+  }) {
+    final $result = create();
+    if (space != null) {
+      $result.space = space;
+    }
+    if (thread != null) {
+      $result.thread = thread;
+    }
+    if (message != null) {
+      $result.message = message;
+    }
+    return $result;
+  }
+  ChatSpaceLinkData._() : super();
+  factory ChatSpaceLinkData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ChatSpaceLinkData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChatSpaceLinkData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'space')
+    ..aOS(2, _omitFieldNames ? '' : 'thread')
+    ..aOS(3, _omitFieldNames ? '' : 'message')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ChatSpaceLinkData clone() => ChatSpaceLinkData()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ChatSpaceLinkData copyWith(void Function(ChatSpaceLinkData) updates) => super.copyWith((message) => updates(message as ChatSpaceLinkData)) as ChatSpaceLinkData;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static ChatSpaceLinkData create() => ChatSpaceLinkData._();
+  ChatSpaceLinkData createEmptyInstance() => create();
+  static $pb.PbList<ChatSpaceLinkData> createRepeated() => $pb.PbList<ChatSpaceLinkData>();
+  @$core.pragma('dart2js:noInline')
+  static ChatSpaceLinkData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ChatSpaceLinkData>(create);
+  static ChatSpaceLinkData? _defaultInstance;
+
+  ///  The space of the linked Chat space resource.
+  ///
+  ///  Format: `spaces/{space}`
+  @$pb.TagNumber(1)
+  $core.String get space => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set space($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasSpace() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearSpace() => clearField(1);
+
+  ///  The thread of the linked Chat space resource.
+  ///
+  ///  Format: `spaces/{space}/threads/{thread}`
+  @$pb.TagNumber(2)
+  $core.String get thread => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set thread($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasThread() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearThread() => clearField(2);
+
+  ///  The message of the linked Chat space resource.
+  ///
+  ///  Format: `spaces/{space}/messages/{message}`
+  @$pb.TagNumber(3)
+  $core.String get message => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set message($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasMessage() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearMessage() => clearField(3);
 }
 
 

@@ -474,6 +474,7 @@ const RestoreDatabaseRequest$json = {
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'database_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'databaseId'},
     {'1': 'backup', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'backup'},
+    {'1': 'encryption_config', '3': 9, '4': 1, '5': 11, '6': '.google.firestore.admin.v1.Database.EncryptionConfig', '8': {}, '10': 'encryptionConfig'},
   ],
 };
 
@@ -482,5 +483,7 @@ final $typed_data.Uint8List restoreDatabaseRequestDescriptor = $convert.base64De
     'ChZSZXN0b3JlRGF0YWJhc2VSZXF1ZXN0EkEKBnBhcmVudBgBIAEoCUIp4EEC+kEjEiFmaXJlc3'
     'RvcmUuZ29vZ2xlYXBpcy5jb20vRGF0YWJhc2VSBnBhcmVudBIkCgtkYXRhYmFzZV9pZBgCIAEo'
     'CUID4EECUgpkYXRhYmFzZUlkEj8KBmJhY2t1cBgDIAEoCUIn4EEC+kEhCh9maXJlc3RvcmUuZ2'
-    '9vZ2xlYXBpcy5jb20vQmFja3VwUgZiYWNrdXA=');
+    '9vZ2xlYXBpcy5jb20vQmFja3VwUgZiYWNrdXASZgoRZW5jcnlwdGlvbl9jb25maWcYCSABKAsy'
+    'NC5nb29nbGUuZmlyZXN0b3JlLmFkbWluLnYxLkRhdGFiYXNlLkVuY3J5cHRpb25Db25maWdCA+'
+    'BBAVIQZW5jcnlwdGlvbkNvbmZpZw==');
 

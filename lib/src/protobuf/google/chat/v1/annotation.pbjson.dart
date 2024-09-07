@@ -122,6 +122,7 @@ const RichLinkMetadata$json = {
     {'1': 'uri', '3': 1, '4': 1, '5': 9, '10': 'uri'},
     {'1': 'rich_link_type', '3': 2, '4': 1, '5': 14, '6': '.google.chat.v1.RichLinkMetadata.RichLinkType', '10': 'richLinkType'},
     {'1': 'drive_link_data', '3': 3, '4': 1, '5': 11, '6': '.google.chat.v1.DriveLinkData', '9': 0, '10': 'driveLinkData'},
+    {'1': 'chat_space_link_data', '3': 4, '4': 1, '5': 11, '6': '.google.chat.v1.ChatSpaceLinkData', '9': 0, '10': 'chatSpaceLinkData'},
   ],
   '4': [RichLinkMetadata_RichLinkType$json],
   '8': [
@@ -135,6 +136,7 @@ const RichLinkMetadata_RichLinkType$json = {
   '2': [
     {'1': 'RICH_LINK_TYPE_UNSPECIFIED', '2': 0},
     {'1': 'DRIVE_FILE', '2': 1},
+    {'1': 'CHAT_SPACE', '2': 2},
   ],
 };
 
@@ -143,8 +145,10 @@ final $typed_data.Uint8List richLinkMetadataDescriptor = $convert.base64Decode(
     'ChBSaWNoTGlua01ldGFkYXRhEhAKA3VyaRgBIAEoCVIDdXJpElMKDnJpY2hfbGlua190eXBlGA'
     'IgASgOMi0uZ29vZ2xlLmNoYXQudjEuUmljaExpbmtNZXRhZGF0YS5SaWNoTGlua1R5cGVSDHJp'
     'Y2hMaW5rVHlwZRJHCg9kcml2ZV9saW5rX2RhdGEYAyABKAsyHS5nb29nbGUuY2hhdC52MS5Ecm'
-    'l2ZUxpbmtEYXRhSABSDWRyaXZlTGlua0RhdGEiPgoMUmljaExpbmtUeXBlEh4KGlJJQ0hfTElO'
-    'S19UWVBFX1VOU1BFQ0lGSUVEEAASDgoKRFJJVkVfRklMRRABQgYKBGRhdGE=');
+    'l2ZUxpbmtEYXRhSABSDWRyaXZlTGlua0RhdGESVAoUY2hhdF9zcGFjZV9saW5rX2RhdGEYBCAB'
+    'KAsyIS5nb29nbGUuY2hhdC52MS5DaGF0U3BhY2VMaW5rRGF0YUgAUhFjaGF0U3BhY2VMaW5rRG'
+    'F0YSJOCgxSaWNoTGlua1R5cGUSHgoaUklDSF9MSU5LX1RZUEVfVU5TUEVDSUZJRUQQABIOCgpE'
+    'UklWRV9GSUxFEAESDgoKQ0hBVF9TUEFDRRACQgYKBGRhdGE=');
 
 @$core.Deprecated('Use driveLinkDataDescriptor instead')
 const DriveLinkData$json = {
@@ -160,4 +164,21 @@ final $typed_data.Uint8List driveLinkDataDescriptor = $convert.base64Decode(
     'Cg1Ecml2ZUxpbmtEYXRhEkIKDmRyaXZlX2RhdGFfcmVmGAEgASgLMhwuZ29vZ2xlLmNoYXQudj'
     'EuRHJpdmVEYXRhUmVmUgxkcml2ZURhdGFSZWYSGwoJbWltZV90eXBlGAIgASgJUghtaW1lVHlw'
     'ZQ==');
+
+@$core.Deprecated('Use chatSpaceLinkDataDescriptor instead')
+const ChatSpaceLinkData$json = {
+  '1': 'ChatSpaceLinkData',
+  '2': [
+    {'1': 'space', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'space'},
+    {'1': 'thread', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'thread'},
+    {'1': 'message', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'message'},
+  ],
+};
+
+/// Descriptor for `ChatSpaceLinkData`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List chatSpaceLinkDataDescriptor = $convert.base64Decode(
+    'ChFDaGF0U3BhY2VMaW5rRGF0YRI0CgVzcGFjZRgBIAEoCUIe+kEbChljaGF0Lmdvb2dsZWFwaX'
+    'MuY29tL1NwYWNlUgVzcGFjZRI3CgZ0aHJlYWQYAiABKAlCH/pBHAoaY2hhdC5nb29nbGVhcGlz'
+    'LmNvbS9UaHJlYWRSBnRocmVhZBI6CgdtZXNzYWdlGAMgASgJQiD6QR0KG2NoYXQuZ29vZ2xlYX'
+    'Bpcy5jb20vTWVzc2FnZVIHbWVzc2FnZQ==');
 

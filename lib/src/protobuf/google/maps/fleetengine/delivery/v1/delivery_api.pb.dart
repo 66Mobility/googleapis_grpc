@@ -1090,7 +1090,7 @@ class ListTasksRequest extends $pb.GeneratedMessage {
   /// http://aip.dev/160 for examples of filter syntax. If you don't specify a
   /// value, or if you filter on an empty string, then all Tasks are returned.
   /// For information about the Task properties that you can filter on, see [List
-  /// tasks](https://developers.google.com/maps/documentation/transportation-logistics/last-mile-fleet-solution/fleet-performance/fleet-engine/deliveries_api#list-tasks).
+  /// tasks](https://developers.google.com/maps/documentation/mobility/fleet-engine/journeys/tasks/find-tasks#filter_listed_tasks).
   @$pb.TagNumber(6)
   $core.String get filter => $_getSZ(4);
   @$pb.TagNumber(6)
